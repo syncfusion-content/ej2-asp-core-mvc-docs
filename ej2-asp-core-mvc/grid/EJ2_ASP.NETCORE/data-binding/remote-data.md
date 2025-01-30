@@ -8,378 +8,623 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Remote Data in ASP.Net Core Grid Component
+# Remote data in ASP.NET Core Grid Component
 
-To bind remote data to grid component, assign service data as an instance of `DataManager` to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. To interact with remote data source,  provide the endpoint `url`.
+In ASP.NET Core Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `dataSource` property of the ASP.NET Core Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 
-{% if page.publishingplatform == "aspnet-core" %}
+Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in ASP.NET Core applications.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remotedata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/grid/data-binding/remotedata/remotedata.cs %}
-{% endhighlight %}
-{% endtabs %}
+## Custom binding
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The custom binding feature in the ASP.NET Core Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the `DataManager`. The DataManager integrates seamlessly with the ASP.NET Core Grid to manage custom data processing and binding. 
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remotedata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/grid/data-binding/remotedata/remotedata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSourceChanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
-N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
+**Using the DataStateChange event**
 
-## ExpandoObject with complex column binding using URL adaptor
+The `dataStateChange` event is triggered whenever you perform actions that modify the state of the grid's data, such as changing pages, applying sorting, or grouping. This event provides detailed information about the action performed and the current state of the grid, including parameters like page number, sorting details, and filtering criteria.
 
-You can achieve the ExpandoObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+To implement the `dataStateChange` event, follow these steps:
 
-The following code example shows how to bind ExpandoObject datasource in grid using URL adaptor.
+1. **Subscribe to the event:** In your component code, subscribe to the `dataStateChange` event using the appropriate event handler function. This function will be executed whenever you interact with the grid.
 
-{% if page.publishingplatform == "aspnet-core" %}
+2. **Handle data state:** Inside the event handler function, you can access the event arguments to determine the individual actions and intentions. The action property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
-{% endhighlight %}
-{% endtabs %}
+> The `dataStateChange` event will not be triggered during the initial rendering.
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+## Creating an API service
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="expandoObject.cs" %}
-{% include code-snippet/grid/data-binding/expandoObject-ComplexBinding-URL/expandoObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+To configure a server with Syncfusion ASP.NET Core Grid, you need to follow the below steps:
 
-> Perform data and CRUD operations for complex ExpandoObject binding fields as well.
+**Step 1:** To create a new ASP.NET Core Web App(Razor Pages) project named CustomBinding, follow these steps:
 
-The following image represents ExpandoObject complex data binding. 
+* Open Visual Studio.
+* Select “Create a new project”
+* Choose ASP.NET Core Web App(Razor Pages) project template.
+* Name the project **CustomBinding**.
+* Click “Create”
 
-![Grid with ExpandoObject Binding](../images/ExpandoObjectDemo.gif)
+**Step 2:**  Create a simple ASP.NET Core Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
 
-## DynamicObject with complex column binding using URL adaptor
+**Step 3:**  Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
 
-You can achieve DynamicObject complex data binding in the data grid by using the dot(.) operator in the column.field. In the following examples, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry are complex data.
+```cs
+  public class OrdersDetails
+  {
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails() { }
+    public OrdersDetails(int orderID, string customerId, int productID, string productName)
+    {
+      this.OrderID = orderID;
+      this.CustomerName = customerId;
+      this.ProductID = productID;
+      this.ProductName = productName;
+    }
+    public static List<OrdersDetails> GetAllRecords()
+    {
+      if (order.Count() == 0)
+      {
+        int code = 10000;
+        for (int i = 1; i < 5; i++)
+        {
+          order.Add(new OrdersDetails(code + 1, "Maria", 1, "Chai"));
+          order.Add(new OrdersDetails(code + 2, "Ana Trujillo", 2, "Chang"));
+          order.Add(new OrdersDetails(code + 3, "Patricio Simpson", 3, "Aniseed Syrup"));
+          order.Add(new OrdersDetails(code + 4, "Ana Trujillo", 4, "Chef Anton's Cajun Seasoning"));
+          order.Add(new OrdersDetails(code + 5, "Georg Pipps", 5, "Grandma's Boysenberry Spread"));
+          order.Add(new OrdersDetails(code + 6, "Peter Franken", 5, "Chef Anton's Cajun Seasoning"));
+          order.Add(new OrdersDetails(code + 7, "Paul Henriot", 5, "Mishi Kobe Niku"));
+          order.Add(new OrdersDetails(code + 8, "Marie Bertrand", 5, "Northwoods Cranberry Sauce"));
+          order.Add(new OrdersDetails(code + 9, "Palle Ibsen", 5, "Carnarvon Tigers"));
+          order.Add(new OrdersDetails(code + 10, "Rita Müller", 5, "CFlotemysost"));
+          code += 10;
+          }
+        }
+        return order;
+    }
+    public int? OrderID { get; set; }
+    public string? CustomerName { get; set; }
+    public int? ProductID { get; set; }
+    public string? ProductName { get; set; }
+  }
+  
+```
 
-The following code example shows how to bind DynamicObject datasource in grid using URL adaptor.
+**Step :** In the **Index.cshtml.cs** file,add the following code to the GetOrderData method to return the result and count:
 
-{% if page.publishingplatform == "aspnet-core" %}
+```cs
+ public class IndexModel : PageModel
+ {
+    private readonly ILogger<IndexModel> _logger;
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
-{% endhighlight %}
-{% endtabs %}
+    public IndexModel(ILogger<IndexModel> logger)
+    {
+        _logger = logger;
+    }
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+    public JsonResult OnPostGetOrderData()
+    {
+      // Get all order records
+      IEnumerable<OrdersDetails> dataSource = OrdersDetails.GetAllRecords();
+      // Get the total count of records
+      int totalCount = dataSource.Count();
+      // Return a JSON object with both the result and the count
+      return new JsonResult(new { result = dataSource, count = totalCount });
+    }
+ }
+```
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="dynamicObject.cs" %}
-{% include code-snippet/grid/data-binding/dynamicObject-ComplexBinding-URL/dynamicObject.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+**Step 9:** In the **Pages/Index.cshtml** file, handle CRUD operations and grid actions using Syncfusion’s DataManager to fetch and manipulate data. Add the following code:
 
-> Perform data and CRUD operations for complex DynamicObject binding fields as well.
-
-The following image represents DynamicObject complex data binding.
-
-![Grid with DynamicObject Binding](../images/DynamicObjectDemo.gif)
-
-## OData adaptor - Binding OData service
-
-[OData](http://www.odata.org/documentation/odata-version-3-0/) is a standardized protocol for creating and consuming data. You can retrieve data from OData service using the DataManager. Refer to the following code example for remote Data binding using `OData` service.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/odata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Odata.cs" %}
-{% include code-snippet/grid/data-binding/odata/odata.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/odata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Odata.cs" %}
-{% include code-snippet/grid/data-binding/odata/odata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## OData v4 adaptor - Binding OData v4 service
-
-The ODataV4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume OData v4 services. For more details on OData v4 services, refer to the [OData documentation](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData v4 service, use the `ODataV4Adaptor`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/odataV4/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="OdataV4.cs" %}
-{% include code-snippet/grid/data-binding/odataV4/odataV4.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/odataV4/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="OdataV4.cs" %}
-{% include code-snippet/grid/data-binding/odataV4/odataV4.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Odata with custom url
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
-
-**Configuring Custom URLs**
-
-To work with custom URLs for CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can use the following properties:
-
-* insertUrl: Specifies the custom URL for inserting new records.
-* removeUrl: Specifies the custom URL for deleting records.
-* updateUrl: Specifies the custom URL for updating records.
-* batchUrl: Specifies the custom URL for batch editing operations.
-
-> Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
-
-The following code example describes the above behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
-    <e-data-manager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7" adaptor="ODataV4Adaptor" 
-    updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
-    insertUrl= "https://localhost:xxxx/odata/Orders/Insert"
-    removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
-    crossdomain="true"></e-data-manager>
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+```ts
+<ejs-grid id="grid" created="created" allowPaging="true" dataStateChange="dataStateChange">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true" validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140" validationRules="@(new { required=true, minLength=3})"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
+        <e-grid-column field="CustomerName" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="140"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" textAlign="Right" width="140"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-{% endhighlight %}
-{% endtabs %}
+<script>
+    var gridData;
+    var state = {
+        skip: 0,
+        take: 12
+    };
+    function created() {
+        dataStateChange(state)
+    }
+    function dataStateChange(state) {
+        const grid = document.getElementById("grid").ej2_instances[0];
+        const query = grid.getDataModule().generateQuery();
+        getOrders(state, query).then(gridData => {
+            grid.dataSource = gridData.result;
+        });
+    }
+    function getOrders(state, action) {
+        const query = new ej.data.Query();
+        // page
+        applyPaging(query, state)
+        query.isCountRequired = true
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+        var fetchRequest = new ej.base.Fetch({
+            url: `@fullUrl?handler=GetOrderData`,
+            type: 'POST',
+            beforeSend: function (args) {
+                args.fetchRequest.headers.set('XSRF-TOKEN', document.querySelector('input[type = "hidden"][name = "__RequestVerificationToken"]').value);
+            },
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-@Html.EJS().Grid("OdataV4").DataSource(dataManger =>
-{
-    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").InsertUrl("https://localhost:xxxx/odata/Orders/Insert").
-    RemoveUrl("https://localhost:xxxx/odata/Orders/Delete").
-    UpdateUrl("https://localhost:xxxx/odata/Orders/Update").
-    CrossDomain(true).
-    Adaptor("ODataV4Adaptor");
-}).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true", minLength=3 }).Width("160").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+        })
+        return fetchRequest.send()
+            .then(data => {
+                // Create a DataManager instance with your fetched data
+                gridData = new ej.data.DataManager(data.result);
+                // Execute local data operations using the provided query
+                const result = gridData.executeLocal(query);
+                // Return the result along with the count of total records
+                return {
+                    result: result, // Result of the data
+                    count: result.count // Total record count based on fetched data length
+                };
+            });
+    }
+    const applyPaging = (query, state) => {
+        // Check if both 'take' and 'skip' values are available
+        if (state.take && state.skip) {
+            // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+            const pageSkip = state.skip / state.take + 1;
+            const pageTake = state.take;
+            query.page(pageSkip, pageTake);
+        }
+        // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+        else if (state.skip === 0 && state.take) {
+            query.page(1, state.take);
+        }
+    }
+</script> 
 
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+```
 
-For batch editing, you can specify a custom batch URL as follows:
+## Handling filtering operation
 
-{% if page.publishingplatform == "aspnet-core" %}
+When filtering operation is performed in the grid, the `dataStateChange` event is triggered, providing access to the following referenced arguments within the event.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
-    <e-data-manager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7" adaptor="ODataV4Adaptor"
-    BatchUrl="https://localhost:xxxx/odata/Orders/BatchUpdate"
-    crossdomain="true"></e-data-manager>
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120" isPrimaryKey="true" validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140" validationRules="@(new { required=true, minLength=3})"></e-grid-column>
-        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
-{% endhighlight %}
-{% endtabs %}
+![FilterBar](../../images/databinding/remote-filtering.png)
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can change the new grid data state of filter action as follows:
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-@Html.EJS().Grid("OdataV4").DataSource(dataManger =>
-{
-    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").
-    BatchUrl("https://localhost:xxxx/odata/Orders/BatchUpdate").
-    CrossDomain(true).
-    Adaptor("ODataV4Adaptor");
-}).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true", minLength=3 }).Width("160").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+```typescript
+// Apply filtering
+const applyFiltering = (query, filter)=> {
+// Check if filter columns are specified
+  if (filter.columns && filter.columns.length) {
+    // Apply filtering for each specified column
+    for (let i = 0; i < filter.columns.length; i++) {
+      const field = filter.columns[i].field;
+      const operator = filter.columns[i].operator;
+      const value = filter.columns[i].value;
+      query.where(field, operator, value);
+    }
+  }
+  else {
+    // Apply filtering based on direct filter conditions
+    for (let i = 0; i < filter.length; i++) {
+      const { fn, e } = filter[i];
+      if (fn === 'onWhere') {
+        query.where(e as string);
+      }
+    }
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // filter
+  if (state.where) {
+    applyFiltering(query, action.queries);
+  }
+  query.isCountRequired = true
 
-}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Web API adaptor
-
-You can use `WebApiAdaptor` to bind grid with Web API created using OData endpoint.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/webapi/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/grid/data-binding/webapi/controller.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="WebAPI.cs" %}
-{% include code-snippet/grid/data-binding/webapi/webapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/webapi/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/grid/data-binding/webapi/controller.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="WebAPI.cs" %}
-{% include code-snippet/grid/data-binding/webapi/webapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-The response object should contain properties, `Items` and `Count`, whose values are a collection of entities and total count of the entities, respectively.
-
-The sample response object should look like this:
-
-```json
-{
-    Items: [{..}, {..}, {..}, ...],
-    Count: 830
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
 }
 ```
 
-## Remote save adaptor
+![Filtering Multiple Values](../../images/databinding/remote-multiplefilter.png)
 
-You may need to perform all Grid Actions in client-side except the CRUD operations, that should be interacted with server-side to persist data. It can be achieved in Grid by using `RemoteSaveAdaptor`.
+When filtering multiple values, you can get the predicates as arguments in the `dataStateChange` event. You can create your predicate execution based on the predicates values.
 
-Datasource must be set to `json` property and set `RemoteSaveAdaptor` to the `adaptor` property. CRUD operations can be mapped to server-side using `updateUrl`, `insertUrl`, `removeUrl`, `batchUrl`, `crudUrl` properties.
+## Handling searching operation
 
-You can use the following code example to use `RemoteSaveAdaptor` in Grid.
+When performing a search operation in the grid, the `dataStateChange` event is triggered, allowing access to the following referenced arguments within the event
 
-{% if page.publishingplatform == "aspnet-core" %}
+![Searching](../../images/databinding/remote-search.png)
+
+You can change the new grid data state of search action as follows:
+
+```typescript
+// Apply searching 
+const applySearching = (query, search)=> {
+  // Check if a search operation is requested
+  if (search && search.length > 0) {
+    // Extract the search key and fields from the search array
+    const { fields, key } = search[0];
+    // perform search operation using the field and key on the query
+    query.search(key, fields);
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // search
+  if (state.search) {
+    applySearching(query, state.search);
+  };
+  query.isCountRequired = true
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
+  }
+```
+
+## Handling sorting operation
+
+When sorting operation is performed in the grid, the DataStateChange event is triggered, and within this event, you can access the following referenced arguments.
+
+![Sorting](../../images/databinding/remote-sorting.png)
+
+When performing multi-column sorting, you can get the below referred arguments in the `dataStateChange` event.
+
+![Multi Sorting](../../images/databinding/remote-multiplesort.png)
+
+You can change the new grid data state of sort action as follows:
+
+```typescript
+// Apply sorting
+const applySorting = (query, sorted) =>{
+  // Check if sorting data is available
+  if (sorted && sorted.length > 0) {
+    // Iterate through each sorting info
+    sorted.forEach(sort => {
+      // Get the sort field name either by name or field
+      const sortField = sort.name || sort.field;
+      // Perform sort operation using the query based on the field name and direction
+      query.sortBy(sortField, sort.direction);
+    });
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // sort
+  if (state.sorted) {
+    state.sorted.length ? applySorting(query, state.sorted) :
+      // initial sorting
+      state.sorted.columns.length ? applySorting(query, state.sorted.columns) : null
+  }
+  query.isCountRequired = true
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
+}
+```
+
+## Handling paging operation
+
+When paging operation is performed in the grid, the `dataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
+
+![Paging](../../images/databinding/remote-paging.png)
+
+You can change the new grid data state of page action as follows:
+
+```typescript
+// Apply paging
+const applyPaging = (query, state)=> {
+  // Check if both 'take' and 'skip' values are available
+  if (state.take && state.skip) {
+    // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+    const pageSkip = state.skip / state.take + 1;
+    const pageTake = state.take;
+    query.page(pageSkip, pageTake);
+  }
+  // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+  else if (state.skip === 0 && state.take) {
+    query.page(1, state.take);
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // page
+  applyPaging(query, state)
+  query.isCountRequired = true
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
+}
+```
+
+## Handling grouping operation
+
+When grouping operation is performed in the grid, the `dataStateChange` event is triggered, providing access to the following referenced arguments within the event.
+
+![Grouping](../../images/databinding/remote-group.png)
+
+You can change the new grid data state of group action as follows:
+
+```typescript
+// Apply grouping
+const applyGrouping = (query, group) =>{
+  // Check if sorting data is available
+  if (group.length > 0) {
+    // Iterate through each group info
+    group.forEach((column: string) => {
+      // perform group operation using the column on the query
+      query.group(column);
+    });
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // grouping
+  if (state.group) {
+    state.group.length ? applyGrouping(query, state.group) :
+      // initial grouping
+      state.group.columns.length ? applyGrouping(query, state.group.columns) : null
+  }
+  query.isCountRequired = true
+
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
+}
+```
+
+> * In order to utilize group actions, it is necessary to manage the sorting query within your service.
+
+**Lazy load grouping**
+
+In ASP.NET Core, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand. 
+
+To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
+
+```typescript
+const state = { skip:0, take: 12, group: { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true }};
+```
+
+Based on the initial state, you can get the arguments as shown below
+
+![Lazy load group](../../images/databinding/remote-lazyload.png)
+
+You can change the grid state as follows:
+
+```typescript
+// Apply grouping
+const applyGrouping = (query, group) =>{
+  // Check if sorting data is available
+  if (group.length > 0) {
+    // Iterate through each group info
+    group.forEach((column: string) => {
+      // perform group operation using the column on the query
+      query.group(column);
+    });
+  }
+}
+// Apply lazy load grouping
+const applyLazyLoad = (query, payload) => {
+  // Configure lazy loading for the main data
+  if (payload.isLazyLoad) {
+    query.lazyLoad.push({ key: 'isLazyLoad', value: true });
+    // If on-demand group loading is enabled, configure lazy loading for grouped data
+    if (payload.onDemandGroupInfo) {
+      query.lazyLoad.push({
+          key: 'onDemandGroupInfo',
+          value: payload.action.lazyLoadQuery,
+      });
+    }
+  }
+}
+/** GET all data from the server */
+export function getOrders(state, action) {
+  const query = new Query();
+  // grouping
+  if (state.group) {
+    state.group.length ? applyGrouping(query, state.group) :
+      // initial grouping
+      state.group.columns.length ? applyGrouping(query, state.group.columns) : null
+  }
+  // lazy load grouping
+  if (state.group) {
+    if (state.isLazyLoad) {
+      applyLazyLoad(query, state)
+    }
+    if (state.group.enableLazyLoading) {
+      query.lazyLoad.push({ key: 'isLazyLoad', value: true })
+    }
+  }
+  query.isCountRequired = true
+  // Request the data from server using fetch
+  return fetch(baseUrl)
+    .then(res => res.json())
+    .then(data => {
+      // Create a DataManager instance with your fetched data
+      const dataManager = new DataManager(data.result);
+      // Execute local data operations using the provided query
+      const result = dataManager.executeLocal(query);
+      // Return the result along with the count of total records
+      return {
+        result: result, // Result of the data
+        count: result.count // Total record count based on fetched data length
+      };
+    });
+}
+```
+
+> Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/lazy-load-grouping).
+
+## Handling CRUD operations
+
+The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
+
+Integrating CRUD Operations
+
+To implement CRUD operations using Syncfusion Grid, follow these steps:
+
+1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
+
+2. **Handle data state changes:** Utilize the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event to respond to changes in the grid’s data state. This event is triggered whenever you interact with the grid, such as paging or sorting.
+
+3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSourceChanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
+
+4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the endEdit method to signal the completion of the operation and update the grid accordingly.
+
+**Insert operation**
+
+When an insert operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+
+![Insert record](../../images/databinding/remote-add.png)
+
+```ts
+// add
+export function addRecord(order) {
+  return fetch(baseUrl , {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      value: order
+    })
+  })
+    .then((data) => {
+      return data;
+    });
+}
+```
+
+**Edit operation**
+
+When an edit operation is performed in the grid, the `dataSourceChanged` event will be triggered, providing access to the following referenced arguments within the event.
+
+![Edit record](../../images/databinding/remote-edit.png)
+
+```ts
+// update
+export function updateRecord(order) {
+  return fetch(`${baseUrl}/${order.OrderID}`, {
+    method: "put",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      value: order
+    })
+  })
+    .then(data => {
+      return data;
+    });
+}
+```
+
+**Delete operation**
+
+When a delete operation is performed in the grid, the `dataSourceChanged` event will be triggered, allowing access to the following referenced arguments within the event.
+
+![Delete record](../../images/databinding/remote-delete.png)
+
+```ts
+// delete
+export function deleteRecord(primaryKey) {
+  return fetch(`${baseUrl}/${primaryKey}`, {
+    method: "delete",
+    body: JSON.stringify({
+      value: primaryKey
+    })
+  })
+  .then(data => {
+    return data;
+  });
+}
+```
+
+The following example demonstrates how to bind custom data to handle grid actions and CRUD operation.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remotesaveadaptor/tagHelper %}
+{% highlight razor tabtitle="Index.cshtml" %}
+{% include code-snippet/grid/data-binding/remote-custom-handle/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Remotesaveadaptor.cs" %}
-{% include code-snippet/grid/data-binding/remotesaveadaptor/remotesaveadaptor.cs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/grid/data-binding/remote-custom-handle/custombindingcore.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/data-binding/remote-custom-handle/OrdersDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following screenshot represents the grid action with custom binding
+![Grid with Custom Binding](../../images/databinding/remote-custom-binding.gif)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remotesaveadaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotesaveadaptor.cs" %}
-{% include code-snippet/grid/data-binding/remotesaveadaptor/remotesaveadaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Custom adaptor
-
-You can create your own adaptor by extending the built-in adaptors. The following demonstrates custom adaptor approach and how to add a serial number for the records by overriding the built-in response processing using the `processResponse` method of the `ODataAdaptor`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/customadaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customsadaptor.cs" %}
-{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customsadaptor.cs" %}
-{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/customadaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customsadaptor.cs" %}
-{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customsadaptor.cs" %}
-{% include code-snippet/grid/data-binding/customadaptor/customsadaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+> * While working with grid edit operation, defining the `isPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
+> * Need to maintain the same instance for all grid actions.
 
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -389,118 +634,3 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/offline/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Offline.cs" %}
-{% include code-snippet/grid/data-binding/offline/offline.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Handling on-demand grid actions
-
-`On-Demand` grid actions help you to improve the performance for large data application. To achieve `On-Demand` in the grid, use `UrlAdaptor`. To define `UrlAdaptor` in the grid, specify the data service in `url` and the `AdaptorType` as `UrlAdaptor` like below.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dataoperations/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/dataoperations/razor %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-After defined `DataManager`, grid will request an AJAX POST for data. It will be sent to the specified data service for every grid actions with the needed parameters. This query parameters will help you to perform server-side operations for grid.
-
-| Parameters | Description |
-|-----|-----|
-| `RequiresCounts` | If it is `true` then the total count of records will be included in response. |
-| `Skip` | Holds the number of records to skip. |
-| `Take` | Holds the number of records to take. |
-| `Sorted` | Contains details about current sorted column and its direction. |
-| `Table` | Defines data source table name. |
-| `Where` | Contains details about current filter column name and its constraints. |
-
-The parameters of DataManager bound to `DataManagerRequest` in the server. You can use `Dataoperations` and `DataManagerRequest` to process grid actions such as `Paging`, `Sorting`, `Searching`, and `Filtering` using the following methods.
-
-| Method Names | Actions |
-|-----|-----|
-| `PerformSkip` | Bypasses a specified `Skip` value and returns the remaining collections of records. |
-| `PerformTake` | Bypasses a specified `Take` value and returns the remaining  collections of records. |
-| `PerformFiltering` | `Filters` a sequence of records based on a predicate. |
-| `PerformSorting` | `Sorts` the collections of records based on its direction. |
-| `PerformSearching` | `Search` the records based on a predicate.  |
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Dataoperation.cs" %}
-{% include code-snippet/grid/data-binding/serversideoperation/dataoperation.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Dataoperation.cs" %}
-{% include code-snippet/grid/data-binding/serversideoperation/dataoperation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-N> If the grid rendered rows with empty/blank values then it can be resolved with the procedure explained [here](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/data-binding#troubleshoot-grid-render-rows-without-data).
-
-## WebMethod
-
-The `WebMethodAdaptor` is used to bind datasource from remote services and code behind methods. It can be enabled in Grid using Adaptor property of DataManager as `WebMethodAdaptor`.
-
-For every operations, an AJAX post will be send to the specified data service.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/webmethod/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
-{% include code-snippet/grid/data-binding/webmethod/webapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/webmethod/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Webapi.cs" %}
-{% include code-snippet/grid/data-binding/webmethod/webapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-`WebMethodAdaptor` expects JSON response from the server and the response object should contain properties `result` and `count` whose values are collection of entities and total count of the entities respectively.
-
-The sample response object should look like below.
-
-```json
-{
-    result: [{..}, {..}, {..}, ...],
-    count: 830
-}
-```
-
-N> The controller method's data parameter name must be `value`.
