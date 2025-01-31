@@ -1,20 +1,16 @@
-   <ejs-tooltip id="tooltip" content= "Tooltip content"  animation="ViewBag.animation">
-        <e-content-template>
-            <div id="target">
-                Show tooltip
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+<ejs-tooltip id="tooltip" content="Tooltip content" animation="ViewBag.animation" position="TopCenter">
+    <e-content-template>
+        <ejs-button id="target" content="Show tooltip">            
+        </ejs-button>
+    </e-content-template>
+</ejs-tooltip>
 
 
 <style>
 
-    #target {
-        background-color: #ececec;
-        border: 1px solid #c8c8c8;
-        box-sizing: border-box;
-        margin: 50px auto;
-        padding: 10px;
-        width: 100px;
+    #tooltip {
+        position: absolute;
+        left: calc( 50% - 60px);
+        top: 38%;
     }
 </style>

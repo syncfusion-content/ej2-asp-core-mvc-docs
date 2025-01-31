@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show Tooltip On Disabled Elements And Disable Tooltip in ##Platform_Name## Tooltip Component
+title: Show Tooltips on disabled elements in ##Platform_Name## Tooltip Component  | Syncfusion
 description: Learn here all about Show Tooltip On Disabled Elements And Disable Tooltip in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Show Tooltip On Disabled Elements And Disable Tooltip
@@ -40,3 +40,6 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 {% endif %}
 
 
+Output be like the below.
+
+![ASP .NET Core - Tooltip on disabled elements](./images/disabled-elements.png)
