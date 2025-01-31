@@ -1,4 +1,4 @@
-      <ejs-tooltip id="tooltip" height="60px" width="300px" isSticky="true" target="#target" content="<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>">
+      <ejs-tooltip id="tooltip" height="60px" width="300px" isSticky="true" target="#target" content="<div><b>Environmentally friendly</b> or environment-friendly, (also referred to as eco-friendly, nature-friendly, and green) are marketing and sustainability terms referring to goods and services, laws, guidelines and policies that inflict reduced, minimal, or no harm upon ecosystems or the environment.</div>" position="TopCenter">
         <e-content-template>
             <div id='container'>
                 <p>
@@ -15,7 +15,7 @@
 <style>
     #tooltip {
         position: absolute;
-        left: calc( 50% - 60px);
+        left: calc( 20% - 60px);
         top: 38%;
     }
 </style>

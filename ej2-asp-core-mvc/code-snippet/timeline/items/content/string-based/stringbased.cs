@@ -1,4 +1,4 @@
-public ActionResult Demo()
+public ActionResult StringContent()
 {
     List<TimelineItem> orderStatus = new List<TimelineItem>();
     orderStatus.Add(new TimelineItem { Content = "Shipped" });

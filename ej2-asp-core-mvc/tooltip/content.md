@@ -48,7 +48,7 @@ Output be like the below.
 
 ![ASP .NET Core - Tooltip - Content](./images/tooltip-content.png)
 
-## Dynamic content via Fetch
+## Load dynamic Tooltip content
 
 The Tooltip content can be dynamically loaded  by making use of the Fetch call. The Fetch request is usually made within the `beforeRender` event of the Tooltip, and then the Tooltip's `content` is assigned the value retrieved on it's success.
 
@@ -62,6 +62,9 @@ N> The Tooltip **target** property includes a unique identifier used to associat
 {% endhighlight %}
 {% highlight c# tabtitle="AjaxContent.cs" %}
 {% include code-snippet/tooltip/ajaxcontent/ajaxcontent.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="tooltipdata.json" %}
+{% include code-snippet/tooltip/ajaxcontent/tooltipdata.json %}
 {% endhighlight %}
 {% endtabs %}
 

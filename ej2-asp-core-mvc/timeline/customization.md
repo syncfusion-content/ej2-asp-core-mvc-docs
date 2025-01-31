@@ -24,9 +24,6 @@ You can define the styles applicable to the all the Timeline item connectors.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/connector-common/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/connector-common/connectorcommon.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -52,9 +49,6 @@ You can also apply unique styles to individual connectors, to differentiate spec
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/connector-individual/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/connector-individual/connectorindividual.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,9 +78,6 @@ You can modify the color of the dots to highlight the specific Timeline items.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/dot-color/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-color/dotcolor.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -112,9 +103,6 @@ You can adjust the size of the dot to make it larger or smaller by using the `--
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/dot-size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-size/dotsize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,9 +130,6 @@ You can add shadow effects to the Timeline dots to make it feel visually engagin
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/dot-shadow/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-shadow/dotshadow.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -171,9 +156,6 @@ You can achieve the desired dot variant by customizing the border, outline and b
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/dot-variant/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-variant/dotvariant.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -192,16 +174,13 @@ You can achieve the desired dot variant by customizing the border, outline and b
 
 ### Dot outline
 
-By adding the `e-outline` class to the Timeline `cssClass` property it enables the dots to have an outline state.
+By adding the `e-outline` class to the Timeline [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property it enables the dots to have an outline state.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/customization/dot-outline/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/customization/dot-outline/dot-outline.cs %}
 {% endhighlight %}
 {% endtabs %}
 

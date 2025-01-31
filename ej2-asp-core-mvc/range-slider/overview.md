@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Range Slider Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## Range Slider Control
+description: Learn here all about Overview in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
