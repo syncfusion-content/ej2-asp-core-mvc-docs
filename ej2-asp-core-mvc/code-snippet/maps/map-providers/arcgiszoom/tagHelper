@@ -1,0 +1,7 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-zoomSettings Enable="true"></e-maps-zoomSettings>
+        <e-maps-layers>
+            <e-maps-layer urlTemplate="https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/level/tileY/tileX?apiKey=Your_Key"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

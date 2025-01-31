@@ -1,0 +1,20 @@
+@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Maps;
+
+@Html.EJS().Maps("maps").ZoomSettings(zoom => zoom.ZoomFactor(4)).CenterPosition(c=>c.Latitude(29.394708).Longitude(-94.954653)).Layers(l =>
+    {
+    l.UrlTemplate("https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY").MarkerSettings(marker =>
+    {
+    marker.Visible(true).DataSource(ViewBag.markerData).Height(25).Width(15).Add();
+    }).NavigationLineSettings(ns =>
+    {
+    ns.Visible(true).Latitude(new double[] { 34.060620, 40.724546 })
+    .Longitude(new double[] { -118.330491, -73.850344 }).Color("Blue").Angle(0.1).Add();
+    }).Add();
+    }).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

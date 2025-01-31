@@ -3,7 +3,7 @@
 
 
 @{ 
-    var urlTemplate = "https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY";
+    var urlTemplate = "https://atlas.microsoft.com/map/tile?api-version=2022-08-01&tilesetId=microsoft.base.road&zoom=level&x=tileX&y=tileY&subscription-key=Your_Key";
 }
 <div class="control-section">
     <div id="outer" style="width:100%">
