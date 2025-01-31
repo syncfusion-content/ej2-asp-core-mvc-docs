@@ -1,4 +1,4 @@
-<ejs-tooltip id="target" content="Tooltip content" isSticky="true">
+<ejs-tooltip id="target" content="Tooltip content" isSticky="true" position="TopCenter">
     <e-content-template>
         <div id="content">
             Show tooltip

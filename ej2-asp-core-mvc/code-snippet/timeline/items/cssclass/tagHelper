@@ -1,0 +1,31 @@
+@using Syncfusion.EJ2.Layouts;
+
+<div class="container" style="height: 250px">
+    <ejs-timeline id="timeline">
+        <e-timeline-items>
+            <e-timeline-item content="Eat" cssClass='eat' ></e-timeline-item>
+            <e-timeline-item content="Code" cssClass='code'></e-timeline-item>
+            <e-timeline-item content="Repeat" cssClass='repeat'></e-timeline-item>
+        </e-timeline-items>
+    </ejs-timeline>
+</div>
+
+<style>
+    .eat .e-dot,
+    .eat.e-timeline-item.e-connector::after {
+        background-color: aqua;
+        border-color: aqua;
+    }
+
+    .code .e-dot,
+    .code.e-timeline-item.e-connector::after {
+        background-color: blue;
+        border-color: blue;
+    }
+
+    .repeat .e-dot,
+    .repeat.e-timeline-item.e-connector::after {
+        background-color: yellow;
+        border-color: yellow;
+    }
+</style>
