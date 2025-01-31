@@ -1,4 +1,4 @@
-public ActionResult Demo()
+public ActionResult DotItem()
 {
     List<TimelineItem> dotItems = new List<TimelineItem>();
     dotItems.Add(new TimelineItem { Content = "Default" });

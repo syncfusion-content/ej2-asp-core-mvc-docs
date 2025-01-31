@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Limits in ##Platform_Name## Range Slider Control | Syncfusion
-description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Limits in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Limits
 publishingplatform: ##Platform_Name##
@@ -15,13 +15,13 @@ The slider limits restrict the slider thumb between a particular range. This is 
 
 The following are the six options in the slider's limits object. Each API in the limits object is optional.
 
-* ``enabled``: Enables the limits in the Slider.
-* ``minStart``: Sets the minimum limit for the first handle.
-* ``minEnd``: Sets the maximum limit for the first handle.
-* ``maxStart``: Sets the minimum limit for the second handle.
-* ``maxEnd``: Sets the maximum limit for the second handle.
-* ``startHandleFixed``: Locks the first handle.
-* ``endHandleFixed``: Locks the second handle.
+* [``enabled``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_Enabled): Enables the limits in the Slider.
+* [``minStart``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_MinStart): Sets the minimum limit for the first handle.
+* [``minEnd``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_MinEnd): Sets the maximum limit for the first handle.
+* [``maxStart``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_MaxStart): Sets the minimum limit for the second handle.
+* [``maxEnd``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_MaxEnd): Sets the maximum limit for the second handle.
+* [``startHandleFixed``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_StartHandleFixed): Locks the first handle.
+* [``endHandleFixed``](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderLimitData.html#Syncfusion_EJ2_Inputs_SliderLimitData_EndHandleFixed): Locks the second handle.
 
 ## Default and MinRange Slider limits
 
@@ -56,7 +56,7 @@ There is only one handle in the Default and MinRange Slider, so ``minStart``, ``
 
 ## Range Slider limits
 
-In the range slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
+In the Range Slider, both handles can be restricted and locked from the limit's object. In this sample, the first handle is limited between 10 and 40, and the second handle is limited between 60 and 90.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks in ##Platform_Name## Range Slider Component
-description: Learn here all about Ticks in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+title: Ticks in ##Platform_Name## Range Slider Control
+description: Learn here all about Ticks in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ticks
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Ticks
 
-The Ticks in Slider supports you to easily identify the current value/values of the Slider. It contains `smallStep` and `largeStep`. The value of the major ticks alone will be displayed in the slider. In order to enable/disable the small ticks, use the `showSmallTicks` property.
+The Ticks in Slider supports you to easily identify the current value/values of the Slider. It contains [`smallStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_SmallStep) and [`largeStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_LargeStep). The value of the major ticks alone will be displayed in the slider. In order to enable/disable the small ticks, use the [`showSmallTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_ShowSmallTicks) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ The Ticks in Slider supports you to easily identify the current value/values of 
 
 ## Step
 
-When the Slider is moved, it increases/decreases the value based on the step value. By default, the value is increased/decreased by 1. Use the `step` property to change the increment step value.
+When the Slider is moved, it increases/decreases the value based on the step value. By default, the value is increased/decreased by 1. Use the [`step`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Step) property to change the increment step value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,7 +73,7 @@ When the Slider is moved, it increases/decreases the value based on the step val
 
 ## Min and Max
 
-Enables the minimum/starting and maximum/ending value of the Slider, by using the `min` and `max` property. By default, the minimum value is 1 and maximum value is 100. In the following sample the slider is rendered with the min value as 100 and max value as 1000.
+Enables the minimum/starting and maximum/ending value of the Slider, by using the [`min`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Min) and [`max`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Max) property. By default, the minimum value is 1 and maximum value is 100. In the following sample the slider is rendered with the min value as 100 and max value as 1000.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

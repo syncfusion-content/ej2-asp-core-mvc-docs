@@ -26,9 +26,6 @@ You can define string content for the Timeline items.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/items/content/string-based/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/items/content/string-based/stringbased.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -55,9 +52,6 @@ You can specify the [Template Content](https://help.syncfusion.com/cr/aspnetcore
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/items/content/template-based/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/items/content/template-based/templatebased.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -83,9 +77,6 @@ You can add additional information to each Timeline item, by using the [opposite
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/items/opposite-content/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/items/opposite-content/oppositecontent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,9 +116,6 @@ You can display text for the Timeline items using the `dotCss` property, by addi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/items/dot-item/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/items/dot-item/dotitem.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -154,9 +142,6 @@ You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/items/disabled/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/items/disabled/disabled.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -175,4 +160,26 @@ You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 ## CSS class
 
-The [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property allows you to define a custom class to modify the appearance of the Timeline item.
+You can customize the appearance of the Timeline item by specifying a custom CSS class using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.TimelineItem.html#Syncfusion_EJ2_Layouts_TimelineItem_CssClass) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/timeline/items/cssClass/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/timeline/items/cssClass/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Separator.cs" %}
+{% include code-snippet/timeline/items/cssClass/cssClass.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![CssClass items](images/cssClass.png)
