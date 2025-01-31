@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in ##Platform_Name## Range Slider Component
-description: Learn here all about Orientation in Syncfusion ##Platform_Name## Range Slider component of Syncfusion Essential JS 2 and more.
+title: Orientation in ##Platform_Name## Range Slider Control
+description: Learn here all about Orientation in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Orientation
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Orientation
 
-The Slider can be displayed, either in horizontal or vertical orientation. By default, the Slider renders in horizontal orientation.
+The Slider can be displayed, either in horizontal or vertical by using [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Orientation) property. By default, the Slider renders in horizontal orientation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,3 +1,33 @@
-<ejs-slider id="default" value="30"></ejs-slider>
-<ejs-slider id="minrange" value="30" type="MinRange" ></ejs-slider>
-<ejs-slider id="range" value="ViewBag.range" type="Range" ></ejs-slider>
+<div class="content-wrapper">
+    <div class="sliderwrap">
+        <label class="labeltext userselect">Default Slider</label>
+        <ejs-slider id="default" value="30"></ejs-slider>
+    </div>
+    <div class="sliderwrap">
+        <label class="labeltext userselect">MinRange Slider</label>
+        <ejs-slider id="minrange" value="30" type=MinRange></ejs-slider>
+    </div>
+    <div class="sliderwrap">
+        <label class="labeltext userselect">Range Slider</label>
+        <ejs-slider id="range" value="ViewBag.range" type=Range></ejs-slider>
+    </div>
+</div>
+<style>
+
+    .content-wrapper {
+        width: 40%;
+        margin: 0 auto;
+        min-width: 185px;
+    }
+
+    .sliderwrap {
+        margin-top: 40px;
+    }
+
+    .sliderwrap label {
+        padding-bottom: 26px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+</style>

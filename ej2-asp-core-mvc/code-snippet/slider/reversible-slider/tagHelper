@@ -1,4 +1,17 @@
-<ejs-slider id="reversible" min="100" max="0" orientation="Vertical" type="Range" value="ViewBag.range">
-    <e-slider-ticksdata placement="Before" showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
-    <e-slider-tooltipdata isVisible="true" placement="Before"></e-slider-tooltipdata>
-</ejs-slider>
+<div class='wrap'>
+    <ejs-slider id="reversible" min="100" max="0" orientation="Vertical" type="Range" value="ViewBag.range">
+        <e-slider-ticksdata placement="Before" showSmallTicks="true" largeStep="20" smallStep="5"></e-slider-ticksdata>
+        <e-slider-tooltipdata isVisible="true" placement="Before"></e-slider-tooltipdata>
+    </ejs-slider>
+</<div>
+
+
+<style>
+    .wrap {
+        box-sizing: border-box;
+        height: 260px;
+        margin: 0 auto;
+        padding: 30px 10px;
+        width: 260px;
+    }
+</style>
