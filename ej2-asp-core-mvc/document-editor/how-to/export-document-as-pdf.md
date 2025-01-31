@@ -84,16 +84,20 @@ The following way illustrates how to convert the document as PDF:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% endhighlight %}
 {% highlight c# tabtitle="DocumentEditorController.cs" %}
-{% include code-snippet/document-editor/export-pdf/core.cs %}
+{% include code-snippet/document-editor/export-pdf/aspnet-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% endhighlight %}
 {% highlight c# tabtitle="DocumentEditorController.cs" %}
-{% include code-snippet/document-editor/export-pdf/mvc.cs %}
+{% include code-snippet/document-editor/export-pdf/aspnet-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
