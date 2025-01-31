@@ -11,7 +11,9 @@ documentation: ug
 
 # Shapes in DocumentEditor
 
-Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry. At present, DocumentEditor does not have support to insert shapes. However, if the document contains a shape while importing, it will be preserved properly.
+Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry.
+
+>Note: At present, DocumentEditor does not have support to insert shapes. However, if the document contains a shape while importing, it will be preserved properly.
 
 ## Supported shapes
 
@@ -19,7 +21,7 @@ The DocumentEditor has preservation support for Lines, Rectangle, Basic Shapes, 
 
 ![List of supported shapes in DocumentEditor](images/Shapes_images/supported_shapes.png)
 
-N> When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
+>Note: When using ASP.NET MVC service, the unsupported shapes will be converted as image and preserved as image.
 
 ## Text box Shape
 
