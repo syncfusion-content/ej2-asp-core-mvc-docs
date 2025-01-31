@@ -1,10 +1,10 @@
-     <ejs-tooltip id="tooltip" cssClass="customtip" content="Tooltip arrow customized">
-        <e-content-template>
-            <div id="target">
-                Show tooltip
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+<ejs-tooltip id="tooltip" cssClass="customtip" content="Tooltip arrow customized" position="TopCenter">
+    <e-content-template>
+        <div id="target">
+            Show tooltip
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
     #target {
