@@ -1,7 +1,14 @@
+@{
+    ViewBag.dropDownData = new List<object>
+    {
+        new { value = "Normal", text = "Normal" },
+        new { value = "Auto", text = "Auto" },
+    };
+}
 <div style="display: flex">
     <label style="padding: 10px 10px 26px 0"> Change the resize mode: </label>
     <span style="height:fit-content">
-      @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(new List<object> { "Normal", "Auto" }).Change("change").Render()
+      @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(@ViewBag.dropDownData).Change("change").Render()
     </span>
 </div>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowResizing(true).Columns(col =>

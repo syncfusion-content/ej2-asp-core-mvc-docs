@@ -1,5 +1,5 @@
 <div style="padding-bottom:20px">
-<ejs-button id="print" cssClass="e-danger" content="Print"></ejs-button>
+ <ejs-button id="print" cssClass="e-danger" content="Print"></ejs-button>
 </div>
 <!-- Grid Component -->
 <ejs-grid id="HierarchyPrint" dataSource="@ViewBag.DataSource" allowPaging="true" printMode="CurrentPage"
@@ -10,7 +10,6 @@
         <e-grid-column field="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <!-- Chart Component -->
 <h4>Chart</h4>
 <div>
@@ -24,7 +23,6 @@
         </e-series-collection>
     </ejs-chart>
 </div>
-
 <script>
     function dataBound() {
         var chart = document.getElementById('chart').ej2_instances[0];
@@ -37,19 +35,16 @@
         var grid = document.getElementById('HierarchyPrint').ej2_instances[0];
         grid.print();
     }
-
     function beforePrint(args) {
         var chartContainer = document.getElementById('chart').ej2_instances[0].element;
         var clonedChartContainer = chartContainer.cloneNode(true);
         args.element.appendChild(clonedChartContainer);
     }
-
     function actionComplete(args) {
         if (args.requestType === 'paging') {
             var chart = document.getElementById('chart').ej2_instances[0];
-
-           chart.series[0].dataSource = document.getElementById('HierarchyPrint').ej2_instances[0].getCurrentViewRecords();
-           chart.refresh();
+            chart.series[0].dataSource = document.getElementById('HierarchyPrint').ej2_instances[0].getCurrentViewRecords();
+            chart.refresh();
         }
     }
 </script>

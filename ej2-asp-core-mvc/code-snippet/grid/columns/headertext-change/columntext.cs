@@ -1,7 +1,5 @@
-public IActionResult Index()
+public ActionResult Index()
 {
-  var orders = OrdersDetails.GetAllRecords();
-  ViewBag.DataSource = orders;
-  ViewBag.dropdownData = new string[] { "OrderID", "CustomerID", "Freight", "OrderDate","ShipCountry" };
+  ViewBag.DataSource = OrdersDetails.GetAllRecords();
   return View();
 }
