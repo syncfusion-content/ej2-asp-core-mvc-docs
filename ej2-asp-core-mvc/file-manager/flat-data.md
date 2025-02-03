@@ -67,9 +67,23 @@ The FileManager can be populated with local data that contains the array of [Fil
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `FileSystemData`  objects.
 
+
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/flat-data/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="FlatDataController_mvc.cs" %}
+{% include code-snippet/file-manager/flat-data/FlatDataController_core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/flat-data/razor  %}
 {% endhighlight %}
 {% highlight c# tabtitle="FlatDataController_mvc.cs" %}
 {% include code-snippet/file-manager/flat-data/FlatDataController_mvc.cs %}
