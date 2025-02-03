@@ -38,8 +38,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-
-Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -51,7 +50,7 @@ Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHel
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -73,7 +72,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -89,7 +88,7 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 
 ## Add ASP.NET Core FileManager control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core FileManager tag helper in **~/Pages/Index.cshtml** page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core FileManager tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -257,13 +256,13 @@ namespace WebApplication4.Controllers
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core FileManager control will be rendered in the default web browser.
 
-![FileManager getting started](../images/getting-started.PNG)
+![FileManager getting started](images/getting-started.PNG)
 
-N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
+N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
 ## File Download support
 
-To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
+To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -273,7 +272,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [`
 
 ## File Upload support
 
-To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager Control.
+To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager Component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -283,7 +282,7 @@ To perform the upload operation, initialize the `UploadUrl` property in a [`Ajax
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
+To perform the image preview support in the File Manager component, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -291,11 +290,11 @@ To perform the image preview support in the File Manager control, need to initia
 {% endhighlight %}
 {% endtabs %}
 
-![File Manager Sample](../images/getimage.png)
+![File Manager Sample](images/getimage.png)
 
 ## File Manager Overview
 
-By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
+By default, the File Manager component  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
 
 In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
 
@@ -305,7 +304,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](../images/overview.PNG)
+![FileManager overview](./images/overview.PNG)
 
 N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -319,11 +318,11 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager switching view ](../images/overview.PNG)
+![FileManager switching view ](./images/overview.PNG)
 
-## Maintaining control state on page reload
+## Maintaining component state on page reload
 
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnablePersistence.html) property which maintains the following,
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnablePersistence.html) property which maintains the following,
 * Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html)
 * Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html)
 * Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~SelectedItems.html)
@@ -336,11 +335,11 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](../images/enable_persistence.PNG)
+![FileManager enable persistence](images/enable_persistence.PNG)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
-## Rendering control in right-to-left direction
+## Rendering component in right-to-left direction
 
 It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnableRtl.html) API to true.
 
@@ -350,7 +349,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![Right to Left Support in ASP.NET Core FileManager](../images/enable_rtl.PNG)
+![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
 
 ## Specifying the current path of the File Manager
 
@@ -364,7 +363,7 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core FileManager with Specific Path](../images/path.png)
+![ASP.NET Core FileManager with Specific Path](images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

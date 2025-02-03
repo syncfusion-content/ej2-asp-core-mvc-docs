@@ -98,13 +98,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileMa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileManager control will be rendered in the default web browser.
 
-![ASP.NET MVC FileManager Control](../images/getting-started.png)
+![ASP.NET MVC FileManager Control](images/getting-started.png)
 
-N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
+N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for file manager service.
 
 ## File Download support
 
-To perform the download operation, initialize the `DownloadUrl` property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+To perform the download operation, initialize the `DownloadUrl` property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager component.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -114,7 +114,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [A
 
 ## File Upload support
 
-To perform the upload operation, initialize the [UploadUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_UploadUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager Control.
+To perform the upload operation, initialize the [UploadUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_UploadUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager Component.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -124,7 +124,7 @@ To perform the upload operation, initialize the [UploadUrl](https://help.syncfus
 
 ## Image Preview support
 
-To perform the image preview support in the File Manager control, need to initialize the [GetImageUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_GetImageUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
+To perform the image preview support in the File Manager component, need to initialize the [GetImageUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerAjaxSettings.html#Syncfusion_EJ2_FileManager_FileManagerAjaxSettings_GetImageUrl) property in a [AjaxSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager component.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -132,11 +132,11 @@ To perform the image preview support in the File Manager control, need to initia
 {% endhighlight %}
 {% endtabs %}
 
-![File Manager Sample](../images/getimage.png)
+![File Manager Sample](images/getimage.png)
 
 ## File Manager Overview
 
-By default, the File Manager control  having  extra module like [NavigationPane](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
+By default, the File Manager component  having  extra module like [NavigationPane](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
 
 In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
 
@@ -149,7 +149,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](../images/overview.png)
+![FileManager overview](images/overview.png)
 
 N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_CssClass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -166,11 +166,11 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager switching view ](../images/overview.png)
+![FileManager switching view ](images/overview.png)
 
-## Maintaining control state on page reload
+## Maintaining component state on page reload
 
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnablePersistence) property which maintains the following,
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnablePersistence) property which maintains the following,
 * Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View)
 * Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_Path)
 * Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_SelectedItems)
@@ -186,11 +186,11 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](../images/enable_persistence.png)
+![FileManager enable persistence](images/enable_persistence.png)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
-## Rendering control in right-to-left direction
+## Rendering component in right-to-left direction
 
 It is possible to render the File Manager in right-to-left direction by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
 
@@ -203,7 +203,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](../images/enable_rtl.png)
+![FileManager enablertl](images/enable_rtl.png)
 
 ## Specifying the current path of the File Manager
 
@@ -218,6 +218,6 @@ The current path of the File Manager can be specified initially or dynamically u
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](../../images/path.png)
+![FileManager enablertl](images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
