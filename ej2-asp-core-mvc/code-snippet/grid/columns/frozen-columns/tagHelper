@@ -1,6 +1,5 @@
 <label style="padding: 10px 10px 26px 0;font-weight:bold">Change the frozen columns:</label>
-<ejs-numerictextbox id="frozenColumns" min="0" max="3" validateDecimalOnType="true"
-decimals="0" format="n" value="2" width="100px"></ejs-numerictextbox>
+<ejs-numerictextbox id="frozenColumns" min="0" max="3" validateDecimalOnType="true" decimals="0" format="n" value="2" width="100px"></ejs-numerictextbox>
 <ejs-button id="button" content="Update"></ejs-button>
 <ejs-grid id="Grid" dataSource="@ViewBag.dataSource" frozenColumns='2'>
 <e-grid-columns>

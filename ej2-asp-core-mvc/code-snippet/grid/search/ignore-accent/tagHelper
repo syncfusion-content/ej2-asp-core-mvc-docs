@@ -12,7 +12,6 @@
         <e-grid-column field="UnitsInStock" headerText="Units In Stock" width="170"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function onSwitchChange(args) {
         var gridObj = document.getElementById("Search").ej2_instances[0];

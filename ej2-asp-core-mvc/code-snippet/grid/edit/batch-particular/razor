@@ -7,8 +7,7 @@
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
 }).CellEdit("cellEdit").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" }).Render()
 <script>
-    function cellEdit(args)
-    {
+    function cellEdit(args){
         if (args.value === 'France') {
             args.cancel = true;
         }

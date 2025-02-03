@@ -44,7 +44,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
 
-![Enable or disable toolbar items](../images/toolbar/toolbar-enable-disable.gif)
+![Enable or disable toolbar items](../images/toolbar/expand-toolbar.gif)
 
 ## Add toolbar at the bottom of grid
 
