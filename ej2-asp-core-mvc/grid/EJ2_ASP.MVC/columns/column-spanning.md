@@ -10,22 +10,9 @@ documentation: ug
 
 # Column Spanning in ASP.NET MVC Grid Component
 
-The grid has option to span the adjacent cells. You need to define the **colSpan** attribute to span cells in the [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+The column spanning feature in the Syncfusion Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, you can easily span cells and customize the appearance of the grid.
 
-In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 10.00 A.M. so that the cells have been spanned.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/columns/columnspanning/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Columnspanning.cs" %}
-{% include code-snippet/grid/columns/columnspanning/columnspanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -35,10 +22,27 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 {% include code-snippet/grid/columns/columnspanning/columnspanning.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
+
+![Column Spanning](../images/column-spanning/column-spanning.gif)
+
+## Change the border color while column spanning
+
+You can change the border color for the spanned cells by the using [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. This event triggers before the cell element is appended to the Grid element.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-spanning-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnspanning.cs" %}
+{% include code-snippet/grid/columns/column-spanning-color/column-spanning-color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Column Spanning](../images/column-spanning/column-spanning-color.gif)
 
 ## Limitations
 
+* The `UpdateCell` method does not support column spanning.
 * Column spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
