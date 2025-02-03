@@ -175,7 +175,7 @@ To configure a server with Syncfusion ASP.Net MVC Grid, you need to follow the b
 
 ## Handling filtering operation
 
-When filtering operation is performed in the grid, the `DataStateChange` event is triggered, providing access to the following referenced arguments within the event.
+When filtering operation is performed in the grid, the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, providing access to the following referenced arguments within the event.
 
 ![FilterBar](../images/databinding/remote-filtering.png)
 
@@ -236,7 +236,7 @@ When filtering multiple values, you can get the predicates as arguments in the `
 
 ## Handling searching operation
 
-When performing a search operation in the grid, the `DataStateChange` event is triggered, allowing access to the following referenced arguments within the event
+When performing a search operation in the grid, the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, allowing access to the following referenced arguments within the event
 
 ![Searching](../images/databinding/remote-search.png)
 
@@ -280,7 +280,7 @@ export function getOrders(state, action) {
 
 ## Handling sorting operation
 
-When sorting operation is performed in the grid, the `DataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
+When sorting operation is performed in the grid, the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, and within this event, you can access the following referenced arguments.
 
 ![Sorting](../images/databinding/remote-sorting.png)
 
@@ -333,7 +333,7 @@ export function getOrders(state, action) {
 
 ## Handling paging operation
 
-When paging operation is performed in the grid, the `DataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
+When paging operation is performed in the grid, the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, and within this event, you can access the following referenced arguments.
 
 ![Paging](../images/databinding/remote-paging.png)
 
@@ -379,7 +379,7 @@ export function getOrders(state, action) {
 
 ## Handling grouping operation
 
-When grouping operation is performed in the grid, the `DataStateChange` event is triggered, providing access to the following referenced arguments within the event.
+When grouping operation is performed in the grid, the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event is triggered, providing access to the following referenced arguments within the event.
 
 ![Grouping](../images/databinding/remote-group.png)
 
