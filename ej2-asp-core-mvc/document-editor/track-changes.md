@@ -23,6 +23,7 @@ The following example demonstrates how to enable track changes.
 {% include code-snippet/document-editor-container/track-changes/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/track-changes/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -32,9 +33,34 @@ The following example demonstrates how to enable track changes.
 {% include code-snippet/document-editor-container/track-changes/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/track-changes/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+>Track changes are document level settings. When opening a document, if the document does not have track changes enabled, then enableTrackChanges will be disabled even if we set enableTrackChanges={true} in the initial rendering. If you want to enable track changes for all the documents, then we recommend enabling track changes during the document change event. The following example demonstrates how to enable Track changes for the all the Document while Opening.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/track-changes-default/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Track-changes-default.cs" %}
+{% include code-snippet/document-editor-container/track-changes-default/document-editor.cs %}
+{% endhighlight %
+}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/track-changes-default/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Track-changes-default.cs" %}
+{% include code-snippet/document-editor-container/track-changes-default/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 ## Show/Hide Revisions Pane
  
 The Show/Hide Revisions Pane feature in the Document Editor allows users to toggle the visibility of the revisions pane, providing flexibility in managing tracked changes within the document.
@@ -48,6 +74,7 @@ The following example code illustrates how to show/hide the revisions pane.
 {% include code-snippet/document-editor-container/toggle-track-pane/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/toggle-track-pane/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -57,6 +84,7 @@ The following example code illustrates how to show/hide the revisions pane.
 {% include code-snippet/document-editor-container/toggle-track-pane/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/toggle-track-pane/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
@@ -148,6 +176,7 @@ The following example code illustrates how to enforce and stop protection in Doc
 {% include code-snippet/document-editor-container/track-changes-only-protect/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/track-changes-only-protect/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -157,6 +186,7 @@ The following example code illustrates how to enforce and stop protection in Doc
 {% include code-snippet/document-editor-container/track-changes-only-protect/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Track-changes-only.cs" %}
+{% include code-snippet/document-editor-container/track-changes-only-protect/document-editor.cs %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
