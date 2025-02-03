@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileMa
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileManager control will be rendered in the default web browser.
 
-![ASP.NET MVC FileManager Control](images/getting-started.png)
+![ASP.NET MVC FileManager Control](../images/getting-started.png)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
@@ -132,7 +132,7 @@ To perform the image preview support in the File Manager control, need to initia
 {% endhighlight %}
 {% endtabs %}
 
-![File Manager Sample](images/getimage.png)
+![File Manager Sample](../images/getimage.png)
 
 ## File Manager Overview
 
@@ -149,7 +149,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](images/overview.png)
+![FileManager overview](../images/overview.png)
 
 N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_CssClass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -166,7 +166,7 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager switching view ](images/overview.png)
+![FileManager switching view ](../images/overview.png)
 
 ## Maintaining control state on page reload
 
@@ -186,7 +186,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](images/enable_persistence.png)
+![FileManager enable persistence](../images/enable_persistence.png)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -203,7 +203,7 @@ It is possible to render the File Manager in right-to-left direction by setting 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/enable_rtl.png)
+![FileManager enablertl](../images/enable_rtl.png)
 
 ## Specifying the current path of the File Manager
 
@@ -218,6 +218,6 @@ The current path of the File Manager can be specified initially or dynamically u
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enablertl](images/path.png)
+![FileManager enablertl](../../images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
