@@ -43,7 +43,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Strikethrough| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | <kbd>⌘</kbd> + <kbd>⇧ </kbd>+ <kbd>S</kbd> |
 | Inline code | <kbd>Ctrl</kbd> + <kbd>`</kbd> |  <kbd>⌘</kbd>+<kbd>`</kbd> |
 | Create link| <kbd>Ctrl</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd>+ <kbd>K</kbd> |
-| Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd>+<kbd>⌘</kbd>+</kbd>C</kbd> |
+| Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>C</kbd> |
 |  Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd>+<kbd>⌘</kbd>+<kbd>V</kbd> |
 | Clear the copy format painter | <kbd>Esc</kbd> | <kbd>Esc</kbd> |
 | Tab space (when [enableTabKey](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableTabKey) is enabled) | <kbd>Tab</kbd> | <kbd>Tab</kbd> |
