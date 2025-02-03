@@ -11,8 +11,6 @@
     col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
 }).Render()
-
-</div>
 <style>
 .e-btn.e-info, .e-css.e-btn.e-info {
     margin-right: 4px;

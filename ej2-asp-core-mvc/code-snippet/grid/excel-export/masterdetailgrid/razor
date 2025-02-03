@@ -12,10 +12,10 @@
 <div>
     @Html.EJS().Grid("detailGrid").AllowExcelExport(true).Columns(col =>
     {
-    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("130px").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("120px").Add();
-    col.Field("ShipAddress").HeaderText("Ship Address").Format("C2").Width("120px").Add();
+        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120px").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width("130px").Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width("120px").Add();
+        col.Field("ShipAddress").HeaderText("Ship Address").Format("C2").Width("120px").Add();
     }).Render()
 </div>
 <script>

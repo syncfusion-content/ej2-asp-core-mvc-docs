@@ -7,7 +7,6 @@
         <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <style>
     .orientationcss .e-headercelldiv {
         transform: rotate(90deg);

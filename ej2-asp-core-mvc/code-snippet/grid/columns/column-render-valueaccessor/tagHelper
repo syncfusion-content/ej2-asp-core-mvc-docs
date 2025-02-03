@@ -2,8 +2,7 @@
     var currencyFormatter = "currencyFormatterFn";
     var concatenateFields = "concatenateFieldsFn";
 }
-
-<ejs-grid id="ValueAccessor" dataSource="@ViewBag.DataSource" height="350">
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="350">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="100" textAlign="Right"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>

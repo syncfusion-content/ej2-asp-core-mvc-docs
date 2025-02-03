@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Footer aggregate in ASP.Net Core Grid component
+# Footer aggregate in ASP.NET Core Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the `footerTemplate` property to render the aggregate value in the footer cells.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the `footerTemplate` property to render the aggregate value in the footer cells.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -28,7 +28,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component
 
 ## Format the aggregate value
 
-To format the aggregate value result in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component, you can use the `format` property of the `aggregateColumn`. The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
+To format the aggregate value result in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component, you can use the `format` property of the `aggregateColumn`. The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
