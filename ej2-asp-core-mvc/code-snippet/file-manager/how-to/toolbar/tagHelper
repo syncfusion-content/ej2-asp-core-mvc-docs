@@ -1,39 +1,47 @@
 @{
-    string[] items = new string[] { "NewFolder", "Upload", "Delete", "Download", "Rename", "SortBy", "Refresh", "Selection", "View", "Details" , "Custom"};
+    var checkBoxTemplate = "#checkBox-Template";
 }
 <div class=" control-section">
     <div class="sample-container">
         <!--  Filemanager element declaration -->
-        <ejs-filemanager id="file" toolbarClick="toolbarClick" toolbarCreate="onCreate">
+        <ejs-filemanager id="filemanager">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
-            <e-filemanager-toolbarsettings items="items">
-            </e-filemanager-toolbarsettings>
+            <e-filemanager-toolbaritems>
+                    <e-filemanager-toolbaritem Name="NewFolder" Text="Create folder" PrefixIcon="e-plus" TooltipText="Create folder"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="SortBy"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Refresh"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Cut"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Copy"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Paste"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Delete"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Download"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Rename"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Template="@checkBoxTemplate" Name="Select"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Selection"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="View"></e-filemanager-toolbaritem>
+                    <e-filemanager-toolbaritem Name="Details"></e-filemanager-toolbaritem>
+                </e-filemanager-toolbaritems>
         </ejs-filemanager>
         <!-- end of filemanager element -->
+        <ejs-checkbox id="checkBox-Template" label="Select All"  checked="false" change="onChange"></ejs-checkbox>
     </div>
 </div>
-<script>
-    // event for custom toolbar item
-    function toolbarClick(args) {
-        if (args.item.text === 'Custom') {
-            alert('You have clicked custom toolbar item')
-        }
-    }
-    function onCreate(args) {
-        for (var i = 0; i < args.items.length; i++) {
-            if (args.items[i].id === this.element.id + '_tb_custom') {
-                args.items[i].prefixIcon = 'e-icons e-fe-tick';
-            }
-        }
-    }
 
-</script>
-<style>
-    .e-fe-tick::before {
-        content: '\e614';
+<script>
+    function onChange(args) {
+        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
+        var checkboxInstance = document.getElementById("checkBox-Template").ej2_instances[0];
+        if (args.checked) {
+            filemanagerInstance.selectAll(); 
+            checkboxInstance.label = 'Unselect All';
+        }
+        else {
+            filemanagerInstance.clearSelection();
+            checkboxInstance.label = 'Select All';
+        }
     }
-</style>
+</script>

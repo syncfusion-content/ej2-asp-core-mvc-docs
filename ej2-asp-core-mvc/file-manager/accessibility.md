@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## File Manager Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility
 
-The File Manager component has been designed with keeping the `WAI-ARIA` specifications in mind, and applying the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This component is characterized by complete keyboard interaction support and ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT) or for users who completely rely on keyboard navigation.
+The File Manager control has been designed with keeping the `WAI-ARIA` specifications in mind, and applying the `WAI-ARIA` roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT) or for users who completely rely on keyboard navigation.
 
 ## ARIA attributes
 
@@ -19,7 +19,7 @@ The following `ARIA` Attributes denote the state of File Manager.
 
 | **Property** | **Functionalities** |
 | --- | --- |
-| aria-disabled | Indicates whether the File Manager component is in disabled state.|
+| aria-disabled | Indicates whether the File Manager control is in disabled state.|
 | aria-haspopup | Indicates whether the Toolbar element has a suggestion list. |
 | aria-orientation | Indicates whether the File Manager element is oriented horizontally or vertically. |
 | aria-expanded | Indicates whether the Treeview node has been expanded. |
@@ -54,7 +54,7 @@ You can use the following key shortcuts to access the File Manager without inter
 | <kbd>Tab</kbd> | Focuses on the first element of toolbar and navigates through the next tab indexed element. |
 | <kbd>Esc(Escape)</kbd> | Closes the image when it is in open state. |
 | <kbd>Alt+N</kbd> | Creates a new folder dialog.|
-| <kbd>F5</kbd> | Refresh the file manager element. |
+| <kbd>F5</kbd> | Refresh the File Manager element. |
 | <kbd>Home</kbd> | Navigate through the first element of Details view or Largeicons view. |
 | <kbd>End</kbd> | Navigate through the last element of Details view or Largeicons view. |
 | <kbd>Move Left</kbd> | Scrolls left to previous folder and select the first item when files are loaded |
@@ -63,15 +63,15 @@ You can use the following key shortcuts to access the File Manager without inter
 | <kbd>Shift+Right</kbd> | Allows multiselection. Selects the file or folder in the right side of the previously selected folder. |
 | <kbd>Shift+Left</kbd> | Allows multiselection. Selects the file or folder in the left side of the previously selected folder. |
 | <kbd>Shift+Down</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Shift+Delete</kbd> | Permanently delete the selected file or folder in file manager element. |
-| <kbd>Delete</kbd> | Delete the selected file or folder in file manager element. |
+| <kbd>Shift+Delete</kbd> | Permanently delete the selected file or folder in File Manager element. |
+| <kbd>Delete</kbd> | Delete the selected file or folder in File Manager element. |
 | <kbd>Shift+Up</kbd> | Allows multiselection. Select the file or folder till the focused index. |
-| <kbd>Ctrl+C</kbd> | Copy the Selected file or folder in file manager element. |
-| <kbd>Ctrl+V</kbd> | Pasted the Copied/Cut file or folder in file manager element. |
-| <kbd>Ctrl+X</kbd> | Cut the Selected file or folder in file manager element. |
+| <kbd>Ctrl+C</kbd> | Copy the Selected file or folder in File Manager element. |
+| <kbd>Ctrl+V</kbd> | Pasted the Copied/Cut file or folder in File Manager element. |
+| <kbd>Ctrl+X</kbd> | Cut the Selected file or folder in File Manager element. |
 | <kbd>Ctrl+A</kbd> | Select all the files or folder in Grid view or Largeicons view. |
-| <kbd>F2</kbd> | Creates a rename dialog for selected file or folder in file manager element. |
-| <kbd>Shift+F10</kbd> | Open the context menu for selected file or folder in file manager element. |
-| <kbd>Ctrl+D</kbd> | Download the list of selected file or folder in file manager element. |
-| <kbd>Ctrl+Shift+1</kbd> | Changes the file manager layout to Grid view. |
-| <kbd>Ctrl+Shift+2</kbd> | Changes the file manager layout to Details view. |
+| <kbd>F2</kbd> | Creates a rename dialog for selected file or folder in File Manager element. |
+| <kbd>Shift+F10</kbd> | Open the context menu for selected file or folder in File Manager element. |
+| <kbd>Ctrl+D</kbd> | Download the list of selected file or folder in File Manager element. |
+| <kbd>Ctrl+Shift+1</kbd> | Changes the File Manager layout to Grid view. |
+| <kbd>Ctrl+Shift+2</kbd> | Changes the File Manager layout to Details view. |
