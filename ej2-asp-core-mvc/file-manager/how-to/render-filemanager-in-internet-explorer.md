@@ -32,7 +32,7 @@ After adding the script file in the `layout` page, render the File Manager contr
 {% include code-snippet/file-manager/filemanager-in-ie/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController_core.cshtml" %}
-{% include code-snippet/file-manager/filemanager-in-ie/HomeController_core.cshtml %}
+{% include code-snippet/file-manager/filemanager-in-ie/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
