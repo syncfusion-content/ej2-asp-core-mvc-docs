@@ -20,7 +20,7 @@ The custom binding feature in the ASP.NET Core Grid enables you to manage your o
 
 The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSourceChanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
-**Using the DataStateChange event**
+**Using the dataStateChange event**
 
 The `dataStateChange` event is triggered whenever you perform actions that modify the state of the grid's data, such as changing pages, applying sorting, or grouping. This event provides detailed information about the action performed and the current state of the grid, including parameters like page number, sorting details, and filtering criteria.
 
@@ -292,7 +292,7 @@ export function getOrders(state, action) {
 
 ## Handling sorting operation
 
-When sorting operation is performed in the grid, the DataStateChange event is triggered, and within this event, you can access the following referenced arguments.
+When sorting operation is performed in the grid, the `dataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
 
 ![Sorting](../images/databinding/remote-sorting.png)
 

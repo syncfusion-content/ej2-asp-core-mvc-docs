@@ -280,7 +280,7 @@ export function getOrders(state, action) {
 
 ## Handling sorting operation
 
-When sorting operation is performed in the grid, the DataStateChange event is triggered, and within this event, you can access the following referenced arguments.
+When sorting operation is performed in the grid, the `DataStateChange` event is triggered, and within this event, you can access the following referenced arguments.
 
 ![Sorting](../images/databinding/remote-sorting.png)
 
