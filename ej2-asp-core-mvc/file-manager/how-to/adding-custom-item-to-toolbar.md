@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Custom Item To Toolbar in ##Platform_Name## File Manager Component
-description: Learn here all about Adding Custom Item To Toolbar in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Adding Custom Item To Toolbar in ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Adding Custom Item To Toolbar in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Adding Custom Item To Toolbar
 publishingplatform: ##Platform_Name##
@@ -38,7 +38,6 @@ For instance, here's an example of how to add a custom checkbox to the toolbar u
 {% endif %}
 
 
-
-Output be like the below.
+The output will look like the image below.
 
 ![FileManager custom toolbar item](../images/custom_toolbar.png)

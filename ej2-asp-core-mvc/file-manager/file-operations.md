@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## Syncfusion File Manager Component
-description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: File Operations in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
+description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# File Operations in FileManager Component
+# File Operations in FileManager Control
 
-The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
+The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control. Additionally, previewing of image files is provided in the File Manager control.
 
-The following table represents the basic operations available in the file manager and their corresponding functions.
+The following table represents the basic operations available in the File Manager and their corresponding functions.
 
 |Operation Name|Function|
 |----|----|
@@ -28,7 +28,7 @@ The following table represents the basic operations available in the file manage
 |upload|Upload files to the current path or directory in the file system.|
 |download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
 
-N>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the file manager only after the successful response from the server.
+N>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the File Manager only after the successful response from the server.
 
 ## Folder Upload support
 
@@ -64,7 +64,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% endif %}
 
 
-Output be like the below.
+The output will be like the below.
 
 ![Directory upload](./images/directory-upload.png)
 
@@ -198,7 +198,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-fi
 
 ## File operation request and response Parameters
 
-The default parameters available in file operation request from the file manager and the corresponding response parameters required by the file manager are listed as follows.
+The default parameters available in file operation request from the File Manager and the corresponding response parameters required by the File Manager are listed as follows.
 
 ### Read
 
@@ -831,11 +831,11 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the file manager can be customized using the `beforeSend` event. Additional information can be passed to the file manager in file operation response and can be used in customization.
+The request from the File Manager can be customized using the `beforeSend` event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 
-The following table represents the contents of *data, cwd, and files* in the file manager request and response.
+The following table represents the contents of *data, cwd, and files* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -848,7 +848,7 @@ The following table represents the contents of *data, cwd, and files* in the fil
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table represents the contents of *error* in the file manager request and response.
+The following table represents the contents of *error* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -856,7 +856,7 @@ The following table represents the contents of *error* in the file manager reque
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table represents the contents of *details* in the file manager request and response.
+The following table represents the contents of *details* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -872,7 +872,7 @@ The following table represents the contents of *details* in the file manager req
 
 ## Action Buttons
 
-The file manager has several menu buttons to access the file operations. The list of menu buttons available in the file manager is given in the following table.
+The File Manager provides several menu buttons for accessing file operations. The list of menu buttons available in the File Manager is given in the following table.
 
 |Menu Button|Behaviour|
 |----|----|
@@ -892,7 +892,7 @@ The action menu buttons are present in the toolbar and context menu. The toolbar
 
 ### Toolbar
 
-The toolbar can be divided into two sections as right and left. Whenever the toolbar buttons exceed the size, the buttons present in the left section of the toolbar will be moved to the toolbar popup.
+The toolbar can be divided into two sections as right and left. When the toolbar buttons exceed the available size, the buttons in the left section of the toolbar will be moved to a toolbar popup.
 
 The following table provides the toolbar buttons that appear based on the selection.
 

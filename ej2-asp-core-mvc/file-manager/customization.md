@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File Manager Component
-description: Learn here all about Customization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Customization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Customizing File Manager functionalities
 
-The file manager component allows customizing its functionalities like, context menu, searching, uploading, toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
@@ -25,7 +25,7 @@ The file manager component allows customizing its functionalities like, context 
 
 ## Context menu customization
 
-The context menu settings like, items to be displayed on files, folders and layout click and visibility can be customized using [contextMenuSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) property.
+The context menu settings, such as items to be displayed on files, folders, layout click, and visibility, can be customized using the [contextMenuSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,7 +52,7 @@ The context menu settings like, items to be displayed on files, folders and layo
 
 
 
-Output be like the below.
+The output will be as shown below.
 
 ![FileManager contextmenu ](./images/contextmenu_item.PNG)
 
@@ -223,7 +223,7 @@ Output be like the below.
 
 ## Toolbar customization
 
-The toolbar settings like, items to be displayed in toolbar and visibility can be customized using [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html) property.
+The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -261,7 +261,7 @@ Output be like the below.
 
 ## Upload customization
 
-The upload settings like, minimum and maximum file size and enabling auto upload can be customized using [uploadSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~UploadSettings.html) property.
+The upload settings, such as minimum and maximum file size and enabling auto upload, can be customized using the [uploadSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~UploadSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -298,7 +298,7 @@ Output be like the below, when file size is above the `minFileSize`.
 
 ## Tooltip customization
 
-The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the file manager element.
+The tooltip value can be customized by adding extra content to the title of the toolbar, navigation pane, details view and large icons of the File Manager element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
