@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager Component
+description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization
 
-The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
+The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en`(English). The following table represents the default texts and messages of the file manager in `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -108,7 +108,7 @@ The File Manager can be localized to any culture by defining its texts and messa
 |Network-Error|NetworkError: Failed to send on XMLHTTPRequest: Failed to load|
 |Server-Error|ServerError: Invalid response from|
 
-The example below shows how to add the German culture locale(`de-DE`)
+The below example shows adding the German culture locale(`de-DE`)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -116,8 +116,8 @@ The example below shows how to add the German culture locale(`de-DE`)
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/locale/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/locale/HomeController_core.cs %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/locale/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,6 +135,6 @@ The example below shows how to add the German culture locale(`de-DE`)
 
 
 
-The output will look like the image below.
+Output be like the below.
 
 ![Localization](./images/localization.png)
