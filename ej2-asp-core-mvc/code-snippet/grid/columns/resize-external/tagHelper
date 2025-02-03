@@ -1,7 +1,17 @@
+@{
+    ViewBag.dropDownData = new List<object>
+    {
+        new { value = "OrderID"},
+        new { value = "CustomerID" },
+        new { value = "Freight"},
+        new { value = "OrderDate" },
+        new { value = "ShipCountry" }
+    };
+}
 <div style="display: flex">
     <label style="padding: 3px 10px 0px 0;font-weight: bold;">Change the field: </label>
     <span style="height:fit-content">
-        <ejs-dropdownlist id="dropdown" index="0" dataSource="@ViewBag.dropdownData"></ejs-dropdownlist>
+        <ejs-dropdownlist id="dropdown" index="0" dataSource="@ViewBag.dropDownData"></ejs-dropdownlist>
     </span>
 </div>
 <div style="padding:0px 0px 20px 0px">
@@ -20,7 +30,6 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script type="text/javascript">
     document.getElementById('buttons').addEventListener('click', function () {
         var grid = document.getElementById("Grid").ej2_instances[0];

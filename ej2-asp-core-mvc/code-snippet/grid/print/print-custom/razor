@@ -5,16 +5,11 @@
 {
   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-
 }).AllowPaging().PageSettings(page => { page.PageSize(10); }).PrintMode(Syncfusion.EJ2.Grids.PrintMode.CurrentPage).ActionComplete("actionComplete").DataBound("dataBound").BeforePrint("beforePrint").Render()
-
 @Html.EJS().Chart("chart").Series(series =>
 {
-    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(1).XName("OrderDate")
-    .YName("Freight").ColumnWidth(0.4).Marker(mr => mr.Visible(true)).Add();
-
-}).PrimaryXAxis(px =>px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
-.LabelFormat("MMMd")).PrimaryYAxis(py =>py.LabelFormat("{value}")).Title("Order Data").Render()
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).Width(1).XName("OrderDate").YName("Freight").ColumnWidth(0.4).Marker(mr => mr.Visible(true)).Add();
+}).PrimaryXAxis(px =>px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).LabelFormat("MMMd")).PrimaryYAxis(py =>py.LabelFormat("{value}")).Title("Order Data").Render()
 <script>
     function dataBound() {
         var chart = document.getElementById('chart').ej2_instances[0];

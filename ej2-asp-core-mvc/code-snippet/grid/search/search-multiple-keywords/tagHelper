@@ -1,19 +1,17 @@
 <ejs-grid id="Search" dataSource="@ViewBag.DataSource" height="350px" toolbar="@(new List<string>() {"Search" })" actionBegin="actionBegin" actionComplete="actionComplete">
   <e-grid-columns>
-    <e-grid-column field="OrderID" headerText="Order ID"  isPrimaryKey="true" width="120"></e-grid-column>
+    <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
     <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
     <e-grid-column field="Freight" headerText="Freight" width="150" format="C2"></e-grid-column>
-    <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
   </e-grid-columns>
 </ejs-grid>
-
 <script>
     var values;
     var key = '';
     var refresh = false;
     var removeQuery = false;
     var valueAssign = false;
-
     function actionBegin(args) {
         if (args.requestType == 'searching') {
             var grid = document.getElementById("Search").ej2_instances[0];
@@ -34,7 +32,6 @@
                         }
                     });
                 });
-
                 grid.query = new ej.data.Query().where(predicate);
                 grid.searchSettings.key = '';
                 this.valueAssign = true;

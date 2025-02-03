@@ -9,8 +9,7 @@
         </e-grid-columns>
 </ejs-grid>
 <script>
-    function cellEdit(args)
-    {
+    function cellEdit(args){
         if (args.value === 'France') {
             args.cancel = true;
         }

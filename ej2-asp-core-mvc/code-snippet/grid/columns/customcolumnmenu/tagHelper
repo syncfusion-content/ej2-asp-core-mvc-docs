@@ -4,12 +4,8 @@
      List<object> cols = new List<object>();
     cols.Add(new { field = "OrderID", direction = "Ascending" });
 }
-
-
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true'
-          showColumnMenu='true' columnMenuItems='columnMenuitems' columnMenuClick='columnMenuClick'>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true' showColumnMenu='true' columnMenuItems='columnMenuitems' columnMenuClick='columnMenuClick'>
     <e-grid-sortsettings columns='cols'></e-grid-sortsettings>
-
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
@@ -18,7 +14,6 @@
         <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function columnMenuClick(args) {
         if (args.item.id === 'gridclearsorting') {
