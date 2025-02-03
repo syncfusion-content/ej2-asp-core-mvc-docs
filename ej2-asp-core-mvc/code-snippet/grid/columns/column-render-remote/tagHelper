@@ -1,10 +1,10 @@
 <ejs-grid id="Grid" allowPaging='true' query="new ej.data.Query().expand('Employee')"  >    
   <e-data-manager url="https://services.odata.org/V4/Northwind/Northwind.svc/Orders/" crossdomain="true" adaptor="ODataV4Adaptor"></e-data-manager>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="100" ></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID"  width="120"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City"  width="130"></e-grid-column>
-        <e-grid-column field="Employee.City" headerText="City"  width="130"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+        <e-grid-column field="Employee.City" headerText="City" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 

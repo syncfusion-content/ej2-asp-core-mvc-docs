@@ -4,5 +4,4 @@
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-
 }).SearchSettings(search => { search.Fields(new string[] { "CustomerID", "ShipCity", "ShipName" }); }).Toolbar(new List<string>() { "Search" }).Render()

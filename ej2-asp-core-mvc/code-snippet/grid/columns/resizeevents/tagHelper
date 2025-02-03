@@ -1,7 +1,6 @@
 <div style="margin-left:180px">
     <p style="color:red;" id="message"></p>
 </div>
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowResizing='true' resizeStart="resizeStart"
           resizing="resizing" resizeStop="resizeStop">
     <e-grid-columns>

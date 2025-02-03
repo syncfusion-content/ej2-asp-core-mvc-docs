@@ -9,8 +9,7 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    function cellSaved()
-    {
+    function cellSaved() {
         var grid=document.getElementById('grid').ej2_instances[0];
         grid.editModule.batchSave();
     }
