@@ -28,8 +28,8 @@ By Default, File Manager is rendered with largeicons view. The following example
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/large-icons/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/large-icons/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/large-icons/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,8 +61,8 @@ The default appearance of the file manager can be changed from largeicons to det
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/overview/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/overview/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

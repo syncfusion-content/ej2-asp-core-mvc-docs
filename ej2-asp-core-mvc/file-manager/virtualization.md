@@ -27,9 +27,6 @@ In the instance below, a sizable collection of files can be found in the folders
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/virtualization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/virtualization/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

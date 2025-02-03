@@ -33,8 +33,8 @@ The context menu settings like, items to be displayed on files, folders and layo
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/contextmenu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/contextmenu/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/contextmenu/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,8 +66,8 @@ The details view settings like, column width, header text, template for each fie
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/details-view/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/details-view/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/details-view/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -97,8 +97,8 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/navigationpane/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/navigationpane/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/navigationpane/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,8 +132,8 @@ In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/fileextension/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/fileextension/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/fileextension/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,8 +165,8 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/hiddenitems/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/hiddenitems/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/hiddenitems/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -198,8 +198,8 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/disablethumbnail/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/disablethumbnail/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/disablethumbnail/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -231,8 +231,8 @@ The toolbar settings like, items to be displayed in toolbar and visibility can b
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/toolbar/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/toolbar/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/toolbar/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -269,8 +269,8 @@ The upload settings like, minimum and maximum file size and enabling auto upload
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/upload/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/upload/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/upload/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -306,8 +306,8 @@ The tooltip value can be customized by adding extra content to the title of the 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/tooltip/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/tooltip/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

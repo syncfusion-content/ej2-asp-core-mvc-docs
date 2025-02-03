@@ -74,7 +74,7 @@ To render the root-level folder, specify the `parentId` as null, or there is no 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/flat-data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="FlatDataController_mvc.cs" %}
+{% highlight c# tabtitle="FlatDataController_core.cs" %}
 {% include code-snippet/file-manager/flat-data/FlatDataController_core.cs %}
 {% endhighlight %}
 {% endtabs %}

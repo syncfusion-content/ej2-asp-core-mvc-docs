@@ -20,8 +20,8 @@ The following example demonstrate how to add a custom icon in largeicons view.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/show-thumbnail/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/show-thumbnail/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/show-thumbnail/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

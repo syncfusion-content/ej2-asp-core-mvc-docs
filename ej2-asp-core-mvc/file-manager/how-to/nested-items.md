@@ -28,9 +28,6 @@ The following example shows the file manager component rendered inside the dialo
 {% highlight c# tabtitle="HomeController_core.cs" %}
 {% include code-snippet/file-manager/file-dialog/HomeController_core.cs %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/file-dialog/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

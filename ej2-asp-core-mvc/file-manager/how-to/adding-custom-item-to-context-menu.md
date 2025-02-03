@@ -22,8 +22,8 @@ The [`menuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Sy
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/how-to/context-menu/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/how-to/context-menu/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/how-to/context-menu/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

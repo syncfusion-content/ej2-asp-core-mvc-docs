@@ -31,8 +31,8 @@ After adding the script file in `layout` page, render the file manager component
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/filemanager-in-ie/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Layout_mvc.cshtml" %}
-{% include code-snippet/file-manager/filemanager-in-ie/Layout_mvc.cshtml %}
+{% highlight c# tabtitle="Layout_core.cshtml" %}
+{% include code-snippet/file-manager/filemanager-in-ie/Layout_core.cshtml %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -46,7 +46,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/directory-upload/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
 {% include code-snippet/file-manager/directory-upload/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}

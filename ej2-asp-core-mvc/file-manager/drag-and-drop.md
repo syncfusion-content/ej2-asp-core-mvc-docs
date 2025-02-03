@@ -26,8 +26,8 @@ The event triggered in drag and drop support are,
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/drag-and-drop/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/drag-and-drop/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/drag-and-drop/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

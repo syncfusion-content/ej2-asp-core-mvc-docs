@@ -116,8 +116,8 @@ The below example shows adding the German culture locale(`de-DE`)
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/locale/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/locale/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/locale/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

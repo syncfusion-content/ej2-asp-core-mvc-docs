@@ -48,7 +48,7 @@ The file manager provides navigation between files and folders using the followi
 
 ### Navigation pane
 
-FileManager provides navigation pane, it displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using `navigationPaneSettings` minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
+FileManager provides navigation pane, it displays the folder hierarchy of the file system and provides easy navigation to the desired folder. Using [`navigationPaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerNavigationPaneSettings.html) minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
 
 ### BreadCrumb
 
@@ -73,7 +73,7 @@ In the large icons view, the thumbnail icons will be shown in a larger size, whi
 
 ### Details view
 
-FileManager can be changed from large icon to details view by using `View` property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using `detailsViewSettings` API. The details view allows you to perform sorting using column header.
+FileManager can be changed from large icon to details view by using [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [`detailsViewSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) API. The details view allows you to perform sorting using column header.
 
 ![DetailsView](./images/detailsview.png "File Manager Details View")
 
@@ -81,7 +81,7 @@ FileManager can be changed from large icon to details view by using `View` prope
 
 The context menu appears on user interaction such as right-click. The file manager is provided with context menu support to perform list of file operations with the files and folders. Context menu appears with varying menu items based on the targets such as file, folder (including navigation pane folders), and layout (empty area in view).
 
-Context menu can be customized using the `contextMenuSettings`, `menuOpen`, and `menuClick` events.
+Context menu can be customized using the [`contextMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerContextMenuSettings.html), [`menuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_MenuOpen), and [`menuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_MenuClose) events.
 
 *Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
 

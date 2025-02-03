@@ -21,8 +21,8 @@ The below example shows File manager allows you to select multiple files using [
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/multiple-selection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/multiple-selection/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/multiple-selection/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,8 +58,8 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/range-selection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/range-selection/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/range-selection/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # How to enable/disable toolbar item/items
 
-The toolbar items can be enabled/disabled by specifying the items in `enableToolbarItems` or `disableToolbarItems` methods respectively.
+The toolbar items can be enabled/disabled by specifying the items in [`enableToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#enabletoolbaritems) or [`disableToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#disabletoolbaritems) methods respectively.
 
 The following example shows enabling and disabling toolbar items on button click.
 
@@ -20,8 +20,8 @@ The following example shows enabling and disabling toolbar items on button click
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/toolbar-items/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/toolbar-items/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/toolbar-items/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
