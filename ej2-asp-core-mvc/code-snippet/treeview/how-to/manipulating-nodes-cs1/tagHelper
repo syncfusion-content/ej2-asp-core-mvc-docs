@@ -1,15 +1,17 @@
+
 <div id='treeparent'>
-<ejs-treeview id="treedata" >
+    <ejs-treeview id="treedata">
         <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
-</ejs-treeview>
+    </ejs-treeview>
+
+</div>
+
 <ejs-button id="button1" cssClass="e-primary inline-element right" content="Add parent"></ejs-button>
 <ejs-button id="button2" cssClass="e-primary inline-element right" content="Add child"></ejs-button>
-
-<div id="display"></div>
-</div>
 <script>
-   var treeObj = document.getElementById('treedata').ej2_instances[0];
+    
     document.getElementById("button1").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
         // add nodes to the root level
         treeObj.addNodes([
             { id: 26, name: 'New Parent' },
@@ -17,6 +19,7 @@
         ]);
     });
     document.getElementById("button2").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
         // add nodes to the existing parent node
         treeObj.addNodes([{ id: 29, pid: 1, name: 'New Child1' }], 1);
     });
@@ -31,11 +34,5 @@
         overflow: auto;
         border: 1px solid #dddddd;
         border-radius: 3px;
-    }
-
-    #display {
-        max-width: 500px;
-        margin: auto;
-        padding: 10px;
     }
 </style>
