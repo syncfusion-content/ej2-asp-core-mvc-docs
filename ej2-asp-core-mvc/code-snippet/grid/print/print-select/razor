@@ -4,7 +4,6 @@
    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
    col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-
 }).AllowPaging().SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).PageSettings(page => page.PageSize(6)).Toolbar(new List<string>() { "Print" }).Render()
 <script>
    function beforePrint(args) {

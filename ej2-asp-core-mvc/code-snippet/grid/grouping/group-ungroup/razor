@@ -26,7 +26,6 @@
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
-
 }).GroupSettings(group => { group.ShowDropArea(false).Columns(new string[] { "CustomerID", "ShipCity" }); }).Render()
 <script>
     document.getElementById('groupButton').onclick = handleGroupAction;

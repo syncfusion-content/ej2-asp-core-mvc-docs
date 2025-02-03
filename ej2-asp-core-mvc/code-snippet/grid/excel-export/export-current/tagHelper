@@ -1,5 +1,4 @@
 @{
-
     var dropDownData = new[] {
         new { value = "CurrentPage", text = "CurrentPage" },
         new { value = "AllPages", text = "AllPages" },

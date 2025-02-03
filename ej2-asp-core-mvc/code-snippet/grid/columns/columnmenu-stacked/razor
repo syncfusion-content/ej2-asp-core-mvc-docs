@@ -36,7 +36,6 @@
     col.Field("ShipCity").HeaderText("Ship City").Width("130").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
 }).ColumnMenuItems(columnMenuItems).ColumnMenuClick("columnMenuClick").FilterSettings(filter => { filter.Type(Syncfusion.EJ2.Grids.FilterType.CheckBox); }).GroupSettings(group => { group.ShowGroupedColumn(true); }).AllowPaging().Render()
-
 <script>
    function columnMenuClick(args) {
         if (args.item.id === 'option1') {

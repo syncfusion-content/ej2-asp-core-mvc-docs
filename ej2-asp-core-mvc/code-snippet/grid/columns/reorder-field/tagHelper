@@ -2,7 +2,6 @@
     <ejs-button id='reordersingle' cssClass='e-info' content="Reorder single column"></ejs-button>
     <ejs-button id='reordermultiple' cssClass='e-info' content="Reorder multiple columns"></ejs-button>
 </div>
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering='true'>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
