@@ -1,11 +1,17 @@
+@{
+    ViewBag.dropDownData = new string[] { "OrderID", "CustomerID", "Freight", "OrderDate", "ShipCountry", "ShipCity", "ShipAddress", "ShipName" };
+    ViewBag.directionData = new string[] {"Left","Right","Fixed" };
+}
 <div style="display: flex">
-    <label style="padding: 5px 10px 26px 0"> Change column: </label>
+    <label style="padding: 5px 10px 26px 0;font-weight: bold"> Change column: </label>
     <span style="height:fit-content">
-        <ejs-dropdownlist id="columnDropDown" index="4" dataSource="@ViewBag.dropdownData"></ejs-dropdownlist>
+        <ejs-dropdownlist id="columnDropDown" index="4" dataSource="@ViewBag.dropDownData">
+            <e-dropdownlist-fields value="value" text="value"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
     </span>
 </div>
 <div style="display: flex">
-    <label style="padding: 5px 10px 26px 0"> Change freeze direction: </label>
+    <label style="padding: 5px 10px 26px 0;font-weight: bold"> Change freeze direction: </label>
     <span style="height:fit-content">
         <ejs-dropdownlist id="directionDropDown" index="0" dataSource="@ViewBag.directionData"></ejs-dropdownlist>
     </span>
@@ -13,8 +19,7 @@
     <ejs-button  id="button" content="Update"></ejs-button>
     </div>
 </div>
-
-<ejs-grid id="Grid" dataSource="@ViewBag.dataSource">
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" height="348px">
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=120></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format='C' freeze='Fixed' textAlign="Right" width="120"></e-grid-column>
@@ -27,7 +32,6 @@
     </e-grid-columns>
 </ejs-grid>
 <script type="text/javascript">
-
   document.getElementById('button').addEventListener('click', function () {
         var grid = document.getElementById("Grid").ej2_instances[0];
         grid.getColumnByField(document.getElementById("columnDropDown").value).freeze = document.getElementById("directionDropDown").value

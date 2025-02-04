@@ -51,7 +51,6 @@ If you want to restore the initial state of the grid, consider changing the comp
 
 Here is an example code to change the component id dynamically to restore initial grid state.
 
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/state-persist/state-changing-id/razor %}
@@ -131,8 +130,6 @@ When [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![Maintaining custom query in a persistent state](images/cell/display-html-content.gif)
-
 ## Get or set local storage value
 
 If the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to **true**, the Grid property value is saved in the **window.localStorage** for reference. You can get or set the localStorage value by using the **getItem** and **setItem** methods in **window.localStorage**.
@@ -157,7 +154,6 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 In the Syncfusion ASP.NET MVC Grid component, you may sometimes want to prevent certain settings from being persisted when using the [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) feature. When the `EnablePersistence` property is set to **true**, the Grid properties such as [Grouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html), [Paging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html), [Filtering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html), [Sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSortSettings.html), and [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumns.html) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
-
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

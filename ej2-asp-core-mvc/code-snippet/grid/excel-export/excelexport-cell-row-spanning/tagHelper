@@ -13,7 +13,6 @@
         if (args.item.id === 'grid_excelexport')
             grid.excelExport();
     }
-
     function queryCellInfo(args) {
         let data = args.data.OrderID;
         switch (data) {
@@ -32,7 +31,6 @@
                 break;
         }
     }
-
     function excelQueryCellInfo(args) {
         let data = args.data.OrderID;
         switch (data) {

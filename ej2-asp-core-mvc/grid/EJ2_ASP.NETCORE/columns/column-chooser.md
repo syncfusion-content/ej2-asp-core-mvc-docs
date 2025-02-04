@@ -121,5 +121,3 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% include code-snippet/grid/columns/columnchooser-diacritics/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![Diacritics searching in column chooser](../images/columns/Column-headertext.png)

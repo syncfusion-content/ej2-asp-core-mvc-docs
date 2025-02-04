@@ -4,9 +4,7 @@
    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").SortComparer("sortComparer").Width("130").Add();
    col.Field("ShipCountry").HeaderText("ShipCountry").Width("150").Add();
-
 }).ActionBegin("actionBegin").Render()
-
 <script type="text/javascript">
     var action;
     function actionBegin(args) {

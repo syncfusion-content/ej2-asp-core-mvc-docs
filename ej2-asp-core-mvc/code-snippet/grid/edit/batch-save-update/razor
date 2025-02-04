@@ -7,8 +7,7 @@
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
 }).CellSaved("cellSaved").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).ShowConfirmDialog(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Delete", "Update", "Cancel" }).Render()
 <script>
-    function cellSaved()
-    {
+    function cellSaved() {
         var grid=document.getElementById('grid').ej2_instances[0];
         grid.editModule.batchSave();
     }

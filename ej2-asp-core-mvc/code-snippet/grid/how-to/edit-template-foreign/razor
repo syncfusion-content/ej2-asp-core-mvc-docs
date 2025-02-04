@@ -6,7 +6,6 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("160").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Add();
 }).Toolbar(new List<string>() {"Edit", "Update", "Cancel" }).EditSettings(edit => { edit.AllowEditing(true);}).Render()
-
 <script>
     var autoComplete;
     var employeeData = @Html.Raw(Json.Encode(ViewBag.foreignData));
@@ -27,5 +26,5 @@
             value: args.foreignKeyData[0][args.column.foreignKeyValue]
         });
        autoComplete.appendTo(args.element);
-}
+    }
 </script>

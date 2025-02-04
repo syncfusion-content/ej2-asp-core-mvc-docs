@@ -13,11 +13,9 @@
   col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
   col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
 }).Render()
-
 <script type="text/javascript">
   document.getElementById('button').addEventListener('click', function () {
     var grid = document.getElementById("Grid").ej2_instances[0];
     grid.frozenColumns = document.getElementById("frozenColumns").ej2_instances[0].value;
-
   });
 </script>

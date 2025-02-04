@@ -1,12 +1,10 @@
 @Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("OrderID").IsPrimaryKey(true).Width("120").Add();
-    col.Field("CustomerID").HeaderText("CustomerID").Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
-    col.Field("OrderDate").HeaderText("OrderDate").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
 }).Toolbar(new List<string>() { "Search" }).ActionBegin("actionBegin").KeyPressed("keyPressed").Render()
-
-
 <script>
     function actionBegin(args) {
         if (args.requestType == 'searching') {
@@ -45,7 +43,6 @@
             }, 200);
         }
     }
-
     function keyPressed(args) {
        if (
             args.key == 'Enter' &&
