@@ -27,7 +27,7 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 
 ## Change the border color while column spanning
 
-You can change the border color for the spanned cells by the using [QueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. This event triggers before the cell element is appended to the Grid element.
+You can change the border color for the spanned cells by the using [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. This event triggers before the cell element is appended to the Grid element.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -38,7 +38,7 @@ You can change the border color for the spanned cells by the using [QueryCellInf
 {% endhighlight %}
 {% endtabs %}
 
-![Column Spanning](../images/column-spanning/column-spanning-color.gif)
+![Column Spanning BorderColor](../images/column-spanning/column-spanning-color.gif)
 
 ## Limitations
 
