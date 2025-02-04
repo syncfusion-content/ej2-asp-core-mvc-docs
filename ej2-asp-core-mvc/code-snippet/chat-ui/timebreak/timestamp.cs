@@ -26,9 +26,9 @@ public ActionResult Timestamp()
         Author = CurrentUserModel,
         TimeStamp = new DateTime(2024,12,25,11,0,0)
     });
-    return View();
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
+    return View();
 }
 
 public class UserModel

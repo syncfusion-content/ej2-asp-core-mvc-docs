@@ -25,9 +25,9 @@ public ActionResult Timestamp()
         Author = CurrentUserModel
     });
     TypingUsers = new List<UserModel>() { MichaleUserModel };
-    return View();
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
+    return View();
 }
 
 public class UserModel
