@@ -38,7 +38,7 @@ You can change the border color for the spanned cells by the using [QueryCellInf
 {% endhighlight %}
 {% endtabs %}
 
-![Column Spanning](../images/column-spanning/column-spanning-color.gif)
+![Column Spanning BorderColor](../images/column-spanning/column-spanning-color.gif)
 
 ## Limitations
 
