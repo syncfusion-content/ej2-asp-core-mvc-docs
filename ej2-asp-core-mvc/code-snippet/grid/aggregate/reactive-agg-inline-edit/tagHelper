@@ -30,5 +30,4 @@
         selectedRecord['Freight'] = args.value;
         gridInstance.aggregateModule.refresh(selectedRecord);
     }
-
 </script>

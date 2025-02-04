@@ -4,5 +4,6 @@
         <e-grid-column field='CustomerID' headerText='Customer ID' width="120"></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format='C2' textAlign='Right' width="80"></e-grid-column>
         <e-grid-column field='OrderDate' headerText='Order Date' format='yMd' textAlign='Right' width="80"></e-grid-column>
+        <e-grid-column field='ShipCountry' headerText='Ship Country' width="80"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

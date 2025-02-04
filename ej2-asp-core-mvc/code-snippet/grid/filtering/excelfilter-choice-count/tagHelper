@@ -9,8 +9,7 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    function actionBegin(args)
-    {
+    function actionBegin(args){
         if (args.requestType === "filterchoicerequest" || args.requestType === "filtersearchbegin") {
            args.filterChoiceCount = 3000;
        }

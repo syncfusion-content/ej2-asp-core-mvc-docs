@@ -9,24 +9,21 @@
 }).AllowPaging().ColumnDeselecting("columnDeselecting").ColumnDeselected("columnDeselected").ColumnSelecting("columnSelecting").ColumnSelected("columnSelected").SelectionSettings(select => select.AllowColumnSelection(true).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
 <script>
     function columnSelected(args) {
-    document.getElementById("message").innerText = `Trigger columnSelected`;
-    args.headerCell.style.backgroundColor = 'rgb(96, 158, 101)';
+        document.getElementById("message").innerText = `Trigger columnSelected`;
+        args.headerCell.style.backgroundColor = 'rgb(96, 158, 101)';
     }
-
     function columnSelecting(args) {
     document.getElementById("message").innerText = `Trigger columnSelecting`;
-    if (args.column.field == "CustomerID")
-        args.cancel = true;
+        if (args.column.field == "CustomerID")
+            args.cancel = true;
     }
-
     function columnDeselected(args) {
-    document.getElementById("message").innerText = `Trigger columnDeselected`;
-    args.headerCell.style.backgroundColor = 'rgb(245, 69, 69)';
+        document.getElementById("message").innerText = `Trigger columnDeselected`;
+        args.headerCell.style.backgroundColor = 'rgb(245, 69, 69)';
     }
-
     function columnDeselecting(args) {
-    document.getElementById("message").innerText = `Triggercolumn Deselecting`;
-    if (args.column.field == "Freight")
-        args.cancel = true;
+        document.getElementById("message").innerText = `Triggercolumn Deselecting`;
+        if (args.column.field == "Freight")
+            args.cancel = true;
     }
 </script>

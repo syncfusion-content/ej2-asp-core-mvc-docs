@@ -18,7 +18,6 @@
     function customFunction (args) {
       return (args['value'] <= 1000);
     }
-
     function customFunctionOne (args) {
        return (args['value'] >= 1);
     }

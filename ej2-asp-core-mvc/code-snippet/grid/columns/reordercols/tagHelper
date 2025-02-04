@@ -1,7 +1,6 @@
 <div style="padding:0px 0px 20px 0px">
-<ejs-button id='button' cssClass='e-primary' content="Reorder column by index"></ejs-button>
+  <ejs-button id='button' cssClass='e-primary' content="Reorder column by index"></ejs-button>
 </div>
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering='true'>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>

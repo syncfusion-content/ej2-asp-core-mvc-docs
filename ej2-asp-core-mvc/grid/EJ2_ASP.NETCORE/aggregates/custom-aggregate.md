@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom aggregate in ASP.Net Core Grid component
+# Custom aggregate in ASP.NET Core Grid component
 
-The custom aggregate feature in Syncfusion's ASP.Net Core Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
+The custom aggregate feature in Syncfusion's ASP.NET Core Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
 * Set the `type` property to **Custom** in the `aggregateColumn`.
 
@@ -22,7 +22,7 @@ The custom aggregate function will be invoked differently for total and group ag
 
 **Group Aggregation:** The custom aggregate function will be called with the current group details and the aggregate column object as arguments.
 
-Here's an example that demonstrates how to use the custom aggregate feature in the ASP.Net Core Grid component:
+Here's an example that demonstrates how to use the custom aggregate feature in the ASP.NET Core Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

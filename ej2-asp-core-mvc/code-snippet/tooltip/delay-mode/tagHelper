@@ -1,4 +1,4 @@
-<ejs-tooltip id="target" content="Tooltip content" openDelay="1000" closeDelay="1000">
+<ejs-tooltip id="target" content="Tooltip content" openDelay="1000" closeDelay="1000" position="TopCenter">
     <e-content-template>
         <div id="content">
             Show tooltip

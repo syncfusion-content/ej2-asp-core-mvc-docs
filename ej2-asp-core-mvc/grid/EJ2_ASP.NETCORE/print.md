@@ -180,7 +180,7 @@ The following example demonstrates how to print the expanded child grids from ot
 {% endhighlight %}
 {% endtabs %}
 
-![Retain grid styles while printing](images/print/print-style.png)
+![Print the expanded state from other pages](images/print/print-another-page.png)
 
 ## Limitations of printing large data
 
