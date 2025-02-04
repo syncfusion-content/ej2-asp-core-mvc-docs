@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export Document As PDF in ##Platform_Name## Document Editor Component
+title: Export Document As PDF in Syncfusion ##Platform_Name## Document Editor Component
 description: Learn here all about export document as PDF in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export Document As PDF
@@ -42,7 +42,7 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 
 ## Export document as PDF in server-side using Syncfusion<sup style="font-size:70%">&reg;</sup> DocIO
 
-With the help of [`Synfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
+With the help of [`Syncfusion DocIO`](https://help.syncfusion.com/file-formats/docio/word-to-pdf), you can export the document as PDF in server-side. Here, you can search the text.
 
 The following way illustrates how to convert the document as PDF:
 
@@ -69,31 +69,37 @@ The following way illustrates how to convert the document as PDF:
 
 
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 * Using Save API in server-side, you can convert the sfdt to stream.
 * Finally, convert the stream to PDF using `Syncfusion.DocIORenderer.Net.Core` library.
 
-```csharp
-[AcceptVerbs("Post")]
-[HttpPost]
-[EnableCors("AllowAllOrigins")]
-[Route("ExportPdf")]
-public void ExportPdf([FromBody]SaveParameter data)
-{
-    // Converts the sfdt to stream
-    Stream document = WordDocument.Save(data.content, FormatType.Docx);
-    Syncfusion.DocIO.DLS.WordDocument doc = new Syncfusion.DocIO.DLS.WordDocument(document, Syncfusion.DocIO.FormatType.Docx);
-    //Instantiation of DocIORenderer for Word to PDF conversion
-    DocIORenderer render = new DocIORenderer();
-    //Converts Word document into PDF document
-    PdfDocument pdfDocument = render.ConvertToPDF(doc);
-    // Saves the document to server machine file system, you can customize here to save into databases or file servers based on requirement.
-    FileStream fileStream = new FileStream("sample.pdf", FileMode.OpenOrCreate, FileAccess.ReadWrite);
-    //Saves the PDF file
-    pdfDocument.Save(fileStream);
-    pdfDocument.Close();
-    fileStream.Close();
-    document.Close();
-}
-```
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+* Using Save API in server-side, you can convert the sfdt to stream.
+* Finally, convert the stream to PDF using `Syncfusion.DocToPdfConverter.AspNet.Mvc5` library.
+
+{% endif %}
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% endhighlight %}
+{% highlight c# tabtitle="DocumentEditorController.cs" %}
+{% include code-snippet/document-editor/export-pdf/aspnet-core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% endhighlight %}
+{% highlight c# tabtitle="DocumentEditorController.cs" %}
+{% include code-snippet/document-editor/export-pdf/aspnet-mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Get the complete working sample in this [`link`](https://github.com/SyncfusionExamples/Export-document-as-PDF-in-Document-Editor/).
