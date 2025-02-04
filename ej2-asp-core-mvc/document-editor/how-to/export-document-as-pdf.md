@@ -27,7 +27,8 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
 {% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -37,7 +38,8 @@ N> You can install the PDF export packages from this [`link`](https://www.npmjs.
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-client.cs" %}
 {% include code-snippet/document-editor-container/export-pdf-client/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -58,7 +60,8 @@ The following way illustrates how to convert the document as PDF:
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
 {% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,7 +71,8 @@ The following way illustrates how to convert the document as PDF:
 {% endhighlight %}
 {% highlight c# tabtitle="Export-pdf-server.cs" %}
 {% include code-snippet/document-editor-container/export-pdf-server/document-editor.cs %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 {% if page.publishingplatform == "aspnet-core" %}
