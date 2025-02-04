@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Dropdown Tree Control
+description: Learn here all about accessibility in Syncfusion ##Platform_Name## Dropdown Tree control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -23,7 +23,7 @@ The Dropdown Tree control uses the `listbox` role. Each tree parent item in the 
 | aria-expanded | Indicates whether the popup list is expanded or not. |
 | aria-selected | Indicates the selected option. |
 | aria-readonly | Indicates the readonly state of the Dropdown Tree element. |
-| aria-disabled | Indicates whether the Dropdown Tree component is in the disabled state or not. |
+| aria-disabled | Indicates whether the Dropdown Tree control is in the disabled state or not. |
 | aria-activedescendent | This attribute holds the ID of the active list item to focus its descendant child element. |
 | aria-owns | This attribute contains the ID of the popup list to indicate popup as a child element. |
 

@@ -1,4 +1,4 @@
-<ejs-spreadsheet id="spreadsheet" openUrl="Open" allowOpen = "true" beforeOpen="beforeOpen">
+<ejs-spreadsheet id="spreadsheet" openUrl="Home/Open" allowOpen = "true" beforeOpen="beforeOpen">
 
 </ejs-spreadsheet>
 

@@ -1,0 +1,67 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+  col.Field("ProductID").HeaderText("Product ID").IsPrimaryKey(true).Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true" }).Add();
+  col.Field("ProductName").HeaderText("Product Name").Width("180").ValidationRules(new { required = "true" }).Add();
+  col.Field("UnitPrice").HeaderText("Unit Price").Width("120").EditType("numericedit").Format("C2").Edit(new {create = "priceCreate", read = "priceRead", destroy = "priceDestroy", write = "priceWrite"}).ValidationRules(new { required = "true", min=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("UnitsInStock").HeaderText("Units In Stock").Width("120").EditType("numericedit").Edit(new {create = "stockCreate", read = "stockRead", destroy = "stockDestroy", write = "stockWrite"}).ValidationRules(new { required = "true", min=1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("TotalCost").HeaderText("Total Cost").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).CellEdit("cellEdit").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+  var priceElement;
+  var priceObject;
+  var stockElement;
+  var stockObject;
+  function priceCreate() {
+    priceElement = document.createElement('input');
+    return priceElement;
+  }
+  function priceRead() {
+    return priceObject.value;
+  }
+  function priceDestroy() {
+    priceObject.destroy();
+  }
+  function priceWrite(args) {
+    var grid = document.getElementById('grid').ej2_instances[0];
+    var rowData = args.rowData;
+    var rowIndex = grid.getRowInfo(args.row).rowIndex;
+    priceObject = new ej.inputs.NumericTextBox(
+    {
+      value: args.rowData[args.column.field],
+      change: function(args) {
+        var totalCostValue = args.value * rowData['UnitsInStock'];
+        grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
+      }
+    });
+    priceObject.appendTo(priceElement);
+  }
+  function cellEdit(args) {
+    if(args.columnName == "TotalCost") {
+      args.cancel = true;
+    }
+  }
+  function stockCreate() {
+    stockElement = document.createElement('input');
+    return stockElement;
+  }
+    function stockRead() {
+      return stockObject.value;
+    }
+    function stockDestroy() {
+      stockObject.destroy();
+    }
+    function stockWrite(args) {
+      var grid = document.getElementById('grid').ej2_instances[0];
+      var rowData = args.rowData;
+      var rowIndex = grid.getRowInfo(args.row).rowIndex;
+      stockObject = new ej.inputs.NumericTextBox(
+      {
+        value: args.rowData[args.column.field],
+        change: function(args) {
+          var totalCostValue = args.value * rowData['UnitPrice'];
+          grid.updateCell(rowIndex, 'TotalCost', totalCostValue);
+        }
+      });
+      stockObject.appendTo(stockElement);
+    }
+</script>

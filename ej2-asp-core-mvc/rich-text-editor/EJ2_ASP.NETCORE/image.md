@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image in ##Platform_Name## Rich Text Editor Component
+title: Image in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Image in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Image
@@ -252,5 +252,5 @@ You can prevent drag-and-drop action by setting the actionBegin argument cancel 
 
 ## See Also
 
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to use link editing option in the toolbar items](./link/)
+* [How to edit the quick toolbar settings](./toolbar#quick-inline-toolbar)
+* [How to use link editing option in the toolbar items](./link)

@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2
 
-<ejs-lineargauge id="linear" Orientation="Horizontal">
+<ejs-lineargauge id="linear" Orientation="Vertical">
     <e-lineargauge-annotations>
         <e-lineargauge-annotation Content="#walking" X="100" Y="100" ZIndex="1"></e-lineargauge-annotation>
     </e-lineargauge-annotations>

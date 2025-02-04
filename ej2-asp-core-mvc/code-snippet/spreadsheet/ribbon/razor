@@ -63,7 +63,7 @@
     function fileMenuItemSelect(args) {
     // Custom file menu items select handler
         switch (args.item.text) {
-            case 'Import': select(`#${this.element.id}_fileUpload`, this.element).click();
+            case 'Import': ej.base.select(`#${this.element.id}_fileUpload`, this.element).click();
                 break;
             case 'XLSX': this.save({ saveType: 'Xlsx' });
                 break;

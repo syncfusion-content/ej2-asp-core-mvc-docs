@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sidebar With Variation Animation in ##Platform_Name## Sidebar Component
-description: Learn here all about Sidebar With Variation Animation in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Sidebar With Variation Animation in ##Platform_Name## Sidebar Control | Syncfusion
+description: Learn here all about Sidebar With Variation Animation in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sidebar With Variation Animation
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Custom animation effects with sidebar
+# Custom animation effects with Sidebar
 
-In the following example, the sidebar is rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations works with sidebar.
+In the following example, the Sidebar is rendered with custom animation effects. Click the buttons available in the main content area to check how the custom animations works with Sidebar.
 
 Sidebar will automatically adjust expanding animation to match any custom size specified in CSS styles.
 

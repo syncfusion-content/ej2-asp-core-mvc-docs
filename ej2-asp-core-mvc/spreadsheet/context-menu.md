@@ -77,7 +77,7 @@ In this demo, Custom Item is added after the Paste item in the context menu.
 {% include code-snippet/spreadsheet/add-context-menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddContextMenu.cs" %}
-{% include code-snippet/spreadsheet/add-context-menu/addContextMenu.cs %}
+{% include code-snippet/spreadsheet/add-context-menu/Core/addContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,7 +88,7 @@ In this demo, Custom Item is added after the Paste item in the context menu.
 {% include code-snippet/spreadsheet/add-context-menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AddContextMenu.cs" %}
-{% include code-snippet/spreadsheet/add-context-menu/addContextMenu.cs %}
+{% include code-snippet/spreadsheet/add-context-menu/MVC/addContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -108,7 +108,7 @@ In this demo, Insert Column item has been removed from the row/column header con
 {% include code-snippet/spreadsheet/remove-context-menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RemoveContextMenu.cs" %}
-{% include code-snippet/spreadsheet/remove-context-menu/removeContextMenu.cs %}
+{% include code-snippet/spreadsheet/remove-context-menu/Core/removeContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,7 +119,7 @@ In this demo, Insert Column item has been removed from the row/column header con
 {% include code-snippet/spreadsheet/remove-context-menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RemoveContextMenu.cs" %}
-{% include code-snippet/spreadsheet/remove-context-menu/removeContextMenu.cs %}
+{% include code-snippet/spreadsheet/remove-context-menu/MVC/removeContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -139,7 +139,7 @@ In this demo, Rename item is disabled in the pager context menu.
 {% include code-snippet/spreadsheet/enable-context-menu/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableContextMenu.cs" %}
-{% include code-snippet/spreadsheet/enable-context-menu/enableContextMenu.cs %}
+{% include code-snippet/spreadsheet/enable-context-menu/Core/enableContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -150,7 +150,7 @@ In this demo, Rename item is disabled in the pager context menu.
 {% include code-snippet/spreadsheet/enable-context-menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EnableContextMenu.cs" %}
-{% include code-snippet/spreadsheet/enable-context-menu/enableContextMenu.cs %}
+{% include code-snippet/spreadsheet/enable-context-menu/MVC/enableContextMenu.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

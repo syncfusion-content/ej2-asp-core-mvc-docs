@@ -30,11 +30,16 @@
     function loadCultureFiles (localeOptions) {
         for (var locale = 0; locale < localeOptions.length; locale++) {
             var files = ['ca-gregorian', 'currencies', 'numbers', 'timeZoneNames', 'numberingSystems'];
+            var loader = ej.base.loadCldr;
             var loadCulture = function (fileName) {
-                var url = './cldr-data/' + (fileName === 'numberingSystems' ? '' : (localeOptions[locale] + '/')) + fileName + '.json';
+                var val;
+                var url = location.origin + '/../cldr-data/' + (fileName === 'numberingSystems' ? 'supplemental/' : ('main/' + (localeOptions[locale] + '/'))) + fileName + '.json';
                 var ajax = new ej.base.Ajax(url, 'GET', false);
-                ajax.onSuccess = (value) => ej.base.loadCldr(JSON.parse(value));
+                ajax.onSuccess = function (value) {
+                    val = value;
+                };
                 ajax.send();
+                loader(JSON.parse(val));
             };
             for (var prop = 0; prop < files.length; prop++) {
                 loadCulture(files[prop]);

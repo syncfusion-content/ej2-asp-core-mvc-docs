@@ -24,7 +24,9 @@ This provides the options to search for a portion of text in the document. After
 {% include code-snippet/document-editor/options-pane/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Options-pane.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/options-pane/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -33,7 +35,9 @@ This provides the options to search for a portion of text in the document. After
 {% include code-snippet/document-editor/options-pane/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Options-pane.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/options-pane/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -105,7 +109,7 @@ container.documentEditor.search.findAll('works');
 
 let searchLength: number = container.documentEditor.search.searchResults.length;
 
-for (let i = 0; i < searchLength; i++) {
+for (let i = searchLength - 1; i >= 0; i--) {
   // It will move selection to specific searched index,move to each occurrence one by one
   container.documentEditor.search.searchResults.index = i;
   // Replace it with some text
@@ -140,7 +144,9 @@ Using the exposed APIs, you can customize the find and replace functionality in 
 {% include code-snippet/document-editor/find-replace/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Find-replace.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/find-replace/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -149,7 +155,9 @@ Using the exposed APIs, you can customize the find and replace functionality in 
 {% include code-snippet/document-editor/find-replace/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Find-replace.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/find-replace/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

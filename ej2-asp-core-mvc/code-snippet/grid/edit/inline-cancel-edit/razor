@@ -1,0 +1,29 @@
+<div style="padding-bottom:20px">
+    @Html.EJS().Button("add").Content("Grid is Addable").CssClass("e-primary").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+   col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("EmployeeName").HeaderText("Employee Name").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("Role").HeaderText("Role").Width("150").ValidationRules(new { required = "true"}).Add();
+    col.Field("EmployeeCountry").HeaderText("Employee Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+}).ActionBegin("actionBegin").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+    var isAddable = true;
+    function actionBegin(args) {
+        if ((args.requestType == 'beginEdit') && (args.rowData['Role'] == 'Admin')) {
+                args.cancel = true;
+        }
+        else if ((args.requestType == 'delete') && (args.data[0]['Role'] == 'Admin')) {
+            args.cancel = true;
+        }
+        else if ((args.requestType == 'add') && (!isAddable)) {
+            args.cancel = true;
+        }
+    }
+    document.getElementById('add').onclick = () => {
+        var button = document.getElementById('add').ej2_instances[0];
+        button.content == 'Grid is Addable' ? (button.content = 'Grid is Not Addable') : (button.content = 'Grid is Addable');
+        isAddable = !isAddable;
+    };
+</script>

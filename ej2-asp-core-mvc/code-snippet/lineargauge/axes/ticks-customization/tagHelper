@@ -7,4 +7,4 @@
             <e-axis-minorticks Interval="5" Height="5" Width="2" Color="orange"></e-axis-minorticks>
         </e-lineargauge-axis>
     </e-lineargauge-axes>
-</ejs-lineargauge>n 
+</ejs-lineargauge>

@@ -1,4 +1,4 @@
-@Html.EJS().Spreadsheet("spreadsheet").CalculationMode("Automatic").Created("created").Sheets(sheet =>
+@Html.EJS().Spreadsheet("spreadsheet").CalculationMode(CalculationMode.Automatic).Created("created").Sheets(sheet =>
 {
     sheet.Name("Product Details").Ranges(ranges =>
     {
