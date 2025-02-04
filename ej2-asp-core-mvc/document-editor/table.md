@@ -21,7 +21,7 @@ You can create and insert a table at cursor position by specifying the required 
  documenteditor.editor.insertTable(3,3);
 ```
 
-## Set the maximum number of Rows
+## Set the maximum number of Rows when inserting a table
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,9 +70,9 @@ When the maximum row limit is reached, an alert will appear, as follow
 
 ![Row Limit Alert](images/Row_Limit_Alert.PNG) 
 
->Note: The maximum value is 32767, as per Microsoft Word application and you can set any value less than 32767 to this property. If you set any value greater than 32767, then Syncfusion Document editor will automatically reset as 32767.
+>Note: The maximum value of Row is 32767, as per Microsoft Word application and you can set any value less than 32767 to this property.
 
-## Set the maximum number of Columns
+## Set the maximum number of Columns when inserting a table
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -97,7 +97,7 @@ Refer to the following sample code.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-You can use the `maximumColumns` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+You can use the `maximumColumns` property to set the maximum number of columns allowed while inserting a table in the Document Editor component.
 
 Refer to the following sample code.
 
@@ -123,7 +123,7 @@ When the maximum column limit is reached, an alert will appear, as follow
 
 ![Column Limit Alert](images/Column_Limit_Alert.PNG) 
 
->Note: The maximum value is 63, as per Microsoft Word application and you can set any value less than 63 to this property. If you set any value greater than 63, then Syncfusion Document editor will automatically reset as 63.
+>Note: The maximum value of Column is 63, as per Microsoft Word application and you can set any value less than 63 to this property.
 
 ## Insert rows
 
