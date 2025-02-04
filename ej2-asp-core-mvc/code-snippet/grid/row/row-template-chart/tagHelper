@@ -37,7 +37,7 @@
         let gridInstance = document.getElementById('grid').ej2_instances[0];
         let chartList = gridInstance.getContentTable().querySelectorAll('.chart-container');
         for (let i = 0; i < chartList.length; i++) {
-            let chartData = getChartData(employeeData[i].EmployeeID);
+            let chartData = getChartData(employeeData[i].employeeID);
             let chartComponent = new ej.charts.Chart({
                 height: "200",
                 primaryXAxis: { valueType: 'Category' },
@@ -53,7 +53,7 @@
         }
     }
     function getChartData(employeeID) {
-        const employeePerformance = employeePerformanceData.find(emp => emp.EmployeeID === employeeID);
+        const employeePerformance = employeePerformanceData.find(emp => emp.employeeID === employeeID);
         return employeePerformance ? employeePerformance.chartData : [];
     }
 </script>
