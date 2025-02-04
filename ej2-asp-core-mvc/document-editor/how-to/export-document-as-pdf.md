@@ -90,7 +90,6 @@ The following way illustrates how to convert the document as PDF:
 {% endhighlight %}
 {% highlight c# tabtitle="DocumentEditorController.cs" %}
 {% include code-snippet/document-editor/export-pdf/aspnet-core.cs %}
-{% include code-snippet/document-editor/export-pdf/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -101,7 +100,6 @@ The following way illustrates how to convert the document as PDF:
 {% endhighlight %}
 {% highlight c# tabtitle="DocumentEditorController.cs" %}
 {% include code-snippet/document-editor/export-pdf/aspnet-mvc.cs %}
-{% include code-snippet/document-editor/export-pdf/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
