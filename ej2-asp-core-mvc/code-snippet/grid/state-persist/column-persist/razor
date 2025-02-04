@@ -5,10 +5,10 @@
 <div id="message" class="message"></div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).EnablePersistence(false).Height("348px").Columns(col =>
 {
-col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
-col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("170").HeaderTemplate("#customertemplate").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#template").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).AllowPaging(true).Render()
 <script>
     document.getElementById('save').addEventListener('click', function () {
@@ -48,7 +48,6 @@ col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Template("#
         font-size: 16px;
         padding-bottom: 10px;
     }
-
     .custom {
         margin-left: 10px;
     }

@@ -13,15 +13,12 @@
     .e-grid .e-fixedfreeze.e-freezeleftborder {
         border-left-color: rgb(9, 209, 9) !important;
     }
-
     .e-grid .e-fixedfreeze.e-freezerightborder {
         border-right-color: rgb(10, 224, 10) !important;
     }
-
     .e-grid .e-rightfreeze.e-freezerightborder {
         border-left-color: rgb(19, 228, 243) !important;
     }
-
     .e-grid .e-leftfreeze.e-freezeleftborder {
         border-right-color: rgb(198, 30, 204) !important;
     }

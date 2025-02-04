@@ -36,7 +36,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides 
 
 To freeze a particular column in the grid, you can utilize the `isFrozen` property of the grid component as **true**.
 
-The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the `DropDownList` component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
+The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -6,7 +6,6 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Created("setHeaderHeight").Render()
-
 <style>
     .orientationcss .e-headercelldiv {
         transform: rotate(90deg);
