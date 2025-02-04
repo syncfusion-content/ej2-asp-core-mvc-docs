@@ -1,5 +1,4 @@
 @using System.Text.Json;
-
 <div>
     <ejs-grid id="masterGrid" dataSource="@ViewBag.employeeDataSource" selectedRowIndex="1" toolbar="@(new List<string>() { "Print" })" rowSelected="rowSelected" beforePrint="beforePrint">
         <e-grid-columns>
@@ -11,7 +10,6 @@
     </ejs-grid>
 </div>
 <p><div style="padding: 8px 0px 10px 0px;" class='e-statustext'> Showing orders of Customer:  <b id=key></b></div></p>
-
 <ejs-grid id="childGrid">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
@@ -21,7 +19,6 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function rowSelected(args) {
         let selectedRecord = args.data;
@@ -32,12 +29,11 @@
         grid.dataSource = new ej.data.DataManager(detaildata).dataSource.json;
         document.getElementById("key").innerHTML = selectedRecord.ContactName;
     };
-
     function beforePrint(args) {
-        var customEle = document.createElement('div');
+        var customElement = document.createElement('div');
         var grid = document.getElementById("childGrid").ej2_instances[0];
-        customEle.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + grid.element.innerHTML;
-        customEle.appendChild(document.createElement('br'));
-        args.element.append(customEle);
+        customElement.innerHTML = document.getElementsByClassName('e-statustext')[0].innerHTML + grid.element.innerHTML;
+        customElement.appendChild(document.createElement('br'));
+        args.element.append(customElement);
     };
 </script>

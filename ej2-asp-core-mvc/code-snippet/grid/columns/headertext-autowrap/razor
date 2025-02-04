@@ -1,3 +1,10 @@
+@{
+    ViewBag.dropDownData = new List<object>
+    {
+        new { value = "Header", text = "Header" },
+        new { value = "Both", text = "Both" }
+    };
+}
 <div style="display: flex">
     <label style="padding: 10px 10px 26px 0"> Change the wrapmode of auto wrap feature: </label>
     <span style="height:fit-content">

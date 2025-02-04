@@ -1,8 +1,7 @@
 <div style="padding:0px 0px 20px 0px">
-    <ejs-button id='reordersingle' cssClass='e-info'  content="Reorder single column"></ejs-button>
-    <ejs-button id='reordermultiple' cssClass='e-info'  content="Reorder mutiple columns"></ejs-button>
+    <ejs-button id='reordersingle' cssClass='e-info' content="Reorder single column"></ejs-button>
+    <ejs-button id='reordermultiple' cssClass='e-info' content="Reorder mutiple columns"></ejs-button>
 </div>
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering='true'>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>

@@ -3,7 +3,6 @@
     filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "VINET" });
     filterColumns.Add(new { field = "CustomerID", matchCase = false, @operator = "startswith", predicate = "or", value = "HANAR"});
 }
-
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering(true).Height("273px").Columns(col =>
 {
    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();

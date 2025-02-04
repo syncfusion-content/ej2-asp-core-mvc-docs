@@ -1,13 +1,14 @@
+
 <div id='treeparent'>
-<ejs-treeview id="treedata">
+    <ejs-treeview id="treedata">
         <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
-</ejs-treeview>
-<ejs-button id="button1" cssClass="e-primary inline-element right" content="Move node"></ejs-button>
-<div id="display"></div>
+    </ejs-treeview>
 </div>
+<ejs-button id="button1" cssClass="e-primary inline-element right" content="Move node"></ejs-button>
+
 <script>
-    var treeObj = document.getElementById('treedata').ej2_instances[0];
     document.getElementById("button1").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
         // The node with id 2 is moved to the parent node with id 3 to the index of 1.
         treeObj.moveNodes(['2'], '3', 1);
     });
@@ -24,9 +25,4 @@
         border-radius: 3px;
     }
 
-    #display {
-        max-width: 500px;
-        margin: auto;
-        padding: 10px;
-    }
 </style>

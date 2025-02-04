@@ -1,12 +1,12 @@
 <div style="padding-bottom: 20px; display: flex">
    <label style="margin-right:5px;margin-top: -3px;font-weight: bold;">Enable or disable toolbar items</label>
-    <ejs-switch id="switch" checked="true" change="onSwitchChange"></ejs-switch>
+   <ejs-switch id="switch" checked="true" change="onSwitchChange"></ejs-switch>
 </div>
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar="@( new List<string>(){"Expand","Collapse"})" height="348px" allowGrouping="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
         <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
     </e-grid-columns>
     <e-grid-groupSettings columns="@(new string[] { "CustomerID"})"></e-grid-groupSettings>
@@ -21,6 +21,5 @@
     {       
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], args.checked);
-        
     }
 </script>
