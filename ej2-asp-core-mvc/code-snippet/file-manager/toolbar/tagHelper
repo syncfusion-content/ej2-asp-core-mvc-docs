@@ -1,47 +1,18 @@
 @{
-    var checkBoxTemplate = "#checkBox-Template";
+    string[] items = new string[] { "NewFolder", "Refresh", "View", "Details" };
 }
 <div class=" control-section">
     <div class="sample-container">
         <!--  Filemanager element declaration -->
-        <ejs-filemanager id="filemanager">
+        <ejs-filemanager id="file">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
-            <e-filemanager-toolbaritems>
-                    <e-filemanager-toolbaritem Name="NewFolder"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="SortBy"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Refresh"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Cut"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Copy"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Paste"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Delete"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Download"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Rename"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Template="@checkBoxTemplate" Name="Select"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Selection"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="View"></e-filemanager-toolbaritem>
-                    <e-filemanager-toolbaritem Name="Details"></e-filemanager-toolbaritem>
-                </e-filemanager-toolbaritems>
+            <e-filemanager-toolbarsettings items="items">
+            </e-filemanager-toolbarsettings>
         </ejs-filemanager>
         <!-- end of filemanager element -->
-        <ejs-checkbox id="checkBox-Template" label="Select All"  checked="false" change="onChange"></ejs-checkbox>
     </div>
 </div>
-
-<script>
-    function onChange(args) {
-        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
-        var checkboxInstance = document.getElementById("checkBox-Template").ej2_instances[0];
-        if (args.checked) {
-            filemanagerInstance.selectAll(); 
-            checkboxInstance.label = 'Unselect All';
-        }
-        else {
-            filemanagerInstance.clearSelection();
-            checkboxInstance.label = 'Select All';
-        }
-    }
-</script>
