@@ -1,10 +1,10 @@
 using Syncfusion.EJ2.InteractiveChat;
 
-public UserModel CurrentUser { get; set; }
+public ChatUIUser CurrentUser { get; set; }
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
-public UserModel CurrentUserModel { get; set; } = new UserModel() { id = "user1", user = "Albert" };
-public UserModel MichaleUserModel { get; set; } = new UserModel() { id = "user2", user = "Michale Suyama" };
-public List<UserModel> TypingUsers { get; set; }
+public ChatUIUser CurrentUserModel { get; set; } = new ChatUIUser() { Id = "user1", User = "Albert" };
+public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama" };
+public List<ChatUIUser> TypingUsers { get; set; }
 
 public ActionResult Timestamp()
 {
@@ -24,14 +24,8 @@ public ActionResult Timestamp()
         Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel
     });
-    TypingUsers = new List<UserModel>() { MichaleUserModel };
+    ViewBag.TypingUsers = new List<ChatUIUser>() { MichaleUserModel };
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
     return View();
-}
-
-public class UserModel
-{
-    public string id { get; set; }
-    public string user { get; set; }
 }

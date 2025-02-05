@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.InteractiveChat;
-@using Newtonsoft.Json
+@using Newtonsoft.Json;
 
 <div style="height: 380px; width: 450px">
     <ejs-chatui id="chatUser" created="onCreated" locale="de">

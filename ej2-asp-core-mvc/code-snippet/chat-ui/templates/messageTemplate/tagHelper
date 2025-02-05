@@ -4,7 +4,7 @@
     <ejs-chatui id="messageTemplate" messageTemplate="#messagesContent">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-messages>
-            @foreach (var message in Model.ChatMessagesData)
+            @foreach (var message in ViewBag.ChatMessagesData)
             {
                 <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
             }
@@ -33,6 +33,4 @@
     #messageTemplate .message-items {
         padding: 5px;
     }
-
-
 </style>
