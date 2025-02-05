@@ -76,7 +76,7 @@ When the maximum row limit is reached, an alert will appear, as follow
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-You can use the `maximumColumns` property to set the maximum number of rows allowed while inserting a table in the Document Editor component.
+You can use the `maximumColumns` property to set the maximum number of columns allowed while inserting a table in the Document Editor component.
 
 Refer to the following sample code.
 
