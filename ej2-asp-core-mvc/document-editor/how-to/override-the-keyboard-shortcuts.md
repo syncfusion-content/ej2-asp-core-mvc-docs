@@ -71,10 +71,11 @@ For example, `Ctrl + S` keyboard shortcut saves the document in SFDT format by d
 {% endtabs %}
 {% endif %}
 
-## Detect the keyboard shortcut
+## How to Detect when a key is being pressed
 
-The following code shows how to detect the `Delete` or `Backspace` keyboard shortcut for Deleting and Backspacing the selected content in Document Editor.
+Capture or detect what action will be executed when any key is pressed.
 
+For example, when the Backspace or Delete keys are pressed, an alert message will pop up with a specific action for the pressed key. The following code demonstrates how to detect the `Delete` or `Backspace` key press for deleting and backspacing the selected content in the Document Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
