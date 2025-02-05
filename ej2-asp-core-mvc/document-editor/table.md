@@ -70,7 +70,7 @@ When the maximum row limit is reached, an alert will appear, as follow
 
 ![Row Limit Alert](images/Row_Limit_Alert.PNG) 
 
->Note: The maximum value of Row is 32767, as per Microsoft Word application and you can set any value less than 32767 to this property.
+>Note: The maximum value of Row is 32767, as per Microsoft Word application and you can set any value less than or equal to 32767 to this property.
 
 ## Set the maximum number of Columns when inserting a table
 
@@ -123,7 +123,7 @@ When the maximum column limit is reached, an alert will appear, as follow
 
 ![Column Limit Alert](images/Column_Limit_Alert.PNG) 
 
->Note: The maximum value of Column is 63, as per Microsoft Word application and you can set any value less than 63 to this property.
+>Note: The maximum value of Column is 63, as per Microsoft Word application and you can set any value less than or equal to 63 to this property.
 
 ## Insert rows
 
