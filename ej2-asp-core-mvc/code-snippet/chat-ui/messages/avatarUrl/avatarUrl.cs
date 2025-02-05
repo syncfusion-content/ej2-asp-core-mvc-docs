@@ -3,7 +3,7 @@ using Syncfusion.EJ2.InteractiveChat;
 public ChatUIUser CurrentUser { get; set; }
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
 public ChatUIUser CurrentUserModel { get; set; } = new ChatUIUser() { Id = "user1", User = "Albert" };
-public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama", AvatarUrl = "" };//Provide the URL for the image here.
+public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama", AvatarUrl = "https://ej2.syncfusion.com/demos/src/avatar/images/pic03.png" };
 
 public ActionResult AvatarUrl()
 {
