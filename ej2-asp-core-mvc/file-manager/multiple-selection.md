@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple Selection in ##Platform_Name## Syncfusion File Manager Component
-description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Multiple Selection in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
+description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Selection
 publishingplatform: ##Platform_Name##
@@ -11,9 +11,9 @@ documentation: ug
 
 # Multiple Selection in File Manager
 
-The file manager allows you to select multiple files by enabling the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [`fileSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileSelect.html) event will be triggered when the items of file manager control is selected or unselected.
+The File Manager allows multiple file selection through the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [`fileSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileSelect.html) event will be triggered when the items of File Manager control is selected or unselected.
 
-The below example shows File manager allows you to select multiple files using [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property.
+The example below demonstrates how the File Manager allows multiple file selection using the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -21,8 +21,8 @@ The below example shows File manager allows you to select multiple files using [
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/multiple-selection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/multiple-selection/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/multiple-selection/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,14 +39,13 @@ The below example shows File manager allows you to select multiple files using [
 {% endif %}
 
 
-
-Output be like the below.
+The output will look like the image below.
 
 ![FileManager multiselection](./images/detailsview.png)
 
 ## Range Selection
 
-The File Manager supports for selecting files and folders in specific ranges through mouse drag as like File Explorer. This is particularly useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
+The File Manager supports selecting files and folders in specific ranges through mouse drag, similar to File Explorer. This is particularly useful in scenarios where users need to select a large group of files quickly without manually clicking each one. 
 
 ### Enabling Range Selection
 
@@ -58,8 +57,8 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/range-selection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/range-selection/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/range-selection/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,6 +76,6 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 {% endtabs %}
 {% endif %}
 
-Output be like the below.
+The output will look like the image below.
 
 ![FileManager rangeselection](./images/rangeselection.png)
