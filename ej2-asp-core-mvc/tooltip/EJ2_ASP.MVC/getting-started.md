@@ -49,7 +49,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -69,7 +69,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the **~/Pages/Shared/_Layout.cshtml** file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -85,12 +85,14 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Tooltip control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tooltip control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tooltip control in **~/Views/Home/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@Html.EJS().Tooltip("Tooltip").Content("Lets go green & Save Earth !!!").ContentTemplate(@<span id='target'>Show Tooltip</span>).Render()
+<div style='display: inline-flex; position: relative; left: 50%; transform: translateX(-50%); margin-top: 100px;'>    
+    @Html.EJS().Tooltip("Tooltip").Content("Lets go green & Save Earth !!!").Position(Syncfusion.EJ2.Popups.Position.TopCenter).ContentTemplate(@<span id='target'>Show Tooltip</span>).Render()
+</div>
 
 {% endhighlight %}
 {% endtabs %}

@@ -2,7 +2,7 @@
 @using Syncfusion.EJ2.Popups
 <div id='container'>
     <div id="customization" class="customTipContainer">
-        @Html.EJS().Tooltip("arrow").Content("Tooltip arrow customized").CssClass("curvetips e-tooltip-css").ContentTemplate(@<button id="target">
+        @Html.EJS().Tooltip("arrow").Position(Syncfusion.EJ2.Popups.Position.TopCenter).Content("Tooltip arrow customized").CssClass("curvetips e-tooltip-css").ContentTemplate(@<button id="target">
             Customized Tip Arrow
         </button>).Render()
         <div id="positions">
@@ -17,7 +17,7 @@
         </div>
     </div>
     <div id="balloon" class="customTipContainer">
-        @Html.EJS().Tooltip("bubble").Content("Tooltip arrow customized as balloon tip").CssClass("bubbletip e-tooltip-css").ContentTemplate(@<button id="bubbletip">
+        @Html.EJS().Tooltip("bubble").Position(Syncfusion.EJ2.Popups.Position.TopCenter).Content("Tooltip arrow customized as balloon tip").CssClass("bubbletip e-tooltip-css").ContentTemplate(@<button id="bubbletip">
             Bubble Tip Arrow
         </button>).Render()
         <div id="btn">
@@ -32,7 +32,7 @@
         </div>
     </div>
     <div id="disabledContainer" class="customTipContainer">
-        @Html.EJS().Tooltip("tooltip").Content("Disabled tooltip pointer").CssClass("pointertip e-tooltip-css").ContentTemplate(@<button id="tooltip">
+        @Html.EJS().Tooltip("tooltip").Position(Syncfusion.EJ2.Popups.Position.TopCenter).Content("Disabled tooltip pointer").CssClass("pointertip e-tooltip-css").ContentTemplate(@<button id="tooltip">
             Disabled Tip Arrow
         </button>).Render()
     </div>
