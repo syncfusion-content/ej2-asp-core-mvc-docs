@@ -20,5 +20,4 @@
         grid.columns[1].visible = false;
         grid.columns[3].visible = true;
     }
-
 </script>

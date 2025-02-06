@@ -1,15 +1,13 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true'
-    showColumnMenu='true' allowFiltering='true' allowGrouping='true' columnMenuOpen='columnMenuOpen'>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowSorting='true' showColumnMenu='true' allowFiltering='true' allowGrouping='true' columnMenuOpen='columnMenuOpen'>
     <e-grid-filtersettings type="Menu"></e-grid-filtersettings>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function columnMenuOpen(args) {
         for (let item of args.items) {

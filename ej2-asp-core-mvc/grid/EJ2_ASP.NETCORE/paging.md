@@ -26,7 +26,7 @@ Customizing the pager options in the Syncfusion<sup style="font-size:70%">&reg;<
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to control the number of records displayed per page, providing you with flexibility in managing your data. This feature is particularly useful when you want to adjust the amount of data visible to you at any given time. To achieve this, you can utilize the [pageSettings.pageSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) property. This property is used to specify the initial number of records to display on each page. The default value of `pageSize` property is **12**.
 
-The following example demonstrates how to change the page size of a Grid using an external button click based on **TextBox** input.
+The following example demonstrates how to change the page size of a Grid using an external button click based on [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started)input.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -45,7 +45,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to adjust t
 
 To change the page count in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the [pageSettings.pageCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageCount) property, which defines the number of pages displayed in the pager container.
 
-The following example demonstrates how to change the page count of a Grid using an external button click based on **TextBox** input.
+The following example demonstrates how to change the page count of a Grid using an external button click based on [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) input.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,7 +64,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to change t
 
 To change the current page in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can utilize the [pageSettings.currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) property, which defines the current page number of the pager.
 
-The following example demonstrates how to dynamically change the current page using an external button click based on **TextBox** input:
+The following example demonstrates how to dynamically change the current page using an external button click based on [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) input:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -104,7 +104,7 @@ The pager template in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allo
 
 To use the pager template, you need to specify the [pagerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PagerTemplate) property in your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage), [pageSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize), [pageCount](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageCount), **totalPage** and **totalRecordCount** values.
 
-The following example demonstrates how to render a **NumericTextBox** component in the pager using the `pagerTemplate` property:
+The following example demonstrates how to render a [NumericTextBox](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started) component in the pager using the `pagerTemplate` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -163,7 +163,7 @@ Navigating to a particular page in the Syncfusion<sup style="font-size:70%">&reg
 
 To achieve page navigation, you can use the `goToPage` method provided by Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This method allows you to programmatically navigate to a specific page within the grid.
 
-The following example demonstrates how to dynamically navigate to a particular page using the `goToPage` method triggered by an external button click based on **TextBox** input:
+The following example demonstrates how to dynamically navigate to a particular page using the `goToPage` method triggered by an external button click based on [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started) input:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -193,7 +193,7 @@ You have an option to dynamically calculate the page size of a grid by consideri
 
 To achieve page size calculation based on an element's height in the Grid, you can utilize the `calculatePageSizeByParentHeight` method. This method calculates the page size based on the height of the parent element.
 
-The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on the **NumericTextBox** input:
+The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on the [NumericTextBox](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started) input:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

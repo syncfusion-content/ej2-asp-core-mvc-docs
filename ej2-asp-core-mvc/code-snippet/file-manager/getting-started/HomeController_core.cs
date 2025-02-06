@@ -28,6 +28,8 @@ namespace WebApplication.Controllers
             this.operation = new PhysicalFileProvider();
             // Assign the mapped path as root folder
             this.operation.RootFolder(this.basePath + "\\" + this.root);
+            // Assign the mapped path as root folder(.NET6 project)
+            // this.operation.RootFolder(this.basePath + this.root);
         }
 
         public object FileOperations([FromBody] FileManagerDirectoryContent args)
