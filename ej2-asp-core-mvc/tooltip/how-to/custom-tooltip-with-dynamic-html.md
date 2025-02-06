@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Tooltip With Dynamic Html in ##Platform_Name## Tooltip Component
+title: Custom Tooltip With Dynamic Html in ##Platform_Name## Tooltip Component | Syncfusion
 description: Learn here all about Custom Tooltip With Dynamic Html in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Tooltip With Dynamic Html
@@ -42,3 +42,4 @@ content: '<iframe src="https://www.syncfusion.com/products/essential-js2"></ifra
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
