@@ -1,5 +1,19 @@
-@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2.InteractiveChat;
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+    <button id="addMessageString" style="margin-bottom: 10px" class="e-btn e-primary">Add Message as string</button>
+    @Html.EJS().ChatUI("chatUser").Created("onCreated").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
 </div>
+
+<script>
+    var chatUIObj;
+    function onCreated() {
+        var chatUiEle = document.getElementById('chatUser');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'addMessageString') {
+            chatUIObj.addMessage("Also, let me know if there are any blockers we should address before the next phase.");
+        }
+    });
+</script>

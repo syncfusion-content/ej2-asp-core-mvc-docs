@@ -18,6 +18,9 @@ You can use the [showTimeStamp](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/timestamp/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Timestamp.cs" %}
+{% include code-snippet/chat-ui/timestamp/timestamp.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Timestamp](images/timestampMain.png)
@@ -29,6 +32,9 @@ You can use the [timeStampFormat](https://help.syncfusion.com/cr/aspnetcore-js2/
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/timestampFormat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimestampFormat.cs" %}
+{% include code-snippet/chat-ui/timestampFormat/timestampFormat.cs %}
 {% endhighlight %}
 {% endtabs %}
 

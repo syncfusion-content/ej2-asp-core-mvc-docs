@@ -20,6 +20,9 @@ You can use the `text` property to add message content for the user. Each messag
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/text/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/chat-ui/messages/text/text.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Text](images/text.png)
@@ -34,6 +37,9 @@ You can use the `author` property to identify the current user of the chat. Each
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/user/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="User.cs" %}
+{% include code-snippet/chat-ui/messages/user/user.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![User](images/text.png)
@@ -45,6 +51,9 @@ You can use the [avatarUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/avatarUrl/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AvatarUrl.cs" %}
+{% include code-snippet/chat-ui/messages/avatarUrl/avatarUrl.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,6 +67,9 @@ You can use the [avatarBgColor](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/avatarColor/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="AvatarColor.cs" %}
+{% include code-snippet/chat-ui/messages/avatarColor/avatarColor.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![AvatarBgColor](images/avatar-bgcolor.png)
@@ -69,6 +81,9 @@ You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/avatarCssClass/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AvatarCssClass.cs" %}
+{% include code-snippet/chat-ui/messages/avatarCssClass/avatarCssClass.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,6 +97,9 @@ You can use the `timeStamp` property to indicate the date and time of each messa
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/timestamp/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Timestamp.cs" %}
+{% include code-snippet/chat-ui/messages/timestamp/timestamp.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![TimeStamp](images/timestamp.png)
@@ -93,6 +111,9 @@ You can use the `timeStampFormat` to display specific time format for the timest
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/timestampFormat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimeStampFormat.cs" %}
+{% include code-snippet/chat-ui/messages/timestampFormat/timestampFormat.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,6 +131,9 @@ You can use the `iconCss` property to update the styling of status icons associa
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/statusIcon/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="StatusIcon.cs" %}
+{% include code-snippet/chat-ui/messages/statusIcon/statusIcon.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![IconCss](images/status-icon.png)
@@ -122,6 +146,9 @@ You can use the `text` property to provide information about the messages throug
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/statusText/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="StatusText.cs" %}
+{% include code-snippet/chat-ui/messages/statusText/statusText.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Text](images/status-text.png)
@@ -133,6 +160,9 @@ You can use the `tooltip` property to provide information about the messages by 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/statusTooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="StatusTooltip.cs" %}
+{% include code-snippet/chat-ui/messages/statusTooltip/statusTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -148,6 +178,9 @@ You can use the [autoScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-j
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/autoScroll/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="AutoScroll.cs" %}
+{% include code-snippet/chat-ui/messages/autoScroll/autoScroll.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![AutoScrollToBottom](images/auto-scroll.png)
@@ -159,6 +192,9 @@ You can use the [suggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/suggestion/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Suggestion.cs" %}
+{% include code-snippet/chat-ui/messages/suggestion/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
