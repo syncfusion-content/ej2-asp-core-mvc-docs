@@ -80,7 +80,29 @@ Add the required scripts using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 {% endhighlight %}
 {% endtabs %}
 
-N> While referring the scripts from the downloaded resources in your application, make sure to place the 'ej2-pdfviewer-lib' assets in the same directory as the 'ej2.min.js' script.
+### Steps to Load PDF Viewer with Local script and style
+
+To use local resources with your PDF Viewer, follow these steps:
+
+**Step 1:** Place the `ej2.min.js` script and its related styles in `wwwroot` folder of your ASP.NET Core application.
+
+**Step 2:** Insert the necessary script and style references within the `<head>` section of your _Layout.cshtml file. Make sure these point to your local copies of the files instead of CDN links.
+
+By following these steps, you will configure your PDF Viewer to load the required script and style locally. See the code snippet below for reference.
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="~/material.min.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="~/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -127,6 +149,38 @@ In the above code,
 **ejs-pdfviewer** refers to the PDF Viewer control among the EJ components with id as "pdfviewer".
 
 **documentPath** is the property needed to load a PDF file in the PDF Viewer.
+
+### How to Configure PDF Viewer to Use Local Resources
+
+To utilize the `resourceUrl` and `documentPath` locally with your PDF Viewer, follow these instructions:
+
+**Step 1:** Ensure that your application includes the `ej2-pdfviewer-lib` folder. This folder must contain the `pdfium.js`, `pdfium.wasm` files, and the PDF file that you intend to display. These should reside in the same location as the `ej2.min.js` script and its related styles.
+
+**Step 2:** Assign local file paths to the `documentPath` and `resourceUrl` properties within the PDF Viewer setup. The `documentPath` should refer to your PDF file, while the `resourceUrl` should point to the directory containing the supporting resources.
+
+By following these steps, you will configure your PDF Viewer to load the required resources locally. See the code snippet below for reference.
+
+{% tabs %}
+{% highlight c# tabtitle="~/Index.cshtml" %}
+
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    var originUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}";
+    var document = originUrl + "/PDF_Succinctly.pdf";
+    var resourceUrl = originUrl + "/ej2-pdfviewer-lib";
+}
+
+<div>
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" documentPath=@document resourceUrl=@resourceUrl>
+    </ejs-pdfviewer>
+</div>
+
+{% endhighlight %}
+{% endtabs %}
+
+View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to)
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core PDF Viewer control will be rendered in the default web browser.
 
