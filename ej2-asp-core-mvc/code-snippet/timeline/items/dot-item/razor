@@ -1,4 +1,4 @@
-@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.Layouts
 
 <div id="container" style="height: 350px;">
     @Html.EJS().Timeline("timeline").Items(ViewBag.dotItems).Render()
