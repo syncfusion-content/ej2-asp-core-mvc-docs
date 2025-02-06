@@ -1,7 +1,8 @@
-@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").User(ViewBag.CurrentUser).Render()
+    @Html.EJS().ChatUI("chatUser").Created("onCreated").User(ViewBag.CurrentUser).LoadOnDemand(true).Render()
 </div>
 
 <script>
@@ -12,7 +13,7 @@
             text: i % 2 === 0
                 ? `Message ${i} from Michale`
                 : `Message ${i} from Albert`,
-            author: i % 2 === 0 ? @Html.Raw(JsonConvert.SerializeObject(Model.MichaleUserModel)) : @Html.Raw(JsonConvert.SerializeObject(Model.CurrentUserModel))
+            author: i % 2 === 0 ? @Html.Raw(JsonConvert.SerializeObject(ViewBag.MichaleUser)) : @Html.Raw(JsonConvert.SerializeObject(ViewBag.CurrentUser))
         });
     }
     function onCreated() {

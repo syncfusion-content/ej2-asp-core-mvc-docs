@@ -1,11 +1,11 @@
 using Syncfusion.EJ2.InteractiveChat;
 
-public UserModel CurrentUser { get; set; }
+public ChatUIUser CurrentUser { get; set; }
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
-public UserModel CurrentUserModel { get; set; } = new UserModel() { id = "user1", user = "Albert" };
-public UserModel MichaleUserModel { get; set; } = new UserModel() { id = "user2", user = "Michale Suyama" };
-public UserModel ReenaUserModel { get; set; } = new UserModel() { id = "user3", user = "Reena" };
-public List<UserModel> TypingUsers { get; set; }
+public ChatUIUser CurrentUserModel { get; set; } = new ChatUIUser() { Id = "user1", User = "Albert" };
+public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama" };
+public ChatUIUser ReenaUserModel { get; set; } = new ChatUIUser() { Id = "user3", User = "Reena" };
+public List<ChatUIUser> TypingUsers { get; set; }
 
 public ActionResult Default()
 {
@@ -25,14 +25,8 @@ public ActionResult Default()
         Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel
     });
-    TypingUsers = new List<UserModel>() { MichaleUserModel, ReenaUserModel };
+    ViewBag.TypingUsers = new List<ChatUIUser>() { MichaleUserModel, ReenaUserModel };
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
     return View();
-}
-
-public class UserModel
-{
-    public string id { get; set; }
-    public string user { get; set; }
 }
