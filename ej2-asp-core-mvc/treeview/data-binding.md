@@ -138,7 +138,7 @@ The **OrderID**, **EmployeeID**, and **ShipName** columns from orders table have
 {% include code-snippet/treeview/binding-data/remote-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotedata_mvc.cs" %}
-{% include code-snippet/treeview/binding-data/remote-data/remotedata_mvc.cs %}
+{% include code-snippet/treeview/binding-data/remote-data/remotedata-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
