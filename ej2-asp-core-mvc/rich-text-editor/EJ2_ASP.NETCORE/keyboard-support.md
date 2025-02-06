@@ -14,7 +14,7 @@ The editor has full keyboard accessibility that includes shortcuts to open and o
 
 ## HTML editor shortcut keys
 
-You can use the following key shortcuts when the Rich Text Editor renders with `HTML` [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode).
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) as `HTML`.
 
 ### Toolbar
 
@@ -40,7 +40,7 @@ These keyboard shortcuts allow for quick access to content editing features like
 | Make text bold | <kbd>Ctrl</kbd> + <kbd>B</kbd> | <kbd>⌘</kbd> + <kbd>B</kbd> |
 | Italicize text | <kbd>Ctrl</kbd> + <kbd>I</kbd> | <kbd>⌘</kbd> + <kbd>I</kbd> |
 | Apply strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>S</kbd> |
-| Insert inline code | <kbd>Ctrl</kbd> + <kbd>`</kbd> | <kbd>⌘</kbd> + <kbd>`</kbd> |
+| Insert inline code | <kbd>Ctrl</kbd> + <kbd>&#96;</kbd> | <kbd>⌘</kbd> + <kbd>&#96;</kbd> |
 | Create link | <kbd>Ctrl</kbd> + <kbd>K</kbd> | <kbd>⌘</kbd> + <kbd>K</kbd> |
 | Copy format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> | <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Paste format painter | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |  <kbd>⌥</kbd> + <kbd>⌘</kbd> + <kbd>V</kbd> |
@@ -111,7 +111,7 @@ These shortcuts streamline copying, cutting, pasting, and pasting content as pla
 | Copy the selected content  | <kbd>Ctrl</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>C</kbd> |
 | Cut the selected content | <kbd>Ctrl</kbd> + <kbd>X</kbd> | <kbd>⌘</kbd> + <kbd>X</kbd> |
 | Paste the copied or cut content | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> |
-| Paste content as plain text | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>V</kbd> |
+| Paste content as plain text | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>⇧</kbd> + <kbd>V</kbd> |
 
 ### Undo & redo
 
@@ -158,7 +158,7 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 ## Markdown editor shortcut keys
 
-You can use the following key shortcuts when the Rich Text Editor renders with `Markdown` [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode).
+You can use the following keyboard shortcuts when the Rich Text Editor is set to [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) as `Markdown`.
 
 ### Toolbar
 
