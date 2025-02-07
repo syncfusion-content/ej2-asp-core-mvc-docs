@@ -171,7 +171,7 @@ By following these steps, you will configure your PDF Viewer to load the require
 {% endhighlight %}
 {% endtabs %}
 
-View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
+View the sample in GitHub to [load PDF Viewer with local resources](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to/Refer%20resource%20url%20locally/PdfViewer_MVC)
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC PDF Viewer control will be rendered in the default web browser.
 
