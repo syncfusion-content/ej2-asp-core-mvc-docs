@@ -1,3 +1,5 @@
+using Syncfusion.EJ2.Navigations;
+
 { 
     ......
     public ActionResult Template()
