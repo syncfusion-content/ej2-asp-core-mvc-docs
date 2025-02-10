@@ -76,6 +76,6 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 {% endtabs %}
 {% endif %}
 
-The output will look like the image below.w.
+The output will look like the image below.
 
 ![FileManager rangeselection](./images/rangeselection.png)
