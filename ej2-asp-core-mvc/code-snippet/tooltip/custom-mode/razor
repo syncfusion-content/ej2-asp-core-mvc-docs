@@ -1,7 +1,9 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
+
 @Html.EJS().Tooltip("tooltip").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpensOn("Custom").Content("Tooltip from custom mode").ContentTemplate(@<div id="box">
-Double-click to open Tooltip.</div>).Created("created").Render()
+    Double-click to open Tooltip.
+</div>).Created("created").Render()
 
 <style>
     #box {

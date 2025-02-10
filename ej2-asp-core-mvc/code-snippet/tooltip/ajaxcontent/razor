@@ -12,9 +12,6 @@
 
 
 <script>
-        /**
-         * Process tooltip ajax content.
-         */
   function onBeforeRender(args) {
             var _this = this;
             this.content = 'Loading...';
