@@ -19,7 +19,7 @@ The File Manager UI comprises several sections such as view, toolbar, breadcrumb
 * [View](#view) (For browsing files and folders using large icon view or details view)
 * [Context Menu](#context-menu) (For accessing file operations)
 
-![File Manager Overview](./images/user-interface.png "File Manager Overview")
+![File Manager Overview](./images/user-interface.png)
 
 The basic File Manager is a light weight control with all the basic functions. The basic File Manager have the following sections in its UI to browse files and folders and manage them with file operations.
 
@@ -27,7 +27,7 @@ The basic File Manager is a light weight control with all the basic functions. T
 * [View](#view) (Large Icons view for browsing files and folders)
 * [Context Menu](#context-menu) (For accessing file operations)
 
-![Basic File Manager](./images/default-ui.png "Basic File Manager")
+![Basic File Manager](./images/default-ui.png)
 
 ## Toolbar
 
@@ -37,7 +37,7 @@ If the toolbar items exceed the size of the toolbar, the excess items will be mo
 
 *Refer [Toolbar](./file-operations/#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
-![Toolbar](./images/toolbar.png "Responsiveness of Toolbar")
+![Toolbar](./images/toolbar.png)
 
 ## Files and folders navigation
 
@@ -54,7 +54,7 @@ The FileManager provides a navigation pane that displays the folder hierarchy of
 
 The File Manager provides breadcrumb for navigating to the parent folders. The breadcrumb in the File Manager is responsible for resizing. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
 
-![BreadCrumb](./images/breadcrumb.png "Responsiveness of BreadCrumb Bar")
+![BreadCrumb](./images/breadcrumb.png)
 
 ## View
 
@@ -69,13 +69,13 @@ The `large icons view` is the default starting view in the File Manager. The vie
 
 In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content. For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
 
-![LargeIconView](./images/largeiconsview.png "File Manager Large Icon View")
+![LargeIconView](./images/largeiconsview.png)
 
 ### Details view
 
 The FileManager view can be changed from large icon to details view by using the [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [`detailsViewSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) API. The details view allows you to perform sorting using column header.
 
-![DetailsView](./images/detailsview.png "File Manager Details View")
+![DetailsView](./images/detailsview.png )
 
 ## Context menu
 
@@ -85,4 +85,4 @@ Context menu can be customized using the [`contextMenuSettings`](https://help.sy
 
 *Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
 
-![Context Menu](./images/contextmenu.png "Context Menu")
+![Context Menu](./images/contextmenu.png)
