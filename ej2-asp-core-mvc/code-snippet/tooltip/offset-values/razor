@@ -1,8 +1,9 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
-  @Html.EJS().Tooltip("tooltip").OffsetX(30).OffsetY(30).MouseTrail(true).ShowTipPointer(false).Content("Tooltip content").ContentTemplate(@<div>
-        <div id="target">Show tooltip</div>
-    </div>).Render()
+
+@Html.EJS().Tooltip("tooltip").OffsetX(30).OffsetY(30).MouseTrail(true).ShowTipPointer(false).Content("Tooltip content").ContentTemplate(@<div>
+    <div id="target">Show tooltip</div>
+</div>).Render()
 
 <style>
     #target {
