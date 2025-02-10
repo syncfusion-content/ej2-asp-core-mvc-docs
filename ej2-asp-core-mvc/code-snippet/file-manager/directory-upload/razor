@@ -3,10 +3,10 @@
         <!--  Filemanager element declaration -->
         @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
            {
-               Url = "/FileManager/FileOperations",
-               GetImageUrl = "/FileManager/GetImage",
-               UploadUrl = "/FileManager/Upload",
-               DownloadUrl = "/FileManager/Download"
+               Url = "/Home/FileOperations",
+               GetImageUrl = "/Home/GetImage",
+               UploadUrl = "/Home/Upload",
+               DownloadUrl = "/Home/Download"
            }).Success("onSuccess").Created("onCreated").Render()
                 <!-- end of filemanager element -->
     </div>
