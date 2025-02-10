@@ -93,7 +93,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stepp
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<ejs-stepper id="stepper"><ejs-stepper>
+<ejs-stepper id="stepper"></ejs-stepper>
 
 {% endhighlight %}
 {% endtabs %}
