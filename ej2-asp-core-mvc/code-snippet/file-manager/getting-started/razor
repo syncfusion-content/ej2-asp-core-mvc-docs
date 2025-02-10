@@ -5,6 +5,6 @@
         {
             Url = "/Home/FileOperations"
         }).NavigationPaneSettings(ls => ls.Visible(false)).ContextMenuSettings(ls => ls.Visible(false)).ToolbarSettings(ls => ls.Visible(false)).Render()
-        <!-- end of filemanager element -->
+        <!-- end of File Manager element -->
     </div>
 </div>

@@ -13,6 +13,6 @@
             <e-filemanager-toolbarsettings items="items">
             </e-filemanager-toolbarsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager element -->
     </div>
 </div>

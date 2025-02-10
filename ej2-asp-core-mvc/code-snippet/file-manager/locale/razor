@@ -8,7 +8,7 @@
             UploadUrl = "/Home/Upload",
             DownloadUrl = "/Home/Download"
         }).Locale("de").Render()
-        <!-- end of filemanager element -->
+        <!-- end of File Manager element -->
     </div>
 </div>
 <script>

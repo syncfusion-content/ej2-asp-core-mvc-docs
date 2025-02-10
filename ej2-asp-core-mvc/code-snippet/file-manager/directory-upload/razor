@@ -8,7 +8,7 @@
                UploadUrl = "/Home/Upload",
                DownloadUrl = "/Home/Download"
            }).Success("onSuccess").Created("onCreated").Render()
-                <!-- end of filemanager element -->
+                <!-- end of File Manager element -->
     </div>
 </div>
 

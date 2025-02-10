@@ -18,7 +18,7 @@
             Folder = folder,
             Layout = layout
         }).MenuOpen("menuOpen").MenuClick("menuClick").Render()
-        <!-- end of filemanager element -->
+        <!-- end of File Manager element -->
     </div>
 </div>
 <script>

@@ -10,7 +10,7 @@ documentation: ug
 
 # Nested FileManager
 
-FileManager can be rendered inside other components like Tab, Dialog, and more.
+FileManager can be rendered inside other controls like Tab, Dialog, and more.
 
 * [Adding File Manager inside the dialog](#adding-file-manager-inside-the-dialog)
 * [Adding  File Manager inside the tab](#adding-file-manager-inside-the-tab)
