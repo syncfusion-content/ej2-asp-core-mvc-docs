@@ -3,7 +3,7 @@ using Syncfusion.EJ2.Navigations;
 public ActionResult ContextMenu()
 {
     List<object> treedata = new List<object>();
-    treedata.Add(new { id = 1, name = "Discover Music", hasChild = true, expanded = true, htmlAttribute = new Dictionary<string, string>() });
+    treedata.Add(new { id = 1, name = "Discover Music", hasChild = true, expanded = true });
     treedata.Add(new { id = 2, pid = 1, name = "Hot Singles", });
     treedata.Add(new { id = 3, pid = 1, name = "Rising Artists" });
     treedata.Add(new { id = 4, pid = 1, name = "Live Music" });

@@ -1,7 +1,11 @@
+@{
+    var nodeTemplate = "<div><img class=\"eimage\" src=\"https://ej2.syncfusion.com/demos/src/images/employees/${Image}.png\" alt=\"employee\"/><div class=\"eName\"> ${Name} </div><div class=\"ejob\"> ${Job} </div></div>";
+}
+
 <div class="treecontainer">
- @Html.EJS().TreeView("treedata").CssClass("custom").NodeTemplate("<div><img class=\"eimage\" src=\"https://ej2.syncfusion.com/demos/src/images/employees/${Image}.png\" alt=\"employee\"/><div class=\"eName\"> ${Name} </div><div class=\"ejob\"> ${Job} </div></div>").Fields(field=>
-    field.Selected("is_selected").Id("Id").ParentId("PId").Text("Name").HasChildren("HasChild").Expanded("Expanded")
-    .DataSource(ViewBag.data)).Render()
+    @Html.EJS().TreeView("treedata").CssClass("custom").NodeTemplate(nodeTemplate).Fields(field =>
+       field.Selected("is_selected").Id("Id").ParentID("PId").Text("Name").HasChildren("HasChild").Expanded("Expanded")
+       .DataSource(ViewBag.data)).Render()
 </div>
 
 <style>
