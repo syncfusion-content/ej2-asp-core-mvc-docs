@@ -36,9 +36,6 @@ The following example shows the File Manager control rendered inside the dialog.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/file-dialog/HomeController_core.cs %}
-{% endhighlight %}
 {% highlight c# tabtitle="HomeController_mvc.cs" %}
 {% include code-snippet/file-manager/file-dialog/HomeController_mvc.cs %}
 {% endhighlight %}
