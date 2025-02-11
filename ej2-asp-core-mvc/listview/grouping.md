@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Listview Component
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## ListView Control
+description: Learn here all about Grouping in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Grouping
 
-The ListView supports to wrap the nested element into a group based on the category. The category of each list item can be mapped with groupBy field in the data table, that also supports single-level navigation.
+The ListView supports to wrap the nested element into a group based on the category. The category of each list item can be mapped with [`groupBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListViewFieldSettings.html#Syncfusion_EJ2_Lists_ListViewFieldSettings_GroupBy) field in the data table, that also supports single-level navigation.
 
 In the following sample, The cars are grouped based on its category by using the groupBy field.
 

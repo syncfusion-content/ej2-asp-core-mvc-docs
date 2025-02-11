@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize Each List Item's Text in ##Platform_Name## Listview Component
-description: Learn here all about Customize Each List Item's Text in Syncfusion ##Platform_Name## Listview component of syncfusion and more.
+title: Customize Each List Item's Text in ##Platform_Name## ListView Control
+description: Learn here all about Customize Each List Item's Text in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize Each List Item's Text in ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize Each List Item's Text in ListView Component
+# Customize Each List Item's Text in ListView Control
 
-To customize the text of each list item in the ListView component, you can make use of the [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListViewFieldSettings.html#Syncfusion_EJ2_Lists_ListViewFieldSettings_HtmlAttributes) property. This property allows you to specify HTML attributes and styles for individual items within the list, enabling you to create visually appealing and interactive lists tailored to your requirements.
+To customize the text of each list item in the ListView control, you can make use of the [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListViewFieldSettings.html#Syncfusion_EJ2_Lists_ListViewFieldSettings_HtmlAttributes) property. This property allows you to specify HTML attributes and styles for individual items within the list, enabling you to create visually appealing and interactive lists tailored to your requirements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

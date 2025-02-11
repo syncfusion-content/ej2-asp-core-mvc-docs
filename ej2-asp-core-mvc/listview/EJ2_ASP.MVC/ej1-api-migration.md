@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Listview Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in ##Platform_Name## ListView Control
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of ListView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
+This article describes the API migration process of ListView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 | Behaviour | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |

@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Add And Remove List Items From Listview in ##Platform_Name## Listview Component
-description: Learn here all about Add And Remove List Items From Listview in Syncfusion ##Platform_Name## Listview component of syncfusion and more.
+title: Add And Remove List Items From ListView in ##Platform_Name## ListView Control
+description: Learn here all about Add And Remove List Items From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Add And Remove List Items From Listview
+control: Add And Remove List Items From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Add and Remove List Items from the ListView
 
-You can add or remove list items from the ListView component using the [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) and [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view/#removeitem) methods.
+You can add or remove list items from the ListView control using the [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) and [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view/#removeitem) methods.
+
 Refer to the following steps to add or remove a list item.
 
 * Render the ListView with data source, and use the [template](https://ej2.syncfusion.com/documentation/api/list-view/#template) property to append the delete icon

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Filter List Items In The Listview in ##Platform_Name## Listview Component
-description: Learn here all about Filter List Items In The Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Filter list items In The ListView in ##Platform_Name## ListView Control
+description: Learn here all about Filter list items In The ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Filter List Items In The Listview
+control: Filter list items In The ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filter List Items in the ListView
+# Filter list items in the ListView
 
-The filtered data can be displayed in the ListView component depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/). Refer to the following steps to render the ListView with filtered data.
+The filtered data can be displayed in the ListView control depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/). Refer to the following steps to render the ListView with filtered data.
 
 * Render a textbox to get input for filtering data.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Manipulate Listview As Grid Layout in ##Platform_Name## Listview Component
-description: Learn here all about Manipulate Listview As Grid Layout in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Manipulate ListView As Grid Layout in ##Platform_Name## ListView Control
+description: Learn here all about Manipulate ListView As Grid Layout in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Manipulate Listview As Grid Layout
+control: Manipulate ListView As Grid Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Manipulate ListView as Grid Layout
 
-In Listview, list items can be rendered in grid layout with following data manipulations.
+In ListView, list items can be rendered in grid layout with following data manipulations.
 
 * Add Item
 
@@ -69,7 +69,7 @@ In the below sample, we have rendered List items in grid layout.
 
 In this section, we will discuss about ListView data manipulations.
 
-## Add Item
+### Add Item
 
 We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) API. This will accept array of data as argument.
 
@@ -81,7 +81,7 @@ We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/
 
 In the below sample, you can add new fruit item by clicking add button which will open dialog box with fruit name and image URL text box. After entering the item details, click the add button. This will add your new fruit item.
 
-## Remove item
+### Remove item
 
 We can remove list item using [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
 
@@ -93,9 +93,9 @@ We can remove list item using [`removeItem`](https://ej2.syncfusion.com/document
 
 In the below sample, you can remove fruit by hovering the fruit item which will show delete button and click that delete button to delete that fruit from your list.
 
-## Sort Items
+### Sort Items
 
-Listview can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 
@@ -103,7 +103,7 @@ Listview can be sorted either in Ascending or Descending order. To enable sortin
 
 ```
 
-We can also set sorting after component initialization.
+We can also set sorting after control initialization.
 
 ```typescript
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Create Mobile Contact Layout From Listview in ##Platform_Name## Listview Component
-description: Learn here all about Create Mobile Contact Layout From Listview in Syncfusion ##Platform_Name## Listview component of syncfusion and more.
+title: Create Mobile Contact Layout From ListView in ##Platform_Name## ListView Control
+description: Learn here all about Create Mobile Contact Layout From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Create Mobile Contact Layout From Listview
+control: Create Mobile Contact Layout From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -82,3 +82,6 @@ N> Avatars can be set in different sizes in avatar classes. To know more about a
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ListView - Mobile contect layout](../images/mobile-contact.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Templates in ##Platform_Name## Listview Component
-description: Learn here all about Customizing Templates in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Customizing Templates in ##Platform_Name## ListView Control
+description: Learn here all about Customizing Templates in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customizing Templates
 publishingplatform: ##Platform_Name##
@@ -11,15 +11,15 @@ documentation: ug
 
 # Customizing templates
 
-The ListView component is designed to customize each list items and group title. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 `Template engine` to render the elements.
+The ListView control is designed to customize each list items and group title. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 `Template engine` to render the elements.
 
 ## Header Template
 
-ListView header can be customized with the help of the `headerTemplate` property.
+ListView header can be customized with the help of the [`headerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_HeaderTemplate) property.
 
 To customize header template in your application, set your customized template string to `headerTemplate` property along with `showHeader` property as `true` to display the ListView header.
 
-In the following example, we have rendered Listview with customized header which contains search, add and sort buttons.
+In the following example, we have rendered ListView with customized header which contains search, add and sort buttons.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,11 +44,13 @@ In the following example, we have rendered Listview with customized header which
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
 
+![ListView - Header Template](./images/header-template.png)
 
 ## Template
 
-ListView items can be customized with the help of the `template` property.
+ListView items can be customized with the help of the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_Template) property.
 
 To customize list items in your application, set your customized template string to `template` property.
 
@@ -97,11 +99,11 @@ Output be like the below.
 
 ## Group template
 
-ListView group header can be customized with the help of the [`groupTemplate`] property.
+ListView group header can be customized with the help of the [`groupTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_GroupTemplate) property.
 
 To customize the group template in your application, set your customized template string to `groupTemplate` property.
 
-In the following example, we have grouped Listview based on the category. The category of each list item should be mapped with `groupBy` field of the data. We have also displayed grouped list items count in the group list header.
+In the following example, we have grouped ListView based on the category. The category of each list item should be mapped with `groupBy` field of the data. We have also displayed grouped list items count in the group list header.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

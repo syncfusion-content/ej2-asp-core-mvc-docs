@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Render Listview With Hyper Link Navigation in ##Platform_Name## Listview Component
-description: Learn here all about Render Listview With Hyper Link Navigation in Syncfusion ##Platform_Name## Listview component of syncfusion and more.
+title: Render ListView With Hyper Link Navigation in ##Platform_Name## ListView Control
+description: Learn here all about Render ListView With Hyper Link Navigation in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Render Listview With Hyper Link Navigation
+control: Render ListView With Hyper Link Navigation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

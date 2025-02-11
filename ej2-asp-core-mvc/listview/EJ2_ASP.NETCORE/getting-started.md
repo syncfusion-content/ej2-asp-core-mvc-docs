@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Listview Control
-description: Checkout and learn about getting started with ##Platform_Name## Listview control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ListView Control
+description: Checkout and learn about getting started with ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -101,7 +101,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core ListV
 
 ## Bind dataSource
 
-After initialization, populate the ListView with data using the `dataSource` property. Here, the JSON values are passed to the ListView component.
+After initialization, populate the ListView with data using the `dataSource` property. Here, the JSON values are passed to the ListView control.
 
 The following example shows a basic ListView.
 
@@ -118,9 +118,9 @@ public class ListViewData
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Listview control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core ListView control will be rendered in the default web browser.
 
-![ASP.NET Core Listview Control](images/listview.PNG)
+![ASP.NET Core ListView Control](images/listview.PNG)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ListView/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
