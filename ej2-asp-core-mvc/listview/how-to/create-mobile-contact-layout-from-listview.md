@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Mobile Contact Layout From ListView in ##Platform_Name## ListView Control
+title: Create Mobile Contact Layout From ListView in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Create Mobile Contact Layout From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Create Mobile Contact Layout From ListView

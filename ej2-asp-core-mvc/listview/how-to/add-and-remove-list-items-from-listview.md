@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add And Remove List Items From ListView in ##Platform_Name## ListView Control
+title: Add And Remove List Items From ListView in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Add And Remove List Items From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Add And Remove List Items From ListView

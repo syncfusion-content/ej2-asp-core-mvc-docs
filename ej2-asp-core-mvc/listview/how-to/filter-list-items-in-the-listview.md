@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter list items In The ListView in ##Platform_Name## ListView Control
+title: Filter list items In The ListView in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Filter list items In The ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter list items In The ListView

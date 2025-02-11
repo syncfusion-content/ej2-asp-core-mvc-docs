@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Each List Item's Text in ##Platform_Name## ListView Control
+title: Customize Each List Item's Text in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Customize Each List Item's Text in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize Each List Item's Text in ListView

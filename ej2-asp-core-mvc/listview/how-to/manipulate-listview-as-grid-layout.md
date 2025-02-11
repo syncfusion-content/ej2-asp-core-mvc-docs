@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Manipulate ListView As Grid Layout in ##Platform_Name## ListView Control
+title: Manipulate ListView As Grid Layout in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Manipulate ListView As Grid Layout in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Manipulate ListView As Grid Layout

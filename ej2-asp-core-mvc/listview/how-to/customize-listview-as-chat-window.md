@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize ListView As Chat Window in ##Platform_Name## ListView Control
+title: Customize ListView As Chat Window in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Customize ListView As Chat Window in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize ListView As Chat Window
