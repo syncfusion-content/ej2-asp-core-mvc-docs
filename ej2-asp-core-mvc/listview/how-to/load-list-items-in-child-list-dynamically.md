@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load List Items In Child List Dynamically in ##Platform_Name## ListView Control | Syncfusion
+title: Load child list dynamically in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Load List Items In Child List Dynamically in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Load List Items In Child List Dynamically

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Spinner Until list items Are Loaded in ##Platform_Name## ListView Control | Syncfusion
+title: Show Spinner until items loaded in ##Platform_Name## ListView Control | Syncfusion
 description: Learn here all about Display Spinner Until list items Are Loaded in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Display Spinner Until list items Are Loaded
