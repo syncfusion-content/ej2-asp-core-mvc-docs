@@ -13,14 +13,14 @@
       // To insert the table in cursor position
       container.documentEditor.editor.insertTable(row, column);
       // To insert the image at table first cell
-      container.documentEditor.editor.insertImage(
-        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
+      container.documentEditor.editor.insertImageInternal(
+        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==',true,150,150
       );
       // To move the cursor to next cell
       moveCursorToNextCell();
       // To insert the image at table second cell
-      container.documentEditor.editor.insertImage(
-        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='
+      container.documentEditor.editor.insertImageInternal(
+        'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4    //8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==',true,150,150
       );
       // To move the cursor to next row
       moveCursorToNextRow();
