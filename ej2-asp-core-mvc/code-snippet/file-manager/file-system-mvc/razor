@@ -9,6 +9,6 @@
             UploadUrl = "http://localhost:{port}/FileManager/Upload",
             DownloadUrl = "http://localhost:{port}/FileManager/Download"
         }).Render()
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

@@ -6,7 +6,7 @@
 }
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare File Manager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager" view="Details">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -21,6 +21,6 @@
                 </e-detailsviewsettings-columns>
             </e-filemanager-detailsviewsettings>
         </ejs-filemanager>
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

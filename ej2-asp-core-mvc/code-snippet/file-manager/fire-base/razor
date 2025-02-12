@@ -9,6 +9,6 @@
             UploadUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeUpload",
             DownloadUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeDownload"
         }).Render()
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

@@ -8,6 +8,6 @@
             UploadUrl = "http://localhost:{port}/api/SQLProvider/SQLUpload",
             DownloadUrl = "http://localhost:{port}/api/SQLProvider/SQLDownload"
         }).Render()
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

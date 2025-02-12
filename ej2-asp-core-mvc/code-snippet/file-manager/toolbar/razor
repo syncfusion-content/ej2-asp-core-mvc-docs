@@ -3,7 +3,7 @@
 }
 <div class="control-section">
     <div class="sample-container">
-        <!--  Filemanager element declaration -->
+        <!--  Filemanager control declaration -->
         @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
         {
             Url = "/Home/FileOperations",
@@ -14,7 +14,7 @@
         {
             Items = items
         }).ToolbarClick("toolbarClick").ToolbarCreate("onCreate").Render()
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>

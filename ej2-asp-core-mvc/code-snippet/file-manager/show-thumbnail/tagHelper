@@ -1,6 +1,6 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare File Manager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager" showThumbnail="false">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -8,7 +8,7 @@
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
-        <!-- end of File Manager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <style>
