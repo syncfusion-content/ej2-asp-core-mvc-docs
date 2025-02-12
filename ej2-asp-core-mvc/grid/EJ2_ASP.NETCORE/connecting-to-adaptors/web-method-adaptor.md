@@ -2,7 +2,7 @@
 layout: post
 title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion ##Platform_Name## Grid control.
-platform: ej2-javascript
+platform: ej2-asp-core-mvc
 control: grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
 publishingplatform: ##Platform_Name##
