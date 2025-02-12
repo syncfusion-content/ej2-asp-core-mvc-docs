@@ -18,6 +18,9 @@ You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/appearance/placeholder/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Placeholder.cs" %}
+{% include code-snippet/chat-ui/appearance/placeholder/placeholder.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Placeholder](images/placeholder.png)
@@ -29,6 +32,9 @@ You can use the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/appearance/width/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Width.cs" %}
+{% include code-snippet/chat-ui/appearance/width/width.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,6 +48,9 @@ You can use the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/appearance/height/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Height.cs" %}
+{% include code-snippet/chat-ui/appearance/height/height.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Height](images/width.png)
@@ -53,6 +62,9 @@ You can customize the appearance of the Chat UI component by using the [cssClass
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/appearance/cssClass/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Cssclass.cs" %}
+{% include code-snippet/chat-ui/appearance/cssclass/cssclass.cs %}
 {% endhighlight %}
 {% endtabs %}
 
