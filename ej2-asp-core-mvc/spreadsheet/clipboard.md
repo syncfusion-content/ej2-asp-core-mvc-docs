@@ -68,7 +68,7 @@ N> If you use the Keyboard shortcut key for cut (`Ctrl + X`) | copy (`Ctrl + C`)
 {% include code-snippet/spreadsheet/clipboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipboardController.cs" %}
-{% include code-snippet/spreadsheet/clipboard/clipboardController.cs %}
+{% include code-snippet/spreadsheet/clipboard/Core/clipboardController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,7 +79,7 @@ N> If you use the Keyboard shortcut key for cut (`Ctrl + X`) | copy (`Ctrl + C`)
 {% include code-snippet/spreadsheet/clipboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipboardController.cs" %}
-{% include code-snippet/spreadsheet/clipboard/clipboardController.cs %}
+{% include code-snippet/spreadsheet/clipboard/MVC/clipboardController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,7 +97,7 @@ The following example shows, how to prevent the paste action in spreadsheet. In 
 {% include code-snippet/spreadsheet/prevent-paste/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipboardController.cs" %}
-{% include code-snippet/spreadsheet/prevent-paste/clipboardController.cs %}
+{% include code-snippet/spreadsheet/prevent-paste/Core/clipboardController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ The following example shows, how to prevent the paste action in spreadsheet. In 
 {% include code-snippet/spreadsheet/prevent-paste/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipboardController.cs" %}
-{% include code-snippet/spreadsheet/prevent-paste/clipboardController.cs %}
+{% include code-snippet/spreadsheet/prevent-paste/MVC/clipboardController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

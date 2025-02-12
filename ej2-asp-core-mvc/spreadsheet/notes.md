@@ -26,7 +26,7 @@ In the below example, you can add, edit, save, and delete notes.
 {% include code-snippet/spreadsheet/note-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs1/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs1/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,7 +37,7 @@ In the below example, you can add, edit, save, and delete notes.
 {% include code-snippet/spreadsheet/note-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs1/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs1/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -74,6 +74,7 @@ In the active worksheet, right-click on the desired cell containing the note tha
 The Spreadsheet data, including notes, can be saved and exported as an Excel document by selecting **File > Save As** in the ribbon menu. Exporting worksheets with notes is supported in Excel file formats such as MS Excel (.xlsx) and MS Excel 97-2003 (.xls).
 
 > When exporting the Spreadsheet to file formats such as Comma Separated Values (.csv), Excel Macro-Enabled Workbook (.xlsm), Excel Binary Workbook (.xlsb), and PDF Document (.pdf), the notes will not be available.
+
 ## Disabling notes
 
 To disable the note functionality, you need to set the [`enableNotes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_EnableNotes) property to **false**. After disabling, the notes in the document will not be shown when opened in the Spreadsheet. The **"Add Note"** option will not be shown in the context menu. The keyboard shortcuts for the note functionality will not work.
@@ -89,7 +90,7 @@ In the below example, the note functionality is disabled in the Spreadsheet.
 {% include code-snippet/spreadsheet/note-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs2/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs2/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,7 +101,7 @@ In the below example, the note functionality is disabled in the Spreadsheet.
 {% include code-snippet/spreadsheet/note-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs2/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs2/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -116,7 +117,7 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 {% include code-snippet/spreadsheet/note-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs3/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs3/Core/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,7 +128,7 @@ The notes can be added initially when the Spreadsheet loads using cell data bind
 {% include code-snippet/spreadsheet/note-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NotesController.cs" %}
-{% include code-snippet/spreadsheet/note-cs3/notesController.cs %}
+{% include code-snippet/spreadsheet/note-cs3/MVC/notesController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

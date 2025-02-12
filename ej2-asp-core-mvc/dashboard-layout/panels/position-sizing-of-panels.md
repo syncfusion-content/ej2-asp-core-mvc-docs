@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position Sizing Of Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Position Sizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Position Sizing Of Panels in ##Platform_Name## Dashboard Layout control
+description: Learn here all about Position Sizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Position Sizing Of Panels
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Panels
 
-Panels are the basic building blocks of the dashboard layout component. They act as a container for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
+Panels are the basic building blocks of the Dashboard Layout control. They act as a container for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
 
 The below table represents all the available panel properties and the corresponding functionalities
 
@@ -40,8 +40,8 @@ The panels within the layout can be easily positioned or ordered using the [`row
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/panel-position/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-position/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/panel-position/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,8 +69,8 @@ A panel's size can be varied easily by defining the [`sizeX`](https://help.syncf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/panel-size/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/panel-size/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/panel-size/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

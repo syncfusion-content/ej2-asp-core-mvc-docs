@@ -1,4 +1,4 @@
-@Html.EJS().Uploader("UploadFiles").Success("onSuccess").AllowedExtensions(".xls, .xlsx, .csv").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("Home/Save"), RemoveUrl = @Url.Content("Home/Remove") }).Render()
+@Html.EJS().Uploader("UploadFiles").Success("onSuccess").AllowedExtensions(".xls, .xlsx, .csv").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
 
 @Html.EJS().Spreadsheet("spreadsheet").OpenUrl("Home/Open").Render()
 

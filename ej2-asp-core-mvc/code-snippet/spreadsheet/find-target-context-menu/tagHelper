@@ -4,7 +4,7 @@
 
 <script>
 
-    function ContextMenuBeforeOpen(args) {
+    function contextMenuBeforeOpen(args) {
         if (ejs.base.closest(args.event.target, '.e-sheet-content')) {
             console.log('Cell Context Menu');
         } else if (ejs.base.closest(args.event.target, '.e-colhdr-table')) {

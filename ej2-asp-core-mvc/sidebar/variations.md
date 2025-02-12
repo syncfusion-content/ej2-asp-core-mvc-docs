@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Variations in ##Platform_Name## Sidebar Component
-description: Learn here all about Variations in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Variations in ##Platform_Name## Sidebar Control | Syncfusion
+description: Learn here all about Variations in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Variations
 publishingplatform: ##Platform_Name##
@@ -11,11 +11,11 @@ documentation: ug
 
 # Types
 
-The Sidebar component's expand behaviour can be modified based on the purpose of use.
+The Sidebar control's expand behavior can be modified based on the purpose of use.
 
 ## Expanding types of Sidebar
 
-The Sidebar can be set to initialize based on four different types that are consistent with the main component as explained below. When `dataBind` is invoked, this applies the pending property changes immediately to the component.
+The Sidebar can be set to initialize based on four different types that are consistent with the main control as explained below. When `dataBind` is invoked, this applies the pending property changes immediately to the control.
 
 | Item    | Description                                                                                                                                                       |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -26,7 +26,7 @@ The Sidebar can be set to initialize based on four different types that are cons
 
 N> [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Type.html) is the default expand mode.
 
-In the following sample, Sidebar component's expand behaviour are demonstrated.
+In the following sample, Sidebar control's expand behavior are demonstrated.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -59,5 +59,5 @@ Output be like the below.
 
 ## See Also
 
-* [How to add sidebar with custom animation](./how-to/sidebar-with-variation-animation)
-* [How to add multiple sidebar](./how-to/multiple-sidebar)
+* [How to add Sidebar with custom animation](./how-to/sidebar-with-variation-animation)
+* [How to add multiple Sidebar](./how-to/multiple-sidebar)

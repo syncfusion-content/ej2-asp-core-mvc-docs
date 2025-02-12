@@ -4,7 +4,7 @@
     .Width("100%")
     .Height("650px")
     .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.datasource })
-    .SelectedDate(new DateTime(2018, 2, 15))
+    .SelectedDate(new DateTime(2024, 2, 15))
     .AllowDragAndDrop(true)
     .AllowResizing(true)
     .ShowQuickInfo(false)

@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" toolbar="@(new List<string>() {"ExcelExport"})"
     toolbarClick="toolbarClick" excelQueryCellInfo="excelQueryCellInfo"> 
     <e-grid-columns>
         <e-grid-column headerText="Employee Image" textAlign="Center" template="#imageTemplate" width="150"></e-grid-column> 
@@ -7,7 +7,6 @@
         <e-grid-column field="EmailID" headerText="Email ID" template="#mailTemplate" width="170"></e-grid-column> 
     </e-grid-columns> 
 </ejs-grid>
-
 <style type="text/css" class="cssStyles">
     .image img {
         border-radius: 50px;
@@ -16,7 +15,6 @@
         width: 55px;
     }
 </style>
-
 <script type="text/x-template" id="imageTemplate">
     <div class="image">
         <img src="data:image/jpeg;base64,${EmployeeImage}" alt="${EmployeeID}" />
@@ -27,14 +25,12 @@
         <a href="mailto:${EmailID}">${EmailID}</a>
     </div>
 </script>
-
 <script>
     function toolbarClick(args) {
-        if (args['item'].id === 'Grid_excelexport') {
+        if (args['item'].id === 'grid_excelexport') {
             this.excelExport();
         }
     }
-
     function excelQueryCellInfo(args) {
         if (args.column.headerText === 'Employee Image') {
             args.image = {

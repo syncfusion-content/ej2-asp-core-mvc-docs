@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Chip Control
+# Getting Started with ASP.NET MVC Chips Control
 
-This section briefly explains about how to include [ASP.NET MVC Chip](https://www.syncfusion.com/aspnet-mvc-ui-controls/chips) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Chips](https://www.syncfusion.com/aspnet-mvc-ui-controls/chips) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are ava
 
 ## Add namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under **Views** folder.
 
 ```
 <namespaces>
@@ -48,7 +48,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -68,7 +68,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the **~/Pages/Shared/_Layout.cshtml** file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -82,9 +82,9 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Chip control
+## Add ASP.NET MVC Chips control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chip control in `~/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips control in **~/Home/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -94,8 +94,8 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chip c
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chip control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips control will be rendered in the default web browser.
 
-![ASP.NET MVC Chip Control](images/chip.png)
+![ASP.NET MVC Chips Control](images/chip.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chip/ASP.NET%20MVC%20Razor%20Examples).
