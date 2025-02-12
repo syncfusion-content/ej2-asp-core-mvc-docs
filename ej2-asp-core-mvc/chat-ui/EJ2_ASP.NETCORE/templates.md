@@ -20,9 +20,12 @@ You can use the [emptyChatTemplate](https://help.syncfusion.com/cr/aspnetcore-js
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/emptyChatTemplate/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="EmptyChatTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/emptyChatTemplate/defaultMessages.cs %}
+{% endhighlight %}
 {% endtabs %}
 
-![EmptyChatTemplate](images/show-header.png)
+![EmptyChatTemplate](images/emptyChatTemplate.png)
 
 ## Message template
 
@@ -31,6 +34,9 @@ You can use the [messageTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/messageTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MessageTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/messageTemplate/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -44,6 +50,9 @@ You can use the [timeBreakTemplate](https://help.syncfusion.com/cr/aspnetcore-js
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/timebreakTemplate/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="TimebreakTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/timebreakTemplate/defaultMessages.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![TimeBreakTemplate](images/timebreakTemplate.png)
@@ -55,6 +64,9 @@ You can use the [typingUsersTemplate](https://help.syncfusion.com/cr/aspnetcore-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/typingUsersTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TypingUsersTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/typingUsersTemplate/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,6 +80,9 @@ You can use the [suggestionTemplate](https://help.syncfusion.com/cr/aspnetcore-j
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/suggestionTemplate/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="SuggestionTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/suggestionTemplate/defaultMessages.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![SuggestionTemplate](images/SuggestionTemplate.png)
@@ -79,6 +94,9 @@ You can use the [footerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/templates/footerTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="FooterTemplate.cs" %}
+{% include code-snippet/chat-ui/templates/footerTemplate/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -16,6 +16,9 @@ You can use the [loadOnDemand](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/loadOnDemand/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="LoadOnDemand.cs" %}
+{% include code-snippet/chat-ui/loadOnDemand/defaultMessages.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![LoadOnDemand](images/loadOnDemand.png)
