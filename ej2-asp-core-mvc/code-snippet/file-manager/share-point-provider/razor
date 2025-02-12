@@ -1,6 +1,6 @@
 ﻿<div class="control-section">
     <div class="sample-container">
-        <!--  Initialize File Manager control with ASP.NET Core service-->
+        <!--  Initialize File Manager control with SharePoint Provider-->
         <!--Replace the hosted port number in the place of "{port}"-->
         @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
