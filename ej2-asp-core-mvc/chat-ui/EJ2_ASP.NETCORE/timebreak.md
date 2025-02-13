@@ -18,6 +18,9 @@ You can use the [showTimeBreak](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/timebreak/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Timebreak.cs" %}
+{% include code-snippet/chat-ui/timebreak/timestamp.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Timebreak](images/timebreak.png)
