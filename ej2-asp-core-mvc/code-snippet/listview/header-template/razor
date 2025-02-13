@@ -6,7 +6,12 @@
 
 }
 
-@Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.fruitsdata).ShowHeader(true).HeaderTemplate(headerTemplate).ActionComplete("renderHeaderButtons").Render()
+@Html.EJS().ListView("element")
+    .DataSource((IEnumerable<object>)ViewBag.fruitsdata)
+    .ShowHeader(true)
+    .HeaderTemplate(headerTemplate)
+    .ActionComplete("renderHeaderButtons")
+    .Render()
 
 <style>
     #element {

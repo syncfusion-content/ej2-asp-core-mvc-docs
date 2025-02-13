@@ -1,13 +1,19 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
+
 @{
     var template = "<div class='settings'>"
     + "<div id='postContainer'><div id='postImg'>"
     + "<img src=${image} style='height:35px;width:35px;border-radius:50%; border: 1px solid #ccc;' /></div>"
     + "<div id='content'><div class='name'>${Name}</div><div id='info'>${contact}</div></div></div>";
 }
-@Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { GroupBy = "category", Text = "Name" }).GroupTemplate("<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>").Template(template).Render()
 
+@Html.EJS().ListView("List")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Fields(new ListViewFieldSettings { GroupBy = "category", Text = "Name" })
+    .GroupTemplate("<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>")
+    .Template(template)
+    .Render()
 
 <style>
  .count{

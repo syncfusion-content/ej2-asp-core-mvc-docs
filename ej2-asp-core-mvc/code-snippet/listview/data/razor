@@ -1,9 +1,11 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
 @using Syncfusion.EJ2.Popups;
+
 @{
     var template = "<div class='fruits'><div class='first'><img id='listImage' src='${ imgUrl}' alt='fruit' /><button class='delete e-control e-btn e-small e-round e-delete-btn e-primary e-icon-btn' data-ripple='true'><span class='e-btn-icon e-icons delete-icon'></span></button></div><div class='fruitName'>${text}</div></div>";
 }
+
 <div id="container">
     <div class="headerContainer">
         <div class="e-input-group">
@@ -16,12 +18,25 @@
         <button id="add" class="e-control e-btn e-small e-round e-primary e-icon-btn" title="Add fruit" data-ripple="true">
             <span class="e-btn-icon e-icons e-add-icon"></span>
         </button>
-        @Html.EJS().Dialog("dialog").ShowCloseIcon(true).Buttons(ViewBag.DialogButtons).Content("<div id='listDialog'><div class='input_name'><label for='name'>Fruit Name: </label><input id='name' class='e-input' type='text' placeholder='Enter fruit name' /></div><div><label for='imgurl'>Fruit Image: </label><input id='imgurl' class='e-input' type='text' placeholder='Enter image url' /></div></div>").Header("Add fruit").Width("300px").Visible(false).Render()
-        <!-- ListView element -->
-        @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).ActionComplete("wireEvents").Template(template).SortOrder(SortOrder.Ascending).Render()
+        @Html.EJS().Dialog("dialog")
+            .ShowCloseIcon(true)
+            .Buttons(ViewBag.DialogButtons)
+            .Content("<div id='listDialog'><div class='input_name'><label for='name'>Fruit Name: </label><input id='name' class='e-input' type='text' placeholder='Enter fruit name' /></div><div><label for='imgurl'>Fruit Image: </label><input id='imgurl' class='e-input' type='text' placeholder='Enter image url' /></div></div>")
+            .Header("Add fruit")
+            .Width("300px")
+            .Visible(false)
+            .Render()
+            
+        @Html.EJS().ListView("element")
+            .DataSource((IEnumerable<object>)ViewBag.dataSource)
+            .ActionComplete("wireEvents")
+            .Template(template)
+            .SortOrder(SortOrder.Ascending)
+            .Render()
     </div>
 </div>
- <style>
+
+<style>
     #listImage {
         width: 55px;
         height: 55px;
@@ -137,6 +152,7 @@
         content: '\e83f';
     }
 </style>
+
 <script>
     var fruitsdata  = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.dataSource)));
 

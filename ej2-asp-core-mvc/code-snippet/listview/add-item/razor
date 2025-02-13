@@ -1,8 +1,17 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
+
 <div id="sample">
-    @Html.EJS().ListView("sample-list-flat").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { IconCss = "icon", Text = "text" }).ActionComplete("onComplete").Template("<div class='text-content'> ${text} <span class = 'delete-icon'></span> </div>").Render()
-    @Html.EJS().Button("btn").Content("Add Item").Render()
+    @Html.EJS().ListView("sample-list-flat")
+        .DataSource((IEnumerable<object>)ViewBag.dataSource)
+        .Fields(new ListViewFieldSettings { IconCss = "icon", Text = "text" })
+        .ActionComplete("onComplete")
+        .Template("<div class='text-content'> ${text} <span class = 'delete-icon'></span> </div>")
+        .Render()
+
+    @Html.EJS().Button("btn")
+        .Content("Add Item")
+        .Render()
 </div>
 
 <style>
