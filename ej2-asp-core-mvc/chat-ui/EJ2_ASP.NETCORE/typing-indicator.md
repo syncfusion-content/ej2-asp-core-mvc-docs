@@ -20,6 +20,9 @@ The typing users are the [UserModel](https://help.syncfusion.com/cr/aspnetcore-j
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/typingUsers/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="TypingUsers.cs" %}
+{% include code-snippet/chat-ui/typingUsers/timestamp.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![TypingUsers](images/typingUsers.png)
