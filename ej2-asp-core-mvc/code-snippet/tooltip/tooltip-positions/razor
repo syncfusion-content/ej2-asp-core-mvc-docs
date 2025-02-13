@@ -3,9 +3,13 @@
 
 <div class="tooltipcontainer">
     <div class="button-container">
-        @Html.EJS().Tooltip("Tooltip").Content("Lets go green & Save Earth !!!").Position(Syncfusion.EJ2.Popups.Position.TopCenter).ContentTemplate(@<div>
-            @Html.EJS().Button("primarybtn").Content("Show tooltip").Render()
-        </div>).Render()
+        @Html.EJS().Tooltip("Tooltip")
+            .Content("Lets go green & Save Earth !!!")
+            .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+            .ContentTemplate(@<div>
+                @Html.EJS().Button("primarybtn").Content("Show tooltip").Render()
+            </div>)
+            .Render()
     </div>
     <div class="select-container">
         <select id="positions" class="form-control" onchange="onChange(this)">

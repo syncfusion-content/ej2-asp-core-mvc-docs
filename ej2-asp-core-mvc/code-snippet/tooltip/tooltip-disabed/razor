@@ -2,11 +2,15 @@
 @using Syncfusion.EJ2.Popups
 
 <div id="tooltip">
-    @Html.EJS().Tooltip("box").Position(Syncfusion.EJ2.Popups.Position.TopCenter).Content("Tooltip from disabled element").ContentTemplate(@<div>
-        <div id="box" style="display: inline-block;">
-            <input type="button" id="disabledbutton" disabled value="Disabled button" />
-        </div>
-    </div>).Render()
+    @Html.EJS().Tooltip("box")
+        .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+        .Content("Tooltip from disabled element")
+        .ContentTemplate(@<div>
+            <div id="box" style="display: inline-block;">
+                <input type="button" id="disabledbutton" disabled value="Disabled button" />
+            </div>
+        </div>)
+        .Render()
 </div>
 
 <style>

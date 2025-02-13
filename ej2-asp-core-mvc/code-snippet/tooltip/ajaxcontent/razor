@@ -5,16 +5,25 @@
 <div id='container'>
     <h4 class="list-header">National Sports</h4>
     <!-- Tooltip element rendering for AjaxContent loading -->
-    @Html.EJS().Tooltip("Tooltip").Content("Loading...").Target("#countrylist [title]").Position(Syncfusion.EJ2.Popups.Position.RightCenter).BeforeRender("onBeforeRender").ContentTemplate(@<div>
-        @Html.EJS().ListView("countrylist").Enable(true).DataSource((IEnumerable<object>)ViewBag.data).Fields(new ListViewFieldSettings { Text = "text", Tooltip = "id" }).Render()
-    </div>).Render()
+    @Html.EJS().Tooltip("Tooltip")
+    .Content("Loading...")
+    .Target("#countrylist [title]")
+    .Position(Syncfusion.EJ2.Popups.Position.RightCenter)
+    .BeforeRender("onBeforeRender")
+    .ContentTemplate(@<div>
+        @Html.EJS().ListView("countrylist")
+            .Enable(true)
+            .DataSource((IEnumerable<object>)ViewBag.data)
+            .Fields(new ListViewFieldSettings { Text = "text", Tooltip = "id" })
+            .Render()
+    </div>)
+    .Render()
 </div>
 
 
 <script>
   function onBeforeRender(args) {
             var _this = this;
-            this.content = 'Loading...';
             this.dataBind();
             var fetchApi = new ej.base.Fetch("@Url.Content("~/Scripts/tooltip/tooltipdata.json")", 'GET');
             fetchApi.send().then(function (result) {

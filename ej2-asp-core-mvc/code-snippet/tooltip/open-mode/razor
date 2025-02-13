@@ -1,12 +1,44 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
 
-@Html.EJS().Tooltip("hover").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpensOn("Hover").Content("Tooltip from hover").ContentTemplate(@<div id="tooltiphover" class="blocks"><span>Hover Me !(Default)</span></div>).Render()
-@Html.EJS().Tooltip("click").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpensOn("Click").Content("Tooltip from Click").ContentTemplate(@<div id="tooltipclick" class="blocks"><span>Click Me !</span></div>).Render()
-@Html.EJS().Tooltip("focus").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpensOn("Focus").Content("Tooltip from focus").Target(".e-info").ContentTemplate(@<div class="blocks"><span><input class="e-info" id="tooltipfocus" type="text" placeholder="Focus and blur" /></span></div>).Render()
-@Html.EJS().Tooltip("custom").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpensOn("Custom").Content("Tooltip from custom mode").ContentTemplate(@<div id="tooltipcustom" class="blocks">
-    @Html.EJS().Button("open").Content("Click to open tooltip manually").Render()
-</div>).Render()
+@Html.EJS().Tooltip("hover")
+    .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+    .OpensOn("Hover")
+    .Content("Tooltip from hover")
+    .ContentTemplate(@<div id="tooltiphover" class="blocks">
+        <span>Hover Me !(Default)</span>
+    </div>)
+    .Render()
+
+@Html.EJS().Tooltip("click")
+    .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+    .OpensOn("Click")
+    .Content("Tooltip from Click")
+    .ContentTemplate(@<div id="tooltipclick" class="blocks">
+        <span>Click Me !</span>
+    </div>)
+    .Render()
+
+@Html.EJS().Tooltip("focus")
+    .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+    .OpensOn("Focus")
+    .Content("Tooltip from focus")
+    .Target(".e-info")
+    .ContentTemplate(@<div class="blocks">
+        <span>
+            <input class="e-info" id="tooltipfocus" type="text" placeholder="Focus and blur" />
+        </span>
+    </div>)
+    .Render()
+
+@Html.EJS().Tooltip("custom")
+    .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+    .OpensOn("Custom")
+    .Content("Tooltip from custom mode")
+    .ContentTemplate(@<div id="tooltipcustom" class="blocks">
+        @Html.EJS().Button("open").Content("Click to open tooltip manually").Render()
+    </div>)
+    .Render()
 
 <style>
     #hover, #click, #focus, #custom, #open {

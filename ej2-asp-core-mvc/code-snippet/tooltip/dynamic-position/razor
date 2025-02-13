@@ -3,8 +3,12 @@
 
 <div class="control-section">
         <!-- Tooltip element -->
-        @Html.EJS().Tooltip("targetContainer").Content("Drag me").Target("#demoSmart").ContentTemplate(@<div id="demoSmart">
-        </div>).Render()
+        @Html.EJS().Tooltip("targetContainer")
+            .Content("Drag me")
+            .Target("#demoSmart")
+            .ContentTemplate(@<div id="demoSmart">
+            </div>)
+            .Render()
 </div>
 
 <script type="text/javascript">

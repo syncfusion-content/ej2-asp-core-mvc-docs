@@ -1,8 +1,14 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
 
-@Html.EJS().Tooltip("tooltip").Position(Syncfusion.EJ2.Popups.Position.TopCenter).OpenDelay(1000).CloseDelay(1000).Content("Tooltip with delay").ContentTemplate(@<div id="target">
-Show tooltip</div>).Render()
+@Html.EJS().Tooltip("tooltip")
+    .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+    .OpenDelay(1000).CloseDelay(1000)
+    .Content("Tooltip with delay")
+    .ContentTemplate(@<div id="target">
+        Show tooltip
+    </div>)
+    .Render()
 
 <style>
     #target {

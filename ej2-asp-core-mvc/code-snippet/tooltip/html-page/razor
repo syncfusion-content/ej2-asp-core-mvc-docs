@@ -8,7 +8,16 @@
 <div id='container'>
     <div id="tooltipContent">
         <div class="content">
-            @Html.EJS().Tooltip("target").CssClass("e-tooltip-css").OpensOn("Click").Width("350").Height("250").Content(content).ContentTemplate(@<button class="text e-btn e-primary e-outline" id="iframeContent">Embedded Iframe</button>).Render()
+            @Html.EJS().Tooltip("target")
+                .CssClass("e-tooltip-css")
+                .OpensOn("Click")
+                .Width("350")
+                .Height("250")
+                .Content(content)
+                .ContentTemplate(@<button class="text e-btn e-primary e-outline" id="iframeContent">
+                    Embedded Iframe
+                </button>)
+                .Render()
         </div>
     </div>
 </div>

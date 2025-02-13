@@ -10,11 +10,16 @@
 
 }
 <div id="container">
-    @Html.EJS().Tooltip("target").Position(Syncfusion.EJ2.Popups.Position.TopCenter).CssClass("customtooltip").Content(content).ContentTemplate(@<div id="tooltipContent">
-        <div class="content">
-            <button class="text" id="Title">HTML(With Title)</button>
-        </div>
-    </div>).Render()
+    @Html.EJS().Tooltip("target")
+        .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+        .CssClass("customtooltip")
+        .Content(content)
+        .ContentTemplate(@<div id="tooltipContent">
+            <div class="content">
+                <button class="text" id="Title">HTML(With Title)</button>
+            </div>
+        </div>)
+        .Render()
 </div>
 
 <style>

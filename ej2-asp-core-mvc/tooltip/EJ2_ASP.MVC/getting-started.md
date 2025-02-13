@@ -91,7 +91,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Toolti
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div style='display: inline-flex; position: relative; left: 50%; transform: translateX(-50%); margin-top: 100px;'>    
-    @Html.EJS().Tooltip("Tooltip").Content("Lets go green & Save Earth !!!").Position(Syncfusion.EJ2.Popups.Position.TopCenter).ContentTemplate(@<span id='target'>Show Tooltip</span>).Render()
+    @Html.EJS().Tooltip("Tooltip")
+        .Content("Lets go green & Save Earth !!!")
+        .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+        .ContentTemplate(@<span id='target'>
+            Show Tooltip
+        </span>)
+        .Render()
 </div>
 
 {% endhighlight %}
