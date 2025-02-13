@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Format in ##Platform_Name## Document Editor Component
+title: Text Format in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about text format in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Format
@@ -116,6 +116,19 @@ documenteditor.selection.characterFormat.fontSize= 32;
 
 ## Color
 
+### Change Font Color by UI Option
+
+In the Document Editor, the Text Properties pane features two icons for managing text color within the user interface (UI):
+
+* **Colored Box:** This icon visually represents the **current color** applied to the selected text.
+* **Text (A) Icon:** Clicking this icon allows users **to modify the color** of the selected text by choosing a new color from the available options.
+
+This Font Color option appear as follows.
+
+![Font Color](images/fontColor.PNG)
+
+### Change Font Color by Code
+
 The color of selected text can be get or set using the following code.
 
 ```typescript
@@ -149,7 +162,9 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% include code-snippet/document-editor/text-format/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/text-format/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -158,7 +173,9 @@ documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 {% include code-snippet/document-editor/text-format/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/text-format/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
