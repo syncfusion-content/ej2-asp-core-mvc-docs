@@ -1,12 +1,12 @@
 <div>
-    <!-- Declare button element -->
+    <!-- Declare button control -->
     <ejs-button id="enable" content="Enable New Folder toolbar item" cssClass="e-success"></ejs-button>
     <ejs-button id="disable" content="Disabe New Folder toolbar item" cssClass="e-danger"></ejs-button>
-    <!-- end of button element -->
+    <!-- end of button control -->
 </div>
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare filemanager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager" view="Details">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -14,7 +14,7 @@
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>

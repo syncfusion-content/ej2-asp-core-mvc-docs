@@ -10,7 +10,7 @@ documentation: ug
 
 # Nested FileManager
 
-FileManager can be rendered inside other components like Tab, Dialog, and more.
+FileManager can be rendered inside other controls like Tab, Dialog, and more.
 
 * [Adding File Manager inside the dialog](#adding-file-manager-inside-the-dialog)
 * [Adding  File Manager inside the tab](#adding-file-manager-inside-the-tab)
@@ -35,9 +35,6 @@ The following example shows the File Manager control rendered inside the dialog.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/file-dialog/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/file-dialog/HomeController_core.cs %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController_mvc.cs" %}
 {% include code-snippet/file-manager/file-dialog/HomeController_mvc.cs %}
