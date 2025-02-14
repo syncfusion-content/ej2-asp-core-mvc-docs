@@ -1,0 +1,19 @@
+<ejs-grid id="grid" allowSorting="true" height="348px"  load="load">
+  <e-data-manager url="http://services.odata.org/V4/Northwind/Northwind.svc/Orders/?$top=7" adaptor="ODataV4Adaptor" crossdomain="true"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" foreignKeyValue="ContactName" foreignKeyField="CustomerID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script> 
+    var data = new ej.data.DataManager({ 
+        url: 'http://services.odata.org/V4/Northwind/Northwind.svc/Customers', 
+        adaptor: new ej.data.ODataV4Adaptor, 
+        crossDomain: true 
+    }); 
+    function load(args) { 
+       this.getColumns()[1].dataSource = data; 
+    } 
+</Script> 
