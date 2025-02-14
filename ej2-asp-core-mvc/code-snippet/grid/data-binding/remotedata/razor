@@ -1,13 +1,96 @@
-@Html.EJS().Grid("RemoteData").DataSource(dataManger =>
-{
-    dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("ODataV4Adaptor");
+  @Html.EJS().Grid("grid").Height("348px").AllowExcelExport().AllowPdfExport().AllowPaging().Columns(col =>
+  {
+      col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+      col.Field("CustomerName").HeaderText("Customer Name").Width("150").Add();
+      col.Field("ProductID").HeaderText("Product ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+      col.Field("ProductName").HeaderText("Product Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+  }).DataStateChange("dataStateChange").ExcelExportComplete("exportComplete").PdfExportComplete("exportComplete").ToolbarClick("toolbarClick").Created("created").Toolbar(new List<string>() { "ExcelExport", "PdfExport" }).Render()
+  <
+  <script>
+      const baseUrl = "https://localhost:44339/Home";// Here xxxx denotes the port number.
+  var gridData;
+  var state = {
+      skip: 0,
+      take: 12
+  };
+  function exportComplete() {
+      const grid = document.getElementById("grid").ej2_instances[0];
+      grid.hideSpinner(); // hide the spinner when export completed
+  }
+  // triggers at initial render of the Grid
+  function created() {
+      // initial state needs to be sent manually
+      dataStateChange(state);
+  }
+  function dataStateChange(state) {
+      const grid = document.getElementById("grid").ej2_instances[0];
 
-}).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("160").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+      getOrders(state).then((event) => {
+          grid.dataSource = event.result; // Assign the result to the data property
+      });
+  }
+  function toolbarClick(args) {
+      const grid = document.getElementById("grid").ej2_instances[0];
 
-}).AllowPaging().Render()
+      let state = { action: {}, skip: 0, take: grid.pageSettings.totalRecordsCount };
+      switch (args.item.text) {
+          case "PDF Export":
+              grid.showSpinner(); // show the spinner when send the post to service
+              state.action.isPdfExport = true;
+              // fetch the entire data while PDF exporting
+              getOrders(state).then((event) => {
+                  let pdfExportProperties = {
+                      dataSource: event.result.result
+                  };
+                  grid.pdfExport(pdfExportProperties); // need to call pdfExport method of grid when get the entire data
+              });
+              break;
+          case "Excel Export":
+              // fetch the entire data while Excel exporting
+              grid.showSpinner();// show the spinner when send the post to service
+              state.action.isExcelExport = true;
+              getOrders(state).then((event) => {
+                  let excelExportProperties = {
+                      dataSource: event.result.result
+                  };
+                  grid.excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+              });
+              break;
+      }
+  }
+  function getOrders(state, action) {
+      const query = new ej.data.Query();
+      // page
+      applyPaging(query, state)
+      query.isCountRequired = true
+      var fetchRequest = new ej.base.Fetch({
+          url: `${baseUrl}/GetOrderData`,
+          type: 'POST'
+      })
+      return fetchRequest.send()
+          .then(data => {
+              // Create a DataManager instance with your fetched data
+              gridData = new ej.data.DataManager(data.result);
+              // Execute local data operations using the provided query
+              const result = gridData.executeLocal(query);
+              // Return the result along with the count of total records
+              return {
+                  result: result, // Result of the data
+                  count: result.count // Total record count based on fetched data length
+              };
+          });
+  }
+  const applyPaging = (query, state) => {
+      // Check if both 'take' and 'skip' values are available
+      if (state.take && state.skip) {
+          // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+          const pageSkip = state.skip / state.take + 1;
+          const pageTake = state.take;
+          query.page(pageSkip, pageTake);
+      }
+      // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+      else if (state.skip === 0 && state.take) {
+          query.page(1, state.take);
+      }
+  }
+  </script>
