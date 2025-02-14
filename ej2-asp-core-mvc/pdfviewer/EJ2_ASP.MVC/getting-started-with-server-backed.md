@@ -436,3 +436,7 @@ N> For hosting the web service on the Linux platform, ensure to include the [Ski
 | --- | --- |
 | AWS Lambda|[SkiaSharp.NativeAssets.Linux](https://nuget.org/packages/SkiaSharp.NativeAssets.Linux/2.88.6)|
 | AWS Elastic Beanstalk |[SkiaSharp.NativeAssets.Linux.NoDependencies v2.88.6](https://www.nuget.org/packages/SkiaSharp.NativeAssets.Linux.NoDependencies/2.88.6)|
+
+## See also
+
+* [Comparing Server Mode and Standalone Mode in Pdfviewer control](./comparing-server-mode-and-standalone-mode)
