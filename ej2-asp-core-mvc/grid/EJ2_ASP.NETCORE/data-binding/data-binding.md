@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Grid Control | Syncfusion
+title: Data Binding in Syncfusion ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -128,3 +128,20 @@ For this we need to install **Microsoft.AspNetCore.Mvc.NewtonsoftJson** package.
             });
            }
 ```
+
+## How to set custom headers using a custom adaptor in Syncfusion Grid
+
+Custom headers allow you to send extra information along with your HTTP requests. This information can include authentication tokens, API keys, or any other data required by the server to process the request correctly. By adding custom headers, you can enhance the security and functionality of your application's data communication process.
+
+This section explains how to integrate custom headers into Syncfusion Grid using the `beforeSend` method of the `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/custom-headers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-headers.cs" %}
+{% include code-snippet/grid/data-binding/custom-headers/custom-headers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom headers using custom adaptor](images/custom-headers.png)
