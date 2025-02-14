@@ -1,7 +1,8 @@
 @using Syncfusion.EJ2.Layouts
 
-@Html.EJS().Timeline("Timeline").BeforeItemRender("function(args) { beforeItemRenderEvent(args) }").Items(ViewBag.productLifecycle).Render()
-
+<div id="container" style="height: 250px;">
+    @Html.EJS().Timeline("Timeline").BeforeItemRender("function(args) { beforeItemRenderEvent(args) }").Items(ViewBag.productLifecycle).Render()
+</div>
 <script>
     function beforeItemRenderEvent(args) {
         // your required action here..

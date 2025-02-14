@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.InteractiveChat;
-@using Newtonsoft.Json
+@using Newtonsoft.Json;
 
 <div style="height:380px; width:450px">
     <ejs-chatui id="chatUser" created="onCreated" showTimeStamp=false>
@@ -9,7 +9,7 @@
 
 <script>
     var chatUIObj;
-    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(Model.ChatMessagesData));
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(ViewBag.ChatMessagesData));
     chatMessages.forEach(message => {
         message.timeStamp = new Date(message.timeStamp);
     });

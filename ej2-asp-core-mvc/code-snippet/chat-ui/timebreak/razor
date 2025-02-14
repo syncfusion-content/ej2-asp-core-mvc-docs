@@ -1,5 +1,5 @@
-@using Syncfusion.EJ2.InteractiveChat
-@using Newtonsoft.Json
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
 
 <div class="chatui-container" style="height:380px; width:450px">
     @Html.EJS().ChatUI("chatUser").ShowTimeBreak(true).Created("onCreated").User(ViewBag.CurrentUser).Render()
