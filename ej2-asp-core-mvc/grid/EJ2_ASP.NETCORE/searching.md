@@ -255,6 +255,21 @@ The following example demonstrates how to clear the searched records using an ex
 
 > You can also clear the searched records by using the clear icon within the search input field.
 
+## How to retrieve searched records using a button click
+
+To retrieve the searched records in a Syncfusion Grid on a button click, the search string from the toolbar search must be captured during the [actionComplete](../api/grid/#actionComplete) event, which triggers on searching. This captured search string can then be used with the DataManager's `executeQuery` method to filter and retrieve the corresponding data. Below is an example implementation:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/retrieve-records/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="retrieve-records.cs" %}
+{% include code-snippet/grid/search/retrieve-records/retrieve-records.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Retrieve searched records](images/search/retrieve-records.png)
+
 ## See also
 
 * [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
