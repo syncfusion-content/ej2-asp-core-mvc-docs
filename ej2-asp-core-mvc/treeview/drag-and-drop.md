@@ -49,7 +49,7 @@ In the following sample, the [allowDragAndDrop](https://help.syncfusion.com/cr/a
 {% include code-snippet/treeview/draganddrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Draganddrop.cs" %}
-{% include code-snippet/treeview/draganddrop/draganddrop.cs %}
+{% include code-snippet/treeview/draganddrop/draganddrop-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -86,7 +86,7 @@ In the following sample,  the `allowMultiSelection` property is  enabled along w
 {% include code-snippet/treeview/draganddrop/multidraganddrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Draganddrop.cs" %}
-{% include code-snippet/treeview/draganddrop/multidraganddrop/draganddrop.cs %}
+{% include code-snippet/treeview/draganddrop/multidraganddrop/draganddrop-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
