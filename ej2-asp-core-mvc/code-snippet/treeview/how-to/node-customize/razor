@@ -2,11 +2,11 @@
    @Html.EJS().TreeView("treedata").CssClass("mytree").Fields(field=>
     field.Id("nodeId").ParentID("pid").Text("nodeText").HasChildren("hasChild").Expanded("expanded")
     .Child(ViewBag.child).DataSource(ViewBag.dataSource)).Render()
-    <label>Note:</label>
-    <div><b>1. The font-weight "Bold" is applied for all the leaf nodes</b></div>
-    <div><i>2. The font-weight "Italic" is applied for first level nodes</i></div>
-    <div style="color: darkmagenta">3. The color "darkmagenta" is applied for second level nodes</div>
 </div>
+<label>Note:</label>
+<div><b>1. The font-weight "Bold" is applied for all the leaf nodes</b></div>
+<div><i>2. The font-weight "Italic" is applied for first level nodes</i></div>
+<div style="color: darkmagenta">3. The color "darkmagenta" is applied for second level nodes</div>
 
  <style>
     #treeparent {
