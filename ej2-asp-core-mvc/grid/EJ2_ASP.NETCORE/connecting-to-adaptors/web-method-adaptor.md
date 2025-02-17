@@ -154,7 +154,7 @@ After running the application, you can verify that the server-side API controlle
 
 ![WebMethodAdaptor-data](../images/adaptors/url-adaptor-data.jpeg)
 
-## Connecting syncfusion grid to an api service
+## Connecting Syncfusion ASP.NET Core Grid to an API service
 
 To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -263,25 +263,9 @@ app.MapRazorPages();
 app.MapControllers();
 ```
 
-Additionally, comment out the following line in the `launchSettings.json` file:
-
-```json
-    "https": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-     // "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-```
-
 **Step 7:** Run the Project
 
 Now, run the project to see the Syncfusion Grid connected to the API service in action.
-
 
 ![WebMethodAdaptor](../images/adaptors/adaptor.gif)
 
@@ -521,11 +505,11 @@ public class DataManager
 
 ## Handling CRUD operations
 
-The Syncfusion ASP.NET Core Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the grid to communicate with the data service for every grid action, facilitating server-side operations.
+The Syncfusion ASP.NET Core Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
-CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
+CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
 
 1. **insertUrl**: Specifies the URL for inserting new data.
 2. **removeUrl**: Specifies the URL for removing existing data.

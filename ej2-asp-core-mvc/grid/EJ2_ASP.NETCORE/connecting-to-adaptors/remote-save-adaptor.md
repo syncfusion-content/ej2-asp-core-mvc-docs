@@ -237,7 +237,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
-## Connecting syncfusion grid to an api service
+## Connecting Syncfusion ASP.NET Core Grid to an API service
 
 To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -318,7 +318,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page. The Syncfusion Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
-***CRUD Operations Mapping:*** CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
+***CRUD Operations Mapping:*** CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
 
 * **insertUrl**: Specifies the URL for inserting new data.
 * **removeUrl**: Specifies the URL for removing existing data.
