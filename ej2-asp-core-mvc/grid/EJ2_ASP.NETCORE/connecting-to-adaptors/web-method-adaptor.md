@@ -261,7 +261,7 @@ var app = builder.Build();
 
 app.MapRazorPages();
 app.MapControllers();
-
+```
 **Step 7:** Run the Project
 
 Now, run the project to see the Syncfusion Grid connected to the API service in action.
