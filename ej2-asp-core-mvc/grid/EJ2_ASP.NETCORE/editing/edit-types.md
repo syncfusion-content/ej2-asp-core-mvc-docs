@@ -225,6 +225,23 @@ The following sample code demonstrates the customization applied to DatePicker c
 
 ![Customize date picker edit type](../images/editing/datepicker-edit-type.png)
 
+### Disable the date value prior to the selected date value in DatePicker control
+
+The Syncfusion Grid allows configuring the [DatePicker](../../datepicker) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+
+The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/hide-date/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="hide-date.cs" %}
+{% include code-snippet/grid/edit/hide-date/hide-date.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Disable the date value](../images/editing/hide-date.png)
+
 ## Customize DateTimePicker component of datetimepickeredit type 
 
 You can customize the DateTimePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the `columns->edit->params` property.
