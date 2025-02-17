@@ -5,7 +5,7 @@
 }
 <div class=" control-section">
     <div class="sample-container">
-        <!--  Filemanager element declaration -->
+        <!--  Filemanager control declaration -->
         <ejs-filemanager id="file" menuOpen="menuOpen" menuClick="menuClick">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -15,7 +15,7 @@
             <e-filemanager-contextmenusettings file="files" folder="folder" layout="layout">
             </e-filemanager-contextmenusettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>

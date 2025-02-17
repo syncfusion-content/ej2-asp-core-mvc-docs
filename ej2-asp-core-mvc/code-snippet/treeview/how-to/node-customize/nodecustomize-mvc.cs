@@ -9,7 +9,7 @@ namespace EJ2CoreSampleBrowser.Controllers.TreeView
 {
     public partial class TreeViewController : Controller
     {
-        public IActionResult DefaultFunctionalities()
+        public ActionResult CustomizeNodes()
         {
 
             List<Parentitem> parentitem = new List<Parentitem>();
