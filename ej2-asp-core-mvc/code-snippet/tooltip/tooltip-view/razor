@@ -4,9 +4,7 @@
 @Html.EJS().Tooltip("target")
     .CssClass("customtooltip")
     .Content("Tooltip customized")
-    .ContentTemplate(@<text>
-        Show tooltip
-    </text>)
+    .ContentTemplate(@<text> Show tooltip </text>)
     .Render()
 
 <style>

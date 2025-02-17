@@ -6,11 +6,7 @@
     .Height("50px")
     .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
     .Content("Tooltip with specific width and height")
-    .ContentTemplate(@<div>
-        <div>
-            <span id='target'>Show Tooltip</span>
-        </div>
-    </div>)
+    .ContentTemplate(@<div><div><span id='target'>Show Tooltip</span></div></div>)
     .Render()
 
 

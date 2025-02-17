@@ -5,11 +5,7 @@
     .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
     .MouseTrail(true)
     .Content("Tooltip content")
-    .ContentTemplate(@<div>
-        <div id="target" style="margin: 50px;">
-            Show tooltip
-        </div>
-    </div>)
+    .ContentTemplate(@<div><div id="target" style="margin: 50px;">Show tooltip</div></div>)
     .Render()
 
 <style>

@@ -4,9 +4,7 @@
 @Html.EJS().Tooltip("tooltip")
     .Content("Tooltip content")
     .OpensOn("Custom")
-    .ContentTemplate(@<div id="target">
-        Show tooltip
-    </div>)
+    .ContentTemplate(@<div id="target">Show tooltip</div>)
     .Created("created")
     .Render()
 

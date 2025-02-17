@@ -15,8 +15,7 @@
                 .Height("250")
                 .Content(content)
                 .ContentTemplate(@<button class="text e-btn e-primary e-outline" id="iframeContent">
-                    Embedded Iframe
-                </button>)
+                    Embedded Iframe</button>)
                 .Render()
         </div>
     </div>

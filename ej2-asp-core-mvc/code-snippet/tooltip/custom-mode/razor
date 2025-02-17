@@ -5,9 +5,7 @@
     .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
     .OpensOn("Custom")
     .Content("Tooltip from custom mode")
-    .ContentTemplate(@<div id="box">
-        Double-click to open Tooltip.
-    </div>)
+    .ContentTemplate(@<div id="box">Double-click to open Tooltip.</div>)
     .Created("created")
     .Render()
 

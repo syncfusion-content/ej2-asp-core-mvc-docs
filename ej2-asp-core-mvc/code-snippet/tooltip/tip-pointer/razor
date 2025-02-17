@@ -4,11 +4,7 @@
 @Html.EJS().Tooltip("Tooltip")
     .Content("Tooltip content")
     .TipPointerPosition(Syncfusion.EJ2.Popups.TipPointerPosition.Start)
-    .ContentTemplate(@<div>
-        <div id='target'>
-            <span>Show Tooltip</span>
-        </div>
-    </div>)
+    .ContentTemplate(@<div><div id='target'><span>Show Tooltip</span></div></div>)
     .Render()
 
 <style>

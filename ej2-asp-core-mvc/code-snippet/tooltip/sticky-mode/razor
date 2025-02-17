@@ -5,9 +5,7 @@
     .IsSticky(true)
     .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
     .Content("Click close icon to close me")
-    .ContentTemplate(@<div id="target">
-        Show tooltip
-    </div>)
+    .ContentTemplate(@<div id="target">Show tooltip</div>)
     .Render()
 
 <style>

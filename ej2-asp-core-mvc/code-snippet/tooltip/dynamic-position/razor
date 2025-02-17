@@ -6,8 +6,7 @@
         @Html.EJS().Tooltip("targetContainer")
             .Content("Drag me")
             .Target("#demoSmart")
-            .ContentTemplate(@<div id="demoSmart">
-            </div>)
+            .ContentTemplate(@<div id="demoSmart"></div>)
             .Render()
 </div>
 

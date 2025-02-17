@@ -7,9 +7,7 @@
     .MouseTrail(true)
     .ShowTipPointer(false)
     .Content("Tooltip content")
-    .ContentTemplate(@<div>
-        <div id="target">Show tooltip</div>
-    </div>)
+    .ContentTemplate(@<div><div id="target">Show tooltip</div></div>)
     .Render()
 
 <style>

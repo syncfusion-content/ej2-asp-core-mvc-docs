@@ -5,9 +5,7 @@
     .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
     .OpenDelay(1000).CloseDelay(1000)
     .Content("Tooltip with delay")
-    .ContentTemplate(@<div id="target">
-        Show tooltip
-    </div>)
+    .ContentTemplate(@<div id="target">Show tooltip</div>)
     .Render()
 
 <style>

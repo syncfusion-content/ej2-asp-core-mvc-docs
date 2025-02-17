@@ -7,9 +7,7 @@
             .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
             .Content("Tooltip arrow customized")
             .CssClass("curvetips e-tooltip-css")
-            .ContentTemplate(@<button id="target">
-                Customized Tip Arrow
-            </button>)
+            .ContentTemplate(@<button id="target">Customized Tip Arrow</button>)
             .Render()
         <div id="positions">
             <ul>
@@ -37,9 +35,7 @@
             .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
             .Content("Tooltip arrow customized as balloon tip")
             .CssClass("bubbletip e-tooltip-css")
-            .ContentTemplate(@<button id="bubbletip">
-                Bubble Tip Arrow
-            </button>)
+            .ContentTemplate(@<button id="bubbletip">Bubble Tip Arrow</button>)
             .Render()
         <div id="btn">
             <ul>
@@ -67,9 +63,7 @@
             .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
             .Content("Disabled tooltip pointer")
             .CssClass("pointertip e-tooltip-css")
-            .ContentTemplate(@<button id="tooltip">
-                Disabled Tip Arrow
-            </button>)
+            .ContentTemplate(@<button id="tooltip">Disabled Tip Arrow</button>)
             .Render()
     </div>
 </div>
