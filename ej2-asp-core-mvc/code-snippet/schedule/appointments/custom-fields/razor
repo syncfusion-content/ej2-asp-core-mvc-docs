@@ -5,7 +5,7 @@
         es.Fields(f =>
             f.Subject(sub => sub.Name("TravelSummary"))
             .Id("TravelId")
-            .IsBlock("isBlock")
+            .IsBlock("IsDisabled")
             .IsAllDay(allday => allday.Name("FullDay"))
             .Location(loc => loc.Name("Source"))
             .Description(des => des.Name("Comments"))

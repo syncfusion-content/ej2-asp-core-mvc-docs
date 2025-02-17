@@ -30,7 +30,7 @@ public List<AppointmentData> GetScheduleData()
         Comments = "Conference on emerging technologies.",
         Origin = "Asia/Yekaterinburg",
         Destination = "Asia/Yekaterinburg",
-        isBlock = true
+        IsDisabled = true
     });
     return appData;
 }
@@ -46,5 +46,5 @@ public class AppointmentData
     public string Comments { get; set; }
     public string Origin { get; set; }
     public string Destination { get; set; }
-    public Boolean isBlock {get; set;}
+    public Boolean IsDisabled {get; set;}
 }
