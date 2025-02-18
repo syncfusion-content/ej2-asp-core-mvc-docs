@@ -217,6 +217,25 @@ To implement on-demand server-side actions with a DataTable, you need to:
 {% endhighlight %}
 {% endtabs %}
 
+## DataTable with CRUD operations
+
+The Syncfusion ASP.NET Core Grid component supports server-side CRUD (Create, Read, Update, Delete) operations using a DataTable as the underlying data source. This feature is particularly useful for applications that require dynamic data management with efficient performance and scalability.
+
+To perform server-side CRUD operations for a DataTable, you need to utilize the **InsertUrl**, **UpdateUrl**, and **RemoveUrl** properties of the **DataManager**. These properties allow you to specify the controller actions for inserting, updating, and deleting records.
+
+When passing data from the client side to the server side during CRUD operations, use **ExpandoObject** as a parameter for the insert and update actions. This approach allows you to handle dynamic data structures effectively.
+
+Here’s a sample implementation demonstrating how to set up the Syncfusion Grid component for CRUD operations with a DataTable:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/cruddatatable/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dataoperation.cs" %}
+{% include code-snippet/grid/data-binding/cruddatatable/dataoperation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Troubleshoot: Grid render rows without data
 
 In ASP.NET Core, by default the JSON results are returned in camelCase format. So grid field names are also changed in camelCase.
