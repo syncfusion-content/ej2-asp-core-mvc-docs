@@ -140,7 +140,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/listview/getting-started">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started-asp-mvc">Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/getting-started">Splitter</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/getting-started/">Dashboard</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/card/getting-started">Card</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/avatar/getting-started-asp-mvc">Avatar</a></div>
     </td>
@@ -180,7 +180,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timepicker/getting-started">TimePicker</a></div>
         <div><p class="controlcategory">INPUTS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/getting-started">TextBox</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/getting-started/">Input Mask</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/maskedtextbox/getting-started">Input Mask</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/getting-started">Numeric TextBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/radio-button/getting-started">RadioButton</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/check-box/getting-started">CheckBox</a></div>
