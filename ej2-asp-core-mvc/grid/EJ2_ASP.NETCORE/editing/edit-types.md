@@ -393,7 +393,7 @@ The following example demonstrates how to render images in the DropDownList edit
 {% endhighlight %}
 {% endtabs %}
 
-![Render drop down list component with image](../images/editing/dropdown-with-image.png)
+![Render drop down list component with image](../images/editing/dropdown-with-image.jpeg)
 
 ### Render Multiple columns in DropDownList component  
 
