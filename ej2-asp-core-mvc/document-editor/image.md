@@ -20,7 +20,8 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,7 +30,8 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
