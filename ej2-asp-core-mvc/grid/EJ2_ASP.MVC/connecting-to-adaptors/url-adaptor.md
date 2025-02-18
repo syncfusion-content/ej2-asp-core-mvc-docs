@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data and perform CRUD action with UrlAdaptor in ##Platform_Name## Grid Component
+title: Bind data & perform CRUD with UrlAdaptor in Syncfusion Grid
 description: Learn here all about Bind data and perform CRUD action with UrlAdaptor in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: grid
