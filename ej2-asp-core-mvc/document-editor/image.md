@@ -63,4 +63,4 @@ DocumentEditor preserves the position properties of the image and displays the i
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)
