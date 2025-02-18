@@ -96,16 +96,12 @@ public class HomeController : Controller
     // ✅ Delete action
     public ActionResult Delete(int key)
     {
-
-
         var rowToDelete = ordersTable.AsEnumerable()
                                 .FirstOrDefault(row => row.Field<int>("OrderID") == key);
-
         if (rowToDelete != null)
         {
             ordersTable.Rows.Remove(rowToDelete);
         }
-
         return Json(new { Key = key }, JsonRequestBehavior.AllowGet);
     }
 }
