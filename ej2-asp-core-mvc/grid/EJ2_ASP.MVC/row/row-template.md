@@ -10,7 +10,7 @@ documentation: ug
 
 # Row template in ASP.NET MVC Grid component
 
-The row template feature in Grid allows you to customize the appearance and layout of rows in the grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
+The row template feature in Grid allows you to customize the appearance and layout of rows in the Grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
 
 To enable the row template feature, you need to set the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property of the Grid component. This property accepts a custom HTML template that defines the layout for each row. 
 
@@ -29,7 +29,7 @@ In the following example, Employee Information with Employee Photo is presented 
 
 ## Row template with formatting
 
-The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the layout of rows in the grid. This is useful when you want to display images, buttons, or other custom content within the rows of a grid.
+The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the layout of rows in the Grid. This is useful when you want to display images, buttons, or other custom content within the rows of a Grid.
 
 By default, Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides the `Columns.Format` property to format the values displayed in each column. However, when using the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate), the `Columns.Format` property cannot be directly applied to format the values inside the template.
 
@@ -52,7 +52,7 @@ Here is an example of how to define a global formatting function for a date colu
 
 ## Render syncfusion<sup style="font-size:70%">&reg;</sup> control in row template
 
-The Grid allows you to render custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the grid. This feature is helpful as it enables you to display interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the grid.
+The Grid allows you to render custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the Grid. This feature is helpful as it enables you to display interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the Grid.
 
 To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, you need to set the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property of the Grid component. This property accepts a custom HTML template that defines the layout for each row. 
 
@@ -69,13 +69,13 @@ Here is an example that demonstrates rendering Syncfusion<sup style="font-size:7
 
 ![Row Template](../images/row/row-template-component.png)
 
-## Render syncfusion<sup style="font-size:70%">&reg;</sup> chart control in row template
+## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Chart in row template
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides the flexibility to include custom controls, such as charts, within the rows of the grid. This feature enhances the grid interactivity by enabling you to display visual data representations by displaying graphical representations of data instead of plain text.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides the flexibility to include custom controls, such as Charts, within the rows of the Grid. This feature enhances the Grid interactivity by enabling you to display visual data representations by displaying graphical representations of data instead of plain text.
 
-To render a Syncfusion<sup style="font-size:70%">&reg;</sup> chart within a row template of the Grid, you can utilize the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property. This property accepts a custom HTML template that specifies the layout for each row, allowing for rich data visualization.
+To render a Syncfusion<sup style="font-size:70%">&reg;</sup> Chart within a row template of the Grid, you can utilize the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property. This property accepts a custom HTML template that specifies the layout for each row, allowing for rich data visualization.
 
-Here is an example that demonstrates rendering Syncfusion chart control within a row template :
+Here is an example that demonstrates rendering Syncfusion Chart control within a row template :
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -90,7 +90,7 @@ Here is an example that demonstrates rendering Syncfusion chart control within a
 
 ## Limitations
 
-Row template feature is not compatible with all the features which are available in the grid, and it has limited features support. The features that are incompatible with the row template feature are listed below.
+Row template feature is not compatible with all the features which are available in the Grid, and it has limited features support. The features that are incompatible with the row template feature are listed below.
 
 * Filtering
 * Paging
