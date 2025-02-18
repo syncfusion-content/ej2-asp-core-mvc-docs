@@ -2,9 +2,12 @@
 @using Syncfusion.EJ2.Popups
 
 <div class="control-section">
-    <!-- Tooltip element -->
-    @Html.EJS().Tooltip("targetContainer").Position(Syncfusion.EJ2.Popups.Position.TopCenter).Content("Drag me!!!").Target("#demoSmart").ContentTemplate(@<div id="demoSmart">
-    </div>).Render()
+    @Html.EJS().Tooltip("targetContainer")
+        .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+        .Content("Drag me!!!")
+        .Target("#demoSmart")
+        .ContentTemplate(@<div id="demoSmart"></div>)
+        .Render()
 </div>
 
 
@@ -13,7 +16,6 @@
     window.onload = function () {
         ele = document.getElementById('demoSmart');
         tooltip = document.getElementById("targetContainer").ej2_instances[0];
-        ////Initialize Draggable for tooltip element
         var drag = new ej.base.Draggable(ele, {
             clone: false,
             dragArea: '#targetContainer',

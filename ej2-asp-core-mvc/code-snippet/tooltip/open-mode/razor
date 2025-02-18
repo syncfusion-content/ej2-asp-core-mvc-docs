@@ -36,7 +36,9 @@
     .OpensOn("Custom")
     .Content("Tooltip from custom mode")
     .ContentTemplate(@<div id="tooltipcustom" class="blocks">
-        @Html.EJS().Button("open").Content("Click to open tooltip manually").Render()
+        @Html.EJS().Button("open")
+            .Content("Click to open tooltip manually")
+            .Render()
     </div>)
     .Render()
 

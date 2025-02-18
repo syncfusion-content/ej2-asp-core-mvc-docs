@@ -7,17 +7,13 @@
             @Html.EJS().Tooltip("target01")
                 .OpensOn("Hover")
                 .Content("Tooltip from hover")
-                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="tooltiphover">
-                    Hover me!(Default)
-                </button>)
+                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="tooltiphover">Hover me!(Default)</button>)
                 .Render()
 
             @Html.EJS().Tooltip("target02")
                 .OpensOn("Click")
                 .Content("Tooltip from click")
-                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="tooltipclick">
-                    Click me!
-                </button>)
+                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="tooltipclick">Click me!</button>)
                 .Render()
         </div>
         <br /><br />
@@ -26,9 +22,7 @@
                 .OpensOn("Click")
                 .Content("Click close icon to close me")
                 .IsSticky(true)
-                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="Mode">
-                    Sticky Mode
-                </button>)
+                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="Mode">Sticky Mode</button>)
                 .Render()
 
             @Html.EJS().Tooltip("target4")
@@ -36,9 +30,7 @@
                 .Content("Opens and closes Tooltip with delay of <i>1000 milliseconds</i>")
                 .OpenDelay(1000)
                 .CloseDelay(1000)
-                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="openMode">
-                    Tooltip with delay
-                </button>)
+                .ContentTemplate(@<button class="blocks e-btn e-primary e-outline" id="openMode">Tooltip with delay</button>)
                 .Render()
         </div>
         <br /><br />
