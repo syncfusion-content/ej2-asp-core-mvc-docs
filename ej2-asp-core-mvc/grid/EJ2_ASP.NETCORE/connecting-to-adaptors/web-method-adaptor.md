@@ -3,7 +3,7 @@ layout: post
 title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion ##Platform_Name## Grid control.
 platform: ej2-asp-core-mvc
-control: grid
+control: Grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -16,11 +16,11 @@ The WebMethodAdaptor in Syncfusion ASP.NET Core Grid facilitates data binding fr
 
 ![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
-This section describes a step-by-step process for retrieving data using WebMethodAdaptor, then binding it to the ASP.NET Core Grid control to facilitate data and CRUD operations.
+This section describes a step-by-step process for retrieving data using **WebMethodAdaptor**, then binding it to the ASP.NET Core Grid control to facilitate data and CRUD operations.
 
 ## Creating an API service
 
-To configure a server with Syncfusion ASP.NET Core Grid, you need to follow the below steps:
+To configure a server with Syncfusion ASP.NET Core Grid, follow the steps below:
 
 **1. Project Creation:**
 
@@ -150,11 +150,11 @@ namespace WebMethodAdaptor.Controllers
 
 Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
 
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
+After running the application, you can verify that the server-side API controller is successfully returning the order data at the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
 ![WebMethodAdaptor-data](../images/adaptors/url-adaptor-data.jpeg)
 
-## Connecting Syncfusion ASP.NET Core Grid to an API service
+## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
 To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -184,7 +184,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 **Step 3:** Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -215,9 +215,9 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4:** Register Syncfusion Script Manager
+**Step 4:** Register Syncfusion Script Manager:
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -231,7 +231,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** Add ASP.NET Core Grid control
+**Step 5:** Add ASP.NET Core Grid Control:
 
 Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
 
@@ -249,7 +249,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
 {% endhighlight %}
 {% endtabs %}
 
-**Step 6:** Configure the server
+**Step 6:** Configure the server:
 
 In the `Program.cs` file of your project, configure the server to serve static files by adding the following code:
 
@@ -262,8 +262,7 @@ var app = builder.Build();
 app.MapRazorPages();
 app.MapControllers();
 ```
-
-**Step 7:** Run the Project
+**Step 7:** Run the Project:
 
 Now, run the project to see the Syncfusion Grid connected to the API service in action.
 
@@ -281,8 +280,7 @@ Now, run the project to see the Syncfusion Grid connected to the API service in 
     }
     ```
 
-
-## Handling searching operation
+## Handling Searching Operation
 
 To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object
 
@@ -332,7 +330,7 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 {% endhighlight %}
 {% endtabs %}
 
-## Handling filtering operation
+## Handling Filtering Operation
 
 To handle filtering operation, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -392,7 +390,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling sorting operation
+## Handling Sorting Operation
 
 To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -447,7 +445,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling paging operation
+## Handling Paging Operation
 
 To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -503,7 +501,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling CRUD operations
+## Handling CRUD Operations
 
 The Syncfusion ASP.NET Core Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
@@ -557,7 +555,7 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert operation:**
+**Insert Operation:**
 
 To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
 
@@ -583,7 +581,7 @@ public void Insert([FromBody] CRUDModel<OrdersDetails> newRecord)
 }
 ```
 
-**Update operation:**
+**Update Operation:**
 
 For updating existing records, utilize the `updateUrl` property to specify the controller action mapping URL for the update operation. The updated record details are bound to the **updatedRecord** parameter.
 
@@ -619,7 +617,7 @@ public void Update([FromBody] CRUDModel<OrdersDetails> updatedRecord)
 }
 ```
 
-**Delete operation**
+**Delete Operation**
 
 To delete existing records, use the `removeUrl` property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
@@ -647,7 +645,7 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 
 ![WebMethodAdaptor CRUD operations](../images/adaptors/adaptor-crud-operation.gif)
 
-**Single method for performing all CRUD operations**
+**Single Method for Performing All CRUD Operations**
 
 Using the `crudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
 
@@ -698,7 +696,7 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 }
 ```
 
-**Batch operation**
+**Batch Operation**
 
 To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
