@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Spanning in ASP.NET Core Grid Component
 
-The grid has option to span the adjacent cells. You need to define the **colSpan** attribute to span cells in the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+The Grid has option to span the adjacent cells. You need to define the **colSpan** attribute to span cells in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
 
 In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 10.00 A.M. so that the cells have been spanned.
 
@@ -39,7 +39,7 @@ In the following demo, employee **Davolio** is doing testing from 9.00 A.M. to 1
 
 ## Limitations
 
-* Column spanning is not compatible with the following features:
+* Column Spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
     3. Grouping
