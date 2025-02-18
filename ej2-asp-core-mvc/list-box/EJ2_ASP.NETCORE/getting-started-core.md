@@ -4,7 +4,7 @@ title: Getting Started with ##Platform_Name## ListBox Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## ListBox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
-publishingplatform: ##Platform_Name##
+publishingplatform: aspnet-core
 documentation: ug
 ---
 
