@@ -3,9 +3,7 @@
 
 @Html.EJS().Tooltip("Tooltip")
     .Content("Lets go green & Save Earth !!!")
-    .ContentTemplate(@<span id='target'>
-        Show Tooltip
-    </span>)
+    .ContentTemplate(@<span id='target'>Show Tooltip</span>)
     .Position(Position.TopCenter)
     .Render()
  
