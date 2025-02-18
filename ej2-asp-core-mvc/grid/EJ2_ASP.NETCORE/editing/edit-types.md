@@ -181,7 +181,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
 {% endhighlight %}
 {% endtabs %}
 
-![Customize dropdown edit type](../images/editing/dropdown-popup.gif)
+![Customize dropdown edit type](../images/editing/dropdown-popup.png)
 
 ## Customize CheckBox component of booleanedit type 
 
@@ -471,7 +471,7 @@ The following example demonstrates how to render a MultiSelect component in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Render multiselect component](../images/editing/render-multiselect-dropdown.gif)
+![Render multiselect component](../images/editing/render-multiselect-dropdown.jpeg)
 
 ### Render RichTextEditor component in edit form
 
@@ -492,7 +492,7 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% endhighlight %}
 {% endtabs %}
 
-![Render richtext editor component](../images/editing/render-richtext-editor.gif)
+![Render richtext editor component](../images/editing/render-richtext-editor.jpeg)
 
 ### Render Upload component in edit form  
 
@@ -511,7 +511,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 {% endhighlight %}
 {% endtabs %}
 
-![Render Upload component in edit form](../images/editing/edit-types-upload.gif)
+![Render Upload component in edit form](../images/editing/edit-types-upload.jpeg)
 
 ### Render AutoComplete component in edit form 
 
