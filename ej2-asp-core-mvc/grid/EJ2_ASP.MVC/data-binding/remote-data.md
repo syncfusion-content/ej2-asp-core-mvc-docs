@@ -613,13 +613,13 @@ The following screenshot represents the grid action with custom binding
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net MVC Grid component allows you to export all records, including those from multiple pages, by configuring the `pdfExportProperties` and `excelExportProperties`.
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net MVC Grid component allows you to export all records, including those from multiple pages, by configuring the `PdfExportProperties` and `ExcelExportProperties`.
 
 To export all records, including those from multiple pages, configure the `PdfExportProperties.DataSource` for PDF exporting and `ExcelExportProperties.DataSource` for Excel exporting within the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event handler. Inside this event, set the `DataSource` property of `PdfExportProperties` and `ExcelExportProperties` for PDF and Excel exporting to include all records.
 
 **Excel Exporting**
 
-To export the complete Grid data to Excel document, utilize the `ExcelExportProperties.dataSource` when initiating the Excel export. Use the following code snippet to export all records within the Grid:
+To export the complete Grid data to Excel document, utilize the `ExcelExportProperties.DataSource` when initiating the Excel export. Use the following code snippet to export all records within the Grid:
 
 ```typescript
   const grid = document.getElementById("grid").ej2_instances[0];
