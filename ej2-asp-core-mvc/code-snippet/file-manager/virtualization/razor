@@ -4,10 +4,10 @@
     @Html.EJS().FileManager("filemanager").AjaxSettings(
                new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
                 {
-                   Url = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations",
-                   DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download",
-                   UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload",
-                   GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage"
+                    Url = "https://ej2-aspcore-service.azurewebsites.net/api/Virtualization/FileOperations",
+                    DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/Virtualization/Download",
+                    UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/Virtualization/Upload",
+                    GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/Virtualization/GetImage"
                }).EnableVirtualization(true).Render()
 </div>
 </div>

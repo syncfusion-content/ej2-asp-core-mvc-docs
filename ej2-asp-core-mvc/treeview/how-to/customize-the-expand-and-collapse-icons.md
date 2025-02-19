@@ -30,7 +30,7 @@ You can customize the TreeView's expand and collapse icons by using the [`cssCla
 {% include code-snippet/treeview/how-to/customize/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customize.cs" %}
-{% include code-snippet/treeview/how-to/customize/customize.cs %}
+{% include code-snippet/treeview/how-to/customize/customize-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

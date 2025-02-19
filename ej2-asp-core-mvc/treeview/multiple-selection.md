@@ -37,7 +37,7 @@ N> Multi selection is not applicable through touch interactions.
 {% include code-snippet/treeview/mutiselection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multiselection.cs" %}
-{% include code-snippet/treeview/mutiselection/multiselection.cs %}
+{% include code-snippet/treeview/mutiselection/multiselection-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
