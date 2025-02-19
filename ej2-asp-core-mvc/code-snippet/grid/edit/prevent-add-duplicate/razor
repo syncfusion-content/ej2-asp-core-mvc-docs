@@ -1,0 +1,37 @@
+@Html.EJS().Grid("CustomValid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Load("load").Created("created").ActionBegin("actionBegin").Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    var grid;
+    function created() {
+        grid = this;
+    }
+    function orderIdCustomValidation(args) {
+        return (grid.dataSource).every((data) => {
+            return data['OrderID'] + '' !== args['value'] || data['OrderID'] === grid.editModule.editModule.args.rowData['OrderID']
+        });
+    };
+    var orderIDRules = {
+        required: true,
+        min: [orderIdCustomValidation, 'The entered value already exists in the column OrderID. Please enter a unique value.']
+    };
+    function load(args) {
+        this.columns[1].validationRules = { required: true };
+    }
+    function actionBegin(args) {
+        if (args.requestType === 'save') {
+            grid.editModule.formObj.addRules('OrderID', orderIDRules); // Add form validation rules dynamically.
+            if (!grid.editModule.formObj.validate()) { // Check dynamically added validation rules.
+                args.cancel = true; // Prevent adding duplicate data action.
+            }
+            grid.editModule.formObj.removeRules('OrderID'); // Remove form validation rules dynamically.
+        }
+    }
+</script>

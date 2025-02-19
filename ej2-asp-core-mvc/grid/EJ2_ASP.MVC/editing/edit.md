@@ -192,6 +192,23 @@ In the following code example, the Employee Name is a foreign key column. When e
 | -------------- | ------------- |
 | ![Foreign key column edit](../images/editing/on-foreign-key-column-editing.png) | ![After foreign key column edit](../images/editing/after-foreign-key-column-editing.png) |
 
+## How to prevent adding duplicate rows in Grid with custom validation
+
+The Syncfusion Grid allows you to enforce constraints to prevent the addition of duplicate rows by customizing the validation logic directly within the Grid setup. This customization is achieved by handling custom validation rules or by implementing a custom validation function within the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event specifically for the `save` **requestType**. This approach allows you to intercept the save action and cancel it if necessary through the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event arguments.
+
+For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method on `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
+
+In the following code example, the OrderID serves as a primary key column. When attempting to add a new row, the Grid employs custom validation to ensure that duplicate OrderID values are not added. This validation includes displaying a tooltip message to provide immediate feedback to the user regarding the validation status.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/customvalidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## How to perform CRUD action externally 
 
 Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
