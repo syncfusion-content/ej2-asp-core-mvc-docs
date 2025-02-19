@@ -15,12 +15,12 @@ The file system provider allows the File Manager control to manage the files and
 
 The following file providers are added in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager control.
 
-* [ASP.NET Core file system provider](#aspnet-core-file-system-provider)
+* [Physical file system provider](#physical-file-system-provider)
 * [ASP.NET MVC 5 file system provider](#aspnet-mvc-5-file-system-provider)
-* [ASP.NET Core Azure cloud file system Provider](#aspnet-core-azure-cloud-file-system-provider)
+* [Azure cloud file system Provider](#azure-cloud-file-system-provider)
 * [ASP.NET MVC 5 Azure cloud file system Provider](#aspnet-mvc-5-azure-cloud-file-system-provider)
 * [Amazon S3 cloud file system provider](#amazon-s3-cloud-file-system-provider)
-* [ASP.NET Core SharePoint file provider](#aspnet-core-SharePoint-file-provider)
+* [SharePoint file provider](#SharePoint-file-provider)
 * [File Transfer Protocol file system provider](#file-transfer-protocol-file-system-provider)
 * [SQL database file system provider](#sql-database-file-system-provider)
 * [NodeJS file system provider](#nodejs-file-system-provider)
@@ -28,9 +28,9 @@ The following file providers are added in Syncfusion<sup style="font-size:70%">&
 * [Firebase Realtime Database file system provider](#firebase-realtime-database-file-system-provider)
 * [IBM Cloud Object Storage provider](#ibm-cloud-object-storage-file-provider)
 
-## ASP.NET Core file system provider
+## Physical file system provider
 
-The ASP.NET Core file system provider allows the users to access and manage the physical file system. To get started, clone the [ej2-aspcore-file-provider](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider) using the following command.
+The Physical file system provider allows the users to access and manage the physical file system. To get started, clone the [ej2-aspcore-file-provider](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -67,7 +67,7 @@ After setting the root directory of the file system, just build and run the proj
 
 
 
-N> To learn more about file actions that can be performed with ASP.NET Core file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
+N> To learn more about file actions that can be performed with Physical file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider#key-features)
 
 ## ASP.NET MVC 5 file system provider
 
@@ -110,9 +110,9 @@ After setting the root directory of the file system, just build and run the proj
 
 N> To learn more about file actions that can be performed with ASP.NET MVC 5 file system provider, refer to this [link](https://github.com/SyncfusionExamples/ej2-aspmvc-file-provider#key-features).
 
-## ASP.NET Core Azure cloud file system Provider
+## Azure cloud file system Provider
 
-In ASP.NET Core, Azure file system provider allows the users to access and manage the blobs in the Azure blob storage. To get started, clone the [azure-aspcore-file-provider](https://github.com/SyncfusionExamples/azure-aspcore-file-provider) using the following command.
+The Azure file system provider allows the users to access and manage the blobs in the Azure blob storage. To get started, clone the [azure-aspcore-file-provider](https://github.com/SyncfusionExamples/azure-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -163,7 +163,7 @@ After setting the blob container references, build and run the project. The proj
 
 
 
-N> To learn more about file actions that can be performed with ASP.NET Core Azure cloud file system provider, refer to this [link](https://github.com/SyncfusionExamples/azure-aspcore-file-provider#key-features)
+N> To learn more about file actions that can be performed with Azure cloud file system provider, refer to this [link](https://github.com/SyncfusionExamples/azure-aspcore-file-provider#key-features)
 
 ## ASP.NET MVC 5 Azure cloud file system Provider
 
@@ -222,7 +222,7 @@ N> To learn more about file actions that can be performed with ASP.NET MVC 5 Azu
 
 ## Amazon S3 cloud file system provider
 
-In ASP.NET Core, Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows the users to access and manage a server hosted file system as collection of objects stored in the Amazon S3 Bucket. To get started, clone the [amazon-s3-aspcore-file-provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command.
+The Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows the users to access and manage a server hosted file system as collection of objects stored in the Amazon S3 Bucket. To get started, clone the [amazon-s3-aspcore-file-provider](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -267,9 +267,9 @@ After registering the Amazon client account details, just build and run the proj
 
 N> To learn more about the file actions that can be performed with Amazon S3 Cloud File System provider, refer to this [link](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider#key-features).
 
-## ASP.NET Core SharePoint file provider
+## SharePoint file provider
 
-The ASP.NET Core SharePoint file provider allows users to access and manage files within Microsoft SharePoint. To get started, clone the [SharePoint-aspcore-file-provider](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider) using the following command.
+The SharePoint file provider allows users to access and manage files within Microsoft SharePoint. To get started, clone the [SharePoint-aspcore-file-provider](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider) using the following command.
 
 ```typescript
 
@@ -342,7 +342,7 @@ After configuring the SharePoint file provider, build and run the project. Now, 
 {% endif %}
 
 
-N> **Note:** To learn more about the file actions that can be performed with ASP.NET Core SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
+N> **Note:** To learn more about the file actions that can be performed with SharePoint file provider, refer to this [link](https://github.com/SyncfusionExamples/sharepoint-aspcore-file-provider#key-features)
 
 ## File Transfer Protocol file system provider
 
