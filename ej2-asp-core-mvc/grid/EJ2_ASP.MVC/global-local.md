@@ -142,7 +142,36 @@ The following example demonstrates the Grid in **Deutsch** culture.
 {% endtabs %}
 {% endif %}
 
+### Set different locale for two grids in same page
 
+The Syncfusion Grid allows you to use different locales for multiple grids on the same page. You can achieve this by setting the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property for each grid individually.
+
+In the following example, the first grid is configured to use the French **de-DE** locale. This is achieved by setting the locale property to **de-DE** and loading the French translation object using the **L10n.load** function from the **ej2-base** module. For the second grid, the locale property is set to **en-US**, which applies the default English locale.
+
+This setup demonstrates how to display/apply different locale texts for each grid on the same page by configuring the [locale](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property individually and loading the necessary translations.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/globalization/two-localization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Localization.cs" %}
+{% include code-snippet/grid/globalization/two-localization/localization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/globalization/two-localization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Localization.cs" %}
+{% include code-snippet/grid/globalization/two-localization/localization.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Internationalization
 
