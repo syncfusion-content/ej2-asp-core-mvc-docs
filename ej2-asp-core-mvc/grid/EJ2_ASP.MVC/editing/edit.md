@@ -192,7 +192,36 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% endtabs %}
 {% endif %}
 
+## How to prevent adding duplicate rows in grid with custom validation
 
+The Syncfusion Grid allows you to enforce constraints to prevent adding duplicate rows by customizing the validation logic directly within the grid setup. This customization is achieved by handling custom validation rules or by implementing a custom validation function within the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event specifically for the `save` **requestType**. This approach allows you to intercept the save action and cancel it if necessary through the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event arguments.
+
+For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method on `Ajax/Fetch` success function to display the grid's tooltip validation for the server side as well.
+
+In the following code example, the OrderID serves as a primary key column. When attempting to add a new row, the grid employs custom validation to ensure that duplicate OrderID values are not added. This validation includes displaying a tooltip message to provide immediate feedback to the user regarding the validation status.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/customvalidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/customvalidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Troubleshoot editing works only for first row
 
