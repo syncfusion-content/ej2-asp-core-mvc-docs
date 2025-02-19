@@ -277,7 +277,7 @@ To change the default icons, add the following CSS styles to your **index.html**
         }
     .e-grid .e-icon-gdownarrow::before,
         .e-grid-menu .e-icon-gdownarrow::before {
-            content: '\e934';
+            content: '\e7d8';
         }
 
 ```
