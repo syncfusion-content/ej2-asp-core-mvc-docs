@@ -58,28 +58,28 @@ public class IndexModel : PageModel
         }
         if (dict.TryGetValue("value", out var jsonElementObj) && jsonElementObj is JsonElement jsonElement)
         {
-            // Deserialize the JSON object into a Dictionary
+            // Deserialize the JSON object into a Dictionary.
             var orderData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(jsonElement.GetRawText());
-            if (orderData == null) // Check if the deserialization failed
+            if (orderData == null) // Check if the deserialization failed.
             {
                 return new JsonResult(new { error = "Deserialization failed. Invalid JSON structure." });
             }
-            DataRow newRow = ordersTable.NewRow(); // Create a new DataRow for the new entry
-            // Map fields from the incoming data to the DataRow
+            DataRow newRow = ordersTable.NewRow(); // Create a new DataRow for the new entry.
+            // Map fields from the incoming data to the DataRow.
             foreach (var col in ordersTable.Columns.Cast<DataColumn>())
             {
-                if (orderData.TryGetValue(col.ColumnName, out var val)) // Check if the column exists in the incoming data
+                if (orderData.TryGetValue(col.ColumnName, out var val)) // Check if the column exists in the incoming data.
                 {
-                    // If the value is null in the incoming data, set it to DBNull, otherwise convert it to the appropriate type
+                    // If the value is null in the incoming data, set it to DBNull, otherwise convert it to the appropriate type.
                     newRow[col.ColumnName] = val.ValueKind == JsonValueKind.Null
-                        ? DBNull.Value // Assign DBNull for null values
+                        ? DBNull.Value // Assign DBNull for null values.
                         : Convert.ChangeType(val.ToString(), col.DataType);
                 }
             }
-            // Insert the new row at the top of the DataTable
+            // Insert the new row at the top of the DataTable.
             ordersTable.Rows.InsertAt(newRow, 0);
         }
-        return new JsonResult(value); // Return the inserted value as a JSON response
+        return new JsonResult(value); // Return the inserted value as a JSON response.
     }
 
     public JsonResult OnPostUpdate([FromBody] ExpandoObject value)
@@ -90,47 +90,47 @@ public class IndexModel : PageModel
         }
         if (dict.TryGetValue("value", out var jsonElementObj) && jsonElementObj is JsonElement jsonElement)
         {
-            // Deserialize the JSON object into a Dictionary
+            // Deserialize the JSON object into a Dictionary.
             var orderData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(jsonElement.GetRawText()) ?? new Dictionary<string, JsonElement>();
 
-            // Check if the OrderID is present and is a number
+            // Check if the OrderID is present and is a number.
             if (orderData.TryGetValue("OrderID", out var orderIdElement) && orderIdElement.ValueKind == JsonValueKind.Number)
             {
-                int orderId = orderIdElement.GetInt32(); // Get the OrderID as an integer
-                                                         // Find the row to update based on OrderID
+                int orderId = orderIdElement.GetInt32(); // Get the OrderID as an integer.
+                                                         // Find the row to update based on OrderID.
                 var rowToUpdate = ordersTable.AsEnumerable().FirstOrDefault(row => row.Field<int>("OrderID") == orderId);
 
-                if (rowToUpdate != null) // If the row exists
+                if (rowToUpdate != null) // If the row exists.
                 {
-                    // Iterate over the columns of the DataTable
+                    // Iterate over the columns of the DataTable.
                     foreach (var col in ordersTable.Columns.Cast<DataColumn>())
                     {
-                        if (orderData.TryGetValue(col.ColumnName, out var val)) // Check if the column exists in the incoming data
+                        if (orderData.TryGetValue(col.ColumnName, out var val)) // Check if the column exists in the incoming data.
                         {
-                            // If the value is null in the incoming data, set it to DBNull, otherwise convert it to the appropriate type
+                            // If the value is null in the incoming data, set it to DBNull, otherwise convert it to the appropriate type.
                             rowToUpdate[col.ColumnName] = val.ValueKind == JsonValueKind.Null
-                                ? DBNull.Value // Assign DBNull for null values
+                                ? DBNull.Value // Assign DBNull for null values.
                                 : Convert.ChangeType(val.ToString(), col.DataType);
                         }
                     }
                 }
             }
         }
-        return new JsonResult(value); // Return the updated value as a JSON response
+        return new JsonResult(value); // Return the updated value as a JSON response.
     }
     public JsonResult OnPostDelete([FromBody] CRUDModel key)
     {
         if (key.key.HasValue)
         {
-            // Find the row to delete based on OrderID
+            // Find the row to delete based on OrderID.
             var rowToDelete = ordersTable.AsEnumerable()
                                       .FirstOrDefault(row => row.Field<int>("OrderID") == (int)key.key);
             if (rowToDelete != null)
             {
-                ordersTable.Rows.Remove(rowToDelete); // Remove the row from the DataTable
+                ordersTable.Rows.Remove(rowToDelete); // Remove the row from the DataTable.
             }
         }
-            return new JsonResult(key); // Returns the entire key object
+            return new JsonResult(key); // Returns the entire key object.
     }
 }
 public class CRUDModel

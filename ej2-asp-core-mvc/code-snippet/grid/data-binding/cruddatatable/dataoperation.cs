@@ -7,7 +7,7 @@ public class HomeController : Controller
     {
         return View();
     }
-    // ✅ Method to populate the DataTable with initial data
+    // Method to populate the DataTable with initial data.
     private static DataTable GetData()
     {
         DataTable dt = new DataTable();
@@ -34,7 +34,7 @@ public class HomeController : Controller
         return dt;
     }
 
-    // ✅ Data Source for Syncfusion Grid
+    // Data Source for Syncfusion Grid.
     public ActionResult UrlDatasource(DataManagerRequest dm)
     {
         IEnumerable DataSource = Utils.DataTableToJson(ordersTable);
@@ -52,7 +52,7 @@ public class HomeController : Controller
 
         return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
     }
-    // ✅ Insert action (Adding new record at the **top**)
+    // Insert action (Adding new record at the **top**).
     public ActionResult Insert(ExpandoObject value)
     {
         if (value != null)
@@ -66,12 +66,12 @@ public class HomeController : Controller
             newRow["Freight"] = dict.ContainsKey("Freight") ? Convert.ToDouble(dict["Freight"]) : 0;
             newRow["ShipCity"] = dict.ContainsKey("ShipCity") ? dict["ShipCity"].ToString() : string.Empty;
 
-            ordersTable.Rows.InsertAt(newRow, 0); // Insert at the top
+            ordersTable.Rows.InsertAt(newRow, 0); // Insert at the top.
         }
 
         return Json(value, JsonRequestBehavior.AllowGet);
     }
-    // ✅ Update action
+    // Update action.
     public ActionResult Update(ExpandoObject value)
     {
         if (value != null)
@@ -93,7 +93,7 @@ public class HomeController : Controller
 
         return Json(value, JsonRequestBehavior.AllowGet);
     }
-    // ✅ Delete action
+    // Delete action
     public ActionResult Delete(int key)
     {
         var rowToDelete = ordersTable.AsEnumerable()

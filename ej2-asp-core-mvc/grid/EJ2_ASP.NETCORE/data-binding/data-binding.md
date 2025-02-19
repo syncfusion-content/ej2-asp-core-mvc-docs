@@ -10,7 +10,7 @@ documentation: ug
 
 # Data binding in ASP.NET Core Grid component
 
-Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
+Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
 The Syncfusion Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
@@ -22,9 +22,9 @@ It supports two kinds of data binding methods:
 
 ## Loading indicator
 
-The Syncfusion ASP.NET Core Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
+The Syncfusion ASP.NET Core Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the Grid current state and actions, such as sorting, filtering, grouping, and more.
 
-To achieve this, you can utilize the `loadingIndicator.indicatorType` property of the grid, which supports two types of indicators:
+To achieve this, you can utilize the `loadingIndicator.indicatorType` property of the Grid, which supports two types of indicators:
 
 * Spinner (default indicator)
 * Shimmer
@@ -44,7 +44,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
 
 ## Refresh the datasource using property
 
-Refreshing the data source in a Syncfusion Grid involves updating the data that the grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
+Refreshing the data source in a Syncfusion Grid involves updating the data that the Grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
 
 To achieve this, you can make use of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or component reload.
 
@@ -78,15 +78,15 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-The Grid component in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the grid's content and structure without requiring a complete page reload.
+The Grid component in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
 To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
 
-You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the grid. The code below provides an example of how to create a data source for the grid.
+You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a data source for the Grid.
 
 ```typescript
     export let data= [
@@ -104,7 +104,7 @@ You can assign a JavaScript object array to the [dataSource](https://help.syncfu
     }];
 ```
 
-The following code demonstrates how to create the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) for the grid, which are based on the provided grid data source.
+The following code demonstrates how to create the [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) for the Grid, which are based on the provided Grid data source.
 
 ```typescript
     newColumn= [
@@ -122,9 +122,9 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify the existing columns in a grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
+To modify the existing columns in a Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
 
-The following code demonstrates how to add new columns with existing grid columns ('newColumn') by using `changeDataSource` method.
+The following code demonstrates how to add new columns with existing Grid columns ('newColumn') by using `changeDataSource` method.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -138,9 +138,9 @@ The following code demonstrates how to add new columns with existing grid column
 
 **3. Modify only the data source:**
 
-You can change the entire data source in the grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the grid. If you are not specifying the columns, the grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
+You can change the entire data source in the Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
 
-You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the grid. The code below provides an example of how to create a new data source for the grid.
+You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a new data source for the Grid.
 
 ```typescript
      export let employeeData = [
@@ -158,7 +158,7 @@ You can assign a JavaScript object array to the [dataSource](https://help.syncfu
     }];
 ```
 
-The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the grid.
+The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the Grid.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -183,7 +183,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 
 The DataTable feature represents a structured table with relational data, equipped with an in-built schema that simplifies working with data column and row objects. This allows for a more intuitive way to manage and display complex data in the Syncfusion Grid.
 
-To bind a DataTable to the Syncfusion Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
+To bind a DataTable to the Syncfusion Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, Grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
 
 Here's how to bind a `DataTable` to the Syncfusion Grid:
 
@@ -200,12 +200,14 @@ N> `DataTable` will be supported from .Net Core 2.0.
 
 ### DataTable with on-demand Grid actions
 
-The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Grid enables server-side processing of grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
 
 To implement on-demand server-side actions with a DataTable, you need to:
 
 1. Convert the `DataTable` to an **IEnumerable** object.
-2. Use the **DataOperations** class in the controller to process grid actions like sorting, filtering, and paging.
+
+2. Use the **DataOperations** class in the controller to process Grid actions like sorting, filtering, and paging.
+
 3. Return the result as a JSON object with a **result** (data) and **count** (total record count) pair.
 
 {% tabs %}
@@ -232,13 +234,13 @@ Here’s a sample implementation demonstrating how to set up the Syncfusion Grid
 {% include code-snippet/grid/data-binding/cruddatatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dataoperation.cs" %}
-{% include code-snippet/grid/data-binding/cruddatatable/dataoperation.cs %}
+{% include code-snippet/grid/data-binding/cruddatatable/dataoperationcore.css %}
 {% endhighlight %}
 {% endtabs %}
 
 ## Troubleshoot: Grid render rows without data
 
-In ASP.NET Core, by default the JSON results are returned in camelCase format. So grid field names are also changed in camelCase.
+In ASP.NET Core, by default the JSON results are returned in camelCase format. So Grid field names are also changed in camelCase.
 
 To avoid this problem, you need to add **DefaultContractResolver** in **Startup.cs** file.
 

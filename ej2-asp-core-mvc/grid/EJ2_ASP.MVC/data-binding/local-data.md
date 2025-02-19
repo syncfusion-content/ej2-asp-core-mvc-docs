@@ -10,7 +10,7 @@ documentation: ug
 
 # Local data in ASP.NET MVC Grid component
 
-The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
+The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid component. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
@@ -29,7 +29,7 @@ The following example demonstrates how to utilize the local data binding feature
 
 ## Data binding with SignalR 
 
-The syncfusion Grid provides support for real-time data binding using SignalR, allowing you to update the grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
+The syncfusion Grid provides support for real-time data binding using SignalR, allowing you to update the Grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
 To achieve real-time data binding with SignalR in your Syncfusion ASP.NET MVC Grid, follow the steps below:
 
@@ -70,20 +70,20 @@ namespace SignalR.Controllers
             List<string> str = new List<string>();
             if (dm.Search != null && dm.Search.Count > 0)
             {
-                DataSource = operation.PerformSearching(DataSource, dm.Search);  //Search
+                DataSource = operation.PerformSearching(DataSource, dm.Search);
             }
-            if (dm.Sorted != null && dm.Sorted.Count > 0) //Sorting
+            if (dm.Sorted != null && dm.Sorted.Count > 0)
             {
                 DataSource = operation.PerformSorting(DataSource, dm.Sorted);
             }
-            if (dm.Where != null && dm.Where.Count > 0) //Filtering
+            if (dm.Where != null && dm.Where.Count > 0)
             {
                 DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
             }
             int count = DataSource.Cast<OrdersDetails>().Count();
             if (dm.Skip != 0)
             {
-                DataSource = operation.PerformSkip(DataSource, dm.Skip);         //Paging
+                DataSource = operation.PerformSkip(DataSource, dm.Skip);
             }
             if (dm.Take != 0)
             {
@@ -91,45 +91,44 @@ namespace SignalR.Controllers
             }
             return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
         }
-        //update the record
+        //update the record.
         public void Update(CRUDModel<OrdersDetails> updatedRecord)
         {
-            // Retrieve updated order
+            // Retrieve updated order.
             var updatedOrder = updatedRecord.value;
             if (updatedOrder != null)
             {
-                // Find existing record
+                // Find existing record.
                 var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
                 if (data != null)
                 {
-                    // Update existing record
+                    // Update existing record.
                     data.OrderID = updatedOrder.OrderID;
                     data.Freight = updatedOrder.Freight;
                     data.CustomerID = updatedOrder.CustomerID;
                     data.ShipCity = updatedOrder.ShipCity;
                     data.ShipCountry = updatedOrder.ShipCountry;
-                    // Update other properties similarly
                 }
             }
         }
-        //insert the record
+        //Insert the record.
         public void Insert(CRUDModel<OrdersDetails> newRecord)
         {
-            // Check if new record is not null
+            // Check if new record is not null.
             if (newRecord.value != null)
             {
-                // Insert new record
+                // Insert new record.
                 OrdersDetails.GetAllRecords().Insert(0, newRecord.value);
             }
         }
-        //Delete the record
+        //Delete the record.
         public void Delete(CRUDModel<OrdersDetails> deletedRecord)
         {
-            int orderId = int.Parse(deletedRecord.key.ToString()); // get key value from the deletedRecord
+            int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
             var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
             if (data != null)
             {
-                // Remove the record from the data collection
+                // Remove the record from the data collection.
                 OrdersDetails.GetAllRecords().Remove(data);
             }
         }
@@ -214,7 +213,7 @@ namespace SignalR.Models
 
 ```
 
-**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure grid data binding in the **Views/Home/Index.cshtml** file.
+**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Views/Home/Index.cshtml** file.
 
 ```ts
 @Html.EJS().Grid("grid").Height("248px").DataSource(ds => ds.Url(@Url.Action("UrlDatasource", "Home")).InsertUrl(@Url.Action("Insert", "Home")).UpdateUrl("/Home/Update").RemoveUrl(@Url.Action("Delete", "Home")).Adaptor("UrlAdaptor")).Columns(col =>
@@ -233,16 +232,16 @@ namespace SignalR.Models
        // Reference the auto-generated proxy for the hub.
        var chat = $.connection.chatHub;
        function onCreated() {
-           // Hub’s call back function 
+           // Hub call back function.
            chat.client.addNewMessageToPage = function (name, message) {
-             // Grid is refreshed 
+             // Grid is refreshed.
              var gridObject = document.getElementById('grid').ej2_instances[0];
              gridObject.refresh();
            };
            // Start the connection. 
            $.connection.hub.start().done(function () {
               console.log("SignalR connection established successfully");
-              // Call the Send method on the hub 
+              // Call the Send method on the hub.
               chat.server.send("SendMessage", "refreshPages").catch((err) => {
                 console.error("Error sending data:", err.toString());
               });
@@ -323,15 +322,15 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 ## Binding data from excel file
 
-The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) component [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
+The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) component [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
 
-To import excel data in to grid, you can follow these steps:
+To import excel data in to Grid, you can follow these steps:
 
 1. Import excel file using Uploader component. 
 2. Parse the excel file data using **XLSX** library.
-3. Bind the JSON to the grid component. 
+3. Bind the JSON to the Grid component. 
 
-The following example demonstrates how to import Excel data into the grid by utilizing the `Uploader` component's `Change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the Grid by utilizing the `Uploader` component's `Change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -366,7 +365,7 @@ A. To bind data from an external Fetch request, utilize the [DataSource](https:/
 
 B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
-C. In the Fetch success event, you have the flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `ActionComplete` and Fetch failure events: The following code snippet demonstrates this approach:
+C. In the Fetch success event, you have the flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) and Fetch failure events: The following code snippet demonstrates this approach:
 
 ```ts
 <div style="padding: 10px 0px 20px 0px">
@@ -457,7 +456,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
 
 ```cs
 using System;
@@ -493,13 +492,13 @@ namespace FetchRequest.Controllers
             val.ShipCountry = ord.ShipCountry;
             return Json(value);
         }
-        //insert the record
+        //Insert the record.
         public ActionResult Insert(OrdersDetails value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value);
             return Json(value);
         }
-        //Delete the record
+        //Delete the record.
         public ActionResult Delete(int key)
         {
             OrdersDetails.GetAllRecords().Remove(OrdersDetails.GetAllRecords().Where(or => or.OrderID == key).FirstOrDefault());
@@ -703,7 +702,7 @@ C. In the AJAX success event, you have the flexibility to utilize the Grid `endE
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
 
 ```cs
 using System;
@@ -739,13 +738,13 @@ namespace AJAXRequest.Controllers
             val.ShipCountry = ord.ShipCountry;
             return Json(value);
         }
-        //insert the record
+        //Insert the record.
         public ActionResult Insert(OrdersDetails value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value);
             return Json(value);
         }
-        //Delete the record
+        //Delete the record.
         public ActionResult Delete(int key)
         {
             OrdersDetails.GetAllRecords().Remove(OrdersDetails.GetAllRecords().Where(or => or.OrderID == key).FirstOrDefault());
@@ -839,9 +838,9 @@ The following example demonstrates how to display the loading indicator in the S
 
 Showing a spinner during data loading in the Syncfusion ASP.NET MVC Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid component
+To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid component
 
-The following example demonstrates how to show and hide the spinner during data loading using external buttons in a grid:
+The following example demonstrates how to show and hide the spinner during data loading using external buttons in a Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -860,7 +859,7 @@ Immutable mode in the Syncfusion Grid is designed to optimize re-rendering perfo
 
 To enable this feature, you need to set the [EnableImmutableMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 
-If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) and [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) events trigger only for newly generated rows, not for existing rows. 
+If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the Grid [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) and [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) events trigger only for newly generated rows, not for existing rows. 
 
 If immutable mode is not enabled, both newly added rows and existing rows are regenerated or reused when the datasource changes. As a result, the `RowDataBound` and `QueryCellInfo` events trigger for both newly added and existing rows. 
 
@@ -881,9 +880,9 @@ The following example demonstrates how to enable immutable mode in an ASP.NET MV
 
 ## ExpandoObject binding
 
-The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
+The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
-To bind an `ExpandoObject` to the grid, you need to assign it to the `DataSource` property. The grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
+To bind an `ExpandoObject` to the Grid, you need to assign it to the `DataSource` property. The Grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
 
 The following sample demonstrates ExpandoObject binding:
 
@@ -898,9 +897,9 @@ The following sample demonstrates ExpandoObject binding:
 
 ## ExpandoObject with complex column binding
 
-You can achieve complex data binding with ExpandoObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the grid.
+You can achieve complex data binding with ExpandoObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
 
-In the following example, the fields Customer.CustomerID, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry represent complex data that is bound to the grid:
+In the following example, the fields Customer.CustomerID, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry represent complex data that is bound to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -915,9 +914,9 @@ N> Perform data and CRUD operations for complex ExpandoObject binding fields as 
 
 ## DynamicObject binding
 
-The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
+The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
-To bind an `ExpandoObject` to the grid, you need to assign it to the `DataSource` property. This enables the grid to perform various supported data operations and editing on the DynamicObject.
+To bind an `ExpandoObject` to the Grid, you need to assign it to the `DataSource` property. This enables the Grid to perform various supported data operations and editing on the DynamicObject.
 
 N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
@@ -934,9 +933,9 @@ Here's an example of how to bind a list of DynamicObject to the Syncfusion Grid:
 
 ## DynamicObject with complex column binding
 
-You can achieve complex data binding with DynamicObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the grid.
+You can achieve complex data binding with DynamicObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the Grid.
 
-In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the grid:
+In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
