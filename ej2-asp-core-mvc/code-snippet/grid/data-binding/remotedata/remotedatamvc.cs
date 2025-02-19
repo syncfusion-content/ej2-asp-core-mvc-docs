@@ -1,5 +1,5 @@
-public JsonResult OnPostGetOrderData(){
+public ActionResult GetOrderData() {
     IEnumerable<OrdersDetails> dataSource = OrdersDetails.GetAllRecords();
     int totalCount = dataSource.Count();
-    return new JsonResult(new { result = dataSource, count = totalCount });
+    return Json(new { result = dataSource, count = totalCount });
 }

@@ -609,6 +609,57 @@ The following screenshot represents the grid action with custom binding
 > * While working with grid edit operation, defining the `IsPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
 
+## Export all records in client side
+
+Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
+
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net MVC Grid component allows you to export all records, including those from multiple pages, by configuring the pdfExportProperties and excelExportProperties.
+
+To export all records, including those from multiple pages, configure the `PdfExportProperties.DataSource` for PDF exporting and `ExcelExportProperties.DataSource` for Excel exporting within the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event handler. Inside this event, set the `DataSource` property of `PdfExportProperties` and `ExcelExportProperties` for PDF and Excel exporting to include all records.
+
+**Excel Exporting**
+
+To export the complete grid data to Excel, utilize the `ExcelExportProperties.dataSource` when initiating the Excel export. Use the following code snippet to export all records within the grid:
+
+```typescript
+  const grid = document.getElementById("grid").ej2_instances[0];
+  getOrders(state).then((event) => {
+    let excelExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.excelExport(excelExportProperties);// need to call excelExport method of grid when get the entire data
+  });
+```
+
+**Pdf Exporting**
+
+To export the complete grid data to PDF document, utilize the `PdfExportProperties.DataSource` when initiating the PDF export. Use the following code snippet to export all records within the grid:
+
+{% if page.publishingplatform == "typescript" %}
+
+```typescript
+  const grid = document.getElementById("grid").ej2_instances[0];
+  getOrders(state).then((event) => {
+    let pdfExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.pdfExport(pdfExportProperties);
+  });
+```
+
+> Further customization on grid export can be accessed in the respective documentation for [PDF exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options)
+
+The following code example demonstrates how to export all records on the client side.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="remotedata.cs" %}
+{% include code-snippet/grid/data-binding/remote-export/remotedatamvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **Offline** property of DataManager.
