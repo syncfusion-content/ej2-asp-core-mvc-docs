@@ -8,10 +8,7 @@
 <script>
   const baseUrl = "https://localhost:****/Home";// Here xxxx denotes the port number.
   var gridData;
-  var state = {
-      skip: 0,
-      take: 12
-  };
+  var state = { skip: 0, take: 12};
   function exportComplete() {
       const grid = document.getElementById("grid").ej2_instances[0];
       grid.hideSpinner(); // Hide the spinner when export completed.
@@ -23,14 +20,12 @@
   }
   function dataStateChange(state) {
       const grid = document.getElementById("grid").ej2_instances[0];
-
       getOrders(state).then((event) => {
           grid.dataSource = event.result; // Assign the result to the dataSource property.
       });
   }
   function toolbarClick(args) {
       const grid = document.getElementById("grid").ej2_instances[0];
-
       let state = { action: {}, skip: 0, take: grid.pageSettings.totalRecordsCount };
       switch (args.item.text) {
           case "PDF Export":
