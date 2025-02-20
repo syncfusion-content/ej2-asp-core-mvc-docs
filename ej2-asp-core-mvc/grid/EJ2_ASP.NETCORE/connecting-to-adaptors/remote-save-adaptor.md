@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
+title: RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid.
 description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid.
 platform: ej2-asp-core-mvc
 control: Grid
