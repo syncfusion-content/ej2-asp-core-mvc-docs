@@ -22,7 +22,7 @@ The Image Editor control includes a `resize` method, which allows you to adjust 
 * height: Specifies the resizing height of the image.
 
 * isAspectRatio: Specifies a boolean value indicating whether the image should maintain its original aspect ratio during resizing.
-    * When set to `true`, the image maintains its original aspect ratio, adjusting the height automatically based on the given width.
+    * When set to `true`, the image maintains its original aspect ratio. The width is applied as specified, and the height is automatically adjusted to maintain the aspect ratio.
     * When set to `false`, the image is resized according to the specified width and height, without maintaining the aspect ratio.
     * The default value is `false`.
 
