@@ -165,7 +165,6 @@ By following these steps, you will configure your PDF Viewer to load the require
 
 <div style="height: 900px;width:100%;">
     @Html.EJS().PdfViewer("pdfviewer").ResourceUrl(@resourceUrl).DocumentPath(@document).Render()
-
 </div>
 
 {% endhighlight %}
