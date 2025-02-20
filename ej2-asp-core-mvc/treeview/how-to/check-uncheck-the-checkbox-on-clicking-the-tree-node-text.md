@@ -30,7 +30,7 @@ You can check and uncheck the checkboxes of TreeView by clicking the tree node u
 {% include code-snippet/treeview/how-to/node-check/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodecheck.cs" %}
-{% include code-snippet/treeview/how-to/node-check/nodecheck.cs %}
+{% include code-snippet/treeview/how-to/node-check/nodecheck-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

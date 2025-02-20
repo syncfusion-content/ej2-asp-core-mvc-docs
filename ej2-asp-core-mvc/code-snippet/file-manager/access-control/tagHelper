@@ -1,6 +1,6 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare filemanager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager">
             <e-filemanager-ajaxsettings url="https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/FileOperations"
                                         downloadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/Download"
@@ -8,6 +8,6 @@
                                         getImageUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManagerAccess/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

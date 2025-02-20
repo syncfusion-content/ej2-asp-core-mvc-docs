@@ -57,9 +57,9 @@
     }
 
     #openBtn {
-        position: absolute;
-        top: 67px;
-        margin-left: 13px;
+    position: absolute;
+    top: 90px;
+    margin-left: 17px;
     }
 
     #target {
@@ -69,6 +69,5 @@
     #dialog {
         top: 20px !important;
         max-height: 500px !important;
-        left: 20px !important;
     }
 </style>
