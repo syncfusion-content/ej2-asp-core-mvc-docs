@@ -105,4 +105,19 @@ The following example that demonstrates how to use the `hideScroll` method insid
 
 ![Hide the empty placehoder of scrollbar](../images/scrolling/scrolling-holder.png)
 
+## Render Scrollbar in Both Top and Bottom
 
+The ASP.NET Core Grid allows you to render scrollbars at both the top and bottom, enhancing horizontal navigation for large datasets. To achieve this, scrollbar is added above the Grid by inserting a `<div>` before the Grid content. Then, scroll event listeners are synchronized between the top and bottom scrollbars to maintain a smooth scrolling experience.
+
+The following example demonstrates how to use the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to insert a scrollbar at the top of the Grid content:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/render-scrollbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Render-scroll.cs" %}
+{% include code-snippet/grid/scrolling/render-scrollbar/render-scrollbar.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Render of scrollbar in top and bottom](../images/scrolling/render-scrollbar.gif)
