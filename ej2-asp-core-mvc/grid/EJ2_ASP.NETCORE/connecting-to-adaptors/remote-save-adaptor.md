@@ -12,13 +12,13 @@ domainurl: ##DomainURL##
 
 # RemoteSaveAdaptor in Syncfusion ASP.NET Core Grid
 
-The **RemoteSaveAdaptor** in Syncfusion ASP.NET Core Grid allows you to perform Grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The `RemoteSaveAdaptor` in Syncfusion ASP.NET Core Grid allows efficient handling of sorting, filtering, searching, and paging primarily on the client-side, while delegating CRUD operations (Create, Read, Update, Delete) to the server-side for data persistence. This approach reduces unnecessary server interactions, improving performance and user experience.
 
 Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
 
 **Server-Side Implementation**
 
-To configure a server with Syncfusion ASP.NET Core Grid, you need to follow the below steps:
+To configure the server for Syncfusion ASP.NET Core Grid, follow these steps:
 
 **1. Project Creation:**
 
