@@ -70,7 +70,7 @@ Multiple aggregates for a column allows you to calculate and display different s
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid by specifying the aggregate `type` as an array.
+You can use multiple aggregates for a single column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid by specifying the aggregate `Types` as an array.
 
 Here's an example of how to use multiple aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid:
 
