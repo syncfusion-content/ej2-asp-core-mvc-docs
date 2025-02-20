@@ -647,7 +647,7 @@ To export the complete Grid data to PDF document, utilize the `PdfExportProperti
 
 > For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options)
 
-The following code example demonstrates how to export all records on the client side.
+The following code example demonstrates how to export all records on the client side:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
