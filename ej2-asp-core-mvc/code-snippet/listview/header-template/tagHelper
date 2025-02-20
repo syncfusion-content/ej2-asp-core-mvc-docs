@@ -14,18 +14,18 @@
         border-radius: 3px;
     }
 
-        #element .e-list-header {
-            padding: 0;
-        }
+    #element .e-list-header {
+        padding: 0;
+    }
 
-        #element .headerContainer {
-            width: 350px;
-            height: 48px;
-            line-height: 48px;
-            background: rgb(2, 120, 215);
-            color: white;
-            margin-bottom: 3px;
-        }
+    #element .headerContainer {
+        width: 350px;
+        height: 48px;
+        line-height: 48px;
+        background: rgb(2, 120, 215);
+        color: white;
+        margin-bottom: 3px;
+    }
 
     .headerContainer .fruitHeader {
         margin-left: 20px;
@@ -44,17 +44,16 @@
     }
 
     .headerContainer .e-search-icon::before {
-        content: '\e961';
+        content: '\e754';
         color: lightslategray;
     }
 
-
     .headerContainer .e-add-icon::before {
-        content: '\e823';
+        content: '\e805';
     }
 
     .headerContainer .e-sort-icon::before {
-        content: '\e840';
+        content: '\e7df';
     }
 </style>
 
