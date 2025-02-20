@@ -635,8 +635,6 @@ To export the complete Grid data to Excel document, utilize the `ExcelExportProp
 
 To export the complete Grid data to PDF document, utilize the `PdfExportProperties.DataSource` when initiating the PDF export. Use the following code snippet to export all records within the Grid:
 
-{% if page.publishingplatform == "typescript" %}
-
 ```typescript
   const grid = document.getElementById("grid").ej2_instances[0];
   getOrders(state).then((event) => {
