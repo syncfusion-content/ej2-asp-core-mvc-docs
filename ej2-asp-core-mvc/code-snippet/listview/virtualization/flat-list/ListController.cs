@@ -1,6 +1,6 @@
 ﻿public class ListViewController : Controller
 {
-    public IActionResult List()
+    public ActionResult Virtualization()
     {
         List<object> listData = new List<object>();
         listData.Add(new { text = "Nancy", id = "0" });
@@ -14,16 +14,17 @@
         listData.Add(new { text = "Albert", id = "8" });
         listData.Add(new { text = "Nolan", id = "9" });
 
+        Random random = new Random();
 
-            for (int i = 10; i < 1000; i++)
+        for (int i = 10; i < 1000; i++)
+        {
+            int index = random.Next(0, 10);
+            listData.Add(new
             {
-                int index = new Random().Next(0, 10);
-                listData.Add(new
-                {
-                    text = listData[index].GetType().GetProperty("text").GetValue(listData[index], null).ToString(),
-                    id = i.ToString()
-                });
-            }
+                text = listData[index].GetType().GetProperty("text").GetValue(listData[index], null).ToString(),
+                id = i.ToString()
+            });
+        }
 
         ViewBag.listData = listData;
         return View();
