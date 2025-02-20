@@ -220,7 +220,7 @@ To delete existing records, use the `removeUrl` property to specify the controll
   [Route("api/Orders/Remove")]
   public object Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
   {
-      int orderId = int.Parse(deletedRecord.key.ToString()); // get key value from the deletedRecord.
+      int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
       var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
       if (data != null)
       {
