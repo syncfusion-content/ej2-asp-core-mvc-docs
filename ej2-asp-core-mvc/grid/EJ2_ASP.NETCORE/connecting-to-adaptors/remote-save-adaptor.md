@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid control.
+description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion ##Platform_Name## Grid.
 platform: ej2-asp-core-mvc
 control: Grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
@@ -10,9 +10,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# RemoteSaveAdaptor in Syncfusion ASP.NET Core Grid Control
+# RemoteSaveAdaptor in Syncfusion ASP.NET Core Grid
 
-The **RemoteSaveAdaptor** in Syncfusion ASP.NET Core Grid Component allows you to perform Grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The **RemoteSaveAdaptor** in Syncfusion ASP.NET Core Grid allows you to perform Grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 Ensure your server-side implementation in ASP.NET Core handles CRUD operations. Here is an example of how you can set up your ASP.NET Core controller to handle these operations:
 
@@ -26,7 +26,7 @@ Open Visual Studio and create an ASP.NET Core project named **RemoteSaveAdaptor*
 
 **2. Model Class Creation:**
 
-Create a model class named **OrdersDetails.cs** in the server-side **Models** folder to represent the order data.
+Create a model class named **OrdersDetails.cs** inside the **Models** folder on the server-side. This model will represent the order data structure.
 
 ```cs
 using System.ComponentModel.DataAnnotations;
@@ -91,7 +91,7 @@ namespace RemoteSaveAdaptor.Models
 
 **3. API Controller Creation:**
 
-Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the ASP.NET Core Grid component.
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion Grid.
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -106,13 +106,13 @@ namespace RemoteSaveAdaptor.Controllers
     [Route("api/[controller]")]
     public object Post()
     {
-      // Retrieve data from the data source (e.g., database)
+      // Retrieve data from the data source (e.g., database).
       IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-      // Get the total records count
+      // Get the total records count.
       int totalRecordsCount = DataSource.Count();
 
-      // Return data based on the request
+      // Return data based on the request.
       return new { result = DataSource, count = totalRecordsCount };
     }
 
@@ -145,7 +145,7 @@ The below class is used to structure data sent during CRUD operations.
 
 **Insert Operation:**
 
-To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. Implement the `Insert` method in the API controller to handle the insertion of new records.The newly added record details are bound to the **newRecord** parameter.
+To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. Implement the `Insert` method in the API controller to handle the addition of new records.  The details of the newly added record are bound to the **newRecord** parameter.
 
 ![Insert record](../images/adaptors/remotesave-adaptor-insert.png)
 
@@ -170,7 +170,7 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
 
 **Update Operation:**
 
-For updating existing records, use the `updateUrl` property to specify the controller action mapping URL for the update operation. Implement the Update method in the API controller to handle record updates. The updated record details are bound to the **updatedRecord** parameter.
+For updating existing records, use the `updateUrl` property to specify the controller action mapping URL for the update operation. Implement the `Update` method in the API controller to handle record updates. The updated record details are bound to the **updatedRecord** parameter.
 
 ![Update record](../images/adaptors/remotesave-adaptor-update.png)
 
@@ -190,14 +190,14 @@ For updating existing records, use the `updateUrl` property to specify the contr
       var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
       if (data != null)
       {
-        // Update the existing record
+        // Update the existing record.
         data.OrderID = updatedOrder.OrderID;
         data.CustomerID = updatedOrder.CustomerID;
         data.Freight = updatedOrder.Freight;
         data.ShipCity = updatedOrder.ShipCity;
         data.ShipCountry = updatedOrder.ShipCountry;
         data.Verified = updatedOrder.Verified;
-        // Update other properties similarly
+        // Update other properties similarly.
       }
     }
     return updatedRecord;
@@ -215,16 +215,16 @@ To delete existing records, use the `removeUrl` property to specify the controll
   /// Deletes an order.
   /// </summary>
   /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
-  /// <returns>It returns the deleted record detail</returns>
+  /// <returns>It returns the deleted record detail.</returns>
   [HttpPost]
   [Route("api/Orders/Remove")]
   public object Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
   {
-      int orderId = int.Parse(deletedRecord.key.ToString()); // get key value from the deletedRecord
+      int orderId = int.Parse(deletedRecord.key.ToString()); // get key value from the deletedRecord.
       var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
       if (data != null)
       {
-          // Remove the record from the data collection
+          // Remove the record from the data collection.
           OrdersDetails.GetAllRecords().Remove(data);
       }
       return deletedRecord;
@@ -239,11 +239,12 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
-**Step 1:** Install ASP.NET Core package in the application:
+**Step 1:** Install the Syncfusion ASP.NET Core Package:
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for `Syncfusion.EJ2.AspNet.Core` and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) and install it.
+Alternatively, you can install it using the following Package Manager Console command:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -253,7 +254,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Add Syncfusion ASP.NET Core Tag Helper:
+**Step 2:** Add Syncfusion ASP.NET Core Tag Helper
 
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
@@ -265,21 +266,21 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3:** Add stylesheet and script resources:
+**Step 3:** Add Stylesheets and Script Resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+To include the required styles and scripts, add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core component: -->
-        <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core -->
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
@@ -300,7 +301,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 **Step 4:** Register Syncfusion Script Manager:
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+To ensure proper script execution, register the Syncfusion Script Manager `<ejs-scripts>` at the end of the `<body>` tag in your ASP.NET Core application as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -314,11 +315,11 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** Add ASP.NET Core Grid Control:
+**Step 5:** Add ASP.NET Core Grid:
 
-Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page. The Syncfusion Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
+Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page. The Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
-***CRUD Operations Mapping:*** CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
+***CRUD Operations Mapping:*** CRUD operations in the Grid can be mapped to server-side controller actions using the following properties:
 
 * **insertUrl**: Specifies the URL for inserting new data.
 * **removeUrl**: Specifies the URL for removing existing data.
@@ -346,7 +347,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         });
 
         function load() {
-            fetch('/api/Orders')  // Fetch from the backend API
+            fetch('/api/Orders')  // Fetch from the backend API.
                 .then(response => {
                     if (!response.ok) {
                         throw new Error("Unable to Fetch Data. Please check URL or network connectivity.");
@@ -368,7 +369,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         }
 
         function createGrid(data) {
-     var grid = document.querySelector('#Grid')?.ej2_instances?.[0];
+        var grid = document.querySelector('#Grid')?.ej2_instances?.[0];
         if (!grid) {
             console.error("Grid instance not found!");
             return;
@@ -395,4 +396,4 @@ app.MapControllers();
 ```
 **Step 7:** Run the Project:
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Run the project in Visual Studio, and the Syncfusion Grid will successfully fetch data from the API service.

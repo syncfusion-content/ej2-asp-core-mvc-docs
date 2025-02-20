@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion ##Platform_Name## Grid control.
+description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion ##Platform_Name## Grid.
 platform: ej2-asp-core-mvc
 control: Grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
@@ -10,30 +10,30 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMethodAdaptor in Syncfusion ASP.NET Core Grid Control
+# WebMethodAdaptor in Syncfusion ASP.NET Core Grid 
 
-The WebMethodAdaptor in Syncfusion ASP.NET Core Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URL Adaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
-This section describes a step-by-step process for retrieving data using **WebMethodAdaptor**, then binding it to the ASP.NET Core Grid control to facilitate data and CRUD operations.
+This section provides a step-by-step guide to retrieving data using `WebMethodAdaptor`, binding it to the ASP.NET Core Grid, and managing CRUD operations effectively.
 
-## Creating an API service
+## Creating an API Service
 
 To configure a server with Syncfusion ASP.NET Core Grid, follow the steps below:
 
 **1. Project Creation:**
 
-Open Visual Studio and create an ASP.NET Core project named **WebMethodAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
+Open Visual Studio and create a new ASP.NET Core project named **WebMethodAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
 **2. Model Class Creation:**
 
-Create a model class named **OrdersDetails.cs** in the server-side **Models** folder to represent the order data.
+Create a model class named **OrdersDetails.cs** inside the **Models** folder on the server-side. This model will represent the order data structure.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 
- namespace WebMethodAdaptor.Server.Models
+ namespace WebMethodAdaptor.Models
  {
  public class OrdersDetails
  {
@@ -97,7 +97,7 @@ Create a model class named **OrdersDetails.cs** in the server-side **Models** fo
 
 **3. API Controller Creation:**
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the ASP.NET Core Grid component.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -113,29 +113,27 @@ namespace WebMethodAdaptor.Controllers
   [ApiController]
   public class GridController : ControllerBase
   {
-    
-    // method to retrieve data
+    // Method to retrieve order data.
     [HttpGet]
     [Route("api/[controller]")]
     public List<OrdersDetails> GetOrderData()
     {
-        // Retrieve all records and convert to list
+        // Retrieve all records and convert to list.
         var data = OrdersDetails.GetAllRecords().ToList();
         return data;
     }
-
-     // method to handle incoming data manager requests
+    // Method to handle incoming data manager requests.
     [HttpPost]
     [Route("api/[controller]")]
     public object Post()
     {
-        // Retrieve data source and convert to queryable
+        // Retrieve data source and convert to queryable.
         IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-        // Get total record count
+        // Get total record count.
         int totalRecordsCount = DataSource.Count();
 
-        // Return result and total record count
+        // Return result and total record count.
         return new { result = DataSource, count = totalRecordsCount };
     }
   }
@@ -144,11 +142,11 @@ namespace WebMethodAdaptor.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-> The **GetOrderData** method retrieves sample order data. You can replace it with your custom logic to fetch data from a database or any other source.
+> The **GetOrderData** method retrieves sample order data. You can modify it to fetch data from a database or any other data source.
 
 **4. Run the Application:**
 
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
+Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**. 
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data at the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
@@ -156,11 +154,12 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
-**Step 1:** Install ASP.NET Core package in the application:
+**Step 1:** Install the Syncfusion ASP.NET Core Package:
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for `Syncfusion.EJ2.AspNet.Core` and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) and install it.
+Alternatively, you can install it using the following Package Manager Console command:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -182,21 +181,21 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3:** Add stylesheet and script resources
+**Step 3:** Add Stylesheets and Script Resources
 
-Here, the theme and script are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+To include the required styles and scripts, add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core component: -->
-        <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core -->
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
@@ -217,7 +216,7 @@ Here, the theme and script are referred using CDN inside the `<head>` of `~/Page
 
 **Step 4:** Register Syncfusion Script Manager:
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows:
+To ensure proper script execution, register the Syncfusion Script Manager `<ejs-scripts>` at the end of the `<body>` tag in your ASP.NET Core application as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -231,14 +230,14 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** Add ASP.NET Core Grid Control:
+**Step 5:** Add the Syncfusion ASP.NET Core Grid:
 
-Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="315">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager>
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -251,7 +250,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
 
 **Step 6:** Configure the server:
 
-In the `Program.cs` file of your project, configure the server to serve static files by adding the following code:
+In the `Program.cs` file of your project, configure the server to serve static files and handle API requests by adding the following code:
 
 ```cs
 builder.Services.AddRazorPages();
@@ -264,16 +263,16 @@ app.MapControllers();
 ```
 **Step 7:** Run the Project:
 
-Now, run the project to see the Syncfusion Grid connected to the API service in action.
+Run the project in Visual Studio, and the Syncfusion Grid will successfully fetch data from the API service.
 
 ![WebMethodAdaptor](../images/adaptors/adaptor.gif)
 
-> * The Syncfusion Grid component provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the `Syncfusion.EJ2.AspNet.Core` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
+> * The Syncfusion Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest` and `QueryableOperation`, import `Syncfusion.EJ2.Base` in `GridController.cs` file.
 > * In the WebMethodAdaptor configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
     ```cs
-    // Model for handling data manager requests
+    // Model for handling data manager requests.
     public class DataManager
     {
         public required DataManagerRequest Value { get; set; }
@@ -282,36 +281,36 @@ Now, run the project to see the Syncfusion Grid connected to the API service in 
 
 ## Handling Searching Operation
 
-To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object
+To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object
 
 ![WebMethodAdaptor searching](../images/adaptors/web-method-adaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
-[HttpPost]
+    [HttpPost]
     public object Post([FromBody] DataManager DataManagerRequest)
     {
-        // Retrieve data from the data source (e.g., database)
+        // Retrieve data from the data source (e.g., database).
         IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-        QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance
+        QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
 
-        // Retrieve data manager value
+        // Retrieve data manager value.
         DataManagerRequest DataManagerParams = DataManagerRequest.Value;
 
-        // Handling Searching
+        // Handling Searching.
         if (DataManagerParams.Search != null && DataManagerParams.Search.Count > 0)
         {
         DataSource = queryableOperation.PerformSearching(DataSource, DataManagerParams.Search);
         }
-        // Get the total records count
+        // Get the total records count.
         int totalRecordsCount = DataSource.Count();
 
-        // Return data based on the request
+        // Return data based on the request.
         return new { result = DataSource, count = totalRecordsCount };
     }
 
-    // Model for handling data manager requests
+    // Model for handling data manager requests.
     public class DataManager
     {
         public required DataManagerRequest Value { get; set; }
@@ -319,7 +318,7 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="315">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager>
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -332,7 +331,7 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 
 ## Handling Filtering Operation
 
-To handle filtering operation, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
 **Single column filtering**
 ![Single column filtering](../images/adaptors/web-method-adaptor-filtering.png)
@@ -345,17 +344,17 @@ To handle filtering operation, ensure that your API endpoint supports custom fil
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database)
+    // Retrieve data from the data source (e.g., database).
     IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance
+    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
 
-    // Retrieve data manager value
+    // Retrieve data manager value.
     DataManagerRequest DataManagerParams = DataManagerRequest.Value;
 
     if (DataManagerParams.Where != null && DataManagerParams.Where.Count > 0)
     {
-        // Handling filtering operation
+        // Handling filtering operation.
         foreach (var condition in DataManagerParams.Where)
         {
             foreach (var predicate in condition.predicates)
@@ -364,14 +363,14 @@ public object Post([FromBody] DataManager DataManagerRequest)
             }
         }
     }
-    // Get the total records count
+    // Get the total records count.
     int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request
+    // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
 }
 
-// Model for handling data manager requests
+// Model for handling data manager requests.
 public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
@@ -379,7 +378,7 @@ public class DataManager
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" allowFiltering="true" height="315">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager>
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -392,7 +391,7 @@ public class DataManager
 
 ## Handling Sorting Operation
 
-To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle sorting operation, configure your API to support custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
 **Single column sorting**
 ![Single column sorting](../images/adaptors/web-method-adaptor-sorting.png)
@@ -405,28 +404,28 @@ To handle sorting operation, ensure that your API endpoint supports custom sorti
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database)
+    // Retrieve data from the data source (e.g., database).
     IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance
+    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
 
-    // Retrieve data manager value
+    // Retrieve data manager value.
     DataManagerRequest DataManagerParams = DataManagerRequest.Value;
 
-    // Handling Sorting operation
+    // Handling Sorting operation.
     if (DataManagerParams.Sorted != null && DataManagerParams.Sorted.Count > 0)
     {
         DataSource = queryableOperation.PerformSorting(DataSource, DataManagerParams.Sorted);
     }
 
-    // Get the total count of records
+    // Get the total count of records.
     int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request
+    // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
 }
 
-// Model for handling data manager requests
+// Model for handling data manager requests.
 public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
@@ -434,7 +433,7 @@ public class DataManager
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" allowSorting="true" height="315">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager>
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -447,7 +446,7 @@ public class DataManager
 
 ## Handling Paging Operation
 
-To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, configure your API endpoint to support custom sorting criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
 ![WebMethodAdaptor paging](../images/adaptors/web-method-adaptor-paging.png)
 
@@ -456,21 +455,21 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database)
+    // Retrieve data from the data source (e.g., database).
     IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-    // Get the total records count
+    // Get the total records count.
     int totalRecordsCount = DataSource.Count();
 
-    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance
+    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
 
-    // Retrieve data manager value
+    // Retrieve data manager value.
     DataManagerRequest DataManagerParams = DataManagerRequest.Value;
 
     // Handling paging operation.
     if (DataManagerParams.Skip != 0)
     {
-        // Paging
+        // Paging.
         DataSource = queryableOperation.PerformSkip(DataSource, DataManagerParams.Skip);
     }
     if (DataManagerParams.Take != 0)
@@ -478,11 +477,11 @@ public object Post([FromBody] DataManager DataManagerRequest)
         DataSource = queryableOperation.PerformTake(DataSource, DataManagerParams.Take);
     }
 
-    // Return data based on the request
+    // Return data based on the request.
     return new { result = DataSource, count = totalRecordsCount };
 }
 
-// Model for handling data manager requests
+// Model for handling data manager requests.
 public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
@@ -490,7 +489,7 @@ public class DataManager
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" allowPaging="true" height="315">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager>
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -503,11 +502,11 @@ public class DataManager
 
 ## Handling CRUD Operations
 
-The Syncfusion ASP.NET Core Grid Control seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET Core Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
-CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
+The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **insertUrl**: Specifies the URL for inserting new data.
 2. **removeUrl**: Specifies the URL for removing existing data.
@@ -515,18 +514,18 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET Core Grid control, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
-          <e-data-manager url='https://localhost:xxxx/api/Grid'
-                        insertUrl='https://localhost:xxxx/api/Grid/Insert'
-                        updateUrl='https://localhost:xxxx/api/Grid/Update'
-                        removeUrl='https://localhost:xxxx/api/Grid/Remove'
-                        adaptor="WebMethodAdaptor">
-          </e-data-manager>
-     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-data-manager url='https://localhost:xxxx/api/Grid'
+                insertUrl='https://localhost:xxxx/api/Grid/Insert'
+                updateUrl='https://localhost:xxxx/api/Grid/Update'
+                removeUrl='https://localhost:xxxx/api/Grid/Remove'
+                adaptor="WebMethodAdaptor"> // Replace `xxxx` with your actual localhost port number.
+    </e-data-manager>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -537,7 +536,7 @@ To enable editing in ASP.NET Core Grid control, refer to the editing [documentat
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `mode` for the Grid control. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -567,15 +566,15 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
 /// Inserts a new data item into the data collection.
 /// </summary>
 /// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns void</returns>
+/// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Insert")]
 public void Insert([FromBody] CRUDModel<OrdersDetails> newRecord)
 {
-    // Check if new record is not null
+    // Check if new record is not null.
     if (newRecord.value != null)
     {
-        // Insert new record
+        // Insert new record.
         OrdersDetails.GetAllRecords().Insert(0, newRecord.value);
     }
 }
@@ -593,25 +592,25 @@ For updating existing records, utilize the `updateUrl` property to specify the c
 /// Update a existing data item from the data collection.
 /// </summary>
 /// <param name="updatedRecord">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void</returns>
+/// <returns>Returns void.</returns>
 [HttpPost]
 [Route("api/[controller]/Update")]
 public void Update([FromBody] CRUDModel<OrdersDetails> updatedRecord)
 {
-    // Retrieve updated order
+    // Retrieve updated order.
     var updatedOrder = updatedRecord.value;
     if (updatedOrder != null)
     {
-        // Find existing record
+        // Find existing record.
         var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
         if (data != null)
         {
-            // Update existing record
+            // Update existing record.
             data.OrderID = updatedOrder.OrderID;
             data.CustomerID = updatedOrder.CustomerID;
             data.ShipCity = updatedOrder.ShipCity;
             data.ShipCountry = updatedOrder.ShipCountry;
-            // Update other properties similarly
+            // Update other properties similarly.
         }
     }
 }
@@ -628,16 +627,16 @@ To delete existing records, use the `removeUrl` property to specify the controll
 /// Remove a specific data item from the data collection.
 /// </summary>
 /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
-/// <return>Returns void</return>
+/// <return>Returns void.</return>
 [HttpPost]
 [Route("api/[controller]/Remove")]
 public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 {
-    int orderId = int.Parse(deletedRecord.key.ToString()); // get key value from the deletedRecord
+    int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
     var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
     if (data != null)
     {
-        // Remove the record from the data collection
+        // Remove the record from the data collection.
         OrdersDetails.GetAllRecords().Remove(data);
     }
 }
@@ -654,11 +653,11 @@ The following code example describes the above behavior.
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
-          <e-data-manager url='https://localhost:xxxx/api/Grid'
-                        crudUrl='https://localhost:xxxx/api/grid/CrudUpdate'
-                        adaptor="WebMethodAdaptor">
+    <e-data-manager url='https://localhost:xxxx/api/Grid'
+                    crudUrl='https://localhost:xxxx/api/grid/CrudUpdate'
+                    adaptor="WebMethodAdaptor"> // Replace `xxxx` with your actual localhost port number.
     </e-data-manager>
-     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -674,7 +673,7 @@ The following code example describes the above behavior.
 [Route("api/[controller]/CrudUpdate")]
 public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 {
-  // perform update operation
+  // Perform update operation.
   if (request.action == "update")
   {
     var orderValue = request.value;
@@ -683,12 +682,12 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
     existingRecord.CustomerID = orderValue.CustomerID;
     existingRecord.ShipCity = orderValue.ShipCity;
   }
-  // perform insert operation
+  // Perform insert operation.
   else if (request.action == "insert")
   {
     OrdersDetails.GetAllRecords().Insert(0, request.value);
   }
-  // perform remove operation
+  // Perform remove operation.
   else if (request.action == "remove")
   {
     OrdersDetails.GetAllRecords().Remove(OrdersDetails.GetAllRecords().Where(or => or.OrderID == int.Parse(request.key.ToString())).FirstOrDefault());
@@ -698,16 +697,16 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 
 **Batch Operation**
 
-To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, set the edit `mode` as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-data-manager url='https://localhost:xxxx/api/Grid'
-                          batchUrl='https://localhost:xxxx/api/Grid/BatchUpdate'
-                          adaptor="WebMethodAdaptor">
+                    batchUrl='https://localhost:xxxx/api/Grid/BatchUpdate'
+                    adaptor="WebMethodAdaptor"> // Replace `xxxx` with your actual localhost port number.
     </e-data-manager>
-     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
@@ -740,7 +739,7 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<OrdersDetails> batchOperat
       {
         existingOrder.CustomerID = changedOrder.CustomerID;
         existingOrder.ShipCity = changedOrder.ShipCity;
-        // Update other properties as needed
+        // Update other properties as needed.
       }
     }
   }
