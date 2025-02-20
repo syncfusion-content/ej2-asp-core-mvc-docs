@@ -91,7 +91,7 @@ namespace RemoteSaveAdaptor.Models
 
 **3. API Controller Creation:**
 
-Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion Grid.
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion ASP.NET Core Grid.
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -239,7 +239,7 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET Core Package:
 
@@ -275,11 +275,11 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core -->
+    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
@@ -369,11 +369,11 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         }
 
         function createGrid(data) {
-        var grid = document.querySelector('#Grid')?.ej2_instances?.[0];
-        if (!grid) {
-            console.error("Grid instance not found!");
-            return;
-        }
+          var grid = document.querySelector('#Grid')?.ej2_instances?.[0];
+          if (!grid) {
+              console.error("Grid instance not found!");
+              return;
+          }
         grid.dataSource = data
         }
     </script>
@@ -396,4 +396,4 @@ app.MapControllers();
 ```
 **Step 7:** Run the Project:
 
-Run the project in Visual Studio, and the Syncfusion Grid will successfully fetch data from the API service.
+Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.

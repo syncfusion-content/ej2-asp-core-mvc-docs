@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # WebMethodAdaptor in Syncfusion ASP.NET Core Grid 
 
-The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URL Adaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URL Adaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
@@ -154,7 +154,7 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET Core Package:
 
@@ -190,11 +190,11 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core styles -->
+    <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core scripts -->
+    <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core -->
+    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
@@ -263,14 +263,14 @@ app.MapControllers();
 ```
 **Step 7:** Run the Project:
 
-Run the project in Visual Studio, and the Syncfusion Grid will successfully fetch data from the API service.
+Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.
 
 ![WebMethodAdaptor](../images/adaptors/adaptor.gif)
 
-> * The Syncfusion Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
+> * The Syncfusion ASP.NET Core Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-> * To access `DataManagerRequest` and `QueryableOperation`, import `Syncfusion.EJ2.Base` in `GridController.cs` file.
-> * In the WebMethodAdaptor configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
+> * To access `DataManagerRequest` and `QueryableOperation`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
+> * In the `WebMethodAdaptor` configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
     ```cs
     // Model for handling data manager requests.
     public class DataManager
