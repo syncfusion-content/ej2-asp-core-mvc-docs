@@ -10,11 +10,11 @@ documentation: ug
 
 # Local data in ASP.NET MVC Grid component
 
-The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid component. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
+The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
-The following example demonstrates how to utilize the local data binding feature in the ASP.NET MVC Grid component:
+The following example demonstrates how to utilize the local data binding feature in the ASP.NET MVC Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -43,7 +43,7 @@ To achieve real-time data binding with SignalR in your Syncfusion ASP.NET MVC Gr
 
 **Step 2:**  Create a simple ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
-**Step 3:**  Create a controller on the server-side to manage data operations such as fetching, updating, inserting, and deleting records. You can create a **HomeController.cs** file under the **Controllers** folder. Add the following code to define methods for sending data updates to clients.
+**Step 3:**  Create a controller on the server-side to manage data operations such as fetching, updating, inserting, and deleting records. You can create a **HomeController.cs** file under the **Controllers** folder. Add the following code to define methods for sending data updates to clients:
 
 ```cs
 using Syncfusion.EJ2.Base;
@@ -148,7 +148,7 @@ namespace SignalR.Controllers
 
 ```
 
-**Step 4:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 4:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 using System;
@@ -213,7 +213,7 @@ namespace SignalR.Models
 
 ```
 
-**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Views/Home/Index.cshtml** file.
+**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Views/Home/Index.cshtml** file:
 
 ```ts
 @Html.EJS().Grid("grid").Height("248px").DataSource(ds => ds.Url(@Url.Action("UrlDatasource", "Home")).InsertUrl(@Url.Action("Insert", "Home")).UpdateUrl("/Home/Update").RemoveUrl(@Url.Action("Delete", "Home")).Adaptor("UrlAdaptor")).Columns(col =>
@@ -316,21 +316,21 @@ namespace SignalR
 
 ```
 
-The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides.
+The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides:
 
 ![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
 
 ## Binding data from excel file
 
-The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) component [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
+The Syncfusion Grid allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
 
 To import excel data in to Grid, you can follow these steps:
 
-1. Import excel file using Uploader component. 
+1. Import excel file using Uploader. 
 2. Parse the excel file data using **XLSX** library.
-3. Bind the JSON to the Grid component. 
+3. Bind the JSON to the Grid. 
 
-The following example demonstrates how to import Excel data into the Grid by utilizing the `Uploader` component's `Change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the Grid by utilizing the **Uploader** `Change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -456,7 +456,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using System;
@@ -510,7 +510,7 @@ namespace FetchRequest.Controllers
 
 ```
 
-**Step 5:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 5:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 using System;
@@ -702,7 +702,7 @@ C. In the AJAX success event, you have the flexibility to utilize the Grid `endE
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using System;
@@ -756,7 +756,7 @@ namespace AJAXRequest.Controllers
 
 ```
 
-**Step 5:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 5:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 using System;
@@ -838,7 +838,7 @@ The following example demonstrates how to display the loading indicator in the S
 
 Showing a spinner during data loading in the Syncfusion ASP.NET MVC Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid component
+To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid.
 
 The following example demonstrates how to show and hide the spinner during data loading using external buttons in a Grid:
 
@@ -880,7 +880,7 @@ The following example demonstrates how to enable immutable mode in an ASP.NET MV
 
 ## ExpandoObject binding
 
-The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
+The Syncfusion Grid is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
 To bind an `ExpandoObject` to the Grid, you need to assign it to the `DataSource` property. The Grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
 
@@ -899,7 +899,7 @@ The following sample demonstrates ExpandoObject binding:
 
 You can achieve complex data binding with ExpandoObject in the Syncfusion Grid by using the dot (.) operator in the column.field property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
 
-In the following example, the fields Customer.CustomerID, Customer.OrderDate, Customer.Freight, and Customer.ShipCountry represent complex data that is bound to the Grid:
+In the following example, the fields **Customer.CustomerID**, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** represent complex data that is bound to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

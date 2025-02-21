@@ -10,7 +10,7 @@ documentation: ug
 
 # Data binding in ASP.NET Core Grid component
 
-Data binding is a fundamental technique that empowers the Grid component to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
+Data binding is a fundamental technique that empowers the Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
 The Syncfusion Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
@@ -29,7 +29,7 @@ To achieve this, you can utilize the `loadingIndicator.indicatorType` property o
 * Spinner (default indicator)
 * Shimmer
 
-The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component. The `refreshColumns` method is used to apply the changes and display the updated loading indicator type. 
+The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started). The `refreshColumns` method is used to apply the changes and display the updated loading indicator type. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -78,7 +78,7 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-The Grid component in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid content and structure without requiring a complete page reload.
+The Grid in Syncfusion allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid content and structure without requiring a complete page reload.
 
 To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
@@ -221,13 +221,13 @@ To implement on-demand server-side actions with a DataTable, you need to:
 
 ## DataTable with CRUD operations
 
-The Syncfusion ASP.NET Core Grid component supports server-side CRUD (Create, Read, Update, Delete) operations using a DataTable as the underlying data source. This feature is particularly useful for applications that require dynamic data management with efficient performance and scalability.
+The Syncfusion ASP.NET Core Grid supports server-side CRUD (Create, Read, Update, Delete) operations using a DataTable as the underlying data source. This feature is particularly useful for applications that require dynamic data management with efficient performance and scalability.
 
 To perform server-side CRUD operations for a DataTable, you need to utilize the **InsertUrl**, **UpdateUrl**, and **RemoveUrl** properties of the **DataManager**. These properties allow you to specify the controller actions for inserting, updating, and deleting records.
 
 When passing data from the client side to the server side during CRUD operations, use **ExpandoObject** as a parameter for the insert and update actions. This approach allows you to handle dynamic data structures effectively.
 
-Here’s a sample implementation demonstrating how to set up the Syncfusion Grid component for CRUD operations with a DataTable:
+Here’s a sample implementation demonstrating how to set up the Syncfusion Grid for CRUD operations with a DataTable:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

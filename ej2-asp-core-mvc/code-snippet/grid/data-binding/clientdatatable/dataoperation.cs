@@ -1,14 +1,14 @@
  public ActionResult OnPostUrlDatasource([FromBody] DataManagerRequest dataManagerRequest)
 {
     DataTable ordersTable = new DataTable("Orders");
-    ordersTable.Columns.AddRange(new DataColumn[6] // Adjusted to 6 columns
+    ordersTable.Columns.AddRange(new DataColumn[6]
     {
         new DataColumn("OrderID", typeof(long)),
         new DataColumn("CustomerID", typeof(string)),
         new DataColumn("Freight", typeof(decimal)),
         new DataColumn("OrderDate", typeof(DateTime)),
         new DataColumn("ShipCity", typeof(string)),
-        new DataColumn("EmployeeID", typeof(int)) // New column for EmployeeID
+        new DataColumn("EmployeeID", typeof(int))
     });
     ordersTable.Rows.Add(10001, "ALFKI", 29.75m, new DateTime(1991, 05, 15), "Berlin", 1);
     ordersTable.Rows.Add(10002, "ANATR", 15.00m, new DateTime(1990, 04, 04), "Madrid", 2);
@@ -33,13 +33,13 @@
     DataOperations operation = new DataOperations();
     if (dataManagerRequest.Search != null && dataManagerRequest.Search.Count > 0)
     {
-                DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);  //Search
+                DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);
     }
-    if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0) //Sorting
+    if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0)
     {
         DataSource = operation.PerformSorting(DataSource, dataManagerRequest.Sorted);
     }
-    if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0) //Filtering
+    if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
     {
         DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Operator);
     }
@@ -53,7 +53,7 @@
     int count = DataSource.Cast<object>().Count();
     if (dataManagerRequest.Skip != 0)
     {
-        DataSource = operation.PerformSkip(DataSource, dataManagerRequest.Skip);   //Paging
+        DataSource = operation.PerformSkip(DataSource, dataManagerRequest.Skip);
     }
     if (dataManagerRequest.Take != 0)
     {

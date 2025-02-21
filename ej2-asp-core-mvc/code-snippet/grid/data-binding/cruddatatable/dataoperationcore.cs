@@ -92,14 +92,12 @@ public class IndexModel : PageModel
         {
             // Deserialize the JSON object into a Dictionary.
             var orderData = JsonSerializer.Deserialize<Dictionary<string, JsonElement>>(jsonElement.GetRawText()) ?? new Dictionary<string, JsonElement>();
-
             // Check if the OrderID is present and is a number.
             if (orderData.TryGetValue("OrderID", out var orderIdElement) && orderIdElement.ValueKind == JsonValueKind.Number)
             {
                 int orderId = orderIdElement.GetInt32(); // Get the OrderID as an integer.
-                                                         // Find the row to update based on OrderID.
+                // Find the row to update based on OrderID.
                 var rowToUpdate = ordersTable.AsEnumerable().FirstOrDefault(row => row.Field<int>("OrderID") == orderId);
-
                 if (rowToUpdate != null) // If the row exists.
                 {
                     // Iterate over the columns of the DataTable.
@@ -123,8 +121,7 @@ public class IndexModel : PageModel
         if (key.key.HasValue)
         {
             // Find the row to delete based on OrderID.
-            var rowToDelete = ordersTable.AsEnumerable()
-                                      .FirstOrDefault(row => row.Field<int>("OrderID") == (int)key.key);
+            var rowToDelete = ordersTable.AsEnumerable().FirstOrDefault(row => row.Field<int>("OrderID") == (int)key.key);
             if (rowToDelete != null)
             {
                 ordersTable.Rows.Remove(rowToDelete); // Remove the row from the DataTable.

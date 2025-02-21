@@ -33,7 +33,6 @@ public class HomeController : Controller
         }
         return dt;
     }
-
     // Data Source for Syncfusion Grid.
     public ActionResult UrlDatasource(DataManagerRequest dm)
     {
@@ -71,17 +70,13 @@ public class HomeController : Controller
 
         return Json(value, JsonRequestBehavior.AllowGet);
     }
-    // Update action.
     public ActionResult Update(ExpandoObject value)
     {
         if (value != null)
         {
             var dict = (IDictionary<string, object>)value;
             long orderId = dict.ContainsKey("OrderID") ? Convert.ToInt32(dict["OrderID"]) : 0;
-
-            DataRow rowToUpdate = ordersTable.Rows.Cast<DataRow>()
-                .FirstOrDefault(row => row.Field<int>("OrderID") == orderId);
-
+            DataRow rowToUpdate = ordersTable.Rows.Cast<DataRow>().FirstOrDefault(row => row.Field<int>("OrderID") == orderId);
             if (rowToUpdate != null)
             {
                 rowToUpdate["CustomerID"] = dict.ContainsKey("CustomerID") ? dict["CustomerID"].ToString() : string.Empty;
@@ -93,11 +88,9 @@ public class HomeController : Controller
 
         return Json(value, JsonRequestBehavior.AllowGet);
     }
-    // Delete action
     public ActionResult Delete(int key)
     {
-        var rowToDelete = ordersTable.AsEnumerable()
-                                .FirstOrDefault(row => row.Field<int>("OrderID") == key);
+        var rowToDelete = ordersTable.AsEnumerable().FirstOrDefault(row => row.Field<int>("OrderID") == key);
         if (rowToDelete != null)
         {
             ordersTable.Rows.Remove(rowToDelete);

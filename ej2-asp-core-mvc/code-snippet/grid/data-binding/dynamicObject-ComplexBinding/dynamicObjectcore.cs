@@ -34,7 +34,6 @@ public class DynamicList : DynamicObject
         {
             properties.Remove(property);
         }
-
         properties.Add(new KeyValuePair<string, object>(name, value));
         return true;
     }

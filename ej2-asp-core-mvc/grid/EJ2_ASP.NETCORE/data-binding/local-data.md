@@ -10,11 +10,11 @@ documentation: ug
 
 # Local data in ASP.NET Core Grid component
 
-The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid component. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
+The Syncfusion Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a IEnumerable object to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
-The following example demonstrates how to utilize the local data binding feature in the ASP.NET Core Grid component:
+The following example demonstrates how to utilize the local data binding feature in the ASP.NET Core Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -90,20 +90,20 @@ namespace signalR.Pages
             DataOperations operation = new DataOperations();
             if (dataManagerRequest.Search != null && dataManagerRequest.Search.Count > 0)
             {
-                DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);  //Search
+                DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);
             }
-            if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0) //Sorting
+            if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0)
             {
                 DataSource = operation.PerformSorting(DataSource, dataManagerRequest.Sorted);
             }
-            if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0) //Filtering
+            if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
             {
                 DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Operator);
             }
             int count = DataSource.Cast<OrdersDetails>().Count();
             if (dataManagerRequest.Skip != 0)
             {
-                DataSource = operation.PerformSkip(DataSource, dataManagerRequest.Skip); //Paging
+                DataSource = operation.PerformSkip(DataSource, dataManagerRequest.Skip);
             }
             if (dataManagerRequest.Take != 0)
             {
@@ -167,7 +167,7 @@ namespace signalR.Pages
 
 ```
 
-**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 namespace signalR.Models
@@ -226,7 +226,7 @@ namespace signalR.Models
 
 ```
 
-**Step 7:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Pages/Index.cshtml** file.
+**Step 7:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Pages/Index.cshtml** file. Add the following code:s
 
 ```ts
 <script src="js/microsoft/signalr/dist/browser/signalr.js"></script>
@@ -298,7 +298,7 @@ namespace signalR.Hubs
 using signalR.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddSignalR(); // Add SignalR services
+builder.Services.AddSignalR(); // Add SignalR services.
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddAntiforgery(o => o.HeaderName = "XSRF-TOKEN");
@@ -307,34 +307,33 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-app.MapHub<ChatHub>("/chatHub"); // Map the ChatHub
+app.MapHub<ChatHub>("/chatHub"); // Map the ChatHub.
 app.UseAuthorization();
 app.MapRazorPages();
 app.Run();
 
 ```
 
-The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides.
+The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides:
 
 ![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
 
 ## Binding data from excel file
 
-The Syncfusion Grid component allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [uploader](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started) component [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
+The Syncfusion Grid allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [uploader](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started) [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
 
 To import excel data in to Grid, you can follow these steps:
 
-1. Import excel file using Uploader component. 
+1. Import excel file using Uploader. 
 2. Parse the excel file data using **XLSX** library.
-3. Bind the JSON to the Grid component. 
+3. Bind the JSON to the Grid. 
 
-The following example demonstrates how to import Excel data into the Grid by utilizing the **Uploader** component's `change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the Grid by utilizing the **Uploader** `change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -481,7 +480,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
 
 ```
 
-**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an Fetch request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an Fetch request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -547,7 +546,7 @@ namespace FetchRequest.Pages
 
 ```
 
-**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 
@@ -619,7 +618,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -787,7 +785,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
 
 ```
 
-**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an AJAX request is sent to retrieve the data from the server and bind it to the Grid component. Additionally, implement server-side logic to perform add, edit, and delete operations.
+**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an AJAX request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -852,7 +850,7 @@ namespace AJAXRequest.Pages
 
 ```
 
-**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
+**Step 6:** Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code:
 
 ```cs
 
@@ -923,7 +921,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 app.UseHttpsRedirection();
@@ -960,7 +957,7 @@ The following example demonstrates how to display the loading indicator in the S
 
 Showing a spinner during data loading in the Syncfusion ASP.NET Core Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid component
+To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid.
 
 The following example demonstrates how to show and hide the spinner during data loading using external buttons in a Grid:
 
@@ -1002,7 +999,7 @@ The following example demonstrates how to enable immutable mode in an ASP.NET Co
 
 ## ExpandoObject binding
 
-The Syncfusion Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
+The Syncfusion Grid is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
 To bind an `ExpandoObject` to the Grid, you need to assign it to the `dataSource` property. The Grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
 
@@ -1021,7 +1018,7 @@ The following sample demonstrates ExpandoObject binding:
 
 This feature is useful for binding complex data structures to the Syncfusion Grid. You can achieve complex data binding with ExpandoObject by using the dot (.) operator in the column.field property. This allows you to access nested properties within the ExpandoObject.
 
-In the following example, the fields Customer.CustomerID ,Customer.OrderDate, Customer.Freight, and Customer.ShipCountry represent complex data bound to the Grid.
+In the following example, the fields **Customer.CustomerID**, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** represent complex data bound to the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

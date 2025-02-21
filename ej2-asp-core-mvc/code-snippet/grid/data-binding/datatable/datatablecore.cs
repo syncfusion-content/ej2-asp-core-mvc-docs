@@ -9,8 +9,6 @@ public void OnGet()
         new DataColumn("OrderDate", typeof(DateTime)),
         new DataColumn("ShipCity", typeof(string))
     });
-
-    // Sample data to populate the DataTable
     ordersTable.Rows.Add(10001, "ALFKI", 29.75m, new DateTime(1991, 05, 15), "Berlin");
     ordersTable.Rows.Add(10002, "ANATR", 15.00m, new DateTime(1990, 04, 04), "Madrid");
     ordersTable.Rows.Add(10003, "ANTON", 22.50m, new DateTime(1957, 11, 30), "London");
