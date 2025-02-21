@@ -124,7 +124,7 @@ namespace RemoteSaveAdaptor_MVC.Controllers
         }}}
 ```
 
-The following class is used to structure data sent during CRUD operations:
+The below class is used to structure data sent during CRUD operations.
 
 ```cs
  public class CRUDModel<T> where T : class
@@ -230,9 +230,9 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 
 ## Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
-To integrate the Syncfusion Core Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
-**Step 1:** Install ASP.NET MVC package:
+**Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
 To add `ASP.NET MVC` in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
 Alternatively, you can install it using the following Package Manager Console command:
@@ -265,9 +265,9 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <!-- Syncfusion ASP.NET MVC control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <!-- Syncfusion ASP.NET MVC control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET MVC controls: -->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -319,8 +319,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
-                () { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
                 {
                     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
                     col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
