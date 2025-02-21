@@ -11,7 +11,7 @@ documentation: ug
 
 # ODataV4Adaptor in Syncfusion ASP.NET Core Grid 
 
-The `ODataV4Adaptor` in the Syncfusion ASP.NET Core Grid allows seamless integration of the ASP.NET Core Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
+The `ODataV4Adaptor` in the Syncfusion Grid allows seamless integration of the ASP.NET Core Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
 
 ## Creating an OData Service
 
@@ -180,9 +180,9 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -278,7 +278,7 @@ modelBuilder.EntitySet<OrdersDetails>("Orders");
 builder.Services.AddControllers().AddOData(
     options => options
         .Count()
-        .Filter() //Searching.
+        .Filter() 
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
@@ -320,7 +320,7 @@ modelBuilder.EntitySet<OrdersDetails>("Orders");
 builder.Services.AddControllers().AddOData(
     options => options
         .Count()
-        .Filter() // Filtering.
+        .Filter()
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
@@ -366,7 +366,7 @@ modelBuilder.EntitySet<OrdersDetails>("Orders");
 builder.Services.AddControllers().AddOData(
     options => options
         .Count()
-        .OrderBy() // Sorting.
+        .OrderBy() 
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
@@ -555,7 +555,7 @@ public IActionResult Delete(int key)
 
 ## Odata with custom url
 
-The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the `Datamanager`.
 
 **Configuring Custom URLs**
 
@@ -575,10 +575,11 @@ The following code example describes the above behavior.
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-data-manager url="https://localhost:xxxx/odata/Orders"
-      updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
-      insertUrl= "https://localhost:xxxx/odata/Orders/Insert" 
-      removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
-      adaptor="ODataV4Adaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
+                    updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
+                    insertUrl= "https://localhost:xxxx/odata/Orders/Insert" 
+                    removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
+                    adaptor="ODataV4Adaptor">
+    </e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
             <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
             <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
@@ -596,8 +597,9 @@ For batch editing, you can specify a custom batch URL as follows:
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-data-manager url="https://localhost:xxxx/odata/Orders" 
-     BatchUrl= "https://localhost:xxxx/odata/Orders/BatchUpdate"
-    updateadaptor="ODataV4Adaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
+                    batchUrl= "https://localhost:xxxx/odata/Orders/BatchUpdate"
+                    adaptor="ODataV4Adaptor">
+    </e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
             <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
             <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
