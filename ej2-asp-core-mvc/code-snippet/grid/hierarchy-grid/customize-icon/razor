@@ -4,7 +4,7 @@
         DataSource = (IEnumerable<object>)ViewBag.DataSource,
         QueryString = "EmployeeID",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
-         new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
+         new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", TextAlign="Right", Width="120" },
          new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
          new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
          new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="130" },
