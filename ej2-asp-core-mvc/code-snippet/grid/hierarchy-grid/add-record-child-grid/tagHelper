@@ -8,7 +8,7 @@
         EditSettings = new Syncfusion.EJ2.Grids.GridEditSettings{ AllowAdding = true, AllowEditing = true, AllowDeleting = true },
         ActionBegin="actionBegin",
         Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
-            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120", IsPrimaryKey=true  },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID",TextAlign="Right", Width="120", IsPrimaryKey=true  },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="EmployeeID", HeaderText="Employee ID", AllowEditing=false, Width="150" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
             new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="130" },
