@@ -18,15 +18,25 @@ In the Image Editor, the toolbar property provides the ability to customize the 
 
 Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
 
-* Crop
-* Transform
-* Annotate
+* Open
+* Undo
+* Redo
 * ZoomIn
 * ZoomOut
-* Open
+* Crop
+* RotateLeft
+* RotateRight
+* HorizontalFlip
+* VerticalFlip
+* Straightening
+* Annotate
+* Finetune
+* Filter
+* Frame
+* Resize
+* Redact
 * Reset
 * Save
-* Pan
 
 ## Add a custom toolbar items
 
@@ -210,7 +220,7 @@ Output be like the below.
 
 The [`toolbarUpdating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarUpdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the `toolbarItems` property in the `ToolbarEventArgs` is utilized to add or remove contextual toolbar items.
 
-In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
+In the following example, the contextual toolbar for freehand drawing will be rendered with only the stroke color, while the stroke width, remove, and separator options are excluded using the toolbarUpdating event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
