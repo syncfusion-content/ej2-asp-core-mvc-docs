@@ -153,7 +153,7 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
   /// <summary>
   /// Inserts a new data item into the data collection.
   /// </summary>
-  /// <param name="addRecord">The order to be inserted.</param>
+  /// <param name="newRecord">The order to be inserted.</param>
   /// <returns>It returns the newly inserted record detail.</returns>
   [HttpPost]
   [Route("api/Orders/Insert")]
