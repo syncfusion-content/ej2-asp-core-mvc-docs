@@ -264,6 +264,37 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 
 ![Hide the expand or collapse icon](images/hierarchy-grid/hide-expand-icon.png)
 
+## Customize hierarchy Grid icons
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid provides built-in expand/collapse icons for hierarchical Grid. However, you can customize these icons using custom CSS to modify their visual representation.
+
+To change the default icons, add the following CSS styles to your **index.html** file:
+
+```
+    .e-grid .e-icon-grightarrow::before,
+        .e-grid-menu .e-icon-grightarrow::before {
+            content: '\e7f9';
+        }
+    .e-grid .e-icon-gdownarrow::before,
+        .e-grid-menu .e-icon-gdownarrow::before {
+            content: '\e7d8';
+        }
+
+```
+
+In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/hierarchy-grid/customize-icon/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Html.cs" %}
+{% include code-snippet/grid/hierarchy-grid/customize-icon/html.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Customize hierarchy Grid icons](images/hierarchy-grid/change-icon.png)
+
 ## Customize the child grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
