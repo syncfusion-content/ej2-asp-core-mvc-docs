@@ -266,7 +266,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 
 ## Customize hierarchy Grid icons
 
-The Syncfusion Grid component provides built-in expand/collapse icons for hierarchical Grid. However, you can customize these icons using CSS to modify their visual representation.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides built-in expand/collapse icons for hierarchical Grid. However, you can customize these icons using custom CSS to modify their visual representation.
 
 To change the default icons, add the following CSS styles to your **index.html** file:
 
