@@ -8,7 +8,6 @@
         new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipAddress", HeaderText="ShipAddress", Width="90" },
       }
   };
-
   var ChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.DataSource,
       QueryString = "EmployeeID",
       Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
@@ -21,7 +20,6 @@
       ChildGrid = SecondChildGrid
     };
 }
-
 <div style="display: flex">
   <label style="padding: 3px 10px 26px 0;font-weight:bold">  Select Mode: </label>
   <span style="height:fit-content">
@@ -37,8 +35,7 @@
 
  }).Toolbar(new List<string>() { "Print" }).ChildGrid(ChildGrid).Render()
  <script>
-     function onModeChange(args) {
-         document.getElementById('HierarchyPrint').ej2_instances[0].hierarchyPrintMode = args.value;
-     };
-
+  function onModeChange(args) {
+    document.getElementById('HierarchyPrint').ej2_instances[0].hierarchyPrintMode = args.value;
+  };
  </script>

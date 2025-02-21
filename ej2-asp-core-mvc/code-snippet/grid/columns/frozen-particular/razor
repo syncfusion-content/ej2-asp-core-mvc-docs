@@ -1,10 +1,24 @@
+@{
+    ViewBag.dropDownData = new List<object>
+    {
+        new { value = "OrderID", text = "Order ID" },
+        new { value = "CustomerID", text = "Customer ID" },
+        new { value = "EmployeeID", text = "Employee ID" },
+        new { value = "Freight", text = "Freight" },
+        new { value = "OrderDate", text = "Order Date" },
+        new { value = "ShipCountry", text = "Ship Country" },
+        new { value = "ShipCity", text = "Ship City" },
+        new { value = "ShipAddress", text = "Ship Address" },
+        new { value = "ShipName", text = "Ship Name" }
+    };
+}
 <div style="display: flex">
   <label style="padding: 10px 10px 26px 0"> Change the frozen column: </label>
   <span style="height:fit-content">
-   @Html.EJS().DropDownList("dropdown").Index(1).Width("180px").DataSource(@ViewBag.dropdownData).Change("columnChange").Render()
+    @Html.EJS().DropDownList("dropdown").Index(1).Width("180px").DataSource(@ViewBag.dropDownData).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Change("columnChange").Render()
   </span>
 </div>
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("CustomerID").HeaderText("Customer ID").IsFrozen(true).Width("130").Add();
@@ -16,7 +30,6 @@
     col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
 }).Render()
-
 <script type="text/javascript">
     function columnChange(args) {
         var grid = document.getElementById("Grid").ej2_instances[0];

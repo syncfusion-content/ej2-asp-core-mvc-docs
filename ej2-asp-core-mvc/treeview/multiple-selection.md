@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Multiple Selection in ##Platform_Name## Treeview Control | Syncfusion
-description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+title: Multiple Selection in ##Platform_Name## TreeView Control | Syncfusion
+description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Multiple Selection
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 # Multi Selection in TreeView Control
 
-Selection provides an interactive support and highlights the node that you select. Selection can be done through simple mouse down or keyboard interaction. 
+Selection provides interactive support and highlights the node that you select. Selection can be done through simple mouse down or keyboard interaction. 
 
 The TreeView also supports selection of multiple nodes by setting [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) to **true**. 
 
@@ -37,20 +37,20 @@ N> Multi selection is not applicable through touch interactions.
 {% include code-snippet/treeview/mutiselection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Multiselection.cs" %}
-{% include code-snippet/treeview/mutiselection/multiselection.cs %}
+{% include code-snippet/treeview/mutiselection/multiselection-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-Output be like the below.
+The output will look like the image below:
 
 ![TreeView Sample](./images/multiselect.PNG)
 
 ## Selected nodes
 
-You can get or set the selected nodes in TreeView at initial rendering and dynamically by using the [selectedNodes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~SelectedNodes.html) property. It will return the selected node’s ID as an array.
+You can get or set the selected nodes in TreeView at initial rendering and dynamically by using the [selectedNodes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~SelectedNodes.html) property. It will return the IDs of the selected nodes as an array.
 
 * The [`nodeselecting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeSelecting.html) event is triggered before a node is selected/unselected which can be used to prevent the selection.
 

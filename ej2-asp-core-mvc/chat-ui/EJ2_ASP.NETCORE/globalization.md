@@ -25,6 +25,9 @@ The Chat UI can be localized to any culture by defining the text of the Chat UI 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/globalization/localization/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Localization.cs" %}
+{% include code-snippet/chat-ui/globalization/localization/timestamp.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Localization](images/localization.png)
@@ -36,6 +39,9 @@ RTL provides an option to switch the text direction and layout of the Chat UI co
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/globalization/rtl/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Rtl.cs" %}
+{% include code-snippet/chat-ui/globalization/rtl/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 

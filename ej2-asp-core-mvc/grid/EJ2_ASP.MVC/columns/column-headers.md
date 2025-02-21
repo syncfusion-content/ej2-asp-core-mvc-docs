@@ -18,7 +18,7 @@ The `HeaderText` feature proves particularly beneficial when there is a need for
 
 By default, the header text of a column in Grid is displayed from the column's `Field` value. However, you can easily override the default header title and provide a custom header text for the column using the `HeaderText` property. 
 
-To enable the `HeaderText` property, you simply need to define it in the **e-grid-column** element. The following example demonstrates how to enable header text for a  Grid column.
+To enable the `HeaderText` property, you simply need to define it in the column element. The following example demonstrates how to enable header text for a Grid column.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -148,7 +148,7 @@ You can use CSS to override the default height of the **.e-grid .e-headercell** 
 
 To change the height of the header dynamically, you can use the `getHeaderContent` method to get the header content element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
 
-The following example demonstrates how to dynamically change the height of the header based on a Button `click` event.
+The following example demonstrates how to dynamically change the height of the header based on a [Button](https://ej2.syncfusion.com/aspnetmvc/documentation/button/getting-started) click event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -237,7 +237,7 @@ Follow the below steps to change the orientation of the header text in Grid:
 
 **Step 1**: **Create a CSS class with orientation style for grid header cell**
 
-To `rotate` the header text, you can create a CSS class with the `transform` property that rotates the header text 90 degrees. This class will be added to the header cell using the `CustomAttributes` property.
+To `rotate` the header text, you can create a CSS class with the `Transform` property that rotates the header text 90 degrees. This class will be added to the header cell using the `CustomAttributes` property.
 
 ```css
 .orientationcss .e-headercelldiv {
@@ -288,7 +288,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 
 Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This can be useful in situations where there is not enough space to display all of the information related to a column, or when there is additional context that may be helpful.
 
-To enable custom tooltips for headers, you can use the `BeforeRender` event of the Grid component. This event is triggered for each header cell before it is rendered, allowing you to add a custom tooltip to the header cell using `tooltip` component.
+To enable custom tooltips for headers, you can use the `BeforeRender` event of the Grid component. This event is triggered for each header cell before it is rendered, allowing you to add a custom tooltip to the header cell using [Tooltip](https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started) component.
 
 Here's an example of how to use the `BeforeRender` event to add a custom tooltip to a header cell:
 

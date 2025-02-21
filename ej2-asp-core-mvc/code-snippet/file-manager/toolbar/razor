@@ -1,45 +1,34 @@
-
+@{
+    string[] items = new string[] { "NewFolder", "Refresh", "View", "Details" };
+}
 <div class="control-section">
     <div class="sample-container">
-        <!--  Filemanager element declaration -->
-        @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
+        <!--  Filemanager control declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
         {
             Url = "/Home/FileOperations",
             GetImageUrl = "/Home/GetImage",
             UploadUrl = "/Home/Upload",
             DownloadUrl = "/Home/Download"
-        }).ToolbarItems(new List<FileManagerToolbarItem> {
-                new FileManagerToolbarItem { Name= "NewFolder" },
-                new FileManagerToolbarItem { Name= "Upload" },
-                new FileManagerToolbarItem { Name= "SortBy" },
-                new FileManagerToolbarItem { Name= "Refresh" },
-                new FileManagerToolbarItem { Name= "Cut" },
-                new FileManagerToolbarItem { Name= "Copy" },
-                new FileManagerToolbarItem { Name= "Paste" },
-                new FileManagerToolbarItem { Name= "Delete" },
-                new FileManagerToolbarItem { Name= "Download" },
-                new FileManagerToolbarItem { Name= "Rename" },
-                new FileManagerToolbarItem { Template= "#checkboxTemplate", Name= "Select" },
-                new FileManagerToolbarItem { Name= "Selection" },
-                new FileManagerToolbarItem { Name= "View" },
-                new FileManagerToolbarItem { Name= "Details" }
-              }).Render()
-        <!-- end of filemanager element -->
-        @Html.EJS().CheckBox("checkboxTemplate").Change("onChange").Checked(false).Label("Select All").Render()
+        }).ToolbarSettings(new Syncfusion.EJ2.FileManager.FileManagerToolbarSettings()
+        {
+            Items = items
+        }).ToolbarClick("toolbarClick").ToolbarCreate("onCreate").Render()
+        <!-- end of File Manager control -->
     </div>
 </div>
-
 <script>
-    function onChange(args) {
-        var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
-        var checkboxInstance = document.getElementById("checkBoxTemplate").ej2_instances[0];
-        if (args.checked) {
-            filemanagerInstance.selectAll(); 
-            checkboxInstance.label = 'Unselect All';
+    // event for custom toolbar item
+    function toolbarClick(args) {
+        if (args.item.text === 'Custom') {
+            alert('You have clicked custom toolbar item')
         }
-        else {
-            filemanagerInstance.clearSelection();
-            checkboxInstance.label = 'Select All';
+    }
+    function onCreate(args) {
+        for (var i = 0; i < args.items.length; i++) {
+            if (args.items[i].id === this.element.id + '_tb_custom') {
+                args.items[i].prefixIcon = 'e-icons e-fe-tick';
+            }
         }
     }
 </script>

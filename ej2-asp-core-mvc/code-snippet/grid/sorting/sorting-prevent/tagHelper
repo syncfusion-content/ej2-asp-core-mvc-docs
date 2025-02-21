@@ -1,4 +1,4 @@
-<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" height="348px" >
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" height="348px">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer Name" width="150" allowSorting="false"></e-grid-column>

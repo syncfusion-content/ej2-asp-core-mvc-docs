@@ -1,7 +1,9 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
 
-    @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Render()
+@Html.EJS().ListView("element")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Render()
 
 
 <style>

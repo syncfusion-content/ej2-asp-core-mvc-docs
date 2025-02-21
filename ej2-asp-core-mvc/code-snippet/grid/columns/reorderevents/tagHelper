@@ -1,5 +1,4 @@
 <p id='message' style="color:red;text-align:center"></p>
-
 <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowReordering='true' columnDragStart="columnDragStart" columnDrag="columnDrag" columnDrop="columnDrop">
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width="120"></e-grid-column>
@@ -10,13 +9,11 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <style>
     .e-grid .e-headercell.customcss, .e-grid .e-rowcell.customcss {
         background-color: rgb(43, 195, 226);
     }
 </style>
-
 <script type="text/javascript">
     function columnDragStart(args) {
         document.getElementById('message').innerText = `columnDragStart event triggered`;
@@ -24,14 +21,12 @@
             args.cancel = true; // Prevent reordering
         }
     }
-
     function columnDrag(args) {
         var index = args.target.getAttribute('data-colIndex');
         if (index) {
             document.getElementById('message').innerText = `columnDrag event triggered. ${args.column.headerText} column is dragged to index ${index}`;
         }
     }
-
     function columnDrop(args) {
         document.getElementById('message').innerText = `columnDrop event triggered`;
         if (args.column.allowReordering === true) {

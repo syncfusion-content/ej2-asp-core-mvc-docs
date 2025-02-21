@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager Component
-description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Localization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization
 
-The file manager can be localized to any culture by defining the texts and messages of the file manager in the corresponding culture. The default locale of the file manager is `en`(English). The following table represents the default texts and messages of the file manager in `en` culture.
+The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 
 |KEY|Text/Message|
 |----|----|
@@ -72,7 +72,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Header-Rename|Rename|
 |Content-Rename|Enter your new name|
 |Header-Rename-Confirmation|Rename Confirmation|
-|Content-Rename-Confirmation|If you change a file name extension|
+|Content-Rename-Confirmation|If you change a file name extension, the file might become unstable. Are you sure you want to change it?|
 |Header-Delete|Delete File|
 |Content-Delete|Are you sure you want to delete this file?|
 |Header-Multiple-Delete|Delete Multiple Files|
@@ -86,7 +86,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Validation-Empty|The file or folder name cannot be empty.|
 |Validation-Invalid|The file or folder name {0} contains invalid characters. Use a different name. Valid file or folder names cannot end with a dot or space, and cannot contain any of the following characters: \\/:*?\"<>\||
 |Validation-NewFolder-Exists|A file or folder with the name {0} already exists.|
-|Validation-Rename-Exists|Cannot rename {0} to {1}|
+|Validation-Rename-Exists|Cannot rename {0} to {1}, destination already exists.|
 |Folder-Empty|This folder is empty|
 |File-Upload|Drag files here to upload|
 |Search-Empty|No results found|
@@ -108,7 +108,7 @@ The file manager can be localized to any culture by defining the texts and messa
 |Network-Error|NetworkError: Failed to send on XMLHTTPRequest: Failed to load|
 |Server-Error|ServerError: Invalid response from|
 
-The below example shows adding the German culture locale(`de-DE`)
+The example below shows how to add the German culture locale(`de-DE`)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -116,8 +116,8 @@ The below example shows adding the German culture locale(`de-DE`)
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/locale/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/locale/HomeController_mvc.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/locale/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,6 +135,6 @@ The below example shows adding the German culture locale(`de-DE`)
 
 
 
-Output be like the below.
+The output will look like the image below.
 
 ![Localization](./images/localization.png)

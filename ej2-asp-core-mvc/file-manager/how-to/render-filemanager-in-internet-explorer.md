@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Render Filemanager In Internet Explorer in ##Platform_Name## File Manager Component
-description: Learn here all about Render Filemanager In Internet Explorer in Syncfusion ##Platform_Name## File Manager component of syncfusion and more.
+title: Render File Manager In IE ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Render File Manager In Internet Explorer in Syncfusion ##Platform_Name## File Manager control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Render Filemanager In Internet Explorer
+control: Render File Manager In Internet Explorer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Render FileManager in Internet Explorer
 
-In the Internet Explorer browser, ES6 promise polyfills are required to run the file manager component. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 components browser compatibility.
+In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 controls' browser compatibility.
 
-To render the file manager component in Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scripts in `layout` page.
+To render the File Manager control in the Internet Explorer browser, add the ES6 promise polyfill script above the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 Scripts in the `layout` page.
 
   ```html
      <head>
@@ -23,7 +23,7 @@ To render the file manager component in Internet Explorer browser, add the ES6 p
      </head>
    ```
 
-After adding the script file in `layout` page, render the file manager component. The following example shows how to render the file manager in IE browser.
+After adding the script file in the `layout` page, render the File Manager control. The following example shows how to render the File Manager in IE browser.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -31,8 +31,8 @@ After adding the script file in `layout` page, render the file manager component
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/filemanager-in-ie/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Layout_mvc.cshtml" %}
-{% include code-snippet/file-manager/filemanager-in-ie/Layout_mvc.cshtml %}
+{% highlight c# tabtitle="HomeController_core.cshtml" %}
+{% include code-snippet/file-manager/filemanager-in-ie/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,6 +50,6 @@ After adding the script file in `layout` page, render the file manager component
 
 
 
-Output be like the below.
+The output will look like the image below.
 
 ![FileManager largeicons view](./../images/large_icons.PNG)
