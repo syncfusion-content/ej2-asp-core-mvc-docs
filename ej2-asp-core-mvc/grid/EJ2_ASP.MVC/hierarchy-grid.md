@@ -282,7 +282,7 @@ To change the default icons, add the following CSS styles to your **index.html**
 
 ```
 
-In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons.
+In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
