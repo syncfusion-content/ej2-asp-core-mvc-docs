@@ -60,7 +60,7 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% highlight c# tabtitle="aggregate.cs" %}
 {% include code-snippet/grid/aggregate/aggregates-types/aggregate.cs %}
 {% endhighlight %}
-{% endtabs %}s
+{% endtabs %}
 
 ![Built-in aggregate types](../images/aggregates/aggregate-types.png)
 
