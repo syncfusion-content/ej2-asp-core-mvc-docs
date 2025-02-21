@@ -252,9 +252,8 @@ To handle search operation, implement search logic on the server side according 
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
-// GET: api/Orders
-[HttpGet]
 
+[HttpGet]
 public object Get()
 {
   var queryString = Request.Query;
@@ -312,7 +311,6 @@ To handle filter operations, ensure that your Web API endpoint supports filterin
 {% highlight cs tabtitle="OrdersController.cs" %}
 
 [HttpGet]
-
 public object Get()
 {
   var queryString = Request.Query;
@@ -390,7 +388,6 @@ To handle sorting action, implement sorting logic on the server-side according t
 {% highlight cs tabtitle="OrdersController.cs" %}
 
 [HttpGet]
-
 public object Get()
 {
     var queryString = Request.Query;
@@ -445,7 +442,6 @@ Implement paging logic on the server-side according to the received OData-format
 {% highlight cs tabtitle="OrdersController.cs" %}
 
 [HttpGet]
-
 public object Get()
 {
     var queryString = Request.Query;
@@ -479,7 +475,7 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET Core applicat
 {% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
 <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
-        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
