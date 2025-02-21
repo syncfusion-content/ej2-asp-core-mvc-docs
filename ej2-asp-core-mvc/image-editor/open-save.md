@@ -82,7 +82,7 @@ Output be like the below.
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the open method, and the image will be loaded into the editor.
 
-**Note:**: You can obtain the Base64 representation of an image from the Image Editor using the [`getImageData`] method. This process will be explained in the upcoming section.
+**Note:**: You can obtain the Blob URL representation of an image from the Image Editor using the [`getImageData`] method. This process will be explained in the upcoming section.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
