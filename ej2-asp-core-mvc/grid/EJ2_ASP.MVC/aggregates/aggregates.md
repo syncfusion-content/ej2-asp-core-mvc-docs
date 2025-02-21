@@ -10,11 +10,11 @@ documentation: ug
 
 # Aggregates in ASP.Net MVC Grid component
 
-The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **Aggregates** property. To represent an aggregate column, you need to specify the minimum required properties, such as `Field` and `Type`.
+The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the Grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **Aggregates** property. To represent an aggregate column, you need to specify the minimum required properties, such as `Field` and `Type`.
 
 **Displaying aggregate values**
 
-By default, the aggregate values are displayed in the footer, group, and caption cells of the grid. However, you can choose to display the aggregate value in any of these cells by using the following properties:
+By default, the aggregate values are displayed in the footer, group, and caption cells of the Grid. However, you can choose to display the aggregate value in any of these cells by using the following properties:
 
 * **`FooterTemplate`:** Use this property to display the aggregate value in the footer cell. You can define a custom template to format the aggregate value as per your requirements.
 
@@ -33,7 +33,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ![Aggregates](../images/aggregates/aggregates.png)
 
-> * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
+> * When using local data, the total summary is calculated based on the entire dataset available in the Grid. The aggregate values will reflect calculations across all the rows in the Grid.
 
 > * When working with remote data, the total summary is calculated based on the current page records. This means that if you have enabled pagination and are displaying data in pages, the aggregate values in the footer will represent calculations only for the visible page.
 
