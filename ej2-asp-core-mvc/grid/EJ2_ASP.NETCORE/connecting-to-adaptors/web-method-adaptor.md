@@ -190,9 +190,9 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -270,7 +270,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will succ
 > * The Syncfusion ASP.NET Core Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest` and `QueryableOperation`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
-> * In the `WebMethodAdaptor` configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
+> * In the `WebMethodAdaptor` configuration, the properties of the `DataManager` object are encapsulated within an object named **value**. To access the `DataManager` properties, a dedicated class is created, representing the **value** object.
     ```cs
     // Model for handling data manager requests.
     public class DataManager
@@ -469,7 +469,6 @@ public object Post([FromBody] DataManager DataManagerRequest)
     // Handling paging operation.
     if (DataManagerParams.Skip != 0)
     {
-        // Paging.
         DataSource = queryableOperation.PerformSkip(DataSource, DataManagerParams.Skip);
     }
     if (DataManagerParams.Take != 0)
@@ -697,7 +696,7 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 
 **Batch Operation**
 
-To perform batch operation, set the edit `mode` as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, set the edit `mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}

@@ -239,7 +239,7 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET Core Package:
 
@@ -274,10 +274,9 @@ To include the required styles and scripts, add the following references inside 
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
-    ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -374,7 +373,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
               console.error("Grid instance not found!");
               return;
           }
-        grid.dataSource = data
+          grid.dataSource = data
         }
     </script>
 }
