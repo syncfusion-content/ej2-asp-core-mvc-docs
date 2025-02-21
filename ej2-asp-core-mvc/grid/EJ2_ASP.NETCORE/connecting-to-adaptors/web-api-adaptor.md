@@ -169,9 +169,9 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls: -->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -392,7 +392,7 @@ public object Get()
 {
     var queryString = Request.Query;
     var data = OrdersDetails.GetAllRecords().ToList();
-    string sort = queryString["$orderby"];   //Sorting.     
+    string sort = queryString["$orderby"];    
     if (!string.IsNullOrEmpty(sort))
     {
         var sortConditions = sort.Split(',');
