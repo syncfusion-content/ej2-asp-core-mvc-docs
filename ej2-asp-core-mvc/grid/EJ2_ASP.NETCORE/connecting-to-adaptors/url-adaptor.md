@@ -93,7 +93,7 @@ Create a model class named **OrdersDetails.cs** inside the **Models** folder on 
 
 **3. API Controller Creation:**
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the ASP.NET Core Grid component.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the ASP.NET Core Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -145,11 +145,7 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion ASP.NET Core Grid to an API Service
 
-To integrate the Syncfusion Grid control into your ASP.NET Core project using Visual Studio, follow these steps:
-
-## Connecting Syncfusion ASP.NET Core Grid to an API Service
-
-To integrate the Syncfusion Core Grid into your ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET Core Package:
 
@@ -185,9 +181,9 @@ To include the required styles and scripts, add the following references inside 
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
+    <!-- Syncfusion ASP.NET Core control styles -->
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
@@ -263,9 +259,9 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will succ
 > * The Syncfusion ASP.NET Core Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `UrlAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest` and `QueryableOperation`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
-> * In the `UrlAdaptor` configuration, the properties of the DataManager object are encapsulated within an object named **value**. To access the DataManager properties, a dedicated class is created, representing the **value** object.
+> * In the `UrlAdaptor` configuration, the properties of the `DataManager` object are encapsulated within an object named **value**. To access the `DataManager` properties, a dedicated class is created, representing the **value** object.
     ```cs
-    // Model for handling data manager requests
+    // Model for handling data manager requests.
     public class DataManager
     {
         public required DataManagerRequest Value { get; set; }
@@ -437,14 +433,12 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling paging operation.
   if (DataManagerRequest.Skip != 0)
   {
-    // Paging
     DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
   }
   if (DataManagerRequest.Take != 0)
   {
     DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
   }
-
   // Return data based on the request.
   return new { result = DataSource, count = totalRecordsCount };
 }
@@ -454,7 +448,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
  <ejs-grid id="Grid" allowPaging="true" height="280">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-          <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
         <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
@@ -478,7 +472,7 @@ The following properties enable the Grid to interact with API endpoints for diff
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET Core Grid component, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshtml" %}
@@ -501,7 +495,7 @@ To enable editing in ASP.NET Core Grid component, refer to the editing [document
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `mode` for the Grid component. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -659,7 +653,7 @@ The following code example describes the above behavior.
 
 **Batch Operation**
 
-To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -674,7 +668,7 @@ To perform batch operation, define the edit `mode` as **Batch** and specify the 
         OrdersDetails.GetAllRecords().Insert(0, addedOrder);
       }
     }
-  if (batchOperation.changed != null)
+    if (batchOperation.changed != null)
     {
       foreach (var changedOrder in batchOperation.changed)
       {
@@ -687,7 +681,7 @@ To perform batch operation, define the edit `mode` as **Batch** and specify the 
         }
       }
     }
-  if (batchOperation.deleted != null)
+    if (batchOperation.deleted != null)
     {
       foreach (var deletedOrder in batchOperation.deleted)
       {
