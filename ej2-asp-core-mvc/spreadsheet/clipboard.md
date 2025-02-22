@@ -113,11 +113,14 @@ The following example shows, how to prevent the paste action in spreadsheet. In 
 {% endtabs %}
 {% endif %}
 
-
-
 ## Limitations
 
-* External clipboard is not fully supported while copying data from another source and pasting into a spreadsheet, it only works with basic supports (Values, Number, cell, and Text formatting).
 * If you copy =SUM(A2,B2) and paste, the formula reference will change depending on the pasted cell address but we don't have support for nested formula(formula reference will be same).
 * Clipboard is not supported with conditional formatting (values only pasting).
 * We have limitation while copying the whole sheet data and pasting it into another sheet.
+
+## External Limitations
+
+* External clipboard is not fully supported while copying data from another source and pasting into a spreadsheet, it only works with basic supports (Values, Number, cell, and Text formatting).
+* For a single spreadsheet instance, the clipboard functionalities work fine as expected. In another instance, the clipboard functionalities are supported with limitations. While copying any kind of text within a single instance will work fine with the context menu, the tool bar, and keyboard activity. But, when it comes to another instance the context menu, toolbar functionalities are limited. Only the keyboard actions works fine.
+* We have limitations regarding this functionality. We have provided the copy/paste support from an external clipboard using keyboard shortcuts (CTRL+C and CTRL+V) only.
