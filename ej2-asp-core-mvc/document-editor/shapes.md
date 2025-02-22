@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shapes in ##Platform_Name## Document Editor Component
+title: Shapes in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about shapes in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Shapes
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Shapes in DocumentEditor
+# Shapes in ##Platform_Name## Document Editor
 
 Shapes are drawing objects that include a text box, rectangles, lines, curves, circles, etc. It can be preset or custom geometry. At present, DocumentEditor does not have support to insert shapes. However, if the document contains a shape while importing, it will be preserved properly.
 

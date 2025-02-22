@@ -371,5 +371,5 @@ You can also achieve drill-up (back to the initial state) by using [chartMouseCl
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)
