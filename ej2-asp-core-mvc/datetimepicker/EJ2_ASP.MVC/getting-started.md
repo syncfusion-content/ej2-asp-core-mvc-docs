@@ -147,3 +147,5 @@ The minimum and maximum date time can be defined with the help of [Min](https://
 
 * [Render DateTimePicker with specific culture](./globalization)
 * [How to get and set value in DateTimePickerFor](./how-to/datetimepicker-for-mvc)
+
+N> You can also explore our [ASP.NET MVC DateTime Picker example](https://ej2.syncfusion.com/aspnetmvc/DateTimePicker/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the DateTime Picker in ASP.NET MVC.
