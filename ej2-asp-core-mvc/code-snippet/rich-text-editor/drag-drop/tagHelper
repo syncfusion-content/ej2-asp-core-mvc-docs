@@ -1,5 +1,5 @@
 <ejs-richtexteditor id="drag-drop">
-    <e-richtexteditor-insertimagesettings saveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save"></e-richtexteditor-insertimagesettings>
+    <e-richtexteditor-insertimagesettings saveUrl="https://services.syncfusion.com/aspnet/production/api/uploadbox/Save"></e-richtexteditor-insertimagesettings>
     <e-content-template>
         <p>
             The Rich Text Editor control is WYSIWYG ('what you see is what you get') editor that provides the best user experience to create and update the content.

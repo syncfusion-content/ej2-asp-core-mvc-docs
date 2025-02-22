@@ -1,5 +1,5 @@
 <ejs-richtexteditor id="editor" fileUploading="onFileUploading">
-    <e-richtexteditor-insertvideosettings saveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save" path="../Files/"></e-richtexteditor-insertvideosettings>
+    <e-richtexteditor-insertvideosettings saveUrl="https://services.syncfusion.com/aspnet/production/api/uploadbox/Save" path="../Files/"></e-richtexteditor-insertvideosettings>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
 </ejs-richtexteditor>
 
