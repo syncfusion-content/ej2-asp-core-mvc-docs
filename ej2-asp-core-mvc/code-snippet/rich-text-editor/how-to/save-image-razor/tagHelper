@@ -1,0 +1,21 @@
+@Html.AntiForgeryToken()
+<ejs-richtexteditor id="defaulRTE" imageUploadSuccess="onUploadSuccess" imageUploadFailed="onUploadFailure" imageUploading="addTokens" >
+    <e-richtexteditor-insertimagesettings saveFormat=Base64 path=https://localhost:7088/images/ saveUrl="@Url.Content("/Index?handler=Save")" removeUrl="@Url.Content("/Index?handler=Remove")">
+    </e-richtexteditor-insertimagesettings>
+</ejs-richtexteditor>
+
+<script>
+    function addTokens(args) {
+        if (args.currentRequest) {
+            args.currentRequest.setRequestHeader('XSRF-TOKEN', document.getElementsByName('__RequestVerificationToken')[0].value);
+        }
+    }
+    function onUploadSuccess(args) {
+        if (args.operation === 'upload') {
+            alert("Success");
+        }
+    }
+    function onUploadFailure(args) {
+        alert("Failed");
+    }
+</script>
