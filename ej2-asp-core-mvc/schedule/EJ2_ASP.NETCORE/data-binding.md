@@ -49,71 +49,7 @@ N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
 You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
-## Binding remote data
-
-Any kind of remote data services can be bound to the Scheduler. To do so, create an instance of `dataManager` and provide the service URL to the `Url` option of `dataManager` and then assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within `e-schedule-eventsettings`.
-
-### Using ODataV4Adaptor
-
-[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. Refer to the following code example to retrieve the data from ODataV4 service using the dataManager. To connect with ODataV4 service end points, it is necessary to make use of `ODataV4Adaptor` within `dataManager`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/Odata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/Odata/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Filter events using the in-built query
-
-To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IncludeFiltersInQuery) API can be set to true, this allows the filter query to be constructed using the start date, end date, and recurrence rule which in turn enables the request to be filtered accordingly.
-
-This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/OdataV4-filter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/OdataV4-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-The following image represents how the parameters are passed using ODataV4 filter.
-
-![OData V4 filter](images/odata-v4-filter.png)
-
-### Using custom adaptor
+## Custom binding
 
 It is possible to create your own custom adaptor by extending the built-in available adaptors. The following example demonstrates the custom adaptor usage and how to add a custom field `EventID` for the appointments by overriding the built-in response processing using the `processResponse` method of the `ODataV4Adaptor`.
 
@@ -140,104 +76,26 @@ It is possible to create your own custom adaptor by extending the built-in avail
 {% endtabs %}
 {% endif %}
 
+N> By default, `dataManager` uses `JsonAdaptor` for local data-binding.
 
+You can also bind different field names to the default event fields as well as include additional custom fields to the event object collection which can be referred [here](./appointments/#binding-different-field-names).
 
-## Loading data via AJAX post
+## Binding remote data
 
-You can bind the event data through external ajax request and assign it to the `dataSource` property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+Any kind of remote data services can be bound to the Scheduler. To do so, create an instance of `dataManager` and provide the service URL to the `Url` option of `dataManager` and then assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property within `e-schedule-eventsettings`.
 
-{% if page.publishingplatform == "aspnet-core" %}
+### Url adaptor
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/ajax/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/ajax/data.cs %}
-{% endhighlight %}
-{% endtabs %}
+You can use the [`UrlAdaptor`] when binding data source for remote data. During the initial load of Scheduler, data are fetched from remote data and bound to the Scheduler using the [Url] property of **DataManager**.
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+CRUD operations in the Scheduler can be mapped to server-side controller actions by using the properties [`InsertUrl`], [`RemoveUrl`], [`UpdateUrl`], and [`CrudUrl`].
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/ajax/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/ajax/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+* `InsertUrl` – You can perform a single insertion operation on the server-side.
+* `UpdateUrl` – You can update single data on the server-side.
+* `RemoveUrl` – You can remove single data on the server-side.
+* `CrudUrl` – You can perform bulk data operation on the server-side.
 
-
-
-N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
-
-## Passing additional parameters to the server
-
-To send an additional custom parameter to the server-side post, you need to make use of the `addParams` method of `query`. Now, assign this `query` object with additional parameters to the [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html)property of Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
-
-## Handling failure actions
-
-During the time of Scheduler interacting with server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event of Scheduler.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/failure-actions/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/schedule/data-binding/failure-actions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-The argument passed to the `actionFailure` event contains the error details returned from the server.
-
-## Scheduler CRUD actions
-
-The CRUD (Create, Read, Update and Delete) actions can be performed easily on Scheduler appointments using the various adaptors available within the `dataManager`. Most preferably, we will be using `UrlAdaptor` for performing CRUD actions on scheduler appointments.
+The following sample code demonstrates binding data to the Scheduler component through the SfDataManager using UrlAdaptor.
 
 ```sh
 @using Syncfusion.EJ2
@@ -258,7 +116,7 @@ The CRUD (Create, Read, Update and Delete) actions can be performed easily on Sc
 
 ```
 
-The server-side controller code to handle the CRUD operations are as follows.
+The server-side controller code to handle the CRUD operations is as follows.
 
 ```sh
 using System;
@@ -362,7 +220,216 @@ namespace ScheduleSample.Controllers
     }
 }
 ```
+
 N> You can find the working sample [here](https://github.com/SyncfusionExamples/aspnetcore-scheduler-crud-actions-with-editor-template).
+
+### Binding data with OData services
+
+[OData](https://www.odata.org/documentation/odata-version-3-0/) ((Open Data Protocol)) is a widely used protocol for creating and consuming RESTful APIs over various transport protocols such as HTTP, HTTPS, and others. It offers a standardized way for creating, retrieving, updating, and deleting data across various platforms and devices. OData provides a uniform way for interacting with data, which simplifies the task of developing and consuming RESTful APIs.
+
+You can retrieve data from OData service using the `dataManager`. Refer to the following code example for remote Data binding using OData service.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/Odata/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/Odata/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Binding data with OData V4 services
+
+[ODataV4](https://www.odata.org/documentation/) is a standardized protocol for creating and consuming data. Refer to the following code example to retrieve the data from ODataV4 service using the dataManager. To connect with ODataV4 service end points, it is necessary to make use of `ODataV4Adaptor` within `dataManager`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/Odata/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/Odata/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/Odata/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Filter events using the in-built query
+
+To enable server-side filtering operations based on predetermined conditions, the [`includeFiltersInQuery`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IncludeFiltersInQuery) API can be set to true, this allows the filter query to be constructed using the start date, end date, and recurrence rule which in turn enables the request to be filtered accordingly.
+
+This method greatly improves the component's performance by reducing the data that needs to be transferred to the client side. As a result, the component's efficiency and responsiveness are significantly enhanced, resulting in a better user experience. However, it is important to consider the possibility of longer query strings, which may cause issues with the maximum URL length or server limitations on query string length.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/OdataV4-filter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+  
+The following image represents how the parameters are passed using ODataV4 filter.
+
+![OData V4 filter](images/odata-v4-filter.png)
+
+### Web API adaptor
+
+You can bind Web API data to the scheduler using [`WebApiAdaptor`]. The following sample code demonstrates the way of binding remote services to the Scheduler component.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding//web-api/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/web-api/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/web-api/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/web-api/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Loading data via AJAX post
+
+You can bind the event data through external ajax request and assign it to the `dataSource` property of Scheduler. In the following code example, we have retrieved the data from server with the help of ajax request and assigned the resultant data to the `dataSource` property of Scheduler within the `onSuccess` event of Ajax.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/ajax/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/ajax/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/ajax/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/ajax/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+N> Definition for the controller method `GetData` can be referred [here](#scheduler-crud-actions).
+
+## Passing additional parameters to the server
+
+To send an additional custom parameter to the server-side post, you need to make use of the `addParams` method of `query`. Now, assign this `query` object with additional parameters to the [`query`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~Query.html)property of Scheduler.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/additional-parameter/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+N> The parameters added using the `query` property will be sent along with the data request sent to the server on every scheduler actions.
+
+## Handling failure actions
+
+During the time of Scheduler interacting with server, there are chances that some server-side exceptions may occur. You can acquire those error messages or exception details in client-side using the [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.Schedule~ActionFailure.html) event of Scheduler.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/failure-actions/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/data-binding/failure-actions/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/data-binding/failure-actions/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+The argument passed to the `actionFailure` event contains the error details returned from the server.
 
 ## Configuring Scheduler with Google API service
 
