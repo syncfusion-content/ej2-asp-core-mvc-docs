@@ -13,7 +13,7 @@ documentation: ug
 
 The issue, “The type initializer for 'Syncfusion.EJ2.PdfViewer.PdfiumNative' threw an exception” is due to the write access permission denied in the environment. The pdfium.dll will be created based on the operating system at the runtime. Due to the denial of permission, the pdfium.dll file couldn't have been created. So, copy the below x64 and x86 folders and paste them inside the folder into your project to resolve the issue or enable the write permission for that folder.
 
-Pdfium dll: [pdfium.dll](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Pdfium1515619754.zip)
+Pdfium dll: [pdfium.dll](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Pdfium-1405625594.zip)
 
 N> Use both the client and server-side of the same version in your project.
 <br/> Ensure whether the pdfium.dll file is created in your project during runtime. Else, place the pdfium assemblies in any of the production environment locations and refer to the path by using the ReferencePath API.
