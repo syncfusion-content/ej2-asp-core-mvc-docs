@@ -75,6 +75,35 @@ The following properties can be used to customize the [`Step Area`](https://help
 
 
 
+**No risers**
+
+You can eliminate the vertical lines between points by using the `NoRisers` property in a series. This approach is useful for highlighting trends without the distraction of risers.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-risers.cs" %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/no-risers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-risers.cs" %}
+{% include code-snippet/chart/series/area-charts/stepareaseries/no-risers/no-risers.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See also
 
 * [Data Label](../data-labels)

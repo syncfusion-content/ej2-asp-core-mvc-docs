@@ -111,9 +111,44 @@ The following sample shows the column selection in the spreadsheet, here selecti
 {% endtabs %}
 {% endif %}
 
+## Get selected cell values
 
+{% if page.publishingplatform == "aspnet-core" %}
 
-## How to remove selection in the spreadsheet
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. You can also programmatically perform selections using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled by the [selectionSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) property. Finally, you can retrieve the selected cell values as a collection using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can select single or multiple cells, rows, or columns using mouse and keyboard interactions. You can also programmatically perform selections using the [selectRange](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#selectrange) method. This selection behavior is controlled by the [selectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) property. Finally, you can retrieve the selected cell values as a collection using the [getData](https://helpej2.syncfusion.com/documentation/api/spreadsheet/#getdata) method.
+
+{% endif %}
+
+Below is a code example demonstrating how to retrieve the selected cell values as a collection programmatically:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/selected-cell-values/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SelectedCellValuesController.cs" %}
+{% include code-snippet/spreadsheet/selected-cell-values/selectedCellValuesController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/selected-cell-values/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SelectedCellValuesController.cs" %}
+{% include code-snippet/spreadsheet/selected-cell-values/selectedCellValuesController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Remove Selection
 
 The following sample shows, how to remove the selection in the spreadsheet. Here changing the `mode` as `None` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_SelectionSettings) to disable's the UI selection.
 
@@ -139,7 +174,6 @@ The following sample shows, how to remove the selection in the spreadsheet. Here
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 
 ## Limitations
