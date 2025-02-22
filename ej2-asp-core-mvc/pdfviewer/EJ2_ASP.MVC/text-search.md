@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text_search in ##Platform_Name## Pdfviewer Component
-description: Learn here all about Text_search in Syncfusion ##Platform_Name## Pdfviewer component of Syncfusion Essential JS 2 and more.
+title: Text search in ##Platform_Name## PDF Viewer Component | Syncfusion
+description: Learn here all about text search in Syncfusion ##Platform_Name## PDF Viewer component, it's elements and more.
 platform: ej2-asp-core-mvc
 control: Text_search
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Text Search
+# How to text search options in PDF Viewer
 
 The Text Search option in PDF Viewer is used to find and highlight the text content from the document. You can enable/disable the text search using the following code snippet.
 
