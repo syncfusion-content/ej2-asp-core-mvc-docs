@@ -13,5 +13,5 @@ documentation: ug
 You can install the EJ2 PDF Viewer packages automatically based by adding the PDF Viewer NuGet packages in your csproj file. When building the project, the required NuGet will be installed.
 
 ```cs
-<PackageReference Include="Syncfusion.EJ2.PdfViewer.AspNet.Core" Version="28.2.6" />
+<PackageReference Include="Syncfusion.EJ2.PdfViewer.AspNet.Core" Version="*" />
 ```
