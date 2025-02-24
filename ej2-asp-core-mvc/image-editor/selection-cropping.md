@@ -172,7 +172,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-cropping.jpg)
 
-## Resize selections
+## SelectionChanging event
 
 The selection region can be changed programmatically by using [selectionChanging](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.imageeditor.imageeditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_SelectionChanging) event. This event is activated during resizing the selection using mouse, and it allows for alterations to the selection region by adjusting the specified properties.
 
