@@ -14,11 +14,7 @@ documentation: ug
 The PDF Viewer server library allows you to extract the text from a page along with the bounds using TextLineCollection. Text extracting can be done using the **ExtractText()** method.
 
 Add the following dependency to your application using the `NuGet Package Manager`.
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-
-For Linux and OSX operating systems, use the corresponding libraries as follows:
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-* Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
+* Syncfusion.EJ2.PdfViewer.AspNet.Core
 
 N>From Volume 2 2019 release Syncfusion.Pdf.Net.Core and Syncfusion.Compression.Net.Core packages are added as dependency for PDF Viewer control. Ensure the dependency packages are referred in your application properly.
 
