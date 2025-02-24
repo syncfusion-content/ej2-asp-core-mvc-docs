@@ -19,6 +19,19 @@ public List<AppointmentData> GetScheduleData()
         Origin = "Asia/Yekaterinburg",
         Destination = "Asia/Yekaterinburg"
     });
+    appData.Add(new AppointmentData
+    {
+        TravelId = 2,
+        TravelSummary = "Tokyo",
+        DepartureTime = new DateTime(2018, 2, 16, 10, 0, 0),
+        ArrivalTime = new DateTime(2018, 2, 16, 12, 30, 0),
+        FullDay = false,
+        Source = "Beijing",
+        Comments = "Conference on emerging technologies.",
+        Origin = "Asia/Yekaterinburg",
+        Destination = "Asia/Yekaterinburg",
+        IsDisabled = true
+    });
     return appData;
 }
 
@@ -33,4 +46,5 @@ public class AppointmentData
     public string Comments { get; set; }
     public string Origin { get; set; }
     public string Destination { get; set; }
+    public Boolean IsDisabled {get; set;}
 }
