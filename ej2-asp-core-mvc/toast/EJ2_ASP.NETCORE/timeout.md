@@ -11,7 +11,7 @@ documentation: ug
 
 # Time out
 
-The toast can be expired based on the [`timeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_TimeOut) property. The toast can live till the time out reaches without user interaction, a time out value is considered as a millisecond.
+Use the [`timeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_TimeOut) property to set how long, in milliseconds, the toast will be displayed without user interaction.
 
 * The `timeOut` delay can be visually represented using `Progress Bar`.
 
