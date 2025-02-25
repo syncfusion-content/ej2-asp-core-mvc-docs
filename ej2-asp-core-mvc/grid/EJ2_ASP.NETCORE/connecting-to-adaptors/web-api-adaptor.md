@@ -15,7 +15,7 @@ The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact 
 
 To enable the OData query option for a Web API, please refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options), which provides detailed instructions on configuring the endpoint to understand OData-formatted queries.
 
-This section describes a step-by-step process for retrieving data service using `WebApiAdaptor`, then binding it to the ASP.NET Core Grid to facilitate data and CRUD operations.
+This section describes a step-by-step process for retrieving data service using `WebApiAdaptor`, then binding it to the Syncfusion ASP.NET Core Grid to facilitate data and CRUD operations.
 
 ## Creating a Web API Service
 
@@ -32,63 +32,60 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder on th
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 
- namespace WebApiAdaptor.Models
- {
- public class OrdersDetails
- {
+namespace WebApiAdaptor.Models
+{
+  public class OrdersDetails
+  {
     public static List<OrdersDetails> order = new List<OrdersDetails>();
     public OrdersDetails()
     {
 
     }
-    public OrdersDetails(
-    int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
-    DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
-    DateTime ShippedDate, string ShipAddress)
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
     {
-    this.OrderID = OrderID;
-    this.CustomerID = CustomerId;
-    this.EmployeeID = EmployeeId;
-    this.Freight = Freight;
-    this.ShipCity = ShipCity;
-    this.Verified = Verified;
-    this.OrderDate = OrderDate;
-    this.ShipName = ShipName;
-    this.ShipCountry = ShipCountry;
-    this.ShippedDate = ShippedDate;
-    this.ShipAddress = ShipAddress;
+      this.OrderID = OrderID;
+      this.CustomerID = CustomerId;
+      this.EmployeeID = EmployeeId;
+      this.Freight = Freight;
+      this.ShipCity = ShipCity;
+      this.Verified = Verified;
+      this.OrderDate = OrderDate;
+      this.ShipName = ShipName;
+      this.ShipCountry = ShipCountry;
+      this.ShippedDate = ShippedDate;
+      this.ShipAddress = ShipAddress;
     }
 
     public static List<OrdersDetails> GetAllRecords()
     {
-    if (order.Count() == 0)
-    {
+      if (order.Count() == 0)
+      {
         int code = 10000;
-        for (int i = 1; i < 10; i++)
+        for (int i = 1; i <= 2000; i++)
         {
-        order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-        order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-        order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-        order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-        order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-        code += 5;
+          order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+          order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+          order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+          order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+          order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+          code += 5;
         }
+      }
+      return order;
     }
-    return order;
-    }
-
+    [Key]
     public int? OrderID { get; set; }
-    public string? CustomerID { get; set; }
+    public string CustomerID { get; set; }
     public int? EmployeeID { get; set; }
     public double? Freight { get; set; }
-    public string? ShipCity { get; set; }
-    public bool? Verified { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
     public DateTime OrderDate { get; set; }
-    public string? ShipName { get; set; }
-    public string? ShipCountry { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
     public DateTime ShippedDate { get; set; }
-    public string? ShipAddress { get; set; }
- }
+    public string ShipAddress { get; set; }
+  }
 }
 
 {% endhighlight %}
@@ -96,7 +93,7 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder on th
 
 **3. API Controller Creation:**
 
-Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the ASP.NET Core Grid. Implement the **Get** method in the controller to return the data in JSON format, including the **Items** and **Count** properties as required by `WebApiAdaptor`.
+Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data communication with the Syncfusion ASP.NET Core Grid. Implement the **Get** method in the controller to return the data in JSON format, including the **Items** and **Count** properties as required by `WebApiAdaptor`.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -390,34 +387,34 @@ To handle sorting action, implement sorting logic on the server-side according t
 [HttpGet]
 public object Get()
 {
-    var queryString = Request.Query;
-    var data = OrdersDetails.GetAllRecords().ToList();
-    string sort = queryString["$orderby"];    
-    if (!string.IsNullOrEmpty(sort))
-    {
-        var sortConditions = sort.Split(',');
-        var orderedData = data.OrderBy(x => 0); // Start with a stable sort.
-        foreach (var sortCondition in sortConditions)
-        {
-            var sortParts = sortCondition.Trim().Split(' ');
-            var sortBy = sortParts[0];
-            var sortOrder = sortParts.Length > 1 && sortParts[1].ToLower() == "desc";
-            switch (sortBy)
-            {
-                case "OrderID":
-                    orderedData = sortOrder ? orderedData.ThenByDescending(x => x.OrderID) : orderedData.ThenBy(x => x.OrderID);
-                    break;
-                case "CustomerID":
-                    orderedData = sortOrder ? orderedData.ThenByDescending(x => x.CustomerID) : orderedData.ThenBy(x => x.CustomerID);
-                    break;
-                case "ShipCity":
-                    orderedData = sortOrder ? orderedData.ThenByDescending(x => x.ShipCity) : orderedData.ThenBy(x => x.ShipCity);
-                    break;
-            }
-        }
-        data = orderedData.ToList();
-    }
-    return new { Items = data, Count = data.Count() };
+  var queryString = Request.Query;
+  var data = OrdersDetails.GetAllRecords().ToList();
+  string sort = queryString["$orderby"];    
+  if (!string.IsNullOrEmpty(sort))
+  {
+      var sortConditions = sort.Split(',');
+      var orderedData = data.OrderBy(x => 0); // Start with a stable sort.
+      foreach (var sortCondition in sortConditions)
+      {
+          var sortParts = sortCondition.Trim().Split(' ');
+          var sortBy = sortParts[0];
+          var sortOrder = sortParts.Length > 1 && sortParts[1].ToLower() == "desc";
+          switch (sortBy)
+          {
+              case "OrderID":
+                  orderedData = sortOrder ? orderedData.ThenByDescending(x => x.OrderID) : orderedData.ThenBy(x => x.OrderID);
+                  break;
+              case "CustomerID":
+                  orderedData = sortOrder ? orderedData.ThenByDescending(x => x.CustomerID) : orderedData.ThenBy(x => x.CustomerID);
+                  break;
+              case "ShipCity":
+                  orderedData = sortOrder ? orderedData.ThenByDescending(x => x.ShipCity) : orderedData.ThenBy(x => x.ShipCity);
+                  break;
+          }
+      }
+      data = orderedData.ToList();
+  }
+  return new { Items = data, Count = data.Count() };
 }
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshmtl" %}
@@ -446,7 +443,7 @@ public object Get()
 {
     var queryString = Request.Query;
     var data = Orders.GetAllRecords().ToList();
-    // Perform Paging operation
+    // Perform Paging operation.
     int skip = Convert.ToInt32(queryString["$skip"]);
     int take = Convert.ToInt32(queryString["$top"]);
     return take != 0 ? new { Items = data.Skip(skip).Take(take).ToList(), Count = data.Count() } : new { Items = data, Count = data.Count() };
@@ -469,7 +466,7 @@ public object Get()
 
 To manage CRUD (Create, Read, Update, Delete) operations using the `WebApiAdaptor`, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PUT, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid within an ASP.NET Core application, follow the below steps:
+To enable CRUD operations in the Syncfusion ASP.NET Core Grid within an ASP.NET Core application, follow the below steps:
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
