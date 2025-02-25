@@ -1,0 +1,43 @@
+<div id="scroller" style="width: 100%; overflow-x: auto; height: 18px;"></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height(315).Width(500).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(80).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width(140).Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width(80).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width(130).Add();
+    col.Field("ShipAddress").HeaderText("Ship Address").Width(140).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(100).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
+    col.Field("ShipRegion").HeaderText("Ship Region").Width(80).Add();
+    col.Field("ShipPostalCode").HeaderText("Ship Postal Code").Width(110).Add();
+}).Created("onGridCreated").Render()
+</div>
+<script>
+    function onGridCreated() {
+        var grid = this; 
+        var scroller = document.getElementById('scroller'); 
+        var content = grid.getContent().firstElementChild; 
+        var contentTable = grid.getContentTable(); 
+
+        grid.element.insertBefore(scroller, content.parentElement);
+
+        scroller.onscroll = function () {
+            content.scrollLeft = scroller.scrollLeft;
+        };
+        content.onscroll = function () {
+            scroller.scrollLeft = content.scrollLeft;
+        };
+
+        function setScroller() {
+            if (contentTable) {
+                scroller.innerHTML = `<div style="width: ${contentTable.offsetWidth}px; height: 18px;"></div>`;
+                scroller.style.height = content.scrollWidth <= content.clientWidth ? '0px' : '18px';
+            }
+        }
+
+        setScroller();
+        window.onresize = setScroller; 
+    }
+</script>
