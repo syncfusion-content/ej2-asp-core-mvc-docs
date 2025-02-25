@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 # WebMethodAdaptor in Syncfusion ASP.NET Core Grid 
 
-The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URL Adaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URLAdaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
@@ -33,63 +33,60 @@ Create a model class named **OrdersDetails.cs** inside the **Models** folder on 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 
- namespace WebMethodAdaptor.Models
- {
- public class OrdersDetails
- {
+namespace WebMethodAdaptor.Models
+{
+  public class OrdersDetails
+  {
     public static List<OrdersDetails> order = new List<OrdersDetails>();
     public OrdersDetails()
     {
 
     }
-    public OrdersDetails(
-    int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
-    DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
-    DateTime ShippedDate, string ShipAddress)
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
     {
-    this.OrderID = OrderID;
-    this.CustomerID = CustomerId;
-    this.EmployeeID = EmployeeId;
-    this.Freight = Freight;
-    this.ShipCity = ShipCity;
-    this.Verified = Verified;
-    this.OrderDate = OrderDate;
-    this.ShipName = ShipName;
-    this.ShipCountry = ShipCountry;
-    this.ShippedDate = ShippedDate;
-    this.ShipAddress = ShipAddress;
+      this.OrderID = OrderID;
+      this.CustomerID = CustomerId;
+      this.EmployeeID = EmployeeId;
+      this.Freight = Freight;
+      this.ShipCity = ShipCity;
+      this.Verified = Verified;
+      this.OrderDate = OrderDate;
+      this.ShipName = ShipName;
+      this.ShipCountry = ShipCountry;
+      this.ShippedDate = ShippedDate;
+      this.ShipAddress = ShipAddress;
     }
 
     public static List<OrdersDetails> GetAllRecords()
     {
-    if (order.Count() == 0)
-    {
+      if (order.Count() == 0)
+      {
         int code = 10000;
-        for (int i = 1; i < 10; i++)
+        for (int i = 1; i <= 2000; i++)
         {
-        order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-        order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-        order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-        order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-        order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-        code += 5;
+          order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+          order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+          order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+          order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+          order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+          code += 5;
         }
+      }
+      return order;
     }
-    return order;
-    }
-
+    [Key]
     public int? OrderID { get; set; }
-    public string? CustomerID { get; set; }
+    public string CustomerID { get; set; }
     public int? EmployeeID { get; set; }
     public double? Freight { get; set; }
-    public string? ShipCity { get; set; }
-    public bool? Verified { get; set; }
+    public string ShipCity { get; set; }
+    public bool Verified { get; set; }
     public DateTime OrderDate { get; set; }
-    public string? ShipName { get; set; }
-    public string? ShipCountry { get; set; }
+    public string ShipName { get; set; }
+    public string ShipCountry { get; set; }
     public DateTime ShippedDate { get; set; }
-    public string? ShipAddress { get; set; }
- }
+    public string ShipAddress { get; set; }
+  }
 }
 
 {% endhighlight %}
@@ -97,7 +94,7 @@ Create a model class named **OrdersDetails.cs** inside the **Models** folder on 
 
 **3. API Controller Creation:**
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion Grid.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion ASP.NET Core Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -142,7 +139,7 @@ namespace WebMethodAdaptor.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-> The **GetOrderData** method retrieves sample order data. You can modify it to fetch data from a database or any other data source.
+> The **GetOrderData** method retrieves sample order data. You can modify it to fetch data from a database or any other source.
 
 **4. Run the Application:**
 
