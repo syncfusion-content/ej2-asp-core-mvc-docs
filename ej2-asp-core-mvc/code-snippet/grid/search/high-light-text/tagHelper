@@ -1,12 +1,11 @@
 <ejs-grid id="grid" dataSource='@ViewBag.datasource' toolbar="@(new List<string>() { "Search"})" height="350px" actionBegin="onActionBegin" queryCellInfo="onQueryCellInfo">
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-grid-column>
-        <e-grid-column field='ShipCity' headerText='Ship City' width=100></e-grid-column>
-        <e-grid-column field='ShipCountry' headerText='Ship Country' width=100></e-grid-column>
+        <e-grid-column field='CustomerID' headerText='Customer ID' width=100></e-grid-column>
         <e-grid-column field='ShipName' headerText='Ship Name' width=120></e-grid-column>
+        <e-grid-column field='ShipCountry' headerText='Ship Country' width=100></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     let key = '';
     function onActionBegin(args) {
@@ -19,22 +18,21 @@
             var cellContent = args.data[(args.column).field];
                 var parsedContent = cellContent.toString().toLowerCase();
             if (parsedContent.includes(this.key)) {
-                    var i = 0;
-                    var searchStr = '';
-                    while (i < this.key.length) {
-                        var index = parsedContent.indexOf(this.key[i]);
+                var i = 0;
+                var searchStr = '';
+                while (i < this.key.length) {
+                    var index = parsedContent.indexOf(this.key[i]);
                     searchStr = searchStr + cellContent.toString()[index];
-                        i++;
-                    }
-                    args.cell.innerHTML = args.cell.innerText.replaceAll(
-                        searchStr,
-                        "<span class='customcss'>" + searchStr + '</span>'
-                    );
+                    i++;
                 }
+                args.cell.innerHTML = args.cell.innerText.replaceAll(
+                    searchStr,
+                    "<span class='customcss'>" + searchStr + '</span>'
+                );
+            }
         }
     }
 </script>
-
 <style>
     .customcss {
         background-color: yellow;

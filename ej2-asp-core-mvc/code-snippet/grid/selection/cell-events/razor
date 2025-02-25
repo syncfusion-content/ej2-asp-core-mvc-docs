@@ -8,25 +8,21 @@
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).AllowPaging().AllowSelection().CellDeselecting("cellDeselecting").CellDeselected("cellDeselected").CellSelecting("cellSelecting").CellSelected("cellSelected").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell)).Render()
 <script>
-    function cellSelected(args)
-    {
+    function cellSelected(args) {
         document.getElementById("message").innerText = ` Trigger cellSelected`;
         args.currentCell.style.backgroundColor = 'rgb(96, 158, 101)';
     }
-    function cellSelecting(args)
-    {
+    function cellSelecting(args) {
         document.getElementById("message").innerText = `Trigger cellSelecting`;
         if (args.data.ShipCountry == 'France')
             args.cancel = true;
     }
 
-    function cellDeselected(args)
-    {
+    function cellDeselected(args) {
         document.getElementById("message").innerText = `Trigger cellDeselected`;
         args.cells[0].style.backgroundColor = 'rgb(245, 69, 69)';
     }
-    function cellDeselecting(args)
-    {
+    function cellDeselecting(args) {
         document.getElementById("message").innerText = `Trigger cellDeselecting`;
         args.cells[0].style.color = 'rgb(253, 253, 253)';
     }

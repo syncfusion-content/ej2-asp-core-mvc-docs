@@ -9,7 +9,6 @@
     List<object> sortOptions = new List<object>();
     sortOptions.Add(new { field = "CustomerID", direction = "Ascending" });
     sortOptions.Add(new { field = "ShipName", direction = "Descending" });
-
 }
 <div style="padding-bottom:20px">
     <div style="display: flex">

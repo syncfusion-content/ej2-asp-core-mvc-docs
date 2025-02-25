@@ -4,5 +4,4 @@
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("Freight").HeaderText("Freight").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-
 }).SearchSettings(search => { search.Fields(new string[] { "CustomerID" }).Key("Ha").Operator("contains").IgnoreCase(true); }).Toolbar(new List<string>() { "Search" }).Render()

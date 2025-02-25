@@ -1,4 +1,4 @@
-@using Syncfusion.EJ2.Navigations;
+@using Syncfusion.EJ2.Layouts;
 
 <div class="container" style="height: 350px">
     <ejs-timeline id="timeline" created="function(args){ createdEvent() }">

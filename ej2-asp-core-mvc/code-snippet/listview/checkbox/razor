@@ -1,8 +1,15 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
-<!-- ListView element -->
-@Html.EJS().ListView("folderCheckbox").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Tooltip = "text" }).ShowHeader(true).HeaderTitle("Mixed Leaf Checkbox Hidden List").ShowCheckBox(true).Select("onSelect").Render()
 
+@Html.EJS().ListView("folderCheckbox")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Fields(new ListViewFieldSettings { Tooltip = "text" })
+    .ShowHeader(true)
+    .HeaderTitle("Mixed Leaf Checkbox Hidden List")
+    .ShowCheckBox(true)
+    .Select("onSelect")
+    .Render()
+    
 <style>
     #folderCheckbox {
         border: 1px solid #dddddd;

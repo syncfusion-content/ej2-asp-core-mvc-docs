@@ -1,21 +1,19 @@
-
+@{
+  ViewBag.dropdownData = new string[] { "contains", "startswith", "endswith","wildcard","like","equal","notequal"  };
+}
 <div style="display: flex">
 	<label style="padding: 7px 10px 26px 0"> Change the search operators: </label>
 	<span style="height:fit-content">
 		@Html.EJS().DropDownList("search").Width("180px").Index(0).DataSource(@ViewBag.dropdownData).Change("change").Render()
 	</span>
 </div>
-
 @Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
-    col.Field("ShipName").HeaderText("ShipName").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-
 }).SearchSettings(search => { search.Operator("contains"); }).Toolbar(new List<string>() { "Search" }).Render()
-
-
 <script>
 	function change(args) {
 		var grid = document.getElementById("Search").ej2_instances[0];
