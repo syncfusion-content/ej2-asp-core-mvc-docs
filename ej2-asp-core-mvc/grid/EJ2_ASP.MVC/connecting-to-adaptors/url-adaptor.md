@@ -30,7 +30,7 @@ Create a model class named **Orders.cs** inside the **Models** folder on the ser
 {% tabs %}
 {% highlight cs tabtitle="Orders.cs" %}
 
- namespace UrlAdaptor_MVC.Models
+namespace UrlAdaptor_MVC.Models
 {
     public class Orders
     {
@@ -57,7 +57,7 @@ Create a model class named **Orders.cs** inside the **Models** folder on the ser
 
 **3. API Controller Creation:**
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion Grid.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -68,25 +68,24 @@ using UrlAdaptor_MVC.Models;
 
 namespace UrlAdaptor_MVC.Controllers
 {
-   
-    public class GridController : Controller
+  public class GridController : Controller
+  {
+    private static List<Orders> order = Orders.GetAllRecords();
+    [HttpPost]
+    public ActionResult UrlDatasource(DataManagerRequest dm)
     {
-        private static List<Orders> order = Orders.GetAllRecords();
+        // Retrieve data source and convert to queryable.
+        IEnumerable<Orders> DataSource = order;
+        DataOperations operation = new DataOperations();
 
-        [HttpPost]
-        public ActionResult UrlDatasource(DataManagerRequest dm)
-        {
-            // Retrieve data source and convert to queryable.
-            IEnumerable<Orders> DataSource = order;
-            DataOperations operation = new DataOperations();
+        // Get total record count.
+        int count = DataSource.Count();
 
-            // Get total record count.
-            int count = DataSource.Count();
-
-            // Return result and total record count.
-            return dm.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
-        }
-    }}
+        // Return result and total record count.
+        return dm.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
+    }
+ }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -203,20 +202,20 @@ To enable search functionality, ensure that your API endpoint supports custom se
  public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
  {
     // Retrieve data from the data source (e.g., database).
-     IEnumerable<Orders> DataSource = order;
-     DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
+    IEnumerable<Orders> DataSource = order;
+    DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
 
     // Handling Searching.
-     if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
-     {
-         DataSource = operation.PerformSearching(DataSource, DataManagerRequest.Search);
-     }
-    
+    if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+    {
+        DataSource = operation.PerformSearching(DataSource, DataManagerRequest.Search);
+    }
+
     // Get the total records count.
-     int count = DataSource.Count();
+    int count = DataSource.Count();
 
     // Return data based on the request.
-     return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
+    return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
@@ -247,7 +246,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
  [HttpPost]
  public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
  {
-    // Retrieve data from the data source (e.g., database).
+     // Retrieve data from the data source (e.g., database).
      IEnumerable<Orders> DataSource = order;
      DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
 
@@ -260,7 +259,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
      // Get the total records count.
      int count = DataSource.Count();
 
-    // Return data based on the request.
+     // Return data based on the request.
      return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
@@ -289,22 +288,22 @@ To handle sorting operation, configure your API to support custom sorting criter
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
-        public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
-        {
-            // Retrieve data from the data source (e.g., database).
-            IEnumerable<Orders> DataSource = order;
-            DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
+public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
+{
+    // Retrieve data from the data source (e.g., database).
+    IEnumerable<Orders> DataSource = order;
+    DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
 
-            // Handling Sorting operation.
-            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
-            {
-                DataSource = operation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-            }
-            // Get the total count of records.
-            int count = DataSource.Count();
-           
-            return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
-        }
+    // Handling Sorting operation.
+    if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+    {
+        DataSource = operation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+    }
+    // Get the total count of records.
+    int count = DataSource.Count();
+    
+    return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 
@@ -330,7 +329,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
  [HttpPost]
  public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
  {
-    // Retrieve data from the data source (e.g., database).
+     // Retrieve data from the data source (e.g., database).
      IEnumerable<Orders> DataSource = order;
      DataOperations operation = new DataOperations(); // Initialize DataOperations instance.
 
@@ -347,7 +346,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
          DataSource = operation.PerformTake(DataSource, DataManagerRequest.Take);
      }
 
-    // Return data based on the request.
+     // Return data based on the request.
      return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
@@ -388,11 +387,11 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
         .UpdateUrl("https://localhost:xxxx/Grid/Update")
         .InsertUrl("https://localhost:xxxx/Grid/Insert")
         .RemoveUrl("https://localhost:xxxx/Grid/Remove").Adaptor("UrlAdaptor")).Columns(col =>
-         {
-             col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-             col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-             col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
-         }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -508,7 +507,7 @@ The following code example describes the above behavior.
  [HttpPost]
  public JsonResult CrudUpdate(CRUDModel<Orders> request)
  {
-    // Perform update operation.
+     // Perform update operation.
      if (request.action == "update")
      {
          var existingRecord = order.FirstOrDefault(o => o.OrderID == request.value.OrderID);
@@ -519,7 +518,7 @@ The following code example describes the above behavior.
              existingRecord.Freight = request.value.Freight;
          }
      }
-    // Perform insert operation.
+     // Perform insert operation.
      else if (request.action == "insert")
      {
          var newId = order.Any() ? order.Max(o => o.OrderID) + 1 : 1;
@@ -544,11 +543,11 @@ The following code example describes the above behavior.
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
          .CrudUrl("/Grid/CrudUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
-         {
-             col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-             col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-             col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
-         }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 {% endhighlight %}
 {% endtabs %}
@@ -601,11 +600,11 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
-         {
-             col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-             col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-             col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
-         }).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+    col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 {% endhighlight %}
 {% endtabs %}
 
