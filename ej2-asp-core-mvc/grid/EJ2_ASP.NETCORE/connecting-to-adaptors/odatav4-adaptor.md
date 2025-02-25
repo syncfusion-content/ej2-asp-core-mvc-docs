@@ -32,50 +32,49 @@ Create a model class named **OrdersDetails.cs** inside the **Models** folder on 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
 
-using System.ComponentModel.DataAnnotations;
+ using System.ComponentModel.DataAnnotations;
 
-namespace ODataV4Adaptor.Models
-{
- public class OrdersDetails
+ namespace ODataV4Adaptor.Models
+ {
+  public class OrdersDetails
+  {
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails()
     {
-        public static List<OrdersDetails> order = new List<OrdersDetails>();
-        public OrdersDetails()
-        {
 
-        }
-        public OrdersDetails(
-        int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
-        {
-            this.OrderID = OrderID;
-            this.CustomerID = CustomerId;
-            this.EmployeeID = EmployeeId;
-            this.ShipCountry = ShipCountry;
-        }
-
-        public static List<OrdersDetails> GetAllRecords()
-        {
-            if (order.Count() == 0)
-            {
-                int code = 10000;
-                for (int i = 1; i < 10; i++)
-                {
-                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0,  "Denmark"));
-                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
-                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
-                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
-                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
-                    code += 5;
-                }
-            }
-            return order;
-        }
-        [Key]
-        public int? OrderID { get; set; }
-        public string? CustomerID { get; set; }
-        public int? EmployeeID { get; set; }
-        public string? ShipCountry { get; set; }
     }
-}
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.ShipCountry = ShipCountry;
+    }
+
+    public static List<OrdersDetails> GetAllRecords()
+    {
+        if (order.Count() == 0)
+        {
+            int code = 10000;
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0,  "Denmark"));
+                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
+                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
+                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
+                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
+                code += 5;
+            }
+        }
+        return order;
+    }
+    [Key]
+    public int? OrderID { get; set; }
+    public string? CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public string? ShipCountry { get; set; }
+  }
+ }
 
 {% endhighlight %}
 {% endtabs %}
@@ -228,11 +227,11 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
 {% highlight cshtml tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="315">
    <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
-    <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+   <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 {% endhighlight %}
@@ -287,10 +286,10 @@ builder.Services.AddControllers().AddOData(
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
      // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -376,10 +375,10 @@ builder.Services.AddControllers().AddOData(
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -431,10 +430,10 @@ builder.Services.AddControllers().AddOData(
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
@@ -574,18 +573,18 @@ The following code example describes the above behavior.
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
-    <e-data-manager url="https://localhost:xxxx/odata/Orders"
-                    updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
-                    insertUrl= "https://localhost:xxxx/odata/Orders/Insert" 
-                    removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
-                    adaptor="ODataV4Adaptor">
-    </e-data-manager> // Replace `xxxx` with your actual localhost port number.
-    <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
-    </e-grid-columns>
+   <e-data-manager url="https://localhost:xxxx/odata/Orders"
+                   updateUrl= "https://localhost:xxxx/odata/Orders/Update" 
+                   insertUrl= "https://localhost:xxxx/odata/Orders/Insert" 
+                   removeUrl= "https://localhost:xxxx/odata/Orders/Delete" 
+                   adaptor="ODataV4Adaptor">
+   </e-data-manager> // Replace `xxxx` with your actual localhost port number.
+   <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+   </e-grid-columns>
 </ejs-grid>
 {% endhighlight %}
 {% endtabs %}
@@ -596,18 +595,16 @@ For batch editing, you can specify a custom batch URL as follows:
 {% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
-    <e-data-manager url="https://localhost:xxxx/odata/Orders" 
-                    batchUrl= "https://localhost:xxxx/odata/Orders/BatchUpdate"
-                    adaptor="ODataV4Adaptor">
-    </e-data-manager> // Replace `xxxx` with your actual localhost port number.
-    <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
-    </e-grid-columns>
+   <e-data-manager url="https://localhost:xxxx/odata/Orders" 
+                   batchUrl= "https://localhost:xxxx/odata/Orders/BatchUpdate"
+                   adaptor="ODataV4Adaptor">
+   </e-data-manager> // Replace `xxxx` with your actual localhost port number.
+   <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+   </e-grid-columns>
 </ejs-grid>
 {% endhighlight %}
 {% endtabs %}
-
-
