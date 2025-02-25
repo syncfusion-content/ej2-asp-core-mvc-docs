@@ -223,7 +223,6 @@ namespace signalR.Models
         public string ShipAddress { get; set; }
     }
 }
-
 ```
 
 **Step 7:** In your client-side code, establish a connection to the SignalR hub and configure Syncfusion ASP.NET Core Grid data binding in the **Pages/Index.cshtml** file. Add the following code:s

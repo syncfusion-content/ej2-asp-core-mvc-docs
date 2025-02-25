@@ -196,7 +196,7 @@ Here's how to bind a `DataTable` to the Syncfusion Syncfusion ASP.NET MVC Grid:
 {% endhighlight %}
 {% endtabs %}
 
-N> `DataTable` will be supported from .Net Core 2.0.
+N> `DataTable` will be supported from .Net Core 2.0. 
 
 ### DataTable with on-demand Grid actions
 
