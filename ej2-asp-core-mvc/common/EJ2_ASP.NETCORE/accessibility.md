@@ -558,7 +558,7 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/angular/documentation/sidebar/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Tabs</td>
