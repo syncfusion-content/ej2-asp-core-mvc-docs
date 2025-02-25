@@ -8,23 +8,23 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chip Customization in Chip Control
+# Chips Customization in Chips Control
 
-This section explains the customization of styles, leading icons, avatar, and trailing icons in Chip control.
+This section explains the customization of styles, leading icons, avatars, and trailing icons in the Chips control.
 
 ## Styles
 
-The Chip control has the following predefined styles that can be defined using the `cssClass` property.
+{% if page.publishingplatform == "aspnet-core" %}
+
+The Chips control has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_CssClass) property.
 
 | Class | Description |
 | -------- | -------- |
-| e-primary | Represents a primary chip. |
-| e-success | Represents a positive chip. |
-| e-info |  Represents an informative chip. |
-| e-warning | Represents a chip with caution. |
-| e-danger | Represents a negative chip. |
-
-{% if page.publishingplatform == "aspnet-core" %}
+| e-primary | Represents a primary Chips. |
+| e-success | Represents a positive Chips. |
+| e-info |  Represents an informative Chips. |
+| e-warning | Represents a Chips with caution. |
+| e-danger | Represents a negative Chips. |
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -33,6 +33,16 @@ The Chip control has the following predefined styles that can be defined using t
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The Chips control has the following predefined styles that can be defined using the [`cssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_CssClass) property.
+
+| Class | Description |
+| -------- | -------- |
+| e-primary | Represents a primary Chips. |
+| e-success | Represents a positive Chips. |
+| e-info |  Represents an informative Chips. |
+| e-warning | Represents a Chips with caution. |
+| e-danger | Represents a negative Chips. |
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -44,13 +54,13 @@ The Chip control has the following predefined styles that can be defined using t
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Styles Chips Control](images/styles.png)
 
 ## Leading Icon
 
-You can add and customize the leading icon of chip using the `leadingIconCss` property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can add and customize the leading icon of Chips using the [`leadingIconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_LeadingIconCss) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -59,6 +69,8 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can add and customize the leading icon of Chips using the [`leadingIconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_LeadingIconCss) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,13 +82,13 @@ You can add and customize the leading icon of chip using the `leadingIconCss` pr
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Leading Icon Chips Control](images/leading-icon.png)
 
 ## Avatar
 
-You can add and customize the avatar of chip using the `avatarIconCss` property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can add and customize the avatar of Chips using the [`avatarIconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_AvatarIconCss) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -85,6 +97,8 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can add and customize the avatar of Chips using the [`avatarIconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_AvatarIconCss) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -96,13 +110,13 @@ You can add and customize the avatar of chip using the `avatarIconCss` property.
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Avatar Chips Control](images/avatar.png)
 
 ## Avatar Content
 
-You can add and customize the avatar content of chip using the `avatarText` property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can add and customize the avatar content of Chips using the [`avatarText`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_AvatarText) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -111,6 +125,8 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can add and customize the avatar content of Chips using the [`avatarText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_AvatarText) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -122,13 +138,13 @@ You can add and customize the avatar content of chip using the `avatarText` prop
 {% endtabs %}
 {% endif %}
 
-
+![ASP.NET Avatar content Chips Control](images/avatar-content.png)
 
 ## Trailing Icon
 
-You can add and customize the trailing icon of chip using the `trailingIconCss` property.
-
 {% if page.publishingplatform == "aspnet-core" %}
+
+You can add and customize the trailing icon of Chips using the [`trailingIconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_TrailingIconCss) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -137,6 +153,8 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+You can add and customize the trailing icon of Chips using the [`trailingIconCss`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_TrailingIconCss) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -150,11 +168,11 @@ You can add and customize the trailing icon of chip using the `trailingIconCss` 
 
 
 
-## Outline Chip
-
-Outline chip has the border with the background transparent. It can be set using the `cssClass` property.
+## Outline Chips
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Outline Chips have a border with a transparent background. It can be set using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_CssClass) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -163,6 +181,8 @@ Outline chip has the border with the background transparent. It can be set using
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Outline Chips have a border with a transparent background. It can be set using the [`cssClass`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.ChipList.html#Syncfusion_EJ2_Buttons_ChipList_CssClass) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -173,5 +193,35 @@ Outline chip has the border with the background transparent. It can be set using
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Outline Chips Control](images/outline-chip.png)
+
+## Template
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_Template) property of the Chips control allows users to fully customize the layout and design of each Chips. By using the `Template` property, users can include custom HTML elements such as links, icons, or additional content.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chips/template/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.buttons.chiplist.html#Syncfusion_EJ2_Buttons_ChipList_Template) property of the Chips control allows users to fully customize the layout and design of each Chips. By using the `Template` property, users can include custom HTML elements such as links, icons, or additional content.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chips/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chips/template/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![ASP.NET template Chips Control](images/template.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Chips/ChipsSample).

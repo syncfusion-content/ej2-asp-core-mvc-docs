@@ -1,0 +1,31 @@
+<p style="color:red;text-align:center" id="message"></p>
+<ejs-grid id="grid" dataSource="@ViewBag.datasource" height="348px" allowPaging="true" cellSelected="cellSelected" cellSelecting="cellSelecting" cellDeselected="cellDeselected" cellDeselecting="cellDeselecting">
+    <e-grid-selectionsettings type="Multiple" mode="Cell"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function cellSelected(args) {
+        document.getElementById("message").innerText = ` Trigger cellSelected`;
+        args.currentCell.style.backgroundColor = 'rgb(96, 158, 101)';
+    }
+    function cellSelecting(args) {
+        document.getElementById("message").innerText = `Trigger cellSelecting`;
+        if (args.data.ShipCountry == 'France')
+            args.cancel = true;
+    }
+
+    function cellDeselected(args) {
+        document.getElementById("message").innerText = `Trigger cellDeselected`;
+        args.cells[0].style.backgroundColor = 'rgb(245, 69, 69)';
+    }
+    function cellDeselecting(args) {
+        document.getElementById("message").innerText = `Trigger cellDeselecting`;
+        args.cells[0].style.color = 'rgb(253, 253, 253)';
+    }
+</script>

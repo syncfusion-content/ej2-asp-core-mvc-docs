@@ -60,7 +60,7 @@ There is an event named `beforeHyperlinkClick` which triggers only on clicking h
 {% include code-snippet/spreadsheet/link/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HyperlinkController.cs" %}
-{% include code-snippet/spreadsheet/link/hyperlinkController.cs %}
+{% include code-snippet/spreadsheet/link/Core/hyperlinkController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,7 +71,7 @@ There is an event named `beforeHyperlinkClick` which triggers only on clicking h
 {% include code-snippet/spreadsheet/link/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HyperlinkController.cs" %}
-{% include code-snippet/spreadsheet/link/hyperlinkController.cs %}
+{% include code-snippet/spreadsheet/link/MVC/hyperlinkController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

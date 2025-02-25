@@ -278,7 +278,7 @@ In the following example, there is a hidden column `Duration` in the Gantt. Whil
 
 TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryCellInfo) event. In this event, you can format the treegrid cells of exported PDF document based on the column cell value.
 
-In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style` and `backgroundColor` properties.
+In the following sample, the background color is set for `Progress` column in the exported document by using the `args.style.backgroundColor` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -424,6 +424,36 @@ PDF export provides an option to customize the Gantt style for the exported PDF 
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-theme.cs" %}
 {% include code-snippet/gantt/pdf-export/customtheme/custom-theme.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+## Customize Split Taskbar Segment Colors in PDF
+
+The PDF export feature in the Gantt Chart allows you to customize the colors of split taskbar segments using the `taskSegmentStyles` property inside the [`PdfQueryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event.
+
+The `taskSegmentStyles` property contains a collection of style properties for task segments. By specifying the index of corresponding segment index in this collection you can customize that segment taskbar color, progress color, and its border color.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdf-customize-segment/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdf-customize-segment.cs" %}
+{% include code-snippet/gantt/pdf-export/pdf-customize-segment/pdf-customize-segment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/pdf-export/pdf-customize-segment/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdf-customize-segment.cs" %}
+{% include code-snippet/gantt/pdf-export/pdf-customize-segment/pdf-customize-segment.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

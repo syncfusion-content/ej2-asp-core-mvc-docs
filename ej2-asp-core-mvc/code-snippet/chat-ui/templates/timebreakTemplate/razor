@@ -1,0 +1,46 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("timeBreakTemplate").User(ViewBag.CurrentUser).ShowTimeBreak(true).TimeBreakTemplate("#timebreakContent").Created("onCreated").Render()
+</div>
+
+<script id="timebreakContent" type="text/x-jsrender">
+    <div class="timebreak-wrapper">${getFormattedTime(messageDate)}</div>
+</script>
+
+<style>
+    #timeBreakTemplate .timebreak-wrapper {
+        background-color: #6495ed;
+        color: #ffffff;
+        border-radius: 5px;
+        padding: 2px;
+    }
+</style>
+
+<script>
+    var chatUIObj;
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(ViewBag.ChatMessagesData));
+    chatMessages.forEach(message => {
+        message.timeStamp = new Date(message.timeStamp);
+    });
+
+    function onCreated() {
+        var chatUiEle = document.getElementById('timeBreakTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.messages = chatMessages;
+        chatUIObj.dataBind();
+    }
+
+    function getFormattedTime(messageDate) {
+        var date = new Date(messageDate);
+        var day = String(date.getDate()).padStart(2, '0');
+        var month = String(date.getMonth() + 1).padStart(2, '0');
+        var year = date.getFullYear();
+        var hours = date.getHours();
+        var minutes = String(date.getMinutes()).padStart(2, '0');
+        var ampm = hours >= 12 ? 'PM' : 'AM';
+        hours = hours % 12 || 12;
+        return `${day}/${month}/${year} ${hours}:${minutes} ${ampm}`;
+    }
+</script>

@@ -1,0 +1,39 @@
+<p style="color:red;text-align:center" id="message"></p>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="348px" allowPaging="true" enableHover="true" rowSelected="rowSelected" allowSelection="true" rowSelecting="rowSelecting" rowDeselected="rowDeselected" rowDeselecting="rowDeselecting">
+    <e-grid-selectionsettings type="Multiple" mode="Row"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+   function rowSelecting(args) {
+      if (args.data.CustomerID == 'VINET') {
+         document.getElementById("message").innerText = `Trigger rowSelecting`;
+         args.cancel = true;
+      }
+      else
+       document.getElementById("message").innerText=''; 
+   }
+   function rowSelected(args) {
+      if (args.data.Freight > '10' || args.data.Freight <= '140') {
+         document.getElementById("message").innerText = ` Trigger rowSelected`;
+         args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
+      }
+   }
+   function rowDeselected(args) {
+      if (args.data.Freight <= '10') {
+         document.getElementById("message").innerText = `Trigger rowDeselected`;
+         args.row.style.backgroundColor = 'red';
+      }
+   }
+   function rowDeselecting(args) {
+      if (args.data.Freight > '140') {
+         document.getElementById("message").innerText = `Trigger rowDeselecting`;
+         args.row.style.backgroundColor = 'yellow';
+      }
+   }
+</script>

@@ -40,10 +40,8 @@ N> You need to refer the ParentFolder up to the x64/x86 folder.
 
 4. Build and publish the application.
 
-Also, install only the package related to that OS, then build and run the project on that platform. For Windows, Linux, and OSX operating systems, use the following corresponding libraries:
+Also, install the package, then build and run the project. Use the following library:
 
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
-•   Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
+•   Syncfusion.EJ2.PdfViewer.AspNet.Core
 
 Following these steps should resolve the issue.

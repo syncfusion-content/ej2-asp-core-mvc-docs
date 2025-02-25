@@ -1,0 +1,28 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").HeaderToolbar(new ChatUIToolbarSettings() { Items = ViewBag.HeaderToolbar }).Created("onCreated").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+</div>
+
+<script>
+    function onCreated() {
+        var splitBtnObj = new ej.splitbuttons.DropDownButton({
+            items: [
+                { text: 'Info' },
+                { text: 'Search' },
+                { text: 'Add to list' },
+                { text: 'Mute' }
+            ],
+            content: 'Menu',
+            iconCss: 'e-icons e-menu',
+            cssClass: 'custom-dropdown'
+        });
+        splitBtnObj.appendTo('#ddMenu');
+    }
+</script>
+
+<style>
+    .custom-dropdown.e-dropdown-popup ul {
+        min-width: 100px;
+    }
+</style>

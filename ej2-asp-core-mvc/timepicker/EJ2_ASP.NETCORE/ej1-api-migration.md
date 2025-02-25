@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of TimePicker component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of TimePicker component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## Time selection
 
@@ -20,8 +20,8 @@ This article describes the API migration process of TimePicker component from Es
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -54,8 +54,8 @@ Setting the value
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -88,8 +88,8 @@ Display time format
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -165,8 +165,8 @@ Set current time
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -211,8 +211,8 @@ Disable Time Ranges
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -516,8 +516,8 @@ Prevent open
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -550,8 +550,8 @@ Enable RTL
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -584,8 +584,8 @@ Enable Persistence
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -658,8 +658,8 @@ Validation message
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -912,8 +912,8 @@ Float Label Type
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -946,8 +946,8 @@ Locale
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>
@@ -980,8 +980,8 @@ Strict mode
 <thead>
 <tr>
 <th>Behavior</th>
-<th>API in Essential JS 1</th>
-<th>API in Essential JS 2</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 1</th>
+<th>API in Essential<sup style="font-size:70%">&reg;</sup> JS 2</th>
 </tr>
 <tr>
 <td>

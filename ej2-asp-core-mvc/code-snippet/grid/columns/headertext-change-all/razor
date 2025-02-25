@@ -9,7 +9,6 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).Render()
-
 <script type="text/javascript">
     document.getElementById('buttons').addEventListener('click', function () {
         const headerTextMap = {

@@ -1,6 +1,48 @@
+@{
+    ...
+    componentSpacingModel modelValue = new componentSpacingModel();
+    modelValue.cellSpacing = new double[] { 10, 10 };
+
+    List<ChartData> chartData = new List<ChartData>
+        {
+            new ChartData { month = "Jan", sales = 35, },
+            new ChartData { month = "Feb", sales = 28, },
+            new ChartData { month = "Mar", sales = 34, },
+            new ChartData { month = "Apr", sales = 32, },
+            new ChartData { month = "May", sales = 40, },
+            new ChartData { month = "Jun", sales = 32, },
+            new ChartData { month = "Jul", sales = 35, },
+            new ChartData { month = "Aug", sales = 55, },
+            new ChartData { month = "Sep", sales = 38, },
+            new ChartData { month = "Oct", sales = 30, },
+            new ChartData { month = "Nov", sales = 25, },
+            new ChartData { month = "Dec", sales = 32, }
+        };
+
+    List<LineData> lineData = new List<LineData>
+        {
+            new LineData { x = 2013, y = 28, },
+            new LineData { x = 2014, y = 25, },
+            new LineData { x = 2015, y = 26, },
+            new LineData { x = 2016, y = 27, },
+            new LineData { x = 2017, y = 32, },
+            new LineData { x = 2018, y = 35, }
+        };
+
+    List<PieData> pieData1 = new List<PieData>
+        {
+            new PieData { x = "Chrome", y = 37, text = "37%", },
+            new PieData { x = "UC Browser", y = 17, text = "17%", },
+            new PieData { x = "iPhone", y = 19, text = "19%", },
+            new PieData { x = "Others", y = 4, text = "4%", },
+            new PieData { x = "Opera", y = 11, text = "11%", },
+            new PieData { x = "Android", y = 12, text = "12%", }
+        };
+}
+
 <div>
     <!--  Dashboardlayout element declaration -->
-    <ejs-dashboardlayout id="dashboard_default" columns="6" draggableHandle=".e-panel-header" cellSpacing="@Model.cellSpacing">
+    <ejs-dashboardlayout id="dashboard_default" columns="6" draggableHandle=".e-panel-header" cellSpacing="@modelValue.cellSpacing">
         <e-dashboardlayout-panels>
             <e-dashboardlayout-panel id="Panel1" sizeX="3" sizeY="2" row="0" col="3" header="<div class='header'>Last year sales comparison</div><span class='handler e-icons burg-icon'></span>" content="#column">
             </e-dashboardlayout-panel>
@@ -17,7 +59,7 @@
     <ejs-chart id="columnChart" height="162px">          
         <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
         <e-series-collection>
-            <e-series dataSource="ViewBag.chartSource" xName='month' yName='sales' type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"> 
+            <e-series dataSource="chartData" xName='month' yName='sales' type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"> 
             </e-series>
         </e-series-collection>
     </ejs-chart>
@@ -29,7 +71,7 @@
     <ejs-chart id="lineChart" height="162px">
         <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
         <e-series-collection>
-            <e-series dataSource="ViewBag.lineSource" xName='x' yName='y' type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series dataSource="lineData" xName='x' yName='y' type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             </e-series>
         </e-series-collection>
     </ejs-chart>
@@ -43,7 +85,7 @@
         <e-accumulationchart-legendsettings visible="false">
         </e-accumulationchart-legendsettings>
         <e-accumulation-series-collection>
-            <e-accumulation-series dataSource="ViewBag.pieSource1" xName="x" yName="y" radius="70%" name="Browser">
+            <e-accumulation-series dataSource="pieData1" xName="x" yName="y" radius="70%" name="Browser">
                 <e-accumulationseries-datalabel name="text" visible="true" position="Inside">
                 </e-accumulationseries-datalabel>
             </e-accumulation-series>

@@ -10,13 +10,13 @@ documentation: ug
 
 # NuGet Packages for ASP.NET Core UI controls
 
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion ASP.NET Core NuGet packages can be used without installing the Essential Studio or ASP.NET Core platform installation to implement the Syncfusion ASP.NET Core controls.
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishing all ASP.NET Core NuGet packages in [nuget.org](https://www.nuget.org/packages?q=Tag%3A%22EJ2%22+Syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages can be used without installing the Essential Studio<sup style="font-size:70%">&reg;</sup> or ASP.NET Core platform installation to implement the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
 ## Available NuGet packages
 
 ### Syncfusion.EJ2.AspNet.Core
 
-Syncfusion ASP.NET Core UI controls powered by Essential JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls powered by Essential<sup style="font-size:70%">&reg;</sup> JS 2, it contains 70+ high performance, lightweight, responsive, and touch- friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
 
 <!-- markdownlint-disable MD033 -->
 <table>
@@ -148,7 +148,7 @@ ejs-documenteditor
 </tr>
 </table>
 
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
+### Syncfusion.EJ2.PdfViewer.AspNet.Core
 
 The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and the table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
 
@@ -166,88 +166,17 @@ The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web appl
 </tr>
 <tr>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows</a>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core/">Syncfusion.EJ2.PdfViewer.AspNet.Core</a>
 </td>
 <td>
 ejs-pdfviewer
 </td>
 <td>
 <ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
 <li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Linux operating system.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux</a>
-</td>
-<td>
-ejs-pdfviewer
-</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
-
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Mac (OSX) operating system.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/">Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX</a>
-</td>
-<td>
-ejs-pdfviewer
-</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/runtime.osx.10.10-x64.CoreCompat.System.Drawing/" target="_blank">runtime.osx.10.10-x64.CoreCompat.System.Drawing</a></li>
 <li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.PdfToImageConverter.Net/" target="_blank">Syncfusion.PdfToImageConverter.Net</a></li>
 </ul>
 </td>
 </tr>

@@ -16,7 +16,7 @@ The Uploader sends the large file split into small chunks and transmits to the s
 
 N> * The chunk upload works in asynchronous upload only.
 
-* This feature is available from the Essential Studio Vol 2, 2018 release.
+* This feature is available from the Essential Studio<sup style="font-size:70%">&reg;</sup> Vol 2, 2018 release.
 
 To enable the chunk upload, set the size to [chunkSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_ChunkSize) option of the upload and it receives the value in `bytes`.
 
@@ -170,6 +170,10 @@ N> The retry action has different working behavior for chunk upload and default 
 ## Server-Side configurations
 
 The server-side implementation entirely depends on the application requirements and logic. The following code snippet provides the server-side logic to handle the chunk upload using the uploader controls.
+
+>The `chunk-index` and `total-chunk` values are accessible through the form data using `Request.Form`, which retrieves these details from the incoming request.
+* `chunk-index` - Indicates the index of the current chunk being received.
+* `total-chunk` - Represents the total number of chunks for the file being uploaded.
 
 ```csharp
 public string uploads = Path.Combine(Directory.GetCurrentDirectory(), "Uploaded Files"); // Set your desired upload directory path

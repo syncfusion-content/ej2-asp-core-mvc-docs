@@ -1,0 +1,30 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").ValidationRules(new { required = "true"}).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Edit(new { @params = new Syncfusion.EJ2.Inputs.NumericTextBox() { Change= "onChange" }}).Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
+}).Load("load").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+   function load(args) {
+      var grid = document.getElementById("grid").ej2_instances[0];
+      grid.getColumnByField("Freight").validationRules = { required: true, min: [customFunctionOne, 'Please enter a value greater than 1'], max: [customFunction, 'Please enter a value less than 1000'] };
+    }
+    function customFunction(args) {
+        return args['value'].length >= 5;
+    };
+    function customFunction (args) {
+      return (args['value'] <= 1000);
+    }
+    function customFunctionOne (args) {
+       return (args['value'] >= 1);
+    }
+    function onActionComplete(args) {
+     if (args.requestType === "beginEdit" || args.requestType === "add") {
+        formElement = args.form;
+     }
+    }
+   function onChange() {
+      formElement['ej2_instances'][0].validate();
+    }
+</script>

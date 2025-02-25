@@ -1,0 +1,24 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="suggestion" created="onCreated">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in ViewBag.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script>
+    var chatUIObj;
+    const suggestions = ["Okay will check it", "Sounds good!"];
+    function onCreated() {
+        var chatUiEle = document.getElementById('suggestion');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.suggestions = suggestions;
+        chatUIObj.dataBind();
+    }
+</script>

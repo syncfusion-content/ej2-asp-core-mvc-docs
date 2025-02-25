@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## File Manager Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## File Manager Control | Syncfusion
+description: Learn here all about Overview in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The **File Manager** is a graphical user interface component for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this component has easy navigation functionality for browsing the folders to select a file or folder from the file system.
+The **File Manager** is a graphical user interface control for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this control has easy navigation functionality for browsing the folders to select a file or folder from the file system.
 
 ## Key features
 
@@ -26,7 +26,7 @@ The **File Manager** is a graphical user interface component for managing the fi
 
 ### View preferences
 
-The **Views** property allows you to customize, how the folders or files in the file system should be displayed in the file manager.
+The **Views** property allows you to customize, how the folders or files in the file system should be displayed in the File Manager.
 
 The File Manager provides the following two view options to change the layout of the File Manger window.
 
@@ -52,7 +52,7 @@ Types of navigation support available in File Manager are:
 
 ### Data Handling
 
-* `Multi-Selection` - The file manager control is provided with built-in support for multiple files or folder selection. Multiple file selection will be effective when a single operation like download or delete is performed over multiple files in the file system.
+* `Multi-Selection` - The File Manager control is provided with built-in support for multiple files or folder selection. Multiple file selection will be effective when a single operation like download or delete is performed over multiple files in the file system.
 
 * `Sorting` - Files and folders in the file system can be sorted either in the ascending or descending order by clicking the column header. Files and folders can be sorted based on the name, date created, size, and more.
 
@@ -60,4 +60,4 @@ Types of navigation support available in File Manager are:
 
 * Supports right-to-left (RTL) direction alignment for users working in right-to-left languages like Hebrew and Arabic.
 
-* The file manager control uses localization library (l10) to localize the text values. The texts and messages displayed in the user interface can be localized to any desired language as needed.
+* The File Manager control uses localization library (l10) to localize the text values. The texts and messages displayed in the user interface can be localized to any desired language as needed.

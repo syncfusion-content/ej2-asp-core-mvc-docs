@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Treeview Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Treeview component of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## TreeView Control | Syncfusion
+description: Learn here all about Template in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Template
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,9 +11,9 @@ documentation: ug
 
 # Template
 
-The TreeView control allows you to customize the look of TreeView nodes by using the [nodeTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeTemplate.html) property. This property accepts either `template string` or HTML element ID. 
+The TreeView control allows you to customize the look of TreeView nodes by using the [nodeTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeTemplate.html) property. This property accepts either a `template string` or an HTML element ID. 
 
-In the following sample, employee information such as employee photo, name, and designation have been included using the `nodeTemplate` property. 
+In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property. 
 
 The template expression should be provided inside the `${...}` interpolation syntax.
 
@@ -23,8 +23,8 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/treeview/template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Templatemodel.cs" %}
-{% include code-snippet/treeview/template/templatemodel.cs %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/treeview/template/template-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,15 +34,15 @@ The template expression should be provided inside the `${...}` interpolation syn
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/treeview/template/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Templatemodel.cs" %}
-{% include code-snippet/treeview/template/templatemodel.cs %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/treeview/template/template-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-Output be like the below.
+The output will look like the image below:
 
 ![TreeView Sample](./images/template.PNG)
 

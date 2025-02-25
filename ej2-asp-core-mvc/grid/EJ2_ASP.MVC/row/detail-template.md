@@ -29,7 +29,7 @@ Here's an example of using the `DetailTemplate` property in the grid component:
 
 The Grid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the grid.
 
-To render a custom component inside the detail row, you need to define a template using the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property and handle the [DetailDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.This template can include any HTML element or ASP.NET MVC component that you want to display as the detail content.
+To render a custom component inside the detail row, you need to define a template using the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property and handle the [DetailDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.This template can include any HTML element or ASP.NET MVC component that you want to display as the detail content.
 
 The `DetailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type `DetailDataBoundEventArgs` as a parameter.
 
@@ -50,7 +50,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
 
 The Grid provides a feature that allows users to expand the detail row of a grid using an external button. By default, detail rows render in a collapsed state, but this feature enables users to view additional details associated with a particular row. 
 
-To achieve expanding the detail row of a grid using an external button, you need to invoke the `expand` method provided by the **DetailRowModule** object of the Syncfusion Grid library. This method will expand the detail row of a specific grid row.
+To achieve expanding the detail row of a grid using an external button, you need to invoke the `expand` method provided by the **DetailRowModule** object of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid library. This method will expand the detail row of a specific grid row.
 
 Here is an example of how to use the `expand` method to expand a detail row:
 
@@ -67,7 +67,7 @@ Here is an example of how to use the `expand` method to expand a detail row:
 
 ## Customize detail template icon
 
-The detail template icon in the Syncfusion Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
+The detail template icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is used to expand or collapse the detail content of a row. By default, the icon represents a right arrow for the collapsed state and a down arrow for the expanded state. If you want to customize this icon, you can achieve it by overriding the following CSS styles:
 
 ```css
 

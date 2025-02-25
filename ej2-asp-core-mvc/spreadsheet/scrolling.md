@@ -59,7 +59,7 @@ The following code example shows the finite scrolling with defined rows and colu
 {% include code-snippet/spreadsheet/scrolling/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ScrollingController.cs" %}
-{% include code-snippet/spreadsheet/scrolling/scrollingController.cs %}
+{% include code-snippet/spreadsheet/scrolling/Core/scrollingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,7 +70,7 @@ The following code example shows the finite scrolling with defined rows and colu
 {% include code-snippet/spreadsheet/scrolling/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ScrollingController.cs" %}
-{% include code-snippet/spreadsheet/scrolling/scrollingController.cs %}
+{% include code-snippet/spreadsheet/scrolling/MVC/scrollingController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

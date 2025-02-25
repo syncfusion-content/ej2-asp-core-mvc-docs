@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").EmptyChatTemplate("#emptyChatContent").Render()
+</div>
+
+<script id="emptyChatContent" type="text/x-jsrender">
+    <div class="empty-chat-text">
+        <h4><span class="e-icons e-comment-show"></span></h4>
+        <h4>No Messages Yet</h4>
+        <p>Start a conversation to see your messages here.</p>
+    </div>
+</script>
+
+<style>
+
+    .empty-chat-text {
+        font-size: 15px;
+        text-align: center;
+        margin-top: 90px;
+    }
+
+</style>

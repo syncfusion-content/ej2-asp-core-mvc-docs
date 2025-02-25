@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Drop Down List Component
+title: Ej1 Api Migration in ##Platform_Name## DropDownList Control|Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of DropDownList component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## DataBinding
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *dataSource* <br/>`<ej-drop-down-list datasource="ViewBag.datasource"></ej-drop-down-list>` | **Property**: *dataSource* <br/>`<ejs-dropdownlist dataSource="@ViewBag.data"></ejs-dropdownlist>`|
 | **Fields for mapping** | **Property**: *fields* <br/>`<ej-drop-down-list><e-drop-down-list-fields text="CustomerID" table-name="Customers" /></ej-drop-down-list>`| **Property**: *fields* <br/>`<ejs-dropdownlist><e-dropdownlist-fields text="Vegetable" value="Id"></e-dropdownlist-fields></ejs-dropdownlist>`|
@@ -27,7 +27,7 @@ This article describes the API migration process of DropDownList component from 
 
 ## Filtering
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enable-filter-search* <br/>`<ej-drop-down-list enable-filter-search=true></ej-drop-down-list>`| **Property**: *allowFiltering* <br/>`<ejs-dropdownlist allowFiltering="true"></ejs-dropdownlist>` |
 | **Server filtering** | **Property**: *enable-server-filtering* <br/>`<ej-drop-down-list enable-server-filtering=true></ej-drop-down-list>`| **Property**: *allowFiltering* <br/>`<ejs-dropdownlist allowFiltering="true"></ejs-dropdownlist>` |
@@ -41,7 +41,7 @@ This article describes the API migration process of DropDownList component from 
 
 ## Template
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *template* <br/>`<ej-drop-down-list template="<div><img class='imgId' src='../Content/Employees/${Image}.png' alt='employee'/> <div class='ename'> ${Text} </div><div class='role'> ${Role} </div><div class='cont'> ${Country} </div></div>"></ej-drop-down-list>` |**Property**: *itemTemplate*<br/>`<ejs-dropdownlist itemTemplate="@Html.Raw("<span><span class='name'>${FirstName}</span><span class ='city'>${City}</span></span>")"></ejs-dropdownlist>`|
 | **Group Template** | **Not Applicable** | **Property**: *groupTemplate* <br/>`<ejs-dropdownlist groupTemplate="@Html.Raw("<strong>${City}</strong>")"></ejs-dropdownlist>`|
@@ -53,27 +53,27 @@ This article describes the API migration process of DropDownList component from 
 
 ## Virtual Scrolling
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *allow-virtual-scrolling* <br/>`<ej-drop-down-list allow-virtual-scrolling="true"></ej-drop-down-list>` | **Not applicable** |
 
 ## Applying CSS
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *css-class* <br/>`<ej-drop-down-list css-class="customClass"></ej-drop-down-list>` | **Property**: *cssClass* <br/>`<ejs-dropdownlist cssClass="class"></ejs-dropdownlist>`|
 | **showRoundedCorner** | **Property**: *show-rounded-corner* <br/>`<ej-drop-down-list show-rounded-corner="true"></ej-drop-down-list>` | **Property**: *cssClass* <br/>`<ejs-dropdownlist cssClass="class"></ejs-dropdownlist>`|
 
 ## Sorting
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** |	**Property**: *enable-sorting* <br/>`<ej-drop-down-list enable-sorting="true"></ej-drop-down-list>` | **Enabled only on using sortorder **Property**** |
 | **Order of sorting** | **Property**: *sort-order* <br/>`<ej-drop-down-list sort-order="@SortOrder.Descending"></ej-drop-down-list>` | **Property**: *sortOrder* <br/>`<ejs-dropdownlist sortOrder="Ascending"></ejs-dropdownlist>`|
 
 ## Popup
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--- | --- | --- |
 | **Popup height** | **Property**: *popup-height* <br/>`<ej-drop-down-list popup-height="550px">    </ej-drop-down-list>`| **Property**: popupheight <br/>`<ejs-dropdownlist popupHeight="220px"></ejs-dropdownlist>`|
 | **Popup width** |	**Property**: *popup-width* <br/>`<ej-drop-down-list popup-width="550px">    </ej-drop-down-list>` | **Property**: *popupWidth* <br/>`<ejs-dropdownlist popupWidth="300px"></ejs-dropdownlist>`|
@@ -97,28 +97,28 @@ This article describes the API migration process of DropDownList component from 
 
 ## Placeholder
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Watermark text** | **Property**: *watermark-Text* <br/>`<ej-drop-down-list watermark-text="Select an Item"></ej-drop-down-list>`| **Property**: *placeholder* <br/>`<ejs-dropdownlist placeholder="select"/>`|
 | **Floating  of waterMarkText** | **Not applicable** |	**Property**: *floatLabelType* <br/>`<ejs-dropdownlist floatLabelType="Auto"/>`|
 
 ## Grouping
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Default** | **Property**: *fields.groupBy* <br/>`<ej-drop-down-list watermark-text="Select an Item"><e-drop-down-list-fields group-by="Category" /></ej-drop-down-list>`|**Property**: *fields.groupBy*<br/>>`<ejs-dropdownlist> <e-dropdownlist-fields groupBy="Name"></e-dropdownlist-fields></ejs-dropdownlist>`|
 | **Group Template**| **Not applicable** | **Property**: *groupTemplate*<br/>`<ejs-dropdownlist groupTemplate="@Html.Raw("<strong>${City}</strong>")"></ejs-dropdownlist>` |
 
 ## Accessibility
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Globalization** | **Property**: *locale*<br/>`<ej-drop-down-list locale="fr-FE"/>`| **Property**: *locale*<br/>`<ejs-dropdownlist locale="en-US"></ejs-dropdownlist>` |
 | **Rtl support** |	**Property**: *enable-rtl*<br/>`<ej-drop-down-list enable-rtl="true"/>` | **Property**: *enableRtl*<br/>`<ejs-dropdownlist enableRtl="true"></ejs-dropdownlist>` |
 
 ## Miscellaneous
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Enable/disable** | **Property**: *enabled*<br/>`<ej-drop-down-list enabled="true"/>` | **Property**: *enabled* <br/>`<ejs-dropdownlist enabled="true"></ejs-dropdownlist>` |
 | Read only | **Property**: *read-only* <br/>`<ej-drop-down-list read-only="true"/>` | <br/>**Property**: *readOnly*<br/>`<ejs-dropdownlist readOnly="true"></ejs-dropdownlist>` |
@@ -130,7 +130,7 @@ This article describes the API migration process of DropDownList component from 
 
 ## Selection
 
-| Behavior	| API in Essential JS 1	| API in Essential JS 2 |
+| Behavior	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 1	| API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--- | --- | --- |
 | Selecting particular index | **Property**: *selected-index*<br/>`<ej-drop-down-list selected-index="3"/>` | **Property**: *index*<br/>`<ejs-dropdownlist index="3"></ejs-dropdownlist>` |
 | **Selecting particular value** | **Property**: *value*<br/>`<ej-drop-down-list value="3"/>` | **Property**: *value*<br/>`<ejs-dropdownlist value="3"></ejs-dropdownlist>`|
@@ -147,7 +147,7 @@ This article describes the API migration process of DropDownList component from 
 
 ## Common
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | **Adding new item** | **Method** : *addItem*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/><br/>`$('#dropdown').ejDropDownList("addItem", {text:"India"});` | **Method**: *addItem*<br/>`<ejs-dropdownlist/>`<br/> <br/>`var ddlObj = document.getElementById(dropdownlist).ej2_Instances[0];`<br/><br/>`ddlObj.addItem({Id: 'game4', Game: 'Golf'}, 2);` |
 | **Clearing the text**| **Method** : *clearText*<br/>`<ej-drop-down-list></ej-drop-down-list>`<br/> <br/>`$('#dropdown').ejDropDownList('clearText')` | **Property**:* showClearButton*<br/>`<ejs-dropdownlist showClearButton=true/>`|

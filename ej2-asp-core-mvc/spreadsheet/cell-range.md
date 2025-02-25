@@ -32,7 +32,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% include code-snippet/spreadsheet/wrap-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="WrapTextController.cs" %}
-{% include code-snippet/spreadsheet/wrap-text/wrapTextController.cs %}
+{% include code-snippet/spreadsheet/wrap-text/Core/wrapTextController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,7 +43,7 @@ The following code example shows the wrap text functionality in spreadsheet.
 {% include code-snippet/spreadsheet/wrap-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="WrapTextController.cs" %}
-{% include code-snippet/spreadsheet/wrap-text/wrapTextController.cs %}
+{% include code-snippet/spreadsheet/wrap-text/MVC/wrapTextController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -85,7 +85,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% include code-snippet/spreadsheet/merge-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MergeCellController.cs" %}
-{% include code-snippet/spreadsheet/merge-cells/mergeCellController.cs %}
+{% include code-snippet/spreadsheet/merge-cells/Core/mergeCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,7 +96,7 @@ The following code example shows the merge cells operation in spreadsheet.
 {% include code-snippet/spreadsheet/merge-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MergeCellController.cs" %}
-{% include code-snippet/spreadsheet/merge-cells/mergeCellController.cs %}
+{% include code-snippet/spreadsheet/merge-cells/MVC/mergeCellController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,7 +159,7 @@ You can clear the highlighted invalid data by using the following ways,
 {% include code-snippet/spreadsheet/data-validation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation/Core/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,12 +170,50 @@ You can clear the highlighted invalid data by using the following ways,
 {% include code-snippet/spreadsheet/data-validation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataValidation.cs" %}
-{% include code-snippet/spreadsheet/data-validation/dataValidation.cs %}
+{% include code-snippet/spreadsheet/data-validation/MVC/dataValidation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+### Custom Data validation
 
+The Spreadsheet supports custom data validation, allowing users to define their own validation rules for specific cells or ranges. This feature enables you to set conditions that the entered data must meet, making it particularly useful when predefined validation options, such as numbers, dates, or lists, are insufficient.
+
+With custom validation, you can enforce rules using logical expressions or formulas, ensuring that only valid data is entered into the Spreadsheet.
+
+For example, consider a scenario where you want to ensure that a cell contains a number between 10 and 100. To achieve this, define a validation rule using a formula that checks if the entered value is greater than 10 and less than 100. The formula for this validation is =AND(A1>10, A1<100), where A1 refers to the cell being validated.
+
+When this rule is applied, the Spreadsheet evaluates the entered value against the formula. If a user enters a value outside the specified range, an alert notifies them of the invalid input. This helps users correct errors efficiently and ensures that only desired values are accepted.
+
+You can apply custom data validation using two methods.
+
+* The first is through the Data Validation dialog in the Ribbon toolbar. Navigate to the Data tab, select the Data Validation option, and choose the Custom type from the Allow dropdown menu.
+* The second method is programmatically, using the `addDataValidation()` method, which allows developers to set custom rules dynamically via code.
+
+The following code example demonstrates how to add custom data validation with a formula in a Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="DataValidation.cs" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/Core/dataValidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="DataValidation.cs" %}
+{% include code-snippet/spreadsheet/data-validation-cs2/MVC/dataValidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Limitations of Data validation
 
@@ -256,7 +294,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/Core/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -267,7 +305,7 @@ In the following sample, you can enable/disable the fill option on the button cl
 {% include code-snippet/spreadsheet/autofill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AutofillController.cs" %}
-{% include code-snippet/spreadsheet/autofill/autofillController.cs %}
+{% include code-snippet/spreadsheet/autofill/MVC/autofillController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -305,7 +343,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the `cl
 {% include code-snippet/spreadsheet/clear/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearController.cs" %}
-{% include code-snippet/spreadsheet/clear/clearController.cs %}
+{% include code-snippet/spreadsheet/clear/Core/clearController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -316,7 +354,7 @@ Clear the cell contents and formats in the Spreadsheet document by using the `cl
 {% include code-snippet/spreadsheet/clear/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClearController.cs" %}
-{% include code-snippet/spreadsheet/clear/clearController.cs %}
+{% include code-snippet/spreadsheet/clear/MVC/clearController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

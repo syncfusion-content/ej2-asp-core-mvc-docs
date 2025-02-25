@@ -1,12 +1,10 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExcelQueryCellInfo("excelQueryCellInfo").Columns(col =>
-    {
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").ExcelQueryCellInfo("excelQueryCellInfo").Columns(col =>
+{
        col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#imageTemplate").Width("150").Add();
        col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
        col.Field("FirstName").HeaderText("Name").Width("125").Add();
        col.Field("EmailID").HeaderText("Email ID").Template("#mailTemplate").Width("170").Add();
-
-    }).Toolbar(new List<string>() { "ExcelExport" }).Render()
-
+}).Toolbar(new List<string>() { "ExcelExport" }).Render()
 <style type="text/css" class="cssStyles">
     .image img {
         border-radius: 50px;
@@ -15,7 +13,6 @@
         width: 55px;
     }
 </style>
-
 <script type="text/x-template" id="imageTemplate">
     <div class="image">
         <img src="data:image/jpeg;base64,${EmployeeImage}" alt="${EmployeeID}" />
@@ -26,14 +23,12 @@
         <a href="mailto:${EmailID}">${EmailID}</a>
     </div>
 </script>
-
 <script>
     function toolbarClick(args) {
-        if (args['item'].id === 'Grid_excelexport') {
+        if (args['item'].id === 'grid_excelexport') {
             this.excelExport();
         }
     }
-
     function excelQueryCellInfo(args) {
         if (args.column.headerText === 'Employee Image') {
             args.image = {

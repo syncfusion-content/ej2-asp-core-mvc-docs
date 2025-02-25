@@ -21,12 +21,12 @@
     <script>
     function created() {
 		this.cellFormat({ backgroundColor: '#357cd2', color: '#fff', fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
-        this.autoFill('D2:D3','D4:D11','Down','CopyCells');
-        this.autoFill('E2:E3','E4:E11','Down','FillSeries');
-        this.autoFill('B2:B3','B4:B11','Down','FillFormattingOnly');
-        this.autoFill('C2:C3','C4:C11','Down','FillWithoutFormatting');
+        this.autoFill('D4:D11', 'D2:D3', 'Down', 'CopyCells');
+		this.autoFill('E4:E11', 'E2:E3', 'Down', 'FillSeries');
+		this.autoFill('B4:B11', 'B2:B3', 'Down', 'FillFormattingOnly');
+		this.autoFill('C4:C11', 'C2:C3', 'Down', 'FillWithoutFormatting');
     }
-	 document.getElementById("togglebtn").addEventListener('click', function () {
+	 document.getElementById("showfillbtn").addEventListener('click', function () {
             var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
 			var showFillOptions = spreadsheetObj.autoFillSettings.showFillOptions;
             spreadsheetObj.autoFillSettings.showFillOptions = !showFillOptions;

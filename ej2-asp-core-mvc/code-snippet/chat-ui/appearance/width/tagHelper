@@ -1,0 +1,13 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px;">
+    <ejs-chatui id="chatUser" width="450px">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in ViewBag.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>

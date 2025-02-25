@@ -1,0 +1,37 @@
+<p style="color:red;text-align:center;padding-bottom:10px" id="message"></p>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableHover().Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).AllowPaging().AllowSelection().RowDeselecting("rowDeselecting").RowDeselected("rowDeselected").RowSelecting("rowSelecting").RowSelected("rowSelected").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
+<script>
+   function rowSelecting(args) {
+      if (args.data.CustomerID == 'VINET') {
+         document.getElementById("message").innerText = `Trigger rowSelecting`;
+         args.cancel = true;
+      }
+      else
+       document.getElementById("message").innerText=''; 
+   }
+   function rowSelected(args) {
+      if (args.data.Freight > '10' || args.data.Freight <= '140') {
+         document.getElementById("message").innerText = ` Trigger rowSelected`;
+         args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
+      }
+   }
+   function rowDeselected(args) {
+      if (args.data.Freight <= '10') {
+         document.getElementById("message").innerText = `Trigger rowDeselected`;
+         args.row.style.backgroundColor = 'red';
+      }
+   }
+   function rowDeselecting(args) {
+      if (args.data.Freight > '140') {
+         document.getElementById("message").innerText = `Trigger rowDeselecting`;
+         args.row.style.backgroundColor = 'yellow';
+      }
+   }
+</script>

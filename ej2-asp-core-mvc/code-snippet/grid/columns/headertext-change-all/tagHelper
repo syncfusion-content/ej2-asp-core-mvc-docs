@@ -11,7 +11,6 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script type="text/javascript">
     document.getElementById('buttons').addEventListener('click', function () {
         const headerTextMap = {

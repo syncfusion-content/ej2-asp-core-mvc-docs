@@ -8,9 +8,12 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion ASP.NET MVC UI (Essential JS 2)
+> With the 2024 Volume 4 release, we will discontinue support for .NET Framework 4.0 in WinForms, WPF, ASP.NET MVC, and Document Processing Libraries. Please plan to upgrade to .NET Framework 4.6.2 or higher.<br>
+With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
 
-The Syncfusion ASP.NET MVC UI (Essential JS 2) is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
+# Syncfusion® ASP.NET MVC UI (Essential® JS 2)
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
 
 ## How to best read this user guide
 
@@ -228,7 +231,7 @@ padding-top: 50px;
 
 * Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-mvc).
 
-N> Syncfusion does not collect any kind of information when our components are used in customer applications.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of information when our components are used in customer applications.
 
 ## See also
 
@@ -236,6 +239,6 @@ N> Syncfusion does not collect any kind of information when our components are u
     
     * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
-* Syncfusion Project Template
+* Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 
-    * [Getting started with Syncfusion ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)

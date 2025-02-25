@@ -1,0 +1,51 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().ToolbarClick("toolbarClick").QueryCellInfo("queryCellInfo").ExcelQueryCellInfo("excelQueryCellInfo").Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).Toolbar(new List<string>() { "ExcelExport" }).Render()
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport')
+            grid.excelExport();
+    }
+    function queryCellInfo(args) {
+        let data = args.data.OrderID;
+        switch (data) {
+            case 10248:
+                if (args.column.field === 'CustomerID') args.rowSpan = 2;
+                break;
+            case 10250:
+            case 10261:
+                if (args.column.field === 'CustomerID' || args.column.field === 'Freight') args.colSpan = 2;
+                break;
+            case 10252:
+                if (args.column.field === 'OrderID') args.rowSpan = 3;
+                break;
+            case 10256:
+                if (args.column.field === 'CustomerID') args.colSpan = 3;
+                break;
+        }
+    }
+    function excelQueryCellInfo(args) {
+        let data = args.data.OrderID;
+        switch (data) {
+            case 10248:
+                if (args.column.field === 'CustomerID') args.cell.rowSpan = 2;
+                break;
+            case 10250:
+            case 10261:
+                if (args.column.field === 'CustomerID' || args.column.field === 'Freight') args.colSpan = 2;
+                break;
+            case 10252:
+                if (args.column.field === 'OrderID') args.cell.rowSpan = 3;
+                break;
+            case 10256:
+                if (args.column.field === 'CustomerID') args.colSpan = 3;
+                break;
+        }
+    }
+</script>

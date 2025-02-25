@@ -1,20 +1,17 @@
 public IActionResult Index()
 {
-    var Order = OrderDetails.GetAllRecords();
-    ViewBag.DataSource = Order;
+    ViewBag.DataSource =OrderDetails.GetAllRecords();
     return View();
 } 
 
 public ActionResult Editpartial(DialogTemplateModel value)
 {
-    var order = OrdersDetails.GetAllRecords();
-    ViewBag.datasource = order;
-    return PartialView("Editpartial", value);
+    ViewBag.datasource = OrdersDetails.GetAllRecords();
+    return PartialView("EditPartial", value);
 }
 
 public ActionResult AddPartial()
 {
-    var order = OrdersDetails.GetAllRecords();
-    ViewBag.datasource = order;
-    return PartialView("Addpartial");
+    ViewBag.datasource = OrdersDetails.GetAllRecords();
+    return PartialView("AddPartial");
 }

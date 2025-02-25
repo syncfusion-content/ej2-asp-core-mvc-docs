@@ -1,4 +1,4 @@
-<ejs-tooltip id="targetContainer" content="Tooltip content" offsetX="-15" target="#demoSmart">
+<ejs-tooltip id="targetContainer" content="Drag me!" position="TopCenter" offsetX="-15" target="#demoSmart">
     <e-content-template>
         <div id="demoSmart"></div>
     </e-content-template>

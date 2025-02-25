@@ -4,7 +4,7 @@
         Name("Department").
         Marker(marker => marker.Visible(true)).
             DataSource(ViewBag.dataSource).
-            XName("xValue").Border(border => border.Width(2).Color("green")).
+            XName("xValue").Border(border => border.Width(2).Color("green").DashArray("5,5")).
             YName("yValue").Add();
     }).PrimaryXAxis(
            xAxis =>

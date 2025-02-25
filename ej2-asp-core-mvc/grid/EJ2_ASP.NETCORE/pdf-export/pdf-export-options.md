@@ -8,14 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Pdf Export Options in ASP.NET Core Grid component
 
-# PDF Export Options
+The Syncfusion ASP.NET Core Grid component allows you to customize the PDF export options functionality. This flexibility enables you to have greater component over the exported content and layout to meet your specific requirements.
 
-## Export current page
+The PDF export action can be customized based on your requirements using the `pdfExportProperties` property. By using the `pdfExportProperties` property, you can export the current page records, selected records, or filtered records. Additionally, you can customize the page alignments using the `pdfExportProperties` property.
 
-PDF export provides an option to export the current page into PDF. To export current page, define the **exportType** to **currentpage**.
+## Export current page records
 
-{% if page.publishingplatform == "aspnet-core" %}
+Exporting the current page in Syncfusion ASP.NET Core Grid to a PDF document provides the ability to export the currently displayed page records. This feature allows for generating PDF documents that specifically include the content from the current page of the grid.
+
+To export the current page of the grid to a PDF document, you need to specify the `exportType` property as **CurrentPage**.
+
+The following example demonstrates how to export current page to a PDF document when a toolbar item is clicked.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -26,87 +31,71 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+## Export selected records
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/export-current/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export-current.cs" %}
-{% include code-snippet/grid/pdf-export/export-current/export-current.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+Exporting only the selected records from the Syncfusion ASP.NET Core Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
 
+To export only the selected records by utilizing the `exportProperties->dataSource` property in the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. 
 
+To export the selected records from the grid to a PDF file, you can follow these steps:
 
-## Export the selected records only
+1. Handle the `toolbarClick` event of the Grid.
 
-You can export the selected records data by passing it to **exportProperties.dataSource** Property in the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event.
+2. Retrieve the selected records using the `getSelectedRecords` method.
 
-In the below exporting demo, We can get the selected records using **getSelectedRecords** method and pass the selected data to **PdfExport** or **excelExport** property.
+3. Assign the selected data to the `exportProperties.dataSource `property.
 
-{% if page.publishingplatform == "aspnet-core" %}
+4. Trigger the export operation using the `pdfExport` method.
+
+The following example demonstrates how to export the selected records to a PDF document.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-selected-data/tagHelper %}
+{% include code-snippet/grid/pdf-export/export-selected-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selected-data.cs" %}
-{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
+{% include code-snippet/grid/pdf-export/export-selected-data/selected-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Export Selected Records](../images/pdf-export/export-selected-record.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-selected-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Selected-data.cs" %}
-{% include code-snippet/grid/how-to/export-selected-data/selected-data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+## Export filtered records
 
+Exporting only the filtered records from the Syncfusion ASP.NET Core Grid allows you to generate PDF document that include only the data that matches your applied filters. This feature is useful when you want to export a subset of data based on specific criteria.
 
+This can be achieved by defining the filtered data in the `exportProperties.dataSource` property before initiating the export.
 
-## Export filtered data only
+To export only the filtered data from the grid to a PDF file, you can follow these steps:
 
-You can export the filtered data by defining the resulted data in **exportProperties.dataSource** before export.
+1. Apply the desired filter to the grid data.
 
-In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in **exportProperties.dataSource** and pass it to **pdfExport** method.
+2. Get the filtered data using the `getFilteredRecords` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
+3. Assign the filtered data to the `exportProperties.dataSource` property.
+
+4. Trigger the export operation using the `pdfExport` method.
+
+The following example demonstrates how to export the filtered records to a PDF document.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-filtered-data/tagHelper %}
+{% include code-snippet/grid/pdf-export/export-filtered-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-filtered-data.cs" %}
-{% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
+{% include code-snippet/grid/pdf-export/export-filtered-data/export-filtered-data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Export Filtered Records](../images/pdf-export/export-filtered-record.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/export-filtered-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export-filtered-data.cs" %}
-{% include code-snippet/grid/how-to/export-filtered-data/export-filtered-data.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+## Export with hidden columns
 
+Exporting hidden columns in the Syncfusion ASP.NET Core Grid allows you to include hidden columns in the exported PDF document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
 
+To export hidden columns of the grid to a PDF file, you need to set the `includeHiddenColumn` property as **true** in the `pdfExportProperties` property.
 
-## Export hidden columns
-
-PDF export provides an option to export hidden columns of Grid by defining the **includeHiddenColumn** as **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the `checked` property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -117,31 +106,23 @@ PDF export provides an option to export hidden columns of Grid by defining the *
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Export Hidden Records](../images/pdf-export/hidden-column.png)
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/export-hidden/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export-hidden.cs" %}
-{% include code-snippet/grid/pdf-export/export-hidden/export-hidden.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+## Show or hide columns while exporting
 
+The Syncfusion ASP.NET Core Grid component provides the functionality to show or hide columns dynamically during the export process. This feature allows you to selectively display or hide specific columns based on your requirements.
 
+To show or hide columns based on user interaction during the export process, you can follow these steps:
 
-## Show or hide columns
+1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Grid component.
 
-You can show a hidden column or hide a visible column while exporting the grid using [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) and [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event.
+2. Update the visibility of the desired columns by setting the `visible` property of the column to **true** or **false**.
 
-In the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event, based on **args.item.id** as **Grid_pdfexport**. We can show or hide columns by setting [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of [`e-grid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html) to **true** or **false** respectively.
+3. Export the grid to PDF.
 
-In the [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event, We have reversed the state back to the previous state.
+4. Handle the [pdfExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event to restore the column visibility to its original state.
 
-In the below example, we have **CustomerID** as a hidden column in the grid. While exporting, we have changed **CustomerID** to visible column and **ShipCity** as hidden column.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -152,25 +133,21 @@ In the below example, we have **CustomerID** as a hidden column in the grid. Whi
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/show-hide/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Show-hide.cs" %}
-{% include code-snippet/grid/pdf-export/show-hide/show-hide.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
+![Export Show Hide Records](../images/pdf-export/export-show-hide.png)
 
 ## Change page orientation
 
-Page orientation can be changed Landscape(Default Portrait) for the exported document using the **exportProperties**.
+The Syncfusion ASP.NET Core Grid component allows you to change the page orientation of the exported PDF document from the default portrait mode to landscape mode. This feature provides the flexibility to adjust the layout and presentation of the exported PDF according to your needs.
 
-{% if page.publishingplatform == "aspnet-core" %}
+To change the page orientation to landscape for the exported document, you can set the `pageOrientation` property of the `pdfExportProperties`   property. 
+
+The supported `pageOrientation` options are:
+
+1. **Landscape**: Exports the grid with a landscape PDF page orientation.
+
+2. **Portrait**: Exports the grid with a portrait PDF page orientation.
+
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the `value` property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -181,24 +158,13 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/orientation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Orientation.cs" %}
-{% include code-snippet/grid/pdf-export/orientation/orientation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Change page size
 
-Page size can be customized for the exported document using the **exportProperties**.
-Supported page sizes are:
+The Syncfusion ASP.NET Core Grid component allows you to customize the page size of the exported PDF document according to your requirements. This feature provides the flexibility to adjust the layout and dimensions of the exported PDF to fit different paper sizes or printing needs. 
+
+To customize the page size for the exported document, you can set the `pageSize` property of the `pdfExportProperties` property to the desired page size. 
+
+Supported `pdfPageSize` are:
 * Letter
 * Note
 * Legal
@@ -206,6 +172,7 @@ Supported page sizes are:
 * A1
 * A2
 * A3
+* A4
 * A5
 * A6
 * A7
@@ -227,7 +194,7 @@ Supported page sizes are:
 * Letter11x17
 * Ledger
 
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using `value` property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -238,25 +205,13 @@ Supported page sizes are:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/page-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Page-size.cs" %}
-{% include code-snippet/grid/pdf-export/page-size/page-size.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Define file name
 
-You can assign the file name for the exported document by defining **fileName** property in **PdfExportProperties**.
+The Syncfusion ASP.NET Core Grid component allows you to specify a custom file name for the exported PDF document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
 
-{% if page.publishingplatform == "aspnet-core" %}
+To assign a custom file name for the exported document, you can set the `fileName` property of the `pdfExportProperties`property to the desired file name.
+
+The following example demonstrates how to define a file name using `pdfExportProperties.fileName` property when exporting to PDF, based on the entered value as the file name.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -267,25 +222,59 @@ You can assign the file name for the exported document by defining **fileName** 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Export Filename](../images/pdf-export/export-filename.png)
+
+## Enabling horizontal overflow
+
+The Syncfusion ASP.NET Core Grid component allows you to display all defined grid columns on a single page even when the number of columns exceeds the maximum limits for columns in the exported PDF document. This ensures that your exported PDF maintains its readability and comprehensiveness.
+
+You can achieve this by utilizing the `pdfExportProperties.allowHorizontalOverflow` property of the grid.
+
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) component is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the `checked` property, and the export action is performed accordingly when the toolbar is clicked.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/export-filename/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/export-overflow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export-filename.cs" %}
-{% include code-snippet/grid/pdf-export/export-filename/export-filename.cs %}
+{% include code-snippet/grid/pdf-export/export-overflow/export-overflow.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Export OverFlow](../images/pdf-export/export-overflow.png)
 
+## Customizing columns on export
 
-## Font customization
+The Syncfusion ASP.NET Core Grid component allows you to customize the appearance of grid columns in your exported PDF documents. This feature empowers you to tailor specific column attributes such as field, header text, and text alignment, ensuring that your exported PDFs align perfectly with your design and reporting requirements.
+
+To customize the grid columns, you can follow these steps:
+
+1. Access the `pdfExportProperties.column` of the Grid component.
+
+2. Set the `column` object with attributes such as `field`, `headerText`, and `textAlign` to define the desired format.
+
+3. Trigger the PDF export operation to apply the customized column settings.
+
+The following example demonstrates how to customize the grid columns when exporting a document. In this scenario, the attributes for different columns have been customized: **OrderID** with `textAlign` set to **Right**, **CustomerID** with `headerText` as **"Customer Name"**, and **Freight** with a center-aligned `textAlign` property, which is not rendered in the grid columns.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/customizing-column/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-filename.cs" %}
+{% include code-snippet/grid/pdf-export/customizing-column/customizing-column.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Export Font](../images/pdf-export/customizing-columns.png)
+
+## Font and color customization
+
+The Syncfusion ASP.NET Core Grid component provides the ability to customize the font in the exported PDF document. This feature allows you to component the appearance and styling of the text in the exported file, ensuring consistency with your application's design.
 
 ### Default fonts
 
-By default, grid uses **Helvetica** font in the exported document. You can change the default font by using **pdfExportProperties.theme** property. The available default fonts are,
+By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the `pdfExportProperties.theme` property. The available default fonts that you can choose from are:
 
 * Helvetica
 * TimesRoman
@@ -293,27 +282,34 @@ By default, grid uses **Helvetica** font in the exported document. You can chang
 * Symbol
 * ZapfDingbats
 
-The code example for changing default font,
+To change the default font, you can follow these steps:
 
-```typescript
+1. Access the `PdfExportProperties` of the Grid component.
 
-    let pdfExportProperties = {
-        theme: {
-            header: {font:  new ej.pdfexport.PdfStandardFont(ej.pdfexport.PdfFontFamily.TimesRoman, 11, PdfFontStyle.Bold),
-            caption: { font: new ej.pdfexport.PdfStandardFont(ej.pdfexport.PdfFontFamily.TimesRoman, 9) },
-            record: { font: new ej.pdfexport.PdfStandardFont(ej.pdfexport.PdfFontFamily.TimesRoman, 10) }
-        }
-    };
+2. Set the `Theme` property to the desired default font.
 
-```
+3. Trigger the PDF export operation.
+
+The following example demonstrates, how to change the default font when exporting a document.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/default-font/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Export-filename.cs" %}
+{% include code-snippet/grid/pdf-export/default-font/default-font.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Export Default Font](../images/pdf-export/default-font.png)
 
 ### Add custom font
 
-You can change the default font of Grid header, content and caption cells in the exported document by using **pdfExportProperties.theme** property.
+In addition to changing the default font, the Syncfusion ASP.NET Core Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the `pdfExportProperties.theme` property.
 
-In the following example, we have used Advent Pro font to export the grid with Hungarian fonts.
+When using a custom font, it's important to provide the font in a format that can be easily embedded in the exported document. This is typically done by encoding the font file into a base64 string. This base64 encoded font data can then be used within the export settings to ensure the custom font is applied to the exported PDF.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The following example demonstrates how to use the custom **Algeria** font for exporting the grid. The **base64AlgeriaFont** variable contains the base64 encoded string representing the **Algeria** font file. This encoded font data is used in the PDF export properties to specify the custom font.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -324,18 +320,40 @@ In the following example, we have used Advent Pro font to export the grid with H
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Export Custom Font](../images/pdf-export/custom-font.png)
+
+> **PdfTrueTypeFont** accepts base64 format of the custom font.
+
+## Conditional cell customization
+
+When exporting data from the Syncfusion ASP.NET Core Grid, you have an option to conditionally format the cells in the exported PDF document. This allows you to customize the appearance of specific cells based on their values or other criteria.
+
+To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event of the Grid. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
+
+The following example demonstrate how to customize the background color of the **Freight** column in the exported PDF document using the **args.cell** and **backgroundColor** properties of the `pdfQueryCellInfo` event.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/customfont/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/cell-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customfont.cs" %}
-{% include code-snippet/grid/pdf-export/customfont/customfont.cs %}
+{% include code-snippet/grid/pdf-export/cell-customization/cell-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Export Custom Font](../images/pdf-export/cell-customization.png)
 
+## Export grid as blob
 
-N> **ej.pdfexport.PdfTrueTypeFont** accepts base 64 format of the Custom Font.
+The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the `pdfExport` method. The grid returns the promise of a blob in the [pdfExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event.
+
+The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/grid-blob/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customfont.cs" %}
+{% include code-snippet/grid/pdf-export/grid-blob/grid-blob.cs %}
+{% endhighlight %}
+{% endtabs %}

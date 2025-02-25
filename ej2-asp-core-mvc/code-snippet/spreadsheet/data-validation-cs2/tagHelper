@@ -1,0 +1,100 @@
+<ejs-spreadsheet id="spreadsheet" created="created" showFormulaBar="false">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet name="PriceDetails">
+            <e-spreadsheet-rows>
+                <e-spreadsheet-row>
+                    <e-spreadsheet-cells>
+                        <e-spreadsheet-cell value="Seller Name">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Customer Id">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Customer Name">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Product Name">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Product Price">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Total Price">
+                            <e-spreadsheet-cellstyle fontWeight="Bold" textAlign="Center"></e-spreadsheet-cellstyle>
+                        </e-spreadsheet-cell>
+                    </e-spreadsheet-cells>
+                </e-spreadsheet-row>
+                <e-spreadsheet-row>
+                    <e-spreadsheet-cells>
+                        <e-spreadsheet-cell value="John"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="101">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Nash"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Digger">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="50000">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell>
+                    </e-spreadsheet-cells>
+                </e-spreadsheet-row>
+                <e-spreadsheet-row>
+                    <e-spreadsheet-cells>
+                        <e-spreadsheet-cell value="Mike"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="25">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Jim"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Cherrypicker">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="45000">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="1,45,000.00"></e-spreadsheet-cell>
+                    </e-spreadsheet-cells>
+                </e-spreadsheet-row>
+                <e-spreadsheet-row>
+                    <e-spreadsheet-cells>
+                        <e-spreadsheet-cell value="shane"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="35">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Sean"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Kango">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="35000">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="1,54,500.00"></e-spreadsheet-cell>
+                    </e-spreadsheet-cells>
+                </e-spreadsheet-row>
+                <e-spreadsheet-row>
+                    <e-spreadsheet-cells>
+                        <e-spreadsheet-cell value="John"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="101">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="Nash"></e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="JCB">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="90000">
+                        </e-spreadsheet-cell>
+                        <e-spreadsheet-cell value="1,00,095.00"></e-spreadsheet-cell>
+                    </e-spreadsheet-cells>
+                </e-spreadsheet-row>
+            </e-spreadsheet-rows>
+            <e-spreadsheet-columns>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="106"></e-spreadsheet-column>
+                <e-spreadsheet-column width="98"></e-spreadsheet-column>
+                <e-spreadsheet-column width="88"></e-spreadsheet-column>
+                <e-spreadsheet-column width="81"></e-spreadsheet-column>
+            </e-spreadsheet-columns>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+    function created() {
+        var spreadsheet = document.getElementById("spreadsheet").ej2_instances[0];
+        //Add Data Validation to range.
+        spreadsheet.addDataValidation({ type: 'Custom', value1: '=AND(B2>10, B2<100)' }, 'E2:E5');
+        //Highlight Invalid Data.
+        spreadsheet.addInvalidHighlight('E2:E5');
+    }
+</script>

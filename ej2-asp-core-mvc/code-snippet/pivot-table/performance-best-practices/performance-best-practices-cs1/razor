@@ -1,0 +1,19 @@
+@model List<PivotTableSample.Controllers.GroupData>
+
+@Html.EJS().PivotView("PivotView").Height("300").ShowGroupingBar(true).AllowGrouping(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)Model).ExpandAll(false).EnableSorting(true)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("ProCost").Format("C").Add();
+})
+        .Rows(rows => { rows.Name("TimeLine").Add(); })
+        .Columns(columns => { columns.Name("Id").Caption("Id").Add(); })
+        .Values(values =>
+        {
+            values.Name("PowUnits").Caption("Units").Add();
+            values.Name("ProCost").Caption("Cost").Add();
+        })
+        .GroupSettings(groupsettings =>
+        {
+            groupsettings.Name("Id").Type(GroupType.Number).RangeInterval(3).Add();
+            groupsettings.Name("TimeLine").Type(GroupType.Date).GroupInterval((new List<string>() { "Years", "Months" })).Add();
+        })).Render()

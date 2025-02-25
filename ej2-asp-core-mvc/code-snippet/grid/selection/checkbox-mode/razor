@@ -1,0 +1,30 @@
+@{
+   ViewBag.dropDownData = new List<object>
+   {
+      new { value = "Default", text = "Default" },
+      new { value = "ResetOnRowClick", text = "ResetOnRowClick" },
+   };
+}
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 10px 0 0"> Choose checkbox selection mode:</label>
+        <span style="height:fit-content">
+         @Html.EJS().DropDownList("dropDown").Width("150px").Index(0).DataSource(@ViewBag.dropDownData).Change("valueChange").Render()
+        </span>
+    </div>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Type("checkbox").Width("50").Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).Render()
+<script>
+  function valueChange(args){
+    var grid = document.getElementById("grid").ej2_instances[0];
+    grid.selectionSettings.checkboxMode = args.value;
+  }
+</script>

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Listview Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Ej1 Api Migration in ##Platform_Name## ListView Control | Syncfusion
+description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of ListView component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of ListView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
-| Behaviour | API in Essential JS 1 | API in Essential JS 2 |
+| Behaviour | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Virtualization | **Property:**  *AllowVirtualScrolling*  <br/><br/>  `@Html.EJ().ListView("list").AllowVirtualScrolling(true)`<br/>`.VirtualScrollMode(VirtualScrollMode.Continuous)`| **Property:**  *EnableVirtualization*  <br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).EnableVirtualization(true).Render()` |
 | Fields | **Property:**  *FieldSettings*  <br/><br/>  `@Html.EJ().ListView("list").FieldSettings(e => e.Text("text"))` | **Property:**  *Fields*  <br/><br/>  **Inner properties:**  *child, enabled, groupBy htmlAttributes, iconCss, id, isChecked etc.*  <br/><br/><br/>  `@Html.EJS().ListView("list").DataSource((IEnumerable<object>)`<br/>`ViewBag.dataSource).Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy="type"}).Render()`|

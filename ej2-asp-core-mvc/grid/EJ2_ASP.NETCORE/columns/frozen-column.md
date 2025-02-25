@@ -10,7 +10,7 @@ documentation: ug
 
 # Column Pinning (Frozen) in ASP.NET Core Grid component
 
-In the Syncfusion ASP.NET Core Grid component, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
 
 In the following example, the [frozenColumns](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) property is set to **2**. This configuration freezes the left two columns of the grid, and they will remain fixed in their positions while the rest of the columns grid can be scrolled horizontally.
 
@@ -32,11 +32,11 @@ In the following example, the [frozenColumns](https://help.syncfusion.com/cr/asp
 
 ## Freeze particular columns
 
-The Syncfusion ASP.NET Core Grid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
 To freeze a particular column in the grid, you can utilize the `isFrozen` property of the grid component as **true**.
 
-The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the `DropDownList` component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
+The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -51,7 +51,7 @@ The following example demonstrates how to freeze particular column in grid using
 
 ## Freeze direction
 
-In the Syncfusion ASP.NET Core Grid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
+In the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
 
 To achieve this, you can utilize the `column.freeze` property. This property is used to specify the freeze direction for individual columns. The grid will adjust the column positions based on the `column.freeze` value.
 
@@ -80,7 +80,7 @@ In the following example, the **ShipCountry** column is frozen on the left side,
 
 ## Change default frozen line color
 
-You can customize the frozen line borders of frozen columns in the Syncfusion Grid component by applying custom CSS styles to the specific frozen column. This allows you to change the border color of the left frozen columns, right frozen columns, and fixed frozen columns to match your application's design and theme.
+You can customize the frozen line borders of frozen columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component by applying custom CSS styles to the specific frozen column. This allows you to change the border color of the left frozen columns, right frozen columns, and fixed frozen columns to match your application's design and theme.
 
 To change default frozen line color, use the following class name and apply the border color based on your requirement.
 
@@ -137,7 +137,7 @@ Previous | Current | Explanation
 
 ## Limitations
 
-While freezing columns in the Syncfusion ASP.NET Core Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
+While freezing columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
 
 * Detail Template
 * Hierarchy Grid

@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1
+# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
 
-This article describes the API migration process of Chart component from Essential JS 1 to Essential JS 2.
+This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
 ## RangeNavigator
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Allow snapping | **Property:** *allow-snapping* <br/><br/> `<ej-range-navigator id="range" allow-snapping="true">` <br> `</ej-range-navigator>` | **Property:** *allowSnapping* <br/><br/> `<ejs-rangenavigator id="range" allowSnapping="true">` <br> `</ejs-rangenavigator>` |
 | Animation duration | **Property:** *Not Applicable* | **Property:** *animationDuration* <br/><br/> `<ejs-rangenavigator id="range" animationDuration="1000">`<br>`</ejs-rangenavigator>` |
@@ -51,7 +51,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Series
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | animation | **Property:** *enable-animation* <br/><br/> `<ej-range-navigator id="range">` <br> `<e-chart-series>` <br> `<e-series enable-animation="false">` <br> `</e-series>` <br> `</e-chart-series>` <br> `</ej-range-navigator>` | **Property:** *e-rangenavigator-series-animation* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-series-animation duration="10" enable="true">` <br> `</e-rangenavigator-series-animation>` <br> `</ejs-rangenavigator>` |
 | Border for range navigator series | **Property:** *Not Applicable* | **Property:** *e-rangenavigator-series-border* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-series-border color="red">` <br> `</e-rangenavigator-series-border>` <br> `</ejs-rangenavigator>` |
@@ -66,7 +66,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## StyleSettings
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Style settings of range navigator | **Property:** *e-rangenavigator-navigatorstylesettings* <br/><br/> `<ej-range-navigator id="range">` <br> `<e-navigator-style-settings opacity="0.7">` <br> `</e-navigator-style-settings>` <br> `</ej-range-navigator>` | **Property:** *e-rangenavigator-navigatorstylesettings* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-navigatorstylesettings>` <br> `</e-rangenavigator-navigatorstylesettings>` <br> `</ejs-rangenavigator>` |
 | Selected region color of range navigator | **Property:** *selected-region-color* <br/><br/> `<ej-range-navigator id="range">` <br> `<e-navigator-style-settings selected-region-color="red">` <br> `</e-navigator-style-settings>` <br> `</ej-range-navigator>` | **Property:** *selectedRegionColor* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-navigatorstylesettings selectedRegionColor="red">` <br> `</e-rangenavigator-navigatorstylesettings>` <br> `</ejs-rangenavigator>` |
@@ -83,7 +83,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Tooltip
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | tooltip | **Property:** *visible* <br/><br/> `<ej-range-navigator id="range">` <br> `<e-range-tooltip-settings visible="true">` <br> `</e-range-tooltip-settings>` <br> `</ej-range-navigator>` | **Property:** *enable* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-tooltip enable="true">` <br> `</e-rangenavigator-tooltip>` <br> `</ejs-rangenavigator>` |
 | background color of tooltip | **Property:** *background-color* <br/><br/> `<ej-range-navigator id="range">` <br> `<e-range-tooltip-settings background-color="red">` <br> `</e-range-tooltip-settings>` <br> `</ej-range-navigator>` | **Property:** *fill* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-tooltip fill="red">` <br> `</e-rangenavigator-tooltip>` <br> `</ejs-rangenavigator>` |
@@ -96,7 +96,7 @@ This article describes the API migration process of Chart component from Essenti
 
 ## Period Selector
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Period Selector | **Property:** *Not Applicable* | **Property:** *e-rangetooltipsettings-border* <br/><br/> `<ejs-rangenavigator id="range">` <br> `<e-rangenavigator-periodselectorsettings>` <br> `<e-periods>` <br> `<e-period interval="1" intervalType="Months">` <br> `</e-period>` <br> `</e-periods>` <br> `</e-rangenavigator-periodselectorsettings>` <br> `</ejs-rangenavigator>` |
 
@@ -104,7 +104,7 @@ This article describes the API migration process of Chart component from Essenti
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Export | **Property** *Not Applicable* | **Property:** *chart.export()* <br/><br/>  `<ejs-rangenavigator  id="range" >` <br> `</ejs-rangenavigator >` <br> `<script>` <br> <code> var chartobj= document.getElementById('range').ej2_instances[0]; <br> chartobj.export('JPEG', 'chart'); </code><br> `</script>` |
 | Print | **Property** *Not Applicable* | **Property:** *chart.print()* <br/><br/>  `<ejs-rangenavigator  id="range">` <br> `</ejs-rangenavigator >` <br> `<script>` <br> <code> var chartobj= document.getElementById('range').ej2_instances[0]; <br> chartobj.print(); </code> <br> `</script>` |
@@ -113,7 +113,7 @@ This article describes the API migration process of Chart component from Essenti
 
 <!-- markdownlint-disable MD033 -->
 
-| Behavior | API in Essential JS 1 | API in Essential JS 2 |
+| Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 | --- | --- | --- |
 | Fires before loading the RangeNavigator | **Property:** *load* <br/><br/> `<ej-rangenavigator id="range" load="load">` <br> `</ej-rangenavigator>` <br> `<script>` <br> <code> function load(args) { <br> } <br> </code> `</script>` | **Property:** *load* <br/><br/> `<ejs-rangenavigator  id="range" load="load">` <br> `</ejs-rangenavigator >` <br> `<script>` <br> <code> function load(args) { <br> } <br> </code> `</script>`|
 | Fires before loading the RangeNavigator | **Property:** *create* <br/><br/> `<ej-rangenavigator id="range" create="create">` <br> `</ej-rangenavigator>` <br> `<script>` <br> <code> function create(args) { <br> } <br> </code> `</script>` | **Property:** *loaded* <br/><br/> `<ejs-rangenavigator  id="range" loaded="loaded">` <br> `</ejs-rangenavigator >` <br> `<script>` <br> <code> function loaded(args) { <br> } <br> </code> `</script>`|

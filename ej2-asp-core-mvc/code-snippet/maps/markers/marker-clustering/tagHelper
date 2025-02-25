@@ -1,0 +1,120 @@
+@using Syncfusion.EJ2.Maps;
+
+@{
+    var TextStyle = new MapsFont { Size = "16px", FontFamily = "inherit" };
+    var Markers = new List<Syncfusion.EJ2.Maps.MapsMarker>
+    {
+
+        new Syncfusion.EJ2.Maps.MapsMarker
+        {
+            Visible = true, Height = 15, Width = 15, Shape = MarkerType.Circle, AnimationDuration = 0, Fill="#b38600",
+            DataSource = new [] {
+                new { latitude= 48.8584, longitude= 2.2945, name= "Eiffel Tower", state= "Paris", country= "France" },
+                new { latitude= 48.8606, longitude= 2.3376, name= "Louvre Museum", state= "Paris", country= "France" },
+                new { latitude= 48.8529, longitude= 2.3500, name= "Notre-Dame Cathedral", state= "Paris", country= "France" },
+                new { latitude= 48.6360, longitude= 1.5115, name= "Mont Saint-Michel", state= "Normandy", country= "France" }
+            },
+            Border = new MapsBorder {
+                 Color = "#e6f2ff",
+                 Width = 2,
+                 Opacity = 1
+            },
+            ClusterSettings = new Syncfusion.EJ2.Maps.MapsMarkerClusterSettings
+            {
+                AllowClustering = true,
+                AllowDeepClustering= false,
+                AllowClusterExpand= true,
+                Shape= MarkerType.Image,
+                Height= 40, Width= 40,
+                LabelStyle= new MapsFont {
+                    Color= "white",
+                    Size= "10px"
+                },
+                ImageUrl= "../styles/images/maps/cluster-france.svg"
+            },
+            TooltipSettings = new MapsTooltipSettings{ Visible=true, ValuePath="name", Format= "<b>Name:</b> ${name} <br/> <b>State:</b> ${state} <br/> <b>Country:</b> ${country}" },
+        },
+        new Syncfusion.EJ2.Maps.MapsMarker
+        {
+            Visible = true, Height = 15, Width = 15, Shape = MarkerType.Circle, AnimationDuration = 0, Fill="#bf4040",
+            DataSource = new [] {
+               new { latitude= 35.019028, longitude= -85.339439, name= "Ruby Falls", state= "Tennessee", country= "United States of America" },
+               new { latitude= 35.654613, longitude= -105.996979, name= "Meow Wolf Santa Fe", state= "New Mexico", country= "United States of America" },
+               new { latitude= 36.107216, longitude= -115.175804, name= "City Center of Las Vegas", state= "Nevada", country= "United States of America" },
+               new { latitude= 36.879047, longitude= -111.510498, name= "Horseshoe Bend", state= "Arizona", country= "United States of America" },
+               new { latitude= 36.011955, longitude= -113.810951, name= "Grand Canyon West Skywalk", state= "Arizona", country= "United States of America" }
+            },
+            Border = new MapsBorder {
+                 Color = "#e6f2ff",
+                 Width = 2,
+                 Opacity = 1
+            },
+            ClusterSettings = new Syncfusion.EJ2.Maps.MapsMarkerClusterSettings
+            {
+                AllowClustering = true,
+                AllowDeepClustering= false,
+                AllowClusterExpand= true,
+                Shape= MarkerType.Image,
+                Height= 40, Width= 40,
+                LabelStyle= new MapsFont {
+                    Color= "white",
+                    Size= "10px"
+                },
+                ImageUrl= "../styles/images/maps/cluster-usa.svg"
+            },
+            TooltipSettings = new MapsTooltipSettings{ Visible=true, ValuePath="name", Format= "<b>Name:</b> ${name} <br/> <b>State:</b> ${state} <br/> <b>Country:</b> ${country}" },
+        },
+        new Syncfusion.EJ2.Maps.MapsMarker
+        {
+            Visible = true, Height = 15, Width = 15, Shape = MarkerType.Circle, AnimationDuration = 0, Fill="#00b3b3",
+            DataSource = new [] {
+              new { latitude= 26.985901, longitude= 75.850700, name= "Amber Fort, Amer", state= "Rajastan", country= "India" },
+              new { latitude= 22.957390, longitude= 77.625275, name= "Bhimbetka, Raisen District", state= "Madhya Pradesh", country= "India" },
+              new { latitude= 26.809330, longitude= 75.540527, name= "Bagru Fort, Bagru", state= "Rajasthan", country= "India" },
+              new { latitude= 25.489504, longitude= 80.330116, name= "Kalinjar Fort, Banda", state= "Uttar Pradesh", country= "India" },
+              new { latitude= 27.988890, longitude= 76.388336, name= "Neemrana", state= "Rajasthan", country= "India" }
+            },
+            Border = new MapsBorder {
+                 Color = "#e6f2ff",
+                 Width = 2,
+                 Opacity = 1
+            },
+            ClusterSettings = new Syncfusion.EJ2.Maps.MapsMarkerClusterSettings
+            {
+                AllowClustering = true,
+                AllowDeepClustering= false,
+                AllowClusterExpand= true,
+                Shape= MarkerType.Image,
+                Height= 40, Width= 40,
+                LabelStyle= new MapsFont {
+                    Color= "white",
+                    Size= "10px"
+                },
+                ImageUrl= "../styles/images/maps/cluster-india.svg"
+            },
+            TooltipSettings = new MapsTooltipSettings{ Visible=true, ValuePath="name", Format= "<b>Name:</b> ${name} <br/> <b>State:</b> ${state} <br/> <b>Country:</b> ${country}" },
+        }
+    };
+}
+
+<div class="control-section">
+    <ejs-maps id="maps" width="100%" load="window.onMapLoad">
+        <e-maps-titlesettings alignment="@Syncfusion.EJ2.Maps.Alignment.Center" text="Attractive places around the world" textStyle="@TextStyle">
+        </e-maps-titlesettings>
+        <e-maps-zoomsettings enable="true"></e-maps-zoomsettings>
+        <e-maps-layers>
+            <e-maps-layer shapeData="ViewBag.worldmap" markerSettings="@Markers">
+            </e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>
+</div>
+
+<script>
+    var allowLoading = true;    
+    function onMapLoad(args) {
+        if (allowLoading) {
+            allowLoading = false;
+            args.maps.zoomSettings.toolbarSettings.buttonSettings.toolbarItems = ['Zoom', 'ZoomIn', 'ZoomOut', 'Pan', 'Reset'];
+        }
+    }
+</script>

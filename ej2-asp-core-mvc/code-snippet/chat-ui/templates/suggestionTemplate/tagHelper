@@ -1,0 +1,57 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="suggestionTemplate" suggestionTemplate="#suggestionContent" created="onCreated">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in ViewBag.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script id="suggestionContent" type="text/x-jsrender">
+    <div class='suggestion-item active'>
+        <div class="content">${suggestion}</div>
+    </div>
+</script>
+
+<style>
+    #suggestionTemplate .e-suggestion-list li {
+        padding: 0;
+        border: none;
+        box-shadow: none;
+    }
+
+    #suggestionTemplate .suggestion-item {
+        display: flex;
+        align-items: center;
+        background-color: #87b6fb;
+        color: black;
+        padding: 4px;
+        gap: 5px;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+    #suggestionTemplate .suggestion-item .content {
+        padding: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+</style>
+
+<script>
+    var chatUIObj;
+    const suggestions = ["Okay will check it", "Sounds good!"];
+    function onCreated() {
+        var chatUiEle = document.getElementById('suggestionTemplate');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj.suggestions = suggestions;
+        chatUIObj.dataBind();
+    }
+</script>

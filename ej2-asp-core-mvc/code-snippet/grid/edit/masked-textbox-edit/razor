@@ -1,0 +1,29 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("100").ValidationRules(new { required = "true", number = true }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").ValidationRules(new { required = "true" }).Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").EditType("numericedit").ValidationRules(new { required = "true", min = 1, max = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("OrderDate").HeaderText("Order Date").ValidationRules(new { required = true }).Width("130").EditType("datepickeredit").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerNumber").HeaderText("Customer Number").Edit(new { create = "createCustomerNumberHandler", read = "readCustomerNumberHandler", destroy = "destroyCustomerNumberHandler", write = "writeCustomerNumberHandler" }).ValidationRules(new { required = true }).Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+    function createCustomerNumberHandler() {
+        maskElement = document.createElement('input');
+        return maskElement;
+    }
+    function destroyCustomerNumberHandler() {
+        maskObject.destroy();
+    }
+    function readCustomerNumberHandler() {
+        return maskObject.value;
+    }
+    function writeCustomerNumberHandler(args) {
+        var rowData = args.rowData;
+        maskObject = new ej.inputs.MaskedTextBox({
+            mask: "000-000-0000",
+            value: rowData.CustomerNumber
+        });
+        maskObject.appendTo(maskElement);
+    }
+</script>

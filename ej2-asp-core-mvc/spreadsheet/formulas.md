@@ -39,7 +39,7 @@ In the example below, the Spreadsheet control is rendered with the `German cultu
 {% include code-snippet/spreadsheet/formula-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs3/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs3/Core/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -50,7 +50,7 @@ In the example below, the Spreadsheet control is rendered with the `German cultu
 {% include code-snippet/spreadsheet/formula-cs3/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs3/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs3/MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -70,7 +70,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% include code-snippet/spreadsheet/formula/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula/Core/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -81,7 +81,7 @@ The following code example shows an unsupported formula in the spreadsheet.
 {% include code-snippet/spreadsheet/formula/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula/MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,7 +97,7 @@ The following code example shows how to use `computeExpression` method in the sp
 {% include code-snippet/spreadsheet/formula-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs2/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs2/Core/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ The following code example shows how to use `computeExpression` method in the sp
 {% include code-snippet/spreadsheet/formula-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FormulaController.cs" %}
-{% include code-snippet/spreadsheet/formula-cs2/formulaController.cs %}
+{% include code-snippet/spreadsheet/formula-cs2/MVC/formulaController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -135,7 +135,7 @@ The following code example shows the usage of named ranges support.
 {% include code-snippet/spreadsheet/defined-names/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefinedNameController.cs" %}
-{% include code-snippet/spreadsheet/defined-names/definedNameController.cs %}
+{% include code-snippet/spreadsheet/defined-names/Core/definedNameController.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -146,12 +146,84 @@ The following code example shows the usage of named ranges support.
 {% include code-snippet/spreadsheet/defined-names/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DefinedNameController.cs" %}
-{% include code-snippet/spreadsheet/defined-names/definedNameController.cs %}
+{% include code-snippet/spreadsheet/defined-names/MVC/definedNameController.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Calculation Mode
 
+The Spreadsheet provides a `Calculation Mode` feature like the calculation options in online Excel. This feature allows you to control when and how formulas are recalculated in the spreadsheet. The available modes are:
+
+* `Automatic`: Formulas are recalculated instantly whenever a change occurs in the dependent cells.
+* `Manual`: Formulas are recalculated only when triggered explicitly by the user using options like `Calculate Sheet` or `Calculate Workbook`.
+
+You can configure the calculate mode using the [`calculationMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_CalculationMode) property of the Spreadsheet. These modes offer flexibility to balance real-time updates and performance optimization.
+
+### Automatic Mode
+
+In Automatic Mode, formulas are recalculated instantly whenever a dependent cell is modified. This mode is perfect for scenarios where real-time updates are essential, ensuring that users see the latest results without additional actions.
+
+For example, consider a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, `C1` updates immediately without requiring any user intervention. You can enable this mode by setting the [`calculationMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.Spreadsheet.html#Syncfusion_EJ2_Spreadsheet_Spreadsheet_CalculationMode) property to `Automatic`.
+
+The following code example demonstrates how to set the Automatic calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs1/Core/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs1/MVC/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Manual Mode
+
+In Manual Mode, formulas are not recalculated automatically when cell values are modified. Instead, recalculations must be triggered explicitly. This mode is ideal for scenarios where performance optimization is a priority, such as working with large datasets or computationally intensive formulas.
+
+For example, imagine a spreadsheet where cell `C1` contains the formula `=A1+B1`. When the value in `A1` or `B1` changes, the value in `C1` will not update automatically. Instead, the recalculation must be initiated manually using either the `Calculate Sheet` or `Calculate Workbook` option. To manually initiate recalculation, the Spreadsheet provides two options:
+
+* `Calculate Sheet`: Recalculates formulas for the active sheet only.
+* `Calculate Workbook`: Recalculates formulas across all sheets in the workbook.
+
+The following code example demonstrates how to set the Manual calculation mode in a Spreadsheet.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs2/Core/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/spreadsheet/calculation-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CalculationModeController.cs" %}
+{% include code-snippet/spreadsheet/calculation-cs2/MVC/calculationModeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Supported Formulas
 

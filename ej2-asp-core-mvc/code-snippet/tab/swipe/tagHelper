@@ -20,7 +20,7 @@
                    "Mountain View, California, was acquired by Facebook Inc.on February 19, 2014, for approximately US$19.3 billion.";
 }
 
-<ejs-tab id="ej2Tab" selecting="tabSelecting">
+<ejs-tab id="ej2Tab" swipeMode="None">
     <e-tab-tabitems>
         <e-tab-tabitem header="ViewBag.headerTextOne" content="@content0"></e-tab-tabitem>
         <e-tab-tabitem header="ViewBag.headerTextTwo" content="@content1"></e-tab-tabitem>
@@ -41,11 +41,3 @@
         margin: 0 auto;
     }
 </style>
-
-<script type="text/javascript">
-    function tabSelecting(e) {
-        if (e.isSwiped) {
-            e.cancel = true;
-        }
-    }
-</script>

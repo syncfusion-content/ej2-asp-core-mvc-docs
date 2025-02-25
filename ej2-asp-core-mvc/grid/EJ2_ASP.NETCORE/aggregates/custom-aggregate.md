@@ -8,39 +8,50 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Custom aggregate in ASP.NET Core Grid component
 
-# Custom Aggregate
+The custom aggregate feature in Syncfusion's ASP.NET Core Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_Type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_CustomAggregate) property in [`e-grid-aggregates`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Aggregates) tag helper.
+* Set the `type` property to **Custom** in the `aggregateColumn`.
 
-The custom aggregate function will be invoked with different arguments for total and group aggregations.
-* **Total aggregation**: The custom aggregate function will be called with the whole data and current [`aggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_ColumnName)
-object.
-* **Group aggregation**: This will be called with the current group details and [`aggregateColumn`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridAggregateColumn.html#Syncfusion_EJ2_Grids_GridAggregateColumn_ColumnName) object.
+* Provide your custom aggregate function in the `customAggregate` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
+The custom aggregate function will be invoked differently for total and group aggregations:
+
+**Total Aggregation:** The custom aggregate function will be called with the whole dataset and the current aggregate column object as arguments.
+
+**Group Aggregation:** The custom aggregate function will be called with the current group details and the aggregate column object as arguments.
+
+Here's an example that demonstrates how to use the custom aggregate feature in the ASP.NET Core Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/custom-agg/tagHelper %}
+{% include code-snippet/grid/aggregate/custom-aggregate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-agg.cs" %}
-{% include code-snippet/grid/aggregate/custom-agg/custom-agg.cs %}
+{% highlight c# tabtitle="custom-aggregate.cs" %}
+{% include code-snippet/grid/aggregate/custom-aggregate/custom-aggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+![Multiple aggregates for a column](../images/aggregates/custom-aggergate.png)
+
+> To access the custom aggregate value inside template, use the key as **Custom**
+
+## Show the count of distinct values in aggregate row
+
+You can calculate the count of distinct values in an aggregate row by using custom aggregate functions. By specifying the `type` as **Custom** and providing a custom aggregate function in the `customAggregate` property, you can achieve this behavior.
+
+Here's an example that demonstrates how to show the count of distinct values for the **ShipCountry** column using a custom aggregate.
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/aggregate/custom-agg/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/aggregate/custom-aggregate-distinct/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Custom-agg.cs" %}
-{% include code-snippet/grid/aggregate/custom-agg/custom-agg.cs %}
+{% highlight c# tabtitle="custom-aggregate.cs" %}
+{% include code-snippet/grid/aggregate/custom-aggregate-distinct/custom-aggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
+![Multiple aggregates for a column](../images/aggregates/custom-distinct.png)
 
-
-N> To access the custom aggregate value inside the template, use the key as **Custom**.
+> To display the aggregate value of the current column in another column, you can use the `columnName` property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.

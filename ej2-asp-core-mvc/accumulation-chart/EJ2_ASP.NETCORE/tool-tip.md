@@ -275,4 +275,35 @@ public class GroupingChartData
 {% endtabs %}
 {% endif %}
 
+## Enable highlight
 
+By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_EnableHighlight) property to **true**, the hovered pie slice is highlighted, while the remaining slices are dimmed, enhancing focus and clarity.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+...
+public class GroupingChartData
+{
+    public string xValue;
+    public double yValue;
+    public string text;
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-enable.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-enable/tooltip-enable.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

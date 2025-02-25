@@ -1,0 +1,20 @@
+@Html.EJS().Spreadsheet("spreadsheet").CalculationMode(CalculationMode.Manual).Created("created").Sheets(sheet =>
+{
+    sheet.Name("Product Details").Ranges(ranges =>
+    {
+        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).StartCell("A1").Add();
+    }).Columns(column =>
+    {
+        column.Width(130).Add();
+        column.Width(92).Add();
+        column.Width(96).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    function created() {
+        this.cellFormat({ fontWeight: 'bold', textAlign: 'center' }, 'A1:H1');
+    }
+    
+</script>

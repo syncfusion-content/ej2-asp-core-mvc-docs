@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check List in ##Platform_Name## Listview Control | Syncfusion
-description: Learn here all about Check List in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Check List in ##Platform_Name## ListView Control | Syncfusion
+description: Learn here all about Check List in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check List
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Checklist in ##Platform_Name## Listview Control
+# Checklist in ##Platform_Name## ListView Control
 
-The ListView supports checkbox in default and group-lists which is used to select multiple items. The checkbox can be enabled by the `showCheckBox` property.
+The ListView supports checkbox in default and group-lists which is used to select multiple items. The checkbox can be enabled by the [`showCheckBox`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_ShowCheckBox) property.
 
 The Checkbox will be useful in the scenario where we need to select multiple options. For Example, in Shipping cart we can be able to select or unselect the desired items before checkout and also it will be useful in selecting multiple items that belongs to same category using the group list.
 
@@ -46,7 +46,7 @@ Output be like the below.
 
 ## Checkbox Position
 
-In ListView the checkbox can be positioned into either `Left` or `Right` side of the list-item text. This can be achieved by `checkBoxPositon` property. By default, checkbox will be positioned to `Left` of list-item text.
+In ListView the checkbox can be positioned into either `Left` or `Right` side of the list-item text. This can be achieved by [`checkBoxPositon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListView.html#Syncfusion_EJ2_Lists_ListView_CheckBoxPosition) property. By default, checkbox will be positioned to `Left` of list-item text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

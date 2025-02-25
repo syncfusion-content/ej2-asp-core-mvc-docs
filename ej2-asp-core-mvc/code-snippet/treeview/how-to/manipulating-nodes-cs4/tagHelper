@@ -1,0 +1,31 @@
+
+<div id='treeparent'>
+    <ejs-treeview id="treedata">
+        <e-treeview-fields dataSource="ViewBag.dataSource" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded"></e-treeview-fields>
+    </ejs-treeview>
+</div>
+<ejs-button id="button1" cssClass="e-primary inline-element right" content="Refresh node"></ejs-button>
+<script>
+    
+    document.getElementById("button1").addEventListener('click', function () {
+        var treeObj = document.getElementById('treedata').ej2_instances[0];
+        var nodeData = treeObj.getTreeData('4');
+        //Update the name text for node having id 4.
+        nodeData[0].name = 'Node refreshed';
+        // Refresh the updated data.
+        treeObj.refreshNode('4', nodeData);
+    });
+</script>
+
+<style>
+    #treeparent {
+        display: block;
+        max-width: 350px;
+        max-height: 350px;
+        margin: auto;
+        overflow: auto;
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+    }
+
+</style>
