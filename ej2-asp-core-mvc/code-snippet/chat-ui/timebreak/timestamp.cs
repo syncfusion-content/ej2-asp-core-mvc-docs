@@ -1,9 +1,9 @@
 using Syncfusion.EJ2.InteractiveChat;
 
-public UserModel CurrentUser { get; set; }
+public ChatUIUser CurrentUser { get; set; }
 public List<ChatUIMessage> ChatMessagesData { get; set; } = new List<ChatUIMessage>();
-public UserModel CurrentUserModel { get; set; } = new UserModel() { id = "user1", user = "Albert" };
-public UserModel MichaleUserModel { get; set; } = new UserModel() { id = "user2", user = "Michale Suyama" };
+public ChatUIUser CurrentUserModel { get; set; } = new ChatUIUser() { Id = "user1", User = "Albert" };
+public ChatUIUser MichaleUserModel { get; set; } = new ChatUIUser() { Id = "user2", User = "Michale Suyama" };
 
 public ActionResult Timestamp()
 {
@@ -26,13 +26,7 @@ public ActionResult Timestamp()
         Author = CurrentUserModel,
         TimeStamp = new DateTime(2024,12,25,11,0,0)
     });
-    return View();
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
-}
-
-public class UserModel
-{
-    public string id { get; set; }
-    public string user { get; set; }
+    return View();
 }

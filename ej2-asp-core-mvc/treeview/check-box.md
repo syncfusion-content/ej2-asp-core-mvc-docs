@@ -45,7 +45,7 @@ In the following example, the `showCheckBox` property is enabled.
 {% include code-snippet/treeview/checkbox/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/treeview/checkbox/checkbox.cs %}
+{% include code-snippet/treeview/checkbox/checkbox-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -80,7 +80,7 @@ In the following example, the **New South Wales** and **Western Australia** node
 {% include code-snippet/treeview/checkbox/checkboxnode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/treeview/checkbox/checkboxnode/checkbox.cs %}
+{% include code-snippet/treeview/checkbox/checkboxnode/checkbox-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,12 +1,11 @@
 @using Syncfusion.EJ2.InteractiveChat;
-@using Newtonsoft.Json
 
 <div style="height:380px; width:450px">
     <button id="addMessageString" style="margin-bottom: 10px" class="e-btn e-primary">Add Message as string</button>
     <ejs-chatui id="chatUser" created="onCreated">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-messages>
-            @foreach (var message in Model.ChatMessagesData)
+            @foreach (var message in ViewBag.ChatMessagesData)
             {
                 <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
             }
