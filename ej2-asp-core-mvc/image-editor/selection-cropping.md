@@ -215,7 +215,7 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-lock-selection.jpg)
+![ImageEditor Sample](images/image-editor-lock-selection.png)
 
 ### Cropping with custom ratio selection
 
@@ -246,4 +246,4 @@ Users can perform cropping either through the toolbar or by using our public met
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-ratio.jpg)
+![ImageEditor Sample](images/image-editor-custom-ratio.png)

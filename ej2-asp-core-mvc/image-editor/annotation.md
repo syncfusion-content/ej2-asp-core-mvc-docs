@@ -287,6 +287,10 @@ Here is an example of changing the freehand draw stroke width and color using th
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-stroke.png)
+
 ### Delete a freehand drawing 
 
 The `deleteShape` method in the Image Editor allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter.
@@ -319,6 +323,10 @@ Here is an example of deleting a freehand annotation in a button click using Del
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-delete-fhd.png)
 
 ## Shape annotation
 
@@ -485,6 +493,10 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-delete-annotation.png)
 
 ### Customize default stroke color for shapes 
 

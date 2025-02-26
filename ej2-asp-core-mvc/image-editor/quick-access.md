@@ -42,3 +42,7 @@ Here is an example of adding the custom toolbar item to the quick access toolbar
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-qat.png)

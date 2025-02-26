@@ -102,7 +102,7 @@ Here is an example of hiding the toolbar of the image editor using `toolbar` pro
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+![ImageEditor Sample](images/image-editor-hide-toolbar.png)
 
 ## Show or hide a toolbar item
 
@@ -143,6 +143,33 @@ The [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Imag
 
 Here is an example of disabling the custom toolbar item using [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-enable-disable-toolbar.png)
+
 
 ## Enable or disable a contextual toolbar item
 
@@ -181,6 +208,10 @@ Here is an example of toolbar item clicking event using `toolbarItemClicked` pro
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-toobar-item.png)
 
 ## Toolbar template
 

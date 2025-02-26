@@ -14,13 +14,13 @@ We are excited to introduce `z-order` support in the Image Editor. It's a powerf
 
 Types of adjustment in the Image Editor `z-order` support.
 
-* Bring forward - Switch the selected annotation with the annotation one layer ahead of it.
+* `Bring forward` - Switch the selected annotation with the annotation one layer ahead of it.
 
-* Sent Backward - Switch the selected annotation with the annotation one layer behind it.
+* `Sent Backward` - Switch the selected annotation with the annotation one layer behind it.
 
-* Bring to Front - Move the selected annotation to ahead of all other annotations.
+* `Bring to Front` - Move the selected annotation to ahead of all other annotations.
 
-* Send to Back - Move the selected annotation to behind all other annotations.
+* `Send to Back` - Move the selected annotation to behind all other annotations.
 
 In the following example, you can use the `z-order` support.
 
@@ -47,6 +47,8 @@ In the following example, you can use the `z-order` support.
 {% endtabs %}
 {% endif %}
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 Output be like the below.
 
-![ImageEditor Sample](images/z-order.png)
+![ImageEditor Sample](images/image-editor-z-order.png)

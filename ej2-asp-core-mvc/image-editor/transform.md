@@ -114,7 +114,7 @@ Here is an example of straightening the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-straighten.jpg)
+![ImageEditor Sample](images/image-editor-straighten.png)
 
 ## Zoom in or out an image 
 
@@ -218,6 +218,10 @@ The Image Editor allows to pan an image when the image exceeds the canvas size o
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-panning.png)
 
 ### Panning event 
 

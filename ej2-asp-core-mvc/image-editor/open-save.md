@@ -14,9 +14,19 @@ To import an image into the canvas, it must first be converted into a blob objec
 
 To save an edited image in the Image Editor control, use the toBlob method to convert it to a blob object. This will save the image with any annotations or filters that have been applied during the editing process. The saved image can be stored as raw image data or as an image file. 
 
-## Open
+## Supported image formats 
+
+The Image Editor control supports three common image formats: PNG, JPEG, SVG, and WEBP. These formats allow you to work with a wide range of image files within the Image Editor. 
+
+When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, and WEBP, based on your specific requirements or preferences. 
+
+## Open an Image
 
 The `open` method in the Image Editor control offers the capability to open an image by providing it in different formats. This method accepts various types of arguments, such as a base64-encoded string, raw image data, or a hosted/online URL. You can pass either the file name or the actual image data as an argument to the `open` method, and it will load the specified image into the Image Editor control. This flexibility allows you to work with images from different sources and formats, making it easier to integrate and manipulate images within the Image Editor control. 
+
+### Opening Local Images in the Image Editor
+
+Users can easily open local images in the Image Editor. Simply place the image in the same folder as the sample. By specifying the local file name directly in the open method, the image will be loaded seamlessly into the editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,9 +86,9 @@ Users can easily open images in the Image Editor using a Base64-encoded string. 
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-save-base.jpg)
+![ImageEditor Sample](images/image-editor-save-base.png)
 
-### Open an image from blob storage.
+### Open an image from blob storage
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the open method, and the image will be loaded into the editor.
 
@@ -109,7 +119,113 @@ User can easily open images in the Image Editor from Blob storage. This method a
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-open-blob.jpg)
+![ImageEditor Sample](images/image-editor-open-blob.png)
+
+### Open an image from the uploader
+
+User can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the open method, and the image will be seamlessly loaded into the editor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs4/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs4/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs4/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs4/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-ie-uploader.png)
+
+### Open an image from File Manager
+
+User can easily open images in the Image Editor using the File Manager. This method allows you to browse and select an image file directly from the File Manager and load it into the editor. Once the image is selected, pass the file to the open method, and the image will be seamlessly loaded into the editor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/default.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/HomeController_core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/default.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs5/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-ie-file-manager.png)
+
+### Open an image from Treeview
+
+Users can easily open images in the Syncfusion Image Editor by dragging and dropping nodes from a tree view. This feature allows users to select an image from a tile view interface and load it into the editor. When a node is dropped into the image editor, you can pass the file to the editor’s open method to seamlessly load the image.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/default.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/HomeController_core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/default.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/image-editor/open-save/open-image-cs6/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-ie-treeview.png)
+
 
 ### Add watermarks while opening an image
 
@@ -140,15 +256,9 @@ You can utilize the [`FileOpened`](https://help.syncfusion.com/cr/aspnetmvc-js2/
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-open.jpg)
+![ImageEditor Sample](images/image-editor-watermark.png)
 
-## Supported image formats 
-
-The Image Editor control supports three common image formats: PNG, JPEG, SVG, and WEBP. These formats allow you to work with a wide range of image files within the Image Editor. 
-
-When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, and WEBP, based on your specific requirements or preferences. 
-
-### Save as image
+## Save as image
 
 The `export` method in the Image Editor control enables you to save the modified image as a file on the local device. This method accepts two parameters: the file name and the file type. 
 
@@ -217,7 +327,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-save.jpg)
 
-### Save the image aa byte[]
+### Save the image as byte[]
 
 To save an image as a byte array (byte[]), use the [`getImageData`] method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
 
@@ -281,7 +391,7 @@ You can utilize the [`FileOpened`]((https://help.syncfusion.com/cr/aspnetmvc-js2
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-watermark.jpg)
+![ImageEditor Sample](images/image-editor-watermark.png)
 
 ### Remove default Save button and add custom button to save the image to server
 
@@ -291,7 +401,11 @@ User can leverage the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 User can make use of the [`BeforeSave`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.imageeditor.imageeditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_BeforeSave) event, which triggers just before the image is downloaded, to override the default save option by setting [`args.cancel`] to true. Afterward, you can utilize the getImageData method to retrieve the current image data and convert it into a format like byte[], blob, or base64 for further processing. This gives you greater flexibility in handling the image data.
 
-## File opened event
+## Events to handle save actions
+
+The Image Editor provides several events related to opening and saving images. These events offer detailed control over the image handling process. For comprehensive information about these events, including their triggers and usage, please refer to the dedicated section on open and save support. This section will provide you with the specifics needed to effectively utilize these events in your application.
+
+### File opened event
 
 The [`FileOpened`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_FileOpened) event is triggered in the Image Editor control after an image is successfully loaded. It provides the `FileOpenEventArgs` as the event argument, which contains two specific arguments: 
 
@@ -301,7 +415,7 @@ The [`FileOpened`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.I
 
 By accessing these arguments within the FileOpened event handler, you can retrieve information about the loaded image, such as its file name and file type. This can be useful for performing additional actions or implementing logic based on the specific image that was opened in the Image Editor control.
 
-## Saving event 
+### Saving event 
 
 The [`saving`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Saved) event is triggered in the Image Editor control when an image is being saved to the local disk. It provides the `SaveEventArgs` as the event argument, which includes the following specific arguments: 
 
@@ -313,15 +427,15 @@ The [`saving`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Image
 
 By accessing these arguments within the Saving event handler, you can retrieve information about the file name and file type of the image being saved. Additionally, you have the option to cancel the saving action if necessary.
 
-## Created event 
+### Created event 
 
 The [`created`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Created) event is triggered once the Image Editor control is created. This event serves as a notification that the component has been fully initialized and is ready to be used. It provides a convenient opportunity to render the Image Editor with a predefined set of initial settings, including the image, annotations, and transformations. 
 
-## Destroyed event
+### Destroyed event
 
 The [`destroyed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Destroyed) event is triggered once the Image Editor control is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active.
 
-## Reset an image
+### Reset an image
 
 The `reset` method in the Image Editor control provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image.
 
