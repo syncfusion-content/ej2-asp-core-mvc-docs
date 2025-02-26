@@ -1,6 +1,6 @@
 <div class="control-section">
     <div class="sample-container">
-        <!-- Declare filemanager element -->
+        <!-- Declare File Manager control -->
         @Html.EJS().FileManager("filemanager").View(Syncfusion.EJ2.FileManager.ViewType.Details).AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
             Url = "/Home/FileOperations",
@@ -35,6 +35,6 @@
                 }
             }
         }).Render()
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

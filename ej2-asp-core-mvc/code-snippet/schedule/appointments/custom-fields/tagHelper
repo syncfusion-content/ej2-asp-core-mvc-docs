@@ -2,7 +2,7 @@
 
 <ejs-schedule id="schedule" height="550" selectedDate="new DateTime(2018, 2, 15)">
     <e-schedule-eventsettings dataSource="@ViewBag.appointments">
-        <e-eventsettings-fields id="TravelId">
+        <e-eventsettings-fields id="TravelId" IsBlock="IsDisabled">
             <e-field-subject name="TravelSummary"></e-field-subject>
             <e-field-location name="Source"></e-field-location>
             <e-field-description name="Comments"></e-field-description>

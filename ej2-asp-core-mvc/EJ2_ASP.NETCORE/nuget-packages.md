@@ -148,7 +148,7 @@ ejs-documenteditor
 </tr>
 </table>
 
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows
+### Syncfusion.EJ2.PdfViewer.AspNet.Core
 
 The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and the table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
 
@@ -166,88 +166,17 @@ The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web appl
 </tr>
 <tr>
 <td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Windows</a>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core/">Syncfusion.EJ2.PdfViewer.AspNet.Core</a>
 </td>
 <td>
 ejs-pdfviewer
 </td>
 <td>
 <ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
 <li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux
-
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Linux operating system.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux/">Syncfusion.EJ2.PdfViewer.AspNet.Core.Linux</a>
-</td>
-<td>
-ejs-pdfviewer
-</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
-</ul>
-</td>
-</tr>
-</table>
-
-### Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX
-
-The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them in the Mac (OSX) operating system.
-
-<table>
-<tr>
-<td>
-<b>NuGet package name</b>
-</td>
-<td>
-<b>Controls</b>
-</td>
-<td>
-<b>Dependencies</b>
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX/">Syncfusion.EJ2.PdfViewer.AspNet.Core.OSX</a>
-</td>
-<td>
-ejs-pdfviewer
-</td>
-<td>
-<ul>
-<li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
-<li><a href="https://www.nuget.org/packages/runtime.osx.10.10-x64.CoreCompat.System.Drawing/" target="_blank">runtime.osx.10.10-x64.CoreCompat.System.Drawing</a></li>
 <li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
-<li><a href="https://www.nuget.org/packages/System.Drawing.Common/" target="_blank">System.Drawing.Common</a></li>
-<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.PdfToImageConverter.Net/" target="_blank">Syncfusion.PdfToImageConverter.Net</a></li>
 </ul>
 </td>
 </tr>

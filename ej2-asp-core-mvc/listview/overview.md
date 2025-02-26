@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Listview Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Overview in ##Platform_Name## ListView Control
+description: Learn here all about Overview in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Overview
 
-The ListView component represents the data in interactive hierarchical structure interface across different layouts or views, that also has features such as data-binding, template, grouping and Virtualization.
+The ListView control represents the data in interactive hierarchical structure interface across different layouts or views, that also has features such as data-binding, template, grouping and Virtualization.
 
 ## Key Features
 
@@ -24,4 +24,4 @@ The ListView component represents the data in interactive hierarchical structure
 
 * **[Virtualization](../../listview/virtualization/)**: Allows you to load only viewable list items in a view port which will increase ListView performance on loading large number of data.
 
-* **[Accessibility](../../accessibility/)**: Provides built-in accessibility support that helps to access all the ListView component features through the keyboard, on-screen readers, or other assistive technology devices.
+* **[Accessibility](../../accessibility/)**: Provides built-in accessibility support that helps to access all the ListView control features through the keyboard, on-screen readers, or other assistive technology devices.

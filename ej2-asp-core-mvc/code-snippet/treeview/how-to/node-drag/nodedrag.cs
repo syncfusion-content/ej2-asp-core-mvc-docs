@@ -10,7 +10,7 @@ namespace EJ2CoreSampleBrowser.Controllers.TreeView
 {
     public partial class TreeViewController : Controller
     {
-        public IActionResult IconsandImages()
+        public IActionResult RestrictDragDrop()
         {
            
             List<Parentitems> parentitem = new List<Parentitems>();

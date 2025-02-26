@@ -1,8 +1,14 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
 
-@Html.EJS().ListView("listview").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { IconCss = "icon", Tooltip = "text" }).Select("onSelect").ShowIcon(true).ShowHeader(true).HeaderTitle("Folders").Render()
-
+@Html.EJS().ListView("listview")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Fields(new ListViewFieldSettings { IconCss = "icon", Tooltip = "text" })
+    .Select("onSelect")
+    .ShowIcon(true)
+    .ShowHeader(true)
+    .HeaderTitle("Folders")
+    .Render()
 
 <style>
     #listview {
