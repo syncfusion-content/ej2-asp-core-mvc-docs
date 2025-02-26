@@ -1,32 +1,49 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
+
 <div id="container">
     <form id="details" role="form">
         <div id="user">
             <div class="info">User Name:</div>
             <div class="inputs">
-                @Html.EJS().Tooltip("tooltip1").Position(Position.RightCenter).Target("#uname").ContentTemplate(@<input type="text" id="uname" class="e-info e-input" name="firstname" title="Please enter your name" />).Render()
+                @Html.EJS().Tooltip("tooltip1")
+                    .Position(Syncfusion.EJ2.Popups.Position.RightCenter)
+                    .Target("#uname")
+                    .ContentTemplate(@<input type="text" id="uname" class="e-info e-input" name="firstname" title="Please enter your name" />)
+                    .Render()
             </div>
         </div>
         <br />
         <div>
             <div class="info">Email Address:</div>
             <div class="inputs">
-                @Html.EJS().Tooltip("tooltip2").Position(Position.RightCenter).Target("#mail").ContentTemplate(@<input type="text" id="mail" class="e-info e-input" name="email" title="Enter a valid email address" />).Render()
+                @Html.EJS().Tooltip("tooltip2")
+                    .Position(Syncfusion.EJ2.Popups.Position.RightCenter)
+                    .Target("#mail")
+                    .ContentTemplate(@<input type="text" id="mail" class="e-info e-input" name="email" title="Enter a valid email address" />)
+                    .Render()
             </div>
         </div>
         <br />
         <div>
             <div class="info">Password:</div>
             <div class="inputs">
-                @Html.EJS().Tooltip("tooltip3").Position(Position.RightCenter).Target("#pwd").ContentTemplate(@<input id="pwd" type="password" class="e-info e-input" name="password" title="Be at least 8 characters length" />).Render()
+                @Html.EJS().Tooltip("tooltip3")
+                    .Position(Syncfusion.EJ2.Popups.Position.RightCenter)
+                    .Target("#pwd")
+                    .ContentTemplate(@<input id="pwd" type="password" class="e-info e-input" name="password" title="Be at least 8 characters length" />)
+                    .Render()
             </div>
         </div>
         <br />
         <div>
             <div class="info">Confirm Password:</div>
             <div class="inputs">
-                @Html.EJS().Tooltip("tooltip4").Position(Position.RightCenter).Target("#cpwd").ContentTemplate(@<input id="cpwd" type="password" class="e-info e-input" name="Cpwd" title="Re-enter your password">).Render()
+                @Html.EJS().Tooltip("tooltip4")
+                    .Position(Syncfusion.EJ2.Popups.Position.RightCenter)
+                    .Target("#cpwd")
+                    .ContentTemplate(@<input id="cpwd" type="password" class="e-info e-input" name="Cpwd" title="Re-enter your password" />)
+                    .Render()
             </div>
         </div>
         <br />

@@ -1,8 +1,11 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
-     @Html.EJS().Tooltip("target").CssClass("customtooltip").Content("Tooltip customized").ContentTemplate(@<div id="content">
-        Show tooltip
-    </div>).Render()
+
+@Html.EJS().Tooltip("target")
+    .CssClass("customtooltip")
+    .Content("Tooltip customized")
+    .ContentTemplate(@<text> Show tooltip </text>)
+    .Render()
 
 <style>
     #target {

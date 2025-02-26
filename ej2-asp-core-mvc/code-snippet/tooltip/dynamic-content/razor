@@ -2,17 +2,20 @@
 @using Syncfusion.EJ2.Popups
 <div id="container">
     <h2> Dynamic Tooltip content </h2>
-    @Html.EJS().Tooltip("Tooltip").BeforeRender("onBeforeRender").Position(Position.TopCenter).Target(".circletool").ContentTemplate(@<div id="box" class="e-prevent-select">
-        <div id="1" class="circletool bold-01" style="display:inline-block"></div>
-        <div id="2" class="circletool italic" style="display:inline-block"></div>
-        <div id="3" class="circletool underline-02" style="display:inline-block"></div>
-        <div id="4" class="circletool cut-02" style="display:inline-block"></div>
-        <div id="5" class="circletool copy" style="display:inline-block"></div>
-        <div id="6" class="circletool paste" style="display:inline-block"></div>
-    </div>).Render()
+    @Html.EJS().Tooltip("Tooltip")
+        .BeforeRender("onBeforeRender")
+        .Position(Position.TopCenter)
+        .Target(".circletool")
+        .ContentTemplate(@<div id="box" class="e-prevent-select">
+            <div id="1" class="circletool bold-01" style="display:inline-block"></div>
+            <div id="2" class="circletool italic" style="display:inline-block"></div>
+            <div id="3" class="circletool underline-02" style="display:inline-block"></div>
+            <div id="4" class="circletool cut-02" style="display:inline-block"></div>
+            <div id="5" class="circletool copy" style="display:inline-block"></div>
+            <div id="6" class="circletool paste" style="display:inline-block"></div>
+        </div>)
+        .Render()
 </div>
-
-
 
 <script>
     function onBeforeRender(args) {
@@ -35,7 +38,6 @@
         );
     }
 </script>
-
 
 <style>
     h2 {

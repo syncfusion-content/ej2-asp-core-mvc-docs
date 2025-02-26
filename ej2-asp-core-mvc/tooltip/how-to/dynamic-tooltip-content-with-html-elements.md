@@ -47,4 +47,4 @@ When using HTML elements as content to `Tooltip` make the content element `displ
 
 Output be like the below.
 
-![ASP .NET Core - Dynamic Tooltip content with HTML elements](./images/htmlElements.png)
+![ASP .NET Core - Dynamic Tooltip content with HTML elements](../images/htmlElements.png)
