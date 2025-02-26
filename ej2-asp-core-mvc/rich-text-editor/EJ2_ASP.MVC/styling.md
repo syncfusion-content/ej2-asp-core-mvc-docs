@@ -364,5 +364,5 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
 
 ## See Also
 
-* [How to add google fonts to the font family](./how-to/add-google-fonts/)
-* [How to customize the placeholder](./how-to/customize-placeholder-style/)
+* [How to add google fonts to the font family](./how-to/add-google-fonts)
+* [How to customize the placeholder](./how-to/customize-placeholder-style)
