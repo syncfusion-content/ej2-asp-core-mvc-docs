@@ -1,3 +1,5 @@
 @model List<object>
 
-@Html.EJS().ListView("listview").DataSource((IEnumerable<object>)Model).Render()
+@Html.EJS().ListView("listview")
+    .DataSource((IEnumerable<object>)Model)
+    .Render()

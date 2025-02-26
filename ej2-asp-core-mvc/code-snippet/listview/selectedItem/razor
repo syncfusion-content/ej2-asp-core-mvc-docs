@@ -1,13 +1,18 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
 
-    @Html.EJS().ListView("element").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Text = "text", Id="id"}).ShowCheckBox(true).Render()
-    <div id="text">
-        @Html.EJS().Button("btn").Content("Get selected Items").Render()
-        <table id="val"></table>
-    </div>
+@Html.EJS().ListView("element")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Fields(new ListViewFieldSettings { Text = "text", Id="id"})
+    .ShowCheckBox(true)
+    .Render()
 
-
+<div id="text">
+    @Html.EJS().Button("btn")
+        .Content("Get selected Items")
+        .Render()
+    <table id="val"></table>
+</div>
 
 <style>
     #text {
@@ -24,8 +29,8 @@
         border-radius: 3px;
     }
 </style>
-<script>
 
+<script>
 document.getElementById('btn').addEventListener('click', () => {
     var selecteditem = document.getElementById('element').ej2_instances[0].getSelectedItems();
     var data = document.getElementById('val');

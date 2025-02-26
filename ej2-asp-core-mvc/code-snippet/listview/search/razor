@@ -5,11 +5,19 @@
     <div class="e-input-group">
         <input class="e-input" id="textbox" name='input' type="text" placeholder="Search" />
     </div>
-     @Html.EJS().ListView("nestedlist").DataSource(dataManger =>
-   {
-       dataManger.Url("/Home/UrlDatasource").Adaptor("UrlAdaptor").CrossDomain(true);
-
-   }).Fields(new ListViewFieldSettings { Id = "id", Text = "text", Tooltip= "text" }).Render()
+    @Html.EJS().ListView("nestedlist")
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("/Home/UrlDatasource")
+                .Adaptor("UrlAdaptor")
+                .CrossDomain(true);
+        })
+        .Fields(new ListViewFieldSettings { 
+            Id = "id", 
+            Text = "text", 
+            Tooltip = "text" 
+        })
+        .Render()
 </div>
 
 <script>
