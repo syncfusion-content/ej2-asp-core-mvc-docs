@@ -11,7 +11,7 @@ documentation: ug
 
 # ODataV4Adaptor in Syncfusion ASP.NET Core Grid 
 
-The `ODataV4Adaptor` in the Syncfusion Core Grid allows seamless integration of the Syncfusion Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
+The `ODataV4Adaptor` in the Syncfusion ASP.NET Core Grid allows seamless integration of the Syncfusion Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
 
 ## Creating an OData Service
 
