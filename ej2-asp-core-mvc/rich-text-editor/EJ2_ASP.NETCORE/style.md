@@ -63,7 +63,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 }
 ```
 
-## Customizing the Rich Text Editor's character count
+## Customizing Character Count Display
 
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 

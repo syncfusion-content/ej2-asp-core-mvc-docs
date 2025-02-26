@@ -1,0 +1,10 @@
+@Html.EJS().RichTextEditor("defaultRTE").EnterKey(Syncfusion.EJ2.RichTextEditor.EnterKey.DIV).Value(ViewBag.value).ActionBegin("onActionBegin").Render()
+
+<script>
+    function onActionBegin(args){
+        if (args.requestType === 'EnterAction') {
+            args.cancel = true; // to prevent default enter key action in editor level
+            args.originalEvent.preventDefault(); // to prevent default enter key action in browser level
+        }
+    }
+</script>
