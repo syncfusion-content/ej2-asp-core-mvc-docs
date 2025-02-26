@@ -32,7 +32,7 @@ The following example demonstrates how to manipulate TreeView operations using t
 {% include code-snippet/treeview/how-to/context-menu/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Contextmenu.cs" %}
-{% include code-snippet/treeview/how-to/context-menu/contextmenu.cs %}
+{% include code-snippet/treeview/how-to/context-menu/contextmenu-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

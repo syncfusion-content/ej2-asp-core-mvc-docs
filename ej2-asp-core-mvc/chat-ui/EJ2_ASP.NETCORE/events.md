@@ -20,6 +20,9 @@ The Chat UI control triggers the [created](https://help.syncfusion.com/cr/aspnet
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/events/created/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Created.cs" %}
+{% include code-snippet/chat-ui/events/created/created.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ## Sending message
@@ -30,6 +33,9 @@ The [messageSend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/events/messageSend/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="MessageSend.cs" %}
+{% include code-snippet/chat-ui/events/messageSend/messageSend.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ## User typing
@@ -39,5 +45,8 @@ The [userTyping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.In
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/events/userTyping/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="UserTyping.cs" %}
+{% include code-snippet/chat-ui/events/userTyping/userTyping.cs %}
 {% endhighlight %}
 {% endtabs %}

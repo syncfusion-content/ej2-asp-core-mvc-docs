@@ -18,6 +18,9 @@ You can use [showFooter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/footer/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Footer.cs" %}
+{% include code-snippet/chat-ui/footer/defaultMessages.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Footer](images/footer.png)
