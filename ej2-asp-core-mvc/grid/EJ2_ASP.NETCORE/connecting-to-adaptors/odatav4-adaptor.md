@@ -232,7 +232,7 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
     <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
     <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
     <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
-    </e-grid-columns>
+   </e-grid-columns>
 </ejs-grid>
 {% endhighlight %}
 {% endtabs %}
@@ -371,7 +371,7 @@ builder.Services.AddControllers().AddOData(
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 
- <ejs-grid id="Grid" height="280" allowSorting="true">
+<ejs-grid id="Grid" height="280" allowSorting="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -426,7 +426,7 @@ builder.Services.AddControllers().AddOData(
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
 
- <ejs-grid id="Grid" height="280" allowPaging="true">
+<ejs-grid id="Grid" height="280" allowPaging="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -451,15 +451,15 @@ To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshtml" %}
 
- <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
+<ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-            <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
-            <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
-            <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
-            <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
