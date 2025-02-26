@@ -1,8 +1,19 @@
 @using Syncfusion.EJ2
-<div class="control-section">
-    @Html.EJS().ListView("remotelist").Enable(true).DataSource(dataManger =>
-{
-   dataManger.Url("https://services.syncfusion.com/aspnet/production/api/").CrossDomain(true);
 
-}).Query("new ej.data.Query().from('ListView').select('EmployeeID,FirstName').take(10)").Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { Id = "EmployeeID" , Text = "FirstName" }).ShowHeader(true).HeaderTitle("Employees").Render()
+<div class="control-section">
+    @Html.EJS().ListView("remotelist")
+        .Enable(true)
+        .DataSource(dataManger =>
+        {
+            dataManger.Url("https://services.syncfusion.com/aspnet/production/api/")
+                .CrossDomain(true);
+        })
+        .Query("new ej.data.Query().from('ListView').select('EmployeeID,FirstName').take(10)")
+        .Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { 
+            Id = "EmployeeID", 
+            Text = "FirstName" 
+        })
+        .ShowHeader(true)
+        .HeaderTitle("Employees")
+        .Render()
 </div>
