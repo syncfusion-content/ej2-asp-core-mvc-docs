@@ -1,1 +1,3 @@
-@Html.EJS().ListView("listview").DataSource((IEnumerable<object>)ViewBag.dataSource).Render()
+@Html.EJS().ListView("listview")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Render()

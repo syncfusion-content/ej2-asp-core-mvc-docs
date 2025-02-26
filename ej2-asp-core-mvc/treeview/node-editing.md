@@ -39,7 +39,7 @@ In the following example, the first level node’s text cannot be changed, but a
 {% include code-snippet/treeview/nodeediting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodeediting.cs" %}
-{% include code-snippet/treeview/nodeediting/nodeediting.cs %}
+{% include code-snippet/treeview/nodeediting/nodeediting-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
