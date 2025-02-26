@@ -11,7 +11,7 @@ documentation: ug
 
 # ODataV4Adaptor in Syncfusion ASP.NET Core Grid 
 
-The `ODataV4Adaptor` in the Syncfusion Grid allows seamless integration of the ASP.NET Core Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
+The `ODataV4Adaptor` in the Syncfusion Core Grid allows seamless integration of the Syncfusion Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
 
 ## Creating an OData Service
 
@@ -446,7 +446,7 @@ builder.Services.AddControllers().AddOData(
 
 To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
-To enable CRUD operations in the Syncfusion Grid, follow the below steps:
+To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below steps:
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshtml" %}
@@ -554,7 +554,7 @@ public IActionResult Delete(int key)
 
 ## Odata with custom url
 
-The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the `Datamanager`.
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the `DataManager`.
 
 **Configuring Custom URLs**
 
