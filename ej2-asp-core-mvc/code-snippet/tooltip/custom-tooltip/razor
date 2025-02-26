@@ -1,40 +1,70 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
+
 <div id='container'>
     <div id="customization" class="customTipContainer">
-        @Html.EJS().Tooltip("arrow").Content("Tooltip arrow customized").CssClass("curvetips e-tooltip-css").ContentTemplate(@<button id="target">
-            Customized Tip Arrow
-        </button>).Render()
+        @Html.EJS().Tooltip("arrow")
+            .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+            .Content("Tooltip arrow customized")
+            .CssClass("curvetips e-tooltip-css")
+            .ContentTemplate(@<button id="target">Customized Tip Arrow</button>)
+            .Render()
         <div id="positions">
             <ul>
                 <li>
-                    @Html.EJS().RadioButton("element1").Label("TopCenter").Value("TopCenter").Checked(true).Change("onChange").Render()
+                    @Html.EJS().RadioButton("element1")
+                        .Label("TopCenter")
+                        .Value("TopCenter")
+                        .Checked(true)
+                        .Change("onChange")
+                        .Render()
                 </li>
                 <li>
-                    @Html.EJS().RadioButton("element2").Label("BottomLeft").Value("BottomLeft").Checked(false).Change("onChange").Render()
+                    @Html.EJS().RadioButton("element2")
+                        .Label("BottomLeft")
+                        .Value("BottomLeft")
+                        .Checked(false)
+                        .Change("onChange")
+                        .Render()
                 </li>
             </ul>
         </div>
     </div>
     <div id="balloon" class="customTipContainer">
-        @Html.EJS().Tooltip("bubble").Content("Tooltip arrow customized as balloon tip").CssClass("bubbletip e-tooltip-css").ContentTemplate(@<button id="bubbletip">
-            Bubble Tip Arrow
-        </button>).Render()
+        @Html.EJS().Tooltip("bubble")
+            .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+            .Content("Tooltip arrow customized as balloon tip")
+            .CssClass("bubbletip e-tooltip-css")
+            .ContentTemplate(@<button id="bubbletip">Bubble Tip Arrow</button>)
+            .Render()
         <div id="btn">
             <ul>
                 <li>
-                    @Html.EJS().RadioButton("radio1").Label("BottomLeft").Value("BottomLeft").Checked(false).Change("onChanged").Render()
+                    @Html.EJS().RadioButton("radio1")
+                        .Label("BottomLeft")
+                        .Value("BottomLeft")
+                        .Checked(false)
+                        .Change("onChanged")
+                        .Render()
                 </li>
                 <li>
-                    @Html.EJS().RadioButton("radio2").Label("TopRight").Value("TopRight").Checked(true).Change("onChanged").Render()
+                    @Html.EJS().RadioButton("radio2")
+                        .Label("TopRight")
+                        .Value("TopRight")
+                        .Checked(true)
+                        .Change("onChanged")
+                        .Render()
                 </li>
             </ul>
         </div>
     </div>
     <div id="disabledContainer" class="customTipContainer">
-        @Html.EJS().Tooltip("tooltip").Content("Disabled tooltip pointer").CssClass("pointertip e-tooltip-css").ContentTemplate(@<button id="tooltip">
-            Disabled Tip Arrow
-        </button>).Render()
+        @Html.EJS().Tooltip("tooltip")
+            .Position(Syncfusion.EJ2.Popups.Position.TopCenter)
+            .Content("Disabled tooltip pointer")
+            .CssClass("pointertip e-tooltip-css")
+            .ContentTemplate(@<button id="tooltip">Disabled Tip Arrow</button>)
+            .Render()
     </div>
 </div>
 
