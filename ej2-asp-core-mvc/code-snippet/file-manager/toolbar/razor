@@ -1,9 +1,9 @@
 @{
-    string[] items = new string[] { "NewFolder", "Upload", "Delete", "Download", "Rename", "SortBy", "Refresh", "Selection", "View", "Details", "Custom" };
+    string[] items = new string[] { "NewFolder", "Refresh", "View", "Details" };
 }
 <div class="control-section">
     <div class="sample-container">
-        <!--  Filemanager element declaration -->
+        <!--  Filemanager control declaration -->
         @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
         {
             Url = "/Home/FileOperations",
@@ -14,7 +14,7 @@
         {
             Items = items
         }).ToolbarClick("toolbarClick").ToolbarCreate("onCreate").Render()
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>
@@ -32,8 +32,3 @@
         }
     }
 </script>
-<style>
-    .e-fe-tick::before {
-        content: '\e614';
-    }
-</style>

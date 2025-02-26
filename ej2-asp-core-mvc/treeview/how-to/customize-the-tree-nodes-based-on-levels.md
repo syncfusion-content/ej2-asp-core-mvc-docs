@@ -30,7 +30,7 @@ You can customize the tree nodes based on their levels by adding a custom [`cssC
 {% include code-snippet/treeview/how-to/node-customize/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodecustomize.cs" %}
-{% include code-snippet/treeview/how-to/node-customize/nodecustomize.cs %}
+{% include code-snippet/treeview/how-to/node-customize/nodecustomize-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,11 +1,11 @@
 @using Syncfusion.EJ2.InteractiveChat;
-@using Newtonsoft.Json
+@using Newtonsoft.Json;
 
 <div style="height: 380px; width: 450px">
     <ejs-chatui id="chatUser" created="onCreated" locale="de">
         <e-chatui-user id="user1" user="Albert"></e-chatui-user>
         <e-chatui-messages>
-            @foreach (var message in Model.ChatMessagesData)
+            @foreach (var message in ViewBag.ChatMessagesData)
             {
                 <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
             }
@@ -25,10 +25,7 @@
         }
     });
     var chatUIObj;
-    var typingUsers = @Html.Raw(JsonConvert.SerializeObject(Model.TypingUsers));
-    typingUsers.forEach(user => {
-        user = new UserModel(user);
-    });
+    var typingUsers = @Html.Raw(JsonConvert.SerializeObject(ViewBag.TypingUsers));
     function onCreated() {
         var chatUiEle = document.getElementById('chatUser');
         chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);

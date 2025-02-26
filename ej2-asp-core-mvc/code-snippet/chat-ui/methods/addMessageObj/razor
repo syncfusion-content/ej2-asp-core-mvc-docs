@@ -1,5 +1,25 @@
-@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
+    <button id="addMessageModel" style="margin-bottom: 10px" class="e-btn e-primary">Add Message as Object</button>
+    @Html.EJS().ChatUI("chatUser").Created("onCreated").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Render()
 </div>
+
+<script>
+    var chatUIObj;
+    function onCreated() {
+        var chatUiEle = document.getElementById('chatUser');
+        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+    }
+    document.addEventListener('click', function (event) {
+        if (event.target && event.target.id === 'addMessageModel') {
+            chatUIObj.addMessage(
+                {
+                    author: @Html.Raw(JsonConvert.SerializeObject(ViewBag.MichaleUser)),
+                    text: "Great! Let me know if there’s anything that needs adjustment."
+                }
+            );
+        }
+    });
+</script>
