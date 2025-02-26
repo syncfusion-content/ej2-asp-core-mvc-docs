@@ -9,7 +9,14 @@
         var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
 
     }
-        @Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.listData).Template(template).GroupTemplate(groupTemplate).CssClass("e-list-template").Width(350).Fields(new ListViewFieldSettings { Text = "name", GroupBy = "category" }).Render()
+@Html.EJS().ListView("List")
+    .DataSource((IEnumerable<object>)ViewBag.listData)
+    .Template(template)
+    .GroupTemplate(groupTemplate)
+    .CssClass("e-list-template")
+    .Width(350)
+    .Fields(new ListViewFieldSettings { Text = "name", GroupBy = "category" })
+    .Render()
 
 <style>
     #List {

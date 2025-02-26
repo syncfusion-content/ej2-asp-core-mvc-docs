@@ -168,21 +168,21 @@ To perform the directory upload in the Amazon file service provider, use the bel
 
 ```typescript
 foreach (var file in uploadFiles)
+    {
+        var folders = (file.FileName).Split('/');
+        // checking the folder upload
+        if (folders.Length > 1)
+        {
+            for (var i = 0; i < folders.Length - 1; i++)
             {
-                var folders = (file.FileName).Split('/');
-                // checking the folder upload
-                if (folders.Length > 1)
+                if (!this.operation.checkFileExist(path, folders[i]))
                 {
-                    for (var i = 0; i < folders.Length - 1; i++)
-                    {
-                        if (!this.operation.checkFileExist(path, folders[i]))
-                        {
-                            this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
-                        }
-                        path += folders[i] + "/";
-                    }
+                    this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
                 }
+                path += folders[i] + "/";
             }
+        }
+    }
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L83) for more details.

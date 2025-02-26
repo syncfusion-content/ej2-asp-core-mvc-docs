@@ -1,6 +1,6 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare filemanager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager">
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -9,6 +9,6 @@
             </e-filemanager-ajaxsettings>
             <e-filemanager-uploadsettings maxFileSize="233332" minFileSize="250" autoUpload="true"></e-filemanager-uploadsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>

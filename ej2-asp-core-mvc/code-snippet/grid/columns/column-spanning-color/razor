@@ -1,0 +1,112 @@
+@Html.EJS().Grid("CellMerging").DataSource((IEnumerable < object >)ViewBag.Datasource).QueryCellInfo("QueryCellEvent").GridLines(Syncfusion.EJ2.Grids.GridLine.Both).AllowTextWrap(true).Height("auto").Width("auto").Columns(col => {
+    col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+    col.Field("EmployeeName").HeaderText("Employee Name").Width("200").Add();
+    col.Field("Time9AM").HeaderText("9.00 AM").Width("120").Add();
+    col.Field("Time930AM").HeaderText("9.30 AM").Width("120").Add();
+    col.Field("Time10AM").HeaderText("10.00 AM").Width("120").Add();
+    col.Field("Time1030AM").HeaderText("10.30 AM").Width("120").Add();
+    col.Field("Time11AM").HeaderText("11.00 AM").Width("120").Add();
+    col.Field("Time1130AM").HeaderText("11.30 AM").Width("120").Add();
+    col.Field("Time12PM").HeaderText("12.00 PM").Width("120").Add();
+    col.Field("Time1230PM").HeaderText("12.30 PM").Width("120").Add();
+    col.Field("Time1PM").HeaderText("1.00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time2PM").HeaderText("2.00 PM").Width("120").Add();
+    col.Field("Time230PM").HeaderText("2.30 PM").Width("120").Add();
+    col.Field("Time3PM").HeaderText("3.00 PM").Width("120").Add();
+    col.Field("Time330PM").HeaderText("3.30 PM").Width("120").Add();
+    col.Field("Time4PM").HeaderText("4.00 PM").Width("120").Add();
+    col.Field("Time430PM").HeaderText("4.30 PM").Width("120").Add();
+    col.Field("Time5PM").HeaderText("5.00 PM").Width("120").Add();
+}).Render()
+<script>
+    function QueryCellEvent(args) {
+        var data = args.data;
+    switch (data.EmployeeID) {
+            case 10001:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time230PM' || args.column.field === 'Time430PM') {
+        args.colSpan = 2;
+                } else if (args.column.field === 'Time11AM') {
+        args.colSpan = 3;
+                }
+    break;
+    case 10002:
+    if (args.column.field === 'Time930AM' || args.column.field === 'Time230PM' || args.column.field === 'Time430PM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time11AM') {
+        args.colSpan = 4;
+                }
+    break;
+    case 10003:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time1130AM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time1030AM' || args.column.field === 'Time330PM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM') {
+        args.colSpan = 2;
+                }
+    break;
+    case 10004:
+    if (args.column.field === 'Time9AM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time11AM') {
+        args.colSpan = 4;
+                } else if (args.column.field === 'Time4PM' || args.column.field === 'Time230PM') {
+        args.colSpan = 2;
+                }
+    break;
+    case 10005:
+    if (args.column.field === 'Time9AM') {
+        args.colSpan = 4;
+                } else if (args.column.field === 'Time1130AM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time330PM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM') {
+        args.colSpan = 2;
+                }
+    break;
+    case 10006:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM' || args.column.field === 'Time330PM') {
+        args.colSpan = 2;
+                } else if (args.column.field === 'Time10AM' || args.column.field === 'Time1130AM') {
+        args.colSpan = 3;
+                }
+    break;
+    case 10007:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time3PM' || args.column.field === 'Time1030AM') {
+        args.colSpan = 2;
+                } else if (args.column.field === 'Time1130AM' || args.column.field === 'Time4PM') {
+        args.colSpan = 3;
+                }
+    break;
+    case 10008:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time1030AM' || args.column.field === 'Time230PM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time4PM') {
+        args.colSpan = 2;
+                }
+    break;
+    default:
+    extendQueryCellEvent(args, data.EmployeeID);
+        }
+
+        if (args.colSpan > 1) {
+        args.cell.style.border = '1px solid red';
+        }
+    }
+
+    function extendQueryCellEvent(args, value) {
+        switch (value) {
+            case 10009:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time1130AM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time430PM' || args.column.field === 'Time230PM') {
+        args.colSpan = 2;
+                }
+    break;
+    case 10010:
+    if (args.column.field === 'Time9AM' || args.column.field === 'Time230PM' || args.column.field === 'Time4PM' || args.column.field === 'Time1130AM') {
+        args.colSpan = 3;
+                } else if (args.column.field === 'Time1030AM') {
+        args.colSpan = 2;
+                }
+    break;
+        }
+    }
+</script>
