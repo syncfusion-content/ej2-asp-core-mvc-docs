@@ -116,14 +116,14 @@ You can use the `Visible` property to specify whether to show or hide the header
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/header/toolbarDisable/razor %}
+{% include code-snippet/chat-ui/header/toolbarVisible/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="ToolbarDisable.cs" %}
-{% include code-snippet/chat-ui/header/toolbarDisable/toolbarDisable.cs %}
+{% highlight c# tabtitle="ToolbarVisible.cs" %}
+{% include code-snippet/chat-ui/header/toolbarVisible/toolbarDisable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![ToolbarDisable](images/toolbar-disable.png)
+![ToolbarDisable](images/toolbar-visible.png)
 
 #### Setting disabled
 
@@ -178,7 +178,7 @@ In the following example, toolbar item type is set with `Right`.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarIcon/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="ToolbarIcon.cs" %}
+{% highlight c# tabtitle="ToolbarAlign.cs" %}
 {% include code-snippet/chat-ui/header/toolbarIcon/toolbarIcon.cs %}
 {% endhighlight %}
 {% endtabs %}

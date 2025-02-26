@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Trace All Events In Listview in ##Platform_Name## Listview Component
-description: Learn here all about Trace All Events In Listview in Syncfusion ##Platform_Name## Listview component of Syncfusion Essential JS 2 and more.
+title: Trace All Events In ListView in ##Platform_Name## ListView Control | Syncfusion
+description: Learn here all about Trace All Events In ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Trace All Events In Listview
+control: Trace All Events In ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Trace all events in ListView
 
-The ListView component triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
+The ListView control triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
 
 1. Render the ListView with [dataSource](https://ej2.syncfusion.com/documentation/api/list-view/#datasource), and bind the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/list-view/#actionbegin), [`actionComplete`](https://ej2.syncfusion.com/documentation/api/list-view/#actioncomplete), and [`select`](https://ej2.syncfusion.com/documentation/api/list-view/#select) events.
 

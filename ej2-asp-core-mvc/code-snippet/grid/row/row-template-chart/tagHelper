@@ -1,0 +1,76 @@
+
+@using Newtonsoft.Json
+<ejs-grid id="grid" dataSource="@ViewBag.employeeData" height="348px" width="auto" dataBound="dataBound" rowTemplate='#rowtemplate'>
+    <e-grid-columns>
+        <e-grid-column field="Name" headerText="Employee Name" width="120"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="140"></e-grid-column>
+        <e-grid-column field="Team" headerText="Team" width="120"></e-grid-column>
+        <e-grid-column headerText="Employee Performance" textAlign="Center" width="300"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id="rowtemplate" type="text/x-template">
+    <tr>
+        <td class="custom">
+            <div>
+            ${Name}
+            </div>
+        </td>
+        <td class="custom">
+            <div>
+            ${Designation}
+            </div>
+        </td>
+        <td class="custom">
+            <div>
+           ${Team}
+            </div>
+        </td>
+        <td class="details">
+            <div class='chart-container'></div>
+        </td>
+     </tr>
+</script>
+<script>
+    var employeeData = @Html.Raw(Json.Serialize(ViewBag.employeeData));
+    var employeePerformanceData = @Html.Raw(Json.Serialize(ViewBag.employeePerformanceData));
+    function dataBound() {
+        let gridInstance = document.getElementById('grid').ej2_instances[0];
+        let chartList = gridInstance.getContentTable().querySelectorAll('.chart-container');
+        for (let i = 0; i < chartList.length; i++) {
+            let chartData = getChartData(employeeData[i].employeeID);
+            let chartComponent = new ej.charts.Chart({
+                height: "200",
+                primaryXAxis: { valueType: 'Category' },
+                series: [{
+                    dataSource: chartData,
+                    type: "Column",
+                    xName: "month",
+                    yName: "performance",
+                    name: "Performance"
+                }],
+            });
+            chartComponent.appendTo(chartList[i]);
+        }
+    }
+    function getChartData(employeeID) {
+        const employeePerformance = employeePerformanceData.find(emp => emp.employeeID === employeeID);
+        return employeePerformance ? employeePerformance.chartData : [];
+    }
+</script>
+<style>
+    .custom,
+    .details {
+        border-color: #e0e0e0;
+        border-style: solid;
+    }
+    .custom {
+        border-width: 1px 0px 0px 0px;
+    }
+    .details {
+        border-width: 1px 0px 0px 0px;
+    }
+    td {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+</style>
