@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in Sycnfusion ##Platform_Name## Grid Component
+title: Sorting in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
