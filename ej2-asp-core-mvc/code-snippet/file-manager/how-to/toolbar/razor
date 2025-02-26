@@ -1,7 +1,7 @@
 
 <div class="control-section">
     <div class="sample-container">
-        <!--  Filemanager element declaration -->
+        <!--  Filemanager control declaration -->
         @Html.EJS().FileManager("filemanager").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings()
         {
             Url = "/Home/FileOperations",
@@ -24,7 +24,7 @@
                 new FileManagerToolbarItem { Name= "View" },
                 new FileManagerToolbarItem { Name= "Details" }
               }).Render()
-        <!-- end of filemanager element -->
+        <!-- end of filemanager control -->
         @Html.EJS().CheckBox("checkboxTemplate").Change("onChange").Checked(false).Label("Select All").Render()
     </div>
 </div>

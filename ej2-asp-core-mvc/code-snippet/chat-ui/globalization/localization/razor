@@ -1,8 +1,8 @@
-@using Syncfusion.EJ2.InteractiveChat
-@using Newtonsoft.Json
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).Created("onCreated").User(ViewBag.CurrentUser).Locale('de').Render()
+    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).Created("onCreated").User(ViewBag.CurrentUser).Locale("de").Render()
 </div>
 
 <script>
@@ -18,9 +18,6 @@
     });
     var chatUIObj;
     var typingUsers = @Html.Raw(JsonConvert.SerializeObject(ViewBag.TypingUsers));
-    typingUsers.forEach(user => {
-        user = new UserModel(user);
-    });
     function onCreated() {
         var chatUiEle = document.getElementById('chatUser');
         chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
