@@ -1,9 +1,16 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
-     @Html.EJS().Tooltip("tooltip").Target(".circletool").BeforeRender("onBeforeRender").AfterClose("onAfterClose").CloseDelay(1000).Animation(new {
-   open = new { effect = "ZoomIn", duration = 500 },
-   close = new { effect = "ZoomOut", duration = 500 }
-}).ContentTemplate(@<div>
+
+@Html.EJS().Tooltip("tooltip")
+    .Target(".circletool")
+    .BeforeRender("onBeforeRender")
+    .AfterClose("onAfterClose")
+    .CloseDelay(1000)
+    .Animation(new {
+        open = new { effect = "ZoomIn", duration = 500 },
+        close = new { effect = "ZoomOut", duration = 500 }
+    })
+    .ContentTemplate(@<div>
         <h3> Transition effect </h3>
         <div id="box" class="e-prevent-select">
             <div class="circletool" style="top:18%;left:5%" title="This is Turtle !!!"></div>
@@ -13,7 +20,8 @@
             <div class="circletool" style="top:75%;left:15%" title="This is Blob Fish !!!"></div>
             <div class="circletool" style="top:30%;left:70%" title="This is Mammoth !!!"></div>
         </div>
-    </div>).Render()
+    </div>)
+    .Render()
 
 <style>
     #box {
