@@ -1,14 +1,14 @@
 <div class=" control-section">
     <div class="sample-container">
         <ejs-filemanager id="file" locale="de">
-            <!--  Filemanager element declaration -->
+            <!--  Filemanager control declaration -->
             <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>
