@@ -158,7 +158,7 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 **Sort foreign key column based on text for remote data**
 
-In the case of remote data in the grid, the sorting operation will be performed based on the `foreignKeyField` property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
+For remote data binding, the Grid performs sorting based on the `foreignKeyField` property defined in the column settings. This property should be mapped to the corresponding foreign key field in the data source. When sorting is applied, the Grid sends a request to the server with the `foreignKeyField` name, and the server is responsible for processing the sorting operation and returning the sorted data. Since the Grid relies on the server response, ensuring that the server correctly sorts the data before sending it back is essential for maintaining the expected order in the Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -185,10 +185,10 @@ The following code example describes the handling of sorting operation at the se
             if (key != null)
             {
                 if (key == "EmployeeID") {
-                    GridData = SortFor(key); //Only for foreignKey Column ascending
+                    GridData = SortFor(key); //Only for foreignKey Column ascending.
                 }
                 else if(key == "EmployeeID desc") {
-                    GridData = SortFor(key); //Only for foreignKey Column descending
+                    GridData = SortFor(key); //Only for foreignKey Column descending.
                 }
             }
             var count = GridData.Count();
@@ -200,13 +200,13 @@ The following code example describes the handling of sorting operation at the se
         {
             List<Item> GridData = JsonConvert.DeserializeObject<Item[]>(Properties.Resources.ItemsJson).AsQueryable().ToList();
             List<Brand> empData = JsonConvert.DeserializeObject<Brand[]>(Properties.Resources.BrandsJson).AsQueryable().ToList();
-            if (Sorted == "EmployeeID") //check whether ascending or descending
+            if (Sorted == "EmployeeID") //Check whether ascending or descending.
                 empData = empData.OrderBy(e => e.FirstName).ToList();
             else if(Sorted == "EmployeeID desc")
                 empData = empData.OrderByDescending(e => e.FirstName).ToList();
             List<Item> or = new List<Item>();
             for (int i = 0; i < empData.Count(); i++) {
-                //Select the Field matching records
+                //Select the Field matching records.
                 IEnumerable<Item> list = GridData.Where(pred => pred.EmployeeID == empData[i].EmployeeID).ToList();
                 or.AddRange(list);
             }
