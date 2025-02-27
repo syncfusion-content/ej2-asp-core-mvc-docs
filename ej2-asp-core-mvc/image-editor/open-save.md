@@ -331,6 +331,33 @@ Output be like the below.
 
 To save an image as a byte array (byte[]), use the [`getImageData`] method of the editor to retrieve the image data and convert it into a byte array. You can then invoke the open method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/save-image-cs4/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/save-image-cs4/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/open-save/save-image-cs4/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/open-save/save-image-cs4/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-byte-array.png)
+
 ### Save the image as blob
 
 To save an image as a blob, use the [`getImageData`] method of the editor to retrieve the image data and convert it into a blob. You can then invoke the open method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
