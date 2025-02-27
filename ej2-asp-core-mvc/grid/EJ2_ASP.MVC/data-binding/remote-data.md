@@ -685,7 +685,7 @@ The following example demonstrates how to send additional parameters to the serv
 {% endhighlight %}
 {% endtabs %}
 
-![AdditionalParameters](../../images/databinding/remote-params.png)
+![AdditionalParameters](../images/databinding/remote-params.png)
 
 ## Offline mode
 
