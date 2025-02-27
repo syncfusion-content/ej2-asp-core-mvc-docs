@@ -2,8 +2,8 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     <ejs-imageeditor id="image-editor" created="created" ></ejs-imageeditor>
 </div>
-<ejs-button id="zoomInClick" onclick="zoomInClick()" cssClass="e-primary" content="Get Blob"></ejs-button>
-<ejs-button id="zoomOutClick" onclick="zoomOutClick()" cssClass="e-primary" content="Open Image"></ejs-button>
+<ejs-button id="saveBlob" onclick="saveBlob()" cssClass="e-primary" content="SAVE BLOB"></ejs-button>
+<ejs-button id="openBlob" onclick="openBlob()" cssClass="e-primary" content="OPEN BLOB"></ejs-button>
 
 <script>
    var blobUrl;
@@ -29,7 +29,7 @@
           this.blobUrl = URL.createObjectURL(blob);// For getting blob.
         });
     }
-    function setImage() {
+    function openBlob() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.open(this.blobUrl);
     }

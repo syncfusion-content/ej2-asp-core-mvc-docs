@@ -1,5 +1,5 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").UploadSettings(us => us.MinFileSize(1024).MaxFileSize(102400)).Render()
+    @Html.EJS().ImageEditor("image-editor").UploadSettings(us => us.AllowedExtensions(".jpeg, .jpg")).Render()
 </div>
 @Html.EJS().Button("loadInvalidImage").CssClass("e-primary").Content("Load Invalid Image").Click("loadInvalidImage").Render()
 

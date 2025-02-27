@@ -1,5 +1,5 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { "Annotate", "Line", "Rectangle", "Text", "ZoomIn", "ZoomOut" }).Render()
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
 
 <script>

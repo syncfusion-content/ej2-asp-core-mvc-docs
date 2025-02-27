@@ -1,0 +1,10 @@
+<ejs-richtexteditor id="default" enterKey="DIV" value="@ViewBag.value" actionBegin="onActionBegin"> </ejs-richtexteditor>
+
+<script>
+    function onActionBegin(args){
+        if (args.requestType === 'EnterAction') {
+            args.cancel = true;  // to prevent default enter key action in editor level
+            args.originalEvent.preventDefault(); // to prevent default enter key action in browser level
+        }
+    }
+</script>
