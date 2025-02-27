@@ -167,9 +167,6 @@ To save the modified image in the Image Editor, follow these steps:
 * Click the Save Button
     * Locate the Save button on the right side of the toolbar and click it.
 
-* Use Keyboard Shortcut (Ctrl + S)
-    * Press Ctrl + S to quickly open the export dialog and save the image.
-
 * Select the File Format
     * In the export popup, choose your preferred file format (PNG, JPEG, SVG, or WEBP) to save the image with all 
 applied modifications.
@@ -179,5 +176,8 @@ applied modifications.
 
 * Download the Image
     * Click Download to save the modified image to your device.
+
+* Use Keyboard Shortcut (Ctrl + S)
+    * Press Ctrl + S to download the image in the same format as the loaded image without opening the Save dialog. For example, if the loaded image is PNG, it will be saved as PNG.
 
 ![Export an image](images/save.gif)
