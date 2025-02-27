@@ -10,7 +10,7 @@ documentation: ug
 
 # Figma UI Kits for Syncfusion<sup style="font-size:70%">&reg;</sup> Controls
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme), [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme), [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme). These kits match the themes used in Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
+Syncfusion<sup style="font-size:70%">&reg;</sup> offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1454123774600129202/syncfusion-ui-kit-material-3-theme), [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme), [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme). These kits match the themes used in Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 The kits contain reusable design controls with various possible states and variants, along with detailed figures, measurements, and icons, representing the Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
@@ -28,7 +28,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kit offers the fol
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Figma UI kits are available in the [Figma community](https://www.figma.com/@syncfusion). You can download the Syncfusion<sup style="font-size:70%">&reg;</sup> theme-specific Figma UI kits from the following links:
 
-- [Material 3](https://www.figma.com/community/file/1385969023252455137/syncfusion-ui-kit-material-3-theme)
+- [Material 3](https://www.figma.com/community/file/1454123774600129202/syncfusion-ui-kit-material-3-theme)
 - [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme)
 - [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme)
 - [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme)
