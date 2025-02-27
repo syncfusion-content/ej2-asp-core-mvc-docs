@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The [`clearImage`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.imageeditor.imageeditor.html#Syncfusion_EJ2_ImageEditor_ImageEdito/#clearimage) method in the image editor control is indeed useful for scenarios where you need to ensure that the image editor is emptied before reopening it, especially if the editor is used within a dialog. By using clearImage before closing the dialog, you can ensure that the editor does not retain the previously loaded image when the dialog is reopened. This allows users to start fresh with a new image selection.
 
-Here is an example of clearing an Image using `clear` method. 
+Here is an example of clearing an Image using `clearImage` method. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,4 +40,4 @@ Here is an example of clearing an Image using `clear` method.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-clear-image.jpg)
+![ImageEditor Sample](../images/image-editor-clear-image.png)
