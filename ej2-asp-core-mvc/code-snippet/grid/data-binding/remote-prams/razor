@@ -1,0 +1,58 @@
+@Html.EJS().Grid("grid").Query("query").Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerName").HeaderText("Customer Name").Width("150").Add();
+    col.Field("ProductID").HeaderText("Product ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("ProductName").HeaderText("Product Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+}).AllowPaging().DataStateChange("dataStateChange").Created("created").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+<script>
+    const baseUrl = "https://localhost:****/Home";// Here xxxx denotes the port number.
+    const query = new ej.data.Query().addParams('Syncfusion_Grid', 'true')
+    var gridData;
+    var state = { skip: 0, take: 12, query: query };
+    function created() {
+        dataStateChange(state)
+    }
+    function dataStateChange (state) {
+        const grid = document.getElementById("grid").ej2_instances[0];
+        const query = grid.getDataModule().generateQuery();
+        getOrders(state, query).then(gridData => {
+            grid.dataSource = gridData.result; // Assign the result to the dataSource property.
+        });
+    }
+    function getOrders(state, action) {
+        const query = new ej.data.Query();
+        applyPaging(query, state)
+        query.isCountRequired = true
+        query.addParams('Syncfusion_Vue_Grid', 'true');
+        var fetchRequest = new ej.base.Fetch({
+            url: `${baseUrl}/GetOrderData`,
+            type: 'POST',
+        })
+        return fetchRequest.send()
+            .then(data => {
+                // Create a DataManager instance with your fetched data.
+                gridData = new ej.data.DataManager(data.result);
+                // Execute local data operations using the provided query.
+                const result = gridData.executeLocal(query);
+                // Return the result along with the count of total records.
+                return {
+                    result: result, // Result of the data.
+                    count: result.count // Total record count based on fetched data length.
+                };
+           });
+    }
+    const applyPaging = (query, state) => {
+        // Check if both 'take' and 'skip' values are available.
+        if (state.take && state.skip) {
+        // Calculate pageSkip and pageTake values to get pageIndex and pageSize.
+        const pageSkip = state.skip / state.take + 1;
+        const pageTake = state.take;
+            query.page(pageSkip, pageTake);
+        }
+        // If if only 'take' is available and 'skip' is 0, apply paging for the first page.
+        else if (state.skip === 0 && state.take) {
+            query.page(1, state.take);
+        }
+    }
+</script>
