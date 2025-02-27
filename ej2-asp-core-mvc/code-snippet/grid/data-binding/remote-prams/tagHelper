@@ -1,5 +1,8 @@
+@{
+    string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
+}
 @Html.AntiForgeryToken()
-<ejs-grid id="grid" created="created" allowPaging="true"  query="query">
+<ejs-grid id="grid" created="created" allowPaging="true"  query="query" dataStateChange="dataStateChange">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
         <e-grid-column field="CustomerName" headerText="Customer Name" width="150"></e-grid-column>
@@ -9,13 +12,9 @@
 </ejs-grid>
 <script>
     var gridData;
-    const query = new Query().addParams('Syncfusion_Grid', 'true')
+    const query = new ej.data.Query().addParams('Syncfusion_Grid', 'true')
     var gridData;
-    var state = {
-        skip: 0,
-        take: 12,
-        query: query
-    };
+    var state = { skip: 0, take: 12, query: query };
     function created() {
         dataStateChange(state)
     }
@@ -23,7 +22,7 @@
         const grid = document.getElementById("grid").ej2_instances[0];
         const query = grid.getDataModule().generateQuery();
         getOrders(state, query).then(gridData => {
-            grid.dataSource = gridData.result; // Assign the result to the data property
+            grid.dataSource = gridData.result; // Assign the result to the dataSource property.
         });
     }
     function getOrders(state, action) {
@@ -41,22 +40,22 @@
         })
         return fetchRequest.send()
             .then(data => {
-                // Create a DataManager instance with your fetched data
+                // Create a DataManager instance with your fetched data.
                 gridData = new ej.data.DataManager(data.result);
-                // Execute local data operations using the provided query
+                // Execute local data operations using the provided query.
                 const result = gridData.executeLocal(query);
-                // Return the result along with the count of total records
+                // Return the result along with the count of total records.
                 return {
-                    result: result, // Result of the data
-                    count: result.count // Total record count based on fetched data length
+                    result: result, // Result of the data.
+                    count: result.count // Total record count based on fetched data length.
                 };
             });
 
     }
     const applyPaging = (query, state) => {
-        // Check if both 'take' and 'skip' values are available
+        // Check if both 'take' and 'skip' values are available.
         if (state.take && state.skip) {
-            // Calculate pageSkip and pageTake values to get pageIndex and pageSize
+            // Calculate pageSkip and pageTake values to get pageIndex and pageSize.
             const pageSkip = state.skip / state.take + 1;
             const pageTake = state.take;
             query.page(pageSkip, pageTake);
