@@ -2,7 +2,7 @@
     string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
 }
 @Html.AntiForgeryToken()
-<ejs-grid id="grid" created="created" allowPaging="true"  query="query" dataStateChange="dataStateChange">
+<ejs-grid id="grid" created="created" allowPaging="true" query="query" dataStateChange="dataStateChange">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
         <e-grid-column field="CustomerName" headerText="Customer Name" width="150"></e-grid-column>
@@ -27,7 +27,6 @@
     }
     function getOrders(state, action) {
         const query = new ej.data.Query();
-        // page
         applyPaging(query, state)
         query.isCountRequired = true
         query.addParams('Syncfusion_Vue_Grid', 'true');
