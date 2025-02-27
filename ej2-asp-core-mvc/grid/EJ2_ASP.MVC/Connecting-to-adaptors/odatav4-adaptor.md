@@ -324,8 +324,6 @@ Now, run the project to see the Syncfusion Grid connected to the OData service i
 
 To enable search operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in their requests to search for specific data entries.
 
-![ODataV4Adaptor searching]()
-
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ....
