@@ -7,6 +7,7 @@
 </div>
 <ejs-button id="brightnessClick" onclick="brightnessClick()" cssClass="e-primary" content="Brightness"></ejs-button>
 <ejs-button id="contrastClick" onclick="contrastClick()" cssClass="e-primary" content="Contrast"></ejs-button>
+<ejs-button id="saturationClick" onclick="saturationClick()" cssClass="e-primary" content="Saturation"></ejs-button>
 
 <script>
     function created() {
@@ -25,6 +26,10 @@
     function contrastClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Contrast, 100);
+    }
+    function saturationClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Saturation, 100);
     }
 
 </script>
