@@ -4,7 +4,7 @@ title: Bind data & perform CRUD with ODataV4Adaptor in Syncfusion Grid
 description: Learn here all about Bind data and perform CRUD action with ODataV4Adaptor in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: Adaptors, ODataV4Adaptor, url method adaptor, remotedata 
+keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata 
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -15,18 +15,18 @@ The `ODataV4Adaptor` in Syncfusion ASP.NET MVC Grid allows seamless integration 
 
 ## Creating an OData Service
 
-To configure a server with Syncfusion ASP.NET MVC Grid, you need to follow the below steps:
+To configure a server with Syncfusion ASP.NET MVC Grid using OData, follow these steps:
 
-**1. Project Creation:**
+**Step 1: Project Creation**
 
 1. Open **Visual Studio**.
 2. Select **Create a new project** → Choose **ASP.NET Web Application (.NET Framework)**.
 3. Name the project **ODataV4Adaptor** and select **MVC** as the project template.
 4. Ensure that the **Web API** option is selected (this is crucial for enabling OData).
 
-For detailned information, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app).
+For detailed information, refer to this [documentation](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app).
 
-**2. Install NuGet Packages:**
+**Step 2: Install NuGet Packages**
 
 Using the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), install the `Microsoft.AspNet.OData` NuGet package for OData support and `Newtonsoft.Json` for JSON serialization support.
 
@@ -98,13 +98,15 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
 {% endhighlight %}
 {% endtabs %}
 
-**4. Configure OData Routing in Web API:**
+**Step 4: Configure OData Routing in Web API**
 
-Modify `WebApiConfig.cs` in the `App_Start` folder to enable OData routing.
+Modify `WebApiConfig.cs` inside the `App_Start` folder to enable OData routing.
 
-1. Define the OData Model: Use `ODataConventionModelBuilder` to construct the Entity Data Model (EDM):
+**Define the OData Model:**
 
-```code
+Use `ODataConventionModelBuilder` to construct the Entity Data Model (EDM):
+
+```cs
         private static IEdmModel GetEdmModel()
         {
             var builder = new ODataConventionModelBuilder();
@@ -113,7 +115,9 @@ Modify `WebApiConfig.cs` in the `App_Start` folder to enable OData routing.
         }
 ```
 
-2. Register the OData routes:
+**Register the OData routes:**
+
+Modify `WebApiConfig.cs` as follows:
 
 ```cs
 using Microsoft.AspNet.OData.Builder;
@@ -166,7 +170,7 @@ namespace ODataV4Adaptor.App_Start
 
 **5. Add Controllers**
 
-Finally, add controllers to expose the OData endpoints. Here’s an example:
+Create a controllers to expose the OData endpoints.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -178,7 +182,7 @@ using ODataV4Adaptor_MVC.Models;
 
 namespace ODataV4Adaptor_MVC.Controllers
 {
-   
+
 public class OrdersController : ODataController
 {
     /// <summary>
@@ -220,8 +224,8 @@ Modify Global.asax.cs to register OData routes during application startup:
 * Ensure the project is built successfully (Build → Rebuild Solution).
 * Run the project (Ctrl + F5).
 * Verify the OData service by opening a browser and navigating to:
-    ```bash
-    http://localhost:<port>/odata/Orders
+    ```
+    http://localhost:xxxx/odata/Orders // Here xxxx denotes port number
     ```
 * If the service is configured correctly, it should return JSON data.
 
@@ -229,21 +233,13 @@ Modify Global.asax.cs to register OData routes during application startup:
 
 To integrate the Syncfusion Grid control into your ASP.NET MVC project using Visual Studio, follow these steps:
 
-**Step 1:** Install ASP.NET MVC package in the application:
+**Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
-To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
-
-{% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
-
-Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
+To add `ASP.NET MVC` controls to your application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
 **Step 2:** Add Syncfusion ASP.NET MVC namespace
 
-Add `Syncfusion.EJ2` namespace reference in `Web.config` under `Views` folder.
+Ensure the `Syncfusion.EJ2` namespace is referenced in the **Web.config** file under the **Views** folder.
 
 ```cs
 <namespaces>
@@ -253,7 +249,7 @@ Add `Syncfusion.EJ2` namespace reference in `Web.config` under `Views` folder.
 
 **Step 3:** Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Include Syncfusion themes and script files in the <head> section of `~/Views/Shared/_Layout.cshtml`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -286,7 +282,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 **Step 4:** Register Syncfusion Script Manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+To enable Syncfusion scripts, add the **Script Manager** at the end of the `<body>` tag inside `~/Views/Shared/_Layout.cshtml`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -308,8 +304,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% highlight cshtml tabtitle="Index.cshtml" %}
 @using Syncfusion.EJ2
 
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
-	() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor")).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -359,7 +354,7 @@ To enable search operations in your web application using OData, you first need 
 {% endhighlight %}
 {% endtabs %}
 
-![Searching query](../images/odatav4-adaptor-searching.png)
+![Searching query](../../images/adaptors/odatav4-adaptor-searching.png)
 
 ## Handling Filtering Operation
 
@@ -394,9 +389,9 @@ To enable filter operations in your web application using OData, you first need 
 {% endtabs %}
 
 Single column filtering
-![Filtering query](../images/odatav4-adaptor-filtering.png)
+![Filtering query](../../images/adaptors/odatav4-adaptor-filtering.png)
 Multi column filtering
-![Filtering query](../images/odatav4-adaptor-multi-column-filtering.png)
+![Filtering query](../../images/adaptors/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling Sorting Operation
 
@@ -432,11 +427,11 @@ To enable sorting operations in your web application using OData, you first need
 
 *Single column sorting*
 
-![Single column sorting query](../images/odatav4-adaptor-sorting.png)
+![Single column sorting query](../../images/adaptors/odatav4-adaptor-sorting.png)
 
 *Multi column sorting*
 
-![Multi column sorting query](../images/odatav4-adaptor-multi-column-sorting.png)
+![Multi column sorting query](../../images/adaptors/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling Paging Operation
 
@@ -470,11 +465,11 @@ To implement paging operations in your web application using OData, you can util
 {% endhighlight %}
 {% endtabs %}
 
-![paging query](../images/odatav4-adaptor-paging.png)
+![paging query](../../images/adaptors/odatav4-adaptor-paging.png)
 
 ## Handling CRUD Operations
 
-To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing]() and utilize the sample implementation of the `OrdersController` in your MVC application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your MVC application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
 To enable CRUD operations in the Syncfusion Grid control within an ASP.NET MVC application, follow the below steps:
 
@@ -493,11 +488,11 @@ To enable CRUD operations in the Syncfusion Grid control within an ASP.NET MVC a
 {% endtabs %}
 
 
-> Normal/Inline editing is the default edit mode for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey]()property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit mode for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
-To insert a new record into your Grid, you can utilize the HttpPost method in your application. Below is a sample implementation of inserting a record using the OrdersController:
+To insert a new record into your Grid, you can utilize the `HttpPost` method in your application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
 ```cs
  /// <summary>
@@ -517,11 +512,11 @@ To insert a new record into your Grid, you can utilize the HttpPost method in yo
  }
 ```
 
+![Update record](../../images/adaptors/odatav4-adaptor-insert-record.png)
+
 **Update Operation:**
 
 For updating existing records, utilize the `UpdateUrl` property to specify the controller action mapping URL for the update operation.
-
-![Update record](../images/adaptors/url-adaptors/url-adaptor-update-record.png)
 
 ```cs
 /// <summary>
@@ -547,12 +542,11 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
     return Ok(updateRecord);
 }
 ```
+![Update record](../../images/adaptors/odatav4-adaptor-update-record.png)
 
 **Delete Operation**
 
 To delete existing records, use the `RemoveUrl` property to specify the controller action mapping URL for the delete operation.
-
-![Delete Record](../images/adaptors/url-adaptors/url-adaptor-delete-record.png)
 
 ```cs
 /// <summary>
@@ -571,4 +565,37 @@ public IHttpActionResult Delete(int key)
 }
 ```
 
-![ODataV4Adaptor CRUD operations](../images/adaptors/url-adaptors/adaptor-crud-operation.gif)
+![Delete Record](../../images/adaptors/odatav4-adaptor-delete-record.png)
+
+> You can find the complete sample for the ODataV4Adaptor in [GitHub]() link.
+
+## Odata with custom url
+
+The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application’s requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it’s essential to modify the routing configurations in your application’s route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
+
+**Configuring Custom URLs**
+
+To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
+
+* InsertUrl: Specifies the custom URL for inserting new records.
+* RemoveUrl: Specifies the custom URL for deleting records.
+* UpdateUrl: Specifies the custom URL for updating records.
+* BatchUrl: Specifies the custom URL for batch editing operations.
+
+> Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
+
+The following code example describes the above behavior.
+
+{% tabs %}
+{% highlight ts tabtitle="Index.cshtml" %}
+
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders")
+         .Adaptor("ODataV4Adaptor").InsertUrl(https://localhost:xxxx/odata/Orders/Insert).UpdateUrl(https://localhost:xxxx/odata/Orders/Update).RemoveUrl(https://localhost:xxxx/odata/Orders/Delete)).Columns(col =>
+         {
+            col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+            col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+         }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+{% endhighlight %}
+{% endtabs %}
