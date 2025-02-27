@@ -1,0 +1,11 @@
+
+@Html.EJS().RichTextEditor("defaultRTE").ContentTemplate(@<div><div>Prevention of Cross Sit Scripting (XSS)</div><script>alert("hi")</script></div>).BeforeSanitizeHtml("beforeSanitizeHtml").Render()
+
+<script>
+    function beforeSanitizeHtml(args) {
+        if (e.selectors && e.selectors.tags) {
+            e.selectors.tags = e.selectors.tags.filter((tag) => tag !== 'iframe:not(.e-rte-embed-url)');
+            e.selectors.tags = [('iframe[src^="https://"]')];
+        }
+    }
+</script>

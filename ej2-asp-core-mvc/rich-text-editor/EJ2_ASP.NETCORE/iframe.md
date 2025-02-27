@@ -8,10 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# IFrame Editing Mode in ##Platform_Name## Rich Text Editor Control
 
-# Iframe
+The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
-When the [`iframeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) option is enabled, the Rich Text Editor creates the iframe element as the content area on control initialization; it is used to display and editing the content. In content area, the editor displays only the body tag of a `< iframe >` document.
+## Configuring the Iframe Editor
+
+To enable the iframe editor, you can use the [iframeSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
+
+Here's an example of how to enable the iframe editor:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,10 +42,10 @@ When the [`iframeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% endif %}
 
 
+## Customizing IFrame Attributes
 
-## Iframe Attributes
+You can add custom attributes to the body tag of the iframe using the attributes field of the [iframeSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
-The editor allows you to pass an additional attribute to body tag of a < iframe > element using attributes fields of the `attributes` fields of [`iframeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property. This property contains name/value pairs in string format. It is used to override the default appearance of the content area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -65,13 +70,12 @@ The editor allows you to pass an additional attribute to body tag of a < iframe 
 {% endtabs %}
 {% endif %}
 
+## Integrating External CSS and Scripts
 
+The Rich Text Editor allows you to apply an external CSS file to style the iframe element. This can be done using the `styles` field in the iframeSettings property. By including an external CSS file, you can easily change the appearance of the editor’s content to meet your specific requirements.
 
-## Adding External CSS/Script File
+Likewise, add the external script file to the `< iframe >` element using the `scripts` field of iframeSettings to provide the additional functionalities to the RichTextEditor.
 
-The editor offers you to add external CSS file to style the `< iframe >` element. Easily change the appearance of editor’s content using an external CSS file using  `styles` field in [`iframeSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property.
-
-Likewise, add the external script file to the `<iframe>` element using `scripts` field of `iframeSettings` to provide the additional functionalities to the Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -96,8 +100,9 @@ Likewise, add the external script file to the `<iframe>` element using `scripts`
 {% endtabs %}
 {% endif %}
 
+> You can also explore our [iframe in ASP.NET Core Rich Text Editor example](https://ej2.syncfusion.com/aspnetcore/richtexteditor/iframe#/tailwind3) that shows how to render the iframe in Angular Rich Text Editor.
 
 
 ## See Also
 
-* [How to change the editor mode](./formation/#markdown-editor)
+

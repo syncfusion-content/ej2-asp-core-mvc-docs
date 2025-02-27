@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("headings").ToolbarSettings(e => e.Items((object)ViewBag.items)).Format(t => t.Default("Paragraph").Types(ViewBag.customFormats)).Value(@ViewBag.value).Render()

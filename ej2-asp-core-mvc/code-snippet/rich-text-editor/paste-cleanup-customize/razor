@@ -1,0 +1,13 @@
+@Html.EJS().RichTextEditor("pasteCleanup").ShowCharCount(true).AfterPasteCleanup("afterPasteCleanup").MaxLength(1000).PasteCleanupSettings(p => p.Prompt(true)).Value(ViewBag.value).Render()
+
+<script>
+    function afterPasteCleanup(args){
+        const divElement = document.createElement('div');
+        divElement.innerHTML = args.value;
+        const pasteCleanupImage = divElement.querySelector('.pasteContent_Img');
+        if (pasteCleanupImage) {
+            ej.base.detach(pasteCleanupImage);
+            args.value = divElement.innerHTML;
+        }
+    }
+</script>

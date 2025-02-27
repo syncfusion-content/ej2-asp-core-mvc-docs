@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("link").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => { e.Link((object)ViewBag.link); }).Value(ViewBag.value).Render()

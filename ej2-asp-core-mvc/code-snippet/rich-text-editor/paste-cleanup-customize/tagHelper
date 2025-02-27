@@ -1,0 +1,15 @@
+<ejs-richtexteditor id="pasteCleanup"  showCharCount="true" maxLength="1000" value="@ViewBag.value" afterPasteCleanup="afterPasteCleanup">
+    <e-richtexteditor-pastecleanupsettings Prompt="true"></e-richtexteditor-pastecleanupsettings>
+</ejs-richtexteditor>
+
+<script>
+    function afterPasteCleanup(args){
+        const divElement = document.createElement('div');
+        divElement.innerHTML = args.value;
+        const pasteCleanupImage = divElement.querySelector('.pasteContent_Img');
+        if (pasteCleanupImage) {
+            ej.base.detach(pasteCleanupImage);
+            args.value = divElement.innerHTML;
+        }
+    }
+</script>
