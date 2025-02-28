@@ -15,7 +15,7 @@ Maps provide support for internationalization for the below elements.
 * Data label
 * Tooltip
 
-For more information about number and date formatter, refer to the [`internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/maps/internationalization) section.
+For more information about number and date formatter, refer to the [`internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) section.
 
 <!-- markdownlint-disable MD036 -->
 
