@@ -107,4 +107,4 @@ This section explains how to configure the `content` and `stopContent` propertie
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeechToText Control](images/speechtotext-buttonsetting.png)
+![ASP.NET MVC SpeechToText Button Content](images/speechtotext-buttonsetting.png)
