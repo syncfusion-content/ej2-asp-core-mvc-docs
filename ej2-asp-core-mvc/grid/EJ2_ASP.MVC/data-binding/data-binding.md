@@ -86,7 +86,7 @@ To achieve dynamic changes, you can utilize the `changeDataSource` method. This 
 
 To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
 
-You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a data source for the Syncfusion Grid.
+You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a data source for the Grid.
 
 ```typescript
     export let data= [
@@ -138,9 +138,9 @@ The following code demonstrates how to add new columns with existing Syncfusion 
 
 **3. Modify only the data source:**
 
-You can change the entire data source in the Syncfusion ASP.NET MVC Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Syncfusion Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
+You can change the entire data source in the Syncfusion ASP.NET MVC Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
 
-You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a new data source for the Syncfusion Grid.
+You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a new data source for the Grid.
 
 ```typescript
      export let employeeData = [
@@ -200,7 +200,7 @@ N> `DataTable` will be supported from .Net Core 2.0.
 
 ### DataTable with on-demand Grid actions
 
-The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Syncfusion ASP.NET MVC Grid enables server-side processing of Syncfusion Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Syncfusion ASP.NET MVC Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
 
 To implement on-demand server-side actions with a DataTable, you need to:
 
