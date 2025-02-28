@@ -1,0 +1,23 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" allowFiltering="true" allowSorting="true" actionBegin="actionBegin">
+     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize="12"></e-grid-pageSettings>
+    <e-grid-columns>
+       <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="100" format="C2"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="100" format="yMd"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function actionBegin(args) {
+        var hostUrl = 'https://services.syncfusion.com/aspnet/production/';
+        if (args.requestType === "filterBeforeOpen") {
+            console.log("Filter popup opening - Binding remote data source...");
+            args.filterModel.options.dataSource = new ej.data.DataManager({
+                url: hostUrl + 'api/Orders',
+                adaptor: new ej.data.WebApiAdaptor(),
+            });
+        }
+    }
+</script>

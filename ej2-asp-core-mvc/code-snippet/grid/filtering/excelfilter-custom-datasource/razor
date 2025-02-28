@@ -1,0 +1,19 @@
+@Html.EJS().Grid("excelFilter").DataSource((IEnumerable<object>)ViewBag.dataSource).PageSettings(page => page.PageSize(12)).AllowFiltering(true).AllowPaging(true).AllowSorting(true).FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+            col.Field("Freight").HeaderText("Freight").Width("100").Format("C2").Add();
+            col.Field("OrderDate").HeaderText("Order Date").Width("100").Format("yMd").Add();
+        }).ActionBegin("actionBegin").Render()
+</div>
+<script>
+    function actionBegin(args) {
+        var hostUrl = 'https://services.syncfusion.com/aspnet/production/';
+        if (args.requestType === "filterBeforeOpen") {
+            args.filterModel.options.dataSource = new ej.data.DataManager({
+                url: hostUrl + 'api/Orders',
+                adaptor: new ej.data.WebApiAdaptor(),
+            });
+        }
+    }
+</script>

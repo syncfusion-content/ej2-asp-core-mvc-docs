@@ -132,6 +132,23 @@ The following example demonstrates how to remove the context menu option in the 
 
 ![Filter bar](../images/filtering/excelfilter-customize-dialog.gif)
 
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion ASP.NET MVC Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote `DataManager` as the `DataSource` or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `DataSource` in the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event for the `FilterBeforeOpen` **RequestType**, as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Filter bar](../images/filtering/custom-binding.png)
+
 ## Hide sorting option in filter dialog
 
 The Excel-like filter dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid includes built-in sorting options (ascending and descending) by default. To hide these options, set the **display** property of the following CSS classes to **none**, which will prevent the sorting options from appearing in the filter dialog:
