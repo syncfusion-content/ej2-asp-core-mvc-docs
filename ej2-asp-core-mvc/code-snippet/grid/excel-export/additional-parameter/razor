@@ -1,0 +1,30 @@
+<div style="margin-left:180px">
+    <p style="color:red;" id="message"></p>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowExcelExport().Toolbar(new List<string>
+        () { "ExcelExport" }).ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Visible(false).Width("150").Add();
+            col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+            col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+        }).Render()
+</div>
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === "grid_excelexport") {
+            var queryClone = grid.query;
+            grid.query = new ej.data.Query().addParams("recordcount", "15");
+            document.getElementById("message").innerText =
+                'Key: ' + grid.query.params[0].key +
+                ' and Value: ' + grid.query.params[0].value + ' on ' + args.item.text;
+            grid.excelExport();
+        }
+    }
+
+    function excelExportComplete() {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.query = new ej.data.Query();
+    }
+</script>
