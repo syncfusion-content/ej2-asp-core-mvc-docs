@@ -1,5 +1,5 @@
 <ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" allowFiltering="true" allowSorting="true" actionBegin="actionBegin">
-     <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
     <e-grid-pageSettings pageSize="12"></e-grid-pageSettings>
     <e-grid-columns>
        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
