@@ -1,19 +1,7 @@
-@Html.EJS().Grid("grid").DataSource(dataManger =>
-{dataManger.Url("https://ej2services.syncfusion.com/production/web-services/api/Orders").CrossDomain(true).Adaptor("ODataV4Adaptor");
-}).AllowSorting().Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("/OData/Items").Adaptor("ODataV4Adaptor"); }).Height("348px").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("170").ForeignKeyValue("ContactName").ForeignKeyField("CustomerID").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
-    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
-}).Load("load").Render();
-<script>
-var data = new ej.data.DataManager({ 
-    url: 'http://services.odata.org/V4/Northwind/Northwind.svc/Customers', 
-    adaptor: new ej.data.ODataV4Adaptor, 
-    crossDomain: true 
-}); 
-function load(args) { 
-    this.getColumns()[1].dataSource = data; 
-} 
-</script>
+  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("EmployeeID").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource(dataManger => { dataManger.Url("/OData/Brands").Adaptor("ODataV4Adaptor"); }).HeaderText("Employee Name").Width("140").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).Render()
