@@ -266,7 +266,7 @@ The following example demonstrates how to pass additional parameters to the serv
 {% include code-snippet/grid/excel-export/additional-parameter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-export.cs" %}
-{% include code-snippet/grid/excel-export/additional-parameterexcel-export.cs %}
+{% include code-snippet/grid/excel-export/additional-parameter/excel-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
