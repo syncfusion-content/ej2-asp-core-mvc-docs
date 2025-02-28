@@ -33,7 +33,7 @@
     DataOperations operation = new DataOperations();
     if (dataManagerRequest.Search != null && dataManagerRequest.Search.Count > 0)
     {
-                DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);
+        DataSource = operation.PerformSearching(DataSource, dataManagerRequest.Search);
     }
     if (dataManagerRequest.Sorted != null && dataManagerRequest.Sorted.Count > 0)
     {
