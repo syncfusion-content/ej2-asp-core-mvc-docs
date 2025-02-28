@@ -662,11 +662,11 @@ The following code example demonstrates how to export all records on the client 
 
 The Syncfusion ASP.Net MVC Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
 
-By utilizing the `Query` property of the Syncfusion ASP.Net MVC Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Syncfusion ASP.Net MVC Grid action.
+By utilizing the `Query` property of the Syncfusion ASP.Net MVC Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
 
 To enable custom parameters in data requests for the Syncfusion ASP.Net MVC Grid component, follow these steps:
 
-**1. Bind the Query Object to the Syncfusion ASP.Net MVC Grid**: Assign the initialized query object to the `Query` property of the Syncfusion ASP.Net MVC Grid.
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `Query` property of the Syncfusion ASP.Net MVC Grid.
 
 **2. Initialize the Query Object:** Create a new instance of the **Query** class and use the addParams method to add the custom parameters.
 

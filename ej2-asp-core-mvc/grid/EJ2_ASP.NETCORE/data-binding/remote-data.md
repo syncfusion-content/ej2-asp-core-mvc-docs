@@ -675,11 +675,11 @@ The following code example demonstrates how to export all records on the client 
 
 The Syncfusion ASP.NET Core Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
 
-By utilizing the `query` property of the Syncfusion ASP.NET Core Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Syncfusion ASP.NET Core Grid action.
+By utilizing the `query` property of the Syncfusion ASP.NET Core Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
 
 To enable custom parameters in data requests for the Syncfusion ASP.NET Core Grid component, follow these steps:
 
-**1. Bind the Query Object to the Syncfusion ASP.NET Core Grid**: Assign the initialized query object to the `query` property of the Syncfusion ASP.NET Core Grid.
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Syncfusion ASP.NET Core Grid.
 
 **2. Initialize the Query Object:** Create a new instance of the **Query** class and use the addParams method to add the custom parameters.
 
