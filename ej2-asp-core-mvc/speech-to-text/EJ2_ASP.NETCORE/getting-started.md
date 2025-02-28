@@ -100,3 +100,15 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Speec
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core SpeechToText control will be rendered in the default web browser.
 
 ![ASP.NET Core SpeechToText Control](images/speech-to-text-control.png)
+
+## Add Button Content
+
+This section explains how to configure the `content` and `stopContent` properties for a Button control. The `content` property display text content on the button when it is ready to start voice recording and the `stopContent` property is to indicate the action of stopping the recording.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/speech-to-text/button-setting/demo/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core SpeechToText Control](images/speechtotext-buttonsetting.png)
