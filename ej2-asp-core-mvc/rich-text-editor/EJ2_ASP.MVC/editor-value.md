@@ -16,9 +16,9 @@ documentation: ug
 
 You can set the initial content of the Rich Text Editor using the `value` property. There are two methods to accomplish this:
 
-* Using the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property directly.
+* Using the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property directly.
 
-* Using the [valuetemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ValueTemplate) property allows you to customize the content of the Rich Text Editor.
+* Using the [ValueTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ValueTemplate) property allows you to customize the content of the Rich Text Editor.
 
 **Retrieving Values**
 
@@ -49,7 +49,7 @@ To retrieve the editor contents, use the value property of Rich Text Editor.
 
 ## Autosave
 
-The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
+The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [SaveInterval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
 The change event will be triggered if the content has been modified since the last saved state, ensuring consistent tracking of changes without manual intervention.
 
@@ -78,23 +78,23 @@ The change event will be triggered if the content has been modified since the la
 
 ## Programmatic Content Access 
 
-You can use the `getHtml` public method to retrieve the Rich Text Editor content.
+You can use the `GetHtml` public method to retrieve the Rich Text Editor content.
 
 ```cs
-  var editorValue = document.getElementById("defaultRTE").ej2_instances[0].getHtml();
+  var editorValue = document.getElementById("defaultRTE").ej2_instances[0].GetHtml();
 
 ```
 
-To fetch the Rich Text Editor's text content, use `getText` method.
+To fetch the Rich Text Editor's text content, use `GetText` method.
 
 ```cs
-  var editorValue = document.getElementById("defaultRTE").ej2_instances[0].getText();
+  var editorValue = document.getElementById("defaultRTE").ej2_instances[0].GetText();
 
 ```
 
 ## Encoded Editor Value
 
-The [enableHtmlEncode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlEncode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [value](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
+The [EnableHtmlEncode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableHtmlEncode) property in the Rich Text Editor specifies whether the source code is displayed in an encoded format. Additionally, the [Value](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Value) property also returns the content in an encoded format. This feature is particularly useful when you want to ensure that HTML content is displayed safely without being interpreted by the browser.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

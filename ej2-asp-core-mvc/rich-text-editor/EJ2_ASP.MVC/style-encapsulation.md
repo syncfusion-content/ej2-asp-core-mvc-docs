@@ -10,7 +10,7 @@ documentation: ug
 
 # Style Encapsulation in ##Platform_Name## Rich Text Editor Control
 
-Style encapsulation determines how styles are applied within the Syncfusion ASP.NET Core **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
+Style encapsulation determines how styles are applied within the Syncfusion ASP.NET MVC **Rich Text Editor**. This feature helps control whether the component's content inherits global styles from the application or remains isolated. 
 
 ## Encapsulation modes
 
@@ -20,17 +20,17 @@ The Rich Text Editor offers two rendering modes for controlling style encapsulat
    - When enabled, the Rich Text Editor is rendered inside an `<iframe>`.  
    - The application's global CSS rules will **not** affect the content inside the editor.  
    - This ensures that the editor's content remains styled independently.  
-   - **Usage:** `<e-richtexteditor-iframesettings enable="true" />`
+   - **Usage:** `IframeSettings(iframeSettings => iframeSettings.Enable(true))`
 
 2. **Non-Encapsulated Mode (Default)**  
    - The Rich Text Editor is rendered **without an `<iframe>`**.  
    - The application's global CSS **will apply** to the content inside the editor.  
    - This mode allows seamless integration with existing styles.  
-   - **Usage:** `<e-richtexteditor-iframesettings enable="false" />`
+   - **Usage:** `IframeSettings(iframeSettings => iframeSettings.Enable(false))`
 
 ### Default behavior
 
-By default, the Rich Text Editor uses **non-encapsulated mode** (`<e-richtexteditor-iframesettings enable="false" />`), allowing the application's styles to affect the editor's content.
+By default, the Rich Text Editor uses **non-encapsulated mode** (`IframeSettings(iframeSettings => iframeSettings.Enable(false))`), allowing the application's styles to affect the editor's content.
 
 Below is a sample implementation of both **encapsulated** and **non-encapsulated** modes.
 

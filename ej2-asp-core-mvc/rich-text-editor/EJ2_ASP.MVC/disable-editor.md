@@ -14,11 +14,11 @@ The Angular Rich Text Editor component offers a feature to disable the editor, p
 
 ### How to Disable the Editor
 
-To disable the editor, set the [enabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Enabled) property to `false`.
+To disable the editor, set the [Enabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Enabled) property to `false`.
 
 When disabled, the editor becomes non-interactive, ensuring that users cannot edit or modify the content.
 
-Below are examples and code snippets demonstrating how to disable the Rich Text Editor by setting the `enabled` property to `false`.
+Below are examples and code snippets demonstrating how to disable the Rich Text Editor by setting the `Enabled` property to `false`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,6 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 
 ### See Also
 

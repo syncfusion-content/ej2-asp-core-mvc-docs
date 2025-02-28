@@ -10,7 +10,7 @@ documentation: ug
 
 # Toolbar in ##Platform_Name## Rich Text Editor Control
 
-The Syncfusion ASP.NET COre Rich Text Editor control provides a versatile and powerful toolbar to enhance your text editing experience. The toolbar contains a variety of formatting, styling, and editing tools, allowing users to create and modify content efficiently.
+The Syncfusion ASP.NET Core Rich Text Editor control provides a versatile and powerful toolbar to enhance your text editing experience. The toolbar contains a variety of formatting, styling, and editing tools, allowing users to create and modify content efficiently.
 
 ## Tools
 
@@ -390,5 +390,6 @@ The below sample demonstrates the option to insert the image to the Rich Text Ed
 
 ## See Also
 
-* [How to render the toolbar in inline mode](./inline-mode/)
-* [Set line spacing using custom toolbar item](https://www.syncfusion.com/forums/173334/set-line-spacing)
+* [Customizing Rich Text Editor Toolbar Styles](./style#customizing-the-rich-text-editors-toolbar)
+* [Implementing Inline Editing](./inline-editing)
+* [Customizing Accessibility Shortcut Keys](./accessibility#keyboard-interaction)

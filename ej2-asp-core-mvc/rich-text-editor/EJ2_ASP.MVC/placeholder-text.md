@@ -10,7 +10,7 @@ documentation: ug
 
 # Placeholder in ##Platform_Name## Rich Text Editor Control
 
-Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Placeholder) property.
+Specifies the placeholder for the Rich Text Editor’s content used when the editor's content area is empty through the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_Placeholder) property.
 
 You can customize the appearance of the placeholder text by targeting the `e-rte-placeholder` class in your CSS. This allows you to modify properties such as font family, color, and other styles.
 
@@ -22,7 +22,7 @@ You can customize the appearance of the placeholder text by targeting the `e-rte
 
 ```
 
-The below sample demonstrates the `placeholder` option in Rich Text Editor.
+The below sample demonstrates the `Placeholder` option in Rich Text Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
