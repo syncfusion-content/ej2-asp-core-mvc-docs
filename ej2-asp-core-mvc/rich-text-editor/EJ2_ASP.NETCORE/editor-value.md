@@ -344,3 +344,7 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
 }
 
 ```
+
+## See Also
+
+* [Implementing Prevention of cross-site scripting (XSS)](./prevent-cross-site-scripting)

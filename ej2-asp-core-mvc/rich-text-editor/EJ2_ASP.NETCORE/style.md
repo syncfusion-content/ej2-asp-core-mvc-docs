@@ -8,14 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Style Appearance Customization in the ##Platform_Name## Rich Text Editor Control
 
-# CSS structures
+The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
-The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
+## Customizing Rich Text Editor Content
 
-## Customizing the Rich Text Editor's content
-
-Use the following CSS to customize the default Rich Text Editor's content properties like font-family, font-size and color.
+Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
 
 ```CSS
 /* To change font family and font size */
@@ -33,9 +32,10 @@ Use the following CSS to customize the default Rich Text Editor's content proper
 }
 ```
 
-## Customizing the Rich Text Editor's toolbar
+## Customizing Rich Text Editor Toolbar
 
 Use the following CSS to customize the default color in the Rich Text Editor's toolbar icon.
+
 
 ```CSS
 /* To change font color for toolbar icon */
@@ -77,4 +77,17 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
     padding-bottom: 2px;
     padding-right: 14px;
 }
+```
+
+## Customizing Border Color
+
+Use the following CSS to customize the border color in the Rich Text Editor's container.
+
+```CSS
+
+.e-richtexteditor .e-rte-container{
+    border: 2px solid #454bc1;
+    border-radius: 4px;
+}
+
 ```

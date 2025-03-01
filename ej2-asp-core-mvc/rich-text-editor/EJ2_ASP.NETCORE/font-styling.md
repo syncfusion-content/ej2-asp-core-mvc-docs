@@ -234,3 +234,9 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+## See Also
+
+* [Applying Basic Text Formatting in Rich Text Editor](./basic-text-styling)
+* [Implementing Headings and Text Hierarchy in Rich Text Editor](./headings)

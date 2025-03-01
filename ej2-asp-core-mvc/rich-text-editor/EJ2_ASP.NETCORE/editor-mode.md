@@ -46,7 +46,7 @@ The HTML editing mode is the default mode of Rich Text Editor. Which is used for
 
 ## Markdown Editor
 
-Set the [editorMode](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/#editormode) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
+Set the [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
 
 The third-party library such as [`Marked`](https://marked.js.org/#/README.md#README.md) or any other library is used to convert markdown into HTML content.
 

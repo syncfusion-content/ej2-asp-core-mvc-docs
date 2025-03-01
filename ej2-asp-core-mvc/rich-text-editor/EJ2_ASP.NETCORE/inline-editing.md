@@ -47,8 +47,3 @@ This feature enhances the inline editing experience by providing immediate acces
 
 ![Rich Text Editor InlineMode](../images/inline.png)
 
-## See Also
-
-* [How to edit the quick toolbar settings](./toolbar/#quick-inline-toolbar)
-* [How to insert link editing option in the toolbar items](./link/#insert-link)
-* [How to insert image editing option in the toolbar items](./image/#upload-options)
