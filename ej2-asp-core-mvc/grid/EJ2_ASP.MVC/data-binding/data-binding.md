@@ -14,7 +14,7 @@ Data binding is a fundamental technique that empowers the Syncfusion ASP.NET MVC
 
 The Syncfusion Syncfusion ASP.NET MVC Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a **DataManager** instance or a collection of JavaScript object arrays.
 
-It supports two kinds of data binding methods:
+It supports following data binding methods:
 
 * List binding
 * DataTable binding
