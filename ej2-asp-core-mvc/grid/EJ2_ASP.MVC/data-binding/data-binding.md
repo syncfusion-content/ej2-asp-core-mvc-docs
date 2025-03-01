@@ -12,7 +12,7 @@ documentation: ug
 
 Data binding is a fundamental technique that empowers the Syncfusion ASP.NET MVC Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The Syncfusion Syncfusion ASP.NET MVC Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a **DataManager** instance or a collection of JavaScript object arrays.
+The Syncfusion ASP.NET MVC Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a **DataManager** instance or a collection of JavaScript object arrays.
 
 It supports following data binding methods:
 
@@ -46,11 +46,11 @@ The following example demonstrates how to set the `LoadingIndicator.IndicatorTyp
 
 Refreshing the data source in a Syncfusion ASP.NET MVC Grid involves updating the data that the Grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
 
-To achieve this, you can make use of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the Syncfusion ASP.NET MVC Grid reflects the changes in the data source without requiring a complete page or component reload.
+To achieve this, you can make use of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the Grid reflects the changes in the data source without requiring a complete page or component reload.
 
 For example, if you add or delete data source records, follow these steps:
 
-**Step 1**: Add/delete the datasource record by using the following code.
+**Step 1**: Add/delete the data source record by using the following code.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -58,7 +58,7 @@ For example, if you add or delete data source records, follow these steps:
     grid.dataSource.splice(selectedRow, 1); // Delete a record.
 ```
 
-**Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
+**Step 2**:  Refresh the data source after changes by invoking the `setProperties` method.
 
 ```typescript
    grid.setProperties({ dataSource:  grid.dataSource});
@@ -78,15 +78,15 @@ The following example demonstrates adding a new record to the data source throug
 
 ## Dynamically change the datasource or columns or both
 
-The Syncfusion ASP.NET MVC Grid allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Syncfusion content and structure without requiring a complete page reload.
+The Syncfusion ASP.NET MVC Grid allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid's content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the Syncfusion ASP.NET MVC Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, Grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
 To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
 
-You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a data source for the Grid.
+You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a data source for the Grid.
 
 ```typescript
     export let data= [
@@ -104,7 +104,7 @@ You can assign a JavaScript object array to the [DataSource](https://help.syncfu
     }];
 ```
 
-The following code demonstrates how to create the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) for the Syncfusion ASP.NET MVC Grid, which are based on the provided Grid data source.
+The following code demonstrates how to create the [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) for the Grid, which are based on the provided Grid data source.
 
 ```typescript
     newColumn= [
@@ -122,9 +122,9 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify the existing columns in a Syncfusion ASP.NET MVC Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
+To modify the existing columns in a Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
 
-The following code demonstrates how to add new columns with existing Syncfusion ASP.NET MVC Grid columns ('newColumn') by using `changeDataSource` method.
+The following code demonstrates how to add new columns with existing Grid columns ('newColumn') by using `changeDataSource` method.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -140,7 +140,7 @@ The following code demonstrates how to add new columns with existing Syncfusion 
 
 You can change the entire data source in the Syncfusion ASP.NET MVC Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
 
-You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET MVC Grid. The code below provides an example of how to create a new data source for the Grid.
+You can assign a JavaScript object array to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a new data source for the Grid.
 
 ```typescript
      export let employeeData = [
@@ -158,7 +158,7 @@ You can assign a JavaScript object array to the [DataSource](https://help.syncfu
     }];
 ```
 
-The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the Syncfusion ASP.NET MVC Grid.
+The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the Grid.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
