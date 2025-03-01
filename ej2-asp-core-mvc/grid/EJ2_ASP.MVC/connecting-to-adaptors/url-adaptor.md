@@ -421,10 +421,10 @@ To insert a new record, utilize the `InsertUrl` property to specify the controll
 
 ```cs
 
-/// <summary>
-/// Inserts a new data item into the data collection.
-/// </summary>
-/// <returns>Returns void.</returns>
+      /// <summary>
+      /// Inserts a new data item into the data collection.
+      /// </summary>
+      /// <returns>Returns void.</returns>
       public ActionResult Insert(Orders value)
       {
           if (value != null)
@@ -451,7 +451,6 @@ For updating existing records, utilize the `UpdateUrl` property to specify the c
 /// Update a existing data item from the data collection.
 /// </summary>
 /// <returns>Returns void.</returns>
-
 [HttpPost]
 public ActionResult Update(Orders value)
 {
