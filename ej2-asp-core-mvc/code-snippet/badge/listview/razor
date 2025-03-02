@@ -10,13 +10,12 @@
 "        </div>";
 }
 
-    <div class="col-lg-12 control-section">
-
-        <div class="sample_container badge-list">
-            <!-- Listview element -->
-            @Html.EJS().ListView("lists").Enable(true).DataSource((IEnumerable<object>)ViewBag.dataSource).HeaderTitle("Inbox").ShowHeader(true).Template(template).ActionComplete("actionComplete").Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy = "type" }).Render()
-        </div>
+<div class="col-lg-12 control-section">
+    <div class="sample_container badge-list">
+        <!-- Listview element -->
+        @Html.EJS().ListView("lists").Enable(true).DataSource((IEnumerable<object>)ViewBag.dataSource).HeaderTitle("Inbox").ShowHeader(true).Template(template).ActionComplete("actionComplete").Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy = "type" }).Render()
     </div>
+</div>
 
 
 
@@ -42,12 +41,12 @@
         border: 1px solid rgba(0, 0, 0, 0.12)
     }
 
-        #lists .e-list-item {
-            cursor: pointer;
-            height: 50px;
-            line-height: 48px;
-            border: 0;
-        }
+    #lists .e-list-item {
+        cursor: pointer;
+        height: 50px;
+        line-height: 48px;
+        border: 0;
+    }
 
     /* SVG Icons and Customization */
 
