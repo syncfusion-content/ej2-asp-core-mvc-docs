@@ -1,7 +1,11 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
-@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Click").Click("clickHandler").Render()
+@Html.EJS().Button("btnClick1").CssClass("e-primary").Content("Rectangle").Click("clickHandler1").Render()
+@Html.EJS().Button("btnClick2").CssClass("e-primary").Content("Ellipse").Click("clickHandler2").Render()
+@Html.EJS().Button("btnClick3").CssClass("e-primary").Content("Line").Click("clickHandler3").Render()
+@Html.EJS().Button("btnClick4").CssClass("e-primary").Content("Arrow").Click("clickHandler4").Render()
+@Html.EJS().Button("btnClick5").CssClass("e-primary").Content("Path").Click("clickHandler5").Render()
 
 <script>
     function created() {
@@ -13,13 +17,34 @@
         }
     }
 
-    function clickHandler() {
+    function clickHandler1() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         var dimension = imgObj.getImageDimension();
-        imgObj.drawRectangle(dimension.x + 10, dimension.y + 60, 150, 70, null, '', '', null, null, 8);
+        imgObj.drawRectangle(dimension.x + 10, dimension.y + 60, 150, 70);
+        imgObj.drawRectangle(dimension.x + 250, dimension.y + 60, 150, 70, null, '', '', null, null, 8);
+    }
+
+    function clickHandler2() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var dimension = imgObj.getImageDimension();
         imgObj.drawEllipse(dimension.x, dimension.y + 200);
+    }
+
+    function clickHandler3() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var dimension = imgObj.getImageDimension();
         imgObj.drawLine(dimension.x + 300, dimension.y + 30);
-        imgObj.drawArrow(dimension.x + 100, dimension.y + 30, dimension.x + 100, dimension.y + 10, 10);
+    }
+
+    function clickHandler4() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var dimension = imgObj.getImageDimension();
+        imgObj.drawArrow(dimension.x + 150, dimension.y + 150, dimension.x + 300, dimension.y + 150, 10);
+    }
+
+    function clickHandler5() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var dimension = imgObj.getImageDimension();
         imgObj.drawPath([{ x: dimension.x, y: dimension.y }, { x: dimension.x + 50, y: dimension.y + 50 }, { x: dimension.x + 20, y: dimension.y + 50 }], 8);
     }
 </script>

@@ -1,9 +1,15 @@
+@using Syncfusion.EJ2.ImageEditor
 @{
     var imageTool = new string[] { };
+    var zoomSettings = new ImageEditorZoomSettings
+    {
+        MaxZoomFactor = 30,
+        MinZoomFactor = 0.1
+    };
 }
 
 <div class="col-lg-12 control-section e-img-editor-sample">
-    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
+    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool" zoomSettings="@zoomSettings"></ejs-imageeditor>
 </div>
 <ejs-button id="zoomInClick" onclick="zoomInClick()" cssClass="e-primary" content="Zoom In"></ejs-button>
 <ejs-button id="zoomOutClick" onclick="zoomOutClick()" cssClass="e-primary" content="Zoom Out"></ejs-button>
