@@ -122,7 +122,7 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify the existing columns in a Syncfusion ASP.NET Core Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
+To modify the existing columns in a Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
 
 The following code demonstrates how to add new columns with existing Grid columns ('newColumn') by using `changeDataSource` method.
 
@@ -140,7 +140,7 @@ The following code demonstrates how to add new columns with existing Grid column
 
 You can change the entire data source in the Syncfusion ASP.NET Core Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
 
-You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET Core Grid. The code below provides an example of how to create a new data source for the Grid.
+You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a new data source for the Grid.
 
 ```typescript
      export let employeeData = [
@@ -158,7 +158,7 @@ You can assign a JavaScript object array to the [dataSource](https://help.syncfu
     }];
 ```
 
-The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the Syncfusion ASP.NET Core Grid.
+The following code demonstrates, how to use the `changeDataSource` method to bind the new **employeeData** to the Grid.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
