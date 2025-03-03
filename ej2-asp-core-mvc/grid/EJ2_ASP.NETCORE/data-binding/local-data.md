@@ -1032,7 +1032,7 @@ N> Perform data and CRUD operations for complex ExpandoObject binding fields as 
 
 ## DynamicObject binding
 
-The Syncfusion ASP.NET Core Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
+The Syncfusion ASP.NET Core Grid is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
 To bind an `ExpandoObject` to the Grid, you need to assign it to the `dataSource` property. This enables the Grid to perform various supported data operations and editing on the DynamicObject.
 
