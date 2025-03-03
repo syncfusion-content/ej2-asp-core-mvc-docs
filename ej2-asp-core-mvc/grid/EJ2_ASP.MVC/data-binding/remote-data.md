@@ -660,7 +660,7 @@ The following code example demonstrates how to export all records on the client 
 
 ## Sending additional parameters to the server
 
-The Syncfusion ASP.NET MVC Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+The Syncfusion ASP.NET MVC Grid allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
 
 By utilizing the `Query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
 
