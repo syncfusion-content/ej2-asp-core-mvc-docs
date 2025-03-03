@@ -12,7 +12,7 @@ documentation: ug
 
 Data binding is a fundamental technique that empowers the Syncfusion ASP.NET MVC Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The Syncfusion Syncfusion ASP.NET MVC Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a **DataManager** instance or a collection of JavaScript object arrays.
+The Syncfusion ASP.NET MVC Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a **DataManager** instance or a collection of JavaScript object arrays.
 
 It supports two kinds of data binding methods:
 
@@ -46,11 +46,11 @@ The following example demonstrates how to set the `LoadingIndicator.IndicatorTyp
 
 Refreshing the data source in a Syncfusion ASP.NET MVC Grid involves updating the data that the Grid displays dynamically. This operation is essential when you need to reflect changes in the underlying data without reloading the entire page or component.
 
-To achieve this, you can make use of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the Syncfusion ASP.NET MVC Grid reflects the changes in the data source without requiring a complete page or component reload.
+To achieve this, you can make use of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property in conjunction with the `setProperties` method. This ensures that the Grid reflects the changes in the data source without requiring a complete page or component reload.
 
 For example, if you add or delete data source records, follow these steps:
 
-**Step 1**: Add/delete the datasource record by using the following code.
+**Step 1**: Add/delete the data source record by using the following code.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -58,7 +58,7 @@ For example, if you add or delete data source records, follow these steps:
     grid.dataSource.splice(selectedRow, 1); // Delete a record.
 ```
 
-**Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
+**Step 2**:  Refresh the data source after changes by invoking the `setProperties` method.
 
 ```typescript
    grid.setProperties({ dataSource:  grid.dataSource});
@@ -181,11 +181,11 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 
 ## DataTable
 
-The DataTable feature represents a structured table with relational data, equipped with an in-built schema that simplifies working with data column and row objects. This allows for a more intuitive way to manage and display complex data in the Syncfusion Syncfusion ASP.NET MVC Grid.
+The DataTable feature represents a structured table with relational data, equipped with an in-built schema that simplifies working with data column and row objects. This allows for a more intuitive way to manage and display complex data in the Syncfusion ASP.NET MVC Grid.
 
-To bind a DataTable to the Syncfusion Syncfusion ASP.NET MVC Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, Grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
+To bind a DataTable to the Syncfusion ASP.NET MVC Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, Grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
 
-Here's how to bind a `DataTable` to the Syncfusion Syncfusion ASP.NET MVC Grid:
+Here's how to bind a `DataTable` to the Syncfusion ASP.NET MVC Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -200,7 +200,7 @@ N> `DataTable` will be supported from .Net Core 2.0.
 
 ### DataTable with on-demand Grid actions
 
-The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion Syncfusion ASP.NET MVC Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
+The [On-Demand Grid Actions](#handling-on-demand-grid-actions/) feature in Syncfusion ASP.NET MVC Grid enables server-side processing of Grid actions, such as sorting, filtering, grouping, and paging. This is especially useful for applications with large datasets, where client-side operations can impact performance.
 
 To implement on-demand server-side actions with a DataTable, you need to:
 

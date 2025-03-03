@@ -50,7 +50,7 @@ To achieve this, you can make use of the [dataSource](https://help.syncfusion.co
 
 For example, if you add or delete data source records, follow these steps:
 
-**Step 1**: Add/delete the datasource record by using the following code.
+**Step 1**: Add/delete the data source record by using the following code.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
@@ -58,7 +58,7 @@ For example, if you add or delete data source records, follow these steps:
     grid.dataSource.splice(selectedRow, 1); // Delete a record.
 ```
 
-**Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
+**Step 2**:  Refresh the data source after changes by invoking the `setProperties` method.
 
 ```typescript
    grid.setProperties({ dataSource:  grid.dataSource});
@@ -80,7 +80,7 @@ The following example demonstrates adding a new record to the data source throug
 
 The Syncfusion ASP.NET Core Grid allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the Syncfusion ASP.NET Core Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
@@ -124,7 +124,7 @@ The following code demonstrates updating the data source and columns defined abo
 
 To modify the existing columns in a Syncfusion ASP.NET Core Grid, you can either add or remove columns or change the entire set of columns using the `changeDataSource` method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
 
-The following code demonstrates how to add new columns with existing Syncfusion ASP.NET Core Grid columns ('newColumn') by using `changeDataSource` method.
+The following code demonstrates how to add new columns with existing Grid columns ('newColumn') by using `changeDataSource` method.
 
 ```typescript
     var grid = document.getElementById("grid").ej2_instances[0];
