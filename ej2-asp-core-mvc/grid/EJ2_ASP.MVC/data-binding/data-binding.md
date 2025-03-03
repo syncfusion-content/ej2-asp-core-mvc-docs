@@ -36,7 +36,7 @@ The following example demonstrates how to set the `LoadingIndicator.IndicatorTyp
 {% include code-snippet/grid/data-binding/animation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Indicator" %}
-{% include code-snippet/grid/data-binding/animation/animationcore.cs %}
+{% include code-snippet/grid/data-binding/animation/animation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,7 +70,7 @@ The following example demonstrates adding a new record to the data source throug
 {% include code-snippet/grid/data-binding/databinding-refresh/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Databind.cs" %}
-{% include code-snippet/grid/data-binding/databinding-refresh/databindcore.cs %}
+{% include code-snippet/grid/data-binding/databinding-refresh/databind.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,7 +170,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 {% include code-snippet/grid/data-binding/databinding-change-datasource/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Databind.cs" %}
-{% include code-snippet/grid/data-binding/databinding-change-datasource/databindcore.cs %}
+{% include code-snippet/grid/data-binding/databinding-change-datasource/databind.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -192,7 +192,7 @@ Here's how to bind a `DataTable` to the Grid:
 {% include code-snippet/grid/data-binding/datatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Datatable.cs" %}
-{% include code-snippet/grid/data-binding/datatable/datatablecore.cs %}
+{% include code-snippet/grid/data-binding/datatable/datatable.cs %}
 {% endhighlight %}
 {% endtabs %}
 

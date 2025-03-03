@@ -897,7 +897,7 @@ The following sample demonstrates ExpandoObject binding:
 
 ## ExpandoObject with complex column binding
 
-You can achieve complex data binding with ExpandoObject in the Syncfusion ASP.NET Core Grid by using the dot (.) operator in the `Column.Field` property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
+You can achieve complex data binding with ExpandoObject in the Syncfusion ASP.NET MVC Grid by using the dot (.) operator in the `Column.Field` property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
 
 In the following example, the fields **Customer.CustomerID**, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** represent complex data that is bound to the Grid:
 
