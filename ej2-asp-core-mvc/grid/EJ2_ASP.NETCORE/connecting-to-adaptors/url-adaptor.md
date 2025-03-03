@@ -410,7 +410,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 ## Handling Paging Operation
 
-To handle paging operation, configure your API endpoint to support custom sorting criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, configure your API endpoint to support custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
 ![UrlAdaptor paging](../images/adaptors/url-adaptors/url-adaptor-paging.png)
 
