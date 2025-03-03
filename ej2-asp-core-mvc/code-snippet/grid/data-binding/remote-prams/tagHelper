@@ -15,9 +15,11 @@
     const query = new ej.data.Query().addParams('Syncfusion_Grid', 'true')
     var gridData;
     var state = { skip: 0, take: 12, query: query };
+
     function created() {
         dataStateChange(state)
     }
+
     function dataStateChange(state) {
         const grid = document.getElementById("grid").ej2_instances[0];
         const query = grid.getDataModule().generateQuery();
@@ -25,6 +27,7 @@
             grid.dataSource = gridData.result; // Assign the result to the dataSource property.
         });
     }
+
     function getOrders(state, action) {
         const query = new ej.data.Query();
         applyPaging(query, state)
@@ -51,6 +54,7 @@
             });
 
     }
+    
     const applyPaging = (query, state) => {
         // Check if both 'take' and 'skip' values are available.
         if (state.take && state.skip) {
