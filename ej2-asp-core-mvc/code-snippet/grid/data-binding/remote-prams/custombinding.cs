@@ -4,6 +4,7 @@ public class HomeController : Controller
     {
         return View();
     }
+    
     public ActionResult GetOrderData()
     {
         IEnumerable<OrdersDetails> dataSource = OrdersDetails.GetAllRecords();

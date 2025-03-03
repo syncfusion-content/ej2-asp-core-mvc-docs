@@ -6,6 +6,7 @@ public class IndexModel : PageModel
     {
         _logger = logger;
     }
+    
     public JsonResult OnPostGetOrderData()
     {
         IEnumerable<OrdersDetails> dataSource = OrdersDetails.GetAllRecords();
