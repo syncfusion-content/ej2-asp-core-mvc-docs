@@ -80,7 +80,7 @@ The following example demonstrates adding a new record to the data source throug
 
 The Syncfusion ASP.NET MVC Grid allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the Grid's content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, Grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, you can utilize the `changeDataSource` method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, Grid existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset.The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
