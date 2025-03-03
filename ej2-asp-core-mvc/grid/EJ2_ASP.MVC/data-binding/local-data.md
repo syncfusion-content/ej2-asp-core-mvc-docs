@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Local data in Syncfusion ASP.NET MVC Grid component
+# Local data in Syncfusion ASP.NET MVC Grid
 
 The Syncfusion ASP.NET MVC Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
 To achieve this, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. Additionally, you have an option to provide the local data source using an instance of the **DataManager**.
 
-The following example demonstrates how to utilize the local data binding feature in the Syncfusion ASP.NET MVC Grid:
+The following example demonstrates how to utilize the local data binding feature in the Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -31,7 +31,7 @@ The following example demonstrates how to utilize the local data binding feature
 
 The Syncfusion ASP.NET MVC Grid provides support for real-time data binding using SignalR, allowing you to update the Grid automatically as data changes on the server-side. This feature is particularly useful for applications requiring live updates and synchronization across multiple clients.
 
-To achieve real-time data binding with SignalR in your Syncfusion ASP.NET MVC Grid, follow the steps below:
+To achieve real-time data binding with SignalR in your Grid, follow the steps below:
 
 **Step 1:** To create a new ASP.NET Web Application(.NET Framework) project named SignalR, follow these steps:
 
@@ -41,7 +41,7 @@ To achieve real-time data binding with SignalR in your Syncfusion ASP.NET MVC Gr
 * Name the project **SignalR**.
 * Click “Create”
 
-**Step 2:**  Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
 **Step 3:**  Create a controller on the server-side to manage data operations such as fetching, updating, inserting, and deleting records. You can create a **HomeController.cs** file under the **Controllers** folder. Add the following code to define methods for sending data updates to clients:
 
@@ -213,7 +213,7 @@ namespace SignalR.Models
 
 ```
 
-**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure Syncfusion ASP.NET MVC Grid data binding in the **Views/Home/Index.cshtml** file:
+**Step 5:** In your client-side code, establish a connection to the SignalR hub and configure Grid data binding in the **Views/Home/Index.cshtml** file:
 
 ```ts
 @Html.EJS().Grid("grid").Height("248px").DataSource(ds => ds.Url(@Url.Action("UrlDatasource", "Home")).InsertUrl(@Url.Action("Insert", "Home")).UpdateUrl("/Home/Update").RemoveUrl(@Url.Action("Delete", "Home")).Adaptor("UrlAdaptor")).Columns(col =>
@@ -324,13 +324,13 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 The Syncfusion ASP.NET MVC Grid allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
 
-To import excel data in to Syncfusion ASP.NET MVC Grid, you can follow these steps:
+To import excel data in to Grid, you can follow these steps:
 
 1. Import excel file using Uploader. 
 2. Parse the excel file data using **XLSX** library.
 3. Bind the JSON to the Grid. 
 
-The following example demonstrates how to import Excel data into the Syncfusion ASP.NET MVC Grid by utilizing the **Uploader** `Change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the Grid by utilizing the **Uploader** `Change` event along with the **XLSX** library:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -347,7 +347,7 @@ The following example demonstrates how to import Excel data into the Syncfusion 
 
 The Syncfusion ASP.NET MVC Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
 
-To achieve data binding and perform CRUD actions using Fetch requests in the Syncfusion ASP.NET MVC Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Fetch requests in the Grid, follow these steps:
 
 **Step 1:** To create a new ASP.NET Web Application(.NET Framework) project named FetchRequest, follow these steps:
 
@@ -357,15 +357,15 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Syn
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
-A. To bind data from an external Fetch request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Syncfusion ASP.NET MVC Grid. Fetch data from the server and provide it to the `DataSource` property using the `onSuccess` event of the Fetch request.
+A. To bind data from an external Fetch request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. Fetch data from the server and provide it to the `DataSource` property using the `onSuccess` event of the Fetch request.
 
 B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
-C. In the Fetch success event, you have the flexibility to utilize the Syncfusion ASP.NET MVC Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) and Fetch failure events: The following code snippet demonstrates this approach:
+C. In the Fetch success event, you have the flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) and Fetch failure events: The following code snippet demonstrates this approach:
 
 ```ts
 <div style="padding: 10px 0px 20px 0px">
@@ -456,7 +456,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Syncfusio
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Syncfusion ASP.NET MVC Grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a Fetch request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using System;
@@ -577,7 +577,7 @@ The Syncfusion ASP.NET MVC Grid allows you to display a loading indicator while 
 
 To display the loading indicator with local data, you need to set the `ShowSpinner` property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion ASP.NET MVC Grid using the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) events:
+The following example demonstrates how to display the loading indicator in the Grid using the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) events:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -592,7 +592,7 @@ The following example demonstrates how to display the loading indicator in the S
 
 The Syncfusion ASP.NET MVC Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Syncfusion ASP.NET MVC Grid, follow these steps:
+To achieve data binding and perform CRUD actions using Ajax requests in the Grid, follow these steps:
 
 **Step 1:** To create a new ASP.NET Web Application(.NET Framework) project named AJAXRequest, follow these steps:
 
@@ -602,15 +602,15 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Sync
 * Name the project **AJAXRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
-A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Syncfusion ASP.NET MVC Grid. AJAX data from the server and provide it to the `DataSource` property using the `onSuccess` event of the AJAX request.
+A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. AJAX data from the server and provide it to the `DataSource` property using the `onSuccess` event of the AJAX request.
 
 B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
-C. In the AJAX success event, you have the flexibility to utilize the Syncfusion ASP.NET MVC Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `ActionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
+C. In the AJAX success event, you have the flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `ActionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
 
 ```ts
 
@@ -702,7 +702,7 @@ C. In the AJAX success event, you have the flexibility to utilize the Syncfusion
 
 ```
 
-**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Syncfusion ASP.NET MVC Grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
+**Step 7:** In the **HomeController.cs** file under the **Controllers** folder, there is a method named GetData within the HomeController that provides the data source for the Grid. When the button is clicked, a AJAX request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
 
 ```cs
 using System;
@@ -823,7 +823,7 @@ The Syncfusion ASP.NET MVC Grid allows you to display a loading indicator while 
 
 To display the loading indicator with local data, you need to set the `ShowSpinner` property to **true**. This property controls the visibility of the loading indicator.
 
-The following example demonstrates how to display the loading indicator in the Syncfusion ASP.NET MVC Grid using the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) events:
+The following example demonstrates how to display the loading indicator in the Grid using the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) and [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) events:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -838,9 +838,9 @@ The following example demonstrates how to display the loading indicator in the S
 
 Showing a spinner during data loading in the Syncfusion ASP.NET MVC Grid enhances the experience by providing a visual indication of the loading progress. This feature helps to understand that data is being fetched or processed.
 
-To show or hide a spinner during data loading in the Syncfusion ASP.NET MVC Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid.
+To show or hide a spinner during data loading in the Grid, you can utilize the `showSpinner` and `hideSpinner` methods provided by the Grid.
 
-The following example demonstrates how to show and hide the spinner during data loading using external buttons in a Syncfusion ASP.NET MVC Grid:
+The following example demonstrates how to show and hide the spinner during data loading using external buttons in a Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -859,7 +859,7 @@ Immutable mode in the Syncfusion ASP.NET MVC Grid is designed to optimize re-ren
 
 To enable this feature, you need to set the [EnableImmutableMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 
-If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the Syncfusion ASP.NET MVC Grid [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) and [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) events trigger only for newly generated rows, not for existing rows. 
+If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the  Grid [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) and [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) events trigger only for newly generated rows, not for existing rows. 
 
 If immutable mode is not enabled, both newly added rows and existing rows are regenerated or reused when the datasource changes. As a result, the `RowDataBound` and `QueryCellInfo` events trigger for both newly added and existing rows. 
 
@@ -882,7 +882,7 @@ The following example demonstrates how to enable immutable mode in an ASP.NET MV
 
 The Syncfusion ASP.NET MVC Grid is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
-To bind an `ExpandoObject` to the Syncfusion ASP.NET MVC Grid, you need to assign it to the `DataSource` property. The Grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
+To bind an `ExpandoObject` to the Grid, you need to assign it to the `DataSource` property. The Grid supports various data operations such as sorting, filtering, and editing when using `ExpandoObject`.
 
 The following sample demonstrates ExpandoObject binding:
 
@@ -897,9 +897,9 @@ The following sample demonstrates ExpandoObject binding:
 
 ## ExpandoObject with complex column binding
 
-You can achieve complex data binding with ExpandoObject in the Syncfusion ASP.NET MVC Grid by using the dot (.) operator in the column.field property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
+You can achieve complex data binding with ExpandoObject in the Syncfusion ASP.NET Core Grid by using the dot (.) operator in the `Column.Field` property. This feature allows you to access and bind to nested properties within the ExpandoObject, enabling more structured data representation in the Grid.
 
-In the following example, the fields **Customer.CustomerID**, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** represent complex data that is bound to the Syncfusion ASP.NET MVC Grid:
+In the following example, the fields **Customer.CustomerID**, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** represent complex data that is bound to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -916,11 +916,11 @@ N> Perform data and CRUD operations for complex ExpandoObject binding fields as 
 
 The Syncfusion ASP.NET MVC Grid component is typically bound to a specific model type. However, there are scenarios where the model type is unknown during compile time. In such cases, you can bind data to the Grid using a list of ExpandoObject. This allows for dynamic data structures that can adapt to various data shapes without a predefined schema.
 
-To bind an `ExpandoObject` to the Syncfusion ASP.NET MVC Grid, you need to assign it to the `DataSource` property. This enables the Grid to perform various supported data operations and editing on the DynamicObject.
+To bind an `ExpandoObject` to the Grid, you need to assign it to the `DataSource` property. This enables the Grid to perform various supported data operations and editing on the DynamicObject.
 
 N> You must override the [GetDynamicMemberNames](https://learn.microsoft.com/en-us/dotnet/api/system.dynamic.dynamicobject.getdynamicmembernames?view=netcore-3.1) method of the DynamicObject class and return the property names to perform data operation and editing while using DynamicObject.
 
-Here's an example of how to bind a list of DynamicObject to the Syncfusion ASP.NET MVC Grid:
+Here's an example of how to bind a list of DynamicObject to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -933,9 +933,9 @@ Here's an example of how to bind a list of DynamicObject to the Syncfusion ASP.N
 
 ## DynamicObject with complex column binding
 
-You can achieve complex data binding with DynamicObject in the Syncfusion ASP.NET MVC Grid by using the dot (.) operator in the column.field property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the Grid.
+You can achieve complex data binding with DynamicObject in the Syncfusion ASP.NET MVC Grid by using the dot (.) operator in the `Column.Field` property. This allows you to access and bind to nested properties within the DynamicObject, enabling the display of structured data in the Grid.
 
-In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the Syncfusion ASP.NET MVC Grid:
+In the following example, **Customer.OrderDate**, **Customer.Freight**, and **Customer.ShipCountry** are considered complex data fields that are bound to the Grid:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data binding in Syncfusion ASP.NET Core Grid component
+# Data binding in Syncfusion ASP.NET Core Grid
 
 Data binding is a fundamental technique that empowers the Syncfusion ASP.NET Core Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The Syncfusion ASP.NET Core Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
+The Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
 It supports two kinds of data binding methods:
 
@@ -24,7 +24,7 @@ It supports two kinds of data binding methods:
 
 The Syncfusion ASP.NET Core Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the Grid current state and actions, such as sorting, filtering, grouping, and more.
 
-To achieve this, you can utilize the `loadingIndicator.indicatorType` property of the Syncfusion ASP.NET Core Grid, which supports two types of indicators:
+To achieve this, you can utilize the `loadingIndicator.indicatorType` property of the Grid, which supports two types of indicators:
 
 * Spinner (default indicator)
 * Shimmer
@@ -86,7 +86,7 @@ To achieve dynamic changes, you can utilize the `changeDataSource` method. This 
 
 To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
 
-You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Syncfusion ASP.NET Core Grid. The code below provides an example of how to create a data source for the Grid.
+You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a data source for the Grid.
 
 ```typescript
     export let data= [
@@ -138,7 +138,7 @@ The following code demonstrates how to add new columns with existing Grid column
 
 **3. Modify only the data source:**
 
-You can change the entire data source in the Syncfusion ASP.NET Core Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
+You can change the entire data source in the Grid using the `changeDataSource` method. To use this method, you should provide the data source as the first argument, and  the second argument which is optional can be used to specify new columns for the Grid. If you are not specifying the columns, the Grid will generate the columns automatically based on the data source. The following example demonstrates how to modify the data source.
 
 You can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind local data to the Grid. The code below provides an example of how to create a new data source for the Grid.
 
@@ -176,16 +176,16 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 
 ![Dynamically change the datasource or columns or both](../images/data-binding/change-datsource.gif)
 
->* The Syncfusion ASP.NET Core Grid state persistence feature does not support the  `changeDataSource` method.
+>* The Grid state persistence feature does not support the  `changeDataSource` method.
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/aspnetcore/grid/flexibledata#/fluent2) resource.
 
 ## DataTable
 
 The DataTable feature represents a structured table with relational data, equipped with an in-built schema that simplifies working with data column and row objects. This allows for a more intuitive way to manage and display complex data in the Syncfusion ASP.NET Core Grid.
 
-To bind a DataTable to the Syncfusion ASP.NET Core Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, Grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
+To bind a DataTable to the Grid, utilize the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. When you bind a DataTable, Grid actions such as Sorting, Filtering, Grouping, and Paging are processed on the client side, enhancing performance and responsiveness.
 
-Here's how to bind a `DataTable` to the Syncfusion ASP.NET Core Grid:
+Here's how to bind a `DataTable` to the Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -227,7 +227,7 @@ To perform server-side CRUD operations for a DataTable, you need to utilize the 
 
 When passing data from the client side to the server side during CRUD operations, use **ExpandoObject** as a parameter for the insert and update actions. This approach allows you to handle dynamic data structures effectively.
 
-Here’s a sample implementation demonstrating how to set up the Syncfusion ASP.NET Core Grid for CRUD operations with a DataTable:
+Here’s a sample implementation demonstrating how to set up the Grid for CRUD operations with a DataTable:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
