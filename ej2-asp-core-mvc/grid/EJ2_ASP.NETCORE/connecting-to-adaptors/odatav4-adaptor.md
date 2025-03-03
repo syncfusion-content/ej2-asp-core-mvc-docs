@@ -283,7 +283,7 @@ builder.Services.AddControllers().AddOData(
         .Filter() 
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
  <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Search"})">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -326,7 +326,7 @@ builder.Services.AddControllers().AddOData(
         .Filter()
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" allowFiltering="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -373,7 +373,7 @@ builder.Services.AddControllers().AddOData(
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" allowSorting="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -428,7 +428,7 @@ builder.Services.AddControllers().AddOData(
         modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" allowPaging="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -453,7 +453,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adapto
 To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below steps:
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -574,7 +574,7 @@ To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use
 The following code example describes the above behavior.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -598,7 +598,7 @@ The following code example describes the above behavior.
 For batch editing, you can specify a custom batch URL as follows:
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
