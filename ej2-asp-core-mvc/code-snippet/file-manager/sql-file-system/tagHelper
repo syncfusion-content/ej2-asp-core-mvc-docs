@@ -3,6 +3,7 @@
         <!--  Initialize File Manager control with SQL file provider-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                     url="http://localhost:{port}/api/SQLProvider/SQLFileOperations",
                     getImageUrl="http://localhost:{port}/api/SQLProvider/SQLGetImage"
                     downloadUrl="http://localhost:{port}/api/SQLProvider/SQLDownload"

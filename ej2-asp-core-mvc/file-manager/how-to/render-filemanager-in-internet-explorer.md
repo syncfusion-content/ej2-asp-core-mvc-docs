@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Render FileManager in Internet Explorer
+# Render File Manager in Internet Explorer
 
 In the Internet Explorer browser, ES6 promise polyfills are required to run the File Manager control. Click this  [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/browser/?no-cache=1) to learn more about the EJ2 controls' browser compatibility.
 
@@ -52,4 +52,4 @@ After adding the script file in the `layout` page, render the File Manager contr
 
 The output will look like the image below.
 
-![FileManager largeicons view](./../images/large_icons.PNG)
+![File Manager largeicons view](./../images/large_icons.PNG)

@@ -11,9 +11,9 @@ documentation: ug
 
 # Multiple Selection in File Manager
 
-The File Manager allows multiple file selection through the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [`fileSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileSelect.html) event will be triggered when the items of File Manager control is selected or unselected.
+The File Manager allows multiple file selection through the `allowMultiSelection`) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The `fileSelect` event will be triggered when the items of File Manager control is selected or unselected.
 
-The example below demonstrates how the File Manager allows multiple file selection using the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property.
+The example below demonstrates how the File Manager allows multiple file selection using the `allowMultiSelection` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ The example below demonstrates how the File Manager allows multiple file selecti
 
 The output will look like the image below.
 
-![FileManager multiselection](./images/detailsview.png)
+![File Manager multiselection](./images/detailsview.png)
 
 ## Range Selection
 
@@ -51,7 +51,7 @@ The File Manager supports selecting files and folders in specific ranges through
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
+To enable range selection, you need to set the `enableRangeSelection` property to `true` and ensure that multi-selection is allowed using the `allowMultiSelection` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,7 +64,7 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
+To enable range selection, you need to set the `enableRangeSelection` property to `true` and ensure that multi-selection is allowed using the `allowMultiSelection` property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -78,4 +78,4 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 
 The output will look like the image below.
 
-![FileManager rangeselection](./images/rangeselection.png)
+![File Manager rangeselection](./images/rangeselection.png)
