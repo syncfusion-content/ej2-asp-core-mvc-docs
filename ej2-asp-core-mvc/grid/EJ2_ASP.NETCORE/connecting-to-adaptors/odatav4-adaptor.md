@@ -11,7 +11,7 @@ documentation: ug
 
 # ODataV4Adaptor in Syncfusion ASP.NET Core Grid 
 
-The `ODataV4Adaptor` in the Syncfusion ASP.NET Core Grid allows seamless integration of the Syncfusion Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET Core Grid.
+The `ODataV4Adaptor` in the Syncfusion ASP.NET Core Grid allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Grid.
 
 ## Creating an OData Service
 
@@ -225,6 +225,7 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="315">
    <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
    <e-grid-columns>
@@ -234,6 +235,7 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
     <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -262,6 +264,7 @@ To enable search operations in your web application using OData, you first need 
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
+
 // Create a new instance of the web application builder.
 var builder = WebApplication.CreateBuilder(args);
 
@@ -280,7 +283,7 @@ builder.Services.AddControllers().AddOData(
         .Filter() 
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
  <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Search"})">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -304,6 +307,7 @@ To enable filter operations in your web application using OData, you first need 
 
 {% tabs %}
 {% highlight cs tabtitle="Program.cs" %}
+
 // Create a new instance of the web application builder.
 var builder = WebApplication.CreateBuilder(args);
 
@@ -322,9 +326,9 @@ builder.Services.AddControllers().AddOData(
         .Filter()
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
- <ejs-grid id="Grid" height="280" allowFiltering="true">
+<ejs-grid id="Grid" height="280" allowFiltering="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
     // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -369,7 +373,7 @@ builder.Services.AddControllers().AddOData(
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" allowSorting="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -424,7 +428,7 @@ builder.Services.AddControllers().AddOData(
         modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" allowPaging="true">
     <e-data-manager url="https://localhost:xxxx/odata/Orders" adaptor="ODataV4Adaptor"></e-data-manager>
@@ -449,7 +453,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adapto
 To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below steps:
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -570,7 +574,8 @@ To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use
 The following code example describes the above behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
    <e-data-manager url="https://localhost:xxxx/odata/Orders"
@@ -586,13 +591,15 @@ The following code example describes the above behavior.
     <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
 For batch editing, you can specify a custom batch URL as follows:
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
    <e-data-manager url="https://localhost:xxxx/odata/Orders" 
@@ -606,5 +613,6 @@ For batch editing, you can specify a custom batch URL as follows:
     <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
