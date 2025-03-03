@@ -6,7 +6,7 @@
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 }).Created("created").Load("load").AllowPaging().Render()
 <script>
-   var isDataLoading =true
+    var isDataLoading =true
     function load() {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (isDataLoading) {

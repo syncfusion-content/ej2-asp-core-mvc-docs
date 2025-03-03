@@ -7,7 +7,7 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-   var isDataLoading =true
+    var isDataLoading =true
     function load() {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (isDataLoading) {

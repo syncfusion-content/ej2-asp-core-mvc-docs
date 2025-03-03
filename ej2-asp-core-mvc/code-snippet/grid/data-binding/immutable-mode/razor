@@ -21,6 +21,7 @@
     function load(){
         document.getElementById("message").innerText = `Initial rows rendered: ${data.length}`;
     }
+    
     function queryCellInfo(args) {
         if ( args.column.field === 'ShipName' && args.data.ShipName === 'Gems Chevalier') {
             args.cell.style.backgroundColor = 'rgb(210, 226, 129)';
