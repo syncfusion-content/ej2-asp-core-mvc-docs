@@ -1,3 +1,1 @@
-<ejs-richtexteditor id="characterCount" showCharCount="true" maxLength="2000" value="@ViewBag.value">
-
-</ejs-richtexteditor>
+<ejs-richtexteditor id="characterCount" showCharCount="true" maxLength="2000" value="ViewBag.value"></ejs-richtexteditor>

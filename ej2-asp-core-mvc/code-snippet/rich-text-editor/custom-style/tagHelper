@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="custom-font">
+<ejs-richtexteditor id="custom-font" value="@ViewBag.value">
     <e-richtexteditor-fontsize default="10 px" width="60px" items="@ViewBag.fontsizeItems">
     </e-richtexteditor-fontsize>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>

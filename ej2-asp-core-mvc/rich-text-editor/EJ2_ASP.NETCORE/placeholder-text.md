@@ -46,3 +46,7 @@ The below sample demonstrates the `placeholder` option in Rich Text Editor.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See Also
+
+* [Customizing the placeholder in Styles](./style#customizing-placeholder-text)

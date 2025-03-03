@@ -1,9 +1,6 @@
 
 <div id="rteSection">
-    @Html.EJS().RichTextEditor("customtool").ContentTemplate(@<div><p>
-    The custom command 'insert special character' is configured as the last item of the toolbar.
-    Click on the command and choose the special character you want to include from the popup.
-</p></div>).Created("created").ToolbarSettings(e => e.Items((object)ViewBag.items)).Render()
+    @Html.EJS().RichTextEditor("customtool").Created("created").ToolbarSettings(e => e.Items((object)ViewBag.items)).Value(ViewBag.value).Render()
 
     @Html.EJS().Dialog("customTbarDialog").Visible(false).Header("Special Characters").Created("onDialogCreate").ZIndex(1000).ShowCloseIcon(false).IsModal(true).cssClass('e-rte-elements').OverlayClick("dialogOverlay").Buttons(e =>
     {

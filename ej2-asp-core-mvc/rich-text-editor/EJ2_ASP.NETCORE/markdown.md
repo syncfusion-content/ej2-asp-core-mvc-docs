@@ -87,6 +87,7 @@ To insert an image in the Markdown editor, follow these steps:
   1. Click the `Insert Image` icon in the toolbar.
   2. Browse and select an image from your local machine by clicking the browse button, or enter an image link from an online source.
   3. Click the Insert button in the image dialog.
+
 The selected image will be added to the editor area.
 
 Please refer to the sample and code snippets below to add the image in the Markdown editor.
@@ -123,6 +124,7 @@ To create a link for a text or an image in the Markdown editor, follow these ste
   1. Click the `Insert` icon in the link dialog.
   2. Enter the link and other relevant information.
   3. Click the **Insert** button to add the link to the editor area.
+
 The link will be added to the editor area.
 
 Please refer to the sample and code snippets below to add the link in the Markdown editor.

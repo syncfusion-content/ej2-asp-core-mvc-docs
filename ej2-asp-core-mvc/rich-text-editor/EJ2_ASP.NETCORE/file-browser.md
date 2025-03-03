@@ -39,4 +39,3 @@ The following example explains how to configure the file browser within the Rich
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
