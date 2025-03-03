@@ -402,11 +402,13 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
             grid.dataSource = data;
         };
     };
+
     function actionComplete(e) {
         if (e.requestType === 'save' || e.requestType === 'delete') {
             flag = false;
         }
     }
+
     function actionBegin(e) {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (!flag) {
@@ -496,11 +498,13 @@ namespace FetchRequest.Pages
         {
 
         }
+
         public ActionResult OnPostGetdata()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
         }
+
         public ActionResult OnPostUpdate([FromBody] CRUDModel<OrdersDetails> value)
         {
             var ord = value.value;
@@ -514,12 +518,14 @@ namespace FetchRequest.Pages
             val.ShipCountry = ord.ShipCountry;
             return new JsonResult(value.value);
         }
+
         //Insert the record.
         public ActionResult OnPostInsert([FromBody] CRUDModel<OrdersDetails> value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value.value);
             return new JsonResult(value.value);
         }
+
         //Delete the record.
         public ActionResult OnPostDelete(int key)
         {
@@ -558,6 +564,7 @@ namespace FetchRequest.Models
         {
 
         }
+
         public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
         {
             this.OrderID = OrderID;
@@ -572,6 +579,7 @@ namespace FetchRequest.Models
             this.ShippedDate = ShippedDate;
             this.ShipAddress = ShipAddress;
         }
+
         public static List<OrdersDetails> GetAllRecords()
         {
             if (order.Count() == 0)
@@ -707,11 +715,13 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
             grid.dataSource = JSON.parse(data);
         };
     };
+
     function actionComplete(e) {
         if (e.requestType === 'save' || e.requestType === 'delete') {
             flag = false;
         }
     }
+
     function actionBegin(e) {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (!flag) {
@@ -801,11 +811,13 @@ namespace AJAXRequest.Pages
         {
 
         }
+
         public ActionResult OnPostGetdata()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
         }
+
         public ActionResult OnPostUpdate([FromBody] CRUDModel<OrdersDetails> value)
         {
             var ord = value.value;
@@ -819,12 +831,14 @@ namespace AJAXRequest.Pages
             val.ShipCountry = ord.ShipCountry;
             return new JsonResult(value.value);
         }
+
         //Insert the record.
         public ActionResult OnPostInsert([FromBody] CRUDModel<OrdersDetails> value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value.value);
             return new JsonResult(value.value);
         }
+
         //Delete the record.
         public ActionResult OnPostDelete(int key)
         {
@@ -832,6 +846,7 @@ namespace AJAXRequest.Pages
             var data = OrdersDetails.GetAllRecords();
             return new JsonResult(data);
         }
+
         public class CRUDModel<T> where T : class
         {
             public string action { get; set; }
@@ -861,6 +876,7 @@ namespace AJAXRequest.Models
         public OrdersDetails()
         {
         }
+
         public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
         {
             this.OrderID = OrderID;
@@ -875,6 +891,7 @@ namespace AJAXRequest.Models
             this.ShippedDate = ShippedDate;
             this.ShipAddress = ShipAddress;
         }
+        
         public static List<OrdersDetails> GetAllRecords()
         {
             if (order.Count() == 0)

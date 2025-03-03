@@ -16,6 +16,7 @@ public ActionResult Index()
     ViewBag.DynamicData = DynamicOrders;
     return View();
 }
+
 public class DynamicList : DynamicObject
 {
     private List<KeyValuePair<string, object>> properties = new List<KeyValuePair<string, object>>();
@@ -35,10 +36,10 @@ public class DynamicList : DynamicObject
         {
             properties.Remove(property);
         }
-
         properties.Add(new KeyValuePair<string, object>(name, value));
         return true;
     }
+
     public override IEnumerable<string> GetDynamicMemberNames()
     {
         return properties.ConvertAll(propertyItem => propertyItem.Key);

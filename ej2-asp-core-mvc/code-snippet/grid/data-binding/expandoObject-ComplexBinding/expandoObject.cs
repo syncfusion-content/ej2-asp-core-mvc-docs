@@ -1,5 +1,4 @@
 public static List<ExpandoObject> ExpandoOrders { get; set; } = new List<ExpandoObject>();
-
 public ActionResult Index()
 {
     string[] customerID = { "John Doe", "Jane Smith", "Alice Johnson", "Bob Brown", "Charlie Davis" };

@@ -63,6 +63,7 @@ namespace SignalR.Controllers
         {
             return View();
         }
+
         public ActionResult UrlDatasource(DataManagerRequest dm)
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
@@ -91,6 +92,7 @@ namespace SignalR.Controllers
             }
             return dm.RequiresCounts ? Json(new { result = DataSource, count = count }) : Json(DataSource);
         }
+
         //update the record.
         public void Update(CRUDModel<OrdersDetails> updatedRecord)
         {
@@ -111,6 +113,7 @@ namespace SignalR.Controllers
                 }
             }
         }
+
         //Insert the record.
         public void Insert(CRUDModel<OrdersDetails> newRecord)
         {
@@ -121,6 +124,7 @@ namespace SignalR.Controllers
                 OrdersDetails.GetAllRecords().Insert(0, newRecord.value);
             }
         }
+
         //Delete the record.
         public void Delete(CRUDModel<OrdersDetails> deletedRecord)
         {
@@ -132,6 +136,7 @@ namespace SignalR.Controllers
                 OrdersDetails.GetAllRecords().Remove(data);
             }
         }
+
         public class CRUDModel<T> where T : class
         {
             public string action { get; set; }
@@ -165,6 +170,7 @@ namespace SignalR.Models
         {
 
         }
+
         public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
         {
             this.OrderID = OrderID;
@@ -179,6 +185,7 @@ namespace SignalR.Models
             this.ShippedDate = ShippedDate;
             this.ShipAddress = ShipAddress;
         }
+
         public static List<OrdersDetails> GetAllRecords()
         {
             if (order.Count() == 0)
@@ -249,6 +256,7 @@ namespace SignalR.Models
                 console.error("Error establishing SignalR connection:", err.toString());
             });
        }
+
        function actionComplete(args) {
           if (args.requestType === "save" || args.requestType === "delete") {
              chat.server.send("SendMessage", "refreshPages").catch((err) => {
@@ -281,13 +289,11 @@ namespace SignalR.Hubs
 {
     public class ChatHub : Hub
     {
-        
-         public void Send(string name, string message)
+        public void Send(string name, string message)
         {
             // Call the addNewMessageToPage method to update clients.
-         Clients.All.addNewMessageToPage(name, message);
+            Clients.All.addNewMessageToPage(name, message);
         }
-        
     }
 }
 
@@ -388,11 +394,13 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
             grid.dataSource = data;
         };
     };
+
     function actionComplete(e) {
         if (e.requestType === 'save' || e.requestType === 'delete') {
             flag = false;
         }
     }
+
     function actionBegin(e) {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (!flag) {
@@ -474,11 +482,13 @@ namespace FetchRequest.Controllers
         {
             return View();
         }
+
         public ActionResult GetData()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return Json(DataSource);
         }
+
         public ActionResult Update(OrdersDetails value)
         {
             var ord = value;
@@ -492,12 +502,14 @@ namespace FetchRequest.Controllers
             val.ShipCountry = ord.ShipCountry;
             return Json(value);
         }
+
         //Insert the record.
         public ActionResult Insert(OrdersDetails value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value);
             return Json(value);
         }
+
         //Delete the record.
         public ActionResult Delete(int key)
         {
@@ -537,6 +549,7 @@ namespace FetchRequest.Models
             this.ShippedDate = ShippedDate;
             this.ShipAddress = ShipAddress;
         }
+
         public static List<OrdersDetails> GetAllRecords()
         {
             List<OrdersDetails> order = new List<OrdersDetails>();
@@ -634,11 +647,13 @@ C. In the AJAX success event, you have the flexibility to utilize the Grid `endE
             grid.dataSource = JSON.parse(data);
         };
     };
+
     function actionComplete(e) {
         if (e.requestType === 'save' || e.requestType === 'delete') {
             flag = false;
         }
     }
+
     function actionBegin(e) {
         var grid = document.getElementById("grid").ej2_instances[0];
         if (!flag) {
@@ -720,11 +735,13 @@ namespace AJAXRequest.Controllers
         {
             return View();
         }
+
         public ActionResult GetData()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return Json(DataSource);
         }
+
         public ActionResult Update(OrdersDetails value)
         {
             var ord = value;
@@ -738,12 +755,14 @@ namespace AJAXRequest.Controllers
             val.ShipCountry = ord.ShipCountry;
             return Json(value);
         }
+
         //Insert the record.
         public ActionResult Insert(OrdersDetails value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value);
             return Json(value);
         }
+
         //Delete the record.
         public ActionResult Delete(int key)
         {
@@ -783,6 +802,7 @@ namespace AJAXRequest.Models
             this.ShippedDate = ShippedDate;
             this.ShipAddress = ShipAddress;
         }
+        
         public static List<OrdersDetails> GetAllRecords()
         {
             List<OrdersDetails> order = new List<OrdersDetails>();

@@ -10,10 +10,7 @@
         @Html.EJS().DropDownList("dropDown").Width("150px").Index(0).Change("valueChange").DataSource(dropDownData).Render()
     </span>
 </div>
-@Html.EJS().Grid("grid").AllowSorting(true).AllowFiltering(true).Height("348px").DataSource(dataManger =>
-{
-    dataManger.Url("https://services.syncfusion.com/aspnet/production/api/UrlDataSource").Adaptor("UrlAdaptor");
-}).Columns(col =>
+@Html.EJS().Grid("grid").AllowSorting(true).AllowFiltering(true).Height("348px").DataSource(dataManger =>{ dataManger.Url("https://services.syncfusion.com/aspnet/production/api/UrlDataSource").Adaptor("UrlAdaptor");}).Columns(col =>
 {
    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
    col.Field("Employees").HeaderText("Employees").Width("150").Add();

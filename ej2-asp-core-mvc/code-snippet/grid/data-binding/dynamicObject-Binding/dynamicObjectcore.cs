@@ -16,6 +16,7 @@ public void OnGet()
 
     ViewData["DynamicData"] = DynamicOrders;
 }
+
 public class DynamicList : DynamicObject
 {
     private List<KeyValuePair<string, object>> properties = new List<KeyValuePair<string, object>>();
@@ -26,6 +27,7 @@ public class DynamicList : DynamicObject
         result = property.Value;
         return property.Key != null;
     }
+
     public override bool TrySetMember(SetMemberBinder binder, object value)
     {
         string name = binder.Name;
@@ -34,10 +36,10 @@ public class DynamicList : DynamicObject
         {
             properties.Remove(property);
         }
-
         properties.Add(new KeyValuePair<string, object>(name, value));
         return true;
     }
+
     public override IEnumerable<string> GetDynamicMemberNames()
     {
         return properties.ConvertAll(propertyItem => propertyItem.Key);

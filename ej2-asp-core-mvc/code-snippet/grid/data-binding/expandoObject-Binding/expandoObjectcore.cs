@@ -1,7 +1,6 @@
 public List<ExpandoObject> ExpandoOrders { get; set; } = new List<ExpandoObject>();
 public void OnGet()
 {
-
     string[] customerIDs = { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" };
     string[] shipCountrys = { "USA", "UK", "Denmark", "Australia", "India" };
     ExpandoOrders = Enumerable.Range(1, 75).Select((x) =>

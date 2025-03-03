@@ -14,16 +14,14 @@
             isDataLoading = false;
         }
     }
+
     function created() {
         var grid = document.getElementById("grid").ej2_instances[0];
         isDataLoading = true;
-        const ajax = new ej.base.Ajax(
-                        'https://services.syncfusion.com/aspnet/production/api/orders',
-                        'GET'
-                    );
+        const ajax = new ej.base.Ajax('https://services.syncfusion.com/aspnet/production/api/orders', 'GET');
         ajax.send();
         ajax.onSuccess = (data) => {
-        grid.dataSource = JSON.parse(data);
+            grid.dataSource = JSON.parse(data);
         };
     }
 </script>

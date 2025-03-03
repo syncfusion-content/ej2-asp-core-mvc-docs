@@ -18,7 +18,7 @@
     function handleButtonClick(event){
         var grid = document.getElementById("grid").ej2_instances[0];
         if (event.target.id === "showButton") {
-         grid.showSpinner();
+            grid.showSpinner();
         }
         else if(event.target.id === "loadButton"){
             grid.showSpinner();

@@ -1,5 +1,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-
 <div>
     <label style="font-weight: bold">Browse excel file to load and return grid</label>
     <div style="padding:20px 0 0 0">
@@ -14,12 +13,14 @@
         grid.dataSource = [''];
         grid.columns = [];
     }
+
     function onSuccess(args) {
         var files = args.file;
         if (files) {
            parseExcel(files[0]);
         }
     }
+    
     function parseExcel(file) {
         var grid = document.getElementById("grid").ej2_instances[0];
         var dialog = document.getElementById("dialog").ej2_instances[0];
