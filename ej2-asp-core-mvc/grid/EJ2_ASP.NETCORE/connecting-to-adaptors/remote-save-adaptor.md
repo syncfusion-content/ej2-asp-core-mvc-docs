@@ -102,6 +102,10 @@ namespace RemoteSaveAdaptor.Controllers
   [ApiController]
   public class OrdersController : Controller
   {
+    /// <summary>
+    /// Handles HTTP POST requests to retrieve order data.
+    /// </summary>
+    /// <returns>Returns an object containing the list of orders and the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post()
@@ -116,6 +120,10 @@ namespace RemoteSaveAdaptor.Controllers
       return new { result = DataSource, count = totalRecordsCount };
     }
 
+    /// <summary>
+    /// Retrieves all order records from the data source.
+    /// </summary>
+    /// <returns>Returns a list of all order details.</returns
     [HttpGet]
     [Route("api/[controller]")]
     public List<OrdersDetails> GetOrderData()
@@ -329,6 +337,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="315" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
@@ -377,6 +386,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         }
     </script>
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -393,6 +403,7 @@ var app = builder.Build();
 app.MapRazorPages();
 app.MapControllers();
 ```
+
 **Step 7:** Run the Project:
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.

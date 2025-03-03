@@ -16,7 +16,7 @@ The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data bin
 
 ![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
-This section provides a step-by-step guide to retrieving data using `WebMethodAdaptor`, binding it to the ASP.NET Core Grid, and managing CRUD operations effectively.
+This section provides a step-by-step guide to retrieving data using `WebMethodAdaptor`, binding it to the Grid, and managing CRUD operations effectively.
 
 ## Creating an API Service
 
@@ -171,7 +171,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -233,6 +233,7 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -242,6 +243,7 @@ Now, add the Syncfusion ASP.NET Core Grid inside the `~/Pages/Index.cshtml` file
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,6 +260,7 @@ var app = builder.Build();
 app.MapRazorPages();
 app.MapControllers();
 ```
+
 **Step 7:** Run the Project:
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.
@@ -284,36 +287,39 @@ To enable search functionality, ensure that your API endpoint supports custom se
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
-    [HttpPost]
-    public object Post([FromBody] DataManager DataManagerRequest)
+
+[HttpPost]
+public object Post([FromBody] DataManager DataManagerRequest)
+{
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+    // Retrieve data manager value.
+    DataManagerRequest DataManagerParams = DataManagerRequest.Value;
+
+    // Handling Searching.
+    if (DataManagerParams.Search != null && DataManagerParams.Search.Count > 0)
     {
-        // Retrieve data from the data source (e.g., database).
-        IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
-
-        QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
-
-        // Retrieve data manager value.
-        DataManagerRequest DataManagerParams = DataManagerRequest.Value;
-
-        // Handling Searching.
-        if (DataManagerParams.Search != null && DataManagerParams.Search.Count > 0)
-        {
-        DataSource = queryableOperation.PerformSearching(DataSource, DataManagerParams.Search);
-        }
-        // Get the total records count.
-        int totalRecordsCount = DataSource.Count();
-
-        // Return data based on the request.
-        return new { result = DataSource, count = totalRecordsCount };
+    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerParams.Search);
     }
+    // Get the total records count.
+    int totalRecordsCount = DataSource.Count();
 
-    // Model for handling data manager requests.
-    public class DataManager
-    {
-        public required DataManagerRequest Value { get; set; }
-    }
+    // Return data based on the request.
+    return new { result = DataSource, count = totalRecordsCount };
+}
+
+// Model for handling data manager requests.
+public class DataManager
+{
+    public required DataManagerRequest Value { get; set; }
+}
+
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -323,6 +329,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -338,6 +345,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
@@ -372,8 +380,10 @@ public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
 }
+
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" allowFiltering="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -383,6 +393,7 @@ public class DataManager
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -398,6 +409,7 @@ To handle sorting operation, configure your API to support custom sorting criter
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
@@ -427,8 +439,10 @@ public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
 }
+
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" allowSorting="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -438,6 +452,7 @@ public class DataManager
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -449,6 +464,7 @@ To handle paging operation, configure your API endpoint to support custom sortin
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post([FromBody] DataManager DataManagerRequest)
 {
@@ -482,8 +498,10 @@ public class DataManager
 {
     public required DataManagerRequest Value { get; set; }
 }
+
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" allowPaging="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebMethodAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -493,6 +511,7 @@ public class DataManager
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -513,7 +532,8 @@ The following properties enable the Grid to interact with API endpoints for diff
 To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight cshtml tabtitle="Index.cshmtl" %}
+
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-data-manager url='https://localhost:xxxx/api/Grid'
                 insertUrl='https://localhost:xxxx/api/Grid/Insert'
@@ -529,6 +549,7 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -647,7 +668,8 @@ Using the `crudUrl` property, the controller action mapping URL can be specified
 The following code example describes the above behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight cshtml tabtitle="Index.cshmtl" %}
+
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-data-manager url='https://localhost:xxxx/api/Grid'
                     crudUrl='https://localhost:xxxx/api/grid/CrudUpdate'
@@ -661,6 +683,7 @@ The following code example describes the above behavior.
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -696,7 +719,8 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 To perform batch operation, set the edit `mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight cshtml tabtitle="Index.cshmtl" %}
+
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-data-manager url='https://localhost:xxxx/api/Grid'
                     batchUrl='https://localhost:xxxx/api/Grid/BatchUpdate'
@@ -710,9 +734,9 @@ To perform batch operation, set the edit `mode` as **Batch** and specify the `ba
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
 {% endhighlight %}
 {% endtabs %}
-
 
 ```cs
 [HttpPost]
@@ -753,4 +777,5 @@ if (batchOperation.deleted != null)
   return Json(batchOperation);
 }
 ```
+
 ![WebMethodAdaptor Batch Editing](../images/adaptors/url-adaptor-batch-editing.gif)
