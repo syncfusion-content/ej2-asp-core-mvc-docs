@@ -698,4 +698,4 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight c# tabtitle="Offline.cs" %}
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} 
