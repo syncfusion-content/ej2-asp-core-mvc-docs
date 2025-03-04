@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeout in ##Platform_Name## Toast | Syncfusion
+title: Timeout in ##Platform_Name## Toast Component | Syncfusion
 description: Learn here all about Timeout in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timeout
