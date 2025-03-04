@@ -13,6 +13,10 @@ documentation: ug
 
 This below sample demonstrate how to get the Rich Text Editor value in button click.
 
+To learn more about form support in the ASP.NET Core Rich Text Editor, watch this video:
+
+{% youtube "youtube:https://www.youtube.com/watch?v=mluZraGGNEs"%}
+
 ## Render the Rich Text Editor
 
 Render the Rich Text Editor in form as below.
