@@ -8,18 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Slash Menu in the ##Platform_Name## Rich Text Editor component
+# Slash Menu in the ##Platform_Name## Rich Text Editor control
 
 The Slash Menu in the Rich Text Editor provides users with an efficient way to apply formatting, insert elements, and execute custom commands by simply typing the "/" character. This feature enhances the user experience by offering quick access to common editing actions within the editor.
 
 ## Enabling the Slash Menu
 
-To enable the Slash Menu, set the `Enable` property within [`SlashMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
+To use the Slash Menu feature, inject SlashMenuService in the provider section of AppComponent.
+
+To enable the Slash Menu, set the `enable` property within [slashMenuSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html) to `true`. By default, this feature is disabled. Once enabled, the Slash Menu will appear when the user types the "/" character in the editor.
 
 ## Configuring the Slash Menu Items
 
-The slashMenuSettings property allows customization of the `Items` displayed in the Slash Menu. By defining the [`Items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_Items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
+The slashMenuSettings property allows customization of the `items` displayed in the Slash Menu. By defining the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_Items) property, a list of available commands can be provided for users to choose from when they type a slash (/) in the Rich Text Editor.
 
 This list can include various formatting options such as paragraph and heading levels. Here’s an code snippet of configuring the Slash Menu items:
 
@@ -40,7 +41,7 @@ RichTextEditorSlashMenuSettings SlashMenuSettings = new RichTextEditorSlashMenuS
 
 ## Customizing the Popup Width and Height
 
-The size of the Slash Menu popup can be customized using the [`PopupWidth`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupWidth) and [`PopupHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupHeight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
+The size of the Slash Menu popup can be customized using the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupWidth) and [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorSlashMenuSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorSlashMenuSettings_PopupHeight) properties within slashMenuSettings. Adjusting these values allows for control over the dimensions of the menu. 
 
 Below is an code snippet showing how to customize both the width and height of the popup:
 
