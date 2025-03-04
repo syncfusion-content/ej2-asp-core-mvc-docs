@@ -114,17 +114,15 @@ namespace WebMethodAdaptor
     {
         public static void Register(HttpConfiguration config)
         {
-            // Enable Attribute Routing
+            // Enable Attribute Routing.
             config.MapHttpAttributeRoutes();
-
-            // Default route
+            // Default route.
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            // Format JSON responses properly
+            // Format JSON responses properly.
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
         }
@@ -150,7 +148,6 @@ namespace WebMethodAdaptor.Controllers
   public class OrdersController : ApiController
   {
     // Method to retrieve order data.
-
     public List<OrdersDetails> GetOrderData()
     {
         // Retrieve all records and convert to list.
@@ -158,7 +155,6 @@ namespace WebMethodAdaptor.Controllers
         return data;
     }
     // Method to handle incoming data manager requests.
-
     public object Post()
     {
         // Retrieve data source and convert to queryable.
@@ -558,7 +554,7 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
 /// Inserts a new data item into the data collection.
 /// </summary>
 /// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns void.</returns>
+/// <returns>Returns new record data.</returns>
 [Route("api/orders/insert")]
 public IHttpActionResult Insert(CRUDModel<OrdersDetails> newRecord)
 {
@@ -582,7 +578,7 @@ For updating existing records, utilize the `UpdateUrl` property to specify the c
 /// Update a existing data item from the data collection.
 /// </summary>
 /// <param name="updatedRecord">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
+/// <returns>Returns data.</returns>
 [Route("api/orders/update")]
 public IHttpActionResult Update(CRUDModel<OrdersDetails> updatedRecord)
 {
@@ -613,7 +609,7 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 /// Remove a specific data item from the data collection.
 /// </summary>
 /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
-/// <return>Returns void.</return>
+/// <return>Returns message</return>
 [Route("api/orders/delete")]
 public IHttpActionResult Remove(CRUDModel<OrdersDetails> deletedRecord)
 {

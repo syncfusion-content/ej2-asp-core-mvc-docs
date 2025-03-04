@@ -123,14 +123,14 @@ namespace WebApiAdaptor.App_Start
                 defaults: new { id = System.Web.Http.RouteParameter.Optional }
             );
 
-            // Web API routes
+            // Web API routes.
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = System.Web.Http.RouteParameter.Optional }
             );
 
-            // Configure JSON formatting
+            // Configure JSON formatting.
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SupportedMediaTypes
             .Add(new MediaTypeHeaderValue("text/html"));
@@ -294,22 +294,22 @@ public object Get()
     {
       if (filterItem.Contains("substringof"))
       {
-        // Perform Searching
+        // Perform Searching.
         var searchParts = filterItem.Split('(', ')', '\'');
         var searchValue = searchParts[3];
 
-        // Apply the search value to all searchable fields
+        // Apply the search value to all searchable fields.
         data = data.Where(cust =>
           cust.OrderID.ToString().Contains(searchValue) ||
           cust.CustomerID.ToLower().Contains(searchValue) ||
           cust.ShipCity.ToLower().Contains(searchValue) ||
           cust.ShipCountry.ToLower().Contains(searchValue)
-        // Add conditions for other searchable fields as needed
+        // Add conditions for other searchable fields as needed.
         ).ToList();
       }
       else
       {
-        // Perform filtering
+        // Perform filtering.
       }
     }
   }
@@ -425,7 +425,7 @@ public object Get()
     if (!string.IsNullOrEmpty(sort))
     {
         var sortConditions = sort.Split(',');
-        var orderedData = data.OrderBy(x => 0); // Start with a stable sort
+        var orderedData = data.OrderBy(x => 0); // Start with a stable sort.
         foreach (var sortCondition in sortConditions)
         {
             var sortParts = sortCondition.Trim().Split(' ');
@@ -479,7 +479,7 @@ public object Get()
 {
     var queryString = Request.Query;
     var data = Orders.GetAllRecords().ToList();
-    // Perform Paging operation
+    // Perform Paging operation.
     int skip = Convert.ToInt32(queryString["$skip"]);
     int take = Convert.ToInt32(queryString["$top"]);
     return take != 0 ? new { items = data.Skip(skip).Take(take).ToList(), count = data.Count() } : new { items = data, count = data.Count() };
@@ -533,7 +533,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
 /// <returns>Returns void</returns>
 public void Post([FromBody] OrdersDetails newRecord)
 {
-  // Insert a new record into the OrdersDetails model
+  // Insert a new record into the OrdersDetails model.
   OrdersDetails.GetAllRecords().Insert(0, newRecord);
 }
 ```
@@ -553,11 +553,11 @@ Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpP
 /// <returns>Returns void</returns>
 public void Put(int id, [FromBody] OrdersDetails updatedOrder)
 {
-  // Find the existing order by ID
+  // Find the existing order by ID.
   var existingOrder = OrdersDetails.GetAllRecords().FirstOrDefault(o => o.OrderID == id);
   if (existingOrder != null)
   {
-    // If the order exists, update its properties
+    // If the order exists, update its properties.
     existingOrder.OrderID = updatedOrder.OrderID;
     existingOrder.CustomerID = updatedOrder.CustomerID;
     existingOrder.ShipCity = updatedOrder.ShipCity;
@@ -581,9 +581,9 @@ To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` m
 /// <returns>Returns void</returns>
 public void Delete(int key)
 {
-  // Find the order to remove by ID
+  // Find the order to remove by ID.
   var orderToRemove = OrdersDetails.GetAllRecords().FirstOrDefault(order => order.OrderID == key);
-  // If the order exists, remove it
+  // If the order exists, remove it.
   if (orderToRemove != null)
   {
     OrdersDetails.GetAllRecords().Remove(orderToRemove);

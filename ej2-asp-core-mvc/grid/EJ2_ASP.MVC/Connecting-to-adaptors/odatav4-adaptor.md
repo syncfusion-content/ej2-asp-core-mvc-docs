@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# ODataV4Adaptor in Syncfusion ASP.NET MVC Grid Control
+# ODataV4Adaptor in Syncfusion ASP.NET MVC Grid
 
 The `ODataV4Adaptor` in the Syncfusion ASP.NET MVC Grid allows seamless integration of the Syncfusion Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion ASP.NET MVC Grid.
 
@@ -106,7 +106,7 @@ To construct the Entity Data Model for your OData service, utilize the `ODataCon
         private static IEdmModel GetEdmModel()
         {
             var builder = new ODataConventionModelBuilder();
-            builder.EntitySet<OrdersDetails>("Orders");  // Define OData Entity
+            builder.EntitySet<OrdersDetails>("Orders");  // Define OData Entity.
             return builder.GetEdmModel();
         }
 ```
@@ -331,14 +331,14 @@ To enable filter operations in your web application using OData, you first need 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ...
-// Enable OData
+// Enable OData.
 config.MapODataServiceRoute(
     routeName: "ODataRoute",
     routePrefix: "odata",
     model: GetEdmModel()
 );
-// Enable Query Support
-config.Count().Filter(); // Handles filtering  operation
+// Enable Query Support.
+config.Count().Filter(); // Handles filtering  operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
@@ -372,7 +372,7 @@ config.MapODataServiceRoute(
     model: GetEdmModel()
 );
 // Enable Query Support
-config.Count().OrderBy(); // Handles sorting  operation
+config.Count().OrderBy(); // Handles sorting  operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
@@ -411,7 +411,7 @@ config.MapODataServiceRoute(
     model: GetEdmModel()
 );
 // Enable Query Support
-config.Count().MaxTop(null); // Handles paging  operation
+config.Count().MaxTop(null); // Handles paging  operation.
 ....
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
@@ -496,7 +496,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
     var existingOrder = OrdersDetails.GetAllRecords().FirstOrDefault(order => order.OrderID == key);
     if (existingOrder != null)
     {
-        // If the order exists, update its properties
+        // If the order exists, update its properties.
         existingOrder.CustomerID = updateRecord.CustomerID ?? existingOrder.CustomerID;
         existingOrder.EmployeeID = updateRecord.EmployeeID ?? existingOrder.EmployeeID;
         existingOrder.ShipCountry = updateRecord.ShipCountry ?? existingOrder.ShipCountry;
@@ -515,7 +515,7 @@ To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` m
 /// Deletes an order.
 /// </summary>
 /// <param name="key">The ID of the order to delete.</param>
-/// <returns>It returns the deleted record detail</returns>
+/// <returns>It returns the deleted record detail.</returns>
 public IHttpActionResult Delete(int key)
 {
     var deleteRecord = OrdersDetails.GetAllRecords().FirstOrDefault(order => order.OrderID == key);
