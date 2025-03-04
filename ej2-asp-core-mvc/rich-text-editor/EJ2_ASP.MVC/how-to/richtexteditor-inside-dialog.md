@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrating Syncfusion Rich Text Editor in Dialog in ##Platform_Name## Rich Text Editor Control
-description: Integrating Rich Text Editor in Dialog in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Integrating Syncfusion Rich Text Editor in a Dialog in ##Platform_Name##
+description: Integrating Rich Text Editor in Dialog in ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrating Rich Text Editor in Dialog
 publishingplatform: ##Platform_Name##
