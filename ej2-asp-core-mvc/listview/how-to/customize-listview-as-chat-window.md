@@ -48,8 +48,9 @@ In ListView template, we have rendered the list items based on receiver and send
 
 ### Adding messages to chat window
 
-    * Use textbox to get message from user.
-    * Add the textbox message to ListView dataSource using [addItem](https://ej2.syncfusion.com/documentation/api/list-view/#additem) method.
+    
+* Use textbox to get message from user.  
+* Add the textbox message to ListView dataSource using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) method.
 
 ```typescript
 

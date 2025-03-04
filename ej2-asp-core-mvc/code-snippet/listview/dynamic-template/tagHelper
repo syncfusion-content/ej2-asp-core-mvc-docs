@@ -1,6 +1,6 @@
 @using Syncfusion.EJ2
 
-<ejs-listview id="List" dataSource="(IEnumerable<object>)ViewBag.dataSource" actionBegin="actionBegin" template="@ViewBag.template" showHeader="true" headerTitle="Syncfusion Blog">
+<ejs-listview id="list" dataSource="(IEnumerable<object>)ViewBag.dataSource" actionBegin="actionBegin" template="@ViewBag.template" showHeader="true" headerTitle="Syncfusion Blog">
 </ejs-listview>
 
 <script>
@@ -37,14 +37,14 @@
 </script>
 
 <style>
-    #List img {
+    #list img {
         height: 70px;
         width: 70px;
         border-radius: 50%;
         border: 1px solid #ccc;
     }
 
-    #List {
+    #list {
         display: block;
         max-width: 400px;
         margin: auto;
@@ -53,20 +53,20 @@
         border-color: rgba(0, 0, 0, 0.12);
     }
 
-        #List .settings {
-            height: 170px;
-            line-height: 70px;
-            margin-left: 16px;
-            margin-right: 16px;
-        }
+    #list .settings {
+        height: 170px;
+        line-height: 70px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 
-        #List .e-list-item {
-            height: 170px;
-            line-height: 70px;
-            padding: 0;
-            cursor: pointer;
-            border-bottom: 0.8px solid #ddd;
-        }
+    #list .e-list-item {
+        height: 170px;
+        line-height: 70px;
+        padding: 0;
+        cursor: pointer;
+        border-bottom: 0.8px solid #ddd;
+    }
 
     #time {
         line-height: 23px;
@@ -86,7 +86,7 @@
         padding-top: 3px;
     }
 
-    #List .e-list-header {
+    #list .e-list-header {
         color: white;
         height: 57px;
         background-color: #56697f;
@@ -95,35 +95,35 @@
         top: -1px;
     }
 
-    .bootstrap #List .e-list-header .e-text {
+    .bootstrap #list .e-list-header .e-text {
         line-height: 18px;
     }
 
-    #List .e-list-header .e-text {
+    #list .e-list-header .e-text {
         font-family: sans-serif;
         font-size: 18px;
         line-height: 26px;
     }
 
-    #List .category {
+    #list .category {
         font-family: "serif";
         font-weight: 600;
         font-size: 19px;
     }
 
-    #List .name {
+    #list .name {
         font-size: 15px;
         font-weight: 500;
         line-height: 23px;
     }
 
-    #List .content {
+    #list .content {
         line-height: 19px;
         font-size: 13px;
         font-weight: 200;
     }
 
-    #List .e-hover {
+    #list .e-hover {
         transition: 0.5s;
     }
 

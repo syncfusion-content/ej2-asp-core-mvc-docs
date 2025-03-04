@@ -1,62 +1,63 @@
-<!-- sidebar element declaration -->
-@{Html.EJS().Sidebar("default-sidebar").CloseOnDocumentClick(false).Width("260px").ContentTemplate(
-@<div>
-    <div class="sidebar-header header-cover" style="background-color:#0378d5">
-        <div class="image-container">
-            <div class="sidebar-image">
+
+@{Html.EJS().Sidebar("default-sidebar")
+    .CloseOnDocumentClick(false)
+    .Width("260px")
+    .ContentTemplate(
+    @<div>
+        <div class="sidebar-header header-cover" style="background-color:#0378d5">
+            <div class="image-container">
+                <div class="sidebar-image">
+                </div>
+            </div>
+            <div style="padding: 0 0 5px 0;">
+                <a class="sidebar-brand" href="#settings-dropdown">
+                    john.doe@gmail.com
+                </a>
+                <span class="sf-icon-down icon"></span>
             </div>
         </div>
-        <div style="padding: 0 0 5px 0;">
-            <a class="sidebar-brand" href="#settings-dropdown">
-                john.doe@gmail.com
-            </a>
-            <span class="sf-icon-down icon"></span>
-        </div>
-    </div>
 
-    <!-- Sidebar navigation -->
-    <ul class="nav sidebar-nav">
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-file"></i>
-                <span class="e-text"> Inbox</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-starred"></i>
-                <span class="e-text"> Starred</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-recent"></i>
-                <span class="e-text">Snoozed</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-important"></i>
-                <span class="e-text">Important</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-offline"></i>
-                <span class="e-text"> Sent</span>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="sf-icon-sidebar sf-icon-backup"></i>
-                <span class="e-text"> Draft</span>
-            </a>
-        </li>
-    </ul>
-</div>).Render();
+        <ul class="nav sidebar-nav">
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-file"></i>
+                    <span class="e-text"> Inbox</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-starred"></i>
+                    <span class="e-text"> Starred</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-recent"></i>
+                    <span class="e-text">Snoozed</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-important"></i>
+                    <span class="e-text">Important</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-offline"></i>
+                    <span class="e-text"> Sent</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="sf-icon-sidebar sf-icon-backup"></i>
+                    <span class="e-text"> Draft</span>
+                </a>
+            </li>
+        </ul>
+    </div>).Render();
 }
-<!-- end of sidebar element -->
-<!--  Main Content declaration -->
+
 <div>
     <div class="content">
         <div id="left">
@@ -216,6 +217,7 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
 
     document.addEventListener('DOMContentLoaded', function () {
@@ -228,6 +230,7 @@
     //create instances for sidebar element
 
 </script>
+
 <style>
     .control-section {
         overflow: hidden;
@@ -264,6 +267,7 @@
     .sf-icon-profile:before {
         float: right;
         content: '\e717';
+        font-family: 'e-fixed-icons';
         font-size: 25px;
     }
 
@@ -277,13 +281,13 @@
         padding: 15px;
     }
 
-        .e-today span {
-            border-color: rgba(0, 0, 0, 0.12);
-            color: rgba(0, 0, 0, 0.54);
-            font-size: 15px;
-            font-weight: 600;
-            height: 36px;
-        }
+    .e-today span {
+        border-color: rgba(0, 0, 0, 0.12);
+        color: rgba(0, 0, 0, 0.54);
+        font-size: 15px;
+        font-weight: 600;
+        height: 36px;
+    }
 
     .content {
         height: 47px;
@@ -320,19 +324,23 @@
 
     .sf-icon-file:before {
         content: '\e701';
+        font-family: 'e-fixed-icons';
     }
 
     .sf-icon-share:before {
         content: '\e70b';
+        font-family: 'e-fixed-icons';
     }
 
 
     .sf-icon-starred:before {
         content: '\e708';
+        font-family: 'e-fixed-icons';
     }
 
     .sf-icon-star:before {
         content: '\e707';
+        font-family: 'e-fixed-icons';
         font-size: 15px;
         color: #000;
         float: right;
@@ -340,10 +348,12 @@
 
     .sf-icon-recent:before {
         content: '\e70c';
+        font-family: 'e-fixed-icons';
     }
 
     .sf-icon-important:before {
         content: '\e713';
+        font-family: 'e-fixed-icons';
     }
 
     .e-sidebar.e-left {
@@ -353,24 +363,29 @@
 
     .sf-icon-offline:before {
         content: '\e714';
+        font-family: 'e-fixed-icons';
         font-size: 30px;
     }
 
     .sf-icon-backup:before {
         content: '\e712';
+        font-family: 'e-fixed-icons';
     }
 
     .sf-icon-down:before {
         content: '\e709';
+        font-family: 'e-fixed-icons';
     }
 
     .sf-icon-search:before {
         content: '\e711';
+        font-family: 'e-fixed-icons';
         font-size: 18px;
     }
 
     .sf-icon-sidebar {
         content: '\e701';
+        font-family: 'e-fixed-icons';
         color: #000000;
         display: inline-block;
         margin-right: 16px;
@@ -477,17 +492,18 @@
         color: #ffff;
     }
 
-        #hamburger.menu:before {
-            content: '\e10d';
-        }
+    #hamburger.menu:before {
+        content: '\e10d';
+        font-family: 'e-fixed-icons';
+    }
 
-        #hamburger.menu.e-rtl {
-            position: relative;
-            float: right;
-        }
+    #hamburger.menu.e-rtl {
+        position: relative;
+        float: right;
+    }
 
     @@font-face {
-        font-family: 'e-icons';
+        font-family: 'e-fixed-icons';
         src: url(data:application/x-font-ttf;charset=utf-8;base64,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) format('truetype');
         font-weight: normal;
         font-style: normal;
@@ -555,8 +571,6 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
     }
-
-
 
     /* end of newTab support */
     .e-content-animation li.e-list-item {

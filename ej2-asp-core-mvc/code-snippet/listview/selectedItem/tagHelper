@@ -24,8 +24,8 @@
         border-radius: 3px;
     }
 </style>
-<script>
 
+<script>
     document.getElementById('btn').addEventListener('click', () => {
         var selecteditem = document.getElementById('element').ej2_instances[0].getSelectedItems();
         var data = document.getElementById('val');
@@ -49,6 +49,5 @@
             row2.appendChild(data2);
             document.getElementById('val').appendChild(row2);
         }
-
     });
 </script>

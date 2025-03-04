@@ -34,7 +34,6 @@
                 <li class="right-header list tour">Tour</li>
             </ul>
         </div>
-        <!-- sidebar element declaration -->
         <ejs-sidebar id="sidebar-menu" class="dock-menu" width="220px" target=".main-content" dockSize="50px" enableDock="true">
             <e-content-template>
                 <div class="main-menu">
@@ -238,29 +237,29 @@
                 overflow: hidden;
             }
 
-                /* end of docksidebar styles */
-                /*end of  Sidebar styles */
+            /* end of docksidebar styles */
+            /*end of  Sidebar styles */
 
-                /*main-menu-header  styles */
-                #sidebar-menu .main-menu-header {
-                    padding: 4px 0px 0px 18px;
-                    color: #656a70;
-                }
+            /*main-menu-header  styles */
+            #sidebar-menu .main-menu-header {
+                padding: 4px 0px 0px 18px;
+                color: #656a70;
+            }
 
-                /*end of main-menu-header  styles */
+            /*end of main-menu-header  styles */
 
-                /*button styles */
-                #sidebar-menu .action-btn {
-                    margin-left: 16px;
-                    width: 165px;
-                    height: 30px;
-                    font-size: 13px;
-                    border-radius: 5px;
-                }
+            /*button styles */
+            #sidebar-menu .action-btn {
+                margin-left: 16px;
+                width: 165px;
+                height: 30px;
+                font-size: 13px;
+                border-radius: 5px;
+            }
 
-                #sidebar-menu .action-btn {
-                    background-color: #1784c7;
-                }
+            #sidebar-menu .action-btn {
+                background-color: #1784c7;
+            }
             /* custom code start */
             /*end of button styles */
 

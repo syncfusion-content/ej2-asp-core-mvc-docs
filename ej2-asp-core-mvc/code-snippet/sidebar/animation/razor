@@ -1,17 +1,17 @@
-<!-- sidebar element declaration -->
-@{Html.EJS().Sidebar("sidebar-element").ShowBackdrop(true).Width("280px").ContentTemplate(@<div>
-    <div class="title"> Sidebar content</div>
-    <div class="sub-title">
-        * Sidebar is rendered with animation effect
-    </div>
-    <div class="center-align">
-        <!-- button element declaration -->
-        @Html.EJS().Button("close_btn").Content("CloseSidebar").Render()
-    </div>
-</div>).Render();
+
+@{Html.EJS().Sidebar("sidebar-element")
+    .ShowBackdrop(true)
+    .Width("280px")
+    .ContentTemplate(@<div>
+        <div class="title"> Sidebar content</div>
+        <div class="sub-title">
+            * Sidebar is rendered with animation effect
+        </div>
+        <div class="center-align">
+            @Html.EJS().Button("close_btn").Content("CloseSidebar").Render()
+        </div>
+    </div>).Render();
 }
-<!-- end of sidebar element -->
-<!-- main content declaration -->
 <div>
     <div class="title">Sidebar Transitions</div>
     <div class="sub-title"> * Click the below button to render the Sidebar with animation effect.</div>

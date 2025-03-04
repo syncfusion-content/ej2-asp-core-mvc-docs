@@ -33,18 +33,18 @@
         </div>
     </div>
 
-    @{Html.EJS().Sidebar("sidebar-menu").Width("220px").Target(".main-content").ContentTemplate(@<div class="dock-menu">
-    <!-- normal state element declaration -->
-    <div class="sidebar-header header-cover">
-
-        <div style="padding-top:30px">
-            <div class="sub-title">
-                Layout Page Sidebar
+    @{Html.EJS().Sidebar("sidebar-menu")
+        .Width("220px")
+        .Target(".main-content")
+        .ContentTemplate(@<div class="dock-menu">
+            <div class="sidebar-header header-cover">
+                <div style="padding-top:30px">
+                    <div class="sub-title">
+                        Layout Page Sidebar
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <!-- end of normal state element declaration -->
-  </div>).Render();}
+        </div>).Render();}
     <div id="maintext" class=".main-content">
         <div>
             @RenderBody()
