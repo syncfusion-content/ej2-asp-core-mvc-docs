@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Keyboard Support in ##Platform_Name## Rich Text Editor component
 
 The editor has full keyboard accessibility that includes shortcuts to open and other actions with toolbar items, drop-down lists, and dialogs.
@@ -262,11 +261,9 @@ These shortcuts provide additional functionalities like fullscreen mode.
 {% endtabs %}
 {% endif %}
 
-
-
 ## Custom Key Config
 
-Customize the key config for the keyboard interaction of Rich Text Editor, using the [`KeyConfig`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
+You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [KeyConfig](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
 
 In the following sample, customize the bold, italic, underline toolbar action with <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`b`</kbd>, <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`i`</kbd> and <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`u`</kbd> respectively.
 
@@ -292,11 +289,3 @@ In the following sample, customize the bold, italic, underline toolbar action wi
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
-
-## See Also
-
-* [Globalization](./globalization/)
-* [Accessibility](./accessibility/)
-* [How to customize the saving operation](./how-to/save/)

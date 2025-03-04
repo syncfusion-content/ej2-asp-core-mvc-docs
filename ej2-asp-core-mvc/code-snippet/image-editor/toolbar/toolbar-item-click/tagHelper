@@ -1,5 +1,5 @@
 @{
-    var imageTool = new string[] { "Annotate", "Line", "Rectangle", "Text", "ZoomIn", "ZoomOut" };
+    var imageTool = new List<object> { new { text = "Custom" } };
 }
 
 <div class="col-lg-12 control-section e-img-editor-sample">
@@ -18,7 +18,7 @@
 
     function toolbarItemClicked (args) {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        if (args.item.text === 'Text') {
+        if (args.item.text === 'Custom') {
             imageEditorObj.rotate(90);
         }
     }

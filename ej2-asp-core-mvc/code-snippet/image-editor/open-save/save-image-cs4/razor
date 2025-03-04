@@ -1,0 +1,63 @@
+<div class="col-lg-12 control-section e-img-editor-sample">
+    @Html.EJS().ImageEditor("image-editor").Created("created").Render()
+</div>
+<div class="mt-3">
+    <button id="saveImage" class="e-btn e-primary">Save Byte[]</button>
+    <button id="loadImage" class="e-btn e-secondary">Load Byte[]</button>
+</div>
+
+<script>
+    var imageEditorObj;
+    var byteArray;
+
+    function created() {
+        imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        if (ej.base.Browser.isDevice) {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
+        } else {
+            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
+        }
+    }
+
+    document.getElementById('saveImage').onclick = function () {
+        var imageData = imageEditorObj.getImageData();
+        var canvas = document.createElement('canvas');
+        var ctx = canvas.getContext('2d');
+        if (!ctx) return;
+        canvas.width = imageData.width;
+        canvas.height = imageData.height;
+        ctx.putImageData(imageData, 0, 0);
+
+        canvas.toBlob((blob) => {
+            if (blob) {
+                let reader = new FileReader();
+                reader.readAsArrayBuffer(blob);
+                reader.onloadend = function () {
+                    byteArray = new Uint8Array(reader.result);
+                };
+            }
+        }, 'image/png');
+    };
+
+    document.getElementById('loadImage').onclick = function () {
+        if (byteArray) {
+            let blob = new Blob([byteArray], { type: 'image/png' });
+            let url = URL.createObjectURL(blob);
+            imageEditorObj.open(url);
+        }
+    };
+</script>
+
+<style>
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+</style>

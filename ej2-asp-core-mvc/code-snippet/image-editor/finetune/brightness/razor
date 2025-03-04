@@ -3,6 +3,7 @@
 </div>
 @Html.EJS().Button("brightnessClick").CssClass("e-primary").Content("Brightness").Click("brightnessClick").Render()
 @Html.EJS().Button("contrastClick").CssClass("e-primary").Content("Contrast").Click("contrastClick").Render()
+@Html.EJS().Button("saturationClick").CssClass("e-primary").Content("Saturation").Click("saturationClick").Render()
 
 <script>
     function created() {
@@ -21,6 +22,10 @@
     function contrastClick() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Contrast, 100);
+    }
+    function saturationClick() {
+        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imgObj.finetuneImage(ej.imageeditor.ImageFinetuneOption.Saturation, 100);
     }
 
 </script>

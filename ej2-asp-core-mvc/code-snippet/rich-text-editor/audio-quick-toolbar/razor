@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("audio-quick-toolbar").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => { e.Audio((object)ViewBag.audio); }).Value(ViewBag.value).Render()
