@@ -180,13 +180,9 @@ namespace WebMethodAdaptor.Controllers
 
 **5. Run the Application:**
 
-* Ensure the project is built successfully (Build → Rebuild Solution).
-* Run the project (Ctrl + F5).
-* Verify the API service by opening a browser and navigating to:
-    ```
-    http://localhost:xxxx/api/orders // Here xxxx denotes port number
-    ```
-* If the service is configured correctly, it should return JSON data.
+Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**. 
+
+After running the application, you can verify that the server-side API controller is successfully returning the order data at the URL(https://localhost:xxxx/api/Orders). Here **xxxx** denotes the port number.
 
 ![WebMethodAdaptor-data](../../images/adaptors/url-adaptor-data.jpeg)
 
@@ -196,7 +192,15 @@ To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Stud
 
 **Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
-To add `ASP.NET MVC` controls to your application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+To add `ASP.NET MVC` controls to your application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it. Alternatively, you can install it using the following Package Manager Console command:
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 2:** Add Syncfusion ASP.NET MVC namespace
 
@@ -210,11 +214,10 @@ Ensure the `Syncfusion.EJ2` namespace is referenced in the **Web.config** file u
 
 **Step 3:** Add stylesheet and script resources
 
-Include Syncfusion themes and script files in the <head> section of `~/Views/Shared/_Layout.cshtml`.
+To include the required styles and scripts, add the following references inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
-
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -222,7 +225,7 @@ Include Syncfusion themes and script files in the <head> section of `~/Views/Sha
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
     <!-- Include the necessary CSS files to style the Syncfusion ASP.NET MVC component: -->
-        <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
     <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
@@ -237,7 +240,6 @@ Include Syncfusion themes and script files in the <head> section of `~/Views/Sha
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,14 +252,13 @@ To enable Syncfusion scripts, add the **Script Manager** at the end of the `<bod
 
 <body>
 ...
-    <!-- Syncfusion ASP.NET MVC Script Manager -->
-    @Html.EJS().ScriptManager()
+<!-- Syncfusion ASP.NET MVC Script Manager -->
+@Html.EJS().ScriptManager()
 </body>
-
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** Add ASP.NET MVC Grid control
+**Step 5:** Add Syncfusion ASP.NET MVC Grid to Application:
 
 Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` page.
 
@@ -265,7 +266,8 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% highlight cshtml tabtitle="Index.cshtml" %}
 @using Syncfusion.EJ2
 
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -279,11 +281,11 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 
 **Step 7:** Run the Project
 
-Now, run the project to see the Syncfusion Grid connected to the API service.
+Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will successfully fetch data from the API service.
 
 ![WebMethodAdaptor](../../images/adaptors/adaptor.gif)
 
-> * The Syncfusion Grid control provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the `Syncfusion.EJ2.MVC5` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
+> * The Syncfusion Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the `Syncfusion.EJ2.MVC5` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.MVC5 ` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest`, import `Syncfusion.EJ2.Base` in `OrdersController.cs` file.
 > * In the `WebMethodAdaptor` configuration, the properties of the `DataManager` object are encapsulated within an object named **value**. To access the `DataManager` properties, a dedicated class is created, representing the **value** object.
@@ -298,43 +300,43 @@ Now, run the project to see the Syncfusion Grid connected to the API service.
 
 ## Handling Searching Operation
 
-To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object
+To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
 
 ![WebMethodAdaptor searching](../../images/adaptors/web-method-adaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
+public object Post(DataManager DataManagerRequest)
+{
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-    public object Post(DataManager DataManagerRequest)
+    QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+    // Retrieve data manager value.
+    DataManagerRequest DataManagerParams = DataManagerRequest.Value;
+
+    // Handling Searching.
+    if (DataManagerParams.Search != null && DataManagerParams.Search.Count > 0)
     {
-        // Retrieve data from the data source (e.g., database).
-        IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
-
-        QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
-
-        // Retrieve data manager value.
-        DataManagerRequest DataManagerParams = DataManagerRequest.Value;
-
-        // Handling Searching.
-        if (DataManagerParams.Search != null && DataManagerParams.Search.Count > 0)
-        {
-        DataSource = queryableOperation.PerformSearching(DataSource, DataManagerParams.Search);
-        }
-        // Get the total records count.
-        int totalRecordsCount = DataSource.Count();
-
-        // Return data based on the request.
-        return new { result = DataSource, count = totalRecordsCount };
+    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerParams.Search);
     }
+    // Get the total records count.
+    int totalRecordsCount = DataSource.Count();
 
-    // Model for handling data manager requests.
-    public class DataManager
-    {
-        public required DataManagerRequest Value { get; set; }
-    }
+    // Return data based on the request.
+    return new { result = DataSource, count = totalRecordsCount };
+}
+
+// Model for handling data manager requests.
+public class DataManager
+{
+    public required DataManagerRequest Value { get; set; }
+}
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -393,7 +395,8 @@ public class DataManager
 }
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -446,7 +449,8 @@ public class DataManager
 }
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -499,7 +503,8 @@ public class DataManager
 }
 {% endhighlight %}
 {% highlight ts tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -511,24 +516,24 @@ public class DataManager
 
 ## Handling CRUD Operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, `CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
-1. **InsertUrl**: Specifies the URL for inserting new data.
-2. **RemoveUrl**: Specifies the URL for removing existing data.
-3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **CrudUrl**: Specifies a single URL for all CRUD operations.
-5. **BatchUrl**: Specifies the URL for batch editing.
+1. **insertUrl**: Specifies the URL for inserting new data.
+2. **removeUrl**: Specifies the URL for removing existing data.
+3. **updateUrl**: Specifies the URL for updating existing data.
+4. **crudUrl**: Specifies a single URL for all CRUD operations.
+5. **batchUrl**: Specifies the URL for batch editing.
 
 To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
-
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor").InsertUrl("https://localhost:xxxx/api/orders/insert").UpdateUrl("https://localhost:xxxx/api/orders/update").RemoveUrl("https://localhost:xxxx/api/orders/delete")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor").InsertUrl("https://localhost:xxxx/api/orders/insert").UpdateUrl("https://localhost:xxxx/api/orders/update").RemoveUrl("https://localhost:xxxx/api/orders/delete")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
 	() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -539,11 +544,11 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit mode for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Operation:**
 
-To insert a new record, utilize the `InsertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
+To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
 
 ![Insert record](../../images/adaptors/web-method-adaptor-insert-record.png)
 
@@ -632,7 +637,8 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/orders").Adaptor("WebMethodAdaptor").CrudUrl("https://localhost:xxxx/api/orders/crudUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/orders")  // Replace `xxxx` with your actual localhost port number.
+.Adaptor("WebMethodAdaptor").CrudUrl("https://localhost:xxxx/api/orders/crudUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
 	() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
