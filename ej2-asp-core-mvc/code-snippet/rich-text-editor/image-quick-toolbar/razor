@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("image-quick-toolbar").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => { e.Image((object)ViewBag.image); }).Value(ViewBag.value).Render()
