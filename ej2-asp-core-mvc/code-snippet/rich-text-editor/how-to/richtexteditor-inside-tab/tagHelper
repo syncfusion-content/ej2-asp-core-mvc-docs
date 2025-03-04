@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.RichTextEditor
+@{
+    var headerTextOne = new TabHeader { Text = "TAB 1" };
+    var headerTextTwo = new TabHeader { Text = "TAB 2" };
+    var headerTextThree = new TabHeader { Text = "TAB 3" };
+}
+
+<ejs-tab id="ej2Tab" height="auto">
+    <e-tab-tabitems>
+        <e-tab-tabitem header="headerTextOne" content="#editor1"></e-tab-tabitem>
+        <e-tab-tabitem header="headerTextTwo" content="#editor2"></e-tab-tabitem>
+        <e-tab-tabitem header="headerTextThree" content="#editor3"></e-tab-tabitem>
+    </e-tab-tabitems>
+</ejs-tab>
+
+<div style="display: none" id="editor1">
+    <ejs-richtexteditor id="editor1" value="<div>Rich Text Editor</div>"></ejs-richtexteditor>
+</div>
+
+<div style="display: none" id="editor2">
+    <ejs-richtexteditor id="editor2" value="<div>Rich Text Editor</div>"></ejs-richtexteditor>
+</div>
+
+<div style="display: none" id="editor3">
+    <ejs-richtexteditor id="editor3" value="<div>Rich Text Editor</div>"></ejs-richtexteditor>
+</div>

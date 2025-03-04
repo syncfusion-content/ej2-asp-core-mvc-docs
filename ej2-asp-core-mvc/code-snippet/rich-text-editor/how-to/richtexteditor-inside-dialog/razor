@@ -1,0 +1,25 @@
+@Html.EJS().Button("targetButton").Content("OPEN DIALOG").Render()
+
+@Html.EJS().Dialog("dialog").Header("Dialog header").ShowCloseIcon(true).Width("350px").Height("400px").Open("onOpen").ContentTemplate(@<div class='dialogContent'>
+    @Html.EJS().RichTextEditor("RTE").Render()
+</div>).Render()
+
+
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.show();
+    };
+    
+    function onOpen(args){
+        var rteObj = document.getElementById('RTE').ej2_instances[0];
+        rteObj.refreshUI()
+    }
+</script>
+
+<style>
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+</style>
