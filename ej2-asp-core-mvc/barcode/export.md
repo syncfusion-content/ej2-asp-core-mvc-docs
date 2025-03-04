@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Barcode Component
+title: Export in ##Platform_Name## Barcode Component Syncfusion®
 description: Learn here all about Export in Syncfusion® ##Platform_Name## Barcode component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
