@@ -11,7 +11,7 @@ documentation: ug
 
 # Export
 
-Export barcode as an image and base64 string is common for barcode, QRcode and datamatrix.
+Export barcode as an image and base64 string is common for barcode, QRCode and datamatrix.
 ## Export
 
 Barcode provides the support to export its content as an image in the specified image type and downloads it in the browser. The following code example shows how to export the barcode as an image
