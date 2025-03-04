@@ -10,17 +10,15 @@ documentation: ug
 
 # Format Painter in ##Platform_Name## Rich Text Editor Control | Syncfusion
 
-A format painter is a tool that allows you to copy the formatting from a piece of text and apply it to another one. Format Painter can be accessed via the toolbar or the keyboard shortcuts. The format painter can copy the formatting of a single word or a whole paragraph. The format painter can be customized using the [FormatPainterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
+The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [FormatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
-## Enabling the toolbar option for Format Painter
+## Configuring Format Painter Tool in the Toolbar
 
-You can add the `FormatPainter` tool in the Rich Text Editor using the `ToolbarSettings` [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
-
+You can add the `FormatPainter` tool in the Rich Text Editor using the `ToolbarSettings` [items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
 By double-clicking the format painter toolbar button, `sticky mode` will be enabled. In sticky mode, the format painter will be disabled when the user clicks the `Escape` key again.
 
 The following code example shows how to add the format painter tool in the Rich Text Editor.
-
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -31,9 +29,9 @@ The following code example shows how to add the format painter tool in the Rich 
 {% endhighlight %}
 {% endtabs %}
 
-## Customization of copy and paste format
+## Customizing Copy and Paste Format
 
-You can customize the format painter tool in the Rich Text Editor using the `FormatPainterSettings` property.
+You can customize the format painter tool in the Rich Text Editor using the [FormatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 The [AllowedFormats](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_AllowedFormats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
@@ -47,6 +45,8 @@ Similarly, with the [DeniedFormats](https://help.syncfusion.com/cr/aspnetmvc-js2
 
 Using the `DeniedFormats` property following styles are denied copying from the selected text such as `h3(e-rte-block-blue-text){background-color,padding}[title]; li{color}; span(e-inline-text-highlight)[title]; strong{color}(e-rte-strong-bg)`.
 
+Below is an example illustrating how to define the `AllowedFormats` and `DeniedFormats` settings for the Format Painter in the Rich Text Editor.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/format-painter-cs2/razor %}
@@ -56,8 +56,9 @@ Using the `DeniedFormats` property following styles are denied copying from the 
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-painter-cs2" %}
 
-## Using the shortcut key to copy and paste the format
+## Using Shortcut Keys for Copy and Paste Format
 
 You can use the following shortcut keys to copy and paste the format in the Rich Text Editor.
 
