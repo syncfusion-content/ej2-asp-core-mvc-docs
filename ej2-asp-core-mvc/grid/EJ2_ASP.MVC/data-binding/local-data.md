@@ -605,9 +605,9 @@ The following example demonstrates how to display the loading indicator in the G
 
 The Syncfusion ASP.NET MVC Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Grid, follow these steps:
+To achieve data binding and perform CRUD actions using AJAX requests in the Grid, follow these steps:
 
-**Step 1:** To create a new ASP.NET Web Application(.NET Framework) project named AJAXRequest, follow these steps:
+**Step 1:** To create a new ASP.NET Web Application(.NET Framework) project named AJAX Request, follow these steps:
 
 * Open Visual Studio.
 * Select “Create a new project”
@@ -621,7 +621,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Grid
 
 A. To bind data from an external AJAX request, utilize the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property of the Grid. AJAX data from the server and provide it to the `DataSource` property using the `onSuccess` event of the AJAX request.
 
-B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using Fetch, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
+B. To perform CRUD actions, leverage the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. You can cancel the default CRUD operations by utilizing the **cancel** argument provided by this event. This allows you to dynamically call your server-side method using AJAX, along with the relevant data received from the `ActionBegin` event, to update your server data accordingly.
 
 C. In the AJAX success event, you have the flexibility to utilize the Grid `endEdit` and `deleteRecord` methods to handle the addition, editing, and deletion of corresponding data in the Grid. However, invoking these methods triggers the `ActionBegin` event once again to save the changes in the Grid. To prevent this behavior and maintain control over the execution flow, you can employ a flag variable and manage it within the `ActionComplete` and AJAX failure events: The following code snippet demonstrates this approach:
 
