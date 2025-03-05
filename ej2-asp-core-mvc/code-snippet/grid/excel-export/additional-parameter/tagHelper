@@ -15,14 +15,12 @@
         if (args.item.id === "grid_excelexport") {
             var queryClone = grid.query;
             grid.query = new ej.data.Query().addParams("recordcount", "15");
-            document.getElementById("message").innerText =
-                'Key: ' + grid.query.params[0].key +
-                ' and Value: ' + grid.query.params[0].value + ' on ' + args.item.text;
+            document.getElementById("message").innerText = 'Key: ' + grid.query.params[0].key + ' and Value: ' + grid.query.params[0].value + ' on ' + args.item.text;
             grid.excelExport();
         }
     }
 
-    function excelExportComplete() {
+    function excelExportComplete(args) {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.query = new ej.data.Query();
     }
