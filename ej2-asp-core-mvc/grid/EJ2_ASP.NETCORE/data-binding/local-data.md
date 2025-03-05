@@ -111,11 +111,14 @@ namespace signalR.Pages
             }
             return dataManagerRequest.RequiresCounts ? new JsonResult(new { result = DataSource, count = count }) : new JsonResult(DataSource);
         }
+
         public JsonResult OnPostGetdata()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
         }
+
+        //update the record.
         public JsonResult OnPostUpdate([FromBody] CRUDModel<OrdersDetails> value)
         {
             var ord = value.value;
@@ -129,23 +132,23 @@ namespace signalR.Pages
             val.ShipCountry = ord.ShipCountry;
             return new JsonResult(value.value);
         }
+
         //Insert the record.
         public JsonResult OnPostInsert([FromBody] CRUDModel<OrdersDetails> value)
         {
             OrdersDetails.GetAllRecords().Insert(0, value.value);
             return new JsonResult(value.value);
         }
+
         //Delete the record.
         public JsonResult OnPostDelete([FromBody] CRUDModel<OrdersDetails> value)
         {
             OrdersDetails.GetAllRecords().Remove(OrdersDetails.GetAllRecords().Where(or => or.OrderID == int.Parse(value.key.ToString())).FirstOrDefault());
-
             return new JsonResult(value);
         }
     }
     public class CRUDModel<T> where T : class
     {
-
         public string? action { get; set; }
 
         public string? keyColumn { get; set; }
