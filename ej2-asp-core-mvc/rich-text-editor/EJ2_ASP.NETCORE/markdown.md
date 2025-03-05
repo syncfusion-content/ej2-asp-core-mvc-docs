@@ -8,18 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Markdown in the ##Platform_Name## Rich Text Editor Control
 
-# Markdown in RichTextEditor Control
+When you format the word in Markdown format, you should add Markdown syntax to the word to indicate the words and phrases that look different from each other.
 
-In Rich Text Editor, you click the toolbar buttons to format the words and the changes are visible immediately.
+The Rich Text Editor supports Markdown editing when the [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) is set to markdown. You can apply formatting to text using both keyboard interactions and toolbar actions.
 
-Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words and phrases should look different from each other.
+## Markdown Basic Formatting
 
-Rich Text Editor supports markdown editing when the [`editorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) set as `Markdown` and using both *keyboard interaction* and *toolbar action*, you can apply the formatting to text.
-
-## Supported Commands
-
-The ASP Core Markdown editor supports the following commands to format the markdown content:
+The ##Platform_Name## Markdown editor supports various commands to format markdown content. Below are the supported commands and their usage:
 
 |Commands|Syntax| Description |
 |--------|------------------------------------------|------------|
@@ -40,32 +37,32 @@ The ASP Core Markdown editor supports the following commands to format the markd
 | Subscript | `<sub>`Subscript text`</sub>` | For subscript, add `<sub>` to the front and `</sub>` to the back of the text. |
 | Superscript | `<sup>`Superscript text`</sup>` | For superscript, add `<sup>` to the front and `</sup>` to the back of the text. |
 | Ordered List | `1.` First<br>`1.` Second | For ordered list, preceding one or more lines of text with `1.` |
-| Unordered List | `*` First<br>`*` second | For unordered list, preceding one or more lines of text with `*`. |
-| Links | **Link text without title text**<br>`[` Link text `](`URL`)`<br> **Link text with title text**<br>`[` Link text `](`URL , “title text”`)` | Create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL as first parameter and title as second parameter in the parentheses `()`.<br>**Note:** The title text is optional, if needed it can be given manually.|
-| Table | `|` Heading 1 `|` Heading 2 `|`<br>`|---------|---------|`<br>`|` Col A1 `|` Col A2 `|`<br>`|` Col B1 `|` Col B2 `|` | Create a table using the pipes and underscores as given in the syntax to create 2 x 2 table. |
+| Unordered List | `*` First<br> `*` second | For unordered list, preceding one or more lines of text with `*`. |
+| Links | **Link text without title text**<br>`[` Link text `](`URL`)`<br> **Link text with title text**<br>`[` Link text `](`URL , "title text"`)` | Create an inline link by wrapping link text in brackets `[ ]`, and then wrapping the URL as first parameter and title as second parameter in the parentheses `()`.<br>**Note:** The title text is optional, if needed it can be given manually.|
+| Table | `| Heading 1 | Heading 2 |<br>|---------|---------|<br>| Col A1 | Col A2 |<br>| Col B1 | Col B2 |` | Create a table using the pipes and underscores as given in the syntax to create 2 x 2 table. |
 | Horizontal Line | `***` (three asterix in new line)<br>(or)<br>`___` (three underscores in new line) | For horizontal line, add `***` or `___` to the start of the new line. |
-| Image | `[` alternate text `](`URL path`)` | Create an image by wrapping the image source in parentheses `()`. |
-| Image with alternate text | `[` alternate text `](`URL path`)` | Create an image with alternate text by wrapping an alternative text in brackets `[]`, and then link of the image source in parentheses `()`.<br>**Note:** When inserting the image using toolbar, the alternate text cannot be provided that needs to be given manually. |
+| Image | `![alt text](`URL path`)` | Create an image by wrapping the image source in parentheses `()`. |
+| Image with alternate text | `![alt text](`URL path`)` | Create an image with alternate text by wrapping an alternative text in brackets `[]`, and then link of the image source in parentheses `()`.<br>**Note:** When inserting the image using toolbar, the alternate text cannot be provided that needs to be given manually. |
 | Escape tick marks supported | Sample text content with `**`bold and `**`not bold`**` text can be in the same line.`**` | In the syntax, the whole content is made as bold where the content `not bold` can be made as normal text by adding the bold syntax to the start and end of the respective text. Likewise you can do the same for various inline commands. |
 | Escape Character | `\(`any syntax`)` | Escape any markdown syntax by prefix `\` to the syntax.<br>Example:<br>`\**`Bold text`**`|
 | HTML Entities | Copyright: &copy; - `&copy;` <br>Trade mark: &trade; - `&trade;`<br>Registered: &reg; - `&reg;`<br>Ampersand: &amp; - `&amp;`<br>Less than: &lt; - `&lt;`<br>Greater than: &gt; - `&gt;` | For HTML entities, add & and ; to the front and back of the respective entities. |
 
-N> The above listed commands alone are supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown editor. For other unsupported commands, you can achieve using the HTML tags in Markdown editor. The foot notes, definitions, math, and check list markdown syntax are also not supported.
+> The above listed commands are the only ones supported in the Syncfusion <sup style="font-size:70%">&reg;</sup> Markdown editor. For other commands, use HTML tags within the Markdown editor. Additionally, footnotes, definitions, math, and checklist Markdown syntax are not supported.
 
-## Markdown to HTML
+## Insert table
 
-The Rich Text Editor allows you to preview markdown changes immediately using preview. The third-party library [`Marked`](https://marked.js.org/#/README.md#README.md) is used in this sample to convert markdown into HTML content.
+Add the `CreateTable` item to the toolbar items to use the table tool.
 
-This sample demonstrates how to preview markdown changes in Rich Text Editor. Type or edit the display text and apply format to view the preview of markdown.
+To insert a table in the Markdown editor, click the `insert table` icon in the toolbar. By default, the inserted Markdown table includes 2 rows and 2 columns, along with a heading.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown/tagHelper %}
+{% include code-snippet/rich-text-editor/markdown-table/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown-table/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,23 +70,64 @@ This sample demonstrates how to preview markdown changes in Rich Text Editor. Ty
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown/razor %}
+{% include code-snippet/rich-text-editor/markdown-table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown-table/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Insert image
 
+Add the `Image` item to the toolbar to enable the image tool.
 
-## Table
+To insert an image in the Markdown editor, follow these steps:
 
-Rich Text Editor allows to insert Markdown table in edit panel with 2 X 2 rows and columns along with the heading. To use table tool, add the `CreateTable` item in toolbar items.
+  1. Click the `Insert Image` icon in the toolbar.
+  2. Browse and select an image from your local machine by clicking the browse button, or enter an image link from an online source.
+  3. Click the Insert button in the image dialog.
 
-### Insert Table
+The selected image will be added to the editor area.
 
-To insert the table in Rich Text Editor, click the `table` toolbar option to insert the table into Rich Text Editor content and this is the default way in all the devices. Refer the below sample and code snippets to add the table in Markdown editor.
+Please refer to the sample and code snippets below to add the image in the Markdown editor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-table/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-table/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-table/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-table/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Insert link
+
+To use a link, add the `CreateLink` item to the toolbar items. 
+
+To create a link for a text or an image in the Markdown editor, follow these steps:
+
+  1. Click the `Insert` icon in the link dialog.
+  2. Enter the link and other relevant information.
+  3. Click the **Insert** button to add the link to the editor area.
+
+The link will be added to the editor area.
+
+Please refer to the sample and code snippets below to add the link in the Markdown editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -115,19 +153,20 @@ To insert the table in Rich Text Editor, click the `table` toolbar option to ins
 {% endif %}
 
 
+## Markdown to HTML
 
-### Changing Table Constants
+The Rich Text Editor provides an instant preview of Markdown changes. Type or edit the text and apply formatting to view the Markdown preview.
 
-The Markdown table constants can be changed for the table heading and the column names.
+This example demonstrates how to preview Markdown changes in the Rich Text Editor. The third-party library [`Marked`](https://marked.js.org/) is used to convert Markdown into HTML content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown-table-constants/tagHelper %}
+{% include code-snippet/rich-text-editor/markdown/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown-table-constants/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,17 +174,16 @@ The Markdown table constants can be changed for the table heading and the column
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown-table-constants/razor %}
+{% include code-snippet/rich-text-editor/markdown/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown-table-constants/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-
-
 ## See Also
 
-* [How to integrate the third party library](./third-party-integration/)
-* [How to change the editor mode](./formation/#markdown-editor)
+* [How to render the toolbar in inline mode](./inline-editing)
+* [How to render the iframe](./iframe)
+* [How to add the Rich Text Editor control](./getting-started#add-aspnet-core-rich-text-editor-control)

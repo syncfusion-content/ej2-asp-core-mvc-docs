@@ -1,0 +1,2 @@
+<ejs-richtexteditor id="read-only" readonly="true" value="@ViewBag.value">
+</ejs-richtexteditor>

@@ -21,6 +21,11 @@ public class HomeController : Controller
             content = "Cancel"
         };
 
+        ViewBag.value= @"<p>
+                The custom command 'insert special character' is configured as the last item of the toolbar.
+                Click on the command and choose the special character you want to include from the popup.
+            </p>";
+
         return View();
     }
 }
