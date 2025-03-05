@@ -276,14 +276,13 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` page.
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 @using Syncfusion.EJ2
-
 @Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor")).Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
-		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-		col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-	}).Render()
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -365,7 +364,7 @@ To enable sorting operations in your web application using OData, you first need
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ...
-// Enable OData
+// Enable OData.
 config.MapODataServiceRoute(
     routeName: "ODataRoute",
     routePrefix: "odata",
@@ -404,7 +403,7 @@ To implement paging operations in your web application using OData, you can util
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ....
-// Enable OData
+// Enable OData.
 config.MapODataServiceRoute(
     routeName: "ODataRoute",
     routePrefix: "odata",
@@ -539,10 +538,10 @@ The Syncfusion ODataV4 adaptor extends support for calling customized URLs to ac
 
 To work with custom URLs for CRUD operations in the Syncfusion Grid, you can use the following properties:
 
-* insertUrl: Specifies the custom URL for inserting new records.
-* removeUrl: Specifies the custom URL for deleting records.
-* updateUrl: Specifies the custom URL for updating records.
-* batchUrl: Specifies the custom URL for batch editing operations.
+* InsertUrl: Specifies the custom URL for inserting new records.
+* RemoveUrl: Specifies the custom URL for deleting records.
+* UpdateUrl: Specifies the custom URL for updating records.
+* BatchUrl: Specifies the custom URL for batch editing operations.
 
 > Ensure that the routing configurations on the server-side are properly updated to handle these custom URLs.
 
@@ -550,14 +549,13 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders")
-         .Adaptor("ODataV4Adaptor").InsertUrl(https://localhost:xxxx/odata/Orders/Insert).UpdateUrl(https://localhost:xxxx/odata/Orders/Update).RemoveUrl(https://localhost:xxxx/odata/Orders/Delete)) // Replace `xxxx` with your actual localhost port number.
-         .Columns(col =>
-         {
-            col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
-            col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-            col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
-            col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-         }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor").InsertUrl(https://localhost:xxxx/odata/Orders/Insert).UpdateUrl(https://localhost:xxxx/odata/Orders/Update).RemoveUrl(https://localhost:xxxx/odata/Orders/Delete)) // Replace `xxxx` with your actual localhost port number.
+.Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 {% endhighlight %}
 {% endtabs %}
