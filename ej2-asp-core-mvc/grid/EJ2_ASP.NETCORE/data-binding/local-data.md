@@ -665,9 +665,9 @@ The following example demonstrates how to display the loading indicator in the G
 
 The Syncfusion ASP.NET Core Grid provides a seamless way to bind data from external sources using AJAX requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page
 
-To achieve data binding and perform CRUD actions using Ajax requests in the Grid, follow these steps:
+To achieve data binding and perform CRUD actions using AJAX requests in the Grid, follow these steps:
 
-**Step 1:** To create a new ASP.NET Core Web App(Razor Pages) project named AJAXRequest, follow these steps:
+**Step 1:** To create a new ASP.NET Core Web App(Razor Pages) project named AJAX Request, follow these steps:
 
 * Open Visual Studio.
 * Select “Create a new project”
