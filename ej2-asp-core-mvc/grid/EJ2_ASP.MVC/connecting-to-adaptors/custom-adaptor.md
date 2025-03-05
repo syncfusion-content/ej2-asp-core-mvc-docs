@@ -417,7 +417,7 @@ config.Count().Filter(); // Handles searching operation.
 {% endhighlight %}
 {% endtabs %}
 
-![Searching query](../../images/adaptors/customadaptor/custom-adaptor-searching.jpg)
+![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
 
 ## Handling Filtering Operation
 
@@ -460,10 +460,10 @@ config.Count().Filter(); // Handles filtering  operation.
 {% endhighlight %}
 {% endtabs %}
 
-Single column filtering
-![Filtering query](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-filtering.png)
-Multi column filtering
-![Filtering query](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-multi-column-filtering.png)
+**Single column filtering**
+![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
+**Multi column filtering**
+![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling Sorting Operation
 
@@ -507,13 +507,13 @@ config.Count().OrderBy(); // Handles sorting  operation.
 {% endhighlight %}
 {% endtabs %}
 
-*Single column sorting*
+**Single column sorting**
 
-![Single column sorting query](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-sorting.png)
+![Single column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
 
-*Multi column sorting*
+**Multi column sorting**
 
-![Multi column sorting query](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-multi-column-sorting.png)
+![Multi column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling Paging Operation
 
@@ -557,7 +557,7 @@ config.Count().MaxTop(null); // Handles paging  operation.
 {% endhighlight %}
 {% endtabs %}
 
-![paging query](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-paging.png)
+![paging query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
 
 ## Handling CRUD Operations
 
@@ -617,7 +617,7 @@ To insert a new record into your Grid, you can utilize the `HttpPost` method in 
  }
 ```
 
-![Update record](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-insert-record.png)
+![CustomAdaptor-Insert-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-insert-record.png)
 
 **Update Operation:**
 
@@ -647,7 +647,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
     return Ok(updateRecord);
 }
 ```
-![Update record](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-update-record.png)
+![CustomAdaptor-Update-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
 
 **Delete Operation**
 
@@ -669,5 +669,4 @@ public IHttpActionResult Delete(int key)
     return Ok(deleteRecord);
 }
 ```
-
-![Delete Record](../../images/adaptors/customadaptor/adaptors/odatav4-adaptor-delete-record.png)
+![CustomAdaptor-Delete-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
