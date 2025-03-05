@@ -50,7 +50,7 @@ To zoom in or out the image in the image editor, do the following steps.
 
 * Zoom in and out controlled by touch gestures. 
 
-### Using Mouse wheel 
+### Using mouse wheel 
 
 To zoom in or out the image in the image editor, do the following steps. 
 

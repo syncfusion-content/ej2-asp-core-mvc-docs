@@ -24,7 +24,7 @@ When it comes to saving the edited image, the default file type is set as PNG. T
 
 The `open` method in the Image Editor control offers the capability to open an image by providing it in different formats. This method accepts various types of arguments, such as a base64-encoded string, raw image data, or a hosted/online URL. You can pass either the file name or the actual image data as an argument to the `open` method, and it will load the specified image into the Image Editor control. This flexibility allows you to work with images from different sources and formats, making it easier to integrate and manipulate images within the Image Editor control. 
 
-### Opening Local Images in the Image Editor
+### Opening local images in the Image Editor
 
 Users can easily open local images in the Image Editor. Simply place the image in the same folder as the sample. By specifying the local file name directly in the `open` method, the image will be loaded seamlessly into the editor.
 
@@ -88,7 +88,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-save-base.png)
 
-### Open an image from blob storage
+### Open an image from Blob storage
 
 User can easily open images in the Image Editor from Blob storage. This method allows you to load images directly from Blob storage, ensuring seamless integration and flexibility in your application. Simply retrieve the image Blob from storage and pass it to the `open` method, and the image will be loaded into the editor.
 
@@ -121,7 +121,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-open-blob.png)
 
-### Open an image from the uploader
+### Open an image from File Uploader
 
 User can easily open images in the Image Editor using a file uploader. This method allows users to upload an image file from their device and load it directly into the editor. Once the image is selected through the file uploader, pass the file to the `open` method, and the image will be seamlessly loaded into the editor.
 
@@ -358,7 +358,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-byte-array.png)
 
-### Save the image as blob
+### Save the image as Blob
 
 To save an image as a blob, use the [`getImageData`] method of the editor to retrieve the image data and convert it into a blob. You can then invoke the `open` method on the Syncfusion<sup style="font-size:70%">&reg;</sup> Image Editor instance to load this byte array into the editor. The resulting byte array can be stored in a database for data management and maintenance.
 
