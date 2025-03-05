@@ -75,4 +75,4 @@ You can prevent auto hiding in a toast as visible like static by setting zero (`
 
 ## See Also
 
-* [Hide the toast on click](./how-to/close-the-toast-with-click-tap/)
+* [Hide the toast on click](./how-to/close-the-toast-with-click-tap)
