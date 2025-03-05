@@ -174,6 +174,10 @@ This section contains miscellaneous tools such as full-screen mode, print, previ
 
 ## How to Enable the Toolbar
 
+To learn about the different types of toolbars in the ASP.NET Core Rich Text Editor, watch this video:
+
+{% youtube "youtube:https://www.youtube.com/watch?v=09tBgKpjgjU"%}
+
 The Rich Text Editor toolbar contains a collection of tools such as bold, italic and text alignment buttons that are used to format the content. However, in most integrations, you can customize the toolbar configurations easily to suit your needs.
 
 The Rich Text Editor allows you to configure different types of toolbar using [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Type) field in [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The types of toolbar are:
@@ -292,7 +296,11 @@ Additionally, you can enable or disable the floating toolbar using the [enableFl
 {% endtabs %}
 {% endif %}
 
-### Custom Toolbar Items
+### Custom Toolbar
+
+To quickly get started with the ASP.NET Core Rich Text Editor with a custom toolbar, watch this video:
+
+{% youtube "youtube:https://www.youtube.com/watch?v=AnHsErOlU1A"%}
 
 The Rich Text Editor allows you to configure your own commands to its toolbar using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. The command can be plain text, icon, or HTML template. The order and the group can also be defined where the command should be included. Bind the action to the command by getting its instance.
 
@@ -347,7 +355,7 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 
 You can use the `enableToolbarItem` and `disableToolbarItem` methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
->You can add the command name `Custom` to disable the custom toolbar items on source code view and other quicktoolbar operations.
+> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
 
 
 ## Quick Inline toolbar
