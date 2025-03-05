@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## FileManager Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## FileManager control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## File Manager Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC FileManager Control
+# Getting Started with ASP.NET MVC File Manager Control
 
-This section briefly explains about how to include [ASP.NET MVC FileManager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -83,9 +83,9 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC FileManager Control
+## Add ASP.NET MVC File Manager Control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileManager control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -96,9 +96,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileMa
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC FileManager control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control will be rendered in the default web browser.
 
-![ASP.NET MVC FileManager Control](images/getting-started.png)
+![ASP.NET MVC File Manager Control](images/getting-started.png)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
