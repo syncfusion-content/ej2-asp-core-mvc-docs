@@ -56,9 +56,9 @@
 </div>
 
 <script>
+    var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
+    var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
     document.getElementById('sample').addEventListener('click', function () {
-        var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
-        var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
         var name = document.getElementById('uname').value;
         var pwd = document.getElementById('pwd').value;
         var cpwd = document.getElementById('cpwd').value;
@@ -86,9 +86,6 @@
         }
     })
     document.getElementById('clear').addEventListener('click', function () {
-        var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
-        var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
-
         document.getElementById('uname').style.backgroundColor = 'white';
         document.getElementById('pwd').style.backgroundColor = 'white';
         var target = document.getElementById('uname');

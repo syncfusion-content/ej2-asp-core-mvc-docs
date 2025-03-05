@@ -2,22 +2,27 @@
 
 @{
     var template = "<div class=\"listWrapper\" style=\"width: inherit; height: inherit;\">" +
-"            <span class=\"${icons} list_svg\"> </span>" +
-"            <span class=\"list_text\">${text}</span>" +
-"            ${if(messages !== '')}" +
-"            <span class='${badge}' style=\"float: right; margin-top: 16px; font-size: 12px;\">${messages}</span>" +
-"            ${/if}" +
-"        </div>";
+                   "<span class=\"${icons} list_svg\"> </span>" +
+                   "<span class=\"list_text\">${text}</span>" +
+                   "${if(messages !== '')}" +
+                   "<span class='${badge}' style=\"float: right; margin-top: 16px; font-size: 12px;\">${messages}</span>" +
+                   "${/if}" +
+                   "</div>";
 }
 
 <div class="col-lg-12 control-section">
     <div class="sample_container badge-list">
         <!-- Listview element -->
-        @Html.EJS().ListView("lists").Enable(true).DataSource((IEnumerable<object>)ViewBag.dataSource).HeaderTitle("Inbox").ShowHeader(true).Template(template).ActionComplete("actionComplete").Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy = "type" }).Render()
+        @Html.EJS().ListView("lists")
+            .Enable(true)
+            .DataSource((IEnumerable<object>)ViewBag.dataSource)
+            .HeaderTitle("Inbox")
+            .ShowHeader(true)
+            .Template(template)
+            .ActionComplete("actionComplete")
+            .Fields(new Syncfusion.EJ2.Lists.ListViewFieldSettings { GroupBy = "type" }).Render()
     </div>
 </div>
-
-
 
 <script>
     function actionComplete() {
