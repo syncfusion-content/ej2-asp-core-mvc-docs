@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Rich Text Editor Component
+title: Link in Syncfusion ##Platform_Name## Rich Text Editor Component
 description: Learn here all about Link in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
