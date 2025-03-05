@@ -51,7 +51,7 @@ The File Manager supports selecting files and folders in specific ranges through
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To enable range selection, you need to set the `enableRangeSelection` property to `true` and ensure that multi-selection is allowed using the `allowMultiSelection` property.
+To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -64,7 +64,7 @@ To enable range selection, you need to set the `enableRangeSelection` property t
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-To enable range selection, you need to set the `enableRangeSelection` property to `true` and ensure that multi-selection is allowed using the `allowMultiSelection` property.
+To enable range selection, you need to set the [enableRangeSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRangeSelection) property to `true` and ensure that multi-selection is allowed using the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
