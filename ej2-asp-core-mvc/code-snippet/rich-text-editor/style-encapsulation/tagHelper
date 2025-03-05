@@ -1,0 +1,53 @@
+<div class="control-section">
+    <div class="editor">
+        <h6 class="header">With style encapsulation</h6>
+        <ejs-richtexteditor id="iframe" value="@ViewBag.value">
+            <e-richtexteditor-iframesettings enable="true"></e-richtexteditor-iframesettings>
+        </ejs-richtexteditor>
+    </div>
+
+    <div class="editor">
+        <h6 class="header">Without style encapsulation</h6>
+        <ejs-richtexteditor id="defaultRTE" value="@ViewBag.value"></ejs-richtexteditor>
+    </div>
+</div>
+
+<style>
+    .control-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    p {
+        color: blue;
+    }
+
+    p strong {
+        font-size: 120%;
+        background-color: yellow;
+    }
+
+    li p {
+        background-color: blue;
+        color: white;
+    }
+
+    #richTextEditor {
+        margin-left: 10px;
+    }
+
+    .header {
+        display: inline-block;
+        padding: 10px 15px;
+        border: 1px solid #ccc;
+        background-color: #f8f9fa;
+        color: #333;
+        font-size: 14px;
+        font-weight: normal;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 10px;
+    }
+</style>

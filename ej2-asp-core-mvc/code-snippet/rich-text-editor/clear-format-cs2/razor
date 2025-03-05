@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("clear-format").ToolbarSettings(e => e.Items((object)ViewBag.items)).Value(ViewBag.value).Render()
