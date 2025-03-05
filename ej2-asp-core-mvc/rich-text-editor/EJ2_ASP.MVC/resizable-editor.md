@@ -37,7 +37,7 @@ The following sample demonstrates the resizable feature.
 {% endtabs %}
 {% endif %}
 
-![Rich Text Editor Resizable support](../images/Resizable-Editor.png)
+![Rich Text Editor Resizable support](./images/Resizable-Editor.png)
 
 ## Setting Editor Resize Limits
 

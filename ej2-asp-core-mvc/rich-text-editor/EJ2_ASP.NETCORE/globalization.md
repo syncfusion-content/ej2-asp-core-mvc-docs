@@ -473,7 +473,7 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 }
 ```
 
-N> This direction does not change based on the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_Locale_System_String_) property.
+> This direction does not change based on the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_Locale_System_String_) property.
 
 
 {% if page.publishingplatform == "aspnet-core" %}

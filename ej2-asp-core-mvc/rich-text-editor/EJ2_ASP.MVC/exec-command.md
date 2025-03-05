@@ -48,4 +48,4 @@ The execCommand will perform the following commands.
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
 | escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
 
-N> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor
+> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor

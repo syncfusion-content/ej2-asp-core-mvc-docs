@@ -51,7 +51,7 @@ The following code example shows how to add the emoji picker tool in the Rich Te
 
 Quickly access the emoji picker by pressing the colon (:) key while typing a word prefix in an editor, allowing instant emoji selection and display. Moreover, continue typing in the editor after the colon (:) to filter and refine your search for the desired emojis.
 
-![Rich Text Editor Emoji Picker](../images/emoji-picker-shorcut.png)
+![Rich Text Editor Emoji Picker](./images/emoji-picker-shorcut.png)
 
 ## Navigating and Selecting Emojis Using the Keyboard
 
