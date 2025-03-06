@@ -1,8 +1,4 @@
-<ejs-richtexteditor id="emojiPickerRTE">
+<ejs-richtexteditor id="emojiPickerRTE" value="@ViewBag.value">
     <e-richtexteditor-toolbarsettings items="ViewBag.items"/>
     <e-richtexteditor-emojipickersettings iconsSet= "ViewBag.iconsSet"/>
-      <e-content-template>
-        <p>An emoji picker in a Rich Text Editor is a tool that allows users to easily add emojis or emoticons to their text.</p>
-        <p>Typically, it is a small window or panel that displays a variety of emojis, arranged in different categories, such as smileys, animals, food, and so on. Users can select the desired emoji by clicking on it or by typing its name in a search bar.</p>
-      </e-content-template>
 </ejs-richtexteditor>

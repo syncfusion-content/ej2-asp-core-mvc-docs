@@ -3,6 +3,7 @@
         <!--  Initialize File Manager control with IBM COS service-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                     getImageUrl="http://localhost:{port}/GetImage"
                     url="http://localhost:{port}"
                     downloadUrl="http://localhost:{port}/Download"
