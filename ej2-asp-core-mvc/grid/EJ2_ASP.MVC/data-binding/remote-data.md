@@ -16,7 +16,7 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 ## Custom binding
 
-The custom binding feature in the ASP.Net MVC Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the `DataManager`. The DataManager integrates seamlessly with the ASP.Net MVC Grid to manage custom data processing and binding. 
+The custom binding feature in the Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the `DataManager`. The DataManager integrates seamlessly with the ASP.Net MVC Grid to manage custom data processing and binding. 
 
 The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [DataSourceChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSourceChanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
@@ -658,6 +658,35 @@ The following code example demonstrates how to export all records on the client 
 {% endhighlight %}
 {% endtabs %}
 
+## Sending additional parameters to the server
+
+The Syncfusion ASP.NET MVC Grid allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+
+By utilizing the `Query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
+
+To enable custom parameters in data requests for the Grid, follow these steps:
+
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `Query` property of the Grid.
+
+**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the `addParams` method to add the custom parameters.
+
+**3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event handler to execute the query with the updated state.
+
+**4. Execute Data Request:** In the service, execute the data request by combining the custom parameters with other query parameters such as paging and sorting.
+
+The following example demonstrates how to send additional parameters to the server:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-prams/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="remotedata.cs" %}
+{% include code-snippet/grid/data-binding/remote-prams/custombinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AdditionalParameters](../images/databinding/remote-params.png)
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **Offline** property of DataManager.
@@ -669,4 +698,4 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight c# tabtitle="Offline.cs" %}
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} 
