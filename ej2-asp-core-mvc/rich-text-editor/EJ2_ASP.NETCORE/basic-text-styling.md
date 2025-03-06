@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Text Styling in ##Platform_Name## Rich Text Editor Control
+title: Basic Text Styling in ##Platform_Name## Rich Text Editor Control | Sycnfusion
 description: Learn here all about Basic Text Styling in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Basic Text Styling

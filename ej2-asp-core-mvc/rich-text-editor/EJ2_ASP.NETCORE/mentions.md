@@ -4,7 +4,7 @@ title: Mention Integration in ASP.NET Core Rich Text Editor | Syncfusion
 description: Learn here all about Mention Integration in Syncfusion ASP.NET Core Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Mention Integration
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

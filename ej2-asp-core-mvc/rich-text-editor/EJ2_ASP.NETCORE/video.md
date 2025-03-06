@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Video in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Video in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Video in ##Platform_Name## Rich Text Editor Control | Syncfusion
+description: Learn here all about Video in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Video
 publishingplatform: ##Platform_Name##
