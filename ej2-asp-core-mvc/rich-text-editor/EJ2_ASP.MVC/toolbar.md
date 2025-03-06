@@ -347,7 +347,7 @@ This sample demonstrates how to add a custom "Ω" icon to the toolbar. Clicking 
 
 You can use the `enableToolbarItem` and `disableToolbarItem` methods to control the state of toolbar items. This methods takes a single item or an array of [items](#available-toolbar-items) as parameter.
 
-> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quicktoolbar operations.
+> You can add the command name `Custom` to disable the custom toolbar items on source code view and other quick toolbar operations.
 
 
 ## Quick Inline toolbar
