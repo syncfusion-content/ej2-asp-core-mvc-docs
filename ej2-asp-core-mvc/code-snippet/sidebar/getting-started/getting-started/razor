@@ -1,13 +1,14 @@
- <!-- sidebar element declaration -->
-@{Html.EJS().Sidebar("default-sidebar").CloseOnDocumentClick(false).ContentTemplate(
-@<div>
-    <div class="title-header">
-        <div style="display:inline-block"> Sidebar </div>
-    </div>
-</div>).Render();
+
+@{Html.EJS().Sidebar("default-sidebar")
+    .CloseOnDocumentClick(false)
+    .ContentTemplate(
+    @<div>
+        <div class="title-header">
+            <div style="display:inline-block"> Sidebar </div>
+        </div>
+    </div>).Render();
 }
-<!-- end of sidebar element -->
-<!--  Main Content declaration -->
+
 <div>
     <div class="title default">Main content</div>
     <div class="sub-title">

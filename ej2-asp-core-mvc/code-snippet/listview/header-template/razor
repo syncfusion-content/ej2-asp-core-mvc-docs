@@ -1,7 +1,8 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
 
-@{ var headerTemplate = "<div class='headerContainer'><span class='fruitHeader'>Fruits</span>" +
+@{ 
+    var headerTemplate = "<div class='headerContainer'><span class='fruitHeader'>Fruits</span>" +
           "<button id='search'></button><button id='add'></button><button id='sort'></button></div>";
 
 }

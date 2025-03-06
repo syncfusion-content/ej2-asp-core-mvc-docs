@@ -1,8 +1,8 @@
 
-    <ejs-listview id="listview" dataSource="ViewBag.dataSource" showHeader="true" headerTitle="Device settings">
-        <e-listview-fieldsettings id="id" text="Name">
-        </e-listview-fieldsettings>
-    </ejs-listview>
+<ejs-listview id="listview" dataSource="ViewBag.dataSource" showHeader="true" headerTitle="Device settings">
+    <e-listview-fieldsettings id="id" text="Name">
+    </e-listview-fieldsettings>
+</ejs-listview>
 
 
 <style>
