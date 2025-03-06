@@ -18,6 +18,7 @@
         width: 100px;
     }
 </style>
+
 <script>
     function created() {
     document.getElementById('target').addEventListener("click", function () {

@@ -1,7 +1,7 @@
 <ejs-tooltip id="tooltip" position="TopCenter" content="Tooltip content" tipPointerPosition="Start">
     <e-content-template>
         <ejs-button id='target' content="Show tooltip"></ejs-button>
-        </e-content-template>
+    </e-content-template>
 </ejs-tooltip>
 
 <style>

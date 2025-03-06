@@ -2,11 +2,11 @@
 @using Syncfusion.EJ2.Popups
 
 <div class="control-section">
-        @Html.EJS().Tooltip("targetContainer")
-            .Content("Drag me")
-            .Target("#demoSmart")
-            .ContentTemplate(@<div id="demoSmart"></div>)
-            .Render()
+    @Html.EJS().Tooltip("targetContainer")
+    .Content("Drag me")
+    .Target("#demoSmart")
+    .ContentTemplate(@<div id="demoSmart"></div>)
+    .Render()
 </div>
 
 <script type="text/javascript">
@@ -47,7 +47,8 @@
         top: 35%;
         width: 50px;
     }
-      #targetContainer {
+
+    #targetContainer {
         margin: 10px;
         min-height: 320px;
         width: 100%;
@@ -60,4 +61,4 @@
         padding: 3px;
         margin-right: 20px;
     }
- </style>
+</style>
