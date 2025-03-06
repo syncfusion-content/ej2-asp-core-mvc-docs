@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting started with ASP.NET Core FileManager Control
+# Getting started with ASP.NET Core File Manager Control
 
 This section briefly explains about how to include [ASP.NET Core FileManager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
 
@@ -87,9 +87,9 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core FileManager control
+## Add ASP.NET Core File Manager control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core FileManager tag helper in **~/Pages/Index.cshtml** page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -255,9 +255,9 @@ namespace WebApplication4.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core FileManager control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager control will be rendered in the default web browser.
 
-![FileManager getting started](images/getting-started.PNG)
+![File Manager getting started](images/getting-started.PNG)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
@@ -305,7 +305,7 @@ In this sample demonstrates the full features of the File Manager that includes 
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager overview](./images/overview.PNG)
+![File Manager overview](./images/overview.PNG)
 
 N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
 
@@ -319,7 +319,7 @@ The initial view of the File Manager can be changed to details or largeicons vie
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager switching view ](./images/overview.PNG)
+![File Manager switching view ](./images/overview.PNG)
 
 ## Maintaining control state on page reload
 
@@ -336,7 +336,7 @@ For every operation in File Manager, ajax request will be sent to the server whi
 {% endhighlight %}
 {% endtabs %}
 
-![FileManager enable persistence](images/enable_persistence.PNG)
+![File Manager enable persistence](images/enable_persistence.PNG)
 
 N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
 
@@ -364,7 +364,7 @@ The following code snippet demonstrates specifying the current path in File Mana
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core FileManager with Specific Path](images/path.png)
+![ASP.NET Core File Manager with Specific Path](images/path.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

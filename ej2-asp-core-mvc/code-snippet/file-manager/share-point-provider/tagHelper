@@ -3,7 +3,8 @@
         <!--  Initialize File Manager control with SharePoint Provider-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
-                     getImageUrl="http://localhost:{port}/api/SharePointProvider/SharePointGetImage"
+            <e-filemanager-ajaxsettings
+                    getImageUrl="http://localhost:{port}/api/SharePointProvider/SharePointGetImage"
                     url="http://localhost:{port}/api/SharePointProvider/SharePointFileOperations"
                     downloadUrl="http://localhost:{port}/SharePointProvider/SharePointDownload"
                     uploadUrl="http://localhost:{port}/SharePointProvider/SharePointUpload">
