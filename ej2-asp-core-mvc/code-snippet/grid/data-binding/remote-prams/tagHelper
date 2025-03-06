@@ -52,7 +52,6 @@
                     count: result.count // Total record count based on fetched data length.
                 };
             });
-
     }
     
     const applyPaging = (query, state) => {

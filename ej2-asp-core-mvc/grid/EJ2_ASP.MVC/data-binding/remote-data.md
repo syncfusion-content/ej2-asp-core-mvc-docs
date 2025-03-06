@@ -664,11 +664,11 @@ The Syncfusion ASP.NET MVC Grid allows you to include custom parameters in data 
 
 By utilizing the `Query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
 
-To enable custom parameters in data requests for the Grid component, follow these steps:
+To enable custom parameters in data requests for the Grid, follow these steps:
 
 **1. Bind the Query Object to the Grid**: Assign the initialized query object to the `Query` property of the Grid.
 
-**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the addParams method to add the custom parameters.
+**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the `addParams` method to add the custom parameters.
 
 **3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event handler to execute the query with the updated state.
 
