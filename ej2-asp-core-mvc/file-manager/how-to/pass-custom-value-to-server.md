@@ -2,7 +2,7 @@
 layout: post
 title: Custom value to server in ##Platform_Name##  File Manager component | Syncfusion
 description: Learn here all about How to pass custom value to server in Syncfusion ##Platform_Name##  File Manager component of Syncfusion Essential JS 2 and more.
-platform: ej2-vue
+platform: ej2-asp-core-mvc
 control: File Manager 
 publishingplatform: ##Platform_Name##
 documentation: ug
