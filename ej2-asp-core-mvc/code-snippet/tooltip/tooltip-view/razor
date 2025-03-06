@@ -19,80 +19,44 @@
     color: #424242;
     font-size: 20px;
     user-select: none;
-}
+  }
 
-.customtooltip.e-tooltip-wrap {
+  /* Custom Tooltip Styles Start */
+  .customtooltip.e-tooltip-wrap {
     border-radius: 4px;
     opacity: 1;
     background-color: #fff;
     border: 2px solid #000;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-tip-content {
+  .customtooltip.e-tooltip-wrap .e-tip-content {
     line-height: 20px;
     color: #000;
     font-size: 12px;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip {
-    position: absolute;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom,
+  .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
     height: 12px;
-    left: 50%;
-    top: 100%;
     width: 24px;
-}
+    left: 50%;
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
     border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
+    border-right: 14px solid transparent;
     border-top: 12px solid #000;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
-    height: 12px;
-    left: 50%;
-    top: -9px;
-    width: 24px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #000;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
-    height: 24px;
-    left: -9px;
-    top: 48%;
-    width: 12px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent;
-    border-right: 12px solid #000;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
-    height: 24px;
-    left: 100%;
-    top: 50%;
-    width: 12px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
-    border-top: 12px solid transparent;
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
     border-bottom: 12px solid transparent;
     border-left: 12px solid #000;
-}
+    border-top: 12px solid transparent;
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
     color: #fff;
     font-size: 25.9px;
-}
+  }
 
 </style>
