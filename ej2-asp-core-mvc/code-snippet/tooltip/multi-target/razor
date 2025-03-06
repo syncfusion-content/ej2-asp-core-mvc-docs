@@ -56,43 +56,43 @@
 
 
 <script>
-    var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
-    var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
     document.getElementById('sample').addEventListener('click', function () {
-        var name = document.getElementById('uname').value;
-        var pwd = document.getElementById('pwd').value;
-        var cpwd = document.getElementById('cpwd').value;
-        if (name.length > 0 & name.length < 4) {
-            document.getElementById('uname').title = 'Required Minimum 4 Characters';
-            document.getElementById('uname').style.backgroundColor = 'red';
-            var target = document.getElementById('uname');
-            tooltip1.open(target);
+        var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
+        var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
+        let uname = document.getElementById('uname');
+        let pwd = document.getElementById('pwd');
+        let cpwd = document.getElementById('cpwd');
+        if (uname.value.length > 0 & uname.value.length < 4) {
+            uname.title = 'Required Minimum 4 Characters';
+            uname.style.backgroundColor = 'red';
+            tooltip1.open(uname);
         } else {
 
-            document.getElementById('uname').style.backgroundColor = 'white';
+            uname.style.backgroundColor = 'white';
         }
-        if (pwd !== '' && pwd.length < 8) {
-            document.getElementById('pwd').title = 'Required Minimum 8 Characters';
-            document.getElementById('pwd').style.backgroundColor = 'red';
-            var pwdtarget = document.getElementById('pwd');
-            tooltip3.open(pwdtarget);
+        if (pwd !== '' && pwd.value.length < 8) {
+            pwd.title = 'Required Minimum 8 Characters';
+            pwd.style.backgroundColor = 'red';
+            tooltip3.open(pwd);
         } else {
-            document.getElementById('pwd').style.backgroundColor = 'white';
+            pwd.style.backgroundColor = 'white';
         }
-        if (name.length >= 4 && pwd !== '' && pwd.length >= 8 && pwd == cpwd) {
+        if (uname.value.length >= 4 && pwd !== '' && pwd.value.length >= 8 && pwd == cpwd.value) {
             alert('Form Submitted');
         } else {
             alert('Details are not Valid');
         }
     })
     document.getElementById('clear').addEventListener('click', function () {
-        document.getElementById('uname').style.backgroundColor = 'white';
-        document.getElementById('pwd').style.backgroundColor = 'white';
-        var target = document.getElementById('uname');
-        tooltip1.close(target);
-        document.getElementById('uname').title = 'Please enter your name';
-        var pwdtarget = document.getElementById('pwd');
-        tooltip3.close(pwdtarget);
+        var tooltip1 = document.getElementById('tooltip1').ej2_instances[0];
+        var tooltip3 = document.getElementById('tooltip3').ej2_instances[0];
+        let uname = document.getElementById('uname');
+        let pwd = document.getElementById('pwd')
+        uname.style.backgroundColor = 'white';
+        pwd.style.backgroundColor = 'white';
+        tooltip1.close(uname);
+        uname.title = 'Please enter your name';
+        tooltip3.close(pwd);
     });
 
 </script>
