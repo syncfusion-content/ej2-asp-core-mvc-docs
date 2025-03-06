@@ -102,10 +102,6 @@
         top: -1px;
     }
 
-    .bootstrap #list .e-list-header .e-text {
-        line-height: 18px;
-    }
-
     #list .e-list-header .e-text {
         font-family: sans-serif;
         font-size: 18px;
