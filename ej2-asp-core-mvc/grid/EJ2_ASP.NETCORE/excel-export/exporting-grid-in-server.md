@@ -68,13 +68,11 @@ Here's an example of how you can accomplish CSV export on the server-side:
 
 ![CSV Export in server side](../images/excel-exporting/export-server-csv.png)
 
-## Export grid as memory stream
+## Export Grid as memory stream
 
 The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
 
-The following code demonstrates how to get the memory stream of exported grid.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The following code demonstrates how to get the memory stream of exported Grid.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -84,18 +82,6 @@ The following code demonstrates how to get the memory stream of exported grid.
 {% include code-snippet/grid/excel-export/server-export-ms/server-exportCore.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/excel-export/server-export-ms/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export-ms/server-exportCore.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Merge Grid's memory stream
 
@@ -114,7 +100,7 @@ In the following code, `ExcelEngine` and `AddCopy` method of Worksheets are used
 {% include code-snippet/grid/excel-export/server-export-ms-merge/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export-ms-merge/server-exportCore.cs %}
+{% include code-snippet/grid/excel-export/server-export-ms-merge/server-exportMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,7 +113,7 @@ If you already have a file stream, you can directly use it to merge with the Gri
 {% include code-snippet/grid/excel-export/server-export-fs-merge/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export-fs-merge/server-exportCore.cs %}
+{% include code-snippet/grid/excel-export/server-export-fs-merge/server-exportMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -140,7 +126,7 @@ To merge a local file with the Grid's memory stream, you need to convert it into
 {% include code-snippet/grid/excel-export/server-export-file-merge/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export-file-merge/server-exportCore.cs %}
+{% include code-snippet/grid/excel-export/server-export-file-merge/server-exportMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -153,7 +139,7 @@ You can download the merged memory stream by converting it into a `FileStreamRes
 {% include code-snippet/grid/excel-export/server-export-ms-download/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportMVC.cs" %}
-{% include code-snippet/grid/excel-export/server-export-ms-download/server-exportCore.cs %}
+{% include code-snippet/grid/excel-export/server-export-ms-download/server-exportMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
 
