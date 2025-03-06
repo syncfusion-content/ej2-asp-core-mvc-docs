@@ -165,4 +165,4 @@ Using the exposed APIs, you can customize the find and replace functionality in 
 ## See Also
 
 * [Options pane](../document-editor/dialog.html#options-pane)
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../documentation/document-editor/feature-module)
