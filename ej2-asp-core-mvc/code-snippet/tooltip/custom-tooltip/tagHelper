@@ -207,16 +207,20 @@ li {
 .bubbletip.e-tooltip-wrap .e-tip-content {
     border-radius: 50%;
     text-align: center;
+    color: white;
 }
 
-.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom,
-.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
     height: 40px;
     width: 50px;
-    /* .e-tip-top width should be 40px if needed, adjust as necessary */
 }
 
-.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-left,
+.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+    height: 40px;
+    width: 40px;
+}
+
+.bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-left ,
 .bubbletip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
     height: 12px;
     width: 20px;
@@ -227,49 +231,51 @@ li {
     background-color: #7b5e32;
 }
 
-.bubbletip.e-tooltip-wrap .e-arrow-tip-outer {
-    border-radius: 50px;
-    background-color: #7b5e32;
-}
-
-.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom,
-.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
     height: 10px;
     width: 10px;
     border: 1px solid #dfccad;
+    background-color: #7b5e32;
+    border-radius: 50px;
     margin-top: 20px;
     margin-right: 20px;
-    margin-left: 20px;
-    /* For e-tip-top */
 }
 
-.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left,
-.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
-    border-bottom: 6px solid transparent;
-    border-top: 6px solid transparent;
+.e-arrow-tip.e-tip-top {
+    margin-left: 60px;
+}
+
+.bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+    border: 1px solid #dfccad;
+    border-radius: 50px;
+    background-color: #7b5e32;
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
 }
 
 .bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
+    border-bottom: 6px solid transparent;
     border-right: 20px solid #dfccad;
+    border-top: 6px solid transparent;
 }
 
 .bubbletip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+    border-bottom: 6px solid transparent;
     border-left: 20px solid #dfccad;
-}
-
-.bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom,
-.bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
-    border: 2px solid #dfccad;
-    width: 20px;
-    height: 20px;
-    border-radius: 50px;
-    background-color: #7b5e32;
+    border-top: 6px solid transparent;
 }
 
 .bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
     margin-top: -2px;
     margin-left: 8px;
+    content: none;
     top: 1px !important;
+    border: 2px solid #dfccad;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #7b5e32;
 }
 
 .bubbletip .e-arrow-tip.e-tip-top {
@@ -284,20 +290,24 @@ li {
 
 .bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top {
     top: 10px !important;
+    border: 2px solid #dfccad;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #7b5e32;
 }
 
-.bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top:before,
-.bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom:before {
-    content: none;
+.bubbletip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-top:before {
+    content: None;
+}
+
+.bubbletip.e-tooltip-wrap .e-tip-content {
+    border-radius: inherit;
 }
 
 .bubbletip.e-tooltip-wrap.bubbletip {
     width: 150px !important;
     border-radius: 50%;
-}
-
-.e-arrow-tip.e-tip-top {
-    margin-left: 60px;
 }
 /* csslint ignore:end */
 
