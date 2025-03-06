@@ -4,10 +4,9 @@
 }
 
 <ejs-listview id="element" dataSource="(IEnumerable<object>)ViewBag.dataSource" template="@template" showHeader="true" headerTitle="Grid Layout">
-
 </ejs-listview>
-<style>
 
+<style>
     #element {
         display: block;
         max-width: 303px;
@@ -16,12 +15,12 @@
         border-radius: 3px;
     }
 
-        #element .e-list-item {
-            height: 100px;
-            width: 100px;
-            float: left;
-            padding: 0;
-        }
+    #element .e-list-item {
+        height: 100px;
+        width: 100px;
+        float: left;
+        padding: 0;
+    }
 
     #listImage {
         width: 55px;

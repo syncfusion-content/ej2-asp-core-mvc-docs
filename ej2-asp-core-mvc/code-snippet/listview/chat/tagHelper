@@ -25,7 +25,7 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
 
-<ejs-listview id="List" dataSource="(IEnumerable<object>)ViewBag.dataSource"  showHeader="true" headerTitle="Chat" width="350" template="@template">
+<ejs-listview id="list" dataSource="(IEnumerable<object>)ViewBag.dataSource"  showHeader="true" headerTitle="Chat" width="350" template="@template">
     <e-listview-fieldsettings text="text"></e-listview-fieldsettings>
 </ejs-listview>
 <div style="width: 350px;margin: 0 auto;">
@@ -40,38 +40,38 @@
         float: right;
     }
 
-    #List {
+    #list {
         margin: 0 auto;
         border: 1px solid #ccc;
     }
 
-        #List .e-list-item {
-            height: auto;
-            cursor: pointer;
-        }
+    #list .e-list-item {
+        height: auto;
+        cursor: pointer;
+    }
 
-        #List .e-list-header .e-text {
-            font-family: sans-serif;
-            font-size: 18px;
-            line-height: 26px;
-        }
+    #list .e-list-header .e-text {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+    }
 
-        #List #info,
-        #List .name {
-            font-size: 11px;
-            line-height: 20px;
-        }
+    #list #info,
+    #list .name {
+        font-size: 11px;
+        line-height: 20px;
+    }
 
-        #List .name {
-            padding-top: 3px;
-            font-weight: 500;
-            padding-left: 150px;
-        }
+    #list .name {
+        padding-top: 3px;
+        font-weight: 500;
+        padding-left: 150px;
+    }
 
-        #List #info {
-            float: right;
-            margin-right: 10px;
-        }
+    #list #info {
+        float: right;
+        margin-right: 10px;
+    }
 
     .pic01 {
         background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/1.png");
@@ -95,26 +95,26 @@
         font-size: 13px;
     }
 
-    #List #content1 {
+    #list #content1 {
         width: 200px;
         background-color: aliceblue;
         display: inline-block;
         margin: 5px;
     }
 
-    #List #info1,
-    #List .name1 {
+    #list #info1,
+    #list .name1 {
         font-size: 11px;
         line-height: 20px;
         margin-left: 10px;
     }
 
-    #List .name1 {
+    #list .name1 {
         padding-top: 3px;
         font-weight: 500;
     }
 
-    #List #content {
+    #list #content {
         margin: 5px;
         width: 200px;
         margin-left: 90px;
@@ -150,14 +150,14 @@
         background: rgb(2, 120, 215) !important;
     }
 
-    #List.e-listview .e-list-item.e-hover {
+    #list.e-listview .e-list-item.e-hover {
         background-color: transparent;
     }
 </style>
 <script>
     document.getElementById('btn').addEventListener('click', (e) => {
         let value = document.getElementById('name').value;
-        document.getElementById('List').ej2_instances[0].addItem([{ text: "Amenda", contact: value, id: "2", avatar: "A", pic: "", chat: "receiver" }]);
+        document.getElementById('list').ej2_instances[0].addItem([{ text: "Amenda", contact: value, id: "2", avatar: "A", pic: "", chat: "receiver" }]);
         document.getElementById('name').value = "";
     });
 </script>
