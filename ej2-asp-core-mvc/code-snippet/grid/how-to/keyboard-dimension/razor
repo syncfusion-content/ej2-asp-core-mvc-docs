@@ -1,0 +1,28 @@
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+    <label for="widthInput" style="font-weight:bold">Enter the width:</label>
+    @Html.EJS().NumericTextBox("widthInput").Placeholder("400").Min(400).Max(650).Step(5).Width("120px").Render()       
+    @Html.EJS().Button("resizeWidthButton").Content("Resize").Render()
+    <label for="heightInput" style="font-weight:bold">Enter the height:</label>
+    @Html.EJS().NumericTextBox("heightInput").Placeholder("200").Min(200).Max(650).Step(5).Width("120px").Render()       
+    @Html.EJS().Button("resizeHeightButton").Content("Resize").Render()
+</div>
+<div id="parent">
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("100%").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").DataSource(ViewBag.ForeignData).Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+}).Render()
+</div>
+<script>
+    document.getElementById('resizeWidthButton').onclick = handleButtonClick;
+    document.getElementById('resizeHeightButton').onclick = handleButtonClick;
+    function handleButtonClick(event) {
+        var parentDiv = document.getElementById('parent');
+        var widthsize = document.getElementById('widthInput').ej2_instances[0].value;
+        var heightsize = document.getElementById('heightInput').ej2_instances[0].value;
+        parentDiv.style.width = widthsize + 'px';
+        parentDiv.style.height = heightsize + 'px';
+    };
+</script>

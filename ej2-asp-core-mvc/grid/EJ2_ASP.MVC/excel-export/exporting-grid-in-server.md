@@ -68,6 +68,95 @@ Here's an example of how you can accomplish CSV export on the server-side:
 
 ![CSV Export in server side](../images/excel-exporting/export-server-csv.png)
 
+## Export grid as memory stream
+
+The Grid offers an option to export the data as a memory stream instead of downloading it as a file in the browser. To obtain the memory stream of the exported grid, set the `AsMemoryStream` parameter to **true** in the [ExcelExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_ExcelExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) and [CsvExport](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.GridExcelExport.html#Syncfusion_EJ2_GridExport_GridExcelExport_CsvExport__1_Syncfusion_EJ2_Grids_Grid_System_Collections_IEnumerable_System_Boolean_Syncfusion_EJ2_GridExport_ExcelExportProperties_) methods.
+
+The following code demonstrates how to get the memory stream of exported grid.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-ms/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-ms/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-ms/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-ms/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Merge grid's memory stream
+
+The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
+
+You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
+
+### Merging with an existing memory stream
+
+If you already have a memory stream, you can directly use it to merge with the Grid's memory stream.
+
+In the following code, `ExcelEngine` and `AddCopy` method of Worksheets are used to merge the Grid's memory stream with an existing memory stream.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-ms-merge/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-ms-merge/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Merging with an existing file stream
+
+If you already have a file stream, you can directly use it to merge with the Grid's memory stream. In the following code, the existing file stream is merged with the Grid's memory stream.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-fs-merge/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-fs-merge/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Merging with a local file
+
+To merge a local file with the Grid's memory stream, you need to convert it into a file stream before merging. In the following code, the existing local file is merged with the Grid's memory stream.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-file-merge/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-file-merge/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Downloading the merged memory stream
+
+You can download the merged memory stream by converting it into a `FileStreamResult`. In the following code, the merged memory stream is downloaded to the browser.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-ms-download/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Server-exportMVC.cs" %}
+{% include code-snippet/grid/excel-export/server-export-ms-download/server-exportCore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Rotate a header text in the exported grid
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
