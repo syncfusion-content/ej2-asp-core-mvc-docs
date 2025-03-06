@@ -82,7 +82,7 @@ Configure [insertImageSettings.removeUrl](https://help.syncfusion.com/cr/aspnetc
 
 Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_SaveFormat) property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
-N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
+> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +156,7 @@ To remove an image from the Rich Text Editor content, select the image and click
 
 Once you select the image from the local machine, the URL for the image will be generate. From there, you can remove the image from the service location by clicking the cross icon.
 
-![Rich Text Editor Image delete](../images/image-del.png)
+![Rich Text Editor Image delete](./images/image-del.png)
 
 The following sample explains, how to configure `removeUrl` to remove a saved image from the remote service location, when the following image remove actions are performed:
 
@@ -194,7 +194,7 @@ Sets the default width and height of the image when it is inserted in the Rich T
 
 Through the quick toolbar, change the width and height using `Change Size` option. Once you click, the Image Size dialog box will open as follows. In that you can specify the width and height of the image in pixel.
 
-![Rich Text Editor Image dimension](../images/image-size.png)
+![Rich Text Editor Image dimension](./images/image-size.png)
 
 ## Adding Captions and Alt Text to Images
 
@@ -238,13 +238,13 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 
 The hyperlink itself can be an image in Rich Text Editor. If the image given as hyperlink, remove, edit and open link will be added to the quick toolbar of image. For further details about link, see the [`link documentation`](./link) documentation.
 
-![Rich Text Editor image with link](../images/image-link.png)
+![Rich Text Editor image with link](./images/image-link.png)
 
 ## Image Resizing Tools
 
 Rich Text Editor has a built-in image inserting support.  The resize points will be appearing on each corner of image when focus. So, users can resize the image using mouse points or thumb through the resize points easily. Also, the resize calculation will be done based on aspect ratio.
 
-![Rich Text Editor image resize](../images/image-resize.png)
+![Rich Text Editor image resize](./images/image-resize.png)
 
 ## Configuring Allowed Image Types
 

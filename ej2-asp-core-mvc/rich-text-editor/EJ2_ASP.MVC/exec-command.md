@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exec Command in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Exec Command in ##Platform_Name## Rich Text Editor Control | Syncfusion
+description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exec Command
 publishingplatform: ##Platform_Name##
@@ -48,4 +48,4 @@ The execCommand will perform the following commands.
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
 | escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
 
-N> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor
+> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor
