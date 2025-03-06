@@ -458,7 +458,7 @@ public class DataManager
 
 ## Handling Paging Operation
 
-To handle paging operation, configure your API endpoint to support custom sorting criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, configure your API endpoint to support custom sorting criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the custom paging criteria specified in the incoming `DataManagerRequest` object.
 
 ![WebMethodAdaptor paging](../../images/adaptors/web-method-adaptor-paging.png)
 
@@ -512,19 +512,19 @@ public class DataManager
 
 ## Handling CRUD Operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, `CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
-1. **insertUrl**: Specifies the URL for inserting new data.
-2. **removeUrl**: Specifies the URL for removing existing data.
-3. **updateUrl**: Specifies the URL for updating existing data.
-4. **crudUrl**: Specifies a single URL for all CRUD operations.
-5. **batchUrl**: Specifies the URL for batch editing.
+1. **InsertUrl**: Specifies the URL for inserting new data.
+2. **RemoveUrl**: Specifies the URL for removing existing data.
+3. **UpdateUrl**: Specifies the URL for updating existing data.
+4. **CrudUrl**: Specifies a single URL for all CRUD operations.
+5. **BatchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
@@ -540,16 +540,15 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Operation:**
 
-To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
+To insert a new record, utilize the `InsertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
 
 ![Insert record](../../images/adaptors/web-method-adaptor-insert-record.png)
 
 ```cs
-
 /// <summary>
 /// Inserts a new data item into the data collection.
 /// </summary>
@@ -573,7 +572,6 @@ For updating existing records, utilize the `UpdateUrl` property to specify the c
 ![Update record](../../images/adaptors/web-method-adaptor-update-record.png)
 
 ```cs
-
 /// <summary>
 /// Update a existing data item from the data collection.
 /// </summary>
@@ -583,17 +581,15 @@ For updating existing records, utilize the `UpdateUrl` property to specify the c
 public IHttpActionResult Update(CRUDModel<OrdersDetails> updatedRecord)
 {
     var updatedOrder = updatedRecord?.Value;
-    if (updatedOrder == null)
+    if (updatedOrder == null){
         return BadRequest("Invalid update data");
-
+    }
     var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
     if (data == null) return NotFound();
-
     data.CustomerID = updatedOrder.CustomerID;
     data.ShipCity = updatedOrder.ShipCity;
     data.ShipCountry = updatedOrder.ShipCountry;
     // Update other properties...
-
     return Ok(data);
 }
 ```
@@ -674,7 +670,7 @@ public void CrudUpdate(CRUDModel<OrdersDetails> request)
 
 **Batch Operation**
 
-To perform batch operation, set the edit `mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, set the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}

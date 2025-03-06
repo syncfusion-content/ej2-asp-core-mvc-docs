@@ -122,14 +122,12 @@ namespace WebApiAdaptor.App_Start
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = System.Web.Http.RouteParameter.Optional }
             );
-
             // Web API routes.
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = System.Web.Http.RouteParameter.Optional }
             );
-
             // Configure JSON formatting.
             config.Formatters.JsonFormatter.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
             config.Formatters.JsonFormatter.SupportedMediaTypes
@@ -281,6 +279,7 @@ To handle search operation, implement search logic on the server side according 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
 // GET: api/Orders
+[HttpGet]
 public object Get()
 {
   var queryString = Request.Query;
@@ -337,6 +336,7 @@ To handle filter operations, ensure that your Web API endpoint supports filterin
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
 // GET: api/Orders
+[HttpGet]
 public object Get()
 {
   var queryString = Request.Query;
@@ -462,7 +462,6 @@ public object Get()
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 }).AllowSorting().Render()
 {% endhighlight %}
-
 {% endtabs %}
 
 ## Handling paging operation
@@ -516,7 +515,7 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
@@ -531,6 +530,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
 /// </summary>
 /// <param name="newRecord">It holds new record detail which is need to be inserted.</param>
 /// <returns>Returns void</returns>
+[HttpPost]
 public void Post([FromBody] OrdersDetails newRecord)
 {
   // Insert a new record into the OrdersDetails model.
@@ -551,6 +551,7 @@ Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpP
 /// </summary>
 /// <param name="updatedOrder">It holds updated record detail which is need to be updated.</param>
 /// <returns>Returns void</returns>
+[HttpPut]
 public void Put(int id, [FromBody] OrdersDetails updatedOrder)
 {
   // Find the existing order by ID.
@@ -579,6 +580,7 @@ To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` m
 /// </summary>
 /// <param name="key">It holds specific record detail id which is need to be removed.</param>
 /// <returns>Returns void</returns>
+[HttpDelete]
 public void Delete(int key)
 {
   // Find the order to remove by ID.

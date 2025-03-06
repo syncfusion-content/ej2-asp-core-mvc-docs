@@ -448,8 +448,7 @@ To enable CRUD operations in the Syncfusion ASP.NET MVC Grid, follow the below s
 {% endhighlight %}
 {% endtabs %}
 
-
-> Normal/Inline editing is the default edit mode for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit mode for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
