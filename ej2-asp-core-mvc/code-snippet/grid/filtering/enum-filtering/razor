@@ -1,0 +1,50 @@
+@using Syncfusion.EJ2
+
+@{
+	var filterBarTemplate = new { create = "dropDownCreate", write = "dropDownWrite" };
+}
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowFiltering().Height("273px").Columns(col =>
+{
+	col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+	col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+	col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
+	col.Field("TypeText").HeaderText("File Type").Width("170").FilterBarTemplate(filterBarTemplate).Add(); // Fixed Typetext -> TypeText
+}).Render()
+
+<script>
+	var dropDown;
+	var filterDropData = [
+		{ Type: 'All' },
+		{ Type: 'Base' },
+		{ Type: 'Replace' },
+		{ Type: 'Delta' }
+	];
+
+	function dropDownCreate() {
+		dropDown = document.createElement('select');
+		dropDown.id = 'TypeFilter';
+		filterDropData.forEach((item) => {
+			var option = document.createElement('option');
+			option.value = item.Type;
+			option.innerText = item.Type;
+			dropDown.appendChild(option);
+		});
+		return dropDown;
+	}
+
+	function dropDownWrite() {
+		var dropDownList = new ej.dropdowns.DropDownList({
+			change: function (args) {
+				var grid = document.getElementById("Grid").ej2_instances[0]; // Fixed ID to "Grid"
+				if (args.value !== 'All') {
+					grid.filterByColumn('TypeText', 'equal', args.value); // Ensure 'TypeText' matches column field
+				} else {
+					grid.removeFilteredColsByField('TypeText');
+				}
+			}
+		});
+
+		dropDownList.appendTo('#TypeFilter'); // Ensures dropdown gets applied properly
+	}
+</script>
