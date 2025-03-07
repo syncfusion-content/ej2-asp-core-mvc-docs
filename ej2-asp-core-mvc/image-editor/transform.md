@@ -125,36 +125,7 @@ The Image Editor allows to magnify an image using the `zoom` method. This method
 
 * zoomPoint - Specifies x and y coordinates of a point as ImageEditorPoint on image to perform zooming. 
 
-Here is an example of zooming an image in a button click event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/transform/zoom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/transform/zoom/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/transform/zoom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/transform/zoom/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-zoom.jpg)
-
-### Minimum and Maximum zoom level 
+### Minimum and maximum zoom level 
 
 The `minZoomFactor` property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
 
@@ -224,7 +195,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-panning.png)
 
-### Panning event 
+## Panning event 
 
 The `panning` event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses `panEventArgs` to handle the panning action when the user starts dragging the image. 
 

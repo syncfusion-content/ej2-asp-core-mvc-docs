@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
-## Apply frame to the Image
+## Apply frame to the image
 
 The `drawFrame` method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
 
