@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })"  actionBegin="actionBegin">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" actionBegin="actionBegin">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" textAlign="Right" width="100"></e-grid-column>
@@ -10,13 +10,13 @@
 </ejs-grid>
 <script>
 function actionBegin(args) {
-if (args.requestType === 'beginEdit') {
-let minDate = args.rowData['OrderDate'];
-this.columns.forEach((column) => {
-if (column.field === 'OrderDate') {
-    column.edit.params = { min: minDate };
-}
-});
-}
+    if (args.requestType === 'beginEdit') {
+        let minDate = args.rowData['OrderDate'];
+        this.columns.forEach((column) => {
+            if (column.field === 'OrderDate') {
+                column.edit.params = { min: minDate };
+            }
+        });
+    }
 }
 </script>
