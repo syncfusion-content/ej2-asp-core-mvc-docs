@@ -33,7 +33,7 @@ The class is dynamically assigned based on the rating value, highlighting the st
 }
 ```
 
-This is demonstrated in the following example.
+This is demonstrated in the following example:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

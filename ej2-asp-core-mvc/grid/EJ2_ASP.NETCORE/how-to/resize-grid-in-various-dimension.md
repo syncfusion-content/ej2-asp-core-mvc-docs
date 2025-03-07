@@ -14,7 +14,7 @@ The Syncfusion ASP.NET Core Grid offers a friendly way to resize the Grid, allow
 
 To resize the Grid externally, you can use an external button to modify the width of the parent element that contains the Grid. This will effectively resize the Grid along with its parent container.
 
-The following example demonstrates how to resize the Grid on external button click based on input. 
+The following example demonstrates how to resize the Grid on external button click based on input:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
