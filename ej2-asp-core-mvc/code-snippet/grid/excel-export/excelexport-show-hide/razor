@@ -1,0 +1,36 @@
+@{
+	ViewBag.Title = "Home Page";
+}
+
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowExcelExport().ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Columns(col =>
+{
+	col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer ID").Width("150").Visible(false).Add();
+	col.HeaderText("Order Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(orderCol =>
+	{
+		orderCol.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+		orderCol.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	}).Add();
+	col.HeaderText("Ship Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(shipCol =>
+	{
+		shipCol.Field("ShippedDate").HeaderText("Shipped Date").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+		shipCol.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+		shipCol.Field("ShipName").HeaderText("Ship Name").Width("150").Visible(false).Add();
+	}).Add();
+}).Toolbar(new List<string>() { "ExcelExport"}).Render()
+
+<script>
+	function toolbarClick(args) {
+		var grid = document.getElementById("grid").ej2_instances[0];
+		if (args.item.id === 'grid_excelexport') {
+			grid.getColumnByField("OrderDate").visible = false;
+			grid.getColumnByField("ShippedDate").visible = true;
+			grid.getColumnByField("ShipName").visible = true;
+			grid.excelExport();
+		}
+	}
+	function excelExportComplete(grid, orderDateColumn, shipNameColumn) {
+		grid.getColumnByField("OrderDate").visible = true;
+		grid.getColumnByField("ShipName").visible = false;
+	}
+</script>
