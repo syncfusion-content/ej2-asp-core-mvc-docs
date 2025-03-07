@@ -1,0 +1,27 @@
+@using Syncfusion.EJ2.Navigations
+@using Syncfusion.EJ2.RichTextEditor
+
+@{
+    var headerTextOne = new TabHeader { Text = "TAB 1" };
+    var headerTextTwo = new TabHeader { Text = "TAB 2" };
+    var headerTextThree = new TabHeader { Text = "TAB 3" };
+}
+
+@(Html.EJS().Tab("ej2Tab").Items(new List<TabItem> {
+        new TabItem { Header = headerTextOne, Content = "#editor1" },
+        new TabItem { Header = headerTextTwo, Content = "#editor2" },
+        new TabItem { Header = headerTextThree, Content = "#editor3" }
+    }).Height("auto").Render()
+)
+
+<div style="display: none" id="editor1">
+    @Html.EJS().RichTextEditor("editor1").Value("Rich Text Editor").Render()
+</div>
+
+<div style="display: none" id="editor2">
+    @Html.EJS().RichTextEditor("editor2").Value("Rich Text Editor").Render()
+</div>
+
+<div style="display: none" id="editor3">
+    @Html.EJS().RichTextEditor("editor3").Value("Rich Text Editor").Render()
+</div>
