@@ -1,0 +1,34 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerRating").HeaderText("Customer Rating").Width("150").Template("#ratingTemplate").Add();
+}).Render()
+<script type="text/x-template" id="ratingTemplate">
+    ${ RatingStars(data.CustomerRating) }
+</script>
+<script>
+    function RatingStars(rating) {
+        let ratingHTML = '<span class="rating">';
+        for (let i = 1; i <= 5; i++) {
+            ratingHTML += `<span class="star ${i <= rating ? 'checked' : ''}"></span>`;
+        }
+        ratingHTML += '</span>';
+        return ratingHTML;
+    }
+</script>
+<style>
+    .e-grid .rating .star:before {
+        content: '★';
+    }
+
+    .e-grid .rating .star {
+        font-size: 132%;
+        color: lightgrey;
+    }
+
+    .rating .star.checked {
+        color: #ffa600;
+    }
+</style>
