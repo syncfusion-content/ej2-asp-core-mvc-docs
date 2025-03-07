@@ -1,7 +1,6 @@
 <div>
     @Html.EJS().Button("getSearchedRecords").Content("Get Searched Records").Render()
 </div>
-
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
@@ -10,21 +9,20 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
 
 }).Toolbar(new List<string>() { "Search" }).ActionComplete("actionComplete").Render()
-
 <script>
     var lastSearchString = '';
     function actionComplete(args){
         if (args.requestType === 'searching') {
-        lastSearchString = args.searchString;
+            lastSearchString = args.searchString; // Store the last searched value.
         }
     }
     document.getElementById('getSearchedRecords').addEventListener('click', () => {
-    if (lastSearchString) {
-    const gridInstance = document.getElementById('grid').ej2_instances[0];
-    const data = gridInstance.dataSource;
-    new ej.data.DataManager(data).executeQuery(new ej.data.Query().search(lastSearchString, [], undefined, true)).then((e) => {
-        console.log('Searched Records:', e.result);
-    });
-    }  
+        if (lastSearchString) {
+            const gridInstance = document.getElementById('grid').ej2_instances[0];
+            const data = gridInstance.dataSource;
+            new ej.data.DataManager(data).executeQuery(new ej.data.Query().search(lastSearchString, [], undefined, true)).then((e) => {
+                console.log('Searched Records:', e.result); // Log searched records.
+            });
+        }  
     });
 </script>

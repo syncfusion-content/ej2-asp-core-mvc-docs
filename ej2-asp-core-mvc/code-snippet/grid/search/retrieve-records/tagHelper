@@ -1,7 +1,6 @@
 <div>
-<button id="getSearchedRecords">Get Searched Records</button>
+    <button id="getSearchedRecords">Get Searched Records</button>
 </div>
-
 <ejs-grid id="grid" dataSource="@ViewBag.datasource" height="350px" toolbar="@(new List<string>() { "Search" })" actionComplete="actionComplete"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
@@ -10,21 +9,20 @@
         <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
 var lastSearchString = '';
 function actionComplete(args){
     if (args.requestType === 'searching') {
-        lastSearchString = args.searchString; 
+        lastSearchString = args.searchString; // Store the last searched value.
     }
 }
 document.getElementById('getSearchedRecords').addEventListener('click', () => {
-if (lastSearchString) {
-const gridInstance = document.getElementById('grid').ej2_instances[0];
-const data = gridInstance.dataSource;
-new ej.data.DataManager(data).executeQuery(new ej.data.Query().search(lastSearchString, [], undefined, true)).then((e) => {
-    console.log('Searched Records:', e.result);
-});
-}
+    if (lastSearchString) {
+        const gridInstance = document.getElementById('grid').ej2_instances[0];
+        const data = gridInstance.dataSource;
+        new ej.data.DataManager(data).executeQuery(new ej.data.Query().search(lastSearchString, [], undefined, true)).then((e) => {
+            console.log('Searched Records:', e.result); // Log searched records.
+        });
+    }
 });
 </script>
