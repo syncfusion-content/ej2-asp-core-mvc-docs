@@ -12,7 +12,7 @@
             <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
             <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
             <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="140"></e-grid-column>
-            <e-grid-column field="ShipCity" headerText="Ship City" textAlign="Right" width="140"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>
         </e-grid-columns>
     </ejs-grid>
 </div>

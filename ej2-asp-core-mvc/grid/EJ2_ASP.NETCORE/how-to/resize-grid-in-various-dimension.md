@@ -25,5 +25,4 @@ The following example demonstrates how to resize the Grid on external button cli
 {% endhighlight %}
 {% endtabs %}
 
-![various dimension](images/how-to-dimension.png)
-
+![various dimension](../images/how-to-dimension.png)
