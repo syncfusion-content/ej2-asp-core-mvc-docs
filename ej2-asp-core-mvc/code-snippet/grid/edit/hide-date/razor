@@ -8,13 +8,13 @@
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).ActionBegin("actionBegin").Render()
 <script>
 function actionBegin(args) {
-if (args.requestType === 'beginEdit') {
-let minDate = args.rowData['OrderDate'];
-this.columns.forEach((column) => {
-if (column.field === 'OrderDate') {
-    column.edit.params = { min: minDate };
-}
-});
-}
+    if (args.requestType === 'beginEdit') {
+        let minDate = args.rowData['OrderDate'];
+        this.columns.forEach((column) => {
+            if (column.field === 'OrderDate') {
+                column.edit.params = { min: minDate };
+            }
+        });
+    }
 }
 </script>
