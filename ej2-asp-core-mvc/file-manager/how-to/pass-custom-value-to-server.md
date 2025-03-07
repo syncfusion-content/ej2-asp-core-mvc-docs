@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Perform custom value to server in ##Platform_Name##  File Manager component
+# Pass custom value to server in ##Platform_Name##  File Manager component
 
 The Syncfusion Vue File Manager component allows you to pass custom values from the client to the server for various operations. This guide demonstrates how to implement this functionality for **Upload**, **Download**, and **GetImage** operations using the `beforeSend`, `beforeDownload`, and `beforeImageLoad` events respectively.
 
@@ -319,6 +319,7 @@ public class FileManagerAccessController : Controller
     [Route("GetImage")]
     public IActionResult GetImage(FileManagerDirectoryContent1 args)
     {
+        var header = args.Authorization;
         return this.operation.GetImage(args.Path, args.Id, false, null, null);
     }
 
@@ -327,6 +328,8 @@ public class FileManagerAccessController : Controller
 
 
 ```
+
+## Implementing custom value transfer in Syncfusion File Manager with server-side integration.
 
 The below file system provider allows the users to access and manage the file system which includes the server side code for custom values passing from client. To get started, clone the [provider](https://github.com/SyncfusionExamples/How-to-pass-custom-values-from-client-to-server-in-filemanager) using the following command.
 
