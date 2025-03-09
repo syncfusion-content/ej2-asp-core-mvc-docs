@@ -10,15 +10,9 @@
 
 <script>
     function beforeSanitizeHtml(args) {
-        args.helper = (value) => {
-            args.cancel = true;
-            var temp = document.createElement('div');
-            temp.innerHTML = value;
-            var scriptTag = temp.querySelector('script');
-            if (scriptTag) {
-                ej.base.detach(scriptTag);
-            }
-            return temp.innerHTML;
+        if (e.selectors && e.selectors.tags) {
+            e.selectors.tags = e.selectors.tags.filter((tag) => tag !== 'iframe:not(.e-rte-embed-url)');
+            e.selectors.tags = [('iframe[src^="https://"]')];
         }
     }
 </script>

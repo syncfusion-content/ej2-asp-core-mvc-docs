@@ -3,6 +3,7 @@
         <!--  Initialize File Manager control with Firebase service-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                 Url = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeFileOperations",
                 GetImageUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeGetImage",
                 UploadUrl = "http://localhost:{port}/api/FirebaseProvider/FirebaseRealtimeUpload",

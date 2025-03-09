@@ -2,12 +2,12 @@
     <div class="grid-container">
         <div>
             <h3>Chat</h3>
-            <!-- ListView element -->
             <ejs-listview id="listview" dataSource="initialData" height="320" width="400" cssClass='e-list-template' template="@template" scroll="onListScrolled">
     </ejs-listview>
         </div>
     </div>
 </div>
+
 <style>
     .grid-container {
         display: grid;
@@ -31,7 +31,8 @@
     .e-listview{
         background-color: white;
     }
-    </style>
+</style>
+
 <script>
     function onListScrolled(args) {
         var listObj_1 = document.getElementById('listview').ej2_instances[0];

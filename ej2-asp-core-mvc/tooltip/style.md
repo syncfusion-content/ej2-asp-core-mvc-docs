@@ -13,9 +13,9 @@ documentation: ug
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
-## Customizing the tooltip
+## Customizing the Tooltip
 
-Use the following CSS to customize the tooltip.
+Use the following CSS to customize the Tooltip.
 
 ```css
 .e-tooltip-wrap {
@@ -24,9 +24,9 @@ Use the following CSS to customize the tooltip.
 }
 ```
 
-## Customizing the tooltip popup
+## Customizing the Tooltip popup
 
-Use the following CSS to customize the tooltip popup properties.
+Use the following CSS to customize the Tooltip popup properties.
 
 ```css
 .e-tooltip-wrap.e-popup {
@@ -35,9 +35,9 @@ Use the following CSS to customize the tooltip popup properties.
 }
 ```
 
-## Customizing the tooltip content
+## Customizing the Tooltip content
 
-Use the following CSS to customize the tooltip content.
+Use the following CSS to customize the Tooltip content.
 
 ```css
 .e-tooltip-wrap .e-tip-content {
@@ -47,9 +47,9 @@ Use the following CSS to customize the tooltip content.
 }
 ```
 
-## Customizing the tooltip arrow tip
+## Customizing the Tooltip arrow tip
 
-Use the following CSS to customize the tooltip arrow tip.
+Use the following CSS to customize the Tooltip arrow tip.
 
 ```css
 /* To customize the arrow tip at bottom */
@@ -85,9 +85,9 @@ Use the following CSS to customize the tooltip arrow tip.
 }
 ```
 
-## Customizing the tooltip inner tip
+## Customizing the Tooltip inner tip
 
-Use the following CSS to customize the tooltip inner tip.
+Use the following CSS to customize the Tooltip inner tip.
 
 ```css
 .e-tooltip-wrap .e-arrow-tip-inner.e-tip-right,
@@ -99,9 +99,9 @@ Use the following CSS to customize the tooltip inner tip.
 }
 ```
 
-## Customizing the tooltip outer tip
+## Customizing the Tooltip outer tip
 
-Use the following CSS to customize the tooltip outer tip.
+Use the following CSS to customize the Tooltip outer tip.
 
 ```css
 /* To customize the arrow tip at bottom */
