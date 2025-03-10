@@ -490,7 +490,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
         existingOrder.EmployeeID = updateRecord.EmployeeID ?? existingOrder.EmployeeID;
         existingOrder.ShipCountry = updateRecord.ShipCountry ?? existingOrder.ShipCountry;
     }
-    return Ok(updateRecord);
+    return Ok(existingOrder);
 }
 ```
 ![Update record](../../images/adaptors/odatav4-adaptor-update-record.png)
