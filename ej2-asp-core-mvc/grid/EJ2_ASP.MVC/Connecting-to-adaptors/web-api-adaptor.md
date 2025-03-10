@@ -36,7 +36,6 @@ Create a model class named `OrdersDetails.cs` in the server-side **Models** fold
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
-
 namespace WebApiAdaptor.Models
 {
   public class OrdersDetails
@@ -44,7 +43,6 @@ namespace WebApiAdaptor.Models
     public static List<OrdersDetails> order = new List<OrdersDetails>();
     public OrdersDetails()
     {
-
     }
     public OrdersDetails(
     int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
@@ -95,7 +93,6 @@ namespace WebApiAdaptor.Models
     public string ShipAddress { get; set; }
   }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,7 +140,6 @@ Create a file named `OrdersController.cs` under the **Controllers** folder. This
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
-
 using WebApiAdaptor.Models;
 using System;
 using System.Linq;
@@ -162,7 +158,6 @@ namespace WebApiAdaptor.Controllers
     }
   }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,15 +179,13 @@ To add `ASP.NET MVC` controls to your application, open the NuGet Package Manage
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
-
-Install-Package Syncfusion.EJ2.MVC5 -Version -Version {{ site.releaseversion }}
-
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
 **Step 2:** Add Syncfusion ASP.NET MVC namespace
 
-Ensure the `Syncfusion.EJ2` namespace is referenced in the **Web.config** file under the **Views** folder.
+Add `Syncfusion.EJ2` namespace reference in `Web.config` under `Views` folder.
 
 ```cs
 <namespaces>
@@ -202,59 +195,59 @@ Ensure the `Syncfusion.EJ2` namespace is referenced in the **Web.config** file u
 
 **Step 3:** Add stylesheet and script resources
 
-To include the required styles and scripts, add the following references inside the <head> section of `~/Views/Shared/_Layout.cshtml`.
+To include the required styles and scripts, add the following references inside the `<head>` of `~/views/Shared/_Layout.cshtml` file:
 
 {% tabs %}
-{% highlight html tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 <head>
-    ...
-    <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET MVC component: -->
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
+  ...
+  <!-- Syncfusion ASP.NET MVC controls styles -->
+  <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
+  <!-- Syncfusion ASP.NET MVC controls scripts -->
+  <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+  <!-- Include the necessary CSS files to style the Syncfusion ASP.NET MVC component: -->
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
+  <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+  <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
 {% endhighlight %}
 {% endtabs %}
 
 **Step 4:** Register Syncfusion Script Manager
 
-To enable Syncfusion scripts, add the **Script Manager** at the end of the `<body>` tag inside `~/Views/Shared/_Layout.cshtml`.
+To ensure proper script execution, register the Syncfusion Script Manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
-{% highlight html tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 <body>
-...
-<!-- Syncfusion ASP.NET MVC Script Manager -->
-@Html.EJS().ScriptManager()
+  <!-- Syncfusion ASP.NET MVC Script Manager -->
+  @Html.EJS().ScriptManager()
 </body>
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5:** Add Syncfusion ASP.NET MVC Grid to Application:
+**Step 5:** Add the Syncfusion ASP.NET MVC Grid
 
-Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
 @using Syncfusion.EJ2
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/orders").Adaptor("WebApiAdaptor")).Columns(col =>
-	{
-		col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
 		col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
 		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -262,7 +255,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` page.
 {% endhighlight %}
 {% endtabs %}
 
-> Replace https://localhost:xxxx/api/orders with the actual URL of your endpoint that provides the data in a consumable format (e.g., JSON).
+> Replace https://localhost:xxxx/api/Orders with the actual URL of your endpoint that provides the data in a consumable format (e.g., JSON).
 
 **Step 7:** Run the Project
 
@@ -316,14 +309,14 @@ public object Get()
 }
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders") // Replace `xxxx` with your actual localhost port number.
-.Adaptor("WebApiAdaptor")).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-}).Toolbar(new List<string>() { "Search" }).Render()
+  }).Toolbar(new List<string>() { "Search" }).Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -342,7 +335,6 @@ public object Get()
   var queryString = Request.Query;
   var data = Orders.GetAllRecords().ToList();
   string filter = queryString["$filter"];
-  
   if (filter != null)
   {
     var filters = filter.Split(new string[] { " and " }, StringSplitOptions.RemoveEmptyEntries);
@@ -391,14 +383,14 @@ public object Get()
 }
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders") // Replace `xxxx` with your actual localhost port number.
-.Adaptor("WebApiAdaptor")).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-}).AllowFiltering().Render()
+  }).AllowFiltering().Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -406,12 +398,10 @@ public object Get()
 
 To handle sorting action, implement sorting logic on the server-side according to the received OData-formatted query.
 
-***Ascending Sorting***
-
+**Ascending Sorting**
 ![Sorting Ascending query](../../images/adaptors/webapiadaptor-sorting-asc.png)
 
-***Descending Sorting***
-
+**Descending Sorting**
 ![Sorting Descending query](../../images/adaptors/webapiadaptor-sorting-desc.png)
 
 {% tabs %}
@@ -421,7 +411,7 @@ public object Get()
 {
     var queryString = Request.Query;
     var data = OrdersDetails.GetAllRecords().ToList();
-    string sort = queryString["$orderby"];   //sorting     
+    string sort = queryString["$orderby"];   //sorting.  
     if (!string.IsNullOrEmpty(sort))
     {
         var sortConditions = sort.Split(',');
@@ -453,14 +443,14 @@ public object Get()
 }
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders") // Replace `xxxx` with your actual localhost port number.
-.Adaptor("WebApiAdaptor")).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-}).AllowSorting().Render()
+  }).AllowSorting().Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -485,14 +475,14 @@ public object Get()
 }
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders") // Replace `xxxx` with your actual localhost port number.
-.Adaptor("WebApiAdaptor")).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-}).AllowPaging().Render()
+  }).AllowPaging().Render()
 {% endhighlight %}
 {% endtabs %}
 
@@ -504,13 +494,13 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/orders") // Replace `xxxx` with your actual localhost port number.
-.Adaptor("WebApiAdaptor")).Columns(col =>
-{
-  col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
-  col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-  col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
-  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Orders").Adaptor("WebApiAdaptor")).Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
   }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 {% endhighlight %}
 {% endtabs %}
