@@ -1,0 +1,7 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='speechtotext-container'>
+    <ejs-speechtotext id="speech-to-text">
+        <e-speechtotext-buttonSettings content="Speak" stopContent="Start Listening"></e-speechtotext-buttonSettings>
+    </ejs-speechtotext>
+</div>
