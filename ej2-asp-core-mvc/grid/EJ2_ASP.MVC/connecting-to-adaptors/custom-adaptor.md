@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion ASP.NET MVC Grid Component
+# CustomAdaptor in Syncfusion ASP.NET MVC Grid
 
-The `CustomAdaptor` in the Syncfusion ASP.NET MVC Grid Component allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the built-in adaptor query process, request and response. The `CustomAdaptor` to be allows extending the OData V4 services, enabling efficient data fetching and manipulation. By default, there are three method for CustomAdaptor built-in methods.
+The `CustomAdaptor` in the Syncfusion ASP.NET MVC Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
 
 ## Types of CustomAdaptor methods
 
@@ -18,7 +18,11 @@ There are three types of methods in custom adaptors.
 
 ### ProcessQuery
 
-It handling or executing a query sent to a data source such as database or custom dataService. This query request for data retrieval, insertion, updating, or deletion. The processQuery can be two argument are `DataManager` and `Query`. The `DataManager` argument using change the url value and `Query` argument are set the additional parameters value or change the any queries such as sort, filter and group etc.
+The `ProcessQuery` method handles the execution of a query sent to a `DataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+
+* `DataManager`: Used to modify the URL dynamically.
+
+* `Query`: Allows setting additional parameter values or modifying queries such as sorting, filtering, and grouping, etc.
 
 **DataManager**
 
@@ -30,14 +34,20 @@ It handling or executing a query sent to a data source such as database or custo
 
 ```js
 processQuery(dm, query) {
-    query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameter
+    query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameter.
     return super.processQuery.apply(this, arguments);
 }
 ```
 
 ### beforeSend
 
-It executed before an request is sent to the server. This function provides an modify the parameter and request headers, data or performing validation.The `beforeSend` can be three argument are `DataManager`, `Request` and `Fetch`. The `DataManager` argument are provided the dataSource and adaptor value. The `Request` argument are sending the custom header by setting the `Authorization`. The `Settings` argument is optional. 
+The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
+
+* `DataManager`: Provides the `dataSource` and `adaptor` value.
+
+* `Request`: Used to send custom headers, such as setting the `Authorization` header.
+
+* `Settings`: An optional argument that allows additional configurations.
 
 **DataManager**
 
@@ -53,19 +63,20 @@ It executed before an request is sent to the server. This function provides an m
 
 ```js
 beforeSend(dm, request, settings) {
-request.headers.set('Authorization', `Bearer${(window as any).token}`);
-return super.beforeSend(dm, request, settings);
+    request.headers.set('Authorization', `true`);
+    return super.beforeSend(dm, request, settings);
 }
 ```
 
 ### processResponse
 
-It is responsible for handling the response received from a server after the asynchronous request. It performs such as parsing the response data, handling error and preparing the data for consumption. The `processResponse` can be multiple arguments are optional.
+The `processResponse` method handles the response received from the server after an asynchronous request. It is responsible for parsing the response data, managing errors, and preparing the data for further processing. This method can accept multiple optional arguments, allowing customization based on specific requirements.
 
 ```js
 processResponse(data, ds, query, xhr, request, changes) {
-    const original = super.processResponse(data, ds, query, xhr, request, changes);
     let i =0;
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    // Adding serial number.
     if (original.result){
         original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
     }
@@ -74,8 +85,8 @@ return original;
 ```
 
 This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion ASP.NET MVC Grid.
- 
-## Creating an Custom service
+
+## Creating an Custom Service
 
 To configure a server with Syncfusion ASP.NET MVC Grid using OData, follow these steps:
 
@@ -83,8 +94,8 @@ To configure a server with Syncfusion ASP.NET MVC Grid using OData, follow these
 
 1. Open **Visual Studio**.
 2. Select **Create a new project** → Choose **ASP.NET Web Application (.NET Framework)**.
-3. Name the project **ODataV4Adaptor** and select **MVC** as the project template.
-4. Ensure that the **Web API** option is selected (this is crucial for enabling OData).
+3. Name the project **CustomAdaptor** and select **MVC** as the project template.
+4. Ensure that the **Web API** option is selected.
 
 For detailed information, refer to this [documentation](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app).
 
@@ -98,50 +109,49 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
-
- namespace ODataV4Adaptor.Models
+namespace CustomAdaptor.Models
 {
   public class OrdersDetails
   {
-      public static List<OrdersDetails> order = new List<OrdersDetails>();
-      public OrdersDetails()
-      {
+    public static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails()
+    {
 
-      }
-      public OrdersDetails(
-      int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
-      DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
-      DateTime ShippedDate, string ShipAddress)
-      {
-          this.OrderID = OrderID;
-          this.CustomerID = CustomerId;
-          this.EmployeeID = EmployeeId;
-          this.Freight = Freight;
-          this.ShipCity = ShipCity;
-          this.Verified = Verified;
-          this.OrderDate = OrderDate;
-          this.ShipName = ShipName;
-          this.ShipCountry = ShipCountry;
-          this.ShippedDate = ShippedDate;
-          this.ShipAddress = ShipAddress;
-      }
+    }
+    public OrdersDetails(
+    int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+    DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+    DateTime ShippedDate, string ShipAddress)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.EmployeeID = EmployeeId;
+        this.Freight = Freight;
+        this.ShipCity = ShipCity;
+        this.Verified = Verified;
+        this.OrderDate = OrderDate;
+        this.ShipName = ShipName;
+        this.ShipCountry = ShipCountry;
+        this.ShippedDate = ShippedDate;
+        this.ShipAddress = ShipAddress;
+    }
 
       public static List<OrdersDetails> GetAllRecords()
       {
-          if (order.Count() == 0)
-          {
-              int code = 10000;
-              for (int i = 1; i < 10; i++)
-              {
-                  order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-                  order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-                  order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-                  order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-                  order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-                  code += 5;
-              }
-          }
-          return order;
+        if (order.Count() == 0)
+        {
+            int code = 10000;
+            for (int i = 1; i < 10; i++)
+            {
+                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                code += 5;
+            }
+        }
+        return order;
       }
       [Key]
       public int OrderID { get; set; }
@@ -165,12 +175,12 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
 To construct the Entity Data Model for your OData service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
 
 ```cs
-        private static IEdmModel GetEdmModel()
-        {
-            var builder = new ODataConventionModelBuilder();
-            builder.EntitySet<OrdersDetails>("Orders");  // Define OData Entity.
-            return builder.GetEdmModel();
-        }
+private static IEdmModel GetEdmModel()
+{
+    var builder = new ODataConventionModelBuilder();
+    builder.EntitySet<OrdersDetails>("Orders");  // Define OData Entity.
+    return builder.GetEdmModel();
+}
 ```
 
 **5. Register the OData Services**
@@ -182,7 +192,7 @@ Once the Entity Data Model is built, you need to register the OData services in 
 using Microsoft.AspNet.OData.Builder;
 using Microsoft.AspNet.OData.Extensions;
 using Microsoft.OData.Edm;
-using ODataV4Adaptor.Models;
+using CustomAdaptor.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -325,50 +335,106 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 <body>
-...
-<!-- Syncfusion ASP.NET MVC Script Manager -->
-@Html.EJS().ScriptManager()
+    ...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
 </body>
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Custom Adaptor and Syncfusion Grid**
+**Step 4: Adding Custom Adaptor**
 
-To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will implement three key methods:
+To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will implement three key methods: `processQuery`, `beforeSend`, and `processResponse`.
 
-* The `processQuery` method is used to change the URL of your API endpoint and set the additional parameters for executing the query.
+* The `processQuery` method modifies the API endpoint URL and sets additional parameters required for executing the query.
 
-* The `beforeSend` method is used to send the custom header for `Authorization` in the request header.
+* The `beforeSend` method adds custom headers, such as the `Authorization` header, before sending the request.
 
-* The `processResponse` method is used to set the value for customize the column for new field is `SNo`.
+* The `processResponse` method customizes the response by modifying data, such as adding a new field (`SNo`) to the dataset.
 
-**Implementing the Custom Adaptor**
+```js
+<script>
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			let i = 0;
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			// Adding serial number to each row
+			if (original.result) {
+				original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
+			}
+			return original;
+		}
+		beforeSend(dm, request, settings) {
+			request.headers.set('Authorization', `true`);
+			super.beforeSend(dm, request, settings);
+		}
+		processQuery(dm, query) {
+			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint
+			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters
+			return super.processQuery.apply(this, arguments);
+		}
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders",
+				adaptor: new CustomAdaptor(),
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
+```
+
+**Step 5: Adding Syncfusion Component**
 
 Define a `DataManager` instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to `CustomAdaptor`.
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").Columns(col =>
-	{
-		col.Field("SNo").HeaderText("S. No").Width("100").Add();
-		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
-		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-		col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
-		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-	}).Render()
+@Html.EJS().Grid("Grid").Height("320px").Columns(col =>
+{
+    col.Field("SNo").HeaderText("S. No").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).Render()
+
 <script>
-    class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
-    document.addEventListener("DOMContentLoaded", function () {
-        let grid = document.getElementById("Grid").ej2_instances[0];
-        if (grid) {
-            let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/odata/Orders",
-                adaptor: new CustomAdaptor()
-            });
-            grid.dataSource = dataManager;
-        }
-    });
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			let i = 0;
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			// Adding serial number to each row.
+			if (original.result) {
+				original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
+			}
+			return original;
+		}
+		beforeSend(dm, request, settings) {
+			request.headers.set('Authorization', `true`);
+			super.beforeSend(dm, request, settings);
+		}
+		processQuery(dm, query) {
+			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint.
+			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
+			return super.processQuery.apply(this, arguments);
+		}
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders",
+				adaptor: new CustomAdaptor(),
+			});
+			grid.dataSource = dataManager;
+		}
+	});
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -376,7 +442,7 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 
 Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**.
 
-## Handling Searching Operation
+## Handling searching operation
 
 To enable search operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in their requests to search for specific data entries.
 
@@ -396,7 +462,7 @@ config.Count().Filter(); // Handles searching operation.
 {% highlight html tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -419,7 +485,7 @@ config.Count().Filter(); // Handles searching operation.
 
 ![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
 
-## Handling Filtering Operation
+## Handling filtering operation
 
 To enable filter operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in your requests to filter for specific data entries.
 
@@ -439,7 +505,7 @@ config.Count().Filter(); // Handles filtering  operation.
 {% highlight html tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -465,28 +531,27 @@ config.Count().Filter(); // Handles filtering  operation.
 **Multi column filtering**
 ![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
-## Handling Sorting Operation
+## Handling sorting operation
 
 To enable sorting operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `OrderBy` method within the OData setup, allowing you to sort data based on specified criteria. Once enabled, clients can utilize the **$orderby** query option in their requests to sort data entries according to desired attributes.
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ...
-// Enable OData
+// Enable OData.
 config.MapODataServiceRoute(
     routeName: "ODataRoute",
     routePrefix: "odata",
     model: GetEdmModel()
 );
-// Enable Query Support
+// Enable Query Support.
 config.Count().OrderBy(); // Handles sorting  operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -508,35 +573,33 @@ config.Count().OrderBy(); // Handles sorting  operation.
 {% endtabs %}
 
 **Single column sorting**
-
 ![Single column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
 
 **Multi column sorting**
-
 ![Multi column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
 
-## Handling Paging Operation
+## Handling paging operation
 
 To implement paging operations in your web application using OData, you can utilize the `SetMaxTop` method within your OData setup to limit the maximum number of records that can be returned per request. While you configure the maximum limit, clients can utilize the **$skip** and **$top** query options in their requests to specify the number of records to skip and the number of records to take, respectively.
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
 ....
-// Enable OData
+// Enable OData.
 config.MapODataServiceRoute(
     routeName: "ODataRoute",
     routePrefix: "odata",
     model: GetEdmModel()
 );
-// Enable Query Support
-config.Count().MaxTop(null); // Handles paging  operation.
+var recordCount= OrdersDetails.GetAllRecords().Count;
+// Enable Query Support.
+config.Count().MaxTop(recordCount); // Handles paging  operation.
 ....
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
-
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("150").IsPrimaryKey(true).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
     col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
@@ -559,7 +622,7 @@ config.Count().MaxTop(null); // Handles paging  operation.
 
 ![paging query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
 
-## Handling CRUD Operations
+## Handling CRUD operations
 
 To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your MVC application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
@@ -567,33 +630,30 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
-@using Syncfusion.EJ2
-
-@Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>
-	() { "Add", "Edit", "Delete", "Update", "Cancel" }).Columns(col =>
+@Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
 		col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 	}).Render()
-	<script>
-		class CustomAdaptor extends ejs.data.ODataV4Adaptor { }
-		document.addEventListener("DOMContentLoaded", function () {
-			let grid = document.getElementById("Grid").ej2_instances[0];
-			if (grid) {
-				let dataManager = new ejs.data.DataManager({
-					url: "/odata/Orders",
-					adaptor: new CustomAdaptor()
-				});
-				grid.dataSource = dataManager;
-			}
-		});
-	</script>
+<script>
+    class CustomAdaptor extends ejs.data.ODataV4Adaptor { }
+    document.addEventListener("DOMContentLoaded", function () {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        if (grid) {
+            let dataManager = new ejs.data.DataManager({
+                url: "/odata/Orders",
+                adaptor: new CustomAdaptor()
+            });
+            grid.dataSource = dataManager;
+        }
+    });
+</script>
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit mode for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
@@ -644,7 +704,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
         existingOrder.EmployeeID = updateRecord.EmployeeID ?? existingOrder.EmployeeID;
         existingOrder.ShipCountry = updateRecord.ShipCountry ?? existingOrder.ShipCountry;
     }
-    return Ok(updateRecord);
+    return Ok(existingOrder);
 }
 ```
 ![CustomAdaptor-Update-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
