@@ -6,7 +6,6 @@
         <e-grid-column field="Freight" headerText="Freight" format="C2" width="100" textAlign="Right"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <script>
     function toolbarClick(args) {
         var grid = document.getElementById("Grid").ej2_instances[0];
