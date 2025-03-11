@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use custom helper inside the loop with templates in ASP.NET Core Grid component
+# Use custom helper inside the loop with templates in ASP.NET Core Grid
 
 The Syncfusion ASP.NET Core Grid allows you to use custom helpers inside the loop with `template` property of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 

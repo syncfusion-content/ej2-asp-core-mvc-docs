@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use custom helper inside the loop with templates in ASP.NET MVC Grid component
+# Use custom helper inside the loop with templates in ASP.NET MVC Grid
 
 The Syncfusion ASP.NET MVC Grid allows you to use custom helpers inside the loop with `Template` property of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 
