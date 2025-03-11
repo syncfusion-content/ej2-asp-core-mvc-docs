@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CustomAdaptor in Syncfusion ASP.NET Core Grid Component
+# CustomAdaptor in Syncfusion ASP.NET Core Grid
 
-The `CustomAdaptor` in the Syncfusion ASP.NET Core Grid Component allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the built-in adaptor query process, request and response. The `CustomAdaptor` to be allows extending the OData V4 services, enabling efficient data fetching and manipulation. By default, there are three method for CustomAdaptor built-in methods.
+The `CustomAdaptor` in the Syncfusion ASP.NET Core Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the built-in adaptor query process, request and response. The `CustomAdaptor` to be allows extending the OData V4 services, enabling efficient data fetching and manipulation. By default, there are three method for CustomAdaptor built-in methods.
 
 ## Types of CustomAdaptor methods
 
@@ -18,7 +18,11 @@ There are three types of methods in custom adaptors.
 
 ### ProcessQuery
 
-It handling or executing a query sent to a data source such as database or custom dataService. This query request for data retrieval, insertion, updating, or deletion. The processQuery can be two argument are `DataManager` and `Query`. The `DataManager` argument using change the url value and `Query` argument are set the additional parameters value or change the any queries such as sort, filter and group etc.
+The `ProcessQuery` method handles the execution of a query sent to a `DataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+
+* `DataManager`: Used to modify the URL dynamically.
+
+* `Query`: Allows setting additional parameter values or modifying queries such as sorting, filtering, and grouping, etc.
 
 **DataManager**
 
@@ -30,14 +34,20 @@ It handling or executing a query sent to a data source such as database or custo
 
 ```js
 processQuery(dm, query) {
-    query.addParams('Syncfusion in ASP.NET Core Grid', 'true'); // Add additional parameter
+    query.addParams('Syncfusion in ASP.NET Core Grid', 'true'); // Add additional parameter.
     return super.processQuery.apply(this, arguments);
 }
 ```
 
 ### beforeSend
 
-It executed before an request is sent to the server. This function provides an modify the parameter and request headers, data or performing validation.The `beforeSend` can be three argument are `DataManager`, `Request` and `Fetch`. The `DataManager` argument are provided the dataSource and adaptor value. The `Request` argument are sending the custom header by setting the `Authorization`. The `Settings` argument is optional. 
+The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
+
+* `DataManager`: Provides the `dataSource` and `adaptor` value.
+
+* `Request`: Used to send custom headers, such as setting the `Authorization` header.
+
+* `Settings`: An optional argument that allows additional configurations.
 
 **DataManager**
 
@@ -53,19 +63,20 @@ It executed before an request is sent to the server. This function provides an m
 
 ```js
 beforeSend(dm, request, settings) {
-request.headers.set('Authorization', `Bearer${(window as any).token}`);
-return super.beforeSend(dm, request, settings);
+    request.headers.set('Authorization', `true`);
+    return super.beforeSend(dm, request, settings);
 }
 ```
 
 ### processResponse
 
-It is responsible for handling the response received from a server after the asynchronous request. It performs such as parsing the response data, handling error and preparing the data for consumption. The `processResponse` can be multiple arguments are optional.
+The `processResponse` method handles the response received from the server after an asynchronous request. It is responsible for parsing the response data, managing errors, and preparing the data for further processing. This method can accept multiple optional arguments, allowing customization based on specific requirements.
 
 ```js
 processResponse(data, ds, query, xhr, request, changes) {
-    const original = super.processResponse(data, ds, query, xhr, request, changes);
     let i =0;
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    // Adding serial number.
     if (original.result){
         original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
     }
@@ -293,19 +304,54 @@ To ensure proper script execution, register the Syncfusion Script Manager `<ejs-
 {% endhighlight %}
 {% endtabs %}
 
-**Step 5: Adding Custom Adaptor and Syncfusion Grid**
+**Step 5: Adding Custom Adaptor**
 
-To create a custom adaptor, extend the ODataV4Adaptor service. This custom adaptor will implement three key methods:
+To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will implement three key methods: `processQuery`, `beforeSend`, and `processResponse`.
 
-* The `processQuery` method is used to change the URL of your API endpoint and set the additional parameters for executing the query.
+* The `processQuery` method modifies the API endpoint URL and sets additional parameters required for executing the query.
 
-* The `beforeSend` method is used to send the custom header for `Authorization` in the request header.
+* The `beforeSend` method adds custom headers, such as the `Authorization` header, before sending the request.
 
-* The `processResponse` method is used to set the value for customize the column for new field is `SNo`.
+* The `processResponse` method customizes the response by modifying data, such as adding a new field (`SNo`) to the dataset.
 
-**Implementing the Custom Adaptor**
+```js
+<script>
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			let i = 0;
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			// Adding serial number to each row
+			if (original.result) {
+				original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
+			}
+			return original;
+		}
+		beforeSend(dm, request, settings) {
+			request.headers.set('Authorization', `true`);
+			super.beforeSend(dm, request, settings);
+		}
+		processQuery(dm, query) {
+			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint
+			query.addParams('Syncfusion in ASP.NET Core Grid', 'true'); // Add additional parameters
+			return super.processQuery.apply(this, arguments);
+		}
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
+				adaptor: new CustomAdaptor(),
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
+```
 
-Define a DataManager instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to CustomAdaptor.
+**Step 6: Adding Syncfusion Grid**
+
+Define a `DataManager` instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to `CustomAdaptor`.
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
@@ -315,9 +361,7 @@ Define a DataManager instance, specifying the API endpoint (https://localhost:xx
 	ViewData["Title"] = "Home page";
 }
 <div>
-	<ejs-grid id="Grid" height="315" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})"
-			  allowPaging="true" allowSorting="true" allowFiltering="true">
-		<e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+	<ejs-grid id="Grid" height="315">
 		<e-grid-columns>
 			<e-grid-column field="SNo" headerText="S.No" width="120" textAlign="Right"></e-grid-column>
 			<e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
@@ -328,12 +372,12 @@ Define a DataManager instance, specifying the API endpoint (https://localhost:xx
 	</ejs-grid>
 </div>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 
@@ -344,7 +388,7 @@ Define a DataManager instance, specifying the API endpoint (https://localhost:xx
 {% endhighlight %}
 {% endtabs %}
 
-**Step 6:** Configure the server:
+**Step 7:** Configure the server:
 
 In the `Program.cs` file of your project, configure the server to serve static files and handle API requests by adding the following code:
 
@@ -357,7 +401,7 @@ var app = builder.Build();
 app.MapRazorPages();
 app.MapControllers();
 ```
-**Step 7:** Run the Project:
+**Step 8:** Run the Project:
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.
 
@@ -398,12 +442,12 @@ builder.Services.AddControllers().AddOData(
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 
@@ -451,12 +495,12 @@ builder.Services.AddControllers().AddOData(
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 
@@ -468,9 +512,9 @@ builder.Services.AddControllers().AddOData(
 {% endhighlight %}
 {% endtabs %}
 
-Single column filtering
+**Single column filtering**
 ![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
-Multi column filtering
+**Multi column filtering**
 ![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling Sorting Operation
@@ -510,12 +554,12 @@ builder.Services.AddControllers().AddOData(
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 			grid.dataSource = dataManager;
@@ -575,12 +619,12 @@ builder.Services.AddControllers().AddOData(
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 
@@ -613,12 +657,12 @@ To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below 
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ejs.data.ODataV4Adaptor {}
+	class CustomAdaptor extends ej.data.ODataV4Adaptor {}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+			let dataManager = new ej.data.DataManager({
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
 
@@ -630,7 +674,7 @@ To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below 
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit mode for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey)property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

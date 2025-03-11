@@ -342,7 +342,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4: Adding Custom Adaptor**
+**Step 5: Adding Custom Adaptor**
 
 To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will implement three key methods: `processQuery`, `beforeSend`, and `processResponse`.
 
@@ -369,7 +369,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 			super.beforeSend(dm, request, settings);
 		}
 		processQuery(dm, query) {
-			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint
+			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters
 			return super.processQuery.apply(this, arguments);
 		}
@@ -378,7 +378,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -387,7 +387,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 </script>
 ```
 
-**Step 5: Adding Syncfusion Component**
+**Step 6: Adding Syncfusion Grid**
 
 Define a `DataManager` instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to `CustomAdaptor`.
 
@@ -418,7 +418,7 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 			super.beforeSend(dm, request, settings);
 		}
 		processQuery(dm, query) {
-			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint.
+			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
 			return super.processQuery.apply(this, arguments);
 		}
@@ -427,7 +427,7 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/odata/Orders",
+				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
