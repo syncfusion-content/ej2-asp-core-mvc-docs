@@ -526,7 +526,6 @@ config.Count().Filter(); // Handles filtering  operation.
         }
     });
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 

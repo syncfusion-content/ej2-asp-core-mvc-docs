@@ -383,7 +383,8 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 			grid.dataSource = dataManager;
 		}
 	});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 {% endtabs %}
 
 **Step 7:** Configure the server:
@@ -452,7 +453,8 @@ builder.Services.AddControllers().AddOData(
 			grid.dataSource = dataManager;
 		}
 	});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 {% endtabs %}
 
 ![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
@@ -560,7 +562,8 @@ builder.Services.AddControllers().AddOData(
 			grid.dataSource = dataManager;
 		}
 	});
-</script>{% endhighlight %}
+</script>
+{% endhighlight %}
 {% endtabs %}
 
 **Single column sorting**
