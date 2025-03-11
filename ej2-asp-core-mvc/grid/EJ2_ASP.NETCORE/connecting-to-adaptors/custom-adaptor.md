@@ -407,7 +407,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will succ
 
 > Replace https://localhost:xxxx/odata/Orders with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
-## Handling Searching Operation
+## Handling searching operation
 
 To enable search operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in their requests to search for specific data entries.
 
@@ -460,7 +460,7 @@ builder.Services.AddControllers().AddOData(
 
 ![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
 
-## Handling Filtering Operation
+## Handling filtering operation
 
 To enable filter operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in your requests to filter for specific data entries.
 
@@ -516,7 +516,7 @@ builder.Services.AddControllers().AddOData(
 **Multi column filtering**
 ![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
-## Handling Sorting Operation
+## Handling sorting operation
 
 To enable sorting operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `OrderBy` method within the OData setup, allowing you to sort data based on specified criteria. Once enabled, clients can utilize the **$orderby** query option in their requests to sort data entries according to desired attributes.
 
@@ -576,7 +576,7 @@ builder.Services.AddControllers().AddOData(
 
 ![Multi column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
 
-## Handling Paging Operation
+## Handling paging operation
 
 To implement paging operations in your web application using OData, you can utilize the `SetMaxTop` method within your OData setup to limit the maximum number of records that can be returned per request. While you configure the maximum limit, clients can utilize the **$skip** and **$top** query options in their requests to specify the number of records to skip and the number of records to take, respectively. 
 

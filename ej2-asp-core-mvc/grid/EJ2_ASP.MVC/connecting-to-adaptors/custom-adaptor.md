@@ -43,7 +43,7 @@ processQuery(dm, query) {
 
 The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
 
-* `DataManager`: Provides the `dataSource` and `adaptor` value.
+* `DataManager`: Provides the `DataSource` and `Adaptor` value.
 
 * `Request`: Used to send custom headers, such as setting the `Authorization` header.
 
