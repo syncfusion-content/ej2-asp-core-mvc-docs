@@ -7,14 +7,14 @@
 </div>
 
 <style>
-#element {
-    display: block;
-    width: 300px;
-    margin: 100px auto;
-    border-radius: 3px;
-}
+    #element {
+        display: block;
+        width: 300px;
+        margin: 100px auto;
+        border-radius: 3px;
+    }
 
-.e-avatar {
-    background-image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic01.png")');
-}
+    .e-avatar {
+        background-image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic01.png")');
+    }
 </style>

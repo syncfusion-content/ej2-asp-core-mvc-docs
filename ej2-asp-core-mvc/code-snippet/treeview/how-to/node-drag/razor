@@ -3,15 +3,15 @@
     .Child(ViewBag.child).DataSource(ViewBag.dataSource)).Render()
 <script>
    function nodeDrag(args) {
-         if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
+        if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
             args.dropIndicator = 'e-no-drop';
-         }
+        }
     }
 
     function dragStop(args) {
-          if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
+        if (args.droppedNode != null && args.droppedNode.getElementsByClassName('folder') && args.droppedNode.getElementsByClassName('folder').length === 0) {
             args.cancel = true;
-          }
+        }
     }
 </script>
 <style>
@@ -27,40 +27,40 @@
         height: 20px;
     }
 
-        /* Specify the icon positions based upon class name */
-        .e-treeview .e-list-icon.folder {
-            background-position: -10px -552px;
-        }
+    /* Specify the icon positions based upon class name */
+    .e-treeview .e-list-icon.folder {
+        background-position: -10px -552px;
+    }
 
-        .e-treeview .e-list-icon.docx {
-            background-position: -10px -20px;
-        }
+    .e-treeview .e-list-icon.docx {
+        background-position: -10px -20px;
+    }
 
-        .e-treeview .e-list-icon.ppt {
-            background-position: -10px -48px;
-        }
+    .e-treeview .e-list-icon.ppt {
+        background-position: -10px -48px;
+    }
 
-        .e-treeview .e-list-icon.pdf {
-            background-position: -10px -104px;
-        }
+    .e-treeview .e-list-icon.pdf {
+        background-position: -10px -104px;
+    }
 
-        .e-treeview .e-list-icon.images {
-            background-position: -10px -132px;
-        }
+    .e-treeview .e-list-icon.images {
+        background-position: -10px -132px;
+    }
 
-        .e-treeview .e-list-icon.zip {
-            background-position: -10px -188px;
-        }
+    .e-treeview .e-list-icon.zip {
+        background-position: -10px -188px;
+    }
 
-        .e-treeview .e-list-icon.audio {
-            background-position: -10px -244px;
-        }
+    .e-treeview .e-list-icon.audio {
+        background-position: -10px -244px;
+    }
 
-        .e-treeview .e-list-icon.video {
-            background-position: -10px -272px;
-        }
+    .e-treeview .e-list-icon.video {
+        background-position: -10px -272px;
+    }
 
-        .e-treeview .e-list-icon.exe {
-            background-position: -10px -412px;
-        }
+    .e-treeview .e-list-icon.exe {
+        background-position: -10px -412px;
+    }
 </style>

@@ -27,6 +27,7 @@
         ticks.ej2_instances[0].refresh();
     };
 </script>
+
 <style>
 /* render slider in hidden state */
     #container{
