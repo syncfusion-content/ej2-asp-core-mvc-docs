@@ -432,7 +432,7 @@ public object Get()
 {% endhighlight %}
 {% highlight cshtml tabtitle="Index.cshmtl" %}
 
-<ejs-grid id="Grid" allowFiltering="true" height="315">
+<ejs-grid id="Grid" allowSorting="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
