@@ -167,6 +167,7 @@ namespace CustomAdaptor.Models
       public string ShipAddress { get; set; }
   }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -260,6 +261,7 @@ namespace CustomAdaptor.Controllers
         }
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
