@@ -1,7 +1,6 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
 
-<!-- ListView element -->
 <ejs-listview id="folderCheckbox" dataSource="(IEnumerable<object>)ViewBag.dataSource" showHeader="true" headerTitle="Mized Leaf Checkbox Hidden" select="onSelect" showCheckBox="true">
     <e-listview-fieldsettings tooltip="text" text="text"></e-listview-fieldsettings>
 </ejs-listview>
@@ -14,9 +13,9 @@
         margin: auto;
     }
 
-        #folderCheckbox .e-checkbox-hidden .e-checkbox-wrapper {
-            visibility: hidden;
-        }
+    #folderCheckbox .e-checkbox-hidden .e-checkbox-wrapper {
+        visibility: hidden;
+    }
 </style>
 <script>
     function onSelect(args) {

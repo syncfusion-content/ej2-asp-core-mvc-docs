@@ -1,13 +1,21 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
+
 @{
-    var content = "<iframe src=\"https://www.syncfusion.com/products/essential-js2\" id=\"tooltipFrame\"></iframe>";
+    var content = "<iframe src=\"https://ej2.syncfusion.com/showcase/typescript/expensetracker/#/dashboard\" id=\"tooltipFrame\"></iframe>";
 }
 
 <div id='container'>
     <div id="tooltipContent">
         <div class="content">
-            @Html.EJS().Tooltip("target").CssClass("e-tooltip-css").OpensOn("Click").Width("350").Height("250").Content(content).ContentTemplate(@<button class="text e-btn e-primary e-outline" id="iframeContent">Embedded Iframe</button>).Render()
+            @Html.EJS().Tooltip("target")
+                .CssClass("e-tooltip-css")
+                .OpensOn("Click")
+                .Width("350")
+                .Height("250")
+                .Content(content)
+                .ContentTemplate(@<button class="text e-btn e-primary e-outline" id="iframeContent">Embedded Iframe</button>)
+                .Render()
         </div>
     </div>
 </div>

@@ -17,11 +17,12 @@
     data.Add(new { text = "Steven", id = "s_06", pic= "pic03", avatar= "" });
     data.Add(new { text = "Margaret", id = "s_07", avatar= "M", pic= "" });
 }
+
 <div class="col-lg-12 control-section">
     <ejs-listview id='letterAvatarList' dataSource=@data headerTitle='Contacts' template="@template"
                 showHeader=true sortOrder="Ascending">
-</ejs-listview>
-        </div >
+    </ejs-listview>
+</div >
 
 
 <style>

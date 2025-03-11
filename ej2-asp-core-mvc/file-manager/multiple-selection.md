@@ -11,9 +11,9 @@ documentation: ug
 
 # Multiple Selection in File Manager
 
-The File Manager allows multiple file selection through the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The [`fileSelect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileSelect.html) event will be triggered when the items of File Manager control is selected or unselected.
+The File Manager allows multiple file selection through the `allowMultiSelection`) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The `fileSelect` event will be triggered when the items of File Manager control is selected or unselected.
 
-The example below demonstrates how the File Manager allows multiple file selection using the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AllowMultiSelection.html) property.
+The example below demonstrates how the File Manager allows multiple file selection using the `allowMultiSelection` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ The example below demonstrates how the File Manager allows multiple file selecti
 
 The output will look like the image below.
 
-![FileManager multiselection](./images/detailsview.png)
+![File Manager multiselection](./images/detailsview.png)
 
 ## Range Selection
 
@@ -78,4 +78,4 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 
 The output will look like the image below.
 
-![FileManager rangeselection](./images/rangeselection.png)
+![File Manager rangeselection](./images/rangeselection.png)
