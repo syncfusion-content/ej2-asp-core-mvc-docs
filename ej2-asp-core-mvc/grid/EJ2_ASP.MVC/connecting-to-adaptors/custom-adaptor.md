@@ -63,7 +63,9 @@ The `beforeSend` method is executed before a request is sent to the server. This
 
 ```js
 beforeSend(dm, request, settings) {
-    request.headers.set('Authorization', `true`);
+    if (request){
+        request.setRequestHeader("Authorization", "true");
+    }
     return super.beforeSend(dm, request, settings);
 }
 ```
@@ -366,10 +368,12 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 			}
 			return original;
 		}
-		beforeSend(dm, request, settings) {
-			request.headers.set('Authorization', `true`);
-			super.beforeSend(dm, request, settings);
-		}
+        beforeSend(dm, request, settings) {
+            if (request){
+                request.setRequestHeader("Authorization", "true");
+            }
+            return super.beforeSend(dm, request, settings);
+        }
 		processQuery(dm, query) {
 			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
@@ -416,10 +420,12 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 			}
 			return original;
 		}
-		beforeSend(dm, request, settings) {
-			request.headers.set('Authorization', `true`);
-			super.beforeSend(dm, request, settings);
-		}
+        beforeSend(dm, request, settings) {
+            if (request){
+                request.setRequestHeader("Authorization", "true");
+            }
+            return super.beforeSend(dm, request, settings);
+        }
 		processQuery(dm, query) {
 			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
