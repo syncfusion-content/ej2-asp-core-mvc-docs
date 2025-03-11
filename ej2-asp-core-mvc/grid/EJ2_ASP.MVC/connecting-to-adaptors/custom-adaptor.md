@@ -358,7 +358,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 		processResponse(data, ds, query, xhr, request, changes) {
 			let i = 0;
 			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			// Adding serial number to each row
+			// Adding serial number to each row.
 			if (original.result) {
 				original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
 			}
@@ -369,8 +369,8 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 			super.beforeSend(dm, request, settings);
 		}
 		processQuery(dm, query) {
-			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint
-			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters
+			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
+			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
 			return super.processQuery.apply(this, arguments);
 		}
 	}
@@ -393,6 +393,7 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").Height("320px").Columns(col =>
 {
     col.Field("SNo").HeaderText("S. No").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -460,6 +461,7 @@ config.Count().Filter(); // Handles searching operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -480,6 +482,7 @@ config.Count().Filter(); // Handles searching operation.
         }
     });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -503,6 +506,7 @@ config.Count().Filter(); // Handles filtering  operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -523,6 +527,7 @@ config.Count().Filter(); // Handles filtering  operation.
         }
     });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -549,6 +554,7 @@ config.Count().OrderBy(); // Handles sorting  operation.
 ...
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -569,6 +575,7 @@ config.Count().OrderBy(); // Handles sorting  operation.
         }
     });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -597,6 +604,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
 ....
 {% endhighlight %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -617,6 +625,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
         }
     });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -630,6 +639,7 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 @Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -650,6 +660,7 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
         }
     });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -718,7 +729,7 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 /// Deletes an order.
 /// </summary>
 /// <param name="key">The ID of the order to delete.</param>
-/// <returns>It returns the deleted record detail</returns>
+/// <returns>It returns the deleted record detail.</returns>
 public IHttpActionResult Delete(int key)
 {
     var deleteRecord = OrdersDetails.GetAllRecords().FirstOrDefault(order => order.OrderID == key);

@@ -320,7 +320,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 		processResponse(data, ds, query, xhr, request, changes) {
 			let i = 0;
 			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			// Adding serial number to each row
+			// Adding serial number to each row.
 			if (original.result) {
 				original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
 			}
@@ -331,8 +331,8 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 			super.beforeSend(dm, request, settings);
 		}
 		processQuery(dm, query) {
-			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint
-			query.addParams('Syncfusion in ASP.NET Core Grid', 'true'); // Add additional parameters
+			dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Update with your API endpoint.
+			query.addParams('Syncfusion in ASP.NET Core Grid', 'true'); // Add additional parameters.
 			return super.processQuery.apply(this, arguments);
 		}
 	}
@@ -503,7 +503,6 @@ builder.Services.AddControllers().AddOData(
 				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
-
 			grid.dataSource = dataManager;
 		}
 	});
@@ -627,7 +626,6 @@ builder.Services.AddControllers().AddOData(
 				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
-
 			grid.dataSource = dataManager;
 		}
 	});
@@ -665,7 +663,6 @@ To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below 
 				url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
 				adaptor: new CustomAdaptor()
 			});
-
 			grid.dataSource = dataManager;
 		}
 	});
