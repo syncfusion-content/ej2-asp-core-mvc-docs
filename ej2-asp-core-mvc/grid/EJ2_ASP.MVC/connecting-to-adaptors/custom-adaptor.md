@@ -63,9 +63,7 @@ The `beforeSend` method is executed before a request is sent to the server. This
 
 ```js
 beforeSend(dm, request, settings) {
-    if (request){
-        request.setRequestHeader("Authorization", "true");
-    }
+    request.headers.set('Authorization', `true`);
     return super.beforeSend(dm, request, settings);
 }
 ```
@@ -88,7 +86,7 @@ return original;
 
 This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion ASP.NET MVC Grid.
 
-## Creating an Custom Service
+## Creating an custom service
 
 To configure a server with Syncfusion ASP.NET MVC Grid using OData, follow these steps:
 
@@ -273,7 +271,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
 
-## Connecting Syncfusion ASP.NET MVC Grid to an Custom service extending the ODataV4 service
+## Connecting Syncfusion ASP.NET MVC Grid to an custom service extending the ODataV4 service
 
 To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
@@ -368,12 +366,10 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 			}
 			return original;
 		}
-        beforeSend(dm, request, settings) {
-            if (request){
-                request.setRequestHeader("Authorization", "true");
-            }
-            return super.beforeSend(dm, request, settings);
-        }
+		beforeSend(dm, request, settings) {
+			request.headers.set('Authorization', `true`);
+			super.beforeSend(dm, request, settings);
+		}
 		processQuery(dm, query) {
 			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
@@ -420,12 +416,10 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 			}
 			return original;
 		}
-        beforeSend(dm, request, settings) {
-            if (request){
-                request.setRequestHeader("Authorization", "true");
-            }
-            return super.beforeSend(dm, request, settings);
-        }
+		beforeSend(dm, request, settings) {
+			request.headers.set('Authorization', `true`);
+			super.beforeSend(dm, request, settings);
+		}
 		processQuery(dm, query) {
 			dm.dataSource.url = 'https://localhost:xxxx/odata/Orders'; // Update with your API endpoint.
 			query.addParams('Syncfusion in ASP.NET MVC Grid', 'true'); // Add additional parameters.
