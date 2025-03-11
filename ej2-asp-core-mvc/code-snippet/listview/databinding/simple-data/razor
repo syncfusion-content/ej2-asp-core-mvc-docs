@@ -5,7 +5,6 @@
     .DataSource((IEnumerable<object>)ViewBag.dataSource)
     .Render()
 
-
 <style>
     #element {
         display: block;

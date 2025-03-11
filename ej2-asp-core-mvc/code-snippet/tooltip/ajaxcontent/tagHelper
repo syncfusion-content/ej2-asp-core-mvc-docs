@@ -1,10 +1,8 @@
 
 <div id='container'>
     <h4 class="list-header">National Sports</h4>
-    <!-- Tooltip element rendering for AjaxContent loading -->
     <ejs-tooltip id="Tooltip" content="Loading..." beforeRender="onBeforeRender" target="#countrylist [title]" showTipPointer="true" position="RightCenter">
         <e-content-template>
-            <!-- ListView element -->
             <ejs-listview id="countrylist" dataSource="ViewBag.data" enable="true">
                 <e-listview-fieldsettings text="text" tooltip="id"></e-listview-fieldsettings>
             </ejs-listview>
@@ -14,9 +12,6 @@
 
 
 <script>
-    /**
-     * Process tooltip ajax content.
-     */
     function onBeforeRender(args) {
         var _this = this;
         this.content = 'Loading...';
@@ -35,6 +30,7 @@
         });
     }
 </script>
+
 <style>
 
     .def {

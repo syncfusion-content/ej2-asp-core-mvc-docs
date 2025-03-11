@@ -39,9 +39,9 @@
         border: 1px solid rgba(0, 0, 0, 0.12)
     }
 
-        #lists ul li:first-child {
-            display: none;
-        }
+    #lists ul li:first-child {
+        display: none;
+    }
 
     .incr_button {
         vertical-align: top;

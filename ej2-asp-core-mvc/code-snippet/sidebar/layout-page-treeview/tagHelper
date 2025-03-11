@@ -28,8 +28,6 @@
                 <li class="header-style float-right support border-left"><b>Support</b></li>
             </ul>
         </div>
-        <!-- end of header-section -->
-        <!-- sidebar element declaration -->
         <ejs-sidebar id="sidebar-treeview" width="290px" target=".main-content" enableDock="true" dockSize="44px" mediaQuery='(min-width: 600px)' close="onClose">
             <e-content-template>
                 <div class="main-menu">
@@ -130,31 +128,31 @@
                 border-left: 0.5px solid #80808070;
                 border-bottom: 0.5px solid #80808070;
             }
-                /*main-menu-header  styles */
-                #sidebar-treeview .main-menu .main-menu-header {
-                    color: #656a70;
-                    padding: 15px;
-                    font-size: 14px;
-                    width: 13em;
-                    margin: 0;
-                }
+            /*main-menu-header  styles */
+            #sidebar-treeview .main-menu .main-menu-header {
+                color: #656a70;
+                padding: 15px;
+                font-size: 14px;
+                width: 13em;
+                margin: 0;
+            }
 
-                /*end of main-menu-header styles */
+            /*end of main-menu-header styles */
 
-                /*text input styles */
-                #sidebar-treeview .main-menu .search-icon {
-                    text-indent: 10px;
-                    height: 30px;
-                    width: 19em;
-                }
+            /*text input styles */
+            #sidebar-treeview .main-menu .search-icon {
+                text-indent: 10px;
+                height: 30px;
+                width: 19em;
+            }
 
-                /*end of text input styles */
+            /*end of text input styles */
 
-                /* table of content area styles */
-                #sidebar-treeview .table-content {
-                    padding: 20px;
-                    height: 8em;
-                }
+            /* table of content area styles */
+            #sidebar-treeview .table-content {
+                padding: 20px;
+                height: 8em;
+            }
 
             /* end of table ofcontent area styles */
 

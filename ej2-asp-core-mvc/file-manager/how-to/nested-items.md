@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Nested FileManager
+# Nested File Manager
 
-FileManager can be rendered inside other controls like Tab, Dialog, and more.
+File Manager can be rendered inside other controls like Tab, Dialog, and more.
 
 * [Adding File Manager inside the dialog](#adding-file-manager-inside-the-dialog)
 * [Adding  File Manager inside the tab](#adding-file-manager-inside-the-tab)
@@ -45,11 +45,11 @@ The following example shows the File Manager control rendered inside the dialog.
 
 The initial output will look like the image below.
 
-![FileManager upload ](../images/file_upload.PNG)
+![File Manager upload ](../images/file_upload.PNG)
 
 After clicking the file browser button, the File Manager is rendered within a dialog. The output will look like the image below.
 
-![FileManager inside dialog ](../images/file_dialog.PNG)
+![File Manager inside dialog ](../images/file_dialog.PNG)
 
 ## Adding File Manager inside the tab
 
@@ -82,8 +82,8 @@ The following example demonstrates the File Manager control placed inside the co
 
 The initial view output will look like the image below.
 
-![FileManager inside tab ](../images/file_tab.PNG)
+![File Manager inside tab ](../images/file_tab.PNG)
 
 The output will look like the image below when the File Manager is placed inside the tab.
 
-![FileManager inside tab ](../images/file_tab_item.PNG)
+![File Manager inside tab ](../images/file_tab_item.PNG)
