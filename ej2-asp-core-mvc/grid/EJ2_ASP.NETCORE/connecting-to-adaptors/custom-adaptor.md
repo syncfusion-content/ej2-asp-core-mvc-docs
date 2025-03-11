@@ -92,7 +92,7 @@ To configure a server with Syncfusion ASP.NET Core Grid, you need to follow the 
 
 **1. Project Creation:**
 
-Open Visual Studio and create an ASP.NET Core project named **ODataV4Adaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
+Open Visual Studio and create an ASP.NET Core project named **CustomAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
 **2. Install NuGet Packages**
 
@@ -171,7 +171,7 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
 To construct the Entity Data Model for your OData service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
 
 ```cs
-using ODataV4Adaptor.Models;
+using CustomAdaptor.Models;
 using Microsoft.AspNetCore.OData;
 using Microsoft.OData.ModelBuilder;
 
@@ -200,9 +200,9 @@ Finally, add controllers to expose the OData endpoints. Here's an example:
 ```cs
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.OData.Query;
-using ODataV4Adaptor.Models;
+using CustomAdaptor.Models;
 
-namespace ODataV4Adaptor.Controllers
+namespace CustomAdaptor.Controllers
 {
     [Route("[controller]")]
     [ApiController]
