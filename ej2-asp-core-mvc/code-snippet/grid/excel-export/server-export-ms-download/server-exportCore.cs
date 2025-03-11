@@ -1,6 +1,6 @@
 using Syncfusion.XlsIO;
 
-public MemoryStream ms1; // defines existing memory stream
+public MemoryStream ms1; // defines existing memory stream.
 
 public IActionResult Index()
 {

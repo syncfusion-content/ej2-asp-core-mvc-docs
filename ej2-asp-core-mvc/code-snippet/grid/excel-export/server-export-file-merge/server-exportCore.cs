@@ -17,7 +17,7 @@ public object ExcelExport([FromForm] string gridModel)
     ExcelEngine excelEngine = new ExcelEngine();
     IApplication application = excelEngine.Excel;
     application.DefaultVersion = ExcelVersion.Xlsx;
-    //fs1 and ms1 represents the local file's stream and grid's stream.
+    //fs1 and ms1 represents the local file's stream and Grid's stream.
     IWorkbook sourceWorkbook = application.Workbooks.Open(fs1);
     IWorkbook destinationWorkbook = application.Workbooks.Open(ms1);
     for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)

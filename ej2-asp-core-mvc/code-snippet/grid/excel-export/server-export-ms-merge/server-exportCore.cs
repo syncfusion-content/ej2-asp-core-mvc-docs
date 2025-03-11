@@ -1,6 +1,6 @@
 using Syncfusion.XlsIO;
 
-public MemoryStream ms1; // defines existing memory stream
+public MemoryStream ms1; // defines existing memory stream.
 
 public IActionResult Index()
 {
@@ -12,7 +12,7 @@ object object ExcelExport([FromForm] string gridModel)
 {
     GridExcelExport exp = new GridExcelExport();
     Grid gridProperty = ConvertGridObject(gridModel);
-    // get the memory stream of exported grid data.
+    // get the memory stream of exported Grid data.
     MemoryStream ms2 = (MemoryStream)exp.ExcelExport<OrdersDetails>(gridProperty, orddata, true);
     //New instance of ExcelEngine is created equivalent to launching Microsoft Excel with no workbooks open.
     ExcelEngine excelEngine = new ExcelEngine();
@@ -20,7 +20,7 @@ object object ExcelExport([FromForm] string gridModel)
     IApplication application = excelEngine.Excel;
     //Assigns default application version.
     application.DefaultVersion = ExcelVersion.Xlsx;
-    //open an workbook of existing memory stream and grid's memory stream through Open method of IWorkbooks.
+    //open an workbook of existing memory stream and Grid's memory stream through Open method of IWorkbooks.
     IWorkbook sourceWorkbook = application.Workbooks.Open(ms1);
     IWorkbook destinationWorkbook = application.Workbooks.Open(ms2);
     //Copy all the worksheet from the Source workbook to the destination workbook.

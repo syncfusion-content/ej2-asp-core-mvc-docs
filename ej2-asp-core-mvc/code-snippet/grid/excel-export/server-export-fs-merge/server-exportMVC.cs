@@ -1,6 +1,6 @@
 using Syncfusion.XlsIO;
 
-public FileStream fs1; // defines existing file stream
+public FileStream fs1; // defines existing file stream.
 
 public ActionResult Index()
 {
@@ -17,7 +17,7 @@ public object ExcelExport(string gridModel)
     ExcelEngine excelEngine = new ExcelEngine();
     IApplication application = excelEngine.Excel;
     application.DefaultVersion = ExcelVersion.Xlsx;
-    //fs1 and ms1 represents the existing stream and grid's stream.
+    //fs1 and ms1 represents the existing stream and Grid's stream.
     IWorkbook sourceWorkbook = application.Workbooks.Open(fs1);
     IWorkbook destinationWorkbook = application.Workbooks.Open(ms1);
     for (int i = 0; i < sourceWorkbook.Worksheets.Count; i++)
@@ -25,7 +25,7 @@ public object ExcelExport(string gridModel)
         destinationWorkbook.Worksheets.AddCopy(sourceWorkbook.Worksheets[i]);
     }
     destinationWorkbook.ActiveSheetIndex = 1;
-    //Saving the workbook as stream
+    //Saving the workbook as stream.
     MemoryStream ms3 = new MemoryStream();
     destinationWorkbook.SaveAs(ms3);
     ms3.Position = 0;
