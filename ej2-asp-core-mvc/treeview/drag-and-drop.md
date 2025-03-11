@@ -11,7 +11,7 @@ documentation: ug
 
 # Drag and Drop
 
-The TreeView control allows you to drag and drop any node by setting the [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowDragAndDrop.html) to **true**. Nodes can be dragged and dropped at all levels of the same TreeView. 
+The TreeView control allows you to drag and drop any node by setting the `allowDragAndDrop` to **true**. Nodes can be dragged and dropped at all levels of the same TreeView. 
 
 The dragged nodes can be dropped at any level by indicator lines with **line**, **plus/minus**, and **restrict** icons. It represents the exact position where the node is to be dropped as sibling or child.
 
@@ -23,13 +23,13 @@ The following table explains the usage of indicator icons.
 | Minus or restrict icon |Indicates that the dragged node is not to be dropped at the hovered region. |
 | In-between icon | Indicates that the dragged node is to be added as siblings of hovered region. |
 
-* To prevent dragging action for a particular node, you can use the [`nodeDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragStart.html) event, which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the [`nodeDragStop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeDragStop) event can be used which is triggered when the drag is stopped.
+* To prevent dragging action for a particular node, you can use the `nodeDragStart` event, which is triggered when the node drag is started. If you need to prevent dropping action for a particular node, the `nodeDragStop` event can be used which is triggered when the drag is stopped.
 
-* The [`nodeDragging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDragging.html) event is triggered when the TreeView node is being dragged. You can customize the cloned element in this event.
+* The `nodeDragging` event is triggered when the TreeView node is being dragged. You can customize the cloned element in this event.
 
-* The [`nodeDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeDropped.html) event is triggered when the TreeView node is dropped on the target element successfully.
+* The `nodeDropped` event is triggered when the TreeView node is dropped on the target element successfully.
 
-In the following sample, the [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowDragAndDrop.html) property is enabled.
+In the following sample, the `allowDragAndDrop` property is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -62,7 +62,7 @@ The output will look like the image below:
 
 ## Multiple-node drag and drop
 
-To drag and drop more than one node, you should enable both the [allowMultiSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowMultiSelection.html) and [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~AllowDragAndDrop.html) properties. 
+To drag and drop more than one node, you should enable both the `allowMultiSelection` and `allowDragAndDrop` properties. 
 
 To perform multi-selection, press and hold **CTRL** key and click the desired nodes. To select a range of nodes, press and hold the **SHIFT** key and click the nodes. 
 

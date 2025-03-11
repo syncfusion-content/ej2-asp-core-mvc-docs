@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show Tooltip on disabled elements and disable tooltip
+# Show Tooltip on disabled elements and disable Tooltip
 
 By default, Tooltips will not be displayed on disabled elements. However, it is possible to enable this behavior by following the steps below.
 
@@ -42,4 +42,4 @@ By default, Tooltips will not be displayed on disabled elements. However, it is 
 
 Output be like the below.
 
-![ASP .NET Core - Tooltip on disabled elements](./images/disabled-elements.png)
+![ASP .NET Core - Tooltip on disabled elements](./../images/disabled-elements.png)

@@ -10,9 +10,9 @@ documentation: ug
 
 # Fancy Tooltip Customization
 
-The arrow of the tooltip can be customized as needed by customizing CSS in the sample-side. The EJ2 tooltip component is achieved through CSS3 format and positioned the tip arrow according to the tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
+The arrow of the Tooltip can be customized as needed by customizing CSS in the sample-side. The EJ2 Tooltip component is achieved through CSS3 format and positioned the tip arrow according to the Tooltip positions like `TopCenter`, `BottomLeft`, `RightTop`, and more.
 
-Here, the tip arrow is customized as Curved tooltip and Bubble tooltip.
+Here, the tip arrow is customized as Curved Tooltip and Bubble Tooltip.
 
 ## Curved tip
 
@@ -59,9 +59,9 @@ The two `divs`(inner div and outer div) have been added to achieve the bubble ti
     }
 ```
 
-These tip arrow customizations have been achieved through CSS changes in the sample level. The tooltip position can be changed by using the radio button click event.
+These tip arrow customizations have been achieved through CSS changes in the sample level. The Tooltip position can be changed by using the radio button click event.
 
-The arrow tip pointer can also be disabled by using the [`showTipPointer`](https://ej2.syncfusion.com/documentation/tooltip/api-tooltip.html?lang=typescript#showtippointer) property in a tooltip.
+The arrow tip pointer can also be disabled by using the `showTipPointer` property in a Tooltip.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

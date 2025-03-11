@@ -40,4 +40,4 @@ For instance, here's an example of how to add a custom checkbox to the toolbar u
 
 The output will look like the image below.
 
-![FileManager custom toolbar item](../images/custom_toolbar.png)
+![File Manager custom toolbar item](../images/custom_toolbar.png)

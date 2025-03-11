@@ -1,5 +1,6 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
+
 @{
 
     var template =          
@@ -7,6 +8,7 @@
         "<span style='display: block; white-space: normal; max-width: 80%; padding: 10px; background-color: #e0e0e0; border-radius: 10px; word-wrap: break-word; ' class='e-list-item-header'>${ text }</span>" +
       "</div>";
 }
+
 <div class="control-section">
     <div class="grid-container">
         <div>
@@ -28,7 +30,6 @@
         margin: 0;
     }
 
-    /* Optional: Add styling to headings and divs */
     .grid-container > div {
         border: 1px solid #ddd;
         padding: 20px;
@@ -40,6 +41,7 @@
         background-color: white;
     }
 </style>
+
 <script>
     function onListScrolled(args) {
         var listObj_1 = document.getElementById('listview').ej2_instances[0];

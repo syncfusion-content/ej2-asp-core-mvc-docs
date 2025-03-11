@@ -10,7 +10,7 @@ documentation: ug
 
 # How to enable/disable toolbar item/items
 
-The toolbar items can be enabled or disabled by specifying them in the [`enableToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#enabletoolbaritems) or [`disableToolbarItems`](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#disabletoolbaritems) methods, respectively.
+The toolbar items can be enabled or disabled by specifying them in the `enableToolbarItems` or `disableToolbarItems` methods, respectively.
 
 The following example shows enabling and disabling toolbar items on button click.
 
@@ -41,8 +41,8 @@ The following example shows enabling and disabling toolbar items on button click
 
 The output will look like the image below when enabling toolbar items.
 
-![FileManager enable toolbar items ](../images/enable_toolbar_items.PNG)
+![File Manager enable toolbar items ](../images/enable_toolbar_items.PNG)
 
 The output will look like the image below when disabling toolbar items.
 
-![FileManager disable toolbar items ](../images/disable_toolbar_items.PNG)
+![File Manager disable toolbar items ](../images/disable_toolbar_items.PNG)

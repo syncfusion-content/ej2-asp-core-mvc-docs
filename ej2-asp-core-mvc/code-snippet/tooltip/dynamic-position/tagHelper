@@ -1,8 +1,13 @@
-<ejs-tooltip id="targetContainer" content="Drag me!" position="TopCenter" offsetX="-15" target="#demoSmart">
-    <e-content-template>
-        <div id="demoSmart"></div>
-    </e-content-template>
-</ejs-tooltip>
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Popups
+
+<div class="control-section">
+    <ejs-tooltip id="targetContainer" content="Drag me!" position="TopCenter" offsetX="-15" target="#demoSmart">
+        <e-content-template>
+            <div id="demoSmart"></div>
+        </e-content-template>
+    </ejs-tooltip>
+</div>
 
 
 <script type="text/javascript">
@@ -10,7 +15,6 @@
     window.onload = function () {
         ele = document.getElementById('demoSmart');
         tooltip = document.getElementById("targetContainer").ej2_instances[0];
-        ////Initialize Draggable for tooltip element
         var drag = new ej.base.Draggable(ele, {
             clone: false,
             dragArea: '#targetContainer',

@@ -36,12 +36,12 @@
         border: 1px solid rgba(0, 0, 0, 0.12)
     }
 
-        #lists .e-list-item {
-            cursor: pointer;
-            height: 50px;
-            line-height: 48px;
-            border: 0;
-        }
+    #lists .e-list-item {
+        cursor: pointer;
+        height: 50px;
+        line-height: 48px;
+        border: 0;
+    }
 
     /* SVG Icons and Customization */
 
