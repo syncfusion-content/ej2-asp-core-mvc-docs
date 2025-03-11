@@ -16,9 +16,9 @@ The `CustomAdaptor` in the Syncfusion ASP.NET MVC Grid allows to create their ow
 
 There are three types of methods in custom adaptors.
 
-### ProcessQuery
+### processQuery
 
-The `ProcessQuery` method handles the execution of a query sent to a `DataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+The `processQuery` method handles the execution of a query sent to a `DataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `processQuery` method accepts two arguments: 
 
 * `DataManager`: Used to modify the URL dynamically.
 
@@ -394,8 +394,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 Define a `DataManager` instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to `CustomAdaptor`.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
-
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Height("320px").Columns(col =>
 {
     col.Field("SNo").HeaderText("S. No").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -437,7 +436,6 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 		}
 	});
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -462,8 +460,8 @@ config.MapODataServiceRoute(
 config.Count().Filter(); // Handles searching operation.
 ...
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -477,14 +475,13 @@ config.Count().Filter(); // Handles searching operation.
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "/odata/Orders",
+                url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
                 adaptor: new CustomAdaptor()
             });
             grid.dataSource = dataManager;
         }
     });
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -507,8 +504,8 @@ config.MapODataServiceRoute(
 config.Count().Filter(); // Handles filtering  operation.
 ...
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -522,7 +519,7 @@ config.Count().Filter(); // Handles filtering  operation.
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "/odata/Orders",
+                url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
                 adaptor: new CustomAdaptor()
             });
             grid.dataSource = dataManager;
@@ -555,8 +552,8 @@ config.MapODataServiceRoute(
 config.Count().OrderBy(); // Handles sorting  operation.
 ...
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -570,14 +567,13 @@ config.Count().OrderBy(); // Handles sorting  operation.
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "/odata/Orders",
+                url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
                 adaptor: new CustomAdaptor()
             });
             grid.dataSource = dataManager;
         }
     });
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -605,8 +601,8 @@ var recordCount= OrdersDetails.GetAllRecords().Count;
 config.Count().MaxTop(recordCount); // Handles paging  operation.
 ....
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -620,14 +616,13 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "/odata/Orders",
+                url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
                 adaptor: new CustomAdaptor()
             });
             grid.dataSource = dataManager;
         }
     });
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -640,8 +635,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adapto
 To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC application, follow the below steps:
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
-
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @Html.EJS().Grid("Grid").EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -655,14 +649,13 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "/odata/Orders",
+                url: "https://localhost:xxxx/odata/Orders", // Replace `xxxx` with your actual localhost port number.
                 adaptor: new CustomAdaptor()
             });
             grid.dataSource = dataManager;
         }
     });
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 

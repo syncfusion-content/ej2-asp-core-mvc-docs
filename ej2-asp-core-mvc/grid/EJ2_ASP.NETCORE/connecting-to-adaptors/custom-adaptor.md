@@ -10,15 +10,15 @@ domainurl: ##DomainURL##
 
 # CustomAdaptor in Syncfusion ASP.NET Core Grid
 
-The `CustomAdaptor` in the Syncfusion ASP.NET Core Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the built-in adaptor query process, request and response. The `CustomAdaptor` to be allows extending the OData V4 services, enabling efficient data fetching and manipulation. By default, there are three method for CustomAdaptor built-in methods.
+The `CustomAdaptor` in the Syncfusion ASP.NET Core Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the built-in adaptor query process, request and response. The `CustomAdaptor` to be allows extending the OData V4 services, enabling efficient data fetching and manipulation. By default, there are three method for `CustomAdaptor` built-in methods.
 
 ## Types of CustomAdaptor methods
 
 There are three types of methods in custom adaptors.
 
-### ProcessQuery
+### processQuery
 
-The `ProcessQuery` method handles the execution of a query sent to a `DataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+The `processQuery` method handles the execution of a query sent to a `dataSource`, such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `processQuery` method accepts two arguments: 
 
 * `DataManager`: Used to modify the URL dynamically.
 
@@ -164,8 +164,7 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
       public DateTime ShippedDate { get; set; }
       public string ShipAddress { get; set; }
   }
-}
-{% endhighlight %}
+}{% endhighlight %}
 {% endtabs %}
 
 **4. Build the Entity Data Model**
@@ -243,7 +242,6 @@ Alternatively, you can install it using the following Package Manager Console co
 {% highlight C# tabtitle="Package Manager" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,7 +253,6 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -288,7 +285,6 @@ To include the required styles and scripts, add the following references inside 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -302,8 +298,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `<ejs-
     ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
-</body>
-{% endhighlight %}
+</body>{% endhighlight %}
 {% endtabs %}
 
 **Step 5: Adding Custom Adaptor**
@@ -358,7 +353,7 @@ To create a custom adaptor, extend the ODataV4Adaptor. This custom adaptor will 
 Define a `DataManager` instance, specifying the API endpoint (https://localhost:xxxx/odata/Orders) in the url property and setting the adaptor to `CustomAdaptor`.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 @page
 @model IndexModel
 @{
@@ -388,8 +383,7 @@ Define a `DataManager` instance, specifying the API endpoint (https://localhost:
 			grid.dataSource = dataManager;
 		}
 	});
-</script>
-{% endhighlight %}
+</script>{% endhighlight %}
 {% endtabs %}
 
 **Step 7:** Configure the server:
@@ -435,8 +429,8 @@ builder.Services.AddControllers().AddOData(
         .Filter() 
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
  <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Search"})">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
@@ -458,8 +452,7 @@ builder.Services.AddControllers().AddOData(
 			grid.dataSource = dataManager;
 		}
 	});
-</script>
-{% endhighlight %}
+</script>{% endhighlight %}
 {% endtabs %}
 
 ![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
@@ -488,8 +481,8 @@ builder.Services.AddControllers().AddOData(
         .Filter()
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
  <ejs-grid id="Grid" height="280" allowFiltering="true">
     <e-grid-columns>
             <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
@@ -511,7 +504,6 @@ builder.Services.AddControllers().AddOData(
 		}
 	});
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -546,8 +538,8 @@ builder.Services.AddControllers().AddOData(
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="280" allowSorting="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
@@ -568,8 +560,7 @@ builder.Services.AddControllers().AddOData(
 			grid.dataSource = dataManager;
 		}
 	});
-</script>
-{% endhighlight %}
+</script>{% endhighlight %}
 {% endtabs %}
 
 **Single column sorting**
@@ -611,8 +602,8 @@ builder.Services.AddControllers().AddOData(
         modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
 
+{% highlight cshtml tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="280" allowPaging="true">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
@@ -634,7 +625,6 @@ builder.Services.AddControllers().AddOData(
 		}
 	});
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -647,8 +637,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adapto
 To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below steps:
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
-
+{% highlight cshtml tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
@@ -671,7 +660,6 @@ To enable CRUD operations in the Syncfusion ASP.NET Core Grid, follow the below 
 		}
 	});
 </script>
-
 {% endhighlight %}
 {% endtabs %}
 
