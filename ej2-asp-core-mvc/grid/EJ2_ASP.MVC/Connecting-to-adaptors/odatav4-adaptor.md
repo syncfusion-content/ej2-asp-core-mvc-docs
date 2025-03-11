@@ -36,6 +36,7 @@ Create a model class named `OrdersDetails.cs` inside the **Models** folder.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
+
 namespace ODataV4Adaptor.Models
 {
   public class OrdersDetails
@@ -94,6 +95,7 @@ namespace ODataV4Adaptor.Models
       public string ShipAddress { get; set; }
   }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -166,6 +168,7 @@ Create a controllers to expose the OData endpoints.
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
+
 using System.Linq;
 using Microsoft.AspNet.OData;
 using System.Web.Http;
@@ -187,6 +190,7 @@ namespace ODataV4Adaptor.Controllers
         }
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -206,7 +210,9 @@ To add `ASP.NET MVC` controls to your application, open the NuGet Package Manage
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
+
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,6 +232,7 @@ To include the required styles and scripts, add the following references inside 
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -248,6 +255,7 @@ To include the required styles and scripts, add the following references inside 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -257,10 +265,12 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <body>
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -270,6 +280,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 @using Syncfusion.EJ2
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor")).Columns(col =>
@@ -279,6 +290,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -294,6 +306,7 @@ To enable search operations in your web application using OData, you first need 
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
+
 ...
 // Enable OData.
 config.MapODataServiceRoute(
@@ -314,6 +327,7 @@ config.Count().Filter(); // Handles searching operation.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).Toolbar(new List<string>() { "Search" }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -325,6 +339,7 @@ To enable filter operations in your web application using OData, you first need 
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
+
 ...
 // Enable OData.
 config.MapODataServiceRoute(
@@ -345,6 +360,7 @@ config.Count().Filter(); // Handles filtering  operation.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowFiltering().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -359,6 +375,7 @@ To enable sorting operations in your web application using OData, you first need
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
+
 ...
 // Enable OData.
 config.MapODataServiceRoute(
@@ -379,6 +396,7 @@ config.Count().OrderBy(); // Handles sorting  operation.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowSorting().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -394,6 +412,7 @@ To implement paging operations in your web application using OData, you can util
 
 {% tabs %}
 {% highlight cs tabtitle="WebApiConfig.cs" %}
+
 ....
 // Enable OData.
 config.MapODataServiceRoute(
@@ -415,6 +434,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowPaging().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -429,6 +449,7 @@ To enable CRUD operations in the Syncfusion ASP.NET MVC Grid, follow the below s
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
 
+// Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor")).Columns(col =>
     {
         col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -436,6 +457,7 @@ To enable CRUD operations in the Syncfusion ASP.NET MVC Grid, follow the below s
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -537,6 +559,7 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor").InsertUrl(https://localhost:xxxx/odata/Orders/Insert).UpdateUrl(https://localhost:xxxx/odata/Orders/Update).RemoveUrl(https://localhost:xxxx/odata/Orders/Delete)).Columns(col =>
     {
@@ -545,6 +568,7 @@ The following code example describes the above behavior.
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -552,6 +576,7 @@ For batch editing, you can specify a custom batch URL as follows:
 
 {% tabs %}
 {% highlight html tabtitle="Index.cshtml" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/odata/orders").Adaptor("ODataV4Adaptor").BatchUrl(https://localhost:xxxx/odata/Orders/BatchUpdate)).Columns(col =>
     {
@@ -560,5 +585,6 @@ For batch editing, you can specify a custom batch URL as follows:
         col.Field("EmployeeID").HeaderText("Employee ID").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
 {% endhighlight %}
 {% endtabs %}

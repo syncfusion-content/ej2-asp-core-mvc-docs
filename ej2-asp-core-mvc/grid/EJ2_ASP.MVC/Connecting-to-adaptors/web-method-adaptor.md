@@ -37,6 +37,7 @@ Create a model class named **OrdersDetails.cs** inside the **Models** folder on 
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersDetails.cs" %}
+
 namespace WebMethodAdaptor.Models
 {
   public class OrdersDetails
@@ -91,6 +92,7 @@ namespace WebMethodAdaptor.Models
     public string ShipAddress { get; set; }
   }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -133,6 +135,7 @@ Create a file named `GridController.cs` under the **Controllers** folder. This c
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 using Syncfusion.EJ2.Base;
 using System.Collections.Generic;
 using System.Linq;
@@ -164,6 +167,7 @@ namespace WebMethodAdaptor.Controllers
     }
   }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -187,7 +191,9 @@ To add `ASP.NET MVC` controls to your application, open the NuGet Package Manage
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
+
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.releaseversion }}
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -207,6 +213,7 @@ To include the required styles and scripts, add the following references inside 
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <head>
   ...
   <!-- Syncfusion ASP.NET MVC controls styles -->
@@ -229,6 +236,7 @@ To include the required styles and scripts, add the following references inside 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
   <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,10 +246,12 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
 <body>
   <!-- Syncfusion ASP.NET MVC Script Manager -->
   @Html.EJS().ScriptManager()
 </body>
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -251,6 +261,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 @using Syncfusion.EJ2
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor")).Columns(col =>
@@ -260,6 +271,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
         col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,6 +304,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 public object Post(DataManager DataManagerRequest)
 {
     // Retrieve data from the data source (e.g., database).
@@ -345,6 +358,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post(DataManager DataManagerRequest)
 {
@@ -389,6 +403,7 @@ public class DataManager
         col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowFiltering().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -404,6 +419,7 @@ To handle sorting operation, configure your API to support custom sorting criter
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post(DataManager DataManagerRequest)
 {
@@ -443,6 +459,7 @@ public class DataManager
         col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowSorting().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -454,6 +471,7 @@ To handle paging operation, configure your API endpoint to support custom sortin
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 [HttpPost]
 public object Post(DataManager DataManagerRequest)
 {
@@ -497,6 +515,7 @@ public class DataManager
         col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
         col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
     }).AllowPaging().Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -518,6 +537,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").InsertUrl("https://localhost:xxxx/api/Grid/insert").UpdateUrl("https://localhost:xxxx/api/Grid/update").RemoveUrl("https://localhost:xxxx/api/Grid/delete")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
@@ -526,6 +546,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 		col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 	}).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -618,6 +639,7 @@ The following code example describes the above behavior.
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").CrudUrl("https://localhost:xxxx/api/Grid/crudUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
@@ -626,6 +648,7 @@ The following code example describes the above behavior.
 		col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 	}).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -662,6 +685,7 @@ To perform batch operation, set the edit `Mode` as **Batch** and specify the `Ba
 
 {% tabs %}
 {% highlight ts tabtitle="Index.cshmtl" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").BatchUrl("https://localhost:xxxx/api/Grid/batchUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
@@ -670,6 +694,7 @@ To perform batch operation, set the edit `Mode` as **Batch** and specify the `Ba
 		col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 		col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
 	}).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
