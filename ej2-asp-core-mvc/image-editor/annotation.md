@@ -459,7 +459,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-annotation.png)
+![ImageEditor Sample](images/image-editor-annotation.jpg)
 
 ## Delete a shape 
 

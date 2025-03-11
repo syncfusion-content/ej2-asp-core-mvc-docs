@@ -170,7 +170,7 @@ In the image editor, when an image is cropped, it is usually enlarged or scaled 
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-cropping.jpg)
+![ImageEditor Sample](images/image-editor-prevent-scaling.jpg)
 
 ## SelectionChanging event
 
@@ -215,7 +215,7 @@ When selecting an area for cropping, users can typically resize the selection fr
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-lock-selection.png)
+![ImageEditor Sample](images/image-editor-lock-selection.jpg)
 
 ### Cropping with custom ratio selection
 
