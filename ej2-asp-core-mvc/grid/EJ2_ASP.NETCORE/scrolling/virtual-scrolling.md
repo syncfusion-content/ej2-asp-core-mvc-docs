@@ -138,55 +138,59 @@ In the following sample, Grid is rendered with a large number of records(nearly 
 
 Let's see the step by step procedure for how we can overcome the limitation in the Syncfusion Grid.
 
-1. Create a custom adaptor by extending UrlAdaptor and binding it to the Grid DataSource property. In the processQuery method of the custom adaptor, we handled the Skip query based on the current page set to perform the data operation with whole records on the server.
+1. Create a custom adaptor by extending `UrlAdaptor` and binding it to the Grid [DataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. In the **processQuery** method of the custom adaptor, we handled the `Skip` query based on the current page set to perform the data operation with whole records on the server.
 
 ```typescript
-class CustomUrlAdaptor extends UrlAdaptor {
-    processQuery(args) {
-        if (arguments[1].queries) {
-            for (const i = 0; i < arguments[1].queries.length; i++) {
-                if (arguments[1].queries[i].fn === 'onPage') {
-                    // pageSet - defines the number of segments going to split the 2million records. In this example 0.5 million records are considered for each set so the pageSet is 1, 2, 3 and 4.
+class CustomAdaptor extends ej.data.UrlAdaptor {
+    processQuery(dataManager, query) {
+        if (query.queries) {
+            query.queries.forEach(queryItem => {
+                if (queryItem.fn === 'onPage') {
+                    // pageSet - Defines the number of segments going to split the 2 million records. In this example 0.5 million records are considered for each set so the pageSet is 1, 2, 3 and 4.
                     // maxRecordsPerPageSet – In this example the value is define as 0.5 million.
-
-                    // gridPageSize – the pageSize defined in the Grid as pageSettings->pageSize property
-
-                    // customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2millions records instead of 0.5 million alone.
-                    arguments[1].queries[i].e.pageIndex = (((pageSet - 1) * maxRecordsPerPageSet) / gridPageSize) + arguments[1].queries[i].e.pageIndex;
+                    // gridPageSize – The pageSize defined in the Grid as pageSettings->pageSize property.
+                    // Customize the pageIndex based on the current pageSet (It send the skip query including the previous pageSet ) so that the other operations performed for total 2 millions records instead of 0.5 million alone.
+                    let pageIndex = queryItem.e.pageIndex;
+                    pageIndex = (((pageSet - 1) * maxRecordsPerPageSet) / gridPageSize) + pageIndex;
                 }
-            }
+            });
         }
-        let original = super.processQuery.apply(this, arguments);
-        return original;
+        return super.processQuery(dataManager, query);
     }
 }
-this.data = new DataManager({
-    adaptor: new CustomUrlAdaptor(),
-    url: "Home/UrlDatasource"
-});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let grid = document.getElementById("Grid").ej2_instances[0];
+    if (grid) {
+        let dataManager = new ej.data.DataManager({
+            url: "/api/Grid",
+            adaptor: new CustomAdaptor()
+        });
+        grid.dataSource = dataManager;
+    }
 ```
 
 2. Render the Grid by define the following features.
 
 ```typescript
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" enableVirtualization="true" height="360" beforeDataBound="beforeDataBound" >
+<ejs-grid id="Grid" enableVirtualization="true" height="300" beforeDataBound="beforeDataBound">
     <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
         ......
         ......
     </e-grid-columns>
 </ejs-grid>
 ```
 
-3. In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
+3. In the [beforeDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_BeforeDataBound) event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
 ```typescript
 function beforeDataBound(args) {
-    // storing the total records count which means 2 million records count
+    // Storing the total records count which means 2 million records count.
     totalRecords = args.count;
 
-    // change the count with respect to maxRecordsPerPageSet (maxRecordsPerPageSet = 500000)
+    // Change the count with respect to maxRecordsPerPageSet (maxRecordsPerPageSet = 500000).
     args.count = args.count - ((pageSet - 1) * maxRecordsPerPageSet) > maxRecordsPerPageSet ?maxRecordsPerPageSet : args.count - ((pageSet - 1) * maxRecordsPerPageSet);
 }
 ```
@@ -194,27 +198,39 @@ function beforeDataBound(args) {
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the Grid.
 
 ```typescript
-<ejs-button id='button1' cssClass='e-info prevbtn' content="Load Previous Set..."></ejs-button>
-<ejs-grid id="grid" dataSource="@ViewBag.datasource" enableVirtualization="true" height="360" beforeDataBound="beforeDataBound" >
-    <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
+<ejs-button id='prevButton' class="e-info prevbtn" cssClass='e-primary' content="Load Previous Set.."></ejs-button>
+<ejs-grid id="Grid" enableVirtualization="true" height="300" beforeDataBound="beforeDataBound">
+    <e-grid-pageSettings pageSize=10></e-grid-pageSettings>
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
         ......
         ......
     </e-grid-columns>
 </ejs-grid>
-<ejs-button id='button2' cssClass='e-info nxtbtn' content="Load Next Set..."></ejs-button>
+<ejs-button id='nextButton' class="e-info nxtbtn" cssClass='e-primary' content="Load Next Set..."></ejs-button>
 ```
 
 5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
 ```typescript
-// Triggered when clicking the Previous/ Next button.
-function prevNxtBtnClick(args) {
-    if (grid.element.querySelector('.e-content') && grid.element.querySelector('.e-content').getAttribute('aria-busy') === 'false') {
-        // Increase/decrease the pageSet based on the target element.
-        pageSet = args.target.classList.contains('prevbtn') ? --pageSet : ++pageSet;
-        this.rerenderGrid(); // Re-render the Grid.
+document.getElementById("prevButton").addEventListener("click", function () {
+    loadPageSet(-1);  // Move to the previous page set.
+});
+
+document.getElementById("nextButton").addEventListener("click", function () {
+    loadPageSet(1);  // Move to the next page set.
+});
+
+function loadPageSet(direction) {
+    let grid = document.getElementById("Grid").ej2_instances[0];
+    if (grid && grid.element) {
+        let contentElement = grid.element.querySelector('.e-content');
+        if (contentElement && contentElement.getAttribute('aria-busy') === 'false') {
+            pageSet += direction; // Update page set based on direction (-1 for previous, +1 for next).
+            grid.refresh(); // Reload data with the new page set.
+        } else {
+            console.warn("Grid is still loading. Please wait..."); // Prevent multiple clicks while loading.
+        }
     }
 }
 ```
@@ -227,12 +243,12 @@ function prevNxtBtnClick(args) {
 
 ### Solution 2: Using RowHeight property
 
-You can reduce the [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) using the [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
+You can reduce the [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) using the `rowHeight` property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
 
-In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
+In the following image, you can see how many records will be scrollable when setting `rowHeight` to "36px" and "30px".
 
 ![Row Height](../images/scrolling/row-height.gif)
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of `virtual scrolling` to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
