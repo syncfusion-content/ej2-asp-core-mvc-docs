@@ -9,7 +9,7 @@
 	col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
 	col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
 	col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
-	col.Field("TypeText").HeaderText("File Type").Width("170").FilterBarTemplate(filterBarTemplate).Add(); // Fixed Typetext -> TypeText
+	col.Field("TypeText").HeaderText("File Type").Width("170").FilterBarTemplate(filterBarTemplate).Add();
 }).Render()
 
 <script>
@@ -36,15 +36,15 @@
 	function dropDownWrite() {
 		var dropDownList = new ej.dropdowns.DropDownList({
 			change: function (args) {
-				var grid = document.getElementById("Grid").ej2_instances[0]; // Fixed ID to "Grid"
+				var grid = document.getElementById("Grid").ej2_instances[0];
 				if (args.value !== 'All') {
-					grid.filterByColumn('TypeText', 'equal', args.value); // Ensure 'TypeText' matches column field
+					grid.filterByColumn('TypeText', 'equal', args.value);
 				} else {
 					grid.removeFilteredColsByField('TypeText');
 				}
 			}
 		});
 
-		dropDownList.appendTo('#TypeFilter'); // Ensures dropdown gets applied properly
+		dropDownList.appendTo('#TypeFilter');
 	}
 </script>

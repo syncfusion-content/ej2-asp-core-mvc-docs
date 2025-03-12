@@ -31,14 +31,12 @@
     function dropDownCreate() {
         dropDown = document.createElement('select');
         dropDown.id = 'TypeFilter';
-
         filterDropData.forEach((item) => {
             var option = document.createElement('option');
             option.value = item.Type;
             option.innerText = item.Type;
             dropDown.appendChild(option);
         });
-
         return dropDown;
     }
 
@@ -53,7 +51,6 @@
                 }
             }
         });
-
         dropDownList.appendTo(dropDown);
     }
 </script>
