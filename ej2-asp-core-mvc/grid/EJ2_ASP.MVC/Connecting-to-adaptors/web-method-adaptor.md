@@ -333,7 +333,7 @@ public class DataManager
     public required DataManagerRequest Value { get; set; }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor")).Columns(col =>
     {
@@ -394,7 +394,7 @@ public class DataManager
     public required DataManagerRequest Value { get; set; }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor")).Columns(col =>
     {
@@ -450,7 +450,7 @@ public class DataManager
     public required DataManagerRequest Value { get; set; }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor")).Columns(col =>
     {
@@ -506,7 +506,7 @@ public class DataManager
     public required DataManagerRequest Value { get; set; }
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor")).Columns(col =>
     {
