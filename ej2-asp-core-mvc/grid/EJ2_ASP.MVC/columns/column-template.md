@@ -187,6 +187,26 @@ function queryCellInfo(args) {
 
 ![Column Template ProgressBar](../images/column-template/column-template-progressbar.png)
 
+### Render RadioButton in a column
+
+The Syncfusion ASP.NET MVC Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/aspnetmvc/documentation/radio-button/getting-started) within a column using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion ASP.NET Core Grid by defining the `template` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/column-template-radiobutton.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/OrdersDetails.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Column Template RadioButton](../../images/column-template/column-template-radiobutton.png)
+
 ## Using condition template
 
 The conditional column `Template` allows you to display template elements based on specific conditions.
