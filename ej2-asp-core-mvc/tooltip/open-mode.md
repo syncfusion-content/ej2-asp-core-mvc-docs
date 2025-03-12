@@ -64,7 +64,7 @@ Output be like the below.
 
 ## Custom open mode
 
-Other than the above specified options, the `Custom` mode makes the Tooltip appear on screen for user-defined custom actions such as `right-click`, `double-click`, and so on. Here, the tooltip is not triggered by any default action, and you have to bind your own events and use either `open` or `close` public methods to show or hide the Tooltips.
+Other than the above specified options, the `Custom` mode makes the Tooltip appear on screen for user-defined custom actions such as `right-click`, `double-click`, and so on. Here, the Tooltip is not triggered by any default action, and you have to bind your own events and use either `open` or `close` public methods to show or hide the Tooltips.
 
 The following code example shows how to define custom open mode for the Tooltip.
 
