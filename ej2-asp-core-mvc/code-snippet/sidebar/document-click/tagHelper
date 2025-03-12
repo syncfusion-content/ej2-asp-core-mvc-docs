@@ -1,16 +1,14 @@
-<!-- sidebar element declaration -->
+
 <ejs-sidebar id="default-sidebar" closeOnDocumentClick="true" isOpen="true" type="Push" width="280px">
     <e-content-template>
         <div class="title"> Sidebar content</div>
     </e-content-template>
 </ejs-sidebar>
-<!-- end of sidebar element -->
-<!-- main content declaration -->
+
 <div>
     <div class="title">Main content</div>
     <div class="sub-title"> Click the button to open/close the Sidebar.</div>
     <div style="padding:20px" class="center-align">
-        <!-- button element declaration -->
         <ejs-button id="toggle" content="Open Sidebar" cssClass="e-info"></ejs-button>
     </div>
 </div>

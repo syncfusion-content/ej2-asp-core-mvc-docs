@@ -1,12 +1,13 @@
-<!-- sidebar element declaration -->
-@{Html.EJS().Sidebar("default-sidebar").Width("280px").MediaQuery("(min-width: 600px)").ContentTemplate(@<div>
-    <div class="title-header">
-        <div style="display:inline-block"> Sidebar </div>
-    </div>
-</div>).Render();
+
+@{Html.EJS().Sidebar("default-sidebar")
+    .Width("280px")
+    .MediaQuery("(min-width: 600px)")
+    .ContentTemplate(@<div>
+        <div class="title-header">
+            <div style="display:inline-block"> Sidebar </div>
+        </div>
+    </div>).Render();
 }
-<!-- end of sidebar element -->
-<!-- main content declaration -->
 <div>
     <div class="title default">Main content</div>
     <div class="sub-title">

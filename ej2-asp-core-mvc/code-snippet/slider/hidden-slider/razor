@@ -1,9 +1,19 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Inputs
-	@Html.EJS().Button("element").Content("Button").Render()
-	<div id='container' style="margin-top:150px;">
-		@Html.EJS().Slider("default").Min(1373693400000).Max(1373715000000).Step(3600000).RenderingTicks("renderingTicksHandler").TooltipChange("tooltipChangeHandler").Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 7200000 }).ShowButtons(true).Render()
-	</div>
+
+@Html.EJS().Button("element").Content("Button").Render()
+<div id='container' style="margin-top:150px;">
+    @Html.EJS().Slider("default")
+        .Min(1373693400000)
+        .Max(1373715000000)
+        .Step(3600000)
+        .RenderingTicks("renderingTicksHandler")
+        .TooltipChange("tooltipChangeHandler")
+        .Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true })
+        .Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 7200000 })
+        .ShowButtons(true).Render()
+</div>
+
 <script type="text/javascript">
     function tooltipChangeHandler(args) {
         var totalMilliSeconds = Number(args.text);
@@ -23,6 +33,7 @@
         ticks.ej2_instances[0].refresh();
     };
 </script>
+
 <style>
 /* render slider in hidden state */
     #container{

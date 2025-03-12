@@ -1,7 +1,7 @@
-     <ejs-slider id="default" step="86400000" min="1371081600000" max="1371772800000" showButtons="true" tooltipChange="tooltipChangeHandler" renderingTicks="renderingTicksHandler">
-        <e-slider-tooltipdata isVisible="true" placement="Before"> </e-slider-tooltipdata>
-        <e-slider-ticksdata placement="After" largeStep="172800000" renderingTicks="renderingTicksHandler" change="change"></e-slider-ticksdata>
-    </ejs-slider>
+<ejs-slider id="default" step="86400000" min="1371081600000" max="1371772800000" showButtons="true" tooltipChange="tooltipChangeHandler" renderingTicks="renderingTicksHandler">
+    <e-slider-tooltipdata isVisible="true" placement="Before"> </e-slider-tooltipdata>
+    <e-slider-ticksdata placement="After" largeStep="172800000" renderingTicks="renderingTicksHandler" change="change"></e-slider-ticksdata>
+</ejs-slider>
 
 <script>
     function tooltipChangeHandler(args) {
