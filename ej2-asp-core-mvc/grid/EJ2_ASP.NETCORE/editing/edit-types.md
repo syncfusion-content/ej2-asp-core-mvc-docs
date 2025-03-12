@@ -227,7 +227,7 @@ The following sample code demonstrates the customization applied to DatePicker c
 
 ### Disable the date value prior to the selected date value in DatePicker
 
-The Syncfusion Grid allows configuring the [DatePicker](../../datepicker) to dynamically set a minimum selectable date. This ensures that users can only select dates that fall after a specified minimum date, based on the data in each row. This feature is particularly useful for maintaining data consistency and preventing users from selecting inappropriate or illogical dates.
+The Syncfusion ASP.NET Core Grid allows configuring the [DatePicker](../../datepicker) to dynamically set a minimum selectable date. This ensures that users can only select dates that fall after a specified minimum date, based on the data in each row. This feature is particularly useful for maintaining data consistency and preventing users from selecting inappropriate or illogical dates.
 
 The following example demonstrates how to configure the `DatePicker` within the Grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker’s calendar based on the data in the current row.
 
