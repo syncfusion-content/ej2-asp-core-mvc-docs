@@ -48,7 +48,7 @@ The File Manager provides navigation between files and folders using the followi
 
 ### Navigation pane
 
-The FileManager provides a navigation pane that displays the folder hierarchy of the file system and enables easy navigation to the desired folder. Using [`navigationPaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerNavigationPaneSettings.html) minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
+The File Manager provides a navigation pane that displays the folder hierarchy of the file system and enables easy navigation to the desired folder. Using [`navigationPaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerNavigationPaneSettings.html) minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
 
 ### BreadCrumb
 
@@ -73,7 +73,7 @@ In the large icons view, the thumbnail icons will be shown in a larger size, whi
 
 ### Details view
 
-The FileManager view can be changed from large icon to details view by using the [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [`detailsViewSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) API. The details view allows you to perform sorting using column header.
+The File Manager view can be changed from large icon to details view by using the [`View`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) property. In the details view, the files are displayed in a sorted list order. This file list comprises of several columns of information about the files such as **Name**, **Date Modified**, **Type**, and **Size**. Each file has its own small icon representing the file type. Additional columns can be added using [`detailsViewSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) API. The details view allows you to perform sorting using column header.
 
 ![DetailsView](./images/detailsview.png )
 

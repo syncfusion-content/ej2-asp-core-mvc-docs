@@ -1,6 +1,15 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Inputs
-     @Html.EJS().Slider("default").Min(1373693400000).Max(1373715000000).Step(3600000).RenderingTicks("renderingTicksHandler").TooltipChange("tooltipChangeHandler").Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true }).Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 7200000 }).ShowButtons(true).Render()
+
+@Html.EJS().Slider("default")
+    .Min(1373693400000)
+    .Max(1373715000000)
+    .Step(3600000)
+    .RenderingTicks("renderingTicksHandler")
+    .TooltipChange("tooltipChangeHandler")
+    .Tooltip(new SliderTooltipData { Placement = TooltipPlacement.Before, IsVisible = true })
+    .Ticks(new SliderTicksData { Placement = Placement.After, LargeStep = 7200000 })
+    .ShowButtons(true).Render()
 
 <script type="text/javascript">
     function tooltipChangeHandler(args) {

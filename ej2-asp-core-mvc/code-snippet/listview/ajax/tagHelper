@@ -4,17 +4,14 @@
 
 
 <div id="list-container">
-    <!-- ListView element -->
     <ejs-listview id="listview-def" dataSource="(IEnumerable<object>)ViewBag.dataSource" actionComplete="onActionComplete" actionBegin="onActionBegin" select="onSelect" width="250">
     </ejs-listview>
     <div id="list_event">
         <div id="evt">
             <div class="eventarea" style="height:273px;overflow: auto">
-                <!-- Event log element -->
                 <span class="EventLog" id="EventLog" style="word-break: normal"></span>
             </div>
             <div class="evtbtn">
-                <!-- clear button element -->
                 <ejs-button id="clear"><e-content-template>Clear</e-content-template></ejs-button>
             </div>
         </div>
