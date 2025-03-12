@@ -18,7 +18,7 @@ The following example demonstrates how to resize the Grid on external button cli
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/keyboard-dimension/tagHelper %}
+{% include code-snippet/grid/how-to/keyboard-dimension/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dimension.cs" %}
 {% include code-snippet/grid/how-to/keyboard-dimension/dimension.cs %}
