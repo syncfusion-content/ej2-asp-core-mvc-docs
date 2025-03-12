@@ -11,7 +11,7 @@ documentation: ug
 
 # Template
 
-The TreeView control allows you to customize the look of TreeView nodes by using the [nodeTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~NodeTemplate.html) property. This property accepts either a `template string` or an HTML element ID. 
+The TreeView control allows you to customize the look of TreeView nodes by using the `nodeTemplate` property. This property accepts either a `template string` or an HTML element ID. 
 
 In the following sample, employee information such as employee photo, name, and designation has been included using the `nodeTemplate` property. 
 

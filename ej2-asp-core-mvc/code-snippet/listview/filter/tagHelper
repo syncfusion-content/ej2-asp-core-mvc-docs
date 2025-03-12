@@ -1,12 +1,12 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
 
-    <div id="sample">
-        <input class="e-input" type="text" id="textbox" placeholder="Filter" title="Type in a name">
-        <ejs-listview id="list" dataSource="(IEnumerable<object>)ViewBag.dataSource" sortOrder="Ascending">
-            <e-listview-fieldsettings id="id" text="text"></e-listview-fieldsettings>
-        </ejs-listview>
-    </div>
+<div id="sample">
+    <input class="e-input" type="text" id="textbox" placeholder="Filter" title="Type in a name">
+    <ejs-listview id="list" dataSource="(IEnumerable<object>)ViewBag.dataSource" sortOrder="Ascending">
+        <e-listview-fieldsettings id="id" text="text"></e-listview-fieldsettings>
+    </ejs-listview>
+</div>
 
 <style>
     #list {

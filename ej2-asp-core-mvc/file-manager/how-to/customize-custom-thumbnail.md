@@ -10,7 +10,7 @@ documentation: ug
 
 # How to add custom thumbnail in File Manager
 
-The default appearance of the File Manager can be customized with your own icon by using the [showThumbnail](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowThumbnail.html) property.
+The default appearance of the File Manager can be customized with your own icon by using the `showThumbnail` property.
 
 The following example demonstrates how to add a custom icon in the largeicons view.
 
@@ -41,4 +41,4 @@ The following example demonstrates how to add a custom icon in the largeicons vi
 
 The output will look like the image below.
 
-![FileManager custom thumbnail ](../images/custom_thumbnail.PNG)
+![File Manager custom thumbnail ](../images/custom_thumbnail.PNG)
