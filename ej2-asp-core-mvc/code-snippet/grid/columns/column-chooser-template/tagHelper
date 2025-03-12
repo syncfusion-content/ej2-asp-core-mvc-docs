@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" showColumnChooser="true" created="onCreated" toolbar="@(new List<string>() { "ColumnChooser" })">
+<ejs-grid id="Grid" dataSource="@ViewBag.StackedHeaderData" allowPaging="true" showColumnChooser="true" created="onCreated" toolbar="@(new List<string>() { "ColumnChooser" })">
     <e-grid-columnChooserSettings template="#column-chooser-template" headerTemplate="#ccHeadertemplate" footerTemplate="#ccFootertemplate" renderCustomColumnChooser="renderCustomColumnChooser"></e-grid-columnChooserSettings>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>

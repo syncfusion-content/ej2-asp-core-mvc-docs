@@ -1,4 +1,4 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.StackedHeaderData).Columns(col =>
 {
     col.Field("CustomerID").HeaderText("Customer ID").Width("160").MinWidth("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).ShowInColumnChooser(false).Add();
     col.Field("CustomerName").HeaderText("Name").Width("100").MinWidth("100").Add();
