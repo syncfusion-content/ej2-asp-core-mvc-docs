@@ -14,10 +14,10 @@
         border-radius: 3px;
     }
 
-        #listview.e-listview .e-list-icon {
-            height: 24px;
-            width: 30px;
-        }
+    #listview.e-listview .e-list-icon {
+        height: 24px;
+        width: 30px;
+    }
 
     .folder, .file {
         background: url('https://ej2.syncfusion.com/demos/src/listview/images/file_icons.png') no-repeat;

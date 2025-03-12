@@ -19,6 +19,7 @@
         width: 250px;
     }
 </style>
+
 <script>
     function created() {
         document.getElementById('box').addEventListener("dblclick", function () {
