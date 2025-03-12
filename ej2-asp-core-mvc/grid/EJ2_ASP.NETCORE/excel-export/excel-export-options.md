@@ -130,19 +130,19 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 ## Show or hide columns while exporting with stacked header
 
-The Syncfusion ASP.NET MVC Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+The Syncfusion ASP.NET Core Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
 
-To implement the show or hide columns feature during Excel export in the Syncfusion ASP.NET MVC Grid, follow these steps:
+To implement the show or hide columns feature during Excel export in the Syncfusion ASP.NET Core Grid, follow these steps:
 
-1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Syncfusion ASP.NET MVC Grid.
+1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Syncfusion ASP.NET Core Grid.
 
 2. Update the visibility of the desired columns by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of the column to **true** or **false**.
 
-3. Export the Syncfusion ASP.NET MVC Grid to Excel document using the `ExcelExport` or `CsvExport` method.
+3. Export the Syncfusion ASP.NET Core Grid to Excel document using the `ExcelExport` or `CsvExport` method.
 
 4. Handle the [excelExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event to restore the column visibility to its original state.
 
-In the following example, the **ShipName** is initially a hidden column in the Syncfusion ASP.NET MVC Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion ASP.NET Core Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

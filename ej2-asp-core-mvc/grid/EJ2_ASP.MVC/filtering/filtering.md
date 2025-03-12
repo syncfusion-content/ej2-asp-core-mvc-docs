@@ -199,7 +199,7 @@ Below is an example demonstrating how to filter enum-type data in a Syncfusion A
 {% endhighlight %}
 {% endtabs %}
 
-![Filter bar](../images/filtering/enum-filtering.png)
+![Filter bar](../../images/filtering/enum-filtering.png)
 
 ## Filtering with case sensitivity
 
