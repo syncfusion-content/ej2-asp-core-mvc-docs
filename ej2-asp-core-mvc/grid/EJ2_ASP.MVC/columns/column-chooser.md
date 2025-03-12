@@ -162,6 +162,6 @@ The following example demonstrates how to enable or disable the search option dy
 {% include code-snippet/grid/columns/columnchooser-enable-disable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Columnchooser.cs" %}
-{% include code-snippet/grid/columns/columcolumnchooser-enable-disable/columnchooser.cs %}
+{% include code-snippet/grid/columns/columnchooser-enable-disable/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
