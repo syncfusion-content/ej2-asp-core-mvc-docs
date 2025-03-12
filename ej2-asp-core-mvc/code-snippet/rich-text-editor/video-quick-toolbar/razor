@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("video-quick-toolbar").ToolbarSettings(e => e.Items((object)ViewBag.items)).QuickToolbarSettings(e => { e.Video((object)ViewBag.video); }).Value(ViewBag.value).Render()

@@ -1,4 +1,5 @@
 <div id='container' style="margin:0 auto; width:250px;">
     @Html.EJS().DropDownTree("treedata").ShowCheckBox(true).Fields(field =>
-             field.Value("id").ParentValue("pid").HasChildren("hasChild").Text("name").DataSource(ViewBag.dataSource)).TreeSettings(treeSettings => treeSettings.AutoCheck(true)).Render()
+        field.Value("id").ParentValue("pid").HasChildren("hasChild").Text("name").DataSource(ViewBag.dataSource))
+        .TreeSettings(treeSettings => treeSettings.AutoCheck(true)).Render()
 </div>

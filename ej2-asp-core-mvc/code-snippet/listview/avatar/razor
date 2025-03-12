@@ -13,7 +13,7 @@
 
 }
 
-@Html.EJS().ListView("List")
+@Html.EJS().ListView("list")
     .DataSource((IEnumerable<object>)ViewBag.listData)
     .Template(template)
     .CssClass("e-list-template")
@@ -25,13 +25,13 @@
     .Render()
 
 <style>
-    #List {
+    #list {
         margin: 0 auto;
         font-size: 15px;
         border: 1px solid #ccc;
     }
 
-    ic01 {
+    .pic01 {
         background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/1.png");
     }
 
@@ -47,19 +47,19 @@
         background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/2.png");
     }
 
-    #List .e-list-item:nth-child(1) .e-avatar {
+    #list .e-list-item:nth-child(1) .e-avatar {
         background-color: #039be5;
     }
 
-    #List .e-list-item:nth-child(2) .e-avatar {
+    #list .e-list-item:nth-child(2) .e-avatar {
         background-color: #e91e63;
     }
 
-    #List .e-list-item:nth-child(6) .e-avatar {
+    #list .e-list-item:nth-child(6) .e-avatar {
         background-color: #009688;
     }
 
-    #List .e-list-item:nth-child(8) .e-avatar {
+    #list .e-list-item:nth-child(8) .e-avatar {
         background-color: #000088;
     }
 </style>

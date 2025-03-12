@@ -1,12 +1,12 @@
 @{
     char nameMentionChar = '@';
     List<EmployeeData> data = new EmployeeData().EmployeeList();
+        
+    string value = @"<p>Hello <span contenteditable=""false"" class=""e-mention-chip""><a title=""maria@gmail.com"">@@Maria</a></span>&#8203;</p>
+    <p>Welcome to the mention integration with rich text editor demo. Type <code>@@</code> character and tag user from the suggestion list. </p>";
 }
 
-@Html.EJS().RichTextEditor("mentionIntegration").ContentTemplate(@<div>
-    <p>Hello <span contenteditable="false" class="e-mention-chip"><a title="maria@gmail.com">@@Maria</a></span>&#8203;</p>
-    <p>Welcome to the mention integration with rich text editor demo. Type <code>@@</code> character and tag user from the suggestion list. </p>
-</div>).Render()
+@Html.EJS().RichTextEditor("mentionIntegration").Value(value).Render()
 
 @Html.EJS().Mention("mentionRTE").MentionChar(nameMentionChar).Target("#mentionIntegration_rte-edit-view").DataSource((IEnumerable<EmployeeData>)data).AllowSpaces(true).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name", Value="EmailId" }).SuggestionCount(8).Highlight(true).DisplayTemplate("<a title =${ EmailId}>@${ Name}</a>").ItemTemplate("<table><tr><td><div id=\"mention-TemplateList\"><img class=\"mentionEmpImage\" src=\"./images/${EmployeeImage}\" alt=\"employee\" /><span class=\"e-badge e-badge-success e-badge-overlap e-badge-dot e-badge-bottom ${Status}\"></span></div></td><td><span class=\"person\">${Name}</span><span class=\"email\">${EmailId}</span></td</tr></table>").PopupWidth("250px").PopupHeight("200px").Render()
 

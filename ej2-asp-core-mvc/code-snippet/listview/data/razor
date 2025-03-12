@@ -122,10 +122,10 @@
         margin-top: -10px;
     }
 
-        #element .e-delete-btn.e-btn.e-small.e-round {
-            width: 2em;
-            height: 2em;
-        }
+    #element .e-delete-btn.e-btn.e-small.e-round {
+        width: 2em;
+        height: 2em;
+    }
 
     #element .e-btn.e-small.e-round .e-btn-icon.delete-icon {
         font-size: 9px;
