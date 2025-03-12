@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use custom helper inside the loop with templates Syncfusion ##Platform_Name## Grid Component
+title: Use custom helper inside the loop with templates Syncfusion ##Platform_Name## Grid Component 
 description: Use custom helper inside the loop with templates in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Use custom helper inside the loop with templates 
