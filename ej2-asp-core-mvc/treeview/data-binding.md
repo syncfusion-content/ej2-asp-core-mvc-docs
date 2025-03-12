@@ -11,17 +11,17 @@ documentation: ug
 
 # Data Binding in TreeView Control
 
-The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~Fields.html) property. The `dataSource` property supports array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
+The TreeView control provides the option to load data either from local data sources or from remote data services. This can be done through the `dataSource` property that is a member of the `fields` property. The `dataSource` property supports array of JavaScript objects and [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/). It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 
 TreeView has `load on demand` (Lazy load) enabled by default. It reduces the bandwidth size when consuming huge data. It initially loads first-level nodes, and when a parent node is expanded, it loads the child nodes based on the `parentID/child` member.
 
 By default, the `loadOnDemand` is set to true. By disabling this property, all the tree nodes are rendered at the beginning.
 
-You can use the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~DataBound.html) event to perform actions. This event will be triggered once the data source is populated in the TreeView.
+You can use the `dataBound` event to perform actions. This event will be triggered once the data source is populated in the TreeView.
 
 ## Local data
 
-To bind local data to the TreeView, you can assign a JavaScript object array to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property. The TreeView control requires three fields (**ID**, **text**, and **parentID**) to render a local data source. When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
+To bind local data to the TreeView, you can assign a JavaScript object array to the `dataSource` property. The TreeView control requires three fields (**ID**, **text**, and **parentID**) to render a local data source. When mapper fields are not specified, it takes the default values as the mapping fields. Local data source can also be provided as an instance of the `DataManager`. It supports two kinds of local data binding methods.
 
 * Hierarchical data
 
@@ -29,7 +29,7 @@ To bind local data to the TreeView, you can assign a JavaScript object array to 
 
 ### Hierarchical data
 
-TreeView can be populated with hierarchical data source that contains nested array of JSON objects. You can directly assign hierarchical data to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property, and map all the field members with corresponding keys from the hierarchical data to `fields` property. 
+TreeView can be populated with hierarchical data source that contains nested array of JSON objects. You can directly assign hierarchical data to the `dataSource` property, and map all the field members with corresponding keys from the hierarchical data to `fields` property. 
 
 In the following example, **code**, **name**, and **countries** columns from hierarchical data have been mapped to **id**, **text**, and **child** fields, respectively.
 
@@ -62,7 +62,7 @@ In the following example, **code**, **name**, and **countries** columns from hie
 
 TreeView can be populated from self-referential data structure that contains array of JSON objects with `parentID` mapping. 
 
-You can directly assign self-referential data to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeViewFieldsSettings~DataSource.html) property, and map all the field members with corresponding keys from self-referential data to [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~Fields.html) property. 
+You can directly assign self-referential data to the `dataSource` property, and map all the field members with corresponding keys from self-referential data to `fields` property. 
 
 To render the root level nodes, specify the parentID as null or no need to specify the parentID in `dataSource`.
 

@@ -13,7 +13,7 @@
     + "</div>";
 }
 
-@Html.EJS().ListView("List")
+@Html.EJS().ListView("list")
     .DataSource((IEnumerable<object>)ViewBag.dataSource)
     .Fields(new ListViewFieldSettings { GroupBy = "category", Text = "Name" })
     .GroupTemplate(groupTemplate)
@@ -21,63 +21,66 @@
     .Render()
 
 <style>
- .count{
-    float:right;
-  }
-  #List {
-      display: block;
-      margin: auto;
-      border: 1px solid;
-      border-color: #ccc;
-      border-color: rgba(0, 0, 0, 0.12);
-      width: 350px;
-  }
+    .count{
+        float:right;
+    }
 
-  #List .settings {
-      height: auto;
-  }
+    #list {
+        display: block;
+        margin: auto;
+        border: 1px solid;
+        border-color: #ccc;
+        border-color: rgba(0, 0, 0, 0.12);
+        width: 350px;
+    }
 
-  #List .e-list-group-item {
-    height: 56px;
-    line-height: 56px;
-  }
+    #list .settings {
+        height: auto;
+    }
 
-  #List .e-list-item {
-      height: 70px;
-      padding: 0;
-      cursor: pointer;
-      box-sizing: border-box;
-  }
-  #List .e-list-header .e-text {
-      font-family: sans-serif;
-      font-size: 18px;
-      line-height: 26px;
-  }
-  #List #content {
-    margin: 9px 0 0 15px;
-  }
-  #List .name {
-      font-size: 14px;
-      line-height: 25px;
-      font-weight: 500;
-  }
+    #list .e-list-group-item {
+        height: 56px;
+        line-height: 56px;
+    }
 
-  #info {
-    line-height: 20px;
-    font-size: 12px;
-  }
+    #list .e-list-item {
+        height: 70px;
+        padding: 0;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
 
-  #postImg {
-     margin: 15px 9px 9px 9px;
- }
+    #list .e-list-header .e-text {
+        font-family: sans-serif;
+        font-size: 18px;
+        line-height: 26px;
+    }
 
-  #postContainer {
-  width: inherit;
-  margin: auto;
-  display: inline-flex;
-}
-</style>
-<style>
+    #list #content {
+        margin: 9px 0 0 15px;
+    }
+
+    #list .name {
+        font-size: 14px;
+        line-height: 25px;
+        font-weight: 500;
+    }
+
+    #info {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    #postImg {
+        margin: 15px 9px 9px 9px;
+    }
+
+    #postContainer {
+    width: inherit;
+    margin: auto;
+    display: inline-flex;
+    }
+
     #text {
         margin-left: 10px;
         margin-top: 20px;

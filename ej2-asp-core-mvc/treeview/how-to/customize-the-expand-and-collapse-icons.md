@@ -10,7 +10,7 @@ documentation: ug
 
 # Customize the expand and collapse icons
 
-You can customize the TreeView's expand and collapse icons by using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~CssClass.html) property of TreeView. Refer to the following sample to see how to customize expand/collapse icons.
+You can customize the TreeView's expand and collapse icons by using the `cssClass` property of TreeView. Refer to the following sample to see how to customize expand/collapse icons.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
