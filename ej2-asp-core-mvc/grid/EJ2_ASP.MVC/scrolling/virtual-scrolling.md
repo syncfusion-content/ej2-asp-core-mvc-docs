@@ -195,14 +195,14 @@ function beforeDataBound(args) {
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the Grid.
 
 ```typescript
-@Html.EJS().Button("prevButton").Class("e-info prevbtn").CssClass("e-primary").Content("Load Previous Set...").Render()
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("360").BeforeDataBound("beforeDataBound").Columns(col =>
+@Html.EJS().Button("prevButton").Class("e-info prevbtn").CssClass("e-info prevbtn e-primary").Content("Load Previous Set...").Render()
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("360").BeforeDataBound("beforeDataBound").Columns(col =>
 {
     col.Field("OrderID").HeaderText("OrderID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     ......
     ......
 }).PageSettings(page => { page.PageSize(50); }).Render();
-@Html.EJS().Button("nextButton").Class("e-info nxtbtn").CssClass("e-primary").Content("Load Next Set...").Render()
+@Html.EJS().Button("nextButton").Class("e-info nxtbtn").CssClass("e-info nxtbtn e-primary").Content("Load Next Set...").Render()
 ```
 
 5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
