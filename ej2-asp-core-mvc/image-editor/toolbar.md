@@ -81,10 +81,10 @@ Here is an example of hiding the toolbar of the image editor using `toolbar` pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +92,10 @@ Here is an example of hiding the toolbar of the image editor using `toolbar` pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -114,10 +114,10 @@ Here is an example of hiding the cropping and selection toolbar items using `too
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,17 +125,17 @@ Here is an example of hiding the cropping and selection toolbar items using `too
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+![ImageEditor Sample](images/image-editor-hide-toolbar-item.jpg)
 
 ## Enable or disable a toolbar item
 
