@@ -547,8 +547,8 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 <script>
 	// Button click event to send selected records.
 	document.getElementById("passRecords").addEventListener("click", function () {
-		var grid = document.querySelector("#Grid")?.ej2_instances?.[0]; // Get the grid instance
-		var selectedRecords = grid.getSelectedRecords(); // Get selected rows
+		var grid = document.querySelector("#Grid")?.ej2_instances?.[0]; // Get the Grid instance.
+		var selectedRecords = grid.getSelectedRecords(); // Get selected rows.
 		if (selectedRecords.length === 0) {
 			alert("Please select at least one record.");
 			return;
