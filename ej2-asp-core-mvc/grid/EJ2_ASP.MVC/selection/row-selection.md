@@ -307,7 +307,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 ```html
 @Html.EJS().Button("passRecords").Content("Pass the selected records to controller").CssClass("e-primary").Render()
 <div style="padding: 20px 17px 0 0">
-    // Replace **** with your actual port number.
+    @*Replace **** with your actual port number.*@
     @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:****/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
     {
         col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
@@ -508,7 +508,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 ```html
 @Html.EJS().Button("passRecords").Content("Pass the selected records to controller").CssClass("e-primary").Render()
 <div style="padding: 20px 17px 0 0">
-    // Replace **** with your actual port number.
+    @*Replace **** with your actual port number.*@
     @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:****/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
     {
         col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
