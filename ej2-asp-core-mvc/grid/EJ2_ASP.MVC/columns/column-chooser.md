@@ -121,3 +121,47 @@ Here is an example that demonstrates the usage of the `IgnoreAccent` property to
 {% include code-snippet/grid/columns/columnchooser-diacritics/columnchooser.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Column Chooser Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid
+
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [ShowColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) to **true** and add **ColumnChooser** to the [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
+
+To implement a custom column chooser template in the Grid, use the following properties:
+
+* **ColumnChooserSettings.HeaderTemplate** - Defines the header template of the column chooser.
+
+* **ColumnChooserSettings.Template**- Defines the content template.
+
+* **ColumnChooserSettings.FooterTemplate** - Defines the footer template.
+
+* **ColumnChooserSettings.RenderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
+
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/treeview/getting-started). The `ColumnChooserSettings.Template` property defines a element with the `id` set to **tree-view-list**, providing as a container for the TreeView component. The `ColumnChooserSettings.RenderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [NodeClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_NodeClicked) and [KeyPress](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_KeyPress) events, which organize columns into **Order Details**, **Shipping Details**, and **Delivery Status**.
+
+The column chooser footer is customized using `ColumnChooserSettings.FooterTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `ColumnChooserSettings.HeaderTemplate` to include a title and an icon.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-chooser-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/column-chooser-template/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Enable and disable search option
+
+By default, the search option in the column chooser allows filtering specific columns from the Grid's column list.
+
+The search option is enabled by default in the column chooser. However, you can disable it by setting the `columnChooserSettings.enableSearching` property to **false**.
+
+The following example demonstrates how to enable or disable the search option dynamically using a [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) and its [change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event in the Grid.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/columnchooser-enable-disable/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/columcolumnchooser-enable-disable/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
