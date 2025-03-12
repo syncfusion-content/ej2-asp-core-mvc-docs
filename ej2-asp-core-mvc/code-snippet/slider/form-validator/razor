@@ -9,7 +9,11 @@
                 <form id="formMinId" class="form-horizontal">
                     <div class="form-group">
                         <div class="e-float-input">
-                            @Html.EJS().Slider("min-slider").Value(30).Enabled(true).Changed("onMinChanged").Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
+                            @Html.EJS().Slider("min-slider")
+                                .Value(30)
+                                .Enabled(true)
+                                .Changed("onMinChanged")
+                                .Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
                         </div>
                     </div>
                 </form>
@@ -19,7 +23,11 @@
                 <form id="formMaxId" class="form-horizontal">
                     <div class="form-group">
                         <div class="e-float-input">
-                            @Html.EJS().Slider("max-slider").Value(30).Enabled(true).Changed("onMaxChanged").Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
+                            @Html.EJS().Slider("max-slider")
+                                .Value(30)
+                                .Enabled(true)
+                                .Changed("onMaxChanged")
+                                .Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
                         </div>
                     </div>
                 </form>
@@ -29,7 +37,11 @@
                 <form id="formValId" class="form-horizontal">
                     <div class="form-group">
                         <div class="e-float-input">
-                            @Html.EJS().Slider("val-slider").Value(30).Enabled(true).Changed("onValChanged").Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
+                            @Html.EJS().Slider("val-slider")
+                                .Value(30)
+                                .Enabled(true)
+                                .Changed("onValChanged")
+                                .Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
                         </div>
                     </div>
                 </form>
@@ -39,7 +51,11 @@
                 <form id="formRangeId" class="form-horizontal">
                     <div class="form-group">
                         <div class="e-float-input">
-                            @Html.EJS().Slider("range-slider").Value(30).Enabled(true).Changed("onRangeChanged").Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
+                            @Html.EJS().Slider("range-slider")
+                                .Value(30)
+                                .Enabled(true)
+                                .Changed("onRangeChanged")
+                                .Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
                         </div>
                     </div>
                 </form>
@@ -49,7 +65,11 @@
                 <form id="formCustomId" class="form-horizontal">
                     <div class="form-group">
                         <div class="e-float-input">
-                            @Html.EJS().Slider("custom-slider").Type(SliderType.Range).Enabled(true).Changed("onCustomChanged").Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
+                            @Html.EJS().Slider("custom-slider")
+                                .Type(SliderType.Range)
+                                .Enabled(true)
+                                .Changed("onCustomChanged")
+                                .Ticks(new SliderTicksData { Placement = Placement.Before, LargeStep = 20, SmallStep = 5, ShowSmallTicks = true }).Render()
                         </div>
                     </div>
                 </form>
@@ -155,55 +175,39 @@
 </script>
 
 <style>
+    .e-error,
+    .e-float-text {
+        font-weight: 500;
+    }
 
-.highcontrast form {
-    background: #000000
-}
+    table,
+    td,
+    th {
+        padding: 5px;
+    }
 
-/* csslint ignore:start */
-.highcontrast label.e-custom-label,
-.highcontrast label.e-float-text,
-.highcontrast label.salary,
-.highcontrast input::placeholder,
-.highcontrast .e-float-input label.e-float-text {
-    color: #fff !important;
-    line-height: 2.3;
-}
-/* csslint ignore:end */
+    .form-horizontal .form-group {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-.e-error,
-.e-float-text {
-    font-weight: 500;
-}
+    form {
+        border: 1px solid #ccc;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
+        border-radius: 5px;
+        background: #f9f9f9;
+        padding: 23px;
+        padding-bottom: 20px;
+        margin: auto;
+        max-width: 650px;
+    }
 
-table,
-td,
-th {
-    padding: 5px;
-}
-
-.form-horizontal .form-group {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-form {
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.36);
-    border-radius: 5px;
-    background: #f9f9f9;
-    padding: 23px;
-    padding-bottom: 20px;
-    margin: auto;
-    max-width: 650px;
-}
-
-.form-title {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
-}
+    .form-title {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+    }
 </style>

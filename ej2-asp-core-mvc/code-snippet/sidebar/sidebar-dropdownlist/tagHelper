@@ -1,5 +1,4 @@
 <div class=" control-section">
-<!-- sidebar element declaration -->
     <ejs-sidebar id="default-sidebar" width="280px" closeOnDocumentClick="true" close="onClose">
         <e-content-template>
             <div class="title-header">
@@ -9,8 +8,7 @@
             </div>
             </e-content-template>
     </ejs-sidebar>
-    <!-- end of sidebar element -->
-    <!--  Main Content declaration -->
+
     <div>
         <div class="title default">Main content</div>
         <div class="sub-title">
@@ -18,6 +16,7 @@
         </div>
     </div>
 </div>
+
 <script>
    // Prevent the sidebar element from closing.
     function onClose() {
@@ -26,6 +25,7 @@
       }
     }
 </script>
+
 <style>
     /* sidebar element styles */
     #default-sidebar {

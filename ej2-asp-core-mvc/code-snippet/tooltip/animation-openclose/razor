@@ -1,8 +1,12 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Popups
-     @Html.EJS().Tooltip("tooltip").Content("Tooltip content").OpensOn("Custom").ContentTemplate(@<div id="target">
-        Show tooltip
-    </div>).Created("created").Render()
+
+@Html.EJS().Tooltip("tooltip")
+    .Content("Tooltip content")
+    .OpensOn("Custom")
+    .ContentTemplate(@<div id="target">Show tooltip</div>)
+    .Created("created")
+    .Render()
 
 <style>
     #target {
@@ -14,6 +18,7 @@
         width: 100px;
     }
 </style>
+
 <script>
     function created() {
     document.getElementById('target').addEventListener("click", function () {

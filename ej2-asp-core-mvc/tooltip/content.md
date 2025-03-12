@@ -77,6 +77,9 @@ N> The Tooltip **target** property includes a unique identifier used to associat
 {% highlight c# tabtitle="AjaxContent.cs" %}
 {% include code-snippet/tooltip/ajaxcontent/ajaxcontent.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="tooltipdata.json" %}
+{% include code-snippet/tooltip/ajaxcontent/tooltipdata.json %}
+{% endhighlight %}
 {% endtabs %}
 {% endif %}
 
