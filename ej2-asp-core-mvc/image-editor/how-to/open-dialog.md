@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image editor control | Syncfusion
+title: Filter in ##Platform_Name## ImageEditor Control | Syncfusion
 description: Learn here all about Filter in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform:  ej2-asp-core-mvc
+platform: ej2-asp-core-mvc
 control: Dialog 
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -19,8 +19,8 @@ Rendering the Image Editor in a dialog involves displaying the image editor comp
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/image-editor/how-to/render-image-editor-dialog/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/how-to/render-image-editor-dialog/default.cs %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,8 +30,8 @@ Rendering the Image Editor in a dialog involves displaying the image editor comp
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/image-editor/how-to/render-image-editor-dialog/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/how-to/render-image-editor-dialog/default.cs %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/image-editor/how-to/render-image-editor-dialog/HomeController_mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

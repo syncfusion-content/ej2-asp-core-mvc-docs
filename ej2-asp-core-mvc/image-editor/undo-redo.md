@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Undo Redo in Image Editor control | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
+title: Undo Redo ##Platform_Name## ImageEditor Control | Syncfusion
+description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Undo Redo 
+control: Undo Redo
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
