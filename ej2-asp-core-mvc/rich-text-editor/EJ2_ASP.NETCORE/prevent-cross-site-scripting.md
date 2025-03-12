@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Preventing Cross-Site Scripting (XSS) in Syncfusion ##Platform_Name## Rich Text Editor Control
+title: Preventing XSS in Syncfusion ##Platform_Name## RichText Editor Control
 description: Learn here all about preventing Cross-Site Scripting (XSS) in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Preventing Cross-Site Scripting (XSS)
