@@ -1,5 +1,5 @@
-     <ejs-listview id="ui-list" dataSource="ViewBag.listData" enableVirtualization="true" height="500" >
-    </ejs-listview>
+<ejs-listview id="ui-list" dataSource="ViewBag.listData" enableVirtualization="true" height="500" >
+</ejs-listview>
 
 <style>
     #ui-list {

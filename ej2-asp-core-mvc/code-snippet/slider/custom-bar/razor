@@ -13,7 +13,10 @@
             </div>
             <div class="slider_container">
                 <div class="slider-labeltext slider_userselect">Dynamic thumb and selection bar color</div>
-                @Html.EJS().Slider("dynamic_color_slider").Type(SliderType.MinRange).Change("changeHandler").Created("createdHandler").Render()
+                @Html.EJS().Slider("dynamic_color_slider")
+                    .Type(SliderType.MinRange)
+                    .Change("changeHandler")
+                    .Created("createdHandler").Render()
             </div>
         </div>
     </div>
