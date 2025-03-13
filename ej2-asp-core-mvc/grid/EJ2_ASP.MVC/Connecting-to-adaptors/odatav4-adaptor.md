@@ -231,7 +231,7 @@ Add `Syncfusion.EJ2` namespace reference in `Web.config` under `Views` folder.
 To include the required styles and scripts, add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file:
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight html tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
@@ -264,7 +264,7 @@ To include the required styles and scripts, add the following references inside 
 To ensure proper script execution, register the Syncfusion Script Manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight html tabtitle="~/_Layout.cshtml" %}
 
 <body>
     <!-- Syncfusion ASP.NET MVC Script Manager -->
