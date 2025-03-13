@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='speechtotext-container'>
-    @Html.EJS().SpeechToText("speech-to-text").ButtonSettings(new SpeechToTextButtonSettings { Content = "Speak", StopContent = "Start Listening" }).Render()
+    @Html.EJS().SpeechToText("speech-to-text").ButtonSettings(new SpeechToTextButtonSettings { Content = "Start Listening", StopContent = "Stop Listening" }).Render()
 </div>

@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add button content
 
-You can use the `Content` property to display the start listening text and `StopContent` to display the stop listening text by using the ButtonSettings.
+You can use the `Content` property to display the start listening text and `StopContent` to display the stop listening text by using the `ButtonSettings`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
