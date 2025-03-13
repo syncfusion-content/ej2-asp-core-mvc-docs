@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image in ##Platform_Name## Document Editor Component
+title: Image in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about image in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Image
@@ -20,7 +20,8 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,7 +30,8 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -63,4 +65,4 @@ DocumentEditor preserves the position properties of the image and displays the i
 
 ## See Also
 
-* [Feature modules](../document-editor/feature-module/)
+* [Feature modules](../document-editor/feature-module)
