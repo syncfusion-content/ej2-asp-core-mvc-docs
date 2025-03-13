@@ -18,7 +18,7 @@ In the following example, an image and text have been rendered as a template to 
 
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/empty-record-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="empty-record-template.cs" %}

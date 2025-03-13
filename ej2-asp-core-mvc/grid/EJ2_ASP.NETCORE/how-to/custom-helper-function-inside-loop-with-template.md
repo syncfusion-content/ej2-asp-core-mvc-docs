@@ -36,7 +36,7 @@ The class is dynamically assigned based on the rating value, highlighting the st
 This is demonstrated in the following example:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/custom-helper/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="custom-helper.cs" %}

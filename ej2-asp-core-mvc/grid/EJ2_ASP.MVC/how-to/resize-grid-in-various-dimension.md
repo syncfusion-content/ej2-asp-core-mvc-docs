@@ -17,7 +17,7 @@ To resize the Grid externally, you can use an external button to modify the widt
 The following example demonstrates how to resize the Grid on external button click based on input:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/keyboard-dimension/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dimension.cs" %}
