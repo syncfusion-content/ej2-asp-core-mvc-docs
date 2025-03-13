@@ -690,11 +690,11 @@ To enable custom parameters in data requests for the Grid, follow these steps:
 The following example demonstrates how to send additional parameters to the server:
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remote-prams/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-prams/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="remotedata.cs" %}
-{% include code-snippet/grid/data-binding/remote-prams/custombinding.cs %}
+{% include code-snippet/grid/data-binding/remote-prams/custombindingcore.cs %}
 {% endhighlight %}
 {% endtabs %}
 
