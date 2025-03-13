@@ -32,7 +32,7 @@
         const query = new ej.data.Query();
         applyPaging(query, state)
         query.isCountRequired = true
-        query.addParams('Syncfusion_Vue_Grid', 'true');
+        query.addParams('Syncfusion_Grid', 'true');
         var fetchRequest = new ej.base.Fetch({
             url: `@fullUrl?handler=GetOrderData`,
             type: 'POST',
