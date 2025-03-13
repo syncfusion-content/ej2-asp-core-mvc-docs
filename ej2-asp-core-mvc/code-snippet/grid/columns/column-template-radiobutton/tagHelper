@@ -12,6 +12,7 @@
 		<e-grid-column field="OrderStatus" headerText="Order Status" template="#columnTemplate" width="200"></e-grid-column>
 	</e-grid-columns>
 </ejs-grid>
+
 <script type="text/x-template" id="columnTemplate">
 	<div style="display: flex; flex-direction: column; align-items: start; gap: 5px;">
 		<input type='radio' class='order-status-radio' data-status='Pending' />
@@ -23,7 +24,6 @@
 
 <script>
 	function initializeRadioButtons(args) {
-		 console.log("Row Data: ", args.data);
 		if (args.column.field === 'OrderStatus') {
 			let orderStatus = args.data['OrderStatus']; // Get current row status.
 			let radioButtons = args.cell.querySelectorAll('.order-status-radio');

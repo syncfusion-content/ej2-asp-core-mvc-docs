@@ -26,7 +26,6 @@
   function initializeRadioButtons(args) {
     if (args.column.field === 'OrderStatus') {
       let orderStatus = args.data['OrderStatus']; // Get current row status.
-      console.log(orderStatus);
       let radioButtons = args.cell.querySelectorAll('.order-status-radio');
       radioButtons.forEach((radio) => {
         let status = radio.getAttribute('data-status');

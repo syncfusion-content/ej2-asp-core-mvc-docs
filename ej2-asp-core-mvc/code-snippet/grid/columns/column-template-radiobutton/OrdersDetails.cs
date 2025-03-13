@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-namespace ODataV4Adaptor.Models
+namespace GridSample.Models
 {
     public class OrdersDetails
     {
