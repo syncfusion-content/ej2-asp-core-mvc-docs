@@ -75,8 +75,8 @@ The Syncfusion ASP.NET MVC Grid offers an option to export the data as a memory 
 The following code demonstrates how to get the memory stream of exported Grid.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/excel-export/server-export-ms/tagHelper %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/server-export-ms/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Server-exportMVC.cs" %}
 {% include code-snippet/grid/excel-export/server-export-ms/server-exportMVC.cs %}
