@@ -1,0 +1,20 @@
+
+<div style="padding-bottom: 20px; display: flex">
+   <label style="margin-right:5px;font-weight: bold;">Enable and disable search option</label>
+   @Html.EJS().Switch("switch").Checked(true).Change("onSwitchChange").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ShowColumnChooser(true).Columns(col =>
+{
+    col.Field("ÒrderID̂").HeaderText("Òrder ID̂").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("F̂reight").HeaderText("F̂reight").Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+}).Toolbar(new List<string>() { "ColumnChooser" }).ColumnChooserSettings(choose => { choose.IgnoreAccent(true); }).Render()
+<script>
+    function onSwitchChange(args)
+    {
+      var grid = document.getElementById("grid").ej2_instances[0];
+        grid.columnChooserSettings.enableSearching = args.checked;
+    }
+</script>

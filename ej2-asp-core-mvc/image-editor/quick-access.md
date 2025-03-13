@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Quick Access Toolbar in Image Editor control | Syncfusion
-description: Learn here all about Quick Access Toolbar in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
-control: Quick Access
+title: Quick Access Toolbar in ##Platform_Name## ImageEditor Control | Syncfusion
+description: Learn here all about Quick Access Toolbar in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
+control: Quick Access
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
