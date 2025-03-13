@@ -158,7 +158,7 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 **Sort foreign key column based on text for remote data**
 
-In the case of remote data in the Syncfusion ASP.NET MVC Grid, the sorting operation will be performed based on the `foreignKeyField` property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The Grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the Grid.
+In the case of remote data in the Syncfusion ASP.NET Core Grid, the sorting operation will be performed based on the `foreignKeyField` property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The Grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the Grid.
 
 The following example demonstrates sorting a foreign key column where the **EmployeeID** column is a foreign key, and the corresponding **FirstName** column is displayed from the employee data source:
 
