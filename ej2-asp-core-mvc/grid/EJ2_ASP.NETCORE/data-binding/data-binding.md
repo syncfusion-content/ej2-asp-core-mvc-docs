@@ -78,9 +78,24 @@ The argument passed to the [`actionFailure`](https://help.syncfusion.com/cr/aspn
 {% endtabs %}
 {% endif %}
 
-
-
 N> The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
+
+## Prevent to convert local time zone format for date column
+
+By default, Syncfusion ASP.NET MVC Grid automatically converts date values to the local time zone of the client system. However, in some scenarios, you may need to display the original date as received from the server without any timezone conversion.
+
+To prevent timezone conversion for a date column, use the `serverTimezoneOffset` property from `DataUtil`. Setting this property to **0** ensures that dates remain in the original format received from the server without conversion to the local timezone.
+
+The following example demonstrates how to prevent local time zone conversion for date columns in Syncfusion ASP.NET MVC Grid by using the `DataUtil.serverTimezoneOffset` property:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/localtime/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="localtime.cs" %}
+{% include code-snippet/grid/data-binding/localtime/localtime.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Binding with ajax
 
