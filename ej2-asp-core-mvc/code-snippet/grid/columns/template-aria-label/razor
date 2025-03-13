@@ -1,7 +1,7 @@
 @Html.EJS().Grid("FlatGrid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("315").Columns(col =>
     {
-        col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#template").TemplateOptions(new { enableAriaLabel= true}).Width("150").Add();
-        col.Field("FirstName").HeaderText("First Name").Template("#columnTemplate").TemplateOptions(new { enableAriaLabel= false}).Width(90).Add();
+        col.HeaderText("Employee Image").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#template").TemplateOptions(new { EnableAriaLabel= true}).Width("150").Add();
+        col.Field("FirstName").HeaderText("First Name").Template("#columnTemplate").TemplateOptions(new { EnableAriaLabel= false}).Width(90).Add();
         col.Field("LastName").HeaderText("Last Name").Width("100").Add();
         col.Field("City").HeaderText("City").Width("100").Add();
     }).Render()
