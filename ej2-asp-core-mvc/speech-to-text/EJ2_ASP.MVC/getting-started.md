@@ -97,7 +97,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC SpeechToText Control](images/speech-to-text-control.png)
 
-## Add Button Content
+## Add button content
 
 You can use the `Content` property to display the start listening text and `StopContent` to display the stop listening text by using the ButtonSettings.
 
