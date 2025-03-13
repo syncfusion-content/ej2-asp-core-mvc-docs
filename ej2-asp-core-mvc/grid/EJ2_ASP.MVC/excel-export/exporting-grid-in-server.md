@@ -117,7 +117,7 @@ If you already have a file stream, you can directly use it to merge with the Gri
 {% endhighlight %}
 {% endtabs %}
 
-### Merging with a local file
+### Merging with a local file 
 
 To merge a local file with the Grid's memory stream, you need to convert it into a file stream before merging. In the following code, the existing local file is merged with the Grid's memory stream.
 

@@ -47,7 +47,7 @@ You can enable or disable the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 In the below demo, the button click will enable/disable the Grid and its actions.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/how-to/disablegrid/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="disablegrid.cs" %}
