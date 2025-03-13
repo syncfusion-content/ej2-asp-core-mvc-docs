@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Range Selector in ##Platform_Name## Stock Chart Component
-description: Learn here all about Range Selector in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
+title: Range selector in ##Platform_Name## Stock Chart | Syncfusion
+description: Learn here all about range selector support in Syncfusion ##Platform_Name## Stock Chart control, its elements, and more.
 platform: ej2-asp-core-mvc
-control: Range Selector
+control: Stock Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Range selector
+# Range selector in ##Platform_Name## Stock Chart control
 
 The period selector allows to select a range with specified periods. By default the period selector is enabled in stock chart.
 
-# Selecting Range
+## Selecting Range
 
 The left and right thumb of RangeNavigator are used to indicate the selected range in the large collection of data. Following are the ways you can select a range.
 
