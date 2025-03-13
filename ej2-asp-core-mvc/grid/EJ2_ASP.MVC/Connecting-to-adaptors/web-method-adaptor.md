@@ -260,7 +260,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2
 // Replace `xxxx` with your actual localhost port number.
@@ -465,7 +465,7 @@ public class DataManager
 
 ## Handling Paging Operation
 
-To handle paging operation, configure your API endpoint to support custom sorting criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the custom paging criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, configure your API endpoint to support custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the custom paging criteria specified in the incoming `DataManagerRequest` object.
 
 ![WebMethodAdaptor paging](../../images/adaptors/web-method-adaptor-paging.png)
 
@@ -536,10 +536,10 @@ The following properties enable the Grid to interact with API endpoints for diff
 To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight html tabtitle="Index.cshmtl" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").InsertUrl("https://localhost:xxxx/api/Grid/insert").UpdateUrl("https://localhost:xxxx/api/Grid/update").RemoveUrl("https://localhost:xxxx/api/Grid/delete")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").InsertUrl("https://localhost:xxxx/api/Grid/Insert").UpdateUrl("https://localhost:xxxx/api/Grid/Update").RemoveUrl("https://localhost:xxxx/api/Grid/Remove")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -564,7 +564,7 @@ To insert a new record, utilize the `InsertUrl` property to specify the controll
 /// </summary>
 /// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns new record data.</returns>
-[Route("api/Grid/insert")]
+[Route("api/Grid/Insert")]
 public IHttpActionResult Insert(CRUDModel<OrdersDetails> newRecord)
 {
     if (newRecord?.Value == null)
@@ -587,7 +587,7 @@ For updating existing records, utilize the `UpdateUrl` property to specify the c
 /// </summary>
 /// <param name="updatedRecord">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns data.</returns>
-[Route("api/Grid/update")]
+[Route("api/Grid/Update")]
 public IHttpActionResult Update(CRUDModel<OrdersDetails> updatedRecord)
 {
     var updatedOrder = updatedRecord?.Value;
@@ -616,7 +616,7 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 /// </summary>
 /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
 /// <return>Returns message</return>
-[Route("api/Grid/delete")]
+[Route("api/Grid/Remove")]
 public IHttpActionResult Remove(CRUDModel<OrdersDetails> deletedRecord)
 {
     int orderId = int.Parse(deletedRecord.Key.ToString());
@@ -638,10 +638,10 @@ Using the `CrudUrl` property, the controller action mapping URL can be specified
 The following code example describes the above behavior.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight html tabtitle="Index.cshmtl" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").CrudUrl("https://localhost:xxxx/api/Grid/crudUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").CrudUrl("https://localhost:xxxx/api/Grid/CrudUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
@@ -653,7 +653,7 @@ The following code example describes the above behavior.
 {% endtabs %}
 
 ```cs
-[Route("api/Grid/crudUpdate")]
+[Route("api/Grid/CrudUpdate")]
 public void CrudUpdate(CRUDModel<OrdersDetails> request)
 {
     // Perform update operation.
@@ -684,10 +684,10 @@ public void CrudUpdate(CRUDModel<OrdersDetails> request)
 To perform batch operation, set the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshmtl" %}
+{% highlight html tabtitle="Index.cshmtl" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").BatchUrl("https://localhost:xxxx/api/Grid/batchUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:xxxx/api/Grid").Adaptor("WebMethodAdaptor").BatchUrl("https://localhost:xxxx/api/Grid/BatchUpdate")).AllowFiltering().AllowSorting().AllowPaging().EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch)).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
 	{
 		col.Field("OrderID").HeaderText("Order ID").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 		col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();

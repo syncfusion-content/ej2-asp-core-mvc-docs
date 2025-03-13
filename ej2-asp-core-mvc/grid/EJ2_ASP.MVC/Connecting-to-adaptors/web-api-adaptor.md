@@ -543,7 +543,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
 /// <param name="newRecord">It holds new record detail which is need to be inserted.</param>
 /// <returns>Returns void</returns>
 [HttpPost]
-public void Post([FromBody] OrdersDetails newRecord)
+public void Post(OrdersDetails newRecord)
 {
   // Insert a new record into the OrdersDetails model.
   OrdersDetails.GetAllRecords().Insert(0, newRecord);
@@ -564,7 +564,7 @@ Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpP
 /// <param name="updatedOrder">It holds updated record detail which is need to be updated.</param>
 /// <returns>Returns void</returns>
 [HttpPut]
-public void Put(int id, [FromBody] OrdersDetails updatedOrder)
+public void Put(int id, OrdersDetails updatedOrder)
 {
   // Find the existing order by ID.
   var existingOrder = OrdersDetails.GetAllRecords().FirstOrDefault(o => o.OrderID == id);

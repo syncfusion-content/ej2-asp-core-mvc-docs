@@ -279,7 +279,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2
 // Replace `xxxx` with your actual localhost port number.
