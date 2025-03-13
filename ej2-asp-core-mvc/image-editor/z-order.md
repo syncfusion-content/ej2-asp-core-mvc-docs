@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Z-order in Image Editor control | Syncfusion
-description: Learn here all about Z-order in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
+title: Z-order in ##Platform_Name## ImageEditor Control | Syncfusion
+description: Learn here all about Z-order in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Z-order
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -46,8 +47,6 @@ In the following example, you can use the `z-order` support.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 Output be like the below.
 

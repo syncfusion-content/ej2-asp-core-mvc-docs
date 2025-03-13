@@ -1,0 +1,150 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.StackedHeaderData).Columns(col =>
+{
+    col.Field("CustomerID").HeaderText("Customer ID").Width("160").MinWidth("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).ShowInColumnChooser(false).Add();
+    col.Field("CustomerName").HeaderText("Name").Width("100").MinWidth("100").Add();
+    col.HeaderText("Order Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() {
+    new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderID", Width = "90", HeaderText = "ID", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right},
+    new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "110", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, Format="yMd", HeaderText = "Date" } }).Add();
+    col.HeaderText("Shipping Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() {
+    new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "115",  HeaderText = "Country" },
+    new Syncfusion.EJ2.Grids.GridColumn { Field = "Freight", Width = "130", HeaderText = "Charges",TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, Format="C2"}}).Add();
+    col.HeaderText("Delivery Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() {
+    new Syncfusion.EJ2.Grids.GridColumn { Field = "Status", Width = "110", HeaderText = "Status", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Center}}).Add();
+}).AllowPaging().ShowColumnChooser(true).ColumnChooserSettings(new Syncfusion.EJ2.Grids.GridColumnChooserSettings { Template = "#column-chooser-template", HeaderTemplate = "#ccHeadertemplate", FooterTemplate = "#ccFootertemplate", RenderCustomColumnChooser = "renderCustomColumnChooser" }).Created("onCreated").Toolbar(new List<string>() { "ColumnChooser" }).Render()
+<script id='ccHeadertemplate' type="text/x-template">
+    <div>
+        <span class="e-icons e-columns" id="column-chooser-icon"></span>
+        <span id="column-chooser-text">Column Options</span>
+    </div>
+</script>
+<script type="text/x-template" id="column-chooser-template">
+    <div id="tree-view-list" ></div>
+</script>
+<script id='ccFootertemplate' type="text/x-template">
+    <div id="columnChooserFooter">
+        <button id="submitButton">Apply</button>
+        <button id="abortButton">Close</button>
+    </div>
+</script>
+<script type="text/javascript">
+    var treeObj;
+    var treeData = [];
+    function renderCustomColumnChooser(targetLHTMLElement, columns) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var parentNodes = [
+            { id: 1, name: 'Order Details', hasChild: true, expanded: true },
+            { id: 2, name: 'Shipping Details', hasChild: true, expanded: true },
+            { id: 3, name: 'Delivery Status', hasChild: true, expanded: true },
+        ];
+        if (columns && columns.length) {
+            treeData = columns.map(function (column) {
+                var parentId;
+                switch (column.field) {
+                    case 'OrderID':
+                    case 'OrderDate':
+                        parentId = 1;
+                        break;
+                    case 'ShipCountry':
+                    case 'Freight':
+                        parentId = 2;
+                        break;
+                    case 'Status':
+                        parentId = 3;
+                        break;
+                }
+                return {
+                    id: column.uid,
+                    name: column.headerText,
+                    pid: parentId,
+                    isChecked: column.visible
+                };
+            });
+            var uniquePids = [];
+            treeData.forEach(function (item) {
+                if (uniquePids.indexOf(item.pid) === -1) {
+                    uniquePids.push(item.pid);
+                }
+            });
+            var filteredParents = parentNodes.filter(function (parent) {
+                return uniquePids.indexOf(parent.id) !== -1;
+            });
+            treeData = treeData.concat(filteredParents);
+        } else {
+            treeData = [];
+        }
+        treeObj = new ej.navigations.TreeView({
+            fields: { dataSource: treeData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
+            showCheckBox: true,
+            nodeClicked: nodeCheck,
+            keyPress: nodeCheck,
+            enableRtl: grid.enableRtl ? true : false,
+            cssClass: "no-border"
+        });
+        if (columns && columns.length) {
+            treeObj.appendTo(targetLHTMLElement);
+        } else {
+            var noRecordDiv = document.createElement('div');
+            noRecordDiv.innerHTML = 'No Matches Found';
+            noRecordDiv.className = 'no-record-text';
+            targetLHTMLElement.appendChild(noRecordDiv);
+        }
+    }
+
+    function nodeCheck(args) {
+        var checkedNode = [args.node];
+        if (args.event.target.classList.contains('e-fullrow') || args.event.key == "Enter") {
+            var getNodeDetails = treeObj.getNode(args.node);
+            if (getNodeDetails.isChecked == 'true') {
+                treeObj.uncheckAll(checkedNode);
+            } else {
+                treeObj.checkAll(checkedNode);
+            }
+        }
+    }
+
+    function onCreated() {
+        var submitButton = new ej.buttons.Button();
+        submitButton.appendTo('#submitButton');
+        if (document.getElementById('submitButton')) {
+            document.getElementById('submitButton').onclick = function () {
+                columnChooserSubmit();
+            };
+        }
+        var abortButton = new ej.buttons.Button();
+        abortButton.appendTo('#abortButton');
+        if (document.getElementById('abortButton')) {
+            document.getElementById('abortButton').onclick = function () {
+                var grid = document.getElementById("Grid").ej2_instances[0];
+                grid.columnChooserModule.hideDialog();
+            };
+        }
+    }
+    function columnChooserSubmit() {
+        var checkedElements = [];
+        var uncheckedElements = [];
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var showColumns = grid.getVisibleColumns().filter(function (column) { return (column.showInColumnChooser === true); });
+        showColumns = showColumns.map(function (col) { return col.headerText; });
+        var treeItems = document.querySelectorAll('.e-list-item');
+        treeItems.forEach(function (item) {
+            var itemDetails = treeObj.getNode(item);
+            if (!itemDetails.hasChildren) {
+                if (item.getAttribute('aria-checked') === 'true') {
+                    checkedElements.push(itemDetails.text);
+                } else {
+                    uncheckedElements.push(itemDetails.text);
+                }
+            }
+        });
+        showColumns = showColumns.filter(function (col) {
+            return !uncheckedElements.includes(col);
+        });
+        checkedElements.forEach(function (item) {
+            if (!showColumns.includes(item)) {
+                showColumns.push(item);
+            }
+        });
+        var columnsToUpdate = { visibleColumns: showColumns, hiddenColumns: uncheckedElements };
+        grid.columnChooserModule.changeColumnVisibility(columnsToUpdate);
+    }
+</script>
