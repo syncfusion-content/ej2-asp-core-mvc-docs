@@ -4,7 +4,7 @@
 
 @using Syncfusion.EJ2
 
-< div style = "display: flex; align-items: center; margin-bottom: 10px;" >
+<div style="display: flex; align-items: center; margin-bottom: 10px;" >
 	<label style="margin-right: 10px">Select Timezone:</label>
 	@Html.EJS().DropDownList("timezone").DataSource((IEnumerable < object >)ViewBag.TimeZones).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Value", Text = "Text" }).Index(0).Width("200px").Change("onTimezoneChange").Render()
 </div >
@@ -12,7 +12,8 @@
 	@Html.EJS().CheckBox("timezoneCheckbox").Label("Prevent Timezone Conversion").Change("onCheckboxChange").Render()
 </div>
 <div>
-	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:44359/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().AllowSorting().AllowFiltering().Columns(col =>
+	@*Replace xxxx with your actual port number*@
+	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:****/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().AllowSorting().AllowFiltering().Columns(col =>
 	{
 	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 	col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
@@ -36,7 +37,7 @@
 		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
 		grid.setProperties({
 			dataSource: new ej.data.DataManager({
-				url: "https://localhost:44359/api/orders",
+				url: "https://localhost:****/api/orders", // Replace **** with your actual port number.
 				adaptor: new ej.data.WebApiAdaptor(),
 				crossDomain: true
 			})
@@ -48,7 +49,7 @@
 		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
 		grid.setProperties({
 			dataSource: new ej.data.DataManager({
-				url: "https://localhost:44359/api/orders",
+				url: "https://localhost:****/api/orders", // Replace **** with your actual port number
 				adaptor: new ej.data.WebApiAdaptor(),
 				crossDomain: true
 			})
