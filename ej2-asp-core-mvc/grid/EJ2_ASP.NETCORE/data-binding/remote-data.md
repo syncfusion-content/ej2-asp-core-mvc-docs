@@ -671,6 +671,35 @@ The following code example demonstrates how to export all records on the client 
 {% endhighlight %}
 {% endtabs %}
 
+## Sending additional parameters to the server
+
+The Syncfusion ASP.NET Core Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+
+By utilizing the `query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
+
+To enable custom parameters in data requests for the Grid, follow these steps:
+
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Grid.
+
+**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the `addParams` method to add the custom parameters.
+
+**3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event handler to execute the query with the updated state.
+
+**4. Execute Data Request:** In the service, execute the data request by combining the custom parameters with other query parameters such as paging and sorting.
+
+The following example demonstrates how to send additional parameters to the server:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-prams/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="remotedata.cs" %}
+{% include code-snippet/grid/data-binding/remote-prams/custombindingcore.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Additional Parameters](../images/databinding/remote-params.png)
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
