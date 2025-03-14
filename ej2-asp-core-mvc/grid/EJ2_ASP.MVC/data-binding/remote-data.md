@@ -670,3 +670,58 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Fetch result from the DataManager query using external button 
+
+By default, Syncfusion ASP.NET MVC Grid automatically binds a remote data source using the `DataManager`. However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+
+To achieve this, you can use the `executeQuery` method of `DataManager` with a `Query` object. This method allows you to run a custom query and retrieve results dynamically.
+
+The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+@using Syncfusion.EJ2
+
+<div id='container'>
+	@Html.EJS().Button("fetchButton").Content("Execute Query").CssClass("e-primary").Render()
+	<p id="statusMessage" style="text-align:center;color:blue"></p>
+	@Html.EJS().Grid("Grid").Columns(col =>
+  {
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Type("number").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("160").Type("string").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Type("string").Add();
+  }).Render()
+</div>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		let SERVICE_URL = 'https://ej2services.syncfusion.com/production/web-services/api/Orders';
+		let statusMessage = document.getElementById("statusMessage");
+
+		fetchButton.addEventListener("click", function () {
+			statusMessage.textContent = "Fetching data...";
+			var grid = document.getElementById("Grid")?.ej2_instances?.[0];
+
+			let getData = new ej.data.DataManager({
+				url: SERVICE_URL,
+				adaptor: new ej.data.WebApiAdaptor()
+			});
+
+			getData.executeQuery(new ej.data.Query()).then(function (e) {
+				grid.dataSource = e.result;
+				statusMessage.textContent = "Data fetched successfully! Total Records: " + e.result.length;
+				statusMessage.style.color = "green";
+			}).catch(function () {
+				statusMessage.textContent = "Error fetching data!";
+				statusMessage.style.color = "red";
+			});
+		});
+	});
+</script>
+{% endhighlight %}
+{% endtabs %}
+
+![Fetch result from DataManager Query](../../images/databinding/fetch-data.png)

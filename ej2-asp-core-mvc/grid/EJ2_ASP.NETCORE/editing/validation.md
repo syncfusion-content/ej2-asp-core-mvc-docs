@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Validation in ASP.NET Core  Grid component
+# Validation in ASP.NET Core Syncfusion Grid component
 
 Validation is a crucial aspect of data integrity in any application. The ASP.NET Core  Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 
@@ -121,3 +120,222 @@ Here's an example that demonstrates how to change the position of the validation
 
 ![Change the position of validation error message](../images/editing/validation-position.png)
 
+## Show custom error message while performing CRUD actions
+
+While performing CRUD actions in the Syncfusion ASP.NET Core Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
+
+To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI. Additionally, you can use the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event to remove the error message upon the successful completion of an operation.
+
+The following sample demonstrates how to retrieve and display error messages in the Syncfusion ASP.NET Core Grid:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+@page
+@model IndexModel
+
+<div><p style="color: red; text-align: center" id="errorMessage"></p></div>
+<ejs-grid id="Grid" allowFiltering="true" actionFailure="actionFailure" actionComplete="onActionComplete" allowSorting="true" allowPaging="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel","Search" })">
+   @*  Replace xxxx with your actual port number *@
+    <e-data-manager url='https://localhost:xxxx/api/Grid' insertUrl='https://localhost:xxxx/api/Grid/Insert' updateUrl='https://localhost:xxxx/api/Grid/Update' removeUrl='https://localhost:xxxx/api/Grid/Remove' adaptor="UrlAdaptor">
+    </e-data-manager>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150" type="string"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    let errorMessage = document.getElementById("errorMessage");
+        function actionFailure(args) {
+            if (args.error && Array.isArray(args.error) && args.error.length > 0 && args.error[0].error){
+                args.error[0].error.json().then(function (data) {
+                    errorMessage.innerHTML = data.message || "An unknown error occurred.";
+                }).catch(function () {
+                    errorMessage.innerHTML = "Error occurred, but message could not be retrieved.";
+                });
+            }
+            else{
+                errorMessage.innerHTML = "An unexpected error occurred.";
+            }
+        }
+
+        function onActionComplete() {
+            let errorMessage = document.getElementById("errorMessage");
+            errorMessage.innerHTML = ""; // Clear the error message text.
+        }
+</script>
+{% endhighlight %}
+{% highlight cs tabtitle="GridController.cs" %}
+
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Syncfusion.EJ2.Base;
+using UrlAdaptor.Models;
+
+namespace UrlAdaptor.Controllers
+{
+    [ApiController]
+    public class GridController : Controller
+    {
+        [HttpPost]
+        [Route("api/[controller]")]
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+            QueryableOperation queryableOperation = new QueryableOperation(); // Initialize DataOperations. instance.
+
+            // Handling searching operation.
+            if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+            }
+
+            // Handling filtering operation.
+            if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+            {
+                foreach (var condition in DataManagerRequest.Where)
+                {
+                    foreach (var predicate in condition.predicates)
+                    {
+                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+                    }
+                }
+            }
+
+            // Handling sorting operation.
+            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+            }
+
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Handling paging operation.
+            if (DataManagerRequest.Skip != 0)
+            {
+                DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+            }
+            if (DataManagerRequest.Take != 0)
+            {
+                DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+            }
+
+            // Return data based on the request.
+            return new { result = DataSource, count = totalRecordsCount };
+        }
+
+        [HttpGet]
+        [Route("api/[controller]")]
+        public List<OrdersDetails> GetOrderData()
+        {
+            var data = OrdersDetails.GetAllRecords().ToList();
+            return data;
+        }
+
+        /// <summary>
+        /// Inserts a new data item into the data collection.
+        /// </summary>
+        /// <param name="addRecord">The order to be inserted.</param>
+        /// <returns>It returns the newly inserted record detail.</returns>
+        [HttpPost]
+        [Route("api/[controller]/Insert")]
+        public IActionResult Insert([FromBody] CRUDModel<OrdersDetails> value)
+        {
+            if (value == null)
+            {
+                return BadRequest(new { message = "Invalid data received." });
+            }
+            var existingOrder = OrdersDetails.order.FirstOrDefault(or => or.OrderID == value.value.OrderID);
+            if (existingOrder == null)
+            {
+                OrdersDetails.order.Insert(0, value.value);
+                return Ok(new { success = true, message = "Order added successfully.", data = value });
+            }
+            else
+            {
+                return BadRequest(new { success = false, message = "Duplicate values cannot be inserted." });
+            }
+        }
+
+        /// <summary>
+        /// Updates an existing order.
+        /// </summary>
+        /// <param name="updateRecord">The updated order details.</param>
+        /// <returns>It returns the updated order details.</returns>
+        [HttpPost]
+        [Route("api/[controller]/Update")]
+        public IActionResult Update([FromBody] CRUDModel<OrdersDetails> Order)
+        {
+            var updatedOrder = Order.value;
+
+            if (updatedOrder.OrderID < 10010 || updatedOrder.OrderID > 10030)
+            {
+                return BadRequest(new { message = "OrderID must be between 10010 and 10030 to update." });
+            }
+
+            var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
+            if (data == null)
+            {
+                return NotFound(new { message = "Order not found." });
+            }
+
+            // Update the existing record.
+            data.CustomerID = updatedOrder.CustomerID;
+            data.ShipCity = updatedOrder.ShipCity;
+            data.ShipCountry = updatedOrder.ShipCountry;
+            return Ok(new { success = true, message = "Order updated successfully." });
+        }
+
+        /// <summary>
+        /// Deletes an order.
+        /// </summary>
+        /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
+        /// <returns>It returns the deleted record detail.</returns>
+        [HttpPost]
+        [Route("api/[controller]/Remove")]
+        public IActionResult Remove([FromBody] CRUDModel<OrdersDetails> value)
+        {
+            int orderId;
+            if (!int.TryParse(value.key.ToString(), out orderId))
+            {
+                return BadRequest(new { message = "Invalid OrderID format." });
+            }
+
+            if (orderId < 10031 || orderId > 10045)
+            {
+                return BadRequest(new { message = "OrderID must be between 10031 and 10045 to delete." });
+            }
+
+            var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
+            if (data == null)
+            {
+                return NotFound(new { message = "Order not found." });
+            }
+
+            OrdersDetails.GetAllRecords().Remove(data);
+            return Ok(new { success = true, message = "Order deleted successfully." });
+        }
+
+        public class CRUDModel<T> where T : class
+        {
+            public string? action { get; set; }
+            public string? keyColumn { get; set; }
+            public object? key { get; set; }
+            public T? value { get; set; }
+            public List<T>? added { get; set; }
+            public List<T>? changed { get; set; }
+            public List<T>? deleted { get; set; }
+            public IDictionary<string, object>? @params { get; set; }
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Show custom error message](../../images/editing/custom-message.png)
