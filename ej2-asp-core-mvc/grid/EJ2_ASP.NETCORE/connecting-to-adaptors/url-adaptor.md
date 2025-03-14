@@ -322,7 +322,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 ## Handling Filtering Operation
 
-To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object
+To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
 **Single column filtering**
 ![Single column filtering](../images/adaptors/url-adaptors/url-adaptor-filtering.png)
