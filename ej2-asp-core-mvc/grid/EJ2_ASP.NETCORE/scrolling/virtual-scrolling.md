@@ -172,7 +172,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 2. Render the Grid by define the following features.
 
-```typescript
+```cshtml
 <ejs-grid id="Grid" enableVirtualization="true" height="300" beforeDataBound="beforeDataBound">
     <e-grid-pageSettings pageSize=50></e-grid-pageSettings>
     <e-grid-columns>
@@ -197,7 +197,7 @@ function beforeDataBound(args) {
 
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the Grid.
 
-```typescript
+```cshtml
 <ejs-button id='prevButton' class="e-info prevbtn" cssClass='e-primary' content="Load Previous Set.."></ejs-button>
 <ejs-grid id="Grid" enableVirtualization="true" height="300" beforeDataBound="beforeDataBound">
     <e-grid-pageSettings pageSize=10></e-grid-pageSettings>
@@ -251,4 +251,4 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of `virtual scrolling` to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.

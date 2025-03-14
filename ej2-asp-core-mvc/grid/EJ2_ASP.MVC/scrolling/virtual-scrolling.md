@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 2. Render the Grid by define the following features.
 
-```typescript
+```cshmtl
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("360").BeforeDataBound("beforeDataBound").Columns(col =>
 {
     col.Field("OrderID").HeaderText("OrderID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -194,7 +194,7 @@ function beforeDataBound(args) {
 
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the Grid.
 
-```typescript
+```cshtml
 @Html.EJS().Button("prevButton").Class("e-info prevbtn").CssClass("e-info prevbtn e-primary").Content("Load Previous Set...").Render()
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("360").BeforeDataBound("beforeDataBound").Columns(col =>
 {
@@ -246,4 +246,4 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of `virtual scrolling` to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
