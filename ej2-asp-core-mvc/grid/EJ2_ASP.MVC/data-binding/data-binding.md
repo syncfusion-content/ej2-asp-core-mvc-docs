@@ -97,6 +97,8 @@ The following example demonstrates how to prevent local time zone conversion for
 {% endhighlight %}
 {% endtabs %}
 
+![Prevent to convert local time zone format](../../images/databinding/local-time.gif)
+
 ## Binding with ajax
 
 You can use Grid [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property to bind the datasource to Grid from external ajax request. In the below code we have fetched the datasource from the server with the help of ajax request and provided that to [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property by using `onSuccess` event of the ajax.

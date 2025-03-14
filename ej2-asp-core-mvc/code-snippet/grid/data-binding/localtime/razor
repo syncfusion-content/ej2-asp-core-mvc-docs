@@ -13,7 +13,7 @@
 </div>
 <div>
 	@*Replace xxxx with your actual port number*@
-	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:****/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().AllowSorting().AllowFiltering().Columns(col =>
+	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:****/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().Columns(col =>
 	{
 	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 	col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
