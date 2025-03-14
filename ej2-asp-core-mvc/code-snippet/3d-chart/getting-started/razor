@@ -1,7 +1,5 @@
-@model List<ThreeDimensionalChartSample.Controllers.Data>
- 
-@Html.EJS().Chart3D("container").EnableRotation(true).Rotation(7).Tilt(10).Depth(100).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
+ @Html.EJS().Chart3D("container").EnableRotation(true).Rotation(7).Tilt(10).Depth(100).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
 ).Series(series =>
 {
-    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource(Model).XName("X").YName("Y").Name("Gold").Add();
+    series.Type(Syncfusion.EJ2.Charts.Chart3DSeriesType.Column).DataSource(ViewBag.dataSource).XName("X").YName("Y").Name("Gold").Add();
 }).Render()
