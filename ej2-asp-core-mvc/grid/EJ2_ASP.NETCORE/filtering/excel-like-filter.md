@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Like Filter in ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Excel Like Filter in Syncfusion ##Platform_Name## Grid 
+description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
 publishingplatform: ##Platform_Name##
@@ -131,6 +131,23 @@ The following example demonstrates how to remove the context menu option in the 
 {% endtabs %}
 
 ![Filter bar](../images/filtering/excelfilter-customize-dialog.gif)
+
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion ASP.NET Core Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote `DataManager` as the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `dataSource` in the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event for the `filterBeforeOpen` **requestType**, as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Filter bar](../images/filtering/custom-binding.png)
 
 ## Hide sorting option in filter dialog
 
