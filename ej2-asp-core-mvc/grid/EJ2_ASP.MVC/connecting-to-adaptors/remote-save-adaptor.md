@@ -144,10 +144,10 @@ To insert a new record, utilize the `InsertUrl` property to specify the controll
 ![Insert record](../images/adaptors/remotesave-adaptor-insert.png)
 
 ```cs
-  /// <summary>
-  /// Inserts a new data item into the data collection.
-  /// </summary>
-  /// <returns>It returns the newly inserted record detail.</returns>
+     /// <summary>
+     /// Inserts a new data item into the data collection.
+     /// </summary>
+     /// <returns>It returns the newly inserted record detail.</returns>
      [HttpPost]
      public JsonResult Insert(CRUDModel<OrdersDetails> newRecord)
      {
@@ -175,7 +175,7 @@ For updating existing records, use the `UpdateUrl` property to specify the contr
   /// <param name="updateRecord">The updated order details.</param>
   /// <returns>It returns the updated order details.</returns>
    public JsonResult Update(CRUDModel<OrdersDetails> updatedRecord)
- {
+   {
      var updatedOrder = updatedRecord.value;
      if (updatedOrder != null)
      {
@@ -201,11 +201,11 @@ To delete existing records, use the `RemoveUrl` property to specify the controll
 ![Delete Record](../images/adaptors/remotesave-adaptor-delete.png)
 
 ```cs
-  /// <summary>
-  /// Deletes an order.
-  /// </summary>
-  /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
-  /// <returns>It returns the deleted record detail.</returns>
+        /// <summary>
+        /// Deletes an order.
+        /// </summary>
+        /// <param name="deletedRecord">It contains the specific record detail which is need to be removed.</param>
+        /// <returns>It returns the deleted record detail.</returns>
         [HttpPost]
         public JsonResult Remove(CRUDModel<OrdersDetails> deletedRecord)
         {
@@ -304,15 +304,15 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 
 **Step 5:** Add ASP.NET MVC Grid:
 
-Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` page.  The Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
+Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` page.  The Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
 ***CRUD Operations Mapping:*** CRUD operations in the Grid can be mapped to server-side controller actions using the following properties:
 
-* **insertUrl**: Specifies the URL for inserting new data.
-* **removeUrl**: Specifies the URL for removing existing data.
-* **updateUrl**: Specifies the URL for updating existing data.
-* **crudUrl**: Specifies a single URL for all CRUD operations.
-* **batchUrl**: Specifies the URL for batch editing.
+* **InsertUrl**: Specifies the URL for inserting new data.
+* **RemoveUrl**: Specifies the URL for removing existing data.
+* **UpdateUrl**: Specifies the URL for updating existing data.
+* **CrudUrl**: Specifies a single URL for all CRUD operations.
+* **BatchUrl**: Specifies the URL for batch editing.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
