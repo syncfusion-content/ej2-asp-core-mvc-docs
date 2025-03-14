@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Grid Component
+title: Data Binding in ##Platform_Name## Syncfusion Grid Component
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -75,8 +75,6 @@ The argument passed to the [`ActionFailure`](https://help.syncfusion.com/cr/aspn
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 N> The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
