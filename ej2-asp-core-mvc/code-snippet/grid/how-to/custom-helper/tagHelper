@@ -1,0 +1,35 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="CustomerRating" headerText="Customer Rating" template="#ratingTemplate" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script type="text/x-template" id="ratingTemplate">
+    ${ RatingStars(data.CustomerRating) }
+</script>
+<script>
+    function RatingStars(rating) {
+        let ratingHTML = '<span class="rating">';
+        for (let i = 1; i <= 5; i++) {
+            ratingHTML += `<span class="star ${i <= rating ? 'checked' : ''}"></span>`;
+        }
+        ratingHTML += '</span>';
+        return ratingHTML;
+    }
+</script>
+<style>
+    .e-grid .rating .star:before {
+        content: '★';
+    }
+
+    .e-grid .rating .star {
+        font-size: 132%;
+        color: lightgrey;
+    }
+
+    .rating .star.checked {
+        color: #ffa600;
+    }
+</style>

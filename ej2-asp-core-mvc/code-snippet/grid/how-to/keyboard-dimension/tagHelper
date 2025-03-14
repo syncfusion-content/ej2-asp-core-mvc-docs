@@ -1,0 +1,29 @@
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+    <label for="widthInput" style="font-weight:bold">Enter the width:</label>
+    <ejs-numerictextbox id="widthInput" placeholder="400" step="5" min="400" max="650" width="120px"></ejs-numerictextbox>
+    <ejs-button id="resizeWidthButton" content="Resize"></ejs-button>
+    <label for="heightInput" style="font-weight:bold">Enter the height:</label>
+    <ejs-numerictextbox id="heightInput" placeholder="200" step="5" min="200" max="650" width="120px"></ejs-numerictextbox>
+    <ejs-button id="resizeHeightButton" content="Resize"></ejs-button>
+</div>
+<div id="parent">
+    <ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="100%">
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="140"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+</div>
+<script>
+    document.getElementById('resizeWidthButton').onclick = handleButtonClick;
+    document.getElementById('resizeHeightButton').onclick = handleButtonClick;
+    function handleButtonClick(event) {
+        var parentDiv = document.getElementById('parent');
+        var widthsize = document.getElementById('widthInput').ej2_instances[0].value;
+        var heightsize = document.getElementById('heightInput').ej2_instances[0].value;
+        parentDiv.style.width = widthsize + 'px';
+        parentDiv.style.height = heightsize + 'px';
+    };
+</script>
