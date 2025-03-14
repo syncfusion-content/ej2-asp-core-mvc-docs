@@ -1,32 +1,38 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
+
 <h4 id="evt-text">
     <b>Event Trace</b>
 </h4>
 
 <div id="list-container">
-    <!-- ListView element -->
-    @Html.EJS().ListView("listview-def").DataSource((IEnumerable<object>)ViewBag.dataSource).ActionComplete("onActionComplete").ActionBegin("onActionBegin").Select("onSelect").Width("250").Render()
+    @Html.EJS().ListView("listview-def")
+        .DataSource((IEnumerable<object>)ViewBag.dataSource)
+        .ActionComplete("onActionComplete")
+        .ActionBegin("onActionBegin")
+        .Select("onSelect")
+        .Width("250")
+        .Render()
     <div id="list_event">
         <div id="evt">
             <div class="eventarea" style="height:273px;overflow: auto">
-                <!-- Event log element -->
                 <span class="EventLog" id="EventLog" style="word-break: normal"></span>
             </div>
             <div class="evtbtn">
-                <!-- clear button element -->
-                @Html.EJS().Button("clear").Content("Clear").Render()
+                @Html.EJS().Button("clear")
+                    .Content("Clear")
+                    .Render()
             </div>
         </div>
     </div>
 </div>
 
 <style>
+    
     #list-container {
         max-width: 600px;
         margin: auto;
     }
-
 
     #EventLog b {
         color: #388e3c;
@@ -54,6 +60,7 @@
         vertical-align: top;
     }
 </style>
+
 <script>
 
     //Clears the event log details

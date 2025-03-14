@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
-@{
 
+@{
     var template = "<div class='settings'>" +
                     "${if(avatar!=='')}" +
                     "<span class='e-avatar e-avatar-circle'>${avatar}</span>" +
@@ -14,44 +14,50 @@
                     "</div>";
 }
 
-<!-- ListView element -->
-@Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.dataSource).Fields(new ListViewFieldSettings { Text = "Name" }).SortOrder(SortOrder.Ascending).Width("350").Template(template).ShowHeader(true).HeaderTitle("Contacts").Render()
-
+@Html.EJS().ListView("list")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .Fields(new ListViewFieldSettings { Text = "Name" })
+    .SortOrder(SortOrder.Ascending)
+    .Width("350")
+    .Template(template)
+    .ShowHeader(true)
+    .HeaderTitle("Contacts")
+    .Render()
 
 <style>
-    #List {
+    #list {
         margin: 0 auto;
         border: 1px solid #ccc;
     }
 
-    #List .e-list-item {
+    #list .e-list-item {
         height: 60px;
         cursor: pointer;
     }
 
-    #List .e-list-header .e-text {
+    #list .e-list-header .e-text {
         font-family: sans-serif;
         font-size: 18px;
         line-height: 16px;
     }
 
-    #List #content {
+    #list #content {
         margin: 0;
     }
 
-    #List .e-list-header {
+    #list .e-list-header {
         background: rgb(2, 120, 215);
         color: white;
     }
 
-    #List #info,
-    #List .name {
+    #list #info,
+    #list .name {
         font-size: 14px;
         margin: 0 60px;
         line-height: 20px;
     }
 
-    #List .name {
+    #list .name {
         padding-top: 8px;
         font-weight: 500;
     }
@@ -72,25 +78,25 @@
         background-image: url("https://ej2.syncfusion.com/demos/src/grid/images/2.png");
     }
 
-    #List .e-avatar {
+    #list .e-avatar {
         position: absolute;
         margin-top: 8px;
         font-size: 14px;
     }
 
-    #List .e-list-item:nth-child(1) .e-avatar {
+    #list .e-list-item:nth-child(1) .e-avatar {
         background-color: #039be5;
     }
 
-    #List .e-list-item:nth-child(2) .e-avatar {
+    #list .e-list-item:nth-child(2) .e-avatar {
         background-color: #e91e63;
     }
 
-    #List .e-list-item:nth-child(6) .e-avatar {
+    #list .e-list-item:nth-child(6) .e-avatar {
         background-color: #009688;
     }
 
-    #List .e-list-item:nth-child(8) .e-avatar {
+    #list .e-list-item:nth-child(8) .e-avatar {
         background-color: #0088;
     }
 </style>
