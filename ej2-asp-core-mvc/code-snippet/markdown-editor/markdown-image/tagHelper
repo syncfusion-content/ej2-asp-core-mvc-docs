@@ -1,8 +1,6 @@
-<div class="control-wrapper">
-    <div class="control-section">
-        @Html.EJS().RichTextEditor("markdown").EditorMode(EditorMode.Markdown).ToolbarSettings(e => e.Items((object)ViewBag.items)).Value((string)ViewBag.value).Created("created").Render()
-    </div>
-</div>
+<ejs-richtexteditor id="markdown" value="@ViewBag.value" editorMode="Markdown" created="created">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
 
 <script type="text/javascript">
     var rteObj, textArea, mdsource;
@@ -18,10 +16,10 @@
         mdsource.addEventListener('click', function (e) {
             fullPreview();
             if (e.currentTarget.classList.contains('e-active')) {
-                rteObj.disableToolbarItem(['CreateTable']);
+                rteObj.disableToolbarItem(['Image']);
             }
             else {
-                rteObj.enableToolbarItem(['CreateTable']);
+                rteObj.enableToolbarItem(['Image']);
             }
         });
     }
@@ -67,6 +65,7 @@
         }
     }
 </script>
+
 <style>
     .e-richtexteditor textarea.e-content {
         float: left;
