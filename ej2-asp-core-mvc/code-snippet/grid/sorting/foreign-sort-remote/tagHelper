@@ -1,0 +1,14 @@
+@{
+    var GetEmployeeRecords = new Syncfusion.EJ2.DataManager { Url = Url.Action("GetOrderRecords", "Home"), Adaptor = "UrlAdaptor"};
+}
+
+<ejs-grid id="grid" allowSorting="true" allowPaging="true" >
+    <e-data-manager url="/Home/GetEmployeeRecords" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="125"></e-grid-column>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" foreignKeyField="EmployeeID" foreignKeyValue="FirstName" dataSource=GetEmployeeRecords ></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="CustomerID" width="125"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="125"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="ShipName" width="125"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
