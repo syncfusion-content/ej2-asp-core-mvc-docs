@@ -1,4 +1,4 @@
-<!-- sidebar element declaration -->
+
 <ejs-sidebar id="sidebar-element" showBackdrop="true" width="280px">
     <e-content-template>
         <div class="title"> Sidebar content</div>
@@ -6,24 +6,19 @@
             * Sidebar is rendered with animation effect
         </div>
         <div class="center-align">
-            <!-- button element declaration -->
             <ejs-button id="close_btn" content="Close Sidebar"></ejs-button>
         </div>
     </e-content-template>
 </ejs-sidebar>
-<!-- end of sidebar element -->
-<!-- main content declaration -->
 <div>
     <div class="title">Sidebar Transitions</div>
     <div class="sub-title"> * Click the below button to render the Sidebar with animation effect.</div>
     <div style="padding:20px" class="center-align">
-        <!-- button element declaration -->
         <ejs-button id="zoom" content="Zoom Sidebar" cssClass="e-info"></ejs-button>
         <ejs-button id="open_door" content="Open Door" cssClass="e-info"></ejs-button>
         <ejs-button id="bottom_top" content="Bottom to Top" cssClass="e-info"></ejs-button>
     </div>
     <div style="padding:20px" class="center-align">
-        <!-- button element declaration -->
         <ejs-button id="rotate" content="Rotate" cssClass="e-info"></ejs-button>
         <ejs-button id="rotate_3d" content="Rotate 3D" cssClass="e-info"></ejs-button>
         <ejs-button id="reverse" content="Reverse Slide Out" cssClass="e-info"></ejs-button>

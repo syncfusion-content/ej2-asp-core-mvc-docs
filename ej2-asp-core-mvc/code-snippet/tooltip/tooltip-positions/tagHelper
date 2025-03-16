@@ -32,6 +32,7 @@
     }
 
 </style>
+
 <script>
     var tooltip;
     window.onload = function () {

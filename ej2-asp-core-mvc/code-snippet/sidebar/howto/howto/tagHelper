@@ -1,13 +1,11 @@
- <!-- sidebar element declaration -->
+
 <ejs-sidebar id="default-sidebar" type="Over" width="100%">
 	<e-content-template>
 		  <div class="title1"> Menu </div>
 		 <div class="closebtn">
-            <!-- Button element declaration -->
 			<ejs-button id="close" content="Close Sidebar"  cssClass="e-btn close-btn" iconCss="e-icons close-icon"></ejs-button>
 		</div>
 		<div id="listcontainer">
-             <!-- Listview element declaration -->
 			<ejs-listview id="list" dataSource="ViewBag.dataSource"> </ejs-listview>
 		</div>
 		<div class="sub-title">
@@ -15,13 +13,11 @@
 		</div>
 	</e-content-template>
 </ejs-sidebar>
-<!-- end of sidebar element -->
-<!--  Main Content declaration -->
+
 <div>
 	<div class="title2">Main content</div>
 	<div class="sub-title"> Click the button to open/close the Sidebar.</div>
 	<div style="padding:20px" class="center-align">
-        <!-- Button element declaration -->
 		<ejs-button id="toggle" content="Toggle Sidebar" cssClass="e-info"></ejs-button>
 	</div>
 </div>

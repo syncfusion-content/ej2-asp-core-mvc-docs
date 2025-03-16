@@ -22,6 +22,9 @@ In the following example, Menu component  is rendered inside the Sidebar using c
 {% highlight c# tabtitle="Index.cshtml" %}
 {% include code-snippet/sidebar/content-template/Index.cshtml %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/sidebar/content-template/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -32,6 +35,9 @@ In the following example, Menu component  is rendered inside the Sidebar using c
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml" %}
 {% include code-snippet/sidebar/content-template/Index.cshtml %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/sidebar/content-template/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

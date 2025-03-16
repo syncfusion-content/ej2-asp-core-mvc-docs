@@ -15,9 +15,9 @@ File Manager's UI virtualization allows for the dynamic loading of a large numbe
 
 ## Enable Virtualization
 
-The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both [largeIconsView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View) and [detailsView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManagerDetailsViewSettings.html) based on the viewport size.
+The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both `largeIconsView` and `detailsView` based on the viewport size.
 
-In order to enable `virtualization`, you must set the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableVirtualization) property to true.
+In order to enable `virtualization`, you must set the `EnableVirtualization` property to true.
 
 The example below shows a large collection of files in the **Documents** and **Text Documents** folders.
 

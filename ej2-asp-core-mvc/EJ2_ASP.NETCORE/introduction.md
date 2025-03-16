@@ -16,7 +16,7 @@ Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core is a moder
 
 * The best way to get started would be to read the "Getting Started" section of the documentation for the control that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that is recommended to read end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](http://ej2.syncfusion.com/aspnetcore/) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Now that you are familiar with the basics of using the control, the next step would be to start integrating the control into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/aspnetcore/grid/gridoverview#/bootstrap5) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
@@ -99,7 +99,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started-asp-core">Tooltip</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started/">Dashboard</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started-asp-core">Avatar</a></div>
     </td>
@@ -139,7 +139,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></div>
         <div><p class="control-category">INPUTS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started/">Input Mask</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Input Mask</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">Numeric TextBox</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">RadioButton</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox</a></div>
