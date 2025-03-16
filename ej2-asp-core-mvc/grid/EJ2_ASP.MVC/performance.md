@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Performance tips for ASP.NET MVC DataGrid | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ASP.NET MVC DataGrid even binding large data set.
+title: Performance tips for ASP.NET MVC Grid | Syncfusion
+description: Checkout and learn here all about how to improve the loading performance of ASP.NET MVC Grid even binding large data set.
 platform: ej2-asp-core-mvc
-control: DataGrid
+control: Grid
 documentation: ug
 ---
 
