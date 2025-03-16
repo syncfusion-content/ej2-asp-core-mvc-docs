@@ -20,7 +20,7 @@ Syncfusion provides multiple adaptors to handle different server protocols and A
 
 The `UrlAdaptor` is the base adaptor that facilitates communication between remote data services and the UI component. It allows seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful when a custom API service has unique logic for handling data and CRUD operations. 
 
-For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor)
+For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor).
 
 **Using OData v4 adaptor**
 
@@ -38,7 +38,7 @@ For further details on configuration, refer to the [Web API Adaptor documentatio
 
 The `RemoteSaveAdaptor` in the Syncfusion ASP.NET Core Grid allows you to perform grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
-For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/remote-save-adaptor)
+For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/remote-save-adaptor).
 
 **WebMethodAdaptor**
 
