@@ -192,13 +192,19 @@ In the following code example, the Employee Name is a foreign key column. When e
 | -------------- | ------------- |
 | ![Foreign key column edit](../images/editing/on-foreign-key-column-editing.png) | ![After foreign key column edit](../images/editing/after-foreign-key-column-editing.png) |
 
-## How to prevent adding duplicate rows in Grid with custom validation
+## Prevent adding duplicate rows in Syncfusion ASP.NET MVC Grid with custom validation
 
-The Syncfusion Grid allows you to enforce constraints to prevent the addition of duplicate rows by customizing the validation logic directly within the Grid setup. This customization is achieved by handling custom validation rules or by implementing a custom validation function within the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event specifically for the `save` **requestType**. This approach allows you to intercept the save action and cancel it if necessary through the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event arguments.
+The Syncfusion ASP.NET MVC Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
 
-For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method on `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
+To prevent adding duplicate rows in the Grid, follow these steps:
 
-In the following code example, the OrderID serves as a primary key column. When attempting to add a new row, the Grid employs custom validation to ensure that duplicate OrderID values are not added. This validation includes displaying a tooltip message to provide immediate feedback to the user regarding the validation status.
+1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource). This allows editing an existing row without triggering a duplicate error.
+
+2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
+
+3. Handle Validation in the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event: In the `ActionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
+
+For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
