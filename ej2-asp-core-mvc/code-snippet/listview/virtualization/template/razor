@@ -1,11 +1,12 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
 
- @{ var template = "<div class='list-container'><div id='icon' class=\"${$imgUrl ? \'img\' : $icon }\">" +
+@{ 
+    var template = "<div class='list-container'><div id='icon' class=\"${$imgUrl ? \'img\' : $icon }\">" +
            "<span class=\"${$imgUrl ? \'hideUI\' : \'showUI\' }\">" +
            "${icon}</span> <img class=\"${$imgUrl ? \'showUI\' : \'hideUI\' }\" width = 45 height = 45 src=\"${$imgUrl ?  $imgUrl : \' \' }\" />" +
            "</div><div class='text'>${text}</div></div>";
-    }
+}
 
 @Html.EJS().ListView("ui-list")
     .DataSource((IEnumerable<object>)ViewBag.listData)

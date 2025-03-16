@@ -1,9 +1,10 @@
-     @{ var headerTemplate = "<div class='headerContainer'><span class='fruitHeader'>Fruits</span>" +
-              "<button id='search'></button><button id='add'></button><button id='sort'></button></div>";
+@{ 
+    var headerTemplate = "<div class='headerContainer'><span class='fruitHeader'>Fruits</span>" +
+            "<button id='search'></button><button id='add'></button><button id='sort'></button></div>";
+}
 
-    }
-        <ejs-listview id="element" dataSource="ViewBag.fruitsdata" showHeader="true" headerTemplate="@headerTemplate" actionComplete="renderHeaderButtons">
-        </ejs-listview>
+<ejs-listview id="element" dataSource="ViewBag.fruitsdata" showHeader="true" headerTemplate="@headerTemplate" actionComplete="renderHeaderButtons">
+</ejs-listview>
 
 <style>
     #element {

@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Accessibility in the ##Platform_Name## Rich Text Editor Control
 
-# Accessibility
-
-The Rich Text Editor control has been designed, keeping in mind the WAI-ARIA specifications, and applies the WAI-ARIA roles, states, and properties. This control is characterized by complete ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
+The Rich Text Editor control is designed with accessibility in mind, adhering to WAI-ARIA specifications and implementing ARIA roles, states, and properties. This ensures full accessibility support, making it user-friendly for people who rely on assistive technologies (AT) or keyboard navigation.
 
 The accessibility compliance for the Rich Text Editor control is outlined below.
 
@@ -33,6 +32,7 @@ The accessibility compliance for the Rich Text Editor control is outlined below.
         margin: 0.5em 0;
     }
 </style>
+
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> - All features of the control meet the requirement.</div>
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
@@ -41,9 +41,9 @@ The accessibility compliance for the Rich Text Editor control is outlined below.
 
 ## ARIA Attributes
 
-The toolbar of Rich Text Editor, assigned the role of Toolbar and has the following list of ARIA attributes.
+The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includes the following attributes.
 
-| **Roles and Attributes** | **Functionalities** |
+| **Property**  | **Functionalities** |
 | --- | --- |
 | role="toolbar" | This attribute added to the toolbar element describes the actual role of the element. |
 | aria-orientation | Indicates the toolbar orientation. Default value is horizontal. |
@@ -51,11 +51,11 @@ The toolbar of Rich Text Editor, assigned the role of Toolbar and has the follow
 | aria-disabled | Indicates the disabled state of the toolbar. |
 | aria-owns | Identifies an element to define a visual, functional, or contextual parent/child relationship between DOM elements when the DOM hierarchy cannot represent the relationship. In the Rich Text Editor, the attribute contains the ID of the Rich Text Editor to indicate the popup as a child element. |
 
-For further details of toolbar ARIA attributes, refer the accessibility of [Toolbar](../toolbar/accessibility) documentation.
+For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Toolbar`](../toolbar/accessibility) documentation.
 
-The Rich Text Editor element is assigned the role of application.
+* The Rich Text Editor element is assigned the role of `application`.
 
-| **Roles and Attributes** | **Functionalities** |
+| **Property** | **Functionalities** |
 | --- | --- |
 | role="application" | This attribute added to the Rich Text Editor element describes the actual role of the element. |
 | aria-disabled | Indicates the disabled state of the Rich Text Editor. |
@@ -83,13 +83,13 @@ The Rich Text Editor element is assigned the role of application.
 {% endtabs %}
 {% endif %}
 
-## Keyboard interaction
+## Keyboard Navigation
 
 The Rich Text Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor control.
 
-### HTML formation shortcut key
+### HTML Formatting Shortcuts
 
-You can use the following key shortcuts when the Rich Text Editor renders with HTML edit mode.
+You can use the following key shortcuts when the Rich Text Editor renders in HTML edit mode.
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
@@ -126,9 +126,9 @@ You can use the following key shortcuts when the Rich Text Editor renders with H
 | Format Painter Paste| <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> |
 | Format Painter Escape | <kbd>Esc</kbd> |
 
-### Markdown formation shortcut key
+### Markdown Formatting Shortcuts
 
-You can use the following key shortcuts when the Rich Text Editor renders with Markdown edit mode
+You can use the following key shortcuts when the Rich Text Editor renders in Markdown edit mode.
 
 | Actions | Keyboard shortcuts |
 |----------------|---------|
@@ -160,6 +160,6 @@ The accessibility compliance of the Rich Text Editor control is shown in the fol
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
-## See also
+## See Also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls](../common/accessibility)
+* [General Accessibility Guidelines](../common/accessibility)

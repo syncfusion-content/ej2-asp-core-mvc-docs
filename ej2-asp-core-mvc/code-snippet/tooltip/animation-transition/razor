@@ -41,6 +41,7 @@
         width: 20px;
     }
 </style>
+
 <script>
     function onBeforeRender(args) {
         if (args.element) {

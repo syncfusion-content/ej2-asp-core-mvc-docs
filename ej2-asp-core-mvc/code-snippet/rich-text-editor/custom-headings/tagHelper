@@ -1,0 +1,4 @@
+<ejs-richtexteditor id="headings" value="@ViewBag.value">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+    <e-richtexteditor-format types="@ViewBag.customFormats" default="Paragraph"></e-richtexteditor-format>
+</ejs-richtexteditor>

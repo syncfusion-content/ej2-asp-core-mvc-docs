@@ -1,0 +1,26 @@
+<ejs-button id="targetButton" e-ripple="true" content="OPEN DIALOG"></ejs-button>
+<ejs-dialog id="dialog" height="350px" width="400px"  header="Dialog Header"
+            showCloseIcon="true" footerTemplate="Dialog Footer" open="onOpen">
+    <e-content-template>
+        <ejs-richtexteditor id="RTE"></ejs-richtexteditor>
+    </e-content-template>
+</ejs-dialog>
+
+<script>
+    document.getElementById('targetButton').onclick = function () {
+        var dialogObj = document.getElementById('dialog').ej2_instances[0];
+        dialogObj.show();
+    };
+
+    function onOpen(args){
+        var rteObj = document.getElementById('RTE').ej2_instances[0];
+        rteObj.refreshUI()
+    }
+</script>
+
+<style>
+    body, html {
+        width: 100%;
+        height: 100%;
+    }
+</style>

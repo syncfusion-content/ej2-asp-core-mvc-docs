@@ -1,5 +1,6 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
+
 <div id="sample">
     <input class="e-input" type="text" id="textbox" placeholder="Filter" title="Type in a name">
     @Html.EJS().ListView("list")

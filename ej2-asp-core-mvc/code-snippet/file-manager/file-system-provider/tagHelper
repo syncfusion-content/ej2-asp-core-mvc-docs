@@ -3,6 +3,7 @@
         <!--  Initialize File Manager control with ASP.NET Core service-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                     getImageUrl="http://localhost:{port}/api/FileManager/GetImage"
                     url="http://localhost:{port}/api/FileManager/FileOperations"
                     downloadUrl="http://localhost:{port}/api/FileManager/Download"

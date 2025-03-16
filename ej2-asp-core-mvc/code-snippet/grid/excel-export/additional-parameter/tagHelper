@@ -1,0 +1,27 @@
+<div style="margin-left:180px">
+    <p style="color:red;" id="message"></p>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" toolbarClick="toolbarClick" excelExportComplete="excelExportComplete" toolbar="@(new List<string>() { "ExcelExport" })">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" visible="false" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === "grid_excelexport") {
+            var queryClone = grid.query;
+            grid.query = new ej.data.Query().addParams("recordcount", "15");
+            document.getElementById("message").innerText = 'Key: ' + grid.query.params[0].key + ' and Value: ' + grid.query.params[0].value + ' on ' + args.item.text;
+            grid.excelExport();
+        }
+    }
+
+    function excelExportComplete(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.query = new ej.data.Query();
+    }
+</script>

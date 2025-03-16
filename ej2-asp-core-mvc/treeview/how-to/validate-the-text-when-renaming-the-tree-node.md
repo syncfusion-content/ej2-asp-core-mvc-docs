@@ -10,7 +10,7 @@ documentation: ug
 
 # Validate the text when renaming the tree node
 
-You can validate the tree node text during editing by using the [`nodeEdited`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.treeview.html#Syncfusion_EJ2_Navigations_TreeView_NodeEdited) event of the TreeView. The following example shows how to validate and prevent empty values in a tree node.
+You can validate the tree node text during editing by using the `nodeEdited` event of the TreeView. The following example shows how to validate and prevent empty values in a tree node.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

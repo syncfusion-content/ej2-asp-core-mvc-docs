@@ -3,11 +3,9 @@
 
 @{
     var content = "<div id=\"tooltip\">" +
-"        <h2>HTML Tags</h2>" +
-"        Through templates, <b><span style=\"color:#e3165b\">tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content" +
-"    </div>";
-
-
+                  "<h2>HTML Tags</h2>" +
+                  "Through templates, <b><span style=\"color:#e3165b\">tooltip content</span></b> can be loaded with <u><i> inline HTML, images, iframe, videos, maps </i></u>. A title can be added to the content" +
+                  "</div>";
 }
 <div id="container">
     @Html.EJS().Tooltip("target")
