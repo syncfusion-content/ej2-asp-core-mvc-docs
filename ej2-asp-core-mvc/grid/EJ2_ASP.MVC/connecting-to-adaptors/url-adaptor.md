@@ -171,6 +171,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
@@ -178,6 +179,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
     col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
     col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
 }).Render()
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -198,6 +200,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
  [HttpPost]
  public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
  {
@@ -217,6 +220,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
     // Return data based on the request.
     return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
+
 {% endhighlight %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
@@ -288,6 +292,7 @@ To handle sorting operation, configure your API to support custom sorting criter
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
 {
     // Retrieve data from the data source (e.g., database).
@@ -304,6 +309,7 @@ public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
     
     return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
 }
+
 {% endhighlight %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
@@ -349,6 +355,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
      // Return data based on the request.
      return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
+
 {% endhighlight %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
