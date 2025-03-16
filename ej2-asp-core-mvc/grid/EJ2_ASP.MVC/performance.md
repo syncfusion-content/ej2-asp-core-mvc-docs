@@ -7,9 +7,9 @@ control: Grid
 documentation: ug
 ---
 
-# Performance tips for ASP.NET MVC DataGrid
+# Performance tips for ASP.NET MVC Grid
 
-This article is a comprehensive guide on improving the loading performance of the ASP.NET MVC DataGrid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the ASP.NET MVC DataGrid during data binding, ensuring a smooth and efficient user experience.
+This article is a comprehensive guide on improving the loading performance of the ASP.NET MVC Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the ASP.NET MVC Grid during data binding, ensuring a smooth and efficient user experience.
 
 ## How to improve loading performance by binding large dataset
 
@@ -51,11 +51,11 @@ So to improve the performance of Grid during the initial rendering, suggested yo
 
 ## How to update cell values without frequent server calls 
 
-Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the `setCellValue` method to update the DataGrid without affecting the database and only refresh the UI.
+Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the `setCellValue` method to update the Grid without affecting the database and only refresh the UI.
 
 ## How to optimize server-side data operations with adaptors
 
-The ASP.NET MVC DataGrid provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By leveraging these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Grid and execute actions. During data operations like filtering, sorting, and paging, the corresponding action queries are generated as per the adaptor's requirements. It is crucial to handle these actions on the application end and return the processed data back to the Grid. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Grid is as follows
+The ASP.NET MVC Grid provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By leveraging these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Grid and execute actions. During data operations like filtering, sorting, and paging, the corresponding action queries are generated as per the adaptor's requirements. It is crucial to handle these actions on the application end and return the processed data back to the Grid. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Grid is as follows
 
 * Filtering
 * Sorting
