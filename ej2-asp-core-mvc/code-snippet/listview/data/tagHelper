@@ -1,14 +1,16 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists;
 @using Syncfusion.EJ2.Popups;
+
 @{
     var template = "<div class='fruits'><div class='first'><img id='listImage' src='${ imgUrl}' alt='fruit' /><button class='delete e-control e-btn e-small e-round e-delete-btn e-primary e-icon-btn' data-ripple='true'><span class='e-btn-icon e-icons delete-icon'></span></button></div><div class='fruitName'>${text}</div></div>";
 }
+
 <div id="container">
     <div class="headerContainer">
         <div class="e-input-group">
             <input id="search" class="e-input" type="text" placeholder="Search fruits" />
-            <span class="e-input-group-icon e-input-search"></span>
+            <span class="e-input-group-icon e-icons e-input-search"></span>
         </div>
         <button id="sort" class="e-control e-btn e-small e-round e-primary e-icon-btn" title="Sort fruits" data-ripple="true">
             <span class="e-btn-icon e-icons e-sort-icon-ascending"></span>
@@ -19,11 +21,19 @@
 
         <ejs-dialog id="dialog" showCloseIcon="true" buttons="ViewBag.DialogButtons" width="300" visible="false">
             <e-content-template>
-                <div id='listDialog'><div class='input_name'><label for='name'>Fruit Name: </label><input id='name' class='e-input' type='text' placeholder='Enter fruit name' /></div><div><label for='imgurl'>Fruit Image: </label><input id='imgurl' class='e-input' type='text' placeholder='Enter image url' /></div></div>
+                <div id='listDialog'>
+                    <div class='input_name'>
+                        <label for='name'>Fruit Name: </label>
+                        <input id='name' class='e-input' type='text' placeholder='Enter fruit name' />
+                    </div>
+                    <div>
+                        <label for='imgurl'>Fruit Image: </label>
+                        <input id='imgurl' class='e-input' type='text' placeholder='Enter image url' />
+                    </div>
+                </div>
             </e-content-template>
         </ejs-dialog>
 
-        <!-- ListView element -->
         <ejs-listview id="element" dataSource="(IEnumerable<object>)ViewBag.dataSource" actionComplete="wireEvents" template="@template" sortOrder="Ascending">
         </ejs-listview>
     </div>
@@ -55,17 +65,17 @@
         margin-bottom: 3px;
     }
 
-        .headerContainer .e-input-group {
-            margin-left: 20px;
-            width: 200px;
-            background: white;
-            height: 31px;
-        }
+    .headerContainer .e-input-group {
+        margin-left: 20px;
+        width: 200px;
+        background: white;
+        height: 31px;
+    }
 
-        .headerContainer #search {
-            height: 21px;
-            margin-left: 10px;
-        }
+    .headerContainer #search {
+        height: 21px;
+        margin-left: 10px;
+    }
 
     #listDialog .input_name {
         margin-bottom: 20px;
@@ -79,10 +89,9 @@
         background: white;
         color: black;
     }
-
+    
     .headerContainer .e-input-search::before {
-        font-family: 'e-icons';
-        content: '\e961';
+        content: '\e754';
         margin-top: 3px;
     }
 
@@ -105,10 +114,10 @@
         margin-top: -10px;
     }
 
-        #element .e-delete-btn.e-btn.e-small.e-round {
-            width: 2em;
-            height: 2em;
-        }
+    #element .e-delete-btn.e-btn.e-small.e-round {
+        width: 2em;
+        height: 2em;
+    }
 
     #element .e-btn.e-small.e-round .e-btn-icon.delete-icon {
         font-size: 9px;
@@ -131,7 +140,7 @@
     }
 
     .headerContainer .e-add-icon::before {
-        content: '\e823';
+        content: '\e805';
     }
 
     #element .delete-icon::before {
@@ -140,13 +149,14 @@
     }
 
     .headerContainer .e-sort-icon-ascending::before {
-        content: '\e840';
+        content: '\e7df';
     }
 
     .headerContainer .e-sort-icon-descending::before {
-        content: '\e83f';
+        content: '\e7d8';
     }
 </style>
+
 <script>
     var fruitsdata  = @(Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.dataSource)));
 

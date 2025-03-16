@@ -1,18 +1,29 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
-     @{ var template = "<div class='e-list-wrapper e-list-multi-line e-list-avatar'>" +
-     "<img class='e-avatar e-avatar-circle' src=${image} style='background:#BCBCBC' />" +
-     "<span class='e-list-item-header'>${Name}</span>" +
-     "<span class='e-list-content'>${contact}</span>" +
-     "</div>";
 
-        var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
+@{ 
+    var template = "<div class='e-list-wrapper e-list-multi-line e-list-avatar'>" +
+    "<img class='e-avatar e-avatar-circle' src=${image} style='background:#BCBCBC' />" +
+    "<span class='e-list-item-header'>${Name}</span>" +
+    "<span class='e-list-content'>${contact}</span>" +
+    "</div>";
 
-    }
-        @Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.listData).Template(template).GroupTemplate(groupTemplate).CssClass("e-list-template").Width(350).Fields(new ListViewFieldSettings { Text = "name", GroupBy = "category" }).Render()
+    var groupTemplate = "<div><span class='category'>${items[0].category}</span> <span class='count'> ${items.length} Item(s)</span></div>";
+
+}
+
+@Html.EJS().ListView("list")
+    .DataSource((IEnumerable<object>)ViewBag.listData)
+    .Template(template)
+    .GroupTemplate(groupTemplate)
+    .CssClass("e-list-template")
+    .Width(350)
+    .Fields(new ListViewFieldSettings { Text = "name", GroupBy = "category" })
+    .Render()
 
 <style>
-    #List {
+
+    #list {
         display: block;
         margin: auto;
         font-size: 15px;
@@ -22,13 +33,13 @@
         width: 350px;
     }
 
-        #List .e-list-group-item {
-            height: 56px;
-            line-height: 56px;
-        }
+    #list .e-list-group-item {
+        height: 56px;
+        line-height: 56px;
+    }
 
-        #List .count {
-            float: right;
-        }
+    #list .count {
+        float: right;
+    }
 
 </style>

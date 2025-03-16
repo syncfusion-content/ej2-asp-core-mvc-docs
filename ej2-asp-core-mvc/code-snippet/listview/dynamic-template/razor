@@ -1,5 +1,6 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
+
 @{
     var wintemplate = "";
     var width = "";
@@ -33,17 +34,24 @@
         wintemplate = template;
     }
 }
-@Html.EJS().ListView("List").DataSource((IEnumerable<object>)ViewBag.dataSource).HeaderTitle("Syncfusion Blog").ShowHeader(true).Width(width).Template(wintemplate).Render()
+
+@Html.EJS().ListView("list")
+    .DataSource((IEnumerable<object>)ViewBag.dataSource)
+    .HeaderTitle("Syncfusion Blog")
+    .ShowHeader(true)
+    .Width(width)
+    .Template(wintemplate)
+    .Render()
 
 <style>
-    #List img {
+    #list img {
         height: 70px;
         width: 70px;
         border-radius: 50%;
         border: 1px solid #ccc;
     }
 
-    #List {
+    #list {
         display: block;
         max-width: 400px;
         margin: auto;
@@ -52,14 +60,14 @@
         border-color: rgba(0, 0, 0, 0.12);
     }
 
-    #List .settings {
+    #list .settings {
         height: 170px;
         line-height: 70px;
         margin-left: 16px;
         margin-right: 16px;
     }
 
-    #List .e-list-item {
+    #list .e-list-item {
         height: 170px;
         line-height: 70px;
         padding: 0;
@@ -85,7 +93,7 @@
         padding-top: 3px;
     }
 
-    #List .e-list-header {
+    #list .e-list-header {
         color: white;
         height: 57px;
         background-color: #56697f;
@@ -94,35 +102,31 @@
         top: -1px;
     }
 
-    .bootstrap #List .e-list-header .e-text {
-        line-height: 18px;
-    }
-
-    #List .e-list-header .e-text {
+    #list .e-list-header .e-text {
         font-family: sans-serif;
         font-size: 18px;
         line-height: 26px;
     }
 
-    #List .category {
+    #list .category {
         font-family: "serif";
         font-weight: 600;
         font-size: 19px;
     }
 
-    #List .name {
+    #list .name {
         font-size: 15px;
         font-weight: 500;
         line-height: 23px;
     }
 
-    #List .content {
+    #list .content {
         line-height: 19px;
         font-size: 13px;
         font-weight: 200;
     }
 
-    #List .e-hover {
+    #list .e-hover {
         transition: 0.5s;
     }
 

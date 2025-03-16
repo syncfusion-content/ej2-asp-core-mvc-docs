@@ -609,6 +609,84 @@ The following screenshot represents the grid action with custom binding
 > * While working with grid edit operation, defining the `IsPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
 
+## Export all records in client side
+
+Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
+
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net MVC Grid component allows you to export all records, including those from multiple pages, by configuring the `PdfExportProperties` and `ExcelExportProperties`.
+
+To export all records, including those from multiple pages, configure the `PdfExportProperties.DataSource` for PDF exporting and `ExcelExportProperties.DataSource` for Excel exporting within the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event handler. Inside this event, set the `DataSource` property of `PdfExportProperties` and `ExcelExportProperties` for PDF and Excel exporting to include all records.
+
+**Excel Exporting**
+
+To export the complete Grid data to Excel document, utilize the `ExcelExportProperties.DataSource` when initiating the Excel export. Use the following code snippet to export all records within the Grid:
+
+```typescript
+  const grid = document.getElementById("grid").ej2_instances[0];
+  getOrders(state).then((event) => {
+    let excelExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.excelExport(excelExportProperties);
+  });
+```
+
+**PDF Exporting**
+
+To export the complete Grid data to PDF document, utilize the `PdfExportProperties.DataSource` when initiating the PDF export. Use the following code snippet to export all records within the Grid:
+
+```typescript
+  const grid = document.getElementById("grid").ej2_instances[0];
+  getOrders(state).then((event) => {
+    let pdfExportProperties = {
+      dataSource: event.result.result
+    };
+    grid.pdfExport(pdfExportProperties);
+  });
+```
+
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/excel-export/excel-export-options)
+
+The following code example demonstrates how to export all records on the client side:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="remotedata.cs" %}
+{% include code-snippet/grid/data-binding/remote-export/remotedatamvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Sending additional parameters to the server
+
+The Syncfusion ASP.NET MVC Grid allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
+
+By utilizing the `Query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
+
+To enable custom parameters in data requests for the Grid, follow these steps:
+
+**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `Query` property of the Grid.
+
+**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the `addParams` method to add the custom parameters.
+
+**3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event handler to execute the query with the updated state.
+
+**4. Execute Data Request:** In the service, execute the data request by combining the custom parameters with other query parameters such as paging and sorting.
+
+The following example demonstrates how to send additional parameters to the server:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/remote-prams/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="remotedata.cs" %}
+{% include code-snippet/grid/data-binding/remote-prams/custombinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AdditionalParameters](../images/databinding/remote-params.png)
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the **Offline** property of DataManager.
@@ -620,4 +698,4 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% highlight c# tabtitle="Offline.cs" %}
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
-{% endtabs %}
+{% endtabs %} 

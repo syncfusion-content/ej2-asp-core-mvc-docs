@@ -25,7 +25,7 @@ The File Manager control allows customizing its functionalities such as context 
 
 ## Context menu customization
 
-The context menu settings, such as items to be displayed on files, folders, layout click, and visibility, can be customized using the [contextMenuSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) property.
+The context menu settings, such as items to be displayed on files, folders, layout click, and visibility, can be customized using the `contextMenuSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,11 +54,11 @@ The context menu settings, such as items to be displayed on files, folders, layo
 
 The output will be as shown below.
 
-![FileManager contextmenu ](./images/contextmenu_item.PNG)
+![File Manager contextmenu ](./images/contextmenu_item.PNG)
 
 ## Details view customization
 
-The details view settings like, column width, header text, template for each field can be customized using [detailsViewSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_DetailsViewSettings) property.
+The details view settings like, column width, header text, template for each field can be customized using `detailsViewSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -85,11 +85,11 @@ The details view settings like, column width, header text, template for each fie
 
 Output be like the below.
 
-![FileManager details-view ](./images/details-view.png)
+![File Manager details-view ](./images/details-view.png)
 
 ## Navigation pane customization
 
-The navigation pane settings like, minimum and maximum width and visibility can be customized using [navigationPaneSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html) property.
+The navigation pane settings like, minimum and maximum width and visibility can be customized using `navigationPaneSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -118,13 +118,13 @@ The navigation pane settings like, minimum and maximum width and visibility can 
 
 Output be like the below.
 
-![FileManager navigationpane ](./images/navigationpane.PNG)
+![File Manager navigationpane ](./images/navigationpane.PNG)
 
 ## Show/Hide file extension
 
-The file extensions are displayed in the File Manager by default. This can be hidden by disabling the [showFileExtension](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowFileExtension.html) property.
+The file extensions are displayed in the File Manager by default. This can be hidden by disabling the `showFileExtension` property.
 
-In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileLoad.html) and [fileOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~FileOpen.html) events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
+In File Manager `fileLoad` and `fileOpen` events are triggered before the file/folder is rendered and before the file/folder is opened respectively. These events can be utilized to perform operations before a file/folder is rendered or opened.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -153,11 +153,11 @@ In File Manager [fileLoad](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 Output be like the below.
 
-![FileManager show/hidden extension ](./images/fileextension.PNG)
+![File Manager show/hidden extension ](./images/fileextension.PNG)
 
 ## Show/Hide hidden items
 
-The File Manager provides support to show/hide the hidden items by enabling/disabling the [showHiddenItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowHiddenItems.html) property.
+The File Manager provides support to show/hide the hidden items by enabling/disabling the `showHiddenItems` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -186,11 +186,11 @@ The File Manager provides support to show/hide the hidden items by enabling/disa
 
 Output be like the below.
 
-![FileManager show/hidden items ](./images/hidden_items.png)
+![File Manager show/hidden items ](./images/hidden_items.png)
 
 ## Show/Hide thumbnail images in large icons view
 
-The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the [showThumbnail](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ShowThumbnail.html) property.
+The thumbnail images are displayed in the File Manager's large icons view by default. This can be hidden by disabling the `showThumbnail` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -219,11 +219,11 @@ The thumbnail images are displayed in the File Manager's large icons view by def
 
 Output be like the below.
 
-![FileManager showthumbnail ](./images/thumbnail.PNG)
+![File Manager showthumbnail ](./images/thumbnail.PNG)
 
 ## Toolbar customization
 
-The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html) property.
+The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using `thetoolbarSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -252,7 +252,7 @@ The toolbar settings, such as items to be displayed in the toolbar and visibilit
 
 Output be like the below.
 
-![FileManager toolbar customization ](./images/toolbar_item.PNG)
+![File Manager toolbar customization ](./images/toolbar_item.PNG)
 
 
 ### See Also
@@ -261,7 +261,7 @@ Output be like the below.
 
 ## Upload customization
 
-The upload settings, such as minimum and maximum file size and enabling auto upload, can be customized using the [uploadSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~UploadSettings.html) property.
+The upload settings, such as minimum and maximum file size and enabling auto upload, can be customized using the `uploadSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -290,11 +290,11 @@ The upload settings, such as minimum and maximum file size and enabling auto upl
 
 Output be like the below, when file size is below the `minFileSize`.
 
-![FileManager upload customization ](./images/file_size.png)
+![File Manager upload customization ](./images/file_size.png)
 
 Output be like the below, when file size is above the `minFileSize`.
 
-![FileManager upload customization ](./images/enable_persistence.PNG)
+![File Manager upload customization ](./images/enable_persistence.PNG)
 
 ## Tooltip customization
 
@@ -327,4 +327,4 @@ The tooltip value can be customized by adding extra content to the title of the 
 
 Output be like the below.
 
-![FileManager tooltip customization ](./images/tooltip.png)
+![File Manager tooltip customization ](./images/tooltip.png)

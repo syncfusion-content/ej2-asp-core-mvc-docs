@@ -1,4 +1,4 @@
- <!-- sidebar element declaration -->
+
 <ejs-sidebar id="default-sidebar" width="280px" mediaQuery="(max-width: 400px)">
     <e-content-template>
         <div class="title-header">
@@ -6,8 +6,6 @@
         </div>
     </e-content-template>
 </ejs-sidebar>
-<!-- end of sidebar element -->
-<!-- main content declaration -->
 <div>
     <div class="title default">Main content</div>
     <div class="sub-title">

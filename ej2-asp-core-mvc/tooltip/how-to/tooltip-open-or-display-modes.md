@@ -10,7 +10,7 @@ documentation: ug
 
 # Tooltip open or display modes
 
-The open mode property of tooltip can be defined on a target that is hovering, focusing, or clicking.
+The open mode property of Tooltip can be defined on a target that is hovering, focusing, or clicking.
 
 Tooltip component have the following types of open mode:
 

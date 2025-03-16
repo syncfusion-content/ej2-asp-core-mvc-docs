@@ -1,28 +1,43 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Lists
+
 <div class="list_container">
     <div id="list_container_1">
         <input class="e-input" type="text" id="firstInput" placeholder="Filter" title="Type in a name">
-        @Html.EJS().ListView("list-1").DataSource((IEnumerable<object>)ViewBag.firstListData).Select("onFirstListSelect").SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending).Render()
-
+        @Html.EJS().ListView("list-1")
+            .DataSource((IEnumerable<object>)ViewBag.firstListData)
+            .Select("onFirstListSelect")
+            .SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending)
+            .Render()
     </div>
     <div id="btn">
-        @Html.EJS().Button("firstBtn").Content(">>").Render()
-
-        @Html.EJS().Button("secondBtn").Content(">").Disabled(true).Render()
-
-        @Html.EJS().Button("thirdBtn").Content("<").Disabled(true).Render()
-
-        @Html.EJS().Button("fourthBtn").Content("<<").Render()
+        @Html.EJS().Button("firstBtn")
+            .Content(">>")
+            .Render()
+        @Html.EJS().Button("secondBtn")
+            .Content(">")
+            .Disabled(true)
+            .Render()
+        @Html.EJS().Button("thirdBtn")
+            .Content("<")
+            .Disabled(true)
+            .Render()
+        @Html.EJS().Button("fourthBtn")
+            .Content("<<")
+            .Render()
     </div>
     <div id="list_container_2">
         <input class="e-input" type="text" id="secondInput" placeholder="Filter" title="Type in a name">
-        @Html.EJS().ListView("list-2").DataSource((IEnumerable<object>)ViewBag.secondListData).Select("onSeconListSelect").SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending).Render()
+        @Html.EJS().ListView("list-2")
+            .DataSource((IEnumerable<object>)ViewBag.secondListData)
+            .Select("onSeconListSelect")
+            .SortOrder(Syncfusion.EJ2.Lists.SortOrder.Ascending)
+            .Render()
     </div>
-
 </div>
 
 <style>
+
 .list_container {
     height: 398px;
     max-width: 485px;
@@ -61,6 +76,7 @@
     transform: translateY(50%);
 }
 </style>
+
 <script type="text/javascript">
 
     var firstListObj, secondListObj, firstBtnObj, secondBtnObj, thirdBtnObj, fourthBtnObj, firstListData, secondListData;
