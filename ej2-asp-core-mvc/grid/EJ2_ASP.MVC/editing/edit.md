@@ -215,6 +215,8 @@ For server-side validation to prevent adding duplicate rows, you can refer to th
 {% endhighlight %}
 {% endtabs %}
 
+![Prevent Duplicate row](../images/editing/prevent-duplicate-row.png)
+
 ## How to perform CRUD action externally 
 
 Performing CRUD (Create, Read, Update, Delete) actions externally in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to manipulate grid data outside the grid itself. This can be useful in scenarios where you want to manage data operations programmatically.
