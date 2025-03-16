@@ -235,8 +235,6 @@ function loadPageSet(direction) {
 }
 ```
 
-<!-- You can view the hosted link for this sample [here](https://ej2.syncfusion.com/aspnetcore/Load_millions_of_records). -->
-
 ![Prevent browser height limitation](../images/scrolling/external-button.png)
 
 > If you perform Grid actions such as filtering, sorting, etc., after scrolling through the 0.5 million data, the Grid performs those data actions with the whole records, not just the current loaded 0.5 million data.
