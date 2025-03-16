@@ -2,7 +2,7 @@
 @using Syncfusion.EJ2.Popups
 
 @{
-    var content = "<iframe src=\"https://www.syncfusion.com/products/essential-js2\" id=\"tooltipFrame\"></iframe>";
+    var content = "<iframe src=\"https://ej2.syncfusion.com/showcase/typescript/expensetracker/#/dashboard\" id=\"tooltipFrame\"></iframe>";
 }
 
 <div id='container'>

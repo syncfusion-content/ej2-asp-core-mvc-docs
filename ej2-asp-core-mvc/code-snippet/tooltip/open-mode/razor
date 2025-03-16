@@ -60,6 +60,7 @@
         width: 200px;
     }
 </style>
+
 <script>
     document.getElementById('open').addEventListener("click", function () {
         var customTooltip = document.getElementById('custom').ej2_instances[0];

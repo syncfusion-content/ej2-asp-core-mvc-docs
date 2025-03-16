@@ -3,14 +3,12 @@
         <div class="slider-content-wrapper">
             <div class="slider_container" id="slider_wrapper">
                 <div class="slider_labelText userselect">Dynamic ticks color</div>
-                <!-- Ticks slider element -->
                 <ejs-slider id="ticks_slider" value="30" step="5" type="MinRange" renderingTicks="renderingTicksHandler_1">
                     <e-slider-ticksdata placement=Before largeStep="20"></e-slider-ticksdata>
                 </ejs-slider>
             </div>
             <div class="slider_container">
                 <div class="slider_labelText userselect">Ticks with legends</div>
-                <!-- Ticks slider element -->
                 <ejs-slider id="slider" value="30" type="MinRange" renderedTicks="renderingTicksHandler_2">
                     <e-slider-ticksdata placement=Both largeStep="20" smallStep="5"></e-slider-ticksdata>
                 </ejs-slider>
@@ -93,43 +91,43 @@
         z-index: 0;
     }
 
-        #ticks_slider .e-scale .e-custom::before {
-            content: '\e967';
-            position: absolute;
-        }
+    #ticks_slider .e-scale .e-custom::before {
+        content: '\e967';
+        position: absolute;
+    }
 
-        #ticks_slider .e-scale :nth-child(1)::before {
-            color: red;
-        }
+    #ticks_slider .e-scale :nth-child(1)::before {
+        color: red;
+    }
 
-        #ticks_slider .e-scale :nth-child(2)::before {
-            color: blue;
-        }
+    #ticks_slider .e-scale :nth-child(2)::before {
+        color: blue;
+    }
 
-        #ticks_slider .e-scale :nth-child(3)::before {
-            color: green;
-        }
+    #ticks_slider .e-scale :nth-child(3)::before {
+        color: green;
+    }
 
-        #ticks_slider .e-scale :nth-child(4)::before {
-            color: blueviolet;
-        }
+    #ticks_slider .e-scale :nth-child(4)::before {
+        color: blueviolet;
+    }
 
-        #ticks_slider .e-scale :nth-child(5)::before {
-            color: orange;
-        }
+    #ticks_slider .e-scale :nth-child(5)::before {
+        color: orange;
+    }
 
-        #ticks_slider .e-scale :nth-child(6)::before {
-            color: pink;
-        }
+    #ticks_slider .e-scale :nth-child(6)::before {
+        color: pink;
+    }
 
-        #ticks_slider .e-scale .e-custom::before {
-            font-size: 10px;
-        }
+    #ticks_slider .e-scale .e-custom::before {
+        font-size: 10px;
+    }
 
-        #ticks_slider .e-scale .e-custom::before {
-            top: calc(50% + 1px);
-            left: calc(50% - 5px);
-        }
+    #ticks_slider .e-scale .e-custom::before {
+        top: calc(50% + 1px);
+        left: calc(50% - 5px);
+    }
 
     #slider_wrapper #ticks_slider .e-scale :nth-child(1)::before {
         top: calc(50% + 1px);

@@ -1,9 +1,11 @@
-<ejs-grid id="DynamicObjectGrid" dataSource="ViewBag.DynamicData" allowPaging="true" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel"})">
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" newRowPosition="Top"></e-grid-editSettings>
+<ejs-grid id="grid" dataSource="ViewBag.DynamicData" allowPaging="true" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel"})">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-pageSettings pageSize=10> </e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" validationRules="@(new { required=true, number=true})" width="140"></e-grid-column>
-        <e-grid-column field="Customer.OrderDate" headerText="Order Date" editType="datetimepickeredit" customFormat="@(new {type = "datetime", format = "M/d/y hh:mm a" })" width="160"></e-grid-column>
+        <e-grid-column field="Customer.CustomerID" headerText="Customer ID" width="150"></e-grid-column>
         <e-grid-column field="Customer.Freight" headerText="Freight" validationRules="@(new { required=true})" textAlign="Right" editType="numericedit" format="C2" width="140"></e-grid-column>
+        <e-grid-column field="Customer.OrderDate" headerText="Order Date" editType="datetimepickeredit" customFormat="@(new {type = "datetime", format = "M/d/y hh:mm a" })" width="160"></e-grid-column>
         <e-grid-column field="Customer.ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

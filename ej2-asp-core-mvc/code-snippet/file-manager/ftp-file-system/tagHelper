@@ -3,6 +3,7 @@
         <!--  Initialize File Manager control with FTP service-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                     url="http://localhost:{port}/api/FTPProvider/FTPFileOperations"
                     downloadUrl="http://localhost:{port}/api/FTPProvider/FTPDownload"
                     uploadUrl="http://localhost:{port}/api/FTPProvider/FTPUpload"

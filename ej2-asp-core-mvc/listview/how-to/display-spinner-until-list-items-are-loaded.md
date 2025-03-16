@@ -24,14 +24,33 @@ Refer to the following code sample to render the spinner control.
 
 Refer to the following code sample to render the ListView control.
 
-```typescript
+{% if page.publishingplatform == "aspnet-core" %}
 
-<!-- ListView element -->
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+<ejs-listview enable="true" id="remotelist" headerTitle="Products" showHeader="true" query="new ej.data.Query().from('Products').select('ProductID,ProductName').take(10)">
+    <e-data-manager url="//js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/" crossDomain="true">
+    </e-data-manager>
+    <e-listview-fieldsettings id="ProductID" text="ProductName">
+    </e-listview-fieldsettings>
+</ejs-listview>
+
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+
 @Html.EJS().ListView("element").DataSource(dataManger =>
 {dataManger.Url("https://js.syncfusion.com/ejServices/Wcf/Northwind.svc/").CrossDomain(true);
 }).Query("new ej.data.Query().from('Products').select('ProductID,ProductName').take(10)").ActionBegin("onBegin").Fields(new ListViewFieldSettings { Id = "ProductID", Text = "ProductName" }).ShowHeader(true).HeaderTitle("Product Name").Width("300").ActionComplete("oncomplete").Render()
 
-```
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Here, the data is fetched from `Northwind` Service URL; it takes a few seconds to load the data. To enhance the UI, the spinner control has been rendered initially. After the data is loaded from remote URL, the spinner control will be hidden in ListView [actionComplete](https://ej2.syncfusion.com/documentation/api/list-view/#actioncomplete) event.
 

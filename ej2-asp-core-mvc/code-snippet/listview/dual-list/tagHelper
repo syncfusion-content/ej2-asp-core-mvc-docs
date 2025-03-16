@@ -13,8 +13,8 @@
         <input type="text" id="secondInput" onkeyup="onSecondKeyUp()" placeholder="  Filter" title="Type in a name">
         <ejs-listview id="list-2" dataSource="@ViewBag.secondListData" sortOrder="Ascending" select="onSeconListSelect"></ejs-listview>
     </div>
-
 </div>
+
 <style>
     #list-1,
     #list-2 {
