@@ -218,7 +218,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
     return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -263,7 +263,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
      return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -305,7 +305,7 @@ public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
     return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -350,7 +350,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
      return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
  }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -380,7 +380,7 @@ The following properties enable the Grid to interact with API endpoints for diff
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
@@ -395,7 +395,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the `IsPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -537,7 +537,7 @@ The following code example describes the above behavior.
      return Json(order);
  }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
@@ -595,7 +595,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
       return Json(order);
   }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
