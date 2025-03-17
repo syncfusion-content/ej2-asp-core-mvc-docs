@@ -10,7 +10,7 @@ documentation: ug
 
 # Insert Images in ##Platform_Name## Markdown Editor Control
 
-The Syncfusion Angular Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
+The Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
 
 Follow these steps to add an image in the Markdown editor:
 

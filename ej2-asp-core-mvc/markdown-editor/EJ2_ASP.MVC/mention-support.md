@@ -17,7 +17,7 @@ To enable the Mention functionality within the Markdown Editor, set the [Target]
 When a user types the `@` symbol followed by a character, the Markdown Editor displays a list of suggestions. Users can select an item from the list by either clicking on it or typing the desired name. In the following sample, we have configured the Mention control with additional properties:
 
 * [AllowSpaces](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.mention.html#Syncfusion_EJ2_DropDowns_Mention_AllowSpaces) - Allow to continue search action if user enter space after mention character while searching.
-* [AuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) - Defines the maximum number of items displayed in the suggestion list.
+* [SuggestionCount](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.mention.html#Syncfusion_EJ2_DropDowns_Mention_SuggestionCount) - Defines the maximum number of items displayed in the suggestion list.
 * [ItemTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.mention.html#Syncfusion_EJ2_DropDowns_Mention_ItemTemplate) - Customizes the appearance of items in the suggestion list.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -25,6 +25,9 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mention.cs" %}
+{% include code-snippet/markdown-editor/markdown-mention-support/mention.cs %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/controller.cs %}
@@ -36,6 +39,9 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mention.cs" %}
+{% include code-snippet/markdown-editor/markdown-mention-support/mention.cs %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/controller.cs %}

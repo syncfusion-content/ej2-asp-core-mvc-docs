@@ -26,6 +26,9 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Mention.cs" %}
+{% include code-snippet/markdown-editor/markdown-mention-support/mention.cs %}
+{% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/controller.cs %}
 {% endhighlight %}
@@ -36,6 +39,9 @@ When a user types the `@` symbol followed by a character, the Markdown Editor di
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mention.cs" %}
+{% include code-snippet/markdown-editor/markdown-mention-support/mention.cs %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/markdown-editor/markdown-mention-support/controller.cs %}
