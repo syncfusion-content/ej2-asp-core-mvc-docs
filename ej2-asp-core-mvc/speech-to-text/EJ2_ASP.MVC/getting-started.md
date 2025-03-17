@@ -103,7 +103,7 @@ You can use the `Content` property to display the start listening text and `Stop
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speech-to-text/button-setting/demo/rezor %}
+{% include code-snippet/speech-to-text/button-setting/demo/razor %}
 {% endhighlight %}
 {% endtabs %}
 
