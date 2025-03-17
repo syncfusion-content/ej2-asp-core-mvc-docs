@@ -1,26 +1,36 @@
 ---
 layout: post
-title: Custom value to server in ##Platform_Name##  File Manager component | Syncfusion
-description: Learn here all about How to pass custom value to server in Syncfusion ##Platform_Name##  File Manager component of Syncfusion Essential JS 2 and more.
+title: Custom value to server in ##Platform_Name##  File Manager control | Syncfusion
+description: Learn here all about How to pass custom value to server in Syncfusion ##Platform_Name##  File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Manager 
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Pass custom value to server in ##Platform_Name##  File Manager component
+# Pass custom value to server in ##Platform_Name##  File Manager control
 
-The Syncfusion File Manager component allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the [`beforeSend`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforesend), [`beforeDownload`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforedownload) and [`beforeImageLoad`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforeimageload) events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
+The Syncfusion File Manager control allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the **beforeSend**, **beforeDownload** and **beforeImageLoad** events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 
 ## 1. Setting up the File Manager and provider
 
-To create a basic File Manager component, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/react/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
+{% if page.publishingplatform == "aspnet-core" %}
 
-For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/react/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
+To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
+
+For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+To create a basic File Manager control, start by following the easy steps in the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started) guide. This will allow you to manage files and folders on your system, whether they are stored physically or in the cloud.
+
+For connecting the File Manager to a physical file system, check out the [`Physical file provider`](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-system-provider#physical-file-system-provider) section. This part of the documentation will help you configure it correctly.
+
+{% endif %}
 
 ## 2. Handling File Operations 
 
-After setting the File Manager component with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the [`beforeSend`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforesend) event of the File Manager component. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
+After setting the File Manager control with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the [`beforeSend`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforesend) event of the File Manager control. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
 
 The `onBeforeSend` function is designed to enhance security by adding an authorization header to every outgoing AJAX request. Before a request is sent, this function is called, and it attaches the **Authorization** header with the value **User1** to the request. This ensures that the server can verify the request's authenticity and handle it accordingly.
 
