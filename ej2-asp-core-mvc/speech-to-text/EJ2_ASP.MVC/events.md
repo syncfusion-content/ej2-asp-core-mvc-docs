@@ -14,8 +14,8 @@ This section describes the SpeechToText events that will be triggered when appro
 
 |Name|Args|Description|
 |---|---|---|
-|created|EventCallback|Triggers when the SpeechToText control's rendering is fully completed|
-|onStart|StartListeningEventArgs|Triggers when start listening speech recognition|
-|onStop|StopListeningEventArgs|Triggers when stop listening the speech recognition|
-|onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or listening|
-|transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition.|
+|created|-|Triggers when the SpeechToText control's rendering is fully completed|
+|onStart|StartListeningEventArgs|Triggers when the speech recognition begins|
+|onStop|StopListeningEventArgs|Triggers when the speech recognition stops|
+|onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or while listening. For list of possible errors, refer to the [Error handling](./speech-recognition#error-handling) section|
+|transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition|

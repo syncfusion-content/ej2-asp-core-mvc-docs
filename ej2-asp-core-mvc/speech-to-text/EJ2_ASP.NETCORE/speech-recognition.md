@@ -50,6 +50,21 @@ You can use the `disabled` property to disable the SpeechToText, preventing user
 
 You can use the `htmlAttributes` property to assign custom attributes to the SpeechToText control for the button element.
 
+## Error handling
+
+The SpeechToText control handles various errors that may occur during speech recognition. The following table lists the possible errors and their causes:
+
+| Error                | Cause                                                                                        |
+|----------------------|----------------------------------------------------------------------------------------------|
+| `no-speech`            | The microphone did not detect any speech input.                                              |
+| `aborted`              | The speech recognition process was intentionally terminated.                                 |
+| `audio-capture`        | The system was unable to detect a microphone device.                                         |
+| `not-allowed`          | Access to the microphone was denied by the user or browser settings.                         |
+| `service-not-allowed`  | The current context does not permit the use of the speech recognition service.               |
+| `network`              | A network issue is preventing the speech recognition service from functioning.               |
+| `unsupported-browser`  | The browser being used does not support the SpeechRecognition API.                           |
+| `default`              | An unidentified error occurred during the speech recognition process.                        |
+
 ## Browser support
 
 The SpeechToText control relies on the `Speech Recognition API` for processing the speech input. Ensure that the browser supports this API before implementation.
