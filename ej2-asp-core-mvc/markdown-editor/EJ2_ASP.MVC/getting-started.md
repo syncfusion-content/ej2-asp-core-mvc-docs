@@ -107,7 +107,7 @@ Configure the toolbar with the tools using items field of the [ToolbarSettings](
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Rich Text Editor with Toolbar](images/richtexteditor-with-toolbar.png)
+![ASP.NET MVC Markdown Editor with Toolbar](images/markdowneditor-with-toolbar.png)
 
 > `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
