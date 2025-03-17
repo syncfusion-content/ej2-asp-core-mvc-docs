@@ -11,11 +11,11 @@ documentation: ug
 
 # WebApiAdaptor in Syncfusion ASP.NET Core Grid
 
-The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion ASP.NET Core Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
+The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 
 To enable the OData query option for a Web API, please refer to the corresponding [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options), which provides detailed instructions on configuring the endpoint to understand OData-formatted queries.
 
-This section describes a step-by-step process for retrieving data service using `WebApiAdaptor`, then binding it to the Grid to facilitate data and CRUD operations.
+This section describes a step-by-step process for retrieving data service using `WebApiAdaptor`, then binding it to the Syncfusion ASP.NET Core Grid to facilitate data and CRUD operations.
 
 ## Creating a Web API Service
 
@@ -108,10 +108,6 @@ namespace WebApiAdaptor.Controllers
   [ApiController]
   public class OrdersController : ControllerBase
   {
-    /// <summary>
-    /// Retrieves all order records.
-    /// </summary>
-    /// <returns> Returns an object containing a list of orders and the total count of records. </returns>
     [HttpGet]
     public object Get()
     {
@@ -216,7 +212,6 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-
 <ejs-grid id="Grid" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -226,7 +221,6 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -290,10 +284,8 @@ public object Get()
   }
   return new { Items = data, Count = data.Count() };
 }
-
 {% endhighlight %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-
+{% highlight ts tabtitle="Index.cshtml" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -303,7 +295,6 @@ public object Get()
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -364,10 +355,8 @@ public object Get()
     return new { Items = data, Count = data.Count() };
   }
 }
-
 {% endhighlight %}
-{% highlight cshtml tabtitle="Index.cshmtl" %}
-
+{% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" allowFiltering="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -377,7 +366,6 @@ public object Get()
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -428,11 +416,9 @@ public object Get()
   }
   return new { Items = data, Count = data.Count() };
 }
-
 {% endhighlight %}
-{% highlight cshtml tabtitle="Index.cshmtl" %}
-
-<ejs-grid id="Grid" allowSorting="true" height="315">
+{% highlight ts tabtitle="Index.cshmtl" %}
+<ejs-grid id="Grid" allowFiltering="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
@@ -441,7 +427,6 @@ public object Get()
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -463,10 +448,8 @@ public object Get()
     int take = Convert.ToInt32(queryString["$top"]);
     return take != 0 ? new { Items = data.Skip(skip).Take(take).ToList(), Count = data.Count() } : new { Items = data, Count = data.Count() };
 }
-
 {% endhighlight %}
-{% highlight cshtml tabtitle="Index.cshmtl" %}
-
+{% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" allowPaging="true" height="315">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
@@ -476,7 +459,6 @@ public object Get()
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -487,8 +469,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the `WebApiAdapto
 To enable CRUD operations in the Syncfusion Grid within an ASP.NET Core application, follow the below steps:
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshmtl" %}
-
+{% highlight ts tabtitle="Index.cshmtl" %}
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
 <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="WebApiAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -499,7 +480,6 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET Core applicat
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -512,6 +492,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
 ![WebApiAdaptor-Insert-record](../images/adaptors/webapiAdaptors/webapiadaptor-insert-record.png)
 
 ```cs
+
 [HttpPost]
 /// <summary>
 /// Inserts a new data item into the data collection.
@@ -532,6 +513,7 @@ Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpP
 ![WebApiAdaptor-Update-record](../images/adaptors/webapiAdaptors/webapiadaptor-update-record.png)
 
 ```cs
+
 [HttpPut]
 /// <summary>
 /// Update a existing data item from the data collection.
@@ -560,6 +542,7 @@ To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` m
 ![WebApiAdaptor-Delete-record](../images/adaptors/webapiAdaptors/webapiadaptor-delete-record.png)
 
 ```cs
+
 [HttpDelete("{id}")]
 /// <summary>
 /// Remove a specific data item from the data collection.
