@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core SpeechToText Control
+# Getting Started with ASP.NET Core SpeechToText control
 
 This section briefly explains about how to include `ASP.NET Core SpeechToText` control in your ASP.NET Core application using Visual Studio.
 
@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core SpeechToText Control](images/speech-to-text-control.png)
 
-## Add button content
+## Adding button content
 
 You can use the `content` property to display the start listening text and `stopContent` to display the stop listening text by using the `e-speechtotext-buttonSettings` tag helper.
 
