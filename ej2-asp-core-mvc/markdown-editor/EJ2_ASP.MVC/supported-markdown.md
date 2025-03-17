@@ -8,9 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Supported Markdown Syntax in  ##Platform_Name## Markdown Editor Control
+# Supported Markdown Syntax in ##Platform_Name## Markdown Editor Control
 
-The Markdown Editor supports various commands to format markdown content. Below is a list of supported commands along with their syntax and descriptions.
+The Markdown Editor supports various Markdown syntax commands for text formatting, lists, links, tables, and more. This guide provides an overview of all supported commands along with their syntax and usage.
+
+## Markdown Syntax Guide for ##Platform_Name## Markdown Editor
+
+The following table lists the Markdown commands supported by the Markdown Editor:
 
 |Commands|Syntax| Description |
 |--------|------------------------------------------|------------|

@@ -42,7 +42,7 @@ This ensures that users can start formatting and adding content immediately.
 {% endtabs %}
 {% endif %}
 
-## Changing default content 
+## Changing default content
 
 By default, when you insert a table, it comes with predefined column headers and structure. However, you can customize the table’s default content, including the heading and column names, to match your requirements.
 
