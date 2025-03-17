@@ -12,31 +12,31 @@ documentation: ug
 
 ## Configuring buttonSettings
 
-You can use the `buttonSettings` property to customize the appearance and behavior of the start and stop buttons used for speech recognition.
+You can use the `buttonSettings` property to customize the appearance of the `start` and `stop` buttons in the speech to text conversion.
 
-### Setting start content
+### Setting start content  
 
-You can use the `content` property to define text content to be displayed when the SpeechToText button is in the "start" state.
+You can use the `content` property to define text content for the listening `start` state in the SpeechToText button.
 
 ### Setting stop content
 
-You can use the `stopContent` property to define text content to be displayed when the SpeechToText button is in the "stop" state.
+You can use the `stopContent` property to define text content for the listening `stop` state in the SpeechToText button.
 
 ### Setting iconcss
 
-You can use the `iconCss` property to apply a CSS class that defines the icon appearance when the SpeechToText button is in the 'start' state.
+You can use the `iconCss` property to apply a CSS class to customize the icon appearance for the listening `start` state.
 
 ### Setting stop iconcss
 
-You can use the `stopIconCss` property to apply a CSS class that defines the icon appearance when the SpeechToText button is in the 'stop state.
+You can use the `stopIconCss` property to apply a CSS class to customize the icon appearance for the listening `stop` state.
 
 ### Setting iconPosition
 
-You can display the icon on the top, bottom, left, or right side of the button text content using the `iconPosition` property.
+You can display the icon on the `top`, bottom, left, or right side of the button text content using the `iconPosition` property.
 
 ### Setting primary
 
-You can use the `isPrimary` property to designate the button as a primary action button.
+You can use the `isPrimary` property to configure the button as a primary action button.
 
 ## Configuring tooltipSettings
 
@@ -44,11 +44,11 @@ You can use the `tooltipSettings` property to customize the content and position
 
 ### Setting start content
 
-You can use the `content` property to customize the content to be displayed in the tooltip when the speech recognition process begins.
+You can use the `content` property to customize the content to be displayed in the tooltip when the speech recognition begins.
 
 ### Setting stop content
 
-You can use the `stopContent` property to customize the tooltip text displayed when the stop button is hovered over.
+You can use the `stopContent` property to customize the stop button tooltip text which is displayed on-hover.
 
 ### Setting tooltip position
 

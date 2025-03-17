@@ -12,8 +12,8 @@ documentation: ug
 
 ## Startlistening
 
-You can use the `startListening` public method to initiate speech recognition. This begins the audio capture and starts processing spoken input.
+You can use the `startListening` public method to initiate the speech recognition and begins the conversion of the speech to text.
 
 ## Stoplistening
 
-You can use the `stopListening` public method to stop capturing audio, finalizing the speech recognition process.
+You can use the `stopListening` public method to stop capturing your speech and ends the speech recognition.

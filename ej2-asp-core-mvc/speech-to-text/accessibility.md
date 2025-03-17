@@ -52,7 +52,7 @@ The following keyboard shortcuts are supported by the SpeechToText control.
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Space</kbd> | When the SpeechToText button has focus, pressing the space key changes the state of the button. |
+| <kbd>Enter</kbd>/<kbd>Space</kbd> | When the SpeechToText button has focus, pressing the enter/space key changes the state of the button. |
 
 ## Ensuring accessibility
 

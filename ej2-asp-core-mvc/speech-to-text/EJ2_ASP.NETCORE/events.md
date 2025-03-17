@@ -12,22 +12,10 @@ documentation: ug
 
 This section describes the SpeechToText events that will be triggered when appropriate actions are performed. The following events are available in the SpeechToText control.
 
-## created
-
-The SpeechToText control triggers the created event when the control rendering is completed.
-
-## onStart 
-
-The `onStart` event is triggered when speech recognition begins listening for audio input in the SpeechToText control.
-
-## onStop
-
-The `onStop` event is triggered when speech recognition stops listening for audio input in the SpeechToText control.
-
-## onError
-
-The `onError` event is triggered when an error occurs during speech recognition or listening in the SpeechToText control.
-
-## transcriptChanged
-
-The `transcriptChanged` event is triggered when an error occurs during speech recognition or listening in the SpeechToText control.
+|Name|Args|Description|
+|---|---|---|
+|created|EventCallback|Triggers when the SpeechToText control's rendering is fully completed|
+|onStart|StartListeningEventArgs|Triggers when start listening speech recognition|
+|onStop|StopListeningEventArgs|Triggers when stop listening the speech recognition|
+|onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or listening|
+|transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition.|

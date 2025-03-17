@@ -12,16 +12,16 @@ documentation: ug
 
 ## Setting button styles
 
-The SpeechToText supports the following predefined styles that can be defined using the cssClass property. You can customize by replacing the cssClass property with the below defined class. 
+The SpeechToText control supports the following predefined styles that can be defined using the `cssClass` property. You can customize by adding the cssClass property with the below defined class. 
 
 | cssClass | Description | 
 | -------- | -------- | 
-| e-primary | Used to represent a primary action. | 
-| e-outline | Used to represent an appearance of button with outline. | 
-| e-info | Used to represent an informative action. | 
-| e-success | Used to represent a positive action. | 
-| e-warning | Used to represent an action with caution. | 
-| e-danger | Used to represent a negative action. |
+| `e-primary` | Used to represent a primary action. | 
+| `e-outline` |  Used to represent an appearance of button with outline. | 
+| `e-info` |  Used to represent an informative action. | 
+| `e-success` | Used to represent a positive action. | 
+| `e-warning` | Used to represent an action with caution. | 
+| `e-danger` | Used to represent a negative action. |
 
 ## Setting cssclass
 

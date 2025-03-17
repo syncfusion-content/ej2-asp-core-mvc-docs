@@ -8,16 +8,38 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Security concerns and practices in ##Platform_Name## SpeechToText control
+# Security concerns in ##Platform_Name## SpeechToText control
 
-## Online Dependency
+## Online dependency
 
-The Speech-to-text control may require an active internet connection. If an internet connection is unavailable, an offline fallback should be considered.
+The SpeechToText control typically relies on browser-based APIs, which may require an active internet connection. If an internet connection is unavailable, an offline fallback should be considered.
 
-## Potential Security Risks
+## Potential security risks
 
-Speech recognition may transmit audio data to external servers, raising privacy concerns. Ensure that user data is processed securely.
+Understanding the risks associated with speech recognition.
 
-## Mitigation Strategies & alternatives
+### Data transmission to external servers
 
-Consider using offline speech recognition options or encrypting data during transmission to protect user privacy.
+The audio data is sent to third-party servers (e.g., Google, Microsoft) for processing. So the sensitive spoken information might be exposed to external entities.
+
+### Privacy concerns
+
+Some services may store user voice data for analytics or improving AI models. Users should verify browser and service policies.
+
+### Man-in-the-Middle (MITM) attacks
+
+Without HTTPS, attackers could intercept audio data during transmission.
+
+### Browser and permission exploits
+
+Malicious websites may misuse permissions to eavesdrop on conversations. Explicit user consent is essential before enabling microphone access.
+
+## Mitigation strategies
+
+Ensuring security and privacy when using speech recognition and how to mitigate them.
+
+* Use the control only in trusted environments.
+* Inform users about third-party data processing.
+* Enforce HTTPS to secure audio transmission.
+* Request microphone permissions only when required and revoke them afterward.
+* Review browser API privacy policies for speech recognition.

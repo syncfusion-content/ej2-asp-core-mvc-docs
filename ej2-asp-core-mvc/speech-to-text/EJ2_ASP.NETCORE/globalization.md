@@ -12,7 +12,7 @@ documentation: ug
 
 ## Localization
 
-The SpeechToText can be localized to any culture by defining the text of the SpeechToText in the corresponding culture. The default locale of the SpeechToText is `en` (English). The following table represents the default text of the SpeechToText in `en` culture.
+The SpeechToText can be localized to any culture by defining the text in the corresponding culture. The default locale of the SpeechToText is `en-US` (English). The following table represents the default text of the SpeechToText in `en-US` culture.
 
 |KEY|Text|
 |----|----|
