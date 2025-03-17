@@ -30,7 +30,7 @@ For connecting the File Manager to a physical file system, check out the [`Physi
 
 ## 2. Handling File Operations 
 
-After setting the File Manager control with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the [`beforeSend`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforesend) event of the File Manager control. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
+After setting the File Manager control with the physical file system provider, you can handle file operations by passing custom values to the server. To pass custom values during the **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search** and **Upload** operations, utilize the **beforeSend** event of the File Manager control. This event allows you to modify the request before it is sent to the server. You can add custom headers to the request to pass additional information to the server.
 
 The `onBeforeSend` function is designed to enhance security by adding an authorization header to every outgoing AJAX request. Before a request is sent, this function is called, and it attaches the **Authorization** header with the value **User1** to the request. This ensures that the server can verify the request's authenticity and handle it accordingly.
 
@@ -112,7 +112,7 @@ public class FileManagerController : Controller
 
 ## 3. Handling Download Operation
 
-For the **download** operation, use the [`beforeDownload`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforedownload) event, setting [`useFormPost`](https://ej2.syncfusion.com/react/documentation/api/file-manager/beforeDownloadEventArgs/#useformpost) as false to use a fetch request to send the custom header in beforesend event. Here an **Authorization** header is appended to fetch request headers with the value **User1**.
+For the **download** operation, use the **beforeDownload** event, setting **useFormPost** as false to use a fetch request to send the custom header in beforesend event. Here an **Authorization** header is appended to fetch request headers with the value **User1**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -181,7 +181,7 @@ public object Download([FromBody] FileManagerDirectoryContent args)
 
 ## 4. For GetImage Operation
 
-For the **GetImage** operation, use the [`beforeImageLoad`](https://ej2.syncfusion.com/react/documentation/api/file-manager/#beforeimageload) event to pass custom value. Since the **GetImage** operation doesn't support custom headers in HTTP requests, pass the custom values along with **imageUrl** using query parameters instead.
+For the **GetImage** operation, use the **beforeImageLoad** event to pass custom value. Since the **GetImage** operation doesn't support custom headers in HTTP requests, pass the custom values along with **imageUrl** using query parameters instead.
 
 {% if page.publishingplatform == "aspnet-core" %}
 ```ts
