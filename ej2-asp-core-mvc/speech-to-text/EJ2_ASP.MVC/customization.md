@@ -14,7 +14,7 @@ documentation: ug
 
 You can use the `buttonSettings` property to customize the appearance and behavior of the start and stop buttons used for speech recognition.
 
-### Setting start content  
+### Setting start content
 
 You can use the `content` property to define text content to be displayed when the SpeechToText button is in the "start" state.
 
