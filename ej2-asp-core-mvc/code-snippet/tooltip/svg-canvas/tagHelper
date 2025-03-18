@@ -75,66 +75,66 @@
 </script>
 
 <style>
-@@media (max-width: 500px) {
-  #rectShape {
+  @@media (max-width: 500px) {
+    #rectShape {
+      /* csslint ignore:start */
+      left: -11% !important;
+      /* csslint ignore:end */
+    }
+    #ellipseShape {
+      /* csslint ignore:start */
+      left: -20% !important;
+      /* csslint ignore:end */
+    }
+    #polyShape {
+      /* csslint ignore:start */
+      left: 28% !important;
+      /* csslint ignore:end */
+    }
+    #circleShape {
+      /* csslint ignore:start */
+      left: 68% !important;
+      /* csslint ignore:end */
+    }
+    #triShape {
+      /* csslint ignore:start */
+      left: 65% !important;
+      /* csslint ignore:end */
+    }
+  }
+
+  @@media (min-width: 500px) and (max-width: 600px) {
+    #triShape {
+      /* csslint ignore:start */
+      left: 70% !important;
+      /* csslint ignore:end */
+    }
+  }
+
+  #container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .e-tooltip-css {
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.25));
+  }
+
+  #control-container {
     /* csslint ignore:start */
-    left: -11% !important;
+    padding: 0 !important;
     /* csslint ignore:end */
   }
-  #ellipseShape {
-    /* csslint ignore:start */
-    left: -20% !important;
-    /* csslint ignore:end */
+
+  #box {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    box-sizing: border-box;
+    height: 320px;
+    position: relative;
   }
-  #polyShape {
-    /* csslint ignore:start */
-    left: 28% !important;
-    /* csslint ignore:end */
+
+  .circletool {
+    position: absolute;
   }
-  #circleShape {
-    /* csslint ignore:start */
-    left: 68% !important;
-    /* csslint ignore:end */
-  }
-  #triShape {
-    /* csslint ignore:start */
-    left: 65% !important;
-    /* csslint ignore:end */
-  }
-}
-
-@@media (min-width: 500px) and (max-width: 600px) {
-  #triShape {
-    /* csslint ignore:start */
-    left: 70% !important;
-    /* csslint ignore:end */
-  }
-}
-
-#container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.e-tooltip-css {
-  filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.25));
-}
-
-#control-container {
-  /* csslint ignore:start */
-  padding: 0 !important;
-  /* csslint ignore:end */
-}
-
-#box {
-  border: 1px solid #dddddd;
-  background: #ffffff;
-  box-sizing: border-box;
-  height: 320px;
-  position: relative;
-}
-
-.circletool {
-  position: absolute;
-}
 </style>

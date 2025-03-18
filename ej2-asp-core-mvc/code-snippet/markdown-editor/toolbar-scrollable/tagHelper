@@ -1,0 +1,3 @@
+<ejs-richtexteditor id="markdown-editor" editorMode="Markdown" value="@ViewBag.value" type="Scrollable">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.tools"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>

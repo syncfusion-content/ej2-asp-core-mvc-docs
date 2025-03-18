@@ -48,8 +48,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-filter.jpg)
 
-
-### Image filtering event 
+## Image filtering event 
 
 The [`imageFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ImageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 

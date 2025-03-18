@@ -1,5 +1,37 @@
 @using Syncfusion.EJ2
 @using Syncfusion.EJ2.Inputs
-     @Html.EJS().Slider("default").Value("30").Render()
-     @Html.EJS().Slider("minrange").Type(SliderType.MinRange).Value("30").Render()
-     @Html.EJS().Slider("range").Value(ViewBag.range).Type(SliderType.Range).Render()
+    
+<div class="content-wrapper">
+    <div class="sliderwrap">
+        <label class="labeltext userselect">Default Slider</label>
+        @Html.EJS().Slider("default").Value("30").Render()
+    </div>
+    <div class="sliderwrap">
+        <label class="labeltext userselect">MinRange Slider</label>
+        @Html.EJS().Slider("minrange").Type(SliderType.MinRange).Value("30").Render()
+    </div>
+    <div class="sliderwrap">
+        <label class="labeltext userselect">Range Slider</label>
+        @Html.EJS().Slider("range").Value(ViewBag.range).Type(SliderType.Range).Render()
+    </div>
+</div>
+
+<style>
+
+    .content-wrapper {
+        width: 40%;
+        margin: 0 auto;
+        min-width: 185px;
+    }
+
+    .sliderwrap {
+        margin-top: 40px;
+    }
+
+    .sliderwrap label {
+        padding-bottom: 26px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 15px;
+    }
+</style>
