@@ -18,10 +18,10 @@
         mdsource.addEventListener('click', function (e) {
             fullPreview();
             if (e.currentTarget.classList.contains('e-active')) {
-                rteObj.disableToolbarItem(['CreateTable']);
+                rteObj.disableToolbarItem(['Image']);
             }
             else {
-                rteObj.enableToolbarItem(['CreateTable']);
+                rteObj.enableToolbarItem(['Image']);
             }
         });
     }
