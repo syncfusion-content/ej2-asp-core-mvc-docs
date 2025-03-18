@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("editor").EditorMode(EditorMode.Markdown).ToolbarSettings(e => e.Items((object)ViewBag.tools).Type(ToolbarType.Expand)).Value(ViewBag.value).Render()
