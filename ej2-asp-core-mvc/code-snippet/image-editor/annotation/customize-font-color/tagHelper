@@ -19,7 +19,7 @@
 
     function shapeChanging(args) {
         if (args.currentShapeSettings.type === 'Text') {
-            args.currentShapeSettings.color = 'Red';
+            args.currentShapeSettings.color = 'red';
             args.currentShapeSettings.fontFamily = 'Times New Roman';
         }
     }
