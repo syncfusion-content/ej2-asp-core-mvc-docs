@@ -132,7 +132,7 @@ For the **download** operation, use the **beforeDownload** event, setting **useF
 function beforeDownload(args){
   args.useFormPost = false;
   if (args.ajaxSettings) {
-    (args.ajaxSettings as any).beforeSend = function (args: any) {
+    args.ajaxSettings.beforeSend = function (args) {
       args.fetchRequest.headers.append('Authorization', 'User1');
     };
   }
@@ -158,7 +158,7 @@ function beforeDownload(args){
 function beforeDownload(args){
   args.useFormPost = false;
   if (args.ajaxSettings) {
-    (args.ajaxSettings as any).beforeSend = function (args: any) {
+    args.ajaxSettings.beforeSend = function (args) {
       args.fetchRequest.headers.append('Authorization', 'User1');
     };
   }
