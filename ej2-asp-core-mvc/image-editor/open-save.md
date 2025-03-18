@@ -119,7 +119,7 @@ User can easily open images in the Image Editor from Blob storage. This method a
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-open-blob.png)
+![ImageEditor Sample](images/image-editor-open-blob.jpg)
 
 ### Open an image from File Uploader
 
