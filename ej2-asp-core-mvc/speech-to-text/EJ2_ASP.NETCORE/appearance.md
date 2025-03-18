@@ -10,7 +10,7 @@ documentation: ug
 
 # Appearance in ##Platform_Name## SpeechToText control
 
-## Configuring button
+## Customizing the button
 
 You can use the `buttonSettings` property to customize the appearance of the start and stop buttons in the speech to text conversion.
 
@@ -38,7 +38,20 @@ You can display the icon on the `top`, `bottom`, `left`, or `right` side of the 
 
 You can use the `isPrimary` property to configure the button as a primary action button.
 
-## Configuring tooltips
+Below code sample demonstrates how to configure the button with above mentioned properties.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ButtonSettings.cs" %}
+{% include code-snippet/speech-to-text/appearance/buttonSettings/buttonSettings.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![buttonSettings](images/buttonSettings.png)
+
+## Customizing the tooltips
 
 You can use the `tooltipSettings` property to customize the content and positions of the tooltip.
 
@@ -53,6 +66,19 @@ You can use the `stopContent` property to customize the stop button tooltip text
 ### Setting tooltip position
 
 You can use the `position` property to determine the placement of tooltips relative to the button.
+
+Below code sample demonstrates how to configure the tooltip with above mentioned properties.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TooltipSettings.cs" %}
+{% include code-snippet/speech-to-text/appearance/tooltipSettings/tooltipSettings.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![tooltipSettings](images/tooltipSettings.png)
 
 ## Setting button styles
 
@@ -70,3 +96,14 @@ The SpeechToText control supports the following predefined styles that can be de
 ## Setting cssclass
 
 You can use the `cssClass` property to customize the appearance of the SpeechToText control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speech-to-text/appearance/cssclass/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Cssclass.cs" %}
+{% include code-snippet/speech-to-text/appearance/cssclass/cssclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![cssclass](images/cssclass.png)

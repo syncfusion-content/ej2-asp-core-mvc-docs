@@ -19,3 +19,14 @@ This section describes the SpeechToText events that will be triggered when appro
 |onStop|StopListeningEventArgs|Triggers when the speech recognition stops|
 |onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or while listening. For list of possible errors, refer to the [Error handling](./speech-recognition#error-handling) section|
 |transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition|
+
+The following example demonstrates how to configure the SpeechToText events.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/speech-to-text/events/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Events.cs" %}
+{% include code-snippet/speech-to-text/events/events.cs %}
+{% endhighlight %}
+{% endtabs %}

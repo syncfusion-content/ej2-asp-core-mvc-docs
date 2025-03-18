@@ -2,7 +2,7 @@
 
 <div id='speechtotext-container'>
     <ejs-speechtotext id="speech-to-text" transcriptChanged="onTranscriptChanged">
-        <e-speechtotext-buttonSettings content="Start Listening" stopContent="Stop Listening"></e-speechtotext-buttonSettings>
+        <e-speechtotext-tooltipsettings position="BottomRight" content="Click the button to start recognition" stopContent="Click the button to stop recognition"></e-speechtotext-tooltipsettings>
     </ejs-speechtotext>
     <ejs-textarea id="output-textarea" rows="5" cols="50" value="" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
 </div>
