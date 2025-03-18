@@ -12,19 +12,19 @@ documentation: ug
 
 ## Retrieving transcripts
 
-You can use the `transcript` property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
+You can use the `Transcript` property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
 
 ## Setting language
 
-You can use the `lang` property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
+You can use the `Lang` property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
 
 ## Allowing interim results
 
-You can use the `allowInterimResults` property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
+You can use the `AllowInterimResults` property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
 
 ## Managing listening state
 
-You can use the `listeningState` property to manage the listening state of the control. The possible values are `Inactive`, `Listening` and `Stopped`. By default, the value is `Inactive`.
+You can use the `ListeningState` property to manage the listening state of the control. The possible values are `Inactive`, `Listening` and `Stopped`. By default, the value is `Inactive`.
 
 ### Inactive
 
@@ -40,15 +40,15 @@ Denotes the speech recognition has ended, and no further speech is being process
 
 ## Show or hide tooltip
 
-You can use the `showTooltip` property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
+You can use the `ShowTooltip` property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
 
 ## Setting disabled
 
-You can use the `disabled` property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
+You can use the `Disabled` property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
 
 ## Setting html attributes
 
-You can use the `htmlAttributes` property to assign custom attributes to the SpeechToText control for the button element.
+You can use the `HtmlAttributes` property to assign custom attributes to the SpeechToText control for the button element.
 
 ## Error handling
 

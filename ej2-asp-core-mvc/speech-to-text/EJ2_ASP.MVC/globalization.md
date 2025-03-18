@@ -31,4 +31,4 @@ The SpeechToText can be localized to any culture by defining the text in the cor
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the SpeechToText control from right to left by setting the `enableRtl` property to true.
+RTL provides an option to switch the text direction and layout of the SpeechToText control from right to left by setting the `EnableRtl` property to true.

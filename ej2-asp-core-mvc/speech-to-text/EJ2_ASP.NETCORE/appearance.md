@@ -10,7 +10,7 @@ documentation: ug
 
 # Appearance in ##Platform_Name## SpeechToText control
 
-## Configuring button
+## Customizing the button
 
 You can use the `buttonSettings` property to customize the appearance of the start and stop buttons in the speech to text conversion.
 
@@ -38,7 +38,7 @@ You can display the icon on the `top`, `bottom`, `left`, or `right` side of the 
 
 You can use the `isPrimary` property to configure the button as a primary action button.
 
-## Configuring tooltips
+## Customizing the tooltips
 
 You can use the `tooltipSettings` property to customize the content and positions of the tooltip.
 
