@@ -1,10 +1,8 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='speechtotext-container'>
-    <ejs-speechtotext id="speech-to-text" transcriptChanged="onTranscriptChanged">
-        <e-speechtotext-buttonSettings content="Start Listening" stopContent="Stop Listening"></e-speechtotext-buttonSettings>
-    </ejs-speechtotext>
-    <ejs-textarea id="output-textarea" rows="5" cols="50" value="" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
+    @Html.EJS().SpeechToText("speech-to-text").AllowInterimResults(false).TranscriptChanged("onTranscriptChanged").Render()
+    @Html.EJS().TextArea("output-textarea").Rows(5).Cols(50).Value("").ResizeMode(Resize.None).Placeholder("Transcript will be displayed here once speech recognition is complete.").Render()
 </div>
 
 <script>
