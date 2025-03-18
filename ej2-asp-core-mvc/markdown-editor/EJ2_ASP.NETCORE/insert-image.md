@@ -10,7 +10,9 @@ documentation: ug
 
 # Insert Images in ##Platform_Name## Markdown Editor Control
 
-The Syncfusion Angular Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
+The Markdown Editor allows users to insert images using the toolbar. This feature enables embedding images from online sources into the editor content.
+
+## Steps to Insert an Image  
 
 Follow these steps to add an image in the Markdown editor:
 
@@ -20,7 +22,7 @@ Follow these steps to add an image in the Markdown editor:
 
 The image will be added to the editor content at the cursor position.
 
-The following example demonstrates how to enable image insertion in the Syncfusion ASP.NET Core Markdown Editor.
+The following example demonstrates how to enable image insertion in the Markdown Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
