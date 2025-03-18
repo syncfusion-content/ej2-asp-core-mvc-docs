@@ -4,7 +4,7 @@
             <e-splitter-pane size="50%" resizable="true" cssClass="pane1" min="40%">
                 <e-content-template>
                     <div class="content">
-                        <ejs-richtexteditor id="defaultRTE" height="448px" value="@ViewBag.value" editorMode="Markdown" saveInterval=1 maxLength=5000 showCharCount="true" change="onChange" actionComplete="updateValue" created="onCreate" placeholder="Enter your text here...">
+                        <ejs-richtexteditor id="markdown-editor" height="448px" value="@ViewBag.value" editorMode="Markdown" saveInterval=1 maxLength=5000 showCharCount="true" change="onChange" actionComplete="updateValue" created="onCreate" placeholder="Enter your text here...">
                             <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
                         </ejs-richtexteditor>
                     </div>
