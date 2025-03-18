@@ -2,7 +2,7 @@
 <div id="rteSection">
     @Html.EJS().RichTextEditor("customtool").Created("created").ToolbarSettings(e => e.Items((object)ViewBag.items)).Value(ViewBag.value).Render()
 
-    @Html.EJS().Dialog("customTbarDialog").Visible(false).Header("Special Characters").Created("onDialogCreate").ZIndex(1000).ShowCloseIcon(false).IsModal(true).cssClass('e-rte-elements').OverlayClick("dialogOverlay").Buttons(e =>
+    @Html.EJS().Dialog("customTbarDialog").Visible(false).Header("Special Characters").Created("onDialogCreate").ZIndex(1000).ShowCloseIcon(false).IsModal(true).CssClass("e-rte-elements").OverlayClick("dialogOverlay").Buttons(e =>
     {
     e.ButtonModel(ViewBag.button).Click("onInsert").Add();
     e.ButtonModel(ViewBag.button1).Click("dialogOverlay").Add();
