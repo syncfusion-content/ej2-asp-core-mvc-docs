@@ -196,3 +196,7 @@ The following list of properties and its values are used in the Image  Editor.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/localization.jpg)
