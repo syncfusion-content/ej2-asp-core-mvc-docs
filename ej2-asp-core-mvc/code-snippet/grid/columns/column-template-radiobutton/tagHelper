@@ -1,0 +1,41 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="312px" queryCellInfo="initializeRadioButtons">
+	<e-grid-columns>
+		<e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+		<e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+		<e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+		<e-grid-column field="OrderDate" headerText="Order Date" format="yMd" width="150"></e-grid-column>
+		<e-grid-column field="OrderStatus" headerText="Order Status" template="#columnTemplate" width="200"></e-grid-column>
+	</e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="columnTemplate">
+	<div style="display: flex; flex-direction: column; align-items: start; gap: 5px;">
+		<input type='radio' class='order-status-radio' data-status='Pending' />
+		<input type='radio' class='order-status-radio' data-status='Confirmed' />
+		<input type='radio' class='order-status-radio' data-status='Shipped' />
+		<input type='radio' class='order-status-radio' data-status='Cancelled' />
+	</div>
+</script>
+
+<script>
+	function initializeRadioButtons(args) {
+		if (args.column.field === 'OrderStatus') {
+			let orderStatus = args.data['OrderStatus']; // Get current row status.
+			let radioButtons = args.cell.querySelectorAll('.order-status-radio');
+			radioButtons.forEach((radio) => {
+				let status = radio.getAttribute('data-status');
+				let radioButton = new ej.buttons.RadioButton({
+					label: status,
+					name: `orderStatus-${args.data['OrderID']}`, // Unique name per row.
+					checked: status === orderStatus
+				});
+				radioButton.appendTo(radio);
+			});
+		}
+	}
+</script>
