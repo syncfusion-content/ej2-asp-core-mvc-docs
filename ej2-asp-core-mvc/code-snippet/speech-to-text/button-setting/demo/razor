@@ -1,5 +1,25 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='speechtotext-container'>
-    @Html.EJS().SpeechToText("speech-to-text").ButtonSettings(new SpeechToTextButtonSettings { Content = "Start Listening", StopContent = "Stop Listening" }).Render()
+    @Html.EJS().SpeechToText("speech-to-text").TranscriptChanged("onTranscriptChanged").ButtonSettings(new SpeechToTextButtonSettings { Content = "Start Listening", StopContent = "Stop Listening" }).Render()
+    @Html.EJS().TextArea("output-textarea").Rows(5).Cols(50).Value("").Created("onTextAreaCreated").ResizeMode(Resize.None).Placeholder("Transcribed text will be shown here...").Render()
 </div>
+
+<script>
+    var textareaObj;
+    function onTextAreaCreated() {
+        textareaObj = ej.base.getComponent(document.getElementById("output-textarea"), "textarea");
+    }
+    function onTranscriptChanged(args) {
+        textareaObj.value = args.transcript;
+    }
+</script>
+
+<style>
+    #speechtotext-container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
