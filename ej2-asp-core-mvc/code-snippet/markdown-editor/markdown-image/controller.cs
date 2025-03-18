@@ -9,7 +9,7 @@ public class HomeController : Controller
             template = "<button id='preview-code' class='e-tbar-btn e-control e-btn e-icon-btn'>" +
 "<span class='e-btn-icon e-md-preview e-icons'></span></button>"
         };
-        ViewBag.items = new[] { "CreateTable", tools1 };
+        ViewBag.items = new[] { "Image", tools1 };
 
         ViewBag.value = @"In Rich Text Editor , you click the toolbar buttons to format the words and the changes are visible immediately. 
 Markdown is not like that. When you format the word in Markdown format, you need to add Markdown syntax to the word to indicate which words 

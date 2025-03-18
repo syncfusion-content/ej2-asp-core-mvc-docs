@@ -1,14 +1,19 @@
-<div class="control-wrapper">
-    <div class="control-section">
-        @Html.EJS().RichTextEditor("markdown").EditorMode(EditorMode.Markdown).ToolbarSettings(e => e.Items((object)ViewBag.items)).Value((string)ViewBag.value).Created("created").Render()
-    </div>
-</div>
+<ejs-richtexteditor id="markdown" value="@ViewBag.value" editorMode="Markdown" created="created">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
 
 <script type="text/javascript">
     var rteObj, textArea, mdsource;
     function created() {
         rteObj = this;
-        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
+        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({
+            listTags: { 'OL': '1., 2., 3.', 'UL': '+ ' },
+            formatTags: {
+                'Blockquote': '> '
+            },
+            selectionTags: { 'Bold': '__', 'Italic': '_' }
+        
+        });
         rteObj.dataBind();
         textArea = rteObj.contentModule.getEditPanel();
         textArea.addEventListener('keyup', function (e) {
@@ -18,10 +23,14 @@
         mdsource.addEventListener('click', function (e) {
             fullPreview();
             if (e.currentTarget.classList.contains('e-active')) {
-                rteObj.disableToolbarItem(['CreateTable']);
+                rteObj.disableToolbarItem(["Bold", "Italic", "StrikeThrough", "|", "SuperScript",
+                    "SubScript", "Formats", "OrderedList", "UnorderedList" , "|", "CreateLink", "Image", "CreateTable", "|",
+                    "Undo", "Redo"]);
             }
             else {
-                rteObj.enableToolbarItem(['CreateTable']);
+                rteObj.enableToolbarItem(["Bold", "Italic", "StrikeThrough", "|", "SuperScript",
+                    "SubScript", "Formats", "OrderedList", "UnorderedList" , "|", "CreateLink", "Image", "CreateTable", "|",
+                    "Undo", "Redo"]);
             }
         });
     }
@@ -67,6 +76,7 @@
         }
     }
 </script>
+
 <style>
     .e-richtexteditor textarea.e-content {
         float: left;

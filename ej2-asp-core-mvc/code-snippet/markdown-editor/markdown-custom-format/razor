@@ -8,7 +8,14 @@
     var rteObj, textArea, mdsource;
     function created() {
         rteObj = this;
-        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
+        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({
+            listTags: { 'OL': '1., 2., 3.', 'UL': '+ ' },
+            formatTags: {
+                'Blockquote': '> '
+            },
+            selectionTags: { 'Bold': '__', 'Italic': '_' }
+        
+        });
         rteObj.dataBind();
         textArea = rteObj.contentModule.getEditPanel();
         textArea.addEventListener('keyup', function (e) {
@@ -18,10 +25,14 @@
         mdsource.addEventListener('click', function (e) {
             fullPreview();
             if (e.currentTarget.classList.contains('e-active')) {
-                rteObj.disableToolbarItem(['CreateTable']);
+                rteObj.disableToolbarItem(["Bold", "Italic", "StrikeThrough", "|", "SuperScript",
+                    "SubScript", "Formats", "OrderedList", "UnorderedList" , "|", "CreateLink", "Image", "CreateTable", "|",
+                    "Undo", "Redo"]);
             }
             else {
-                rteObj.enableToolbarItem(['CreateTable']);
+                rteObj.enableToolbarItem(["Bold", "Italic", "StrikeThrough", "|", "SuperScript",
+                    "SubScript", "Formats", "OrderedList", "UnorderedList" , "|", "CreateLink", "Image", "CreateTable", "|",
+                    "Undo", "Redo"]);
             }
         });
     }

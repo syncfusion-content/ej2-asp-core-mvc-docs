@@ -1,11 +1,28 @@
-<div class="control-wrapper">
-    <div class="control-section">
-        @Html.EJS().RichTextEditor("markdown").EditorMode(EditorMode.Markdown).ToolbarSettings(e => e.Items((object)ViewBag.items)).Value((string)ViewBag.value).Created("created").Render()
-    </div>
-</div>
+@{
+    var mentionData = new EditorMentionUser().GetUserData();
+}
+<ejs-richtexteditor id="defaultmarkdown" value="@ViewBag.value" height="250px" editorMode="Markdown"  created="created" placeholder="Enter your text here...">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
+<ejs-mention id="editorMention" dataSource="@mentionData" allowSpaces="true" popupHeight="200px" popupWidth="250px" sortOrder="Ascending"
+             target="#defaultmarkdown_editable-content" created="mentionCreated"
+             itemTemplate="<div class='editor-mention-item-template'>
+                    <div class='em-header'>
+                        <div class='em-avatar' style='background-color: ${BgColor}; color: ${Color};'>
+                            <div class='em-initial'>${Initial}</div>
+                        </div>
+                    </div>
+                    <div class='em-content'>
+                        <div class='em-name'>${Name}</div>
+                        <div class='em-email'>${Email}</div>
+                    </div>
+                </div>"
+             displayTemplate="[@@${Name}](mailto:${Email})">
+    <e-mention-fields text="Name"></e-mention-fields>
+</ejs-mention>
 
 <script type="text/javascript">
-    var rteObj, textArea, mdsource;
+    var rteObj, textArea, mdsource, mentionObj;
     function created() {
         rteObj = this;
         rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
@@ -18,10 +35,12 @@
         mdsource.addEventListener('click', function (e) {
             fullPreview();
             if (e.currentTarget.classList.contains('e-active')) {
-                rteObj.disableToolbarItem(['CreateTable']);
+                rteObj.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', 'OrderedList',
+                    'UnorderedList', 'CreateLink', 'Image', 'Formats', 'Undo', 'Redo', 'CreateTable', 'SuperScript', 'SubScript']);
             }
             else {
-                rteObj.enableToolbarItem(['CreateTable']);
+                rteObj.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', 'OrderedList',
+                    'UnorderedList', 'CreateLink', 'Image', 'Formats', 'Undo', 'Redo', 'CreateTable', 'SuperScript', 'SubScript']);
             }
         });
     }
@@ -37,6 +56,9 @@
             var htmlPreview = rteObj.element.querySelector('#' + id);
             htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
         }
+    }
+    function mentionCreated() {
+        mentionObj = this;
     }
     function fullPreview() {
         var id = rteObj.getID() + 'html-preview';
@@ -67,7 +89,61 @@
         }
     }
 </script>
+
 <style>
+    .editor-mention-item-template {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .em-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .em-avatar {
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: 500;
+        text-indent: 0px;
+        line-height: 13px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .em-name {
+        color: rgb(16, 24, 40);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        margin-bottom: 5px;
+    }
+
+    .em-email {
+        color: gray;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    #defaultmarkdown_editable-content_popup li {
+        padding: 10px;
+        height: 60px;
+    }
+
+    body[class*="-dark"] .em-name {
+        color: #fff !important;
+    }
+
     .e-richtexteditor textarea.e-content {
         float: left;
     }
@@ -127,4 +203,5 @@
     .material3-dark .e-icon-btn .e-md-preview::before {
         content: '\e7de';
     }
+
 </style>
