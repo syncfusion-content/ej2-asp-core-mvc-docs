@@ -234,7 +234,7 @@ Here’s a sample implementation demonstrating how to set up the Grid for CRUD o
 {% include code-snippet/grid/data-binding/cruddatatable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dataoperation.cs" %}
-{% include code-snippet/grid/data-binding/cruddatatable/dataoperationcore.css %}
+{% include code-snippet/grid/data-binding/cruddatatable/dataoperationcore.cs %}
 {% endhighlight %}
 {% endtabs %}
 

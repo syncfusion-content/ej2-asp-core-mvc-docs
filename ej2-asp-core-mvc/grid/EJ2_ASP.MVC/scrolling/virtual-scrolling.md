@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 2. Render the Grid by define the following features.
 
-```cshmtl
+```cshtml
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("360").BeforeDataBound("beforeDataBound").Columns(col =>
 {
     col.Field("OrderID").HeaderText("OrderID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
