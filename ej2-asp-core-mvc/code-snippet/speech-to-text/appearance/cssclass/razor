@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='speechtotext-container'>
-    @Html.EJS().SpeechToText("speech-to-text").TranscriptChanged("onTranscriptChanged").Render()
+    @Html.EJS().SpeechToText("speech-to-text").CssClass("customSpeechBtn").TranscriptChanged("onTranscriptChanged").Render()
     @Html.EJS().TextArea("output-textarea").Rows(5).Cols(50).Value("").ResizeMode(Resize.None).Placeholder("Transcribed text will be shown here...").Render()
 </div>
 
@@ -18,5 +18,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .e-speech-to-text.customSpeechBtn {
+        background-color: #ff6347;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .e-speech-to-text.customSpeechBtn:hover,
+    .e-speech-to-text.customSpeechBtn:focus {
+        background-color: #ff4500;
     }
 </style>

@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.Inputs
 
 <div id='speechtotext-container'>
-    @Html.EJS().SpeechToText("speech-to-text").TranscriptChanged("onTranscriptChanged").Render()
+    @Html.EJS().SpeechToText("speech-to-text").TranscriptChanged("onTranscriptChanged").ButtonSettings(new SpeechToTextButtonSettings { Content = "Start", StopContent = "Stop", IconCss = "e-icons e-play", StopIconCss = "e-icons e-pause", IconPosition = "Right", IsPrimary = true }).Render()
     @Html.EJS().TextArea("output-textarea").Rows(5).Cols(50).Value("").ResizeMode(Resize.None).Placeholder("Transcribed text will be shown here...").Render()
 </div>
 
