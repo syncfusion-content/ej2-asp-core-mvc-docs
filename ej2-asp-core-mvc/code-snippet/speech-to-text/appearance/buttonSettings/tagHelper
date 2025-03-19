@@ -2,7 +2,7 @@
 
 <div id='speechtotext-container'>
     <ejs-speechtotext id="speech-to-text" transcriptChanged="onTranscriptChanged">
-        <e-speechtotext-buttonSettings content="Start" stopContent="Stop" iconCss="e-icons e-play" stopIconCss="e-icons e-pause" iconPosition="Syncfusion.EJ2.Buttons.IconPosition.Right" isPrimary="true"></e-speechtotext-buttonSettings>
+        <e-speechtotext-buttonSettings content="Start" stopContent="Stop" iconCss="e-icons e-play" stopIconCss="e-icons e-pause" iconPosition="@("Right")" isPrimary="true"></e-speechtotext-buttonSettings>
     </ejs-speechtotext>
     <ejs-textarea id="output-textarea" rows="5" cols="50" value="" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
 </div>
