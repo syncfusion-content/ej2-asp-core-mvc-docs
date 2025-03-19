@@ -239,7 +239,7 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-contextual-toolbar.jpg)
+![ImageEditor Sample](images/image-editor-additional-contextual-toolbar.jpg)
 
 ## Toolbar created event 
 
