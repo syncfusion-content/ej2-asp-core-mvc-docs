@@ -1,0 +1,13 @@
+<div class="control-section">
+    <div class="sample-container">
+        <!--  Filemanager control declaration -->
+        @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+        {
+            Url = "/Home/FileOperations",
+            GetImageUrl = "/Home/GetImage",
+            UploadUrl = "/Home/Upload",
+            DownloadUrl = "/Home/Download"
+        }).AllowMultiSelection(false).ShowItemCheckBoxes(false).Render()
+        <!-- end of File Manager control -->
+    </div>
+</div>
