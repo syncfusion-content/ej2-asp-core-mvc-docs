@@ -26,11 +26,11 @@ The `processQuery` method handles the execution of a query sent to a `dataSource
 
 **DataManager**
 
-![DataManager](../../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
+![DataManager](../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
 
 **Query**
 
-![Query](../../images/adaptors/customadaptor/custom-adaptor-query.png)
+![Query](../images/adaptors/customadaptor/custom-adaptor-query.png)
 
 ```js
 processQuery(dm, query) {
@@ -51,15 +51,15 @@ The `beforeSend` method is executed before a request is sent to the server. This
 
 **DataManager**
 
-![DataManager](../../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
+![DataManager](../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
 
 **Request**
 
-![Request](../../images/adaptors/customadaptor/custom-adaptor-request.png)
+![Request](../images/adaptors/customadaptor/custom-adaptor-request.png)
 
 **Settings**
 
-![Settings](../../images/adaptors/customadaptor/custom-adaptor-fetch.png)
+![Settings](../images/adaptors/customadaptor/custom-adaptor-fetch.png)
 
 ```js
 beforeSend(dm, request, settings) {
@@ -455,7 +455,7 @@ builder.Services.AddControllers().AddOData(
 {% endhighlight %}
 {% endtabs %}
 
-![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
+![Searching query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
 
 ## Handling filtering operation
 
@@ -508,9 +508,9 @@ builder.Services.AddControllers().AddOData(
 {% endtabs %}
 
 **Single column filtering**
-![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
+![Filtering query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
 **Multi column filtering**
-![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
+![Filtering query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling sorting operation
 
@@ -566,11 +566,11 @@ builder.Services.AddControllers().AddOData(
 
 **Single column sorting**
 
-![Single column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
+![Single column sorting query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
 
 **Multi column sorting**
 
-![Multi column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
+![Multi column sorting query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling paging operation
 
@@ -629,7 +629,7 @@ builder.Services.AddControllers().AddOData(
 {% endhighlight %}
 {% endtabs %}
 
-![paging query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
+![paging query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
 
 ## Handling CRUD operations
 
@@ -689,7 +689,7 @@ public IActionResult Post([FromBody] OrdersDetails addRecord)
 }
 ```
 
-![ODataV4Adaptor-Insert-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-insert-record.png)
+![ODataV4Adaptor-Insert-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-insert-record.png)
 
 **Update Record**
 
@@ -725,7 +725,7 @@ public IActionResult Patch(int key, [FromBody] OrdersDetails updateRecord)
     return Ok(existingOrder);
 }
 ```
-![ODataV4Adaptor-Update-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
+![ODataV4Adaptor-Update-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
 
 **Delete Record**
 
@@ -748,4 +748,4 @@ public IActionResult Delete(int key)
     return Ok(deleteRecord);
 }
 ```
-![ODataV4Adaptor-Delete-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
+![ODataV4Adaptor-Delete-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)

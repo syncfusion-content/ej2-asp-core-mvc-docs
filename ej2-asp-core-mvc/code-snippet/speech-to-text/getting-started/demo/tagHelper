@@ -2,15 +2,12 @@
 
 <div id='speechtotext-container'>
     <ejs-speechtotext id="speech-to-text" transcriptChanged="onTranscriptChanged"></ejs-speechtotext>
-    <ejs-textarea id="output-textarea" rows="5" cols="50" value="" created="onTextAreaCreated" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
+    <ejs-textarea id="output-textarea" rows="5" cols="50" value="" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
 </div>
 
 <script>
-    var textareaObj;
-    function onTextAreaCreated() {
-        textareaObj = ej.base.getComponent(document.getElementById("output-textarea"), "textarea");
-    }
     function onTranscriptChanged(args) {
+        var textareaObj = ej.base.getComponent(document.getElementById("output-textarea"), "textarea");
         textareaObj.value = args.transcript;
     }
 </script>
