@@ -74,6 +74,21 @@ You can use the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 ![ASP.NET MVC Stepper Disabled step](images/step-disabled.jpg)
 
+## Setting readonly
+
+You can use [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ReadOnly) property to disable the user interactions in the stepper.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stepper/steps/readonly/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="readonly.cs" %}
+{% include code-snippet/stepper/steps/readonly/readonly.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Stepper readonly](images/step-readonly.jpg)
+
 ## Setting active step
 
 You can set the active step by specifying its index using the [ActiveStep](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ActiveStep) property. The default value is `0`.

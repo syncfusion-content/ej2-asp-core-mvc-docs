@@ -62,6 +62,18 @@ You can use the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 ![ASP.NET Core Stepper Disabled step](images/step-disabled.jpg)
 
+## Setting readonly
+
+You can use [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ReadOnly) property to disable the user interactions in the stepper.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stepper/steps/readonly/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Stepper CSSClass](images/step-readonly.jpg)
+
 ## Setting active step
 
 You can set the active step by specifying its index using the [activeStep](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ActiveStep) property. The default value is `0`.
