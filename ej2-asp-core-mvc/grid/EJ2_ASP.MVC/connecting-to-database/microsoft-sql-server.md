@@ -10,17 +10,17 @@ domainurl: ##DomainURL##
 ---
 # Connecting Microsoft SQL Server data in to Syncfusion ASP.NET MVC Grid
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Grid.
+This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion Grid.
 
 Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, `CustomAdaptor`feature and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own. 
 
 * **Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/odatav4-adaptor), `UrlAdaptor`, and [GraphQL](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 * **Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/angular/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
 ## Binding data from Microsoft SQL Server using an API service
 
@@ -36,9 +36,8 @@ To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
 **3.** In a MVC controller (aka, GridController), connect to Microsoft SQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the Microsoft SQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
 
-
 {% tabs %}
-{% highlight razor tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 using System;
 using System.Collections.Generic;
@@ -49,7 +48,7 @@ using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
 using Syncfusion.EJ2.Linq;
 
-namespace UrlAdaptor_MVC.Controllers
+namespace Grid_MSSQL.Controllers
 {
     public class GridController : Controller
     {
@@ -118,11 +117,11 @@ namespace UrlAdaptor_MVC.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx/grid/UrlDataSource`.
+**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx/Grid/UrlDataSource`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list of array can be found in an API controller available in the URL link `https://localhost:xxxx/grid/UrlDataSource`, as shown in the browser page below.
+**6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list of array can be found in an MVC controller available in the URL link `https://localhost:xxxx/Grid/UrlDataSource`, as shown in the browser page below.
 
-![Hosted API URL](../images/Ms-Sql-data.png)
+![Hosted API URL](../images/database/ms-sql-data.png)
 
 ## Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
@@ -204,10 +203,10 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cscshtml tabtitle="Index.cshtml" %}
 
 // Replace xxxx with your actual port number
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -253,7 +252,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -298,7 +297,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -338,7 +337,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -385,7 +384,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -417,7 +416,7 @@ The following properties enable the Grid to interact with API endpoints for diff
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
@@ -436,8 +435,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 {% endtabs %}
 
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an Autogenerated column, ensure to define [isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
-
+> * If database has an Autogenerated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -561,68 +559,12 @@ public JsonResult Remove(CRUDModel<Orders> model)
 }
 ```
 
-<!-- **Single method for performing all CRUD Operations**
-
-Using the `CrudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
-
-The following code example describes the above behavior.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
- [HttpPost]
- public JsonResult CrudUpdate(CRUDModel<Orders> request)
- {
-     // Perform update operation.
-     if (request.action == "update")
-     {
-         var existingRecord = order.FirstOrDefault(o => o.OrderID == request.value.OrderID);
-         if (existingRecord != null)
-         {
-             existingRecord.CustomerID = request.value.CustomerID;
-             existingRecord.ShipCity = request.value.ShipCity;
-             existingRecord.Freight = request.value.Freight;
-         }
-     }
-     // Perform insert operation.
-     else if (request.action == "insert")
-     {
-         var newId = order.Any() ? order.Max(o => o.OrderID) + 1 : 1;
-         request.value.OrderID = newId;
-         order.Add(request.value);
-     }
-     // Perform remove operation.
-     else if (request.action == "remove")
-     {
-         var key = int.Parse(request.key.ToString());  
-         var recordToRemove = order.FirstOrDefault(o => o.OrderID == key);
-         if (recordToRemove != null)
-         {
-             order.Remove(recordToRemove);
-         }
-     }
-     return Json(order);
- }
-{% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
-
-// Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
-         .CrudUrl("/Grid/CrudUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
-
-{% endhighlight %}
-{% endtabs %} -->
-
 **Batch Operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the Orders table using a single API POST request.
+
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Performs batch operations (Insert, Update, Delete) on a collection of Orders.
@@ -630,8 +572,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
 /// <returns>Returns a JSON response with success or error message.</returns>
-
-public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
+public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     // Establish SQL connection.
     using (var sqlConnection = new SqlConnection(ConnectionString))
@@ -716,7 +657,7 @@ public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 
 {% endhighlight %}
 
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
@@ -733,17 +674,13 @@ public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
-
-> Find the sample from this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-asp-net-mvc-grid-component).
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-crud.gif)
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
 This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
-
-**1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](#connecting-syncfusion-asp-net-mvc-grid-to-an-api-service)
+**1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
 **2.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
@@ -757,15 +694,11 @@ This section describes step by step process how to retrieve data from a Microsof
   * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the DataAdapter, followed by conversion of the **DataSet** into a List.
 
   * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
-
   
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
-@Html.EJS().Grid("Grid").AllowPaging(true).AllowGrouping(true).AllowFiltering(true).AllowSorting(true).EditSettings(edit =>
-{
-	edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal);
-}).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
 	col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
 	col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -785,7 +718,7 @@ This section describes step by step process how to retrieve data from a Microsof
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -795,7 +728,7 @@ This section describes step by step process how to retrieve data from a Microsof
 
 {% endhighlight %}
 
-{% highlight razor tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 using System;
 using System.Collections.Generic;
@@ -806,7 +739,7 @@ using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
 using Syncfusion.EJ2.Linq;
 
-namespace UrlAdaptor_MVC.Controllers
+namespace Grid_MSSQL.Controllers
 {
     public class GridController : Controller
     {
@@ -879,9 +812,9 @@ namespace UrlAdaptor_MVC.Controllers
 
 ### Handling searching operation
 
-When utilizing the `CustomAdaptor` in Angular, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Syncfusion Angular Grid.
+In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -904,10 +837,10 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -927,7 +860,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -940,9 +873,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling filtering operation
 
-When utilizing the `CustomAdaptor` in Angular, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Syncfusion Angular Grid.
+In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -970,10 +903,10 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 {% endhighlight %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -993,7 +926,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1007,9 +940,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling sorting operation
 
-When utilizing the `CustomAdaptor` in Angular, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Syncfusion Angular Grid.
+In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1032,10 +965,10 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -1055,7 +988,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1068,9 +1001,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling paging operation
 
-When utilizing the `CustomAdaptor` in Angular, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Syncfusion Angular Grid.
+In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1100,10 +1033,10 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -1123,7 +1056,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1151,13 +1084,10 @@ The following properties enable the Grid to interact with API endpoints for diff
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource")
-        .UpdateUrl("https://localhost:xxxx/Grid/Update")
-        .InsertUrl("https://localhost:xxxx/Grid/Insert")
-        .RemoveUrl("https://localhost:xxxx/Grid/Remove").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -1177,7 +1107,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/grid/UrlDataSource",
+                url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
                 adaptor: new CustomAdaptor(),
                 insertUrl: "https://localhost:xxxx/grid/Insert",
                 updateUrl: "https://localhost:xxxx/grid/Update",
@@ -1192,8 +1122,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 {% endtabs %}
 
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an Autogenerated column, ensure to define [isIdentity](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
-
+> * If database has an Autogenerated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -1321,6 +1250,9 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the Orders table using a single API POST request.
 
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Performs batch operations (Insert, Update, Delete) on a collection of Orders.
 /// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
@@ -1328,7 +1260,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
 /// <returns>Returns a JSON response with success or error message.</returns>
 
-public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
+public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     // Establish SQL connection.
     using (var sqlConnection = new SqlConnection(ConnectionString))
@@ -1413,10 +1345,10 @@ public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 
 {% endhighlight %}
 
-{% highlight ts tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
+@Html.EJS().Grid("Grid").AllowSorting().Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -1436,8 +1368,8 @@ public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/grid/UrlDataSource",
-                batchUrl: "https://localhost:xxxx/grid/BatchUpdate",
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+                batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1450,6 +1382,4 @@ public JsonResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
-
-> Find the sample from this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-to-asp-net-mvc-grid-component).
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsft-sql-batch.gif)
