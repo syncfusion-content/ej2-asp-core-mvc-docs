@@ -171,7 +171,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Orders). Here **xxxx** denotes the port number.
 
-![WebApiAdaptor-data](../../images/adaptors/webapi-adaptor-data.png)
+![WebApiAdaptor-data](../images/adaptors/webapi-adaptor-data.png)
 
 ## Connecting Syncfusion ASP.NET MVC Grid to an API service
 
@@ -279,7 +279,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 
 To handle search operation, implement search logic on the server side according to the received OData-formatted query.
 
-![Searching query](../../images/adaptors/webapiadaptor-searching.png)
+![Searching query](../images/adaptors/webapiadaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -338,7 +338,7 @@ public object Get()
 
 To handle filter operations, ensure that your Web API endpoint supports filtering based on OData-formatted queries. Implement the filtering logic on the server-side as shown in the provided code snippet.
 
-![Filtering query](../../images/adaptors/webapiadaptor-filtering.png)
+![Filtering query](../images/adaptors/webapiadaptor-filtering.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -415,10 +415,10 @@ public object Get()
 To handle sorting action, implement sorting logic on the server-side according to the received OData-formatted query.
 
 **Ascending Sorting**
-![Sorting Ascending query](../../images/adaptors/webapiadaptor-sorting-asc.png)
+![Sorting Ascending query](../images/adaptors/webapiadaptor-sorting-asc.png)
 
 **Descending Sorting**
-![Sorting Descending query](../../images/adaptors/webapiadaptor-sorting-desc.png)
+![Sorting Descending query](../images/adaptors/webapiadaptor-sorting-desc.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -476,7 +476,7 @@ public object Get()
 
 Implement paging logic on the server-side according to the received OData-formatted query. Ensure that the endpoint supports paging based on the specified criteria.
 
-![paging query](../../images/adaptors/webapiadaptor-paging.png)
+![paging query](../images/adaptors/webapiadaptor-paging.png)
 
 {% tabs %}
 {% highlight cs tabtitle="OrdersController.cs" %}
@@ -533,7 +533,7 @@ To enable CRUD operations in the Syncfusion Grid within an ASP.NET MVC applicati
 
 To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost` method in your server application. Below is a sample implementation of inserting a record using the **OrdersController**:
 
-![WebApiAdaptor-Insert-record](../../images/adaptors/webapiadaptor-insert-record.png)
+![WebApiAdaptor-Insert-record](../images/adaptors/webapiadaptor-insert-record.png)
 
 ```cs
 // POST: api/Orders
@@ -554,7 +554,7 @@ public void Post(OrdersDetails newRecord)
 
 Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpPut` method in your controller. Here's a sample implementation of updating a record:
 
-![WebApiAdaptor-Update-record](../../images/adaptors/webapiadaptor-update-record.png)
+![WebApiAdaptor-Update-record](../images/adaptors/webapiadaptor-update-record.png)
 
 ```cs
 // PUT: api/Orders/5
@@ -583,7 +583,7 @@ public void Put(int id, OrdersDetails updatedOrder)
 
 To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` method in your controller. Below is a sample implementation:
 
-![WebApiAdaptor-Delete-record](../../images/adaptors/webapiadaptor-delete-record.png)
+![WebApiAdaptor-Delete-record](../images/adaptors/webapiadaptor-delete-record.png)
 
 ```cs
 // DELETE: api/5
@@ -605,4 +605,4 @@ public void Delete(int key)
 }
 ```
 
-![WebApiAdaptor CRUD operations](../../images/adaptors/adaptor-crud-operation.gif)
+![WebApiAdaptor CRUD operations](../images/adaptors/adaptor-crud-operation.gif)
