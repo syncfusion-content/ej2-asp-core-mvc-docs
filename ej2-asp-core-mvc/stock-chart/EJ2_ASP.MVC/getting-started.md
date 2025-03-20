@@ -89,7 +89,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@(Html.EJS().StockChart("container").Load("load").Series(sr => { sr.Add(); }).Render())
+@(Html.EJS().StockChart("container").Series(sr => { sr.Add(); }).Render())
 
 {% endhighlight %}
 {% endtabs %}
