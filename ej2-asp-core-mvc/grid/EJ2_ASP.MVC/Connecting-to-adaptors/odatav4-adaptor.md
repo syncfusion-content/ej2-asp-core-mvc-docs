@@ -331,7 +331,7 @@ config.Count().Filter(); // Handles searching operation.
 {% endhighlight %}
 {% endtabs %}
 
-![Searching query](../../images/adaptors/odatav4-adaptor-searching.png)
+![Searching query](../images/adaptors/odatav4-adaptor-searching.png)
 
 ## Handling Filtering Operation
 
@@ -365,9 +365,9 @@ config.Count().Filter(); // Handles filtering  operation.
 {% endtabs %}
 
 **Single column filtering**
-![Filtering query](../../images/adaptors/odatav4-adaptor-filtering.png)
+![Filtering query](../images/adaptors/odatav4-adaptor-filtering.png)
 **Multi column filtering**
-![Filtering query](../../images/adaptors/odatav4-adaptor-multi-column-filtering.png)
+![Filtering query](../images/adaptors/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling Sorting Operation
 
@@ -401,10 +401,10 @@ config.Count().OrderBy(); // Handles sorting  operation.
 {% endtabs %}
 
 **Single column sorting**
-![Single column sorting query](../../images/adaptors/odatav4-adaptor-sorting.png)
+![Single column sorting query](../images/adaptors/odatav4-adaptor-sorting.png)
 
 **Multi column sorting**
-![Multi column sorting query](../../images/adaptors/odatav4-adaptor-multi-column-sorting.png)
+![Multi column sorting query](../images/adaptors/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling Paging Operation
 
@@ -438,7 +438,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
 {% endhighlight %}
 {% endtabs %}
 
-![paging query](../../images/adaptors/odatav4-adaptor-paging.png)
+![paging query](../images/adaptors/odatav4-adaptor-paging.png)
 
 ## Handling CRUD Operations
 
@@ -485,7 +485,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
  }
 ```
 
-![Update record](../../images/adaptors/odatav4-adaptor-insert-record.png)
+![Update record](../images/adaptors/odatav4-adaptor-insert-record.png)
 
 **Update Operation:**
 
@@ -515,7 +515,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
     return Ok(existingOrder);
 }
 ```
-![Update record](../../images/adaptors/odatav4-adaptor-update-record.png)
+![Update record](../images/adaptors/odatav4-adaptor-update-record.png)
 
 **Delete Operation**
 
@@ -538,7 +538,7 @@ public IHttpActionResult Delete(int key)
 }
 ```
 
-![Delete Record](../../images/adaptors/odatav4-adaptor-delete-record.png)
+![Delete Record](../images/adaptors/odatav4-adaptor-delete-record.png)
 
 ## Odata with custom url
 

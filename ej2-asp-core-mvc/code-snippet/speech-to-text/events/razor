@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='speechtotext-container'>
+    @Html.EJS().SpeechToText("speech-to-text").Created("onCreated").TranscriptChanged("onTranscriptChanged").OnStart("onListeningStart").OnStop("onListeningStop").OnError("onErrorHandler").Render()
+</div>
+
+<script>
+    function onTranscriptChanged(args) {
+        //your required action here
+    };
+    function onErrorHandler(args) {
+        //your required action here
+    };
+    function onListeningStart(args) {
+        //your required action here
+    };
+    function onListeningStop(args) {
+        //your required action here
+    };
+    function onCreated() {
+        //your required action here
+    };
+</script>
