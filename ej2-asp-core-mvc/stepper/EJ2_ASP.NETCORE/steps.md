@@ -72,7 +72,7 @@ You can use [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Stepper CSSClass](images/step-readonly.jpg)
+![ASP.NET Core Stepper Readonly](images/step-readonly.jpg)
 
 ## Setting active step
 
