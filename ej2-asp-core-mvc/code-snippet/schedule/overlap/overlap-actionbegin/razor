@@ -2,7 +2,7 @@
 
 @(Html.EJS().Schedule("schedule")
     .Height("550px")
-    .SelectedDate(new DateTime(2025, 2, 6))
+    .SelectedDate(new DateTime(2025, 3, 6))
     .Views(new List<string>() { "Day", "Week", "TimelineWeek", "Month", "Agenda" })
     .AllowOverlap(false)
     .ActionBegin("onActionBegin")
