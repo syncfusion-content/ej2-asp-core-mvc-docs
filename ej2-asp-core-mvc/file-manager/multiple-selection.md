@@ -90,9 +90,6 @@ Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/disablemultiselection/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_core.cs" %}
-{% include code-snippet/file-manager/disablemultiselection/HomeController_core.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -103,12 +100,10 @@ Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/disablemultiselection/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
-{% include code-snippet/file-manager/disablemultiselection/HomeController_mvc.cs %}
-{% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
 The output will look like the image below.
 
-![File Manager rangeselection](./images/rangeselection.png)
+![File Manager disable Multiselection](./images/disablemultiselection.png)

@@ -3,10 +3,10 @@
         <!--  Filemanager control declaration -->
         @Html.EJS().FileManager("file").AjaxSettings(new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
         {
-            Url = "/Home/FileOperations",
-            GetImageUrl = "/Home/GetImage",
-            UploadUrl = "/Home/Upload",
-            DownloadUrl = "/Home/Download"
+            Url ="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations"
+            DownloadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
+            UploadUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload"
+            GetImageUrl = "https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage"
         }).AllowMultiSelection(false).ShowItemCheckBoxes(false).Render()
         <!-- end of File Manager control -->
     </div>
