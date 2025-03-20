@@ -61,13 +61,11 @@
     function rowPageClick(args) {
         var pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pageSettings.currentRowPage = args.currentPage;
-        pivotObj.refreshData();
     }
 
     function columnPageClick(args) {
         var pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pageSettings.currentColumnPage = args.currentPage;
-        pivotObj.refreshData();
     }
 </script>
 <style>
