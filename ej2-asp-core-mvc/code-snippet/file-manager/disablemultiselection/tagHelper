@@ -1,6 +1,6 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!--  Filemanager control declaration -->
+        <!--  File Manager control declaration -->
         <ejs-filemanager id="file" allowMultiSelection="false" showItemCheckBoxes="false" >
             <e-filemanager-ajaxsettings url="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations"
                                         downloadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
