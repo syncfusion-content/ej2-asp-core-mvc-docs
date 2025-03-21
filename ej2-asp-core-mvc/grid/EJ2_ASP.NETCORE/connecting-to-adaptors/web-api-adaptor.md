@@ -512,6 +512,7 @@ To insert a new record into your Syncfusion Grid, you can utilize the `HttpPost`
 ![WebApiAdaptor-Insert-record](../images/adaptors/webapiAdaptors/webapiadaptor-insert-record.png)
 
 ```cs
+
 [HttpPost]
 /// <summary>
 /// Inserts a new data item into the data collection.
@@ -532,6 +533,7 @@ Updating a record in the Syncfusion Grid can be achieved by utilizing the `HttpP
 ![WebApiAdaptor-Update-record](../images/adaptors/webapiAdaptors/webapiadaptor-update-record.png)
 
 ```cs
+
 [HttpPut]
 /// <summary>
 /// Update a existing data item from the data collection.
@@ -560,6 +562,7 @@ To delete a record from your Syncfusion Grid, you can utilize the `HttpDelete` m
 ![WebApiAdaptor-Delete-record](../images/adaptors/webapiAdaptors/webapiadaptor-delete-record.png)
 
 ```cs
+
 [HttpDelete("{id}")]
 /// <summary>
 /// Remove a specific data item from the data collection.

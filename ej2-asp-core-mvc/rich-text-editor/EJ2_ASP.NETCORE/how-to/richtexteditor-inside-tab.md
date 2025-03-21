@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Integrating Syncfusion Rich Text Editor in Tab in ##Platform_Name## Rich Text Editor Control
-description: Integrating Rich Text Editor in Tab in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
+title: Integrating Syncfusion RichTextEditor in a Tab in ##Platform_Name##
+description: Integrating Rich Text Editor in Tab in ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrating Rich Text Editor in Tab
 publishingplatform: ##Platform_Name##

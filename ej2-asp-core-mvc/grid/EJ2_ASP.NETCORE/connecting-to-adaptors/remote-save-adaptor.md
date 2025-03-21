@@ -20,11 +20,11 @@ Ensure your server-side implementation in ASP.NET Core handles CRUD operations. 
 
 To configure the server for Syncfusion ASP.NET Core Grid, follow these steps:
 
-**1. Project creation:**
+**1. Project Creation:**
 
 Open Visual Studio and create an ASP.NET Core project named **RemoteSaveAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
-**2. Model class creation:**
+**2. Model Class Creation:**
 
 Create a model class named **OrdersDetails.cs** inside the **Models** folder on the server-side. This model will represent the order data structure.
 
@@ -176,7 +176,7 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
   }
 ```
 
-**Update operation:**
+**Update Operation:**
 
 For updating existing records, use the `updateUrl` property to specify the controller action mapping URL for the update operation. Implement the `Update` method in the API controller to handle record updates. The updated record details are bound to the **updatedRecord** parameter.
 
@@ -212,7 +212,7 @@ For updating existing records, use the `updateUrl` property to specify the contr
   }
 ```
 
-**Delete operation**
+**Delete Operation**
 
 To delete existing records, use the `removeUrl` property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
@@ -239,7 +239,7 @@ To delete existing records, use the `removeUrl` property to specify the controll
   }
 ```
 
-**4. Run the application:**
+**4. Run the Application:**
 
 Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
 
@@ -249,7 +249,7 @@ After running the application, you can verify that the server-side API controlle
 
 To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
-**Step 1:** Install the Syncfusion ASP.NET Core package:
+**Step 1:** Install the Syncfusion ASP.NET Core Package:
 
 To add `ASP.NET Core` in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) and install it.
 Alternatively, you can install it using the following Package Manager Console command:
@@ -316,6 +316,7 @@ To ensure proper script execution, register the Syncfusion script manager `<ejs-
 <body>
     ...
     <!-- Syncfusion ASP.NET Core script manager -->
+
     <ejs-scripts></ejs-scripts>
 </body>
 
@@ -404,6 +405,6 @@ app.MapRazorPages();
 app.MapControllers();
 ```
 
-**Step 7:** Run the project:
+**Step 7:** Run the Project:
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.

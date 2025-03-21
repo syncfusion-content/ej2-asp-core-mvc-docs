@@ -630,4 +630,5 @@ vertical-align: top;
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/skeleton/accessibility">Documentation</a></td>
     </tr>
-  </tbody>
+</tbody>
+</table>
