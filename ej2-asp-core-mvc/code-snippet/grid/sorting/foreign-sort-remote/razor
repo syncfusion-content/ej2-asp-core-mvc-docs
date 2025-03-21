@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource(ds => ds.Url(@Url.Action("GetOrderRecords", "Home")).Adaptor("UrlAdaptor")).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("EmployeeID").HeaderText("Employee Name").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource(ds => ds.Url(@Url.Action("GetEmployeeRecords", "Home")).Adaptor("UrlAdaptor")).Width("140").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("160").Add();
+}).AllowSorting(true).AllowPaging(true).Render()

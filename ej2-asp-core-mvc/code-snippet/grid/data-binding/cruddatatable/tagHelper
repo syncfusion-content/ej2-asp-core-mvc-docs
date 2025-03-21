@@ -1,10 +1,20 @@
-<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
-    <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
-    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
-        <e-grid-column field="EmployeeID" headerText="EmployeeID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
-    </e-grid-columns>
+@{
+    string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
+}
+@Html.AntiForgeryToken()
+<ejs-grid id="grid" allowPaging="true" load="gridLoad" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-data-manager url="@fullUrl?handler=UrlDatasource" insertUrl="@fullUrl?handler=Insert" updateUrl="@fullUrl?handler=Update" removeUrl="@fullUrl?handler=Delete" adaptor="UrlAdaptor"></e-data-manager>
+        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="140"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+            <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="140"></e-grid-column>
+            <e-grid-column field="Freight" headerText="Freight" format="C2" width="120" textAlign="Left"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        </e-grid-columns>
 </ejs-grid>
+<script>
+    function gridLoad() {
+        this.dataSource.dataSource.headers = [{ 'XSRF-TOKEN': document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value }];
+    }
+</script>
