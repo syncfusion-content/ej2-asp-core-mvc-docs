@@ -1207,9 +1207,9 @@ To execute the insert operation, you will need to override the `insert` method o
             const original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
-        insert(dm, data) {
+        insert(dataManager, data) {
         return {
-                url: dm.dataSource.insertUrl || dm.dataSource.url,
+                url: dataManager.dataSource.insertUrl || dataManager.dataSource.url,
                 data: JSON.stringify({
                     __RequestVerificationToken: "Syncfusion",
                     value: data,
@@ -1288,9 +1288,9 @@ To execute the update operation, override the `update` method of the `CustomAdap
             const original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
-        update(dm, keyField, value) {
+        update(dataManager, keyField, value) {
             return {
-            url: dm.dataSource.updateUrl || dm.dataSource.url,
+            url: dataManager.dataSource.updateUrl || dataManager.dataSource.url,
             data: JSON.stringify({
             __RequestVerificationToken: "Syncfusion",
             value: value,
@@ -1368,9 +1368,9 @@ To perform the delete operation, you need to override the `remove` method of the
 			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
-        remove(dm, keyField, value) {
+        remove(dataManager, keyField, value) {
             return {
-            url: dm.dataSource.removeUrl || dm.dataSource.url,
+            url: dataManager.dataSource.removeUrl || dataManager.dataSource.url,
             data: JSON.stringify({
             __RequestVerificationToken: "Syncfusion",
             key: value,
@@ -1458,9 +1458,9 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
-        batchRequest(dm, changes, e) {
+        batchRequest(dataManager, changes, e) {
             return {
-            url: dm.dataSource.batchUrl || dm.dataSource.url,
+            url: dataManager.dataSource.batchUrl || dataManager.dataSource.url,
             data: JSON.stringify({
             __RequestVerificationToken: "Syncfusion",
             added: changes.addedRecords,
@@ -1493,7 +1493,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 {% highlight c# tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Batchupdate (Insert, Update and Delete) a collection of data items from the data collection.
+/// Batch update (Insert, Update and Delete) a collection of data items from the data collection.
 /// </summary>
 /// <param name="CRUDModel<T>">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns void.</returns>
