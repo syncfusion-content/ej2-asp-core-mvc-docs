@@ -355,3 +355,35 @@ The default connector line tooltip in the Gantt control can be customized using 
 The below screenshot shows the output of above code example.
 
 ![Alt text](images/dependencyLineTemplate.png)
+
+### Timeline tooltip
+
+A timeline tooltip can be customized using the [`TooltipSettings.Timeline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTooltipSettings.html#Syncfusion_EJ2_Gantt_GanttTooltipSettings_Timeline) property. This allows modifying the appearance and content of the tooltip displayed over the timeline. The following code example shows how to customize the timeline tooltip in Gantt.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/timelineTooltipTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimelineTooltipTemplate.cs" %}
+{% include code-snippet/gantt/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/timelineTooltipTemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TimelineTooltipTemplate.cs" %}
+{% include code-snippet/gantt/tooltip/timelineTooltipTemplate/timelineTooltipTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+The below screenshot shows the output of above code example.
+
+![Alt text](images/tooltiptemplate.png)

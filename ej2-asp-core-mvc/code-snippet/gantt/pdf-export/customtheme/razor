@@ -1,13 +1,37 @@
 @(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).TaskFields(ts => ts.Id(
         "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Toolbar(new List<string>() {
-"PdfExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).Render())
+"PdfExport" }).ToolbarClick("toolbarClick").TreeColumnIndex(1).EventMarkers(em =>
+    {
+        em.Day("04/10/2019").Label("Project approval and kick-off").CssClass("e-custom-event-marker").Add();
+    })
+    .Holidays(hol=> {
+        hol.From("04/11/2019").To("04/12/2019").Label("Public holidays").CssClass("e-custom-holiday").Add();
+        hol.From("04/01/2019").To("04/01/2019").Label("Public holiday").CssClass("e-custom-holiday").Add();
+    }).Render())
 
 <script>
     function toolbarClick(args) {
         var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
         if (args.item.id === "GanttContainer_pdfexport") {
+            const stringFormat = new ej.pdfexport.PdfStringFormat();
+            stringFormat.alignment = ej.pdfexport.PdfTextAlignment.Center;
+      
+            const vertical = new ej.pdfexport.PdfStringFormat();
+            vertical.alignment = ej.pdfexport.PdfTextAlignment.Center;
+      
+            const penColor = new ej.pdfexport.PdfColor(105, 105, 105);
+            const penWidth = 1;
+            const pen = new ej.pdfexport.PdfPen(penColor, penWidth);
+            pen.dashStyle = ej.pdfexport.PdfDashStyle.Dash; 
+      
+            const borderWidth = 1;
+            const borderColor = new ej.pdfexport.PdfColor(192, 192, 192); 
+            let pdfpen = new ej.pdfexport.PdfPen(borderColor, borderWidth);
+            let pdfborders = new ej.pdfexport.PdfBorders();
+            pdfborders.all = pdfpen;
             var exportProperties = {
-                fontFamily: 1,
+                ganttStyle: {
+                    fontFamily: 1,
                 columnHeader: {
                     backgroundColor: new ej.pdfexport.PdfColor(179, 219, 255)
                 },
@@ -32,6 +56,32 @@
                     fontColor: new ej.pdfexport.PdfColor(0, 0, 0),
                     borderColor: new ej.pdfexport.PdfColor(179, 219, 255),
                 },
+                eventMarker: {
+                    label: {
+                    backgroundColor: new ej.pdfexport.PdfColor(255, 239, 213), 
+                    fontFamily: ej.pdfexport.PdfFontFamily.TimesRoman,
+                    fontColor: new ej.pdfexport.PdfColor(139, 69, 19), 
+                    fontSize: 9,
+                    format: stringFormat,
+                    fontStyle: ej.pdfexport.PdfFontStyle.Bold,
+                    borderColor: new ej.pdfexport.PdfColor(160, 82, 45), 
+                    borders: pdfborders,
+                    },
+                    lineStyle: pen,
+                },
+                holiday: {
+                    fontFamily: ej.pdfexport.PdfFontFamily.TimesRoman,
+                    fontSize: 10,
+                    fontStyle: ej.pdfexport.PdfFontStyle.Bold,
+                    borderColor: new ej.pdfexport.PdfColor(211, 211, 211), 
+                    backgroundColor: new ej.pdfexport.PdfColor(255, 248, 220), 
+                    fontColor: new ej.pdfexport.PdfColor(105, 105, 105),
+                    format: vertical,
+                    borders: pdfborders,
+                },
+
+                }
+                
             };
             ganttObj.pdfExport(exportProperties);
         }
