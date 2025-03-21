@@ -599,7 +599,6 @@ For batch editing, you can specify a custom batch URL as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-
 <ejs-grid id="Grid" height="280" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search"})">
    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
    <e-data-manager url="https://localhost:xxxx/odata/Orders" 
@@ -613,6 +612,5 @@ For batch editing, you can specify a custom batch URL as follows:
     <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
    </e-grid-columns>
 </ejs-grid>
-
 {% endhighlight %}
 {% endtabs %}

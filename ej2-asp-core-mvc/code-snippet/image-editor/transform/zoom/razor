@@ -1,5 +1,6 @@
+@using Syncfusion.EJ2.ImageEditor
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
+    @Html.EJS().ImageEditor("image-editor").Created("created").ZoomSettings(new ImageEditorZoomSettings { MaxZoomFactor = 30, MinZoomFactor = 0.1 }).Toolbar(new string[] { }).Render()
 </div>
 @Html.EJS().Button("zoomIn").CssClass("e-primary").Content("Zoom In").Click("zoomInClick").Render()
 @Html.EJS().Button("zoomOut").CssClass("e-primary").Content("Zoom Out").Click("zoomOutClickHandler").Render()

@@ -110,6 +110,7 @@ namespace UrlAdaptor.Controllers
     /// Handles HTTP POST requests to retrieve order data.
     /// </summary>
     /// <returns> Returns an object containing the list of orders and the total record count. </returns>
+
     [HttpPost]
     public object Post()
     {
@@ -127,6 +128,7 @@ namespace UrlAdaptor.Controllers
     /// Retrieves the list of all order records.
     /// </summary>
     /// <returns> Returns a list of order details from the data source.</returns>
+
     [HttpGet]
     public List<OrdersDetails> GetOrderData()
     {
@@ -536,6 +538,7 @@ To insert a new record, utilize the `insertUrl` property to specify the controll
 ![Insert record](../images/adaptors/url-adaptors/url-adaptor-insert-record.png)
 
 ```cs
+
 /// <summary>
 /// Inserts a new data item into the data collection.
 /// </summary>
@@ -559,6 +562,7 @@ For updating existing records, utilize the `updateUrl` property to specify the c
 ![Update record](../images/adaptors/url-adaptors/url-adaptor-update-record.png)
 
 ```cs
+
 /// <summary>
 /// Update a existing data item from the data collection.
 /// </summary>

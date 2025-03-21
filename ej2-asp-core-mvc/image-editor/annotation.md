@@ -48,6 +48,8 @@ The `drawText` method in the Image Editor allows you to insert a text annotation
 
 * strokeWidth: Specifies the outline stroke width of the text annotation.
 
+* transformCollection: Specifies the transform collection of the text annotation.
+
 By utilizing the DrawText method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 Here is an example of adding a text in a button click using `drawText` method. 
@@ -285,6 +287,10 @@ Here is an example of changing the freehand draw stroke width and color using th
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-stroke.png)
+
 ### Delete a freehand drawing 
 
 The `deleteShape` method in the Image Editor allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter.
@@ -317,6 +323,10 @@ Here is an example of deleting a freehand annotation in a button click using Del
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-delete-fhd.png)
 
 ## Shape annotation
 
@@ -449,9 +459,9 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-annotation.png)
+![ImageEditor Sample](images/image-editor-annotation.jpg)
 
-## Delete a shape 
+### Delete a shape 
 
 The `deleteShape` method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter. 
 
@@ -483,6 +493,41 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-delete-annotation.png)
+
+### Customize default stroke color for shapes 
+
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the `shapeChanging` event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-default-stroke.jpg)
 
 ## Image annotation
 
@@ -540,34 +585,3 @@ In the following example, you can use the `drawImage` method in the button click
 Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-add-image.jpg)
-
-### Customize default stroke color for shapes 
-
-We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`] event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/default-stroke-color/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/annotation/default-stroke-color/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/annotation/default-stroke-color/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-default-stroke.png)

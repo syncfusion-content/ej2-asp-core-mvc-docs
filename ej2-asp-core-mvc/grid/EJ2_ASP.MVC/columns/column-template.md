@@ -272,3 +272,20 @@ The following example demonstrates how to add template column using external but
 {% endtabs %}
 
 ![Column Dynamically Adding Template](../images/column-template/column-dynamically-add-template.gif)
+
+## Enhancing Grid performance by enabling or disabling Aria Labels
+
+By default, the Syncfusion ASP.NET MVC Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
+
+If your application doesn’t require screen reader support and includes multiple template columns, Aria labels may impact performance. To improve rendering, you can disable them for all template columns by setting the `EnableAriaLabel` property to **false** in the `TemplateOptions` of those columns. If accessibility is needed, set it to **true** to retain Aria labels.
+
+The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion ASP.NET MVC Grid.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/template-aria-label/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/grid/columns/template-aria-label/template-aria-label.cs %}
+{% endhighlight %}
+{% endtabs %}

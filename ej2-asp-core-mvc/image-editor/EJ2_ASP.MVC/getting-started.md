@@ -95,4 +95,4 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Image 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Image Editor control will be rendered in the default web browser.
 
-![ASP.NET MVC ImageEditor Control](images/image-editor.jpg)
+![ASP.NET MVC ImageEditor Control](images/image-editor-load.png)
