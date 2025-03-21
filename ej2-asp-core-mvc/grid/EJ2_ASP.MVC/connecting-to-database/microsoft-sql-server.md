@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Microsoft SQL Data Binding in Syncfusion Grid
-description: Learn about consuming data from SQL Server using Microsoft SQL Client, binding it to Syncfusion Component, and performing CRUD operations.
+title: Microsoft SQL Server Data Binding in Syncfusion ##Platform_Name## Grid
+description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: Adaptors, graphqladaptor, graphql adaptor, remotedata 
+keywords: adaptors, graphqladaptor, graphql adaptor, remotedata 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 # Connecting Microsoft SQL Server data in to Syncfusion ASP.NET MVC Grid
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion Grid.
+This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion ASP.NET MVC Grid.
 
-Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, `CustomAdaptor`feature and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own. 
+Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, custom adaptor feature and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own. 
 
-* **Using UrlAdaptor**
+**1. Using UrlAdaptor**
 
 The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
-* **Using CustomAdaptor**
+**2. Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
@@ -32,9 +32,11 @@ To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
 **1.** Open Visual Studio and create an ASP.NET MVC project named **Grid_MSSQL**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**2.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
+**2.** To connect a Microsoft SQL Server database using the Microsoft SQL driver in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
-**3.** In a MVC controller (aka, GridController), connect to Microsoft SQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the Microsoft SQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
+**3.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
+
+**4.** In a MVC controller (aka, GridController), connect to Microsoft SQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the Microsoft SQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -42,7 +44,7 @@ To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
@@ -58,13 +60,19 @@ namespace Grid_MSSQL.Controllers
         private readonly string ConnectionString = @"<Enter a valid connection string>";
 
         /// <summary>
-        /// Fetches data for the Syncfusion Grid using URL Adaptor.
+        /// Fetches data for the Syncfusion ASP.NET MVC Grid using URL Adaptor.
         /// </summary>
         /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
         public JsonResult UrlDataSource()
-        {
-                IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-                return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+        {            
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+            // Get the total count of records.
+            int totalRecordsCount = dataSource.Count();
+
+            // Return data based on the request.
+            return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
         }
 
         /// <summary>
@@ -113,7 +121,6 @@ namespace Grid_MSSQL.Controllers
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -125,7 +132,7 @@ namespace Grid_MSSQL.Controllers
 
 ## Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
-To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
+To integrate the Syncfusion ASP.NET MVC Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
@@ -218,8 +225,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% endhighlight %}
 {% endtabs %}
 
-
-**Step 7:** Run the Project
+**Step 6:** Run the Project
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will successfully fetch data from the API service.
 
@@ -241,13 +247,23 @@ To enable search functionality, ensure that your API endpoint supports custom se
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling searching operation.
     if (DataManagerRequest.Search?.Count > 0)
     {
         dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
         //Add custom logic here if needed and remove above method.
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
@@ -281,8 +297,13 @@ To handle filtering operation, configure your API endpoint to support filter cri
 /// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling filtering operation.
     if (DataManagerRequest.Where?.Count > 0)
     {
         foreach (var condition in DataManagerRequest.Where)
@@ -294,8 +315,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
             }
         }
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();  
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
+
 {% endhighlight %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
@@ -326,13 +353,23 @@ To handle sorting operation, configure your API to support custom sorting criter
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+    
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling sorting operation.
     if (DataManagerRequest.Sorted?.Count > 0)
     {
         dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
         //Add custom logic here if needed and remove above method.
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
@@ -366,11 +403,16 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
 
+    // Get the total count of records.
     int totalRecordsCount = dataSource.Count();
 
+    // Handling paging operation.
     if (DataManagerRequest.Skip > 0)
     {
         dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
@@ -380,6 +422,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
     }
 
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
@@ -401,7 +444,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ## Handling CRUD Operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
@@ -457,7 +500,9 @@ public class CRUDModel<T> where T : class
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the Orders table by calling the following **POST** method of an API.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Inserts a new order record into the database using parameterized queries.
 /// </summary>
@@ -487,13 +532,16 @@ public JsonResult Insert(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Update Operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the Orders table by involving the following **Post** method of an API.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
 /// <summary>
 /// Updates an existing order record in the database using parameterized queries.
 /// </summary>
@@ -524,13 +572,14 @@ public JsonResult Update(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
 
-**Delete Operation**
+{% endhighlight %}
+{% endtabs %}**Delete Operation**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the Orders table.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
 /// <summary>
 /// Deletes an existing order record from the database using the specified OrderID.
 /// </summary>
@@ -557,9 +606,9 @@ public JsonResult Remove(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
 
-**Batch Operation**
+{% endhighlight %}
+{% endtabs %}**Batch Operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the Orders table using a single API POST request.
 
@@ -733,7 +782,7 @@ This section describes step by step process how to retrieve data from a Microsof
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClientdatabase/ms-sql-data.png;
 using System.Linq;
 using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
@@ -749,13 +798,19 @@ namespace Grid_MSSQL.Controllers
         private readonly string ConnectionString = @"<Enter a valid connection string>";
 
         /// <summary>
-        /// Fetches data for the Syncfusion Grid using URL Adaptor.
+        /// Fetches data for the Syncfusion ASP.NET MVC Grid using URL Adaptor.
         /// </summary>
         /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
         public JsonResult UrlDataSource()
         {
-                IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-                return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+
+            // Get the total count of records.
+            int totalRecordsCount = dataSource.Count();
+
+            // Return data based on the request.
+            return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
         }
 
         /// <summary>
@@ -804,7 +859,6 @@ namespace Grid_MSSQL.Controllers
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -826,13 +880,24 @@ In the code example below, searching a custom data source can be accomplished by
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling searching operation.
     if (DataManagerRequest.Search?.Count > 0)
     {
         dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
         //Add custom logic here if needed and remove above method.
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
@@ -887,8 +952,13 @@ In the code example below, filtering a custom data source can be achieved by uti
 /// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling filtering operation.
     if (DataManagerRequest.Where?.Count > 0)
     {
         foreach (var condition in DataManagerRequest.Where)
@@ -900,9 +970,16 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
             }
         }
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
+
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
@@ -937,7 +1014,6 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Handling sorting operation
 
 When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
@@ -954,17 +1030,29 @@ In the code example below, sorting a custom data source can be accomplished by e
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    
+    // Retrieve data from the data source (e.g., database).\
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
+
+    // Handling sorting operation.
     if (DataManagerRequest.Sorted?.Count > 0)
     {
         dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
         //Add custom logic here if needed and remove above method.
     }
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
@@ -1015,11 +1103,17 @@ In the code example below, paging a custom data source can be achieved by utiliz
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
+    
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+    // Initialize QueryableOperation instance.
     QueryableOperation queryableOperation = new QueryableOperation();
 
+    // Get the total count of records.
     int totalRecordsCount = dataSource.Count();
-
+    
+    // Handling paging operation.
     if (DataManagerRequest.Skip > 0)
     {
         dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
@@ -1029,6 +1123,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
     }
 
+    // Return data based on the request.
     return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
@@ -1109,9 +1204,9 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
             let dataManager = new ejs.data.DataManager({
                 url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
                 adaptor: new CustomAdaptor(),
-                insertUrl: "https://localhost:xxxx/grid/Insert",
-                updateUrl: "https://localhost:xxxx/grid/Update",
-                removeUrl: "https://localhost:xxxx/grid/Remove",
+                insertUrl: "https://localhost:xxxx/Grid/Insert",
+                updateUrl: "https://localhost:xxxx/Grid/Update",
+                removeUrl: "https://localhost:xxxx/Grid/Remove",
             });
             grid.dataSource = dataManager;
         }
@@ -1144,7 +1239,9 @@ public class CRUDModel<T> where T : class
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the Orders table by calling the following **POST** method of an API.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Inserts a new order record into the database using parameterized queries.
 /// </summary>
@@ -1174,13 +1271,53 @@ public JsonResult Insert(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
+
+{% endhighlight %}
+
+{% highlight html tabtitle="Index.cshtml" %}
+
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+        processResponse(data, ds, query, xhr, request, changes) {
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            return original;
+        }
+        insert(dm, data) {
+        return {
+                url: dm.dataSource.insertUrl || dm.dataSource.url,
+                data: JSON.stringify({
+                    __RequestVerificationToken: "Syncfusion",
+                    value: data,
+                    action: 'insert'
+                }),
+                type: 'POST'
+        };
+    }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 **Update Operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the Orders table by involving the following **Post** method of an API.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
 /// <summary>
 /// Updates an existing order record in the database using parameterized queries.
 /// </summary>
@@ -1211,13 +1348,53 @@ public JsonResult Update(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
+
+{% endhighlight %}
+
+{% highlight html tabtitle="Index.cshtml" %}
+
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+        processResponse(data, ds, query, xhr, request, changes) {
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            return original;
+        }
+        update(dm, keyField, value) {
+            return {
+            url: dm.dataSource.updateUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            value: value,
+            action: 'update',
+            }),
+            type: 'POST',
+            };
+        }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 **Delete Operation**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the Orders table.
 
-```cs
+{% tabs %}
+{% highlight cs tabtitle="GridController.cs" %}
 /// <summary>
 /// Deletes an existing order record from the database using the specified OrderID.
 /// </summary>
@@ -1244,7 +1421,47 @@ public JsonResult Remove(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
-```
+
+{% endhighlight %}
+
+{% highlight html tabtitle="Index.cshtml" %}
+
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			return original;
+		}
+        remove(dm, keyField, value) {
+            return {
+            url: dm.dataSource.removeUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            key: value,
+            keyColumn: keyField,
+            action: 'remove',
+            }),
+            type: 'POST',
+            };
+        }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
+
+{% endhighlight %}
+{% endtabs %}
 
 **Batch Operation**
 
@@ -1363,14 +1580,30 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
+        batchRequest(dm, changes, e) {
+            return {
+            url: dm.dataSource.batchUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            added: changes.addedRecords,
+            changed: changes.changedRecords,
+            deleted: changes.deletedRecords,
+            key: e.key,
+            action: 'batch',
+            }),
+            type: 'POST',
+            };
+        }
 	}
 	document.addEventListener("DOMContentLoaded", function () {
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
-                batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
 				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
 			});
 			grid.dataSource = dataManager;
 		}
