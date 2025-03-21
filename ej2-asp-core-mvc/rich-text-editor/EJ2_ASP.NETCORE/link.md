@@ -105,6 +105,5 @@ The following example demonstrates how to customize the link quick toolbar using
 
 ## See Also
 
-* [Quick Toolbars in Toolbar](./toolbar#quick-inline-toolbar)
 * [Image with links](./image/#image-with-link)
 * [Insert File Attachments](./how-to/file-attachment)

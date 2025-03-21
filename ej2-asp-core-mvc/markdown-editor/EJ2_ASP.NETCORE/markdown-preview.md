@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Markdown to HTML preview in ##Platform_Name## Markdown Editor Component
+# Markdown to HTML preview in ##Platform_Name## Markdown Editor Control
 
 The Markdown Editor provides an instant preview of Markdown changes, allowing users to see the formatted output while typing or editing text. This enhances the editing experience by enabling real-time visualization of Markdown formatting.
 
