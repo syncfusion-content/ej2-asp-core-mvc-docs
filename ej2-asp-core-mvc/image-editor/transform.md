@@ -14,7 +14,9 @@ The Image Editor provides a range of transformation options for manipulating bot
 
 ## Rotate an image
 
-The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using `rotate` method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise. 
+The Image Editor allows to rotate the image and its annotations by a specific number of degrees clockwise or anti-clockwise using `rotate` method. This method takes a single parameter: the angle of rotation in degrees. A positive value will rotate the image clockwise, while a negative value will rotate it anti-clockwise.
+
+`Note:` It is recommended to pass values in multiples of 90° (e.g., 90, 180, -90) for proper rotation alignment.
 
 Here is an example of rotating an image in a button click event.
 
@@ -113,7 +115,7 @@ Here is an example of straightening the image.
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-straighten.jpg)
+![ImageEditor Sample](images/image-editor-straighten.png)
 
 ## Zoom in or out an image 
 
@@ -123,44 +125,15 @@ The Image Editor allows to magnify an image using the `zoom` method. This method
 
 * zoomPoint - Specifies x and y coordinates of a point as ImageEditorPoint on image to perform zooming. 
 
-Here is an example of zooming an image in a button click event.
+### Minimum and maximum zoom level 
 
-{% if page.publishingplatform == "aspnet-core" %}
+The `minZoomFactor` property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/transform/zoom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/transform/zoom/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/transform/zoom/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/transform/zoom/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-zoom.jpg)
-
-### Maximum and minimum zoom level 
+By default, the `minZoomFactor` value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size.
 
 The `maxZoomFactor` property is a useful feature in the Image Editor that allows you to define the maximum level of zoom permitted for an image. This property sets a limit on how much the image can be magnified, preventing excessive zooming that may result in a loss of image quality or visibility. 
 
-By default, the `minZoomFactor` value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
-
-The `maxZoomFactor` property allows you to specify the minimum level of zoom that is allowed for an image. By setting this property, you can prevent the image from being zoomed out beyond a certain point, ensuring that it remains visible and usable even at the smallest zoom level. 
-
-By default, the `maxZoomFactor` value is set to 0.1, meaning that the image can be zoomed out up to 10 times its original size. 
+By default, the `maxZoomFactor` value is set to 10, meaning that the image can be zoomed in up to 10 times its original size. This ensures that the zooming functionality remains within reasonable bounds and maintains the integrity of the image. 
 
 Here is an example of specifying `minZoomFactor` and `maxZoomFactor` property in `zoomSettings` options in an image editor.
 
@@ -218,7 +191,11 @@ The Image Editor allows to pan an image when the image exceeds the canvas size o
 {% endtabs %}
 {% endif %}
 
-### Panning event 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-panning.jpg)
+
+## Panning event 
 
 The `panning` event is activated when the user begins dragging the image within the canvas. This event provide an opportunity to perform specific actions, like adjusting the position of an image, in response to the gesture of panning. And these event uses `panEventArgs` to handle the panning action when the user starts dragging the image. 
 

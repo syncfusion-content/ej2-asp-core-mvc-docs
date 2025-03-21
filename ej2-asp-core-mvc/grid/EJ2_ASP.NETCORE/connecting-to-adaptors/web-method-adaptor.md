@@ -92,7 +92,7 @@ namespace WebMethodAdaptor.Models
 {% endhighlight %}
 {% endtabs %}
 
-**3. API controller creation:**
+**3. API Controller Creation:**
 
 Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion ASP.NET Core Grid.
 

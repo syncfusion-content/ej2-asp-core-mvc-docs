@@ -1,0 +1,44 @@
+<div class="control_wrapper">
+    @Html.EJS().TreeView("listdata").Fields(field =>
+   field.Id("id").ParentID("pid").
+   Expanded("expanded").Text("name").HasChildren("hasChild")
+   .DataSource(ViewBag.Listdata)).NodeClicked("nodeClicked").Render()
+</div>
+<div class="col-lg-12 control-section e-img-editor-sample">
+    @Html.EJS().ImageEditor("image-editor").Render()
+</div>
+
+<script>
+    function nodeClicked(args) {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        var treeViewObj = ej.base.getComponent(document.getElementById('listdata'), 'treeview');
+        let nodeId = args.node.getAttribute('data-uid');
+        let nodeData = treeViewObj.getTreeData(nodeId)[0];
+        if (nodeData && nodeData.image) {
+            imageEditorObj.open(nodeData.image);
+        }
+    }
+
+</script>
+
+<style>
+    .image-editor {
+        margin: 0 auto;
+    }
+
+    .e-img-editor-sample {
+        height: 80vh;
+        width: 100%;
+    }
+
+    @@media only screen and (max-width: 700px) {
+        .e-img-editor-sample {
+            height: 75vh;
+            width: 100%;
+        }
+    }
+
+    .control-wrapper {
+        height: 100%;
+    }
+</style>
