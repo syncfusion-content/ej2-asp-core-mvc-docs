@@ -76,7 +76,7 @@ You can use the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 ## Setting readonly
 
-You can use [readOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ReadOnly) property to disable the user interactions in the stepper.
+You can use [ReadOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_ReadOnly) property to disable the user interactions in the stepper.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
