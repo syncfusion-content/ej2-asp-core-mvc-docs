@@ -3,12 +3,11 @@
 </div>
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("160").Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("160").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("Freight").HeaderText("Freight").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-
-}).Toolbar(new List<string>() { "Search" }).ActionComplete("actionComplete").Render()
+})..AllowPaging().PageSettings(page => { page.PageCount(5);}).Toolbar(new List<string>() { "Search" }).ActionComplete("actionComplete").Render()
 <script>
     var lastSearchString = '';
     function actionComplete(args){

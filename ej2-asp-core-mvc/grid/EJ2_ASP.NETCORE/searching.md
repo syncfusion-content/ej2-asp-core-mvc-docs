@@ -255,18 +255,19 @@ The following example demonstrates how to clear the searched records using an ex
 
 > You can also clear the searched records by using the clear icon within the search input field.
 
-## Retrieving searched records using a button click
+## Retrieve searched records by external button
 
 The Syncfusion Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
 
 To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
 
-The following example demonstrates how to retrieve searched records using an external button.
+The following example demonstrates how to retrieve searched records using an external button:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/search/retrieve-records/tagHelper %}
 {% endhighlight %}
+
 {% highlight c# tabtitle="retrieve-records.cs" %}
 {% include code-snippet/grid/search/retrieve-records/retrieve-records.cs %}
 {% endhighlight %}
