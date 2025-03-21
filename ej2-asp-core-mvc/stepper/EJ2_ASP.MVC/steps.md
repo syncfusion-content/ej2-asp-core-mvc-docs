@@ -72,7 +72,7 @@ You can use the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Stepper Disabled step](images/step-disabled.png)
+![ASP.NET MVC Stepper Disabled step](images/step-disabled.jpg)
 
 ## Setting readonly
 
