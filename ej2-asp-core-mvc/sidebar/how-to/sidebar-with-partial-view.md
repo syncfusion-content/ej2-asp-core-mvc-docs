@@ -11,9 +11,11 @@ documentation: ug
 
 # Sidebar with partial view
 
-The following example demonstrates how to render the sidebar with partial view. Sidebar element is  placed inside the RenderPartialView.cshtml and refer that sidebar element in layout page.
+The example below demonstrates how to render the Sidebar using a partial view. The Sidebar element is included inside the **RenderPartialView.cshtml** file and is referenced in the layout page.
 
 {% if page.publishingplatform == "aspnet-core" %}
+
+Additionally, you can use this [`link`](https://ej2.syncfusion.com/aspnetcore/documentation/accordion/style) for more Accordion control styles.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -25,9 +27,14 @@ The following example demonstrates how to render the sidebar with partial view. 
 {% highlight c# tabtitle="_RenderPartialView_core.cshtml" %}
 {% include code-snippet/sidebar/partial-view/_RenderPartialView_core.cshtml %}
 {% endhighlight %}
+{% highlight c# tabtitle="style" %}
+{% include code-snippet/sidebar/partial-view/styles.css %}
+{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Additionally, you can use this [`link`](https://ej2.syncfusion.com/aspnetmvc/documentation/accordion/style) for more Accordion control styles.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -39,7 +46,11 @@ The following example demonstrates how to render the sidebar with partial view. 
 {% highlight c# tabtitle="_RenderPartialView_mvc.cshtml" %}
 {% include code-snippet/sidebar/partial-view/_RenderPartialView_mvc.cshtml %}
 {% endhighlight %}
+{% highlight c# tabtitle="style" %}
+{% include code-snippet/sidebar/partial-view/styles.css %}
+{% endhighlight %}
 {% endtabs %}
+
 {% endif %}
 
 
