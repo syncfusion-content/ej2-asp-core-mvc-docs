@@ -11,7 +11,7 @@ documentation: ug
 
 # Sidebar with partial view
 
-The example below demonstrates how to render the Sidebar using a partial view. The Sidebar element is included inside the **RenderPartialView.cshtml** file and is referenced in the layout page.
+The example below demonstrates how to render the Sidebar using a partial view. The Sidebar element is included inside the **RenderPartialView.cshtml** file and is referenced in the layout page. The Accordion control is rendered inside the Sidebar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
