@@ -82,7 +82,7 @@ You can use [ReadOnly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/stepper/steps/readonly/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="readonly.cs" %}
+{% highlight c# tabtitle="Readonly.cs" %}
 {% include code-snippet/stepper/steps/readonly/readonly.cs %}
 {% endhighlight %}
 {% endtabs %}
