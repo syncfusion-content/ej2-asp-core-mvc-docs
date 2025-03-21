@@ -4,7 +4,7 @@ title: Bind SQL Data in Syncfusion ##Platform_Name## Grid component using Dapper
 description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, binding it to Syncfusion Component, and performing CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: Adaptors, customadaptor, urladaptor, dapper, remotedata 
+keywords: adaptors, customadaptor, urladaptor, dapper, remotedata 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -1199,26 +1199,40 @@ Let’s see how to perform CRUD operation using Microsoft SQL Server data with G
 To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs%}
-{% highlight js tabtitle="CustomAdaptor.js" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
-import {UrlAdaptor} from '@syncfusion/ej2-data';
-export class CustomAdaptor extends UrlAdaptor {
-  processResponse() {
-    const original = super.processResponse(...arguments);
-    return original;
-  }
-  update(dm, keyField, value) {
-    return {
-      url: dm.dataSource.updateUrl || dm.dataSource.url,
-      data: JSON.stringify({
-      __RequestVerificationToken: "Syncfusion",
-      value: value,
-      action: 'update',
-      }),
-      type: 'POST',
-    };
-  }
-}
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+        processResponse(data, ds, query, xhr, request, changes) {
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            return original;
+        }
+        insert(dm, data) {
+        return {
+                url: dm.dataSource.insertUrl || dm.dataSource.url,
+                data: JSON.stringify({
+                    __RequestVerificationToken: "Syncfusion",
+                    value: data,
+                    action: 'insert'
+                }),
+                type: 'POST'
+        };
+    }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
 
 {% endhighlight %}
 
@@ -1266,26 +1280,40 @@ public class CRUDModel<T> where T : class
 To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight js tabtitle="CustomAdaptor.js" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
-import {UrlAdaptor} from '@syncfusion/ej2-data';
-export class CustomAdaptor extends UrlAdaptor {
-  processResponse() {
-    const original = super.processResponse(...arguments);
-    return original;
-  }
-  update(dm, keyField, value) {
-    return {
-      url: dm.dataSource.updateUrl || dm.dataSource.url,
-      data: JSON.stringify({
-      __RequestVerificationToken: "Syncfusion",
-      value: value,
-      action: 'update',
-      }),
-      type: 'POST',
-    };
-  }
-}
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+        processResponse(data, ds, query, xhr, request, changes) {
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            return original;
+        }
+        update(dm, keyField, value) {
+            return {
+            url: dm.dataSource.updateUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            value: value,
+            action: 'update',
+            }),
+            type: 'POST',
+            };
+        }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
 
 {% endhighlight %}
 
@@ -1332,27 +1360,41 @@ public class CRUDModel<T> where T : class
 To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight js tabtitle="CustomAdaptor.js" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
-import {UrlAdaptor} from '@syncfusion/ej2-data';
-export class CustomAdaptor extends UrlAdaptor {
-  processResponse() {
-    const original = super.processResponse(...arguments);
-    return original;
-  }
-  remove(dm, keyField, value) {
-    return {
-      url: dm.dataSource.removeUrl || dm.dataSource.url,
-      data: JSON.stringify({
-      __RequestVerificationToken: "Syncfusion",
-      key: value,
-      keyColumn: keyField,
-      action: 'remove',
-      }),
-      type: 'POST',
-    };
-  }
-}
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			return original;
+		}
+        remove(dm, keyField, value) {
+            return {
+            url: dm.dataSource.removeUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            key: value,
+            keyColumn: keyField,
+            action: 'remove',
+            }),
+            type: 'POST',
+            };
+        }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
 
 {% endhighlight %}
 
@@ -1400,29 +1442,51 @@ public class CRUDModel<T> where T : class
 To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight js tabtitle="CustomAdaptor.js" %}
+// Replace `xxxx` with your actual localhost port number.
+@Html.EJS().Grid("Grid").AllowSorting().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
-import {UrlAdaptor} from '@syncfusion/ej2-data';
-export class CustomAdaptor extends UrlAdaptor {
-  processResponse() {
-    const original = super.processResponse(...arguments);
-    return original;
-  }
-  batchRequest(dm, changes, e) {
-    return {
-      url: dm.dataSource.batchUrl || dm.dataSource.url,
-      data: JSON.stringify({
-      __RequestVerificationToken: "Syncfusion",
-      added: changes.addedRecords,
-      changed: changes.changedRecords,
-      deleted: changes.deletedRecords,
-      key: e.key,
-      action: 'batch',
-      }),
-      type: 'POST',
-    };
-  }
-}
+<script>
+	class CustomAdaptor extends ej.data.UrlAdaptor {
+		processResponse(data, ds, query, xhr, request, changes) {
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			return original;
+		}
+        batchRequest(dm, changes, e) {
+            return {
+            url: dm.dataSource.batchUrl || dm.dataSource.url,
+            data: JSON.stringify({
+            __RequestVerificationToken: "Syncfusion",
+            added: changes.addedRecords,
+            changed: changes.changedRecords,
+            deleted: changes.deletedRecords,
+            key: e.key,
+            action: 'batch',
+            }),
+            type: 'POST',
+            };
+        }
+	}
+	document.addEventListener("DOMContentLoaded", function () {
+		let grid = document.getElementById("Grid").ej2_instances[0];
+		if (grid) {
+			let dataManager = new ejs.data.DataManager({
+				url: "https://localhost:xxxx/Grid/UrlDataSource",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/Grid/Update",
+				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			});
+			grid.dataSource = dataManager;
+		}
+	});
+</script>
 
 {% endhighlight %}
 
@@ -1433,7 +1497,6 @@ export class CustomAdaptor extends UrlAdaptor {
 /// </summary>
 /// <param name="CRUDModel<T>">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns void.</returns>
-
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
   if (value.changed != null && value.changed.Count > 0)
@@ -1510,4 +1573,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Grid bound with Microsoft SQL Server data](../images/DB-grid-action.gif)
+![Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-batch.gif)
