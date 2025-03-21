@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Support in Syncfusion  ##Platform_Name## Rich Text Editor Control
+title: Form Support in Syncfusion ##Platform_Name## RichTextEditor Control
 description: Learn here all about Form Support in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Support

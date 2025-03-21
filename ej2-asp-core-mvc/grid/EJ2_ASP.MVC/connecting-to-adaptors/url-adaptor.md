@@ -171,7 +171,6 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
@@ -179,7 +178,6 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
     col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
     col.Field("ShipCity").HeaderText("ShipCity").Width("140").Add();
 }).Render()
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,7 +290,6 @@ To handle sorting operation, configure your API to support custom sorting criter
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
-
 public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
 {
     // Retrieve data from the data source (e.g., database).
@@ -402,7 +399,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 {% endhighlight %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the `IsPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the `isPrimaryKey` property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 

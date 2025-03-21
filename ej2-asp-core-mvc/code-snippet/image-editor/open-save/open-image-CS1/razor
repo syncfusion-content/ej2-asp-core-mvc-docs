@@ -1,8 +1,8 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     @Html.EJS().ImageEditor("image-editor").Created("created").Render()
 </div>
-@Html.EJS().Button("saveImage").CssClass("e-primary").Content("Save Image").Click("saveImage").Render()
-@Html.EJS().Button("setImage").CssClass("e-primary").Content("Set Image").Click("setImage").Render()
+@Html.EJS().Button("savebase64").CssClass("e-primary").Content("SAVE BASE64").Click("savebase64").Render()
+@Html.EJS().Button("openbase64").CssClass("e-primary").Content("OPEN BASE64").Click("openbase64").Render()
 
 <script>
     var base64String;
@@ -15,7 +15,7 @@
         }
     }
 
-    function saveImage() {
+    function savebase64() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         var imageData = imgObj.getImageData();
         const canvas = document.createElement('canvas');
@@ -25,7 +25,7 @@
         context.putImageData(imageData, 0, 0);
         this.base64String = canvas.toDataURL();
     }
-    function setImage() {
+    function openbase64() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.open(this.base64String);
     }
