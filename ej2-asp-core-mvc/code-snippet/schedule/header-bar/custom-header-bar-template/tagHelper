@@ -1,0 +1,43 @@
+@using Syncfusion.EJ2.Schedule
+@using Syncfusion.EJ2.DropDowns
+
+<ejs-schedule id="schedule" width="100%" height="550" selectedDate="new DateTime(2025, 3, 10)" currentView="Month" created="onScheduleCreate">
+    <e-schedule-views>
+        <e-schedule-view option="Month"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-eventsettings dataSource="@ViewBag.Appointments"></e-schedule-eventsettings>
+    <e-schedule-resources>
+        <e-schedule-resource field="OwnerId" title="Owners" name="Owners" allowMultiple="true" dataSource="@ViewBag.Resources" textField="OwnerText" idField="OwnerId" colorField="Color"></e-schedule-resource>
+    </e-schedule-resources>
+    <e-schedule-toolbaritems>
+        <e-schedule-toolbaritem name="Previous" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="Next" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="DateRangeText" align="Left"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem align="Center" name="Custom" template="#dropdownTemplate"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="Today" align="Right"></e-schedule-toolbaritem>
+        <e-schedule-toolbaritem name="Views" align="Right"></e-schedule-toolbaritem>
+    </e-schedule-toolbaritems>
+</ejs-schedule>
+
+<div id="dropdownTemplate">
+    <ejs-dropdownlist id="ownerDropdown" dataSource="@ViewBag.Resources" value="1" placeholder="Select Owner" change="onOwnerChange">
+        <e-dropdownlist-fields text="OwnerText" value="OwnerId"></e-dropdownlist-fields>
+    </ejs-dropdownlist>
+</div>
+
+<script type="text/javascript">
+    function onScheduleCreate () {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        let query = new ej.data.Query().where('OwnerId', 'equal', 1);
+        scheduleObj.eventSettings.query = query;
+        scheduleObj.dataBind();
+    }
+
+    function onOwnerChange (args) {
+        var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
+        let value = args.value;
+        let query = new ej.data.Query().where('OwnerId', 'equal', value);
+        scheduleObj.eventSettings.query = query;
+        scheduleObj.dataBind();
+    }
+</script>
