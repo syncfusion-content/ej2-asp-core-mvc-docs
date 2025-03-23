@@ -297,16 +297,17 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 
 ### Set different locale for two Grids in same page
 
-The Syncfusion Grid allows you to use different locales for multiple Grids on the same page. You can achieve this by setting the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property for each Grid individually.
+The Syncfusion Grid allows configuring different [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) settings for multiple Grids displayed on the same page. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages.
 
-In the following example, the first Grid is configured to use the French **de-DE** locale. This is achieved by setting the locale property to **de-DE** and loading the French translation object using the **L10n.load** function from the **ej2-base** module. For the second Grid, the locale property is set to **en-US**, which applies the default English locale.
+In this setup, each Grid can display text in a different language based on its assigned `locale`. The `load` function is used to define translations for specific languages, ensuring that each Grid correctly applies the localized text for headers, toolbar items, and action buttons.
 
-This setup demonstrates how to display/apply different locale texts for each Grid on the same page by configuring the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property individually and loading the necessary translations.
+For example, when the first Grid is set to use the **fr-FR** locale, it applies the French translations loaded via **L10n.load**. The second Grid, set to **en-US**, retains the default English text. This demonstrates how localization can be customized per Grid without affecting other components on the page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/globalization/two-localization/tagHelper %}
 {% endhighlight %}
+
 {% highlight c# tabtitle="Localization.cs" %}
 {% include code-snippet/grid/globalization/two-localization/localization.cs %}
 {% endhighlight %}
