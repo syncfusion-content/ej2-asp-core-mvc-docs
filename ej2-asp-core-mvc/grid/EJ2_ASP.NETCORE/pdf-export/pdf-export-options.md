@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Grid Component
+title: PDF Export Options in ##Platform_Name## Syncfusion Grid Component
 description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
