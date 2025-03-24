@@ -1,0 +1,40 @@
+@using Newtonsoft.Json
+<div style="padding-bottom: 10px">
+   <ejs-button id="loadButton" cssClass="e-primary" content="Load Data"></ejs-button>
+   <ejs-button id="showButton" cssClass="e-primary custom" content="Show Spinner"></ejs-button>
+   <ejs-button id="hideButton" cssClass="e-primary custom" content="Hide Spinner"></ejs-button>
+</div>
+<ejs-grid id="grid" allowPaging="true" height="348px">    
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('loadButton').onclick = handleButtonClick;
+    document.getElementById('showButton').onclick = handleButtonClick;
+    document.getElementById('hideButton').onclick = handleButtonClick;
+    function handleButtonClick(event){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (event.target.id === "showButton") {
+            grid.showSpinner();
+        }
+        else if(event.target.id === "loadButton"){
+            grid.showSpinner();
+            setTimeout(() => {
+                grid.dataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+                grid.hideSpinner();
+            }, 1000);
+        }
+        else {
+            grid.hideSpinner();
+        }
+    }
+</script>
+<style>
+    .custom{
+        margin-left: 10px;
+    }
+</style>

@@ -89,7 +89,7 @@ namespace RemoteSaveAdaptor.Models
 
 ```
 
-**3. API Controller Creation:**
+**3. API controller creation:**
 
 Create a file named `OrdersController.cs` under the **Controllers** folder. This controller will handle data retrieval and communication with the Syncfusion ASP.NET Core Grid.
 
@@ -102,6 +102,10 @@ namespace RemoteSaveAdaptor.Controllers
   [ApiController]
   public class OrdersController : Controller
   {
+    /// <summary>
+    /// Handles HTTP POST requests to retrieve order data.
+    /// </summary>
+    /// <returns>Returns an object containing the list of orders and the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post()
@@ -116,6 +120,10 @@ namespace RemoteSaveAdaptor.Controllers
       return new { result = DataSource, count = totalRecordsCount };
     }
 
+    /// <summary>
+    /// Retrieves all order records from the data source.
+    /// </summary>
+    /// <returns>Returns a list of all order details.</returns
     [HttpGet]
     [Route("api/[controller]")]
     public List<OrdersDetails> GetOrderData()
@@ -143,7 +151,7 @@ The below class is used to structure data sent during CRUD operations.
   }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
 To insert a new record, utilize the `insertUrl` property to specify the controller action mapping URL for the insert operation. Implement the `Insert` method in the API controller to handle the addition of new records.  The details of the newly added record are bound to the **newRecord** parameter.
 
@@ -254,9 +262,9 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-**Step 2:** Add Syncfusion ASP.NET Core Tag Helper
+**Step 2:** Add Syncfusion ASP.NET Core tag helper
 
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` tagHelper.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -266,7 +274,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
 
-**Step 3:** Add Stylesheets and Script Resources
+**Step 3:** Add stylesheets and script resources
 
 To include the required styles and scripts, add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file:
 
@@ -298,16 +306,17 @@ To include the required styles and scripts, add the following references inside 
 {% endhighlight %}
 {% endtabs %}
 
-**Step 4:** Register Syncfusion Script Manager:
+**Step 4:** Register Syncfusion script manager:
 
-To ensure proper script execution, register the Syncfusion Script Manager `<ejs-scripts>` at the end of the `<body>` tag in your ASP.NET Core application as follows:
+To ensure proper script execution, register the Syncfusion script manager `<ejs-scripts>` at the end of the `<body>` tag in your ASP.NET Core application as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <!-- Syncfusion ASP.NET Core script manager -->
+
     <ejs-scripts></ejs-scripts>
 </body>
 
@@ -318,7 +327,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `<ejs-
 
 Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page. The Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
 
-***CRUD Operations Mapping:*** CRUD operations in the Grid can be mapped to server-side controller actions using the following properties:
+***CRUD operations mapping:*** CRUD operations in the Grid can be mapped to server-side controller actions using the following properties:
 
 * **insertUrl**: Specifies the URL for inserting new data.
 * **removeUrl**: Specifies the URL for removing existing data.
@@ -329,6 +338,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
+
 <ejs-grid id="Grid" height="315" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel"})">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
@@ -377,6 +387,7 @@ Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` p
         }
     </script>
 }
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -393,6 +404,7 @@ var app = builder.Build();
 app.MapRazorPages();
 app.MapControllers();
 ```
+
 **Step 7:** Run the Project:
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.

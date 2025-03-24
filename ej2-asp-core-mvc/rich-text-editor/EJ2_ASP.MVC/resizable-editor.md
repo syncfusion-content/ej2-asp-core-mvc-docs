@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizable Editor in ##Platform_Name## Rich Text Editor Control
+title: Resize Editor in ##Platform_Name## RichTextEditor Control | Syncfusion
 description: Learn here all about Resizable Editor in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resizable Editor
@@ -37,7 +37,7 @@ The following sample demonstrates the resizable feature.
 {% endtabs %}
 {% endif %}
 
-![Rich Text Editor Resizable support](../images/Resizable-Editor.png)
+![Rich Text Editor Resizable support](./images/Resizable-Editor.png)
 
 ## Setting Editor Resize Limits
 
