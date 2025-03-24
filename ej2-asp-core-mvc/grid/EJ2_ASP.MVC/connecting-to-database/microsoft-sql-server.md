@@ -83,11 +83,11 @@ namespace Grid_MSSQL.Controllers
         {
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
             List<Orders> orders = new List<Orders>();
-                using (var sqlConnection = new SqlConnection(ConnectionString))
+                using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
                 {
                     sqlConnection.Open();
-                    using (var sqlCommand = new SqlCommand(query, sqlConnection))
-                    using (var dataAdapter = new SqlDataAdapter(sqlCommand))
+                    using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                    using (SqlDataAdapter dataAdapter= new SqlDataAdapter(sqlCommand))
                     {
                         DataTable dataTable = new DataTable();
                         dataAdapter.Fill(dataTable);
@@ -306,9 +306,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     // Handling filtering operation.
     if (DataManagerRequest.Where?.Count > 0)
     {
-        foreach (var condition in DataManagerRequest.Where)
+        foreach (WhereFilter condition in DataManagerRequest.Where)
         {
-            foreach (var predicate in condition.predicates)
+            foreach (WhereFilter predicate in condition.predicates)
             {
                 dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
                 //Add custom logic here if needed and remove above method.
@@ -510,12 +510,12 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Insert(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to insert a new order record using parameters.
         string query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameters to prevent SQL injection and handle null values.
             sqlCommand.Parameters.AddWithValue("@CustomerID", model.value.CustomerID ?? (object)DBNull.Value);
@@ -549,12 +549,12 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Update(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to update the order details based on OrderID.
         string query = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameters to ensure data integrity and prevent SQL injection.
             sqlCommand.Parameters.AddWithValue("@CustomerID", model.value.CustomerID ?? (object)DBNull.Value);
@@ -587,12 +587,12 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Remove(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to delete the order based on OrderID.
         string query = "DELETE FROM Orders WHERE OrderID=@OrderID";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameter to ensure data integrity and prevent SQL injection.
             sqlCommand.Parameters.AddWithValue("@OrderID", model.key ?? (object)DBNull.Value);
@@ -624,12 +624,12 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     // Establish SQL connection.
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         sqlConnection.Open();
 
         // Begin a database transaction to ensure atomicity.
-        using (var transaction = sqlConnection.BeginTransaction())
+        using (SqlTransaction transaction = sqlConnection.BeginTransaction())
         {
             // Process updated records.
             if (value.changed != null && value.changed.Count > 0)
@@ -637,9 +637,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for updating records in the database.
                 string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID.";
 
-                foreach (var record in value.changed)
+                foreach (Orders record in value.changed)
                 {
-                    using (var sqlCommand = new SqlCommand(updateQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(updateQuery, sqlConnection, transaction))
                     {
                         // Add parameters to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@CustomerID", record.CustomerID ?? (object)DBNull.Value);
@@ -660,9 +660,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for inserting new records into the database.
                 string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID).";
 
-                foreach (var record in value.added)
+                foreach (Orders record in value.added)
                 {
-                    using (var sqlCommand = new SqlCommand(insertQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(insertQuery, sqlConnection, transaction))
                     {
                         // Add parameters to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@CustomerID", record.CustomerID ?? (object)DBNull.Value);
@@ -682,9 +682,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for deleting records from the database.
                 string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID.";
 
-                foreach (var record in value.deleted)
+                foreach (Orders record in value.deleted)
                 {
-                    using (var sqlCommand = new SqlCommand(deleteQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(deleteQuery, sqlConnection, transaction))
                     {
                         // Add parameter to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@OrderID", record.OrderID ?? (object)DBNull.Value);
@@ -821,11 +821,11 @@ namespace Grid_MSSQL.Controllers
         {
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
             List<Orders> orders = new List<Orders>();
-                using (var sqlConnection = new SqlConnection(ConnectionString))
+                using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
                 {
                     sqlConnection.Open();
-                    using (var sqlCommand = new SqlCommand(query, sqlConnection))
-                    using (var dataAdapter = new SqlDataAdapter(sqlCommand))
+                    using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                    using (SqlDataAdapter dataAdapter= new SqlDataAdapter(sqlCommand))
                     {
                         DataTable dataTable = new DataTable();
                         dataAdapter.Fill(dataTable);
@@ -961,9 +961,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     // Handling filtering operation.
     if (DataManagerRequest.Where?.Count > 0)
     {
-        foreach (var condition in DataManagerRequest.Where)
+        foreach(WhereFilter condition in DataManagerRequest.Where)
         {
-            foreach (var predicate in condition.predicates)
+            foreach(WhereFilter predicate in condition.predicates)
             {
                 dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
                 //Add custom logic here if needed and remove above method.
@@ -1249,12 +1249,12 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Insert(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to insert a new order record using parameters.
         string query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameters to prevent SQL injection and handle null values.
             sqlCommand.Parameters.AddWithValue("@CustomerID", model.value.CustomerID ?? (object)DBNull.Value);
@@ -1325,12 +1325,12 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Update(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to update the order details based on OrderID.
         string query = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameters to ensure data integrity and prevent SQL injection.
             sqlCommand.Parameters.AddWithValue("@CustomerID", model.value.CustomerID ?? (object)DBNull.Value);
@@ -1402,12 +1402,12 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Remove(CRUDModel<Orders> model)
 {
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         // Define the SQL query to delete the order based on OrderID.
         string query = "DELETE FROM Orders WHERE OrderID=@OrderID";
         
-        using (var sqlCommand = new SqlCommand(query, sqlConnection))
+        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
         {
             // Add parameter to ensure data integrity and prevent SQL injection.
             sqlCommand.Parameters.AddWithValue("@OrderID", model.key ?? (object)DBNull.Value);
@@ -1480,12 +1480,12 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     // Establish SQL connection.
-    using (var sqlConnection = new SqlConnection(ConnectionString))
+    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
     {
         sqlConnection.Open();
 
         // Begin a database transaction to ensure atomicity.
-        using (var transaction = sqlConnection.BeginTransaction())
+        using (SqlTransaction transaction = sqlConnection.BeginTransaction())
         {
             // Process updated records.
             if (value.changed != null && value.changed.Count > 0)
@@ -1493,9 +1493,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for updating records in the database.
                 string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID.";
 
-                foreach (var record in value.changed)
+                foreach (Orders record in value.changed)
                 {
-                    using (var sqlCommand = new SqlCommand(updateQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(updateQuery, sqlConnection, transaction))
                     {
                         // Add parameters to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@CustomerID", record.CustomerID ?? (object)DBNull.Value);
@@ -1516,9 +1516,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for inserting new records into the database.
                 string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID).";
 
-                foreach (var record in value.added)
+                foreach (Orders record in value.added)
                 {
-                    using (var sqlCommand = new SqlCommand(insertQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(insertQuery, sqlConnection, transaction))
                     {
                         // Add parameters to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@CustomerID", record.CustomerID ?? (object)DBNull.Value);
@@ -1538,9 +1538,9 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
                 // SQL query for deleting records from the database.
                 string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID.";
 
-                foreach (var record in value.deleted)
+                foreach (Orders record in value.deleted)
                 {
-                    using (var sqlCommand = new SqlCommand(deleteQuery, sqlConnection, transaction))
+                    using (SqlCommand sqlCommand = new SqlCommand(deleteQuery, sqlConnection, transaction))
                     {
                         // Add parameter to avoid SQL injection.
                         sqlCommand.Parameters.AddWithValue("@OrderID", record.OrderID ?? (object)DBNull.Value);
