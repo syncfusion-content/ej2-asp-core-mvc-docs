@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Execute Command in ##Platform_Name## Rich Text Editor Control | Syncfusion
+title: ExecuteCommand in ##Platform_Name## RichTextEditor Control| Syncfusion
 description: Learn here all about Execute Command in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Execute Command

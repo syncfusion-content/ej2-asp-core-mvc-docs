@@ -18,17 +18,27 @@ In the Image Editor, the toolbar property provides the ability to customize the 
 
 Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
 
-* Crop
-* Transform
-* Annotate
+* Open
+* Undo
+* Redo
 * ZoomIn
 * ZoomOut
-* Open
+* Crop
+* RotateLeft
+* RotateRight
+* HorizontalFlip
+* VerticalFlip
+* Straightening
+* Annotate
+* Finetune
+* Filter
+* Frame
+* Resize
+* Redact
 * Reset
 * Save
-* Pan
 
-## Add a custom toolbar items
+## Add a custom toolbar item
 
 The `toolbar` property in the Image Editor allows to add or remove toolbar items to include only the tools they frequently use, streamlining the editing process and reducing clutter. 
 
@@ -71,10 +81,10 @@ Here is an example of hiding the toolbar of the image editor using `toolbar` pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -82,32 +92,32 @@ Here is an example of hiding the toolbar of the image editor using `toolbar` pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+![ImageEditor Sample](images/image-editor-hide-toolbar.png)
 
 ## Show or hide a toolbar item
 
-The [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the toolbar property includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
+The [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the toolbar property includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using `toolbar` property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
 
-Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property.
+Here is an example of hiding the cropping and selection toolbar items using `toolbar` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/tagHelper %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,28 +125,121 @@ Here is an example of hiding the cropping and selection toolbar items using [`to
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/razor %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/custom-toolbar/default.cs %}
+{% include code-snippet/image-editor/toolbar/hide-toolbar-item/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-custom-toolbar.jpg)
+![ImageEditor Sample](images/image-editor-hide-toolbar-item.jpg)
 
 ## Enable or disable a toolbar item
 
-The [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property is employed to enable or disable toolbar items in the Image Editor. By default, the [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property includes the default toolbar items, and these items cannot be disabled. However, if you have defined custom toolbar items using the toolbarItemModel, you can enable or disable them by configuring their respective properties within the [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property. This provides the flexibility to control the availability and functionality of custom toolbar items based on your specific requirements. 
+The [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property is employed to enable or disable toolbar items in the Image Editor. By default, the `toolbar` property includes the default toolbar items, and these items cannot be disabled. However, if you have defined custom toolbar items using the toolbarItemModel, you can enable or disable them by configuring their respective properties within the `toolbar` property. This provides the flexibility to control the availability and functionality of custom toolbar items based on your specific requirements. 
 
-Here is an example of disabling the custom toolbar item using [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_Toolbar) property.
+Here is an example of disabling the custom toolbar item using `toolbar` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/enable-disable-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-enable-disable-toolbar.png)
 
 
 ## Enable or disable a contextual toolbar item
 
 The toolbarItems property in the toolbarEventArgs is used to enable or disable contextual toolbar items in the Image Editor. To enable or disable the default toolbar items, you can accomplish this by setting the Disabled property to true in the ImageEditorToolbarItemModel within the ToolbarItems property. This allows you to selectively enable or disable specific default toolbar items based on your requirements, providing a customized toolbar experience in the Image Editor.
+
+## Customize contextual toolbar
+
+The [`toolbarUpdating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarUpdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the `toolbarItems` property in the `ToolbarEventArgs` is utilized to add or remove contextual toolbar items.
+
+In the following example, the contextual toolbar for freehand drawing will be rendered with only the stroke color, while the stroke width, remove, and separator options are excluded using the toolbarUpdating event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/contextual-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/contextual-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/contextual-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/contextual-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-contextual-toolbar.jpg)
+
+## Add an additional contextual Toolbar item to text shape 
+
+The contextual toolbar that appears when inserting annotations in the Image Editor is customizable using the [`toolbarUpdating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarUpdating) event. This event is triggered when the contextual toolbar is rendered, allowing you to modify its contents. To add additional toolbar items to the contextual toolbar, you can access the `toolbarItems` property of the object within the event handler. By adding or removing items from the `toolbarItems` property based on the Item property, you can customize the options available in the contextual toolbar according to your needs. This gives you the ability to extend the functionality of the contextual toolbar and provide additional tools and options for working with inserted annotations.  
+
+Here is an example of adding the custom toolbar item to the contextual toolbar. 
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/add-contextual-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/add-contextual-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/toolbar/add-contextual-toolbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/toolbar/add-contextual-toolbar/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-additional-contextual-toolbar.jpg)
 
 ## Toolbar created event 
 
@@ -172,12 +275,16 @@ Here is an example of toolbar item clicking event using `toolbarItemClicked` pro
 {% endtabs %}
 {% endif %}
 
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-custom-toobar-item.png)
+
 ## Toolbar template
 
 The [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarTemplate) property in the Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
 
-Here is an example of using [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarTemplate) to render only the button to toggle the freehand draw option. 
-The toolbar of the Image Editor can be replaced with the user specific UI using the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarTemplate) property.
+Here is an example of using `toolbarTemplate` to render only the button to toggle the freehand draw option. 
+The toolbar of the Image Editor can be replaced with the user specific UI using the `toolbarTemplate` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,36 +312,3 @@ The toolbar of the Image Editor can be replaced with the user specific UI using 
 Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-template-toolbar.jpg)
-
-## Customize contextual toolbar
-
-The [`toolbarUpdating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ToolbarUpdating) event is triggered when inserting or selecting annotations, which opens the contextual toolbar in the Image Editor. Within this event, the `toolbarItems` property in the `ToolbarEventArgs` is utilized to add or remove contextual toolbar items.
-
-In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/contextual-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/contextual-toolbar/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/image-editor/toolbar/contextual-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/image-editor/toolbar/contextual-toolbar/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-Output be like the below.
-
-![ImageEditor Sample](images/image-editor-contextual-toolbar.jpg)

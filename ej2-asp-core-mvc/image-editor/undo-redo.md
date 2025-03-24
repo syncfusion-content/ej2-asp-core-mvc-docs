@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Undo Redo in Image Editor control | Syncfusion
-description: Learn here all about Undo Redo in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
+title: Undo Redo ##Platform_Name## ImageEditor Control | Syncfusion
+description: Learn here all about Undo Redo in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Undo Redo 
+control: Undo Redo
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -18,7 +19,7 @@ In an image editor, the undo and redo history typically have a limited capacity,
 
 The undo action in an image editor allows users to revert the most recent editing action or a series of actions back to their previous state. When the undo command is triggered, the image editor undoes the last applied modification, effectively restoring the image to its state before the action was performed. The undo action is useful for correcting mistakes, removing unwanted changes, or exploring different editing options without permanently altering the image.
 
-## Redo the Action
+## Redo the action
 
 The redo action in an image editor allows users to reapply previously undone actions or modifications to the image. When the redo command is triggered, the image editor reapplies the last action that was undone, bringing the image back to the state it was in after the action was initially applied. The redo is useful when users want to repeat an action that was previously undone or restore changes that were temporarily reversed.
 
