@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true" allowPdfExport="true" toolbarClick="toolbarClick" pdfExportComplete="pdfExportComplete" height="272px" toolbar="@(new List<string>() {"PdfExport"})">
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" allowPaging="true" allowPdfExport="true" toolbarClick="toolbarClick" pdfExportComplete="pdfExportComplete" height="272px" toolbar="@(new List<string>() {"PdfExport"})">
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="150" visible="false"></e-grid-column>
@@ -24,17 +24,16 @@
 
 <script>
     function toolbarClick(args) {
-        if (args.item.id === "Grid_pdfexport") {
-            let grid = document.getElementById("Grid").ej2_instances[0];
-            grid.getColumnByField("OrderDate").visible = false;
-            grid.getColumnByField("ShippedDate").visible = true;
-            grid.getColumnByField("ShipName").visible = true;
-            grid.pdfExport();
-        }
-    }
-    function pdfExportComplete() {
-        let grid = document.getElementById("Grid").ej2_instances[0];
-        grid.getColumnByField("OrderDate").visible = true;
-        grid.getColumnByField("ShipName").visible = false;
-    }
+		var grid = document.getElementById("grid").ej2_instances[0];
+		if (args.item.id === 'grid_excelexport') {
+			grid.columns[2].columns[0].visible = false;
+			grid.columns[3].columns[2].visible = true;
+			grid.pdfExport();
+		}
+	}
+	function pdfExportComplete() {
+		var grid = document.getElementById("grid").ej2_instances[0];
+		grid.columns[2].columns[0].visible = true;
+		grid.columns[3].columns[2].visible = false;
+	}
 </script>

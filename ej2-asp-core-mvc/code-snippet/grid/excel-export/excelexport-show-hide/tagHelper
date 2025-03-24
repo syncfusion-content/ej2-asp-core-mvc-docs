@@ -22,17 +22,18 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-    function toolbarClick(args) {
-        var grid = document.getElementById("grid").ej2_instances[0];
-        if (args.item.id === 'grid_excelexport') {
-            grid.getColumnByField("OrderDate").visible = false;
-            grid.getColumnByField("ShippedDate").visible = true;
-            grid.getColumnByField("ShipName").visible = true;
-            grid.excelExport();
-        }
-    }
-    function excelExportComplete() {
-        grid.getColumnByField("OrderDate").visible = true;
-        grid.getColumnByField("ShipName").visible = false;
-    }
+	function toolbarClick(args) {
+		var grid = document.getElementById("grid").ej2_instances[0];
+		if (args.item.id === 'grid_excelexport') {
+			grid.columns[2].columns[0].visible = false;
+			grid.columns[3].columns[2].visible = true;
+			grid.excelExport();
+		}
+	}
+    
+	function excelExportComplete() {
+		var grid = document.getElementById("grid").ej2_instances[0];
+		grid.columns[2].columns[0].visible = true;
+		grid.columns[3].columns[2].visible = false;
+	}
 </script>

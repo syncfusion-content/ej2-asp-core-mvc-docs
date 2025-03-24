@@ -1,7 +1,3 @@
-@{
-	ViewBag.Title = "Home Page";
-}
-
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").AllowExcelExport().ToolbarClick("toolbarClick").ExcelExportComplete("excelExportComplete").Columns(col =>
 {
 	col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -17,20 +13,21 @@
 		shipCol.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 		shipCol.Field("ShipName").HeaderText("Ship Name").Width("150").Visible(false).Add();
 	}).Add();
-}).Toolbar(new List<string>() { "ExcelExport"}).Render()
+}).Toolbar(new List<string>() { "ExcelExport" }).Render()
 
 <script>
 	function toolbarClick(args) {
 		var grid = document.getElementById("grid").ej2_instances[0];
 		if (args.item.id === 'grid_excelexport') {
-			grid.getColumnByField("OrderDate").visible = false;
-			grid.getColumnByField("ShippedDate").visible = true;
-			grid.getColumnByField("ShipName").visible = true;
+			grid.columns[2].columns[0].visible = false;
+			grid.columns[3].columns[2].visible = true;
 			grid.excelExport();
 		}
 	}
-	function excelExportComplete(grid, orderDateColumn, shipNameColumn) {
-		grid.getColumnByField("OrderDate").visible = true;
-		grid.getColumnByField("ShipName").visible = false;
+    
+	function excelExportComplete() {
+		var grid = document.getElementById("grid").ej2_instances[0];
+		grid.columns[2].columns[0].visible = true;
+		grid.columns[3].columns[2].visible = false;
 	}
 </script>
