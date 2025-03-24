@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configuring the minimum width in the ##Platform_Name## Pivot Table control
+title: Configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table control
 description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table control of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Configuring the minimum width in the Pivot Table control.
