@@ -28,7 +28,6 @@ The following code example shows how to customize icons in the emoji picker.
 {% include code-snippet/rich-text-editor/emoji-picker-customize/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Additionally, you have the option to customize the icons of toolbar items using the `IconCss` and `Code` properties. The `IconCSS` property allows you to define a custom CSS class for the toolbar item icon, while the `Code` property enables you to specify the Unicode character code for the icon.
 
