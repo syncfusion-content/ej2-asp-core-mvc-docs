@@ -294,9 +294,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     // Handling filtering operation.
     if (DataManagerRequest.Where?.Count > 0)
     {
-        foreach (var condition in DataManagerRequest.Where)
+        foreach (WhereFilter condition in DataManagerRequest.Where)
         {
-            foreach (var predicate in condition.predicates)
+            foreach (WhereFilter predicate in condition.predicates)
             {
                 dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
                 //Add custom logic here if needed and remove above method.
@@ -637,7 +637,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     if (value.changed != null && value.changed.Count > 0)
     {
-        foreach (var Record in (IEnumerable<Orders>)value.changed)
+        foreach (Orders Record in (IEnumerable<Orders>)value.changed)
         {
             //Create query to update the changes into the database by accessing its properties.
             string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
@@ -655,7 +655,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     }
     if (value.added != null && value.added.Count > 0)
     {
-        foreach (var Record in (IEnumerable<Orders>)value.added)
+        foreach (Orders Record in (IEnumerable<Orders>)value.added)
         {
             //Create query to insert the specific into the database by accessing its properties.
             string Query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
@@ -673,7 +673,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     }
     if (value.deleted != null && value.deleted.Count > 0)
     {
-        foreach (var Record in (IEnumerable<Orders>)value.deleted)
+        foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
         {
             //Create query to remove the specific from database by passing the primary key column value.
             string Query = "DELETE FROM Orders WHERE OrderID = @OrderID";
@@ -928,9 +928,9 @@ public object Post(DataManagerRequest DataManagerRequest)
 
   // Handling filtering operation
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) {
-    foreach (var condition in DataManagerRequest.Where)
+    foreach (WhereFilter condition in DataManagerRequest.Where)
     {
-      foreach (var predicate in condition.predicates)
+      foreach (WhereFilter predicate in condition.predicates)
       {
         DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
         //Add custom logic here if needed and remove above method.
@@ -1501,7 +1501,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
   if (value.changed != null && value.changed.Count > 0)
   {
-    foreach (var Record in (IEnumerable<Orders>)value.changed)
+    foreach (Orders Record in (IEnumerable<Orders>)value.changed)
     {
       //Create query to update the changes into the database by accessing its properties.
       string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
@@ -1520,7 +1520,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
   }
   if (value.added != null && value.added.Count > 0)
   {
-    foreach (var Record in (IEnumerable<Orders>)value.added)
+    foreach (Orders Record in (IEnumerable<Orders>)value.added)
     {
       //Create query to insert the specific into the database by accessing its properties.
       string Query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
@@ -1538,7 +1538,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
   }
   if (value.deleted != null && value.deleted.Count > 0)
   {
-    foreach (var Record in (IEnumerable<Orders>)value.deleted)
+    foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
     {
 
       //Create query to remove the specific from database by passing the primary key column value.
