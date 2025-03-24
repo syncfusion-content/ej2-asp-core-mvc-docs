@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Filters in the ##Platform_Name## Image Editor control
 
-Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the [`applyImageFilter`] method which takes a single parameter: the filter applied to an image.
+Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the `applyImageFilter` method which takes a single parameter: the filter applied to an image.
 
 ## Apply filter effect
 
@@ -48,8 +48,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-filter.jpg)
 
-
-### Image filtering event 
+## Image filtering event 
 
 The [`imageFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.ImageEditor.ImageEditor.html#Syncfusion_EJ2_ImageEditor_ImageEditor_ImageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
@@ -58,5 +57,3 @@ The parameter available in the `ImageFilterEventArgs` event is,
 ImageFilterEventArgs.filter - The type of filtering as ImageFilterOption to be applied in the image editor. 
 
 ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
-
-> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.
