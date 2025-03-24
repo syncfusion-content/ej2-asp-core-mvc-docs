@@ -1,0 +1,33 @@
+@{ 
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid(){
+        DataSource = (IEnumerable<object>)ViewBag.DataSource,
+        QueryString = "EmployeeID",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="90", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="CustomerID", Width="100" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderDate", HeaderText="OrderDate", Width="100", Format="dd-MM-yyyy", Type="date" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="110" },
+    }};
+}
+<ejs-grid id="Grid" dataSource="@ViewBag.EmpDataSource" allowPdfExport="true" childGrid="ChildGrid" toolbar="@(new List<string>() {"PdfExport" })" toolbarClick="toolbarClick" exportDetailDataBound="exportDetailDataBound">
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="Name" width="100"></e-grid-column>
+        <e-grid-column field="LastName" headerText="Last Name" width="100"></e-grid-column>
+        <e-grid-column field="City" headerText="City" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        if (args.item.id === 'Grid_pdfexport') {
+            let grid = document.getElementById("Grid").ej2_instances[0];
+            let exportProperties = {
+                hierarchyExportMode: "All"
+            };
+            grid.pdfExport(exportProperties);
+        }
+        function exportDetailDataBound(args) {
+            args.childGrid.columns[2].format = {type: 'date',format: 'dd\\/MM\\/yyyy'};
+        }
+    }
+</script>
