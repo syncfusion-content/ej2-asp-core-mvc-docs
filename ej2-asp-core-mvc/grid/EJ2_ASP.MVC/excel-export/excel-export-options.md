@@ -149,7 +149,7 @@ In the following example, the **ShipName** is initially a hidden column in the S
 {% include code-snippet/grid/excel-export/excelexport-show-hide/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="excel-export.cs" %}
-{% include code-snippet/grid/excel-export/excelexport-show-hide/excel=export.cs %}
+{% include code-snippet/grid/excel-export/excelexport-show-hide/excel-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
