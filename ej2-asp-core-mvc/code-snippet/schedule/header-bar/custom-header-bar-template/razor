@@ -46,15 +46,15 @@
 <script type="text/javascript">
     function onScheduleCreate() {
         var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
-        let query = new ej.data.Query().where('OwnerId', 'equal', 1);
+        var query = new ej.data.Query().where('OwnerId', 'equal', 1);
         scheduleObj.eventSettings.query = query;
         scheduleObj.dataBind();
     }
 
     function onOwnerChange(args) {
         var scheduleObj = document.querySelector('.e-schedule').ej2_instances[0];
-        let value = args.value;
-        let query = new ej.data.Query().where('OwnerId', 'equal', value);
+        var value = args.value;
+        var query = new ej.data.Query().where('OwnerId', 'equal', value);
         scheduleObj.eventSettings.query = query;
         scheduleObj.dataBind();
     }
