@@ -79,3 +79,31 @@ To enable range selection, you need to set the [enableRangeSelection](https://he
 The output will look like the image below.
 
 ![File Manager rangeselection](./images/rangeselection.png)
+
+## Disable Multi selection
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_ShowItemCheckBoxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/disablemultiselection/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+Setting the [`allowMultiSelection`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_AllowMultiSelection) property to false will prevent you from selecting multiple files or folders with standard selection methods. However, you can still select multiple items if checkboxes are visible. To fully disable all multi-selection capabilities, you must also set the [`showItemCheckBoxes`](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.filemanager.filemanager.html#Syncfusion_EJ2_FileManager_FileManager_ShowItemCheckBoxes) property to false. This ensures that you cannot use checkboxes for multiple selections.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/disablemultiselection/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+The output will look like the image below.
+
+![File Manager disable Multiselection](./images/disablemultiselection.png)
