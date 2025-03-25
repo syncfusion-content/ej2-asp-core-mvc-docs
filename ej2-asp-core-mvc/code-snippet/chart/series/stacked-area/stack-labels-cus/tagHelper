@@ -1,0 +1,35 @@
+<ejs-chart id="container" title="Trend in Sales of Ethical Produce">
+    <e-chart-primaryxaxis valueType="DateTime" title="Years" intervalType="Years" labelFormat="y" edgeLabelPlacement="Shift">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Spend in Billions" minimum="0" maximum="7" interval="1" labelFormat="{value}B">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true" fill="rgba(0, 123, 255, 0.5)" format="{value}" angle="45" rx="10" ry="10">
+       <e-chart-stacklabels-border color="#000" width="2"></e-chart-stacklabels-border>
+       <e-chart-stacklabels-margin left="10" right="10" top="10" bottom="10"></e-chart-stacklabels-margin>
+       <e-chart-stacklabels-font size="14px" color="#fff" weight="bold" family="Arial" textAlignment="Left"></e-chart-stacklabels-font>
+    </e-chart-stacklabels>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Organic" xName="X" yName="Y" type="StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Fair-trade" xName="X" yName="Y1" type="StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Veg Alternatives" xName="X" yName="Y2" type="StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Others" xName="X" yName="Y3" type="StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

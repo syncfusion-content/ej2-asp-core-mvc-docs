@@ -1,0 +1,13 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar).XName("X").YName("Y").DataSource(ViewBag.dataSource)
+    .Name("Apple").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar).XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+    .Name("Orange").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar).XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+    .Name("Wastage").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Months")
+).PrimaryYAxis(py => py.Title("Percentage (%)").Minimum(-20).Maximum(100).LabelFormat("{value}%").EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+).StackLabels(stackLabels => stackLabels.Visible(true)).Title("Sales Comparison").Render()
+
+

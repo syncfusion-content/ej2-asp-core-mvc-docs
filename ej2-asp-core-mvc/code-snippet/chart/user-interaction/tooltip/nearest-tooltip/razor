@@ -1,0 +1,33 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .XName("X")
+            .YName("Y")
+            .Marker(mr => mr.Visible(true).Width(10).Height(10))
+            .Name("China")
+            .Width(2)
+            .DataSource(ViewBag.dataSource)
+            .Add();
+
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .XName("X")
+            .YName("Y1")
+            .Marker(mr => mr.Visible(true).Width(10).Height(10))
+            .Name("Australia")
+            .Width(2)
+            .DataSource(ViewBag.dataSource)
+            .Add();
+
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .XName("X")
+            .YName("Y2")
+            .Marker(mr => mr.Visible(true).Width(10).Height(10))
+            .Name("Japan")
+            .Width(2)
+            .DataSource(ViewBag.dataSource)
+            .Add();
+   }
+   ).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).Title("Years").LabelFormat("y").IntervalType("Years").LineStyle(ls=>ls.Width(0))
+   ).PrimaryYAxis(py => py.Title("Percentage (%)").LabelFormat("{value}%").Minimum(0).Maximum(20).Interval(4)
+   ).LegendSettings(leg => leg.Visible(true)).Title("Unemployment Rates 1975-2010").Tooltip(tt => tt.Enable(true).EnableHighlight(true).ShowNearestTooltip(true)).Render()
+    
