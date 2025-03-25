@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table in ##Platform_Name## Rich Text Editor Component
+title: Table in ##Platform_Name## Rich Text Editor Component | Sycnfusion
 description: Learn here all about Table in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table
@@ -200,8 +200,7 @@ The following image explains the table split action.
 
 The quick toolbar appears when clicking on a table, providing easy access to table-related commands. You can customize the quick toolbar by adding or removing tools using the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Table) property.
 
-The following sample demonstrates the customiztion of table quick toolbar.
-
+The following sample demonstrates the customization of table quick toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
