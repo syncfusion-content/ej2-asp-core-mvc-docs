@@ -107,7 +107,6 @@ namespace Grid_MSSQL.Controllers
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -197,7 +196,7 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cscshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace xxxx with your actual port number
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
@@ -493,7 +492,7 @@ public class CRUDModel<T> where T : class
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
 {% tabs %}
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Inserts a new data item into the data collection.
@@ -537,7 +536,7 @@ public class CRUDModel<T> where T : class
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
 {% tabs %}
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Update a existing data item from the data collection.
@@ -583,7 +582,7 @@ public class CRUDModel<T> where T : class
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
 {% tabs %}
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Remove a specific data item from the data collection.
@@ -630,7 +629,7 @@ public class CRUDModel<T> where T : class
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
 {% tabs %}
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Batchupdate (Insert, Update and Delete) a collection of data items from the data collection.
@@ -762,7 +761,7 @@ This section describes step by step process how to retrieve data from a Microsof
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -887,7 +886,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -966,7 +965,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1038,7 +1037,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1113,7 +1112,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1164,7 +1163,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 <script>
     class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
     }
@@ -1208,7 +1207,7 @@ To execute the insert operation, you will need to override the `insert` method o
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         insert(dataManager, data) {
@@ -1240,7 +1239,7 @@ To execute the insert operation, you will need to override the `insert` method o
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Inserts a new data item into the data collection.
@@ -1289,7 +1288,7 @@ To execute the update operation, override the `update` method of the `CustomAdap
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         update(dataManager, keyField, value) {
@@ -1321,7 +1320,7 @@ To execute the update operation, override the `update` method of the `CustomAdap
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Update a existing data item from the data collection.
@@ -1369,7 +1368,7 @@ To perform the delete operation, you need to override the `remove` method of the
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         remove(dataManager, keyField, value) {
@@ -1402,7 +1401,7 @@ To perform the delete operation, you need to override the `remove` method of the
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Remove a specific data item from the data collection.
@@ -1446,6 +1445,8 @@ public class CRUDModel<T> where T : class
 To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
+{% highlight html tabtitle="Index.cshtml" %}
+
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
@@ -1459,7 +1460,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         batchRequest(dataManager, changes, e) {
@@ -1494,7 +1495,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 
 {% endhighlight %}
 
-{% highlight c# tabtitle="GridController.cs" %}
+{% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
 /// Batch update (Insert, Update and Delete) a collection of data items from the data collection.
