@@ -312,7 +312,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 <ejs-grid id="Grid" height="273px">
     <!-- Replace **** with actual server port. -->
 	<e-data-manager url="https://localhost:****/api/grid" adaptor="UrlAdaptor"></e-data-manager>
-		<e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+	<e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="EmployeeID" headerText="Employee ID" width="120" textAlign="Right"></e-grid-column>
@@ -368,7 +368,7 @@ namespace SelectRecord.Controllers
     public class GridController : Controller
     {
         [HttpPost]
-        public object Post(DataManagerRequest DataManagerRequest)
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
@@ -520,7 +520,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 
 **Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) documentation link.
 
-**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the AJAX call and include the Syncfusion ASP.NET Core Grid with necessary configurations:
+**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the Fetch call and include the Syncfusion ASP.NET Core Grid with necessary configurations:
 
 ```html
 <!-- Button to pass selected records -->
@@ -530,7 +530,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 <ejs-grid id="Grid" height="273px">
     <!-- Replace **** with actual server port. -->
 	<e-data-manager url="https://localhost:****/api/grid" adaptor="UrlAdaptor"></e-data-manager>
-		<e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
+	<e-grid-selectionsettings type="Multiple"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
         <e-grid-column field="EmployeeID" headerText="Employee ID" width="120" textAlign="Right"></e-grid-column>
@@ -541,7 +541,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 </div>
 ```
 
-**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET Core Grid and send them to the server using AJAX. Add the following code:
+**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET Core Grid and send them to the server using Fetch. Add the following code:
 
 ```ts
 <script>
@@ -586,7 +586,7 @@ namespace SelectRecord.Controllers
     public class GridController : Controller
     {
         [HttpPost]
-        public object Post(DataManagerRequest DataManagerRequest)
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
@@ -640,7 +640,7 @@ namespace SelectRecord.Controllers
             return data;
         }
 
-        [HttpPost("SelectRecord")]  // Make sure this route matches the AJAX request.
+        [HttpPost("SelectRecord")]  // Make sure this route matches the Fetch request.
         public ActionResult SelectRecord([FromBody] List<Gridcolumns> row)
         {
             return Json(row);

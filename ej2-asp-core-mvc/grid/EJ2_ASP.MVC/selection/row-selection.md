@@ -503,7 +503,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 
 **Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
 
-**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the AJAX call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
+**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the Fetch call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
 
 ```html
 @Html.EJS().Button("passRecords").Content("Pass the selected records to controller").CssClass("e-primary").Render()
@@ -519,7 +519,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 </div>
 ```
 
-**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET MVC Grid and send them to the server using AJAX. Add the following code:
+**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET MVC Grid and send them to the server using Fetch. Add the following code:
 
 ```ts
 <script>
@@ -610,7 +610,7 @@ namespace SelectRecord.Controllers
         }
 
         [System.Web.Mvc.HttpPost]
-        public ActionResult SelectRecord([FromBody] List<Gridcolumns> row)
+        public ActionResult SelectRecord(List<Gridcolumns> row)
         {
             return Json(row);
         }
