@@ -16,7 +16,7 @@ Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) 
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -26,7 +26,7 @@ The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/conn
 
 This section describes step by step process how to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
 
-## Creating an API Service
+### Creating an API Service
 
 To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
@@ -60,7 +60,7 @@ namespace Grid_MSSQL.Controllers
         private readonly string ConnectionString = @"<Enter a valid connection string>";
 
         /// <summary>
-        /// Fetches data for the Syncfusion ASP.NET MVC Grid using URL Adaptor.
+        ///  Retrieves the order data from the database.
         /// </summary>
         /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
         public JsonResult UrlDataSource()
@@ -107,7 +107,7 @@ namespace Grid_MSSQL.Controllers
 
         #region Models
         /// <summary>
-        /// Represents the Orders model mapped to the database table.
+        /// Represents the orders model mapped to the database table.
         /// </summary>
         public class Orders
         {
@@ -126,11 +126,11 @@ namespace Grid_MSSQL.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx/Grid/UrlDataSource`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list of array can be found in an MVC controller available in the URL link `https://localhost:xxxx/Grid/UrlDataSource`, as shown in the browser page below.
+**6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list can be found in an MVC controller available in the URL link `https://localhost:xxxx/Grid/UrlDataSource`, as shown in the browser page below.
 
 ![Hosted API URL](../images/database/ms-sql-data.png)
 
-## Connecting Syncfusion ASP.NET MVC Grid to an API Service
+### Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
 To integrate the Syncfusion ASP.NET MVC Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
@@ -210,16 +210,16 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cscshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace xxxx with your actual port number
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
 
 {% endhighlight %}
@@ -233,9 +233,9 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 > * In an API service project, add `Syncfusion.EJ2.MVC5` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
 
-## Handling Searching Operation
+### Handling searching operation
 
-To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching`. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle searching operation, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -268,24 +268,25 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Toolbar(new List<string>() { "Search" }).Render()
 
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Filtering Operation
+### Handling filtering operation
 
-To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering`. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle filtering operation, ensure that your API endpoint supports custom filtering criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -324,24 +325,25 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowFiltering().Render()
 
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Sorting Operation
+### Handling sorting operation
 
-To handle sorting operation, configure your API to support custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting`. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle sorting operation, ensure that your API endpoint supports custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -374,24 +376,25 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowSorting().Render()
 
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Paging Operation
+### Handling paging operation
 
-To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip`. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
+To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -427,22 +430,23 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowPaging().Render()
 
 {% endhighlight %}
 {% endtabs %}
 
-## Handling CRUD Operations
+### Handling CRUD operations
 
 The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
@@ -498,7 +502,7 @@ public class CRUDModel<T> where T : class
 
 **Insert Operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the Orders table by calling the following **POST** method of an API.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -538,7 +542,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 
 **Update Operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the Orders table by involving the following **Post** method of an API.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -574,9 +578,11 @@ public JsonResult Update(CRUDModel<Orders> model)
 }
 
 {% endhighlight %}
-{% endtabs %}**Delete Operation**
+{% endtabs %}
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the Orders table.
+**Delete Operation**
+
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -608,15 +614,17 @@ public JsonResult Remove(CRUDModel<Orders> model)
 }
 
 {% endhighlight %}
-{% endtabs %}**Batch Operation**
+{% endtabs %}
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the Orders table using a single API POST request.
+**Batch Operation**
+
+To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update, Delete) on a collection of Orders.
+/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
 /// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
@@ -709,7 +717,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).AllowSorting().Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -749,11 +757,11 @@ This section describes step by step process how to retrieve data from a Microsof
 
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-	col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-	col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-	col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true }).Add();
-	col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min = 1, max = 1000 }).Add();
-	col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
 
 <script>
@@ -845,7 +853,7 @@ namespace Grid_MSSQL.Controllers
 
         #region Models
         /// <summary>
-        /// Represents the Orders model mapped to the database table.
+        /// Represents the orders model mapped to the database table.
         /// </summary>
         public class Orders
         {
@@ -902,16 +910,17 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Toolbar(new List<string>() { "Search" }).Render()
 
 <script>
@@ -985,11 +994,11 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowFiltering().Render()
 
 <script>
@@ -1058,11 +1067,11 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowSorting().Render()
 
 <script>
@@ -1128,16 +1137,17 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
+
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowPaging().Render()
 
 <script>
@@ -1162,9 +1172,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-## Handling CRUD Operations
+### Handling CRUD Operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
@@ -1237,7 +1247,7 @@ public class CRUDModel<T> where T : class
 
 **Insert Operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the Orders table by calling the following **POST** method of an API.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1314,7 +1324,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 
 **Update Operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the Orders table by involving the following **Post** method of an API.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1391,7 +1401,7 @@ public JsonResult Update(CRUDModel<Orders> model)
 
 **Delete Operation**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the Orders table.
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1465,13 +1475,13 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
 **Batch Operation**
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the Orders table using a single API POST request.
+To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update, Delete) on a collection of Orders.
+/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
 /// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
