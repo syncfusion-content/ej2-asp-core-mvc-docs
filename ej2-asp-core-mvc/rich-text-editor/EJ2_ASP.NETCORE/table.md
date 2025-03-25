@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table in ##Platform_Name## Rich Text Editor control | Sycnfusion
+title: Table in ##Platform_Name## Rich Text Editor control | Syncfusion
 description: Learn here all about Table in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table
