@@ -210,6 +210,29 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 {% endtabs %}
 
 
+### How to customize the excel sheet on before exporting
+
+Customizing an Excel sheet before export is made easy with the `excelExport` API. This API provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+
+With the `excelExport` API, you can:
+
+- Adjust the formatting: Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
+
+- Customize headers and footers: Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
+
+- Cancel the export: The API supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
+
+Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the `excelExport` API:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/excel-export/excel-customize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/excel-export/excel-customize/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Exporting calendar events as ICS file
 
