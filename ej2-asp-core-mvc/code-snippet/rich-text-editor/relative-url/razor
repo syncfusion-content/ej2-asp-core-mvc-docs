@@ -1,0 +1,2 @@
+
+@Html.EJS().RichTextEditor("link").ToolbarSettings(e => e.Items((object)ViewBag.items)).EnableAutoUrl(true).Value(ViewBag.value).Render()
