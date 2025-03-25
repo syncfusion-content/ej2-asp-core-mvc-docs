@@ -461,7 +461,7 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-annotation.jpg)
 
-## Delete a shape 
+### Delete a shape 
 
 The `deleteShape` method in the Image Editor allows you to remove a shape annotation from the image editor. To use this method, you need to pass the `shapeId` of the annotation as a parameter. 
 
@@ -498,9 +498,9 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-delete-annotation.png)
 
-## Customize default stroke color for shapes 
+### Customize default stroke color for shapes 
 
-We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the [`shapeChanging`] event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
+We provide default settings for stroke color, stroke width, fill color, and other customizations. If users wish to modify only the default options while preserving their previously selected customizations, they can do so by utilizing the `shapeChanging` event. Within this event, users can update the values in the `currentShapeSettings` object to apply their own preferences instead of the defaults. This approach allows conditional updates to the `currentShapeSettings`, ensuring that only the desired defaults are changed while maintaining the other settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -527,7 +527,7 @@ We provide default settings for stroke color, stroke width, fill color, and othe
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-default-stroke.png)
+![ImageEditor Sample](images/image-editor-default-stroke.jpg)
 
 ## Image annotation
 

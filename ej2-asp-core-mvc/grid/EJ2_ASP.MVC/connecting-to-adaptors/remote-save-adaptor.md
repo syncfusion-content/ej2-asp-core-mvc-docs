@@ -175,7 +175,7 @@ For updating existing records, use the `UpdateUrl` property to specify the contr
   /// <param name="updateRecord">The updated order details.</param>
   /// <returns>It returns the updated order details.</returns>
    public JsonResult Update(CRUDModel<OrdersDetails> updatedRecord)
-  {
+   {
      var updatedOrder = updatedRecord.value;
      if (updatedOrder != null)
      {
