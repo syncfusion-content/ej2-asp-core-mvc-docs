@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Exec Command in ##Platform_Name## Rich Text Editor Component
-description: Learn here all about Exec Command in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
+title: Execute Command in ##Platform_Name## Rich Text Editor Component | Syncfusion
+description: Learn here all about Execute Command in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Exec Command
+control: Execute Command
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# ExecCommand in Rich Text Editor
+# ExecuteCommand in Rich Text Editor
 
-In Rich Text Editor, execCommand used to perform commands for the modification of content in editable area.
-The execCommand will perform the following commands.
+In Rich Text Editor, executeCommand used to perform commands for the modification of content in editable area.
+The executeCommand will perform the following commands.
 
 | Commands | Description | Code snippets |
 |----------------|---------| -----------|
@@ -47,5 +47,7 @@ The execCommand will perform the following commands.
 | copyFormatPainter | Copy the format of selected text and apply it to another text. | `rteObj.executeCommand('copyFormatPainter', formatPainterSettings);`|
 | applyFormatPainter | Apply the copied format to the selected text. | `rteObj.executeCommand('applyFormatPainter');`|
 | escapeFormatPainter | Remove the previously copied format and disable the sticky mode | `rteObj.executeCommand('escapeFormatPainter');`|
+| insertVideo | Insert a video to the current cursor position. | `rteObj.executeCommand('insertVideo', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Ocean-Waves.mp4', cssClass: 'e-rte-video'});` |
+| insertAudio | Insert a audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
 N> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor

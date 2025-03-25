@@ -14,8 +14,8 @@
     }
 
     function ShapeChanging(args) {
-        if (args.currentShapeSettings.type === 'Text') {
-            args.currentShapeSettings.color = 'red';
+        if (args.currentShapeSettings.type === 'FreehandDraw') {
+            args.currentShapeSettings.strokeColor = 'red';
         }
     }
 
