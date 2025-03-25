@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 The `WebMethodAdaptor` in Syncfusion ASP.NET MVC Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URLAdaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
-![Webmethod Adaptor](../../images/adaptors/web-method-adaptor-value.png)
+![Webmethod Adaptor](../images/adaptors/web-method-adaptor-value.png)
 
 This section provides a step-by-step guide to retrieving data using `WebMethodAdaptor`, binding it to the ASP.NET MVC Grid, and managing CRUD operations effectively.
 
@@ -179,7 +179,7 @@ Run the application in Visual Studio. It will be accessible via a URL like **htt
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data at the URL(https://localhost:xxxx/api/Grid). Here **xxxx** denotes the port number.
 
-![WebMethodAdaptor-data](../../images/adaptors/url-adaptor-data.jpeg)
+![WebMethodAdaptor-data](../images/adaptors/url-adaptor-data.jpeg)
 
 ## Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
@@ -281,7 +281,7 @@ Now, add the Syncfusion ASP.NET MVC Grid in `~/Views/Home/Index.cshtml` file.
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will successfully fetch data from the API service.
 
-![WebMethodAdaptor](../../images/adaptors/adaptor.gif)
+![WebMethodAdaptor](../images/adaptors/adaptor.gif)
 
 > * The Syncfusion Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the `Syncfusion.EJ2.MVC5` package. Let’s explore how to manage these data operations using the `WebMethodAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.MVC5 ` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
@@ -300,7 +300,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 
 To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
 
-![WebMethodAdaptor searching](../../images/adaptors/web-method-adaptor-searching.png)
+![WebMethodAdaptor searching](../images/adaptors/web-method-adaptor-searching.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -351,10 +351,10 @@ public class DataManager
 To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
 **Single column filtering**
-![Single column filtering](../../images/adaptors/web-method-adaptor-filtering.png)
+![Single column filtering](../images/adaptors/web-method-adaptor-filtering.png)
 
 **Multi column filtering**
-![Multi column filtering](../../images/adaptors/web-method-adaptor-multi-filtering.png)
+![Multi column filtering](../images/adaptors/web-method-adaptor-multi-filtering.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -412,10 +412,10 @@ public class DataManager
 To handle sorting operation, configure your API to support custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
 **Single column sorting**
-![Single column sorting](../../images/adaptors/web-method-adaptor-sorting.png)
+![Single column sorting](../images/adaptors/web-method-adaptor-sorting.png)
 
 **Multi column sorting**
-![Multi column sorting](../../images/adaptors/web-method-adaptor-multi-sorting.png)
+![Multi column sorting](../images/adaptors/web-method-adaptor-multi-sorting.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -467,7 +467,7 @@ public class DataManager
 
 To handle paging operation, configure your API endpoint to support custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the custom paging criteria specified in the incoming `DataManagerRequest` object.
 
-![WebMethodAdaptor paging](../../images/adaptors/web-method-adaptor-paging.png)
+![WebMethodAdaptor paging](../images/adaptors/web-method-adaptor-paging.png)
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -556,7 +556,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 
 To insert a new record, utilize the `InsertUrl` property to specify the controller action mapping URL for the insert operation. The newly added record details are bound to the **newRecord** parameter.
 
-![Insert record](../../images/adaptors/web-method-adaptor-insert-record.png)
+![Insert record](../images/adaptors/web-method-adaptor-insert-record.png)
 
 ```cs
 /// <summary>
@@ -579,7 +579,7 @@ public IHttpActionResult Insert(CRUDModel<OrdersDetails> newRecord)
 
 For updating existing records, utilize the `UpdateUrl` property to specify the controller action mapping URL for the update operation. The updated record details are bound to the **updatedRecord** parameter.
 
-![Update record](../../images/adaptors/web-method-adaptor-update-record.png)
+![Update record](../images/adaptors/web-method-adaptor-update-record.png)
 
 ```cs
 /// <summary>
@@ -608,7 +608,7 @@ public IHttpActionResult Update(CRUDModel<OrdersDetails> updatedRecord)
 
 To delete existing records, use the `RemoveUrl` property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
-![Delete Record](../../images/adaptors/web-method-adaptor-delete-record.png)
+![Delete Record](../images/adaptors/web-method-adaptor-delete-record.png)
 
 ```cs
 /// <summary>
@@ -629,7 +629,7 @@ public IHttpActionResult Remove(CRUDModel<OrdersDetails> deletedRecord)
 }
 ```
 
-![WebMethodAdaptor CRUD operations](../../images/adaptors/adaptor-crud-operation.gif)
+![WebMethodAdaptor CRUD operations](../images/adaptors/adaptor-crud-operation.gif)
 
 **Single Method for Performing All CRUD Operations**
 
@@ -737,4 +737,4 @@ public object BatchUpdate(CRUDModel<OrdersDetails> batchOperation)
 
 }
 ```
-![WebMethodAdaptor Batch Editing](../../images/adaptors/url-adaptor-batch-editing.gif)
+![WebMethodAdaptor Batch Editing](../images/adaptors/url-adaptor-batch-editing.gif)

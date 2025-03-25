@@ -1,4 +1,4 @@
-public IActionResult Index()
+public ActionResult Index()
 {
     return view(); 
 }

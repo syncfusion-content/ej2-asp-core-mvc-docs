@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timeout in ##Platform_Name## Toast Component
+title: Timeout in ##Platform_Name## Toast Component | Syncfusion
 description: Learn here all about Timeout in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timeout
@@ -75,4 +75,4 @@ You can prevent auto hiding in a toast as visible like static by setting zero (`
 
 ## See Also
 
-* [Hide the toast on click](./how-to/close-the-toast-with-click-tap/)
+* [Hide the toast on click](./how-to/close-the-toast-with-click-tap)
