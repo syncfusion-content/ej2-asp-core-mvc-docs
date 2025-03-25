@@ -47,25 +47,25 @@ Tables can also be inserted through the `Insert Table` option in the pop-up wher
 
 The `TableHeader` command is available in the quick toolbar, allowing you to add or remove the header row from the inserted table. The following image illustrates the table header.
 
-![Rich Text Editor table header](../images/table_header.png)
+![Rich Text Editor table header](./images/table_header.png)
 
 ## Inserting Rows
 
 You can insert `Rows` above or below the selected table cell using the quick toolbar. The focused row can also be deleted. The following screenshot shows the available options of the row item.
 
-![Rich Text Editor table row](../images/table_rows.png)
+![Rich Text Editor table row](./images/table_rows.png)
 
 ## Inserting Columns
 
 `Columns` can be inserted to the left or right of the selected table cell using the quick toolbar. The focused column can also be deleted. The following screenshot shows the available options in inserting column item.
 
-![Rich Text Editor table column](../images/table_column.png)
+![Rich Text Editor table column](./images/table_column.png)
 
 ## Setting Cell Background Color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
 
-![Rich Text Editor table background color](../images/table_bg_color.png)
+![Rich Text Editor table background color](./images/table_bg_color.png)
 
 ## Deleting Tables
 
@@ -77,13 +77,13 @@ Delete the entire table using the delete item in the quick toolbar.
 
 Align text inside table cells to the top, middle, or bottom using the `TableCellVerticalAlign` tool in the quick toolbar.
 
-![Rich Text Editor table vertical alignment](../images/table_vertical.png)
+![Rich Text Editor table vertical alignment](./images/table_vertical.png)
 
 ### Horizontal Alignment
 
 Align text inside table cells to the left, right, or center using the `TableCellHorizontalAlign` tool in the quick toolbar.
 
-![Rich Text Editor table horizontal alignment](../images/table_horizontal.png)
+![Rich Text Editor table horizontal alignment](./images/table_horizontal.png)
 
 ## Applying Table Styles
 
@@ -95,7 +95,7 @@ By Default, provides Dashed border and Alternate rows.
 
 **Alternate border**: Applies an alternating background to table rows.
 
-![Rich Text Editor table styles](../images/table_style.png)
+![Rich Text Editor table styles](./images/table_style.png)
 
 ## Setting Table and Cell Dimensions
 
@@ -103,7 +103,7 @@ Sets the default width of the table when it is inserted in the Rich Text Editor 
 
 Users can modify the width, cell padding, and cell spacing of selected tables using the properties option in the quick toolbar.
 
-![Rich Text Editor table settings](../images/table_properties.png)
+![Rich Text Editor table settings](./images/table_properties.png)
 
 ## Table Cell Selection and Formatting
 
@@ -163,7 +163,7 @@ The table cell merge feature allows you to merge two or more row and column cell
 
 The following image explains the table merge action.
 
-![Rich Text Editor table cell merge](../images/table_merge.png)
+![Rich Text Editor table cell merge](./images/table_merge.png)
 
 ### Splitting Table Cells
 
@@ -171,7 +171,7 @@ The table cell split feature allows you to a selected cell can be split both hor
 
 The following image explains the table split action.
 
-![Rich Text Editor table cell split](../images/table_split.png)
+![Rich Text Editor table cell split](./images/table_split.png)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
