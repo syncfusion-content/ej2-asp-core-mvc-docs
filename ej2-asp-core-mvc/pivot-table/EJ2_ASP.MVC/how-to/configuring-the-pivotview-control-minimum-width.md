@@ -38,4 +38,4 @@ To customize the minimum width, set the `minWidth` property to your desired valu
 {% endtabs %}
 {% endif %}
 
-![Configuring the minimum width in the Pivot Table control](../images/min-width.png)
+![Configuring the minimum width in the Pivot Table control](../../images/min-width.png)
