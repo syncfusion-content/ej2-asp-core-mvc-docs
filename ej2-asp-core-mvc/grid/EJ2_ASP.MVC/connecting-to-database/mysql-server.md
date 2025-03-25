@@ -17,27 +17,27 @@ MySQL Server database can be bound to the Grid in different ways (i.e.) using [D
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the MySQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
-## Binding data from Microsoft SQL Server using an API service
+## Binding data from MySQL Server using an API service
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
+This section describes step by step process how to retrieve data from a MySQL Server using an API service and bind it to the Grid.
 
 ### Creating an API Service
 
 To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
-**1.** Open Visual Studio and create an ASP.NET MVC project named **Grid_MSSQL**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
+**1.** Open Visual Studio and create an ASP.NET MVC project named **MyWebService**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
 **2.** To connect a MySQL Server database using the MySQL driver in your application, you need to install the [MySQL.Data](https://www.nuget.org/packages/MySql.Data) NuGet package. To add **MySQL.Data** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
 
-**4.** In a MVC controller (aka, GridController), connect to Microsoft SQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the Microsoft SQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
+**4.** In a MVC controller (aka, GridController), connect to MySQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the MySQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -138,7 +138,7 @@ namespace MyWebService.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx/api/Grid`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list can be found in an MVC controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** Finally, the retrieved data from MySQL Server database which is in the form of list can be found in an MVC controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
 
 ![Hosted API URL](../images/database/db-data.png)
 
@@ -784,11 +784,11 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/microsoft-sql-crud.gif)
 
-## Binding data from Microsoft SQL Server using CustomAdaptor
+## Binding data from MySQL Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a MySQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
@@ -799,7 +799,7 @@ This section describes step by step process how to retrieve data from a Microsof
 
 **3.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, fetch data from the Microsoft SQL Server database using the **SqlDataAdapter** class.
+  * In this **GetOrderData** method, fetch data from the MySQL SQL Server database using the **SqlDataAdapter** class.
 
   * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the DataAdapter, followed by conversion of the **DataSet** into a List.
 
@@ -1717,4 +1717,4 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-batch.gif)
+![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/microsoft-sql-batch.gif)
