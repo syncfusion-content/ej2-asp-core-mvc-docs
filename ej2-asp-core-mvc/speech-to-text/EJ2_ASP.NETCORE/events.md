@@ -14,11 +14,11 @@ This section describes the SpeechToText events that will be triggered when appro
 
 |Name|Args|Description|
 |---|---|---|
-|created|-|Triggers when the SpeechToText control's rendering is fully completed|
-|onStart|StartListeningEventArgs|Triggers when the speech recognition begins|
-|onStop|StopListeningEventArgs|Triggers when the speech recognition stops|
-|onError|ErrorEventArgs|Triggers when an error occurs during speech recognition or while listening. For list of possible errors, refer to the [Error handling](./speech-recognition#error-handling) section|
-|transcriptChanged|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition|
+|[created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_Created)|-|Triggers when the SpeechToText control's rendering is fully completed|
+|[onStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_OnStart)|StartListeningEventArgs|Triggers when the speech recognition begins|
+|[onStop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_OnStop)|StopListeningEventArgs|Triggers when the speech recognition stops|
+|[onError](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_OnError)|ErrorEventArgs|Triggers when an error occurs during speech recognition or while listening. For list of possible errors, refer to the [Error handling](./speech-recognition#error-handling) section|
+|[transcriptChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_TranscriptChanged)|TranscriptChangedEventArgs|Triggers when an transcription change occurs during the speech recognition|
 
 The following example demonstrates how to configure the SpeechToText events.
 
