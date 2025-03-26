@@ -26,7 +26,7 @@ In the following sample, the [`allowDragAndDrop`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chips/trailing/tagHelper %}
+{% include code-snippet/chips/draganddrop/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ In the following sample, the [`allowDragAndDrop`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chips/trailing/razor %}
+{% include code-snippet/chips/draganddrop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chips/trailing/default.cs %}
+{% include code-snippet/chips/draganddrop/default.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
