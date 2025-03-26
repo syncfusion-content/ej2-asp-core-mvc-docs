@@ -44,3 +44,33 @@ The following example demonstrates the DateTimePicker with the custom format (`y
 {% endtabs %}
 {% endif %}
 
+## Input formats
+
+The [`inputFormats`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_InputFormats) property in the DatetimePicker control allows users to enter dates and times in various formats, providing flexibility in date and time entry. This property accepts an array of predefined formats that the control recognizes, enabling users to input dates in different ways while ensuring they are parsed correctly.
+
+When the user types the date and time in any of the specified input formats, it will be automatically converted to the display format after pressing Enter, the Tab key, or when the input loses focus. This enhances the user experience by allowing intuitive data entry through various custom input formats.
+
+The following example demonstrates the DateTimePicker with multiple input formats.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/datetimepicker/input-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Input-format.cs" %}
+{% include code-snippet/datetimepicker/input-format/input-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/datetimepicker/input-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Input-format.cs" %}
+{% include code-snippet/datetimepicker/input-format/input-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
