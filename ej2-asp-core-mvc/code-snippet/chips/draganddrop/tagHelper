@@ -10,7 +10,7 @@
                 <e-chip text="Design" cssClass="e-primary"></e-chip>
                 <e-chip text="Presentation" cssClass="e-success"></e-chip>
                 <e-chip text="Email" cssClass="e-success"></e-chip>
-                <e-chip text="Research" cssClass="e-success"><e-chip>
+                <e-chip text="Research" cssClass="e-success"></e-chip>
             </e-chips>
         </ejs-chiplist>
         <ejs-chiplist id="selection-container" allowDragAndDrop></ejs-chiplist>
