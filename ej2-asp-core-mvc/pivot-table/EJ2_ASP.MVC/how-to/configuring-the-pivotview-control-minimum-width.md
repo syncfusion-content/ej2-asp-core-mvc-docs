@@ -7,7 +7,7 @@ control: Configuring the minimum width in the Pivot Table control.
 documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
-# Configuring the minimum width in the ##Platform_Name## pivot table control
+# Configuring the minimum width in the ##Platform_Name## Pivot Table control
 
 The pivot table control allows you to configure its minimum width using the `minWidth` property. This property is useful for ensuring the component maintains a consistent layout and responsiveness across different screen sizes.
 
