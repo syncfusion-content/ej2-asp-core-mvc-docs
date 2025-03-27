@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 # Connecting PostgreSQL Server data in to Syncfusion ASP.NET MVC Grid
 
-This section describes how to connect and retrieve data from a PostgreSQL Server database using [Npgsql EntityFrameworkCore PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion ASP.NET MVC Grid Grid.
+This section describes how to connect and retrieve data from a PostgreSQL Server database using [Npgsql EntityFrameworkCore PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion ASP.NET MVC Grid.
 
 PostgreSQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a PostgreSQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
@@ -24,7 +24,7 @@ The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/conn
 
 ## Binding data from PostgreSQL Server using an API service
 
-This section describes step by step process how to retrieve data from a PostgreSQL Server using an API service and bind it to the Syncfusion ASP.NET MVC Grid Grid.
+This section describes step by step process how to retrieve data from a PostgreSQL Server using an API service and bind it to the Syncfusion ASP.NET MVC Grid.
 
 ### Creating an API service
 
