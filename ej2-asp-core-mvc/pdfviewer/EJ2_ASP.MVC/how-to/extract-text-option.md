@@ -40,7 +40,7 @@ The following example demonstrates how to configure the `extractTextOption` prop
 </div>
 
 <!-- Ensure necessary Syncfusion scripts and styles are included -->
-<script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js"></script>
+<script src="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2.min.js"></script>
 <script type="text/javascript">
     window.onload = function () {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
@@ -61,3 +61,5 @@ The following example demonstrates how to configure the `extractTextOption` prop
 **extractTextOption.None:** This option does not extract or return any text or layout information. It is used to optimize memory usage when no text extraction is necessary. This setting is only relevant for the `extractTextCompleted` event and cannot be used with the `ExtractText` method.
 
 N> Text Search: When using the `extractTextOption.TextOnly` and `extractTextOption.None` option, the findText method will not work. Instead, you should use the findTextAsync method to perform text searches asynchronously.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
