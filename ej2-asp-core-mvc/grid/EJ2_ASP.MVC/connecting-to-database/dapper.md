@@ -507,7 +507,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
@@ -1200,7 +1200,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
