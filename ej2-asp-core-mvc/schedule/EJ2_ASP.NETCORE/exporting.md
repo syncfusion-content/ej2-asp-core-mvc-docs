@@ -216,11 +216,11 @@ Customizing an Excel sheet before export is made easy with the `excelExport` API
 
 With the `excelExport` API, you can:
 
-- Adjust the formatting: Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
+- **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
 
-- Customize headers and footers: Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
+- **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
 
-- Cancel the export: The API supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
+- **Cancel the export:** The API supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
 
 Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the `excelExport` API:
 
