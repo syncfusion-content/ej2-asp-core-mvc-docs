@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bind SQL Data in Syncfusion ##Platform_Name## Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, binding it to Syncfusion Component, and performing CRUD operations.
+description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, binding it to Syncfusion Grid, and performing CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
 keywords: adaptors, customadaptor, urladaptor, dapper, remotedata 
@@ -25,7 +25,7 @@ Dapper can be used to interact with a Microsoft SQL Server database in conjuncti
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), `UrlAdaptor`, [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -69,10 +69,11 @@ namespace Grid_Dapper.Controllers
     private readonly string ConnectionString = @"<Enter a valid connection string>";
 
     /// <summary>
-    ///  Retrieves the order data from the database.
+    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
-    /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-    public JsonResult UrlDataSource()
+    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     {            
       // Retrieve data from the data source (e.g., database).
       IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
@@ -91,9 +92,13 @@ namespace Grid_Dapper.Controllers
     private List<Orders> GetOrderData()
     {
       string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
+
+      //Create SQL connection.
       using (IDbConnection connection = new SqlConnection(ConnectionString))
       {
         connection.Open();
+
+        // Dapper automatically handles mapping to your orders class.
         return connection.Query<Orders>(queryString).ToList();
       }
     }
@@ -125,7 +130,7 @@ namespace Grid_Dapper.Controllers
 
 ### Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
-To integrate the Syncfusion ASP.NET MVC Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
@@ -205,7 +210,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-// Replace xxxx with your actual port number
+// Replace `xxxx` with your actual port number
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -232,17 +237,17 @@ public class GridController : Controller
   /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
   public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
   {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-      // Initialize QueryableOperation instance.
-      QueryableOperation queryableOperation = new QueryableOperation();
+    // Initialize QueryableOperation instance.
+    QueryableOperation queryableOperation = new QueryableOperation();
 
-      // Get the total count of records.
-      int totalRecordsCount = DataSource.Count();
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
 
-      // Return data based on the request.
-      return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+    // Return data based on the request.
+    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
   }
 
   /// <summary>
@@ -326,11 +331,11 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Toolbar(new List<string>() { "Search" }).Render()
 
 {% endhighlight %}
@@ -498,19 +503,18 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-### Handling CRUD Operations
+### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations Mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
 3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **CrudUrl**: Specifies a single URL for all CRUD operations.
-5. **BatchUrl**: Specifies the URL for batch editing.
+4. **BatchUrl**: Specifies the URL for batch editing.
 
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
@@ -552,9 +556,9 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, the record will be inserted into the **Orders** table by calling the following **POST** method of an API. Utilizing `Dapper` simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -567,15 +571,15 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 public void Insert(CRUDModel<Orders> newRecord)
 {
   //Create query to insert the specific into the database by accessing its properties.
-  string Query = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
-      Connection.Open();
+    Connection.Open();
 
-      //Execute this code to reflect the changes into the database.
-      Connection.Execute(Query, newRecord.value);
+    //Execute this code to reflect the changes into the database.
+    Connection.Execute(queryStr, newRecord.value);
   }
 
   //Add custom logic here if needed and remove above method.
@@ -596,9 +600,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -611,15 +615,15 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 public void Update(CRUDModel<Orders> updateOrder)
 {
   //Create query to update the changes into the database by accessing its properties.
-  string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(Query, updateOrder.value);
+    Connection.Execute(queryStr, updateOrder.value);
   }
 
   //Add custom logic here if needed and remove above method.
@@ -640,9 +644,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation**
+**Delete operation**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -655,16 +659,16 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 public void Remove(CRUDModel<Orders> value)
 {
   //Create query to remove the specific from database by passing the primary key column value.
-  string Query = "DELETE FROM Orders WHERE OrderID = @OrderID";
+  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
     int orderID = Convert.ToInt32(value.key.ToString());
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(Query, new { OrderID = orderID });
+    Connection.Execute(queryStr, new { OrderID = orderID });
   }
 
   //Add custom logic here if needed and remove above method.
@@ -685,9 +689,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch operation**
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
+To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -703,18 +707,18 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     {
         foreach (Orders Record in (IEnumerable<Orders>)value.changed)
         {
-            //Create query to update the changes into the database by accessing its properties.
-            string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+          //Create query to update the changes into the database by accessing its properties.
+          string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
 
-            //Create SQL Connection.
-            using (IDbConnection Connection = new SqlConnection(ConnectionString))
-            {
-                Connection.Open();
+          //Create SQL connection.
+          using (IDbConnection Connection = new SqlConnection(ConnectionString))
+          {
+              Connection.Open();
 
-                //Execute this code to reflect the changes into the database.
-                Connection.Execute(Query, Record);
-            }
-            //Add custom logic here if needed and remove above method.
+              //Execute this code to reflect the changes into the database.
+              Connection.Execute(queryStr, Record);
+          }
+          //Add custom logic here if needed and remove above method.
         }
     }
     if (value.added != null && value.added.Count > 0)
@@ -722,15 +726,15 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
         foreach (Orders Record in (IEnumerable<Orders>)value.added)
         {
             //Create query to insert the specific into the database by accessing its properties.
-            string Query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+            string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-            //Create SQL Connection.
+            //Create SQL connection.
             using (IDbConnection Connection = new SqlConnection(ConnectionString))
             {
                 Connection.Open();
 
                 //Execute this code to reflect the changes into the database.
-                Connection.Execute(Query, Record);
+                Connection.Execute(queryStr, Record);
             }
             //Add custom logic here if needed and remove above method.
         }
@@ -740,15 +744,15 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
         foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
         {
             //Create query to remove the specific from database by passing the primary key column value.
-            string Query = "DELETE FROM Orders WHERE OrderID = @OrderID";
+            string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
 
-            //Create SQL Connection.
+            //Create SQL connection.
             using (IDbConnection Connection = new SqlConnection(ConnectionString))
             {
                 Connection.Open();
 
                 //Execute this code to reflect the changes into the database.
-                Connection.Execute(Query, new { OrderID = Record.OrderID });
+                Connection.Execute(queryStr, new { OrderID = Record.OrderID });
             }
             //Add custom logic here if needed and remove above method.
         }
@@ -788,9 +792,9 @@ When you run the application, the resultant Syncfusion ASP.NET MVC Grid will loo
 
 ![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data using Dapper](../images/database/db-crud.gif)
 
-## Binding data from Microsoft SQL Server using CustomAdaptor
+## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion Angular Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
@@ -814,11 +818,11 @@ This section describes step by step process how to retrieve data from a Microsof
 
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-	col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-	col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-	col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true }).Add();
-	col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min = 1, max = 1000 }).Add();
-	col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
 
 <script>
@@ -832,7 +836,7 @@ This section describes step by step process how to retrieve data from a Microsof
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -866,15 +870,15 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 public List<Orders> GetOrderData()
 {
-  string Query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
+  string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
   
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
 
     // Dapper automatically handles mapping to your Order class.
-    List<Orders> orders = Connection.Query<Orders>(Query).ToList();
+    List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
     return orders;
   }
 }
@@ -897,7 +901,7 @@ public class Orders
 
 ### Handling searching operation
 
-When utilizing the `CustomAdaptor` in Vue, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the searching operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
 In the code example below, searching a custom data source can be accomplished by employing the built-in `PerformSearching` method of the `QueryableOperation` class. Alternatively, you can implement your own method for searching operation and bind the resultant data to the Grid.
 
@@ -919,7 +923,8 @@ public object Post(DataManagerRequest DataManagerRequest)
   QueryableOperation queryableOperation = new QueryableOperation(); 
 
   // Handling searching operation.
-  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0){
+  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+  {
     DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
     //Add custom logic here if needed and remove above method.
   }
@@ -938,11 +943,11 @@ public object Post(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Toolbar(new List<string>() { "Search" }).Render()
 
 <script>
@@ -956,7 +961,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -969,7 +974,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 ### Handling filtering operation
 
-When utilizing the `CustomAdaptor` in Vue, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
 In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Grid.
 
@@ -980,7 +985,7 @@ In the code example below, filtering a custom data source can be achieved by uti
 /// Processes the DataManager request to perform filtering operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 public object Post(DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
@@ -989,7 +994,7 @@ public object Post(DataManagerRequest DataManagerRequest)
   // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation(); 
 
-  // Handling filtering operation
+  // Handling filtering operation.
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) {
     foreach (WhereFilter condition in DataManagerRequest.Where)
     {
@@ -1015,11 +1020,11 @@ public object Post(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowFiltering().Render()
 
 <script>
@@ -1033,7 +1038,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1044,10 +1049,9 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-
 ### Handling sorting operation
 
-When utilizing the `CustomAdaptor` in Vue, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
 In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Grid.
 
@@ -1066,7 +1070,8 @@ public object Post(DataManagerRequest DataManagerRequest)
   QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
 
   // Handling sorting operation.
-  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0){
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+  {
     DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
     //Add custom logic here if needed and remove above method.
   }
@@ -1085,11 +1090,11 @@ public object Post(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowSorting().Render()
 
 <script>
@@ -1103,7 +1108,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1116,7 +1121,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 ### Handling paging operation
 
-When utilizing the `CustomAdaptor` in Vue, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
+When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
 In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Grid.
 
@@ -1124,7 +1129,7 @@ In the code example below, paging a custom data source can be achieved by utiliz
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to paging perform operation.
+/// Processes the DataManager request to perform paging operation operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
@@ -1132,17 +1137,21 @@ public object Post(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+   // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Get the total count of records.
   int totalRecordsCount = DataSource.Count();
 
   // Handling paging operation.
-  if (DataManagerRequest.Skip != 0){
+  if (DataManagerRequest.Skip != 0)
+  {
     DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
     //Add custom logic here if needed and remove above method.
   }
-  if (DataManagerRequest.Take != 0){
+  if (DataManagerRequest.Take != 0)
+  {
     DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
     //Add custom logic here if needed and remove above method.
   }
@@ -1158,11 +1167,11 @@ public object Post(DataManagerRequest DataManagerRequest)
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).AllowPaging().Render()
 
 <script>
@@ -1176,7 +1185,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1187,19 +1196,18 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-### Handling CRUD Operations
+### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations Mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
 3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **CrudUrl**: Specifies a single URL for all CRUD operations.
-5. **BatchUrl**: Specifies the URL for batch editing.
+4. **BatchUrl**: Specifies the URL for batch editing.
 
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
@@ -1227,7 +1235,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+                url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
                 adaptor: new CustomAdaptor(),
                 insertUrl: "https://localhost:xxxx/grid/Insert",
                 updateUrl: "https://localhost:xxxx/grid/Update",
@@ -1251,11 +1259,11 @@ The CRUD operations can be performed and customized on our own by overriding the
 * update
 * batchRequest
 
-Let’s see how to perform CRUD operation using Microsoft SQL Server data with Grid.
+Let’s see how to perform CRUD operations using Dapper in Microsoft SQL Server data with Grid.
 
-**Insert Operation:**
+**Insert operation:**
 
-To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
+To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs%}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1306,15 +1314,15 @@ To execute the insert operation, you will need to override the `insert` method o
 public void Insert(CRUDModel<Orders> newRecord)
 {
   //Create query to insert the specific into the database by accessing its properties.
-  string Query = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(Query, newRecord.value);
+    Connection.Execute(queryStr, newRecord.value);
   }
   //Add custom logic here if needed and remove above method.
 }
@@ -1334,9 +1342,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1386,15 +1394,15 @@ To execute the update operation, override the `update` method of the `CustomAdap
 public void Update(CRUDModel<Orders> updateOrder)
 {
   //Create query to update the changes into the database by accessing its properties.
-  string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(Query, updateOrder.value);
+    Connection.Execute(queryStr, updateOrder.value);
   }
   //Add custom logic here if needed and remove above method.
 }
@@ -1414,9 +1422,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation:**
+**Delete operation:**
 
-To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
+To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1467,16 +1475,16 @@ To perform the delete operation, you need to override the `remove` method of the
 public void Remove(CRUDModel<Orders> value)
 {
   //Create query to remove the specific from database by passing the primary key column value.
-  string Query = "DELETE FROM Orders WHERE OrderID = @OrderID";
+  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
 
-  //Create SQL Connection.
+  //Create SQL connection.
   using (IDbConnection Connection = new SqlConnection(ConnectionString))
   {
     Connection.Open();
     int orderID = Convert.ToInt32(value.key.ToString());
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(Query, new { OrderID = orderID });
+    Connection.Execute(queryStr, new { OrderID = orderID });
   }
   //Add custom logic here if needed and remove above method.
 }
@@ -1496,9 +1504,9 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation:**
+**Batch operation:**
 
-To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
+To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1565,15 +1573,15 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.changed)
     {
       //Create query to update the changes into the database by accessing its properties.
-      string Query = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
 
-      //Create SQL Connection.
+      //Create SQL connection.
       using (IDbConnection Connection = new SqlConnection(ConnectionString))
       {
         Connection.Open();
 
         //Execute this code to reflect the changes into the database.
-        Connection.Execute(Query, Record);
+        Connection.Execute(queryStr, Record);
       }
       //Add custom logic here if needed and remove above method.
 
@@ -1584,15 +1592,15 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     foreach (Orders Record in (IEnumerable<Orders>)value.added)
     {
       //Create query to insert the specific into the database by accessing its properties.
-      string Query = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-      //Create SQL Connection.
+      //Create SQL connection.
       using (IDbConnection Connection = new SqlConnection(ConnectionString))
       {
         Connection.Open();
 
         //Execute this code to reflect the changes into the database.
-        Connection.Execute(Query, Record);
+        Connection.Execute(queryStr, Record);
       }
       //Add custom logic here if needed and remove above method.
     }
@@ -1603,15 +1611,15 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     {
 
       //Create query to remove the specific from database by passing the primary key column value.
-      string Query = "DELETE FROM Orders WHERE OrderID = @OrderID";
+      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
 
-      //Create SQL Connection.
+      //Create SQL connection.
       using (IDbConnection Connection = new SqlConnection(ConnectionString))
       {
         Connection.Open();
 
         //Execute this code to reflect the changes into the database.
-        Connection.Execute(Query, new { OrderID = Record.OrderID });
+        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
       }
       //Add custom logic here if needed and remove above method.
     }
