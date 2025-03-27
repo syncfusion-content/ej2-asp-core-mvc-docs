@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MySQL Server Data Binding in Syncfusion Grid
+title: MySQL Server Data Binding in Syncfusion ##Platform_Name## Grid
 description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
