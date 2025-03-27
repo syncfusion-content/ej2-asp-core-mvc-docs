@@ -12,31 +12,31 @@ documentation: ug
 
 ## Customizing the button
 
-You can use the `ButtonSettings` property to customize the appearance of the start and stop buttons in the speech to text conversion.
+You can use the [ButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ButtonSettings) property to customize the appearance of the start and stop buttons in the speech to text conversion.
 
 ### Setting start content
 
-You can use the `Content` property to define text content for the listening start state in the SpeechToText button.
+You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_Content) property to define text content for the listening start state in the SpeechToText button.
 
 ### Setting stop content
 
-You can use the `StopContent` property to define text content for the listening stop state in the SpeechToText button.
+You can use the [StopContent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_StopContent) property to define text content for the listening stop state in the SpeechToText button.
 
 ### Setting iconcss
 
-You can use the `IconCss` property to apply a CSS class to customize the icon appearance for the listening start state.
+You can use the [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_IconCss) property to apply a CSS class to customize the icon appearance for the listening start state.
 
 ### Setting stop iconcss
 
-You can use the `StopIconCss` property to apply a CSS class to customize the icon appearance for the listening stop state.
+You can use the [StopIconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_StopIconCss) property to apply a CSS class to customize the icon appearance for the listening stop state.
 
 ### Setting icon position
 
-You can display the icon on the top, bottom, left, or right side of the button text content using the `iconPosition` property.
+You can display the icon on the top, bottom, left, or right side of the button text content using the [IconPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_IconPosition) property.
 
 ### Setting primary
 
-You can use the `IsPrimary` property to configure the button as a primary action button.
+You can use the [IsPrimary](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_IsPrimary) property to configure the button as a primary action button.
 
 Below code sample demonstrates how to configure the button with above mentioned properties.
 
@@ -53,19 +53,19 @@ Below code sample demonstrates how to configure the button with above mentioned 
 
 ## Customizing the tooltips
 
-You can use the `TooltipSettings` property to customize the content and positions of the tooltip.
+You can use the [TooltipSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextTooltipSettings.html) property to customize the content and positions of the tooltip.
 
 ### Setting start content
 
-You can use the `Content` property to customize the content to be displayed in the tooltip when the speech recognition begins.
+You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextTooltipSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextTooltipSettings_Content) property to customize the content to be displayed in the tooltip when the speech recognition begins.
 
 ### Setting stop content
 
-You can use the `StopContent` property to customize the stop button tooltip text which is displayed on-hover.
+You can use the [StopContent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextTooltipSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextTooltipSettings_StopContent) property to customize the stop button tooltip text which is displayed on-hover.
 
 ### Setting tooltip position
 
-You can use the `Position` property to determine the placement of tooltips relative to the button.
+You can use the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextTooltipSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextTooltipSettings_Position) property to determine the placement of tooltips relative to the button.
 
 Below code sample demonstrates how to configure the tooltip with above mentioned properties.
 
@@ -82,7 +82,7 @@ Below code sample demonstrates how to configure the tooltip with above mentioned
 
 ## Setting button styles
 
-The SpeechToText control supports the following predefined styles that can be defined using the `CssClass` property. You can customize by adding the cssClass property with the below defined class. 
+The SpeechToText control supports the following predefined styles that can be defined using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_CssClass) property. You can customize by adding the cssClass property with the below defined class. 
 
 | cssClass | Description | 
 | -------- | -------- | 
@@ -95,7 +95,7 @@ The SpeechToText control supports the following predefined styles that can be de
 
 ## Setting cssclass
 
-You can use the `cssClass` property to customize the appearance of the SpeechToText control.
+You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_CssClass) property to customize the appearance of the SpeechToText control.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
