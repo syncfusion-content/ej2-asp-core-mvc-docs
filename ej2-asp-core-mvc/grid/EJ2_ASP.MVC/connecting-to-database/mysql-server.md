@@ -867,7 +867,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/microsoft-sql-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/db-crud.gif)
 
 ## Binding data from MySQL Server using CustomAdaptor
 
@@ -1447,7 +1447,7 @@ public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1536,7 +1536,7 @@ public IHttpActionResult Update(CRUDModel<Orders> value)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1580,6 +1580,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Deletes an existing order record from the database using the specified OrderID.
 /// </summary>
@@ -1609,7 +1610,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1802,4 +1803,4 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/microsoft-sql-batch.gif)
+![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/db-batch.gif)
