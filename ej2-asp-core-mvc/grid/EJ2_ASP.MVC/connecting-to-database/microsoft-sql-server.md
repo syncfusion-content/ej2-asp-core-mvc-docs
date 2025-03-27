@@ -16,7 +16,7 @@ Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) 
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), `UrlAdaptor`, [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -143,7 +143,7 @@ namespace Grid_MSSQL.Controllers
 
 **6.** Finally, the retrieved data from Microsoft SQL Server database which is in the form of list can be found in an MVC controller available in the URL link `https://localhost:xxxx/Grid/UrlDataSource`, as shown in the browser page below.
 
-![Hosted API URL](../images/database/ms-sql-data.png)
+![Hosted API URL](../images/database/db-data.png)
 
 ### Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
@@ -896,7 +896,7 @@ This section describes step by step process how to retrieve data from a Microsof
 using System;
 using System.Collections.Generic;
 using System.Data;
-using Microsoft.Data.SqlClientdatabase/ms-sql-data.png;
+using Microsoft.Data.SqlClient
 using System.Linq;
 using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
