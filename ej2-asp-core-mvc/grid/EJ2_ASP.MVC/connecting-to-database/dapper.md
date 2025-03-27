@@ -25,7 +25,7 @@ Dapper can be used to interact with a Microsoft SQL Server database in conjuncti
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), `UrlAdaptor`, [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -53,58 +53,64 @@ To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 using System.Linq;
 using System.Web.Mvc;
 using Syncfusion.EJ2.Base;
 using Syncfusion.EJ2.Linq;
 
-namespace Grid_MSSQL.Controllers
+namespace Grid_Dapper.Controllers
 {
   public class GridController : Controller
   {
-      /// <summary>
-      /// Connection string for the database.
-      /// </summary>
-      private readonly string ConnectionString = @"<Enter a valid connection string>";
+    /// <summary>
+    /// Connection string for the database.
+    /// </summary>
+    private readonly string ConnectionString = @"<Enter a valid connection string>";
 
-      /// <summary>
-      ///  Retrieves the order data from the database.
-      /// </summary>
-      /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-      public JsonResult UrlDataSource()
-      {
-          IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-          return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
-      }
+    /// <summary>
+    ///  Retrieves the order data from the database.
+    /// </summary>
+    /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
+    public JsonResult UrlDataSource()
+    {            
+      // Retrieve data from the data source (e.g., database).
+      IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-      /// <summary>
-      /// Retrieves order data from the database.
-      /// </summary>
-      /// <returns>Returns a list of orders fetched from the database.</returns>
-      private List<Orders> GetOrderData()
-      {
-          string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
-          using (IDbConnection connection = new SqlConnection(ConnectionString))
-          {
-              connection.Open();
-              return connection.Query<Orders>(queryString).ToList();
-          }
-      }
+      // Get the total count of records.
+      int totalRecordsCount = dataSource.Count();
 
-      #region Models
-      /// <summary>
-      /// Represents the orders model mapped to the database table.
-      /// </summary>
-      public class Orders
+      // Return data based on the request.
+      return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+    }
+
+    /// <summary>
+    /// Retrieves order data from the database.
+    /// </summary>
+    /// <returns>Returns a list of orders fetched from the database.</returns>
+    private List<Orders> GetOrderData()
+    {
+      string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
+      using (IDbConnection connection = new SqlConnection(ConnectionString))
       {
-          public int? OrderID { get; set; }
-          public string CustomerID { get; set; }
-          public int? EmployeeID { get; set; }
-          public decimal? Freight { get; set; }
-          public string ShipCity { get; set; }
+        connection.Open();
+        return connection.Query<Orders>(queryString).ToList();
       }
-      #endregion
+    }
+
+    #region Models
+    /// <summary>
+    /// Represents the orders model mapped to the database table.
+    /// </summary>
+    public class Orders
+    {
+      public int? OrderID { get; set; }
+      public string CustomerID { get; set; }
+      public int? EmployeeID { get; set; }
+      public decimal? Freight { get; set; }
+      public string ShipCity { get; set; }
+    }
+    #endregion
   }
 }
 
@@ -266,7 +272,7 @@ public class GridController : Controller
       public string ShipCity { get; set; }
   }
   #endregion
-  }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -293,24 +299,24 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling searching operation.
-    if (DataManagerRequest.Search?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Handling searching operation.
+  if (DataManagerRequest.Search?.Count > 0)
+  {
+    dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -344,30 +350,30 @@ To handle filtering operation, ensure that your API endpoint supports custom fil
 /// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling filtering operation.
-    if (DataManagerRequest.Where?.Count > 0)
+  // Handling filtering operation.
+  if (DataManagerRequest.Where?.Count > 0)
+  {
+    foreach (WhereFilter condition in DataManagerRequest.Where)
     {
-        foreach (WhereFilter condition in DataManagerRequest.Where)
-        {
-            foreach (WhereFilter predicate in condition.predicates)
-            {
-                dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
-                //Add custom logic here if needed and remove above method.
-            }
-        }
+      foreach (WhereFilter predicate in condition.predicates)
+      {
+        dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
+        //Add custom logic here if needed and remove above method.
+      }
     }
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();  
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();  
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -401,24 +407,24 @@ To handle sorting operation, ensure that your API endpoint supports custom sorti
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-    
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling sorting operation.
-    if (DataManagerRequest.Sorted?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Handling sorting operation.
+  if (DataManagerRequest.Sorted?.Count > 0)
+  {
+    dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -452,27 +458,27 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Get the total count of records.
-    int totalRecordsCount = dataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = dataSource.Count();
 
-    // Handling paging operation.
-    if (DataManagerRequest.Skip > 0)
-    {
-        dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
-    }
-    if (DataManagerRequest.Take > 0)
-    {
-        dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
-    }
+  // Handling paging operation.
+  if (DataManagerRequest.Skip > 0)
+  {
+    dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
+  }
+  if (DataManagerRequest.Take > 0)
+  {
+    dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
+  }
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -517,11 +523,11 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
         .InsertUrl("https://localhost:xxxx/Grid/Insert")
         .RemoveUrl("https://localhost:xxxx/Grid/Remove").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 {% endhighlight %}
@@ -560,19 +566,19 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <returns>Returns void.</returns>
 public void Insert(CRUDModel<Orders> newRecord)
 {
-    //Create query to insert the specific into the database by accessing its properties.
-    string Query = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+  //Create query to insert the specific into the database by accessing its properties.
+  string Query = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-    //Create SQL Connection.
-    using (IDbConnection Connection = new SqlConnection(ConnectionString))
-    {
-        Connection.Open();
+  //Create SQL Connection.
+  using (IDbConnection Connection = new SqlConnection(ConnectionString))
+  {
+      Connection.Open();
 
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(Query, newRecord.value);
-    }
+      //Execute this code to reflect the changes into the database.
+      Connection.Execute(Query, newRecord.value);
+  }
 
-    //Add custom logic here if needed and remove above method.
+  //Add custom logic here if needed and remove above method.
 }
 
 public class CRUDModel<T> where T : class
@@ -602,8 +608,6 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// </summary>
 /// <param name="updateOrder">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns void.</returns>
-[HttpPost]
-[Route("api/[controller]/Update")]
 public void Update(CRUDModel<Orders> updateOrder)
 {
   //Create query to update the changes into the database by accessing its properties.
@@ -648,8 +652,6 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// </summary>
 /// <param name="value">It contains the specific record detail which is need to be removed.</param>
 /// <return>Returns void.</return>
-[HttpPost]
-[Route("api/[controller]/Remove")]
 public void Remove(CRUDModel<Orders> value)
 {
   //Create query to remove the specific from database by passing the primary key column value.
@@ -784,7 +786,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data using Dapper](../images/database/microsoft-sql-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data using Dapper](../images/database/db-crud.gif)
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
@@ -908,7 +910,6 @@ In the code example below, searching a custom data source can be accomplished by
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 [HttpPost]
-[Route("api/[controller]")]
 public object Post(DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
@@ -980,8 +981,6 @@ In the code example below, filtering a custom data source can be achieved by uti
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
 public object Post(DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
@@ -1060,8 +1059,6 @@ In the code example below, sorting a custom data source can be accomplished by e
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
 public object Post(DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
@@ -1131,8 +1128,6 @@ In the code example below, paging a custom data source can be achieved by utiliz
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
-[HttpPost]
-[Route("api/[controller]")]
 public object Post(DataManagerRequest DataManagerRequest) 
 {
   // Retrieve data from the data source (e.g., database).
@@ -1639,4 +1634,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Grid bound with Microsoft SQL server data using dapper](../images/database/microsoft-sql-batch.gif)
+![Grid bound with Microsoft SQL server data using dapper](../images/database/db-batch.gif)
