@@ -15,37 +15,43 @@ The findTextAsync method in the Syncfusion PdfViewer control allows you to searc
 Here is an example of how you can use the **findTextAsync** method:
 
 
-```html
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+@using Syncfusion.EJ2
+@{
+    ViewBag.Title = "Home Page";
+}
+
 <div>
-    <div style="height:500px;width:100%;">
-    <!-- Buttons for triggering text search -->
+    <!-- Render PDF Viewer -->
     <button id="findTextBtn" onclick="findText()">Find Text</button>
     <button id="findTextsBtn" onclick="findTexts()">Find Multiple Texts</button>
-        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
-    </div>
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
 </div>
 
 <!-- Ensure necessary Syncfusion scripts and styles are included -->
-<script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js"></script>
-
+<script src="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2.min.js"></script>
 <script type="text/javascript">
+
     function findText() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         // Search for a single text ('pdf') across all pages (case insensitive)
-            viewer.textSearchModule.findTextAsync('pdf', false).then(function (res) {
-                console.log(res);  // Log the search results
+        viewer.textSearchModule.findTextAsync('pdf', false).then(function (res) {
+            console.log(res);  // Log the search results
         });
     }
     function findTexts() {
         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
         // Search for multiple texts (['pdf', 'the']) across all pages (case insensitive)
-            viewer.textSearchModule.findTextAsync(['pdf', 'the'], false).then(function (res) {
-                console.log(res);  // Log the search results
+        viewer.textSearchModule.findTextAsync(['pdf', 'the'], false).then(function (res) {
+            console.log(res);  // Log the search results
         });
     }
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ### Description:
 
@@ -82,3 +88,5 @@ This will search for the term "pdf" in a case-insensitive manner only on the fir
 
 **findTextAsync(['pdf', 'the'], false, 1):**
 This will search for the terms "pdf" and "the" in a case-insensitive manner only on the second page (page 1).
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
