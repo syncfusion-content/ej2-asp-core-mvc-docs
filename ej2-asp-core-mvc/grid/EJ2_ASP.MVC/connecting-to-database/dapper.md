@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind SQL Data in Syncfusion ##Platform_Name## Grid component using Dapper
+title: Bind SQL Data in Syncfusion ##Platform_Name## Grid using Dapper
 description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, binding it to Syncfusion Component, and performing CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
