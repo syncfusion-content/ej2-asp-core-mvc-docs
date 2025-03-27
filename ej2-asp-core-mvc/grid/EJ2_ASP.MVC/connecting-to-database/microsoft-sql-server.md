@@ -147,7 +147,7 @@ namespace Grid_MSSQL.Controllers
 
 ### Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
-To integrate the Syncfusion ASP.NET MVC Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
+To integrate the Syncfusion Grid into your ASP.NET MVC project using Visual Studio, follow these steps:
 
 **Step 1:** Install the Syncfusion ASP.NET MVC Package:
 
@@ -227,7 +227,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-// Replace xxxx with your actual port number
+// Replace `xxxx` with your actual port number
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -550,17 +550,16 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
 3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **CrudUrl**: Specifies a single URL for all CRUD operations.
-5. **BatchUrl**: Specifies the URL for batch editing.
+4. **BatchUrl**: Specifies the URL for batch editing.
 
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
@@ -602,7 +601,7 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
@@ -642,7 +641,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
@@ -683,7 +682,7 @@ public JsonResult Update(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation**
+**Delete operation**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
@@ -720,7 +719,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
@@ -881,7 +880,7 @@ This section describes step by step process how to retrieve data from a Microsof
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1040,7 +1039,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1118,7 +1117,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1191,7 +1190,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1267,7 +1266,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+				url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
 				adaptor: new CustomAdaptor(),
 			});
 			grid.dataSource = dataManager;
@@ -1278,11 +1277,11 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-### Handling CRUD Operations
+### Handling CRUD operations
 
 The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
@@ -1318,7 +1317,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
         let grid = document.getElementById("Grid").ej2_instances[0];
         if (grid) {
             let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace xxxx with your actual port number.
+                url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
                 adaptor: new CustomAdaptor(),
                 insertUrl: "https://localhost:xxxx/Grid/Insert",
                 updateUrl: "https://localhost:xxxx/Grid/Update",
@@ -1351,7 +1350,7 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
@@ -1428,7 +1427,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
@@ -1506,7 +1505,7 @@ public JsonResult Update(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation**
+**Delete operation**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
@@ -1581,7 +1580,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
