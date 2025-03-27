@@ -86,7 +86,7 @@ The code snippet describes the integration of the above components with File Man
 
 * PDF Viewer : Setting up the PDF Viewer using the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started) guide to preview PDF files with serviceUrl and addition of close button.
 
-* Document Editor : Setting up the Document Editor using the [`Getting Started`](https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-mvc) guide to displays Word documents with the addition of close button.
+* Document Editor : Setting up the Document Editor using the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started-mvc) guide to displays Word documents with the addition of close button.
 
 * SpreadSheet : Setting up the SpreadSheet using the [`Getting Started`](https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/getting-started-mvc) guide to displays Excel files with openUrl and the addition of close button.
 
