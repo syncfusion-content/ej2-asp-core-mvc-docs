@@ -12,7 +12,7 @@ documentation: ug
 
 The Markdown Editor is designed to be fully accessible, following WAI-ARIA specifications and implementing ARIA roles, states, and properties. These accessibility features ensure that the editor is user-friendly for individuals relying on assistive technologies (AT) or keyboard navigation. 
 
-The following table summarizes the accessibility support of the Markdown Editor component:
+The following table summarizes the accessibility support of the Markdown Editor control:
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |

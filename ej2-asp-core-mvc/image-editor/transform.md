@@ -193,7 +193,7 @@ The Image Editor allows to pan an image when the image exceeds the canvas size o
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-panning.png)
+![ImageEditor Sample](images/image-editor-panning.jpg)
 
 ## Panning event 
 

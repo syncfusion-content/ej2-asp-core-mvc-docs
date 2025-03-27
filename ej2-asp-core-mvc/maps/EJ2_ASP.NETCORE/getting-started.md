@@ -179,7 +179,7 @@ The JSON object **"electionData.json"** is used as data source in the below code
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="name">
+        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country" shapePropertyPath="propertyPath">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
