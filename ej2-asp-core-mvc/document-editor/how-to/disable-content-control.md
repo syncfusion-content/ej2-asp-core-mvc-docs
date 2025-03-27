@@ -11,9 +11,9 @@ documentation: ug
 
 # Disable Content Control in ##Platform_Name## Document editor control
 
-Document Editor content control can be disable using the ContentControlInfo properties If you want the conetnt control can not be editable.
+Document Editor content control can be disable using the ContentControlInfo properties If you want the content control can not be editable.
 
-The following example illustrates to disable the conetent control after inserting the content control in DocumentEditorContainer.
+The following example illustrates to disable the content control after inserting the content control in DocumentEditorContainer.
 
 
 Content control properties can be set using the **`ContentControlInfo`**
