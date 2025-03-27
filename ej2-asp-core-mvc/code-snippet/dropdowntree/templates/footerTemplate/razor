@@ -1,6 +1,15 @@
 <div class="control-section">
     <div style="margin: 0 auto; width:350px;">
-        @Html.EJS().DropDownTree("ddt").CssClass("custom").Placeholder("Select an employee").Width("300px").PopupHeight("250px").Fields(ViewBag.templateData).ItemTemplate("<div class=\"ename\">${name}</div>").FooterTemplate("<div class=\"footer\"><div class=\"footer-content\">Total number of employees: 10 </div></div>").Render()
+        @Html.EJS().DropDownTree("ddt")
+            .CssClass("custom")
+            .Placeholder("Select an employee")
+            .Width("300px")
+            .PopupHeight("250px")
+            .Fields(ViewBag.templateData)
+            .ItemTemplate("<div class=\"ename\">${name}</div>")
+            .FooterTemplate("<div class=\"footer\">
+                <div class=\"footer-content\">Total number of employees: 10 </div>
+            </div>").Render()
     </div>
 </div>
 <style>

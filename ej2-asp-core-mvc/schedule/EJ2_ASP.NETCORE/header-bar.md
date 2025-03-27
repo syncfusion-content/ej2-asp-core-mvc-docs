@@ -43,7 +43,36 @@ By default, the header bar holds the date and view navigation options, through w
 
 ![Display Show or Hide Header Bar in ASP.NET Core Scheduler](images/scheduler-hide-header.png)
 
-## Customizing header bar
+## Customizing header bar using template
+
+Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#properties) property. To display the default items, it’s essential to assign a [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleToolbarItem.html#Syncfusion_EJ2_Schedule_ScheduleToolbarItem_Name) field to each item. The names of the default items are `Previous`, `Next`, `Today`, `DateRangeText`, `NewEvent`, and `Views`. For custom items you can give the name as `Custom` to the name field. Here, the default items such as previous, next, date range text, and today have been used along with external dropdown list as custom items.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-header-bar-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-header-bar-template/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/header-bar/custom-header-bar-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/header-bar/custom-header-bar-template/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Display Customizing Header Bar Template in ASP.NET Core Scheduler](images/schedule-custom-toolbar-template.png)
+
+## Customizing header bar using event
 
 Apart from the default date navigation and view options available on the header bar, you can add custom items into the Scheduler header bar by making use of the `actionBegin` event. Here, an employee image is added to the header bar, clicking on which will open the popup showing that person's short profile information.
 

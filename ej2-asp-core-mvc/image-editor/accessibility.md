@@ -49,6 +49,8 @@ The Image Editor component followed the keyboard interaction guideline, making i
 | <kbd>Ctrl + S</kbd> | To save the Image. |
 | <kbd>Ctrl + O</kbd> | To open the Image. |
 | <kbd>Delete</kbd> | To delete the shape once the shape got selected through mouse click . |
+| <kbd>Enter</kbd> | To apply Selection Crop or Image Resize. |
+| <kbd>Escape</kbd> | To discard operations performed in the Image Editor, such as annotation drawings, crop selection, and more. |
 
 ## Ensuring accessibility
 

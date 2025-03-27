@@ -16,13 +16,14 @@
     function ShapeChanging(args) {
         if (args.currentShapeSettings.type === 'Text') {
             args.currentShapeSettings.color = 'red';
+            args.currentShapeSettings.fontFamily = 'Times New Roman';
         }
     }
 
     function clickHandler() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         var dimension = imageEditorObj.getImageDimension();
-        imageEditorObj.drawText(dimension.x, dimension.y,'Enter\nText');
+        imageEditorObj.drawText(dimension.x, dimension.y,'Enter Text');
     }
 </script>
 

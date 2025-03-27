@@ -11,7 +11,7 @@ documentation: ug
 
 # Access Control in File Manager control
 
-The FileManager allows you to define access permissions for folders and files using a set of access rules for user(s).
+The File Manager allows you to define access permissions for folders and files using a set of access rules for user(s).
 
 * [Access Rules](#access-rules)
 * [Permissions](#permissions)

@@ -1,13 +1,7 @@
 
 <div id="rteSection">
-    <ejs-richtexteditor id="customtool" created="created">
-        <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-        <e-content-template>
-            <p>
-                The custom command 'insert special character' is configured as the last item of the toolbar.
-                Click on the command and choose the special character you want to include from the popup.
-            </p>
-        </e-content-template>       
+    <ejs-richtexteditor id="customtool" created="created" value="@ViewBag.value">
+        <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>     
     </ejs-richtexteditor>
 </div>
 <ejs-dialog id="customTbarDialog" visible="false" header='Special Characters'  created="onDialogCreate" zIndex="1000" showCloseIcon="false" isModal="true" cssClass='e-rte-elements' overlayClick="dialogOverlay">

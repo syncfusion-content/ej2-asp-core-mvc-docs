@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("custom-font").ToolbarSettings(e => e.Items((object)ViewBag.items)).FontFamily(t => t.Width("80px").Default("Arial").Items(ViewBag.fontFamilyItems)).Value(@ViewBag.value).Render()

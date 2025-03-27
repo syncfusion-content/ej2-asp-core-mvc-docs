@@ -1,4 +1,4 @@
- <!-- sidebar element declaration -->
+
 <ejs-sidebar id="default-sidebar" showBackdrop="false" open="Open" close="Close">
 	<e-content-template>
 		<div class="title"> Sidebar content</div>
@@ -6,18 +6,14 @@
 			Click the button to close the Sidebar.
 		</div>
 		<div class="center-align">
-            <!-- Button element declaration -->
 			<ejs-button id="close" content="Close Sidebar"></ejs-button>
 		</div>
 	</e-content-template>
 </ejs-sidebar>
-<!-- end of sidebar element -->
-<!--  Main Content declaration -->
 <div>
 	<div class="title">Main content</div>
 	<div class="sub-title"> Click the button to open/close the Sidebar.</div>
 	<div style="padding:20px" class="center-align">
-         <!-- Button element declaration -->
 		<ejs-button id="toggle" content="Toggle Sidebar" cssClass="e-info"></ejs-button>
 	</div>
 </div>

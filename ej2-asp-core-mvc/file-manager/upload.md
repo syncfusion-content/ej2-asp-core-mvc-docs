@@ -10,11 +10,11 @@ documentation: ug
 
 # Upload in File Manager control
 
-The File Manager control provides a [uploadSettings](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/#uploadsettings) property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
+The File Manager control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 
 ## Directory Upload
 
-The [directoryUpload](https://ej2.syncfusion.com/javascript/documentation/api/file-manager/uploadSettingsModel/#directoryupload) property controls whether users can browse and upload entire directories (folders) in the Syncfusion File Manager control. 
+The `directoryUpload` property controls whether users can browse and upload entire directories (folders) in the Syncfusion File Manager control. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -65,9 +65,9 @@ By setting the `allowedExtensions` property, you restrict the file types that ca
 
 The File Manager control provides support for external drag-and-drop functionality for uploading files by dragging it from local file system to File Manager.
 
-Setting [allowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
-
 To completely prevent the external drag-and-drop upload functionality (i.e., disallowing users from dragging and dropping files from outside into the File Manager), you can set the [dropArea](https://ej2.syncfusion.com/documentation/api/uploader#droparea) property to null. This can be done by accessing the File Manager instance via its class methods.
+
+>**Note:** Setting [allowDragAndDrop](https://ej2.syncfusion.com/documentation/api/file-manager#allowdraganddrop) property to false will not prevent the file upload operation through external drag and drop. It will only prevent drag and drop action within the File Manager control.
 
 The following example demonstrates the uploadSettings customizations.
 

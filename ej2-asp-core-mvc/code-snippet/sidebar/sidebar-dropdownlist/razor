@@ -1,13 +1,18 @@
-<!-- sidebar element declaration -->
-@{Html.EJS().Sidebar("default-sidebar").Width("280px").CloseOnDocumentClick(true).ContentTemplate(@<div>
-    <div class="title-header">
-        <div style="display:inline-block"> Dropdownlist </div>
-    </div>
-    @Html.EJS().DropDownList("games").DataSource((IEnumerable<object>)ViewBag.data).CssClass("custom_class").Render()
-</div>).Close("onClose").Render();
+
+@{Html.EJS().Sidebar("default-sidebar")
+    .Width("280px")
+    .CloseOnDocumentClick(true)
+    .ContentTemplate(@<div>
+        <div class="title-header">
+            <div style="display:inline-block"> Dropdownlist </div>
+        </div>
+        @Html.EJS().DropDownList("games")
+            .DataSource((IEnumerable<object>)ViewBag.data)
+            .CssClass("custom_class").Render()
+    </div>)
+    .Close("onClose").Render();
 }
-<!-- end of sidebar element -->
-<!--  Main Content declaration -->
+
 <div>
     <div class="title default">Main content</div>
     <div class="sub-title">

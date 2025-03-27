@@ -1,8 +1,8 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     @Html.EJS().ImageEditor("image-editor").Created("created").Render()
 </div>
-@Html.EJS().Button("saveBlob").CssClass("e-primary").Content("Get Blob").Click("saveBlob").Render()
-@Html.EJS().Button("setImage").CssClass("e-primary").Content("Open Image").Click("setImage").Render()
+@Html.EJS().Button("saveBlob").CssClass("e-primary").Content("SAVE BLOB").Click("saveBlob").Render()
+@Html.EJS().Button("openBlob").CssClass("e-primary").Content("OPEN BLOB").Click("openBlob").Render()
 
 <script>
     var blobUrl;
@@ -27,7 +27,7 @@
           this.blobUrl = URL.createObjectURL(blob);// For getting blob.
         });
     }
-    function setImage() {
+    function openBlob() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.open(this.blobUrl);
     }

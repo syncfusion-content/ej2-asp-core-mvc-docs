@@ -171,8 +171,7 @@ N> When mouse trailing option is enabled, the tip pointer position gets auto adj
 
 ## Setting offset values
 
-Offset values are set to specify the distance between the target and tooltip element.
-`offsetX` and `offsetY` properties are used to specify the offset left and top values.
+Offset values are set to specify the distance between the target and Tooltip element. The `offsetX` and `offsetY` properties are used to specify the offset left and top values.
 
 * `offsetX` specifies the distance between the target and Tooltip element in X axis.
 * `offsetY` specifies the distance between the target and Tooltip element in Y axis.

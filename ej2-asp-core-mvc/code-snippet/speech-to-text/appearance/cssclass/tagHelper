@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='speechtotext-container'>
+    <ejs-speechtotext id="speech-to-text" cssClass="customSpeechBtn" transcriptChanged="onTranscriptChanged"></ejs-speechtotext>
+    <ejs-textarea id="output-textarea" rows="5" cols="50" value="" resizeMode="None" placeholder="Transcribed text will be shown here..."></ejs-textarea>
+</div>
+
+<script>
+    function onTranscriptChanged(args) {
+        var textareaObj = ej.base.getComponent(document.getElementById("output-textarea"), "textarea");
+        textareaObj.value = args.transcript;
+    }
+</script>
+
+<style>
+    #speechtotext-container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .e-speech-to-text.customSpeechBtn {
+        background-color: #ff6347;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .e-speech-to-text.customSpeechBtn:hover,
+    .e-speech-to-text.customSpeechBtn:focus {
+        background-color: #ff4500;
+    }
+</style>
