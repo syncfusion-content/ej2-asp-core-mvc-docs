@@ -4,7 +4,7 @@ title: Microsoft SQL Server Data Binding in Syncfusion ##Platform_Name## Grid
 description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: adaptors, graphqladaptor, graphql adaptor, remotedata 
+keywords: adaptors, urladaptor, customadaptor, remotedata, microsoft sql server
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -221,6 +221,78 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
     col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
+
+{% endhighlight %}
+
+{% highlight cs tabtitle="GridController.cs" %}
+
+public class GridController : Controller
+{
+    /// <summary>
+    /// Connection string for the database.
+    /// </summary>
+    private readonly string ConnectionString = @"<Enter a valid connection string>";
+
+    /// <summary>
+    ///  Retrieves the order data from the database.
+    /// </summary>
+    /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
+    public JsonResult UrlDataSource()
+    {            
+        // Retrieve data from the data source (e.g., database).
+        IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+        // Get the total count of records.
+        int totalRecordsCount = dataSource.Count();
+
+        // Return data based on the request.
+        return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+    }
+
+    /// <summary>
+    /// Retrieves order data from the database.
+    /// </summary>
+    /// <returns>Returns a list of orders fetched from the database.</returns>
+    private List<Orders> GetOrderData()
+    {
+        string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
+        List<Orders> orders = new List<Orders>();
+            using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
+            {
+                sqlConnection.Open();
+                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                using (SqlDataAdapter dataAdapter= new SqlDataAdapter(sqlCommand))
+                {
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+
+                    orders = (from DataRow row in dataTable.Rows select new Orders
+                    {
+                        OrderID = Convert.ToInt32(row["OrderID"]),
+                        CustomerID = row["CustomerID"].ToString(),
+                        EmployeeID = Convert.IsDBNull(row["EmployeeID"]) ? (int?)null : Convert.ToInt32(row["EmployeeID"]),
+                        ShipCity = row["ShipCity"].ToString(),
+                        Freight = Convert.ToDecimal(row["Freight"])
+                    }).ToList();
+                }
+            }
+        return orders;
+    }
+
+    #region Models
+    /// <summary>
+    /// Represents the orders model mapped to the database table.
+    /// </summary>
+    public class Orders
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public decimal? Freight { get; set; }
+        public string ShipCity { get; set; }
+    }
+    #endregion
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -546,6 +618,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Updates an existing order record in the database using parameterized queries.
 /// </summary>
@@ -586,6 +659,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Deletes an existing order record from the database using the specified OrderID.
 /// </summary>
@@ -1284,7 +1358,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1328,6 +1402,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Updates an existing order record in the database using parameterized queries.
 /// </summary>
@@ -1361,7 +1436,7 @@ public JsonResult Update(CRUDModel<Orders> model)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1405,6 +1480,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
+
 /// <summary>
 /// Deletes an existing order record from the database using the specified OrderID.
 /// </summary>
@@ -1434,7 +1510,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
 {% endhighlight %}
 
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
