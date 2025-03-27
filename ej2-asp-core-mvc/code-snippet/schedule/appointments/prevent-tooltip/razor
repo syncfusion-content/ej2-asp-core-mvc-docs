@@ -2,6 +2,11 @@
 
 @{
     var views = new List<string> { "Day", "Week", "WorkWeek", "Month", "Year", "Agenda", "MonthAgenda", "TimelineDay", "TimelineWeek", "TimelineWorkWeek", "TimelineMonth", "TimelineYear" };
+    var template = "<div class='tooltip-wrap'>" +
+        "<div class='content-area'><div class='name'>${Subject}</></div>" +
+        "${if(Location !== null && Location !== undefined)}<div class='city'>${Location}</div>${/if}" +
+        "<div class='time'>From : ${StartTime.toLocaleString()} </div>" +
+        "<div class='time'>To   : ${EndTime.toLocaleString()} </div></div></div>";
 }
 
 <ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2025, 2, 15)" currentView="Week" tooltipOpen="onTooltipOpen">
@@ -17,7 +22,7 @@
             <e-field name="Location" title="Country Name"></e-field>
             <e-field name="Description" title="Summary"></e-field>
             <e-field name="StartTime" title="From"></e-field>
-            <e-field name="EndTime" title="To"></e-field>   
+            <e-field name="EndTime" title="To"></e-field>
             <e-field name="StartTimezone" title="Origin"></e-field>
             <e-field name="EndTimezone" title="Destination"></e-field>
         </e-schedule-eventsettings-fields>
