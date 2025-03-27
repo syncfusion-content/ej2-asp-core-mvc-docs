@@ -8,7 +8,8 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Extract Text from PDF document in serverbacked mode.
+# Extract Text from PDF document 
+## Extract Text in server backed mode.
 
 The PDF Viewer server library allows you to extract the text from a page along with the bounds. Text extracting can be done using the ExtractText() method. Add the following dependency to your application using the `NuGet Package Manager`.
 * Syncfusion.EJ2.PdfViewer.AspNet.Core
@@ -35,7 +36,7 @@ Sample:
 
 N>Ensure the provided document path and output text saved locations in your application level.
 
-# Extract Text Method in standalone mode
+## Extract Text Method in standalone mode
 
 The `extractText` method of the Syncfusion PdfViewer control enables text extraction from one or more pages in a PDF document. This method is useful for retrieving the text content along with its associated data, such as the bounds of each text element.
 
