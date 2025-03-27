@@ -81,27 +81,42 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a list of orders fetched from the database.</returns>
         private List<Orders> GetOrderData()
         {
+            // SQL query to select all records from the Orders table, sorted by OrderID
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-            List<Orders> orders = new List<Orders>();
-                using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
-                {
-                    sqlConnection.Open();
-                    using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
-                    using (SqlDataAdapter dataAdapter= new SqlDataAdapter(sqlCommand))
-                    {
-                        DataTable dataTable = new DataTable();
-                        dataAdapter.Fill(dataTable);
 
-                        orders = (from DataRow row in dataTable.Rows select new Orders
-                        {
-                            OrderID = Convert.ToInt32(row["OrderID"]),
-                            CustomerID = row["CustomerID"].ToString(),
-                            EmployeeID = Convert.IsDBNull(row["EmployeeID"]) ? (int?)null : Convert.ToInt32(row["EmployeeID"]),
-                            ShipCity = row["ShipCity"].ToString(),
-                            Freight = Convert.ToDecimal(row["Freight"])
-                        }).ToList();
-                    }
+            // List to store the retrieved order data
+            List<Orders> orders = new List<Orders>();
+
+            // Using block to ensure proper disposal of the SQL connection
+            using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
+            {
+                // Open the database connection
+                sqlConnection.Open();
+
+                // Using block to ensure proper disposal of the SQL command and data adapter
+                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+                using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
+                {
+                    // DataTable to store the query result
+                    DataTable dataTable = new DataTable();
+
+                    // Fill the DataTable with data from the database
+                    dataAdapter.Fill(dataTable);
+
+                    // Convert DataTable rows into a list of Orders objects
+                    orders = (from DataRow row in dataTable.Rows
+                            select new Orders
+                            {
+                                OrderID = Convert.ToInt32(row["OrderID"]),
+                                CustomerID = row["CustomerID"].ToString(),
+                                EmployeeID = Convert.IsDBNull(row["EmployeeID"]) ? (int?)null : Convert.ToInt32(row["EmployeeID"]),
+                                ShipCity = row["ShipCity"].ToString(),
+                                Freight = Convert.ToDecimal(row["Freight"])
+                            }).ToList();
                 }
+            }
+
+            // Return the list of orders
             return orders;
         }
 
@@ -255,27 +270,42 @@ public class GridController : Controller
     /// <returns>Returns a list of orders fetched from the database.</returns>
     private List<Orders> GetOrderData()
     {
+        // SQL query to select all records from the Orders table, sorted by OrderID
         string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-        List<Orders> orders = new List<Orders>();
-            using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
-            {
-                sqlConnection.Open();
-                using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
-                using (SqlDataAdapter dataAdapter= new SqlDataAdapter(sqlCommand))
-                {
-                    DataTable dataTable = new DataTable();
-                    dataAdapter.Fill(dataTable);
 
-                    orders = (from DataRow row in dataTable.Rows select new Orders
-                    {
-                        OrderID = Convert.ToInt32(row["OrderID"]),
-                        CustomerID = row["CustomerID"].ToString(),
-                        EmployeeID = Convert.IsDBNull(row["EmployeeID"]) ? (int?)null : Convert.ToInt32(row["EmployeeID"]),
-                        ShipCity = row["ShipCity"].ToString(),
-                        Freight = Convert.ToDecimal(row["Freight"])
-                    }).ToList();
-                }
+        // List to store the retrieved order data
+        List<Orders> orders = new List<Orders>();
+
+        // Using block to ensure proper disposal of the SQL connection
+        using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
+        {
+            // Open the database connection
+            sqlConnection.Open();
+
+            // Using block to ensure proper disposal of the SQL command and data adapter
+            using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
+            using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
+            {
+                // DataTable to store the query result
+                DataTable dataTable = new DataTable();
+
+                // Fill the DataTable with data from the database
+                dataAdapter.Fill(dataTable);
+
+                // Convert DataTable rows into a list of Orders objects
+                orders = (from DataRow row in dataTable.Rows
+                        select new Orders
+                        {
+                            OrderID = Convert.ToInt32(row["OrderID"]),
+                            CustomerID = row["CustomerID"].ToString(),
+                            EmployeeID = Convert.IsDBNull(row["EmployeeID"]) ? (int?)null : Convert.ToInt32(row["EmployeeID"]),
+                            ShipCity = row["ShipCity"].ToString(),
+                            Freight = Convert.ToDecimal(row["Freight"])
+                        }).ToList();
             }
+        }
+
+        // Return the list of orders
         return orders;
     }
 
@@ -805,7 +835,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/db-crud.gif)
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
@@ -843,7 +873,7 @@ This section describes step by step process how to retrieve data from a Microsof
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -887,8 +917,8 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
         public JsonResult UrlDataSource()
         {
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
             // Get the total count of records.
             int totalRecordsCount = dataSource.Count();
@@ -1002,7 +1032,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1080,7 +1110,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1116,7 +1146,7 @@ In the code example below, sorting a custom data source can be accomplished by e
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
     
-    // Retrieve data from the data source (e.g., database).\
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
     // Initialize QueryableOperation instance.
@@ -1153,7 +1183,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1229,7 +1259,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1280,7 +1310,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 <script>
     class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
     }
@@ -1365,7 +1395,7 @@ public JsonResult Insert(CRUDModel<Orders> model)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         insert(dm, data) {
@@ -1443,7 +1473,7 @@ public JsonResult Update(CRUDModel<Orders> model)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
+            var original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         update(dm, keyField, value) {
@@ -1517,7 +1547,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         remove(dm, keyField, value) {
@@ -1564,7 +1594,6 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
 /// <returns>Returns a JSON response with success or error message.</returns>
-
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
     // Establish SQL connection.
@@ -1665,7 +1694,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
+			var original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         batchRequest(dm, changes, e) {
@@ -1703,4 +1732,4 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-batch.gif)
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/db-batch.gif)
