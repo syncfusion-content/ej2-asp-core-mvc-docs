@@ -36,12 +36,12 @@ The following example demonstrates how to configure the `extractTextOption` prop
 }
 
 <div class="text-center">
-    <ejs-pdfviewer id="pdfviewer" style="height:600px" resourceUrl="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2-pdfviewer-lib" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf" extractTextOption='None'>
-    <!-- extractTextOption: 'None', 'TextOnly', 'BoundsOnly', 'TextAndBounds'-->
-    </ejs-pdfviewer> 
+    <ejs-pdfviewer id="pdfviewer" style="height:600px" resourceUrl="https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2-pdfviewer-lib" documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf" extractTextOption="None">
+    </ejs-pdfviewer>
 </div>
 
 <script type="text/javascript">
+
 </script>
 
 {% endhighlight %}
@@ -57,3 +57,5 @@ The following example demonstrates how to configure the `extractTextOption` prop
 **extractTextOption.None:** This option does not extract or return any text or layout information. It is used to optimize memory usage when no text extraction is necessary. This setting is only relevant for the `extractTextCompleted` event and cannot be used with the `ExtractText` method.
 
 N> Text Search: When using the `extractTextOption.TextOnly` and `extractTextOption.None` option, the findText method will not work. Instead, you should use the findTextAsync method to perform text searches asynchronously.
+
+[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to)
