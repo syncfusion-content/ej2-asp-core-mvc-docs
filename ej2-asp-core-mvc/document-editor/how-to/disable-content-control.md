@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disable Content Control in ##Platform_Name## Document Editor Component
+title: Disable ContentControl ##Platform_Name## DocumentEditor |Syncfusion
 description: Learn here all about disable Content Control in Syncfusion ##Platform_Name## Document Editor component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Disable Content Control in document editor 
