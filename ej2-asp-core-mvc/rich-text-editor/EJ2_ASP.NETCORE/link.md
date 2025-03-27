@@ -132,7 +132,6 @@ However, if you want to accept the given URL without validating it for hyperlink
 {% endtabs %}
 {% endif %}
 
-
 ## See Also
 
 * [Image with links](./image/#image-with-link)

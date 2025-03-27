@@ -86,7 +86,6 @@ The following sample demonstrates how to filter the `iframe` tag.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/prevent-cross-site-scripting/tagHelper %}
