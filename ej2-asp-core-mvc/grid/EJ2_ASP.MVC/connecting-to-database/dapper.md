@@ -8,7 +8,8 @@ keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
 documentation: ug
 domainurl: ##DomainURL##
 ---
-# Connecting Microsoft SQL Server data in to Syncfusion ASP.NET MVC Grid
+
+# Connecting SQL data to Syncfusion ASP.NET MVC Grid using Dapper
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion ASP.NET MVC Grid.
 
@@ -60,51 +61,51 @@ using Syncfusion.EJ2.Linq;
 
 namespace Grid_MSSQL.Controllers
 {
-    public class GridController : Controller
-    {
-        /// <summary>
-        /// Connection string for the database.
-        /// </summary>
-        private readonly string ConnectionString = @"<Enter a valid connection string>";
+  public class GridController : Controller
+  {
+      /// <summary>
+      /// Connection string for the database.
+      /// </summary>
+      private readonly string ConnectionString = @"<Enter a valid connection string>";
 
-        /// <summary>
-        ///  Retrieves the order data from the database.
-        /// </summary>
-        /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-        public JsonResult UrlDataSource()
-        {
-            IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-            return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
-        }
+      /// <summary>
+      ///  Retrieves the order data from the database.
+      /// </summary>
+      /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
+      public JsonResult UrlDataSource()
+      {
+          IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+          return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+      }
 
-        /// <summary>
-        /// Retrieves order data from the database.
-        /// </summary>
-        /// <returns>Returns a list of orders fetched from the database.</returns>
-        private List<Orders> GetOrderData()
-        {
-            string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
-            using (IDbConnection connection = new SqlConnection(ConnectionString))
-            {
-                connection.Open();
-                return connection.Query<Orders>(queryString).ToList();
-            }
-        }
+      /// <summary>
+      /// Retrieves order data from the database.
+      /// </summary>
+      /// <returns>Returns a list of orders fetched from the database.</returns>
+      private List<Orders> GetOrderData()
+      {
+          string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
+          using (IDbConnection connection = new SqlConnection(ConnectionString))
+          {
+              connection.Open();
+              return connection.Query<Orders>(queryString).ToList();
+          }
+      }
 
-        #region Models
-        /// <summary>
-        /// Represents the orders model mapped to the database table.
-        /// </summary>
-        public class Orders
-        {
-            public int? OrderID { get; set; }
-            public string CustomerID { get; set; }
-            public int? EmployeeID { get; set; }
-            public decimal? Freight { get; set; }
-            public string ShipCity { get; set; }
-        }
-        #endregion
-    }
+      #region Models
+      /// <summary>
+      /// Represents the orders model mapped to the database table.
+      /// </summary>
+      public class Orders
+      {
+          public int? OrderID { get; set; }
+          public string CustomerID { get; set; }
+          public int? EmployeeID { get; set; }
+          public decimal? Freight { get; set; }
+          public string ShipCity { get; set; }
+      }
+      #endregion
+  }
 }
 
 {% endhighlight %}
@@ -201,16 +202,74 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 // Replace xxxx with your actual port number
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
 
 {% endhighlight %}
-{% endtabs %}
 
+{% highlight cs tabtitle="GridController.cs" %}
+
+public class GridController : Controller
+{
+  /// <summary>
+  /// Connection string for the database.
+  /// </summary>
+  private readonly string ConnectionString = @"<Enter a valid connection string>";
+
+  /// <summary>
+  ///  Retrieves the order data from the database.
+  /// </summary>
+  /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
+  public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
+  {
+      // Retrieve data from the data source (e.g., database).
+      IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+      // Initialize QueryableOperation instance.
+      QueryableOperation queryableOperation = new QueryableOperation();
+
+      // Get the total count of records.
+      int totalRecordsCount = DataSource.Count();
+
+      // Return data based on the request.
+      return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  }
+
+  /// <summary>
+  /// Retrieves order data from the database.
+  /// </summary>
+  /// <returns>Returns a list of orders fetched from the database.</returns>
+  private List<Orders> GetOrderData()
+  {
+    string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
+    using (IDbConnection connection = new SqlConnection(ConnectionString))
+    {
+      connection.Open();
+      return connection.Query<Orders>(queryString).ToList();
+    }
+  }
+
+  #region Models
+  /// <summary>
+  /// Represents the orders model mapped to the database table.
+  /// </summary>
+  public class Orders
+  {
+      public int? OrderID { get; set; }
+      public string CustomerID { get; set; }
+      public int? EmployeeID { get; set; }
+      public decimal? Freight { get; set; }
+      public string ShipCity { get; set; }
+  }
+  #endregion
+  }
+
+{% endhighlight %}
+{% endtabs %}
 
 **Step 7:** Run the Project
 
@@ -725,7 +784,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data using Dapper](../images/database/microsoft-sql-crud.gif)
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
@@ -1202,7 +1261,7 @@ Let’s see how to perform CRUD operation using Microsoft SQL Server data with G
 To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs%}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1283,7 +1342,7 @@ public class CRUDModel<T> where T : class
 To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1363,7 +1422,7 @@ public class CRUDModel<T> where T : class
 To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1445,7 +1504,7 @@ public class CRUDModel<T> where T : class
 To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor` component. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% highlight html tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
 @Html.EJS().Grid("Grid").Columns(col =>
@@ -1578,4 +1637,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Grid bound with Microsoft SQL Server data](../images/database/microsoft-sql-batch.gif)
+![Grid bound with Microsoft SQL server data using dapper](../images/database/microsoft-sql-batch.gif)
