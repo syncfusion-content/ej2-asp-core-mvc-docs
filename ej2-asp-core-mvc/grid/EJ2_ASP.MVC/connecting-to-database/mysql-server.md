@@ -37,7 +37,7 @@ To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
 **3.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
 
-**4.** In a MVC controller (aka, GridController), connect to MySQL Server. In the **GetOrderData** method **SqlConnection** helps to connect the MySQL Server database. Next, using **SqlCommand** and **SqlDataAdapter** you can process the desired SQL query string and retrieve data from the database. The `Fill` method of the **DataAdapter** is used to populate the SQL data into a **DataTable** as shown in the following code snippet.
+**4.** In a MVC controller (aka, GridController), connect to MySQL Server. In the **GetOrderData()** method **MySqlConnection** helps to connect the MySQL Server database. Next, using **MySqlCommand** and **MySqlDataAdapter** you can process the desired MySQL query string and retrieve data from the database. The **Fill** method of the **DataAdapter** is used to populate the MySQL data into a **DataTable** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -339,7 +339,7 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 /// Processes the DataManager request to perform searching operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 [HttpPost]
 public object UrlDataSource(DataManagerRequest DataManagerRequest)
 {
@@ -391,7 +391,7 @@ To handle filtering operation, ensure that your API endpoint supports custom fil
 /// Processes the DataManager request to perform filtering operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
@@ -449,7 +449,7 @@ To handle sorting operation, ensure that your API endpoint supports custom sorti
 /// Processes the DataManager request to perform sorting operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
@@ -498,10 +498,10 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
@@ -549,7 +549,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
@@ -599,7 +599,7 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
@@ -609,7 +609,7 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <summary>
 /// Inserts a new order record into the database using parameterized queries.
 /// </summary>
-/// <param name="newRecord">Contains the details of the order to be inserted.</param>
+/// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 [HttpPost]
 [Route("api/Grid/Insert")]
@@ -625,7 +625,7 @@ public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to insert a new record into the Orders table.
+        // Define the SQL query to insert a new record into the orders table.
         string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
 
         // Create a MySQL command with the query and connection.
@@ -650,7 +650,7 @@ public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
@@ -663,7 +663,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <param name="value">Contains the details of the order that needs to be updated.</param>
 /// <returns>Returns a JSON result indicating success or failure.</returns>
 [HttpPost]
-[Route("api/grid/Update")]
+[Route("api/Grid/Update")]
 public IHttpActionResult Update(CRUDModel<Orders> value)
 {
     // Check if the request data is null or invalid.
@@ -676,7 +676,7 @@ public IHttpActionResult Update(CRUDModel<Orders> value)
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to update an existing record in the Orders table.
+        // Define the SQL query to update an existing record in the orders table.
         string queryStr = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, ShipCity=@ShipCity, EmployeeID=@EmployeeID WHERE OrderID=@OrderID";
 
         // Create a MySQL command with the query and connection.
@@ -702,7 +702,7 @@ public IHttpActionResult Update(CRUDModel<Orders> value)
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation**
+**Delete operation:**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
@@ -715,7 +715,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// <param name="value">Contains the key (OrderID) of the order to be deleted.</param>
 /// <returns>Returns a JSON result indicating success or failure.</returns>
 [HttpPost]
-[Route("api/grid/Remove")]
+[Route("api/Grid/Remove")]
 public IHttpActionResult Remove(CRUDModel<Orders> value)
 {
     // Check if the request contains a valid OrderID.
@@ -749,7 +749,7 @@ public IHttpActionResult Remove(CRUDModel<Orders> value)
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
@@ -757,7 +757,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
+/// Performs batch operations (Insert, Update and Delete) on a collection of orders.
 /// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
@@ -775,7 +775,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of updated records.
         if (value.changed != null && value.changed.Count > 0)
         {
-            // Define an SQL query to update records in the Orders table.
+            // Define an SQL query to update records in the orders table.
             string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
 
             // Create a MySQL command object to execute the update query.
@@ -800,7 +800,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of newly added records.
         if (value.added != null && value.added.Count > 0)
         {
-            // Define an SQL query to insert new records into the Orders table.
+            // Define an SQL query to insert new records into the orders table.
             string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
 
             // Create a MySQL command object to execute the insert query.
@@ -825,7 +825,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of deleted records.
         if (value.deleted != null && value.deleted.Count > 0)
         {
-            // Define an SQL query to delete records from the Orders table based on OrderID.
+            // Define an SQL query to delete records from the orders table based on OrderID.
             string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID";
 
             // Create a MySQL command object to execute the delete query.
@@ -884,11 +884,11 @@ This section describes step by step process how to retrieve data from a MySQL Se
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, fetch data from the MySQL SQL Server database using the **SqlDataAdapter** class.
+  * In this `GetOrderData` method, the MySQL Server database data is fetch by using the **MySqlDataAdapter** class.
 
-  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the DataAdapter, followed by conversion of the **DataSet** into a List.
+  * Employ the **Fill** method of the **DataAdapter** to populate a **DataSet** with the results of the `Select` command of the **DataAdapter**, followed by conversion of the **DataSet** into a List.
 
-  * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
+  * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
   
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1190,8 +1190,7 @@ In the code example below, sorting a custom data source can be accomplished by e
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    
-    // Retrieve data from the data source (e.g., database).\
+    // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
     // Initialize QueryableOperation instance.
@@ -1257,14 +1256,13 @@ In the code example below, paging a custom data source can be achieved by utiliz
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+/// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    
     // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
@@ -1324,19 +1322,18 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-### Handling CRUD Operations
+### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD operations mapping**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
 3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **CrudUrl**: Specifies a single URL for all CRUD operations.
-5. **BatchUrl**: Specifies the URL for batch editing.
+4. **BatchUrl**: Specifies the URL for batch editing.
 
 To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
@@ -1397,7 +1394,7 @@ public class CRUDModel<T> where T : class
 }
 ```
 
-**Insert Operation:**
+**Insert operation:**
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
@@ -1407,7 +1404,7 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <summary>
 /// Inserts a new order record into the database using parameterized queries.
 /// </summary>
-/// <param name="newRecord">Contains the details of the order to be inserted.</param>
+/// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 [HttpPost]
 [Route("api/Grid/Insert")]
@@ -1423,7 +1420,7 @@ public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to insert a new record into the Orders table.
+        // Define the SQL query to insert a new record into the orders table.
         string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
 
         // Create a MySQL command with the query and connection.
@@ -1485,7 +1482,7 @@ public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
 {% endhighlight %}
 {% endtabs %}
 
-**Update Operation:**
+**Update operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
@@ -1498,7 +1495,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <param name="value">Contains the details of the order that needs to be updated.</param>
 /// <returns>Returns a JSON result indicating success or failure.</returns>
 [HttpPost]
-[Route("api/grid/Update")]
+[Route("api/Grid/Update")]
 public IHttpActionResult Update(CRUDModel<Orders> value)
 {
     // Check if the request data is null or invalid.
@@ -1511,7 +1508,7 @@ public IHttpActionResult Update(CRUDModel<Orders> value)
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to update an existing record in the Orders table.
+        // Define the SQL query to update an existing record in the orders table.
         string queryStr = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, ShipCity=@ShipCity, EmployeeID=@EmployeeID WHERE OrderID=@OrderID";
 
         // Create a MySQL command with the query and connection.
@@ -1574,7 +1571,7 @@ public IHttpActionResult Update(CRUDModel<Orders> value)
 {% endhighlight %}
 {% endtabs %}
 
-**Delete Operation**
+**Delete operation:**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
@@ -1649,7 +1646,7 @@ public JsonResult Remove(CRUDModel<Orders> model)
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
@@ -1657,7 +1654,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
+/// Performs batch operations (Insert, Update and Delete) on a collection of orders.
 /// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
 /// </summary>
 /// <param name="value">Contains the set of added, changed, and deleted records.</param>
@@ -1675,7 +1672,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of updated records.
         if (value.changed != null && value.changed.Count > 0)
         {
-            // Define an SQL query to update records in the Orders table.
+            // Define an SQL query to update records in the orders table.
             string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
 
             // Create a MySQL command object to execute the update query.
@@ -1700,7 +1697,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of newly added records.
         if (value.added != null && value.added.Count > 0)
         {
-            // Define an SQL query to insert new records into the Orders table.
+            // Define an SQL query to insert new records into the orders table.
             string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
 
             // Create a MySQL command object to execute the insert query.
@@ -1725,7 +1722,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
         // Process the list of deleted records.
         if (value.deleted != null && value.deleted.Count > 0)
         {
-            // Define an SQL query to delete records from the Orders table based on OrderID.
+            // Define an SQL query to delete records from the orders table based on OrderID.
             string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID";
 
             // Create a MySQL command object to execute the delete query.
