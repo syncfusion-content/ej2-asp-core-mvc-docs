@@ -26,11 +26,11 @@ The `processQuery` method handles the execution of a query sent to a `DataSource
 
 **DataManager**
 
-![DataManager](../../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
+![DataManager](../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
 
 **Query**
 
-![Query](../../images/adaptors/customadaptor/custom-adaptor-query.png)
+![Query](../images/adaptors/customadaptor/custom-adaptor-query.png)
 
 ```js
 processQuery(dm, query) {
@@ -51,15 +51,15 @@ The `beforeSend` method is executed before a request is sent to the server. This
 
 **DataManager**
 
-![DataManager](../../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
+![DataManager](../images/adaptors/customadaptor/custom-adaptor-datamanager.png)
 
 **Request**
 
-![Request](../../images/adaptors/customadaptor/custom-adaptor-request.png)
+![Request](../images/adaptors/customadaptor/custom-adaptor-request.png)
 
 **Settings**
 
-![Settings](../../images/adaptors/customadaptor/custom-adaptor-fetch.png)
+![Settings](../images/adaptors/customadaptor/custom-adaptor-fetch.png)
 
 ```js
 beforeSend(dm, request, settings) {
@@ -480,7 +480,7 @@ config.Count().Filter(); // Handles searching operation.
 {% endhighlight %}
 {% endtabs %}
 
-![Searching query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
+![Searching query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-searching.png)
 
 ## Handling filtering operation
 
@@ -525,9 +525,9 @@ config.Count().Filter(); // Handles filtering  operation.
 {% endtabs %}
 
 **Single column filtering**
-![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
+![Filtering query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-filtering.png)
 **Multi column filtering**
-![Filtering query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
+![Filtering query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-filtering.png)
 
 ## Handling sorting operation
 
@@ -572,10 +572,10 @@ config.Count().OrderBy(); // Handles sorting  operation.
 {% endtabs %}
 
 **Single column sorting**
-![Single column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
+![Single column sorting query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-sorting.png)
 
 **Multi column sorting**
-![Multi column sorting query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
+![Multi column sorting query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-multi-column-sorting.png)
 
 ## Handling paging operation
 
@@ -620,7 +620,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
 {% endhighlight %}
 {% endtabs %}
 
-![paging query](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
+![paging query](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-paging.png)
 
 ## Handling CRUD operations
 
@@ -677,7 +677,7 @@ To insert a new record into your Grid, you can utilize the `HttpPost` method in 
  }
 ```
 
-![CustomAdaptor-Insert-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-insert-record.png)
+![CustomAdaptor-Insert-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-insert-record.png)
 
 **Update Operation:**
 
@@ -707,7 +707,7 @@ public IHttpActionResult Patch(int key, OrdersDetails updateRecord)
     return Ok(existingOrder);
 }
 ```
-![CustomAdaptor-Update-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
+![CustomAdaptor-Update-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-update-record.png)
 
 **Delete Operation**
 
@@ -729,4 +729,4 @@ public IHttpActionResult Delete(int key)
     return Ok(deleteRecord);
 }
 ```
-![CustomAdaptor-Delete-record](../../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
+![CustomAdaptor-Delete-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
