@@ -4,7 +4,7 @@ title: MySQL Server Data Binding in Syncfusion Grid
 description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: adaptors, graphqladaptor, graphql adaptor, remotedata 
+keywords: adaptors, customadaptor, urladaptor, remotedata, mysql
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -233,6 +233,89 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
     col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Render()
+
+{% endhighlight %}
+
+{% highlight cs tabtitle="GridController.cs" %}
+
+public class GridController : ApiController
+{
+    /// <summary>
+    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
+    /// </summary>
+    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    [HttpPost]
+    public object Post(DataManagerRequest DataManagerRequest)
+    {
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
+
+    // Return data based on the request.
+    return new { result = DataSource, count = totalRecordsCount };
+    }
+
+    /// <summary>
+    /// Retrieves the order data from the database.
+    /// </summary>
+    /// <returns>Returns a list of orders fetched from the database.</returns>
+    [HttpGet]
+    public List<Orders> GetOrderData()
+    {
+        // Create a list to store orders.
+        List<Orders> orders = new List<Orders>();
+
+        // Establish a connection to the MySQL database.
+        using (MySqlConnection sqlConnection = new MySqlConnection(ConnectionString))
+        {
+            // Define the SQL query to retrieve all orders sorted by OrderID.
+            string query = "SELECT * FROM orders ORDER BY OrderID";
+
+            // Create a MySQL command to execute the query.
+            using (MySqlCommand sqlCommand = new MySqlCommand(query, sqlConnection))
+            {
+                // Open the database connection.
+                sqlConnection.Open();
+
+                // Use a data adapter to execute the query and fetch data.
+                using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sqlCommand))
+                {
+                    // Create a DataTable to store retrieved data.
+                    DataTable dataTable = new DataTable();
+
+                    // Fill the DataTable with data from the database.
+                    dataAdapter.Fill(dataTable);
+
+                    // Convert DataTable rows into a list of orders objects.
+                    orders = (from DataRow row in dataTable.Rows
+                    select new Orders()
+                    {                            
+                        OrderID = row["OrderID"] != DBNull.Value ? Convert.ToInt32(row["OrderID"]) : (int?)null,
+                        CustomerID = row["CustomerID"]?.ToString(),
+                        EmployeeID = row["EmployeeID"] != DBNull.Value ? Convert.ToInt32(row["EmployeeID"]) : (int?)null,
+                        ShipCity = row["ShipCity"]?.ToString(),
+                        Freight = row["Freight"] != DBNull.Value ? Convert.ToDecimal(row["Freight"]) : (decimal?)null
+                    }).ToList();
+                }
+            }
+        }
+
+        // Return the list of orders.
+        return orders;
+    }
+    public class Orders
+    {
+        [Key]
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public decimal? Freight { get; set; }
+        public string? ShipCity { get; set; }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
