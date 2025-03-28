@@ -212,17 +212,17 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 
 ### How to customize the excel sheet on before exporting
 
-Customizing an Excel sheet before export is made easy with the `excelExport` API. This API provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+Customizing an Excel sheet before export is made easy with the `excelExport` event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
 
-With the `excelExport` API, you can:
+With the `excelExport` event, you can:
 
 - **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
 
 - **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
 
-- **Cancel the export:** The API supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
+- **Cancel the export:** The event supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
 
-Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the `excelExport` API:
+Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the `excelExport` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -428,7 +428,7 @@ Key customization options include:
 - **Customizing the header and footer:** Add custom header and footer content of the print layout to include additional information.
 - **Controlling print output:** Fine-tune the layout to ensure that only the necessary details are printed, ensuring a clean and structured printout.
 
-Here’s an example of how you can add a custom header and footer to the print layout using the `beforePrint` event :
+Here’s an example of how you can add a custom header and footer to the print layout using the `beforePrint` event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
