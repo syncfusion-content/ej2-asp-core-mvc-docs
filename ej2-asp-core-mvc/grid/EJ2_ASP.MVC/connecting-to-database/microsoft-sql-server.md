@@ -16,7 +16,7 @@ Microsoft SQL Server database can be bound to the Grid in different ways (i.e.) 
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), `UrlAdaptor`, [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -60,10 +60,11 @@ namespace Grid_MSSQL.Controllers
         private readonly string ConnectionString = @"<Enter a valid connection string>";
 
         /// <summary>
-        ///  Retrieves the order data from the database.
+        /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
         /// </summary>
-        /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-        public JsonResult UrlDataSource()
+        /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+        /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+        public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         {            
             // Retrieve data from the data source (e.g., database).
             IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
@@ -81,7 +82,7 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a list of orders fetched from the database.</returns>
         private List<Orders> GetOrderData()
         {
-            // SQL query to select all records from the Orders table, sorted by OrderID
+            // SQL query to select all records from the orders table, sorted by OrderID
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
             // List to store the retrieved order data
@@ -103,7 +104,7 @@ namespace Grid_MSSQL.Controllers
                     // Fill the DataTable with data from the database
                     dataAdapter.Fill(dataTable);
 
-                    // Convert DataTable rows into a list of Orders objects
+                    // Convert DataTable rows into a list of orders objects
                     orders = (from DataRow row in dataTable.Rows
                             select new Orders
                             {
@@ -249,10 +250,11 @@ public class GridController : Controller
     private readonly string ConnectionString = @"<Enter a valid connection string>";
 
     /// <summary>
-    ///  Retrieves the order data from the database.
+    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
-    /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-    public JsonResult UrlDataSource()
+    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+    public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
     {            
         // Retrieve data from the data source (e.g., database).
         IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
@@ -270,7 +272,7 @@ public class GridController : Controller
     /// <returns>Returns a list of orders fetched from the database.</returns>
     private List<Orders> GetOrderData()
     {
-        // SQL query to select all records from the Orders table, sorted by OrderID
+        // SQL query to select all records from the orders table, sorted by OrderID
         string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
         // List to store the retrieved order data
@@ -292,7 +294,7 @@ public class GridController : Controller
                 // Fill the DataTable with data from the database
                 dataAdapter.Fill(dataTable);
 
-                // Convert DataTable rows into a list of Orders objects
+                // Convert DataTable rows into a list of orders objects
                 orders = (from DataRow row in dataTable.Rows
                         select new Orders
                         {
@@ -502,7 +504,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
@@ -550,18 +552,18 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD operations mapping**
 
-The following properties enable the Grid to interact with API endpoints for different CRUD actions:
+CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
 3. **UpdateUrl**: Specifies the URL for updating existing data.
 4. **BatchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -584,22 +586,6 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
-
-The below class is used to structure data sent during CRUD operations.
-
-```cs
-public class CRUDModel<T> where T : class
-{
-    public string action { get; set; }
-    public string keyColumn { get; set; }
-    public object key { get; set; }
-    public T value { get; set; }
-    public List<T> added { get; set; }
-    public List<T> changed { get; set; }
-    public List<T> deleted { get; set; }
-    public IDictionary<string, object> @params { get; set; }
-}
-```
 
 **Insert operation:**
 
@@ -637,6 +623,17 @@ public JsonResult Insert(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
+public class CRUDModel<T> where T : class
+{
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -649,9 +646,9 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Updates an existing order record in the database using parameterized queries.
+/// Update a existing data item from the data collection.
 /// </summary>
-/// <param name="model">Contains the details of the order that needs to be updated.</param>
+/// <param name="model">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Update(CRUDModel<Orders> model)
 {
@@ -678,6 +675,17 @@ public JsonResult Update(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
+public class CRUDModel<T> where T : class
+{
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -690,9 +698,9 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Deletes an existing order record from the database using the specified OrderID.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="model">Contains the key (OrderID) of the order to be deleted.</param>
+/// <param name="value">It contains the specific record detail which is need to be removed.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Remove(CRUDModel<Orders> model)
 {
@@ -715,6 +723,17 @@ public JsonResult Remove(CRUDModel<Orders> model)
     // Return a JSON response indicating success.
     return Json(new { success = true });
 }
+public class CRUDModel<T> where T : class
+{
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -727,10 +746,9 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
-/// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
+/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
 /// </summary>
-/// <param name="value">Contains the set of added, changed, and deleted records.</param>
+/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns a JSON response with success or error message.</returns>
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
@@ -838,7 +856,7 @@ When you run the application, the resultant Syncfusion ASP.NET MVC Grid will loo
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
@@ -911,10 +929,11 @@ namespace Grid_MSSQL.Controllers
         private readonly string ConnectionString = @"<Enter a valid connection string>";
 
         /// <summary>
-        /// Fetches data for the Syncfusion ASP.NET MVC Grid using URL Adaptor.
+        /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
         /// </summary>
-        /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-        public JsonResult UrlDataSource()
+        /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+        /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
+        public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
@@ -993,7 +1012,6 @@ In the code example below, searching a custom data source can be accomplished by
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    
     // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
@@ -1144,7 +1162,6 @@ In the code example below, sorting a custom data source can be accomplished by e
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    
     // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
@@ -1211,13 +1228,12 @@ In the code example below, paging a custom data source can be achieved by utiliz
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
 public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
-    
     // Retrieve data from the data source (e.g., database).
     IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
@@ -1279,18 +1295,9 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+To enable editing in the Syncfusion ASP.NET MVC Grid, utilize the [GridEditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) documentation.
 
-**CRUD operations mapping**
-
-The following properties enable the Grid to interact with API endpoints for different CRUD actions:
-
-1. **InsertUrl**: Specifies the URL for inserting new data.
-2. **RemoveUrl**: Specifies the URL for removing existing data.
-3. **UpdateUrl**: Specifies the URL for updating existing data.
-4. **BatchUrl**: Specifies the URL for batch editing.
-
-To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property configured to display toolbar items for editing purpose.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1321,6 +1328,8 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
                 insertUrl: "https://localhost:xxxx/Grid/Insert",
                 updateUrl: "https://localhost:xxxx/Grid/Update",
                 removeUrl: "https://localhost:xxxx/Grid/Remove",
+                // Enable batch URL when batch editing is enabled.
+                //batchUrl: 'https://localhost:xxxx/Grid/BatchUpdate',
             });
             grid.dataSource = dataManager;
         }
@@ -1333,33 +1342,26 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](http
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
-The below class is used to structure data sent during CRUD operations.
+The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
 
-```cs
-public class CRUDModel<T> where T : class
-{
-    public string action { get; set; }
-    public string keyColumn { get; set; }
-    public object key { get; set; }
-    public T value { get; set; }
-    public List<T> added { get; set; }
-    public List<T> changed { get; set; }
-    public List<T> deleted { get; set; }
-    public IDictionary<string, object> @params { get; set; }
-}
-```
+* insert
+* remove
+* update
+* batchRequest
+
+Let’s see how to perform CRUD operation using Microsoft SQL Server data with Syncfusion ASP.NET MVC Grid.
 
 **Insert operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
+To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Inserts a new order record into the database using parameterized queries.
+/// Inserts a new data item into the data collection.
 /// </summary>
-/// <param name="model">Contains the details of the order to be inserted.</param>
+/// <param name="model">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Insert(CRUDModel<Orders> model)
 {
@@ -1384,6 +1386,17 @@ public JsonResult Insert(CRUDModel<Orders> model)
 
     // Return a JSON response indicating success.
     return Json(new { success = true });
+}
+public class CRUDModel<T> where T : class
+{
+  public string? action { get; set; }
+  public string? keyColumn { get; set; }
+  public object? key { get; set; }
+  public T? value { get; set; }
+  public List<T>? added { get; set; }
+  public List<T>? changed { get; set; }
+  public List<T>? deleted { get; set; }
+  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
@@ -1428,15 +1441,15 @@ public JsonResult Insert(CRUDModel<Orders> model)
 
 **Update operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Updates an existing order record in the database using parameterized queries.
+/// Update a existing data item from the data collection.
 /// </summary>
-/// <param name="model">Contains the details of the order that needs to be updated.</param>
+/// <param name="value">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Update(CRUDModel<Orders> model)
 {
@@ -1462,6 +1475,17 @@ public JsonResult Update(CRUDModel<Orders> model)
 
     // Return a JSON response indicating success.
     return Json(new { success = true });
+}
+public class CRUDModel<T> where T : class
+{
+  public string? action { get; set; }
+  public string? keyColumn { get; set; }
+  public object? key { get; set; }
+  public T? value { get; set; }
+  public List<T>? added { get; set; }
+  public List<T>? changed { get; set; }
+  public List<T>? deleted { get; set; }
+  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
@@ -1506,15 +1530,15 @@ public JsonResult Update(CRUDModel<Orders> model)
 
 **Delete operation**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
+To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Deletes an existing order record from the database using the specified OrderID.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="model">Contains the key (OrderID) of the order to be deleted.</param>
+/// <param name="model">It contains the specific record detail which is need to be removed.</param>
 /// <returns>Returns a JSON result indicating success.</returns>
 public JsonResult Remove(CRUDModel<Orders> model)
 {
@@ -1536,6 +1560,17 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
     // Return a JSON response indicating success.
     return Json(new { success = true });
+}
+public class CRUDModel<T> where T : class
+{
+  public string? action { get; set; }
+  public string? keyColumn { get; set; }
+  public object? key { get; set; }
+  public T? value { get; set; }
+  public List<T>? added { get; set; }
+  public List<T>? changed { get; set; }
+  public List<T>? deleted { get; set; }
+  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
@@ -1581,16 +1616,15 @@ public JsonResult Remove(CRUDModel<Orders> model)
 
 **Batch operation**
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
+To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch operations (Insert, Update and Delete) on a collection of Orders.
-/// Uses parameterized queries to prevent SQL injection and ensures transaction safety.
+/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
 /// </summary>
-/// <param name="value">Contains the set of added, changed, and deleted records.</param>
+/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns a JSON response with success or error message.</returns>
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
@@ -1674,6 +1708,17 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
     // Return success response.
     return Json(new { success = true });
 }
+public class CRUDModel<T> where T : class
+{
+  public string? action { get; set; }
+  public string? keyColumn { get; set; }
+  public object? key { get; set; }
+  public T? value { get; set; }
+  public List<T>? added { get; set; }
+  public List<T>? changed { get; set; }
+  public List<T>? deleted { get; set; }
+  public IDictionary<string, object>? @params { get; set; }
+}
 
 {% endhighlight %}
 
@@ -1716,9 +1761,7 @@ public JsonResult BatchUpdate(CRUDModel<Orders> value)
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/Grid/UrlDataSource",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
