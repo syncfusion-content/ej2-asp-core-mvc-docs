@@ -469,6 +469,79 @@ By default, the scheduler will render the overlapping events based on the start 
 {% endtabs %}
 {% endif %}
 
+## Preventing Overlapping Events
+
+By default, the scheduler displays overlapping events according to their start and end times. To prevent overlapping, you can set the [`allowOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowOverlap) property to `false`.
+
+When this property is set to `false`, any new or updated events that overlap with existing ones will trigger an overlap alert. The overlapping events will be collected in the `overlapEvents` within the `PopupOpenEventArgs`.
+
+When the [`allowOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowOverlap) property is set to `false`, the scheduler behaves as follows:
+
+**Initial Load Behavior:**  Upon initial loading, the scheduler prioritizes non-overlapping events based on their duration and all-day status. Events with longer durations and those marked as all-day receive higher priority to ensure there are no overlaps.
+
+**Recurring Appointments:**  If there are conflicts within a recurring appointment series during the initial load, the scheduler will display all occurrences of the series, except for the conflicting instance.
+
+**Event Modifications:**  When a user edits, saves, or removes appointments, the scheduler checks for potential overlaps. If a conflict is detected, the action is blocked, and a conflict alert is displayed to the user to address the issue.
+
+**Dynamic Recurrence Series Creation or Editing:**  When a user creates or edits a recurrence series dynamically, the scheduler will prevent any occurrences of the series from being added if a conflict is found within the series.
+
+The following code example demonstrates how to enable the [`allowOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowOverlap) property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/overlap/overlap-normal/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/overlap/overlap-normal/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/overlap/overlap-normal/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/overlap/overlap-normal/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Limitations**
+
+The [`allowOverlap`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_AllowOverlap) property checks for event overlaps only within the currently visible date range. Events scheduled outside the rendered date range are not included in the overlap check by default.
+
+If you need to check for overlaps with events outside the visible date range, you can leverage the `promise` field within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event to validate all events before proceeding. By implementing a custom validation method inside the [`actionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_ActionBegin) event, you can assign the result (a boolean) to the `promise` field. If the result is `true`, the action (e.g., adding or saving the event) will proceed; if `false`, the action will be blocked.
+
+Additionally, you can use the public method `openOverlapAlert` to show an alert popup whenever an overlap occurs and the result is `false`. 
+
+The following code example demonstrates how to check for overlaps when an event is added. If an overlap is found, the event won't be added, and an alert will be shown.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/overlap/overlap-actionbegin/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/overlap/overlap-actionbegin/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/overlap/overlap-actionbegin/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/overlap/overlap-actionbegin/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Drag and drop appointments
