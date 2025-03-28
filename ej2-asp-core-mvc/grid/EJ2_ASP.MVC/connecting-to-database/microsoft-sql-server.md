@@ -504,7 +504,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
