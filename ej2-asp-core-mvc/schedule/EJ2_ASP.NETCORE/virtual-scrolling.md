@@ -36,7 +36,7 @@ To achieve better performance in the Scheduler when loading a large number of re
 {% endtabs %}
 {% endif %}
 
-N> For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views. By default, the Scheduler renders only the visible appointments. You can increase or decrease the pre-loaded appointment buffer using the [`overScanCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_OverScanCount) property to ensure smooth scrolling.
+N> For now, the virtual loading of resources and events is not supported in `MonthAgenda`, `Year` and `TimelineYear` (Horizontal Orientation) views.
 
 ## Enabling lazy loading for appointments
 
