@@ -1212,9 +1212,11 @@ In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.c
             let dataManager = new ejs.data.DataManager({
                 url: "https://localhost:xxxx/Grid/UrlDataSource", // Replace `xxxx` with your actual port number.
                 adaptor: new CustomAdaptor(),
-                insertUrl: "https://localhost:xxxx/grid/Insert",
-                updateUrl: "https://localhost:xxxx/grid/Update",
-                removeUrl: "https://localhost:xxxx/grid/Remove",
+                insertUrl: "https://localhost:xxxx/Grid/Insert",
+                updateUrl: "https://localhost:xxxx/Grid/Update",
+                removeUrl: "https://localhost:xxxx/Grid/Remove",
+                // Enable batch URL when batch editing is enabled.
+                batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
             });
             grid.dataSource = dataManager;
         }
