@@ -82,7 +82,7 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a list of orders fetched from the database.</returns>
         private List<Orders> GetOrderData()
         {
-            // SQL query to select all records from the Orders table, sorted by OrderID
+            // SQL query to select all records from the orders table, sorted by OrderID
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
             // List to store the retrieved order data
@@ -104,7 +104,7 @@ namespace Grid_MSSQL.Controllers
                     // Fill the DataTable with data from the database
                     dataAdapter.Fill(dataTable);
 
-                    // Convert DataTable rows into a list of Orders objects
+                    // Convert DataTable rows into a list of orders objects
                     orders = (from DataRow row in dataTable.Rows
                             select new Orders
                             {
@@ -272,7 +272,7 @@ public class GridController : Controller
     /// <returns>Returns a list of orders fetched from the database.</returns>
     private List<Orders> GetOrderData()
     {
-        // SQL query to select all records from the Orders table, sorted by OrderID
+        // SQL query to select all records from the orders table, sorted by OrderID
         string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
         // List to store the retrieved order data
@@ -294,7 +294,7 @@ public class GridController : Controller
                 // Fill the DataTable with data from the database
                 dataAdapter.Fill(dataTable);
 
-                // Convert DataTable rows into a list of Orders objects
+                // Convert DataTable rows into a list of orders objects
                 orders = (from DataRow row in dataTable.Rows
                         select new Orders
                         {
