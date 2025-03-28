@@ -1,0 +1,52 @@
+<div id="chip-draganddrop-wrapper">
+    <div class="chips-headers">Customize your order with add-ons</div>
+
+    <div class="sample-padding">
+        @Html.EJS().ChipList("choice-container").Chips(chip =>
+        {
+            chip.Text("Report").CssClass("e-info").Add();
+            chip.Text("Meeting").CssClass("e-warning").Add();
+            chip.Text("Review").CssClass("e-warning").Add();
+            chip.Text("Budget").CssClass("e-danger").Add();
+            chip.Text("Design").CssClass("e-primary").Add();
+            chip.Text("Presentation").CssClass("e-success").Add();
+            chip.Text("Email").CssClass("e-success").Add();
+            chip.Text("Research").CssClass("e-success").Add();
+        }).AllowDragAndDrop(true).Render()
+        @Html.EJS().ChipList("selection-container").AllowDragAndDrop(true).Render();
+    </div>
+</div>
+
+<style>
+    #chip-draganddrop-wrapper .sample-padding {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .chips-headers {
+        font-size: 12px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    #choice-container {
+        width: 400px;
+        min-height: 100px;
+        min-width: 150px;
+        border: 2px solid #2C3E50;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-right: 30px;
+    }
+
+    #selection-container {
+        width: 400px;
+        min-height: 100px;
+        min-width: 150px;
+        border: 2px solid #8E44AD;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Retrieving transcripts
 
-You can use the `Transcript` property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
+You can use the [Transcript](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_Transcript) property to retrieve the transcribed text from the spoken text. This property allows to display the transcribed text once the speech recognition process is started.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -27,7 +27,7 @@ You can use the `Transcript` property to retrieve the transcribed text from the 
 
 ## Setting language
 
-You can use the `Lang` property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
+You can use the [Lang](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_Lang) property to specify the language for speech recognition. Setting this property ensures that the recognition engine interprets the spoken words correctly based on the specified locale such as `en-US` for American `English`, `fr-FR` for `French`, and more.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -42,7 +42,7 @@ You can use the `Lang` property to specify the language for speech recognition. 
 
 ## Allowing interim results
 
-You can use the `AllowInterimResults` property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
+You can use the [AllowInterimResults](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_AllowInterimResults) property to enable or disable interim results. When set to `true`, the recognized speech will be displayed in real time as words are spoken. When set to `false`, only final results will be displayed after recognition is complete. By default, the value is `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -57,7 +57,7 @@ You can use the `AllowInterimResults` property to enable or disable interim resu
 
 ## Managing listening state
 
-You can use the `ListeningState` property to manage the listening state of the control. The possible values are `Inactive`, `Listening` and `Stopped`. By default, the value is `Inactive`.
+You can use the [ListeningState](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ListeningState) property to manage the listening state of the control. The possible values are [Inactive](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextState.html#Syncfusion_EJ2_Inputs_SpeechToTextState_Inactive), [Listening](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextState.html#Syncfusion_EJ2_Inputs_SpeechToTextState_Listening) and [Stopped](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextState.html#Syncfusion_EJ2_Inputs_SpeechToTextState_Stopped). By default, the value is `Inactive`.
 
 ### Inactive
 
@@ -71,7 +71,7 @@ It is actively listening which captures and transcribes speech with a stop icon 
 
 Denotes the speech recognition has ended, and no further speech is being processed.
 
-Below sample demonstrates the usage of `ListeningState` property.
+Below sample demonstrates the usage of [ListeningState](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ListeningState) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -86,7 +86,7 @@ Below sample demonstrates the usage of `ListeningState` property.
 
 ## Show or hide tooltip
 
-You can use the `ShowTooltip` property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
+You can use the [ShowTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ShowTooltip) property to specify the tooltip text to be displayed on hovering the SpeechToText button. By default, the value is `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -101,7 +101,7 @@ You can use the `ShowTooltip` property to specify the tooltip text to be display
 
 ## Setting disabled
 
-You can use the `Disabled` property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
+You can use the [Disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_Disabled) property to disable the SpeechToText, preventing user interaction when set to `true`. By default, the value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -116,7 +116,7 @@ You can use the `Disabled` property to disable the SpeechToText, preventing user
 
 ## Setting html attributes
 
-You can use the `HtmlAttributes` property to assign custom attributes to the SpeechToText control for the button element.
+You can use the [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_HtmlAttributes) property to assign custom attributes to the SpeechToText control for the button element.
 
 ## Error handling
 
