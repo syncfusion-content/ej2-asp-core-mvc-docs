@@ -172,6 +172,37 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 
 ![Filtering](../images/filtering/filter-diacritics.png)
 
+## Perform ENUM column filtering
+
+The Syncfusion ASP.NET Core Grid allows you to filter enum-type data using the [filterBarTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_FilterBarTemplate) feature. This is particularly useful for filtering predefined values, such as categories or statuses.
+
+To achieve this functionality:
+
+1. Render [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) in the `filterBarTemplate` for the enum-type column.
+
+2. Bind the enumerated list data to the column.
+
+3. Convert the `enum` values to a readable format using a computed column (e.g., TypeText) in the data model.
+    ```cs
+    public FileType Type { get; set; }
+    public string TypeText => Type.ToString();
+    ```
+
+4. In the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the **DropDownList**, dynamically filter the column using the `filterByColumn` method of the Syncfusion ASP.NET Core Grid.
+
+Below is an example demonstrating how to filter enum-type data in a Syncfusion ASP.NET Core Grid:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/enum-filtering/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="filter-bar.cs" %}
+{% include code-snippet/grid/filtering/enum-filtering/filter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Filter bar](../images/filtering/enum-filtering.png)
+
 ## Filtering with case sensitivity
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_EnableCaseSensitivity) property within the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) of the grid.
