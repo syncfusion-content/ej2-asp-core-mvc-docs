@@ -1,0 +1,81 @@
+@using Syncfusion.EJ2.Schedule
+
+@(Html.EJS().Schedule("schedule")
+    .Width("100%")
+    .Height("550px")
+    .Views(new List<string> { "Day", "Week", "WorkWeek", "Month" })
+    .ActionBegin("onActionBegin")
+    .ExcelExport("onExcelExport")
+    .EventSettings(new ScheduleEventSettings
+    {
+        DataSource = new List<object>
+        {
+            new { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = new DateTime(2025, 1, 8, 9, 30), EndTime = new DateTime(2025, 1, 8, 11, 0), Location = "Chennai", OwnerId = 1 },
+            new { Id = 2, Subject = "Thule Air Crash Report", StartTime = new DateTime(2025, 1, 10, 12, 0), EndTime = new DateTime(2025, 1, 10, 14, 0), Location = "Mumbai", OwnerId = 2 },
+            new { Id = 3, Subject = "Blue Moon Eclipse", StartTime = new DateTime(2025, 1, 13, 9, 30), EndTime = new DateTime(2025, 1, 13, 11, 0), Location = "Mumbai", OwnerId = 3 }
+        }
+    })
+    .SelectedDate(new DateTime(2025, 1, 1))
+    .Render()
+)
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var exportItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-excel-export',
+                text: 'CSV-Export', cssClass: 'e-excel-export', click: onExportClick
+            };
+            args.items.push(exportItem);
+        }
+    }
+
+    function onExcelExport(args) {
+        var worksheet = args.worksheets[0];
+
+        worksheet.rows.unshift({
+            index: 1,
+            cells: [{
+                index: 1,
+                value: 'Sales Report',
+                style: { bold: true, fontSize: 18, hAlign: 'Center', fill: { color: '#1E90FF' }, color: '#FFFFFF' },
+                colSpan: worksheet.columns.length
+            }]
+        });
+
+        worksheet.rows.unshift({
+            index: 2,
+            cells: [{
+                index: 1,
+                value: 'Generated on: ' + new Date().toLocaleDateString(),
+                style: { italic: true, fontSize: 12, hAlign: 'Left', fill: { color: '#D3D3D3' } },
+                colSpan: worksheet.columns.length
+            }]
+        });
+
+        worksheet.rows.forEach((row, idx) => { row.index = idx + 1; });
+
+        worksheet.rows.push({
+            index: worksheet.rows.length + 1,
+            cells: [{
+                index: 1,
+                value: 'End of Report',
+                style: { bold: true, fontSize: 14, hAlign: 'Center', fill: { color: '#FFD700' } },
+                colSpan: worksheet.columns.length
+            }]
+        });
+    }
+
+    function onExportClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var exportFields = [
+            { name: 'Id', text: 'Id' },
+            { name: 'Subject', text: 'Summary' },
+            { name: 'StartTime', text: 'Start Date' },
+            { name: 'EndTime', text: 'End Date' },
+            { name: 'Location', text: 'Place' }
+        ];
+        var exportValues = { fieldsInfo: exportFields };
+        scheduleObj.exportToExcel(exportValues);
+    }
+</script>

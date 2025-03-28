@@ -210,6 +210,29 @@ The Scheduler exports the event data to CSV format with `,` as separator. You ca
 {% endtabs %}
 
 
+### How to customize the excel sheet on before exporting
+
+Customizing an Excel sheet before export is made easy with the `excelExport` event. This event provides users with robust flexibility to tailor the exported data, format it according to specific needs, and include additional elements for enhanced presentation.
+
+With the `excelExport` event, you can:
+
+- **Adjust the formatting:** Apply specific styles such as font type, size, color, and cell formatting to make the output visually appealing and consistent with your requirements.
+
+- **Customize headers and footers:** Personalize the Excel sheet by modifying the header and footer content, offering more control over the exported document.
+
+- **Cancel the export:** The event supports cancellation of the export process by setting the `cancel` property to `true`. This feature ensures you can prevent export based on specific conditions, offering you full control over the Excel export workflow.
+
+Here’s an example of how you can add a custom header and footer to an Excel sheet before exporting using the `excelExport` event.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/excel-export/excel-customize/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/excel-export/excel-customize/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Exporting calendar events as ICS file
 
@@ -396,6 +419,38 @@ You can print the Schedule element based on your needs using the `print` method 
 {% endtabs %}
 {% endif %}
 
+### How to customize the print layout
 
+The `beforePrint` event enables users to customize the print layout of the Scheduler control without altering the actual schedule layout or data. This event returns the HTML element used for printing, which can be tailored based on specific requirements before the print operation is triggered. Additionally, users can prevent the print action by setting the `cancel` property to `true`, giving them full control over when and how the print operation takes place.
+
+Key customization options include:
+
+- **Customizing the header and footer:** Add custom header and footer content of the print layout to include additional information.
+- **Controlling print output:** Fine-tune the layout to ensure that only the necessary details are printed, ensuring a clean and structured printout.
+
+Here’s an example of how you can add a custom header and footer to the print layout using the `beforePrint` event.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/calendar-export/custom-print/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/calendar-export/custom-print/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/calendar-export/custom-print/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/calendar-export/custom-print/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
