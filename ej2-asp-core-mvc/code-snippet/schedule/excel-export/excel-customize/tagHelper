@@ -1,0 +1,34 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var views = new List<string> { "Day", "Week", "WorkWeek", "Month", "Year", "Agenda", "MonthAgenda", "TimelineDay", "TimelineWeek", "TimelineWorkWeek", "TimelineMonth", "TimelineYear" };
+}
+
+<ejs-schedule id="schedule" width="100%" height="550px" selectedDate="new DateTime(2025, 2, 15)" currentView="Week" tooltipOpen="onTooltipOpen">
+    <e-schedule-views>
+        @foreach (var view in views)
+        {
+            <e-schedule-view option="@view"></e-schedule-view>
+        }
+    </e-schedule-views>
+    <e-schedule-eventsettings dataSource="@ViewBag.datasource" enableTooltip="true">
+        <e-schedule-eventsettings-fields>
+            <e-field name="Subject" title="Name"></e-field>
+            <e-field name="Location" title="Country Name"></e-field>
+            <e-field name="Description" title="Summary"></e-field>
+            <e-field name="StartTime" title="From"></e-field>
+            <e-field name="EndTime" title="To"></e-field>   
+            <e-field name="StartTimezone" title="Origin"></e-field>
+            <e-field name="EndTimezone" title="Destination"></e-field>
+        </e-schedule-eventsettings-fields>
+    </e-schedule-eventsettings>
+</ejs-schedule>
+
+<script type="text/javascript">
+    function onTooltipOpen(args) {
+        let record = args.data;
+        if (record.Subject === 'Vacation') {
+            args.cancel = true;
+        }
+    }
+</script>
