@@ -1,0 +1,10 @@
+<ejs-chart id="container">
+    <e-chart-crosshairsettings enable="true" lineType="Vertical" highlightCategory="true">
+        <e-chart-crosshairsettings-line color="red"></e-chart-crosshairsettings-line>
+    </e-chart-crosshairsettings>
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="Country" yName="Gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

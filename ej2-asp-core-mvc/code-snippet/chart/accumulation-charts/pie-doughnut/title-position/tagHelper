@@ -1,0 +1,13 @@
+<ejs-accumulationchart id="container" title="Oil and other liquid imports in USA" subTitle="In the year 2014 - 2015">
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="ViewBag.dataSource" xName="XValue" yName="YValue">
+            <e-accumulationseries-datalabel visible="true" name="Text">
+                <e-font color="white"></e-font>
+            </e-accumulationseries-datalabel>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+    <e-accumulationchart-titlestyle fontFamily="Arial" fontStyle="italic" fontWeight="regular" color="#E27F2D" size="23px" position="Bottom">
+    </e-accumulationchart-titlestyle>
+</ejs-accumulationchart>

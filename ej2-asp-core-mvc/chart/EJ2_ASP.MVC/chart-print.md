@@ -49,7 +49,7 @@ The optional parameters for this method are,
 * `Width` - width of chart export,
 * `Height` - height of chart export,
 * `IsVertical` -  decides the chart export in vertical or horizontal direction,
-*  `Header` - header for the exported chart,
+* `Header` - header for the exported chart,
 * `Footer` - footer for the exported chart, and
 * `ExportToMultiplePages` - decides to export multiple charts on separate pages for PDF export.
 
@@ -223,3 +223,35 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+## Excel export
+
+You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The `ExcelProperties` property in the `beforeExport` event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
+
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/excel-export/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Excel-export.cs" %}
+{% include code-snippet/chart/getting-started/excel-export/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/getting-started/excel-export/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Excel-export.cs" %}
+{% include code-snippet/chart/getting-started/excel-export/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+

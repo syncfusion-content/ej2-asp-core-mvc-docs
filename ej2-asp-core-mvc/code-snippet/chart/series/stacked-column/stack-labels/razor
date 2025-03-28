@@ -1,0 +1,15 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y").DataSource(ViewBag.dataSource)
+    .Name("UK").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+    .Name("Germany").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+    .Name("France").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y3").DataSource(ViewBag.dataSource)
+    .Name("Italy").Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Years").Interval(1)
+).PrimaryYAxis(py => py.Title("Sales in Billions").Minimum(0).Maximum(700).Interval(100).LabelFormat("{value}B")
+).StackLabels(stackLabels => stackLabels.Visible(true)).Title("Mobile Game Market by Country").Render()
+
+

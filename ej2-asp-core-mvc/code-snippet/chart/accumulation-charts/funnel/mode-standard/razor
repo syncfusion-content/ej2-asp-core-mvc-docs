@@ -1,0 +1,11 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+    {
+        series.DataSource(ViewBag.dataSource)
+        .XName("XValue")
+        .YName("YValue")
+        .Width("60%")
+        .Height("80%")
+        .FunnelMode(Syncfusion.EJ2.Charts.FunnelModes.Standard)
+        .Type(Syncfusion.EJ2.Charts.AccumulationType.Funnel)
+        .Add();
+    }).Render()

@@ -1,0 +1,10 @@
+@Html.EJS().Chart("container").Series(series =>
+        {
+                series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+                        .XName("Country")
+                        .YName("Gold")
+                        .DataSource(ViewBag.dataSource)
+                        .Add();
+        }
+        ).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+        ).Crosshair(cr=>cr.Enable(true).Line(l=>l.Color("red")).LineType(Syncfusion.EJ2.Charts.CrosshairLineType.Vertical).HighlightCategory(true)).Render()

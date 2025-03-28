@@ -152,3 +152,33 @@ Trackball can be enabled by setting the [`enable`](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
+
+
+## Crosshair highlight Category
+
+The `HighlightCategory` property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the `Color` property within the `Line` configuration.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/highlight-category/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Highlight-category.cs" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/highlight-category/highlight-category.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/highlight-category/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Highlight-category.cs" %}
+{% include code-snippet/chart/user-interaction/crosshair-trackball/highlight-category/highlight-category.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+

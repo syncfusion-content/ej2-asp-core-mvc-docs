@@ -1,0 +1,23 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).Width(2).XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+    }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Manager").MajorGridLines(mg=>mg.Width(0))
+    ).PrimaryYAxis(py => py.Title("Sales").MajorGridLines(mg=>mg.Width(0)).Minimum(0).Maximum(20000)
+    ).Title("Sales Comparision").BeforeExport("beforeExport").Render()
+
+<div>
+    @Html.EJS().Button("togglebtn").IsPrimary(true).Content("Export").Render()
+</div>
+<script>
+    document.getElementById('togglebtn').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        chart.exportModule.export('XLSX', 'result');
+    };
+
+    function beforeExport(args) {
+        args.excelProperties.rows[0].cells[0].value = 'Changed Title';
+        args.excelProperties.rows[1].cells[0].value = 'X Title';
+        args.excelProperties.rows[1].cells[1].value = 'Y Title';
+        args.excelProperties.rows[2].cells[1].value = args.excelProperties.rows[2].cells[1].value + 2;
+    };
+</script>

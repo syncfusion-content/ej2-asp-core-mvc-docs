@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked Bar in ##Platform_Name## Charts Component
+# Stacked bar in ##Platform_Name## Charts Component
 
 ## Stacked bar
 
@@ -370,6 +370,76 @@ The `pointRender` event allows you to customize each data point before it is ren
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
+
+## Stack labels
+
+The `StackLabels` in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/stack-labels.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/stack-labels.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Stack labels customization
+
+Stack labels have various properties for customization to enhance the visual based on your requirements:
+
+* `Visible` - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
+* `Fill` - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
+* `Format` - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
+* `Angle` - Specifies the rotation angle for stack labels in degrees. Default is 0.
+* `Rx` - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
+* `Ry` - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+* `Margin` - Configures the margin around the stack label (left, right, top, and bottom).
+* `Border` - Configures the appearance of the stack label's border.
+* `Font` - Customizes the stack label text, including font size, color, style, weight, and family.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels-cus.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/stack-labels-cus.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels-cus.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/stack-labels-cus.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
 
 ## See also
 

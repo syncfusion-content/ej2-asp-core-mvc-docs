@@ -1,0 +1,37 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Expense" interval="100" labelFormat="${value}">
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true" fill="rgba(0, 123, 255, 0.5)" format="{value}" angle="45" rx="10" ry="10">
+       <e-chart-stacklabels-border color="#000" width="2"></e-chart-stacklabels-border>
+       <e-chart-stacklabels-margin left="10" right="10" top="10" bottom="10"></e-chart-stacklabels-margin>
+       <e-chart-stacklabels-font size="14px" color="#fff" weight="bold" family="Arial" textAlignment="Left"></e-chart-stacklabels-font>
+    </e-chart-stacklabels>
+    <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="X" yName="Y" type="StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="X" yName="Y1" type="StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="X" yName="Y2" type="StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="X" yName="Y3" type="StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
