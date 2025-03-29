@@ -128,6 +128,33 @@ In the following example, the **CustomerID** is initially a hidden column in the
 
 ![Show or hide columns while exporting](../images/excel-exporting/exceloption-show.png)
 
+## Show or hide columns while exporting with stacked header
+
+The Syncfusion ASP.NET MVC Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+
+To implement the show or hide columns feature during Excel export in the Syncfusion ASP.NET MVC Grid, follow these steps:
+
+1. Handle the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Syncfusion ASP.NET MVC Grid.
+
+2. Update the visibility of the desired columns by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of the column to **true** or **false**.
+
+3. Export the Syncfusion ASP.NET MVC Grid to Excel document using the `ExcelExport` or `CsvExport` method.
+
+4. Handle the [ExcelExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ExcelExportComplete) event to restore the column visibility to its original state.
+
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion ASP.NET MVC Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/excelexport-show-hide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="excel-export.cs" %}
+{% include code-snippet/grid/excel-export/excelexport-show-hide/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show or hide columns while exporting with stacked header](../images/excel-exporting/exportoption-show-hide-stacked-header.png)
+
 ## Enable filtering in the exported excel file
 
 The Grid allows you to export data to Excel or CSV with filter options and also export only filtered records. This feature is especially beneficial when you need to share data with others while preserving the ability for them to filter and analyze the data in Excel or CSV.
