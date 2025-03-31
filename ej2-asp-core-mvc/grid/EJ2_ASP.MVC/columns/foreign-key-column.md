@@ -164,7 +164,7 @@ The following example demonstrates how to render foreign key values in a column 
 {% endhighlight %}
 {% endtabs %}
 
-![Render foreign key value in column template](../../images/foreign/foreign-key-in-column-template.png)
+![Render foreign key value in column template](../images/foreign/foreign-key-in-column-template.png)
 
 ## Enable multiple foreign key columns
 

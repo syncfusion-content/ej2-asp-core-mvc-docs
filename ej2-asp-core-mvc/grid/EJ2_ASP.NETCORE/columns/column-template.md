@@ -205,7 +205,7 @@ In the following example, a `RadioButton` is rendered in the **Order Status** co
 {% endhighlight %}
 {% endtabs %}
 
-![Column Template RadioButton](../../images/column-template/column-template-radiobutton.png)
+![Column Template RadioButton](../images/column-template/column-template-radiobutton.png)
 
 ## Using condition template
 
