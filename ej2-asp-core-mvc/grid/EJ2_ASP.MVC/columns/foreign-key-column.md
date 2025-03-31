@@ -150,11 +150,17 @@ To render foreign key values in a column template, you need to define a template
 The following example demonstrates how to render foreign key values in a column template within the Grid: 
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/columns/foreignkey-columntemplate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="foreignkey-columntemplate.cs" %}
 {% include code-snippet/grid/columns/foreignkey-columntemplate/foreignkey-columntemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/EmployeeDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
 

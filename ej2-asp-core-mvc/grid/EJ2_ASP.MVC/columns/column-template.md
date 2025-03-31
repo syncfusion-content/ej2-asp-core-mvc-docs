@@ -191,7 +191,7 @@ function queryCellInfo(args) {
 
 The Syncfusion ASP.NET MVC Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/aspnetmvc/documentation/radio-button/getting-started) within a column using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
-In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion ASP.NET Core Grid by defining the `template` property.
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion ASP.NET MVC Grid by defining the `Template` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

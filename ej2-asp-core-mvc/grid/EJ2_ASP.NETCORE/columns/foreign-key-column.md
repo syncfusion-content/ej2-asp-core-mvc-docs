@@ -156,6 +156,12 @@ The following example demonstrates how to render foreign key values in a column 
 {% highlight c# tabtitle="foreignkey-columntemplate.cs" %}
 {% include code-snippet/grid/columns/foreignkey-columntemplate/foreignkey-columntemplate.cs %}
 {% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/EmployeeDetails.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Render foreign key value in column template](../../images/foreign/foreign-key-in-column-template.png)

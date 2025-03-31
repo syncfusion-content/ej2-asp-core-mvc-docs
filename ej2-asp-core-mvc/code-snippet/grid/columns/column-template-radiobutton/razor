@@ -1,12 +1,11 @@
 @{
-		ViewBag.Title = "Home Page";
-	}
+  ViewBag.Title = "Home Page";
+}
 
 @using Syncfusion.EJ2
 
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("315px").Columns(col =>
-{
-  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("315px").Columns(col => {
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
   col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("OrderDate").HeaderText("OrderDate").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
