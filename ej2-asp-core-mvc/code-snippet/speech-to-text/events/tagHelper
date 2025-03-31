@@ -1,0 +1,23 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='speechtotext-container'>
+    <ejs-speechtotext id="speech-to-text" created="onCreated" transcriptChanged="onTranscriptChanged" onStart="onListeningStart" onStop="onListeningStop" onError="onErrorHandler"></ejs-speechtotext>
+</div>
+
+<script>
+    function onTranscriptChanged(args) {
+        //your required action here
+    };
+    function onErrorHandler(args) {
+        //your required action here
+    };
+    function onListeningStart(args) {
+        //your required action here
+    };
+    function onListeningStop(args) {
+        //your required action here
+    };
+    function onCreated() {
+        //your required action here
+    };
+</script>

@@ -203,7 +203,7 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             "bulletFormatListCircle": "Circle",
             "bulletFormatListSquare": "Square",
             "numberFormatListNone": "None",
-            "bulletFormatListNone: "None",
+            "bulletFormatListNone": "None",
             "formatPainter": "Format Painter",
             "emojiPicker": "Emoji Picker",
             "embeddedCode": "Embedded Code",
@@ -246,6 +246,10 @@ The Rich Text Editor offers an option to localize its strings using the locale A
             "slashMenuItemVideoDescription": "Insert a video.",
             "slashMenuItemEmojiText": "Emojipicker",
             "slashMenuItemEmojiDescription": "Use emojis to express ideas and emoticons.",
+<<<<<<< HEAD
+
+=======
+>>>>>>> 33e0df3f6e7ecbb65842c957659045cb2c7b1518
         }
     }
 }
@@ -533,7 +537,7 @@ When RTL (right-to-left) support is enabled, the `e-rtl` class will be added to 
 }
 ```
 
-N> This direction does not change based on the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_Locale_System_String_) property.
+> This direction does not change based on the [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_Locale_System_String_) property.
 
 
 {% if page.publishingplatform == "aspnet-core" %}

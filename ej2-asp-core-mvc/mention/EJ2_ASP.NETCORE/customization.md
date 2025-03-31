@@ -4,7 +4,7 @@ title: Customization in ASP.NET Core Mention control | Syncfusion
 description: Learn here all about customization in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -60,3 +60,20 @@ By default, the popup list width value is set as `auto`. Depending on the mentio
 You can customize the trigger character by using the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) property in the Mention control. The trigger character triggers the suggestion list to display in the target area.
 
 By default, the [mentionChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_MentionChar) is `@`.
+
+## Leading Space Requirement
+
+The [requireLeadingSpace](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.mention.html#Syncfusion_EJ2_DropDowns_Mention_RequireLeadingSpace) property in Mention controls whether a space is needed before triggering the Mention suggestion popup. 
+
+When set to `false`, the mention can be activated without a preceding space. When set to `true`, a space is required before the mention character to activate suggestions.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/mention/customization/require-leading-space/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/mention/customization/require-leading-space/EmailData.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Mention Required Leading Space](./images/required_leading_space.gif)
