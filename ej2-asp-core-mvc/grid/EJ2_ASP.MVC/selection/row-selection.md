@@ -210,7 +210,7 @@ To achieve this, you can leverage the `getSelectedRowIndexes` method, which retu
 
 The Grid component allows you to retrieve the selected records even when navigating to different pages. This feature is useful when working with large data sets and allows you to perform actions on the selected records across multiple pages. 
 
-To persist the selection across pages, you need to enable the [Persistselection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html) property of the Grid component.
+To persist the selection across pages, you need to enable the [PersistSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property. By default, this property is set to **false**. To enable it, set the value to **true** in the [SelectionSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html) property of the Grid component.
 
 To retrieve the selected records from different pages, you can use the  `getSelectedRecords` method. This method returns an array of the selected records.
 
@@ -291,3 +291,408 @@ In the following example, row selection is canceled when the value of **Customer
 {% endtabs %}
 
 ![Row selection events ](../images/selection/row-selection-events.gif)
+
+## Pass selected records to server using AJAX
+
+The Syncfusion ASP.NET MVC Grid allows you to select multiple or single records and send them to the server using AJAX requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+
+To achieve passing selected records to the server using AJAX requests in the Syncfusion ASP.NET MVC Grid, follow these steps:
+
+**Step 1:** Open Visual Studio and create an ASP.NET MVC project named **SelectRecord**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
+
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+
+**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the AJAX call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
+
+```html
+@Html.EJS().Button("passRecords").Content("Pass the selected records to controller").CssClass("e-primary").Render()
+<div style="padding: 20px 17px 0 0">
+    @*Replace **** with your actual port number.*@
+    @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:****/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+        col.Field("OrderDate").HeaderText("Date").Width("150").Format("yMd").Add();
+    }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+</div>
+```
+
+**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET MVC Grid and send them to the server using AJAX. Add the following code:
+
+```ts
+<script>
+	// Button click event to send selected records.
+	document.getElementById("passRecords").addEventListener("click", function () {
+		var grid = document.querySelector("#Grid")?.ej2_instances?.[0]; // Get the Grid instance.
+		var selectedRecords = grid.getSelectedRecords(); // Get selected rows.
+		if (selectedRecords.length === 0) {
+			alert("Please select at least one record.");
+			return;
+		}
+		// Convert selected records to JSON.
+		var rows = JSON.stringify(selectedRecords);
+		// Send data to the server using Ajax.
+		var ajax = new ej.base.Ajax({
+			url: 'https://localhost:****/Grid/SelectRecord', // Replace **** with actual server port.
+			type: 'POST',
+			contentType: 'application/json; charset=utf-8',
+			data: rows
+		});
+
+		ajax.onSuccess = function (result) {
+			console.log("Records sent successfully:", result);
+		};
+		ajax.send();
+	});
+
+</script>
+```
+
+**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+
+```cs
+namespace SelectRecord.Controllers
+{
+    public class GridController : Controller
+    {
+        private static List<OrdersDetails> order = OrdersDetails.GetAllRecords();
+        [HttpPost]
+        public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data source and convert to queryable.
+            IEnumerable<OrdersDetails> DataSource = order;
+            DataOperations queryableOperation = new DataOperations(); // Initialize DataOperations instance.
+
+            // Handling searching operation.
+            if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+            }
+            // Handling filtering operation.
+            if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+            {
+                foreach (var condition in DataManagerRequest.Where)
+                {
+                    foreach (var predicate in condition.predicates)
+                    {
+                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+                    }
+                }
+            }
+            // Handling sorting operation.
+            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+            }
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Handling paging operation.
+            if (DataManagerRequest.Skip != 0)
+            {
+                DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+            }
+            if (DataManagerRequest.Take != 0)
+            {
+                DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+            }
+
+            // Get the total records count.
+            int count = DataSource.Count();
+
+            // Return result and total record count.
+            return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
+        }
+
+        [HttpPost]
+        public ActionResult SelectRecord(List<Gridcolumns> row)
+        {
+            return Json(row);
+        }
+        public class SelectedModel
+        {
+            public List<Gridcolumns> rowData { get; set; }
+        }
+        public class Gridcolumns
+        {
+            public int OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public DateTime OrderDate { get; set; }
+        }
+    }
+}
+```
+
+**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+
+```cs
+namespace SelectRecord.Models
+{
+    public class OrdersDetails
+    {
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
+        {
+
+        }
+        public OrdersDetails(
+        int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+        DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+        DateTime ShippedDate, string ShipAddress)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.EmployeeID = EmployeeId;
+            this.Freight = Freight;
+            this.ShipCity = ShipCity;
+            this.Verified = Verified;
+            this.OrderDate = OrderDate;
+            this.ShipName = ShipName;
+            this.ShipCountry = ShipCountry;
+            this.ShippedDate = ShippedDate;
+            this.ShipAddress = ShipAddress;
+        }
+
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                int code = 10000;
+                for (int i = 1; i < 10; i++)
+                {
+                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                    code += 5;
+                }
+            }
+            return order;
+        }
+
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public double? Freight { get; set; }
+        public string? ShipCity { get; set; }
+        public bool? Verified { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string? ShipName { get; set; }
+        public string? ShipCountry { get; set; }
+        public DateTime ShippedDate { get; set; }
+        public string? ShipAddress { get; set; }
+    }
+}
+
+```
+
+The following screenshot shows how to pass selected records to the server:
+
+![Pass selected records to server using ajax](../../images/selection/row-selected-record.png)
+
+## Pass selected records to server using FETCH
+
+The Syncfusion ASP.NET MVC Grid allows you to select multiple or single records and send them to the server using Fetch requests. This feature is useful for scenarios where you need to process or manipulate selected data on the server side.
+
+To achieve passing selected records to the server using Fetch requests in the Syncfusion ASP.NET MVC Grid, follow these steps:
+
+**Step 1:** Open Visual Studio and create an ASP.NET MVC project named **SelectRecord**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
+
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+
+**Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the Fetch call and include the Syncfusion ASP.NET MVC Grid with necessary configurations:
+
+```html
+@Html.EJS().Button("passRecords").Content("Pass the selected records to controller").CssClass("e-primary").Render()
+<div style="padding: 20px 17px 0 0">
+    @*Replace **** with your actual port number.*@
+    @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:****/Grid/UrlDatasource").Adaptor("UrlAdaptor")).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("CustomerID").HeaderText("Customer Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+        col.Field("OrderDate").HeaderText("Date").Width("150").Format("yMd").Add();
+    }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Render()
+</div>
+```
+
+**Step 4:** In your script section, you need to handle the button `click` event. When clicked, retrieve the selected records using the `getSelectedRecords` method from the Syncfusion ASP.NET MVC Grid and send them to the server using Fetch. Add the following code:
+
+```ts
+<script>
+	// Button click event to send selected records.
+	document.getElementById("passRecords").addEventListener("click", function () {
+		var grid = document.querySelector("#Grid")?.ej2_instances?.[0]; // Get the Grid instance.
+
+		var selectedRecords = grid.getSelectedRecords(); // Get selected rows.
+		if (selectedRecords.length === 0) {
+			alert("Please select at least one record.");
+			return;
+		}
+
+		// Convert selected records to JSON.
+		var rows = JSON.stringify(selectedRecords);
+
+		// Send data to the server using Fetch.
+		var fetch = new ej.base.Fetch({
+			url: 'https://localhost:****/Grid/SelectRecord', // Replace **** with actual server port.
+			type: 'POST',
+			contentType: 'application/json; charset=utf-8',
+			data: rows
+		});
+
+		fetch.onSuccess = function (result) {
+			console.log("Records sent successfully:", result);
+		};
+		fetch.send();
+	});
+
+</script>
+```
+
+**Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
+
+```cs
+namespace SelectRecord.Controllers
+{
+    public class GridController : Controller
+    {
+        private static List<OrdersDetails> order = OrdersDetails.GetAllRecords();
+        [System.Web.Mvc.HttpPost]
+        public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data source and convert to queryable.
+            IEnumerable<OrdersDetails> DataSource = order;
+            DataOperations queryableOperation = new DataOperations(); // Initialize DataOperations instance.
+
+            // Handling searching operation.
+            if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+            }
+            // Handling filtering operation.
+            if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+            {
+                foreach (var condition in DataManagerRequest.Where)
+                {
+                    foreach (var predicate in condition.predicates)
+                    {
+                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+                    }
+                }
+            }
+            // Handling sorting operation.
+            if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+            {
+                DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+            }
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Handling paging operation.
+            if (DataManagerRequest.Skip != 0)
+            {
+                DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+            }
+            if (DataManagerRequest.Take != 0)
+            {
+                DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+            }
+
+            // Get the total records count.
+            int count = DataSource.Count();
+
+            // Return result and total record count.
+            return DataManagerRequest.RequiresCounts ? Json(new { result = DataSource, count }) : Json(DataSource);
+        }
+
+        [System.Web.Mvc.HttpPost]
+        public ActionResult SelectRecord(List<Gridcolumns> row)
+        {
+            return Json(row);
+        }
+        public class SelectedModel
+        {
+            public List<Gridcolumns> rowData { get; set; }
+        }
+        public class Gridcolumns
+        {
+            public int OrderID { get; set; }
+            public string CustomerID { get; set; }
+            public int EmployeeID { get; set; }
+            public DateTime OrderDate { get; set; }
+        }
+    }
+}
+```
+
+**Step 6:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data. Add the following code:
+
+```cs
+namespace SelectRecord.Models
+{
+    public class OrdersDetails
+    {
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
+        {
+
+        }
+        public OrdersDetails(
+        int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+        DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+        DateTime ShippedDate, string ShipAddress)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.EmployeeID = EmployeeId;
+            this.Freight = Freight;
+            this.ShipCity = ShipCity;
+            this.Verified = Verified;
+            this.OrderDate = OrderDate;
+            this.ShipName = ShipName;
+            this.ShipCountry = ShipCountry;
+            this.ShippedDate = ShippedDate;
+            this.ShipAddress = ShipAddress;
+        }
+
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                int code = 10000;
+                for (int i = 1; i < 10; i++)
+                {
+                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+                    code += 5;
+                }
+            }
+            return order;
+        }
+
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public int? EmployeeID { get; set; }
+        public double? Freight { get; set; }
+        public string? ShipCity { get; set; }
+        public bool? Verified { get; set; }
+        public DateTime OrderDate { get; set; }
+        public string? ShipName { get; set; }
+        public string? ShipCountry { get; set; }
+        public DateTime ShippedDate { get; set; }
+        public string? ShipAddress { get; set; }
+    }
+}
+
+```
+
+The following screenshot shows how to pass selected records to the server:
+
+![Pass selected records to server using fetch](../../images/selection/row-selected-record.png)
