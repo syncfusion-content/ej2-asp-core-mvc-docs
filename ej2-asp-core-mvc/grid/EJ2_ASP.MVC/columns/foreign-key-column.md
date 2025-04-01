@@ -171,7 +171,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 **Step 3:** In your ASP.NET MVC file (e.g., **Index.cshtml**), define the Syncfusion ASP.NET MVC Grid with the necessary configurations, including a foreign key column for **EmployeeID**, and implement the required logic to manage its behavior.
 
 ```cs
-@*Replace **** with your actual port number*@
+@*Replace **** with your actual port number.*@
 @Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("https://localhost:****/api/Grid").Adaptor("UrlAdaptor"); }).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -183,7 +183,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 <script>
 	let autoComplete;
 	let employeeData = new ej.data.DataManager({
-		url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number
+		url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number.
 		adaptor: new ej.data.UrlAdaptor(),
 		crossDomain: true,
 	});
@@ -309,7 +309,8 @@ namespace EditTemplate.Controllers
         [Route("api/Grid/Remove")]
         public void Remove(CRUDModel<OrdersDetails> deletedRecord)
         {
-            int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
+	    // Get key value from the deletedRecord.
+            int orderId = int.Parse(deletedRecord.key.ToString());
             var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
             if (data != null)
             {
