@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Maintenance in ##Platform_Name## Dashboard Layout control
+title: State Maintenance in ##Platform_Name## Dashboard Layout control | Syncfusion
 description: Learn here all about State Maintenance in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Maintenance
