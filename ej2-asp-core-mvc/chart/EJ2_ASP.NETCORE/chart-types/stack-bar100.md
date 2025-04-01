@@ -366,7 +366,7 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-bar100/corner-radiusr/razor %}
+{% include code-snippet/chart/series/stacked-bar100/corner-radius/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Corner-radius.cs" %}
 {% include code-snippet/chart/series/stacked-bar100/corner-radius/corner-radius.cs %}
@@ -395,7 +395,7 @@ We can customize the corner radius for individual points in the chart series usi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-bar100/point-corner-radiusr/razor %}
+{% include code-snippet/chart/series/stacked-bar100/point-corner-radius/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Point-corner-radius.cs" %}
 {% include code-snippet/chart/series/stacked-bar100/point-corner-radius/point-corner-radius.cs %}

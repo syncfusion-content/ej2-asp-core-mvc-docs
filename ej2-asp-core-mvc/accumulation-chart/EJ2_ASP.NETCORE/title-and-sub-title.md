@@ -171,8 +171,8 @@ public class PieChartData
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/title-cus.cs %}
+{% highlight c# tabtitle="Sub-title-cus.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/sub-title-cus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
