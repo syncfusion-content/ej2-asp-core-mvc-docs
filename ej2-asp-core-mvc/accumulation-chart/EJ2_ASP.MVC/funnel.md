@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Funnel in ##Platform_Name## Accumulation Chart Component
+title: Funnel in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Funnel in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Funnel
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Funnel chart
+# Funnel chart in ##Platform_Name## Accumulation Chart Component
 
 To render a funnel series, use the series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Funnel`.
 

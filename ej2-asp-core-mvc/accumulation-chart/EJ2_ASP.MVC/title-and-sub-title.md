@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title And Sub Title in ##Platform_Name## Accumulation Chart Component
+title: Title And Sub Title in ##Platform_Name## Accumulation Chart Component | Syncfusion
 description: Learn here all about Title And Sub Title in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title And Sub Title
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Title
+# Title in ##Platform_Name## Accumulation Chart Component
 
 Accumulation Chart can be given a title using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#Syncfusion_EJ2_Charts_AccumulationChart_Title) property, to show the information about the data plotted.
 
