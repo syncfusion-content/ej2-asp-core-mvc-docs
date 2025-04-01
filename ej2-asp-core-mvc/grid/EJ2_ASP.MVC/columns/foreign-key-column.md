@@ -171,7 +171,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 **Step 3:** In your ASP.NET MVC file (e.g., **Index.cshtml**), define the Syncfusion ASP.NET MVC Grid with the necessary configurations, including a foreign key column for **EmployeeID**, and implement the required logic to manage its behavior.
 
 ```cs
-@*Replace **** with your actual port number*@
+@*Replace **** with your actual port number.*@
 @Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("https://localhost:****/api/Grid").Adaptor("UrlAdaptor"); }).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -181,51 +181,51 @@ This example demonstrates how to use an edit template in a foreign key column wi
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 
 <script>
-	let autoComplete;
-	let employeeData = new ej.data.DataManager({
-		url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number
-		adaptor: new ej.data.UrlAdaptor(),
-		crossDomain: true,
-	});
+let autoComplete;
+let employeeData = new ej.data.DataManager({
+	url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number.
+	adaptor: new ej.data.UrlAdaptor(),
+	crossDomain: true,
+});
 
-	function create() {
-		return ej.base.createElement('input');
-	}
+function create() {
+	return ej.base.createElement('input');
+}
 
-	function destroy() {
-		if (autoComplete) autoComplete.destroy();
-	}
+function destroy() {
+	if (autoComplete) autoComplete.destroy();
+}
 
-	function read() {
-		return autoComplete ? autoComplete.value : '';
-	}
+function read() {
+	return autoComplete ? autoComplete.value : '';
+}
 
-	function write(args) {
-		let selectedValue = args.rowData ? args.rowData.employeeID : '';
-		employeeData.executeQuery(new ej.data.Query()).then((data) => {
-			let employees = data.result;
-			autoComplete = new ej.dropdowns.AutoComplete({
-				dataSource: employees,
-				fields: { value: "EmployeeID", text: "FirstName" },
-				value: selectedValue,
-				placeholder: "Select Employee",
-				allowFiltering: true,
-				filtering: function (e) {
-					let query = new ej.data.Query();
-					query = e.text ? query.where("FirstName", "startswith", e.text, true) : query;
-					e.updateData(employees, query);
-				},
-				change: function (e) {
-					if (e.itemData) {
-						args.rowData.employeeID = e.itemData.employeeID;
-					}
+function write(args) {
+	let selectedValue = args.rowData ? args.rowData.employeeID : '';
+	employeeData.executeQuery(new ej.data.Query()).then((data) => {
+		let employees = data.result;
+		autoComplete = new ej.dropdowns.AutoComplete({
+			dataSource: employees,
+			fields: { value: "EmployeeID", text: "FirstName" },
+			value: selectedValue,
+			placeholder: "Select Employee",
+			allowFiltering: true,
+			filtering: function (e) {
+				let query = new ej.data.Query();
+				query = e.text ? query.where("FirstName", "startswith", e.text, true) : query;
+				e.updateData(employees, query);
+			},
+			change: function (e) {
+				if (e.itemData) {
+					args.rowData.employeeID = e.itemData.employeeID;
 				}
-			});
-			autoComplete.appendTo(args.element);
-		}).catch((error) => {
-			console.error("Error fetching employee data:", error);
+			}
 		});
-	}
+		autoComplete.appendTo(args.element);
+	}).catch((error) => {
+		console.error("Error fetching employee data:", error);
+	});
+}
 </script>
 ```
 
