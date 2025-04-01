@@ -1,0 +1,24 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y").DataSource(ViewBag.dataSource)
+    .Name("UK").CornerRadius(cr => cr.TopLeft(10).TopRight(10)).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+    .Name("Germany").CornerRadius(cr => cr.TopLeft(10).TopRight(10)).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+    .Name("France").CornerRadius(cr => cr.TopLeft(10).TopRight(10)).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn).XName("X").YName("Y3").DataSource(ViewBag.dataSource)
+    .Name("Italy").CornerRadius(cr => cr.TopLeft(10).TopRight(10)).Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Title("Years").Interval(1)
+).PrimaryYAxis(py => py.Title("Sales in Billions").Minimum(0).Maximum(700).Interval(100).LabelFormat("{value}B")
+).Title("Mobile Game Market by Country").PointRender("pointRender").Render()
+
+<script>
+    function pointRender(args) {
+        if (args.point.series.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

@@ -1,0 +1,23 @@
+
+@Html.EJS().Chart("container").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn).
+        XName("X").
+        High("High").
+        Low("Low").
+        CornerRadius(cr => cr.TopLeft(10).TopRight(10)).
+        DataSource(ViewBag.dataSource).
+        Add();
+
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn).
+        XName("X").
+        High("High1").
+        Low("Low1").
+        CornerRadius(cr => cr.TopLeft(10).TopRight(10)).
+        DataSource(ViewBag.dataSource).
+        Add();
+   }
+    ).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).title("Month")
+    ).PrimaryXAxis(py => py.Title("Temperature(Celsius)").LabelFormat("{value}°C")
+    ).Title("Maximum and Minimum Temperature").Render()
+

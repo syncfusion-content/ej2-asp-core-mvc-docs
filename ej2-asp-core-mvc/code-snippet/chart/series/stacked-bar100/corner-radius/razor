@@ -1,0 +1,26 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y").DataSource(ViewBag.dataSource)
+        .Name("Apple").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+        .Name("Orange").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .CornerRadius(cr => cr.TopLeft(10).TopRight(10)).XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+        .Name("Wastage").Add();
+    }
+    ).PrimaryXAxis(px => px.Title("Months")
+    ).PrimaryYAxis(py => py.Title("Percentage (%)").LabelFormat("{value}%")
+    ).Title("Sales Comparison").PointRender("pointRender").Render()
+    
+<script>
+    function pointRender(args) {
+        if (args.point.series.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        } 
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

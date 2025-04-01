@@ -1,0 +1,33 @@
+<ejs-chart id="container" title="Mobile Game Market by Country" pointRender="pointRender">
+    <e-chart-primaryxaxis valueType="Category" title="Years" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales in Billions" minimum="0" maximum="700" interval="100" labelFormat="{value}B">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="UK" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Germany" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="France" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Italy" xName="X" yName="Y3" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.index === 0 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 3 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 4 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 6 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+    }
+</script>

@@ -197,7 +197,7 @@ Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 ### Position
 
-The `Position` property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+The [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_Position) property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
 
 * Default: `placeNextToAxisLine`.
 * Horizontal scrollbar: Available positions are `Top` and `Bottom`.

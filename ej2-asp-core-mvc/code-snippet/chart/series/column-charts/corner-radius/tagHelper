@@ -1,0 +1,11 @@
+<ejs-chart id="container" title="Olympic Medals">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Countries">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis minimum="0" maximum="80" interval="20" title="Medals">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="Country" yName="Gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" width="2">
+            <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

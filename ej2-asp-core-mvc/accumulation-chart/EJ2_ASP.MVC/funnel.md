@@ -214,9 +214,9 @@ Individual points can be customized using the `PointRender` event.
 
 ## Mode
 
-The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the `FunnelMode` is `Standard`.
+The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`FunnelMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_FunnelMode) is `Standard`.
 
-### Standard mode
+### Standard
 
 The `Standard` funnel mode follows the traditional funnel shape, with the width continuously narrowing down to a point at the bottom.
 
@@ -245,7 +245,7 @@ The `Standard` funnel mode follows the traditional funnel shape, with the width 
 
 
 
-### Trapezoidal mode
+### Trapezoidal
 
 The `Trapezoidal` mode is a modified funnel shape where the width narrows, but features a flattened or parallel section near the top, creating a trapezoidal appearance. This mode helps compare different data points more clearly while maintaining a funnel-like structure.
 

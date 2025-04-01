@@ -1,0 +1,21 @@
+<ejs-chart id="container" pointRender="pointRender">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y"  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Waterfall"  
+        intermediateSumIndexes="intermediateSumIndexes" sumIndexes="sumIndexes">
+            <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

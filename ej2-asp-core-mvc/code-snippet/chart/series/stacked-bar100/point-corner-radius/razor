@@ -1,0 +1,32 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y").DataSource(ViewBag.dataSource)
+        .Name("Apple").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+        .Name("Orange").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+        .Name("Wastage").Add();
+    }
+    ).PrimaryXAxis(px => px.Title("Months")
+    ).PrimaryYAxis(py => py.Title("Percentage (%)").LabelFormat("{value}%")
+    ).Title("Sales Comparison").PointRender("pointRender").Render()
+    
+<script>
+    function pointRender(args) {
+        if (args.point.index === 1 && args.point.series.index === 2) {
+            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        }
+        if (args.point.index === 4 && args.point.series.index === 2) {
+            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        }
+        if (args.point.index === 6 && args.point.series.index === 2) {
+            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        }
+        if (args.point.index === 8 && args.point.series.index === 2) {
+            args.cornerRadius = { topLeft: 0, bottomLeft: 0, topRight: 10, bottomRight: 10 };
+        }
+    }
+</script>

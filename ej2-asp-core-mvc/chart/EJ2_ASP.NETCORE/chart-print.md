@@ -251,7 +251,7 @@ The chart can be exported as an image in the form of a base64 string by utilizin
 
 ## Excel export
 
-You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The `ExcelProperties` property in the `beforeExport` event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
+You can export the rendered chart data to Excel in either `XLSX` or `CSV` format. The `ExcelProperties` property in the [`BeforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_BeforeExport) event allows users to customize the exported Excel sheet by modifying row, column, and cell properties before the file is generated. You can customize row titles, column titles, cell values, as well as row and column widths.
 
 
 {% if page.publishingplatform == "aspnet-core" %}

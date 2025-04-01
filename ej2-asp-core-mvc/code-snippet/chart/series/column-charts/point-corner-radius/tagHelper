@@ -1,0 +1,22 @@
+<ejs-chart id="container" title="Olympic Medals">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Countries">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis minimum="0" maximum="80" interval="20" title="Medals">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="Country" yName="Gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" width="2">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.index === 1) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 4) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+    }
+</script>
+

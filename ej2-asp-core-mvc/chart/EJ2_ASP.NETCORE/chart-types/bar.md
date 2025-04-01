@@ -455,6 +455,65 @@ The `pointRender` event allows you to customize each data point before it is ren
 {% endtabs %}
 {% endif %}
 
+
+
+## Corner radius
+
+The [`CornerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in the chart series is used to customize the corner radius for bar series. This allows you to create bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/bar/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/bar/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event by setting the [`CornerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in its event argument.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/point-corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/bar/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/bar/point-corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/bar/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See also
 
 * [Data Label](../data-labels)

@@ -1,0 +1,26 @@
+<ejs-chart id="container" title="Sales Comparison" pointRender="pointRender">
+    <e-chart-primaryxaxis title="Months">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Percentage (%)" labelFormat="{value}%">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Apple" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Orange" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Wastage" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+            <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.series.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        } 
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

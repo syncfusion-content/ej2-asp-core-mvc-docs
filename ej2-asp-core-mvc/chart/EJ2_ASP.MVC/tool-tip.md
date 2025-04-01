@@ -212,9 +212,9 @@ public class GroupingChartData
 
 
 
-## ShowNearestTooltip
+## Closest tooltip
 
-The `ShowNearestTooltip` property in the chart tooltip displays tooltips based on the data points closest to the cursor.
+The [`ShowNearestTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_ShowNearestTooltip) property in the chart tooltip displays tooltips based on the data points closest to the cursor.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

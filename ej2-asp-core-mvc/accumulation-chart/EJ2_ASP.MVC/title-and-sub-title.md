@@ -70,7 +70,7 @@ Accumulation Chart can be customized a title using [`TitleStyle`](https://help.s
 
 ### Position
 
-The `Position` property customizes the placement of the accumulation chart title. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the title anywhere on the chart using x and y coordinates, providing flexible title alignment based on layout requirements.
+The [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTitleStyleSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTitleStyleSettings_Position) property customizes the placement of the accumulation chart title. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the title anywhere on the chart using x and y coordinates, providing flexible title alignment based on layout requirements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,7 +157,7 @@ Accumulation Chart can be customized a subtitle using [`SubTitleStyle`](https://
 
 ### Position
 
-The `Position` property customizes the placement of the accumulation chart subtitle. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the subtitle anywhere on the chart using x and y coordinates, providing flexible subtitle alignment based on layout requirements.
+The [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTitleStyleSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTitleStyleSettings_Position) property customizes the placement of the accumulation chart subtitle. It supports the following options: `Right`, `Left`, `Bottom`, `Top`, and `Custom`. The Custom option allows you to position the subtitle anywhere on the chart using x and y coordinates, providing flexible subtitle alignment based on layout requirements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

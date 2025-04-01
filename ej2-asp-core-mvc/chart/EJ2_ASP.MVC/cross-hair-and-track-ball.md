@@ -156,7 +156,7 @@ Trackball can be enabled by setting the [`Enable`](https://help.syncfusion.com/c
 
 ## Crosshair highlight Category
 
-The `HighlightCategory` property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the `Color` property within the `Line` configuration.
+The [`HighlightCategory`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartCrosshairSettings.html#Syncfusion_EJ2_Charts_ChartCrosshairSettings_HighlightCategory) property in the crosshair highlights the background of the entire category when hovered over. The crosshair color can be customized using the `Color` property within the [`Line`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartCrosshairSettings.html#Syncfusion_EJ2_Charts_ChartCrosshairSettings_Line) configuration.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
