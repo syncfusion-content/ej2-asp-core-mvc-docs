@@ -107,8 +107,8 @@ Accumulation Chart can be given a subtitle using [`SubTitle`](https://help.syncf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/title.cs %}
+{% highlight c# tabtitle="Sub-title.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/sub-title.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -118,8 +118,8 @@ Accumulation Chart can be given a subtitle using [`SubTitle`](https://help.syncf
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/title.cs %}
+{% highlight c# tabtitle="Sub-title.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/sub-title.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -136,8 +136,8 @@ Accumulation Chart can be customized a subtitle using [`SubTitleStyle`](https://
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/title.cs %}
+{% highlight c# tabtitle="Sub-title-cus.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/sub-title-cus.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,8 +147,8 @@ Accumulation Chart can be customized a subtitle using [`SubTitleStyle`](https://
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/title.cs %}
+{% highlight c# tabtitle="Sub-title-cus.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title-cus/sub-title-cus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

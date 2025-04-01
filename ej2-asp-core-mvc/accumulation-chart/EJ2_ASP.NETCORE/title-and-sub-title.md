@@ -72,8 +72,8 @@ public class PieChartData
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/title-cus/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/title-cus/title.cs %}
+{% highlight c# tabtitle="Title-cus.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/title-cus/title-cus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -136,8 +136,8 @@ public class PieChartData
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Title.cs" %}
-{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/title.cs %}
+{% highlight c# tabtitle="Sub-title.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/sub-title/sub-title.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
