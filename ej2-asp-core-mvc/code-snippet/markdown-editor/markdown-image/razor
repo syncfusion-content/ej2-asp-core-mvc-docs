@@ -1,0 +1,130 @@
+<div class="control-wrapper">
+    <div class="control-section">
+        @Html.EJS().RichTextEditor("markdown").EditorMode(EditorMode.Markdown).ToolbarSettings(e => e.Items((object)ViewBag.items)).Value((string)ViewBag.value).Created("created").Render()
+    </div>
+</div>
+
+<script type="text/javascript">
+    var rteObj, textArea, mdsource;
+    function created() {
+        rteObj = this;
+        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
+        rteObj.dataBind();
+        textArea = rteObj.contentModule.getEditPanel();
+        textArea.addEventListener('keyup', function (e) {
+            markdownConversion();
+        });
+        mdsource = document.getElementById('preview-code');
+        mdsource.addEventListener('click', function (e) {
+            fullPreview();
+            if (e.currentTarget.classList.contains('e-active')) {
+                rteObj.disableToolbarItem(['Image']);
+            }
+            else {
+                rteObj.enableToolbarItem(['Image']);
+            }
+        });
+    }
+    loadExternalFile();
+    function loadExternalFile() {
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+    function markdownConversion() {
+        if (mdsource.classList.contains('e-active')) {
+            var id = rteObj.getID() + 'html-preview';
+            var htmlPreview = rteObj.element.querySelector('#' + id);
+            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+        }
+    }
+    function fullPreview() {
+        var id = rteObj.getID() + 'html-preview';
+        var htmlPreview = rteObj.element.querySelector('#' + id);
+        var previewTextArea = rteObj.element.querySelector('.e-rte-content');
+        if (mdsource.classList.contains('e-active')) {
+            mdsource.classList.remove('e-active');
+            mdsource.parentElement.title = 'Preview';
+            textArea.style.display = 'block';
+            htmlPreview.style.display = 'none';
+            previewTextArea.style.overflow = 'hidden';
+        }
+        else {
+            mdsource.classList.add('e-active');
+            if (!htmlPreview) {
+                htmlPreview = ej.base.createElement('div', { className: 'e-content e-pre-source' });
+                htmlPreview.id = id;
+                textArea.parentNode.appendChild(htmlPreview);
+                previewTextArea.style.overflow = 'auto';
+            }
+            if (previewTextArea.style.overflow === 'hidden') {
+                previewTextArea.style.overflow = 'auto';
+            }
+            textArea.style.display = 'none';
+            htmlPreview.style.display = 'block';
+            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
+            mdsource.parentElement.title = 'Code View';
+        }
+    }
+</script>
+<style>
+    .e-richtexteditor textarea.e-content {
+        float: left;
+    }
+
+    .e-richtexteditor .e-rte-content {
+        overflow: hidden;
+    }
+
+    .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e350';
+    }
+
+    .e-icon-btn .e-md-preview::before {
+        content: '\e345';
+    }
+
+    .bootstrap4 .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e790';
+    }
+
+    .bootstrap4 .e-icon-btn .e-md-preview::before {
+        content: '\e787';
+    }
+
+    .fluent .e-icon-btn.e-active .e-md-preview::before,
+    .fluent-dark .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2 .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2-dark .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2-highcontrast .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind-dark .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind3 .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind3-dark .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5 .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5-dark .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5\.3 .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5\.3-dark .e-icon-btn.e-active .e-md-preview::before,
+    .material3 .e-icon-btn.e-active .e-md-preview::before,
+    .material3-dark .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e80e';
+    }
+
+    .tailwind .e-icon-btn .e-md-preview::before,
+    .tailwind-dark .e-icon-btn .e-md-preview::before,
+    .tailwind3 .e-icon-btn .e-md-preview::before,
+    .tailwind3-dark .e-icon-btn .e-md-preview::before,
+    .bootstrap5 .e-icon-btn .e-md-preview::before,
+    .bootstrap5-dark .e-icon-btn .e-md-preview::before,
+    .bootstrap5\.3 .e-icon-btn .e-md-preview::before,
+    .bootstrap5\.3-dark .e-icon-btn .e-md-preview::before,
+    .fluent .e-icon-btn .e-md-preview::before,
+    .fluent-dark .e-icon-btn .e-md-preview::before,
+    .fluent2 .e-icon-btn .e-md-preview::before,
+    .fluent2-dark .e-icon-btn .e-md-preview::before,
+    .fluent2-highcontrast .e-icon-btn .e-md-preview::before,
+    .material3 .e-icon-btn .e-md-preview::before,
+    .material3-dark .e-icon-btn .e-md-preview::before {
+        content: '\e7de';
+    }
+</style>
