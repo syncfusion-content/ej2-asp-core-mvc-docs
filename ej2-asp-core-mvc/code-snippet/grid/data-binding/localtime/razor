@@ -12,7 +12,7 @@
 	@Html.EJS().CheckBox("timezoneCheckbox").Label("Prevent Timezone Conversion").Change("onCheckboxChange").Render()
 </div>
 <div>
-	@*Replace xxxx with your actual port number*@
+	@*Replace xxxx with your actual port number.*@
 	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:****/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().Columns(col =>
 	{
 	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
@@ -24,36 +24,36 @@
 </div>
 
 <script>
-	var selectedTimezone = -12;
-	var checkbox;
-	var grid;
-	function load() {
-		checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
-		grid = document.getElementById("Grid")?.ej2_instances?.[0];
-		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
-	}
-	function onTimezoneChange(event) {
-		selectedTimezone = Number(event.value);
-		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
-		grid.setProperties({
-			dataSource: new ej.data.DataManager({
-				url: "https://localhost:****/api/orders", // Replace **** with your actual port number.
-				adaptor: new ej.data.WebApiAdaptor(),
-				crossDomain: true
-			})
-		});
-		grid.refresh();
-	}
+var selectedTimezone = -12;
+var checkbox;
+var grid;
+function load() {
+	checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
+	grid = document.getElementById("Grid")?.ej2_instances?.[0];
+	ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
+}
+function onTimezoneChange(event) {
+	selectedTimezone = Number(event.value);
+	ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
+	grid.setProperties({
+		dataSource: new ej.data.DataManager({
+			url: "https://localhost:****/api/orders", // Replace **** with your actual port number.
+			adaptor: new ej.data.WebApiAdaptor(),
+			crossDomain: true
+		})
+	});
+	grid.refresh();
+}
 
-	function onCheckboxChange(event) {
-		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
-		grid.setProperties({
-			dataSource: new ej.data.DataManager({
-				url: "https://localhost:****/api/orders", // Replace **** with your actual port number
-				adaptor: new ej.data.WebApiAdaptor(),
-				crossDomain: true
-			})
-		});
-		grid.refresh();
-	}
+function onCheckboxChange(event) {
+	ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
+	grid.setProperties({
+		dataSource: new ej.data.DataManager({
+			url: "https://localhost:****/api/orders", // Replace **** with your actual port number.
+			adaptor: new ej.data.WebApiAdaptor(),
+			crossDomain: true
+		})
+	});
+	grid.refresh();
+}
 </script>
