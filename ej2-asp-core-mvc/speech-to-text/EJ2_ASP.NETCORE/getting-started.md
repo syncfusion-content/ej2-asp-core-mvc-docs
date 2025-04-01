@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## SpeechTo Text Control | Syncfusion
+title: Getting Started with ##Platform_Name## SpeechToText Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: SpeechToText
@@ -59,7 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -103,7 +103,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Adding button content
 
-You can use the `content` property to display the start listening text and `stopContent` to display the stop listening text by using the `e-speechtotext-buttonSettings` tag helper.
+You can use the [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_Content) property to display the start listening text and [stopContent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_StopContent) to display the stop listening text by using the e[-speechtotext-buttonSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ButtonSettings) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,3 +112,4 @@ You can use the `content` property to display the start listening text and `stop
 {% endtabs %}
 
 ![ASP.NET Core SpeechToText Button Content](images/speechtotext-buttonsetting.png)
+![ASP.NET Core SpeechToText Stop Content](images/speechtotext-stop.png)

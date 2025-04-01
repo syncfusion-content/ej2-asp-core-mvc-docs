@@ -1,0 +1,56 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+@using Newtonsoft.Json;
+
+@{
+    var filterBarTemplate = new { create = "dropDownCreate", write = "dropDownWrite" };
+}
+
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="273px">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+        <e-grid-column field="TypeText" headerText="File Type" width="170" filterBarTemplate=filterBarTemplate></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var dropDown;
+    var filterDropData = [
+        { Type: 'All' },
+        { Type: 'Base' },
+        { Type: 'Replace' },
+        { Type: 'Delta' }
+    ];
+
+    function dropDownCreate() {
+        dropDown = document.createElement('select');
+        dropDown.id = 'TypeFilter';
+        filterDropData.forEach((item) => {
+            var option = document.createElement('option');
+            option.value = item.Type;
+            option.innerText = item.Type;
+            dropDown.appendChild(option);
+        });
+        return dropDown;
+    }
+
+    function dropDownWrite() {
+        var dropDownList = new ej.dropdowns.DropDownList({
+            change: function (args) {
+                var grid = document.getElementById("grid").ej2_instances[0];
+                if (args.value !== 'All') {
+                    grid.filterByColumn('TypeText', 'equal', args.value);
+                } else {
+                    grid.removeFilteredColsByField('TypeText');
+                }
+            }
+        });
+        dropDownList.appendTo(dropDown);
+    }
+</script>

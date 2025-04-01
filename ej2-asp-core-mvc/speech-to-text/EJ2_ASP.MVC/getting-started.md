@@ -57,7 +57,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -99,12 +99,13 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Adding button content
 
-You can use the `Content` property to display the start listening text and `StopContent` to display the stop listening text by using the `ButtonSettings` property.
+You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_Content) property to display the start listening text and [StopContent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToTextButtonSettings.html#Syncfusion_EJ2_Inputs_SpeechToTextButtonSettings_StopContent) to display the stop listening text by using the [ButtonSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_ButtonSettings) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/speech-to-text/button-setting/demo/rezor %}
+{% include code-snippet/speech-to-text/button-setting/demo/razor %}
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeechToText Button Content](images/speechtotext-buttonsetting.png)
+![ASP.NET MVC SpeechToText Start Content](images/speechtotext-buttonsetting.png)
+![ASP.NET MVC SpeechToText Stop Content](images/speechtotext-stop.png)
