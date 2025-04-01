@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Grid Component
+title: PDF Export Options in ##Platform_Name## Syncfusion Grid Component
 description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
@@ -134,6 +134,33 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% endtabs %}
 
 ![Export Show Hide Records](../images/pdf-export/export-show-hide.png)
+
+## Show or hide columns while exporting with stacked header
+
+The Syncfusion ASP.NET MVC Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
+
+To implement the show or hide columns feature during PDF export in the Syncfusion ASP.NET MVC Grid, follow these steps:
+
+1. Handle the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Syncfusion ASP.NET MVC Grid.
+
+2. Update the visibility of the desired columns by setting the [Visible](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of the column to **true** or **false**.
+
+3. Export the Syncfusion ASP.NET MVC Grid to PDF document using `PdfExport` method.
+
+4. Handle the [PdfExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event to restore the column visibility to its original state.
+
+In the following example, the **ShipName** is initially a hidden column in the Syncfusion ASP.NET MVC Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/pdfexport-show-hide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="pdf-export.cs" %}
+{% include code-snippet/grid/pdf-export/pdfexport-show-hide/pdf-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show or hide columns while exporting with stacked header](../images/pdf-export/exportoption-show-hide-stacked-header.png)
 
 ## Change page orientation
 
