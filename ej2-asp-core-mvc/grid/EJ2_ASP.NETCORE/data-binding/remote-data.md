@@ -686,7 +686,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 
 ## Fetch result from the DataManager query using external button 
 
-By default, Syncfusion ASP.NET MVC Grid automatically binds a remote data source using the `DataManager`. However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+By default, Syncfusion ASP.NET Core Grid automatically binds a remote data source using the `DataManager`. However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
 
 To achieve this, you can use the `executeQuery` method of `DataManager` with a `Query` object. This method allows you to run a custom query and retrieve results dynamically.
 
@@ -694,6 +694,7 @@ The following example demonstrates how to fetch data from the server when an ext
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+
 @page
 @model IndexModel
 <div id='container'>
@@ -701,7 +702,7 @@ The following example demonstrates how to fetch data from the server when an ext
   <p id="statusMessage" style="text-align:center;color:blue"></p>
   <ejs-grid id="Grid">
     <e-grid-columns>
-      <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
+      <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
       <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
       <e-grid-column field="EmployeeID" headerText="Employee ID" width="120" textAlign="Right"></e-grid-column>
       <e-grid-column field="Freight" headerText="Freight" width="150" format="C2" textAlign="Right"></e-grid-column>
@@ -732,7 +733,8 @@ The following example demonstrates how to fetch data from the server when an ext
     });
   });
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
-![Fetch result from DataManager Query](../../images/databinding/fetch-data.png)
+![Fetch result from DataManager Query](../images/databinding/fetch-data.png)

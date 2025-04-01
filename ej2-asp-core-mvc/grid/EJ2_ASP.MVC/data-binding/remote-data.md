@@ -681,19 +681,20 @@ The following example demonstrates how to fetch data from the server when an ext
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
+
 @using Syncfusion.EJ2
 
 <div id='container'>
-	@Html.EJS().Button("fetchButton").Content("Execute Query").CssClass("e-primary").Render()
-	<p id="statusMessage" style="text-align:center;color:blue"></p>
-	@Html.EJS().Grid("Grid").Columns(col =>
-  {
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Type("number").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("160").Type("string").Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
-    col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Type("string").Add();
-  }).Render()
+@Html.EJS().Button("fetchButton").Content("Execute Query").CssClass("e-primary").Render()
+<p id="statusMessage" style="text-align:center;color:blue"></p>
+@Html.EJS().Grid("Grid").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+  col.Field("CustomerID").HeaderText("Customer ID").Width("160").Type("string").Add();
+  col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+  col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("number").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Type("string").Add();
+}).Render()
 </div>
 
 <script>
@@ -721,7 +722,8 @@ The following example demonstrates how to fetch data from the server when an ext
 		});
 	});
 </script>
+
 {% endhighlight %}
 {% endtabs %}
 
-![Fetch result from DataManager Query](../../images/databinding/fetch-data.png)
+![Fetch result from DataManager Query](../images/databinding/fetch-data.png)

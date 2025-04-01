@@ -124,7 +124,7 @@ Here's an example that demonstrates how to change the position of the validation
 
 While performing CRUD actions in the Syncfusion ASP.NET MVC Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
 
-To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI. Additionally, you can use the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event to remove the error message upon the successful completion of an operation.
+To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI.
 
 The following sample demonstrates how to retrieve and display error messages in the Syncfusion ASP.NET MVC Grid:
 
@@ -145,33 +145,34 @@ The following sample demonstrates how to retrieve and display error messages in 
 		.TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 	col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
 }).EditSettings(edit => edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true)).Toolbar(new List<string>
-{ "Add", "Edit", "Delete", "Update", "Cancel" }).Height(320).ActionFailure("onActionFailure").ActionComplete("onActionComplete").AllowPaging(true).Render()
+{ "Add", "Edit", "Delete", "Update", "Cancel" }).Height(320).ActionFailure("actionFailure").AllowPaging(true).Render()
 
 <script>
-	function onActionFailure(args) {
-		let errorDiv = document.getElementById("errorMessage");
-
-		if (args.error && args.error[0] && args.error[0].error) {
-			let response = args.error[0].error;
-
-			response.text().then(errorMessage => {
-				// Extract meaningful error message.
-				let match = errorMessage.match(/<h3>HTTP Error 400.*? - (.*?)<\/h3>/);
-				if (match && match[1]) {
-					errorDiv.innerText = match[1]; // Display only the relevant error message.
-				} else {
-					errorDiv.innerText = "An unexpected error occurred.";
-				}
-			}).catch(() => {
+function actionFailure(args) {
+	let errorDiv = document.getElementById("errorMessage");
+	if (args.error && args.error[0] && args.error[0].error) {
+		let response = args.error[0].error;
+		response.text().then(errorMessage => {
+			// Extract meaningful error message.
+			let match = errorMessage.match(/<h3>HTTP Error 400.*? - (.*?)<\/h3>/);
+			if (match && match[1]) {
+				errorDiv.innerText = match[1]; // Display only the relevant error message.
+			} else {
 				errorDiv.innerText = "An unexpected error occurred.";
-			});
-		} else {
+			}
+		}).catch(() => {
 			errorDiv.innerText = "An unexpected error occurred.";
-		}
+		});
+	} else {
+		errorDiv.innerText = "An unexpected error occurred.";
 	}
+}
 </script>
+
 {% endhighlight %}
+
 {% highlight c# tabtitle="GridController.cs" %}
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -195,13 +196,16 @@ namespace UrlAdaptor.Controllers
         { 
             // Retrieve data source and convert to queryable.
             IEnumerable<OrdersDetails> DataSource = order;
-            DataOperations queryableOperation = new DataOperations(); // Initialize DataOperations instance.
+
+            // Initialize DataOperations instance.
+            DataOperations queryableOperation = new DataOperations();
 
             // Handling searching operation.
             if (dataManager.Search != null && dataManager.Search.Count > 0)
             {
                 DataSource = queryableOperation.PerformSearching(DataSource, dataManager.Search);
             }
+
             // Handling filtering operation.
             if (dataManager.Where != null && dataManager.Where.Count > 0)
             {
@@ -213,11 +217,13 @@ namespace UrlAdaptor.Controllers
                     }
                 }
             }
+
             // Handling sorting operation.
             if (dataManager.Sorted != null && dataManager.Sorted.Count > 0)
             {
                 DataSource = queryableOperation.PerformSorting(DataSource, dataManager.Sorted);
             }
+
             // Get the total count of records.
             int totalRecordsCount = DataSource.Count();
 
@@ -230,6 +236,7 @@ namespace UrlAdaptor.Controllers
             {
                 DataSource = queryableOperation.PerformTake(DataSource, dataManager.Take);
             }
+
             // Return result and total record count.
             return dataManager.RequiresCounts ? Json(new { result = DataSource, count = totalRecordsCount }) : Json(DataSource);
         }
@@ -240,22 +247,23 @@ namespace UrlAdaptor.Controllers
         /// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
         /// <returns>Returns void.</returns>
         [HttpPost]
-        public ActionResult Insert(OrdersDetails newRecord)
+        [Route("Grid/Insert")]
+        public ActionResult Insert(CRUDModel<OrdersDetails> newRecord)
         {
-            if (newRecord == null || newRecord.OrderID == 0)
+            if (newRecord != null)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Invalid data received.");
+                var existingOrder = order.FirstOrDefault(or => or.OrderID == newRecord.value.OrderID);
+                if (existingOrder == null)
+                {
+                    order.Insert(0, newRecord.value);
+                    return Json(new { success = true, message = "Order added successfully.", data = newRecord });
+                }
+                else
+                {
+                    return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Duplicate values cannot be inserted.");
+                }
             }
-            var existingOrder = order.FirstOrDefault(or => or.OrderID == newRecord.OrderID);
-            if (existingOrder == null)
-            {
-                order.Insert(0, newRecord);
-                return Json(new { success = true, message = "Order added successfully.", data = newRecord });
-            }
-            else
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Duplicate values cannot be inserted.");
-            }
+            return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Invalid data received.");
         }
 
         /// <summary>
@@ -264,43 +272,45 @@ namespace UrlAdaptor.Controllers
         /// <param name="updateRecord">It contains the updated record detail which is need to be updated.</param>
         /// <returns>Returns void.</returns>
         [HttpPost]
-        public ActionResult Update(OrdersDetails updateRecord)
+        [Route("Grid/Update")]
+        public ActionResult Update(CRUDModel<OrdersDetails> updateRecord)
         {
-            if (updateRecord == null)
+            if (updateRecord.value == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "Invalid data received.");
             }
-            // Corrected condition to validate OrderID range
-            if (updateRecord.OrderID > 10010 && updateRecord.OrderID < 10030)
+
+            // Corrected condition to validate OrderID range.
+            if (updateRecord.value.OrderID < 10010 || updateRecord.value.OrderID > 10030)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "OrderID must be between 10010 and 10030 to update.");
             }
-            var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updateRecord.OrderID);
+            var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updateRecord.value.OrderID);
             if (data == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.NotFound, "Order not found.");
             }
-            // Update the existing record
-            data.CustomerID = updateRecord.CustomerID;
-            data.Freight = updateRecord.Freight;
-            data.ShipCity = updateRecord.ShipCity;
-            data.ShipCountry = updateRecord.ShipCountry;
+
+            // Update the existing record.
+            data.CustomerID = updateRecord.value.CustomerID;
+            data.Freight = updateRecord.value.Freight;
+            data.ShipCity = updateRecord.value.ShipCity;
+            data.ShipCountry = updateRecord.value.ShipCountry;
             return Json(new { success = true, message = "Order updated successfully.", data = updateRecord });
         }
-
         /// <summary>
         /// Remove a specific data item from the data collection.
         /// </summary>
         /// <param name="value">It contains the specific record detail which is need to be removed.</param>
-        /// <return>Returns void</return>
+        /// <return>Returns void.</return>
         [HttpPost]
+        [Route("Grid/Remove")]
         public ActionResult Remove(CRUDModel<OrdersDetails> value)
         {
             int orderId = int.Parse(value.key.ToString());
-            if (orderId < 10031 && orderId > 10045)
+            if (orderId < 10031 || orderId > 10045)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest, "OrderID must be between 10031 and 10045 to delete.");
-                
             }
             var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
             OrdersDetails.GetAllRecords().Remove(data);
@@ -319,7 +329,8 @@ namespace UrlAdaptor.Controllers
         public IDictionary<string, object> @params { get; set; }
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-![Show custom error message](../../images/editing/custom-message.png)
+![Show custom error message](../images/editing/custom-message.png)

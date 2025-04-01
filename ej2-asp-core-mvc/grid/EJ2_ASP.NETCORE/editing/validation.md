@@ -124,7 +124,7 @@ Here's an example that demonstrates how to change the position of the validation
 
 While performing CRUD actions in the Syncfusion ASP.NET Core Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
 
-To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI. Additionally, you can use the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete) event to remove the error message upon the successful completion of an operation.
+To achieve this, you can use the [ActionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionFailure) event, which is triggered when an action (such as update, delete, or insert) fails. This event allows you to retrieve the error message from the server response and display it in the UI.
 
 The following sample demonstrates how to retrieve and display error messages in the Syncfusion ASP.NET Core Grid:
 
@@ -134,8 +134,8 @@ The following sample demonstrates how to retrieve and display error messages in 
 @model IndexModel
 
 <div><p style="color: red; text-align: center" id="errorMessage"></p></div>
-<ejs-grid id="Grid" allowFiltering="true" actionFailure="actionFailure" actionComplete="onActionComplete" allowSorting="true" allowPaging="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel","Search" })">
-   @*  Replace xxxx with your actual port number *@
+<ejs-grid id="Grid" allowFiltering="true" actionFailure="actionFailure" allowSorting="true" allowPaging="true" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel","Search" })">
+   //Replace xxxx with your actual port number
     <e-data-manager url='https://localhost:xxxx/api/Grid' insertUrl='https://localhost:xxxx/api/Grid/Insert' updateUrl='https://localhost:xxxx/api/Grid/Update' removeUrl='https://localhost:xxxx/api/Grid/Remove' adaptor="UrlAdaptor">
     </e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -148,26 +148,23 @@ The following sample demonstrates how to retrieve and display error messages in 
 </ejs-grid>
 
 <script>
-    let errorMessage = document.getElementById("errorMessage");
-        function actionFailure(args) {
-            if (args.error && Array.isArray(args.error) && args.error.length > 0 && args.error[0].error){
-                args.error[0].error.json().then(function (data) {
-                    errorMessage.innerHTML = data.message || "An unknown error occurred.";
-                }).catch(function () {
-                    errorMessage.innerHTML = "Error occurred, but message could not be retrieved.";
-                });
-            }
-            else{
-                errorMessage.innerHTML = "An unexpected error occurred.";
-            }
-        }
-
-        function onActionComplete() {
-            let errorMessage = document.getElementById("errorMessage");
-            errorMessage.innerHTML = ""; // Clear the error message text.
-        }
+let errorMessage = document.getElementById("errorMessage");
+function actionFailure(args) {
+    if (args.error && Array.isArray(args.error) && args.error.length > 0 && args.error[0].error){
+        args.error[0].error.json().then(function (data) {
+            errorMessage.innerHTML = data.message || "An unknown error occurred.";
+        }).catch(function () {
+            errorMessage.innerHTML = "Error occurred, but message could not be retrieved.";
+        });
+    }
+    else{
+        errorMessage.innerHTML = "An unexpected error occurred.";
+    }
+}
 </script>
+
 {% endhighlight %}
+
 {% highlight cs tabtitle="GridController.cs" %}
 
 using Microsoft.AspNetCore.Http;
@@ -186,8 +183,9 @@ namespace UrlAdaptor.Controllers
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
-
-            QueryableOperation queryableOperation = new QueryableOperation(); // Initialize DataOperations. instance.
+            
+            // Initialize DataOperations instance.
+            QueryableOperation queryableOperation = new QueryableOperation();
 
             // Handling searching operation.
             if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
@@ -335,7 +333,8 @@ namespace UrlAdaptor.Controllers
         }
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
-![Show custom error message](../../images/editing/custom-message.png)
+![Show custom error message](../images/editing/custom-message.png)
