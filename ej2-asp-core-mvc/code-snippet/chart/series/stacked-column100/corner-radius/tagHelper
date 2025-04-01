@@ -1,0 +1,28 @@
+<ejs-chart id="container" title="Gross Domestic Product Growth" pointRender="pointRender">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" interval="1" title="Years" labelFormat="y">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="GDP (%) Per Annum" labelFormat="{value}%" rangePadding="@Syncfusion.EJ2.Charts.ChartRangePadding.None">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="UK" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Germany" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="France" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Italy" xName="X" yName="Y3" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100">
+            <e-series-cornerradius topLeft="10" topRight="10"></e-series-cornerradius>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.series.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        } 
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>
