@@ -820,7 +820,7 @@ This section describes step by step process how to retrieve data from a Microsof
   * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
 
 {% tabs %}
-{% highlight cshtml tabtitle="app.component.ts" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="348px">
   <e-grid-columns>
@@ -972,7 +972,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 }
 
 {% endhighlight %}
-
 
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
@@ -1255,8 +1254,6 @@ In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.c
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel"})">
-  <e-data-manager url="https://localhost:xxxx/api/Grid" insertUrl='https://localhost:xxxx/api/Grid/Insert'
-    updateUrl='https://localhost:xxxx/api/Grid/Update' removeUrl='https://localhost:xxxx/api/Grid/Remove' adaptor="UrlAdaptor"></e-data-manager>
   <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-grid-column>
@@ -1289,7 +1286,7 @@ To execute the insert operation, you will need to override the `insert` method o
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Add", "Cancel" })">
+<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Add", "Update", "Cancel" })">
   <e-grid-editSettings allowAdding="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isIdentity="true" isPrimaryKey="true"></e-grid-column>
@@ -1332,6 +1329,7 @@ To execute the insert operation, you will need to override the `insert` method o
     }
   });
 </script>
+
 {% endhighlight %}
 
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1381,7 +1379,7 @@ To execute the update operation, override the `update` method of the `CustomAdap
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Edit", "Cancel" })">
+<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Edit","Update", "Cancel" })">
   <e-grid-editSettings allowEditing="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isIdentity="true" isPrimaryKey="true"></e-grid-column>
@@ -1474,7 +1472,7 @@ To perform the delete operation, you need to override the `remove` method of the
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Deletes", "Cancel" })">
+<ejs-grid id="Grid" height="348px" toolbar="@(new List<string>() { "Delete", "Cancel" })">
   <e-grid-editSettings allowDeleting="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isIdentity="true" isPrimaryKey="true"></e-grid-column>
