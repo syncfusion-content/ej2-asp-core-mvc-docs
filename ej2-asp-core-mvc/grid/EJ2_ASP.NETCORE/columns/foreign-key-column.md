@@ -162,7 +162,7 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started-core) component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started-core) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field]() property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started-core) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
 **Step 1:** Open Visual Studio and create an ASP.NET Core project named **UrlAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
@@ -176,7 +176,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 @{
     ViewData["Title"] = "Home page";
 }
-// Replace **** with your actual port number
+// Replace **** with your actual port number.
 <ejs-grid id="grid" height="348px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
     <e-data-manager url="https://localhost:****/api/Grid" adaptor="UrlAdaptor" insertUrl="https://localhost:****/api/Grid/Insert" updateUrl="https://localhost:****/api/Grid/Update" removeUrl="https://localhost:****/api/Grid/Remove"></e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
@@ -191,51 +191,51 @@ This example demonstrates how to use an edit template in a foreign key column wi
 </ejs-grid>
 
 <script>
-    let autoComplete;
-    let employeeData = new ej.data.DataManager({
-        url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number
-        adaptor: new ej.data.UrlAdaptor(),
-        crossDomain: true,
-    });
+let autoComplete;
+let employeeData = new ej.data.DataManager({
+    url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number.
+    adaptor: new ej.data.UrlAdaptor(),
+    crossDomain: true,
+});
 
-    function create() {
-        return ej.base.createElement('input');
-    }
+function create() {
+    return ej.base.createElement('input');
+}
 
-    function destroy() {
-        if (autoComplete) autoComplete.destroy();
-    }
+function destroy() {
+    if (autoComplete) autoComplete.destroy();
+}
 
-    function read() {
-        return autoComplete ? autoComplete.value : '';
-    }
+function read() {
+    return autoComplete ? autoComplete.value : '';
+}
 
-    function write(args) {
-        let selectedValue = args.rowData ? args.rowData.employeeID : '';
-        employeeData.executeQuery(new ej.data.Query()).then((data) => {
-            let employees = data.result;
-            autoComplete = new ej.dropdowns.AutoComplete({
-                dataSource: employees,
-                fields: { value: "employeeID", text: "firstName" },
-                value: selectedValue,
-                placeholder: "Select Employee",
-                allowFiltering: true,
-                filtering: function (e) {
-                    let query = new ej.data.Query();
-                    query = e.text ? query.where("firstName", "startswith", e.text, true) : query;
-                    e.updateData(employees, query);
-                },
-                change: function (e) {
-                    if (e.itemData) {
-                        args.rowData.employeeID = e.itemData.employeeID;
-                    }
+function write(args) {
+    let selectedValue = args.rowData ? args.rowData.employeeID : '';
+    employeeData.executeQuery(new ej.data.Query()).then((data) => {
+        let employees = data.result;
+        autoComplete = new ej.dropdowns.AutoComplete({
+            dataSource: employees,
+            fields: { value: "employeeID", text: "firstName" },
+            value: selectedValue,
+            placeholder: "Select Employee",
+            allowFiltering: true,
+            filtering: function (e) {
+                let query = new ej.data.Query();
+                query = e.text ? query.where("firstName", "startswith", e.text, true) : query;
+                e.updateData(employees, query);
+            },
+            change: function (e) {
+                if (e.itemData) {
+                    args.rowData.employeeID = e.itemData.employeeID;
                 }
-            });
-            autoComplete.appendTo(args.element);
-        }).catch((error) => {
-            console.error("Error fetching employee data:", error);
+            }
         });
-    }
+        autoComplete.appendTo(args.element);
+    }).catch((error) => {
+        console.error("Error fetching employee data:", error);
+    });
+}
 </script>
 
 ```
@@ -304,12 +304,12 @@ namespace EditTemplate.Controllers
                 var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
                 if (data != null)
                 {
-                    // Update the existing record
+                    // Update the existing record.
                     data.OrderID = updatedOrder.OrderID;
                     data.CustomerID = updatedOrder.CustomerID;
                     data.ShipCity = updatedOrder.ShipCity;
                     data.ShipCountry = updatedOrder.ShipCountry;
-                    // Update other properties similarly
+                    // Update other properties similarly.
                 }
             }
 
@@ -323,7 +323,8 @@ namespace EditTemplate.Controllers
         [Route("api/Grid/Remove")]
         public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
         {
-            int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
+            // Get key value from the deletedRecord.
+            int orderId = int.Parse(deletedRecord.key.ToString());
             var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
             if (data != null)
             {
