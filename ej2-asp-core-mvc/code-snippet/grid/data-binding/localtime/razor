@@ -12,14 +12,14 @@
 	@Html.EJS().CheckBox("timezoneCheckbox").Label("Prevent Timezone Conversion").Change("onCheckboxChange").Render()
 </div>
 <div>
-	@*Replace xxxx with your actual port number*@
+	@*Replace xxxx with your actual port number.*@
 	@Html.EJS().Grid("Grid").DataSource(dm => dm.Url("https://localhost:****/api/orders").Adaptor("WebApiAdaptor")).AllowPaging().Columns(col =>
 	{
 	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 	col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
 	col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
 	col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-	col.Field("OrderDate").HeaderText("Order Date").Width("140").Format("y/MM/dd HH:mm").Add();
+	col.Field("OrderDate").HeaderText("Order Date").Width("140").Format("dd/MM/yyyy HH:mm").Add();
 	}).Load("load").Render()
 </div>
 
@@ -49,7 +49,7 @@
 		ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
 		grid.setProperties({
 			dataSource: new ej.data.DataManager({
-				url: "https://localhost:****/api/orders", // Replace **** with your actual port number
+				url: "https://localhost:****/api/orders", // Replace **** with your actual port number.
 				adaptor: new ej.data.WebApiAdaptor(),
 				crossDomain: true
 			})

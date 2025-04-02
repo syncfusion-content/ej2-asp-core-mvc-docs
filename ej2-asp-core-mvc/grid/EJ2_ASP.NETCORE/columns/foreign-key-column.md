@@ -162,7 +162,7 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started-core) component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started-core) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field]() property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started-core) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
 **Step 1:** Open Visual Studio and create an ASP.NET Core project named **UrlAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
@@ -193,7 +193,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 <script>
     let autoComplete;
     let employeeData = new ej.data.DataManager({
-        url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number
+        url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number.
         adaptor: new ej.data.UrlAdaptor(),
         crossDomain: true,
     });
@@ -304,12 +304,12 @@ namespace EditTemplate.Controllers
                 var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
                 if (data != null)
                 {
-                    // Update the existing record
+                    // Update the existing record.
                     data.OrderID = updatedOrder.OrderID;
                     data.CustomerID = updatedOrder.CustomerID;
                     data.ShipCity = updatedOrder.ShipCity;
                     data.ShipCountry = updatedOrder.ShipCountry;
-                    // Update other properties similarly
+                    // Update other properties similarly.
                 }
             }
 
@@ -355,7 +355,7 @@ namespace EditTemplate.Controllers
     public class EmployeesController : ControllerBase
     {
         [HttpPost]
-        public object Post(DataManagerRequest DataManagerRequest)
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<EmployeeDetails> DataSource = EmployeeDetails.GetAllRecords().AsQueryable();

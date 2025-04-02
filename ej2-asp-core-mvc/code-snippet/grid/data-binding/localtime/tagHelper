@@ -17,7 +17,7 @@
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" format="C2" width="150"></e-grid-column>
-        <e-grid-column field="OrderDate" headerText="Order Date" format="y/MM/dd HH:mm" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="dd/MM/yyyy HH:mm" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
 
