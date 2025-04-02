@@ -69,7 +69,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% endhighlight %}
 {% endtabs %}
 
-![sticky header](../../images/scrolling/sticky-header.gif)
+![sticky header](../images/scrolling/sticky-header.gif)
 
 ## Scroll to selected row
 
