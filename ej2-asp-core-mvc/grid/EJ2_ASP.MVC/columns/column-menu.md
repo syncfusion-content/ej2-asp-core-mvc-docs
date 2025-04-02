@@ -46,7 +46,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component 
 
 To prevent the column menu for a particular column, you can set the [ShowColumnMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
 
-The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
+The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `ShowColumnMenu` property to **false**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
