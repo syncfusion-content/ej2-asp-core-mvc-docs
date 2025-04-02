@@ -356,7 +356,7 @@ namespace EditTemplate.Controllers
     public class EmployeesController : ControllerBase
     {
         [HttpPost]
-        public object Post(DataManagerRequest DataManagerRequest)
+        public object Post([FromBody] DataManagerRequest DataManagerRequest)
         {
             // Retrieve data from the data source (e.g., database).
             IQueryable<EmployeeDetails> DataSource = EmployeeDetails.GetAllRecords().AsQueryable();
