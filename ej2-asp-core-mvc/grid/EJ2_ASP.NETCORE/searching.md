@@ -259,7 +259,7 @@ The following example demonstrates how to clear the searched records using an ex
 
 The Syncfusion Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
 
-To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
+To achieve this, the [ActionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)  event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
 
 The following example demonstrates how to retrieve searched records using an external button:
 

@@ -142,7 +142,7 @@ To implement state persistence with observables, the initial query state must be
 
     * Sending the retrieved state to the service to fetch data accordingly.
 
-Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [created](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to send the persisted state to the service at initial render:
+Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to send the persisted state to the service at initial render:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

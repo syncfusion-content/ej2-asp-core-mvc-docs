@@ -226,9 +226,9 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 
 ### Format the child Grid columns before exporting
 
-The Syncfusion Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://help.syncfusion.com/cr/aspnetMVC-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailDataBound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
+The Syncfusion Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [ExportDetailDataBound](https://help.syncfusion.com/cr/aspnetMVC-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailDataBound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
 
-In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property, the date values are formatted as `dd/MM/yyyy` when exported to PDF document.
+In the following example, the `ExportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [Format](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property, the date values are formatted as `dd/MM/yyyy` when exported to PDF document.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
