@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Syncfusion Grid Component
+title: PDF Export Options in ##Platform_Name## Grid Component
 description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
@@ -134,33 +134,6 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% endtabs %}
 
 ![Export Show Hide Records](../images/pdf-export/export-show-hide.png)
-
-## Show or hide columns while exporting with stacked header
-
-The Syncfusion ASP.NET Core Grid allows you to control the visibility of columns during export operations. This feature is particularly useful when customizing the data presented in exported files while using stacked headers.
-
-To implement the show or hide columns feature during PDF export in the Syncfusion ASP.NET Core Grid, follow these steps:
-
-1. Handle the [toolbarClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event of the Syncfusion ASP.NET Core Grid.
-
-2. Update the visibility of the desired columns by setting the [visible](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Visible) property of the column to **true** or **false**.
-
-3. Export the Syncfusion ASP.NET Core Grid to PDF document using `pdfExport` method.
-
-4. Handle the [pdfExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event to restore the column visibility to its original state.
-
-In the following example, the **ShipName** is initially a hidden column in the Syncfusion ASP.NET Core Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/pdf-export/pdfexport-show-hide/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="pdf-export.cs" %}
-{% include code-snippet/grid/pdf-export/pdfexport-show-hide/pdf-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Show or hide columns while exporting with stacked header](../images/pdf-export/exportoption-show-hide-stacked-header.png)
 
 ## Change page orientation
 
@@ -372,7 +345,7 @@ The following example demonstrate how to customize the background color of the *
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the `pdfExport` method. The grid returns the promise of a blob in the [pdfExportComplete](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event.
+The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the `pdfExport` method. The grid returns the promise of a blob in the [pdfExportComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_PdfExportComplete) event.
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
 
