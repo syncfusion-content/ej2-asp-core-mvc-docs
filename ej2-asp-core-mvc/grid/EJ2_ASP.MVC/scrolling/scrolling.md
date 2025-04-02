@@ -88,7 +88,7 @@ The following example that demonstrates how to use the `RowSelected` event to sc
 
 ![scroll to selected row](../images/scrolling/scrolling-select-scroll.gif)
 
-## Hide the empty placehoder of scrollbar
+## Hide the empty placeholder of scrollbar
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides a feature to hide the empty placeholder of the scrollbar, offering a cleaner interface without unnecessary scrollbars. To achieve this, you can utilize the `hideScroll` method. This method allows you to determine whether the scrollbar should be hidden based on the content's overflow.
 
