@@ -17,8 +17,7 @@
 	{
 	col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
 	col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-	col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-	col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
+	col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
 	col.Field("OrderDate").HeaderText("Order Date").Width("140").Format("dd/MM/yyyy HH:mm").Add();
 	}).Load("load").Render()
 </div>
