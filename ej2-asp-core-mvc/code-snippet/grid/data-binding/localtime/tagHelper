@@ -11,7 +11,7 @@
     <ejs-checkbox type="checkbox" id="timezoneCheckbox" label="Prevent Timezone Conversion" onchange="onCheckboxChange"></ejs-checkbox>
 </div>
 <ejs-grid id="Grid" load="load" height="314" allowPaging="true">
-    @* Replace **** with your actual port number *@
+    @* Replace **** with your actual port number. *@
     <e-data-manager url="https://localhost:****/api/Grid" adaptor="WebApiAdaptor"></e-data-manager>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
@@ -22,37 +22,37 @@
 </ejs-grid>
 
 <script>
-    var selectedTimezone = -12;
-    var checkbox;
-    var grid;
+var selectedTimezone = -12;
+var checkbox;
+var grid;
 
-    function load() {
+function load() {
+    checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
+    grid = document.getElementById("Grid")?.ej2_instances?.[0];
+    ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
+}
+
+function onTimezoneChange(event) {
+    selectedTimezone = Number(event.value);
+    updateTimezoneOffset();
+}
+
+function onCheckboxChange() {
+    if (!checkbox) {
         checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
-        grid = document.getElementById("Grid")?.ej2_instances?.[0];
-        ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
     }
+    updateTimezoneOffset();
+}
 
-    function onTimezoneChange(event) {
-        selectedTimezone = Number(event.value);
-        updateTimezoneOffset();
-    }
-
-    function onCheckboxChange() {
-        if (!checkbox) {
-            checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
-        }
-        updateTimezoneOffset();
-    }
-
-    function updateTimezoneOffset() {
-        ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
-        grid.setProperties({
-            dataSource: new ej.data.DataManager({
-                url: "https://localhost:****/api/Grid", // Replace **** with your actual port number.
-                adaptor: new ej.data.WebApiAdaptor(),
-                crossDomain: true
-            })
-        });
-        grid.refresh();
-    }
+function updateTimezoneOffset() {
+    ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
+    grid.setProperties({
+        dataSource: new ej.data.DataManager({
+            url: "https://localhost:****/api/Grid", // Replace **** with your actual port number.
+            adaptor: new ej.data.WebApiAdaptor(),
+            crossDomain: true
+        })
+    });
+    grid.refresh();
+}
 </script>
