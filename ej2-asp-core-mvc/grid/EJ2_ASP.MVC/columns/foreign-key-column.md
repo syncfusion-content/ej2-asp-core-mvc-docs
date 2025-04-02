@@ -208,7 +208,7 @@ This example demonstrates how to use an edit template in a foreign key column wi
 <script>
 	let autoComplete;
 	let employeeData = new ej.data.DataManager({
-		url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number
+		url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number.
 		adaptor: new ej.data.UrlAdaptor(),
 		crossDomain: true,
 	});

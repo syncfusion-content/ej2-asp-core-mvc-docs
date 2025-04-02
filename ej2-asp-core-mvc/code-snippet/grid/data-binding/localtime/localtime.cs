@@ -1,6 +1,6 @@
  public IActionResult Index()
  { 
-   // Timezone List for Dropdown
+   // Timezone List for Dropdown.
    List<TimeZoneData> timeZones = new List<TimeZoneData>
    {
       new TimeZoneData { Value = -12, Text = "-12:00 UTC" },
