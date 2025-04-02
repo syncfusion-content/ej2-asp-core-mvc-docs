@@ -182,3 +182,298 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endtabs %}
 
 ![Enable multiple foreign key columns](../images/foreign/foreign-multiple.png)
+
+## Edit template in foreign key column using remote data
+
+The Syncfusion ASP.NET MVC Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) component is used for editing foreign key column. However, you can render a different component by configuring the [Column.Edit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
+
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started) component is rendered as the edit template for the **EmployeeID** foreign key column. The [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [Field](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+
+**Step 1:** Open Visual Studio and create an ASP.NET MVC project named **UrlAdaptor**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
+
+**Step 2 :** Create a simple Syncfusion ASP.NET MVC Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc) documentation link.
+
+**Step 3:** In your ASP.NET MVC file (e.g., **Index.cshtml**), define the Syncfusion ASP.NET MVC Grid with the necessary configurations, including a foreign key column for **EmployeeID**, and implement the required logic to manage its behavior.
+
+```cs
+@*Replace **** with your actual port number.*@
+@Html.EJS().Grid("grid").DataSource(dataManger => { dataManger.Url("https://localhost:****/api/Grid").Adaptor("UrlAdaptor"); }).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("EmployeeID").ForeignKeyField("EmployeeID").ForeignKeyValue("FirstName").DataSource(dataManger => { dataManger.Url("https://localhost:****/api/Employees/").Adaptor("UrlAdaptor"); }).HeaderText("Employee Name").Width("140").Edit(new { create = "create", read = "read", destroy = "destroy", write = "write" }).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
+<script>
+let autoComplete;
+let employeeData = new ej.data.DataManager({
+	url: 'https://localhost:****/api/Employees', //Replace **** with your actual port number.
+	adaptor: new ej.data.UrlAdaptor(),
+	crossDomain: true,
+});
+
+function create() {
+	return ej.base.createElement('input');
+}
+
+function destroy() {
+	if (autoComplete) autoComplete.destroy();
+}
+
+function read() {
+	return autoComplete ? autoComplete.value : '';
+}
+
+function write(args) {
+	let selectedValue = args.rowData ? args.rowData.employeeID : '';
+	employeeData.executeQuery(new ej.data.Query()).then((data) => {
+		let employees = data.result;
+		autoComplete = new ej.dropdowns.AutoComplete({
+			dataSource: employees,
+			fields: { value: "EmployeeID", text: "FirstName" },
+			value: selectedValue,
+			placeholder: "Select Employee",
+			allowFiltering: true,
+			filtering: function (e) {
+				let query = new ej.data.Query();
+				query = e.text ? query.where("FirstName", "startswith", e.text, true) : query;
+				e.updateData(employees, query);
+			},
+			change: function (e) {
+				if (e.itemData) {
+					args.rowData.employeeID = e.itemData.employeeID;
+				}
+			}
+		});
+		autoComplete.appendTo(args.element);
+	}).catch((error) => {
+		console.error("Error fetching employee data:", error);
+	});
+}
+</script>
+```
+
+**Step 4:** On the server side, create a controller named **GridController.cs** and **EmployeesController.cs** under the **Controllers** folder to handle API requests:
+
+```cs
+namespace EditTemplate.Controllers
+{
+    [ApiController]
+    public class GridController : Controller
+    {
+        [HttpPost]
+        [Route("api/[controller]")]
+        public object Post()
+        {
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Return data based on the request.
+            return new { result = DataSource, count = totalRecordsCount };
+        }
+
+        [HttpGet]
+        [Route("api/[controller]")]
+        public List<OrdersDetails> GetOrderData()
+        {
+            var data = OrdersDetails.GetAllRecords().ToList();
+            return data;
+        }
+
+        /// <summary>
+        /// Inserts a new data item into the data collection.
+        /// </summary>
+        /// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
+        /// <returns>Returns void.</returns>
+        [HttpPost]
+        [Route("api/Grid/Insert")]
+        public void Insert(CRUDModel<OrdersDetails> newRecord)
+        {
+            if (newRecord.value != null)
+            {
+                OrdersDetails.GetAllRecords().Insert(0, newRecord.value);
+            }
+        }
+
+        /// <summary>
+        /// Update a existing data item from the data collection.
+        /// </summary>
+        /// <param name="Order">It contains the updated record detail which is need to be updated.</param>
+        /// <returns>Returns void.</returns>
+        [HttpPost]
+        [Route("api/Grid/Update")]
+        public void Update(CRUDModel<OrdersDetails> Order)
+        {
+            var updatedOrder = Order.value;
+            if (updatedOrder != null)
+            {
+                var data = OrdersDetails.GetAllRecords().FirstOrDefault(or => or.OrderID == updatedOrder.OrderID);
+                if (data != null)
+                {
+                    // Update the existing record.
+                    data.OrderID = updatedOrder.OrderID;
+                    data.CustomerID = updatedOrder.CustomerID;
+                    data.EmployeeID = updatedOrder.EmployeeID;
+                    data.ShipCity = updatedOrder.ShipCity;
+                    data.ShipCountry = updatedOrder.ShipCountry;
+                    // Update other properties similarly.
+                }
+            }
+
+        }
+        /// <summary>
+        /// Remove a specific data item from the data collection.
+        /// </summary>
+        /// <param name="value">It contains the specific record detail which is need to be removed.</param>
+        /// <return>Returns void.</return>
+        [HttpPost]
+        [Route("api/Grid/Remove")]
+        public void Remove(CRUDModel<OrdersDetails> deletedRecord)
+        {
+            int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
+            var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
+            if (data != null)
+            {
+                // Remove the record from the data collection.
+                OrdersDetails.GetAllRecords().Remove(data);
+            }
+        }
+
+        public class CRUDModel<T> where T : class
+        {
+            public string? action { get; set; }
+            public string? keyColumn { get; set; }
+            public object? key { get; set; }
+            public T? value { get; set; }
+            public List<T>? added { get; set; }
+            public List<T>? changed { get; set; }
+            public List<T>? deleted { get; set; }
+            public IDictionary<string, object>? @params { get; set; }
+        }
+    }
+}
+```
+
+```cs
+namespace EditTemplate.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EmployeesController : ControllerBase
+    {
+        [HttpPost]
+        public object Post(DataManagerRequest DataManagerRequest)
+        {
+            // Retrieve data from the data source (e.g., database).
+            IQueryable<EmployeeDetails> DataSource = EmployeeDetails.GetAllRecords().AsQueryable();
+            
+            // Get the total count of records.
+            int totalRecordsCount = DataSource.Count();
+
+            // Return result and total record count.
+            return DataManagerRequest.RequiresCounts ? Ok(new { result = DataSource, totalRecordsCount }) : Ok(DataSource);
+        }
+
+        [HttpGet]
+        public List<EmployeeDetails> GetOrderData()
+        {
+            var data = EmployeeDetails.GetAllRecords().ToList();
+            return data;
+        }
+    }
+}
+
+```
+**Step 5:** Create a model class named **OrdersDetails.cs** under the **Models** folder in the server-side project to represent the order data and employee data:
+
+```cs
+namespace EditTemplate.Models
+{
+  public class OrdersDetails
+  {
+    private static List<OrdersDetails> order = new List<OrdersDetails>();
+    public OrdersDetails() { }
+    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified,
+      DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry,
+      DateTime ShippedDate, string ShipAddress)
+    {
+      this.OrderID = OrderID;
+      this.CustomerID = CustomerId;
+      this.EmployeeID = EmployeeId;
+      this.Freight = Freight;
+      this.ShipCity = ShipCity;
+      this.Verified = Verified;
+      this.OrderDate = OrderDate;
+      this.ShipName = ShipName;
+      this.ShipCountry = ShipCountry;
+      this.ShippedDate = ShippedDate;
+      this.ShipAddress = ShipAddress;
+    }
+    public static List<OrdersDetails> GetAllRecords()
+    {
+      if (order.Count == 0)
+      {
+        int code = 10000;
+        List<Employee> employees = Employee.GetAllEmployees();
+        int employeeCount = employees.Count;
+        for (int i = 1; i < 10; i++)
+        {
+          order.Add(new OrdersDetails(code++, "ALFKI", employees[(code + 0) % employeeCount].EmployeeID, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
+          order.Add(new OrdersDetails(code++, "ANATR", employees[(code + 1) % employeeCount].EmployeeID, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
+          order.Add(new OrdersDetails(code++, "ANTON", employees[(code + 2) % employeeCount].EmployeeID, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
+          order.Add(new OrdersDetails(code++, "BLONP", employees[(code + 3) % employeeCount].EmployeeID, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
+          order.Add(new OrdersDetails(code++, "BOLID", employees[(code + 4) % employeeCount].EmployeeID, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
+        }
+      }
+      return order;
+    }
+    public int? OrderID { get; set; }
+    public string? CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public double? Freight { get; set; }
+    public string? ShipCity { get; set; }
+    public bool? Verified { get; set; }
+    public DateTime OrderDate { get; set; }
+    public string? ShipName { get; set; }
+    public string? ShipCountry { get; set; }
+    public DateTime ShippedDate { get; set; }
+    public string? ShipAddress { get; set; }
+  }
+  public class Employee
+  {
+    public int EmployeeID { get; set; }
+    public string? FirstName { get; set; }
+    public string? LastName { get; set; }
+    public string? Department { get; set; }
+    public string? Email { get; set; }
+    public string? PhoneNumber { get; set; }
+    public static List<Employee> GetAllEmployees()
+    {
+      return new List<Employee>
+      {
+        new Employee { EmployeeID = 1, FirstName = "John", LastName = "Doe", Department = "Sales", Email = "john.doe@example.com", PhoneNumber = "123-456-7890" },
+        new Employee { EmployeeID = 2, FirstName = "David", LastName = "Smith", Department = "Marketing", Email = "david.smith@example.com", PhoneNumber = "987-654-3210" },
+        new Employee { EmployeeID = 3, FirstName = "Maria", LastName = "Gonzalez", Department = "HR", Email = "maria.gonzalez@example.com", PhoneNumber = "456-789-0123" },
+        new Employee { EmployeeID = 4, FirstName = "Sophia", LastName = "Brown", Department = "Finance", Email = "sophia.brown@example.com", PhoneNumber = "321-654-0987" },
+        new Employee { EmployeeID = 5, FirstName = "James", LastName = "Wilson", Department = "IT", Email = "james.wilson@example.com", PhoneNumber = "654-321-7654" },
+        new Employee { EmployeeID = 6, FirstName = "Emma", LastName = "Taylor", Department = "Operations", Email = "emma.taylor@example.com", PhoneNumber = "213-546-8790" },
+        new Employee { EmployeeID = 7, FirstName = "Daniel", LastName = "Anderson", Department = "Logistics", Email = "daniel.anderson@example.com", PhoneNumber = "789-654-3210" },
+        new Employee { EmployeeID = 8, FirstName = "Olivia", LastName = "Thomas", Department = "Procurement", Email = "olivia.thomas@example.com", PhoneNumber = "567-890-1234" },
+        new Employee { EmployeeID = 9, FirstName = "Michael", LastName = "Harris", Department = "R&D", Email = "michael.harris@example.com", PhoneNumber = "890-123-4567" },
+        new Employee { EmployeeID = 10, FirstName = "Lucas", LastName = "Martin", Department = "Customer Service", Email = "lucas.martin@example.com", PhoneNumber = "345-678-9012" },
+        new Employee { EmployeeID = 11, FirstName = "Elijah", LastName = "Clark", Department = "Support", Email = "elijah.clark@example.com", PhoneNumber = "741-852-9630" },
+        new Employee { EmployeeID = 12, FirstName = "Isabella", LastName = "Hall", Department = "Legal", Email = "isabella.hall@example.com", PhoneNumber = "963-852-7410" },
+        new Employee { EmployeeID = 13, FirstName = "Ethan", LastName = "Young", Department = "Administration", Email = "ethan.young@example.com", PhoneNumber = "258-963-1470" },
+        new Employee { EmployeeID = 14, FirstName = "Charlotte", LastName = "Scott", Department = "Design", Email = "charlotte.scott@example.com", PhoneNumber = "147-258-3690" },
+        new Employee { EmployeeID = 15, FirstName = "Alexander", LastName = "Allen", Department = "Engineering", Email = "alexander.allen@example.com", PhoneNumber = "369-147-2580" }
+      };
+    }
+  }
+}
+```
+
+![Edit template in foreign key column using remote data](../images/foreign/edit-template.gif)
