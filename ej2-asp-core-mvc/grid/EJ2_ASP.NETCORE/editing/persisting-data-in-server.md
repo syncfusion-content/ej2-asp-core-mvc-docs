@@ -10,7 +10,7 @@ documentation: ug
 
 # Persisting data in server in ASP.NET Core Grid
 
-The Syncfusion ASP.NET Core Grid allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is essential for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
+The Syncfusion ASP.NET Core Grid allows data edited within the Grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, and Delete) operations within the Grid are handled by the `DataManager`, which can bind server-side data and send updates to the server. This capability is essential for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 
 > For your information, the `ODataAdaptor` persists data in the server as per OData protocol.
 
@@ -20,7 +20,7 @@ Syncfusion provides multiple adaptors to handle different server protocols and A
 
 The `UrlAdaptor` is the base adaptor that facilitates communication between remote data services and the UI component. It allows seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful when a custom API service has unique logic for handling data and CRUD operations. 
 
-For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor).
+For further details on configuration, refer to the [URL adaptor Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor).
 
 **Using OData v4 adaptor**
 
@@ -36,7 +36,7 @@ For further details on configuration, refer to the [Web API Adaptor documentatio
 
 **Using Remote Save adaptor**
 
-The `RemoteSaveAdaptor` in the Syncfusion ASP.NET Core Grid allows you to perform grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
+The `RemoteSaveAdaptor` in the Syncfusion ASP.NET Core Grid allows you to perform Grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
 For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/remote-save-adaptor).
 

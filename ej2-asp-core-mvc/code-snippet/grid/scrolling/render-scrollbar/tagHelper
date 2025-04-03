@@ -1,7 +1,7 @@
 <div id="scroller" style="width: 100%; overflow-x: auto; height: 18px;"></div>
 <ejs-grid id="Grid" dataSource="@ViewBag.dataSource" height="315" width="500" created="created">
     <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="90" validationRules="@(new { required = true })"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
         <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="80"></e-grid-column>
         <e-grid-column field="OrderDate" headerText="Order Date" width="140" format="yMd" textAlign="Right"></e-grid-column>

@@ -29,7 +29,7 @@ To enhance your application's efficiency, especially when dealing with substanti
 
 ### Optimizing performance with column virtualization in large no of columns
 
-[Column virtualization](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/scrolling/virtual-scrolling#column-virtualization) feature in the ASP.NET MVC Data Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
+[Column virtualization](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/scrolling/virtual-scrolling#column-virtualization) feature in the ASP.NET MVC Data Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with Grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
 
 It is possible to enable both row and column virtualization. This feature allows for efficient handling of large datasets by dynamically loading only the visible rows and columns, optimizing performance and enhancing the overall responsiveness of the Grid. For more information on implementing column virtualization , you can refer to the [documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/scrolling/virtual-scrolling#column-virtualization) section dedicated to this feature.
 
@@ -55,7 +55,7 @@ Efficiently update cell values without the need for frequent server calls, espec
 
 ## How to optimize server-side data operations with adaptors
 
-The ASP.NET MVC Grid provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By leveraging these adaptors along with the `DataManager` component, you can seamlessly bind remote data sources to the Grid and execute actions. During data operations like filtering, sorting, and paging, the corresponding action queries are generated as per the adaptor's requirements. It is crucial to handle these actions on the application end and return the processed data back to the Grid. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Grid is as follows
+The ASP.NET MVC Grid provides support for various adaptors (OData, ODataV4, WebAPI, URL, etc.) to facilitate server-side data operations and CRUD functionalities. By leveraging these adaptors along with the `DataManager`, you can seamlessly bind remote data sources to the Grid and execute actions. During data operations like filtering, sorting, and paging, the corresponding action queries are generated as per the adaptor's requirements. It is crucial to handle these actions on the application end and return the processed data back to the Grid. Refer to the documentation for comprehensive details. It's worth noting that for efficient data processing, the suggested order for returning processed data to the Grid is as follows
 
 * Filtering
 * Sorting
