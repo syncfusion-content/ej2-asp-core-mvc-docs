@@ -630,7 +630,7 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// Inserts a new data item into the data collection.
 /// </summary>
 /// <param name="value">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns void.</returns>
+/// <returns>Returns a JSON result indicating success or failure.</returns>
 public JsonResult Insert(Orders value)
 {
     if (value == null)
@@ -1501,6 +1501,30 @@ To execute the insert operation, you will need to override the `insert` method o
 {% endhighlight %}
 
 {% highlight cs tabtitle="GridController.cs" %}
+
+/// <summary>
+/// Inserts a new data item into the data collection.
+/// </summary>
+/// <param name="value">It contains the new record detail which is need to be inserted.</param>
+/// <returns>Returns a JSON result indicating success or failure.</returns>
+public JsonResult Insert(Orders value)
+{
+    if (value == null)
+    {
+        return Json(new { success = false, message = "Inserted entity cannot be null." });
+    }
+
+    using (var Context = new OrderDbContext())
+    {
+        // Add the provided order to the orders DbSet.
+        Context.Orders.Add(value);
+
+        // Save changes to the database.
+        Context.SaveChanges();
+    }
+
+    return Json(new { success = true, message = "Insert successful", data = value });
+}
 
 /// <summary>
 /// Entity Framework DbContext for managing Orders table in the database.
