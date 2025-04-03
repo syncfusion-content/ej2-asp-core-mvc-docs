@@ -42,7 +42,7 @@ The default column menu items are displayed in following table.
 
 ## Prevent column menu for particular column
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
 
 To prevent the column menu for a particular column, you can set the [ShowColumnMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
 
