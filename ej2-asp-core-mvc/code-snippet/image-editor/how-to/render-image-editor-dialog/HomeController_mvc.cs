@@ -13,20 +13,14 @@ namespace EJ2MVCSampleBrowser.Controllers.ImageEditor
         public ActionResult ProfilePicture()
         {
             List<DialogDialogButton> buttons = new List<DialogDialogButton>() { };
-            buttons.Add(new DialogDialogButton() { Click = "openBtn", ButtonModel = new ButtonModel() { content = "Open", isPrimary = false, cssClass = "e-custom-img-btn e-img-custom-open" } });
-            buttons.Add(new DialogDialogButton() { Click = "resetBtn", ButtonModel = new ButtonModel() { content = "Reset", isPrimary = false, cssClass = "e-custom-img-btn e-img-custom-reset" } });
-            buttons.Add(new DialogDialogButton() { Click = "rotateBtn", ButtonModel = new ButtonModel() { content = "Rotate", isPrimary = false, cssClass = "e-custom-img-btn e-img-custom-rotate" } });
-            buttons.Add(new DialogDialogButton() { Click = "doneBtn", ButtonModel = new ButtonModel() { content = "Apply", isPrimary = true, cssClass = "e-custom-img-btn e-img-custom-apply" } });
-            ViewBag.ImageButton = buttons;
-            ViewBag.imageTool = new string[] { };
+            buttons.Add(new DialogDialogButton() { Click = "dlgButtonClick", ButtonModel = new DefaultButtonModel() { content = "Close Dialog", isPrimary = true } });
+            ViewBag.DefaultButtons = buttons;
             return View();
         }
     }
-    public class ButtonModel
+    public class DefaultButtonModel
     {
         public string content { get; set; }
         public bool isPrimary { get; set; }
-        public string cssClass { get; set; }
     }
-
 }

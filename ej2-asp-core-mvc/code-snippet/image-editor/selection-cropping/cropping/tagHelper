@@ -5,7 +5,7 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool"></ejs-imageeditor>
 </div>
-<ejs-button id="btnClick" onclick="clickHandler()" cssClass="e-primary" content="Click"></ejs-button>
+<ejs-button id="btnClick" onclick="clickHandler()" cssClass="e-primary" content="CIRCLE CROP"></ejs-button>
 
 <script>
     function created() {

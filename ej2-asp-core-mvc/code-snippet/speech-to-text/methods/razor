@@ -1,0 +1,36 @@
+@using Syncfusion.EJ2.Inputs
+
+<div id='speechtotext-container'>
+    <div class="actions">
+        <button id="startListening" class="e-btn">Start Listening</button>
+        <button id="stopListening" class="e-btn">Stop Listening</button>
+    </div>
+    @Html.EJS().SpeechToText("speech-to-text").Created("onCreated").TranscriptChanged("onTranscriptChanged").Render()
+    @Html.EJS().TextArea("output-textarea").Rows(5).Cols(50).Value("").ResizeMode(Resize.None).Placeholder("Transcribed text will be shown here...").Render()
+</div>
+
+<script>
+    var speechToTextObj;
+    function onCreated() {
+        speechToTextObj = ej.base.getComponent(document.getElementById("speech-to-text"), "speech-to-text");
+    }
+    function onTranscriptChanged(args) {
+        var textareaObj = ej.base.getComponent(document.getElementById("output-textarea"), "textarea");
+        textareaObj.value = args.transcript;
+    }
+    document.getElementById("startListening").addEventListener('click', function () {
+        speechToTextObj.startListening();
+    });
+    document.getElementById("stopListening").addEventListener('click', function () {
+        speechToTextObj.stopListening();
+    });
+</script>
+
+<style>
+    #speechtotext-container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+</style>
