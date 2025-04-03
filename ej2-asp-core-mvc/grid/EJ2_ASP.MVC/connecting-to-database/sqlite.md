@@ -4,6 +4,7 @@ title: Bind SQLite Server Data in Syncfusion ##Platform_Name## Grid
 description: Learn how to consume data from SQLite Server, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
 control: grid
 platform: ej2-asp-core-mvc
+keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
 documentation: ug
 domainurl: ##DomainURL##
 ---
