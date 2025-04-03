@@ -1,0 +1,10 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging='true' allowGrouping='true' allowSorting='true' showColumnMenu='true'  allowFiltering='true' >
+    <e-grid-groupsettings showGroupedColumn="true"></e-grid-groupsettings>
+    <e-grid-filtersettings type="CheckBox"></e-grid-filtersettings>
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' showColumnMenu='false' textAlign='Right' width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format='C' textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

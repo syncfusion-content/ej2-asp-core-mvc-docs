@@ -671,35 +671,6 @@ The following code example demonstrates how to export all records on the client 
 {% endhighlight %}
 {% endtabs %}
 
-## Sending additional parameters to the server
-
-The Syncfusion ASP.NET Core Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
-
-By utilizing the `query` property of the Grid along with the `addParams` method of the **Query** class, you can easily incorporate custom parameters into data requests for every Grid action.
-
-To enable custom parameters in data requests for the Grid, follow these steps:
-
-**1. Bind the Query Object to the Grid**: Assign the initialized query object to the `query` property of the Grid.
-
-**2. Initialize the Query Object:** Create a new instance of the **Query** class and use the `addParams` method to add the custom parameters.
-
-**3. Handle Data State Changes:** If you need to dynamically update the data based on interactions, implement the [dataStateChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event handler to execute the query with the updated state.
-
-**4. Execute Data Request:** In the service, execute the data request by combining the custom parameters with other query parameters such as paging and sorting.
-
-The following example demonstrates how to send additional parameters to the server:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/data-binding/remote-prams/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="remotedata.cs" %}
-{% include code-snippet/grid/data-binding/remote-prams/custombindingcore.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Additional Parameters](../images/databinding/remote-params.png)
-
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
@@ -712,3 +683,58 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 {% include code-snippet/grid/data-binding/offline/offline.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Fetch result from the DataManager query using external button 
+
+By default, Syncfusion ASP.NET Core Grid automatically binds a remote data source using the `DataManager`. However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+
+To achieve this, you can use the `executeQuery` method of `DataManager` with a `Query` object. This method allows you to run a custom query and retrieve results dynamically.
+
+The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+@page
+@model IndexModel
+<div id='container'>
+  <ejs-button id="fetchButton" cssClass="e-primary" content="Execute Query"></ejs-button>
+  <p id="statusMessage" style="text-align:center;color:blue"></p>
+  <ejs-grid id="Grid">
+    <e-grid-columns>
+      <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right"></e-grid-column>
+      <e-grid-column field="CustomerID" headerText="Customer ID" width="160"></e-grid-column>
+      <e-grid-column field="EmployeeID" headerText="Employee ID" width="120" textAlign="Right"></e-grid-column>
+      <e-grid-column field="Freight" headerText="Freight" width="150" format="C2" textAlign="Right"></e-grid-column>
+      <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+  </ejs-grid>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let SERVICE_URL = 'https://ej2services.syncfusion.com/production/web-services/api/Orders';
+    let statusMessage = document.getElementById("statusMessage");
+
+    fetchButton.addEventListener("click", function () {
+      statusMessage.textContent = "Fetching data...";
+      var grid = document.getElementById("Grid")?.ej2_instances?.[0];
+      let getData = new ej.data.DataManager({
+        url: SERVICE_URL,
+        adaptor: new ej.data.WebApiAdaptor()
+      });
+      getData.executeQuery(new ej.data.Query()).then(function (e) {
+        grid.dataSource = e.result;
+        statusMessage.textContent = "Data fetched successfully! Total Records: " + e.result.length;
+        statusMessage.style.color = "green";
+      }).catch(function () {
+        statusMessage.textContent = "Error fetching data!";
+        statusMessage.style.color = "red";
+      });
+    });
+  });
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Fetch result from DataManager Query](../images/databinding/fetch-data.png)
