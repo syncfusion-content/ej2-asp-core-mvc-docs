@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Document Editor Component
+title: Clipboard in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about clipboard in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clipboard
@@ -47,7 +47,9 @@ Document editor exposes API to enable local paste within the control. On enablin
 {% include code-snippet/document-editor/clipboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clipboard.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/clipboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -56,7 +58,9 @@ Document editor exposes API to enable local paste within the control. On enablin
 {% include code-snippet/document-editor/clipboard/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Clipboard.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/clipboard/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -67,7 +71,7 @@ By default, **enableLocalPaste** is false. When local paste is enabled for a doc
 documentEditor.editor.pasteLocal();
 ```
 
-### EnableLocalPaste behaviour
+### EnableLocalPaste behavior
 
 |**EnableLocalPaste** |**Paste behavior details**|
 |--------------------------|----------------------|
