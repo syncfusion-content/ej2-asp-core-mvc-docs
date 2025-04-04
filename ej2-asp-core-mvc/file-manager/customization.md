@@ -89,7 +89,7 @@ Output be like the below.
 
 ## Navigation pane customization
 
-The navigation pane settings like, minimum and maximum width and visibility can be customized using `navigationPaneSettings` property.
+The navigation pane settings like, minimum and maximum width, visibility and sort order can be customized using `navigationPaneSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
