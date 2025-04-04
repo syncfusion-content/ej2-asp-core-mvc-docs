@@ -1,0 +1,25 @@
+@Html.EJS().Chart("container").Series(series =>
+    {
+       series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Waterfall).
+            XName("X").
+            YName("Y").
+            IntermediateSumIndexes((int[])ViewData["intermediateSumIndexes"]).
+            SumIndexes((int[])ViewData["sumIndexes"]).
+            CornerRadius(cr => cr.TopLeft(10).TopRight(10)).
+            DataSource(ViewBag.dataSource).
+            Add();
+    }
+    ).PrimaryXAxis(py =>
+        py.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+    ).PointRender("pointRender").Render()
+
+<script>
+    function pointRender(args) {
+        if (args.point.index % 2 !== 0) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

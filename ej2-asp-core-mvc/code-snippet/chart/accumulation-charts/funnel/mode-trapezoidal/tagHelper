@@ -1,0 +1,7 @@
+<ejs-accumulationchart id="container">
+    <e-accumulation-series-collection>
+        <e-accumulation-series dataSource="ViewBag.dataSource" xName="XValue" yName="YValue" width="60%" height="80%"
+                type="@Syncfusion.EJ2.Charts.AccumulationType.Funnel" funnelMode="@Syncfusion.EJ2.Charts.FunnelModes.Trapezoidal">
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+</ejs-accumulationchart>
