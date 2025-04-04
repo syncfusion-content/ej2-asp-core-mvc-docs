@@ -442,6 +442,64 @@ Stack labels have various properties for customization to enhance the visual bas
 
 
 
+## Corner radius
+
+The [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in the chart series is used to customize the corner radius for 100% stacked column series. This allows you to create 100% stacked columns with rounded corners, giving your chart a more polished appearance. You can customize each corner of the 100% stacked columns using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-column/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-column/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event by setting the [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in its event argument.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/point-corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-column/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/point-corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-column/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## See also
 
 * [Data Label](../data-labels)
