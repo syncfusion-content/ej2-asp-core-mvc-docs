@@ -82,29 +82,29 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a list of orders fetched from the database.</returns>
         private List<Orders> GetOrderData()
         {
-            // SQL query to select all records from the orders table, sorted by OrderID
+            // SQL query to select all records from the orders table, sorted by OrderID.
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
-            // List to store the retrieved order data
+            // List to store the retrieved order data.
             List<Orders> orders = new List<Orders>();
 
-            // Using block to ensure proper disposal of the SQL connection
+            // Using block to ensure proper disposal of the SQL connection.
             using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
             {
-                // Open the database connection
+                // Open the database connection.
                 sqlConnection.Open();
 
-                // Using block to ensure proper disposal of the SQL command and data adapter
+                // Using block to ensure proper disposal of the SQL command and data adapter.
                 using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
                 using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
                 {
-                    // DataTable to store the query result
+                    // DataTable to store the query result.
                     DataTable dataTable = new DataTable();
 
-                    // Fill the DataTable with data from the database
+                    // Fill the DataTable with data from the database.
                     dataAdapter.Fill(dataTable);
 
-                    // Convert DataTable rows into a list of orders objects
+                    // Convert DataTable rows into a list of orders objects.
                     orders = (from DataRow row in dataTable.Rows
                             select new Orders
                             {
@@ -117,7 +117,7 @@ namespace Grid_MSSQL.Controllers
                 }
             }
 
-            // Return the list of orders
+            // Return the list of orders.
             return orders;
         }
 
@@ -272,29 +272,29 @@ public class GridController : Controller
     /// <returns>Returns a list of orders fetched from the database.</returns>
     private List<Orders> GetOrderData()
     {
-        // SQL query to select all records from the orders table, sorted by OrderID
+        // SQL query to select all records from the orders table, sorted by OrderID.
         string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
-        // List to store the retrieved order data
+        // List to store the retrieved order data.
         List<Orders> orders = new List<Orders>();
 
-        // Using block to ensure proper disposal of the SQL connection
+        // Using block to ensure proper disposal of the SQL connection.
         using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
         {
-            // Open the database connection
+            // Open the database connection.
             sqlConnection.Open();
 
-            // Using block to ensure proper disposal of the SQL command and data adapter
+            // Using block to ensure proper disposal of the SQL command and data adapter.
             using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
             using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
             {
                 // DataTable to store the query result
                 DataTable dataTable = new DataTable();
 
-                // Fill the DataTable with data from the database
+                // Fill the DataTable with data from the database.
                 dataAdapter.Fill(dataTable);
 
-                // Convert DataTable rows into a list of orders objects
+                // Convert DataTable rows into a list of orders objects.
                 orders = (from DataRow row in dataTable.Rows
                         select new Orders
                         {
@@ -307,7 +307,7 @@ public class GridController : Controller
             }
         }
 
-        // Return the list of orders
+        // Return the list of orders.
         return orders;
     }
 
