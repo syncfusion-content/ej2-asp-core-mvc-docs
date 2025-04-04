@@ -82,29 +82,29 @@ namespace Grid_MSSQL.Controllers
         /// <returns>Returns a list of orders fetched from the database.</returns>
         private List<Orders> GetOrderData()
         {
-            // SQL query to select all records from the orders table, sorted by OrderID
+            // SQL query to select all records from the orders table, sorted by OrderID.
             string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
-            // List to store the retrieved order data
+            // List to store the retrieved order data.
             List<Orders> orders = new List<Orders>();
 
-            // Using block to ensure proper disposal of the SQL connection
+            // Using block to ensure proper disposal of the SQL connection.
             using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
             {
-                // Open the database connection
+                // Open the database connection.
                 sqlConnection.Open();
 
-                // Using block to ensure proper disposal of the SQL command and data adapter
+                // Using block to ensure proper disposal of the SQL command and data adapter.
                 using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
                 using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
                 {
-                    // DataTable to store the query result
+                    // DataTable to store the query result.
                     DataTable dataTable = new DataTable();
 
-                    // Fill the DataTable with data from the database
+                    // Fill the DataTable with data from the database.
                     dataAdapter.Fill(dataTable);
 
-                    // Convert DataTable rows into a list of orders objects
+                    // Convert DataTable rows into a list of orders objects.
                     orders = (from DataRow row in dataTable.Rows
                             select new Orders
                             {
@@ -117,7 +117,7 @@ namespace Grid_MSSQL.Controllers
                 }
             }
 
-            // Return the list of orders
+            // Return the list of orders.
             return orders;
         }
 
@@ -272,29 +272,29 @@ public class GridController : Controller
     /// <returns>Returns a list of orders fetched from the database.</returns>
     private List<Orders> GetOrderData()
     {
-        // SQL query to select all records from the orders table, sorted by OrderID
+        // SQL query to select all records from the orders table, sorted by OrderID.
         string query = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
 
-        // List to store the retrieved order data
+        // List to store the retrieved order data.
         List<Orders> orders = new List<Orders>();
 
-        // Using block to ensure proper disposal of the SQL connection
+        // Using block to ensure proper disposal of the SQL connection.
         using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
         {
-            // Open the database connection
+            // Open the database connection.
             sqlConnection.Open();
 
-            // Using block to ensure proper disposal of the SQL command and data adapter
+            // Using block to ensure proper disposal of the SQL command and data adapter.
             using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
             using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
             {
-                // DataTable to store the query result
+                // DataTable to store the query result.
                 DataTable dataTable = new DataTable();
 
-                // Fill the DataTable with data from the database
+                // Fill the DataTable with data from the database.
                 dataAdapter.Fill(dataTable);
 
-                // Convert DataTable rows into a list of orders objects
+                // Convert DataTable rows into a list of orders objects.
                 orders = (from DataRow row in dataTable.Rows
                         select new Orders
                         {
@@ -307,7 +307,7 @@ public class GridController : Controller
             }
         }
 
-        // Return the list of orders
+        // Return the list of orders.
         return orders;
     }
 
@@ -552,7 +552,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl` and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD operations mapping**
 
@@ -871,7 +871,7 @@ This section describes step by step process how to retrieve data from a Microsof
 
   * In this **GetOrderData** method, fetch data from the Microsoft SQL Server database using the **SqlDataAdapter** class.
 
-  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the DataAdapter, followed by conversion of the **DataSet** into a List.
+  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the `DataAdapter`, followed by conversion of the **DataSet** into a List.
 
   * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
   
@@ -1725,7 +1725,7 @@ public class CRUDModel<T> where T : class
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").AllowSorting().Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
