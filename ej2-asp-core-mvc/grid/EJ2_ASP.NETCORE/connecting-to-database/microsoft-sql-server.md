@@ -211,7 +211,6 @@ app.MapControllers();
 
 <ejs-grid id="Grid" height="348px">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager>
-  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -802,16 +801,16 @@ When you run the application, the resultant Syncfusion ASP.NET Core Grid will lo
 
 This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET Core Grid.
 
-**1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET Core Grid to an API service](#connecting-syncfusion-aspnet-core-grid-to-an-api-service)
+**Step 1:** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET Core Grid to an API service](#connecting-syncfusion-aspnet-core-grid-to-an-api-service)
 
-**2.** To connect a Microsoft SQL Server database using the Microsoft SQL driver in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**Step 2:** To connect a Microsoft SQL Server database using the Microsoft SQL driver in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
-**3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
+**Step 3:** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
   * Create a `CustomAdaptor` that extends the `UrlAdaptor` class.
   * Override the `processResponse` method to process server responses.
 
-**4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
+**Step 4:** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
   * In this **GetOrderData** method, fetch data from the Microsoft SQL Server database using the **SqlDataAdapter** class.
 
