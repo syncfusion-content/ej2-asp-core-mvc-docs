@@ -1,0 +1,43 @@
+@{
+    List<object> cols = new List<object>();
+    cols.Add(new { field = "OrderID", direction = "Ascending" });
+    cols.Add(new { field = "ShipCity", direction = "Descending" });
+}
+ 
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel","Search","ColumnChooser"})" allowPaging="true" allowReordering="true" allowGrouping="true" allowSorting="true" allowFiltering="true" showColumnChooser="true" allowRowDragAndDrop="true" height="400">
+<e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true" mode="Normal"></e-grid-editSettings>
+<e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-groupSettings columns="@(new string[] {"CustomerID"})">
+</e-grid-groupSettings>
+<e-grid-pageSettings pageSizes="true" pageCount="2"></e-grid-pageSettings>
+<e-grid-selectionSettings type="Multiple" mode="Both"></e-grid-selectionSettings>
+    <e-grid-sortSettings columns="cols"> </e-grid-sortSettings>
+    <e-grid-searchSettings fields="@(new string[] { "ShipCountry"})" operator="contains" key="a" ignoreCase="true"></e-grid-searchSettings>
+<e-grid-columns>
+    <e-grid-column type="checkbox" width="50"></e-grid-column>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" textAlign="Right" width="135" format="yMd"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight($)" textAlign="Right" width="120" format="C2"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
+    <e-grid-column field="ShipName" headerText="Shipped Name" textAlign="Right" width="145"></e-grid-column>
+</e-grid-columns>
+    <e-grid-aggregates>
+        <e-grid-aggregate>
+            <e-aggregate-columns>
+                <e-aggregate-column type="Sum" field="Freight" format="C2" groupFooterTemplate="Sum: ${Sum}"></e-aggregate-column>
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+        <e-grid-aggregate>
+            <e-aggregate-columns>
+                <e-aggregate-column type="Sum" field="Freight" format="C2" footerTemplate="Sum: ${Sum}"></e-aggregate-column>
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+       <e-grid-aggregate>
+            <e-aggregate-columns>
+            <e-aggregate-column type="Max" field="Freight" groupCaptionTemplate="Max: ${Max}"></e-aggregate-column>
+            </e-aggregate-columns>
+        </e-grid-aggregate>
+    </e-grid-aggregates>
+</ejs-grid>
