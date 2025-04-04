@@ -859,7 +859,7 @@ public List<Orders> GetOrderData()
   {
     Connection.Open();
 
-    // Dapper automatically handles mapping to your Order class.
+    // Dapper automatically handles mapping to your orders class.
     List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
     return orders;
   }
@@ -1113,7 +1113,7 @@ In the code example below, paging a custom data source can be achieved by utiliz
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform paging operation operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
@@ -1215,8 +1215,6 @@ In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.c
                 insertUrl: "https://localhost:xxxx/Grid/Insert",
                 updateUrl: "https://localhost:xxxx/Grid/Update",
                 removeUrl: "https://localhost:xxxx/Grid/Remove",
-                // Enable batch URL when batch editing is enabled.
-                batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
             });
             grid.dataSource = dataManager;
         }
