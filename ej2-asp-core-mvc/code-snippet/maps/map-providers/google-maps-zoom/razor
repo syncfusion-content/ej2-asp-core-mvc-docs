@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
+    l.UrlTemplate("https://tile.googleapis.com/v1/2dtiles/level/tileX/tileY?session=${sessionToken}&key=${apiKey}").Add();
+}).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

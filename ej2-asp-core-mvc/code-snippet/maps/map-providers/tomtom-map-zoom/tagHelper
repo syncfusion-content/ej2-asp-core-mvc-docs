@@ -1,0 +1,7 @@
+  @using Syncfusion.EJ2;
+   <ejs-maps id="maps">
+        <e-maps-zoomSettings Enable="true"></e-maps-zoomSettings>
+        <e-maps-layers>
+            <e-maps-layer urlTemplate="https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY"></e-maps-layer>
+        </e-maps-layers>
+    </ejs-maps>

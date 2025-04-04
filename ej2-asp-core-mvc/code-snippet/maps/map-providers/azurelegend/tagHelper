@@ -30,7 +30,7 @@
          <e-legendsettings-textstyle color="#000000" fontFamily="inherit"  />
      </e-maps-legendsettings>
      <e-maps-layers>
-         <e-maps-layer urlTemplate="https://atlas.microsoft.com/map/imagery/png?subscription-key=Your-Key &api-version=1.0&style=satellite&zoom=level&x=tileX&y=tileY" markerSettings="@Markers"></e-maps-layer>
+         <e-maps-layer urlTemplate="https://atlas.microsoft.com/map/tile?api-version=2022-08-01&tilesetId=microsoft.base.road&zoom=level&x=tileX&y=tileY&subscription-key=Your_Key" markerSettings="@Markers"></e-maps-layer>
      </e-maps-layers>
 </ejs-maps>
 

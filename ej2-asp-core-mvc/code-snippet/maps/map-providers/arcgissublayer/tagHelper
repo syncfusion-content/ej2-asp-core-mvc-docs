@@ -1,0 +1,9 @@
+@using Syncfusion.EJ2;
+<ejs-maps id="maps">
+        <e-maps-layers>
+            <e-maps-layer urlTemplate="https://ibasemaps-api.arcgis.com/arcgis/rest/services/World_Imagery/MapServer/tile/level/tileY/tileX?apiKey=Your_Key"></e-maps-layer>
+            <e-maps-layer type="SubLayer" shapeData="ViewBag.africaMap">
+               <e-layersettings-shapesettings fill="blue"></e-layersettings-shapesettings>
+            </e-maps-layer>
+        </e-maps-layers>
+</ejs-maps>

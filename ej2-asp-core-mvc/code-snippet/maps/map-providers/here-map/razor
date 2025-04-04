@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").Layers(l=> {
+    l.UrlTemplate("https://maps.hereapi.com/v3/base/mc/level/tileX/tileY/png?apiKey=Your_key").Add();
+}).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>

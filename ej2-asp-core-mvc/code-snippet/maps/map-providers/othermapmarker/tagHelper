@@ -11,7 +11,7 @@
 <div id="control-section">
     <ejs-maps id="maps" load="window.onMapLoad">
         <e-maps-layers>
-            <e-maps-layer urlTemplate="http://api.tomtom.com/map/1/tile/basic/main/level/tileX/tileY.png?key=subscription_key" markerSettings="marker"></e-maps-layer>
+            <e-maps-layer urlTemplate="https://a.tile.openstreetmap.fr/osmfr/level/tileX/tileY.png" markerSettings="marker"></e-maps-layer>
         </e-maps-layers>
     </ejs-maps>
 </div>

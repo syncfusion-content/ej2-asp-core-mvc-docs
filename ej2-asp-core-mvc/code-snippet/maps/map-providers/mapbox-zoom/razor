@@ -1,0 +1,10 @@
+@using Syncfusion.EJ2;
+@Html.EJS().Maps("maps").ZoomSettings(zoom=>zoom.Enable(true)).Layers(l=> {
+    l.UrlTemplate("https://api.mapbox.com/v4/mapbox.satellite/level/tileX/tileY.jpg?access_token=Your_Key").Add();
+}).Render()
+
+<style>
+    #maps {
+        display: block;
+    }
+</style>
