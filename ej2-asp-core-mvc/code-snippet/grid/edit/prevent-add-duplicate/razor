@@ -8,18 +8,21 @@
 }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Created("created").ActionBegin("actionBegin").Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
 <script>
     var grid;
+    var orderIDRules = {
+    required: true,
+    min: [orderIdCustomValidation, 'The entered value already exists in the column OrderID. Please enter a unique value.']
+    };
+
     function created() {
         grid = this;
     }
+
     function orderIdCustomValidation(args) {
         return (grid.dataSource).every((data) => {
             return data['OrderID'] + '' !== args['value'] || data['OrderID'] === grid.editModule.editModule.args.rowData['OrderID']
         });
     };
-    var orderIDRules = {
-        required: true,
-        min: [orderIdCustomValidation, 'The entered value already exists in the column OrderID. Please enter a unique value.']
-    };
+
     function actionBegin(args) {
         if (args.requestType === 'save') {
             grid.editModule.formObj.addRules('OrderID', orderIDRules); // Add form validation rules dynamically.
