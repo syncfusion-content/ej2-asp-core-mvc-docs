@@ -1,10 +1,20 @@
-<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
-    <e-data-manager url="/Home/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
+<script>
+        function gridload() {
+            this.dataSource.dataSource.headers = [{ 'XSRF-TOKEN': document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value }];
+        }
+</script>
+@{
+    string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
+}
+@Html.AntiForgeryToken()
+<ejs-grid id="grid" load="gridload" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" allowPaging="true">
+    <e-data-manager url="@fullUrl?handler=UrlDatasource" adaptor="UrlAdaptor"></e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
-        <e-grid-column field="EmployeeID" headerText="EmployeeID" textAlign="Right" width="120"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" fromat="C2" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="OrderDate" fromat="yMd" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>

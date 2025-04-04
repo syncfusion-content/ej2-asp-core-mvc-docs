@@ -1,0 +1,108 @@
+@{
+    string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
+}
+@Html.AntiForgeryToken()
+<div style="padding: 10px 0px 20px 0px">
+    <ejs-button id="sample" cssClass="e-success" content="Bind data via ajax"></ejs-button>
+</div>
+<ejs-grid id="grid" height="348px" actionComplete="actionComplete" actionBegin="actionBegin" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    let flag = false;
+    document.getElementById('sample').onclick = function () {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        const ajax = new ej.base.Ajax({
+            url: '@fullUrl?handler=Getdata',
+            type: "POST",
+            beforeSend: function (xhr) {
+                ajax.httpRequest.setRequestHeader("XSRF-TOKEN",document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value);
+            },
+            contentType: "application/json",
+        });
+        ajax.send();
+        ajax.onSuccess = (data) => {
+            grid.dataSource = JSON.parse(data);
+        };
+    };
+    function actionComplete(e) {
+        if (e.requestType === 'save' || e.requestType === 'delete') {
+            flag = false;
+        }
+    }
+    function actionBegin(e) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (!flag) {
+            if (e.requestType == 'save' && (e.action == 'add')) {
+                var editedData = e.data;
+                e.cancel = true;
+                var ajax = new ej.base.Ajax({
+                    url: '@fullUrl?handler=Insert',
+                    type: 'POST',
+                    beforeSend: function (xhr) {
+                        ajax.httpRequest.setRequestHeader("XSRF-TOKEN",document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value);
+                    },
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ value: editedData })
+                });
+                ajax.onSuccess = () => {
+                    flag = true;
+                    grid.endEdit();
+                };
+                ajax.onFailure = () => {
+                    flag = false;
+                };
+                ajax.send();
+            }
+            if (e.requestType == 'save' && (e.action == "edit")) {
+                var editedData = e.data;
+                e.cancel = true;
+                var ajax = new ej.base.Ajax({
+                    url: '@fullUrl?handler=Update',
+                    type: 'POST',
+                    beforeSend: function (xhr) {
+                        ajax.httpRequest.setRequestHeader("XSRF-TOKEN",document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value);
+                    },
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ value: editedData })
+                });
+                ajax.onSuccess = () => {
+                    flag = true;
+                    grid.endEdit();
+                };
+                ajax.onFailure = () => {
+                    flag = false;
+                };
+                ajax.send();
+            }
+            if (e.requestType == 'delete') {
+                var editedData = e.data;
+                e.cancel = true;
+                var ajax = new ej.base.Ajax({
+                    url: '@fullUrl?handler=Delete',
+                    beforeSend: function (xhr) {
+                        ajax.httpRequest.setRequestHeader("XSRF-TOKEN",document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value);
+                    },
+                    type: 'POST',
+                    contentType: 'application/json; charset=utf-8',
+                    data: JSON.stringify({ key: editedData[0][grid.getPrimaryKeyFieldNames()[0]] })
+                });
+                ajax.onSuccess = () => {
+                    flag = true;
+                    grid.deleteRecord();
+                };
+                ajax.onFailure = () => {
+                    flag = false;
+                };
+                ajax.send();
+            }
+        }
+    }
+</script>
+

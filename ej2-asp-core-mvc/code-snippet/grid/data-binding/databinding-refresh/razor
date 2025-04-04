@@ -1,0 +1,56 @@
+<div style="padding: 10px 0px 20px 0px">
+   @Html.EJS().Button("sample").CssClass("e-primary").Content("Refresh Datasource").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).Render()
+<script>
+    document.getElementById('sample').addEventListener('click', function () {
+      changeDatasource();
+    });
+    function changeDatasource() {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        for (let i = 0; i < 5; i++) {
+            let newRecord = {
+                OrderID: generateOrderId(),
+                CustomerID: generateCustomerId(),
+                ShipCity: generateShipCity(),
+                Freight: generateFreight(),
+                ShipName: generateShipName()
+            };
+            grid.dataSource.unshift(newRecord);
+            grid.setProperties({dataSource: grid.dataSource });
+        }
+        // Generate a random OrderID
+        function generateOrderId() {
+            return Math.floor(10000 + Math.random() * 90000);
+        }
+        // Generate a random CustomerID
+        function generateCustomerId() {
+            let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            let result = '';
+            for (let i = 0; i < 5; i++) {
+                result += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return result;
+        }
+        // Generate a random ShipCity
+        function generateShipCity() {
+            let cities = ['London', 'Paris', 'New York', 'Tokyo', 'Berlin'];
+            return cities[Math.floor(Math.random() * cities.length)];
+        }
+        // Generate a random Freight value
+        function generateFreight() {
+            return Math.random() * 100;
+        }
+        // Generate a random ShipName
+        function generateShipName() {
+            let names = ['Que Delícia', 'Bueno Foods', 'Island Trading', 'Laughing Bacchus Winecellars'];
+            return names[Math.floor(Math.random() * names.length)];
+        }
+    }
+</script>
