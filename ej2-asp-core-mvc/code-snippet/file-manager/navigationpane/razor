@@ -10,7 +10,8 @@
         }).NavigationPaneSettings(new Syncfusion.EJ2.FileManager.FileManagerNavigationPaneSettings()
         {
             MaxWidth = "850px",
-            MinWidth = "140px"
+            MinWidth = "140px",
+            SortOrder = "Ascending"
 
    }).Render()
         <!-- end of File Manager control -->
