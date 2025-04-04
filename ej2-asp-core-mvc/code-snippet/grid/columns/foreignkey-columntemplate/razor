@@ -1,0 +1,40 @@
+@{
+	ViewBag.Title = "Home Page";
+}
+
+@using Syncfusion.EJ2
+
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add(); col.Field("EmployeeID").ForeignKeyValue("FirstName").DataSource((IEnumerable<object>)ViewBag.foreignData).HeaderText("Employee Name").Width("150").Template("#columnTemplate").Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+  col.Field("ShipCity").HeaderText("Ship City").EditType("dropdownedit").Width("150").Add();
+}).QueryCellInfo("navToAccount").Render()
+
+<script type="text/x-template" id="columnTemplate">
+	<div>
+		<a href="javascript:void(0)">${foreignKeyData.FirstName}</a>
+	</div>
+</script>
+<script>
+function navToAccount(args) {
+	if (args.column.field === "EmployeeID" && args.data) {
+		const anchor = args.cell.querySelector("a");
+		if (anchor) {
+			const accountId = args.data.OrderID; // Get the actual ID field.
+			anchor.href = `../Account/AccountDetail.cshtml?custid=0&accountId=${accountId}`;
+
+			// Prevent default navigation and use history push.
+			anchor.addEventListener("click", (event) => {
+				event.preventDefault();
+				window.history.pushState(
+					'',
+					'changed',
+					`../Account/AccountDetail.cshtml?custid=0&accountId=${accountId}`
+				);
+			});
+		}
+	}
+}
+</script>
