@@ -1,0 +1,14 @@
+<ejs-chart id="container" title="Maximum and Minimum Temperature">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Month">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Temperature(Celsius)" labelFormat="{value}°C">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" high="High" low="Low" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn">
+            <e-series-cornerradius topLeft="10" topRight="10" bottomLeft="10" bottomRight="10"></e-series-cornerradius>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="X" high="High1" low="Low1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn">
+            <e-series-cornerradius topLeft="10" topRight="10" bottomLeft="10" bottomRight="10"></e-series-cornerradius>
+        </e-series>        
+    </e-series-collection>
+</ejs-chart>
