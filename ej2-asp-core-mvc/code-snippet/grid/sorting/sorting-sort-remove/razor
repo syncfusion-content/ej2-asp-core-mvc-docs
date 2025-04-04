@@ -1,0 +1,40 @@
+@{
+    ViewBag.dropdownData = new List<object>
+    {
+        new { value = "OrderID", text = "Order ID" },
+        new { value = "CustomerID", text = "Customer ID" },
+        new { value = "ShipCity", text = "Ship City" },
+        new { value = "ShipName", text = "Ship Name" }
+    };
+    List<object> sortOptions = new List<object>();
+    sortOptions.Add(new { field = "CustomerID", direction = "Ascending" });
+    sortOptions.Add(new { field = "ShipName", direction = "Descending" });
+
+}
+  
+<div style="padding-bottom:20px">
+    <div style="display: flex">
+        <label style="padding: 5px 28px 0 0"> Column name :</label>
+        <span style="height:fit-content">
+            @Html.EJS().DropDownList("dropdownColumn").Width("120px").Index(0).DataSource(ViewBag.dropdownData).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "value", Text = "text" }).Render()
+        </span>
+    </div>
+    <div style="margin-top: 10px; margin-left: 145px">
+        @Html.EJS().Button("removeButton").CssClass("e-primary").Content("Remove sort column").Render()
+    </div>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)Model).AllowSorting(true).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("170").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("170").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
+
+}).SortSettings(sort => sort.Columns(sortOptions)).Render();
+<script>
+    document.getElementById('removeButton').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        var value = document.getElementById("dropdownColumn").ej2_instances[0].value;
+        grid.removeSortColumn(value);
+    });
+</script>
