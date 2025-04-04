@@ -1,0 +1,86 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    var department = "Sales";
+    var userRole = "Manager";
+}
+
+<ejs-schedule id="schedule" width="100%" height="550px" selected-date="@DateTime.Now" action-begin="onActionBegin" before-print="onBeforePrint">
+    <e-schedule-views>
+        <e-schedule-view option="Day"></e-schedule-view>
+        <e-schedule-view option="Week"></e-schedule-view>
+        <e-schedule-view option="WorkWeek"></e-schedule-view>
+        <e-schedule-view option="Month"></e-schedule-view>
+    </e-schedule-views>
+    <e-schedule-event-settings enable-tooltip="true" data-source="@ViewBag.datasource"></e-schedule-event-settings>
+</ejs-schedule>
+
+<style>
+    .e-schedule .e-schedule-toolbar .e-icon-schedule-print::before {
+        content: '\e813';
+    }
+</style>
+
+<script type="text/javascript">
+    function onActionBegin(args) {
+        if (args.requestType === 'toolbarItemRendering') {
+            var printItem = {
+                align: 'Right', showTextOn: 'Both', prefixIcon: 'e-icon-schedule-print',
+                text: 'Print', cssClass: 'e-schedule-print', click: onPrintIconClick
+            };
+            args.items.push(printItem);
+        }
+    }
+
+    function onPrintIconClick() {
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        scheduleObj.print();
+    }
+
+    function onBeforePrint(args) {
+        var department = "@department";
+        var userRole = "@userRole";
+
+        var headerElement = document.createElement('div');
+        headerElement.innerHTML = `
+            <h1>${department} Department Schedule</h1>
+            <p>Printed by: ${userRole}</p>
+            <p>Date: ${new Date().toLocaleString()}</p>
+        `;
+        headerElement.style.backgroundColor = getDepartmentColor(department);
+        headerElement.style.color = 'white';
+        headerElement.style.padding = '10px';
+        args.printElement.insertBefore(headerElement, args.printElement.firstChild);
+
+        var highPriorityEvents = args.printElement.querySelectorAll('.e-appointment.high-priority');
+        highPriorityEvents.forEach(event => {
+            event.style.border = '2px solid red';
+        });
+
+        var scheduleObj = document.getElementById('schedule').ej2_instances[0];
+        var events = scheduleObj.getEvents();
+        var summaryElement = document.createElement('div');
+        summaryElement.innerHTML = `
+            <p>Total Events: ${events.length}</p>
+            <p>High Priority Events: ${events.filter(e => e.priority === 'high').length}</p>
+        `;
+        args.printElement.appendChild(summaryElement);
+
+        if (userRole === 'Manager') {
+            var managerNote = document.createElement('div');
+            managerNote.textContent = 'Confidential - For managerial use only';
+            managerNote.style.color = 'red';
+            args.printElement.appendChild(managerNote);
+        }
+    }
+
+    function getDepartmentColor(dept) {
+        var colors = {
+            'Sales': '#4CAF50',
+            'Marketing': '#2196F3',
+            'Engineering': '#FF9800',
+            'HR': '#9C27B0'
+        };
+        return colors[dept] || '#607D8B';
+    }
+</script>

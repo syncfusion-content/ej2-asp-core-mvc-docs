@@ -88,7 +88,7 @@ The following example that demonstrates how to use the `RowSelected` event to sc
 
 ![scroll to selected row](../images/scrolling/scrolling-select-scroll.gif)
 
-## Hide the empty placehoder of scrollbar
+## Hide the empty placeholder of scrollbar
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides a feature to hide the empty placeholder of the scrollbar, offering a cleaner interface without unnecessary scrollbars. To achieve this, you can utilize the `hideScroll` method. This method allows you to determine whether the scrollbar should be hidden based on the content's overflow.
 
@@ -104,3 +104,27 @@ The following example that demonstrates how to use the `hideScroll` method insid
 {% endtabs %}
 
 ![Hide the empty placehoder of scrollbar](../images/scrolling/scrolling-holder.png)
+
+## Render scrollbar in both top and bottom
+
+The Syncfusion ASP.NET MVC Grid allows rendering scrollbars at both the top and bottom, enhancing horizontal navigation for large datasets. This feature ensures users can scroll the Grid from either direction, enhancing usability and accessibility.
+
+Steps to render scrollbars at the top in the Grid:
+
+1. **Add a Scrollbar** - Insert a `<div id="scroller">` above the Grid in the template to act as a top scrollbar.
+2. **Initialize Scrollbar in [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
+3. **Synchronize Scroll Events** - Link `onscroll` events of the scroller `div` and the Grid content to scroll together.
+4. **Adjust Scrollbar Width and Visibility** - Use `setScroller()` to match the scrollbar width with the Grid and update it on window resize.
+
+The following example demonstrates how to use the `Created` event to insert a scrollbar at the top of the Grid content:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/render-scrollbar/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Render-scroll.cs" %}
+{% include code-snippet/grid/scrolling/render-scrollbar/render-scrollbar.cs%}
+{% endhighlight %}
+{% endtabs %}
+
+![Render of scrollbar in top and bottom](../images/scrolling/render-scrollbar.gif)

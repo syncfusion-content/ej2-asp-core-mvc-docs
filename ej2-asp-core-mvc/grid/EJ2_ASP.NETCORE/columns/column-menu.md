@@ -42,6 +42,25 @@ The default column menu items are displayed in following table.
 
 > You can customize the default items by defining the [columnMenuItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) with required items.
 
+## Prevent column menu for particular column
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides the ability to prevent the appearance of the column menu for specific columns. This feature is useful when you want to restrict certain columns from being customizable through the column menu.
+
+To prevent the column menu for a particular column, you can set the [showColumnMenu](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **false** for that specific column configuration. This will disable the column menu options specifically for the designated column, while other columns will have the column menu enabled.
+
+The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/prevent-column-menu/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnmenu.cs" %}
+{% include code-snippet/grid/columns/prevent-column-menu/columnmenu.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Prevent column menu](../images/column-menu/prevent-column-menu.png)
+
 ## Add custom column menu item
 
 The custom column menu item feature allows you to add additional menu items to the column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. These custom menu items can be defined using the [columnMenuItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuItems) property, which accepts a collection of `columnMenuItemModel` objects. You can define the actions for these custom items in the [columnMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnMenuClick) event.

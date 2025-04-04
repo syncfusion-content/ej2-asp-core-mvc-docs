@@ -1,0 +1,1 @@
+<ejs-datetimepicker id="datetimepicker" value="@ViewBag.value" format="yyyy-MM-dd hh:mm" inputFormats="@(new string[] {"MM.dd.yyyy hh:mm a", "yyyy-MM-dd HH:mm"})" placeholder="Enter date and time"></ejs-datetimepicker>
