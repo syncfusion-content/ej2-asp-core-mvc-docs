@@ -1,0 +1,29 @@
+<ejs-chart id="container" title="Sales Comparision" beforeExport="beforeExport">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Manager">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales" minimum="0" maximum="20000">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y" width="2"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+<div>
+    <ejs-button id="button" content="Export" isPrimary="true" style="float: left"></ejs-button>
+</div>
+<script>
+    document.getElementById('button').onclick = () => {
+        var chart = document.getElementById('container').ej2_instances[0];
+        chart.exportModule.export('XLSX', 'result');
+    };
+
+    function beforeExport(args) {
+        args.excelProperties.rows[0].cells[0].value = 'Changed Title';
+        args.excelProperties.rows[1].cells[0].value = 'X Title';
+        args.excelProperties.rows[1].cells[1].value = 'Y Title';
+        args.excelProperties.rows[2].cells[1].value = args.excelProperties.rows[2].cells[1].value + 2;
+    };
+</script>

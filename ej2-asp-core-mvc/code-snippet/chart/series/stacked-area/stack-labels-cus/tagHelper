@@ -1,0 +1,32 @@
+<ejs-chart id="container" title="Trend in Sales of Ethical Produce">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" title="Years" intervalType="@Syncfusion.EJ2.Charts.IntervalType.Years" labelFormat="y" edgeLabelPlacement="Shift">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Spend in Billions" minimum="0" maximum="7" interval="1" labelFormat="{value}B">
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true" fill="rgba(0, 123, 255, 0.5)" format="{value}" angle="45" rx="10" ry="10">
+    </e-chart-stacklabels>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Organic" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Fair-trade" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Veg Alternatives" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Others" xName="X" yName="Y3" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
