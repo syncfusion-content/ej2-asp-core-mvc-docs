@@ -599,8 +599,8 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
 {% endhighlight %}
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
+> * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * If database has an auto generated column, ensure to define [isIdentity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 The below class is used to structure data sent during CRUD operations.
 
 ```cs
@@ -1362,7 +1362,7 @@ The following properties enable the Grid to interact with API endpoints for diff
 3. **updateUrl**: Specifies the URL for updating existing data.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET Core Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1409,7 +1409,7 @@ To enable editing in ASP.NET Core Grid, refer to the editing [Documentation](htt
 {% endhighlight %}
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [isIdentity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
 The below class is used to structure data sent during CRUD operations.
@@ -1698,130 +1698,123 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation**
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
+To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch update operations (insert, update, and delete) on the "Orders" table in a single transaction.
+/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
 /// </summary>
-/// <param name="value">The CRUDModel containing lists of added, changed, and deleted order records.</param>
-/// <returns>Returns an HTTP response indicating the success or failure of the batch operation.</returns>
+/// <param name="CRUDModel<T>">The set of information along with details about the CRUD actions to be executed from the database.</param>
+/// <returns>Returns void.</returns>
 [HttpPost]
-[Route("api/grid/BatchUpdate")]
-public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
+[Route("api/[controller]/BatchUpdate")]
+public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
 {
-    // Establish a connection to the PostgreSQL database.
-    using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
+  if (value.changed != null && value.changed.Count > 0)
+  {
+    foreach (Orders Record in (IEnumerable<Orders>)value.changed)
     {
-        // Open the database connection.
-        connection.Open();
+      // Create query to update the changes into the database by accessing its properties.
+      string queryStr = $"Update \"Orders\" set \"CustomerID\"='{Record.CustomerID}', \"Freight\"={Record.Freight},\"EmployeeID\"={Record.EmployeeID},\"ShipCity\"='{Record.ShipCity}' where \"OrderID\"={Record.OrderID}";
 
-        // Begin a transaction to ensure atomicity of batch operations.
-        using (NpgsqlTransaction transaction = connection.BeginTransaction())
-        {
-            // Process the list of updated records.
-            if (value.changed != null && value.changed.Count > 0)
-            {
-                // Define an SQL query to update records in the "Orders" table.
-                string updateQuery = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, \"EmployeeID\"=@EmployeeID, \"ShipCity\"=@ShipCity WHERE \"OrderID\"=@OrderID";
+      // Create a new NpgsqlConnection object using the connection string.
+      NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString);
 
-                // Create a command object to execute the update query within the transaction.
-                using (NpgsqlCommand command = new NpgsqlCommand(updateQuery, connection, transaction))
-                {
-                    // Iterate through the list of changed records and update each one.
-                    foreach (Orders record in value.changed)
-                    {
-                        // Clear previous parameters to avoid conflicts.
-                        command.Parameters.Clear();
+      // Open the database connection before executing the query.
+      Connection.Open();
 
-                        // Add parameters for updating the order details.
-                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
-                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+      // Execute the Npgsql command.
+      NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection);
 
-                        // Execute the update query for the current record.
-                        command.ExecuteNonQuery();
-                    }
-                }
-            }
+      // Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
 
-            // Process the list of newly added records.
-            if (value.added != null && value.added.Count > 0)
-            {
-                // Define an SQL query to insert new records into the "Orders" table.
-                string insertQuery = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+      // Close the database connection after executing the command.
+      Connection.Close();
 
-                // Create a command object to execute the insert query within the transaction.
-                using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection, transaction))
-                {
-                    // Iterate through the list of added records and insert each one.
-                    foreach (Orders record in value.added)
-                    {
-                        // Clear previous parameters to avoid conflicts.
-                        command.Parameters.Clear();
-
-                        // Add parameters for inserting new order details.
-                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
-
-                        // Execute the insert query for the current record.
-                        command.ExecuteNonQuery();
-                    }
-                }
-            }
-
-            // Process the list of deleted records.
-            if (value.deleted != null && value.deleted.Count > 0)
-            {
-                // Define an SQL query to delete records from the "Orders" table based on OrderID.
-                string deleteQuery = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
-
-                // Create a command object to execute the delete query within the transaction.
-                using (NpgsqlCommand command = new NpgsqlCommand(deleteQuery, connection, transaction))
-                {
-                    // Iterate through the list of deleted records and remove each one.
-                    foreach (Orders record in value.deleted)
-                    {
-                        // Clear previous parameters to avoid conflicts.
-                        command.Parameters.Clear();
-
-                        // Add the OrderID parameter to delete the corresponding record.
-                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
-
-                        // Execute the delete query for the current record.
-                        command.ExecuteNonQuery();
-                    }
-                }
-            }
-
-            // Commit the transaction to apply all changes.
-            transaction.Commit();
-        }
+      // Add custom logic here if needed and remove the above method.
     }
+  }
+  if (value.added != null && value.added.Count > 0)
+  {
+    foreach (Orders Record in (IEnumerable<Orders>)value.added)
+    {
+      // Create query to insert the specific into the database by accessing its properties.
+      string queryStr = $"Insert into \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") values('{Record.CustomerID}',{Record.Freight},'{Record.ShipCity}','{Record.EmployeeID}')";
 
-    // Return a success message after completing all batch operations.
-    return Ok(new { message = "Batch update completed successfully." });
+      // Create a new NpgsqlConnection object using the connection string.
+      NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString);
+
+      // Open the database connection before executing the query.
+      Connection.Open();
+
+      // Execute the Npgsql command.
+      NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection);
+
+      // Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the command.
+      Connection.Close();
+
+      // Add custom logic here if needed and remove the above method.
+    }
+  }
+  if (value.deleted != null && value.deleted.Count > 0)
+  {
+    foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
+    {
+      //Create query to remove the specific from database by passing the primary key column value.
+      string queryStr = $"DELETE FROM \"Orders\" WHERE \"OrderID\" = {Record.OrderID}";
+
+      // Create a new NpgsqlConnection object using the connection string.
+      NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString);
+
+      // Open the database connection before executing the query.
+      Connection.Open();
+
+      // Execute the Npgsql command.
+      NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection);
+
+      //Execute this code to reflect the changes into the database.
+      Command.ExecuteNonQuery();
+
+      // Close the database connection after executing the command.
+      Connection.Close();
+
+      //Add custom logic here if needed and remove above method.
+    }
+  }
+  return new JsonResult(value);
+}
+
+public class CRUDModel<T> where T : class
+{
+  public string? action { get; set; }
+  public string? keyColumn { get; set; }
+  public object? key { get; set; }
+  public T? value { get; set; }
+  public List<T>? added { get; set; }
+  public List<T>? changed { get; set; }
+  public List<T>? deleted { get; set; }
+  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-// Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
-    col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
-    col.Field("EmployeeID").HeaderText("Employee ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = "true", number = true}).Add();
-    col.Field("Freight").HeaderText("Freight").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").ValidationRules(new { required = "true", min=1, max=1000 }).Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("120").ValidationRules(new { required = "true" }).Add();
-}).AllowPaging().EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-columns>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true></e-grid-column>
+        <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
+        <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='ShipCity' headerText='Ship City' width='150'></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
@@ -1850,9 +1843,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/api/Grid",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/api/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
