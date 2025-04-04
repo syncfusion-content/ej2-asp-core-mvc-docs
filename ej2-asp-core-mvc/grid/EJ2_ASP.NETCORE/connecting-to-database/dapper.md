@@ -210,7 +210,6 @@ app.MapControllers();
 
 <ejs-grid id="Grid" height="348px">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager>
-  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
