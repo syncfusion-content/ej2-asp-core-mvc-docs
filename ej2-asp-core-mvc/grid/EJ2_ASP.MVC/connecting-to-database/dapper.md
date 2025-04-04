@@ -859,7 +859,7 @@ public List<Orders> GetOrderData()
   {
     Connection.Open();
 
-    // Dapper automatically handles mapping to your order class.
+    // Dapper automatically handles mapping to your orders class.
     List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
     return orders;
   }
