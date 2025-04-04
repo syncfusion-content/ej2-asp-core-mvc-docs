@@ -1669,4 +1669,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif)
+![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif) 
