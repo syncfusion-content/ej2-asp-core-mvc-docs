@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image in ##Platform_Name## Document Editor Component
+title: Image in ##Platform_Name## Document Editor Component |Syncfusion
 description: Learn here all about image in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Image
@@ -20,7 +20,9 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/image/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,7 +31,9 @@ Document Editor supports common raster format images like PNG, BMP, JPEG, SVG an
 {% include code-snippet/document-editor/image/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/image/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -50,8 +54,9 @@ Document editor exposes API to get or set the size of the selected image.
 documenteditor.selection.imageFormat.width = 800;
 documenteditor.selection.imageFormat.height = 800;
 ```
+>Note: When the image element is configured to have a width of 100%, the images appear in their original size on the display. You may modify the image by [Image resizing](../document-editor/image#image-resizing) or [Changing size](../document-editor/image#changing-size) to suit your requirements.
 
-N> Images are stored and processed (read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
+>Note: Images are stored and processed (read/write) as base64 string in DocumentEditor. The online image URL is preserved as a URL in DocumentEditor upon saving.
 
 ## Text wrapping style
 
