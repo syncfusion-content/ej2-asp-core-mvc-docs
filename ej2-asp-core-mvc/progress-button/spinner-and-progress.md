@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spinner And Progress in ##Platform_Name## Progress Button Component
+title: Spinner and progress in ##Platform_Name## Progress Button | Syncfusion
 description: Learn here all about Spinner And Progress in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spinner And Progress
@@ -10,7 +10,7 @@ documentation: ug
 
 
 <!-- markdownlint-disable MD002 MD022 -->
-# Spinner
+# Spinner and progress in ASP.NET MVC Progress Button
 
 ## Change spinner position
 
