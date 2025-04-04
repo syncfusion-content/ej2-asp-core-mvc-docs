@@ -288,7 +288,7 @@ public class GridController : Controller
             using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
             using (SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand))
             {
-                // DataTable to store the query result
+                // DataTable to store the query result.
                 DataTable dataTable = new DataTable();
 
                 // Fill the DataTable with data from the database.
@@ -871,7 +871,7 @@ This section describes step by step process how to retrieve data from a Microsof
 
   * In this **GetOrderData** method, fetch data from the Microsoft SQL Server database using the **SqlDataAdapter** class.
 
-  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the DataAdapter, followed by conversion of the **DataSet** into a List.
+  * Employ the `Fill` method of the `DataAdapter` to populate a **DataSet** with the results of the `Select` command of the `DataAdapter`, followed by conversion of the **DataSet** into a List.
 
   * Finally, return the response as a **result** and **count** pair object in the `Post` method to bind the data to the Grid.
   
@@ -1725,7 +1725,7 @@ public class CRUDModel<T> where T : class
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").AllowSorting().Columns(col =>
+@Html.EJS().Grid("Grid").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
