@@ -11,19 +11,19 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Render chart in partial view in ajax call
+# Render chart in partial view in fetch call
 
-You can render the charts in partial view in ajax call by calling the partial view action method in ajax.
+You can render the charts in partial view in fetch call by calling the partial view action method in fetch.
 
 Follow the given steps to render the charts in partial view.
 
-**Step 1**: Initially, render the home view page, and then call the partial view action method via ajax call in the home view page.
+**Step 1**: Initially, render the home view page, and then call the partial view action method via fetch call in the home view page.
 
 ```html
  <div id="chartContainer">
 </div>
 <script>
-    $.ajax({
+    $.fetch({
             url: '@Url.Action("Create")',
             type: 'POST',
             dataType: 'html',
