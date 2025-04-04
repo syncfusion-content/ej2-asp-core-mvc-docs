@@ -1,0 +1,46 @@
+<div id="documenteditor" style="width:100%;height:100%">
+    @Html.EJS().DocumentEditorContainer("container").Created("onDocCreate").EnableToolbar(true).Render()
+</div>
+
+<script>
+    var container;
+    function onDocCreate() {
+        container = document.getElementById("container").ej2_instances[0];
+        var toolDropDownItem = {
+            tooltipText: "Customized DropDown in Toolbar",
+            text: "Drop Down",
+            id: "Customdropdown"
+        };
+        container.toolbarItems = [toolDropDownItem, 'New', 'Open', 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber'];
+        container.toolbarClick = function (args) {
+            switch (args.item.id) {
+                case 'Customdropdown':
+                customDropDown();
+            }
+        };
+    }
+    function customDropDown() {
+        var dropDownItems = [
+        { text: 'Log in', id: 'key1' },
+        { text: 'Log out', id: 'key2' },
+        ];
+        var dropDownItem = new ej.splitbuttons.DropDownButton({
+        content: 'Drop Down',
+        items: dropDownItems,
+        select: onDropDownButtonSelect.bind(this),
+    });
+    dropDownItem.appendTo('#Customdropdown');
+    }
+    function onDropDownButtonSelect(args) {
+        switch (args.item.id) {
+            case 'key1':
+                container.documentEditor.editor.insertText('First Drop down Clicked');
+                break;
+            case 'key2':
+                container.documentEditor.editor.insertText('Second Drop down Clicked');
+                break;
+            default:
+                break;
+        }
+    }
+</script>
