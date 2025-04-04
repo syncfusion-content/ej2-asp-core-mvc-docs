@@ -2,7 +2,7 @@
     <e-chart-primaryxaxis valueType="Category">
     </e-chart-primaryxaxis>
     <e-series-collection>
-        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line"
-            width="3" opacity="0.5" dashArray="5,5" fill="blue"></e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="x" yName="y"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line" fill="red"></e-series>
     </e-series-collection>
 </ejs-chart>

@@ -1,0 +1,15 @@
+<ejs-chart id="container" seriesRender="changeColor">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="x" high="high" low="low" open="open" close="close"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Candle">
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function changeColor(args) {
+        args.series.bearFillColor = '#ff6347';
+        args.series.bullFillColor = '#009cb8';
+    }
+</script>

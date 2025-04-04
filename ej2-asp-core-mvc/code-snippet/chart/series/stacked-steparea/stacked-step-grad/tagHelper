@@ -1,0 +1,54 @@
+<svg style="width:1px; height:1px">
+            <defs>
+                <linearGradient id="gradient1">
+                    <stop offset="0%" style="stop-color:coral;stop-opacity:5" />
+                    <stop offset="50%" style="stop-color:mediumseagreen;stop-opacity:5" />
+                </linearGradient>
+            </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient2">
+            <stop offset="0%" style="stop-color:darkred;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkorange;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient3">
+            <stop offset="0%" style="stop-color:darkmagenta;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkcyan;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+<svg style="width:1px; height:1px">
+    <defs>
+        <linearGradient id="gradient4">
+            <stop offset="0%" style="stop-color:darkviolet;stop-opacity:5" />
+            <stop offset="50%" style="stop-color:darkgoldenrod;stop-opacity:5" />
+        </linearGradient>
+    </defs>
+</svg>
+
+<ejs-chart id="container" title="Family Expense for Month">
+    <e-chart-primaryxaxis valueType="Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="x" yName="y" type="StackingStepArea" fill="url(#gradient1)">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="x" yName="y1" type="StackingStepArea" fill="url(#gradient2)">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="x" yName="y2" type="StackingStepArea" fill="url(#gradient3)">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="x" yName="y3" type="StackingStepArea" fill="url(#gradient4)">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
