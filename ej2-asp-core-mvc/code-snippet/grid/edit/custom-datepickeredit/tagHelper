@@ -1,0 +1,34 @@
+@{
+    var ddParams = new { @params = new { value = "Germany" } };
+    var numericParams = new { @params= new { decimals= 2, value = 5 } };
+    var boolParams = new { @params = new { checked= true }}
+ }
+
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" created="created" actionBegin="actionBegin">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" editType="numericedit" edit=numericParams width="120"></e-grid-column>        
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150" edit=ddParams editType="dropdownedit"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" editType="datepickeredit" width="150"></e-grid-column>
+        <e-grid-column field="Verified" headerText="Verified" edit=boolParams editType="booleanedit" width="150"></e-grid-column>
+   </e-grid-columns>
+</ejs-grid>
+<script>
+    var grid;
+    function created() {
+        grid = this;
+    }
+    function actionBegin(args) {
+        if (args.requestType === 'beginEdit' || args.requestType === 'add') {
+            let minDate = args.rowData['OrderDate'] || new Date(); // Use the row's date or fallback to today
+            // Set the min date for the datepicker
+            grid.columns.forEach((column) => {
+                if (column.field === 'OrderDate') {
+                    column.edit.params = { min: minDate };
+                }
+            });
+        }
+    },
+</script>
