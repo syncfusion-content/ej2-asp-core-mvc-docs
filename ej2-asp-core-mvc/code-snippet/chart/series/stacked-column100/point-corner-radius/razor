@@ -1,0 +1,36 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y").DataSource(ViewBag.dataSource)
+        .Name("UK").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+        .Name("Germany").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+        .Name("France").Add();
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn100)
+        .XName("X").YName("Y3").DataSource(ViewBag.dataSource)
+        .Name("Italy").Add();
+    }
+    ).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).Title("Years").Interval(1).LabelFormat("y")
+    ).PrimaryYAxis(py => py.Title("GDP (%) Per Annum").LabelFormat("{value}%").RangePadding(Syncfusion.EJ2.Charts.ChartRangePadding.None)
+    ).Title("Gross Domestic Product Growth").PointRender("pointRender").Render()
+    
+    
+<script>
+    function pointRender(args) {
+        if (args.point.index === 0 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 3 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 4 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+        if (args.point.index === 6 && args.point.series.index === 3) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 0, topRight: 10, bottomRight: 0 };
+        }
+    }
+</script>

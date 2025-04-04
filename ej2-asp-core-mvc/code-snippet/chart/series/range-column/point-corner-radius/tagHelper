@@ -1,0 +1,23 @@
+<ejs-chart id="container" title="Maximum and Minimum Temperature" pointRender="pointRender">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Month">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Temperature(Celsius)" labelFormat="{value}°C">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" high="High" low="Low" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn">
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" xName="X" high="High1" low="Low1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.RangeColumn">
+        </e-series>        
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.index === 1) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 10, topRight: 10, bottomRight: 10 };
+        }
+        if (args.point.index === 4) {
+            args.cornerRadius = { topLeft: 10, bottomLeft: 10, topRight: 10, bottomRight: 10 };
+        }
+    }
+</script>

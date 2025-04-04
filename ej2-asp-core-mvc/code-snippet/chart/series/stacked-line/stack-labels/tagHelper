@@ -1,0 +1,33 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Expense" interval="100" labelFormat="${value}">
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true"></e-chart-stacklabels>
+    <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="John" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Peter" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Steve" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Charle" xName="X" yName="Y3" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
