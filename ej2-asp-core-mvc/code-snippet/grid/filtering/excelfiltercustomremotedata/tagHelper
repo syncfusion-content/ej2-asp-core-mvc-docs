@@ -1,0 +1,18 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowFiltering="true" height="273" actionBegin="actionBegin">
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID"  width="120"></e-grid-column>       
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function actionBegin(args) {
+        const hostUrl = 'https://services.syncfusion.com/aspnet/production/';
+        if (args.requestType === "filterBeforeOpen") {
+          // Assign custom remote data source to the filter module data source
+          args['filterModel'].options.dataSource = new ej.data.DataManager({ url: hostUrl + 'api/UrlDataSource', adaptor: new ej.data.UrlAdaptor });
+        }
+    }
+</script>

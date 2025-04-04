@@ -1,0 +1,18 @@
+@Html.EJS().Grid("ExcelFilterCustomData").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().FilterSettings(Filter => Filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
+
+}).AllowPaging().ActionBegin("actionBegin").Render();
+<script>
+    function actionBegin(args) {
+        const hostUrl = 'https://services.syncfusion.com/aspnet/production/';
+        if (args.requestType === "filterBeforeOpen") {
+          // Assign custom remote data source to the filter module data source
+          args['filterModel'].options.dataSource = new ej.data.DataManager({ url: hostUrl + 'api/UrlDataSource', adaptor: new ej.data.UrlAdaptor });
+        }
+    }
+</script>
