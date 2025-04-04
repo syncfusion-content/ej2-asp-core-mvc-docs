@@ -68,9 +68,41 @@ container.documentEditor.editor.insertContentControl('Picture');
 container.documentEditor.editor.insertContentControl('Picture', 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADgSURBVEhLY3jx4sV/WuDBafCluXH/D6ydhlWObIMPLmn8/32KPBiD2OjyKAY7+zbDsX945/91azehiBWU9IPVgVwJMxSX4SgG65jXwrGVa+v/6TOXoojBDEZ2LQh/m676/+D+/XBzQJgsg0EY5GqQgSCDsYUz2QaDMCiosIUvCKMYDFKIjK9dvYrCB3kXJIaMkfUjY5JdDEpioCCAYZCFyGbAMFkGI0fcMDUYpAgZY4s8EEYWwxWBJLsYhJHFQIYjmwHDQ9xgkGEwDCp0QAYji8EMRhYjymBq4lGDofjFfwCV5AGEIf9DQQAAAABJRU5ErkJggg==');
 {% endhighlight %}
 
+## Content Control Properties
+
+Content control properties [`ContentControlInfo`] can be set using the [`setContentControlInfo`] 
+
+* title : Specifies the title of the content control.
+* tag: Specifies the tag associated with the content control.
+* value: Specifies the value of the content control.
+* canDelete: Specifies whether the content control can be deleted.
+* canEdit: Specifies whether the content control can be edited.
+* items: Specifies items for the content control, applicable if the type is combobox or dropdownlist.
+* type : Specifies the type of content control.
+* xmlString: Specifies the XML string used for data binding, XML content to be mapped within the content control.
+* xmlPath?: Specifies the XPath expression for XML mapping, This path identifies the specific part of the XML data to bind to the content control.
+
+### Enable-Disable Content Control in Document editor control
+
+Document Editor content control can be enable/disable using the ContentControlInfo properties.
+
+The following example illustrates to disable the content control after inserting the content control in DocumentEditorContainer.
+
+{% highlight ts %}
+container.documentEditor.editor.insertContentControl('RichText','{{product_code}}');
+var contentControlInfo = container.documentEditor.selection.getContentControlInfo();
+//Specifies whether the content control can be Edited.
+// To Disable Editing use "true" and To Enable Editing use "false".
+contentControlInfo.canEdit = true;
+//Specifies whether the content control can be Deleted.
+// To Disable Deleting use "true" and To Enable Editing use "false".
+contentControlInfo.canDelete = true;
+container.documentEditor.editor.setContentControlInfo(contentControlInfo);
+{% endhighlight %}
+
 ## Import content control properties
 
-Content control properties can be set using the `ContentControlInfo` and import it using `importContentControlData`
+Content control properties can be import using `importContentControlData`
 
 {% highlight ts %}
 var data = [];
