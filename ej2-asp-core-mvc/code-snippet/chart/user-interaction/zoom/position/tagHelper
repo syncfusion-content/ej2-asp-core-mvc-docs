@@ -1,0 +1,41 @@
+  <ejs-chart id="container" load="window.load" title="Sales History of Product X">
+        <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime" zoomFactor="0.2" zoomPosition="0.6">
+            <e-scrollbarSettings enable="true" enableZoom="false" height="14" trackRadius="8" scrollbarRadius="8"
+                gripColor="transparent" trackColor="yellow" scrollbarColor="red" position="@Syncfusion.EJ2.Charts.ScrollbarPosition.Bottom">
+            </e-scrollbarSettings>
+        </e-chart-primaryxaxis>
+        <e-chart-primaryyaxis>
+            <e-scrollbarSettings enable="true" enableZoom="false" height="14" trackRadius="8" scrollbarRadius="8"
+                gripColor="transparent" trackColor="yellow" scrollbarColor="red" position="@Syncfusion.EJ2.Charts.ScrollbarPosition.Right">
+            </e-scrollbarSettings>
+        </e-chart-primaryyaxis>
+        <e-chart-legendsettings visible="false"></e-chart-legendsettings>
+        <e-chart-zoomsettings enableSelectionZooming="true" enableScrollbar="true" mode="@Syncfusion.EJ2.Charts.ZoomMode.X"></e-chart-zoomsettings>
+        <e-series-collection>
+            <e-series xName="x" yName="y" name="Product X" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Area">
+                <e-series-border width="0.5" color="#00bdae"></e-series-border>
+                <e-series-animation enable="false"></e-series-animation>
+            </e-series>
+        </e-series-collection>
+</ejs-chart>
+<script>
+    var series1 = [];
+    var point1;
+    var value = 40;
+    var i;
+    for (i = 1; i < 500; i++) {
+        if (Math.random() > 0.5) {
+            value += Math.random();
+        }
+        else {
+            value -= Math.random();
+        }
+        point1 = { x: new Date(1950, i + 2, i), y: value.toFixed(1) };
+        series1.push(point1);
+    };
+
+    window.load = function (args) {
+        args.chart.series[0].dataSource = series1;
+    }
+
+</script>
