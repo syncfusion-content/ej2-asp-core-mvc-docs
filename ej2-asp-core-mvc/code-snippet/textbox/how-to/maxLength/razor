@@ -1,0 +1,3 @@
+<div class="control-section">
+    @Html.EJS().TextBox("textbox").Placeholder("Enter the text within 10 character").HtmlAttributes(new Dictionary<string, object>{ { "maxlength", "10" } }).Render()
+</div>
