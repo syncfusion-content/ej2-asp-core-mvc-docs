@@ -201,6 +201,39 @@ Searches for an array of strings within the document and returns the bounding re
 {% endhighlight %}
 {% endtabs %}
 
+## Text Search Improvements
+
+### Overview of Text Search Improvements
+
+The primary goal of these improvements was to significantly reduce the time taken to search for text, especially in large PDF documents, and to provide quicker navigation to search results. The key improvements include:
+
+**Faster Text Search Result Counts:** The time required to calculate and return the total number of occurrences of a search term has been dramatically reduced.
+
+**Improved First Occurrence Marking and Navigation:** Marking the first occurrence of the search term on the first page is now faster, and navigating to the first occurrence on distant pages is also more efficient.
+
+**Handling Large Documents:** Performance improvements are especially noticeable in large PDF files, such as those with 500+ pages or 1000+ pages, where the search process is optimized for speed and responsiveness.
+
+### Performance Comparison
+Below are the comparisons of search performance before and after the improvements across various document sizes:
+
+| Scenario                                           | Before changes      | After changes      |
+|----------------------------------------------------|---------------------|--------------------|
+| **500 pages document - Result of 'the' word with 9090 results** |                     |                    |
+| Mark the first occurrence on first page           | 37.64 sec           | 0.71 sec           |
+| To get the total count value                      | 37.64 sec           | 2.81 sec           |
+| **500 pages document - Navigate the first occurrence in the 100th page** | 37.64 sec           | 0.79 sec           |
+| **1310 pages document - Navigate the first occurrence in the 1271st page** | 1.44 min            | 4.54 sec           |
+| **Text only present within first 10 pages of a 500 pages document** | 37.64 sec           | 0.82 sec           |
+| **Text only present within first 10 pages of a 1310 pages document** | 37.64 sec           | 0.87 sec           |
+
+### Key Benefits
+
+**Significantly Reduced Search Time:** Users now experience faster text search across multiple scenarios, including large documents.
+
+**Improved User Experience:** Immediate search results, faster navigation to occurrences, and quick total count retrieval ensure users can work with large PDFs efficiently.
+
+**Optimized for Large Documents:** The performance is particularly noticeable with documents containing hundreds or thousands of pages, improving overall usability for users with extensive files.
+
 ## See also
 
 * [Toolbar items](./toolbar)
