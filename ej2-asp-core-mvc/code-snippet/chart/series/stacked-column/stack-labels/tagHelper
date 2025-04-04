@@ -1,0 +1,29 @@
+<ejs-chart id="container" title="Mobile Game Market by Country">
+    <e-chart-primaryxaxis valueType="@Syncfusion.EJ2.Charts.ValueType.Category" title="Years" interval="1">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Sales in Billions" minimum="0" maximum="700" interval="100" labelFormat="{value}B">
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true"></e-chart-stacklabels>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="UK" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Germany" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="France" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Italy" xName="X" yName="Y3" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingColumn">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
