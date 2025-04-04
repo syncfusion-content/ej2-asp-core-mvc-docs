@@ -12,7 +12,7 @@ documentation: ug
 
 ## Getting Started with ASP.NET MVC
 
-N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion license key in your ASP.NET MVC application to use our components.
 
 ### Prerequisites
 
@@ -46,7 +46,7 @@ N> The Essential JS 2 supports 4.5+ .NET Framework in the ASP.NET MVC applicatio
 
 **Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](../../nuget-packages) to learn more details about installing Essential JS 2 NuGet packages in various OS environment.
 
 ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -86,7 +86,7 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
 </configuration>
 ```
 
-**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+**Step 4:** Add the client-side resources through CDN in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
 ```html
     <head>
