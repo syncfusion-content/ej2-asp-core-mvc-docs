@@ -547,7 +547,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion Angular Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl` and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl` and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD operations mapping**
 
