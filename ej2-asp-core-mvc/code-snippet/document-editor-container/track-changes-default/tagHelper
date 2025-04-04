@@ -1,0 +1,9 @@
+<ejs-documenteditorcontainer id="container"  documentChange="onDocumentChange" enableToolbar=true serviceUrl="/api/DocumentEditor/" height="590px"></ejs-documenteditorcontainer>
+<script>
+    function onDocumentChange() {
+        var container = document.getElementById("container").ej2_instances[0];
+        if(container !== null){
+           container.documentEditor.enableTrackChanges= true;
+        }
+    }
+</script>
