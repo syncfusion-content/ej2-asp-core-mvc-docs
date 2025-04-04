@@ -153,6 +153,8 @@ You can use the `Tooltip` property to specify the tooltip text to be displayed o
 {% endhighlight %}
 {% endtabs %}
 
+![TooltipText](images/tooltip-text.png)
+
 #### Setting CSS Class
 
 You can use the `CssClass` property to customize the header toolbar item.

@@ -195,6 +195,39 @@ Using the [`EnableScrollbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 
 
+### Position
+
+The [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartScrollbarSettings.html#Syncfusion_EJ2_Charts_ChartScrollbarSettings_Position) property allows users to specify their preferred scrollbar location. By default, both vertical and horizontal scrollbars are rendered near their respective axes. Using the customization options below, you can position the scrollbar as desired:
+
+* Default: `placeNextToAxisLine`.
+* Horizontal scrollbar: Available positions are `Top` and `Bottom`.
+* Vertical scrollbar: Available positions are `Left` and `Right`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/position/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Position.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/position/position.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/zoom/position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Position.cs" %}
+{% include code-snippet/chart/user-interaction/zoom/position/position.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Enable animation
 
 Enable the [`EnableAnimation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartZoomSettings.html#Syncfusion_EJ2_Charts_ChartZoomSettings_EnableAnimation) property to experience smooth transitions when zooming in on the chart.
