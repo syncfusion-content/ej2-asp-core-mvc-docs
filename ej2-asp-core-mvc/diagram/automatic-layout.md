@@ -614,7 +614,12 @@ Diagram allows to refresh the layout at runtime. To refresh the layout, refer to
 
 ### setNodeTemplate
 
-The setNodeTemplate function is provided for the purpose of customizing nodes. It will be called for each node on node initialization. In this function, the node style and its properties can be customized and can bind the custom JSON with node.
+The `setNodeTemplate` function allows you to customize the visual representation and behavior of nodes within your diagram. It is invoked during the initialization of each node, enabling you to define the node’s style, properties, and bind custom JSON data to it.
+
+Typically, the `setNodeTemplate` function accepts a container element (e.g., StackPanel, Grid) to organize the visual components within the node. In the following example, a `StackPanel` is used to organize the node's content, with an `ImageElement` displaying an image and a TextBlock showing text bound to the "Name" property of the node’s data. The StackPanel can contain a variety of elements, including `PathElement`,`NativeElement`,`DiagramElement` and `HtmlElement`.
+You can also set the `cornerRadius` to create a rounded appearance for the node, while `horizontalAlignment` and `verticalAlignment` control the positioning of the StackPanel within the node.
+
+The `orientation` property determines whether child elements are arranged horizontally or vertically.By effectively utilizing the setNodeTemplate function, you can create visually appealing and informative nodes that enhance the overall user experience of your diagram.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
