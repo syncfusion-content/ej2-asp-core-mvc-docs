@@ -859,7 +859,7 @@ public List<Orders> GetOrderData()
   {
     Connection.Open();
 
-    // Dapper automatically handles mapping to your Order class.
+    // Dapper automatically handles mapping to your order class.
     List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
     return orders;
   }
@@ -1113,7 +1113,7 @@ In the code example below, paging a custom data source can be achieved by utiliz
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Processes the DataManager request to perform paging operation operation.
+/// Processes the DataManager request to perform paging operation.
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
