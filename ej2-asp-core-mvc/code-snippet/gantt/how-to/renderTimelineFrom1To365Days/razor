@@ -1,0 +1,19 @@
+        @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
+            "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
+            ).TimelineSettings(tl => tl.TopTier(tt => tt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Month).Format("MMM dd, y")).BottomTier(bt =>
+             bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day).Formatter("formatter"))).Render()
+        
+        <script>
+            var formatter = function (date) {
+                let presentDate = new Date(
+                date.getFullYear(),
+                date.getMonth(),
+                date.getDate()
+            );
+            var start = new Date(presentDate.getFullYear(), 0, 0);
+            var diff = Number(presentDate) - Number(start);
+            var oneDay = 1000 * 60 * 60 * 24;
+            var day = Math.floor(diff / oneDay);
+            return day;
+            }
+        </script>
