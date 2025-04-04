@@ -1,11 +1,29 @@
-@Html.EJS().Grid("Grid").AllowSorting(true).AllowFiltering(true).DataSource(dataManger =>
-    {
-        dataManger.Url("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/").Adaptor("ODataAdaptor");
-    }).Columns(col =>
-        {
-            col.Field("OrderID").HeaderText("Order ID").Width("130").Add();
-            col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
-            col.Field("EmployeeID").HeaderText("Employee ID").Width("115").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-            col.Field("Freight").HeaderText("Freight").Width("150").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-            col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-        }).AllowPaging().PageSettings(page=>page.PageCount(3)).LoadingIndicator(l => { l.IndicatorType(Syncfusion.EJ2.Grids.IndicatorType.Shimmer); }).Render()
+@{
+    var dropDownData = new[] {
+        new { value = "Shimmer", text = "Shimmer" },
+        new { value = "Spinner", text = "Spinner" },
+    };
+}
+<div style="padding-bottom: 20px; display: flex">
+    <label style="padding: 5px 10px 0 0;font-weight: bold"> Change the loading indicator type:</label>
+    <span style="height:fit-content">
+        @Html.EJS().DropDownList("dropDown").Width("150px").Index(0).Change("valueChange").DataSource(dropDownData).Render()
+    </span>
+</div>
+@Html.EJS().Grid("grid").AllowSorting(true).AllowFiltering(true).Height("348px").DataSource(dataManger =>
+{
+    dataManger.Url("https://services.syncfusion.com/aspnet/production/api/UrlDataSource").Adaptor("UrlAdaptor");
+}).Columns(col =>
+{
+   col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+   col.Field("Employees").HeaderText("Employees").Width("150").Add();
+   col.Field("Designation").HeaderText("Designation").Width("115").Add();
+   col.Field("CurrentSalary").HeaderText("Current Salary").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+}).AllowPaging().LoadingIndicator(l => { l.IndicatorType(Syncfusion.EJ2.Grids.IndicatorType.Shimmer); }).Render()
+<script>
+    function valueChange(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.loadingIndicator.indicatorType = document.getElementById("dropDown").ej2_instances[0].value;
+        grid.refreshColumns();
+    }
+</script>
