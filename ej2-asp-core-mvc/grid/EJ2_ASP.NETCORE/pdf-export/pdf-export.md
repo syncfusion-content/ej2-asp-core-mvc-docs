@@ -224,6 +224,22 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 
 ![Export Hierarchy Grid](../images/pdf-export/export-hierarchy-grid.png)
 
+### Format the child Grid columns before exporting
+
+The Syncfusion Grid allows customization of the child Grid's PDF export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailDataBound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the PDF document.
+
+In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property, the date values are formatted as `dd/MM/yyyy` when exported to PDF document.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/pdf-export/format/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Format.cs" %}
+{% include code-snippet/grid/pdf-export/format/format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Remove header row while exporting
 
 When exporting data from the Syncfusion ASP.NET Core Grid, you have an option to remove the header row from the exported file. This can be useful when you want to export grid data without including the header values in the exported document.

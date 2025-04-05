@@ -1,0 +1,33 @@
+@{
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid() { DataSource = (IEnumerable<object>)ViewBag.dataSource,
+       QueryString = "EmployeeID",
+       Columns = new List<Syncfusion.EJ2.Grids.GridColumn>
+       {
+         new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120",TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+         new Syncfusion.EJ2.Grids.GridColumn(){ Field="Freight", HeaderText="Freight", Width="120", Format="C2", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right },
+         new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderDate", HeaderText="Order Date", Width="150", Format="dd-MM-yyyy", Type="date" },
+         new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+       }
+    };
+ }    
+ @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.employeeDataSource).Height("348px").AllowExcelExport().Columns(col =>
+ {
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("125").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("FirstName").HeaderText("First Name").Width("125").Add();
+    col.Field("LastName").HeaderText("Last Name").Width("180").Add();
+    col.Field("City").HeaderText("City").Width("135").Add();
+ }).Toolbar(new List<string>() { "ExcelExport"}).ChildGrid(ChildGrid).ToolbarClick("toolbarClick").ExportDetailDataBound("exportDetailDataBound").Render()
+ <script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.item.id === 'Grid_excelexport') {
+             var excelExportProperties = {
+                  hierarchyExportMode: "All"
+             };
+         grid.excelExport(excelExportProperties);
+       }
+    }
+    function exportDetailDataBound(args) {
+       args.childGrid.columns[2].format = {type: 'date',format: 'dd\\/MM\\/yyyy'};
+    }
+ </script>
