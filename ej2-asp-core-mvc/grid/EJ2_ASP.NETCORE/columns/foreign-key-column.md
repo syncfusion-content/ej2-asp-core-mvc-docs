@@ -141,6 +141,31 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 
 ![Customize filter UI of foreign key column](../images/foreign/foreign-aggergate.png)
 
+## Render foreign key value in column template
+
+The Syncfusion ASP.NET Core Grid allows for rendering foreign key values within a column template, enhancing the display of related data in a clear format. This feature is particularly useful when you want to show a more meaningful representation of a foreign key instead of its underlying value.
+
+To render foreign key values in a column template, you need to define a template for the column using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) property. The `template` property can accept either an HTML element or a function that returns the desired HTML element.
+
+The following example demonstrates how to render foreign key values in a column template within the Grid: 
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="foreignkey-columntemplate.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/foreignkey-columntemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/EmployeeDetails.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render foreign key value in column template](../images/foreign/foreign-key-in-column-template.png)
+
 ## Enable multiple foreign key columns
 
 The Syncfusion Grid component supports the feature of enabling multiple foreign key columns with editing options. This allows users to display columns from foreign data sources in the Grid component.
