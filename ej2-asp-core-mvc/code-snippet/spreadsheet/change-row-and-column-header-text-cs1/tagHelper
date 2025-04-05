@@ -1,0 +1,31 @@
+<ejs-spreadsheet id="spreadsheet" beforeCellRender="beforeCellRender">
+    <e-spreadsheet-sheets>
+        <e-spreadsheet-sheet>
+            <e-spreadsheet-ranges>
+                <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+            </e-spreadsheet-ranges>
+        </e-spreadsheet-sheet>
+    </e-spreadsheet-sheets>
+</ejs-spreadsheet>
+
+<script>
+
+    function beforeCellRender(args) {
+
+        var columnIndexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        var rowIndexes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // To change the column header text.
+        if (columnIndexes.indexOf(args.colIndex) > -1 && args.element.classList.contains('e-header-cell')) {
+            let text = 'Column ' + args.colIndex.toString();
+            // Add the custom text to the innerText of the element.
+            args.element.innerText = text;
+        }
+
+        // To change the row header text
+        if (rowIndexes.indexOf(args.rowIndex) > -1 && args.element.classList.contains('e-header-cell')) {
+            let text = 'R' + args.rowIndex.toString();
+            // Add the custom text to the innerText of the element.
+            args.element.innerText = text;
+        }
+    }
+</script>
