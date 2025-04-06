@@ -321,7 +321,7 @@ namespace Grid_PostgreSQL.Controllers
 <ejs-grid id="Grid" height="348">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -404,7 +404,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="348">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -455,7 +455,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowFiltering="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
     <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
     <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -501,7 +501,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowSorting="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -550,7 +550,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowPaging="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -915,7 +915,7 @@ This section describes step by step process how to retrieve data from a PostgreS
 
 <ejs-grid id="Grid" height="348">
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -1087,7 +1087,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="348">
     <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -1166,7 +1166,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowFiltering="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
     <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
     <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -1240,7 +1240,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowSorting="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+    <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
     <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
     <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -1319,7 +1319,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <ejs-grid id="Grid" allowPaging="true" height="348">
   <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'</e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
