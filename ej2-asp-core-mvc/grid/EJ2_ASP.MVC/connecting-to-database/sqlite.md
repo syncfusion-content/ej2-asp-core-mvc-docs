@@ -690,10 +690,10 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
+/// <param name="value">It contains the specific record detail which is need to be removed.</param>
+/// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
     //Create query to remove the specific from database by passing the primary key column value.
@@ -862,7 +862,7 @@ When you run the application, the resultant Grid will look like this
 
 ## Binding data from SQLite Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a SQLite Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
@@ -1575,10 +1575,10 @@ To perform the delete operation, you need to override the `remove` method of the
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
+/// <param name="value">It contains the specific record detail which is need to be removed.</param>
+/// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
     //Create query to remove the specific from database by passing the primary key column value.
