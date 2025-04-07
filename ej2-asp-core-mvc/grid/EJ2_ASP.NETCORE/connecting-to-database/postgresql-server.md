@@ -885,7 +885,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-When you run the application, the resultant Syncfusion Angular Grid will look like this
+When you run the application, the resultant Syncfusion Grid will look like this
 
 ![Grid bound with PostgreSQL Server data](.../images/database/db-crud.gif)
 
