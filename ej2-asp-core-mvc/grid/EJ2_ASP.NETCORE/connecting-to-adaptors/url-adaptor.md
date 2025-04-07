@@ -617,6 +617,8 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 
 ![UrlAdaptor CRUD operations](../images/adaptors/url-adaptors/adaptor-crud-operation.gif)
 
+> You can find the complete sample for the UrlAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/UrlAdaptor_EJ2Core) link.
+
 **Single method for performing all CRUD operations**
 
 Using the `crudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
