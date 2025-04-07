@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Funnel Chart in ##Platform_Name## Accumulation Chart Component
+# Funnel chart in ##Platform_Name## Accumulation Chart Component
 
 To render a funnel series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Funnel`.
 
@@ -77,7 +77,7 @@ public class FunnelChartData
 
 
 
-## Neck Size
+## Neck size
 
 The funnel's neck size can be customized by using the `neckWidth` and `neckHeight` properties.
 
@@ -111,7 +111,7 @@ public class FunnelChartData
 
 
 
-## Gap Between the Segments
+## Gap between the segments
 
 Funnel chart provides options to customize the space between the segments by using the `gapRatio` property of the series. It ranges from 0 to 1.
 
@@ -179,7 +179,7 @@ public class FunnelChartData
 
 
 
-## Smart Data Label
+## Smart data label
 
 It provides the data label smart arrangement of the funnel and pyramid series. The overlap data label will be placed on left side of the funnel or pyramid series.
 
@@ -248,7 +248,69 @@ public class FunnelChartData
 
 
 
-## See Also
+## Mode
+
+The Funnel chart supports both Standard and Trapezoidal modes of rendering. The default value of the [`FunnelMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_FunnelMode) is `Standard`.
+
+### Standard
+
+The `Standard` funnel mode follows the traditional funnel shape, with the width continuously narrowing down to a point at the bottom.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-standard/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mode-standard.cs" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-standard/mode-standard.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-standard/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mode-standard.cs" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-standard/mode-standard.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Trapezoidal
+
+The `Trapezoidal` mode is a modified funnel shape where the width narrows, but features a flattened or parallel section near the top, creating a trapezoidal appearance. This mode helps compare different data points more clearly while maintaining a funnel-like structure.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-trapezoidal/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mode-trapezoidal.cs" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-trapezoidal/mode-trapezoidal.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-trapezoidal/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Mode-trapezoidal.cs" %}
+{% include code-snippet/chart/accumulation-charts/funnel/mode-trapezoidal/mode-trapezoidal.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## See also
 
 * [Data label](./data-label/)
 * [Grouping](./grouping/)
