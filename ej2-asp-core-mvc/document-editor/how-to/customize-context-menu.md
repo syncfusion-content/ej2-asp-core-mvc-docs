@@ -90,3 +90,27 @@ The following code shows how to hide or show added custom option in context menu
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
+#### Customize Context Menu with sub-menu items
+
+Document Editor allows you to customize the Context Menu with sub-menu items. It can be achieved by using the `addCustomMenu()` method.
+
+The following code shows how to add a sub items in the custom option in context menu in Document Editor Container.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/customize-sub-context-menu/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customize-sub-context-menu" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/customize-sub-context-menu/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customize-sub-context-menu" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
