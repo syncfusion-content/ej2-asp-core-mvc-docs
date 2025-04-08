@@ -11,7 +11,8 @@
         {
             MaxWidth = "850px",
             MinWidth = "140px",
-            SortOrder = "Ascending"
+            SortOrder = "Ascending",
+            Visible = true
 
    }).Render()
         <!-- end of File Manager control -->
