@@ -795,7 +795,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Syncfusion ASP.NET Core Grid will look like this
 
-![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
+![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server data](../images/connecting-microsoft-curd.gif)
 
 ## Binding data from Microsoft SQL Server using CustomAdaptor
 
@@ -1699,4 +1699,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server data](../images/connecting-micro-curd.gif)
+![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server data](../images/connecting-microsoft-curd.gif)
