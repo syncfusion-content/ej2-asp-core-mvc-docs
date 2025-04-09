@@ -2,7 +2,7 @@
 layout: post
 title: MySQL Server Data Binding in Syncfusion ##Platform_Name## Grid
 description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
-control: Custom Adaptor
+control: MySQL
 platform: ej2-asp-core-mvc
 documentation: ug
 domainurl: ##DomainURL##
@@ -144,7 +144,7 @@ namespace Grid_MySQL.Server.Controllers
 
 ### Connecting Syncfusion ASP.NET Core Grid to an API service
 
-To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow the below steps:
 
 **Step 1: Install the Syncfusion ASP.NET Core Package:**
 
