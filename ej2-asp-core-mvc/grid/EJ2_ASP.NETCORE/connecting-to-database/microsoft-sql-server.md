@@ -129,7 +129,7 @@ namespace Grid_MSSQL.Server.Controllers
 
 ### Connecting Syncfusion ASP.NET Core Grid to an API service
 
-To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow the below steps:
 
 **Step 1: Install the Syncfusion ASP.NET Core Package:**
 
