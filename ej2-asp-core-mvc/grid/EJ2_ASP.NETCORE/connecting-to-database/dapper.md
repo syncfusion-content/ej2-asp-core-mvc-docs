@@ -783,7 +783,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![ASP.NET Core Grid Component bound with Microsoft SQL Server using Dapper data](.../images/connecting-micro-curd.gif)
+![ASP.NET Core Grid Component bound with Microsoft SQL Server using Dapper data](../images/connecting-microsoft-curd.gif)
 
 ## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
 
@@ -1669,4 +1669,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-micro-curd.gif) 
+![Syncfusion ASP.NET Core Grid bound with Microsoft SQL Server using Dapper data](../images/connecting-microsoft-curd.gif) 
