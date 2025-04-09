@@ -257,6 +257,23 @@ The following example demonstrates how to prevent local time zone conversion for
 
 ![Prevent to convert local time zone format](../images/databinding/local-time.gif)
 
+## How to set custom headers using a custom adaptor in Syncfusion Grid
+
+Custom headers allow you to send extra information along with your HTTP requests. This information can include authentication tokens, API keys, or any other data required by the server to process the request correctly. By adding custom headers, you can enhance the security and functionality of your application's data communication process.
+
+This section explains how to integrate custom headers into Syncfusion Grid using the `beforeSend` method of the `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/custom-headers/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-headers.cs" %}
+{% include code-snippet/grid/data-binding/custom-headers/custom-headers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom headers using custom adaptor](../images/custom-headers.png)
+
 ## Troubleshoot: Syncfusion ASP.NET Core Grid render rows without data
 
 In ASP.NET Core, by default the JSON results are returned in camelCase format. So Grid field names are also changed in camelCase.
