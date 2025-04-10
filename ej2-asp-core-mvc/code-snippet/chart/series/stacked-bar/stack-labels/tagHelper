@@ -1,0 +1,24 @@
+<ejs-chart id="container" title="Sales Comparison">
+    <e-chart-primaryxaxis valueType="Category" title="Months">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Percentage (%)" minimum="-20" maximum="100" labelFormat="{value}%" edgeLabelPlacement="Shift">
+    </e-chart-primaryyaxis>
+    <e-chart-stacklabels visible="true"></e-chart-stacklabels>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" name="Apple" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Orange" xName="X" yName="Y1" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+        <e-series dataSource="ViewBag.dataSource" name="Wastage" xName="X" yName="Y2" type="@Syncfusion.EJ2.Charts.ChartSeriesType.StackingBar">
+            <e-series-marker>
+                 <e-series-datalabel visible="true"></e-series-datalabel>
+             </e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
