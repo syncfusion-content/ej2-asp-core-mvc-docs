@@ -4,6 +4,7 @@ title: Bind SQL Server Data in Syncfusion ##Platform_Name## Grid using Entity Fr
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion ##Platform_Name## Grid, and performing CRUD operations.
 control: grid
 platform: ej2-asp-core-mvc
+keywords: adaptors, urladaptor, customadaptor, remotedata, entityframework 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -32,7 +33,7 @@ This section describes step by step process how to use Entity Framework to retri
 
 **1.** Open Visual Studio and create an ASP.NET MVC project named **Grid_EntityFramework**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**2.** To use **Entity Framework** and access the **Microsoft SQL Server** database in an ASP.NET MVC application, install the **Entity Framework** package.
+**2.** To use **Entity Framework** and access the **Microsoft SQL Server** database in an ASP.NET MVC application, install the [Entity Framework](https://www.nuget.org/packages/EntityFramework) package.
 
 - Open **NuGet Package Manager** in Visual Studio (**Tools → NuGet Package Manager → Manage NuGet Packages for Solution**).
 - Search for **EntityFramework** and install it.
@@ -41,7 +42,6 @@ Alternatively, you can install it using the **Package Manager Console** with the
 
 ```powershell
 Install-Package EntityFramework
-Install-Package System.Data.SqlClient
 ```
 
 **3.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
@@ -85,14 +85,14 @@ namespace Grid_EntityFramework.Controllers
         }
 
         /// <summary>
-        /// Entity Framework DbContext for managing Orders table in the database.
+        /// Entity Framework DbContext for managing orders table in the database.
         /// </summary>
         public class OrderDbContext : DbContext
         {
             // Initializes a new instance of OrderDbContext and configures the database connection.
             public OrderDbContext(): base(ConnectionString){}
 
-            // Represents the Orders table in the database.
+            // Represents the orders table in the database.
             public DbSet<Orders> Orders { get; set; }
         }
         
@@ -256,14 +256,14 @@ namespace Grid_EntityFramework.Controllers
         }
 
         /// <summary>
-        /// Entity Framework DbContext for managing Orders table in the database.
+        /// Entity Framework DbContext for managing orders table in the database.
         /// </summary>
         public class OrderDbContext : DbContext
         {
             // Initializes a new instance of OrderDbContext and configures the database connection.
             public OrderDbContext(): base(ConnectionString){}
 
-            // Represents the Orders table in the database.
+            // Represents the orders table in the database.
             public DbSet<Orders> Orders { get; set; }
         }
         
@@ -331,14 +331,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -403,14 +403,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -473,14 +473,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -554,14 +554,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -651,14 +651,14 @@ public JsonResult Insert(Orders value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -709,14 +709,14 @@ public void Update(Orders value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -744,10 +744,10 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
+/// <param name="value">It contains the specific record detail which is need to be removed.</param>
+/// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
     int OrderId = Convert.ToInt32(value.key.ToString());
@@ -756,7 +756,7 @@ public void Remove(CRUDModel<Orders> value)
         Orders Order = Context.Orders.Find(OrderId);
         if (Order != null)
         {
-            // Remove the order from the Orders DbSet.
+            // Remove the order from the orders DbSet.
             Context.Orders.Remove(Order);
 
             // Save changes to the database.
@@ -768,14 +768,14 @@ public void Remove(CRUDModel<Orders> value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -915,7 +915,6 @@ Alternatively, you can install it using the **Package Manager Console** with the
 
 ```powershell
 Install-Package EntityFramework
-Install-Package System.Data.SqlClient
 ```
 
 **3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
@@ -998,14 +997,14 @@ namespace Grid_EntityFramework.Controllers
         }
 
         /// <summary>
-        /// Entity Framework DbContext for managing Orders table in the database.
+        /// Entity Framework DbContext for managing orders table in the database.
         /// </summary>
         public class OrderDbContext : DbContext
         {
             // Initializes a new instance of OrderDbContext and configures the database connection.
             public OrderDbContext(): base(ConnectionString){}
 
-            // Represents the Orders table in the database.
+            // Represents the orders table in the database.
             public DbSet<Orders> Orders { get; set; }
         }
         
@@ -1069,14 +1068,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1162,14 +1161,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1253,14 +1252,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1355,14 +1354,14 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1527,14 +1526,14 @@ public JsonResult Insert(Orders value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1622,14 +1621,14 @@ public void Update(Orders value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
@@ -1695,10 +1694,10 @@ To perform the delete operation, you need to override the `remove` method of the
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Remove a specific data item from the data collection.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns void.</returns>
+/// <param name="value">It contains the specific record detail which is need to be removed.</param>
+/// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
     int OrderId = Convert.ToInt32(value.key.ToString());
@@ -1707,7 +1706,7 @@ public void Remove(CRUDModel<Orders> value)
         Orders Order = Context.Orders.Find(OrderId);
         if (Order != null)
         {
-            // Remove the order from the Orders DbSet.
+            // Remove the order from the orders DbSet.
             Context.Orders.Remove(Order);
 
             // Save changes to the database.
@@ -1719,14 +1718,14 @@ public void Remove(CRUDModel<Orders> value)
 }
 
 /// <summary>
-/// Entity Framework DbContext for managing Orders table in the database.
+/// Entity Framework DbContext for managing orders table in the database.
 /// </summary>
 public class OrderDbContext : DbContext
 {
     // Initializes a new instance of OrderDbContext and configures the database connection.
     public OrderDbContext(): base(ConnectionString){}
 
-    // Represents the Orders table in the database.
+    // Represents the orders table in the database.
     public DbSet<Orders> Orders { get; set; }
 }
 
