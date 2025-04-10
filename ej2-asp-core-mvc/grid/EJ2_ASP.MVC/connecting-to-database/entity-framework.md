@@ -906,7 +906,7 @@ This section describes step by step process how to retrieve data from a Microsof
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
-**2.** To use **Entity Framework** and access the **Microsoft SQL Server** database in an ASP.NET MVC application, install the **Entity Framework** package.
+**2.** To use **Entity Framework** and access the **Microsoft SQL Server** database in an ASP.NET MVC application, install the [Entity Framework](https://www.nuget.org/packages/EntityFramework) package.
 
 - Open **NuGet Package Manager** in Visual Studio (**Tools → NuGet Package Manager → Manage NuGet Packages for Solution**).
 - Search for **EntityFramework** and install it.
