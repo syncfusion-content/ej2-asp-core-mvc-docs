@@ -84,7 +84,7 @@ namespace MyWebService.Controllers
         [HttpGet]
         private List<Orders> GetOrderData()
         {
-            // Define the SQL query to fetch all orders from the "Orders" table, ordered by OrderID.
+            // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
             string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
             // Establish a connection to the PostgreSQL database using the connection string.
@@ -275,7 +275,7 @@ public class GridController : ApiController
     [HttpGet]
     private List<Orders> GetOrderData()
     {
-        // Define the SQL query to fetch all orders from the "Orders" table, ordered by OrderID.
+        // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
         string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
         // Establish a connection to the PostgreSQL database using the connection string.
@@ -620,7 +620,7 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Inserts a new order record into the "Orders" table in the PostgreSQL database.
+/// Inserts a new order record into the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the order details to be inserted.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -671,7 +671,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Updates an existing order record in the "Orders" table in the PostgreSQL database.
+/// Updates an existing order record in the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the updated order details.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -723,7 +723,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Deletes an order record from the "Orders" table in the PostgreSQL database.
+/// Deletes an order record from the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the OrderID of the record to be deleted.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -741,7 +741,7 @@ public IHttpActionResult Remove(CRUDModel<Orders> value)
         // Open the database connection.
         Connection.Open();
 
-        // Define an SQL query to delete a record from the "Orders" table where OrderID matches.
+        // Define an SQL query to delete a record from the orders table where OrderID matches.
         string queryStr = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
         // Create a command object to execute the delete query.
@@ -770,7 +770,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch update operations (insert, update, and delete) on the "Orders" table in a single transaction.
+/// Performs batch update operations (insert, update, and delete) on the orders table in a single transaction.
 /// </summary>
 /// <param name="value">The CRUDModel containing lists of added, changed, and deleted order records.</param>
 /// <returns>Returns an HTTP response indicating the success or failure of the batch operation.</returns>
@@ -790,7 +790,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of updated records.
             if (value.changed != null && value.changed.Count > 0)
             {
-                // Define an SQL query to update records in the "Orders" table.
+                // Define an SQL query to update records in the orders table.
                 string updateQuery = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, \"EmployeeID\"=@EmployeeID, \"ShipCity\"=@ShipCity WHERE \"OrderID\"=@OrderID";
 
                 // Create a command object to execute the update query within the transaction.
@@ -818,7 +818,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of newly added records.
             if (value.added != null && value.added.Count > 0)
             {
-                // Define an SQL query to insert new records into the "Orders" table.
+                // Define an SQL query to insert new records into the orders table.
                 string insertQuery = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
                 // Create a command object to execute the insert query within the transaction.
@@ -845,7 +845,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of deleted records.
             if (value.deleted != null && value.deleted.Count > 0)
             {
-                // Define an SQL query to delete records from the "Orders" table based on OrderID.
+                // Define an SQL query to delete records from the orders table based on OrderID.
                 string deleteQuery = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
                 // Create a command object to execute the delete query within the transaction.
@@ -995,7 +995,7 @@ namespace MyWebService.Controllers
         [HttpGet]
         private List<Orders> GetOrderData()
         {
-            // Define the SQL query to fetch all orders from the "Orders" table, ordered by OrderID.
+            // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
             string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
             // Establish a connection to the PostgreSQL database using the connection string.
@@ -1438,7 +1438,7 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Inserts a new order record into the "Orders" table in the PostgreSQL database.
+/// Inserts a new order record into the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the order details to be inserted.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -1526,7 +1526,7 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Updates an existing order record in the "Orders" table in the PostgreSQL database.
+/// Updates an existing order record in the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the updated order details.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -1615,7 +1615,7 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Deletes an order record from the "Orders" table in the PostgreSQL database.
+/// Deletes an order record from the orders table in the PostgreSQL database.
 /// </summary>
 /// <param name="value">The CRUDModel containing the OrderID of the record to be deleted.</param>
 /// <returns>Returns an HTTP response indicating success or failure.</returns>
@@ -1633,7 +1633,7 @@ public IHttpActionResult Remove(CRUDModel<Orders> value)
         // Open the database connection.
         Connection.Open();
 
-        // Define an SQL query to delete a record from the "Orders" table where OrderID matches.
+        // Define an SQL query to delete a record from the orders table where OrderID matches.
         string queryStr = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
         // Create a command object to execute the delete query.
@@ -1700,7 +1700,7 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Performs batch update operations (insert, update, and delete) on the "Orders" table in a single transaction.
+/// Performs batch update operations (insert, update, and delete) on the orders table in a single transaction.
 /// </summary>
 /// <param name="value">The CRUDModel containing lists of added, changed, and deleted order records.</param>
 /// <returns>Returns an HTTP response indicating the success or failure of the batch operation.</returns>
@@ -1720,7 +1720,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of updated records.
             if (value.changed != null && value.changed.Count > 0)
             {
-                // Define an SQL query to update records in the "Orders" table.
+                // Define an SQL query to update records in the orders table.
                 string updateQuery = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, \"EmployeeID\"=@EmployeeID, \"ShipCity\"=@ShipCity WHERE \"OrderID\"=@OrderID";
 
                 // Create a command object to execute the update query within the transaction.
@@ -1748,7 +1748,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of newly added records.
             if (value.added != null && value.added.Count > 0)
             {
-                // Define an SQL query to insert new records into the "Orders" table.
+                // Define an SQL query to insert new records into the orders table.
                 string insertQuery = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
                 // Create a command object to execute the insert query within the transaction.
@@ -1775,7 +1775,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
             // Process the list of deleted records.
             if (value.deleted != null && value.deleted.Count > 0)
             {
-                // Define an SQL query to delete records from the "Orders" table based on OrderID.
+                // Define an SQL query to delete records from the orders table based on OrderID.
                 string deleteQuery = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
                 // Create a command object to execute the delete query within the transaction.
