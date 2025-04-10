@@ -8,8 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Form support
+# Form support in ##Platform_Name## Rich Text Editor Control
 
 This below sample demonstrate how to get the Rich Text Editor value in button click.
 
@@ -36,7 +35,7 @@ Render the Rich Text Editor in form as below.
 
 ```
 
-## Obtain the Value
+## Obtain the value
 
 Upon submitting the form, `getValue` method will be triggered. Through the `FormData` class, Rich Text Editor value obtained as below.
 
@@ -63,10 +62,7 @@ Upon submitting the form, `getValue` method will be triggered. Through the `Form
 {% endtabs %}
 {% endif %}
 
-
-
-## See Also
+## See also
 
 * [How to integrate the third party library](./third-party-integration/)
 * [How to validate the value](./validation/)
-* [How to get the Rich Text Editor value on the controller](./how-to/render-rich-text-editor-for)

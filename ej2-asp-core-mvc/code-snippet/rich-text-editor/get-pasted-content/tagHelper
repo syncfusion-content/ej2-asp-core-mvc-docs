@@ -1,0 +1,9 @@
+<ejs-richtexteditor id="pasteCleanup" afterPasteCleanup="afterPasteCleanup">
+</ejs-richtexteditor>
+
+<script>
+    function afterPasteCleanup(args){
+        // Here you can get the pasted Html string using args.value
+        console.log(args.value);
+    }
+</script>

@@ -1,1 +1,1 @@
-@Html.EJS().RichTextEditor("defaultRTE").ShiftEnterKey(Syncfusion.EJ2.RichTextEditor.ShiftEnterKey.BR).Value(ViewBag.value).Render()
+@Html.EJS().RichTextEditor("editor").ShiftEnterKey(Syncfusion.EJ2.RichTextEditor.ShiftEnterKey.BR).Value(ViewBag.value).Render()

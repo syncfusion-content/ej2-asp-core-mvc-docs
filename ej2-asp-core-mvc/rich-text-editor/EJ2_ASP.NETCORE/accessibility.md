@@ -39,7 +39,7 @@ The accessibility compliance for the Rich Text Editor control is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
 
-## ARIA Attributes
+## ARIA attributes
 
 The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includes the following attributes.
 
@@ -83,7 +83,7 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 {% endtabs %}
 {% endif %}
 
-## Keyboard Navigation
+## Keyboard navigation
 
 The Rich Text Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor control.
 
@@ -97,6 +97,6 @@ The accessibility compliance of the Rich Text Editor control is shown in the fol
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
-## See Also
+## See also
 
 * [General Accessibility Guidelines](../common/accessibility)

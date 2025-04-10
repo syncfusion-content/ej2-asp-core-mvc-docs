@@ -1,2 +1,11 @@
-<ejs-richtexteditor id="defaultRTE" value="@ViewBag.value" saveInterval="500">
+<ejs-richtexteditor id="editor" value="@ViewBag.value" saveInterval="500" change="onChange">
 </ejs-richtexteditor>
+
+<script type="text/javascript">
+
+    function onChange(e) {
+        //here you can add your code
+        var editorValue = e.value;
+    }
+
+</script>
