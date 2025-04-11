@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQLite Server data to Syncfusion ASP.NET MVC  Grid
+# Connecting SQLite Server data to Syncfusion ASP.NET MVC Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion ASP.NET MVC  Grid.
 
@@ -224,7 +224,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-// Replace `xxxx` with your actual port number
+// Replace `xxxx` with your actual port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
