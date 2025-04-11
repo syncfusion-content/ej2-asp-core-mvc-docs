@@ -257,11 +257,15 @@ The following example demonstrates how to prevent local time zone conversion for
 
 ![Prevent to convert local time zone format](../images/databinding/local-time.gif)
 
-## How to set custom headers using a custom adaptor in Syncfusion Grid
+## How to set custom headers using a custom adaptor in Syncfusion ASP.NET Core Grid
 
-Custom headers allow you to send extra information along with your HTTP requests. This information can include authentication tokens, API keys, or any other data required by the server to process the request correctly. By adding custom headers, you can enhance the security and functionality of your application's data communication process.
+Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion ASP.NET Core Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
 
-This section explains how to integrate custom headers into Syncfusion Grid using the `beforeSend` method of the `WebApiAdaptor`.
+This method is particularly useful when integrating the Grid with authenticated APIs, where requests must include authorization tokens or other security credentials to ensure secure access.
+
+To achieve this, the `WebApiAdaptor` can be extended to create the custom adaptor. The `beforeSend` method in the custom adaptor allows modifying request headers before sending them to the server. This ensures that every request from the Grid includes the required headers.
+
+The following example demonstrates how to set custom headers using the custom adaptor in Syncfusion ASP.NET Core Grid. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
