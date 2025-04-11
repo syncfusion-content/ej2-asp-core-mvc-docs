@@ -4,6 +4,7 @@ title: Bind SQL Server Data in Syncfusion ##Platform_Name## Grid using Entity Fr
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion ##Platform_Name## Grid, and performing CRUD operations.
 control: grid
 platform: ej2-asp-core-mvc
+keywords: adaptors, urladaptor, customadaptor, remotedata, entityframework
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -24,7 +25,7 @@ The [UrlAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connec
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET Core Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET Core Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
 ## Binding data using Entity Framework from Microsoft SQL Server via an API service.
 
@@ -138,7 +139,7 @@ namespace Grid_EntityFramework.Server.Controllers
 
 ![Hosted API URL](../images/Ms-Sql-data.png)
 
-### Connecting Syncfusion ASP.NET Core Grid to an API Service
+### Connecting Syncfusion ASP.NET Core Grid to an API service
 
 To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
@@ -610,7 +611,7 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
     </e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -954,7 +955,7 @@ When you run the application, the resultant Grid will look like this
 
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET Core Grid.
+This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion AsP.NET Core Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET Core Grid to an API service](##connecting-syncfusion-aspnet-core-grid-to-an-api-service)
 
@@ -1408,7 +1409,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion ASP.NET Core Grid, utilize the [e-grid-editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit) documentation.
+To enable editing in the Syncfusion ASP.NET Core Grid, utilize the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit) documentation.
 
 In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property configured to display toolbar items for editing purpose.
 
@@ -1424,7 +1425,7 @@ In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.c
     </e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
@@ -1800,7 +1801,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
     <e-grid-columns>
-        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true></e-grid-column>
+        <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
         <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='Freight' headerText='Freight' format="C2" width='160' textAlign='Right'></e-grid-column>
