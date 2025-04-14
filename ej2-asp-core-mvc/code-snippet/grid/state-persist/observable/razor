@@ -16,9 +16,9 @@
 <script>
     function created() {
         const grid = document.getElementById("grid").ej2_instances[0];
-        const query = grid.getDataModule().generateQuery();
-        const state = ej.grids.getStateEventArgument(query);
-        dataStateChange(state);
+        const query = grid.getDataModule().generateQuery(); // Generate the initial query state from the Grid's data module.
+        const state = ej.grids.getStateEventArgument(query); // Retrieve the Grid's current state based on the generated query.
+        dataStateChange(state); // Send the retrieved state to the service to fetch data accordingly.
     }
     function dataStateChange(state) {
         const grid = document.getElementById("grid").ej2_instances[0];

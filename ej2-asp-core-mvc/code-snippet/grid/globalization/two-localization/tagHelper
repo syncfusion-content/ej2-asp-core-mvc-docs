@@ -7,7 +7,7 @@
 </e-grid-columns>
 </ejs-grid>
 
-<ejs-grid id="Grid2" dataSource="@ViewBag.datasource" allowPaging="true" locale="en" >
+<ejs-grid id="Grid2" dataSource="@ViewBag.datasource" allowPaging="true" >
 <e-grid-columns>
     <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign= "Right"></e-grid-column>
     <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>

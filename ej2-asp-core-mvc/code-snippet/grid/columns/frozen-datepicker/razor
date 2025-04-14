@@ -1,6 +1,6 @@
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).FrozenColumns(2).Columns(col =>
 {
-    col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Edit(new { create = "createDatePicker", read = "readDatePicker", destroy = "destroyDatePicker", write = "writeDatePicker" }).Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();

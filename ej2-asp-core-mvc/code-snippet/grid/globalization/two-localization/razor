@@ -9,7 +9,7 @@
     col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
-}).AllowPaging().Locale("en").Render()
+}).AllowPaging().Render()
 <script>
     ej.base.L10n.load({
         'fr-FR': {
