@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Markup Annotation Support in ##Platform_Name## PDF Viewer Component | Syncfusion
+title: Text Markup Annotations in ##Platform_Name## PDF Viewer | Syncfusion
 description: Learn here all about Text Markup Annotation in Syncfusion ##Platform_Name## PDF Viewer component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Markup Annotation
