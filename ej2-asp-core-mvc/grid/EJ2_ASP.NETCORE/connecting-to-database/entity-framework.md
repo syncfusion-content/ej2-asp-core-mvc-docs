@@ -63,7 +63,7 @@ namespace Grid_EntityFramework.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object along with the total record count.</returns>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -97,17 +97,17 @@ namespace Grid_EntityFramework.Server.Controllers
     // Create a class that inherits from DbContext(Entity Framework Core).
     public class OrderDbContext : DbContext
     {
-      //Declare a private variable to store the connection string.
+      // Declare a private variable to store the connection string.
       private readonly string _ConnectionString;
 
-      //Define a constructor that accepts a connection string.
+      // Define a constructor that accepts a connection string.
       public OrderDbContext(string ConnectionString)
       {
-        //Store the provided connection string.
+        // Store the provided connection string.
         _ConnectionString = ConnectionString;
       }
 
-      //Override the onConfiguring method to tell EF Core to use SQL server.
+      // Override the onConfiguring method to tell EF Core to use SQL server.
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
         // Use the connection string to configure the database connection.
@@ -219,7 +219,11 @@ To ensure proper script execution, register the Syncfusion Script Manager `<ejs-
 
 **Step 5:** Add ASP.NET Core Grid:
 
-Now, add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
+**1.**  Add the Syncfusion ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page. Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+
+**2.** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
+
+**3.** The `UrlAdaptor` acts as the base adaptor for interacting with remote data service. Most of the built-in adaptors are derived from the `UrlAdaptor`.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -243,7 +247,7 @@ namespace Grid_EntityFramework.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object along with the total record count.</returns>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -327,6 +331,8 @@ namespace Grid_EntityFramework.Controllers
 
 {% endhighlight %}
 {% endtabs %}
+
+> Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
 **Step 6:** Configure the server:
 
@@ -624,21 +630,6 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
 
 > * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [isIdentity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
-The below class is used to structure data sent during CRUD operations.
-
-```cs
-public class CRUDModel<T> where T : class
-{
-    public string action { get; set; }
-    public string keyColumn { get; set; }
-    public object key { get; set; }
-    public T value { get; set; }
-    public List<T> added { get; set; }
-    public List<T> changed { get; set; }
-    public List<T> deleted { get; set; }
-    public IDictionary<string, object> @params { get; set; }
-}
-```
 
 **Insert Operation:**
 
@@ -824,7 +815,7 @@ public class OrderDbContext : DbContext
     _ConnectionString = ConnectionString;
   }
 
-  //Override the onConfiguring method to tell EF Core to use SQL server.
+  // Override the onConfiguring method to tell EF Core to use SQL server.
   protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
   {
     // Use the connection string to configure the database connection.
@@ -968,7 +959,7 @@ This section describes step by step process how to use Entity Framework to retri
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a **DbSet<Orders>** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
+  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **OrderDbContext**. This class extends **DbContext** and is configured to connect to a SQL Server database using the provided connection string. It includes a **DbSet&lt;Orders&gt;** property, enabling interaction with the **Orders** table in the database. The method retrieves all orders from the database asynchronously and returns them as a list of `Orders` objects.
 
   * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
@@ -1027,7 +1018,7 @@ namespace Grid_EntityFramework.Server.Controllers
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object along with the total record count.</returns>
+    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
     [HttpPost]
     [Route("api/[controller]")]
     public object Post([FromBody] DataManagerRequest DataManagerRequest)
@@ -1061,17 +1052,17 @@ namespace Grid_EntityFramework.Server.Controllers
     // Create a class that inherits from DbContext(Entity Framework Core).
     public class OrderDbContext : DbContext
     {
-      //Declare a private variable to store the connection string.
+      // Declare a private variable to store the connection string.
       private readonly string _ConnectionString;
 
-      //Define a constructor that accepts a connection string.
+      // Define a constructor that accepts a connection string.
       public OrderDbContext(string ConnectionString)
       {
-        //Store the provided connection string.
+        // Store the provided connection string.
         _ConnectionString = ConnectionString;
       }
 
-      //Override the onConfiguring method to tell EF Core to use SQL server.
+      // Override the onConfiguring method to tell EF Core to use SQL server.
       protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
       {
         // Use the connection string to configure the database connection.
@@ -1152,22 +1143,22 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
     </e-grid-columns>
 </ejs-grid>
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1233,22 +1224,22 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1308,22 +1299,22 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1386,22 +1377,22 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1434,25 +1425,25 @@ In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.c
 </ejs-grid>
 
 <script>
-    class CustomAdaptor extends ej.data.UrlAdaptor {
-        processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
-            return original;
-        }
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        let grid = document.getElementById("Grid").ej2_instances[0];
-        if (grid) {
-            let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-                adaptor: new CustomAdaptor(),
-                insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-                updateUrl: "https://localhost:xxxx/api/Grid/Update",
-                removeUrl: "https://localhost:xxxx/api/Grid/Remove",
-            });
-            grid.dataSource = dataManager;
-        }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+processResponse(data, ds, query, xhr, request, changes) {
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    return original;
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+let grid = document.getElementById("Grid").ej2_instances[0];
+if (grid) {
+    let dataManager = new ejs.data.DataManager({
+	url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+	adaptor: new CustomAdaptor(),
+	insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+	updateUrl: "https://localhost:xxxx/api/Grid/Update",
+	removeUrl: "https://localhost:xxxx/api/Grid/Remove",
     });
+    grid.dataSource = dataManager;
+}
+});
 </script>
 
 {% endhighlight %}
@@ -1478,36 +1469,36 @@ To execute the insert operation, you will need to override the `insert` method o
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-        processResponse(data, ds, query, xhr, request, changes) {
-            var original = super.processResponse(data, ds, query, xhr, request, changes);
-            return original;
-        }
-        insert(dataManager, data) {
-        return {
-                url: dataManager.dataSource.insertUrl || dataManager.dataSource.url,
-                data: JSON.stringify({
-                    __RequestVerificationToken: "Syncfusion",
-                    value: data,
-                    action: 'insert'
-                }),
-                type: 'POST'
-        };
-    }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+processResponse(data, ds, query, xhr, request, changes) {
+    var original = super.processResponse(data, ds, query, xhr, request, changes);
+    return original;
+}
+insert(dataManager, data) {
+return {
+	url: dataManager.dataSource.insertUrl || dataManager.dataSource.url,
+	data: JSON.stringify({
+	    __RequestVerificationToken: "Syncfusion",
+	    value: data,
+	    action: 'insert'
+	}),
+	type: 'POST'
+};
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid",
+			adaptor: new CustomAdaptor(),
+			insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+			updateUrl: "https://localhost:xxxx/api/Grid/Update",
+			removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+		});
+		grid.dataSource = dataManager;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource",
-				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+});
 </script>
 
 {% endhighlight %}
@@ -1603,11 +1594,11 @@ To execute the update operation, override the `update` method of the `CustomAdap
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource",
-				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
+			url: "https://localhost:xxxx/api/Grid",
+			adaptor: new CustomAdaptor(),
+			insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+			updateUrl: "https://localhost:xxxx/api/Grid/Update",
+			removeUrl: "https://localhost:xxxx/api/Grid/Remove",
 			});
 			grid.dataSource = dataManager;
 		}
@@ -1712,11 +1703,12 @@ To perform the delete operation, you need to override the `remove` method of the
 		let grid = document.getElementById("Grid").ej2_instances[0];
 		if (grid) {
 			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/Grid/UrlDataSource",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
+				url: "https://localhost:xxxx/api/Grid",
+				adaptor: new CustomAdaptor(),
+				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+				updateUrl: "https://localhost:xxxx/api/Grid/Update",
+				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
 			});
 			grid.dataSource = dataManager;
 		}
@@ -1800,6 +1792,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Batch"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -1939,4 +1932,4 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-![Grid bound with Microsoft SQL server data using Entity Framework](../images/connecting-micro-curd.gif)
+![Grid bound with Microsoft SQL server data using Entity Framework](../images/database/microsoft-sql-batch.gif)
