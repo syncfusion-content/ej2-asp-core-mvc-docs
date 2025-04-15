@@ -31,9 +31,7 @@ This section describes step by step process how to retrieve data from a PostgreS
 
 To configure a server with Syncfusion ASP.NET Core Grid, follow the below steps:
 
-1. Project Creation:
-
-Open Visual Studio and create an ASP.NET Core project named **Grid_PostgreSQL**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
+**1.** Open Visual Studio and create an ASP.NET Core project named **Grid_PostgreSQL**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
 **2.** To connect a PostgreSQL Server database using the PostgreSQL driver in your application, you need to install the [Npgsql.EntityFrameworkCore.PostgreSQL ](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) NuGet package. To add **Npgsql.EntityFrameworkCore.PostgreSQL** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
@@ -140,6 +138,8 @@ namespace Grid_PostgreSQL.Controllers
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
 
 **6.** Finally, the retrieved data from PostgreSQL Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+
+### Connecting Syncfusion ASP.NET Core Grid to an API service
 
 To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow these steps:
 
