@@ -107,7 +107,7 @@ namespace Grid_PostgreSQL.Controllers
       // Close the connection after executing the command.
       Connection.Close();
 
-      // Cast the data fetched from NpgsqlDataAdapter to List.<T>
+      // Cast the data fetched from NpgsqlDataAdapter to List<T>.
       List<Orders> dataSource = (from DataRow Data in DataTable.Rows
         select new Orders()
           {
@@ -145,7 +145,7 @@ To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Stu
 
 **Step 1:** Install the Syncfusion ASP.NET Core Package:
 
-To add `ASP.NET Core` in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) and install it.
+To add `ASP.NET Core` in the application, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) and install it.
 Alternatively, you can install it using the following Package Manager Console command:
 
 {% tabs %}
@@ -289,7 +289,7 @@ namespace Grid_PostgreSQL.Controllers
       // Close the connection after executing the command.
       Connection.Close();
 
-      // Cast the data fetched from NpgsqlDataAdapter to List.<T>
+      // Cast the data fetched from NpgsqlDataAdapter to List<T>.
       List<Orders> dataSource = (from DataRow Data in DataTable.Rows
         select new Orders()
           {
@@ -387,7 +387,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
   {
     DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
-    //Add custom logic here if needed and remove above method.
+    // Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -428,7 +428,8 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Retrieve data from the data source (e.g., database).
   IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
@@ -440,6 +441,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
         DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
       }
     }
+    // Add custom logic here if needed and remove above method.
   }
   // Get the total records count.
   int totalRecordsCount = DataSource.Count();
@@ -479,12 +481,14 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Retrieve data from the data source (e.g., database).
   IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
 
-  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling sorting operation.
   if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
   {
     DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+    // Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -527,18 +531,22 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
   // Get the total records count.
   int totalRecordsCount = DataSource.Count();
-
-  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+  
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling paging operation.
   if (DataManagerRequest.Skip != 0)
   {
     DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+    // Add custom logic here if needed and remove above method.
   }
   if (DataManagerRequest.Take != 0)
   {
     DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+    // Add custom logic here if needed and remove above method.
   }
+  
   // Return data based on the request.
   return new { result = DataSource, count = totalRecordsCount };
 }
@@ -758,7 +766,7 @@ public void Remove([FromBody] CRUDModel<Orders> value)
   // Close the database connection after executing the command.
   Connection.Close();
 
-  //Add custom logic here if needed and remove above method.
+  // Add custom logic here if needed and remove above method.
 }
 
 public class CRUDModel<T> where T : class
@@ -864,7 +872,7 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
       // Close the database connection after executing the command.
       Connection.Close();
 
-      //Add custom logic here if needed and remove above method.
+      // Add custom logic here if needed and remove above method.
     }
   }
   return new JsonResult(value);
@@ -1011,7 +1019,7 @@ namespace Grid_PostgreSQL.Controllers
       // Close the connection after executing the command.
       Connection.Close();
 
-      // Cast the data fetched from NpgsqlDataAdapter to List.<T>
+      // Cast the data fetched from NpgsqlDataAdapter to List<T>.
       List<Orders> dataSource = (from DataRow Data in DataTable.Rows
         select new Orders()
           {
@@ -1070,7 +1078,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
   {
     DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
-    //Add custom logic here if needed and remove above method.
+    // Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -1085,7 +1093,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Search" })" height="348">
-    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -1147,7 +1154,7 @@ public object Post(DataManagerRequest DataManagerRequest)
       foreach (WhereFilter predicate in condition.predicates)
       {
         DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-        //Add custom logic here if needed and remove above method.
+        // Add custom logic here if needed and remove above method.
       }
     }
   }
@@ -1164,7 +1171,6 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" allowFiltering="true" height="348">
-  <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -1223,7 +1229,7 @@ public object Post(DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
   {
     DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
-    //Add custom logic here if needed and remove above method.
+    // Add custom logic here if needed and remove above method.
   }
 
   // Get the total count of records.
@@ -1238,7 +1244,6 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" allowSorting="true" height="348">
-  <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -1249,22 +1254,22 @@ public object Post(DataManagerRequest DataManagerRequest)
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1300,12 +1305,12 @@ public object Post(DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Skip != 0)
   {
     DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
-    //Add custom logic here if needed and remove above method.
+    // Add custom logic here if needed and remove above method.
   }
   if (DataManagerRequest.Take != 0)
   {
     DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
-    //Add custom logic here if needed and remove above method.
+    // Add custom logic here if needed and remove above method.
   }
 
   // Return data based on the request.
@@ -1317,7 +1322,6 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" allowPaging="true" height="348">
-  <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager> // Replace `xxxx` with your actual localhost port number.
   <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right'></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160'></e-grid-column>
@@ -1328,22 +1332,22 @@ public object Post(DataManagerRequest DataManagerRequest)
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-				adaptor: new CustomAdaptor(),
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1368,12 +1372,6 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-grid id="Grid" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
-    <e-data-manager url='https://localhost:xxxx/api/Grid'
-                        insertUrl='https://localhost:xxxx/api/Grid/Insert'
-                        updateUrl='https://localhost:xxxx/api/Grid/Update'
-                        removeUrl='https://localhost:xxxx/api/Grid/Remove'
-                        adaptor="UrlAdaptor"> // Replace `xxxx` with your actual localhost port number.
-    </e-data-manager>
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true></e-grid-column>
@@ -1385,25 +1383,25 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
 </ejs-grid>
 
 <script>
-    class CustomAdaptor extends ej.data.UrlAdaptor {
-        processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
-            return original;
-        }
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        let grid = document.getElementById("Grid").ej2_instances[0];
-        if (grid) {
-            let dataManager = new ejs.data.DataManager({
-                url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
-                adaptor: new CustomAdaptor(),
-                insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-                updateUrl: "https://localhost:xxxx/api/Grid/Update",
-                removeUrl: "https://localhost:xxxx/api/Grid/Remove",
-            });
-            grid.dataSource = dataManager;
-        }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+processResponse(data, ds, query, xhr, request, changes) {
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    return original;
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+let grid = document.getElementById("Grid").ej2_instances[0];
+if (grid) {
+    let dataManager = new ejs.data.DataManager({
+	url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+	adaptor: new CustomAdaptor(),
+	insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+	updateUrl: "https://localhost:xxxx/api/Grid/Update",
+	removeUrl: "https://localhost:xxxx/api/Grid/Remove",
     });
+    grid.dataSource = dataManager;
+}
+});
 </script>
 
 {% endhighlight %}
@@ -1482,36 +1480,36 @@ public class CRUDModel<T> where T : class
 {% highlight html tabtitle="Index.cshtml" %}
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-        processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
-            return original;
-        }
-        insert(dm, data) {
-        return {
-                url: dm.dataSource.insertUrl || dm.dataSource.url,
-                data: JSON.stringify({
-                    __RequestVerificationToken: "Syncfusion",
-                    value: data,
-                    action: 'insert'
-                }),
-                type: 'POST'
-        };
-    }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+processResponse(data, ds, query, xhr, request, changes) {
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    return original;
+}
+insert(dm, data) {
+return {
+	url: dm.dataSource.insertUrl || dm.dataSource.url,
+	data: JSON.stringify({
+	    __RequestVerificationToken: "Syncfusion",
+	    value: data,
+	    action: 'insert'
+	}),
+	type: 'POST'
+};
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+			insertUrl: "https://localhost:xxxx/api/Grid/Insert", 
+			updateUrl: "https://localhost:xxxx/api/Grid/Update",
+			removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+		});
+		grid.dataSource = dataManager;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid",
-				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+});
 </script>
 
 {% endhighlight %}
@@ -1571,36 +1569,36 @@ public class CRUDModel<T> where T : class
 {% highlight html tabtitle="Index.cshtml" %}
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-        processResponse(data, ds, query, xhr, request, changes) {
-            const original = super.processResponse(data, ds, query, xhr, request, changes);
-            return original;
-        }
-        update(dm, keyField, value) {
-            return {
-            url: dm.dataSource.updateUrl || dm.dataSource.url,
-            data: JSON.stringify({
-            __RequestVerificationToken: "Syncfusion",
-            value: value,
-            action: 'update',
-            }),
-            type: 'POST',
-            };
-        }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+processResponse(data, ds, query, xhr, request, changes) {
+    const original = super.processResponse(data, ds, query, xhr, request, changes);
+    return original;
+}
+update(dm, keyField, value) {
+    return {
+    url: dm.dataSource.updateUrl || dm.dataSource.url,
+    data: JSON.stringify({
+    __RequestVerificationToken: "Syncfusion",
+    value: value,
+    action: 'update',
+    }),
+    type: 'POST',
+    };
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+			insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+			updateUrl: "https://localhost:xxxx/api/Grid/Update",
+			removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+		});
+		grid.dataSource = dataManager;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid",
-				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+});
 </script>
 
 {% endhighlight %}
@@ -1640,7 +1638,7 @@ public void Remove([FromBody] CRUDModel<Orders> value)
   // Close the database connection after executing the command.
   Connection.Close();
 
-  //Add custom logic here if needed and remove above method.
+  // Add custom logic here if needed and remove above method.
 }
 
 public class CRUDModel<T> where T : class
@@ -1660,37 +1658,37 @@ public class CRUDModel<T> where T : class
 {% highlight html tabtitle="Index.cshtml" %}
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
-        remove(dm, keyField, value) {
-            return {
-            url: dm.dataSource.removeUrl || dm.dataSource.url,
-            data: JSON.stringify({
-            __RequestVerificationToken: "Syncfusion",
-            key: value,
-            keyColumn: keyField,
-            action: 'remove',
-            }),
-            type: 'POST',
-            };
-        }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid",
-				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+remove(dm, keyField, value) {
+    return {
+    url: dm.dataSource.removeUrl || dm.dataSource.url,
+    data: JSON.stringify({
+    __RequestVerificationToken: "Syncfusion",
+    key: value,
+    keyColumn: keyField,
+    action: 'remove',
+    }),
+    type: 'POST',
+    };
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+			insertUrl: "https://localhost:xxxx/api/Grid/Insert",
+			updateUrl: "https://localhost:xxxx/api/Grid/Update",
+			removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
@@ -1784,7 +1782,7 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<Orders> value)
       // Close the database connection after executing the command.
       Connection.Close();
 
-      //Add custom logic here if needed and remove above method.
+      // Add custom logic here if needed and remove above method.
     }
   }
   return new JsonResult(value);
@@ -1817,37 +1815,37 @@ public class CRUDModel<T> where T : class
 </ejs-grid>
 
 <script>
-	class CustomAdaptor extends ej.data.UrlAdaptor {
-		processResponse(data, ds, query, xhr, request, changes) {
-			const original = super.processResponse(data, ds, query, xhr, request, changes);
-			return original;
-		}
-        batchRequest(dm, changes, e) {
-            return {
-            url: dm.dataSource.batchUrl || dm.dataSource.url,
-            data: JSON.stringify({
-            __RequestVerificationToken: "Syncfusion",
-            added: changes.addedRecords,
-            changed: changes.changedRecords,
-            deleted: changes.deletedRecords,
-            key: e.key,
-            action: 'batch',
-            }),
-            type: 'POST',
-            };
-        }
+class CustomAdaptor extends ej.data.UrlAdaptor {
+	processResponse(data, ds, query, xhr, request, changes) {
+		const original = super.processResponse(data, ds, query, xhr, request, changes);
+		return original;
 	}
-	document.addEventListener("DOMContentLoaded", function () {
-		let grid = document.getElementById("Grid").ej2_instances[0];
-		if (grid) {
-			let dataManager = new ejs.data.DataManager({
-				url: "https://localhost:xxxx/api/Grid",
-				adaptor: new CustomAdaptor(),
-				batchUrl: "https://localhost:xxxx/api/Grid/BatchUpdate",
-			});
-			grid.dataSource = dataManager;
-		}
-	});
+batchRequest(dm, changes, e) {
+    return {
+    url: dm.dataSource.batchUrl || dm.dataSource.url,
+    data: JSON.stringify({
+    __RequestVerificationToken: "Syncfusion",
+    added: changes.addedRecords,
+    changed: changes.changedRecords,
+    deleted: changes.deletedRecords,
+    key: e.key,
+    action: 'batch',
+    }),
+    type: 'POST',
+    };
+}
+}
+document.addEventListener("DOMContentLoaded", function () {
+	let grid = document.getElementById("Grid").ej2_instances[0];
+	if (grid) {
+		let dataManager = new ejs.data.DataManager({
+			url: "https://localhost:xxxx/api/Grid", // Replace xxxx with your actual port number.
+			adaptor: new CustomAdaptor(),
+			batchUrl: "https://localhost:xxxx/api/Grid/BatchUpdate",
+		});
+		grid.dataSource = dataManager;
+	}
+});
 </script>
 
 {% endhighlight %}
