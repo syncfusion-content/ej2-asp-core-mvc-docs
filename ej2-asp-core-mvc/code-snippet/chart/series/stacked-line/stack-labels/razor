@@ -1,0 +1,18 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y")
+    .Name("John").DataSource(ViewBag.dataSource).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y1")
+    .Name("Peter").DataSource(ViewBag.dataSource).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y2")
+    .Name("Steve").DataSource(ViewBag.dataSource).Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingLine)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y3")
+    .Name("Charle").DataSource(ViewBag.dataSource).Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).Interval(1)
+).PrimaryYAxis(py => py.Title("Expense").Interval(100).LabelFormat("${value}")).ChartArea(area => area.Border(br => br.Width(0))
+).StackLabels(stackLabels => stackLabels.Visible(true)).Tooltip(tt => tt.Enable(true)).Render()
+
