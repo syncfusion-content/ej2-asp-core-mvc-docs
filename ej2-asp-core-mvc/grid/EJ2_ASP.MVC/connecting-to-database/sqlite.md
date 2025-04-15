@@ -1670,9 +1670,7 @@ To perform the batch operation, override the `batchRequest` method of the `Custo
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/Grid/UrlDataSource",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
