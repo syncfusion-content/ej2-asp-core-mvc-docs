@@ -1655,7 +1655,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-## Batch Operation:
+**Batch Operation:**
 
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
