@@ -1844,9 +1844,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/api/Grid",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/api/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
