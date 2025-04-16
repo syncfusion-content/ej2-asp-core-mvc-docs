@@ -598,8 +598,8 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' width='160' validationRules="@(new { required=true})"></e-grid-column>
-        <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' validationRules="@(new { required=true})" textAlign='Right'></e-grid-column>
-        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='EmployeeID' headerText='Employee ID' width='160' validationRules="@(new { required=true, number = true})" textAlign='Right'></e-grid-column>
+        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true, min=1, max=1000 })" width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='ShipCity' headerText='Ship City' validationRules="@(new { required=true})" width='150'></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
@@ -1376,8 +1376,8 @@ To enable editing in ASP.NET Core Grid, refer to the editing [documentation](htt
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' validationRules="@(new { required=true})" width='160'></e-grid-column>
-        <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
-        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true, number = true})" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true, min=1, max=1000})" width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='ShipCity' headerText='Ship City' validationRules="@(new { required=true})" width='150'></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
@@ -1808,8 +1808,8 @@ public class CRUDModel<T> where T : class
     <e-grid-columns>
         <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isPrimaryKey=true isIdentity=true></e-grid-column>
         <e-grid-column field='CustomerID' headerText='Customer ID' validationRules="@(new { required=true})" width='160'></e-grid-column>
-        <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
-        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true, number = true})" width='160' textAlign='Right'></e-grid-column>
+        <e-grid-column field='Freight' headerText='Freight' format="C2" validationRules="@(new { required=true, min=1, max=1000})" width='160' textAlign='Right'></e-grid-column>
         <e-grid-column field='ShipCity' headerText='Ship City' validationRules="@(new { required=true})" width='150'></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
