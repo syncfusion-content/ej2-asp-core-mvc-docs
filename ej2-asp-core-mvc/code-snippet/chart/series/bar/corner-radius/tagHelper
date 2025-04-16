@@ -1,0 +1,22 @@
+<ejs-chart id="container" title="Unemployment rate (%)" pointRender="pointRender">
+    <e-chart-primaryxaxis minimum="2005" maximum="2012" interval="1" title="Year">
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis minimum="3" maximum="12" interval="1" title="Percentage" labelFormat="{value}%">
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="ViewBag.dataSource" xName="X" yName="Y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Bar">
+            <e-series-cornerradius topRight="10" bottomRight="10"></e-series-cornerradius>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>
+
+<script>
+    function pointRender(args) {
+        if (args.point.y < 7.5) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

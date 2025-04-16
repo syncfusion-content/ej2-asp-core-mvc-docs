@@ -41,4 +41,3 @@ Assume the editor in your live application is actively used by 1000 users and ea
 #### See Also
 
 - [Collaborative editing using Redis cache in ASP.NET Core](../../document-editor/collaborative-editing/using-redis-cache-asp-net)
-- [Collaborative editing using Microsoft SQL server in ASP.NET Core](../../document-editor/collaborative-editing/using-dot-net)

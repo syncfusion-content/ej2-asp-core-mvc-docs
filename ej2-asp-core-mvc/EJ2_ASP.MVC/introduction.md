@@ -124,8 +124,10 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc">TreeGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/getting-started-mvc">Spreadsheet</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started">MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started">Markdown Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started">Word Processor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/image-editor/getting-started">Image Editor</a></div>
@@ -136,24 +138,30 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/file-formats/presentation/create-read-edit-powerpoint-files-in-asp-net-mvc">PowerPoint</a></div>
         <div><p class="controlcategory">LAYOUT</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/getting-started">Dialog</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/predefined-dialogs/getting-started">Predefined Dialog</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/listview/getting-started">ListView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started-asp-mvc">Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/getting-started">Splitter</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/card/getting-started">Card</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/avatar/getting-started-asp-mvc">Avatar</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/timeline/getting-started">Timeline</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DATA VISUALIZATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started">Charts</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/3d-chart/getting-started">3D Chart</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/circular-chart-3d/getting-started">3D Circular Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stock-chart/getting-started">Stock Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/circular-gauge/getting-started">Circular Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/linear-gauge/getting-started">Linear Gauge</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/getting-started">Diagram</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/heatmap-chart/getting-started">HeatMap Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/maps/getting-started">Map</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/range-navigator/getting-started">Range Navigator</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/smithchart/getting-started">Smith Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/getting-started">Sparkline Charts</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/getting-started">Accumulation Chart</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/barcode/getting-started">Barcode</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/treemap/getting-started">TreeMap</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/bullet-chart/getting-started">Bullet Chart</a></div>
@@ -186,12 +194,18 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/color-picker/getting-started">Color Picker</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started">File Upload</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/range-slider/getting-started">Range Slider</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/textarea/getting-started">TextArea</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started">Toggle Switch Button</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/signature/getting-started">Signature</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rating/getting-started">Rating</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/otp-input/getting-started">OTP Input</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started">Speech To Text</a></div>
         <div><p class="controlcategory">FORMS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/in-place-editor/getting-started">In-place Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/getting-started">Query Builder</a></div>
+        <div><p class="control-category">Interactive Chat</p></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ai-assistview/getting-started">AI AssistView</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/chat-ui/getting-started">Chat UI</a></div>
     </td>
     <td>
         <div><p class="controlcategory-topics">DROPDOWNS</p></div>
@@ -199,6 +213,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/list-box/getting-started-mvc">ListBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/combo-box/getting-started">ComboBox</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started">Dropdown List</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-tree/getting-started">DropDownTree</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multi-select/getting-started">Multiselect DropDown</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/mention/getting-started">Mention</a></div>
         <div><p class="controlcategory">NAVIGATION</p></div>
@@ -210,8 +225,11 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toolbar/getting-started">Toolbar</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/treeview/getting-started">TreeView</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/getting-started">File Manager</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/ribbon/getting-started">Ribbon</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/breadcrumb/getting-started">Breadcrumb</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/carousel/getting-started">Carousel</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/appbar/getting-started">AppBar</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/stepper/getting-started">Stepper</a></div>
         <div><p class="controlcategory">NOTIFICATION</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/toast/getting-started">Toast</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/progress-bar/getting-started">Progress Bar</a></div>
