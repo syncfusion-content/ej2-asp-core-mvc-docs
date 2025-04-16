@@ -224,7 +224,13 @@ To ensure proper script execution, register the Syncfusion Script Manager `EJS()
 
 **Step 5:** Add the Syncfusion ASP.NET MVC Grid
 
-Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` file.
+Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtml` file. This allows the Grid to be rendered and interact with data dynamically from a remote database.
+
+* Create a `DataManager` instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the `adaptor` UrlAdaptor.
+
+* The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
+
+* The `UrlAdaptor` acts as the base adaptor for interacting with remote data service. Most of the built-in adaptors are derived from the `UrlAdaptor`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}

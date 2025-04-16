@@ -1,0 +1,23 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+      series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Bar).
+        XName("X").
+        YName("Y").
+        CornerRadius(cr => cr.TopRight(10).BottomRight(10)).
+        DataSource(ViewBag.dataSource).
+        Add();
+   }
+    ).PrimaryXAxis(px => px.Minimum(2005).Maximum(2012).Interval(1).Title("Year")
+    ).PrimaryYAxis(py => py.Minimum(3).Maximum(12).Interval(1).Title("Percentage").LabelFormat("{value}%")
+    ).Title("Unemployment rate (%)").PointRender("pointRender").Render()
+
+<script>
+    function pointRender(args) {
+        if (args.point.y < 7.5) {
+            args.fill = '#ff6347';
+        }
+        else {
+            args.fill = '#009cb8';
+        }
+    }
+</script>

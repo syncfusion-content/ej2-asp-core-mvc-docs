@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked Bar in ##Platform_Name## Charts Component
+# Stacked bar in ##Platform_Name## Charts Component
 
 ## Stacked bar
 
@@ -315,6 +315,134 @@ Use the `Border` property to customize the width and color of the border for emp
 {% endtabs %}
 {% endif %}
 
+
+
+## Stack labels
+
+The stack labels in stacked charts display cumulative total values for stack segments directly using data labels. If a stacked point has negative values, the stack labels are displayed below the point.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/stack-labels.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels/stack-labels.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Stack labels customization
+
+Stack labels have various properties for customization to enhance the visual based on your requirements:
+
+* [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Visible) - Specifies whether stack labels are visible. Setting to true will display the labels. Default is false.
+* [`Fill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Fill) - Defines the background color of the stack labels. Accepts valid CSS color strings (hex, RGBA, etc.). Default is transparent.
+* [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Format) - Formats the text displayed in the stack labels. Supports placeholders like {value}. Default is null.
+* [`Angle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Angle) - Specifies the rotation angle for stack labels in degrees. Default is 0.
+* [`Rx`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Rx) - Defines the rounded corner radius along the X-axis (horizontal direction) for the stack label background. Default is 5.
+* [`Ry`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Ry) - Defines the rounded corner radius along the Y-axis (vertical direction) for the stack label background. Default is 5.
+* [`Margin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Margin) - Configures the margin around the stack label (left, right, top, and bottom).
+* [`Border`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Border) - Configures the appearance of the stack label's border.
+* [`Font`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartStackLabelSettings.html#Syncfusion_EJ2_Charts_ChartStackLabelSettings_Font) - Customizes the stack label text, including font size, color, style, weight, and family.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels-cus.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/stack-labels-cus.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Stack-labels-cus.cs" %}
+{% include code-snippet/chart/series/stacked-bar/stack-labels-cus/stack-labels-cus.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Corner radius
+
+The [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in the chart series is used to customize the corner radius for stacked bar series. This allows you to create stacked bars with rounded corners, giving your chart a more polished appearance. You can customize each corner of the stacked bars using the topLeft, topRight, bottomLeft, and bottomRight properties.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-bar/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-bar/corner-radius/corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+### Point corner radius
+
+We can customize the corner radius for individual points in the chart series using the [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event by setting the [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in its event argument.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/point-corner-radius/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-bar/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-bar/point-corner-radius/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-corner-radius.cs" %}
+{% include code-snippet/chart/series/stacked-bar/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Events
 
 ### Series render
@@ -370,6 +498,8 @@ The `PointRender` event allows you to customize each data point before it is ren
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ## See also
 
