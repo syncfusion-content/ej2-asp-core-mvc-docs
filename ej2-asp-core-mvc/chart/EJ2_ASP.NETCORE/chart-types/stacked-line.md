@@ -289,62 +289,6 @@ Use the `border` property to customize the width and color of the border for emp
 {% endtabs %}
 {% endif %}
 
-## Events
-
-### Series render
-
-The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-line/series-render/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Series-render.cs" %}
-{% include code-snippet/chart/series/stacked-line/series-render/series-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-line/series-render/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Series-render.cs" %}
-{% include code-snippet/chart/series/stacked-line/series-render/series-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Point render
-
-The `pointRender` event allows you to customize each data point before it is rendered on the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-line/point-render/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Point-render.cs" %}
-{% include code-snippet/chart/series/stacked-line/point-render/point-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-line/point-render/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Point-render.cs" %}
-{% include code-snippet/chart/series/stacked-line/point-render/point-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Stack labels
@@ -409,6 +353,64 @@ Stack labels have various properties for customization to enhance the visual bas
 {% endhighlight %}
 {% highlight c# tabtitle="Stack-labels-cus.cs" %}
 {% include code-snippet/chart/series/stacked-line/stack-labels-cus/stack-labels-cus.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Events
+
+### Series render
+
+The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-line/series-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/stacked-line/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-line/series-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/stacked-line/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Point render
+
+The `pointRender` event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-line/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/stacked-line/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-line/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/stacked-line/point-render/point-render.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
