@@ -1,122 +1,130 @@
 ---
 layout: post
-title: Bind SQL Data in Syncfusion ##Platform_Name## Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, binding it to Syncfusion Grid, and performing CRUD operations.
-platform: ej2-asp-core-mvc
+title: Bind SQLite Server Data in Syncfusion ##Platform_Name## Grid
+description: Learn how to consume data from SQLite Server, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
 control: grid
-keywords: adaptors, customadaptor, urladaptor, dapper, remotedata 
+platform: ej2-asp-core-mvc
+keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL data to Syncfusion ASP.NET MVC Grid using Dapper
+# Connecting SQLite Server data to Syncfusion ASP.NET MVC Grid
 
-This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion ASP.NET MVC Grid.
+This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion ASP.NET MVC  Grid.
 
-Microsoft SQL Server database can be bound to Grid using **Dapper** in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, custom adaptor feature and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Dapper**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
-
-**Dapper**
-
-Dapper is an open-source and micro **ORM** (object-relational mapping) product developed by the StackOverflow team. It is very lightweight and straightforward to use with a project. It supports **PostgreSQL**, **MySQL**, **SQL** Server, and other databases.
-
-Dapper expands upon the functionality of the [IDbConnection interface](https://learn.microsoft.com/en-us/dotnet/api/system.data.idbconnection?view=net-8.0), which offers a connection to a data source compatible with the .NET Framework. Additionally, Dapper facilitates writing queries. It simplifies the execution of SQL queries on a database and the mapping of results to C# domain classes.
-
-Dapper can be used to interact with a Microsoft SQL Server database in conjunction with **Microsoft.Data.SqlClient**.
+SQLite Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_DataSource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a SQLite Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the SQLite database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
-## Binding data using Dapper from Microsoft SQL Server via an API service
+## Binding data from SQLite Server using an API service
 
-This section describes step by step process how to use Dapper to retrieve data from a Microsoft SQL Server using an API service and bind it to the Grid.
+This section describes step by step process how to retrieve data from a SQLite Server using an API service and bind it to the Grid.
 
-### Creating an API Service
+### Creating an API service
 
-To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
+**1.** Open Visual Studio and create an ASP.NET MVC project named **Grid_SQLite**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**1.** Open Visual Studio and create an ASP.NET MVC project named **Grid_Dapper**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
+**2.** To connect a SQLite Server database using the SQLite driver in your application, you need to install the [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) NuGet package. To add **Microsoft.Data.Sqlite** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
-**2.** To use Dapper and access the Microsoft SQL Server database in our ASP.NET MVC application, need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and [Dapper](https://www.nuget.org/packages/Dapper) NuGet packages. To add **Microsoft.Data.SqlClient** and Dapper in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
 
-**3.** Create a MVC controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
-
-**4.** In the MVC controller (aka, GridController), a connection is established to Microsoft SQL Server within the **GetOrderData()** method using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of `Orders` objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable** as shown in the following code snippet.
+**4.** In an API controller (aka, GridController), connect to SQLite Server. In the **GetOrderData()** method **SqliteConnection** helps to connect the SQLite Server database. Next, the **SqliteCommand** is used to retrieve the desired collection from the database. Then populate the data collection from the **SqliteCommand** into a list using the **Read** method of **SqliteDataReader** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
-using System;
+using Microsoft.Data.Sqlite;
+using Syncfusion.EJ2.Base;
 using System.Collections.Generic;
-using System.Data;
-using Microsoft.Data.SqlClient;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web.Mvc;
-using Syncfusion.EJ2.Base;
-using Syncfusion.EJ2.Linq;
 
-namespace Grid_Dapper.Controllers
+namespace Grid_Sqlite.Controllers
 {
   public class GridController : Controller
-  {
-    /// <summary>
-    /// Connection string for the database.
-    /// </summary>
-    private readonly string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
-    public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
-    {            
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-
-      // Get the total count of records.
-      int totalRecordsCount = dataSource.Count();
-
-      // Return data based on the request.
-      return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
-    }
-
-    /// <summary>
-    /// Retrieves order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    private List<Orders> GetOrderData()
     {
-      string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
+        private readonly string ConnectionString = "<Enter a valid connection string>";
 
-      //Create SQL connection.
-      using (IDbConnection connection = new SqlConnection(ConnectionString))
-      {
-        connection.Open();
+        /// <summary>
+        /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
+        /// </summary>
+        /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+        /// <returns>Returns a JSON object along with the total record count.</returns>
+        [HttpPost]
+        public object UrlDataSource()
+        {
+            // Retrieve data from the database.
+            IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-        // Dapper automatically handles mapping to your orders class.
-        return connection.Query<Orders>(queryString).ToList();
-      }
+            // Get the total count of records.
+            int totalRecordsCount = dataSource.Count();
+
+            // Return the data and total record count as a JSON response.
+            return Ok(new { result = dataSource, count = totalRecordsCount });
+        }
+
+        /// <summary>
+        /// Retrieves the order data from the database.
+        /// </summary>
+        /// <returns>Returns a list of orders fetched from the database.</returns>
+        [HttpGet]
+        public List<Orders> GetOrderData()
+        {
+            // SQL query to fetch all records from the Orders table and sort them by OrderID.
+            string queryStr = "SELECT * FROM Orders ORDER BY OrderID.";
+
+            // Create a list to store retrieved orders from the database.
+            List<Orders> dataSource = new List<Orders>();
+
+            // Establish a connection to the SQLite database using the provided connection string.
+            using (SqliteConnection connection = new SqliteConnection(ConnectionString))
+            {
+                // Open the database connection to enable SQL queries.
+                connection.Open();
+
+                // Create a command to execute the SQL query.
+                using (SqliteCommand command = new SqliteCommand(queryStr, connection))
+                {
+                    // Execute the command and retrieve data using SqliteDataReader.
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Orders order = new Orders
+                            {
+                                OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+                                CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+                                EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+                                ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+                                Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+                            };
+                            dataSource.Add(order);
+                        }
+                    }
+                }
+            }
+            return dataSource;
+        }
+
+        /// Represents an order entity with relevant fields.
+        public class Orders
+        {
+            [Key]
+            public int? OrderID { get; set; }
+            public string? CustomerID { get; set; }
+            public int? EmployeeID { get; set; }
+            public decimal? Freight { get; set; }
+            public string? ShipCity { get; set; }
+        }
     }
-
-    #region Models
-    /// <summary>
-    /// Represents the orders model mapped to the database table.
-    /// </summary>
-    public class Orders
-    {
-      public int? OrderID { get; set; }
-      public string CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string ShipCity { get; set; }
-    }
-    #endregion
-  }
 }
 
 {% endhighlight %}
@@ -124,7 +132,7 @@ namespace Grid_Dapper.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
 
-**6.** Finally, the retrieved data from Microsoft SQL Server database using Dapper which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/Grid/UrlDatasource`, as shown in the browser page below.
+**6.** Finally, the retrieved data from SQLite Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/Grid/UrlDataSource`, as shown in the browser page below.
 
 ![Hosted API URL](../images/database/db-data.png)
 
@@ -216,7 +224,7 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-// Replace `xxxx` with your actual port number
+// Replace `xxxx` with your actual port number.
 @Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/Grid/UrlDataSource").Adaptor("UrlAdaptor")).Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -230,59 +238,91 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 
 {% highlight cs tabtitle="GridController.cs" %}
 
-public class GridController : Controller
+using Microsoft.Data.Sqlite;
+using Syncfusion.EJ2.Base;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web.Mvc;
+
+namespace Grid_Sqlite.Controllers
 {
-  /// <summary>
-  /// Connection string for the database.
-  /// </summary>
-  private readonly string ConnectionString = @"<Enter a valid connection string>";
-
-  /// <summary>
-  ///  Retrieves the order data from the database.
-  /// </summary>
-  /// <returns>Returns a JSON result containing the list of orders and total count.</returns>
-  public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
-  {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
-
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
-
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
-  }
-
-  /// <summary>
-  /// Retrieves order data from the database.
-  /// </summary>
-  /// <returns>Returns a list of orders fetched from the database.</returns>
-  private List<Orders> GetOrderData()
-  {
-    string queryString = "SELECT * FROM dbo.Orders ORDER BY OrderID";
-    using (IDbConnection connection = new SqlConnection(ConnectionString))
+  public class GridController : Controller
     {
-      connection.Open();
-      return connection.Query<Orders>(queryString).ToList();
-    }
-  }
+        private readonly string ConnectionString = "<Enter a valid connection string>";
 
-  #region Models
-  /// <summary>
-  /// Represents the orders model mapped to the database table.
-  /// </summary>
-  public class Orders
-  {
-      public int? OrderID { get; set; }
-      public string CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string ShipCity { get; set; }
-  }
-  #endregion
+        /// <summary>
+        /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
+        /// </summary>
+        /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+        /// <returns>Returns a JSON object along with the total record count.</returns>
+        [HttpPost]
+        public object UrlDataSource()
+        {
+            // Retrieve data from the database.
+            IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+
+            // Get the total count of records.
+            int totalRecordsCount = dataSource.Count();
+
+            // Return the data and total record count as a JSON response.
+            return Ok(new { result = dataSource, count = totalRecordsCount });
+        }
+
+        /// <summary>
+        /// Retrieves the order data from the database.
+        /// </summary>
+        /// <returns>Returns a list of orders fetched from the database.</returns>
+        [HttpGet]
+        public List<Orders> GetOrderData()
+        {
+            // SQL query to fetch all records from the Orders table and sort them by OrderID.
+            string queryStr = "SELECT * FROM Orders ORDER BY OrderID.";
+
+            // Create a list to store retrieved orders from the database.
+            List<Orders> dataSource = new List<Orders>();
+
+            // Establish a connection to the SQLite database using the provided connection string.
+            using (SqliteConnection connection = new SqliteConnection(ConnectionString))
+            {
+                // Open the database connection to enable SQL queries.
+                connection.Open();
+
+                // Create a command to execute the SQL query.
+                using (SqliteCommand command = new SqliteCommand(queryStr, connection))
+                {
+                    // Execute the command and retrieve data using SqliteDataReader.
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Orders order = new Orders
+                            {
+                                OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+                                CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+                                EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+                                ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+                                Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+                            };
+                            dataSource.Add(order);
+                        }
+                    }
+                }
+            }
+            return dataSource;
+        }
+
+        /// Represents an order entity with relevant fields.
+        public class Orders
+        {
+            [Key]
+            public int? OrderID { get; set; }
+            public string? CustomerID { get; set; }
+            public int? EmployeeID { get; set; }
+            public decimal? Freight { get; set; }
+            public string? ShipCity { get; set; }
+        }
+    }
 }
 
 {% endhighlight %}
@@ -420,7 +460,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
   IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-  
+
   // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation();
 
@@ -548,7 +588,7 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 
 **Insert operation:**
 
-To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, the record will be inserted into the **Orders** table by calling the following **POST** method of an API. Utilizing `Dapper` simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -556,35 +596,39 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 /// <summary>
 /// Inserts a new data item into the data collection.
 /// </summary>
-/// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
+/// <param name="value">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns void.</returns>
-public void Insert(CRUDModel<Orders> newRecord)
+public void Insert(Orders value)
 {
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+    //Create query to insert the specific into the database by accessing its properties.
+    string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.CustomerID}','{value.Freight}','{value.ShipCity}','{value.EmployeeID}')";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
 
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, newRecord.value);
-  }
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
 
-  //Add custom logic here if needed and remove above method.
+    //Execute this code to reflect the changes into the database.
+    Command.ExecuteNonQuery();
+
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
 }
 
-public class CRUDModel<T> where T : class
+public class Orders
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
@@ -592,7 +636,7 @@ public class CRUDModel<T> where T : class
 
 **Update operation:**
 
-To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -600,43 +644,47 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 /// <summary>
 /// Update a existing data item from the data collection.
 /// </summary>
-/// <param name="updateOrder">It contains the updated record detail which is need to be updated.</param>
+/// <param name="value">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns void.</returns>
-public void Update(CRUDModel<Orders> updateOrder)
+public void Update(Orders value)
 {
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+    //Create query to update the changes into the database by accessing its properties.
+    string queryStr = $"Update Orders set CustomerID='{value.CustomerID}', Freight='{value.Freight}',EmployeeID='{value.EmployeeID}',ShipCity='{value.ShipCity}' where OrderID='{value.OrderID}'";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
 
-    //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, updateOrder.value);
-  }
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
 
-  //Add custom logic here if needed and remove above method.
+    //Execute this code to reflect the changes into the database.
+    Command.ExecuteNonQuery();
+
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
 }
 
-public class CRUDModel<T> where T : class
+public class Orders
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-**Delete operation**
+**Delete operation:**
 
-To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -648,117 +696,147 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 /// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+    //Create query to remove the specific from database by passing the primary key column value.
+    string queryStr = $"Delete from Orders where OrderID={value.key}";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
+
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
-  }
+    Command.ExecuteNonQuery();
 
-  //Add custom logic here if needed and remove above method.
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
 }
-
 public class CRUDModel<T> where T : class
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+
+public class Orders
+{
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-**Batch operation**
+**Batch operation:**
 
-To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request. Utilizing Dapper simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform batch operation, define the edit `Mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Batchupdate (Insert, Update and Delete) a collection of data items from the data collection.
+/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
 /// </summary>
-/// <param name="CRUDModel<T>">The set of information along with details about the CRUD actions to be executed from the database.</param>
+/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns a JsonResult containing the processed data.</returns>
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
-    if (value.changed != null && value.changed.Count > 0)
+    using (SqliteConnection connection = new SqliteConnection(ConnectionString))
     {
-        foreach (Orders Record in (IEnumerable<Orders>)value.changed)
+        // Open the database connection.
+        connection.Open();
+
+        using (SqliteTransaction transaction = connection.BeginTransaction())
         {
-          //Create query to update the changes into the database by accessing its properties.
-          string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
-
-          //Create SQL connection.
-          using (IDbConnection Connection = new SqlConnection(ConnectionString))
-          {
-              Connection.Open();
-
-              //Execute this code to reflect the changes into the database.
-              Connection.Execute(queryStr, Record);
-          }
-          //Add custom logic here if needed and remove above method.
-        }
-    }
-    if (value.added != null && value.added.Count > 0)
-    {
-        foreach (Orders Record in (IEnumerable<Orders>)value.added)
-        {
-            //Create query to insert the specific into the database by accessing its properties.
-            string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
-
-            //Create SQL connection.
-            using (IDbConnection Connection = new SqlConnection(ConnectionString))
+            using (SqliteCommand command = connection.CreateCommand())
             {
-                Connection.Open();
+                // Process updated records if any.
+                if (value.changed != null && value.changed.Count > 0)
+                {
+                    command.CommandText = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
+                    foreach (Orders record in value.changed)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.ExecuteNonQuery();
+                    }
+                }
 
-                //Execute this code to reflect the changes into the database.
-                Connection.Execute(queryStr, Record);
+                // Process inserted records if any.
+                if (value.added != null && value.added.Count > 0)
+                {
+                    command.CommandText = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+                    foreach (Orders record in value.added)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID);
+                        command.ExecuteNonQuery();
+                    }
+                }
+
+                // Process deleted records if any.
+                if (value.deleted != null && value.deleted.Count > 0)
+                {
+                    command.CommandText = "DELETE FROM Orders WHERE OrderID=@OrderID";
+                    foreach (Orders record in value.deleted)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.ExecuteNonQuery();
+                    }
+                }
             }
-            //Add custom logic here if needed and remove above method.
+
+            // Commit the transaction.
+            transaction.Commit();
         }
     }
-    if (value.deleted != null && value.deleted.Count > 0)
-    {
-        foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
-        {
-            //Create query to remove the specific from database by passing the primary key column value.
-            string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
 
-            //Create SQL connection.
-            using (IDbConnection Connection = new SqlConnection(ConnectionString))
-            {
-                Connection.Open();
-
-                //Execute this code to reflect the changes into the database.
-                Connection.Execute(queryStr, new { OrderID = Record.OrderID });
-            }
-            //Add custom logic here if needed and remove above method.
-        }
-    }
-    return Json(value, JsonRequestBehavior.AllowGet);
+    return Json(new { success = true, message = "Batch update successful.", data = value }, JsonRequestBehavior.AllowGet);
 }
+
+
 public class CRUDModel<T> where T : class
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+
+public class Orders
+{
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
@@ -780,15 +858,15 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Server data using Dapper](../images/database/db-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with Microsoft SQL Sqlite](../images/database/db-crud.gif)
 
-## Binding data from Microsoft SQL Server using Dapper with CustomAdaptor
+## Binding data from SQLite Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a SQLite Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
-**2.** To use **Dapper** and access the Microsoft SQL Server database in your application, you need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To add **Microsoft.Data.SqlClient** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To connect a SQLite Server database using the SQLite driver in your application, you need to install the [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) NuGet package. To add **Microsoft.Data.Sqlite** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
@@ -797,10 +875,10 @@ This section describes step by step process how to retrieve data from a Microsof
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this **GetOrderData** method, a connection is established to Microsoft SQL Server using **SqlConnection** which implements the **IDbConnection** interface. The SQL query string to retrieve data from the database is prepared. Using Dapper, the query is executed and data is fetched directly into a list of **Orders** objects. Dapper automates the mapping process, eliminating the need for manual mapping using **SqlDataAdapter** and **DataTable**
+  * In this **GetOrderData** method, the SQLite Server database data is fetch by using the **SqliteDataReader** class.
+  * Employ the `processResponse` method to asynchronously iterate over the results retrieved by executing the SQL query with **ExecuteReaderAsync** method, gathering the data into a list.
+  * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
-  * Finally, return the response as a **result** and **count** pair object in the `processResponse` method to bind the data to the Grid.
-  
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
@@ -836,50 +914,91 @@ This section describes step by step process how to retrieve data from a Microsof
 
 {% highlight cs tabtitle="GridController.cs" %}
 
-/// <summary>
-/// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-/// </summary>
-/// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-/// <returns>Returns a JSON object with the filtered, sorted, and paginated data along with the total record count.</returns>
-public object Post(DataManagerRequest DataManagerRequest) 
+using Microsoft.Data.Sqlite;
+using Syncfusion.EJ2.Base;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web.Mvc;
+
+namespace Grid_Sqlite.Controllers
 {
-  // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+  public class GridController : Controller
+    {
+        private readonly string ConnectionString = "<Enter a valid connection string>";
 
-  // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation();
+        /// <summary>
+        /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
+        /// </summary>
+        /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
+        /// <returns>Returns a JSON object along with the total record count.</returns>
+        [HttpPost]
+        public object UrlDataSource()
+        {
+            // Retrieve data from the database.
+            IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-  // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
+            // Get the total count of records.
+            int totalRecordsCount = dataSource.Count();
 
-  // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
-}
+            // Return the data and total record count as a JSON response.
+            return Ok(new { result = dataSource, count = totalRecordsCount });
+        }
 
-public List<Orders> GetOrderData()
-{
-  string queryStr = "SELECT * FROM dbo.Orders ORDER BY OrderID;";
-  
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
-    Connection.Open();
+        /// <summary>
+        /// Retrieves the order data from the database.
+        /// </summary>
+        /// <returns>Returns a list of orders fetched from the database.</returns>
+        [HttpGet]
+        public List<Orders> GetOrderData()
+        {
+            // SQL query to fetch all records from the Orders table and sort them by OrderID.
+            string queryStr = "SELECT * FROM Orders ORDER BY OrderID.";
 
-    // Dapper automatically handles mapping to your orders class.
-    List<Orders> orders = Connection.Query<Orders>(queryStr).ToList();
-    return orders;
-  }
-}
+            // Create a list to store retrieved orders from the database.
+            List<Orders> dataSource = new List<Orders>();
 
-public class Orders 
-{
-  [Key]
-  public int? OrderID { get; set; }
-  public string? CustomerID { get; set; }
-  public int? EmployeeID { get; set; }
-  public decimal? Freight { get; set; }
-  public string? ShipCity { get; set; }
-  public string? ShipCountry { get; set; }
+            // Establish a connection to the SQLite database using the provided connection string.
+            using (SqliteConnection connection = new SqliteConnection(ConnectionString))
+            {
+                // Open the database connection to enable SQL queries.
+                connection.Open();
+
+                // Create a command to execute the SQL query.
+                using (SqliteCommand command = new SqliteCommand(queryStr, connection))
+                {
+                    // Execute the command and retrieve data using SqliteDataReader.
+                    using (SqliteDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            Orders order = new Orders
+                            {
+                                OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
+                                CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
+                                EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
+                                ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
+                                Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
+                            };
+                            dataSource.Add(order);
+                        }
+                    }
+                }
+            }
+            return dataSource;
+        }
+
+        /// Represents an order entity with relevant fields.
+        public class Orders
+        {
+            [Key]
+            public int? OrderID { get; set; }
+            public string? CustomerID { get; set; }
+            public int? EmployeeID { get; set; }
+            public decimal? Freight { get; set; }
+            public string? ShipCity { get; set; }
+        }
+    }
 }
 
 {% endhighlight %}
@@ -901,19 +1020,18 @@ In the code example below, searching a custom data source can be accomplished by
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
-[HttpPost]
-public object Post(DataManagerRequest DataManagerRequest) 
+public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling searching operation.
-  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+  if (DataManagerRequest.Search?.Count > 0)
   {
-    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+    dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
     //Add custom logic here if needed and remove above method.
   }
 
@@ -921,7 +1039,7 @@ public object Post(DataManagerRequest DataManagerRequest)
   int totalRecordsCount = DataSource.Count();
 
   // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -974,31 +1092,32 @@ In the code example below, filtering a custom data source can be achieved by uti
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the filtered data along with the total record count.</returns>
-public object Post(DataManagerRequest DataManagerRequest) 
+public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
-  QueryableOperation queryableOperation = new QueryableOperation(); 
+  QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling filtering operation.
-  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) {
+  if (DataManagerRequest.Where?.Count > 0)
+  {
     foreach (WhereFilter condition in DataManagerRequest.Where)
     {
       foreach (WhereFilter predicate in condition.predicates)
       {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+        dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
         //Add custom logic here if needed and remove above method.
       }
     }
   }
 
   // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
+  int totalRecordsCount = DataSource.Count();  
 
   // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -1051,18 +1170,18 @@ In the code example below, sorting a custom data source can be accomplished by e
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the sorted data along with the total record count.</returns>
-public object Post(DataManagerRequest DataManagerRequest) 
+public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
   // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation();
 
   // Handling sorting operation.
-  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+  if (DataManagerRequest.Sorted?.Count > 0)
   {
-    DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+    dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
     //Add custom logic here if needed and remove above method.
   }
 
@@ -1070,7 +1189,7 @@ public object Post(DataManagerRequest DataManagerRequest)
   int totalRecordsCount = DataSource.Count();
 
   // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -1123,31 +1242,29 @@ In the code example below, paging a custom data source can be achieved by utiliz
 /// </summary>
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the paginated data along with the total record count.</returns>
-public object Post(DataManagerRequest DataManagerRequest) 
+public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
 {
   // Retrieve data from the data source (e.g., database).
-  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+  IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
 
-   // Initialize QueryableOperation instance.
+  // Initialize QueryableOperation instance.
   QueryableOperation queryableOperation = new QueryableOperation();
 
   // Get the total count of records.
-  int totalRecordsCount = DataSource.Count();
+  int totalRecordsCount = dataSource.Count();
 
   // Handling paging operation.
-  if (DataManagerRequest.Skip != 0)
+  if (DataManagerRequest.Skip > 0)
   {
-    DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
-    //Add custom logic here if needed and remove above method.
+    dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
   }
-  if (DataManagerRequest.Take != 0)
+  if (DataManagerRequest.Take > 0)
   {
-    DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
-    //Add custom logic here if needed and remove above method.
+    dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
   }
 
   // Return data based on the request.
-  return new { result = DataSource, count = totalRecordsCount };
+  return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
 }
 
 {% endhighlight %}
@@ -1240,11 +1357,11 @@ The CRUD operations can be performed and customized on our own by overriding the
 * update
 * batchRequest
 
-Let’s see how to perform CRUD operations using Dapper in Microsoft SQL Server data with Grid.
+Let’s see how to perform CRUD operation using SQLite Server data with Grid.
 
 **Insert operation:**
 
-To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs%}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1289,35 +1406,39 @@ To execute the insert operation, you will need to override the `insert` method o
 /// <summary>
 /// Inserts a new data item into the data collection.
 /// </summary>
-/// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
+/// <param name="value">It contains the new record detail which is need to be inserted.</param>
 /// <returns>Returns void.</returns>
-
-public void Insert(CRUDModel<Orders> newRecord)
+public void Insert(Orders value)
 {
-  //Create query to insert the specific into the database by accessing its properties.
-  string queryStr = "INSERT INTO Orders(CustomerID, Freight, ShipCity, EmployeeID) VALUES(@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+    //Create query to insert the specific into the database by accessing its properties.
+    string queryStr = $"Insert into Orders(CustomerID,Freight,ShipCity,EmployeeID) values('{value.CustomerID}','{value.Freight}','{value.ShipCity}','{value.EmployeeID}')";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
 
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, newRecord.value);
-  }
-  //Add custom logic here if needed and remove above method.
+    Command.ExecuteNonQuery();
+
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
 }
 
-public class CRUDModel<T> where T : class
+public class Orders
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
@@ -1325,7 +1446,7 @@ public class CRUDModel<T> where T : class
 
 **Update operation:**
 
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1370,34 +1491,39 @@ To execute the update operation, override the `update` method of the `CustomAdap
 /// <summary>
 /// Update a existing data item from the data collection.
 /// </summary>
-/// <param name="updateOrder">It contains the updated record detail which is need to be updated.</param>
+/// <param name="value">It contains the updated record detail which is need to be updated.</param>
 /// <returns>Returns void.</returns>
-public void Update(CRUDModel<Orders> updateOrder)
+public void Update(Orders value)
 {
-  //Create query to update the changes into the database by accessing its properties.
-  string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+    //Create query to update the changes into the database by accessing its properties.
+    string queryStr = $"Update Orders set CustomerID='{value.CustomerID}', Freight='{value.Freight}',EmployeeID='{value.EmployeeID}',ShipCity='{value.ShipCity}' where OrderID='{value.OrderID}'";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
 
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
+
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, updateOrder.value);
-  }
-  //Add custom logic here if needed and remove above method.
+    Command.ExecuteNonQuery();
+
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
 }
 
-public class CRUDModel<T> where T : class
+public class Orders
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
@@ -1405,7 +1531,7 @@ public class CRUDModel<T> where T : class
 
 **Delete operation:**
 
-To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Utilizing **Dapper** simplifies database interaction by providing an easy-to-use interface to execute queries and map results to objects, enhancing code readability and maintainability, as shown in the following code snippet.
+To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1455,31 +1581,46 @@ To perform the delete operation, you need to override the `remove` method of the
 /// <return>Returns void.</return>
 public void Remove(CRUDModel<Orders> value)
 {
-  //Create query to remove the specific from database by passing the primary key column value.
-  string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
+    //Create query to remove the specific from database by passing the primary key column value.
+    string queryStr = $"Delete from Orders where OrderID={value.key}";
 
-  //Create SQL connection.
-  using (IDbConnection Connection = new SqlConnection(ConnectionString))
-  {
+    // Establishes a connection to the SQLite database using the provided connection string.
+    SqliteConnection Connection = new SqliteConnection(ConnectionString);
+
+    // Opens the database connection to execute queries.
     Connection.Open();
-    int orderID = Convert.ToInt32(value.key.ToString());
+
+    //Execute the SQLite command.
+    SqliteCommand Command = new SqliteCommand(queryStr, Connection);
 
     //Execute this code to reflect the changes into the database.
-    Connection.Execute(queryStr, new { OrderID = orderID });
-  }
-  //Add custom logic here if needed and remove above method.
-}
+    Command.ExecuteNonQuery();
 
+    // Close the database connection after executing the query.
+    Connection.Close();
+
+    //Add custom logic here if needed and remove above method.
+}
 public class CRUDModel<T> where T : class
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+
+public class Orders
+{
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
@@ -1487,7 +1628,7 @@ public class CRUDModel<T> where T : class
 
 **Batch operation:**
 
-To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
+To perform the batch operation, override the `batchRequest` method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the `batchRequest` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1529,9 +1670,7 @@ To perform the batch operation, override the **batchRequest** method of the `Cus
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/Grid/UrlDataSource",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/Grid/Update",
-				removeUrl: "https://localhost:xxxx/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
@@ -1543,84 +1682,97 @@ To perform the batch operation, override the **batchRequest** method of the `Cus
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Batch update (Insert, Update and Delete) a collection of data items from the data collection.
+/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
 /// </summary>
-/// <param name="CRUDModel<T>">The set of information along with details about the CRUD actions to be executed from the database.</param>
+/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
 /// <returns>Returns a JsonResult containing the processed data.</returns>
 public JsonResult BatchUpdate(CRUDModel<Orders> value)
 {
-  if (value.changed != null && value.changed.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.changed)
+    using (SqliteConnection connection = new SqliteConnection(ConnectionString))
     {
-      //Create query to update the changes into the database by accessing its properties.
-      string queryStr = "UPDATE Orders SET CustomerID = @CustomerID, Freight = @Freight, ShipCity = @ShipCity, EmployeeID = @EmployeeID WHERE OrderID = @OrderID";
+        // Open the database connection.
+        connection.Open();
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
+        using (SqliteTransaction transaction = connection.BeginTransaction())
+        {
+            using (SqliteCommand command = connection.CreateCommand())
+            {
+                // Process updated records if any.
+                if (value.changed != null && value.changed.Count > 0)
+                {
+                    command.CommandText = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
+                    foreach (Orders record in value.changed)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.ExecuteNonQuery();
+                    }
+                }
 
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
-      //Add custom logic here if needed and remove above method.
+                // Process inserted records if any.
+                if (value.added != null && value.added.Count > 0)
+                {
+                    command.CommandText = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
+                    foreach (Orders record in value.added)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID);
+                        command.ExecuteNonQuery();
+                    }
+                }
 
+                // Process deleted records if any.
+                if (value.deleted != null && value.deleted.Count > 0)
+                {
+                    command.CommandText = "DELETE FROM Orders WHERE OrderID=@OrderID";
+                    foreach (Orders record in value.deleted)
+                    {
+                        command.Parameters.Clear();
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+
+            // Commit the transaction.
+            transaction.Commit();
+        }
     }
-  }
-  if (value.added != null && value.added.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.added)
-    {
-      //Create query to insert the specific into the database by accessing its properties.
-      string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, Record);
-      }
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-  if (value.deleted != null && value.deleted.Count > 0)
-  {
-    foreach (Orders Record in (IEnumerable<Orders>)value.deleted)
-    {
-
-      //Create query to remove the specific from database by passing the primary key column value.
-      string queryStr = "DELETE FROM Orders WHERE OrderID = @OrderID";
-
-      //Create SQL connection.
-      using (IDbConnection Connection = new SqlConnection(ConnectionString))
-      {
-        Connection.Open();
-
-        //Execute this code to reflect the changes into the database.
-        Connection.Execute(queryStr, new { OrderID = Record.OrderID });
-      }
-      //Add custom logic here if needed and remove above method.
-    }
-  }
-    return Json(value, JsonRequestBehavior.AllowGet);
+    return Json(new { success = true, message = "Batch update successful.", data = value }, JsonRequestBehavior.AllowGet);
 }
+
 
 public class CRUDModel<T> where T : class
 {
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+
+public class Orders
+{
+    [Key]
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public int? EmployeeID { get; set; }
+    public decimal? Freight { get; set; }
+    public string ShipCity { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-![Grid bound with Microsoft SQL server data using dapper](../images/database/db-batch.gif)
+![Grid bound with SQLite Server data](../images/database/db-batch.gif)
