@@ -1,48 +1,47 @@
 ---
 layout: post
-title: MySQL Server Data Binding in Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+title: PostgreSQL Server Data Binding Syncfusion ##Platform_Name## Grid
+description: Learn how to consume data from PostgreSQL Server, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: grid
-keywords: adaptors, customadaptor, urladaptor, remotedata, mysql
+keywords: adaptors, customadaptor, urladaptor, postgresql, remotedata 
 documentation: ug
 domainurl: ##DomainURL##
 ---
+# Connecting PostgreSQL Server data in to Syncfusion ASP.NET MVC Grid
 
-# Connecting MySQL Server data to Syncfusion ASP.NET MVC Grid
+This section describes how to connect and retrieve data from a PostgreSQL Server database using [Npgsql EntityFrameworkCore PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion ASP.NET MVC Grid.
 
-This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the Syncfusion ASP.NET MVC Grid.
-
-MySQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource)  property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a MySQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+PostgreSQL Server database can be bound to the Grid in different ways (i.e.) using [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a PostgreSQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the MySQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET MVC Grid by connecting to an existing pre-configured API service linked to the PostgreSQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
 The [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET MVC Grid locally using the `DataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
-## Binding data from MySQL Server using an API service
+## Binding data from PostgreSQL Server using an API service
 
-This section describes step by step process how to retrieve data from a MySQL Server using an API service and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a PostgreSQL Server using an API service and bind it to the Syncfusion ASP.NET MVC Grid.
 
-### Creating an API Service
+### Creating an API service
 
 To configure a server with Syncfusion ASP.NET MVC Grid, follow the below steps:
 
 **1.** Open Visual Studio and create an ASP.NET MVC project named **MyWebService**. To create an ASP.NET MVC application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) for detailed steps.
 
-**2.** To connect a MySQL Server database using the MySQL driver in your application, you need to install the [MySQL.Data](https://www.nuget.org/packages/MySql.Data) NuGet package. To add **MySQL.Data** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To connect a PostgreSQL Server database using the PostgreSQL driver in your application, you need to install the [Npgsql.EntityFrameworkCore.PostgreSQL ](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) NuGet package. To add **Npgsql.EntityFrameworkCore.PostgreSQL** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
 
-**4.** In an API controller (aka, GridController), connect to MySQL Server. In the **GetOrderData()** method **MySqlConnection** helps to connect the MySQL Server database. Next, using **MySqlCommand** and **MySqlDataAdapter** you can process the desired MySQL query string and retrieve data from the database. The **Fill** method of the **DataAdapter** is used to populate the MySQL data into a **DataTable** as shown in the following code snippet.
+**4.** In an API controller (aka, GridController), connect to PostgreSQL Server. In the **GetOrderData()** method **NpgsqlConnection** helps to connect the PostgreSQL Server database. Next, using **NpgsqlCommand** and **NpgsqlDataAdapter** you can process the desired Npgsql query string and retrieve data from the database. The **Fill** method of the **DataAdapter** is used to populate the Npgsql data into a **DataTable** as shown in the following code snippet.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
-using MySql.Data.MySqlClient;
+using Npgsql;
 using Syncfusion.EJ2.Base;
 using System;
 using System.Collections.Generic;
@@ -56,6 +55,11 @@ namespace MyWebService.Controllers
     public class GridController : ApiController
     {
         /// <summary>
+        /// Connection string for the database.
+        /// </summary>
+        private readonly string ConnectionString = @"<Enter a valid connection string>";
+
+        /// <summary>
         /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
         /// </summary>
         /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
@@ -63,14 +67,14 @@ namespace MyWebService.Controllers
         [HttpPost]
         public object Post(DataManagerRequest DataManagerRequest)
         {
-            // Retrieve data from the data source (e.g., database).
-            IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+        // Retrieve data from the data source (e.g., database).
+        IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-            // Get the total count of records.
-            int totalRecordsCount = DataSource.Count();
+        // Get the total count of records.
+        int totalRecordsCount = DataSource.Count();
 
-            // Return data based on the request.
-            return new { result = DataSource, count = totalRecordsCount };
+        // Return data based on the request.
+        return new { result = DataSource, count = totalRecordsCount };
         }
 
         /// <summary>
@@ -78,58 +82,59 @@ namespace MyWebService.Controllers
         /// </summary>
         /// <returns>Returns a list of orders fetched from the database.</returns>
         [HttpGet]
-        public List<Orders> GetOrderData()
+        private List<Orders> GetOrderData()
         {
-            // Create a list to store orders.
-            List<Orders> orders = new List<Orders>();
+            // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
+            string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
-            // Establish a connection to the MySQL database.
-            using (MySqlConnection sqlConnection = new MySqlConnection(ConnectionString))
+            // Establish a connection to the PostgreSQL database using the connection string.
+            using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
             {
-                // Define the SQL query to retrieve all orders sorted by OrderID.
-                string query = "SELECT * FROM orders ORDER BY OrderID";
+                // Open the database connection.
+                connection.Open();
 
-                // Create a MySQL command to execute the query.
-                using (MySqlCommand sqlCommand = new MySqlCommand(query, sqlConnection))
+                // Create a command object to execute the SQL query.
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                 {
-                    // Open the database connection.
-                    sqlConnection.Open();
-
-                    // Use a data adapter to execute the query and fetch data.
-                    using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sqlCommand))
+                    // Use a data adapter to fetch data from the database into a DataTable.
+                    using (NpgsqlDataAdapter dataAdapter = new NpgsqlDataAdapter(command))
                     {
-                        // Create a DataTable to store retrieved data.
                         DataTable dataTable = new DataTable();
 
-                        // Fill the DataTable with data from the database.
+                        // Fill the DataTable with the query results.
                         dataAdapter.Fill(dataTable);
 
-                        // Convert DataTable rows into a list of orders objects.
-                        orders = (from DataRow row in dataTable.Rows
-                        select new Orders()
-                        {                            
-                            OrderID = row["OrderID"] != DBNull.Value ? Convert.ToInt32(row["OrderID"]) : (int?)null,
-                            CustomerID = row["CustomerID"]?.ToString(),
-                            EmployeeID = row["EmployeeID"] != DBNull.Value ? Convert.ToInt32(row["EmployeeID"]) : (int?)null,
-                            ShipCity = row["ShipCity"]?.ToString(),
-                            Freight = row["Freight"] != DBNull.Value ? Convert.ToDecimal(row["Freight"]) : (decimal?)null
-                        }).ToList();
+                        // Convert the DataTable rows into a list of orders objects.
+                        List<Orders> dataSource = (from DataRow data in dataTable.Rows
+                                                select new Orders
+                                                {
+                                                    // Assign values from the DataTable to the Orders object properties.
+                                                    OrderID = data["OrderID"] != DBNull.Value ? Convert.ToInt32(data["OrderID"]) : (int?)null,
+                                                    CustomerID = data["CustomerID"] != DBNull.Value ? data["CustomerID"].ToString() : null,
+                                                    EmployeeID = data["EmployeeID"] != DBNull.Value ? Convert.ToInt32(data["EmployeeID"]) : (int?)null,
+                                                    ShipCity = data["ShipCity"] != DBNull.Value ? data["ShipCity"].ToString() : null,
+                                                    Freight = data["Freight"] != DBNull.Value ? Convert.ToDecimal(data["Freight"]) : (decimal?)null,
+                                                }).ToList();
+
+                        // Return the list of orders.
+                        return dataSource;
                     }
                 }
             }
-
-            // Return the list of orders.
-            return orders;
         }
+        #region Models
+        /// <summary>
+        /// Represents the orders model mapped to the database table.
+        /// </summary>
         public class Orders
         {
-            [Key]
             public int? OrderID { get; set; }
-            public string? CustomerID { get; set; }
+            public string CustomerID { get; set; }
             public int? EmployeeID { get; set; }
             public decimal? Freight { get; set; }
-            public string? ShipCity { get; set; }
+            public string ShipCity { get; set; }
         }
+        #endregion
     }
 }
 
@@ -138,9 +143,9 @@ namespace MyWebService.Controllers
 
 **5.** Run the application and it will be hosted within the URL `https://localhost:xxxx/api/Grid`.
 
-**6.** Finally, the retrieved data from MySQL Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
+**6.** Finally, the retrieved data from PostgreSQL Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
 
-![Hosted API URL](../images/database/db-data.png)
+![Hosted API URL](../images/database/ms-sql-data.png)
 
 ### Connecting Syncfusion ASP.NET MVC Grid to an API Service
 
@@ -247,6 +252,11 @@ Now, add the Syncfusion ASP.NET MVC Grid tag helper in `~/Views/Home/Index.cshtm
 public class GridController : ApiController
 {
     /// <summary>
+    /// Connection string for the database.
+    /// </summary>
+    private readonly string ConnectionString = @"<Enter a valid connection string>";
+
+    /// <summary>
     /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
     /// </summary>
     /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
@@ -254,14 +264,14 @@ public class GridController : ApiController
     [HttpPost]
     public object Post(DataManagerRequest DataManagerRequest)
     {
-        // Retrieve data from the data source (e.g., database).
-        IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
+    // Retrieve data from the data source (e.g., database).
+    IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-        // Get the total count of records.
-        int totalRecordsCount = DataSource.Count();
+    // Get the total count of records.
+    int totalRecordsCount = DataSource.Count();
 
-        // Return data based on the request.
-        return new { result = DataSource, count = totalRecordsCount };
+    // Return data based on the request.
+    return new { result = DataSource, count = totalRecordsCount };
     }
 
     /// <summary>
@@ -269,58 +279,59 @@ public class GridController : ApiController
     /// </summary>
     /// <returns>Returns a list of orders fetched from the database.</returns>
     [HttpGet]
-    public List<Orders> GetOrderData()
+    private List<Orders> GetOrderData()
     {
-        // Create a list to store orders.
-        List<Orders> orders = new List<Orders>();
+        // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
+        string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
-        // Establish a connection to the MySQL database.
-        using (MySqlConnection sqlConnection = new MySqlConnection(ConnectionString))
+        // Establish a connection to the PostgreSQL database using the connection string.
+        using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
         {
-            // Define the SQL query to retrieve all orders sorted by OrderID.
-            string query = "SELECT * FROM orders ORDER BY OrderID";
+            // Open the database connection.
+            connection.Open();
 
-            // Create a MySQL command to execute the query.
-            using (MySqlCommand sqlCommand = new MySqlCommand(query, sqlConnection))
+            // Create a command object to execute the SQL query.
+            using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
             {
-                // Open the database connection.
-                sqlConnection.Open();
-
-                // Use a data adapter to execute the query and fetch data.
-                using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sqlCommand))
+                // Use a data adapter to fetch data from the database into a DataTable.
+                using (NpgsqlDataAdapter dataAdapter = new NpgsqlDataAdapter(command))
                 {
-                    // Create a DataTable to store retrieved data.
                     DataTable dataTable = new DataTable();
 
-                    // Fill the DataTable with data from the database.
+                    // Fill the DataTable with the query results.
                     dataAdapter.Fill(dataTable);
 
-                    // Convert DataTable rows into a list of orders objects.
-                    orders = (from DataRow row in dataTable.Rows
-                    select new Orders()
-                    {                            
-                        OrderID = row["OrderID"] != DBNull.Value ? Convert.ToInt32(row["OrderID"]) : (int?)null,
-                        CustomerID = row["CustomerID"]?.ToString(),
-                        EmployeeID = row["EmployeeID"] != DBNull.Value ? Convert.ToInt32(row["EmployeeID"]) : (int?)null,
-                        ShipCity = row["ShipCity"]?.ToString(),
-                        Freight = row["Freight"] != DBNull.Value ? Convert.ToDecimal(row["Freight"]) : (decimal?)null
-                    }).ToList();
+                    // Convert the DataTable rows into a list of orders objects.
+                    List<Orders> dataSource = (from DataRow data in dataTable.Rows
+                                            select new Orders
+                                            {
+                                                // Assign values from the DataTable to the Orders object properties.
+                                                OrderID = data["OrderID"] != DBNull.Value ? Convert.ToInt32(data["OrderID"]) : (int?)null,
+                                                CustomerID = data["CustomerID"] != DBNull.Value ? data["CustomerID"].ToString() : null,
+                                                EmployeeID = data["EmployeeID"] != DBNull.Value ? Convert.ToInt32(data["EmployeeID"]) : (int?)null,
+                                                ShipCity = data["ShipCity"] != DBNull.Value ? data["ShipCity"].ToString() : null,
+                                                Freight = data["Freight"] != DBNull.Value ? Convert.ToDecimal(data["Freight"]) : (decimal?)null,
+                                            }).ToList();
+
+                    // Return the list of orders.
+                    return dataSource;
                 }
             }
         }
-
-        // Return the list of orders.
-        return orders;
     }
+    #region Models
+    /// <summary>
+    /// Represents the orders model mapped to the database table.
+    /// </summary>
     public class Orders
     {
-        [Key]
         public int? OrderID { get; set; }
-        public string? CustomerID { get; set; }
+        public string CustomerID { get; set; }
         public int? EmployeeID { get; set; }
         public decimal? Freight { get; set; }
-        public string? ShipCity { get; set; }
+        public string ShipCity { get; set; }
     }
+    #endregion
 }
 
 {% endhighlight %}
@@ -332,7 +343,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 
 > * The Syncfusion ASP.NET MVC Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) package. Let’s explore how to manage these data operations using the `UrlAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.MVC5` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-> * To access `DataManagerRequest` and `QueryableOperation`,  import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
+> * To access `DataManagerRequest`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
 
 ### Handling searching operation
 
@@ -347,26 +358,26 @@ To handle searching operation, ensure that your API endpoint supports custom sea
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 [HttpPost]
-public object UrlDataSource(DataManagerRequest DataManagerRequest)
+public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling searching operation.
-    if (DataManagerRequest.Search?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Handling searching operation.
+  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+  {
+    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount });
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -401,30 +412,30 @@ To handle filtering operation, ensure that your API endpoint supports custom fil
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling filtering operation.
-    if (DataManagerRequest.Where?.Count > 0)
+  // Handling filtering operation.
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  {
+    foreach (WhereFilter condition in DataManagerRequest.Where)
     {
-        foreach (WhereFilter condition in DataManagerRequest.Where)
-        {
-            foreach (WhereFilter predicate in condition.predicates)
-            {
-                dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
-                //Add custom logic here if needed and remove above method.
-            }
-        }
+      foreach (WhereFilter predicate in condition.predicates)
+      {
+        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+        //Add custom logic here if needed and remove above method.
+      }
     }
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();  
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -459,24 +470,24 @@ To handle sorting operation, ensure that your API endpoint supports custom sorti
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
-    
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Handling sorting operation.
-    if (DataManagerRequest.Sorted?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Handling sorting operation.
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+  {
+    DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -511,27 +522,29 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Get the total count of records.
-    int totalRecordsCount = dataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Handling paging operation.
-    if (DataManagerRequest.Skip > 0)
-    {
-        dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
-    }
-    if (DataManagerRequest.Take > 0)
-    {
-        dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
-    }
+  // Handling paging operation.
+  if (DataManagerRequest.Skip != 0)
+  {
+    DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+    //Add custom logic here if needed and remove above method.
+  }
+  if (DataManagerRequest.Take != 0)
+  {
+    DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -553,11 +566,11 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 ### Handling CRUD operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl` and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl` and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD operations mapping**
+**CRUD Operations Mapping**
 
-CRUD operations within the Grid can be mapped to server-side controller actions using specific properties:
+The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
 1. **InsertUrl**: Specifies the URL for inserting new data.
 2. **RemoveUrl**: Specifies the URL for removing existing data.
@@ -588,7 +601,23 @@ To enable editing in ASP.NET MVC Grid, refer to the editing [documentation](http
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
-**Insert operation:**
+The below class is used to structure data sent during CRUD operations.
+
+```cs
+public class CRUDModel<T> where T : class
+{
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+```
+
+**Insert Operation:**
 
 To insert a new row, simply click the **Add** toolbar button. The new record edit form will be displayed as shown below. Upon clicking the **Update** toolbar button, record will inserted into the **Orders** table by calling the following **POST** method of an API.
 
@@ -596,61 +625,50 @@ To insert a new row, simply click the **Add** toolbar button. The new record edi
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Inserts a new order record into the database using parameterized queries.
+/// Inserts a new order record into the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="newRecord">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns a JSON result indicating success.</returns>
+/// <param name="value">The CRUDModel containing the order details to be inserted.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
 [HttpPost]
-[Route("api/Grid/Insert")]
-public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
+[Route("api/grid/Insert")]
+public IHttpActionResult Insert(CRUDModel<Orders> value)
 {
-    // Check if the request data is null or invalid.
-    if (newRecord?.value == null)
+    // Check if the received request data is null or invalid.
+    if (value?.value == null)
         return BadRequest("Invalid request: No data received.");
 
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection Connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to insert a new record into the orders table.
-        string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
+        // Define an SQL query to insert a new order record.
+        string queryStr = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") " +
+                          "VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-        // Create a MySQL command with the query and connection.
-        using (MySqlCommand Command = new MySqlCommand(queryStr, Connection))
+        // Create a command object to execute the insert query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
         {
-            // Add parameters to prevent SQL injection and handle null values.
-            Command.Parameters.AddWithValue("@CustomerID", newRecord.value.CustomerID);
-            Command.Parameters.AddWithValue("@Freight", newRecord.value.Freight ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@ShipCity", newRecord.value.ShipCity);
-            Command.Parameters.AddWithValue("@EmployeeID", newRecord.value.EmployeeID ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@OrderDate", DateTime.Now);  // Explicitly setting OrderDate.
+            // Add parameters to prevent SQL injection and ensure data integrity.
+            Command.Parameters.AddWithValue("@CustomerID", value.value.CustomerID);
+            Command.Parameters.AddWithValue("@Freight", value.value.Freight ?? (object)DBNull.Value);
+            Command.Parameters.AddWithValue("@ShipCity", value.value.ShipCity);
+            Command.Parameters.AddWithValue("@EmployeeID", value.value.EmployeeID ?? (object)DBNull.Value);
 
-            // Execute the SQL query and insert the record.
+            // Execute the insert query and get the number of affected rows.
             int rowsAffected = Command.ExecuteNonQuery();
 
-            // Return a success message if the insertion is successful.
-            return Ok(new { message = "Record inserted successfully" });
+            // Return a success response with a message.
+            return Ok(new { message = "Record inserted successfully." });
         }
     }
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-**Update operation:**
+**Update Operation:**
 
 To edit a row, first select desired row and click the **Edit** toolbar button. The edit form will be displayed and proceed to modify any column value as per your requirement. Clicking the **Update** toolbar button will update the edit record in the **Orders** table by involving the following **Post** method of an API.
 
@@ -658,62 +676,51 @@ To edit a row, first select desired row and click the **Edit** toolbar button. T
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Updates an existing order record in the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns a JSON result indicating success or failure.</returns>
+/// <param name="value">The CRUDModel containing the updated order details.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
 [HttpPost]
-[Route("api/Grid/Update")]
+[Route("api/grid/Update")]
 public IHttpActionResult Update(CRUDModel<Orders> value)
 {
-    // Check if the request data is null or invalid.
+    // Check if the received request data is null or invalid.
     if (value?.value == null)
         return BadRequest("Invalid request: No data received.");
 
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection Connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to update an existing record in the orders table.
-        string queryStr = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, ShipCity=@ShipCity, EmployeeID=@EmployeeID WHERE OrderID=@OrderID";
+        // Define an SQL query to update an existing order record based on OrderID.
+        string queryStr = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, " +
+                          "\"ShipCity\"=@ShipCity, \"EmployeeID\"=@EmployeeID WHERE \"OrderID\"=@OrderID";
 
-        // Create a MySQL command with the query and connection.
-        using (MySqlCommand Command = new MySqlCommand(queryStr, Connection))
+        // Create a command object to execute the update query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
         {
-            // Add parameters to prevent SQL injection and handle null values.
+            // Add parameters to update order details and prevent SQL injection.
             Command.Parameters.AddWithValue("@OrderID", value.value.OrderID);
             Command.Parameters.AddWithValue("@CustomerID", value.value.CustomerID);
             Command.Parameters.AddWithValue("@Freight", value.value.Freight ?? (object)DBNull.Value);
             Command.Parameters.AddWithValue("@ShipCity", value.value.ShipCity);
             Command.Parameters.AddWithValue("@EmployeeID", value.value.EmployeeID ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@OrderDate", DateTime.Now);
 
-            // Execute the SQL query and update the record.
+            // Execute the update query and get the number of affected rows.
             int rowsAffected = Command.ExecuteNonQuery();
 
-            // Return a success message if the update is successful.
-            return Ok(new { message = "Record updated successfully" });
+            // Return a success response with a message.
+            return Ok(new { message = "Record updated successfully." });
         }
     }
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-**Delete operation:**
+**Delete Operation**
 
 To delete a row, simply select the desired row and click the **Delete** toolbar button. This action will trigger a **DELETE** request to an API, containing the primary key value of the selected record. As a result corresponding record will be removed from the **Orders** table.
 
@@ -721,57 +728,46 @@ To delete a row, simply select the desired row and click the **Delete** toolbar 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Remove a specific data item from the data collection.
+/// Deletes an order record from the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="value">It contains the specific record detail which is need to be removed.</param>
-/// <returns>Returns a JSON result indicating success or failure.</returns>
+/// <param name="value">The CRUDModel containing the OrderID of the record to be deleted.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
 [HttpPost]
-[Route("api/Grid/Remove")]
+[Route("api/grid/Remove")]
 public IHttpActionResult Remove(CRUDModel<Orders> value)
 {
-    // Check if the request contains a valid OrderID.
+    // Check if the request contains a valid key (OrderID).
     if (value?.key == null)
         return BadRequest("Invalid request: No key received.");
 
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection Connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to delete the order record with the specified OrderID.
-        string queryStr = "DELETE FROM Orders WHERE OrderID=@OrderID";
+        // Define an SQL query to delete a record from the orders table where OrderID matches.
+        string queryStr = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
-        // Create a MySQL command with the query and connection.
-        using (MySqlCommand Command = new MySqlCommand(queryStr, Connection))
+        // Create a command object to execute the delete query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
         {
-            // Add the OrderID parameter to the query to prevent SQL injection.
+            // Add the OrderID parameter to identify the record to be deleted.
             Command.Parameters.AddWithValue("@OrderID", value.key);
 
-            // Execute the SQL query and delete the record.
+            // Execute the delete query and get the number of affected rows.
             int rowsAffected = Command.ExecuteNonQuery();
 
-            // Return a success message if the deletion is successful.
-            return Ok(new { message = "Record deleted successfully" });
+            // Return a success response with a message.
+            return Ok(new { message = "Record deleted successfully." });
         }
     }
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
-**Batch operation**
+**Batch Operation**
 
 To perform batch operation, define the edit `Mode` as **Batch** and specify the `BatchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API POST request.
 
@@ -779,89 +775,104 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
+/// Performs batch update operations (insert, update, and delete) on the orders table in a single transaction.
 /// </summary>
-/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
-/// <returns>Returns a JSON response with success or error message.</returns>
+/// <param name="value">The CRUDModel containing lists of added, changed, and deleted order records.</param>
+/// <returns>Returns an HTTP response indicating the success or failure of the batch operation.</returns>
 [HttpPost]
-[Route("api/Grid/BatchUpdate")]
+[Route("api/grid/BatchUpdate")]
 public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 {
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         connection.Open();
 
-        // Process the list of updated records.
-        if (value.changed != null && value.changed.Count > 0)
+        // Begin a transaction to ensure atomicity of batch operations.
+        using (NpgsqlTransaction transaction = connection.BeginTransaction()) 
         {
-            // Define an SQL query to update records in the orders table.
-            string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
-
-            // Create a MySQL command object to execute the update query.
-            using (MySqlCommand command = new MySqlCommand(updateQuery, connection))
+            // Process the list of updated records.
+            if (value.changed != null && value.changed.Count > 0)
             {
-                // Iterate through the list of changed records and update each one.
-                foreach (Orders record in value.changed)
-                {
-                    // Add parameters for updating the order details.
-                    command.Parameters.AddWithValue("@OrderID", record.OrderID);
-                    command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                    command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                // Define an SQL query to update records in the orders table.
+                string updateQuery = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, \"EmployeeID\"=@EmployeeID, \"ShipCity\"=@ShipCity WHERE \"OrderID\"=@OrderID";
 
-                    // Execute the update query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the update query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(updateQuery, connection, transaction))
+                {
+                    // Iterate through the list of changed records and update each one.
+                    foreach (Orders record in value.changed)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add parameters for updating the order details.
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+
+                        // Execute the update query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
-        }
 
-        // Process the list of newly added records.
-        if (value.added != null && value.added.Count > 0)
-        {
-            // Define an SQL query to insert new records into the orders table.
-            string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
-
-            // Create a MySQL command object to execute the insert query.
-            using (MySqlCommand command = new MySqlCommand(insertQuery, connection))
+            // Process the list of newly added records.
+            if (value.added != null && value.added.Count > 0)
             {
-                // Iterate through the list of added records and insert each one.
-                foreach (Orders record in value.added)
-                {
-                    // Add parameters for inserting new order details.
-                    command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                    command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
-                    command.Parameters.AddWithValue("@OrderDate", DateTime.Now); // Set current date as the order date.
+                // Define an SQL query to insert new records into the orders table.
+                string insertQuery = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-                    // Execute the insert query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the insert query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection, transaction))
+                {
+                    // Iterate through the list of added records and insert each one.
+                    foreach (Orders record in value.added)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add parameters for inserting new order details.
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+
+                        // Execute the insert query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
-        }
 
-        // Process the list of deleted records.
-        if (value.deleted != null && value.deleted.Count > 0)
-        {
-            // Define an SQL query to delete records from the orders table based on OrderID.
-            string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID";
-
-            // Create a MySQL command object to execute the delete query.
-            using (MySqlCommand command = new MySqlCommand(deleteQuery, connection))
+            // Process the list of deleted records.
+            if (value.deleted != null && value.deleted.Count > 0)
             {
-                // Iterate through the list of deleted records and remove each one.
-                foreach (Orders record in value.deleted)
-                {
-                    // Add the OrderID parameter to delete the corresponding record.
-                    command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                // Define an SQL query to delete records from the orders table based on OrderID.
+                string deleteQuery = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
-                    // Execute the delete query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the delete query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(deleteQuery, connection, transaction))
+                {
+                    // Iterate through the list of deleted records and remove each one.
+                    foreach (Orders record in value.deleted)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add the OrderID parameter to delete the corresponding record.
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+
+                        // Execute the delete query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
+
+            // Commit the transaction to apply all changes.
+            transaction.Commit(); 
         }
     }
 
@@ -874,7 +885,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
 // Replace `xxxx` with your actual localhost port number.
-@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").BatchUrl("https://localhost:xxxx/Grid/BatchUpdate").Adaptor("UrlAdaptor")).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(ds => ds.Url("https://localhost:xxxx/api/Grid").BatchUrl("https://localhost:xxxx/api/Grid/BatchUpdate").Adaptor("UrlAdaptor")).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).IsIdentity(true).Add();
     col.Field("CustomerID").HeaderText("Customer Name").Width("100").ValidationRules(new { required = "true" }).Add();
@@ -888,15 +899,15 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/db-crud.gif)
+![Syncfusion ASP.NET MVC Grid bound with PostgreSQL Server data](../images/database/microsoft-sql-crud.gif)
 
-## Binding data from MySQL Server using CustomAdaptor
+## Binding data from PostgreSQL Server using CustomAdaptor
 
-This section describes step by step process how to retrieve data from a MySQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to retrieve data from a PostgreSQL Server using `CustomAdaptor` and bind it to the Syncfusion ASP.NET MVC Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
-**2.** To connect a MySQL Server database using the MySQL driver in your application, you need to install the [MySQL.Data](https://www.nuget.org/packages/MySql.Data) NuGet package. To add **MySQL.Data** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
+**2.** To connect a PostgreSQL Server database using the PostgreSQL driver in your application, you need to install the [Npgsql.EntityFrameworkCore.PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) NuGet package. To add **Npgsql.EntityFrameworkCore.PostgreSQL** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 
 **3.** If you intend to inject your own service into the `CustomAdaptor` and utilize it, you can achieve this as follows:
 
@@ -905,7 +916,7 @@ This section describes step by step process how to retrieve data from a MySQL Se
 
 **4.** Within the `processResponse` method of `CustomAdaptor`, fetch data by calling the **GetOrderData** method.
 
-  * In this `GetOrderData` method, the MySQL Server database data is fetch by using the **MySqlDataAdapter** class.
+  * In this `GetOrderData` method, the PostgreSQL Server database data is fetch by using the **NpgsqlDataAdapter** class.
 
   * Employ the **Fill** method of the **DataAdapter** to populate a **DataSet** with the results of the `Select` command of the **DataAdapter**, followed by conversion of the **DataSet** into a List.
 
@@ -926,7 +937,7 @@ This section describes step by step process how to retrieve data from a MySQL Se
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -946,7 +957,7 @@ This section describes step by step process how to retrieve data from a MySQL Se
 
 {% highlight cs tabtitle="GridController.cs" %}
 
-using MySql.Data.MySqlClient;
+using Npgsql;
 using Syncfusion.EJ2.Base;
 using System;
 using System.Collections.Generic;
@@ -959,6 +970,11 @@ namespace MyWebService.Controllers
 {
     public class GridController : ApiController
     {
+        /// <summary>
+        /// Connection string for the database.
+        /// </summary>
+        private readonly string ConnectionString = @"<Enter a valid connection string>";
+
         /// <summary>
         /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
         /// </summary>
@@ -982,58 +998,59 @@ namespace MyWebService.Controllers
         /// </summary>
         /// <returns>Returns a list of orders fetched from the database.</returns>
         [HttpGet]
-        public List<Orders> GetOrderData()
+        private List<Orders> GetOrderData()
         {
-            // Create a list to store orders.
-            List<Orders> orders = new List<Orders>();
+            // Define the SQL query to fetch all orders from the orders table, ordered by OrderID.
+            string query = "SELECT * FROM public.\"Orders\" ORDER BY \"OrderID\"";
 
-            // Establish a connection to the MySQL database.
-            using (MySqlConnection sqlConnection = new MySqlConnection(ConnectionString))
+            // Establish a connection to the PostgreSQL database using the connection string.
+            using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
             {
-                // Define the SQL query to retrieve all orders sorted by OrderID.
-                string query = "SELECT * FROM orders ORDER BY OrderID";
+                // Open the database connection.
+                connection.Open();
 
-                // Create a MySQL command to execute the query.
-                using (MySqlCommand sqlCommand = new MySqlCommand(query, sqlConnection))
+                // Create a command object to execute the SQL query.
+                using (NpgsqlCommand command = new NpgsqlCommand(query, connection))
                 {
-                    // Open the database connection.
-                    sqlConnection.Open();
-
-                    // Use a data adapter to execute the query and fetch data.
-                    using (MySqlDataAdapter dataAdapter = new MySqlDataAdapter(sqlCommand))
+                    // Use a data adapter to fetch data from the database into a DataTable.
+                    using (NpgsqlDataAdapter dataAdapter = new NpgsqlDataAdapter(command))
                     {
-                        // Create a DataTable to store retrieved data.
                         DataTable dataTable = new DataTable();
 
-                        // Fill the DataTable with data from the database.
+                        // Fill the DataTable with the query results.
                         dataAdapter.Fill(dataTable);
 
-                        // Convert DataTable rows into a list of orders objects.
-                        orders = (from DataRow row in dataTable.Rows
-                        select new Orders()
-                        {                            
-                            OrderID = row["OrderID"] != DBNull.Value ? Convert.ToInt32(row["OrderID"]) : (int?)null,
-                            CustomerID = row["CustomerID"]?.ToString(),
-                            EmployeeID = row["EmployeeID"] != DBNull.Value ? Convert.ToInt32(row["EmployeeID"]) : (int?)null,
-                            ShipCity = row["ShipCity"]?.ToString(),
-                            Freight = row["Freight"] != DBNull.Value ? Convert.ToDecimal(row["Freight"]) : (decimal?)null
-                        }).ToList();
+                        // Convert the DataTable rows into a list of orders objects.
+                        List<Orders> dataSource = (from DataRow data in dataTable.Rows
+                                                select new Orders
+                                                {
+                                                    // Assign values from the DataTable to the Orders object properties.
+                                                    OrderID = data["OrderID"] != DBNull.Value ? Convert.ToInt32(data["OrderID"]) : (int?)null,
+                                                    CustomerID = data["CustomerID"] != DBNull.Value ? data["CustomerID"].ToString() : null,
+                                                    EmployeeID = data["EmployeeID"] != DBNull.Value ? Convert.ToInt32(data["EmployeeID"]) : (int?)null,
+                                                    ShipCity = data["ShipCity"] != DBNull.Value ? data["ShipCity"].ToString() : null,
+                                                    Freight = data["Freight"] != DBNull.Value ? Convert.ToDecimal(data["Freight"]) : (decimal?)null,
+                                                }).ToList();
+
+                        // Return the list of orders.
+                        return dataSource;
                     }
                 }
             }
-
-            // Return the list of orders.
-            return orders;
         }
+        #region Models
+        /// <summary>
+        /// Represents the orders model mapped to the database table.
+        /// </summary>
         public class Orders
         {
-            [Key]
             public int? OrderID { get; set; }
-            public string? CustomerID { get; set; }
+            public string CustomerID { get; set; }
             public int? EmployeeID { get; set; }
             public decimal? Freight { get; set; }
-            public string? ShipCity { get; set; }
+            public string ShipCity { get; set; }
         }
+        #endregion
     }
 }
 
@@ -1057,26 +1074,26 @@ In the code example below, searching a custom data source can be accomplished by
 /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
 /// <returns>Returns a JSON object with the searched data along with the total record count.</returns>
 [HttpPost]
-public object UrlDataSource(DataManagerRequest DataManagerRequest)
+public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling searching operation.
-    if (DataManagerRequest.Search?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSearching(dataSource, DataManagerRequest.Search);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Handling searching operation.
+  if (DataManagerRequest.Search != null && DataManagerRequest.Search.Count > 0)
+  {
+    DataSource = queryableOperation.PerformSearching(DataSource, DataManagerRequest.Search);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount });
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -1096,7 +1113,7 @@ public object UrlDataSource(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1119,7 +1136,7 @@ public object UrlDataSource(DataManagerRequest DataManagerRequest)
 
 When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the filtering operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Grid.
+In the code example below, filtering a custom data source can be achieved by utilizing the built-in `PerformFiltering` method of the `QueryableOperation` class. Alternatively, you can implement your own method for filtering operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1132,30 +1149,30 @@ In the code example below, filtering a custom data source can be achieved by uti
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling filtering operation.
-    if (DataManagerRequest.Where?.Count > 0)
+  // Handling filtering operation.
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  {
+    foreach (WhereFilter condition in DataManagerRequest.Where)
     {
-        foreach (WhereFilter condition in DataManagerRequest.Where)
-        {
-            foreach (WhereFilter predicate in condition.predicates)
-            {
-                dataSource = queryableOperation.PerformFiltering(dataSource, DataManagerRequest.Where, predicate.Operator);
-                //Add custom logic here if needed and remove above method.
-            }
-        }
+      foreach (WhereFilter predicate in condition.predicates)
+      {
+        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
+        //Add custom logic here if needed and remove above method.
+      }
     }
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();  
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -1175,7 +1192,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1198,7 +1215,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the sorting operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Grid.
+In the code example below, sorting a custom data source can be accomplished by employing the built-in `PerformSorting` method of the `QueryableOperation` class. Alternatively, you can implement your own method for sorting operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1211,24 +1228,24 @@ In the code example below, sorting a custom data source can be accomplished by e
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Handling sorting operation.
-    if (DataManagerRequest.Sorted?.Count > 0)
-    {
-        dataSource = queryableOperation.PerformSorting(dataSource, DataManagerRequest.Sorted);
-        //Add custom logic here if needed and remove above method.
-    }
+  // Handling sorting operation.
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
+  {
+    DataSource = queryableOperation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+    //Add custom logic here if needed and remove above method.
+  }
 
-    // Get the total count of records.
-    int totalRecordsCount = DataSource.Count();
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -1248,7 +1265,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1271,7 +1288,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 
 When utilizing the `CustomAdaptor` in ASP.NET MVC, managing the paging operation involves overriding the `processResponse` method of the `UrlAdaptor` class.
 
-In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Grid.
+In the code example below, paging a custom data source can be achieved by utilizing the built-in `PerformTake` and `PerformSkip` method of the `QueryableOperation` class. Alternatively, you can use your own method for paging operation and bind the resulting data to the Syncfusion ASP.NET MVC Grid.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1284,27 +1301,29 @@ In the code example below, paging a custom data source can be achieved by utiliz
 [HttpPost]
 public object Post(DataManagerRequest DataManagerRequest)
 {
-    // Retrieve data from the data source (e.g., database).
-    IQueryable<Orders> dataSource = GetOrderData().AsQueryable();
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
 
-    // Initialize QueryableOperation instance.
-    QueryableOperation queryableOperation = new QueryableOperation();
+  // Initialize QueryableOperation instance.
+  QueryableOperation queryableOperation = new QueryableOperation();
 
-    // Get the total count of records.
-    int totalRecordsCount = dataSource.Count();
-    
-    // Handling paging operation.
-    if (DataManagerRequest.Skip > 0)
-    {
-        dataSource = queryableOperation.PerformSkip(dataSource, DataManagerRequest.Skip);
-    }
-    if (DataManagerRequest.Take > 0)
-    {
-        dataSource = queryableOperation.PerformTake(dataSource, DataManagerRequest.Take);
-    }
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
 
-    // Return data based on the request.
-    return Json(new { result = dataSource, count = totalRecordsCount }, JsonRequestBehavior.AllowGet);
+  // Handling paging operation.
+  if (DataManagerRequest.Skip != 0)
+  {
+    DataSource = queryableOperation.PerformSkip(DataSource, DataManagerRequest.Skip);
+    //Add custom logic here if needed and remove above method.
+  }
+  if (DataManagerRequest.Take != 0)
+  {
+    DataSource = queryableOperation.PerformTake(DataSource, DataManagerRequest.Take);
+    //Add custom logic here if needed and remove above method.
+  }
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
 }
 
 {% endhighlight %}
@@ -1324,7 +1343,7 @@ public object Post(DataManagerRequest DataManagerRequest)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
 	}
@@ -1343,11 +1362,20 @@ public object Post(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-### Handling CRUD operations
+### Handling CRUD Operations
 
-To enable editing in the Syncfusion ASP.NET MVC Grid, utilize the [GridEditSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) documentation.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property configured to display toolbar items for editing purpose.
+**CRUD Operations Mapping**
+
+The following properties enable the Grid to interact with API endpoints for different CRUD actions:
+
+1. **InsertUrl**: Specifies the URL for inserting new data.
+2. **RemoveUrl**: Specifies the URL for removing existing data.
+3. **UpdateUrl**: Specifies the URL for updating existing data.
+4. **BatchUrl**: Specifies the URL for batch editing.
+
+To enable editing in ASP.NET MVC Grid, refer to the editing [Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit). In the below example, the inline edit `Mode` is enabled and [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -1365,7 +1393,7 @@ In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.c
 <script>
     class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            var original = super.processResponse(data, ds, query, xhr, request, changes);
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
     }
@@ -1390,14 +1418,21 @@ In this scenario, the inline edit `Mode` and [Toolbar](https://help.syncfusion.c
 > * Normal/Inline editing is the default edit `Mode` for the Grid. To enable CRUD operations, ensure that the [IsPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [IsIdentity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsIdentity) property of Grid column to disable them during adding or editing operations.
 
-The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
+The below class is used to structure data sent during CRUD operations.
 
-* insert
-* remove
-* update
-* batchRequest
-
-Let’s see how to perform CRUD operation using MySQL Server data with Grid.
+```cs
+public class CRUDModel<T> where T : class
+{
+    public string action { get; set; }
+    public string keyColumn { get; set; }
+    public object key { get; set; }
+    public T value { get; set; }
+    public List<T> added { get; set; }
+    public List<T> changed { get; set; }
+    public List<T> deleted { get; set; }
+    public IDictionary<string, object> @params { get; set; }
+}
+```
 
 **Insert Operation:**
 
@@ -1407,65 +1442,54 @@ To execute the insert operation, you will need to override the `insert` method o
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Inserts a new data item into the data collection.
+/// Inserts a new order record into the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="value">It contains the new record detail which is need to be inserted.</param>
-/// <returns>Returns a JSON result indicating success.</returns>
+/// <param name="value">The CRUDModel containing the order details to be inserted.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
 [HttpPost]
-[Route("api/Grid/Insert")]
-public IHttpActionResult Insert(CRUDModel<Orders> newRecord)
+[Route("api/grid/Insert")]
+public IHttpActionResult Insert(CRUDModel<Orders> value)
 {
-    // Check if the request data is null or invalid.
-    if (newRecord?.value == null)
+    // Check if the received request data is null or invalid.
+    if (value?.value == null)
         return BadRequest("Invalid request: No data received.");
 
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection Connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to insert a new record into the orders table.
-        string queryStr = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
+        // Define an SQL query to insert a new order record.
+        string queryStr = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") " +
+                            "VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-        // Create a MySQL command with the query and connection.
-        using (MySqlCommand Command = new MySqlCommand(queryStr, Connection))
+        // Create a command object to execute the insert query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
         {
-            // Add parameters to prevent SQL injection and handle null values.
-            Command.Parameters.AddWithValue("@CustomerID", newRecord.value.CustomerID);
-            Command.Parameters.AddWithValue("@Freight", newRecord.value.Freight ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@ShipCity", newRecord.value.ShipCity);
-            Command.Parameters.AddWithValue("@EmployeeID", newRecord.value.EmployeeID ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@OrderDate", DateTime.Now);  // Explicitly setting OrderDate.
+            // Add parameters to prevent SQL injection and ensure data integrity.
+            Command.Parameters.AddWithValue("@CustomerID", value.value.CustomerID);
+            Command.Parameters.AddWithValue("@Freight", value.value.Freight ?? (object)DBNull.Value);
+            Command.Parameters.AddWithValue("@ShipCity", value.value.ShipCity);
+            Command.Parameters.AddWithValue("@EmployeeID", value.value.EmployeeID ?? (object)DBNull.Value);
 
-            // Execute the SQL query and insert the record.
+            // Execute the insert query and get the number of affected rows.
             int rowsAffected = Command.ExecuteNonQuery();
 
-            // Return a success message if the insertion is successful.
-            return Ok(new { message = "Record inserted successfully" });
+            // Return a success response with a message.
+            return Ok(new { message = "Record inserted successfully." });
         }
     }
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            var original = super.processResponse(data, ds, query, xhr, request, changes);
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         insert(dm, data) {
@@ -1498,74 +1522,63 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Update operation:**
+**Update Operation:**
 
-To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application. Modify the logic within this method according to the requirements of your application.
+To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Update a existing data item from the data collection.
+/// Updates an existing order record in the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="value">It contains the updated record detail which is need to be updated.</param>
-/// <returns>Returns a JSON result indicating success or failure.</returns>
+/// <param name="value">The CRUDModel containing the updated order details.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
 [HttpPost]
-[Route("api/Grid/Update")]
+[Route("api/grid/Update")]
 public IHttpActionResult Update(CRUDModel<Orders> value)
 {
-    // Check if the request data is null or invalid.
+    // Check if the received request data is null or invalid.
     if (value?.value == null)
         return BadRequest("Invalid request: No data received.");
 
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection Connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         Connection.Open();
 
-        // Define the SQL query to update an existing record in the orders table.
-        string queryStr = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, ShipCity=@ShipCity, EmployeeID=@EmployeeID WHERE OrderID=@OrderID";
+        // Define an SQL query to update an existing order record based on OrderID.
+        string queryStr = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, " +
+                            "\"ShipCity\"=@ShipCity, \"EmployeeID\"=@EmployeeID WHERE \"OrderID\"=@OrderID";
 
-        // Create a MySQL command with the query and connection.
-        using (MySqlCommand Command = new MySqlCommand(queryStr, Connection))
+        // Create a command object to execute the update query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
         {
-            // Add parameters to prevent SQL injection and handle null values.
+            // Add parameters to update order details and prevent SQL injection.
             Command.Parameters.AddWithValue("@OrderID", value.value.OrderID);
             Command.Parameters.AddWithValue("@CustomerID", value.value.CustomerID);
             Command.Parameters.AddWithValue("@Freight", value.value.Freight ?? (object)DBNull.Value);
             Command.Parameters.AddWithValue("@ShipCity", value.value.ShipCity);
             Command.Parameters.AddWithValue("@EmployeeID", value.value.EmployeeID ?? (object)DBNull.Value);
-            Command.Parameters.AddWithValue("@OrderDate", DateTime.Now);
 
-            // Execute the SQL query and update the record.
+            // Execute the update query and get the number of affected rows.
             int rowsAffected = Command.ExecuteNonQuery();
 
-            // Return a success message if the update is successful.
-            return Ok(new { message = "Record updated successfully" });
+            // Return a success response with a message.
+            return Ok(new { message = "Record updated successfully." });
         }
     }
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
         processResponse(data, ds, query, xhr, request, changes) {
-            var original = super.processResponse(data, ds, query, xhr, request, changes);
+            const original = super.processResponse(data, ds, query, xhr, request, changes);
             return original;
         }
         update(dm, keyField, value) {
@@ -1598,7 +1611,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Delete operation:**
+**Delete Operation**
 
 To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
@@ -1606,51 +1619,50 @@ To perform the delete operation, you need to override the `remove` method of the
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Remove a specific data item from the data collection.
+/// Deletes an order record from the orders table in the PostgreSQL database.
 /// </summary>
-/// <param name="value">It contains the specific record detail which is need to be removed.</param>
-/// <returns>Returns a JSON result indicating success.</returns>
-public JsonResult Remove(CRUDModel<Orders> model)
+/// <param name="value">The CRUDModel containing the OrderID of the record to be deleted.</param>
+/// <returns>Returns an HTTP response indicating success or failure.</returns>
+[HttpPost]
+[Route("api/grid/Remove")]
+public IHttpActionResult Remove(CRUDModel<Orders> value)
 {
-    using (SqlCommand sqlConnection = new SqlConnection(ConnectionString))
-    {
-        // Define the SQL query to delete the order based on OrderID.
-        string query = "DELETE FROM Orders WHERE OrderID=@OrderID";
-        
-        using (SqlCommand sqlCommand = new SqlCommand(query, sqlConnection))
-        {
-            // Add parameter to ensure data integrity and prevent SQL injection.
-            sqlCommand.Parameters.AddWithValue("@OrderID", model.key ?? (object)DBNull.Value);
+    // Check if the request contains a valid key (OrderID).
+    if (value?.key == null)
+        return BadRequest("Invalid request: No key received.");
 
-            // Open the database connection and execute the delete command.
-            sqlConnection.Open();
-            sqlCommand.ExecuteNonQuery();
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection Connection = new NpgsqlConnection(ConnectionString))
+    {
+        // Open the database connection.
+        Connection.Open();
+
+        // Define an SQL query to delete a record from the orders table where OrderID matches.
+        string queryStr = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
+
+        // Create a command object to execute the delete query.
+        using (NpgsqlCommand Command = new NpgsqlCommand(queryStr, Connection))
+        {
+            // Add the OrderID parameter to identify the record to be deleted.
+            Command.Parameters.AddWithValue("@OrderID", value.key);
+
+            // Execute the delete query and get the number of affected rows.
+            int rowsAffected = Command.ExecuteNonQuery();
+
+            // Return a success response with a message.
+            return Ok(new { message = "Record deleted successfully." });
         }
     }
-
-    // Return a JSON response indicating success.
-    return Json(new { success = true });
-}
-public class CRUDModel<T> where T : class
-{
-  public string? action { get; set; }
-  public string? keyColumn { get; set; }
-  public object? key { get; set; }
-  public T? value { get; set; }
-  public List<T>? added { get; set; }
-  public List<T>? changed { get; set; }
-  public List<T>? deleted { get; set; }
-  public IDictionary<string, object>? @params { get; set; }
 }
 
 {% endhighlight %}
 
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight html tabtitle="Index.cshtml" %}
 
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         remove(dm, keyField, value) {
@@ -1684,7 +1696,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-**Batch operation**
+**Batch Operation**
 
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
@@ -1692,89 +1704,104 @@ To perform the batch operation, override the **batchRequest** method of the `Cus
 {% highlight cs tabtitle="GridController.cs" %}
 
 /// <summary>
-/// Batch update (Insert, Update, and Delete) a collection of data items from the data collection.
+/// Performs batch update operations (insert, update, and delete) on the orders table in a single transaction.
 /// </summary>
-/// <param name="value">The set of information along with details about the CRUD actions to be executed from the database.</param>
-/// <returns>Returns a JSON response with success or error message.</returns>
+/// <param name="value">The CRUDModel containing lists of added, changed, and deleted order records.</param>
+/// <returns>Returns an HTTP response indicating the success or failure of the batch operation.</returns>
 [HttpPost]
-[Route("api/Grid/BatchUpdate")]
+[Route("api/grid/BatchUpdate")]
 public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 {
-    // Establish a connection to the MySQL database.
-    using (MySqlConnection connection = new MySqlConnection(ConnectionString))
+    // Establish a connection to the PostgreSQL database.
+    using (NpgsqlConnection connection = new NpgsqlConnection(ConnectionString))
     {
         // Open the database connection.
         connection.Open();
 
-        // Process the list of updated records.
-        if (value.changed != null && value.changed.Count > 0)
+        // Begin a transaction to ensure atomicity of batch operations.
+        using (NpgsqlTransaction transaction = connection.BeginTransaction())
         {
-            // Define an SQL query to update records in the orders table.
-            string updateQuery = "UPDATE Orders SET CustomerID=@CustomerID, Freight=@Freight, EmployeeID=@EmployeeID, ShipCity=@ShipCity WHERE OrderID=@OrderID";
-
-            // Create a MySQL command object to execute the update query.
-            using (MySqlCommand command = new MySqlCommand(updateQuery, connection))
+            // Process the list of updated records.
+            if (value.changed != null && value.changed.Count > 0)
             {
-                // Iterate through the list of changed records and update each one.
-                foreach (Orders record in value.changed)
-                {
-                    // Add parameters for updating the order details.
-                    command.Parameters.AddWithValue("@OrderID", record.OrderID);
-                    command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                    command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+                // Define an SQL query to update records in the orders table.
+                string updateQuery = "UPDATE \"Orders\" SET \"CustomerID\"=@CustomerID, \"Freight\"=@Freight, \"EmployeeID\"=@EmployeeID, \"ShipCity\"=@ShipCity WHERE \"OrderID\"=@OrderID";
 
-                    // Execute the update query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the update query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(updateQuery, connection, transaction))
+                {
+                    // Iterate through the list of changed records and update each one.
+                    foreach (Orders record in value.changed)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add parameters for updating the order details.
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+
+                        // Execute the update query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
-        }
 
-        // Process the list of newly added records.
-        if (value.added != null && value.added.Count > 0)
-        {
-            // Define an SQL query to insert new records into the orders table.
-            string insertQuery = "INSERT INTO Orders (CustomerID, Freight, ShipCity, EmployeeID, OrderDate) VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID, @OrderDate)";
-
-            // Create a MySQL command object to execute the insert query.
-            using (MySqlCommand command = new MySqlCommand(insertQuery, connection))
+            // Process the list of newly added records.
+            if (value.added != null && value.added.Count > 0)
             {
-                // Iterate through the list of added records and insert each one.
-                foreach (Orders record in value.added)
-                {
-                    // Add parameters for inserting new order details.
-                    command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
-                    command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
-                    command.Parameters.AddWithValue("@OrderDate", DateTime.Now); // Set current date as the order date.
+                // Define an SQL query to insert new records into the orders table.
+                string insertQuery = "INSERT INTO \"Orders\" (\"CustomerID\", \"Freight\", \"ShipCity\", \"EmployeeID\") VALUES (@CustomerID, @Freight, @ShipCity, @EmployeeID)";
 
-                    // Execute the insert query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the insert query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(insertQuery, connection, transaction))
+                {
+                    // Iterate through the list of added records and insert each one.
+                    foreach (Orders record in value.added)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add parameters for inserting new order details.
+                        command.Parameters.AddWithValue("@CustomerID", record.CustomerID);
+                        command.Parameters.AddWithValue("@Freight", record.Freight ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@EmployeeID", record.EmployeeID ?? (object)DBNull.Value);
+                        command.Parameters.AddWithValue("@ShipCity", record.ShipCity);
+
+                        // Execute the insert query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
-        }
 
-        // Process the list of deleted records.
-        if (value.deleted != null && value.deleted.Count > 0)
-        {
-            // Define an SQL query to delete records from the orders table based on OrderID.
-            string deleteQuery = "DELETE FROM Orders WHERE OrderID=@OrderID";
-
-            // Create a MySQL command object to execute the delete query.
-            using (MySqlCommand command = new MySqlCommand(deleteQuery, connection))
+            // Process the list of deleted records.
+            if (value.deleted != null && value.deleted.Count > 0)
             {
-                // Iterate through the list of deleted records and remove each one.
-                foreach (Orders record in value.deleted)
-                {
-                    // Add the OrderID parameter to delete the corresponding record.
-                    command.Parameters.AddWithValue("@OrderID", record.OrderID);
+                // Define an SQL query to delete records from the orders table based on OrderID.
+                string deleteQuery = "DELETE FROM \"Orders\" WHERE \"OrderID\"=@OrderID";
 
-                    // Execute the delete query for the current record.
-                    command.ExecuteNonQuery();
+                // Create a command object to execute the delete query within the transaction.
+                using (NpgsqlCommand command = new NpgsqlCommand(deleteQuery, connection, transaction))
+                {
+                    // Iterate through the list of deleted records and remove each one.
+                    foreach (Orders record in value.deleted)
+                    {
+                        // Clear previous parameters to avoid conflicts.
+                        command.Parameters.Clear();
+
+                        // Add the OrderID parameter to delete the corresponding record.
+                        command.Parameters.AddWithValue("@OrderID", record.OrderID);
+
+                        // Execute the delete query for the current record.
+                        command.ExecuteNonQuery();
+                    }
                 }
             }
+
+            // Commit the transaction to apply all changes.
+            transaction.Commit();
         }
     }
 
@@ -1799,7 +1826,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 <script>
 	class CustomAdaptor extends ej.data.UrlAdaptor {
 		processResponse(data, ds, query, xhr, request, changes) {
-			var original = super.processResponse(data, ds, query, xhr, request, changes);
+			const original = super.processResponse(data, ds, query, xhr, request, changes);
 			return original;
 		}
         batchRequest(dm, changes, e) {
@@ -1823,9 +1850,7 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 			let dataManager = new ejs.data.DataManager({
 				url: "https://localhost:xxxx/api/Grid",
 				adaptor: new CustomAdaptor(),
-				insertUrl: "https://localhost:xxxx/api/Grid/Insert",
-				updateUrl: "https://localhost:xxxx/api/Grid/Update",
-				removeUrl: "https://localhost:xxxx/api/Grid/Remove",
+				batchUrl: "https://localhost:xxxx/api/Grid/BatchUpdate",
 			});
 			grid.dataSource = dataManager;
 		}
@@ -1837,4 +1862,4 @@ public IHttpActionResult BatchUpdate(CRUDModel<Orders> value)
 
 When you run the application, the resultant Syncfusion ASP.NET MVC Grid will look like this
 
-![Syncfusion ASP.NET MVC Grid bound with MySQL Server data](../images/database/db-batch.gif)
+![Syncfusion ASP.NET MVC Grid bound with PostgreSQL Server data](../images/database/microsoft-sql-batch.gif)
