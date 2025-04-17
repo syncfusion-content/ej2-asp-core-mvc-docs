@@ -257,6 +257,27 @@ The following example demonstrates how to prevent local time zone conversion for
 
 ![Prevent to convert local time zone format](../images/databinding/local-time.gif)
 
+## How to set custom headers using a custom adaptor in Syncfusion ASP.NET MVC Grid
+
+Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion ASP.NET MVC Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
+
+This method is particularly useful when integrating the Grid with authenticated APIs, where requests must include authorization tokens or other security credentials to ensure secure access.
+
+To achieve this, the `WebApiAdaptor` can be extended to create the custom adaptor. The `beforeSend` method in the custom adaptor allows modifying request headers before sending them to the server. This ensures that every request from the Grid includes the required headers.
+
+The following example demonstrates how to set custom headers using the custom adaptor in Syncfusion ASP.NET MVC Grid. 
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/data-binding/custom-headers/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-headers.cs" %}
+{% include code-snippet/grid/data-binding/custom-headers/custom-headers.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom headers using custom adaptor](../images/custom-headers.png)
+
 ## Troubleshoot: Syncfusion ASP.NET MVC Grid render rows without data
 
 In ASP.NET MVC, by default the JSON results are returned in camelCase format. So Grid field names are also changed in camelCase.
