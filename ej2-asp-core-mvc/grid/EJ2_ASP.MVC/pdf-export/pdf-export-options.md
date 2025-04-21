@@ -160,7 +160,7 @@ In the following example, the **ShipName** is initially a hidden column in the S
 {% endhighlight %}
 {% endtabs %}
 
-![Show or hide columns while exporting with stacked header](../../images/pdf-export/exportoption-show-hide-stacked-header.png)
+![Show or hide columns while exporting with stacked header](../images/pdf-export/exportoption-show-hide-stacked-header.png)
 
 ## Change page orientation
 

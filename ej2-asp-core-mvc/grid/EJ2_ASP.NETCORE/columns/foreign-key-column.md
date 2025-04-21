@@ -141,6 +141,31 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 
 ![Customize filter UI of foreign key column](../images/foreign/foreign-aggergate.png)
 
+## Render foreign key value in column template
+
+The Syncfusion ASP.NET Core Grid allows for rendering foreign key values within a column template, enhancing the display of related data in a clear format. This feature is particularly useful when you want to show a more meaningful representation of a foreign key instead of its underlying value.
+
+To render foreign key values in a column template, you need to define a template for the column using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) property. The `template` property can accept either an HTML element or a function that returns the desired HTML element.
+
+The following example demonstrates how to render foreign key values in a column template within the Grid: 
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="foreignkey-columntemplate.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/foreignkey-columntemplate.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/OrdersDetails.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="EmployeeDetails.cs" %}
+{% include code-snippet/grid/columns/foreignkey-columntemplate/EmployeeDetails.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render foreign key value in column template](../images/foreign/foreign-key-in-column-template.png)
+
 ## Enable multiple foreign key columns
 
 The Syncfusion Grid component supports the feature of enabling multiple foreign key columns with editing options. This allows users to display columns from foreign data sources in the Grid component.
@@ -191,51 +216,51 @@ This example demonstrates how to use an edit template in a foreign key column wi
 </ejs-grid>
 
 <script>
-let autoComplete;
-let employeeData = new ej.data.DataManager({
-    url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number.
-    adaptor: new ej.data.UrlAdaptor(),
-    crossDomain: true,
-});
-
-function create() {
-    return ej.base.createElement('input');
-}
-
-function destroy() {
-    if (autoComplete) autoComplete.destroy();
-}
-
-function read() {
-    return autoComplete ? autoComplete.value : '';
-}
-
-function write(args) {
-    let selectedValue = args.rowData ? args.rowData.employeeID : '';
-    employeeData.executeQuery(new ej.data.Query()).then((data) => {
-        let employees = data.result;
-        autoComplete = new ej.dropdowns.AutoComplete({
-            dataSource: employees,
-            fields: { value: "employeeID", text: "firstName" },
-            value: selectedValue,
-            placeholder: "Select Employee",
-            allowFiltering: true,
-            filtering: function (e) {
-                let query = new ej.data.Query();
-                query = e.text ? query.where("firstName", "startswith", e.text, true) : query;
-                e.updateData(employees, query);
-            },
-            change: function (e) {
-                if (e.itemData) {
-                    args.rowData.employeeID = e.itemData.employeeID;
-                }
-            }
-        });
-        autoComplete.appendTo(args.element);
-    }).catch((error) => {
-        console.error("Error fetching employee data:", error);
+    let autoComplete;
+    let employeeData = new ej.data.DataManager({
+        url: 'https://localhost:****/api/Employees', // Replace **** with your actual port number.
+        adaptor: new ej.data.UrlAdaptor(),
+        crossDomain: true,
     });
-}
+
+    function create() {
+        return ej.base.createElement('input');
+    }
+
+    function destroy() {
+        if (autoComplete) autoComplete.destroy();
+    }
+
+    function read() {
+        return autoComplete ? autoComplete.value : '';
+    }
+
+    function write(args) {
+        let selectedValue = args.rowData ? args.rowData.employeeID : '';
+        employeeData.executeQuery(new ej.data.Query()).then((data) => {
+            let employees = data.result;
+            autoComplete = new ej.dropdowns.AutoComplete({
+                dataSource: employees,
+                fields: { value: "employeeID", text: "firstName" },
+                value: selectedValue,
+                placeholder: "Select Employee",
+                allowFiltering: true,
+                filtering: function (e) {
+                    let query = new ej.data.Query();
+                    query = e.text ? query.where("firstName", "startswith", e.text, true) : query;
+                    e.updateData(employees, query);
+                },
+                change: function (e) {
+                    if (e.itemData) {
+                        args.rowData.employeeID = e.itemData.employeeID;
+                    }
+                }
+            });
+            autoComplete.appendTo(args.element);
+        }).catch((error) => {
+            console.error("Error fetching employee data:", error);
+        });
+    }
 </script>
 
 ```
@@ -323,8 +348,7 @@ namespace EditTemplate.Controllers
         [Route("api/Grid/Remove")]
         public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
         {
-            // Get key value from the deletedRecord.
-            int orderId = int.Parse(deletedRecord.key.ToString());
+            int orderId = int.Parse(deletedRecord.key.ToString()); // Get key value from the deletedRecord.
             var data = OrdersDetails.GetAllRecords().FirstOrDefault(orderData => orderData.OrderID == orderId);
             if (data != null)
             {
