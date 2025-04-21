@@ -3,7 +3,7 @@
 
     public ActionResult Index()
     {
-        ViewBag.value = @"<p>The Syncfudion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
+        ViewBag.value = @"<p>The Syncfusion <strong>Rich Text Editor</strong>, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here.</p><p><b>Key features:</b></p><ul>
      <li>
         <p>Provides &lt;IFRAME&gt; and &lt;DIV&gt; modes.</p>
      </li>

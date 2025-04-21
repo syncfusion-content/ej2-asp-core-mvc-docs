@@ -15,7 +15,7 @@ The Rich Text Editor control used to create, edit and return the content in vali
 * HTML Editor
 * Markdown Editor
 
-## HTML Editor
+## HTML editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
 
@@ -44,7 +44,13 @@ The HTML editing mode is the default mode of Rich Text Editor. Which is used for
 {% endtabs %}
 {% endif %}
 
-## Markdown Editor
+## IFrame editor
+
+The IFrame editor mode enables content editing within an iframe, isolating styles from the main page.
+
+For more details, refer to the [Iframe Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/iframe) documentation.
+
+## Markdown editor
 
 Set the [editorMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) property value as `Markdown` to create or edit the content and apply formatting to view markdown formatted content.
 
@@ -79,7 +85,6 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 
 For further details on Markdown editing, refer to the [`Markdown`](./markdown)
 
-## See Also
+## See also
 
-* [How to integrate the third party library](./third-party-integration/)
-* [How to render the iframe](./iframe/)
+* [Markdown Editor](https://ej2.syncfusion.com/aspnetcore/documentation/markdown-editor/getting-started)

@@ -6,7 +6,7 @@
    
     <div class="editor">
         <h6 class="header">Without style encapsulation</h6>
-        @Html.EJS().RichTextEditor("defaultRTE").Value(ViewBag.value).Render()
+        @Html.EJS().RichTextEditor("editor").Value(ViewBag.value).Render()
     </div>  
 </div>
 

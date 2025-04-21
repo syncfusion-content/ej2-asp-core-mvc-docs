@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="defaultRTE" beforeSanitizeHtml="beforeSanitizeHtml">
+<ejs-richtexteditor id="editor" beforeSanitizeHtml="beforeSanitizeHtml">
     <e-content-template>
         <div>
             <div>Prevention of Cross Sit Scripting (XSS) </div>
