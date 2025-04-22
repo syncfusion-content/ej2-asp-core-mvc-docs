@@ -556,7 +556,7 @@ public IActionResult Delete(int key)
 ```
 ![ODataV4Adaptor-Delete-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
 
-> You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/ODataV4Adaptor_EJ2Core) link.
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/ODataV4Adaptor_EJ2Core).
 
 ## Odata with custom url
 

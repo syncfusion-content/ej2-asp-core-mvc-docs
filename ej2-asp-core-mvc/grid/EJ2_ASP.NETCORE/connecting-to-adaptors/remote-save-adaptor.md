@@ -409,4 +409,4 @@ app.MapControllers();
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.
 
-> You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/RemoteSaveAdaptor_EJ2Core) repository.
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/RemoteSaveAdaptor_EJ2Core).

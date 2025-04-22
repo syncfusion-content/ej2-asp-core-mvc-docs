@@ -245,7 +245,7 @@ app.MapControllers();
 
 Run the project in Visual Studio, and the Syncfusion ASP.NET Core Grid will successfully fetch data from the API service.
 
-> You can find the complete sample for the WebApiAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/WebApiAdaptor_EJ2Core) link.
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/WebApiAdaptor_EJ2Core).
 
 ![WebApiAdaptor](../images/adaptors/webapiAdaptors/adaptor.gif)
 

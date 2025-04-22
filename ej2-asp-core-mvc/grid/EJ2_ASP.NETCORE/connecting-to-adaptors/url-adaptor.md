@@ -617,7 +617,7 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 
 ![UrlAdaptor CRUD operations](../images/adaptors/url-adaptors/adaptor-crud-operation.gif)
 
-> You can find the complete sample for the UrlAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/UrlAdaptor_EJ2Core) link.
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/UrlAdaptor_EJ2Core).
 
 **Single method for performing all CRUD operations**
 
