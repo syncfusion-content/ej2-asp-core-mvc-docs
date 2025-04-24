@@ -730,3 +730,5 @@ public IHttpActionResult Delete(int key)
 }
 ```
 ![CustomAdaptor-Delete-record](../images/adaptors/ODataV4Adaptor/odatav4-adaptor-delete-record.png)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp-net-mvc-data-grid/tree/master/CustomAdaptor).
