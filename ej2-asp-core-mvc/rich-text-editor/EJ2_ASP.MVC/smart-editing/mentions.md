@@ -34,7 +34,7 @@ In the following sample, we configured the following properties with popup dimen
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC mention integration ](../images/mention-integration.png)
+![ASP.NET MVC mention integration ](../../images/mention-integration.png)
 
 > [View Sample](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/MentionIntegration#/bootstrap5)
 

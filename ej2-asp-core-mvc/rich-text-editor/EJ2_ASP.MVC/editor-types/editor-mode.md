@@ -81,5 +81,5 @@ For further details on Markdown editing, refer to the [`Markdown`](./markdown)
 
 ## See Also
 
-* [How to integrate the third party library](./third-party-integration/)
-* [How to render the iframe](./iframe/)
+* [How to integrate the third party library](../third-party-integration/)
+* [How to render the iframe](./iframe)

@@ -67,7 +67,7 @@ You can insert audio from either the hosted link or the local machine, by clicki
 
 By default, the audio tool opens the audio dialog, allowing you to insert audio from an online source. Inserting the URL will be added to the `src` attribute of the `<source>` tag.
 
-![Rich Text Editor Audio insert](./images/aspcore-richtexteditor-audio-web.png)
+![Rich Text Editor Audio insert](../../images/aspcore-richtexteditor-audio-web.png)
 
 ## Uploading audio from local machine
 
@@ -205,7 +205,7 @@ N> By default, it doesn't support the `UseDefaultCredentials` property; we need 
 
 Once an audio file has been inserted, you can change it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Audio) `audioReplace` option. You can replace the audio file using the web URL or the browse option in the audio dialog.
 
-![Rich Text Editor Audio replace](./images/aspcore-richtexteditor-audio-replace.png)
+![Rich Text Editor Audio replace](../../images/aspcore-richtexteditor-audio-replace.png)
 
 ## Deleting audios
 
@@ -213,7 +213,7 @@ To remove audio from the Rich Text Editor content, select the audio and click th
 
 Once you select the audio from the local machine, the URL for the audio will be generated. You can remove the audio from the service location by clicking the cross icon.
 
-![Rich Text Editor Audio delete](./images/aspcore-richtexteditor-audio-del.png)
+![Rich Text Editor Audio delete](../../images/aspcore-richtexteditor-audio-del.png)
 
 ## Configuring audio display position
 
@@ -246,6 +246,6 @@ Sets the default display property for audio when it is inserted in the Rich Text
 
 ## See also
 
-* [Audio Quick Toolbar](./toolbar/quick-toolbar#audio-quick-toolbar)
+* [Audio Quick Toolbar](../toolbar/quick-toolbar)
 * [How to Use the Video Editing Option in Toolbar Items](./video)
 * [How to Use the Image Editing Option in Toolbar Items](./insert-images)
