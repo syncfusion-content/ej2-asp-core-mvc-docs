@@ -46,7 +46,7 @@ The NuGet **Package Manager UI** allows to search, install, uninstall, and updat
 
     ![ASP.NET Core NuGet Packages Install](images/InstallNuGet.png)
 
-5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
 
 ## Installation using Dotnet (.NET) CLI
 
@@ -72,7 +72,7 @@ Follow the below instructions to use the dotnet CLI command to install the Syncf
 
     N> Restoring is done automatically with **dotnet build** and **dotnet run** in .NET Core 2.0 and later.
 
-5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
 
 ## Installation using Package Manager Console
 
@@ -110,4 +110,4 @@ The **Package Manager Console** saves NuGet packages installation time since you
 
 4. The NuGet package manager console will install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet package as well as the dependencies it has. When the installation is complete, the console will show that your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 package has been successfully added to the application.
 
-5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction/) for development.
+5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive app with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core JS2 help document](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
