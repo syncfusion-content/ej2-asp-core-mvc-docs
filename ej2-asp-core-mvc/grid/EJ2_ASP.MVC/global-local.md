@@ -295,6 +295,24 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 
 ![Globalization-Switch-Culture](images/globalization/switch-localization.gif)
 
+### Set different Locale text for two Grids in same page
+
+The Syncfusion Grid allows configuring different [Locale](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Locale) settings for multiple Grids displayed on the same page. By using the **load** function of the **L10n** class, you can customize the text content of the Grid to be displayed in different languages.
+
+In this setup, each Grid can display text in a different language based on its assigned `Locale`. The `load` function is used to define translations for specific languages, ensuring that each Grid correctly applies the localized text for headers, toolbar items, and action buttons.
+
+For example, when the first Grid is set to use the **fr-FR** Locale, it applies the French translations loaded via **L10n.load**. The second Grid, set to **en-US**, retains the default English text. This demonstrates how localization can be customized per Grid without affecting other components on the page.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/globalization/two-localization/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Localization.cs" %}
+{% include code-snippet/grid/globalization/two-localization/localization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Internationalization
 
 The Internationalization library in the Syncfusion ASP.NET MVC Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.

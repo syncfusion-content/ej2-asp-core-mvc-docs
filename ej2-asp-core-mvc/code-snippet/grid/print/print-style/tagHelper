@@ -7,15 +7,15 @@
     </e-grid-columns>
 </ejs-grid>
 <style>
-.e-grid .e-headercell {
-  background: #24a0ed !important;
-}
-.e-grid .e-row .e-rowcell {
-  background: #cbecff !important;
-}
-.e-grid .e-altrow .e-rowcell {
-  background: #e7d7f7 !important;
-}
+  .e-grid .e-headercell {
+    background: #24a0ed !important;
+  }
+  .e-grid .e-row .e-rowcell {
+    background: #cbecff !important;
+  }
+  .e-grid .e-altrow .e-rowcell {
+    background: #e7d7f7 !important;
+  }
 </style>
 <script>
     function beforePrint() {

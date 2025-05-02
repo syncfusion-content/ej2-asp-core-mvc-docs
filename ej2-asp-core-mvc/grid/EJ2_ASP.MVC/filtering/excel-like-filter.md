@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Like Filter in ##Platform_Name## Grid Component
-description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: Excel Like Filter in Syncfusion ##Platform_Name## Grid 
+description: Learn here all about Excel Like Filter in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
 publishingplatform: ##Platform_Name##
@@ -68,6 +68,14 @@ The following example demonstrates how to customize the filter choice count in t
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
+## Add current selection to filter Checkbox/Excel
+
+By default, the Checkbox/Excel filter can only filter the selected items. If filtering is done multiple times on the same column, the previously filtered values in the column will be cleared. Now, it is possible to retain those previous values by using the `Add current selection to filter` Checkbox/Excel filter. This Checkbox/Excel is displayed when data is searched in the search bar of the Checkbox/Excel filter.
+
+The following image describes the above mentioned behavior.
+
+![Checkbox filter](../images/checkboxfilter.png)
+
 ## Show customized text in checkbox list data
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides you with the flexibility to customize the text displayed in the Excel/Checkbox filtering options. This allows you to modify the default text and provide more meaningful and contextual labels for the filtering.
@@ -131,6 +139,23 @@ The following example demonstrates how to remove the context menu option in the 
 {% endtabs %}
 
 ![Filter bar](../images/filtering/excelfilter-customize-dialog.gif)
+
+## Bind custom remote datasource for excel/checkbox filtering
+
+The Syncfusion ASP.NET MVC Grid allows you to dynamically change the filter data source for the Excel or checkbox filter module using custom remote data as well. This can be done by either assigning a custom remote `DataManager` as the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) or by fetching the data initially and storing it in a global variable. This data can then be bound directly to the filter module's `DataSource` in the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event for the `FilterBeforeOpen` **RequestType**, as detailed in our [knowledge base](https://support.syncfusion.com/kb/article/10065/how-to-change-the-data-source-for-checkbox-filter-popup-in-grid).
+
+The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfilter-custom-datasource/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Filter bar](../images/filtering/custom-binding.png)
 
 ## Hide sorting option in filter dialog
 

@@ -12,7 +12,6 @@
 <script>
     var autoComplete;
     var employeeData = @Json.Serialize(ViewBag.foreignData);
-
     function create() { // to create input element
         return document.createElement('input');
     }
@@ -30,5 +29,5 @@
             value: args.foreignKeyData[0][args.column.foreignKeyValue]
         });
        autoComplete.appendTo(args.element);
-}
+    }
 </script>

@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Integrate Badge Into Listview in ##Platform_Name## Badge Component
-description: Learn here all about how to integrate badge into Listview in Syncfusion ##Platform_Name## Badge component of Syncfusion Essential JS 2 and more.
+title: Integrate Badge Into ListView in ##Platform_Name## Badge control | Syncfusion
+description: Learn here all about how to integrate Badge into ListView in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Integrate Badge Into Listview
+control: Integrate Badge Into ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Integrate Badge into ListView
 
-The badges can be integrated with the `listview` component to indicate new notification with colour based on priority.
+The Badges can be integrated with the `ListView` control to indicate new notification with color based on priority.
 
-In the following sample, `default` badges are used and there is no need to customize the badge size. The component will automatically adjust the size based on the container element.
+In the following sample, `default` Badges are used and there is no need to customize the Badge size. The control will automatically adjust the size based on the container element.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

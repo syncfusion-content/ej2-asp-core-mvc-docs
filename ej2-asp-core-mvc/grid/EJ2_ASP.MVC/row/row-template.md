@@ -69,6 +69,25 @@ Here is an example that demonstrates rendering Syncfusion<sup style="font-size:7
 
 ![Row Template](../images/row/row-template-component.png)
 
+## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Chart in row template
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides the flexibility to include custom controls, such as Chart, within the rows of the Grid. This feature enhances Grid interactivity by allowing you to display graphical representations of data instead of plain text.
+
+To render a Syncfusion<sup style="font-size:70%">&reg;</sup> Chart within a row template of the Grid, you can utilize the [RowTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowTemplate) property. This property accepts a custom HTML template that specifies the layout for each row, allowing for rich data visualization.
+
+Here is an example that demonstrates rendering Syncfusion Chart within a row template:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/row-template-chart/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/grid/row/row-template-chart/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Row Template](../images/row/row-template-chart.png)
+
 ## Limitations
 
 Row template feature is not compatible with all the features which are available in the grid, and it has limited features support. The features that are incompatible with the row template feature are listed below.

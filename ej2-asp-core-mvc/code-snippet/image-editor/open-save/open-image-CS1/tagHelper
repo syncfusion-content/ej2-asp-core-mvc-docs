@@ -2,8 +2,8 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
     <ejs-imageeditor id="image-editor" created="created"></ejs-imageeditor>
 </div>
-<ejs-button id="zoomInClick" onclick="saveImage()" cssClass="e-primary" content="Save Image"></ejs-button>
-<ejs-button id="zoomOutClick" onclick="setImage()" cssClass="e-primary" content="Set Image"></ejs-button>
+<ejs-button id="savebase64" onclick="savebase64()" cssClass="e-primary" content="SAVE BASE64"></ejs-button>
+<ejs-button id="openbase64" onclick="openbase64()" cssClass="e-primary" content="OPEN BASE64"></ejs-button>
 
 <script>
     var base64String;
@@ -17,7 +17,7 @@
     }
 
 
-    function saveImage() {
+    function savebase64() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         var imageData = imgObj.getImageData();
         const canvas = document.createElement('canvas');
@@ -27,7 +27,7 @@
         context.putImageData(imageData, 0, 0);
         this.base64String = canvas.toDataURL();
     }
-    function setImage() {
+    function openbase64() {
         var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         imgObj.open(this.base64String);
     }

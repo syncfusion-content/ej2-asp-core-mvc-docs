@@ -1,14 +1,12 @@
-@{  
-    
+@{
     Syncfusion.EJ2.ImageEditor.ImageEditorUploadSettings uploadSettings = new Syncfusion.EJ2.ImageEditor.ImageEditorUploadSettings
     {
-        MinFileSize = 1024,     // Minimum file size in bytes (1 KB)
-        MaxFileSize = 102400,  // Maximum file size in bytes (100 KB)
+        AllowedExtensions = ".jpeg, .jpg"
     };
 }
 
 <div class="col-lg-12 control-section e-img-editor-sample">
-    <ejs-imageeditor id="image-editor" created="created"  uploadSettings="uploadSettings"></ejs-imageeditor>
+    <ejs-imageeditor id="image-editor" uploadSettings="uploadSettings"></ejs-imageeditor>
 </div>
 <ejs-button id="loadInvalidImage" onclick="loadInvalidImage()" cssClass="e-primary" content="Load Invalid Image"></ejs-button>
 

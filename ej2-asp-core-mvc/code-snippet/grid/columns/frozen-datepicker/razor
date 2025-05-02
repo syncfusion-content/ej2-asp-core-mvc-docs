@@ -1,0 +1,31 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).FrozenColumns(2).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Edit(new { create = "createDatePicker", read = "readDatePicker", destroy = "destroyDatePicker", write = "writeDatePicker" }).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("130").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+}).AllowPaging().PageSettings(page=>page.PageCount(5)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+<script>
+    var datePickerObj;
+    var datePickerElement;
+    function createDatePicker() {
+        datePickerElement = document.createElement('input');
+        return datePickerElement;
+    }
+    function readDatePicker() {
+        return datePickerObj.value;
+    }
+    function destroyDatePicker() {
+        datePickerObj.destroy();
+    }
+    function writeDatePicker(args) {
+        var rowData = args.rowData;
+        datePickerObj = new ej.calendars.DatePicker({
+            value: rowData.OrderDate,
+            change: function (e) {
+                rowData.OrderDate = e.value;
+            }
+        });
+        datePickerObj.appendTo(datePickerElement);
+    }
+</script>

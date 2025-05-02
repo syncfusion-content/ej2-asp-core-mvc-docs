@@ -4,14 +4,12 @@
     col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("170").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-
 }).Created("created").Toolbar(new List<string>() { "Search" }).Render()
-
 <script>
-function created() {
-       var grid = document.getElementById("Grid").ej2_instances[0];
+    function created() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
         document.getElementById(grid.element.id + "_searchbar").addEventListener('keyup', () => {
-                grid.search(event.target.value)
+            grid.search(event.target.value)
         });
     }
 </script>

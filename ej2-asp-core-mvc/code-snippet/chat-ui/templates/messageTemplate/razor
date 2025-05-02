@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).MessageTemplate("#messagesContent").Render()
+    @Html.EJS().ChatUI("messageTemplate").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).MessageTemplate("#messagesContent").Render()
 </div>
 
 <script id="messagesContent" type="text/x-jsrender">
@@ -25,6 +25,4 @@
     #messageTemplate .message-items {
         padding: 5px;
     }
-
-
 </style>

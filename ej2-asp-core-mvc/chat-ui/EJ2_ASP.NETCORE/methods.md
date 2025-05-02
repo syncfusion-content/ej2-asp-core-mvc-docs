@@ -18,6 +18,9 @@ You can use the `addMessage` public method to add the messages in the Chat UI. Y
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/methods/addMessageObj/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="AddMessageObj.cs" %}
+{% include code-snippet/chat-ui/methods/addMessageObj/addMessageObj.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![Adding New Message as Object](images/addMessageObj.png)
@@ -25,6 +28,9 @@ You can use the `addMessage` public method to add the messages in the Chat UI. Y
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/methods/addMessageString/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AddMessageString.cs" %}
+{% include code-snippet/chat-ui/methods/addMessageString/addMessageObj.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,6 +44,9 @@ You can use the `updateMessage` public method to update the messages in the Chat
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/methods/editMessage/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="EditMessage.cs" %}
+{% include code-snippet/chat-ui/methods/editMessage/addMessageObj.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![EditMessage](images/editMessage.png)
@@ -49,6 +58,9 @@ You can use the `scrollToBottom` public method to scroll the chat view to the 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/methods/scrollToBottom/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ScrollToBottom.cs" %}
+{% include code-snippet/chat-ui/methods/scrollToBottom/addMessageObj.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -3,7 +3,7 @@
     .DataSource(ViewBag.dataSource)).SelectedNodes(ViewBag.selectedNodes).Render()
  
 <script>  
-function nodeselected() {
+function nodeSelected() {
         alert("The selected node's id: " + this.selectedNodes);
     }
 </script>

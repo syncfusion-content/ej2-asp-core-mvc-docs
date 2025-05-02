@@ -1,7 +1,5 @@
-public IActionResult DefaultExporting()
+public ActionResult Index()
 {
-    var order = OrdersDetails.GetAllRecords();
-     ViewBag.dropdownData = new string[] { "OrderID", "CustomerID", "EmployeeID", "Freight", "OrderDate", "ShipCountry", "ShipCity", "ShipAddress", "ShipName" };
-    ViewBag.dataSource = order;
+    ViewBag.dataSource = OrdersDetails.GetAllRecords();
     return View();
 }

@@ -1,0 +1,1 @@
+@Html.EJS().DateTimePicker("element").Value(ViewBag.value).Format("yyyy-MM-dd hh:mm").InputFormats(new string[] { "MM.dd.yyyy hh:mm a", "yyyy-MM-dd HH:mm" }).Placeholder("Enter date and time").Render()

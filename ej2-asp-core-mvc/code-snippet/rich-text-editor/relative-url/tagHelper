@@ -1,0 +1,4 @@
+<ejs-richtexteditor id="link" value="@ViewBag.value" EnableAutoUrl="true">
+    <e-richtexteditor-quicktoolbarsettings link="@ViewBag.link"></e-richtexteditor-quicktoolbarsettings>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>

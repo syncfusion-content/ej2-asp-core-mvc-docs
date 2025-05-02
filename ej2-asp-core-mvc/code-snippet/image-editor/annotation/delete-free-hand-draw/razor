@@ -1,8 +1,8 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").Render()
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Render()
 </div>
-@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Click").Click("clickHandler").Render()
-@Html.EJS().Button("delBtnClick").CssClass("e-primary").Content("Delete Click").Click("delclickHandler").Render()
+@Html.EJS().Button("btnClick").CssClass("e-primary").Content("Enable freehand drawing").Click("clickHandler").Render()
+@Html.EJS().Button("delBtnClick").CssClass("e-primary").Content("Delete freehand drawing").Click("delclickHandler").Render()
 
 <script>
     function created() {

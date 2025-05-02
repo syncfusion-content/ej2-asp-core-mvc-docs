@@ -19,13 +19,13 @@ This section briefly explains about how to include [ASP.NET Core Badge](https://
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
 ## Add stylesheet
 
-Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -43,7 +43,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 ## Add ASP.NET Core Badge Control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Badge tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Badge tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -19,7 +19,7 @@ This section briefly explains about how to include [ASP.NET Core Image Editor](h
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Image
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Image Editor control will be rendered in the default web browser.
 
-![ASP.NET Core ImageEditor Control](images/image-editor.jpg)
+![ASP.NET Core ImageEditor Control](images/image-editor-load.png)
 
 ## See also
 

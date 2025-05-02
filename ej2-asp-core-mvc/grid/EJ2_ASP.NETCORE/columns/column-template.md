@@ -48,7 +48,7 @@ The following example demonstrates, how to render hyperlink column in the Grid u
 {% endhighlight %}
 {% endtabs %}
 
-![Column Template HyberLink](../images/column-template/column-template-hyperlink.png)
+![Column Template HyperLink](../images/column-template/column-template-hyperlink.png)
 
 >The window.open() method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
@@ -187,6 +187,26 @@ function queryCellInfo(args) {
 
 ![Column Template ProgressBar](../images/column-template/column-template-progressbar.png)
 
+### Render RadioButton in a column
+
+The Syncfusion ASP.NET Core Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started) within a column using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+
+In the following example, a `RadioButton` is rendered in the **Order Status** column of the Syncfusion ASP.NET Core Grid by defining the `template` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/column-template-radiobutton.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid/columns/column-template-radiobutton/OrdersDetails.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Column Template RadioButton](../images/column-template/column-template-radiobutton.png)
+
 ## Using condition template
 
 The conditional column `template` allows you to display template elements based on specific conditions.
@@ -272,6 +292,23 @@ The following example demonstrates how to add template column using external but
 {% endtabs %}
 
 ![Column Dynamically Adding Template](../images/column-template/column-dynamically-add-template.gif)
+
+## Enhancing Grid performance by enabling or disabling Aria Labels
+
+By default, the Syncfusion ASP.NET Core Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
+
+If your application doesn’t require screen reader support and includes multiple template columns, Aria labels may impact performance. To improve rendering, you can disable them for all template columns by setting the `enableAriaLabel` property to **false** in the `templateOptions` of those columns. If accessibility is needed, set it to **true** to retain Aria labels.
+
+The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the Syncfusion ASP.NET Core Grid.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/template-aria-label/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/grid/columns/template-aria-label/template-aria-label.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## See Also
 

@@ -22,7 +22,6 @@
     var roleDropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = jobRole, Query = "new ej.data.Query()", Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "role", Text = "role" }, AllowFiltering = true,Change="valueChange" };
     var salaryDropDownList = new Syncfusion.EJ2.DropDowns.DropDownList() { DataSource = salaryDetails, Query = "new ej.data.Query()", Fields = new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings() { Value = "Salary", Text = "Salary" }, AllowFiltering = true,Change="customFunction" };
 }
-
 <ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" load="load" actionBegin="actionBegin" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Normal"></e-grid-editSettings>
     <e-grid-columns>
@@ -44,41 +43,31 @@
                     return true;
                 else
                     formObject.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
-
                 break;
-
             case 'Support':
                 if ((salary >= 15000 && salary < 19000))
                     return true;
                 else
                     formObject.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
-
                 break;
-
             case 'Engineer':
                 if ((salary >= 25000 && salary < 30000))
                     return true;
                 else
                     formObject.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
-
                 break;
-
             case 'Team Lead':
                 if ((salary >= 30000) && (salary < 50000))
                     return true;
                 else
                     formObject.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
-
                 break;
-
             case 'Manager':
                 if ((salary >= 50000) && (salary < 70000))
                     return true;
                 else
                     formObject.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
-
                 break;
-
         }
         return false;
     }
@@ -87,30 +76,20 @@
       window.role = args.value.toString(); 
       var formObject = grid.editModule.formObj.element['ej2_instances'][0];
         switch ( window.role) {
-
             case 'Sales':
                 formObject.rules['Salary']['required'][1] = 'Please enter valid Sales Salary >=5000 and< 15000';
-
                 break;
-
             case 'Support':
                 formObject.rules['Salary']['required'][1] = 'Please enter valid Support Salary >=15000 and < 19000';
-
                 break;
-
             case 'Engineer':
                 formObject.rules['Salary']['required'][1] = 'Please enter valid Engineer Salary between >=25000 and < 30000';
-
                 break;
-
             case 'Team Lead':
                 formObject.rules['Salary']['required'][1] = 'Please enter valid TeamLead Salary >= 30000 and < 50000';
-
                 break;
-
             case 'Manager':
                 formObject.rules['Salary']['required'][1] = 'Please enter valid Manager Salary >=50000 and < 70000';
-
                 break;
         }
     }

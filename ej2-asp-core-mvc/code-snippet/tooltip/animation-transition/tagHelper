@@ -1,18 +1,19 @@
-     <ejs-tooltip id="tooltip" target=".circletool" beforeRender="onBeforeRender" afterClose="onAfterClose" closeDelay=1000 animation="ViewBag.animation">
-        <e-content-template>
-            <div>
-                <h3> Transition effect </h3>
-                <div id="box" class="e-prevent-select">
-                    <div class="circletool" style="top:18%;left:5%" title="This is Turtle !!!"></div>
-                    <div class="circletool" style="top:30%;left:30%" title="This is Snake !!!"></div>
-                    <div class="circletool" style="top:80%;left:80%" title="This is Croc !!!"></div>
-                    <div class="circletool" style="top:65%;left:50%" title="This is String Ray !!!"></div>
-                    <div class="circletool" style="top:75%;left:15%" title="This is Blob Fish !!!"></div>
-                    <div class="circletool" style="top:30%;left:70%" title="This is Mammoth !!!"></div>
-                </div>
+
+<ejs-tooltip id="tooltip" target=".circletool" beforeRender="onBeforeRender" afterClose="onAfterClose" closeDelay=1000 animation="ViewBag.animation" position="TopCenter">
+    <e-content-template>
+        <div>
+            <h3> Transition effect </h3>
+            <div id="box" class="e-prevent-select">
+                <div class="circletool" style="top:18%;left:5%" title="This is Turtle !!!"></div>
+                <div class="circletool" style="top:30%;left:30%" title="This is Snake !!!"></div>
+                <div class="circletool" style="top:80%;left:80%" title="This is Croc !!!"></div>
+                <div class="circletool" style="top:65%;left:50%" title="This is String Ray !!!"></div>
+                <div class="circletool" style="top:75%;left:15%" title="This is Blob Fish !!!"></div>
+                <div class="circletool" style="top:30%;left:70%" title="This is Mammoth !!!"></div>
             </div>
-        </e-content-template>
-    </ejs-tooltip>
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
     #box {
@@ -32,6 +33,7 @@
         width: 20px;
     }
 </style>
+
 <script>
     function onBeforeRender(args) {
         if (args.element) {

@@ -1,4 +1,5 @@
-<ejs-tooltip id="tooltip" content="Tooltip content">
+
+<ejs-tooltip id="tooltip" content="Tooltip content" position="TopCenter">
     <e-content-template>
         <div id="box" style="display: inline-block;">
             <input type="button" id="disabledbutton" disabled value="Disabled button" />

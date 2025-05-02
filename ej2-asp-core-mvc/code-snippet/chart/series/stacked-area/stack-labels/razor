@@ -1,0 +1,17 @@
+@Html.EJS().Chart("container-vertical").Series(series =>
+{
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y").DataSource(ViewBag.dataSource)
+    .Name("Organic").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y1").DataSource(ViewBag.dataSource)
+    .Name("Fair-trade").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y2").DataSource(ViewBag.dataSource)
+    .Name("Veg Alternatives").Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StackingArea)
+    .Marker(mr=> mr.DataLabel(dl=>dl.Visible(true))).XName("X").YName("Y3").DataSource(ViewBag.dataSource)
+    .Name("Others").Add();
+}).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime).Title("Years").IntervalType(Syncfusion.EJ2.Charts.IntervalType.Years).LabelFormat("y").EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift).MajorTickLines(mt=>mt.Width(0))
+).PrimaryYAxis(py => py.Title("Spend in Billions").Minimum(0).Maximum(7).Interval(1).LabelFormat("{value}B").MajorTickLines(mt=>mt.Width(0))
+).StackLabels(stackLabels => stackLabels.Visible(true)).Title("Trend in Sales of Ethical Produce").Render()

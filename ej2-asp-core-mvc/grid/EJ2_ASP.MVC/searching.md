@@ -12,7 +12,7 @@ documentation: ug
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
-To set the [allowSearching](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#allowsearching) property to true to enable the searching feature in the grid.
+To set the `AllowSearching` property to true to enable the searching feature in the grid.
 
 To further enhance the search functionality, you can integrate a search text box directly into the grid's toolbar. This allows users to enter search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property and add **Search** item.
 
@@ -197,7 +197,7 @@ On the other hand, the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc
 
 By default, the searching operation in the Grid component does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [SearchSettings.IgnoreAccent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html#Syncfusion_EJ2_Grids_GridSearchSettings_IgnoreAccent) property of the Grid component as **true**.
 
-The following example demonstrates how to define the `IgnoreAccent` property within the [SearchSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html) property of the grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component is included to modify the value of the `SearchSettings.IgnoreAccent` property. When the switch is toggled, the `change` event is triggered, and the `SearchSettings.IgnoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `SearchSettings.IgnoreAccent` setting when performing search operations.
+The following example demonstrates how to define the `IgnoreAccent` property within the [SearchSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSearchSettings.html) property of the grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component is included to modify the value of the `SearchSettings.IgnoreAccent` property. When the switch is toggled, the `Change` event is triggered, and the `SearchSettings.IgnoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `SearchSettings.IgnoreAccent` setting when performing search operations.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -253,6 +253,25 @@ The following example demonstrates how to clear the searched records using an ex
 ![Clear search by external button](images/search/search-clear.gif)
 
 > You can also clear the searched records by using the clear icon within the search input field.
+
+## Retrieving searched records using a button click
+
+The Syncfusion Grid allows users to retrieve searched records using an external button. This functionality enables capturing the search text entered in the toolbar and filtering the data accordingly.
+
+To achieve this, the [ActionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)  event can be used. This event is triggered when a search action is performed, allowing access to the search text. The captured search string can then be used with the `executeQuery` method of the `DataManager` to retrieve the matching records.
+
+The following example demonstrates how to retrieve searched records using an external button.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/search/retrieve-records/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="retrieve-records.cs" %}
+{% include code-snippet/grid/search/retrieve-records/retrieve-records.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Retrieve searched records](images/search/retrieve-records.png)
 
 ## See also
 

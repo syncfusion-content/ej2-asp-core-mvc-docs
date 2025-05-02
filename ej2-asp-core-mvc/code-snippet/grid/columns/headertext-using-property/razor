@@ -6,7 +6,6 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").CustomAttributes(new { @class = "custom" }).Width("120").Add();
 }).Render()
-
 <style>
    .e-grid .e-headercell.custom {
         background-color: rgb(43, 195, 226);
