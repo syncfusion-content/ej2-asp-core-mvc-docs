@@ -21,18 +21,22 @@
                 <li class="header-style float-right support border-left"><b>Support</b></li>
             </ul>
         </div>
-        @{Html.EJS().Sidebar("sidebar-treeview").Width("290px").Target(".main-content").EnableDock(true).DockSize("44px").MediaQuery("(min-width: 600px)").Close("onClose").ContentTemplate(@<div>
-        <!-- normal state element declaration -->
-        <div class="main-menu">
-            <div>
-                <!-- Treeview element declaration-->
-                @Html.EJS().TreeView("main-treeview").Fields(field=>
-                field.Id("nodeId").Text("nodeText").HasChildren("hasChild").IconCss("iconCss")
-                .DataSource(ViewBag.dataSource)).Render()
-            </div>
-        </div>
-        <!-- end of normal state element declaration -->
-    </div>).Render();}
+        @{Html.EJS().Sidebar("sidebar-treeview")
+            .Width("290px")
+            .Target(".main-content")
+            .EnableDock(true)
+            .DockSize("44px")
+            .MediaQuery("(min-width: 600px)")
+            .Close("onClose")
+            .ContentTemplate(@<div>
+                <div class="main-menu">
+                    <div>
+                        @Html.EJS().TreeView("main-treeview").Fields(field=>
+                        field.Id("nodeId").Text("nodeText").HasChildren("hasChild").IconCss("iconCss")
+                        .DataSource(ViewBag.dataSource)).Render()
+                    </div>
+                </div>
+            </div>).Render();}
         <div id="body_content" class="maincontent">
             <div>
                 @RenderBody()
@@ -104,31 +108,31 @@
                 border-left: 0.5px solid #80808070;
                 border-bottom: 0.5px solid #80808070;
             }
-                /*main-menu-header  styles */
-                #sidebar-treeview .main-menu .main-menu-header {
-                    color: #656a70;
-                    padding: 15px;
-                    font-size: 14px;
-                    width: 13em;
-                    margin: 0;
-                }
+            /*main-menu-header  styles */
+            #sidebar-treeview .main-menu .main-menu-header {
+                color: #656a70;
+                padding: 15px;
+                font-size: 14px;
+                width: 13em;
+                margin: 0;
+            }
 
-                /*end of main-menu-header styles */
+            /*end of main-menu-header styles */
 
-                /*text input styles */
-                #sidebar-treeview .main-menu .search-icon {
-                    text-indent: 10px;
-                    height: 30px;
-                    width: 19em;
-                }
+            /*text input styles */
+            #sidebar-treeview .main-menu .search-icon {
+                text-indent: 10px;
+                height: 30px;
+                width: 19em;
+            }
 
-                /*end of text input styles */
+            /*end of text input styles */
 
-                /* table of content area styles */
-                #sidebar-treeview .table-content {
-                    padding: 20px;
-                    height: 8em;
-                }
+            /* table of content area styles */
+            #sidebar-treeview .table-content {
+                padding: 20px;
+                height: 8em;
+            }
 
             /* end of table ofcontent area styles */
 

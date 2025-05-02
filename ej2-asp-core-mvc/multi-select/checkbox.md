@@ -133,7 +133,7 @@ Using [enableSelectionOrder](https://help.syncfusion.com/cr/cref_files/aspnetcor
 
 ## See Also
 
-* [How to bind the data](./data-binding/)
-* [How to filter the bound data](./filtering/)
-* [How to add custom value to the MultiSelect](./custom-value/)
-* [How to render checkbox in grouping to the MultiSelect](./grouping/#grouping-with-checkbox).
+* [How to bind the data](./data-binding)
+* [How to filter the bound data](./filtering)
+* [How to add custom value to the MultiSelect](./custom-value)
+* [How to render checkbox in grouping to the MultiSelect](./grouping#grouping-with-checkbox).

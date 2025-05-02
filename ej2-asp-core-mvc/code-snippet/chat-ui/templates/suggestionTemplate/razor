@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="chatui-container" style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Created("onCreated").Render()
+    @Html.EJS().ChatUI("suggestionTemplate").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).Created("onCreated").SuggestionTemplate("#suggestionContent").Render()
 </div>
 
 <script id="suggestionContent" type="text/x-jsrender">

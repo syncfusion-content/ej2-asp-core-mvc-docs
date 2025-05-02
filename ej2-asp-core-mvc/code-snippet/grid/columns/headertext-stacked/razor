@@ -8,7 +8,6 @@
     col.HeaderText("Shipped Details").HeaderTemplate("#shipDetailsTemplate").Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShippedDate", Width = "140", HeaderText = "Shipped Date", TextAlign=Syncfusion.EJ2.Grids.TextAlign.Right, Format = "yMd", MinWidth="10" },
         new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "145",  HeaderText = "Ship Country", MinWidth="10", EditType="dropdownedit" } }).Add();
 }).HeaderCellInfo("onHeaderCellInfo").Render()
-
 <style>
     @@font-face {
         font-family: "ej2-headertemplate";
@@ -42,17 +41,16 @@
     </div>
 </script>
 <script>
-    var dropdownData = ["Order Details", "Order Information"]
+    var dropDownData = ["Order Details", "Order Information"]
     function onHeaderCellInfo(args) {
         if (args.cell.column.headerText === 'Order Details') {
-            var dropdownElement = args.node.querySelector('#dropdown');
-            if (dropdownElement) {
+            var dropDownElement = args.node.querySelector('#dropdown');
+            if (dropDownElement) {
                 new ej.dropdowns.DropDownList({
                     index: "0",
-                    dataSource: dropdownData
-                }).appendTo(dropdownElement);
+                    dataSource: dropDownData
+                }).appendTo(dropDownElement);
             }
         }
-
     }
 </script>

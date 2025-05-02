@@ -1,10 +1,10 @@
-     <ejs-tooltip id="tooltip" cssClass="customtip" content="Tooltip arrow customized">
-        <e-content-template>
-            <div id="target">
-                Show tooltip
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+<ejs-tooltip id="tooltip" cssClass="customtip" content="Tooltip arrow customized" position="TopCenter">
+    <e-content-template>
+        <div id="target">
+            Show tooltip
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
     #target {
@@ -16,54 +16,52 @@
         width: 200px;
     }
 
-
     /* csslint ignore:start */
 
     .customtip.e-tooltip-wrap {
         padding: 4px;
     }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
-            height: 20px;
-            width: 12px;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip {
+        width: 12px;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
-            height: 20px;
-            width: 12px;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom,
+    .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+        height: 20px;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
-            height: 12px;
-            width: 20px;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-left,
+    .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
+        height: 12px;
+        width: 20px;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
-            height: 12px;
-            width: 20px;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom,
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-            border-top: 20px solid #616161;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+        border-top: 20px solid #616161;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
-            border-bottom: 20px solid #616161;
-            border-left: 6px solid transparent;
-            border-right: 6px solid transparent;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
+        border-bottom: 20px solid #616161;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
-            border-bottom: 6px solid transparent;
-            border-right: 20px solid #616161;
-            border-top: 6px solid transparent;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left,
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+        border-bottom: 6px solid transparent;
+        border-top: 6px solid transparent;
+    }
 
-        .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
-            border-bottom: 6px solid transparent;
-            border-left: 20px solid #616161;
-            border-top: 6px solid transparent;
-        }
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
+        border-right: 20px solid #616161;
+    }
+
+    .customtip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+        border-left: 20px solid #616161;
+    }
 </style>

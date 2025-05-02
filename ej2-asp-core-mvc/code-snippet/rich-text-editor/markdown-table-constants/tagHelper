@@ -1,10 +1,9 @@
-<ejs-richtexteditor id="markdown" locale="en-US" value="@ViewBag.value" editorMode="Markdown" created="created">
+<ejs-richtexteditor id="markdown" value="@ViewBag.value" editorMode="Markdown" created="created">
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
 </ejs-richtexteditor>
 
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
 <script type="text/javascript">
+
     window.onload = function () {
         ej.base.L10n.load({
             'en-US': {
@@ -15,71 +14,72 @@
             }
         });
     }
-    var mdsource, defaultRTE, textArea;
+    var rteObj, textArea, mdsource;
     function created() {
-        defaultRTE = this;
-        textArea = defaultRTE.contentModule.getEditPanel();
-        textArea.addEventListener('keyup', (event) => { markDownConversion(); });
-        var rteObj = defaultRTE;
+        rteObj = this;
+        rteObj.formatter = new ej.richtexteditor.MarkdownFormatter({ listTags: { 'OL': '1., 2., 3.' } });
+        rteObj.dataBind();
+        textArea = rteObj.contentModule.getEditPanel();
+        textArea.addEventListener('keyup', function (e) {
+            markdownConversion();
+        });
         mdsource = document.getElementById('preview-code');
-        mdsource.addEventListener('click', (event) => {
-            fullPreview({ mode: true, type: 'preview' });
-            if ((event.currentTarget).classList.contains('e-active')) {
-                defaultRTE.disableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
-                    'Formats', 'OrderedList', 'UnorderedList', '|',
-                    'CreateLink', 'Image', 'Undo', 'Redo', 'CreateTable']);
-            } else {
-                defaultRTE.enableToolbarItem(['Bold', 'Italic', 'StrikeThrough', '|',
-                    'Formats', 'OrderedList', 'UnorderedList', '|',
-                    'CreateLink', 'Image', 'Undo', 'Redo', 'CreateTable']);
+        mdsource.addEventListener('click', function (e) {
+            fullPreview();
+            if (e.currentTarget.classList.contains('e-active')) {
+                rteObj.disableToolbarItem(['CreateTable']);
+            }
+            else {
+                rteObj.enableToolbarItem(['CreateTable']);
             }
         });
-    };
-    function markDownConversion() {
+    }
+    loadExternalFile();
+    function loadExternalFile() {
+        var script = document.createElement('script');
+        script.src = 'https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.19/marked.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+    function markdownConversion() {
         if (mdsource.classList.contains('e-active')) {
-            var id = defaultRTE.getID() + 'html-preview';
-            var htmlPreview = defaultRTE.element.querySelector('#' + id);
-            var rteElement = defaultRTE.contentModule.getEditPanel();
-            var rteValue = rteElement.value;
-            htmlPreview.innerHTML = marked(defaultRTE.value);
+            var id = rteObj.getID() + 'html-preview';
+            var htmlPreview = rteObj.element.querySelector('#' + id);
+            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
         }
-    };
-    function fullPreview(event) {
-        var id = defaultRTE.getID() + 'html-preview';
-        htmlPreview = defaultRTE.element.querySelector('#' + id);
+    }
+    function fullPreview() {
+        var id = rteObj.getID() + 'html-preview';
+        var htmlPreview = rteObj.element.querySelector('#' + id);
+        var previewTextArea = rteObj.element.querySelector('.e-rte-content');
         if (mdsource.classList.contains('e-active')) {
             mdsource.classList.remove('e-active');
             mdsource.parentElement.title = 'Preview';
             textArea.style.display = 'block';
-            textArea.style.width = '100%';
             htmlPreview.style.display = 'none';
-        } else {
+            previewTextArea.style.overflow = 'hidden';
+        }
+        else {
             mdsource.classList.add('e-active');
             if (!htmlPreview) {
-                htmlPreview = ej.base.createElement('div', { className: 'e-content' });
+                htmlPreview = ej.base.createElement('div', { className: 'e-content e-pre-source' });
                 htmlPreview.id = id;
                 textArea.parentNode.appendChild(htmlPreview);
+                previewTextArea.style.overflow = 'auto';
             }
-            if (event.type === 'preview') {
-                textArea.style.display = 'none'; htmlPreview.classList.add('e-pre-source');
-            } else {
-                htmlPreview.classList.remove('e-pre-source');
-                textArea.style.width = '50%';
+            if (previewTextArea.style.overflow === 'hidden') {
+                previewTextArea.style.overflow = 'auto';
             }
+            textArea.style.display = 'none';
             htmlPreview.style.display = 'block';
-            markDownConversion();
+            htmlPreview.innerHTML = marked(rteObj.contentModule.getEditPanel().value);
             mdsource.parentElement.title = 'Code View';
         }
     }
 </script>
+
 <style>
     .e-richtexteditor textarea.e-content {
         float: left;
-        border-right: 1px solid rgba(0, 0, 0, 0.12);
-    }
-
-    .e-richtexteditor .e-rte-content .e-content {
-        min-height: 150px;
     }
 
     .e-richtexteditor .e-rte-content {
@@ -94,15 +94,47 @@
         content: '\e345';
     }
 
-    .e-rte-content .e-content {
-        float: right;
-        overflow: auto;
-        height: inherit;
-        padding: 8px;
-        height: 100%;
+    .bootstrap4 .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e790';
     }
 
-        .e-rte-content .e-content.e-pre-source {
-            width: 100%;
-        }
+    .bootstrap4 .e-icon-btn .e-md-preview::before {
+        content: '\e787';
+    }
+
+    .fluent .e-icon-btn.e-active .e-md-preview::before,
+    .fluent-dark .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2 .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2-dark .e-icon-btn.e-active .e-md-preview::before,
+    .fluent2-highcontrast .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind-dark .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind3 .e-icon-btn.e-active .e-md-preview::before,
+    .tailwind3-dark .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5 .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5-dark .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5\.3 .e-icon-btn.e-active .e-md-preview::before,
+    .bootstrap5\.3-dark .e-icon-btn.e-active .e-md-preview::before,
+    .material3 .e-icon-btn.e-active .e-md-preview::before,
+    .material3-dark .e-icon-btn.e-active .e-md-preview::before {
+        content: '\e80e';
+    }
+
+    .tailwind .e-icon-btn .e-md-preview::before,
+    .tailwind-dark .e-icon-btn .e-md-preview::before,
+    .tailwind3 .e-icon-btn .e-md-preview::before,
+    .tailwind3-dark .e-icon-btn .e-md-preview::before,
+    .bootstrap5 .e-icon-btn .e-md-preview::before,
+    .bootstrap5-dark .e-icon-btn .e-md-preview::before,
+    .bootstrap5\.3 .e-icon-btn .e-md-preview::before,
+    .bootstrap5\.3-dark .e-icon-btn .e-md-preview::before,
+    .fluent .e-icon-btn .e-md-preview::before,
+    .fluent-dark .e-icon-btn .e-md-preview::before,
+    .fluent2 .e-icon-btn .e-md-preview::before,
+    .fluent2-dark .e-icon-btn .e-md-preview::before,
+    .fluent2-highcontrast .e-icon-btn .e-md-preview::before,
+    .material3 .e-icon-btn .e-md-preview::before,
+    .material3-dark .e-icon-btn .e-md-preview::before {
+        content: '\e7de';
+    }
 </style>

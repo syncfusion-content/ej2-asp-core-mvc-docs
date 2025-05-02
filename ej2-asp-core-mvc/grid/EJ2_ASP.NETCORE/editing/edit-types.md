@@ -122,6 +122,27 @@ The following sample code demonstrates the customization applied to DropDownList
 
 ![Customize dropdown edit type](../images/editing/dropdown-edit-type.png)
 
+### Provide custom data source for DropDownList component
+
+In Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component, you have an option to provide a custom data source for the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
+
+To achieve this, you can utilize the `columns->edit->params` property. This property allows you to define the edit params for the column within the grid.
+
+When setting a new data source using the edit params, you need to specify a new [query](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Query)  property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+
+In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custom-data-params/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dropdownlist-params.cs" %}
+{% include code-snippet/grid/edit/custom-data-params/dropdown-params.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Provide custom data source for DropDownList component](../images/editing/dropdown-edit-type.png)
+
 ### Apply filtering for DropDownList component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
@@ -160,7 +181,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
 {% endhighlight %}
 {% endtabs %}
 
-![Customize dropdown edit type](../images/editing/dropdown-popup.gif)
+![Customize dropdown edit type](../images/editing/dropdown-popup.png)
 
 ## Customize CheckBox component of booleanedit type 
 
@@ -203,6 +224,23 @@ The following sample code demonstrates the customization applied to DatePicker c
 {% endtabs %}
 
 ![Customize date picker edit type](../images/editing/datepicker-edit-type.png)
+
+### Disable the date value prior to the selected date value in DatePicker
+
+The Syncfusion ASP.NET Core Grid allows configuring the [DatePicker](../../datepicker) to dynamically set a minimum selectable date. This ensures that users can only select dates that fall after a specified minimum date, based on the data in each row. This feature is particularly useful for maintaining data consistency and preventing users from selecting inappropriate or illogical dates.
+
+The following example demonstrates how to configure the `DatePicker` within the Grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker’s calendar based on the data in the current row.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/hide-date/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="hide-date.cs" %}
+{% include code-snippet/grid/edit/hide-date/hide-date.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Disable the date value](../images/editing/hide-date.png)
 
 ## Customize DateTimePicker component of datetimepickeredit type 
 
@@ -355,7 +393,7 @@ The following example demonstrates how to render images in the DropDownList edit
 {% endhighlight %}
 {% endtabs %}
 
-![Render drop down list component with image](../images/editing/dropdown-with-image.png)
+![Render drop down list component with image](../images/editing/dropdown-with-image.jpeg)
 
 ### Render Multiple columns in DropDownList component  
 
@@ -433,7 +471,7 @@ The following example demonstrates how to render a MultiSelect component in the 
 {% endhighlight %}
 {% endtabs %}
 
-![Render multiselect component](../images/editing/render-multiselect-dropdown.gif)
+![Render multiselect component](../images/editing/render-multiselect-dropdown.jpeg)
 
 ### Render RichTextEditor component in edit form
 
@@ -454,7 +492,26 @@ The following example demonstrates how to render a RichTextEditor component in t
 {% endhighlight %}
 {% endtabs %}
 
-![Render richtext editor component](../images/editing/render-richtext-editor.gif)
+![Render richtext editor component](../images/editing/render-richtext-editor.jpeg)
+
+### Render Upload component in edit form  
+
+The Syncfusion Grid allows you to render an Upload control within the Grid's edit form. This feature is especially valuable when you need to upload and manage files or images in a specific column during data editing.
+
+To render Upload control in edit form, you need to define a cell edit template for the column using `edit` property. The **edit** property specifies the cell edit template that used  as an editor for a particular column.
+
+The following example demonstrates how to render a Upload control in the **Employee Image** column of the Syncfusion Grid. The [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event is handled to update the edited value in the grid when the save button is clicked:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/edit-upload/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="upload.cs" %}
+{% include code-snippet/grid/edit/edit-upload/upload.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Render Upload component in edit form](../images/editing/edit-types-upload.jpeg)
 
 ### Render AutoComplete component in edit form 
 

@@ -1,5 +1,5 @@
 <div style="padding:0px 0px 20px 0px">
-    @Html.EJS().Button("show")..CssClass("e-primary").Content("open Column Chooser").Render()
+    @Html.EJS().Button("show").CssClass("e-primary").Content("open Column Chooser").Render()
 </div>
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ShowColumnChooser(true).Columns(col =>
 {

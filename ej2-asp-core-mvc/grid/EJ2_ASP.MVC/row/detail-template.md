@@ -29,7 +29,7 @@ Here's an example of using the `DetailTemplate` property in the grid component:
 
 The Grid component provides a powerful feature that allows you to render custom components inside the detail row. This feature is helpful when you need to add additional information or functionality for a specific row in the grid.
 
-To render a custom component inside the detail row, you need to define a template using the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property and handle the [DetailDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.This template can include any HTML element or ASP.NET MVC component that you want to display as the detail content.
+To render a custom component inside the detail row, you need to define a template using the [DetailTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property and handle the [DetailDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event.This template can include any HTML element or ASP.NET MVC component that you want to display as the detail content.
 
 The `DetailDataBound` event is an event that is triggered after a detail row is bound to data. This event provides an object of type `DetailDataBoundEventArgs` as a parameter.
 

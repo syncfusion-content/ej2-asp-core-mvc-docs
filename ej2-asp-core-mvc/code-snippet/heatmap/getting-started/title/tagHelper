@@ -7,7 +7,7 @@
         fontStyle= "Normal",
         fontFamily= "Segoe UI"
     };
-    string[] xlabels = new string[12] { "Nancy", "Andrew", "Janet", "Margaret", "Steven", "Michael", "Robert", "Laura", "Anne", "Paul", "Karin", "Mario" };
+    string[] xLabels = new string[12] { "Nancy", "Andrew", "Janet", "Margaret", "Steven", "Michael", "Robert", "Laura", "Anne", "Paul", "Karin", "Mario" };
     string[] yLabels = new string[6] { "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
     int[,] data = new int[,]
     {
@@ -29,8 +29,8 @@
 <ejs-heatmap id='container' dataSource="data">
 	<e-heatmap-titlesettings text="Sales Revenue per Employee (in 1000 US$)" textStyle="textStyle">
 	</e-heatmap-titlesettings>
-	<e-heatmap-xaxis labels="xlabels">
+	<e-heatmap-xaxis labels="xLabels">
 	</e-heatmap-xaxis>
-	<e-heatmap-yaxis labels="ylabels">
+	<e-heatmap-yaxis labels="yLabels">
 	</e-heatmap-yaxis>
 </ejs-heatmap>

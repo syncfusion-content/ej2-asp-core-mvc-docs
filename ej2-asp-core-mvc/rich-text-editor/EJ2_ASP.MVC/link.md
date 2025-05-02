@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Link in ##Platform_Name## Rich Text Editor Component
+title: Link in Syncfusion ##Platform_Name## Rich Text Editor Component
 description: Learn here all about Link in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Link
@@ -8,19 +8,22 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Link
+# Link in ##Platform_Name## Rich Text Editor Control
 
 A hyperlink can be insert into the editor for quick access to the related information. The hyperlink itself can be a text or an image.
 
-## Insert Link
+## Inserting a Link
 
-Point the cursor anywhere within the editor where you would like to insert the link. It is also possible to select a text or an image within the editor and can be converted to the hyperlink. Click the Insert HyperLink tool on the toolbar. The Insert Link Dialog will be open. The dialog has the following options.
+To insert a hyperlink:
+
+1. Position your cursor where you want to insert the link, or select the text or image you wish to convert into a hyperlink.
+2. Click the "Insert HyperLink" tool on the toolbar.
+3. In the Insert Link Dialog that appears, fill in the following options.
 
 | Options | Description |
 |----------------|--------------------------------------|
-| Web Address | Type or paste the destination for the link you are creating |
-| Display Text | Type or edit the required text that you want to display text for the link|
+| Web Address | Enter or paste the destination URL for your link |
+| Display Text | Enter or edit the required text that you want to display text for the link|
 | Tooltip | To display additional helpful information when you place the pointer on the hyperlink, type the required text in the “Tooltip” field. |
 | Open Link in New Window | Specify whether, the given link will be open in new window or not |
 
@@ -47,39 +50,44 @@ Point the cursor anywhere within the editor where you would like to insert the l
 {% endtabs %}
 {% endif %}
 
+N> The Rich Text Editor validates URLs as you type in the Web Address field. Invalid URLs will be highlighted in red when you click the insert button in the `Insert Link` dialog.
 
+## Removing a Link
 
-N> The Rich Text Editor link tool validates URLs, as you type them in Web Address. URLs considered invalid will be highlighted with red color by clicking the insert button in the `Insert Link` dialog.
+To remove a hyperlink:
 
-## Remove Link
+1. Select the linked text or image.
+2. Click the "Remove Hyperlink" tool in the toolbar.
 
-If you want to remove a hyperlink from a text or image, select the text or image with the hyperlink and click `Remove Hyperlink` tool from toolbar. It will keep the text or image.
+This action will remove the hyperlink while keeping the original text or image intact.
 
-## Auto-link
+## Auto Link Generation
 
-When you type URL and Enter key to the Rich Text Editor, the typed URL will be automatically changed into the hyperlink.
+The Rich Text Editor supports automatic link generation. When you type a URL and press Space or Enter, the editor automatically converts the typed URL into a clickable hyperlink.
 
-## Manipulation
+## Customizing the Link Quick Toolbar
 
-It is possible to add custom style on the selected link inside the Rich Text Editor through quick toolbar.
+The Rich Text Editor allows you to customize the tools in the link quick toolbar. You can add or remove items by using the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
 The quick toolbar for the Link has the following options.
 
 | Tools | Description |
 |----------------|--------------------------------------|
-| Open | The given link page, will be open in new window. |
-| Edit Link | Used to edit the link in the Rich Text Editor content. |
-| Remove Link | Used to remove link from the content of Rich Text Editor. |
-| Custom Tool | Used to add the custom options in the quick toolbar. |
+| Open | Opens the linked page in a new window. |
+| Edit Link | Allows you to edit the selected link. |
+| Remove Link | Removes the link from the selected content. |
+| Custom Tool | Adds custom options to the quick toolbar. |
+
+The following example demonstrates how to customize the link quick toolbar using the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/link/tagHelper %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/link/controller.cs %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,17 +95,44 @@ The quick toolbar for the Link has the following options.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/link/razor %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/link/controller.cs %}
+{% include code-snippet/rich-text-editor/link-quick-toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+## Inserting a Related Link
 
+By default, the URL entered in the Web Address field is automatically converted into an absolute URL by prefixing it with https:// for hyperlinks. This ensures that the URL is properly formatted and accessible when used as a hyperlink.
+
+However, if you want to accept the given URL without validating it for hyperlinks and without automatically adding a protocol (such as https://) or domain, you need to set the [EnableAutoUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableAutoUrl) property to true. By default, this property is set to false, meaning that automatic URL conversion is enabled unless explicitly disabled.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/relative-url/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/relative-url/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/relative-url/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/relative-url/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
-* [How to edit the quick toolbar settings](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/toolbar#quick-inline-toolbar)
-* [How to insert image link editing option in the toolbar items](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/image#image-with-link)
+* [Image with links](./image/#image-with-link)
+* [Insert File Attachments](./how-to/file-attachment)

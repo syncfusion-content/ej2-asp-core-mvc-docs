@@ -59,7 +59,7 @@ To enable cache mode, you need to define [EnableCache](https://help.syncfusion.c
 
 To enable maximum blocks, you need to define `MaxBlocks` count of [InfiniteScrollSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridInfiniteScrollSettings.html), By default this property value is 3.
 
-The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component[Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event :
+The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) component [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event :
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -69,6 +69,8 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% include code-snippet/grid/scrolling/infinite-scroll-cache/infinite-scroll-cache.cs%}
 {% endhighlight %}
 {% endtabs %}
+
+> If [Hierarchy Grid](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly.
 
 ## Limitations
 
@@ -88,10 +90,8 @@ The following example that demonstrates how to enable/disable cache mode in infi
     4. Column spanning
     5. Row template
     6. Row virtual scrolling
-    8. Detail template
-    9. Hierarchy features
-    10. Autofill
-    11. Page
+    7. Autofill
+    8. Page
 * Limitations of row drag and drop with infinite scrolling
     1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
     2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.

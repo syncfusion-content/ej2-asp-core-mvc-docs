@@ -1,7 +1,7 @@
 <ejs-spreadsheet id="spreadsheet" created="createHandler">
     <e-spreadsheet-scrollsettings isFinite="true"></e-spreadsheet-scrollsettings>
     <e-spreadsheet-sheets>
-        <e-spreadsheet-sheet rowCount="9" colCount="7">
+        <e-spreadsheet-sheet rowCount="20" colCount="20">
             <e-spreadsheet-ranges>
                 <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
             </e-spreadsheet-ranges>

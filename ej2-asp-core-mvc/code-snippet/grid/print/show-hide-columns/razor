@@ -4,9 +4,7 @@
     col.Field("CustomerID").HeaderText("Customer ID").Visible(false).Width("150").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
     col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
-
 }).Toolbar(new List<string>() { "Print" }).Render()
-
 <script>
     function toolbarClick() {
         const columns = document.getElementById('Grid').ej2_instances[0].columns;

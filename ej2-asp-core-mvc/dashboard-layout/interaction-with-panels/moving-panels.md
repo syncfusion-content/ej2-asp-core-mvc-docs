@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Moving Panels in ##Platform_Name## Dashboard Layout Component
-description: Learn here all about Moving Panels in Syncfusion ##Platform_Name## Dashboard Layout component of Syncfusion Essential JS 2 and more.
+title: Moving Panels in ##Platform_Name## Dashboard Layout control
+description: Learn here all about Moving Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Moving Panels
 publishingplatform: ##Platform_Name##
@@ -33,8 +33,8 @@ The following sample demonstrates moving a panel programatically to a new positi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/dashboard-layout/moving/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/dashboard-layout/moving/HomeController.cs %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/moving/CSHTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 

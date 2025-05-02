@@ -18,6 +18,9 @@ You can use [showHeader](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/showHeader/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ShowHeader.cs" %}
+{% include code-snippet/chat-ui/header/showHeader/showHeader.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![ShowHeader](images/show-header.png)
@@ -30,6 +33,9 @@ You can use the [headerText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/headerText/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="HeaderText.cs" %}
+{% include code-snippet/chat-ui/header/headerText/headerText.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![HeaderText](images/header-text.png)
@@ -41,6 +47,9 @@ You can use the [headerIconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/headerIcon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HeaderIcon.cs" %}
+{% include code-snippet/chat-ui/header/headerIcon/headerIcon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,6 +71,9 @@ You can customize the header toolbar icons by using the `iconCss` property.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarIcon/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ToolbarIcon.cs" %}
+{% include code-snippet/chat-ui/header/toolbarIcon/toolbarIcon.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![ToolbarIcon](images/toolbar-icon.png)
@@ -76,6 +88,9 @@ In the following example, header toolbar item type is set as `Button`.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarType/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ToolbarType.cs" %}
+{% include code-snippet/chat-ui/header/toolbarType/toolbarType.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![ToolbarType](images/toolbar-type.png)
@@ -87,6 +102,9 @@ You can use the `text` property to set the text for the header toolbar item.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarText/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarText.cs" %}
+{% include code-snippet/chat-ui/header/toolbarText/toolbarText.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -100,6 +118,9 @@ You can use the `visible` property to specify whether to show or hide the header
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarVisible/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ToolbarVisible.cs" %}
+{% include code-snippet/chat-ui/header/toolbarVisible/toolbarDisable.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![ToolbarVisible](images/toolbar-visible.png)
@@ -111,6 +132,9 @@ You can use the `disabled` property to disable the header toolbar item. By defau
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarDisable/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarDisable.cs" %}
+{% include code-snippet/chat-ui/header/toolbarDisable/toolbarDisable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,7 +148,12 @@ You can use the `tooltip` property to specify the tooltip text to be displayed o
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarTooltip/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ToolbarTooltip.cs" %}
+{% include code-snippet/chat-ui/header/toolbarTooltip/toolbarTooltip.cs %}
+{% endhighlight %}
 {% endtabs %}
+
+![TooltipText](images/tooltip-text.png)
 
 #### Setting CSS Class
 
@@ -133,6 +162,9 @@ You can use the `cssClass` property to customize the header toolbar item.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarCss/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarCss.cs" %}
+{% include code-snippet/chat-ui/header/toolbarCss/toolbarCss.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,6 +179,9 @@ In the following example, toolbar item type is set with `Right`.
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarIcon/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ToolbarAlign.cs" %}
+{% include code-snippet/chat-ui/header/toolbarIcon/toolbarIcon.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -222,6 +257,9 @@ You can use the `template` property to add custom toolbar item in the Chat UI.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/toolbarTemplate/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="ToolbarTemplate.cs" %}
+{% include code-snippet/chat-ui/header/toolbarTemplate/toolbarTemplate.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 ![ToolbarTemplate](images/toolbar-template.png)
@@ -233,5 +271,8 @@ The [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.I
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/header/itemClicked/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ItemClicked.cs" %}
+{% include code-snippet/chat-ui/header/itemClicked/itemClicked.cs %}
 {% endhighlight %}
 {% endtabs %}

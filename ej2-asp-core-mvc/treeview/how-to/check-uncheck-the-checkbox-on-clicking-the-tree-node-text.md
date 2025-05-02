@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Check Uncheck The Checkbox On Clicking The Tree Node Text in ##Platform_Name## Treeview Component
-description: Learn here all about Check Uncheck The Checkbox On Clicking The Tree Node Text in Syncfusion ##Platform_Name## Treeview component of syncfusion and more.
+title: Check/Uncheck Checkbox on text click in ##Platform_Name## TreeView Control | Syncfusion
+description: Learn here all about Check/Uncheck The Checkbox On Clicking The Tree Node Text in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
 platform: ej2-asp-core-mvc
-control: Check Uncheck The Checkbox On Clicking The Tree Node Text
+control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Check/uncheck the checkbox on clicking the tree node text
+# Check/Uncheck the checkbox on clicking the tree node text
 
-You can check and uncheck the checkboxes of tree view by clicking the tree node using the `nodeClicked` event of TreeView.
+You can check and uncheck the checkboxes of TreeView by clicking the tree node using the `nodeClicked` event of TreeView.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -30,13 +30,13 @@ You can check and uncheck the checkboxes of tree view by clicking the tree node 
 {% include code-snippet/treeview/how-to/node-check/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodecheck.cs" %}
-{% include code-snippet/treeview/how-to/node-check/nodecheck.cs %}
+{% include code-snippet/treeview/how-to/node-check/nodecheck-mvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 
 
-Output be like the below.
+The output will look like the image below:
 
 ![TreeView Sample](../images/node-check.PNG)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Exporting in ##Platform_Name## Grid Component
+title: Excel Exporting in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about Excel Exporting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Excel Exporting
@@ -230,6 +230,22 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 
 ![Exporting hierarchy grid](../images/excel-exporting/excelexporting-heirachy.png)
 
+### Format the child Grid columns before exporting
+
+The Syncfusion Grid allows customization of the child Grid's Excel export options, enabling precise control over data formatting before export. This functionality is achieved using the [ExportDetailDataBound](https://help.syncfusion.com/cr/aspnetMVC-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailDataBound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the Excel document.
+
+In the following example, the `ExportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [Format](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property, the date values are formatted as `dd/MM/yyyy` when exported to Excel document.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/excelexport-format/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="excel-export.cs" %}
+{% include code-snippet/grid/excel-export/excelexport-format/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Limitations
 
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels and if it exceeds more than seven levels then the document will be exported without outline option. Please refer the [Microsoft Limitation](https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations).
@@ -252,6 +268,25 @@ In the following example, the [ToolbarClick](https://help.syncfusion.com/cr/aspn
 {% endtabs %}
 
 ![Add formula for the cell while exporting](../images/excel-exporting/excelexporting-formula.png)
+
+## Passing additional parameters to the server when exporting
+
+Passing additional parameters to the server when exporting data in the Syncfusion ASP.NET MVC Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
+
+You can achieve this by utilizing the [Query](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Query) property and the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. Within the `Query` property, you can invoke the `addParams` method to add parameters to the request.
+
+The following example demonstrates how to pass additional parameters to the server when Excel exporting within the `ToolbarClick` event. Within the event, the additional parameters, specifically **Recordcount** as **15**, are passed using the `addParams` method and displayed as a message.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/additional-parameter/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="excel-export.cs" %}
+{% include code-snippet/grid/excel-export/additional-parameter/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Passing additional parameters to the server when exporting](../images/excel-exporting/additional-parameter.png)
 
 ## Limitations
 

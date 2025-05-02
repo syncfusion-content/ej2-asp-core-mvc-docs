@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Avatar Control
 
-This section briefly explains about how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control in your ASP.NET Core application using Visual Studio.
+This section explains about how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -19,13 +19,13 @@ This section briefly explains about how to include [ASP.NET Core Avatar](https:/
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
 ## Add stylesheet
 
-Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the desired theme is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -43,7 +43,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentati
 
 ## Add ASP.NET Core Avatar control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Avatar tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Avatar tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

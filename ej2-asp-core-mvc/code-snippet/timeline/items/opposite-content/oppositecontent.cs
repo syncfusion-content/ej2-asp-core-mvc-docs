@@ -1,4 +1,4 @@
-public ActionResult Demo()
+public ActionResult OppositeContent()
 {
     List<TimelineItem> mealTimes = new List<TimelineItem>();
     mealTimes.Add(new TimelineItem { Content = "Breakfast", OppositeContent = "8:00 AM" });

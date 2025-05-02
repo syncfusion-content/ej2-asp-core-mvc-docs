@@ -18,7 +18,7 @@ This section briefly explains about how to include `ASP.NET Core Chat UI` contro
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-6.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/project-template)
 
@@ -93,6 +93,9 @@ Now, add the Syncfusion ASP.NET Core Chat UI tag helper in `~/Pages/Index.cshtml
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/getting-started/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chat-ui/getting-started/gettingstarted.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Chat UI control will be rendered in the default web browser.
@@ -106,6 +109,9 @@ You can use the `<e-chatui-messages>` tag directive to group all the messages an
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/default-messages/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/chat-ui/default-messages/defaultMessages.cs %}
 {% endhighlight %}
 {% endtabs %}
 

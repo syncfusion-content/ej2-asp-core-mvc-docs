@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2;
 <div id="container">
     <ejs-treemap id="container" load="load" height="350px" weightValuePath="count">
-            <e-treemap-leafitemsettings labelPath="Car" format='${Car}-${Brand}'></e-treemap-leafitemsettings>
+            <e-treemap-leafitemsettings labelPath="Car" labelFormat='${Car}-${Brand}'></e-treemap-leafitemsettings>
     </ejs-treemap>
 </div>         
 <script>

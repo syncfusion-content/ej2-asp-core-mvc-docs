@@ -25,9 +25,6 @@ The `template` context receives the following information:
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/timeline/template/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Separator.cs" %}
-{% include code-snippet/timeline/template/template.cs %}
-{% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

@@ -5,7 +5,6 @@
     col.Field("Freight").HeaderText("Freight").Width("120").HeaderTemplate("#freightTemplate").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("OrderDate").HeaderText("Order Date").Width("140").HeaderTemplate("#datetemplate").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).HeaderCellInfo("onHeaderCellInfo").Render()
-
 <style>
     @@font-face {
         font-family: 'ej2-headertemplate';
@@ -13,18 +12,15 @@
         font-weight: normal;
         font-style: normal;
     }
-
     .e-icon-calender::before {
         font-family: 'ej2-headertemplate';
         content: "\e960";
     }
-
     .e-icon-userlogin::before {
         font-family: 'ej2-headertemplate';
         content: "\e702";
     }
 </style>
-
 <script id="customerTemplate" type="text/x-template">
     <div>
         <span class="e-icon-userlogin e-icons employee">Customer ID</span>
@@ -39,24 +35,19 @@
         <label style="padding: 0px 0px 0px 10px" id="dateLabel">Order Date</label>
     </div>
 </script>
-
 <script>
     var headerText = "Order Date";
-    var dropdownData = ["Freight", "Shipment", "Cargo"]
-
-
+    var dropDownData = ["Freight", "Shipment", "Cargo"]
     function onHeaderCellInfo(args) {
         if (args.cell.column.field === 'Freight') {
-          
-            var dropdownElement = args.node.querySelector('#dropdown');
-            if (dropdownElement) {
+            var dropDownElement = args.node.querySelector('#dropdown');
+            if (dropDownElement) {
                 new ej.dropdowns.DropDownList({
                     index: "0",
                     width: "130",
-                    dataSource: dropdownData
-                }).appendTo(dropdownElement);
-                }
-           
+                    dataSource: dropDownData
+                }).appendTo(dropDownElement);
+            }
         }
         if (args.cell.column.field === 'OrderDate') {
             var switchElement = args.node.querySelector('#switch');
@@ -65,7 +56,6 @@
                     change: onSwitchToggle
                 }).appendTo(switchElement);
             }
-
         }
     }
     function onSwitchToggle(args) {

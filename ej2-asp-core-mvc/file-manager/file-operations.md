@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## Syncfusion File Manager Component
-description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager component of Syncfusion Essential JS 2 and more.
+title: File Operations in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
+description: Learn here all about File Operations in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Operations
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# File Operations in FileManager Component
+# File Operations in File Manager Control
 
-The file manager component is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the file manager component.  Additionally, previewing of image files is also provided in the file manager component.
+The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control. Additionally, previewing of image files is provided in the File Manager control.
 
-The following table represents the basic operations available in the file manager and their corresponding functions.
+The following table represents the basic operations available in the File Manager and their corresponding functions.
 
 |Operation Name|Function|
 |----|----|
@@ -28,7 +28,7 @@ The following table represents the basic operations available in the file manage
 |upload|Upload files to the current path or directory in the file system.|
 |download|Downloads the file from the server and the multiple files can be downloaded as ZIP files.|
 
-N>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the file manager only after the successful response from the server.
+N>The *CreateFolder*, *Remove*, and *Rename* actions will be reflected in the File Manager only after the successful response from the server.
 
 ## Folder Upload support
 
@@ -46,7 +46,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/directory-upload/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
 {% include code-snippet/file-manager/directory-upload/HomeController_core.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -64,7 +64,7 @@ In the following example, directory upload is enabled/disabled on DropDownButton
 {% endif %}
 
 
-Output be like the below.
+The output will be like the below.
 
 ![Directory upload](./images/directory-upload.png)
 
@@ -74,36 +74,36 @@ To achieve the directory upload in the physical file service provider, use the b
 
 ```typescript
 [Route("Upload")]
-        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+{
+    FileManagerResponse uploadResponse;
+    foreach (var file in uploadFiles)
+    {
+        var folders = (file.FileName).Split('/');
+        // checking the folder upload
+        if (folders.Length > 1)
         {
-            FileManagerResponse uploadResponse;
-            foreach (var file in uploadFiles)
+            for (var i = 0; i < folders.Length - 1; i++)
             {
-                var folders = (file.FileName).Split('/');
-                // checking the folder upload
-                if (folders.Length > 1)
+                string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
+                if (!Directory.Exists(newDirectoryPath))
                 {
-                    for (var i = 0; i < folders.Length - 1; i++)
-                    {
-                        string newDirectoryPath = Path.Combine(this.basePath + path, folders[i]);
-                        if (!Directory.Exists(newDirectoryPath))
-                        {
-                            this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
-                        }
-                        path += folders[i] + "/";
-                    }
+                    this.operation.ToCamelCase(this.operation.Create(path, folders[i]));
                 }
+                path += folders[i] + "/";
             }
-            uploadResponse = operation.Upload(path, uploadFiles, action, null);
-            if (uploadResponse.Error != null)
-            {
-               Response.Clear();
-               Response.ContentType = "application/json; charset=utf-8";
-               Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
-               Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
-            }
-            return Content("");
         }
+    }
+    uploadResponse = operation.Upload(path, uploadFiles, action, null);
+    if (uploadResponse.Error != null)
+    {
+        Response.Clear();
+        Response.ContentType = "application/json; charset=utf-8";
+        Response.StatusCode = Convert.ToInt32(uploadResponse.Error.Code);
+        Response.HttpContext.Features.Get<IHttpResponseFeature>().ReasonPhrase = uploadResponse.Error.Message;
+    }
+    return Content("");
+}
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider/blob/master/Controllers/FileManagerController.cs#L76) for more details
@@ -168,21 +168,21 @@ To perform the directory upload in the Amazon file service provider, use the bel
 
 ```typescript
 foreach (var file in uploadFiles)
+    {
+        var folders = (file.FileName).Split('/');
+        // checking the folder upload
+        if (folders.Length > 1)
+        {
+            for (var i = 0; i < folders.Length - 1; i++)
             {
-                var folders = (file.FileName).Split('/');
-                // checking the folder upload
-                if (folders.Length > 1)
+                if (!this.operation.checkFileExist(path, folders[i]))
                 {
-                    for (var i = 0; i < folders.Length - 1; i++)
-                    {
-                        if (!this.operation.checkFileExist(path, folders[i]))
-                        {
-                            this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
-                        }
-                        path += folders[i] + "/";
-                    }
+                    this.operation.ToCamelCase(this.operation.Create(path, folders[i], dataObject));
                 }
+                path += folders[i] + "/";
             }
+        }
+    }
 ```
 
 Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider/blob/master/Controllers/AmazonS3ProviderController.cs#L83) for more details.
@@ -198,7 +198,7 @@ Refer to the [GitHub](https://github.com/SyncfusionExamples/amazon-s3-aspcore-fi
 
 ## File operation request and response Parameters
 
-The default parameters available in file operation request from the file manager and the corresponding response parameters required by the file manager are listed as follows.
+The default parameters available in file operation request from the File Manager and the corresponding response parameters required by the File Manager are listed as follows.
 
 ### Read
 
@@ -831,11 +831,11 @@ The following table represents the request parameters of *GetImage* operations.
 
 Return the image as a file stream in response.
 
-The request from the file manager can be customized using the `beforeSend` event. Additional information can be passed to the file manager in file operation response and can be used in customization.
+The request from the File Manager can be customized using the `beforeSend` event. Additional information can be passed to the File Manager in file operation response and can be used in customization.
 
 ## File request and response contents
 
-The following table represents the contents of *data, cwd, and files* in the file manager request and response.
+The following table represents the contents of *data, cwd, and files* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -848,7 +848,7 @@ The following table represents the contents of *data, cwd, and files* in the fil
 |size|Number|-|File size|
 |type|String|-|File extension|
 
-The following table represents the contents of *error* in the file manager request and response.
+The following table represents the contents of *error* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -856,7 +856,7 @@ The following table represents the contents of *error* in the file manager reque
 |message|String|-|Error message|
 |fileExists|String[]|-|List of duplicate file names|
 
-The following table represents the contents of *details* in the file manager request and response.
+The following table represents the contents of *details* in the File Manager request and response.
 
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
@@ -872,7 +872,7 @@ The following table represents the contents of *details* in the file manager req
 
 ## Action Buttons
 
-The file manager has several menu buttons to access the file operations. The list of menu buttons available in the file manager is given in the following table.
+The File Manager provides several menu buttons for accessing file operations. The list of menu buttons available in the File Manager is given in the following table.
 
 |Menu Button|Behaviour|
 |----|----|
@@ -892,80 +892,73 @@ The action menu buttons are present in the toolbar and context menu. The toolbar
 
 ### Toolbar
 
-The toolbar can be divided into two sections as right and left. Whenever the toolbar buttons exceed the size, the buttons present in the left section of the toolbar will be moved to the toolbar popup.
+The toolbar can be divided into two sections as right and left. When the toolbar buttons exceed the available size, the buttons in the left section of the toolbar will be moved to a toolbar popup.
 
 The following table provides the toolbar buttons that appear based on the selection.
 
 <!-- markdownlint-disable MD033 -->
 <table>
-<tr>
-<td> <b>Selected Items Count</b> </td>
-<td> <b>Left section </b></td>
-<td> <b>Right section </b></td>
-</tr>
-
-<tr>
-<td>
-
-`0` (none of the item )
-</td>
-<td>
-
-* SortBy
-* Refresh
-* NewFolder
-* Upload
-
-</td>
-<td>
-
-* View
-* Details
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`1` (single item selected)
-</td>
-<td>
-
-* Delete
-* Download
-* Rename
-
-</td>
-<td>
-
-* Selected items count
-* View
-* Details
-
-</td>
-</tr>
-
-<tr>
-<td>
-
-`>1` (multiple selection)
-</td>
-<td>
-
-* Delete
-* Download
-
-</td>
-<td>
-
-* Selected items count
-* View
-* Details
-
-</td>
-</tr>
-
+    <tr>
+        <td> <b>Selected Items Count</b> </td>
+        <td> <b>Left section </b></td>
+        <td> <b>Right section </b></td>
+    </tr>
+    <tr>
+        <td>
+            `0` (none of the item )
+        </td>
+        <td>
+            <ul>
+                <li>SortBy</li>
+                <li>Refresh</li>
+                <li>NewFolder</li>
+                <li>Upload</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>View</li>
+                <li>Details</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            `1` (single item selected)
+        </td>
+        <td>
+            <ul>
+                <li>Delete</li>
+                <li>Download</li>
+                <li>Rename</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Selected items count</li>
+                <li>View</li>
+                <li>Details</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            `>1` (multiple selection)
+        </td>
+        <td>
+            <ul>
+                <li>Delete</li>
+                <li>Download</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Selected items count</li>
+                <li>View</li>
+                <li>Details</li>
+            </ul>
+        </td>
+    </tr>
 </table>
 
 ### Context menu
@@ -974,67 +967,63 @@ The following table provides the default context menu item and the corresponding
 
 <!-- markdownlint-disable MD033 -->
 <table>
-<tr>
-<td> <b>Menu Name</b> </td>
-<td> <b>Menu Items </b></td>
-<td> <b>Target </b></td>
-</tr>
-
-<tr>
-<td>Layout</td>
-<td>
-
-* SortBy
-* View
-* Refresh
-* NewFolder
-* Upload
-* Details
-* Select all
-
-</td>
-<td>
-
-* Empty space in the view section (details view and large icon view area).
-* Empty folder content.
-
-</td>
-</tr>
-
-<tr>
-<td>Folders</td>
-<td>
-
-* Open
-* Delete
-* Rename
-* Downloads
-* Details
-
-</td>
-<td>
-
-* Folders in treeview, details view, and large icon view.
-
-</td>
-</tr>
-
-<tr>
-<td>Files</td>
-<td>
-
-* Open
-* Delete
-* Rename
-* Downloads
-* Details
-
-</td>
-<td>
-
-* Files in details view and large icon view.
-
-</td>
-</tr>
-
+    <tr>
+        <td> <b>Menu Name</b> </td>
+        <td> <b>Menu Items </b></td>
+        <td> <b>Target </b></td>
+    </tr>
+    <tr>
+        <td>Layout</td>
+        <td>
+            <ul>
+                <li>SortBy</li>
+                <li>View</li>
+                <li>Refresh</li>
+                <li>NewFolder</li>
+                <li>Upload</li>
+                <li>Details</li>
+                <li>Select all</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Empty space in the view section (details view and large icon view area).</li>
+                <li>Empty folder content.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Folders</td>
+        <td>
+            <ul>
+                <li>Open</li>
+                <li>Delete</li>
+                <li>Rename</li>
+                <li>Downloads</li>
+                <li>Details</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Folders in treeview, details view, and large icon view.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Files</td>
+        <td>
+            <ul>
+                <li>Open</li>
+                <li>Delete</li>
+                <li>Rename</li>
+                <li>Downloads</li>
+                <li>Details</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>Files in details view and large icon view.</li>
+            </ul>
+        </td>
+    </tr>
 </table>

@@ -1,14 +1,14 @@
-@{ 
-	var template = "<div class='listWrapper'>" +
-	"${if(avatar!=='')}" +
-	"<span class='e-avatar e-avatar-small e-avatar-circle'>${avatar}</span>" +
-	"${else}" +
-	"<span class='${pic} e-avatar e-avatar-small e-avatar-circle'> </span>" +
-	"${/if}" +
-	"<span class='text'>" +
-	"${text} </span> </div>";
-	
-	List<object> data = new List<object>();
+@{
+    var template = "<div class='listWrapper'>" +
+        "${if(avatar!=='')}" +
+        "<span class='e-avatar e-avatar-small e-avatar-circle'>${avatar}</span>" +
+        "${else}" +
+        "<span class='${pic} e-avatar e-avatar-small e-avatar-circle'> </span>" +
+        "${/if}" +
+        "<span class='text'>" +
+        "${text} </span> </div>";
+
+    List<object> data = new List < object > ();
     data.Add(new { text = "Robert", id = "s_01", avatar= "", pic= "pic04" });
     data.Add(new { text = "Nancy", id = "s_02", avatar= "N", pic= "" });
     data.Add(new { text = "John", id = "s_03", pic= "pic01", avatar= "" });
@@ -17,10 +17,12 @@
     data.Add(new { text = "Steven", id = "s_06", pic= "pic03", avatar= "" });
     data.Add(new { text = "Margaret", id = "s_07", avatar= "M", pic= "" });
 }
+
 <div class="col-lg-12 control-section">
-	<ejs-listview id='letterAvatarList' dataSource=@data headerTitle='Contacts' template="@template" showHeader=true sortOrder="Ascending">
-	</ejs-listview>
-</div>
+    <ejs-listview id='letterAvatarList' dataSource=@data headerTitle='Contacts' template="@template"
+                showHeader=true sortOrder="Ascending">
+    </ejs-listview>
+</div >
 
 
 <style>
@@ -31,36 +33,20 @@
     /* Listview Customization */
 
     #letterAvatarList {
-        max-width: 350px;
+        max - width: 350px;
         margin: auto;
         border: 1px solid #dddddd;
         border-radius: 3px;
     }
 
-        #letterAvatarList .listWrapper {
-            width: inherit;
-            height: inherit;
-            position: relative;
-        }
-
-        #letterAvatarList .e-list-header {
-            height: 54px;
-        }
-
-    .material #letterAvatarList .e-list-header .e-text {
-        line-height: 22px;
+    #letterAvatarList .listWrapper {
+        width: inherit;
+        height: inherit;
+        position: relative;
     }
 
-    .fabric #letterAvatarList .e-list-header .e-text {
-        line-height: 22px;
-    }
-
-    .bootstrap #letterAvatarList .e-list-header .e-text {
-        line-height: 13px;
-    }
-
-    .highcontrast #letterAvatarList .e-list-header .e-text {
-        line-height: 20px;
+    #letterAvatarList .e-list-header {
+        height: 54px;
     }
 
     #letterAvatarList .e-list-item {
@@ -73,7 +59,7 @@
     /* Badge Positioning */
 
     #letterAvatarList .e-badge {
-        margin-top: 12px;
+        margin - top: 12px;
     }
 
     #letterAvatarList .listWrapper .text {
@@ -95,32 +81,32 @@
     /* Avatar Background Customization */
 
     #letterAvatarList .e-list-item:nth-child(1) .e-avatar {
-        background-color: #039BE5;
+        background - color: #039BE5;
     }
 
     #letterAvatarList .e-list-item:nth-child(3) .e-avatar {
-        background-color: #E91E63;
+        background - color: #E91E63;
     }
 
     #letterAvatarList .e-list-item:nth-child(5) .e-avatar {
-        background-color: #009688;
+        background - color: #009688;
     }
 
     /* Avatar images using 'background-image' property */
 
     .pic01 {
-        background-image: url(@Url.Content("~/css/avatar/images/pic01.png"));
+        background - image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic01.png")');
     }
 
     .pic02 {
-        background-image: url(@Url.Content("~/css/avatar/images/pic02.png"));
+        background - image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic02.png")');
     }
 
     .pic03 {
-        background-image: url(@Url.Content("~/css/avatar/images/pic03.png"));
+        background - image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic03.png")');
     }
 
     .pic04 {
-        background-image: url(@Url.Content("~/css/avatar/images/pic04.png"));
+        background - image: url('@Url.Content("https://ej2.syncfusion.com/aspnetmvc/Content/avatar/images/pic04.png")');
     }
 </style>

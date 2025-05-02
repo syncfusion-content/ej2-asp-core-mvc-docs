@@ -164,9 +164,9 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 
 To display serial number in the grid for every rows, you can use the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. The `RowDataBound` event is triggered for each row in the grid when the data is bound to the grid.
 
-Within the event handler, the [pagesize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) and [currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) index can be obtained from the grid's [PageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
+Within the event handler, the [Pagesize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) and [CurrentPage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) index can be obtained from the grid's [PageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
-Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using `rowDataBound` event:
+Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using `RowDataBound` event:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -216,3 +216,37 @@ In the below example, we have used the `expand` query to load the nested Employe
 {% endtabs %}
 
 ![Using remote data](../images/column-rendering/column-render-remote.png)
+
+### Complex data binding with list of array of objects
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports complex data binding with lists of arrays of objects. This feature allows you to bind complex data with multiple levels of nested objects and arrays to the Grid.
+
+The following example shows how to set complex field for datasource having array of objects.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-complexbinding/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Complexbinding.cs" %}
+{% include code-snippet/grid/columns/column-complexbinding/complexbinding.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Complex data binding with list of array of objects](../images/column-rendering/column-complex.png)
+
+### How to set complex column as foreign key column
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides the ability to set complex columns as foreign key columns. This allows you to display related data from a foreign data source based on the complex column value.
+
+The following example demonstrates how to set the **Employee.EmployeeID** column as a foreign key column, and display the **FirstName** column from the foreign data.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/foreignkey/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Foreignkey.cs" %}
+{% include code-snippet/grid/columns/foreignkey/foreignkey.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Complex data binding with list of array of objects](../images/column-rendering/column-foriegn-complex.png)

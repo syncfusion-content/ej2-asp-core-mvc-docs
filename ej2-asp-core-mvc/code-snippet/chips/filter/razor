@@ -1,4 +1,4 @@
-@Html.EJS().ChipList("chip-avatar").Selection(Selection.Multiple).Chips(chip =>
+@Html.EJS().ChipList("chip-avatar").Selection(Syncfusion.EJ2.Buttons.Selection.Multiple).Chips(chip =>
                         {
                             chip.Text("Chai").Enabled(true).Add();
                             chip.Text("Chang").Enabled(true).Add();

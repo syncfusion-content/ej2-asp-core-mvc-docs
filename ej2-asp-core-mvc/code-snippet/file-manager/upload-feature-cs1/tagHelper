@@ -1,19 +1,17 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!-- Declare filemanager element -->
+        <!-- Declare File Manager control -->
         <ejs-filemanager id="filemanager" created="onCreated">
             <e-filemanager-ajaxsettings url="/Home/FileOperations" downloadUrl="/Home/Download" uploadUrl="/Home/Upload"
                 getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
-            <e-filemanager-uploadsettings allowedExtensions='.jpg,.png' autoClose="false" autoUpload="false" 
-                chunkSize="5242880" minFileSize="120" maxFileSize="73728000"></e-filemanager-uploadsettings>
         </ejs-filemanager>
-        <!-- end of filemanager element -->
+        <!-- end of File Manager control -->
     </div>
 </div>
 <script>
     function onCreated() {
         var filemanagerInstance = document.getElementById("filemanager").ej2_instances[0];
-        // filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
+        filemanagerInstance.uploadObj.dropArea = null;  // Restrict file uploads by dragging them from the local file system to the File Manager.
     }
 </script>

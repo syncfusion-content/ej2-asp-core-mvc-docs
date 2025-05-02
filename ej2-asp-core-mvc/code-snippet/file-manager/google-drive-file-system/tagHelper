@@ -1,8 +1,9 @@
 <div class=" control-section">
     <div class="sample-container">
-        <!--  Initialize file manager component with ASP.NET Core service-->
+        <!--  Initialize File Manager control with Google Drive file system-->
         <!--Replace the hosted port number in the place of "{port}"-->
         <ejs-filemanager id="filemanager">
+            <e-filemanager-ajaxsettings
                     url="http://localhost:{port}/api/GoogleDriveProvider/GoogleDriveFileOperations",
                     getImageUrl="http://localhost:{port}/api/GoogleDriveProvider/GoogleDriveGetImage",
                     downloadUrl="http://localhost:{port}/api/GoogleDriveProvider/GoogleDriveDownload"

@@ -203,3 +203,34 @@ By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2
 {% include code-snippet/chart/user-interaction/tooltip/tooltip-enable/tooltip-enable.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+
+
+## Closest tooltip
+
+The [`ShowNearestTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_ShowNearestTooltip) property in the chart tooltip displays tooltips based on the data points closest to the cursor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/nearest-tooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Nearest-tooltip.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip/nearest-tooltip/nearest-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip/nearest-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Nearest-tooltip.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip/nearest-tooltip/nearest-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+

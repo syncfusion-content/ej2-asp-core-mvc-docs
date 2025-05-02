@@ -1,0 +1,31 @@
+<div>
+    <label style="padding: 10px 10px"> Enable or disable Horizontal Overflow property</label>
+    <ejs-switch id="switch"></ejs-switch>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="272px" allowPdfExport="true" allowPaging="true"
+toolbar="@(new List<string> { "PdfExport" })" toolbarClick="toolbarClick">
+<e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+    <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+    <e-grid-column field="ShipAddress" headerText="Ship Address" width="130"></e-grid-column>
+    <e-grid-column field="ShipRegion" headerText="Ship Region" width="90"></e-grid-column>
+    <e-grid-column field="ShipPostalCode" headerText="Ship PostalCode" width="90"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="100"></e-grid-column>
+</e-grid-columns>
+</ejs-grid>
+
+<script>
+        function toolbarClick(args) {
+            if (args.item.id === 'Grid_pdfexport') {
+                let grid = document.getElementById('Grid').ej2_instances[0];
+                let toggle = document.getElementById('switch').ej2_instances[0];
+                let pdfExportProperties = {
+                    allowHorizontalOverflow: !toggle.checked
+                };
+
+                grid.pdfExport(pdfExportProperties);
+            }
+        }
+    </script>

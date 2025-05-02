@@ -1,0 +1,48 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<div>
+    <label style="font-weight: bold">Browse excel file to load and return grid</label>
+    <div style="padding:20px 0 0 0">
+    @Html.EJS().Uploader("upload").Removing("onRemove").Change("onSuccess").AsyncSettings(new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Save", RemoveUrl = "https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove" }).Render()
+    </div>
+</div>
+@Html.EJS().Grid("grid").AllowPaging().Render()
+@Html.EJS().Dialog("dialog").ShowCloseIcon(true).Header("Alert").Visible(false).Content("Invalid JSON").Width("250px").Render()
+<script>
+    function onRemove(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.dataSource = [''];
+        grid.columns = [];
+    }
+
+    function onSuccess(args) {
+        var files = args.file;
+        if (files) {
+           parseExcel(files[0]);
+        }
+    }
+    
+    function parseExcel(file) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var dialog = document.getElementById("dialog").ej2_instances[0];
+        if (file && file.type == 'xlsx') {
+            var reader = new FileReader();
+            reader.onload = (e) => {
+                var data = (e.target).result;
+                var workbook = XLSX.read(data, { type: 'array' });
+                workbook.SheetNames.forEach((sheetName) => {
+                var XL_row_object = XLSX.utils.sheet_to_json(workbook.Sheets[sheetName]);
+                if (Array.isArray(XL_row_object) && XL_row_object.length > 0) {
+                    grid.dataSource = XL_row_object;
+                } else {
+                    dialog.content = "Invalid JSON";
+                    dialog.show();
+                }
+                });
+            };
+            reader.readAsArrayBuffer(file.rawFile);
+        } else {
+            dialog.content = 'Please upload only .xlsx format';
+            dialog.show();
+        }
+    }
+</script>

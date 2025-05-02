@@ -36,7 +36,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides 
 
 To freeze a particular column in the grid, you can utilize the `isFrozen` property of the grid component as **true**.
 
-The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the `DropDownList` component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
+The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event of the [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) component. Within the change event, you can modify the `isFrozen` property of the selected column using the `getColumnByField` method. Afterward, you can use the `refreshColumns` method to update the displayed columns based on your interaction.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -121,6 +121,26 @@ The following example demonstrates how to change the default frozen line color u
 {% endtabs %}
 
 ![Change default frozen line color](../images/column-chooser/frozon-color.png)
+
+## Render DatePicker in frozen columns in Grid
+
+The Syncfusion Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started) inside frozen columns during editing. This is achieved using the `edit` property, where a custom editor (DatePicker) is assigned to the specific column.
+
+To integrate a `DatePicker` in a frozen column, configure the column’s `edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
+
+The following example demonstrates how to render the `DatePicker` in the **OrderDate** column while keeping it frozen. Here the datepicker object is appended to the corresponding input element in the editing row.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/frozen-datepicker/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Frozen.cs" %}
+{% include code-snippet/grid/columns/frozen-datepicker/frozen.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![DatePicker in Frozen columns](../images/columns/frozen-datepicker.jpg)
 
 ## Deprecated methods 
 

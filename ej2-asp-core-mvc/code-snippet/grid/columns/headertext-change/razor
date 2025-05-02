@@ -1,7 +1,10 @@
+@{
+    ViewBag.dropDownData = new string[] { "OrderID", "CustomerID", "Freight", "OrderDate","ShipCountry" };
+}
 <div style="display: flex">
    <label style="padding: 3px 10px 0px 0;font-weight: bold;"> Select column name :  </label>
     <span style="height:fit-content">
-        @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(@ViewBag.dropdownData).Render()
+        @Html.EJS().DropDownList("dropdown").Index(0).Width("180px").DataSource(@ViewBag.dropDownData).Render()
     </span>
 </div>
 <div style="padding:0px 0px 20px 0px">
@@ -9,7 +12,6 @@
     @Html.EJS().TextBox("textbox").Placeholder("Enter new header text").Width("220px").Render()
     @Html.EJS().Button("buttons").Content("Change").Render()
 </div>
-
 @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -18,7 +20,6 @@
     col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).AllowPaging().Render()
-
 <script>
     document.getElementById('buttons').addEventListener('click', function () {
         var TextBoxValue = document.getElementById('textbox').value;

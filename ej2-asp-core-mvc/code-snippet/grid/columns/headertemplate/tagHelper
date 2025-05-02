@@ -6,7 +6,6 @@
         <e-grid-column field="OrderDate" headerTemplate="#datetemplate" textAlign="Right" type='date' format="yMd" width="130"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
-
 <style>
     @@font-face {
         font-family: 'ej2-headertemplate';
@@ -18,13 +17,11 @@
         font-family: 'ej2-headertemplate';
         content: "\e960";
     }
-
     .e-icon-userlogin::before {
         font-family: 'ej2-headertemplate';
         content: "\e702";
     }
 </style>
-
 <script id="customerTemplate" type="text/x-template">
     <div>
         <span class="e-icon-userlogin e-icons employee">Customer ID</span>
@@ -39,20 +36,19 @@
         <label style="padding: 0px 0px 0px 10px" id="dateLabel">Order Date</label>
     </div>
 </script>
-
 <script>
     var headerText = "Order Date";
-    var dropdownData = ["Freight", "Shipment", "Cargo"]
+    var dropDownData = ["Freight", "Shipment", "Cargo"]
     function onHeaderCellInfo(args) {
         if (args.cell.column.field === 'Freight') {
-                var dropdownElement = args.node.querySelector('#dropdown');
-                if (dropdownElement) {
-                    new ej.dropdowns.DropDownList({
-                        index:"0",
-                        width:"130",
-                        dataSource: dropdownData
-                    }).appendTo(dropdownElement);
-                }
+            var dropDownElement = args.node.querySelector('#dropdown');
+            if (dropDownElement) {
+                new ej.dropdowns.DropDownList({
+                    index:"0",
+                    width:"130",
+                    dataSource: dropDownData
+                }).appendTo(dropDownElement);
+            }
         }
         if (args.cell.column.field === 'OrderDate')
         {
@@ -62,7 +58,6 @@
                     change: onSwitchToggle
                 }).appendTo(switchElement);
             }
-
         }
     }
     function onSwitchToggle(args) {

@@ -1,0 +1,14 @@
+@Html.EJS().RichTextEditor("defaultRTE").Value(ViewBag.value).Render()
+
+<button id="getValueBtn" type="button" onclick="getEditorValue()" style="margin-top: 10px;">Get Editor Value</button>
+
+<p><strong>Editor Content:</strong></p>
+<div id="editorContent" style="border: 1px solid #ccc; padding: 10px; min-height: 50px;"></div>
+
+<script>
+    function getEditorValue() {
+        var rteObj = document.getElementById("defaultRTE").ej2_instances[0];
+        var content = rteObj.getHtml();
+        document.getElementById("editorContent").innerHTML = content;
+    }
+</script>

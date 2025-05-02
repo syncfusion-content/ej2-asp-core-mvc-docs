@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Grid Component
+title: Sorting in Syncfusion ##Platform_Name## Grid Component | Learn Sorting Features
 description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting
@@ -116,10 +116,10 @@ The example below demonstrates how to display null values at the bottom of the g
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/how-to/sort-comparer/razor %}
+{% include code-snippet/grid/sorting/sort-comparer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="sort-comparer.cs" %}
-{% include code-snippet/grid/how-to/sort-comparer/sort-comparer.cs %}
+{% include code-snippet/grid/sorting/sort-comparer/sort-comparer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,6 +155,23 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 {% endtabs %}
 
 ![Sorting](images/sorting/sorting-local-forign.png)
+
+**Sort foreign key column based on text for remote data**
+
+In the case of remote data in the Syncfusion ASP.NET MVC Grid, the sorting operation will be performed based on the `ForeignKeyField` property of the column. The `ForeignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The Grid will send a request to the server-side with the `ForeignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the Grid.
+
+The following example demonstrates sorting a foreign key column where the **EmployeeID** column is a foreign key, and the corresponding **FirstName** column is displayed from the employee data source:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/sorting/foreign-sort-remote/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="foreign-sort" %}
+{% include code-snippet/grid/sorting/foreign-sort-remote/foreign-sort.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Sorting](images/sorting/sort-remote.gif)
 
 ## Perform sorting based on its culture
 

@@ -1,18 +1,15 @@
 @Html.EJS().Grid("Search").DataSource((IEnumerable < object >)ViewBag.datasource).Height("350px").Columns(col => {
-    col.Field("OrderID").HeaderText("OrderID").IsPrimaryKey(true).Width("120").Add();
-    col.Field("CustomerID").HeaderText("CustomerID").Width("120").Add();
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
     col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
-    col.Field("ShipCity").HeaderText("ShipCity").Width("120").Add();
-
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
 }).Toolbar(new List < string > () { "Search" }).ActionBegin("actionBegin").ActionComplete("actionComplete").Render()
-
 <script>
     var values;
     var key = '';
     var refresh = false;
     var removeQuery = false;
     var valueAssign = false;
-
     function actionBegin(args) {
         if (args.requestType == 'searching') {
             var grid = document.getElementById("Search").ej2_instances[0];
@@ -33,7 +30,6 @@
                         }
                     });
                 });
-
                 grid.query = new ej.data.Query().where(predicate);
                 grid.searchSettings.key = '';
                 this.valueAssign = true;
@@ -46,7 +42,6 @@
         if (args.requestType === 'refresh') {
             var grid = document.getElementById("Search").ej2_instances[0];
             var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
-
             if (searchBar) {
                 if (this.valueAssign) {
                     searchBar.value = this.values || '';

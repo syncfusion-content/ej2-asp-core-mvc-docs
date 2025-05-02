@@ -1,96 +1,61 @@
-     <ejs-tooltip id="target" cssClass="customtooltip" content="Tooltip customized">
-        <e-content-template>
-            <div id="content" >
-                Show tooltip
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+<ejs-tooltip id="target" cssClass="customtooltip" content="Tooltip customized" position="TopCenter">
+    <e-content-template>
+        <div id="content">
+            Show tooltip
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
 #target {
-    background-color: #ececec;
-    border: 1px solid #c8c8c8;
+    background-color: #cfd8dc;
+    border: 3px solid #eceff1;
     box-sizing: border-box;
-    margin: 70px auto;
-    padding: 20px;
+    margin: 80px auto;
+    padding: 20px 0;
     width: 200px;
-}
+    text-align: center;
+    color: #424242;
+    font-size: 20px;
+    user-select: none;
+  }
 
-
-.customtooltip.e-tooltip-wrap .e-tip-content {
-    line-height: 20px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom {
-    height: 12px;
-    left: 50%;
-    top: 100%;
-    width: 24px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
-    height: 12px;
-    left: 50%;
-    top: -9px;
-    width: 24px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-left {
-    height: 24px;
-    left: -9px;
-    top: 48%;
-    width: 12px;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-right {
-    height: 24px;
-    left: 100%;
-    top: 50%;
-    width: 12px;
-}
-
-.customtooltip.e-tooltip-wrap {
+  /* Custom Tooltip Styles Start */
+  .customtooltip.e-tooltip-wrap {
     border-radius: 4px;
     opacity: 1;
-}
-
-.customtooltip.e-tooltip-wrap.e-popup {
     background-color: #fff;
     border: 2px solid #000;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-tip-content {
+  .customtooltip.e-tooltip-wrap .e-tip-content {
+    line-height: 20px;
     color: #000;
     font-size: 12px;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-bottom,
+  .customtooltip.e-tooltip-wrap .e-arrow-tip.e-tip-top {
+    height: 12px;
+    width: 24px;
+    left: 50%;
+  }
+
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-bottom {
     border-left: 12px solid transparent;
     border-right: 14px solid transparent;
     border-top: 12px solid #000;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-top {
-    border-bottom: 12px solid #000;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-left {
-    border-bottom: 12px solid transparent;
-    border-right: 12px solid #000;
-    border-top: 12px solid transparent;
-}
-
-.customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-outer.e-tip-right {
     border-bottom: 12px solid transparent;
     border-left: 12px solid #000;
     border-top: 12px solid transparent;
-}
+  }
 
-.customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
+  .customtooltip.e-tooltip-wrap .e-arrow-tip-inner.e-tip-bottom {
     color: #fff;
     font-size: 25.9px;
-}
+  }
 
 </style>

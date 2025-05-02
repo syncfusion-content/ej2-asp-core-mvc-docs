@@ -10,37 +10,28 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
-   function rowSelecting(args)
-   {
-      if (args.data.CustomerID == 'VINET')
-      {
+   function rowSelecting(args) {
+      if (args.data.CustomerID == 'VINET') {
          document.getElementById("message").innerText = `Trigger rowSelecting`;
          args.cancel = true;
       }
       else
        document.getElementById("message").innerText=''; 
    }
-   function rowSelected(args)
-   {
-   
-      if (args.data.Freight > '10' || args.data.Freight <= '140')
-      {
+   function rowSelected(args) {
+      if (args.data.Freight > '10' || args.data.Freight <= '140') {
          document.getElementById("message").innerText = ` Trigger rowSelected`;
          args.row.style.backgroundColor = 'rgb(96, 158, 101)'; 
       }
    }
-   function rowDeselected(args)
-   {
-      if (args.data.Freight <= '10')
-      {
+   function rowDeselected(args) {
+      if (args.data.Freight <= '10') {
          document.getElementById("message").innerText = `Trigger rowDeselected`;
          args.row.style.backgroundColor = 'red';
       }
    }
-   function rowDeselecting(args)
-   {
-      if (args.data.Freight > '140')
-      {
+   function rowDeselecting(args) {
+      if (args.data.Freight > '140') {
          document.getElementById("message").innerText = `Trigger rowDeselecting`;
          args.row.style.backgroundColor = 'yellow';
       }

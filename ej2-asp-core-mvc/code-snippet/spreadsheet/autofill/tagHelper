@@ -26,7 +26,7 @@
 		this.autoFill('B4:B11', 'B2:B3', 'Down', 'FillFormattingOnly');
 		this.autoFill('C4:C11', 'C2:C3', 'Down', 'FillWithoutFormatting');
     }
-	 document.getElementById("togglebtn").addEventListener('click', function () {
+	 document.getElementById("showfillbtn").addEventListener('click', function () {
             var spreadsheetObj = document.getElementById("spreadsheet").ej2_instances[0];
 			var showFillOptions = spreadsheetObj.autoFillSettings.showFillOptions;
             spreadsheetObj.autoFillSettings.showFillOptions = !showFillOptions;

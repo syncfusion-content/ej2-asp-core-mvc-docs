@@ -1,24 +1,23 @@
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport().ToolbarClick("toolbarClick").PdfExportComplete("pdfExportComplete").Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).ToolbarClick("toolbarClick").PdfExportComplete("pdfExportComplete").Height("272px").Columns(col =>
 {
-   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("CustomerID").HeaderText("Customer Name").Visible(false).Width("150").Add();
-   col.Field("OrderDate").HeaderText("Order Date").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-   col.Field("ShipCity").HeaderText("ShipCity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
-
+        col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width(100).Visible(false).Add();
+        col.Field("ShipCity").HeaderText("Ship City").Width(120).Add();
+        col.Field("ShipCountry").HeaderText("Ship Country").Width(100).Add();
  }).AllowPaging().Toolbar(new List<string>() { "PdfExport" }).Render()
-
 <script>
-    function toolbarClick(args) {
-        var gridObj = document.getElementById("Grid").ej2_instances[0];
+  function toolbarClick(args) {
         if (args.item.id === 'Grid_pdfexport') {
-            this.columns[1].visible = true;
-            this.columns[3].visible = false;
-            gridObj.pdfExport();
+            let grid = document.getElementById("Grid").ej2_instances[0];
+            grid.columns[1].visible = true; 
+            grid.columns[2].visible = false;
+            grid.pdfExport();
         }
     }
-    function pdfExportComplete(args) {
-        this.columns[1].visible = false;
-        this.columns[3].visible = true;
+
+    function pdfExportComplete() {
+        let grid = document.getElementById("Grid").ej2_instances[0];
+        grid.columns[1].visible = false; 
+        grid.columns[2].visible = true; 
     }
 </script>

@@ -1,10 +1,10 @@
-    <ejs-tooltip id="Tooltip" mouseTrail="true" content="Tooltip content">
-        <e-content-template>
-            <div id="target" style="margin: 50px;">
-                Show tooltip
-            </div>
-        </e-content-template>
-    </ejs-tooltip>
+<ejs-tooltip id="Tooltip" mouseTrail="true" content="Tooltip content">
+    <e-content-template>
+        <div id="target" style="margin: 50px;">
+            Show tooltip
+        </div>
+    </e-content-template>
+</ejs-tooltip>
 
 <style>
     #target {

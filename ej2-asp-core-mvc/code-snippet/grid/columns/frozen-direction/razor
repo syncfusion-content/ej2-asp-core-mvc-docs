@@ -1,7 +1,11 @@
+@{
+    ViewBag.dropDownData = new string[] { "OrderID", "CustomerID", "Freight", "OrderDate", "ShipCountry", "ShipCity", "ShipAddress", "ShipName" };
+    ViewBag.directionData = new string[] {"Left","Right","Fixed" };
+}
 <div style="display: flex">
     <label style="padding: 5px 10px 26px 0"> Change column: </label>
     <span style="height:fit-content">
-        @Html.EJS().DropDownList("columnDropDown").Index(4).Width("180px").DataSource(@ViewBag.dropdownData).Render()
+        @Html.EJS().DropDownList("columnDropDown").Index(4).Width("180px").DataSource(@ViewBag.dropDownData).Render()
     </span>
 </div>
 <div style="display: flex">
@@ -13,8 +17,7 @@
         @Html.EJS().Button("button").Content("Update").Render()
     </div>
 </div>
-
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Freight").HeaderText("Freight").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Fixed).Width("120").Format("C").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
@@ -23,9 +26,8 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("120").Add();
     col.Field("ShipAddress").HeaderText("Ship Address").Width("120").Add();
     col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
-col.Field("ShipCountry").HeaderText("Ship Country").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Width("120").Add();
 }).Render()
-
 <script type="text/javascript">
     document.getElementById('button').addEventListener('click', function () {
         var grid = document.getElementById("Grid").ej2_instances[0];

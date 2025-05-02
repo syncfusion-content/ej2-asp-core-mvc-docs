@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State management in ##Platform_Name## Grid Component
+title: State management in Syncfusion ##Platform_Name## Grid Component
 description: Learn here all about State management in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State management
@@ -130,6 +130,30 @@ When [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusio
 {% endhighlight %}
 {% endtabs %}
 
+## Observables binding with state persistence
+
+The Syncfusion Grid supports state persistence when using observable binding, ensuring that the Grid retains its state across sessions. This is useful when dealing with real-time data updates or asynchronous data sources while preserving user interactions such as sorting, filtering, paging, and grouping.
+
+To implement state persistence with observables, the initial query state must be manually handled. This involves:
+
+    * Retrieving the initial query using the Grid’s `getDataModule` method with `generateQuery`.
+
+    * Obtaining the state from the query via `getStateEventArgument` method.
+
+    * Sending the retrieved state to the service to fetch data accordingly.
+
+Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [created](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event to send the persisted state to the service at initial render:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/state-persist/observable/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="observable.cs" %}
+{% include code-snippet/grid/state-persist/observable/observable.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Get or set local storage value
 
 If the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) property is set to **true**, the Grid property value is saved in the **window.localStorage** for reference. You can get or set the localStorage value by using the **getItem** and **setItem** methods in **window.localStorage**.
@@ -151,7 +175,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the Syncfusion ASP.NET Core Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) feature. When the enablePersistence property is set to **true**, the Grid properties such as [Grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html), [Paging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html), [Filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html), [Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html), and [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+In the Syncfusion ASP.NET Core Grid component, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_EnablePersistence) feature. When the enablePersistence property is set to **true**, the Grid properties such as [grouping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html), [paging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html), [filtering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html), [sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSortSettings.html), and [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumns.html) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
