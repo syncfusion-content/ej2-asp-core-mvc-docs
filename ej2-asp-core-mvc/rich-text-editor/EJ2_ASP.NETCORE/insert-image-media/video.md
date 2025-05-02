@@ -67,13 +67,13 @@ You can insert a video from either a hosted link or your local machine by clicki
 
 The insert video dialog opens with the `Embedded code` option selected by default. This allows you to insert a video using embedded code.
 
-![Rich Text Editor Embed URL Video insert](../../images/aspcore-richtexteditor-video-embed.png)
+![Rich Text Editor Embed URL Video insert](../images/aspcore-richtexteditor-video-embed.png)
 
 ### Inserting video from web URL
 
 You can switch to the `Web URL` option by selecting the Web URL checkbox. Inserting a video using the Web URL option will add the video URL as the `src` attribute of the `<source>` tag.
 
-![Rich Text Editor Video insert](../../images/aspcore-richtexteditor-video-web.png)
+![Rich Text Editor Video insert](../images/aspcore-richtexteditor-video-web.png)
 
 ## Uploading video from local machine
 
@@ -210,9 +210,9 @@ N> By default, it doesn't support the `UseDefaultCredentials` property, you can 
 
 Once a video file has been inserted, you can replace it using the Rich Text Editor [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video) `videoReplace` option. You can replace the video file either by using the embedded code or the web URL and the browse option in the video dialog.
 
-![Rich Text Editor Embed Video replace](../../images/video-replace-embed.png)
+![Rich Text Editor Embed Video replace](../images/video-replace-embed.png)
 
-![Rich Text Editor Web Video replace](../../images/video-replace-web.png)
+![Rich Text Editor Web Video replace](../images/video-replace-web.png)
 
 ## Deleting video
 
@@ -220,7 +220,7 @@ To remove a video from the Rich Text Editor content, select the video and click 
 
 Once you select the video from the local machine, the URL for the video will be generated. You can remove the video from the service location by clicking the cross icon.
 
-![Rich Text Editor Video delete](../../images/video-del.png)
+![Rich Text Editor Video delete](../images/video-del.png)
 
 ## Adjusting video dimensions
 
@@ -228,7 +228,7 @@ Set the default width, minWidth, height, and minHeight of the video element when
 
 Through the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Video), you can also change the width and height using the `Change Size` button. Once you click on the button, the video size dialog will open as below. In that, specify the width and height of the video in pixels.
 
-![Rich Text Editor Video dimension](../../images/video-size.png)
+![Rich Text Editor Video dimension](../images/video-size.png)
 
 ## Configuring video display position
 
@@ -267,7 +267,7 @@ You can disable the resize action by configuring `false` for the [insertVideoSet
 
 > If the [minWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinWidth) and [minHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MinHeight) properties are configured, the video resizing does not shrink below the specified values.
 
-![Rich Text Editor video resize](../../images/aspcore-richtexteditor-video-resize.png)
+![Rich Text Editor video resize](../images/aspcore-richtexteditor-video-resize.png)
 
 ## See also
 
