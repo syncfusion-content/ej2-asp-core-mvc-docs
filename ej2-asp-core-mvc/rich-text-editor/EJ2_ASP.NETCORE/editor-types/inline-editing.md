@@ -45,5 +45,5 @@ This feature enhances the inline editing experience by providing immediate acces
 {% endtabs %}
 {% endif %}
 
-![Rich Text Editor InlineMode](../../images/inline.png)
+![Rich Text Editor InlineMode](../images/inline.png)
 
