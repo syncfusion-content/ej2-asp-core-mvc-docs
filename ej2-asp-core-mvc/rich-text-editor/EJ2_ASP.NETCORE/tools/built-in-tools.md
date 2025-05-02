@@ -176,7 +176,7 @@ Remove the build-in tools from the toolbar by using the [toolbarSettings](https:
 {% include code-snippet/rich-text-editor/remove-buildin-tool/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/audremove-buildin-tool/controller.cs %}
+{% include code-snippet/rich-text-editor/remove-buildin-tool/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
