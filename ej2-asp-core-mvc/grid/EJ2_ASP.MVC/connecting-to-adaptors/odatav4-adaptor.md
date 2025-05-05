@@ -300,7 +300,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 
 > Replace https://localhost:xxxx/odata/Orders with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
-## Handling Searching Operation
+## Handling searching operation
 
 To enable search operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in their requests to search for specific data entries.
 
@@ -333,7 +333,7 @@ config.Count().Filter(); // Handles searching operation.
 
 ![Searching query](../images/adaptors/odatav4-adaptor-searching.png)
 
-## Handling Filtering Operation
+## Handling filtering operation
 
 To enable filter operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `Filter` method within the OData setup, allowing you to filter data based on specified criteria. Once enabled, clients can utilize the **$filter** query option in your requests to filter for specific data entries.
 
@@ -369,7 +369,7 @@ config.Count().Filter(); // Handles filtering  operation.
 **Multi column filtering**
 ![Filtering query](../images/adaptors/odatav4-adaptor-multi-column-filtering.png)
 
-## Handling Sorting Operation
+## Handling sorting operation
 
 To enable sorting operations in your web application using OData, you first need to configure the OData support in your service collection. This involves adding the `OrderBy` method within the OData setup, allowing you to sort data based on specified criteria. Once enabled, clients can utilize the **$orderby** query option in their requests to sort data entries according to desired attributes.
 
@@ -406,7 +406,7 @@ config.Count().OrderBy(); // Handles sorting  operation.
 **Multi column sorting**
 ![Multi column sorting query](../images/adaptors/odatav4-adaptor-multi-column-sorting.png)
 
-## Handling Paging Operation
+## Handling paging operation
 
 To implement paging operations in your web application using OData, you can utilize the `SetMaxTop` method within your OData setup to limit the maximum number of records that can be returned per request. While you configure the maximum limit, clients can utilize the **$skip** and **$top** query options in their requests to specify the number of records to skip and the number of records to take, respectively.
 
@@ -440,7 +440,7 @@ config.Count().MaxTop(recordCount); // Handles paging  operation.
 
 ![paging query](../images/adaptors/odatav4-adaptor-paging.png)
 
-## Handling CRUD Operations
+## Handling CRUD operations
 
 To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adaptor, follow the provided guide for configuring the Syncfusion Grid for [editing](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller handles HTTP requests for CRUD operations such as GET, POST, PATCH, and DELETE.
 
@@ -539,6 +539,8 @@ public IHttpActionResult Delete(int key)
 ```
 
 ![Delete Record](../images/adaptors/odatav4-adaptor-delete-record.png)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp-net-mvc-data-grid/tree/master/ODataV4Adaptor).
 
 ## Odata with custom url
 
