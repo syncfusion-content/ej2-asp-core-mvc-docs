@@ -175,7 +175,7 @@ import { LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public resource: string = "https://cdn.syncfusion.com/ej2/25.1.35/dist/ej2-pdfviewer-lib";
-    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true };
+    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true };
     ngOnInit(): void {
     }
 }
@@ -211,7 +211,7 @@ import { LinkAnnotationService, BookmarkViewService,
 export class AppComponent implements OnInit {
     public document = 'https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf';
     public service: string = 'https://services.syncfusion.com/angular/production/api/pdfviewer';
-    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true };
+    public pageOrganizerSettings = { canDelete: true, canInsert: true, canRotate: true, canCopy: true, canRearrange: true, canImport: true };
     ngOnInit(): void {
     }
 }
