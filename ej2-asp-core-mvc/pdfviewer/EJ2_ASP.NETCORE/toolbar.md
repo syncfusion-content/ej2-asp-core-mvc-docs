@@ -190,11 +190,17 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
+@page "{handler?}"
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
 <div>
     <ejs-pdfviewer id="pdfviewer"
                    style="width:1350px;height:100%"
                    documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   resourceUrl='https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib'
+                   resourceUrl='https://cdn.syncfusion.com/ej2/29.1.35/dist/ej2-pdfviewer-lib'
                    toolbarClick="toolbarClick">
     </ejs-pdfviewer>
 </div>
@@ -256,68 +262,46 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
+@page "{handler?}"
+@model IndexModel
+@using Syncfusion.EJ2.PdfViewer
+@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Home page";
+    CustomToolbarItems customToolbarItems = new CustomToolbarItems();
+    var toolItem1 = new { id = "submit_form", text = "Submit Form", tooltipText = "Custom toolbar item", align = "Center", cssClass = "custom_button" };
+    customToolbarItems.ToolbarItems = new List<object> { toolItem1, "OpenOption", "PageNavigationTool", "MagnificationTool", "PanTool", "SelectionTool", "SearchOption", "PrintOption", "DownloadOption", "UndoRedoTool", "AnnotationEditTool", "FormDesignerEditTool", "CommentTool" };
+    PdfViewerToolbarSettings toolbarSettings = new PdfViewerToolbarSettings()
+            {
+                ShowTooltip = true,
+                ToolbarItems = customToolbarItems.ToolbarItems
+            };
+}
+
 <div>
-    <ejs-pdfviewer id="pdfviewer"
-                   style="width:1350px;height:100%"
-                   documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
-                   serviceUrl="/api/PdfViewer"
-                   toolbarClick="toolbarClick">
+    <ejs-pdfviewer id="pdfviewer" style="height:600px"
+                   serviceUrl="/Index"
+                   documentPath="https://cdn.syncfusion.com/content/pdf/form-designer.pdf"
+                   toolbarClick="toolbarClick"
+                   ToolbarSettings="toolbarSettings">
     </ejs-pdfviewer>
 </div>
 
-<script type="text/javascript">
-    window.onload = function () {
-        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var toolItem1 = {
-            prefixIcon: 'e-icons e-paste',
-            id: 'print',
-            tooltipText: 'Custom toolbar item',
-            align: 'left'
-        };
-        var toolItem2 = {
-            id: 'download',
-            text: 'Save',
-            tooltipText: 'Custom toolbar item',
-            align: 'right'
-        };
-        var LanguageList = ['Typescript', 'Javascript', 'Angular', 'C#', 'C', 'Python'];
-        var toolItem3 = {
-            type: 'Input',
-            tooltipText: 'Language List',
-            cssClass: 'percentage',
-            align: 'Left',
-            id: 'dropdown',
-            template: new ej.dropdowns.ComboBox({ width: 100, value: 'TypeScript', dataSource: LanguageList, popupWidth: 85, showClearButton: false, readonly: false })
-        };
-        var toolItem4 = {
-            type: 'Input',
-            tooltipText: 'Text',
-            align: 'Right',
-            cssClass: 'find',
-            id: 'textbox',
-            template: new ej.inputs.TextBox({ width: 125, placeholder: 'Type Here', created: onCreate })
-        };
-        pdfViewer.toolbarSettings = {
-            showTooltip: true,
-            toolbarItems: [toolItem1, toolItem2, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', toolItem3, 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', toolItem4, 'CommentTool', 'SubmitForm']
-        };
-        function onCreate() {
-            this.addIcon('prepend', 'e-icons e-search');
-        }
-    }
-
-    // Define the toolbarClick event handler
+<script>
     function toolbarClick(args) {
-        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-
-        if (args.item && args.item.id === 'print') {
-            pdfViewer.printModule.print();
-        } else if (args.item && args.item.id === 'download') {
-            pdfViewer.download();
-        }
-    }
-
+         var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+         if (args.item && args.item.id === 'submit_form') {
+             alert('Custom button clicked!');
+         }
+     }
 </script>
+
+<style>
+    .custom_button {
+        height: 100% !important;
+    }
+</style>
+
 
 {% endhighlight %}
 {% endtabs %}
