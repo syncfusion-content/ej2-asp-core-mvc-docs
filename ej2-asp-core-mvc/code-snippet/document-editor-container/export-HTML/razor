@@ -1,0 +1,24 @@
+
+@Html.EJS().Button("element").Content("Export HTML").Click("exportHTML").Render()
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+    }
+    function exportHTML() {
+        let http = new XMLHttpRequest();
+        // Replace your running web service Url here
+        http.open('POST', 'http://localhost:62869/api/documenteditor/ExportHTML');
+        http.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+        http.responseType = 'json';
+        //Serialize document content as SFDT.
+        let sfdt = { content: container.documentEditor.serialize(), fileName: 'Sample.html' };
+        //Send the sfdt content to server side.
+        http.send(JSON.stringify(sfdt));
+    }
+</script>

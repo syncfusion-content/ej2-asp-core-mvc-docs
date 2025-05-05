@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to export the document as PDF in React Document Editor
+# How to export the document as PDF in ##Platform_Name## Document Editor
 
 This article explains how to export the document as PDF format. You can export the document as PDF in following ways:
 
