@@ -12,6 +12,10 @@ documentation: ug
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
+To quickly get started with customizing styles in the ASP.NET Core Rich Text Editor, watch this video:
+
+{% youtube "youtube:https://www.youtube.com/watch?v=C4ELtSPALEY"%}
+
 ## Customizing Rich Text Editor Content
 
 Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
