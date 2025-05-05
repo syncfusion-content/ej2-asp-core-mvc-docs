@@ -13,6 +13,13 @@ documentation: ug
 
 In Document Editor, the documents are stored in its own format called **Syncfusion Document Text (SFDT)**.
 
+> The **Syncfusion Document Text** (SFDT) format is only used for Syncfusion. The JSON SFDT structure is used in the Document Editor and has a predefined set of keys. Any customization data provided in the SFDT will not be recognized by the Document Editor. So, we strongly advise against making modifications to the SFDT string, as such alterations can lead to scripting issues during the document processing phase.
+
+> If you want to know more about the structure of our SFDT, you can implement various elements in the document and save it in the SFDT format by setting the optimizeSFDT property to false. You can access the optimizeSFDT property as given below: **"documentEditor.documentEditorSettings.optimizeSfdt = false"**.
+So, while rendering the elements, the Document Editor will read the values based on the predefined keys in SFDT format, and the values of the unrecognized keys will be ignored. The SFDT structure we use in our document editor is mostly similar to the Docx XML specifications of MS Word.
+
+To know about optimize-sfdt, please refer this [page](../document-editor/how-to/optimize-sfdt).
+
 The following example shows how to open SFDT data in Document Editor.
 
 {% if page.publishingplatform == "aspnet-core" %}
