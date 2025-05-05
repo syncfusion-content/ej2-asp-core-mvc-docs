@@ -1,6 +1,6 @@
 ---
 layout: post
-title: State Maintenance in ##Platform_Name## Dashboard Layout control
+title: State Maintenance in ##Platform_Name## Dashboard Layout control | Syncfusion
 description: Learn here all about State Maintenance in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: State Maintenance
@@ -39,5 +39,32 @@ The following sample demonstrates how to save and restore the state of the panel
 {% endif %}
 
 ![State maintenance](./images/state_maintenance.PNG)
+
+## State Persistence in Dashboard Layout control
+
+State persistence allows the Dashboard Layout control to retain the panel positions ([`row`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_Row), [`col`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_Col), width ([`sizeX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeX)), and height ([`sizeY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeY)) values in the browser's [localStorage](https://www.w3schools.com/html/html5_webstorage.asp) for state maintenance, even if the browser is refreshed or if you navigate to another page within the browser. This feature is controlled through the [`enablePersistence`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_EnablePersistence) property, which is set to `false` by default. When set to `true`, the panel positions and sizes of the Dashboard Layout control will be retained even after refreshing the page.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/dashboard-layout/persistence/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CSHTML.cs" %}
+{% include code-snippet/dashboard-layout/persistence/CSHTML.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/dashboard-layout/persistence/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/dashboard-layout/persistence/HomeController.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 N> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to know how to present and manipulate data.
