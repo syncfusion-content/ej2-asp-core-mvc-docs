@@ -47,12 +47,12 @@ Expand and Collapse state of any child record will be persisted.
 ### Limitations 
 
 * Row virtual scrolling is not compatible with the following feature
-	1. Batch editing
-        2. Checkbox selection
-	3. Detail template
-	4. Row template
-	5. Rowspan
-	6. Autofill
+    1. Batch editing
+    2. Checkbox selection
+    3. Detail template
+    4. Row template
+    5. Rowspan
+    6. Autofill
 	
 * It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
