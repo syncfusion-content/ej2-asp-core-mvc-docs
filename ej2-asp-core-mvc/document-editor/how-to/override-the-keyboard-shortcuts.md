@@ -71,11 +71,11 @@ For example, `Ctrl + S` keyboard shortcut saves the document in SFDT format by d
 {% endtabs %}
 {% endif %}
 
-## How to Detect when a key is being pressed
+## How to Capture Keydown Events in Document Editor
 
-Capture or detect what action will be executed when any key is pressed.
+The Document Editor provides the ability to capture keyboard actions using the keyDown event. This can be useful for detecting when specific keys are pressed and executing custom logic—such as displaying alerts, blocking shortcuts, or triggering other actions.
 
-For example, when the Backspace or Delete keys are pressed, an alert message will pop up with a specific action for the pressed key. The following code demonstrates how to detect the `Delete` or `Backspace` key press for deleting and backspacing the selected content in the Document Editor.
+The following code demonstrates how to capture the `Delete` or `Backspace` key press in the Document Editor to detect and handle these actions with custom logic, such as showing a warning or logging the event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
