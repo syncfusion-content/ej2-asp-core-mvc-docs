@@ -82,21 +82,33 @@ Content control properties [`ContentControlInfo`] can be set using the [`setCont
 * xmlString: Specifies the XML string used for data binding, XML content to be mapped within the content control.
 * xmlPath?: Specifies the XPath expression for XML mapping, This path identifies the specific part of the XML data to bind to the content control.
 
-### Enable-Disable Content Control in Document editor control
+### Prevent Editing Content Control in Document editor control
 
-Document Editor content control can be enable/disable using the ContentControlInfo properties.
+Document Editor content control can prevent editing using the ContentControlInfo properties.
 
-The following example illustrates to disable the content control after inserting the content control in DocumentEditorContainer.
+The following example illustrates how to prevent editing the content control after inserting the content control in DocumentEditorContainer.
 
 {% highlight ts %}
 container.documentEditor.editor.insertContentControl('RichText','{{product_code}}');
 var contentControlInfo = container.documentEditor.selection.getContentControlInfo();
 //Specifies whether the content control can be Edited.
-// To Disable Editing use "true" and To Enable Editing use "false".
-contentControlInfo.canEdit = true;
+// Use "true" to restrict editing of the content control, and "false" to allow editing.
+**contentControlInfo.canEdit = true;**
+container.documentEditor.editor.setContentControlInfo(contentControlInfo);
+{% endhighlight %}
+
+### Prevent Deleting Content Control in Document editor control
+
+Document Editor content control can be prevented from being deleted using the ContentControlInfo properties.
+
+The following example illustrates how to prevent deleting the content control after inserting the content control in DocumentEditorContainer.
+
+{% highlight ts %}
+container.documentEditor.editor.insertContentControl('RichText','{{product_code}}');
+var contentControlInfo = container.documentEditor.selection.getContentControlInfo();
 //Specifies whether the content control can be Deleted.
-// To Disable Deleting use "true" and To Enable Editing use "false".
-contentControlInfo.canDelete = true;
+// Use "true" to prevent the deletion of the content control, and "false" to allow its removal.
+**contentControlInfo.canDelete = true;**
 container.documentEditor.editor.setContentControlInfo(contentControlInfo);
 {% endhighlight %}
 
