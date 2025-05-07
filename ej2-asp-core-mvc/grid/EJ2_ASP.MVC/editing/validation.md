@@ -334,3 +334,28 @@ namespace UrlAdaptor.Controllers
 {% endtabs %}
 
 ![Show custom error message](../images/editing/custom-message.png)
+
+## Prevent adding duplicate rows with custom validation
+
+The Syncfusion ASP.NET MVC Grid allows you to enforce constraints to prevent duplicate rows by customizing the validation logic within the Grid setup. This ensures data integrity by restricting duplicate entries in the **OrderID** column.
+
+To prevent adding duplicate rows in the Grid, follow these steps:
+
+1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource). This allows editing an existing row without triggering a duplicate error.
+
+2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
+
+3. Handle Validation in the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event: In the `ActionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
+
+For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Edit-temp.cs" %}
+{% include code-snippet/grid/edit/prevent-add-duplicate/customvalidation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Prevent Duplicate row](../images/editing/prevent-duplicate-row.png)
