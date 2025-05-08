@@ -88,6 +88,7 @@ The following example enable column virtualization using `enableColumnVirtualiza
 * Selected column details are only retained within the viewport. When the next set of columns is loaded, the selection for previously visible columns is lost.
 * The cell selection is not supported for column virtual scrolling.
 * The **Ctrl + Home** and **Ctrl + End** keys are not supported when using column virtual scrolling.
+* When both frozen columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
 * The following features are compatible with column virtualization and work within the viewport:
    1. Column resizing
    2. Column reordering
