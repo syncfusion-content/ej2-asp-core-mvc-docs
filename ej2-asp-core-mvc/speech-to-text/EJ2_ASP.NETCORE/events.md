@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in ##Platform_Name## SpeechToText Control | Syncfusion
-description: Checkout and learn about Events in Syncfusion ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about events in Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
