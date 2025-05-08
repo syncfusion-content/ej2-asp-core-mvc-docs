@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## SpeechToText Control | Syncfusion
-description: Checkout and learn about appearance in Syncfusion  Essential ##Platform_Name## SpeechToText control, its elements, and more.
+description: Checkout and learn about appearance in Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: Appearance
 publishingplatform: ##Platform_Name##
