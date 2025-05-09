@@ -98,6 +98,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Rich 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/basic/default/tagHelper %}
 {% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/basic/default/controller.cs %}
+{% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Rich Text Editor control will be rendered in the default web browser.
@@ -111,6 +114,9 @@ Configure the toolbar with the tools using items field of the [`toolbarSettings`
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/basic/toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/basic/toolbar/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
