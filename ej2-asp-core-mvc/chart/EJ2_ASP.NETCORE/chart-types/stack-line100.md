@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 100% Stacked Line Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about 100% Stacked Line Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: 100% Stacked Line Chart in ##Platform_Name## Charts
+description: Learn here all about 100% Stacked Line Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: 100% Stacked Line Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# 100% Stacked Line in ##Platform_Name## Charts Component
+# 100% Stacked Line Chart in ##Platform_Name## Charts
 
 ## 100% Stacked Line
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Area Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Range Area Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Range Area Chart in ##Platform_Name## Charts
+description: Learn here all about Range Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range Area Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Area in ##Platform_Name## Charts Component
+# Range Area Chart in ##Platform_Name## Charts
 
 ## Range Area
 

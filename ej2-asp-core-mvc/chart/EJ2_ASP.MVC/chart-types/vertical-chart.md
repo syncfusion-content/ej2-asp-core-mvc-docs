@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vertical Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Vertical Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Vertical Chart in ##Platform_Name## Charts
+description: Learn here all about Vertical Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Vertical Chart
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Vertical Chart in ##Platform_Name## Charts Component
+# Vertical Chart in ##Platform_Name## Charts
 
-## Vertical chart
+## Vertical Chart
 
 To draw a chart in a vertical manner, change the orientation of the axis using the `IsTransposed` property, which is supported by all series types.
 
