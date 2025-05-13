@@ -26,7 +26,6 @@ The following example code illustrates how to select and get the current word as
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
 {% endhighlight %}
-{% code-snippet/document-editor-container/get-word/document-editor.cs %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -36,7 +35,6 @@ The following example code illustrates how to select and get the current word as
 {% include code-snippet/document-editor-container/get-word/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
-{% code-snippet/document-editor-container/get-word/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -55,7 +53,6 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% code-snippet/document-editor-container/get-paragraph/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,7 +63,6 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% code-snippet/document-editor-container/get-paragraph/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

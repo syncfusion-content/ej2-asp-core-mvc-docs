@@ -24,7 +24,6 @@ You can use `text` API to get the selected content as plain text from React Docu
 {% include code-snippet/document-editor-container/get-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-text.cs" %}
-{% code-snippet/document-editor-container/get-text/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,7 +34,6 @@ You can use `text` API to get the selected content as plain text from React Docu
 {% include code-snippet/document-editor-container/get-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-text.cs" %}
-{% code-snippet/document-editor-container/get-text/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -59,7 +57,6 @@ You can use `sfdt` API to get the selected content as rich text from React Docum
 {% include code-snippet/document-editor-container/get-sfdt/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-sfdt.cs" %}
-{% code-snippet/document-editor-container/get-sfdt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -70,7 +67,6 @@ You can use `sfdt` API to get the selected content as rich text from React Docum
 {% include code-snippet/document-editor-container/get-sfdt/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-sfdt.cs" %}
-{% code-snippet/document-editor-container/get-sfdt/document-editor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
