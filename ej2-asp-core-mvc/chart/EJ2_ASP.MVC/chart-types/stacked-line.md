@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stacked Line Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Stacked Line Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Line Chart in ##Platform_Name## Charts
+description: Learn here all about Stacked Line Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stacked Line Chart
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Stacked line Chart in ##Platform_Name## Charts Component
+# Stacked Line Chart in ##Platform_Name## Charts
 
-## Stacked line
+## Stacked Line
 
 To render a [stacked line](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts/chart-types/stacked-line-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
 

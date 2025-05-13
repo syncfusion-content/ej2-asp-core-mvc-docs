@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bar Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Bar Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Bar Chart in ##Platform_Name## Charts
+description: Learn here all about Bar Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bar chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Bar Charts in ##Platform_Name## Charts Component
+# Bar Chart in ##Platform_Name## Charts
 
 ## Bar
 

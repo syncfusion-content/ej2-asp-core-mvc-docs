@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Polar Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Polar Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Polar Chart in ##Platform_Name## Charts
+description: Learn here all about Polar Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Polar Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Polar in ##Platform_Name## Charts Component
+# Polar Chart in ##Platform_Name## Charts
 
 To get started with the ASP.NET Core Polar charts, you can check on this video:
 
