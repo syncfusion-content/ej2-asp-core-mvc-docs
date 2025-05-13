@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Chart in ##Platform_Name## Chart
+title: Spline Chart in ##Platform_Name## Charts
 description: Learn here all about Spline Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spline Chart
