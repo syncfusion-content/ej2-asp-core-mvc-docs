@@ -50,6 +50,7 @@ The following example code illustrates how to select and get the current paragra
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/get-paragraph/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
 {% endhighlight %}
