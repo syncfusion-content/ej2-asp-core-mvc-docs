@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked Area Chart in ##Platform_Name## Charts Component
+# Stacked Area Chart in ##Platform_Name## Charts
 
 ## Stacked Area
 
