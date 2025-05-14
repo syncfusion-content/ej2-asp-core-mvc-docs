@@ -190,7 +190,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
 > * In an API service project, add `Syncfusion.EJ2.MVC5` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
 > * To access `DataManagerRequest`, import [Syncfusion.EJ2.Base](https://www.npmjs.com/package/@syncfusion/ej2-base) in `GridController.cs` file.
 
-## Handling Searching Operation
+## Handling searching operation
 
 To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching`. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -233,7 +233,7 @@ To enable search functionality, ensure that your API endpoint supports custom se
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Filtering Operation
+## Handling filtering operation
 
 To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering`. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -278,7 +278,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Sorting Operation
+## Handling sorting operation
 
 To handle sorting operation, configure your API to support custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting`. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -321,7 +321,7 @@ public ActionResult UrlDatasource(DataManagerRequest DataManagerRequest)
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Paging Operation
+## Handling paging operation
 
 To handle paging operation, ensure that your API endpoint supports custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip`. This allows the custom data source to undergo paging based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -369,7 +369,7 @@ To handle paging operation, ensure that your API endpoint supports custom paging
 
 ## Handling CRUD Operations
 
-The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
+The Syncfusion ASP.NET MVC Grid seamlessly integrates CRUD (Create, Read, Update, and Delete) operations with server-side controller actions through specific properties: `InsertUrl`, `RemoveUrl`, `UpdateUrl`,`CrudUrl`, and `BatchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
 **CRUD Operations Mapping**
 
@@ -472,7 +472,7 @@ public ActionResult Update(Orders value)
 }
 ```
 
-**Delete Operation**
+**Delete Operation:**
 
 To delete existing records, use the `RemoveUrl` property to specify the controller action mapping URL for the delete operation.
 
@@ -612,3 +612,5 @@ To perform batch operation, define the edit `Mode` as **Batch** and specify the 
 {% endtabs %}
 
 ![UrlAdaptor Batch Editing](../images/adaptors/url-adaptors/url-adaptor-batch-editing.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp-net-mvc-data-grid/tree/master/UrlAdaptor).
