@@ -331,5 +331,5 @@ By configuring these options in the [QuickToolbarSettings](https://help.syncfusi
 
 ## See Also
 
-* [Image Quick toolbar](../toolbar/quick-toolbar)
+* [Image Quick toolbar](../toolbar/quick-toolbar#image-quick-toolbar)
 * [Hyperlink Management](../link)

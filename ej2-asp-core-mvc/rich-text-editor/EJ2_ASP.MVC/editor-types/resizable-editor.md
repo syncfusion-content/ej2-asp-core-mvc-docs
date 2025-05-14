@@ -37,7 +37,7 @@ The following sample demonstrates the resizable feature.
 {% endtabs %}
 {% endif %}
 
-![Rich Text Editor Resizable support](./images/Resizable-Editor.png)
+![Rich Text Editor Resizable support](../images/Resizable-Editor.png)
 
 ## Setting Editor Resize Limits
 
@@ -82,4 +82,4 @@ By default, the control resizes up to the current viewport size. Apply these sty
 ## See Also
 
 * [Working with IFrame Editing Mode](./iframe)
-* [Using the Markdown Editor](./editor-mode)
+* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.MVC/getting-started)
