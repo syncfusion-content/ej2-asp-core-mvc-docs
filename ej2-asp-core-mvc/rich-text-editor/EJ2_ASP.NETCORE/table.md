@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Table in ##Platform_Name## Rich Text Editor control
+title: Table in ##Platform_Name## Rich Text Editor control | Syncfusion
 description: Learn here all about Table in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Table
@@ -12,7 +12,7 @@ documentation: ug
 
 Rich Text Editor allows to insert table of content in edit panel and provides an options to add, edit and remove the table as well as perform other table related action. For inserting the table to the Rich Text Editor, the following list of options have been provided in the [tableSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings)
 
-## Configuring the Table tool in Toolbar
+## Configuring the table tool in toolbar
 
 You can add an `CreateTable` tool in the Rich Text Editor toolbar using the `toolbarSettings` [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorToolbarSettings_Items) property.
 
@@ -43,49 +43,49 @@ Tables can also be inserted through the `Insert Table` option in the pop-up wher
 {% endtabs %}
 {% endif %}
 
-## Table Headers
+## Table headers
 
 The `TableHeader` command is available in the quick toolbar, allowing you to add or remove the header row from the inserted table. The following image illustrates the table header.
 
 ![Rich Text Editor table header](./images/table_header.png)
 
-## Inserting Rows
+## Inserting rows
 
 You can insert `Rows` above or below the selected table cell using the quick toolbar. The focused row can also be deleted. The following screenshot shows the available options of the row item.
 
 ![Rich Text Editor table row](./images/table_rows.png)
 
-## Inserting Columns
+## Inserting columns
 
 `Columns` can be inserted to the left or right of the selected table cell using the quick toolbar. The focused column can also be deleted. The following screenshot shows the available options in inserting column item.
 
 ![Rich Text Editor table column](./images/table_column.png)
 
-## Setting Cell Background Color
+## Setting cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
 
 ![Rich Text Editor table background color](./images/table_bg_color.png)
 
-## Deleting Tables
+## Deleting tables
 
 Delete the entire table using the delete item in the quick toolbar.
 
-## Table Cell Alignments
+## Table cell alignments
 
-### Vertical Alignment
+### Vertical alignment
 
 Align text inside table cells to the top, middle, or bottom using the `TableCellVerticalAlign` tool in the quick toolbar.
 
 ![Rich Text Editor table vertical alignment](./images/table_vertical.png)
 
-### Horizontal Alignment
+### Horizontal alignment
 
 Align text inside table cells to the left, right, or center using the `TableCellHorizontalAlign` tool in the quick toolbar.
 
 ![Rich Text Editor table horizontal alignment](./images/table_horizontal.png)
 
-## Applying Table Styles
+## Applying table styles
 
 Table styles provided for class name should be appended to a table element. It helps to design the table in specific CSS styles when inserting in the editor.
 
@@ -97,7 +97,7 @@ By Default, provides Dashed border and Alternate rows.
 
 ![Rich Text Editor table styles](./images/table_style.png)
 
-## Setting Table and Cell Dimensions
+## Setting table and cell dimensions
 
 Sets the default width of the table when it is inserted in the Rich Text Editor using the width of [tableSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_TableSettings).
 
@@ -105,7 +105,7 @@ Users can modify the width, cell padding, and cell spacing of selected tables us
 
 ![Rich Text Editor table settings](./images/table_properties.png)
 
-## Table Cell Selection and Formatting
+## Table cell selection and formatting
 
 The table cell selection feature in our editor allows for intuitive and efficient table manipulation using both mouse and keyboard interactions.
 
@@ -151,13 +151,13 @@ The text formatting feature in tables allows users to apply various styles to se
 {% endtabs %}
 {% endif %}
 
-## Merging and Splitting Cells
+## Merging and splitting cells
 
 The Rich Text Editor allows users to modify table appearance by merging or splitting cells.
 
 Configure the `TableCell` item in the Table [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings) property to display merge/split icons when selecting table cells.
 
-### Merging Table Cells
+### Merging table cells
 
 The table cell merge feature allows you to merge two or more row and column cells into a single cell, combining their contents.
 
@@ -165,7 +165,7 @@ The following image explains the table merge action.
 
 ![Rich Text Editor table cell merge](./images/table_merge.png)
 
-### Splitting Table Cells
+### Splitting table cells
 
 The table cell split feature allows you to a selected cell can be split both horizontally and vertically.
 
@@ -196,32 +196,6 @@ The following image explains the table split action.
 {% endtabs %}
 {% endif %}
 
-## Customizing the Table Quick Toolbar
+## See also
 
-The quick toolbar appears when clicking on a table, providing easy access to table-related commands. You can customize the quick toolbar by adding or removing tools using the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Table) property.
-
-The following sample demonstrates the customiztion of table quick toolbar.
-
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/table-quick-toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/table-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/table-quick-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/table-quick-toolbar/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+* [Table Quick Toolbar](./toolbar/quick-toolbar#table-quick-toolbar)

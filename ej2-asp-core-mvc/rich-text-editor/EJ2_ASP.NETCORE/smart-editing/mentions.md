@@ -38,6 +38,6 @@ In the following sample, we configured the following properties with popup dimen
 
 > [View Sample](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/MentionIntegration#/bootstrap5)
 
-## See Also
+## See also
 
 * [Getting Started with Mention](https://ej2.syncfusion.com/aspnetcore/documentation/mention/getting-started)

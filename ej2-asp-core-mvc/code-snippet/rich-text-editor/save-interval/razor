@@ -1,1 +1,10 @@
-@Html.EJS().RichTextEditor("defaultRTE").SaveInterval(500).Value(ViewBag.value).Render()
+@Html.EJS().RichTextEditor("editor").SaveInterval(500).Change("OnChange").Value(ViewBag.value).Render()
+
+<script type="text/javascript">
+
+function OnChange(e) {
+    //here you can add your code
+    var editorValue = e.value;
+}
+
+</script>

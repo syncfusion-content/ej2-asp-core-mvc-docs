@@ -1,0 +1,23 @@
+<button id="btn" class="e-btn" style="margin: 5px">Apply</button>
+<ejs-richtexteditor id="editor" value="@ViewBag.value"></ejs-richtexteditor>
+
+<script>
+    var nodeSelection = new ej.richtexteditor.NodeSelection();
+    
+    document.getElementById('btn').onclick = function () {
+        const editor = document.getElementById('editor').ej2_instances[0];
+        const rteContent = editor.contentModule.getDocument();
+        const firstParagraph = editor.contentModule.getEditPanel().querySelector('p');
+
+        if (firstParagraph && firstParagraph.firstChild) {
+            nodeSelection.setSelectionText(
+                rteContent,
+                firstParagraph.firstChild,
+                firstParagraph.firstChild,
+                4, // Start index
+                20 // End index
+            );
+            editor.executeCommand('backColor', 'yellow');
+        }
+    };
+</script>

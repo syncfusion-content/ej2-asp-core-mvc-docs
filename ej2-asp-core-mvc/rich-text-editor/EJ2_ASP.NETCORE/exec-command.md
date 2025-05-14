@@ -49,4 +49,4 @@ In Rich Text Editor, executeCommand used to perform commands for the modificatio
 | insertAudio | Insert a audio to the current cursor position. | `rteObj.executeCommand('insertAudio', { url: 'https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Audio.wav', cssClass: 'e-rte-audio'});` |
 
 
-> The ‘ExecuteCommand’ public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor
+> The `ExecuteCommand` public method is not supported in Syncfusion<sup style="font-size:70%">&reg;</sup> Markdown Editor.
