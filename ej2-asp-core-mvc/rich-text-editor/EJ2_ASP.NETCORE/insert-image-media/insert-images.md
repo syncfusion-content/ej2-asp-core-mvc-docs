@@ -252,7 +252,7 @@ You can allow the specific images alone to be uploaded using the the allowedType
 
 ``` cshtml
 
-    allowedTypes="@(new string[] {".jpg"})"
+    allowedTypes="@(new string[] {".jpg", ".png", ".jpeg" })"
 
 ```
 
