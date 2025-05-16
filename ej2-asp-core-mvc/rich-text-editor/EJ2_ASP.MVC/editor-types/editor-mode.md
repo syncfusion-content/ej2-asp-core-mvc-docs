@@ -77,9 +77,9 @@ The third-party library such as [`Marked`](https://marked.js.org/#/README.md#REA
 {% endtabs %}
 {% endif %}
 
-For further details on Markdown editing, refer to the [`Markdown`](./markdown)
+For further details on Markdown editing, refer to the [`Markdown`](../../../markdown-editor/EJ2_ASP.MVC/getting-started)
 
 ## See Also
 
 * [How to integrate the third party library](../third-party-integration/)
-* [How to render the iframe](./iframe)
+* [How to render the iframe](./iframe/)

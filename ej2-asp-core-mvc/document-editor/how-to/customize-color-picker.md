@@ -22,7 +22,9 @@ Similarly, you can use `documentEditorSettings` property for DocumentEditor also
 {% include code-snippet/document-editor-container/customize-color-picker/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-color-picker.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/customize-color-picker/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -31,15 +33,20 @@ Similarly, you can use `documentEditorSettings` property for DocumentEditor also
 {% include code-snippet/document-editor-container/customize-color-picker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-color-picker.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor-container/customize-color-picker/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 The following table illustrates all the possible properties for the color picker.
 
-| Property | Behaviour |
+| Property | Behavior |
 |---|---|
 | columns | It is used to render the ColorPicker palette with specified columns. Defaults to 10 |
 | disabled | It is used to enable / disable ColorPicker component. If it is disabled the ColorPicker popup won’t open. Defaults to false |
 | mode | It is used to render the ColorPicker with the specified mode. Defaults to ‘Picker’ |
 | modeSwitcher | It is used to show / hide the mode switcher button of ColorPicker component. Defaults to true |
 | showButtons | It is used to show / hide the control buttons (apply / cancel) of ColorPicker component. Defaults to true |
+
+
+>**Note**: According to the Word document specifications, it is not possible to modify the **`Predefined Highlight colors`**. This limitation means that the range of highlight colors provided by default cannot be customized or expanded upon by the user to suit individual preferences. Consequently, users must work within the confines of the existing color palette, as no functionality currently exists to modify or personalize these predefined highlighting options.

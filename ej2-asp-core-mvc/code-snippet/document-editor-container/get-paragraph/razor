@@ -11,7 +11,9 @@
     // To select the current paragraph in document
     container.documentEditor.selection.selectParagraph();
 
-    // To get the selected content as sfdt
-    var selectedContent = container.documentEditor.selection.sfdt;
+    // To get the selected content as text
+    var selectedContentText = container.documentEditor.selection.text;
+    // To get the selected content as SFDT (rich text)
+    var selectedContentSFDT = container.documentEditor.selection.sfdt;
   }
 </script>

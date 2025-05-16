@@ -105,4 +105,4 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 ## See Also
 
 * [Implementing Inline Editing](./inline-editing)
-* [Using the Markdown Editor](./editor-mode)
+* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.MVC/getting-started)
