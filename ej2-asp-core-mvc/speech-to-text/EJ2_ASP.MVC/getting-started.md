@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## SpeechToText Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about getting started with Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: SpeechToText
 publishingplatform: ##Platform_Name##

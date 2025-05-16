@@ -1,0 +1,39 @@
+<div class="control-section">
+    <ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" height="590px"></ejs-documenteditorcontainer>
+</div>
+<script>
+  var documenteditor;
+  var container;
+  function onCreated() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      // creating Custom Options
+      let menuItems = [
+          {
+            text: 'Form field',
+            id: 'form field',
+            iconCss: 'e-de-formfield e-icons',
+            items: [
+                {
+                text: 'Text form',
+                id: 'Text form',
+                iconCss: 'e-icons e-de-textform',
+                },
+                {
+                text: 'Check box',
+                id: 'Check box',
+                iconCss: 'e-icons e-de-checkbox-form',
+                },
+                {
+                text: 'Drop down',
+                id: 'Drop down',
+                iconCss: 'e-icons e-de-dropdownform',
+                },
+            ],
+          },
+      ];
+      // adding Custom Options
+      container.documentEditor.contextMenu.addCustomMenu(menuItems, false, true);
+  }
+</script>

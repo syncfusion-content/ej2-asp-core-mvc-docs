@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Security concerns in ##Platform_Name## SpeechToText Control | Syncfusion
-description: Checkout and learn about Security concerns in ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
+description: Checkout and learn about security concerns in Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: SpeechToText
 publishingplatform: ##Platform_Name##
