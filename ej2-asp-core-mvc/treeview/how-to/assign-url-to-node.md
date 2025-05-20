@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Assign URLs to specific nodes in Vue TreeView component
+# Assign URLs to specific nodes in TreeView component
 
 {% if page.publishingplatform == "aspnet-core" %}
 
