@@ -172,3 +172,4 @@ The following example demonstrates how to enable the lazy load grouping with vir
 * Programmatic selection is not supported  in lazy load grouping.
 * Drag selection, Cell selection (box and flow), Row Selection is not working in collapsed state.
 * Clipboard is not support when the groups are in collapsed state.
+* In lazy load grouping, checkbox selection is limited to rows currently visible in the viewport. Range selection using (Shift + Click) and header checkbox selection are not supported due to row index mismatches from dynamically loaded data.
