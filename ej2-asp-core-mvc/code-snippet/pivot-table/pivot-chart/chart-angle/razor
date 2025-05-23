@@ -1,5 +1,5 @@
 @using Syncfusion.EJ2.PivotView
-@Html.EJS().PivotView("PivotView").Height("300").DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ShowFieldList(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.Data).ExpandAll(false)
+@Html.EJS().PivotView("PivotView").Height("300").ShowFieldList(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
 .EnableSorting(true).Rows(rows =>
 {
     rows.Name("Country").Add();
@@ -21,7 +21,7 @@
 .Filters(filters =>
 {
     filters.Name("Product_Categories").Caption("Product Categories").Add();
-})).ChartSettings(chartSettings =>
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings =>
 chartSettings.ChartSeries(chartSeries =>
     {
         chartSeries.Type(ChartSeriesType.Doughnut);
