@@ -3,7 +3,13 @@
  .FormatSettings(formatsettings =>
  {
      formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
- }).Rows(rows =>
+ }).FieldMapping(fields=>
+ {
+     fields.Name("Quarter").ShowSortIcon(false).Add();
+     fields.Name("Products").ShowFilterIcon(false).ShowRemoveIcon(false).Add();
+     fields.Name("Amount").ShowValueTypeIcon(false).Caption("Sold Amount").Add();
+ })
+ .Rows(rows =>
  {
      rows.Name("Country").Add();
  }).Columns(columns =>
@@ -12,9 +18,4 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add();
- })).FieldMapping(fields=>
- {
-     fields.Name("Quarter").ShowSortIcon(false).Add();
-     fields.Name("Products").ShowFilterIcon(false).ShowRemoveIcon(false).Add();
-     fields.Name("Amount").ShowValueTypeIcon(false).Caption("Sold Amount").Add();
- }).ShowGroupingBar(true).ShowFieldList(true).Render()
+ })).ShowGroupingBar(true).ShowFieldList(true).Render()
