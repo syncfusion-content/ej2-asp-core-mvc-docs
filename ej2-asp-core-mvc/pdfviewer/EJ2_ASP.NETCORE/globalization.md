@@ -50,7 +50,7 @@ The following table shows the default text values used in PDF Viewer in 'en-US' 
 |Match case|Match case|
 |Apply|Apply|
 |GoToPage|Go to page|
-|No matches|Viewer has finished searching the document. No more matches were found|
+|No Matches|Viewer has finished searching the document. No more matches were found|
 |No Text Found|No Text Found|
 |Undo|Undo|
 |Redo|Redo|
@@ -330,7 +330,7 @@ You have to map the text content based on locale like following script in sample
                         'Match case': 'حالة مباراة',
                         'Apply': 'تطبيق',
                         'GoToPage': 'انتقل إلى صفحة',
-                        'No matches': 'انتهى العارض من البحث في المستند. لم يتم العثور على مزيد من التطابقات',
+                        'No Matches': 'انتهى العارض من البحث في المستند. لم يتم العثور على مزيد من التطابقات',
                         'No Text Found': 'لم يتم العثور على نص',
                         'Undo': 'فك',
                         'Redo': 'فعل ثانية',
