@@ -66,8 +66,8 @@ Use the following steps to create the Syncfusion® ASP.NET MVC (Essential JS 2) 
 
     ![sample creator theme selection](images/aspnet-mvc-samplecreator.png)
 
-2. Click **Create** button. After creating the project, open the project by clicking **Yes**. If you click **No**, the corresponding location of the project will be opened. Refer to the following screenshot for more information.
+2. Click the **Create** button. After creating the project, open the project by clicking **Yes**. If you click **No**, the corresponding location of the project will be opened. Refer to the following screenshot for more information.
 
     ![create](images/sample-creator-create.png)
 
-3. The new Syncfusion® ASP.NET MVC sample is created. Required controller and view file for selected controls, selected style, scripts and corresponding Syncfusion® NuGet packages are added in the created sample.
+3. The new Syncfusion® ASP.NET MVC sample is created. Required controller and view files for selected controls, selected styles, scripts, and corresponding Syncfusion® NuGet packages are added in the created sample.
