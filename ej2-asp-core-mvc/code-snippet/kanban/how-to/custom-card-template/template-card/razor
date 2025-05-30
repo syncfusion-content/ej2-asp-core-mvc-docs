@@ -1,0 +1,29 @@
+@Html.EJS().Kanban("Kanban").KeyField("Status").CardRendered("cardRendered").DataSource((IEnumerable<object>)ViewBag.data).Columns(col =>
+    {
+        col.HeaderText("To Do").KeyField("Open").Add();
+        col.HeaderText("In Progress").KeyField("InProgress").Add();
+        col.HeaderText("Testing").KeyField("Testing").Add();
+        col.HeaderText("Done").KeyField("Close").Add();
+    }).CardSettings(card =>
+    {
+        card.ContentField("Summary").HeaderField("Id");
+    }).Render()
+<script type="text/javascript">
+
+    function cardRendered(args) {   // Triggered when before each card append to DOM element
+
+        var val = args.data.Priority;    // Get the priority data
+
+        ej.base.addClass([args.element], val);   // Append the class name to card root element
+    }
+
+</script>
+<style type="text/css">
+
+    .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low.e-selection:hover,
+    .e-kanban .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low,
+    .e-kanban.e-rtl .e-kanban-content .e-content-row .e-content-cells .e-card-wrapper .e-card.Low {
+        border-left: 3px solid #ffd600;   // Here, you can change the color
+    }
+    
+</style>
