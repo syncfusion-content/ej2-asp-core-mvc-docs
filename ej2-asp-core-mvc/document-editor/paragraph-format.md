@@ -46,6 +46,10 @@ You can decrease the left indent of selected paragraphs by a factor of 36 points
 documenteditor.editor.decreaseIndent()
 ```
 
+>Note: <br/> * The document editor utilizes points as the standard unit for measuring paragraph spacing and indentation, allowing you to define these measurements in points.<br/> * However,  changing the measurement unit within the document editor is not supported.
+
+
+
 ## Text alignment
 
 You can get or set the text alignment of selected paragraphs using the following sample code.
