@@ -179,6 +179,8 @@ public object Download([FromBody] FileManagerDirectoryContent args)
 
 ```
 
+> **Note:** When setting **args.useFormPost = false**, ensure that the server-side download method uses the MIME type **"application/octet-stream"** in a case-sensitive manner, matching the expected format exactly.
+
 ## 4. For GetImage Operation
 
 For the **GetImage** operation, use the **beforeImageLoad** event to pass custom value. Since the **GetImage** operation doesn't support custom headers in HTTP requests, pass the custom values along with **imageUrl** using query parameters instead.

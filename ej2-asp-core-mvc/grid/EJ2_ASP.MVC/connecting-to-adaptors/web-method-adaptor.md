@@ -296,7 +296,7 @@ Run the project in Visual Studio, and the Syncfusion ASP.NET MVC Grid will succe
     }
     ```
 
-## Handling Searching Operation
+## Handling searching operation
 
 To enable search functionality, ensure that your API endpoint supports custom searching criteria. Implement the searching logic on the server-side using the `PerformSearching` method from the `QueryableOperation` class. This allows the custom data source to undergo searching based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -346,7 +346,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Filtering Operation
+## Handling filtering operation
 
 To handle filtering operation, configure your API endpoint to support filter criteria. Implement the filtering logic on the server-side using the `PerformFiltering` method from the `QueryableOperation` class. This allows the custom data source to undergo filtering based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -407,7 +407,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Sorting Operation
+## Handling sorting operation
 
 To handle sorting operation, configure your API to support custom sorting criteria. Implement the sorting logic on the server-side using the `PerformSorting` method from the `QueryableOperation` class. This allows the custom data source to undergo sorting based on the criteria specified in the incoming `DataManagerRequest` object.
 
@@ -463,7 +463,7 @@ public class DataManager
 {% endhighlight %}
 {% endtabs %}
 
-## Handling Paging Operation
+## Handling paging operation
 
 To handle paging operation, configure your API endpoint to support custom paging criteria. Implement the paging logic on the server-side using the `PerformTake` and `PerformSkip` method from the `QueryableOperation` class. This allows the custom data source to undergo paging based on the custom paging criteria specified in the incoming `DataManagerRequest` object.
 
@@ -738,3 +738,5 @@ public object BatchUpdate(CRUDModel<OrdersDetails> batchOperation)
 }
 ```
 ![WebMethodAdaptor Batch Editing](../images/adaptors/url-adaptor-batch-editing.gif)
+
+> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp-net-mvc-data-grid/tree/master/WebMethodAdaptor).
