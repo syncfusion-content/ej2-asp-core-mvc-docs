@@ -8,4 +8,4 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); 
-})).MaxNodeLimitInMemberEditor(500).ShowGroupingBar(true).Render()
+})).MaxNodeLimitInMemberEditor(500).ShowGroupingBar(true).ShowFieldList(true).Render()
