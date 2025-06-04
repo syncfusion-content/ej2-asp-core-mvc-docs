@@ -84,10 +84,10 @@ The following sample demonstrates how to enable or disable the sticky header in 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/scrolling/scrolling-sticky-header/tagHelper %}
+{% include code-snippet/tree-grid/scrolling/scrolling-sticky-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="sticky-header.cs" %}
-{% include code-snippet/grid/scrolling/scrolling-sticky-header/sticky-header.cs%}
+{% include code-snippet/tree-grid/scrolling/scrolling-sticky-header/sticky-header.cs%}
 {% endhighlight %}
 {% endtabs %}
 
