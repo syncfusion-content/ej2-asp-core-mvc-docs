@@ -75,7 +75,24 @@ Specify the [`width`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/S
 {% endtabs %}
 {% endif %}
 
+## Sticky header
 
+The Syncfusion ASP.NET MVC TreeGrid provides a useful feature to keep the column headers fixed (sticky) while scrolling through large datasets. This ensures that the headers remain visible at all times, enhancing user experience by making it easier to understand the context of the data displayed, especially when dealing with wide or long hierarchical data.
+
+For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, allowing users to easily keep track of the data context.
+
+To enable sticky headers in the TreeGrid, you can simply set the `EnableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
+
+The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) and its [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_Change) event:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/scrolling/scrolling-sticky-header/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="sticky-header.cs" %}
+{% include code-snippet/tree-grid/scrolling/scrolling-sticky-header/sticky-header.cs%}
+{% endhighlight %}
+{% endtabs %}
 
 ## Scroll to selected row
 
