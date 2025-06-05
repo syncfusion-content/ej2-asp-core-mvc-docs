@@ -95,7 +95,7 @@ The following sample demonstrates how to enable or disable the sticky header in 
 
 ## Scroll to selected row
 
-You can scroll the treegrid content to the selected row position by using the [`RowSelected`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowSelected.html) event.
+You can scroll the treegrid content to the selected row position by using the [`RowSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowSelected) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
