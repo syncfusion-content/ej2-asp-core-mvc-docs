@@ -78,7 +78,7 @@ Setting the [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 The Syncfusion ASP.NET MVC TreeGrid provides a useful feature to keep the column headers fixed (sticky) while scrolling through large datasets. This ensures that the headers remain visible at all times, enhancing user experience by making it easier to understand the context of the data displayed, especially when dealing with wide or long hierarchical data.
 
-For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks, each with properties like Task ID, Start Date, Duration, and Status. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember which column represents which data. By enabling sticky headers, the column titles remain visible even while scrolling, so users can always keep track of the data context.
+For example, in a project management application, users often need to scroll through a detailed list of tasks and subtasks. When the dataset is large, scrolling down can cause confusion if the column headers scroll out of view, making it difficult to remember what each column represents. By enabling sticky headers, the column headers remain visible even while scrolling, allowing users to easily keep track of the data context.
 
 To enable sticky headers in the TreeGrid, you can simply set the `EnableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
 
