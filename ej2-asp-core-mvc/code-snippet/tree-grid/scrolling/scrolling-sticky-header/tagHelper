@@ -1,22 +1,24 @@
+
 <div style="height: 400px; overflow-y: auto; padding: 0px 10px 0px 10px; border: 1px solid #ddd;">
-<div style="padding: 20px 0px 20px 0px; display: flex">
-  <label style="margin: -2px 5px 0px 0px;font-weight: bold;">Enable/Disable Sticky Header</label>
-  <ejs-switch id="switch" change="toggleStickyHeader"></ejs-switch>
+    <div style="padding: 20px 0px 20px 0px; display: flex">
+      <label style="margin: -2px 5px 0px 0px; font-weight: bold;">Enable/Disable Sticky Header</label>
+      <ejs-switch id="switch" checked="true" change="toggleStickyHeader"></ejs-switch>
+    </div>
+    <div style='height: 1000px'>
+      <ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" childMapping="Children" treeColumnIndex="1" enableStickyHeader="true" height="100%">
+        <e-treegrid-columns>
+          <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+          <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
+          <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
+          <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
+        </e-treegrid-columns>
+      </ejs-treegrid>
+    </div>
 </div>
-  <div style='height: 1000px'>
-    <ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" childMapping="Children" treeColumnIndex="1">
-      <e-treegrid-columns>
-        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
-        <e-treegrid-column field="TaskName" headerText="Task Name" width="180"></e-treegrid-column>
-        <e-treegrid-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" type="date" width="120"></e-treegrid-column>
-        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="110"></e-treegrid-column>
-      </e-treegrid-columns>
-    </ejs-treegrid>
-  </div>
-</div>
+
 <script>
   function toggleStickyHeader(args) {
     var treeGrid = document.getElementById("TreeGrid").ej2_instances[0];
-    treeGrid.enableStickyHeader = args.checked;
+    treeGrid.enableStickyHeader = args.checked ?? false;
   }
 </script>
