@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# ASP.NET Core File Manager localization
 
 The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 
