@@ -1,0 +1,19 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" queryTaskbarInfo="queryTaskbarInfo" queryCellInfo="queryCellInfo">
+   <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId">
+   </e-gantt-taskfields>
+</ejs-gantt>
+
+<script>
+    function queryTaskbarInfo(args) {
+        if(args.data.TaskId >= 7 && args.data.TaskId <= 10)
+        {
+            args.taskbarElement.style.visibility = "hidden";
+        }
+    }
+    function queryCellInfo(args) {
+        if(args.column.field == "Info" && (args.data.Info === null || args.data.Info.trim() === ''))
+        {
+            args.cell.children[0].style.visibility = "hidden";
+        }
+    }
+</script>

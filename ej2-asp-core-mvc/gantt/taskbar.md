@@ -137,6 +137,37 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 ![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
 
+### Taskbar and Notes Icon Visibility
+
+By default, taskbars and notes icons are displayed for all tasks in the Gantt chart. However, there may be scenarios where certain taskbars or notes icons need to be hidden dynamically based on specific conditions.
+
+This customization can be accomplished using the  [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryTaskbarInfo) and [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_QueryCellInfo) events. These events allow fine-grained control over the rendering of taskbars, notes icons, and their corresponding rows, enabling conditional visibility as needed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/taskbar-hide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/taskbar-hide/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/taskbar-hide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/taskbar-hide/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Change Gripper Icon in Taskbar](images/taskbar-hide.png)
+
 ## Multi Taskbar support in project view
 
 The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.
