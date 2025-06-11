@@ -1,0 +1,43 @@
+@Html.EJS().DocumentEditorContainer("container").Created("onCreated").SelectionChange("onSelectionChanged").EnableToolbar(true).Render()
+
+<script>
+    var documenteditor;
+    var container;
+
+    function onCreated() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      var sfdt = '{"sfdt":"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"}';
+      documenteditor.open(sfdt);
+    }
+    
+    function restrictContent() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      var number = 1;
+      var bookmarkName = 'Placeholder_' + number++;
+      if (
+          documenteditor.getBookmarks().indexOf(bookmarkName) != -1
+      ) {
+          bookmarkName = 'Placeholder_' + number++;
+      }
+      documenteditor.editor.insertBookmark(bookmarkName);
+    }
+
+    function onSelectionChanged() {
+      var documenteditorElement = document.getElementById("container");
+      container = documenteditorElement.ej2_instances[0];
+      documenteditor = container.documentEditor;
+      if (
+        documenteditor.selection.getBookmarks()[0] && documenteditor.selection.getBookmarks()[0].indexOf('Placeholder_') != -1
+      ) {
+        // Change the document to read only mode
+          container.restrictEditing = true;
+      } else {
+        // Change the document to editable mode
+        container.restrictEditing = false;
+      }
+    }
+</script>
