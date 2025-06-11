@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restrict Particular Content in ##Platform_Name## Document Editor Component
+title: Restrict Particular Content in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn how to Restrict Particular Content from the Syncfusion ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Restrict Particular Content
@@ -31,7 +31,8 @@ The following example code illustrates how to restrict particular content during
 {% include code-snippet/document-editor-container/restrict-content/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Restrict-content.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -40,5 +41,6 @@ The following example code illustrates how to restrict particular content during
 {% include code-snippet/document-editor-container/restrict-content/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Restrict-content.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
