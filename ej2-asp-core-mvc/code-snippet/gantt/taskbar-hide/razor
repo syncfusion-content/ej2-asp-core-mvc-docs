@@ -1,0 +1,20 @@
+@model List<GanttSample.Controllers.GanttDataSource>
+
+@Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)ViewBag.DataSource).QueryTaskbarInfo("queryTaskbarInfo").QueryCellInfo("queryCellInfo").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").ParentID("ParentId")).EditSettings(es =>
+       es.AllowTaskbarEditing(true)).Render()
+
+<script>
+    function queryTaskbarInfo(args) {
+        if(args.data.TaskId >= 7 && args.data.TaskId <= 10)
+        {
+            args.taskbarElement.style.visibility = "hidden";
+        }
+    }
+    function queryCellInfo(args) {
+        if(args.column.field == "Info" && (args.data.Info === null || args.data.Info.trim() === ''))
+        {
+            args.cell.children[0].style.visibility = "hidden";
+        }
+    }
+</script>
