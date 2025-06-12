@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Step Area Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Range Step Area Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Range Step Area Chart in ##Platform_Name## Charts
+description: Learn here all about Range Step Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range Step Area Chart
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Range step area in ##Platform_Name## Charts component
+# Range Step Area Chart in ##Platform_Name## Charts
 
-## Range step area
+## Range Step Area
 
 To render a range step area series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
 

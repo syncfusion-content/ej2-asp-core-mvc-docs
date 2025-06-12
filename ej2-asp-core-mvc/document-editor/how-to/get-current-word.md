@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select and retrieve current word and Paragraph in ##Platform_Name## Document Editor Component
+title: Get current Word/Para in ##Platform_Name## Document editor control | Syncfusion
 description: Learn how to select and retrieve current word and Paragraph from the Syncfusion ##Platform_Name## Document Editor Component
 platform: ej2-asp-core-mvc
 control: Get The Current Word And Paragrapgh
@@ -25,7 +25,8 @@ The following example code illustrates how to select and get the current word as
 {% include code-snippet/document-editor-container/get-word/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -34,11 +35,10 @@ The following example code illustrates how to select and get the current word as
 {% include code-snippet/document-editor-container/get-word/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-word.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
-
-To get the bookmark content as SFDT (rich text), check this [`link`](../../document-editor/how-to/get-the-selected-content/#get-the-selected-content-as-sfdt-rich-text)
 
 ## Select and get the paragraph in current cursor position
 
@@ -53,7 +53,8 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -62,5 +63,6 @@ The following example code illustrates how to select and get the current paragra
 {% include code-snippet/document-editor-container/get-paragraph/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Get-paragraph.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}

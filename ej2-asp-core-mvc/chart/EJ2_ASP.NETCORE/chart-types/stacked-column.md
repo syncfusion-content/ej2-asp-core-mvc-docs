@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Stacked Column Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Stacked Column Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Column Chart in ##Platform_Name## Charts
+description: Learn here all about Stacked Column Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Stacked column chart
+control: Stacked Column Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Stacked column in ##Platform_Name## Charts Component
+# Stacked Column Chart in ##Platform_Name## Charts
 
-## Stacked column
+## Stacked Column
 
 To render a [stacked column](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-types/stacked-column-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
 
@@ -316,62 +316,6 @@ Use the `border` property to customize the width and color of the border for emp
 {% endtabs %}
 {% endif %}
 
-## Events
-
-### Series render
-
-The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-column/series-render/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Series-render.cs" %}
-{% include code-snippet/chart/series/stacked-column/series-render/series-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-column/series-render/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Series-render.cs" %}
-{% include code-snippet/chart/series/stacked-column/series-render/series-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Point render
-
-The `pointRender` event allows you to customize each data point before it is rendered on the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-column/point-render/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Point-render.cs" %}
-{% include code-snippet/chart/series/stacked-column/point-render/point-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/series/stacked-column/point-render/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Point-render.cs" %}
-{% include code-snippet/chart/series/stacked-column/point-render/point-render.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Stack labels
@@ -494,6 +438,64 @@ We can customize the corner radius for individual points in the chart series usi
 {% endhighlight %}
 {% highlight c# tabtitle="Point-corner-radius.cs" %}
 {% include code-snippet/chart/series/stacked-column/point-corner-radius/point-corner-radius.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Events
+
+### Series render
+
+The `seriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/series-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/stacked-column/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/series-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Series-render.cs" %}
+{% include code-snippet/chart/series/stacked-column/series-render/series-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Point render
+
+The `pointRender` event allows you to customize each data point before it is rendered on the chart.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/point-render/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/stacked-column/point-render/point-render.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/series/stacked-column/point-render/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Point-render.cs" %}
+{% include code-snippet/chart/series/stacked-column/point-render/point-render.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

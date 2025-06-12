@@ -1,0 +1,8 @@
+@Html.EJS().RichTextEditor("pasteCleanup").AfterPasteCleanup("afterPasteCleanup").Value(ViewBag.value).Render()
+
+<script>
+    function afterPasteCleanup(args){
+        // Here you can get the pasted Html string using args.value
+        console.log(args.value);
+    }
+</script>

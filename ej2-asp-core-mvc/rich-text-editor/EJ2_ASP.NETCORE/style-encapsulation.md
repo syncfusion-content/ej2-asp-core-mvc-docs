@@ -56,3 +56,7 @@ Below is a sample implementation of both **encapsulated** and **non-encapsulated
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## See also
+
+* [Iframe Editor](./iframe)

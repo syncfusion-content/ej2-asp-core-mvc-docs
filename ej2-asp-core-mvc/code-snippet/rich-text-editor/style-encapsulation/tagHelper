@@ -8,7 +8,7 @@
 
     <div class="editor">
         <h6 class="header">Without style encapsulation</h6>
-        <ejs-richtexteditor id="defaultRTE" value="@ViewBag.value"></ejs-richtexteditor>
+        <ejs-richtexteditor id="editor" value="@ViewBag.value"></ejs-richtexteditor>
     </div>
 </div>
 

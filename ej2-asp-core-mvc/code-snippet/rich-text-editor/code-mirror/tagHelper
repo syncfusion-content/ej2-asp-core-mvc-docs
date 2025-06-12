@@ -1,5 +1,5 @@
 <div class="control-section">
-    <ejs-richtexteditor id="defaultRTE" value="@ViewBag.value" actionComplete="actionCompleteHandler" created="created">
+    <ejs-richtexteditor id="editor" value="@ViewBag.value" actionComplete="actionCompleteHandler" created="created">
         <e-richtexteditor-toolbarsettings items="@ViewBag.tools">
         </e-richtexteditor-toolbarsettings>
     </ejs-richtexteditor>

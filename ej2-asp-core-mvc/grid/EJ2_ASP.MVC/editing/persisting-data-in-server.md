@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Persisting Data in Server in Syncfusion ##Platform_Name## Grid Component
+title: Persisting Data in Server in ##Platform_Name## Grid Control | Syncfusion
 description: Learn here all about Persisting Data in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Persisting Data in Server
@@ -8,256 +8,40 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Persisting data in server in ASP.NET MVC Grid
 
-# Persisting Data in Server
+The Syncfusion ASP.NET MVC Grid allows data edited within the Grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, and Delete) operations within the Grid are handled by the `DataManager`, which can bind server-side data and send updates to the server. This capability is essential for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 
-Edited data can be persisted in the database using the RESTful web services.
+> For your information, the `ODataAdaptor` persists data in the server as per OData protocol.
 
-All the CRUD operations in the grid are done through **DataManager**. The **DataManager** has an option to bind all the CRUD related data in server-side.
+Syncfusion provides multiple adaptors to handle different server protocols and APIs, enabling smooth integration with RESTful services. Below are the various adaptors you can use to persist data in the Syncfusion ASP.NET MVC Grid.
 
-N> For your information, the ODataAdaptor persists data in the server as per OData protocol.
+**Using URL adaptor**
 
-In the below section, we have explained how to get the edited data details on the server-side using the **UrlAdaptor**.
+The `UrlAdaptor` is the base adaptor that facilitates communication between remote data services and the UI component. It allows seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful when a custom API service has unique logic for handling data and CRUD operations. 
 
-## Using URL adaptor
+For further details on configuration, refer to the [URL adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/url-adaptor).
 
-You can use the **UrlAdaptor** of **DataManager** when binding data source from remote data. In the initial load of grid, data are fetched from remote data and bound to the grid using **url** property of **DataManager**. You can map The CRUD operation in grid can be mapped to server-side Controller actions using the properties **InsertUrl**, **RemoveUrl**, **UpdateUrl**, **CrudUrl** and **BatchUrl**.
+**Using OData v4 adaptor**
 
-The following code example describes the above behavior.
+The `ODataV4Adaptor` in the Syncfusion ASP.NET MVC Grid facilitates seamless integration with OData V4 services, allowing for efficient data fetching and manipulation. You can perform CRUD operations using the `ODataV4Adaptor` in your Grid.
 
-{% if page.publishingplatform == "aspnet-core" %}
+For further details on configuration, refer to the [OData v4 adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/odatav4-adaptor).
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrladaptorMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/urladaptorMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
+**Using Web API adaptor**
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The `WebApiAdaptor` extends the capabilities of the `ODataAdaptor` and is designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between the Syncfusion Grid and OData-based Web APIs, enabling efficient data retrieval and manipulation. 
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrladaptorMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/urladaptorMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+For further details on configuration, refer to the [Web API Adaptor documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-api-adaptor).
 
+**Using Remote Save adaptor**
 
+The `RemoteSaveAdaptor` in the Syncfusion ASP.NET MVC Grid allows you to perform Grid actions such as sorting, filtering, searching, and paging primarily on the client side, while handling CRUD operations (updating, inserting, and removing data) on the server side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 
-Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
+For further details on configuration, refer to the[Remote Save Adaptor Documentation]( https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/remote-save-adaptor).
 
-The following code example describes the above behavior.
+**WebMethodAdaptor**
 
-{% if page.publishingplatform == "aspnet-core" %}
+The `WebMethodAdaptor` facilitates data binding from remote services using web methods. This adaptor sends query parameters encapsulated within an object named value, allowing efficient communication between the client-side application and the server.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrladaptorMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/urladaptorMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrladaptorMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/urladaptorMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-### Insert record
-
-Using the **InsertUrl** property, you can specify the controller action mapping URL to perform insert operation on the server-side.
-
-The following code example describes the above behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="InsertMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/insertMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InsertMVC.cs" %}
-{% include code-snippet/grid/edit/urladaptor/insertMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-The newly added record details are bound to the **Object** parameter. Refer to the following screenshot.
-
-![insert](../images/insertURL.jpg)
-
-### Update record
-
-Using the **UpdateUrl** property, the controller action mapping URL can be specified to perform save/update operation on the server-side.
-
-The following code example describes the previous behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Update.cs" %}
-{% include code-snippet/grid/edit/urladaptor/update.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Update.cs" %}
-{% include code-snippet/grid/edit/urladaptor/update.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-The updated record details are bound to the **Object** parameter. Refer to the following screenshot.
-
-![update](../images/updateURL.jpg)
-
-### Delete record
-
-Using the **RemoveUrl** property, the controller action mapping URL can be specified to perform delete operation on the server-side.
-
-The following code example describes the previous behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Delete.cs" %}
-{% include code-snippet/grid/edit/urladaptor/delete.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/urladaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Delete.cs" %}
-{% include code-snippet/grid/edit/urladaptor/delete.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
-
-![delete](../images/deleteURL.jpg)
-
-### CRUD URL
-
-Using the **CrudUrl** property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
-
-The action parameter of **CrudUrl** is used to get the corresponding CRUD action.
-
-The following code example describes the above behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/crudurl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Crudurl.cs" %}
-{% include code-snippet/grid/edit/crudurl/crudurl.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/crudurl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Crudurl.cs" %}
-{% include code-snippet/grid/edit/crudurl/crudurl.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-Refer to the following screenshot to know about the action parameter.
-
-![crudupdate](../images/crudURL.jpg)
-
-N> If you specify **InsertUrl** along with **CrudUrl**, then while adding **InsertUrl** only will be invoked.
-
-### Batch URL
-
-The **BatchUrl** property supports only for batch editing mode. You can specify the controller action mapping URL to perform batch operation on the server-side.
-
-The following code example describes the above behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/batchurl/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Batch.cs" %}
-{% include code-snippet/grid/edit/batchurl/batch.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/batchurl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Batch.cs" %}
-{% include code-snippet/grid/edit/batchurl/batch.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-```typescript
-public ActionResult BatchUpdate([FromBody]string action, List<EditableOrder> added, List<EditableOrder> changed, List<EditableOrder> deleted, int? key)
-{
-//Save the batch changes in database
-}
-```
-
-![batch](../images/batchURL.jpg)
+For further details on configuration, refer to the [Web API Adaptor documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/web-method-adaptor).

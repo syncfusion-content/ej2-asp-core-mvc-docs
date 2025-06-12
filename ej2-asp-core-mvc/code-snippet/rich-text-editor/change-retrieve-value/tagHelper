@@ -1,0 +1,7 @@
+<ejs-richtexteditor id="editor" value="@ViewBag.value" change="onChange"></ejs-richtexteditor>
+
+<script>
+    function onChange(args){
+        console.log('Rich Text Editor value is:' + args.value);
+    }
+</script>

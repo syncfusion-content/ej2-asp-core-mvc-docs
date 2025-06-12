@@ -141,8 +141,9 @@ public async Task<IActionResult> Save(IFormFile UploadFiles)
     return Ok();
 }
 ```
+## Saving and returning responses
 
-### Server-side configuration for saving and returning responses
+### Server-side configuration 
 
 The following example demonstrates the server-side action for saving files on the server and returning responses in JSON, String, and File formats.
 
@@ -209,7 +210,7 @@ public IActionResult Save()
 
 ```
 
-### Client-side configuration for saving and returning responses
+### Client-side configuration 
 
 The following example demonstrates the client-side action for saving files on the server and returning responses in JSON, String, and File formats.
 

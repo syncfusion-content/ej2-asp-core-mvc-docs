@@ -1,1 +1,1 @@
-@Html.EJS().RichTextEditor("defaultRTE").InsertImageSettings(obj => obj.SaveUrl("/Home/SaveImage").Path("../Uploads/")).Render()
+@Html.EJS().RichTextEditor("editor").InsertImageSettings(obj => obj.SaveUrl("/Home/SaveImage").Path("../Uploads/")).Render()

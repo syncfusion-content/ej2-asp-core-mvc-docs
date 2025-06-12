@@ -524,8 +524,7 @@ The sample below demonstrates the Rich Text Editor control rendered in German ("
 {% endtabs %}
 {% endif %}
 
-
-## Enable Right-to-Left (RTL) Mode
+## Enable Right-to-Left (RTL) mode
 
 The [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EnableRtl_System_Boolean_) property specifies the direction of the Rich Text Editor component. This property can be enabled for writing systems that require right-to-left direction, such as Arabic and Hebrew.
 

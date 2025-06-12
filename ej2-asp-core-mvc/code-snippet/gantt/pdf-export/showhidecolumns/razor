@@ -1,6 +1,6 @@
 @(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>
     )ViewBag.DataSource).AllowPdfExport(true).TaskFields(ts => ts.Id(
-    "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Columns(col =>
+    "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").ParentID("ParentId")).Columns(col =>
     {
         col.Field("TaskId").Width(100).HeaderText("Task Id").Add();
         col.Field("TaskName").HeaderText("Task Name").Width(150).Add();

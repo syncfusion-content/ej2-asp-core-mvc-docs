@@ -25,21 +25,25 @@
     var selectedTimezone = -12;
     var checkbox;
     var grid;
+
     function load() {
         checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
         grid = document.getElementById("Grid")?.ej2_instances?.[0];
         ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
     }
+
     function onTimezoneChange(event) {
         selectedTimezone = Number(event.value);
         updateTimezoneOffset();
     }
+
     function onCheckboxChange() {
         if (!checkbox) {
             checkbox = document.getElementById("timezoneCheckbox")?.ej2_instances?.[0];
         }
         updateTimezoneOffset();
     }
+
     function updateTimezoneOffset() {
         ej.data.DataUtil.serverTimezoneOffset = checkbox.checked ? 0 : selectedTimezone;
         grid.setProperties({

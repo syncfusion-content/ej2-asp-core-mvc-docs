@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hilo Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Hilo Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: High Low Chart in ##Platform_Name## Charts
+description: Learn here all about High Low Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Hilo Chart
+control: High Low Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Hilo in ASP.NET Core Charts Component
+# High Low Chart in ASP.NET Core Charts
 
 To get started with the ASP.NET Core Hilo charts, you can check on this video:
 

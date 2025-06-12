@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="defaultRTE">
+<ejs-richtexteditor id="editor">
     <e-content-template>
         <div>
             <p>The Rich Text Editor is WYSIWYG ('what you see is what you get') editor useful to create and edit content, and return the valid <a href='https://ej2.syncfusion.com/aspnetcore/RichTextEditor/Overview'>HTML markup</a> or <a href='https://ej2.syncfusion.com/aspnetcore/RichTextEditor/DefaultMode'>markdown</a> of the content</p>
@@ -43,7 +43,7 @@
 
 <script>
     document.getElementById('getRTEvalue').addEventListener('click', function () {
-        var obj = document.getElementById('defaultRTE').ej2_instances[0];
+        var obj = document.getElementById('editor').ej2_instances[0];
         alert(obj.value);
     });
 </script>

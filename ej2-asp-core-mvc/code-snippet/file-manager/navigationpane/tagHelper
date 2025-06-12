@@ -7,7 +7,7 @@
                                         uploadUrl="/Home/Upload"
                                         getImageUrl="/Home/GetImage">
             </e-filemanager-ajaxsettings>
-            <e-filemanager-navigationpanesettings maxWidth="850px" minWidth="140px">
+            <e-filemanager-navigationpanesettings maxWidth="850px" minWidth="140px" sortOrder="Ascending" visible="true">
             </e-filemanager-navigationpanesettings>
         </ejs-filemanager>
         <!-- end of File Manager control -->

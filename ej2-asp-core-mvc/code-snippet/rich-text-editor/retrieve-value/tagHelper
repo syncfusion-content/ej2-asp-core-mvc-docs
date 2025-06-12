@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="defaultRTE" value="@ViewBag.value" >
+<ejs-richtexteditor id="editor" value="@ViewBag.value" >
 </ejs-richtexteditor>
 
 <button id="getValueBtn" type="button" onclick="getEditorValue()" style="margin-top: 10px;">Get Editor Value</button>
