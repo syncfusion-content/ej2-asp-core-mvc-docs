@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# ASP.NET Core Dialog localization
 
 Localization library allows to localize the default text content of Dialog. In Dialog, the close button's tooltip text alone will be localized based on the culture.
 
