@@ -137,6 +137,37 @@ You can change the gripper icon in the taskbar by applying styles to their respe
 
 ![Change Gripper Icon in Taskbar](images/change-gripper-icon.png)
 
+### Dynamically Showing or Hiding Taskbars
+
+In a Gantt chart, taskbars are typically displayed by default to represent task information. However, in some scenarios, it may be necessary to dynamically show or hide specific taskbars based on custom conditions.
+
+During the initial render, taskbar visibility can be controlled using the [`queryTaskbarInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_PdfQueryTaskbarInfo) event. Within this event, you can apply custom CSS classes to hide certain taskbars—for example, hiding only parent taskbars based on specific logic.
+
+After the Gantt chart has been rendered, taskbar visibility can also be updated dynamically. For example, you can use a toggle button to show or hide taskbars by updating the Gantt chart instance and modifying the relevant taskbar elements.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/taskbar-show-hide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/taskbar-show-hide/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/taskbar-show-hide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="data.cs" %}
+{% include code-snippet/gantt/taskbar-show-hide/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Multi Taskbar support in project view
 
 The Gantt component, supports rendering multi-taskbars in the project view. With this feature the parent taskbar, when it is collapsed, visually summarize the progress of all its child taskbars.

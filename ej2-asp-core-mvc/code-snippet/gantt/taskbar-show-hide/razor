@@ -1,0 +1,41 @@
+@model List<GanttSample.Controllers.GanttDataSource>
+
+<div class="switch-container">
+    <label for="switch" class="switch">Show/Hide Taskbar</label>
+    @Html.EJS().Switch("switch").Checked(false).Change("change").Render()
+</div>
+@(Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).TaskFields(ts => ts.Id(
+            "TaskId").Name("TaskName").StartDate("TaskStart").Duration("Duration").Progress("Progress").ParentID("ParentId")).QueryTaskbarInfo("queryTaskbarInfo").Render())
+
+<script>
+    function change(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        ganttObj.element.querySelectorAll('.e-gantt-parent-taskbar-inner-div').forEach((el) => {
+            if (args.checked) {
+                el.classList.remove('hidden-taskbar');
+            } else {
+                el.classList.add('hidden-taskbar');
+            }
+        });
+    }
+    function queryTaskbarInfo(args) {
+        if (args.data.hasChildRecords) {
+            args.taskbarElement.children[1].classList.add('hidden-taskbar');
+        }
+    }
+</script>
+<style>
+    .switch-container {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .switch {
+        margin-left: 10px;
+    }
+
+    .e-gantt .hidden-taskbar {
+        visibility: hidden !important;
+    }
+</style>
