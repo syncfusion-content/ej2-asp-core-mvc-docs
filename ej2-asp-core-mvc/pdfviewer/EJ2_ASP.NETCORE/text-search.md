@@ -40,6 +40,8 @@ The Text Search option in PDF Viewer is used to find and highlight the text cont
 
 ![Alt text](./images/search.png)
 
+## Test search Features
+
 ### Real time search suggestion while typing
 Entering text into the search input dynamically displays search suggestions based on the provided input. The suggestions are updated in real-time as text is typed, offering relevant matches from the available content. This feature enhances the search experience by allowing quick access to potential results while typing.
 
