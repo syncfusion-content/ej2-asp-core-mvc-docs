@@ -60,3 +60,33 @@ You can change the size of the node resize thumb and the connector end point han
 * Pivot thumb (thumb at the middle of the node) appears while rotating the node to represent the static point.
 
 ![Rotate](../images/rotate.gif)
+
+## Restrict objects dragging at negative axis
+
+The diagram allows you to restrict diagram elements from dragging behind the negative axis. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and palette symbols can be restricted from dragging when drag enters into negative zone.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/node/restrictNegativeAxis/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Sample.cs" %}
+{% include code-snippet/diagram/node/restrictNegativeAxis/sample.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Sample.cs" %}
+{% include code-snippet/diagram/node/restrictNegativeAxis/sample.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![negativeAxisRestrict](../images/negativeAxisRestrict.gif)
+
+N> If an object is placed in negative region and `RestrictNegativeAxisDragDrop` option is enabled, then element can be dragged from the negative to the positive region. Once, an object is dragged into positive region, then element cannot be dragged into negative region.
+
+While symbol is dragging from the stencil control, it will be added into diagram page once entire symbol is placed in the positive region.
