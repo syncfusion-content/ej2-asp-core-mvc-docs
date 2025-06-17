@@ -13,7 +13,7 @@
 .Filters(filters =>
 {
     filters.Name("Product_Categories").Caption("Product Categories").Add();
-})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).DataBound("ondataBound").Render()
+})).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).Render()
 <style>
     #pivotview {
         width: 100%;
@@ -40,29 +40,61 @@
 
 </style>
 <script>
-    function ondataBound(args) {
-        var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
-        var dataSource = JSON.parse(pivotTableObj.getPersistData()).dataSourceSettings.dataSource;
-        var a = document.getElementById('save');
-        var mime_type = 'application/octet-stream'; // text/html, image/png, et c
-        a.setAttribute('download', 'pivot.JSON');
-        a.href = 'data:'+ mime_type +';base64,'+ btoa(JSON.stringify(dataSource) || '');
-        document.getElementById('files').addEventListener('change', readBlob, false);
-    }
-
-    function readBlob(args) {
-        var files = document.getElementById('load').files;
-        var file = files[0];
-        var start = 0;
-        var stop = file.size - 1;
+    // Step 1: Initiate the file uploader
+    var uploadObj = new ej.inputs.Uploader({});
+    uploadObj.appendTo('#fileupload');
+    var input = document.querySelector('input[type="file"]');
+    // Step 2: Add the event listener which fires when the *.CSV file is uploaded.
+    input.addEventListener('change', function (e) {
+        // Step 3: Initiate the file reader
         var reader = new FileReader();
-        reader.onloadend = function(evt) {
-            if (evt.target.readyState == FileReader.DONE) {
-                var pivotTableObj = document.getElementById('pivotview').ej2_instances[0];
-                pivotTableObj.dataSource = JSON.parse(evt.target.result);
+        reader.onload = function () {
+            var lines = [];
+            var jsonObject = reader.result.split(/\r?\n|\r/);
+            lines.push(jsonObject[0].split(',').map(function (e) { return e.replace(/ /g, '').replace(/^\"(.+)\"$/, "$1"); }));
+            for (var i = 1; i < jsonObject.length; i++) {
+                if (!ej.base.isNullOrUndefined(jsonObject[i]) && jsonObject[i] !== '') {
+                    lines.push(jsonObject[i].split(','));
+                }
             }
+            console.log(lines)
+            var pivotObj = document.getElementById('PivotView').ej2_instances[0];
+            pivotObj.dataSourceSettings.dataSource = lines;
         };
-        var blob = file.slice(start, stop + 1);
-        reader.readAsBinaryString(blob);
-    }
+        reader.readAsText(input.files[0]);
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+                var pivotGridObj = document.getElementById('PivotView').ej2_instances[0];
+                document.getElementById("save").addEventListener("click", function () {
+                    if (pivotGridObj) {
+                        const dataSource = JSON.parse(pivotGridObj.getPersistData()).dataSourceSettings;
+                        const a = document.createElement('a');
+                        const mime_type = 'application/octet-stream';
+                        a.setAttribute('download', 'pivot.JSON');
+                        a.href = 'data:' + mime_type + ';base64,' + btoa(JSON.stringify(dataSource) || '');
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    }
+                });
+
+                document.getElementById("files").addEventListener("change", function (event) {
+                    const input = event.target;
+                    const file = input.files?.[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onloadend = function (evt) {
+                            if (evt.target.readyState === FileReader.DONE) {
+                                const result = evt.target.result;
+                                if (pivotGridObj) {
+                                    pivotGridObj.dataSourceSettings = JSON.parse(result);
+                                }
+                            }
+                        };
+                        reader.readAsText(file);
+                    }
+                    input.value = ''; // Clear the input
+                });
+            });
 </script>
