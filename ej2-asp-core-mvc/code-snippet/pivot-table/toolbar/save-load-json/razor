@@ -57,7 +57,6 @@
                     lines.push(jsonObject[i].split(','));
                 }
             }
-            console.log(lines)
             var pivotObj = document.getElementById('PivotView').ej2_instances[0];
             pivotObj.dataSourceSettings.dataSource = lines;
         };
