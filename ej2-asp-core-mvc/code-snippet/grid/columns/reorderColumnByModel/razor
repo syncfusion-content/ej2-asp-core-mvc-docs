@@ -1,0 +1,31 @@
+<div style="padding:0px 0px 20px 0px">
+    @Html.EJS().Button("reorderColumn").CssClass("e-info").Content("Reorder Column").Render()
+    @Html.EJS().Button("reorderChildColumn").CssClass("e-info").Content("Reorder Stacked ChildColumn").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowReordering().Columns(col =>
+{
+col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+col.HeaderText("Order Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "150", HeaderText = "Order Date", Format="yMd"},
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "EmployeeID", Width = "130", HeaderText = "EmployeeID"} }).Add();
+col.HeaderText("Shipped Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipName", Width = "140"},
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "145",  HeaderText = "Ship Country", MinWidth="10", EditType="dropdownedit" } }).Add();
+}).Render()
+<style>
+    .e-btn.e-info, .e-css.e-btn.e-info {
+        margin-right: 4px;
+        margin-bottom: 3px;
+    }
+</style>
+<script type="text/javascript">
+    document.getElementById('reorderColumn').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.reorderColumnByModel(grid.columns[3], grid.columns[1]);
+    });
+    document.getElementById('reorderChildColumn').addEventListener('click', function () {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+         var shipInfo = grid.columns[4];
+         grid.reorderColumnByModel(shipInfo.columns[1], shipInfo.columns[0]);
+    });
+</script>
