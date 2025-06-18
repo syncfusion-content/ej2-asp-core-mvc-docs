@@ -299,7 +299,6 @@ By utilizing the `export` method with the appropriate file name and file type, y
 
 In the following example, the `export` method is used in the button click event.
 
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
