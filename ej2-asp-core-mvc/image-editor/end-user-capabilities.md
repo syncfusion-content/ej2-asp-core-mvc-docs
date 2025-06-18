@@ -18,7 +18,7 @@ To open an image in the image editor, do the following steps.
 
 * Click the Open icon from the left side of the toolbar.
 
-* The file explorer lists only JPEG, PNG, JPG, and WEBP format files.
+* The file explorer lists only JPEG, PNG, JPG, WEBP, and BMP format files.
 
 * Select the image from the list of the images from the file explorer window.
 
@@ -168,7 +168,7 @@ To save the modified image in the Image Editor, follow these steps:
     * Locate the Save button on the right side of the toolbar and click it.
 
 * Select the File Format
-    * In the export popup, choose your preferred file format (PNG, JPEG, SVG, or WEBP) to save the image with all 
+    * In the export popup, choose your preferred file format (PNG, JPEG, SVG, WEBP, or BMP) to save the image with all 
 applied modifications.
 
 * Adjust Image Quality (JPEG Format Only)

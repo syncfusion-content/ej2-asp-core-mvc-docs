@@ -221,6 +221,37 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-add-font-family.jpg)
 
+### Formatting Text with Bold, Italic, Underline, and Strikethrough
+
+The `drawText` method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information: bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/text-CS1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/text-CS1/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/image-editor/annotation/text-CS1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/image-editor/annotation/text-CS1/default.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+Output be like the below.
+
+![ImageEditor Sample](images/image-editor-text-format.jpg)
+
 ## Freehand drawing 
 
 The Freehand Draw annotation tool in the Image Editor control is a versatile feature that allows users to draw and sketch directly on the image using mouse or touch input. This tool provides a flexible and creative way to add freehand drawings or annotations to the image.
