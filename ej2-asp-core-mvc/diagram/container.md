@@ -84,7 +84,7 @@ You can interactively add or remove diagram elements from the Container in the r
 
 ## Interaction
 
-Container node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to container nodes. For more informatation refer to the [`nodes interactions`](./nodes)
+Container node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to container nodes. For more information refer to the [`nodes interactions`](./nodes)
 
 ## Events
 
