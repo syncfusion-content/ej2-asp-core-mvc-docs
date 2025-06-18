@@ -10,7 +10,7 @@ documentation: ug
 
 # UML Sequence Diagram Model in Diagram
 
-A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel). Assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control to enable this functionality.
+A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel). To enable this functionality, assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control.
 
 ## UML Sequence Diagram Elements
 
@@ -26,9 +26,9 @@ A sequence diagram contains several key elements, such as participants, messages
 |---|---|---|
 | id | string \| number | A unique identifier for the participant |
 | content | string | The display text for the participant |
-| isActor | boolean | Determines if the participant is displayed as an actor (true) or object (false) |
-| showDestructionMarker | boolean | Determines if a destruction marker (X) is shown at the end of the lifeline |
-| activationBoxes | UmlSequenceActivationBoxModel[] | Collection of activation boxes for this participant |
+| isActor | boolean | Specifies whether the participant is displayed as an actor (true) or an object (false) |
+| showDestructionMarker | boolean | Indicates whether a destruction marker (X) is shown at the end of the lifeline |
+| activationBoxes | UmlSequenceActivationBoxModel[] | A collection of activation boxes associated with the participant |
 
 The following code example illustrates how to create participants.
 
@@ -194,4 +194,4 @@ The following code example illustrates how to create fragments.
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
-The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagramModel_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.
+The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagramModel_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.

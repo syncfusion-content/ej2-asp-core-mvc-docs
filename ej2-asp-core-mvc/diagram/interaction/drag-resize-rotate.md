@@ -61,11 +61,18 @@ You can change the size of the node resize thumb and the connector end point han
 
 ![Rotate](../images/rotate.gif)
 
-## Restrict objects dragging at negative axis
+## Restrict Interaction in Negative Axis Area
 
-The diagram allows you to restrict diagram elements from dragging behind the negative axis. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and palette symbols can be restricted from dragging when drag enters into negative zone.
+The Diagram component includes a built-in option to restrict user interactions within the negative axis region—areas defined by negative X or Y coordinates. By enabling the `RestrictNegativeAxisDragDrop` constraint, the following interactions are prevented:
+
+* **Dragging**: Diagram elements cannot be dragged into areas with negative coordinates.
+* **Resizing**: The size of diagram objects cannot be adjusted to extend into the negative axis.
+* **Dropping Symbols**: Symbols from the palette cannot be dropped in the negative region.
 
 ```html
+<!-- 
+    Prevent diagram interactions in the negative region
+-->
 <ejs-diagram id="container" width="100%" height="500px" nodes="@ViewBag.nodes"
     constraints="RestrictNegativeAxisDragDrop,Default">
 </ejs-diagram>
@@ -73,6 +80,4 @@ The diagram allows you to restrict diagram elements from dragging behind the neg
 
 ![negativeAxisRestrict](../images/negativeAxisRestrict.gif)
 
-N> If an object is placed in negative region and `RestrictNegativeAxisDragDrop` option is enabled, then element can be dragged from the negative to the positive region. Once, an object is dragged into positive region, then element cannot be dragged into negative region.
-
-While symbol is dragging from the stencil control, it will be added into diagram page once entire symbol is placed in the positive region.
+N> A symbol dragged from the palette will only be added to the diagram if it’s fully positioned within the positive coordinate space.

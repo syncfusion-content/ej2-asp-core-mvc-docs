@@ -10,7 +10,7 @@ documentation: ug
 
 # Constraints in ##Platform_Name## Diagram Component
 
-Containers are collections of logically grouped shapes surrounded by a visible border, which the shapes can be dragged in and out of during runtime. Every change made to the Container has no effect on its children. Child elements can be edited individually.
+A Container is a group of logically related shapes surrounded by a visible boundary. Shapes can be added or removed from the container at runtime. Changes made to the container do not affect its child elements, which can be individually selected, moved, or edited.
 
 ## Create Container
 
@@ -42,7 +42,7 @@ The following code illustrates how to create a container node.
 
 ### Setting a Header
 
-You can textually describe a container by using its [Header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContainer.html#Syncfusion_EJ2_Diagrams_DiagramContainer_Header) property. Also, users can customize the header's appearance using the header's [Style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
+You can provide a textual description for a container using its [Header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContainer.html#Syncfusion_EJ2_Diagrams_DiagramContainer_Header) property. Also, users can customize the header's appearance using the header's [Style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
 
 The following code example explains how to define a container header and its customization:
 
@@ -72,19 +72,19 @@ N> You can edit the header by double-clicking the region of the container's head
 
 ### Container from symbol palette
 
-Container Nodes can be predefined and added to the symbol palette. You can drop those Containers into Diagram when required.
+Container nodes can be preconfigured and added to the symbol palette. Users can drag and drop these container nodes into the diagram as needed.
 
-To explore how to add Containers from symbol palette, refer to [symbol palette](./symbol-palette).
+To learn more, refer to the [Symbol Palette](./symbol-palette) documentation.
 
 ## Interactively add or remove diagram elements into Container
 
-You can interactively add or remove diagram elements from the Container in the runtime. Container will adjust its size when you drop diagram element into its edges.
+You can interactively add or remove diagram elements from the Container in the runtime. When a diagram element is dropped near the container's edge, the container automatically resizes to accommodate it.
 
 ![Container](images/container.gif)
 
 ## Interaction
 
-Container node interactions can be performed similarly to normal nodes. Fundamental diagram interactions like selecting, dragging, resizing, and rotating apply equally to container nodes. For more information refer to the [`nodes interactions`](./nodes)
+Containers support the same interactions as regular nodes—such as selection, dragging, resizing, and rotating. For more information refer to the [`nodes interactions`](./nodes)
 
 ## Events
 

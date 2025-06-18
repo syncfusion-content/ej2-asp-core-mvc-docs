@@ -274,11 +274,11 @@ var port= [{
 
 ## AutomaticPortCreation
 
-The diagram allows you to dynamically create a port by clicking and dragging the mouse over any node or connector while holding down the control key. This behavior is disabled by default and can be enabled by using `DiagramConstraints.AutomaticPortCreation`.
+The Diagram component allows you to dynamically create ports on nodes or connectors by clicking and dragging the mouse while holding the Control (Ctrl) key. This feature is disabled by default and can be enabled by using the `DiagramConstraints.AutomaticPortCreation` constraint.
 
-Additionally, you can remove a port using the same control-click method; however, this will only work if the port is not currently connected to any connectors.
+You can also remove a port using the same Ctrl + Click interaction, but only if the port is not currently connected to any connector.
 
-The following code explains how to enable automatic port creation.
+The following example shows how to enable automatic port creation:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
