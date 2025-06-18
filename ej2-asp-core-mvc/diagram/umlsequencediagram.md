@@ -10,7 +10,7 @@ documentation: ug
 
 # UML Sequence Diagram Model in Diagram
 
-A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel). Assign the `UmlSequenceDiagramModel` to the [model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control to enable this functionality.
+A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel). Assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control to enable this functionality.
 
 ## UML Sequence Diagram Elements
 
@@ -36,18 +36,18 @@ The following code example illustrates how to create participants.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -85,18 +85,18 @@ The following code example illustrates how to create messages:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -121,22 +121,21 @@ The following code example illustrates how to create activation boxes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
 ![activations](./images/umlSequenceDiagram-images/activations.png)
 
 ### Fragments
@@ -175,18 +174,18 @@ The following code example illustrates how to create fragments.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% highlight c# tabtitle="Model.cs" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -195,4 +194,4 @@ The following code example illustrates how to create fragments.
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
-The [spaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagramModel_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.
+The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagramModel_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal gap between participants. The default value is 100, but you can adjust it as needed.

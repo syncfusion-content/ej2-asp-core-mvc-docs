@@ -286,16 +286,16 @@ The following code explains how to enable automatic port creation.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/ports/automaticPort/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Sample.cs" %}
-{% include code-snippet/diagram/ports/automaticPort/sample.cs %}
+{% highlight c# tabtitle="AutoPort.cs" %}
+{% include code-snippet/diagram/ports/automaticPort/AutoPort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="Sample.cs" %}
-{% include code-snippet/diagram/ports/automaticPort/sample.cs %}
+{% highlight c# tabtitle="AutoPort.cs" %}
+{% include code-snippet/diagram/ports/automaticPort/AutoPort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -25,7 +25,7 @@ The following code illustrates how to create a container node.
 {% include code-snippet/diagram/container/container-1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-1/sample.cs %}
+{% include code-snippet/diagram/container/container-1/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,7 +33,7 @@ The following code illustrates how to create a container node.
 
 {% tabs %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-1/sample.cs %}
+{% include code-snippet/diagram/container/container-1/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -42,7 +42,7 @@ The following code illustrates how to create a container node.
 
 ### Setting a Header
 
-You can textually describe a container by using its [Header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContainer.html#Syncfusion_EJ2_Diagrams_DiagramContainer_Header) property. Also, users can customize the header's appearance using the header's [style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
+You can textually describe a container by using its [Header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContainer.html#Syncfusion_EJ2_Diagrams_DiagramContainer_Header) property. Also, users can customize the header's appearance using the header's [Style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
 
 The following code example explains how to define a container header and its customization:
 
@@ -53,7 +53,7 @@ The following code example explains how to define a container header and its cus
 {% include code-snippet/diagram/container/container-2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% include code-snippet/diagram/container/container-2/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,7 +61,7 @@ The following code example explains how to define a container header and its cus
 
 {% tabs %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/sample.cs %}
+{% include code-snippet/diagram/container/container-2/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -65,25 +65,11 @@ You can change the size of the node resize thumb and the connector end point han
 
 The diagram allows you to restrict diagram elements from dragging behind the negative axis. When `RestrictNegativeAxisDragDrop` is enabled, diagram elements such as Node, Connector, Connector end thumbs, Groups, Swim lane objects, and palette symbols can be restricted from dragging when drag enters into negative zone.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/node/restrictNegativeAxis/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sample.cs" %}
-{% include code-snippet/diagram/node/restrictNegativeAxis/sample.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Sample.cs" %}
-{% include code-snippet/diagram/node/restrictNegativeAxis/sample.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
+```html
+<ejs-diagram id="container" width="100%" height="500px" nodes="@ViewBag.nodes"
+    constraints="RestrictNegativeAxisDragDrop,Default">
+</ejs-diagram>
+```
 
 ![negativeAxisRestrict](../images/negativeAxisRestrict.gif)
 
