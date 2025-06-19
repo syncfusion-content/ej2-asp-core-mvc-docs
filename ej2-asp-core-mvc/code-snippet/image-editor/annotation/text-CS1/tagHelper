@@ -3,7 +3,7 @@
 }
 
 <div class="col-lg-12 control-section e-img-editor-sample">
-    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool" width="550px" height="350px"></ejs-imageeditor>
+    <ejs-imageeditor id="image-editor" created="created" toolbar="@imageTool" width="550px" height="350px" ShowQuickAccessToolbar="false"></ejs-imageeditor>
     <div class="button-group" style="margin-top: 10px;">
         <ejs-button id="addText" cssClass="e-primary" content="Draw Text" onclick="addTextHandler()"></ejs-button>
         <div class="e-btn-group">

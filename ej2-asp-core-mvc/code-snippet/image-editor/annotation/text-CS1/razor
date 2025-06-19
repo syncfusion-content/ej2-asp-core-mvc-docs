@@ -1,5 +1,5 @@
 <div class="col-lg-12 control-section e-img-editor-sample">
-    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar("[]").Width("550px").Height("350px").Render()
+    @Html.EJS().ImageEditor("image-editor").Created("created").Toolbar(new string[] { }).Width("550px").Height("350px").ShowQuickAccessToolbar(false).Render()
     <div class="button-group" style="margin-top: 10px;">
         @Html.EJS().Button("addText").CssClass("e-primary").Content("Add Text").Click("addTextHandler").Render()
         <div class="e-btn-group">
