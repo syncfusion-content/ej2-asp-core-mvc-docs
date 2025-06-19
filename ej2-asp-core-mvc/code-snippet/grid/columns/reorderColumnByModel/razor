@@ -8,7 +8,7 @@ col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ
 col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
 col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 col.HeaderText("Order Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "150", HeaderText = "Order Date", Format="yMd"},
-        new Syncfusion.EJ2.Grids.GridColumn { Field = "EmployeeID", Width = "130", HeaderText = "EmployeeID"} }).Add();
+        new Syncfusion.EJ2.Grids.GridColumn { Field = "EmployeeID", Width = "130", HeaderText = "EmployeeID", TextAlign = "Right" } }).Add();
 col.HeaderText("Shipped Details").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Columns(new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipName", Width = "140"},
         new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "145",  HeaderText = "Ship Country", MinWidth="10", EditType="dropdownedit" } }).Add();
 }).Render()

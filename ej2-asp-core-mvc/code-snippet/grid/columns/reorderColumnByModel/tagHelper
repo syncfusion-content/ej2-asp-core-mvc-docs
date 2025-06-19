@@ -9,7 +9,7 @@
         <e-grid-column field="Freight" headerText="Freight" format='C2' textAlign="Right" width="130"></e-grid-column>
         <e-grid-column headerText="Order Details" textAlign="Center"
             columns="@( new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "OrderDate", Width = "130", HeaderText = "Order Date", Format="yMd"},
-                new Syncfusion.EJ2.Grids.GridColumn { Field = "EmployeeID", Width = "150", HeaderText = "EmployeeID"} } )"
+                new Syncfusion.EJ2.Grids.GridColumn { Field = "EmployeeID", Width = "150", HeaderText = "EmployeeID", TextAlign = "Right" } } )"
                 width="130"></e-grid-column>
         <e-grid-column headerText="Shipped Details" textAlign="Center" columns="@( new List<Syncfusion.EJ2.Grids.GridColumn>() { new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipName", Width = "140", HeaderText = "ShipName" },
             new Syncfusion.EJ2.Grids.GridColumn { Field = "ShipCountry", Width = "145", HeaderText = "Ship Country"} } )">
