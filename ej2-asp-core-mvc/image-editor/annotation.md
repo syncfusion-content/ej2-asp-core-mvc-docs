@@ -50,6 +50,10 @@ The `drawText` method in the Image Editor allows you to insert a text annotation
 
 * transformCollection: Specifies the transform collection of the text annotation.
 
+* underline — Specifies whether the text should be underlined.
+
+* strikethrough — Specifies whether the text should have a strikethrough.
+
 By utilizing the DrawText method with these parameters, you can precisely position and customize text annotations within the image. This provides the flexibility to add labels, captions, or other text elements with specific font styles, sizes, and colors, enhancing the visual presentation and clarity of the image. 
 
 Here is an example of adding a text in a button click using `drawText` method. 
@@ -223,7 +227,7 @@ Output be like the below.
 
 ### Formatting Text with Bold, Italic, Underline, and Strikethrough
 
-The `drawText` method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information: bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
+The `drawText` method in the Image Editor component allows you to insert a text annotation into the image with specific customization options. Applying these styles enhances the text by improving readability and emphasizing key information, where bold increases visual weight to highlight important points, italic adds a slanted emphasis or creative touch, underline draws a line beneath the text for clarity or separation, and strikethrough places a line through text to indicate removal or outdated content. These formatting options enable users to make their annotations more visually distinctive and effective in conveying information.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

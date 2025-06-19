@@ -16,9 +16,9 @@ To save an edited image in the Image Editor control, use the toBlob method to co
 
 ## Supported image formats 
 
-The Image Editor control supports three common image formats: PNG, JPEG, SVG, WEBP, and BMP. These formats allow you to work with a wide range of image files within the Image Editor. 
+The Image Editor control supports five common image formats: PNG, JPEG, SVG, WEBP, and BMP. These formats allow you to work with a wide range of image files within the Image Editor. 
 
-When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, WEBP, and BMP, based on your specific requirements or preferences. 
+When it comes to saving the edited image, the default file type is set as PNG. This means that when you save the edited image without specifying a different file type, it will be saved as a PNG file. However, it's important to note that the Image Editor typically provides options or methods to specify a different file type if desired. This allows you to save the edited image in formats other than the default PNG, such as JPEG, SVG, and WEBP, based on your specific requirements or preferences. 
 
 ## Open an Image
 
@@ -258,9 +258,16 @@ Output be like the below.
 
 ![ImageEditor Sample](images/image-editor-watermark.jpeg)
 
-### Opening images with custom width and height
+### Opening Images with Custom Width and Height
 
-Users can now open images with specified width and height values using the imageSettings parameter in the `open` method. This enhancement introduces three additional properties: `width,` `height,` and `isAspectRatio.` Image dimensions can be precisely controlled while preserving the aspect ratio, if needed. This provides more control over rendering images, especially when dealing with high-resolution images or fixed canvas requirements.
+Users can now open images with specific width and height values using the `imageSettings` parameter in the `open` method. This enhancement introduces three additional properties: `width`, `height`, and `isAspectRatio`. These options allow precise control over the image dimensions, with the flexibility to preserve the original aspect ratio if needed. This feature is especially useful when rendering high-resolution images or when fitting images into fixed-size layouts or canvas areas.
+ 
+The following behaviors are supported through these properties:
+- Contains behavior: By specifying only one dimension (either `width` or `height`) and enabling `isAspectRatio`, the other dimension is automatically calculated to maintain the image's original proportions.
+- Cover behavior: When both `width` and `height` are specified with `isAspectRatio` set to `true`, the image scales proportionally to fit within the given dimensions while preserving its aspect ratio.
+- Stretch or Shrink behavior: Setting `isAspectRatio` to `false` forces the image to strictly follow the specified `width` and `height`, allowing it to stretch or shrink regardless of its original aspect ratio.
+
+The following example showcases how all three behaviors can be achieved using the open method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -293,7 +300,7 @@ Output be like the below.
 
 The `export` method in the Image Editor control enables you to save the modified image as a file on the local device. This method accepts two parameters: the file name and the file type. 
 
-By providing a file name, you can specify the desired name for the saved image file. Additionally, you can also specify the quality and file type to determine the format in which the image should be saved. This allows you to save the image according to your specific requirements or preferences, such as PNG, JPEG, SVG, WEBP, and BMP.
+By providing a file name, you can specify the desired name for the saved image file. Additionally, you can also specify the quality and file type to determine the format in which the image should be saved. This allows you to save the image according to your specific requirements or preferences, such as PNG, JPEG, SVG, and WEBP.
 
 By utilizing the `export` method with the appropriate file name and file type, you can conveniently save the modified image as a file on the local device, ensuring that it is easily accessible and shareable.
 
