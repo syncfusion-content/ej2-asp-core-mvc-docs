@@ -32,6 +32,9 @@ The following code illustrates how to create a container node.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/container/container-1/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
 {% include code-snippet/diagram/container/container-1/Container.cs %}
 {% endhighlight %}
@@ -60,6 +63,9 @@ The following code example explains how to define a container header and its cus
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/container/container-2/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
 {% include code-snippet/diagram/container/container-2/Container.cs %}
 {% endhighlight %}

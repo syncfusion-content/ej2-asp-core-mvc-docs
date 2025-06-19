@@ -1,2 +1,3 @@
-<ejs-diagram id="container" width="100%" height="600px" model="@ViewBag.model">
+<ejs-diagram id="container" width="100%" height="600px" model="@ViewData.model">
+    <e-diagram-snapsettings constraints="None"></e-diagram-snapsettings>
 </ejs-diagram>

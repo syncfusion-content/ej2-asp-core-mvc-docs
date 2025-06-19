@@ -88,7 +88,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
             };
 
             // Pass the diagram model to the view for rendering
-            ViewBag.model = model;
+            ViewData.model = model;
             return View();
         }
     }

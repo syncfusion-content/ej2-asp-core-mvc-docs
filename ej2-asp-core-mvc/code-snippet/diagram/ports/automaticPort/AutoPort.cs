@@ -1,44 +1,49 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using Syncfusion.EJ2.Diagrams;
-using System.Drawing;
 
-namespace EJ2MVCSampleBrowser.Controllers.Diagram {
-    public partial class DiagramController: Controller {
-        // GET: Nodes
-        public ActionResult Nodes() {
-            List < DiagramNode > nodes = new List < DiagramNode > ();
-            nodes.Add(new Node() {
+namespace EJ2MVCSampleBrowser.Controllers.Diagram
+{
+    public partial class DiagramController : Controller
+    {
+        public ActionResult AutoPort()
+        {
+            List<DiagramNode> nodes = new List<DiagramNode>();
+            nodes.Add(new Node()
+            {
                 Id = "node1",
                 Width = 100,
                 Height = 100,
-                Style = new NodeStyleNodes() {
-                    Fill = "#6BA5D7",
+                Style = new NodeStyleNodes()
+                {
+                    Fill = "cornflowerblue",
                 },
                 text = "node1",
-                OffsetX = 150, OffsetY = 200,
-                Constraints: NodeConstraints.Default & ~(NodeConstraints.InConnect | NodeConstraints.OutConnect)
+                OffsetX = 150,
+                OffsetY = 200,
+                Constraints = NodeConstraints.Default & ~(NodeConstraints.InConnect | NodeConstraints.OutConnect)
             });
-            nodes.Add(new Node() {
+            nodes.Add(new Node()
+            {
                 Id = "node2",
                 Width = 100,
                 Height = 100,
-                Style = new NodeStyleNodes() {
-                    Fill = "#6BA5D7",
+                Style = new NodeStyleNodes()
+                {
+                    Fill = "cornflowerblue",
                 },
-                text = "node1",
+                text = "node2",
                 OffsetX = 400,
                 OffsetY = 200,
-                Constraints: NodeConstraints.Default & ~(NodeConstraints.InConnect | NodeConstraints.OutConnect)
+                Constraints = NodeConstraints.Default & ~(NodeConstraints.InConnect | NodeConstraints.OutConnect)
             });
             ViewBag.nodes = nodes;
             return View();
         }
     }
-    public class Node: DiagramNode {
+    public class Node : DiagramNode
+    {
         public string text;
     }
 }

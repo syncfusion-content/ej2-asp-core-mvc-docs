@@ -1,0 +1,7 @@
+@Syncfusion.EJ2.Diagrams;
+
+@(Html.EJS().Diagram("container").Width("100%").Height("700px")
+    .SnapSettings(s => s.Constraints(SnapConstraints.None))
+    .Model((List<DiagramNode>)ViewData["model"])
+    .Render()
+)

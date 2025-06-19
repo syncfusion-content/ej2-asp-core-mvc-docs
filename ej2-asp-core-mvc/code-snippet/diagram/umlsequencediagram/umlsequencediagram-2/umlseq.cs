@@ -97,7 +97,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
             };
 
             // Pass the UML sequence diagram model to the view
-            ViewBag.model = model;
+            ViewData.model = model;
             return View();
         }
     }

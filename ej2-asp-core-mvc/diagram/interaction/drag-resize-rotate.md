@@ -73,7 +73,7 @@ The Diagram component includes a built-in option to restrict user interactions w
 <!-- 
     Prevent diagram interactions in the negative region
 -->
-<ejs-diagram id="container" width="100%" height="500px" nodes="@ViewBag.nodes"
+<ejs-diagram id="container" width="100%" height="500px" nodes="@ViewData.nodes"
     constraints="RestrictNegativeAxisDragDrop,Default">
 </ejs-diagram>
 ```

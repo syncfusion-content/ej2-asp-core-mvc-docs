@@ -1,4 +1,4 @@
-<ejs-diagram id="container" width="100%" height="500px" nodes="@ViewBag.nodes"
+<ejs-diagram id="container" width="100%" height="500px" nodes="@ViewData.nodes"
     constraints="AutomaticPortCreation,Default">
     <e-diagram-snapsettings constraints="None"></e-diagram-snapsettings>
 </ejs-diagram>

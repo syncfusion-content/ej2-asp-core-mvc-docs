@@ -46,13 +46,16 @@ The following code example illustrates how to create participants.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
 {% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![participants](./images/umlSequenceDiagram-images/participants.png)
+![participants](./images/umlSequenceDiagram-images/Participants.png)
 
 ### Messages
 
@@ -95,13 +98,16 @@ The following code example illustrates how to create messages:
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
 {% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![messages](./images/umlSequenceDiagram-images/messages.png)
+![messages](./images/umlSequenceDiagram-images/msg.png)
 
 ### Activation Boxes
 
@@ -131,11 +137,15 @@ The following code example illustrates how to create activation boxes.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
 {% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
 ![activations](./images/umlSequenceDiagram-images/activations.png)
 
 ### Fragments
@@ -184,13 +194,16 @@ The following code example illustrates how to create fragments.
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/razor %}
+{% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
 {% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![fragments](./images/umlSequenceDiagram-images/fragments.png)
+![fragments](./images/umlSequenceDiagram-images/fragment.png)
 
 ### Customizing Participant Spacing in Sequence Diagram 
 

@@ -30,7 +30,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                 }
             };
 
-            ViewBag.model = model;
+            ViewData.model = model;
             return View();
         }
     }
