@@ -115,28 +115,18 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 ![Reorder column based on field names](../images/column-reorder/column-reorder-field.gif)
 
-### Reorder column based on column model
+### Reorder columns using the column model (ideal for stacked headers)
 
-By default, column reordering in the Grid can be done using methods like `reorderColumnByIndex`, `reorderColumns`, and `reorderColumnByTargetIndex`. These methods reorder columns using either their field names or index positions, which works well for normal column structures.
+Previously, column reordering in the Grid was handled using methods like `reorderColumnByIndex`, `reorderColumns`, and `reorderColumnByTargetIndex`. These methods allowed reordering based on field names or index positions and were suitable for simple, flat column structures.
 
-However, these default approaches do not support stacked header columns, as stacked headers contain nested columns and do not have their own field names.
-
-To handle this, we have introduced `reorderColumnByModel` method. This method allows you to reorder columns by directly referencing their column model object. It supports reordering both standard and stacked header columns, including their nested child columns, providing greater flexibility when working with complex column structures.
+To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support `stacked header columns`, but it also works with normal column configurations.
 
 The `reorderColumnByModel` method accepts two arguments:
 
 * **fromColumn**: The column object that you want to move.
 * **toColumn**: The target column object before which the **fromColumn** should be placed.
 
-This method supports both standard columns and stacked header columns, making it suitable for reordering even complex column hierarchies with nested structures.
-
-In the following example:
-
-* A stacked header column **Order Details** is moved before the normal column **Customer Name** using `reorderColumnByModel`.
-
-* A child column **Ship Country** inside the **Ship Detail** stacked header is moved before **Ship Name**.
-
-This example demonstrates how the `reorderColumnByModel` method can efficiently handle reordering of both top-level columns and nested columns within stacked headers using external button click.
+In this example, **Order Details** is moved before **Customer Name**, and **Ship Country** is moved before **Ship Name** within **Ship Details**, showing how `reorderColumnByModel` method reorders both normal and stacked header columns using a button click.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -146,6 +136,8 @@ This example demonstrates how the `reorderColumnByModel` method can efficiently 
 {% include code-snippet/grid/columns/reorderColumnByModel/reorder.cs %}
 {% endhighlight %}
 {% endtabs %} 
+
+![Column reorder by columnmodel](../images/column-reorder/columreorderByColumnModel.gif)
 
 ## Reorder events
 
