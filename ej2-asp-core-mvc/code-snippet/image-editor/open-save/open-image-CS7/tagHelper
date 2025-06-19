@@ -1,37 +1,35 @@
+@{
+    var toolbar = new string[] { };
+}
 
 <div class="col-lg-12 control-section e-img-editor-sample">
-    <ejs-imageeditor id="image-editor" created="created" ></ejs-imageeditor>
+    <ejs-imageeditor id="image-editor" width="550px" height="350px" created="created" toolbar="@toolbar"></ejs-imageeditor>
+    <div class="button-group" style="margin-top: 10px;">
+        <ejs-button id="contain" cssClass="e-primary" content="Fit to Width (Aspect Ratio)" onclick="contain()"></ejs-button>
+        <ejs-button id="cover" cssClass="e-primary" content="Cover (Aspect Ratio)" onclick="cover()"></ejs-button>
+        <ejs-button id="stretch" cssClass="e-primary" content="Stretch / Shrink" onclick="stretch()"></ejs-button>
+    </div>
 </div>
-<ejs-button id="saveBlob" onclick="saveBlob()" cssClass="e-primary" content="SAVE BLOB"></ejs-button>
-<ejs-button id="openBlob" onclick="openBlob()" cssClass="e-primary" content="OPEN BLOB"></ejs-button>
 
 <script>
-   var blobUrl;
     function created() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        if (ej.base.Browser.isDevice) {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/flower.png');
-        } else {
-            imageEditorObj.open('https://ej2.syncfusion.com/demos/src/image-editor/images/bridge.png');
-        }
+        imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png');
     }
 
-
-    function saveBlob() {
-        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        var imageData = imgObj.getImageData();
-        var canvas = document.createElement('canvas');
-        var ctx = canvas.getContext('2d');
-        canvas.width = imageData.width;
-        canvas.height = imageData.height;
-        ctx.putImageData(imageData, 0, 0);
-        canvas.toBlob((blob) =>{
-          this.blobUrl = URL.createObjectURL(blob);// For getting blob.
-        });
+    function contain() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png', true, { backgroundColor: '', width: 550, height: null, isAspectRatio: true });
     }
-    function openBlob() {
-        var imgObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
-        imgObj.open(this.blobUrl);
+
+    function cover() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png', true, { backgroundColor: '', width: 550, height: 550, isAspectRatio: true });
+    }
+
+    function stretch() {
+        var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
+        imageEditorObj.open('https://ej2.syncfusion.com/react/demos/src/image-editor/images/bridge.png', true, { backgroundColor: '', width: 350, height: 350, isAspectRatio: false });
     }
 </script>
 
