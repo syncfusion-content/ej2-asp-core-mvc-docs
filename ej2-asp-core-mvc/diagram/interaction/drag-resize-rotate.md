@@ -78,6 +78,6 @@ The Diagram component includes a built-in option to restrict user interactions w
 </ejs-diagram>
 ```
 
-![negativeAxisRestrict](../images/negativeAxisRestrict.gif)
+![negativeAxisRestrict](../gifs/negativeAxisRestrict.gif)
 
 N> A symbol dragged from the palette will only be added to the diagram if it’s fully positioned within the positive coordinate space.

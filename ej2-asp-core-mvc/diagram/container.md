@@ -86,7 +86,7 @@ To learn more, refer to the [Symbol Palette](./symbol-palette) documentation.
 
 You can interactively add or remove diagram elements from the Container in the runtime. When a diagram element is dropped near the container's edge, the container automatically resizes to accommodate it.
 
-![Container](images/container.gif)
+![Container](gifs/container.gif)
 
 ## Interaction
 
