@@ -294,7 +294,7 @@ The following example showcases how all three behaviors can be achieved using th
 
 Output be like the below.
 
-![ImageEditor Sample](images/image-editor-width-height.jpeg)
+![ImageEditor Sample](images/image-editor-width-height.jpg)
 
 ## Save as image
 
