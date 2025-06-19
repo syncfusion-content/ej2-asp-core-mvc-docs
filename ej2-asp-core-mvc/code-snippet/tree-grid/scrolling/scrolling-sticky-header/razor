@@ -1,0 +1,22 @@
+<div style="height: 400px; overflow-y: auto; padding: 0px 10px 0px 10px; border: 1px solid #ddd;">
+  <div style="padding: 20px 0px 20px 0px; display: flex">
+    <label style="margin: 0px 5px 0px 0px;font-weight: bold;">Enable/Disable Sticky Header</label>
+    @Html.EJS().Switch("switch").Change("toggleStickyHeader").Render()
+  </div>
+  <div style='height: 1000px'>
+    @(Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("100%").Columns(col =>
+    {
+      col.Field("TaskId").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+      col.Field("TaskName").HeaderText("Task Name").Width(180).Add();
+      col.Field("StartDate").HeaderText("Start Date").Format("yMd").Type("date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(120).Add();
+      col.Field("Duration").HeaderText("Duration").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    }).ChildMapping("Children").TreeColumnIndex(1).EnableStickyHeader(true).Render())
+  </div>
+</div>
+
+<script>
+  function toggleStickyHeader(args) {
+    var treeGrid = document.getElementById("TreeGrid").ej2_instances[0];
+    treeGrid.enableStickyHeader = args.checked ?? false;
+  }
+</script>
