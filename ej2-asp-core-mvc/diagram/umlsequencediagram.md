@@ -10,7 +10,7 @@ documentation: ug
 
 # UML Sequence Diagram Model in Diagram
 
-A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagram). To enable this functionality, assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control.
+A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the `UmlSequenceDiagramModel`. To enable this functionality, assign the `UmlSequenceDiagramModel` to the `Model` property of the diagram control.
 
 ## UML Sequence Diagram Elements
 
@@ -18,7 +18,7 @@ A sequence diagram contains several key elements, such as participants, messages
 
 ### Participants
 
-[UmlSequenceParticipantModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceParticipant) in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
+`UmlSequenceParticipantModel` in a sequence diagram represent the entities that interact with each other, appearing at the top of the diagram with lifelines extending vertically downward.
 
 #### UmlSequenceParticipantModel Properties
 
@@ -59,7 +59,7 @@ The following code example illustrates how to create participants.
 
 ### Messages
 
-[UmlSequenceMessageModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceMessage.html) represents communication between participants and are displayed as arrows connecting lifelines.
+`UmlSequenceMessageModel` represents communication between participants and are displayed as arrows connecting lifelines.
 
 #### Types of Messages
 
@@ -111,7 +111,7 @@ The following code example illustrates how to create messages:
 
 ### Activation Boxes
 
-[UmlSequenceActivationBoxModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceActivationBox.html) represents periods when a participant is active and processing a message. They appear as thin rectangles on participant lifelines.
+`UmlSequenceActivationBoxModel` represents periods when a participant is active and processing a message. They appear as thin rectangles on participant lifelines.
 
 #### UmlSequenceActivationBoxModel Properties
 
@@ -150,7 +150,7 @@ The following code example illustrates how to create activation boxes.
 
 ### Fragments
 
-[UmlSequenceFragmentModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceFragment.html) groups a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
+`UmlSequenceFragmentModel` groups a set of messages based on specific conditions in a sequence diagram. They are displayed as rectangular enclosures that visually separate conditional or looping interactions.
 
 #### Types of Fragments
 
@@ -207,4 +207,4 @@ The following code example illustrates how to create fragments.
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
-The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagram.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagram_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.
+The `SpaceBetweenParticipants` property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.

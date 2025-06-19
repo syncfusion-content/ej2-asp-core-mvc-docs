@@ -45,7 +45,7 @@ The following code illustrates how to create a container node.
 
 ### Setting a Header
 
-You can provide a textual description for a container using its [Header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramContainer.html#Syncfusion_EJ2_Diagrams_DiagramContainer_Header) property. Also, users can customize the header's appearance using the header's [Style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
+You can provide a textual description for a container using its `Header` property. Also, users can customize the header's appearance using the header's [Style](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHeader.html#Syncfusion_EJ2_Diagrams_DiagramHeader_Style) property.
 
 The following code example explains how to define a container header and its customization:
 
