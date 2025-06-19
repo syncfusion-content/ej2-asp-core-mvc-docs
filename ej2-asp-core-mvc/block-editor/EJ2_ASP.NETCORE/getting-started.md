@@ -93,7 +93,10 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Block
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/getting-started/demo/tagHelper %}
+{% include code-snippet/block-editor/getting-started/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Default.cs" %}
+{% include code-snippet/block-editor/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
 
