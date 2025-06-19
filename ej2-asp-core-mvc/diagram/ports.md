@@ -303,4 +303,4 @@ The following example shows how to enable automatic port creation:
 {% endtabs %}
 {% endif %}
 
-![AutomaticPortCreation](./gifs/automaticPortCreation.gif)
+![Automatic Port Creation](./gifs/autoport.gif)
