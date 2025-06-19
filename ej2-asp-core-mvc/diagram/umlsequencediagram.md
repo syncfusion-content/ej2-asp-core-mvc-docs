@@ -10,7 +10,7 @@ documentation: ug
 
 # UML Sequence Diagram Model in Diagram
 
-A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel). To enable this functionality, assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control.
+A UML sequence diagram is an interaction diagram that demonstrates how objects interact with each other and the order of these interactions. The Syncfusion® diagram control provides comprehensive support for creating and visualizing UML sequence diagrams through the [UmlSequenceDiagramModel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagram). To enable this functionality, assign the `UmlSequenceDiagramModel` to the [Model](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_Model) property of the diagram control.
 
 ## UML Sequence Diagram Elements
 
@@ -207,4 +207,4 @@ The following code example illustrates how to create fragments.
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
-The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagramModel.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagramModel_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.
+The [SpaceBetweenParticipants](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramUmlSequenceDiagram.html#Syncfusion_EJ2_Diagrams_DiagramUmlSequenceDiagram_SpaceBetweenParticipants) property in `UmlSequenceDiagramModel` controls the horizontal spacing between participants. The default value is 100, and it can be adjusted based on your layout requirements.

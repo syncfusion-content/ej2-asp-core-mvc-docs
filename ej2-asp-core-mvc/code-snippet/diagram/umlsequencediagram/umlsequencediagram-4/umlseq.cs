@@ -11,7 +11,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
         public ActionResult Model()
         {
             // Define the UML Sequence Diagram model with space between participants
-            var model = new DiagramUmlSequenceDiagramModel
+            var model = new DiagramUmlSequenceDiagram
             {
                 SpaceBetweenParticipants = 300, // Space between the participants in the diagram
 

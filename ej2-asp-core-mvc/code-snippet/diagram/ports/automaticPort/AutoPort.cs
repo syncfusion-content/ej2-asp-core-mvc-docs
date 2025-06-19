@@ -38,7 +38,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                 OffsetY = 200,
                 Constraints = NodeConstraints.Default & ~(NodeConstraints.InConnect | NodeConstraints.OutConnect)
             });
-            ViewBag.nodes = nodes;
+            ViewData.nodes = nodes;
             return View();
         }
     }

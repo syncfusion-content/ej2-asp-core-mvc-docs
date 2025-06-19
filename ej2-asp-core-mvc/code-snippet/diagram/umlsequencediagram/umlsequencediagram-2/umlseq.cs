@@ -10,7 +10,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
         public ActionResult Model()
         {
             // Create a new UML Sequence Diagram model
-            var model = new DiagramUmlSequenceDiagramModel
+            var model = new DiagramUmlSequenceDiagram
             {
                 // Define the participants involved in the sequence diagram
                 Participants = new List<DiagramUmlSequenceParticipant>
