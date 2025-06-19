@@ -22,10 +22,10 @@ The following code illustrates how to create a container node.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-1/tagHelper %}
+{% include code-snippet/diagram/container/basiccontainer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-1/Container.cs %}
+{% include code-snippet/diagram/container/basiccontainer/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,15 +33,15 @@ The following code illustrates how to create a container node.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-1/razor %}
+{% include code-snippet/diagram/container/basiccontainer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-1/Container.cs %}
+{% include code-snippet/diagram/container/basiccontainer/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![container-1](./images/container-1.png)
+![container](./images/container.png)
 
 ### Setting a Header
 
@@ -53,10 +53,10 @@ The following code example explains how to define a container header and its cus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/tagHelper %}
+{% include code-snippet/diagram/container/containerheader/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/Container.cs %}
+{% include code-snippet/diagram/container/containerheader/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,15 +64,15 @@ The following code example explains how to define a container header and its cus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/container/container-2/razor %}
+{% include code-snippet/diagram/container/containerheader/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Container.cs" %}
-{% include code-snippet/diagram/container/container-2/Container.cs %}
+{% include code-snippet/diagram/container/containerheader/Container.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![container-2](./images/container-2.png)
+![container header customization](./images/containerheader.png)
 
 N> You can edit the header by double-clicking the region of the container's header.
 

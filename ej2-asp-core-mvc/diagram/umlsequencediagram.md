@@ -36,10 +36,10 @@ The following code example illustrates how to create participants.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/participants/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/participants/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -47,15 +47,15 @@ The following code example illustrates how to create participants.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/razor %}
+{% include code-snippet/diagram/umlsequencediagram/participants/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-1/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/participants/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![participants](./images/umlSequenceDiagram-images/Participants.png)
+![participants](./images/umlsequencediagrams/Participants.png)
 
 ### Messages
 
@@ -65,12 +65,12 @@ The following code example illustrates how to create participants.
 
 | Message Type | Description | Example |
 |---|---|---|
-| Synchronous | The sender waits for a response | ![Synchronous Message](./images/umlSequenceDiagram-images/Synchronous.png) |
-| Asynchronous | The sender continues without waiting | ![Asynchronous Message](./images/umlSequenceDiagram-images/Asynchronous.png) |
-| Reply | A response to a previous message | ![Reply Message](./images/umlSequenceDiagram-images/Reply.png) |
-| Create | Creates a new participant | ![Create Message](./images/umlSequenceDiagram-images/Create.png) |
-| Delete | Terminates a participant | ![Delete Message](./images/umlSequenceDiagram-images/Delete.png) |
-| Self | A message from a participant to itself | ![Self Message](./images/umlSequenceDiagram-images/Self.png) |
+| Synchronous | The sender waits for a response | ![Synchronous Message](./images/umlsequencediagrams/Synchronous.png) |
+| Asynchronous | The sender continues without waiting | ![Asynchronous Message](./images/umlsequencediagrams/Asynchronous.png) |
+| Reply | A response to a previous message | ![Reply Message](./images/umlsequencediagrams/Reply.png) |
+| Create | Creates a new participant | ![Create Message](./images/umlsequencediagrams/Create.png) |
+| Delete | Terminates a participant | ![Delete Message](./images/umlsequencediagrams/Delete.png) |
+| Self | A message from a participant to itself | ![Self Message](./images/umlsequencediagrams/Self.png) |
 
 #### UmlSequenceMessageModel Properties
 
@@ -88,10 +88,10 @@ The following code example illustrates how to create messages:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/messages/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/messages/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -99,15 +99,15 @@ The following code example illustrates how to create messages:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/razor %}
+{% include code-snippet/diagram/umlsequencediagram/messages/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-2/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/messages/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![messages](./images/umlSequenceDiagram-images/msg.png)
+![messages](./images/umlsequencediagrams/msg.png)
 
 ### Activation Boxes
 
@@ -127,10 +127,10 @@ The following code example illustrates how to create activation boxes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/activations/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/activations/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -138,15 +138,15 @@ The following code example illustrates how to create activation boxes.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/razor %}
+{% include code-snippet/diagram/umlsequencediagram/activations/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-3/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/activations/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![activations](./images/umlSequenceDiagram-images/activations.png)
+![activations](./images/umlsequencediagrams/activations.png)
 
 ### Fragments
 
@@ -158,9 +158,9 @@ The [UmlSequenceFragmentType](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 | Fragment Type  | Description  | Example  |  
 |---------------|-------------|--------|  
-| Optional  | Represents a sequence that is executed only if a specified condition is met; otherwise, it is skipped. | ![Optional Fragment](./images/umlSequenceDiagram-images/OptFragment.png) |  
-| Alternative | Represents multiple conditional paths (if-else structure), where only one path executes based on the condition. | ![Alternative Fragment](./images/umlSequenceDiagram-images/AltFragment.png) |  
-| Loop | Represents a repeating sequence of interactions that continues based on a loop condition. | ![Loop Fragment](./images/umlSequenceDiagram-images/LoopFragment.png) |  
+| Optional  | Represents a sequence that is executed only if a specified condition is met; otherwise, it is skipped. | ![Optional Fragment](./images/umlsequencediagrams/OptFragment.png) |  
+| Alternative | Represents multiple conditional paths (if-else structure), where only one path executes based on the condition. | ![Alternative Fragment](./images/umlsequencediagrams/AltFragment.png) |  
+| Loop | Represents a repeating sequence of interactions that continues based on a loop condition. | ![Loop Fragment](./images/umlsequencediagrams/LoopFragment.png) |  
 
 #### UmlSequenceFragmentModel Properties
 
@@ -184,10 +184,10 @@ The following code example illustrates how to create fragments.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/tagHelper %}
+{% include code-snippet/diagram/umlsequencediagram/fragments/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/fragments/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,15 +195,15 @@ The following code example illustrates how to create fragments.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/razor %}
+{% include code-snippet/diagram/umlsequencediagram/fragments/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Model.cs" %}
-{% include code-snippet/diagram/umlsequencediagram/umlsequencediagram-4/umlseq.cs %}
+{% include code-snippet/diagram/umlsequencediagram/fragments/umlseq.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
-![fragments](./images/umlSequenceDiagram-images/fragment.png)
+![fragments](./images/umlsequencediagrams/fragment.png)
 
 ### Customizing Participant Spacing in Sequence Diagram 
 
