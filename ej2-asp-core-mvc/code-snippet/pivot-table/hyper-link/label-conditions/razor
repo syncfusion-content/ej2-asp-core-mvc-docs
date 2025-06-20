@@ -18,4 +18,14 @@
  .ConditionalSettings(format =>
 {
     format.Conditions(Syncfusion.EJ2.PivotView.Condition.LessThan).Label("France").Value1(1000).Add();
-})).Render()
+}).CssClass("e-custom-class")).Render()
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>

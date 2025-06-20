@@ -18,4 +18,14 @@
  .ConditionalSettings(format =>
 {
     format.Conditions(Syncfusion.EJ2.PivotView.Condition.Between).Measure("Sold").Value1(100).Value2(200).Add();
-})).Render()
+}).CssClass("e-custom-class")).Render()
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>

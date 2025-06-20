@@ -1,6 +1,6 @@
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource(dataManger =>
 {
-    dataManger.Url("https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/").CrossDomain(true).Adaptor("ODataAdaptor");
+    dataManger.Url("https://services.syncfusion.com/js/production/api/Orders").CrossDomain(true).Adaptor("ODataAdaptor");
 
 }).ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true)
     .Rows(rows =>

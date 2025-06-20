@@ -4,8 +4,8 @@
                 @Html.EJS().Button("collapsebtn").Content("Collapse ALL").CssClass("e-flat").IsPrimary(true).Render()
             </div>
         </div>
-        @Html.EJS().PivotView("PivotGrid").Width("100%").Height("300").ShowToolbar(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>
-            )ViewBag.Data)
+        @Html.EJS().PivotView("Pivotview").Width("100%").Height("300").ShowToolbar(true).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>
+            )ViewBag.DataSource)
             .FormatSettings(formatsettings =>
             {
                 formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
@@ -21,11 +21,11 @@
             })).GridSettings(new Syncfusion.EJ2.PivotView.PivotViewGridSettings { ColumnWidth = 140 }).ToolbarTemplate("#template").Render()
 <script>
     document.getElementById("expandbtn").addEventListener('click', function () {
-        var pivotObj = document.getElementById("PivotGrid").ej2_instances[0];
+        var pivotObj = document.getElementById("Pivotview").ej2_instances[0];
         pivotObj.dataSourceSettings.expandAll = true;
     });
     document.getElementById("collapsebtn").addEventListener('click', function () {
-        var pivotObj = document.getElementById("PivotGrid").ej2_instances[0];
+        var pivotObj = document.getElementById("Pivotview").ej2_instances[0];
         pivotObj.dataSourceSettings.expandAll = false;
     });
 </script>

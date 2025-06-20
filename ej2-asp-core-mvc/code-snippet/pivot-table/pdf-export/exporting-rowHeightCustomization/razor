@@ -16,7 +16,7 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).AllowPdfExport(true).Render().OnPdfCellRender("onPdfCellRender").Render()
+})).AllowPdfExport(true).OnPdfCellRender("onPdfCellRender").Render()
 
 <script>
     var pivotObj;

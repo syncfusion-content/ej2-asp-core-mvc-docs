@@ -3,7 +3,7 @@
 @Html.EJS().PivotView("PivotView").Width("100%").Height("300").GroupingBarSettings(new PivotViewGroupingBarSettings
 {
 ShowSortIcon = false
-}).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
+}).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true).EnableSorting(true)
 .FormatSettings(formatsettings =>
 {
 formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();

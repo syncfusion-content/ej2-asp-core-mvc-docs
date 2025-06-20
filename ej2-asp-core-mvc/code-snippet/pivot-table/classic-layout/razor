@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.PivotView
 
 @Html.EJS().PivotView("pivotview").Width("100%").Height("450").ShowFieldList(true).DataSourceSettings(dataSourceSettings
-    => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.Data).ExpandAll(false).EnableSorting(true)
+    => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false).EnableSorting(true)
     .DrilledMembers(drilledmembers =>
     {
         drilledmembers.Name("Product_Categories").Items(ViewBag.drilledMembers).Add();
