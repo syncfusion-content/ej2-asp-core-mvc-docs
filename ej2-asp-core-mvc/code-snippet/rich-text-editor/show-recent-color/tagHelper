@@ -1,0 +1,7 @@
+<ejs-richtexteditor id="edit-color" value="@ViewBag.value">
+    <e-richtexteditor-backgroundcolor showRecentColors="true">
+    </e-richtexteditor-backgroundcolor>
+    <e-richtexteditor-fontcolor showRecentColors="true">
+    </e-richtexteditor-fontcolor>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
