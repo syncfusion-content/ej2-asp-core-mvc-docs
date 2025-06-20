@@ -28,4 +28,4 @@ chartSettings.ChartSeries(chartSeries =>
         chartSeries.StartAngle(270);
         chartSeries.EndAngle(90);
     }
-)).Render();
+)).Render()

@@ -27,4 +27,4 @@ chartSettings.ChartSeries(chartSeries =>
         chartSeries.Type(ChartSeriesType.Pie);
         chartSeries.InnerRadius("140");
     }
-)).Render();
+)).Render()

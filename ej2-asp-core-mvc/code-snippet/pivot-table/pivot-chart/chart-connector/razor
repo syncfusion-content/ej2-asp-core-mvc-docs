@@ -26,4 +26,4 @@
 {
     datalabel.Position("OutSide");
     datalabel.ConnectorStyle(connector=>connector.Color("#f4429e").DashArray("5,3").Length("50px").Width(2));
-}))).Render();
+}))).Render()
