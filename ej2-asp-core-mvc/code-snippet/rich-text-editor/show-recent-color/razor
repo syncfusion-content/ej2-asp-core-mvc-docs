@@ -1,5 +1,1 @@
-@Html.EJS().RichTextEditor("edit-color").ToolbarSettings(e => e.Items(new object[] { 
-    "FontColor", "BackgroundColor", "Bold", "Italic", "Underline", "Formats", "Alignments",
-    "Blockquote", "OrderedList", "UnorderedList", "CreateLink",
-    "Image", "SourceCode", "Undo", "Redo"
-})).FontColor(f => f.ShowRecentColors(true)).BackgroundColor(b => b.ShowRecentColors(true)).Value(@ViewBag.value).Render()
+@Html.EJS().RichTextEditor("edit-color").ToolbarSettings(e => e.Items((object)ViewBag.items)).FontColor(f => f.ModeSwitcher(true)).BackgroundColor(b => b.ModeSwitcher(true)).Value(@ViewBag.value).Render()
