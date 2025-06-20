@@ -232,3 +232,32 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### Show recent color
+
+The [ShowRecentColors](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFontColor_ShowRecentColors) feature in the Rich Text Editor allows users to quickly access a row of recently used colors displayed below the main palette. This helps streamline the editing process by making frequently used colors readily available, improving efficiency and consistency in styling.
+
+This feature can be enabled separately for the [RichTextEditorFontColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFontColor.html) and [RichTextEditorBackgroundColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBackgroundColor.html) tools, giving users flexibility based on their formatting needs. It's especially useful when working with recurring color themes, as it eliminates the need to manually search through the full color palette each time.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/show-recent-color/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/show-recent-color/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/show-recent-color/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/show-recent-color/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
