@@ -1,0 +1,4 @@
+<ejs-richtexteditor id="editor" fileUploading="onFileUploading">
+    <e-richtexteditor-insertimagesettings saveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save" path="../Files/" maxFileSize="30000000"></e-richtexteditor-insertimagesettings>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
