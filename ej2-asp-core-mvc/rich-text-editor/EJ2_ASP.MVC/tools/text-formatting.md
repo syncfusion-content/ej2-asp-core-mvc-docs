@@ -535,7 +535,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](../keyb
 
 > The format painter retains the formatting after application making it possible to apply the same formatting multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
-Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command/) public method.
+Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command) public method.
 
 ## Clear formatting
 
