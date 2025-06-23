@@ -53,8 +53,8 @@ Below is an example of how to configure the `CodeBlockSettings` using the Rich T
 
 In this example:
 
-* The **languages** array defines four supported languages: JavaScript, Python, HTML, and CSS.
-* The **defaultLanguage** is set to **javascript**, so new code blocks default to JavaScript.
+* The **Languages** array defines four supported languages: JavaScript, Python, HTML, and CSS.
+* The **DefaultLanguage** is set to **javascript**, so new code blocks default to JavaScript.
 * Each language object specifies a **language** (for internal use, e.g., syntax highlighting) and a **label** (displayed in the dropdown).
 
 ## Integrating syntax highlighters
