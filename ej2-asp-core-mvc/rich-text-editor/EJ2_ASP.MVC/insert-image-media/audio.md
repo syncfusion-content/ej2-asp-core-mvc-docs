@@ -175,8 +175,6 @@ N> By default, it doesn't support the `UseDefaultCredentials` property; we need 
 
 You can restrict the audio uploaded from the local machine when the uploaded audio file size is greater than the allowed size by using the [InsertAudioSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorAudioSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorAudioSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes.
 
-> The file size in the argument will be returned in `bytes`.
-
 In the following illustration, the audio size has been validated before uploading, and it is determined whether the audio has been uploaded or not.
 
 {% if page.publishingplatform == "aspnet-core" %}

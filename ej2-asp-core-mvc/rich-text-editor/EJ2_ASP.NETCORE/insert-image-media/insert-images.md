@@ -111,12 +111,6 @@ Set the [insertImageSettings.saveFormat](https://help.syncfusion.com/cr/aspnetco
 
 You can use the [insertImageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings) property, to specify the server handler to upload the selected image. Then by binding the [fileUploadSuccess](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploadSuccess) event, you can receive the modified file name from the server and update it in the Rich Text Editor's insert image dialog.
 
-### Size-based Image Restrictions
-
-You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [fileUploading](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
 ### Secure Image Upload with Authentication
 
 You can add additional data with the image uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [fileUploading](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `customFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
@@ -142,6 +136,35 @@ You can add additional data with the image uploaded from the Rich Text Editor on
 {% endhighlight %}
 {% highlight c# tabtitle="SaveFile.cs" %}
 {% include code-snippet/rich-text-editor/image-authenticate/saveFile.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Maximum file size restriction
+
+You can restrict the image uploaded from the local machine when the uploaded image file size is greater than the allowed size by using the [InsertImageSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorImageSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorImageSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+In the following example, the image  size has been validated before uploading and determined whether the image  has been uploaded or not.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/check-image-size/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/check-image-size/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/check-image-size/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/check-image-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
