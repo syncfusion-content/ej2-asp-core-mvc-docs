@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor Control | Syncfusion
+title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -380,6 +380,37 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
+
+## Horizontal line
+
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+
+To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
+
+Use the `HorizontalLine` tool in the editor below to see the feature in action.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/horizontal-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/horizontal-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Insert code
 
