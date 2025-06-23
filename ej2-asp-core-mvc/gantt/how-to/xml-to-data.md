@@ -28,10 +28,10 @@ The following code snippet demonstrates how to import a Microsoft Project XML fi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/changeScheduleDates/tagHelper %}
+{% include code-snippet/gantt/how-to/xmlToData/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ChangeScheduleDates.cs" %}
-{% include code-snippet/gantt/how-to/changeScheduleDates/changeScheduleDates.cs %}
+{% highlight c# tabtitle="xmlToData.cs" %}
+{% include code-snippet/gantt/how-to/xmlToData/xmlToData.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,10 +39,10 @@ The following code snippet demonstrates how to import a Microsoft Project XML fi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/how-to/changeScheduleDates/razor %}
+{% include code-snippet/gantt/how-to/xmlToData/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="ChangeScheduleDates.cs" %}
-{% include code-snippet/gantt/how-to/changeScheduleDates/changeScheduleDates.cs %}
+{% highlight c# tabtitle="xmlToData.cs" %}
+{% include code-snippet/gantt/how-to/xmlToData/xmlToData.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
