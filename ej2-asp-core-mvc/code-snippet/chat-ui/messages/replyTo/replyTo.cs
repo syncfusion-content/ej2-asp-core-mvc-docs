@@ -16,15 +16,17 @@ public ActionResult Pinned()
     ChatMessagesData.Add(new ChatUIMessage()
     {
         Text = "Yes, the design phase is complete.",
-        Author = MichaleUserModel
+        Author = MichaleUserModel,
+        Id = "msg1"
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
         Text = "I’ll review it and send feedback by today.",
         Author = CurrentUserModel,
         ReplyTo = {
-            user = MichaleUserModel,
-            text = "Yes, the design phase is complete."
+            User = MichaleUserModel,
+            Text = "Yes, the design phase is complete.",
+            MessageID = "msg1"
         }
     });
     ViewBag.ChatMessagesData = ChatMessagesData;
