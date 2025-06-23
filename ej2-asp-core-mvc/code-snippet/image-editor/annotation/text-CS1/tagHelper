@@ -36,7 +36,7 @@
     function toggleFontStyle(style, isChecked) {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         let shapes = imageEditorObj.getShapeSettings();
-        if (shapes[0]) {
+        if (shapes && shapes[0]) {
             if (isChecked) {
                 if (!shapes[0].fontStyle.includes(style)) {
                     shapes[0].fontStyle.push(style);
