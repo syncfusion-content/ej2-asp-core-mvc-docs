@@ -1,1 +1,1 @@
-@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.SaveUrl("https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save").Path("../Files/")).MaxFileSize(30000000).Render()
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.MaxFileSize(30000000)).Render()
