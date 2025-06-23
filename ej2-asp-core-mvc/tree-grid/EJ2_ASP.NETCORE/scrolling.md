@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Scrolling in Tree Grid Control
 
 The scrollbar will be displayed in the treegrid when content exceeds the element [`width`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Width.html) or [`height`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Height.html). The vertical and horizontal scrollbars will be displayed based on the following criteria:
@@ -45,8 +44,6 @@ To specify the [`width`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ## Responsive with parent container
 
