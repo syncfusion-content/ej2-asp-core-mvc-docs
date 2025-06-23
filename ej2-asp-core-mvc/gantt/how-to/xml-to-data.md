@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import Microsoft Project XML into ##Platform_Name## Gantt Component
+title: Import Microsoft Project XML into ##Platform_Name## Gantt Component| Syncfusion
 description: Learn here to import microsoft project XML into Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Xml to data
@@ -14,7 +14,7 @@ In this guide, we'll explore how to import task data from an XML file into a Gan
 
 ## Steps
 
-* Add a file upload component to your Blazor application using Syncfusion's `Uploader` component. This allows users to upload XML files easily.
+* Add a file upload component to your application using Syncfusion's `Uploader` component. This allows users to upload XML files easily.
 * Implement the `Selected` method in the Uploader. This method reads the uploaded XML file, converts it into a list of GanttDataSource objects, and updates the Gantt Chart's data source.
 * Use the xmlToJson method to parse the XML content and convert it into JSON format.
 * Implement additional utility methods, such as `transformGanttData`, to handle specific data transformations required for the Gantt Chart.
