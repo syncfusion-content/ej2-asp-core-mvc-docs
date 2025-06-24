@@ -19,11 +19,11 @@
     }).CalculatedFieldSettings(calculatedfieldsettings =>
     {
         calculatedfieldsettings.Name("Total").Formula(totalPrice).Add();
-    })).AllowCalculatedField(true).Render()
+    })).AllowNumberFormatting(true).AllowCalculatedField(true).Render()
 
     <script>
         document.getElementById("calculated-field-btn").addEventListener('click', function () {
             var pivotObj = document.getElementById("PivotView").ej2_instances[0];
-            pivotObj.calculatedFieldModule.createCalculatedFieldDialog();
+            pivotObj.numberFormattingModule.ShowNumberFormattingDialog();
         });
     </script>

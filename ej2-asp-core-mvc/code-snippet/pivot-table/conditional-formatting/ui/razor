@@ -27,7 +27,7 @@
            })
            .ConditionalFormatSettings(format =>
            {
-               format.Conditions(Condition.LessThan).Measure("In_Stock").Value1(1000).Style(style => { style.BackgroundColor("#80cbc4").Color("black").FontFamily("Tahoma").FontSize("12px"); }).Add();
+               format.Conditions(Condition.GreaterThan).Measure("In_Stock").Value1(1000).Style(style => { style.BackgroundColor("#80cbc4").Color("black").FontFamily("Tahoma").FontSize("12px"); }).Add();
                format.Conditions(Condition.Between).Measure("Sold").Value1(500).Value2(40000).Style(style => { style.BackgroundColor("#f48fb1").Color("black").FontFamily("Tahoma").FontSize("12px"); }).Add();
            })
            ).AllowConditionalFormatting(true).Render()

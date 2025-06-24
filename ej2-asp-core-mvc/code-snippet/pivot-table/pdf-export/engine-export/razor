@@ -19,6 +19,6 @@
     var pivotObj;
     document.getElementById('pdf').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj.pdfExportModule.exportToPDF();
+        pivotObj.pdfExport();
     }
 </script>

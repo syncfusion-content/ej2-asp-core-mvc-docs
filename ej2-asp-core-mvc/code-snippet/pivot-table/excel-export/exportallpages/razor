@@ -1,4 +1,4 @@
-@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+@Html.EJS().Button("Excel").Content("Excel Export").IsPrimary(true).Render()
 
 @Html.EJS().PivotView("PivotView").Height("300").EnableVirtualization(true).ExportAllPages(false).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
 .FormatSettings(formatsettings =>
@@ -17,7 +17,7 @@
 
 <script>
     var pivotObj;
-    document.getElementById('pdf').onclick = function () {
+    document.getElementById('Excel').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.excelExport();
     }
