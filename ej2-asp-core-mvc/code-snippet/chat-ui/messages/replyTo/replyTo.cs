@@ -11,13 +11,14 @@ public ActionResult Pinned()
     ChatMessagesData.Add(new ChatUIMessage()
     {
         Text = "Hi Michale, are we on track for the deadline?",
-        Author = CurrentUserModel
+        Author = CurrentUserModel,
+        Id = "chat-message-1"
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
         Text = "Yes, the design phase is complete.",
         Author = MichaleUserModel,
-        Id = "msg1"
+        Id = "chat-message-2"
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
@@ -26,7 +27,7 @@ public ActionResult Pinned()
         ReplyTo = {
             User = MichaleUserModel,
             Text = "Yes, the design phase is complete.",
-            MessageID = "msg1"
+            MessageID = "chat-message-2"
         }
     });
     ViewBag.ChatMessagesData = ChatMessagesData;
