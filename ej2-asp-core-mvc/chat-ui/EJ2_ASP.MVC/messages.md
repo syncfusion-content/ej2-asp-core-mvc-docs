@@ -27,6 +27,66 @@ You can use the `Text` property to add message content for the user. Each messag
 
 ![Text](images/text.png)
 
+### Setting pinned
+
+You can use the [IsPinned](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Pinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/pinned/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Pinned.cs" %}
+{% include code-snippet/chat-ui/messages/pinned/pinned.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Pinned](images/pinned.png)
+
+### Setting reply to
+
+You can use the [replyTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ReplyTo) property to respond to the original message preserving context and creating a threaded conversation.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/replyTo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="ReplyTo.cs" %}
+{% include code-snippet/chat-ui/messages/replyTo/replyTo.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ReplyTo](images/replyTo.png)
+
+### Setting forward
+
+You can use the [isForwarded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Forward) property to specify the user when the message is forwarded.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/forwarded/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Forwarded.cs" %}
+{% include code-snippet/chat-ui/messages/forwarded/forwarded.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Forwarded](images/forwarded.png)
+
+### Setting compact mode
+
+You can use the [EnableCompactMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_StatusIconCss) property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/compact-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Compact-mode.cs" %}
+{% include code-snippet/chat-ui/messages/compact-mode/compact-mode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![CompactMode](images/compact-mode.png)
+
 ### Define current user
 
 You can use the `Author` property to identify the current user of the chat. Each user can be configured with options such as [Id](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_Id), [User](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_User), [AvatarUrl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIUser.html#Syncfusion_EJ2_InteractiveChat_ChatUIUser_AvatarUrl) and more.
@@ -192,51 +252,6 @@ You can use the `Tooltip` property to provide information about the messages by 
 
 ![Tooltip](images/status-tooltip.png)
 
-### Setting pinned
-
-You can use the [IsPinned](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Pinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/pinned/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Pinned.cs" %}
-{% include code-snippet/chat-ui/messages/pinned/pinned.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Pinned](images/pinned.png)
-
-### Setting reply to
-
-You can use the [replyTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_ReplyTo) property to respond to the original message preserving context and creating a threaded conversation.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/replyTo/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ReplyTo.cs" %}
-{% include code-snippet/chat-ui/messages/replyTo/replyTo.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ReplyTo](images/replyTo.png)
-
-### Setting forward
-
-You can use the [isForwarded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Forward) property to specify the user when the message is forwarded.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/forwarded/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Forwarded.cs" %}
-{% include code-snippet/chat-ui/messages/forwarded/forwarded.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Forwarded](images/forwarded.png)
-
 ## Setting auto scroll
 
 You can use the [AutoScrollToBottom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_AutoScrollToBottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
@@ -268,21 +283,6 @@ You can use the [Suggestions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 {% endtabs %}
 
 ![Suggestion](images/suggestion.png)
-
-## Setting compact mode
-
-You can use the [EnableCompactMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_StatusIconCss) property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/compact-mode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Compact-mode.cs" %}
-{% include code-snippet/chat-ui/messages/compact-mode/compact-mode.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![CompactMode](images/compact-mode.png)
 
 ## Configure message options
 
