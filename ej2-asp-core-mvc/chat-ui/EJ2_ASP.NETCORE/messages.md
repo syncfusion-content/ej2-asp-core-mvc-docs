@@ -192,38 +192,6 @@ You can use the `tooltip` property to provide information about the messages by 
 
 ![Tooltip](images/status-tooltip.png)
 
-### Setting auto scroll
-
-You can use the [autoScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_AutoScrollToBottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
-
-- By default, it scrolls to bottom for each message being sent or when the scroll is maintained at the bottom in the chat, in order to prevent the automatic scroll for different user messages you can use the `autoScrollToBottom` property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/autoScroll/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AutoScroll.cs" %}
-{% include code-snippet/chat-ui/messages/autoScroll/autoScroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![AutoScrollToBottom](images/auto-scroll.png)
-
-## Setting suggestions
-
-You can use the [suggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/messages/suggestion/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Suggestion.cs" %}
-{% include code-snippet/chat-ui/messages/suggestion/defaultMessages.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Suggestion](images/suggestion.png)
-
 ### Setting pinned
 
 You can use the [isPinned](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Pinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
@@ -268,6 +236,38 @@ You can use the [isForwarded](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 {% endtabs %}
 
 ![Forwarded](images/forwarded.png)
+
+### Setting auto scroll
+
+You can use the [autoScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_AutoScrollToBottom) property to automatically scroll the chats when a new message is received in a conversation. By default, the value is false, requires manual scrolling or the FAB button to quick access to the bottom of the view. 
+
+- By default, it scrolls to bottom for each message being sent or when the scroll is maintained at the bottom in the chat, in order to prevent the automatic scroll for different user messages you can use the `autoScrollToBottom` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/autoScroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AutoScroll.cs" %}
+{% include code-snippet/chat-ui/messages/autoScroll/autoScroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AutoScrollToBottom](images/auto-scroll.png)
+
+## Setting suggestions
+
+You can use the [suggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Suggestions) property, to add the suggestions in both initial and on-demand which help users to quick-reply options above the input field.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/messages/suggestion/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Suggestion.cs" %}
+{% include code-snippet/chat-ui/messages/suggestion/defaultMessages.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Suggestion](images/suggestion.png)
 
 ## Setting compact mode
 
