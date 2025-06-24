@@ -336,5 +336,3 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 {% include code-snippet/chat-ui/messages/itemClicked/itemClicked.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![ItemClicked](images/itemClicked.png)
