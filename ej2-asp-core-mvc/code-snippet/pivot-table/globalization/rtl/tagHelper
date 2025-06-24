@@ -22,7 +22,7 @@
     var L10n = ej.base.L10n;
     L10n.load({
         "ar": {
-            "pivotview": {
+            "PivotView": {
                 "grandTotal": "المجموع الكلى",
                 "total": "المجموع",
                 "value": "القيمة",

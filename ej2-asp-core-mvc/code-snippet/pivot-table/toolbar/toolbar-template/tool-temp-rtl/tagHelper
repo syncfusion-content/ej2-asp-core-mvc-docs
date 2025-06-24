@@ -5,7 +5,7 @@
 }
 <ejs-button id="enablertl" content="ENABLE RTL" cssClass="e-flat" isPrimary="true"></ejs-button>
 <ejs-button id="disablertl" content="DISABLE RTL" cssClass="e-flat" isPrimary="true"></ejs-button>
-<ejs-pivotview id="pivotview" showToolbar="true" width="100%" height="300" toolbar=toolbarItems>
+<ejs-pivotview id="PivotView" showToolbar="true" width="100%" height="300" toolbar=toolbarItems>
     <e-datasourcesettings dataSource="@ViewBag.DataSource">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -34,11 +34,11 @@
 
 <script>
     document.getElementById("enablertl").addEventListener('click', function () {
-        var pivotObj = document.getElementById("pivotview").ej2_instances[0];
+        var pivotObj = document.getElementById("PivotView").ej2_instances[0];
         pivotObj.enableRtl = true;
     });
     document.getElementById("disablertl").addEventListener('click', function () {
-        var pivotObj = document.getElementById("pivotview").ej2_instances[0];
+        var pivotObj = document.getElementById("PivotView").ej2_instances[0];
         pivotObj.enableRtl = false;
     });
 </script>

@@ -1,6 +1,6 @@
 <ejs-button id="Refresh" content="Refresh" isPrimary="true"></ejs-button>
 
-<ejs-pivotview id="PivotGrid" height="300" showFieldList="true" onFieldDropped="onFieldDropped">
+<ejs-pivotview id="PivotView" height="300" showFieldList="true" onFieldDropped="onFieldDropped">
     <e-datasource data="@ViewBag.DataSource" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" useGrouping="true"></e-field>
