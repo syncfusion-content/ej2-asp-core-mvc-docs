@@ -1,5 +1,5 @@
 <ejs-pivotview id="PivotView" height="300" showFieldList="true" actionFailure="actionFailure">
-    <e-datasource data="@ViewBag.DataSource" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true" allowLabelFilter="true" allowValueFilter="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" useGrouping="true"></e-field>
         </e-formatsettings>
@@ -15,7 +15,7 @@
             <e-field name="Sold" caption="Units Sold"></e-field>
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
-    </e-datasource>
+    </e-datasourcesettings>
 </ejs-pivotview>
 
 <script>
