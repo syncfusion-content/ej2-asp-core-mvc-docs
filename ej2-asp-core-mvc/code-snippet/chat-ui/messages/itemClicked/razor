@@ -1,0 +1,26 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).MessageToolbarSettings(new ChatUIMessageToolbarSettings() { Items=ViewBag.MessageToolbarItems, ItemClicked = "onMessageToolbarClicked" }).Render()
+</div>
+
+@section PreScripts {
+    <script>
+        function onMessageToolbarClicked(args) {
+            if (args.item.prefixIcon === "e-icons e-chat-forward") {
+                var newMessageObj = {
+                    id: 'chat-message-' + (chatUIObj.messages.length + 1).toString(),
+                    isForwarded: true,
+                    isPinned: args.message.isPinned,
+                    author: args.message.author,
+                    text: args.message.text,
+                    timeStamp: args.message.timeStamp,
+                    timeStampFormat: args.message.timeStampFormat,
+                    status: args.message.status,
+                    replyTo: args.message.replyTo
+                };
+                chatUIObj.addMessage(newMessageObj);
+            }
+        }
+    </script>
+}
