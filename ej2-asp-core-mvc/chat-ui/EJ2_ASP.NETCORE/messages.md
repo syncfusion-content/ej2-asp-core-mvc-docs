@@ -93,6 +93,8 @@ You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 You can use the `statusIconCss` property to identify the user's presence, including `online`, `offline`, `busy`, and `away` status in the Chat UI.
 
+The following are the predefined status styles that can be defined using the `statusIconCss` property.
+
 | Status | IconCss | 
 | -------- | -------- | 
 | `Available` | `e-user-online` |
@@ -224,7 +226,7 @@ You can use the [suggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ### Setting pinned
 
-You can use the [isPinned](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Pinned) property to highlight the important message in the chat.
+You can use the [isPinned](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Pinned) property to highlight the important message in the chat. Once a message is pinned, you can access the options menu to continue the chat or unpin it.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -269,7 +271,7 @@ You can use the [isForwarded](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Setting compact mode
 
-You can use the [enableCompactMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_StatusIconCss) property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces.
+You can use the [enableCompactMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_StatusIconCss) property to align all messages to the left in the chat for creating a streamlined layout ideal for group conversations or space-constrained interfaces. By default, the value is `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -284,11 +286,19 @@ You can use the [enableCompactMode](https://help.syncfusion.com/cr/aspnetcore-js
 
 ## Configure message options
 
-The `e-chatui-messagetoolbarsettings` tag helper allows customization of the message toolbar for richer chat experience in the Chat UI. It provides options to define the toolbar `width`, configure a set of toolbar `items`, and handle `itemClick` events for enhanced interactivity.
+The `e-chatui-messagetoolbarsettings` tag helper allows customization of the message toolbar for richer chat experience in the Chat UI. It provides options to define the toolbar `width`, configure a set of toolbar `items`, and handle `itemClick` events for enhanced interactivity. By default, the message options available are `Copy`, `Reply`, `Pin`, and `Delete`.
+
+### Copying a message
+
+You can copy the message item to quickly duplicate the message, by using the toolbar copy icon in the message options.
+
+### Deleting a message
+
+You can delete a message item to remove it from the chat conversation, by using the toolbar trash icon in the message options.
 
 ### Setting width
 
-You can use the `width` property to set width of the message toolbar in the chat.
+You can use the `width` property to set width of the message toolbar in the chat. By default, the value is `100%`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -326,5 +336,3 @@ You can use the `itemClicked` event when the toolbar item is clicked in the mess
 {% include code-snippet/chat-ui/messages/itemClicked/itemClicked.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![ItemClicked](images/itemClicked.png)
