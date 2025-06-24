@@ -14,7 +14,7 @@ The `Attachment` support in AI AssistView specifies user to include file attachm
 
 ## Enable attachment
 
-You can enable the attachment by using the `enableAttachments` property.
+You can enable the attachment by using the `enableAttachments` property. By default, it is set to `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -63,7 +63,7 @@ You can use the `allowedFileType` property to upload the specific file types in 
 
 ### Setting file size
 
-You can use the  `maxFileSize` property to allowed a maximum file size of the upload file in the AI AssistView.
+You can use the  `maxFileSize` property to allowed a maximum file size of the upload file in the AI AssistView. By default, it is set to `2000000` bytes.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
