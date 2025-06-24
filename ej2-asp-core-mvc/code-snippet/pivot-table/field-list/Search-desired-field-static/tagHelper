@@ -34,7 +34,7 @@
 </style>
 
 <script>
-debugger
+
     var pivotObj; var fieldlistObj;
     function onGridEnginePopulate(args) {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
