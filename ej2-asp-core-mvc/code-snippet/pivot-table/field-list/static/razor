@@ -27,14 +27,14 @@
     var pivotObj; var fieldlistObj;
     function onGridEnginePopulate(args) {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj = document.getElementById('Static_FieldList').ej2_instances[0];
         if (fieldlistObj) {
             fieldlistObj.update(pivotObj);
         }
     }
     function onFieldListEnginePopulate(args) {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        fieldlistObj = document.getElementById('PivotFieldList').ej2_instances[0];
+        fieldlistObj = document.getElementById('Static_FieldList').ej2_instances[0];
         fieldlistObj.updateView(pivotObj);
     }
 </script>

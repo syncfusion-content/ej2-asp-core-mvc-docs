@@ -1,5 +1,7 @@
 @using Syncfusion.EJ2.PivotView
 
+@Html.EJS().Button("Excel").Content("Excel Export").IsPrimary(true).Render()
+
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
 .FormatSettings(formatsettings =>
 {
@@ -13,8 +15,13 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).GridSettings(gridSettings => gridSettings.ExcelQueryCellInfo("excelQueryCell")).Render()
+})).AllowExcelExport(true).GridSettings(gridSettings => gridSettings.ExcelQueryCellInfo("excelQueryCell")).Render()
 <script>
+    var pivotObj;
+    document.getElementById('Excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
     function excelQueryCell(args) {
 
     }
