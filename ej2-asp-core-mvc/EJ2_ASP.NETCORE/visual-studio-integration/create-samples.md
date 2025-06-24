@@ -10,7 +10,7 @@ documentation: ug
 
 # Create Sample in ASP.NET Core Application
 
-The Syncfusion® Sample Creator is a tool that lets you to make Syncfusion® ASP.NET Core (Essential JS 2) projects with sample code for required Syncfusion® component features and Syncfusion® control configuration.
+The Syncfusion® Sample Creator is a tool that lets you make Syncfusion® ASP.NET Core (Essential JS 2) projects with sample code for required Syncfusion® component features and Syncfusion® control configuration.
 
 N> The Syncfusion® ASP.NET Core Sample Creator utility is available from v16.3.0.17.
 
@@ -20,11 +20,11 @@ The following steps is used to create the Syncfusion® ASP.NET Core Application 
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
+    Click **Extensions->Syncfusion® Menu** and choose **Essential Studio® for ASP.NET Core (EJ2) > Launch Sample Creator…** in **Visual Studio.**
 
     ![sample creator](images/sample-creator_latest.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio® for ASP.NET Core > Launch Sample Creator…
+    N> In Visual Studio 2017, Click Syncfusion® Menu and choose Essential Studio® for ASP.NET Core > Launch Sample Creator…
 
     ![sample creator](images/sample-creator.png)
 
@@ -68,16 +68,6 @@ The following steps is used to create the Syncfusion® ASP.NET Core Application 
 	>   </thead>
 	>   <tbody>
 	>     <tr>
-	>       <td>.NET 6.0</td>
-	>       <td>v19.4.0.38</td>
-	>       <td>Visual Studio 2022</td>
-	>     </tr>
-	>     <tr>
-	>       <td>.NET 7.0</td>
-	>       <td>v20.4.0.38</td>
-	>       <td>Visual Studio 2022</td>
-	>     </tr>
-	>     <tr>
 	>       <td>.NET 8.0</td>
 	>       <td>v23.2.4</td>
 	>       <td>Visual Studio 2022</td>
@@ -106,4 +96,4 @@ The following steps is used to create the Syncfusion® ASP.NET Core Application 
 
     ![create](images/create-button.png)
 
-3. The new Syncfusion® ASP.NET Core sample is created. Required controller and view file for selected controls, selected style, scripts and corresponding Syncfusion® NuGet packages are added in the created sample.
+3. The new Syncfusion® ASP.NET Core sample is created. Required controller and view files for selected controls, selected styles, scripts, and corresponding Syncfusion® NuGet packages are added in the created sample.

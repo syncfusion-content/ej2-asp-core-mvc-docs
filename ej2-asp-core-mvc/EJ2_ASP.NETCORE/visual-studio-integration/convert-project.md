@@ -10,11 +10,11 @@ documentation: ug
 
 # Converting ASP.NET Core application to ASP.NET Core application
 
-Syncfusion ASP.NET Core conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into a Syncfusion ASP.NET Core (Essential JS 2) Web application by adding the required assemblies and resource files.
+Syncfusion® ASP.NET Core conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into a Syncfusion® ASP.NET Core (Essential JS 2) Web application by adding the required assemblies and resource files.
 
-N> The Syncfusion ASP.NET Core (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before using the Syncfusion ASP.NET Core Project Conversion, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio® version build is installed or not. If the Essential Studio® version is not same for both the Extension and build, then the Project Conversion will not be shown.
+N> The Syncfusion® ASP.NET Core (Essential JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before using the Syncfusion® ASP.NET Core Project Conversion, check whether the **ASP.NET Core Extensions - Syncfusion®** is installed or not in Visual Studio Extension Manager by clicking on **Extensions -> Manage Extensions -> Installed**  for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic. Also, check whether the corresponding Essential Studio® version build is installed or not. If the Essential Studio® version is not same for both the Extension and the build, then the Project Conversion will not be shown.
 
-The steps below help you to convert the ASP.NET Core application to the Syncfusion ASP.NET Core application via the Visual Studio:
+The steps below help you to convert the ASP.NET Core application to the Syncfusion® ASP.NET Core application via the Visual Studio:
 
 1. Open an existing Microsoft ASP.NET Core Web Application or create a new Microsoft ASP.NET Core Web Application.
 
@@ -22,17 +22,17 @@ The steps below help you to convert the ASP.NET Core application to the Syncfusi
 
     **Option 1:**
 
-    Click **Extensions->Syncfusion Menu** and choose **Essential Studio® for ASP.NET Core > Convert to Syncfusion ASP.NET Core Application…** in **Visual Studio Menu**.
+    Click **Extensions->Syncfusion® Menu** and choose **Essential Studio® for ASP.NET Core > Convert to Syncfusion® ASP.NET Core Application…** in **Visual Studio Menu**.
 
     ![convert project](images/convert-new-app-2019.png)
 
-    N> In Visual Studio 2017, Click Syncfusion Menu and choose Essential Studio® for ASP.NET Core > Convert to Syncfusion® ASP.NET Core Application… in Visual Studio Menu..
+    N> In Visual Studio 2017, Click Syncfusion® Menu and choose Essential Studio® for ASP.NET Core > Convert to Syncfusion® ASP.NET Core Application… in Visual Studio Menu..
 
     ![convert project](images/convert-new-app.png)
 
     **Option 2:**
 
-    Right-click the **Project** from Solution Explorer, select **Syncfusion Web**, and choose the **Convert to Syncfusion ASP.NET Core Application…**
+    Right-click the **Project** from Solution Explorer, select **Syncfusion® Web**, and choose the **Convert to Syncfusion® ASP.NET Core Application…**
 
     ![convert to syncfusion](images/convert-to-syncfusion-ASpnet-core.png)
 
@@ -44,7 +44,7 @@ The steps below help you to convert the ASP.NET Core application to the Syncfusi
 
     **Assets From:** Load the Syncfusion® Essential JS 2 assets to ASP.NET Core Project, from either NPM, CDN, or Installed Location.
 
-    N> Installed location option will be available only when the Syncfusion® Essential JavaScript 2 setup has been installed.
+    N> The **Installed Location** option will be available only when the Syncfusion® Essential JavaScript 2 setup has been installed.
 
     **Choose the Theme:** Choose the required theme.
 
@@ -52,7 +52,7 @@ The steps below help you to convert the ASP.NET Core application to the Syncfusi
 
 5. The required Syncfusion® NuGet packages with selected version, Scripts and CSS are added in the ASP.NET Core Web application.
 
-   If you enabled project backup before converting, the old project was saved in the specified backup path location, as shown below once the conversion process completed.
+   If you enabled project backup before converting, the old project was saved in the specified backup path location, as shown below once the conversion process was completed.
 
     ![BackupLocation](images/BackupLocation.png)
 
