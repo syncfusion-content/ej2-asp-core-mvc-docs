@@ -447,6 +447,34 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
+### Improving Excel file import performance with parsing options
+
+Working with large Excel files in the Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often due to the processing of additional features such as styles and number formats. Even when the actual data is minimal, these elements can significantly impact loading time and overall efficiency.
+
+For instance, an Excel file containing only a small amount of data but a large number of empty cells with applied styles still requires the system to process each cell's style information. This can result in higher memory consumption, longer load times, and larger JSON responses.
+
+To address these challenges, parsing options are available that allow users to selectively skip unnecessary features during the import process. By enabling options such as `ignoreStyle` and `ignoreFormat`, the amount of data processed can be reduced—leading to faster load times, reduced memory usage, and smaller JSON responses.
+
+These enhancements are particularly beneficial for users who frequently work with large or complex Excel files, providing a more efficient and responsive experience.
+
+The code example below demonstrates how to configure the `ignoreStyle` and `ignoreFormat` parsing options on the `server-side`.
+
+**Code Snippet:**
+
+**Server-Side Configuration:**
+```csharp
+public IActionResult Open(IFormCollection openRequest) 
+{ 
+    OpenRequest open = new OpenRequest(); 
+    open.ParseOptions = new WorkbookParseOptions() { 
+        IgnoreStyle = true, 
+        IgnoreFormat = true
+    }; 
+    return Content(Workbook.Open(open)); 
+
+} 
+```
+
 ### Chunk response processing
 
 When opening large Excel files with many features and data, the server response can become very large. This might cause memory issues or connection problems during data transmission. The `Chunk Response Processing` feature solves this by dividing the server response into smaller parts, called chunks, and sending them to the client in parallel. The client receives these chunks and combines them to load the Excel data smoothly into the spreadsheet.
