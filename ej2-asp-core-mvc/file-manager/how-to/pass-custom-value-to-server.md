@@ -181,7 +181,7 @@ public object Download([FromBody] FileManagerDirectoryContent args)
 
 ## 4. For GetImage Operation
 
-For the **GetImage** operation, use the **beforeImageLoad** event to pass custom value. Since the **GetImage** operation doesn't support custom headers in HTTP requests, pass the custom values along with **imageUrl** using query parameters instead.
+For the **GetImage** operation, use the beforeImageLoad event. Inside this event, set useImageAsUrl to false to instruct the FileManager not to load the image directly via its URL but instead to use a fetch request. Here, attach the **Authorization** header with the value **User1** within the beforeSend event of the ajaxSettings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 ```ts
@@ -199,8 +199,14 @@ For the **GetImage** operation, use the **beforeImageLoad** event to pass custom
 
 <script>
     function beforeImageLoad(args) {
-      // Add custom parameter in image URL
-      args.imageUrl = args.imageUrl + "&Authorization=" + "User1";
+        args.useImageAsUrl = false;
+        // Check if ajaxSettings are present in the arguments
+        if (args.ajaxSettings) {
+            (args.ajaxSettings).beforeSend = function (args) {
+            // Append Authorization header with value 'User1' to fetchRequest headers
+            args.fetchRequest.headers.append('Authorization', 'User1');
+            };
+        }
     }
 </script>
 
@@ -222,35 +228,28 @@ For the **GetImage** operation, use the **beforeImageLoad** event to pass custom
 
 <script>
     function beforeImageLoad(args) {
-      // Add custom parameter in image URL
-      args.imageUrl = args.imageUrl + "&Authorization=" + "User1";
+        args.useImageAsUrl = false;
+        // Check if ajaxSettings are present in the arguments
+        if (args.ajaxSettings) {
+            (args.ajaxSettings).beforeSend = function (args) {
+            // Append Authorization header with value 'User1' to fetchRequest headers
+            args.fetchRequest.headers.append('Authorization', 'User1');
+            };
+        }
     }
 </script>
 ```
 {% endif %}
 
-In server-side, you can able to get the custom query parameter value using **Authorization** in `GetImage` method. To get the  custom query parameter value, extend the `FileManagerDirectoryContent` class and add the custom property **Authorization**.
+In server-side, `GetImage` method access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
 
 ```typescript
 
-public class FileManagerAccessController : Controller
+[Route("GetImage")]
+public object GetImage([FromBody] FileManagerDirectoryContent args)
 {
-    ...
-    public class FileManagerDirectoryContent1 : FileManagerDirectoryContent
-    {
-        public string Authorization { get; set; }
-    }
-    ...
-
-    // gets the image(s) from the given path
-    [Route("GetImage")]
-    public IActionResult GetImage(FileManagerDirectoryContent1 args)
-    {
-        var header = args.Authorization;
-        return this.operation.GetImage(args.Path, args.Id, false, null, null);
-    }
-
-    ...
+    var header = HttpContext.Request.Headers["Authorization"];
+    return this.operation.GetImage(args.Path, args.Id, false, null, null);
 }
 
 
