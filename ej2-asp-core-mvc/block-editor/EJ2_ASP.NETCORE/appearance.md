@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Blocks in Syncfusion Essential ##Platform_Name## Block Editor control, its elements, and more.
+description: Checkout and learn about appearance with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: Block Editor
 publishingplatform: ##Platform_Name##
