@@ -8,7 +8,7 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
- })).ShowGroupingbar(true).EnginePopulated("enginePopulated").Render()
+ })).ShowGroupingBar(true).EnginePopulated("enginePopulated").Render()
 
  <script>
     function enginePopulated(args){

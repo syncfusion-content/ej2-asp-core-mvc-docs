@@ -11,8 +11,18 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
- })).HyperLinkCellClick("hyperlink").HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowRowHeaderHyperlink(true)).Render()
+ })).HyperLinkCellClick("hyperlink").HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowHyperlink(true).CssClass("e-custom-class")).Render()
 
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>
 <script>
  function hyperlink(args) {
         args.cancel = false;

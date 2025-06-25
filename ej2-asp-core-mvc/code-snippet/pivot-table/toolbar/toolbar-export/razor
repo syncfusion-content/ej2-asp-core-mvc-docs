@@ -116,49 +116,47 @@
         }, false);
     }
     function beforeExport(args) {
-            args.pdfExportProperties = {
-                header: {
-                    fromTop: 0,
-                    height: 130,
-                    contents: [
-                        {
-                            type: 'Text',
-                            value: "Pivot Table",
-                            position: { x: 0, y: 50 },
-                        }
-                    ]
-                },
-                footer: {
-                    contents: [
-                        {
-                            type: 'Text',
-                            value: "Thank You",
-                            style: { textBrushColor: '#FF0000', fontSize: 13, dashStyle: 'Solid', hAlign: 'Center' }
-                        }
-                    ]
-                }
-            };
-            args.excelExportProperties = {
-                header: {
-                    headerRows: 2,
-                    rows: [
-                        {
-                            cells: [
-                                {
-                                    colSpan: 4,
-                                    value: 'Pivot Table',
-                                    style: {
-                                        fontColor: '#C67878',
-                                        fontSize: 20,
-                                        hAlign: 'Center',
-                                        bold: true,
-                                        underline: true,
-                                    },
-                                },
-                            ],
-                        },
-                    ],
-                },
-            };
+        args.excelExportProperties = {
+            header: {
+                headerRows: 2,
+                rows: [
+                    { cells: [{ colSpan: 4, value: "Pivot Table", style: { fontColor: '#C67878', fontSize: 20, hAlign: 'Center', bold: true, underline: true } }] }
+                ]
+            },
+            footer: {
+                footerRows: 4,
+                rows: [
+                    { cells: [{ colSpan: 4, value: "Thank you for your business!", style: { hAlign: 'Center', bold: true } }] },
+                    { cells: [{ colSpan: 4, value: "!Visit Again!", style: { hAlign: 'Center', bold: true } }] }
+                ]
+            }
+        };
+        args.pdfExportProperties = {
+            header: {
+                fromTop: 0,
+                height: 130,
+                contents: [
+                    {
+                        type: 'Text',
+                        value: "Pivot Table",
+                        position: { x: 0, y: 50 },
+                        style: { textBrushColor: '#000000', fontSize: 13, dashStyle: 'Solid', hAlign: 'Center' }
+                    }
+                ]
+            },
+            footer: {
+                fromBottom: 160,
+                height: 150,
+                contents: [
+                    {
+                        type: 'PageNumber',
+                        pageNumberType: 'Arabic',
+                        format: 'Page {$current} of {$total}',
+                        position: { x: 0, y: 25 },
+                        style: { textBrushColor: '#02007a', fontSize: 15 }
+                    }
+                ]
+            }
+        };
         }
 </script>
