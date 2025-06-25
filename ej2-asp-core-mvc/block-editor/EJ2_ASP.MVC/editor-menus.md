@@ -84,7 +84,7 @@ The following events are available in the Context menu.
 
 Below example demonstrates how to configure the events in the Context menu.
 
-## Blockaction menu
+## Block action menu
 
 The Block Action menu typically appears next to a block when you hover over it and click on the drag handle icon, offering quick actions specific to that block.
 
@@ -97,11 +97,11 @@ The Block Action menu provides convenient actions for managing individual blocks
 -   **Move Up**: Move the block one level up in the hierarchy.
 -   **Move Down**: Move the block one level down in the hierarchy.
 
-### Customize Blockaction menu
+### Customize Block action menu
 
-You can utilize the `blockActionsMenu` property on the blockeditor to customize the Blockaction menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
+You can utilize the `Block actionsMenu` property on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
 
-Below example demonstrates how to customize the Blockaction menu.
+Below example demonstrates how to customize the Block action menu.
 
 #### Show or hide tooltip
 
@@ -109,15 +109,15 @@ By default, the tooltip is displayed when the user hovers over the action item. 
 
 ### Events
 
-The following events are available in the Blockaction menu.
+The following events are available in the Block action menu.
 
 |Name|Args|Description|
 |---|---|---|
-|`open`|BlockActionMenuOpenEventArgs|Triggers when the block action menu is opened.|
-|`close`|BlockActionMenuCloseEventArgs|Triggers when the block action menu is closed.|
-|`itemClick`|BlockActionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
+|`open`|Block actionMenuOpenEventArgs|Triggers when the block action menu is opened.|
+|`close`|Block actionMenuCloseEventArgs|Triggers when the block action menu is closed.|
+|`itemClick`|Block actionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
 
-Below example demonstrates how to configure the events in the Blockaction menu.
+Below example demonstrates how to configure the events in the Block action menu.
 
 ## Inline Toolbar
 
