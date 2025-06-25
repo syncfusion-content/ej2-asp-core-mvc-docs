@@ -15,7 +15,7 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).GridSettings(gridSettings => gridSettings.PdfHeaderQueryCellInfo("pdfHeaderCell")).Render()
+})).GridSettings(gridSettings => gridSettings.PdfHeaderQueryCellInfo("pdfHeaderCell")).AllowPdfExport(true).Render()
 
 <script>
     var pivotObj;
