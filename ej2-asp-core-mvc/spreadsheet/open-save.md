@@ -453,11 +453,11 @@ Working with large Excel files in the Spreadsheet control can sometimes lead to 
 
 For instance, an Excel file containing only a small amount of data but a large number of empty cells with applied styles still requires the system to process each cell's style information. This can result in higher memory consumption, longer load times, and larger JSON responses.
 
-To address these challenges, parsing options are available that allow users to selectively skip unnecessary features during the import process. By enabling options such as `ignoreStyle` and `ignoreFormat`, the amount of data processed can be reduced—leading to faster load times, reduced memory usage, and smaller JSON responses.
+To address these challenges, parsing options are available that allow users to selectively skip unnecessary features during the import process. By enabling parsing options such as `IgnoreStyle` and `IgnoreFormat`, the amount of data processed can be reduced—leading to faster load times, reduced memory usage, and smaller JSON responses.
 
 These enhancements are particularly beneficial for users who frequently work with large or complex Excel files, providing a more efficient and responsive experience.
 
-The code example below demonstrates how to configure the `ignoreStyle` and `ignoreFormat` parsing options on the `server-side`.
+The code example below demonstrates how to configure the `IgnoreStyle` and `IgnoreFormat` parsing options on the `server-side`.
 
 **Code Snippet:**
 
