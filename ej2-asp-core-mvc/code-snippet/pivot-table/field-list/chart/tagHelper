@@ -1,6 +1,6 @@
    <div class="control-section" style="overflow:auto">
         <div class="content-wrapper">
-            <ejs-pivotview id="pivotview" width="100%" height="300" load="onLoad" dataBound="onDataBound" cellSelected="onCellSelected" showTooltip="false">
+            <ejs-pivotview id="PivotView" width="100%" height="300" load="onLoad" dataBound="onDataBound" cellSelected="onCellSelected" showTooltip="false">
                 <e-datasourcesettings dataSource="@ViewBag.data" expandAll="true" enableSorting="true">
                     <e-rows>
                         <e-field name="Country"></e-field>

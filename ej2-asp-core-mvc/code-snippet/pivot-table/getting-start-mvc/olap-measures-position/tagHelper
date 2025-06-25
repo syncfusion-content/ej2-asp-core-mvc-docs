@@ -1,4 +1,4 @@
-<ejs-pivotview id="pivotview" width="100%" height="600">
+<ejs-pivotview id="PivotView" width="100%" height="600">
     <e-datasourcesettings catalog="Adventure Works DW 2008 SE" cube="Adventure Works" url="https://bi.syncfusion.com/olap/msmdpump.dll" providerType="SSAS" enableSorting="true">
         <e-rows>
             <e-field name="[Customer].[Customer Geography]" caption="Customer Geography"></e-field>

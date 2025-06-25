@@ -23,7 +23,7 @@
         </table>
     </div>
     <div class="content-wrapper">
-        <ejs-pivotview id="Pivotview" height="300">
+        <ejs-pivotview id="PivotView" height="300">
             <e-datasourceSettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
                 <e-rows>
                     <e-field name="Country"></e-field>

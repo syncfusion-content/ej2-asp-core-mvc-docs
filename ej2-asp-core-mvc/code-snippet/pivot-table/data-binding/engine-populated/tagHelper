@@ -19,4 +19,4 @@
     function enginePopulated(args){
         args.dataSourceSettings.columns[0].caption = 'Full Year';
     }
- <script>
+ </script>

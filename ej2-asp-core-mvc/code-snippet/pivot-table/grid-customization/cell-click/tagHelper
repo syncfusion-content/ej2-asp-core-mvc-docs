@@ -19,4 +19,4 @@
     function cellClick(args){
         args.currentCell.setAttribute("style", "background-color: red;");
     }
- <script>
+ </script>

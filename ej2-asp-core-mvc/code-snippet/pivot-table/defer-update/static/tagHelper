@@ -1,6 +1,6 @@
 <ejs-pivotview id="PivotView" enginePopulated="onGridEnginePopulate" height="300" allowDeferLayoutUpdate="true"></ejs-pivotview>
 <br />
-<ejs-pivotfieldlist id="Static_FieldList" renderMode="Fixed" allowDeferLayoutUpdate="true" enginePopulated="onFieldListEnginePopulate">
+<ejs-pivotfieldlist id="PivotFieldList" renderMode="Fixed" allowDeferLayoutUpdate="true" enginePopulated="onFieldListEnginePopulate">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-fieldlist-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -21,7 +21,7 @@
 </ejs-pivotfieldlist>
 
 <style>
-    #Static_FieldList {
+    #PivotFieldList {
         width: 400px;
     }
 </style>

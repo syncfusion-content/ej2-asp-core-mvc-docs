@@ -23,7 +23,7 @@
     var L10n = ej.base.L10n;
     L10n.load({
         "fr-CH": {
-            "pivotview": {
+            "PivotView": {
                 "grandTotal": "Grand Total",
                 "total": "Total",
                 "value": "Valeur",

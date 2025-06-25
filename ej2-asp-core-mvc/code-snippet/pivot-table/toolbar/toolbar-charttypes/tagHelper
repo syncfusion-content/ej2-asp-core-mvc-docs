@@ -1,4 +1,4 @@
-<ejs-pivotview id="pivotview" width="100%" height="300" toolbar="@(new List<string>() {
+<ejs-pivotview id="PivotView" width="100%" height="300" toolbar="@(new List<string>() {
   "Grid", "Chart" })" chartTypes="@(new List<string>(){"Column", "Bar", "Line", "Area"})">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" enableSorting="true">
         <e-formatsettings>
