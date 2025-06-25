@@ -15,14 +15,15 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).GridSettings(gridSettings => gridSettings.PdfQueryCellInfo("pdfqueryCellInfo")).AllowPdfExport(true).Render()
+})).GridSettings(gridSettings => gridSettings.PdfHeaderQueryCellInfo("pdfHeaderCell")).AllowPdfExport(true).Render()
+
 <script>
     var pivotObj;
     document.getElementById('pdf').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pdfExport();
     }
-    function pdfqueryCellInfo(args) {
+    function pdfHeaderCell(args) {
 
     }
 </script>
