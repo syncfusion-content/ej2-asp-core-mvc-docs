@@ -90,7 +90,7 @@ You can render Template blocks by setting the `Type` property as `Template`. Tem
 
 Content in the Block Editor is managed through the `Content` property of blocks.
 
-Each content element can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
+Each content can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
 
 ### Setting content type
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blocks in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Blocks in Syncfusion Essential ##Platform_Name## Block Editor control, its elements, and more.
+description: Checkout and learn about Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Block Editor
 publishingplatform: ##Platform_Name##
@@ -90,7 +90,7 @@ You can render Template blocks by setting the `type` property as `Template`. Tem
 
 Content in the Block Editor is managed through the `content` property of `e-block` tag helper.
 
-Each content element can have properties like `id`, `type`, `content`, `styles`, and more to customize the appearance and behavior of your text.
+Each content can have properties like `id`, `type`, `content`, `styles`, and more to customize the appearance and behavior of your text.
 
 ### Setting content type
 
