@@ -18,8 +18,6 @@ ASP.NET Core Applications can be developed using one of the following IDEs. You 
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/)
-* [Visual Studio 2015](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Framework & SDK
@@ -28,15 +26,11 @@ One of the the following .NET SDK is required to develop and run the Syncfusion<
 
 * [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 * [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-* [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-* [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 * [.NET Core SDK 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 * [.NET Core SDK 2.0](https://dotnet.microsoft.com/en-us/download/dotnet/2.0)
 
 If you are planning to use Visual Studio to develop ASP.NET Core Applications.
 * .NET 9.0 requires Visual Studio 2022 17.12.0 or later.
 * .NET 8.0 requires Visual Studio 2022 17.8.0 or later.
-* .NET 7.0 requires Visual Studio 2022 17.4.3 or later.
-* .NET 6.0 requires Visual Studio 2022 17.0 or later.
 * .NET Core SDK 3.1 requires Visual Studio 2019 16.4 or later.
 * .NET Core SDK 2.0 requires Visual Studio 2017 15.7 or later.
