@@ -24,9 +24,9 @@ The code block is rendered with a monospaced font and preserved indentation for 
 
 ## Configuring code block languages
 
-The Code Block feature supports customizable programming languages via the `e-richtexteditor-codeblocksettings` property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
+The Code Block feature supports customizable programming languages via the [e-richtexteditor-codeblocksettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) property, specifically the `languages` and `defaultLanguage` options. The `languages` property accepts an array of objects defining available languages, while `defaultLanguage` sets the default language for new code blocks. This allows developers to customize the editor for project-specific languages.
 
-Below is an example of how to configure the `e-richtexteditor-codeblocksettings` using the Rich Text Editor:
+Below is an example of how to configure the [e-richtexteditor-codeblocksettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorCodeBlockSettings.html) using the Rich Text Editor:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
