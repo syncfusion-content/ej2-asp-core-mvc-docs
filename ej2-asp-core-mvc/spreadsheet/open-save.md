@@ -447,15 +447,18 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
-### Improving Excel file import performance with parsing options
+### Improving Excel File Open Performance with Parsing Options
 
-Working with large Excel files in the Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often due to the processing of additional features such as styles and number formats. Even when the actual data is minimal, these elements can significantly impact loading time and overall efficiency.
+Importing large Excel files into the Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often caused by the processing of additional elements such as styles and number formats—even when the actual data content is minimal. For example, an Excel file with only a small amount of data but a large number of styled or formatted empty cells can significantly impact load time and memory consumption.
 
-For instance, an Excel file containing only a small amount of data but a large number of empty cells with applied styles still requires the system to process each cell's style information. This can result in higher memory consumption, longer load times, and larger JSON responses.
+To address this, we've introduced parsing options that allow users to selectively skip non-essential features during the import process. By enabling options like `IgnoreStyle` and `IgnoreFormat`, you can reduce the amount of data processed, resulting in:
+* Faster load times
+* Lower memory usage
+* Smaller JSON responses
 
-To address these challenges, parsing options are available that allow users to selectively skip unnecessary features during the import process. By enabling parsing options such as `IgnoreStyle` and `IgnoreFormat`, the amount of data processed can be reduced—leading to faster load times, reduced memory usage, and smaller JSON responses.
+These enhancements are especially beneficial for users working with large or complex Excel files, offering a more efficient and responsive experience.
 
-These enhancements are particularly beneficial for users who frequently work with large or complex Excel files, providing a more efficient and responsive experience.
+> **Note:** These options are ideal when styles and number formats are not critical to your use case and the focus is on loading the actual data efficiently. 
 
 The code example below demonstrates how to configure the `IgnoreStyle` and `IgnoreFormat` parsing options on the `server-side`.
 
@@ -465,13 +468,14 @@ The code example below demonstrates how to configure the `IgnoreStyle` and `Igno
 ```csharp
 public IActionResult Open(IFormCollection openRequest) 
 { 
+    ...
     OpenRequest open = new OpenRequest(); 
     open.ParseOptions = new WorkbookParseOptions() { 
         IgnoreStyle = true, 
         IgnoreFormat = true
     }; 
+    ...
     return Content(Workbook.Open(open)); 
-
 } 
 ```
 
