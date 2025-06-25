@@ -53,7 +53,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% include code-snippet/block-editor/globalization/locale/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/block-editor/globalization/locale/text.cs %}
+{% include code-snippet/block-editor/globalization/locale/locale.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,7 +68,7 @@ RTL provides an option to switch the text direction and layout of the Block Edit
 {% include code-snippet/block-editor/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/block-editor/globalization/rtl/text.cs %}
+{% include code-snippet/block-editor/globalization/rtl/rtl.cs %}
 {% endhighlight %}
 {% endtabs %}
 
