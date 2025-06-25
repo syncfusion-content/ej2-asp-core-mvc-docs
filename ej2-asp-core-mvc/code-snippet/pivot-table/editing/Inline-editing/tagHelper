@@ -6,13 +6,14 @@
 		</e-formatsettings>
 		<e-rows>
 			<e-field name="Country"></e-field>
+			<e-field name="Product"></e-field>
 		</e-rows>
 		<e-columns>
-			<e-field name="Date"></e-field>
-			<e-field name="Product"></e-field>
+			<e-field name="Year"></e-field>
+			<e-field name="Quarter"></e-field>
 		</e-columns>
 		<e-values>
-			<e-field name="Quantity" caption="Units Sold"></e-field>
+			<e-field name="Sold" caption="Units Sold"></e-field>
 			<e-field name="Amount" caption="Sold Amount"></e-field>
 		</e-values>
 	</e-datasourcesettings>
