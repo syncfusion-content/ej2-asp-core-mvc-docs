@@ -1,4 +1,4 @@
-<ejs-pivotview id="pivotview"  height="300"  showGroupingBar="true">
+<ejs-pivotview id="PivotView"  height="300"  showGroupingBar="true">
     <e-datasourceSettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-rows>
             <e-field name="Year"></e-field>

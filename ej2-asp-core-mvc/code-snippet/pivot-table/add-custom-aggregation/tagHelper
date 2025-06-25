@@ -1,4 +1,4 @@
-<ejs-pivotview id="pivotview" height="300" dataBound="onDataBound" aggregateCellInfo="aggregateCell" showFieldList="true">
+<ejs-pivotview id="PivotView" height="300" dataBound="onDataBound" aggregateCellInfo="aggregateCell" showFieldList="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0"></e-field>
