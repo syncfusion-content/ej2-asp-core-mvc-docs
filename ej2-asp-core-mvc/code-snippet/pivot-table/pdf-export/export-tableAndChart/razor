@@ -1,3 +1,4 @@
+@using Syncfusion.EJ2.PivotView
 @Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
 
 @Html.EJS().PivotView("PivotView").Height("300").DisplayOption(new PivotViewDisplayOption { View = View.Both }).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
@@ -13,7 +14,7 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).AllowPdfExport(true).Render().ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+})).AllowPdfExport(true).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
 
 <script>
     var pivotObj;

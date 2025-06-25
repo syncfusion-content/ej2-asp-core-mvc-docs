@@ -2,7 +2,7 @@
 .ExpandAll(false)
 .Rows(rows =>
 {
-    columns.Name("EnerType").Add();
+    rows.Name("EnerType").Add();
 }).Columns(columns =>
 {
     columns.Name("EneSource").Add();

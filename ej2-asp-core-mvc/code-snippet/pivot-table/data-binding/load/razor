@@ -8,7 +8,7 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
- })).ShowGroupingbar(true).Load("load").Render()
+ })).ShowGroupingBar(true).Load("load").Render()
 
  <script>
     function load(args){

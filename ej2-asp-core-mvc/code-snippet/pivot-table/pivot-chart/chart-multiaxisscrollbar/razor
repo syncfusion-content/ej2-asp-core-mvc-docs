@@ -12,5 +12,5 @@
     columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
 }).Values(values =>
 {
-    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); values.Name("Products").Type("Count").Add();
-})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.EnableMultipleAxis(true).enableScrollOnMultiAxis(true).ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+    values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); values.Name("Products").DataType("Count").Add();
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.EnableMultipleAxis(true).EnableScrollOnMultiAxis(true).ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()

@@ -11,4 +11,14 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
- })).HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowColumnHeaderHyperlink(true)).Render()
+ })).HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowColumnHeaderHyperlink(true).CssClass("e-custom-class")).Render()
+  <style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>
