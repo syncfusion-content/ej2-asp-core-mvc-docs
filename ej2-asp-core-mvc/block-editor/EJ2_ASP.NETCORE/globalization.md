@@ -48,6 +48,28 @@ The Block Editor can be localized to any culture by defining the text of the Blo
 
 The below example shows adding the German culture locale(`de-DE`)
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/globalization/locale/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/block-editor/globalization/locale/text.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Locale](images/locale.png)
+
 ## RTL
 
 RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the `enableRtl` property to `true`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/globalization/rtl/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/block-editor/globalization/rtl/text.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![RTL](images/rtl.png)
