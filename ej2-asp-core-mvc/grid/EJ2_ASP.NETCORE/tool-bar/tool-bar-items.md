@@ -145,8 +145,8 @@ In the following example, an ASP.NET Core Razor view is used to define an [AutoC
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/toolbar/custom-component/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-componet.cs" %}
-{% include code-snippet/grid/toolbar/custom-componet/custom-componet.cs %}
+{% highlight c# tabtitle="custom-component.cs" %}
+{% include code-snippet/grid/toolbar/custom-component/custom-component.cs %}
 {% endhighlight %}
 {% endtabs %}
 

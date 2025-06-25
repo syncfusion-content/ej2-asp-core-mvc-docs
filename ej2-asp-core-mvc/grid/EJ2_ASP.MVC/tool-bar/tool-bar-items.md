@@ -141,10 +141,10 @@ In the following example, an ASP.NET MVC Razor view is used to define an [AutoCo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/toolbar/custom-componet/razor %}
+{% include code-snippet/grid/toolbar/custom-component/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="custom-componet.cs" %}
-{% include code-snippet/grid/toolbar/custom-componet/custom-componet.cs %}
+{% highlight c# tabtitle="custom-component.cs" %}
+{% include code-snippet/grid/toolbar/custom-component/custom-component.cs %}
 {% endhighlight %}
 {% endtabs %}
 
