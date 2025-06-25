@@ -32,10 +32,7 @@
     }
     function updateTemplate() {
         var pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        if (!ej.base.isNullOrUndefined(rowPager)) {
-            rowPager.destroy();
-            rowPager = null;
-        }
+
         rowPager = new ej.grids.Pager({
             pageSize: pivotObj.pageSettings.rowPageSize,
             totalRecordsCount: pivotObj.engineModule.rowCount,
@@ -44,10 +41,7 @@
             click: rowPageClick
         });
         rowPager.appendTo('#row-pager');
-        if (!ej.base.isNullOrUndefined(columnPager)) {
-            columnPager.destroy();
-            columnPager = null;
-        }
+
         columnPager = new ej.grids.Pager({
             pageSize: pivotObj.pageSettings.columnPageSize,
             totalRecordsCount: pivotObj.engineModule.columnCount,

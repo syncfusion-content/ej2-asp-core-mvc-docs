@@ -1,4 +1,4 @@
-@Html.EJS().PivotView("PivotView").Height(300).GroupingBarSettings(new Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings { ShowValueTypeIcon = false }).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ShowGroupingBar(false)
+@Html.EJS().PivotView("PivotView").Height(300).ShowGroupingBar(true).GroupingBarSettings(new Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings { ShowValueTypeIcon = false }).DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource)
  .Rows(rows =>
  {
      rows.Name("Country").Add(); rows.Name("Products").Add();
