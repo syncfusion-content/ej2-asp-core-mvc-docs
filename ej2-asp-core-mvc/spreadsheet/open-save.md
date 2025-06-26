@@ -447,7 +447,7 @@ The following code snippet demonstrates how to configure the deserialization opt
 {% endtabs %}
 {% endif %}
 
-### Improving Excel File Open Performance with Parsing Options
+### Improving Excel file open performance with parsing options
 
 Opening large Excel files into the EJ2 Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often caused by the processing of additional elements such as styles and number formats—even when the actual data content is minimal. For example, an Excel file with only a small amount of data but a large number of styled or formatted empty cells can significantly impact load time and memory consumption.
 
