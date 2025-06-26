@@ -22,3 +22,14 @@ The undo/redo feature in Block Editor enables users to revert or reapply changes
 ## Configuring Undo/Redo stack
 
 Block Editor allows up to `30` Undo/Redo actions by default. You can modify the number of undo/redo steps using the `undoRedoStack` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/undo-redo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/block-editor/undo-redo/undoredo.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Undo Redo](images/undo-redo.png)
