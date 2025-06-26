@@ -6,6 +6,6 @@
 
 <style>
     #blockeditor-container {
-       margin:20px auto;
+       margin: 20px auto;
     }
 </style>

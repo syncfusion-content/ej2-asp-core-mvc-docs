@@ -146,38 +146,6 @@ Refer `rename.cs` controller file for configure the server-side.
 {% endtabs %}
 {% endif %}
 
-### Restricting Video by Size
-
-You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event.
-
-> The file size in the argument will be returned in `bytes`.
-
-In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/check-video-size/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/check-video-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/check-video-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/check-video-size/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ### Uploading Video with Authentication
 
 You can add additional data with the video uploaded from the Rich Text Editor on the client side, which can even be received on the server side. By using the [FileUploading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_FileUploading) event and its `CustomFormData` argument, you can pass parameters to the controller action. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
@@ -203,6 +171,35 @@ N> By default, it doesn't support the `UseDefaultCredentials` property, you can 
 {% endhighlight %}
 {% highlight c# tabtitle="SaveFile.cs" %}
 {% include code-snippet/rich-text-editor/video-authenticate/saveFile.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Maximum file size restrictions
+
+You can restrict the video uploaded from the local machine when the uploaded video file size is greater than the allowed size by using the [InsertVideoSettings.MaxFileSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorVideoSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorVideoSettings_MaxFileSize) property. By default, the maximum file size is 30000000 bytes. You can configure this size as follows.
+
+In the following example, the video size has been validated before uploading and determined whether the video has been uploaded or not.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/check-video-size/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/check-video-size/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/check-video-size/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/check-video-size/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
