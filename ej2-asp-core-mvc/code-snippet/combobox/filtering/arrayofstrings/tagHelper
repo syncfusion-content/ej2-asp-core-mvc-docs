@@ -1,0 +1,10 @@
+@{
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+}
+
+<div class="control-wrapper">
+    <div id="default" style='padding-top:75px;'>
+        <ejs-combobox id="games" dataSource="@data" placeholder="Select a game" popupHeight="220px" debounceDelay="300">
+        </ejs-combobox>
+    </div>
+</div>

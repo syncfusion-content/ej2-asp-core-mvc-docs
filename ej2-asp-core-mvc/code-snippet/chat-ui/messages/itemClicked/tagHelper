@@ -1,0 +1,35 @@
+@using Syncfusion.EJ2.InteractiveChat;
+
+<div style="height:380px; width:450px">
+    <ejs-chatui id="chatUser" >
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messagetoolbarsettings items="ViewBag.MessageToolbarItems" itemClicked="onMessageToolbarClicked"></e-chatui-messagetoolbarsettings>
+        <e-chatui-messages>
+            @foreach (var message in ViewBag.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+@section PreScripts {
+    <script>
+        function onMessageToolbarClicked(args) {
+            if (args.item.prefixIcon === "e-icons e-chat-forward") {
+                var newMessageObj = {
+                    id: 'chat-message-' + (chatUIObj.messages.length + 1).toString(),
+                    isForwarded: true,
+                    isPinned: args.message.isPinned,
+                    author: args.message.author,
+                    text: args.message.text,
+                    timeStamp: args.message.timeStamp,
+                    timeStampFormat: args.message.timeStampFormat,
+                    status: args.message.status,
+                    replyTo: args.message.replyTo
+                };
+                chatUIObj.addMessage(newMessageObj);
+            }
+        }
+    </script>
+}
