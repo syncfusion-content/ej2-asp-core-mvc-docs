@@ -685,3 +685,312 @@ Meanwhile, the memory cache is set to expire after 60 minutes from RAM to free i
 * **GetMembers:** Allows to get the members of a field. This fires when the member editor is opened to do a filtering operation.
 * **GetRawData:** Allows to get raw data of an aggregated value cell. This fires when the drill-through or editing dialog is opened.
 * **GetPivotValues:** Allows to update the stored engine properties in-memory cache and returns the aggregated values to browser to render the Pivot Table. Here, the return value can be modified. The Pivot Table will be rendered browser-based on this.
+
+## Excel Export
+
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the `excelExport` method to export the pivot table to Excel by clicking an external button.
+
+N> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
+
+```html
+
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Price").Format("C").Add();
+}).Rows(rows =>
+{
+    rows.Name("ProductID").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Add();
+    values.Name("Price").Add();
+})
+).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+</script>
+```
+
+To enable export functionality in a server-side controller, initialize the **ExcelExport** class to handle export file generation.
+
+```csharp
+ private ExcelExport excelExport = new ExcelExport();
+```
+
+Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), invoke the **ExportToExcel** method in the **Post** method of the **PivotController.cs** file.
+
+```csharp
+        [Route("/api/pivot/post")]
+        [HttpPost]
+        public async Task<object> Post([FromBody] object args)
+        {
+            FetchData param = JsonConvert.DeserializeObject<FetchData>(args.ToString());
+            if (param.Action == "fetchFieldMembers")
+            {
+                return await GetMembers(param);
+            }
+            else if (param.Action == "fetchRawData")
+            {
+                return await GetRawData(param);
+            }
+            else if (param.Action == "onExcelExport" || param.Action == "onCsvExport" ||
+                  param.Action == "onPivotExcelExport" || param.Action == "onPivotCsvExport")
+            {
+                EngineProperties engine = await GetEngine(param);
+                if (param.InternalProperties.EnableVirtualization && param.ExportAllPages)
+                {
+                    engine = await PivotEngine.PerformAction(engine, param);
+                }
+                if (param.Action == "onExcelExport")
+                {
+                    return excelExport.ExportToExcel("Excel", engine, null, param.ExcelExportProperties);
+                }
+                else
+                {
+                    return excelExport.ExportToExcel("CSV", engine, null, param.ExcelExportProperties);
+                }
+            }
+            else
+            {
+                return await GetPivotValues(param);
+            }
+        }
+
+```
+
+![Server-side engine excel exporting](images/excel-export-with-server-side-pivot-engine.png)
+
+### Add header and footer while exporting
+
+The Excel export provides an option to include header and footer content for the excel document before exporting. In-order to add header and footer, define **header** and **footer** properties in **excelExportProperties** object and pass it as a parameter to the `excelExport` method.
+
+``` html
+
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Price").Format("C").Add();
+}).Rows(rows =>
+{
+    rows.Name("ProductID").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Add();
+    values.Name("Price").Add();
+})
+).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        var excelExportProperties = {
+            header: {
+                headerRows: 2,
+                rows: [
+                    { cells: [{ colSpan: 4, value: "Pivot Grid", style: { fontColor: '#C67878', fontSize: 20, hAlign: 'Center', bold: true, underline: true } }] }
+                ]
+            },
+            footer: {
+                footerRows: 4,
+                rows: [
+                    { cells: [{ colSpan: 4, value: "Thank you for your business!", style: { hAlign: 'Center', bold: true } }] },
+                    { cells: [{ colSpan: 4, value: "!Visit Again!", style: { hAlign: 'Center', bold: true } }] }
+                ]
+            }
+        };
+        pivotObj.excelExport(excelExportProperties);
+    }
+</script>
+```
+
+![Add header and footer while exporting](images/add-header-and-footer-while-exporting.png)
+
+## CSV Export
+
+The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
+
+N> The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
+
+```html
+
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Price").Format("C").Add();
+}).Rows(rows =>
+{
+    rows.Name("ProductID").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Add();
+    values.Name("Price").Add();
+})
+).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.csvExport();
+    }
+</script>
+```
+
+To enable export functionality in a server-side controller, initialize the **ExcelExport** class to handle export file generation.
+
+```csharp
+ private ExcelExport excelExport = new ExcelExport();
+```
+
+Then, based on the **Action** parameter (**onExcelExport** or **onCsvExport**), invoke the **ExportToExcel** method in the **Post** method of the **PivotController.cs** file.
+
+```csharp
+        [Route("/api/pivot/post")]
+        [HttpPost]
+        public async Task<object> Post([FromBody] object args)
+        {
+            FetchData param = JsonConvert.DeserializeObject<FetchData>(args.ToString());
+            if (param.Action == "fetchFieldMembers")
+            {
+                return await GetMembers(param);
+            }
+            else if (param.Action == "fetchRawData")
+            {
+                return await GetRawData(param);
+            }
+            else if (param.Action == "onExcelExport" || param.Action == "onCsvExport" ||
+                  param.Action == "onPivotExcelExport" || param.Action == "onPivotCsvExport")
+            {
+                EngineProperties engine = await GetEngine(param);
+                if (param.InternalProperties.EnableVirtualization && param.ExportAllPages)
+                {
+                    engine = await PivotEngine.PerformAction(engine, param);
+                }
+                if (param.Action == "onExcelExport")
+                {
+                    return excelExport.ExportToExcel("Excel", engine, null, param.ExcelExportProperties);
+                }
+                else
+                {
+                    return excelExport.ExportToExcel("CSV", engine, null, param.ExcelExportProperties);
+                }
+            }
+            else
+            {
+                return await GetPivotValues(param);
+            }
+        }
+
+```
+![CSV Export](images/csv-export-with-server-side-pivot-engine.png)
+
+## Export as Pivot
+
+You can export a Syncfusion PivotTable to an Excel file while preserving its native pivot structure using the server-side engine. The exported Excel document contains a fully interactive PivotTable, allowing users to dynamically modify configurations such as filtering, sorting, grouping, and aggregation directly in Microsoft Excel.
+
+To enable native Excel pivot export in the PivotTable, the user must call the `exportAsPivot` method to export the PivotTable to Excel by clicking an external button, specifying the export type (**Excel** or **CSV**) as a parameter.
+
+```html
+
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
+.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+.FormatSettings(formatsettings =>
+{
+    formatsettings.Name("Price").Format("C").Add();
+}).Rows(rows =>
+{
+    rows.Name("ProductID").Add();
+}).Columns(columns =>
+{
+    columns.Name("Year").Add();
+}).Values(values =>
+{
+    values.Name("Sold").Add();
+    values.Name("Price").Add();
+})
+).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.exportAsPivot();
+    }
+</script>
+```
+
+To enable native Excel pivot export functionality in a server-side controller, initialize the **PivotExportEngine** class to handle export file generation.
+
+```csharp
+    private PivotExportEngine<PivotData> pivotExport = new PivotExportEngine<PivotData>();
+```
+
+Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvExport**), invoke the **ExportAsPivot** method in the **Post** method of the **PivotController.cs** file.
+
+```csharp
+        [Route("/api/pivot/post")]
+        [HttpPost]
+        public async Task<object> Post([FromBody] object args)
+        {
+            FetchData param = JsonConvert.DeserializeObject<FetchData>(args.ToString());
+            if (param.Action == "fetchFieldMembers")
+            {
+                return await GetMembers(param);
+            }
+            else if (param.Action == "fetchRawData")
+            {
+                return await GetRawData(param);
+            }
+            else if (param.Action == "onExcelExport" || param.Action == "onCsvExport" ||
+                    param.Action == "onPivotExcelExport" || param.Action == "onPivotCsvExport")
+            {
+                EngineProperties engine = await GetEngine(param);
+                if (param.InternalProperties.EnableVirtualization && param.ExportAllPages)
+                {
+                    engine = await PivotEngine.PerformAction(engine, param);
+                }
+                if (param.Action == "onExcelExport")
+                {
+                    return excelExport.ExportToExcel("Excel", engine, null, param.ExcelExportProperties);
+                }
+                else if (param.Action == "onPivotExcelExport" || param.Action == "onPivotCsvExport")
+                {
+                    return pivotExport.ExportAsPivot(param.Action == "onPivotExcelExport" ? ExportType.Excel : ExportType.CSV, engine, param);
+                }
+                else
+                {
+                    return excelExport.ExportToExcel("CSV", engine, null, param.ExcelExportProperties);
+                }
+            }
+            else
+            {
+                return await GetPivotValues(param);
+            }
+        }
+```

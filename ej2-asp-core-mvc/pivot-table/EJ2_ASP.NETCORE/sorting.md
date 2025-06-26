@@ -164,6 +164,43 @@ N> Value fields are set to the column axis by default. In such cases, the value 
 
 ![output](images/valuesorting.png)
 
+### Multiple Axis Sorting
+
+Users can apply value sorting to both row and column axes simultaneously for more dynamic and precise data analysis. The following settings are used to configure sorting:
+
+* [`columnHeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_ColumnHeaderText): Specifies the column header hierarchy for value sorting. Header levels are defined from Level 1 to N using a delimiter for clarity.
+* [`headerDelimiter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter): It allows to set the delimiters string to separate the header text between levels.
+* [`columnSortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_ColumnSortOrder): Sets the delimiter string used to separate levels in the column header text.
+* [`rowHeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_RowHeaderText): Defines the specific row header for which the value sorting should be applied.
+* [`rowSortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_RowSortOrder): Determines the sorting direction for the specified row header.
+
+N> This feature is applicable only to relational data sources.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleAxisSorting.cs" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleAxisSorting.cs" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Multiple Axis Sorting](images/multiple-axis-sorting.png)
+
 ## Event
 
 ### OnHeadersSort
