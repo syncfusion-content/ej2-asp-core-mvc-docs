@@ -348,4 +348,4 @@ The following complete example demonstrates how to enable the property panel by 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart integration](../images/GridChart2.gif)
+![Chart integration](../images/GridChart2.gif) 
