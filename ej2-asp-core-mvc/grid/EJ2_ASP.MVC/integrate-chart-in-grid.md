@@ -20,9 +20,9 @@ To integrate Charts into your Grid, follow these steps:
 
 ### Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/aspnetcore/overview/getting-started/introduction/getting-started#create-your-first-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
 ### Install ASP.NET MVC package in the application
 
