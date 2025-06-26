@@ -2,7 +2,7 @@ using Syncfusion.EJ2.BlockEditor;
 
 public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
 
-public ActionResult Locale()
+public ActionResult Rtl()
 {
         BlocksData.Add(new BlockModel() {
                 id = "block-1",

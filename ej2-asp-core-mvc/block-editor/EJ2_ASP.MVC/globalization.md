@@ -52,7 +52,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/block-editor/globalization/locale/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Text.cs" %}
+{% highlight c# tabtitle="Locale.cs" %}
 {% include code-snippet/block-editor/globalization/locale/locale.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -67,7 +67,7 @@ RTL provides an option to switch the text direction and layout of the Block Edit
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/block-editor/globalization/rtl/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Text.cs" %}
+{% highlight c# tabtitle="Rtl.cs" %}
 {% include code-snippet/block-editor/globalization/rtl/rtl.cs %}
 {% endhighlight %}
 {% endtabs %}
