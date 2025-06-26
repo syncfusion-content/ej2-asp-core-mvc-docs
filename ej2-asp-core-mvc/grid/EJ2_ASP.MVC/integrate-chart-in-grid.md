@@ -10,7 +10,7 @@ documentation: ug
 
 # Integrate Chart in Syncfusion ASP.NET MVC Grid
 
-The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://ej2.syncfusion.com/mvc/documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
+The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://ej2.syncfusion.com/aspnetcore/documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
 This feature is particularly useful in dashboards, reporting tools, and data-driven applications where both tabular and visual representations of data are required.
 
@@ -20,7 +20,7 @@ To integrate Charts into your Grid, follow these steps:
 
 ### Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/aspnetcore/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
 
@@ -144,11 +144,11 @@ Use the [ContextMenuClick](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2
 
 * Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
 
-  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/mvc/documentation/chart/chart-types), and selected records.
+  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetcore/documentation/chart/chart-types), and selected records.
 
   * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's Chart Model for detailed configurations, options, and customization possibilities.
 
-  * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/mvc/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/mvc/documentation/chart/chart-series) in the Chart.
+  * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/aspnetcore/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/aspnetcore/documentation/chart/chart-series) in the Chart.
 
     * Category fields: Define the grouping axis.
     * Series fields: Define the actual values plotted on the Chart.
@@ -184,18 +184,14 @@ function contextMenuClick(args) {
 
 ```
 
-{% endraw %}
-{% endhighlight %}
-{% endtabs %}
-
 The following complete example demonstrates how to integrate Charts into a Grid context menu using the `ContextMenuClick` event with `gridChart.render` method:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/chart-intergartion/razor %}
+{% include code-snippet/grid/chart-intergartion/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="chart.cs" %}
-{% include code-snippet/grid/paging/chart-intergartion/chart.cs %}
+{% include code-snippet/grid/chart-intergartion/chart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,9 +251,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](https://ej2.syncfusion.com/mvc/documentation/chart/getting-started) by defining a `chartModel` object in the `chart` property of the `model` object within the [ContextMenuClick](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Charts.Chart.html#properties) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) by defining a `chartModel` object in the `chart` property of the `model` object within the [ContextMenuClick](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Charts.Chart.html#properties) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](https://ej2.syncfusion.com/mvc/documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#properties) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://help.syncfusion.com/cr/mvc-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#properties) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 
@@ -345,10 +341,10 @@ The following complete example demonstrates how to enable the property panel by 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/paging/chart-intergartion1/razor %}
+{% include code-snippet/grid/chart-intergartion1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="chart.cs" %}
-{% include code-snippet/grid/paging/chart-intergartion1/chart.cs %}
+{% include code-snippet/grid/chart-intergartion1/chart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
