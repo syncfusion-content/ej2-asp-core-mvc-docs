@@ -1,0 +1,79 @@
+@Html.EJS().Uploader("UploadFiles").AutoUpload(false).Selected("onSelect").AllowedExtensions(".xml").Render()
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("450px").TaskFields(ts =>
+           ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentID("ParentId")
+       ).Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(250).Add();
+            col.Field("StartDate").HeaderText("Start Date").Add();
+            col.Field("Duration").HeaderText("Duration").Add();
+            col.Field("Progress").HeaderText("Progress").Format("C").Add();
+        }).Render()
+        
+<script>
+   function transformGanttData(data) {
+      return data.GanttTasks.task.map(task => ({
+        TaskId: task.TaskId ? Number(task.TaskId["#text"]) : null,
+        TaskName: task.TaskName ? task.TaskName["#text"] : null,
+        StartDate: task.StartDate ? task.StartDate["#text"] : null,
+        EndDate: task.EndDate ? task.EndDate["#text"] : null,
+        Duration: task.Duration && "#text" in task.Duration ? Number(task.Duration["#text"]) : null,
+        BaselineStartDate: task.BaselineStartDate ? task.BaselineStartDate["#text"] : null,
+        BaselineEndDate: task.BaselineEndDate ? task.BaselineEndDate["#text"] : null,
+        Progress: task.Progress ? Number(task.Progress["#text"]) : null,
+        ParentId: task.ParentId && "#text" in task.ParentId ? Number(task.ParentId["#text"]) : null,
+        Predecessor: task.Predecessor && "#text" in task.Predecessor ? task.Predecessor["#text"] : null,
+      }));
+   }
+function onSelect(args) {
+      var file = args.filesData[0].rawFile;
+      var reader = new FileReader();
+
+      reader.onload = function(event) {
+        var xmlString = event.target.result;
+        var parser = new DOMParser();
+        var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+        var ganttTasks = xmlToJson(xmlDoc);
+        var transformedData = transformGanttData(ganttTasks);
+        var ganttObj = document.getElementsByClassName('e-gantt')[0].ej2_instances[0];
+        ganttObj.dataSource = transformedData;
+      };
+   reader.readAsText(file);
+}
+
+function xmlToJson(xml) {
+    var obj = {};
+
+    if (xml.nodeType === 1) { // Element
+        if (xml.attributes.length > 0) {
+            obj["attributes"] = {};
+            for (var j = 0; j < xml.attributes.length; j++) {
+                var attribute = xml.attributes.item(j);
+                obj["attributes"][attribute.nodeName] = attribute.nodeValue;
+            }
+        }
+    } else if (xml.nodeType === 3) { // Text
+        obj = xml.nodeValue.trim();
+    }
+
+    if (xml.hasChildNodes()) {
+        for (var i = 0; i < xml.childNodes.length; i++) {
+            var item = xml.childNodes.item(i);
+            var nodeName = item.nodeName;
+
+            if (typeof obj[nodeName] === "undefined") {
+                obj[nodeName] = xmlToJson(item);
+            } else {
+                if (!Array.isArray(obj[nodeName])) {
+                    obj[nodeName] = [obj[nodeName]];
+                }
+                obj[nodeName].push(xmlToJson(item));
+            }
+        }
+    }
+
+   return obj;
+}
+</script>
