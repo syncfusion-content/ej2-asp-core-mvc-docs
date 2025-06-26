@@ -210,6 +210,41 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 ![Alt text](images/timelinecellTooltip.png)
 
+## Show/hide weekends
+
+The [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property is used to customize the timeline in the Gantt component by controlling the visibility of weekends. To exclude weekends from the timeline, set the `showWeekend` property to `false` in the `timelineSettings` configuration. This feature is particularly useful for focusing the timeline on working days, enhancing project management efficiency by hiding weekends from the view.
+
+>Note: To customize non-working or weekend days in the Gantt chart, refer to the [workWeek](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/task-scheduling#weekendnon-working-days) documentation for detailed information.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/showWeekend/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="showWeekend.cs" %}
+{% include code-snippet/gantt/timeline/showWeekend/showWeekend.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/showWeekend/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="showWeekend.cs" %}
+{% include code-snippet/gantt/timeline/showWeekend/showWeekend.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> Limitations
+>* The `showWeekend` feature does not support baselines.
+>* The `showWeekend` is not compatible with the manual task mode.
+>* Non-working hours cannot be excluded when `showWeekend` is set to false.
+>* Holidays are not excluded from the timeline if `showWeekend` is set to false.
+
 ## Timeline template
 
 In the Gantt component, you can customize timeline cells using the [timelineTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTemplate.html) property, allowing for the customization of HTML content within timeline cells. This feature enhances the visual appeal and enables personalized functionality.

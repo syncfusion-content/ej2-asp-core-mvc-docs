@@ -10,9 +10,9 @@ documentation: ug
 
 # Text Markup Annotation in the ASP.NET MVC PDF Viewer component
 
-The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, and strikethrough annotations in the PDF document.
+The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, strikethrough and squiggly annotations in the PDF document.
 
-![Alt text](../images/text_markup_annotation.png)
+![Alt text](../../images/text_markup_annotation.png)
 
 ## Highlight a text
 
@@ -22,7 +22,7 @@ There are two ways to highlight a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select **Highlight** option in the context menu that appears.
 
-![Alt text](../images/highlight_context.png)
+![Alt text](../../images/highlight_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2. Using the annotation toolbar
@@ -31,7 +31,7 @@ There are two ways to highlight a text in the PDF document:
     * Select the text and the highlight annotation will be added.
     * You can also select the text and apply the highlight annotation using the **Highlight** button.
 
-![Alt text](../images/highlight_button.PNG)
+![Alt text](../../images/highlight_button.PNG)
 
 In the pan mode, if the highlight mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for highlighting the text.
 
@@ -171,7 +171,7 @@ There are two ways to underline a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select the **Underline** option in the context menu that appears.
 
-![Alt text](../images/underline_context.png)
+![Alt text](../../images/underline_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2. Using the annotation toolbar
@@ -180,7 +180,7 @@ There are two ways to underline a text in the PDF document:
     * Select the text and the underline annotation will be added.
     * You can also select the text and apply the underline annotation using the **Underline** button.
 
-![Alt text](../images/underline_button.png)
+![Alt text](../../images/underline_button.png)
 
 In the pan mode, if the underline mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for underlining the text.
 
@@ -319,7 +319,7 @@ There are two ways to strikethrough a text in the PDF document:
     * Select a text in the PDF document and right-click it.
     * Select the **Strikethrough** option in the context menu that appears.
 
-![Alt text](../images/strikethrough_context.png)
+![Alt text](../../images/strikethrough_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2. Using the annotation toolbar
@@ -328,7 +328,7 @@ There are two ways to strikethrough a text in the PDF document:
     * Select the text and the strikethrough annotation will be added.
     * You can also select the text and apply the strikethrough annotation using the **Strikethrough** button.
 
-![Alt text](../images/strikethrough_button.png)
+![Alt text](../../images/strikethrough_button.png)
 
 In the pan mode, if the strikethrough mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for striking through the text.
 
@@ -461,6 +461,157 @@ Here's an example of how you can use the **addAnnotation()** method to apply Str
 {% endhighlight %}
 {% endtabs %}
 
+## Squiggly a text
+
+There are two ways to add a squiggly annotation to text in the PDF document:
+
+1. Using the context menu
+    * Select a text in the PDF document and right-click it.
+    * Select the **Squiggly** option in the context menu that appears.
+
+![Alt text](../../images/squiggly_context.png)
+
+<!-- markdownlint-disable MD029 -->
+2. Using the annotation toolbar
+    * Click the **Edit Annotation** button in the PDF Viewer toolbar. A toolbar appears below it.
+    * Select the **Squiggly** button in the annotation toolbar. It enables the squiggly mode.
+    * Select the text and the squiggly annotation will be added.
+    * You can also select the text and apply the squiggly annotation using the **Squiggly** button.
+
+![Alt text](../../images/squiggly_button.png)
+
+In the pan mode, if the squiggly mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for adding squiggly to the text.
+
+Refer to the following code sample to switch to the squiggly mode.
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+
+    <!--Element to set text markup annotation mode-->
+    <button id="set" onclick="addAnnot()">Squiggly</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('Squiggly');
+        }
+    </script>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+
+    <!--Element to set text markup annotation mode-->
+    <button id="set" onclick="addAnnot()">Squiggly</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('Squiggly');
+        }
+    </script>
+
+{% endhighlight %}
+{% endtabs %}
+
+Refer to the following code sample to switch back to normal mode from the squiggly mode.
+
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+    <!--Element to set text markup annotation mode-->
+    <button id="set" onclick="addAnnot()">Squiggly</button>
+    <!--Element to set normal mode-->
+    <button id="setNone" onclick="setNone()">Normal Mode</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('Squiggly');
+        }
+
+        function setNone() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('None');
+        }
+    </script>
+
+{% endhighlight %}
+{% highlight html tabtitle="Server-Backed" %}
+
+    <!--Element to set text markup annotation mode-->
+    <button id="set" onclick="addAnnot()">Squiggly</button>
+    <!--Element to set normal mode-->
+    <button id="setNone" onclick="setNone()">Normal Mode</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+    <script>
+        function addAnnot() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('Squiggly');
+        }
+
+        function setNone() {
+            var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
+            pdfViewer.annotation.setAnnotationMode('None');
+        }
+    </script>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Squiggly a text programmatically
+
+The PDF Viewer library enables you to programmatically Squiggly text within the PDF Viewer control using the **addAnnotation()** method.
+
+Here's an example of how you can use the **addAnnotation()** method to apply Squiggly programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="Standalone" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Squiggly", {
+      bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+      pageNumber: 2
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% highlight cshtml tabtitle="Server-Backed" %}
+
+<button id="set" onclick="addAnnotation()">Add annotation programmatically</button>
+    <div style="width:100%;height:600px">
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").Render()
+    </div>
+<script>
+  function addAnnotation() {
+    var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+    viewer.annotation.addAnnotation("Squiggly", {
+      bounds: [{ x: 250, y: 144, width: 345, height: 14 }],
+      pageNumber: 2
+    });
+  }
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Deleting a text markup annotation
 
 The selected annotation can be deleted in the following ways:
@@ -473,7 +624,7 @@ The selected annotation can be deleted in the following ways:
     * Select the annotation to be deleted.
     * Click the **Delete Annotation** button in the annotation toolbar. The selected annotation will be deleted.
 
-![Alt text](../images/delete_button.png)
+![Alt text](../../images/delete_button.png)
 
 ## Editing the properties of the text markup annotation
 
@@ -483,17 +634,17 @@ The color and the opacity of the text markup annotation can be edited using the 
 
 The color of the annotation can be edited using the color palette provided in the Edit Color tool.
 
-![Alt text](../images/edit_color.png)
+![Alt text](../../images/edit_color.png)
 
 ### Editing opacity
 
 The opacity of the annotation can be edited using the range slider provided in the Edit Opacity tool.
 
-![Alt text](../images/edit_opacity.png)
+![Alt text](../../images/edit_opacity.png)
 
 ## Setting default properties during the control initialization
 
-The properties of the text markup annotation can be set before creating the control using the highlightSettings, underlineSettings, and strikethroughSettings.
+The properties of the text markup annotation can be set before creating the control using the highlightSettings, underlineSettings, strikethroughSettings and squigglySettings.
 
 N>After editing the default color and opacity using the Edit Color tool and Edit Opacity tool, they will be changed to the selected values.
 
@@ -503,14 +654,14 @@ Refer to the following code sample to set the default annotation settings.
 {% highlight html tabtitle="Standalone" %}
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").HighlightSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings{Author = "Guest User", Color = "#ffff00", Opacity = 0.9 }).UnderlineSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings{ Author = "Guest User", Color = "#00ffff", Opacity = 0.9 }).StrikethroughSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings{ Author = "Guest User", Color = "#ff00ff", Opacity = 0.9, }).Render()
+    @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").HighlightSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings{Author = "Guest User", Color = "#ffff00", Opacity = 0.9 }).UnderlineSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings{ Author = "Guest User", Color = "#00ffff", Opacity = 0.9 }).StrikethroughSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings{ Author = "Guest User", Color = "#ff00ff", Opacity = 0.9, }).SquigglySettings(new Syncfusion.EJ2.PdfViewer.PdfViewerSquigglySettings{ Author = "Guest User", Color = "#0000ff", Opacity = 0.9 }).Render()
 </div>
 
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
 <div style="width:100%;height:600px">
-    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").HighlightSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings{Author = "Guest User", Color = "#ffff00", Opacity = 0.9 }).UnderlineSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings{ Author = "Guest User", Color = "#00ffff", Opacity = 0.9 }).StrikethroughSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings{ Author = "Guest User", Color = "#ff00ff", Opacity = 0.9, }).Render()
+    @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/PdfViewer/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").HighlightSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerHighlightSettings{Author = "Guest User", Color = "#ffff00", Opacity = 0.9 }).UnderlineSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerUnderlineSettings{ Author = "Guest User", Color = "#00ffff", Opacity = 0.9 }).StrikethroughSettings(new Syncfusion.EJ2.PdfViewer.PdfViewerStrikethroughSettings{ Author = "Guest User", Color = "#ff00ff", Opacity = 0.9, }).SquigglySettings(new Syncfusion.EJ2.PdfViewer.PdfViewerSquigglySettings{ Author = "Guest User", Color = "#0000ff", Opacity = 0.9 })Render()
 </div>
 
 {% endhighlight %}

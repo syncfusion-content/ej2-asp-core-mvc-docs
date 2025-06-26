@@ -115,6 +115,30 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 ![Reorder column based on field names](../images/column-reorder/column-reorder-field.gif)
 
+### Reorder columns using the column model (ideal for stacked headers)
+
+Previously, column reordering in the Grid was handled using methods like `reorderColumnByIndex`, `reorderColumns`, and `reorderColumnByTargetIndex`. These methods allowed reordering based on field names or index positions and were suitable for simple, flat column structures.
+
+To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support `stacked header columns`, but it also works with normal column configurations.
+
+The `reorderColumnByModel` method accepts two arguments:
+
+* **fromColumn**: The column object that you want to move.
+* **toColumn**: The target column object before which the **fromColumn** should be placed.
+
+In this example, **Order Details** is moved before **Customer Name**, and **Ship Country** is moved before **Ship Name** within **Ship Details**, showing how `reorderColumnByModel` method reorders both normal and stacked header columns using a button click.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/reorderColumnByModel/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Reorder.cs" %}
+{% include code-snippet/grid/columns/reorderColumnByModel/reorder.cs %}
+{% endhighlight %}
+{% endtabs %} 
+
+![Column reorder by columnmodel](../images/column-reorder/columreorderByColumnModel.gif)
+
 ## Reorder events
 
 When reordering columns in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
