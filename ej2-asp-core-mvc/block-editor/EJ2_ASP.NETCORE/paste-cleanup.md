@@ -31,6 +31,17 @@ The `deniedTags` property in `pasteSettings` enables you to specify HTML tags th
 
 In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/paste-cleanup/allowedStyle/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AllowedStyle.cs" %}
+{% include code-snippet/block-editor/paste-cleanup/allowedStyle/allowedstyle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Allowed Styles](images/allowedStyles.png)
+
 ## Disable Keep format
 
 By default, the editor attempts to keep the formatting of the pasted content (e.g., bold, italics, links). You can disable this behavior by setting the `keepFormat` property to `false` in `pasteSettings`. When disabled, the editor will primarily paste the content as plain text regardless of `allowedStyles`.
@@ -38,6 +49,17 @@ By default, the editor attempts to keep the formatting of the pasted content (e.
 ## Allowing plain text
 
 To paste content purely as plain text, stripping all HTML tags and inline styles, you can set the `plainText` property to `true` in `pasteSettings`. This ensures that only the raw textual content is inserted into the editor, making it ideal for maintaining strict content consistency. By default, the `plainText` property is set to `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/paste-cleanup/plainText/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Text.cs" %}
+{% include code-snippet/block-editor/paste-cleanup/plainText/plaintext.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Plain Text](images/plainText.png)
 
 ### Events
 
