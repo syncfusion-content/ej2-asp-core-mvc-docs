@@ -1,0 +1,99 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"
+    contextMenuItems="@(new List<object>() { 
+      "Bar", "StackingBar", "StackingBar100",
+      "Pie", "Column", "StackingColumn", "StackingColumn100",
+      "Line", "StackingLine", "StackingLine100",
+      "Area", "StackingArea", "StackingArea100", "Scatter" 
+    })" created="created" contextMenuClick="contextMenuClick" Height="418px">
+    <e-grid-selectionsettings mode="Row" type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column type="checkbox" width="50"></e-grid-column>
+        <e-grid-column field="Product" headerText="Product" width="120"></e-grid-column>
+        <e-grid-column field="Month" headerText="Month" width="100"></e-grid-column>
+        <e-grid-column field="Online" headerText="Online" format="C2" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Retail" headerText="Retail" format="C2" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Total" headerText="Total" format="C2" textAlign="Right" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/javascript">
+    let gridChart;
+
+    function created() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        gridChart = new ej.gridchart.GridChart({
+            enablePropertyPanel: true,
+            enableRtl: grid.enableRtl,
+            allowExport: true,
+            locale: grid.locale,
+            updateChartSettings: updateChartSettings
+        });
+    }
+
+    function contextMenuClick(args) {
+        if (args.chartType) {
+            const chartArgs = {
+                gridInstance: (args.gridInstance),
+                chartType: args.chartType,
+                records: (args.records),
+            };
+            const chartModel = {
+                primaryXAxis: {
+                    valueType: 'Category',
+                    labelRotation: 315,
+                },
+                margin: {
+                    top: 20,
+                    bottom: 20,
+                    right: 20,
+                    left: 20
+                },
+                tooltip: {
+                    enable: true,
+                    textStyle: {
+                        size: '16px',
+                        fontFamily: 'Arial, Helvetica, sans-serif'
+                    }
+                },
+                title: 'Sales Data',
+                titleStyle: {
+                    size: '24px',
+                    fontFamily: 'Arial, Helvetica, sans-serif',
+                    fontWeight: 'Bold'
+                },
+                subTitle: 'Sales data for various products over the months',
+                load: (args) => {
+                    if (args.chart.titleStyle) {
+                        args.chart.titleStyle.color = '#1976d2';
+                    }
+                }
+            };
+            const accumulationChartModel= {
+                title :'Sales Distribution'
+            };
+            const model = {
+                chart: chartModel,
+                accumulationChart: accumulationChartModel
+            };
+            const categorySeries = {
+                category: ['Product', 'Month'],
+                series: ['Online', 'Retail']
+            };
+            gridChart.render(chartArgs, model, categorySeries);
+        }
+    }
+
+    function updateChartSettings(args) {
+      const chart = args.changes?.chart;
+      if (!chart) return;
+
+      // Restrict margin values to minimum 20.
+      const margin = chart.margin;
+      if (margin) {
+        if (margin.top < 20) margin.top = 20;
+        if (margin.bottom < 20) margin.bottom = 20;
+        if (margin.left < 20) margin.left = 20;
+        if (margin.right < 20) margin.right = 20;
+      }
+    }
+</script>

@@ -1,0 +1,55 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"
+    contextMenuItems="@(new List<object>() { 
+      "Bar", "StackingBar", "StackingBar100",
+      "Pie", "Column", "StackingColumn", "StackingColumn100",
+      "Line", "StackingLine", "StackingLine100",
+      "Area", "StackingArea", "StackingArea100", "Scatter" 
+    })" created="created" contextMenuClick="contextMenuClick" Height="418px">
+    <e-grid-selectionsettings mode="Row" type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column type="checkbox" width="50"></e-grid-column>
+        <e-grid-column field="Product" headerText="Product" width="120"></e-grid-column>
+        <e-grid-column field="Month" headerText="Month" width="100"></e-grid-column>
+        <e-grid-column field="Online" headerText="Online" format="C2" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Retail" headerText="Retail" format="C2" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Total" headerText="Total" format="C2" textAlign="Right" width="130"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/javascript">
+    let gridChart;
+
+    function created() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        gridChart = new ej.gridchart.GridChart({
+            enableRtl: grid.enableRtl,
+            locale: grid.locale,
+        });
+    }
+
+    function contextMenuClick(args) {
+        if (args.chartType) {
+            const chartArgs = {
+                gridInstance: (args.gridInstance),
+                chartType: args.chartType,
+                records: (args.records),
+            };
+            const chartModel = {
+                primaryXAxis: {
+                    valueType: 'Category',
+                    labelRotation: 315,
+                },
+            };
+                
+            const model = {
+                chart: chartModel,
+                accumulationChart: {}
+            };
+            const categorySeries = {
+                category: ['Product', 'Month'],
+                series: ['Online', 'Retail']
+            };
+            gridChart.render(chartArgs, model, categorySeries);
+        }
+    }
+</script>
