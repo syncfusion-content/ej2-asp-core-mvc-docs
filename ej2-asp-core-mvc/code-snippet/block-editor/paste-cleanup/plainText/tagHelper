@@ -1,0 +1,103 @@
+@using Syncfusion.EJ2.BlockEditor
+
+@{
+    var allowedStyles = new string[] { "text-decoration" };
+    var deniedTags = new string[] { "script", "iframe" };
+    var displayText = string.Format(
+                @"Paste Cleanup Settings Active:
+- Allowed Styles: ['{0}']
+- Denied Tags: ['{1}']
+Copy content from the test area above and paste it into the editor to see the cleanup in action.",
+        string.Join("', '", allowedStyles),
+        string.Join("', '", deniedTags)
+    );
+
+}
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor" created="onEditorCreated()" afterPaste="function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }">
+        <e-blocks>
+            @foreach (var block in ViewBag.BlocksData)
+            {
+                <e-block id="@block.id" type="@block.type.ToString()" content="@block.content"></e-block>
+            }
+        </e-blocks>
+        <e-blockeditor-pastesettings deniedTags="@deniedTags" allowedStyles="@allowedStyles"></e-blockeditor-pastesettings>
+    </ejs-blockeditor>
+    <div id="controls">
+        <h4>Test Content to Copy and Paste:</h4>
+        <div class="test-content">
+            <div id="sampleContent" contenteditable="true">
+                <h2 style="color: red; font-weight: bold; font-size: 24px;">Formatted Heading</h2>
+                <p style="background-color: yellow; font-style: italic;">
+                    This is a <span style="font-weight: bold;">bold paragraph</span> with
+                    <span style="color: blue; font-style: italic;">italic text</span> and
+                    <span style="text-decoration: underline;">underlined content</span>.
+                </p>
+                <script> console.log('This script should be removed'); </script>
+                <iframe src="about:blank" width="100" height="50"></iframe>
+                <div style="border: 1px solid black; padding: 10px;">
+                    <span style="font-weight: 600;">Heavy text</span> and
+                    <span style="color: green; font-size: 18px;">colored text</span>
+                </div>
+            </div>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .test-content {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #sampleContent {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        min-height: 150px;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 50px;
+        font-family: monospace;
+        white-space: pre-wrap;
+    }
+</style>
+
+<script>
+
+    function displayOutput(message) {
+        const outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            outputDiv.textContent = message;
+        }
+    }
+
+    function onEditorCreated() {
+        displayOutput(@Html.Raw(Json.Serialize(displayText)));
+    }
+</script>
