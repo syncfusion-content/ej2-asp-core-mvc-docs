@@ -46,17 +46,61 @@ You can configure the type of each block using the `type` property. The block ty
 
 You can render Paragraph blocks by setting the `type` property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Paragraph.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Paragraph](images/block-paragraph.png)
+
 ### Configure heading block
 
 You can render Heading blocks by setting the `type` property as `Heading1`, `Heading2`, `Heading3`, or `Heading4`. Heading blocks (Heading1 to Heading4) are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/heading-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Heading.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/heading-block/heading.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Heading Block](images/block-heading.png)
 
 ### Configure toggle blocks
 
 You can render Toggle blocks by setting the `type` property as `ToggleParagraph` or `ToggleHeading1` to `ToggleHeading4`. Toggle blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Toggle.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Toggle Block](images/block-toggle.png)
+
 ### Configure list blocks
 
 You can render List blocks by setting the `type` property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/list-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="List.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/list-block/list.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![List Block](images/block-list.png)
 
 ### Configure code block
 
@@ -64,17 +108,61 @@ You can render Code blocks by setting the `type` property as `Code`. By setting 
 
 > Refer to the [CodeSettings](#configure-code-settings) section for more details about the code settings.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/code-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Code.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/code-block/code.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Code Block](images/block-code.png)
+
 ### Configure quote block
 
 You can render Quote blocks by setting the `type` property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/quote-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Quote.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Quote Block](images/block-quote.png)
 
 ### Configure callout block
 
 You can render Callout blocks by setting the `type` property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/callout-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Callout.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Callout Block](images/block-callout.png)
+
 ### Configure divider block
 
 Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the `type` property as `Divider`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/divider-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Divider.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/divider-block/divider.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Divider Block](images/block-divider.png)
 
 ### Configure image block
 
@@ -82,9 +170,29 @@ You can render Image blocks by setting the `type` property as `Image`. By settin
 
 > Refer to the [ImageSettings](#configure-image-settings) section for more details about the image settings.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-block/image.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Adding template
 
 You can render Template blocks by setting the `type` property as `Template`. Template blocks enable you to use predefined content structures or custom templates.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/template-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Template Block](images/block-template.png)
 
 ## Configure content
 
@@ -136,7 +244,7 @@ By default, labels are triggered by the `$` character. You can customize the lab
 
 > Refer to the [LabelSettings](#configuring-labelSettings) section for more details about the label settings.
 
-### Customize content
+### Setting content styles
 
 The Block Editor allows you to customize the appearance of content using the `styles` property. This property provides rich formatting options to style your text and content elements.
 
@@ -200,7 +308,7 @@ The `imageSettings` property supports the following options:
 | Property | Description | Default Value |
 |----------|-------------|---------------|
 | `src` | URL or data URI of the image | '' |
-| `saveFormat` | Format to save the image ('base64' or 'blob') | 'base64' |
+| `saveFormat` | Format to save the image ('Base64' or 'Blob') | 'Base64' |
 | `allowedTypes` | Array of allowed file extensions | ['.jpg', '.jpeg', '.png'] |
 | `width` | Width of the image (px or %) | '' |
 | `height` | Height of the image (px or %) | '' |
