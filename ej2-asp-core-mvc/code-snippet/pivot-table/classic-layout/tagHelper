@@ -1,15 +1,15 @@
 <ejs-pivotview id="PivotView" load="onLoad" showFieldList="true" width="100%" height="450">
-    <e-datasourcesettings dataSource="@data" expandAll="false" enableSorting="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" enableSorting="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1"
                 useGrouping="true"></e-field>
         </e-formatsettings>
         <e-drilledmembers>
-            <e-field name="Product_Categories" items="@drilledMembers"></e-field>
-            <e-field name="Products" delimiter="##" items="@drilledMembersProducts"></e-field>
+            <e-field name="Product_Categories" items="@ViewBag.drilledMembers"></e-field>
+            <e-field name="Products" delimiter="##" items="@ViewBag.drilledMembersProducts"></e-field>
         </e-drilledmembers>
         <e-filtersettings>
-            <e-field name="Products" type="Exclude" items="@filtersettings"></e-field>
+            <e-field name="Products" type="@FilterType.Exclude" items="@ViewBag.filterSettings"></e-field>
         </e-filtersettings>
         <e-rows>
             <e-field name="Product_Categories" caption="Product Categories"></e-field>

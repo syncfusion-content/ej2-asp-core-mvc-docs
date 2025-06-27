@@ -1,7 +1,7 @@
 <ejs-pivotview id="PivotView" height="300">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-filtersettings>
-            <e-field name="Year" type="Exclude" items="@ViewBag.filterMembers"></e-field>
+            <e-field name="Year" type="@FilterType.Exclude" items="@ViewBag.filterMembers"></e-field>
         </e-filtersettings>
         <e-rows>
             <e-field name="Country"></e-field>

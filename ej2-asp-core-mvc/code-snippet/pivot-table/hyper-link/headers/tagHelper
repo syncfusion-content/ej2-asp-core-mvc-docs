@@ -20,5 +20,16 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
-    <e-hyperlinkSettings headerText= "FY 2015.Q1.Units Sold"></e-hyperlinkSettings>
+    <e-hyperlinkSettings headerText= "FY 2015.Q1.Units Sold" cssClass="e-custom-class"></e-hyperlinkSettings>
 </ejs-pivotview>
+
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>

@@ -5,7 +5,7 @@
             <e-field name="Products" showNoDataItems="true"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Products" showNoDataItems="true"></e-field>
+            <e-field name="Year" showNoDataItems="true"></e-field>
             <e-field name="Quarter" showNoDataItems="true"></e-field>
         </e-columns>
         <e-values>

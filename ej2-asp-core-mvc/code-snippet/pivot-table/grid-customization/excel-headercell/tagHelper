@@ -1,4 +1,5 @@
-<ejs-pivotview id="PivotView" height="300">
+<ejs-button id="Excel" content="Excel Export" isPrimary="true"></ejs-button>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -19,6 +20,11 @@
     <e-gridSettings columnWidth=120 excelHeaderCellInfo="excelHeaderCell"></e-gridSettings>
 </ejs-pivotview>
 <script>
+    var pivotObj;
+    document.getElementById('Excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
     function excelHeaderCell(args) {
 
     }

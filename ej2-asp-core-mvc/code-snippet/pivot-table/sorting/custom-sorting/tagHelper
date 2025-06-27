@@ -3,8 +3,8 @@
 <ejs-pivotview id="PivotView" height="300" showGroupingBar="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-sortsettings>
-            <e-field name="Country" order="Ascending" membersOrder="@ViewBag.membersOrder"></e-field>
-            <e-field name="Year" order="Descending" membersOrder="@ViewBag.membersOrder_1"></e-field>
+            <e-field name="Country" Order="@Sorting.Ascending" membersOrder="@ViewBag.membersOrder"></e-field>
+            <e-field name="Year" Order="@Sorting.Descending" membersOrder="@ViewBag.membersOrder_1"></e-field>
         </e-sortsettings>
         <e-rows>
             <e-field name="Country"></e-field>
