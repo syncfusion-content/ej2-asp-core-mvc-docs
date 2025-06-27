@@ -48,10 +48,10 @@ You can render Paragraph blocks by setting the `type` property as `Paragraph`. P
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/paragraph.cs %}
 {% endhighlight %}
 {% endtabs %}
 
