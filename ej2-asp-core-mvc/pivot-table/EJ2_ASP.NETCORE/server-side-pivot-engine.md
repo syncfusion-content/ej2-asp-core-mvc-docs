@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Pivot Engine in ##Platform_Name## Pivot Table Component
+title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Server Side Pivot Engine in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
@@ -923,7 +923,6 @@ To enable native Excel pivot export in the PivotTable, the user must call the `e
         </e-columns>
         <e-values>
             <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
 </ejs-pivotview>
@@ -986,3 +985,5 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
             }
         }
 ```
+
+![Export as Pivot](images/export-as-pivot.png)
