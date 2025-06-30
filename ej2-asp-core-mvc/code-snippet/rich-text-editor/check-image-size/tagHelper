@@ -1,4 +1,4 @@
 <ejs-richtexteditor id="editor" fileUploading="onFileUploading">
-    <e-richtexteditor-insertaudiosettings maxFileSize="30000000"></e-richtexteditor-insertaudiosettings>
+    <e-richtexteditor-insertimagesettings maxFileSize="30000000"></e-richtexteditor-insertimagesettings>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
 </ejs-richtexteditor>
