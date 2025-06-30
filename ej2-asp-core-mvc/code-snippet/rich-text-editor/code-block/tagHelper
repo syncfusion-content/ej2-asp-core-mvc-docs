@@ -1,0 +1,4 @@
+<ejs-richtexteditor id="code-block" placeholder="Type something...">
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+    <e-richtexteditor-codeblocksettings languages="@ViewBag.languages" defaultLanguage="plaintext"></e-richtexteditor-codeblocksettings>
+</ejs-richtexteditor>
