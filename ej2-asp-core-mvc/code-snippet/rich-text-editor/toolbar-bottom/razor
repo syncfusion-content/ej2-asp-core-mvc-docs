@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.RichTextEditor
+
+<div style="width:500px; margin:0 auto;">
+    @Html.EJS().RichTextEditor("toolbar-position").ToolbarSettings(e => { e.Type(ToolbarPosition.Bottom);}).Value(ViewBag.value).Render()
+</div> 
