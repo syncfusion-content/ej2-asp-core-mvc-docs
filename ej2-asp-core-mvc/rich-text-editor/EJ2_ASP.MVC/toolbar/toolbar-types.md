@@ -21,6 +21,7 @@ The Rich Text Editor allows you to configure different types of toolbar using [t
 1. Expand
 2. MultiRow
 3. Scrollable
+4. Popup
 
 ## Expanding the toolbar
 
@@ -97,6 +98,34 @@ Setting the `type` to `Scrollable` in [toolbarSettings](https://help.syncfusion.
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/scrollable/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Configuring a popup toolbar
+
+Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) will display overflowing toolbar items into a popup container, optimizing the toolbar layout for limited space and smaller screens.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/toolbar-popup/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/toolbar-popup
+/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
