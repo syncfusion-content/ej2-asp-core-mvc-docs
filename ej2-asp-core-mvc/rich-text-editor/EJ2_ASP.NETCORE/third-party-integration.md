@@ -12,7 +12,7 @@ documentation: ug
 
 The Rich Text Editor can be integrated with third-party to suite the application scenario.
 
-## CodeMirror Integration
+## CodeMirror integration
 
 RichTextEditor comes with a basic HTML source editor through the view-source property. CodeMirror plugin can be used to highlight the syntax of HTML. CodeMirror plugin for Rich Text Editor makes editing of HTML source code with a pleasant experience.
 
@@ -120,7 +120,7 @@ Populate the employee’s email id from local or remote data and set the result 
 {% endtabs %}
 {% endif %}
 
-## Embedly Integration
+## Embedly integration
 
 This can be achieved by binding the [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ActionComplete) event to the toolbar items in the [toolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property. In the event handler, create an element and add the appropriate class. The below script is have to add in the sample to embed the content,
 

@@ -1,1 +1,1 @@
-@Html.EJS().RichTextEditor("defaultRTE").Value(ViewBag.value).EnableHtmlEncode(true).Render()
+@Html.EJS().RichTextEditor("editor").Value(ViewBag.value).EnableHtmlEncode(true).Render()

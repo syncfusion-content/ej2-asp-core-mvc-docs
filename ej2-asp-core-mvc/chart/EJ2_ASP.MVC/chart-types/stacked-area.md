@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Stacked Area Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Stacked Area Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Stacked Area Chart in ##Platform_Name## Charts
+description: Learn here all about Stacked Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stacked Area Chart
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Stacked area in ##Platform_Name## Charts Component
+# Stacked Area Chart in ##Platform_Name## Charts
 
-## Stacked area
+## Stacked Area
 
 To render a [stacked area](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts/chart-types/stacked-area-chart) series in your chart, you need to follow a few steps to configure it correctly. Here’s a concise guide on how to do this:
 

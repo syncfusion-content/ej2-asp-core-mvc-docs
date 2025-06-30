@@ -19,11 +19,11 @@ There are two ways to perform Undo and Redo operations:
    - For Undo: `Ctrl + Z` (Windows) or `Cmd + Z` (Mac)
    - For Redo: `Ctrl + Y` (Windows) or `Cmd + Shift + Z` (Mac)
 
-## Customizing Undo/Redo Timer
+## Configuring Undo/Redo timer
 
 By default, the time interval for storing Undo/Redo actions is 300 milliseconds. You can adjust this interval using the [undoRedoTimer](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_UndoRedoTimer) property.
 
-## Configuring Undo/Redo Steps
+## Configuring Undo/Redo steps
 
 The editor allows up to 30 Undo/Redo actions by default. You can modify the number of undo/redo steps using the [undoRedoSteps](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_UndoRedoSteps) property.
 

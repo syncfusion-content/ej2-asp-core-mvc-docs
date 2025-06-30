@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="defaultRTE">
+<ejs-richtexteditor id="editor">
     <e-content-template>
         <div>
             <div onmouseover='javascript:alert(1)'>Prevention of Cross Sit Scripting (XSS) </div>

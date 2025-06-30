@@ -1,4 +1,4 @@
-@Html.EJS().RichTextEditor("defaultRTE").Value(ViewBag.value).Render()
+@Html.EJS().RichTextEditor("editor").Value(ViewBag.value).Render()
 
 <button id="getValueBtn" type="button" onclick="getEditorValue()" style="margin-top: 10px;">Get Editor Value</button>
 
