@@ -275,8 +275,8 @@ function contextMenuClick(args) {
   if (args.chartType) {
     const chartModel = {
       primaryXAxis: {
-      valueType: 'Category',
-      labelRotation: 315,
+        valueType: 'Category',
+        labelRotation: 315,
       },
       margin: {
         top: 20,
@@ -318,7 +318,7 @@ function contextMenuClick(args) {
 
 You can also programmatically update the Chart’s appearance using the `updateChartSettings` event provided by the **GridChart** integration. This event is triggered when you modify Chart properties through the Chart popup’s property panel. This is useful for applying custom themes, adjusting axis settings, or modifying series styles.
 
-The following code snippet demonstrates how to dynamically customize chart margins and restrict their values to a minimum of 20 using the `updateChartSettings` event.
+The following code snippet demonstrates how to dynamically customize Chart margins and restrict their values to a minimum of 20 using the `updateChartSettings` event.
 
 ```cs
 
@@ -334,7 +334,7 @@ function created() {
 }
 
 function updateChartSettings(args) {
-  const chart = args.changes?.chart;
+  const chart = args.changes.chart;
   if (!chart) return;
 
   // Restrict margin values to minimum 20.
@@ -349,7 +349,7 @@ function updateChartSettings(args) {
 
 ```
 
-The following complete example demonstrates how to enable the property panel by setting `enablePropertyPanel` to **true**, customize the chart using the `chartModel` within `ContextMenuClick` event, and dynamically control or customize the behavior of the `updateChartSettings` event.
+The following complete example demonstrates how to enable the property panel by setting `enablePropertyPanel` to **true**, customize the Chart using the `chartModel` within `ContextMenuClick` event, and dynamically control or customize the behavior of the `updateChartSettings` event.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
