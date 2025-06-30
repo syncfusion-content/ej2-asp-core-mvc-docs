@@ -1,0 +1,10 @@
+@Html.EJS().RichTextEditor("clear-undo-redo").Value(ViewBag.value).Render()
+
+<button id="clearundoredobtn" class="e-btn"> Clear Undo/Redo </button>
+
+<script>
+    document.getElementById('clearundoredobtn').addEventListener('click', function() {
+        var rte = document.getElementById("clear-undo-redo").ej2_instances[0];
+        rte.clearUndoRedo();
+    });
+</script>

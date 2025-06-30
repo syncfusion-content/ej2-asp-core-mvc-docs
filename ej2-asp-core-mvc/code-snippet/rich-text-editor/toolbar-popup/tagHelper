@@ -1,0 +1,5 @@
+<div style="width:500px; margin:0 auto;">
+    <ejs-richtexteditor id="toolbar-types" value="@ViewBag.value">
+        <e-richtexteditor-toolbarsettings type="Popup"></e-richtexteditor-toolbarsettings>
+    </ejs-richtexteditor>
+</div>
