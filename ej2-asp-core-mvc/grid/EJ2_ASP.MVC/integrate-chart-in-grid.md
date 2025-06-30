@@ -159,7 +159,8 @@ Use the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 function contextMenuClick(args) 
 {
   // Check if the Chart type is defined in the clicked context menu item.
-  if (args.chartType) {
+  if (args.chartType) 
+  {
     // Prepare the Chart arguments including the Grid instance, Chart type, and records to plot.
     const chartArgs = {
       gridInstance: (args.gridInstance),
