@@ -10,7 +10,7 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion® publishes the Visual Studio extension in the below Visual Studio marketplace link. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
+Syncfusion® publishes the Visual Studio extension at the Visual Studio Marketplace link provided below. You can either install it directly from Visual Studio or download and install it from the Visual Studio marketplace.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCVSExtensions)
 
@@ -18,7 +18,7 @@ Syncfusion® publishes the Visual Studio extension in the below Visual Studio ma
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion® ASP.NET MVC extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion® ASP.NET MVC applications.
+The following software prerequisites must be installed to install the Syncfusion® ASP.NET MVC extension, as well as to create, add snippets, convert, and upgrade Syncfusion® ASP.NET MVC applications.
 
 * [Visual Studio 2013 or later](https://visualstudio.microsoft.com/downloads).
 
@@ -64,7 +64,7 @@ The steps below illustrate how to download and install the Syncfusion ASP.NET MV
 
 2. Close all Visual Studio instances running, if any.
 
-3. Double-click to install the downloaded VSIX file. You will see the VSIX installation prompts with the corresponding installed Visual Studio version checkbox for select the Visual Studio to install extension.
+3. Double-click to install the downloaded VSIX file. You will see the VSIX installation prompts with the corresponding installed Visual Studio version checkbox to select the Visual Studio to install the extension.
 
     ![VSIX-Installation-Window](images/InstallVSIX.png)
 
