@@ -261,7 +261,7 @@ When enabled, the property panel appears alongside the Chart popup and offers th
     * **Title:** Adjust text, font, size, color, and rotation.
     * **Label:** Modify text, font, size, color, and rotation for better label presentation.
 
-**customize the Chart model:**   
+**Customize the Chart model:**   
 
 You can customize the [Chart](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started) by defining a `chartModel` object in the `chart` property of the `model` object within the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#properties) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
