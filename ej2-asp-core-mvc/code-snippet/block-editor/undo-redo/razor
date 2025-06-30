@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewBag["BlocksData"]).UndoRedoStack(20).Render()
 </div>
 
 <style>
