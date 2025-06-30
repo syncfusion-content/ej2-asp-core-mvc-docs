@@ -41,11 +41,11 @@
                     left: 20
                 },
                 tooltip: {
-                enable: true,
-                textStyle: {
-                    size: '16px',
-                    fontFamily: 'Arial, Helvetica, sans-serif'
-                }
+                    enable: true,
+                    textStyle: {
+                        size: '16px',
+                        fontFamily: 'Arial, Helvetica, sans-serif'
+                    }
                 },
                 title: 'Sales Data',
                 titleStyle: {
