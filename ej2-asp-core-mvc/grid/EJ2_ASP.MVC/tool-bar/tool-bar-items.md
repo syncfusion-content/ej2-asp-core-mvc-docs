@@ -133,6 +133,23 @@ The following example demonstrates, how to use both built-in and custom toolbar 
 
 ![Both built-in and custom items in toolbar](../images/toolbar/custom-items.png)
 
+### Add custom components to the Grid toolbar using template
+
+The Syncfusion ASP.NET MVC Grid provides the flexibility to customize its toolbar by embedding custom components using the `template` property of the `ItemModel`. This feature allows developers to add UI elements such as buttons, dropdowns, or input controls directly into the toolbar, alongside built-in actions like **Add**, **Edit**, and **Delete**.
+
+In the following example, an ASP.NET MVC Razor view is used to define an [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started) component. This template is referenced using its ID and then assigned to a toolbar item via the `template` property. When the Grid is rendered, the custom `AutoComplete` appears as part of the toolbar, providing users with a smooth and integrated experience for interacting with both standard and custom toolbar elements.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/toolbar/custom-component/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-component.cs" %}
+{% include code-snippet/grid/toolbar/custom-component/custom-component.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom component in toolbar](../images/toolbar/custom-toolbar-template.png)
+
 ## Custom toolbar items in a specific position
 
 Customizing the position of a custom toolbar within the Syncfusion ASP.NET MVC Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
