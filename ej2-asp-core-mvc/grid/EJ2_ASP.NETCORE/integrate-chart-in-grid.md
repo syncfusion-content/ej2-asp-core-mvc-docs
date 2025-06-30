@@ -137,7 +137,7 @@ This ensures that the Chart instance is ready as soon as the Grid is initialized
 
 Use the [contextMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event to detect which Chart type was selected and render the Chart accordingly using the `gridChart.render()` method.
 
-`ContextMenuClick` event passes the below arguments:
+`contextMenuClick` event passes the below arguments:
 
   * `args.chartType:` The selected Chart type.
 
@@ -159,13 +159,18 @@ Use the [contextMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 ```cs
 
-function contextMenuClick(args) {
+function contextMenuClick(args) 
+{
+  // Check if the Chart type is defined in the clicked context menu item.
   if (args.chartType) {
+    // Prepare the Chart arguments including the Grid instance, Chart type, and records to plot.
     const chartArgs = {
       gridInstance: (args.gridInstance),
       chartType: args.chartType,
       records: (args.records),
     };
+
+    // Set up the Chart model configurations.
     const chartModel = {
       primaryXAxis: {
         valueType: 'Category',
@@ -173,14 +178,20 @@ function contextMenuClick(args) {
         }   
     };
 
+    // Combine both Chart models into a single model for rendering.
     const model = {
       chart: chartModel,
       accumulationChart: {}
     };
+
+    // Determine fields for category and series data in the Chart.
     const categorySeries = {
       category: ['Product', 'Month'],
       series: ['Online', 'Retail']
     };
+
+    // Render the Chart using the configured arguments and models.
+    // The render function uses the defined chartArgs, model, and categorySeries to display the Chart.
     gridChart.render(chartArgs, model, categorySeries);
   }
 }

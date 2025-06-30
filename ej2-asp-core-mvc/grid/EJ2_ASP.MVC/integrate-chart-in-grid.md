@@ -156,28 +156,39 @@ Use the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 ```cs
 
-function contextMenuClick(args) {
+function contextMenuClick(args) 
+{
+  // Check if the Chart type is defined in the clicked context menu item.
   if (args.chartType) {
+    // Prepare the Chart arguments including the Grid instance, Chart type, and records to plot.
     const chartArgs = {
       gridInstance: (args.gridInstance),
       chartType: args.chartType,
       records: (args.records),
     };
+
+    // Set up the Chart model configurations.
     const chartModel = {
       primaryXAxis: {
         valueType: 'Category',
         labelRotation: 315,
-        }   
+      }   
     };
 
+    // Combine both Chart models into a single model for rendering.
     const model = {
       chart: chartModel,
       accumulationChart: {}
     };
+
+    // Determine fields for category and series data in the Chart.
     const categorySeries = {
       category: ['Product', 'Month'],
       series: ['Online', 'Retail']
     };
+
+    // Render the Chart using the configured arguments and models.
+    // The render function uses the defined chartArgs, model, and categorySeries to display the Chart.
     gridChart.render(chartArgs, model, categorySeries);
   }
 }
