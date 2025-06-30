@@ -22,10 +22,6 @@ You can add a new block to the editor at a specified position using the `addBloc
 
 You can remove a block from the editor using the `removeBlock` method.
 
-### Getting a block
-
-You can retrieve a block model by its unique identifier using the `getBlock` method. Returns `null` if the block is not found.
-
 ### Moving a block
 
 You can move a block from one position to another within the editor using the `moveBlock` method.
@@ -33,6 +29,25 @@ You can move a block from one position to another within the editor using the `m
 ### Updating a block
 
 You can update the properties of an existing block using the `updateBlock` method. Only the specified properties are modified while others remain unchanged. Returns `true` if the update was successful, `false` otherwise.
+
+### Getting a block
+
+You can retrieve a block model by its unique identifier using the `getBlock` method. Returns `null` if the block is not found.
+
+### Getting block count
+
+You can utilize the `getBlockCount` method to retrieve the total number of blocks in the editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/methods/block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Block.cs" %}
+{% include code-snippet/block-editor/methods/block/block.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block Method](images/method-block.png)
 
 ## Selection and Cursor Methods
 
@@ -64,6 +79,17 @@ You can select a specific block in the editor using the `selectBlock` method.
 
 You can select all blocks in the editor using the `selectAllBlocks` method.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/methods/selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Selection.cs" %}
+{% include code-snippet/block-editor/methods/selection/selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Selection Method](images/method-selection.png)
+
 ## Focus Management Methods
 
 ### FocusIn
@@ -88,6 +114,17 @@ You can enable specific toolbar items in the inline toolbar using the `enableToo
 
 You can disable specific toolbar items in the inline toolbar using the `disableToolbarItems` method. This method accepts a single item or an array of items to be disabled.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/methods/formatting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Formatting.cs" %}
+{% include code-snippet/block-editor/methods/formatting/formatting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Formatting Method](images/method-formatting.png)
+
 ## Data Export Methods
 
 ### Getting data as JSON
@@ -98,12 +135,17 @@ You can export the editor content in JSON format using the `getDataAsJson` metho
 
 You can export the editor content in HTML format using the `getDataAsHtml` method. This method allows you to export all blocks or a specific block.
 
-## Utility Methods
-
-### Getting block count
-
-You can utilize the `getBlockCount` method to retrieve the total number of blocks in the editor.
-
 ### Printing editor content
 
 You can print the editor content using the `print` method. This method opens a print dialog with the current editor content formatted for printing.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/methods/data/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/block-editor/methods/data/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Data Method](images/method-data.png)
