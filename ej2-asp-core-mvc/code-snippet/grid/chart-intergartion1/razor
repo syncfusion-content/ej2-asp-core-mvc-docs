@@ -14,65 +14,65 @@
     function created() {
         var grid = document.getElementById("Grid").ej2_instances[0];
         gridChart = new ej.gridchart.GridChart({
-        enablePropertyPanel: true,
-        enableRtl: grid.enableRtl,
-        allowExport: true,
-        locale: grid.locale,
-        updateChartSettings: updateChartSettings
+            enablePropertyPanel: true,
+            enableRtl: grid.enableRtl,
+            allowExport: true,
+            locale: grid.locale,
+            updateChartSettings: updateChartSettings
         });
     }
 
     function contextMenuClick(args) {
         if (args.chartType) {
-        const chartArgs = {
-            gridInstance: (args.gridInstance),
-            chartType: args.chartType,
-            records: (args.records),
-        };
-        const chartModel = {
-            primaryXAxis: {
-            valueType: 'Category',
-            labelRotation: 315,
-            },
-            margin: {
-            top: 20,
-            bottom: 20,
-            right: 20,
-            left: 20
-            },
-            tooltip: {
-            enable: true,
-            textStyle: {
-                size: '16px',
-                fontFamily: 'Arial, Helvetica, sans-serif'
-            }
-            },
-            title: 'Sales Data',
-            titleStyle: {
-            size: '24px',
-            fontFamily: 'Arial, Helvetica, sans-serif',
-            fontWeight: 'Bold'
-            },
+            const chartArgs = {
+                gridInstance: (args.gridInstance),
+                chartType: args.chartType,
+                records: (args.records),
+            };
+            const chartModel = {
+                primaryXAxis: {
+                    valueType: 'Category',
+                    labelRotation: 315,
+                },
+                margin: {
+                    top: 20,
+                    bottom: 20,
+                    right: 20,
+                    left: 20
+                },
+                tooltip: {
+                enable: true,
+                textStyle: {
+                    size: '16px',
+                    fontFamily: 'Arial, Helvetica, sans-serif'
+                }
+                },
+                title: 'Sales Data',
+                titleStyle: {
+                    size: '24px',
+                    fontFamily: 'Arial, Helvetica, sans-serif',
+                    fontWeight: 'Bold'
+                },
 
-            subTitle: 'Sales data for various products over the months',
-            load: (args) => {
-            if (args.chart.titleStyle) {
-                args.chart.titleStyle.color = '#1976d2';
-            }
-            }
-        };
-        const accumulationChartModel= {
-            title :'Sales Distribution'
-        };
-        const model = {
-            chart: chartModel,
-            accumulationChart: accumulationChartModel
-        };
-        const categorySeries = {
-            category: ['Product', 'Month'],
-            series: ['Online', 'Retail']
-        };
-        gridChart.render(chartArgs, model, categorySeries);
+                subTitle: 'Sales data for various products over the months',
+                load: (args) => {
+                    if (args.chart.titleStyle) {
+                        args.chart.titleStyle.color = '#1976d2';
+                    }
+                }
+            };
+            const accumulationChartModel= {
+                title :'Sales Distribution'
+            };
+            const model = {
+                chart: chartModel,
+                accumulationChart: accumulationChartModel
+            };
+            const categorySeries = {
+                category: ['Product', 'Month'],
+                series: ['Online', 'Retail']
+            };
+            gridChart.render(chartArgs, model, categorySeries);
         }
     }
 

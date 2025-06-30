@@ -21,26 +21,26 @@
 
     function contextMenuClick(args) {
         if (args.chartType) {
-        const chartArgs = {
-            gridInstance: (args.gridInstance),
-            chartType: args.chartType,
-            records: (args.records),
-        };
-        const chartModel = {
-            primaryXAxis: {
-                valueType: 'Category',
-                labelRotation: 315,
-            }
-        };
-        const model = {
-            chart: chartModel,
-            accumulationChart: {}
-        };
-        const categorySeries = {
-            category: ['Product', 'Month'],
-            series: ['Online', 'Retail']
-        };
-        gridChart.render(chartArgs, model, categorySeries);
+            const chartArgs = {
+                gridInstance: (args.gridInstance),
+                chartType: args.chartType,
+                records: (args.records),
+            };
+            const chartModel = {
+                primaryXAxis: {
+                    valueType: 'Category',
+                    labelRotation: 315,
+                }
+            };
+            const model = {
+                chart: chartModel,
+                accumulationChart: {}
+            };
+            const categorySeries = {
+                category: ['Product', 'Month'],
+                series: ['Online', 'Retail']
+            };
+            gridChart.render(chartArgs, model, categorySeries);
         }
     }
 </script>
