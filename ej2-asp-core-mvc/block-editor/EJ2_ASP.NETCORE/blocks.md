@@ -183,6 +183,8 @@ You can render Image blocks by setting the `type` property as `Image`. By settin
 
 You can render Template blocks by setting the `type` property as `Template`. Template blocks enable you to use predefined content structures or custom templates.
 
+> Refer to [Template](#configure-template) section for more details about the template type block.
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/block-editor/blocks/blockTypes/template-block/tagHelper %}
@@ -283,11 +285,33 @@ You can specify the indentation level of a block using the `indent` property. Th
 
 By default, the `indent` property is set to `0`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/indent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/block-editor/blocks/indent/indent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block Indent](images/block-indent.png)
+
 ## Configure checked state
 
 For blocks that support selection states such as `CheckList`, you can configure the checked state using the `isChecked` property.
 
 By default, the `isChecked` property is set to `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/isChecked/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="IsChecked.cs" %}
+{% include code-snippet/block-editor/blocks/isChecked/ischecked.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block isChecked](images/block-ischecked.png)
 
 ## Configure expanded state
 
@@ -298,6 +322,17 @@ You can control whether a block is expanded or collapsed using the `isExpanded` 
 You can apply custom styling to individual blocks using the `cssClass` property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/cssClass/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CssClass.cs" %}
+{% include code-snippet/block-editor/blocks/cssClass/cssclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block cssClass](images/block-cssClass.png)
 
 ## Configure image settings
 
@@ -341,11 +376,22 @@ Each language object in the `languages` array should have:
 
 The labelSettings property of the Block Editor provides options for configuring how labels work in your editor. It allows you to define the trigger character and available label items.
 
-### Trigger Character configuration
+### Built-in items
 
-You can use the triggerChar property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
+The Block Editor comes with offers different built-in options. These include:
 
-### Label items configuration
+-   **Progress**: In-progress, On-hold, Done
+-   **Priority**: High, Medium, Low
+
+### Customize label
+
+You can customize the labels by using the `labelSettings` property.
+
+#### Trigger Character configuration
+
+You can use the `triggerChar` property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
+
+#### Label items configuration
 
 The labelItems array allows you to define the available labels in your editor. Each label item can have the following properties:
 
@@ -363,13 +409,46 @@ When users type the trigger character followed by text, a popup will appear show
 
 Labels with the same `groupHeader` value will be grouped together in the label selection popup:
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/label-settings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label.cs" %}
+{% include code-snippet/block-editor/blocks/label-settings/label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block label-settings](images/block-label.png)
+
 ## Configure template
 
 The Block Editor allows you to use custom templates for specialized content using the `template` property. Templates can be defined as strings, functions, or HTML elements.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/template-block/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Template Block](images/block-template.png)
+
 ## Configure placeholder
 
 You can configure placeholder text for block using the `placeholder` property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/placeholder/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Placeholder.cs" %}
+{% include code-snippet/block-editor/blocks/placeholder/placeholder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block placeholder](images/block-placeholder.png)
 
 ## Configure children
 
@@ -380,3 +459,14 @@ Child blocks can be configured with all the same properties as top-level blocks.
 ### Configure parent id
 
 For proper hierarchy, you should ensure that the `parentId` of each child block matches the `id` of its parent block. This structure helps maintain the nested relationships within the editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/children/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Children.cs" %}
+{% include code-snippet/block-editor/blocks/children/children.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block children](images/block-children.png)
