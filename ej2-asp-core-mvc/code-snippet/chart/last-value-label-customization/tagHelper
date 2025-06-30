@@ -1,0 +1,16 @@
+ <ejs-chart id="container" width="90%" title="Efficiency of oil-fired power production">
+        <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+        <e-chart-primaryxaxis title="Year" interval="1"></e-chart-primaryxaxis>
+        <e-chart-primaryyaxis labelFormat="{value}%" title="Efficiency"></e-chart-primaryyaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="x" yName="y" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column" name="series1">
+            <e-series-marker visible="false">
+            <e-series-datalabel visible="true"></e-series-datalabel>
+                </e-series-marker>
+            </e-series>
+            <e-series-lastvaluelabel enable="true" background="blue" lineColor="red" lineWidth="2" dashArray="5,5" rx="10" ry="10">
+               <e-series-border width="2" color="red"></e-series-border>
+               <e-series-font color="white" size="12px" fontWeight="bold"></e-series-font>
+            </e-series-lastvaluelabel>
+        </e-series-collection>
+    </ejs-chart>
