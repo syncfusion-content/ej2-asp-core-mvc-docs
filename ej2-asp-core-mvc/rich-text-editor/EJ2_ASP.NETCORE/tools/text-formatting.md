@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor Control | Syncfusion
+title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -381,6 +381,37 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
+## Horizontal line
+
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
+
+To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
+
+Use the `HorizontalLine` tool in the editor below to see the feature in action.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/horizontal-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/horizontal-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Insert code
 
 The Rich Text Editor control offers a powerful feature to format text as preformatted code blocks, making it ideal for displaying programming snippets or structured contents.
@@ -450,7 +481,7 @@ This styling adds a light gray background, sets a monospace font, and includes p
 
 ## Format painter
 
-The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
+The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
 
 ### Configuring format painter tool in the toolbar
 
@@ -471,7 +502,7 @@ The following code example shows how to add the format painter tool in the Rich 
 
 ### Customizing copy and paste format
 
-You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
+You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
 
 The [allowedFormats](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_AllowedFormats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
