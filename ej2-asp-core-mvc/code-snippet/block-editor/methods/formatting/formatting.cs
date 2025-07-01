@@ -1,42 +1,42 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Formatting()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "sample-heading",
                 type = "Heading1",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Formatting Demo"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "sample-paragraph-1",
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Select this text and apply different formatting options using the buttons below. You can make text bold or change colors for the text."
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "sample-list",
                 type = "BulletList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "List item for formatting demonstration"

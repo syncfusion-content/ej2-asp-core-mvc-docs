@@ -14,7 +14,7 @@ The Block Editor control provides various appearance customization options to ma
 
 ## Setting width and height
 
-You can specify the width and height for the Block Editor control using the `width` and `height` properties.
+You can specify the width and height for the Block Editor control using the [width](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Width) and [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Height) properties.
 
 ```cshtml
 
@@ -31,7 +31,7 @@ You can specify the width and height for the Block Editor control using the `wid
 
 ## Setting readonly mode
 
-You can utilize the `readonly` property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+You can utilize the [readonly](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
 ```cshtml
 
@@ -43,7 +43,7 @@ You can utilize the `readonly` property to control whether the editor is in read
 
 ## Customization using CSS Class
 
-You can use the `cssClass` property to customize the appearance of the Block Editor control.
+You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass) property to customize the appearance of the Block Editor control.
 
 ```cshtml
 
@@ -51,27 +51,15 @@ You can use the `cssClass` property to customize the appearance of the Block Edi
     <ejs-blockeditor id="block-editor" height="400px" width="600px" cssClass="custom-editor-theme"></ejs-blockeditor>
 </div>
 
-<style>
-/* Custom CSS for custom theme */
-.custom-editor-theme {
-    border: 2px solid #007acc;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 122, 204, 0.15);
-}
-
-.custom-editor-theme .e-block {
-    margin-bottom: 8px;
-}
-
-.custom-editor-theme .e-block:hover {
-    background-color: #b5b5b5;
-    transition: ease-in-out 0.5s;
-}
-
-.custom-editor-theme .e-block [contenteditable=true]:empty::before {
-    color: #6c757d;
-    font-style: italic;
-}
-</style>
-
 ```
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/appearance/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Appearance.cs" %}
+{% include code-snippet/block-editor/appearance/appearance.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Appearance](images/appearance.png)

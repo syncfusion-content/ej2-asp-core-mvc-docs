@@ -1,39 +1,39 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult List()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "BulletList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "Features of the Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "NumberedList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "Step 1: Initialize the Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "Review documentation"
@@ -41,12 +41,12 @@ public ActionResult List()
                 },
                 isChecked = true
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "Implement drag and drop functionality"
