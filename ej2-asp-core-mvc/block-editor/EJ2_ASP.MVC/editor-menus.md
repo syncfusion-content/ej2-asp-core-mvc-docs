@@ -30,11 +30,11 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 ### Customize Slash command menu
 
-You can utilize the `CommandMenu` property on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
+You can utilize the [CommandMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CommandMenu) property on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the `EnableTooltip` property on the command menu settings.
+By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the [EnableTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_EnableTooltip) property on the command menu settings.
 
 ### Events
 
@@ -42,10 +42,10 @@ The following events are available in the Slash Command menu.
 
 |Name|Args|Description|
 |---|---|---|
-|`Open`|CommandMenuOpenEventArgs|Triggers when the command menu is opened.|
-|`Close`|CommandMenuCloseEventArgs|Triggers when the command menu is closed.|
-|`QueryFiltering`|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
-|`ItemClicked`|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
+|[Open](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_Open)|CommandMenuOpenEventArgs|Triggers when the command menu is opened.|
+|[Close](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_Close)|CommandMenuCloseEventArgs|Triggers when the command menu is closed.|
+|[QueryFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_QueryFiltering)|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
+|[ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_ItemClicked)|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
 
 Below example demonstrates the customization of the Slash Command menu.
 
@@ -75,7 +75,7 @@ The Context menu offers different built-in options:
 
 ### Customize Context menu
 
-You can utilize the `ContextMenu` property on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
+You can utilize the [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ContextMenu) property on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
 
 ### Events
 
@@ -83,11 +83,11 @@ The following events are available in the Context menu.
 
 |Name|Args|Description|
 |---|---|---|
-|`BeforeOpen`|ContextMenuBeforeOpenEventArgs|Triggers before the context menu opens.|
-|`Open`|ContextMenuOpenEventArgs|Triggers when the context menu is opened.|
-|`BeforeClose`|ContextMenuBeforeCloseEventArgs|Triggers before the context menu closes.|
-|`Close`|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
-|`ItemClick`|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
+|[BeforeOpen](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_BeforeOpen)|ContextMenuBeforeOpenEventArgs|Triggers before the context menu opens.|
+|[Open](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_Open)|ContextMenuOpenEventArgs|Triggers when the context menu is opened.|
+|[BeforeClose](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_BeforeClose)|ContextMenuBeforeCloseEventArgs|Triggers before the context menu closes.|
+|[Close](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_Close)|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
+|[ItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_ItemClick)|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
 
 Below example demonstrates the customization of the Context menu.
 
@@ -117,11 +117,11 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can utilize the `BlockActionsMenu` property on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
+You can utilize the [BlockActionsMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockActionsMenu) property on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the action item. You can show or hide the tooltip using the `EnableTooltip` property on the block action menu settings.
+By default, the tooltip is displayed when the user hovers over the action item. You can show or hide the tooltip using the [EnableTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_EnableTooltip) property on the block action menu settings.
 
 ### Events
 
@@ -129,9 +129,9 @@ The following events are available in the Block action menu.
 
 |Name|Args|Description|
 |---|---|---|
-|`Open`|Block actionMenuOpenEventArgs|Triggers when the block action menu is opened.|
-|`Close`|Block actionMenuCloseEventArgs|Triggers when the block action menu is closed.|
-|`ItemClick`|Block actionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
+|[Open](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_Open)|Block actionMenuOpenEventArgs|Triggers when the block action menu is opened.|
+|[Close](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_Close)|Block actionMenuCloseEventArgs|Triggers when the block action menu is closed.|
+|[ItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_ItemClick)|Block actionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
 
 Below example demonstrates the customization of the Block action menu.
 
@@ -162,13 +162,13 @@ The Inline Toolbar includes below built-in formatting options:
 
 ### Customize Inline Toolbar
 
-You can utilize the `InlineToolbar` property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
+You can utilize the [InlineToolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_InlineToolbar) property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
 
 Below example demonstrates how to customize the Inline Toolbar.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the toolbar item. You can show or hide the tooltip using the `EnableTooltip` property on the inline toolbar settings.
+By default, the tooltip is displayed when the user hovers over the toolbar item. You can show or hide the tooltip using the [EnableTooltip](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_EnableTooltip) property on the inline toolbar settings.
 
 ### Events
 
@@ -176,9 +176,9 @@ The following events are available in the Inline Toolbar.
 
 |Name|Args|Description|
 |---|---|---|
-|`Open`|ToolbarOpenEventArgs|Triggers when the inline toolbar is opened.|
-|`Close`|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
-|`ItemClicked`|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
+|[Open](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_Close)|ToolbarOpenEventArgs|Triggers when the inline toolbar is opened.|
+|[Close](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_Close)|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
+|[ItemClicked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_ItemClicked)|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
 Below example demonstrates the customization of the Inline Toolbar.
 
