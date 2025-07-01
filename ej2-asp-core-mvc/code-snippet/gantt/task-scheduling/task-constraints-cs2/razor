@@ -1,0 +1,32 @@
+@(Html.EJS().Gantt("Constraint").DataSource((IEnumerable<object>)ViewData["DataSource"]).Height("450px")
+.TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").ParentID("ParentID").Notes("info").ConstraintDate("ConstraintDate").ConstraintType("ConstraintType"))
+.Toolbar(new List<string> { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll", "Indent", "Outdent" })
+.EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true))
+.AllowSelection(true).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).HighlightWeekends(true).TreeColumnIndex(1)
+.TimelineSettings(ts => ts.TopTier(tt => tt.Format("MMM dd, yyyy").Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week)).BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day)))
+.EventMarkers(em => { em.Day("03/25/2025").Label("Project StartDate").Add(); em.Day("08/31/2025").Label("Project EndDate").Add(); })
+.Columns(col => {
+    col.Field("TaskId").Visible(false).Add();
+    col.Field("TaskName").HeaderText("Job Name").Width(200).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("StartDate").Add();
+    col.Field("Duration").Add();
+    col.Field("ConstraintType").HeaderText("Constraint Type").Width(180).Add();
+    col.Field("ConstraintDate").HeaderText("Constraint Date").Add();
+    col.Field("EndDate").Add();
+    col.Field("Predecessor").Add();
+    col.Field("Progress").Add();
+})
+.LabelSettings(ls => ls.LeftLabel("TaskName").RightLabel("#rightLabel"))
+.ActionBegin("ActionBegin")
+.SplitterSettings(sp => sp.ColumnIndex(4))
+.ProjectStartDate("03/25/2025").ProjectEndDate("09/01/2025")
+.Render())
+
+
+<script>
+    ActionBegin(args) {
+            if (args.requestType === 'validateTaskViolation') {
+                args.validateMode.respectMustStartOn = true
+            }
+    }
+</script>
