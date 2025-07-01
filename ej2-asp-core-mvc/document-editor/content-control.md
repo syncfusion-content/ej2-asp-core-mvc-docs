@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content Control in Syncfusion ##Platform_Name## Document Editor Component 
-description: Learn here all about Content Control in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
+title: Content control in Syncfusion ##Platform_Name## Document Editor Component 
+description: Learn here all about Content control in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Content Control
 publishingplatform: ##Platform_Name##
