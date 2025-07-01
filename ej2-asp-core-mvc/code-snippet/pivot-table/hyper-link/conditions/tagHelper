@@ -22,7 +22,7 @@
     </e-datasourcesettings>
     <e-hyperlinkSettings cssClass="e-custom-class">
         <e-conditionalsettings>
-            <e-format measure="Sold" conditions="Between" value1="100" value2="200"></e-format>
+            <e-format measure="Sold" conditions="@Condition.Between" value1="100" value2="200"></e-format>
         </e-conditionalsettings>
     </e-hyperLinkSettings>
 </ejs-pivotview>
