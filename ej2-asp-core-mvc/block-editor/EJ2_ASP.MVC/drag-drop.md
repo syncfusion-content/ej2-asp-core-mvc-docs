@@ -14,7 +14,7 @@ The drag and drop feature in Block Editor allows users to easily rearrange block
 
 ## Enable Drag and Drop
 
-You can control drag and drop operations within Block Editor using the `enableDragAndDrop` property. By default, it is set to `true`.
+You can control drag and drop operations within Block Editor using the [EnableDragAndDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableDragAndDrop) property. By default, it is set to `true`.
 
 ## Dragging blocks
 
