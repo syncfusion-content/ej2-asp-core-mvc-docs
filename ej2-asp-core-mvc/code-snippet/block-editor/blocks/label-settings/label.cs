@@ -1,110 +1,110 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 public LabelSettingsModel labelSettings { get; set; }
 private List<LabelItemModel> labelItems { get; set; }
 
 public ActionResult Label()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Heading1",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Project Planning with Custom Labels"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Type # to add status labels to your tasks."
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Fix homepage layout issue - "
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "bug"
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = " "
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "high"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Update user documentation - "
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "task"
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = ""
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "medium"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Implement payment gateway - "
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "feature"
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = ""
                         },
-                        new ContentModel()
+                        new
                         {
                                 type = "Label",
                                 id = "critical"

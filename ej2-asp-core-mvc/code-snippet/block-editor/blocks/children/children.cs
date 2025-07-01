@@ -1,23 +1,23 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Children()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "security-callout",
                 type = "Callout",
-                children = new List<BlockModel>()
+                children = new List<Block>()
                 {
-                        new BlockModel()
+                        new Block()
                         {
                                 id = "security-title",
                                 parentId = "security-callout",
                                 type = "Heading3",
-                                content = new List<ContentModel>()
+                                content = new List<object>()
                                 {
-                                        new ContentModel()
+                                        new
                                         {
                                                 type = "Text",
                                                 content = "Security Notice"
@@ -26,14 +26,14 @@ public ActionResult Children()
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "security-warning",
                 parentId = "security-callout",
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 id = "paragraph1-content",
                                 type = "Text",
@@ -41,45 +41,45 @@ public ActionResult Children()
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "security-tips",
                 parentId = "security-callout",
                 type = "Paragraph",
                 indent = 1,
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Use HTTPS for all data transmission"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "security-tips-2",
                 parentId = "security-callout",
                 type = "Paragraph",
                 indent = 1,
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Implement proper authentication mechanisms"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 id = "security-tips-3",
                 parentId = "security-callout",
                 type = "Paragraph",
                 indent = 1,
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Regularly update dependencies and libraries"

@@ -1,10 +1,10 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Image()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Image",
                 imageSettings = new ImageSettingsModel()
@@ -13,12 +13,12 @@ public ActionResult Image()
                         altText = "Sample image"
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "You can customize images further by configuring properties like allowedTypes for file upload restrictions, saveFormat for storage preferences, and cssClass for custom styling."

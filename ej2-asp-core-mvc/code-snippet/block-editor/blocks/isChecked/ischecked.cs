@@ -1,26 +1,26 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult IsChecked()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 content = "Task List:"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Completed task (checked)"
@@ -28,12 +28,12 @@ public ActionResult IsChecked()
                 },
                 isChecked = true
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Pending task (unchecked)"
@@ -41,12 +41,12 @@ public ActionResult IsChecked()
                 },
                 isChecked = false
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "High priority task"
@@ -54,12 +54,12 @@ public ActionResult IsChecked()
                 },
                 isChecked = true
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "CheckList",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Low priority task"

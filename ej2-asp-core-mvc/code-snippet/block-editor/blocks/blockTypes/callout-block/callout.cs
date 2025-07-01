@@ -1,19 +1,19 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Callout()
 {
-        BlocksData.Add(new BlockModel() {
+        BlocksData.Add(new Block() {
                 type = "Callout",
-                children = new List<BlockModel>()
+                children = new List<Block>()
                 {
-                        new BlockModel()
+                        new Block()
                         {
                                 id = "callout-content-1",
                                 type = "Paragraph",
-                                content = new List<ContentModel>(){
-                                        new ContentModel(){
+                                content = new List<object>(){
+                                        new{
                                                 id = "callout-content-1",
                                                 type = "Text",
                                                 content = "Important information: This is a callout block used to highlight important content."

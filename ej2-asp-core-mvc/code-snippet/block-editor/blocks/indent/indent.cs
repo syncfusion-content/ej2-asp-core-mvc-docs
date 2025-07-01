@@ -1,27 +1,27 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Indent()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 content = "This is a paragraph with no indentation (indent: 0)"
                         }
                 },
                 indent = 0
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "This paragraph has one level of indentation (indent: 1)"
@@ -29,12 +29,12 @@ public ActionResult Indent()
                 },
                 indent = 1
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "This paragraph has two levels of indentation (indent: 2)"
@@ -42,12 +42,12 @@ public ActionResult Indent()
                 },
                 indent = 2
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "Paragraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Back to no indentation"

@@ -1,29 +1,29 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Toggle()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "ToggleHeading1",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Collapsible Section"
                         }
                 },
                 isExpanded = true,
-                children = new List<BlockModel>()
+                children = new List<Block>()
                 {
-                        new BlockModel()
+                        new Block()
                         {
                                 type = "Paragraph",
-                                content = new List<ContentModel>()
+                                content = new List<object>()
                                 {
-                                        new ContentModel()
+                                        new
                                         {
                                                 type = "Text",
                                                 content = "This content is inside a toggle section and can be collapsed."
@@ -32,26 +32,26 @@ public ActionResult Toggle()
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
                 type = "ToggleParagraph",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Toggle paragraph section"
                         }
                 },
                 isExpanded = false,
-                children = new List<BlockModel>()
+                children = new List<Block>()
                 {
-                        new BlockModel()
+                        new Block()
                         {
                                 type = "Paragraph",
-                                content = new List<ContentModel>()
+                                content = new List<object>()
                                 {
-                                        new ContentModel()
+                                        new
                                         {
                                                 type = "Text",
                                                 content = "This content is initially hidden because isExpanded is set to false."

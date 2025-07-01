@@ -1,10 +1,10 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult AllowedStyle()
 {
-        BlocksData.Add(new BlockModel()
+        BlocksData.Add(new Block()
         {
                 id = "demo-block",
                 type = "Paragraph"

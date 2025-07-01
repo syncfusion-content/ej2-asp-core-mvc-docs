@@ -1,6 +1,6 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 public List<object> BlockItems { get; set; }
 public BlockActionMenuSettings BlockActionMenuSettings { get; set; }
 
