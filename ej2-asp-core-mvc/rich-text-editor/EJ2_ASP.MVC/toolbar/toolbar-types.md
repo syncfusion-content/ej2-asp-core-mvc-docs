@@ -124,8 +124,7 @@ Setting the `type` to `Popup` in [toolbarSettings](https://help.syncfusion.com/c
 {% include code-snippet/rich-text-editor/toolbar-popup/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/toolbar-popup
-/controller.cs %}
+{% include code-snippet/rich-text-editor/toolbar-popup/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
