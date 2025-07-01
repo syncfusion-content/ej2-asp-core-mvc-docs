@@ -126,6 +126,28 @@ You can define a meaningful name for a cell range and use it in the formula for 
 * You can remove an added named range dynamically using the `removeDefinedName` method.
 * Select the range of cells, and then enter the name for the selected range in the name box.
 
+### Properties of DefinedName
+
+A defined name in the Spreadsheet supports the following key properties:
+
+- **[`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.DefinedName.html#Syncfusion_EJ2_Spreadsheet_DefinedName_Name)**: A unique identifier to represent a specific range or formula.
+
+- **[`refersTo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.DefinedName.html#Syncfusion_EJ2_Spreadsheet_DefinedName_RefersTo)**: The cell reference or formula that the name refers to.
+  - You can specify it **with or without** the `=` prefix.
+  - **Example**: `'A1:B5'` or `'=A1:B5'` are both valid.
+
+- **[`scope`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Spreadsheet.DefinedName.html#Syncfusion_EJ2_Spreadsheet_DefinedName_Scope)** (optional): Indicates whether the name is accessible across the **workbook** or only within a **specific sheet**.
+  - If `scope` is not specified, it defaults to `"Workbook"`.
+  - If a sheet name is provided as `scope`, the name will be available only within that sheet.
+
+```csharp
+spreadsheet.addDefinedName({
+  name: 'rangeName',
+  refersTo: '=C2:C10',
+  scope: 'Sheet1' // local to Sheet1
+});
+```
+
 The following code example shows the usage of named ranges support.
 
 {% if page.publishingplatform == "aspnet-core" %}
