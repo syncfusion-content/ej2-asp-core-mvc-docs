@@ -6,8 +6,8 @@ public ActionResult CssClass()
 {
         BlocksData.Add(new Block
         {
-                type = "Heading1",
-                content = new List<object>()
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -18,8 +18,8 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -29,8 +29,8 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -38,12 +38,12 @@ public ActionResult CssClass()
                                 content = "This is an info block"
                         }
                 },
-                cssClass = "info-block"
+                CssClass = "info-block"
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -51,12 +51,12 @@ public ActionResult CssClass()
                                 content = "This is a warning block"
                         }
                 },
-                cssClass = "warning-block"
+                CssClass = "warning-block"
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -64,12 +64,12 @@ public ActionResult CssClass()
                                 content = "This is a success block"
                         }
                 },
-                cssClass = "success-block"
+                CssClass = "success-block"
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -77,12 +77,12 @@ public ActionResult CssClass()
                                 content = "This is an error block"
                         }
                 },
-                cssClass = "error-block"
+                CssClass = "error-block"
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -90,7 +90,7 @@ public ActionResult CssClass()
                                 content = "This is a custom font block"
                         }
                 },
-                cssClass = "custom-font"
+                CssClass = "custom-font"
         });
         ViewBag.BlocksData = BlocksData;
         return View();

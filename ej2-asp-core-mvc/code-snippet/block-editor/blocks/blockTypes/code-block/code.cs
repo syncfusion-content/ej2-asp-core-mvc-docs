@@ -6,8 +6,8 @@ public ActionResult Code()
 {
         BlocksData.Add(new Block()
         {
-                type = "Code",
-                content = new List<object>()
+                Type = "Code",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -15,27 +15,27 @@ public ActionResult Code()
                                 content = "function greeting() {\n  console.log(\"Hello, world!\");\n}"
                         }
                 },
-                codeSettings = new CodeSettingsModel()
+                CodeSettings = new
                 {
                         defaultLanguage = "javascript",
-                        languages = new List<CodeLanguageModel>()
+                        languages = new List<object>()
                         {
-                                new CodeLanguageModel()
+                                new
                                 {
                                         label = "JavaScript",
                                         language = "javascript"
                                 },
-                                new CodeLanguageModel()
+                                new
                                 {
                                         label = "TypeScript",
                                         language = "typescript"
                                 },
-                                new CodeLanguageModel()
+                                new
                                 {
                                         label = "HTML",
                                         language = "html"
                                 },
-                                new CodeLanguageModel()
+                                new
                                 {
                                         label = "CSS",
                                         language = "css"

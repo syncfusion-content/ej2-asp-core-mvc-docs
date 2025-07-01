@@ -5,7 +5,7 @@
         <e-blocks>
             @foreach (var block in ViewBag.BlocksData)
             {
-                <e-block id="@block.id" type="@block.type.ToString()" content="@block.content" children="@block.children" indent="@block.indent" parentId="@block.parentId"></e-block>
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content" children="@block.Children" indent="@block.Indent" parentId="@block.parentId"></e-block>
             }
         </e-blocks>
     </ejs-blockeditor>

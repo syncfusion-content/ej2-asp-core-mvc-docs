@@ -6,9 +6,9 @@ public ActionResult Formatting()
 {
         BlocksData.Add(new Block
         {
-                id = "sample-heading",
-                type = "Heading1",
-                content = new List<object>()
+                Id = "sample-heading",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -19,9 +19,9 @@ public ActionResult Formatting()
         });
         BlocksData.Add(new Block
         {
-                id = "sample-paragraph-1",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "sample-paragraph-1",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -32,9 +32,9 @@ public ActionResult Formatting()
         });
         BlocksData.Add(new Block
         {
-                id = "sample-list",
-                type = "BulletList",
-                content = new List<object>()
+                Id = "sample-list",
+                Type = "BulletList",
+                Content = new List<object>()
                 {
                         new
                         {

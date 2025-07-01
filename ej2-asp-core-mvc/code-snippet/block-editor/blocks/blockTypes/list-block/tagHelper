@@ -5,7 +5,7 @@
         <e-blocks>
             @foreach (var block in ViewBag.BlocksData)
             {
-                <e-block id="@block.id" type="@block.type.ToString()" content="@block.content" isChecked="@block.isChecked"></e-block>
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content" isChecked="@block.IsChecked"></e-block>
             }
         </e-blocks>
     </ejs-blockeditor>

@@ -6,16 +6,16 @@ public ActionResult Children()
 {
         BlocksData.Add(new Block
         {
-                id = "security-callout",
-                type = "Callout",
-                children = new List<Block>()
+                Id = "security-callout",
+                Type = "Callout",
+                Children = new List<Block>()
                 {
                         new Block()
                         {
-                                id = "security-title",
-                                parentId = "security-callout",
-                                type = "Heading3",
-                                content = new List<object>()
+                                Id = "security-title",
+                                Parentid = "security-callout",
+                                Type = "Heading3",
+                                Content = new List<object>()
                                 {
                                         new
                                         {
@@ -28,10 +28,10 @@ public ActionResult Children()
         });
         BlocksData.Add(new Block
         {
-                id = "security-warning",
-                parentId = "security-callout",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "security-warning",
+                ParentId = "security-callout",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -43,11 +43,11 @@ public ActionResult Children()
         });
         BlocksData.Add(new Block
         {
-                id = "security-tips",
-                parentId = "security-callout",
-                type = "Paragraph",
-                indent = 1,
-                content = new List<object>()
+                Id = "security-tips",
+                ParentId = "security-callout",
+                Type = "Paragraph",
+                Indent = 1,
+                Content = new List<object>()
                 {
                         new
                         {
@@ -58,11 +58,11 @@ public ActionResult Children()
         });
         BlocksData.Add(new Block
         {
-                id = "security-tips-2",
-                parentId = "security-callout",
-                type = "Paragraph",
-                indent = 1,
-                content = new List<object>()
+                Id = "security-tips-2",
+                ParentId = "security-callout",
+                Type = "Paragraph",
+                Indent = 1,
+                Content = new List<object>()
                 {
                         new
                         {
@@ -73,11 +73,11 @@ public ActionResult Children()
         });
         BlocksData.Add(new Block
         {
-                id = "security-tips-3",
-                parentId = "security-callout",
-                type = "Paragraph",
-                indent = 1,
-                content = new List<object>()
+                Id = "security-tips-3",
+                ParentId = "security-callout",
+                Type = "Paragraph",
+                Indent = 1,
+                Content = new List<object>()
                 {
                         new
                         {

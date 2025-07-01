@@ -5,9 +5,9 @@ public List<Block> BlocksData { get; set; } = new List<Block>();
 public ActionResult DragDrop()
 {
         BlocksData.Add(new Block() {
-                id = "block-1",
-                type = "Heading1",
-                content = new List<object>()
+                Id = "block-1",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new{
                         type = "Text",
@@ -16,9 +16,9 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new Block() {
-                id = "block-2",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "block-2",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new {
                                 type = "Text",
@@ -27,9 +27,9 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new Block() {
-                id = "block-3",
-                type = "BulletList",
-                content = new List<object>()
+                Id = "block-3",
+                Type = "BulletList",
+                Content = new List<object>()
                 {
                         new {
                                 type = "Text",
@@ -38,9 +38,9 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new Block() {
-                id = "block-4",
-                type = "NumberedList",
-                content = new List<object>()
+                Id = "block-4",
+                Type = "NumberedList",
+                Content = new List<object>()
                 {
                         new {
                                 type = "Text",
@@ -49,9 +49,9 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new Block() {
-                id = "block-5",
-                type = "NumberedList",
-                content = new List<object>()
+                Id = "block-5",
+                Type = "NumberedList",
+                Content = new List<object>()
                 {
                         new {
                                 type = "Text",

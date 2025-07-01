@@ -6,8 +6,8 @@ public ActionResult PlainText()
 {
         BlocksData.Add(new Block()
         {
-                id = "demo-block",
-                type = "Paragraph"
+                Id = "demo-block",
+                Type = "Paragraph"
         });
         ViewBag.BlocksData = BlocksData;
         return View();
