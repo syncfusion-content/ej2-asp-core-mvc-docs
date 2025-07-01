@@ -29,6 +29,7 @@
     // To insert text in cursor position
     container.documentEditor.editor.insertText('Text');
   }
+
   function moveCursorToNextCell() {
     // To get current selection start offset
     var startOffset = container.documentEditor.selection.startOffset;
