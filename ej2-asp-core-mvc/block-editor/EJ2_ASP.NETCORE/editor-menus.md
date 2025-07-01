@@ -30,13 +30,11 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 
 ### Customize Slash command menu
 
-You can utilize the `commandMenu` property on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
-
-Below example demonstrates how to customize the Slash Command menu.
+You can utilize the `e-blockeditor-commandmenusettings` tag helper on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.
 
 #### Show or hide tooltip
 
-By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the `enableTooltip` property on the command menu settings.
+By default, the tooltip is displayed when the user hovers over the command item. You can show or hide the tooltip using the `enableTooltip` property on the `e-blockeditor-commandmenusettings` tag helper.
 
 ### Events
 
@@ -49,7 +47,18 @@ The following events are available in the Slash Command menu.
 |`queryFiltering`|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
 |`itemClicked`|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
 
-Below example demonstrates how to configure the events in the Slash Command menu.
+Below example demonstrates the customization of the Slash Command menu.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SlashCommand.cs" %}
+{% include code-snippet/block-editor/editor-menus/slash-command/slashCommand.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Slash Command](images/editor-slashcommand.png)
 
 ## Context menu
 
@@ -66,9 +75,7 @@ The Context menu offers different built-in options:
 
 ### Customize Context menu
 
-You can utilize the `contextMenu` property on the blockeditor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
-
-Below example demonstrates how to customize the Context menu.
+You can utilize the `e-blockeditor-contextmenusettings` tag helper on the Block Editor to customize the Context menu to add specific actions or modify existing ones based on the application needs.
 
 ### Events
 
@@ -82,7 +89,18 @@ The following events are available in the Context menu.
 |`close`|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
 |`itemClick`|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
 
-Below example demonstrates how to configure the events in the Context menu.
+Below example demonstrates the customization of the Context menu.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ContextMenu.cs" %}
+{% include code-snippet/block-editor/editor-menus/context-menu/contextMenu.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Context Menu](images/editor-contextmenu.png)
 
 ## Block action menu
 
@@ -99,9 +117,7 @@ The Block Action menu provides convenient actions for managing individual blocks
 
 ### Customize Block action menu
 
-You can utilize the `Block actionsMenu` property on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
-
-Below example demonstrates how to customize the Block action menu.
+You can utilize the `e-blockeditor-blockactionmenusettings` tag helper on the block editor to customize the Block action menu to include block-specific commands relevant to your application. This allows for highly tailored user experiences.
 
 #### Show or hide tooltip
 
@@ -117,7 +133,18 @@ The following events are available in the Block action menu.
 |`close`|Block actionMenuCloseEventArgs|Triggers when the block action menu is closed.|
 |`itemClick`|Block actionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
 
-Below example demonstrates how to configure the events in the Block action menu.
+Below example demonstrates the customization of the Block action menu.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/block-action/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="BlockAction.cs" %}
+{% include code-snippet/block-editor/editor-menus/block-action/blockAction.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block Action](images/editor-blockaction.png)
 
 ## Inline Toolbar
 
@@ -135,9 +162,7 @@ The Inline Toolbar includes below built-in formatting options:
 
 ### Customize Inline Toolbar
 
-You can utilize the `inlineToolbar` property on the blockeditor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
-
-Below example demonstrates how to customize the Inline Toolbar.
+You can utilize the `e-blockeditor-inlinetoolbarsettings` tag helper on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.
 
 #### Show or hide tooltip
 
@@ -153,4 +178,13 @@ The following events are available in the Inline Toolbar.
 |`close`|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
 |`itemClicked`|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
-Below example demonstrates how to configure the events in the Inline Toolbar.
+Below example demonstrates the customization of the Inline Toolbar.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="InlineToolbar.cs" %}
+{% include code-snippet/block-editor/editor-menus/inline-toolbar/inlineToolbar.cs %}
+{% endhighlight %}
+{% endtabs %}

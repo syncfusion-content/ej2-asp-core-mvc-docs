@@ -172,7 +172,7 @@ You can render Image blocks by setting the `Type` property as `Image`. By settin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-block/image.cs %}
