@@ -34,6 +34,8 @@ The File Manager can be populated with local data that contains the array of [Fi
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `FileSystemData` objects.
 
+The `type` field in the flat data source must not be `null`. This field identifies whether the item is a file or a folder, and it also specifies the file type.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/flat-data/razor %}
@@ -67,6 +69,7 @@ The File Manager can be populated with local data that contains the array of [Fi
 
 To render the root-level folder, specify the `parentId` as null, or there is no need to specify the `parentId` in the array of `FileSystemData`  objects.
 
+The `type` field in the flat data source must not be `null`. This field identifies whether the item is a file or a folder, and it also specifies the file type.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
