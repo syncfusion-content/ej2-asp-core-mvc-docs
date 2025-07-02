@@ -1,42 +1,42 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Block()
 {
-        BlocksData.Add( new BlockModel
+        BlocksData.Add( new Block
         {
-                id = "block-1",
-                type = "Heading1",
-                content = new List<ContentModel>()
+                Id = "block-1",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Sample Heading"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "block-2",
-                type = "Paragraph",
-                content = new List<ContentModel>()
+                Id = "block-2",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "This is a sample paragraph block."
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "block-3",
-                type = "Paragraph",
-                content = new List<ContentModel>()
+                Id = "block-3",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "This is another paragraph block."
