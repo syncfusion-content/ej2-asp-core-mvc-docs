@@ -12,7 +12,7 @@ documentation: ug
 
 The PDF Viewer control provides the options to add, edit, and delete text markup annotations such as highlight, underline, strikethrough and squiggly annotations in the PDF document.
 
-![Alt text](../../images/text_markup_annotation.png)
+![Alt text](../../pdfviewer/images/text_markup_annotation.png)
 
 ## Highlight a text
 
@@ -23,7 +23,7 @@ There are two ways to highlight a text in the PDF document:
 * Select a text in the PDF document and right-click it.
 * Select **Highlight** option in the context menu that appears.
 
-![Alt text](../../images/highlight_context.png)
+![Alt text](../../pdfviewer/images/highlight_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2.Using the annotation toolbar
@@ -33,7 +33,7 @@ There are two ways to highlight a text in the PDF document:
 * Select the text and the highlight annotation will be added.
 * You can also select the text and apply the highlight annotation using the **Highlight** button.
 
-![Alt text](../../images/highlight_button.PNG)
+![Alt text](../../pdfviewer/images/highlight_button.PNG)
 
 In the pan mode, if the highlight mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for highlighting the text.
 
@@ -536,7 +536,7 @@ There are two ways to add a squiggly annotation to text in the PDF document:
 * Select a text in the PDF document and right-click it.
 * Select the **Squiggly** option in the context menu that appears.
 
-![Alt text](../../images/squiggly_context.png)
+![Alt text](../../pdfviewer/images/squiggly_context.png)
 
 <!-- markdownlint-disable MD029 -->
 2.Using the annotation toolbar
@@ -546,7 +546,7 @@ There are two ways to add a squiggly annotation to text in the PDF document:
 * Select the text and the squiggly annotation will be added.
 * You can also select the text and apply the squiggly annotation using the **Squiggly** button.
 
-![Alt text](../../images/squiggly_button.png)
+![Alt text](../../pdfviewer/images/squiggly_button.png)
 
 In the pan mode, if the squiggly mode is entered, the PDF Viewer control will switch to text select mode to enable the text selection for adding squiggly to the text.
 
