@@ -1,29 +1,29 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Selection()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "heading-block",
-                type = "Heading1",
-                content = new List<ContentModel>()
+                Id = "heading-block",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "Welcome to Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "paragraph-1",
-                type = "Paragraph",
-                content = new List<ContentModel>()
+                Id = "paragraph-1",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 id = "paragraph1-content",
                                 type = "Text",
@@ -31,26 +31,26 @@ public ActionResult Selection()
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "paragraph-2",
-                type = "Paragraph",
-                content = new List<ContentModel>()
+                Id = "paragraph-2",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "This is the second paragraph that can be used for various selection operations."
                         }
                 }
         });
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                id = "list-block",
-                type = "BulletList",
-                content = new List<ContentModel>()
+                Id = "list-block",
+                Type = "BulletList",
+                Content = new List<object>()
                 {
-                        new ContentModel()
+                        new
                         {
                                 type = "Text",
                                 content = "First list item"
