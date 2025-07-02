@@ -1,0 +1,15 @@
+@Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+   Marker(marker => marker.Visible(false).DataLabel(dataLabel => dataLabel.Visible(true))).
+   XName("x").
+   YName("y").
+   DataSource(ViewBag.dataSource).
+   Animation(animation => animation.Enable(true)).
+   LastValueLabel(lastValueLabel => lastValueLabel.Enable(true)).
+   Name("series1").Add();
+   }).
+   PrimaryXAxis(px => px.Interval(1).Title("Year")).
+   PrimaryYAxis(py => py.LabelFormat("{value}%").Title("Efficiency")).
+   Tooltip(tooltip => tooltip.Enable(true)).Width("90%").
+   Title("Efficiency of oil-fired power production").Render()
