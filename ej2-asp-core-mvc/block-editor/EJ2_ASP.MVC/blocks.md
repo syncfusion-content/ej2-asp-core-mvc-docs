@@ -10,13 +10,13 @@ documentation: ug
 
 # Blocks in ##Platform_Name## Block Editor control
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The `blocks` property allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Blocks.html) property allows you to define and manage the content structure of your editor.
 
 ## Blocks
 
 Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit such as a `paragraph`, `heading`, `list`, or specialized content like `code snippets` or `images`. The Block Editor organizes content as a collection of `blocks`, allowing for better structure and formatting options.
 
-You can configure blocks with various properties such as `Id`, `Type`, `Content`, `Children` and more to create rich, structured editor.
+You can configure blocks with various properties such as [Id](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Id), [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type), [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content), [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) and more to create rich, structured editor.
 
 ## Block types
 
@@ -40,11 +40,11 @@ The Block Editor supports multiple block types. Each block type offers different
 ### Configure block type
 
 The Block Editor supports several block types through the `BlockType` enum.
-You can configure the type of each block using the `Type` property. The block type determines the appearance and behavior of the content. By default, the block type is set to `Paragraph`.
+You can configure the type of each block using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property. The block type determines the appearance and behavior of the content. By default, the block type is set to `Paragraph`.
 
 ### Configure paragraph block
 
-You can render Paragraph blocks by setting the `Type` property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
+You can render Paragraph blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -59,7 +59,7 @@ You can render Paragraph blocks by setting the `Type` property as `Paragraph`. P
 
 ### Configure heading block
 
-You can render Heading blocks by setting the `Type` property as `Heading1`, `Heading2`, `Heading3`, or `Heading4`. Heading blocks (Heading1 to Heading4) are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+You can render Heading blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Heading1`, `Heading2`, `Heading3`, or `Heading4`. Heading blocks (Heading1 to Heading4) are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -74,7 +74,7 @@ You can render Heading blocks by setting the `Type` property as `Heading1`, `Hea
 
 ### Configure toggle blocks
 
-You can render Toggle blocks by setting the `Type` property as `ToggleParagraph` or `ToggleHeading1` to `ToggleHeading4`. Toggle blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Toggle blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `ToggleParagraph` or `ToggleHeading1` to `ToggleHeading4`. Toggle blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -89,7 +89,7 @@ You can render Toggle blocks by setting the `Type` property as `ToggleParagraph`
 
 ### Configure list blocks
 
-You can render List blocks by setting the `Type` property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+You can render List blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -104,7 +104,7 @@ You can render List blocks by setting the `Type` property as `BulletList`, `Numb
 
 ### Configure code block
 
-You can render Code blocks by setting the `Type` property as `Code`. By setting the `CodeSettings` property, you can configure the languages available for syntax highlighting and the default language. The default language is 'javascript'.
+You can render Code blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Code`. By setting the `CodeSettings` property, you can configure the languages available for syntax highlighting and the default language. The default language is 'javascript'.
 
 > Refer to the [CodeSettings](#configure-code-settings) section for more details about the code settings.
 
@@ -121,7 +121,7 @@ You can render Code blocks by setting the `Type` property as `Code`. By setting 
 
 ### Configure quote block
 
-You can render Quote blocks by setting the `Type` property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
+You can render Quote blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -136,7 +136,7 @@ You can render Quote blocks by setting the `Type` property as `Quote`. Quote blo
 
 ### Configure callout block
 
-You can render Callout blocks by setting the `Type` property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
+You can render Callout blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -151,7 +151,7 @@ You can render Callout blocks by setting the `Type` property as `Callout`. They'
 
 ### Configure divider block
 
-Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the `Type` property as `Divider`.
+Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Divider`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -166,13 +166,13 @@ Divider blocks insert horizontal lines that separate different sections of conte
 
 ### Configure image block
 
-You can render Image blocks by setting the `Type` property as `Image`. By setting the `ImageSettings` property, you can configure the image source, allowed file types, and display dimensions etc.
+You can render Image blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Image`. By setting the [ImageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ImageSettings) property, you can configure the image source, allowed file types, and display dimensions etc.
 
 > Refer to the [ImageSettings](#configure-image-settings) section for more details about the image settings.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-block/image.cs %}
@@ -181,7 +181,7 @@ You can render Image blocks by setting the `Type` property as `Image`. By settin
 
 ### Adding template
 
-You can render Template blocks by setting the `Type` property as `Template`. Template blocks enable you to use predefined content structures or custom templates.
+You can render Template blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Template`. Template blocks enable you to use predefined content structures or custom templates.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -196,7 +196,7 @@ You can render Template blocks by setting the `Type` property as `Template`. Tem
 
 ## Configure content
 
-Content in the Block Editor is managed through the `Content` property of blocks.
+Content in the Block Editor is managed through the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content) property of blocks.
 
 Each content can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
 
@@ -278,31 +278,64 @@ The `LinkSettings` property supports the following options:
 
 ## Configure indent
 
-You can specify the indentation level of a block using the `Indent` property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
+You can specify the indentation level of a block using the [Indent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
 
-By default, the `Indent` property is set to `0`.
+By default, the [Indent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Indent) property is set to `0`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/indent/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indent.cs" %}
+{% include code-snippet/block-editor/blocks/indent/indent.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block Indent](images/block-indent.png)
 
 ## Configure checked state
 
-For blocks that support selection states such as `CheckList`, you can configure the checked state using the `IsChecked` property.
+For blocks that support selection states such as `CheckList`, you can configure the checked state using the [IsChecked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked) property.
 
-By default, the `IsChecked` property is set to `false`.
+By default, the [IsChecked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked) property is set to `false`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/isChecked/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="IsChecked.cs" %}
+{% include code-snippet/block-editor/blocks/isChecked/ischecked.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block isChecked](images/block-ischecked.png)
 
 ## Configure expanded state
 
-You can control whether a block is expanded or collapsed using the `IsExpanded` property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Toggle blocks.
+You can control whether a block is expanded or collapsed using the [IsExpanded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsExpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Toggle blocks.
 
 ## Configure CSS class
 
-You can apply custom styling to individual blocks using the `CssClass` property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_CssClass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/cssClass/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CssClass.cs" %}
+{% include code-snippet/block-editor/blocks/cssClass/cssclass.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block cssClass](images/block-cssClass.png)
+
 ## Configure image settings
 
-For Image blocks, you can configure various aspects using the `ImageSettings` property. By using this property, you can set the image source, dimensions, save format, allowed file types, and more.
+For Image blocks, you can configure various aspects using the [ImageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ImageSettings) property. By using this property, you can set the image source, dimensions, save format, allowed file types, and more.
 
-The `ImageSettings` property supports the following options:
+The [ImageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ImageSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -323,9 +356,9 @@ These settings give you fine-grained control over how images appear and behave w
 
 ## Configure code settings
 
-For Code blocks, you can configure syntax highlighting and language options using the `CodeSettings` property.
+For Code blocks, you can configure syntax highlighting and language options using the [CodeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_CodeSettings) property.
 
-The `CodeSettings` property supports the following options:
+The [CodeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_CodeSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -338,15 +371,26 @@ Each language object in the `languages` array should have:
 
 ## Configuring label settings
 
-The `LabelSettings` property of the Block Editor provides options for configuring how labels work in your editor. It allows you to define the trigger character and available label items.
+The [LabelSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_LabelSettings) property of the Block Editor provides options for configuring how labels work in your editor. It allows you to define the trigger character and available label items.
 
-### Trigger Character configuration
+### Built-in items
 
-You can use the `TriggerChar` property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
+The Block Editor comes with offers different built-in options. These include:
+
+-   **Progress**: In-progress, On-hold, Done
+-   **Priority**: High, Medium, Low
+
+### Customize label
+
+You can customize the labels by using the [LabelSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_LabelSettings) property.
+
+#### Trigger Character configuration
+
+You can use the `triggerChar` property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
 
 ### Label items configuration
 
-The `LabelItems` array allows you to define the available labels in your editor. Each label item can have the following properties:
+The `labelItems` array allows you to define the available labels in your editor. Each label item can have the following properties:
 
 | Property    | Description                                 |
 |-------------|---------------------------------------------|
@@ -361,22 +405,66 @@ When users type the trigger character followed by text, a popup will appear show
 
 #### Using labels with group headers
 
-Labels with the same `GroupHeader` value will be grouped together in the label selection popup:
+Labels with the same `groupHeader` value will be grouped together in the label selection popup:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/label-settings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label.cs" %}
+{% include code-snippet/block-editor/blocks/label-settings/label.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block label-settings](images/block-label.png)
 
 ## Configure template
 
-The Block Editor allows you to use custom templates for specialized content using the `Template` property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Template) property. Templates can be defined as strings, functions, or HTML elements.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Template Block](images/block-template.png)
 
 ## Configure placeholder
 
-You can configure placeholder text for block using the `Placeholder` property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/placeholder/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Placeholder.cs" %}
+{% include code-snippet/block-editor/blocks/placeholder/placeholder.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block placeholder](images/block-placeholder.png)
 
 ## Configure children
 
-The Block Editor supports hierarchical content structures through the `Children` property. This property allows you to create nested blocks, which is applicable only for Callout and Toggle blocks.
+The Block Editor supports hierarchical content structures through the [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) property. This property allows you to create nested blocks, which is applicable only for Callout and Toggle blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ### Configure parent id
 
-For proper hierarchy, you should ensure that the `ParentId` of each child block matches the `Id` of its parent block. This structure helps maintain the nested relationships within the editor.
+For proper hierarchy, you should ensure that the [ParentId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ParentId) of each child block matches the `Id` of its parent block. This structure helps maintain the nested relationships within the editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/children/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Children.cs" %}
+{% include code-snippet/block-editor/blocks/children/children.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Block children](images/block-children.png)

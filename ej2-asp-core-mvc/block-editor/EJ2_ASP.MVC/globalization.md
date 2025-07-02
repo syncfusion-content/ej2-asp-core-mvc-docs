@@ -61,7 +61,7 @@ The below example shows adding the German culture locale(`de-DE`)
 
 ## RTL
 
-RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the `enableRtl` property to `true`.
+RTL provides an option to switch the text direction and layout of the Block Editor control from right to left by setting the [EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableRtl) property to `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -1,15 +1,15 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Code()
 {
-        BlocksData.Add(new BlockModel()
+        BlocksData.Add(new Block()
         {
                 type = "Code",
-                content = new List<ContentModel>()
+                content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "function greeting() {\n  console.log(\"Hello, world!\");\n}"
