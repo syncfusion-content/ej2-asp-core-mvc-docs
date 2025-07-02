@@ -21,7 +21,7 @@ The undo/redo feature in Block Editor enables users to revert or reapply changes
 
 ## Configuring Undo/Redo stack
 
-Block Editor allows up to `30` Undo/Redo actions by default. You can modify the number of undo/redo steps using the `undoRedoStack` property.
+Block Editor allows up to `30` Undo/Redo actions by default. You can modify the number of undo/redo steps using the [undoRedoStack](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_UndoRedoStack) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

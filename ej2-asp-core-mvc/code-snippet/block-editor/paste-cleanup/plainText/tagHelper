@@ -1,15 +1,15 @@
 @using Syncfusion.EJ2.BlockEditor
 
 @{
-    var allowedStyles = new string[] { "text-decoration" };
-    var deniedTags = new string[] { "script", "iframe" };
+    var keepFormat = false;
+    var plainText = true;
     var displayText = string.Format(
                 @"Paste Cleanup Settings Active:
-- Allowed Styles: ['{0}']
-- Denied Tags: ['{1}']
+- Keep Format: ['{0}']
+- Plain Text: ['{1}']
 Copy content from the test area above and paste it into the editor to see the cleanup in action.",
-        string.Join("', '", allowedStyles),
-        string.Join("', '", deniedTags)
+        string.Join("', '", keepFormat),
+        string.Join("', '", plainText)
     );
 
 }
@@ -19,10 +19,10 @@ Copy content from the test area above and paste it into the editor to see the cl
         <e-blocks>
             @foreach (var block in ViewBag.BlocksData)
             {
-                <e-block id="@block.id" type="@block.type.ToString()" content="@block.content"></e-block>
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content"></e-block>
             }
         </e-blocks>
-        <e-blockeditor-pastesettings deniedTags="@deniedTags" allowedStyles="@allowedStyles"></e-blockeditor-pastesettings>
+        <e-blockeditor-pastesettings keepFormat="false" plainText="true"></e-blockeditor-pastesettings>
     </ejs-blockeditor>
     <div id="controls">
         <h4>Test Content to Copy and Paste:</h4>
@@ -30,14 +30,12 @@ Copy content from the test area above and paste it into the editor to see the cl
             <div id="sampleContent" contenteditable="true">
                 <h2 style="color: red; font-weight: bold; font-size: 24px;">Formatted Heading</h2>
                 <p style="background-color: yellow; font-style: italic;">
-                    This is a <span style="font-weight: bold;">bold paragraph</span> with
-                    <span style="color: blue; font-style: italic;">italic text</span> and
+                    This is a <span style="font-weight: bold;">bold paragraph</span> with 
+                    <span style="color: blue; font-style: italic;">italic text</span> and 
                     <span style="text-decoration: underline;">underlined content</span>.
                 </p>
-                <script> console.log('This script should be removed'); </script>
-                <iframe src="about:blank" width="100" height="50"></iframe>
                 <div style="border: 1px solid black; padding: 10px;">
-                    <span style="font-weight: 600;">Heavy text</span> and
+                    <span style="font-weight: 600;">Heavy text</span> and 
                     <span style="color: green; font-size: 18px;">colored text</span>
                 </div>
             </div>

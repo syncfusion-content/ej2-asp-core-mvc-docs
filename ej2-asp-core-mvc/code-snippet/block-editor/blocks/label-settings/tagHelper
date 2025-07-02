@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor" labelSettings="@ViewBag.labelSettings">
+        <e-blocks>
+            @foreach (var block in ViewBag.BlocksData)
+            {
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content"></e-block>
+            }
+        </e-blocks>
+    </ejs-blockeditor>
+</div>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+    }
+</style>
