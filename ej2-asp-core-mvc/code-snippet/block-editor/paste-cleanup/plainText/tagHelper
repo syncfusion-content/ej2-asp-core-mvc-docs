@@ -19,7 +19,7 @@ Copy content from the test area above and paste it into the editor to see the cl
         <e-blocks>
             @foreach (var block in ViewBag.BlocksData)
             {
-                <e-block id="@block.id" type="@block.type.ToString()" content="@block.content"></e-block>
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content"></e-block>
             }
         </e-blocks>
         <e-blockeditor-pastesettings keepFormat="false" plainText="true"></e-blockeditor-pastesettings>

@@ -179,6 +179,8 @@ You can render Image blocks by setting the [type](https://help.syncfusion.com/cr
 {% endhighlight %}
 {% endtabs %}
 
+![Image Block](images/block-image.png)
+
 ### Adding template
 
 You can render Template blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Template`. Template blocks enable you to use predefined content structures or custom templates.

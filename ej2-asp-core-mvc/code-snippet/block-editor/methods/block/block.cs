@@ -6,9 +6,9 @@ public ActionResult Block()
 {
         BlocksData.Add( new Block
         {
-                id = "block-1",
-                type = "Heading1",
-                content = new List<object>()
+                Id = "block-1",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -19,9 +19,9 @@ public ActionResult Block()
         });
         BlocksData.Add(new Block
         {
-                id = "block-2",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "block-2",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -32,9 +32,9 @@ public ActionResult Block()
         });
         BlocksData.Add(new Block
         {
-                id = "block-3",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "block-3",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {

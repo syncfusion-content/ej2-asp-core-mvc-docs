@@ -6,8 +6,8 @@ public ActionResult Divider()
 {
         BlocksData.Add(new Block()
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -18,12 +18,12 @@ public ActionResult Divider()
         });
         BlocksData.Add(new Block()
         {
-                type = "Divider"
+                Type = "Divider"
         });
         BlocksData.Add(new Block()
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new 
                         {

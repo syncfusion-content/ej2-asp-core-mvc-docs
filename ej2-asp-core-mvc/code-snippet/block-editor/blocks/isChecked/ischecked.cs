@@ -6,8 +6,8 @@ public ActionResult IsChecked()
 {
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -17,8 +17,8 @@ public ActionResult IsChecked()
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -26,12 +26,12 @@ public ActionResult IsChecked()
                                 content = "Completed task (checked)"
                         }
                 },
-                isChecked = true
+                IsChecked = true
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -39,12 +39,12 @@ public ActionResult IsChecked()
                                 content = "Pending task (unchecked)"
                         }
                 },
-                isChecked = false
+                IsChecked = false
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -52,12 +52,12 @@ public ActionResult IsChecked()
                                 content = "High priority task"
                         }
                 },
-                isChecked = true
+                IsChecked = true
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -65,7 +65,7 @@ public ActionResult IsChecked()
                                 content = "Low priority task"
                         }
                 },
-                isChecked = false
+                IsChecked = false
         });
         ViewBag.BlocksData = BlocksData;
         return View();

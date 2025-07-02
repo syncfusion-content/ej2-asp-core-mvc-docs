@@ -6,9 +6,9 @@ public ActionResult Appearance()
 {
         BlocksData.Add(new Block
         {
-                id = "title-block",
-                type = "Heading1",
-                content = new List<object>()
+                Id = "title-block",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -19,9 +19,9 @@ public ActionResult Appearance()
         });
         BlocksData.Add(new Block
         {
-                id = "intro-block",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "intro-block",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -33,9 +33,9 @@ public ActionResult Appearance()
         });
         BlocksData.Add(new Block
         {
-                id = "features-heading",
-                type = "Heading2",
-                content = new List<object>()
+                Id = "features-heading",
+                Type = "Heading2",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -46,9 +46,9 @@ public ActionResult Appearance()
         });
         BlocksData.Add(new Block
         {
-                id = "theme-list-1",
-                type = "BulletList",
-                content = new List<object>()
+                Id = "theme-list-1",
+                Type = "BulletList",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -59,9 +59,9 @@ public ActionResult Appearance()
         });
         BlocksData.Add(new Block
         {
-                id = "readonly-info",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "readonly-info",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {

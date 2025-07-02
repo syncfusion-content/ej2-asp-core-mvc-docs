@@ -6,8 +6,8 @@ public ActionResult Toggle()
 {
         BlocksData.Add(new Block
         {
-                type = "ToggleHeading1",
-                content = new List<object>()
+                Type = "ToggleHeading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -15,13 +15,13 @@ public ActionResult Toggle()
                                 content = "Collapsible Section"
                         }
                 },
-                isExpanded = true,
-                children = new List<Block>()
+                IsExpanded = true,
+                Children = new List<Block>()
                 {
                         new Block()
                         {
-                                type = "Paragraph",
-                                content = new List<object>()
+                                Type = "Paragraph",
+                                Content = new List<object>()
                                 {
                                         new
                                         {
@@ -34,8 +34,8 @@ public ActionResult Toggle()
         });
         BlocksData.Add(new Block
         {
-                type = "ToggleParagraph",
-                content = new List<object>()
+                Type = "ToggleParagraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -43,13 +43,13 @@ public ActionResult Toggle()
                                 content = "Toggle paragraph section"
                         }
                 },
-                isExpanded = false,
-                children = new List<Block>()
+                IsExpanded = false,
+                Children = new List<Block>()
                 {
                         new Block()
                         {
-                                type = "Paragraph",
-                                content = new List<object>()
+                                Type = "Paragraph",
+                                Content = new List<object>()
                                 {
                                         new
                                         {

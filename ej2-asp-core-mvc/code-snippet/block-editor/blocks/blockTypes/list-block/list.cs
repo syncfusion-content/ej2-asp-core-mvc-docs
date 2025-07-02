@@ -6,8 +6,8 @@ public ActionResult List()
 {
         BlocksData.Add(new Block
         {
-                type = "BulletList",
-                content = new List<object>()
+                Type = "BulletList",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -18,8 +18,8 @@ public ActionResult List()
         });
         BlocksData.Add(new Block
         {
-                type = "NumberedList",
-                content = new List<object>()
+                Type = "NumberedList",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -30,8 +30,8 @@ public ActionResult List()
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -39,12 +39,12 @@ public ActionResult List()
                                 content = "Review documentation"
                         }
                 },
-                isChecked = true
+                IsChecked = true
         });
         BlocksData.Add(new Block
         {
-                type = "CheckList",
-                content = new List<object>()
+                Type = "CheckList",
+                Content = new List<object>()
                 {
                         new 
                         {
@@ -52,7 +52,7 @@ public ActionResult List()
                                 content = "Implement drag and drop functionality"
                         }
                 },
-                isChecked = false
+                IsChecked = false
         });
         ViewBag.BlocksData = BlocksData;
         return View();

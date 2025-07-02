@@ -6,9 +6,9 @@ public ActionResult Selection()
 {
         BlocksData.Add(new Block
         {
-                id = "heading-block",
-                type = "Heading1",
-                content = new List<object>()
+                Id = "heading-block",
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -19,9 +19,9 @@ public ActionResult Selection()
         });
         BlocksData.Add(new Block
         {
-                id = "paragraph-1",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "paragraph-1",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -33,9 +33,9 @@ public ActionResult Selection()
         });
         BlocksData.Add(new Block
         {
-                id = "paragraph-2",
-                type = "Paragraph",
-                content = new List<object>()
+                Id = "paragraph-2",
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -46,9 +46,9 @@ public ActionResult Selection()
         });
         BlocksData.Add(new Block
         {
-                id = "list-block",
-                type = "BulletList",
-                content = new List<object>()
+                Id = "list-block",
+                Type = "BulletList",
+                Content = new List<object>()
                 {
                         new
                         {

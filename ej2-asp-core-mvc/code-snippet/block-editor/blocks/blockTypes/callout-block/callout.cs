@@ -5,14 +5,14 @@ public List<Block> BlocksData { get; set; } = new List<Block>();
 public ActionResult Callout()
 {
         BlocksData.Add(new Block() {
-                type = "Callout",
-                children = new List<Block>()
+                Type = "Callout",
+                Children = new List<Block>()
                 {
                         new Block()
                         {
-                                id = "callout-content-1",
-                                type = "Paragraph",
-                                content = new List<object>(){
+                                Id = "callout-content-1",
+                                Type = "Paragraph",
+                                Content = new List<object>(){
                                         new{
                                                 id = "callout-content-1",
                                                 type = "Text",

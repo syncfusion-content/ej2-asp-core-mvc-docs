@@ -5,8 +5,8 @@ public List<Block> BlocksData { get; set; } = new List<Block>();
 public ActionResult Placeholder()
 {
         BlocksData.Add(new Block() {
-                type = "Paragraph",
-                content = new List<object>(){
+                Type = "Paragraph",
+                Content = new List<object>(){
                         new{
                                 type = "Text",
                                 content = "This is a sample paragraph block."
@@ -14,8 +14,8 @@ public ActionResult Placeholder()
                 }
         });
         BlocksData.Add(new Block() {
-                type = "Paragraph",
-                content = new List<object>(){
+                Type = "Paragraph",
+                Content = new List<object>(){
                         new{
                                 type = "Text",
                                 placeholder = "Start typing your notes or press \"/\" for commands..."

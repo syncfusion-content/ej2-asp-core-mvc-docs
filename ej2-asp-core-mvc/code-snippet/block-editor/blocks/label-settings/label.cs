@@ -8,8 +8,8 @@ public ActionResult Label()
 {
         BlocksData.Add(new Block
         {
-                type = "Heading1",
-                content = new List<object>()
+                Type = "Heading1",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -20,8 +20,8 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -32,8 +32,8 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -59,8 +59,8 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -86,8 +86,8 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<object>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
                         new
                         {
@@ -111,58 +111,58 @@ public ActionResult Label()
                         }
                 }
         });
-        labelItems = new List<LabelItemModel>()
+        labelItems = new List<object>()
         {
-                new LabelItemModel()
+                new
                 {
                         id = "bug",
                         text = "Bug",
                         labelColor = "#ff5252",
                         groupHeader = "Status"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "task",
                         text = "Task",
                         labelColor = "#90caf9",
                         groupHeader = "Status"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "feature",
                         text = "Feature",
                         labelColor = "#81c784",
                         groupHeader = "Status"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "enhancement",
                         text = "Enhancement",
                         labelColor = "#ba68c8",
                         groupHeader = "Status"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "low",
                         text = "Low Priority",
                         labelColor = "#c5e1a5",
                         groupHeader = "Priority"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "medium",
                         text = "Medium Priority",
                         labelColor = "#fff59d",
                         groupHeader = "Priority"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "high",
                         text = "High Priority",
                         labelColor = "#ffab91",
                         groupHeader = "Priority"
                 },
-                new LabelItemModel()
+                new
                 {
                         id = "critical",
                         text = "Critical",
@@ -170,7 +170,7 @@ public ActionResult Label()
                         groupHeader = "Priority"
                 }
         };
-        labelSettings = new LabelSettingsModel()
+        labelSettings = new object()
         {
                 triggerChar = "#",
                 labelItems = labelItems
