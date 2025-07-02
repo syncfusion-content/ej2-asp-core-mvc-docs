@@ -1,0 +1,124 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor created="onCreated" id="block-editor">
+        <e-blocks>
+            @foreach (var block in ViewBag.BlocksData)
+            {
+                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content"></e-block>
+            }
+        </e-blocks>
+    </ejs-blockeditor>
+    <div id="controls">
+        <h3>Formatting Methods</h3>
+        <div class="button-group">
+            <button id="applyBoldBtn" onclick="applyBoldBtn()">Apply Bold </button>
+            <button id="applyColorBtn" onclick="applyColorBtn()">Apply Color</button>
+            <button id="enableToolbarBtn" onclick="enableToolbarBtn()">Enable Toolbar Items</button>
+            <button id="disableToolbarBtn" onclick="disableToolbarBtn()">Disable Toolbar Items</button>
+        </div>
+        <div class="instruction">
+            <p><strong>Instructions:</strong> Select some text in the editor first, then click the formatting buttons to see the effects.</p>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .button-group {
+        margin-bottom: 15px;
+    }
+
+    .button-group button {
+        margin: 5px;
+        padding: 8px 16px;
+        background-color: #007acc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button-group button:hover {
+        background-color: #005a9e;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 50px;
+        font-family: monospace;
+        white-space: pre-wrap;
+    }
+
+    .instruction {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: #e7f3ff;
+        border-left: 4px solid #007acc;
+        border-radius: 4px;
+    }
+
+    .instruction p {
+        margin: 0;
+        color: #0056b3;
+    }
+</style>
+
+<script>
+
+    var blockEditorObj;
+    function onCreated() {
+        blockEditorObj = ej.base.getInstance(document.getElementById('block-editor'), ejs.blockeditor.BlockEditor);
+    }
+
+    function applyBoldBtn() {
+        blockEditorObj.executeToolbarAction(ej.blockeditor.BuiltInToolbar.Bold);
+        displayOutput('Bold formatting applied to selected text');
+    }
+
+    // Apply Color Formatting
+    function applyColorBtn() {
+        blockEditorObj.executeToolbarAction(ej.blockeditor.BuiltInToolbar.Color, '#ff6b35');
+        displayOutput('Orange color (#ff6b35) applied to selected text');
+    }
+
+    // Enable Toolbar Items
+    function enableToolbarBtn() {
+        // Enable specific toolbar items
+        blockEditorObj.enableToolbarItems(['bold', 'italic', 'underline']);
+        displayOutput('Toolbar items (bold, italic, underline) have been enabled');
+    }
+
+    // Disable Toolbar Items
+    function disableToolbarBtn() {
+        // Disable specific toolbar items
+        blockEditorObj.disableToolbarItems(['bold', 'italic']);
+        displayOutput('Toolbar items (bold, italic) have been disabled');
+    }
+
+    // Output helper function
+    function displayOutput(message) {
+        var outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            outputDiv.textContent = message;
+        }
+    }
+</script>
