@@ -59,7 +59,8 @@ The following code example shows how to add the backstage menu items.
 {% include code-snippet/document-editor-container/customize-ribbon-backstage/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-ribbon-backstage.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,7 +69,8 @@ The following code example shows how to add the backstage menu items.
 {% include code-snippet/document-editor-container/customize-ribbon-backstage/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="customize-ribbon-backstage.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 Refer this documentation know more about [`backstage items`](https://ej2.syncfusion.com/documentation/ribbon/backstage)
