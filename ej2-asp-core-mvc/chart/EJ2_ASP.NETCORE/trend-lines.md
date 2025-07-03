@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trend Lines in ##Platform_Name## Chart Component
+title: Trend Lines in ##Platform_Name## Chart Component | Syncfusion
 description: Learn here all about Trend Lines in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Trend Lines

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paste Cleanup in ##Platform_Name## Rich Text Editor Control
+title: Paste Cleanup in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Paste Cleanup in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paste Cleanup
