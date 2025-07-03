@@ -33,7 +33,7 @@ In below code example, In the example below, the "Open" and "Export" items have 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/customize-ribbon-file/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-ribbon-file.cs" %}
+{% highlight c# tabtitle="Customize-ribbon-file.cs" %}
 {% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -42,7 +42,7 @@ In below code example, In the example below, the "Open" and "Export" items have 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/customize-ribbon-file/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-ribbon-file.cs" %}
+{% highlight c# tabtitle="Customize-ribbon-file.cs" %}
 {% endhighlight %}{% endtabs %}
 {% endif %}
 
@@ -58,7 +58,7 @@ The following code example shows how to add the backstage menu items.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/customize-ribbon-backstage/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-ribbon-backstage.cs" %}
+{% highlight c# tabtitle="Customize-ribbon-backstage.cs" %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,7 +68,7 @@ The following code example shows how to add the backstage menu items.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/document-editor-container/customize-ribbon-backstage/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="customize-ribbon-backstage.cs" %}
+{% highlight c# tabtitle="Customize-ribbon-backstage.cs" %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
