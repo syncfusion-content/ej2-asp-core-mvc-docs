@@ -22,7 +22,7 @@
             <e-field name="Product_Categories" caption="Product Categories"></e-field>
         </e-filters>
         <e-conditionalformatsettings>
-            <e-format measure="In_Stock" conditions="LessThan" value1="500">
+            <e-format measure="In_Stock" conditions="@Condition.LessThan" value1="500">
                 <e-fieldlist-style backgroundColor="#80cbc4" color="black" fontFamily="Tahoma" fontSize="12px" />
             </e-format>
         </e-conditionalformatsettings>

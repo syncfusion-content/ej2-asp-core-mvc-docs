@@ -19,7 +19,7 @@
                         <e-field name="Product_Categories" caption="Product Categories"></e-field>
                     </e-filters>
                     <e-conditionalformatsettings>
-                        <e-format label="Germany" conditions="Between" value1="500" value2="50000">
+                        <e-format label="Germany" conditions="@Condition.Between" value1="500" value2="50000">
                             <e-fieldlist-style backgroundColor="#f48fb1" color="black" fontFamily="Tahoma" fontSize="12px" />
                         </e-format>
                     </e-conditionalformatsettings>

@@ -20,9 +20,20 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
-    <e-hyperlinkSettings>
+    <e-hyperlinkSettings cssClass="e-custom-class">
         <e-conditionalsettings>
-            <e-format measure="Sold" conditions="Between" value1="100" value2="200"></e-format>
+            <e-format measure="Sold" conditions="@Condition.Between" value1="100" value2="200"></e-format>
         </e-conditionalsettings>
     </e-hyperLinkSettings>
 </ejs-pivotview>
+
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>

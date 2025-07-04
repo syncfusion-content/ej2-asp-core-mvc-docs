@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300">
+<ejs-pivotview id="PivotView" height="300" showFieldList="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false" allowValueFilter="true">
         <e-rows>
             <e-field name="Country"></e-field>

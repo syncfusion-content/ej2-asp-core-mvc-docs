@@ -1,6 +1,6 @@
 <ejs-pivotview id="PivotView" height="300">
     <e-datasourcesettings>
-        <e-data-manager url="https://js.syncfusion.com/demos/ejServices/Wcf/Northwind.svc/Orders/" adaptor="ODataAdaptor" crossdomain="true"></e-data-manager>
+        <e-data-manager url="https://services.syncfusion.com/js/production/api/Orders" adaptor="ODataAdaptor" crossdomain="true"></e-data-manager>
         <e-rows>
             <e-field name="ShipCountry"></e-field>
             <e-field name="ShipCity"></e-field>

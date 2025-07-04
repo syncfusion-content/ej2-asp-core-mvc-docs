@@ -1,4 +1,4 @@
-<ejs-pivotview id="PivotView" height="300" maxNodeLimitInMemberEditor=500>
+<ejs-pivotview id="PivotView" height="300" maxNodeLimitInMemberEditor=500 showFieldList="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-rows>
             <e-field name="DeliveryDate"></e-field>

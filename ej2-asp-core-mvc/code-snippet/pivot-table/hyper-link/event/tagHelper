@@ -16,5 +16,16 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
-    <e-hyperlinkSettings showRowHeaderHyperlink="true"></e-hyperlinkSettings>
+    <e-hyperlinkSettings showRowHeaderHyperlink="true" cssClass="e-custom-class"></e-hyperlinkSettings>
 </ejs-pivotview>
+
+<style>
+    .e-custom-class {
+        text-decoration: underline;
+        color: deepskyblue;
+    }
+    .e-custom-class:hover {
+        color: red;
+        text-decoration: none;
+    }
+</style>
