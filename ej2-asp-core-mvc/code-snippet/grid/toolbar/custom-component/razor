@@ -1,0 +1,20 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Toolbar(new List<object>{
+	"Add", "Edit", "Delete",
+	new { template = "#toolbar-template", align = "Left", tooltipText = "Search Sports" },
+	}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Columns(col =>
+	{
+	col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+	col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+	col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+	}).Height("270px").Render()
+
+<div id="toolbar-template">
+	@Html.EJS().AutoComplete("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Change("OnChange").Render()
+</div>
+
+<script>
+	function OnChange(e) {
+		console.log('Selected sport:', e.value);
+	}  
+</script>

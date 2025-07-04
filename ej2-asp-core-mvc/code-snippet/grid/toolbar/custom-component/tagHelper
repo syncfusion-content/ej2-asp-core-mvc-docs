@@ -1,0 +1,27 @@
+@page  
+@model IndexModel  
+@{  
+    ViewData["Title"] = "Home page";  
+    var data = new string[] { "Badminton", "Basketball", "Cricket", "Football", "Golf", "Gymnastics", "Hockey", "Tennis" };
+}  
+
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<object>{"Add", "Edit", "Delete",new { template = "#toolbar-template", align = "Left", tooltipText = "Custom Component Autocomplete" }})" height="348">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" Mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>  
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>  
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>  
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>  
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>  
+    </e-grid-columns>  
+</ejs-grid>
+<div id="toolbar-template">
+<ejs-autocomplete id="games" dataSource="@data" placeholder="Select Game" change="OnChange"
+popupHeight="220px">
+</ejs-autocomplete>
+</div>
+
+<script>
+    function OnChange(e) {
+        console.log('Selected sport:', e.value);
+    }
+</script>
