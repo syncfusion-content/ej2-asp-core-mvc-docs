@@ -1,5 +1,7 @@
 @using Syncfusion.EJ2.PivotView
 
+@Html.EJS().Button("pdf").Content("Pdf Export").IsPrimary(true).Render()
+
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
 .FormatSettings(formatsettings =>
 {
@@ -13,8 +15,14 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).GridSettings(gridSettings => gridSettings.PdfHeaderCellInfo("pdfHeaderCell")).Render()
+})).GridSettings(gridSettings => gridSettings.PdfHeaderQueryCellInfo("pdfHeaderCell")).Render()
+
 <script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
     function pdfHeaderCell(args) {
 
     }

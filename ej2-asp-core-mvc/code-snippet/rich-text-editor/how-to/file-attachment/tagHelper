@@ -2,7 +2,7 @@
     var asyncSettings = new Syncfusion.EJ2.Inputs.UploaderAsyncSettings { SaveUrl = @Url.Content("[SERVICE_HOSTED_PATH]/api/uploadbox/Save")};
 }
 
-<ejs-richtexteditor id="defaultRTE" imageUploadSuccess="onImageUploadSuccess" created="created">
+<ejs-richtexteditor id="editor" imageUploadSuccess="onImageUploadSuccess" created="created">
     <e-richtexteditor-insertimagesettings saveUrl="[SERVICE_HOSTED_PATH]/api/uploadbox/Save" path="../Files/"></e-richtexteditor-insertimagesettings>
     <e-content-template>
         <p>

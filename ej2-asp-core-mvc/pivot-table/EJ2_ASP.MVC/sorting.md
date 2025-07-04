@@ -19,11 +19,11 @@ Member sorting can be enabled by setting the [`EnableSorting`](https://help.sync
 
 N> By default the [`EnableSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EnableSorting) property in [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class set as **true**. If we set it as **false**, then the field members arrange in pivot table as its data source order. And, the sort icons in grouping bar and field list buttons will be removed.
 
-![output](images/sorting_fl.png "Member sorting icon in field list")
+![output](images/sorting_fl.png)
 <br/>
-![output](images/sorting_gb.png "Member sorting icon in grouping bar")
+![output](images/sorting_gb.png)
 <br/>
-![output](images/sorting_grid.png "Resultant pivot table on member sort")
+![output](images/sorting_grid.png)
 
 Member sorting can also be configured using the [`PivotViewSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html) class through code behind, during initial rendering. The settings required to sort are:
 
@@ -122,7 +122,7 @@ Allows to sort field headers (aka, members) in rows and columns based on user-de
 
 
 
-![output](images/Custom sorting.png "Custom Sorting")
+![output](images/Custom sorting.png)
 
 
 ## Value Sorting
@@ -135,7 +135,7 @@ The value sorting can also be configured using the [`PivotViewValueSortSettings`
 * [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter): It allows to set the delimiters string to separate the header text between levels.
 * [`SortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_SortOrder): It allows to set the sort direction of the value field.
 
-N> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, [`refer here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/data-binding/#values-in-row-axis).
+N> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, [`refer here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/data-binding#values-in-row-axis).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,6 +163,43 @@ N> Value fields are set to the column axis by default. In such cases, the value 
 
 
 ![output](images/valuesorting.png)
+
+### Multiple Axis Sorting
+
+You can apply value sorting to both row and column axes simultaneously for more dynamic and precise data analysis. The following settings are used to configure sorting:
+
+* [`ColumnHeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_ColumnHeaderText): Specifies the column header hierarchy for value sorting. Header levels are defined from Level 1 to N using a delimiter for clarity.
+* [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter): It allows to set the delimiters string to separate the header text between levels.
+* [`ColumnSortOrder`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_ColumnSortOrder): Determines the sorting direction for the specified column header.
+* [`RowHeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_RowHeaderText): Defines the specific row header for which the value sorting should be applied.
+* [`RowSortOrder`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_RowSortOrder): Determines the sorting direction for the specified row header.
+
+N> This feature is applicable only to relational data sources.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleAxisSorting.cs" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleAxisSorting.cs" %}
+{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Multiple Axis Sorting](images/multiple-axis-sorting.png)
 
 ## Event
 
@@ -205,7 +242,7 @@ The event [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 
 
-![output](images/Custom sorting_event.png "Custom Sorting Event")
+![output](images/Custom sorting_event.png)
 
 
 ### ActionBegin
@@ -218,8 +255,8 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
+| [`Sort field`](./sorting#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting#value-sorting)| Sort value|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -264,8 +301,8 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Field sorted|
-| [`Value sort icon`](./sorting/#value-sorting)| Value sorted|
+| [`Sort field`](./sorting#member-sorting)| Field sorted|
+| [`Value sort icon`](./sorting#value-sorting)| Value sorted|
 
 * `fieldInfo`: It holds the selected field information.
 
@@ -306,8 +343,8 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 | Action | Action Name|
 |------|-------------|
-| [`Sort field`](./sorting/#member-sorting)| Sort field |
-| [`Value sort icon`](./sorting/#value-sorting)| Sort value|
+| [`Sort field`](./sorting#member-sorting)| Sort field |
+| [`Value sort icon`](./sorting#value-sorting)| Sort value|
 
 * `errorInfo`: It holds the error information of the current UI action.
 

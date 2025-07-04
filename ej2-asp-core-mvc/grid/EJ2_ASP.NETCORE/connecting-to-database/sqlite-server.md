@@ -137,7 +137,7 @@ namespace Grid_SQLite.Server.Controllers
 
 ### Connecting Syncfusion ASP.NET Core Grid to an API service
 
-To integrate the Syncfusion ASP.NET Core Grid into your ASP.NET Core and ASP.NET Core project using Visual Studio, follow the below steps:
+To integrate the Syncfusion Grid into your ASP.NET Core project using Visual Studio, follow the below steps:
 
 **Step 1: Install the Syncfusion ASP.NET Core Package:**
 
@@ -580,8 +580,8 @@ To enable editing in Grid, refer to the editing [documentation](https://ej2.sync
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' validationRules="@(new { required=true})" width='160'></e-grid-column>
-    <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
-    <e-grid-column field='Freight' headerText='Freight' validationRules="@(new { required=true})" format="C2" width='160' textAlign='Right'></e-grid-column>
+    <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true, number = true})" width='160' textAlign='Right'></e-grid-column>
+    <e-grid-column field='Freight' headerText='Freight' validationRules="@(new { required=true, min=1, max=1000 })" format="C2" width='160' textAlign='Right'></e-grid-column>
     <e-grid-column field='ShipCity' headerText='Ship City' validationRules="@(new { required=true})" width='150'></e-grid-column>
   </e-grid-columns>
 </ejs-grid>
@@ -1333,8 +1333,8 @@ In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.c
   <e-grid-columns>
     <e-grid-column field='OrderID' headerText='Order ID' width='120' textAlign='Right' isIdentity="true" isPrimaryKey="true"></e-grid-column>
     <e-grid-column field='CustomerID' headerText='Customer ID' validationRules="@(new { required=true})" width='160'></e-grid-column>
-    <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true})" width='160' textAlign='Right'></e-grid-column>
-    <e-grid-column field='Freight' headerText='Freight' validationRules="@(new { required=true})" format="C2" width='160' textAlign='Right'></e-grid-column>
+    <e-grid-column field='EmployeeID' headerText='Employee ID' validationRules="@(new { required=true, number = true})" width='160' textAlign='Right'></e-grid-column>
+    <e-grid-column field='Freight' headerText='Freight' validationRules="@(new { required=true, min=1, max=1000 })" format="C2" width='160' textAlign='Right'></e-grid-column>
     <e-grid-column field='ShipCity' headerText='Ship City' validationRules="@(new { required=true})" width='150'></e-grid-column>
   </e-grid-columns>
 </ejs-grid>
@@ -1655,7 +1655,7 @@ public class CRUDModel<T> where T : class
 {% endhighlight %}
 {% endtabs %}
 
-## Batch Operation:
+**Batch Operation:**
 
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 

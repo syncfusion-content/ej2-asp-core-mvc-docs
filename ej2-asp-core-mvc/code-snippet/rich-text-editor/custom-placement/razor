@@ -3,7 +3,7 @@
     <div id="content" class="box-form" style="margin: 0 auto; width:750px; padding:25px">
         <form id="form-element" class="form-vertical">
             <div class="form-group">
-                @Html.EJS().RichTextEditor("defaultRTE").ShowCharCount(true).MaxLength(100).Placeholder("Type something").Created("created").Change("onChange").Render()
+                @Html.EJS().RichTextEditor("editor").ShowCharCount(true).MaxLength(100).Placeholder("Type something").Created("created").Change("onChange").Render()
                 <div id="dateError" style="padding-top: 10px"></div>
             </div>
             <div style="text-align: center">

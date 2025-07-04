@@ -10,7 +10,7 @@ documentation: ug
 
 # Scaffolding in ASP.NET Core Application
 
-Syncfusion® provides **Visual Studio Scaffolding** for Syncfusion® ASP.NET Core platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion® ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
+Syncfusion® provides **Visual Studio Scaffolding** for the Syncfusion® ASP.NET Core platform to quickly add code that interacts with data models and reduce the amount of time to develop data operations in your project. Scaffolding provides an easier way to create views and controller action methods for Syncfusion® ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
 N> Check that at least one Entity Framework model exists, and the application has been compiled once. If no Entity Framework model exists in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties have been added. Build the application before trying scaffolding. If any changes have been done in the model properties, rebuild the application once before performing scaffolding.
 
@@ -54,7 +54,7 @@ N> Before using the Syncfusion® ASP.NET Core Scaffolding, check whether the **A
 
 ## Syncfusion ASP.NET Core Command-line Scaffolding
 
-Syncfusion® provides **Scaffolding command-line** for Syncfusion® ASP.NET Core to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create view file and Controller action methods for Syncfusion® ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
+Syncfusion® provides a **Scaffolding command line** for Syncfusion® ASP.NET Core to quickly add code that interacts with data models and reduce the amount of time to develop data operations in your project. Scaffolding provides an easier way to create view files and controller action methods for Syncfusion® ASP.NET Core DataGrid, Charts, Scheduler, Diagram, Tree Grid, Rich Text Editor, Document Editor, and PDF Viewer controls.
 
 N>Check that at least one Entity Framework model exists. If no Entity Framework model exists in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1) to generate the Entity Framework model. After the model file has been added, check that the required DBContext and properties are added. Now, build the application, and try scaffolding. If any changes are made in the model properties, rebuild the application once before performing scaffolding.
 

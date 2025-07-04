@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Rich Text Editor Component
+title: Accessibility in ##Platform_Name## Rich Text Editor Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -39,7 +39,7 @@ The accessibility compliance for the Rich Text Editor control is outlined below.
 
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The control does not meet the requirement.</div>
 
-## ARIA Attributes
+## ARIA attributes
 
 The toolbar in the Rich Text Editor is assigned the role of 'Toolbar' and includes the following attributes.
 
@@ -83,11 +83,11 @@ For more details on Toolbar ARIA attributes, refer to the [`Accessibility of Too
 {% endtabs %}
 {% endif %}
 
-## Keyboard Navigation
+## Keyboard navigation
 
 The Rich Text Editor control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Rich Text Editor control.
 
-For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/keyboard-support) documentation.
+For more details on keyboard navigation, refer to the [Keyboard support](https://ej2.syncfusion.com/aspnetcore/documentation/markdown-editor/keyboard-support) documentation.
 
 ## Ensuring accessibility
 
@@ -97,6 +97,6 @@ The accessibility compliance of the Rich Text Editor control is shown in the fol
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
 
-## See Also
+## See also
 
 * [General Accessibility Guidelines](../common/accessibility)

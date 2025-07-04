@@ -117,10 +117,15 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% tabs %}
 {% highlight html tabtitle="Standalone" %}
 
+@using Syncfusion.EJ2
+@{
+    ViewBag.Title = "Home Page";
+}
+
 <div>
     <div style="height:500px;width:1350px;">
         <br /><br />
-        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/24.1.41/dist/ej2-pdfviewer-lib").ToolbarClick("toolbarClick").Render()
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/29.1.33/dist/ej2-pdfviewer-lib").ToolbarClick("toolbarClick").Render()
     </div>
 </div>
 
@@ -180,65 +185,51 @@ PDF Viewer allows you to customize(add, show, hide, enable, and disable) existin
 {% endhighlight %}
 {% highlight html tabtitle="Server-Backed" %}
 
+@{
+    ViewBag.Title = "Home Page";
+}
+@using Syncfusion.EJ2.PdfViewer
+@using ToolbarCustomization.Controllers
+@{
+    var toolItem1 = new { id = "submit_form", text = "Submit Form", tooltipText = "Custom toolbar item", align = "Center", cssClass = "custom_button" };
+    CustomToolbarItems customToolbarItems = new CustomToolbarItems();
+    customToolbarItems.ToolbarItems = new List<object> { toolItem1, "OpenOption", "PageNavigationTool", "MagnificationTool", "PanTool", "SelectionTool", "SearchOption", "PrintOption", "DownloadOption", "UndoRedoTool", "AnnotationEditTool", "FormDesignerEditTool", "CommentTool" };
+    PdfViewerToolbarSettings toolbarSettings = new PdfViewerToolbarSettings()
+    {
+        ShowTooltip = true,
+        ToolbarItems = customToolbarItems.ToolbarItems
+    };
+}
 <div>
     <div style="height:500px;width:1350px;">
         <br /><br />
-        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ServiceUrl(VirtualPathUtility.ToAbsolute("~/api/PdfViewer/")).ToolbarClick("toolbarClick").Render()
+        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).DocumentPath("https://cdn.syncfusion.com/content/pdf/form-designer.pdf").ToolbarClick("toolbarClick").Created("onLoadedPage").DocumentLoad("documentLoaded").FormFieldAdd("formFieldAdd").ToolbarSettings(toolbarSettings).Render()
     </div>
 </div>
 
 <script type="text/javascript">
-    window.onload = function () {
-        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        var toolItem1 = {
-            prefixIcon: 'e-icons e-paste',
-            id: 'print',
-            tooltipText: 'Custom toolbar item',
-            align: 'left'
-        };
-        var toolItem2 = {
-            id: 'download',
-            text: 'Save',
-            tooltipText: 'Custom toolbar item',
-            align: 'right'
-        };
-        var LanguageList = ['Typescript', 'Javascript', 'Angular', 'C#', 'C', 'Python'];
-        var toolItem3 = {
-            type: 'Input',
-            tooltipText: 'Language List',
-            cssClass: 'percentage',
-            align: 'Left',
-            id: 'dropdown',
-            template: new ej.dropdowns.ComboBox({ width: 100, value: 'TypeScript', dataSource: LanguageList, popupWidth: 85, showClearButton: false, readonly: false })
-        };
-        var toolItem4 = {
-            type: 'Input',
-            tooltipText: 'Text',
-            align: 'Right',
-            cssClass: 'find',
-            id: 'textbox',
-            template: new ej.inputs.TextBox({ width: 125, placeholder: 'Type Here', created: onCreate })
-        }; align: 'left'
-        function onCreate() {
-            this.addIcon('prepend', 'e-icons e-search');
-        }
-        pdfViewer.toolbarSettings = {
-            showTooltip: true,
-            toolbarItems: [toolItem1, toolItem2, 'OpenOption', 'PageNavigationTool', 'MagnificationTool', toolItem3, 'PanTool', 'SelectionTool', 'SearchOption', 'PrintOption', 'DownloadOption', 'UndoRedoTool', 'AnnotationEditTool', 'FormDesignerEditTool', toolItem4, 'CommentTool', 'SubmitForm']
-        };
-
-    };
-
-    // Define the toolbarClick event handler
+    function onLoadedPage(args) {
+        console.log(args);
+    }
+    function documentLoaded(args) {
+        console.log(args);
+    }
+    function formFieldAdd(args) {
+        console.log(args);
+    }
     function toolbarClick(args) {
-        var pdfViewer = document.getElementById('pdfviewer').ej2_instances[0];
-        if (args.item && args.item.id === 'print') {
-            pdfViewer.printModule.print();
-        } else if (args.item && args.item.id === 'download') {
-            pdfViewer.download();
+        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
+        if (args.item && args.item.id === 'submit_form') {
+            alert('Custom button clicked!');
         }
     }
 </script>
+
+<style>
+    .custom_button {
+        height: 100% !important;
+    }
+</style>
 {% endhighlight %}
 {% endtabs %}
 

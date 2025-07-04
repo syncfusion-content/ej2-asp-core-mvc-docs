@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Candle Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Candle Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Candle Chart in ##Platform_Name## Charts
+description: Learn here all about Candle Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Candle Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Candle in ASP.NET Core Charts Component
+# Candle Chart in ASP.NET Core Charts
 
 To get started with the ASP.NET Core Candle charts, you can check on this video:
 

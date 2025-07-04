@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pareto Chart in ##Platform_Name## Syncfusion Chart Component
-description: Learn here all about Pareto Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Pareto Chart in ##Platform_Name## Charts
+description: Learn here all about Pareto Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pareto Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pareto in ##Platform_Name## Charts Component
+# Pareto Chart in ##Platform_Name## Charts
 
 ## Pareto
 

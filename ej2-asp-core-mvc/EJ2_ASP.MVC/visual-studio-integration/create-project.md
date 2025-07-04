@@ -18,7 +18,7 @@ N> The Syncfusion® ASP.NET MVC (Essential JS 2) project templates are available
 
 Use the following steps to create the **Syncfusion ASP.NET MVC (Essential JS 2) Web Application** through the **Visual Studio Project Template.**
 
-N> Before use the Syncfusion® ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
+N> Before using the Syncfusion® ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
 1. To create the Syncfusion® ASP.NET MVC (Essential JS 2) project, follow either one of the options below:
 
@@ -56,13 +56,13 @@ N> Before use the Syncfusion® ASP.NET MVC Project Template, check whether the *
 
     **Assets From**: : Load the Syncfusion® Essential JS 2 assets to ASP.NET MVC Project, either NuGet, CDN, or Installed Location.
 
-    N> Installed location option will be available only when the Syncfusion® Essential JavaScript 2 setup has been installed.
+    N> The **Installed Location** option will be available only when the Syncfusion® Essential JavaScript 2 setup has been installed.
 
 3. Click **Create**, the Syncfusion ASP.NET MVC (Essential JS 2) Application will be created.
 
     ![readme-file](images/readme-file.PNG)
 
-4. The created Syncfusion ASP.NET MVC application configures with most recent Syncfusion ASP.NET MVC NuGet packages, selected style and scripts for use Syncfusion® components.
+4. The created Syncfusion ASP.NET MVC application is configured with the most recent Syncfusion ASP.NET MVC NuGet packages and selected styles and scripts for using Syncfusion® components.
 
 5. Then, the Syncfusion® licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/whats-new-in-2018-volume-2-licensing-changes-in-the-1620x-version-of-essential-studio.aspx) post to learn more about the licensing changes introduced in Essential Studio®.
 

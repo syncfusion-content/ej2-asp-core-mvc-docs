@@ -1,0 +1,35 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.dataSource" allowPaging='true' toolbar="@(new List<string>() { "Add", "Edit", "Delete","Update","Cancel" })" frozenColumns='2'>
+    <e-grid-pagesettings pageCount="5"></e-grid-pagesettings>
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="150" format= "yMd", edit="@(new {create = "createDatePicker", read = "readDatePicker", destroy = "destroyDatePicker", write = "writeDatePicker"})">
+        </e-grid-column>               
+        <e-grid-column field="CustomerID" headerText="CustomerID" width="120"></e-grid-column>               
+        <e-grid-column field="ShipCity" headerText="Ship City"  width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    var datePickerObj;
+    var datePickerElement;
+    function createDatePicker() {
+        datePickerElement = document.createElement('input');
+        return datePickerElement;
+    }
+    function readDatePicker() {
+        return datePickerObj.value;
+    }
+    function destroyDatePicker() {
+        datePickerObj.destroy();
+    }
+    function writeDatePicker(args) {
+        var rowData = args.rowData;
+        datePickerObj = new ej.calendars.DatePicker({
+            value: rowData.OrderDate,
+            change: function (e) {
+                rowData.OrderDate = e.value;
+            }
+        });
+        datePickerObj.appendTo(datePickerElement);
+    }
+</script>

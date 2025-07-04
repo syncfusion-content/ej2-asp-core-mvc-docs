@@ -230,6 +230,22 @@ The following example demonstrates how to export hierarchical grid to Excel docu
 
 ![Exporting hierarchy grid](../images/excel-exporting/excelexporting-heirachy.png)
 
+### Format the child Grid columns before exporting
+
+The Syncfusion Grid allows customization of the child Grid's Excel export options, enabling precise control over data formatting before export. This functionality is achieved using the [exportDetailDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ExportDetailDataBound) event, which is triggered for each child Grid during the export process. This event provides access to the child Grid instance, allowing modifications to its column formatting before generating the Excel document.
+
+In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property, the date values are formatted as `dd/MM/yyyy` when exported to Excel document. 
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/excel-export/excelexport-format/tagHelper %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="excel-export.cs" %}
+{% include code-snippet/grid/excel-export/excelexport-format/excel-export.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Limitations
 
 * Microsoft Excel permits up to seven nested levels in outlines. So that in the grid we can able to provide only up to seven nested levels and if it exceeds more than seven levels then the document will be exported without outline option. Please refer the [Microsoft Limitation](https://learn.microsoft.com/en-us/sql/reporting-services/report-builder/exporting-to-microsoft-excel-report-builder-and-ssrs?view=sql-server-2017#ExcelLimitations).

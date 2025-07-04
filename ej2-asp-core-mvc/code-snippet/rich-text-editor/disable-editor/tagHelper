@@ -1,2 +1,2 @@
-<ejs-richtexteditor id="defaultRTE" value="@ViewBag.value" enabled="false">
+<ejs-richtexteditor id="editor" value="@ViewBag.value" enabled="false">
 </ejs-richtexteditor>
