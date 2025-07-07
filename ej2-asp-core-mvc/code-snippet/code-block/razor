@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("code-block").ToolbarSettings(e => { e.Items((object)ViewBag.items); }).CodeBlockSettings(e => { e.Languages((object)ViewBag.languages); e.DefaultLanguage("plaintext"); }).Placeholder("Type something...").Render()

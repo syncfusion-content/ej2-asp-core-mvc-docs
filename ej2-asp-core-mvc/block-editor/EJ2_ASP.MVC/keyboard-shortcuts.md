@@ -75,6 +75,28 @@ These shortcuts cover general editor functionality including undo/redo operation
 
 You can customize menu level shortcuts such as `Slash Command Menu`, `Block Action Menu` and `Context Menu` on the respective menu settings config by modifying it's `shortcut` property.
 
-For other operations, you can customize the keyboard shortcuts by configuring the `keyConfig` property when initializing the Block Editor control. This allows you to override default shortcuts or add new ones according to your application's requirements.
+For other operations, you can customize the keyboard shortcuts by configuring the [KeyConfig](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyConfig) property when initializing the Block Editor control. This allows you to override default shortcuts or add new ones according to your application's requirements.
 
 In the below example, the shortcut for bold formatting is changed to <kbd>Alt</kbd> + <kbd>B</kbd> and for italic formatting to <kbd>Alt</kbd> + <kbd>I</kbd>.
+
+```cshtml
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").KeyConfig(ViewData["keyConfig"]).Render()
+</div>
+```
+```cs
+using Syncfusion.EJ2.BlockEditor;
+
+public object keyConfig { get; set; }
+
+public ActionResult Result()
+{
+    keyConfig = new 
+    { 
+        bold = "alt+b",
+        italic = "alt+i"
+    };
+    ViewData["keyConfig"] = keyConfig;
+    return View();
+}
+```

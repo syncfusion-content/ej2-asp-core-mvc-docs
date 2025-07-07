@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.RichTextEditor
+
+<div style="width:500px; margin:0 auto;">
+    @Html.EJS().RichTextEditor("toolbar-types").ToolbarSettings(e => { e.Type(ToolbarType.Popup);}).Value(ViewBag.value).Render()
+</div>
