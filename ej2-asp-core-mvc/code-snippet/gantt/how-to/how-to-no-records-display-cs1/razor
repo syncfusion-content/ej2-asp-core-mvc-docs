@@ -1,0 +1,13 @@
+@Html.EJS().Gantt("Gantt").Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate(
+                      "StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentID("ParentId")).Locale("de-DE").Render()
+
+<script type="text/javascript">
+    ej.base.L10n.load({
+        'de-DE': {
+            'grid': {
+                "EmptyRecord": "Nothing to show here.",
+            }
+        }
+    });
+    ej.base.setCulture('de-DE');
+</script>
