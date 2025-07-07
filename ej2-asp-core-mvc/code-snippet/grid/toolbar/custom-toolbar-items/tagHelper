@@ -1,0 +1,39 @@
+
+@{  
+    var data = new string[] { 
+        "Reims",
+        "Münster",
+        "Rio de Janeiro",
+        "Lyon",
+        "Charleroi",
+        "Bern",
+        "Genève",
+        "San Cristóbal",
+        "Graz",
+        "México D.F.",
+        "Albuquerque",
+        "Köln",
+   };
+}  
+
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" toolbar="@(new List<object>{"Add", "Edit", "Delete",new { template = "#toolbar-template", align = "Left", tooltipText = "Custom Component Autocomplete" }})" height="348">
+    <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" Mode="Normal"></e-grid-editSettings>
+    <e-grid-columns>  
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-grid-column>  
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>  
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="120"></e-grid-column>  
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>  
+    </e-grid-columns>  
+</ejs-grid>
+<div id="toolbar-template">
+    <ejs-autocomplete id="shipCityValue" dataSource="@data" placeholder="Search ShipCity" change="OnChange">
+</ejs-autocomplete>
+</div>
+
+<script>
+    function OnChange(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+		const selectedCity = event.value;
+        grid.search(selectedCity);
+    }
+</script>
