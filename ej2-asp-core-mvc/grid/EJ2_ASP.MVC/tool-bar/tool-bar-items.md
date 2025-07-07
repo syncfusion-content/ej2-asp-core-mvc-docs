@@ -139,7 +139,7 @@ The Syncfusion ASP.NET MVC Grid provides the flexibility to customize its toolba
 
 In the following example, a script-based template is used to define an [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started). The `AutoComplete` is populated with unique values from the `ShipCity` field of the Grid data. When a you selects a value from the `AutoComplete`, the Grid is filtered to show only the records matching the selected city. A custom toolbar item is defined using the `Template` property. This property is assigned a reference to a template element (**#toolbar-template**) that contains the custom component. When the Grid is rendered, the custom `AutoComplete` appears as part of the toolbar, allowing you to interact with both standard and custom toolbar elements.
 
-Additionally, the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Change) event of the `AutoComplete` is used to trigger a search operation within the Grid. When the you selects or types a value, the event handler invokes the Grids `search` method, dynamically filtering the displayed records for **ShipCity** column based on the input.
+Additionally, the [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Change) event of the `AutoComplete` is used to trigger a search operation within the Grid. When the you selects or types a value, the event handler invokes the Grid’s `search` method, dynamically filtering the displayed records for **ShipCity** column based on the input.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
