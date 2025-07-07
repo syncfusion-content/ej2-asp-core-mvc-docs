@@ -34,6 +34,8 @@
     function OnChange(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
 		const selectedCity = event.value;
+        
+        // perform search action for ShipCity column.
         grid.search(selectedCity);
     }
 </script>
