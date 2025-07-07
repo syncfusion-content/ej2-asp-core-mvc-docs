@@ -1,15 +1,15 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+public List<Block> BlocksData { get; set; } = new List<Block>();
 
 public ActionResult Paragraph()
 {
-        BlocksData.Add(new BlockModel
+        BlocksData.Add(new Block
         {
-                type = "Paragraph",
-                content = new List<ContentModel>()
+                Type = "Paragraph",
+                Content = new List<object>()
                 {
-                        new ContentModel
+                        new 
                         {
                                 type = "Text",
                                 content = "This is a paragraph block example."
