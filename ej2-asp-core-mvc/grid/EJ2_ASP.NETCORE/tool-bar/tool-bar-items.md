@@ -143,6 +143,8 @@ In the following example, a script-based template is used to define an [AutoComp
 
 Additionally, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Change) event of the `AutoComplete` is used to trigger a search operation within the Grid. When the you selects or types a value, the event handler invokes the Grid’s search method, dynamically filtering the displayed records based on the input.
 
+Additionally, the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Change) event of the `AutoComplete` is used to trigger a search operation within the Grid. When the you selects or types a value, the event handler invokes the Grids `search` method, dynamically filtering the displayed records for **ShipCity** column based on the input.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/toolbar/custom-toolbar-items/tagHelper %}
