@@ -517,7 +517,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
 
 The Syncfusion ASP.NET MVC Grid allows you to render the AutoComplete within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to define the cell edit template for the column using the `edit` property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
+To achieve this, you need to define the cell edit template for the column using the `Edit` property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
 
 The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
