@@ -536,7 +536,7 @@ The following example demonstrates how to render a Autocomplete in the **Custome
 
 The Syncfusion ASP.NET MVC Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to define the cell edit template for the column using the `edit` property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
+To achieve this, you need to define the cell edit template for the column using the `Edit` property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
