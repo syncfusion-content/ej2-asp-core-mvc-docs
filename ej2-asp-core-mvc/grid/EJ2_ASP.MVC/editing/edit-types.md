@@ -513,13 +513,13 @@ The following example demonstrates how to render a Upload control in the **Emplo
 
 ![Render Upload component in edit form](../images/editing/edit-types-upload.jpeg)
 
-### Render AutoComplete component in edit form 
+### Render AutoComplete in edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to render the AutoComplete component within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
+The Syncfusion ASP.NET MVC Grid allows you to render the AutoComplete within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
+To achieve this, you need to define the cell edit template for the column using the `Edit` property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
 
-The following example demonstrates how to render a Autocomplete component in the **CustomerID** column:
+The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -532,11 +532,11 @@ The following example demonstrates how to render a Autocomplete component in the
 
 ![Render auto complete component](../images/editing/render-auto-complete.png)
 
-### Render cascading DropDownList component in edit form 
+### Render cascading DropDownList in edit form 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
+The Syncfusion ASP.NET MVC Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to utilize the `Columns->Edit->Params` property along with a defined object that specifies the necessary functions for creating, reading, and writing the auto complete component.
+To achieve this, you need to define the cell edit template for the column using the `Edit` property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
