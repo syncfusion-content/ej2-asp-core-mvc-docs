@@ -29,11 +29,11 @@ new { template = "#toolbar-template", align = "Left", tooltipText = "Custom Comp
 }).Height("270px").Render()
 
 <div id="toolbar-template">
-	@Html.EJS().AutoComplete("shipCityValue").Placeholder("Search ShipCity").DataSource((IEnumerable<object>)ViewBag.data).Change("OnChange").Render()
+	@Html.EJS().AutoComplete("shipCityValue").Placeholder("Search ShipCity").DataSource((IEnumerable<object>)ViewBag.data).Change("onChange").Render()
 </div>
 
 <script>
-    function OnChange(event) {
+    function onChange(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
 		const selectedCity = event.value;
         // perform search action for ShipCity column.

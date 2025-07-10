@@ -26,12 +26,12 @@
     </e-grid-columns>  
 </ejs-grid>
 <div id="toolbar-template">
-    <ejs-autocomplete id="shipCityValue" dataSource="@data" placeholder="Search ShipCity" change="OnChange">
+    <ejs-autocomplete id="shipCityValue" dataSource="@data" placeholder="Search ShipCity" change="onChange">
 </ejs-autocomplete>
 </div>
 
 <script>
-    function OnChange(event) {
+    function onChange(event) {
         var grid = document.getElementById("grid").ej2_instances[0];
 		const selectedCity = event.value;
         // perform search action for ShipCity column.
