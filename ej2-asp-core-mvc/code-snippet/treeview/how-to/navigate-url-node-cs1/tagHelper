@@ -1,0 +1,3 @@
+<ejs-treeview id="treedata">
+    <e-treeview-fields DataSource="ViewBag.dataSource" Id="Id" ParentId="Pid" Text="Name" HasChildren="HasChild" Expanded="Expanded" NavigateUrl="NavigateUrl"></e-treeview-fields>
+</ejs-treeview>
