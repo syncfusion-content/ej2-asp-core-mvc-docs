@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Assign URLs to TreeView Nodes in ##Platform_Name## TreeView component | Syncfusion
+title: Assign URLs to Nodes in ##Platform_Name## TreeView component | Syncfusion
 description: Learn here all about Assign URLs to specific nodes in Syncfusion ##Platform_Name## TreeView component of Syncfusion Essential JS 2 and more.
 platform: ej2-vue
 control: ej2-asp-core-mvc
