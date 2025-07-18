@@ -24,61 +24,50 @@ First, follow the steps provided in the [getting started guide](https://ej2.sync
 
 Add a button to toggle annotation visibility and implement the necessary JavaScript functions to handle the show/hide functionality:
 
-```html
-@using Syncfusion.EJ2;
+{% tabs %}
+{% highlight html tabtitle="Standalone" %}
+
+@using Syncfusion.EJ2
 @{
     ViewBag.Title = "Home Page";
 }
-<div class="text-center">
-    <button id="toggleBtn" onclick="toggleAnnotations()">Hide Annotations</button>
-    <div style="height:600px">
-        @Html.EJS().PdfViewer("pdfviewer").ServiceUrl(VirtualPathUtility.ToAbsolute("~/Home/")).Render()
+<div>
+    <div class="button-container" style="margin-bottom: 10px;">
+        <button id="hideBtn" class="e-btn e-primary">Hide Annotations</button>
+        <button id="unhideBtn" class="e-btn e-primary">Show Annotations</button>
+    </div>
+    <div style="height:500px;width:100%;">
+        @Html.EJS().PdfViewer("pdfviewer").DocumentPath("https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf").ResourceUrl("https://cdn.syncfusion.com/ej2/30.1.37/dist/ej2-pdfviewer-lib").Render()
     </div>
 </div>
 
 <script type="text/javascript">
-    var exportObject = null;
-    var annotationsVisible = true;
+    var exportObject;
     
-    // Function to run when page loads
-    document.addEventListener('DOMContentLoaded', function () {
-        // Get viewer instance
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        // Load the PDF document
-        if (viewer) {
-            viewer.documentPath = "Annotations.pdf";
-            // You can also add any initialization code here
-            console.log("PDF viewer initialized and document loading started");
-        }
-    });
+    // Function to hide annotations
+    function HideAnnotations() {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        pdfviewer.exportAnnotationsAsObject().then(function(value) {
+            exportObject = value;
+            pdfviewer.deleteAnnotations();
+        });
+    }
     
-    function toggleAnnotations() {
-        var viewer = document.getElementById('pdfviewer').ej2_instances[0];
-        if (annotationsVisible) {
-            // Hide annotations by exporting and deleting them
-            viewer.exportAnnotationsAsObject().then(function (value) {
-                exportObject = value;
-                var count = viewer.annotationCollection.length;
-                for (var i = 0; i < count; i++) {
-                    // Always delete the first item as the collection shrinks
-                    viewer.annotationModule.deleteAnnotationById(viewer.annotationCollection[0].annotationId);
-                }
-                annotationsVisible = false;
-                document.getElementById('toggleBtn').textContent = 'Show Annotations';
-            });
-        } else {
-            // Restore annotations
-            if (exportObject) {
-                var exportAnnotObject = JSON.parse(exportObject);
-                viewer.importAnnotation(exportAnnotObject);
-            }
-            annotationsVisible = true;
-            document.getElementById('toggleBtn').textContent = 'Hide Annotations';
+    // Function to unhide annotations
+    function UnHideAnnotations() {
+        var pdfviewer = document.getElementById('pdfviewer').ej2_instances[0];
+        if (exportObject) {
+            pdfviewer.importAnnotation(JSON.parse(exportObject));
         }
     }
+    
+    // Add event listeners to buttons
+    document.getElementById('hideBtn').addEventListener('click', HideAnnotations);
+    document.getElementById('unhideBtn').addEventListener('click', UnHideAnnotations);
 </script>
-```
-### Conclusion
+
+{% endhighlight %}
+{% endtabs %}
 
 This implementation provides a clean, efficient way to toggle the visibility of annotations in your PDF documents. It's particularly useful for presentation scenarios or when you need to focus on the document content without the distraction of annotations.
 
