@@ -88,7 +88,7 @@ The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/treeview/binding-data/customization/tagHelper %}
+{% include code-snippet/treeview/customization/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,10 +105,10 @@ The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/treeview/binding-data/customization/razor %}
+{% include code-snippet/treeview/customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selfreferential.cs" %}
-{% include code-snippet/treeview/binding-data/customization/selfreferential.cs %}
+{% include code-snippet/treeview/customization/selfreferential.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
