@@ -39,20 +39,27 @@
         }
     }
     function actionComplete(args) {
+        var grid = document.getElementById("Search").ej2_instances[0];
         if (args.requestType === 'refresh') {
-            var grid = document.getElementById("Search").ej2_instances[0];
             var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
             if (searchBar) {
                 if (this.valueAssign) {
                     searchBar.value = this.values || '';
                     this.valueAssign = false;
-                } else if (removeQuery) {
+                } else if (this.removeQuery && searchBar.value=='') {
                     searchBar.value = ''
                     grid.query = new ej.data.Query();
-                    removeQuery = false;
+                    this.removeQuery = false;
                     grid.refresh();
                 }
             }
+            document.getElementById(grid.element.id + '_searchbar').addEventListener('keyup', (args) => {
+                if (args.target.value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
+                    grid.query = new ej.data.Query();
+                    this.removeQuery = false;
+                    grid.refresh();
+                }
+            });
         }
     }
 </script>
