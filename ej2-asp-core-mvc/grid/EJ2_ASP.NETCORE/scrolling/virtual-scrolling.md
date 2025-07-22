@@ -91,24 +91,21 @@ The following example enable column virtualization using `enableColumnVirtualiza
 * The following features are compatible with column virtualization and work within the viewport:
    1. Column resizing
    2. Column reordering
-   3. Column chooser
-   4. Auto-fit
-   5. Print
-   6. Clipboard
-   7. Column menu - Column chooser, AutofitAll
+   3. Auto-fit
+   4. Print
+   5. Clipboard
+   6. Column menu - AutofitAll
 
 * Column virtual scrolling is not compatible with the following feature
     1. Grouping
     2. Colspan
     3. Batch editing
-    4. Column with infinite scrolling
-    6. Stacked header
-    7. Row template
-    8. Detail template
-    9. Hierarchy grid
-    10. Autofill
-    11. Column chooser
-    12. Page
+    4. Stacked header
+    5. Row template
+    6. Detail template
+    7. Hierarchy grid
+    8. Autofill
+    9. Page
 
 ## Browser height limitation in virtual scrolling and solution
 
