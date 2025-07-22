@@ -53,7 +53,7 @@ The following magnification options are available in the default toolbar of PDF 
 
 ![Alt text ](./images/zoom.png)
 
-N>PDF Viewer can support the zoom value ranges from 50 to 400.
+N>PDF Viewer can support the zoom value ranges from 10 to 400.
 
 ## See also
 
