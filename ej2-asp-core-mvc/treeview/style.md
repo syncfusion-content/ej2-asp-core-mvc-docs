@@ -80,6 +80,9 @@ Use the following CSS to customize the TreeView nodes based on levels.
 
 The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
 
+By using the [`HtmlAttributes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property, you can assign specific HTML attributes to any TreeView node. This lets you target and style individual nodes differently from others and enhancing their appearance.
+
+
 ```css
 .child-node {
   font-weight: bold;
@@ -96,6 +99,8 @@ The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 
 The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
+
+By using the [`HtmlAttributes`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property, you can assign specific HTML attributes to any TreeView node. This lets you target and style individual nodes differently from others and enhancing their appearance.
 
 ```css
 .child-node {
