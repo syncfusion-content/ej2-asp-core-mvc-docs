@@ -1,7 +1,7 @@
-@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.SaveUrl("/Home/SaveFiles").FileUploading("onFileUploading").Path("../Files/")).Render()
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.SaveUrl("/Home/SaveFiles").onImageUploading("ImageUploading").Path("../Files/")).Render()
 
 <script>
-    function onFileUploading(args) {
+    function onImageUploading(args) {
         var accessToken = "Authorization_token";
         // adding custom Form Data
         args.customFormData = [{ 'Authorization': accessToken }];
