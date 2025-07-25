@@ -13,13 +13,15 @@
     {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.element.addEventListener('mouseup', (event) => {
-        if (event.target.classList.contains("e-rowcell")) {
-            if (grid.isEdit)
-                grid.endEdit();
+            if (event.target.classList.contains("e-rowcell")) {
+                if (grid.isEdit)
+                {
+                    grid.endEdit();
+                }
                 let index= parseInt((event.target).getAttribute("Index"));
                 grid.selectRow(index);
                 grid.startEdit();
-            };
+            }
         });
     }
 </script>
