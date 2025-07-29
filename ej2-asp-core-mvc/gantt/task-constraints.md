@@ -50,6 +50,7 @@ To enable and manage task constraints in the Gantt component, you need to config
 In your Gantt component configuration, map the following fields:
 
 {% if page.publishingplatform == "aspnet-core" %}
+{% raw %}
 ```cshtml
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
@@ -58,7 +59,10 @@ TaskFields.EndDate = "endDate"
 TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint (e.g., 2 for MustStartOn)
 TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
 ```
+{% endraw %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+{% raw %}
 ```razor
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
@@ -67,6 +71,7 @@ TaskFields.EndDate = "endDate"
 TaskFields.ConstraintType = "constraintType" // Specifies the type of constraint (e.g., 2 for MustStartOn)
 TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for the constraint
 ```
+{% endraw %}
 {% endif %}
 
 These mappings ensure that each task can interpret and apply its constraints correctly based on your data source.
