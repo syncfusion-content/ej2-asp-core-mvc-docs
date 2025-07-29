@@ -164,5 +164,5 @@ You can get the styles in the document using the below code snippet.
 //Get paragraph styles
 var paragraphStyles = documentEditor.getStyles('Paragraph');
 //Get character styles
-var paragraphStyles = documentEditor.getStyles('Character');
+var characterStyles = documentEditor.getStyles('Character');
 ```
