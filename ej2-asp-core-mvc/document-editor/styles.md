@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Document Editor Component
+title: Styles in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about styles in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Styles
@@ -162,7 +162,7 @@ You can get the styles in the document using the below code snippet.
 
 ```typescript
 //Get paragraph styles
-let paragraphStyles = documentEditor.getStyles('Paragraph');
+var paragraphStyles = documentEditor.getStyles('Paragraph');
 //Get character styles
-let paragraphStyles = documentEditor.getStyles('Character');
+var paragraphStyles = documentEditor.getStyles('Character');
 ```
