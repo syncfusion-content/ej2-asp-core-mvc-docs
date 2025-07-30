@@ -80,7 +80,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/character-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Character-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -89,7 +90,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/character-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Character-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -103,7 +105,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/paragraph-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -112,7 +115,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/paragraph-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -126,7 +130,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/linked-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Linked-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -135,7 +140,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/linked-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Linked-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
