@@ -72,6 +72,22 @@ dropdownfieldInfo.dropDownItems = ['One','Two', 'Three']
 documentEditor.setFormFieldInfo('Drop1',dropdownfieldInfo);
 ```
 
+## Form Field Shading
+
+You can customize form field shading at the application level using the `formFieldSettings` property.
+
+The example code below demonstrates how to set a custom shading color and how to disable shading (by default, shading is enabled).
+
+```typescript
+// Set a custom shading color (for example, white) 
+container.documentEditorSettings.formFieldSettings.shadingColor = '#ffffff';
+
+// Disable form field shading entirely 
+container.documentEditorSettings.formFieldSettings.applyShading = false;
+```
+
+>Note:This customization only affects the application UI and will not be preserved when exporting the document.
+
 ## Export form field data
 
 Data of the all Form fields in the document can be exported using `exportFormData`.
