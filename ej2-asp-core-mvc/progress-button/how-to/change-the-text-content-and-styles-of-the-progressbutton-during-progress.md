@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Change The Text Content And Styles Of The Progressbutton During Progress in ##Platform_Name## Progress Button Component
-description: Learn here all about Changing The Text Content And Styles Of The Progress button in Syncfusion ##Platform_Name## and more.
+description: Learn here all about changing The text content And styles Of the Progress button in Syncfusion ##Platform_Name## and more.
 platform: ej2-asp-core-mvc
 control: Change The Text Content And Styles Of The Progressbutton During Progress
 publishingplatform: ##Platform_Name##
