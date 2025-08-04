@@ -86,7 +86,7 @@ container.documentEditorSettings.formFieldSettings.shadingColor = '#ffffff';
 container.documentEditorSettings.formFieldSettings.applyShading = false;
 ```
 
->Note:This customization only affects the application UI and will not be preserved when exporting the document.
+N> This customization only affects the application UI and will not be preserved when exporting the document.
 
 ## Export form field data
 
