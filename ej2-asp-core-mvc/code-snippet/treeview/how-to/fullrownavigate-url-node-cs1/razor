@@ -1,0 +1,3 @@
+@Html.EJS().TreeView("treedata").Fields(field=>
+    field.Id("Id").ParentID("Pid").Text("Name").HasChildren("HasChild").Expanded("Expanded").NavigateUrl("NavigateUrl")
+    .DataSource(ViewBag.dataSource)).FullRowNavigable(true).Render()
