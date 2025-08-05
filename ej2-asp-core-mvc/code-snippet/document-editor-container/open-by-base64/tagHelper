@@ -1,0 +1,44 @@
+<ejs-button id="import" content="Open Document" onclick="onClick()"></ejs-button>
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated"
+height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+    }
+    function onClick() {
+        let base64Document = '<base64>';
+        // Decode the Base64 string
+        var binaryString = atob(base64Document);
+        // Convert the binary string to an array buffer
+        var byteArray = new Uint8Array(binaryString.length);
+        for (var i = 0; i < binaryString.length; i++) {
+            byteArray[i] = binaryString.charCodeAt(i);
+        }
+        // Create a Blob from the array buffer
+        var blob = new Blob([byteArray], { type: 'application/octet-stream' });
+        // Create form data with the blob
+        var formData = new FormData();
+        formData.append('file', blob, 'GiantPanda.docx');
+        var apiUrl = 'https://services.syncfusion.com/react/production/api/documentedtor/import';
+        // Now, send formData to your WebAPI for converting Word Document(.docx) to Syncfusion Document Text(.sfdt)
+        var xhrUpload = new XMLHttpRequest();
+        xhrUpload.open('POST', apiUrl, true);
+        xhrUpload.onload = function () {
+            if (xhrUpload.status === 200) {
+                // Open the sfdt response from the web api in client-side open api.
+                container.current.documentEditor.open(xhrUpload.responseText);
+            } else {
+                console.error('Error uploading file: ', xhrUpload.statusText);
+            }
+        };
+        xhrUpload.onerror = function () {
+            console.error('Network error occurred while trying to upload file.');
+        };
+        xhrUpload.send(formData);
+    }
+</script>

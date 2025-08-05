@@ -67,7 +67,181 @@ The following example shows how to import document from local machine.
 {% endtabs %}
 {% endif %}
 
+## Opening document from URL
 
+This article explains how to open a document from URL in DocumentEditor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/open-by-url/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Open-by-url.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/open-by-url/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Open-by-url.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+
+
+```typescript
+import * as ReactDOM from 'react-dom';
+import * as React from 'react';
+import {
+  DocumentEditorContainerComponent,Toolbar } from '@syncfusion/ej2-react-documenteditor';
+
+DocumentEditorContainerComponent.Inject(Toolbar);
+export class App extends React.Component<{}, {}> {
+  container: DocumentEditorContainerComponent;
+  public contentChanged:boolean=false;
+  onClick():void {
+    let http: XMLHttpRequest = new XMLHttpRequest();
+    //add your url in which you want to open document inside the ""
+    let content = { fileUrl: "" };
+    let baseurl: string = "/api/documenteditor/ImportFileURL";
+    http.open("POST", baseurl, true);
+    http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    http.onreadystatechange = () => {
+        if (http.readyState === 4) {
+            if (http.status === 200 || http.status === 304) {
+                //open the SFDT text in Document Editor
+                container.documentEditor.open(http.responseText);
+            }
+        }
+    };
+    http.send(JSON.stringify(content));
+  }
+  render() {
+    return (
+      <div>
+      <button id='import' onClick={this.onClick.bind(this)}>Import</button>
+      <DocumentEditorContainerComponent id="container" ref={(scope) => { this.container = scope; }}
+        height={'590px'}
+        serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/"
+        enableToolbar={true}
+      />
+      </div>
+    );
+  }
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+
+```
+
+## Opening a Base64 Document
+
+This article explains how to open a base64 document in DocumentEditor.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/open-by-base64/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Open-by-base64.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor-container/open-by-base64/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Open-by-base64.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+
+
+```typescript
+import * as ReactDOM from 'react-dom';
+import * as React from 'react';
+import {
+  DocumentEditorContainerComponent,Toolbar } from '@syncfusion/ej2-react-documenteditor';
+
+DocumentEditorContainerComponent.Inject(Toolbar);
+export class App extends React.Component<{}, {}> {
+  container: DocumentEditorContainerComponent;
+  public contentChanged:boolean=false;
+  onClick():void {
+    let base64Document: string = '<base64>';
+    // Decode the Base64 string
+    let binaryString: string = atob(base64Document);
+    // Convert the binary string to an array buffer
+    let byteArray: Uint8Array = new Uint8Array(binaryString.length);
+    for (let i = 0; i < binaryString.length; i++) {
+        byteArray[i] = binaryString.charCodeAt(i);
+    }
+    // Create a Blob from the array buffer
+    let blob: Blob = new Blob([byteArray], { type: 'application/octet-stream' });
+    // Create form data with the blob
+    let formData: FormData = new FormData();
+    formData.append('file', blob, 'GiantPanda.docx');
+    let apiUrl: string = 'https://services.syncfusion.com/react/production/api/documentedtor/import';
+    // Now, send formData to your WebAPI for converting Word Document(.docx) to Syncfusion Document Text(.sfdt)
+    let xhrUpload: XMLHttpRequest = new XMLHttpRequest();
+    xhrUpload.open('POST', apiUrl, true);
+    xhrUpload.onload = function () {
+        if (xhrUpload.status === 200) {
+            // Open the sfdt response from the web api in client-side open api.
+            container.current.documentEditor.open(xhrUpload.responseText);
+        } else {
+            console.error('Error uploading file: ', xhrUpload.statusText);
+        }
+    };
+    xhrUpload.onerror = function () {
+        console.error('Network error occurred while trying to upload file.');
+    };
+    xhrUpload.send(formData);
+  }
+  render() {
+    return (
+      <div>
+      <button id='import' onClick={this.onClick.bind(this)}>Import</button>
+      <DocumentEditorContainerComponent id="container" ref={(scope) => { this.container = scope; }}
+        height={'590px'}
+        serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/documenteditor/"
+        enableToolbar={true}
+      />
+      </div>
+    );
+  }
+}
+ReactDOM.render(<App />, document.getElementById('root'));
+
+```
+
+```csharp
+[AcceptVerbs("Post")]
+public string ImportFileURL([FromBody]FileUrlInfo param)
+{
+    try {
+        using(WebClient client = new WebClient())
+        {
+            MemoryStream stream = new MemoryStream(client.DownloadData(param.fileUrl));
+            WordDocument document = WordDocument.Load(stream, FormatType.Docx);
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(document);
+            document.Dispose();
+            stream.Dispose();
+            return json;
+        }
+    }
+    catch (Exception) {
+        return "";
+    }
+}
+public class FileUrlInfo {
+    public string fileUrl { get; set; }
+    public string Content { get; set; }
+}
+```
 
 ## Convert word documents into SFDT
 
