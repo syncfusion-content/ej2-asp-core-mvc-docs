@@ -244,7 +244,6 @@ For the **GetImage** operation, use the **beforeImageLoad** event. Inside this e
 {% endif %}
 
 In server-side, `GetImage` method access the **Authorization** header from the incoming HTTP request and perform the necessary operations.
-
 ```typescript
 
 // gets the image(s) from the given path
