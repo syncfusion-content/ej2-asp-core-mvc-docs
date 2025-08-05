@@ -449,7 +449,7 @@ The following code snippet demonstrates how to configure the deserialization opt
 
 ### Improving Excel file open performance with parsing options
 
-Opening large Excel files into the EJ2 Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often caused by the processing of additional elements such as styles and number formats—even when the actual data content is minimal. For example, an Excel file with only a small amount of data but a large number of styled or formatted empty cells can significantly impact load time and memory consumption.
+Opening large Excel files into the Spreadsheet control can sometimes lead to slower performance and increased memory usage. This is often caused by the processing of additional elements such as styles and number formats—even when the actual data content is minimal. For example, an Excel file with only a small amount of data but a large number of styled or formatted empty cells can significantly impact load time and memory consumption.
 
 To address this, we've introduced parsing options that allow users to selectively skip non-essential features during the open process. By enabling options like `IgnoreStyle` and `IgnoreFormat`, you can reduce the amount of data processed, resulting in:
 * Faster load times
@@ -468,7 +468,7 @@ The code example below demonstrates how to configure the `IgnoreStyle` and `Igno
 ```csharp
 public IActionResult Open(IFormCollection openRequest) 
 { 
-    OpenRequest open = new OpenRequest(); 
+    OpenRequest open = new OpenRequest();
     ...
     open.ParseOptions = new WorkbookParseOptions() { 
         IgnoreStyle = true, 
