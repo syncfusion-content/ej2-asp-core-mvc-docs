@@ -26,7 +26,9 @@ DocumentEditorContainer allows to customize (add, show, hide, enable, and disabl
 {% include code-snippet/document-editor/custom-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-toolbar.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/custom-toolbar/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,9 +37,40 @@ DocumentEditorContainer allows to customize (add, show, hide, enable, and disabl
 {% include code-snippet/document-editor/custom-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-toolbar.cs" %}
-{% endhighlight %}{% endtabs %}
+{% include code-snippet/document-editor/custom-toolbar/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
 
 N> Default value of `ToolbarItems` is `['New', 'Open', 'Separator', 'Undo', 'Redo', 'Separator', 'Image', 'Table', 'Hyperlink', 'Bookmark', 'TableOfContents', 'Separator', 'Header', 'Footer', 'PageSetup', 'PageNumber', 'Break', 'InsertFootnote', 'InsertEndnote', 'Separator', 'Find', 'Separator', 'Comments', 'TrackChanges', 'Separator', 'LocalClipboard', 'RestrictEditing', 'Separator', 'FormFields', 'UpdateFields','ContentControl']`.
+
+## How to Customize the Dropdown for a Newly Added Toolbar Item in the DocumentEditorContainer
+
+DocumentEditorContainer enables the customization of dropdown menus within toolbar items.
+
+**Add** - New items can defined by [`CustomToolbarItemModel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_ToolbarItems) and with existing items in [`toolbarItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DocumentEditor.DocumentEditorContainer.html#Syncfusion_EJ2_DocumentEditor_DocumentEditorContainer_ToolbarItems) property. Newly added item will feature a dropdown list with options defined by the `DropDownButton`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/custom-toolbar-dropdown/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-toolbar-dropdown.cs" %}
+{% include code-snippet/document-editor/custom-toolbar-dropdown/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/custom-toolbar-dropdown/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="custom-toolbar-dropdown.cs" %}
+{% include code-snippet/document-editor/custom-toolbar-dropdown/document-editor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
