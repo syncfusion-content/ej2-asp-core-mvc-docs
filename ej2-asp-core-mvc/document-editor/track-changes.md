@@ -201,3 +201,19 @@ Tracked changes only protection can be enabled in UI by using [Restrict Editing 
 ![Enable track changes only protection](images/tracked-changes.png)
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly |RevisionsOnly`. In stop protection method, parameter denotes the password.
+
+## To Hide the revision pane
+
+When turning on the track change mode, every time we click on new/edited text, the track change/comment side panel will show automatically. 
+
+The following example code illustrates how to hide the revision pane in Document editor container.
+
+
+```typescript
+/**
+ * To hide track changes pane
+ */
+container.documentEditor.showRevisions = false;
+}
+
+```
