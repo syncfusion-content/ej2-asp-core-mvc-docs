@@ -150,7 +150,6 @@ The highlight color of the selected text can be get or set using the following s
 
 ```typescript
 documenteditor.selection.characterFormat.highlightColor= 'Pink';
-documenteditor.selection.characterFormat.highlightColor= '#FFC0CB';
 ```
 
 ## Toolbar with options for text formatting
