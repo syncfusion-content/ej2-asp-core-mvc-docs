@@ -1,0 +1,17 @@
+<ejs-spreadsheet id="spreadsheet" created="createdHandler" openComplete="openCompleteHandler">
+
+</ejs-spreadsheet>
+
+<script>
+
+    function createdHandler() {
+        this.openFromJson({
+            file: jsonData.jsonObject,
+            triggerEvent: true, // To trigger openComplete event after the JSON loaded into the spreadsheet.
+        });
+    }
+
+    function openCompleteHandler() {
+        alert('JSON loaded successfully');
+    }
+</script>
