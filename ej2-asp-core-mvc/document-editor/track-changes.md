@@ -201,3 +201,20 @@ Tracked changes only protection can be enabled in UI by using [Restrict Editing 
 ![Enable track changes only protection](images/tracked-changes.png)
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly |RevisionsOnly`. In stop protection method, parameter denotes the password.
+
+## Event
+
+You can restrict the accept and reject changes based on the author name. The following example demonstrates how to restrict an author from accept/reject changes.
+
+```typescript
+@Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).DocumentEditorSettings("settings").Height("590px").BeforeAcceptRejectChanges("beforeAcceptRejectChanges")Render()
+<script>
+    function beforeAcceptRejectChanges(args) {
+        // Check the author of the revision
+        if (args.author !== "Hary") {
+            // Cancel the accept/reject action
+            args.cancel = true;
+        }
+    }
+</script>
+```
