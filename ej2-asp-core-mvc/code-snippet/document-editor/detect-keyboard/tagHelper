@@ -1,0 +1,20 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true id="container"></ejs-documenteditor>
+
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        documentEditor.keyDown = function (args) {
+            var keyCode = args.event.which || args.event.keyCode;
+            // 46 is the character code for 'Delete'
+            if (keyCode === 46) {
+                alert('Delete clicked'); // To show the alert while Deleting
+            }
+            // 8 is the character code for 'Backspace'
+            if (keyCode === 8) {
+                alert('backspace clicked'); // To show the alert while Backspacing
+            }
+        }
+    });
+</script>
