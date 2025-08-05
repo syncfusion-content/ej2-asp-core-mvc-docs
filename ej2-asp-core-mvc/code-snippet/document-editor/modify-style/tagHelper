@@ -1,0 +1,17 @@
+<ejs-documenteditor isReadOnly=false enableEditor=true enableSelection=true enableSfdtExport=true id="container"></ejs-documenteditor>
+
+<script>
+    var documenteditor;
+    document.addEventListener('DOMContentLoaded', function () {
+        documenteditor = document.getElementById("container").ej2_instances[0];
+        var styleJson = {
+                "type": "Paragraph",
+                "name": "Heading 1",
+                "characterFormat": {
+                    "fontSize": 32,
+                    "fontFamily": "Calibri"
+                 }
+        };
+        documentEditor.editor.createStyle(styleName, true);
+    });
+</script>

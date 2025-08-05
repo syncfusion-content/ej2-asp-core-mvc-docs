@@ -155,3 +155,34 @@ documenteditor.editor.applyStyle('New Linked');
 //Clear direct formatting and apply the specified style
 documenteditor.editor.applyStyle('New Linked', true);
 ```
+
+## Modify an existing style
+
+You can modify a existing style with the specified style properties using [`createStyle`](https://ej2.syncfusion.com/angular/documentation/api/document-editor/editor/#createStyle) method. If modifyExistingStyle parameter is set to `true` the style properties is updated to the existing style.
+
+The following illustrate to modify an existing style.
+
+```
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/modify-style/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="modify-style.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/document-editor/modify-style/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="modify-style.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
+```
+
+> If modifyExistingStyle parameter is set to true and a style already exists with same name, it modifies the specified properties in the existing style.
+> If modifyExistingStyle parameter is set to false and a style already exists with same name, it creates a new style with unique name by appending ‘_1’. Hence, the newly style will not have the specified name.
+> If no style exists with same name, it creates a new style.
