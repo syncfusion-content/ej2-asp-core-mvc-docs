@@ -1,0 +1,16 @@
+<ejs-gantt id='Gantt' height="450px" locale="de-DE">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        duration="Duration" progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+</ejs-gantt>
+
+<script type="text/javascript">
+    ej.base.L10n.load({
+        'de-DE': {
+            'grid': {
+                "EmptyRecord": "Nothing to show here.",
+            }
+        }
+    });
+    ej.base.setCulture('de-DE');
+</script>
