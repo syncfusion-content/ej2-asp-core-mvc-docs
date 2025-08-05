@@ -578,7 +578,7 @@ N>The icons are embedded in the font file used in above code snippet.
 
 ```
 
-[View sample in GitHub](https://github.com/SyncfusionExamples/asp-core-pdf-viewer-examples/tree/master/How%20to/Create%20Custom%20Toolbar)
+[View sample in GitHub](https://github.com/SyncfusionExamples/mvc-pdf-viewer-examples/tree/master/How%20to)
 
 ## See also
 
