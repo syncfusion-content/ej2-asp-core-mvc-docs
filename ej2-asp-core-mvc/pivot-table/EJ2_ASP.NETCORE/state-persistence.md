@@ -38,7 +38,7 @@ State persistence allows user to maintain the current state of the component alo
 
 
 
-# Save and Load Pivot Layout
+## Save and Load Pivot Layout
 
 You can save the current layout of the pivot table by using `getPersistData` in string format. The saved layout can be loaded to pivot table any time by passing the saved data as a parameter to `loadPersistData` method in the [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
 
