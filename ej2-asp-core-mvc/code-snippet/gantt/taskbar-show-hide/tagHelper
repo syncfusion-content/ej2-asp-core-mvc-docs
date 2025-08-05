@@ -1,0 +1,42 @@
+<div class="switch-container">
+    <label for="switch" class="switch">Show/Hide Taskbar</label>
+    <ejs-switch id="switch" checked="false" change="Change"></ejs-switch>
+</div>
+
+<ejs-gantt id='GanttContainer' dataSource="ViewBag.DataSource" height="450px" queryTaskbarInfo="queryTaskbarInfo">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID="ParentId">
+    </e-gantt-taskfields>
+</ejs-gantt>
+
+<script>
+    function change(args) {
+        var ganttObj = document.getElementById("GanttContainer").ej2_instances[0];
+        ganttObj.element.querySelectorAll('.e-gantt-parent-taskbar-inner-div').forEach((el) => {
+            if (args.checked) {
+                el.classList.remove('hidden-taskbar');
+            } else {
+                el.classList.add('hidden-taskbar');
+            }
+        });
+    }
+    function queryTaskbarInfo(args) {
+        if (args.data.hasChildRecords) {
+            args.taskbarElement.children[1].classList.add('hidden-taskbar');
+        }
+    }
+</script>
+<style>
+    .switch-container {
+        display: flex;
+        align-items: center;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .switch {
+        margin-left: 10px;
+    }
+
+    .e-gantt .hidden-taskbar {
+        visibility: hidden !important;
+    }
+</style>
