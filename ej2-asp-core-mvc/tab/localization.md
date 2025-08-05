@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# ASP.NET Core Tabs localization
 
 Localization library allows to localize the default text content of Tab. In Tab, The close button's tooltip text alone will be localize based on culture.
 
