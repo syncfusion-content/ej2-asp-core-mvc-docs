@@ -129,7 +129,8 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/protect-unprotect/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Protect-unprotect.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -138,7 +139,8 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/protect-unprotect/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Protect-unprotect.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
