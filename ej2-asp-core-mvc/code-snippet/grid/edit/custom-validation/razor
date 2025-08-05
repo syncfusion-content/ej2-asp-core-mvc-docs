@@ -1,0 +1,112 @@
+<div class="control-section" style="display: flex;">
+    <div class="col-lg-3 property-section" style="margin-right: 20px;">
+        <table style="width: 100%;">
+            <tr>
+                <td style="padding-top: 10px;">Column Fields</td>
+                <td>
+                    @Html.EJS().DropDownList("columnFields").Placeholder("Select field").Render()
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-top: 15px;">Enable Custom Validation</td>
+                <td>
+                    @Html.EJS().CheckBox("customValidationCheckbox").Disabled(true).Render()
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="col-md-8">
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPaging(true).PageSettings(p => p.PageCount(5)).Toolbar(new List<string> { "Add", "Edit", "Delete", "Update", "Cancel" }).EditSettings(edit => edit.AllowEditing(true).AllowAdding(true).AllowDeleting(true).ShowAddNewRow(true)).Columns(col =>
+{
+col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = true, number = true }).Add();
+col.Field("CustomerID").HeaderText("Customer ID").Width("120").ValidationRules(new { required = true, minLength = 5 }).Add();
+col.Field("Freight").HeaderText("Freight").Width("180").Format("C2").EditType("numericedit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = true, min = 0 }).Add();
+col.Field("OrderDate").HeaderText("Order Date").Width("130").EditType("datetimepickeredit").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format(new { type = "dateTime", format = "M/d/y hh:mm a" }).Add();
+col.Field("ShipCountry").HeaderText("Ship Country").Width("150").EditType("dropdownedit").Edit(new { @params = new { popupHeight = 300 } }).Add();
+}).ActionBegin("actionBegin").Render()
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var dropdownObj = document.getElementById('columnFields').ej2_instances[0];
+    var checkboxObj = document.getElementById('customValidationCheckbox').ej2_instances[0];
+    var gridObj = document.getElementById('grid').ej2_instances[0];
+
+    let columnsConfig = [
+        { field: 'OrderID', headerText: 'Order ID' },
+        { field: 'CustomerID', headerText: 'Customer ID' },
+        { field: 'Freight', headerText: 'Freight' },
+        { field: 'OrderDate', headerText: 'Order Date' },
+        { field: 'ShipCountry', headerText: 'Ship Country' }
+    ];
+
+    dropdownObj.dataSource = columnsConfig.map(c => ({ text: c.headerText, value: c.field }));
+    dropdownObj.fields = { text: 'text', value: 'value' };
+    dropdownObj.dataBind();
+
+    let selectedField = null;
+
+    dropdownObj.addEventListener('change', function (e) {
+        selectedField = e.value;
+        checkboxObj.disabled = false;
+
+        if (checkboxObj.checked) {
+            addValidation(selectedField); // Apply validation if checkbox is already checked.
+        }
+    });
+
+    checkboxObj.addEventListener('change', function (e) {
+        if (!selectedField) return;
+
+        if (e.checked) {
+            addValidation(selectedField);
+        } else {
+            resetValidation(selectedField);
+        }
+    });
+
+    function actionBegin(args) {
+        if (args.requestType === 'save') {
+            // Add logic if needed for save request.
+          }
+    }
+
+    //Apply custom validation to the selected column.
+    function addValidation(field) {
+        gridObj.columns.forEach(col => {
+            if (col.field === field) {
+                col.validationRules = {
+                    required: [customFn, 'Custom required rule applied for this field.']
+                };
+                gridObj.editModule?.formObj?.addRules(field, col.validationRules);
+            } else if (col.isPrimaryKey) {
+                col.validationRules = { required: true };
+                gridObj.editModule?.formObj?.addRules(col.field, col.validationRules);
+            } else {
+                col.validationRules = null;
+                gridObj.editModule?.formObj?.removeRules(col.field);
+            }
+        });
+
+        gridObj.editModule?.formObj && gridObj.closeEdit();
+    }
+
+    function resetValidation(field) {
+        let col = gridObj.getColumnByField(field);
+        if (col.isPrimaryKey) {
+            col.validationRules = { required: true };
+            gridObj.editModule?.formObj?.addRules(col.field, col.validationRules);
+        } else {
+            col.validationRules = null;
+            gridObj.editModule?.formObj?.removeRules(col.field);
+        }
+
+        gridObj.editModule?.formObj && gridObj.closeEdit();
+    }
+
+    function customFn(args) {
+        return args.value !== '' && args.value !== undefined;
+    }
+});
+</script>

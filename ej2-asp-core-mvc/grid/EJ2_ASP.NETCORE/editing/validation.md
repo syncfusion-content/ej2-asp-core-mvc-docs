@@ -80,6 +80,37 @@ In the following example, custom validation functions, namely **customFunction**
 
 ![Custom validation for numeric column](../images/editing/validation-numeric.png)
 
+### Custom validation for particular column externally
+
+In Syncfusion ASP.NET Core Grid, you can dynamically apply custom validation rules to specific columns using external UI elements such as a **DropdownList** and a **Checkbox**.
+
+To achieve this follow these steps:
+
+1. Define the **columnsConfig** array with fields, validation rules, and edit types and assign **columnsConfig** to the `grid.columns` property.
+
+2. Use a DropdownList to select the target column and a Checkbox to enable or disable custom validation.
+
+3. When the Checkbox is checked, call the private `addValidation()` method to apply the custom validation rule and retrieve the selected column and update its `validationRules` with a custom function.
+
+4. Use `formObj.addRules()` to apply rules and `formObj.removeRules()` to reset them dynamically.
+
+5. Always apply the default required rule to the primary key **OrderID** regardless of the custom selection.
+
+6. Use the [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) method to manage validation before saving data.
+
+These custom validation rules can be linked to specific columns using the `validationRules` property. The rules can be defined externally as functions and applied dynamically to the corresponding column settings in the Grid. By default, the default validation rules will be applied to the columns. Upon enabling the Custom Validation from checkbox, the custom validation will be applied.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/edit/custom-validation/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="columnvalid.cs" %}
+{% include code-snippet/grid/edit/custom-validation/custom-validation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Custom validation for particular column externally](../images/editing/custom-validation.gif)
+
 ## Dynamically add or remove validation rules from the form
 
 You can dynamically add or remove validation rules from input elements within a form. This feature is particularly useful when you need to adjust the validation rules based on different scenarios or dynamically changing data.
