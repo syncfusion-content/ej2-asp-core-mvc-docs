@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Globalization in Document Editor Component
 
 ## Localization
@@ -84,6 +83,13 @@ Landscape | Landscape
 Portrait | Portrait
 Show page numbers | Show page numbers
 Right align page numbers | Right align page numbers
+Uppercase | Uppercase
+Lowercase | Lowercase
+FirstCapital | FirstCapital
+TitleCase | TitleCase
+ToggleCase | ToggleCase
+SentenceCase | SentenceCase
+CapitalizeEachWord | CapitalizeEachWord
 Nothing | Nothing
 Tab leader | Tab leader
 Show levels | Show levels
@@ -99,6 +105,21 @@ Heading 3 | Heading 3
 Heading 4 | Heading 4
 Heading 5 | Heading 5
 Heading 6 | Heading 6
+Heading 7 | Heading 7
+Heading 8 | Heading 8
+Heading 9 | Heading 9
+Heading 1 Char | Heading 1 Char
+Heading 2 Char | Heading 2 Char
+Heading 3 Char | Heading 3 Char
+Heading 4 Char | Heading 4 Char
+Heading 5 Char | Heading 5 Char
+Heading 6 Char | Heading 6 Char
+Heading 7 Char | Heading 7 Char
+Heading 8 Char | Heading 8 Char
+Heading 9 Char | Heading 9 Char
+Default Paragraph Font | Default Paragraph Font
+Header Char | Header Char
+Footer Char | Footer Char
 List Paragraph | List Paragraph
 Normal | Normal
 Outline levels | Outline levels
