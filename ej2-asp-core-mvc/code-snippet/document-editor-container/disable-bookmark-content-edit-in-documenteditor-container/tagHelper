@@ -1,0 +1,29 @@
+
+<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true created="onCreated" .selectionChange="onSelectionChanged" height="590px"></ejs-documenteditorcontainer>
+
+<script>
+    var documenteditor;
+    var container;
+    function onCreated() {
+        var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        let sfdt = `{"sfdt":"UEsDBAoAAAAIACGOlVon0ykbLgMAAIIYAAAEAAAAc2ZkdM2YSY+bMBiG/wp1r9EogQQCt6pV1ENVjTSHHkY5GLCDNWYpOM3MRPnv/byQhEySIbMEuLzG27c9GMQa5YVgKXsmdzQWKBDlkgxQRSIU3K8RaFGiYI2KFQrckT1ARYICz4cGT6EBWhoVRkOjSYwCxx0gajSmBQqGoDnRjZBpAUvoN1nd4gVBA0QyigJYTqXCcMlqJUoZzVAwAiVai0VWwQbfShyyCNZnUc4rNUL+rpTyUERqqR65n2/AqIquoDK0MC4rqQLcWsMYF1rLhdbQ3Cda/kkBrUQmHc/LFHOwy6WfaiCieiJTNiJtA24o5hWBfsHBEPpDeJSnxBK5hTaD9XZV+CCUs3Lz6imL6LJiebabcmSru+20I1uNLtrqC9rMN3OIVQczH9QzzUQVlWnR6hm2h/0pTEHfMWdhySATS+V/pcMIsZJEVwCWSJt6kWztLcPRbmeKG0MUYCAHPY0O8P9dteQsM5BppUaF9j6slGAtBi9uIsz5lmbj/oO0WrdX2ba9iurHawcLrYxHgnLdiMVKPzCGWmIehAScRRB6ZZSm2n6hJU5Eqj2hVDsIeBWmFE8iNF7KPCD5xH2dqQspkp8Uqg2ezebvy+rhI5E97kxIDKXFnwTHLFtYo48y+mop5TG2X8uboeePXNedDD3PHvpjr1nc0YtIDPpuE33rF1skQlZG5deeTca+iw5o3k1qMr3Xf6Rbn1h7h81+3qzvCS7RK8mtJ+kTodMofhCKl1xYt7jEixIXiTXLM7F1+cRww/XNYXz21eC5jB37FDtOL9ix27Bjn2bH6Rk7tctOT3FwTuFgn03kaOZ4rvP5ODhtcHBO43D1KFriMO4pDuOXOLD6E6EHp8O4DQ7jYzh0FEVLHCY9xWFy5HTonoJJGwomRw+FPhbf7Wnx3YuKf603gtum+O6Fxe/uReD1tPje214E16LAa0OB99YXQXc4THuKw/TUZ+LwZnI2lY66Ph+IaRsgpqc/FDuIoyUSfk+R8M+dEL1iw2/Dhn/+sOgxJKT8GEKO/0x8+cuskWeVUuNF7dQsz0X3Thkv5B9jLn98g8Kg0ijVWprbR60sXVRq2/9QSwECFAAKAAAACAAhjpVaJ9MpGy4DAACCGAAABAAAAAAAAAAAAAAAAAAAAAAAc2ZkdFBLBQYAAAAAAQABADIAAABQAwAAAAA="}`;
+        documenteditor.open(sfdt);
+    }
+    function onSelectionChanged() {
+      var documenteditorElement = document.getElementById("container");
+        container = documenteditorElement.ej2_instances[0];
+        documenteditor = container.documentEditor;
+        let bookmarks =
+            documenteditor.selection.getBookmarks();
+        // Check whether selection have the mentioned bookmark
+        if (bookmarks.indexOf('syncfusion') != -1) {
+            // Change the document to read only mode
+            container.restrictEditing = true;
+        } else {
+            // Change the document to editable mode
+            container.restrictEditing = false;
+        }
+    }
+</script>
+
