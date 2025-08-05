@@ -1,0 +1,20 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" allowResizing="true" height="550px" dataBound="dataBound" gridLines="Both" treeColumnIndex="1">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                        endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" width="10"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Name" width="250"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script>
+  function dataBound() {
+    var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+    ganttObj.treeGrid.autoFitColumns(['TaskId']);
+  }
+</script>
+

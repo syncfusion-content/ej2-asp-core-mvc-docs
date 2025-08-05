@@ -83,3 +83,4 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 * Cell selection will not be persisted.
 * The number of records rendered will be determined by the `Height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+* With virtualization enabled, data is rendered in sets per page. When scrolling to view the next set of records, if a record is selected, only the current page's records are returned by the Gantt's public methods. This occurs because the Gantt chart doesn't maintain records from all pages to optimize performance.
