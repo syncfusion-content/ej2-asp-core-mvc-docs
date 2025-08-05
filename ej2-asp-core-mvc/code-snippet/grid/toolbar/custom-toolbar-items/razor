@@ -1,0 +1,42 @@
+
+@{  
+    var shipCities = new string[] { 
+        "Reims",
+        "Münster",
+        "Rio de Janeiro",
+        "Lyon",
+        "Charleroi",
+        "Bern",
+        "Genève",
+        "San Cristóbal",
+        "Graz",
+        "México D.F.",
+        "Albuquerque",
+        "Köln",
+   };
+    ViewBag.data = shipCities;
+} 
+
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Toolbar(new List<object>{
+"Add", "Edit", "Delete",
+new { template = "#toolbar-template", align = "Left", tooltipText = "Custom Component Autocomplete" },
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Columns(col =>
+{
+	col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+	col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+	col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+	col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).Height("270px").Render()
+
+<div id="toolbar-template">
+	@Html.EJS().AutoComplete("shipCityValue").Placeholder("Search ShipCity").DataSource((IEnumerable<object>)ViewBag.data).Change("onChange").Render()
+</div>
+
+<script>
+    function onChange(event) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+		const selectedCity = event.value;
+        // perform search action for ShipCity column.
+        grid.search(selectedCity);
+    }
+</script>
