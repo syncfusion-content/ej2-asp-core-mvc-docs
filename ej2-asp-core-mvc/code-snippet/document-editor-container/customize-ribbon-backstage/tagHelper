@@ -1,0 +1,12 @@
+<ejs-documenteditorcontainer id="container" toolbarMode="Ribbon" serviceUrl="api/documenteditor/"
+    backstageMenu="@(new {
+        text = "File",
+        backButton = new { text = "close" },
+        items = new object[] {
+            new { id = "new", text = "New", iconCss = "e-icons e-de-ctnr-new" }
+        }
+    })">></ejs-documenteditorcontainer>
+    
+<script>
+    ej.documenteditor.DocumentEditorContainer.Inject(ej.documenteditor.Toolbar, ej.documenteditor.Ribbon);
+</script>
