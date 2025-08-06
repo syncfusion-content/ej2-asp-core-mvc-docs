@@ -58,7 +58,7 @@
             document.getElementById(grid.element.id + '_searchbar').addEventListener('keyup', (args) => {
                 if (args.target.value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
                     grid.query = new ej.data.Query();
-                    this.removeQuery = false;
+                    removeQuery = false;
                     grid.refresh();
                 }
             });

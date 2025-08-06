@@ -1,0 +1,15 @@
+<ejs-documenteditorcontainer id="container" toolbarMode="Ribbon" serviceUrl="api/documenteditor/"
+    fileMenuItems="@(new object[] {
+            "New",
+            "Print",
+            new { text = "Export", id = "custom_item", iconCss = "e-icons e-export" }
+        })" fileMenuItemClick="onFileMenuItemClick"></ejs-documenteditorcontainer>
+        
+<script>
+    ej.documenteditor.DocumentEditorContainer.Inject(ej.documenteditor.Toolbar, ej.documenteditor.Ribbon);
+    function onFileMenuItemClick(args) {
+        if (args.item.id) {
+            document.getElementById('container').ej2_instances[0].documentEditor.save('Sample', 'Docx');
+        }
+    }
+</script>
