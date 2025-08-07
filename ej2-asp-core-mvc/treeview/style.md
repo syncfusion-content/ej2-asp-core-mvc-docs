@@ -99,7 +99,7 @@ By using attributes, you can customize specific nodes effectively. For instance,
 
 The [HtmlAttributes](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property of the TreeView component allows you to define a mapping field for applying custom HTML attributes to individual TreeView nodes.
 
-By using the [`HtmlAttributes`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TreeViewFieldsSettings.html#Syncfusion_EJ2_Navigations_TreeViewFieldsSettings_HtmlAttributes) property, you can assign specific HTML attributes to any TreeView node. This lets you target and style individual nodes differently from others and enhancing their appearance.
+By using attributes, you can customize specific nodes effectively. For instance, in the given example, a 'child-node' class is added to a specific node, allowing you to customize the corresponding node via CSS.
 
 ```css
 .child-node {
