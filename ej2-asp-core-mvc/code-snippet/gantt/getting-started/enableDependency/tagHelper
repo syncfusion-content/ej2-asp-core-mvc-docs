@@ -1,4 +1,8 @@
-<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource">
-   <e-gantt-taskfields dependency="Predecessor">
-   </e-gantt-taskfields>
+@{
+    var dataSource = ViewBag.DataSource;
+}
+
+<ejs-gantt id='GanttTasks' dataSource="ViewBag.dataSource" height="450px">
+    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentId">
+    </e-gantt-taskfields>
 </ejs-gantt>
