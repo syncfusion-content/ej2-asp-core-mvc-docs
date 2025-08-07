@@ -18,12 +18,12 @@ The available default edit types are as follows:
 
 Component|Edit Type value |Description
 ----|-----|-----
-[TextBox](../../textbox)|stringedit	|  The  `stringedit` type renders a TextBox component for string data type columns. 
-[NumericTextBox](../../numerictextbox)|numericedit	| The `numericedit` type renders a NumericTextBox component for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
-[DropDownList](../../drop-down-list)|dropdownedit	| The `dropdownedit` type renders a DropdownList component for string data type columns.
-[Checkbox](../../check-box)|booleanedit	| The `booleanedit` type renders a CheckBox component for boolean data type columns.
-[DatePicker](../../datepicker)|datepickeredit	|The `datepickeredit` type renders a DatePicker component for date data type columns.
-[DateTimePicker](../../datetimepicker)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker component for date time data type columns.
+[TextBox](../../textbox/getting-started)|stringedit	|  The  `stringedit` type renders a TextBox component for string data type columns. 
+[NumericTextBox](../../numerictextbox/getting-started)|numericedit	| The `numericedit` type renders a NumericTextBox component for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
+[DropDownList](../../drop-down-list/getting-started)|dropdownedit	| The `dropdownedit` type renders a DropdownList component for string data type columns.
+[Checkbox](../../check-box/getting-started)|booleanedit	| The `booleanedit` type renders a CheckBox component for boolean data type columns.
+[DatePicker](../../datepicker/getting-started)|datepickeredit	|The `datepickeredit` type renders a DatePicker component for date data type columns.
+[DateTimePicker](../../datetimepicker/getting-started)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker component for date time data type columns.
 
 The following example demonstrates how to define the `EditType` for grid columns:
 
@@ -44,7 +44,7 @@ You can customize the default TextBox component in Grid edit form using its prop
 
 Component|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#properties) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.textbox.html#properties) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox component of **CustomerID** Grid column:
 
@@ -65,7 +65,7 @@ You can customize the `NumericTextBox` component in Grid edit form using its pro
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox)|numericedit| TThe `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** component, refer to the [NumericTextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](../../numerictextbox/getting-started)|numericedit| TThe `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** component, refer to the [NumericTextBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.inputs.numerictextbox.html) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to NumericTextBox component of **Frieght** Grid column:
 
@@ -107,7 +107,7 @@ You can customize the `DropDownList` component in Grid edit form using its prope
 
 Component|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list/getting-started)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.dropdownlist.html) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList component  of **ShipCity** Grid column:
 
@@ -189,7 +189,7 @@ You can customize the CheckBox component in Grid edit form using its property. T
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[CheckBox](../../check-box)| booleanedit | The `booleanedit` type renders a **CheckBox** component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.buttons.checkbox.html) for detailed information on available properties. | params: { checked: true}
+[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.buttons.checkbox.html) for detailed information on available properties. | params: { checked: true}
 
 The following sample code demonstrates the customization applied to CheckBox component of **Verified** Grid column:
 
@@ -210,7 +210,7 @@ You can customize the DatePicker component in Grid edit form using its property.
 
 Component| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
-[DatePicker](../../datepicker)| datepickeredit | The `datepickeredit` type renders a **DatePicker** component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datepicker.html) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datepicker.html) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
  
 The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
 
@@ -248,7 +248,7 @@ You can customize the DateTimePicker component in Grid edit form using its prope
 
 Component|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datetimepicker.html) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.calendars.datetimepicker.html) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
 
