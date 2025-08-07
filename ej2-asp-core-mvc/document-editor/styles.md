@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## Document Editor Component
+title: Styles in ##Platform_Name## Document Editor Component | Syncfusion
 description: Learn here all about styles in Syncfusion ##Platform_Name## Document Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Styles
@@ -80,7 +80,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/character-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Character-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -89,7 +90,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/character-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Character-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -103,7 +105,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/paragraph-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -112,7 +115,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/paragraph-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -126,7 +130,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/linked-style/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Linked-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -135,7 +140,8 @@ New Styles are defined and added to the style collection of the document. In thi
 {% include code-snippet/document-editor/linked-style/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Linked-style.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -154,4 +160,15 @@ For example, the following line will apply the "New Linked" to the current parag
 documenteditor.editor.applyStyle('New Linked');
 //Clear direct formatting and apply the specified style
 documenteditor.editor.applyStyle('New Linked', true);
+```
+
+## Get Styles
+
+You can get the styles in the document using the below code snippet.
+
+```typescript
+//Get paragraph styles
+var paragraphStyles = documentEditor.getStyles('Paragraph');
+//Get character styles
+var characterStyles = documentEditor.getStyles('Character');
 ```
