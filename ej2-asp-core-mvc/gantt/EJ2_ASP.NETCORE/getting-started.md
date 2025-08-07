@@ -28,8 +28,7 @@ To get started quickly with the ASP.NET Core Gantt Chart, watch the following vi
 
 ## Install ASP.NET Core package in the application
 
-To add ASP.NET Core controls to your application, open the NuGet Package Manager in Visual Studio by navigating to
-`Tools → NuGet Package Manager → Manage NuGet Packages for Solution`. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install the package.
+To add ASP.NET Core controls to your application, open the NuGet Package Manager in Visual Studio by navigating to `Tools → NuGet Package Manager → Manage NuGet Packages for Solution`. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install the package.
 
 Alternatively, you can use the following Package Manager command:
 
@@ -41,7 +40,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.AspNet.Core` NuGet package has dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.AspNet.Core` NuGet package has dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
@@ -72,9 +71,9 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -170,7 +169,7 @@ Modify the task details through cell editing by setting the edit mode to `Auto`.
 
 ![Cell Editing in ASP.NET Core Gantt](images/gantt-cell-editing.png)
 
-N> When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
+> When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
 
 ### Dialog editing
 
@@ -185,7 +184,7 @@ Modify the task details through dialog by setting the edit mode to `Dialog`.
 {% endhighlight %}
 {% endtabs %}
 
-N> In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
+> In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
 
 ![Dialog Editing in ASP.NET Core Gantt](images/gantt-cell-editing.png)
 
@@ -254,7 +253,7 @@ You can display and assign the resource for each task in the Gantt control. Crea
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Gantt with Resources](./images/gantt-resources.png)
+![ASP.NET Core Gantt with Resources](images/gantt-resources.png)
 
 ## Enable filtering
 
@@ -265,7 +264,7 @@ The filtering feature enables you to view the reduced amount of records based on
 {% include code-snippet/gantt/getting-started/filtering/tagHelper %}
 {% endhighlight %}
 {% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/filtering/filtering.cs %}
+{% include code-snippet/gantt/getting-started/filtering/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -280,7 +279,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% include code-snippet/gantt/getting-started/sorting/tagHelper %}
 {% endhighlight %}
 {% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/sorting/sorting.cs %}
+{% include code-snippet/gantt/getting-started/sorting/sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -316,7 +315,7 @@ The following screenshot represents the Gantt Exception handling in `actionFailu
 
 ![Error Handling](images/error-handling.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
