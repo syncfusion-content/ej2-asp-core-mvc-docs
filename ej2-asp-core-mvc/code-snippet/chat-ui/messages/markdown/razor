@@ -11,7 +11,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
 <script>
-    declare var DOMPurify: any;
     var currentUserModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.CurrentUserModel));
     var michaleUserModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.MichaleUserModel));
 
@@ -57,4 +56,8 @@
     .control-section.chat-ui {
         padding: 20px;
     }
+    p {
+    margin: 0;
+    display: inline-block;
+}
 </style>
