@@ -223,10 +223,10 @@ The following sample demonstrates how to use the afterImageDelete event in Rich 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/remove-url/tagHelper %}
+{% include code-snippet/rich-text-editor/remove-url-server/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/remove-url/controller.cs %}
+{% include code-snippet/rich-text-editor/remove-url-server/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -234,10 +234,10 @@ The following sample demonstrates how to use the afterImageDelete event in Rich 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/remove-url/razor %}
+{% include code-snippet/rich-text-editor/remove-url-server/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/remove-url/controller.cs %}
+{% include code-snippet/rich-text-editor/remove-url-server/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
