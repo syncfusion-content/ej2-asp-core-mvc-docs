@@ -6,7 +6,7 @@ public ActionResult IsChecked()
 {
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -17,7 +17,7 @@ public ActionResult IsChecked()
         });
         BlocksData.Add(new Block
         {
-                Type = "CheckList",
+                Type = BlockType.Checklist,
                 Content = new List<object>()
                 {
                         new
@@ -26,11 +26,11 @@ public ActionResult IsChecked()
                                 content = "Completed task (checked)"
                         }
                 },
-                IsChecked = true
+                Props = new { isChecked = true }
         });
         BlocksData.Add(new Block
         {
-                Type = "CheckList",
+                Type = BlockType.Checklist,
                 Content = new List<object>()
                 {
                         new
@@ -39,11 +39,11 @@ public ActionResult IsChecked()
                                 content = "Pending task (unchecked)"
                         }
                 },
-                IsChecked = false
+                Props = new { isChecked = false }
         });
         BlocksData.Add(new Block
         {
-                Type = "CheckList",
+                Type = BlockType.Checklist,
                 Content = new List<object>()
                 {
                         new
@@ -52,11 +52,11 @@ public ActionResult IsChecked()
                                 content = "High priority task"
                         }
                 },
-                IsChecked = true
+                Props = new { isChecked = true }
         });
         BlocksData.Add(new Block
         {
-                Type = "CheckList",
+                Type = BlockType.CheckList,
                 Content = new List<object>()
                 {
                         new
@@ -65,7 +65,7 @@ public ActionResult IsChecked()
                                 content = "Low priority task"
                         }
                 },
-                IsChecked = false
+                Props = new { isChecked = false }
         });
         ViewBag.BlocksData = BlocksData;
         return View();

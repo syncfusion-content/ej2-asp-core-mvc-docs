@@ -7,7 +7,8 @@ public ActionResult Appearance()
         BlocksData.Add(new Block
         {
                 Id = "title-block",
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1 },
                 Content = new List<object>()
                 {
                         new
@@ -20,7 +21,7 @@ public ActionResult Appearance()
         BlocksData.Add(new Block
         {
                 Id = "intro-block",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -34,7 +35,8 @@ public ActionResult Appearance()
         BlocksData.Add(new Block
         {
                 Id = "features-heading",
-                Type = "Heading2",
+                Type = BlockType.Heading,
+                Props = new { level = 2 },
                 Content = new List<object>()
                 {
                         new
@@ -47,7 +49,7 @@ public ActionResult Appearance()
         BlocksData.Add(new Block
         {
                 Id = "theme-list-1",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new
@@ -60,7 +62,7 @@ public ActionResult Appearance()
         BlocksData.Add(new Block
         {
                 Id = "readonly-info",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new

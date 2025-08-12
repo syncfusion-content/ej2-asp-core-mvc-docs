@@ -7,7 +7,8 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "title-block",
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1},
                 Content = new List<object>()
                 {
                         new
@@ -20,7 +21,7 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "intro-paragraph",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -33,7 +34,8 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "features-heading",
-                Type = "Heading2",
+                Type = BlockType.Heading,
+                Props = new { level = 2},
                 Content = new List<object>()
                 {
                         new
@@ -46,7 +48,7 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "features-list",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new
@@ -59,7 +61,7 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "features-list-2",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new
@@ -72,7 +74,7 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "features-list-3",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new
@@ -85,7 +87,7 @@ public ActionResult Data()
         BlocksData.Add(new Block
         {
                 Id = "code-example",
-                Type = "Code",
+                Type = BlockType.Code,
                 Content = new List<object>()
                 {
                         new

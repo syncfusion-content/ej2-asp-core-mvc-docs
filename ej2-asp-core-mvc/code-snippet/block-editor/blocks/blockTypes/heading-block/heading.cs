@@ -6,7 +6,8 @@ public ActionResult Heading()
 {
         BlocksData.Add(new Block
         {
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1 },
                 Content = new List<object>()
                 {
                         new 
@@ -18,7 +19,8 @@ public ActionResult Heading()
         });
         BlocksData.Add(new Block
         {
-                Type = "Heading2",
+                Type = BlockType.Heading,
+                Props = new { level = 2 },
                 Content = new List<object>()
                 {
                         new 
@@ -30,7 +32,8 @@ public ActionResult Heading()
         });
         BlocksData.Add(new Block
         {
-                Type = "Heading3",
+                Type = BlockType.Heading,
+                Props = new { level = 3 },
                 Content = new List<object>()
                 {
                         new 
@@ -42,7 +45,8 @@ public ActionResult Heading()
         });
         BlocksData.Add(new Block
         {
-                Type = "Heading4",
+                Type = BlockType.Heading,
+                Props = new { level = 4 },
                 Content = new List<object>()
                 {
                         new 
