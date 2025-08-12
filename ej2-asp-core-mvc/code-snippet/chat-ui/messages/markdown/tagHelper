@@ -12,7 +12,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
 <script>
-    declare var DOMPurify: any;
     var currentUserModel = @Html.Raw(JsonConvert.SerializeObject(Model.CurrentUserModel));
     var michaleUserModel = @Html.Raw(JsonConvert.SerializeObject(Model.MichaleUserModel));
 
@@ -29,7 +28,6 @@
         chatUIObj = document.getElementById('markdown').ej2_instances[0];
         chatUIObj.messages = chatMessages;
         chatUIObj.suggestions = suggestions.map(function (s) { return s.DisplayText; });
-        chatUIObj.refresh();
     }
 
     function onMessageSend(args) {
@@ -44,7 +42,6 @@
         };
         chatMessages.push(newMessage);
         chatUIObj.messages = chatMessages;
-        chatUIObj.refresh();
     }
 </script>
 
@@ -57,5 +54,9 @@
 
     .control-section.chat-ui {
         padding: 20px;
+    }
+    p {
+        margin: 0;
+        display: inline-block;
     }
 </style>
