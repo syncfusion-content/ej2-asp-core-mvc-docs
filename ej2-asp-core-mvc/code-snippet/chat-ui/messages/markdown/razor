@@ -1,0 +1,60 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2
+@using Newtonsoft.Json
+
+<div class="control-section chat-ui">
+    <div class="markdown-chatui">
+        @Html.EJS().ChatUI("markdown").HeaderText("Chat UI with Markdown").User((ChatUIUser)ViewBag.CurrentUserModel).Created("onCreated").MessageSend("onMessageSend").Render()
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+<script>
+    declare var DOMPurify: any;
+    var currentUserModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.CurrentUserModel));
+    var michaleUserModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.MichaleUserModel));
+
+    var suggestions = @Html.Raw(JsonConvert.SerializeObject(ViewBag.Suggestions));
+
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(ViewBag.ChatMessagesData));
+    chatMessages.forEach(function (message) {
+        message.timeStamp = new Date(message.timeStamp);
+        message.text = marked.parse(message.text);
+    });
+
+    var chatUIObj;
+    function onCreated() {
+        chatUIObj = ej.base.getInstance(document.getElementById('markdown'), ejs.interactivechat.ChatUI);
+        chatUIObj.messages = chatMessages;
+        chatUIObj.suggestions = suggestions.map(function (s) { return s.DisplayText; });
+        chatUIObj.dataBind();
+    }
+
+    function onMessageSend(args) {
+        args.cancel = true;
+        var suggestion = suggestions.find(function (s) { return s.DisplayText === args.message.text; });
+        var messageText = suggestion ? suggestion.MarkdownText : args.message.text;
+        var parsedText = DOMPurify.sanitize(marked.parse(messageText));
+        var newMessage = {
+            text: parsedText,
+            author: currentUserModel,
+            timeStamp: new Date()
+        };
+        chatMessages.push(newMessage);
+        chatUIObj.messages = chatMessages;
+        chatUIObj.dataBind();
+    }
+</script>
+
+<style>
+    .markdown-chatui {
+        height: 380px;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .control-section.chat-ui {
+        padding: 20px;
+    }
+</style>
