@@ -150,3 +150,5 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 | **Destroy event** | **Event:** *Destroy* <br/>`@Html.EJ().Autocomplete("autocomplete").Destroy("onDestroy")` |**Event:** *Destroyed* <br/>`@Html.EJS().Autocomplete("autocomplete").Destroyed("ondestroy").Render()`|
 | **Focus out event** | **Event**: *FocusOut*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusOut("onFocusOut")`| **Event:** *Blur* <br/>`@Html.EJS().Autocomplete("autocomplete").Blur("onBlur").Render()` |
 | **Focus in event** | **Event** : *FocusIn*<br/>`@Html.EJ().Autocomplete("autocomplete").FocusIn("onFocus")` | **Event:** *Focus* <br/>`@Html.EJS().Autocomplete("autocomplete").FocusIn("onFocus").Render()` |
+
+
