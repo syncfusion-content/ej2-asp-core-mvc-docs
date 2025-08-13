@@ -409,6 +409,55 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 {% endtabs %}
 {% endif %}
 
+### How to enable or disable the default tooltip for shapes in the Symbol Palette
+
+The `showIdAsTooltip` property lets you control whether the default tooltip appears for symbols in the Symbol Palette. Set this property to false to disable the default tooltip, or to true to enable it. If showIdAsTooltip is not explicitly set, the default tooltip will be displayed.
+To control tooltip behavior for each symbol, use the `getSymbolInfo` property. This allows you to selectively enable or disable tooltips for specific symbols within the palette, providing flexibility in how tooltips are presented.
+
+The following code example demonstrates how to enable or disable the default tooltip for shapes in the Symbol Palette.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+```javascript
+
+ function getSymbolInfo(symbol) {
+    //custom tooltip will be shown for the rectangle shape
+    if (symbol.id === 'rectangle') {
+        return { showIdAsTooltip: true};
+    } 
+    //default tooltip will be shown for the plus shapes
+    if(symbol.id === 'plus') {
+        return { showIdAsTooltip: true };
+    }
+    //default tooltip will not be shown for the triangle shape
+    if (symbol.id === 'triangle') {
+      return { showIdAsTooltip: false };
+    }
+    return { width: 50, height: 50 };
+}
+
+```
+
+N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
+
 
 ### How to provide different tooltip for Symbol palette and diagram elements.
 
