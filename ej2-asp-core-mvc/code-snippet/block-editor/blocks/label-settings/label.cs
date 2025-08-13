@@ -8,7 +8,8 @@ public ActionResult Label()
 {
         BlocksData.Add(new Block
         {
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1},
                 Content = new List<object>()
                 {
                         new
@@ -20,7 +21,7 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -32,7 +33,7 @@ public ActionResult Label()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -43,7 +44,7 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "bug"
+                                props = new { labelId = "bug" }
                         },
                         new
                         {
@@ -53,13 +54,13 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "high"
+                                props = new { labelId = "high" }
                         }
                 }
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -70,7 +71,7 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "task"
+                                props = new { labelId = "task" }
                         },
                         new
                         {
@@ -80,13 +81,13 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "medium"
+                                props = new { labelId = "medium" }
                         }
                 }
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -97,7 +98,7 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "feature"
+                                props = new { labelId = "feature" }
                         },
                         new
                         {
@@ -107,7 +108,7 @@ public ActionResult Label()
                         new
                         {
                                 type = "Label",
-                                id = "critical"
+                                props = new { labelId = "critical" }
                         }
                 }
         });

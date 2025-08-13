@@ -5,7 +5,8 @@ public List<Block> BlocksData { get; set; } = new List<Block>();
 public ActionResult Callout()
 {
         BlocksData.Add(new Block() {
-                Type = "Callout",
+                Type = BlockType.Callout,
+                Props= new {
                 Children = new List<Block>()
                 {
                         new Block()
@@ -20,6 +21,7 @@ public ActionResult Callout()
                                         }
                                 }
                         }
+                }
                 }
         });
         ViewBag.BlocksData = BlocksData;

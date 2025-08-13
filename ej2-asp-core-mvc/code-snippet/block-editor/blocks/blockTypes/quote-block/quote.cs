@@ -6,7 +6,7 @@ public ActionResult Quote()
 {
         BlocksData.Add(new Block
         {
-                Type = "Quote",
+                Type = BlockType.Quote,
                 Content = new List<object>()
                 {
                         new 

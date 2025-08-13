@@ -6,7 +6,7 @@ public ActionResult Indent()
 {
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -18,7 +18,7 @@ public ActionResult Indent()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -31,7 +31,7 @@ public ActionResult Indent()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -44,7 +44,7 @@ public ActionResult Indent()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new

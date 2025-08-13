@@ -7,14 +7,16 @@ public ActionResult Children()
         BlocksData.Add(new Block
         {
                 Id = "security-callout",
-                Type = "Callout",
+                Type = BlockType.Callout,
+                Props = new {
                 Children = new List<Block>()
                 {
                         new Block()
                         {
                                 Id = "security-title",
                                 Parentid = "security-callout",
-                                Type = "Heading3",
+                                Type = BlockType.Heading,
+                                Props = new { level = 3 },
                                 Content = new List<object>()
                                 {
                                         new
@@ -25,12 +27,13 @@ public ActionResult Children()
                                 }
                         }
                 }
+                }
         });
         BlocksData.Add(new Block
         {
                 Id = "security-warning",
                 ParentId = "security-callout",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -45,7 +48,7 @@ public ActionResult Children()
         {
                 Id = "security-tips",
                 ParentId = "security-callout",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Indent = 1,
                 Content = new List<object>()
                 {
@@ -60,7 +63,7 @@ public ActionResult Children()
         {
                 Id = "security-tips-2",
                 ParentId = "security-callout",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Indent = 1,
                 Content = new List<object>()
                 {
@@ -75,7 +78,7 @@ public ActionResult Children()
         {
                 Id = "security-tips-3",
                 ParentId = "security-callout",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Indent = 1,
                 Content = new List<object>()
                 {
