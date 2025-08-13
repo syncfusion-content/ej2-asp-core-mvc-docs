@@ -1,0 +1,62 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+
+<div class="control-section chat-ui">
+    <div class="markdown-chatui">
+        <ejs-chatui id="markdown" headerText="Chat UI with Markdown" created="onCreated" messageSend="onMessageSend">
+            <e-chatui-user id="@Model.CurrentUserModel.Id" user="@Model.CurrentUserModel.User"></e-chatui-user>
+        </ejs-chatui>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.0/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.0/purify.min.js"></script>
+<script>
+    var currentUserModel = @Html.Raw(JsonConvert.SerializeObject(Model.CurrentUserModel));
+    var michaleUserModel = @Html.Raw(JsonConvert.SerializeObject(Model.MichaleUserModel));
+
+    var suggestions = @Html.Raw(JsonConvert.SerializeObject(Model.Suggestions));
+
+    var chatMessages = @Html.Raw(JsonConvert.SerializeObject(Model.ChatMessagesData));
+    chatMessages.forEach(function (message) {
+        message.timeStamp = new Date(message.timeStamp);
+        message.text = marked.parse(message.text);
+    });
+
+    var chatUIObj;
+    function onCreated() {
+        chatUIObj = document.getElementById('markdown').ej2_instances[0];
+        chatUIObj.messages = chatMessages;
+        chatUIObj.suggestions = suggestions.map(function (s) { return s.DisplayText; });
+    }
+
+    function onMessageSend(args) {
+        args.cancel = true;
+        var suggestion = suggestions.find(function (s) { return s.DisplayText === args.message.text; });
+        var messageText = suggestion ? suggestion.MarkdownText : args.message.text;
+        var parsedText = DOMPurify.sanitize(marked.parse(messageText));
+        var newMessage = {
+            text: parsedText,
+            author: currentUserModel,
+            timeStamp: new Date()
+        };
+        chatMessages.push(newMessage);
+        chatUIObj.messages = chatMessages;
+    }
+</script>
+
+<style>
+    .markdown-chatui {
+        height: 380px;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .control-section.chat-ui {
+        padding: 20px;
+    }
+    p {
+        margin: 0;
+        display: inline-block;
+    }
+</style>
