@@ -388,6 +388,8 @@ namespace PDFViewerSample.Pages
         public string documentLiveCount { get; set; }
         public string annotationDataFormat { get; set; }
 	    public string importedData { get; set; }
+        public bool isClientLoading { get; set; }​
+        public string organizePages { get; set; }
     }
 }
 {% endhighlight %}
