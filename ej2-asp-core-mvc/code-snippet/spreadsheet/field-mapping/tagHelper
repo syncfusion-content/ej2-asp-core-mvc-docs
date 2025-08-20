@@ -1,9 +1,0 @@
-<ejs-spreadsheet id="spreadsheet" openUrl="Home/Open" saveUrl="Home/Save">
-            <e-spreadsheet-sheets>
-                <e-spreadsheet-sheet name="Price Details">
-                    <e-spreadsheet-ranges>
-                        <e-spreadsheet-range dataSource="ViewBag.DefaultData" fieldsOrder="ViewBag.Order"></e-spreadsheet-range>
-                    </e-spreadsheet-ranges>
-                </e-spreadsheet-sheet>
-            </e-spreadsheet-sheets>
-</ejs-spreadsheet>

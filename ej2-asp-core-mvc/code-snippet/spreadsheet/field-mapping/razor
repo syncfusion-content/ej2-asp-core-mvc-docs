@@ -1,5 +1,0 @@
-@Html.EJS().Spreadsheet("spreadsheet").Sheets(sheet => {
-    sheet.Name("Price Details").Ranges(ranges => {
-        ranges.DataSource((IEnumerable<object>)ViewBag.DefaultData).FieldsOrder(ViewBag.Order).Add();
-    }).Add();
-}).Render()
