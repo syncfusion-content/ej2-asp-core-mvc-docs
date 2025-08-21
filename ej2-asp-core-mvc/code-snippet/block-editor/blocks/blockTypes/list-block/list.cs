@@ -39,7 +39,7 @@ public ActionResult List()
                                 content = "Review documentation"
                         }
                 },
-                Props = new { isChecked = true },
+                Props = new { isChecked = true }
         });
         BlocksData.Add(new Block
         {
@@ -52,7 +52,7 @@ public ActionResult List()
                                 content = "Implement drag and drop functionality"
                         }
                 },
-                Props = new { isChecked = false },
+                Props = new { isChecked = false }
         });
         ViewBag.BlocksData = BlocksData;
         return View();

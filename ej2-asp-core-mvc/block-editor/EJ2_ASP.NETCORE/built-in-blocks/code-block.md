@@ -1,0 +1,75 @@
+---
+layout: post
+title: Code Block in ##Platform_Name## Block Editor control | Syncfusion
+description: Checkout and learn about Code Block with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Block Editor
+publishingplatform: ##Platform_Name##
+documentation: ug
+domainurl: ##DomainURL##
+---
+
+# Code Blocks in ##Platform_Name## Block Editor control
+
+You can render Code blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Code`. By setting the `props` property, you can configure the languages available for syntax highlighting and the default language. The default language is `javascript`.
+
+## Configure code properties
+
+For Code blocks, you can configure syntax highlighting and language options using the [props](../api/blockeditor/blockModel/) property.
+
+The code [props](../api/blockeditor/blockModel/) property supports the following options:
+
+| Property | Description | Default Value |
+|----------|-------------|---------------|
+| [languages](../api/blockeditor/codeSettingsModel/#languages) | Array of language options for syntax highlighting | [] |
+| [defaultLanguage](../api/blockeditor/codeSettingsModel/#defaultlanguage) | The default language to use for syntax highlighting | 'javascript' |
+
+Each language object in the `languages` array should have:
+- [language](../api/blockeditor/codeLanguageModel/#language): The language value used for syntax highlighting
+- [label](../api/blockeditor/codeLanguageModel/#label): The display name shown in the language selector
+
+#### Type & Props
+```typescript
+// Adding Code block
+{
+    Type = BlockType.Code,
+    Content = new List<object>()
+    {
+            new 
+            {
+                    type = "Text",
+                    content = "function greeting() {\n  console.log(\"Hello, world!\");\n}"
+            }
+    },
+    Props = new
+    {
+            defaultLanguage = "javascript",
+            languages = new List<object>()
+            {
+                    new
+                    {
+                            label = "JavaScript",
+                            language = "javascript"
+                    },
+                    new
+                    {
+                            label = "TypeScript",
+                            language = "typescript"
+                    }
+            }
+    }
+    }
+```
+
+Below example illustrates how to render the different code block in the Block Editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Code.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/code-block/code.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Code Block](images/block-code.png)

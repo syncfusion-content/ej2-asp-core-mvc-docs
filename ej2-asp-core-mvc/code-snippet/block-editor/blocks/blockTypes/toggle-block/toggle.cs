@@ -6,7 +6,7 @@ public ActionResult Toggle()
 {
         BlocksData.Add(new Block
         {
-                Type = "ToggleHeading1",
+                Type = "CollapsibleHeading",
                 Content = new List<object>()
                 {
                         new
@@ -15,8 +15,11 @@ public ActionResult Toggle()
                                 content = "Collapsible Section"
                         }
                 },
-                IsExpanded = true,
-                Children = new List<Block>()
+                Props= new
+                {
+                        level=1,
+                        IsExpanded = true,
+                        Children = new List<Block>()
                 {
                         new Block()
                         {
@@ -31,10 +34,11 @@ public ActionResult Toggle()
                                 }
                         }
                 }
+                }
         });
         BlocksData.Add(new Block
         {
-                Type = "ToggleParagraph",
+                Type = "CollapsibleParagraph",
                 Content = new List<object>()
                 {
                         new
@@ -43,8 +47,10 @@ public ActionResult Toggle()
                                 content = "Toggle paragraph section"
                         }
                 },
-                IsExpanded = false,
-                Children = new List<Block>()
+                Props = new
+                {
+                        IsExpanded = false,
+                        Children = new List<Block>()
                 {
                         new Block()
                         {
@@ -58,6 +64,7 @@ public ActionResult Toggle()
                                         }
                                 }
                         }
+                }
                 }
         });
         ViewBag.BlocksData = BlocksData;
