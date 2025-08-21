@@ -51,7 +51,7 @@ You can change the border color for the spanned cells by the using [queryCellInf
 
 ## column spanning using enableColumnSpan property    
 
-The Syncfusion ASP.NET Core Grid introduces a simplified approach to horizontally merge cells using the `EnableColumnSpan` property. 
+The Syncfusion ASP.NET Core Grid introduces a simplified approach to horizontally merge cells using the `enableColumnSpan` property. 
 
 When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. These merged cells are visually combined into a single cell, improving readability.
 

@@ -1,31 +1,34 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="450px" width="auto" gridLines="Both" allowSorting="true" enableHover="false" allowSelection="false" enableRowSpan="true" allowTextWrap="true">
-    <e-grid-textwrapsettings wrapMode="Content"></e-grid-textwrapsettings>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableHover="false" allowSelection="false" allowPaging="true" rowDataBound="rowDataBound" height="210">
+    <e-grid-pagesettings pageSize="6"></e-grid-pagesettings>
     <e-grid-columns>
-        <e-grid-column field="Channel" headerText="Channel" width="150" freeze="Left" isPrimaryKey="true"></e-grid-column>
-        <e-grid-column field="Genre" headerText="Genre" width="120" freeze="Left"></e-grid-column>
-        <e-grid-column field="Program12AM" headerText="12 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program1AM" headerText="1 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program2AM" headerText="2 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program3AM" headerText="3 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program4AM" headerText="4 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program5AM" headerText="5 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program6AM" headerText="6 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program7AM" headerText="7 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program8AM" headerText="8 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program9AM" headerText="9 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program10AM" headerText="10 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program11AM" headerText="11 AM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program12PM" headerText="12 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program1PM" headerText="1 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program2PM" headerText="2 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program3PM" headerText="3 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program4PM" headerText="4 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program5PM" headerText="5 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program6PM" headerText="6 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program7PM" headerText="7 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program8PM" headerText="8 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program9PM" headerText="9 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program10PM" headerText="10 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
-        <e-grid-column field="Program11PM" headerText="11 PM" width="110" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="80" format='C2'></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
     </e-grid-columns>
 </ejs-grid>
+
+<script>
+function rowDataBound(args) {
+    if (args.data['Freight'] < 10) {
+        args.row.classList.add('below-30');
+    } else if (args.data['Freight'] < 80) {
+        args.row.classList.add('below-80');
+    } else {
+        args.row.classList.add('above-80');
+    }
+}
+</script>
+<style>
+    .below-10 {
+        background-color:aqua;
+    }
+
+    .below-80 {
+        background-color: aquamarine;
+    }
+
+    .above-80 {
+        background-color: orange;
+    }
+</style>

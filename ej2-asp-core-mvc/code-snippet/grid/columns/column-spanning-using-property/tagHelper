@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  height="450px" width="auto" allowSorting="true" allowTextWrap="true" gridLines="Both">
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  height="450px" width="auto" enableColumnSpan="true" allowSorting="true" allowTextWrap="true" gridLines="Both">
     <e-grid-textwrapsettings wrapMode="Content"></e-grid-textwrapsettings>
     <e-grid-columns>
         <e-grid-column field="Name" headerText="Doctor Name" width="170" textAlign="Center" freeze="Left" template="#template"></e-grid-column>
@@ -22,10 +22,6 @@
 </script>
 
 <style>
-    body {
-        touch-action: none;
-    }
-
     .doctor-designation {
         font-size: 12px;
         color: #7f8c8d;
