@@ -2,7 +2,7 @@
 layout: post
 title: Embed Blocks in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about Embed Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: ej2-asp-core-mvc
 control: Block Editor
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -15,13 +15,13 @@ Block Editor supports addition of embeds to help you organize, showcase contents
 
 ## Image Block
 
-You can use the `image` block to showcase an image content within your editor.
+You can use the `Image` block to showcase an image content within your editor.
 
 ### Configure image block
 
-You can render Image blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Image`. By setting the `Props` property, you can configure the image source, allowed file types, and display dimensions etc.
+You can render Image blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Image`. By setting the `Props` property, you can configure the image source, allowed file types, and display dimensions etc.
 
-The image [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
+The image [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|

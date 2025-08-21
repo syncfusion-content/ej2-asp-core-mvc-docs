@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Inline Content  in ##Platform_Name## Block Editor control
 
-Content in the Block Editor is managed through the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content) property of blocks.
+Content in the Block Editor is managed through the [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content) property of blocks.
 
-Each content can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
+Each content can have properties like `id`, `type`, `content`, `styles`, and more to customize the appearance and behavior of your text.
 
 ### Setting content type
 
-You can specify the type of content using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property. The Block Editor supports several content types through the `ContentType` enum:
+You can specify the type of content using the `type` property. The Block Editor supports several content types through the `ContentType` enum:
 
 | Built-in Content Type  | Description                         |
 |------------------------|-------------------------------------|
@@ -77,9 +77,9 @@ You can configure hyperlink content by setting the type property to `Link`. By s
 
 ### Configure link properties
 
-Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html)  property.
+Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the link [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html)  property.
 
-The link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html)  property supports the following options:
+The link [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html)  property supports the following options:
 
 | Option       | Description                                                                 | Default Value |
 |--------------|-----------------------------------------------------------------------------|---------------|
@@ -109,7 +109,7 @@ The link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Blo
 
 ## Configure Label
 
-You can render labels by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Label`. Additionally, by configuring the `props` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
+You can render labels by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Label`. Additionally, by configuring the `props` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
 
 ### Built-in items
 
@@ -180,7 +180,7 @@ The below sample demonstrates the customization of labels in the Block Editor.
 
 Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the type property to `Mention`.
 
-Mentions are typically triggered by the `@` character and are linked to the `Users` collection defined in the Block Editor.
+Mentions are typically triggered by the `@` character and are linked to the `users` collection defined in the Block Editor.
 
 #### Type
 
@@ -201,9 +201,9 @@ Mentions are typically triggered by the `@` character and are linked to the `Use
 
 ## Setting content styles
 
-The Block Editor enables you to customize the appearance of Text, Link, and Code elements using the `Styles` property. This property offers rich formatting options to enhance the visual presentation of these content types.
+The Block Editor enables you to customize the appearance of Text, Link, and Code elements using the `styles` property. This property offers rich formatting options to enhance the visual presentation of these content types.
 
-The `Styles`property supports the following formatting options:
+The `styles`property supports the following formatting options:
 
 | Style Property | Description | Default Value |
 |---------------|-------------|---------------|

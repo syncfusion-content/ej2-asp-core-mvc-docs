@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Lists in ##Platform_Name## Block Editor control
 
-List blocks in the BlockEditor component are used to organize content into structured lists. You can render List blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+List blocks in the BlockEditor component are used to organize content into structured lists. You can render List blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 
 ## Configure bullet list 
 
-You can render Bullet List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`. This block type is used for unordered lists.
+You can render Bullet List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`. This block type is used for unordered lists.
 
 #### Type
 
@@ -36,7 +36,7 @@ You can render Bullet List block by setting the [Type](https://help.syncfusion.c
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
+You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
 
 ```typescript
 // Adding placeholder value 
@@ -56,7 +56,7 @@ You can configure placeholder text for block using the [Placeholder](https://hel
 
 ## Configure numbered list
 
-You can render Numbered List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as  `NumberedList`.This block type is used for ordered lists.
+You can render Numbered List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as  `NumberedList`.This block type is used for ordered lists.
 
 #### Type
 
@@ -77,7 +77,7 @@ You can render Numbered List block by setting the [Type](https://help.syncfusion
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
+You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
 
 ```typescript
 // Adding placeholder value 
@@ -97,7 +97,7 @@ You can configure placeholder text for block using the [Placeholder](https://hel
 
 ## Configure check list
 
-You can render Check List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Checklist`. This block type is used for creating interactive to-do lists.
+You can render Check List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Checklist`. This block type is used for creating interactive to-do lists.
 
 #### Type
 
@@ -118,9 +118,9 @@ You can render Check List block by setting the [Type](https://help.syncfusion.co
 
 ### Configure checked state
 
-For blocks that support selection states such as `CheckList`, you can configure the checked state using the `props` property with [IsChecked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked).
+For blocks that support selection states such as `CheckList`, you can configure the checked state using the `props` property with [isChecked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked).
 
-By default, the [IsChecked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked) property is set to `false`.
+By default, the [isChecked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked) property is set to `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,7 +135,7 @@ By default, the [IsChecked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for check list is  `To Do`.
+You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for check list is  `To Do`.
 
 ```typescript
 // Adding placeholder value 
