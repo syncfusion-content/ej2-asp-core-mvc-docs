@@ -1,0 +1,33 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableColumnSpan(true).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).AllowSorting(true).AllowTextWrap(true).TextWrapSettings(ts => ts.WrapMode(Syncfusion.EJ2.Grids.WrapMode.Content)).Height(450).Width("auto").Columns(col =>
+{
+  col.Field("Name").HeaderText("Doctor Name").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Template("#template").Add();
+  col.Field("Time9AM").HeaderText("9:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time10AM").HeaderText("10:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time11AM").HeaderText("11:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time12PM").HeaderText("12:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time1PM").HeaderText("1:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time2PM").HeaderText("2:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time3PM").HeaderText("3:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time4PM").HeaderText("4:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time5PM").HeaderText("5:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time6PM").HeaderText("6:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+  col.Field("Time7PM").HeaderText("7:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+}).Render()
+
+<!-- Template for Doctor Name Column -->
+<script id="template" type="text/x-template">
+  <div class="doctor-name">${Name}</div>
+  <div class="doctor-designation">${Designation}</div>
+</script>
+
+<style>
+  .doctor-designation {
+    font-size: 12px;
+    color: #7f8c8d;
+    font-weight: normal;
+  }
+
+  .doctor-name {
+    margin-bottom: 5px;
+  }
+</style>   

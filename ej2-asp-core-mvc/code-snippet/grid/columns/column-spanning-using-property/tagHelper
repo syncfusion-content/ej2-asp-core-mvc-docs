@@ -1,0 +1,38 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  height="450px" width="auto" allowSorting="true" allowTextWrap="true" gridLines="Both">
+    <e-grid-textwrapsettings wrapMode="Content"></e-grid-textwrapsettings>
+    <e-grid-columns>
+        <e-grid-column field="Name" headerText="Doctor Name" width="170" textAlign="Center" freeze="Left" template="#template"></e-grid-column>
+        <e-grid-column field="Time9AM" headerText="9:00 AM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time10AM" headerText="10:00 AM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time11AM" headerText="11:00 AM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time12PM" headerText="12:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time1PM" headerText="1:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time2PM" headerText="2:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time3PM" headerText="3:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time4PM" headerText="4:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time5PM" headerText="5:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time6PM" headerText="6:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+        <e-grid-column field="Time7PM" headerText="7:00 PM" width="120" textAlign="Center" allowSorting="false"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<!-- Template for Doctor Name Column -->
+<script id="template" type="text/x-template">
+    <div class="doctor-name">${Name}</div>
+    <div class="doctor-designation">${Designation}</div>
+</script>
+
+<style>
+    body {
+        touch-action: none;
+    }
+
+    .doctor-designation {
+        font-size: 12px;
+        color: #7f8c8d;
+        font-weight: normal;
+    }
+
+    .doctor-name {
+        margin-bottom: 5px;
+    }
+</style>

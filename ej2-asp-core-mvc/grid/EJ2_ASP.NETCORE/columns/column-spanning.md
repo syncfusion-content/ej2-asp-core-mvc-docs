@@ -48,3 +48,37 @@ You can change the border color for the spanned cells by the using [queryCellInf
     2. Infinite scrolling
     3. Grouping
     4. Autofill
+
+## column spanning using enableColumnSpan property    
+
+The Syncfusion ASP.NET Core Grid introduces a simplified approach to horizontally merge cells using the `EnableColumnSpan` property. 
+
+When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. These merged cells are visually combined into a single cell, improving readability.
+
+Here is an example of how to use the `enableColumnSpan` property to merge cells horizontally:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/column-spanning-using-property/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnspanning.cs" %}
+{% include code-snippet/grid/columns/column-spanning-using-property/columnspanning.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Column Spanning Using Property](../images/column-spanning/column-spanning-using-property.png)
+
+> You can also control spanning at the column level. To prevent merging for specific columns, set `enableColumnSpan` to **false** in the column definition.
+
+### Limitation
+
+* Virtualization
+* Infinite Scrolling
+* Lazy Load Grouping
+* Row Drag and Drop
+* Column Virtualization
+* Detail Template
+* Editing
+* Export
+* Foreign Key
+* Hierarchy Grid   

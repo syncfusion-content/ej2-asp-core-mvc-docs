@@ -1,0 +1,29 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).EnableRowSpan(true).AllowSorting(true).AllowTextWrap(true).AllowSelection(false).EnableHover(false).TextWrapSettings(ts => ts.WrapMode(Syncfusion.EJ2.Grids.WrapMode.Content)).Height(450).Width("auto").Columns(col =>
+    {
+        col.Field("Channel").HeaderText("Channel").Width("150").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).IsPrimaryKey(true).Add();
+        col.Field("Genre").HeaderText("Genre").Width("120").Freeze(Syncfusion.EJ2.Grids.FreezeDirection.Left).Add();
+        col.Field("Program12AM").HeaderText("12 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program1AM").HeaderText("1 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program2AM").HeaderText("2 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program3AM").HeaderText("3 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program4AM").HeaderText("4 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program5AM").HeaderText("5 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program6AM").HeaderText("6 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program7AM").HeaderText("7 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program8AM").HeaderText("8 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program9AM").HeaderText("9 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program10AM").HeaderText("10 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program11AM").HeaderText("11 AM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program12PM").HeaderText("12 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program1PM").HeaderText("1 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program2PM").HeaderText("2 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program3PM").HeaderText("3 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program4PM").HeaderText("4 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program5PM").HeaderText("5 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program6PM").HeaderText("6 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program7PM").HeaderText("7 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program8PM").HeaderText("8 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program9PM").HeaderText("9 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program10PM").HeaderText("10 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+        col.Field("Program11PM").HeaderText("11 PM").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).AllowSorting(false).Add();
+    }).Render()
