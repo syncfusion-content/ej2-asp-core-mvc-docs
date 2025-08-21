@@ -70,5 +70,3 @@ You can use the [mentionSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 {% include code-snippet/chat-ui/mention/mention-select/mention-select.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![mention-select](images/mention-select.png)
