@@ -212,7 +212,7 @@ The `Styles`property supports the following formatting options:
 | underline | Adds an underline to the text | false |
 | strikethrough | Adds a line through the text | false |
 | color | Sets the text color (HEX or RGBA format) | '' |
-| bgColor | Sets the background color for the text | '' |
+| backgroundColor | Sets the background color for the text | '' |
 | superscript | Displays the text as superscript | false |
 | subscript | Displays the text as subscript | false |
 | uppercase | Converts the text to uppercase | false |
