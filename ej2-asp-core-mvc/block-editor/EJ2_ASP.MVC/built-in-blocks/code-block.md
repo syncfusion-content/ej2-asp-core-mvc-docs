@@ -11,22 +11,22 @@ domainurl: ##DomainURL##
 
 # Code Blocks in ##Platform_Name## Block Editor control
 
-You can render Code blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Code`. By setting the `props` property, you can configure the languages available for syntax highlighting and the default language. The default language is `javascript`.
+You can render Code blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Code`. By setting the `Props` property, you can configure the languages available for syntax highlighting and the default language. The default language is `javascript`.
 
 ## Configure code properties
 
-For Code blocks, you can configure syntax highlighting and language options using the [props](../api/blockeditor/blockModel/) property.
+For Code blocks, you can configure syntax highlighting and language options using the [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property.
 
-The code [props](../api/blockeditor/blockModel/) property supports the following options:
+The code [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| [languages](../api/blockeditor/codeSettingsModel/#languages) | Array of language options for syntax highlighting | [] |
-| [defaultLanguage](../api/blockeditor/codeSettingsModel/#defaultlanguage) | The default language to use for syntax highlighting | 'javascript' |
+| languages | Array of language options for syntax highlighting | [] |
+| defaultLanguage | The default language to use for syntax highlighting | 'javascript' |
 
 Each language object in the `languages` array should have:
-- [language](../api/blockeditor/codeLanguageModel/#language): The language value used for syntax highlighting
-- [label](../api/blockeditor/codeLanguageModel/#label): The display name shown in the language selector
+- `language`: The language value used for syntax highlighting
+- `label`: The display name shown in the language selector
 
 #### Type & Props
 ```typescript
@@ -65,7 +65,7 @@ Below example illustrates how to render the different code block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Code.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/code-block/code.cs %}

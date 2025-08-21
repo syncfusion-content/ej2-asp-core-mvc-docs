@@ -15,7 +15,7 @@ Typography blocks are essential for organizing and presenting text-based content
 
 ## Configure paragraph block
 
-You can render Paragraph blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
+You can render Paragraph blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
 #### Type 
 
@@ -38,7 +38,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/paragraph.cs %}
@@ -49,7 +49,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
+You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
 #### Type & Props
 
@@ -67,7 +67,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/placeholder/razor %}
+{% include code-snippet/block-editor/blocks/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
 {% include code-snippet/block-editor/blocks/placeholder/placeholder.cs %}
@@ -78,7 +78,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-You can render Heading blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+You can render Heading blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
 
 ### Configure levels
 
@@ -108,7 +108,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Heading.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/heading-block/heading.cs %}
@@ -119,7 +119,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{levels}`.
+You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{levels}`.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -134,7 +134,7 @@ You can configure placeholder text for block using the [placeholder](../api/bloc
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
@@ -142,13 +142,13 @@ You can configure the CollapsibleHeading using the property `level` inside the `
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel/#children) property. This property can be achieved through `props` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) property. This property can be achieved through `props` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ### Configure expanded state
 
-You can control whether a block is expanded or collapsed using the [isExpanded](../api/blockeditor/blockModel/#isexpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
+You can control whether a block is expanded or collapsed using the [IsExpanded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsExpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
 
 #### Type & Props
 
@@ -183,7 +183,7 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toggle.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
@@ -194,7 +194,7 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{levels}` and `Collapsible Paragraph` respectively.
+You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{levels}` and `Collapsible Paragraph` respectively.
 
 ```typescript
 // Adding placeholder value to collapsible heading
@@ -219,7 +219,7 @@ You can configure placeholder text for block using the [placeholder](../api/bloc
 
 ## Configure divider block
 
-Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Divider`.
+Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Divider`.
 
 #### Type & Props
 
@@ -258,7 +258,7 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Divider.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/divider-block/divider.cs %}
@@ -269,7 +269,7 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 
 ## Configure quote block
 
-You can render Quote blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
+You can render Quote blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
 
 #### Type & Props
 
@@ -292,7 +292,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Quote.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
@@ -303,7 +303,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](../api/blockeditor/blockModel/#placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
+You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
 
 ```typescript
 // Adding placeholder value to blocktype
@@ -315,7 +315,7 @@ You can configure placeholder text for block using the [placeholder](../api/bloc
 
 ## Configure callout block
 
-You can render Callout blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
+You can render Callout blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
 #### Type & Props
 
@@ -345,7 +345,7 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Callout.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
@@ -356,19 +356,19 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [children](../api/blockeditor/blockModel/#children) property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ### Configure parent id
 
-For proper hierarchy, you should ensure that the [parentId](../api/blockeditor/blockModel/#parentid) of each child block matches the [id](../api/blockeditor/blockModel/#id) of its parent block. This structure helps maintain the nested relationships within the editor.
+For proper hierarchy, you should ensure that the [ParentId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ParentId) of each child block matches the `Id` of its parent block. This structure helps maintain the nested relationships within the editor.
 
 The below sample demonstrates the configuration of children in the Block Editor using parentId.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/children/razor %}
+{% include code-snippet/block-editor/blocks/children/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Children.cs" %}
 {% include code-snippet/block-editor/blocks/children/children.cs %}

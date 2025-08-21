@@ -11,13 +11,13 @@ domainurl: ##DomainURL##
 
 # Blocks in ##Platform_Name## Block Editor control
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [blocks](../api/blockeditor/#blocks) property allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Blocks.html) property allows you to define and manage the content structure of your editor.
 
 ## Blocks
 
 Blocks are the fundamental building elements of the Block Editor. Each block represents a distinct content unit such as a `paragraph`, `heading`, `list`, or specialized content like `code snippets` or `images`. The Block Editor organizes content as a collection of `blocks`, allowing for better structure and formatting options.
 
-You can configure blocks with various properties such as [id](../api/blockeditor/blockModel/#id), [type](../api/blockeditor/blockModel/#type), [content](../api/blockeditor/blockModel/#content), [children](../api/blockeditor/blockModel/#children) and more to create rich, structured editor.
+You can configure blocks with various properties such as [Id](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Id), [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type), [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content), [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) and more to create rich, structured editor.
 
 ## Block types
 
@@ -40,13 +40,13 @@ The Block Editor supports multiple block types. Each block type offers different
 
 ## Configure indent
 
-You can specify the indentation level of a block using the [indent](../api/blockeditor/blockModel/#indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
+You can specify the indentation level of a block using the [Indent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Indent) property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
 
-By default, the [indent](../api/blockeditor/blockModel/#indent) property is set to `0`.
+By default, the [Indent](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Indent) property is set to `0`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/indent/tagHelper %}
+{% include code-snippet/block-editor/blocks/indent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Indent.cs" %}
 {% include code-snippet/block-editor/blocks/indent/indent.cs %}
@@ -57,13 +57,13 @@ By default, the [indent](../api/blockeditor/blockModel/#indent) property is set 
 
 ## Configure CSS Class
 
-You can apply custom styling to individual blocks using the [cssClass](../api/blockeditor/blockModel/#cssclass) property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_CssClass) property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/cssClass/tagHelper %}
+{% include code-snippet/block-editor/blocks/cssClass/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CssClass.cs" %}
 {% include code-snippet/block-editor/blocks/cssClass/cssclass.cs %}
@@ -74,11 +74,11 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 
 ## Configure templates
 
-The Block Editor allows you to use custom templates for specialized content using the [template](../api/blockeditor/blockModel/#template) property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the [Template](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Template)  property. Templates can be defined as strings, functions, or HTML elements.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Template.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}

@@ -19,9 +19,9 @@ You can use the `image` block to showcase an image content within your editor.
 
 ### Configure image block
 
-You can render Image blocks by setting the [type](../api/blockeditor/blockModel/#type) property as `Image`. By setting the `props` property, you can configure the image source, allowed file types, and display dimensions etc.
+You can render Image blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Image`. By setting the `Props` property, you can configure the image source, allowed file types, and display dimensions etc.
 
-The image [props](../api/blockeditor/blockModel/) property supports the following options:
+The image [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -67,7 +67,7 @@ The below sample demonstrates the configuration of image block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/image-block/razor %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-block/image.cs %}
