@@ -18,7 +18,7 @@ public ActionResult Placeholder()
                 Content = new List<object>(){
                         new{
                                 type = "Text",
-                                placeholder = "Start typing your notes or press \"/\" for commands..."
+                                props= new { placeholder = "Start typing your notes or press \"/\" for commands..." }
                         }
                 }
         });
