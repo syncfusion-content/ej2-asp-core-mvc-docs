@@ -14,8 +14,8 @@ documentation: ug
 
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an autocomplete dropdown for selecting users. The following sections explain how to configure mentions
 
-## Configure mention users
-You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionUsers) property to define an array of users for the mention suggestion popup.
+## Configure Mention Users
+You can use the [MentionUsers](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionUsers) property to define an array of users for the mention suggestion popup.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -28,9 +28,9 @@ You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ![mention-user](images/mention-user.png)
 
-## Customize the mention trigger character
+## Customize the Mention Trigger character
 
-You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionTriggerChar) property to customize the character which triggers the mention popup. The default value is `@`.
+You can use the [MentionTriggerChar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionTriggerChar) property to customize the character which triggers the mention popup. The default value is `@`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -43,9 +43,9 @@ You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetmvc-js
 
 ![mention-trigger](images/mention-trigger.png)
 
-## Predefine mentions with messages
+## Predefine Mentions with messages
 
-You can use the [text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage_Text) property in the [ChatUIMessage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage) to include predefined mentions in chat messages. The mentions field stores the selected users for each message.
+You can use the [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage_Text) property in the [ChatUIMessage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage) to include predefined mentions in chat messages. The mentions field stores the selected users for each message.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -58,9 +58,9 @@ You can use the [text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 
 ![mention-message](images/mention-message.png)
 
-## Configure mentionSelect
+## Configure MentionSelect
 
-You can use the [mentionSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionSelect) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
+You can use the [MentionSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionSelect) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
