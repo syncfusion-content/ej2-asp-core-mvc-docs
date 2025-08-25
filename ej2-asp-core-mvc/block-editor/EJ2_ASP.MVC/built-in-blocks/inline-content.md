@@ -15,7 +15,7 @@ Content in the Block Editor is managed through the [Content](https://help.syncfu
 
 Each content can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
 
-### Setting content type
+## Setting content type
 
 You can specify the type of content using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property. The Block Editor supports several content types through the `ContentType` enum:
 
@@ -33,7 +33,7 @@ You can specify the type of content using the [Type](https://help.syncfusion.com
 
 You can configure Text content by setting the type property to `Text`. The default content type is `Text`.
 
-#### Type 
+### Type 
 
 ```typescript
 // Adding inline text
@@ -54,7 +54,7 @@ You can configure Text content by setting the type property to `Text`. The defau
 
 You can configure inline code content by setting the type property to `Code`. Code content is used for inline code snippets within regular text.
 
-#### Type
+### Type
 
 ```typescript
 // Adding inline code
@@ -87,7 +87,7 @@ The link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Blo
 | openInNewWindow    | Specifies whether the link should open in a new window/tab.           | false         |
 
 
-#### Type & Props
+### Type & Props
 
 ```typescript
 {
@@ -122,7 +122,7 @@ The Block Editor comes with offers different built-in options. These include:
 
 You can customize the labels by using the `props` property with type `Label`.
 
-#### Type & Props
+### Type & Props
 
 ```typescript
 // Adding inline label
@@ -141,11 +141,11 @@ You can customize the labels by using the `props` property with type `Label`.
 }
 ```
 
-#### Trigger Character configuration
+### Trigger Character configuration
 
 You can use the `triggerChar` property to specify the character that will trigger the label suggestions popup while typing. The default trigger character is `$`.
 
-#### Label items configuration
+### Label items configuration
 
 The `labelItems` array allows you to define the available labels in your editor. Each label item can have the following properties:
 
@@ -159,7 +159,7 @@ The `labelItems` array allows you to define the available labels in your editor.
 
 When users type the trigger character followed by text, a popup will appear showing matching label items from which they can select. The selected label will be inserted into the content as a Label content item.
 
-#### Using labels with group headers
+### Using labels with group headers
 
 Labels with the same `groupHeader` value will be grouped together in the label selection popup:
 
@@ -182,7 +182,7 @@ Mentions are references to users or entities that can be inserted into your cont
 
 Mentions are typically triggered by the `@` character and are linked to the `Users` collection defined in the Block Editor.
 
-#### Type
+### Type
 
 ```typescript
 // Adding inline code
