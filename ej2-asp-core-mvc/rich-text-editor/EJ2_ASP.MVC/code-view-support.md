@@ -10,7 +10,10 @@ documentation: ug
 
 # Code View Support in ##Platform_Name## Rich Text Editor Control
 
-Rich Text Editor includes the ability for users to directly edit HTML code via `Source View` in the text area. If you made any modification in Source view directly, the changes will be reflected in the Rich Text Editor's content. So, the users will have more flexibility over the content they have created.
+The Rich Text Editor enables you to directly edit HTML code through the `Source View` in the text area. Any changes you make in Source view are immediately reflected in the editor's content, giving you greater flexibility and control over your work.
+The source code is presented with enhanced formatting and consistent indentation for both block-level and inline HTML elements, resulting in a cleaner, more readable, and user-friendly editing experience.
+
+>While the visual alignment of the source code is improved, the editor's underlying value remains unchanged.
 
 ## Configuring Source Code Tool in the Toolbar
 
