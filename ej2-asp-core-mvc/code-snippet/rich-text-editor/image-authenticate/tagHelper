@@ -1,10 +1,10 @@
-<ejs-richtexteditor id="editor" fileUploading="onFileUploading">
+<ejs-richtexteditor id="editor" ImageUploading="onImageUploading">
     <e-richtexteditor-insertimagesettings saveUrl="/Home/SaveFiles" path="./Files/"></e-richtexteditor-insertimagesettings>
     <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
 </ejs-richtexteditor>
 
 <script>
-    function onFileUploading(args) {
+    function onImageUploading(args) {
         var accessToken = "Authorization_token";
         // adding custom Form Data
         args.customFormData = [{ 'Authorization': accessToken }];

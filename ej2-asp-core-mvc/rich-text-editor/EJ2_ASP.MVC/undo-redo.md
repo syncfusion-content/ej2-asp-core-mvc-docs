@@ -51,3 +51,34 @@ Here's an example of how to customize both the Undo/Redo timer and steps:
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Clear Undo/Redo stack
+
+The Rich Text Editor automatically maintains an undo/redo stack, allowing users to revert or redo changes made during editing.
+
+To clear the entire undo and redo stack, use the public `clearUndoRedo` method. This is helpful when loading new content dynamically or resetting the editor to its initial state.
+
+Here's an example of how to customize both the Undo/Redo timer and steps:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/clear-undo-redo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/clear-undo-redo/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/clear-undo-redo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/clear-undo-redo/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}

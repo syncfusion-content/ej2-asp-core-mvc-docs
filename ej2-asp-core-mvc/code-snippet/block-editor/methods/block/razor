@@ -1,0 +1,135 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).Created("onCreated").Render()
+    <div id="controls">
+        <h3>Block Management Methods</h3>
+        <div class="button-group">
+            <button id="addBlockBtn" onclick="addBlockBtn()">Add Block</button>
+            <button id="removeBlockBtn" onclick="removeBlockBtn()">Remove Block</button>
+            <button id="getBlockBtn" onclick="getBlockBtn()">Get Block</button>
+            <button id="moveBlockBtn" onclick="moveBlockBtn()">Move Block</button>
+            <button id="updateBlockBtn" onclick="updateBlockBtn()">Update Block</button>
+            <button id="getBlockCountBtn" onclick="getBlockCountBtn()">Get Block Count</button>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<script>
+    var blockEditorObj;
+    function onCreated() {
+        blockEditorObj = ej.base.getInstance(document.getElementById('block-editor'), ejs.blockeditor.BlockEditor);
+    }
+    function addBlockBtn() {
+        const newBlock = {
+            id: 'new-block',
+            type: 'Paragraph',
+            content: [
+                {
+                    type: "Text",
+                    content: 'This is a newly added block'
+                }
+            ]
+        };
+
+        blockEditorObj.addBlock(newBlock, 'block-2', true);
+        displayOutput(`Block added successfully with ID: ${newBlock.id}`);
+    }
+
+    // Remove Block Method
+    function removeBlockBtn() {
+        blockEditorObj.removeBlock('block-3');
+        displayOutput('Block with ID "block-3" removed successfully');
+    }
+
+    // Get Block Method
+    function getBlockBtn() {
+        const block = blockEditorObj.getBlock('block-1');
+        if (block && block.content) {
+            displayOutput(`Block found:\nID: ${block.id}\nType: ${block.type}\nContent: ${block.content[0].content}`);
+        } else {
+            displayOutput('Block with ID "block-1" not found');
+        }
+    }
+
+    // Move Block Method
+    function moveBlockBtn() {
+        blockEditorObj.moveBlock('block-2', 'block-1');
+        displayOutput('Block "block-2" moved successfully');
+    }
+
+    // Update Block Method
+    function updateBlockBtn() {
+        const success = blockEditorObj.updateBlock('block-2', {
+            indent: 1,
+            content: [
+                {
+                    content: 'Updated content'
+                }
+            ]
+        });
+
+        const updatedBlock = blockEditorObj.getBlock('block-2');
+        if (success && updatedBlock && updatedBlock.content) {
+            displayOutput(`Block ${updatedBlock.id} updated successfully\nNew content: "${updatedBlock.content[0].content} \nNew indent: ${updatedBlock.indent}"`);
+        } else {
+            displayOutput('Failed to update block');
+        }
+    }
+
+    // Get Block Count Method
+    function getBlockCountBtn() {
+        const count = blockEditorObj.getBlockCount();
+        displayOutput(`Total number of blocks: ${count}`);
+    }
+
+    function displayOutput(message) {
+        const outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            outputDiv.textContent = message;
+        }
+    }
+</script>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .test-content {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #sampleContent {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        min-height: 150px;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 50px;
+        font-family: monospace;
+        white-space: pre-wrap;
+    }
+</style>

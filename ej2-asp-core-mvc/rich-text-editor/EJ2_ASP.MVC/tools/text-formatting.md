@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor Control | Syncfusion
+title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -381,24 +381,22 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
-## Insert code
+## Horizontal line
 
-The Rich Text Editor control offers a powerful feature to format text as preformatted code blocks, making it ideal for displaying programming snippets or structured contents.
+The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
 
-### Enabling code block formatting
+To insert a horizontal line, place the cursor at the desired location and click the `HorizontalLine` icon in the toolbar. A full-width line will be added, creating a clear visual break between sections of text or other elements.
 
-To enable code block formatting, ensure that the Formats item is included in the toolbar items of your Rich Text Editor configuration.
-
-Below are examples and code snippets demonstrating how to add and effectively use the code block formatting option in the Rich Text Editor.
+Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/code-format/tagHelper %}
+{% include code-snippet/rich-text-editor/horizontal-line/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/code-format/controller.cs %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -406,47 +404,13 @@ Below are examples and code snippets demonstrating how to add and effectively us
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/code-format/razor %}
+{% include code-snippet/rich-text-editor/horizontal-line/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/code-format/controller.cs %}
+{% include code-snippet/rich-text-editor/horizontal-line/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-### Applying code block formatting
-
-Follow these steps to format text as a code block:
-
-1. Select the desired text in the editor.
-2. Click on the `Formats` dropdown in the toolbar.
-3. Choose `Preformatted` from the dropdown menu.
-
-### Exiting code block format
-
-To exit the code block format:
-
-1. Place the cursor at the end of your code block content.
-2. Press the Enter key twice.
-
-This action will move the cursor out of the code block and return to normal text formatting.
-
-### Enhancing code block appearance
-
-To make your code blocks more visually appealing, you can add custom styling. Here's an example of how to style your `<pre>` tag:
-
-```typescript
-<style>
-
-.e-richtexteditor .e-rte-content .e-content pre{
-                background-color: #f4f4f4; color: #333; font-family: 'Courier New', Courier, monospace; font-size: 14px; padding: 15px; border-radius: 5px; border: 1px solid #ccc; overflow-x: auto; white-space: pre-wrap; word-wrap: break-word;
-            }
-
-</style>
-
-```
-
-This styling adds a light gray background, sets a monospace font, and includes padding and borders for better visual separation.
 
 ## Format painter
 
@@ -504,7 +468,7 @@ For more details on keyboard navigation, refer to the [Keyboard support](../keyb
 
 > The format painter retains the formatting after application making it possible to apply the same formatting multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
-Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command/) public method.
+Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command) public method.
 
 ## Clear formatting
 

@@ -18,7 +18,6 @@ ASP.NET MVC Applications can be developed using one of the following IDEs. You c
 
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/)
 * [Visual Studio 2019](https://visualstudio.microsoft.com/vs/older-downloads/)
-* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/)
 * [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Frameworks
@@ -27,8 +26,6 @@ One of the the following .NET SDK is required to develop and run the Syncfusion<
 
 * [.NET 9.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
 * [.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-* [.NET 7.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
-* [.NET 6.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 * [.NET Core SDK 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1)
 * [.NET Core SDK 2.0](https://dotnet.microsoft.com/en-us/download/dotnet/2.0)
 * [.NET 4.6.2 Framework](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net462)

@@ -90,24 +90,21 @@ The following example enable column virtualization using `EnableColumnVirtualiza
 * The following features are compatible with column virtualization and work within the viewport:
    1. Column resizing
    2. Column reordering
-   3. Column chooser
-   4. Auto-fit
-   5. Print
-   6. Clipboard
-   7. Column menu - Column chooser, AutofitAll
+   3. Auto-fit
+   4. Print
+   5. Clipboard
+   6. Column menu - AutofitAll
 
 * Column virtual scrolling is not compatible with the following feature
     1. Grouping
     2. Colspan
     3. Batch editing
-    4. Column with infinite scrolling
-    6. Stacked header
-    7. Row template
-    8. Detail template
-    9. Hierarchy grid
-    10. Autofill
-    11. Column chooser
-    12. Page
+    4. Stacked header
+    5. Row template
+    6. Detail template
+    7. Hierarchy grid
+    8. Autofill
+    9. Page
 
 ## Browser height limitation in virtual scrolling and solution
 
@@ -244,4 +241,4 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [Paging](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.

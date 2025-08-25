@@ -1,0 +1,11 @@
+<ejs-richtexteditor id="clear-undo-redo" value="@ViewBag.value">
+    <e-richtexteditor-toolbarsettings ></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>
+<button id="clearundoredobtn" class="e-btn">Clear Undo/Redo</button>
+
+<script>
+    document.getElementById('clearundoredobtn').addEventListener('click', function() {
+        var rte = document.getElementById("clear-undo-redo").ej2_instances[0];
+        rte.clearUndoRedo();
+    });
+</script>

@@ -1,0 +1,26 @@
+
+        @(Html.EJS().Gantt("WBSColumn").DataSource((IEnumerable<object>)ViewData["DataSource"]).Height("550px")
+           .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").ParentID("ParentID"))
+           .EnableWBS(true).EnableAutoWbsUpdate(true)
+           .Toolbar(new List<string> { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" })
+           .EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true).AllowTaskbarEditing(true).ShowDeleteConfirmDialog(true))
+           .AllowSorting(true).EnableContextMenu(true).AllowSelection(true).TreeColumnIndex(2).AllowPdfExport(true)
+           .SplitterSettings(sp => sp.ColumnIndex(4))
+           .SelectionSettings(ss => ss.Mode(Syncfusion.EJ2.Grids.SelectionMode.Row).Type(Syncfusion.EJ2.Grids.SelectionType.Single).EnableToggle(false))
+           .TooltipSettings(ts => ts.ShowTooltip(true))
+           .FilterSettings(fs => fs.Type(Syncfusion.EJ2.Gantt.FilterType.Menu))
+           .TimelineSettings(tl => tl.ShowTooltip(true).TopTier(tt => tt.Format("MMM dd, yyyy").Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Week)).BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Day)))
+           .HighlightWeekends(true).AllowFiltering(true).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both)
+           .LabelSettings(ls => ls.TaskLabel("${Progress}%")).TaskbarHeight(20).RowHeight(40).AllowUnscheduledTasks(true)
+           .EventMarkers(em => { em.Day("04/02/2024").Label("Project Initiation").Add(); })
+           .ProjectStartDate("03/31/2024").ProjectEndDate("05/30/2024")
+           .Columns(col => {
+               col.Field("TaskId").Visible(false).Add();
+               col.Field("WBSCode").Width(150).Add();
+               col.Field("TaskName").Width(260).HeaderText("Task Name").AllowReordering(false).Add();
+               col.Field("StartDate").HeaderText("Start Date").Width(140).Add();
+               col.Field("WBSPredecessor").Width(190).HeaderText("WBS Predecessor").Add();
+               col.Field("Duration").HeaderText("Duration").AllowEditing(false).Add();
+               col.Field("Progress").HeaderText("Progress").Add();
+           }).Render())
+        

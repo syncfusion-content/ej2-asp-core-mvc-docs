@@ -1,0 +1,5 @@
+<div style="width:500px; margin:0 auto;">
+    <ejs-richtexteditor id="toolbar-position" value="@ViewBag.value">
+        <e-richtexteditor-toolbarsettings position="Bottom"></e-richtexteditor-toolbarsettings>
+    </ejs-richtexteditor>
+</div>

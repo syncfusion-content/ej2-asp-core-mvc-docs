@@ -50,3 +50,55 @@ The [PromptChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.
 {% include code-snippet/ai-assistview/events/promptChanged/promptChanged.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## beforeAttachmentUpload
+
+The [BeforeAttachmentUpload](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_BeforeAttachmentUpload) event is triggered before the attached files upload begins in the AI AssistView.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/events/before-attachment/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="before-attachment.cs" %}
+{% include code-snippet/ai-assistview/events/before-attachment/before-attachment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## attachmentUploadSuccess
+
+The [AttachmentUploadSuccess](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_AttachmentUploadSuccess) event is triggered when the attached file is successfully uploaded in the AI AssistView.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/events/attachment-success/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Attachment-success.cs" %}
+{% include code-snippet/ai-assistview/events/attachment-success/attachment-success.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## attachmentUploadFailure
+
+The [AttachmentUploadFailure](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_AttachmentUploadFailure) event is triggered when the attached file upload fails in the AI AssistView.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/events/attachment-failure/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Attachment-failure.cs" %}
+{% include code-snippet/ai-assistview/events/attachment-failure/attachment-failure.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## attachmentRemoved
+
+The [AttachmentRemoved](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_AttachmentRemoved) event is triggered when an attached file is removed in the AI AssistView.  
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/events/attachment-remove/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Attachment-remove.cs" %}
+{% include code-snippet/ai-assistview/events/attachment-remove/attachment-remove.cs %}
+{% endhighlight %}
+{% endtabs %}

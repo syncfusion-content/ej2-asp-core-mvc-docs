@@ -1,0 +1,109 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).Created("onCreated").Render()
+    <div id="controls">
+        <h3>Data Export Methods</h3>
+        <div class="button-group">
+            <button id="getJsonAllBtn" onclick="getJsonAllBtn()">Get All Data as JSON</button>
+            <button id="getJsonBlockBtn" onclick="getJsonBlockBtn()">Get Block Data as JSON</button>
+            <button id="getHtmlAllBtn" onclick="getHtmlAllBtn()">Get All Data as HTML</button>
+            <button id="getHtmlBlockBtn" onclick="getHtmlBlockBtn()">Get Block Data as HTML</button>
+            <button id="printContentBtn" onclick="printContentBtn()">Print Editor Content</button>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<script>
+    var blockEditorObj;
+    function onCreated() {
+        blockEditorObj = ej.base.getInstance(document.getElementById('block-editor'), ejs.blockeditor.BlockEditor);
+    }
+    function getJsonAllBtn()  {
+        var jsonData = blockEditorObj.getDataAsJson();
+        var formattedJson = JSON.stringify(jsonData, null, 2);
+        displayOutput(`All blocks as JSON:\n\n${formattedJson}`);
+    }
+
+    // Get Specific Block Data as JSON
+    function getJsonBlockBtn()  {
+        var blockData = blockEditorObj.getDataAsJson('title-block');
+        var formattedJson = JSON.stringify(blockData, null, 2);
+        displayOutput(`Block "title-block" as JSON:\n\n${formattedJson}`);
+    }
+
+    // Get All Data as HTML
+    function getHtmlAllBtn()  {
+        var htmlData = blockEditorObj.getDataAsHtml();
+        displayOutput(`All blocks as HTML:\n\n${htmlData}`);
+    }
+
+    // Get Specific Block Data as HTML
+    function getHtmlBlockBtn()  {
+        var blockHtml = blockEditorObj.getDataAsHtml('intro-paragraph');
+        displayOutput(`Block "intro-paragraph" as HTML:\n\n${blockHtml}`);
+    }
+
+    // Print Editor Content
+    function printContentBtn()  {
+        blockEditorObj.print();
+        displayOutput('Print dialog opened. Check for a new browser window/tab with the printable content.');
+    }
+
+    // Output helper function
+    function displayOutput(message) {
+        var outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            outputDiv.textContent = message;
+        }
+    }
+</script>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .button-group {
+        margin-bottom: 15px;
+    }
+
+    .button-group button {
+        margin: 5px;
+        padding: 8px 16px;
+        background-color: #007acc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button-group button:hover {
+        background-color: #005a9e;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 100px;
+        font-family: monospace;
+        white-space: pre-wrap;
+        max-height: 400px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+    }
+</style>

@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    <ejs-blockeditor id="block-editor"></ejs-blockeditor>
+</div>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+    }
+</style>
