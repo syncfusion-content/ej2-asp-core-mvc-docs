@@ -39,7 +39,7 @@ The image [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.B
 | readOnly | Specifies whether the image is in read-only mode | false
 
 
-#### Type & Props
+### Type & Props
 
 ```typescript
 // Adding image block
