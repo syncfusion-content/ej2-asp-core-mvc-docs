@@ -381,7 +381,7 @@ By integrating the [marked](https://github.com/markedjs/marked) library, you can
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/messages/markdown/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="ItemClicked.cs" %}
+{% highlight c# tabtitle="markdown.cs" %}
 {% include code-snippet/chat-ui/messages/markdown/markdown.cs %}
 {% endhighlight %}
 {% endtabs %}
