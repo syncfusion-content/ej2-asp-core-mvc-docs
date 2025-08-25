@@ -28,7 +28,7 @@ Each language object in the `languages` array should have:
 - `language`: The language value used for syntax highlighting
 - `label`: The display name shown in the language selector
 
-#### Type & Props
+### Type & Props
 ```typescript
 // Adding Code block
 {
