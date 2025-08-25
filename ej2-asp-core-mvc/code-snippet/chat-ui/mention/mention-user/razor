@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").Messages(ViewBag.ChatMessagesData).User(ViewBag.CurrentUser).MentionUsers(ViewBag.MentionUsers).Render()
+</div>

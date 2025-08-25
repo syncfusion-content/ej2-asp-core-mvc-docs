@@ -29,7 +29,7 @@ public ActionResult SlashCommand()
                 new Block
                 {
                         Id = "Paragraph",
-                        Type = "Paragraph",
+                        Type = BlockType.Paragraph,
                         Content = new List<object>
                         {
                                 new { type = "Text", content = "Type \"/\" anywhere in this editor to open the custom slash command menu." }

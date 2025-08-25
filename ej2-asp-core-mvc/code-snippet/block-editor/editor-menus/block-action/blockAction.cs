@@ -8,7 +8,8 @@ public ActionResult BlockAction()
 {
         BlocksData.Add(new Block() {
                 Id = "title-block",
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1},
                 Content = new List<object>()
                 {
                         new {
@@ -20,7 +21,7 @@ public ActionResult BlockAction()
         BlocksData.Add(new Block()
         {
                 Id = "intro-block",
-                Type = "Quote",
+                Type = BlockType.Quote,
                 Content = new List<object>()
                 {
                         new {
