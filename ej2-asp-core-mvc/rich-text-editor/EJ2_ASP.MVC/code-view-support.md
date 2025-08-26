@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Code View in ##Platform_Name## Rich Text Editor Control | Syncfusion
-title: Getting Started with ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Code View in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code View
