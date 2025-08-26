@@ -26,7 +26,7 @@ You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![Mention-User](images/MentionUsers.png)
+![MentionUsers](images/MentionUsers.png)
 
 
 ## Customize the mention trigger character
@@ -43,7 +43,7 @@ You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetcore-j
 {% endhighlight %}
 {% endtabs %}
 
-![mention-trigger](images/MentionCharacter.png)
+![MentionCharacter](images/MentionCharacter.png)
 
 ## Predefine mentions with messages
 
@@ -60,7 +60,7 @@ You can use the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ScrollToBottom](images/MentionMessage.png)
+![MentionMessage](images/MentionMessage.png)
 
 ## Configure mentionSelect
 

@@ -26,7 +26,7 @@ You can use the [MentionUsers](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 {% endhighlight %}
 {% endtabs %}
 
-![mention-user](images/MentionUsers.png)
+![MentionUsers](images/MentionUsers.png)
 
 ## Customize the Mention Trigger character
 
@@ -41,7 +41,7 @@ You can use the [MentionTriggerChar](https://help.syncfusion.com/cr/aspnetmvc-js
 {% endhighlight %}
 {% endtabs %}
 
-![mention-trigger](images/MentionCharacter.png)
+![MentionCharacter](images/MentionCharacter.png)
 
 ## Predefine Mentions with messages
 
@@ -58,7 +58,7 @@ You can use the [Text](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 
-![mention-message](images/MentionMessage.png)
+![MentionMessage](images/MentionMessage.png)
 
 ## Configure MentionSelect
 
