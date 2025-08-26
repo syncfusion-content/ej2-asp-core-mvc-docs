@@ -1,0 +1,2 @@
+<ejs-symbolpalette id="symbolpalette" getSymbolInfo="@ViewBag.getSymbolInfo" palettes="@ViewBag.palettes">
+</ejs-symbolpalette>
