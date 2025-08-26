@@ -12,7 +12,7 @@ documentation: ug
 
 ## Mention Integration in Syncfusion Chat UI
 
-The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an autocomplete dropdown for selecting users. The following sections explain how to configure mentions
+The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions
 
 ## Configure mention users
 You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionUsers) property to define an array of users for the mention suggestion popup.
@@ -26,7 +26,7 @@ You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 {% endhighlight %}
 {% endtabs %}
 
-![Mention-User](images/mention-user.png)
+![MentionUsers](images/MentionUsers.png)
 
 
 ## Customize the mention trigger character
@@ -43,11 +43,13 @@ You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetcore-j
 {% endhighlight %}
 {% endtabs %}
 
-![mention-trigger](images/mention-trigger.png)
+![MentionCharacter](images/MentionCharacter.png)
 
 ## Predefine mentions with messages
 
 You can use the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage_Text) property in the [ChatUIMessage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUIMessage.html#Syncfusion_EJ2_InteractiveChat_ChatUIMessage) to include predefined mentions in chat messages. The mentions field stores the selected users for each message.
+
+> The `mentionUsers` property in a message contains a list of users, mapped by their order where the placeholder {0} is replaced by the first user, {1} by the second, and so on, automatically generating mentions in the user interface. If a placeholder's index is negative or exceeds the bounds of the mentionUsers array (e.g., using {5} with only two users), the mapping for that placeholder fails, and the placeholder text itself (e.g., {5}) is displayed in the final message.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -58,7 +60,7 @@ You can use the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ScrollToBottom](images/mention-message.png)
+![MentionMessage](images/MentionMessage.png)
 
 ## Configure mentionSelect
 
