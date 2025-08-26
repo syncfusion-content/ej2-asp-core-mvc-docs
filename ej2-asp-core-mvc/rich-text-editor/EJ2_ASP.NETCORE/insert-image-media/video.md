@@ -257,6 +257,50 @@ Sets the default display property for the video when it is inserted in the Rich 
 {% endtabs %}
 {% endif %}
 
+## Drag and Drop Video Insertion
+
+By default, the Rich Text Editor allows you to insert videos by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the videos to the server before inserting into the editor by configuring the saveUrl property.
+
+In the following sample, you can see feature demo.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/drag-drop/video/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/drag-drop/video/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/drag-drop/video/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/drag-drop/video/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### Disabling Drag and Drop for Videos
+
+You can prevent drag-and-drop action by setting the actionBegin argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+
+<script>
+
+    function actionBegin(args) {
+        if(args.type === 'drop' || args.type === 'dragstart') {
+            args.cancel =true;
+        }
+    }
+
+</script>
+
 ## Video resizing
 
 The Rich Text Editor has built-in video resizing support, which is enabled for the video elements added. The resize points will appear on each corner of the video when focusing, so users can easily resize the video using mouse points or thumb through the resize points. Also, the resize calculation will be done based on the aspect ratio.
