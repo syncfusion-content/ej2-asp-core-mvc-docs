@@ -1,0 +1,153 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).Created("onCreated").Render()
+    <div id="controls">
+        <h3>Selection and Cursor Methods</h3>
+        <div class="button-group">
+            <button id="setSelectionBtn" onclick="setSelectionBtn()">Set Text Selection</button>
+            <button id="setCursorBtn" onclick="setCursorBtn()">Set Cursor Position</button>
+            <button id="getSelectedBlocksBtn" onclick="getSelectedBlocksBtn()">Get Selected Blocks</button>
+            <button id="getRangeBtn" onclick="getRangeBtn()">Get Selection Range</button>
+            <button id="selectRangeBtn" onclick="selectRangeBtn()">Set Selection Range</button>
+            <button id="selectBlockBtn" onclick="selectBlockBtn()">Select Block</button>
+            <button id="selectAllBtn" onclick="selectAllBtn()">Select All Blocks</button>
+        </div>
+        <div id="output"></div>
+    </div>
+</div>
+
+<script>
+    var blockEditorObj;
+    function onCreated() {
+        blockEditorObj = ej.base.getInstance(document.getElementById('block-editor'), ejs.blockeditor.BlockEditor);
+    }
+    function setSelectionBtn() {
+        // Select text from position 5 to 15 in the first paragraph
+        blockEditorObj.setSelection('paragraph1-content', 5, 15);
+        displayOutput('Text selection set in "paragraph-1" block from position 5 to 15');
+    }
+
+    // Set Cursor Position Method
+    function setCursorBtn() {
+        // Set cursor at position 10 in the heading block
+        blockEditorObj.setCursorPosition('heading-block', 10);
+        displayOutput('Cursor position set at position 10 in "heading-block"');
+    }
+
+    // Get Selected Blocks Method
+    function getSelectedBlocksBtn() {
+        var selectedBlocks = blockEditorObj.getSelectedBlocks();
+        if (selectedBlocks && selectedBlocks.length > 0) {
+            var blockInfo = selectedBlocks.map(block =>
+                `ID: ${block.id}, Type: ${block.type}`
+            ).join('\n');
+            displayOutput(`Selected blocks (${selectedBlocks.length}):\n${blockInfo}`);
+        } else {
+            displayOutput('No blocks are currently selected');
+        }
+    }
+
+    // Get Selection Range Method
+    function getRangeBtn() {
+        var range = blockEditorObj.getRange();
+        if (range) {
+            var parent = range.startContainer.nodeType === 3
+                ? (range.startContainer.parentElement)
+                : (range.startContainer);
+            displayOutput(`Current selection range:
+                blockId: ${(parent).closest('.e-block').id}
+                Start Container: ${range.startContainer.nodeName}
+                Start Offset: ${range.startOffset}
+                End Container: ${range.endContainer.nodeName}
+                End Offset: ${range.endOffset}
+                Collapsed: ${range.collapsed}`);
+        } else {
+            displayOutput('No selection range found');
+        }
+    }
+
+    // Set Selection Range Method
+    function selectRangeBtn() {
+        // Create a custom range for the second paragraph
+        var paragraphElement = document.getElementById('paragraph-2');
+        if (paragraphElement) {
+            var range = document.createRange();
+            var textNode = (paragraphElement.querySelector('.e-block-content')).firstChild;
+            if (textNode) {
+                range.setStart(textNode, 8);
+                range.setEnd(textNode, 20);
+                blockEditorObj.selectRange(range);
+                displayOutput('Custom selection range applied to "paragraph-2" (positions 8-20)');
+            } else {
+                displayOutput('Could not find text content in paragraph-2');
+            }
+        }
+    }
+
+    // Select Block Method
+    function selectBlockBtn() {
+        // Select the entire heading block
+        blockEditorObj.selectBlock('heading-block');
+        displayOutput('Entire "heading-block" selected');
+    }
+
+    // Select All Blocks Method
+    function selectAllBtn() {
+        blockEditorObj.selectAllBlocks();
+        displayOutput('All blocks in the editor have been selected');
+    }
+
+    // Output helper function
+    function displayOutput(message) {
+        var outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            outputDiv.textContent = message;
+        }
+    }
+</script>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #controls {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .button-group {
+        margin-bottom: 15px;
+    }
+
+    .button-group button {
+        margin: 5px;
+        padding: 8px 16px;
+        background-color: #007acc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .button-group button:hover {
+        background-color: #005a9e;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 50px;
+        font-family: monospace;
+        white-space: pre-wrap;
+    }
+</style>

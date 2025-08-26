@@ -6,18 +6,21 @@
     col.Field("ShipName").HeaderText("Ship Name").Width("150").ValidationRules(new { required = "true"}).Add();
     col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").ValidationRules(new { required = "true"}).Add();
 }).AllowPaging().Load("load").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()
+
 <script>
     function load()
     {
         var grid = document.getElementById("grid").ej2_instances[0];
         grid.element.addEventListener('mouseup', (event) => {
-        if (event.target.classList.contains("e-rowcell")) {
-            if (grid.isEdit)
-                grid.endEdit();
+            if (event.target.classList.contains("e-rowcell")) {
+                if (grid.isEdit)
+                {
+                    grid.endEdit();
+                }
                 let index= parseInt((event.target).getAttribute("Index"));
                 grid.selectRow(index);
                 grid.startEdit();
-            };
+            }
         });
     }
 </script>

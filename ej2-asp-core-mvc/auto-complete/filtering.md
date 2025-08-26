@@ -150,6 +150,30 @@ An AutoComplete supports diacritics filtering which will ignore the [diacritics]
 {% endtabs %}
 {% endif %}
 
+## Debounce delay
+
+You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.autocomplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DebounceDelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/filtering/arrayofstrings/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/autocomplete/filtering/arrayofstrings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Arrayofstrings.cs" %}
+{% include code-snippet/autocomplete/filtering/arrayofstrings/arrayofstrings.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/AutoComplete/GroupingandFilreringSample).
 
 ## See also

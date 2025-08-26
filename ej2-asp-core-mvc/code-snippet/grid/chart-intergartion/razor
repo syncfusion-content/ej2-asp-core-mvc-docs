@@ -1,0 +1,46 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height(418).Columns(col =>
+{
+	col.Type("checkbox").Width("50").Add();
+    col.Field("Product").HeaderText("Products").Width(200).Add();
+	col.Field("Month").HeaderText("Month").Width(150).Add();
+    col.Field("Online").HeaderText("Online").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(160).Add();
+    col.Field("Retail").HeaderText("Retail").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(160).Add();
+    col.Field("Total").HeaderText("Total").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(160).Add();
+}).AllowSelection(true).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).ContextMenuItems(new List<object>() { "Bar", "StackingBar", "StackingBar100", "Pie", "Column", "StackingColumn", "StackingColumn100", "Line", "StackingLine", "StackingLine100", "Area", "StackingArea", "StackingArea100", "Scatter" }).ContextMenuClick("contextMenuClick").Created("created").Render()
+
+<script type="text/javascript">
+    let gridChart;
+
+    function created() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        gridChart = new ej.gridchart.GridChart({
+          enableRtl: grid.enableRtl,
+          locale: grid.locale,
+        });
+    }
+
+    function contextMenuClick(args) {
+        if (args.chartType) {
+            const chartArgs = {
+                gridInstance: (args.gridInstance),
+                chartType: args.chartType,
+                records: (args.records),
+            };
+            const chartModel = {
+                primaryXAxis: {
+                    valueType: 'Category',
+                    labelRotation: 315,
+                }
+            };
+            const model = {
+                chart: chartModel,
+                accumulationChart: {}
+            };
+            const categorySeries = {
+                category: ['Product', 'Month'],
+                series: ['Online', 'Retail']
+            };
+            gridChart.render(chartArgs, model, categorySeries);
+        }
+    }
+</script>

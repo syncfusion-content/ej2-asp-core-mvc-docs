@@ -216,3 +216,4 @@ Non-working days/weekend are used to represent the non-productive days in a proj
 
 N> By default, Saturdays and Sundays are considered as non-working days/weekend in a project.
 <br/> In the Gantt control, you can make weekend as working day by setting the [`IncludeWeekend`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_IncludeWeekend) property to `true`.
+<br/> To show or hide weekend in timeline, use [timelineSettings.showWeekend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineSettings_ShowWeekend) property in `timelineSettings`. To know more about `showWeekend`, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/time-line/time-line#showhide-weekends).

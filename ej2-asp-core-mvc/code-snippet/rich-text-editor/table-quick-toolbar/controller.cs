@@ -4,7 +4,9 @@ public class HomeController : Controller
     public ActionResult Index()
     {
         ViewBag.items = new[] { "CreateTable" };
-        ViewBag.Table = new[] {"TableHeader", "TableRows", "TableColumns", "TableCell"};
+        ViewBag.Table = new[] {
+                "Tableheader", "TableRemove", "|", "TableRows", "TableColumns", "TableCell", "|" , "Styles", "BackgroundColor", "Alignments", "TableCellVerticalAlign"
+            };
          ViewBag.value = @"<h2>Discover the Table's Powerful Features</h2><p>A table can be created in the editor using either a keyboard shortcut or the toolbar. With the quick
             toolbar, you can
             perform table cell insert, delete, split, and merge operations. You can style the table cells using

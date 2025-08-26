@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewBag["BlocksData"]).Render()
+</div>
+
+<style>
+    #blockeditor-container {
+       margin: 20px auto;
+    }
+</style>

@@ -1,0 +1,17 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).ShowColumnChooser(true).Toolbar(new List<string> { "ColumnChooser" }).Height("235").Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("120").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer Name").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+  col.Field("OrderDate").HeaderText("Order Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("150").ShowInColumnChooser(false).Add();
+  col.Field("ShipRegion").HeaderText("Ship Region").Width("150").Visible(false).Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).BeforeOpenColumnChooser("onBeforeOpenColumnChooser").Render()
+
+< script >
+    // Show only specific columns in the column chooser.
+    function onBeforeOpenColumnChooser(args) {
+         args.selectedColumns = ["CustomerID", "Freight", "ShipCountry"];  
+    }
+</script>

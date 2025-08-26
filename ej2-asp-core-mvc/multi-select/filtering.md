@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Multi Select Component
+title: Filtering in ##Platform_Name## Multi Select Component | Syncfusion
 description: Learn here all about Filtering in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
@@ -164,7 +164,32 @@ In the following sample,data with diacritics are bound as dataSource for MultiSe
 {% endtabs %}
 {% endif %}
 
+## Debounce delay
 
+You can use the [debounceDelay](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.dropdowns.multiselect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DebounceDelay) property for filtering, enabling you to set a delay in milliseconds. This functionality helps reduce the frequency of filtering as you type, enhancing performance and responsiveness for a smoother user experience.By default, a DebounceDelay of 300ms is set. If you wish to disable this feature entirely, you can set it to 0ms.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/multiselect/filtering/arrayofstrings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Arrayofstrings.cs" %}
+{% include code-snippet/multiselect/filtering/arrayofstrings/arrayofstrings.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/multiselect/filtering/arrayofstrings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Arrayofstrings.cs" %}
+{% include code-snippet/multiselect/filtering/arrayofstrings/arrayofstrings.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 

@@ -1,0 +1,85 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).CommandMenu((CommandMenuSettings)ViewData["CommandMenuSettings"]).Render()
+    <div id="controls">
+        <h3>Slash Command Menu Configuration Demo</h3>
+        <div class="instructions">
+            <p><strong>Instructions:</strong></p>
+            <ol>
+                <li>
+                    Click in the editor below and type "/" to open the slash command
+                    menu
+                </li>
+                <li>Notice the custom popup size, commands and disabled tooltips</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<script>
+    
+    function open(args) {
+        // Your actions here
+    }
+
+    function close(args) {
+        // Your actions here
+    }
+
+    function queryFiltering(args) {
+        // Your actions here
+    }
+
+    function itemClicked(args) {
+        // Handle custom block actions
+    }
+</script>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #controls {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f8f9fa;
+    }
+
+    .instructions {
+        padding: 15px;
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        border-radius: 4px;
+    }
+
+    .instructions p {
+        margin-top: 0;
+        color: #856404;
+        font-weight: bold;
+    }
+
+    .instructions ol {
+        margin-bottom: 0;
+        color: #856404;
+    }
+
+    #output {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        min-height: 100px;
+        font-family: monospace;
+        white-space: pre-wrap;
+        max-height: 300px;
+        overflow-y: auto;
+        border: 1px solid #dee2e6;
+    }
+</style>
