@@ -60,7 +60,8 @@ Install-Package Syncfusion.EJ2.MVC5
 
 Create a Web API controller in your ASP.NET MVC project to handle Direct Line token generation. Add `Controllers/TokenController.cs`:
 
-```csharp
+{% tabs %}
+{% highlight cs tabtitle="TokenController.cs" %}
 
 using System;
 using System.Configuration;
@@ -75,7 +76,6 @@ namespace YourNamespace.Controllers
     public class TokenController : ApiController
     {
         private static readonly HttpClient _httpClient = new HttpClient();
-
         [HttpPost]
         [Route("api/token/directline/token")]
         public async Task<IHttpActionResult> GenerateToken()
@@ -85,15 +85,12 @@ namespace YourNamespace.Controllers
             {
                 return BadRequest("Direct Line secret is not configured.");
             }
-
             try
             {
                 var request = new HttpRequestMessage(HttpMethod.Post, "https://directline.botframework.com/v3/directline/tokens/generate");
                 request.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", directLineSecret);
-                
                 var response = await _httpClient.SendAsync(request);
                 response.EnsureSuccessStatusCode();
-
                 var responseContent = await response.Content.ReadAsStringAsync();
                 dynamic tokenResponse = JsonConvert.DeserializeObject(responseContent);
                 return Ok(new { token = tokenResponse.token });
@@ -106,16 +103,20 @@ namespace YourNamespace.Controllers
     }
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Add the Direct Line secret to `Web.config`:
 
-```xml
+{% tabs %}
+{% highlight js tabtitle=".env" %}
 <appSettings>
   <add key="DirectLineSecret" value="PASTE_YOUR_DIRECT_LINE_SECRET_HERE" />
 </appSettings>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
 >`Security Note`: Store the Direct Line secret in a secure configuration, such as Azure Key Vault, for production environments.
 
 ## Integrate ChatUI in ASP.NET MVC
@@ -124,7 +125,8 @@ Use the Chat UI `messageSend` event to handle message exchanges. This event is t
 
 Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Direct Line API:
 
-```html
+{% tabs %}
+{% highlight Html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2.InteractiveChat
 
@@ -196,7 +198,8 @@ Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Di
     }
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 >Ensure Syncfusion scripts and styles are included in `_Layout.cshtml` as per the getting started guide. Also, include the Bot Framework Web Chat script for Direct Line functionality. Register the Syncfusion script manager in `_Layout.cshtml`.
 
@@ -204,7 +207,9 @@ Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Di
 
 To enable CORS for API requests, add to `Web.config` under `<system.webServer>`:
 
-```xml
+{% tabs %}
+{% highlight js tabtitle="Web.config.js" %}
+
 <httpProtocol>
   <customHeaders>
     <add name="Access-Control-Allow-Origin" value="*" />
@@ -213,7 +218,8 @@ To enable CORS for API requests, add to `Web.config` under `<system.webServer>`:
   </customHeaders>
 </httpProtocol>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run and Test
 

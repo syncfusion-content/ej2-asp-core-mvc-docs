@@ -58,7 +58,8 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 Create a controller in your ASP.NET Core project to handle Direct Line token generation. Add `Controllers/TokenController.cs`:
 
-```csharp
+{% tabs %}
+{% highlight cs tabtitle="TokenController.cs" %}
 
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
@@ -109,10 +110,13 @@ namespace YourNamespace.Controllers
     }
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
+
 Add the Direct Line secret to `appsettings.json`:
 
-```bash
+{% tabs %}
+{% highlight js tabtitle="appsettings.json" %}
 
 {
   "DirectLine": {
@@ -120,7 +124,8 @@ Add the Direct Line secret to `appsettings.json`:
   }
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > `Security Note`: Store the Direct Line secret in a secure configuration, such as Azure Key Vault, for production environments.|
 
@@ -129,7 +134,8 @@ Add the Direct Line secret to `appsettings.json`:
 Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat UI with the Direct Line API:
 
-```html
+{% tabs %}
+{% highlight Html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2.InteractiveChat
 
@@ -201,7 +207,8 @@ Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat
     }
 </script>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > Ensure Syncfusion scripts and styles are included in `_Layout.cshtml` as per the getting started guide. Also, register `<ejs-scripts>` in `_Layout.cshtml`. Include the Bot Framework Web Chat script for Direct Line functionality.
 
@@ -209,7 +216,8 @@ Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat
 
 Ensure CORS and HttpClient are configured in `Program.cs`:
 
-```csharp
+{% tabs %}
+{% highlight cs tabtitle="Program.cs" %}
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -231,7 +239,8 @@ app.MapControllers();
 
 app.Run();
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 ## Run and Test
 

@@ -57,7 +57,8 @@ Install-Package Syncfusion.EJ2.MVC5
 
 Create `service-acct.json` with your Dialogflow service account credentials in your project root:
 
-```json
+{% tabs %}
+{% highlight js tabtitle="service-acct.json" %}
 
 {
   "type": "service_account",
@@ -68,11 +69,13 @@ Create `service-acct.json` with your Dialogflow service account credentials in y
   ...
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 Set up a Web API controller in `Controllers/ChatController.cs` to handle Dialogflow requests:
 
-```csharp
+{% tabs %}
+{% highlight cs tabtitle="ChatController.cs" %}
 
 using Google.Cloud.Dialogflow.V2;
 using Google.Apis.Auth.OAuth2;
@@ -87,21 +90,18 @@ namespace YourNamespace.Controllers
     {
         private readonly SessionsClient _sessionsClient;
         private readonly string _projectId;
-
         public ChatController()
         {
             var credential = GoogleCredential.FromFile("service-acct.json");
             _sessionsClient = SessionsClient.Create(credential.ToChannelCredentials());
             _projectId = ConfigurationManager.AppSettings["DialogflowProjectId"]; // Or hardcode from JSON
         }
-
         [HttpPost]
         [Route("api/chat/message")]
         public async Task<IHttpActionResult> SendMessage([FromBody] MessageRequest request)
         {
             var sessionId = request.SessionId ?? "default-session";
             var session = SessionName.FromProjectSession(_projectId, sessionId);
-
             var queryInput = new QueryInput
             {
                 Text = new TextInput
@@ -110,7 +110,6 @@ namespace YourNamespace.Controllers
                     LanguageCode = "en-US"
                 }
             };
-
             try
             {
                 var response = await _sessionsClient.DetectIntentAsync(new DetectIntentRequest { Session = session.ToString(), QueryInput = queryInput });
@@ -123,7 +122,6 @@ namespace YourNamespace.Controllers
             }
         }
     }
-
     public class MessageRequest
     {
         public string Text { get; set; }
@@ -131,7 +129,8 @@ namespace YourNamespace.Controllers
     }
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > Use a unique `sessionId` (e.g., Guid) for each user to maintain conversation context. Add the projectId to Web.config if needed:
 
@@ -149,7 +148,8 @@ Use the `addMessage` method to programmatically add the bot's reply to the Chat 
 
 Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Dialogflow backend:
 
-```html
+{% tabs %}
+{% highlight Html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2.InteractiveChat
 
@@ -197,7 +197,8 @@ Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Di
 }
 </style>
 
-```
+{% endhighlight %}
+{% endtabs %}
 
 > Ensure to include Syncfusion scripts and styles in `_Layout.cshtml` as per the getting started guide. Also, register the Syncfusion script manager in `_Layout.cshtml`.
 

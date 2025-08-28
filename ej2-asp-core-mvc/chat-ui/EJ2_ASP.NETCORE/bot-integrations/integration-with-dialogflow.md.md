@@ -54,7 +54,8 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 
 Create `service-acct.json` with your Dialogflow service account credentials in your project root (or use User Secrets for development):
 
-```json
+{% tabs %}
+{% highlight js tabtitle="service-acct.json" %}
 
 {
 "type": "service_account",
@@ -64,10 +65,13 @@ Create `service-acct.json` with your Dialogflow service account credentials in y
 "client_email": "dialogflow-agent@your-dialogflow-project-id.iam.gserviceaccount.com",
 ...
 }
-```
+{% endhighlight %}
+{% endtabs %}
+
 Set up an API controller in `Controllers/ChatController.cs` to handle Dialogflow requests:
 
-```csharp
+{% tabs %}
+{% highlight cs tabtitle="ChatController.cs" %}
 
 using Google.Cloud.Dialogflow.V2;
 using Google.Apis.Auth.OAuth2;
@@ -82,20 +86,17 @@ namespace YourNamespace.Controllers
     {
         private readonly SessionsClient _sessionsClient;
         private readonly string _projectId;
-
         public ChatController(IConfiguration configuration)
         {
             var credential = GoogleCredential.FromFile("service-acct.json");
             _sessionsClient = SessionsClient.Create(credential.ToChannelCredentials());
             _projectId = "your-dialogflow-project-id"; // Or from configuration
         }
-
         [HttpPost("message")]
         public async Task<IActionResult> SendMessage([FromBody] MessageRequest request)
         {
             var sessionId = request.SessionId ?? "default-session";
             var session = SessionName.FromProjectSession(_projectId, sessionId);
-
             var queryInput = new QueryInput
             {
                 Text = new TextInput
@@ -104,7 +105,6 @@ namespace YourNamespace.Controllers
                     LanguageCode = "en-US"
                 }
             };
-
             try
             {
                 var response = await _sessionsClient.DetectIntentAsync(new DetectIntentRequest { Session = session.ToString(), QueryInput = queryInput });
@@ -117,7 +117,6 @@ namespace YourNamespace.Controllers
             }
         }
     }
-
     public class MessageRequest
     {
         public string Text { get; set; }
@@ -125,7 +124,9 @@ namespace YourNamespace.Controllers
     }
 }
 
-```
+{% endhighlight %}
+{% endtabs %}
+
 > Use a unique `sessionId` (e.g., Guid) for each user to maintain conversation context. Add the projectId to appsettings.json if needed.
 
 ## Integrate ChatUI in ASP.NET Core
@@ -142,29 +143,25 @@ Use the `addMessage` method to programmatically add the bot's reply to the Chat 
 
 Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat UI with the Dialogflow backend:
 
-```html
+{% tabs %}
+{% highlight Html tabtitle="Index.cshtml" %}
 
 @using Syncfusion.EJ2.InteractiveChat
-
 @{
     var currentUserModel = new ChatUIUser { Id = "user1", User = "Albert" };
     var botUserModel = new ChatUIUser { Id = "user2", User = "Bot", AvatarUrl = "https://ej2.syncfusion.com/demos/src/chat-ui/images/bot.png" };
 }
-
 <div id='chat-container' style="height: 400px; width: 400px;">
     <ejs-chatui id="chatUI" user="@currentUserModel" messageSend="onMessageSend" headerText="Bot" headerIconCss="e-header-icon"></ejs-chatui>
 </div>
-
 <script>
     var chatUIObj;
     var currentUserId = "@currentUserModel.Id";
     var botUser = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(botUserModel));
-
     document.addEventListener('DOMContentLoaded', function () {
         var chatUiEle = document.getElementById('chatUI');
         chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
     });
-
     function onMessageSend(args) {
         // The user message will be added automatically after this event
         // Send to backend
@@ -183,7 +180,6 @@ Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat
         });
     }
 </script>
-
 <style>
 .e-header-icon {
   background-image: url('https://ej2.syncfusion.com/demos/src/chat-ui/images/bot.png');
@@ -191,7 +187,9 @@ Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat
 }
 </style>
 
-```
+{% endhighlight %}
+{% endtabs %}
+
 > Ensure to include Syncfusion scripts and styles in _Layout.cshtml as per the getting started guide. Also, register `<ejs-scripts> in _Layout.cshtml.</ejs-scripts>`
 
 ## Run and Test
