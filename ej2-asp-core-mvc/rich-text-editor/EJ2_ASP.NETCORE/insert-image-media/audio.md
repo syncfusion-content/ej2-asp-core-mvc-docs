@@ -242,6 +242,50 @@ Sets the default display property for audio when it is inserted in the Rich Text
 {% endtabs %}
 {% endif %}
 
+## Drag and Drop Audio Insertion
+
+By default, the Rich Text Editor allows you to insert audios by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the audios to the server before inserting into the editor by configuring the saveUrl property.
+
+In the following sample, you can see feature demo.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/drag-drop/audio/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/drag-drop/audio/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/drag-drop/audio/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/drag-drop/audio/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+### Disabling Drag and Drop for Audios
+
+You can prevent drag-and-drop action by setting the actionBegin argument cancel value to true. The following code shows how to prevent the drag-and-drop.
+
+<script>
+
+    function actionBegin(args) {
+        if(args.type === 'drop' || args.type === 'dragstart') {
+            args.cancel =true;
+        }
+    }
+
+</script>
+
 ## Customizing the Audio Quick Toolbar
 
 The Rich Text Editor enables customization of the audio quick toolbar, allowing you to tailor its functionality with essential tools such as AudioReplace, Remove, and AudioLayoutOption.

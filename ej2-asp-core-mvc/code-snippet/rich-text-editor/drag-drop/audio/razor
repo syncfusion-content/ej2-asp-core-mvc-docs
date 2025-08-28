@@ -1,0 +1,4 @@
+@Html.EJS().RichTextEditor("drag-drop").InsertAudioSettings(obj => obj.SaveUrl("https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save")).Value(ViewBag.value).Render()
+
+
+

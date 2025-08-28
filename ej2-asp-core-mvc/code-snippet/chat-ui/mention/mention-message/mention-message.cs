@@ -16,8 +16,9 @@ public ActionResult Default()
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Yes, the design phase is complete.",
-        Author = MichaleUserModel
+        Text = "Yes {0}, the design phase is complete.",
+        Author = MichaleUserModel,
+        MentionUsers = new List<ChatUIUser> { CurrentUserModel }
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {

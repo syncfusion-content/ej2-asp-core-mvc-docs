@@ -14,22 +14,23 @@ public ActionResult Default()
     MentionUsers.Add(new ChatUIUser() { Id = "custom-user", User = "Reena" });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Hi Michale, are we on track for the deadline?",
+        Text = "Want to get coffee tomorrow?",
         Author = CurrentUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "Yes, the design phase is complete.",
+        Text = "Sure! What time?",
         Author = MichaleUserModel
     });
     ChatMessagesData.Add(new ChatUIMessage()
     {
-        Text = "I’ll review it and send feedback by today.",
-        Author = CurrentUserModel
+        Text = "{0} How about 10 AM?",
+        Author = CurrentUserModel,
+        MentionUsers = new List<ChatUIUser> { MichaleUserModel }
     });
     ViewBag.ChatMessagesData = ChatMessagesData;
     ViewBag.CurrentUser = CurrentUser;
     ViewBag.MentionUsers = MentionUsers;
-    ViewBag.Mentionchar = '@';
+    ViewBag.Mentionchar = '/';
     return View();
 }

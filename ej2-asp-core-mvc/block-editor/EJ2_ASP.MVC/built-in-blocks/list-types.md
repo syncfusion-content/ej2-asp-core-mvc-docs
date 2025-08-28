@@ -17,7 +17,7 @@ List blocks in the BlockEditor component are used to organize content into struc
 
 You can render Bullet List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`. This block type is used for unordered lists.
 
-#### Type
+### Type
 
 ```typescript
 // Adding bulletlist block
@@ -58,7 +58,7 @@ You can configure placeholder text for block using the [Placeholder](https://hel
 
 You can render Numbered List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as  `NumberedList`.This block type is used for ordered lists.
 
-#### Type
+### Type
 
 ```typescript
 // Adding numberedlist block
@@ -95,11 +95,11 @@ You can configure placeholder text for block using the [Placeholder](https://hel
 }
 ```
 
-## Configure check list
+## Configure checklist
 
 You can render Check List block by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Checklist`. This block type is used for creating interactive to-do lists.
 
-#### Type
+### Type
 
 ```typescript
 // Adding checklist block 
