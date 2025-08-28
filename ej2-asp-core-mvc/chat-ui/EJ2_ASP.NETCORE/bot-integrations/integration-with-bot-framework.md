@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integration of Microsoft Bot in ##Platform_Name## Chat UI Control | Syncfusion
+title: Microsoft Bot in ##Platform_Name## Chat UI Control | Syncfusion
 description: Checkout and learn about Integration of Microsoft Bot in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integration of Microsoft Bot
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integration of Microsoft Bot Framework With ASP.NET Core Chat UI component
+# Microsoft Bot Framework With ASP.NET Core Chat UI component
 
 The Syncfusion ASP.NET Core Chat UI supports integration with a Microsoft Bot Framework bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in an ASP.NET Core application.
 
