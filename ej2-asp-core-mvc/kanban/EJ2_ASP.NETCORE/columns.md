@@ -190,6 +190,33 @@ Output be like the below.
 
 ![kanban](./images/initially-collapsed.PNG)
 
+## Drag and Drop
+ 
+The Kanban component allows dynamic column reordering through drag-and-drop interactions. To enable this, set the [`allowColumnDragAndDrop`] property to true. Once enabled, users can rearrange columns by dragging a column header to a new position, with visual feedback highlighting potential drop locations.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/kanban/columns/drag-drop/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/columns/drag-drop/datasource.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+ 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/kanban/columns/drag-drop/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Datasource.cs" %}
+{% include code-snippet/kanban/columns/drag-drop/datasource.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Stacked headers
 
 Stacked headers are the additional headers to column header that will group the similar columns.
