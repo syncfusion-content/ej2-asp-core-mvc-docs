@@ -1,0 +1,27 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.data" height="273" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Cancel", "Update" })" emptyRecordTemplate="#emptytemplate" childMapping="Children" treeColumnIndex="1" allowPaging="true">
+    <e-treegrid-pagesettings pageSize="7"></e-treegrid-pagesettings>
+    <e-treegrid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-treegrid-editSettings>
+    <e-treegrid-columns>
+        <e-treegrid-column field="TaskId" headerText="Task ID" isPrimaryKey="true" textAlign="Right" width="95"></e-treegrid-column>
+        <e-treegrid-column field="TaskName" headerText="Task Name" width="220"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="115"></e-treegrid-column>
+        <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="100"></e-treegrid-column>
+    </e-treegrid-columns>
+</ejs-treegrid>
+
+<script id="emptytemplate" type="text/x-template">
+    <div class='emptyRecordTemplate'>
+        <img src="@Url.Content("~/image/emptyRecordTemplate.svg")" class="e-emptyRecord" alt="No record">
+        <span>There is no data available to display at the moment.</span>
+    </div>
+</script>
+
+<style>
+    .emptyRecordTemplate {
+        text-align: center;
+    }
+    .e-emptyRecord {
+        display: block;
+        margin: 10px auto;
+    }
+</style>
