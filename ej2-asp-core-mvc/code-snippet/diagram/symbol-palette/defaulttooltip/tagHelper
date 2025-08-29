@@ -1,2 +1,2 @@
-<ejs-symbolpalette id="symbolpalette" getSymbolInfo="@ViewBag.getSymbolInfo" palettes="@ViewBag.palettes">
+<ejs-symbolpalette id="symbolpalette" width="700px" height="300px" getSymbolInfo="@ViewBag.getSymbolInfo" getNodeDefaults="@ViewBag.getNodeDefaults"  palettes="@ViewBag.palettes" symbolMargin="new SymbolPaletteMargin() { Left=15,Right=15,Top=15,Bottom=15}" symbolHeight="70" symbolWidth="70" expandMode="@ViewBag.Multiple">
 </ejs-symbolpalette>

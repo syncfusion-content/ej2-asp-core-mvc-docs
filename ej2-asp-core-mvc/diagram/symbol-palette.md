@@ -409,12 +409,14 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 {% endtabs %}
 {% endif %}
 
-### How to enable or disable the default tooltip for shapes in the Symbol Palette
 
-The `showIdAsTooltip` property lets you control whether the default tooltip appears for symbols in the Symbol Palette. Set this property to false to disable the default tooltip, or to true to enable it. If showIdAsTooltip is not explicitly set, the default tooltip will be displayed.
-To control tooltip behavior for each symbol, use the `getSymbolInfo` property. This allows you to selectively enable or disable tooltips for specific symbols within the palette, providing flexibility in how tooltips are presented.
+### Controlling default tooltip display
 
-The following code example demonstrates how to enable or disable the default tooltip for shapes in the Symbol Palette.
+The `showTooltip` property within the getSymbolInfo event callback provides granular control over default tooltip visibility for individual symbols. This enables selective tooltip management based on symbol type, user permissions, or application state.
+
+Setting `showTooltip` to `true` enables the default tooltip, while `false` disables it. When not explicitly configured, the default tooltip behavior is maintained.
+
+The following example demonstrates selective tooltip control:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -438,20 +440,15 @@ The following code example demonstrates how to enable or disable the default too
 
 ```javascript
 
+ function getNodeDefaults(symbol) {
+    symbol.style = {
+        strokeColor = '#6495ED',
+        fill = '#6495ED'
+    };
+}
+
  function getSymbolInfo(symbol) {
-    //custom tooltip will be shown for the rectangle shape
-    if (symbol.id === 'rectangle') {
-        return { showIdAsTooltip: true};
-    } 
-    //default tooltip will be shown for the plus shapes
-    if(symbol.id === 'plus') {
-        return { showIdAsTooltip: true };
-    }
-    //default tooltip will not be shown for the triangle shape
-    if (symbol.id === 'triangle') {
-      return { showIdAsTooltip: false };
-    }
-    return { width: 50, height: 50 };
+    return { showTooltip: true };
 }
 
 ```
