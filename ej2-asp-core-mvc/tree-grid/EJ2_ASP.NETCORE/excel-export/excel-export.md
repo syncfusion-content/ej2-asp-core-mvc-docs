@@ -65,6 +65,21 @@ You can persist the collapsed state in the exported document by defining `isColl
 {% endtabs %}
 {% endif %}
 
+## Exporting custom aggregates in TreeGrid  
 
+The TreeGrid enables exporting custom aggregates, which summarize column data, to an Excel document using the `excelAggregateQueryCellInfo` event.  
+ 
+In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `excelAggregateQueryCellInfo` event customizes the exported cell values in the Excel document.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/excel-export/custom-aggregate-excel/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="empty-record-template.cs" %}
+{% include code-snippet/tree-grid/excel-export/custom-aggregate-excel/custom-aggregate-excel.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Excel Custom Aggregates ](../images/custom-aggregate-excel.png)
 
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

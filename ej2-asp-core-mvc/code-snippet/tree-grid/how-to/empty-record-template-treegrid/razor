@@ -1,0 +1,24 @@
+@Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+   col.Field("TaskId").HeaderText("Task ID").Width(70).IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("TaskName").HeaderText("Task Name").Width(160).Add();
+   col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+   col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).ChildMapping("Children").TreeColumnIndex(1).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal);}).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).EmptyRecordTemplate("#emptytemplate").Render()
+
+<script id="emptytemplate" type="text/x-template">
+    <div class='emptyRecordTemplate' >
+       < img src="@Url.Content("~/images/emptyRecordTemplate.svg")" class="e-emptyRecord" alt="No record">
+        <span>There is no data available to display at the moment.</span>
+    </div>
+</script>
+
+<style>
+    .emptyRecordTemplate {
+        text-align: center;
+    }
+    .e-emptyRecord {
+        display: block;
+        margin: 10px auto;
+    }
+</style>
