@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Empty Record Template in Syncfusion ASP.NET Core TreeGrid
+title: Empty Record Template in Syncfusion ASP.NET Core TreeGrid
 description: Learn here all about Customize the Empty Record Template in Syncfusion ASP.NET Core TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize the Empty Record Template
