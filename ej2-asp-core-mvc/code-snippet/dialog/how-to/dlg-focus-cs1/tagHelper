@@ -1,0 +1,26 @@
+<div id='container' style="height:400px;">
+    <ejs-button id="openBtn" content="Open Dialog"></ejs-button>
+    <ejs-dialog id="dialog" header="Delete Multiple Items" showCloseIcon="true" target="#container" width="300px" height="auto" animationSettings="@(new { effect = "Zoom" })" beforeClose="onBeforeClose">
+        <e-content-template>
+            <div>Are you sure you want to permanently delete all of these items?</div>
+        </e-content-template>
+        <e-dialog-buttons>
+            <e-dialog-dialogbutton buttonModel="@(new { isPrimary = true, content = "Yes" })" click="btnClick"></e-dialog-dialogbutton>
+            <e-dialog-dialogbutton buttonModel="@(new { content = "No" })" click="btnClick"></e-dialog-dialogbutton>
+        </e-dialog-buttons>
+    </ejs-dialog>
+</div>
+
+<script>
+        document.getElementById('openBtn').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+        function btnClick() {
+            var dialogObj = document.getElementById('dialog').ej2_instances[0];
+            dialogObj.hide();
+        }
+        function onBeforeClose(args) {
+            args.preventFocus = true;
+        }
+    </script>
