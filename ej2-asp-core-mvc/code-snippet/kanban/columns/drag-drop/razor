@@ -1,0 +1,11 @@
+@model List<KanbanSample.Controllers.KanbanDataModels>
+
+@Html.EJS().Kanban("kanban").KeyField("Status").AllowColumnDragAndDrop(true).DataSource((IEnumerable<object>)Model).Columns(col =>
+		{
+	   col.HeaderText("To Do").KeyField("Open").Add();
+	   col.HeaderText("In Progress").KeyField("InProgress").Add();
+	   col.HeaderText("Testing").KeyField("Testing").Add();
+	   col.HeaderText("Done").KeyField("Close").Add();
+   }).CardSettings(card =>  {
+	   card.ContentField("Summary").HeaderField("Id");
+   }).Render()
