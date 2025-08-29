@@ -1,0 +1,110 @@
+  
+@(Html.EJS().AccumulationChart("container").Series(series =>
+            {
+                series.DataSource(ViewBag.dataSource)
+                      .XName("x")
+                      .YName("y")
+                      .Name("Browser")
+                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+                      .ExplodeIndex(0).Add();
+            })
+            .EnableSmartLabels(true)
+            .Title("Mobile Browser Statistics").NoDataTemplate("#No-Data-Template").Load("load").Loaded("loaded")
+            .LegendSettings(ls => ls.Visible(false)).Render()
+)
+<style>
+        #noDataTemplateContainer {
+            height: inherit;
+            width: inherit;
+        }
+
+        .load-data-btn {
+            border-radius: 4px;
+            margin-top: 75px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .light-bg {
+            background-color: #fafafa;
+            color: #000000;
+        }
+
+        .template-align img {
+            max-width: 150px;
+            /* Adjust size as needed */
+            max-height: 150px;
+            margin-top: 55px;
+        }
+
+        .template-align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #control-container {
+            padding: 0px !important;
+        }
+
+        #noDataButtonOverlay {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+    </style>
+    @*custom code end*@
+    <div id="noDataButtonOverlay" style="display: none;">
+        @Html.EJS().Button("loadDataButton").Content("Load data").IconCss("e-icons e-refresh").CssClass("load-data-btn e-outline").IsPrimary(false).HtmlAttributes(new Dictionary<string, object> { { "onclick", "loadChartData()" } }).Render()
+    </div>
+
+    <script id='No-Data-Template' type="text/x-template">
+                <div id='noDataTemplateContainer' class="light-bg">
+                    <div class="template-align">
+                        <img src="@Url.Content("~/Content/chart/no-data.png")" alt="No Data" />
+                    </div>
+                    <div class="template-align">
+                        <p style="font-size: 15px; margin: 10px 0 0;"><strong>No data available to display.</strong></p>
+                    </div>
+                </div>
+            </script>
+    <script>
+        var chartData = [
+            { x : "Chrome", y : 37 },
+            { x : "UC Browser", y : 17 },
+            { x : "iPhone", y : 19 },
+            { x : "Others", y : 4  },
+            { x : "Opera", y : 11 },
+            { x : "Android", y : 12 },
+        ];
+        var dataLoaded = false;
+
+        var load = function (args) {
+            args.chart.series[0].dataSource = dataLoaded ? chartData : [];
+        };
+
+        var loaded = function (args) {
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            if (buttonOverlay) {
+                buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
+            }            
+        };
+        
+        var loadChartData = function () {
+            var chart = document.getElementById('container').ej2_instances[0];
+            chart.series[0].dataSource = chartData;
+            chart.series[0].animation.enable = true;
+            dataLoaded = true;
+            
+            // Hide the button overlay when data is loaded
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            if (buttonOverlay) {
+                buttonOverlay.style.display = 'none';
+            }
+            
+            chart.refresh();
+        };
+    </script>

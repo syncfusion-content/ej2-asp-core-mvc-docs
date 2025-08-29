@@ -1,0 +1,114 @@
+@(Html.EJS().Chart("container").Series(series =>
+        {
+            series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line).XName("x").YName("y").Width(2).Marker(mk => mk.Visible(true).Width(7).Height(7)).Animation(an => an.Enable(true)).Add();
+        }).PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category).MajorGridLines(mg => mg.Width(0)).MajorTickLines(mt => mt.Width(0))
+        ).PrimaryYAxis(py => py.Title("Production (in million pounds)").TitleStyle(ts => ts.FontWeight("600")).LineStyle(ls => ls.Width(0)).MajorTickLines(mt => mt.Width(0))
+        ).ChartArea(ca => ca.Border(br => br.Width(0))).Title("Milk Production in US - 2025").SubTitle("Source: nass.usda.gov").Tooltip(tl =>
+        tl.Enable(true).Header("Milk Production").Format("${point.x} : <b>${point.y}M</b>")
+        ).NoDataTemplate("#No-Data-Template").LegendSettings(lg =>
+        lg.Visible(false)).Load("load").Loaded("loaded").Width("100%").Render()
+)
+<style>
+        #noDataTemplateContainer {
+            height: inherit;
+            width: inherit;
+        }
+
+        .load-data-btn {
+            border-radius: 4px;
+            margin-top: 75px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .light-bg {
+            background-color: #fafafa;
+            color: #000000;
+        }
+
+        .template-align img {
+            max-width: 150px;
+            /* Adjust size as needed */
+            max-height: 150px;
+            margin-top: 55px;
+        }
+
+        .template-align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #control-container {
+            padding: 0px !important;
+        }
+
+        #noDataButtonOverlay {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+
+    </style>
+    @*custom code end*@
+    <div id="noDataButtonOverlay" style="display: none;">
+        @Html.EJS().Button("loadDataButton").Content("Load data").IconCss("e-icons e-refresh").CssClass("load-data-btn e-outline").IsPrimary(false).HtmlAttributes(new Dictionary<string, object> { { "onclick", "loadChartData()" } }).Render()
+    </div>
+
+    <script id='No-Data-Template' type="text/x-template">
+                <div id='noDataTemplateContainer' class="light-bg">
+                    <div class="template-align">
+                        <img src="no-data.png" alt="No Data" />
+                    </div>
+                    <div class="template-align">
+                        <p style="font-size: 15px; margin: 10px 0 0;"><strong>No data available to display.</strong></p>
+                    </div>
+                </div>
+            </script>
+    <script>
+        var chartData = [
+            { x: "January", y: 19173 },
+            { x: "February", y: 17726 },
+            { x: "March", y: 19874 },
+            { x: "April", y: 19391 },
+            { x: "May", y: 20072 },
+            { x: "June", y: 19233 }
+        ];
+        var dataLoaded = false;
+        
+        var load = function (args) {
+            args.chart.series[0].dataSource = (dataLoaded ? chartData : []);
+        };
+
+        var loaded = function (args) {
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            if (buttonOverlay) {
+                buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
+            }            
+        };
+        
+        var loadChartData = function () {
+            var chart = document.getElementById('container').ej2_instances[0];
+            chart.series[0].dataSource = chartData;
+            var values = chartData.map(d => d.y);
+            var min = Math.min(...values);
+            var max = Math.max(...values);
+            var range = max - min;
+            chart.primaryYAxis.minimum = Math.floor(min - range * 0.1);
+            chart.primaryYAxis.maximum = Math.ceil(max + range * 0.1);
+            chart.primaryYAxis.interval = Math.ceil(range / 5);
+            chart.series[0].animation.enable = true;
+            dataLoaded = true;
+            
+            // Hide the button overlay when data is loaded
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            if (buttonOverlay) {
+                buttonOverlay.style.display = 'none';
+            }
+            
+            chart.refresh();
+        };
+    </script>
