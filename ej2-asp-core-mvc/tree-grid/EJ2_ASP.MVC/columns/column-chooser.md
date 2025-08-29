@@ -62,7 +62,7 @@ The Column chooser can be displayed on a page through external button by invokin
 
 ## Column chooser template in Syncfusion ##Platform_Name## TreeGrid
 
-The column chooser template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [ShowColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ShowColumnChooser) to **true** and add **ColumnChooser** to the [Toolbar](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property.
+The column chooser template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set `ShowColumnChooser` to **true** and add **ColumnChooser** to the `Toolbar` property.
 
 To implement a custom column chooser template in the TreeGrid, use the following properties:
 
@@ -87,6 +87,6 @@ The column chooser footer is customized using `ColumnChooserSettings.FooterTempl
 {% endhighlight %}
 {% endtabs %}
 
-![Column Chooser Template TreeGrid](../images/column-chooser-template)
+![Column Chooser Template TreeGrid](../../images/column-chooser-template.png)
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
