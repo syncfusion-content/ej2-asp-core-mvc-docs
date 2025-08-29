@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent Focus to previous element in ##Platform_Name## Dialog
+title: Prevent Focus to previous element in ##Platform_Name## | Syncfusion
 description: Learn here all about Prevent the Focus to previous element in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Prevent the focus to the previous element
