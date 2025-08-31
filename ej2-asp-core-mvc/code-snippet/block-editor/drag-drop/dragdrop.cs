@@ -6,7 +6,8 @@ public ActionResult DragDrop()
 {
         BlocksData.Add(new Block() {
                 Id = "block-1",
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1},
                 Content = new List<object>()
                 {
                         new{
@@ -17,7 +18,7 @@ public ActionResult DragDrop()
         });
         BlocksData.Add(new Block() {
                 Id = "block-2",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new {
@@ -28,7 +29,7 @@ public ActionResult DragDrop()
         });
         BlocksData.Add(new Block() {
                 Id = "block-3",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new {
@@ -39,7 +40,7 @@ public ActionResult DragDrop()
         });
         BlocksData.Add(new Block() {
                 Id = "block-4",
-                Type = "NumberedList",
+                Type = BlockType.NumberedList,
                 Content = new List<object>()
                 {
                         new {
@@ -50,7 +51,7 @@ public ActionResult DragDrop()
         });
         BlocksData.Add(new Block() {
                 Id = "block-5",
-                Type = "NumberedList",
+                Type = BlockType.NumberedList,
                 Content = new List<object>()
                 {
                         new {

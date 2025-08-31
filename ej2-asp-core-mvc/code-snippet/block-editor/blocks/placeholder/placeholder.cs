@@ -5,7 +5,7 @@ public List<Block> BlocksData { get; set; } = new List<Block>();
 public ActionResult Placeholder()
 {
         BlocksData.Add(new Block() {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>(){
                         new{
                                 type = "Text",
@@ -14,11 +14,11 @@ public ActionResult Placeholder()
                 }
         });
         BlocksData.Add(new Block() {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>(){
                         new{
                                 type = "Text",
-                                placeholder = "Start typing your notes or press \"/\" for commands..."
+                                props= new { placeholder = "Start typing your notes or press \"/\" for commands..." }
                         }
                 }
         });

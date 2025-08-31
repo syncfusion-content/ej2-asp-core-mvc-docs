@@ -6,8 +6,8 @@ public ActionResult Image()
 {
         BlocksData.Add(new Block
         {
-                Type = "Image",
-                ImageSettings = new
+                Type = BlockType.Image,
+                Props = new
                 {
                         src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
                         altText = "Sample image"
@@ -15,7 +15,7 @@ public ActionResult Image()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new 

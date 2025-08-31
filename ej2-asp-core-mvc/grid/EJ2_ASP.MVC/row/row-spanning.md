@@ -44,3 +44,37 @@ In the following code example, **Davolio** cell is spanned to two rows in the **
     6. Inline editing
     7. Batch editing
     8. CRUD
+
+## Row spanning using enableRowSpan property    
+
+The Syncfusion ASP.NET MVC Grid introduces a simplified approach to vertically merge cells using the `EnableRowSpan` property. 
+
+When the `EnableRowSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event. These merged cells are visually combined into a single cell, improving readability.
+
+Here is an example of how to use the `EnableRowSpan` property to merge cells vertically:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid/row/row-spanning/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Span.cs" %}
+{% include code-snippet/grid/row/row-spanning/row-span.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Row spanning](../images/row/row-spanning.png)
+
+> You can also control spanning at the column level. To prevent merging for specific columns, set `EnableRowSpan` to **false** in the column definition.
+
+### Limitation
+
+* Virtualization
+* Infinite Scrolling
+* Lazy Load Grouping
+* Row Drag and Drop
+* Column Virtualization
+* Detail Template
+* Editing
+* Export
+* Foreign Key
+* Hierarchy Grid
