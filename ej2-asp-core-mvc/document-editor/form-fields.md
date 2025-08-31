@@ -72,6 +72,22 @@ dropdownfieldInfo.dropDownItems = ['One','Two', 'Three']
 documentEditor.setFormFieldInfo('Drop1',dropdownfieldInfo);
 ```
 
+## Form Field Shading
+
+You can customize form field shading at the application level using the `formFieldSettings` property.
+
+The example code below demonstrates how to set a custom shading color and how to disable shading (by default, shading is enabled).
+
+```typescript
+// Set a custom shading color (for example, white) 
+container.documentEditorSettings.formFieldSettings.shadingColor = '#ffffff';
+
+// Disable form field shading entirely 
+container.documentEditorSettings.formFieldSettings.applyShading = false;
+```
+
+N> This customization only affects the application UI and will not be preserved when exporting the document.
+
 ## Export form field data
 
 Data of the all Form fields in the document can be exported using `exportFormData`.
@@ -113,7 +129,8 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/protect-unprotect/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Protect-unprotect.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -122,7 +139,8 @@ Document editor provides an option to protect and unprotect document using `enfo
 {% include code-snippet/document-editor-container/protect-unprotect/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Protect-unprotect.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 N> In enforce Protection method, first parameter denotes password and second parameter denotes protection type. Possible values of protection type are `NoProtection |ReadOnly |FormFieldsOnly |CommentsOnly`. In stop protection method, parameter denotes the password.
