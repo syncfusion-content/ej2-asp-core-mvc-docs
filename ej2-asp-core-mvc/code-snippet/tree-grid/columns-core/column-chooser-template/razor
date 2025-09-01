@@ -1,0 +1,126 @@
+
+@Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.sampleData).ChildMapping("subtasks").TreeColumnIndex(1).ShowColumnChooser(true).Toolbar(new List<string> { "ColumnChooser" }).ColumnChooserSettings(cc => { cc.HeaderTemplate("#ccHeaderTemplate"); cc.Template("#ccContentTemplate"); cc.FooterTemplate("#ccFooterTemplate"); cc.EnableSearching(true); }).Columns(col =>
+{
+   col.Field("taskID").HeaderText("Task ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+   col.Field("taskName").HeaderText("Task Name").Width(240).ShowInColumnChooser(false).Add();
+   col.Field("startDate").HeaderText("Start Date").Width(110).Format("yMd").Add();
+   col.Field("endDate").HeaderText("End Date").Width(110).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Format("yMd").Add();
+   col.Field("duration").HeaderText("Duration").Width(100).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("progress").HeaderText("Progress").Width(100).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("priority").HeaderText("Priority").Width(90).Add();
+}).Height(315).Created("onCreated").Render()
+   
+<script type="text/x-template" id="ccHeaderTemplate">
+    <div class="e-cc-header">Choose Columns</div>
+</script>
+
+<script type="text/x-template" id="ccContentTemplate">
+    <div id="customColumnChooser"></div>
+</script>
+
+<script type="text/x-template" id="ccFooterTemplate">
+    <div class="e-cc-footer">
+        <button id="submitButton">Apply</button>
+        <button id="abortButton">Cancel</button>
+    </div>
+</script>   
+
+< script >
+    let treeObj;
+    let treeData = [];
+
+    function renderCustomColumnChooser(targetElement, columns) {
+        const parentNodes = [
+            { id: 1, name: 'Task Info', hasChild: true, expanded: true },
+            { id: 2, name: 'Schedule', hasChild: true, expanded: true },
+            { id: 3, name: 'Progress', hasChild: true, expanded: true },
+        ];
+
+        treeData = columns.map(column => {
+            let parentId;
+            switch (column.field) {
+                case 'taskID':
+                case 'taskName':
+                    parentId = 1;
+                    break;
+                case 'startDate':
+                case 'endDate':
+                    parentId = 2;
+                    break;
+                case 'duration':
+                case 'progress':
+                case 'priority':
+                    parentId = 3;
+                    break;
+            }
+            return {
+                id: column.uid,
+                name: column.headerText,
+                pid: parentId,
+                isChecked: column.visible
+            };
+        });
+
+        const uniquePids = [...new Set(treeData.map(item => item.pid))];
+        const filteredParents = parentNodes.filter(parent => uniquePids.includes(parent.id));
+        treeData.push(...filteredParents);
+
+        treeObj = new ej.navigations.TreeView({
+            fields: { dataSource: treeData, id: 'id', parentID: 'pid', text: 'name', hasChildren: 'hasChild' },
+            showCheckBox: true,
+            nodeClicked: nodeCheck,
+            keyPress: nodeCheck,
+            cssClass: "no-border"
+        });
+
+        treeObj.appendTo(targetElement);
+    }
+
+    function nodeCheck(args) {
+        const node = args.node;
+        const getNodeDetails = treeObj.getNode(node);
+        const checkedNode = [node];
+        if (args.event.target.classList.contains('e-fullrow') || args.event.key === "Enter") {
+            if (getNodeDetails.isChecked === 'true') {
+                treeObj.uncheckAll(checkedNode);
+            } else {
+                treeObj.checkAll(checkedNode);
+            }
+        }
+    }
+
+    function columnChooserSubmit() {
+        const checkedElements = [];
+        const uncheckedElements = [];
+        const treeItems = document.querySelectorAll('.e-list-item');
+        treeItems.forEach(item => {
+            const itemDetails = treeObj.getNode(item);
+            if (!itemDetails.hasChildren) {
+                if (item.getAttribute('aria-checked') === 'true') {
+                    checkedElements.push(itemDetails.text);
+                } else {
+                    uncheckedElements.push(itemDetails.text);
+                }
+            }
+        });
+
+        const visibleColumns = checkedElements;
+        const hiddenColumns = uncheckedElements;
+        treeGridObj.grid.columnChooserModule.changeColumnVisibility({ visibleColumns, hiddenColumns });
+    }
+
+    function onCreated() {
+        new ej.buttons.Button().appendTo('#submitButton');
+        new ej.buttons.Button().appendTo('#abortButton');
+        document.getElementById('submitButton').onclick = columnChooserSubmit;
+        document.getElementById('abortButton').onclick = () => {
+            treeGridObj.grid.columnChooserModule.hideDialog();
+        };
+    }
+
+    let treeGridObj;
+    document.addEventListener('DOMContentLoaded', function () {
+        treeGridObj = document.getElementById('TreeGrid').ej2_instances[0];
+        treeGridObj.columnChooserSettings.renderCustomColumnChooser = renderCustomColumnChooser;
+    });
+</script>
