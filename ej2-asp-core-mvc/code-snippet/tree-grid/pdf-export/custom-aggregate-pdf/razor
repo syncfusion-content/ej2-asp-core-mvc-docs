@@ -1,0 +1,71 @@
+@Html.EJS().TreeGrid("TreeGrid").DataSource((IEnumerable<object>)ViewBag.summaryData).ChildMapping("subtasks").TreeColumnIndex(1).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).AllowPdfExport(true).Toolbar(new List<string> { "PdfExport" }).Height(400).Width("auto").Columns(col =>
+{
+   col.Field("ID").HeaderText("Order ID").Width(115).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+   col.Field("Name").HeaderText("Shipment Name").Width(230).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+   col.Field("shipmentDate").HeaderText("Shipment Date").Width(135).Type("date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("category").HeaderText("Category").Width(220).MinWidth(210).Add();
+   col.Field("units").HeaderText("Total Units").Width(90).Type("number").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("unitPrice").HeaderText("Unit Price($)").Width(100).Type("number").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("price").HeaderText("Price($)").Width(140).Type("number").Format("C0").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).Aggregates(agg => {
+        agg.ShowChildSummary(false).Columns(col =>
+        { col.Type("Custom").CustomAggregate("customAggregateFn").ColumnName("category").Format("C2").FooterTemplate("<span>Count of <input type='text' id='customers' /> : ${Custom}</span>").Add();}).Add();
+}).PdfAggregateQueryCellInfo("formatPdfAggregateCell").DataBound("onDataBound").Render()
+<script>
+    let selectedCategory = 'Seafood';
+    let categoryDropdown;
+
+    const categoryOptions = [
+        { food: 'Seafood' },
+        { food: 'Dairy' },
+        { food: 'Edible' },
+        { food: 'Crystal' },
+    ];
+
+    function customAggregateFn(data) {
+        const records = data.result ? data.result : data;
+        return records.reduce((count, item) => {
+            return item.category === selectedCategory ? count + 1 : count;
+        }, 0);
+    }
+
+    function formatPdfAggregateCell(args) {
+        if (args.column.headerText === 'Category') {
+            args.value = `Count of ${selectedCategory} : ${args.data.category.Custom}`;
+        }
+    }
+
+    function onDataBound() {
+        if (categoryDropdown && categoryDropdown.element && categoryDropdown.element.classList.contains('e-dropdownlist')) {
+            categoryDropdown.destroy();
+        }
+
+        categoryDropdown = new ej.dropdowns.DropDownList({
+            dataSource: categoryOptions,
+            fields: { value: 'food' },
+            placeholder: 'Select a Category',
+            width: '110px',
+            value: selectedCategory,
+            change: () => {
+                setTimeout(() => {
+                    if (categoryDropdown && categoryDropdown.value) {
+                        selectedCategory = categoryDropdown.value.toString();
+                        treeGridObj.refresh();
+                    }
+                }, 300);
+            }
+        });
+
+        categoryDropdown.appendTo('#customers');
+      }
+
+      let treeGridObj;
+      document.addEventListener('DOMContentLoaded', function () {
+         treeGridObj = document.getElementById('TreeGrid').ej2_instances[0];
+         treeGridObj.toolbarClick = function (args) {
+               if (args.item.text === 'PDF Export') {
+                  treeGridObj.pdfExport({ pageOrientation: 'Landscape' });
+               }
+         };
+      });
+</script>

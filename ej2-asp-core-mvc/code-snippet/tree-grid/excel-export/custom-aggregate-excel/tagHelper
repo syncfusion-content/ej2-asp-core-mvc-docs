@@ -1,0 +1,76 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" childMapping="subtasks" treeColumnIndex="1" height="400" gridLines="Both" allowExcelExport="true" toolbar="@(new List<string>() { "ExcelExport", "CsvExport" })" dataBound="onDataBound" excelAggregateQueryCellInfo="formatExcelAggregateCell">
+    <e-treegrid-columns>
+        <e-treegrid-column field="ID" headerText="Order ID" width="115" textAlign="Left"></e-treegrid-column>
+        <e-treegrid-column field="Name" headerText="Shipment Name" width="230" clipMode="EllipsisWithTooltip"></e-treegrid-column>
+        <e-treegrid-column field="shipmentDate" headerText="Shipment Date" width="135" type="date" format="yMd" textAlign="Right"></e-treegrid-column>
+        <e-treegrid-column field="category" headerText="Category" width="220" minWidth="210"></e-treegrid-column>
+        <e-treegrid-column field="units" headerText="Total Units" width="90" type="number" textAlign="Right"></e-treegrid-column>
+        <e-treegrid-column field="unitPrice" headerText="Unit Price($)" width="100" type="number" format="C2" textAlign="Right"></e-treegrid-column>
+        <e-treegrid-column field="price" headerText="Price($)" width="140" type="number" format="C0" textAlign="Right"></e-treegrid-column>
+    </e-treegrid-columns>
+
+    <e-treegrid-aggregates>
+        <e-treegrid-aggregate showChildSummary="false">
+            <e-treegrid-aggregate-columns>
+					<e-treegrid-aggregate-column type="Custom" columnName="category" format="C2" footerTemplate="<span>Count of <input type='text' id='customers' /> : ${Custom}</span>" customAggregate="customAggregateFn"></e-treegrid-aggregate-column>
+            </e-treegrid-aggregate-columns>
+        </e-treegrid-aggregate>
+    </e-treegrid-aggregates>
+</ejs-treegrid>
+
+<script>
+    var selectedCategory = 'Seafood';
+    var categoryDropdown = null;
+
+    var categoryOptions = [
+        { food: 'Seafood' },
+        { food: 'Dairy' },
+        { food: 'Edible' },
+        { food: 'Crystal' }
+    ];
+
+    function customAggregateFn(data) {
+        var records = data.result ? ej.grids.getObject('result', data) : data;
+        return records.reduce(function (count, item) {
+            var category = ej.grids.getObject('category', item);
+            return category === selectedCategory ? count + 1 : count;
+        }, 0);
+    }
+
+    function formatExcelAggregateCell(args) {
+        if (args.cell.column.headerText === 'Category') {
+            args.style.value = 'Count of ' + selectedCategory + ' : ' + args.row.data.category.Custom;
+        }
+    }
+
+    function onDataBound() {
+        if (categoryDropdown && categoryDropdown.element && categoryDropdown.element.classList.contains('e-' + categoryDropdown.getModuleName())) { categoryDropdown.destroy();}
+
+        categoryDropdown = new ej.dropdowns.DropDownList({
+            dataSource: categoryOptions,
+            fields: { value: 'food' },
+            placeholder: 'Select a Category',
+            width: '110px',
+            value: selectedCategory,
+            change: function () {
+                setTimeout(function () {
+                    if (categoryDropdown && categoryDropdown.value) {
+                        selectedCategory = categoryDropdown.value.toString();
+                        var treeGrid = document.getElementById('TreeGrid').ej2_instances[0];
+                        treeGrid.refresh();
+                    }
+                }, 300);
+            }
+        });
+
+        categoryDropdown.appendTo('#customers');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var treeGrid = document.getElementById('TreeGrid').ej2_instances[0];
+        treeGrid.customAggregate = customAggregateFn;
+        treeGrid.excelAggregateQueryCellInfo = formatExcelAggregateCell;
+        treeGrid.dataBound = onDataBound;
+    });
+</script>
+
