@@ -1,121 +1,108 @@
-@{
-    List<PieChartData> chartData = new List<PieChartData>
-    {
-        new PieChartData { xValue = "Chrome", yValue = 37 },
-        new PieChartData { xValue = "UC Browser", yValue = 17 },
-        new PieChartData { xValue = "iPhone", yValue = 19 },
-        new PieChartData { xValue = "Others", yValue = 4  },
-        new PieChartData { xValue = "Opera", yValue = 11 },
-        new PieChartData { xValue = "Android", yValue = 12 },
-    };
-
-}
-
-
-<ejs-accumulationchart id="lineContainer" title="Mobile Browser Statistics" load="load" loaded="loaded" noDataTemplate="noDataTemplate">
+<ejs-accumulationchart id="lineContainer" title="Mobile Browser Statistics" load="load" loaded="loaded">
     <e-accumulationchart-legendsettings visible="false">
     </e-accumulationchart-legendsettings>
     <e-accumulation-series-collection>
-        <e-accumulation-series dataSource="@chartData" xName="xValue" yName="yValue" name="Browser">
+        <e-accumulation-series xName="x" yName="y" name="Browser">
         </e-accumulation-series>
     </e-accumulation-series-collection>
 </ejs-accumulationchart>
 <div id="noDataButtonOverlay" class="no-data-button-overlay" style="display: none;">
-                <ejs-button id="loadDataButton" content="Load data" iconCss="e-icons e-refresh" onclick="loadChartData()"
-                           cssClass="load-data-btn e-outline" isPrimary="false">
-                </ejs-button>
-            </div>
+    <ejs-button id="loadDataButton" content="Load data" iconCss="e-icons e-refresh" onclick="loadChartData()"
+        cssClass="load-data-btn e-outline" isPrimary="false">
+    </ejs-button>
+</div>
 
-            <style>
-        .no-data-button-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-top: 60px; /* Position below the no-data message */
-            z-index: 10;
-        }
+<style>
+    .no-data-button-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 60px;
+        /* Position below the no-data message */
+        z-index: 10;
+    }
 
-        #noDataTemplateContainer {
-            height: inherit;
-            width: inherit;
-        }
+    #noDataTemplateContainer {
+        height: inherit;
+        width: inherit;
+    }
 
-        .load-data-btn {
-            margin-top: 55px;
-            border-radius: 4px !important;
-        }
-        
-        .load-data-btn .e-btn-icon {
-            margin-right: 8px;
-        }
+    .load-data-btn {
+        margin-top: 55px;
+        border-radius: 4px !important;
+    }
 
-        .light-bg {
-            background-color: #fafafa;
-            color: #000000;
-        }
+    .load-data-btn .e-btn-icon {
+        margin-right: 8px;
+    }
 
-        .template-align img {
-            max-width: 150px;
-            /* Adjust size as needed */
-            max-height: 150px;
-            margin-top: 55px;
-        }
+    .light-bg {
+        background-color: #fafafa;
+        color: #000000;
+    }
 
-        .template-align {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+    .template-align img {
+        max-width: 150px;
+        /* Adjust size as needed */
+        max-height: 150px;
+        margin-top: 55px;
+    }
 
-        #control-container {
-            padding: 0px !important;
-        }
-    </style>
-    @*custom code end*@
-    <script src="~/scripts/chart/theme-color.js"></script>
-    <script id='No-Data-Template' type="text/x-template">
+    .template-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #control-container {
+        padding: 0px !important;
+    }
+</style>
+@*custom code end*@
+<script src="~/scripts/chart/theme-color.js"></script>
+<script id='No-Data-Template' type="text/x-template">
         <div id='noDataTemplateContainer' class="light-bg">
             <div class="template-align">
-                <img src="./../scripts/chart/images/no-data.png" alt="No Data" />
+                <img src="no-data.png" alt="No Data" />
             </div>
             <div class="template-align">
                 <p style="font-size: 15px; margin: 10px 0 10px;"><strong>No data available to display.</strong></p>
             </div>
         </div>
         </script>
-    <script>
-        var chartData = [
-            { x : "Chrome", y : 37 },
-            { x : "UC Browser", y : 17 },
-            { x : "iPhone", y : 19 },
-            { x : "Others", y : 4  },
-            { x : "Opera", y : 11 },
-            { x : "Android", y : 12 },
-        ];
-        var dataLoaded = false;
-        function load(args) {
-            args.chart.noDataTemplate = "#No-Data-Template";
-            args.chart.series[0].dataSource = (dataLoaded ? chartData : []);
-        }
+<script>
+    var chartData = [
+        { x: "Chrome", y: 37 },
+        { x: "UC Browser", y: 17 },
+        { x: "iPhone", y: 19 },
+        { x: "Others", y: 4 },
+        { x: "Opera", y: 11 },
+        { x: "Android", y: 12 },
+    ];
+    var dataLoaded = false;
+    function load(args) {
+        args.chart.noDataTemplate = "#No-Data-Template";
+        args.chart.series[0].dataSource = (dataLoaded ? chartData : []);
+    }
 
-        function loaded(args) {
-            var buttonOverlay = document.getElementById("noDataButtonOverlay");
-            if (buttonOverlay) {
-                buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
-            }
+    function loaded(args) {
+        var buttonOverlay = document.getElementById("noDataButtonOverlay");
+        if (buttonOverlay) {
+            buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
         }
+    }
 
-        function loadChartData() {
-            var chart = document.getElementById('lineContainer').ej2_instances[0];
-            var buttonOverlay = document.getElementById("noDataButtonOverlay");
-            dataLoaded = true;            
-            chart.series[0].dataSource = chartData;
-            chart.series[0].animation.enable = true;            
-            if (buttonOverlay) {
-                buttonOverlay.style.display = 'none';
-            }
-            chart.refresh();
+    function loadChartData() {
+        var chart = document.getElementById('lineContainer').ej2_instances[0];
+        var buttonOverlay = document.getElementById("noDataButtonOverlay");
+        dataLoaded = true;
+        chart.series[0].dataSource = chartData;
+        chart.series[0].animation.enable = true;
+        if (buttonOverlay) {
+            buttonOverlay.style.display = 'none';
         }
-    </script>
+        chart.refresh();
+    }
+</script>

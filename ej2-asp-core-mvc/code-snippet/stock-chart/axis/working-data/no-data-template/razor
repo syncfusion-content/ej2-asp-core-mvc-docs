@@ -1,14 +1,13 @@
 @using Syncfusion.EJ2;
 
-    @(Html.EJS().StockChart("container").Title("AAPL Stock Price")
-    .Series(sr =>
-     {
-      sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).DataSource("data").Add();
-     })            
-    .ChartArea(area => area.Border(br=>br.Width(0)))
+@(Html.EJS().StockChart("container").Title("AAPL Stock Price")
+    .Series(sr => {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).Add();
+    })
+    .ChartArea(area => area.Border(br => br.Width(0)))
     .Border(br => br.Width(1)).NoDataTemplate("#No-Data-Template").Load("load").Loaded("loaded")
     .Render()
-    )
+)
 
     <style>
         #noDataTemplateContainer {
@@ -88,7 +87,7 @@
 var dataLoaded = false;
 
         var load = function (args) {
-            args.chart.series[0].dataSource = dataLoaded ? data : [];
+            args.stockChart.series[0].dataSource = dataLoaded ? data : [];
         };
 
         var loaded = function (args) {
@@ -108,8 +107,7 @@ var dataLoaded = false;
             var buttonOverlay = document.getElementById("noDataButtonOverlay");
             if (buttonOverlay) {
                 buttonOverlay.style.display = 'none';
-            }
-            
+            }            
             chart.refresh();
         };
 </script>

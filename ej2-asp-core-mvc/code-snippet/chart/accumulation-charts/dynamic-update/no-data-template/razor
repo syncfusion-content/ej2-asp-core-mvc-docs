@@ -64,7 +64,7 @@
     <script id='No-Data-Template' type="text/x-template">
                 <div id='noDataTemplateContainer' class="light-bg">
                     <div class="template-align">
-                        <img src="@Url.Content("~/Content/chart/no-data.png")" alt="No Data" />
+                        <img src="no-data.png" alt="No Data" />
                     </div>
                     <div class="template-align">
                         <p style="font-size: 15px; margin: 10px 0 0;"><strong>No data available to display.</strong></p>

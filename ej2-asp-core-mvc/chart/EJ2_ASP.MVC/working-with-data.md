@@ -372,3 +372,4 @@ When no data is available to render in the chart, the `NoDataTemplate` property 
 {% endtabs %}
 {% endif %}
 
+![ASP.NET MVC Chart Control](images/nodatatemplate-chart.png)

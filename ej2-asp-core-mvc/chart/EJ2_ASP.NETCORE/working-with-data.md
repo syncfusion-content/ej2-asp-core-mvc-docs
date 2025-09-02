@@ -370,3 +370,5 @@ When no data is available to render in the chart, the `NoDataTemplate` property 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET Core Chart Control](images/nodatatemplate-chart.png)

@@ -90,7 +90,9 @@ When no data is available to render in the chart, the `NoDataTemplate` property 
 {% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="No-data-template.cs" %}
-{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/No-data-template.cs %}
+{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/no-data-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![ASP.NET MVC Accumulation Chart Control](images/nodatatemplate-accumulationchart.png)

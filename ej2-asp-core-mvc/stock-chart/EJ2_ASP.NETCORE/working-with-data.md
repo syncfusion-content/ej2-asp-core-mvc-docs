@@ -71,6 +71,7 @@ When no data is available to render in the chart, the `NoDataTemplate` property 
 {% endtabs %}
 {% endif %}
 
+![ASP.NET Core Stock Chart Control](images/nodatatemplate-stockchart.png)
 
 ## See Also
 

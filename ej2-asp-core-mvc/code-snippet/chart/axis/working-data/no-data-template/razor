@@ -93,16 +93,7 @@
         var loadChartData = function () {
             var chart = document.getElementById('container').ej2_instances[0];
             chart.series[0].dataSource = chartData;
-            var values = chartData.map(d => d.y);
-            var min = Math.min(...values);
-            var max = Math.max(...values);
-            var range = max - min;
-            chart.primaryYAxis.minimum = Math.floor(min - range * 0.1);
-            chart.primaryYAxis.maximum = Math.ceil(max + range * 0.1);
-            chart.primaryYAxis.interval = Math.ceil(range / 5);
-            chart.series[0].animation.enable = true;
-            dataLoaded = true;
-            
+            dataLoaded = true;            
             // Hide the button overlay when data is loaded
             var buttonOverlay = document.getElementById("noDataButtonOverlay");
             if (buttonOverlay) {
