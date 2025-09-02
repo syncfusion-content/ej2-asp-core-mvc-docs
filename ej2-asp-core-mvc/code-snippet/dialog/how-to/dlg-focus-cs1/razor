@@ -1,0 +1,20 @@
+<div id="container" style="height:400px;">
+    @Html.EJS().Button("openBtn").Content("Open Dialog").Render()
+    @Html.EJS().Dialog("dialog").Header("Delete Multiple Items").Content("Are you sure you want to permanently delete all of these items?").ShowCloseIcon(true).Target("#container").Width("300px").Height("auto").AnimationSettings(new { effect = "Zoom" }).BeforeClose("onBeforeClose").Buttons(btn => {
+        btn.Click("btnClick").ButtonModel(new { isPrimary = true, content = "Yes" }).Add();
+        btn.Click("btnClick").ButtonModel(new { content = "No" }).Add();
+    }).Render()
+</div>
+<script>
+        document.getElementById('openBtn').onclick = function () {
+            var dialog = document.getElementById("dialog").ej2_instances[0];
+            dialog.show();
+        }
+        function btnClick() {
+            var dialogObj = document.getElementById('dialog').ej2_instances[0];
+            dialogObj.hide();
+        }
+        function onBeforeClose(args) {
+            args.preventFocus = true;
+        }
+    </script>
