@@ -344,10 +344,10 @@ Specific color for empty point can be set by `Fill` property in `EmptyPointSetti
 
 ## Handling when no data is available
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 When no data is available to render in the chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
 
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -359,6 +359,8 @@ When no data is available to render in the chart, the `noDataTemplate` property 
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
+When no data is available to render in the chart, the `NoDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
