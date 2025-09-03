@@ -78,7 +78,35 @@ The toggle selection allows you to select and deselect a specific row or cell. T
 {% endtabs %}
 {% endif %}
 
+## Hover highlighting
 
+The hover highlighting feature in the Syncfusion ##Platform_Name## Gantt Chart enhances user interaction by highlighting **tree grid rows, chart task bars, header cells, and timeline cells** when hovered, making it easier to track tasks in complex project timelines. Enable it by setting the `enableHover` property to **true** in the component.
+
+The following code example shows how to enable the hover highlighting in Gantt.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/hover-highlighting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="hoverHighlighting.cs" %}
+{% include code-snippet/gantt/selection/hover-highlighting/hoverHighlighting.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/selection/hover-highlighting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="hoverHighlighting.cs" %}
+{% include code-snippet/gantt/selection/hover-highlighting/hoverHighlighting.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Clear selection
 
