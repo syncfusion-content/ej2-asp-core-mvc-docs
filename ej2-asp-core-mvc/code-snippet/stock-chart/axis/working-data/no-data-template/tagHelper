@@ -1,110 +1,109 @@
 
-<ejs-stockchart id = "stockchart" title = "AAPL Stock Price" load = "load" loaded = "loaded" >
-    <e-stockchart - series - collection >
-    <e-stockchart - series type = 'Candle' > </e-stockchart-series>
-        </e-stockchart-series-collection>
-        </ejs-stockchart>
+<ejs-stockchart id="stockchart" title="AAPL Stock Price" load="load" loaded="loaded" >
+    <e-stockchart-series-collection>
+        <e-stockchart-series type='Candle'></e-stockchart-series>
+    </e-stockchart-series-collection>
+</ejs-stockchart>
 
-        < div id = "noDataButtonOverlay" class="no-data-button-overlay" style = "display: none;" >
-            <ejs-button id = "loadDataButton" content = "Load data" iconCss = "e-icons e-refresh" onclick = "loadChartData()"
-cssClass = "load-data-btn e-outline" isPrimary = "false" >
-    </ejs-button>
+    <div id="noDataButtonOverlay" class="no-data-button-overlay" style="display: none;">
+        <ejs-button id="loadDataButton" content="Load data" iconCss="e-icons e-refresh" onclick="loadChartData()"
+            cssClass="load-data-btn e-outline" isPrimary="false">
+        </ejs-button>
     </div>
 
-            <style>
-        .no - data - button - overlay {
-    position: absolute;
-    top: 50 %;
-    left: 50 %;
-    transform: translate(-50 %, -50 %);
-    margin - top: 60px; /* Position below the no-data message */
-    z - index: 10;
-}
+    <style>
+        .no-data-button-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 60px; /* Position below the no-data message */
+        z - index: 10;
+        }
 
-#noDataTemplateContainer {
-    height: inherit;
-    width: inherit;
-}
+        #noDataTemplateContainer {
+            height: inherit;
+            width: inherit;
+        }
 
-        .load - data - btn {
-    margin - top: 55px;
-    border - radius: 4px!important;
-}
-        
-        .load - data - btn.e - btn - icon {
-    margin - right: 8px;
-}
+        .load-data-btn {
+            margin-top: 55px;
+            border-radius: 4px!important;
+        }
 
-        .light - bg {
-    background - color: #fafafa;
-    color: #000000;
-}
+        .load-data-btn.e-btn-icon {
+            margin-right: 8px;
+        }
 
-        .template - align img {
-    max - width: 150px;
-    /* Adjust size as needed */
-    max - height: 150px;
-    margin - top: 55px;
-}
+        .light-bg {
+            background-color: #fafafa;
+            color: #000000;
+        }
 
-        .template - align {
-    display: flex;
-    align - items: center;
-    justify - content: center;
-    text - align: center;
-}
+        .template-align img {
+            max-width: 150px;
+            /* Adjust size as needed */
+            max-height: 150px;
+            margin-top: 55px;
+        }
 
-#control - container {
-    padding: 0px!important;
-}
-</style>
-@* custom code end * @
-    < script src = "~/scripts/chart/theme-color.js" > </script>
-    < script id = 'No-Data-Template' type = "text/x-template" >
+        .template-align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #control-container {
+            padding: 0px!important;
+        }
+    </style>
+    <script src = "~/scripts/chart/theme-color.js" > </script>
+    <script id = 'No-Data-Template' type = "text/x-template">
         <div id='noDataTemplateContainer' class="light-bg" >
             <div class="template-align" >
                 <img src="no-data.png" alt = "No Data" />
-                    </div>
-                    < div class="template-align" >
-                        <p style="font-size: 15px; margin: 10px 0 10px;" > <strong>No data available to display.< /strong></p >
-                            </div>
-                            </div>
-                            </script>
-                            <script>
-var chartData = [
-    { date: new Date('2012-04-02'), open: 85.9757, high: 90.6657, low: 85.7685, close: 90.5257, volume: 660187068 },
-    { date: new Date('2012-04-09'), open: 89.4471, high: 92, low: 86.2157, close: 86.4614, volume: 912634864 },
-    { date: new Date('2012-04-16'), open: 87.1514, high: 88.6071, low: 81.4885, close: 81.8543, volume: 1221746066 },
-    { date: new Date('2012-04-23'), open: 81.5157, high: 88.2857, low: 79.2857, close: 86.1428, volume: 965935749 },
-    { date: new Date('2012-04-30'), open: 85.4, high: 85.4857, low: 80.7385, close: 80.75, volume: 615249365 },
-    { date: new Date('2012-05-07'), open: 80.2143, high: 82.2685, low: 79.8185, close: 80.9585, volume: 541742692 },
-    { date: new Date('2012-05-14'), open: 80.3671, high: 81.0728, low: 74.5971, close: 75.7685, volume: 708126233 },
-    { date: new Date('2012-05-21'), open: 76.3571, high: 82.3571, low: 76.2928, close: 80.3271, volume: 682076215 },
-    { date: new Date('2012-05-28'), open: 81.5571, high: 83.0714, low: 80.0743, close: 80.1414, volume: 480059584 },
-    { date: new Date('2012-06-04'), open: 80.2143, high: 82.9405, low: 78.3571, close: 82.9028, volume: 517577005 },
-];
-var dataLoaded = false;
-function load(args) {
-    args.stockChart.noDataTemplate = "#No-Data-Template";
-    args.stockChart.series[0].dataSource = (dataLoaded ? chartData : []);
-}
+            </div>
+            < div class="template-align" >
+                <p style="font-size: 15px; margin: 10px 0 10px;" > <strong>No data available to display.< /strong></p >
+            </div>
+        </div>
+    </script>
+    <script>
+        var chartData = [
+            { date: new Date('2012-04-02'), open: 85.9757, high: 90.6657, low: 85.7685, close: 90.5257, volume: 660187068 },
+            { date: new Date('2012-04-09'), open: 89.4471, high: 92, low: 86.2157, close: 86.4614, volume: 912634864 },
+            { date: new Date('2012-04-16'), open: 87.1514, high: 88.6071, low: 81.4885, close: 81.8543, volume: 1221746066 },
+            { date: new Date('2012-04-23'), open: 81.5157, high: 88.2857, low: 79.2857, close: 86.1428, volume: 965935749 },
+            { date: new Date('2012-04-30'), open: 85.4, high: 85.4857, low: 80.7385, close: 80.75, volume: 615249365 },
+            { date: new Date('2012-05-07'), open: 80.2143, high: 82.2685, low: 79.8185, close: 80.9585, volume: 541742692 },
+            { date: new Date('2012-05-14'), open: 80.3671, high: 81.0728, low: 74.5971, close: 75.7685, volume: 708126233 },
+            { date: new Date('2012-05-21'), open: 76.3571, high: 82.3571, low: 76.2928, close: 80.3271, volume: 682076215 },
+            { date: new Date('2012-05-28'), open: 81.5571, high: 83.0714, low: 80.0743, close: 80.1414, volume: 480059584 },
+            { date: new Date('2012-06-04'), open: 80.2143, high: 82.9405, low: 78.3571, close: 82.9028, volume: 517577005 },
+        ];
+        var dataLoaded = false;
+        function load(args) {
+            args.stockChart.noDataTemplate = "#No-Data-Template";
+            args.stockChart.series[0].dataSource = (dataLoaded ? chartData : []);
+        }
 
-function loaded(args) {
-    var buttonOverlay = document.getElementById("noDataButtonOverlay");
-    if (buttonOverlay) {
-        buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
-    }
-}
+        function loaded(args) {
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            if (buttonOverlay) {
+                buttonOverlay.style.display = !dataLoaded ? 'block' : 'none';
+            }
+        }
 
-function loadChartData() {
-    var chart = document.getElementById('stockchart').ej2_instances[0];
-    var buttonOverlay = document.getElementById("noDataButtonOverlay");
-    dataLoaded = true;
-    chart.series[0].dataSource = chartData;
-    chart.series[0].animation.enable = true;
-    if (buttonOverlay) {
-        buttonOverlay.style.display = 'none';
-    }
-    chart.refresh();
-}
-</script>
+        function loadChartData() {
+            var chart = document.getElementById('stockchart').ej2_instances[0];
+            var buttonOverlay = document.getElementById("noDataButtonOverlay");
+            dataLoaded = true;
+            chart.series[0].dataSource = chartData;
+            chart.series[0].animation.enable = true;
+            if (buttonOverlay) {
+                buttonOverlay.style.display = 'none';
+            }
+            chart.refresh();
+        }
+    </script>
