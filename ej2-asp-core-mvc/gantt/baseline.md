@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Baseline in ##Platform_Name## Gantt Component
+title: Baseline in ##Platform_Name## Syncfusion Gantt Component
 description: Learn here all about Baseline in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Baseline
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# BaseLine
+# BaseLine in ##Platform_Name## Syncfusion Gantt Component
 
 {% if page.publishingplatform == "aspnet-core" %}
 
