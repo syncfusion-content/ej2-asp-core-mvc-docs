@@ -13,8 +13,6 @@
         if (args.requestType == 'beforeOpenAddDialog') {
             args.rowData.TaskName = 'Gantt';
             args.rowData.Progress = 70;
-            args.rowData.ganttProperties.taskName = 'Gantt';
-            args.rowData.ganttProperties.progress = 70;
         }
      }
 </script>

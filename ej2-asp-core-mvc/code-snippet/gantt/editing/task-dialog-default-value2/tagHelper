@@ -1,23 +1,49 @@
 @using Syncfusion.EJ2
 
 <div>
-    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" toolbar="@(new List<string>() { 'Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'})" actionBegin="onActionBegin">
+    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})" actionBegin="onActionBegin">
         <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
                             endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
         </e-gantt-taskfields>
         <e-gantt-editsettings allowAdding="true"></e-gantt-editsettings>
         <e-gantt-adddialogfields>
             <e-gantt-adddialogfield type="General" headerText="General Tab" ></e-gantt-adddialogfield>
-            <e-gantt-adddialogfield type="Dependency"  additionalParams = {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}></e-gantt-adddialogfield>
-            <e-gantt-adddialogfield type="Resources" additionalParams= { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}></e-gantt-adddialogfield>
-            <e-gantt-editdialogfield type="Segment"  additionalParams = {columns:[{field:"segmentTask",width:"170px" ,headerText:"Segment Task"}],}></e-gantt-editdialogfield>
+            <e-gantt-adddialogfield type="Dependency" additionalParams="@(new { 
+                                allowPaging = true,
+                                toolbar = new string[] {  "Delete", "Print" }
+                            })"></e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="Resources" additionalParams="@(new { 
+                                allowPaging = true, allowSorting = true,
+                                toolbar = new string[] {  "Delete", "Print" },
+                                 columns = new[] { 
+                                    new { field = "ResourceId", width = "70", headerText = "ID" }
+                                }
+                                  })"> </e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="Segment"  additionalParams="@(new { 
+                                  columns = new[] { 
+                                      new { field = "segmentTask", width = "100", headerText = "Segment Task" }
+                                    }
+                                  })"></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Notes"></e-gantt-adddialogfield>
           </e-gantt-adddialogfields>
           <e-gantt-editdialogfields>
             <e-gantt-editdialogfield type="General" headerText="General"></e-gantt-editdialogfield>
-            <e-gantt-editdialogfield type="Dependency" additionalParams = {allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]}></e-gantt-editdialogfield>
-            <e-gantt-editdialogfield type="Resources"  additionalParams= { allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}></e-gantt-editdialogfield>
-            <e-gantt-editdialogfield type="Segment" additionalParams = {columns:[{field:"segmentTask",width:"170px" ,headerText:"Segment Task"}],}></e-gantt-editdialogfield>
+            <e-gantt-editdialogfield type="Dependency" additionalParams="@(new { 
+                                allowPaging = true,
+                                toolbar = new string[] {  "Delete", "Print" }
+                            })"></e-gantt-editdialogfield>
+            <e-gantt-editdialogfield type="Resources"  additionalParams="@(new { 
+                                allowPaging = true, allowSorting = true,
+                                toolbar = new string[] {  "Delete", "Print" },
+                                 columns = new[] { 
+                                    new { field = "ResourceId", width = "70", headerText = "ID" }
+                                }
+                                  })"></e-gantt-editdialogfield>
+            <e-gantt-editdialogfield type="Segment" additionalParams="@(new { 
+                                 columns = new[] { 
+                                    new { field = "segmentTask", width = "100", headerText = "Segment Task" }
+                                }
+                                  })"></e-gantt-editdialogfield>
             <e-gantt-editdialogfield type="Notes"></e-gantt-editdialogfield>
           </e-gantt-editdialogfields>
     </ejs-gantt>
