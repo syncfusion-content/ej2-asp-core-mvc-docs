@@ -94,7 +94,6 @@ The following code example shows how to enable the hover highlighting in Gantt.
 {% include code-snippet/gantt/selection/hover-highlighting/hoverHighlighting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
