@@ -1,17 +1,75 @@
 @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId"
 ).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es=>
 es.AllowAdding(true)).Toolbar(new List<string>() { 'Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll' }).EditDialogFields(edf =>
-    {
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").fields(["TaskID", "TaskName","newInput"]).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency.additionalParams({allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]})).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).additionalParams({ allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).additionalParams({columns:[{field:"segmentTask",width:"170px" ,headerText:"Segment Task"}],}).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
-    }).AddDialogFields(adf=> {
-        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").fields(["TaskID", "TaskName","newInput"]).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency.additionalParams({allowPaging: true, allowSorting: true, toolbar: ["Search", "Print",]})).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).additionalParams({ allowSorting: true, allowPaging: true, toolbar: ["Search", "Print"], columns: [{ field: "newData" }]}).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).additionalParams({columns:[{field:"segmentTask",width:"170px" ,headerText:"Segment Task"}],}).Add();
-        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
-    }).Render()
+{
+    edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Fields(new string[] { "TaskID", "TaskName","newInput" }).Add();
+    edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).AdditionalParams(new
+        {  
+            allowPaging = true,
+            allowSorting = true,
+            toolbar = new List<object>
+            {
+            new { text = "Search" }
+            new { text = "Print" }
+            },
+        }).Add();
+    edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).AdditionalParams(new
+        {  
+            allowPaging = true,
+            allowSorting = true,
+            toolbar = new List<object>
+            {
+            new { text = "Search" }
+            new { text = "Print" }
+            },
+            columns = new List<object>
+            {
+            new { field= "newData" },
+            }
+        }).Add();
+    edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).AdditionalParams(new
+        {
+            columns = new List<object>
+            {
+                new { field= "segmentTask", width = "170px", headerText = "Segement Task" },
 
+            }
+        }).Add();
+    edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+
+}).AddDialogFields(adf=> {
+       adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Fields(new string[] { "TaskID", "TaskName","newInput" })
+    .Add();
+    adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).AdditionalParams(new
+        {  
+            allowPaging = true,
+            allowSorting = true,
+            toolbar = new List<object>
+            {
+            new { text = "Search" }
+            new { text = "Print" }
+            },
+        }).Add();
+    adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).AdditionalParams(new
+        {  
+            allowPaging = true,
+            allowSorting = true,
+            toolbar = new List<object>
+            {
+            new { text = "Search" }
+            new { text = "Print" }
+            },
+            columns = new List<object>
+            {
+            new { field= "newData" },
+            }
+        }).Add();
+    adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).AdditionalParams(new
+        {
+            columns = new List<object>
+            {
+                new { field= "segmentTask", width = "170px", headerText = "Segement Task" },
+            }
+        }).Add();
+    adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
+    }).Render()
