@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearances
+# Style And Appearance in ASP.NET Core Button Group Control
 
 To modify the ButtonGroup appearance, you need to override the default CSS of ButtonGroup component. Find the list of CSS classes and its corresponding section in ButtonGroup. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 
