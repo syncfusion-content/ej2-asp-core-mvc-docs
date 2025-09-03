@@ -25,3 +25,22 @@ The `serverTimezoneOffset` property allows you to specify the server's time zone
   - `5.5` → UTC+5:30 (India Standard Time)
 
 N> The `serverTimezoneOffset` property is applicable **only for pre-bound values** (i.e., values set during initialization or data binding). It does **not affect** values selected by the user during runtime.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/datepicker/timezone-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="timezone.cs" %}
+{% endhighlight %}{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/datepicker/timezone-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="timezone.cs" %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
