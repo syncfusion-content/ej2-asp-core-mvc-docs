@@ -42,7 +42,36 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://help.s
 {% endtabs %}
 {% endif %}
 
+## Handling when no data is available
 
+{% if page.publishingplatform == "aspnet-core" %}
+
+When no data is available to render in the chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/axis/working-data/no-data-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-data-template.cs" %}
+{% include code-snippet/stock-chart/axis/working-data/no-data-template/no-data-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+When no data is available to render in the chart, the `NoDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/axis/working-data/No-data-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-data-template.cs" %}
+{% include code-snippet/stock-chart/axis/working-data/no-data-template/no-data-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![ASP.NET Core Stock Chart Control](images/nodatatemplate-stockchart.png)
 
 ## See Also
 
