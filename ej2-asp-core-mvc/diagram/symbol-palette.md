@@ -344,9 +344,7 @@ The diagram provides support to add symbol description below each symbol of a pa
 {% endif %}
 
 
-
 ```javascript
-
  function getSymbolInfo(symbol) {
     if (symbol['text'] !== undefined) {
         return {
@@ -369,7 +367,6 @@ The diagram provides support to add symbol description below each symbol of a pa
         }
     };
 }
-
 ```
 ## Tooltip for symbols in symbol palette
 
@@ -437,18 +434,15 @@ The following example demonstrates how to configure selective tooltip display:
 {% endif %}
 
 ```javascript
-
  function getNodeDefaults(symbol) {
     symbol.style = {
         strokeColor = '#6495ED',
         fill = '#6495ED'
     };
 }
-
  function getSymbolInfo(symbol) {
     return { showTooltip: true };
 }
-
 ```
 
 N> This property is effective only when tooltip constraints are disabled for the symbol palette element.

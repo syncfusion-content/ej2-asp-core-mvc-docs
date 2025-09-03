@@ -10,18 +10,16 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
 {
     public partial class DiagramController : Controller
     {
-        // GET: Nodes
         public ActionResult Nodes()
         {
-
             List<DiagramNode> nodes = new List<DiagramNode>();
-            List<DiagramNodeAnnotation> Node1 = new List<DiagramNodeAnnotation>();
-            Node1.Add(new DiagramNodeAnnotation()
+            List<DiagramNodeAnnotation> annotation1 = new List<DiagramNodeAnnotation>();
+            annotation1.Add(new DiagramNodeAnnotation()
             {
                 Content = "node1",
             });
-            List<DiagramNodeAnnotation> Node2 = new List<DiagramNodeAnnotation>();
-            Node2.Add(new DiagramNodeAnnotation()
+            List<DiagramNodeAnnotation> annotation2 = new List<DiagramNodeAnnotation>();
+            annotation2.Add(new DiagramNodeAnnotation()
             {
                 Content = "node2",
             });
@@ -37,7 +35,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                 },
                 OffsetX = 350,
                 OffsetY = 50,
-                Annotations = Node1,
+                Annotations = annotation1,
             });
             nodes.Add(new DiagramNode()
             {
@@ -51,12 +49,11 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                 },
                 OffsetX = 200,
                 OffsetY = 250,
-                Annotations = Node2,
-
+                Annotations = annotation2,
             });
             ViewBag.nodes = nodes;
-            List<DiagramConnector> Connectors = new List<DiagramConnector>();
-            Connectors.Add(new DiagramConnector()
+            List<DiagramConnector> connectors = new List<DiagramConnector>();
+            connectors.Add(new DiagramConnector()
             {
                 Id = "connector1",
                 SourceID = "sourcenode",
@@ -70,9 +67,8 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                         new ConnectorSegment { Type = Segments.Orthogonal, Direction = "Bottom", Length = 50 },
                     },
             });
-            ViewBag.connectors = Connectors;
+            ViewBag.connectors = connectors;
             return View();
         }
     }
 }
-
