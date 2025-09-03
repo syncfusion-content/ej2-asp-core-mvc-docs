@@ -410,13 +410,11 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 {% endif %}
 
 
-### Controlling default tooltip display
+### How to enable or disable the default tooltip for shapes in the symbol palette
 
-The `showTooltip` property within the getSymbolInfo event callback provides granular control over default tooltip visibility for individual symbols. This enables selective tooltip management based on symbol type, user permissions, or application state.
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolInfo) property within the `getSymbolInfo` method. The `showTooltip` property is set to `true` by default, which enables the tooltip.
 
-Setting `showTooltip` to `true` enables the default tooltip, while `false` disables it. When not explicitly configured, the default tooltip behavior is maintained.
-
-The following example demonstrates selective tooltip control:
+The following example demonstrates how to configure selective tooltip display:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

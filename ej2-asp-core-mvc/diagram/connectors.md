@@ -878,18 +878,18 @@ The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Undo/Redo support for connector segments
 
-The Diagram control provides comprehensive undo/redo functionality for all connector segment operations. This includes reversible support for dragging, resizing, and rotating source or target nodes, as well as modifying segment points and endpoints.
+The Diagram control provides comprehensive undo and redo functionality for all connector segment operations. This includes reversible actions such as dragging, resizing, and rotating source or target nodes, as well as modifying segment points and endpoints.
 
 Key undo/redo capabilities include:
 
-* Segment point modifications and adjustments.
-* Connector endpoint changes between nodes, points, or containers.
-* Node operations that affect connected segments.
-* Segment addition, removal, and reordering.
+* Modifying and adjusting segment points.
+* Changing connector endpoints between nodes or ports.
+* Performing node operations that affect connected segments.
+* Adding, removing, or reordering segments.
 
-This ensures consistent editing behavior across all connector types and interactions, allowing users to experiment with complex routing configurations while maintaining the ability to revert changes.
+This functionality ensures consistent editing behavior across all connector types and interactions, enabling users to experiment with complex routing configurations while retaining the ability to revert changes.
 
-The following code example demonstrates undo/redo functionality with connector segments:
+The following example demonstrates undo and redo functionality for connector segments:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
