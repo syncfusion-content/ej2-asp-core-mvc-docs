@@ -17,7 +17,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                     Height = 100,
                     OffsetX = 100,
                     OffsetY = 100,
-                    Shape = new { type = "HTML", content= "<div style='background:#6BA5D7;height:100%;width:100%;'><button type='button' style='width:100px'> Button</button></div>" },
+                    Shape = new DiagramHtml() { Type = Syncfusion.EJ2.Diagrams.Shapes.HTML , content= "<div style='background:#6BA5D7;height:100%;width:100%;'><button type='button' style='width:100px'> Button</button></div>" },
             });
             ViewBag.nodes = nodes;
 
