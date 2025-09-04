@@ -344,6 +344,7 @@ The diagram provides support to add symbol description below each symbol of a pa
 {% endif %}
 
 
+
 ```javascript
 
  function getSymbolInfo(symbol) {
