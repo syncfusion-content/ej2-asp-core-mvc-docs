@@ -345,6 +345,7 @@ The diagram provides support to add symbol description below each symbol of a pa
 
 
 ```javascript
+
  function getSymbolInfo(symbol) {
     if (symbol['text'] !== undefined) {
         return {
@@ -367,6 +368,7 @@ The diagram provides support to add symbol description below each symbol of a pa
         }
     };
 }
+
 ```
 ## Tooltip for symbols in symbol palette
 
