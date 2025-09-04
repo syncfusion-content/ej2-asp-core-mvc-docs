@@ -410,6 +410,49 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 {% endif %}
 
 
+### How to enable or disable the default tooltip for shapes in the symbol palette
+
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolInfo) property within the `getSymbolInfo` method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+
+The following example demonstrates how to configure selective tooltip display:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Description.cs" %}
+{% include code-snippet/diagram/symbol-palette/defaulttooltip/description.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+```javascript
+
+ function getNodeDefaults(symbol) {
+    symbol.style = {
+        strokeColor = '#6495ED',
+        fill = '#6495ED'
+    };
+}
+ function getSymbolInfo(symbol) {
+    return { showTooltip: true };
+}
+
+```
+
+N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
+
+
 ### How to provide different tooltip for Symbol palette and diagram elements.
 
 Differentiate the tooltips between symbols in the symbol palette and dropped nodes by utilizing the dragEnter event. When a custom tooltip is defined for a symbol, it will be displayed for both the symbol and the dropped node in the diagram canvas. However, to provide distinct tooltips for symbols in the palette and dropped nodes, capture the dragEnter event and assign specific tooltips dynamically.  

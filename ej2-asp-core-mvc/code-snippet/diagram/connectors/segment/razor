@@ -1,2 +1,2 @@
-  @(Html.EJS().Diagram("container").Width("100%").Height("580px"))
+@(Html.EJS().Diagram("container").Width("100%").Height("580px"))
                 

@@ -1,5 +1,4 @@
-                <ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" renderBaseline="true" projectStartDate="04/01/2019" projectEndDate="04/30/2019">
-                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" duration="Duration" child="SubTasks" progress="Progress"
-                        endDate="EndDate" baselineEndDate="BaselineEndDate" baselineStartDate="BaselineStartDate">
-                    </e-gantt-taskfields>
-                </ejs-gantt>
+<ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" renderBaseline="true" baselineColor="red" projectStartDate="03/31/2019" projectEndDate="05/31/2019">
+    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" baselineStartDate="BaselineStartDate" baselineEndDate="BaselineEndDate" baselineDuration="baselineDuration" parentID="ParentID">
+    </e-gantt-taskfields>
+</ejs-gantt>

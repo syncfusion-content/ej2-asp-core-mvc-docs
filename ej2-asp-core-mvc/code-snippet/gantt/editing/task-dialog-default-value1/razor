@@ -1,15 +1,15 @@
 @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId"
-).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es=>
-es.AllowAdding(true)).Toolbar(new List<string>() { 'Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll' }).EditDialogFields(edf =>
+).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+es.AllowAdding(true)).Toolbar(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" }).EditDialogFields(edf =>
     {
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").fields(["TaskID", "TaskName","newInput"]).Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Fields(new string[] { "TaskID", "TaskName", "newInput" }).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
-    }).AddDialogFields(adf=> {
-        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").fields(["TaskID", "TaskName","newInput"]).Add();
+    }).AddDialogFields(adf => {
+        adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General Tab").Fields(new string[] { "TaskID", "TaskName", "newInput" }).Add();
         adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
         adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
         adf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).Add();
-    }).Render()
+    }).Render();
 
