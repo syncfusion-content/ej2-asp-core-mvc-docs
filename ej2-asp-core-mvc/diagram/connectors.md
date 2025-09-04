@@ -876,6 +876,46 @@ The connectors [`zIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endtabs %}
 {% endif %}
 
+## Undo/Redo support for connector segments
+
+The Diagram control provides comprehensive undo and redo functionality for all connector segment operations. This includes reversible actions such as dragging, resizing, and rotating source or target nodes, as well as modifying segment points and endpoints.
+
+Key undo/redo capabilities include:
+
+* Modifying and adjusting segment points.
+* Changing connector endpoints between nodes or ports.
+* Performing node operations that affect connected segments.
+* Adding, removing, or reordering segments.
+
+This functionality ensures consistent editing behavior across all connector types and interactions, enabling users to experiment with complex routing configurations while retaining the ability to revert changes.
+
+The following example demonstrates undo and redo functionality for connector segments:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/connectors/connectors-segundo/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="segment.cs" %}
+{% include code-snippet/diagram/connectors/connectors-segundo/segment.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="segment.cs" %}
+{% include code-snippet/diagram/connectors/connectors-segundo/segment.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+``` javascript
+var diagram = document.getElementById("container").ej2_instances[0];
+diagram.undo();
+diagram.redo();
+```
 
 
 ## See Also
