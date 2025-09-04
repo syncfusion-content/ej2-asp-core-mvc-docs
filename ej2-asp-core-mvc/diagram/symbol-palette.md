@@ -434,6 +434,7 @@ The following example demonstrates how to configure selective tooltip display:
 {% endif %}
 
 ```javascript
+
  function getNodeDefaults(symbol) {
     symbol.style = {
         strokeColor = '#6495ED',
@@ -443,6 +444,7 @@ The following example demonstrates how to configure selective tooltip display:
  function getSymbolInfo(symbol) {
     return { showTooltip: true };
 }
+
 ```
 
 N> This property is effective only when tooltip constraints are disabled for the symbol palette element.
