@@ -1,2 +1,5 @@
-<ejs-diagram id="container" width="100%" height="700px" nodes="ViewBag.nodes">
+<ejs-diagram id="container" width="100%" height="700px" nodes="ViewBag.nodes" nodeTemplate="#nodeTemplate">
 </ejs-diagram>
+<script id="nodeTemplate" type="text/x-template">
+      <div style='background:#6BA5D7;height:100%;width:100%;'><button type='button' style='width:100px'> Button</button></div>
+</script>
