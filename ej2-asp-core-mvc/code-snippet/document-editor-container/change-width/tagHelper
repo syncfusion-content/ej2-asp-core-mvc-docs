@@ -1,4 +1,0 @@
-
-<ejs-documenteditorcontainer id="container" serviceUrl="/api/DocumentEditor/" enableToolbar=true width="100%"></ejs-documenteditorcontainer>
-
-

@@ -1,4 +1,0 @@
-@Html.EJS().DocumentEditorContainer("container").EnableToolbar(true).DocumentEditorSettings("settings").Render()
-<script>
-    var settings = { printDevicePixelRatio :2 };
-</script>
