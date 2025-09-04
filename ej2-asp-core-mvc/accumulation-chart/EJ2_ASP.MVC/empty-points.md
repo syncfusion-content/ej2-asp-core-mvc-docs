@@ -66,7 +66,7 @@ border for an empty point can be set by using the `Border` property.
 {% endtabs %}
 {% endif %}
 
-## Handling No data
+## Handling No Data
 
 {% if page.publishingplatform == "aspnet-core" %}
 

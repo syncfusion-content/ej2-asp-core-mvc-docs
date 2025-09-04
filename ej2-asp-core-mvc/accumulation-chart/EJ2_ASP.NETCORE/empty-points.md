@@ -75,7 +75,7 @@ public class EmptyPointsChartData
 {% endtabs %}
 {% endif %}
 
-## Handling No data
+## Handling No Data
 
 {% if page.publishingplatform == "aspnet-core" %}
 

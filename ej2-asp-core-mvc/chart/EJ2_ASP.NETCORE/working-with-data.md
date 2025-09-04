@@ -342,7 +342,7 @@ Specific color for empty point can be set by `fill` property in `emptyPointSetti
 {% endtabs %}
 {% endif %}
 
-## Handling No data
+## Handling No Data
 
 {% if page.publishingplatform == "aspnet-core" %}
 

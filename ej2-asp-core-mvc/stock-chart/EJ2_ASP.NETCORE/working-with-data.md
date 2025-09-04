@@ -42,7 +42,7 @@ You can bind a simple JSON data to the chart using [`dataSource`](https://help.s
 {% endtabs %}
 {% endif %}
 
-## Handling No data
+## Handling No Data
 
 {% if page.publishingplatform == "aspnet-core" %}
 
