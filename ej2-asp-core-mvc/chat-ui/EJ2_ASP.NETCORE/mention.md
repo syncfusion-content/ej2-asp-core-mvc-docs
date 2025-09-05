@@ -13,7 +13,7 @@ documentation: ug
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions
 
 ## Configure mention users
-You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionUsers) property to define an array of users for the mention suggestion popup.
+You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionUsers) property to define an array of users for the mention suggestion popup.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -29,7 +29,7 @@ You can use the [mentionUsers](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ## Customize the mention trigger character
 
-You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionTriggerChar) property to customize the character which triggers the mention popup. The default value is `@`.
+You can use the [mentionTriggerChar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionTriggerChar) property to customize the character which triggers the mention popup. The default value is `@`.
 
 
 {% tabs %}
