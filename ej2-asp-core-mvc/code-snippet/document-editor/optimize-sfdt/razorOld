@@ -1,3 +1,0 @@
-<div>
-@Html.EJS().DocumentEditorContainer("container").Created("onCreated").EnableToolbar(true).Render()
-</div>
