@@ -10,8 +10,6 @@ documentation: ug
 
 # Mention Integration in ##Platform_Name## Chat UI control
 
-## Mention Integration in Syncfusion Chat UI
-
 The Syncfusion ChatUI allows users to mention others in messages using the `@` character, with an dropdown for selecting users. The following sections explain how to configure mentions
 
 ## Configure mention users
@@ -64,7 +62,7 @@ You can use the [text](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ## Configure mentionSelect
 
-You can use the [mentionSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_mentionSelect) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
+You can use the [mentionSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MentionSelect) event which triggers when a user selects an item from the mention dropdown, providing access to the selected user’s details for custom handling.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
