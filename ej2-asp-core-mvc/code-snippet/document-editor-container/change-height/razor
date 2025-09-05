@@ -1,3 +1,0 @@
-
-@Html.EJS().DocumentEditorContainer("container").Height('590px').EnableToolbar(true).Render()
-
