@@ -1,3 +1,0 @@
-<ejs-spreadsheet id="spreadsheet" saveUrl="Home/Save" allowSave = "true">
-
-</ejs-spreadsheet>
