@@ -8,7 +8,6 @@ using System.Drawing;
 
 namespace EJ2MVCSampleBrowser.Controllers.Diagram {
     public partial class DiagramController: Controller {
-        // GET: Nodes
         public ActionResult Nodes() {
             List < DiagramNode > nodes = new List < DiagramNode > ();
             nodes.Add(new DiagramNode() {
@@ -17,10 +16,10 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                     Height = 100,
                     OffsetX = 100,
                     OffsetY = 100,
-                    Shape = new DiagramHtml() { Type = Syncfusion.EJ2.Diagrams.Shapes.HTML },
+                    Shape = new DiagramHtml() { Type = Syncfusion.EJ2.Diagrams.Shapes.HTML }
             });
             ViewBag.nodes = nodes;
             return View();
-        }
-    }
-}
+        };
+    };
+};

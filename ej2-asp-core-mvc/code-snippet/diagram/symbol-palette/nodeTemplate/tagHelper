@@ -1,19 +1,18 @@
 <ejs-symbolpalette id="symbolpalette" enableAnimation="true" palettes="@ViewBag.palettes"
     symbolMargin="new SymbolPaletteMargin() { Left=15,Right=15,Top=15,Bottom=15}" nodeTemplate="#nodeTemplate">
 </ejs-symbolpalette>
-<ejs-diagram id="container" width="100%" height="700px" nodeTemplate="#nodeTemplate">
-</ejs-diagram>
+<ejs-diagram id="container" width="100%" height="700px" nodeTemplate="#nodeTemplate"></ejs-diagram>
 <script id="nodeTemplate" type="text/x-template">
     ${if(id.includes('node1'))}
-      <div style="width:100%; height:100%; background:#e0f7fa;font-family:Arial;padding-left:10px;">
-        <div style="font-size:12px;font-weight:bold;margin-left:5px;padding-top: 25px;">🌤 28°C</div>
-        <div style="font-size:10px;margin-left:5px;">Puducherry</div>
-        <div style="font-size:8px; color:#666;margin-left:5px;">Humidity: 60%</div>
-    </div>
-       ${else if(id.includes('node2'))}
-       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <rect width="24" height="24" fill="#007BFF"/>
-        <path d="M6.5 7.5L17.5 16.5L12 21V3L17.5 7.5L6.5 16.5" fill="none" stroke="white" stroke-width="2"/>
+        <div style="width:100%; height:100%; background:#e0f7fa;font-family:Arial;padding-left:10px;">
+            <div style="font-size:12px;font-weight:bold;margin-left:5px;padding-top: 25px;">🌤 28°C</div>
+            <div style="font-size:10px;margin-left:5px;">Puducherry</div>
+            <div style="font-size:8px; color:#666;margin-left:5px;">Humidity: 60%</div>
+        </div>
+    ${else if(id.includes('node2'))}
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <rect width="24" height="24" fill="#007BFF"/>
+            <path d="M6.5 7.5L17.5 16.5L12 21V3L17.5 7.5L6.5 16.5" fill="none" stroke="white" stroke-width="2"/>
         </svg>
-            ${/if}
+    ${/if}
 </script>

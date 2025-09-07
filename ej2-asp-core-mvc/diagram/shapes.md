@@ -147,7 +147,7 @@ N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is 
 
 ### HTML Node with contentTemplate.
 
-To render an HTML node with a content template, we need to define the desired template string within the `content` property. The following code illustrates how to create an HTML node with a content template:
+To render an HTML node with a content template, we need to define the desired template string within the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHtml.html#Syncfusion_EJ2_Diagrams_DiagramHtml_Content) property. The following code illustrates how to create an HTML node with a content template:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -198,7 +198,7 @@ The following code illustrates how to render an HTML node using the function and
 
 ### HTML Node With nodeTemplate
 
-To render html node with nodeTemplate we need to define the nodeTemplate in the html file and assign it to the `nodeTemplate` property of the diagram. The following code illustrates how to render html node with nodeTemplate.
+To render html node with nodeTemplate we need to define the nodeTemplate in the html file and assign it to the [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_NodeTemplate) property of the diagram. The following code illustrates how to render html node with nodeTemplate.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -254,7 +254,7 @@ N> Like HTML node, the native node also cannot be exported to image format. Fill
 
 ### Native Node with contentTemplate
 
-To render an SVG node using a content template, define the desired template string in the node's `content` property. The following example demonstrates how to create an SVG node using a content template:
+To render an SVG node using a content template, define the desired template string in the node's [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNative.html#Syncfusion_EJ2_Diagrams_DiagramNative_Content) property. The following example demonstrates how to create an SVG node using a content template:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -305,7 +305,7 @@ The following example demonstrates how to render an SVG node using a function an
 
 ### Native nodes with nodeTemplate
 
-The `nodeTemplate` property allows defining reusable SVG templates at the diagram level. This approach is efficient when multiple nodes share similar vector graphics or when centralized template management is required.
+The [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_NodeTemplate) property allows defining reusable SVG templates at the diagram level. This approach is efficient when multiple nodes share similar vector graphics or when centralized template management is required.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

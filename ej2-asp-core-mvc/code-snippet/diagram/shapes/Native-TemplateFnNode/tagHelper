@@ -1,2 +1,3 @@
-<ejs-diagram id="container" width="100%" height="700px" nodes="ViewBag.nodes" nodeTemplate="ViewBag.CreateNodeContent('node1')">
+<ejs-diagram id="container" width="100%" height="700px" nodes="ViewBag.nodes"
+    nodeTemplate="ViewBag.CreateNodeContent('node1')">
 </ejs-diagram>

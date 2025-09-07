@@ -11,8 +11,8 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
         public string CreateNodeContent(string nodeId)
         {
             return $"<div style='background:#6BA5D7;height:100%;width:100%;'><button type='button' style='width:100px'> Button</button></div>";
-        }
-        // GET: Nodes
+        };
+
         public ActionResult Nodes()
         {
             List<DiagramNode> nodes = new List<DiagramNode>();
@@ -23,12 +23,10 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                 Height = 100,
                 OffsetX = 100,
                 OffsetY = 100,
-                Shape = new DiagramHtml() { Type = Syncfusion.EJ2.Diagrams.Shapes.HTML },
+                Shape = new DiagramHtml() { Type = Syncfusion.EJ2.Diagrams.Shapes.HTML }
             });
             ViewBag.nodes = nodes;
-
-
             return View();
-        }
-    }
-}
+        };
+    };
+};
