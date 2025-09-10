@@ -63,6 +63,7 @@ TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% raw %}
+
 ```cshtml
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
@@ -162,6 +163,7 @@ public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
 }
 ```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
 ```cshtml
 ActionBegin="ActionBeginHandler"
 ```
