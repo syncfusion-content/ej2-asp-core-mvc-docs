@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Welcome to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls of Essential<sup style="font-size:70%">&reg;</sup> JS 2
+# Welcome to Syncfusion® ASP.NET Core Controls of Essential® JS 2
 
 Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It is also available in other frameworks such as JavaScript and Angular, React.
 
@@ -83,13 +83,10 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">DataGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/getting-started-core">Spreadsheet</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/multicolumn-combobox/getting-started">MultiColumn ComboBox</a></div>
         <div><p class="control-category">FILE VIEWERS & EDITORS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/markdown-editor/getting-started">Markdown Editor</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Word Processor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/image-editor/getting-started">Image Editor</a></div>
         <div><p class="control-category">FILE FORMAT FRAMEWORKS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/file-formats/xlsio/create-read-edit-excel-files-in-asp-net-core-c-sharp">Excel</a></div>
