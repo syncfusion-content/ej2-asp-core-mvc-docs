@@ -65,6 +65,60 @@ To initialize a palette, define a JSON object with the property [`ID`](https://h
 {% endtabs %}
 {% endif %}
 
+## Template-based symbols
+
+### HTML and SVG nodes with content templates
+
+The Symbol Palette supports the creation of complex nodes using HTML or SVG templates. This allows developers to incorporate rich, interactive, and visually engaging content within diagram elements.
+
+* For HTML content, set the node's `shape.type` property to **HTML**.
+* For SVG content, set the `shape.type` property to **Native**.
+
+Templates can be defined either as strings or functions and assigned to the node's `content` property. Function-based templates offer the flexibility to generate dynamic content based on node-specific properties or external data sources.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### HTML and SVG nodes with nodeTemplate
+
+The Symbol Palette [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_NodeTemplate) property allows you to define reusable HTML or SVG structures that can be applied to multiple symbols. This approach is efficient when several palette symbols share a similar visual structure but contain different data.
+
+Templates should be created within `<script>` tags using unique IDs, which are then assigned to the symbol palette `nodeTemplate` property. When symbols are dragged from the palette, the diagram automatically applies the corresponding template and binds the symbol's data to the template elements.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/nodeTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/nodeTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/nodeTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Customize the palette header
