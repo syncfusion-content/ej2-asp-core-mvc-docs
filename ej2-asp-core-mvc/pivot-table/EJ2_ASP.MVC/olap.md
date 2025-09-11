@@ -747,3 +747,71 @@ The two types of calculated fields are as follows:
 | ![Attribute hierarchy in JavaScript pivot table control](images/AttributeHierarchy.png)| Attribute Hierarchy| Hierarchy| True|
 | ![First level icon in JavaScript pivot table control](images/FirstLevel.png)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.png)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.png)| Levels (in order)| Level Element| True|
 | ![NamedSet icon in JavaScript pivot client control](images/NamedSet.png)| Named Set| Named Set| True|
+
+## Events
+
+### BeforeServiceInvoke
+
+The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
+
+* This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
+
+* It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
+
+When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`]() field.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### AfterServiceInvoke
+
+The [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
+
+* This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
+
+* You may use it to audit data, trigger notifications, or handle custom response-handling logic.
+
+When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AfterServiceInvoke.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="AfterServiceInvoke.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
