@@ -20,7 +20,7 @@ Before implementing baseline functionality, ensure the data source includes base
 
 - [baselineStartDate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineStartDate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
 - [baselineEndDate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineEndDate): Represents the originally planned end date of a task. It is used to compare against the actual end date.
-- [baselineDuration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineDuration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to 0. Setting `baselineStartDate` and `baselineEndDate` to the same value without setting baselineDuration to 0 will result in a one-day baseline task, not a milestone.
+- [baselineDuration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineDuration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to `0`. Setting `baselineStartDate` and `baselineEndDate` to the same value without setting `baselineDuration` to `0` will result in a one-day baseline task, not a milestone.
 
 ## Implement baseline
 
@@ -94,7 +94,7 @@ Before implementing baseline functionality, ensure the data source includes base
 
 - [BaselineStartDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineStartDate): Represents the originally planned start date of a task. This value is used to compare against the actual start date to identify schedule deviations.
 - [BaselineEndDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineEndDate): Represents the originally planned end date of a task. It is used to compare against the actual end date.
-- [BaselineDuration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineDuration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to 0. Setting `BaselineStartDate` and `BaselineEndDate` to the same value without setting baselineDuration to 0 will result in a one-day baseline task, not a milestone.
+- [BaselineDuration](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_BaselineDuration): Represents the total planned duration of the task. This value is critical for baseline visualization. To represent a baseline milestone, this property must be explicitly set to `0`. Setting `BaselineStartDate` and `BaselineEndDate` to the same value without setting `baselineDuration` to `0` will result in a one-day baseline task, not a milestone.
 
 ## Implement baseline
 
@@ -115,7 +115,7 @@ List<GanttDataSource> data = new List<GanttDataSource>
         ParentID = 5,
         BaselineStartDate = new DateTime(2019, 4, 2),
         BaselineEndDate = new DateTime(2019, 4, 4),
-        BaselineDuration = 2 // Regular baseline
+        BaselineDuration = 2 // Regular baseline.
     },
     new GanttDataSource
     {
@@ -126,7 +126,7 @@ List<GanttDataSource> data = new List<GanttDataSource>
         Duration = 0,
         Progress = 50,
         ParentID = 5,
-        BaselineDuration = 0 // Milestone baseline
+        BaselineDuration = 0 // Milestone baseline.
     }
 };
 ```
