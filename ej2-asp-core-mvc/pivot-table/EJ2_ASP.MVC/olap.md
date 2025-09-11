@@ -758,7 +758,7 @@ The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 * It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
 
-When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`]() field.
+When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
