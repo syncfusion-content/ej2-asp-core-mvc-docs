@@ -96,30 +96,6 @@ Templates can be defined either as strings or functions and assigned to the node
 {% endtabs %}
 {% endif %}
 
-### HTML and SVG node with node template
-
-The Symbol Palette [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_NodeTemplate property allows you to define reusable HTML or SVG structures that can be applied to multiple symbols. This approach is efficient when several palette symbols share a similar visual structure but contain different data.
-
-Templates should be created within `<script>` tags using unique IDs, which are then assigned to the symbol palette `nodeTemplate` property. When symbols are dragged from the palette, the diagram automatically applies the corresponding template and binds the symbol's data to the template elements.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/symbol-palette/nodeTemplate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="palette.cs" %}
-{% include code-snippet/diagram/symbol-palette/nodeTemplate/palette.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="palette.cs" %}
-{% include code-snippet/diagram/symbol-palette/nodeTemplate/palette.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Customize the palette header
 
 Palettes can be annotated with its header texts.
