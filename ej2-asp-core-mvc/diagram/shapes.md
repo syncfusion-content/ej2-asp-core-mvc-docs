@@ -253,7 +253,7 @@ N> Like HTML node, the native node also cannot be exported to image format. Fill
 
 ### Native node with content template
 
-To render an SVG node using a content template, define the desired template string in the node's[`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNative.html#Syncfusion_EJ2_Diagrams_DiagramNative_Content) property. The following example demonstrates how to create an SVG node using a content template.
+To render an SVG node using a content template, define the desired template string in the node's [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNative.html#Syncfusion_EJ2_Diagrams_DiagramNative_Content) property. The following example demonstrates how to create an SVG node using a content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
