@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ##Platform_Name## Pivot Table component
+# OLAP in ASP.NET CORE Pivot Table component
 
 ## Getting Started with ASP.NET Core
 
@@ -56,7 +56,7 @@ N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.J
 @addTagHelper *, Syncfusion.EJ2
 ```
 
-**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
+**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
 
 ```html
 <head>
@@ -739,7 +739,7 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -750,7 +750,7 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -772,7 +772,7 @@ When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -783,7 +783,7 @@ When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
