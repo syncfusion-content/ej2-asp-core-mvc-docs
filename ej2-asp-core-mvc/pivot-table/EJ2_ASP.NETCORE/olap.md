@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ##Platform_Name## Pivot Table component
+# OLAP in ASP.NET CORE Pivot Table component
 
 ## Getting Started with ASP.NET Core
 
