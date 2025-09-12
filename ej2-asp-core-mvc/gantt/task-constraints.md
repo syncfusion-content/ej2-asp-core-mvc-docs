@@ -63,7 +63,7 @@ TaskFields.ConstraintDate = "constraintDate" // Specifies the relevant date for 
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 {% raw %}
-```razor
+```cshtml
 TaskFields.Id = "taskId"
 TaskFields.Name = "taskName"
 TaskFields.StartDate = "startDate"
@@ -104,7 +104,9 @@ This task is constrained to must start on July 1, 2025.
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs1/constraints.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs1/razor %}
@@ -162,7 +164,7 @@ public void ActionBeginHandler(Syncfusion.EJ2.Gantt.GanttActionEventArgs args)
 }
 ```
 {% elsif page.publishingplatform == "aspnet-mvc" %}
-```razor
+```cshtml
 ActionBegin="ActionBeginHandler"
 ```
 ```c#
@@ -193,7 +195,9 @@ In the following example, we have **disabled the `MustStartOn` violation popup**
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs2/constraintsPopup.cs %}
 {% endhighlight %}
 {% endtabs %}
+
 {% elsif page.publishingplatform == "aspnet-mvc" %}
+
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/gantt/task-scheduling/task-constraints-cs2/razor %}
