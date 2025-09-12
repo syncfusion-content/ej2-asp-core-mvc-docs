@@ -11,7 +11,7 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
         private string CreateNodeContent(string nodeId)
         {
             return $"<div style='background:#6BA5D7;height:100%;width:100%;'><button type='button' style='width:100px'>Button</button></div>";
-        };
+        }
 
         public ActionResult Nodes()
         {
@@ -27,6 +27,6 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
             });
             ViewBag.nodes = nodes;
             return View();
-        };
+        }
     };
 };
