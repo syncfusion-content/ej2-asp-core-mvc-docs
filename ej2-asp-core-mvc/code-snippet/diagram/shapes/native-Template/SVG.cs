@@ -20,6 +20,6 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
             });
             ViewBag.nodes = nodes;
             return View();
-        };
+        }
     };
 };
