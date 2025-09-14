@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ##Platform_Name## Pivot Table component
+# OLAP in ASP.NET MVC Pivot Table component
 
 ## Getting Started with ASP.NET MVC
 
@@ -44,7 +44,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](../../EJ2_ASP.MVC/nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
 ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -84,7 +84,7 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
 </configuration>
 ```
 
-**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+**Step 4:** Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
 ```html
     <head>
@@ -752,13 +752,13 @@ The two types of calculated fields are as follows:
 
 ### BeforeServiceInvoke
 
-The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
+The [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
 
 * This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
 
 * It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
 
-When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
+When the [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -767,7 +767,7 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 {% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -778,20 +778,20 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 {% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/beforeServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
 ### AfterServiceInvoke
 
-The [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
+The [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
 
 * This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
 
 * You may use it to audit data, trigger notifications, or handle custom response-handling logic.
 
-When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+When the [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -800,7 +800,7 @@ When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 {% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -811,7 +811,7 @@ When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 {% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/afterServiceInvoke.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -65,7 +65,36 @@ To initialize a palette, define a JSON object with the property [`ID`](https://h
 {% endtabs %}
 {% endif %}
 
+## Template-based symbols
 
+### HTML and SVG node with content template
+
+The Symbol Palette supports the creation of complex nodes using HTML or SVG templates. This allows developers to incorporate rich, interactive, and visually engaging content within diagram elements.
+
+* For HTML content, set the node's `shape.type` property to **HTML**.
+* For SVG content, set the `shape.type` property to **Native**.
+
+Templates can be defined either as strings or functions and assigned to the node's `content` property. Function-based templates offer the flexibility to generate dynamic content based on node-specific properties or external data sources.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="palette.cs" %}
+{% include code-snippet/diagram/symbol-palette/contentTemplate/palette.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Customize the palette header
 
@@ -412,7 +441,7 @@ Here, the code provided below demonstrates how to define tooltip content to symb
 
 ### How to enable or disable the default tooltip for shapes in the symbol palette
 
-By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.SymbolPalette.html#Syncfusion_EJ2_Diagrams_SymbolPalette_SymbolInfo) property within the `getSymbolInfo` method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
+By default, the symbol ID is displayed as a tooltip when hovering over a symbol in the Symbol Palette. To disable this default tooltip, you can use the `showTooltip` property within the `getSymbolInfo` method. The `showTooltip` property is set to **true** by default, which enables the tooltip.
 
 The following example demonstrates how to configure selective tooltip display:
 

@@ -143,6 +143,12 @@ The scale property of the node allows to stretch the image as you desired (eithe
 
 Html elements can be embedded in the diagram through [`Html`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) type node. The shape property of node allows to set the type of node and to create a HTML node it should be set as `HTML`.
 
+N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
+
+### HTML node with content template
+
+To render an HTML node with a content template, we need to define the desired template string within the [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramHtml.html#Syncfusion_EJ2_Diagrams_DiagramHtml_Content) property. The following code illustrates how to create an HTML node with a content template:
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -163,22 +169,44 @@ Html elements can be embedded in the diagram through [`Html`](https://help.syncf
 {% endtabs %}
 {% endif %}
 
+#### Functional content template
 
+To render an HTML node using a functional template, we define a function that returns the template string. Within this function, modifications can be made based on the node's ID.
 
-N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
-
-## HTML Node With Template
-
-Html elements can be embedded in the diagram using [`Html`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) type node. The shape property of the node allows to set the type of node.
+The following code illustrates how to render an HTML node using the function and manipulate its content dynamically.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/shapes/html-template/tagHelper %}
+{% include code-snippet/diagram/shapes/HTML-FnContent/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/html-template/HTML-Node-With-Template.cshtml %}
+{% highlight c# tabtitle="HTML.cs" %}
+{% include code-snippet/diagram/shapes/HTML-FnContent/HTML.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="HTML.cs" %}
+{% include code-snippet/diagram/shapes/HTML-FnContent/HTML.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### HTML Node With node template
+
+To render html node with nodeTemplate we need to define the nodeTemplate in the html file and assign it to the [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_NodeTemplate) property of the diagram. The following code illustrates how to render html node with nodeTemplate.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/shapes/HTML-Template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HTML.cs" %}
+{% include code-snippet/diagram/shapes/HTML-Template/HTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,16 +214,46 @@ Html elements can be embedded in the diagram using [`Html`](https://help.syncfus
 
 {% tabs %}
 {% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/html-template/HTML-Node-With-Template.cshtml %}
+{% include code-snippet/diagram/shapes/HTML-Template/HTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
 
+#### Functional node template
 
+We can define a function which returns a template string and assign it directly to the `nodeTemplate` property of diagram.
+
+Refer the code example below.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
+{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML-Node-With-Template.cshtml %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
+{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML-Node-With-Template.cshtml %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Native
 
 Diagram provides support to embed SVG element into a node. The shape property of node allows to set the type of node. To create a [`native`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Native) node, it should be set as **native**.
+
+N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
+
+### Native node with content template
+
+To render an SVG node using a content template, define the desired template string in the node's [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNative.html#Syncfusion_EJ2_Diagrams_DiagramNative_Content) property. The following example demonstrates how to create an SVG node using a content template.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -217,9 +275,81 @@ Diagram provides support to embed SVG element into a node. The shape property of
 {% endtabs %}
 {% endif %}
 
+#### Functional content template
 
+Dynamic SVG content generation is supported through function-based templates that return SVG markup based on runtime conditions. This approach enables responsive graphics that adapt to node properties or the application's state.
 
-N> Like HTML node, the native node also cannot be exported to image format. Fill color of native node can be overridden by the inline style or fill of the SVG element specified in the template.
+The following example demonstrates how to render an SVG node using a function and dynamically manipulate its content.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/shapes/native-FnContent/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/native-FnContent/native.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/native-FnContent/native.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Native node with node template
+
+The [`nodeTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_NodeTemplate) property allows defining reusable SVG templates at the diagram level. This approach is efficient when multiple nodes share similar vector graphics or when centralized template management is required.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/shapes/native-Template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/native-Template/SVG.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/native-Template/SVG.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+#### Functional node template
+
+A functional `nodeTemplate` implementation provides maximum flexibility for generating SVG templates programmatically and creating dynamic content.
+
+The following example demonstrates this approach.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/diagram/shapes/Native-TemplateFnNode/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/Native-TemplateFnNode/HTML.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Native.cs" %}
+{% include code-snippet/diagram/shapes/Native-TemplateFnNode/HTML.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## SVG content alignment
 

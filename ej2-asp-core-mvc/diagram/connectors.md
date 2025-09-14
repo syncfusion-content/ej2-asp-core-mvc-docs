@@ -912,9 +912,14 @@ The following example demonstrates undo and redo functionality for connector seg
 {% endif %}
 
 ``` javascript
-var diagram = document.getElementById("container").ej2_instances[0];
-diagram.undo();
-diagram.redo();
+function undo(){
+    var diagram = document.getElementById("container").ej2_instances[0];
+    diagram.undo();
+};
+function redo(){
+    var diagram = document.getElementById("container").ej2_instances[0];
+    diagram.redo();
+};
 ```
 
 
