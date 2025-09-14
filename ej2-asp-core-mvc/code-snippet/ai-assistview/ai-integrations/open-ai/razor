@@ -1,0 +1,104 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    ViewData["Title"] = "AI Assistance with OpenAI";
+    var defaultSuggestions = new string[] { "Best practices for clean, maintainable code?", "How to optimize code editor for speed?" };
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    @Html.EJS().AIAssistView("aiAssistView").BannerTemplate("#bannerContent").PromptSuggestions(@defaultSuggestions).PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
+{
+    Items = ViewBag.Items,
+    ItemClicked = "toolbarItemClicked"
+}).Render()
+</div>
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>AI Assistance</h3>
+        <i>To get started, provide input or choose a suggestion.</i>
+    </div>
+</script>
+
+<!-- Add antiforgery token for POST requests -->
+@Html.AntiForgeryToken()
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>AI Assistance with OpenAI</h3>
+        <div>Your everyday AI companion.</div>
+    </div>
+</script>
+
+<script>
+    var assistObj = null;
+    
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            this.prompts = [];
+        }
+    }
+
+    function onPromptRequest(args) {
+        console.log('onPromptRequest called with prompt:', args.prompt);
+        if (!assistObj) {
+            console.error('assistObj is undefined, component not initialized');
+            return;
+        }
+        setTimeout(async () => {
+            let responseText = '';
+            try {
+                // Get antiforgery token
+                var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+                var token = tokenElement ? tokenElement.value : '';
+                console.log('Antiforgery Token:', token);
+
+                if (!token) {
+                    throw new Error('Antiforgery token not found.');
+                }
+
+                const response = await fetch('/Home/GetAIResponse', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': token
+                    },
+                    body: JSON.stringify({ prompt: args.prompt })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                responseText = await response.json();
+                assistObj.addPromptResponse(marked.parse(responseText));
+            } catch (error) {
+                assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+            }
+        }, 2000); // Match the 2000ms delay from the reference sample
+    }
+</script>
+
+<style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 35px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+</style>
