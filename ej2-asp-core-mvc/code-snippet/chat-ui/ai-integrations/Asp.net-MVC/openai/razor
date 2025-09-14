@@ -1,0 +1,105 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+@using Syncfusion.EJ2
+@{
+    ViewData["Title"] = "AI Chat with OpenAI";
+}
+
+<div class="chatui-container" style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUI").User(ViewBag.CurrentUser).HeaderText("Chat with OpenAI").HeaderToolbar(new ChatUIToolbarSettings() { Items = ViewBag.HeaderToolbar, ItemClicked = "itemClicked" }).HeaderIconCss("e-icons e-ai-chat").EmptyChatTemplate("#emptyChatTemplate").MessageSend("onMessageSend").Created("onCreated").Render()
+</div>
+
+<script id="emptyChatTemplate" type="text/x-jsrender">
+    <div class="emptychat-content">
+        <h3><span class="e-icons e-assistview-icon"></span></h3>
+        <div class="emptyChatText" style="font-size: 16px; font-style: italic">Syncfusion Chat UI with Open AI</div>
+    </div>
+</script>
+
+<!-- Add antiforgery token for POST requests -->
+@Html.AntiForgeryToken()
+
+<script>
+    var chatObj = null;
+    var aiModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AIUser));
+
+    function onCreated() {
+        chatObj = this;
+    }
+
+    function itemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            chatObj.messages = [];
+        }
+    }
+
+    function onMessageSend(args) {
+        console.log('onMessageSend called with message:', args.message.text);
+        if (!chatObj) {
+            console.error('chatObj is undefined, component not initialized');
+            return;
+        }
+        setTimeout(async () => {
+            chatObj.typingUsers = [aiModel];
+            let responseText = '';
+            try {
+                // Get antiforgery token
+                var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+                var token = tokenElement ? tokenElement.value : '';
+                console.log('Antiforgery Token:', token);
+                if (!token) {
+                    throw new Error('Antiforgery token not found.');
+                }
+                const response = await fetch('/Home/GetAIResponse', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': token
+                    },
+                    body: JSON.stringify({ prompt: args.message.text })
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                responseText = await response.json();
+                chatObj.addMessage({
+                    text: marked.parse(responseText),
+                    author: aiModel,
+                });
+            } catch (error) {
+                chatObj.addMessage({
+                    text: 'Error generating response. Please check your API key and try again.',
+                    author: aiModel,
+                });
+            } finally {
+                chatObj.typingUsers = [];
+            }
+        }, 500);
+    }
+</script>
+
+<style>
+    .chatui-container {
+        margin: auto;
+    }
+
+    .emptychat-content {
+        padding-top:100px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .e-ai-chat {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    p{
+        margin: 0;
+        display: inline-block;
+    }
+    .e-assistview-icon {
+        font-size: 24px;
+    }
+</style>
