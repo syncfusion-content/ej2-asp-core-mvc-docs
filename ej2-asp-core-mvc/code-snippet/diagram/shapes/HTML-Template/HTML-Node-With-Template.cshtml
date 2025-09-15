@@ -1,6 +1,0 @@
-<div class="text-center">
-    @(Html.EJS().Diagram("diagram").Width("100%").Height("700px").NodeTemplate("#nodetemplate").Nodes(ViewBag.nodes).Render())
-</div>
-<script id="nodetemplate" type="text/x-template">
-    <input type="button" id="button" value="${id}">
-</script>
