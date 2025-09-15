@@ -146,15 +146,11 @@ Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Di
     var currentUserId = "@currentUserModel.Id";
     var botUser = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(botUserModel));
     var directLine;
+    var chatUiEle = document.getElementById('chatUI');
     var isConnected = false; // Flag to prevent multiple initializations
-
-    // Initialize Chat UI instance on DOM ready
-    function onCreated()  {
-        var chatUiEle = document.getElementById('chatUI');
-        chatUIObj = ej.base.getInstance(chatUiEle, 'chatui'); // Use string selector for getInstance
-    };
-
+    
     async function onMessageSend(args) {
+        chatUIObj = ej.base.getInstance(chatUiEle, 'chatui');
         // Initialize Direct Line connection on first message if not already connected
         if (!isConnected) {
             try {
