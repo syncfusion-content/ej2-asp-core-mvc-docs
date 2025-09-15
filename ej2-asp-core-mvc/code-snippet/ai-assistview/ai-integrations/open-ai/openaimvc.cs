@@ -13,16 +13,12 @@ namespace AssistViewDemo.Controllers
             ViewBag.Items = Items;
             return View();
         }
-
         public class ToolbarItemModel
         {
             public string iconCss { get; set; }
             public string align { get; set; }
         }
-
-
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> GetAIResponse([FromBody] PromptRequest request)
         {
             try

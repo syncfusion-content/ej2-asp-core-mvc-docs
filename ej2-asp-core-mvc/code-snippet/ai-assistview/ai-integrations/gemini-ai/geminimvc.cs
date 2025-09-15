@@ -22,7 +22,6 @@ namespace AssistViewDemo.Controllers
 
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> GetAIResponse([FromBody] PromptRequest request)
         {
             try

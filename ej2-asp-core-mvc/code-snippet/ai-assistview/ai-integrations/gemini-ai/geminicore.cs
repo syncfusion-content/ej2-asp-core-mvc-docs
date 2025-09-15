@@ -25,8 +25,6 @@ namespace WebApplication4.Pages
                 "How can I maintain work-life balance effectively?"
             };
         }
-
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> OnPostGetAIResponse([FromBody] PromptRequest request)
         {
             try

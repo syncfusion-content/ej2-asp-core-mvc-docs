@@ -25,19 +25,19 @@ Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control i
  
 ## Install Packages
  
-Install the Syncfusion ASP.NET Core package in the application.
+Install the Syncfusion ASP.NET Core package in the application  using Package Manager Console.
  
 ```bash
  
-Install-Package Syncfusion.EJ2.AspNet.Core -Version 31.1.17
-
+NuGet\Install-Package Syncfusion.EJ2.MVC5
+ 
 ```
  
-Install the Gemini AI package in the application.
+Install the Gemini AI package in the application using Package Manager Console.
  
 ```bash
  
-Install-Package Mscc.GenerativeAI -Version 2.8.8
+NuGet\Install-Package Mscc.GenerativeAI
  
 ```
  
@@ -57,20 +57,11 @@ Install-Package Mscc.GenerativeAI -Version 2.8.8
  
 You can add the below respective files in your application:
  
-> Add your generated `API Key` at the line
+N> Add your generated `API Key` at the line
  
 ```bash
  
 string apiKey = 'Place your API key here';
- 
-```
-N> ASP.NET Core requires this token for POST requests to handlers (like OnPostGetAIResponse) to prevent CSRF attacks.
- 
-Add this to Pages/Index.cshtml
- 
-```bash
- 
-@Html.AntiForgeryToken()
  
 ```
  

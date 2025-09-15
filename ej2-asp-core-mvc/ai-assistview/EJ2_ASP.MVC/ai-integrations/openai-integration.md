@@ -25,19 +25,19 @@ Before integrating Open AI, ensure that the Syncfusion AI AssistView control is 
  
 ## Install Packages
  
-Install the Syncfusion ASP.NET Core package in the application.
+Install the Syncfusion ASP.NET Core package in the application using Package Manager Console.
  
 ```bash
  
-Install-Package Syncfusion.EJ2.MVC5 -Version 29.1.33
+NuGet\Install-Package Syncfusion.EJ2.MVC5
 
 ```
  
-Install the Open AI package in the application.
+Install the Open AI package in the application using Package Manager Console.
  
 ```bash
  
-Install-Package OpenAI -Version 2.4.0
+NuGet\Install-Package OpenAI
  
 ```
  
@@ -57,20 +57,11 @@ Install-Package OpenAI -Version 2.4.0
  
 You can add the below respective files in your application:
  
-> Add your generated `API Key` at the line in .cs file
+N> Add your generated `API Key` at the line in .cs file
  
 ```bash
  
 string apiKey = 'Place your API key here';
- 
-```
-N> ASP.NET Core requires this token for POST requests to handlers (like OnPostGetAIResponse) to prevent CSRF attacks.
- 
-Add this to Pages/Index.cshtml
- 
-```bash
- 
-@Html.AntiForgeryToken()
  
 ```
  

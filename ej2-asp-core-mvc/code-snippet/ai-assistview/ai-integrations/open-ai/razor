@@ -46,28 +46,13 @@
     }
 
     function onPromptRequest(args) {
-        console.log('onPromptRequest called with prompt:', args.prompt);
-        if (!assistObj) {
-            console.error('assistObj is undefined, component not initialized');
-            return;
-        }
         setTimeout(async () => {
             let responseText = '';
             try {
-                // Get antiforgery token
-                var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
-                var token = tokenElement ? tokenElement.value : '';
-                console.log('Antiforgery Token:', token);
-
-                if (!token) {
-                    throw new Error('Antiforgery token not found.');
-                }
-
                 const response = await fetch('/Home/GetAIResponse', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'RequestVerificationToken': token
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ prompt: args.prompt })
                 });
