@@ -26,19 +26,19 @@ Before integrating Gemini AI, ensure that the Syncfusion Chat UI control is corr
 
 ## Install Dependencies
 
-Install the Syncfusion ASP.NET Core package in the application.
+Install the Syncfusion ASP.NET Core package in the application using the Package Manager Console.
 
 ```bash 
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version 31.1.17
+NuGet\Install-Package Syncfusion.EJ2.AspNet.Core
 
 ```
 
-Install the Open AI package in the application.
+Install the Open AI package in the application using the Package Manager Console.
 
 ```bash 
 
-Install-Package Mscc.GenerativeAI -Version 2.8.8
+NuGet\Install-Package Mscc.GenerativeAI
 
 ```
 

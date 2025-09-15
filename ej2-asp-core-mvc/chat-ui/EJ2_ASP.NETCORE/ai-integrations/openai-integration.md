@@ -25,19 +25,18 @@ Before integrating Open AI, ensure that the Syncfusion Chat UI control is correc
 
 ## Install Dependencies
 
-Install the Syncfusion ASP.NET Core package in the application.
+Install the Syncfusion ASP.NET Core package in the application using the Package Manager Console.
 
 ```bash 
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version 31.1.17
-
+NuGet\Install-Package Syncfusion.EJ2.AspNet.Core
 ```
 
-Install the Open AI package in the application.
+Install the Open AI package in the application using the Package Manager Console.
 
 ```bash 
 
-Install-Package OpenAI -Version 2.4.0
+NuGet\Install-Package OpenAI
 
 ```
 
