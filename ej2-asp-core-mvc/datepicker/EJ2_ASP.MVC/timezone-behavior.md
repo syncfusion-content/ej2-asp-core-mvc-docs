@@ -26,16 +26,17 @@ The `serverTimezoneOffset` property allows you to specify the server's time zone
 
 N> The `serverTimezoneOffset` property is applicable **only for pre-bound values** (i.e., values set during initialization or data binding). It does **not affect** values selected by the user during runtime.
 
-### Example
+{% if page.publishingplatform == "aspnet-core" %}
 
-```ts
-import { DatePicker } from '@syncfusion/ej2-calendars';
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/datepicker/timezone-cs1/tagHelper %}
+{% endhighlight %}{% endtabs %}
 
-/* Initialize the DatePicker component */
-let datepicker: DatePicker = new DatePicker({
-    placeholder: "Select Date",
-    width: "250px",
-    serverTimezoneOffset: 5.5 // Example: UTC+5:30 for IST
-});
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-datepicker.appendTo('#datepicker');
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/datepicker/timezone-cs1/razor %}
+{% endhighlight %}{% endtabs %}
+{% endif %}
