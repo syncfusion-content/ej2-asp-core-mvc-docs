@@ -136,50 +136,60 @@ Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Di
 }
 
 <div id='chat-container' style="height: 400px; width: 400px;">
-    @Html.EJS().ChatUI("chatUI").User(currentUserModel).MessageSend("onMessageSend").Render()
+    @Html.EJS().ChatUI("chatUI").User(currentUserModel).MessageSend("onMessageSend").Created("onCreated").Render()
 </div>
 
+<script src="https://cdn.syncfusion.com/ej2/31.1.17/dist/ej2.min.js"></script>
 <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
 <script>
     var chatUIObj;
     var currentUserId = "@currentUserModel.Id";
     var botUser = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(botUserModel));
     var directLine;
+    var isConnected = false; // Flag to prevent multiple initializations
 
-    // Initialize Direct Line connection
-    document.addEventListener('DOMContentLoaded', async function () {
+    // Initialize Chat UI instance on DOM ready
+    function onCreated()  {
         var chatUiEle = document.getElementById('chatUI');
-        chatUIObj = ej.base.getInstance(chatUiEle, ejs.interactivechat.ChatUI);
+        chatUIObj = ej.base.getInstance(chatUiEle, 'chatui'); // Use string selector for getInstance
+    };
 
-        try {
-            // Fetch Direct Line token
-            const response = await fetch('/api/token/directline/token', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' }
-            });
-            const data = await response.json();
-            if (data.error) {
-                chatUIObj.addMessage({ text: 'Failed to connect to bot.', author: botUser });
+    async function onMessageSend(args) {
+        // Initialize Direct Line connection on first message if not already connected
+        if (!isConnected) {
+            try {
+                // Fetch Direct Line token
+                const response = await fetch('/api/token/directline/token', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' }
+                });
+                const data = await response.json();
+                if (data.error) {
+                    chatUIObj.addMessage({ text: 'Failed to connect to bot.', author: botUser });
+                    return;
+                }
+
+                // Initialize Direct Line
+                directLine = new BotFramework.DirectLine.DirectLine({ token: data.token });
+                isConnected = true; // Mark as connected
+
+                // Subscribe to bot messages
+                directLine.activity$
+                    .filter(activity => activity.type === 'message' && activity.from.id !== currentUserId)
+                    .subscribe(message => {
+                        chatUIObj.addMessage({ text: message.text, author: botUser });
+                    });
+            } catch (error) {
+                chatUIObj.addMessage({ text: 'Sorry, I couldn’t connect to the bot.', author: botUser });
+                console.error('Connection error:', error);
                 return;
             }
-
-            // Initialize Direct Line
-            directLine = new BotFramework.DirectLine.DirectLine({ token: data.token });
-
-            // Subscribe to bot messages
-            directLine.activity$
-                .filter(activity => activity.type === 'message' && activity.from.id !== currentUserId)
-                .subscribe(message => {
-                    chatUIObj.addMessage({ text: message.text, author: botUser });
-                });
-        } catch (error) {
-            chatUIObj.addMessage({ text: 'Sorry, I couldn’t connect to the bot.', author: botUser });
         }
-    });
 
-    function onMessageSend(args) {
+        // Ensure Direct Line is available before sending message
         if (!directLine) {
             console.error('Direct Line connection not established.');
+            chatUIObj.addMessage({ text: 'Bot connection not ready. Please wait.', author: botUser });
             return;
         }
 
