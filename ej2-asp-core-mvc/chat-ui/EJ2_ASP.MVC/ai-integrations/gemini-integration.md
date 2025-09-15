@@ -65,15 +65,6 @@ You can add the below respective files in your application:
 const geminiApiKey = 'Place your API key here'; 
 
 ```
-> ASP.NET MVC requires this token for POST requests to handlers (like OnPostGetAIResponse) to prevent CSRF attacks.
-
-Add this to Pages/Index.cshtml
-
-```bash
-
-@Html.AntiForgeryToken()
-
-```
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

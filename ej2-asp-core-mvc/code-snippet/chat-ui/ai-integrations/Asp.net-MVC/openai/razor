@@ -16,9 +16,6 @@
     </div>
 </script>
 
-<!-- Add antiforgery token for POST requests -->
-@Html.AntiForgeryToken()
-
 <script>
     var chatObj = null;
     var aiModel = @Html.Raw(JsonConvert.SerializeObject(ViewBag.AIUser));
@@ -34,27 +31,14 @@
     }
 
     function onMessageSend(args) {
-        console.log('onMessageSend called with message:', args.message.text);
-        if (!chatObj) {
-            console.error('chatObj is undefined, component not initialized');
-            return;
-        }
         setTimeout(async () => {
             chatObj.typingUsers = [aiModel];
             let responseText = '';
             try {
-                // Get antiforgery token
-                var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
-                var token = tokenElement ? tokenElement.value : '';
-                console.log('Antiforgery Token:', token);
-                if (!token) {
-                    throw new Error('Antiforgery token not found.');
-                }
                 const response = await fetch('/Home/GetAIResponse', {
                     method: 'POST',
                     headers: {
-                        'Content-Type': 'application/json',
-                        'RequestVerificationToken': token
+                        'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({ prompt: args.message.text })
                 });

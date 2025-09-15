@@ -65,16 +65,6 @@ const openaiApiKey = 'Place your API key here';
 
 ```
 
-> ASP.NET Core requires this token for POST requests to handlers (like OnPostGetAIResponse) to prevent CSRF attacks.
-
-Add this to Pages/Index.cshtml
-
-```bash
-
-@Html.AntiForgeryToken()
-
-```
-
 {% tabs %}
 {% highlight tagHelper tabtitle="CSHTML" %}
 {% include code-snippet/chat-ui/ai-integrations/Asp.net-core/openai/tagHelper %}

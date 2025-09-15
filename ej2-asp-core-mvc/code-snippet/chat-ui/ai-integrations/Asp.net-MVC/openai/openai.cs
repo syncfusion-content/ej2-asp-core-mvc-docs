@@ -27,7 +27,6 @@ public IActionResult Index()
 }
 
 [HttpPost]
-[ValidateAntiForgeryToken]
 public async Task<IActionResult> GetAIResponse([FromBody] PromptRequest request)
 {
     try

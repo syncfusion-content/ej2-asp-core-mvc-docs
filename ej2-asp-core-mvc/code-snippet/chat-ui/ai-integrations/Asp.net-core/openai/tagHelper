@@ -65,25 +65,11 @@
                 // Show typing indicator
                 chatUI.typingUsers = [aiModel];
 
-                // Get antiforgery token with fallback
-                var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
-                var token = tokenElement ? tokenElement.value : '';
-                console.log('Antiforgery Token:', token); // Debug: Log token value
-
-                if (!token) {
-                    console.warn('Antiforgery token not found. Check if @Html.AntiForgeryToken() is rendered.');
-                    chatUI.addMessage({
-                        text: 'Warning: Security token missing. Please refresh the page.',
-                        author: aiModel
-                    });
-                }
-
                 try {
                     const response = await fetch('/?handler=GetAIResponse', {
                         method: 'POST',
                         headers: {
-                            'Content-Type': 'application/json',
-                            'RequestVerificationToken': token
+                            'Content-Type': 'application/json'
                         },
                         body: JSON.stringify({ prompt: args.message.text })
                     });

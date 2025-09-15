@@ -17,7 +17,6 @@ public void OnGet()
     HeaderToolbar = HeaderToolbar;
 }
 
-[ValidateAntiForgeryToken]
 public async Task<IActionResult> OnPostGetAIResponse([FromBody] PromptRequest request)
 {
     try
