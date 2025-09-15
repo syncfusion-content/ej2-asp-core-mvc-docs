@@ -13,7 +13,7 @@
 }).Values(values =>
 {
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
-})).MultiLevelLabelRender("multiLevelLabelRender").DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column))).Render()
+})).DisplayOption(new PivotViewDisplayOption { View = View.Chart }).ChartSettings(chartSettings => chartSettings.ChartSeries(chartSeries => chartSeries.Type(ChartSeriesType.Column)).MultiLevelLabelRender("multiLevelLabelRender")).Render()
 
 <script>
     function multiLevelLabelRender(args) {

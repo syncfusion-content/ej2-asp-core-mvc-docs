@@ -13,7 +13,7 @@
 {
     filters.Name("Product_Categories").Caption("Product Categories").Add();
 })).GridSettings(new PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = View.Both }).Toolbar(new List<string>
-() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting" "FieldList" }).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport").RemoveReport("removeReport").NewReport("newReport").Render()
+() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList" }).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport").RemoveReport("removeReport").NewReport("newReport").Render()
 <style>
     #pivotview {
         width: 100%;

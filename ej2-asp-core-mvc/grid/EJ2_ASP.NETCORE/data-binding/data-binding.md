@@ -257,7 +257,7 @@ The following example demonstrates how to prevent local time zone conversion for
 
 ![Prevent to convert local time zone format](../images/databinding/local-time.gif)
 
-## How to set custom headers using a custom adaptor in Syncfusion ASP.NET Core Grid
+## How to set custom headers using a custom adaptor
 
 Custom headers in HTTP requests are used to send additional information such as authentication tokens, API keys, or metadata required by the server. These headers improve security and enable better control over data communication. In the Syncfusion ASP.NET Core Grid, custom headers can be added when making API requests, ensuring that each request carries the necessary information for server-side validation and processing.
 

@@ -7,13 +7,13 @@
         </e-gantt-taskfields>
         <e-gantt-editsettings allowAdding="true"></e-gantt-editsettings>
         <e-gantt-adddialogfields>
-            <e-gantt-adddialogfield type="General" headerText="General Tab" fields=["TaskID", "TaskName","newInput"]></e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="General" headerText="General Tab" fields="@(new string[] {"TaskID", "TaskName","newInput"})"></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Dependency"></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Resources"></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Notes"></e-gantt-adddialogfield>
           </e-gantt-adddialogfields>
           <e-gantt-editdialogfields>
-            <e-gantt-editdialogfield type="General" headerText="General" fields=["TaskID", "TaskName","newInput"]></e-gantt-editdialogfield>
+            <e-gantt-editdialogfield type="General" headerText="General" fields="@(new string[] {"TaskID", "TaskName","newInput"})"></e-gantt-editdialogfield>
             <e-gantt-editdialogfield type="Dependency"></e-gantt-editdialogfield>
             <e-gantt-editdialogfield type="Resources"></e-gantt-editdialogfield>
             <e-gantt-editdialogfield type="Notes"></e-gantt-editdialogfield>

@@ -200,6 +200,47 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 {% endif %}
 
+### Checklist
+
+The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
+
+#### Inserting a checklist
+
+You can embed interactive task lists directly within the Rich Text Editor. Here’s how you can insert a Checklist:
+- **Using the Toolbar**: Click the Checklist button in the editor toolbar, usually represented by a checkbox icon.
+- **Using the Shortcut**: Press `Ctrl+Shift+9` (or `Cmd+Shift+9` on macOS) to insert a Checklist at your cursor’s position.
+- **Converting Existing Lists**: Select an existing bullet or numbered list and click the Checklist button to convert it into an interactive checklist.
+- **Toggling Checklist Items**: You can toggle the state of checklist items between checked and unchecked by clicking the checkbox. If you prefer using the keyboard, press `Ctrl+Enter` (or `Cmd+Enter` on macOS) to toggle the check marks based on your selection or cursor position in the editor.
+
+#### Configuring Checklist
+
+To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `e-richtexteditor-toolbarsettings.items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
+
+Below is an example of how to configure the Checklist in the Rich Text Editor:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Increase and decrease indent
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.

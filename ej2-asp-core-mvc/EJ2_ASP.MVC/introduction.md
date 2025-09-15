@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .Net 8.0 or higher.
+> With the 2025 Volume 1 release, we will discontinue support for .NET 6.0 and 7.0 in WinForms, WPF, WinUI, and Document Processing Libraries. Please plan to upgrade to .NET 8.0 or higher.
 
 # Syncfusion® ASP.NET MVC UI (Essential® JS 2)
 
@@ -123,13 +123,10 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc">DataGrid</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started">Pivot Table</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc">TreeGrid</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/spreadsheet/getting-started-mvc">Spreadsheet</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started">MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/getting-started">RichTextEditor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started">Markdown Editor</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/pdfviewer/getting-started">PDF Viewer</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/document-editor/getting-started">Word Processor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/image-editor/getting-started">Image Editor</a></div>
         <div><p class="controlcategory">FILE FORMAT FRAMEWORKS</p></div>
         <div class="controlanchorlink"><a target="_self" href="https://help.syncfusion.com/file-formats/xlsio/create-read-edit-excel-files-in-asp-net-mvc-c-sharp">Excel</a></div>

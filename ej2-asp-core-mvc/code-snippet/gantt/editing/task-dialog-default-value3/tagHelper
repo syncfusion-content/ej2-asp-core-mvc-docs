@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2
 
 <div>
-    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" toolbar="@(new List<string>() { 'Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll'})" actionBegin="onActionBegin">
+    <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll"})" actionBegin="onActionBegin">
         <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
                             endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
         </e-gantt-taskfields>
@@ -11,14 +11,18 @@
             <e-gantt-adddialogfield type="Dependency" ></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Resources" ></e-gantt-adddialogfield>
             <e-gantt-editdialogfield type="Segment" ></e-gantt-editdialogfield>
-            <e-gantt-adddialogfield type="Notes" additionalParams={inlineMode: { enable: true,onSelection: true }}></e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="Notes"  additionalParams="@(new { 
+                                inlineMode = new { enable = true, onSelection = true }
+                            })"></e-gantt-adddialogfield>
           </e-gantt-adddialogfields>
           <e-gantt-editdialogfields>
-            e-gantt-adddialogfield type="General" headerText="General Tab" ></e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="General" headerText="General Tab" ></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Dependency" ></e-gantt-adddialogfield>
             <e-gantt-adddialogfield type="Resources" ></e-gantt-adddialogfield>
             <e-gantt-editdialogfield type="Segment" ></e-gantt-editdialogfield>
-            <e-gantt-adddialogfield type="Notes" additionalParams={inlineMode: { enable: true,onSelection: true }}></e-gantt-adddialogfield>
+            <e-gantt-adddialogfield type="Notes" additionalParams="@(new { 
+                                inlineMode = new { enable = true, onSelection = true }
+                            })"></e-gantt-adddialogfield>
           </e-gantt-editdialogfields>
     </ejs-gantt>
 </div>

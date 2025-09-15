@@ -36,6 +36,21 @@ PDF export allows exporting TreeGrid data to PDF document. You need to use the *
 {% endtabs %}
 {% endif %}
 
+## Exporting custom aggregates in TreeGrid
+ 
+The TreeGrid enables exporting custom aggregates, which summarize column data, to an PDF document using the `pdfAggregateQueryCellInfo` event.
+ 
+In the provided example, the `customAggregateFn` function computes the item count for a selected category, while the `pdfAggregateQueryCellInfo` event customizes the exported cell values in the PDF document.
 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/pdf-export/custom-aggregate-pdf/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="empty-record-template.cs" %}
+{% include code-snippet/tree-grid/pdf-export/custom-aggregate-pdf/custom-aggregate-pdf.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Exporting Custom Aggregates](../images/pdf-custom-aggregate.jpg)
 
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

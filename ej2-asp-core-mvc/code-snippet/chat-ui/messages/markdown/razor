@@ -57,7 +57,7 @@
         padding: 20px;
     }
     p {
-    margin: 0;
-    display: inline-block;
-}
+        margin: 0;
+        display: inline-block;
+    }
 </style>
