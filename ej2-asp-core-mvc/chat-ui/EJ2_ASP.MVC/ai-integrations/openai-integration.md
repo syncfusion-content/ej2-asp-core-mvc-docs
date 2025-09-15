@@ -37,7 +37,7 @@ Install the Open AI package in the application using the Package Manager Console
 
 ```bash 
 
-NuGet\Install-Package OpenAI -Version
+NuGet\Install-Package OpenAI
 
 ```
 
