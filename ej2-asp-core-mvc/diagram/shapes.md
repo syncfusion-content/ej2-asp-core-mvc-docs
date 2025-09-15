@@ -213,7 +213,7 @@ To render html node with nodeTemplate we need to define the nodeTemplate in the 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
+{% highlight c# tabtitle="HTML.cs" %}
 {% include code-snippet/diagram/shapes/HTML-Template/HTML.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -231,16 +231,16 @@ Refer the code example below.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/shapes/HTML-TemplateFnNode/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML-Node-With-Template.cshtml %}
+{% highlight c# tabtitle="HTML.cs" %}
+{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight c# tabtitle="HTML_Node_With_Template.cshtml" %}
-{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML-Node-With-Template.cshtml %}
+{% highlight c# tabtitle="HTML.cs" %}
+{% include code-snippet/diagram/shapes/HTML-TemplateFnNode/HTML.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
