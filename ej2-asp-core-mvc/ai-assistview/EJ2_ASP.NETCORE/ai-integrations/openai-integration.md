@@ -83,6 +83,8 @@ Add this to Pages/Index.cshtml
 {% endhighlight %}
 {% endtabs %}
  
+![Open AI](../../images/ai-integration.png)
+
 ## Run and Test
  
 Run the application in the browser using the following command.

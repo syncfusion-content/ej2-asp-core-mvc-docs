@@ -82,6 +82,8 @@ Add this to Pages/Index.cshtml
 {% include code-snippet/ai-assistview/ai-integrations/open-ai/openaimvc.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Open AI](../../images/ai-integration.png)
  
 ## Run and Test
  

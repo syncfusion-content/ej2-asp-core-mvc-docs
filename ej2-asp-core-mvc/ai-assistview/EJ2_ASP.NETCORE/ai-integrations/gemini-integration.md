@@ -82,6 +82,8 @@ Add this to Pages/Index.cshtml
 {% include code-snippet/ai-assistview/ai-integrations/gemini-ai/geminicore.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Gemini AI](../../images/ai-integration.png)
  
 ## Run and Test
  
