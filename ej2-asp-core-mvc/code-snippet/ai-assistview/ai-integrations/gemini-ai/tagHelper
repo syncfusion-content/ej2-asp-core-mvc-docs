@@ -1,0 +1,87 @@
+@using Syncfusion.EJ2.InteractiveChat
+@{
+    ViewData["Title"] = "AI Assistance with Gemini";
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
+                      promptSuggestions="@Model.ViewModel.PromptSuggestionData"
+                      promptRequest="onPromptRequest"
+                      created="onCreated">
+        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>AI Assistance</h3>
+        <i>To get started, provide input or choose a suggestion.</i>
+    </div>
+</script>
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>AI Assistance with Gemini</h3>
+        <div>Your everyday AI companion.</div>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+    <script>
+        var assistObj = null;
+        var suggestions = @Html.Raw(Json.Serialize(Model.ViewModel.PromptSuggestionData));
+
+        function onCreated() {
+            assistObj = this;
+        }
+
+        function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            this.prompts = [];
+            this.promptSuggestions = suggestions;
+        }
+    }
+
+        function onPromptRequest(args) {
+            setTimeout(async () => {
+                let responseText = '';
+                try {
+                    const response = await fetch('/?handler=GetAIResponse', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ prompt: args.prompt })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    responseText = await response.json();
+                    assistObj.addPromptResponse(marked.parse(responseText));
+                } catch (error) {
+                    assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+                }
+            }, 2000); // Match the 2000ms delay from the reference sample
+        }
+    </script>
+
+<style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 35px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+</style>
