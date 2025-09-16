@@ -74,7 +74,7 @@ string apiKey = 'Place your API key here';
 {% endhighlight %}
 {% endtabs %}
 
-![Open AI](../../images/ai-integration.png)
+![Open AI](../../images/open-ai.png)
  
 ## Run and Test
  
