@@ -58,7 +58,7 @@ NuGet\Install-Package Mscc.GenerativeAI
 
 You can add the below respective files in your application:
 
-> Add your generated `API Key` at the line 
+* Add your generated `API Key` at the line 
 
 ```bash
 

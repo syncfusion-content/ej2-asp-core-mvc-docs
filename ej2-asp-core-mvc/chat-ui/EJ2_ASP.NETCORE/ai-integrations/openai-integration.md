@@ -57,7 +57,7 @@ NuGet\Install-Package OpenAI
 
 You can add the below respective files in your application:
 
-> Add your generated `API Key` at the line 
+* Add your generated `API Key` at the line 
 
 ```bash
 
