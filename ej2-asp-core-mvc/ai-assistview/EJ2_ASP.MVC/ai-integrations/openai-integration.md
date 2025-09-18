@@ -10,22 +10,22 @@ documentation: ug
  
 # Integration of Open AI With AI AssistView control
  
-The Syncfusion AI AssistView supports integration with [OpenAI](https://platform.openai.com/docs/overview), enabling advanced conversational AI features in your Mvc applications.
+The Syncfusion AI AssistView supports integration with [OpenAI](https://platform.openai.com/docs/overview), enabling advanced conversational AI features in your MVC applications.
  
 ## Getting Started With the AI AssistView control
  
 Before integrating Open AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Vue application:
  
-[ Mvc Getting Started Guide](../getting-started)
+[ MVC Getting Started Guide](../getting-started)
  
 ## Prerequisites
  
 * OpenAI account to generate an API key for accessing the `OpenAI` API
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create Mvc application
+* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
  
 ## Install Packages
  
-Install the Syncfusion ASP.NET Mvc package in the application using Package Manager Console.
+Install the Syncfusion ASP.NET MVC package in the application using Package Manager Console.
  
 ```bash
  

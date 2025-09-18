@@ -10,7 +10,7 @@ documentation: ug
  
 # Integration of Gemini AI With AI AssistView control
  
-The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your Mvc applications.
+The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your MVC applications.
  
 ## Getting Started With the AI AssistView control
  
@@ -21,11 +21,11 @@ Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control i
 ## Prerequisites
  
 * Google account to generate API key on accessing `Gemini AI`.
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create Mvc application
+* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
  
 ## Install Packages
  
-Install the Syncfusion ASP.NET Mvc package in the application  using Package Manager Console.
+Install the Syncfusion ASP.NET MVC package in the application  using Package Manager Console.
  
 ```bash
  
