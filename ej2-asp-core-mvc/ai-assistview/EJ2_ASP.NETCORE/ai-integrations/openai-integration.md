@@ -29,7 +29,7 @@ Install the Syncfusion ASP.NET Core package in the application using Package Man
  
 ```bash
  
-NuGet\Install-Package Syncfusion.EJ2.MVC5
+NuGet\Install-Package Syncfusion.EJ2.AspNet.Core
 
 ```
  
@@ -57,7 +57,7 @@ NuGet\Install-Package
  
 You can add the below respective files in your application:
  
-N> Add your generated `API Key` at the line in .cs file
+* Add your generated `API Key` at the line in .cs file
  
 ```bash
  
