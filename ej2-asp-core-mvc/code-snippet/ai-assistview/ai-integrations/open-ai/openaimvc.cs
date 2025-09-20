@@ -11,6 +11,12 @@ namespace AssistViewDemo.Controllers
         {
             Items.Add(new ToolbarItemModel { iconCss = "e-icons e-refresh", align = "Right" });
             ViewBag.Items = Items;
+            var PromptSuggestionData = new string[]
+            {
+                "What are the best tools for organizing my tasks?",
+                "How can I maintain work-life balance effectively?"
+            };
+            ViewBag.PromptSuggestionData = PromptSuggestionData;
             return View();
         }
         public class ToolbarItemModel

@@ -20,14 +20,6 @@
     </div>
 </script>
 
-<script id="bannerContent" type="text/x-jsrender">
-    <div class="banner-content">
-        <div class="e-icons e-assistview-icon"></div>
-        <h3>AI Assistance with Gemini</h3>
-        <div>Your everyday AI companion.</div>
-    </div>
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
     <script>
         var assistObj = null;

@@ -3,11 +3,10 @@
 
 @{
     ViewData["Title"] = "AI Assistance with OpenAI";
-    var defaultSuggestions = new string[] { "Best practices for clean, maintainable code?", "How to optimize code editor for speed?" };
 }
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").BannerTemplate("#bannerContent").PromptSuggestions(@defaultSuggestions).PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
+    @Html.EJS().AIAssistView("aiAssistView").BannerTemplate("#bannerContent").PromptSuggestions(ViewBag.PromptSuggestionData).PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
 {
     Items = ViewBag.Items,
     ItemClicked = "toolbarItemClicked"
@@ -22,19 +21,12 @@
     </div>
 </script>
 
-<script id="bannerContent" type="text/x-jsrender">
-    <div class="banner-content">
-        <div class="e-icons e-assistview-icon"></div>
-        <h3>AI Assistance with OpenAI</h3>
-        <div>Your everyday AI companion.</div>
-    </div>
-</script>
-
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
 
 <script>
 
     var assistObj = null;
+    var suggestions = @Html.Raw(Json.Serialize(ViewBag.PromptSuggestionData));
     
     function onCreated() {
         assistObj = this;
@@ -43,6 +35,7 @@
     function toolbarItemClicked(args) {
         if (args.item.iconCss === 'e-icons e-refresh') {
             this.prompts = [];
+            this.promptSuggestions = suggestions;
         }
     }
 
