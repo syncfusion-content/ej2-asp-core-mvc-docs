@@ -9,7 +9,7 @@
 {
     Items = ViewBag.Items,
     ItemClicked = "toolbarItemClicked"
-}).Render()
+}).StopRespondingClick("stopRespondingClick").Render()
 </div>
 
 <script id="bannerContent" type="text/x-jsrender">
@@ -20,13 +20,10 @@
     </div>
 </script>
 
-<!-- Add antiforgery token for POST requests -->
-@Html.AntiForgeryToken()
-
 <script>
     var assistObj = null;
     var suggestions = @Html.Raw(Json.Serialize(ViewBag.PromptSuggestionData));
-    
+    var stopStreaming = false;
     function onCreated() {
         assistObj = this;
     }
@@ -38,29 +35,59 @@
         }
     }
 
-    function onPromptRequest(args) {
-        setTimeout(async () => {
-            let responseText = '';
-            try {
-                const response = await fetch('/Home/GetAIResponse', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ prompt: args.prompt })
-                });
+     async function streamResponse(response) {
+            let lastResponse = '';
+            const responseUpdateRate = 10;
+            let i = 0;
+            const responseLength = response.length;
+            while (i < responseLength && !stopStreaming) {
+                lastResponse += response[i];
+                i++;
+                if (i % responseUpdateRate === 0 || i === responseLength) {
+                    const htmlResponse = marked.parse(lastResponse);
+                    assistObj.addPromptResponse(htmlResponse, i === responseLength);
+                    assistObj.scrollToBottom();
+                }
+                await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+            }
+            assistObj.promptSuggestions = suggestions;
+        }
 
+        function onPromptRequest(args) {
+            if (!token) {
+                assistObj.addPromptResponse('⚠️ Antiforgery token not found.');
+                return;
+            }
+
+            fetch('/?handler=GetAIResponse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': token
+                },
+                body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+            })
+            .then(response => {
                 if (!response.ok) {
                     throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                 }
-
-                responseText = await response.json();
-                assistObj.addPromptResponse(marked.parse(responseText));
-            } catch (error) {
+                return response.json();
+            })
+            .then(responseText => {
+                const text = responseText.trim() || 'No response received.';
+                stopStreaming = false;
+                streamResponse(text);
+            })
+            .catch(error => {
+                console.error('Error fetching AI response:', error);
                 assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
-            }
-        }, 2000); // Match the 2000ms delay from the reference sample
-    }
+                stopStreaming = true;
+            });
+        }
+
+        function stopRespondingClick() {
+            stopStreaming = true;
+        }
 </script>
 
 <style>
