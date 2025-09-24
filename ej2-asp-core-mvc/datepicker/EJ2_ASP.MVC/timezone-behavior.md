@@ -14,7 +14,7 @@ The DatePicker component displays and maintains the selected date value based on
 
 N> if the system time zone is changed dynamically after a value is selected, the DatePicker will **not update or shift** the selected value. The component preserves the original selection, ensuring a stable and reliable user experience.
 
-## `serverTimezoneOffset`
+## serverTimezoneOffset
 
 The `serverTimezoneOffset` property allows you to specify the server's time zone offset from UTC in **hours** or **fractional hours**. This is useful when binding values from the server to ensure they are interpreted correctly on the client side.
 
@@ -26,16 +26,15 @@ The `serverTimezoneOffset` property allows you to specify the server's time zone
 
 N> The `serverTimezoneOffset` property is applicable **only for pre-bound values** (i.e., values set during initialization or data binding). It does **not affect** values selected by the user during runtime.
 
-### Example
+{% if page.publishingplatform == "aspnet-core" %}
 
-```ts
-import { DatePicker } from '@syncfusion/ej2-calendars';
+{% tabs %}
+{% include code-snippet/datepicker/timezone-cs1/tagHelper %}
+{% endtabs %}
 
-/* Initialize the DatePicker component */
-let datepicker: DatePicker = new DatePicker({
-    placeholder: "Select Date",
-    width: "250px",
-    serverTimezoneOffset: 5.5 // Example: UTC+5:30 for IST
-});
+{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-datepicker.appendTo('#datepicker');
+{% tabs %}
+{% include code-snippet/datepicker/timezone-cs1/razor %}
+{% endtabs %}
+{% endif %}
