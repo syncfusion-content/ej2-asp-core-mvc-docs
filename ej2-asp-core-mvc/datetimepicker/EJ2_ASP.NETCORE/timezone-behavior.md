@@ -14,7 +14,7 @@ The DateTimePicker component displays and maintains the selected date and time v
 
 N> if the system time zone is changed dynamically after a value is selected, the DateTimePicker will **not update or shift** the selected value. The component preserves the original selection, ensuring a stable and reliable user experience.
 
-## `serverTimezoneOffset`
+# serverTimezoneOffset
 
 The `serverTimezoneOffset` property allows you to specify the server's time zone offset from UTC in **hours** or **fractional hours**. This is useful when binding values from the server to ensure they are interpreted correctly on the client side.
 
@@ -29,14 +29,12 @@ N> The `serverTimezoneOffset` property is applicable **only for pre-bound values
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/timezone-cs1/tagHelper %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/datetimepicker/timezone-cs1/razor %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
