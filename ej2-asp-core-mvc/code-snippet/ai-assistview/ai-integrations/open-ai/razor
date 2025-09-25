@@ -54,18 +54,13 @@
         }
 
         function onPromptRequest(args) {
-            if (!token) {
-                assistObj.addPromptResponse('⚠️ Antiforgery token not found.');
-                return;
-            }
 
             fetch('/?handler=GetAIResponse', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json',
-                    'RequestVerificationToken': token
+                    'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+                body: JSON.stringify({ prompt: args.prompt })
             })
             .then(response => {
                 if (!response.ok) {

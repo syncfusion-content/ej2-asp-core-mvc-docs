@@ -14,7 +14,7 @@ The Syncfusion AI AssistView supports integration with [Gemini](https://ai.googl
  
 ## Getting Started With the AI AssistView control
  
-Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Vue application:
+Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Core application:
  
 [ ASP.NET CORE Getting Started Guide](../getting-started)
  

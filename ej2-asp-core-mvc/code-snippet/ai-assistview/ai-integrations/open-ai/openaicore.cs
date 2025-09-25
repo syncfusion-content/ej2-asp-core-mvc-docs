@@ -1,5 +1,6 @@
 using OpenAI;
-
+using Azure;
+using Azure.AI.OpenAI;
 namespace WebApplication4.Pages
 {
     public class IndexModel : PageModel
@@ -38,25 +39,32 @@ namespace WebApplication4.Pages
                     return BadRequest("Prompt cannot be empty.");
                 }
 
-                string apiKey = ""; // Replace with your OpenAI API key
-                var openAiClient = new OpenAIClient(apiKey);
-                var chatClient = openAiClient.GetChatClient("gpt-4o-mini"); // Use your preferred model, e.g., "gpt-4o-mini" or "gpt-4o"
+                string endpoint = ""; // Replace with your Azure OpenAI endpoint
+                string apiKey = ""; // Replace with your Azure OpenAI API key
+                string deploymentName = ""; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini)
 
-                ChatCompletion completion = await chatClient.CompleteChatAsync(request.Prompt);
-                string responseText = completion.Content[0].Text;
+                var credential = new AzureKeyCredential(apiKey); 
+                var client = new AzureOpenAIClient(new Uri(endpoint), credential);
+                var chatClient = client.GetChatClient(deploymentName);
 
+                var chatCompletionOptions = new ChatCompletionOptions();
+                var completion = await chatClient.CompleteChatAsync(
+                    new[] { new UserChatMessage(request.Prompt) },
+                    chatCompletionOptions
+                );
+                string responseText = completion.Value.Content[0].Text;
                 if (string.IsNullOrEmpty(responseText))
                 {
-                    _logger.LogError("OpenAI API returned no text.");
-                    return BadRequest("No response from OpenAI.");
+                    _logger.LogError("Azure OpenAI API returned no text.");
+                    return BadRequest("No response from Azure OpenAI.");
                 }
 
-                _logger.LogInformation("OpenAI response received: {Response}", responseText);
+                _logger.LogInformation("Azure OpenAI response received: {Response}", responseText);
                 return new JsonResult(responseText);
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in Gemini call: {Message}", ex.Message);
+                _logger.LogError("Exception in Azure OpenAI call: {Message}", ex.Message);
                 return BadRequest($"Error generating response: {ex.Message}");
             }
         }
@@ -79,4 +87,3 @@ namespace WebApplication4.Pages
             public string iconCss { get; set; }
         }
     }
-}
