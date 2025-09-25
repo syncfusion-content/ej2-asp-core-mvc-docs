@@ -48,16 +48,16 @@ namespace AssistViewDemo.Controllers
 
                 if (string.IsNullOrEmpty(responseText?.Text))
                 {
-                    _logger.LogError("OpenAI API returned no text.");
-                    return BadRequest("No response from OpenAI.");
+                    _logger.LogError("Gemini API returned no text.");
+                    return BadRequest("No response from Gemini.");
                 }
 
-                _logger.LogInformation("OpenAI response received: {Response}", responseText?.Text);
+                _logger.LogInformation("Gemini response received: {Response}", responseText?.Text);
                 return Json(responseText?.Text);
             }
             catch (Exception ex)
             {
-                _logger.LogError("Exception in OpenAI call: {Message}", ex.Message);
+                _logger.LogError("Exception in Gemini call: {Message}", ex.Message);
                 return BadRequest($"Error generating response: {ex.Message}");
             }
         }
