@@ -1,0 +1,99 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Chat UI with Azure Open AI";
+}
+
+<style>
+    .emptychat-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .e-ai-chat {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .e-message-content p {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .e-assistview-icon {
+        font-size: 24px;
+    }
+</style>
+<div class="chatui-container" style="height: 400px; width: 400px;">
+    <ejs-chatui id="chatUI" headerText="Chat UI with Azure Open AI" headerIconCss="e-icons e-ai-chat" emptyChatTemplate="#emptyChatContent">
+        <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>
+        <e-chatui-user id="user1" user="You"></e-chatui-user>
+    </ejs-chatui>
+</div>
+<script id="emptyChatContent" type="text/x-jsrender">
+      <div class="emptychat-content">
+      <h3><span class="e-icons e-assistview-icon"></span></h3>
+      <div class="emptyChatText" style="font-size: 16px; font-style: italic">Syncfusion Chat UI with Azure Open AI </div>
+    </div>
+</script>
+@section Scripts {
+    <script>
+        // Access the Chat UI instance after rendering
+        var chatUI = document.getElementById('chatUI').ej2_instances[0];
+
+        // Define users
+        var currentUser = {
+            id: 'user1',
+            user: 'You'
+        };
+        var aiModel = {
+            id: 'ai',
+            user: 'Azure Open AI'
+        };
+
+        // Customize header, icon, and toolbar
+        chatUI.headerToolbar = {
+            itemClicked: function () {
+                chatUI.messages = [];
+            }
+        };
+
+        // Handle message sending
+        chatUI.messageSend = async function (args) {
+                // Show typing indicator
+                chatUI.typingUsers = [aiModel];
+
+                try {
+                    const response = await fetch('/?handler=GetAIResponse', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ prompt: args.message.text })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const aiText = await response.json();
+
+                    // Add AI response (parse Markdown to HTML)
+                    chatUI.addMessage({
+                        text: marked.parse(aiText),
+                        author: aiModel
+                    });
+                } catch (error) {
+                    console.error('Error fetching Azure Open AI response:', error);
+                    chatUI.addMessage({
+                        text: 'Error generating response. Please try again.',
+                        author: aiModel
+                    });
+                } finally {
+                    // Hide typing indicator
+                    chatUI.typingUsers = [];
+                }
+        };
+    </script>
+}
