@@ -63,8 +63,7 @@
         };
 
         // Handle message sending
-        chatUI.messageSend = function (args) {
-            setTimeout(async () => {
+        chatUI.messageSend = async function (args) {
                 // Show typing indicator
                 chatUI.typingUsers = [aiModel];
 
@@ -98,7 +97,6 @@
                     // Hide typing indicator
                     chatUI.typingUsers = [];
                 }
-            }, 500);
         };
     </script>
 }

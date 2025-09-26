@@ -1,7 +1,7 @@
 @page
 @model IndexModel
 @{
-    ViewData["Title"] = "Chat UI with Open AI";
+    ViewData["Title"] = "Chat UI with Azure Open AI";
 }
 
 <style>
@@ -26,7 +26,7 @@
     }
 </style>
 <div class="chatui-container" style="height: 400px; width: 400px;">
-    <ejs-chatui id="chatUI" headerText="Chat UI with Open AI" headerIconCss="e-icons e-ai-chat" emptyChatTemplate="#emptyChatContent">
+    <ejs-chatui id="chatUI" headerText="Chat UI with Azure Open AI" headerIconCss="e-icons e-ai-chat" emptyChatTemplate="#emptyChatContent">
         <e-chatui-headertoolbar items="@Model.HeaderToolbar"></e-chatui-headertoolbar>
         <e-chatui-user id="user1" user="You"></e-chatui-user>
     </ejs-chatui>
@@ -34,7 +34,7 @@
 <script id="emptyChatContent" type="text/x-jsrender">
       <div class="emptychat-content">
       <h3><span class="e-icons e-assistview-icon"></span></h3>
-      <div class="emptyChatText" style="font-size: 16px; font-style: italic">Syncfusion Chat UI with Open AI </div>
+      <div class="emptyChatText" style="font-size: 16px; font-style: italic">Syncfusion Chat UI with Azure Open AI </div>
     </div>
 </script>
 @section Scripts {
@@ -49,7 +49,7 @@
         };
         var aiModel = {
             id: 'ai',
-            user: 'Open AI'
+            user: 'Azure Open AI'
         };
 
         // Customize header, icon, and toolbar
@@ -60,8 +60,7 @@
         };
 
         // Handle message sending
-        chatUI.messageSend = function (args) {
-            setTimeout(async () => {
+        chatUI.messageSend = async function (args) {
                 // Show typing indicator
                 chatUI.typingUsers = [aiModel];
 
@@ -86,7 +85,7 @@
                         author: aiModel
                     });
                 } catch (error) {
-                    console.error('Error fetching Open AI response:', error);
+                    console.error('Error fetching Azure Open AI response:', error);
                     chatUI.addMessage({
                         text: 'Error generating response. Please try again.',
                         author: aiModel
@@ -95,7 +94,6 @@
                     // Hide typing indicator
                     chatUI.typingUsers = [];
                 }
-            }, 500);
         };
     </script>
 }

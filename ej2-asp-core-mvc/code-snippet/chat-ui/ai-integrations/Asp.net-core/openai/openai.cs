@@ -1,8 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages; 
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Threading.Tasks;
 using OpenAI.Chat;
 using OpenAI;
+using Azure;
+using Azure.AI.OpenAI;
 private readonly ILogger<IndexModel> _logger;
 public List<ToolbarItemModel> HeaderToolbar { get; set; } = new List<ToolbarItemModel>();
 
@@ -29,25 +31,33 @@ public async Task<IActionResult> OnPostGetAIResponse([FromBody] PromptRequest re
             return BadRequest("Prompt cannot be empty.");
         }
 
-        string apiKey = ""; // Replace with your OpenAI API key
-        var openAiClient = new OpenAIClient(apiKey);
-        var chatClient = openAiClient.GetChatClient("gpt-4o-mini"); // Use your preferred model, e.g., "gpt-4o-mini" or "gpt-4o"
+        string endpoint = ""; // Replace with your Azure OpenAI endpoint
+        string apiKey = ""; // Replace with your Azure OpenAI API key
+        string deploymentName = ""; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini) 
 
-        ChatCompletion completion = await chatClient.CompleteChatAsync(request.Prompt);
-        string response = completion.Content[0].Text;
+        var credential = new AzureKeyCredential(apiKey);
+        var client = new AzureOpenAIClient(new Uri(endpoint), credential);
+        var chatClient = client.GetChatClient(deploymentName);
 
-        if (string.IsNullOrEmpty(response))
+        var chatCompletionOptions = new ChatCompletionOptions();
+        var completion = await chatClient.CompleteChatAsync(
+            new[] { new UserChatMessage(request.Prompt) },
+            chatCompletionOptions
+        );
+        string responseText = completion.Value.Content[0].Text;
+
+        if (string.IsNullOrEmpty(responseText))
         {
-            _logger.LogError("Open AI API returned no text.");
-            return BadRequest("No response from Open AI.");
+            _logger.LogError("Azure Open AI API returned no text.");
+            return BadRequest("No response from Azure Open AI.");
         }
 
-        _logger.LogInformation("Open AI response received: {Response}", response);
-        return new JsonResult(response);
+        _logger.LogInformation("Azure Open AI response received: {Response}", responseText);
+        return new JsonResult(responseText);
     }
     catch (Exception ex)
     {
-        _logger.LogError("Exception in Open AI call: {Message}", ex.Message);
+        _logger.LogError("Exception in Azure Open AI call: {Message}", ex.Message);
         return BadRequest($"Error generating response: {ex.Message}");
     }
 }
