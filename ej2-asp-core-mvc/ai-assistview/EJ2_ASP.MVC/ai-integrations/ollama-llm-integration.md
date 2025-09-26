@@ -14,7 +14,7 @@ The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://
 
 ## Getting Started With the AI AssistView control
  
-Before integrating LLM Model, ensure that the Syncfusion AI AssistView control is correctly rendered in your Vue application:
+Before integrating LLM Model, ensure that the Syncfusion AI AssistView control is correctly rendered in your MVC application:
  
 [ MVC Getting Started Guide](../getting-started)
  

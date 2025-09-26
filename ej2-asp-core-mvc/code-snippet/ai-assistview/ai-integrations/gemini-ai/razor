@@ -83,7 +83,6 @@
                 streamResponse(text);
             })
             .catch(error => {
-                console.error('Error fetching AI response:', error);
                 assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
                 stopStreaming = true;
             });
