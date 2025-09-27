@@ -1,25 +1,25 @@
 ---
 layout: post
-title: Open AI in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Integration of Open AI in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Azure Open AI in ##Platform_Name## Chat UI Control | Syncfusion
+description: Checkout and learn about Integration of Azure Open AI in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Open AI
+control: Azure Open AI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integration of Open AI With Chat UI component 
+# Integration of Azure Open AI With Chat UI component 
 
-The Syncfusion Chat UI supports integration with (OpenAI)[https://platform.openai.com/docs/overview], enabling advanced conversational AI features in your Asp Core applications.
+The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Core applications.
 
 ## Getting Started With the Chat UI Component
 
-Before integrating Open AI, ensure that the Syncfusion Chat UI control is correctly rendered in your core application:
+Before integrating Azure Open AI, ensure that the Syncfusion Chat UI control is correctly rendered in your core application:
 [ Asp Core Getting Started Guide](../getting-started)
 
 ## Prerequisites
 
-* OpenAI account to generate an API key for accessing the `OpenAI` API
+* An Azure account with access to `Azure Open AI` services and a generated API key.
 
 * Syncfusion Chat UI for Core `Syncfusion.EJ2.AspNet.Core` Install ASP.NET Core package in the application.
 
@@ -32,36 +32,40 @@ Install the Syncfusion ASP.NET Core package in the application using the Package
 NuGet\Install-Package Syncfusion.EJ2.AspNet.Core
 ```
 
-Install the Open AI package in the application using the Package Manager Console.
+Install the Open AI and Azure Open AI package in the application using Package Manager Console.
 
 ```bash 
 
 NuGet\Install-Package OpenAI
+NuGet\Install-Package Azure.AI.OpenAI
+NuGet\Install-Package Azure.Core
 
 ```
 
 
-## Generate API Key
+## Configure Azure Open AI
 
-1. Go to [Open AI](https://platform.openai.com/docs/overview) and sign in with your Google account. If you don’t have one, create a new account. 
+1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure Open AI resource.
 
-2. Once logged in, click on your profile icon in the top-right corner and select `API Keys` from the dropdown menu.  
+2. Under Resource Management, select Keys and Endpoint to retrieve your API key and endpoint URL.  
 
-3. Click the `+ Create new secret key` button. You’ll be prompted to name the key (optional). Confirm to generate the key.
+3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version (e.g., 2024-07-01-preview) matches your resource configuration.
 
-4. Your API key will be displayed once. Copy it and store it securely, as it won’t be shown again.
+4. Store these values securely, as they will be used in your application.
 
-> `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
+> `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-##  Integration Open AI with Chat UI
+##  Integration Azure Open AI with Chat UI
 
 You can add the below respective files in your application:
 
-* Add your generated `API Key` at the line 
+* Update the following configuration values with your Azure Open AI details:
 
 ```bash
 
-const openaiApiKey = 'Place your API key here';  
+string endpoint = "Your_Azure_OpenAI_Endpoint";
+string apiKey = "Your_Azure_OpenAI_API_Key";
+string deploymentName = "Your_Deployment_Name";  
 
 ```
 
@@ -74,7 +78,7 @@ const openaiApiKey = 'Place your API key here';
 {% endhighlight %}
 {% endtabs %}
   
-![Open AI](../../images/openai.png)
+![Azure Open AI](../../images/openai.png)
 
 ## Run and Test 
 
@@ -82,4 +86,4 @@ Run the application in the browser using the following command.
 
 Build and run the app (Ctrl + F5).
 
-Open `https://localhost:44321` to interact with your Open AI for dynamic response.
+Open `https://localhost:44321` to interact with your Azure Open AI for dynamic response.

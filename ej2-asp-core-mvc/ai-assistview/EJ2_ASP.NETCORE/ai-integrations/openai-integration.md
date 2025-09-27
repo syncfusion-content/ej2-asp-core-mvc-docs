@@ -10,7 +10,7 @@ documentation: ug
  
 # Integration of Azure Open AI With AI AssistView control
  
-The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Angular applications.
+The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Core applications.
  
 ## Getting Started With the AI AssistView control
  

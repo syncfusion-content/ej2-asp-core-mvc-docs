@@ -41,9 +41,9 @@ namespace AssistViewDemo.Controllers
                 }
 
                 // Azure OpenAI configuration
-                string endpoint = ""; // Replace with your Azure OpenAI endpoint
-                string apiKey = ""; // Replace with your Azure OpenAI API key
-                string deploymentName = ""; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini)
+                string endpoint = "Your_Azure_OpenAI_Endpoint"; // Replace with your Azure OpenAI endpoint
+                string apiKey = "YOUR_AZURE_OPENAI_API_KEY"; // Replace with your Azure OpenAI API key
+                string deploymentName = "YOUR_DEPLOYMENT_NAME"; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini)
 
                 var credential = new AzureKeyCredential(apiKey);
                 var client = new AzureOpenAIClient(new Uri(endpoint), credential); 
