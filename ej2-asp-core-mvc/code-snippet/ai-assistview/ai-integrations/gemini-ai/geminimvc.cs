@@ -42,7 +42,7 @@ namespace AssistViewDemo.Controllers
 
                 string apiKey = ""; // Replace with your key
                 var googleAI = new GoogleAI(apiKey: apiKey);
-                var model = googleAI.GenerativeModel(model: Model.Gemini15Flash);
+                var model = googleAI.GenerativeModel(model: Model.Gemini15Flash); //Replace Your Model Name Here
 
                 var responseText = await model.GenerateContent(request.Prompt);
 
