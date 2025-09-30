@@ -65,7 +65,7 @@
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+                body: JSON.stringify({ prompt: args.prompt})
             })
             .then(response => {
                 if (!response.ok) {
