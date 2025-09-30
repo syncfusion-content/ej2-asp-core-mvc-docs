@@ -6,7 +6,8 @@ using OpenAI;
 using OpenAI.Chat;
 using Syncfusion.EJ2.InteractiveChat;
 using Newtonsoft.Json;
-
+using Azure.AI.OpenAI;
+using Azure;
 private readonly ILogger<HomeController> _logger;
 public List<ToolbarItemModel> HeaderToolbar { get; set; } = new List<ToolbarItemModel>();
 public HomeController(ILogger<HomeController> logger)
@@ -19,7 +20,7 @@ public IActionResult Index()
     HeaderToolbar.Add(new ToolbarItemModel { align = "Right", iconCss = "e-icons e-refresh", tooltip = "Refresh" });
     ViewBag.HeaderToolbar = HeaderToolbar;
     var currentUser = new ChatUIUser { Id = "user1", User = "You" };
-    var aiUser = new ChatUIUser { Id = "ai", User = "Open AI" };
+    var aiUser = new ChatUIUser { Id = "ai", User = "Azure Open AI" };
     ViewBag.CurrentUser = currentUser;
     ViewBag.AIUser = aiUser;
 
@@ -37,22 +38,32 @@ public async Task<IActionResult> GetAIResponse([FromBody] PromptRequest request)
             _logger.LogWarning("Prompt is null or empty.");
             return BadRequest("Prompt cannot be empty.");
         }
-        string apiKey = ""; // Replace with your OpenAI API key
-        var openAiClient = new OpenAIClient(apiKey);
-        var chatClient = openAiClient.GetChatClient("gpt-4o-mini"); // Use your preferred model, e.g., "gpt-4o-mini" or "gpt-4o"
-        OpenAI.Chat.ChatCompletion completion = await chatClient.CompleteChatAsync(request.Prompt);
-        string responseText = completion.Content[0].Text;
+        string endpoint = "Your_Azure_OpenAI_Endpoint"; // Replace with your Azure OpenAI endpoint
+        string apiKey = "YOUR_AZURE_OPENAI_API_KEY"; // Replace with your Azure OpenAI API key
+        string deploymentName = "YOUR_DEPLOYMENT_NAME"; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini)
+
+        var credential = new AzureKeyCredential(apiKey);
+        var client = new AzureOpenAIClient(new Uri(endpoint), credential);
+        var chatClient = client.GetChatClient(deploymentName);
+
+        var chatCompletionOptions = new ChatCompletionOptions();
+        var completion = await chatClient.CompleteChatAsync(
+            new[] { new UserChatMessage(request.Prompt) },
+            chatCompletionOptions
+        );
+
+        string responseText = completion.Value.Content[0].Text;
         if (string.IsNullOrEmpty(responseText))
         {
-            _logger.LogError("OpenAI API returned no text.");
-            return BadRequest("No response from OpenAI.");
+            _logger.LogError("Azure OpenAI API returned no text.");
+            return BadRequest("No response from Azure Open AI.");
         }
-        _logger.LogInformation("OpenAI response received: {Response}", responseText);
+        _logger.LogInformation("Azure OpenAI response received: {Response}", responseText);
         return Json(responseText);
     }
     catch (Exception ex)
     {
-        _logger.LogError("Exception in OpenAI call: {Message}", ex.Message);
+        _logger.LogError("Exception in Azure Open AI call: {Message}", ex.Message);
         return BadRequest($"Error generating response: {ex.Message}");
     }
 }

@@ -63,8 +63,7 @@
         };
 
         // Handle message sending
-        chatUI.messageSend = function (args) {
-            setTimeout(async () => {
+        chatUI.messageSend = async function (args) {
                 // Show typing indicator
                 chatUI.typingUsers = [aiModel];
 
@@ -89,7 +88,6 @@
                         author: aiModel
                     });
                 } catch (error) {
-                    console.error('Error fetching Gemini response:', error);
                     chatUI.addMessage({
                         text: 'Error generating response. Please try again.',
                         author: aiModel
@@ -98,7 +96,6 @@
                     // Hide typing indicator
                     chatUI.typingUsers = [];
                 }
-            }, 500);
         };
     </script>
 }

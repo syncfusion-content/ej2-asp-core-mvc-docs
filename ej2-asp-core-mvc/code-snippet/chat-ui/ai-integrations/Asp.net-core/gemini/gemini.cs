@@ -31,7 +31,7 @@ public async Task<IActionResult> OnPostGetAIResponse([FromBody] PromptRequest re
 
         string apiKey = ""; // Replace with your key
         var googleAI = new GoogleAI(apiKey: apiKey);
-        var model = googleAI.GenerativeModel(model: Model.Gemini15Flash);
+        var model = googleAI.GenerativeModel(model: Model.Gemini15Flash); // Replace Your Model Name Here
 
         var response = await model.GenerateContent(request.Prompt);
 
