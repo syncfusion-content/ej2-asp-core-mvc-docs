@@ -71,7 +71,7 @@ builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11
 {% endhighlight %}
 {% endtabs %}
  
-![LLM Model](../../images/llm-model.png)
+![LLM Model](../images/llm-model.png)
 
 ## Run and Test
  
