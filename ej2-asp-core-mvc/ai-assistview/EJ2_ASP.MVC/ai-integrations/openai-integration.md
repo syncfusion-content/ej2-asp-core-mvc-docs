@@ -78,7 +78,7 @@ string deploymentName = "Your_Deployment_Name";
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Open AI](../../images/open-ai.png)
+![Azure Open AI](../images/open-ai.png)
  
 ## Run and Test
  
