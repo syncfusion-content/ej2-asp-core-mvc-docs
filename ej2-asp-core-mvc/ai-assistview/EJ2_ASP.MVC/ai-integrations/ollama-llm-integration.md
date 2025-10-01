@@ -71,7 +71,7 @@ builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11
 {% endhighlight %}
 {% endtabs %}
  
-![LLM Model](../../images/llm-model.png)
+![LLM Model](../images/llm-model.png)
 
 ## Run and Test
  
@@ -79,4 +79,4 @@ Run the application in the browser using the following command.
  
 Build and run the app (Ctrl + F5).
  
-Open `https://localhost:7121/` to interact with your LLM Model for dynamic response.
+Open the hosted link to interact with your LLM Model for dynamic response.

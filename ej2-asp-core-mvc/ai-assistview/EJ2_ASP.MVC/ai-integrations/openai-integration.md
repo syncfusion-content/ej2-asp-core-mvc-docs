@@ -20,7 +20,7 @@ Before integrating Azure Open AI, ensure that the Syncfusion AI AssistView contr
  
 ## Prerequisites
  
-* An Azure account with access to `Azure Open AI` services and a generated API key.
+* An Azure account with access to [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
 * [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
  
 ## Install Packages
@@ -49,7 +49,7 @@ NuGet\Install-Package Azure.Core
 
 2. Under Resource Management, select Keys and Endpoint to retrieve your API key and endpoint URL.  
 
-3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version (e.g., 2024-07-01-preview) matches your resource configuration.
+3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version matches your resource configuration.
 
 4. Store these values securely, as they will be used in your application.
 
@@ -78,7 +78,7 @@ string deploymentName = "Your_Deployment_Name";
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Open AI](../../images/open-ai.png)
+![Azure Open AI](../images/open-ai.png)
  
 ## Run and Test
  
@@ -86,4 +86,4 @@ Run the application in the browser using the following command.
  
 Build and run the app (Ctrl + F5).
  
-Open `https://localhost:44321` to interact with your Azure Open AI for dynamic response.
+Open the Hosted link to interact with your Azure Open AI for dynamic response.
