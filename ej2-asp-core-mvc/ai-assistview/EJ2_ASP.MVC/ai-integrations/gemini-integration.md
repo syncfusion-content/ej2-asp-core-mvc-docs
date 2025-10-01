@@ -74,7 +74,7 @@ string apiKey = 'Place your API key here';
 {% endhighlight %}
 {% endtabs %}
  
-![Gemini AI](../../images/gemini-ai.png)
+![Gemini AI](../images/gemini-ai.png)
 
 ## Run and Test
  
