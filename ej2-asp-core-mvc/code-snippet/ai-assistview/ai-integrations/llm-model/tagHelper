@@ -11,8 +11,7 @@
 <script id="bannerContent" type="text/x-jsrender">
     <div class="banner-content">
         <div class="e-icons e-assistview-icon"></div>
-        <h3>AI Assistance</h3>
-        <div>Your everyday AI companion.</div>
+        <h3>How can I help you today?</h3>
     </div>
 </script>
 
@@ -77,7 +76,7 @@
     }
 
     .banner-content .e-assistview-icon:before {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .banner-content {

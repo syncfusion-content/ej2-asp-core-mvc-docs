@@ -20,7 +20,7 @@ Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control i
  
 ## Prerequisites
  
-* Google account to generate API key on accessing `Gemini AI`.
+* Google account to generate API key on accessing [Gemini](https://ai.google.dev/gemini-api/docs).
 * [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
  
 ## Install Packages
@@ -43,7 +43,7 @@ NuGet\Install-Package Mscc.GenerativeAI
  
 ## Generate API Key
  
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your Google account. If you don’t have one, create a new account.
+1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your google account. If you don’t have one, create a new account.
  
 2. Once logged in, click on `Get API Key` from the left-hand menu or the top-right corner of the dashboard.
  
@@ -82,4 +82,4 @@ Run the application in the browser using the following command.
  
 Build and run the app (Ctrl + F5).
  
-Open `https://localhost:44321` to interact with your Gemini AI for dynamic response.
+Open the hosted link to interact with the Gemini AI for dynamic response
