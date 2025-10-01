@@ -19,7 +19,7 @@ Before integrating Dialogflow, ensure that the Syncfusion Chat UI component is c
 
 ## Prerequisites
 
-* Google account to access `Dialogflow` and `Google Cloud Console`.
+* Google account to access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
 * .NET SDK (version 6.0 or higher) for ASP.NET Core.
 * Syncfusion EJ2 ASP.NET Core installed in your project.
 * Dialogflow Service Account with the Dialogflow API Client role and its JSON key file.
@@ -42,11 +42,11 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 ```
 ## Set Up the Dialogflow Agent
 
-1. In the Dialogflow console, create an [agent](https://cloud.google.com/agent-assist/docs), set a name (e.g., `MyChatBot`), and configure the default language (e.g., English - `en`).
+1. In the dialogflow console, create an [agent](https://cloud.google.com/agent-assist/docs), set a name (e.g., `MyChatBot`), and configure the default language (e.g., English - `en`).
 
-2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the Dialogflow simulator.
+2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 
-3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the Dialogflow API Client role, and download the JSON key file.
+3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the dialogflow API client role, and download the JSON key file.
 
 > `Security Note`: Never commit the JSON key file to version control. Use environment variables or a secret manager (e.g., Google Cloud Secret Manager) for production.
 
@@ -135,13 +135,13 @@ Use the Chat UI `messageSend` event to exchange messages. This event is triggere
 
 ### Forward Message to backend:
 
-In the messageSend event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to Dialogflow and returns the response.
+In the `messageSend` event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to dialogflow and returns the response.
 
 ### Displaying Bot response:
 
 Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat UI with the Dialogflow backend:
+Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}
@@ -202,9 +202,9 @@ dotnet run
 
 ```
 
-	Open your app and chat with your Dialogflow-powered bot.
+Open your app in the browser and chat with your dialogflow-powered bot.
 
-![ChatUI with Dialogflow](../../images/dialogflow.png)
+![ChatUI with Dialogflow](../images/dialogflow.png)
 
 ## Troubleshooting:
 

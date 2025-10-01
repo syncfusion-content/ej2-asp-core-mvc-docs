@@ -10,7 +10,7 @@ documentation: ug
 
 # Microsoft Bot Framework With ASP.NET MVC Chat UI component
 
-The Syncfusion ASP.NET MVC Chat UI supports integration with a Microsoft Bot Framework bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in an ASP.NET MVC application.
+The Syncfusion ASP.NET MVC Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in an ASP.NET MVC application.
 
 ## Getting Started With the Chat UI Component
 
@@ -20,7 +20,7 @@ Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI c
 
 ## Prerequisites
 
-* `Microsoft Azure Account`: Required to create and host the bot.
+* [Microsoft Azure Account](https://portal.azure.com/#home): Required to create and host the bot.
 * `Visual Studio`: With ASP.NET MVC development tools.
 * `Syncfusion EJ2 ASP.NET MVC`: Install Syncfusion.EJ2.MVC5 in your project.
 * `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, accessible via an Azure App Service. Refer to [Microsoft's Bot Creation Guide](https://learn.microsoft.com/en-us/azure/bot-service/).
@@ -48,17 +48,17 @@ Install-Package Syncfusion.EJ2.MVC5
 
 1. In the [Azure Portal](https://portal.azure.com/#home), navigate to your bot resource.
 
-2. Enable the Direct Line channel:
+2. Enable the direct line channel:
     * Go to `Channels` > `Direct Line` > `Default-Site`.
     * Copy one of the displayed secret keys.
 
-3. Verify the Messaging endpoint in the Configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
+3. Verify the messaging endpoint in the configuration section (e.g., https://your-bot-service.azurewebsites.net/api/messages).
 
 > `Security Note`: Never expose the Direct Line secret key in frontend code. Use a backend token server to handle it securely.
 
 ##  Set Up Token Server
 
-Create a Web API controller in your ASP.NET MVC project to handle Direct Line token generation. Add `Controllers/TokenController.cs`:
+Create a Web API controller in your ASP.NET MVC project to handle direct line token generation. Add `Controllers/TokenController.cs`:
 
 {% tabs %}
 {% highlight cs tabtitle="TokenController.cs" %}
@@ -121,9 +121,9 @@ Add the Direct Line secret to `Web.config`:
 
 ## Integrate ChatUI in ASP.NET MVC
 
-Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
+Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the direct line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the Direct Line API:
+Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the direct line API:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}
@@ -232,7 +232,7 @@ To enable CORS for API requests, add to `Web.config` under `<system.webServer>`:
 ### Start the Application:
 
 Run the project in Visual Studio or use IIS Express.
-Open your app in the browser (e.g., `http://localhost:port`) to interact with your Microsoft Bot Framework chatbot.
+Open your app in the browser Hosted link to interact with your Microsoft Bot Framework chatbot.
 
 ## Troubleshooting
 
