@@ -68,7 +68,7 @@
                     'Content-Type': 'application/json',
                     'RequestVerificationToken': token
                 },
-                body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+                body: JSON.stringify({ prompt: args.prompt})
             })
             .then(response => {
                 if (!response.ok) {
