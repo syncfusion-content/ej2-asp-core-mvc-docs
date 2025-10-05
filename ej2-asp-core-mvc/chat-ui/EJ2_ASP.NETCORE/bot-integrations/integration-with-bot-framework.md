@@ -129,7 +129,7 @@ Add the Direct Line secret to `appsettings.json`:
 
 > `Security Note`: Store the Direct Line secret in a secure configuration, such as Azure Key Vault, for production environments.|
 
-## Configure ChatUI in ASP.NET Core
+## Configure ChatUI
 
 Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat UI with the Direct Line API:
