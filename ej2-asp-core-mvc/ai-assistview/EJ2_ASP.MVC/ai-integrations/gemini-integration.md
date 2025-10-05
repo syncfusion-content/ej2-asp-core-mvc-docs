@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integration of Gemini AI With AI AssistView control
+# Gemini AI With AI AssistView control
  
 The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your MVC applications.
  
@@ -53,7 +53,7 @@ NuGet\Install-Package Mscc.GenerativeAI
  
 > `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
  
-##  Integration Gemini AI with AI AssistView
+## Configure Gemini AI with AI AssistView
  
 You can add the below respective files in your application:
  
