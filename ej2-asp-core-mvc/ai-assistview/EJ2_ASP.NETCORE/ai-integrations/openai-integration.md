@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integration of Azure Open AI With AI AssistView control
+# Azure Open AI With AI AssistView control
  
 The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Core applications.
  
@@ -55,7 +55,7 @@ NuGet\Install-Package Azure.Core
 
 > `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
  
-##  Integration Azure Open AI with AI AssistView
+## Configure Azure Open AI with AI AssistView
  
 You can add the below respective files in your application:
  
