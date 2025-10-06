@@ -119,7 +119,7 @@ Add the Direct Line secret to `Web.config`:
 
 >`Security Note`: Store the Direct Line secret in a secure configuration, such as Azure Key Vault, for production environments.
 
-## Integrate ChatUI in ASP.NET MVC
+## Configure ChatUI
 
 Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the direct line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 

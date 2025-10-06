@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integration of Google Dialogflow With ASP.NET MVC Chat UI component
+# Google Dialogflow With ASP.NET MVC Chat UI component
 
 The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your ASP.NET MVC applications.
 
@@ -134,7 +134,7 @@ namespace YourNamespace.Controllers
 
 > Use a unique `sessionId` (e.g., Guid) for each user to maintain conversation context. Add the projectId to Web.config if needed:
 
-## Integrate ChatUI in ASP.NET MVC
+## Configure message send
 
 Use the Chat UI `messageSend` event to exchange messages. This event is triggered before a message is sent, allowing you to forward it to the backend.
 

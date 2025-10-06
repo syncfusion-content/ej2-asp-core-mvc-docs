@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integration of LLM via Ollama With AI AssistView component
+# LLM via Ollama With AI AssistView component
 
 The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. The component acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
 
@@ -42,7 +42,7 @@ NuGet\Install-Package Microsoft.Extensions.AI.Ollama
  
 ```
  
-##  Integration LLM Model with AI AssistView
+## Configure LLM Model with AI AssistView
 
 Add services in `Program.cs` file 
 
