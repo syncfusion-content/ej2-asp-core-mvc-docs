@@ -1,0 +1,42 @@
+---
+layout: post
+title: Text-to-Speech With ##Platform_Name## AI AssistView Control | Syncfusion
+description: Checkout and learn about configuration of Text-to-Speech with Azure OpenAI in ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: Azure Open AI
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+ 
+# Text-to-Speech in ASP.NET Core AI AssistView
+
+The Syncfusion TypeScript AI AssistView component supports `Text-to-Speech` (TTS) functionality using the browser's Web Speech API specifically using the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface to convert AI-generated response into spoken audio.
+
+## Prerequisites
+
+Before integrating `Text-to-Speech`, ensure the following:
+
+1. The Syncfusion AI AssistView control is properly set up in your ASP.NET Core application.
+    - [ASP.NET Core Getting Started Guide](../getting-started)
+
+2. The AI AssistView control is integrated with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai).
+    - [Integration of Azure OpenAI With ASP.NET Core AI AssistView control](../ai-integrations/openai-integration)
+
+## Configure Text-to-Speech
+
+To enable Text-to-Speech functionality, modify the `Index.cshtml` file to incorporate the Web Speech API. A custom `Read Aloud` button is added to the response toolbar using the `e-aiassistview-responsetoolbarsettings` tag helper. When clicked, the [itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewResponseToolbarSettings_ItemClicked) event extracts plain text from the generated AI response and use the browser SpeechSynthesis API to read it aloud.
+ 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/tts/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Gemini.cs" %}
+{% include code-snippet/ai-assistview/speech/tts/texttospeechcore.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+![Integrating Text-to-Speech with AI AssistView](../images/assist-tts.png)
+
+## See Also
+
+* [Speech-to-Text](./speech-to-text)
