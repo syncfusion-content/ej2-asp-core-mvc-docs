@@ -317,11 +317,54 @@ A baseline tooltip can be customized using the [`TooltipSettings.Baseline`](http
 {% endtabs %}
 {% endif %}
 
-
-
 The following screenshot shows the template for baseline in Gantt.
 
 ![Alt text](images/baselineTemplate.png)
+
+#### Preventing Baseline Tooltip Display
+
+In the Gantt chart, baseline tooltips are automatically displayed when hovering over baseline bars. In certain scenarios, it may be necessary to conditionally control the visibility of these tooltips.
+This can be achieved using the [`beforeTooltipRender`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_BeforeTooltipRender) event, which allows customization of tooltip behavior before it is rendered.
+
+##### Using the beforeTooltipRender Event
+
+The `beforeTooltipRender` event is triggered when hovering over chart elements, including baseline bars. By checking the class of the target element, tooltip rendering can be canceled based on specific conditions.
+
+```javascript
+function beforeTooltipRender(args) 
+{
+    if (args.args.target.classList.contains("e-baseline-bar")) 
+    {
+        args.cancel = true;
+    }
+}
+
+```
+
+In this example, tooltip rendering is prevented for baseline bars by setting `args.cancel` to `true`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/baselineTootipHide/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="baselineTootipHide.cs" %}
+{% include code-snippet/gantt/tooltip/baselineTootipHide/baselineTootipHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/tooltip/baselineTootipHide/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="baselineTootipHide.cs" %}
+{% include code-snippet/gantt/tooltip/baselineTootipHide/baselineTootipHide.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### Connector line tooltip
 
