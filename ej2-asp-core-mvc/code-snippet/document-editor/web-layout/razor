@@ -1,1 +1,0 @@
-@Html.EJS().DocumentEditor("container").LayoutType(Syncfusion.EJ2.DocumentEditor.LayoutType.Continuous).Render()

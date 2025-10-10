@@ -66,3 +66,33 @@ border for an empty point can be set by using the `Border` property.
 {% endtabs %}
 {% endif %}
 
+## Handling No Data
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+When no data is available to render in the accumulation chart, the `noDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-data-template.cs" %}
+{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/no-data-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+When no data is available to render in the accumulation chart, the `NoDataTemplate` property can be used to display a custom layout within the chart area. This layout may include a message indicating the absence of data, a relevant image, or a button to initiate data loading. Styled text, images, or interactive elements can be incorporated to maintain design consistency and improve user guidance. Once data becomes available, the chart automatically updates to display the appropriate visualization.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="No-data-template.cs" %}
+{% include code-snippet/chart/accumulation-charts/dynamic-update/no-data-template/no-data-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![ASP.NET MVC Accumulation Chart Control](images/nodatatemplate-accumulationchart.png)

@@ -6,7 +6,8 @@ public ActionResult CssClass()
 {
         BlocksData.Add(new Block
         {
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1 },
                 Content = new List<object>()
                 {
                         new
@@ -18,7 +19,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -29,7 +30,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -42,7 +43,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -55,7 +56,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -68,7 +69,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -81,7 +82,7 @@ public ActionResult CssClass()
         });
         BlocksData.Add(new Block
         {
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new

@@ -6,7 +6,7 @@ public ActionResult Code()
 {
         BlocksData.Add(new Block()
         {
-                Type = "Code",
+                Type = BlockType.Code,
                 Content = new List<object>()
                 {
                         new 
@@ -15,7 +15,7 @@ public ActionResult Code()
                                 content = "function greeting() {\n  console.log(\"Hello, world!\");\n}"
                         }
                 },
-                CodeSettings = new
+                Props = new
                 {
                         defaultLanguage = "javascript",
                         languages = new List<object>()

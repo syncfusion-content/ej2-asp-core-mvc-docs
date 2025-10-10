@@ -1,0 +1,107 @@
+@using Syncfusion.EJ2.InteractiveChat
+@{
+    ViewData["Title"] = "AI Assistance with Gemini";
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
+                      promptSuggestions="@Model.ViewModel.PromptSuggestionData"
+                      promptRequest="onPromptRequest"
+                      stopRespondingClick="stopRespondingClick"
+                      created="onCreated">
+        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>How can I help you today?</h3>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+    <script>
+        var assistObj = null;
+        var suggestions = @Html.Raw(Json.Serialize(Model.ViewModel.PromptSuggestionData));
+        var stopStreaming = false;
+        function onCreated() {
+            assistObj = this;
+        }
+
+        function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            this.prompts = [];
+            this.promptSuggestions = suggestions;
+        }
+        }
+
+        async function streamResponse(response) {
+            let lastResponse = '';
+            const responseUpdateRate = 10;
+            let i = 0;
+            const responseLength = response.length;
+            while (i < responseLength && !stopStreaming) {
+                lastResponse += response[i];
+                i++;
+                if (i % responseUpdateRate === 0 || i === responseLength) {
+                    const htmlResponse = marked.parse(lastResponse);
+                    assistObj.addPromptResponse(htmlResponse, i === responseLength);
+                    assistObj.scrollToBottom();
+                }
+                await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+            }
+            assistObj.promptSuggestions = suggestions;
+        }
+
+        function onPromptRequest(args) {
+            if (!token) {
+                assistObj.addPromptResponse('⚠️ Antiforgery token not found.');
+                return;
+            }
+
+            fetch('/?handler=GetAIResponse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ prompt: args.prompt})
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(responseText => {
+                const text = responseText.trim() || 'No response received.';
+                stopStreaming = false;
+                streamResponse(text);
+            })
+            .catch(error => {
+                assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+                stopStreaming = true;
+            });
+        }
+
+        function stopRespondingClick() {
+            stopStreaming = true;
+        }
+    </script>
+
+<style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 25px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+</style>

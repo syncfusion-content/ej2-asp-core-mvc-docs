@@ -23,7 +23,7 @@
     }
     function exportComplete(args) {
         if (args.promise !== null) {
-            args.promise.then((e: { blobData: Blob }) => {
+            args.promise.then((e) => {
                 console.log(e.blobData);
             });
         }

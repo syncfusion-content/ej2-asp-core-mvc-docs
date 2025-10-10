@@ -105,4 +105,3 @@ To replace the existing data source in the accumulation chart with a new data so
 {% endtabs %}
 {% endif %}
 
-

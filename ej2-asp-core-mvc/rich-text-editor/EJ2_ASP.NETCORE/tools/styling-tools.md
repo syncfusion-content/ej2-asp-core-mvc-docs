@@ -10,6 +10,10 @@ documentation: ug
 
 # Styling Tools in the ##Platform_Name## Rich Text Editor Control
 
+To get start quickly with ASP.NET Core Rich Text Editor with styling tools, you can check on this video:
+
+{% youtube "youtube:https://www.youtube.com/watch?v=C4ELtSPALEY"%}
+
 ## Font family
   
 The Rich Text Editor initializes with a default font family, which inherits the font family of the parent element. You can change the font for selected text using the font family dropdown in the toolbar. When the default font family is selected, the toolbar will display "Font Name". However, for other font families, the toolbar will show the name of the selected font.

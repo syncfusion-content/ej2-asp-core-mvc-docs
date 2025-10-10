@@ -1,0 +1,17 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource"  height="235px" showColumnChooser="true" toolbar="@(new List<string>() { "ColumnChooser"})" beforeOpenColumnChooser='beforeOpenColumnChooser'>
+<e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" width="120" isPrimaryKey="true" textAlign="Right" showInColumnChooser="false"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer Name" width="150" textAlign="Left"></e-grid-column>
+    <e-grid-column field="OrderDate" headerText="Order Date" width="130" format="yMd" textAlign="Right" type="date"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="150" showInColumnChooser="false"></e-grid-column>
+    <e-grid-column field="ShipRegion" headerText="Ship Region" width="150" visible="false"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+</e-grid-columns>
+</ejs-grid>
+<script>
+	// Sort the column chooser list based on the sort direction.
+    function beforeOpenColumnChooser(args) {
+        args.sortDirection = "Ascending";
+    }
+</script>

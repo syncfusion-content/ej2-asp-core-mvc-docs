@@ -7,7 +7,8 @@ public ActionResult Formatting()
         BlocksData.Add(new Block
         {
                 Id = "sample-heading",
-                Type = "Heading1",
+                Type = BlockType.Heading,
+                Props = new { level = 1},
                 Content = new List<object>()
                 {
                         new
@@ -20,7 +21,7 @@ public ActionResult Formatting()
         BlocksData.Add(new Block
         {
                 Id = "sample-paragraph-1",
-                Type = "Paragraph",
+                Type = BlockType.Paragraph,
                 Content = new List<object>()
                 {
                         new
@@ -33,7 +34,7 @@ public ActionResult Formatting()
         BlocksData.Add(new Block
         {
                 Id = "sample-list",
-                Type = "BulletList",
+                Type = BlockType.BulletList,
                 Content = new List<object>()
                 {
                         new

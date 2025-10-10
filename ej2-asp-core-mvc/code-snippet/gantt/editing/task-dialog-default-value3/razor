@@ -1,17 +1,26 @@
 @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId"
-).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es=>
-es.AllowAdding(true)).Toolbar(new List<string>() { 'Add', 'Edit', 'Update', 'Delete', 'Cancel', 'ExpandAll', 'CollapseAll' }).EditDialogFields(edf =>
+).Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")).EditSettings(es =>
+es.AllowAdding(true)).Toolbar(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel", "ExpandAll", "CollapseAll" }).EditDialogFields(edf =>
     {
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General")).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency.Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).additionalParams({inlineMode: { enable: true,onSelection: true }}).Add();
-    }).AddDialogFields(adf=> {
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General")).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency.Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).AdditionalParams(new
+        {
+            inlineMode = new { enable = true, onSelection = true },
+        }).Add();
+    })
+    .AddDialogFields(adf =>
+    {
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.General).HeaderText("General").Add();
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Dependency).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Resources).Add();
         edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Segment).Add();
-        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).additionalParams({inlineMode: { enable: true,onSelection: true }}).Add();4
-    }).Render()
+        edf.Type(Syncfusion.EJ2.Gantt.DialogFieldType.Notes).AdditionalParams(new
+        {
+            inlineMode = new { enable = true, onSelection = true },
+        }).Add();
+    })
+    .Render();
 
