@@ -35,7 +35,7 @@ To enable Text-to-Speech functionality, modify the `Index.cshtml` file to incorp
 {% endhighlight %}
 {% endtabs %}
  
-![Integrating Text-to-Speech with AI AssistView](../images/assist-tts.png)
+![Integrating Text-to-Speech with AI AssistView](images/aiassist-tts.png)
 
 ## See Also
 
