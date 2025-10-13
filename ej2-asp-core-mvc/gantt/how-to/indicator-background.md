@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamically change indicator background color in ##Platform_Name## Gantt Component
+title: Custom indicator background in ##Platform_Name## Gantt | Syncfusion
 description: Learn here all about Dynamically change indicator background color in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Indicator background color
