@@ -1,6 +1,8 @@
-using OpenAI;
 using Azure;
 using Azure.AI.OpenAI;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using OpenAI.Chat;
 namespace WebApplication4.Pages
 {
     public class IndexModel : PageModel
@@ -68,22 +70,22 @@ namespace WebApplication4.Pages
                 return BadRequest($"Error generating response: {ex.Message}");
             }
         }
-        }
-
-        public class IndexViewModel
-        {
-            public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
-            public string[] PromptSuggestionData { get; set; }
-        }
-
-        public class PromptRequest
-        {
-            public string Prompt { get; set; }
-        }
-
-        public class ToolbarItemModel
-        {
-            public string align { get; set; }
-            public string iconCss { get; set; }
-        }
     }
+
+    public class IndexViewModel
+    {
+        public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
+        public string[] PromptSuggestionData { get; set; }
+    }
+
+    public class PromptRequest
+    {
+        public string Prompt { get; set; }
+    }
+
+    public class ToolbarItemModel
+    {
+        public string align { get; set; }
+        public string iconCss { get; set; }
+    }
+}

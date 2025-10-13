@@ -1,3 +1,4 @@
+@model IndexModel
 @using Syncfusion.EJ2.InteractiveChat
 @{
     ViewData["Title"] = "AI Assistance with Gemini";
