@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paste Cleanup in ##Platform_Name## Rich Text Editor Component
+title: Paste Cleanup in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Paste Cleanup in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paste Cleanup
@@ -57,7 +57,7 @@ When the `Prompt`, `PlainText`, and `keepFormat` options are all set to false, t
 
 Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
 
-- **`DeniedTags`**: Tags listed here will still be removed from the pasted content, even when clean format is enabled.
+- **`DeniedTags`**: Tags listed here will still be removed from the pasted content.
 - **`DeniedAttrs`**: Attributes listed here will also be stripped from the pasted content.
 
 > The `AllowedStyleProps` setting only applies if `KeepFormat` is enabled.
