@@ -1,0 +1,70 @@
+---
+layout: post
+title: LLM Model in ##Platform_Name## AI AssistView Control | Syncfusion
+description: Checkout and learn about Integration of LLM Model in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+platform: ej2-asp-core-mvc
+control: LLM Model
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+ 
+# Integrate LLM via Ollama with ASP.NET MVC AI AssistView control
+
+The AI AssistView control integrates with [LLM via Ollama](https://ollama.com),to enable advanced conversational AI features in your ASP.NET MVC application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
+ 
+## Prerequisites
+
+Before starting, ensure you have the following:
+
+* [Ollama](https://ollama.com) Installed to run and manage LLM models locally.
+
+* **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+
+* [Markdig](https://www.nuget.org/packages/Markdig) package: For parsing Markdown responses.
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+
+## Configuring Ollama
+
+Install the LLM Model package in the application using Package Manager Console.
+ 
+```bash
+ 
+NuGet\Install-Package Microsoft.Extensions.AI
+
+NuGet\Install-Package Microsoft.Extensions.AI.Ollama
+ 
+```
+ 
+## Configure AI AssistView with Ollama in ASP.NET MVC
+
+Add services in `Program.cs` file 
+
+```bash
+
+using Microsoft.Extensions.AI;
+
+builder.Services.AddControllersWithViews();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+});
+builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11434/"), "deepseek-r1"))
+    .UseDistributedCache()
+    .UseLogging();
+
+```
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/ai-integrations/llm-model/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="llm-model.cs" %}
+{% include code-snippet/ai-assistview/ai-integrations/llm-model/llm-model-mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+![LLM Model](../images/llm-model.png)

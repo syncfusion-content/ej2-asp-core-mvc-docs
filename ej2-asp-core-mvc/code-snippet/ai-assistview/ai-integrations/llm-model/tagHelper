@@ -1,0 +1,85 @@
+@model AssistViewDemo.Controllers.IndexViewModel
+@{
+    ViewData["Title"] = "AI Assistance";
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent" promptSuggestions="@Model.PromptSuggestionData" promptRequest="onPromptRequest" created="onCreated" stopRespondingClick="handleStopResponse">
+        <e-aiassistview-toolbarsettings items="@Model.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>How can I help you today?</h3>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+    var assistObj = null;
+    var suggestions = @Html.Raw(Json.Serialize(Model.PromptSuggestionData));
+
+    function onCreated() {
+        assistObj = this;
+    }
+    var stopStreaming = false;
+    function handleStopResponse() {
+        stopStreaming = true;
+    }
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            this.prompts = [];
+            this.promptSuggestions = suggestions;
+        }
+    }
+    function onPromptRequest(args) {
+        setTimeout(async () => {
+            let responseText = '';
+            try {
+                const response = await fetch('/Home/GetAIResponse', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: args.prompt })
+                });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const data = await response.json();
+                responseText = data; // Adjust to data.response if the JSON is { response: "text" }
+                let current = '';
+                let i = 0;
+                const typingSpeed = 15; // ms per character; adjust as needed
+                const interval = setInterval(() => {
+                    if (i < responseText.length && !stopStreaming) {
+                        current += responseText.charAt(i);
+                        assistObj.addPromptResponse(marked.parse(current), false);
+                        i++;
+                    } else {
+                        assistObj.addPromptResponse(marked.parse(current), true);
+                        clearInterval(interval);
+                    }
+                }, typingSpeed);
+            } catch (error) {
+                assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.', true);
+            }
+        }, 2000); // Match the 2000ms delay from the reference sample
+    }
+</script>
+<style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 25px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+</style>
