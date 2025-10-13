@@ -1,0 +1,14 @@
+@Html.EJS().Button("indicator").Content("Indicator background change").CssClass("e-primary").Render()
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id(
+                "TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").ParentID("ParentId").Indicators("Indicators")
+                ).Render()
+
+<script>
+    document.getElementById('indicator').addEventListener('click', function (args) {
+        var node = document.querySelectorAll('.e-indicator-span');
+        node.forEach((box) => {
+            box.children[0].style.color = 'red';
+        });
+    });
+</script>
