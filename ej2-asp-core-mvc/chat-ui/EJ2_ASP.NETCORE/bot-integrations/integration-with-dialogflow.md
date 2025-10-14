@@ -8,23 +8,28 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Google Dialogflow With ASP.NET Core Chat UI component
+# Integrate Google Dialogflow with ASP.NET Core Chat UI control
 
-The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your ASP.NET Core applications.
-
-## Getting Started With the ChatUI Component
-
-Before integrating Dialogflow, ensure that the Syncfusion Chat UI component is correctly rendered in your ASP.NET Core app:
-[ASP.NET Core Getting Started Guide](../getting-started)
+The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your ASP.NET Core applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
-* Google account to access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
-* .NET SDK (version 6.0 or higher) for ASP.NET Core.
-* Syncfusion EJ2 ASP.NET Core installed in your project.
-* Dialogflow Service Account with the Dialogflow API Client role and its JSON key file.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: To access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
+
+* **Syncfusion Chat UI**: Package [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) installed.
+
+* Dialogflow Service Account with the `Dialogflow API Client` role and its JSON key file.
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
 
 ## Install Dependencies
+
 * Install backend dependencies for Dialogflow and server setup using NuGet:
 
 ```bash
@@ -33,37 +38,30 @@ dotnet add package Google.Cloud.Dialogflow.V2
 dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson
 
 ```
-* Install the Syncfusion EJ2 ASP.NET Core package in your project:
 
-```bash
-
-dotnet add package Syncfusion.EJ2.AspNet.Core
-
-```
 ## Set Up the Dialogflow Agent
 
 1. In the dialogflow console, create an [agent](https://cloud.google.com/agent-assist/docs), set a name (e.g., `MyChatBot`), and configure the default language (e.g., English - `en`).
 
 2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 
-3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the dialogflow API client role, and download the JSON key file.
+3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a service account with the dialogflow API client role, and download the JSON key file.
 
 > `Security Note`: Never commit the JSON key file to version control. Use environment variables or a secret manager (e.g., Google Cloud Secret Manager) for production.
 
 ## Configure Node.js Backend
 
-Create `service-acct.json` with your Dialogflow service account credentials in your project root (or use User Secrets for development):
+Create `backend/service-acct.json` with your Dialogflow service account credentials:
 
 {% tabs %}
 {% highlight js tabtitle="service-acct.json" %}
-
 {
-"type": "service_account",
-"project_id": "your-dialogflow-project-id",
-"private_key_id": "abc123xyz...",
-"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEv...",
-"client_email": "dialogflow-agent@your-dialogflow-project-id.iam.gserviceaccount.com",
-...
+    "type": "service_account",
+    "project_id": "your-dialogflow-project-id",
+    "private_key_id": "abc123xyz...",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEv...",
+    "client_email": "dialogflow-agent@your-dialogflow-project-id.iam.gserviceaccount.com",
+    ...
 }
 {% endhighlight %}
 {% endtabs %}
@@ -131,7 +129,7 @@ namespace YourNamespace.Controllers
 
 ## Configure message send
 
-Use the Chat UI `messageSend` event to exchange messages. This event is triggered before a message is sent, allowing you to forward it to the backend.
+Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 

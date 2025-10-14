@@ -8,22 +8,25 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Microsoft Bot Framework With ASP.NET MVC Chat UI component
+# Integrate Microsoft Bot Framework with ASP.NET MVC Chat UI control
 
-The Syncfusion ASP.NET MVC Chat UI supports integration with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring the bot in Azure, and integrating the Syncfusion Chat UI in an ASP.NET MVC application.
-
-## Getting Started With the Chat UI Component
-
-Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI component is correctly rendered in your ASP.NET MVC app:
-
-[ASP.NET MVC Getting Started Guide](../getting-started)
+The Chat UI control integrates seamlessly with a [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0) bot hosted on Azure, enabling a custom chat interface for seamless user interaction. The process involves setting up a secure backend token server, configuring Direct Line in Azure, and integrating the Chat UI in the application.
 
 ## Prerequisites
 
-* [Microsoft Azure Account](https://portal.azure.com/#home): Required to create and host the bot.
-* `Visual Studio`: With ASP.NET MVC development tools.
-* `Syncfusion EJ2 ASP.NET MVC`: Install Syncfusion.EJ2.MVC5 in your project.
-* `Deployed Azure Bot`: A bot should be created and published using the Bot Framework, accessible via an Azure App Service. Refer to [Microsoft's Bot Creation Guide](https://learn.microsoft.com/en-us/azure/bot-service/).
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* [Microsoft Azure Account](https://portal.azure.com/#home) : Required to create and host the bot.
+
+* **Syncfusion Chat UI**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+
+* **Deployed Azure Bot**: A bot should be created and published using the [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0), which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
@@ -33,14 +36,6 @@ Before integrating Microsoft Bot Framework, ensure that the Syncfusion Chat UI c
 
 Install-Package Microsoft.Bot.Connector.DirectLine
 Install-Package Newtonsoft.Json
-
-```
-
-* Install the Syncfusion EJ2 ASP.NET MVC package:
-
-```bash
-
-Install-Package Syncfusion.EJ2.MVC5
 
 ```
 
@@ -123,7 +118,7 @@ Add the Direct Line secret to `Web.config`:
 
 Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the direct line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the direct line API:
+Modify the `Views/Home/Index.cshtml` file to integrate the Syncfusion Chat UI with the direct line API:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}
@@ -232,7 +227,7 @@ To enable CORS for API requests, add to `Web.config` under `<system.webServer>`:
 ### Start the Application:
 
 Run the project in Visual Studio or use IIS Express.
-Open your app in the browser Hosted link to interact with your Microsoft Bot Framework chatbot.
+Open your app in the browser (e.g., `http://localhost:port`) to interact with your Microsoft Bot Framework chatbot.
 
 ## Troubleshooting
 

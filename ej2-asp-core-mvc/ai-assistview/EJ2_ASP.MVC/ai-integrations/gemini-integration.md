@@ -8,61 +8,62 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Gemini AI With AI AssistView control
- 
-The Syncfusion AI AssistView supports integration with [Gemini](https://ai.google.dev/gemini-api/docs), enabling advanced conversational AI features in your MVC applications.
- 
-## Getting Started With the AI AssistView control
- 
-Before integrating Gemini AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your MVC application:
- 
-[ MVC Getting Started Guide](../getting-started)
+# Integrate Gemini AI with ASP.NET MVC AI AssistView control
+
+The AI AssistView control integrates with Google’s [Gemini](https://ai.google.dev/gemini-api/docs) API to deliver intelligent conversational interfaces. It leverages advanced natural language understanding to interpret user input, maintain context throughout interactions, and provide accurate, relevant responses. By configuring secure authentication and data handling, developers can unlock powerful AI-driven communication features that elevate user engagement and streamline support experiences.
  
 ## Prerequisites
+
+* **Google Account**: For generating a Gemini API key.
+
+* **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+
+* [Markdig](https://www.nuget.org/packages/Markdig) package: For parsing Markdown responses.
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+
+## Install Dependencies
  
-* Google account to generate API key on accessing [Gemini](https://ai.google.dev/gemini-api/docs).
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
- 
-## Install Packages
- 
-Install the Syncfusion ASP.NET MVC package in the application  using Package Manager Console.
- 
-```bash
- 
-NuGet\Install-Package Syncfusion.EJ2.MVC5
- 
-```
- 
-Install the Gemini AI package in the application using Package Manager Console.
+1. Install the `Gemini AI` nuget package in the application.
  
 ```bash
  
 NuGet\Install-Package Mscc.GenerativeAI
  
 ```
+
+2. Install the `Markdig` nuget packages in the application.
+
+```bash
+
+Nuget\Install-Package Markdig
+
+```
  
 ## Generate API Key
+
+1. **Access Google AI Studio**: Instructs users to sign into [Google AI Studio](https://aistudio.google.com/app/apikey) with a Google account or create a new account if needed. 
+
+2. **Navigate to API Key Creation**: Go to the `Get API Key` option in the left-hand menu or top-right corner of the dashboard. Click the `Create API Key` button.
+
+3. **Project Selection**: Choose an existing Google Cloud project or create a new one.
+
+4. **API Key Generation**: After project selection, the API key is generated. Users are instructed to copy and store the key securely, as it is shown only once.
+
+> Security note: Advises against committing the API key to version control and recommends using environment variables or a secret manager in production.
  
-1. Go to [Google AI Studio](https://aistudio.google.com/app/apikey) and sign in with your google account. If you don’t have one, create a new account.
+## Gemini AI with AI AssistView
+
+Modify the `index.cshtml` file to integrate the Gemini AI with the AI AssistView control.
  
-2. Once logged in, click on `Get API Key` from the left-hand menu or the top-right corner of the dashboard.
- 
-3. Click the `Create API Key` button. You’ll be prompted to either select an existing Google Cloud project or create a new one. Choose the appropriate option and proceed.
- 
-4. After selecting or creating a project, your API key will be generated and displayed. Copy the key and store it securely, as it will only be shown once.
- 
-> `Security Note`: Never commit the API key to version control. Use environment variables or a secret manager for production.
- 
-## Configure Gemini AI with AI AssistView
- 
-You can add the below respective files in your application:
- 
-* Add your generated `API Key` at the line
- 
+* Add your Gemini API key securely in the configuration:
+
 ```bash
- 
+
 string apiKey = 'Place your API key here';
- 
+
 ```
  
 {% tabs %}
@@ -75,11 +76,3 @@ string apiKey = 'Place your API key here';
 {% endtabs %}
  
 ![Gemini AI](../images/gemini-ai.png)
-
-## Run and Test
- 
-Run the application in the browser using the following command.
- 
-Build and run the app (Ctrl + F5).
- 
-Open the hosted link to interact with the Gemini AI for dynamic response
