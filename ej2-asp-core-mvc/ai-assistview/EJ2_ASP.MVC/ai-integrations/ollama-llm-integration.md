@@ -10,7 +10,7 @@ documentation: ug
  
 # Integrate LLM via Ollama with ASP.NET MVC AI AssistView control
 
-The AI AssistView control integrates with [LLM via Ollama](https://ollama.com),to enable advanced conversational AI features in your ASP.NET MVC application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
+The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your ASP.NET MVC application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
  
 ## Prerequisites
 
@@ -25,6 +25,10 @@ Before starting, ensure you have the following:
 ## Set Up the AI AssistView control
 
 Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+
+## Install Dependency
+
+To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
 
 ## Configuring Ollama
 
