@@ -28,7 +28,7 @@ Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide 
 
 ## Install Dependency
 
-To install the marked library, run `npm install marked --save` in your project directory to add it as a dependency in your package.json file.
+To install the Markdig package by run `NuGet\Install-Package Markdig` in Package Manager Console.
 
 ## Configuring Ollama
 
