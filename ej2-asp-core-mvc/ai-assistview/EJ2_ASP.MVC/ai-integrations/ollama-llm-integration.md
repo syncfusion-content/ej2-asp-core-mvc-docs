@@ -8,29 +8,29 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# LLM via Ollama With AI AssistView component
+# Integrate LLM via Ollama with ASP.NET MVC AI AssistView control
 
-The Syncfusion AI AssistView supports integration with [LLM via Ollama](https://ollama.com), enabling advanced conversational AI features in your applications. The component acts as a UI for a support bot, where user prompts are sent to the selected AI service via API calls.
-
-## Getting Started With the AI AssistView control
- 
-Before integrating LLM Model, ensure that the Syncfusion AI AssistView control is correctly rendered in your MVC application:
- 
-[ MVC Getting Started Guide](../getting-started)
+The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your ASP.NET MVC application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
  
 ## Prerequisites
 
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create MVC application
- 
-## Install Packages
- 
-Install the Syncfusion ASP.NET MVC package in the application  using Package Manager Console.
- 
-```bash
- 
-NuGet\Install-Package Syncfusion.EJ2.MVC5
- 
-```
+Before starting, ensure you have the following:
+
+* [Ollama](https://ollama.com) installed to run and manage LLM models locally.
+
+* **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+
+* [Markdig](https://www.nuget.org/packages/Markdig) package: For parsing Markdown responses.
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+
+## Install Dependency
+
+To install the Markdig package by run `NuGet\Install-Package Markdig` in Package Manager Console.
+
+## Configuring Ollama
 
 Install the LLM Model package in the application using Package Manager Console.
  
@@ -42,7 +42,9 @@ NuGet\Install-Package Microsoft.Extensions.AI.Ollama
  
 ```
  
-## Configure LLM Model with AI AssistView
+## Configure AI AssistView with Ollama in ASP.NET MVC
+
+Modify the `index.cshtml` file to integrate the Ollama with the AI AssistView control.
 
 Add services in `Program.cs` file 
 
@@ -72,11 +74,3 @@ builder.Services.AddChatClient(new OllamaChatClient(new Uri("http://localhost:11
 {% endtabs %}
  
 ![LLM Model](../images/llm-model.png)
-
-## Run and Test
- 
-Run the application in the browser using the following command.
- 
-Build and run the app (Ctrl + F5).
- 
-Open the hosted link to interact with your LLM Model for dynamic response.
