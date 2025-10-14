@@ -16,7 +16,7 @@ The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) t
 
 Before starting, ensure you have the following:
 
-* [Ollama](https://ollama.com) Installed to run and manage LLM models locally.
+* [Ollama](https://ollama.com) installed to run and manage LLM models locally.
 
 * **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
 
