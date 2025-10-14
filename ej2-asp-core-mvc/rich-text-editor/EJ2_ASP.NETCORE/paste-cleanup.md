@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paste Cleanup in ##Platform_Name## Rich Text Editor Control
+title: Paste Cleanup in ##Platform_Name## Syncfusion Rich Text Editor Control
 description: Learn here all about Paste Cleanup in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Paste Cleanup
@@ -10,71 +10,91 @@ documentation: ug
 
 # Paste Cleanup in ##Platform_Name## Rich Text Editor Control
 
-The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
+The Rich Text Editor simplifies the conversion of Microsoft Word content to HTML format, preserving formatting and styles. The `pasteCleanup` settings property (see [pasteCleanupSettingsModel](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_PasteCleanupSettings)) allows you to control the formatting and styles when pasting content into the editor. The following settings are available to clean up the content:
 
 | API | Description | Default Value | Type |
 |:----------------:|:---------:|:-----------------------------:|:---------:|
-| [prompt](#prompt) | Invokes a prompt dialog with paste options when pasting content into the editor| false | boolean |
-| [plainText](#plain-text) | Paste the content as plain text| false | boolean |
-| [keepFormat](#keep-format) | Maintains the same format as the copied content| true | boolean |
-| [deniedTags](#denied-tags) | Ignores specified tags when pasting HTML content| null | string[] |
-| [deniedAttrs](#denied-attributes) |  Filters out specified attributes from the pasted content| null | string[] |
-| [allowedStyleProps](#allowed-style-properties) |  Accepts specified style attributes and removes others from the pasted content| ['background', 'background-color', 'border', 'border-bottom', 'border-left', 'border-radius', 'border-right', 'border-style', 'border-top', 'border-width', 'clear', 'color', 'cursor', 'direction', 'display', 'float', 'font', 'font-family', 'font-size', 'font-weight', 'font-style', 'height', 'left', 'line-height', 'margin', 'margin-top', 'margin-left', 'margin-right', 'margin-bottom', 'max-height', 'max-width', 'min-height', 'min-width', 'overflow', 'overflow-x', 'overflow-y', 'padding', 'padding-bottom', 'padding-left', 'padding-right', 'padding-top', 'position', 'right', 'table-layout', 'text-align', 'text-decoration', 'text-indent', 'top', 'vertical-align', 'visibility', 'white-space', 'width'] | string[] |
+| [Prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_Prompt) | Displays a dialog box when content is pasted, allowing users to choose how the content should be inserted—either as plain text, with formatting, or cleaned HTML. | false | boolean |
+| [PlainText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_PlainText) | Paste the content as plain text| false | boolean |
+| [KeepFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_KeepFormat) | Retains the original formatting of the pasted content, including styles, fonts, and structure.| true | boolean |
+| [DeniedTags](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_DeniedTags) | Specifies a list of HTML tags to be removed from the pasted content, such as `<script>`, `<iframe>`, or `<style>`. Helps eliminate unwanted or unsafe elements. | null | string[] |
+| [DeniedAttrs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_DeniedAttrs) |  Filters out specified attributes from the pasted content| null | string[] |
+| [AllowedStyleProps](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_AllowedStyleProps) |  Accepts specified style attributes and removes others from the pasted content| ['background', 'background-color', 'border', 'border-bottom', 'border-left', 'border-radius', 'border-right', 'border-style', 'border-top', 'border-width', 'clear', 'color', 'cursor', 'direction', 'display', 'float', 'font', 'font-family', 'font-size', 'font-weight', 'font-style', 'height', 'left', 'line-height', 'margin', 'margin-top', 'margin-left', 'margin-right', 'margin-bottom', 'max-height', 'max-width', 'min-height', 'min-width', 'overflow', 'overflow-x', 'overflow-y', 'padding', 'padding-bottom', 'padding-left', 'padding-right', 'padding-top', 'position', 'right', 'table-layout', 'text-align', 'text-decoration', 'text-indent', 'top', 'vertical-align', 'visibility', 'white-space', 'width'] | string[] |
 
 ## Paste options in the prompt dialog
 
-When `prompt` is set to true, pasting the content in the editor will open a dialog box that contains three options `Keep`, `Clean`, and `Plain Text` as radio buttons:
+When `Prompt` is set to true, pasting the content in the editor will open a dialog box that contains three options `Keep`, `Clean`, and `Plain Text` as radio buttons:
+
+![Rich Text Editor Paste options prompt dialog ](../images/richtexteditor-paste-prompt.png)
+
 1. `Keep`: Maintains the same format as the copied content.
 2. `Clean`: Clears all style formats from the copied content.
 3. `Plain Text`: Pastes the copied content as plain text without any formatting or style. (including the removal of all tags).
 
-> When `prompt` value is set true, the API properties [plainText](#plain-text) and [keepFormat](#keep-format) will not be considered for processing when pasting the content.
+> When `Prompt` value is set true, the API properties [PlainText](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_PlainText) and [KeepFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorPasteCleanupSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorPasteCleanupSettings_KeepFormat) will not be considered for processing when pasting the content.
 
 ## How to paste as plain text
 
-Setting `plainText` to true converts the copied content to plain text by removing all HTML tags and styles. Only the plain text is pasted into the editor.
+Setting `PlainText` to true converts the copied content to plain text by removing all HTML tags and styles. Only the plain text is pasted into the editor.
 
->When `plainText` is set to true, set `prompt` to false. The `keepFormat` property will not be considered.
+>When `PlainText` is set to true, set `Prompt` to false. The `KeepFormat` property will not be considered.
 
-## Keep format option
+## Keep format
 
-When `keepFormat` is set to true, the copied content maintains all style formatting allowed in the `allowedStyleProps` when pasted into the editor.
+When `KeepFormat` is set to `true`, the pasted content retains its original formatting, including styles, fonts, and structure. However, the formatting is still subject to filtering based on the `AllowedStyleProps`, `DeniedTags`, and `DeniedAttrs` settings:
 
-If `keepFormat` is set to false, all styles in the copied content are removed, regardless of the `allowedStyleProps` settings.
+* Only the style properties listed in `AllowedStyleProps` will be preserved.
+* Any HTML tags listed in `DeniedTags` will be removed.
+* Any attributes listed in `DeniedAttrs` will be stripped from the pasted content.
 
->When `keepFormat` is set to true, set both `prompt` and `plainText` to false.
+This ensures that while the formatting is retained, it remains clean, safe, and consistent with your application's styling rules.
 
-## Cleaning formatting during paste
+>When `keepFormat` is set to true, set both `Prompt` and `PlainText` to false.
 
-Setting `cleanFormat` to true removes all applied styles from the pasted content while retaining all other HTML tags in the editor.
+## Clean Formatting
 
->When `cleanFormat` is set to true, set `prompt`, `plainText`, and `keepFormat` to false.
+When the `Prompt`, `PlainText`, and `keepFormat` options are all set to false, the Rich Text Editor performs clean format paste cleanup. In this mode, all inline styles from the pasted content are removed, eliminating any custom or external styling. This ensures a consistent and uniform appearance within the editor.
 
-## Denied tags during paste
+Despite the removal of styling, essential structural HTML tags such as `<p>`, `<ul>`, `<table>`, and others are preserved. This maintains the original layout and semantic integrity of the content, allowing it to remain well-structured and readable.However, the formatting is still subject to filtering based on the `DeniedTags`, and `DeniedAttrs` settings:
 
-When `deniedTags` values are set, the specified tags will be removed from the pasted content. For example,
+- **`DeniedTags`**: Tags listed here will still be removed from the pasted content, even when clean format is enabled.
+- **`DeniedAttrs`**: Attributes listed here will also be stripped from the pasted content.
+
+> The `AllowedStyleProps` setting only applies if `KeepFormat` is enabled.
+
+## Denied tags
+
+When `DeniedTags` values are set, the specified tags will be removed from the pasted content. For example,
 
 * `'a'`:  Removes all anchor tags.
 * `'a[!href]'`: Removes anchor tags without the 'href' attribute.
 * `'a[href, target]'`: Removes anchor tags with both 'href' and 'target' attributes.
 
+> This setting is ignored when `PlainText` is set to `true`. <br>
+It only works when either `KeepFormat` is set to `true`, or when `Prompt`, `PlainText`, and `KeepFormat` are all set to `false`, which triggers clean format behavior.
+
 ## Denied attributes during paste
 
-When `deniedAttrs` values are set, the specified attributes will be removed from all tags in the pasted content. For example,
+When `DeniedAttrs` values are set, the specified attributes will be removed from all tags in the pasted content. For example,
 
 `'id', 'title'`: Removes 'id' and 'title' attributes from all tags.
 
+> This setting is ignored when `PlainText` is set to `true`. <br>
+It only works when either `KeepFormat` is set to `true`, or when `Prompt`, `PlainText`, and `KeepFormat` are all set to `false`, which triggers clean format behavior.
+
 ## Allowing specific style properties
 
-By default, the following basic styles are allowed on pasting the content to the editor.
+By default, a predefined set of basic style properties are allowed when content is pasted into the Rich Text Editor.
 
 ['background', 'background-color', 'border', 'border-bottom', 'border-left', 'border-radius', 'border-right', 'border-style', 'border-top', 'border-width', 'clear', 'color', 'cursor', 'direction', 'display', 'float', 'font', 'font-family', 'font-size', 'font-weight', 'font-style', 'height', 'left', 'line-height', 'margin', 'margin-top', 'margin-left', 'margin-right', 'margin-bottom', 'max-height', 'max-width', 'min-height', 'min-width', 'overflow', 'overflow-x', 'overflow-y', 'padding', 'padding-bottom', 'padding-left', 'padding-right', 'padding-top', 'position', 'right', 'table-layout', 'text-align', 'text-decoration', 'text-indent', 'top', 'vertical-align', 'visibility', 'white-space', 'width']
 
-When you configure allowedStyleProps, the styles, which matches the ‘allowed style properties’ list are allowed, all other style properties will be removed on pasting the content in the editor.
+> This setting works only when `KeepFormat` is set to true. If `KeepFormat` is `false` or `PlainText` is `true`, style filtering via `AllowedStyleProps` will not be applied.
 
 For Example,
 
-`allowedStyleProps: ['color', 'margin']'`: This will allow only the style properties ‘color’ and ‘margin’ in each pasted element.
+`AllowedStyleProps: ['color', 'margin']'`: This will allow only the style properties ‘color’ and ‘margin’ in each pasted element.
+
+In the following example, the paste cleanup related settings are explained with its module configuration:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
