@@ -142,7 +142,7 @@ In the `messageSend` event handler, send a POST request to your backend API endp
 
 Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the dialogflow backend:
+Modify the `Views/Home/Index.cshtml` file to integrate the Syncfusion Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}

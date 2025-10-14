@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Azure Open AI in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Integration of Azure Open AI in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Azure OpenAI in ##Platform_Name## AI AssistView Control | Syncfusion
+description: Checkout and learn about Integration of Azure OpenAI in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Azure Open AI
+control: Azure OpenAI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
 # Integrate Azure OpenAI with ASP.NET MVC AI AssistView control
  
-The AI AssistView control integrates with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure Open AI service via API calls, providing natural language understanding and context-aware responses.
+The AI AssistView control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
  
 ## Prerequisites
 
 Before starting, ensure you have the following:
 
-* **An Azure account**: with access to [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
+* **An Azure account**: with access to [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
 
 * **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
 
@@ -30,7 +30,7 @@ Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide 
 
 Install the required packages:
 
-1. Install the `Open AI` and `Azure` nuget packages in the application.
+1. Install the `OpenAI` and `Azure` nuget packages in the application.
 
 ```bash
 
@@ -50,9 +50,9 @@ Nuget\Install-Package Markdig
 
 Note: The sample below uses HttpClient directly and does not require the Azure/OpenAI SDKs.
  
-## Configure Azure Open AI
+## Configure Azure OpenAI
  
-1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure Open AI resource.
+1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure OpenAI resource.
 
 2. Under resource Management, select keys and endpoint to retrieve your API key and endpoint URL. 
 
@@ -68,9 +68,9 @@ Note: The sample below uses HttpClient directly and does not require the Azure/O
 
 ## Azure OpenAI with AI AssistView
 
-You can add the below respective files in your application:
+Modify the `index.cshtml` file to integrate the Azure OpenAI with the AI AssistView control.
  
-* Update the following configuration values with your Azure Open AI details:
+* Update the following configuration values with your Azure OpenAI details:
  
 ```bash
  
@@ -89,4 +89,4 @@ string deploymentName = "Your_Deployment_Name";
 {% endhighlight %}
 {% endtabs %}
 
-![Azure Open AI](../images/open-ai.png)
+![Azure OpenAI](../images/open-ai.png)

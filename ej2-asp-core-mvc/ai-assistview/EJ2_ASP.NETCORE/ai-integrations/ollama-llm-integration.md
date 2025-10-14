@@ -40,6 +40,8 @@ NuGet\Install-Package Microsoft.Extensions.AI.Ollama
  
 ## Configure AI AssistView with Ollama in ASP.NET Core
 
+Modify the `index.cshtml` file to integrate the Ollama with the AI AssistView control.
+
 Add services in `Program.cs` file 
 
 ```bash
