@@ -55,6 +55,8 @@ Nuget\Install-Package Markdig
 > Security note: Advises against committing the API key to version control and recommends using environment variables or a secret manager in production.
  
 ## Gemini AI with AI AssistView
+
+Modify the `index.cshtml` file to integrate the Gemini AI with the AI AssistView control.
  
 * Add your Gemini API key securely in the configuration:
 
