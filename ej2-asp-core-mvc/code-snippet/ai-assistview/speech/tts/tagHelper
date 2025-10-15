@@ -1,0 +1,150 @@
+@model IndexModel
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="integration-texttospeech-section">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
+                      promptRequest="onPromptRequest"
+                      stopRespondingClick="stopRespondingClick"
+                      created="onCreated">
+        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+        <e-aiassistview-responsetoolbarsettings items="@Model.ViewModel.ResponseItems" itemClicked="onResponseToolbarItemClicked"></e-aiassistview-responsetoolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-audio"></div>
+        <i>Ready to assist voice enabled !</i>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+    var assistObj = null;
+    var stopStreaming = false;
+    var currentUtterance;
+
+    function onCreated() {
+        assistObj = ej.base.getComponent(document.getElementById("aiAssistView"), "aiassistview");
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            assistObj.prompts = [];
+            stopStreaming = true;
+        }
+    }
+
+    function onResponseToolbarItemClicked(args) {
+        const responseHtml = assistObj.prompts[args.dataIndex].response;
+        if (responseHtml) {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = responseHtml;
+            const text = (tempDiv.textContent || tempDiv.innerText || '').trim();
+            if (args.item.iconCss === 'e-icons e-audio' || args.item.iconCss === 'e-icons e-assist-stop') {
+                if (currentUtterance) {
+                    speechSynthesis.cancel();
+                    currentUtterance = null;
+                    assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
+                    assistObj.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
+                } else {
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.onend = () => {
+                        currentUtterance = null;
+                        assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-audio';
+                        assistObj.responseToolbarSettings.items[1].tooltip = 'Read Aloud';
+                    };
+                    speechSynthesis.speak(utterance);
+                    currentUtterance = utterance;
+                    assistObj.responseToolbarSettings.items[1].iconCss = 'e-icons e-assist-stop';
+                    assistObj.responseToolbarSettings.items[1].tooltip = 'Stop';
+                }
+            }
+        }
+    }
+
+
+    async function streamResponse(response) {
+        let lastResponse = '';
+        const responseUpdateRate = 10;
+        let i = 0;
+        const responseLength = response.length;
+        while (i < responseLength && !stopStreaming) {
+            lastResponse += response[i];
+            i++;
+            if (i % responseUpdateRate === 0 || i === responseLength) {
+                const htmlResponse = marked.parse(lastResponse);
+                assistObj.addPromptResponse(htmlResponse, i === responseLength);
+                assistObj.scrollToBottom();
+            }
+            await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+        }
+    }
+
+    function onPromptRequest(args) {
+        // Get antiforgery token
+        var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+        var token = tokenElement ? tokenElement.value : '';
+
+        if (!token) {
+            assistObj.addPromptResponse('⚠️ Antiforgery token not found.');
+            return;
+        }
+
+        fetch('/?handler=GetAIResponse', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': token
+            },
+            body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(responseText => {
+            const text = responseText.trim() || 'No response received.';
+            stopStreaming = false;
+            streamResponse(text);
+        })
+        .catch(error => {
+            console.error('Error fetching AI response:', error);
+            assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+            stopStreaming = true;
+        });
+    }
+
+    function stopRespondingClick() {
+        stopStreaming = true;
+    }
+</script>
+
+<style>
+    .integration-texttospeech-section {
+        height: 450px;
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .integration-texttospeech-section .e-view-container {
+        margin: auto;
+    }
+
+    .integration-texttospeech-section .e-banner-view {
+        margin-left: 0;
+    }
+
+    .integration-texttospeech-section .banner-content .e-audio:before {
+        font-size: 25px;
+    }
+
+    .integration-texttospeech-section .banner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+</style>
