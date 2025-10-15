@@ -24,9 +24,9 @@ Before starting, ensure you have the following:
 
 * **Deployed Azure Bot**: A bot should be created and published using the [Microsoft Bot Framework](https://learn.microsoft.com/en-us/azure/bot-service/bot-builder-basics?view=azure-bot-service-4.0), which is accessible via an Azure App Service. Refer to Microsoft's Bot Creation Guide.
 
-## Set Up the AI AssistView control
+## Set Up the Chat UI control
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
