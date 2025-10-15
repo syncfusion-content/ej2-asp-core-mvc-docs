@@ -24,9 +24,9 @@ Before starting, ensure you have the following:
 
 * Dialogflow Service Account with the `Dialogflow API Client` role and its JSON key file.
 
-## Set Up the AI AssistView control
+## Set Up the Chat UI control
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
