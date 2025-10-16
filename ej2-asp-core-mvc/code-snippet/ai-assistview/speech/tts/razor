@@ -29,10 +29,12 @@
     var stopStreaming = false;
     var currentUtterance;
 
+    // Initializes the AIAssistView component reference when created
     function onCreated() {
         assistObj = ej.base.getComponent(document.getElementById("aiAssistView"), "aiassistview");
     }
 
+    // Handles toolbar item clicks, such as clearing the conversation on refresh
     function toolbarItemClicked(args) {
         if (args.item.iconCss === 'e-icons e-refresh') {
             assistObj.prompts = [];
@@ -40,6 +42,7 @@
         }
     }
 
+    // Handles clicks on response toolbar items, such as copying, reading aloud, liking, or disliking the response
     function onResponseToolbarItemClicked(args) {
         const responseHtml = assistObj.prompts[args.dataIndex].response;
         if (responseHtml) {
@@ -68,6 +71,7 @@
         }
     }
 
+    // Streams the AI response character by character to create a typing effect
     async function streamResponse(response) {
         let lastResponse = '';
         const responseUpdateRate = 10;
@@ -85,6 +89,7 @@
         }
     }
 
+    // Handles prompt requests by sending them to the server API endpoint and streaming the response
     function onPromptRequest(args) {
         // Get antiforgery token
         var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
@@ -121,6 +126,7 @@
         });
     }
 
+    // Stops the ongoing streaming response
     function stopRespondingClick() {
         stopStreaming = true;
     }
