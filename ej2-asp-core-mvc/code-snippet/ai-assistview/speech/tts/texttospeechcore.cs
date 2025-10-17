@@ -3,7 +3,8 @@ using Azure.AI.OpenAI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using OpenAI.Chat;
-namespace WebApplication4.Pages
+
+namespace WebApplication.Pages
 {
     public class IndexModel : PageModel
     {
@@ -11,21 +12,17 @@ namespace WebApplication4.Pages
         public IndexViewModel ViewModel { get; set; } = new IndexViewModel();
         public void OnGet()
         {
-            // Initialize toolbar items
             ViewModel.Items = new List<ToolbarItemModel>
             {
-                new ToolbarItemModel
-            {
-                iconCss = "e-icons e-refresh",
-                align = "Right",
-            }
+                new ToolbarItemModel { iconCss = "e-icons e-refresh", align = "Right" }
             };
 
-            // Initialize prompt suggestions
-            ViewModel.PromptSuggestionData = new string[]
+            ViewModel.ResponseItems = new List<ToolbarItemModel>
             {
-                "What are the best tools for organizing my tasks?",
-                "How can I maintain work-life balance effectively?"
+                new ToolbarItemModel { iconCss = "e-icons e-assist-copy", tooltip = "Copy" },
+                new ToolbarItemModel { iconCss = "e-icons e-audio", tooltip = "Read Aloud" },
+                new ToolbarItemModel { iconCss = "e-icons e-assist-like", tooltip = "Like" },
+                new ToolbarItemModel { iconCss = "e-icons e-assist-dislike", tooltip = "Need Improvement" }
             };
         }
 
@@ -75,7 +72,7 @@ namespace WebApplication4.Pages
     public class IndexViewModel
     {
         public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
-        public string[] PromptSuggestionData { get; set; }
+        public List<ToolbarItemModel> ResponseItems { get; set; } = new List<ToolbarItemModel>();
     }
 
     public class PromptRequest
@@ -87,5 +84,6 @@ namespace WebApplication4.Pages
     {
         public string align { get; set; }
         public string iconCss { get; set; }
+        public string tooltip { get; set; }
     }
 }
