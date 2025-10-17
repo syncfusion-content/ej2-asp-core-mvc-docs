@@ -3,7 +3,8 @@ using Azure.AI.OpenAI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using OpenAI.Chat;
-namespace WebApplication4.Pages
+
+namespace WebApplication.Pages
 {
     public class IndexModel : PageModel
     {
@@ -15,17 +16,10 @@ namespace WebApplication4.Pages
             ViewModel.Items = new List<ToolbarItemModel>
             {
                 new ToolbarItemModel
-            {
-                iconCss = "e-icons e-refresh",
-                align = "Right",
-            }
-            };
-
-            // Initialize prompt suggestions
-            ViewModel.PromptSuggestionData = new string[]
-            {
-                "What are the best tools for organizing my tasks?",
-                "How can I maintain work-life balance effectively?"
+                {
+                    iconCss = "e-icons e-refresh",
+                    align = "Right",
+                }
             };
         }
 
@@ -75,7 +69,6 @@ namespace WebApplication4.Pages
     public class IndexViewModel
     {
         public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
-        public string[] PromptSuggestionData { get; set; }
     }
 
     public class PromptRequest

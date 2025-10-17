@@ -1,35 +1,28 @@
+using OpenAI;
+using OpenAI.Chat;
 using Azure;
 using Azure.AI.OpenAI;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using OpenAI.Chat;
-namespace WebApplication4.Pages
+
+namespace AssistViewDemo.Controllers
 {
-    public class IndexModel : PageModel
+    public class HomeController : Controller
     {
 
-        public IndexViewModel ViewModel { get; set; } = new IndexViewModel();
-        public void OnGet()
+        public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
+
+        public IActionResult Index()
         {
-            // Initialize toolbar items
-            ViewModel.Items = new List<ToolbarItemModel>
-            {
-                new ToolbarItemModel
-            {
-                iconCss = "e-icons e-refresh",
-                align = "Right",
-            }
-            };
-
-            // Initialize prompt suggestions
-            ViewModel.PromptSuggestionData = new string[]
-            {
-                "What are the best tools for organizing my tasks?",
-                "How can I maintain work-life balance effectively?"
-            };
+            Items.Add(new ToolbarItemModel { iconCss = "e-icons e-refresh", align = "Right" });
+            ViewBag.Items = Items;
+            return View();
         }
-
-        public async Task<IActionResult> OnPostGetAIResponse([FromBody] PromptRequest request)
+        public class ToolbarItemModel
+        {
+            public string iconCss { get; set; }
+            public string align { get; set; }
+        }
+        [HttpPost]
+        public async Task<IActionResult> GetAIResponse([FromBody] PromptRequest request)
         {
             try
             {
@@ -41,12 +34,13 @@ namespace WebApplication4.Pages
                     return BadRequest("Prompt cannot be empty.");
                 }
 
+                // Azure OpenAI configuration
                 string endpoint = "Your_Azure_OpenAI_Endpoint"; // Replace with your Azure OpenAI endpoint
                 string apiKey = "YOUR_AZURE_OPENAI_API_KEY"; // Replace with your Azure OpenAI API key
                 string deploymentName = "YOUR_DEPLOYMENT_NAME"; // Replace with your Azure OpenAI deployment name (e.g., gpt-4o-mini)
 
-                var credential = new AzureKeyCredential(apiKey); 
-                var client = new AzureOpenAIClient(new Uri(endpoint), credential);
+                var credential = new AzureKeyCredential(apiKey);
+                var client = new AzureOpenAIClient(new Uri(endpoint), credential); 
                 var chatClient = client.GetChatClient(deploymentName);
 
                 var chatCompletionOptions = new ChatCompletionOptions();
@@ -54,6 +48,7 @@ namespace WebApplication4.Pages
                     new[] { new UserChatMessage(request.Prompt) },
                     chatCompletionOptions
                 );
+
                 string responseText = completion.Value.Content[0].Text;
                 if (string.IsNullOrEmpty(responseText))
                 {
@@ -62,7 +57,7 @@ namespace WebApplication4.Pages
                 }
 
                 _logger.LogInformation("Azure OpenAI response received: {Response}", responseText);
-                return new JsonResult(responseText);
+                return Json(responseText);
             }
             catch (Exception ex)
             {
@@ -70,22 +65,5 @@ namespace WebApplication4.Pages
                 return BadRequest($"Error generating response: {ex.Message}");
             }
         }
-    }
-
-    public class IndexViewModel
-    {
-        public List<ToolbarItemModel> Items { get; set; } = new List<ToolbarItemModel>();
-        public string[] PromptSuggestionData { get; set; }
-    }
-
-    public class PromptRequest
-    {
-        public string Prompt { get; set; }
-    }
-
-    public class ToolbarItemModel
-    {
-        public string align { get; set; }
-        public string iconCss { get; set; }
     }
 }

@@ -8,22 +8,25 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Google Dialogflow With ASP.NET MVC Chat UI component
+# Integrate Google Dialogflow with ASP.NET MVC Chat UI control
 
-The Syncfusion Chat UI supports integration with [Google Dialogflow](https://cloud.google.com/dialogflow/docs), enabling advanced conversational AI features in your ASP.NET MVC applications.
-
-## Getting Started With the ChatUI Component
-
-Before integrating Dialogflow, ensure that the Syncfusion Chat UI component is correctly rendered in your ASP.NET MVC app:
-
-[ASP.NET MVC Getting Started Guide](../getting-started)
+The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your ASP.NET MVC applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 
 ## Prerequisites
 
-* Google account to access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
-* Visual Studio with ASP.NET MVC development tools.
-* Syncfusion EJ2 ASP.NET MVC installed in your project.
+Before starting, ensure you have the following:
+
+* **Node.js**: Version 16 or higher with npm.
+
+* **Google Account**: To access [Google Dialogflow](https://cloud.google.com/dialogflow/docs) and [Google Cloud Console](https://console.cloud.google.com/).
+
+* **Syncfusion Chat UI**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+
 * Dialogflow Service Account with the `Dialogflow API Client` role and its JSON key file.
+
+## Set Up the Chat UI control
+
+Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
@@ -35,13 +38,6 @@ Install-Package Google.Cloud.Dialogflow.V2
 Install-Package Newtonsoft.Json
 
 ```
-* Install the Syncfusion EJ2 ASP.NET MVC package in your project:
-
-```bash
-
-Install-Package Syncfusion.EJ2.MVC5
-
-```
 
 ## Set Up the Dialogflow Agent
 
@@ -49,13 +45,13 @@ Install-Package Syncfusion.EJ2.MVC5
 
 2. Add intents with training phrases and responses (e.g., greetings, FAQs). Test using the dialogflow simulator.
 
-3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a Service Account with the dialogflow API client role, and download the JSON key file.
+3. In the Google Cloud Console, go to `APIs & Services` > `Credentials`, create a service account with the dialogflow API client role, and download the JSON key file.
 
 > `Security Note`: Never commit the JSON key file to version control. Use environment variables or a secret manager (e.g., Google Cloud Secret Manager) for production.
 
-## Configure ASP.NET MVC Backend
+## Configure Node.js Backend
 
-Create `service-acct.json` with your Dialogflow service account credentials in your project root:
+Create `backend/service-acct.json` with your Dialogflow service account credentials:
 
 {% tabs %}
 {% highlight js tabtitle="service-acct.json" %}
@@ -136,7 +132,7 @@ namespace YourNamespace.Controllers
 
 ## Configure message send
 
-Use the Chat UI `messageSend` event to exchange messages. This event is triggered before a message is sent, allowing you to forward it to the backend.
+Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
@@ -146,7 +142,7 @@ In the `messageSend` event handler, send a POST request to your backend API endp
 
 Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the dialogflow backend:
+Modify the `Views/Home/Index.cshtml` file to integrate the Syncfusion Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}

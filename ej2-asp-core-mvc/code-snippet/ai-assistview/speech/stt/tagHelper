@@ -1,0 +1,249 @@
+@model IndexModel
+@using Syncfusion.EJ2.InteractiveChat
+
+<div class="integration-speechtotext-section">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
+                      footerTemplate="#footerContent"
+                      promptRequest="onPromptRequest"
+                      stopRespondingClick="stopRespondingClick"
+                      created="onCreated">
+        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+        <e-aiassistview-prompttoolbarsettings itemClicked="promptToolbarItemClicked"></e-aiassistview-prompttoolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-listen-icon"></div>
+        <i>Click the below mic-button to convert your voice to text.</i>
+    </div>
+</script>
+<script id="footerContent" type="text/x-jsrender">
+    <div class="e-footer-wrapper">
+        <div id="assistview-footer" class="content-editor" oninput="toggleButtons" contenteditable="true" placeholder="Click to speak or start typing..."></div>
+        <div class="option-container">
+            <button id="speechToText"></button>
+            <button id="assistview-sendButton" class="e-assist-send e-icons" role="button"></button>
+        </div>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+    var assistObj = null;
+    var assistviewFooter;
+    var sendButton;
+    var speechToTextObj;
+    var stopStreaming = false;
+
+    function onCreated() {
+        assistObj = ej.base.getComponent(document.getElementById("aiAssistView"), "aiassistview");
+        // Initialize Speech-to-Text component
+        speechToTextObj = new ej.inputs.SpeechToText({
+            transcriptChanged: onTranscriptChange,
+            onStop: onListeningStop,
+            created: Created,
+            cssClass: 'e-flat'
+        });
+        speechToTextObj.appendTo('#speechToText');
+    }
+
+    function promptToolbarItemClicked(args) {
+        if (args.item.iconCss === "e-icons e-assist-edit") {
+            const assistviewFooter = document.querySelector('#assistview-footer');
+            assistviewFooter.innerHTML = assistObj.prompts[args.dataIndex].prompt;
+            toggleButtons();
+        }
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            assistObj.prompts = [];
+            stopStreaming = true;
+        }
+    }
+
+    async function streamResponse(response) {
+        let lastResponse = '';
+        const responseUpdateRate = 10;
+        let i = 0;
+        const responseLength = response.length;
+        while (i < responseLength && !stopStreaming) {
+            lastResponse += response[i];
+            i++;
+            if (i % responseUpdateRate === 0 || i === responseLength) {
+                const htmlResponse = marked.parse(lastResponse);
+                assistObj.addPromptResponse(htmlResponse, i === responseLength);
+                assistObj.scrollToBottom();
+            }
+            await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+        }
+        toggleButtons();
+    }
+
+    function onPromptRequest(args) {
+        // Get antiforgery token
+        var tokenElement = document.querySelector('input[name="__RequestVerificationToken"]');
+        var token = tokenElement ? tokenElement.value : '';
+
+        if (!token) {
+            assistObj.addPromptResponse('⚠️ Antiforgery token not found.');
+            return;
+        }
+
+        fetch('/?handler=GetAIResponse', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'RequestVerificationToken': token
+            },
+            body: JSON.stringify({ prompt: args.prompt || 'Hi' })
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            return response.json();
+        })
+        .then(responseText => {
+            const text = responseText.trim() || 'No response received.';
+            stopStreaming = false;
+            streamResponse(text);
+        })
+        .catch(error => {
+            console.error('Error fetching AI response:', error);
+            assistObj.addPromptResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+            stopStreaming = true;
+            toggleButtons();
+        });
+    }
+
+    // Handles actions when speech listening stops
+    function onListeningStop() {
+        toggleButtons();
+    }
+
+    function onTranscriptChange(args) {
+        (document.querySelector('#assistview-footer')).innerText = args.transcript;
+    }
+
+    // Handles actions after component creation
+    function Created() {
+        let assistviewFooter = document.querySelector('#assistview-footer');
+        let sendButton = document.querySelector('#assistview-sendButton');
+
+        sendButton.addEventListener('click', sendIconClicked);
+        assistviewFooter.addEventListener('input', toggleButtons);
+
+        assistviewFooter.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                sendIconClicked();
+                e.preventDefault(); // Prevent the default behavior of the Enter key
+            }
+        });
+        toggleButtons();
+    }
+
+    // Toggles the visibility of the send and speech-to-text buttons
+    function toggleButtons() {
+        let assistviewFooter = document.querySelector('#assistview-footer');
+        let sendButton = document.querySelector('#assistview-sendButton');
+        let speechButton = document.querySelector('#speechToText');
+
+        let hasText = assistviewFooter.innerText.trim() !== '';
+        sendButton.classList.toggle('visible', hasText);
+        speechButton.classList.toggle('visible', !hasText);
+
+        if (!hasText && (assistviewFooter.innerHTML === '<br>' || !assistviewFooter.innerHTML.trim())) {
+            assistviewFooter.innerHTML = '';
+        }
+    }
+
+    // Handles send button click event
+    function sendIconClicked() {
+        var assistviewFooter = document.querySelector('#assistview-footer');
+        assistObj.executePrompt(assistviewFooter.innerText);
+        assistviewFooter.innerText = '';
+    }
+
+    function stopRespondingClick() {
+        stopStreaming = true;
+    }
+</script>
+
+<style>
+    .integration-speechtotext-section {
+      height: 350px;
+      width: 650px;
+      margin: 0 auto;
+    }
+
+    .integration-speechtotext-section .e-view-container {
+      margin: auto;
+    }
+    .integration-speechtotext-section .e-banner-view {
+      margin-left: 0;
+    }
+    .integration-speechtotext-section .banner-content .e-listen-icon:before {
+      font-size: 25px;
+    }
+
+    .integration-speechtotext-section .banner-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .integration-speechtotext-section #assistview-sendButton {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+
+    .integration-speechtotext-section #speechToText.visible,
+    .integration-speechtotext-section #assistview-sendButton.visible {
+      display: inline-block;
+    }
+
+    .integration-speechtotext-section #speechToText,
+    .integration-speechtotext-section #assistview-sendButton {
+      display: none;
+    }
+
+    @@media only screen and (max-width: 750px) {
+      .integration-speechtotext-section {
+        width: 100%;
+      }
+    }
+
+    .integration-speechtotext-section .e-footer-wrapper {
+      display: flex;
+      border: 1px solid #c1c1c1;
+      padding: 5px 5px 5px 10px;
+      margin: 5px 5px 0 5px;
+      border-radius: 30px;
+    }
+
+    .integration-speechtotext-section .content-editor {
+      width: 100%;
+      overflow-y: auto;
+      font-size: 14px;
+      min-height: 25px;
+      max-height: 200px;
+      padding: 10px;
+    }
+
+    .integration-speechtotext-section .content-editor[contentEditable='true']:empty:before {
+      content: attr(placeholder);
+      color: #6b7280;
+      font-style: italic;
+    }
+
+    .integration-speechtotext-section .option-container {
+      align-self: flex-end;
+    }
+</style>
