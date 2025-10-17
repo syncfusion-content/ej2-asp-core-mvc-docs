@@ -1,65 +1,76 @@
 ---
 layout: post
-title: Azure Open AI in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Integration of Azure Open AI in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Azure OpenAI in ##Platform_Name## AI AssistView Control | Syncfusion
+description: Checkout and learn about Integration of Azure OpenAI in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Azure Open AI
+control: Azure OpenAI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Azure Open AI With AI AssistView control
+# Integrate Azure OpenAI with ASP.NET Core AI AssistView control
  
-The Syncfusion AI AssistView supports integration with [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai), enabling advanced conversational AI features in your Core applications.
- 
-## Getting Started With the AI AssistView control
- 
-Before integrating Azure Open AI, ensure that the Syncfusion AI AssistView control is correctly rendered in your Core app:
- 
-[ CORE Getting Started Guide](../getting-started)
- 
-## Prerequisites
- 
-* An Azure account with access to [Azure Open AI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
-* [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) to create Core application
- 
-## Install Packages
- 
-Install the Syncfusion ASP.NET Core package in the application using Package Manager Console.
- 
-```bash
- 
-NuGet\Install-Package Syncfusion.EJ2.AspNet.Core
+The AI AssistView control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
 
-```
- 
-Install the Open AI and Azure Open AI package in the application using Package Manager Console.
- 
+## Prerequisites
+
+Before starting, ensure you have the following:
+
+* **An Azure account**: with access to [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
+
+* **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) installed.
+
+* [Markdig](https://www.nuget.org/packages/Markdig) package available in the project for Markdown-to-HTML conversion (required by the sample code).
+
+## Set Up the AI AssistView control
+
+Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+
+## Install Dependencies
+
+Install the required packages:
+
+* Install the `OpenAI` and `Azure` nuget packages in the application.
+
 ```bash
- 
+
 NuGet\Install-Package OpenAI
 NuGet\Install-Package Azure.AI.OpenAI
 NuGet\Install-Package Azure.Core
 
 ```
- 
-## Configure Azure Open AI
- 
-1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure Open AI resource. 
 
-2. Under Resource Management, select Keys and Endpoint to retrieve your API key and endpoint URL.  
+* Install the `Markdig` nuget packages in the application.
 
-3. Copy the API key, endpoint, and deployment name (e.g., gpt-4o-mini). Ensure the API version matches your resource configuration. 
+```bash
+
+Nuget\Install-Package Markdig
+
+```
+
+Note: The sample below uses HttpClient directly and does not require the Azure/OpenAI SDKs.
+ 
+## Configure Azure OpenAI
+ 
+1. Log in to the [Azure Portal](https://portal.azure.com/#home) and navigate to your Azure OpenAI resource.
+
+2. Under resource Management, select keys and endpoint to retrieve your API key and endpoint URL. 
+
+3. Note the following values:
+   - API key
+   - Endpoint (for example, https://<resource-name>.openai.azure.com/)
+   - API version (must be supported by your resource)
+   - Deployment name (for example, gpt-4o-mini)
 
 4. Store these values securely, as they will be used in your application.
 
-> `Security Note`: Never expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
+> `Security Note`: expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
+
+## Azure OpenAI with AI AssistView
  
-## Configure Azure Open AI with AI AssistView
+Modify the `index.cshtml` file to integrate the Azure OpenAI with the AI AssistView control.
  
-You can add the below respective files in your application:
- 
-* Update the following configuration values with your Azure Open AI details:
+* Update the following configuration values with your Azure OpenAI details:
  
 ```bash
  
@@ -78,12 +89,4 @@ string deploymentName = "Your_Deployment_Name";
 {% endhighlight %}
 {% endtabs %}
  
-![Azure Open AI](../images/open-ai.png)
-
-## Run and Test
- 
-Run the application in the browser using the following command.
- 
-Build and run the app (Ctrl + F5).
- 
-Open the hosted link to interact with your Azure Open AI for dynamic response.
+![Azure OpenAI](../images/open-ai.png)
