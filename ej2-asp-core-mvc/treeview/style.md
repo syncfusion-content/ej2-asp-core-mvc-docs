@@ -93,7 +93,6 @@ By using attributes, you can customize specific nodes effectively. For instance,
   font-weight: bold;
 }
 ```
-![Customizing the TreeView using HtmlAttributes](./images/customize-html-attribute.png)
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
