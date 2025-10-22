@@ -12,14 +12,6 @@ documentation: ug
 
 The Syncfusion ASP.NET MVC Chat UI control integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the Chat UI through voice input.
 
-## Prerequisites
-
-Before integrating `Speech-to-Text`, install the [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) NuGet package to use ASP.NET MVC controls in the application.
-
-## Set Up the Chat UI control
-
-Follow the Syncfusion Chat UI [Getting Started](./getting-started) guide to configure and render the Chat UI control in the application.
-
 ## Configure Speech-to-Text
 
 To enable Speech-to-Text functionality in the ASP.NET MVC Chat UI control, update the `index.cshtml` file to incorporate the Web Speech API.
