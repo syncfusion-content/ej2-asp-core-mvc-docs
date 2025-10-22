@@ -22,7 +22,7 @@ Follow the Syncfusion Chat UI [Getting Started](./getting-started) guide to conf
 
 ## Configure Speech-to-Text
 
-To enable Speech-to-Text functionality in the Angular Chat UI control, update the `index.cshtml` file to incorporate the Web Speech API.
+To enable Speech-to-Text functionality in the ASP.NET MVC Chat UI control, update the `index.cshtml` file to incorporate the Web Speech API.
 
 The [SpeechToText](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the Chat UI’s editable footer with the recognized text. Once the transcription appears in the footer, users can send it as a message to others.
 
@@ -53,3 +53,7 @@ The `SpeechToText` control provides events to handle errors that may occur durin
 ## Browser Compatibility
 
 The `SpeechToText` control relies on the [Speech Recognition API](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/speech-recognition#browser-support), which has limited browser support. Refer to the [Browser Compatibility](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/speech-recognition#browser-support) section for detailed information.
+
+## See Also
+
+* [Messages](./messages)

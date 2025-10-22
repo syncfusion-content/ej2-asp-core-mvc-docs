@@ -24,7 +24,18 @@ Before integrating `Speech-to-Text`, ensure the following:
 
 ## Configure Speech-to-Text
 
-To enable Speech-to-Text functionality, modify the `Index.cshtml` file to incorporate the Web Speech API. The [SpeechToText](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/getting-started) control listens for microphone input, transcribes spoken words, and updates the AI AssistView's editable footer with the transcribed text. The transcribed text is then sent as a prompt to the Azure OpenAI service via the AI AssistView control.
+To enable Speech-to-Text functionality in the ASP.NET Core AssistView control, update the `index.cshtml` file to incorporate the Web Speech API.
+
+The [SpeechToText](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the AssistView’s editable footer with the recognized text. Once the transcription appears in the footer, users can send it as a message to others.
+
+### Configuration Options
+
+* **[`lang`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_Lang)**: Specifies the language for speech recognition. For example:
+
+    * `en-US` for American English
+    * `fr-FR` for French
+
+* **[`allowInterimResults`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SpeechToText.html#Syncfusion_EJ2_Inputs_SpeechToText_AllowInterimResults)**: Set to `true` to receive real-time (interim) recognition results, or `false` to receive only final results.
  
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,6 +47,14 @@ To enable Speech-to-Text functionality, modify the `Index.cshtml` file to incorp
 {% endtabs %}
  
 ![Integrating Speech-to-Text with AI AssistView](images/aiassist-stt.png)
+
+## Error Handling
+
+The `SpeechToText` control provides events to handle errors that may occur during speech recognition. For more information, refer to the [Error Handling](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/speech-recognition#error-handling) section in the documentation.
+
+## Browser Compatibility
+
+The `SpeechToText` control relies on the [Speech Recognition API](https://developer.mozilla.org/en-US/docs/Web/API/SpeechRecognition), which has limited browser support. Refer to the [Browser Compatibility](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/speech-recognition#browser-support) section for detailed information.
 
 ## See Also
 
