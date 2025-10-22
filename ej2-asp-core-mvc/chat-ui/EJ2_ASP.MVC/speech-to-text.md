@@ -37,10 +37,10 @@ The [SpeechToText](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-
  
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chatui/stt/razor %}
+{% include code-snippet/chat-ui/stt/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SpeechToText.cs" %}
-{% include code-snippet/chatui/stt/speechtotext.cs %}
+{% include code-snippet/chat-ui/stt/speechtotext.cs %}
 {% endhighlight %}
 {% endtabs %}
 
