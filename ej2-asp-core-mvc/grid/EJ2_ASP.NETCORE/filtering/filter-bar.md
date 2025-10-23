@@ -43,7 +43,7 @@ The following example demonstrates how to activate default filtering in the grid
 
 ![Filter bar](../images/filtering/filterbar.png)
 
-> To enable or dynamically switch the filter type, you must set the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) as **FilterBar**.
+> If the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) is not explicitly specified, it defaults to **FilterBar**.
 
 ## Filter bar modes
 
