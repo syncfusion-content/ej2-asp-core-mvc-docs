@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SyncfusionAspNetCoreAssistant MCP Server | Syncfusion
-description: Learn how to configure and use SyncfusionAspNetCoreAssistant MCP server for intelligent code generation, documentation, and troubleshooting in ASP.NET Core apps.
+description: Learn how to configure and use SyncfusionAspNetCoreAssistant MCP server for code generation, documentation, and troubleshooting in ASP.NET Core apps.
 control: Getting started with SyncfusionAspNetCoreAssistant MCP Server
 platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
