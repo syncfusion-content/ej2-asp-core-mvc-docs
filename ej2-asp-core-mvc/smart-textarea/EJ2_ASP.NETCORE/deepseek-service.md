@@ -176,7 +176,7 @@ var app = builder.Build();
 
 ## Add ASP.NET Core Smart TextArea Control
 
-Add the Smart TextArea in the **~/Pages/Index.chtml** file to test the DeepSeek AI integration.
+Add the Smart TextArea in the **~/Pages/Index.cshtml** file to test the DeepSeek AI integration.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
