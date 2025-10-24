@@ -16,7 +16,7 @@ The Syncfusion ASP.NET Core Chat UI control integrates `Speech-to-Text` function
 
 To enable Speech-to-Text functionality in the ASP.NET Core Chat UI control, update the `index.cshtml` file to incorporate the Web Speech API.
 
-The [SpeechToText](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the Chat UI’s editable footer with the recognized text. Once the transcription appears in the footer, users can send it as a message to others.
+The [SpeechToText](https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the Chat UI’s editable footer using the [footerTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_FooterTemplate) property to display the transcribed text. Once the transcription appears in the footer, users can send it as a message to others.
 
 ### Configuration Options
 
