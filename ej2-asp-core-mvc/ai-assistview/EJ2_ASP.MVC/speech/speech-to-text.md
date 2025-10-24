@@ -26,7 +26,7 @@ Before integrating `Speech-to-Text`, ensure the following:
 
 To enable Speech-to-Text functionality in the ASP.NET MVC AssistView control, update the `index.cshtml` file to incorporate the Web Speech API.
 
-The [SpeechToText](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the AssistView’s editable footer using the [FooterTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_FooterTemplate) property to display the transcribed text. The transcribed text is then sent as a prompt to the Azure OpenAI service via the AI AssistView component.
+The [SpeechToText](https://ej2.syncfusion.com/aspnetmvc/documentation/speech-to-text/getting-started) control listens to audio input from the device’s microphone, transcribes spoken words into text, and updates the AssistView’s editable footer using the [FooterTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_FooterTemplate) property to display the transcribed text. The transcribed text is then sent as a prompt to the Azure OpenAI service via the AI AssistView control.
 
 ### Configuration Options
 
