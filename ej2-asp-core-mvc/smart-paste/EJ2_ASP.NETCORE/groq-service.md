@@ -177,7 +177,7 @@ var app = builder.Build();
 
 ## Add the Smart Paste Button
 
-Add the Smart Paste Button to a form in the **~/Pages/Index.chtml** file to test the Gemini AI integration.
+Add the Smart Paste Button to a form in the **~/Pages/Index.cshtml** file to test the Gemini AI integration.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
