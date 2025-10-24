@@ -26,7 +26,7 @@ Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide 
 
 ## Install Dependencies
  
-1. Install the `Gemini AI` nuget package in the application.
+* Install the `Gemini AI` nuget package in the application.
  
 ```bash
  
@@ -34,7 +34,7 @@ NuGet\Install-Package Mscc.GenerativeAI
  
 ```
 
-2. Install the `Markdig` nuget packages in the application.
+* Install the `Markdig` nuget packages in the application.
 
 ```bash
 
