@@ -37,8 +37,8 @@ Before using [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@sync
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers unlimited access to this MCP server. There are no restrictions on:
 
 * Number of requests
-* Components usage
-* Query types
+* Controls usage
+* Query caps
 * Usage duration
 
 This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;</sup> controls to enhance their development experience without limitations.
@@ -53,7 +53,7 @@ Before you can invoke the `SyncfusionAspNetCoreAssistant` MCP server, you need t
 - **Type**: stdio (standard input/output transport)
 - **Command**: npx
 - **Arguments**: -y
-- **Server name**: SyncfusionAspNetCoreAssistant
+- **Server name**: syncfusionAspNetCoreAssistant
 
 You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key) as an env parameter in the configuration file:
 
@@ -63,20 +63,19 @@ You need to add your [Syncfusion API key](https://syncfusion.com/account/api-key
 }
 ```
 
-[SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) can be configured in various MCP clients. Below are setup instructions for popular environment:
+Below are setup instructions for popular MCP clients:
 
 ### Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio
 
-* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace, find `SyncfusionAspNetCoreAssistant`, and click Install.
-* When prompted, enter your [Syncfusion API key](https://syncfusion.com/account/api-key) and click Submit to register.
-* It installs locally on your machine and appears in the Installed list.
-* The server is ready for use in Code Studio.
-
-For additional details, see the Code Studio [documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/marketplace).
+* In [Code Studio](https://www.syncfusion.com/code-studio/), open MCP Marketplace and navigate to the `Custom Servers` tab.
+* Enter the Server Name as `aspnetcore-mcp`, choose Server Type as npm package, and set the NPM Package name to `@syncfusion/aspnetcore-assistant`.
+* Add an environment variable as `Syncfusion_API_Key` and value as your [Syncfusion API key](https://syncfusion.com/account/api-key), then click **Install Server**.
+* Once installed, the server will appear in the User Installed Server list, and will be added to the **config.yaml** file.
+* The server is now ready for use in Code Studio. For more details, refer to the [Code Studio documentation](https://help.syncfusion.com/code-studio/reference/configure-properties/mcp/customservers#npm-server).
 
 ### Visual Studio Code (GitHub Copilot MCP)
 
-1. To configure an MCP server for a specific workspace, you can create a `.vscode/mcp.json` file in your workspace folder.
+* To configure an MCP server for a specific workspace, you can create a `.vscode/mcp.json` file in your workspace folder.
 
 ```json
 {
@@ -96,10 +95,11 @@ For additional details, see the Code Studio [documentation](https://help.syncfus
 }
 ```
 
-2. After updating the configuration in settings.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) server directly from the settings interface without additional commands.
+* After updating the configuration in settings.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) server directly from the settings interface without additional commands.
 
-3. Confirm that [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) is being used (this does not happen automatically). Look for a statement in the output, which is similar to:
-    * `SyncfusionAspNetCoreAssistant is running...` (in Visual Studio Code)
+* Confirm the server is active by checking for a message like: `SyncfusionAspNetCoreAssistant is running...` in the output.
+
+* For additional guidance, refer to the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
 
 ### Visual Studio (GitHub Copilot MCP)
 
@@ -127,10 +127,9 @@ For additional details, see the Code Studio [documentation](https://help.syncfus
 * Select the [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) from the tools section.
 * For more details, refer to the official [Visual Studio documentation](https://learn.microsoft.com/en-us/visualstudio/ide/mcp-servers?view=vs-2022).
 
-
 ### Cursor
 
-To configure an MCP server for a specific workspace, you can create a .cursor/mcp.json file in your workspace folder.
+To configure an MCP server for a specific workspace, you can create a `.cursor/mcp.json` file in your workspace folder.
 
 ```json
 {
@@ -150,17 +149,19 @@ To configure an MCP server for a specific workspace, you can create a .cursor/mc
 }
 ```
 
+For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+
 ### JetBrains IDEs
 
-1. Go to Settings -> Tools -> AI Assistant -> Model Context Protocol (MCP).
-2. Click + Add to add a new MCP server configuration.
-3. In the New MCP Server dialog, switch the dropdown as `As JSON` and add the following config:
+* Go to Settings -> Tools -> AI Assistant -> Model Context Protocol (MCP).
+* Click + Add to add a new MCP server configuration.
+* In the New MCP Server dialog, switch the dropdown as `As JSON` and add the following config:
 
 ```json
 {
   "mcpServers": {
     "syncfusion-aspnetcore-assistant": {
-      "command": "npx",
+      "command": "npx.cmd",
       "args": [
         "-y",
         "@syncfusion/aspnetcore-assistant@latest"
@@ -173,13 +174,11 @@ To configure an MCP server for a specific workspace, you can create a .cursor/mc
 }
 ```
 
-4. Click OK and Apply.
+* Click OK and Apply.
+ 
+For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
-> For more detailed information about configuring MCP servers in various clients, refer to the official documentations.
-  * [Visual Studio Code](https://code.visualstudio.com/docs/copilot/chat/mcp-servers#_add-an-mcp-server)
-  * [Cursor](https://cursor.com/docs/context/mcp#using-mcp-json)
-  * [JetBrains](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server)
-  * [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
+> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
 
 ## Usage
 
@@ -195,7 +194,7 @@ To activate the SyncfusionAspNetCoreAssistant MCP server:
 
    In Visual Studio Code, you can also use #SyncfusionAspNetCoreAssistant to explicitly invoke the MCP server.
 
-2. Grant the SyncfusionAspNetCoreAssistant MCP server a permission to run for this session, workspace, or always.
+2. Grant permission for the server to run (for the session, workspace, or always).
 3. For best results, start a new chat for each new topic to maintain clean context.
 
 ### Mode availability
@@ -207,7 +206,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> MCP Servers provide full access
 1. `Be specific`: Mention both platform and control (e.g., "How do I create a Syncfusion ASP.NET Core Grid with paging and filtering?").
 2. `Provide context`: Include details about your use case for more targeted solutions.
 3. `Use descriptive queries`: Avoid vague questions that lack necessary context.
-4. `Start fresh for new topics`: Begin a new chat session when switching components or topics.
+4. `Start fresh for new topics`: Begin a new chat session when switching controls or topics.
 
 ### Example Queries
 
