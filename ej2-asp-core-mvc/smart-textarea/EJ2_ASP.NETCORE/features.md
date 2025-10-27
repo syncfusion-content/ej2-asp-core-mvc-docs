@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Styles and Appearances in ##Platform_Name## Smart TextArea Control | Syncfusion
+title: Styles and Appearances in ##Platform_Name## Smart TextArea | Syncfusion
 description: Checkout and learn here all about Styles and Appearances in ##Platform_Name## Smart TextArea of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Features
