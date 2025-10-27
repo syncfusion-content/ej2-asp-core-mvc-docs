@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DeepSeek AI Integration in ##Platform_Name## Smart Paste Button Control | Syncfusion
+title: DeepSeek AI in ##Platform_Name## Smart Paste Button Control | Syncfusion
 description: Learn how to implement a custom AI service using DeepSeek AI with ##Platform_Name## Smart Paste Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: DeepSeek AI
@@ -247,7 +247,3 @@ If the DeepSeek AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the DeepSeek API key and model name are correct in the configuration. Check the `DeepSeekAIService` implementation for errors.
 - **HTTP Request Failures**: Ensure a stable internet connection and that the DeepSeek API endpoint (`https://api.deepseek.com/v1/chat/completions`) is accessible. Test with HTTP/2 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `DeepSeekAIService` and `DeepSeekInferenceService` are registered in **Program.cs**.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart Paste Button](https://ej2.syncfusion.com/aspnetcore/documentation/smart-paste/getting-started)

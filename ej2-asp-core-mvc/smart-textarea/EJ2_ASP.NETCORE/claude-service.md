@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Claude AI Integration in ##Platform_Name## Smart TextArea Control | Syncfusion
+title: Claude AI in ##Platform_Name## Smart TextArea Control | Syncfusion
 description: Learn how to implement a custom AI service using Claude AI with ##Platform_Name## Smart TextArea control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Claude AI
@@ -206,7 +206,3 @@ If the Claude AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the Claude API key and model name are correct in the configuration. Check the `ClaudeAIService` implementation for errors.
 - **HTTP Request Failures**: Ensure a stable internet connection and that the Claude API endpoint (`https://api.anthropic.com/v1/messages`) is accessible. Test with HTTP/2 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `ClaudeAIService` and `ClaudeInferenceService` are registered in **Program.cs**.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart TextArea](https://ej2.syncfusion.com/aspnetcore/documentation/smart-textarea/getting-started)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gemini AI Integration in ##Platform_Name## Smart TextArea Control | Syncfusion
+title: Gemini AI in ##Platform_Name## Smart TextArea Control | Syncfusion
 description: Learn how to implement a custom AI service using Google's Gemini AI with ##Platform_Name## Smart TextArea control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Gemini AI
@@ -253,7 +253,3 @@ If the Gemini AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the Gemini API key and model name are correct in the configuration. Check the `GeminiService` implementation for errors.
 - **HTTP Request Failures**: Ensure a stable internet connection and that the Gemini API endpoint (`https://generativelanguage.googleapis.com/v1beta/models/`) is accessible. Test with HTTP/2 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `GeminiService` and `GeminiInferenceService` are registered in **Program.cs**.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart TextArea](https://ej2.syncfusion.com/aspnetcore/documentation/smart-textarea/getting-started)

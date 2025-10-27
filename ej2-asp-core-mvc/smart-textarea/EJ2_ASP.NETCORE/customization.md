@@ -66,7 +66,3 @@ Add the following code in the `~/Pages/Index.cshtml`:
 
 If suggestions do not appear, try the following:
 - **AI Configuration Errors**: Verify that the API key, endpoint, and model name are correctly configured in **Program.cs**. Check for typos or invalid credentials.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart TextArea](https://ej2.syncfusion.com/aspnetcore/documentation/smart-textarea/getting-started)

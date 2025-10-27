@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Groq AI Integration in ##Platform_Name## Smart Paste Button Control | Syncfusion
+title: Groq AI in ##Platform_Name## Smart Paste Button Control | Syncfusion
 description: Learn how to implement a custom AI service using Groq AI with ##Platform_Name## Smart Paste Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Groq AI
@@ -248,7 +248,3 @@ If the Groq AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the Groq API key and model name are correct in the configuration. Check the `GroqService` implementation for errors.
 - **HTTP Request Failures**: Ensure a stable internet connection and that the Groq API endpoint (`https://api.groq.com/openai/v1/chat/completions`) is accessible. Test with HTTP/2 instead of HTTP/3 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `GroqService` and `GroqInferenceService` are registered in **Program.cs**.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart Paste Button](https://ej2.syncfusion.com/aspnetcore/documentation/smart-paste/getting-started)

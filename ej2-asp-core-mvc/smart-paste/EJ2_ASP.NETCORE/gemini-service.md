@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gemini AI Integration in ##Platform_Name## Smart Paste Button Control | Syncfusion
+title: Gemini AI in ##Platform_Name## Smart Paste Button Control | Syncfusion
 description: Learn how to implement a custom AI service using Google's Gemini API with ##Platform_Name## Smart Paste Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Gemini AI
@@ -295,7 +295,3 @@ If the Gemini AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the Gemini API key and model name are correct in the configuration. Check the `GeminiService` implementation for errors.
 - **HTTP Request Failures**: Ensure a stable internet connection and that the Gemini API endpoint (`https://generativelanguage.googleapis.com/v1beta/models/`) is accessible. Test with HTTP/2 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `GeminiService` and `GeminiInferenceService` are registered in **Program.cs**.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart Paste Button](https://ej2.syncfusion.com/aspnetcore/documentation/smart-paste/getting-started)

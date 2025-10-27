@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom AI Service Integration with ##Platform_Name## Smart TextArea Control | Syncfusion
+title: Custom AI with ##Platform_Name## Smart TextArea Control | Syncfusion
 description: Learn how to integrate custom AI services with ##Platform_Name## Smart TextArea control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Custom AI Service
@@ -77,8 +77,4 @@ If the custom AI service does not work as expected, try the following:
 - **No Suggestions Displayed**: Ensure the `IChatInferenceService` implementation is registered in **Program.cs** and returns valid responses. Check for errors in the `GenerateResponseAsync` method.
 - **Dependency Issues**: Verify that all required NuGet packages are installed. Run `dotnet restore` to resolve dependencies.
 - **Incorrect Responses**: Debug the custom AI service implementation to ensure it processes `ChatParameters` correctly and returns expected responses.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart TextArea](https://ej2.syncfusion.com/aspnetcore/documentation/smart-textarea/getting-started)
 

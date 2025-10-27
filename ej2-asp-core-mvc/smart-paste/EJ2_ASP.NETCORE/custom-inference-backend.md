@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom AI Service Integration with ##Platform_Name## Smart Paste Button Control | Syncfusion
+title: Custom AI with ##Platform_Name## Smart Paste Button Control | Syncfusion
 description: Learn how to integrate custom AI services with ##Platform_Name## Smart Paste Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Custom AI Service
@@ -75,8 +75,3 @@ If the custom AI integration does not work as expected, try the following:
 - **Fields Not Populating**: Verify that the custom AI service’s endpoint, model, and API key are correct in `appsettings.json`. Ensure the `GenerateResponseAsync` method returns valid data.
 - **Service Registration Errors**: Confirm that `CustomAIService` and `CustomInferenceService` are registered in **Program.cs**.
 - **AI Parsing Errors**: Check the AI service’s response format and ensure it matches the expected `CustomAIResponse` structure. Test the API independently to verify connectivity.
-
-## See Also
-
-- [Getting Started with Syncfusion ASP.NET Core Smart Paste Button](https://ej2.syncfusion.com/aspnetcore/documentation/smart-paste/getting-started)
-

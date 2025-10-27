@@ -18,4 +18,3 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Smart Paste Bu
 ## See Also
 
 - [ASP.NET Core Button Control: Types and Styles](https://ej2.syncfusion.com/aspnetcore/documentation/button/types-and-styles)
-- [Getting Started with Syncfusion ASP.NET Core Smart Paste Button](https://ej2.syncfusion.com/aspnetcore/documentation/smart-paste/getting-started)
