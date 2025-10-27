@@ -22,7 +22,7 @@ The AI AssistView control integrates with Google’s [Gemini](https://ai.google.
 
 ## Set Up the AI AssistView control
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
 
 ## Install Dependencies
  

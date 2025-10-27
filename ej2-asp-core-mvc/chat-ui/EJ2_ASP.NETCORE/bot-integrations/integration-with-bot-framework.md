@@ -26,7 +26,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Chat UI control
 
-Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
+Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
@@ -128,8 +128,9 @@ Add the Direct Line secret to `appsettings.json`:
 
 ## Configure ChatUI
 
-Use the Chat UI `messageSend` event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
-Create `Views/Home/Index.cshtml` (assuming MVC) to integrate the Syncfusion Chat UI with the Direct Line API:
+Use the Chat UI [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
+
+Modify `Views/Home/Index.cshtml` (assuming MVC) to integrate the Chat UI with the Direct Line API:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}

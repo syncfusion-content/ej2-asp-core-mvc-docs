@@ -26,7 +26,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the Chat UI control
 
-Follow the Syncfusion Chat UI [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
+Follow the [Getting Started](../getting-started) guide to configure and render the Chat UI control in the application and that prerequisites are met.
 
 ## Install Dependencies
 
@@ -129,17 +129,17 @@ namespace YourNamespace.Controllers
 
 ## Configure message send
 
-Use the Chat UI `messageSend` event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
-In the `messageSend` event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to dialogflow and returns the response.
+In the [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to dialogflow and returns the response.
 
 ### Displaying Bot response:
 
 Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Create `Views/Home/Index.cshtml` to integrate the Syncfusion Chat UI with the dialogflow backend:
+Modify `Views/Home/Index.cshtml` to integrate the Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}
