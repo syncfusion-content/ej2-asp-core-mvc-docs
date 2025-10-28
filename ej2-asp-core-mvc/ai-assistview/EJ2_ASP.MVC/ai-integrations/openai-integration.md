@@ -24,7 +24,7 @@ Before starting, ensure you have the following:
 
 ## Set Up the AI AssistView control
 
-Follow the Syncfusion AI AssistView [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
+Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
  
 ## Install Dependencies
 
@@ -66,7 +66,7 @@ Note: The sample below uses HttpClient directly and does not require the Azure/O
 
 > `Security Note`: expose your API key in client-side code for production applications. Use a server-side proxy or environment variables to manage sensitive information securely.
 
-## Azure OpenAI with AI AssistView
+## Configure AI AssistView with Azure OpenAI
 
 Modify the `index.cshtml` file to integrate the Azure OpenAI with the AI AssistView control.
  
