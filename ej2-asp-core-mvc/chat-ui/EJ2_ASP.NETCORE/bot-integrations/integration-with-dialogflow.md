@@ -139,7 +139,7 @@ In the [messageSend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
-Modify `Views/Home/Index.cshtml` to integrate the Chat UI with the dialogflow backend:
+Modify the `Views/Home/Index.cshtml` file to integrate the Chat UI with the dialogflow backend:
 
 {% tabs %}
 {% highlight Html tabtitle="Index.cshtml" %}
