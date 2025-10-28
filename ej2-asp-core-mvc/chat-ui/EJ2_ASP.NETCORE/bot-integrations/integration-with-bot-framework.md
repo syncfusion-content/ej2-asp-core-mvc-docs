@@ -128,7 +128,7 @@ Add the Direct Line secret to `appsettings.json`:
 
 ## Configure ChatUI
 
-Use the Chat UI [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
+Use the Chat UI [messageSend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to handle message exchanges. This event is triggered before a message is sent, allowing you to forward it to the bot via the Direct Line API. Use the `addMessage` method to programmatically add the bot's reply to the Chat UI.
 
 Modify `Views/Home/Index.cshtml` (assuming MVC) to integrate the Chat UI with the Direct Line API:
 

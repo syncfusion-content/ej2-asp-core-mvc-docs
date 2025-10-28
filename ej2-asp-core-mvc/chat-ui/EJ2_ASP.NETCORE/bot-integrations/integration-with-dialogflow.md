@@ -129,11 +129,11 @@ namespace YourNamespace.Controllers
 
 ## Configure message send
 
-Use the Chat UI [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
+Use the Chat UI [messageSend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event to exchanges message. Each time a user sends a message, this event will be invoked with details of the sent message.
 
 ### Forward Message to backend:
 
-In the [MessageSend](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to dialogflow and returns the response.
+In the [messageSend](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_MessageSend) event handler, send a POST request to your backend API endpoint (`/api/chat/message`). The backend forwards the message to dialogflow and returns the response.
 
 ### Displaying Bot response:
 
