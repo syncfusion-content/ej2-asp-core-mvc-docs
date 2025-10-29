@@ -95,7 +95,7 @@ Below are setup instructions for popular MCP clients:
 }
 ```
 
-* After updating the configuration in settings.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) server directly from the settings interface without additional commands.
+* After updating the configuration in mcp.json, you'll notice a "Start" option at the top of the config. This allows you to easily start the [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) server directly from the settings interface without additional commands.
 
 * Confirm the server is active by checking for a message like: `SyncfusionAspNetCoreAssistant is running...` in the output.
 
