@@ -200,6 +200,14 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 {% endif %}
 
+## Nested list creation using Tab key
+
+In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
+
+Please refer to the below video for visual behavior and interaction examples:
+
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+
 ### Checklist
 
 The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
@@ -421,6 +429,39 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
+
+### Nested blockquotes
+
+The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
+
+While the toolbar does not provide a direct method to apply blockquote formatting recursively (i.e., within an already blockquote section), nested blockquotes can still be achieved in the following ways:
+
+1. **Pasting preformatted content:** If you paste content that already contains nested blockquote tags (e.g., from another editor or email), the Rich Text Editor will preserve and render the nested structure correctly.
+2. **Pre-loading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
+3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Horizontal line
 
