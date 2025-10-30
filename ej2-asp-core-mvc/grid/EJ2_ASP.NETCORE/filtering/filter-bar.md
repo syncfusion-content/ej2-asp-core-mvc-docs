@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Bar in ##Platform_Name## Grid Component
+title: Filter Bar Syncfusion in ##Platform_Name## Grid Component
 description: Learn here all about Filter Bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Bar
@@ -153,4 +153,4 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
