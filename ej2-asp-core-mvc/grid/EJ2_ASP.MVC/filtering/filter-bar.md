@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filter bar in ASP.NET MVC Grid component
+# Filter bar in Syncfusion ASP.NET MVC Grid component
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 
@@ -154,4 +154,4 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
