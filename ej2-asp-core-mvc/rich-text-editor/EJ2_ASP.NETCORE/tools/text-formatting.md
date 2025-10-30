@@ -200,14 +200,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 {% endif %}
 
-## Nested list creation using Tab key
-
-In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
-
-Please refer to the below video for visual behavior and interaction examples:
-
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
-
 ### Checklist
 
 The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
@@ -248,6 +240,14 @@ Below is an example of how to configure the Checklist in the Rich Text Editor:
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Nested list creation using Tab key
+
+In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
+
+Please refer to the below video for visual behavior and interaction examples:
+
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
 
 ## Increase and decrease indent
 
