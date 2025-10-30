@@ -74,4 +74,4 @@ Use the `data-smartpaste-description` attribute to provide custom instructions f
 {% endhighlight %}
 {% endtabs %}
 
-![Syncfusion ASP.NET Core Smart Paste Button with Annotation](../images/SmartPaste_Annotation.gif)
+![Syncfusion ASP.NET Core Smart Paste Button with Annotation](images/SmartPaste_Annotation.gif)
