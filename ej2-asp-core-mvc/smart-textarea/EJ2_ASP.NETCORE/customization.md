@@ -37,7 +37,7 @@ Add the following code in the `~/Pages/Index.cshtml`:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Smart TextArea Control Suggestion on popup](../images/SmartTextArea-Popup.gif)
+![ASP.NET Core Smart TextArea Control Suggestion on popup](images/SmartTextArea-Popup.gif)
 
 ### Inline Suggestions
 
@@ -60,7 +60,7 @@ Add the following code in the `~/Pages/Index.cshtml`:
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Smart TextArea Control Suggestion on inline](../images/SmartTextArea-Inline.gif)
+![ASP.NET Core Smart TextArea Control Suggestion on inline](images/SmartTextArea-Inline.gif)
 
 ## Troubleshooting
 
