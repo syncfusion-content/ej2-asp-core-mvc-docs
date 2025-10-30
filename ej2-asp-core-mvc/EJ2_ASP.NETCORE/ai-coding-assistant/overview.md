@@ -34,18 +34,18 @@ To use the AI Coding Assistant, you need:
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers unlimited access to the AI Coding Assistant, with no limitations on:
 
 * Number of requests
-* Components usage
+* Controls usage
 * Query types
 * Usage duration
 
-This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;</sup> components to enhance their development experience without limitations.
+This ensures users can fully leverage Syncfusion<sup style="font-size:70%">&reg;</sup> controls to enhance their development experience without limitations.
 
 ## Best Practices
 
 * Initial Setup: Use the tools to quickly add and configure Syncfusion<sup style="font-size:70%">&reg;</sup> controls in your ASP.NET Core application.
-* Feature Tuning: Enable or disable component features through prompt-based configuration for tailored functionality.
+* Feature Tuning: Enable or disable control features through prompt-based configuration for tailored functionality.
 * Data Binding: Generate sample data for testing and prototyping. Avoid using sensitive or production data to ensure security.
-* Step-by-step explanations: Use annotated code to understand component behavior. Note that the level of detail may vary depending on the tool, mode, and AI model used. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) for in-depth information.
+* Step-by-step explanations: Use annotated code to understand control behavior. Note that the level of detail may vary depending on the tool, mode, and AI model used. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) for in-depth information.
 * Troubleshooting: Resolve common issues with AI-generated suggestions. For complex problems, refer to [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) or [support](https://support.syncfusion.com/support/tickets/create).
 
 > Always check AI-generated content and code for accuracy before using it.
