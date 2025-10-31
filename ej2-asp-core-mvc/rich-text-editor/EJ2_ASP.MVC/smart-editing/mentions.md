@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Mentions in the ASP.NET Core Rich Text Editor Control
+# Mentions in the ##Platform_Name## Rich Text Editor Control
 
 By integrating the [Mention](https://ej2.syncfusion.com/aspnetmvc/documentation/mention/getting-started) component with a Rich Text Editor, users can effortlessly mention or tag other users or objects from a suggested list. This eliminates the need to manually type out names or identifying information, improving efficiency and accuracy.
 
@@ -79,7 +79,7 @@ For example, by default, the mention chip renders as:
 Using the `DisplayTemplate` property, you can customize it to render as a clickable link:
 
 ```
-<a href="mailto:maria@gmail.com" title="maria@gmail.com">@Maria</a>
+<a href="mailto:selma@gmail.com" title="selma@gmail.com">@Selma Rose</a>
 
 ```
 
