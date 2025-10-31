@@ -1,0 +1,42 @@
+@{
+    .....
+    List<object> listdata = new List<object>
+    {
+        new { id = 1, name = "Australia", hasChild = true, expanded = true },
+        new { id = 2, pid = 1, name = "New South Wales" },
+        new { id = 3, pid = 1, name = "Victoria",
+        htmlAttributes = new Dictionary<string, string> {
+                { "class", "child-node" },
+            }},
+        new { id = 4, pid = 1, name = "South Australia" },
+        new { id = 6, pid = 1, name = "Western Australia" },
+        new { id = 7, name = "Brazil", hasChild = true },
+        new { id = 8, pid = 7, name = "Paraná" },
+        new { id = 9, pid = 7, name = "Ceará" },
+        new { id = 10, pid = 7, name = "Acre" },
+        new { id = 11, name = "China", hasChild = true },
+        new { id = 12, pid = 11, name = "Guangzhou" },
+        new { id = 13, pid = 11, name = "Shanghai" },
+        new { id = 14, pid = 11, name = "Beijing" },
+        new { id = 15, pid = 11, name = "Shantou" },
+        new { id = 16, name = "France", hasChild = true },
+        new { id = 17, pid = 16, name = "Pays de la Loire" },
+        new { id = 18, pid = 16, name = "Aquitaine" },
+        new { id = 19, pid = 16, name = "Brittany" },
+        new { id = 20, pid = 16, name = "Lorraine" },
+        new { id = 21, name = "India", hasChild = true },
+        new { id = 22, pid = 21, name = "Assam" },
+        new { id = 23, pid = 21, name = "Bihar" },
+        new { id = 24, pid = 21, name = "Tamil Nadu" }
+    };
+}
+<ejs-treeview id="listdata">
+    <e-treeview-fields  dataSource="listdata" id="id" parentId="pid" text="name" hasChildren="hasChild" expanded="expanded" htmlAttributes: "htmlAttributes" ></ e - treeview - fields >
+</ ejs - treeview >
+
+
+<style>
+.child-node {
+  font-weight: bold;
+}
+</style>
