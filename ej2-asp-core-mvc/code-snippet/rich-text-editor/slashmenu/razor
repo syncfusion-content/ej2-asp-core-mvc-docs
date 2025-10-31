@@ -13,5 +13,11 @@
     if (args.itemData.command === "Signature") {
       rteObj.executeCommand("insertHTML", signature, { undo: true });
     }
+    if (args.itemData.command === 'HorizontalLine') {
+        rteObj.executeCommand('insertHTML', '<hr>');
+    }
+    if (args.itemData.command === 'CheckList') {
+        rteObj.executeCommand('insertHTML',`<ul class="e-rte-checklist"><li> Task 1</li><li> Task 2</li></ul>`);
+    }
   }
 </script>

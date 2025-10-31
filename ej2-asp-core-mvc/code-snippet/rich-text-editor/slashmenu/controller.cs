@@ -27,7 +27,21 @@ public class HomeController : Controller
                         iconCss= "e-icons e-signature",
                         type= "Custom",
                         command= "Signature"
-                    }
+                    },
+                    new  {
+                        text: 'HorizontalLine',
+                        description: 'Insert a horizontal line',
+                        iconCss: 'e-icons e-horizontal-line',
+                        type: 'Custom',
+                        command: 'HorizontalLine',
+                    },
+                    new {
+                       text: 'CheckList',
+                       description: 'Insert a check list',
+                       iconCss: 'e-icons e-checklist',
+                       type: 'Custom',
+                       command: 'CheckList',
+                    },
                 }
             }
         return View();
