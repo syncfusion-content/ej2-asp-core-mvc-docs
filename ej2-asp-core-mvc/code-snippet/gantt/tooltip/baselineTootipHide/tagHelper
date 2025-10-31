@@ -1,0 +1,14 @@
+<ejs-gantt id='Gantt' dataSource="ViewBag.DataSource" height="450px" renderBaseline="true" baselineColor="red" beforeTooltipRender="beforeTooltipRender">
+    <e-gantt-taskfields id="TaskId" baselineStartDate="BaselineStartDate" baselineEndDate="BaselineEndDate" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" child="SubTasks">
+    </e-gantt-taskfields>                    
+</ejs-gantt>
+
+<script type="text/javascript">
+    function beforeTooltipRender(args) 
+    {
+        if (args.args.target.classList.contains("e-baseline-bar")) 
+        {
+            args.cancel = true;
+        }
+    }
+</script>

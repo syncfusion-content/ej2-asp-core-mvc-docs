@@ -1,0 +1,12 @@
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).RenderBaseline(
+        true).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").BaselineStartDate(
+           "BaselineStartDate").Duration("Duration").BaselineEndDate("BaselineEndDate").Progress("Progress").ParentId("ParentId")).BeforeTooltipRender("BeforeTooltipRender").Render()
+
+<script type="text/javascript">
+    function BeforeTooltipRender(args) {
+        if (args.args.target.classList.contains("e-baseline-bar")) {
+            args.cancel = true;
+        }
+    }
+</script>
