@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Fullscreen Mode in ##Platform_Name## Rich Text Editor 
+# Fullscreen Mode in ##Platform_Name## Rich Text Editor Control
 
 The Fullscreen mode allows the Rich Text Editor to expand and occupy the entire browser viewport. This provides a distraction-free editing experience and more space to work with content and toolbar features.
 

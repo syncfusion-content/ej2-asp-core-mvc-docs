@@ -129,5 +129,5 @@ Programmatically highlight a portion of the text in the editor by setting the ba
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/highlight-specific-line/controller.cs %}
 {% endhighlight %}
-{% endtabs}
+{% endtabs %}
 {% endif %}
