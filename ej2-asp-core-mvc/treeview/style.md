@@ -74,8 +74,8 @@ Use the following CSS to customize the TreeView nodes based on levels.
 
 ```css
 .e-treeview .e-level-2 > .e-text-content { 
-        border: 1px solid black; 
-        background: #ffe800b5 !important;
+     background: #E6F4FF;
+     border: 1px solid #99C9FF;
 } 
 ```
 ![Customizing the TreeView nodes based on levels](./images/customize-based-on-level.png)
