@@ -1,0 +1,14 @@
+
+<button class="e-btn" style="margin-bottom: 20px;" onclick="selectAllContent()">
+    Select All
+</button>
+
+@Html.EJS().RichTextEditor("selectAll").Value(ViewBag.value).Render()
+
+<script>
+    function selectAllContent() {
+        document.getElementById("selectAll").ej2_instances[0].selectAll();
+        
+    }
+</script>
+
