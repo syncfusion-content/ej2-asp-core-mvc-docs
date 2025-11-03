@@ -1,0 +1,10 @@
+@{
+    List<EmployeeData> data = new EmployeeData().EmployeeList();
+        
+    string value = @"<p>Hello <span contenteditable=""false"" class=""e-mention-chip""><a title=""maria@gmail.com"">@@Maria</a></span>&#8203;</p>
+    <p>Welcome to the mention integration with rich text editor demo. Type <code>@@</code> character and tag user from the suggestion list. </p>";
+}
+
+@Html.EJS().RichTextEditor("mentionIntegration").Value(value).Render()
+
+@Html.EJS().Mention("mentionRTE").Target("#mentionIntegration_rte-edit-view").DataSource((IEnumerable<EmployeeData>)data).MinLength(3).Fields(new Syncfusion.EJ2.DropDowns.MentionFieldSettings { Text = "Name", Value="EmailId" }).Render()
