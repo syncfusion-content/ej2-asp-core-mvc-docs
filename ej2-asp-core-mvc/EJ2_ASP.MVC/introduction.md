@@ -257,4 +257,4 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 
-    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
