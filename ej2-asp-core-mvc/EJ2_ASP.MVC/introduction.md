@@ -14,11 +14,13 @@ documentation: ug
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is a modern enterprise UI toolkit that has been built from the ground up to be lightweight, responsive, modular and touch friendly. It also available in other frameworks such as JavaScript and Angular, React.
 
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+
 ## How to best read this user guide
 
 * The best way to get started would be to read the "Getting Started" section of the documentation for the component that you would like to start using first. The "Getting Started" guide gives just enough information that you need to know before starting to write code. This is the only section that we recommend reading end-to-end before starting to write code, all other information can be referred as needed.
 
-* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2aspnetmvc.azurewebsites.net/aspnetmvc/grid/gridoverview#/bootstrap5) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
+* Now that you are familiar with the basics of using the component, the next step would be to start integrating the component into your application. A good starting point would be to refer to the code snippets in the [online sample browser](https://ej2.syncfusion.com/aspnetmvc/grid/gridoverview#/tailwind3) which contains hundreds of code samples, it is very likely that you will find a code sample that resembles your intended usage scenario.
 
 * Another valuable resource is the API reference which provides detailed information on the object hierarchy as well as the settings available on every object.
 
@@ -255,4 +257,4 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 
-    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+    * [Getting started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
