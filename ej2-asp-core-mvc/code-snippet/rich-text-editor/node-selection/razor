@@ -1,0 +1,25 @@
+
+<button class="e-btn" style="margin-bottom: 20px;" onclick="selectParagraph()">
+    Select Paragraph
+</button>
+
+@Html.EJS().RichTextEditor("nodeSelectionRTE").Value(ViewBag.value).Render()
+
+@section Scripts {
+    <script>
+        function selectParagraph() {
+            const panel = document.getElementById("nodeSelectionRTE").ej2_instances[0].contentModule.getEditPanel();
+            const paragraphs = panel.querySelectorAll('p');
+
+            if (paragraphs.length > 1) {
+                const range = document.createRange();
+                range.selectNode(paragraphs[1]); // Select the second paragraph
+                const selection = window.getSelection();
+                if (selection) {
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                }
+            }
+        }
+    </script>
+}

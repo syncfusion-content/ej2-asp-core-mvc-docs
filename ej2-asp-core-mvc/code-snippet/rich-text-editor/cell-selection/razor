@@ -1,0 +1,30 @@
+
+<button class="e-btn" style="margin-bottom: 20px;" onclick="selectCell()">
+    Select Paragraph
+</button>
+
+@Html.EJS().RichTextEditor("cellSelectionRTE").Value(ViewBag.value).Render()
+
+<script>
+    function selectCell() {
+        const panel = document.getElementById("cellSelectionRTE").ej2_instances[0].contentModule.getEditPanel();
+        const cells = panel.querySelectorAll('td');
+
+        if (cells.length > 2) {
+            const cell = cells[2]; // Third cell
+            const range = document.createRange();
+            range.selectNode(cell);
+
+            const selection = window.getSelection();
+            if (selection) {
+                selection.removeAllRanges();
+                selection.addRange(range);
+            }
+
+            cell.style.backgroundColor = '#cce5ff';
+            cell.classList.add('e-cell-select');
+        }
+
+    }
+</script>
+

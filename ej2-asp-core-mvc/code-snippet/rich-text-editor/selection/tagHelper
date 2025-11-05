@@ -1,0 +1,51 @@
+@{
+var sliderValue = new int[] { 0, 50 };
+}
+
+<div class="sliderwrap">
+    <label class="labeltext userselect">Range Slider</label>
+    <ejs-slider id="range" value="@sliderValue" type="Range" min="0" max="400" change="onChange"></ejs-slider>
+</div>
+
+<div>
+    <ejs-richtexteditor id="editor" height="400">
+        <e-content-template>
+            <p>
+                The Syncfusion Rich Text Editor, a WYSIWYG (what you see is what you get) editor, is a user interface that allows you to create, edit, and format rich text content. You can try out a demo of this editor here. Key features: Provides IFRAME and DIV modes. Bulleted and numbered lists. Handles images, hyperlinks, videos, hyperlinks, uploads, etc. Contains undo/redo manager.
+            </p>
+        </e-content-template>
+    </ejs-richtexteditor>
+</div>
+
+<script>
+    var editorObj;
+    var rangeObj;
+
+    document.addEventListener('DOMContentLoaded', function () {
+        editorObj = document.getElementById('editor').ej2_instances[0];
+        rangeObj = document.getElementById('range').ej2_instances[0];
+
+        editorObj.addEventListener('created', function () {
+            const panel = editorObj.contentModule.getEditPanel();
+            const realLength = panel.firstChild.firstChild.textContent.length;
+            rangeObj.max = realLength;
+            rangeObj.dataBind();
+        });
+    });
+
+    function onChange(args) {
+        const [start, end] = args.value;
+        const panel = editorObj.contentModule.getEditPanel();
+        const textNode = panel.firstChild.firstChild;
+        const maxLength = textNode.length;
+
+        const safeStart = Math.min(start, maxLength);
+        const safeEnd = Math.min(end, maxLength);
+
+        const range = document.createRange();
+        range.setStart(textNode, safeStart);
+        range.setEnd(textNode, safeEnd);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+</script>
