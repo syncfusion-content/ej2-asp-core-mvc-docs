@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the [SyncfusionAspNetCore MCP Server](./mcp-server.md) to an MCP-enabled client
+* Add the [SyncfusionAspNetCore MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/mcp-server) to an MCP-enabled client
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Documentation](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
