@@ -66,5 +66,5 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant is desi
 
 ## See also
 
-* Add the [SyncfusionAspNetMvc MCP Server](./mcp-server.md) to an MCP-enabled client
+* Add the [SyncfusionAspNetMvc MCP Server](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/mcp-server) to an MCP-enabled client
 * [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
