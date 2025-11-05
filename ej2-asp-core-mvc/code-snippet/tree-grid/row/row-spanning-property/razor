@@ -1,0 +1,43 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.TreeGrid
+@using Syncfusion.EJ2.Grids
+@{
+    ViewBag.Title = "TreeGrid Headers";
+}
+
+<div class="control-section">
+    @Html.EJS().TreeGrid("scheduleTreeGrid")
+        .DataSource((IEnumerable<object>)ViewBag.datasource)
+        .Height("300")
+        .Width("auto")
+        .GridLines(GridLine.Both)
+        .TreeColumnIndex(1)
+        .ChildMapping("subtasks")
+        .AllowTextWrap(true)
+        .EnableRowSpan(true)
+        .Columns(col =>
+        {
+            col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(TextAlign.Right).IsPrimaryKey(true).Width("150").Add();
+            col.Field("EmployeeName").HeaderText("Employee Name").Width("200").Add();
+
+            col.Field("9:00").HeaderText("9:00 AM").Width("120").Add();
+            col.Field("9:30").HeaderText("9:30 AM").Width("120").Add();
+            col.Field("10:00").HeaderText("10:00 AM").Width("120").Add();
+            col.Field("10:30").HeaderText("10:30 AM").Width("120").Add();
+            col.Field("11:00").HeaderText("11:00 AM").Width("120").Add();
+            col.Field("11:30").HeaderText("11:30 AM").Width("120").Add();
+            col.Field("12:00").HeaderText("12:00 PM").Width("120").Add();
+            col.Field("12:30").HeaderText("12:30 PM").Width("120").Add();
+            col.Field("1:00").HeaderText("1:00 PM").Width("120").Add();
+            col.Field("1:30").HeaderText("1:30 PM").Width("120").Add();
+            col.Field("2:00").HeaderText("2:00 PM").Width("120").Add();
+            col.Field("2:30").HeaderText("2:30 PM").Width("120").Add();
+            col.Field("3:00").HeaderText("3:00 PM").Width("120").Add();
+            col.Field("3:30").HeaderText("3:30 PM").Width("120").Add();
+            col.Field("4:00").HeaderText("4:00 PM").Width("120").Add();
+            col.Field("4:30").HeaderText("4:30 PM").Width("120").Add();
+            col.Field("5:00").HeaderText("5:00 PM").Width("120").Add();
+        })
+        .Render()
+</div>
+
