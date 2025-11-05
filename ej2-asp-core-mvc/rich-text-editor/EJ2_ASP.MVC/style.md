@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Rich Text Editor Component
+title: Style in Syncfusion ##Platform_Name## Rich Text Editor Component
 description: Learn here all about Style in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
@@ -12,7 +12,20 @@ documentation: ug
 
 The content below outlines the CSS structure you can use to customize the appearance of the control according to your preferences.
 
-## Customizing Rich Text Editor Content
+## Styling the placeholder text
+
+Use the following CSS to customize the default color in the Rich Text Editor's placeholder.
+
+```CSS
+
+.e-richtexteditor .e-rte-placeholder {
+    color: blue;
+    font-family: monospace;
+}
+
+```
+
+## Styling the editor content area
 
 Use the following CSS to modify the default style of the Rich Text Editor's content area, including font properties, background, and text color.
 
@@ -32,7 +45,7 @@ Use the following CSS to modify the default style of the Rich Text Editor's cont
 }
 ```
 
-## Customizing Rich Text Editor Toolbar
+## Customizing the toolbar appearance
 
 Use the following CSS to customize the default color in the Rich Text Editor's toolbar icon.
 
@@ -63,7 +76,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's t
 }
 ```
 
-## Customizing Character Count Display
+## Styling the character count display
 
 Use the following CSS to customize the default color in the Rich Text Editor's character count.
 
@@ -79,7 +92,7 @@ Use the following CSS to customize the default color in the Rich Text Editor's c
 }
 ```
 
-## Customizing Border Color
+## Modifying the editor container border
 
 Use the following CSS to customize the border color in the Rich Text Editor's container.
 
@@ -91,3 +104,30 @@ Use the following CSS to customize the border color in the Rich Text Editor's co
 }
 
 ```
+
+## Highlighting specific text programmatically
+
+Programmatically highlight a portion of the text in the editor by setting the background color. This can be achieved by applying a background style to the selected text using the Rich Text Editor's `executeCommand` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/highlight-specific-line/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/highlight-specific-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/highlight-specific-line/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/highlight-specific-line/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
