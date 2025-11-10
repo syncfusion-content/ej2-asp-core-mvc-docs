@@ -29,9 +29,8 @@ using System.Security.Cryptography;
 ...
 app.Use(async (context, next) =>
 {
-    RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
     byte[] nonceBytes = new byte[32];
-    rng.GetBytes(nonceBytes);
+    RandomNumberGenerator.Fill(nonceBytes);
     string nonceValue = Convert.ToBase64String(nonceBytes);
     context.Items.Add("ScriptNonce", nonceValue);
     context.Response.Headers.Add("Content-Security-Policy", string.Format(
