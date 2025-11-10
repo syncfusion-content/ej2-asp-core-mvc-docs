@@ -27,7 +27,7 @@ To use the AI Coding Assistant, you need:
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 * An active [API KEY](https://syncfusion.com/account/api-key)
-* A [ASP.NET Core application that includes SyncfusionAspNetCore](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* An [ASP.NET Core application that includes SyncfusionAspNetCore](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 
 ## Unlimited Access
 
