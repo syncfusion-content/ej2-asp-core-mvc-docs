@@ -11,14 +11,20 @@
 </ejs-grid>
 
 <script type="text/x-template" id="template">
-    <input type="checkbox" id="checkbox">
+    <input type="checkbox">
 </script>
 <script>
     function queryCellInfo(args) {
+         var grid = document.getElementById("Grid").ej2_instances[0];
         if (args.column.headerText === 'Verified') {
             var checkbox = new ej.buttons.CheckBox
                 ({
-                    checked: args.data.Verified
+                    checked: args.data.Verified,
+                    change: function (changeArgs) {
+                        var rowIndex = grid.getRowIndexByPrimaryKey(args.data.OrderID);
+                        args.data.Verified = changeArgs.checked;
+                        grid.updateRow(rowIndex, args.data);
+                    }, 
                 });
             checkbox.appendTo(args.cell.querySelector('input'));
         }
