@@ -32,7 +32,7 @@ app.Use(async (context, next) =>
     byte[] nonceBytes = new byte[32];
     RandomNumberGenerator.Fill(nonceBytes);
     string nonceValue = Convert.ToBase64String(nonceBytes);
-    context.Items.Add("ScriptNonce", nonceValue);
+    context.Items.Add("Nonce", nonceValue);
     context.Response.Headers.Add("Content-Security-Policy", string.Format(
     "script-src 'self' 'nonce-{0}' https://cdn.syncfusion.com;" +
     "style-src-elem 'self' 'nonce-{0}' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
@@ -51,8 +51,10 @@ app.Use(async (context, next) =>
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" nonce="@Context.Items["Nonce"]"  rel="stylesheet" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" nonce="@Context.Items["Nonce"]"></script>
 </head>
 {% endhighlight %}
 {% endtabs %}
@@ -64,7 +66,7 @@ app.Use(async (context, next) =>
 <body>
     ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
-    <ejs-scripts add-nonce="@Context.Items["ScriptNonce"]"></ejs-scripts>
+    <ejs-scripts add-nonce="@Context.Items["Nonce"]"></ejs-scripts>
 </body>
 {% endhighlight %}
 {% endtabs %}
