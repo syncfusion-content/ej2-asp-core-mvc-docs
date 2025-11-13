@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Content Security Policy
+# Content Security Policy in ASp.Net Core
 
 Content Security Policy (CSP) is a security feature implemented by web browsers to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page. To enable strict Content Security Policy (CSP), certain browser features are disabled by default. To use Syncfusion<sup style="font-size:70%">&reg;</sup> controls with strict CSP mode, it is essential to include the following directives:
 
@@ -35,7 +35,7 @@ app.Use(async (context, next) =>
     context.Items.Add("ScriptNonce", nonceValue);
     context.Response.Headers.Add("Content-Security-Policy", string.Format(
     "script-src 'self' 'nonce-{0}' https://cdn.syncfusion.com;" +
-    "style-src-elem 'self' 'unsafe-inline' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
+    "style-src-elem 'self' 'nonce-{0}' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
     "font-src 'self' data: https://fonts.gstatic.com;" +
     "object-src 'none';", nonceValue));
     await next();
