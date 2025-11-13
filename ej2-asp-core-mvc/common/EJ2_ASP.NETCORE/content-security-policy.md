@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Content Security Policy
+# Content Security Policy in ASP.NET Core
 
 Content Security Policy (CSP) is a security feature implemented by web browsers to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page. To enable strict Content Security Policy (CSP), certain browser features are disabled by default. To use Syncfusion<sup style="font-size:70%">&reg;</sup> controls with strict CSP mode, it is essential to include the following directives:
 
@@ -29,14 +29,13 @@ using System.Security.Cryptography;
 ...
 app.Use(async (context, next) =>
 {
-    RNGCryptoServiceProvider rng = new RNGCryptoServiceProvider();
     byte[] nonceBytes = new byte[32];
-    rng.GetBytes(nonceBytes);
+    RandomNumberGenerator.Fill(nonceBytes);
     string nonceValue = Convert.ToBase64String(nonceBytes);
-    context.Items.Add("ScriptNonce", nonceValue);
+    context.Items.Add("Nonce", nonceValue);
     context.Response.Headers.Add("Content-Security-Policy", string.Format(
     "script-src 'self' 'nonce-{0}' https://cdn.syncfusion.com;" +
-    "style-src-elem 'self' 'unsafe-inline' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
+    "style-src-elem 'self' 'nonce-{0}' https://cdn.syncfusion.com https://fonts.googleapis.com;" +
     "font-src 'self' data: https://fonts.gstatic.com;" +
     "object-src 'none';", nonceValue));
     await next();
@@ -52,8 +51,10 @@ app.Use(async (context, next) =>
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 <head>
     ...
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" nonce="@Context.Items["Nonce"]"  rel="stylesheet" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" nonce="@Context.Items["ScriptNonce"]"></script>
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" nonce="@Context.Items["Nonce"]"></script>
 </head>
 {% endhighlight %}
 {% endtabs %}
@@ -65,7 +66,7 @@ app.Use(async (context, next) =>
 <body>
     ...
     <!-- Syncfusion ASP.NET Core Script Manager -->
-    <ejs-scripts add-nonce="@Context.Items["ScriptNonce"]"></ejs-scripts>
+    <ejs-scripts add-nonce="@Context.Items["Nonce"]"></ejs-scripts>
 </body>
 {% endhighlight %}
 {% endtabs %}
