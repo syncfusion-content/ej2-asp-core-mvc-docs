@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter Bar in ##Platform_Name## Grid Component
+title: Filter Bar Syncfusion in ##Platform_Name## Grid Component
 description: Learn here all about Filter Bar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filter Bar
@@ -43,7 +43,7 @@ The following example demonstrates how to activate default filtering in the grid
 
 ![Filter bar](../images/filtering/filterbar.png)
 
-> To enable or dynamically switch the filter type, you must set the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) as **FilterBar**.
+> If the [filterSettings.type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Type) is not explicitly specified, it defaults to **FilterBar**.
 
 ## Filter bar modes
 
@@ -153,4 +153,4 @@ To utilize this feature, you can define a custom template for the filter bar by 
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

@@ -1,0 +1,152 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json;
+
+<div class="integration-speechtotext">
+    <ejs-chatui id="chatui" created="onCreate" footerTemplate="#footerContent">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+        <e-chatui-messages>
+            @foreach (var message in ViewBag.ChatMessagesData)
+            {
+                <e-chatui-message text="@message.Text" author="@message.Author"></e-chatui-message>
+            }
+        </e-chatui-messages>
+    </ejs-chatui>
+</div>
+
+<script>
+    var chatuiObj;
+    var chatuiFooter;
+    var sendButton;
+    var speechToTextObj;
+
+    function onCreate() {
+        chatuiObj = ej.base.getComponent(document.getElementById("chatui"), "chat-ui");
+        // Initialize Speech-to-Text component
+        speechToTextObj = new ej.inputs.SpeechToText({
+            transcriptChanged: onTranscriptChange,
+            onStop: onListeningStop,
+            created: onCreated,
+            cssClass: 'e-flat'
+        });
+        speechToTextObj.appendTo('#speechToText');
+    }
+
+    // Updates transcript in the input area when speech-to-text transcribes
+    function onTranscriptChange(args) {
+        document.querySelector('#chatui-footer').innerText = args.transcript;
+    }
+
+    // Handles actions when speech listening stops
+    function onListeningStop() {
+        toggleButtons();
+    }
+
+    // Handles actions after component creation
+    function onCreated() {
+        chatuiFooter = document.querySelector('#chatui-footer');
+        sendButton = document.querySelector('#chatui-sendButton');
+        sendButton.addEventListener('click', sendIconClicked);
+        chatuiFooter.addEventListener('input', toggleButtons);
+
+        chatuiFooter.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                sendIconClicked();
+                e.preventDefault();
+            }
+        });
+        toggleButtons();
+    }
+
+    // Toggles the visibility of the send and speech-to-text buttons
+    function toggleButtons() {
+        var hasText = chatuiFooter.innerText.trim() !== '';
+        sendButton.classList.toggle('visible', hasText);
+        speechToTextObj.element.classList.toggle('visible', !hasText);
+        if (!hasText && (chatuiFooter.innerHTML === '<br>' || !chatuiFooter.innerHTML.trim())) {
+            chatuiFooter.innerHTML = '';
+        }
+    }
+
+    // Handles send button click event
+    function sendIconClicked() {
+      const messageContent = chatuiFooter.innerText;
+      if (messageContent.trim()) {
+        chatuiObj.addMessage({
+            author: @Html.Raw(JsonConvert.SerializeObject(ViewBag.CurrentUser)),
+            text: messageContent
+        });
+        chatuiFooter.innerHTML = '';
+        toggleButtons();
+      }
+    }
+</script>
+
+<script id="footerContent" type="text/x-jsrender">
+    <div class="e-footer-wrapper">
+        <div id="chatui-footer" class="content-editor" oninput="toggleButtons" contenteditable="true" placeholder="Click to speak or start typing..."></div>
+        <div class="option-container">
+            <button id="speechToText"></button>
+            <button id="chatui-sendButton" class="e-assist-send e-icons" role="button"></button>
+        </div>
+    </div>
+</script>
+
+<style>
+    .integration-speechtotext {
+        height: 400px;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .integration-speechtotext #chatui-sendButton {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .integration-speechtotext #speechToText.visible,
+    .integration-speechtotext #chatui-sendButton.visible {
+        display: inline-block;
+    }
+
+    .integration-speechtotext #speechToText,
+    .integration-speechtotext #chatui-sendButton {
+        display: none;
+    }
+
+    @@media only screen and (max-width: 750px) {
+        .integration-speechtotext {
+            width: 100%;
+        }
+    }
+
+    .integration-speechtotext .e-footer-wrapper {
+        display: flex;
+        border: 1px solid #c1c1c1;
+        margin: 5px 5px 0 5px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .integration-speechtotext .content-editor {
+        width: 100%;
+        overflow-y: auto;
+        font-size: 14px;
+        min-height: 20px;
+        max-height: 150px;
+        padding: 10px;
+    }
+
+    .integration-speechtotext .content-editor[contentEditable='true']:empty:before {
+        content: attr(placeholder);
+        color: #6b7280;
+        font-style: italic;
+    }
+
+    .integration-speechtotext .option-container {
+        align-self: flex-end;
+    }
+</style>
