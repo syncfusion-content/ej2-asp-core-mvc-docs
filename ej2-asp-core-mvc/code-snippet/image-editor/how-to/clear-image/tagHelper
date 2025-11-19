@@ -5,7 +5,6 @@
 <ejs-button id="clearImage" onclick="clearImage()" cssClass="e-primary" content="Clear Image"></ejs-button>
 
 <script>
-    var base64String;
     function created() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         if (ej.base.Browser.isDevice) {
