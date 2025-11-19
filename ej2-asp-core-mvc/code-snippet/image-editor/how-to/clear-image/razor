@@ -4,7 +4,6 @@
 @Html.EJS().Button("clearImage").CssClass("e-primary").Content("Clear Image").Click("clearImage").Render()
 
 <script>
-    var base64String;
     function created() {
         var imageEditorObj = ej.base.getComponent(document.getElementById('image-editor'), 'image-editor');
         if (ej.base.Browser.isDevice) {

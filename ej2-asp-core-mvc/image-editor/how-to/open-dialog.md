@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Render Editor in Dialog in ##Platform_Name## ImageEditor | Syncfusion
+description: Learn here all about Render Image Editor in Dialog in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Dialog 
+control: Render Image Editor in Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: ##DomainURL##
 ---
 
 # Render Image Editor in Dialog
