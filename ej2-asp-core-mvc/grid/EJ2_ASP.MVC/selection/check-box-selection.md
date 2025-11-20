@@ -88,6 +88,23 @@ In the following sample, the selection of specific rows has been prevented based
 
 ![Prevent specific rows from being selected in checkbox selection](../images/selection/checkbox-prevent.gif)
 
+## Partial selection using isRowSelectable
+
+The `isRowSelectable` callback in Syncfusion's EJ2 Grid allows control over which rows users can select. It uses a simple callback that runs before the grid loads the data. This callback checks each row data and returns **true** if the row can be selected, or **false** for non-selectable rows.
+
+For local data, the callback checks all items just once when the grid first loads. For remote data, it only checks the rows shown on the current page when the grid first appears. It re-checks them every time an action occurs, such as changing pages, filtering, or sorting.
+
+In the example below, it prevents selection of rows with canceled orders.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="checkbox.cs" %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/checkbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## How to select single row in checkbox selection mode
 
 The ASP.NET MVC Grid allows you to select only one row at a time within the Grid. This feature is particularly useful when you want to ensure that only a single row is selected, and any previous selections are cleared when a new row is selected.
