@@ -2,11 +2,11 @@
     List<EmployeeData> data = new EmployeeData().EmployeeList();
     
     string value = @"<p>Hello <span contenteditable=""false"" class=""e-mention-chip""><a title=""maria@gmail.com"">@@Maria</a></span>&#8203;</p>
-<p>Welcome to the mention integration with rich text editor demo. Type <code>@@</code> character and tag user from the suggestion list. </p>";
+    <p> Type <code>@@</code> followed by at least <strong>3 characters</strong> to trigger the suggestion list.</p>";
 }
 
 <ejs-richtexteditor id="mention_integration" placeholder="Type @@ and tag the name" value="@value"></ejs-richtexteditor>
 
-<ejs-mention id="mention" target="#mention_integration_rte-edit-view" dataSource="@data" minLength="3" suggestionCount="8" >
+<ejs-mention id="mention" target="#mention_integration_rte-edit-view" dataSource="@data" minLength="3">
         <e-mention-fields text="Name" Value="EmailId"></e-mention-fields>                                                                                                                                                                                      
 </ejs-mention>
