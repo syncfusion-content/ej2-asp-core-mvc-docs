@@ -10,7 +10,7 @@
     <p>Your promotional code expires on: <span contenteditable=""false"" class=""e-mention-chip""><span>{{ExpirationDate}}</span></span>.</p>
     <p>Feel free to browse our latest offerings and updates. If you need any assistance, don't hesitate to contact us at <a href=""mailto:{{SupportEmail}}""><span contenteditable=""false"" class=""e-mention-chip""><span>{{SupportEmail}}</span></span></a> or call us at <span contenteditable=""false"" class=""e-mention-chip""><span>{{SupportPhoneNumber}}</span></span>.</p>
     <p>Best regards,<br>The <span contenteditable=""false"" class=""e-mention-chip""><span>{{CompanyName}}</span></span> Team</p>";
-    char mentionChar = '{';
+    char mentionChar = '{{';
     var tools = new object[]
     {
         "Bold",
