@@ -1,0 +1,16 @@
+Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Type("checkbox").Width("40").Add();
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("110").ValidationRules(new { required = true }).Add();
+    col.Field("CustomerName").HeaderText("Customer Name").Width("120").ValidationRules(new { required = true }).Add();
+    col.Field("Product").HeaderText("Product").Width("110").EditType("dropdownedit").Add();
+    col.Field("Amount").HeaderText("Amount").Width("110").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).ValidationRules(new { required = true }).Add();
+    col.Field("OrderDate").HeaderText("Order Date").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).EditType("datepickeredit").Format("yMd").Add();
+    col.Field("Status").HeaderText("Status").Width("110").EditType("dropdownedit").Add();
+}).AllowPaging().AllowSorting().AllowFiltering().Toolbar(new List<string>() { "Edit", "Update", "Cancel" }).FilterSettings(filter => filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).EditSettings(edit => {edit.AllowEditing(true).AllowAdding(false).AllowDeleting(false).Mode(Syncfusion.EJ2.Grids.EditMode.Normal);}).SelectionSettings(select => select.PersistSelection(true)).IsRowSelectable("isRowSelectable").Render()
+<script>
+    function isRowSelectable(data, columns) {
+        return data.Status !== 'Cancelled';
+    }
+</script>
+
