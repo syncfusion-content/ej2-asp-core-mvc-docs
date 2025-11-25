@@ -1,0 +1,38 @@
+@{
+    var ChildGrid = new Syncfusion.EJ2.Grids.Grid()
+    {
+        DataSource = (IEnumerable<object>)ViewBag.DataSource,
+        QueryString = "EmployeeID",
+        Columns = new List<Syncfusion.EJ2.Grids.GridColumn> {
+			new Syncfusion.EJ2.Grids.GridColumn(){ Field="OrderID", HeaderText="Order ID", Width="120" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="CustomerID", HeaderText="Customer ID", Width="150" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipCity", HeaderText="Ship City", Width="120" },
+            new Syncfusion.EJ2.Grids.GridColumn(){ Field="ShipName", HeaderText="Ship Name", Width="150" },
+        },
+    };
+}
+
+<div>
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).Columns(col =>
+    {
+        col.Field("EmployeeID").HeaderText("Employee ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+        col.Field("FirstName").HeaderText("Name").Width("150").Add();
+        col.Field("City").HeaderText("City").Width("150").Add();
+        col.Field("Country").HeaderText("Country").Width("150").Add();
+    }).ChildGrid(ChildGrid).DetailExpand("detailExpand").DetailCollapse("detailCollapse").Render()
+</div>
+
+<script>
+    // Prevent expanding detail row.
+    function detailExpand(args) {
+        if (args.data.FirstName === 'Nancy') {
+            args.cancel = true;
+        }
+    }
+    // Prevent collapsing detail row.
+    function detailCollapse(args){
+      if (args.data.FirstName === 'Andrew') {
+        args.cancel = true;
+      }
+    }
+</script>
