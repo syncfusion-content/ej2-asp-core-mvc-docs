@@ -2,7 +2,7 @@
 .EditSettings(edit => { edit.AllowDeleting(true) })
 .Columns(col =>
    {
-    col.Field("TaskID").HeaderText("Task ID").Width(90).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("TaskID").HeaderText("Task ID").Width(90).IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("TaskName").HeaderText("Task Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
     col.Field("Description").HeaderText("Description").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
     col.Field("Category").HeaderText("Category ").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width(180).Add();
@@ -15,7 +15,7 @@
 .EditSettings(edit => edit.AllowAdding(true).AllowEditing(true))
 .Columns(col =>
     {
-        col.Field("TaskID").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+        col.Field("TaskID").HeaderText("Task ID").IsPrimaryKey(true).Width(110).TextAlign(TextAlign.Right).Add();
         col.Field("TaskName").HeaderText("Task Name").TextAlign(TextAlign.Left).Width(180).Add();
         col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(90).Add();
         col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(80).Add();
