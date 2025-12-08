@@ -1,0 +1,29 @@
+<div id="ganttContainer" style="height:1500px;margin-left:0px;margin-right:0px;">
+	@Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("430px").TreeColumnIndex(1).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).AllowSelection(false).SplitterSettings(new Syncfusion.EJ2.Gantt.GanttSplitterSettings { Position = "65%" }).LabelSettings(new Syncfusion.EJ2.Gantt.GanttLabelSettings { TaskLabel = "Progress" }).TaskFields(new Syncfusion.EJ2.Gantt.GanttTaskFields { Id = "TaskID", Name = "TaskName", StartDate = "StartDate", EndDate = "EndDate", Duration = "Duration", Dependency = "Predecessor", Progress = "Progress", ParentID = "ParentID" }).Columns(col =>
+		{
+		col.Field("TaskID").HeaderText("Task ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("90").Freeze("Left").Add();
+		col.Field("TaskName").HeaderText("Task Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width("290").Freeze("Left").Add();
+		col.Field("StartDate").HeaderText("Start Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
+		col.Field("Duration").HeaderText("Duration").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("90").Add();
+		col.Field("EndDate").HeaderText("End Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Width("120").Add();
+		col.Field("Progress").HeaderText("Progress").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width("120").Freeze("Right").Add();
+		col.Field("Predecessor").HeaderText("Predecessor").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Width("120").Add();
+		}).Render()
+</div>
+<style>
+	.e-gantt .e-leftfreeze.e-freezeleftborder {
+		border-right-color: rgb(0, 255, 0) !important;
+	}
+
+	.e-gantt .e-rightfreeze.e-freezerightborder {
+		border-left-color: rgb(0, 0, 255) !important;
+	}
+
+	.e-gantt .e-leftfreeze.e-freezeleftborder {
+		border-right-color: rgb(0, 255, 0) !important;
+	}
+
+	.e-gantt .e-rightfreeze.e-freezerightborder {
+		border-left-color: rgb(0, 0, 255) !important;
+	}
+</style>

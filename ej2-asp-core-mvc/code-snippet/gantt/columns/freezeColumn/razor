@@ -1,0 +1,21 @@
+<div id="ganttContainer" style="height:1500px;margin:0;">
+	@Html.EJS().Gantt("GanttContainer").Height("430px").DataSource((IEnumerable<object>)ViewBag.DataSource).TreeColumnIndex(1).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).SplitterSettings(s => s.Position("65%")).LabelSettings(l => l.TaskLabel("Progress")).TaskFields(tf =>
+		{
+		tf.Id("TaskID")
+		.Name("TaskName")
+		.StartDate("StartDate")
+		.EndDate("EndDate")
+		.Duration("Duration")
+		.Progress("Progress")
+		.Dependency("Predecessor")
+		.ParentID("ParentID");
+		}).Columns(col =>
+		{
+		col.Field("TaskID").HeaderText("Task ID").IsFrozen(true).Add();
+		col.Field("TaskName").HeaderText("Task Name").Width("220").IsFrozen(true).Add();
+		col.Field("StartDate").HeaderText("Start Date").Add();
+		col.Field("Duration").HeaderText("Duration").Add();
+		col.Field("Progress").HeaderText("Progress").Add();
+		col.Field("Status").HeaderText("Status").IsFrozen(true).Add();
+		}).Render()
+</div>

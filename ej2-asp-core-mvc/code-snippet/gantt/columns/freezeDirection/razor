@@ -1,0 +1,13 @@
+<div id="ganttContainer" style="height:1500px;margin:0;">
+	@Html.EJS().Gantt("GanttContainer").DataSource((IEnumerable<object>)ViewBag.DataSource).Resources((IEnumerable<object>)ViewBag.Resources).Height("430px").TreeColumnIndex(1).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).AllowSelection(false).HighlightWeekends(true).SplitterSettings(s => s.Position("65%")).LabelSettings(l => l.TaskLabel("Progress")).TaskFields(tf => { tf.Id("TaskID").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").ParentID("ParentID").ResourceInfo("Resources"); }).ResourceFields(rf => { rf.Id("ResourceId").Name("ResourceName"); }).Columns(col =>
+	{
+		col.Field("TaskID").HeaderText("Task ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Freeze("Left").Add();
+		col.Field("TaskName").HeaderText("Task Name").Width("200").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+		col.Field("StartDate").HeaderText("Start Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		col.Field("Duration").HeaderText("Duration").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		col.Field("EndDate").HeaderText("End Date").Width("130").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+		col.Field("Progress").HeaderText("Progress").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Freeze("Fixed").Add();
+		col.Field("Predecessor").HeaderText("Dependency").Width("120").Add();
+		col.Field("Resources").HeaderText("Assignee").Width("150").Freeze("Right").Add();
+	}).Render()
+</div>
