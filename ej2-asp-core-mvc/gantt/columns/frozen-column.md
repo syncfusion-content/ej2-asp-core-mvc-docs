@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Columns in Syncfusion ##Platform_Name## Gantt Component
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
+title: Column pinning (Frozen) in ##Platform_Name## Gantt control | Syncfusion
+description: Learn here all about Column pinning (Frozen) in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Columns
+control: Column pinning (Frozen)
 publishingplatform: ##Platform_Name##
 documentation: ug
 --- 
@@ -74,7 +74,7 @@ The following example demonstrates how to freeze a particular column in the Gant
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt, the **freeze direction** feature allows you to position frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. 
 
-To achieve this, the c`olumn.freeze` property can be utilized. This property is used to specify the freeze direction for individual columns.
+To achieve this, the `column.freeze` property can be utilized. This property is used to specify the freeze direction for individual columns.
 
 The types of the `column.freeze` directions:
 
