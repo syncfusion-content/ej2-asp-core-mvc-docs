@@ -200,55 +200,6 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 {% endif %}
 
-### Checklist
-
-The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
-
-#### Inserting a checklist
-
-You can embed interactive task lists directly within the Rich Text Editor. Here’s how you can insert a Checklist:
-- **Using the Toolbar**: Click the Checklist button in the editor toolbar, usually represented by a checkbox icon.
-- **Using the Shortcut**: Press `Ctrl+Shift+9` (or `Cmd+Shift+9` on macOS) to insert a Checklist at your cursor’s position.
-- **Converting Existing Lists**: Select an existing bullet or numbered list and click the Checklist button to convert it into an interactive checklist.
-- **Toggling Checklist Items**: You can toggle the state of checklist items between checked and unchecked by clicking the checkbox. If you prefer using the keyboard, press `Ctrl+Enter` (or `Cmd+Enter` on macOS) to toggle the check marks based on your selection or cursor position in the editor.
-
-#### Configuring Checklist
-
-To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `e-richtexteditor-toolbarsettings.items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
-
-Below is an example of how to configure the Checklist in the Rich Text Editor:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/checklist-cs1/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/checklist-cs1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-## Nested list creation using Tab key
-
-In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
-
-Please refer to the below video for visual behavior and interaction examples:
-
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
-
 ## Increase and decrease indent
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
@@ -430,39 +381,6 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
 
-### Nested blockquotes
-
-The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
-
-While the toolbar does not provide a direct method to apply blockquote formatting recursively (i.e., within an already blockquote section), nested blockquotes can still be achieved in the following ways:
-
-1. **Pasting preformatted content:** If you paste content that already contains nested blockquote tags (e.g., from another editor or email), the Rich Text Editor will preserve and render the nested structure correctly.
-2. **Pre-loading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
-3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/nested-quotation-formatting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/nested-quotation-formatting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Horizontal line
 
 The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
@@ -624,6 +542,66 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/clear-format-cs2/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Markdown Auto Format
+
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [EnableMarkdownAutoFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableMarkdownAutoformat) property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+
+By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
+
+|Commands|Syntax Example| Description |
+|--------|------------------------------------------|------------|
+| Bold | `**`Bold Text`**` or `__`Bold Text`__` | Makes text bold by wrapping it with `**` or `__`. |
+| Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*`or `_`. |
+| Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
+| Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
+| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
+| Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
+| Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
+| Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
+| Heading 4 | `####` Heading 4 | Creates an H2 heading by starting the line with `####` |
+| Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
+| Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
+| Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
+| Code block (Multi Line) | \`\`\`<br>Multi line code text<br>Multi line code text<br>\`\`\` | Creates a code block by starting the line with \`\`\` |
+| Ordered List | `1.` First<br>`1.` Second | Creates a numbered list by starting lines with `1.` or `i.`. |
+| Unordered List | `*` First<br> `*` second | Creates a bulleted list by starting lines with `*` or `-`. |
+| Check List | `[]` Task<br>`[x]` Completed Task | Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
+| Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
+
+
+### How Markdown auto-formatting works
+
+#### Inline Formats
+Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are converted **immediately after the closing marker is typed**.  
+**Example:** Typing `**bold**` will render as **bold** the moment you enter the second `*`.
+
+#### Block Formats
+Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
+**Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
