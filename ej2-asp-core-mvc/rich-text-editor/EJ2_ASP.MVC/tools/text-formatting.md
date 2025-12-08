@@ -669,10 +669,10 @@ Elements such as headings, lists, blockquotes, and code block are converted **on
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/tagHelper %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -680,10 +680,10 @@ Elements such as headings, lists, blockquotes, and code block are converted **on
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/razor %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/markdown-autoformat-cs1/controller.cs %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
