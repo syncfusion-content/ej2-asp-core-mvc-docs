@@ -80,6 +80,6 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 ## Limitations for virtual scroll
 
 * Due to the element height limitation in browsers, the maximum number of records loaded is limited by the browser capacity.
-* Cell selection will not be persisted.
+* Cell-based selection is not supported when virtualization is enabled.
 * The number of records rendered will be determined by the `Height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
