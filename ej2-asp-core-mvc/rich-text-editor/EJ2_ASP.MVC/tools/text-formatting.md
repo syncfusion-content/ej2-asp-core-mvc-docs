@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
+title: Text Formatting in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Text Formatting and Structure in the ##Platform_Name## Rich Text Editor Control
+# Text Formatting in the ##Platform_Name## Rich Text Editor Control
 
 ## Basic text styling
 
