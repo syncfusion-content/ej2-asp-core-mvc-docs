@@ -247,7 +247,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../../images/list-editing.gif)
 
 ## Increase and decrease indent
 
