@@ -200,6 +200,55 @@ The following example demonstrates how to customize the bullet format lists in t
 {% endtabs %}
 {% endif %}
 
+### Checklist
+
+The `Checklist` feature lets you create interactive task lists with clickable checkboxes. You can configure checkbox behavior, customize the visual appearance, manage item states, and enable keyboard interactions. This makes it perfect for project management, note-taking, and task tracking within your content. You can easily toggle between checked and unchecked states, giving you an intuitive way to manage the completion status of your list items—making it a simple and effective TODO list solution.
+
+#### Inserting a checklist
+
+You can embed interactive task lists directly within the Rich Text Editor. Here’s how you can insert a Checklist:
+- **Using the Toolbar**: Click the Checklist button in the editor toolbar, usually represented by a checkbox icon.
+- **Using the Shortcut**: Press `Ctrl+Shift+9` (or `Cmd+Shift+9` on macOS) to insert a Checklist at your cursor’s position.
+- **Converting Existing Lists**: Select an existing bullet or numbered list and click the Checklist button to convert it into an interactive checklist.
+- **Toggling Checklist Items**: You can toggle the state of checklist items between checked and unchecked by clicking the checkbox. If you prefer using the keyboard, press `Ctrl+Enter` (or `Cmd+Enter` on macOS) to toggle the check marks based on your selection or cursor position in the editor.
+
+#### Configuring Checklist
+
+To enable the Checklist feature in your editor, add the `Checklist` toolbar item to the `ToolbarSettings.Items` property. This feature supports customizable behavior and can be easily integrated into your Rich Text Editor toolbar for quick access.
+
+Below is an example of how to configure the Checklist in the Rich Text Editor:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/checklist-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Nested list creation using Tab key
+
+In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a list item automatically creates a nested list. This behavior allows users to structure their content hierarchically by indenting list items. Each press of the `Tab` key increases the nesting level, converting the current item into a sub-item of the previous one.
+
+Please refer to the below video for visual behavior and interaction examples:
+
+![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+
 ## Increase and decrease indent
 
 The Rich Text Editor allows you to set indentation for text blocks such as paragraphs, headings, or lists. This feature helps you visually organize and structure your content, making it easier to read and understand.
@@ -380,6 +429,39 @@ Use the `Blockquote` tool in the editor below to see the feature in action.
 {% endif %}
 
 > In a markdown editor, blockquotes are represented using the `>` symbol.
+
+### Nested blockquotes
+
+The Rich Text Editor also supports nested blockquotes, allowing one blockquote to be placed inside another. 
+
+While the toolbar does not provide a direct method to apply blockquote formatting recursively (i.e., within an already blockquote section), nested blockquotes can still be achieved in the following ways:
+
+1. **Pasting preformatted content:** If you paste content that already contains nested blockquote tags (e.g., from another editor or email), the Rich Text Editor will preserve and render the nested structure correctly.
+2. **Pre-loading nested blockquote HTML:** You can initialize the editor with nested blockquote content using the value property.
+3. **Manual editing via Source Code view:** You can manually insert nested blockquote tags using the SourceCode toolbar option.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/nested-quotation-formatting/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Horizontal line
 
