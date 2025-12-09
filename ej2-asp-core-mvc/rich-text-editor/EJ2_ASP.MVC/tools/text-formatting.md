@@ -496,6 +496,35 @@ You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [
  
 The Rich Text Editor comes with a pre-configured set of [`lineHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#lineheight) property.
 
+### Custom line height
+ 
+The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [`lineHeight`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#lineheight) property. This allows you to extend the available line height options beyond the default selection.
+ 
+The [`supportAllValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+ 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Horizontal line
 
 The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
