@@ -1,0 +1,16 @@
+@page
+@using EJ2CoreSampleBrowser.Models
+@using Syncfusion.EJ2
+
+@section ControlsSection{
+    <div class="col-lg-12 control-section">
+        <div class="content-wrapper">
+            <div class="mask-row">
+                <ejs-maskedtextbox id="maskTemplate" mask="0000-000-000" promptChar="#" placeholder="Enter phone number" floatLabelType="Auto"
+                    prependTemplate="@Html.Raw("<span id='user' class='e-icons e-user' title='User'></span><span class='e-input-separator'></span>")"
+                    appendTemplate="@Html.Raw("<span class='e-input-separator'></span><span id='sendIcon' class='e-icons e-send'></span>")">
+                </ejs-maskedtextbox>
+            </div>
+        </div>
+    </div>
+}

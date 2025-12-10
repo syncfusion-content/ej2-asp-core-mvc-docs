@@ -1,0 +1,48 @@
+@using Syncfusion.EJ2.Inputs
+@using Syncfusion.EJ2.DropDowns
+@using EJ2MVCSampleBrowser.Models
+@using Syncfusion.EJ2
+@section ControlsSection {
+    <div class="col-lg-12 control-section">
+        <div class="content-wrapper ador-textbox">
+            <div class="row">
+                @Html.EJS().TextBox("prepend").Placeholder("Enter your Name").CssClass("e-prepend-textbox").FloatLabelType(FloatLabelType.Auto).PrependTemplate("<span class=\'e-icons e-user\'></span><span class=\'e-input-separator\'></span>").Render()
+            </div>
+            <div class="row">
+                @Html.EJS().TextBox("append").Placeholder("Password").CssClass("e-eye-icon").FloatLabelType(FloatLabelType.Auto).AppendTemplate("<span class='e-input-separator'></span><span id='text-icon' class='e-icons e-eye'></span>").Created("onAppendCreated").Render()
+            </div>
+            <div class="row">
+                @Html.EJS().TextBox("iconTextbox").Placeholder("Enter the Mail Address").CssClass("e-icon-textbox").FloatLabelType(FloatLabelType.Auto).Created("onIconTemplateCreated").PrependTemplate("<span class='e-icons e-people'></span><span class='e-input-separator'></span>").AppendTemplate("<span>.com</span><span class='e-input-separator'></span><span id='delete-text' class='e-icons e-trash'></span>").Render()
+            </div>
+        </div>
+    </div>
+}
+
+<script type="text/javascript">
+    function onAppendCreated() {
+        var textIcon = document.querySelector('#text-icon');
+        if (textIcon) {
+            textIcon.addEventListener('click', function() {
+                var appendTextbox = document.getElementById("append").ej2_instances[0];
+                if (appendTextbox.type === 'text') {
+                    appendTextbox.type = 'Password';
+                    textIcon.className = 'e-icons e-eye-slash';
+                } else {
+                    appendTextbox.type = 'text';
+                    textIcon.className = 'e-icons e-eye';
+                }
+                appendTextbox.dataBind();
+            });
+        }
+    }
+    function onIconTemplateCreated() {
+        var deleteIcon = document.querySelector('#delete-text');
+        if (deleteIcon) {
+            deleteIcon.addEventListener('click', function() {
+                var iconTextbox = document.getElementById("iconTextbox").ej2_instances[0];
+                iconTextbox.value = '';
+                iconTextbox.dataBind();
+            });
+        }
+    }
+</script>
