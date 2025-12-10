@@ -25,14 +25,14 @@ Adornments are useful for:
 
 ## Add adornments to textarea
 
-Adornments are added using the [prependTemplate](../api/textarea/#prependtemplate) and [appendTemplate](../api/textarea/#appendtemplate) properties. These properties accept HTML content that renders before and after the textarea respectively, enabling flexible customization without modifying the core textarea structure.
+Adornments are added using the [prependTemplate](../api/textarea) and [appendTemplate](../api/textarea) properties. These properties accept HTML content that renders before and after the textarea respectively, enabling flexible customization without modifying the core textarea structure.
 
 **Prepend Adornments (Prefix)**: Displayed at the beginning of the textarea. 
 **Append Adornments (Suffix)**: Displayed at the end of the textarea.
 
 ## Configure flow and orientation
 
-The [adornmentFlow](../api/textarea/#adornmentflow) and [adornmentOrientation](../api/textarea/#adornmentorientation) properties control how adornments are arranged around the textarea:
+The [adornmentFlow](../api/textarea) and [adornmentOrientation](../api/textarea) properties control how adornments are arranged around the textarea:
 
 **Adornment Flow** Property to position adornments around the textarea:
 - `Horizontal`:  prepend on the left, append on the right

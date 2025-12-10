@@ -26,7 +26,7 @@ Adornments are useful for:
 
 ## Add adornments to numeric textbox
 
-Adornments are added using the [prependTemplate](../api/numerictextbox/#prependtemplate) and [appendTemplate](../api/numerictextbox/#appendtemplate) properties. These properties accept HTML content that renders before and after the numeric input field respectively, enabling flexible customization without modifying the core numeric textbox structure.
+Adornments are added using the [prependTemplate](../api/numerictextbox) and [appendTemplate](../api/numerictextbox) properties. These properties accept HTML content that renders before and after the numeric input field respectively, enabling flexible customization without modifying the core numeric textbox structure.
 
 **Prepend Adornments (Prefix)**: Displayed at the beginning of the numeric textbox (left side for LTR layouts)  
 **Append Adornments (Suffix)**: Displayed at the end of the numeric textbox (right side for LTR layouts)
@@ -37,7 +37,7 @@ Adornments are added using the [prependTemplate](../api/numerictextbox/#prependt
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/nnumeric-textbox/adornments/tagHelper %}
+{% include code-snippet/numeric-textbox/adornments/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
