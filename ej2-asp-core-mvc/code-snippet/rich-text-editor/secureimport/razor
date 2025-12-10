@@ -1,0 +1,11 @@
+  @Html.EJS().RichTextEditor("importEditor").ToolbarSettings(e =>
+                     e.Items((object)ViewBag.Tools)).ImportWord(ViewBag.ImportWord).wordImporting("onWordImport").Value((string)ViewBag.RTEValue).EnableXhtml(true).InsertImageSettings(ViewBag.InsertImageSettings).Render()
+<script>
+    function onWordImport(args) {
+        var accessToken = "Authorization_token";
+        // adding authorization header
+        args.currentRequest.setRequestHeader('Authorization', accessToken)
+        // adding custom form Data
+        args.customFormData = [{'userId': '1234'}];
+    }
+</script>
