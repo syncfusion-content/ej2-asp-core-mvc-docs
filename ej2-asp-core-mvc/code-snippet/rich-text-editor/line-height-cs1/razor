@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("custom-line-height").ToolbarSettings(e => e.Items((object)ViewBag.items)).LineHeight(t => t.Default("2").SupportAllValues(true).Items(ViewBag.LineHeightItems)).Value(ViewBag.value).Render()
