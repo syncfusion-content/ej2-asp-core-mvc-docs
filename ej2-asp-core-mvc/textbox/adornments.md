@@ -24,10 +24,10 @@ Adornments are useful for:
 
 ## Add adornments to textbox
 
-Adornments are added using the [prependTemplate](../api/textbox) and [appendTemplate](../api/textbox) properties. These properties accept HTML content that renders before and after the input field respectively, enabling flexible customization without modifying the core textbox structure.
+Adornments are added using the prependTemplate and appendTemplate properties. These properties accept HTML content that renders before and after the input field respectively, enabling flexible customization without modifying the core textbox structure.
 
-**Prepend Adornments**: Displayed at the beginning of the textbox. 
-**Append Adornments**: Displayed at the end of the textbox.
+**PrependTemplate**: Renders before the textbox. 
+**AppendTemplate**: Renders after the textbox.
 
 ### Basic implementation
 

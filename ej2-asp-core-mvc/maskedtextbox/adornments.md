@@ -24,10 +24,10 @@ Adornments are useful for:
 
 ## Add adornments to masked textbox
 
-Use [prependTemplate](../api/maskedtextbox) and [appendTemplate](../api/maskedtextbox) to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
+Use prependTemplate and appendTemplate to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
 
-- **Prepend (Prefix)**: Renders before the masked input.
-- **Append (Suffix)**: Renders after the masked input.
+- **PrependTemplate**: Renders before the masked input.
+- **AppendTemplate**: Renders after the masked input.
 
 ## Basic implementation
 
