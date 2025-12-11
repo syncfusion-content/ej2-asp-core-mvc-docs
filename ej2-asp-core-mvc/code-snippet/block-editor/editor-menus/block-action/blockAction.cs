@@ -1,31 +1,39 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
 public List<object> BlockItems { get; set; }
 public BlockActionMenuSettings BlockActionMenuSettings { get; set; }
 
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
+
 public ActionResult BlockAction()
 {
-        BlocksData.Add(new Block() {
-                Id = "title-block",
-                Type = BlockType.Heading,
-                Props = new { level = 1},
-                Content = new List<object>()
+        BlocksData.Add(new BlockModel() {
+                id = "title-block",
+                blockType = "Heading",
+                properties = new { level = 1},
+                content = new List<object>()
                 {
                         new {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Block Action Menu Demo"
                         }
                 }
         });
-        BlocksData.Add(new Block()
+        BlocksData.Add(new BlockModel()
         {
-                Id = "intro-block",
-                Type = BlockType.Quote,
-                Content = new List<object>()
+                id = "intro-block",
+                blockType = "Quote",
+                content = new List<object>()
                 {
                         new {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Hover over any block and click the drag handle icon to see custom actions."
                         }
                 }

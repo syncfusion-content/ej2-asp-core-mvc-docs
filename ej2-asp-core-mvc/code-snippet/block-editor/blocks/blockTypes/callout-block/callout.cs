@@ -1,22 +1,31 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+    public List<BlockModel> children { get; set; }
+}
 
 public ActionResult Callout()
 {
-        BlocksData.Add(new Block() {
-                Type = BlockType.Callout,
-                Props= new {
-                Children = new List<Block>()
+        BlocksData.Add(new BlockModel() {
+                blockType = "Callout",
+                properties = new {
+                children = new List<BlockModel>()
                 {
-                        new Block()
+                        new BlockModel()
                         {
-                                Id = "callout-content-1",
-                                Type = "Paragraph",
-                                Content = new List<object>(){
+                                id = "callout-content-1",
+                                blockType = "Paragraph",
+                                content = new List<object>(){
                                         new{
                                                 id = "callout-content-1",
-                                                type = "Text",
+                                                contentType = "Text",
                                                 content = "Important information: This is a callout block used to highlight important content."
                                         }
                                 }

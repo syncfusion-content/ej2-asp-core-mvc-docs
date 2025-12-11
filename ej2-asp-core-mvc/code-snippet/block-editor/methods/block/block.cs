@@ -1,45 +1,53 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Block()
 {
-        BlocksData.Add( new Block
+        BlocksData.Add( new BlockModel
         {
-                Id = "block-1",
-                Type = BlockType.Heading,
-                Props = new { level = 1},
-                Content = new List<object>()
+                id = "block-1",
+                blockType = "Heading",
+                properties = new { level = 1},
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Sample Heading"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "block-2",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "block-2",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is a sample paragraph block."
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "block-3",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "block-3",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is another paragraph block."
                         }
                 }

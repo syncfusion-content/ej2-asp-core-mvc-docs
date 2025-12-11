@@ -1,26 +1,34 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Image()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Image,
-                Props = new
+                blockType = "Image",
+                properties = new
                 {
                         src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
                         altText = "Sample image"
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "You can customize images further by configuring properties like allowedTypes for file upload restrictions, saveFormat for storage preferences, and cssClass for custom styling."
                         }
                 }

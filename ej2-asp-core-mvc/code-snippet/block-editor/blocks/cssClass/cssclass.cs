@@ -1,26 +1,34 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult CssClass()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Heading,
-                Props = new { level = 1 },
-                Content = new List<object>()
+                blockType = "Heading",
+                properties = new { level = 1 },
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Custom CSS Classes in Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
@@ -28,66 +36,66 @@ public ActionResult CssClass()
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is an info block"
                         }
                 },
                 CssClass = "info-block"
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is a warning block"
                         }
                 },
                 CssClass = "warning-block"
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is a success block"
                         }
                 },
                 CssClass = "success-block"
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is an error block"
                         }
                 },
                 CssClass = "error-block"
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is a custom font block"
                         }
                 },

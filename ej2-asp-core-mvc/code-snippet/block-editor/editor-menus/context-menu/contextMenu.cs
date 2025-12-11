@@ -1,8 +1,16 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; }
+public List<BlockModel> BlocksData { get; set; }
 public List<object> ContextMenuItems { get; set; }
 public ContextMenuSettings ContextMenuSettings { get; set; }
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult ContextMenu()
 {
@@ -61,27 +69,27 @@ public ActionResult ContextMenu()
                         items = Items2
                 }
         };
-        BlocksData = new List<Block>
+        BlocksData = new List<BlockModel>
         {
-                new Block
+                new BlockModel
                 {
-                        Id = "title-block",
-                        Type = BlockType.Heading,
-                        Props = new { level = 1},
-                        Content = new List<object>
+                        id = "title-block",
+                        blockType = "Heading",
+                        properties = new { level = 1},
+                        content = new List<object>
                         {
-                                new { type = "Text", content = "Context Menu Demo" }
+                                new { contentType = "Text", content = "Context Menu Demo" }
                         }
                 },
-                new Block
+                new BlockModel
                 {
-                        Id = "intro-block",
-                        Type = BlockType.Quote,
-                        Content = new List<object>
+                        id = "intro-block",
+                        blockType = "Quote",
+                        content = new List<object>
                         {
                                 new
                                 {
-                                        type = "Text",
+                                        contentType = "Text",
                                         content = "Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks."
                                 }
                         }

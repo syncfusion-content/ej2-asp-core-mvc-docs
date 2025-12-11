@@ -1,13 +1,21 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult IsChecked()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
@@ -15,57 +23,57 @@ public ActionResult IsChecked()
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Checklist,
-                Content = new List<object>()
+                blockType = "Checklist",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Completed task (checked)"
                         }
                 },
-                Props = new { isChecked = true }
+                properties = new { isChecked = true }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Checklist,
-                Content = new List<object>()
+                blockType = "Checklist",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Pending task (unchecked)"
                         }
                 },
-                Props = new { isChecked = false }
+                properties = new { isChecked = false }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Checklist,
-                Content = new List<object>()
+                blockType = "Checklist",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "High priority task"
                         }
                 },
-                Props = new { isChecked = true }
+                properties = new { isChecked = true }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.CheckList,
-                Content = new List<object>()
+                blockType = "CheckList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Low priority task"
                         }
                 },
-                Props = new { isChecked = false }
+                properties = new { isChecked = false }
         });
         ViewBag.BlocksData = BlocksData;
         return View();

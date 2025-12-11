@@ -1,98 +1,106 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Data()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "title-block",
-                Type = BlockType.Heading,
-                Props = new { level = 1},
-                Content = new List<object>()
+                id = "title-block",
+                blockType = "Heading",
+                properties = new { level = 1},
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Document Export Demo"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "intro-paragraph",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "intro-paragraph",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This document demonstrates the data export capabilities of the Block Editor. You can export content as JSON or HTML formats."
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "features-heading",
-                Type = BlockType.Heading,
-                Props = new { level = 2},
-                Content = new List<object>()
+                id = "features-heading",
+                blockType = "Heading",
+                properties = new { level = 2},
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Export Features"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "features-list",
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                id = "features-list",
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "JSON export for data processing"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "features-list-2",
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                id = "features-list-2",
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "HTML export for web display"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "features-list-3",
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                id = "features-list-3",
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Print functionality for hard copies"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "code-example",
-                Type = BlockType.Code,
-                Content = new List<object>()
+                id = "code-example",
+                blockType = "Code",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "var data = editor.getDataAsJson();\nconsole.log(data);"
                         }
                 }

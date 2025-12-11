@@ -1,34 +1,42 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Toggle()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = "CollapsibleHeading",
-                Content = new List<object>()
+                blockType = "CollapsibleHeading",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Collapsible Section"
                         }
                 },
-                Props= new
+                properties = new
                 {
                         level=1,
-                        IsExpanded = true,
-                        Children = new List<Block>()
+                        isExpanded = true,
+                        children = new List<BlockModel>()
                 {
-                        new Block()
+                        new BlockModel()
                         {
-                                Type = "Paragraph",
-                                Content = new List<object>()
+                                blockType = "Paragraph",
+                                content = new List<object>()
                                 {
                                         new
                                         {
-                                                type = "Text",
+                                                contentType = "Text",
                                                 content = "This content is inside a toggle section and can be collapsed."
                                         }
                                 }
@@ -36,30 +44,30 @@ public ActionResult Toggle()
                 }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = "CollapsibleParagraph",
-                Content = new List<object>()
+                blockType = "CollapsibleParagraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Toggle paragraph section"
                         }
                 },
-                Props = new
+                properties = new
                 {
-                        IsExpanded = false,
-                        Children = new List<Block>()
+                        isExpanded = false,
+                        children = new List<BlockModel>()
                 {
-                        new Block()
+                        new BlockModel()
                         {
-                                Type = "Paragraph",
-                                Content = new List<object>()
+                                blockType = "Paragraph",
+                                content = new List<object>()
                                 {
                                         new
                                         {
-                                                type = "Text",
+                                                contentType = "Text",
                                                 content = "This content is initially hidden because isExpanded is set to false."
                                         }
                                 }

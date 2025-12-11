@@ -24,10 +24,10 @@
     function addBlockBtn() {
         const newBlock = {
             id: 'new-block',
-            type: 'Paragraph',
+            blockType: 'Paragraph',
             content: [
                 {
-                    type: "Text",
+                    contentType: "Text",
                     content: 'This is a newly added block'
                 }
             ]
@@ -47,7 +47,7 @@
     function getBlockBtn() {
         const block = blockEditorObj.getBlock('block-1');
         if (block && block.content) {
-            displayOutput(`Block found:\nID: ${block.id}\nType: ${block.type}\nContent: ${block.content[0].content}`);
+            displayOutput(`Block found:\nID: ${block.id}\nType: ${block.ype}\nContent: ${block.content[0].content}`);
         } else {
             displayOutput('Block with ID "block-1" not found');
         }

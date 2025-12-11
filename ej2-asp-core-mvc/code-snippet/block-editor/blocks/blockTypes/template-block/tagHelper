@@ -1,14 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blocks>
-            @foreach (var block in ViewBag.BlocksData)
-            {
-                <e-block id="@block.Id" type="@block.Type.ToString()" template="@block.Template"></e-block>
-            }
-        </e-blocks>
-    </ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" blocks="@ViewBag.BlocksData"></ejs-blockeditor>
 </div>
 
 <style>

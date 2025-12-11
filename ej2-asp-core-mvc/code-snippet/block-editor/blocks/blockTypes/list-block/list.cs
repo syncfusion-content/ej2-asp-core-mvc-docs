@@ -1,58 +1,66 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult List()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Features of the Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.NumberedList,
-                Content = new List<object>()
+                blockType = "NumberedList",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Step 1: Initialize the Block Editor"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Checklist,
-                Content = new List<object>()
+                blockType = "Checklist",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Review documentation"
                         }
                 },
-                Props = new { isChecked = true }
+                properties = new { isChecked = true }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Checklist,
-                Content = new List<object>()
+                blockType = "Checklist",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Implement drag and drop functionality"
                         }
                 },
-                Props = new { isChecked = false }
+                properties = new { isChecked = false }
         });
         ViewBag.BlocksData = BlocksData;
         return View();

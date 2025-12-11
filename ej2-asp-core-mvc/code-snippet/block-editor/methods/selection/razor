@@ -40,7 +40,7 @@
         var selectedBlocks = blockEditorObj.getSelectedBlocks();
         if (selectedBlocks && selectedBlocks.length > 0) {
             var blockInfo = selectedBlocks.map(block =>
-                `ID: ${block.id}, Type: ${block.type}`
+                `ID: ${block.id}, Type: ${block.btype}`
             ).join('\n');
             displayOutput(`Selected blocks (${selectedBlocks.length}):\n${blockInfo}`);
         } else {

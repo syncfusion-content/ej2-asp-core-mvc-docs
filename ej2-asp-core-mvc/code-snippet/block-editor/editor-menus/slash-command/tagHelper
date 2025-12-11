@@ -8,7 +8,7 @@
                 <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content" ></e-block>
             }
         </e-blocks>
-        <e-blockeditor-commandmenusettings enableTooltip="false" popupWidth="350px" popupHeight="400px" commands="@ViewBag.CommandMenuItems" open="function(e){ open(e); }" close="function(e){ close(e); }" itemClicked="function(e){ itemClicked(e); }" queryFiltering="function(e){ queryFiltering(e); }"></e-blockeditor-commandmenusettings>
+        <e-blockeditor-commandmenusettings enableTooltip="false" popupWidth="350px" popupHeight="400px" commands="@ViewBag.CommandMenuItems" itemSelect="function(e){ itemSelect(e); }" filtering="function(e){ filtering(e); }"></e-blockeditor-commandmenusettings>
     </ejs-blockeditor>
     <div id="controls">
         <h3>Slash Command Menu Configuration Demo</h3>
@@ -74,19 +74,11 @@
 </style>
 
 <script>
-    function open(args) {
+    function filtering(args) {
         // Your actions here
     }
 
-    function close(args) {
-        // Your actions here
-    }
-
-    function queryFiltering(args) {
-        // Your actions here
-    }
-
-    function itemClicked(args) {
+    function itemSelect(args) {
         // Handle custom block actions
     }
 </script>

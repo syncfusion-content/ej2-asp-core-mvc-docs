@@ -1,113 +1,121 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
 public LabelSettingsModel labelSettings { get; set; }
 private List<LabelItemModel> labelItems { get; set; }
 
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
+
 public ActionResult Label()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Heading,
-                Props = new { level = 1},
-                Content = new List<object>()
+                blockType = "Heading",
+                properties = new { level = 1},
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Project Planning with Custom Labels"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Type # to add status labels to your tasks."
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Fix homepage layout issue - "
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "bug" }
                         },
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = " "
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "high" }
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Update user documentation - "
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "task" }
                         },
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = ""
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "medium" }
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Implement payment gateway - "
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "feature" }
                         },
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = ""
                         },
                         new
                         {
-                                type = "Label",
+                                contentType = "Label",
                                 props = new { labelId = "critical" }
                         }
                 }

@@ -1,8 +1,16 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; }
+public List<BlockModel> BlocksData { get; set; }
 public List<object> CommandMenuItems { get; set; }
 public CommandMenuSettings CommandMenuSettings { get; set; }
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult SlashCommand()
 {
@@ -24,15 +32,15 @@ public ActionResult SlashCommand()
                         iconCss = "e-icons e-schedule",
                 }
         };
-        BlocksData = new List<Block>
+        BlocksData = new List<BlockModel>
         {
-                new Block
+                new BlockModel
                 {
-                        Id = "Paragraph",
-                        Type = BlockType.Paragraph,
-                        Content = new List<object>
+                        id = "Paragraph",
+                        blockType = "Paragraph",
+                        content = new List<object>
                         {
-                                new { type = "Text", content = "Type \"/\" anywhere in this editor to open the custom slash command menu." }
+                                new { contentType = "Text", content = "Type \"/\" anywhere in this editor to open the custom slash command menu." }
                         }
                 }
         };
@@ -41,10 +49,8 @@ public ActionResult SlashCommand()
                 EnableTooltip = false,
                 PopupWidth = "350px",
                 PopupHeight = "400px",
-                Open = "open",
-                Close = "close",
-                ItemClicked = "itemClicked",
-                QueryFiltering = "queryFiltering",
+                ItemSelect = "itemSelect",
+                Filtering = "filtering",
                 Commands = CommandMenuItems
         };
         ViewData["CommandMenuItems"] = CommandMenuItems;

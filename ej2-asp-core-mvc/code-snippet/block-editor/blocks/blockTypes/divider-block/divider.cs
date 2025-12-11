@@ -1,33 +1,41 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Divider()
 {
-        BlocksData.Add(new Block()
+        BlocksData.Add(new BlockModel()
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This section discusses the features of the Block Editor."
                         }
                 }
         });
-        BlocksData.Add(new Block()
+        BlocksData.Add(new BlockModel()
         {
-                Type = BlockType.Divider,
+                blockType = "Divider",
         });
-        BlocksData.Add(new Block()
+        BlocksData.Add(new BlockModel()
         {
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new 
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This section covers implementation details and usage examples."
                         }
                 }

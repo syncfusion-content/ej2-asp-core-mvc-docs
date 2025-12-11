@@ -1,23 +1,31 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Placeholder()
 {
-        BlocksData.Add(new Block() {
-                Type = BlockType.Paragraph,
-                Content = new List<object>(){
+        BlocksData.Add(new BlockModel() {
+                blockType = "Paragraph",
+                content = new List<object>(){
                         new{
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This is a sample paragraph block."
                         }
                 }
         });
-        BlocksData.Add(new Block() {
-                Type = BlockType.Paragraph,
-                Content = new List<object>(){
+        BlocksData.Add(new BlockModel() {
+                blockType = "Paragraph",
+                content = new List<object>(){
                         new{
-                                type = "Text",
+                                contentType = "Text",
                                 props= new { placeholder = "Start typing your notes or press \"/\" for commands..." }
                         }
                 }

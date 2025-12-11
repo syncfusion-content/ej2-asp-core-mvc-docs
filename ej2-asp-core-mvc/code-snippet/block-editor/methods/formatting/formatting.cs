@@ -1,45 +1,53 @@
 using Syncfusion.EJ2.BlockEditor;
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
+
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Formatting()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "sample-heading",
-                Type = BlockType.Heading,
-                Props = new { level = 1},
-                Content = new List<object>()
+                id = "sample-heading",
+                blockType = "Heading",
+                properties = new { level = 1},
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Formatting Demo"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "sample-paragraph-1",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "sample-paragraph-1",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Select this text and apply different formatting options using the buttons below. You can make text bold or change colors for the text."
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "sample-list",
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                id = "sample-list",
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "List item for formatting demonstration"
                         }
                 }

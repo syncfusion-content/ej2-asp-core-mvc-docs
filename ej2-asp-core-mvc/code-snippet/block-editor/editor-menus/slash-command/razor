@@ -18,20 +18,12 @@
 </div>
 
 <script>
-    
-    function open(args) {
+
+    function filtering(args) {
         // Your actions here
     }
 
-    function close(args) {
-        // Your actions here
-    }
-
-    function queryFiltering(args) {
-        // Your actions here
-    }
-
-    function itemClicked(args) {
+    function itemSelect(args) {
         // Handle custom block actions
     }
 </script>

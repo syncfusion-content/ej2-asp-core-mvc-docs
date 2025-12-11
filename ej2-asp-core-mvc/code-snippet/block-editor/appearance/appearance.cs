@@ -1,73 +1,79 @@
-using Syncfusion.EJ2.BlockEditor;
+public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
 
-public List<Block> BlocksData { get; set; } = new List<Block>();
+public class BlockModel
+{
+    public string id { get; set; }
+    public string blockType { get; set; }
+    public object properties { get; set; }
+    public List<object> content { get; set; }
+}
 
 public ActionResult Appearance()
 {
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "title-block",
-                Type = BlockType.Heading,
-                Props = new { level = 1 },
-                Content = new List<object>()
+                id = "title-block",
+                blockType = "Heading",
+                properties = new { level = 1 },
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Appearance Configuration Demo"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "intro-block",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "intro-block",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
                                 id = "paragraph1-content",
-                                type = "Text",
+                                contentType = "Text",
                                 content = "This demo showcases different appearance configurations including readonly mode and a custom CSS theme."
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "features-heading",
-                Type = BlockType.Heading,
-                Props = new { level = 2 },
-                Content = new List<object>()
+                id = "features-heading",
+                blockType = "Heading",
+                properties = new { level = 2 },
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Configured Custom Theme"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "theme-list-1",
-                Type = BlockType.BulletList,
-                Content = new List<object>()
+                id = "theme-list-1",
+                blockType = "BulletList",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Gradient background with modern styling"
                         }
                 }
         });
-        BlocksData.Add(new Block
+        BlocksData.Add(new BlockModel
         {
-                Id = "readonly-info",
-                Type = BlockType.Paragraph,
-                Content = new List<object>()
+                id = "readonly-info",
+                blockType = "Paragraph",
+                content = new List<object>()
                 {
                         new
                         {
-                                type = "Text",
+                                contentType = "Text",
                                 content = "Use the readonly toggle to switch between editable and read-only modes. In readonly mode, you can view content but cannot make changes."
                         }
                 }
