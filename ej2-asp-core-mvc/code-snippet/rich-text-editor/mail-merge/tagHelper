@@ -1,3 +1,4 @@
+{% raw %}
 @{
     string rteValue = @"<p>Dear <span contenteditable=""false"" class=""e-mention-chip""><span>{{FirstName}}</span></span> <span contenteditable=""false"" class=""e-mention-chip""><span>{{LastName}}</span></span>,</p>
     <p>We are thrilled to have you with us! Your unique promotional code for this month is: <span contenteditable=""false"" class=""e-mention-chip""><span>{{PromoCode}}</span></span>.</p>
@@ -169,3 +170,4 @@
         });
     }
 </script>
+{% endraw %}

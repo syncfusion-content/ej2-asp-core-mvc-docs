@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
+title: Text Formatting in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Text Formatting and Structure in the ##Platform_Name## Rich Text Editor Control
+# Text Formatting in the ASP.NET Core Rich Text Editor Control
 
 ## Basic text styling
 
@@ -247,7 +247,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../../images/list-editing.gif)
 
 ## Increase and decrease indent
 
@@ -463,6 +463,68 @@ While the toolbar does not provide a direct method to apply blockquote formattin
 {% endtabs %}
 {% endif %}
 
+## Line Height
+ 
+The Rich Text Editor supports line height feature which allows users to adjust the vertical spacing between lines of text. To change the line height, select the text you want to modify and click the Line Height icon in the toolbar. Choose from the available spacing options to apply the desired vertical spacing. This feature is especially useful for creating visually appealing paragraphs and ensuring consistent formatting across your document.
+ 
+### Built-in line height
+ 
+You can add the `LineHeight` tool to the toolbar in the Rich Text Editor using [toolbarSettings.items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#items) property.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+ 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+ 
+The Rich Text Editor comes with a pre-configured set of [`lineHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#lineheight) property.
+ 
+### Custom line height
+ 
+The Rich Text Editor supports custom line height along with the existing line height dropdown list. To add additional line height to the line height dropdown, you can configure the items field of the [`lineHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#lineheight) property. This allows you to extend the available line height options beyond the default selection.
+ 
+The [`supportAllValues`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#supportAllValues) setting enables the line height dropdown to display and retain line-height values that are not part of the predefined options. When `supportAllValues` property is turned on, the dropdown will show the current line-height value from the selection, even if that value is not present in the configured lineHeights array. By default, `supportAllValues` will be set to false.
+ 
+{% if page.publishingplatform == "aspnet-core" %}
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+ 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/line-height-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Horizontal line
 
 The Rich Text Editor enables users to insert horizontal dividers using the `HorizontalLine` tool available in the toolbar. Horizontal lines (<hr>) help visually separate sections of content, enhancing readability and structural clarity.
@@ -496,7 +558,7 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 ## Format painter
 
-The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
+The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 ### Configuring format painter tool in the toolbar
 
@@ -517,7 +579,7 @@ The following code example shows how to add the format painter tool in the Rich 
 
 ### Customizing copy and paste format
 
-You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
+You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 The [allowedFormats](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_AllowedFormats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
@@ -624,6 +686,66 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/clear-format-cs2/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Markdown Auto Format
+
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [EnableMarkdownAutoFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableMarkdownAutoformat) property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+
+By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
+
+|Commands|Syntax Example| Description |
+|--------|------------------------------------------|------------|
+| Bold | `**`Bold Text`**` or `__`Bold Text`__` | Makes text bold by wrapping it with `**` or `__`. |
+| Italic | `*`Italic Text`*` or `_`Italic Text`_` | Makes text italic by wrapping it with `*`or `_`. |
+| Bold and Italics | `***`bold and Italic text`***`. | Combines bold and italic by wrapping text with `***`. |
+| Strike Through | `~~`Strikethrough`~~` | Adds a strikethrough effect by wrapping text with `~~`. |
+| Inline Code (Single line) | \`Inline Code\` | Displays inline code by wrapping text with \`. |
+| Heading 1 | `#` Heading 1 | Creates an H1 heading by starting the line with `#`. |
+| Heading 2 | `##` Heading 2 | Creates an H2 heading by starting the line with `##`. |
+| Heading 3 | `###` Heading 3 | Creates an H2 heading by starting the line with `###`. |
+| Heading 4 | `####` Heading 4 | Creates an H2 heading by starting the line with `####` |
+| Heading 5 | `#####` Heading 5 | Creates an H2 heading by starting the line with `#####` |
+| Heading 6 | `######` Heading 6 | Creates an H2 heading by starting the line with `######` |
+| Blockquotes | `>` Blockquotes text | Adds a blockquote by starting the line with `>`. |
+| Code block (Multi Line) | \`\`\`<br>Multi line code text<br>Multi line code text<br>\`\`\` | Creates a code block by starting the line with \`\`\` |
+| Ordered List | `1.` First<br>`1.` Second | Creates a numbered list by starting lines with `1.` or `i.`. |
+| Unordered List | `*` First<br> `*` second | Creates a bulleted list by starting lines with `*` or `-`. |
+| Check List | `[]` Task<br>`[x]` Completed Task | Creates a checklist using `[]` for check list and `[x]` for checked checklist.|
+| Horizontal Line | `---` or `___` | Inserts a horizontal line using `---` or `___` on a new line.|
+
+
+### How Markdown auto-formatting works
+
+#### Inline Formats
+Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are converted **immediately after the closing marker is typed**.  
+**Example:** Typing `**bold**` will render as **bold** the moment you enter the second `*`.
+
+#### Block Formats
+Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
+**Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

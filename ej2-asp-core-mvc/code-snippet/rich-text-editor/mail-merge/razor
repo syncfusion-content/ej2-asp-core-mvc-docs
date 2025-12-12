@@ -1,4 +1,4 @@
-
+{% raw %}
 @using Syncfusion.EJ2.DropDowns
 
 @{
@@ -156,3 +156,4 @@
         });
     }
 </script>
+{% endraw %}
