@@ -1,0 +1,57 @@
+@using Syncfusion.EJ2.Inputs
+@using Syncfusion.EJ2.Buttons
+@using Syncfusion.EJ2.DropDowns
+@using EJ2MVCSampleBrowser.Models
+@using Syncfusion.EJ2
+@{
+    List<string> orientationData = new List<string>() { "Horizontal", "Vertical" };
+}
+@section ControlsSection {
+    <div class="col-lg-8 control-section multiline">
+        <div class="content-wrapper ador-textarea">
+            <div class="multiline-row">
+                @Html.EJS().TextArea("icontemplate").Placeholder("Add a comment").CssClass("e-outline").FloatLabelType(FloatLabelType.Auto).PrependTemplate("<span class='e-icons e-bold'></span><span class='e-input-separator'></span><span class='e-icons e-italic'></span><span class='e-input-separator'></span>").AppendTemplate("<span class='e-input-separator'></span><span class='e-icons e-save'></span><span class='e-input-separator'></span><span class='e-icons e-trash'></span>").Rows(5).Cols(500).ResizeMode(Resize.None).Render()
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4 property-section">
+        <table id="property" title="Properties" class="multiline-property">
+            <tr>
+                <td> Flow Direction </td>
+                <td>
+                    <div>
+                        @Html.EJS().DropDownList("flow-orientation").PopupHeight("200px").Index(0).DataSource(orientationData).Change("onFlowChange").Render()
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> Orientation Direction </td>
+                <td>
+                    <div>
+                        @Html.EJS().DropDownList("orient-orientation").PopupHeight("200px").Index(0).DataSource(orientationData).Change("onOrientChange").Render()
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+}
+
+<script type="text/javascript">
+    function onFlowChange(args) {
+        var textArea = document.getElementById('icontemplate').ej2_instances[0];
+        textArea.adornmentFlow = args.value;
+        textArea.appendTemplate = (args.value === 'Horizontal') ?
+            '<span class="e-input-separator"></span><span class="e-icons e-save"></span><span class="e-input-separator"></span><span class="e-icons e-trash"></span>' :
+            '<span class="e-input-separator"></span><span class="e-icons e-save"></span><span class="e-input-separator"></span><span class="e-icons e-trash"></span>';
+        textArea.dataBind();
+    }
+    function onOrientChange(args) {
+        var textArea = document.getElementById('icontemplate').ej2_instances[0];
+        textArea.adornmentOrientation = args.value;
+        textArea.appendTemplate = (args.value === 'Horizontal') ?
+            '<span class="e-input-separator"></span><span class="e-icons e-save"></span><span class="e-input-separator"></span><span class="e-icons e-trash"></span>' :
+            '<span class="e-input-separator"></span><span class="e-icons e-save"></span><span class="e-input-separator"></span><span class="e-icons e-trash"></span>';
+        textArea.dataBind();
+    }
+</script>
