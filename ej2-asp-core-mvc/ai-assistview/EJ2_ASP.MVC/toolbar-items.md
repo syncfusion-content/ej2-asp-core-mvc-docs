@@ -10,7 +10,71 @@ documentation: ug
 
 # Toolbar items in ##Platform_Name## AI AssistView control
 
-You can render the AI AssistView toolbar items by using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_Items) property in the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html), [ResponseToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html) & [PromptToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html) properties.
+You can render the AI AssistView toolbar items by using the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_Items) property in the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html), [ResponseToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html), [PromptToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewPromptToolbarSettings.html) & [FooterToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html) properties.
+
+## Configure footer toolbar
+
+By default, the footer toolbar renders the `send`, if attachment is enabled the `attachment` item will also be rendered which allows users to send the prompt text or attach files as needed.
+
+In the following example, AI AssistView component rendered with footer toolbar items such as `send` and `attachment` icons.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachments/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Enable-attachments.cs" %}
+{% include code-snippet/ai-assistview/file-attachments/enable-attachments/enable-attachments.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![EnableAttachments](images/enable-attachments.png)
+
+### Toolbar positioning
+
+You can use the [ToolbarPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewFooterToolbarSettings_ToolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
+
+By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area .
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/toolbar-items/footerPosition/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomFooter.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/footerPosition/footerPosition.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![CustomPrompt](images/custom-prompt.png)
+
+### Adding custom items
+
+You can use the `FooterToolbarSettings` property to add custom items for the footer toolbar in the AI AssistView. The custom items will be added with the existing built-in items in the footer toolbar.
+
+> To know more about the items, please refer to the [Items](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewFooterToolbarSettings_Items) section.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/toolbar-items/custom-footer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomPrompt.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/custom-footer/custom-footer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![CustomPrompt](images/custom-prompt.png)
+
+### Item click
+
+The [ItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewResponseToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewResponseToolbarSettings_ItemClick) event is triggered when the footer toolbar item is clicked.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/toolbar-items/footerItemClick/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="PromptItemClick.cs" %}
+{% include code-snippet/ai-assistview/toolbar-items/footerItemClick/footerItemClick.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding header toolbar items
 
