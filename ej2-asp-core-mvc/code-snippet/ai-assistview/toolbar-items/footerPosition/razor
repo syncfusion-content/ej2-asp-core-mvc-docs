@@ -13,7 +13,7 @@
     <button id="toolbarBtn" class="e-btn">UpdateToolbarPosition</button>
     @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").FooterToolbarSettings(new AIAssistViewFooterToolbarSettings()
     {
-        ToolbarPosition = 'Bottom'
+        ToolbarPosition = Syncfusion.EJ2.InteractiveChat.ToolbarPosition.Bottom
     }).Render()
 </div>
 
@@ -32,11 +32,11 @@
     }
     document.addEventListener('click', function (event) {
         if (event.target && event.target.id === 'toolbarBtn') {
-            if (assistObj.FooterToolbarSettings.ToolbarPosition === 'Inline') {
-                assistObj.FooterToolbarSettings.ToolbarPosition = 'Bottom';
+            if (assistObj.footerToolbarSettings.toolbarPosition === 'Inline') {
+                assistObj.footerToolbarSettings.toolbarPosition = 'Bottom';
             }
             else {
-                assistObj.FooterToolbarSettings.ToolbarPosition = 'Inline';
+                assistObj.footerToolbarSettings.toolbarPosition = 'Inline';
             }
         }
     });

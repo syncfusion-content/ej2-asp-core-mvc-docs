@@ -12,7 +12,7 @@
 <div class="aiassist-container" style="height: 350px; width: 650px;">
     @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").FooterToolbarSettings(new AIAssistViewFooterToolbarSettings()
     {
-        ToolbarPosition = 'Bottom',
+        ToolbarPosition = Syncfusion.EJ2.InteractiveChat.ToolbarPosition.Bottom,
         Items = ViewBag.Items
     }).Render()
 </div>

@@ -22,12 +22,12 @@ In the following example, AI AssistView component rendered with footer toolbar i
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/file-attachments/enable-attachments/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Enable-attachments.cs" %}
+{% highlight c# tabtitle="FooterToolbar.cs" %}
 {% include code-snippet/ai-assistview/file-attachments/enable-attachments/enable-attachments.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![EnableAttachments](images/enable-attachments.png)
+![FooterToolbar](images/enable-attachments.png)
 
 ### Toolbar positioning
 
@@ -39,12 +39,12 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/footerPosition/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomFooter.cs" %}
+{% highlight c# tabtitle="ToolbarPosition.cs" %}
 {% include code-snippet/ai-assistview/toolbar-items/footerPosition/footerPosition.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPrompt](images/custom-prompt.png)
+![ToolbarPosition](images/toolbarPosition.png)
 
 ### Adding custom items
 
@@ -56,12 +56,12 @@ You can use the `FooterToolbarSettings` property to add custom items for the foo
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/custom-footer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="CustomPrompt.cs" %}
+{% highlight c# tabtitle="CustomFooter.cs" %}
 {% include code-snippet/ai-assistview/toolbar-items/custom-footer/custom-footer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPrompt](images/custom-prompt.png)
+![CustomFooter](images/custom-footer.png)
 
 ### Item click
 
@@ -71,7 +71,7 @@ The [ItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inte
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/toolbar-items/footerItemClick/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="PromptItemClick.cs" %}
+{% highlight c# tabtitle="FooterItemClick.cs" %}
 {% include code-snippet/ai-assistview/toolbar-items/footerItemClick/footerItemClick.cs %}
 {% endhighlight %}
 {% endtabs %}

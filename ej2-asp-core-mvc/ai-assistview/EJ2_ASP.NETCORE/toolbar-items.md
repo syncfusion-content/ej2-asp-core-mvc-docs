@@ -22,12 +22,12 @@ In the following example, AI AssistView component rendered with footer toolbar i
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/file-attachments/enable-attachments/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="BannerTemplate.cs" %}
+{% highlight c# tabtitle="FooterToolbar.cs" %}
 {% include code-snippet/ai-assistview/file-attachments/enable-attachments/enable-attachments.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-![EnableAttachments](images/enable-attachments.png)
+![FooterToolbar](images/enable-attachments.png)
 
 ### Toolbar positioning
 
@@ -41,7 +41,7 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 {% endhighlight %}
 {% endtabs %}
 
-![CustomPrompt](images/custom-prompt.png)
+![ToolbarPosition](images/toolbarPosition.png)
 
 ### Adding custom items
 
@@ -55,7 +55,7 @@ You can use the `e-aiassistview-footertoolbarsettings` tag helper to add custom 
 {% endhighlight %}
 {% endtabs %}
 
-![CustomResponse](images/custom-response.png)
+![CustomFooter](images/custom-footer.png)
 
 ### Item click
 
