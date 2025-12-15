@@ -31,7 +31,7 @@ In the following example, AI AssistView component rendered with footer toolbar i
 
 ### Toolbar positioning
 
-You can use the [ToolbarPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewFooterToolbarSettings_ToolbarPosition) property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
+You can use the `ToolbarPosition` property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
 
 By settings toolbarPosition as `Bottom`, footer items will be rendered at the bottom with a dedicated footer area .
 
@@ -47,7 +47,7 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 
 You can use the `e-aiassistview-footertoolbarsettings` tag helper to add custom items for the footer toolbar in the AI AssistView. The custom items will be added with the existing built-in items in the footer toolbar.
 
-> To know more about the items, please refer to the [Items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewFooterToolbarSettings_Items) section.
+> To know more about the items, please refer to the [Items](#Items) section.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -59,7 +59,7 @@ You can use the `e-aiassistview-footertoolbarsettings` tag helper to add custom 
 
 ### Item click
 
-The [ItemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewFooterToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewFooterToolbarSettings_ItemClick) event is triggered when the footer toolbar item is clicked.
+The `ItemClick` event is triggered when the footer toolbar item is clicked.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
