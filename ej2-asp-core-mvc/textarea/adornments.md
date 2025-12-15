@@ -11,38 +11,35 @@ domainurl: ##DomainURL##
 
 # Adornments in ##Platform_Name## TextArea control
 
-Adornments enhance the textarea by adding custom elements such as icons, text, or buttons before or after the text input area. This feature provides a flexible way to extend textarea functionality with visual indicators, formatting options, or interactive elements for improved user experience and content management.
+Adornments allow you to add custom elements before or after the TextArea using the `prependTemplate` and `appendTemplate` properties. These elements can include icons, text labels, or action buttons for formatting and content management. With orientation support, you can arrange adornments horizontally or vertically using `adornmentFlow` and `adornmentOrientation` for flexible layouts.
 
-## Overview
+## Common Use Cases
 
-Adornments are useful for:
-- **Visual Context**: Adding icons that provide visual indicators about the textarea purpose (e.g., edit icon for comments, document icon for descriptions)
-- **Formatting Tools**: Including action buttons such as bold, italic, underline, or text formatting controls
-- **Content Actions**: Displaying save, delete, clear, or submit buttons for quick content management
-- **Input Validation**: Showing validation status icons or character count indicators
-- **Accessibility**: Providing visual and interactive to guide user input and improve discoverability
-- **Layout Flexibility**: Configurable flow (horizontal/vertical) and orientation for responsive designs
+- **Visual Indicators**: Icons for context (e.g., edit, comment).
+- **Formatting Tools**: Buttons for bold, italic, underline.
+- **Content Actions**: Save, clear, or submit buttons.
+- **Validation & Status**: Character count or error icons.
+- **Flexible Layout**: Horizontal or vertical adornment flow.
 
-## Add adornments to textarea
+## Adding Adornments with Orientation to TextArea
 
-Adornments are added using the prependTemplate and appendTemplate properties. These properties accept HTML content that renders before and after the textarea respectively, enabling flexible customization without modifying the core textarea structure.
+Use `prependTemplate` and `appendTemplate` to add custom HTML content before and after the TextArea.
 
-**PrependTemplate**: Renders before the textarea.
-**AppendTemplate**: Renders after the textarea.
+- **`prependTemplate`**: Renders elements before the textarea.
 
-## Configure flow and orientation
+- **`appendTemplate`**: Renders elements after the textarea.
 
-The [adornmentFlow](../api/textarea) and [adornmentOrientation](../api/textarea) properties control how adornments are arranged around the textarea:
+You can control how adornments are positioned and arranged using the `adornmentFlow` and `adornmentOrientation` properties. Both properties accept only `Horizontal` or `Vertical` values defined in the `AdornmentsDirection` type.
 
-**Adornment Flow** Property to position adornments around the textarea:
-- `Horizontal`:  prepend on the left, append on the right
-- `Vertical`: prepend above, append below
+- **`adornmentFlow`**: Defines where adornments appear around the TextArea.
+  - **Horizontal**: Prepend on the left, append on the right.
+  - **Vertical**: Prepend above, append below.
 
-**Adornment Orientation** property to arrange content inside each adornment:
-- `Horizontal`:items in a row
-- `Vertical`: items in a column
+- **`adornmentOrientation`**: Defines how items inside each adornment are arranged.
+  - **Horizontal**: Items displayed in a row.
+  - **Vertical**: Items displayed in a column.
 
-### Basic implementation
+The following example demonstrates how to add adornments with orientation in the TextArea control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

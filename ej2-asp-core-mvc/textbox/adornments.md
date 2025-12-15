@@ -9,9 +9,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## Textbox control
+# Adornments in ##Platform_Name## TextBox control
 
-Adornments enhance the textbox by adding custom elements such as icons, text, or buttons at the before or after of the input field. This feature provides a flexible way to extend textbox functionality with visual indicators or interactive elements for improved user experience.
+Adornments allow you to add custom elements before or after the TextBox using `prependTemplate` and `appendTemplate`. These elements can include icons, text labels, or action buttons to improve usability and provide visual context.
 
 ## Overview
 
@@ -22,14 +22,22 @@ Adornments are useful for:
 - **Unit Indicators**: Showing currency symbols, temperature units, domain extensions, or measurement units
 - **Accessibility**: Providing visual and interactive guidance to help users input and improve discoverability
 
-## Add adornments to textbox
+## Common Use Cases
 
-Adornments are added using the prependTemplate and appendTemplate properties. These properties accept HTML content that renders before and after the input field respectively, enabling flexible customization without modifying the core textbox structure.
+- **Visual Indicators**: Icons for expected input type (e.g., user icon for username, envelope icon for email).
+- **Functional Enhancements**: Buttons for password visibility toggle or clear input.
+- **Validation Status**: Icons for error or success indicators.
+- **Unit Indicators**: Currency symbols, measurement units, or domain extensions.
 
-**PrependTemplate**: Renders before the textbox. 
-**AppendTemplate**: Renders after the textbox.
 
-### Basic implementation
+## Adding Adornments to TextBox
+
+Use `prependTemplate` and `appendTemplate` properties to add custom HTML content before and after the TextBox.
+
+- **`prependTemplate`**: Renders elements before the TextBox.
+- **`appendTemplate`**: Renders elements after the TextBox.
+
+The following example demonstrates how to add adornments in the TextBox control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

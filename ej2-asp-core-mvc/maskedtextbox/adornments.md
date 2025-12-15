@@ -11,25 +11,23 @@ domainurl: ##DomainURL##
 
 # Adornments in ##Platform_Name## MaskedTextBox control
 
-This example highlights adornment support in the Syncfusion MaskedTextBox. Adornments let you place custom elements before or after the masked input by using the `prependTemplate` and `appendTemplate` properties—such as prefixes, suffix labels, or action icons—to provide context, guide entry, and offer quick actions, while preserving mask validation and float label behavior.
+Adornments in the MaskedTextBox control allow you to add custom elements before or after the masked input using the `prependTemplate` and `appendTemplate` properties. These elements can include prefixes, suffix labels, or action icons to provide context, guide user input, and offer quick actions while preserving mask validation and float label behavior.
 
-## Overview
+## Common Use Cases
 
-Adornments are useful for:
-- **Entry Guidance**: Add icons/text to hint the expected input (e.g., user icon for username/login)
-- **Quick Actions**: Include buttons to submit, clear, or copy the masked value
-- **Context Labels**: Add static prefixes/suffixes like country code, domain, or unit suffix
-- **Visual Feedback**: Show status indicators without interfering with the mask
-- **Float Label Compatibility**: Works seamlessly with `floatLabelType` set to Auto, Always, or Never
+- **Entry Guidance**: Add icons/text to hint the expected input (e.g., user icon for username/login).
+- **Quick Actions**: Include buttons to submit, clear, or copy the masked value.
+- **Context Labels**: Add static prefixes/suffixes like country code, domain, or unit suffix.
+- **Visual Feedback**: Show status indicators without interfering with the mask.
 
-## Add adornments to masked textbox
+## Adding Adornments to MaskedTextBox
 
-Use prependTemplate and appendTemplate to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
+Use `prependTemplate` and `appendTemplate` to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
 
-- **PrependTemplate**: Renders before the masked input.
-- **AppendTemplate**: Renders after the masked input.
+- **prependTemplate**: Renders elements before the masked input.
+- **appendTemplate**: Renders elements after the masked input.
 
-## Basic implementation
+The following example demonstrates how to add adornments in the MaskedTextBox control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

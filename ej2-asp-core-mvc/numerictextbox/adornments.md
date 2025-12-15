@@ -11,27 +11,23 @@ domainurl: ##DomainURL##
 
 # Adornments in ##Platform_Name## NumericTextBox control
 
-Adornments enhance the numeric textbox by adding custom elements such as currency symbols, unit labels, or action icons before or after the input field. This feature provides a flexible way to extend numeric textbox functionality with visual context or interactive elements for improved user experience and input clarity.
+Adornments allow you to add custom elements before or after the numeric textbox using the `prependTemplate` and `appendTemplate` properties. These elements can include currency symbols, unit labels, or action icons to provide context and quick actions without affecting numeric behavior or float label functionality.
 
-## Overview
+## Common Use Cases
 
-Adornments are useful for:
-- **Currency Symbols**: Adding currency indicators ($, €, ¥, etc.) to monetary inputs
-- **Unit Labels**: Displaying measurement units (kg, m, cm, km, etc.)
-- **Decimal Indicators**: Showing decimal points or precision information
-- **Action Icons**: Including buttons for increment, decrement, reset, or clear operations
-- **Visual Context**: Adding icons that indicate the input type or purpose
-- **Input Validation**: Displaying validation status or range indicators
-- **Improved Clarity**: Providing visuals to guide user input and enhance discoverability
+- **Currency Symbols**: Add indicators like $, €, ¥ for monetary inputs.
+- **Unit Labels**: Show measurement units (kg, cm, km).
+- **Action Icons**: Include buttons for clear, reset, or custom actions.
+- **Visual Context**: Display icons for input type or status.
 
-## Add adornments to numeric textbox
+## Adding Adornments to NumericTextBox
 
-Adornments are added using the prependTemplate and appendTemplate properties. These properties accept HTML content that renders before and after the numeric input field respectively, enabling flexible customization without modifying the core numeric textbox structure.
+Use `prependTemplate` and `appendTemplate` to inject HTML content before and after the masked input respectively. These templates do not alter mask behavior and support any inline HTML or icon.
 
-**PrependTemplate**: Renders before the numeric textbox.
-**AppendTemplate**: Renders after the numeric textbox.
+**prependTemplate**: Renders elements before the numeric textbox.
+**appendTemplate**: Renders elements after the numeric textbox.
 
-### Basic implementation
+The following example demonstrates how to add adornments in the NumericTextBox control.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
