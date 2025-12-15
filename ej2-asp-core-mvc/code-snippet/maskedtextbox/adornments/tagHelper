@@ -14,3 +14,55 @@
         </div>
     </div>
 }
+@*custom code start*@
+<style>
+    .content-wrapper {
+        width: 30%;
+        margin: 0 auto;
+        min-width: 250px;
+    }
+    .control-label {
+        padding: 10px 0px 5px 0px;
+        font-size: 12px;
+    }
+    .material .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .material-dark .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .fabric .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .fabric-dark .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .bootstrap .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .bootstrap-dark .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .bootstrap4 .e-prepend-mask .e-append-template .e-icons.e-send:before,
+    .highcontrast .e-prepend-mask .e-append-template .e-icons.e-send:before {
+        content: '\e816' !important;
+    }
+    .mask-row label.e-float-text,
+    .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .mask-row .e-float-input.e-control-wrapper:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+        margin-top: -2px;
+    }
+    .bootstrap5\.3 .mask-row .e-prepend-template,
+    .bootstrap5\.3-dark .mask-row .e-prepend-template,
+    .tailwind3 .mask-row .e-prepend-template,
+    .tailwind3-dark .mask-row .e-prepend-template {
+        padding-right: 0 !important;
+    }
+    .fluent2 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .fluent2-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .fluent2-highcontrast .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+        top: -8px !important;
+    }
+    .e-bigger.material3 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .e-bigger.material3-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+        top: -3px !important;
+    }
+    .e-bigger.bootstrap5\.3 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .e-bigger.bootstrap5\.3-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+        top: 20px !important;
+    }
+    .e-bigger.fluent2 .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .e-bigger.fluent2-dark .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom,
+    .e-bigger.fluent2-highcontrast .mask-row .e-float-input:not(.e-error):not(.e-input-focus) input:not(:focus):valid~label.e-float-text.e-label-bottom {
+        margin-top: 0 !important;
+    }
+</style>
+@*custom code end*@
