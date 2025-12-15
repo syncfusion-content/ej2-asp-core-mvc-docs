@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross-Site scripting in ##Platform_Name## Block Editor Control | Syncfusion
+title: Cross-Site scripting in ##Platform_Name## Block Editor | Syncfusion
 description: Checkout and learn about Cross-Site scripting with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
@@ -14,5 +14,5 @@ The Block Editor control allows users to edit the content with security by preve
 
 ## Enabling XSS prevention
 
-The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableHtmlSanitizer), enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
+The [EnableHtmlSanitizer](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_EnableHtmlSanitizer), enabled by default, activates XSS prevention. When active, the editor automatically removes elements like `<script>` and attributes like `onmouseover` from the content.
 The following example shows XSS prevention removing a `<script>` tag and `onmouseover` attribute:

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Block Editor Control | Syncfusion
+title: Methods in ##Platform_Name## Block Editor | Syncfusion
 description: Checkout and learn about Methods with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
@@ -270,7 +270,7 @@ var allBlocksHtml = blockEditorObj.getDataAsHtml();
 var specificBlockHtml = blockEditorObj.getDataAsHtml('block-id');
 ```
 
-### Rendering Blocks from Json
+### Rendering Blocks from JSON
 
 Renders blocks from JSON data using the `renderBlocksFromJson` method. This method allows either replacing all existing content or inserting at the cursor position.
 

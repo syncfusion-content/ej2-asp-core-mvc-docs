@@ -270,7 +270,7 @@ var allBlocksHtml = blockEditorObj.getDataAsHtml();
 var specificBlockHtml = blockEditorObj.getDataAsHtml('block-id');
 ```
 
-### Rendering Blocks from Json
+### Rendering Blocks from JSON
 
 Renders blocks from JSON data using the `renderBlocksFromJson` method. This method allows either replacing all existing content or inserting at the cursor position.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keyboard Shortcuts in ##Platform_Name## Block Editor Control | Syncfusion
+title: Keyboard Shortcuts in ##Platform_Name## Block Editor | Syncfusion
 description: Checkout and learn about Keyboard Shortcuts with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
