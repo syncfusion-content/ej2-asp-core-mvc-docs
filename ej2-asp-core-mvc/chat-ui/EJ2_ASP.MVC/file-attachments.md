@@ -38,7 +38,7 @@ Set the `SaveUrl` and `RemoveUrl` properties to specify server endpoints for han
 {% include code-snippet/chat-ui/file-attachments/save-remove-url/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="saveRemoveUrl.cs" %}
-{% include code-snippet/chat-ui/file-attachments/save-remove-url/save-remove-url.cs %}
+{% include code-snippet/chat-ui/file-attachments/save-remove-url/saveRemoveUrl.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,7 +108,7 @@ Toggle drag-and-drop support for attachments via `EnableDragAndDrop` property. T
 {% include code-snippet/chat-ui/file-attachments/drag-and-drop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DragAndDrop.cs" %}
-{% include code-snippet/chat-ui/file-attachments/drag-and-drop/drag-and-drop.cs %}
+{% include code-snippet/chat-ui/file-attachments/drag-and-drop/dragAndDrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
