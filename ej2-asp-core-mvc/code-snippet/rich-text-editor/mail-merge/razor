@@ -1,6 +1,5 @@
 {% raw %}
 @using Syncfusion.EJ2.DropDowns
-
 @{
     
     string rteValue = @"<p>Dear <span contenteditable=""false"" class=""e-mention-chip""><span>{{FirstName}}</span></span> <span contenteditable=""false"" class=""e-mention-chip""><span>{{LastName}}</span></span>,</p>
@@ -67,8 +66,6 @@
         @Html.EJS().Mention("mentionField").MentionChar(mentionChar).Created("onMentionCreate").Target("#mailMergeEditor_rte-edit-view").DataSource(mergeData).AllowSpaces(true).Fields(new MentionFieldSettings { Text = "Text" }).DisplayTemplate("<span> {{${Value}}} </span>").PopupWidth("250px").PopupHeight("200px").Render()
     </div>
 </div>
-
-
 
 <script>
     var mailMergeEditor;
