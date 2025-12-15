@@ -1,0 +1,26 @@
+@Html.EJS().TreeGrid("CellMerging").DataSource((IEnumerable<object>)ViewBag.Datasource).QueryCellInfo("QueryCellEvent").GridLines(Syncfusion.EJ2.TreeGrid.GridLine.Both).Height("auto").Width("auto").Columns(col =>
+    {
+        col.Field("EmployeeID").HeaderText("Employee ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.TreeGrid.TextAlign.Right).Width("150").Add();
+        col.Field("EmployeeName").HeaderText("Employee Name").Width("200").Add();
+        col.Field("Time9AM").HeaderText("9.00 AM").Width("120").Add();
+        col.Field("Time10AM").HeaderText("10.00 AM").Width("120").Add();
+        col.Field("Time11AM").HeaderText("11.00 AM").Width("120").Add();
+        col.Field("Time12PM").HeaderText("12.00 PM").Width("120").Add();
+        col.Field("Time1PM").HeaderText("1.00 PM").Width("120").TextAlign(Syncfusion.EJ2.TreeGrid.TextAlign.Center).Add();
+        col.Field("Time3PM").HeaderText("3.00 PM").Width("120").Add();
+        col.Field("Time4PM").HeaderText("4.00 PM").Width("120").Add();
+        col.Field("Time5PM").HeaderText("5.00 PM").Width("120").Add();
+    }).ChildMapping("Children").TreeColumnIndex(1).Render()
+    <script>
+        function QueryCellEvent(args) {
+            var data = args.data;
+            switch (data.EmployeeID) {
+                case 10001:
+                    if (args.column.field === 'Time1PM') {
+                        args.rowSpan = 10;
+                    }
+                    break;
+            }
+        }
+    </script>
+    
