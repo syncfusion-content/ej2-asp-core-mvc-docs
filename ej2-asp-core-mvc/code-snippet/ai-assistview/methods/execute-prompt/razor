@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <button id="executePrompt">Execute Prompt</button>
+    <button id="executePrompt" onclick="executePrompt()">Execute Prompt</button>
     @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
@@ -17,11 +17,9 @@
             assistObj.addPromptResponse(defaultResponse);
         }, 2000);
     }
-    document.addEventListener('click', function (event) {
-        if (event.target && event.target.id === 'executePrompt') {
-            assistObj.executePrompt('What is the current temperature?');
-        }
-    });
+    function executePrompt() {
+        assistObj.executePrompt('What is the current temperature?');
+    }
 </script>
 
 <style>
