@@ -3,7 +3,7 @@ layout: post
 title: Appearance in ##Platform_Name## Block Editor Control | Syncfusion
 description: Checkout and learn about appearance with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -31,7 +31,7 @@ You can specify the width and height for the Block Editor control using the [Wid
 
 ## Setting readonly mode
 
-You can utilize the [Readonly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
+You can utilize the [ReadOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ReadOnly) property to control whether the editor is in read-only mode. When set to `true`, users cannot edit the content but can still view it.
 
 ```cshtml
 

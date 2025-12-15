@@ -3,7 +3,7 @@ layout: post
 title: Methods in ##Platform_Name## Block Editor Control | Syncfusion
 description: Checkout and learn about Methods with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -22,10 +22,10 @@ You can add a new block to the editor at a specified position using the `addBloc
 // Add a new paragraph block after a specific block
 const newBlock = {
     id: 'new-block',
-    type: 'Paragraph',
+    blockType: 'Paragraph',
     content: [
         {
-            type: "Text",
+            contentType: "Text",
             content: 'This is a newly added block'
         }
     ]
@@ -252,10 +252,10 @@ You can export the editor content in JSON format using the `getDataAsJson` metho
 
 ```cs
 // Get all blocks as JSON
-const allBlocks = blockEditorObj.getDataAsJson();
+var allBlocksJson = blockEditorObj.getDataAsJson();
 
 // Get a specific block as JSON
-const specificBlock = blockEditorObj.getDataAsJson('block-id');
+var specificBlockJson = blockEditorObj.getDataAsJson('block-id');
 ```
 
 ### Getting data as HTML
@@ -264,10 +264,34 @@ You can export the editor content in HTML format using the `getDataAsHtml` metho
 
 ```cs
 // Get all blocks as HTML
-const allBlocksHtml: string = blockEditorObj.getDataAsHtml();
+var allBlocksHtml = blockEditorObj.getDataAsHtml();
 
 // Get a specific block as HTML
-const specificBlockHtml: string = blockEditorObj.getDataAsHtml('block-id');
+var specificBlockHtml = blockEditorObj.getDataAsHtml('block-id');
+```
+
+### Rendering Blocks from Json
+
+Renders blocks from JSON data using the `renderBlocksFromJson` method. This method allows either replacing all existing content or inserting at the cursor position.
+
+```cs
+// Replace all existing content
+blockEditorObj.renderBlocksFromJson(jsonData, true);
+
+// Insert at cursor without replacing existing blocks (default behavior)
+blockEditorObj.renderBlocksFromJson(jsonData);
+
+// Insert after a specific block (only applicable when replace = false)
+blockEditorObj.renderBlocksFromJson(jsonData, false, 'target-block-id');
+```
+
+### Parsing HTML to Blocks
+
+Convert an HTML string into an array of `BlockModel` objects using the `parseHtmlToBlocks` method. This method allows transforming HTML content into structured editor blocks.
+
+```cs
+// Parse HTML into block
+var blocksData = blockEditorObj.parseHtmlToBlocks(html);
 ```
 
 ### Printing editor content

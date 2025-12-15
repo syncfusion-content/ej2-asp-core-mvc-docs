@@ -3,7 +3,7 @@ layout: post
 title: Code Block in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about Code Block with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,57 +11,34 @@ domainurl: ##DomainURL##
 
 # Code Blocks in ##Platform_Name## Block Editor control
 
-You can render Code blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Code`. By setting the [codeSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_CodeSettings) property, you can configure the languages available for syntax highlighting and the default language. The default language is 'javascript'.
+You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 
-## Configure code properties
+## Global Code Settings
 
-For Code blocks, you can configure syntax highlighting and language options using the [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html) property.
+You can configure global settings for code blocks using the `codeBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
 
-The code [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
+The `codeBlockSettings` property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| languages | Array of language options for syntax highlighting | [] |
-| defaultLanguage | The default language to use for syntax highlighting | 'javascript' |
+| [languages](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CodeBlockSettingsModel.html#Syncfusion_EJ2_BlockEditor_CodeBlockSettingsModel_Languages) | Specifies the array of language options for syntax highlighting. | [] |
+| [defaultLanguage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CodeBlockSettingsModel.html#Syncfusion_EJ2_BlockEditor_CodeBlockSettingsModel_DefaultLanguage) | Defines the default language to use for syntax highlighting. | 'plaintext' |
 
 Each language object in the `languages` array should have:
 - `language`: The language value used for syntax highlighting
 - `label`: The display name shown in the language selector
 
-### Type & Props
-```typescript
-// Adding Code block
-{
-    Type = BlockType.Code,
-    Content = new List<object>()
-    {
-        new 
-        {
-                type = "Text",
-                content = "function greeting() {\n  console.log(\"Hello, world!\");\n}"
-        }
-    },
-    Props = new
-    {
-        defaultLanguage = "javascript",
-        languages = new List<object>()
-        {
-                new
-                {
-                        label = "JavaScript",
-                        language = "javascript"
-                },
-                new
-                {
-                        label = "TypeScript",
-                        language = "typescript"
-                }
-        }
-    }
-}
-```
+## Configure code properties
 
-Below example illustrates how to render the different code block in the Block Editor.
+For Individual Code blocks, you can configure default language using the `properties` property in the block model.
+
+The property supports the following options:
+
+| Property | Description | Default Value |
+|----------|-------------|---------------|
+| language | The default language to use for syntax highlighting | '' |
+
+Below example illustrates how to render the code block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

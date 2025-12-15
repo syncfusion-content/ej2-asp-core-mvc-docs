@@ -3,7 +3,7 @@ layout: post
 title: Events in ##Platform_Name## Block Editor Control | Syncfusion
 description: Checkout and learn about Events with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -30,18 +30,18 @@ The [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockE
 
 ```
 
-## ContentChanged
+## BlockChanged
 
-The [ContentChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ContentChanged) event is triggered whenever the content within the editor is modified. This includes content additions, deletions, or any structural modifications to the document.
+The `BlockChanged` event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("contentChanged").Render()
+    @Html.EJS().BlockEditor("block-editor").BlockChanged("handleBlockChange").Render()
 </div>
 
 <script>
-    function contentChanged(args) {
+    function handleBlockChange() {
         // You may initialize custom plugins or features
     }
 </script>
@@ -55,84 +55,12 @@ The [SelectionChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.E
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("selectionChanged").Render()
+    @Html.EJS().BlockEditor("block-editor").SelectionChanged("selectionChanged").Render()
 </div>
 
 <script>
     function selectionChanged(args) {
         // You can update formatting toolbar based on selection
-    }
-</script>
-
-```
-
-## UndoRedoPerformed
-
-The [UndoRedoPerformed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_UndoRedoPerformed) event is triggered when an undo or redo operation is executed. This event provides information about the action performed and the state before and after the operation.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("undoRedoPerformed").Render()
-</div>
-
-<script>
-    function undoRedoPerformed(args) {
-        // You may log undo/redo actions for analytics
-    }
-</script>
-
-```
-
-## BlockAdded
-
-The [BlockAdded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockAdded) event is triggered when a new block is added to the editor. This includes blocks added through user interaction, paste operations, or programmatic insertion.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockAdded").Render()
-</div>
-
-<script>
-    function blockAdded(args) {
-        // You may trigger custom actions when a block is added
-    }
-</script>
-
-```
-
-## BlockRemoved
-
-The [BlockRemoved](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockRemoved) event is triggered when a block is removed from the editor. This can occur through user deletion, cut operations, or programmatic removal.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockRemoved").Render()
-</div>
-
-<script>
-    function blockRemoved(args) {
-        // You may trigger custom actions when a block is removed
-    }
-</script>
-
-```
-
-## BlockMoved
-
-The [BlockMoved](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockMoved) event is triggered when blocks are moved from one position to another within the editor. This includes drag-and-drop operations, through keyboard shortcuts or programmatic block reordering.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockMoved").Render()
-</div>
-
-<script>
-    function blockMoved(args) {
-        // You may trigger custom actions when blocks are moved
     }
 </script>
 
@@ -145,7 +73,7 @@ The [BlockDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockDragStart").Render()
+    @Html.EJS().BlockEditor("block-editor").BlockDragStart("blockDragStart").Render()
 </div>
 
 <script>
@@ -157,14 +85,14 @@ The [BlockDragStart](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 ```
 
-## BlockDrag
+## BlockDragging
 
-The [BlockDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDrag) event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
+The `BlockDragging` event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockDrag").Render()
+    @Html.EJS().BlockEditor("block-editor").BlockDragging("blockDrag").Render()
 </div>
 
 <script>
@@ -175,14 +103,14 @@ The [BlockDrag](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Bloc
 
 ```
 
-## BlockDrop
+## BlockDropped
 
-The [BlockDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDrop) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
+The `BlockDropped` event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blockDrop").Render()
+    @Html.EJS().BlockEditor("block-editor").BlockDropped("blockDrop").Render()
 </div>
 
 <script>
@@ -200,7 +128,7 @@ The [Focus](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEdi
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("focus").Render()
+    @Html.EJS().BlockEditor("block-editor").Focus("focus").Render()
 </div>
 
 <script>
@@ -218,7 +146,7 @@ The [Blur](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEdit
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("blur").Render()
+    @Html.EJS().BlockEditor("block-editor").Blur("blur").Render()
 </div>
 
 <script>
@@ -229,32 +157,14 @@ The [Blur](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEdit
 
 ```
 
-## KeyActionExecuted
+## BeforePasteCleanup
 
-The [KeyActionExecuted](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyActionExecuted) event is triggered when a keyboard shortcut is executed. This provides information about the key combination used and the corresponding action performed.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("keyActionExecuted").Render()
-</div>
-
-<script>
-    function keyActionExecuted(args) {
-        // Custom actions when a keyboard shortcut is executed
-    }
-</script>
-
-```
-
-## BeforePaste
-
-The [BeforePaste](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BeforePaste) event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
+The `BeforePasteCleanup` event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("beforePaste").Render()
+    @Html.EJS().BlockEditor("block-editor").BeforePasteCleanup("beforePaste").Render()
 </div>
 
 <script>
@@ -265,14 +175,14 @@ The [BeforePaste](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Bl
 
 ```
 
-## AfterPaste
+## AfterPasteCleanup
 
-The [AfterPaste](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_AfterPaste) event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
+The `AfterPasteCleanup` event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("afterPaste").Render()
+    @Html.EJS().BlockEditor("block-editor").AfterPasteCleanup("afterPaste").Render()
 </div>
 
 <script>

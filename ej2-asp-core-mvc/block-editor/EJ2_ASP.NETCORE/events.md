@@ -3,7 +3,7 @@ layout: post
 title: Events in ##Platform_Name## Block Editor Control | Syncfusion
 description: Checkout and learn about Events with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -30,18 +30,18 @@ The [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Block
 
 ```
 
-## ContentChanged
+## BlockChanged
 
-The [contentChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ContentChanged) event is triggered whenever the content within the editor is modified. This includes content additions, deletions, or any structural modifications to the document.
+The `blockChanged` event is triggered whenever the editor blocks are changed. This includes block additions, deletions, or any structural modifications to the document. Its event handler receives details about the changes.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" contentChanged="contentChanged"></ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" blockChanged="blockChange"></ejs-blockeditor>
 </div>
 
 <script>
-    function contentChanged(args) {
+    function blockChange() {
         // You may initialize custom plugins or features
     }
 </script>
@@ -66,78 +66,6 @@ The [selectionChanged](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ```
 
-## UndoRedoPerformed
-
-The [undoRedoPerformed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_UndoRedoPerformed) event is triggered when an undo or redo operation is executed. This event provides information about the action performed and the state before and after the operation.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" undoRedoPerformed="undoRedoPerformed"></ejs-blockeditor>
-</div>
-
-<script>
-    function undoRedoPerformed(args) {
-        // You may log undo/redo actions for analytics
-    }
-</script>
-
-```
-
-## BlockAdded
-
-The [blockAdded](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockAdded) event is triggered when a new block is added to the editor. This includes blocks added through user interaction, paste operations, or programmatic insertion.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" blockAdded="blockAdded"></ejs-blockeditor>
-</div>
-
-<script>
-    function blockAdded(args) {
-        // You may trigger custom actions when a block is added
-    }
-</script>
-
-```
-
-## BlockRemoved
-
-The [blockRemoved](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockRemoved) lockRemoved` event is triggered when a block is removed from the editor. This can occur through user deletion, cut operations, or programmatic removal.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" blockRemoved="blockRemoved"></ejs-blockeditor>
-</div>
-
-<script>
-    function blockRemoved(args) {
-        // You may trigger custom actions when a block is removed
-    }
-</script>
-
-```
-
-## BlockMoved
-
-The [blockMoved](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockMoved) event is triggered when blocks are moved from one position to another within the editor. This includes drag-and-drop operations, through keyboard shortcuts or programmatic block reordering.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" blockMoved="blockMoved"></ejs-blockeditor>
-</div>
-
-<script>
-    function blockMoved(args) {
-        // You may trigger custom actions when blocks are moved
-    }
-</script>
-
-```
-
 ## BlockDragStart
 
 The [blockDragStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDragStart) event is triggered at the beginning of a block drag operation, providing information about the blocks being dragged and their initial position.
@@ -157,14 +85,14 @@ The [blockDragStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 ```
 
-## BlockDrag
+## BlockDragging
 
-The [blockDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDrag) event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
+The `blockDragging` event is triggered during a drag operation, providing information about the blocks being dragged and their current position.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" blockDrag="blockDrag"></ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" blockDragging="blockDrag"></ejs-blockeditor>
 </div>
 
 <script>
@@ -175,14 +103,14 @@ The [blockDrag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Blo
 
 ```
 
-## BlockDrop
+## BlockDropped
 
-The [blockDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BlockDrop) event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
+The `blockDropped` event is triggered when blocks are successfully dropped at their destination during a drag-and-drop operation.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" blockDrop="blockDrop"></ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" blockDropped="blockDrop"></ejs-blockeditor>
 </div>
 
 <script>
@@ -229,32 +157,14 @@ The [blur](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEdi
 
 ```
 
-## KeyActionExecuted
+## BeforePasteCleanup
 
-The [keyActionExecuted](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_KeyActionExecuted) event is triggered when a keyboard shortcut is executed. This provides information about the key combination used and the corresponding action performed.
-
-```cshtml
-
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" keyActionExecuted="keyActionExecuted"></ejs-blockeditor>
-</div>
-
-<script>
-    function keyActionExecuted(args) {
-        // Custom actions when a keyboard shortcut is executed
-    }
-</script>
-
-```
-
-## BeforePaste
-
-The [beforePaste](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_BeforePaste) event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
+The `beforePasteCleanup` event is triggered before content is pasted into the editor. This event allows you to modify or cancel the paste operation.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" beforePaste="beforePaste"></ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" beforePasteCleanup="beforePaste"></ejs-blockeditor>
 </div>
 
 <script>
@@ -265,14 +175,14 @@ The [beforePaste](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.B
 
 ```
 
-## AfterPaste
+## AfterPasteCleanup
 
-The [afterPaste](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_AfterPaste) event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
+The `afterPasteCleanup` event is triggered after content has been successfully pasted into the editor. This is useful for post-processing pasted content or updating related UI elements.
 
 ```cshtml
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" afterPaste="afterPaste"></ejs-blockeditor>
+    <ejs-blockeditor id="block-editor" afterPasteCleanup="afterPaste"></ejs-blockeditor>
 </div>
 
 <script>

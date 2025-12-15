@@ -3,7 +3,7 @@ layout: post
 title: Lists in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about List Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,116 +11,33 @@ domainurl: ##DomainURL##
 
 # Lists in ##Platform_Name## Block Editor control
 
-List blocks in the BlockEditor component are used to organize content into structured lists. You can render List blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+List blocks in the Block Editor component are used to organize content into structured lists. You can render List blocks by setting the `blockType` property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 
 ## Configure bullet list 
 
-You can render Bullet List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `BulletList`. This block type is used for unordered lists.
-
-### Type
-
-```typescript
-// Adding bulletlist block
-{
-    Type = BlockType.BulletList,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement bulletlist"
-        }
-    }
-}
-```
+You can render Bullet List block by setting the `blockType` property as `BulletList`. This block type is used for unordered lists.
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
-
-```typescript
-// Adding placeholder value 
-{
-    Type = BlockType.BulletList,
-    Props = new { placeholder = "bulletlist" }
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement bulletlist"
-        }
-    }
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for bullet list is  `Add item`.
 
 ## Configure numbered list
 
-You can render Numbered List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as  `NumberedList`.This block type is used for ordered lists.
-
-### Type
-
-```typescript
-// Adding numberedlist block
-{
-    Type = BlockType.NumberedList,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement numberlist"
-        }
-    }
-}
-```
+You can render Numbered List block by setting the `blockType` property as  `NumberedList`. This block type is used for ordered lists.
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
-
-```typescript
-// Adding placeholder value 
-{
-    Type = BlockType.NumberList,
-    Props = new { placeholder = "Numberlist" }
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement numberlist"
-        }
-    }
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for numbered list is  `Add item`.
 
 ## Configure checklist
 
-You can render Check List block by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Checklist`. This block type is used for creating interactive to-do lists.
-
-### Type
-
-```typescript
-// Adding checklist block 
-{
-    Type = BlockType.Checklist,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement checklist"
-        }
-    }
-}
-```
+You can render Check List block by setting the `blockType` property property as `Checklist`. This block type is used for creating interactive to-do lists.
 
 ### Configure checked state
 
-For blocks that support selection states such as `CheckList`, you can configure the checked state using the `props` property with [isChecked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked).
+For blocks that support selection states such as `Checklist`, you can configure the checked state using the `properties` property with `isChecked`.
 
-By default, the [isChecked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsChecked) property is set to `false`.
+By default, the `isChecked` property is set to `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,23 +52,7 @@ By default, the [isChecked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for check list is  `To Do`.
-
-```typescript
-// Adding placeholder value 
-{
-    Type = BlockType.Checklist,
-    Props = new { placeholder = "Checklist" }
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "Implement Checklist"
-        }
-    }
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for check list is  `Todo`.
 
 ## Configure list blocks
 

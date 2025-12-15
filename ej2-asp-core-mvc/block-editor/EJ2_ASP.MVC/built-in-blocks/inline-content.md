@@ -3,7 +3,7 @@ layout: post
 title: Inline Content in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about Inline Content with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -11,19 +11,18 @@ domainurl: ##DomainURL##
 
 # Inline Content  in ##Platform_Name## Block Editor control
 
-Content in the Block Editor is managed through the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Content) property of blocks.
+Content in the Block Editor is managed through the `content` property of blocks.
 
-Each content can have properties like `Id`, `Type`, `Content`, `Styles`, and more to customize the appearance and behavior of your text.
+Each content can have properties like `id`, `contentType`, `content`, `properties`, and more to customize the appearance and behavior of your text.
 
 ## Setting content type
 
-You can specify the type of content using the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property. The Block Editor supports several content types through the `ContentType` enum:
+You can specify the type of content using the `contentType` property. The Block Editor supports several content types through the `ContentType` enum:
 
 | Built-in Content Type  | Description                         |
 |------------------------|-------------------------------------|
 | Text                   | Represents plain text content.      |
 | Link                   | Represents a hyperlink.             |
-| Code                   | Represents a code snippet.          |
 | Mention                | Represents a user mention.          |
 | Label                  | Represents a label or tag.          |
 
@@ -31,85 +30,25 @@ You can specify the type of content using the [Type](https://help.syncfusion.com
 
 ## Configure text content
 
-You can configure Text content by setting the type property to `Text`. The default content type is `Text`.
-
-### Type 
-
-```typescript
-// Adding inline text
-{
-    Type =  BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type =  'Text',
-            content = 'Inline Text'
-        }
-    }
-}
-```
-
-## Configure inline code
-
-You can configure inline code content by setting the type property to `Code`. Code content is used for inline code snippets within regular text.
-
-### Type
-
-```typescript
-// Adding inline code
-{
-    Type =  BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = 'Code',
-            content = 'Inline Code'
-        }
-    }
-}
-```
+You can configure Text content by setting the `contentType` property to `Text`. The default content type is `Text`.
 
 ## Configure hyperlink
 
-You can configure hyperlink content by setting the type property to `Link`. By setting the `Props` property, you can configure the url of the link and specifies the link should open in a new tab/window.
+To create a hyperlink, set the `contentType` property to `Link`. You can configure the link's URL using the `properties` property.
 
 ### Configure link properties
 
-Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property.
+Link settings control the behavior and properties of hyperlinks in your content. You can configure link settings using the `properties` property.
 
-The link [Props](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
+Link settings accepts the following options:
 
-| Option       | Description                                                                 | Default Value |
-|--------------|-----------------------------------------------------------------------------|---------------|
-| url          | Specifies the URL of the link.                                          |       ''        |
-| openInNewWindow    | Specifies whether the link should open in a new window/tab.           | false         |
-
-
-### Type & Props
-
-```typescript
-{
-    Type =  BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = 'Link',
-            content = 'hyperlinks',
-            props = {
-                url = 'https =//ej2.syncfusion.com/documentation',
-                openInNewWindow = true
-            }
-        }
-    }
-}
-```
+| Option                     | Description                                                       | Default Value |
+| -------------------------  | ----------------------------------------------------------------- | ------------- |
+|`url`| Specifies the destination URL of the link.     | `''`          |
 
 ## Configure Label
 
-You can render labels by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Label`. Additionally, by configuring the `props` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
+You can render labels by setting the `contentType` property as `Label`. Additionally, by configuring the `properties` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
 
 ### Built-in items
 
@@ -120,26 +59,7 @@ The Block Editor comes with offers different built-in options. These include:
 
 ### Customize label
 
-You can customize the labels by using the `props` property with type `Label`.
-
-### Type & Props
-
-```typescript
-// Adding inline label
-{
-    Type =  BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-            {
-                type = 'Label',
-                props = {
-                    lableId = 'Name of the label'
-                }
-            }
-    }
-}
-```
+You can customize the labels by using the `properties` property with type `Label`.
 
 ### Trigger Character configuration
 
@@ -178,32 +98,15 @@ The below sample demonstrates the customization of labels in the Block Editor.
 
 ## Configure mention
 
-Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the type property to `Mention`.
+Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the `contentType` property to `Mention`.
 
 Mentions are typically triggered by the `@` character and are linked to the `Users` collection defined in the Block Editor.
 
-### Type
+## Applying inline styles
 
-```typescript
-// Adding inline code
-{
-    Type =  BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = 'Mention',
-            id = 'user1'
-        }
-    }
-}
-```
+The Block Editor allows you to apply rich formatting to block contents using the `styles` property.
 
-## Setting content styles
-
-The Block Editor enables you to customize the appearance of Text, Link, and Code elements using the `Styles` property. This property offers rich formatting options to enhance the visual presentation of these content types.
-
-The `Styles`property supports the following formatting options:
+The `styles` property supports the following formatting options:
 
 | Style Property | Description | Default Value |
 |---------------|-------------|---------------|
@@ -217,6 +120,6 @@ The `Styles`property supports the following formatting options:
 | subscript | Displays the text as subscript | false |
 | uppercase | Converts the text to uppercase | false |
 | lowercase | Converts the text to lowercase | false |
-| custom | Adds custom CSS styles to the text | '' |
+| inlineCode | Converts the text to InlineCode | false |
 
-You can apply one or more of these styles to any content element for rich text formatting
+You can apply one or more of these styles to any content element for rich text formatting.

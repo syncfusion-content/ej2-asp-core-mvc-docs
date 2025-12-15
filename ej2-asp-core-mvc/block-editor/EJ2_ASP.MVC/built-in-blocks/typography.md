@@ -3,7 +3,7 @@ layout: post
 title: Typography Blocks in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about Typography Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -15,24 +15,7 @@ Typography blocks are essential for organizing and presenting text-based content
 
 ## Configure paragraph block
 
-You can render Paragraph blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
-
-### Type 
-
-```typescript
-// Adding paragraph block
-{
-    Type = BlockType.Paragraph,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = 'This is a paragraph block example.'
-        }
-    }
-}
-```
+You can render Paragraph blocks by setting the `blockType` property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
 The below sample demonstrates the configuration of paragraph block in the Block Editor.
 
@@ -49,17 +32,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
-
-### Type & Props
-
-```typescript
-// Adding placeholder
- {
-    Type = BlockType.Paragraph,
-    Props = new {placeholder: 'Start typing ...'}
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
 The below sample demonstrates the configuration of placeholder in the Block Editor for the paragraph block.
 
@@ -76,31 +49,12 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-You can render Heading blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+You can render Heading blocks by setting the `blockType` property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
 
 ### Configure levels
 
-You can configure the heading blocks using the property `level`.
+You can configure the heading blocks using the property `level` in the `properties` property.
 The heading level representing a title `level: 1`, heading `level: 2`, subheading `level: 3` and a subsection by `level: 4`.
-
-### Type & Props
-
-```typescript
-// Adding heading block
-{
-    Type = BlockType.Heading,
-    Props = new { level = 1 },
-    // levels range from 1 to 4
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = 'This is a heading block example.'
-        }
-    }
-}
-```
 
 The below sample demonstrates the configuration of heading block in the Block Editor.
 
@@ -117,65 +71,31 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for heading block is `Heading{levels}`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    Type = BlockType.Heading,
-    Props = new  { 
-        level = 1,
-        placeholder = 'Heading1'
-    }
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the `blockType` property as `CollapsibleParagraph` or `CollapsibleHeading`. Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
-You can configure the CollapsibleHeading using the property `level` inside the `props` property . The levels can be varied from `level: 1` to `level: 4`.
+You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) property. This property can be achieved through `props` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the `children` property. This property can be achieved through `properties` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
+### Configure parent id
+
+To establish a clear parent-child relationship, the `parentId` in the `properties` of each child block must match the `id` of its parent block.
+
+This structure is essential for maintaining nested relationships within the editor.
+
 ### Configure expanded state
 
-You can control whether a block is expanded or collapsed using the [IsExpanded](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_IsExpanded) property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
-
-### Type & Props
-
-```typescript
-// Configuring CollapsibleHeading block
-{
-    Type = BlockType.CollapsibleHeading,
-    Props= new
-    {
-        level=1,
-        IsExpanded = true,
-        Children = new List<Block>()   
-            {
-                //your content to be here..
-            }
-    }
-}
-// Configuring CollapsibleParagraph block
-{
-    Type = BlockType.CollapsibleParagraph,
-    Props= new
-    {
-        Children = new List<Block>()   
-            {
-                //your content to be here..
-            }
-    }
-}
-```
+You can control whether a block is expanded or collapsed using the `isExpanded` in the `properties` property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
 
 The below sample demonstrates the configuration of collapsibleHeading and collapsibleParagraph blocks in the Block Editor.
 
@@ -192,65 +112,11 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{levels}` and `Collapsible Paragraph` respectively.
-
-```typescript
-// Adding placeholder value to collapsible heading
-{
-    Type = BlockType.CollapsibleHeading,
-    Props= new
-    {
-        level=1,
-        IsExpanded = true,
-        placeholder = 'collapsible heading block',
-    }
-}
-//Adding placeholder value for collapsible paragraph
-{
-    Type = BlockType.CollapsibleParagraph,
-    Props= new
-    {
-        placeholder = 'collapsible paragraph block',
-    }
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `Collapsible Heading{level}` and `Collapsible Paragraph` respectively.
 
 ## Configure divider block
 
-Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Divider`.
-
-### Type & Props
-
-```typescript
-// Adding divider block
-{
-    {
-        Type = BlockType.Paragraph,
-        Content = new List<object>()
-        {
-            new 
-            {
-                type = "Text",
-                content = "This section discusses the features of the Block Editor."
-            }
-        }
-    },
-    {
-        Type = BlockType.Divider
-    },
-    {
-       Type = BlockType.Paragraph,
-        Content = new List<object>()
-        {
-            new 
-            {
-                type = "Text",
-                content = "This section discusses the features of the Block Editor."
-            }
-        }
-    }
-}
-```
+Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the `blockType` property as `Divider`.
 
 The below sample demonstrates the configuration of divider block in the Block Editor.
 
@@ -267,24 +133,7 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 
 ## Configure quote block
 
-You can render Quote blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
-
-### Type & Props
-
-```typescript
-// Adding quote block
-{
-    Type = BlockType.Quote,
-    Content = new List<object>()
-    {
-        new 
-        {
-            type = "Text",
-            content = "The greatest glory in living lies not in never falling, but in rising every time we fall."
-        }
-    }
-}
-```
+You can render Quote blocks by setting the `blockType` property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
 
 The below sample demonstrates the configuration of quote block in the Block Editor.
 
@@ -301,43 +150,11 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the [Placeholder](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Placeholder) property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    Type =  BlockType.Quote,
-    Props = new  { placeholder = 'Quote'}
-}
-```
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
 
 ## Configure callout block
 
-You can render Callout blocks by setting the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Type) property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
-
-### Type & Props
-
-```typescript
-// Adding callout block
- {
-    Type = BlockType.Callout,
-    Props= new {
-    Children = new List<Block>()
-    {
-        new Block()
-        {
-            Type = "Paragraph",
-            Content = new List<object>(){
-                new{
-                        type = "Text",
-                        content = "Important information: This is a callout block used to highlight important content."
-                }
-            }
-        }
-    }
-    }
-}
-```
+You can render Callout blocks by setting the `blockType` property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
 The below sample demonstrates the configuration of callout block in the Block Editor.
 
@@ -354,13 +171,15 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 ### Configure children
 
-The Block Editor supports hierarchical content structures through the [Children](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_Children) property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
+The Block Editor supports hierarchical content structures through the `children` in the `properties` property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
 
 Child blocks can be configured with all the same properties as top-level blocks.
 
 ### Configure parent id
 
-For proper hierarchy, you should ensure that the [ParentId](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.Block.html#Syncfusion_EJ2_BlockEditor_Block_ParentId) of each child block matches the `Id` of its parent block. This structure helps maintain the nested relationships within the editor.
+To establish a clear parent-child relationship, the `parentId` in the `properties` of each child block must match the `id` of its parent block.
+
+This structure is essential for maintaining nested relationships within the editor.
 
 The below sample demonstrates the configuration of children in the Block Editor using parentId.
 

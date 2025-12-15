@@ -3,7 +3,7 @@ layout: post
 title: Embed Blocks in ##Platform_Name## Block Editor control | Syncfusion
 description: Checkout and learn about Embed Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
@@ -17,51 +17,38 @@ Block Editor supports addition of embeds to help you organize, showcase contents
 
 You can use the `Image` block to showcase an image content within your editor.
 
-### Configure image block
+### Configure Image Block
 
-You can render Image blocks by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as `Image`. By setting the `Props` property, you can configure the image source, allowed file types, and display dimensions etc.
+You can render an `Image` block by setting the `blockType` property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
-The image [Props](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Block.html) property supports the following options:
+#### Global Image Settings
+
+You can configure global settings for image blocks using the `imageBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+
+The `imageBlockSettings` property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| saveFormat | Specifies the format to save the image | Base64 |
-| src | Specifies the image path | ' '|
-| allowedTypes | Specifies the allowed image file types that can be uploaded | ['.jpg', '.jpeg', '.png'] |
-| width | Specifies the display width of the image | ' ' |
-| height | Specifies the display height of the image | ' '|
-| minWidth | Specifies the minimum width of the image in pixels or as a string unit | 40|
-| maxWidth | Specifies the maximum width of the image in pixels or as a string unit | ' '|
-| minHeight | Specifies the minimum height of the image in pixels or as a string unit | 40|
-| maxHeight | Specifies the maximum height of the image in pixels or as a string unit | ' '|
-| altText | Specifies the alternative text to be displayed when the image cannot be loaded | ' '|
-| cssClass | Specifies one or more CSS classes to be applied to the image element | ' ' |
-| readOnly | Specifies whether the image is in read-only mode | false
+| saveFormat | Specifies the format to save the image. | `Base64` |
+| allowedTypes | Specifies allowed image file types for upload. | `['.jpg', '.jpeg', '.png']` |
+| width | Specifies the default display width of the image. | `auto` |
+| height | Specifies the default display height of the image. | `auto` |
+| enableResize | Enables or disables image resizing. | `true` |
+| minWidth | Minimum width allowed for resizing. | `''` |
+| maxWidth | Maximum width allowed for resizing. | `''` |
+| minHeight | Minimum height allowed for resizing. | `''` |
+| maxHeight | Maximum height allowed for resizing. | `''` |
 
+#### Configure Image Block Properties
 
-### Type & Props
+The `Image` block `properties` property in the block model supports the following options:
 
-```typescript
-// Adding image block
- {
-    Type = BlockType.Image,
-    Props = new
-    {
-        src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
-        altText = "Sample image"       
-        saveFormat= "Base64",
-        allowedTypes = ['.png', '.gif'],
-        width = '200px',
-        height = '100px',
-        minWidth = 50,
-        maxWidth = 500,
-        minHeight = 50,
-        maxHeight = 300,
-        cssClass = 'img-custom',
-        readOnly = true
-    }
-}
-```
+| Property | Description | Default Value |
+|----------|-------------|---------------|
+| src | Specifies the image path. | `''` |
+| width | Specifies the display width of the image. | `''` |
+| height | Specifies the display height of the image. | `''` |
+| altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
 
 The below sample demonstrates the configuration of image block in the Block Editor.
 

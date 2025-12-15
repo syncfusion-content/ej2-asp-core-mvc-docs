@@ -3,7 +3,7 @@ layout: post
 title: Editor Menus in ##Platform_Name## Block Editor Control | Syncfusion
 description: Checkout and learn about Editor Menus with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
-control: Block Editor
+control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -24,6 +24,7 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 -   **Lists(Bullet, Numbered, Checklist)**: for different list types.
 -   **Paragraph**: for standard text blocks.
 -   **Image**: for media insertion.
+-   **Table**: Inserts a table block.
 -   **Toggle**: for collapsible content.
 -   **Callout**: for highlighting important information.
 -   **Utility(Divider, Quote, Code)**: for other utility blocks.
@@ -42,10 +43,8 @@ The following events are available in the Slash Command menu.
 
 |Name|Args|Description|
 |---|---|---|
-|[open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_Open)|CommandMenuOpenEventArgs|Triggers when the command menu is opened.|
-|[close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_Close)|CommandMenuCloseEventArgs|Triggers when the command menu is closed.|
-|[queryFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_QueryFiltering)|CommandQueryFilteringEventArgs|Triggers when the user types to filter the command menu items.|
-|[itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html#Syncfusion_EJ2_BlockEditor_CommandMenuSettings_ItemClicked)|CommandItemClickedEventArgs|Triggers when the user clicks on a command menu item.|
+|`filtering`|CommandFilteringEventArgs|Triggers when the user types to filter the command menu items.|
+|`itemSelect`|CommandItemSelectEventArgs|Triggers when the user clicks on a command menu item.|
 
 Below example demonstrates the customization of the Slash Command menu.
 
@@ -83,11 +82,9 @@ The following events are available in the Context menu.
 
 |Name|Args|Description|
 |---|---|---|
-|[beforeOpen](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_BeforeOpen)|ContextMenuBeforeOpenEventArgs|Triggers before the context menu opens.|
-|[open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_Open)|ContextMenuOpenEventArgs|Triggers when the context menu is opened.|
-|[beforeClose](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_BeforeClose)|ContextMenuBeforeCloseEventArgs|Triggers before the context menu closes.|
-|[close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_Close)|ContextMenuCloseEventArgs|Triggers when the context menu is closed.|
-|[itemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.ContextMenuSettings.html#Syncfusion_EJ2_BlockEditor_ContextMenuSettings_ItemClick)|ContextMenuItemClickEventArgs|Triggers when a context menu item is clicked.|
+|`opening`|ContextMenuOpeningEventArgs|Triggers before the context menu opens.|
+|`closing`|ContextMenuClosingEventArgs|Triggers before the context menu closes.|
+|`itemSelect`|ContextMenuItemSelectEventArgs|Triggers when a context menu item is clicked.|
 
 Below example demonstrates the customization of the Context menu.
 
@@ -129,9 +126,9 @@ The following events are available in the Block action menu.
 
 |Name|Args|Description|
 |---|---|---|
-|[open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_Open)|Block actionMenuOpenEventArgs|Triggers when the block action menu is opened.|
-|[close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_Close)|Block actionMenuCloseEventArgs|Triggers when the block action menu is closed.|
-|[itemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockActionMenuSettings.html#Syncfusion_EJ2_BlockEditor_BlockActionMenuSettings_ItemClick)|Block actionMenuItemClickEventArgs|Triggers when a block action menu item is clicked.|
+|`opening`|BlockActionMenuOpeningEventArgs|Triggers when the block action menu is opened.|
+|`closing`|BlockActionMenuClosingEventArgs|Triggers when the block action menu is closed.|
+|`itemSelect`|BlockActionItemSelectEventArgs|Triggers when a block action menu item is clicked.|
 
 Below example demonstrates the customization of the Block action menu.
 
@@ -174,9 +171,7 @@ The following events are available in the Inline Toolbar.
 
 |Name|Args|Description|
 |---|---|---|
-|[open](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_Open)|ToolbarOpenEventArgs|Triggers when the inline toolbar is opened.|
-|[close](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_Close)|ToolbarCloseEventArgs|Triggers when the inline toolbar is closed.|
-|[itemClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.InlineToolbarSettings.html#Syncfusion_EJ2_BlockEditor_InlineToolbarSettings_ItemClicked)|ToolbarItemClickedEventArgs|Triggers when the user clicks on an inline toolbar item.|
+|`itemClick`|ToolbarItemClickEventArgs|Triggers when the user clicks on an inline toolbar item.|
 
 Below example demonstrates the customization of the Inline Toolbar.
 
