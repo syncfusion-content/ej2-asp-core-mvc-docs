@@ -87,10 +87,10 @@ The below sample demonstrates the customization of labels in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/label-settings/razor %}
+{% include code-snippet/blockeditor/blocks/label-settings/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Label.cs" %}
-{% include code-snippet/block-editor/blocks/label-settings/label.cs %}
+{% include code-snippet/blockeditor/blocks/label-settings/label.cs %}
 {% endhighlight %}
 {% endtabs %}
 

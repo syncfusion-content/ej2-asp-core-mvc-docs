@@ -42,10 +42,10 @@ Below example illustrates how to render the code block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Code.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/code-block/code.cs %}
+{% include code-snippet/blockeditor/blocks/blockTypes/code-block/code.cs %}
 {% endhighlight %}
 {% endtabs %}
 

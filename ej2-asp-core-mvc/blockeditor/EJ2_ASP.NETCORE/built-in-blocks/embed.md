@@ -54,10 +54,10 @@ The below sample demonstrates the configuration of image block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/image-block/tagHelper %}
+{% include code-snippet/blockeditor/blocks/blockTypes/image-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Image.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/image-block/image.cs %}
+{% include code-snippet/blockeditor/blocks/blockTypes/image-block/image.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -46,10 +46,10 @@ By default, the `indent` property is set to `0`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/indent/razor %}
+{% include code-snippet/blockeditor/blocks/indent/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Indent.cs" %}
-{% include code-snippet/block-editor/blocks/indent/indent.cs %}
+{% include code-snippet/blockeditor/blocks/indent/indent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,10 +63,10 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/cssClass/razor %}
+{% include code-snippet/blockeditor/blocks/cssClass/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CssClass.cs" %}
-{% include code-snippet/block-editor/blocks/cssClass/cssclass.cs %}
+{% include code-snippet/blockeditor/blocks/cssClass/cssclass.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,10 +78,10 @@ The Block Editor allows you to use custom templates for specialized content usin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}
+{% include code-snippet/blockeditor/blocks/blockTypes/template-block/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
