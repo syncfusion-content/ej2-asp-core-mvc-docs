@@ -1,0 +1,28 @@
+@Html.EJS().Chart("container").Series(series => {
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+        .XName("country")
+        .YName("gold")
+        .DataSource(ViewBag.dataSource)
+        .Marker(mr => mr.Visible(true))
+        .Add();
+}).PrimaryXAxis(px =>
+    px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+).PrimaryYAxis(py =>
+    py.ValueType(Syncfusion.EJ2.Charts.ValueType.Double)
+).Title("Olympic Medals").Width("70%").Load("load").Render()
+
+<script id="AxisLabelTemplate" type="text/x-template">
+    <table>
+        <tr>
+            <td align="center" style="background-color: #2E8B57; font-size: 14px; color: #FFD700; font-weight: bold; padding: 5px">Country :</td>
+            <td align="center" style="background-color: #4682B4; font-size: 14px; color: #FFFFFF; font-weight: bold; padding: 5px">${label}</td>
+        </tr>
+    </table>
+</script>
+
+<script>        
+    var load = function (args) {
+        args.chart.primaryXAxis.labelTemplate = "#AxisLabelTemplate";
+    };
+</script>
+
