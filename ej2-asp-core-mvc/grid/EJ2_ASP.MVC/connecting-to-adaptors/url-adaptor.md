@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data with UrlAdaptor in Syncfusion ##Platform_Name## Grid.
-description: Learn here all about Bind data and perform CRUD action with UrlAdaptor in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2.
+title: UrlAdaptor in Syncfusion ##Platform_Name## Grid.
+description: Learn here all about Bind data and perform CRUD action with UrlAdaptor in Syncfusion ##Platform_Name## Grid of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grid
 keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
