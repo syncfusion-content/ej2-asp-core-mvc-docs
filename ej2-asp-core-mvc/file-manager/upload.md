@@ -24,6 +24,20 @@ When set to `true`, this property enables directory upload in the File Manager, 
 
 To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#folder-upload-support)
 
+## Sequential Upload
+
+The `sequentialUpload` property controls whether users can upload files one by one in a sequential manner in the Syncfusion File Manager control. 
+
+To enable sequential upload, set the `sequentialUpload` property to `true` in the `uploadSettings` configuration.
+
+When set to `true`, the selected files will process sequentially (one after the other) to the server. If the file uploaded successfully or failed, the next file will upload automatically in this sequential upload. This feature helps to reduce the upload traffic and reduce the failure of file upload. 
+
+The screenshot below shows that each file begins uploading only after the previous one completes. This demonstrates how the `sequentialUpload` property works in the File Manager control.
+
+![File Manager with sequentialUpload](./images/filemanager-sequentialupload.png)
+
+To learn more about the folder upload actions, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#folder-upload-support)
+
 ## Chunk Upload
 
 The [chunkSize](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#chunksize) property specifies the size of each chunk when uploading large files. It divides the file into smaller parts, which are uploaded sequentially to the server.
