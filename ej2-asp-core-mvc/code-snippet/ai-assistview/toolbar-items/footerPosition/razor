@@ -10,7 +10,7 @@
 }
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <button id="toolbarBtn" class="e-btn">UpdateToolbarPosition</button>
+    <button id="toolbarBtn" class="e-btn" onclick="UpdateToolbarPosition()">UpdateToolbarPosition</button>
     @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").FooterToolbarSettings(new AIAssistViewFooterToolbarSettings()
     {
         ToolbarPosition = Syncfusion.EJ2.InteractiveChat.ToolbarPosition.Bottom
@@ -30,16 +30,14 @@
             assistObj.addPromptResponse(foundPrompt ? foundPrompt.response : defaultResponse);
         }, 2000);
     }
-    document.addEventListener('click', function (event) {
-        if (event.target && event.target.id === 'toolbarBtn') {
-            if (assistObj.footerToolbarSettings.toolbarPosition === 'Inline') {
-                assistObj.footerToolbarSettings.toolbarPosition = 'Bottom';
-            }
-            else {
-                assistObj.footerToolbarSettings.toolbarPosition = 'Inline';
-            }
+    function UpdateToolbarPosition() {
+        if (assistObj.footerToolbarSettings.toolbarPosition === 'Inline') {
+            assistObj.footerToolbarSettings.toolbarPosition = 'Bottom';
         }
-    });
+        else {
+            assistObj.footerToolbarSettings.toolbarPosition = 'Inline';
+        }
+    }
 </script>
 
 <style>

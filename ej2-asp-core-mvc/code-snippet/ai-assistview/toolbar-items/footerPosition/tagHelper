@@ -11,7 +11,7 @@
 }
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <button id="toolbarBtn" class="e-btn">UpdateToolbarPosition</button>
+    <button id="toolbarBtn" class="e-btn" onclick="UpdateToolbarPosition()">UpdateToolbarPosition</button>
     <ejs-aiassistview id="aiAssistView" prompts="@promptsData" promptRequest="onPromptRequest" created="onCreated">
         <e-aiassistview-footertoolbarsettings ToolbarPosition="Bottom"></e-aiassistview-footertoolbarsettings>
     </ejs-aiassistview>
@@ -31,16 +31,14 @@
         }, 2000);
     }
 
-    document.addEventListener('click', function (event) {
-        if (event.target && event.target.id === 'toolbarBtn') {
-            if (assistObj.footerToolbarSettings.toolbarPosition === 'Inline') {
-                assistObj.footerToolbarSettings.toolbarPosition = 'Bottom';
-            }
-            else {
-                assistObj.footerToolbarSettings.toolbarPosition = 'Inline';
-            }
+    function UpdateToolbarPosition() {
+        if (assistObj.footerToolbarSettings.toolbarPosition === 'Inline') {
+            assistObj.footerToolbarSettings.toolbarPosition = 'Bottom';
         }
-    });
+        else {
+            assistObj.footerToolbarSettings.toolbarPosition = 'Inline';
+        }
+    }
 </script>
 
 <style>
