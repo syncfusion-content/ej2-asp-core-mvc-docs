@@ -1,5 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat;
 
 <div class="chatui-container" style="height: 400px; width: 400px;">
-    <ejs-chatui id="chatUI"></ejs-chatui>
+    <ejs-chatui id="chatUI">
+        <e-chatui-user id="user1" user="Albert"></e-chatui-user>
+    </ejs-chatui>
 </div>
