@@ -50,6 +50,10 @@ The File Manager provides navigation between files and folders using the followi
 
 The File Manager provides a navigation pane that displays the folder hierarchy of the file system and enables easy navigation to the desired folder. Using [`navigationPaneSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerNavigationPaneSettings.html) minimum and maximum width of the navigation pane can be changed. The navigation pane can be shown or hidden using the `visible` option in the `navigationPaneSettings`.
 
+You can customize the appearance of the navigation pane by using the `navigationPaneTemplate` property. This enables you to modify icons, display text, and include additional elements to suit your application's requirements.
+
+![Navigation Pane Template Output](./images/navigationpane-template.png)
+
 ### BreadCrumb
 
 The File Manager provides breadcrumb for navigating to the parent folders. The breadcrumb in the File Manager is responsible for resizing. Whenever the path length exceeds the breadcrumb length, a dropdown button will be added at the starting of the breadcrumb to hold the parent folders adjacent to root.
@@ -70,6 +74,10 @@ The `large icons view` is the default starting view in the File Manager. The vie
 In the large icons view, the thumbnail icons will be shown in a larger size, which displays the data in a form that best suits their content. For image and video type files, a **preview** will be displayed. Extension thumbnails will be displayed for other type files.
 
 ![LargeIconView](./images/largeiconsview.png)
+
+The `largeIconsTemplate` property enables complete customization of how folders and files are rendered in the `Large Icons View`. It allows you to enhance the layout by adding background images, custom file-type icons, and actions such as dropdown menus.
+
+![Large Icon View Template Output](./images/large-icons-view-template.png)
 
 ### Details view
 
