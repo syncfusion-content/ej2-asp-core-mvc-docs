@@ -132,34 +132,7 @@ N> If the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sync
 
 
 
-## Checkbox column
 
-To render checkboxes in existing column, you need to set [`showCheckbox`] property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) as **true**.
-
-It is also possible to select the rows hierarchically using checkboxes in TreeGrid by enabling [`autoCheckHierarchy`] property. When we check on any parent record checkbox then the child record checkboxes will get checked.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-core/checkbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/tree-grid/columns-core/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-core/checkbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/tree-grid/columns-core/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
