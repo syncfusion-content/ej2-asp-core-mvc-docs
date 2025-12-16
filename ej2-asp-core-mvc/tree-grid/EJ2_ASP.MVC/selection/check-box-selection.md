@@ -78,7 +78,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 ## Conditional row selection
 
-The TreeGrid supports conditional row selection through the [isRowSelectable](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.IsRowSelectable.html) property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
+The TreeGrid supports conditional row selection through the `isRowSelectable` property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -109,7 +109,7 @@ In this sample, checkbox selection is disabled for rows where the "Progress" col
 
 1. ### Enable checkboxes in tree column
 
-    To render checkboxes in tree column, you need to set [`ShowCheckbox`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ShowCheckbox.html) property as **true**.
+    To render checkboxes in tree column, you need to set [`ShowCheckbox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ShowCheckbox) property as **true**.
 
     It is possible to select rows hierarchically using checkboxes in TreeGrid by enabling the [`AutoCheckHierarchy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AutoCheckHierarchy) property. When a parent record’s checkbox is checked, the checkboxes of its child records are automatically selected and vice-versa.
 
@@ -138,7 +138,7 @@ In this sample, checkbox selection is disabled for rows where the "Progress" col
 
 2. ### Checkbox selection in tree column with virtualization
 
-    The TreeGrid component is designed to handle large datasets while providing flexible checkbox selection with virtualization enabled. The [`ShowCheckbox`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ShowCheckbox.html) property displays checkboxes in tree column cells, allowing users to select or deselect them directly. This functionality is enabled by setting the property to "**true**". Similarly, the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) property enhances performance by rendering only the visible rows and columns during scrolling. This feature is activated by setting the property to "**true**".
+    The TreeGrid component is designed to handle large datasets while providing flexible checkbox selection with virtualization enabled. The [`ShowCheckbox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ShowCheckbox) property displays checkboxes in tree column cells, allowing users to select or deselect them directly. This functionality is enabled by setting the property to "**true**". Similarly, the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) property enhances performance by rendering only the visible rows and columns during scrolling. This feature is activated by setting the property to "**true**".
 
     {% if page.publishingplatform == "aspnet-core" %}
 

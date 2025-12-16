@@ -22,7 +22,7 @@ N> 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ## Format
 
-To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The TreeGrid uses [Internalization](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime)
+To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -47,7 +47,7 @@ values.
 
 
 
-N> By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in `en-US` locale.
+N> By default, the [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime) values are formatted in `en-US` locale.
 
 ### Number formatting
 
@@ -59,13 +59,13 @@ N | Denotes numeric type. | The numeric format is followed by integer value as N
 C | Denotes currency type. | The currency format is followed by integer value as C2, C3. etc which denotes the number of precision to be allowed.
 P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 1. For example the cell value `0.2` is formatted as `20%`. The percentage format is followed by integer value as P2, P3. etc which denotes the number of precision to be allowed.
 
-Refer to the link to know more about [`Number formatting`](../../common/internationalization/#number-formatting).
+Refer to the link to know more about [`Number formatting`](../../common/internationalization#number-formatting).
 
 ### Date formatting
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property as string   (Example: `yMd`). Refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime).
+For built-in date format you can specify [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property as string   (Example: `yMd`). Refer to the link to know more about [`Date formatting`](../../common/internationalization#manipulating-datetime).
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -121,8 +121,8 @@ In the below example, Duration column is locked and its reordering functionality
 
 Column type can be specified using the [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) property in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). It specifies the type of data the column binds.
 
-If the [`Format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html)  is defined for a column, the column uses [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) to select the appropriate format option ([number](../../common/internationalization/#number-formatting)
- or [date](../../common/internationalization/#manipulating-datetime)).
+If the [`Format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html)  is defined for a column, the column uses [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) to select the appropriate format option ([number](../../common/internationalization#number-formatting)
+ or [date](../../common/internationalization#manipulating-datetime)).
 
 TreeGrid column supports the following types:
 * string
@@ -162,7 +162,7 @@ You can enable or disable treegrid action for a particular column by setting the
 
 ## Show/hide columns by external button
 
-You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid/#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid/#hidecolumns) method.
+You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid#hidecolumns) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -79,7 +79,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 ## Conditional row selection
 
-The TreeGrid supports conditional row selection through the [isRowSelectable](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.IsRowSelectable.html) property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
+The TreeGrid supports conditional row selection through the `isRowSelectable` property. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The `isRowSelectable` property accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
