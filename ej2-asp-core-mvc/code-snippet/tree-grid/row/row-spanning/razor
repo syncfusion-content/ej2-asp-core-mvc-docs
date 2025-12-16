@@ -1,0 +1,94 @@
+@using Syncfusion.EJ2
+@using Syncfusion.EJ2.Grids
+
+@Html.EJS().TreeGrid("RowSpanning")
+    .DataSource((IEnumerable<object>)ViewBag.datasource)
+    .EnableHover(false)
+    .AllowSelection(false)
+    .GridLines(GridLine.Both)
+    .EnableRowSpan(true)
+    .PageSettings(p=>p.PageSizeMode(Syncfusion.EJ2.TreeGrid.PageSizeMode.All).PageSize(18))
+    .AllowPaging()
+    .ClipMode(ClipMode.EllipsisWithTooltip)
+    .Columns(col =>
+    {
+        col.Field("ActivityName").HeaderText("Phase Name").Width(250).Freeze(FreezeDirection.Left).Add();
+        col.HeaderText("Schedule").TextAlign(TextAlign.Center).Columns(
+            new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+                new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "StartDate", Width = "140",
+                    HeaderText = "Start Date",
+                    Format="yMd",
+                    TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+                },
+                new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "EndDate", Width = "140",
+                    HeaderText = "End Date",
+                    Format="yMd",
+                    TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+                },
+            }
+        ).Add();
+        col.HeaderText("Work Status").TextAlign(TextAlign.Center).Columns(
+        new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "Status", Width = "140",
+                HeaderText = "Status",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+        }).Add();
+        col.HeaderText("Compliance").TextAlign(TextAlign.Center).Columns(
+        new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "PermitStatus", Width = "120",
+                HeaderText = "Permit Status",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "InspectionDate", Width = "180",
+                HeaderText = "Inspection Date",
+                Format="yMd",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "InspectionStatus", Width = "180",
+                HeaderText = "Inspection Status",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "PunchListStatus", Width = "150",
+                HeaderText = "Punch List Status",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+        }).Add();
+        col.HeaderText("Personnel").TextAlign(TextAlign.Center).Columns(
+        new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "Supervisor", Width = "180",
+                HeaderText = "Supervisor",
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "Team", Width = "200",
+                HeaderText = "Crew",
+            },
+        }).Add();
+        col.HeaderText("Materials").TextAlign(TextAlign.Center).Columns(
+        new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "MaterialUsed", Width = "180",
+                HeaderText = "Material Used",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "MaterialCost", Width = "140",
+                HeaderText = "Material Cost",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+        }).Add();
+        col.HeaderText("Cost Summary").TextAlign(TextAlign.Center).Columns(
+        new List<Syncfusion.EJ2.TreeGrid.TreeGridColumn>() {
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "TotalBudget", Width = "140",
+                HeaderText = "Planned Budget",
+                Format="C2",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+            new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "PaidToDate", Width = "140",
+                HeaderText = "Actual Spend",
+                Format="C2",
+                TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+            },
+        }).Add();
+    })
+    .Height(400)
+    .ChildMapping("Children")
+    .TreeColumnIndex(0)
+    .Render()

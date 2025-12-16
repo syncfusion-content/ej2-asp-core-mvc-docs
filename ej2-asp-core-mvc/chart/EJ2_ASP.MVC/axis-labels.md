@@ -449,3 +449,29 @@ Line break feature used to customize the long axis label text into multiple line
 {% endtabs %}
 {% endif %}
 
+
+## Axis label template
+
+The axis label template allows you to customize axis labels by formatting them with HTML content, applying conditional styling, and including dynamic elements such as icons, images or additional data. This customization is enabled by setting the template content in the `LabelTemplate` property of the [ChartAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight c# tabtitle="Label-template.cs" %}
+{% include code-snippet/chart/axis/multiple/label-template/label-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/axis/multiple/label-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Label-template.cs" %}
+{% include code-snippet/chart/axis/multiple/label-template/label-template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![ASP.NET MVC Chart Control](images/axislabel-template.png)
