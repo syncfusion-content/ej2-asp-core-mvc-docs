@@ -1,0 +1,103 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.DataSource" queryCellInfo="queryCellEvent" gridLines="Both" width= 'auto', height= 'auto' childMapping="subtasks" treeColumnIndex="1">
+    <e-treegrid-columns>
+        <e-treegrid-column field="EmployeeID" headerText="Employee ID" isPrimaryKey="true"  textAlign="Right" width="150"></e-treegrid-column>
+        <e-treegrid-column field="EmployeeName" headerText="Employee Name" width="200"></e-treegrid-column>
+        <e-treegrid-column field="Time9AM" headerText="9.00 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time930AM" headerText="9.30 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time10AM" headerText="10.00 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time1030AM" headerText="10.30 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time11AM" headerText="11.00 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time1130AM" headerText="11.30 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time12PM" headerText="12.00 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time1230PM" headerText="12.30 AM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time230PM" headerText="2.30 PM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time3PM" headerText="3.00 PM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time330PM" headerText="3.30 PM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time4PM" headerText="4.00 PM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time430PM" headerText="4.30 PM" width="120"></e-treegrid-column>
+        <e-treegrid-column field="Time5PM" headerText="5.00 PM" width="120"></e-treegrid-column>
+    </e-treegrid-columns>          
+</ejs-treegrid>
+<script>
+ function queryCellEvent(args)
+        {
+            var data = args.data;
+            switch (data.EmployeeID) {
+                case 10001:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time230PM' || args.column.field === 'Time430PM') {
+                        args.colSpan = 2;
+                    } else if (args.column.field === 'Time11AM') {
+                        args.colSpan = 3;
+                    }
+                    break;
+                case 10002:
+                    if (args.column.field === 'Time930AM' || args.column.field === 'Time230PM' || args.column.field === 'Time430PM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time11AM') {
+                        args.colSpan = 4;
+                    }
+                    break;
+                case 10003:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time1130AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time1030AM' || args.column.field === 'Time330PM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+                case 10004:
+                    if (args.column.field === 'Time9AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time11AM') {
+                        args.colSpan = 4;
+                    } else if (args.column.field === 'Time4PM' || args.column.field === 'Time230PM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+                case 10005:
+                    if (args.column.field === 'Time9AM') {
+                        args.colSpan = 4;
+                    } else if (args.column.field === 'Time1130AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time330PM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+                case 10006:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time430PM' || args.column.field === 'Time230PM' || args.column.field === 'Time330PM') {
+                        args.colSpan = 2;
+                    } else if (args.column.field === 'Time10AM' || args.column.field === 'Time1130AM') {
+                        args.colSpan = 3;
+                    }
+                    break;
+                case 10007:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time3PM' || args.column.field === 'Time1030AM') {
+                        args.colSpan = 2;
+                    } else if (args.column.field === 'Time1130AM' || args.column.field === 'Time4PM') {
+                        args.colSpan = 3;
+                    }
+                    break;
+                case 10008:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time1030AM' || args.column.field === 'Time230AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time4AM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+                case 10009:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time1130AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time430AM' || args.column.field === 'Time230AM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+                case 100010:
+                    if (args.column.field === 'Time9AM' || args.column.field === 'Time230AM' ||
+                        args.column.field === 'Time4AM' || args.column.field === 'Time1130AM') {
+                        args.colSpan = 3;
+                    } else if (args.column.field === 'Time1030AM') {
+                        args.colSpan = 2;
+                    }
+                    break;
+            }
+        }
+</script>   
