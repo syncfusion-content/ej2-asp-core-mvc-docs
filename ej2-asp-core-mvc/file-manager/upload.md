@@ -40,7 +40,7 @@ To learn more about the folder upload actions, refer to this [link](https://ej2.
 
 ## Chunk Upload
 
-The [chunkSize](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#chunksize) property specifies the size of each chunk when uploading large files. It divides the file into smaller parts, which are uploaded sequentially to the server.
+The [chunkSize](https://ej2.syncfusion.com/documentation/api/file-manager/uploadsettingsmodel#chunksize) property specifies the size of each chunk when uploading large files. It divides the file into smaller parts, which are uploaded sequentially to the server.
 
 This property allows you to enable chunked uploads for large files by specifying a `chunkSize`.
 
@@ -57,19 +57,19 @@ With chunk upload, the pause and resume options give users enhanced control over
 
 ## Auto Upload
 
-The [autoUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#autoupload) property controls whether files are automatically uploaded when they are added to the upload queue in the File Manager control.
+The [autoUpload](https://ej2.syncfusion.com/documentation/api/file-manager/uploadsettingsmodel#autoupload) property controls whether files are automatically uploaded when they are added to the upload queue in the File Manager control.
 
 The default value is `true`, the File Manager will automatically upload files as soon as they are added to the upload queue. If set to `false`, the files will not be uploaded automatically, giving you the chance to manipulate the files before uploading them to the server.
 
 ## Auto Close
 
-The [autoClose](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#autoclose) property controls whether the upload dialog automatically closes after all the files have been uploaded.
+The [autoClose](https://ej2.syncfusion.com/documentation/api/file-manager/uploadsettingsmodel#autoclose) property controls whether the upload dialog automatically closes after all the files have been uploaded.
 
 The default value is set to `false`. When set to this value, the upload dialog remains open even after the upload process is complete. If `autoClose` set to `true`, the upload dialog will automatically close after all the files in the upload queue are uploaded.
 
 ## Prevent upload based on file extensions
 
-The [allowedExtensions](https://ej2.syncfusion.com/documentation/api/file-manager/uploadSettingsModel/#allowedextensions) property specifies which file types are allowed for upload in the File Manager control by defining their extensions.
+The [allowedExtensions](https://ej2.syncfusion.com/documentation/api/file-manager/uploadsettingsmodel#allowedextensions) property specifies which file types are allowed for upload in the File Manager control by defining their extensions.
 
 This property lets you define which file types can be uploaded by specifying allowed extensions, separated by commas. For example, to allow only image files, you would set the `allowedExtensions` property to .jpg,.png.
 
