@@ -28,6 +28,19 @@ You can specify the type of content using the `contentType` property. The Block 
 
 > By default, the content type is set to `Text`.
 
+### ContentType 
+
+```typescript
+// Adding inline text
+{
+    blockType = "Paragraph",
+    content = new List<object>()
+        {
+        new { contentType = 'Text', content = "Inline Text" }
+    }
+}
+```
+
 ## Configure text content
 
 You can configure Text content by setting the `contentType` property to `Text`. The default content type is `Text`.
@@ -46,6 +59,25 @@ Link settings accepts the following options:
 | -------------------------  | ----------------------------------------------------------------- | ------------- |
 |`url`| Specifies the destination URL of the link.     | `''`          |
 
+### ContentType & Properties
+
+```typescript
+{
+    blockType = "Paragraph",
+    content = new List<object>()
+        {
+        new 
+        {
+            contentType = 'Link',
+            content = 'hyperlinks',
+            properties = {
+                url = 'https://ej2.syncfusion.com/documentation',
+            }
+        }
+    }
+}
+```
+
 ## Configure Label
 
 You can render labels by setting the `contentType` property as `Label`. Additionally, by configuring the `properties` property, you can customize how labels behave in your editor. This setup allows you to define the trigger character and specify the available label items.
@@ -60,6 +92,19 @@ The Block Editor comes with offers different built-in options. These include:
 ### Customize label
 
 You can customize the labels by using the `properties` property with type `Label`.
+
+### ContentType & Properties
+
+```typescript
+// Adding inline label
+{
+    blockType = "Paragraph",
+    content = new List<object>()
+        {
+        new {contentType = 'Label', properties = { lableId = "progress" }}
+        }
+}
+```
 
 ### Trigger Character configuration
 
@@ -94,13 +139,28 @@ The below sample demonstrates the customization of labels in the Block Editor.
 {% endhighlight %}
 {% endtabs %}
 
-![Block label-settings](images/block-label.png)
+![Block label-settings](./../../images/block-label.png)
 
 ## Configure mention
 
 Mentions are references to users or entities that can be inserted into your content. You can configure mention content by setting the `contentType` property to `Mention`.
 
 Mentions are typically triggered by the `@` character and are linked to the `Users` collection defined in the Block Editor.
+
+### ContentType
+
+```typescript
+// Adding inline code
+{
+    blockType = "Paragraph",
+    content = new List<object>()
+    {
+        new { 
+            contentType = "Mention", properties = new { userId = "user1" }
+        }
+    }
+}
+```
 
 ## Applying inline styles
 

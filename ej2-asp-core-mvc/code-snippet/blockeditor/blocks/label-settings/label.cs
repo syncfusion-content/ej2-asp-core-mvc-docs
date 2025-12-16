@@ -1,7 +1,7 @@
 using Syncfusion.EJ2.BlockEditor;
 
 public List<BlockModel> BlocksData { get; set; } = new List<BlockModel>();
-public LabelSettingsModel labelSettings { get; set; }
+public LabelSettings labelSettings { get; set; }
 private List<LabelItemModel> labelItems { get; set; }
 
 public class BlockModel
@@ -179,10 +179,10 @@ public ActionResult Label()
                         groupHeader = "Priority"
                 }
         };
-        labelSettings = new object()
+         labelSettings = new LabelSettings()
         {
-                triggerChar = "#",
-                labelItems = labelItems
+        TriggerChar = "#",
+        Items = labelItems
         };
         ViewBag.labelSettings = labelSettings;
         ViewBag.BlocksData = BlocksData;

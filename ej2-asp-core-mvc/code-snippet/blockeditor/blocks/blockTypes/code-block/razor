@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewBag["BlocksData"]).Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewBag["BlocksData"]).@Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewBag["BlocksData"]).CodeBlockSettings(ViewBag["CodeBlocksData"]).Render().Render()
 </div>
 
 <style>

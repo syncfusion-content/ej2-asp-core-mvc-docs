@@ -1,13 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blocks>
-            @foreach (var block in ViewBag.BlocksData)
-            {
-                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content" ></e-block>
-            }
-        </e-blocks>
+    <ejs-blockeditor id="block-editor" blocks="@ViewBag.BlocksData">
         <e-blockeditor-contextmenusettings enable="true" items="@ViewBag.ContextMenuItems" showItemOnClick="true" itemClick="function(e){ itemClick(e); }"></e-blockeditor-contextmenusettings>
     </ejs-blockeditor>
     <div id="controls">

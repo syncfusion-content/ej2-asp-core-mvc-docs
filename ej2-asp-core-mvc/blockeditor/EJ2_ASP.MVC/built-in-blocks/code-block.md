@@ -11,18 +11,18 @@ domainurl: ##DomainURL##
 
 # Code Blocks in ##Platform_Name## Block Editor control
 
-You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
+You can render Code blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html)property as [Code](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Code). By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 
 ## Global Code Settings
 
-You can configure global settings for code blocks using the `CodeBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
+You can configure global settings for code blocks using the [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
 
-The `CodeBlockSettings` property supports the following options:
+The [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
-| [languages](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CodeBlockSettingsModel.html#Syncfusion_EJ2_BlockEditor_CodeBlockSettingsModel_Languages) | Specifies the array of language options for syntax highlighting. | [] |
-| [defaultLanguage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.CodeBlockSettingsModel.html#Syncfusion_EJ2_BlockEditor_CodeBlockSettingsModel_DefaultLanguage) | Defines the default language to use for syntax highlighting. | 'plaintext' |
+| `languages` | Specifies the array of language options for syntax highlighting. | [] |
+| `defaultLanguage`| Defines the default language to use for syntax highlighting. | 'plaintext' |
 
 Each language object in the `languages` array should have:
 - `language`: The language value used for syntax highlighting
@@ -49,4 +49,4 @@ Below example illustrates how to render the different code block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Code Block](images/block-code.png)
+![Code Block](./../../images/block-code.png)

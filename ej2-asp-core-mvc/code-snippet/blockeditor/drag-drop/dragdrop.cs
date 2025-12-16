@@ -11,7 +11,6 @@ public class BlockModel
 public ActionResult DragDrop()
 {
         BlocksData.Add(new BlockModel() {
-                id = "block-1",
                 blockType = "Heading",
                 properties = new { level = 1},
                 content = new List<object>()
@@ -23,7 +22,6 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new BlockModel() {
-                id = "block-2",
                 blockType = "Paragraph",
                 content = new List<object>()
                 {
@@ -34,7 +32,6 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new BlockModel() {
-                id = "block-3",
                 blockType = "BulletList",
                 content = new List<object>()
                 {
@@ -45,7 +42,6 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new BlockModel() {
-                id = "block-4",
                 blockType = "NumberedList",
                 content = new List<object>()
                 {
@@ -56,7 +52,6 @@ public ActionResult DragDrop()
                 }
         });
         BlocksData.Add(new BlockModel() {
-                id = "block-5",
                 blockType = "NumberedList",
                 content = new List<object>()
                 {

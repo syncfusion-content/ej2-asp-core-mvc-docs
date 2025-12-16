@@ -37,4 +37,4 @@ During the drag operation, the editor provides visual cues to indicate where the
 {% endhighlight %}
 {% endtabs %}
 
-![Drag and Drop](images/drag-drop.png)
+![Drag and Drop](./../images/drag-drop.png)

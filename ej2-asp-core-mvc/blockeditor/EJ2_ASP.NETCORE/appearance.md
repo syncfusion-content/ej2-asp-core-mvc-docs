@@ -62,4 +62,4 @@ You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![Appearance](images/appearance.png)
+![Appearance](./../images/appearance.png)

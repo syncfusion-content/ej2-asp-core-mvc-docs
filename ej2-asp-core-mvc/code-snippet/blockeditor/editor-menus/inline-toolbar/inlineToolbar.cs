@@ -58,11 +58,8 @@ public ActionResult InlineToolbar()
         InlineToolbarSettings = new InlineToolbarSettings()
         {
                 Enable = true,
-                EnableTooltip = true,
-                Width = "80px",
-                Open = "open",
-                Close = "close",
-                ItemClicked = "itemClicked",
+                PopupWidth = "80px",
+                ItemClick = "itemClicked",
                 Items = InlineToolbarItems
         };
         ViewData["InlineToolbarItems"] = InlineToolbarItems;
