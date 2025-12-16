@@ -1,0 +1,41 @@
+@Html.EJS().TreeGrid("GroceriesItems").DataSource((IEnumerable<object>)ViewData["datasource"]).Columns(col =>
+   {
+       col.Field("Id").IsPrimaryKey(true).Visible(false).Add();
+       col.Field("Name").HeaderText("Items").Width(180).ShowCheckbox(true).Add();
+       col.Field("Description").HeaderText("Description").Width(300).Add();
+       col.Field("Quantity").HeaderText("Quantity").TextAlign(TextAlign.Right).Width(120).Add();
+       col.Field("Price").HeaderText("Price").Width(200).TextAlign(TextAlign.Right).Format("C2").Add();
+       col.Field("Status").HeaderText("Status").Width(100).TextAlign(TextAlign.Right).Add();
+       col.Field("Popularity").HeaderText("Popularity").Width(150).Add();
+
+   }).Aggregates(agg =>
+   {
+       agg.Columns(new List<Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn>
+           () { new Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn() { Field = "Price", Type = "Custom", FooterTemplate = "<span class=\"selected-total\">Total Price of Selected Rows: $0.00</span>" }  }).Add();
+   }).Height(400).ChildMapping("Items").TreeColumnIndex(1).EnableVirtualization(true).AutoCheckHierarchy(true).CheckboxChange("updateFooterTotal").DataBound("updateFooterTotal").Render()
+    </div>
+
+    <script>
+        
+        var calculateSelectedTotal = () => {
+            var treegrid = document.getElementById('GroceriesItems').ej2_instances[0]
+            var checkedRecords = treegrid.getCheckedRecords();
+            var checkedRecordsPrice = checkedRecords.reduce((sum, rec) => sum + (parseFloat(rec.Price) || 0), 0);
+            return checkedRecordsPrice;
+        };
+        var updateFooterTotal = () => {
+            var totalPrice = calculateSelectedTotal();
+            var treegrid = document.getElementById('GroceriesItems').ej2_instances[0]
+            var footerEl = treegrid.getFooterContent().querySelector('.selected-total');
+            if (footerEl) {
+                footerEl.innerHTML = `Total Price of Selected Rows: <strong>$${totalPrice.toFixed(2)}</strong>`;
+            }
+        };
+    </script>
+
+    <style>
+        .e-treerowcell {
+            height: 60px;
+            font-weight: bold;
+        }
+    </style>
