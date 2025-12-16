@@ -23,26 +23,6 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 {% endhighlight %}
 {% endtabs %}
 
-<!-- {% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/tree-grid/row/row-spanning/spanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/row-spanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/tree-grid/row/row-spanning/spanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %} -->
-
 ## Limitations
 
 Row spanning in the ASP.MVC TreeGrid has the following limitations:
@@ -54,13 +34,11 @@ Row spanning in the ASP.MVC TreeGrid has the following limitations:
 
 > When using row spanning, ensure that the spanned cells do not interfere with TreeGrid operations such as sorting, filtering, or editing, as this may lead to unexpected behavior.
 
-## Row spanning using EnableRowSpan property
+## Row spanning implementation through API
 
-The Syncfusion ASP.MVC TreeGrid introduces a simplified approach to vertically merge cells with identical values in the same column across consecutive rows.
+The Syncfusion TreeGrid provides an API-based approach to vertically merge cells with identical values in the same column across consecutive rows.
 
-The row spanning feature in the Syncfusion ASP.MVC TreeGrid can be enabled using `EnableRowSpan` property which significantly enhances readability and delivers a clean, professional look by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
-
-To enable column spanning, set the `EnableRowSpan` property to **true** in the TreeGrid configuration.
+The row spanning feature in the Syncfusion TreeGrid can be enabled using `EnableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,26 +48,6 @@ To enable column spanning, set the `EnableRowSpan` property to **true** in the T
 {% include code-snippet/tree-grid/row/row-spanning/row-span.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-<!-- {% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Spanningapi.cs" %}
-{% include code-snippet/tree-grid/row/spanning/rowspanningapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/spanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Spanningapi.cs" %}
-{% include code-snippet/tree-grid/row/spanning/rowspanningapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %} -->
 
 > In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
 
@@ -104,7 +62,3 @@ Row spanning feature is not compatible with all the features which are available
 * Detail Template
 * Editing
 * Export
-
-## See Also
-
-* [Column spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid](https://ej2.syncfusion.com/asp.mvc/documentation/treegrid/columns/column-spanning)

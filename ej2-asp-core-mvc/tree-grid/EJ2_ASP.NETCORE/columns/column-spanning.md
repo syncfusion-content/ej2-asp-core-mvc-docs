@@ -34,14 +34,11 @@ Column spanning in the ASP.Core TreeGrid has the following limitations:
 
 > When using column spanning, ensure that the spanned cells do not interfere with TreeGrid operations such as sorting, filtering, or editing, as this may lead to unexpected behavior.
 
-## Column spanning using EnableColumnSpan property
+## Column spanning implementation through API
 
-The Syncfusion ASP.Core TreeGrid introduces a simplified approach to horizontally merge cells with identical values in the same row across adjacent columns.
+The Syncfusion TreeGrid provides an API-based approach to horizontally merge cells with identical values in the same row across adjacent columns.
 
-The column spanning feature in the Syncfusion ASP.Core TreeGrid can be enabled using `EnableColumnSpan` property which significantly enhances readability and delivers a clean, professional look by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
-
-To enable column spanning, set the `EnableColumnSpan` property to **true** in the TreeGrid configuration.
-
+The column spanning feature in the Syncfusion TreeGrid can be enabled using `EnableColumnSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,7 +62,3 @@ Column spanning feature is not compatible with all the features which are availa
 * Detail Template
 * Editing
 * Export
-
-## See Also
-
-* [Row spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid](https://ej2.syncfusion.com/asp.core/documentation/treegrid/row/row-spanning)
