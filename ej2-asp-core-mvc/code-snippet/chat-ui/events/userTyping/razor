@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div style="height:380px; width:450px">
-    @Html.EJS().ChatUI("chatUser").UserTyping("UserTyping").Render()
+    @Html.EJS().ChatUI("chatUser").UserTyping("UserTyping").User(ViewBag.CurrentUser).Render()
 </div>
 
 <script>
