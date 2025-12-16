@@ -14,28 +14,14 @@ The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup>
 
 In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00 PM" column.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/row-spanning/tagHelper %}
+{% include code-snippet/tree-grid/row/row-span/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/tree-grid/row/row-spanning/spanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/row-spanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowSpanning.cs" %}
-{% include code-snippet/tree-grid/row/row-spanning/spanning.cs %}
+{% highlight c# tabtitle="Span.cs" %}
+{% include code-snippet/tree-grid/row/row-span/row-spanning.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limitations
 
@@ -54,28 +40,14 @@ The Syncfusion TreeGrid provides an API-based approach to vertically merge cells
 
 The row spanning feature in the Syncfusion TreeGrid can be enabled using `EnableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/spanning/tagHelper %}
+{% include code-snippet/tree-grid/row/row-spanning/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Spanningapi.cs" %}
-{% include code-snippet/tree-grid/row/spanning/rowspanningapi.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/row/spanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Spanningapi.cs" %}
-{% include code-snippet/tree-grid/row/spanning/rowspanningapi.cs %}
+{% highlight c# tabtitle="Span.cs" %}
+{% include code-snippet/tree-grid/row/row-spanning/row-spanning.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
 

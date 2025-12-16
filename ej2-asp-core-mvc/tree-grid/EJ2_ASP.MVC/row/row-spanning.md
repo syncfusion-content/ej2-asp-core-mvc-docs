@@ -19,7 +19,7 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 {% include code-snippet/tree-grid/row/row-span/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Span.cs" %}
-{% include code-snippet/tree-grid/row/row-span/row-span.cs %}
+{% include code-snippet/tree-grid/row/row-span/row-spanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -45,7 +45,7 @@ The row spanning feature in the Syncfusion TreeGrid can be enabled using `Enable
 {% include code-snippet/tree-grid/row/row-spanning/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Span.cs" %}
-{% include code-snippet/tree-grid/row/row-spanning/row-span.cs %}
+{% include code-snippet/tree-grid/row/row-spanning/row-spanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 

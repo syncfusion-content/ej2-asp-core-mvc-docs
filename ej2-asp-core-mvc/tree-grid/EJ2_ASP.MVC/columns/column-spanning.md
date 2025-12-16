@@ -19,7 +19,7 @@ In the following example, Employee **Davolio** is scheduled for analysis from "9
 {% include code-snippet/tree-grid/columns-mvc/columnspanning/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Columnspanning.cs" %}
-{% include code-snippet/grid/columns-mvc/columnspanning/columnspanning.cs %}
+{% include code-snippet/tree-grid/columns-mvc/columnspanning/columnspanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 
