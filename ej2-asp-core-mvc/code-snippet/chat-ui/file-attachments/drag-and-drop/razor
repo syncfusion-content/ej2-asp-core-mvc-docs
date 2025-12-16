@@ -1,0 +1,5 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<div style="height:380px; width:450px">
+    @Html.EJS().ChatUI("chatUser").EnableAttachments(true).AttachmentSettings(new ChatUIFileAttachmentSettings() { SaveUrl = @Url.Content("https://services.syncfusion.com/aspnet/production/api/FileUploader/Save"), RemoveUrl = @Url.Content("https://services.syncfusion.com/aspnet/production/api/FileUploader/Remove"), EnableDragAndDrop = false }).User(ViewBag.CurrentUser).Render()
+</div>

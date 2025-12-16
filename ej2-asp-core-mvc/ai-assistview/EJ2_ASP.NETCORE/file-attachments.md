@@ -75,3 +75,17 @@ You can use the  `maxFileSize` property to allowed a maximum file size of the u
 {% endtabs %}
 
 ![FileSize](images/file-size.png)
+
+### Setting maximum count
+Restrict how many files can be attached at once using `maximumCount` property. The default value is `10`. If users select more than the allowed count, the maximum count reached error will be displayed.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/file-attachments/maximumCount/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MaximumCount.cs" %}
+{% include code-snippet/ai-assistview/file-attachments/maximumCount/maximumCount.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![MaximumCount](images/maximumCount.png)

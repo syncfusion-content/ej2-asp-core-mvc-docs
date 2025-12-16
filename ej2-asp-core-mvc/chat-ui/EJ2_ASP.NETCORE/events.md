@@ -50,3 +50,68 @@ The [userTyping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.In
 {% include code-snippet/chat-ui/events/userTyping/userTyping.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Before attachment upload
+
+The `beforeAttachmentUpload` event is triggered before attached files begin uploading in the Chat UI.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/beforeAttachmentUpload/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="BeforeAttachmentUpload.cs" %}
+{% include code-snippet/chat-ui/events/beforeAttachmentUpload/beforeAttachmentUpload.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Attachment upload success
+
+The `attachmentUploadSuccess` event is triggered when an attached file is successfully uploaded in the Chat UI.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/attachmentUploadSuccess/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AttachmentUploadSuccess.cs" %}
+{% include code-snippet/chat-ui/events/attachmentUploadSuccess/attachmentUploadSuccess.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Attachment upload failure
+
+The `attachmentUploadFailure` event is triggered when an attached file upload fails in the Chat UI.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/attachmentUploadFailure/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AttachmentUploadFailure.cs" %}
+{% include code-snippet/chat-ui/events/attachmentUploadFailure/attachmentUploadFailure.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Attachment removed
+
+The `attachmentRemoved` event is triggered when an attached file is removed from the Chat UI.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/attachmentRemoved/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AttachmentRemoved.cs" %}
+{% include code-snippet/chat-ui/events/attachmentRemoved/attachmentRemoved.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Attachment click
+
+The `attachmentClick` event is triggered when an attached file is clicked in the Chat UI.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chat-ui/events/attachmentClick/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="AttachmentClick.cs" %}
+{% include code-snippet/chat-ui/events/attachmentClick/attachmentClick.cs %}
+{% endhighlight %}
+{% endtabs %}
