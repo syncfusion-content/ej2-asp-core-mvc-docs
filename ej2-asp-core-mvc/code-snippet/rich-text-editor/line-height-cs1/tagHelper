@@ -1,0 +1,5 @@
+<ejs-richtexteditor id="custom-line-height" value="@ViewBag.value">
+    <e-richtexteditor-lineheight default="2" items="@ViewBag.LineHeightItems" supportAllValues="true">
+    </e-richtexteditor-lineheight>
+    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
+</ejs-richtexteditor>

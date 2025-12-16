@@ -1,0 +1,25 @@
+    <ejs-chart id="container" title="Olympic Medals" width="70%" load="load">
+        <e-chart-primaryxaxis valueType="Category">
+        </e-chart-primaryxaxis>
+        <e-chart-primaryyaxis valueType="Double">
+        </e-chart-primaryyaxis>
+        <e-series-collection>
+            <e-series dataSource="ViewBag.dataSource" xName="country" yName="gold" type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column">
+                <e-series-marker visible="true"></e-series-marker>
+            </e-series>
+        </e-series-collection>
+    </ejs-chart>
+    <script id="AxisLabelTemplate" type="text/x-template">
+        <table>
+            <tr>
+                <td align="center" style="background-color: #2E8B57; font-size: 14px; color: #FFD700; font-weight: bold; padding: 5px">Country :</td>
+                <td align="center" style="background-color: #4682B4; font-size: 14px; color: #FFFFFF; font-weight: bold; padding: 5px">${label}</td>
+            </tr>
+        </table>
+    </script>
+
+    <script>
+        function load(args) {
+            args.chart.primaryXAxis.labelTemplate = "#AxisLabelTemplate";
+        }
+    </script>
