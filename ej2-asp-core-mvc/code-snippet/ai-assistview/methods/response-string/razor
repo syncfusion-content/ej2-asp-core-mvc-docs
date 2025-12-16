@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    <button id="addStringResponse">Add String Response</button>
+    <button id="addStringResponse" onclick="getPromptResponse()">Add String Response</button>
     @Html.EJS().AIAssistView("aiAssistView").PromptRequest("onPromptRequest").Created("onCreated").Render()
 </div>
 
@@ -16,11 +16,9 @@
             assistObj.addPromptResponse(defaultResponse);
         }, 2000);
     }
-    document.addEventListener('click', function (event) {
-        if (event.target && event.target.id === 'addStringResponse') {
-            assistObj.addPromptResponse('Dynamic response');
-        }
-    });
+    function getPromptResponse() {
+        assistObj.addPromptResponse('Dynamic response');
+    }
 </script>
 
 <style>
