@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Views
+# Views in File Manager Control
 
 The view section displays files and folders for user browsing. The `view` API can also be used to change the initial view of the File Manager.
 

@@ -35,7 +35,7 @@ The `Toolbar` provides easy access to the file operations using different button
 
 If the toolbar items exceed the size of the toolbar, the excess items will be moved to a toolbar popup with a dropdown button at the end of the toolbar.
 
-*Refer [Toolbar](./file-operations/#toolbar) section in file operations to know more about the buttons present in toolbar*.
+*Refer [Toolbar](./file-operations#toolbar) section in file operations to know more about the buttons present in toolbar*.
 
 ![Toolbar](./images/toolbar.png)
 
@@ -91,6 +91,6 @@ The context menu appears on user interaction such as right-click. The File Manag
 
 Context menu can be customized using the [`contextMenuSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManagerContextMenuSettings.html), [`menuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_MenuOpen), and [`menuClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_MenuClose) events.
 
-*Refer [Context Menu](./file-operations/#context-menu) section in file operations to know more about the menu items present in context menu*.
+*Refer [Context Menu](./file-operations#context-menu) section in file operations to know more about the menu items present in context menu*.
 
 ![Context Menu](./images/contextmenu.png)

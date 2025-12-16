@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Navigation Pane in ##Platform_Name## File Manager Control | Syncfusion
+title: Customize Navigation Pane in ##Platform_Name## Syncfusion File Manager
 description: Learn here all about Customize the Navigation Pane in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize the Navigation Pane
