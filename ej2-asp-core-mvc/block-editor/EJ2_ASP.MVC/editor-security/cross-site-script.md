@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Cross-Site scripting(XSS) prevention in ##Platform_Name## Block Editor control
+# Prevent XSS in ##Platform_Name## Block Editor Control
 
 The Block Editor control allows users to edit the content with security by preventing cross-site scripting (XSS). By default, it provides built-in support to remove elements from editor content that cause XSS attacks. The editor removes the elements based on the attributes if it is possible to execute a script.
 
