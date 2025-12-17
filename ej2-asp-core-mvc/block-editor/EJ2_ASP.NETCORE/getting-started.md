@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core BlockEditor control
+# Getting Started with ASP.NET Core Block Editor control
 
 This section briefly explains about how to include `ASP.NET Core BlockEditor` control in your ASP.NET Core application using Visual Studio.
 

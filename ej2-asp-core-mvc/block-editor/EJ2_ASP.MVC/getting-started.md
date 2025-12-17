@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC BlockEditor control
+# Getting Started with ASP.NET MVC Block Editor control
 
 This section briefly explains about how to include `ASP.NET MVC BlockEditor` control in your ASP.NET MVC application using Visual Studio.
 
