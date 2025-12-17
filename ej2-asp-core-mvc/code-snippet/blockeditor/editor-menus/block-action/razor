@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).BlockActionsMenu((BlockActionMenuSettings)ViewData["BlockActionMenuSettings"]).Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).BlockActionsMenu((BlockActionMenuSettings)ViewData["BlockActionMenuSettings"]).Render()
     <div id="controls">
         <h3>Block Action Menu Configuration Demo</h3>
         <div class="instructions">

@@ -57,7 +57,7 @@ Below example demonstrates the customization of the Slash Command menu.
 {% endhighlight %}
 {% endtabs %}
 
-![Slash Command](images/editor-slashcommand.png)
+![Slash Command](./../images/editor-slashcommand.png)
 
 ## Context menu
 
@@ -97,7 +97,7 @@ Below example demonstrates the customization of the Context menu.
 {% endhighlight %}
 {% endtabs %}
 
-![Context Menu](images/editor-contextmenu.png)
+![Context Menu](./../images/editor-contextmenu.png)
 
 ## Block action menu
 
@@ -141,7 +141,7 @@ Below example demonstrates the customization of the Block action menu.
 {% endhighlight %}
 {% endtabs %}
 
-![Block Action](images/editor-blockaction.png)
+![Block Action](./../images/editor-blockaction.png)
 
 ## Inline Toolbar
 

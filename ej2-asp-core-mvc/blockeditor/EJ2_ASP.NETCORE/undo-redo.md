@@ -32,4 +32,4 @@ Block Editor allows up to `30` Undo/Redo actions by default. You can modify the 
 {% endhighlight %}
 {% endtabs %}
 
-![Undo Redo](images/undo-redo.png)
+![Undo Redo](./../images/undo-redo.png)

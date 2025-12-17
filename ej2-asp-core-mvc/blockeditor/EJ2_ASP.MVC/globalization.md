@@ -57,7 +57,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
 
-![Locale](images/locale.png)
+![Locale](./../images/locale.png)
 
 ## RTL
 
@@ -72,4 +72,4 @@ RTL provides an option to switch the text direction and layout of the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![RTL](images/rtl.png)
+![RTL](./../images/rtl.png)

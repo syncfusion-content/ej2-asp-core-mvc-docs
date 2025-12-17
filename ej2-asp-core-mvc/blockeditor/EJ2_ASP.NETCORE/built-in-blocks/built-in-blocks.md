@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Blocks in ##Platform_Name## Block Editor control
 
-The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [e-blocks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.Blocks.html) tag helper allows you to define and manage the content structure of your editor.
+The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [blocks](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) tag helper allows you to define and manage the content structure of your editor.
 
 ## Blocks
 
@@ -53,11 +53,11 @@ By default, the `indent` property is set to `0`.
 {% endhighlight %}
 {% endtabs %}
 
-![Block Indent](images/block-indent.png)
+![Block Indent](./../../images/block-indent.png)
 
 ## Configure CSS Class
 
-You can apply custom styling to individual blocks using the `cssClass` property. This property accepts a string containing one or more CSS class names.
+You can apply custom styling to individual blocks using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CssClass)  property. This property accepts a string containing one or more CSS class names.
 
 Custom CSS classes allow you to define specialized styling for specific blocks in your editor.
 
@@ -70,11 +70,11 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 {% endhighlight %}
 {% endtabs %}
 
-![Block cssClass](images/block-cssClass.png)
+![Block cssClass](./../../images/block-cssClass.png)
 
 ## Configure templates
 
-The Block Editor allows you to use custom templates for specialized content using the `template` property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Template) property. Templates can be defined as strings, functions, or HTML elements.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -85,4 +85,4 @@ The Block Editor allows you to use custom templates for specialized content usin
 {% endhighlight %}
 {% endtabs %}
 
-![Template Block](images/block-template.png)
+![Template Block](./../../images/block-template.png)
