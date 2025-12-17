@@ -108,10 +108,10 @@ By default, the `isChecked` property is set to `false`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/isChecked/tagHelper %}
+{% include code-snippet/block-editor/blocks/isChecked/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="IsChecked.cs" %}
-{% include code-snippet/blockeditor/blocks/isChecked/ischecked.cs %}
+{% include code-snippet/block-editor/blocks/isChecked/ischecked.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,10 +135,10 @@ Below example illustrates how to render the different types of list blocks in th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/list-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/list-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="List.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/list-block/list.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/list-block/list.cs %}
 {% endhighlight %}
 {% endtabs %}
 

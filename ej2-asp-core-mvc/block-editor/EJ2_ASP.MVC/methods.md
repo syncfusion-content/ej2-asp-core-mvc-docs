@@ -86,10 +86,10 @@ Below example demonstrates the usage of the above methods.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/methods/block/razor %}
+{% include code-snippet/block-editor/methods/block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Block.cs" %}
-{% include code-snippet/blockeditor/methods/block/block.cs %}
+{% include code-snippet/block-editor/methods/block/block.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,10 +164,10 @@ Below example demonstrates the usage of the above methods.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/methods/selection/razor %}
+{% include code-snippet/block-editor/methods/selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selection.cs" %}
-{% include code-snippet/blockeditor/methods/selection/selection.cs %}
+{% include code-snippet/block-editor/methods/selection/selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -235,10 +235,10 @@ Below example demonstrates the usage of the above methods.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/methods/formatting/razor %}
+{% include code-snippet/block-editor/methods/formatting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/blockeditor/methods/formatting/formatting.cs %}
+{% include code-snippet/block-editor/methods/formatting/formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -307,10 +307,10 @@ Below example demonstrates the usage of the above methods.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/methods/data/razor %}
+{% include code-snippet/block-editor/methods/data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data.cs" %}
-{% include code-snippet/blockeditor/methods/data/data.cs %}
+{% include code-snippet/block-editor/methods/data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 

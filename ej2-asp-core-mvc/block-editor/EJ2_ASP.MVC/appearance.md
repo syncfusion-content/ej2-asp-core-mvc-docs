@@ -55,10 +55,10 @@ You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/appearance/razor %}
+{% include code-snippet/block-editor/appearance/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Appearance.cs" %}
-{% include code-snippet/blockeditor/appearance/appearance.cs %}
+{% include code-snippet/block-editor/appearance/appearance.cs %}
 {% endhighlight %}
 {% endtabs %}
 

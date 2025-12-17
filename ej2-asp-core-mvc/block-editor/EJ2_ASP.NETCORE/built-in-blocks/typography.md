@@ -38,10 +38,10 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paragraph.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/paragraph.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/paragraph.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,10 +65,10 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/placeholder/tagHelper %}
+{% include code-snippet/block-editor/blocks/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% include code-snippet/blockeditor/blocks/placeholder/placeholder.cs %}
+{% include code-snippet/block-editor/blocks/placeholder/placeholder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +102,10 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Heading.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/heading-block/heading.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/heading-block/heading.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -184,10 +184,10 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toggle.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/toggle-block/toggle.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -238,10 +238,10 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Divider.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/divider-block/divider.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/divider-block/divider.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,10 +268,10 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Quote.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/quote-block/quote.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -322,10 +322,10 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Callout.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/callout-block/callout.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -347,10 +347,10 @@ The below sample demonstrates the configuration of children in the Block Editor 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/children/tagHelper %}
+{% include code-snippet/block-editor/blocks/children/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Children.cs" %}
-{% include code-snippet/blockeditor/blocks/children/children.cs %}
+{% include code-snippet/block-editor/blocks/children/children.cs %}
 {% endhighlight %}
 {% endtabs %}
 

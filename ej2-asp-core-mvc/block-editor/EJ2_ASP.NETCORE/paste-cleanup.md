@@ -61,10 +61,10 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/paste-cleanup/allowedStyle/tagHelper %}
+{% include code-snippet/block-editor/paste-cleanup/allowedStyle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllowedStyle.cs" %}
-{% include code-snippet/blockeditor/paste-cleanup/allowedStyle/allowedstyle.cs %}
+{% include code-snippet/block-editor/paste-cleanup/allowedStyle/allowedstyle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +102,10 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/paste-cleanup/plainText/tagHelper %}
+{% include code-snippet/block-editor/paste-cleanup/plainText/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text.cs" %}
-{% include code-snippet/blockeditor/paste-cleanup/plainText/plaintext.cs %}
+{% include code-snippet/block-editor/paste-cleanup/plainText/plaintext.cs %}
 {% endhighlight %}
 {% endtabs %}
 

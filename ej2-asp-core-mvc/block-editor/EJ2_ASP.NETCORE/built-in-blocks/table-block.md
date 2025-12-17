@@ -30,10 +30,10 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table.cs" %}
-{% include code-snippet/blockeditor/blocks/blockTypes/table-block/table.cs %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-block/table.cs %}
 {% endhighlight %}
 {% endtabs %}
 

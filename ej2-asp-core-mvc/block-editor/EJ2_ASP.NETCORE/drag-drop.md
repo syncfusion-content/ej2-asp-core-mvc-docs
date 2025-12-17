@@ -30,10 +30,10 @@ During the drag operation, the editor provides visual cues to indicate where the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/drag-drop/tagHelper %}
+{% include code-snippet/block-editor/drag-drop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DragDrop.cs" %}
-{% include code-snippet/blockeditor/drag-drop/dragdrop.cs %}
+{% include code-snippet/block-editor/drag-drop/dragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
 

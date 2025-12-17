@@ -25,10 +25,10 @@ Block Editor allows up to `30` Undo/Redo actions by default. You can modify the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/blockeditor/undo-redo/razor %}
+{% include code-snippet/block-editor/undo-redo/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="UndoRedo.cs" %}
-{% include code-snippet/blockeditor/undo-redo/undoredo.cs %}
+{% include code-snippet/block-editor/undo-redo/undoredo.cs %}
 {% endhighlight %}
 {% endtabs %}
 
