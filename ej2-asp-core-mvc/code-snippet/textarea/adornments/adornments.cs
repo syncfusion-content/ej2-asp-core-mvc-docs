@@ -1,4 +1,4 @@
-public ActionResult Index()
+public ActionResult adornments()
 {
     return View();
 }
