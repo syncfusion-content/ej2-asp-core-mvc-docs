@@ -16,7 +16,7 @@ You can configure the paste settings using the [PasteCleanupSettings](https://he
 
 ## Configuring allowed styles
 
-The [AllowedStyles](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlAllowedStyles) property in the [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) model allows you to define which CSS styles are permitted when content is pasted into the editor. Any style not included in this list will be stripped from the pasted content. This ensures that only desired visual attributes are preserved, maintaining a clean and consistent look.
+The [AllowedStyles](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_AllowedStyles) property in the [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) model allows you to define which CSS styles are permitted when content is pasted into the editor. Any style not included in this list will be stripped from the pasted content. This ensures that only desired visual attributes are preserved, maintaining a clean and consistent look.
 
 By default, following styles are allowed:
 
@@ -35,7 +35,7 @@ In the below example, only `font-weight` and `font-style` styles will be retaine
 
 ## Setting denied tags
 
-The [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlDeniedTags) property in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) enables you to specify HTML tags that should be completely removed from the pasted content. This is particularly useful for stripping out potentially problematic or irrelevant tags, such as `script` tags, `iframe`s, or any other elements you don't want to allow in the editor. By default, the [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlDeniedTags) property is an empty array, meaning no tags are removed by default.
+The [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_DeniedTags) property in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html) enables you to specify HTML tags that should be completely removed from the pasted content. This is particularly useful for stripping out potentially problematic or irrelevant tags, such as `script` tags, `iframe`s, or any other elements you don't want to allow in the editor. By default, the [DeniedTags](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_DeniedTags) property is an empty array, meaning no tags are removed by default.
 
 In the below example, any `<script>` or `<iframe>` tags found in the pasted content will be removed, preventing unwanted behavior or styling issues.
 
@@ -63,7 +63,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 
 ## Disable Keep format
 
-By default, the editor attempts to keep the formatting of the pasted content (e.g., bold, italics, links). You can disable this behavior by setting the [KeepFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlKeepFormat) property to `false` in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html). When disabled, the editor will primarily paste the content as plain text regardless of [AllowedStyles](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlAllowedStyles)
+By default, the editor attempts to keep the formatting of the pasted content (e.g., bold, italics, links). You can disable this behavior by setting the [KeepFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_KeepFormat) property to `false` in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html). When disabled, the editor will primarily paste the content as plain text regardless of [AllowedStyles](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_AllowedStyles)
 
 ```cshtml
 
@@ -75,7 +75,7 @@ By default, the editor attempts to keep the formatting of the pasted content (e.
 
 ## Allowing plain text
 
-To paste content purely as plain text, stripping all HTML tags and inline styles, you can set the [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlPlainText) property to `true` in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html). This ensures that only the raw textual content is inserted into the editor, making it ideal for maintaining strict content consistency. By default, the [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.htmlPlainText) property is set to `false`.
+To paste content purely as plain text, stripping all HTML tags and inline styles, you can set the [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_PlainText) property to `true` in [`PasteCleanupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html). This ensures that only the raw textual content is inserted into the editor, making it ideal for maintaining strict content consistency. By default, the [PlainText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.PasteCleanupSettings.html#Syncfusion_EJ2_BlockEditor_PasteCleanupSettings_PlainText) property is set to `false`.
 
 ```cshtml
 
