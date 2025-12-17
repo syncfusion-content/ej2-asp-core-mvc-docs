@@ -21,15 +21,12 @@ public ActionResult Placeholder()
                         }
                 }
         });
-        BlocksData.Add(new BlockModel() {
-                blockType = "Paragraph",
-                content = new List<object>(){
-                        new{
-                                contentType = "Text",
-                                props= new { placeholder = "Start typing your notes or press \"/\" for commands..." }
-                        }
-                }
-        });
+        BlocksData.Add(new BlockModel()
+                {
+                
+                        blockType = "Paragraph",
+                        properties = new { placeholder = "Start typing your notes or press \"/\" for commands..." }
+                });
         ViewBag.BlocksData = BlocksData;
         return View();
 }

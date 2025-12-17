@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).Created("onCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).Created("onCreated").Render()
     <div id="controls">
         <h3>Selection and Cursor Methods</h3>
         <div class="button-group">

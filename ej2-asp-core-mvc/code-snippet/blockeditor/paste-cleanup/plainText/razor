@@ -15,7 +15,7 @@
 }
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).PasteSettings(new PasteSettings() { KeepFormat = false, PlainText = true }).AfterPaste("function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }").Created("onEditorCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).PasteSettings(new PasteSettings() { KeepFormat = false, PlainText = true }).AfterPaste("function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }").Created("onEditorCreated").Render()
     <div id="controls">
         <h4>Test Content to Copy and Paste:</h4>
         <div class="test-content">

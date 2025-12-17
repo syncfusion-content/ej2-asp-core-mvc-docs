@@ -15,7 +15,6 @@ public class BlockModel
 public ActionResult BlockAction()
 {
         BlocksData.Add(new BlockModel() {
-                id = "title-block",
                 blockType = "Heading",
                 properties = new { level = 1},
                 content = new List<object>()
@@ -28,7 +27,6 @@ public ActionResult BlockAction()
         });
         BlocksData.Add(new BlockModel()
         {
-                id = "intro-block",
                 blockType = "Quote",
                 content = new List<object>()
                 {
@@ -67,12 +65,11 @@ public ActionResult BlockAction()
                 EnableTooltip = false,
                 PopupHeight = "110px",
                 PopupWidth = "180px",
-                Open = "open",
-                Close = "close",
-                ItemClick = "itemClick",
+                Opening  = "open",
+                Closing = "close",
+                ItemSelect= "itemClick",
                 Items = BlockItems
         };
-        ViewData.BlockActionMenuSettings = BlockActionMenuSettings;
         ViewBag.BlockItems = BlockItems;
         ViewBag.BlocksData = BlocksData;
         return View();
