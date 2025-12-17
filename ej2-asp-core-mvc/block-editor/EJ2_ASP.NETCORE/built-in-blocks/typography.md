@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Typography Blocks in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Typography Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Typography Blocks in ASP.NET Core Block Editor control | Syncfusion
+description: Checkout and learn about Typography Blocks with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Typography Blocks in ##Platform_Name## Block Editor control
+# Typography Blocks in ASP.NET Core Block Editor control
 
 Typography blocks are essential for organizing and presenting text-based content in your documents. The Block Editor component supports various structural blocks—such as Paragraph, Heading, Collapsible Block, Divider, Quote, and Callout to help you format and structure content effectively.
 

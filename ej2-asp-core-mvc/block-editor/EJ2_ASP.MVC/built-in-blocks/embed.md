@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Embed Blocks in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Embed Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Embed Blocks in ASP.NET MVC Block Editor control | Syncfusion
+description: Checkout and learn about Embed Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Embed Blocks in ##Platform_Name## Block Editor control
+# Embed Blocks in ASP.NET MVC Block Editor control
 
 Block Editor supports addition of embeds to help you organize, showcase contents and format your content effectively.
 

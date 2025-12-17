@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about appearance with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Appearance in ASP.NET MVC Block Editor Control | Syncfusion
+description: Checkout and learn about appearance with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
-# Appearance in ##Platform_Name## Block Editor control
+# Appearance in ASP.NET MVC Block Editor control
 
 The Block Editor control provides various appearance customization options to match your application's design requirements. These properties allow you to control the visual styling, layout, and overall look and feel of the editor.
 

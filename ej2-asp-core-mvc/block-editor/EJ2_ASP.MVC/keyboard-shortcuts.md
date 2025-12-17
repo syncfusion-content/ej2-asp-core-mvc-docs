@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Keyboard Shortcuts in ##Platform_Name## Block Editor | Syncfusion
-description: Checkout and learn about Keyboard Shortcuts with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Keyboard Shortcuts in ASP.NET MVC Block Editor | Syncfusion
+description: Checkout and learn about Keyboard Shortcuts with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
-# Keyboard Shortcuts in ##Platform_Name## Block Editor control
+# Keyboard Shortcuts in ASP.NET MVC Block Editor control
 
 The Block Editor control provides comprehensive keyboard shortcuts to enhance productivity and streamline content creation. These shortcuts are organized into different categories based on their functionality, allowing users to quickly access various features without relying on mouse interactions.
 

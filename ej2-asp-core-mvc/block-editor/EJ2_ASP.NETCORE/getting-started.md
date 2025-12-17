@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## BlockEditor Control | Syncfusion
-description: Checkout and learn about getting started with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Getting Started with ASP.NET Core BlockEditor Control | Syncfusion
+description: Checkout and learn about getting started with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

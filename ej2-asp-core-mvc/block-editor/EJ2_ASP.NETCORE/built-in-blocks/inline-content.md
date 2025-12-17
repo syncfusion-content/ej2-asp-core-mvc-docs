@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Inline Content in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Inline Content with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Inline Content in ASP.NET Core Block Editor control | Syncfusion
+description: Checkout and learn about Inline Content with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Inline Content  in ##Platform_Name## Block Editor control
+# Inline Content  in ASP.NET Core Block Editor control
 
 Content in the Block Editor is managed through the `content` property of blocks.
 

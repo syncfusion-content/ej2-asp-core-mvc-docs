@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Events with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Events in ASP.NET MVC Block Editor Control | Syncfusion
+description: Checkout and learn about Events with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
-# Events in ##Platform_Name## Block Editor control
+# Events in ASP.NET MVC Block Editor control
 
 The Block Editor control provides a comprehensive set of events that allow you to monitor and respond to various user interactions and editor state changes. These events enable you to implement custom behaviors, validation, logging, and integration with other systems.
 

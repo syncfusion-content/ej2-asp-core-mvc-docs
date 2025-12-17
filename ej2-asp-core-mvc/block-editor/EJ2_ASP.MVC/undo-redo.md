@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Undo redo in ##Platform_Name## Block Editor | Syncfusion
-description: Checkout and learn about undo redo with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Undo redo in ASP.NET MVC Block Editor | Syncfusion
+description: Checkout and learn about undo redo with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
-# Undo redo in ##Platform_Name## Block Editor control
+# Undo redo in ASP.NET MVC Block Editor control
 
 The undo/redo feature in Block Editor enables users to revert or reapply changes made to the content, offering a safety net for edits and enhancing the overall editing experience.
 

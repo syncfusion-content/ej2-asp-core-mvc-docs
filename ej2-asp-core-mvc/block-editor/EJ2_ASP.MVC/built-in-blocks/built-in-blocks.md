@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Blocks in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Blocks in ASP.NET MVC Block Editor control | Syncfusion
+description: Checkout and learn about Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Blocks in ##Platform_Name## Block Editor control
+# Blocks in ASP.NET MVC Block Editor control
 
 The Block Editor control enables you to create block-based content editing solution using various types of blocks. The [Blocks](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_Blocks) property allows you to define and manage the content structure of your editor.
 

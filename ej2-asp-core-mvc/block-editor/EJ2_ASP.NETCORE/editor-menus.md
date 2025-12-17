@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editor Menus in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Editor Menus with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Editor Menus in ASP.NET Core Block Editor Control | Syncfusion
+description: Checkout and learn about Editor Menus with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
-# Editor Menus in ##Platform_Name## Block Editor control
+# Editor Menus in ASP.NET Core Block Editor control
 
 The Block Editor control provides several interactive menus to enhance content creation and editing. These menus offer quick access to various commands and formatting options.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Controlled Access in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Controlling Editor Access with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Controlled Access in ASP.NET MVC Block Editor Control | Syncfusion
+description: Checkout and learn about Controlling Editor Access with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 ---
 
-# Controlling Editor Access in ##Platform_Name## Block Editor control
+# Controlling Editor Access in ASP.NET MVC Block Editor control
 
 The Block Editor control provides read-only modes to control user interaction with the editor. This allows users to view formatted content without editing. This features are useful for displaying content without modifications or temporarily restricting input.
 

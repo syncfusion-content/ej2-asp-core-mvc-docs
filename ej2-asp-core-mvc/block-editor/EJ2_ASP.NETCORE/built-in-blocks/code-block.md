@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Code Block in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about Code Block with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Code Block in ASP.NET Core Block Editor control | Syncfusion
+description: Checkout and learn about Code Block with ASP.NET Core Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Code Blocks in ##Platform_Name## Block Editor control
+# Code Blocks in ASP.NET Core Block Editor control
 
 You can render Code blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Code](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Code). By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 

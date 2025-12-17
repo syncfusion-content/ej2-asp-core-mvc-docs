@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Paste Clean-up in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about paste clean-up with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Paste Clean-up in ASP.NET Core Block Editor control | Syncfusion
+description: Checkout and learn about paste clean-up with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
 platform: ej2-javascript
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paste Clean-up in ##Platform_Name## Block Editor control
+# Paste Clean-up in ASP.NET Core Block Editor control
 
 The Block Editor control provides robust paste clean-up functionalities to ensure that pasted content integrates seamlessly and maintains consistency with the editor's styling and structure. This helps in removing unwanted formatting, scripts, or elements often copied from external sources like web pages or word processors.
 

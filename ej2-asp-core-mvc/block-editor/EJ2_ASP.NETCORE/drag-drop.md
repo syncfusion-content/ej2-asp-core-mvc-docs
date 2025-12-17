@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag and drop in ##Platform_Name## Block Editor Control | Syncfusion
-description: Checkout and learn about Drag and drop with Syncfusion Essential ##Platform_Name## BlockEditor control, its elements, and more details.
+title: Drag and drop in ASP.NET Core Block Editor Control | Syncfusion
+description: Checkout and learn about Drag and drop with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET Core
 documentation: ug
 ---
 
-# Drag and drop in ##Platform_Name## Block Editor control
+# Drag and drop in ASP.NET Core Block Editor control
 
 The drag and drop feature in Block Editor allows users to easily rearrange blocks within the editor by dragging them to different positions.
 

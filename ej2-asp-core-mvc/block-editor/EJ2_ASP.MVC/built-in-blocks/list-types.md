@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Lists in ##Platform_Name## Block Editor control | Syncfusion
-description: Checkout and learn about List Blocks with ##Platform_Name## Block Editor control of Syncfusion Essential JS 2 and more.
+title: Lists in ASP.NET MVC Block Editor control | Syncfusion
+description: Checkout and learn about List Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ##Platform_Name##
+publishingplatform: ASP.NET MVC
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Lists in ##Platform_Name## Block Editor control
+# Lists in ASP.NET MVC Block Editor control
 
 List blocks in the BlockEditor component are used to organize content into structured lists. You can render List blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [BulletList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_BulletList), [NumberedList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_NumberedList), or [Checklist](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Checklist). Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 
