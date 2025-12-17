@@ -1,0 +1,39 @@
+<div class="control-section">
+    <div class="sample-container">
+        @Html.EJS().FileManager("filemanager").AjaxSettings(
+            new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+            {
+                Url = "/Home/FileOperations",
+                GetImageUrl = "/Home/GetImage",
+                UploadUrl = "/Home/Upload",
+                DownloadUrl = "/Home/Download"
+            }
+            ).CssClass("fm_template").LargeIconsTemplate("#largeIconsTemplate").Render()
+    </div>
+</div>
+
+<script id="largeIconsTemplate" type="text/x-template">
+    ${getLargeIconsViewTemplateJSON(data)}
+</script>
+
+<script>
+
+    function getLargeIconsViewTemplateJSON(item) {
+        const formattedDate = item.dateCreated ? new Date(item.dateCreated).toLocaleDateString("en-US", {
+            year: 'numeric', month: 'long', day: 'numeric'
+        }) : '';
+        return `
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                    <span><strong>${item.name}</strong></span>
+                    <span><strong>Type: </strong>${item.isFile ? 'File' : 'Folder'}</span>
+                    <span><strong>Modified: </strong>${formattedDate}</span>
+                </div>
+                `;
+    }
+</script>
+
+<style>
+    .fm_template .e-large-icons .e-list-item {
+        width: 190px;
+    }
+</style>
