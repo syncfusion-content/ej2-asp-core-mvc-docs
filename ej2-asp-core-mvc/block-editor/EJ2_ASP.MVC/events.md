@@ -4,7 +4,7 @@ title: Events in ASP.NET MVC Block Editor Control | Syncfusion
 description: Checkout and learn about Events with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ASP.NET MVC
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

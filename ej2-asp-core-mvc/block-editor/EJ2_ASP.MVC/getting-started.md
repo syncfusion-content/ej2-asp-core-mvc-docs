@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET MVC BlockEditor Control | Syncfusion
 description: Checkout and learn about getting started with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ASP.NET MVC
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

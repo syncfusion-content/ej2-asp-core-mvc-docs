@@ -4,7 +4,7 @@ title: Inline Content in ASP.NET MVC Block Editor control | Syncfusion
 description: Checkout and learn about Inline Content with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ASP.NET MVC
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

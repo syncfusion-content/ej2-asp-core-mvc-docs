@@ -4,7 +4,7 @@ title: Table Block in ASP.NET MVC Block Editor control | Syncfusion
 description: Checkout and learn about Table Blocks with ASP.NET MVC Block Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ASP.NET MVC
+publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -4,7 +4,7 @@ title: Keyboard Shortcuts in ASP.NET MVC Block Editor | Syncfusion
 description: Checkout and learn about Keyboard Shortcuts with Syncfusion Essential ASP.NET MVC BlockEditor control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: BlockEditor
-publishingplatform: ASP.NET MVC
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
