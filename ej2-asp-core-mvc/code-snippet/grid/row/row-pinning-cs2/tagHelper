@@ -1,0 +1,18 @@
+<ejs-grid id="Grid" dataSource="@(ViewBag.DataSource)" allowPaging="true" pageSettings="@(new Syncfusion.EJ2.Grids.GridPageSettings { PageSize = 15 })" height="200px" isRowPinned="isRowPinned" >
+    <e-grid-columns>
+        <e-grid-column field="TaskID" headerText="Task ID" width="100" textAlign="Right" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="120"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" width="120" textAlign="Right" format="N0"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="150"></e-grid-column>
+        <e-grid-column field="Assignee" headerText="Assignee" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function isRowPinned(data) {
+        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
+            return true;
+        }
+        return false;
+    }
+</script>
