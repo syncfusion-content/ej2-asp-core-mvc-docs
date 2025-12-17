@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in ##Platform_Name## Gantt Chart control | Syncfusion
+title: Column Pinning (Frozen) in ##Platform_Name## Gantt Chart | Syncfusion
 description: Learn here all about column pinning (Frozen) in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Pinning (Frozen)
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 --- 
 
-# Column Pinning (Frozen) in ##Platform_Name## Gantt Chart control
+# Column Pinning (Frozen) in ##Platform_Name## Gantt Chart Control
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart control provides a frozen columns feature that keeps selected columns fixed while scrolling horizontally through large datasets. This functionality ensures that critical information remains visible at all times, improving readability and user experience. By maintaining key columns in view, it simplifies navigation and makes referencing important data points easier when working with extensive project details.
 
