@@ -78,7 +78,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 ## Conditional row selection
 
-The TreeGrid supports conditional row selection through the `isRowSelectable` callback. This feature enables dynamic business logic to determine which rows can be selected, ensuring that only rows meeting specific conditions are selectable. The callback accepts a function that evaluates each row’s data and returns **true** to enable selection or **false** to disable it. The function is executed for the entire data source before rendering, making it suitable for scenarios where selection must be restricted based on criteria.
+The TreeGrid supports conditional row selection through the (`isRowSelectable`) callback. This allows selection to be controlled by custom business logic, ensuring that only rows meeting specific conditions can be selected. The callback receives each row’s data and returns "true" to allow selection or "false" to prevent it.
 
 Local data: The callback runs once when the TreeGrid initializes and evaluates all records because the full dataset is already available on the client.
 
@@ -109,63 +109,5 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endtabs %}
 {% endif %}
 
-## Checkbox Selection In Tree Column
-
-### Enable checkboxes in tree column
-
-The tree column cell includes checkboxes that support checkbox selection for each record. The feature supports both simple selection and hierarchical selection, where parent and child records are linked through their checkboxes. In hierarchical mode, checking a parent record’s checkbox automatically selects its child records, and clearing it will deselect them as well. To enable checkbox selection in the tree column, set the [`showCheckbox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ShowCheckbox) to **true**. For hierarchical checkbox selection, set the [`autoCheckHierarchy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AutoCheckHierarchy) to **true**, which activates the parent–child linking behavior.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-mvc/checkbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/tree-grid/columns-mvc/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/columns-mvc/checkbox/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/tree-grid/columns-mvc/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Checkbox selection in tree column with virtualization
-
-The TreeGrid component provides efficient handling of large datasets while offering flexible checkbox selection with virtualization. This feature allows checkboxes to be displayed in tree column cells so that allowing direct interaction with records, even when working with extensive data. Virtualization ensures smooth performance by rendering only the rows and columns that are visible during scrolling.
-
-To enable checkbox selection in the tree column, set the [`showCheckbox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ShowCheckbox) property to **true**. For virtualization support, use the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) property, which activates optimized rendering for large datasets.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/selection/showCheckbox-Virtualization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Partial.cs" %}
-{% include code-snippet/tree-grid/selection/showCheckbox-Virtualization/groceriesData.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/selection/showCheckbox-Virtualization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Partial.cs" %}
-{% include code-snippet/tree-grid/selection/showCheckbox-Virtualization/groceriesData.cs%}
-{% endhighlight %}
-{% endtabs %}
-{% endif %} 
-      
-
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
