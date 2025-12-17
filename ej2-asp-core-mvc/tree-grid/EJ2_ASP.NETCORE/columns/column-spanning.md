@@ -10,9 +10,9 @@ documentation: ug
 
 # Column Spanning in ##Platform_Name## TreeGrid Component
 
-The column spanning feature in the ASP.Core TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
+Column spanning in the ASP.Core TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
-In the following example, Employee **Davolio** is scheduled for analysis from "9.00 AM" to "10.00 AM", so those cells have been spanned.
+In the following example, Employee "Davolio" is scheduled for analysis from "9.00 AM" to "10.00 AM", so those cells have been spanned.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -23,22 +23,11 @@ In the following example, Employee **Davolio** is scheduled for analysis from "9
 {% endhighlight %}
 {% endtabs %}
 
-## Limitations
-
-Column spanning in the ASP.Core TreeGrid has the following limitations:
-
-* The [updateCell](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#updatecell) method does not support column spanning.
-* Column spanning is not compatible with the following features:
-    1. Virtual scrolling
-    2. Infinite scrolling
-
-> When using column spanning, ensure that the spanned cells do not interfere with TreeGrid operations such as sorting, filtering, or editing, as this may lead to unexpected behavior.
-
 ## Column spanning via API
  
-The column spanning feature in the TreeGrid allows automatically merging cells with identical values in the same row across consecutive columns. This significantly enhances readability and delivers a cleaner layout by eliminating repetitive data. To enable column spanning, set the `EnableColumnSpan` property to **true** in the TreeGrid configuration.
+Column spanning in the TreeGrid allows automatically merging cells with identical values in the same row across consecutive columns. This significantly enhances readability and delivers a cleaner layout by eliminating repetitive data. To enable column spanning, set the `EnableColumnSpan` property to "true" in the TreeGrid configuration.
  
-In the following example, column spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting their `EnableColumnSpan` property to **false** in the column level.
+In the following example, column spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting their `EnableColumnSpan` property to "false" in the column level.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
