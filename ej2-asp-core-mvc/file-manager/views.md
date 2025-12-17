@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Views
+# Views in File Manager Control
 
 The view section displays files and folders for user browsing. The `view` API can also be used to change the initial view of the File Manager.
 
@@ -50,6 +50,33 @@ By default, File Manager is rendered with the largeicons view. The following exa
 The output will look like the image below.
 
 ![File Manager largeicons view](./images/large_icons.PNG)
+
+### Customize existing Large Icons View
+
+The large icons view layout can be customized using the `largeIconsTemplate` property, which allows you to display file or folder information, apply custom formatting, and use conditional rendering based on item type. You can customize it further based on your application requirements.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/large-icon-view-template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_core.cs" %}
+{% include code-snippet/file-manager/large-icon-view-template/HomeController_core.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/large-icon-view-template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController_mvc.cs" %}
+{% include code-snippet/file-manager/large-icon-view-template/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Details View
 
