@@ -15,9 +15,9 @@ You can render Code blocks by setting the [blockType](https://help.syncfusion.co
 
 ## Global Code Settings
 
-You can configure global settings for code blocks using the [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings)property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
+You can configure global settings for code blocks using the [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for syntax highlighting and language options across all code blocks.
 
-The [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings)property supports the following options:
+The [CodeBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_CodeBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
