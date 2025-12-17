@@ -99,11 +99,9 @@ public ActionResult ContextMenu()
         {
                 Enable = true,
                 ShowItemOnClick = true,
-                BeforeClose = "beforeClose",
-                BeforeOpen = "beforeOpen",
-                Open = "open",
-                Close = "close",
-                ItemClick = "itemClick",
+                Opening = "open",
+                Closing = "close",
+                ItemSelect = "itemClick",
                 Items = ContextMenuItems
         };
         ViewData["ContextMenuItems"] = ContextMenuItems;

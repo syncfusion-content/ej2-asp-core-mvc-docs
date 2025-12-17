@@ -93,7 +93,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-![Block Method](images/method-block.png)
+![Block Method](./../images/method-block.png)
 
 ## Selection and Cursor Methods
 
@@ -171,7 +171,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-![Selection Method](images/method-selection.png)
+![Selection Method](./../images/method-selection.png)
 
 ## Focus Management Methods
 
@@ -242,7 +242,7 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting Method](images/method-formatting.png)
+![Formatting Method](./../images/method-formatting.png)
 
 ## Data Export Methods
 
@@ -314,4 +314,4 @@ Below example demonstrates the usage of the above methods.
 {% endhighlight %}
 {% endtabs %}
 
-![Data Method](images/method-data.png)
+![Data Method](./../images/method-data.png)

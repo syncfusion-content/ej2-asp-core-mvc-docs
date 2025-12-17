@@ -15,17 +15,17 @@ Block Editor supports addition of embeds to help you organize, showcase contents
 
 ## Image Block
 
-You can use the `Image` block to showcase an image content within your editor.
+You can use the [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block to showcase an image content within your editor.
 
 ### Configure Image Block
 
-You can render an `Image` block by setting the `blockType` property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can render an [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
 #### Global Image Settings
 
-You can configure global settings for image blocks using the `imageBlockSettings` property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
+You can configure global settings for image blocks using the [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property in the Block Editor root configuration. This ensures consistent behavior for image uploads, resizing, and display.
 
-The `imageBlockSettings` property supports the following options:
+The [ImageBlockSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_ImageBlockSettings) property supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -41,7 +41,7 @@ The `imageBlockSettings` property supports the following options:
 
 #### Configure Image Block Properties
 
-The `Image` block `properties` property in the block model supports the following options:
+The [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block `properties` property in the block model supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -49,6 +49,24 @@ The `Image` block `properties` property in the block model supports the followin
 | width | Specifies the display width of the image. | `''` |
 | height | Specifies the display height of the image. | `''` |
 | altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
+
+### BlockType & Properties
+
+The following example demonstrates how to pre-configure an [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block in the editor.
+
+```typescript
+// Adding image block
+ {
+    blockType = "Image",
+    properties = new
+    {
+        src = "https://cdn.syncfusion.com/ej2/richtexteditor-resources/RTE-Overview.png",
+        width = '200px',
+        height = '100px',
+        altText = '',
+    }
+}
+```
 
 The below sample demonstrates the configuration of image block in the Block Editor.
 
@@ -61,4 +79,4 @@ The below sample demonstrates the configuration of image block in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Image Block](images/block-image.png)
+![Image Block](./../../images/block-image.png)

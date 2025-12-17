@@ -1,13 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blocks>
-            @foreach (var block in ViewBag.BlocksData)
-            {
-                <e-block id="@block.Id" type="@block.Type.ToString()" content="@block.Content" ></e-block>
-            }
-        </e-blocks>
+    <ejs-blockeditor id="block-editor" blocks="@ViewBag.BlocksData">
         <e-blockeditor-commandmenusettings enableTooltip="false" popupWidth="350px" popupHeight="400px" commands="@ViewBag.CommandMenuItems" itemSelect="function(e){ itemSelect(e); }" filtering="function(e){ filtering(e); }"></e-blockeditor-commandmenusettings>
     </ejs-blockeditor>
     <div id="controls">

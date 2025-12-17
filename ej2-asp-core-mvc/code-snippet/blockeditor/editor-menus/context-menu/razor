@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).ContextMenu((ContextMenuSettings)ViewData["ContextMenuSettings"]).Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).ContextMenu((ContextMenuSettings)ViewData["ContextMenuSettings"]).Render()
     <div id="controls">
         <h3>Context Menu Configuration Demo</h3>
         <div class="instructions">

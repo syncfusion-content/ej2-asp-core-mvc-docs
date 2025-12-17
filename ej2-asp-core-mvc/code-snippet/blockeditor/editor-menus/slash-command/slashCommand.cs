@@ -46,7 +46,6 @@ public ActionResult SlashCommand()
         };
         CommandMenuSettings = new CommandMenuSettings()
         {
-                EnableTooltip = false,
                 PopupWidth = "350px",
                 PopupHeight = "400px",
                 ItemSelect = "itemSelect",

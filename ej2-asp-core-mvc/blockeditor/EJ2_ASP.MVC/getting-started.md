@@ -98,4 +98,4 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC BlockE
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC BlockEditor control will be rendered in the default web browser.
 
-![ASP.NET MVC BlockEditor Control](images/block-editor-control.png)
+![ASP.NET MVC BlockEditor Control](./../images/block-editor-control.png)

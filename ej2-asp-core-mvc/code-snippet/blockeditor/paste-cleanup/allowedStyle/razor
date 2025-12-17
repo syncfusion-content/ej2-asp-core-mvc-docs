@@ -15,7 +15,7 @@ Copy content from the test area above and paste it into the editor to see the cl
 }
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).PasteSettings(new PasteSettings() { AllowedStyles = allowedStyles, DeniedTags = deniedTags }).AfterPaste("function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }").Created("onEditorCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).PasteSettings(new PasteSettings() { AllowedStyles = allowedStyles, DeniedTags = deniedTags }).AfterPaste("function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }").Created("onEditorCreated").Render()
     <div id="controls">
         <h4>Test Content to Copy and Paste:</h4>
         <div class="test-content">

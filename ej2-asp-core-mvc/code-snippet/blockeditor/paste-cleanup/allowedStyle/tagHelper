@@ -15,13 +15,7 @@ Copy content from the test area above and paste it into the editor to see the cl
 }
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" created="onEditorCreated()" afterPaste="function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }">
-        <e-blocks>
-            @foreach (var block in ViewBag.BlocksData)
-            {
-                <e-block id="@block.Id" type="@block.Type.ToString()"></e-block>
-            }
-        </e-blocks>
+    <ejs-blockeditor id="block-editor" blocks="@ViewBag.BlocksData" created="onEditorCreated()" afterPaste="function(e){ displayOutput(`After Paste Event: Processed content length: ${e.content.length} characters`); }">
         <e-blockeditor-pastesettings deniedTags="@deniedTags" allowedStyles="@allowedStyles"></e-blockeditor-pastesettings>
     </ejs-blockeditor>
     <div id="controls">

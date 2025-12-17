@@ -6,6 +6,7 @@ public class BlockModel
 {
     public string id { get; set; }
     public string blockType { get; set; }
+    public string CssClass { get; set; }
     public object properties { get; set; }
     public List<object> content { get; set; }
 }

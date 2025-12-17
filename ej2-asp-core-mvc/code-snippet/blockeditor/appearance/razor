@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2.BlockEditor
 
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Blocks((List<Block>)ViewData["BlocksData"]).Created("onCreated").Focus("displayOutput('Editor focused. You can now type or edit content.')").Blur("displayOutput('Editor lost focus.')").Render()
+    @Html.EJS().BlockEditor("block-editor").Blocks((List<BlockModel>)ViewData["BlocksData"]).Created("onCreated").Focus("displayOutput('Editor focused. You can now type or edit content.')").Blur("displayOutput('Editor lost focus.')").Render()
     <div id="controls">
         <h3>Appearance Configuration Demo</h3>
         <div class="button-group">
