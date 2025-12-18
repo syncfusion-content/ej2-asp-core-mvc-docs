@@ -60,7 +60,7 @@ In the following example, the `Load` event is utilized to customize the mapping 
 
 ## Expand child grid initially
 
-Expanding the child grid initially in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component is helpful when you want to display the child rows of the hierarchical grid expanded by default upon grid load. This can be beneficial in scenarios where you want to provide immediate visibility into the hierarchical data without requiring you to manually expand each child row.
+Expanding the child grid initially in the Data Grid component is helpful when you want to display the child rows of the hierarchical grid expanded by default upon grid load. This can be beneficial in scenarios where you want to provide immediate visibility into the hierarchical data without requiring you to manually expand each child row.
 
 To achieve this, you can use the `expand` method with the desired target index (number) in the [DataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataBound) event of the grid. 
 
@@ -81,7 +81,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 
 ## Dynamically load child grid data
 
-Dynamically load child grid data in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid helps improve performance, optimize data transmission, and enhance the your experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which helps improve the overall efficiency of your application.
+Dynamically load child grid data in Data Grid helps improve performance, optimize data transmission, and enhance the your experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which helps improve the overall efficiency of your application.
 
 To dynamically load the `DataSource` of a child grid in the Grid, you can utilize the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event of parent grid. This event allows you to customize the loading behavior of the child grid based on the data of parent grid.
 
@@ -100,7 +100,7 @@ The following example demonstrates how to dynamically load child grid data using
 
 ## Dynamically bind data to child grid based on parent row data
 
-Dynamically binding data to a child grid based on the parent row data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component is useful when you want to display child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
+Dynamically binding data to a child grid based on the parent row data in the Data Grid component is useful when you want to display child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
 
 To dynamically bind data to the child grid based on the parent row data instead of using the [QueryString](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryString) property, you can utilize the [DetailDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailDataBound) event of the grid. This event is triggered when expanding the child grid.
 
@@ -119,7 +119,7 @@ In the `DetailDataBound` event handler, you can filter the child grid's dataSour
 
 ## Adding record in child grid
 
-Adding a record in a child grid within the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component is useful when you want to provide the ability to add new records to the child grid. This feature allows you to input and save additional data specific to each parent row.
+Adding a record in a child grid within the Data Grid component is useful when you want to provide the ability to add new records to the child grid. This feature allows you to input and save additional data specific to each parent row.
 
 To maintain the parent-child relationship in the Grid when adding a record to the child grid, you need to set the value for the `QueryString` in the added data. This can be done using the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event.
 
@@ -138,7 +138,7 @@ In the following example, the parent and child grids are related by the **Employ
 
 ## Template column in child grid
 
-A template column in a child grid within the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component is valuable when you want to customize the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
+A template column in a child grid within the Data Grid component is valuable when you want to customize the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
 
 To achieve this, you can utilize the `Template` property of a column to display a custom element instead of a field value in the Grid.
 
@@ -176,7 +176,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 
 ## Render aggregates in child grid
 
-The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
+The Aggregates feature in the Data Grid component allows you to display aggregate values in the footer, group footer, and group caption of the child grid. With this feature, you can easily perform calculations on specific columns and show summary information. 
 
 Rendering aggregates in a child grid involves displaying summary data at the footer or group caption of the grid. This can be particularly useful in hierarchical grids where each child grid represents detailed data that needs to be summarized.
 
@@ -195,7 +195,7 @@ The following example demonstrates how to render aggregates in a child grid to d
 
 ## Expand all by external button
 
-The Hierarchy Grid in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
+The Hierarchy Grid in the Data Grid component allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
 
 By default, Grid renders all child grid rows in collapsed state. To expand all child grid rows in the Grid using an external button, you can utilize the `expandAll` method provided by the DetailRow module. Similarly, to collapse all grid rows, you can use the `collapseAll` method. 
 
@@ -216,7 +216,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 ## Hide the expand/collapse icon in parent row when no record in child grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
+The Data Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
 
 To achieve this, you can utilize the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event to hide the icon when there are no records in the child grid.
 
@@ -266,7 +266,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 
 ## Customize hierarchy Grid icons
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid provides built-in expand/collapse icons for hierarchical Grid. However, you can customize these icons using custom CSS to modify their visual representation.
+The Data Grid provides built-in expand/collapse icons for hierarchical Grid. However, you can customize these icons using custom CSS to modify their visual representation.
 
 To change the default icons, add the following CSS styles to your **index.html** file:
 
@@ -297,15 +297,9 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 
 ## Detail row events
 
-The Grid component provides the `detailExpand` and `detailCollapse` events, which are triggered when a detail row is about to expand or collapse. These events fire before the detail row actually expands or collapses, allowing you to control whether the action should proceed.
+The Grid control's `detailExpand` and `detailCollapse` events fire before a detail row actually expands or collapses, allowing you a chance to control whether the action should continue. The `detailExpand` event is raised just before a row expands, and `detailCollapse` fires just before a row collapses, with both events providing respective details through their event arguments.
 
-`detailExpand` – This event is triggered before a detail row begins to expand. You can access the expansion details through the event arguments and optionally prevent the expansion by setting:
-`args.cancel = true`;
-
-`detailCollapse` – This event is triggered before a detail row begins to collapse. You can access the collapse details through the event arguments and optionally prevent the collapse by setting:
-`args.cancel = true`;
-
-In the example below, expansion is prevented for the **Nancy** row, and collapse is prevented for the **Andrew** row.
+In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -318,7 +312,7 @@ In the example below, expansion is prevented for the **Nancy** row, and collapse
 
 ## Customize the child grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
+The Data Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
 
 ### Header
 
