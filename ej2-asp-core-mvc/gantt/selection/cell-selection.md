@@ -119,3 +119,7 @@ While selecting a cell in Gantt, the [`cellSelecting`](https://help.syncfusion.c
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Limitations for cell selection
+
+* Cell-based selection is not supported when virtualization is enabled.
