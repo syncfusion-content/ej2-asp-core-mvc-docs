@@ -94,3 +94,11 @@ Context menu can be customized using the [`contextMenuSettings`](https://help.sy
 *Refer [Context Menu](./file-operations#context-menu) section in file operations to know more about the menu items present in context menu*.
 
 ![Context Menu](./images/contextmenu.png)
+
+### Upload Files or Folders via context menu
+
+File Manager control allows to perform the files or folder [upload](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#upload) operations with the help of Context Menu items by switching between the Files or Folder from Upload menu item.
+
+![Uploading a file](./images/filemanager-fileupload.png)
+
+![Uploading a folder](./images/filemanager-folderupload.png)
