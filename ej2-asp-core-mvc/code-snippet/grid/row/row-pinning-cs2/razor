@@ -1,0 +1,17 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("TaskID").HeaderText("Task ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("Title").HeaderText("Title").Width("120").Add();
+    col.Field("Priority").HeaderText("Priority").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("N0").Add();
+    col.Field("Status").HeaderText("Status").Width("150").Add();
+    col.Field("Assignee").HeaderText("Assignee").Width("150").Add();
+}).AllowPaging(true).PageSettings(page => page.PageSize(15)).IsRowPinned("isRowPinned").Height("200px").Render()
+
+<script>
+    function isRowPinned(data) {
+        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
+            return true;
+        }
+        return false;
+    }
+</script>
