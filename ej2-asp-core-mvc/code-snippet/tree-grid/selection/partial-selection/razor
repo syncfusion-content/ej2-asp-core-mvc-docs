@@ -1,0 +1,22 @@
+@(Html.EJS().TreeGrid("PartialSelection")
+     .EnableVirtualization(true)
+     .DataSource((IEnumerable<object>)ViewBag.datasource)
+     .AllowSelection()
+     .SelectionSettings(sel => sel.PersistSelection(true)).IdMapping("TaskID")
+     .ParentIdMapping("ParentID").TreeColumnIndex(1).IsRowSelectable("isRowSelectable")
+     .Columns(col =>
+      {
+        col.Type("checkbox").Width(60).Add();
+        col.Field("Task").HeaderText("Task").Width(300).Add();
+        col.Field("TaskID").Visible(false).IsPrimaryKey(true).Add();
+        col.Field("AssignedTo").HeaderText("Assigned To").Width(140).Add();
+        col.Field("StartDate").HeaderText("Start").Format("yMd").Width(180).Add();
+        col.Field("DueDate").HeaderText("Due").Format("yMd").Width(180).Add();
+        col.Field("Priority").HeaderText("Priority").Width(90).Add();
+        col.Field("Progress").HeaderText("Status").Width(90).Add();
+      }).Render())
+ <script>
+       function isRowSelectable(data,columns) {
+            return data.Progress !== 'Completed';
+        }
+</script>
