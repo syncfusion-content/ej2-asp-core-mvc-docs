@@ -11,18 +11,18 @@ documentation: ug
 
 # Columns in ##Platform_Name## Tree Grid Component
 
-The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
-The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Columns)
+The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
+The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumns.html)
 is necessary to map the data source values in TreeGrid Columns.
 
-N> 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) is not specified in the dataSource, the column values will be empty.
-<br/> 2. If the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) name contains “dot” operator, it is considered as complex binding.
+N> 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) is not specified in the dataSource, the column values will be empty.
+<br/> 2. If the [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) name contains “dot” operator, it is considered as complex binding.
 
-[`TreeColumnIndex`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridBuilder~TreeColumnIndex.html) property denotes the column that is used to expand and collapse child rows.
+[`TreeColumnIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_TreeColumnIndex) property denotes the column that is used to expand and collapse child rows.
 
 ## Format
 
-To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
+To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field). The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -65,7 +65,7 @@ Refer to the link to know more about [`Number formatting`](../../common/internat
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property as string   (Example: `yMd`). Refer to the link to know more about [`Date formatting`](../../common/internationalization#manipulating-datetime).
+For built-in date format you can specify [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property as string   (Example: `yMd`). Refer to the link to know more about [`Date formatting`](../../common/internationalization#manipulating-datetime).
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -101,7 +101,7 @@ Format | Formatted value
 
 ## Lock columns
 
-You can lock columns by using [`LockColumn`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~LockColumn.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The locked columns will be moved to the first position. Also you can’t reorder its position.
+You can lock columns by using [`LockColumn`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_LockColumn) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). The locked columns will be moved to the first position. Also you can’t reorder its position.
 
 In the below example, Duration column is locked and its reordering functionality is disabled.
 
@@ -119,9 +119,9 @@ In the below example, Duration column is locked and its reordering functionality
 
 ## Column type
 
-Column type can be specified using the [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) property in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). It specifies the type of data the column binds.
+Column type can be specified using the [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Type) property in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html). It specifies the type of data the column binds.
 
-If the [`Format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html)  is defined for a column, the column uses [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) to select the appropriate format option ([number](../../common/internationalization#number-formatting)
+If the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format)  is defined for a column, the column uses [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Type) to select the appropriate format option ([number](../../common/internationalization#number-formatting)
  or [date](../../common/internationalization#manipulating-datetime)).
 
 TreeGrid column supports the following types:
@@ -131,12 +131,44 @@ TreeGrid column supports the following types:
 * date
 * datetime
 
-N> If the [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Type.html) is not defined, it will be determined from the first record of the [`DataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html).
+N> If the [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Type) is not defined, it will be determined from the first record of the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource).
+
+
+
+## Checkbox column
+
+To render checkboxes in existing column, you need to set [`ShowCheckbox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ShowCheckbox) property as **true**.
+
+It is also possible to select the rows hierarchically using checkboxes in TreeGrid by enabling [`AutoCheckHierarchy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AutoCheckHierarchy) property. When we check on any parent record checkbox then the child record checkboxes will get checked.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-mvc/checkbox/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Checkbox.cs" %}
+{% include code-snippet/tree-grid/columns-mvc/checkbox/checkbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/tree-grid/columns-mvc/checkbox/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Checkbox.cs" %}
+{% include code-snippet/tree-grid/columns-mvc/checkbox/checkbox.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
 
 ## Controlling Tree Grid actions
 
-You can enable or disable treegrid action for a particular column by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html), and [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) properties in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
+You can enable or disable treegrid action for a particular column by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowFiltering), and [`AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowSorting) properties in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -188,7 +220,7 @@ You can show or hide treegrid columns dynamically using external buttons by invo
 
 ## ValueAccessor
 
-The [`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html).
+The [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -214,9 +246,9 @@ The [`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/S
 
 ### Display array type columns
 
-You can bind an array of objects in a column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html) property.
+You can bind an array of objects in a column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) property.
 In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the
-[`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html).
+[`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -242,7 +274,7 @@ In this example, the name field has an array of two objects, FirstName and LastN
 
 ### Expression column
 
-You can achieve the expression column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~ValueAccessor.html) property.
+You can achieve the expression column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -293,3 +325,6 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
+
+
