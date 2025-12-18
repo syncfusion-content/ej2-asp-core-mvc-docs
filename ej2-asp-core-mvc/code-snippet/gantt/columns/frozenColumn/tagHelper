@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Gantt
+
+<div>
+    <ejs-gantt id="GanttContainer"
+               datasource="@Model.DataSource"
+               height="430px"
+               treeColumnIndex="1"
+               gridLines="Both"
+               frozenColumns= 2
+               allowSelection="false"
+               splitterSettings="@(new GanttSplitterSettings { Position = "65%" })"
+               labelSettings="@(new GanttLabelSettings { TaskLabel = "Progress" })"
+               taskFields="@(new GanttTaskFields {
+                   Id = "TaskID",
+                   Name = "TaskName",
+                   StartDate = "StartDate",
+                   EndDate = "EndDate",
+                   Duration = "Duration",
+                   Dependency = "Predecessor",
+                   Progress = "Progress",
+                   ParentID = "ParentID"
+               })">
+        <e-gantt-columns>
+            <e-gantt-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-gantt-column>
+            <e-gantt-column field="TaskName" headerText="Task Name" textAlign="Left" width="290"></e-gantt-column>
+            <e-gantt-column field="StartDate" headerText="Start Date" textAlign="Right" format="yMd" width="120"></e-gantt-column>
+            <e-gantt-column field="Duration" headerText="Duration" textAlign="Right" width="90"></e-gantt-column>
+            <e-gantt-column field="EndDate" headerText="End Date" textAlign="Right" format="yMd" width="120"></e-gantt-column>
+            <e-gantt-column field="Progress" headerText="Progress" textAlign="Left" width="120"></e-gantt-column>
+            <e-gantt-column field="Predecessor" headerText="Predecessor" textAlign="Left" width="120"></e-gantt-column>
+        </e-gantt-columns>
+    </ejs-gantt>
+</div>
