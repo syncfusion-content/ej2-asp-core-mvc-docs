@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column Pinning (Frozen) in ##Platform_Name## Gantt Chart Control | Syncfusion
+title: Column Pinning (Frozen) in ##Platform_Name## Gantt Chart | Syncfusion
 description: Learn here all about column pinning (Frozen) in Syncfusion ##Platform_Name## Gantt Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column Pinning (Frozen)
