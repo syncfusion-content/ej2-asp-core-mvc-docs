@@ -480,7 +480,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 The Syncfusion ASP.NET Core Grid seamlessly integrates CRUD (Create, Read, Update, Delete) operations with server-side controller actions through specific properties: `insertUrl`, `removeUrl`, `updateUrl`, `crudUrl`, and `batchUrl`. These properties enable the Grid to communicate with the data service for every Grid action, facilitating server-side operations.
 
-**CRUD Operations Mapping**
+**CRUD Operations Mapping:**
 
 The following properties enable the Grid to interact with API endpoints for different CRUD actions:
 
@@ -589,7 +589,7 @@ public void Update([FromBody] CRUDModel<OrdersDetails> updatedRecord)
 }
 ```
 
-**Delete Operation**
+**Delete Operation:**
 
 To delete existing records, use the `removeUrl` property to specify the controller action mapping URL for the delete operation. The primary key value of the deleted record is bound to the **deletedRecord** parameter.
 
@@ -619,7 +619,7 @@ public void Remove([FromBody] CRUDModel<OrdersDetails> deletedRecord)
 
 > Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/UrlAdaptor_EJ2Core).
 
-**Single method for performing all CRUD operations**
+**Single method for performing all CRUD operations:**
 
 Using the `crudUrl` property, the controller action mapping URL can be specified to perform all the CRUD operation at server-side using a single method instead of specifying separate controller action method for CRUD (insert, update and delete) operations.
 
@@ -672,7 +672,7 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 {% endhighlight %}
 {% endtabs %}
 
-**Batch Operation**
+**Batch Operation:**
 
 To perform batch operation, define the edit `mode` as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
@@ -737,3 +737,92 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<OrdersDetails> batchOperat
 {% endtabs %}
 
 ![UrlAdaptor Batch Editing](../images/adaptors/url-adaptors/url-adaptor-batch-editing.gif)
+
+## Foreign key column with UrlAdaptor
+
+Configuration of foreign key column with remote data using `UrlAdaptor` requires assigning the `DataManager` instance with the endpoint URL to the particular column data source along with foreign key field and foreign key value properties. When both grid and foreign key column uses a `UrlAdaptor`, the grid data and the foreign key data are fetched separately from their respective remote endpoints. During operations such as filtering or sorting, the grid sends requests to the server based on the foreign key field and its corresponding value.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+<ejs-grid id="grid"  allowPaging="true" allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Search"})">
+    <e-data-manager url="http://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" foreignKeyField="CustomerID" foreignKeyValue="CustomerName">
+            <e-data-manager url="http://localhost:xxxx/api/Customers" adaptor="UrlAdaptor"></e-data-manager>
+        </e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+    </e-grid-columns>
+ </ejs-grid>
+
+
+{% endhighlight %}
+{% endtabs %}
+
+### Handling filter and search operation
+
+Filtering a foreign-key column automatically shows the related text value via `foreignKeyValue` property, while the actual filtering is performed using the `foreignKeyField` property. This ensures that the filter request sent to the server uses the actual "CustomerID" field value, allowing the main data source to be filtered accurately.
+
+![ForeignKey column filtering](../images/foreign-key-filter.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source.
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+  // Handling filtering operation
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  {
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+  }
+
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+}
+```
+
+> Search process in a grid with foreign key columns creates a filter query for each column using the provided search term. For foreign key columns specifically, the grid first queries the associated foreign key data source to retrieve the underlying field value that matches the search term. It then constructs a filter query using that value and the column's field, applying it to the main dataset.
+
+### Handling sort operation
+
+Sort operation on a foreign key column orders records based on the underlying "CustomerID" field value. The sorting query sent to the server includes the corresponding foreign key value. To sort by the foreign key value, supply the foreign key's data source to the sorted query within the `PerformSorting` method.
+
+![ForeignKey column Sorting](../images/foreign-key-sorting.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) //Sorting
+  {
+    for (int i = 0; i < DataManagerRequest.Sorted.Count; i++)
+    {
+      if (DataManagerRequest.Sorted[i].ForeignKeyValue == "CustomerName")
+      {
+        DataManagerRequest.Sorted[i].ForeignKeyDataSource = GetCustomerData().AsQueryable();
+      }
+    }
+    DataSource = operation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+  }
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+}
+```
+> Sort operation for a foreign key column based on its foreign key value mandates including the foreign key data source in the sorted query of the `DataManager` request on the server. If the foreign key data source is not passed, the sorting operation will be performed based on the column field.
+
+
