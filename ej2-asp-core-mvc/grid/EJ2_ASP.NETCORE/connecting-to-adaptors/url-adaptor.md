@@ -737,3 +737,97 @@ public IActionResult BatchUpdate([FromBody] CRUDModel<OrdersDetails> batchOperat
 {% endtabs %}
 
 ![UrlAdaptor Batch Editing](../images/adaptors/url-adaptors/url-adaptor-batch-editing.gif)
+
+## Foreign key column with UrlAdaptor
+
+Configuration of foreign key column with remote data using `UrlAdaptor` requires assigning the DataManager instance with the endpoint URL to the particular column dataSource along with foreign key field and foreign key value properties. When both grid and foreign key column uses a `UrlAdaptor`, the grid data and the foreign key data are fetched separately from their respective remote endpoints. During operations such as filtering or sorting, the grid sends requests to the server based on the foreign key field and its corresponding value.
+
+### Handling Filter operation on foreign key column
+
+Filter operation on a foreign key column ensures that the displayed value ("CustomerName") is automatically mapped to the underlying foreign key field ("CustomerID"). This ensures the filter request sent to the server uses the value from the foreign key field ("CustomerID"), applying the filter correctly to the main dataset.
+
+![ForeignKey column filtering](../images/foreign-key-filter.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source.
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+  // Handling filtering operation
+  if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
+  {
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+  }
+
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+}
+```
+### Handling Sort operation on foreign key column
+
+Sort operation on a foreign key column orders records based on the underlying field ("CustomerID"). The sorting query sent to the server includes the corresponding foreign key value. To sort by the foreign key value, supply the foreign key's data source to the sorted query within the performSorting method.
+
+![ForeignKey column Sorting](../images/foreign-key-sorting.png)
+
+```csharp
+[HttpPost]
+public object Post([FromBody] DataManagerRequest DataManagerRequest)
+{
+  // Retrieve data from the data source (e.g., database).
+  IQueryable<OrdersDetails> DataSource = GetOrderData().AsQueryable();
+
+  QueryableOperation queryableOperation = new QueryableOperation(); // Initialize QueryableOperation instance.
+
+  if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0) //Sorting
+  {
+    for (int i = 0; i < DataManagerRequest.Sorted.Count; i++)
+    {
+      if (DataManagerRequest.Sorted[i].ForeignKeyValue == "CustomerName")
+      {
+        DataManagerRequest.Sorted[i].ForeignKeyDataSource = GetCustomerData().AsQueryable();
+      }
+    }
+    DataSource = operation.PerformSorting(DataSource, DataManagerRequest.Sorted);
+  }
+  // Get the total count of records.
+  int totalRecordsCount = DataSource.Count();
+
+  // Return data based on the request.
+  return new { result = DataSource, count = totalRecordsCount };
+}
+```
+> Sort operation for a foreign key column based on its foreign key value mandates including the foreign key DataSource in the sorted query of the DataManager request on the server. If the foreign key DataSource is not passed, the sorting operation will be performed based on the column field.
+
+### Handling search operation on foreign key column
+
+Search process in a grid with foreign key columns produces a filter query for each column using the provided search term. For foreign key columns specifically, the grid first queries the associated foreign key data source to retrieve the underlying field value that matches the search term. It then constructs a filter query using that value and the column's field, applying it to the main dataset.
+
+### Client side configuration for a foreign key column with UrlAdaptor
+
+The following example demonstrates how to configure a foreign key column using the `UrlAdaptor`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+<ejs-grid id="grid"  allowPaging="true" allowFiltering="true" allowSorting="true" toolbar="@(new List<string>() { "Search"})">
+    <e-data-manager url="http://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" foreignKeyField="CustomerID" foreignKeyValue="CustomerName">
+            <e-data-manager url="http://localhost:xxxx/api/Customers" adaptor="UrlAdaptor"></e-data-manager>
+        </e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+    </e-grid-columns>
+ </ejs-grid>
+ 
+
+{% endhighlight %}
+{% endtabs %}
