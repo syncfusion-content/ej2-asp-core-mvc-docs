@@ -1,0 +1,19 @@
+<div class="control-section">
+    <div class="sample-container">
+        @Html.EJS().FileManager("filemanager").AjaxSettings(
+            new Syncfusion.EJ2.FileManager.FileManagerAjaxSettings
+            {
+                Url = "/Home/FileOperations",
+                GetImageUrl = "/Home/GetImage",
+                UploadUrl = "/Home/Upload",
+                DownloadUrl = "/Home/Download"
+            }
+            ).NavigationPaneTemplate("#navigationPaneTemplate").Render()
+    </div>
+</div>
+
+<script id="navigationPaneTemplate" type="text/x-template">
+    <div class="e-nav-pane-node" style="display: inline-flex; align-items: center;">
+        <span class="folder-name" style="margin-left: 8px;">${name}</span>
+    </div>
+</script>

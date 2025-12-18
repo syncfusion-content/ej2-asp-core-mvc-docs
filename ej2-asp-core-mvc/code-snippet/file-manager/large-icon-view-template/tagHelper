@@ -1,0 +1,42 @@
+<div class="control-section">
+    <div class="sample-container">
+            <ejs-filemanager id="filemanager"
+                             cssClass="fm_template"
+                             largeIconsTemplate="#largeIconsTemplate">
+                <e-filemanager-ajaxsettings url="/Home/FileOperations"
+                                        downloadUrl="/Home/Download"
+                                        uploadUrl="/Home/Upload"
+                                        getImageUrl="/Home/GetImage">
+                </e-filemanager-ajaxsettings>
+            </ejs-filemanager>
+    </div>
+</div>
+
+<script id="largeIconsTemplate" type="text/x-template">
+    ${getLargeIconsViewTemplateJSON(data)}
+</script>
+
+<script>
+    function getLargeIconsViewTemplateJSON(item) {
+        const formattedDate = item.dateCreated
+            ? new Date(item.dateCreated).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            })
+            : '';
+        return `
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+            <span><strong>${item.name}</strong></span>
+            <span><strong>Type: </strong>${ item.isFile ? 'File' : 'Folder' }</span>
+            <span><strong>Modified: </strong>${formattedDate}</span>
+        </div>
+        `;
+    }
+</script>
+
+<style>
+    .fm_template .e-large-icons .e-list-item {
+        width: 190px;
+    }
+</style>
