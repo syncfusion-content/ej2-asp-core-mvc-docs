@@ -1,0 +1,19 @@
+@{
+    var toolbarItems = new object[]
+    {
+        "AICommands", "AIQuery"
+    };
+}
+
+<ejs-richtexteditor id="editor" aiAssistantPromptRequest="onPromptRequest">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>
+
+<script>
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            this.addAIPromptResponse('Demonstration of the AI Assistant Popup styling.', false);
+            this.addAIPromptResponse('Demonstration of the AI Assistant Popup styling.', true);
+        }, 5000);
+    }
+</script>

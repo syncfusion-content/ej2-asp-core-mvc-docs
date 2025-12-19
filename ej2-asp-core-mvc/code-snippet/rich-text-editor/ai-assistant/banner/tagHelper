@@ -1,0 +1,20 @@
+@{
+    var toolbarItems = new object[]
+     {
+        "AICommands", "AIQuery"
+     };
+
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+                BannerTemplate = @"<div class=""banner-content"">
+            <div class=""e-icons e-assistview-icon""></div>
+            <h3>AI Assistant</h3>
+            <i>AI-generated results can be error-prone; review them carefully.</i>
+        </div>"
+    };
+
+}
+
+<ejs-richtexteditor id="editor" aiAssistantSettings="@aiAssistantSettings">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>
