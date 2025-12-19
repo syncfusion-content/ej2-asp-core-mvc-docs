@@ -27,7 +27,7 @@ In the following demo, the "Lunch Break" cell spans multiple rows in the "1:00 P
 
 Row spanning in the TreeGrid allows automatically merging cells with identical values in the same column across consecutive rows. This significantly enhances readability and delivers a cleaner layout by eliminating repetitive data.To enable row spanning, set the `EnableRowSpan` property to "true" in the TreeGrid configuration.
  
-In the following example, row spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `enableRowSpan` property to "false" in the column level.
+In the following example, row spanning is applied to the "Status", "Permit Status", "Inspection Status", and "Punch List Status" columns, while it is disabled for the "Planned Budget" and "Actual Spend" columns by setting the `EnableRowSpan` property to "false" in the column level.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
