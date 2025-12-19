@@ -1,7 +1,7 @@
 <div class="control-section">
     <div class="sample-container">
             <ejs-filemanager id="filemanager"
-                             cssClass="fm_template"
+                             cssClass="e-fm-template-sample"
                              largeIconsTemplate="#largeIconsTemplate">
                 <e-filemanager-ajaxsettings url="/Home/FileOperations"
                                         downloadUrl="/Home/Download"
@@ -25,18 +25,92 @@
                 day: 'numeric'
             })
             : '';
+        const iconClass = getFileIconCssClass(item);
         return `
-            <div style="display: flex; flex-direction: column; gap: 2px;">
-            <span><strong>${item.name}</strong></span>
-            <span><strong>Type: </strong>${ item.isFile ? 'File' : 'Folder' }</span>
-            <span><strong>Modified: </strong>${formattedDate}</span>
-        </div>
+            <div class="custom-icon-card">
+                <div class="file-header">
+                    <div class="file-name" title="${item.name}">${item.name}</div>
+                </div>
+                <div class="${iconClass}"></div>
+                <div class="file-formattedDate">Created on ${formattedDate}</div>
+            </div>
         `;
+    }
+    function getFileIconCssClass(item) {
+        if (!item.isFile) return "e-list-icon e-fe-folder";
+
+        const extensionMap = {
+            jpg: "image",
+            jpeg: "image",
+            png: "image",
+            gif: "image",
+            mp3: "music",
+            wav: "music",
+            mp4: "video",
+            avi: "video",
+            doc: "doc",
+            docx: "docx",
+            ppt: "pptx",
+            pptx: "pptx",
+            xls: "xlsx",
+            xlsx: "xlsx",
+            txt: "txt",
+            js: "js",
+            css: "css",
+            html: "html",
+            exe: "exe",
+            msi: "msi",
+            php: "php",
+            xml: "xml",
+            zip: "zip",
+            rar: "rar",
+            pdf: "pdf"
+        };
+
+        const extension = (item.name.split('.').pop() || "").toLowerCase();
+        const iconType = extensionMap[extension] || "unknown";
+        return `e-list-icon e-fe-${iconType}`;
     }
 </script>
 
 <style>
-    .fm_template .e-large-icons .e-list-item {
-        width: 190px;
+    .e-fm-template-sample .custom-icon-card {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .e-fm-template-sample .file-header {
+        display: contents;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .e-fm-template-sample .file-name {
+        font-size: 14px;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 110px;
+    }
+
+    .e-fm-template-sample .file-formattedDate {
+        font-size: 12px;
+        margin-top: 8px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .e-filemanager.e-fm-template-sample .e-large-icons .e-list-item {
+        height: 150px;
+        width: 135px;
     }
 </style>
