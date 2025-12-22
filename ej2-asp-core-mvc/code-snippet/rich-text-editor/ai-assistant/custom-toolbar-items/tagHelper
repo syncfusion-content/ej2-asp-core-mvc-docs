@@ -49,7 +49,6 @@
 <script>
     let userDropDown = null;
     function onAIAssistantToolbarClick(args) {
-        debugger
         if (args.item.iconCss === 'e-icons e-open-link') {
             const target = args.originalEvent.target;
             const promptContainer = target.closest('.e-prompt-container');
@@ -62,7 +61,6 @@
     }
 
     function beforePopupOpen(event) {
-        debugger
         if (event.type === 'AIAssistant') {
             this.userDropDown = new ej.splitbuttons.DropDownButton({
                 items: [
@@ -79,7 +77,6 @@
 
     function beforePopupClose(event) {
         if (event.type === 'AIAssistant') {
-            debugger
             this.userDropDown.destroy();
         }
     }
