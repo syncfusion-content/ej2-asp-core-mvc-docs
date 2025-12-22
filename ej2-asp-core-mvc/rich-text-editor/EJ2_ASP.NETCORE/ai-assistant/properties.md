@@ -1,6 +1,6 @@
 ----
 layout: post
-title: AI Assistant Configuration in ##Platform_Name## Rich Text Editor Component
+title: Configure AI Assistant in ##Platform_Name## Rich Text Editor
 description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor Component.
 platform: ej2-asp-core-mvc
 control: Properties of AI Assistant

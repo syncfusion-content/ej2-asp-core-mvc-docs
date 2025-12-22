@@ -1,14 +1,14 @@
 ----
 layout: post
 title: Customizes AI in ##Platform_Name## Syncfusion Rich Text Editor
-description:  Learn about AI Assistant customizations in the in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
+description:  Learn about AI Assistant customizations in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
 platform: ej2-asp-core-mvc
 control: Customizations of AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 ----
 
-# Customization of AI Assistant
+# Customizations of AI Assistant
 
 The AI Assistant feature is designed to be easily customizable using its properties, public methods, and events. The following examples demonstrate the customizations in the AI Assistant by adding custom toolbar buttons to the Prompt, Response, and Header toolbars, styling the AI Assistant popup, and using public methods to demonstrate a proofread use case.
 

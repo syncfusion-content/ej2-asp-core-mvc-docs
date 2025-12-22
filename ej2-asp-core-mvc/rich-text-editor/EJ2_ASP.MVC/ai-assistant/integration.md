@@ -1,14 +1,14 @@
 ----
 layout: post
 title: AI Assistant of ##Platform_Name## Syncfusion Rich Text Editor
-description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor Component.
+description: Learn about AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor Component.
 platform: ej2-asp-core-mvc
 control: Integrating AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 ----
 
-# Integrating the AI Assistant
+# Integrating AI Assistant
 
 The **AI Assistant** in the Rich Text Editor provides integrated AI capabilities for simplified content creation, editing, and enhancement. It includes an AssistView presented inside a pop-up interface, a dropdown of predefined prompts, and dedicated toolbar options for initiating AI interactions.
 
