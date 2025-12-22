@@ -1,9 +1,9 @@
 ----
 layout: post
-title: AI Assistant in ##Platform_Name## Rich Text Editor Component
+title: AI Assistant of ##Platform_Name## Syncfusion Rich Text Editor
 description: Learn about the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name## Rich Text Editor Component.
 platform: ej2-asp-core-mvc
-control: Integrating the AI Assistant
+control: Integrating AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 ----
@@ -108,4 +108,4 @@ A working demonstration of the AI Assistant, showcasing real-time chunk streamin
 
 * **[GitHub Repository](https://github.com/SyncfusionExamples/richtexteditor-ai-assistant-service):** Syncfusion demo with Express.js and OpenAI SDK
 
-* **[Live Demo](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/aiassistant#/tailwind3):** Implementation using the `gpt-4o-mini` model
+* **[Live Demo](https://ej2.syncfusion.com/aspnetmvc/richtexteditor/overview#/tailwind3):** Implementation using the `gpt-4o-mini` model

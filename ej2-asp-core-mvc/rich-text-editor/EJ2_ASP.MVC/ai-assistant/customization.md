@@ -1,9 +1,9 @@
 ----
 layout: post
-title: AI Assistant Customization in ##Platform_Name Rich Text Editor Component
-description: Learn about the customization options available for the AI Assistant feature in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
+title: Customizes AI in ##Platform_Name## Syncfusion Rich Text Editor
+description:  Learn about AI Assistant customizations in the in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
 platform: ej2-asp-core-mvc
-control: Customization of AI Assistant
+control: Customizations of AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
 ----
@@ -59,6 +59,7 @@ In the following example, **custom toolbar items** are added to the **Header**, 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/custom-toolbar-items/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -102,6 +103,7 @@ In the following example, a CSS animation is applied to the popup while the requ
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/popup-styling/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -140,6 +142,7 @@ The following example demonstrates a Proofread use case by rendering a button ou
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/usecase/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 

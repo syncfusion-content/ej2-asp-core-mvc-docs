@@ -49,6 +49,7 @@ In the below example, a set of prompts and texts are configured to demonstrate t
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/commands/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -76,6 +77,7 @@ In the below sample, the `Prompts` and `Suggestions` properties of the `AiAssist
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/prompts/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -121,6 +123,7 @@ In the below sample, the toolbar settings are configured to modify the order and
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/toolbar-settings/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -148,6 +151,7 @@ In the below sample, the popup width and maximum height are configured.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/popup-dimensions/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -174,6 +178,7 @@ In the below sample, the maximum prompt history is configured to `30`, and when 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/prompt-history/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -199,6 +204,7 @@ To set the banner content displayed on top of the AI Assistant popup, use the `B
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/rich-text-editor/ai-assistant/banner/tagHelper %}
 {% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
