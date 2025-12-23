@@ -1,0 +1,30 @@
+@{
+    var toolbarItems = new object[]
+     {
+        "AICommands", "AIQuery"
+     };
+
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+                Commands = new object[]
+                {
+            new { text = "Rewrite", prompt = "Rewrite the content to be more refined." },
+            new { text = "Elaborate", prompt = "Expand on the following content with more detail and explanation:" },
+            new
+            {
+                text = "Change Tone",
+                items = new object[]
+                {
+                    new { text = "Professional", prompt = "Rewrite the following content in a professional tone:" },
+                    new { text = "Casual", prompt = "Rewrite the following content in a casual, conversational tone:" },
+                    new { text = "Direct", prompt = "Rewrite the following content to be more direct and to the point:" }
+                }
+            }
+                }
+    };
+
+}
+
+<ejs-richtexteditor id="editor" aiAssistantSettings="@aiAssistantSettings">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>
