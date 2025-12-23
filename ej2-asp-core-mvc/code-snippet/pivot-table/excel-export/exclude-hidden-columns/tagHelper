@@ -1,9 +1,9 @@
-<ejs-button id="csv" content="Export To CSV" isPrimary="true"></ejs-button>
+<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
 
 <ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
-            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
+            <e-field name="Amount" format="C0"></e-field>
         </e-formatsettings>
         <e-rows>
             <e-field name="Country"></e-field>
@@ -18,12 +18,24 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
+    <e-gridSettings columnRender="columnRender"></e-gridSettings>
 </ejs-pivotview>
 
 <script>
     var pivotObj;
-    document.getElementById('csv').onclick = function () {
+    document.getElementById('excel').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj.csvExport();
+        let excelExportProperties = {
+            includeHiddenColumn: false
+        };
+        pivotObj.excelExport(excelExportProperties);
+    }
+    function columnRender(args) {
+        for (var i = 1; i < args.columns.length; i++) {
+            if (args.stackedColumns[i].customAttributes &&
+                args.stackedColumns[i].customAttributes.cell.valueSort.levelName === 'FY 2016.Units Sold') {
+                args.stackedColumns[i].visible = false;
+            }
+        }
     }
 </script>

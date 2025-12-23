@@ -1,0 +1,32 @@
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowExcelExport(true).BeforeExport("beforeExport").Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function beforeExport(args) {
+        var pivotGridObj = document.getElementById('PivotView').ej2_instances[0];
+        var drilledMembers = pivotGridObj.dataSourceSettings.drilledMembers;
+        pivotGridObj.setProperties({ dataSourceSettings: { expandAll: true, drilledMembers: [] } }, true);
+        pivotGridObj.engineModule.generateGridData(pivotGridObj.dataSourceSettings, true);
+        args.dataCollections = [pivotGridObj.engineModule.pivotValues];
+        pivotGridObj.setProperties({ dataSourceSettings: { expandAll: false, drilledMembers: drilledMembers } }, true);
+    }
+</script>

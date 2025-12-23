@@ -1,0 +1,37 @@
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowExcelExport(true).BeforeExport("beforeExport").Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function beforeExport(args) {
+        for (var i = 0; i < args.dataCollections.length; i++) {
+            var pivotValue = args.dataCollections[i];
+            for (var j = 0; j < pivotValue.length; j++) {
+                var row = pivotValue[j];
+                if (row) {
+                    pivotValue[j] = row.filter(function (item) {
+                        return item !== null && (item.axis !== 'row');
+                    });
+                }
+            }
+        }
+    }
+</script>
