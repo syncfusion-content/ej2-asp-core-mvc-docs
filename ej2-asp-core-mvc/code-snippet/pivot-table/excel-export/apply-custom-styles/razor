@@ -1,0 +1,46 @@
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowExcelExport(true).GridSettings(gridSettings => {
+    gridSettings.ExcelQueryCellInfo("excelQueryCellInfo");
+}).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function excelQueryCellInfo(args) {
+        if (args.cell && args.cell.actualText === 'Sold') {
+            if (args.value < 500) {
+                args.style = {
+                    backColor: '#df3800',
+                    fontName: 'Biome',
+                    fontColor: '#FFFFFF',
+                    borders: { color: '#8B1E00', lineStyle: 'thin' }
+                };
+            }
+            else {
+                args.style = {
+                    backColor: '#00A45A',
+                    fontName: 'Nirmala UI',
+                    fontColor: '#FFFFFF',
+                    borders: { color: '#00663A', lineStyle: 'thin' }
+                };
+            }
+        }
+    }
+</script>

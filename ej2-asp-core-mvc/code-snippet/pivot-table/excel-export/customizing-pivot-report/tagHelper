@@ -1,0 +1,36 @@
+<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true" beforeExport="beforeExport">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function beforeExport(args) {
+        var pivotGridObj = document.getElementById('PivotView').ej2_instances[0];
+        var drilledMembers = pivotGridObj.dataSourceSettings.drilledMembers;
+        pivotGridObj.setProperties({ dataSourceSettings: { expandAll: true, drilledMembers: [] } }, true);
+        pivotGridObj.engineModule.generateGridData(pivotGridObj.dataSourceSettings, true);
+        args.dataCollections = [pivotGridObj.engineModule.pivotValues];
+        pivotGridObj.setProperties({ dataSourceSettings: { expandAll: false, drilledMembers: drilledMembers } }, true);
+    }
+</script>

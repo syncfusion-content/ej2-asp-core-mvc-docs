@@ -1,6 +1,6 @@
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
 
-<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+<ejs-pivotview id="PivotTable1" height="300" allowExcelExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -20,7 +20,7 @@
     </e-datasourcesettings>
 </ejs-pivotview>
 <br />
-<ejs-pivotview id="PivotGrid2" height="300" allowExcelExport="true">
+<ejs-pivotview id="PivotTable2" height="300" allowExcelExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
         <e-formatsettings>
             <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
@@ -43,15 +43,11 @@
 <script>
     var pivotObj; var pivotObj2;
     document.getElementById('excel').onclick = function () {
-        pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj2 = document.getElementById('PivotGrid2').ej2_instances[0];
-
+        pivotObj = document.getElementById('PivotTable1').ej2_instances[0];
         var excelExportProperties = {
-            multipleExport: { type: 'AppendToSheet', blankRows: 2 }
+            multipleExport: { type: 'AppendToSheet', blankRows: 2 },
+            pivotTableIds: ['PivotTable1', 'PivotTable2']
         };
-        var firstGridExport = pivotObj.grid.excelExport(excelExportProperties, true);
-        firstGridExport.then(function (fData) {
-            pivotObj2.excelExport(excelExportProperties, false, fData);
-        });
+        pivotObj.excelExport(excelExportProperties, true);
     }
 </script>
