@@ -22,8 +22,8 @@ To show the last value label, make sure the `Enable` property inside the `LastVa
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/last-value-label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/last-value-label/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverEffect.cs" %}
+{% include code-snippet/chart/last-value-label/hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,8 +33,8 @@ To show the last value label, make sure the `Enable` property inside the `LastVa
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/last-value-label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/last-value-label/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverEffect.cs" %}
+{% include code-snippet/chart/last-value-label/hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -49,8 +49,8 @@ The appearance of the last value label can be customized using style properties 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/last-value-label-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabelCustomization.cs" %}
-{% include code-snippet/chart/last-value-label-customization/lastValueLabelCustomization.cs %}
+{% highlight c# tabtitle="HoverCustomization.cs" %}
+{% include code-snippet/chart/last-value-label-customization/hoverCus.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,8 +60,8 @@ The appearance of the last value label can be customized using style properties 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/last-value-label-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabelCustomization.cs" %}
-{% include code-snippet/chart/last-value-label-customization/lastValueLabelCustomization.cs %}
+{% highlight c# tabtitle="HoverCustomization.cs" %}
+{% include code-snippet/chart/last-value-label-customization/hoverCus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
