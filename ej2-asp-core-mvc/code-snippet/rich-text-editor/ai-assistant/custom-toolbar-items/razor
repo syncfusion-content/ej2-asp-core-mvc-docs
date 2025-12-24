@@ -1,0 +1,71 @@
+@{
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+        PromptToolbarSettings = new object[]
+    {
+        "Edit",
+            "Copy",
+            new { command = "Prompt", subCommand = "Search", iconCss = "e-icons e-open-link", tooltip = "Search in Google" }
+    },
+        ResponseToolbarSettings = new object[]
+    {
+        new { command = "Response", subCommand = "Save", iconCss = "e-icons e-save", tooltip = "Save Response" },
+            "Regenerate",
+            "Copy",
+            "|",
+            "Insert"
+    },
+        HeaderToolbarSettings = new object[]
+    {
+        "AIcommands",
+            new { command = "Header", subCommand = "Profile", template = "<button id=\"profileDropDown\" class=\"e-rte-dropdown-menu\"></button>", align = "Right" },
+            "Close"
+    },
+        Prompts = new object[]
+    {
+        new
+            {
+                prompt = "What is Essential Studio ?",
+                response = "Essential Studio is a software toolkit by Syncfusion that offers a variety of UI controls, frameworks, and libraries for developing applications on web, desktop, and mobile platforms. It aims to streamline application development with customizable, pre-built components."
+            }
+    }
+    };
+}
+
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).AiAssistantSettings(aiAssistantSettings).AiAssistantToolbarClick("onAIAssistantToolbarClick").BeforePopupOpen("beforePopupOpen").BeforePopupClose("beforePopupClose").Render()
+
+
+<script type="text/javascript">
+    let userDropDown = null;
+    function onAIAssistantToolbarClick(args) {
+        if (args.item.iconCss === 'e-icons e-open-link') {
+            const target = args.originalEvent.target;
+            const promptContainer = target.closest('.e-prompt-container');
+            const prompt = promptContainer.querySelector('.e-prompt-text').textContent;
+            window.open(`https://www.google.com/search?q=${prompt}`, '_blank');
+        } else if (args.item.iconCss === 'e-icons e-save') {
+            const response = args.event.currentTarget.closest('.e-output-container').querySelector('.e-content-body').innerHTML;
+            console.log(response); // Handle Saving response here.
+        }
+    }
+    function beforePopupOpen(event) {
+        if (event.type === 'AIAssistant') {
+            this.userDropDown = new ej.splitbuttons.DropDownButton({
+                items: [
+                    { text: 'Usage', iconCss: 'e-icons e-chart' },
+                    { text: 'Saved Response', iconCss: 'e-icons e-save' },
+                    { separator: true },
+                    { text: 'Log out', iconCss: 'e-icons e-view-side' }
+                ],
+                iconCss: 'e-icons e-user',
+                cssClass: 'e-caret-hide'
+            }, event.element.querySelector('#profileDropDown'));
+        }
+    }
+
+    function beforePopupClose(event) {
+        if (event.type === 'AIAssistant') {
+            this.userDropDown.destroy();
+        }
+    }
+</script>

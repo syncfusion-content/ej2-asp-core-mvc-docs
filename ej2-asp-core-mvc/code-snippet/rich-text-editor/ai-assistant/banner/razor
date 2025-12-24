@@ -1,0 +1,12 @@
+@{
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+        BannerTemplate = @"<div class=""banner-content"">
+            <div class=""e-icons e-assistview-icon""></div>
+            <h3>AI Assistant</h3>
+            <i>AI-generated results can be error-prone; review them carefully.</i>
+        </div>"
+    };
+}
+
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).AiAssistantSettings(aiAssistantSettings).Render()
