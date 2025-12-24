@@ -1,0 +1,39 @@
+@{
+    var toolbarItems = new object[]
+    {
+        "AICommands", "AIQuery"
+    };
+
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+        HeaderToolbarSettings = new object[]
+        {
+            "AIcommands",
+            "Clear",
+            "Close"
+        },
+        PromptToolbarSettings = new object[]
+        {
+            "Edit"
+        },
+        ResponseToolbarSettings = new object[]
+        {
+            "Copy",
+            "|",
+            "Insert"
+        },
+        Prompts = new object[]
+        {
+            new
+            {
+                prompt = "What is Essential Studio ?",
+                response = "Essential Studio is a software toolkit by Syncfusion that offers a variety of UI controls, frameworks, and libraries for developing applications on web, desktop, and mobile platforms. It aims to streamline application development with customizable, pre-built components."
+            }
+        }
+    };
+}
+
+<ejs-richtexteditor id="editor"
+                    aiAssistantSettings="@aiAssistantSettings">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>
