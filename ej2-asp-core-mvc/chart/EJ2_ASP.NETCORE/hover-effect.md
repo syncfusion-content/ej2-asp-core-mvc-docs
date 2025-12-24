@@ -61,7 +61,7 @@ You can customize the hover effect color and border width by setting the `color`
 {% include code-snippet/chart/user-interaction/hover-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HoverCustomization.cs" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/hoverCus.cs %}
+{% include code-snippet/chart/user-interaction/hover-cs2/hoverCus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

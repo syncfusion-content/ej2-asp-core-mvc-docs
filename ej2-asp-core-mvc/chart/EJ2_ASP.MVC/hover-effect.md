@@ -20,10 +20,10 @@ You can enable the hover effect for the rectangular series chart by setting the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/tagHelper %}
+{% include code-snippet/chart/last-value-label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverEffect.cs" %}
+{% include code-snippet/chart/last-value-label/hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ You can enable the hover effect for the rectangular series chart by setting the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/razor %}
+{% include code-snippet/chart/last-value-label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverEffect.cs" %}
+{% include code-snippet/chart/last-value-label/hover.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -47,10 +47,10 @@ You can customize the hover effect color and border width by setting the `color`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chart/user-interaction/hover-cs2/tagHelper %}
+{% include code-snippet/chart/last-value-label-customization/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/user-interaction/hover-cs2/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverCustomization.cs" %}
+{% include code-snippet/chart/last-value-label-customization/hoverCus.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ You can customize the hover effect color and border width by setting the `color`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chart/user-interaction/hover-cs2/razor %}
+{% include code-snippet/chart/last-value-label-customization/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="LastValueLabel.cs" %}
-{% include code-snippet/chart/user-interaction/hover-cs1/lastValueLabel.cs %}
+{% highlight c# tabtitle="HoverCustomization.cs" %}
+{% include code-snippet/chart/last-value-label-customization/hoverCus.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
