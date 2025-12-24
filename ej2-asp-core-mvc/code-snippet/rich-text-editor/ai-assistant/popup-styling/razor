@@ -1,0 +1,10 @@
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).AiAssistantPromptRequest("onPromptRequest").Render()
+
+<script type="text/javascript">
+    function onPromptRequest() {
+        setTimeout(() => {
+            this.addAIPromptResponse('Demonstration of the AI Assistant Popup styling.', false);
+            this.addAIPromptResponse('Demonstration of the AI Assistant Popup styling.', true);
+        }, 5000);
+    }
+</script>
