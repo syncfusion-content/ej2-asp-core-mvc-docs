@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
+title: Text Formatting in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Text Formatting and Structure in the ##Platform_Name## Rich Text Editor Control
+# Text Formatting in the ##Platform_Name## Rich Text Editor Control
 
 ## Basic text styling
 
@@ -247,7 +247,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../../images/list-editing.gif)
 
 ## Increase and decrease indent
 
@@ -496,7 +496,7 @@ Use the `HorizontalLine` tool in the editor below to see the feature in action.
 
 ## Format painter
 
-The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
+The format painter tool enables users to replicate formatting from one text segment and apply it to another. It can be accessed through the toolbar or keyboard shortcuts, allowing for the transfer of formatting styles from individual words to entire paragraphs. Customization options for the format painter are available through the [formatPainterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 ### Configuring format painter tool in the toolbar
 
@@ -517,7 +517,7 @@ The following code example shows how to add the format painter tool in the Rich 
 
 ### Customizing copy and paste format
 
-You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](../api/rich-text-editor/https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html/) property.
+You can customize the format painter tool in the Rich Text Editor using the [formatPainterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html) property.
 
 The [allowedFormats](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorFormatPainterSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorFormatPainterSettings_AllowedFormats) property helps you to specify tag names that allow the formats to be copied from the selected text. For instance, you can include formats from the selected text using tags like `p; h1; h2; h3; div; ul; ol; li; span; strong; em; code;`. The following example demonstrates how to customize this functionality.
 
