@@ -66,4 +66,4 @@ You can customize the hover effect color and border width by setting the `color`
 {% endtabs %}
 {% endif %}
 
->Note: The hover effect works for rectangle series types, while for line and area series we use the trackball feature.
+>Note: The hover effect applies to rectangular series types, such as Column and Bar. For Line and Area series, the trackball feature is used instead.
