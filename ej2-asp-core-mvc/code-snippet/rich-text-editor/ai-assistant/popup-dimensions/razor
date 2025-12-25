@@ -1,0 +1,9 @@
+@{
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+        PopupMaxHeight = "500",
+        PopupWidth = "500"
+    };
+}
+
+@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).AiAssistantSettings(aiAssistantSettings).Render()
