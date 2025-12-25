@@ -78,7 +78,7 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 
 ## Conditional row selection
 
-The TreeGrid supports conditional row selection through the `isRowSelectable` callback. This allows selection to be controlled by custom business logic, ensuring that only rows meeting specific conditions can be selected. The callback receives each row’s data and returns "true" to allow selection or "false" to prevent it.
+The TreeGrid supports conditional row selection through the [`isRowSelectable`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_IsRowSelectable) callback. This allows selection to be controlled by custom business logic, ensuring that only rows meeting specific conditions can be selected. The callback receives each row’s data and returns "true" to allow selection or "false" to prevent it.
 
 Local data: The callback runs once when the TreeGrid initializes and evaluates all records because the full dataset is already available on the client.
 
@@ -110,3 +110,4 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endif %}
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
