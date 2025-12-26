@@ -380,6 +380,8 @@ The Excel export provides an option to change the colors of headers, captions, a
 
 > By default, the material theme is applied to the exported Excel document.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/excel-export/theme-export/tagHelper %}

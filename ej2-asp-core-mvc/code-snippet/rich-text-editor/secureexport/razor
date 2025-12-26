@@ -1,0 +1,14 @@
+   @Html.EJS().RichTextEditor("exportEditor").ToolbarSettings(e =>
+                     e.Items((object)ViewBag.items)).ExportWord(ViewBag.ExportWord).ExportPdf(ViewBag.ExportPdf).documentExporting("onDocumentExporting").Value((string)ViewBag.RTEValue).EnableXhtml(true).InsertImageSettings(ViewBag.InsertImageSettings).Render()
+
+<script>
+    function onDocumentExporting(args) {
+        var accessToken = "Authorization_token";
+        // Specify export type (e.g., 'Pdf' or 'Word')
+        args.exportType = 'Pdf';
+        // Add authentication header
+        args.currentRequest = [{ Authorization: accessToken }];
+        // Add custom form data
+        args.customFormData = [{ userId: '1234' }, { exportMode: 'secure' }];
+    }
+</script>
