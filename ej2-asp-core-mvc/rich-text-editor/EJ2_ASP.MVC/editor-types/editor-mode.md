@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Editor mode in ##Platform_Name## Rich text editor control
+# Editor modes in ##Platform_Name## Rich Text Editor control
 
 The Rich Text Editor control used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 
@@ -81,5 +81,5 @@ For further details on Markdown editing, refer to the [`Markdown`](https://ej2.s
 
 ## See Also
 
-* [How to integrate the third party library](../third-party-integration/)
-* [How to render the iframe](./iframe/)
+* [How to integrate the third party library](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/third-party-integration)
+* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)

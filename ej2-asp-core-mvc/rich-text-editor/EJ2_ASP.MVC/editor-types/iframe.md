@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Iframe in ##Platform_Name## Rich Text Editor Component
+title: Iframe in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Iframe in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Iframe
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# IFrame Editing Mode in ##Platform_Name## Rich Text Editor Control
+# IFrame Editing Mode in ##Platform_Name## Rich Text Editor
 
 The iframe editor in the Rich Text Editor control provides an isolated environment for content editing. It uses an iframe element to create a separate document, ensuring better compatibility and separation from the parent page's styles and scripts. In this mode, the editor displays only the body tag of the iframe, offering a clean and isolated workspace for content creation.
 
