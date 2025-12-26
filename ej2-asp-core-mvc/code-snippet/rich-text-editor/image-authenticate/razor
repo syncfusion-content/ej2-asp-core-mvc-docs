@@ -2,8 +2,6 @@
 
 <script>
     function onImageUploading(args) {
-        var accessToken = "Authorization_token";
-        // adding custom Form Data
-        args.customFormData = [{ 'Authorization': accessToken }];
+        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
     }
 </script>
