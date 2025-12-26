@@ -107,4 +107,4 @@ The circle Avatar style can be applied by adding the modifier class `.e-avatar-c
 
 ![Avatar Circle](./images/circle.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar/AvatarUGSample).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Avatar).
