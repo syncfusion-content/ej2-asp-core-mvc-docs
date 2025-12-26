@@ -41,6 +41,37 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 {% endtabs %}
 {% endif %}
 
+## Secure importing with authentication
+
+The Rich Text Editor provides functionality to import Word documents with authentication for secure importing.
+
+The [wordImporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorWordImporting.html) event provides [UploadingEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.uploader.html) for secure Word file import. Use `currentRequest` to add authentication headers and `customFormData` to include extra parameters in the POST body along with the uploaded file. On the server, read headers and form data from the request to validate and process the import securely.
+
+The following example demonstrates how to configure `wordImporting` for secure importing:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/secureimport/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/secureimport/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/secureimport/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/secureimport/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Exporting content to PDF and Microsoft Word
 
 The Rich Text Editor's export functionality allows users to convert their edited content into PDF or Word documents with a single click, preserving all text styles, images, tables, and other formatting elements.
@@ -68,6 +99,37 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/export/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Secure exporting with authentication
+
+The Rich Text Editor provides functionality to export Word or PDF documents with authentication for secure exporting.
+
+The [documentExporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorDocumentExporting.html) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
+
+The following example demonstrates how to configure `documentExporting` for secure exporting:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/secureexport/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/secureexport/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/secureexport/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/secureexport/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
