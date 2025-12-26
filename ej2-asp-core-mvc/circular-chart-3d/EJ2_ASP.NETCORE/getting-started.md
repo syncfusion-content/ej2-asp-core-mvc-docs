@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## 3D Circular Chart Control | Syncfusion
+title: Getting Started with ##Platform_Name## 3D Circular Chart | Syncfusion
 description: Checkout and learn about getting started with Syncfusion ##Platform_Name## 3D Circular Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started

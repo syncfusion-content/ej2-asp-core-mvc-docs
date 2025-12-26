@@ -45,7 +45,7 @@ The treegrid supports two types of selection that can be set by using the [`type
 
 ## Selection mode
 
-The treegrid supports three types of selection mode that can be set by using [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Mode.html) property of [`e-treegrid-selectionsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html). They are:
+The treegrid supports three types of selection mode that can be set by using [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Mode) property of [`e-treegrid-selectionsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html). They are:
 
 * **Row**: The Row value is set by default, and allows you to select only rows.
 * **Cell**: Allows you to select only cells.

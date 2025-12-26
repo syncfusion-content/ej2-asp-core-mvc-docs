@@ -118,7 +118,7 @@ Refer to the following code example to create a Tooltip on multiple targets with
 
 N> In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Tooltip/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Tooltip).
 
 ## See also
 

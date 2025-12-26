@@ -366,7 +366,7 @@ The following code snippet demonstrates specifying the current path in File Mana
 
 ![ASP.NET Core File Manager with Specific Path](images/path.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager).
 
 ## See also
 

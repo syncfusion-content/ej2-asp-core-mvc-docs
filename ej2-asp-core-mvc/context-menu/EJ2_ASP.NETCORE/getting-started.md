@@ -171,7 +171,7 @@ N> The [`separator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 ![ASP.NET Core Context Menu with Separator](images/context-menu-with-seperator.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ContextMenu/ASP.NET%20Core%20Tag%20Helper%20Examples)
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ContextMenu)
 
 ## See also
 
