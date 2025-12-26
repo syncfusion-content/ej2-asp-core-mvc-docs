@@ -14,7 +14,7 @@ The iframe editor in the Rich Text Editor control provides an isolated environme
 
 ## Configuring the Iframe Editor
 
-To enable the iframe editor, you can use the [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
+To enable the iframe editor, you can use the [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorIFrameSettings.html) property. When this option is enabled, the Rich Text Editor creates an iframe element as the content area during initialization.
 
 Here's an example of how to enable the iframe editor:
 
@@ -44,7 +44,7 @@ Here's an example of how to enable the iframe editor:
 
 ## Customizing IFrame Attributes
 
-You can add custom attributes to the body tag of the iframe using the attributes field of the [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_IframeSettings_Syncfusion_EJ2_RichTextEditor_RichTextEditorIFrameSettings_) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
+You can add custom attributes to the body tag of the iframe using the attributes field of the [IframeSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorIFrameSettings.html) property. This property accepts name/value pairs in string format, enabling you to override the default appearance of the content area.
 
 
 {% if page.publishingplatform == "aspnet-core" %}
@@ -105,4 +105,4 @@ Likewise, add the external script file to the `< iframe >` element using the `sc
 ## See Also
 
 * [Implementing Inline Editing](./inline-editing)
-* [Using the Markdown Editor](../../../markdown-editor/EJ2_ASP.MVC/getting-started)
+* [Using the Markdown Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started)
