@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in the ##Platform_Name## Rich Text Editor Control
+# Globalization in the ##Platform_Name## Rich Text Editor
 
 ## Localization
 
