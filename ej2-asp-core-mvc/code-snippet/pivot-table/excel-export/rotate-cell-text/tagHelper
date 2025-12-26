@@ -1,0 +1,46 @@
+@{
+    var data = new int[] { 90, 135, 180, 270 };
+}
+<div style="display: flex; gap: 20px; align-items: center;">
+    <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <label>Select a degree:</label>
+        <ejs-dropdownlist id="dropDown" width="150px" placeholder="Select a degree" dataSource="data"></ejs-dropdownlist>
+    </div>
+</div>
+
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year" caption="Year"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+    <e-gridSettings excelHeaderQueryCellInfo="excelHeaderQueryCellInfo" excelQueryCellInfo="excelQueryCellInfo"></e-gridSettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+    function excelHeaderQueryCellInfo(args) {
+        var dropDownListObject = document.getElementById("dropDown").ej2_instances[0];
+        args.style = { rotation: dropDownListObject.value };
+    }
+    function excelQueryCellInfo(args) {
+        var dropDownListObject = document.getElementById("dropDown").ej2_instances[0];
+        args.style = { rotation: dropDownListObject.value };
+    }
+</script>

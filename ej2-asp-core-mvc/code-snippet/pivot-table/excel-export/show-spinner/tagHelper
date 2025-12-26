@@ -1,0 +1,112 @@
+<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+<ejs-pivotview id="pivotview" width="100%" height="300" enablevirtualization="true" dataBound="onDataBound" exportComplete="exportComplete" allowExcelExport="true">
+    <e-datasourcesettings expandall="true" enablesorting="false">
+        <e-formatsettings>
+            <e-field name="Price" format="C0"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="ProductID"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Year"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Price" caption="Unit Price"></e-field>
+            <e-field name="Sold" caption="Unit Sold"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    var customername = [
+      'TOM',
+      'Hawk',
+      'Jon',
+      'Chandler',
+      'Monica',
+      'Rachel',
+      'Phoebe',
+      'Gunther',
+      'Ross',
+      'Geller',
+      'Joey',
+      'Bing',
+      'Tribbiani',
+      'Janice',
+      'Bong',
+      'Perk',
+      'Green',
+      'Ken',
+      'Adams',
+    ];
+    var city = [
+      'New York',
+      'Los Angeles',
+      'Chicago',
+      'Houston',
+      'Philadelphia',
+      'Phoenix',
+      'San Antonio',
+      'Austin',
+      'San Francisco',
+      'Columbus',
+      'Washington',
+      'Portland',
+      'Oklahoma',
+      'Las Vegas',
+      'Virginia',
+      'St. Louis',
+      'Birmingham',
+    ];
+    var isInit = true;
+    var dt = 0;
+    var data = function (count) {
+      var result = [];
+      for (var i = 1; i < count + 1; i++) {
+        dt++;
+        var round = void 0;
+        var toString_1 = i.toString();
+        if (toString_1.length === 1) {
+          round = '0000' + i;
+        } else if (toString_1.length === 2) {
+          round = '000' + i;
+        } else if (toString_1.length === 3) {
+          round = '00' + i;
+        } else if (toString_1.length === 4) {
+          round = '0' + i;
+        } else {
+          round = toString_1;
+        }
+        result.push({
+          ProductID: 'PRO-' + round,
+          City: city[Math.round(Math.random() * city.length)] || city[0],
+          Year: 'FY ' + (dt + 2021),
+          CustomerName:
+            customername[Math.round(Math.random() * customername.length)] ||
+            customername[0],
+          Price: Math.round(Math.random() * 5000) + 5000,
+          Sold: Math.round(Math.random() * 80) + 10,
+        });
+        if (dt / 4 == 1) dt = 0;
+      }
+      return result;
+    };
+    function onDataBound(args) {
+      var pivotView = document.getElementById('pivotview').ej2_instances[0];
+      if(isInit) {
+          pivotView.dataSourceSettings.dataSource = data(10000);
+      }
+      isInit = false;
+    }
+    document.getElementById('excel').onclick = function () {
+      pivotObj = document.getElementById('pivotview').ej2_instances[0];
+      pivotObj.showWaitingPopup();
+      setTimeout(function () {
+        pivotObj.excelExport();
+      });
+    };
+    function exportComplete(args) {
+        pivotObj.hideWaitingPopup();
+    }
+</script>

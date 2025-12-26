@@ -1171,6 +1171,7 @@
 				<ul>
 					<li><a href="/ej2-asp-core/gantt/columns/column-reordering">Column Reordering</a></li>
 					<li><a href="/ej2-asp-core/gantt/columns/column-resizing">Column Resizing</a></li>
+					<li><a href="/ej2-asp-core/gantt/columns/frozen-column">Column Pinning (Frozen)</a></li>
 					<li><a href="/ej2-asp-core/gantt/columns/column-template">Column Template</a></li>
 					<li><a href="/ej2-asp-core/gantt/columns/column-menu">Column Menu</a></li>
 					<li><a href="/ej2-asp-core/gantt/columns/responsive-columns">Responsive Columns</a></li>
@@ -1339,6 +1340,7 @@
 						<li><a href="/ej2-asp-core/grid/row/detail-template">Detail Template</a></li>
 						<li><a href="/ej2-asp-core/grid/row/row-drag-and-drop">Row Drag and Drop</a></li>
 						<li><a href="/ej2-asp-core/grid/row/row-spanning">Row Spanning</a></li>
+						<li><a href="/ej2-asp-core/grid/row/row-pinning">Row Pinning</a></li>
 					</ul>
 				</li>
 				<li><a href="/ej2-asp-core/grid/cell">Cell</a></li>
@@ -1726,6 +1728,7 @@
 		<ul>
 		<li><a href="/ej2-asp-core/maskedtextbox/getting-started">Getting Started</a></li>
 		<li><a href="/ej2-asp-core/maskedtextbox/mask-configuration">Mask Configuration</a></li>
+		<li><a href="/ej2-asp-core/maskedtextbox/adornments">Adornments</a></li>
 		<li><a href="/ej2-asp-core/maskedtextbox/accessibility">Accessibility</a></li>
 		<li><a href="/ej2-asp-core/maskedtextbox/style-appearance">Style and Appearance</a></li>
 		<li>How To
@@ -1857,6 +1860,7 @@
 		<ul>
 		<li><a href="/ej2-asp-core/numerictextbox/getting-started">Getting Started</a></li>
 		<li><a href="/ej2-asp-core/numerictextbox/formats">Number Formats</a></li>
+		<li><a href="/ej2-asp-core/numerictextbox/adornments">Adornments</a></li>
 		<li><a href="/ej2-asp-core/numerictextbox/globalization">Globalization</a></li>
 		<li><a href="/ej2-asp-core/numerictextbox/accessibility">Accessibility</a></li>
 		<li><a href="/ej2-asp-core/numerictextbox/style-appearance">Style and Appearance</a></li>
@@ -2237,6 +2241,13 @@
 				<li><a href="/ej2-asp-core/rich-text-editor/validation-security/xhtml-validation">Content Validation and Security in XHTML</a></li>
 			</ul>
 		</li>
+		<li>AI Assistant
+			<ul>
+				<li><a href="/ej2-asp-core/rich-text-editor/ai-assistant/integration">Integration</a></li>
+				<li><a href="/ej2-asp-core/rich-text-editor/ai-assistant/properties">Property Configurations</a></li>
+				<li><a href="/ej2-asp-core/rich-text-editor/ai-assistant/customization">Customisation Options</a></li>
+			</ul>
+		</li>
 		<li><a href="/ej2-asp-core/rich-text-editor/link">Link Manipulation</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/selection">Selection</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/disable-editor">Disabling the Rich Text Editor</a></li>
@@ -2256,6 +2267,7 @@
 		<li><a href="/ej2-asp-core/rich-text-editor/code-block">Code Block</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/remove-formatting">Remove Formatting</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/format-painter">Format Painter</a></li>
+		<li><a href="/ej2-asp-core/rich-text-editor/clipboard-cleanup">Clipboard Cleanup</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/paste-cleanup">Paste Cleanup</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/enter-key-configuration">Enter Key Configuration</a></li>
 		<li><a href="/ej2-asp-core/rich-text-editor/undo-redo">Undo Redo</a></li>
@@ -2664,6 +2676,7 @@
 		<li><a href="/ej2-asp-core/textbox/sizing">Sizing</a></li>
 		<li><a href="/ej2-asp-core/textbox/validation">Validation</a></li>
 		<li><a href="/ej2-asp-core/textbox/multiline">Multiline</a></li>
+		<li><a href="/ej2-asp-core/textbox/adornments">Adornments</a></li>
 		<li><a href="/ej2-asp-core/textbox/accessibility">Accessibility</a></li>
 		<li><a href="/ej2-asp-core/textbox/style-appearance">Style and Appearance</a></li>
 		<li>How To
@@ -2708,6 +2721,7 @@
 			<li><a href="/ej2-asp-core/textarea/resize">Resize</a></li>
 			<li><a href="/ej2-asp-core/textarea/max-length">Maximum Length</a></li>
 			<li><a href="/ej2-asp-core/textarea/form-support">Form Support</a></li>
+			<li><a href="/ej2-asp-core/textarea/adornments">Adornments</a></li>
 			<li><a href="/ej2-asp-core/textarea/style-appearance">Style and Appearance</a></li>
 			<li><a href="/ej2-asp-core/textarea/events">Events</a></li>
 			<li><a href="/ej2-asp-core/textarea/methods">Methods</a></li>
@@ -3049,7 +3063,11 @@
 		</li>		
 	<li>Release Notes
 		<ul>
-			<li>2025 Volume 4 - 32.*<ul><li><a href="/ej2-asp-core/release-notes/32.1.19">32.1.19 Main Release</a></li></ul></li><li>2025 Volume 3 - 31.*
+			<li>2025 Volume 4 - 32.*<ul>
+				<li>Weekly Nuget Release
+					<ul><li><a href="/ej2-asp-core/release-notes/32.1.20">32.1.20</a></li></ul></li>
+				<li><a href="/ej2-asp-core/release-notes/32.1.19">32.1.19 Main Release</a></li></ul></li>
+			<li>2025 Volume 3 - 31.*
 				<ul>
 					<li>Weekly Nuget Release
 						<ul><li><a href="/ej2-asp-core/release-notes/31.2.18">31.2.18</a></li>

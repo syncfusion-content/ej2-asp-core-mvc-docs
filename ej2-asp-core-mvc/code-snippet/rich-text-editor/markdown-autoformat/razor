@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("markdownAutoformat").Value(ViewBag.value).Render()

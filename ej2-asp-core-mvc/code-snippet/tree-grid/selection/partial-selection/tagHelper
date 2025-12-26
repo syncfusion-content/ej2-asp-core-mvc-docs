@@ -1,0 +1,18 @@
+<ejs-treegrid id="TreeGrid" dataSource="@ViewBag.datasource" enableVirtualization="true" allowSelection="true" parentIdMapping="ParentID" idMapping="TaskID" treeColumnIndex="1" isRowSelectable="isRowSelectable">
+    <e-treegrid-selectionsettings pesistSelection="true"></e-treegrid-selectionsettings>
+    <e-treegrid-columns>
+        <e-treegrid-column type="checkbox" width="50"></e-treegrid-column>
+        <e-treegrid-column field="Task" headerText="Task" width="300"></e-treegrid-column>
+        <e-treegrid-column field="TaskID" visible="false" isPrimaryKey="true"></e-treegrid-column>
+        <e-treegrid-column field="AssignedTo" headerText="Assigned To" width="140"></e-treegrid-column>
+        <e-treegrid-column field="StartDate" headerText="Start" format="yMd" type="date" width="180"></e-treegrid-column>
+        <e-treegrid-column field="DueDate" headerText="Due" format="yMd" type="date" width="180"></e-treegrid-column>
+        <e-treegrid-column field="Priority" headerText="Priority" width="90"></e-treegrid-column>
+        <e-treegrid-column field="Progress" headerText="Status" width="90"></e-treegrid-column>   
+    </e-treegrid-columns>
+</ejs-treegrid>
+<script>
+    function isRowSelectable(data,columns) {
+        return data.Progress !== 'Completed';
+    }
+</script>

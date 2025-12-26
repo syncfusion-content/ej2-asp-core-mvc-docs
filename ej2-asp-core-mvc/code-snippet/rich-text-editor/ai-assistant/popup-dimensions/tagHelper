@@ -1,0 +1,17 @@
+@{
+    var toolbarItems = new object[]
+    {
+        "AICommands", "AIQuery"
+    };
+
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+            {
+                PopupMaxHeight = "500",
+                PopupWidth = "500"
+            };
+}
+
+<ejs-richtexteditor id="editor"
+                    aiAssistantSettings="@aiAssistantSettings">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>

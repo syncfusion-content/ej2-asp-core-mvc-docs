@@ -1,0 +1,10 @@
+<ejs-richtexteditor id="clipboardCleanup"  beforeClipboardWrite="beforeClipboardWrite"></ejs-richtexteditor>
+
+<script>
+    function beforeClipboardWrite(args){
+        if (args.operation === 'copy') {
+            args.htmlContent = '<h1>This is customized content triggered while copy event</h1>';
+            args.plainTextContent = 'This is customized content triggered while copy event';
+        }
+    }
+</script>

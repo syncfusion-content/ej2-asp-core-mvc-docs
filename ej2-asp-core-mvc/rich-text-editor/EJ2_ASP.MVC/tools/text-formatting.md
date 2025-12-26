@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text formatting and Structure in ##Platform_Name## Rich Text Editor | Syncfusion
+title: Text Formatting in ##Platform_Name## Rich Text Editor | Syncfusion
 description: Learn here all about Text formatting and Structure in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text formatting and Structure
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Text Formatting and Structure in the ##Platform_Name## Rich Text Editor Control
+# Text Formatting in the ##Platform_Name## Rich Text Editor Control
 
 ## Basic text styling
 
@@ -247,7 +247,7 @@ In the Rich Text Editor, pressing the `Tab` key while the cursor is inside a lis
 
 Please refer to the below video for visual behavior and interaction examples:
 
-![Rich Text Editor list editing behaviour](../images/list-editing.gif)
+![Rich Text Editor list editing behaviour](../../images/list-editing.gif)
 
 ## Increase and decrease indent
 
@@ -624,6 +624,67 @@ Using `Clear Format` makes it easy to undo styling changes and keep your text lo
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/clear-format-cs2/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Markdown Auto Format
+
+The Rich Text Editor supports automatic conversion of Markdown syntax into HTML using the [EnableMarkdownAutoFormat](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EnableMarkdownAutoformat) property. This feature simplifies content creation by transforming Markdown elements into their corresponding HTML tags, ensuring consistency and improving efficiency.
+
+By default, Markdown Auto-Format is enabled. The editor supports both inline formatting and block-level elements. As you type, Markdown syntax is automatically converted into semantic HTML tags, ensuring a smooth and efficient editing experience.
+
+### Inline Formatting
+
+The following inline formatting options are available:
+
+- Bold – Use `**text**` or `__text__`.
+- Italic – Use `*text*` or `_text_`.
+- Inline Code – Use `text`.
+- Strikethrough – Use `~~text~~`.
+
+### Block formatting
+
+The following block formatting options are available:
+
+- **Bulleted list** – Start a line with `*` or `-` followed by a space.
+- **Numbered list** – Start a line with `1.` followed by a space.
+- **Check List** – Start a line with `[ ]` or `[x]` followed by a space to insert an unchecked or checked list item, respectively.
+- **Headings** – Start a line with `#`, `##`, or `###` followed by a space to create Heading 1, Heading 2, or Heading 3. You can use up to six levels of headings
+- **Block quote** – Start a line with `>` followed by a space.
+- **Code block** – Start a line with ` ``` ` followed by a space.
+- **Horizontal line** – Start a line with `---` followed by a space.
+
+
+### How Markdown auto-formatting works
+
+#### Inline Formats
+Elements such as **bold**, *italic*, ~~strikethrough~~, and `inline code` are converted **immediately after the closing marker is typed**.  
+**Example:** Typing `**bold**` will render as **bold** the moment you enter the second `*`.
+
+#### Block Formats
+Elements such as headings, lists, blockquotes, and code block are converted **only after a space is typed following the marker**.  
+**Example:** Typing `# Title` will render as a heading only after you type the space following `#`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/markdown-autoformat/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,0 +1,33 @@
+@{
+    var toolbarItems = new object[]
+    {
+        "AICommands", "AIQuery"
+    };
+
+    var aiAssistantSettings = new Syncfusion.EJ2.RichTextEditor.RichTextEditorAIAssistantSettings
+    {
+        Prompts = new object[]
+        {
+    new
+    {
+        prompt = "What is Essential Studio ?",
+        response = "Essential Studio is a software toolkit by Syncfusion that offers a variety of UI controls, frameworks, and libraries for developing applications on web, desktop, and mobile platforms. It aims to streamline application development with customizable, pre-built components."
+    }
+        },
+        MaxPromptHistory = 30
+    };
+}
+
+<ejs-richtexteditor id="editor" aiAssistantSettings="@aiAssistantSettings">
+    <e-richtexteditor-toolbarsettings items="@toolbarItems" />
+</ejs-richtexteditor>
+<br>
+<button class="e-btn e-primary" onclick="onSaveBtnClick()"><span class="e-icons e-save"></span>Save</button>
+
+<script>
+    function onSaveBtnClick() {
+        var rteObj = document.getElementById('editor').ej2_instances[0];
+        const promptHistory = rteObj.getAIPromptHistory();
+        console.log(promptHistory);
+    }
+</script>
