@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formation in ##Platform_Name## Rich Text Editor Component
+title: Formation in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Formation in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formation
