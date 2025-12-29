@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline Mode in ##Platform_Name## Rich Text Editor Component
+title: Inline Mode in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Inline Mode in Syncfusion ##Platform_Name## Rich Text Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline Mode
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Inline editing in the ##Platform_Name## Rich Text Editor Control
+# Inline editor mode in the ##Platform_Name## Rich Text Editor Control
 
 Inline editing is a feature of the Rich Text Editor that allows users to edit content directly within the editor where it is displayed. Unlike traditional editing interfaces where the editor toolbar is in a separate area at the top or bottom, inline editing offers a seamless, on-the-spot editing experience. You can click on the text or select the text you wish to edit and make changes immediately.
 
