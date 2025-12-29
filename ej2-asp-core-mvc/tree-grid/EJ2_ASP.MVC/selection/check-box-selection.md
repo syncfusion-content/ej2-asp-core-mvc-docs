@@ -82,7 +82,7 @@ The TreeGrid supports conditional row selection through the [`isRowSelectable`](
 
 Local data: The callback runs once when the TreeGrid initializes and evaluates all records because the full dataset is already available on the client.
 
-Remote data: The callback runs only for the rows displayed on the current page when the TreeGrid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
+Remote data: The callback runs only for the rows displayed on the current page when the TreeGrid first loads. It runs again whenever the TreeGrid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
 
 In the following sample, selection is disabled for rows where the "Progress" column has the value "Completed".
 
@@ -110,4 +110,5 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endif %}
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+
 
