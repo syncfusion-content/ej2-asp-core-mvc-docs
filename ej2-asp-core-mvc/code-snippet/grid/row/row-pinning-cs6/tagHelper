@@ -1,6 +1,3 @@
-
-@addTagHelper *, Syncfusion.EJ2
-
 <ejs-grid id="Grid" dataSource="@(ViewBag.DataSource)" allowPaging="true" height="200px" isRowPinned="isRowPinned" contextMenuItems="@(new List<object> { 'PinRow', 'UnpinRow' })" pageSettings="@(new Syncfusion.EJ2.Grids.GridPageSettings { PageSize = 15 })">
     <e-grid-columns>
         <e-grid-column field="TaskID" headerText="Task ID" width="100" textAlign="Right" isPrimaryKey="true"></e-grid-column>
