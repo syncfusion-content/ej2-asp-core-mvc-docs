@@ -139,7 +139,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/getting-started">Dialog</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/predefined-dialogs/getting-started">Predefined Dialog</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/listview/getting-started">ListView</a></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started-asp-mvc">Tooltip</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tooltip/getting-started">Tooltip</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/splitter/getting-started">Splitter</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/card/getting-started">Card</a></div>

@@ -81,7 +81,7 @@ To display the timeline Scheduler simply with year and month names alone, define
 
 ## Display week numbers in timeline views
 
-The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within[`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
+The week number can be displayed in a separate header row of the timeline Scheduler by setting `Week` option within [`headerRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
