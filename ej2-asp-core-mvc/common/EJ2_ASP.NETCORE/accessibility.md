@@ -159,7 +159,7 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/inplace-editor/accessibility">Documentation</a></td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>PDF Viewer</td>
@@ -180,7 +180,7 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/accessibility">Documentation</a></td>
+        <td>---</td>
     </tr>
     <tr>
         <td>Image Editor</td>
@@ -558,7 +558,7 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/accessibility">Documentation</a></td>
+        <td>---</td>
     </tr>
     <tr>
         <td>Tabs</td>
