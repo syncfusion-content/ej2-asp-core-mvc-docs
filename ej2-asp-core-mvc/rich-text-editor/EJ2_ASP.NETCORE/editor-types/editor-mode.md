@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formation in ##Platform_Name## Rich Text Editor Component
+title: Formation in ##Platform_Name## Syncfusion Rich Text Editor Component
 description: Learn here all about Formation in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Formation
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Editor mode in ##Platform_Name## Rich text editor control
+# Editor mode in ##Platform_Name## Rich Text Editor control
 
 The Rich Text Editor control used to create, edit and return the content in valid HTML markup or markdown (MD) of the content. It supports following two editing formation.
 
