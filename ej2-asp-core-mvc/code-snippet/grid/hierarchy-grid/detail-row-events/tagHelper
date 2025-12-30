@@ -27,13 +27,13 @@
 <script>
     // Prevent expanding detail row.
     function detailExpand(args) {
-        if (args.data.FirstName === 'Nancy') {
+        if (args.rowData.FirstName === 'Nancy') {
             args.cancel = true;
         }
     }
     // Prevent collapsing detail row.
     function detailCollapse(args){
-      if (args.data.FirstName === 'Andrew') {
+      if (args.rowData.FirstName === 'Andrew') {
         args.cancel = true;
       }
     }
