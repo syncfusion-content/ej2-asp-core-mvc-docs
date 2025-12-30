@@ -295,6 +295,21 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 
 ![Customize hierarchy Grid icons](images/hierarchy-grid/change-icon.png)
 
+## Detail row events
+
+The Grid control's `detailExpand` and `detailCollapse` events fire before a detail row actually expands or collapses, allowing you a chance to control whether the action should continue. The `detailExpand` event is raised just before a row expands, and `detailCollapse` fires just before a row collapses, with both events providing respective details through their event arguments.
+
+In the example below, expansion is prevented for the "Nancy" row, and collapse is prevented for the "Andrew" row.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/hierarchy-grid/detail-row-events/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Html.cs" %}
+{% include code-snippet/grid/hierarchy-grid/detail-row-events/html.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize the child grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component offers various ways to customize the child grid appearance using both default CSS and custom themes. To access the child grid elements, you can use the **.e-detailcell** class selector, which targets the child grid.
