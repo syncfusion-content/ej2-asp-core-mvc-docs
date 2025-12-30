@@ -20,7 +20,7 @@ This section briefly explains about how to include ASP.NET MVC Predefined Dialog
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -139,7 +139,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 * [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
-* [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
-* [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
-* [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
-* [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+* [How to position the dialog on center of the page on scrolling](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
+* [Prevent closing of modal dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/prevent-closing-of-modal-dialog)
+* [Close dialog while click on outside of dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/close-dialog-while-click-on-outside-of-dialog)
+* [How to make a reusable alert and confirm dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/render-a-dialog-using-utility-functions)
