@@ -99,11 +99,11 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/predefined-dialogs/getting-started">Predefined Dialog</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started-asp-core">Tooltip</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">Tooltip</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started-asp-core">Avatar</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/timeline/getting-started">Timeline</a></div>
     </td>
     <td>

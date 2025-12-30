@@ -21,7 +21,7 @@ This section briefly explains about how to include [ASP.NET MVC Tab](https://www
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/project-template)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Initialize the Tab using JSON items collection
 
-The Tab can be rendered by defining a JSON array. The item is rendered with [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabHeader.html) text and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Content) for each Tab.
+The Tab can be rendered by defining a JSON array. The item is rendered with [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabHeader.html) text and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Content) for each Tab.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
