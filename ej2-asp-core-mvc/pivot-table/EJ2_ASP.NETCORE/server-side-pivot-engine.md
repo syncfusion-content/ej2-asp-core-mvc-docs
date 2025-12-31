@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table Component
+title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table
 description: Learn here all about Server Side Pivot Engine in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
@@ -11,7 +11,7 @@ documentation: ug
 
 N> In general, the Pivot Table is created using the built-in engine for given data source. This is an optional feature that allows you to create the Pivot Table with a server-side pivot engine and external data binding. And this option is applicable only for relational data source.
 
-# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Server-side Pivot Engine
+# Getting Started with Server-side Pivot Engine
 
 This section briefs the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Pivot Engine in ##Platform_Name## Pivot Table
+title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table
 description: Learn here all about Server Side Pivot Engine in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
