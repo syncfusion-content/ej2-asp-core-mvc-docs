@@ -26,6 +26,7 @@ This functionality does not change the grid's overall content height, keeping th
 {% endtabs %}
 
 > Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) to **true** in particular column.
+
 ## Paging with row pinning
 
 Row pinning in the Grid control keeps important rows visible at the top while navigating through pages. Pinned rows are not counted as part of the page size and remain fixed at the top of the grid. For example, if  [pageSettings->pageSize](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) is set to "10" and "2" rows are pinned, those "2" rows stay at the top, and the grid displays "10" additional rows beneath them. When moving to another page, the pinned rows remain fixed at the top, and the next set of  "10" records is rendered below.
@@ -53,6 +54,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 {% endtabs %}
 
 > The [selectionSettings->persistSelection](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
+
 ## Filtering and sorting with pinned rows
 
 Row pinning remains fully compatible with filtering and sorting operations in the Grid. When a filter is applied, both the pinned section and the scrollable content display only the rows that meet the filter criteria, ensuring consistent and predictable results. This unified filtering behavior keeps the interface clear and prevents mismatches between pinned and unpinned data.
