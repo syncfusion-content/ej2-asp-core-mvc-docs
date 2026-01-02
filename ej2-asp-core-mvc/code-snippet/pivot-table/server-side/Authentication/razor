@@ -1,0 +1,21 @@
+@Html.EJS().PivotView("PivotView").Height("350").DataSourceSettings(dataSourceSettings => dataSourceSettings.Url("https://services.syncfusion.com/aspnet/production/api/pivot/post").Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+            .FormatSettings(formatsettings => { formatsettings.Name("Amount").Format("C0").Add(); formatsettings.Name("Sold").Format("N0").Add(); })
+            .Rows(rows => { rows.Name("Country").Add(); rows.Name("Products").Add(); }).Columns(columns => { columns.Name("Year").Caption("Production Year").Add(); })
+            .Values(values => { values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); })).BeforeServiceInvoke("BeforeServiceInvoke").Render()
+
+<script>
+    function beforeServiceInvoke(args) {
+        const token = getAuthToken(); // obtain securely at runtime
+
+        args.internalProperties = args.internalProperties || {};
+        args.internalProperties.headers = {
+            ...(args.internalProperties.headers || {}),
+            'Authorization': `Bearer ${token}`
+        };
+    }
+
+    function getAuthToken() {
+        // Retrieve and return a valid auth token securely
+        return 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9';
+    }
+</script>
