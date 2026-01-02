@@ -693,21 +693,23 @@ N> The pivot table component can be exported to Excel format using options avail
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -775,21 +777,23 @@ The Excel export provides an option to include header and footer content for the
 
 ``` html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -827,21 +831,23 @@ N> The pivot table component can be exported to CSV format using options availab
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -910,20 +916,23 @@ To enable native Excel pivot export in the PivotTable, the user must call the `e
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 

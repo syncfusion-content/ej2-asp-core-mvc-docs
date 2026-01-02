@@ -695,21 +695,20 @@ N> The pivot table component can be exported to Excel format using options avail
 ```html
 
 @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
-.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+@Html.EJS().PivotView("PivotView").AllowExcelExport(true).Height("300").DataSourceSettings(dataSource => dataSource.Url("https://services.syncfusion.com/aspnet/production/api/pivot/post").Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
-    formatsettings.Name("Price").Format("C").Add();
+    formatsettings.Name("Amount").Format("C0").Add();
+    formatsettings.Name("Sold").Format("N0").Add();
 }).Rows(rows =>
 {
-    rows.Name("ProductID").Add();
+    rows.Name("Country").Add(); rows.Name("Products").Add();
 }).Columns(columns =>
 {
-    columns.Name("Year").Add();
+    columns.Name("Year").Caption("Production Year").Add();
 }).Values(values =>
 {
-    values.Name("Sold").Add();
-    values.Name("Price").Add();
+    values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
 })
 ).Render()
 
@@ -779,21 +778,20 @@ The Excel export provides an option to include header and footer content for the
 
 @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
-.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+@Html.EJS().PivotView("PivotView").AllowExcelExport(true).Height("300").DataSourceSettings(dataSource => dataSource.Url("https://services.syncfusion.com/aspnet/production/api/pivot/post").Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
-    formatsettings.Name("Price").Format("C").Add();
+    formatsettings.Name("Amount").Format("C0").Add();
+    formatsettings.Name("Sold").Format("N0").Add();
 }).Rows(rows =>
 {
-    rows.Name("ProductID").Add();
+    rows.Name("Country").Add(); rows.Name("Products").Add();
 }).Columns(columns =>
 {
-    columns.Name("Year").Add();
+    columns.Name("Year").Caption("Production Year").Add();
 }).Values(values =>
 {
-    values.Name("Sold").Add();
-    values.Name("Price").Add();
+    values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
 })
 ).Render()
 
@@ -833,21 +831,20 @@ N> The pivot table component can be exported to CSV format using options availab
 
 @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
-.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+@Html.EJS().PivotView("PivotView").AllowExcelExport(true).Height("300").DataSourceSettings(dataSource => dataSource.Url("https://services.syncfusion.com/aspnet/production/api/pivot/post").Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
-    formatsettings.Name("Price").Format("C").Add();
+    formatsettings.Name("Amount").Format("C0").Add();
+    formatsettings.Name("Sold").Format("N0").Add();
 }).Rows(rows =>
 {
-    rows.Name("ProductID").Add();
+    rows.Name("Country").Add(); rows.Name("Products").Add();
 }).Columns(columns =>
 {
-    columns.Name("Year").Add();
+    columns.Name("Year").Caption("Production Year").Add();
 }).Values(values =>
 {
-    values.Name("Sold").Add();
-    values.Name("Price").Add();
+    values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
 })
 ).Render()
 
@@ -918,20 +915,20 @@ To enable native Excel pivot export in the PivotTable, the user must call the `e
 
 @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("http://localhost:61379/api/pivot/post")
-.Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
+@Html.EJS().PivotView("PivotView").Height("300").AllowExcelExport(true).DataSourceSettings(dataSource => dataSource.Url("https://services.syncfusion.com/aspnet/production/api/pivot/post").Mode(Syncfusion.EJ2.PivotView.RenderMode.Server)
 .FormatSettings(formatsettings =>
 {
-    formatsettings.Name("Price").Format("C").Add();
+    formatsettings.Name("Amount").Format("C0").Add();
+    formatsettings.Name("Sold").Format("N0").Add();
 }).Rows(rows =>
 {
-    rows.Name("ProductID").Add();
+    rows.Name("Country").Add(); rows.Name("Products").Add();
 }).Columns(columns =>
 {
-    columns.Name("Year").Add();
+    columns.Name("Year").Caption("Production Year").Add();
 }).Values(values =>
 {
-    values.Name("Sold").Add();
+    values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
 })
 ).Render()
 
