@@ -1,0 +1,119 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Syncfusion.EJ2
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+<ejs-aiassistview id="aiAssistView"
+                      promptRequest="onPromptRequest"
+                      created="onCreated"
+                      stopRespondingClick="stopRespondingClick">
+    <e-aiassistview-prompttoolbarsettings items="ViewBag.Items" itemClicked="toolbarItemClicked"></e-aiassistview-prompttoolbarsettings>
+    </ejs-aiassistview>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+    var assistObj = null;
+    var stopStreaming = false;
+
+    // Optional client-side session ID (Node.js server will use it if you send it)
+    var sessionId = localStorage.getItem('assist_session') ||
+        (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()));
+    if (!localStorage.getItem('assist_session')) {
+        localStorage.setItem('assist_session', sessionId);
+    }
+
+    function onCreated() {
+        assistObj = this;
+
+        var inputArea = document.querySelector('#aiAssistView [contenteditable="true"]');
+        if (!inputArea) return;
+
+        var files = [
+            'src/main.ts',
+            'src/app/app.ts',
+            'src/app/app.html',
+            'src/app/app.css',
+            'src/styles.css'
+        ];
+
+        var mention = new ej.dropdowns.Mention({
+            target: inputArea,
+            dataSource: files,
+            showMentionChar: true,
+            change: function () {
+                var evt = new Event('input', { bubbles: true });
+                inputArea.dispatchEvent(evt);
+            }
+        });
+
+        var container = document.createElement('div');
+        document.body.appendChild(container);
+        mention.appendTo(container);
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            assistObj.prompts = [];
+            stopStreaming = true;
+            // Optional: generate new session to clear Node.js history
+            sessionId = crypto.randomUUID ? crypto.randomUUID() : String(Date.now());
+            localStorage.setItem('assist_session', sessionId);
+        }
+    }
+
+    function renderMarkdown(md) {
+        try {
+            return marked.parse ? marked.parse(md) : marked(md);
+        } catch { }
+        return md.replace(/\n/g, '<br>');
+    }
+
+    async function streamResponse(response) {
+        let last = '';
+        const rate = 10;
+        let i = 0;
+        while (i < response.length && !stopStreaming) {
+            last += response[i];
+            i++;
+            if (i % rate === 0 || i === response.length) {
+                const html = renderMarkdown(last);
+                assistObj.addPromptResponse(html, i === response.length);
+                assistObj.scrollToBottom();
+            }
+            await new Promise(r => setTimeout(r, 15));
+        }
+    }
+
+    function onPromptRequest(args) {
+        fetch('http://localhost:3000/assist/chat', {   // <-- Node.js server endpoint
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                sessionId: sessionId,
+                prompt: args.prompt,
+                model: 'gpt-4o-mini',
+                temperature: 0.2,
+                max_tokens: 512
+            })
+        })
+        .then(r => {
+            if (!r.ok) return r.json().then(err => Promise.reject(err.error || 'Server error'));
+            return r.json();
+        })
+        .then(data => {
+            const text = (data.content || '').trim() || 'No response received.';
+            stopStreaming = false;
+            streamResponse(text);
+        })
+        .catch(err => {
+            console.error(err);
+            assistObj.addPromptResponse('⚠️ Failed to connect to server. Ensure MCP server is running at http://localhost:3000.', true);
+            stopStreaming = true;
+        });
+    }
+
+    function stopRespondingClick() {
+        stopStreaming = true;
+    }
+</script>
