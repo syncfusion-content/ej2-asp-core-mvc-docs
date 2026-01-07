@@ -34,7 +34,7 @@ pip install "litellm[proxy]"
 ```
 ## Configure LiteLLM Proxy
 
-* **Set Environment Variable**: Set your OpenAI API key as an environment variable for security (e.g., `export OPENAI_API_KEY=sk-your-openai-key` on macOS/Linux or `set OPENAI_API_KEY=sk-your-openai-key` on Windows). Avoid hardcoding the key in files.
+* **Set Environment Variable**: Set your OpenAI API key as an environment variable for security (e.g.,`export OPENAI_API_KEY=<your-openai-api-key>` on macOS/Linux or `set OPENAI_API_KEY=<your-openai-api-key>` on Windows). Avoid hard-coding the key in files.
 
 * **Create config.yaml**: In your project root, create a `config.yaml` file to define the model alias and routing. This exposes an OpenAI-compatible endpoint at `http://localhost:4000/v1/chat/completions`.
 
@@ -44,9 +44,9 @@ pip install "litellm[proxy]"
 model_list:
 
 model_name: openai/gpt-4o-mini      # Alias your frontend will use
-litellm_params:
+LiteLLM_params:
 model: gpt-4o-mini                # OpenAI base model name
-api_key: os.environ/OPENAI_API_KEY
+api_key: OS.environ/OPENAI_API_KEY
 
 router_settings:
 Optional: master_key for proxy authentication
@@ -67,7 +67,7 @@ Run the following command in your project root to start the LiteLLM proxy:
 ```bash
 litellm --config "./config.yaml" --port 4000 --host 0.0.0.0
 ```
-Security note: In production, use a secret manager for the API key and restrict CORS origins. The optional `master_key` can add proxy-level authentication—set `liteLlmApiKey` in the C# code to match if enabled.
+Security note: In production, use a secret manager for the API key and restrict CORS origins. The optional `master_key` can add proxy-level authentication—set `liteLLMApiKey` in the C# code to match if enabled.
 
 ## LiteLLM with AI AssistView
 
@@ -78,7 +78,7 @@ The frontend sends prompts to the server (`/Home/GetAIResponse`), which proxies 
 Add your optional LiteLLM master key (if enabled) securely in the following configuration:
 
 ```bash
-const string liteLlmApiKey = "";
+const string liteLLMApiKey = "";
 ```
 
 {% tabs %}

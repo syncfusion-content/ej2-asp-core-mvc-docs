@@ -51,15 +51,15 @@ namespace WebApplication4.Pages
 
                 // LiteLLM settings
                 var liteLlmHost = "http://localhost:4000";
-                const string liteLlmApiKey = "";
+                const string liteLLMApiKey = "";
                 var url = $"{liteLlmHost.TrimEnd('/')}/v1/chat/completions";
                 var headers = new Dictionary<string, string>
                 {
                     { "Content-Type", "application/json" }
                 };
-                if (!string.IsNullOrEmpty(liteLlmApiKey))
+                if (!string.IsNullOrEmpty(liteLLMApiKey))
                 {
-                    headers.Add("Authorization", $"Bearer {liteLlmApiKey}");
+                    headers.Add("Authorization", $"Bearer {liteLLMApiKey}");
                 }
 
                 var requestBody = new
