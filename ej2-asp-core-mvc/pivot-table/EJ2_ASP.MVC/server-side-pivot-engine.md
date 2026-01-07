@@ -1025,7 +1025,7 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 {% endif %}
 
 **Production tips**
-- Load tokens on demand and rotate them regularly; never hardcode secrets in source control.
+- Load tokens on demand and rotate them regularly; never hard-code secrets in source control.
 - When a backend expects a different header (for example, X‑API‑Key), use that header instead of Authorization.
 - Configure CORS to allow any custom headers added (for example, include Authorization in Access‑Control‑Allow‑Headers) so browsers do not block requests.
 
