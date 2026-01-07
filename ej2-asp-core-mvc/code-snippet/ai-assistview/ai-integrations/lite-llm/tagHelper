@@ -1,0 +1,119 @@
+@{
+    ViewData["Title"] = "AI Assistance with LiteLLM";
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
+                      promptSuggestions="@ViewBag.PromptSuggestionData"
+                      promptRequest="onPromptRequest"
+                      stopRespondingClick="stopRespondingClick"
+                      created="onCreated">
+        <e-aiassistview-toolbarsettings items="@ViewBag.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
+</div>
+
+<script id="bannerContent" type="text/x-jsrender">
+    <div class="banner-content">
+        <div class="e-icons e-assistview-icon"></div>
+        <h3>How can I help you today?</h3>
+    </div>
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+    var assistObj = null;
+    var suggestions = @Html.Raw(Json.Serialize(ViewBag.PromptSuggestionData));
+    var stopStreaming = false;
+
+    // LiteLLM settings
+    var LITELLM_HOST = 'http://localhost:4000';
+    var LITELLM_API_KEY = ''; // If your LiteLLM proxy uses a master_key, set this to the same value; otherwise, leave as empty string
+
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-refresh') {
+            this.prompts = [];
+            this.promptSuggestions = suggestions;
+            stopStreaming = true; // Stop streaming on refresh
+        }
+    }
+
+    async function streamResponse(response) {
+        let lastResponse = '';
+        const responseUpdateRate = 10;
+        let i = 0;
+        const responseLength = response.length;
+        while (i < responseLength && !stopStreaming) {
+            lastResponse += response[i];
+            i++;
+            if (i % responseUpdateRate === 0 || i === responseLength) {
+                const htmlResponse = marked.parse(lastResponse);
+                assistObj.addPromptResponse(htmlResponse, i === responseLength);
+                assistObj.scrollToBottom();
+            }
+            await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+        }
+        assistObj.promptSuggestions = suggestions;
+    }
+
+    function onPromptRequest(args) {
+        const url = `/Home/GetAIResponse`;  // Calls your controller's endpoint
+
+        const headers = {
+            'Content-Type': 'application/json',
+            ...(LITELLM_API_KEY ? { 'Authorization': `Bearer ${LITELLM_API_KEY}` } : {}),
+        };
+
+        const requestBody = {
+            prompt: args.prompt
+        };
+
+        fetch(url, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(requestBody)
+        })
+        .then(function(res) {
+            if (!res.ok) {
+                throw new Error(`HTTP ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(function(responseText) {
+            stopStreaming = false;
+            streamResponse(responseText);
+        })
+        .catch(function(error) {
+            console.error(error);
+            assistObj.addPromptResponse(
+                '⚠️ Something went wrong while connecting to the AI service. Please check your LiteLLM proxy, model name, or try again later.'
+            );
+            stopStreaming = true;
+        });
+    }
+
+    function stopRespondingClick() {
+        stopStreaming = true;
+    }
+</script>
+
+<style>
+    .aiassist-container .e-view-container {
+        margin: auto;
+    }
+
+    .aiassist-container .e-banner-view {
+        margin-left: 0;
+    }
+
+    .banner-content .e-assistview-icon:before {
+        font-size: 25px;
+    }
+
+    .banner-content {
+        text-align: center;
+    }
+</style>
