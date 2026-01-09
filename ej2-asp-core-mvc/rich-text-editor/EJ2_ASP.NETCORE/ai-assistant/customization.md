@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title: Customize AI in ##Platform_Name## Syncfusion Rich Text Editor
 description:  Learn about the AI Assistant customization in the Syncfusion Essential JS 2 ##Platform_Name Rich Text Editor component.
@@ -6,7 +6,7 @@ platform: ej2-asp-core-mvc
 control: Customization of AI Assistant
 publishingplatform: ##Platform_Name##
 documentation: ug
-----
+---
 
 # Customization of AI Assistant
 
