@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table Component
+title: Server Side Pivot Engine in ##Platform_Name## Syncfusion Pivot Table
 description: Learn here all about Server Side Pivot Engine in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Server Side Pivot Engine
@@ -11,7 +11,7 @@ documentation: ug
 
 N> In general, the Pivot Table is created using the built-in engine for given data source. This is an optional feature that allows you to create the Pivot Table with a server-side pivot engine and external data binding. And this option is applicable only for relational data source.
 
-# Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Server-side Pivot Engine
+# Getting Started with Server-side Pivot Engine
 
 This section briefs the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.EJ2.Pivot`](https://www.nuget.org/packages/Syncfusion.EJ2.Pivot/), which is used in a server-side application to perform all Pivot calculations such as aggregation, filtering, sorting, grouping, and so on, and only the information to be displayed in the Pivot Table's viewport is passed to the client-side (browser) via web service (Web API) rather than the entire data source. It reduces network traffic and improves the rendering performance of the Pivot Table, especially when dealing with large amounts of data. It also works best with virtual scrolling enabled and supports all the Pivot Table's existing features.
 
@@ -693,21 +693,23 @@ N> The pivot table component can be exported to Excel format using options avail
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -775,21 +777,23 @@ The Excel export provides an option to include header and footer content for the
 
 ``` html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -827,21 +831,23 @@ N> The pivot table component can be exported to CSV format using options availab
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
-            <e-field name="Price" caption="Sold Amount"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -910,20 +916,23 @@ To enable native Excel pivot export in the PivotTable, the user must call the `e
 
 ```html
 <ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
-<ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings url="https://localhost:44350/api/pivot/post" mode="Server">
-        <e-formatsettings>
-            <e-field name="Price" format="C"></e-field>
-        </e-formatsettings>
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true">
+    <e-datasourcesettings url="https://services.syncfusion.com/aspnet/production/api/pivot/post" mode="Server">
         <e-rows>
-            <e-field name="ProductID" caption="Product ID"></e-field>
+            <e-field name="Country"></e-field>
+            <e-field name="Products"></e-field>
         </e-rows>
         <e-columns>
-            <e-field name="Year"></e-field>
+            <e-field name="Year" caption="Production Year"></e-field>
         </e-columns>
         <e-values>
-            <e-field name="Sold" caption="Unit Sold"></e-field>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+            <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+            <e-field name="Sold" format="N0"></e-field>
+        </e-formatsettings>
     </e-datasourcesettings>
 </ejs-pivotview>
 
@@ -987,3 +996,52 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
 ```
 
 ![Export as Pivot](images/export-as-pivot.png)
+
+## Secure server requests with beforeServiceInvoke
+
+Imagine you’ve wired the Pivot Table to a server endpoint and it looks great locally. When you point it at your real API, the requests return 401 errors—not because the queries are wrong, but because the server refuses to talk without credentials. The simplest, least‑invasive fix is to attach authentication headers right before each request leaves the browser.
+
+The Pivot Table exposes a window into every outgoing call through the beforeServiceInvoke event. It fires just before a request is sent and hands you an args object, so you can set args.internalProperties.headers and have the Pivot Table include them automatically. This requires no endpoint rewrites and no custom transport, and it gives you a single reliable hook that works across aggregation, sorting, filtering, grouping, exporting, and more.
+
+Start with a token you trust, issued by your auth flow after sign‑in. Keep it out of source control by retrieving it at runtime (for example, from a secure in‑memory store, a server endpoint that reads an httpOnly cookie, or a token manager that refreshes on expiry). Then merge it into the request headers so every call carries proof of identity.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/server-side/Authentication/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Authentication.cs" %}
+{% include code-snippet/pivot-table/server-side/Authentication/Authentication.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/server-side/Authentication/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Authentication.cs" %}
+{% include code-snippet/pivot-table/server-side/Authentication/Authentication.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Production tips**
+- Load tokens on demand and rotate them regularly; never hard-code secrets in source control.
+- If your backend expects a different header (for example, X‑API‑Key), use that instead of Authorization.
+- Configure CORS to allow any custom headers you add (for example, include Authorization in Access‑Control‑Allow‑Headers) so browsers don’t block requests.
+
+**Troubleshooting**
+- 401 or 403: Token is missing, expired, or invalid for the target route.
+- CORS preflight error: Server isn’t allowing your custom headers.
+- Missing headers: Ensure beforeServiceInvoke runs on the same Pivot instance and sets headers on every call.
+
+**Pre‑shipment checks**
+- Inspect request headers in the browser’s Network panel; Authorization (or your custom key) must be present on every call.
+- Confirm the server reads the same header and maps it to your auth middleware.
+- Reproduce 401 vs 403 responses during testing to validate end‑to‑end header handling and permissions.
+
+**Summary**
+- One event keeps requests authenticated without API redesign and reduces surprises when moving from local testing to production.
