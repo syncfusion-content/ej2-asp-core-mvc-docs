@@ -40,7 +40,7 @@ The accessibility compliance for the Check box component is outlined below.
 
 ## WAI-ARIA attributes
 
-The Check box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/Check box/) patterns to meet the accessibility. The following ARIA attributes are used in the Check box component:
+The Check box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/) patterns to meet the accessibility. The following ARIA attributes are used in the Check box component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -48,7 +48,7 @@ The Check box component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/
 
 ## Keyboard interaction
 
-The Check box component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/Check box/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Check box component.
+The Check box component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/checkbox/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Check box component.
 
 | **Press** | **To do this** |
 | --- | --- |
@@ -58,7 +58,7 @@ The Check box component followed the [keyboard interaction](https://www.w3.org/W
 
 The Check box component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Check box component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/Check box.html) in a new window to evaluate the accessibility of the Check box component with accessibility tools.
+The accessibility compliance of the Check box component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnet/accessibility/checkbox/default) in a new window to evaluate the accessibility of the Check box component with accessibility tools.
 
 ## See also
 
