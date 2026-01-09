@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Predefined Dialogs
+# Getting Started with ASP.NET MVC Predefined Dialogs
 
 This section briefly explains about how to include ASP.NET MVC Predefined Dialogs in your ASP.NET MVC application using Visual Studio.
 
