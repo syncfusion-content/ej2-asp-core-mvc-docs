@@ -11,6 +11,9 @@
 
 <script>
     function isRowPinned(data) {
-        return data && data.Status === 'Open' && data.Priority === 'Critical';
+        if (data && data.Status === 'Open' && data.Priority === 'Critical') {
+            return true;
+        }
+        return false;
     }
 </script>

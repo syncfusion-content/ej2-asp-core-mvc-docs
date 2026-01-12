@@ -4,12 +4,13 @@ title: Getting Started with ASP.NET MVC Predefined Dialogs | Syncfusion
 description: Checkout and learn about getting started with ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Predefined Dialogs
+# Getting Started with ASP.NET MVC Predefined Dialogs
+
 This section briefly explains about how to include ASP.NET MVC Predefined Dialogs in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
@@ -84,7 +85,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Open ASP.NET MVC Predefined Dialogs
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pregefined Dialogs in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Predefined Dialogs in `~/Views/Home/Index.cshtml` page.
 
 Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
 
@@ -138,7 +139,7 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 ## See also
 
 * [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
-* [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
+* [Load dialog content using AJAX](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/close-dialog-while-click-on-outside-of-dialog)
