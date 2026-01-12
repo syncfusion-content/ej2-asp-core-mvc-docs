@@ -824,5 +824,3 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 }
 ```
 > Sort operation for a foreign key column based on its foreign key value mandates including the foreign key data source in the sorted query of the `DataManager` request on the server. If the foreign key data source is not passed, the sorting operation will be performed based on the column field.
-
-
