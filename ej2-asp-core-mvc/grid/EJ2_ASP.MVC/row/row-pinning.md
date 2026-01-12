@@ -58,7 +58,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 ## Filtering and sorting with pinned rows
 
 Row pinning remains fully compatible with filtering and sorting operations in the Grid. When a filter is applied, both the pinned section and the scrollable content display only the rows that meet the filter criteria, ensuring consistent and predictable results. This unified filtering behavior keeps the interface clear and prevents mismatches between pinned and unpinned data.
- 
+
 When sorting is applied to any column, pinned rows are reordered using the same sorting rules while remaining fixed at the top of the grid. This ensures that pinned rows stay visible and correctly positioned, even as the rest of the data is reorganized. The combined behavior provides a smooth and intuitive experience, allowing data to be refined and analyzed without losing visibility of important pinned records.
 
 {% tabs %}
