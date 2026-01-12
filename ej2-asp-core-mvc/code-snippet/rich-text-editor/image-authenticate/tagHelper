@@ -5,6 +5,6 @@
 
 <script>
     function onImageUploading(args) {
-         args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
+        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
     }
 </script>

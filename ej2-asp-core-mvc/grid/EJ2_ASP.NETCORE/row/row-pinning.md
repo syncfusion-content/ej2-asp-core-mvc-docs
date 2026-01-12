@@ -12,7 +12,7 @@ documentation: ug
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 
-To enable the row pinning feature, configure the [isRowPinned](../../api/grid#isrowpinned) callback function, which returns **true** or **false** based on the required condition. The function receives each row's data as input, allowing the pinning logic to be determined. It executes only during initial rendering, ensuring that any condition defined within it is evaluated during that initial stage.
+To enable the row pinning feature, configure the [isRowPinned](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_IsRowPinned) callback function, which returns **true** or **false** based on the required condition. The function receives each row's data as input, allowing the pinning logic to be determined. It executes only during initial rendering, ensuring that any condition defined within it is evaluated during that initial stage.
 
 This functionality does not change the grid's overall content height, keeping the content area fully visible and scrollable even when multiple rows are pinned. This behavior prevents pinned rows from overlapping or obscuring the scrollable content, maintaining a consistent layout and smooth scrolling experience. Pinned rows are displayed in a fixed region above the content area, while the grid preserves its original height and continues to provide unobstructed interaction with all other rows.
  

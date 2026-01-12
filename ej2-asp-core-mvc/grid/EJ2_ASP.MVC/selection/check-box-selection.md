@@ -81,7 +81,7 @@ In the example below, it prevents selection of rows with canceled orders.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/prevent-checkbox-selection/tagHelper %}
+{% include code-snippet/grid/selection/prevent-checkbox-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="checkbox.cs" %}
 {% include code-snippet/grid/selection/prevent-checkbox-selection/checkbox.cs %}
