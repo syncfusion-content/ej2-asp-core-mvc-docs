@@ -4,6 +4,7 @@
             .Values(values => { values.Name("Sold").Caption("Unit Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add(); })).BeforeServiceInvoke("BeforeServiceInvoke").Render()
 
 <script>
+    // Attach an Authorization header before each server call
     function beforeServiceInvoke(args) {
         const token = getAuthToken(); // obtain securely at runtime
 

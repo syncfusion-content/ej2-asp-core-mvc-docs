@@ -75,7 +75,7 @@ The `isRowSelectable` callback determines which rows in the Data Grid can be sel
 
 **Local data:** The callback runs once when the grid initializes and evaluates all records because the full dataset is already available on the client.
 
-**Remote data:**   The callback runs only for the rows displayed on the current page when the grid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
+**Remote data:** The callback runs only for the rows displayed on the current page when the grid first loads. It runs again whenever the grid fetches new data such as during paging, filtering, or sorting to re-evaluate the newly visible rows.
 
 In the example below, it prevents selection of rows with canceled orders.
 
