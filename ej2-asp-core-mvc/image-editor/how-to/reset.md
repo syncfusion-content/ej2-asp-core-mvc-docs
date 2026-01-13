@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reset an image in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about How to Reset an image in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
-control: Reset an image
+title: Reset an image in Image Editor Component | Syncfusion
+description: Learn here all about How to Reset an image in Image Component of Syncfusion Essential JS 2 and more.
+control: Reset
 publishingplatform: ##Platform_Name##
 documentation: ug
+domainurl: ##DomainURL##
 ---
 
-# Reset an image in Image editor control
+# Reset in the ##Platform_Name## Image Editor control
 
 The `reset` method in the Image Editor control provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image. 
 

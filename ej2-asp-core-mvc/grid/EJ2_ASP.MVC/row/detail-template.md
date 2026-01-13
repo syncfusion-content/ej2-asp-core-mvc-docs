@@ -107,6 +107,3 @@ Detail template is not supported with the following features:
 * Lazy load grouping
 * State persistence
 
-## See also
-
-* [Detail row events](../hierarchy-grid#detail-row-events)

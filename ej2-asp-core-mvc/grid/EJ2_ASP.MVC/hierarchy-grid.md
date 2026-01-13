@@ -303,7 +303,7 @@ In the example below, expansion is prevented for the "Nancy" row, and collapse i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/hierarchy-grid/detail-row-events/razor %}
+{% include code-snippet/grid/hierarchy-grid/detail-row-events/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Html.cs" %}
 {% include code-snippet/grid/hierarchy-grid/detail-row-events/html.cs %}

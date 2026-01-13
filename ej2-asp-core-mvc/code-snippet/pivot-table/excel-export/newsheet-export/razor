@@ -1,6 +1,6 @@
 @Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
 
-@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+@Html.EJS().PivotView("PivotTable1").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
 .FormatSettings(formatsettings =>
 {
     formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
@@ -15,7 +15,7 @@
     values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
 })).AllowExcelExport(true).Render()
 <br />
-@Html.EJS().PivotView("PivotGrid2").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+@Html.EJS().PivotView("PivotTable2").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
 .FormatSettings(formatsettings =>
 {
     formatsettings.Name("Amount").Format("C0").MaximumSignificantDigits(10).MinimumSignificantDigits(1).UseGrouping(true).Add();
@@ -33,15 +33,11 @@
 <script>
     var pivotObj; var pivotObj2;
     document.getElementById('excel').onclick = function () {
-        pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj2 = document.getElementById('PivotGrid2').ej2_instances[0];
-
+        pivotObj = document.getElementById('PivotTable1').ej2_instances[0];
         var excelExportProperties = {
-            multipleExport: { type: 'NewSheet' }
+            multipleExport: { type: 'NewSheet' },
+            pivotTableIds: ['PivotTable1', 'PivotTable2']
         };
-        var firstGridExport = pivotObj.grid.excelExport(excelExportProperties, true);
-        firstGridExport.then(function (fData) {
-            pivotObj2.excelExport(excelExportProperties, false, fData);
-        });
+        pivotObj.excelExport(excelExportProperties, true);
     }
 </script>

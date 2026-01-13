@@ -30,48 +30,22 @@ var sliderValue = new int[] { 0, 50 };
             const realLength = panel.firstChild.firstChild.textContent.length;
             rangeObj.max = realLength;
             rangeObj.dataBind();
-            // Focus the editor to activate selection
-            panel.focus();
-
-            // Apply initial selection
-            onChange({ value: rangeObj.value });
         });
     });
 
     function onChange(args) {
         const [start, end] = args.value;
         const panel = editorObj.contentModule.getEditPanel();
-        const maxLength = panel.textContent.length;
+        const textNode = panel.firstChild.firstChild;
+        const maxLength = textNode.length;
 
-        // Ensure start and end are within valid bounds
         const safeStart = Math.min(start, maxLength);
         const safeEnd = Math.min(end, maxLength);
 
-        // Find the text node and relative offset for both start and end
-        const startInfo = getTextNodeAtOffset(panel, safeStart);
-        const endInfo = getTextNodeAtOffset(panel, safeEnd);
-
-        if (startInfo && endInfo) {
-            const range = document.createRange();
-            range.setStart(startInfo.node, startInfo.offset);
-            range.setEnd(endInfo.node, endInfo.offset);
-            const selection = window.getSelection();
-            selection.removeAllRanges();
-            selection.addRange(range);
-        }
-    }
-
-    function getTextNodeAtOffset(root: Node, offset: number): { node: Text; offset: number } | null {
-        let currentOffset = 0;
-        const walker: TreeWalker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
-        while (walker.nextNode()) {
-            const node = walker.currentNode as Text;
-            const nodeLength = node.textContent.length;
-            if (currentOffset + nodeLength >= offset) {
-            return { node, offset: offset - currentOffset };
-            }
-            currentOffset += nodeLength;
-        }
-        return null;
+        const range = document.createRange();
+        range.setStart(textNode, safeStart);
+        range.setEnd(textNode, safeEnd);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
     }
 </script>

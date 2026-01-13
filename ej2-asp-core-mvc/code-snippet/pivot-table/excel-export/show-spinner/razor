@@ -1,0 +1,100 @@
+@Html.EJS().Button("excel").Content("Export To Excel").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("pivotview").Width("100%").Height("300").EnableVirtualization(true).DataSourceSettings(dataSourceSettings => dataSourceSettings.ExpandAll(true).EnableSorting(false)
+    .FormatSettings(formatsettings => { formatsettings.Name("Price").Format("C0").Add(); })
+    .Rows(rows => { rows.Name("ProductID").Add(); }).Columns(columns => { columns.Name("Year").Add(); })
+    .Values(values => { values.Name("Price").Caption("Unit Price").Add(); values.Name("Sold").Caption("Unit Sold").Add(); })).DataBound("onDataBound").AllowExcelExport(true).ExportComplete("exportComplete").Render()
+
+<script>
+    var pivotObj;
+    var customername = [
+    'TOM',
+    'Hawk',
+    'Jon',
+    'Chandler',
+    'Monica',
+    'Rachel',
+    'Phoebe',
+    'Gunther',
+    'Ross',
+    'Geller',
+    'Joey',
+    'Bing',
+    'Tribbiani',
+    'Janice',
+    'Bong',
+    'Perk',
+    'Green',
+    'Ken',
+    'Adams',
+    ];
+    var city = [
+    'New York',
+    'Los Angeles',
+    'Chicago',
+    'Houston',
+    'Philadelphia',
+    'Phoenix',
+    'San Antonio',
+    'Austin',
+    'San Francisco',
+    'Columbus',
+    'Washington',
+    'Portland',
+    'Oklahoma',
+    'Las Vegas',
+    'Virginia',
+    'St. Louis',
+    'Birmingham',
+    ];
+    var isInit = true;
+    var dt = 0;
+    var data = function (count) {
+      var result = [];
+    for (var i = 1; i < count + 1; i++) {
+        dt++;
+    var round = void 0;
+    var toString_1 = i.toString();
+    if (toString_1.length === 1) {
+        round = '0000' + i;
+        } else if (toString_1.length === 2) {
+        round = '000' + i;
+        } else if (toString_1.length === 3) {
+        round = '00' + i;
+        } else if (toString_1.length === 4) {
+        round = '0' + i;
+        } else {
+        round = toString_1;
+        }
+    result.push({
+        ProductID: 'PRO-' + round,
+    City: city[Math.round(Math.random() * city.length)] || city[0],
+    Year: 'FY ' + (dt + 2021),
+    CustomerName:
+    customername[Math.round(Math.random() * customername.length)] ||
+    customername[0],
+    Price: Math.round(Math.random() * 5000) + 5000,
+    Sold: Math.round(Math.random() * 80) + 10,
+        });
+    if (dt / 4 == 1) dt = 0;
+      }
+    return result;
+    };
+    function onDataBound(args) {
+      var pivotView = document.getElementById('pivotview').ej2_instances[0];
+    if(isInit) {
+        pivotView.dataSourceSettings.dataSource = data(10000);
+      }
+    isInit = false;
+    }
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('pivotview').ej2_instances[0];
+    pivotObj.showWaitingPopup();
+    setTimeout(function () {
+        pivotObj.excelExport();
+      });
+    };
+    function exportComplete(args) {
+        pivotObj.hideWaitingPopup();
+    }
+</script>
