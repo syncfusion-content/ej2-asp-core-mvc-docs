@@ -15,10 +15,14 @@ The AI AssistView control can be integrated with an [MCP](https://modelcontextpr
 ## Prerequisites
 
 Before integrating `MCP Server`, ensure the following:
-1. **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.Core](https://www.nuget.org/packages/Syncfusion.EJ2.Core) installed.
 
-2. The AI AssistView control is integrated with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai).
-    - [Integration of Azure OpenAI With ASP.NET CORE AI AssistView control](../ai-integrations/openai-integration.md)
+1. `Node.js`: Version 16 or higher, along with npm installed.
+
+2. `OpenAI Account`: Access to OpenAI services and a generated API key.
+
+3. `Syncfusion AI AssistView`: Install the package [Syncfusion.EJ2.Core](https://www.nuget.org/packages/Syncfusion.EJ2.Core).
+
+4. [Markdig](https://www.nuget.org/packages/Markdig) package: For parsing Markdown responses.
 
 ## Install server dependencies
 
@@ -29,17 +33,22 @@ Create a folder for the MCP server (e.g., `mcp-demo`) and install the required p
 npm install express cors @modelcontextprotocol/sdk
 
 ```
-
 ## Configure the MCP Server
 
-Create a file named `mcp-server.mjs` in your server folder. This server:
+Create a file named `mcp-server.mjs` in your server folder. This server will:
 
-* Exposes MCP SSE endpoints (/events, /messages) with tools:
-    * `text.generate` → Calls OpenAI Chat Completions
-    * `fs.read` → Reads a file under a configured base directory
-* Provides a REST endpoint `/assist/chat` for the ASP.NET CORE app
-* Detects `@filename` in prompts, reads file contents, and attaches them to the conversation for contextual analysis.
-* Maintains session history using a `sessionId` sent from the client. The server stores messages in memory for multi-turn conversations.
+* Expose `MCP-style SSE endpoints`:
+    * `GET /events` – Server-Sent Events stream for clients to subscribe to.
+    * `POST /messages` – Accepts client messages and broadcasts them to the corresponding SSE stream.
+* Register `tools`:
+    * `text.generate` → Calls OpenAI Chat Completions to generate responses.
+    * `fs.read` → Reads a file under a configured base directory only.
+* Provide a `REST endpoint`:
+    * `POST /assist/chat` – A simple REST interface that your Angular app can call.
+* Detect `@filename` tokens in prompts, read the file contents, and attach them to the conversation for contextual analysis.
+* Maintain session history in memory using a `sessionId` sent from the client.
+
+>Note: This implementation uses `Node.js ESM`, `express`, `cors`, and `@modelcontextprotocol/sdk`. It also expects an OpenAI API key via OPENAI_API_KEY.
 
 {% tabs %}
 {% highlight razor tabtitle="mcp-server.mjs" %}
@@ -49,13 +58,16 @@ Create a file named `mcp-server.mjs` in your server folder. This server:
 
 ## Configure AI AssistView with MCP Server
 
-To integrate the MCP server with the Syncfusion AI AssistView control, update the `Views/Home/Index.cshtml` file in your application.
+To integrate the MCP server with the AI AssistView component, update the `Views/Home/Index.cshtml` file in your Angular application.
 
-Type `@` in the prompt box to select and mention files. The contents of these files will be included in the AI context for better code-aware responses.
+You can type `@` in the prompt box to select and mention files. The contents of these mentioned files will be included in the AI context, enabling more accurate and code-aware responses.
 
-In the following sample, the [PromptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event sends the user’s prompt, including `@mentions`, to the MCP server at `/assist/chat`. The server extracts unique mentions, safely reads those files from `FS_BASE_DIR`, and injects them into the conversation as a contextual message and OpenAI receives both the file contents and the prompt, enabling code-aware analysis.
+In the following example, the [PromptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event sends the user’s prompt (including any `@mentions`) to the MCP server endpoint `/assist/chat`. The server:
+    * Extracts unique file mentions from the prompt.
+    * Safely reads those files from the configured FS_BASE_DIR.
+    * Injects their contents into the conversation as contextual messages.
 
->Note: The control uses a `session ID` to maintain conversation history. It is stored in `localStorage` and sent with each request. The MCP server keeps session data in memory, and clicking Clear Prompts resets the session via `/assist/clear`.
+OpenAI then receives both the original prompt and the attached file contents, allowing it to provide `code-aware analysis and responses`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
