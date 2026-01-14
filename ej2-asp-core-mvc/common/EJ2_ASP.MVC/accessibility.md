@@ -90,7 +90,7 @@ This document provides detailed information on how Syncfusion products meet acce
 
 ## Accessibility support for specific components
 
-Syncfusion ASP.net MVC components are designed to ensure compliance with key accessibility standards, including **Section 508**, **WAI-ARIA**, **WCAG 2.2**, and **keyboard navigation**. Below, you’ll find control-specific documentation that provides detailed guidance on how each control meets these standards.
+Syncfusion ASP.NET MVC components are designed to ensure compliance with key accessibility standards, including **Section 508**, **WAI-ARIA**, **WCAG 2.2**, and **keyboard navigation**. Below, you’ll find control-specific documentation that provides detailed guidance on how each control meets these standards.
 <style>
 #table
 {
