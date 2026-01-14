@@ -36,13 +36,13 @@ Follow the [Getting Started](../getting-started) guide to configure and render t
 
 ## Configure AI AssistView with LiteLLM
 
-To integrate **LiteLLM** with the **Syncfusion AI AssistView** component, update the `index.cshtml` file in your ASP.NET MVC application. The component will send user prompts to the LiteLLM proxy, which forwards them to the configured LLM provider (e.g., **OpenAI** or **Azure OpenAI**) and returns natural language responses.
+To integrate **LiteLLM** with the **Syncfusion AI AssistView** control, update the `index.cshtml` file in your ASP.NET MVC application. The control will send user prompts to the LiteLLM proxy, which forwards them to the configured LLM provider (e.g., **OpenAI** or **Azure OpenAI**) and returns natural language responses.
 
 In the following example:
 
 * The [promptRequest](https://ej2.syncfusion.com/aspnetmvc/documentation/api/ai-assistview/aiassistviewmodel#promptrequest) event sends the user prompt to the LiteLLM proxy at `http://localhost:4000/v1/chat/completions`. 
 * The proxy uses the **model alias** defined in `config.yaml` (e.g., `openai/gpt-4o-mini`) and routes the request to the actual LLM provider. 
-* The response is parsed and displayed in the AI AssistView component.
+* The response is parsed and displayed in the AI AssistView control.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -76,7 +76,7 @@ In a separate terminal window, navigate to your project folder and start the ASP
 dotnet build
 ```
 
-Open your app to interact with the AI AssistView component integrated with LiteLLM.
+Open your app to interact with the AI AssistView control integrated with LiteLLM.
 
 ## Troubleshooting
 * `401 Unauthorized`: Verify your `API_KEY` and model deployment name.
