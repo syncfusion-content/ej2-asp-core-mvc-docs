@@ -8,78 +8,41 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate LiteLLM with ASP.NET MVC AI AssistView control
- 
-The AI AssistView control integrates with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified OpenAI-compatible API for multiple LLM providers such as OpenAI and Azure OpenAI. It serves as the user interface, sending prompts to the LiteLLM proxy, which forwards them to the configured LLM provider and returns natural-language responses. By configuring the proxy with secure authentication and model routing, developers can enable flexible, multi-provider AI interactions that enhance conversational capabilities.
- 
+# Integrate AI AssistView with LiteLLM
+
+The **AI AssistView** component can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
+
+In this setup:
+* **AI AssistView** serves as the user interface for entering prompts.
+* Prompts are sent to the **LiteLLM proxy**, which forwards them to the configured LLM provider.
+* The LLM provider processes the prompt and returns a response through LiteLLM.
+* This enables **natural language understanding** and **context-aware responses** without changing the AssistView integration logic, as LiteLLM uses the same OpenAI-style API.
+
 ## Prerequisites
- 
-* **OpenAI Account**: For generating an OpenAI API key to use with LiteLLM.
 
-* **Python**: Version 3.8 or higher, to run the LiteLLM proxy.
+Before starting, ensure you have the following:
 
-* **Syncfusion AI AssistView**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
+* **ASP.NET MVC**: Version **5 or higher** with the .NET Framework installed.
+
+* **OpenAI Account**: Access to OpenAI services and a generated **API key**.
+
+* **Python**: Required to run the **LiteLLM proxy**.
+
+* **Syncfusion AI AssistView**: Install the package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5).
 
 ## Set Up the AI AssistView control
 
 Follow the [Getting Started](../getting-started) guide to configure and render the AI AssistView control in the application and that prerequisites are met.
 
-## Install Dependencies
- 
-* Install the LiteLLM proxy via pip in your Python environment.
+## Configure AI AssistView with LiteLLM
 
-```bash
- 
-pip install "litellm[proxy]"
-```
-## Configure LiteLLM Proxy
+To integrate **LiteLLM** with the **Syncfusion AI AssistView** component, update the `index.cshtml` file in your ASP.NET MVC application. The component will send user prompts to the LiteLLM proxy, which forwards them to the configured LLM provider (e.g., **OpenAI** or **Azure OpenAI**) and returns natural language responses.
 
-* **Set Environment Variable**: Set your OpenAI API key as an environment variable for security (e.g.,`export OPENAI_API_KEY=<your-openai-api-key>` on macOS/Linux or `set OPENAI_API_KEY=<your-openai-api-key>` on Windows). Avoid hard-coding the key in files.
+In the following example:
 
-* **Create config.yaml**: In your project root, create a `config.yaml` file to define the model alias and routing. This exposes an OpenAI-compatible endpoint at `http://localhost:4000/v1/chat/completions`.
-
-{% tabs %}
-{% highlight yaml tabtitle="config.yaml" %}
-```yaml
-model_list:
-
-model_name: openai/gpt-4o-mini      # Alias your frontend will use
-LiteLLM_params:
-model: gpt-4o-mini                # OpenAI base model name
-api_key: OS.environ/OPENAI_API_KEY
-
-router_settings:
-Optional: master_key for proxy authentication
-master_key: test_key
-cors:
-
-"*"
-cors_allow_origins:
-"*"
-```
-{% endhighlight %}
-{% endtabs %}
-
-
-### Start the Proxy: 
-Run the following command in your project root to start the LiteLLM proxy:
-
-```bash
-litellm --config "./config.yaml" --port 4000 --host 0.0.0.0
-```
-Security note: In production, use a secret manager for the API key and restrict CORS origins. The optional `master_key` can add proxy-level authentication—set `liteLLMApiKey` in the C# code to match if enabled.
-
-## LiteLLM with AI AssistView
-
-Modify the `index.cshtml` file to integrate LiteLLM with the AI AssistView control via a server-side handler.
-
-The frontend sends prompts to the server (`/Home/GetAIResponse`), which proxies the request to LiteLLM.
-
-Add your optional LiteLLM master key (if enabled) securely in the following configuration:
-
-```bash
-const string liteLLMApiKey = "";
-```
+* The [promptRequest](https://ej2.syncfusion.com/aspnetmvc/documentation/api/ai-assistview/aiassistviewmodel#promptrequest) event sends the user prompt to the LiteLLM proxy at `http://localhost:4000/v1/chat/completions`. 
+* The proxy uses the **model alias** defined in `config.yaml` (e.g., `openai/gpt-4o-mini`) and routes the request to the actual LLM provider. 
+* The response is parsed and displayed in the AI AssistView component.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -88,4 +51,34 @@ const string liteLLMApiKey = "";
 {% highlight c# tabtitle="LiteLLM.cs" %}
 {% include code-snippet/ai-assistview/ai-integrations/lite-llm/litellmmvc.cs %}
 {% endhighlight %}
+
+{% highlight yaml tabtitle="config.yaml" %}
+{% include code-snippet/ai-assistview/ai-integrations/lite-llm/config.yaml %}
+{% endhighlight %}
 {% endtabs %}
+
+## Run and Test
+
+### Start the proxy:
+
+Navigate to your project folder and run the following command to start the proxy:
+
+```bash
+pip install "litellm[proxy]"
+litellm --config ".\config.yaml" --port 4000 --host 0.0.0.0
+```
+
+### Start the application:
+
+In a separate terminal window, navigate to your project folder and start the ASP.NET MVC application by pressing **F5** in Visual Studio or run:
+
+```bash
+dotnet build
+```
+
+Open your app to interact with the AI AssistView component integrated with LiteLLM.
+
+## Troubleshooting
+* `401 Unauthorized`: Verify your `API_KEY` and model deployment name.
+* `Model not found`: Ensure model matches `model_name` in `config.yaml`.
+* `CORS issues`: Configure `router_settings.cors_allow_origins` properly.
