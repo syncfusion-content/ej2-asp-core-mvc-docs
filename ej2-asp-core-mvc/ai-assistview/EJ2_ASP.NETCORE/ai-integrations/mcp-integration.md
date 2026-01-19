@@ -20,7 +20,7 @@ Before integrating `MCP Server`, ensure the following:
 
 2. `OpenAI Account`: Access to OpenAI services and a generated API key.
 
-3. `Syncfusion AI AssistView`: Install the package [Syncfusion.EJ2.Core](https://www.nuget.org/packages/Syncfusion.EJ2.Core).
+3. `Syncfusion AI AssistView`: Install the package [Syncfusion.EJ2.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core).
 
 4. [Markdig](https://www.nuget.org/packages/Markdig) package: For parsing Markdown responses.
 
