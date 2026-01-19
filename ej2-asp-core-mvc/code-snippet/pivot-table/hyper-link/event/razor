@@ -11,7 +11,7 @@
  }).Values(values =>
  {
      values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
- })).HyperlinkCellClick("hyperlink").HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowRowHeaderHyperlink(true).CssClass("e-custom-class")).Render()
+  })).HyperlinkCellClick("hyperlink").HyperlinkSettings(hyperlinksettings => hyperlinksettings.ShowRowHeaderHyperlink(true).CssClass("e-custom-class")).Render()
 
 <style>
     .e-custom-class {
