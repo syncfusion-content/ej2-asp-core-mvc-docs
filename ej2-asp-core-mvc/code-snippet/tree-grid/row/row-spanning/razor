@@ -72,6 +72,7 @@
             new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "MaterialCost", Width = "140",
                 HeaderText = "Material Cost",
                 TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+                EnableRowSpan = false
             },
         }).Add();
         col.HeaderText("Cost Summary").TextAlign(TextAlign.Center).Columns(
@@ -80,11 +81,13 @@
                 HeaderText = "Planned Budget",
                 Format="C2",
                 TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+                EnableRowSpan = false
             },
             new Syncfusion.EJ2.TreeGrid.TreeGridColumn { Field = "PaidToDate", Width = "140",
                 HeaderText = "Actual Spend",
                 Format="C2",
                 TextAlign = Syncfusion.EJ2.Grids.TextAlign.Center,
+                EnableRowSpan = false
             },
         }).Add();
     })

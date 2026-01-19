@@ -558,7 +558,7 @@ vertical-align: top;
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/sidebar/accessibility">Documentation</a></td>
+        <td>---</td>
     </tr>
     <tr>
         <td>Tabs</td>

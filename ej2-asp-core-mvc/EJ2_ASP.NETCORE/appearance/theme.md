@@ -39,7 +39,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 
 1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
 2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
-3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio/) - Used to customize and generate themes only for the selected (used) components.
+3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
 4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
 5. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
 
@@ -313,7 +313,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>

@@ -1,0 +1,26 @@
+<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+
+<ejs-pivotview id="PivotView" height="300" allowExcelExport="true" showFieldList="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
+        <e-formatsettings>
+            <e-field name="Date" type="date" format="EEE, MMM d, ''yy"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Date"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Products" caption="Product Categories"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Sold" caption="Units Sold"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    document.getElementById('excel').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.excelExport();
+    }
+</script>
