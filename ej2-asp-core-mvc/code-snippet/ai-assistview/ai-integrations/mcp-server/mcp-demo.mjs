@@ -88,6 +88,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
     try {
       const resp = await fetch('https://api.openai.com/v1/chat/completions', {
         method: 'POST',
+        max_tokens: 256,
         headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${OPENAI_API_KEY}` },
         body: JSON.stringify({ model, messages: [{ role: 'user', content: String(prompt ?? '') }], temperature, max_tokens, stream: false })
       });
@@ -152,6 +153,7 @@ app.post('/assist/chat', express.json(), async (req, res) => {
       for (const p of unique) {
         try {
           const full = safeJoin(FS_BASE_DIR, p);
+          await fs.access(full);
           const stat = await fs.stat(full);
           if (stat.isFile()) {
             const data = await fs.readFile(full);

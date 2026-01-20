@@ -30,11 +30,8 @@
         if (!inputArea) return;
 
         var files = [
-            'src/main.ts',
-            'src/app/app.ts',
-            'src/app/app.html',
-            'src/app/app.css',
-            'src/styles.css'
+	        'Index.cshtml',
+	        'Privacy.cshtml'
         ];
 
         var mention = new ej.dropdowns.Mention({
