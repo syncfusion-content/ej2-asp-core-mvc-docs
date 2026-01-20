@@ -39,7 +39,7 @@ The virtual scrolling option allows you to load the large amounts of data withou
 {% endtabs %}
 {% endif %}
 
-![output](images/virtualscrolling.png)
+![output](images/virtualscrolling.gif)
 
 ## Virtual scrolling with single page mode
 
