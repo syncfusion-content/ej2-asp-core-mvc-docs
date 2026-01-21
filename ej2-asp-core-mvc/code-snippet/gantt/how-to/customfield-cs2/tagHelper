@@ -1,0 +1,105 @@
+@model HomeController
+@{
+    ...
+    List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
+    GanttDataSource Record1 = new GanttDataSource()
+    {
+        TaskId = 1,
+        TaskName = "Product concept",
+        StartDate = new DateTime(2019, 04, 02),
+        EndDate = new DateTime(2019, 04, 21),
+        SubTasks = new List<GanttDataSource>(),
+    };
+    GanttDataSource Child1 = new GanttDataSource()
+    {
+        TaskId = 2,
+        TaskName = "Defining the product and its usage",
+        StartDate = new DateTime(2019, 04, 02),
+        Progress = 30,
+        Duration = 3,
+    };
+    GanttDataSource Child2 = new GanttDataSource()
+    {
+        TaskId = 3,
+        TaskName = "Defining target audience",
+        StartDate = new DateTime(2019, 04, 02),
+        Duration = 3,
+        Predecessor = "2FS"
+    };
+    GanttDataSource Child3 = new GanttDataSource()
+    {
+        TaskId = 4,
+        TaskName = "Prepare product sketch and notes",
+        StartDate = new DateTime(2019, 04, 02),
+        Progress = 30,
+        Duration = 2,
+        Predecessor = "3FF"
+    };
+    Record1.SubTasks.Add(Child1);
+    Record1.SubTasks.Add(Child2);
+    Record1.SubTasks.Add(Child3);
+    GanttDataSource Record2 = new GanttDataSource()
+    {
+        TaskId = 5,
+        TaskName = "Concept approval",
+        StartDate = new DateTime(2019, 04, 02),
+        Duration = 0,
+        SubTasks = new List<GanttDataSource>(),
+    };
+    GanttDataSource Child4 = new GanttDataSource()
+    {
+        TaskId = 6,
+        TaskName = "Demand analysis",
+        StartDate = new DateTime(2019, 04, 04),
+        EndDate = new DateTime(2019, 04, 21),
+        SubTasks = new List<GanttDataSource>(),
+    };
+    GanttDataSource Child5 = new GanttDataSource()
+    {
+        TaskId = 7,
+        TaskName = "Customer strength",
+        StartDate = new DateTime(2019, 04, 04),
+        Duration = 4,
+        Progress = 30,
+        Predecessor = "6SS"
+    };
+    Record2.SubTasks.Add(Child4);
+    Record2.SubTasks.Add(Child5);
+    GanttDataSourceCollection.Add(Record1);
+    GanttDataSourceCollection.Add(Record2);
+}
+
+<ejs-gantt id='Gantt' dataSource="GanttDataSourceCollection" height="450px" toolbar="@(new List<string>() { "Add", "Edit", "Update", "Delete", "Cancel" })" actionBegin="actionBegin" actionComplete="actionComplete">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" child="SubTasks">
+    </e-gantt-taskfields>
+    <e-gantt-editsettings allowAdding="true" allowEditing="true" allowDeleting="true"
+                          allowTaskbarEditing="true" showDeleteConfirmDialog="true"></e-gantt-editsettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskId" width="80"></e-gantt-column>
+        <e-gantt-column field="TaskName" headerText="Job Name" width="250" clipMode="EllipsisWithTooltip"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+        <e-gantt-column field="Predecessor"></e-gantt-column>
+        <e-gantt-column field="Custom" visible=false></e-gantt-column>
+    </e-gantt-columns>
+</ejs-gantt>
+
+<script type="text/javascript">
+    function actionBegin(args) 
+    {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === 'beforeOpenEditDialog')
+        {
+            ganttObj.columnByField["Custom"].visible = true;
+        }
+    }
+    function actionComplete(args) 
+    {
+        var ganttObj = document.getElementById("Gantt").ej2_instances[0];
+        if (args.requestType === 'openEditDialog')
+        {
+            ganttObj.columnByField["Custom"].visible = false;
+        }
+    }
+</script>
