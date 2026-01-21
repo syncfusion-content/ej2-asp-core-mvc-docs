@@ -243,6 +243,8 @@ To place an axis opposite from its original position, set [`opposedPosition`](ht
 {% endtabs %}
 {% endif %}
 
+## See Also
 
+* [Dynamically Add Axes](https://support.syncfusion.com/kb/article/21480/how-to-dynamically-add-axes-in-aspnet-core-chart-component)
 
 
