@@ -9,15 +9,10 @@
     function onBegin(e) {
         this.fields = {
             text: 'Name', value: 'Code', itemCreated: function (e) {
-                var count = 0;
-                if (count === 0) {
-                    for (let i = 0; i < e.dataSource.length; i++) {
-                        if (e.curData.isSelected == true)
-                            itemSearch(e.curData.Code); //pass the corresponding value
-                    }
-                }
+                if (e.curData.isSelected == true)
+                    itemSearch(e.curData.Code); //pass the corresponding value
             }
-        }
+        }        
     }
     function itemSearch(e) {
         if (selected.indexOf(e) == -1)
