@@ -91,7 +91,7 @@ N> The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [`Newtonsoft.Json`](h
         ...
 
         <!-- Syncfusion Essential JS 2 Styles -->
-        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+        <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/tailwind3.css" />
 
         <!-- Syncfusion Essential JS 2 Scripts -->
         <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
