@@ -8,10 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ASP.NET Core TreeGrid Control
 
-This section briefly explains about how to include [ASP.NET Core TreeGrid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control in your ASP.NET Core application using Visual Studio.
+This section explains how to add the [ASP.NET Core TreeGrid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -19,13 +18,13 @@ This section briefly explains about how to include [ASP.NET Core TreeGrid](https
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
-
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add Syncfusion ASP.NET Core controls, open the NuGet Package Manager in Visual Studio (navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/), and install it. 
+
+Alternatively, use the Package Manager Console with this command:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -85,6 +84,8 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 {% endhighlight %}
 {% endtabs %}
+
+The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Syncfusion controls are fully rendered before the script manager initializes them.
 
 ## Add ASP.NET Core TreeGrid control
 
@@ -191,15 +192,13 @@ public class TreeGridItems
         return BusinessObjectCollection;
     }
 }
+
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid control will be rendered in the default web browser.
 
 ![ASP.NET Core TreeGrid Control](images/treegrid-control.png)
-
-N> [`childMapping`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ChildMapping.html) specifies the mapping property path for subtasks in dataSource.
-N> [`treeColumnIndex`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~TreeColumnIndex.html) specifies the index of the column that needs to have the expander button.
 
 ## Defining Columns
 
@@ -312,7 +311,9 @@ public class TreeGridItems
 
 ## Enable Paging
 
-The paging feature enables users to view the treegrid record in a paged view. It can be enabled by setting the  [`allowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) property to true. Pager can be customized using [`e-treegrid-pagesettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings.html) tag helper.
+Paging breaks large datasets into smaller pages, improving performance and readability. Users see page navigation controls at the bottom of the TreeGrid to move between pages.
+
+Enable paging by setting [`allowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) property to true. Pager can be customized using [`e-treegrid-pagesettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -412,7 +413,9 @@ public class TreeGridItems
 
 ## Enable Sorting
 
-The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property as true. Sorting feature can be customized using [`e-treegrid-sortsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
+Sorting allows users to reorder rows by clicking column headers. This helps users find data quickly by organizing it according to their needs.
+
+Enable sorting by setting [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property as true. Sorting feature can be customized using [`e-treegrid-sortsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -512,7 +515,9 @@ public class TreeGridItems
 
 ## Enable Filtering
 
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) property as true. Filtering feature can be customized using [`e-treegrid-filtersettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
+Filtering enables users to view a subset of rows matching specific criteria. This reduces data volume and helps users focus on relevant information.
+
+Enable filtering by setting [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) property as true. Filtering feature can be customized using [`e-treegrid-filtersettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
