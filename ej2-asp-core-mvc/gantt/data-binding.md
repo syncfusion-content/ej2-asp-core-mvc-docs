@@ -127,7 +127,7 @@ In Gantt, we can fetch data from SQL database using `ADO.NET` Entity Data Model 
 
 N> Refer the [link](https://docs.microsoft.com/en-us/aspnet/mvc/overview/older-versions-1/models-data/creating-model-classes-with-the-entity-framework-cs) to create the `ADO.NET` Entity Data Model in Visual Studio,
 
-We can define data source for Gantt as instance of DataManager using `url` property of DataManager. Check the below code snippet to assign data source to Gantt.
+We can define data source for Gantt as instance of DataManager using `url` property of DataManager. CRUD operations can be mapped to the server-side using the `batchUrl` properties. Check the below code snippet to assign data source to Gantt.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,7 +152,68 @@ We can define data source for Gantt as instance of DataManager using `url` prope
 {% endtabs %}
 {% endif %}
 
+The following code example describes the CRUD operations handled at server-side.
 
+```json
+    public IActionResult BatchUpdate([FromBody] CRUDModel batchmodel)
+    {
+        public class CRUDModel
+        {
+            public List<GanttDataSource> added { get; set; }
+            public List<GanttDataSource> changed { get; set; }
+            public List<GanttDataSource> deleted { get; set; }
+            public object key { get; set; }
+            public string action { get; set; }
+            public string table { get; set; }
+        }
+
+        public IActionResult BatchUpdate([FromBody] CRUDModel batchmodel)
+        {
+            if (batchmodel.changed != null)
+            {
+                for (var i = 0; i < batchmodel.changed.Count(); i++)
+                {
+                    var value = batchmodel.changed[i];
+                    GanttDataSource result = DataList.Where(or => or.taskId == value.taskId).FirstOrDefault();
+                    result.taskId = value.taskId;
+                    result.taskName = value.taskName;
+                    result.startDate = value.startDate;
+                    result.endDate = value.endDate;
+                    result.duration = value.duration;
+                    result.progress = value.progress;
+                    result.parentID = value.parentID;
+                }
+            }
+            if (batchmodel.deleted != null)
+            {
+                for (var i = 0; i < batchmodel.deleted.Count(); i++)
+                {
+                    DataList.Remove(DataList.Where(or => or.taskId.Equals(batchmodel.deleted[i].taskId)).FirstOrDefault());
+                    RemoveChildRecords(batchmodel.deleted[i].taskId);
+                }
+            }
+            if (batchmodel.added != null)
+            {
+                for (var i = 0; i < batchmodel.added.Count(); i++)
+                {
+                    DataList.Add(batchmodel.added[i]);
+                }
+            }
+            return Json(new { addedRecords = batchmodel.added, changedRecords = batchmodel.changed, deletedRecords = batchmodel.deleted });
+        }
+
+       public void RemoveChildRecords(int key)
+        {
+            var childList = DataList.Where(x => x.parentID == key).ToList();
+            foreach (var item in childList)
+            {
+                DataList.Remove(item);
+                RemoveChildRecords(item.taskId);
+            }
+        }
+        return Json(new { addedRecords = batchmodel.added, changedRecords = batchmodel.changed, deletedRecords = batchmodel.deleted });
+    }
+```
 
 ### Remote Save Adaptor
 
