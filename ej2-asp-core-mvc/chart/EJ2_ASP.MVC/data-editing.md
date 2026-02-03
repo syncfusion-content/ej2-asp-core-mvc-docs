@@ -13,7 +13,16 @@ documentation: ug
 
 ## Enable Data Editing
 
-It provides drag and drop support to the rendered points. Now, we can change the location or value of the point based on its `y` value. To enable the data editing, set the `Enable` property to true in the drag settings of the series. Also, we can set color using `Fill` property and set the data editing minimum and maximum range using `MinY` and `MaxY` properties.
+Data editing allows users to modify chart data points interactively by dragging and dropping the rendered points.
+
+Once enabled, the position or value of a data point can be changed dynamically based on its `y` value. To activate data editing, set the `Enable` property to **true** in the drag settings of the corresponding series.
+
+In addition, the following properties can be used to customize the data editing behavior and appearance:
+
+- Use the `Fill` property to set the color of the editable data points.
+- Use the `MinY` and `MaxY` properties to define the minimum and maximum allowable range for editing the data points.
+
+These options help control both the visual feedback and the valid value range while editing data directly on the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
