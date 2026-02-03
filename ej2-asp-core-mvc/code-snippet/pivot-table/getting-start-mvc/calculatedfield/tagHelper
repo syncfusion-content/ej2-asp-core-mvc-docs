@@ -1,5 +1,6 @@
+@page
 @{
-	List<PivotData> pivotData = new List<PivotData>();
+    List<PivotData> pivotData = new List<PivotData>();
     pivotData.Add(new PivotData { Sold = 31, Amount = 52824, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q1" });
     pivotData.Add(new PivotData { Sold = 51, Amount = 86904, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q2" });
     pivotData.Add(new PivotData { Sold = 90, Amount = 153360, Country = "France", Products = "Mountain Bikes", Year = "FY 2015", Quarter = "Q3" });
@@ -76,9 +77,15 @@
     pivotData.Add(new PivotData { Sold = 109, Amount = 29576, Country = "United States", Products = "Road Bikes", Year = "FY 2017", Quarter = "Q3" });
 }
 
-@{var amount = "\"" + "Sum(Amount)" + "\"";}
-@{var sold = "\"" + "Sum(Sold)" + "\"";}
-@{ var totalPrice = amount + "+" + sold;}
+@{
+    var amount = "\"" + "Sum(Amount)" + "\"";
+}
+@{
+    var sold = "\"" + "Sum(Sold)" + "\"";
+}
+@{
+    var totalPrice = amount + "+" + sold;
+}
 
 <ejs-button id="calculated-field-btn" content="Calculated Field" isPrimary="true"></ejs-button>
 <ejs-pivotview id="PivotView" height="300" allowCalculatedField="true">
