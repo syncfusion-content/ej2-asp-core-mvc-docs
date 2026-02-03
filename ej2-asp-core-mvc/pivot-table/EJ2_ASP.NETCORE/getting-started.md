@@ -74,7 +74,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Now, register the script manager `<ejs-scripts>` at the end of the `<body>` tag in the `~/Pages/Shared/_Layout.cshtml` file as shown below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -94,7 +94,10 @@ Polyfills are required to use the Pivot Table in Internet Explorer 11 browser. R
 
 ## Add ASP.NET Core Pivot Table control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot Table tag helper in `~/Pages/Index.cshtml` page, to initialize the pivot table control with sample OLAP data source.
+Add the Pivot Table control to your application by following these steps:
+
+1. Add a data class (for example, `PivotData`) to the `~/Pages/Index.cshtml.cs` file. This class defines the data structure for the pivot table. You can use any desired name for this class.
+2. Add the Pivot Table tag helper to the `~/Pages/Index.cshtml` file with sample data to display the control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
