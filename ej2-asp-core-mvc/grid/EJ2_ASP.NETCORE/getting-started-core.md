@@ -30,9 +30,31 @@ To get start quickly with ASP.NET Core Grid component, you can check on this vid
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio:
+
+1.Start **Visual Studio** and select **Create a new project**.
+
+2.In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+
+3.In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
+
+4.Click `Next`.
+
+5.In the Additional information dialog:
+    Select **.NET 10.0**.
+    Verify: **Do not use top-level statements** is **unchecked**.
+
+6.Click `Create`.
+
+For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
+
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -41,6 +63,49 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio Code:
+
+* Install the latest **.NET SDK** that supports **.NET 10.0** or later.
+* Open **Visual Studio Code**.
+* Press **Ctrl + `** to open the integrated terminal.
+* Run the following commands:
+
+{% tabs %}
+{% highlight C# tabtitle=".NET CLI" %}
+
+dotnet new webapp -o RazorPagesMovie
+code -r RazorPagesMovie
+
+{% endhighlight %}
+{% endtabs %}
+
+## Install ASP.NET Core package in the application
+
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+
+1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
+2. Navigate to the directory containing the **.csproj** file.
+3. Run the following commands to install the packages:
+
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
