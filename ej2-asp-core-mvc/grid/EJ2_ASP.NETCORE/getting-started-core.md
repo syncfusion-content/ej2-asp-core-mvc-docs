@@ -45,8 +45,8 @@ To get start quickly with ASP.NET Core Grid component, you can check on this vid
 4.Click `Next`.
 
 5.In the Additional information dialog:
-    Select **.NET 10.0**.
-    Verify: **Do not use top-level statements** is **unchecked**.
+* Select **.NET 10.0**.
+* Verify: **Do not use top-level statements** is **unchecked**.
 
 6.Click `Create`.
 
@@ -80,6 +80,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% highlight C# tabtitle=".NET CLI" %}
 
 dotnet new webapp -o RazorPagesMovie
+
 code -r RazorPagesMovie
 
 {% endhighlight %}
