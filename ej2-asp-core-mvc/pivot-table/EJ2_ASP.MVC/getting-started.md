@@ -39,6 +39,28 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
+## Update Microsoft.AspNet.Mvc package
+
+Updating the `Microsoft.AspNet.Mvc` package to the latest version ensures compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> components and enables optimal rendering of the ASP.NET Pivot Table. The latest version of this package provides the necessary framework capabilities and dependencies required for the Pivot Table to function correctly with your ASP.NET MVC application.
+
+Follow these steps to update the Microsoft.AspNet.Mvc package:
+
+1. Open the NuGet Package Manager in Visual Studio by going to **Tools** → **NuGet Package Manager** → **Manage NuGet Packages for Solution**.
+2. Click on the **Updates** tab to see all available package updates.
+3. Search for **Microsoft.AspNet.Mvc** in the list of updates.
+4. Select the latest version from the Version dropdown menu.
+5. Click the **Update** button to install the latest version.
+
+Alternatively, you can use the Package Manager Console to update the package with the following command:
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Update-Package Microsoft.AspNet.Mvc
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Add namespace
 
 Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
@@ -51,7 +73,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -71,7 +93,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -89,7 +111,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 * Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table control in `~/Views/Home/Index.cshtml` page.
 
-* The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
+* The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared in the `PivotData` class in the `HomeController.cs` file. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
