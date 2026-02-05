@@ -125,7 +125,7 @@ The `Fill` property can be used to apply a gradient color to the bar series. By 
 
 **Opacity**
 
-The `Opacity` property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The `Opacity` property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,7 +152,7 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 
 **Border**
 
-Use the `Border` property to customize the width, color and dasharray of the series border.
+Use the `Border` property to configure the border width, color, and dasharray of the bar series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -320,7 +320,7 @@ Data points with **null** or **undefined** values are considered empty. Empty da
 
 **Mode**
 
-Use the `Mode` property to define how empty or missing data points are handled in the series. The default mode for empty points is **Gap**.
+Use the `Mode` property to control handling of empty points. Available modes: `Gap`, `Drop`, `Zero`, `Average`. The default mode is `Gap`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -347,7 +347,7 @@ Use the `Mode` property to define how empty or missing data points are handled i
 
 **Fill**
 
-Use the `Fill` property to customize the fill color of empty points in the series.
+Use the `Fill` property to set the fill color for empty points.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -374,7 +374,7 @@ Use the `Fill` property to customize the fill color of empty points in the serie
 
 **Border**
 
-Use the `Border` property to customize the width and color of the border for empty points.
+Use the `Border` property to customize the border width and color for empty points.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -432,7 +432,7 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 ### Point corner radius
 
-We can customize the corner radius for individual points in the chart series using the [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event by setting the [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in its event argument.
+You can customize the corner radius for individual points in the chart series using the [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event by setting the [`CornerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_CornerRadius) property in its event argument.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -463,7 +463,7 @@ We can customize the corner radius for individual points in the chart series usi
 
 ### Series render
 
-The `SeriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The `SeriesRender` event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -490,7 +490,7 @@ The `SeriesRender` event allows you to customize series properties, such as data
 
 ### Point render
 
-The `PointRender` event allows you to customize each data point before it is rendered on the chart.
+The `PointRender` event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
  
 {% if page.publishingplatform == "aspnet-core" %}
 
