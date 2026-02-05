@@ -260,4 +260,4 @@ N> By default, the calculated fields created through code-behind are only added 
 
 ![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/aspnet-mvc-pivot-table-getting-started).
