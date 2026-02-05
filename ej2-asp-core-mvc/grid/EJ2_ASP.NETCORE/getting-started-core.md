@@ -36,19 +36,19 @@ To get start quickly with ASP.NET Core Grid component, you can check on this vid
 
 ## Create an ASP.NET Core Razor Pages project using Visual Studio:
 
-1.Start **Visual Studio** and select **Create a new project**.
+1. Start **Visual Studio** and select **Create a new project**.
 
-2.In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
 
-3.In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
+3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
 
-4.Click `Next`.
+4. Click `Next`.
 
-5.In the Additional information dialog:
+5. In the Additional information dialog:
 * Select **.NET 10.0**.
 * Verify: **Do not use top-level statements** is **unchecked**.
 
-6.Click `Create`.
+6. Click `Create`.
 
 For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
 
