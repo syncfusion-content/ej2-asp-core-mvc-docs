@@ -8,7 +8,6 @@ using System.Drawing;
 
 namespace EJ2MVCSampleBrowser.Controllers.Diagram {
     public partial class DiagramController: Controller {
-        // GET: Nodes
         public ActionResult Nodes()
         {
             var nodes = new List<DiagramNode>();
@@ -48,7 +47,6 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                 Style = new NodeStyleNodes() { Fill = "#2AA8D9", StrokeColor = "grey" }
             });
 
-            // Create connectors similar to your JS sample
             var connectors = new List<DiagramConnector>();
 
             connectors.Add(new DiagramConnector()
@@ -67,8 +65,6 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram {
                     }
                 }
             });
-
-            // Put the data into ViewBag to be consumed by the Razor view
             ViewBag.nodes = nodes;
             ViewBag.connectors = connectors;
 

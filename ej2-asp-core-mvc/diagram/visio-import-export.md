@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import and Export Visio Files in Syncfusion® ##Platform_Name## Diagram Component
+title: Import and Export Visio Files ##Platform_Name## Diagram Component
 description: Learn how to import and export Microsoft Visio (.vsdx) files using the Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Diagram
@@ -82,7 +82,7 @@ Import behavior can be customized using the [`VisioImportOptions`](https://help.
 
 | Property | Description |
 |--------|-------------|
-| `pageIndex` | Specifies the zero-based index of the Visio page to import. The default value is `0`. |
+| `pageIndex` | Specifies the zero-based index of the Visio page to import. The default value is **0**. |
 
 ### Import lifecycle event
 
