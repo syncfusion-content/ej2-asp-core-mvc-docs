@@ -80,7 +80,6 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% highlight C# tabtitle=".NET CLI" %}
 
 dotnet new webapp -o RazorPagesMovie
-
 code -r RazorPagesMovie
 
 {% endhighlight %}
@@ -99,7 +98,7 @@ To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core D
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
