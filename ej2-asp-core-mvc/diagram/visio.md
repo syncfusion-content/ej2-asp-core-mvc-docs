@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Import and Export Visio Diagrams in Syncfusion® ##Platform_Name##
+title: Import and Export Visio Files in Syncfusion® ##Platform_Name##
 description: Learn how to import and export Microsoft Visio (.vsdx) files using the Syncfusion® ##Platform_Name## Diagram component of Syncfusion Essential® JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Diagram
@@ -36,7 +36,7 @@ N>To enable Visio import and export functionality, inject the `ImportAndExportVi
 
 ### How Visio import works
 
-A Visio file can be selected from the local file system or retrieved from a server or cloud storage. Once the **.vsdx** file is available, it is passed to the Diagram component as a **File** object using the [`importFromVisio`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html) method.
+A Visio file can be selected from the local file system or retrieved from a server or cloud storage. Once the **.vsdx** file is available, it is passed to the Diagram component as a **File** object using the `importFromVisio` method.
 
 During the import process:
 
@@ -50,7 +50,7 @@ During the import process:
 The following example imports a Visio (**.vsdx**) file by passing a **File** object to the `importFromVisio` method. The method returns a collection of warnings when certain Visio features are not fully supported during import.
 
 {% if page.publishingplatform == "aspnet-core" %}
-
+ej2-asp-core-mvc\code-snippet\diagram\visioimportexport\visioImport\visioImport.cs
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/diagram/visioimportexport/visioImport/tagHelper %}
@@ -78,7 +78,7 @@ diagram.importFromVisio(file, { pageIndex: 0 });
 
 ### Import options
 
-Import behavior can be customized using the [`VisioImportOptions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html)  object.
+Import behavior can be customized using the `VisioImportOptions`object.
 
 | Property | Description |
 |--------|-------------|
@@ -86,7 +86,7 @@ Import behavior can be customized using the [`VisioImportOptions`](https://help.
 
 ### Import lifecycle event
 
-The [`diagramImporting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html) event is triggered during the Visio import process. This event provides information about the current import status, available pages, warnings or errors, and supports page selection or cancellation of the import operation.
+The `diagramImporting` event is triggered during the Visio import process. This event provides information about the current import status, available pages, warnings or errors, and supports page selection or cancellation of the import operation.
 
 ```javascript
 diagramImporting: function(args) {
@@ -143,7 +143,7 @@ diagramImporting: function(args) {
 
 ### How Visio export works
 
-The Diagram component supports exporting diagrams to Microsoft Visio format using the [`exportToVisio`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html) method. This method generates a **.vsdx** file and automatically downloads it through the browser.
+The Diagram component supports exporting diagrams to Microsoft Visio format using the `exportToVisio` method. This method generates a **.vsdx** file and automatically downloads it through the browser.
 
 ### Exporting a diagram
 
@@ -172,7 +172,7 @@ The following example exports a Diagram to a Microsoft Visio (**.vsdx**) file us
 ```javascript
 
   var exportOptions = {
-    fileName: 'diagram1',
+    fileName: 'diagram1.vsdx',
     pageName: 'page1'
   };
 // Method to export diagram as vsdx
@@ -182,7 +182,7 @@ diagram.exportToVisio(exportOptions);
 
 ### Export options
 
-Export behavior can be controlled using the [`VisioExportOptions`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html)  object.
+Export behavior can be controlled using the `VisioExportOptions` object.
 
 | Property | Description |
 |------|------|
@@ -191,7 +191,7 @@ Export behavior can be controlled using the [`VisioExportOptions`](https://help.
 
 ### Export lifecycle event
 
-The [`diagramExporting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html) event provides status updates, reports warnings or errors, and supports cancellation of the export operation.
+The `diagramExporting` event provides status updates, reports warnings or errors, and supports cancellation of the export operation.
 
 ```javascript
   diagramExporting: function (args) {
