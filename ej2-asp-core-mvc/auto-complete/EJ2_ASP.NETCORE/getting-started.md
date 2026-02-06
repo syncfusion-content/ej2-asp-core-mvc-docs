@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core AutoComplete Control
 
-This section briefly explains about how to include [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Custom values
 
-The AutoComplete allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_AllowCustom_System_Boolean_) property. The custom value will be sent to post back handler when a form is about to be submitted.
+The AutoComplete allows users to enter custom values that are not present in the predefined set of values. By default, this support is enabled by the [allowCustom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_AllowCustom_System_Boolean_) property. The custom value will be sent to the post back handler when a form is submitted.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,9 +112,9 @@ The AutoComplete allows the user to give input as custom value which is not requ
 
 ## Configure the suggestion list
 
-By default, suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list has '300px'.
+By default, the suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list is '300px'.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupHeight_System_String_) and [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupWidth_System_String_) property respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupHeight_System_String_) and [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupWidth_System_String_) properties respectively.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,4 +128,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [How to binding the data](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/data-binding)
+* [How to bind the data](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/data-binding)

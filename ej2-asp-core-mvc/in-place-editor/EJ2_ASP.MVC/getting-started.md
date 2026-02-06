@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC In-place Editor Control
 
-This section briefly explains about how to include [ASP.NET MVC In-place Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/in-place-editor) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC In-place Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/in-place-editor) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Add the In-place Editor with Textbox
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TextBox control is rendered in In-place Editor with the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property sets as Text.
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC TextBox control is rendered in In-place Editor with the [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property set as Text.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -161,15 +161,15 @@ In the following sample, type and model values are configured to render the Text
 
 ## Submitting data to the server (save)
 
-You can submit editor value to the server by configuring the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [Adaptor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [PrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey).
+You can submit the editor value to the server by configuring the [Url](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Url), [Adaptor](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Adaptor) and [PrimaryKey](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_PrimaryKey) properties.
 
 | Property   | Usage                                           |
 |------------|---------------------------------------------------------|
 | **`Url`**        | Gets the URL for server submit action.        |
 | **`Adaptor`**    | Specifies the adaptor type that is used by DataManager to communicate with DataSource.  |
-| **`PrimaryKey`** | Defines the unique primary key of editable field which can be used for saving data in the data-base. |
+| **`PrimaryKey`** | Defines the unique primary key of the editable field which can be used for saving data in the database. |
 
-N> The `PrimaryKey` property is mandatory. If it's not set, edited data are not sent to the server.
+N> The `PrimaryKey` property is mandatory. If it's not set, edited data is not sent to the server.
 
 ## Refresh with modified value
 

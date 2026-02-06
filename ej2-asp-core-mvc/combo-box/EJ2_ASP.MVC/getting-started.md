@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC ComboBox Control
 
-This section briefly explains about how to include [ASP.NET MVC ComboBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/combobox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC ComboBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/combobox) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -106,7 +106,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_AllowCustom) property. In this case, both text field and value field considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows users to enter custom values that are not present in the predefined set of values. By default, this support is enabled by the [allowCustom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_AllowCustom) property. In this case, both the text field and value field are considered the same. The custom value will be sent to the post back handler when a form is submitted.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -123,11 +123,11 @@ public ActionResult Index()
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list is '300px'.
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_PopupWidth) properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

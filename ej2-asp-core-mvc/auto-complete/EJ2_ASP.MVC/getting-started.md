@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC AutoComplete Control
 
-This section briefly explains about how to include [ASP.NET MVC AutoComplete](https://www.syncfusion.com/aspnet-mvc-ui-controls/autocomplete) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC AutoComplete](https://www.syncfusion.com/aspnet-mvc-ui-controls/autocomplete) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -125,7 +125,7 @@ public ActionResult Index()
 
 ## Custom values
 
-The AutoComplete allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_AllowCustom) property. The custom value will be sent to post back handler when a form is about to be submitted.
+The AutoComplete allows users to enter custom values that are not present in the predefined set of values. By default, this support is enabled by the [allowCustom](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_AllowCustom) property. The custom value will be sent to the post back handler when a form is submitted.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,11 +142,11 @@ public ActionResult Index()
 
 ## Configure the suggestion list
 
-By default, suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list has '300px'.
+By default, the suggestion list width automatically adjusts according to the AutoComplete input element's width, and the height of the suggestion list is '300px'.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_PopupWidth) property respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_PopupWidth) properties respectively.
 
-In the following sample, suggestion list's width and height are configured.
+In the following sample, the suggestion list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

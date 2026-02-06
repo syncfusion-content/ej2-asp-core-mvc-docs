@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Button Group Control
 
-This section briefly explains about how to include a simple [ASP.NET MVC ButtonGroup](https://www.syncfusion.com/aspnet-mvc-ui-controls/button-group) in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include a simple [ASP.NET MVC ButtonGroup](https://www.syncfusion.com/aspnet-mvc-ui-controls/button-group) in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -102,7 +102,7 @@ Output be like the below.
 
 ## Run the application
 
-After successful compilation of your application, simply press `F5` to run the application.
+After successful compilation of the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app.
 
 The following example shows a default rendering of ButtonGroup.
 
@@ -117,11 +117,11 @@ The following example shows a default rendering of ButtonGroup.
 
 ## Orientation
 
-ButtonGroup can be arranged in a vertical and horizontal orientation. By default, it is horizontally aligned.
+ButtonGroup can be arranged in vertical or horizontal orientation. By default, it is horizontally aligned.
 
 ### Vertical Orientation
 
-ButtonGroup can be aligned vertically by using the built-in CSS class `e-vertical` to the target element.
+ButtonGroup can be aligned vertically by applying the built-in CSS class `e-vertical` to the target element.
 
 The following example illustrates how to achieve vertical orientation in ButtonGroup.
 
@@ -134,7 +134,7 @@ The following example illustrates how to achieve vertical orientation in ButtonG
 {% endhighlight %}
 {% endtabs %}
 
-N> ButtonGroup does not support SplitButton component nesting in a vertical orientation.
+N> Button Group does not support SplitButton component nesting in a vertical orientation.
 
 ## See Also
 

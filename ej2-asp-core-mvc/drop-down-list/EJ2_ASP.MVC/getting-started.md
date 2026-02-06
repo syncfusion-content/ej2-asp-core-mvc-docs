@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC DropDownList Control
 
-This section briefly explains about how to include [ASP.NET MVC DropDownList](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-list) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DropDownList](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-list) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -129,7 +129,7 @@ By default, the width of the popup list automatically adjusts according to the D
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_PopupWidth) properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
