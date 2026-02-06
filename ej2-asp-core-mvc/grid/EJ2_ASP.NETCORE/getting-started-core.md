@@ -130,7 +130,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent2.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -318,7 +318,7 @@ public class OrdersDetails
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Grid with Paging](images/grid-page.png)
+![ASP.NET Core Grid with Paging](images/getting-started/grid-page.png)
 
 ## Enable Sorting
 
@@ -364,7 +364,7 @@ public class OrdersDetails
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting in ASP.NET Core Grid](images/grid-sort.png)
+![Sorting in ASP.NET Core Grid](images/getting-started/grid-sort.png)
 
 ## Enable Filtering
 
@@ -410,7 +410,7 @@ public class OrdersDetails
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering in ASP.NET Core Grid](images/grid-filter.png)
+![Filtering in ASP.NET Core Grid](images/getting-started/grid-filter.png)
 
 ## Enable Grouping
 
@@ -456,7 +456,7 @@ public class OrdersDetails
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping in ASP.NET Core Grid](images/grid-sample.png)
+![Grouping in ASP.NET Core Grid](images/getting-started/grid-group.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Grid/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
