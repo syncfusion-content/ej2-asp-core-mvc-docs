@@ -39,6 +39,30 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
+## Update Microsoft.AspNet.Mvc package
+
+For ASP.NET MVC 5 (full .NET Framework) projects, update the `Microsoft.AspNet.Mvc` package using Visual Studio's NuGet UI or the Package Manager Console so your project stays compatible with Syncfusion controls.
+
+- Visual Studio (UI):
+    1. Tools → NuGet Package Manager → Manage NuGet Packages for Solution.
+    2. Select the project, open the **Updates** tab, locate `Microsoft.AspNet.Mvc`, choose the desired version and click **Update**.
+
+- Package Manager Console:
+```powershell
+Update-Package Microsoft.AspNet.Mvc
+```
+
+To install or update to a specific version:
+```powershell
+Update-Package Microsoft.AspNet.Mvc -Version <x.y.z>
+```
+
+N>
+- MVC5 projects commonly use `packages.config`; these UI/PMC operations will update `packages.config` and restore packages to the `packages` folder.
+- Back up or commit your project before updating and review the package release notes for breaking changes.
+- Verify the chosen `Microsoft.AspNet.Mvc` version is compatible with `Syncfusion.EJ2.MVC5` (check Syncfusion's NuGet or product documentation).
+- After updating, rebuild the solution and verify the Pivot Table renders correctly in a browser.
+
 ## Add namespace
 
 Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
@@ -51,7 +75,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -71,7 +95,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -89,7 +113,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 * Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table control in `~/Views/Home/Index.cshtml` page.
 
-* The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
+* The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared in the `PivotData` class in the `HomeController.cs` file. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -134,79 +158,16 @@ public class HomeController : Controller
         {
             pivotDataList.Add(new PivotData(31, 52824, "France", "Mountain Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(51, 86904, "France", "Mountain Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(90, 153360, "France", "Mountain Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(25, 42600, "France", "Mountain Bikes", "FY 2015", "Q4"));
-            pivotDataList.Add(new PivotData(27, 46008, "France", "Mountain Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(49, 83496, "France", "Mountain Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(95, 161880, "France", "Mountain Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(67, 114168, "France", "Mountain Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(75, 127800, "France", "Mountain Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(67, 114168, "France", "Mountain Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(69, 117576, "France", "Mountain Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(90, 153360, "France", "Mountain Bikes", "FY 2017", "Q4"));
-            pivotDataList.Add(new PivotData(16, 27264, "France", "Mountain Bikes", "FY 2018", "Q1"));
             pivotDataList.Add(new PivotData(83, 124422, "France", "Road Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(57, 85448, "France", "Road Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(20, 29985, "France", "Road Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(67, 70008, "France", "Road Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(89, 60496, "France", "Road Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(75, 801880, "France", "Road Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(57, 204168, "France", "Road Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(75, 737800, "France", "Road Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(87, 884168, "France", "Road Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(39, 729576, "France", "Road Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(90, 38860, "France", "Road Bikes", "FY 2017", "Q4"));
-            pivotDataList.Add(new PivotData(93, 139412, "France", "Road Bikes", "FY 2015", "Q4"));
             pivotDataList.Add(new PivotData(51, 92824, "Germany", "Mountain Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(61, 76904, "Germany", "Mountain Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(70, 43360, "Germany", "Mountain Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(85, 62600, "Germany", "Mountain Bikes", "FY 2015", "Q4"));
-            pivotDataList.Add(new PivotData(97, 86008, "Germany", "Mountain Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(69, 93496, "Germany", "Mountain Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(45, 301880, "Germany", "Mountain Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(77, 404168, "Germany", "Mountain Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(15, 137800, "Germany", "Mountain Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(37, 184168, "Germany", "Mountain Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(49, 89576, "Germany", "Mountain Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(40, 33360, "Germany", "Mountain Bikes", "FY 2017", "Q4"));
-            pivotDataList.Add(new PivotData(96, 77264, "Germany", "Mountain Bikes", "FY 2018", "Q1"));
             pivotDataList.Add(new PivotData(23, 24422, "Germany", "Road Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(67, 75448, "Germany", "Road Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(70, 52345, "Germany", "Road Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(13, 135612, "Germany", "Road Bikes", "FY 2015", "Q4"));
-            pivotDataList.Add(new PivotData(57, 90008, "Germany", "Road Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(29, 90496, "Germany", "Road Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(45, 301880, "Germany", "Road Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(77, 404168, "Germany", "Road Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(15, 137800, "Germany", "Road Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(37, 184168, "Germany", "Road Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(99, 829576, "Germany", "Road Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(80, 38360, "Germany", "Road Bikes", "FY 2017", "Q4"));
             pivotDataList.Add(new PivotData(91, 67824, "United States", "Mountain Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(81, 99904, "United States", "Mountain Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(70, 49360, "United States", "Mountain Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(65, 69600, "United States", "Mountain Bikes", "FY 2015", "Q4"));
-            pivotDataList.Add(new PivotData(57, 90008, "United States", "Mountain Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(29, 90496, "United States", "Mountain Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(45, 301880, "United States", "Mountain Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(77, 404168, "United States", "Mountain Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(15, 137800, "United States", "Mountain Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(37, 184168, "United States", "Mountain Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(49, 89576, "United States", "Mountain Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(40, 33360, "United States", "Mountain Bikes", "FY 2017", "Q4"));
-            pivotDataList.Add(new PivotData(96, 77264, "United States", "Mountain Bikes", "FY 2018", "Q1"));
             pivotDataList.Add(new PivotData(23, 24422, "United States", "Road Bikes", "FY 2015", "Q1"));
             pivotDataList.Add(new PivotData(67, 75448, "United States", "Road Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(70, 52345, "United States", "Road Bikes", "FY 2015", "Q3"));
-            pivotDataList.Add(new PivotData(13, 135612, "United States", "Road Bikes", "FY 2015", "Q4"));
-            pivotDataList.Add(new PivotData(57, 90008, "United States", "Road Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(29, 90496, "United States", "Road Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(45, 301880, "United States", "Road Bikes", "FY 2016", "Q3"));
-            pivotDataList.Add(new PivotData(77, 404168, "United States", "Road Bikes", "FY 2016", "Q4"));
-            pivotDataList.Add(new PivotData(15, 137800, "United States", "Road Bikes", "FY 2017", "Q1"));
-            pivotDataList.Add(new PivotData(37, 184168, "United States", "Road Bikes", "FY 2017", "Q2"));
-            pivotDataList.Add(new PivotData(99, 829576, "United States", "Road Bikes", "FY 2017", "Q3"));
-            pivotDataList.Add(new PivotData(80, 38360, "United States", "Road Bikes", "FY 2017", "Q4"));
         }
 
         return pivotDataList;
@@ -299,4 +260,4 @@ N> By default, the calculated fields created through code-behind are only added 
 
 ![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/aspnet-mvc-pivot-table-getting-started).

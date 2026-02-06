@@ -1,5 +1,3 @@
-@model List<PivotTableSample.Controllers.PivotData>
-
 @{var amount = "\"" + "Sum(Amount)" + "\"";}
 @{var sold = "\"" + "Sum(Sold)" + "\"";}
 @{ var totalPrice = amount + "+" + sold;}
