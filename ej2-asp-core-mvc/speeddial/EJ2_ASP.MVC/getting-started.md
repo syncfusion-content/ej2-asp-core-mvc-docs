@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC SpeedDial Control
 
-This section briefly explains about how to include [ASP.NET MVC SpeedDial] control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC SpeedDial](https://www.syncfusion.com/aspnet-mvc-ui-controls/speed-dial) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -96,7 +96,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeedD
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core SpeedDial control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeedDial control will be rendered in the default web browser.
 
 ![ASP.NET MVC SpeedDial Control](images/speeddial-component.png)
 

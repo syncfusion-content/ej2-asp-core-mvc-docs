@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Query Builder Control
 
-This section briefly explains about how to include [ASP.NET MVC Query Builder](https://www.syncfusion.com/aspnet-mvc-ui-controls/query-builder) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Query Builder](https://www.syncfusion.com/aspnet-mvc-ui-controls/query-builder) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -159,7 +159,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Render with rule
 
-The following example shows a basic Query Builder component with rule.
+The following example shows a basic Query Builder component with a rule.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

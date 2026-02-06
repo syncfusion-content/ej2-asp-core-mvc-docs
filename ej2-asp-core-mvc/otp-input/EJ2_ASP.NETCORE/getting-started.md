@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core OTP Input control
 
-This section briefly explains about how to include `ASP.NET Core OTP Input` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the `ASP.NET Core OTP Input` control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
