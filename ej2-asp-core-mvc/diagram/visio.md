@@ -50,13 +50,13 @@ During the import process:
 The following example imports a Visio (**.vsdx**) file by passing a **File** object to the `importFromVisio` method. The method returns a collection of warnings when certain Visio features are not fully supported during import.
 
 {% if page.publishingplatform == "aspnet-core" %}
-ej2-asp-core-mvc\code-snippet\diagram\visioimportexport\visioImport\visioImport.cs
+ej2-asp-core-mvc\code-snippet\diagram\visio\visioImport\visioImport.cs
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/visioimportexport/visioImport/tagHelper %}
+{% include code-snippet/diagram/visio/visioImport/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="visioImport.cs" %}
-{% include code-snippet/diagram/visioimportexport/visioImport/visioImport.cs %}
+{% include code-snippet/diagram/visio/visioImport/visioImport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,7 +64,7 @@ ej2-asp-core-mvc\code-snippet\diagram\visioimportexport\visioImport\visioImport.
 
 {% tabs %}
 {% highlight c# tabtitle="visioImport.cs" %}
-{% include code-snippet/diagram/visioimportexport/visioImport/visioImport.cs %}
+{% include code-snippet/diagram/visio/visioImport/visioImport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -153,10 +153,10 @@ The following example exports a Diagram to a Microsoft Visio (**.vsdx**) file us
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/diagram/visioimportexport/visioExport/tagHelper %}
+{% include code-snippet/diagram/visio/visioExport/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="visioExport.cs" %}
-{% include code-snippet/diagram/visioimportexport/visioExport/visioExport.cs %}
+{% include code-snippet/diagram/visio/visioExport/visioExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -164,7 +164,7 @@ The following example exports a Diagram to a Microsoft Visio (**.vsdx**) file us
 
 {% tabs %}
 {% highlight c# tabtitle="visioExport.cs" %}
-{% include code-snippet/diagram/visioimportexport/visioExport/visioExport.cs %}
+{% include code-snippet/diagram/visio/visioExport/visioExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
