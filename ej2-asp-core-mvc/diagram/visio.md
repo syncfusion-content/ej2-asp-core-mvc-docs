@@ -86,7 +86,7 @@ Import behavior can be customized using the `VisioImportOptions`object.
 
 ### Import lifecycle event
 
-The `diagramImporting` event is triggered during the Visio import process. This event provides information about the current import status, available pages, warnings or errors, and supports page selection or cancellation of the import operation.
+The [`diagramImporting`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.diagrams.diagram.html#Syncfusion_EJ2_Diagrams_Diagram_DiagramImporting) event is triggered during the Visio import process. This event provides information about the current import status, available pages, warnings or errors, and supports page selection or cancellation of the import operation.
 
 ```javascript
 diagramImporting: function(args) {
@@ -191,7 +191,7 @@ Export behavior can be controlled using the `VisioExportOptions` object.
 
 ### Export lifecycle event
 
-The `diagramExporting` event provides status updates, reports warnings or errors, and supports cancellation of the export operation.
+The [`diagramExporting`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.diagrams.diagram.html#Syncfusion_EJ2_Diagrams_Diagram_DiagramExporting) event provides status updates, reports warnings or errors, and supports cancellation of the export operation.
 
 ```javascript
   diagramExporting: function (args) {
