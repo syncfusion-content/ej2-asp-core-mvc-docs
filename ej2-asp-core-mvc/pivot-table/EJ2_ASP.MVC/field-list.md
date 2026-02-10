@@ -204,8 +204,6 @@ The field list provides a simple way to organize fields in different orders, mak
 
 > By default, fields are displayed in the default order as they appear in the data source.
 
-<!-- ![Field list with sorting options](images/fieldlist_default_sort.png) -->
-
 ### Sort fields in a desired order
 
 To display the fields in descending order by default whenever the Field List opens, you can set the `defaultFieldListOrder` property to **Descending** within the [Load](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event of the Pivot Table. This lets users immediately see fields sorted from Z to A when they open the Field List.
