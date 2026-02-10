@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Oracle Data Binding in MVC Pivotview component | Syncfusion"
+title: Oracle Data Binding in MVC Syncfusion Pivot Table Component
 description: "Learn how to bind data from a Oracle database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 platform: ej2-asp-core-mvc
 documentation: ug

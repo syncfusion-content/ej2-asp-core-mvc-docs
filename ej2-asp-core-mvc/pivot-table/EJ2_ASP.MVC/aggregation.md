@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aggregation in ##Platform_Name## Pivot Table Component
+title: Aggregation in ASP.NET MVC Pivot Table component | Syncfusion
 description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Aggregation

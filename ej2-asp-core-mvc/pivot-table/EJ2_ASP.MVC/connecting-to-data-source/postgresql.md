@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "PostgreSQL Data Binding in ASP.NET MVC Pivotview component | Syncfusion"
+title: "Data Binding in ASP.NET MVC Syncfusion Pivotview component"
 platform: ej2-asp-core-mvc
 description: "Learn how to bind data from a PostgreSQL database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 documentation: ug

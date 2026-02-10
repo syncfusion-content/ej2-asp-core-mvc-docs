@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Css Customization in ##Platform_Name## Pivot Table Component
+title: Css Customization in ASP.NET MVC Syncfusion Pivot Table
 description: Learn here all about Css Customization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Css Customization
@@ -55,7 +55,6 @@ The CSS selectors target the following Pivot Table elements:
 
 The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
 
-{% tabs %}
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Field List in ##Platform_Name## Syncfusion Pivot Table Component
+title: FieldList in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Field List in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Field List
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Field List in ##Platform_Name## Pivot Table Component
+# PivotFieldList in ##Platform_Name## Pivot Table Component
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 
@@ -52,9 +52,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/gs_fieldlist_icon.png "Field list icon at the top left of the pivot table component")
+![output](images/gs_fieldlist_icon.png)
 <br/>
-![output](images/gs_fieldlist_dialog.png "Field list dialog for user interaction")
+![output](images/gs_fieldlist_dialog.png)
 
 
 ## Stand-alone Field List (Fixed)
@@ -88,7 +88,7 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 
 
-![output](images/staticfieldlist.png "Static FieldList")
+![output](images/staticfieldlist.png)
 
 ## Invoking dynamic Field List (Customized)
 
@@ -125,7 +125,7 @@ The sample code below shows how to open the Field List dialog using an external 
 
 
 
-![output](images/fieldlist-custom.png "FieldList in Button")
+![output](images/fieldlist-custom.png)
 
 
 ## Search desired field
@@ -136,7 +136,7 @@ You can enable the field search option in two different Field List configuration
 
 **Stand-alone Field List**
 
-To enable the search box in the stand-alone Field List UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html/).
+To enable the search box in the stand-alone Field List UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
 
 > By default, the field search option is disabled in the Field List UI.
 
@@ -165,7 +165,7 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 
 
-![output](images/Search desired field in static field list.png "Searching Static FieldList")
+![output](images/Search desired field in static field list.png)
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -196,7 +196,7 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 
 
-![output](images/Search desired field in popup field list.png "Searching Popup FieldList")
+![output](images/Search desired field in popup field list.png)
 
 ## Option to sort fields
 

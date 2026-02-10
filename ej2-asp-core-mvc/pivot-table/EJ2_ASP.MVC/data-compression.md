@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Compression in ##Platform_Name## Pivot Table component | Syncfusion
+title: Data Compression in ##Platform_Name## Syncfusion Pivot Table
 description: Learn here all about data compression in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Compression
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Data Compression in ##Platform_Name## Pivot Table component
+# Data Compression in ##Platform_Name## PivotView component
 
 > This property is applicable only for the relational data source.
 

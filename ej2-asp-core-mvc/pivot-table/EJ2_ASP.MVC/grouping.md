@@ -79,7 +79,7 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 
 
-![output](./images/number-group-option.png "Context-menu options for number grouping")
+![output](./images/number-group-option.png)
 
 
 ### Range selection

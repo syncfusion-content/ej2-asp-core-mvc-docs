@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Syncfusion Pivot Table Component
+title: Data Binding in ASP.NET MVC Syncfusion Pivot Table
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding in ##Platform_Name## Pivot Table Component
+# Data Binding in ##Platform_Name## PivotView Component
 
 ## JSON
 
@@ -41,7 +41,7 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 {% endtabs %}
 {% endif %}
 
-You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) instance containing JSON data to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) is optional for local JSON data binding.
+You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) instance containing JSON data to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) is optional for local JSON data binding.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -242,7 +242,7 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 Remote data binding allows you to connect your Pivot Table component to data sources that are hosted on remote servers, enabling you to work with data from web services, databases, and other external sources.
 
-To bind remote data, specify the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) along with the appropriate `adaptor`. By default, `DataManager` uses `ODataAdaptor` for remote data binding.
+To bind remote data, specify the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) along with the appropriate `adaptor`. By default, `DataManager` uses `ODataAdaptor` for remote data binding.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -269,7 +269,7 @@ To bind remote data, specify the endpoint `url` within [`DataManager`](https://e
 
 ### Binding with OData services
 
-OData (Open Data Protocol) is a web-based protocol that provides a standard way to create and consume data APIs. You can easily connect your Pivot Table to OData services using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/), which handles the communication and data retrieval automatically.
+OData (Open Data Protocol) is a web-based protocol that provides a standard way to create and consume data APIs. You can easily connect your Pivot Table to OData services using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager), which handles the communication and data retrieval automatically.
 
 The following example demonstrates how to bind the Pivot Table to an OData service:
 
@@ -298,9 +298,7 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 ### Binding with OData V4 services
 
-OData V4 services provide enhanced query capabilities and improved performance for data retrieval operations. The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) can retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the `ODataV4Adaptor`.
-
-{% if page.publishingplatform == "aspnet-core" %}
+OData V4 services provide enhanced query capabilities and improved performance for data retrieval operations. The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) can retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the `ODataV4Adaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -354,9 +352,9 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 ### Querying in Data Manager
 
-By default, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance.
+By default, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance.
 
-The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
+The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

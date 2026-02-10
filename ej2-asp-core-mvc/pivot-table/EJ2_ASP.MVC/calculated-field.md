@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calculated Field in ##Platform_Name## Syncfusion Pivot Table Component
+title: Calculated Field in  ASP.NET MVC Syncfusion Pivot Table
 description: Learn here all about Calculated Field in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calculated Field
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calculated Field in ##Platform_Name## Pivot Table Component
+# CalculatedField in ##Platform_Name## Pivot Table Component
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
@@ -173,7 +173,7 @@ To reuse an existing formula:
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/number-formatting/).
+To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/number-formatting).
 
 ### Formatting through the user interface
 

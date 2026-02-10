@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Pivot Table Component
+title: Filtering in ##Platform_Name## SyncfusionPivot Table Component
 description: Learn here all about Filtering in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering
@@ -531,22 +531,28 @@ The event includes the following parameters:
 
 For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MemberFiltering) event to block the filter action by setting `args.cancel` parameter to **true**. This is shown below:
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
-{% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs105/app/App.jsx %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/filtering/member-filtering-event/tagHelper %}
 {% endhighlight %}
-{% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs105/app/App.tsx %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs105/app/datasource.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs105/app/datasource.tsx %}
+{% highlight c# tabtitle="Filtering.cs" %}
+{% include code-snippet/pivot-table/filtering/member-filtering-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs105" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/filtering/member-filtering-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Filtering.cs" %}
+{% include code-snippet/pivot-table/filtering/member-filtering-event/Filtering.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ### MemberEditorOpen
 

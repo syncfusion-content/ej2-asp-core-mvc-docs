@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "MongoDB Data Binding in ASP.NET MVC Pivotview component | Syncfusion"
+title: MongoDB Data Binding in ASP.NET MVC Syncfusion Pivot Table
 description: "Learn how to bind data from a MongoDB Database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 platform: ej2-asp-core-mvc
 documentation: ug

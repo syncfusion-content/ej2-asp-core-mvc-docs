@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classic layout in ##Platform_Name## Syncfusion Pivot Table Component
+title: Classic layout in ASP.NET MVC Pivotview component | Syncfusion
 description: Learn here all about Classic layout in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Classic Layout
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Classic Layout in ##Platform_Name## Pivot Table Component
+# Classic Layout in ASP.NET MVC Syncfusion Pivot Table Component
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 

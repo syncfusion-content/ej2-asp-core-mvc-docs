@@ -417,11 +417,11 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/aggregation_gb_icon.png "Icon to change aggregation type")
+![output](images/aggregation_gb_icon.png)
 <br/>
 <br/>
 <br/>
-![output](images/aggregation_gb_menu.png "List of pre-defined aggregation types")
+![output](images/aggregation_gb_menu.png)
 
 ## Show or hide specific dropdown icon
 

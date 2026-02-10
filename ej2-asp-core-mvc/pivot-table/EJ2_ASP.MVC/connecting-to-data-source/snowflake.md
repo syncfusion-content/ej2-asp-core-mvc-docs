@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Snowflake Data Binding in ASP.NET MVC Pivotview component | Syncfusion"
+title: "Data Binding in ASP.NET MVC Syncfusion Pivotview component"
 description: "Learn how to bind data from a Snowflake database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
 platform: ej2-asp-core-mvc
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 This section describes how to retrieve data from a Snowflake database using [Snowflake Data](https://www.nuget.org/packages/Snowflake.Data/#readme-body-tab) and bind it to the Pivot Table via a Web API controller.
 
-# Creating a Web API Service to Fetch Snowflake Data
+## Creating a Web API Service to Fetch Snowflake Data
 
 Follow these steps to create a Web API service that retrieves data from a Snowflake database and prepares it for the Pivot Table.
 

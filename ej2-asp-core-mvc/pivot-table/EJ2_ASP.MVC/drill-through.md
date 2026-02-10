@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill Through in ##Platform_Name## Pivot Table Component
+title: Drill Through in ##Platform_Name## Syncfusion Pivot Table
 description: Learn here all about Drill Through in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drill Through
@@ -119,18 +119,18 @@ The [`MaxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ### DrillThrough
 
-The [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#drillthrough) event is triggered immediately after a user double-clicks a value cell in the Pivot Table. This event allows users to customize the columns displayed in the drill-through popup's data grid. It is specifically designed to help users view and process the raw data behind an aggregated value in a value cell. The event includes the following parameters:
+The [`drillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event is triggered immediately after a user double-clicks a value cell in the Pivot Table. This event allows users to customize the columns displayed in the drill-through popup's data grid. It is specifically designed to help users view and process the raw data behind an aggregated value in a value cell. The event includes the following parameters:
 
-- [`columnHeaders`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#columnheaders): Contains the column header of the clicked cell.
-- [`currentCell`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#currentcell): Contains details about the clicked cell.
-- [`currentTarget`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#currenttarget): Contains the HTML element of the clicked cell.
-- [`gridColumns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#gridcolumns): Specifies the data grid columns to be displayed in the drill-through popup.
-- [`rawData`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#rawdata): Contains the raw, unaggregated data for the clicked cell.
-- [`rowHeaders`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#rowheaders): Contains the row header of the clicked cell.
-- [`value`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#value): Contains the value of the clicked cell.
-- [`cancel`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillThroughEventArgs/#cancel): It is a boolean property and by setting this to **true**, dialog won’t be created.
+- `columnHeaders`: Contains the column header of the clicked cell.
+- `currentCell`: Contains details about the clicked cell.
+- `currentTarget`: Contains the HTML element of the clicked cell.
+- `gridColumns`: Specifies the data grid columns to be displayed in the drill-through popup.
+- `rawData`: Contains the raw, unaggregated data for the clicked cell.
+- `rowHeaders`: Contains the row header of the clicked cell.
+- `value`: Contains the value of the clicked cell.
+- `cancel`: It is a boolean property and by setting this to **true**, dialog won’t be created.
 
-Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#drillthrough) event in a Pivot Table:
+Below is an example of using the [`drillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event in a Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -157,14 +157,14 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/rea
 
 ### BeginDrillThrough
 
-The event [`beginDrillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#begindrillthrough) triggers after a double-click on a value cell in the Pivot Table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as `sorting`, `grouping`, and `filtering` within the data grid according to their specific needs. The event includes the following parameters:
+The event [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) triggers after a double-click on a value cell in the Pivot Table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as `sorting`, `grouping`, and `filtering` within the data grid according to their specific needs. The event includes the following parameters:
 
 * `gridObj` - It holds the data grid instance to be rendered inside the drill-through popup.
-* [`cellInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/beginDrillThroughEventArgs/#cellinfo) - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
+* `cellInfo` - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
 
-The following example demonstrates how to enable `sorting`, `filtering`, and `grouping` in the data grid displayed within the drill-through popup. This is achieved by configuring the `gridObj` in the [`beginDrillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#begindrillthrough) event.
+The following example demonstrates how to enable `sorting`, `filtering`, and `grouping` in the data grid displayed within the drill-through popup. This is achieved by configuring the `gridObj` in the [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event.
 
-> [Grid](https://ej2.syncfusion.com/react/documentation/grid/getting-started) features are segregated into individual feature-wise modules. For example, to use `sorting` feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
+> `Grid` features are segregated into individual feature-wise modules. For example, to use `sorting` feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
