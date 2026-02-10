@@ -9,33 +9,33 @@ documentation: ug
 ---
 
 
-# Toolbar in ##Platform_Name## Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table Control
+# Tool bar in ##Platform_Name## Pivot Table component
 
-Toolbar option allows to access the frequently used features like switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc... with ease at runtime. This option can be enabled by setting the [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. The [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class accepts the collection of built-in toolbar options.
+The toolbar in the ASP.NET MVC Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property to **true**. Additionally, the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 
-## Built-in Toolbar Options
+> To use the toolbar, inject the `Toolbar` module into the Pivot Table.
 
-The following table shows built-in toolbar options and its actions.
+The following table lists the built-in toolbar options and their actions:
 
 | Built-in Toolbar Options | Actions |
-|------------------------|---------|
+|--------------------------|---------|
 | New | Creates a new report |
 | Save | Saves the current report |
-| Save As | Save as current report |
-| Rename | Renames the current report |
-| Delete | Deletes the current report |
-| Load | Loads any report from the report list |
-| Grid | Shows pivot table |
-| Chart | Shows a chart in any type from the built-in list and option to enable/disable multiple axes |
-| Exporting | Exports the pivot table as PDF/Excel/CSV and the pivot chart as PDF and image |
-| Sub-total | Shows or hides sub totals |
-| Grand Total | Shows or hides grand totals |
-| Conditional Formatting | Shows the conditional formatting pop-up to apply formatting |
-| Number Formatting | Shows the number formatting pop-up to apply number formatting |
-| Field List | Shows the fieldlist pop-up |
-| MDX | Shows the MDX query that was run to retrieve data from the OLAP data source. **This applies only to the OLAP data source.** |
+| Save As | Saves the current report with a new name |
+| Rename | Changes the name of the current report |
+| Delete | Removes the current report |
+| Load | Opens a report from the report list |
+| Grid | Displays the pivot table |
+| Chart | Shows a pivot chart with options to select different chart types and enable or disable multiple axes |
+| Exporting | Exports the pivot table as PDF, Excel, or CSV, or the pivot chart as a PDF or image |
+| Sub-total | Shows or hides subtotals in the pivot table |
+| Grand Total | Shows or hides grand totals in the pivot table |
+| Conditional Formatting | Opens a pop-up to apply formatting to cells based on conditions |
+| Number Formatting | Opens a pop-up to apply number formatting to cells |
+| Field List | Opens the field list pop-up to configure the |
+| MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
 
-N> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
+> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -66,7 +66,11 @@ N> The order of toolbar options can be changed by simply moving the position of 
 
 ## Show desired chart types in the dropdown menu
 
-By default, all chart types are displayed in the dropdown menu included in the toolbar. However, based on the request for an application, we may need to show selective chart types on our own. This can be achieved using the [`ChartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property. To know more about supporting chart types, [`click here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#chart-types).
+By default, the dropdown menu in the toolbar displays all available chart types. However, you may want to show only specific chart types in the dropdown menu based on your application’s needs. To do this, use the [`ChartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property. This property allows you to define a list of chart types that will appear in the dropdown menu, ensuring users see only the options you select.
+
+For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`ChartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
+
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#chart-types).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -97,28 +101,25 @@ By default, all chart types are displayed in the dropdown menu included in the t
 
 ## Switch the chart to multiple axes
 
-In the chart, the user can switch from single axis to multiple axes with the help of the built-in checkbox available inside the chart type dropdown menu in the toolbar. For more information [`refer here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#multiple-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#multiple-axis).
 
-![output](images/chart-option.png)
+![Switching to multiple axes](images/chart-option.png)
 
-<!-- markdownlint-disable MD009 -->
+The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
-There are three modes available in **Multiple Axis** option: `Stacked`, `Single` and `Combined`. The modes can be changed using “Multiple Axis Mode” drop-down list which appears while clicking the **More...** option.
-
-![output](images/multiple-axis-mode.png)
+![Multiple axis mode options](images/multiple-axis-mode.png)
 
 ## Show or hide legend
 
-In the chart, legend can be shown or hidden dynamically with the help of the built-in option available in the chart type drop-down menu.
-N> By default, the legend is not be visible for the accumulation chart types like pie, doughnut, pyramid, and funnel. Users can enable or disable using the built-in checkbox option.
+In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
 ![output](images/accumulation-legend.png)
 
 ## Adding custom option to the toolbar
 
-In addition to the existing built-in toolbar items, new toolbar item(s) may also be included. This can be achieved by using the [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event. The action of the new toolbar item(s) can also be defined within this event.
+You can add new items to the toolbar in the ASP.NET MVC Pivot Table component beyond the built-in options. This is done using the [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. Additionally, you can place the new item at a specific position in the toolbar using the `splice` method.
 
-N> The new toolbar item(s) can be added to the desired position in the toolbar using the `splice` option.
+Here’s an example of how to add a custom toolbar item:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,12 +148,11 @@ N> The new toolbar item(s) can be added to the desired position in the toolbar u
 
 ![output](images/add-custom-toolbar.png)
 
-In the above topic, we have seen how to add an icon as one of the toolbar item in toolbar panel. In the next topic, we are going to see how to frame the entire toolbar panel and how to add a custom control in it.
-
 ### Toolbar Template
 
-It allows to customize the toolbar panel by using template option. It allows any custom control to be used as one of the toolbar item inside the toolbar panel. It can be achieved by two ways.
-Here, the entire toolbar panel can be framed in HTML elements that are appended at the top of the pivot table. The **id** of the HTML element needs to be set in the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property in-order to map it to the pivot table.
+You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property.
+
+Below is an example of a custom toolbar with buttons to expand or collapse all rows in the Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -181,7 +181,7 @@ Here, the entire toolbar panel can be framed in HTML elements that are appended 
 
 ![output](images/tool-temp.png)
 
-Another option allows to frame a custom toolbar item using HTML elements and include in the toolbar panel at the desired position. The custom toolbar items can be declared as control **instance** or element **id** in the [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in pivot table. 
+Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in the pivot table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -210,13 +210,15 @@ Another option allows to frame a custom toolbar item using HTML elements and inc
 
 ![output](images/tool-temp-rtl.png)
 
-N> For both options, the actions for the toolbar template items can be defined in the event [`toolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick). Also, if the toolbar item is a custom control then its built-in events can also be accessed.
-
-<!-- markdownlint-disable MD009 -->
+> Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
 ## Save and load report as a JSON file
 
-The current pivot report can be saved as a JSON file in the desired path and loaded back to the pivot table at any time. 
+You can save the current Pivot Table report as a JSON file and load it back into the Pivot Table whenever needed. This allows you to store your report settings, such as row, column, and value configurations, and reuse them later.
+
+To save a report, use the `getPersistData` method to retrieve the current Pivot Table settings. These settings are then converted to a JSON file and downloaded to your chosen location. To load a report, select a JSON file containing the saved settings, and the Pivot Table will update to reflect those settings using the `dataSourceSettings` property.
+
+The following code example shows how to save and load a Pivot Table report as a JSON file. By clicking an external "Save" button, the `saveData` method is triggered to save the current report settings as a JSON file. Similarly, clicking an external "Load" button triggers the `readBlob` method to load a JSON file and restore the report settings.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -241,11 +243,9 @@ The current pivot report can be saved as a JSON file in the desired path and loa
 {% endtabs %}
 {% endif %}
 
-
-
 ## Save and load reports to a SQL database
 
-SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and an ASP.NET MVC Pivot Table at runtime.
+SQL Server is a relational database management system (RDBMS) that can be used to store and manage large amounts of data. In this topic, we will see how to save, save as, rename, load, delete, and add reports between a SQL Server database and a ASP.NET MVC Pivot Table at runtime.
 
 ### Create a Web API service to connect to a SQL Server database
 
@@ -439,13 +439,14 @@ namespace MyWebService.Controllers
 
 ```
 
+
 **5.** When you run the app, it will be hosted at `https://localhost:44313`. You can use the hosted URL to save and load reports in the SQL database from the Pivot Table.
 
 Further, let us explore more on how to save, load, rename, delete, and add reports using the built-in toolbar options via Web API controller (aka, PivotController) one-by-one.
 
 #### Saving a report
 
-When you select the **"Save a report"** option from the toolbar, the [saveReport](#savereport) event is triggered. In this event, an AJAX request is made to the Web API controller's **SaveReport** method, passing the name of the current report and the current report, which you can use to check and save in the SQL database.
+When you select the **"Save a report"** option from the toolbar, the [saveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event is triggered. In this event, an AJAX request is made to the Web API controller's **SaveReport** method, passing the name of the current report and the current report, which you can use to check and save in the SQL database.
 
 For example, the report shown in the following code snippet will be passed to the **SaveReport** method along with the report name **"Sample Report"** and saved in the SQL database.
 
@@ -553,13 +554,13 @@ namespace MyWebApp.Controllers
 
 ![The current report has been saved in the SQL database](images/output_save_report.png)
 
-In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [saveReport](#savereport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
+In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [saveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
 
 ![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
 
 #### Loading a report
 
-When you select the dropdown menu item from the toolbar, the [loadReport](#loadreport) event is triggered. In this event, an AJAX request is made to the **LoadReport** method of the Web API controller, passing the name of the selected report. The method uses this information to search for the report in the SQL database, fetch it, and load it into the pivot table.
+When you select the dropdown menu item from the toolbar, the [loadReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_LoadReport) event is triggered. In this event, an AJAX request is made to the **LoadReport** method of the Web API controller, passing the name of the selected report. The method uses this information to search for the report in the SQL database, fetch it, and load it into the pivot table.
 
 For example, if the report name **"Sample Report 1"** is selected from a dropdown menu and passed, the **LoadReport** method will use that name to search for the report in the SQL database, retrieve it, and then load it into the pivot table.
 
@@ -670,7 +671,7 @@ namespace MyWebApp.Controllers
 
 #### Renaming a report
 
-When you select the **"Rename a current report"** option from the toolbar, the [renameReport](#renamereport) event is triggered. In this event, an AJAX request is made to the **RenameReport** method of the Web API controller, passing the current and new report names, where you can use the current report name to identify the report and resave it with the new report name in the SQL database.
+When you select the **"Rename a current report"** option from the toolbar, the [renameReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RenameReport) event is triggered. In this event, an AJAX request is made to the **RenameReport** method of the Web API controller, passing the current and new report names, where you can use the current report name to identify the report and resave it with the new report name in the SQL database.
 
 For example, if we rename the current report from **"Sample Report 1"** to **"Sample Report 2"**, both **"Sample Report 1"** and **"Sample Report 2"** will be passed to the **RenameReport** method, which will rename the current report with the new report name **"Sample Report 2"** in the SQL database.
 
@@ -789,13 +790,11 @@ namespace MyWebApp.Controllers
     }
 }
 
-```
-
 ![Renaming a report in the SQL database](images/output_rename_report.png)
 
 #### Deleting a report
 
-When you select the **"Delete a current report"** option from the toolbar, the [removeReport](#removereport) event is triggered. In this event, an AJAX request is made to the **RemoveReport** method of the Web API controller, passing the current report name to identify and delete the appropriate report from the SQL database.
+When you select the **"Delete a current report"** option from the toolbar, the [removeReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) event is triggered. In this event, an AJAX request is made to the **RemoveReport** method of the Web API controller, passing the current report name to identify and delete the appropriate report from the SQL database.
 
 N> * If the current report **n** from the pivot table is deleted, the pivot table will automatically load the last report from the report list.
 N> * When a report is removed from a pivot table with only one report, the SQL database refreshes; however, the pivot table will continue to show the removed report until a new report is added to the pivot table.
@@ -903,7 +902,7 @@ namespace MyWebApp.Controllers
 
 #### Adding a report
 
-When you select the **"Create a new report"** option from the toolbar, the [newReport](#newreport) event is triggered, followed by the [saveReport](#savereport) event. To save this new report to the SQL database, use the [saveReport](#savereport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
+When you select the **"Create a new report"** option from the toolbar, the [newReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NewReport) event is triggered, followed by the [saveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event. To save this new report to the SQL database, use the [saveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
 ![Adding a report in the SQL database](images/output_new_report.png)
 
@@ -921,27 +920,27 @@ Below points need to be considered when saving the report to SQL Server database
 
 ### FetchReport
 
-The event [`FetchReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when dropdown list is clicked in the toolbar in-order to retrieve and populate saved reports. It has following parameter - `ReportName`. This event allows user to fetch the report names from local storage and populate the dropdown list.
+The [`fetchReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FetchReport) event is triggered when a user clicks the dropdown list in the toolbar to retrieve saved reports. It includes the `reportName` parameter, which holds the name of the selected report. This event allows users to fetch report names from local storage and populate the dropdown list for easy selection.
 
 ### LoadReport
 
-The event [`LoadReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when a report is selected from the dropdown list in the toolbar. It has following parameters - `Report` and `ReportName`. This event allows user to load the selected report to the pivot table.
+The [`loadReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_LoadReport) event occurs when a user selects a report from the dropdown list in the toolbar of the Pivot Table. This event allows the user to load the chosen report into the Pivot Table for viewing or analysis. It includes two parameters: `report`, which contains the details of the selected report, and `reportName`, which specifies the name of the report. These parameters allow the user to load the selected report into the Pivot Table, updating the displayed data based on the chosen report.
 
 ### NewReport
 
-The event [`NewReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when the new report icon is clicked in the toolbar. It has following parameter - `Report`. This event allows user to create new report and add to the report list.
+The [`newReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NewReport) event is triggered when a user clicks the **New Report** icon in the toolbar. This event allows the user to create a new report and add it to the report list. The event provides a parameter, `report`, which contains details about the new report. By using this event, users can easily start fresh with a new set of data configurations in the Pivot Table, managed through the `dataSourceSettings` property.
 
 ### RenameReport
 
-The event [`RenameReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when rename report icon is clicked in the toolbar. It has following parameters  - `Rename`, `Report` and `ReportName`. This event allows user to rename the selected report from the report list.
+The [`renameReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RenameReport) event is triggered when a user clicks the rename report icon in the toolbar. This event allows users to change the name of a selected report from the report list. It includes the following parameters: `rename`, which holds the new report name entered by the user; `report`, which contains the details of the current report; and `reportName`, which stores the original name of the report.
 
 ### RemoveReport
 
-The event [`RemoveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when remove report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to remove the selected report from the report list.
+The [`removeReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) event is triggered when a user clicks the remove report icon in the toolbar. It includes two parameters: `report` and `reportName`. These parameters allow the user to identify and remove a selected report from the report list in the Pivot Table.
 
 ### SaveReport
 
-The event [`SaveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_RemoveReport) is triggered when save report icon is clicked in the toolbar. It has following parameters  - `Report` and `ReportName`. This event allows user to save the altered report to the report list.
+The [`saveReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event triggers when a user clicks the save report icon in the toolbar. It allows the user to save changes made to the current report. The event includes two parameters: `report`, which contains the report details, and `reportName`, which specifies the name of the saved report.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -970,11 +969,9 @@ The event [`SaveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 ![output](images/toolbar.png)
 
-<!-- markdownlint-disable MD009 -->
+### ToolbarRender
 
-### ToolbarRender 
-
-The [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event is triggered when the toolbar is rendered. It has the `customToolbar` parameter. This event helps to customize the built-in toolbar items and to [`include new toolbar item(s)`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/tool-bar/#adding-custom-option-to-the-toolbar).
+The [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/tool-bar#adding-custom-option-to-the-toolbar).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1003,11 +1000,11 @@ The [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 ![output](images/toolbar-customize-inbuilt.png)
 
-### Before Export
+### BeforeExport
 
-The pivot table (or) pivot chart can be exported as a pdf, excel, csv etc., document using the toolbar options. And, you can customize the export settings for exporting document by using the [`BeforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event in the toolbar.
+The Pivot Table component allows users to export data as PDF, Excel, or CSV files using the toolbar options. The [`beforeExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the `header` and `footer` properties in the `pdfExportProperties` object within this event. Similarly, for Excel exports, users can define headers using the `excelExportProperties` object.
 
-For example, you can add the header and footer for the pdf document by setting the `header` and `footer` properties for the `pdfExportProperties` in the [`BeforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
+Here’s an example of how to use the `beforeExport` event to customize headers and footers for both PDF and Excel exports:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1038,32 +1035,31 @@ For example, you can add the header and footer for the pdf document by setting t
 
 ### ActionBegin
 
-The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when the UI actions such as switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc. that are present in toolbar UI begin. This allows user to identify the current action being performed at runtime. It has the following parameters:
+The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event triggers when a user starts an action in the toolbar, such as switching between the pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data. This event helps users identify the action being performed and provides options to control it. It includes the following parameters:
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+* `dataSourceSettings`: Contains the current report settings of the pivot table, including the data source, rows, columns, values, filters, and format settings.
+* `actionName`: Indicates the name of the action being performed. Below is a list of toolbar actions and their corresponding names:
 
-* `actionName`: It holds the name of the current action began. The following are the UI actions and their names:
+   | Action | Action Name |
+   |------|-------------|
+   | New report | Add new report |
+   | Save report | Save current report |
+   | Save as report | Save as current report |
+   | Rename report | Rename current report |
+   | Remove report | Remove current report |
+   | Report change | Report change |
+   | Conditional Formatting | Open conditional formatting dialog |
+   | Number Formatting | Open number formatting dialog |
+   | Export menu | PDF export, Excel export, CSV export |
+   | Show Fieldlist | Open field list |
+   | Show Table | Show table view |
+   | Chart menu | Show chart view |
+   | Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
+   | Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
 
-| Action | Action Name | 
-|------|-------------|
-| New report | Add new report |
-| Save report | Save current report |
-| Save as report | Save as current report |
-| Rename report | Rename current report |
-| Remove report | Remove current report |
-| Report change | Report change |
-| Conditional Formatting | Open conditional formatting dialog |
-| Number Formatting | Open number formatting dialog |
-| Export menu | PDF export, Excel export, CSV export |
-| Show Fieldlist | Open field list |
-| Show Table | Show table view |
-| Chart menu | Show chart view |
-| Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
-| Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
+* `cancel`: Allows users to stop the current action by setting this option to **true**.
 
-* `cancel`: It allows user to restrict the current action.
-
-In the below sample, toolbar UI actions such as add new report and save current report can be restricted by setting the **args.cancel** option to **true** in the `actionBegin` event.
+In the example below, the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event is used to prevent the "Add new report" and "Save current report" actions by setting `args.cancel` to **true**. This stops these specific toolbar actions from proceeding. The code demonstrates how to control toolbar interactions effectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1088,33 +1084,30 @@ In the below sample, toolbar UI actions such as add new report and save current 
 {% endtabs %}
 {% endif %}
 
-
-
 ### ActionComplete
 
-The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) triggers when the UI actions such as as switching between pivot table and pivot chart, changing chart types, conditional formatting, exporting, etc. that are present in toolbar UI, is completed. This allows user to identify the current UI actions being completed at runtime. It has the following parameters:
+The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers after a toolbar action, such as switching between a pivot table and pivot chart, changing chart types, applying conditional formatting, or exporting data, is completed. This event helps users track the completion of these actions at runtime. It includes the following parameters:
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+- `dataSourceSettings`: Contains the current data source settings, including the input data, rows, columns, values, filters, and format settings.
+- `actionName`: Indicates the name of the completed action. The table below lists the toolbar actions and their corresponding names:
 
-* `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
+   | Action | Action Name |
+   |------|-------------|
+   | New report | New report added |
+   | Save report | Report saved |
+   | Save as report | Report re-saved |
+   | Rename report | Report renamed |
+   | Remove report | Report removed |
+   | Report change | Report changed |
+   | Conditional Formatting | Conditionally formatted |
+   | Number Formatting | Number formatted |
+   | Export menu | PDF exported, Excel exported, CSV exported |
+   | Show Fieldlist | Field list closed |
+   | Show Table | Table view shown |
+   | Sub-totals menu | Sub-totals hidden, Row sub-totals shown, Column sub-totals shown, Sub-totals shown |
+   | Grand totals menu | Grand totals hidden, Row grand totals shown, Column grand totals shown, Grand totals shown |
 
-| Action | Action Name | 
-|------|-------------|
-| New report | New report added |
-| Save report | Report saved |
-| Save as report | Report re-saved |
-| Rename report | Report renamed |
-| Remove report | Report removed |
-| Report change | Report changed |
-| Conditional Formatting | Conditionally formatted |
-| Number Formatting | Number formatted |
-| Export menu | PDF exported, Excel exported, CSV exported  |
-| Show Fieldlist | Field list closed |
-| Show Table | Table view shown |
-| Sub-totals menu | Sub-totals hidden, Row sub-totals shown, Column sub-totals shown, Sub-totals shown |
-| Grand totals menu | Grant totals hidden, Row grand totals shown, Column grand totals shown, Grand totals shown |
-
-* `actionInfo`: It holds the unique information about the current UI action. For example, while adding new report, the event argument contains information such as report name and the action name.
+- `actionInfo`: Provides specific details about the completed action, such as the report name when adding a new report.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1139,32 +1132,30 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 {% endtabs %}
 {% endif %}
 
-
-
 ### ActionFailure
 
-The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) triggers when the current UI action fails to achieve the desired result. It has the following parameters:
+The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event occurs when a user action in the Pivot Table does not complete as expected. This event helps users understand what went wrong during interactions with the grouping bar.
 
-* `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
+- `actionName`: Identifies which user action did not succeed. The table below lists the actions and their corresponding names:
 
-| Action | Action Name | 
-|------|-------------|
-| New report | Add new report |
-| Save report | Save current report |
-| Save as report | Save as current report |
-| Rename report | Rename current report |
-| Remove report | Remove current report |
-| Report change | Report change |
-| Conditional Formatting | Open conditional formatting dialog |
-| Number Formatting | Open number formatting dialog |
-| Export menu | PDF export, Excel export, CSV export |
-| Show Fieldlist | Open field list |
-| Show Table | Show table view |
-| Chart menu | Show chart view |
-| Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
-| Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
+   | Action | Action Name |
+   |------|-------------|
+   | New report | Add new report |
+   | Save report | Save current report |
+   | Save as report | Save as current report |
+   | Rename report | Rename current report |
+   | Remove report | Remove current report |
+   | Report change | Report change |
+   | Conditional Formatting | Open conditional formatting dialog |
+   | Number Formatting | Open number formatting dialog |
+   | Export menu | PDF export, Excel export, CSV export |
+   | Show Fieldlist | Open field list |
+   | Show Table | Show table view |
+   | Chart menu | Show chart view |
+   | Sub-totals menu | Hide sub-totals, Show row sub-totals, Show column sub-totals, Show sub-totals |
+   | Grand totals menu | Hide grand totals, Show row grand totals, Show column grand totals, Show grand totals |
 
-* `errorInfo`: It holds the error information of the current UI action.
+- `errorInfo`: Provides details about the error that occurred for the specific user action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -1188,4 +1179,3 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
