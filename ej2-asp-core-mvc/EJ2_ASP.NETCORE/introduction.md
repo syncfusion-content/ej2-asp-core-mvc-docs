@@ -462,7 +462,7 @@ padding-top: 20px;
         <div><p class="control-category-topics">DATA VISUALIZATION</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started"><span class="sf-home-icon sf-icon-charts"></span>Charts</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/3d-chart/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Chart</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-chart-3d/getting-started">3D Circular Chart</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-chart-3d/getting-started"><span class="sf-home-icon sf-icon-3dchart"></span>3D Circular Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started"><span class="sf-home-icon sf-icon-stockchart"></span>Stock Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started"><span class="sf-home-icon sf-icon-circulargauge"></span>Circular Gauge</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started"><span class="sf-home-icon sf-icon-lineargauge"></span>Linear Gauge</a></div>
