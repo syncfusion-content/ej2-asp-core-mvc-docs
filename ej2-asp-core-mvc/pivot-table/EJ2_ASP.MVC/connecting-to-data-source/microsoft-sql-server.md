@@ -108,7 +108,7 @@ namespace PivotController.Controllers
 1. Access the Web API endpoint at `https://localhost:7139/pivot` to view the JSON data retrieved from the SQL Server database.
 2. The browser will display the JSON data, as shown below, ready to be used by the Pivot Table.
 
-![Hosted Web API URL](../images/code-web-app.jpeg)
+![Hosted Web API URL](../images/code-web-app.png)
 
 ## Connecting the Pivot Table to the Hosted Web API URL
 

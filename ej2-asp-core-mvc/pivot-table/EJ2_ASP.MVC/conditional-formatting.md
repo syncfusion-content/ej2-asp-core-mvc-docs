@@ -44,16 +44,16 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/toolbar_cformatting.png "Conditional formatting icon in toolbar")
+![output](images/toolbar_cformatting.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog.png "Adding new conditional format")
+![output](images/toolbar_cformatting_dialog.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog_apply.png "Setting conditional format criteria")
+![output](images/toolbar_cformatting_dialog_apply.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_grid.png "Resultant pivot table on applied conditional format")
+![output](images/toolbar_cformatting_grid.png)
 
 ## Configure conditional formatting through code-behind
 

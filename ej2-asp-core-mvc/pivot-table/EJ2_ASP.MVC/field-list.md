@@ -204,7 +204,7 @@ The field list provides a simple way to organize fields in different orders, mak
 
 > By default, fields are displayed in the default order as they appear in the data source.
 
-![Field list with sorting options](images/fieldlist_default_sort.png)
+<!-- ![Field list with sorting options](images/fieldlist_default_sort.png) -->
 
 ### Sort fields in a desired order
 

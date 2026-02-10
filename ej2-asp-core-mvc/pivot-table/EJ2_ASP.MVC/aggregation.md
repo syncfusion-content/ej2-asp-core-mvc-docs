@@ -120,7 +120,7 @@ The following code demonstrates how to configure the pivot table component to di
 {% endif %}
 
 
-![output](images/aggregateTypes.png "Selective aggregation types in dropdown menu")
+![output](images/aggregateTypes.png)
 
 ## Hiding aggregation type from button text
 
@@ -152,9 +152,9 @@ This customization enhances the clarity of the pivot table’s interface by simp
 {% endif %}
 
 
-![output](images/aggregation_fl_value.png "Aggregation name hidden in button UI - Field List")
+![output](images/aggregation_fl_value.png)
 <br/>
-![output](images/aggregation_gb_value.png "Aggregation name hidden in button UI - Grouping Bar")
+![output](images/aggregation_gb_value.png)
 
 ## Hiding aggregation type icon from UI
 

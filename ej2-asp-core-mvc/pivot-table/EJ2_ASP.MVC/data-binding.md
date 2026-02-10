@@ -712,6 +712,7 @@ The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 {% include code-snippet/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ## See Also
 
