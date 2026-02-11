@@ -46,7 +46,7 @@ The conditional formatting can be applied at runtime through the built-in dialog
 ![output](images/toolbar_cformatting.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog.)
+![output](images/toolbar_cformatting_dialog.png)
 <br/>
 <br/>
 ![output](images/toolbar_cformatting_dialog_apply.png)
