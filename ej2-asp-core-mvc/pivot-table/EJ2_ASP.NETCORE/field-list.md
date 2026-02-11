@@ -52,9 +52,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/gs_fieldlist_icon.png "Field list icon at the top left of the pivot table component")
+![output](images/gs_fieldlist_icon.png)
 <br/>
-![output](images/gs_fieldlist_dialog.png "Field list dialog for user interaction")
+![output](images/gs_fieldlist_dialog.png)
 
 ## Stand-alone Field List (Fixed)
 
@@ -87,7 +87,7 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 
 
-![output](images/staticfieldlist.png "Static FieldList")
+![output](images/staticfieldlist.png)
 
 ## Invoking dynamic Field List (Customized)
 
@@ -124,7 +124,7 @@ The sample code below shows how to open the Field List dialog using an external 
 
 
 
-![output](images/fieldlist-custom.png "FieldList in Button")
+![output](images/fieldlist-custom.png)
 
 ## Search desired field
 
@@ -163,7 +163,7 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 
 
-![output](images/Search desired field in static field list.png "Searching Static FieldList")
+![output](images/Search desired field in static field list.png)
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -195,15 +195,13 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 
 
-![output](images/Search desired field in popup field list.png "Searching Popup FieldList")
+![output](images/Search desired field in popup field list.png)
 
 ## Option to sort fields
 
 The field list provides a simple way to organize fields in different orders, making it easier to locate and work with the data you need. Users can sort fields in the field list UI in ascending, descending, or default order (as obtained from the data source) using the built-in sort icons.
 
 > By default, fields are displayed in the default order as they appear in the data source.
-
-![Field list with sorting options](images/fieldlist_default_sort.png)
 
 ### Sort fields in a desired order
 

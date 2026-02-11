@@ -264,10 +264,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/image-header-footer/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/pdf-export/image-header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -275,10 +275,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pdf-export/image-header-footer/razor %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/pdf-export/image-header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

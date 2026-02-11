@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Conditional Formatting in ##Platform_Name## Pivot Table Component
+title: Conditional Formatting in ASP.NET Core Syncfusion Pivot Table
 description: Learn here all about Conditional Formatting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Conditional Formatting
@@ -43,16 +43,16 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/toolbar_cformatting.png "Conditional formatting icon in toolbar")
+![output](images/toolbar_cformatting.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog.png "Adding new conditional format")
+![output](images/toolbar_cformatting_dialog.)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog_apply.png "Setting conditional format criteria")
+![output](images/toolbar_cformatting_dialog_apply.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_grid.png "Resultant pivot table on applied conditional format")
+![output](images/toolbar_cformatting_grid.png)
 
 ## Configure conditional formatting through code-behind
 

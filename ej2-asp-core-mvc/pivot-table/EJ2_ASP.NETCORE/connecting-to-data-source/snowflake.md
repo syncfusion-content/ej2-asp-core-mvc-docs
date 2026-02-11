@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Snowflake Data Binding in ASP.NET Core Pivotview component | Syncfusion"
+title: Data Binding in ASP.NET Core Pivotview component | Syncfusion
 description: "Learn how to bind data from a Snowflake database in the Syncfusion ASP.NET Core Pivot Table of Syncfusion Essential JS 2 and more."
-platform: ej2-asp-core-Core
+platform: ej2-asp-core-mvc
 documentation: ug
 ---
 

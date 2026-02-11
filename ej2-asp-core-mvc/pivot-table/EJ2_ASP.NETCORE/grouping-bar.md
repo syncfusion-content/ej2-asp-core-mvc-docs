@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar in ##Platform_Name## Pivot Table Component
+title: Grouping Bar in ASP.NET Core Syncfusion Pivot Table Component
 description: Learn here all about Grouping Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping Bar
@@ -355,7 +355,7 @@ When you bind a report to the Pivot Table, all fields from the data source are a
 
 To exclude specific fields, add the field names to the [`excludeFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExcludeFields) property within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) configuration. This prevents the selected fields from being displayed in the Grouping Bar while keeping them available in the underlying data source.
 
-> **Note:** When you exclude fields using the `excludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://ej2.syncfusion.com/angular/documentation/pivotview/field-list/#remove-specific-fields-from-displaying).
+> **Note:** When you exclude fields using the `excludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/grouping-bar#remove-specific-fields-from-displaying).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -416,11 +416,11 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/aggregation_gb_icon.png "Icon to change aggregation type")
+![output](images/aggregation_gb_icon.png)
 <br/>
 <br/>
 <br/>
-![output](images/aggregation_gb_menu.png "List of pre-defined aggregation types")
+![output](images/aggregation_gb_menu.png)
 
 ## Show or hide specific dropdown icon
 
@@ -504,6 +504,8 @@ The [`onFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 - `droppedPosition`: Defines the position where the field has been dropped.
 
 For example, you can use this event to change the caption of the `droppedField` instantly at runtime when a user moves a field to a different axis.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

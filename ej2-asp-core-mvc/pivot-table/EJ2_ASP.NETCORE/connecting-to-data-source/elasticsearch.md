@@ -93,7 +93,7 @@ This section explains how to connect the Pivot Table component to an Elasticsear
 2. Ensure your ASP.NET Core project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **~/Views/Home/Index.cshtml** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the ttps://localhost:44323/Pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
+1. In the **~/Views/Home/Index.cshtml** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the https://localhost:44323/Pivot` to the Pivot Table component in **~/Views/Home/Index.cshtml** by using the [Url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```csharp

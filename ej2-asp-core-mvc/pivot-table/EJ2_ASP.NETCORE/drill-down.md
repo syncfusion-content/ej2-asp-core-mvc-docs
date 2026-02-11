@@ -29,10 +29,10 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-down/drill-position/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/expand-all/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="DrillPosition.cs" %}
-{% include code-snippet/pivot-table/drill-down/drill-position/DrillPosition.cs %}
+{% highlight c# tabtitle="ExpandAll.cs" %}
+{% include code-snippet/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,13 +40,14 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-down/drill-position/razor %}
+{% include code-snippet/pivot-table/drill-down/expand-all/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="DrillPosition.cs" %}
-{% include code-snippet/pivot-table/drill-down/drill-position/DrillPosition.cs %}
+{% highlight c# tabtitle="ExpandAll.cs" %}
+{% include code-snippet/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
 
 ## Expand All
 

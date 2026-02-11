@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Pivot Table Component
+title: Filtering in ASP.NET Core Syncfusion Pivot Table Component
 description: Learn here all about Filtering in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Filtering

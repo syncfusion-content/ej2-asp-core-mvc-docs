@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aggregation in ##Platform_Name## Pivot Table Component
+title: Aggregation in ASP.NET Core Syncfusion Pivot Table Component
 description: Learn here all about Aggregation in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Aggregation
@@ -121,7 +121,7 @@ The following code demonstrates how to configure the pivot table component to di
 
 
 
-![output](images/aggregateTypes.png "Selective aggregation types in dropdown menu")
+![output](images/aggregateTypes.png)
 
 ## Hiding aggregation type from button text
 
@@ -154,9 +154,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 
 
-![output](images/aggregation_fl_value.png "Aggregation name hidden in button UI - Field List")
+![output](images/aggregation_fl_value.png)
 <br/>
-![output](images/aggregation_gb_value.png "Aggregation name hidden in button UI - Grouping Bar")
+
+![output](images/aggregation_gb_value.png)
 
 ## Hiding aggregation type icon from UI
 

@@ -269,7 +269,7 @@ The following example shows how to add fields to the filter axis in a ASP.NET Co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/filter-axis/tagHelper %}
+{% include code-snippet/pivot-table/getting-start-mvc/calculatedfield/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 public class PivotData
