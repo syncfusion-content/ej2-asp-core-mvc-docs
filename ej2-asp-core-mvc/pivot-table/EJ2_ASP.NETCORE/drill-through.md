@@ -10,9 +10,13 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Drill Through
+# Drill through in ASP.NET Core Pivot Table component
 
-Allows to view the underlying raw data of a summarized cell in the pivot table. It can be enabled by setting the [`allowDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDrillThrough) property to **true**. By double-clicking on any value cell, user can view the detailed raw data in a data grid inside a new window. In the new window, row header, column header and measure name of the clicked cell will be shown at the top. Also, user can include or exclude fields available in the data grid using column chooser option.
+The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDrillThrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
+
+To use the drill-through feature, inject the `DrillThrough` module in the Pivot Table.
+
+Below is an example of enabling drill-through in a Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +48,9 @@ Allows to view the underlying raw data of a summarized cell in the pivot table. 
 <br/>
 ![output](images/drillthrough-after.png)
 
-Users can also view the underlying raw data though the pivot chart. By clicking on any data point, user can view the detailed raw data in a data grid inside a new window.
+Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
+
+Below is an example of enabling drill-through with a pivot chart:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -76,11 +82,12 @@ Users can also view the underlying raw data though the pivot chart. By clicking 
 <br/>
 ![output](images/drillthrough-chart-after.png)
 
+
 ## Maximum rows to retrieve
 
-N> This property is applicable only for OLAP data sources.
+> This property is applicable only for the OLAP data source.
 
-The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxRowsInDrillThrough) property allows to specify the maximum number of raw data to be returned during the drill through process. By default, this property is set to **"10000"** meaning that if you do not specify this property, you will get 10,000 or less raw data.
+The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxRowsInDrillThrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **"10000"**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -113,16 +120,18 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 ### DrillThrough
 
-The event `drillThrough` triggers every time before a value cell is double clicked. This event allows user to customize the data grid columns in drill through popup. Exclusively the event helps to view and process the raw data information behind a aggregated value inside value cell. It has the following parameters:
+The [`drillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event is triggered immediately after a user double-clicks a value cell in the Pivot Table. This event allows users to customize the columns displayed in the drill-through popup's data grid. It is specifically designed to help users view and process the raw data behind an aggregated value in a value cell. The event includes the following parameters:
 
-* `columnHeaders` - It holds column header of the current cell.
-* `currentCell` - It holds the current cell's information.
-* `currentTarget` - It holds current cell's html element.
-* `gridColumns` - It holds data grid columns to be rendered in drill through popup.
-* `rawData` - It holds current cell's raw data.
-* `rowHeaders` - It holds row header of current cell.
-* `value` - It holds value of current cell.
-* `cancel` - It is a boolean property and by setting this to true, dialog won’t be created.
+- `columnHeaders`: Contains the column header of the clicked cell.
+- `currentCell`: Contains details about the clicked cell.
+- `currentTarget`: Contains the HTML element of the clicked cell.
+- `gridColumns`: Specifies the data grid columns to be displayed in the drill-through popup.
+- `rawData`: Contains the raw, unaggregated data for the clicked cell.
+- `rowHeaders`: Contains the row header of the clicked cell.
+- `value`: Contains the value of the clicked cell.
+- `cancel`: It is a boolean property and by setting this to **true**, dialog won’t be created.
+
+Below is an example of using the [`drillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event in a Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,14 +156,16 @@ The event `drillThrough` triggers every time before a value cell is double click
 {% endtabs %}
 {% endif %}
 
-
-
 ### BeginDrillThrough
 
-The event `beginDrillThrough` occurs for each and every value cell with a double click, and the event argument provides the data grid information before the drill-through popup is shown. User can access the data grid (which holds the raw data underneath the aggregated value cell) options such as sort, group, filter and customize those in the data grid. It has the following parameters:
+The event [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) triggers after a double-click on a value cell in the Pivot Table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as `sorting`, `grouping`, and `filtering` within the data grid according to their specific needs. The event includes the following parameters:
 
 * `gridObj` - It holds the data grid instance to be rendered inside the drill-through popup.
-* `cellInfo` - It holds current cell information like raw data, row header, column header and value.
+* `cellInfo` - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
+
+The following example demonstrates how to enable `sorting`, `filtering`, and `grouping` in the data grid displayed within the drill-through popup. This is achieved by configuring the `gridObj` in the [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event.
+
+> [Grid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) features are segregated into individual feature-wise modules. For example, to use `sorting` feature, you should inject `Sort` using the `Grid.Inject(Sort)` section.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,4 +189,3 @@ The event `beginDrillThrough` occurs for each and every value cell with a double
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-

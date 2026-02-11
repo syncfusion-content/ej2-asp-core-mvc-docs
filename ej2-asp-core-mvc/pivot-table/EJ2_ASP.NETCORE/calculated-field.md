@@ -11,14 +11,27 @@ documentation: ug
 
 # Calculated Field in ##Platform_Name## Pivot Table Component
 
-Allows end user to create a new calculated field in the pivot table, based on available fields from the bound data source or using simple formula with basic arithmetic operators. It can be added at runtime through the built-in dialog, invoked from Field List UI. To do so, set the [`allowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true** in the pivot table. End user can now see a "CALCULATED FIELD" button enabled in Field List UI automatically, which on clicking will invoke the calculated field dialog and perform necessary operation.
+The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
-Calculated field can also be included in the pivot table through code behind using the [`e-calculatedfieldsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) tag. The required properties to create a new calculate field are:
-* [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Name): It allows to indicate the calculated field with a unique name.
-* [`formula`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): It allows to set the formula.
-* [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format):  It helps to set the number format for the resultant value.
+## Creating calculated fields
 
-N> The calculated field is applicable only for value fields. By default, the calculated fields created through code-behind are only added to the field list and calculated field dialog UI. To display the calculated field in the pivot table UI, it must be added to the [`Values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) property, as shown in the code below.
+Users can create calculated fields in two convenient ways:
+- **Interactive Method**: Using the built-in dialog accessible from the Field List UI.
+- **Code-Based Method**: Configuring fields programmatically using the [`e-calculatedfieldsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) property.
+
+To enable the calculated field functionality, set the [`allowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true** in the pivot table. Once enabled, a "CALCULATED FIELD" button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can create and manage custom fields using an intuitive interface.
+
+### Defining calculated fields programmatically
+
+You can define calculated fields programmatically using the [`e-calculatedfieldsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) property. This approach is ideal for pre-configuring specific calculations. The following properties are essential for creating a calculated field:
+
+- [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Name): Specifies a unique name for the calculated field.
+- [`formula`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): Defines the mathematical expression using existing field names and arithmetic operators.
+- [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Configures the number format for displaying calculated results.
+
+To use the calculated field feature, you must inject the `CalculatedField` module into the pivot table.
+
+> **Note**: The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`Values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) property, as shown in the code below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,7 +60,9 @@ N> The calculated field is applicable only for value fields. By default, the cal
 
 ![output](images/calculatedfield.png)
 
-Meanwhile, user can also view calculated field dialog in UI by invoking `createCalculatedFieldDialog` method on an external button click which is shown in the below code sample.
+## Opening the calculated field dialog programmatically
+
+You can display the calculated field dialog by calling the `createCalculatedFieldDialog` method when an external button is clicked. This provides additional flexibility for accessing the calculated field functionality.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,65 +93,107 @@ Meanwhile, user can also view calculated field dialog in UI by invoking `createC
 
 ![Calculated field popup](images/calculatdfield-btn-dropdown.png)
 
-## Editing through the field list and the grouping bar
+## Editing through the field list and grouping bar
 
-User can also modify the existing calculated field using the built-in edit option available directly in the field list (or) grouping bar. To do so, click the "Edit" icon available in the calculated field button. Now the calculated field dialog is opened and the current calculated field name, formula and format can be changed at runtime.
+You can easily modify existing calculated fields using the built-in edit option available in both the field list and grouping bar. This feature allows you to update formulas, change field names, or adjust formatting without recreating the entire calculated field.
 
-![Editing the calculated field](images/calculatdfield-grouping-edit1.png "Editing the calculated field")
+To edit an existing calculated field:
+
+1. Locate the calculated field button in either the field list or the grouping bar.
+2. Click the **Edit** icon next to the calculated field name.
+3. The calculated field dialog opens, displaying the current settings.
+4. Make changes to the field name, formula, or format as needed.
+5. Click **OK** to apply the changes.
+
+![Editing the calculated field](images/calculatdfield-grouping-edit1.png)
 <br/>
+
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png)
+
+## Renaming an existing calculated field
+
+You can rename any existing calculated field directly through the user interface at runtime. This option helps you maintain clear and meaningful names for your calculated fields as your analysis requirements evolve.
+
+To rename a calculated field:
+
+1. Locate the calculated field button in either the field list or the grouping bar.
+2. Click the **Edit** icon next to the calculated field name.
+3. The calculated field dialog opens, displaying the current field name in the text box at the top.
+4. Replace the existing name with your preferred name.
+5. Click **OK** to save the new name.
+
+![Editing the calculated field](images/calculatdfield-renaming1.png)
 <br/>
-![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png "Editing the calculated field formula")
 
-## Renaming the existing calculated field
+![Renaming the calculated field](images/calculatdfield-renaming2.png)
 
-Existing calculated field can be renamed only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing name getting displayed in the text box at the top of the dialog. Now, change the name based on user requirement and click "OK".
+## Editing an existing calculated field formula
 
-<!-- markdownlint-disable MD012 -->
-![Editing the calculated field](images/calculatdfield-renaming1.png "Editing the calculated field")
+This option allows you to modify the formulas of existing calculated fields directly through the user interface, ensuring your calculations remain accurate and up to date with changing requirements.
+
+To edit an existing calculated field formula:
+
+1. Open the calculated field dialog.
+2. Select the calculated field you want to edit from the list.
+3. Click the **Edit** icon next to the selected field.
+4. The existing formula appears in a multiline text box at the bottom of the dialog.
+5. Update the formula according to your requirements.
+6. Click **OK** to save your changes.
+
+The pivot table will automatically refresh to reflect the updated calculations.
+
+![Editing the calculated field](images/calculatdfield-field-edit1.png)
 <br/>
+
+![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+
+## Reusing an existing formula in a new calculated field
+
+This option enables you to quickly create new calculated fields by reusing formulas from existing fields, saving time and ensuring consistency across your calculations.
+
+To reuse an existing formula:
+
+1. Open the calculated field dialog to create a new field.
+2. Locate the existing calculated field whose formula you want to reuse.
+3. Drag the existing calculated field from the tree view.
+4. Drop it into the **Formula** section.
+5. The formula from the existing field is automatically added to your new calculated field.
+6. Modify the formula further if needed, or use it as is.
+7. Click **OK** to create the new calculated field.
+
+![Dragging the existing calculated field](images/calculatdfield-reusing1.png)
 <br/>
-![Renaming the calculated field](images/calculatdfield-renaming2.png "Renaming the calculated field")
 
-## Editing the existing calculated field formula
-
-Existing calculated field formula can be edited only through the UI at runtime. To do so, open the calculated field dialog, select the target field and click "Edit" icon. User can now see the existing formula getting displayed in a multiline text box at the bottom of the dialog. Now, change the formula based on user requirement and click "OK".
-
-![Editing the calculated field](images/calculatdfield-field-edit1.png "Editing the calculated field")
+![Dragging field to formula](images/calculatdfield-reusing2.png)
 <br/>
-<br/>
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png "Editing the calculated field formula")
 
-## Reusing the existing formula in a new calculate field
+![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png)
 
-While creating a new calculated field, if user wants to the add the formula of an existing calculated field, it can be done easily. To do so, simply drag-and-drop the existing calculated field to the "Formula" section.
+## Applying formatting to calculated field values
 
-![Dragging the existing calculated field](images/calculatdfield-reusing1.png "Dragging the existing calculated field")
-<br/>
-<br/>
-![Drag field to formula](images/calculatdfield-reusing2.png "Drag field to formula")
-<br/>
-<br/>
-![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png "Reusing the existing calculated field formula")
+Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-## Apply the format to the calculated field values
+To format calculated field values in your code, use the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/number-formatting).
 
-Values in a new or existing calculated field can be formatted via the calculated field UI or code behind. The [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property in code-behind can be used to specify the desired format. For more information about the supported formats refer [`refer here`](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/number-formatting/).
+### Formatting through the user interface
 
-To apply format to calculated field values at runtime via UI, a built-in dropdown under the "Format" label is available, from which the user can select the pre-defined format options listed below.
+To apply formatting to calculated field values via the user interface, use the built-in "Format" dropdown available in the calculated field dialog. This dropdown provides the following predefined format options:
 
-* **Standard** - Denotes the numeric type.
-* **Currency** - Denotes the currency type.
-* **Percent** - Denotes the percentage type.
-* **Custom** - Denotes the custom format. For example: "C2". This shows the value "9584.3" as "$9584.30."
-* **None** - Denotes that no format will be applied.
+* **Standard** - Displays numbers in their basic numeric form.
+* **Currency** - Displays numbers as currency values.
+* **Percent** - Displays numbers as percentage values.
+* **Custom** - Allows you to specify a custom format pattern.
+* **None** - Applies no formatting to the values.
 
-N> By default, **None** will be selected from the dropdown.
+> **Note:** By default, **None** is selected in the dropdown.
 
-![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png "Applying format through calculated field dialog UI")
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png)
 
-In addition, you can specify the desired custom formats by selecting the **Custom** option from the "Format" dropdown.
+### Applying custom formatting
 
-![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png "Applying custom format through calculated field dialog UI")
+For specific formatting requirements, select the **Custom** option from the "Format" dropdown. This allows you to enter custom format patterns that meet your exact display needs.
+
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png)
 
 ## Supported operators and functions for the calculated field formula
 
@@ -256,7 +313,7 @@ Syntax: min(number1, number2)
 Syntax: max(number1, number2)
 ```
 
-N> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
+ > Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -289,15 +346,25 @@ N> Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/
 
 ### CalculatedFieldCreate
 
-The event [`calculatedFieldCreate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CalculatedFieldCreate) fires while closing the dialog on "OK" button click. It allows to customize the new or existing calculated field information obtained from the dialog. It has the following parameters  
+The [`calculatedFieldCreate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CalculatedFieldCreate) event enables you to validate and manage calculated field details before they are applied to the pivot table. This ensures data accuracy and prevents invalid configurations. The event is triggered when the "OK" button is clicked to close the calculated field dialog, allowing you to modify or validate the calculated field information before it is saved.
 
-* `calculatedField`: It holds the new or existing calculated field information obtained from dialog.
+**Event Parameters:**
 
-* [`calculatedFieldSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html): It holds the [`calculatedFieldSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) property of the pivot report.
+The event provides the following parameters to facilitate interaction with calculated field data:
 
-* `cancel`: It is a boolean property and by setting this to true , the customization done in calculated field dialog won’t be applied to calculated field.
+* `calculatedField`: Contains the calculated field information (new or existing) that was entered in the dialog.
 
-In the below sample, creating a calculated field without setting the format is restricted.
+* [`e-calculatedfieldsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html): Provides access to the current [`e-calculatedfieldsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) of the pivot table.
+
+* `cancel`: A boolean property that prevents the dialog changes from being applied when set to **true**.
+
+* `dataSourceSettings`: Contains the current data source configuration, including input data, rows, columns, values, filters, and format settings.
+
+* `fieldName`: Specifies the name of the field being created or updated.
+
+**Example:**
+
+The following example shows how to prevent users from creating calculated fields without setting a format:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -322,29 +389,38 @@ In the below sample, creating a calculated field without setting the format is r
 {% endtabs %}
 {% endif %}
 
-
-
 ### ActionBegin
 
-The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when clicking calculated field button, calculated field edit icon and context menu in the tree view inside the calculated field dialog. This allows user to identify the current action being performed at runtime. It has the following parameters:
+The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+This event is triggered when users interact with calculated field functionality in the following ways:
+- Clicking the calculated field button
+- Clicking the edit icon for an existing calculated field
+- Using the context menu in the tree view within the calculated field dialog
 
-* `actionName`: It holds the name of the current action began. The following are the UI actions and their names:
+The event provides the following parameters to help you handle these interactions:
 
-| Action | Action Name|
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-| [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+**Event Parameters:**
 
-* `fieldInfo`: It holds the selected field information.
+- `dataSourceSettings`: Contains the current data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings.
 
-N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+- `actionName`: Identifies the specific action the user is attempting to perform. The table below lists the available actions and their corresponding names:
 
-* `cancel`: It allows user to restrict the current action.
+| User Action | Action Name |
+|-------------|-------------|
+| [Calculated field button click](./calculated-field#Calculated-Field) | Open calculated field dialog |
+| [Edit icon click for calculated field](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar) | Edit calculated field |
+| [Context menu in calculated field dialog tree view](./calculated-field#Calculated-Field) | Calculated field context menu |
 
-In the below sample, the calculated field button click action, that is, opening of the calculated field dialog can be restricted by setting the **args.cancel** option to **true** in the `actionBegin` event.
+- `fieldInfo`: Provides information about the selected field when the action involves a specific field.
+
+> **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
+
+- `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
+
+**Example:**
+
+The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -369,26 +445,32 @@ In the below sample, the calculated field button click action, that is, opening 
 {% endtabs %}
 {% endif %}
 
-
-
 ### ActionComplete
 
-The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) triggers when the calculated field is completely created or edited. This allows user to identify the current UI action being completed at runtime. It has the following parameters:  
+The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
 
-* `dataSourceSettings`: It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
+The event provides the following parameters to help you handle completed operations:
 
-* `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
+**Event Parameters:**
 
-| Action | Action Name|
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Calculated field applied|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Calculated field edited|
+- `dataSourceSettings`: Contains the updated data source configuration, including input data, rows, columns, values, filters, format settings, and other pivot table settings after the operation is completed.
 
-* `fieldInfo`: It holds the selected field information.
+- `actionName`: Identifies the specific action completed by the user. The table below lists the available actions and their corresponding names:
 
-N> This option is applicable only when the field based UI actions are performed such as filtering, sorting, removing field from grouping bar, editing and aggregation type change.
+| User Action | Action Name |
+|-------------|-------------|
+| [Creating calculated field](./calculated-field#calculated-field) | Calculated field applied |
+| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-the-grouping-bar) | Calculated field edited |
 
-* `actionInfo`:  It holds the unique information about the current UI action. For example, if the edit action is completed, this event will be triggered, and the argument will display information such as the entire calculated field information and its formula, including the field name.
+- `fieldInfo`: Provides information about the selected field when the action involves a specific field.
+
+> **Note**: This parameter is available only when the action involves a specific field, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
+
+- `actionInfo`: Contains detailed information about the completed action. For calculated field operations, this includes the complete calculated field information, its formula, and the field name.
+
+**Example:**
+
+The example below demonstrates how to use the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event to log information when calculated field operations are completed:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -413,19 +495,17 @@ N> This option is applicable only when the field based UI actions are performed 
 {% endtabs %}
 {% endif %}
 
-
-
 ### ActionFailure
 
-The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) triggers when the current UI action fails to achieve the desired result. It has the following parameters:
+The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
-| Action | Action Name |
-|------|-------------|
-| [`Calculated field button`](./calculated-field/#Calculated-Field)| Open calculated field dialog|
-| [`Edit icon in calculated field`](./calculated-field/#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-| [`Context menu in the tree view inside the calculated field dialog`](./calculated-field/#Calculated-Field)| Calculated field context menu|
+   | Action | Action Name |
+   |------|-------------|
+   | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
 
 * `errorInfo`: It holds the error information of the current UI action.
 
@@ -451,4 +531,3 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
