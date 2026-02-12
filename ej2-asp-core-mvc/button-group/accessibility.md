@@ -55,7 +55,7 @@ The Button group component followed the [keyboard interaction](https://www.w3.or
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Tab</kbd> | Focuses the next button in the ButtonGroup. |
-| <kbd>Space</kbd> | Activates the focussed button in the ButtonGroup. |
+| <kbd>Space</kbd> | Activates the focused button in the ButtonGroup. |
 
 ### Radiobutton behavior
 

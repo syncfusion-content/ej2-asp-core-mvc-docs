@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion Chart Component
+title: Accessibility in Syncfusion Smith Chart Component
 description: Learn here all about Accessibility in Syncfusion ASP Core Smith Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility

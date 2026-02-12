@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Dashboard Layout Control
 
 The Dashboard Layout control has been designed with keeping the `WAI-ARIA` specifications in mind and applying the `WAI-ARIA` roles, states, and properties. This control is characterized by ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT).
 

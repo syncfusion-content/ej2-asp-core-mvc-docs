@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## Appbar Control
+# Accessibility in ##Platform_Name## AppBar Control
 
-The accessibility compliance for the Appbar component is outlined below.
+The accessibility compliance for the AppBar control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -44,9 +44,9 @@ The AppBar component provides the focus element navigation based on its's tab ke
 
 ## Ensuring accessibility
 
-The Appbar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The AppBar component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Appbar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the Appbar component with accessibility tools.
+The accessibility compliance of the AppBar component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/appbar.html) in a new window to evaluate the accessibility of the AppBar component with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/appbar.html" %}
 
