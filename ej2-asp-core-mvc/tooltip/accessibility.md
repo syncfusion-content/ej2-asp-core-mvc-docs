@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Tooltip Control
 
 The Tooltip component has been designed, keeping in mind the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support. This makes it easy for people who use assistive technologies (AT) or who completely rely on keyboard navigation. As per the accessibility standard, the Tooltip opens on target elements to which it is attached as and when those target elements receive either keyboard focus or when the mouse hovers over it. When `esc` key is pressed, the Tooltip closes.
 
