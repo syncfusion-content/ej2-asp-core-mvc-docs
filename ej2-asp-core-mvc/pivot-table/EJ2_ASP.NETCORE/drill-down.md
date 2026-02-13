@@ -15,7 +15,7 @@ documentation: ug
 
 The drill-down and drill-up features in the Pivot Table component allow users to expand or collapse hierarchical data for detailed or summarized views. When a field member(s) contains child items, expand and collapse icons automatically appear in the corresponding row or column header. Clicking these icons expands the selected item to display its child members or collapses it to show a summarized view. If a field member(s) does not have any further levels to display, the icons will not appear.
 
-![output](images/drill.png)
+![Drill down and drill up](images/drill.png)
 
 ## Drill position
 
@@ -23,7 +23,7 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 > This feature is built-in and works automatically every time you expand or collapse data, making the pivot table faster and more efficient.
 
-![output](images/drill_position.png)
+![Drill at specific position](images/drill_position.png)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,7 +80,7 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 
 
-![output](images/expandall.png)
+![All headers expanded](images/expandall.png)
 
 ## Expand all headers for specific fields
 
@@ -115,7 +115,7 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 
 
 
-![output](images/expandall.png)
+![All headers expanded](images/expandall.png)
 
 ## Expand all except specific member(s)
 
@@ -153,7 +153,7 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 
 
-![output](images/expandall_except.png)
+![All expanded except one member](images/expandall_except.png)
 
 ## Expand or Collapse Specific Members
 
@@ -190,7 +190,7 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 
 
-![output](images/drill_position_code.png)
+![Specific members expanded](images/drill_position_code.png)
 
 ## Event
 

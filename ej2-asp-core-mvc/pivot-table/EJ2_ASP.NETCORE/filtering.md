@@ -72,7 +72,7 @@ You can also configure filtering programmatically using the [`e-filtersettings`]
 
 
 
-![output](images/member-filtering.png)
+![Member filtering applied in pivot table](images/member-filtering.png)
 
 ### Option to select and unselect all members
 
@@ -133,7 +133,7 @@ You can control how many members are displayed in the member filter dialog using
 
 
 
-![output](images/maxnodelimit.png)
+![Member filter dialog with max node limit applied](images/maxnodelimit.png)
 
 When the member count exceeds your set limit, you can use the search option to find specific members beyond the displayed range. For example, if your data contains 5000 members named "Node 1", "Node 2", "Node 3", and so on, and you set the [`maxNodeLimitInMemberEditor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxNodeLimitInMemberEditor) property to **500**, only the first 500 members will appear by default. The dialog will show a message like "4500 more items. Search to refine further." To access members 501 to 5000, type the starting characters in the search box to locate the desired members. Once the members appear in the list, you can select or deselect them to apply your filtering preferences.
 
@@ -175,7 +175,7 @@ This approach prevents performance issues when working with hierarchies that con
 
 
 
-![output](images/ondemand_member.png)
+![Loading members on-demand](images/ondemand_member.png)
 
 In the example above, the "Customer Geography" dimension loads with only the first level (Country) initially. Search operations will apply only to the "Country" level members. You can then load the next level members (State-Province) on-demand in two ways:
 
@@ -330,7 +330,7 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 
 
 
-![output](images/labelfiltering_code.png)
+![Label filtering applied](images/labelfiltering_code.png)
 
 ### Filtering number data type through code
 
@@ -374,7 +374,7 @@ For example, to display only sales data where the "Sold" field values are less t
 
 
 
-![output](images/numberfiltering.png)
+![Number filtering applied](images/numberfiltering.png)
 
 ### Filtering date data type through code
 
@@ -411,13 +411,13 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 
 
-![output](images/datefiltering.png)
+![Date filtering applied](images/datefiltering.png)
 
 ### Clearing the existing label filter
 
 Users can clear the applied label filter by clicking the **Clear** option at the bottom of the filter dialog. This option is located under the **Label** tab for string and number type filtering, and under the **Date** tab for date type filtering.
 
-![output](images/clearfilter.png)
+![Clear filter option in dialog](images/clearfilter.png)
 
 ## Value filtering
 
@@ -509,7 +509,7 @@ The following table shows the available operators for value filtering:
 
 
 
-![output](images/valuefiltering_grid.png)
+![Value filtering applied](images/valuefiltering_grid.png)
 
 ### Clearing the existing value filter
 

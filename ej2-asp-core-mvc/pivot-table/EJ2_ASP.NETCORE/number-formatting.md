@@ -71,7 +71,7 @@ Use these standard format codes to specify the formatting type:
 
 
 
-![output](images/formatting.png)
+![Number formatting example](images/formatting.png)
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -118,7 +118,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 
 
-![output](images/formatting-custom.png)
+![Custom number formatting](images/formatting-custom.png)
 
 ## Toolbar
 
@@ -149,7 +149,7 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 
 
-![output](images/formatting-toolbar.png)
+![Number formatting toolbar](images/formatting-toolbar.png)
 
 ## Invoking formatting dialog through external button
 
@@ -180,7 +180,7 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 
 
-![output](images/formatting-dialog.png)
+![Number formatting dialog](images/formatting-dialog.png)
 
 ## Events
 

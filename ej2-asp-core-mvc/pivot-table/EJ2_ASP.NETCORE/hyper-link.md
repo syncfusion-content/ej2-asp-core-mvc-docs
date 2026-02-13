@@ -69,7 +69,7 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 
 
-![output](images/hyperlink.png)
+![Hyperlink enabled for all cells](images/hyperlink.png)
 
 ## Hyperlink for row headers
 
@@ -100,7 +100,7 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 
 
-![output](images/hyperlink-rowheader.png)
+![Row header hyperlink](images/hyperlink-rowheader.png)
 
 ## Hyperlink for column headers
 
@@ -131,7 +131,7 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 
 
-![output](images/hyperlink-columnheader.png)
+![Column header hyperlink](images/hyperlink-columnheader.png)
 
 ## Hyperlink for value cells
 
@@ -162,7 +162,7 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 
 
-![output](images/hyperlink-value.png)
+![Value cell hyperlink](images/hyperlink-value.png)
 
 ## Hyperlink for summary cells
 
@@ -193,7 +193,7 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 
 
-![output](images/hyperlink-summary.png)
+![Summary cell hyperlink](images/hyperlink-summary.png)
 
 ## Condition based hyperlink
 
@@ -231,7 +231,7 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 
 
-![output](images/hyperlink-condition.png)
+![Conditional hyperlink applied](images/hyperlink-condition.png)
 
 ## Condition based hyperlink for specific row or column
 
@@ -299,7 +299,7 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 
 
-![output](images/hyperlink-header.png)
+![Header-based hyperlink](images/hyperlink-header.png)
 
 ## Event
 

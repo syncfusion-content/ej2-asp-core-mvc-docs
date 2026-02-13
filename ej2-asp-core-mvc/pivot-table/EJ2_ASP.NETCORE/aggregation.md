@@ -76,7 +76,7 @@ For each value field, the aggregation type can be set using the property [`type`
 
 
 
-![output](images/aggregation_differencefrom.png)
+![DifferenceFrom aggregation type](images/aggregation_differencefrom.png)
 
 > By default, the aggregation will be considered as [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html).
 
@@ -121,7 +121,7 @@ The following code demonstrates how to configure the pivot table component to di
 
 
 
-![output](images/aggregateTypes.png)
+![Selective aggregation types in dropdown menu](images/aggregateTypes.png)
 
 ## Hiding aggregation type from button text
 
@@ -154,10 +154,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 
 
-![output](images/aggregation_fl_value.png)
+![Aggregation name hidden in button UI - Field List](images/aggregation_fl_value.png)
 <br/>
 
-![output](images/aggregation_gb_value.png)
+![Aggregation name hidden in button UI - Grouping Bar](images/aggregation_gb_value.png)
 
 ## Hiding aggregation type icon from UI
 
@@ -190,7 +190,7 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 
 
-![output](images/value-type-icon-gb.png)
+![Aggregation type icon hidden in Grouping Bar](images/value-type-icon-gb.png)
 
 ## Event
 

@@ -62,7 +62,7 @@ The following table lists the built-in toolbar options and their actions:
 
 
 
-![output](images/toolbar.png)
+![Pivot table toolbar](images/toolbar.png)
 
 ## Show desired chart types in the dropdown menu
 
@@ -97,7 +97,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 
 
-![output](images/charttype-property.png)
+![Chart type dropdown options](images/charttype-property.png)
 
 ## Switch the chart to multiple axes
 
@@ -146,7 +146,7 @@ Here’s an example of how to add a custom toolbar item:
 
 
 
-![output](images/add-custom-toolbar.png)
+![Custom toolbar item example](images/add-custom-toolbar.png)
 
 ### Toolbar Template
 
@@ -179,7 +179,7 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 
 
-![output](images/tool-temp.png)
+![Toolbar template example](images/tool-temp.png)
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in the pivot table.
 
@@ -208,7 +208,7 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 
 
 
-![output](images/tool-temp-rtl.png)
+![Toolbar template with custom controls](images/tool-temp-rtl.png)
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 

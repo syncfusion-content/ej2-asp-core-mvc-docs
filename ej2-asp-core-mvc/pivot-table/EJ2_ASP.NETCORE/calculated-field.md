@@ -58,7 +58,7 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 
 
-![output](images/calculatedfield.png)
+![CalculatedField applied](images/calculatedfield.png)
 
 ## Opening the calculated field dialog programmatically
 
@@ -340,7 +340,7 @@ Syntax: max(number1, number2)
 
 
 
-![output](images/calculatedfield-conditional.png)
+![Calculated field with conditional formula](images/calculatedfield-conditional.png)
 
 ## Event
 

@@ -97,7 +97,7 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 
 
-![output](images/alpha-numeric-header.png)
+![Alphanumeric sorting example](images/alpha-numeric-header.png)
 
 ### Custom Sorting
 
@@ -134,7 +134,7 @@ To set up custom sorting, use the following properties:
 
 
 
-![output](images/Custom sorting.png)
+![Custom sorting example](images/Custom sorting.png)
 
 ## Value Sorting
 
@@ -173,7 +173,7 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 
 
 
-![output](images/valuesorting.png)
+![Value sorting example](images/valuesorting.png)
 
 ### Multiple Axis Sorting
 
@@ -255,7 +255,7 @@ The example below demonstrates how to use the [`OnHeadersSort`](https://help.syn
 
 
 
-![output](images/Custom sorting_event.png)
+![OnHeadersSort event example](images/Custom sorting_event.png)
 
 ### ActionBegin
 

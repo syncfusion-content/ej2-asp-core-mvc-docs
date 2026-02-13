@@ -52,9 +52,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/gs_fieldlist_icon.png)
+![Pivot Table field list icon in toolbar](images/gs_fieldlist_icon.png)
 <br/>
-![output](images/gs_fieldlist_dialog.png)
+![Pivot Table built-in field list popup dialog](images/gs_fieldlist_dialog.png)
 
 ## Stand-alone Field List (Fixed)
 
@@ -87,7 +87,7 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 
 
-![output](images/staticfieldlist.png)
+![Stand-alone static field list](images/staticfieldlist.png)
 
 ## Invoking dynamic Field List (Customized)
 
@@ -124,7 +124,7 @@ The sample code below shows how to open the Field List dialog using an external 
 
 
 
-![output](images/fieldlist-custom.png)
+![Customized field list popup opened via external button](images/fieldlist-custom.png)
 
 ## Search desired field
 
@@ -163,7 +163,7 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 
 
-![output](images/Search desired field in static field list.png)
+![Searching Static FieldList](images/Search desired field in static field list.png)
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -195,7 +195,7 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 
 
-![output](images/Search desired field in popup field list.png)
+![Searching Popup FieldList](images/Search desired field in popup field list.png)
 
 ## Option to sort fields
 
@@ -304,13 +304,13 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 
 
-![output](images/fieldlist_hide.png)
+![Pivot Table field list with hidden fields excluded](images/fieldlist_hide.png)
 
 ## Re-arranging fields
 
 To rearrange fields, users can drag a field from the Field List and drop it into the desired axis (column, row, value, or filter) using the drag-and-drop holder. This allows users to modify the report dynamically during runtime, adjusting the layout to suit their needs.
 
-![output](images/fieldlist_axes.png)
+![Field list showing drag-and-drop axes](images/fieldlist_axes.png)
 
 ## Filtering members
 
@@ -387,7 +387,7 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 
 
-![output](images/popup-fieldlist-specifictarget.png)
+![Field list popup over target](images/popup-fieldlist-specifictarget.png)
 
 ## Show field list using toolbar
 
@@ -418,7 +418,7 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 
 
-![output](images/fieldlist_toolbar.png)
+![Field list in toolbar](images/fieldlist_toolbar.png)
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -451,7 +451,7 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 
 
-![output](images/fieldlist_caption1.png)
+![Field list with captions applied](images/fieldlist_caption1.png)
 
 ## Show values button
 
@@ -486,7 +486,7 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 
 
-![output](images/fieldlistmeasureatdifferentposition.png)
+![Values button in field list for repositioning measures](images/fieldlistmeasureatdifferentposition.png)
 
 ## Events
 
@@ -590,7 +590,7 @@ In the following code example, we changed the caption of the dropped field using
 
 
 
-![output](images/fielddropped_fieldlist.png)
+![Field dropped event in field list](images/fielddropped_fieldlist.png)
 
 ### ActionBegin
 

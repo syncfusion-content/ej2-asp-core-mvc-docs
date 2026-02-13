@@ -120,7 +120,7 @@ This section explains how to connect the Pivot Table component to a Microsoft SQ
 2. Ensure your ASP.NET Core project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
-1. In the **~/Views/Home/Index.cshtml** file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [Url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) object.
+1. In the **~/Views/Home/Index.cshtml** file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [url](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property within the [e-datasourcesettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) object.
 2. Below is the sample code to configure the Pivot Table to fetch data from the Web API:
 
 ```csharp
@@ -134,7 +134,7 @@ This section explains how to connect the Pivot Table component to a Microsoft SQ
 
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the **~/Views/Home/Index.cshtml** file to structure the data retrieved from the SQL Server database.
-2. Add fields to the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define how data fields are organized and aggregated in the Pivot Table.
+2. Add fields to the `rows`, `columns`, `values`, and `filters` properties of [e-datasourcesettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define how data fields are organized and aggregated in the Pivot Table.
 3. Enable the field list by setting the [showFieldList](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
 Here’s the updated sample code with the report configuration and field list support:

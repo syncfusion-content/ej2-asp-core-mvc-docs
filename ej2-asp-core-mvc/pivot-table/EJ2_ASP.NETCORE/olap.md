@@ -325,10 +325,10 @@ Users can add a calculated field at runtime using the built-in dialog by followi
 
 <br/>
 <br/>
-![output](images/olap_calc_button.png)
+![Calculated field button](images/olap_calc_button.png)
 <br/>
 <br/>
-![output](images/calculatedfield-name.png)
+![Enter calculated field name](images/calculatedfield-name.png)
 <br/>
 <br/>
 
@@ -467,7 +467,7 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://help.syncf
 {% endtabs %}
 {% endif %}
 
-![output](images/olap-virtual.png)
+![Virtual Scrolling applied](images/olap-virtual.png)
 
 #### Limitations for Virtual Scrolling
 

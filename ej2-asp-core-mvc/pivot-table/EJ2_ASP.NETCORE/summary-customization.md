@@ -39,7 +39,7 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 {% endtabs %}
 {% endif %}
 
-![output](images/grandtotal.png)
+![Grand totals example](images/grandtotal.png)
 
 ## Show grand totals at top or bottom
 
@@ -98,7 +98,7 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 {% endtabs %}
 {% endif %}
 
-![output](images/sub-total.png)
+![Sub‑totals example](images/sub-total.png)
 
 ## Show/hide sub-totals for specific fields
 
@@ -129,7 +129,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% endtabs %}
 {% endif %}
 
-![output](images/subtotal2.png)
+![Sub‑totals for specific fields](images/subtotal2.png)
 
 ## Show sub-totals at top or bottom
 

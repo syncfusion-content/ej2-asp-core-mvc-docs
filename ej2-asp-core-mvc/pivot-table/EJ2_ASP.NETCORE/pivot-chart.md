@@ -104,7 +104,7 @@ For example, to display a [**Bar**](https://help.syncfusion.com/cr/aspnetcore-js
 
 
 
-![output](images/charttype.png)
+![Pivot chart type example](images/charttype.png)
 
 ## Accumulation Charts
 
@@ -145,7 +145,7 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 
 
-![output](images/accumulation.png)
+![Accumulation chart example](images/accumulation.png)
 
 ### Drill down and up
 
@@ -182,7 +182,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 
 
-![output](images/accumulation-drill.png)
+![Accumulation chart drilldown](images/accumulation-drill.png)
 
 ### Column Headers and Delimiters
 
@@ -215,7 +215,7 @@ If the column has more than one header, enter all the headers separated by a del
 
 
 
-![output](images/accumulation-column.png)
+![Accumulation chart column header selection](images/accumulation-column.png)
 
 ### Label Customization
 
@@ -255,7 +255,7 @@ In the following code sample, the data labels are placed inside the chart points
 
 
 
-![output](images/accumulation-label.png)
+![Accumulation chart data labels](images/accumulation-label.png)
 
 The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the `connectorStyle` property in `dataLabel` to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
 
@@ -284,7 +284,7 @@ The **Connector Line** appears when data labels are positioned outside the chart
 
 
 
-![output](images/accumulation-connector.png)
+![Accumulation chart connector line](images/accumulation-connector.png)
 
 ### Pie and Doughnut Customization
 
@@ -315,7 +315,7 @@ You can draw pie and doughnut charts within a specific range by using the `start
 
 
 
-![output](images/accumulation-angle.png)
+![Pie/doughnut chart angle customization](images/accumulation-angle.png)
 
 You can convert a pie chart to a doughnut chart and vice-versa using the `innerRadius` property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) configuration. When this property is set to a value greater than **0** percent, the chart appears as a doughnut instead of a pie chart.
 
@@ -346,7 +346,7 @@ You can convert a pie chart to a doughnut chart and vice-versa using the `innerR
 
 
 
-![output](images/accumulation-radius.png)
+![Pie to doughnut radius exampl](images/accumulation-radius.png)
 
 ### Exploding Series Points
 
@@ -377,7 +377,7 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 
 
-![output](images/accumulation-explode.png)
+![Exploding series point](images/accumulation-explode.png)
 
 ## Field List
 
@@ -410,7 +410,7 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 
 
-![output](images/pivotchart-FL.png)
+![Pivot chart with field list](images/pivotchart-FL.png)
 
 ## Grouping Bar
 
@@ -443,7 +443,7 @@ You can display the grouping bar in the Pivot Chart by setting the [`showGroupin
 
 
 
-![output](images/pivotchart-gbar.png)
+![Pivot chart grouping bar](images/pivotchart-gbar.png)
 
 When using accumulation charts, the drop-down list appears on the column axis. This list contains the column headers available in the Pivot Chart. Users can switch column headers using this drop-down, and the accumulation chart will update with the selected header.
 
@@ -472,7 +472,7 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 
 
 
-![output](images/accumulation-group.png)
+![Accumulation chart grouping](images/accumulation-group.png)
 
 ## Single Axis
 
@@ -503,7 +503,7 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 
 
-![output](images/chart_single_axis.png)
+![Pivot chart single axis](images/chart_single_axis.png)
 
 ## Multiple Axis
 
@@ -536,7 +536,7 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 
 
 
-![output](images/multi-axis.png)
+![Pivot chart multiple axes](images/multi-axis.png)
 
 When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableScrollOnMultiAxis) property to **true** in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
 
@@ -565,9 +565,9 @@ When binding more value fields, the result displays multiple pivot charts, with 
 
 
 
-![output](images/chart-scrollbar.png)
+![Pivot chart with scroll bar](images/chart-scrollbar.png)
 
-Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to `Single` in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
+Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to `Single` in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
 In the following code sample, the pivot chart appears as a single chart with multiple value fields such as **Sold** and **Amount**, each represented with its own Y-axis.
 
@@ -594,7 +594,7 @@ In the following code sample, the pivot chart appears as a single chart with mul
 {% endtabs %}
 {% endif %}
 
-Additionally, to display chart series for multiple values within a single y-axis, set the properties [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and the [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to **Combined**, in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
+Additionally, to display chart series for multiple values within a single y-axis, set the properties [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and the [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to **Combined**, in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
 > The y-axis range values will be formatted using the first value field on the value axis. For example, if the first value field is in currency format and the remaining value fields are in different number formats or no format, the y-axis range values will be displayed in the currency format of the first value field.
 
@@ -629,7 +629,7 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 ### Show point color based on members
 
-When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property in the [`ChartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easy for users to spot and compare each member throughout the entire chart.
+When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easy for users to spot and compare each member throughout the entire chart.
 
 In addition, users can show or hide specific members from all measures in the chart by clicking the corresponding legend item. This interaction allows users to focus on the members they want to analyze without distraction.
 
@@ -690,7 +690,7 @@ You can customize the series in the pivot chart by using the [`e-chartSeries`](h
 
 
 
-![output](images/chart-series.png)
+![Pivot chart series customization](images/chart-series.png)
 
 If you want to change each series separately, use the `chartSeriesCreated` event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
 
@@ -721,7 +721,7 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 
 
-![output](images/chart-series-event.png)
+![Pivot chart series event example](images/chart-series-event.png)
 
 ## Axis Customization
 
@@ -756,7 +756,7 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 
 
-![output](images/axis-customization.png)
+![Pivot chart axis customization](images/axis-customization.png)
 
 Users can also modify multi-level labels on the primary x-axis by using the `multiLevelLabelRender` event in [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
 
@@ -792,7 +792,7 @@ The example below shows how to update the text and style for multi-level labels 
 
 
 
-![output](images/multilevellabelrender.png)
+![Multi-level label customization](images/multilevellabelrender.png)
 
 ## Legend customization
 
@@ -851,7 +851,7 @@ In the following code example, you can see how to set a different legend shape a
 
 
 
-![output](images/legend-settings.png)
+![Legend settings customization](images/legend-settings.png)
 
 ## User interaction
 
@@ -890,7 +890,7 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 
 
-![output](images/marker-crosshair.png)
+![Marker and crosshair example](images/marker-crosshair.png)
 
 ### Zooming and panning
 
@@ -938,7 +938,7 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 
 
-![output](images/zooming.png)
+![Chart zooming and panning](images/zooming.png)
 
 ### Tooltip
 
@@ -973,7 +973,7 @@ The code below shows how to change the default tooltip appearance and settings i
 
 
 
-![output](images/tooltip.png)
+![Pivot chart tooltip](images/tooltip.png)
 
 ## Export
 
@@ -1018,7 +1018,7 @@ The example below shows how to export the pivot chart using an external button l
 
 
 
-![output](images/chart-export.png)
+![Pivot chart export example](images/chart-export.png)
 
 ## Print
 
@@ -1051,4 +1051,4 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 
 
-![output](images/print-chart.png)
+![Pivot chart print example](images/print-chart.png)

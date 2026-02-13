@@ -78,8 +78,8 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/tooltipTemplate.png)
+![Pivot table tooltip template](images/tooltipTemplate.png)
 <br/>
 <br/>
 <br/>
-![output](images/tooltipTemplate-chart.png)
+![Pivot chart tooltip template](images/tooltipTemplate-chart.png)

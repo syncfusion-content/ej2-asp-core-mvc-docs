@@ -43,10 +43,10 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 
 
-![output](images/drillthrough-before.png)
+![Pivot Table drill-through before interaction](images/drillthrough-before.png)
 <br/>
 <br/>
-![output](images/drillthrough-after.png)
+![Pivot Table drill-through after interaction](images/drillthrough-after.png)
 
 Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
 
@@ -77,10 +77,10 @@ Below is an example of enabling drill-through with a pivot chart:
 
 
 
-![output](images/drillthrough-chart-before.png)
+![Pivot chart drill-through before interaction](images/drillthrough-chart-before.png)
 <br/>
 <br/>
-![output](images/drillthrough-chart-after.png)
+![Pivot chart drill-through after interaction](images/drillthrough-chart-after.png)
 
 
 ## Maximum rows to retrieve
@@ -114,7 +114,7 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 
 
-![output](images/maxrows.png)
+![Maximum rows drill-through](images/maxrows.png)
 
 ## Events
 

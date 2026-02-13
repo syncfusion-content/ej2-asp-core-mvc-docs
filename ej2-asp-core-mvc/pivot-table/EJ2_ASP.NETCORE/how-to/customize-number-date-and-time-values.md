@@ -19,7 +19,7 @@ For numeric fields, the formatting settings include the following properties:
 * `name`: Specifies the field name to which the formatting should be applied.
 * `format`: Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
 
-> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+> Also, you can customize the applied number format by setting the [`numberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

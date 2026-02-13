@@ -43,7 +43,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 {% endtabs %}
 {% endif %}
 
-![output](images/virtualscrolling.gif)
+![Virtual scrolling example](images/virtualscrolling.gif)
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 

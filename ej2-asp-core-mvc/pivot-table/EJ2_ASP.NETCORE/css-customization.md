@@ -108,4 +108,4 @@ The following code sample demonstrates how to apply custom background colors to 
 
 
 
-![output](images/pivottable-css.png)
+![Custom CSS applied to Pivot Table header](images/pivottable-css.png)

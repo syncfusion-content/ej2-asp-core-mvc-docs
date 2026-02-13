@@ -68,7 +68,7 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 
 
 
-![output](images/local-json-datamanager.png)
+![Local JSON data binding](images/local-json-datamanager.png)
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example demonstrates this approach.
 
@@ -104,7 +104,7 @@ You can also load JSON data from a local *.json file using the file uploader opt
 
 ### Binding JSON data via remote
 
-To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property. The [`URL`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable JSON files (*.json) and web service URLs.
+To bind remote JSON data to the Pivot Table, set the endpoint [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property. The [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable JSON files (*.json) and web service URLs.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -131,7 +131,7 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://he
 
 
 
-![output](images/remote-json-data.png)
+![Pivot Table bound to remote JSON data](images/remote-json-data.png)
 
 ## CSV
 
@@ -168,7 +168,7 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 
 
-![output](images/local-csv-data.png)
+![Pivot Table with local CSV data binding](images/local-csv-data.png)
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example shows how to implement this:
 
@@ -209,7 +209,7 @@ You can also connect CSV data from a local *.csv file to the Pivot Table using t
 
 Remote CSV data binding allows you to load data directly from external sources without storing large datasets locally, which improves application performance and reduces memory usage.
 
-To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to point to your data source endpoint. The [`URL`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable CSV files (*.csv) and web service URLs that return CSV data.
+To bind remote CSV data, set the [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to point to your data source endpoint. The [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable CSV files (*.csv) and web service URLs that return CSV data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -236,7 +236,7 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 
 
-![output](images/remote-csv-data.png)
+![Pivot Table bound to remote CSV data](images/remote-csv-data.png)
 
 ## Remote Data Binding
 
@@ -451,7 +451,7 @@ The following code sample demonstrates how to configure the visibility of field 
 
 
 
-![output](images/field-mapping.png)
+![Field button icons customized](images/field-mapping.png)
 
 ## Values in row axis
 
@@ -482,7 +482,7 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 
 
-![output](images/valueaxis.png)
+![Values in row axis](images/valueaxis.png)
 
 ## Values at different positions
 
@@ -515,7 +515,7 @@ Positioning value fields at specific locations helps create more meaningful data
 
 
 
-![output](images/measureatdifferentposition.png)
+![Values at custom position](images/measureatdifferentposition.png)
 
 ## Show 'no data' items
 
@@ -548,7 +548,7 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 
 
-![output](images/nodata.png)
+![No-data items shown](images/nodata.png)
 
 ## Show value headers always
 
@@ -579,7 +579,7 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 
 
-![output](images/valuesheader.png)
+![Value headers always visible](images/valuesheader.png)
 
 ## Customize empty value cells
 
@@ -610,7 +610,7 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 
 
-![output](images/emptyvalues.png)
+![Custom text in empty cells](images/emptyvalues.png)
 
 ## Event
 

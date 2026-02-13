@@ -138,7 +138,7 @@ You can configure number grouping through code-behind using the [`e-groupsetting
 
 To remove an applied number grouping, simply right-click on the grouped header in the Pivot Table and select **Ungroup** option from the context menu. This action will break apart the grouped ranges and display the original, ungrouped values in the table.
 
-![output](../pivot-table/images/number-ungroup.png)
+![Number ungroup option](../pivot-table/images/number-ungroup.png)
 
 ## Date Grouping
 
@@ -235,7 +235,7 @@ Furthermore, in the field list UI, these date group fields **Years (Date)**, **Q
 
 To remove a previously applied date grouping, simply right-click the relevant date-based header within the Pivot Table and select the **Ungroup** option from the context menu. This action will revert the grouped dates back to their original, ungrouped state, allowing you to view and analyze the raw date values in the Pivot Table component.
 
-![output](../pivot-table/images/date-ungroup.png)
+![Date ungroup option](../pivot-table/images/date-ungroup.png)
 
 ## Custom Grouping
 
@@ -347,7 +347,7 @@ To remove a custom group in the Pivot Table, simply right-click on the grouped h
 
 > After ungrouping, if you remove the related field from the report, any custom group fields associated with it will also be removed from the Pivot Table.
 
-![output](../pivot-table/images/custom-ungroup.png)
+![Custom ungroup option](../pivot-table/images/custom-ungroup.png)
 
 ## Limitations
 
