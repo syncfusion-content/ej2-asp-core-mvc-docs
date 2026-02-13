@@ -17,7 +17,7 @@ The accessibility compliance for the diagram component is outlined below.
 
 | Accessibility Criteria                                                              | Compatibility                                                                        |
 | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| WCAG 2.2 Support                 | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
+| WCAG 2.2 Support                 | AA |
 | Section 508 Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
 | Screen Reader Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Right-To-Left Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> |
