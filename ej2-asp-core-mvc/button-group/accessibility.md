@@ -17,7 +17,7 @@ The accessibility compliance for the Button group component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | AA |
 | [Section 508](https://www.section508.gov/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -55,7 +55,7 @@ The Button group component followed the [keyboard interaction](https://www.w3.or
 | **Press** | **To do this** |
 | --- | --- |
 | <kbd>Tab</kbd> | Focuses the next button in the ButtonGroup. |
-| <kbd>Space</kbd> | Activates the focussed button in the ButtonGroup. |
+| <kbd>Space</kbd> | Activates the focused button in the ButtonGroup. |
 
 ### Radiobutton behavior
 
