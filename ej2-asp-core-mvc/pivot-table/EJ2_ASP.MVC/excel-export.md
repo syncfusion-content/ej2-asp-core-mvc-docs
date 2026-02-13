@@ -218,8 +218,8 @@ The following example demonstrates how to add two custom aggregate types to the 
 The Pivot Table component allows applying custom date formatting to date-type fields added to the **row** and **column** axes. This formatting ensures consistency across both the rendered pivot table and the exported file. Custom date formatting can be applied by configuring the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property using the following steps:
 
 1. Set the [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) property to the target date field.
-2. Set the [`type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Type) property to **date** to identify the field as a date type.
-3. Set the [`format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) property to the desired date format pattern (for example, `"EEE, MMM d, ''yy"`)
+2. Set the [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Type) property to **date** to identify the field as a date type.
+3. Set the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) property to the desired date format pattern (for example, `"EEE, MMM d, ''yy"`)
 
 After configuration, call the `excelExport` method to export the Pivot Table with the applied formatting.
 
@@ -497,7 +497,7 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 ## Export only the current page
 
-By default, the Pivot Table exports all data records, which can result in larger file sizes when a large data source is assigned to the Pivot Table. To improve performance, export only the data records currently visible in the viewport by setting the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**.
+By default, the Pivot Table exports all data records, which can result in larger file sizes when a large data source is assigned to the Pivot Table. To improve performance, export only the data records currently visible in the viewport by setting the [`ExportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**.
 
 > This option is applicable only when the virtualization or paging feature is enabled.
 

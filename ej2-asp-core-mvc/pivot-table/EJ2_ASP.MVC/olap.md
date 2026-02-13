@@ -488,7 +488,7 @@ To enable virtual scrolling, set the [`EnableVirtualization`](https://help.syncf
 {% endtabs %}
 {% endif %}
 
-![output](images/olap-virtual.png)
+![Virtual Scrolling applied](images/olap-virtual.png)
 
 #### Limitations for Virtual Scrolling
 
@@ -558,7 +558,7 @@ Below are sample code files showing how to bind an OLAP data source in ASP.NET M
 
 #### Measures in the Row Axis
 
-By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#showgroupingbar) or the [field list](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#showfieldlist) UI. Simply drag the "Measures" button and drop it onto the rows axis.
+By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [Grouping Bar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#showgroupingbar) or the [Field List](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#showfieldlist) UI. Simply drag the "Measures" button and drop it onto the rows axis.
 
 Alternatively, you can set up the measure directly in your code by configuring the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) option, as shown in the code below:
 

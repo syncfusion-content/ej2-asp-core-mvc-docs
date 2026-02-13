@@ -58,7 +58,7 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 
 
-![output](images/calculatedfield.png)
+![CalculatedField applied](images/calculatedfield.png)
 
 ## Opening the calculated field dialog programmatically
 
@@ -340,7 +340,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 
 
-![output](images/calculatedfield-conditional.png)
+![Calculated field with conditional formula](images/calculatedfield-conditional.png)
 
 ## Event
 
@@ -354,7 +354,7 @@ The event provides the following parameters to facilitate interaction with calcu
 
 * `calculatedField`: Contains the calculated field information (new or existing) that was entered in the dialog.
 
-* [`calculatedFieldSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html): Provides access to the current [`PivotViewCalculatedFieldsSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) of the pivot table.
+* [`CalculatedFieldSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html): Provides access to the current [`PivotViewCalculatedFieldsSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) of the pivot table.
 
 * `cancel`: A boolean property that prevents the dialog changes from being applied when set to **true**.
 
@@ -391,7 +391,7 @@ The following example shows how to prevent users from creating calculated fields
 
 ### ActionBegin
 
-The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
 
 This event is triggered when users interact with calculated field functionality in the following ways:
 - Clicking the calculated field button
@@ -420,7 +420,7 @@ The event provides the following parameters to help you handle these interaction
 
 **Example:**
 
-The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
+The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -447,7 +447,7 @@ The example below illustrates how to prevent access to the calculated field dial
 
 ### ActionComplete
 
-The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
 
 The event provides the following parameters to help you handle completed operations:
 
@@ -470,7 +470,7 @@ The event provides the following parameters to help you handle completed operati
 
 **Example:**
 
-The example below demonstrates how to use the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event to log information when calculated field operations are completed:
+The example below demonstrates how to use the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event to log information when calculated field operations are completed:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -497,7 +497,7 @@ The example below demonstrates how to use the [`actionComplete`](https://help.sy
 
 ### ActionFailure
 
-The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 

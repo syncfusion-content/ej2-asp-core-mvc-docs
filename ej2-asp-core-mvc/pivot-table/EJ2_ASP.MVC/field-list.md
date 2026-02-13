@@ -52,9 +52,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/gs_fieldlist_icon.png)
+![Pivot Table field list icon in toolbar](images/gs_fieldlist_icon.png)
 <br/>
-![output](images/gs_fieldlist_dialog.png)
+![Pivot Table built-in field list popup dialog](images/gs_fieldlist_dialog.png)
 
 
 ## Stand-alone Field List (Fixed)
@@ -88,7 +88,7 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 
 
-![output](images/staticfieldlist.png)
+![Stand-alone static field list](images/staticfieldlist.png)
 
 ## Invoking dynamic Field List (Customized)
 
@@ -125,7 +125,7 @@ The sample code below shows how to open the Field List dialog using an external 
 
 
 
-![output](images/fieldlist-custom.png)
+![Customized field list popup opened via external button](images/fieldlist-custom.png)
 
 
 ## Search desired field
@@ -136,7 +136,7 @@ You can enable the field search option in two different Field List configuration
 
 **Stand-alone Field List**
 
-To enable the search box in the stand-alone Field List UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
+To enable the search box in the stand-alone Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
 
 > By default, the field search option is disabled in the Field List UI.
 
@@ -165,11 +165,11 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 
 
-![output](images/Search desired field in static field list.png)
+![Searching Static FieldList](images/Search desired field in static field list.png)
 
 **Pivot Table's Built-in Popup Field List**
 
-To enable the search box in the Pivot Table's built-in popup Field List UI, set the [`enableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
+To enable the search box in the Pivot Table's built-in popup Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -196,7 +196,7 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 
 
-![output](images/Search desired field in popup field list.png)
+![Searching Popup FieldList](images/Search desired field in popup field list.png)
 
 ## Option to sort fields
 
@@ -305,13 +305,13 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 
 
-![output](images/fieldlist_hide.png)
+![Pivot Table field list with hidden fields excluded](images/fieldlist_hide.png)
 
 ## Re-arranging fields
 
 To rearrange fields, users can drag a field from the Field List and drop it into the desired axis (column, row, value, or filter) using the drag-and-drop holder. This allows users to modify the report dynamically during runtime, adjusting the layout to suit their needs.
 
-![output](images/fieldlist_axes.png)
+![Field list showing drag-and-drop axes](images/fieldlist_axes.png)
 
 ## Filtering members
 
@@ -359,7 +359,7 @@ The defer layout update option allows users to update the Pivot Table only when 
 
 ## Show built-in Field List (Popup) over specific target
 
-The built-in Field List dialog can be displayed over a specific element on a web page by setting the target element in the [`dataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event. By default, the dialog appears over the Pivot Table's parent element. Users can change this by passing a different target element, such as `document.body`, to show the Field List dialog in a desired location.
+The built-in Field List dialog can be displayed over a specific element on a web page by setting the target element in the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event. By default, the dialog appears over the Pivot Table's parent element. Users can change this by passing a different target element, such as `document.body`, to show the Field List dialog in a desired location.
 
 The sample code below demonstrates how to display the built-in Field List dialog using `document.body` as the target element.
 
@@ -388,7 +388,7 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 
 
-![output](images/popup-fieldlist-specifictarget.png)
+![Field list popup over target](images/popup-fieldlist-specifictarget.png)
 
 ## Show field list using toolbar
 
@@ -419,7 +419,7 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 
 
-![output](images/fieldlist_toolbar.png)
+![Field list in toolbar](images/fieldlist_toolbar.png)
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -452,11 +452,11 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 
 
-![output](images/fieldlist_caption1.png)
+![Field list with captions applied](images/fieldlist_caption1.png)
 
 ## Show values button
 
-At runtime, the **Values** button in the field list allows users to move the values position to a different place (index) among other fields in the column or row axis of the Pivot Table. To enable the **Values** button, set the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ShowValuesButton) property to **true**.
+At runtime, the **Values** button in the field list allows users to move the values position to a different place (index) among other fields in the column or row axis of the Pivot Table. To enable the **Values** button, set the [`ShowValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ShowValuesButton) property to **true**.
 
 > This support is only available for relational data sources.
 
@@ -487,7 +487,7 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 
 
-![output](images/fieldlistmeasureatdifferentposition.png)
+![Values button in field list for repositioning measures](images/fieldlistmeasureatdifferentposition.png)
 
 ## Events
 
@@ -496,9 +496,9 @@ At runtime, the **Values** button in the field list allows users to move the val
 The [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is available in both the Pivot Table and the Field List. It triggers after the data engine is populated with the updated report settings, allowing the Pivot Table and Field List to stay in sync when changes are made.
 
 - In the Field List, the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is triggered whenever the report is modified, such as when fields are added, removed, or rearranged. The updated report is sent to the Pivot Table using the `updateView` method within this event to refresh the Pivot Table's display.
-- In the Pivot Table, the [`enginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event is triggered when the report is updated. The modified report is passed to the Field List using the `update` method to ensure the Field List reflects the changes.
+- In the Pivot Table, the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event is triggered when the report is updated. The modified report is passed to the Field List using the `update` method to ensure the Field List reflects the changes.
 
-This event includes the following parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), [`pivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html), and [`pivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues).
+This event includes the following parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html), and [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues).
 
 > Note: This event is not needed for the popup Field List, as it is built into the Pivot Table.
 
@@ -527,7 +527,7 @@ This event includes the following parameters: [`PivotViewDataSourceSettings`](ht
 
 ### FieldListRefreshed
 
-The  event triggers whenever a change occurs in the field list UI, such as adding, removing, or rearranging fields, or applying sort or filter options. This event provides two parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) and [`pivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). These parameters allow users to track and respond to updates in the field list. The event applies only to the static field list.
+The  event triggers whenever a change occurs in the field list UI, such as adding, removing, or rearranging fields, or applying sort or filter options. This event provides two parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) and [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). These parameters allow users to track and respond to updates in the field list. The event applies only to the static field list.
 
 For example, when a user sorts a field in the field list, the field list updates, and the The event [`FieldListRefreshed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldListRefreshed) event triggers. Users can perform custom operation inside that event.
 
@@ -591,11 +591,11 @@ In the following code example, we changed the caption of the dropped field using
 
 
 
-![output](images/fielddropped_fieldlist.png)
+![Field dropped event in field list](images/fielddropped_fieldlist.png)
 
 ### ActionBegin
 
-The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event triggers when UI actions such as sorting, filtering, aggregation, or editing calculated fields begin in the field list. This event allows users to identify the current action being performed at runtime and provides the following parameters:
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event triggers when UI actions such as sorting, filtering, aggregation, or editing calculated fields begin in the field list. This event allows users to identify the current action being performed at runtime and provides the following parameters:
 
 * `dataSourceSettings`: Contains the current data source settings, including input data source, rows, columns, values, filters, format settings, and other configurations.
 
@@ -617,7 +617,7 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 * `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
 
-In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event.
+In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -644,7 +644,7 @@ In the following sample, you can restrict opening the popup field list by settin
 
 ### ActionComplete
 
-The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionComplete) event is triggered when UI actions such as sorting, filtering, aggregation, or editing calculated fields in the field list are completed. This event allows users to identify which UI action has been completed at runtime. The event provides the following parameters:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionComplete) event is triggered when UI actions such as sorting, filtering, aggregation, or editing calculated fields in the field list are completed. This event allows users to identify which UI action has been completed at runtime. The event provides the following parameters:
 
 - `dataSourceSettings`: Contains the current [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) such as input data source, rows, columns, values, filters, format settings, and other configurations.
 
@@ -691,7 +691,7 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### ActionFailure
 
-The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 

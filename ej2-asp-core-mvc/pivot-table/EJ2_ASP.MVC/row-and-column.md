@@ -52,7 +52,7 @@ These dimension properties support multiple formats to accommodate various layou
 
 
 
-![output](images/height-width.png)
+![Pivot table height and width example](images/height-width.png)
 
 ## Row Height
 
@@ -87,7 +87,7 @@ For example, in the sample code below, the [`RowHeight`](https://help.syncfusion
 
 
 
-![output](images/row-height.png)
+![Pivot table row height](images/row-height.png)
 
 ## Column Width
 
@@ -122,7 +122,7 @@ In the following example, the [`ColumnWidth`](https://help.syncfusion.com/cr/asp
 
 
 
-![output](images/column-width.png)
+![Pivot table column width](images/column-width.png)
 
 ### Adjust width based on columns
 
@@ -153,7 +153,7 @@ By default, when the component width exceeds the total width of all columns, the
 
 
 
-![output](images/allowautoresizing.png)
+![Auto resizing columns](images/allowautoresizing.png)
 
 ## Reorder
 
@@ -186,7 +186,7 @@ To enable this option, set the [`AllowReordering`](https://help.syncfusion.com/c
 
 
 
-![output](images/reorder.png)
+![Column reorder example](images/reorder.png)
 
 ## Column Resizing
 
@@ -221,7 +221,7 @@ This option is enabled by default. To control column resizing, set the [`AllowRe
 
 
 
-![output](images/resize.png)
+![Column resizing example](images/resize.png)
 
 ## Text Wrap
 
@@ -252,7 +252,7 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 
 
-![output](images/textwrap.png)
+![Text wrap in pivot table](images/textwrap.png)
 
 ## Text Align
 
@@ -292,7 +292,7 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 ## AutoFit
 
-The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
+The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -319,9 +319,9 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 
 
-![output](images/autofit-method.png)
+![Autofit columns example](images/autofit-method.png)
 
-> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
+> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -348,7 +348,7 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 
 
-![output](images/autofit-grouping.png)
+![Autofit with grouping bar](images/autofit-grouping.png)
 
 ### Autofit Specific Columns
 
@@ -381,7 +381,7 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 
 
-![output](images/autofit-event.png)
+![Autofit specific columns](images/autofit-event.png)
 
 ## Grid Lines
 
@@ -424,7 +424,7 @@ The following grid line modes are available:
 
 
 
-![output](images/gridlines.png)
+![Grid lines example](images/gridlines.png)
 
 ## Selection
 
@@ -462,7 +462,7 @@ The Pivot Table provides two selection modes, controlled by the [`Type`](https:/
 
 
 
-![output](images/selection.png)
+![Pivot table selection](images/selection.png)
 
 ### Selection mode
 
@@ -500,7 +500,7 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 
 
-![output](images/selection2.png)
+![Selection mode example](images/selection2.png)
 
 ### Cell Selection Mode
 
@@ -535,7 +535,7 @@ To set the cell selection mode, use the [`CellSelectionMode`](https://help.syncf
 
 > To use cell selection modes, ensure that the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Mode) property in [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) is set to **Cell** or **Both** and the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Type) property is set to **Multiple**. This allows users to select more than one cell at a time for better comparison and review.
 
-![output](images/cell-selection.png)
+![Cell selection modes](images/cell-selection.png)
 
 ### Changing background color of the selected cell
 
@@ -568,13 +568,13 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 
 
-![output](images/cell-selection-color.png)
+![Selected cell color example](images/cell-selection-color.png)
 
 ### Event
 
 #### CellSelected
 
-When a user finishes selecting cells, the `cellSelected` event is triggered. This event provides details about the selected cells, including the related row and column headers. The event holds three important parameters: `selectedCellsInfo`, `currentCell`, and `target`. Users can use this information to easily identify the selected data and share it with other parts of their application, such as for data binding or additional processing.
+When a user finishes selecting cells, the `CellSelected` event is triggered. This event provides details about the selected cells, including the related row and column headers. The event holds three important parameters: `selectedCellsInfo`, `currentCell`, and `target`. Users can use this information to easily identify the selected data and share it with other parts of their application, such as for data binding or additional processing.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -601,11 +601,11 @@ When a user finishes selecting cells, the `cellSelected` event is triggered. Thi
 
 
 
-![output](images/cellselected_event.png)
+![Cell selected event](images/cellselected_event.png)
 
 #### CellSelecting
 
-The [`cellSelecting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelecting) event triggers before a cell selection is completed. It helps users preview the details of the cell, including the related row and column headers, before making a final selection. The event also allows users to cancel the selection action if needed. This event includes the following parameters:
+The [`CellSelecting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelecting) event triggers before a cell selection is completed. It helps users preview the details of the cell, including the related row and column headers, before making a final selection. The event also allows users to cancel the selection action if needed. This event includes the following parameters:
 
 - `currentCell`: Contains information about the cell that the user is about to select.
 - `data`: Displays the data linked to the current cell, along with its row and column headings.
@@ -675,15 +675,15 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 
 
-![output](images/clipmode.png)
+![Clip mode example](images/clipmode.png)
 
 ## Cell Template
 
-You can change how each cell in the Pivot Table looks by using the [`cellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. With [`cellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate), you can use either an HTML string or the ID of an HTML element to add custom content to every cell. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
+You can change how each cell in the Pivot Table looks by using the [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) option. With [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate), you can use either an HTML string or the ID of an HTML element to add custom content to every cell. This helps you display cell values in any format you prefer, such as adding icons, colors, or other elements for better understanding.
 
 For example, in the following sample, each year's revenue cost is shown along with trend icons. This gives users a clear and quick way to see changes in data at a glance.
 
-> The [`cellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) property is triggered whenever the Pivot Table report configuration is updated through code-behind or UI actions such as sorting, filtering, and more. Therefore, binding a large dataset to the Pivot Table while defining a template for this property, or assigning a complex template to it, may lead to flickering issues in the Pivot Table UI.
+> The [`CellTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellTemplate) property is triggered whenever the Pivot Table report configuration is updated through code-behind or UI actions such as sorting, filtering, and more. Therefore, binding a large dataset to the Pivot Table while defining a template for this property, or assigning a complex template to it, may lead to flickering issues in the Pivot Table UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -710,13 +710,13 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 
 
-![output](images/cell_template.png)
+![Pivot table cell template](images/cell_template.png)
 
 ## Events
 
 ### QueryCellInfo
 
-The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_QueryCellInfo) event is triggered when a row or value cell is rendered in the Pivot Table. This event gives users the ability to change the appearance or content of each table cell according to their needs. The following parameters are available within the event:
+The [`QueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_QueryCellInfo) event is triggered when a row or value cell is rendered in the Pivot Table. This event gives users the ability to change the appearance or content of each table cell according to their needs. The following parameters are available within the event:
 
 - `cell`: Provides information about the specific cell currently being rendered.
 - `data`: Contains all data related to the row in which the cell appears.
@@ -819,7 +819,7 @@ The event provides the following parameters:
 
 ### CellClick
 
-The [`cellClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellClick) event occurs when a user clicks a cell in the Pivot Table. With this event, users can update the style of the selected cell, edit its value, or perform other actions on the cell's content. The event provides the following parameters:
+The [`CellClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellClick) event occurs when a user clicks a cell in the Pivot Table. With this event, users can update the style of the selected cell, edit its value, or perform other actions on the cell's content. The event provides the following parameters:
 
 - `currentCell`: Contains details about the clicked cell.
 - `data`: Contains the clicked cell’s information, such as the axis, formatted text, raw text, row header, column header, and value.

@@ -268,20 +268,6 @@ Within each format object in the [FormatSetting](https://help.syncfusion.com/cr/
 
 This approach allows you to apply different formatting patterns to multiple value fields by adding additional objects to the [FormatSetting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array. Each object in the array can target a different field, providing complete control over how numerical data is displayed in the Pivot Table.
 
-## Module Injection
-
-Module injection enhances the Pivot Table by enabling additional functionality through specialized modules. To incorporate specific features into your Pivot Table, inject the required modules into your ASP.NET MVC application.
-
-The following modules are available to extend the basic Pivot Table functionality:
-
-* `GroupingBar` - Inject this module to enable the grouping bar, which allows users to drag and drop fields between different axes of the Pivot Table.
-* `FieldList` - Inject this module to enable the field list, providing an interactive interface for users to add, remove, and rearrange fields dynamically.
-* `CalculatedField` - Inject this module to enable calculated fields, allowing users to create custom formulas and expressions for data analysis.
-
-To make these modules available, inject them into the PivotView using the `Inject` component within your `App.tsx` file, as shown below. By injecting only the modules you need, your application loads faster and uses fewer resources, as unnecessary module code is excluded from the final bundle.
-
-> **Note:** Only inject the modules that you plan to use in your application. This approach helps maintain optimal bundle size and application performance.
-
 ## Enable Field List
 
 The field list enhances user interaction by allowing you to dynamically add, remove, and rearrange fields across different axes **including column, row, value, and filter axes**. This user-friendly interface also provides sorting and filtering options that can be applied at runtime without requiring code changes.

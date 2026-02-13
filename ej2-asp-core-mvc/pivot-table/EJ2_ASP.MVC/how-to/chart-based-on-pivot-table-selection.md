@@ -18,7 +18,7 @@ Cell selection is enabled using the [`AllowSelection`](https://help.syncfusion.c
 
 ## Implementation
 
-The [`cellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started) control can be plotted accordingly.
+The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/getting-started) control can be plotted accordingly.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

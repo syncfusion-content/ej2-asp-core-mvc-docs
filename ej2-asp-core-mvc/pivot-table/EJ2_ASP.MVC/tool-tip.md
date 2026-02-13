@@ -11,7 +11,7 @@ documentation: ug
 
 # Tooltip in ##Platform_Name## Pivot Table Component
 
-The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
+The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,8 +78,8 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/tooltipTemplate.png)
+![Pivot table tooltip template](images/tooltipTemplate.png)
 <br/>
 <br/>
 <br/>
-![output](images/tooltipTemplate-chart.png)
+![Pivot chart tooltip template](images/tooltipTemplate-chart.png)

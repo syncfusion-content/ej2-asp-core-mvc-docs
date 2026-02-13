@@ -598,7 +598,7 @@ When working with large amounts of data in the Pivot Table, the virtual scroll o
 
 When exporting the Pivot Table as a PDF using the PivotEngine export option, the row headers are repeated on each page by default. This helps users easily identify rows when viewing larger tables split across multiple PDF pages.
 
-If you want to turn off the repeated row headers in your PDF, set the `allowRepeatHeader` property to **false** inside the `beforeExport` event. Make sure you are using the `pdfExport` method with the PivotEngine export.
+If you want to turn off the repeated row headers in your PDF, set the `AllowRepeatHeader` property to **false** inside the `BeforeExport` event. Make sure you are using the `pdfExport` method with the PivotEngine export.
 
 > To use PivotEngine export, inject the `PDFExport` module in the Pivot Table.
 > By default, repeating row headers is enabled in the PivotEngine export.
@@ -628,7 +628,7 @@ If you want to turn off the repeated row headers in your PDF, set the `allowRepe
 
 ### Export all pages
 
-The Pivot Table allows users to export the entire set of virtual data—meaning all records used to create the complete table—as a PDF document. By default, when virtual scrolling is enabled, the pivot engine will export all data. If you want to export only the data currently shown in the visible area of the Pivot Table, set the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**. To make use of the pivot engine export, include the `PDFExport` module in your Pivot Table.
+The Pivot Table allows users to export the entire set of virtual data—meaning all records used to create the complete table—as a PDF document. By default, when virtual scrolling is enabled, the pivot engine will export all data. If you want to export only the data currently shown in the visible area of the Pivot Table, set the [`ExportAllPages`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**. To make use of the pivot engine export, include the `PDFExport` module in your Pivot Table.
 
 > By default, the pivot engine export is performed automatically when virtual scrolling is enabled.
 
@@ -659,7 +659,7 @@ The Pivot Table allows users to export the entire set of virtual data—meaning 
 
 ### PdfQueryCellInfo
 
-The `pdfQueryCellInfo` event occurs for each row and value cell while exporting the Pivot Table to a PDF. This event allows users to change the value, appearance, or other details of the current cell in the PDF file. The following parameters are available in this event:
+The `PdfQueryCellInfo` event occurs for each row and value cell while exporting the Pivot Table to a PDF. This event allows users to change the value, appearance, or other details of the current cell in the PDF file. The following parameters are available in this event:
 
 - `value`: The content displayed in the cell.
 - `column`: The column information for the current cell.
@@ -693,7 +693,7 @@ By using this event, users can easily update the cell text, apply different styl
 
 ### PdfHeaderQueryCellInfo
 
-The `pdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows users to easily change values or apply styles to the column header cells in the exported PDF file.
+The `PdfHeaderQueryCellInfo` event is triggered for each column header cell when exporting the Pivot Table to a PDF document. This event allows users to easily change values or apply styles to the column header cells in the exported PDF file.
 
 The event provides the following parameters:
 

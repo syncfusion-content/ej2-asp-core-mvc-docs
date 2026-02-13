@@ -75,7 +75,7 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 
 
-![output](images/edit-normal.png)
+![Pivot Table normal edit mode](images/edit-normal.png)
 
 ## Dialog
 
@@ -106,7 +106,7 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 
 
-![output](images/edit-dialog.png)
+![Pivot Table dialog edit mode](images/edit-dialog.png)
 
 ## Batch
 
@@ -137,7 +137,7 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 
 
-![output](images/edit-batch.png)
+![Pivot Table batch edit mode](images/edit-batch.png)
 
 ## Command column
 
@@ -181,11 +181,11 @@ N>
 
 
 
-![output](images/edit-command.png)
+![Pivot Table command column editing](images/edit-command.png)
 
 ## Inline Editing
 
-The inline editing option provides streamlined data modification by allowing direct editing of value cells without opening an external dialog, improving workflow efficiency for quick data updates. This editing mode applies only when a single raw data item corresponds to the value of the cell and works with all editing modes including normal, batch, dialog, and column commands. Enable inline editing by setting the [`allowInlineEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowInlineEditing)property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
+The inline editing option provides streamlined data modification by allowing direct editing of value cells without opening an external dialog, improving workflow efficiency for quick data updates. This editing mode applies only when a single raw data item corresponds to the value of the cell and works with all editing modes including normal, batch, dialog, and column commands. Enable inline editing by setting the [`AllowInlineEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowInlineEditing)property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -212,7 +212,7 @@ The inline editing option provides streamlined data modification by allowing dir
 
 
 
-![output](images/inline-editting.png)
+![Pivot Table inline editing](images/inline-editting.png)
 
 ## Editing using the pivot chart
 
@@ -245,16 +245,16 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 
 
-![output](images/drillthrough-chart-before.png)
+![Pivot chart drill-through before editing](images/drillthrough-chart-before.png)
 <br/>
 <br/>
-![output](images/editing-dialog.png)
+![Pivot chart editing dialog](images/editing-dialog.png)
 
 ## Events
 
 ### EditCompleted
 
-The event [`editCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EditCompleted) triggers when values cells are edited completely. The event provides edited cell(s) information along with its previous cell value. It also helps to do the CRUD operation by manually updating the data source which is connected to the component. It has the following parameters.
+The event [`EditCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EditCompleted) triggers when values cells are edited completely. The event provides edited cell(s) information along with its previous cell value. It also helps to do the CRUD operation by manually updating the data source which is connected to the component. It has the following parameters.
 
 * `currentData` - It holds the current raw data of the edited cells.
 * `previousData` - It holds the previous raw data of the edited cells.
@@ -295,7 +295,7 @@ For more information [`refer`](./drill-through#begindrillthrough) here.
 
 ### ActionBegin
 
-The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event triggers when editing actions such as add, edit, save, or delete are started through the UI (either by dialog or inline editing). This event lets users monitor the editing workflow and take action before the operation completes. The following parameters are available in the event:
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event triggers when editing actions such as add, edit, save, or delete are started through the UI (either by dialog or inline editing). This event lets users monitor the editing workflow and take action before the operation completes. The following parameters are available in the event:
 
 - `dataSourceSettings`: Contains the current data source settings, including all input data, rows, columns, values, filters, and format settings.
 - `actionName`: Shows the name of the editing action that has started. The following are the UI actions and their names:
@@ -309,7 +309,7 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 - `cancel`: Allows users to stop (cancel) the action by setting this option to **true**.
 
-For example, you can restrict add and save actions by setting **args.cancel** to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
+For example, you can restrict add and save actions by setting **args.cancel** to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -336,7 +336,7 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 ### ActionComplete
 
-The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers whenever a UI action, such as add, update, remove, or save (using dialog or inline editing), is finished. This lets users know exactly what kind of action has just been completed. The event provides the following details:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers whenever a UI action, such as add, update, remove, or save (using dialog or inline editing), is finished. This lets users know exactly what kind of action has just been completed. The event provides the following details:
 
 * `dataSourceSettings`: Contains the current data source settings, including input data, rows, columns, values, filters, format settings, and more.
 * `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
@@ -375,7 +375,7 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### ActionFailure
 
-The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 

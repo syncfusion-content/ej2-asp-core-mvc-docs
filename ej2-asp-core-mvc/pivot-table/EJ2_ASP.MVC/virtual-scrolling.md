@@ -43,7 +43,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 {% endtabs %}
 {% endif %}
 
-![output](images/virtualscrolling.gif)
+![Virtual scrolling example](images/virtualscrolling.gif)
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 
@@ -51,7 +51,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 When virtual scrolling is enabled, the Pivot Table renders not only the current view page but also the adjacent previous and next pages by default. While this approach supports smooth navigation, it can increase computational load and reduce performance when working with extensive datasets, as additional rows and columns from surrounding pages are processed.
 
-To optimize performance, set the [allowSinglePage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewVirtualScrollSettingsBuilder_AllowSinglePage_System_Boolean_) property to **true** within the [virtualScrollSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettings.html). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, filtering, and more.
+To optimize performance, set the [AllowSinglePage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewVirtualScrollSettingsBuilder_AllowSinglePage_System_Boolean_) property to **true** within the [virtualScrollSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettings.html). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, filtering, and more.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

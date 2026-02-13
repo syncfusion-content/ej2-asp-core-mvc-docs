@@ -44,20 +44,20 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 
 <!-- markdownlint-disable MD012 -->
-![output](images/toolbar_cformatting.png)
+![Conditional formatting icon in toolbar](images/toolbar_cformatting.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog.png)
+![Adding new conditional format](images/toolbar_cformatting_dialog.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_dialog_apply.png)
+![Setting conditional format criteria](images/toolbar_cformatting_dialog_apply.png)
 <br/>
 <br/>
-![output](images/toolbar_cformatting_grid.png)
+![Resultant pivot table on applied conditional format](images/toolbar_cformatting_grid.png)
 
 ## Configure conditional formatting through code-behind
 
-Conditional formatting can also be applied programmatically during component initialization using the [`PivotViewConditionalFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html) property in the `dataSourceSettings`. This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the Pivot Table loads. The required properties to apply a new conditional formatting are,
+Conditional formatting can also be applied programmatically during component initialization using the [`PivotViewConditionalFormatSetting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html) property in the `DataSourceSettings`. This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the Pivot Table loads. The required properties to apply a new conditional formatting are,
 
 * [ApplyGrandTotals](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_ApplyGrandTotals): This boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to **true**.
 * [`Measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Measure): Specifies the value field name for which style will be applied.
@@ -102,9 +102,9 @@ Users can also access the conditional formatting dialog through external UI elem
 
 
 
-![output](images/cond-format-btn.png)
+![Conditional formatting dialog opened from external button](images/cond-format-btn.png)
 
-![output](images/cond-format-btn2.png)
+![Conditional formatting dialog](images/cond-format-btn2.png)
 
 ## Conditional formatting for all fields
 
@@ -137,7 +137,7 @@ To format all value fields together, use the [`PivotViewConditionalFormatSetting
 
 
 
-![output](images/cformatting_all.png)
+![Conditional formatting applied to all value fields](images/cformatting_all.png)
 
 ## Conditional formatting for specific value field
 
@@ -168,19 +168,19 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 
 
-![output](images/cformatting_single.png)
+![Conditional formatting for specific value field](images/cformatting_single.png)
 
 ## Editing and removing existing conditional format
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.
 
-![output](images/cformatting_remove.png)
+![Editing and removing conditional formatting rules](images/cformatting_remove.png)
 
 ## Event
 
 ### ConditionalFormatting
 
-The `conditionalFormatting` event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of default conditions at runtime. To utilize this event, the [`AllowConditionalFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowConditionalFormatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
+The `ConditionalFormatting` event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of default conditions at runtime. To utilize this event, the [`AllowConditionalFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowConditionalFormatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
 
 * `applyGrandTotals` - Allows to apply conditional formatting to the grand totals of row and column axis in the Pivot Table.
 * `conditions` - Allows you to choose the operator type such as equals, greater than, less than, etc. for conditional formatting.

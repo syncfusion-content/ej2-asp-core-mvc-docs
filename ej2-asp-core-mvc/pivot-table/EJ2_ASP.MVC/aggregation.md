@@ -75,7 +75,7 @@ For each value field, the aggregation type can be set using the property [`Type`
 {% endif %}
 
 
-![output](images/aggregation_differencefrom.png)
+![DifferenceFrom aggregation type](images/aggregation_differencefrom.png)
 
 
 > By default, the aggregation will be considered as [**SummaryTypes.Sum**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as [**SummaryTypes.Count**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html).
@@ -120,7 +120,7 @@ The following code demonstrates how to configure the pivot table component to di
 {% endif %}
 
 
-![output](images/aggregateTypes.png)
+![Selective aggregation types in dropdown menu](images/aggregateTypes.png)
 
 ## Hiding aggregation type from button text
 
@@ -152,9 +152,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 {% endif %}
 
 
-![output](images/aggregation_fl_value.png)
+![Aggregation name hidden in button UI - Field List](images/aggregation_fl_value.png)
 <br/>
-![output](images/aggregation_gb_value.png)
+
+![Aggregation name hidden in button UI - Grouping Bar](images/aggregation_gb_value.png)
 
 ## Hiding aggregation type icon from UI
 
@@ -186,7 +187,7 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 {% endif %}
 
 
-![output](images/value-type-icon-gb.png)
+![Aggregation type icon hidden in Grouping Bar](images/value-type-icon-gb.png)
 
 ## Event
 
@@ -229,7 +230,7 @@ The [`AggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ### ActionBegin
 
-The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when clicking and selecting the aggregate type via the dropdown icon in the value field button, which is present in both grouping bar and field list UI. This allows the user to identify the current action being performed at runtime. It has the following parameters:
+The event [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) triggers when clicking and selecting the aggregate type via the dropdown icon in the value field button, which is present in both grouping bar and field list UI. This allows the user to identify the current action being performed at runtime. It has the following parameters:
 
 * `dataSourceSettings`: Contains the current data source settings such as input data source, rows, columns, values, filters, format settings and more.
 
@@ -241,7 +242,7 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 * `cancel`: Allows restricting the current action.
 
-In the following example, an action taken during aggregation type selection via the dropdown icon can be prevented by setting the **args.cancel** option to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
+In the following example, an action taken during aggregation type selection via the dropdown icon can be prevented by setting the **args.cancel** option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -268,7 +269,7 @@ In the following example, an action taken during aggregation type selection via 
 
 ### ActionComplete
 
-The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event is triggered when a UI action is completed, such as changing the aggregation type using the dropdown icon in the value field button, available within both the grouping bar and field list user interfaces. This event enables users to identify which UI action has been completed at runtime. The event provides the following parameters:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event is triggered when a UI action is completed, such as changing the aggregation type using the dropdown icon in the value field button, available within both the grouping bar and field list user interfaces. This event enables users to identify which UI action has been completed at runtime. The event provides the following parameters:
 
 * `dataSourceSettings`: The current data source settings, including input data source, rows, columns, values, filters, format settings, and related properties.
 * `actionName`: Specifies the name of the completed action. For example, after changing the aggregation type, the action name will be **Field aggregated**.
@@ -302,7 +303,7 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 ### ActionFailure
 
-The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: Specifies the name of the failed action. For example, if the failure occurs during aggregation, the action name will be **Aggregate field**.
 * `errorInfo`: Contains detailed error information related to the failed UI action.

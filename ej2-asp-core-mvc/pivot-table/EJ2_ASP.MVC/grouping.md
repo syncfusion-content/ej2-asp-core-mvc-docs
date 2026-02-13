@@ -79,7 +79,7 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 
 
-![output](./images/number-group-option.png)
+![Number grouping option](./images/number-group-option.png)
 
 
 ### Range selection
@@ -138,7 +138,7 @@ You can configure number grouping through code-behind using the [`PivotViewGroup
 
 To remove an applied number grouping, simply right-click on the grouped header in the Pivot Table and select **Ungroup** option from the context menu. This action will break apart the grouped ranges and display the original, ungrouped values in the table.
 
-![output](images/number-ungroup.png)
+![Number ungroup option](images/number-ungroup.png)
 
 ## Date Grouping
 
@@ -232,7 +232,7 @@ Furthermore, in the field list UI, these date group fields **Years (Date)**, **Q
 
 To remove a previously applied date grouping, simply right-click the relevant date-based header within the Pivot Table and select the **Ungroup** option from the context menu. This action will revert the grouped dates back to their original, ungrouped state, allowing you to view and analyze the raw date values in the Pivot Table component.
 
-![output](images/date-ungroup.png)
+![Date ungroup option](images/date-ungroup.png)
 
 ## Custom Grouping
 
@@ -342,8 +342,8 @@ To remove a custom group in the Pivot Table, simply right-click on the grouped h
 
 > After ungrouping, if you remove the related field from the report, any custom group fields associated with it will also be removed from the Pivot Table.
 
-![output](images/custom-ungroup.png)
+![Custom ungroup option](images/custom-ungroup.png)
 
 ## Limitations
 
-The grouping feature is applied based on the selected row or column headers using the following [`selectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_SelectionSettings): selection `mode` set to **Cell**, selection `type` set to **Multiple**, and `cellSelectionMode`  set to **Box** by default. When using the `selection` and grouping features together, cell selection is limited to row or column headers with these settings. Other settings, such as selection `mode` set to **Row** or **Column**, selection `type` set to **Single**, or `cellSelectionMode` set to **Flow**, are incompatible with grouping in the pivot table.
+The grouping feature is applied based on the selected row or column headers using the following [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_SelectionSettings): selection `mode` set to **Cell**, selection `type` set to **Multiple**, and `cellSelectionMode`  set to **Box** by default. When using the `selection` and grouping features together, cell selection is limited to row or column headers with these settings. Other settings, such as selection `mode` set to **Row** or **Column**, selection `type` set to **Single**, or `cellSelectionMode` set to **Flow**, are incompatible with grouping in the pivot table.

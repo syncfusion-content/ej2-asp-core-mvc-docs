@@ -72,7 +72,7 @@ You can also configure filtering programmatically using the [`PivotViewFilterSet
 
 
 
-![output](images/member-filtering.png)
+![Member filtering applied in pivot table](images/member-filtering.png)
 
 ### Option to select and unselect all members
 
@@ -133,7 +133,7 @@ You can control how many members are displayed in the member filter dialog using
 
 
 
-![output](images/maxnodelimit.png)
+![Member filter dialog with max node limit applied](images/maxnodelimit.png)
 
 When the member count exceeds your set limit, you can use the search option to find specific members beyond the displayed range. For example, if your data contains 5000 members named "Node 1", "Node 2", "Node 3", and so on, and you set the [`MaxNodeLimitInMemberEditor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxNodeLimitInMemberEditor) property to **500**, only the first 500 members will appear by default. The dialog will show a message like "4500 more items. Search to refine further." To access members 501 to 5000, type the starting characters in the search box to locate the desired members. Once the members appear in the list, you can select or deselect them to apply your filtering preferences.
 
@@ -230,7 +230,7 @@ Label filtering allows you to display only the data with specific header text ac
 * Number data type
 * Date data type
 
-To enable label filtering, set the [`AllowLabelFilter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_AllowLabelFilter) property to **true** in the `dataSourceSettings`. Once enabled, you can access the filtering options by clicking the filter icon next to any field in the row or column axis of the field list or grouping bar. This opens the filtering dialog where you can navigate to the "Label" tab to apply your label filtering criteria.
+To enable label filtering, set the [`AllowLabelFilter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_AllowLabelFilter) property to **true** in the `DataSourceSettings`. Once enabled, you can access the filtering options by clicking the filter icon next to any field in the row or column axis of the field list or grouping bar. This opens the filtering dialog where you can navigate to the "Label" tab to apply your label filtering criteria.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -327,7 +327,7 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 
 
 
-![output](images/labelfiltering_code.png)
+![Label filtering applied](images/labelfiltering_code.png)
 
 ### Filtering number data type through code
 
@@ -336,7 +336,7 @@ Filter numeric data programmatically to display only values that meet specific n
 To filter numeric values, specify the filtering criteria using the following properties:
 - [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1): The primary value for comparison
 - [`Condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition): The comparison operator
-- [`value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value2) and [**Operators.NotBetween**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html) conditions
+- [`Value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value2) and [**Operators.NotBetween**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html) conditions
 
 For example, to display only sales data where the "Sold" field values are less than 40000, set [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1) to "40000" and [`Condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition) to [**Operators.LessThan**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html).
 
@@ -370,7 +370,7 @@ For example, to display only sales data where the "Sold" field values are less t
 
 
 
-![output](images/numberfiltering.png)
+![Number filtering applied](images/numberfiltering.png)
 
 ### Filtering date data type through code
 
@@ -407,13 +407,13 @@ To apply date filtering, specify your filtering criteria using the [`Value1`](ht
 
 
 
-![output](images/datefiltering.png)
+![Date filtering applied](images/datefiltering.png)
 
 ### Clearing the existing label filter
 
 Users can clear the applied label filter by clicking the **Clear** option at the bottom of the filter dialog. This option is located under the **Label** tab for string and number type filtering, and under the **Date** tab for date type filtering.
 
-![output](images/clearfilter.png)
+![Clear filter option in dialog](images/clearfilter.png)
 
 ## Value filtering
 
@@ -464,7 +464,7 @@ You can also configure value filtering programmatically using the [`PivotViewFil
 * [`Measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Measure): Specifies the value field name used for filtering.
 * [`Condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition): Defines the comparison operator such as [**Operators.Equals**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_Equals), [**Operators.GreaterThan**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_GreaterThan), [**Operators.LessThan**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_LessThan).
 * [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1): Sets the comparison value or the start value for range operations.
-* [`value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value2): Sets the end value, applicable only for [**Operators.Between**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_Between) and [**Operators.NotBetween**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_NotBetween) operators.
+* [`Value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value2): Sets the end value, applicable only for [**Operators.Between**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_Between) and [**Operators.NotBetween**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Operators.html#Syncfusion_EJ2_PivotView_Operators_NotBetween) operators.
 * [`SelectedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_SelectedField): Specifies the dimension level name where filter settings apply. **Note: This property is only applicable for OLAP data sources.**
 
 For example, to display data where the total sum of units sold for each country exceeds 1500, set the [`Value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Value1) to "1500" and [`Condition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_Condition) to **GreaterThan** for the "Country" field.
@@ -507,7 +507,7 @@ The following table shows the available operators for value filtering:
 
 
 
-![output](images/valuefiltering_grid.png)
+![Value filtering applied](images/valuefiltering_grid.png)
 
 ### Clearing the existing value filter
 
@@ -526,7 +526,7 @@ This event provides access to the current filter settings, enabling you to custo
 The event includes the following parameters:
 
 * `cancel` - A boolean property that stops the filter from being applied when set to **true**.
-* `filterSettings` - Contains the current [`filterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) including filter items, types, and conditions.
+* `filterSettings` - Contains the current [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) including filter items, types, and conditions.
 * `dataSourceSettings` - Holds the updated `dataSourceSettings` after the filter is applied.
 
 For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MemberFiltering) event to block the filter action by setting `args.cancel` parameter to **true**. This is shown below:
@@ -561,7 +561,7 @@ When you open the Member Editor dialog, the [`MemberEditorOpen`](https://help.sy
 - `fieldName`: The name of the field for which the Member Editor dialog opens.
 - `fieldMembers`: The list of all members in the selected field.
 - `cancel`: If you set this property to `true`, the Member Editor dialog will not open.
-- [`filterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) - Contains the current [`filterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) including filter items, types, and conditions.
+- [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) - Contains the current [`filterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html) including filter items, types, and conditions.
 
 Here’s an example. In the Pivot Table below, only the selected member for the "Country" field appears in the Member Editor dialog:
 
@@ -590,7 +590,7 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 ### ActionBegin
 
-The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event is triggered when a user clicks the filter icon on a field button in either the grouping bar or the field list, allowing users to monitor and control actions in the Pivot Table. The event argument includes the following properties:
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event is triggered when a user clicks the filter icon on a field button in either the grouping bar or the field list, allowing users to monitor and control actions in the Pivot Table. The event argument includes the following properties:
 
 - `dataSourceSettings`: Contains the current data source configuration, including input data, rows, columns, values, filters, format settings, and other report settings.
 - `actionName`: Indicates the name of the action being initiated, such as **Filter field** for filtering.
@@ -600,7 +600,7 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 - `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action.
 
-In the example below, you can prevent a filter action by setting **args.cancel** to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
+In the example below, you can prevent a filter action by setting **args.cancel** to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -627,7 +627,7 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 ### ActionComplete
 
-The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers when filtering actions are completed through the field button in both the grouping bar and field list UI. You can use this event to monitor current UI actions and implement custom logic based on the completed operations.
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers when filtering actions are completed through the field button in both the grouping bar and field list UI. You can use this event to monitor current UI actions and implement custom logic based on the completed operations.
 
 The event provides the following parameters:
 
@@ -666,7 +666,7 @@ The event provides the following parameters:
 
 ### ActionFailure
 
-The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. For example, if the action fails while filtering, the action name will be shown as **Filter field**.
 

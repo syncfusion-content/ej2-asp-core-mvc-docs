@@ -283,7 +283,7 @@ public async Task<object> GetData(FetchData param)
 
 #### CSV
 
-The server-side Pivot Engine supports CSV data from a local *.csv file or a remote server. To use a local CSV file, read the file using the **StreamReader** class, which converts the file content into a string. This string is then split into a collection that can be bound to the server-side Pivot Engine. In the Pivot Table, set the [`type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.DataSourceType.html) property in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to **CSV**.
+The server-side Pivot Engine supports CSV data from a local *.csv file or a remote server. To use a local CSV file, read the file using the **StreamReader** class, which converts the file content into a string. This string is then split into a collection that can be bound to the server-side Pivot Engine. In the Pivot Table, set the [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.DataSourceType.html) property in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to **CSV**.
 
 In the server application, the **sales.csv** file is located in the **DataSource** folder, and its data model is defined in the **DataSource.cs** file as shown below:
 
@@ -1006,7 +1006,7 @@ Then, based on the **Action** parameter (**onPivotExcelExport** or **onPivotCsvE
 
 A Pivot Table wired to a server endpoint may work locally. When pointed at a production API, requests may return 401 errors—not due to invalid queries, but because the server requires credentials. A simple, low‑impact fix is to attach authentication headers immediately before each request leaves the browser.
 
-The Pivot Table exposes a hook for every outgoing call through the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event. The event fires just before a request is sent and provides an **args** object, allowing headers to be set via `args.internalProperties.headers`. Using [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) avoids endpoint rewrites or custom transports and provides a single reliable hook that applies to aggregation, sorting, filtering, grouping, exporting, and more.
+The Pivot Table exposes a hook for every outgoing call through the [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event. The event fires just before a request is sent and provides an **args** object, allowing headers to be set via `args.internalProperties.headers`. Using [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) avoids endpoint rewrites or custom transports and provides a single reliable hook that applies to aggregation, sorting, filtering, grouping, exporting, and more.
 
 Use a trusted token issued by the authentication flow after sign‑in. Keep tokens out of source control by retrieving them at runtime (for example, from a secure in‑memory store, a server endpoint that reads an **httpOnly** cookie, or a token manager that refreshes on expiry). Merge the token into request headers so every call carries proof of identity.
 
@@ -1041,7 +1041,7 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 **Troubleshooting**
 - 401 or 403: Token is missing, expired, or invalid for the target route.
 - CORS preflight error: Server does not allow the custom headers.
-- Missing headers: Ensure [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) runs on the same Pivot instance and sets headers on every call.
+- Missing headers: Ensure [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) runs on the same Pivot instance and sets headers on every call.
 
 **Pre‑shipment checks**
 - Inspect request headers in the browser Network panel; Authorization (or the configured custom key) must be present on every call.

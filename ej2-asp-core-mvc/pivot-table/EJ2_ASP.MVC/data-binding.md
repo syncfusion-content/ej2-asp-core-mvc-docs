@@ -68,7 +68,7 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 
 
 
-![output](images/local-json-datamanager.png)
+![Local JSON data binding](images/local-json-datamanager.png)
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example demonstrates this approach.
 
@@ -131,7 +131,7 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://he
 
 
 
-![output](images/remote-json-data.png)
+![Pivot Table bound to remote JSON data](images/remote-json-data.png)
 
 ## CSV
 
@@ -168,7 +168,7 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 
 
-![output](images/local-csv-data.png)
+![Pivot Table with local CSV data binding](images/local-csv-data.png)
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example shows how to implement this:
 
@@ -236,7 +236,7 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 
 
-![output](images/remote-csv-data.png)
+![Pivot Table bound to remote CSV data](images/remote-csv-data.png)
 
 ## Remote Data Binding
 
@@ -450,11 +450,11 @@ The following code sample demonstrates how to configure the visibility of field 
 
 
 
-![output](images/field-mapping.png)
+![Field button icons customized](images/field-mapping.png)
 
 ## Values in row axis
 
-You can display value fields in the row axis of the Pivot Table to make your data analysis clear and more accessible. By default, value fields appear in the column axis. To display these fields in the row axis, set the [`valueAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ValueAxis) property to **row**. The default value is **column**.
+You can display value fields in the row axis of the Pivot Table to make your data analysis clear and more accessible. By default, value fields appear in the column axis. To display these fields in the row axis, set the [`ValueAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ValueAxis) property to **row**. The default value is **column**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -481,13 +481,13 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 
 
-![output](images/valueaxis.png)
+![Values in row axis](images/valueaxis.png)
 
 ## Values at different positions
 
-Positioning value fields at specific locations helps create more meaningful data layouts and improves the readability of your Pivot Table. By default, value fields appear at the end of the row or column axis. To place value fields at different positions, use the [`valueIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property and set it to the desired index position. The default value is **-1**, which places fields at the last position. The [`valueIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property works together with the [`valueAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ValueAxis) property.
+Positioning value fields at specific locations helps create more meaningful data layouts and improves the readability of your Pivot Table. By default, value fields appear at the end of the row or column axis. To place value fields at different positions, use the [`ValueIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property and set it to the desired index position. The default value is **-1**, which places fields at the last position. The [`ValueIndex`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property works together with the [`ValueAxis`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ValueAxis) property.
 
-> This option is available only for relational data sources. To enable users to rearrange value fields through the interface, set the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property to **true** in both the grouping bar and field list UI.
+> This option is available only for relational data sources. To enable users to rearrange value fields through the interface, set the [`ShowValuesButton`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property to **true** in both the grouping bar and field list UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -513,7 +513,7 @@ Positioning value fields at specific locations helps create more meaningful data
 {% endif %}
 
 
-![output](images/measureatdifferentposition.png)
+![Values at custom position](images/measureatdifferentposition.png)
 
 ## Show 'no data' items
 
@@ -546,7 +546,7 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 
 
-![output](images/nodata.png)
+![No-data items shown](images/nodata.png)
 
 ## Show value headers always
 
@@ -577,7 +577,7 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 
 
-![output](images/valuesheader.png)
+![Value headers always visible](images/valuesheader.png)
 
 ## Customize empty value cells
 
@@ -608,7 +608,7 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 
 
-![output](images/emptyvalues.png)
+![Custom text in empty cells](images/emptyvalues.png)
 
 ## Event
 
@@ -616,7 +616,7 @@ The Pivot Table component provides essential events that help you monitor and co
 
 ### Load
 
-The [`load`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event fires before the Pivot Table begins rendering and provides access to key parameters that you can use to customize your data source configuration, apply filters, or modify field settings before the table displays.
+The [`Load`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Load) event fires before the Pivot Table begins rendering and provides access to key parameters that you can use to customize your data source configuration, apply filters, or modify field settings before the table displays.
 
 **Event Parameters**
 
@@ -652,15 +652,15 @@ The load event provides the following parameters:
 
 ### EnginePopulated
 
-The [`enginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event helps users monitor when the Pivot Table engine has finished processing the data. This allows you to access important details about the table, such as report settings, field list, and processed values, and perform further actions if needed.
+The [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event helps users monitor when the Pivot Table engine has finished processing the data. This allows you to access important details about the table, such as report settings, field list, and processed values, and perform further actions if needed.
 
 When this event triggers, it provides the following parameters:
 
-- `dataSourceSettings`: Contains information about the structure and options applied to the Pivot Table’s data.
-- [`pivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html): Lists all available fields in the Pivot Table, including those used in rows, columns, values, and filters.
-- [`pivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues): Presents the aggregated values and results displayed in the table.
+- `DataSourceSettings`: Contains information about the structure and options applied to the Pivot Table’s data.
+- [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html): Lists all available fields in the Pivot Table, including those used in rows, columns, values, and filters.
+- [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues): Presents the aggregated values and results displayed in the table.
 
-Below is an example showing how the [`enginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event can be used in a ASP.NET MVC Pivot Table. The code demonstrates how to set up the event and access its details for custom logic.
+Below is an example showing how the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event can be used in a ASP.NET MVC Pivot Table. The code demonstrates how to set up the event and access its details for custom logic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -687,9 +687,9 @@ Below is an example showing how the [`enginePopulated`](https://help.syncfusion.
 
 ### EnginePopulating
 
-The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event lets you update the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) before the Pivot Table's engine processes the data. This allows you to modify how your data appears by changing field captions, formatting options, or report configurations right before the table renders. For example, you can adjust column captions or show a message for empty cells. This helps users control how the data will appear in the Pivot Table in a straightforward way.
+The [`EnginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event lets you update the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) before the Pivot Table's engine processes the data. This allows you to modify how your data appears by changing field captions, formatting options, or report configurations right before the table renders. For example, you can adjust column captions or show a message for empty cells. This helps users control how the data will appear in the Pivot Table in a straightforward way.
 
-The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event provides an argument that contains the `dataSourceSettings` property. You can directly edit this property to update fields, labels, or other `dataSourceSettings` options, ensuring your Pivot Table displays data exactly how you need it. Below is an example showing how to use the `enginePopulating` event in a ASP.NET MVC Pivot Table:
+The [`EnginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event provides an argument that contains the `DataSourceSettings` property. You can directly edit this property to update fields, labels, or other `DataSourceSettings` options, ensuring your Pivot Table displays data exactly how you need it. Below is an example showing how to use the `EnginePopulating` event in a ASP.NET MVC Pivot Table:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

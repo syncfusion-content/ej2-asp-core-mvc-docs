@@ -156,7 +156,7 @@ This section explains how to connect the Pivot Table component to a MongoDB data
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the MongoDB database.
 2. Add fields to the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define the report structure, specifying how data fields are organized and aggregated in the Pivot Table.
-3. Enable the field list by setting the [showFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services section. This allows users to dynamically add or rearrange fields across the columns, rows, and values axes using an interactive user interface.
 
 Here’s the updated sample code with the report configuration and field list support:
 

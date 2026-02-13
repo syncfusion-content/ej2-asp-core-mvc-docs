@@ -140,7 +140,7 @@ This section explains how to connect the Pivot Table to a MySQL database by fetc
 ### Step 3: Define the Pivot Table Report
 1. Configure the Pivot Table report in the ~/Views/Home/Index.cshtml file to structure the data retrieved from the MySQL database.
 2. Use the `rows`, `columns`, `values`, and `filters` properties of [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to define how data fields are organized and aggregated.
-3. Enable the field list by setting the [showFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services. This allows users to interactively modify the Pivot Table’s structure by adding or rearranging fields.
+3. Enable the field list by setting the [ShowFieldList](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** and including the `FieldList` module in the services. This allows users to interactively modify the Pivot Table’s structure by adding or rearranging fields.
 
 ```csharp
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(

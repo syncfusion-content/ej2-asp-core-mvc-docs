@@ -69,7 +69,7 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 
 
-![output](images/hyperlink.png)
+![Hyperlink enabled for all cells](images/hyperlink.png)
 
 ## Hyperlink for row headers
 
@@ -100,7 +100,7 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 
 
-![output](images/hyperlink-rowheader.png)
+![Row header hyperlink](images/hyperlink-rowheader.png)
 
 ## Hyperlink for column headers
 
@@ -131,7 +131,7 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 
 
-![output](images/hyperlink-columnheader.png)
+![Column header hyperlink](images/hyperlink-columnheader.png)
 
 ## Hyperlink for value cells
 
@@ -162,7 +162,7 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 
 
-![output](images/hyperlink-value.png)
+![Value cell hyperlink](images/hyperlink-value.png)
 
 ## Hyperlink for summary cells
 
@@ -193,7 +193,7 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 
 
-![output](images/hyperlink-summary.png)
+![Summary cell hyperlink](images/hyperlink-summary.png)
 
 ## Condition based hyperlink
 
@@ -229,7 +229,7 @@ The pivot table has an option to show hyperlink in the cells based on specific c
 
 
 
-![output](images/hyperlink-condition.png)
+![Conditional hyperlink applied](images/hyperlink-condition.png)
 
 ## Condition based hyperlink for specific row or column
 
@@ -270,7 +270,7 @@ The pivot table supports displaying hyperlinks in cells based on specific row or
 
 In the below code example, the value **FY 2015.Q1.Units Sold** is assigned to [`HeaderText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_HeaderText), which means the pivot table will show hyperlinks only in cells that match this specific header combination.
 
-N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [headerDelimiter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [valueSortSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings) property to any other delimiter instead of the default separator.
+N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [HeaderDelimiter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [ValueSortSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings) property to any other delimiter instead of the default separator.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -297,7 +297,7 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 
 
-![output](images/hyperlink-header.png)
+![Header-based hyperlink](images/hyperlink-header.png)
 
 ## Event
 
