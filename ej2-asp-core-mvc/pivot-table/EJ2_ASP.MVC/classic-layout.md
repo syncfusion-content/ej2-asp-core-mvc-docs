@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Classic layout in ##Platform_Name## Syncfusion Pivot Table Component
+title: Classic layout in ASP.NET MVC Pivotview component | Syncfusion
 description: Learn here all about Classic layout in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Classic Layout
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# Classic Layout in ##Platform_Name## Pivot Table Component
+# Classic Layout in ASP.NET MVC Syncfusion Pivot Table Component
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 
-The classic layout in the Syncfusion Pivot Table offers a structured, tabular presentation of data, improving both readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier. By default, grand totals appear at the end of all rows, while subtotals are placed in a separate row beneath each group. All other features of the pivot table, such as filtering, sorting, drag-and-drop, expand/collapse functionality, and more, remain the same as in the compact layout, which serves as the default hierarchical format of the pivot table.
+The classic layout, also known as the tabular layout, in the Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table provides a structured, tabular presentation of data that enhances readability and usability. In this layout, fields in the row axis are displayed side by side in separate columns, making data interpretation and analysis easier. By default, grand totals appear at the end of all rows, while subtotals are placed in a separate row beneath each group. All other features of the pivot table, such as filtering, sorting, drag-and-drop, expand/collapse functionality, and more, remain the same as in the compact layout, which serves as the default hierarchical format of the pivot table.
 
 To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_Layout) property in the [PivotViewGridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) of the Pivot Table to **Tabular**.
 

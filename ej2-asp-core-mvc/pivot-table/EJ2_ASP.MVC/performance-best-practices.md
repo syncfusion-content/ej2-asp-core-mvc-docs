@@ -15,27 +15,31 @@ Performance optimization is crucial when working with large datasets in the [ASP
 
 ## How do I improve the loading performance of the Pivot Table?
 
+When working with large datasets, you can use the following options to improve the loading performance of the Pivot Table and provide a smoother user experience.
+
 ### Virtual scrolling
 
-The virtual scrolling in the pivot table significantly improves performance, especially when handling large datasets, because it only renders the rows and columns related to the current viewport. The remaining data is loaded dynamically as you scroll, either vertically or horizontally. For more information on implementing virtual scrolling in the pivot table, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling).
+Virtual scrolling improves the performance of the Pivot Table when working with large datasets by only displaying the rows and columns that are currently visible in the viewport. This approach reduces initial load time and memory usage, as the control processes only the data currently in view. As you scroll vertically or horizontally, additional data loads automatically in the background. For detailed guidance on implementing virtual scrolling in the Pivot Table, see the [virtual scrolling documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling).
 
 ### Paging
 
-If your browser's maximum pixel height limits you from using the pivot table with virtual scrolling, we recommend utilizing the paging option instead. Similar to virtual scrolling, the paging option allows you to load a large amount of data, which can be displayed in the pivot table page-by-page. For more information on implementing paging in the pivot table, please refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/paging).
+Paging helps you display large datasets efficiently by breaking them into smaller, manageable pages instead of loading all data at once. When your browser's maximum pixel height prevents you from using the Pivot Table with virtual scrolling, the paging option provides an excellent alternative. This approach significantly improves loading performance and ensures smooth navigation through your data.
+
+To enable paging in your Pivot Table, set the [`EnablePaging`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** and configure the [`PageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPageSettings.html) to control the number of records displayed per page. For implementation details, refer to the [paging documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/paging).
 
 ### Server-side engine
 
-Connecting your application to an external service for fetching a large dataset (referred to as input data), such as one million records for the pivot table, may take considerable time due to network bandwidth limitations when transmitting data from server-side to client-side.
+Connecting your application to an external service for fetching a large dataset (referred to as input data), such as one million records for the Pivot Table, may take considerable time due to network bandwidth limitations when transmitting data from server-side to client-side.
 
 Therefore, we highly recommend using our server-side engine for rendering the Pivot Table with a large amount of data instead of the built-in engine.
 
-Typically, in this approach, the pivot table component and its report are defined and often modified on the client-side (browser), while the pivot engine is implied and hosted in a dedicated web service (Web API) known as the server-side engine. Here, the server-side engine can directly connect to your data source, swiftly collect the input data (referred to as input raw data), and, based on the provided report by the pivot table through UI interactions periodically, the server-side engine performs all pivot-oriented calculations internally. It then transmits only aggregated data for pivot table display to the client-side (browser). This approach minimizes network bandwidth usage and enhances pivot table rendering.
+Typically, in this approach, the Pivot Table component and its report are defined and often modified on the client-side (browser), while the pivot engine is implied and hosted in a dedicated web service (Web API) known as the server-side engine. Here, the server-side engine can directly connect to your data source, swiftly collect the input data (referred to as input raw data), and, based on the provided report by the Pivot Table through UI interactions periodically, the server-side engine performs all pivot-oriented calculations internally. It then transmits only aggregated data for Pivot Table display to the client-side (browser). This approach minimizes network bandwidth usage and enhances Pivot Table rendering.
 
 In case a large amount of aggregated data is sent to the client-side from the web service (Web API), the server-side engine offers the option to enable virtual scrolling or paging. This feature generates aggregated data exclusively for the current viewport of the Pivot Table, further optimizing network bandwidth and rendering performance.
 
 Additionally, the cache concept is implemented in the server-side engine to hold the pivot engine's instance based on the end-user GUID. This allows for quick retrieval, calculation, and re-sending of modified pivot data to the Pivot Table viewport, based on the UI action performed.
 
-For more information on implementing the server-side engine in the pivot table, please refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/server-side-pivot-engine).
+For more information on implementing the server-side engine in the Pivot Table, please refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/server-side-pivot-engine).
 
 ## How can I enhance the performance of the Pivot Table through data operations?
 
@@ -51,19 +55,19 @@ Additionally, it works with the virtual scrolling or paging option enabled as we
 
 N> If your input data has very few repeated records, we would not suggest this option.
 
-For more information on implementing the data compression in the pivot table, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/data-compression).
+For more information on implementing the data compression in the Pivot Table, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/data-compression).
 
 ### Defer layout update
 
-The Defer Layout Update feature in the pivot table allows end-users to perform various operations, such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more, without immediately updating the pivot table. The efficiency of this process lies in allowing end-users to complete their modifications. The final application of these changes occurs when end-users click the **Apply** button in the Field List UI. This action triggers the pivot table to update based on the last modified report. By deferring the layout update until precisely requested, the ASP.NET MVC Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering until the end-user explicitly applies the modifications.
+The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations, such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more, without immediately updating the Pivot Table. The efficiency of this process lies in allowing end-users to complete their modifications. The final application of these changes occurs when end-users click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until precisely requested, the ASP.NET MVC Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering until the end-user explicitly applies the modifications.
 
 For more information on defer layout updates, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/defer-update).
 
 ### Sorting
 
-During the initial rendering phase, applying sorting to fields other than the string data type, particularly those with a large number of members, may lead to increased processing time for the pivot engine due to internal calculations. To enhance performance without compromising the final outcome, it is advisable to refrain from using sorting options at this stage. Alternatively, load the input raw data into the data source settings in the desired order for display in the pivot table.
+During the initial rendering phase, applying sorting to fields other than the string data type, particularly those with a large number of members, may lead to increased processing time for the pivot engine due to internal calculations. To enhance performance without compromising the final outcome, it is advisable to refrain from using sorting options at this stage. Alternatively, load the input raw data into the data source settings in the desired order for display in the Pivot Table.
 
-Once the input raw data is arranged as needed and the pivot table is rendered, it is recommended to restrict the use of sorting operations for runtime performance optimization. This approach ensures efficient processing and responsive performance while still achieving the desired presentation in the pivot table.
+Once the input raw data is arranged as needed and the Pivot Table is rendered, it is recommended to restrict the use of sorting operations for runtime performance optimization. This approach ensures efficient processing and responsive performance while still achieving the desired presentation in the Pivot Table.
 
 ### Member filtering
 
@@ -71,11 +75,11 @@ When working with large datasets, it's beneficial to set a display limit for mem
 
 ### Grouping
 
-Using the pivot table's built-in grouping feature to group date, number, and string data type fields is not often recommended.
+Using the Pivot Table's built-in grouping feature to group date, number, and string data type fields is not often recommended.
 
-Here is an example below of how the [PivotViewGroupSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html) tag has been used to configure grouping for the available fields using code-behind. The date and number grouping have been set to the fields "TimeLine" and "Id", respectively.
+Here is an example below of how the [PivotViewGroupSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html) tag has been used to configure grouping for the available fields using code-behind. The date and number grouping have been set to the fields "Date" and "Id", respectively.
 
-It obviously impacts the overall performance during pivot table rendering because it always consumes the input raw data, splits, redefines, and provides modified input raw data based on the fields in the report that will be used for further pivot calculations.
+It obviously impacts the overall performance during Pivot Table rendering because it always consumes the input raw data, splits, redefines, and provides modified input raw data based on the fields in the report that will be used for further pivot calculations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,9 +104,9 @@ It obviously impacts the overall performance during pivot table rendering becaus
 {% endtabs %}
 {% endif %}
 
-To avoid this performance constraint, we recommend passing the input raw data along with pre-processed group field sets based on your grouping needs. For example, if your input raw data has a date field "TimeLine" with the value "15/AUG/2019 03:41 PM" and you want to display it as the year and month alone, split out the date field as "TimeLine_Year" = "15/AUG/2019" for the year and "TimeLine_Month" = "15/AUG/2019" for the month. Further use the [FormatSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property to show these date fields with the chosen date format. Similarly, to group a number field, just alter its value based on your requirements (e.g., 1–5, 6–10).
+To avoid this performance constraint, we recommend passing the input raw data along with pre-processed group field sets based on your grouping needs. For example, if your input raw data has a date field "Date" with the value "15/AUG/2019 03:41 PM" and you want to display it as the year and month alone, split out the date field as "Date_Year" = "15/AUG/2019" for the year and "Date_Month" = "15/AUG/2019" for the month. Further use the [FormatSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property to show these date fields with the chosen date format. Similarly, to group a number field, just alter its value based on your requirements (e.g., 1–5, 6–10).
 
-Here's an example below of configuring grouping in your input raw data and assigning it to the pivot table's data source. In the code below, the fields "TimeLine_Year," "TimeLine_Month," and "Id" are created and updated in the provided input raw data and have been specified for the date and number grouping. Additionally, the date formatting has been applied to these specified date group fields using the [FormatSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html).
+Here's an example below of configuring grouping in your input raw data and assigning it to the Pivot Table's data source. In the code below, the fields "Date_Year," "Date_Month," and "Id" are created and updated in the provided input raw data and have been specified for the date and number grouping. Additionally, the date formatting has been applied to these specified date group fields using the [FormatSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,6 +131,7 @@ Here's an example below of configuring grouping in your input raw data and assig
 {% endtabs %}
 {% endif %}
 
+
 ### Value filtering
 
 The [value filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#value-filtering) primarily operates on grand totals, meaning the filtering process considers entire rows and columns to match applied value conditions. For similar results with more flexibility and better performance, consider exploring our label filtering or member filtering options. These alternatives can yield comparable outcomes, particularly when dealing with large datasets. You can find more information on utilizing the [label filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#label-filtering) or [member filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/filtering#member-filtering) options in the documentation section dedicated to these features.
@@ -135,11 +140,11 @@ The [value filtering](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-t
 
 ### Virtual scrolling with single page mode
 
-By default, the pivot table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the pivot table. For more information on implementing this feature, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling#virtual-scrolling-with-single-page-mode).
+By default, the Pivot Table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the Pivot Table. For more information on implementing this feature, you can refer to the documentation [here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/virtual-scrolling#virtual-scrolling-with-single-page-mode).
 
 ### Limiting the component size
 
-Each row and cell in the pivot table is treated as an individual Razor component. However, loading an extensive number of rows and columns into the current view can strain memory consumption and CPU processing. To avoid such performance impacts, load a smaller set of rows and columns in the pivot table by defining and limiting the pivot table using the [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height) and [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height_Width) properties. For example, 600px * 1000px, respectively, with just the pivot table alone (that is, without the grouping bar, toolbar, and other additional UI elements).
+Displaying too many rows and columns in a Pivot Table at once can slow performance and increase memory usage. To keep the Pivot Table responsive, set a specific [Height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height) and [Width](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Height_Width) for the Pivot Table, such as 600px by 1000px. This limits the number of rows and columns loaded in the current view. When setting these values, render only the Pivot Table, excluding the grouping bar, toolbar, and other additional UI elements.
        
 N> Normally, pixel units are preferred, ensuring more accurate page calculations compared to using percentage units, which involve additional computations for determining page as well as row and column sizes.
 

@@ -10,16 +10,16 @@ documentation: ug
 
 # Customize number, date, and time values
 
-You can format the number, date, and time values for each field using [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html)  option under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). It can be configured through code behind, during initial rendering.
+You can format the number, date, and time values for each field using the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
 ## Number formatting
 
-For numbers, the formatting settings required to apply through code behind are:
+For numeric fields, the formatting settings include the following properties:
 
-* `name`: It allows to set the field name.
-* `format`: It allows to set the format of the respective field.
+* `name`: Specifies the field name to which the formatting should be applied.
+* `format`: Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
 
-N> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,15 +48,13 @@ N> Also, you can customize the applied number format by setting the [`NumberForm
 
 ## Date and time formatting
 
-N> This property is applicable only for relational data source.
+For date and time fields, the formatting settings include these properties:
 
-For date and time, the formatting settings required to apply through code behind are:
+* `name`: Specifies the field name to which the formatting should be applied.
+* `format`: Defines the date/time format pattern for the respective field (e.g., 'dd/MM/yyyy', 'MMM yyyy').
+* `type`: Specifies the format type to be used for the respective field (Date, Time, or DateTime).
 
-* `name`: It allows to set the field name.
-* `format`: It allows to set the format of the respective field.
-* `type`: It allows to set the type of format to be used for the respective field.
-
-N> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
