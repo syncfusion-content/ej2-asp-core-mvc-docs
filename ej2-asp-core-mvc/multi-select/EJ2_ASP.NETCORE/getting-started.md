@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core MultiSelect Control
 
-This section briefly explains about how to include [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -115,11 +115,11 @@ The following example illustrates the output in your browser.
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
+By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height automatically adjusts according to the height of the popup list items.
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupWidth.html) properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

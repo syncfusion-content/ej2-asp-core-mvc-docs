@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Spinner Control
 
-This section briefly explains about how to include ASP.NET Core Spinner control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the ASP.NET Core Spinner control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ This section briefly explains about how to include ASP.NET Core Spinner control 
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

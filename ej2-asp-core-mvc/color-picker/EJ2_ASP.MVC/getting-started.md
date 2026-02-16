@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC ColorPicker Control
 
-This section briefly explains about how to include [ASP.NET MVC ColorPicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/color-picker) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC ColorPicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/color-picker) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -98,7 +98,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [Inline](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and opens a pop-up to access the ColorPicker. To render the ColorPicker container alone and access it directly, render it as inline. This can be achieved by setting the [Inline](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
 
 The following sample shows the inline type rendering of ColorPicker.
 

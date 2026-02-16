@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC CheckBox Control
 
-This section briefly explains about how to include [ASP.NET MVC CheckBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/checkbox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC CheckBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/checkbox) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -99,16 +99,16 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change the CheckBox state
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually, they are:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually:
 * Checked
 * Unchecked
 * Indeterminate
 
-The CheckBox [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state a tick mark will be added to the visualization of CheckBox.
+The CheckBox [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In the checked state, a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-The CheckBox indeterminate state can be set through [Indeterminate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+The CheckBox indeterminate state can be set through the [Indeterminate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. The CheckBox indeterminate state masks the real value of the CheckBox visually. The CheckBox cannot be changed to the indeterminate state through the user interface; this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

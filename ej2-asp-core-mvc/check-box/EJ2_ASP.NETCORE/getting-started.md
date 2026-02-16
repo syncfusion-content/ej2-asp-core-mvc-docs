@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core CheckBox Control
 
-This section briefly explains about how to include [ASP.NET Core CheckBox](https://www.syncfusion.com/aspnet-core-ui-controls/checkbox) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core CheckBox](https://www.syncfusion.com/aspnet-core-ui-controls/checkbox) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -102,16 +102,16 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change the CheckBox state
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually, they are:
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 CheckBox contains 3 different states visually:
 * Checked
 * Unchecked
 * Indeterminate
 
-The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In checked state, a tick mark will be added to the visualization of CheckBox.
+The CheckBox [`checked`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Checked) property is used to handle the checked and unchecked state. In the checked state, a tick mark will be added to the visualization of CheckBox.
 
 ### Indeterminate
 
-The CheckBox indeterminate state can be set through [`indeterminate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. CheckBox indeterminate state masks the real value of CheckBox visually. The Checkbox cannot be changed to indeterminate state through the user interface, this state can be achieved only through the property.
+The CheckBox indeterminate state can be set through the [`indeterminate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.CheckBox.html#Syncfusion_EJ2_Buttons_CheckBox_Indeterminate) property. The CheckBox indeterminate state masks the real value of the CheckBox visually. The CheckBox cannot be changed to the indeterminate state through the user interface; this state can be achieved only through the property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

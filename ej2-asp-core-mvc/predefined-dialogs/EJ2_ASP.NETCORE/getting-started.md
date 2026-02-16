@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Predefined Dialogs
 
-This section briefly explains about how to include ASP.NET Core Predefined Dialogs in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include ASP.NET Core Predefined Dialogs in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -108,17 +108,17 @@ The Dialog control provides built-in utility functions to render the alert and c
 | animationSettings | Specifies the animation settings of the dialog component. |
 ## Add ASP.NET Core Predefined Dialogs
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pregefined Dialogs tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Predefined Dialogs tag helper in `~/Pages/Index.cshtml` page.
 
-Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
+Once you have completed the setup, you can open predefined dialogs from anywhere in the application using `Alert`, `Confirm` or `Prompt` methods in `DialogUtility`.
 The dialog component provides built-in utility functions to render the alert and confirm dialogs with the minimal code.
 The following options are used as an argument on calling the utility functions:
 
 ### Show alert dialog
 
-An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
+An alert dialog box is used to display errors, warnings, and information alerts that need user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When the user clicks the `OK` button, the alert dialog will close.
 
-In the below code example, alert dialog displayed on button click action.
+In the below code example, the alert dialog is displayed on button click action.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -131,9 +131,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ![ASP.NET Core Predfined Dialogs alert](./images/alert-default.png)
 ### Show confirm dialog
 
-A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
+A confirm dialog box is used to display a specified message along with the `OK` and `Cancel` buttons. This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After getting approval from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the confirm dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -146,9 +146,9 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 ### Show Prompt dialog
 
-A prompt dialog is used to get the input from the user. When the user clicks the `OK` button the input value from the dialog is returned. If the user clicks the `Cancel` button the null value is returned. After getting the input from the user the dialog will disappear automatically.
+A prompt dialog is used to get input from the user. When the user clicks the `OK` button, the input value from the dialog is returned. If the user clicks the `Cancel` button, the null value is returned. After getting the input from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the prompt dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
