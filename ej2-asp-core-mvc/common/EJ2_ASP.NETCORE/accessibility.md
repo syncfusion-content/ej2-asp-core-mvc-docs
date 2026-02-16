@@ -148,25 +148,11 @@ vertical-align: top;
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/accessibility">Documentation</a></td>
     </tr>
     <tr>
-        <td>Spreadsheet</td>
-        <td>Yes</td>
-        <td>AA</td>
-        <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/spreadsheet/accessibility">Documentation</a></td>
-    </tr>
-    <tr>
         <td>In-place Editor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/accessibility">Documentation</a></td>
-    </tr>
-    <tr>
-        <td>PDF Viewer</td>
-        <td>Yes</td>
-        <td>AA</td>
-        <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>RichTextEditor</td>
@@ -176,11 +162,53 @@ vertical-align: top;
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/accessibility">Documentation</a></td>
     </tr>
     <tr>
-        <td>Word Processor</td>
+        <td>MarkdownEditor</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
-        <td>---</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/markdown-editor/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Mention</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/mention/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>MultiSelect</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>MultiColumn ComboBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/multicolumn-combobox/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>OTP Input</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/otp-input/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>AIAssistView</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/ai-assistview/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>ChatUI</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Image Editor</td>
@@ -195,6 +223,13 @@ vertical-align: top;
         <td>AA</td>
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>ListBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>ListView</td>
@@ -337,7 +372,14 @@ vertical-align: top;
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/accessibility">Documentation</a></td>
     </tr>
     <tr>
-        <td>Dropdown Menu</td>
+        <td>DropdownList</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>DropdownButton</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
@@ -421,18 +463,32 @@ vertical-align: top;
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/accessibility">Documentation</a></td>
     </tr>
     <tr>
+        <td>Schedule</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>SpeechToText</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/speech-to-text/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>Timeline</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>N/A</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/timeline/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
         <td>TextBox</td>
         <td>Yes</td>
         <td>AA</td>
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/accessibility">Documentation</a></td>
-    </tr>
-    <tr>
-        <td>Input Mask</td>
-        <td>Yes</td>
-        <td>AA</td>
-        <td>Yes</td>
-        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>Masked TextBox</td>
@@ -468,6 +524,13 @@ vertical-align: top;
         <td>AA</td>
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>ComboBox</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>File Upload</td>
@@ -517,6 +580,13 @@ vertical-align: top;
         <td>AA</td>
         <td>Yes</td>
         <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/accessibility">Documentation</a></td>
+    </tr>
+    <tr>
+        <td>AutoComplete</td>
+        <td>Yes</td>
+        <td>AA</td>
+        <td>Yes</td>
+        <td><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/accessibility">Documentation</a></td>
     </tr>
     <tr>
         <td>AppBar</td>
