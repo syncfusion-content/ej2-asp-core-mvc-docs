@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Dashboard Layout control
+title: Accessibility in ##Platform_Name## Dashboard Layout control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in Dashboard Layout Control
 
 The Dashboard Layout control has been designed with keeping the `WAI-ARIA` specifications in mind and applying the `WAI-ARIA` roles, states, and properties. This control is characterized by ARIA accessibility support, which makes navigation easy for people who use assistive technologies (AT).
 
