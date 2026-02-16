@@ -10,7 +10,11 @@ publishingplatform: ##Platform_Name##
 
 # Print in ##Platform_Name## Pivot Table Component
 
-The rendered pivot table can be printed directly from the browser by invoking the `print` method from the grid's instance. The below sample code illustrates the print option being invoked by an external button click.
+The React Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
+
+## Print pivot table
+
+The rendered pivot table can be printed by invoking the `print` method from the underlying [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) component instance. The [`Grid`](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) control manages the print functionality and captures the current state of the pivot table, including all applied filters, sorting, and formatting. The sample code below demonstrates how to trigger the print operation using an external button click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -35,9 +39,15 @@ The rendered pivot table can be printed directly from the browser by invoking th
 {% endtabs %}
 {% endif %}
 
-Similarly, to print the pivot chart, use the `print` method from the chart's instance. The below sample code illustrates the print option being invoked by an external button click.
+## Print pivot chart
 
-> To display the pivot chart, set the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to either **Chart** or **Both**. 
+To print the pivot chart, use the `print` method from the underlying [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
+
+> To use pivot chart functionality, inject the `PivotChart` module into the pivot table.
+
+> To display the pivot chart, set the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to either **Chart** or **Both**.
+
+The sample code below illustrates how to print the pivot chart through an external button click.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
