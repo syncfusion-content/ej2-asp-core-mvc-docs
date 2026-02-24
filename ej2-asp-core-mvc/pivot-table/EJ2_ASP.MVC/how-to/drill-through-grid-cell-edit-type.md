@@ -10,18 +10,13 @@ documentation: ug
 
 # Drill-through grid's cell edit type
 
-Using the [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event in the pivot table, you can define the edit type of a particular column in the grid present inside the drill-through dialog. To do so, check the column name in the [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event and then specify the edit type of that column using the [`GridColumn.EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) event argument.
+The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
-N> The [`GridColumn.EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) property must be set based on the column's data type. For example, the string data type will not be applicable for the numeric text box edit type.
+Using the [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DrillThrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`GridColumn.EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_EditType) event argument.
 
-* `NumericTextBox` control for integer, double, and decimal data types.
-* `TextBox` control for string data type.
-* `DropDownList` control to show all unique values related to that field.
-* `CheckBox` control for boolean data type.
-* `DatePicker` control for date data type.
-* `DateTimePicker` control for date time data type.
+## Edit type options
 
-In the below example, the data type of the `Country` column is set to `DropDownList`.
+The following edit types are available for different data types:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
