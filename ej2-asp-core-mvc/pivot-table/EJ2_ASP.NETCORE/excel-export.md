@@ -11,13 +11,13 @@ documentation: ug
 
 # Excel Export in ##Platform_Name## Pivot Table component
 
-The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
+The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the [`allowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
 
 ## Export data to an Excel file
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the `excelExport` method.
 
-N> The pivot table component can be exported to Excel format using options available in the toolbar. For more details [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ N> The pivot table component can be exported to Excel format using options avail
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the `csvExport` method.
 
-N> The pivot table component can be exported to CSV format using options available in the toolbar. For more details [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,7 +145,7 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 Pivot Table report settings can be customized before exporting, such as applying filters, adding formatting, or performing drill-down and drill-up operations. These customizations are applied exclusively to the exported file and do not affect the Pivot Table UI. To customize the export behavior, use the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event, which is triggered before the export operation begins.
 
-In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). The updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues) are assigned to `args.dataCollections` for the export. Finally, [`expandAll`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#expandall) is set to **false** again to restore the original state of the Pivot Table.
+In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). The updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues) are assigned to `args.dataCollections` for the export. Finally, [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) is set to **false** again to restore the original state of the Pivot Table.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -278,13 +278,13 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 ![Export Without RowHeaders](images/export-without-row-header.png)
 
-## Exclude Hidden Columns During Export
+## Exclude hidden columns during export
 
 By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to **false** in `excelExportProperties`.
 
-To hide a column, use the [`columnRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](./how-to/hide-specific-columns-in-pivot-table) documentation.
+To hide a column, use the  [`columnRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnRender) event in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](./how-to/hide-specific-columns-in-pivot-table) documentation.
 
-After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure displayed in the Pivot Table UI.
+After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -315,7 +315,7 @@ The style of each cell in the exported file can be customized, including rotatin
 
 To rotate text, use the following events:
 
-*   [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelHeaderQueryCellInfo): Triggered for column headers. This event is used to customize column header cell styles.
+*    [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelHeaderQueryCellInfo): Triggered for column headers. This event is used to customize column header cell styles.
 *   [`excelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelQueryCellInfo): Triggered for row and value cells. This event is used to customize row header and value cell styles.
 
 Within these events, set the `rotation` property in the `style` argument to rotate the text to the desired angle.
@@ -347,7 +347,7 @@ Within these events, set the `rotation` property in the `style` argument to rota
 
 When exporting Pivot Table data to Excel, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`excelQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelQueryCellInfo) event. In this event, the cell information can be accessed through the `args.cell` property, and its style properties, such as `backColor`, `fontName`, and `fontColor`, can be customized.
 
-The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported Excel document. Values below **1000** units are highlighted in **red**, while values of **1000** units or more are highlighted in **green**.
+The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported Excel document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -374,11 +374,11 @@ The following example demonstrates how to apply conditional formatting to the **
 
 ![Apply Custom Styles](images/apply-custom-styles-while-export.png)
 
-## Changing the pivot table style while exporting
+## Changing the Pivot Table style while exporting
 
-The Excel export provides an option to change the colors of headers, captions, and records in a pivot table before exporting. To apply colors, define `theme` settings in `excelExportProperties` and pass it as a parameter to the `excelExport` method.
+The Excel export provides an option to change colors for headers, caption, and records in Pivot Table before exporting. To apply colors, define `theme` settings in `excelExportProperties` object and pass it as a parameter to the `excelExport` method.
 
-> By default, the material theme is applied to the exported Excel document.
+> By default, material theme is applied to exported Excel document.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -407,7 +407,7 @@ The Excel export provides an option to change the colors of headers, captions, a
 
 ## Add header and footer while exporting
 
-The Excel export provides an option to include header and footer content in the Excel document before exporting. To add a header and footer, define the `header` and `footer` properties in `excelExportProperties` and pass them as parameters to the `excelExport` method.
+The Excel export provides an option to include header and footer content for the Excel document before exporting. To add header and footer, define `header` and `footer` properties in `excelExportProperties` object and pass it as a parameter to the `excelExport` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -436,7 +436,7 @@ The Excel export provides an option to include header and footer content in the 
 
 ## Changing the file name while exporting
 
-This option provides flexibility to specify a custom file name for your exported Excel document, making it easier to organize and identify your exported data. The Excel export provides an option to change the file name of the document before exporting. To change the file name, define the `fileName` property in the `excelExportProperties` object and pass it as a parameter to the `excelExport` method.
+This option provides flexibility to specify a custom file name for your exported Excel document, making it easier to organize and identify your exported data files. The Excel export provides an option to change the file name of the document before exporting. To change the file name, define the `fileName` property in the `excelExportProperties` object and pass it as a parameter to the `excelExport` method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -559,7 +559,7 @@ The event provides the following arguments:
 
 ### ExcelHeaderQueryCellInfo
 
-The [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelHeaderQueryCellInfo) event provides the ability to modify header cell appearance and content during Excel export, ensuring exported documents match specific formatting requirements or business standards. This event triggers while processing each header cell during the Excel export operation. The event contains the following parameters:
+The  [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ExcelHeaderQueryCellInfo) event provides the ability to modify header cell appearance and content during Excel export, ensuring exported documents match specific formatting requirements or business standards. This event triggers while processing each header cell during the Excel export operation. The event contains the following parameters:
 
 * `cell` – Contains the current cell information and properties.
 * `style` – Contains the style properties that can be applied to the cell.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+title: Apply custom style to pivot cells in ASP.NET Core | Syncfusion
 description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
@@ -8,11 +8,24 @@ documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
 
-# Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+# Apply custom style to pivot cells in ASP.NET Core Pivotview component
 
-The [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) can be used to apply custom style to row and value cells, and the [`headerCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event in [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) can be used to apply custom styles to column cells.
+The ASP.NET Core Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
-In the following example, a custom style has been applied to the column header **"Sold Amount"** under **"FY 2016"** via the [`headerCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event and to the row header **"Germany"** and its aggregated value via the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event by adding the **"e-custom"** class to the cell element.
+## Overview
+
+You can apply custom styles to different types of cells in the pivot table:
+- Use the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event to style row headers and value cells.
+- Use the [`headerCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event to style column headers.
+
+Both events are available through the [`e-gridSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) property of the Pivot Table component.
+
+## Implementation example
+
+The following example shows how to apply styles to:
+- The column header **"Sold Amount"** under **"FY 2016"** using the [`headerCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderCellInfo) event.
+- The row header **"Germany"** and its aggregated values using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
+- Styles are applied by adding the **"e-custom"** CSS class to the cell elements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
