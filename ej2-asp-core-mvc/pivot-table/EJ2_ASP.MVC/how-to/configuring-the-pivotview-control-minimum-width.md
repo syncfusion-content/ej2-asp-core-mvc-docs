@@ -9,12 +9,22 @@ publishingplatform: ##Platform_Name##
 ---
 # Configuring the minimum width in the ##Platform_Name## Pivot Table control
 
-The pivot table control allows you to configure its minimum width using the `minWidth` property. This property is useful for ensuring the component maintains a consistent layout and responsiveness across different screen sizes.
+# Configuring the minimum width in the ASP.NET MVC Pivot Table component
 
-> When the pivot table has the [Grouping Bar](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/grouping-bar) enabled, the `minWidth` property is set to **400** pixels by default to accommodate the grouping bar UI elements. Without the [Grouping Bar](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/grouping-bar), the `minWidth` property defaults to **310** pixels.
+The ASP.NET MVC Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 
-To customize the minimum width, set the `minWidth` property to your desired value (in pixels) as shown below:
+## Default minimum width behavior
 
+The pivot table automatically sets appropriate default minimum width values based on its current configuration:
+
+| Configuration | Default Minimum Width | Purpose |
+|---------------|----------------------|---------|
+| With [Grouping Bar](../grouping-bar) enabled | 400 pixels | Accommodates grouping bar UI elements and drag-drop functionality |
+| Without [Grouping Bar](../grouping-bar) | 310 pixels | Provides sufficient space for basic pivot table operations |
+
+## Setting custom minimum width
+
+To customize the minimum width according to specific layout requirements, configure the `minWidth` property with the desired pixel value:
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
