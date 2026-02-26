@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization And Localization in ASP.NET Core Syncfusion
+title: Globalization And Localization in ##Platform_Name## Pivot Table Control | Syncfusion
 description: Learn here all about Globalization And Localization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ASP.NET Core Pivot Table Control
+# Globalization in Pivot Table Control
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
 
@@ -136,7 +136,7 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 
 
-![Pivot table values with German locale decimal separators](images/localede.png)
+![output](images/localede.png)
 
 ## Localization
 

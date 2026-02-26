@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hide specific columns in ASP.NET Core Pivot Table Component
+title: Hide specific columns in ##Platform_Name## Pivot Table Component
 description: Learn here all about Hide specific columns in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hide specific columns in pivot table 

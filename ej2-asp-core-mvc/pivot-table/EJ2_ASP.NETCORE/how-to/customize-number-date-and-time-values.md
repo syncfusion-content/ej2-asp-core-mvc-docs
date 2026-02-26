@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Number Date And Time Values in ASP.NET Core | Syncfusion
+title: Customize Number Date And Time Values in ##Platform_Name## Pivot Table Component
 description: Learn here all about Customize Number Date And Time Values in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Customize Number Date And Time Values
@@ -10,16 +10,16 @@ documentation: ug
 
 # Customize number, date, and time values
 
-You can format the number, date, and time values for each field using the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
+You can format the number, date, and time values for each field using [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). It can be configured through code behind, during initial rendering.
 
 ## Number formatting
 
-For numeric fields, the formatting settings include the following properties:
+For numbers, the formatting settings required to apply through code behind are:
 
-* `name`: Specifies the field name to which the formatting should be applied.
-* `format`: Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
+* `name`: It allows to set the field name.
+* `format`: It allows to set the format of the respective field.
 
-> Also, you can customize the applied number format by setting the [`numberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+N> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,13 +48,15 @@ For numeric fields, the formatting settings include the following properties:
 
 ## Date and time formatting
 
-For date and time fields, the formatting settings include these properties:
+N> This property is applicable only for relational data source.
 
-* `name`: Specifies the field name to which the formatting should be applied.
-* `format`: Defines the date/time format pattern for the respective field (e.g., 'dd/MM/yyyy', 'MMM yyyy').
-* `type`: Specifies the format type to be used for the respective field (Date, Time, or DateTime).
+For date and time, the formatting settings required to apply through code behind are:
 
-> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+* `name`: It allows to set the field name.
+* `format`: It allows to set the format of the respective field.
+* `type`: It allows to set the type of format to be used for the respective field.
+
+N> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
