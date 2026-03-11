@@ -20,10 +20,6 @@ You can check updates availability in Visual Studio, and then install the update
 
     ![Check for updates_2019later](images/check-for-updates_latest.png)
 
-    N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
-
-    ![Check for updates](images/check-for-updates.png)
-
 2. When there is an update, **Update** dialog box opens
 
     ![update](images/update.png)
