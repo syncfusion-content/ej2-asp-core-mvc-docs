@@ -229,9 +229,9 @@ Image caption and alternative text can be specified for the inserted image in th
 * Image Caption
 * Alternative Text.
 
-Through the Alternative Text option, set the alternative text for the image, when the image is not upload successfully into the Rich Text Editor.
+Selecting `Image Caption` wraps the image in a caption container where you can enter caption text directly within the editor. When the caption option is toggled, any caption text you have added is preserved so you can continue editing without losing content.
 
-By clicking the Image Caption, the image will get wrapped in an image element with a caption. Then, you can type caption content inside the Rich Text Editor.
+The `Alternative Text` option lets you provide descriptive text that appears when an image cannot be displayed in the Rich Text Editor.
 
 ## Configuring Image Display Position
 
@@ -256,6 +256,60 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/rich-text-editor/image-settings/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Configuring image alignment
+
+Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image quick toolbar by configuring the `QuickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/image-alignment-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Text wrapping around images
+
+The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image quick toolbar through `QuickToolbarSettings`. Add the `WrapText` toolbar item to the image quick toolbar to enable wrap commands. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/wrap-text-cs1/controller.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -328,7 +382,7 @@ You can prevent drag-and-drop action by setting the actionBegin argument cancel 
 
 ## Customizing the Image Quick Toolbar
 
-The Rich Text Editor allows you to customize the image quick toolbar, providing essential tools such as 'Replace', 'Align', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension'.
+The Rich Text Editor allows you to customize the image quick toolbar, providing essential tools such as 'Replace', 'Align', 'WrapText', 'Caption', 'Remove', 'InsertLink', 'Display', 'AltText', and 'Dimension'.
 
 By configuring these options in the [QuickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings) property, you can enhance the editor's functionality, enabling seamless image management and editing directly within your content. This customization ensures a user-friendly experience for efficiently manipulating image elements.
 
