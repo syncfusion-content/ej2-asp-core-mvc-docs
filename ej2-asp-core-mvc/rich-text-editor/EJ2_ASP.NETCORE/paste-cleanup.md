@@ -174,3 +174,27 @@ In the following example, the `afterPasteCleanUp` event is configured to remove 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Multiple Images Copy and Paste
+
+The Rich Text Editor supports inserting multiple images simultaneously through both copy‑paste and drag‑and‑drop interactions. When users paste or drop several images from the local file system, the editor detects each file and handles them individually.
+
+When multiple image files are pasted or dropped into the editor:
+
+- Each image is independently detected and processed according to the configured [`insertImageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_InsertImageSettings).
+- Using `insertImageSettings.saveUrl` the editor uploads each file to the specified endpoint and uses the returned URL for insertion.
+- After a successful upload, the editor retrieves the image URL from the server response.
+- An individual `<img>` element is inserted into the editor content for every uploaded image.
+
+For more details on configuring insert image settings, refer to the [Insert Image documentation](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/insert-image-media/insert-images).
+
+N> The runnable demo application is available in this [Github](https://github.com/SyncfusionExamples/aspnet-core-richtexteditor-image-upload) repository.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/save/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/save/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
