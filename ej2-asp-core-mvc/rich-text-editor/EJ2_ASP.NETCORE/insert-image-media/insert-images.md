@@ -281,6 +281,10 @@ You can allow the specific images alone to be uploaded using the the allowedType
 
 ```
 
+## Paste images into the editor
+
+The Rich Text Editor supports pasting images directly into the editor content. You can paste single or multiple images from your file system directly into the editor.
+
 ## Drag and Drop Image Insertion
 
 By default, the Rich Text Editor allows you to insert images by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the images to the server before inserting into the editor by configuring the saveUrl property. The images can be repositioned anywhere within the editor area by dragging and dropping the image.
