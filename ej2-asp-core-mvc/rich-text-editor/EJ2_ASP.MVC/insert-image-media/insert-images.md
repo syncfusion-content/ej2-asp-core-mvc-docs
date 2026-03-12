@@ -262,7 +262,7 @@ Sets the default display for an image when it is inserted in the Rich Text Edito
 
 ## Configuring image alignment
 
-Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image quick toolbar by configuring the `QuickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
+Images in the Rich Text Editor can be aligned using the alignment options in the image quick toolbar. To enable alignment, the `Align` item needs to be added to the image `QuickToolbarSettings`. When an alignment option is applied, the editor sets the image's `display` style to `block`. This allows the image to behave as a block-level element within the content layout and align based on the selected option (`left`, `center`, or `right`).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -289,7 +289,7 @@ Images in the Rich Text Editor can be aligned using the alignment options in the
 
 ## Text wrapping around images
 
-The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image quick toolbar through `QuickToolbarSettings`. Add the `WrapText` toolbar item to the image quick toolbar to enable wrap commands. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
+The Rich Text Editor provides control over how text flows around images using the `WrapText` options available in the image quick toolbar. To enable these options, the `WrapText` item needs to be added to the image `QuickToolbarSettings`. The `WrapText` item provides options to float an image to the `left` or `right`, letting adjacent text flow alongside the image for more compact and flexible layouts.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

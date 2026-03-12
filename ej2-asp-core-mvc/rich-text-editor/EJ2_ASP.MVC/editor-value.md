@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor value in ##Platform_Name## Rich Text Editor Control
+title: Editor value in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Editor value in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor value

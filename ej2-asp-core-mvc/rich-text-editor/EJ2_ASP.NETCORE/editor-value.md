@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor value in ##Platform_Name## Rich Text Editor Control
+title: Editor value in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Editor value in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor value
@@ -507,6 +507,6 @@ The Rich Text Editor provides the `showSourceCode` method, which allows you to t
 
 ## See also
 
-* [Customizing the placeholder in Styles](./style/#customizing-placeholder-text)
+* [Customizing the placeholder in Styles](./style#customizing-placeholder-text)
 * [Implementing Prevention of cross-site scripting (XSS)](./xhtml-validation#cross-site-scripting-xss)
 * [Integrating Code-Mirror for Enhanced Syntax Highlighting](./third-party-integration#codemirror-integration)
