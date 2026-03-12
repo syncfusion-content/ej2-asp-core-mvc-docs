@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## AppBar Control
 
-The accessibility compliance for the AppBar component is outlined below.
+The accessibility compliance for the AppBar control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
