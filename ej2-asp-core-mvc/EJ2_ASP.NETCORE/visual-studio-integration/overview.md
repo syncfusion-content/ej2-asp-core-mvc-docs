@@ -14,11 +14,7 @@ documentation: ug
 
 The Syncfusion ASP.NET Core (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion® references in Visual Studio.
 
-N> The Syncfusion® Extension is published in the Visual Studio Marketplace. Separate ASP.NET Core (Essential JS 2) Extension support is provided for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to the following Visual Marketplace link.
-
-[Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSExtensions)
-
-[Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions)
+> Syncfusion<sup style="font-size:70%">&reg;</sup> Extension is published in Visual Studio Marketplace. You can download ASP.NET Core Extensions [here](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions)
 
 ## IMPORTANT
 
