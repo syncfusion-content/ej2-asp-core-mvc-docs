@@ -229,3 +229,32 @@ The below sample demonstrates the option to insert the image to the Rich Text Ed
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Render quick toolbar in document body
+
+To render the quick toolbar and inline toolbar in the document body, configure `enableAppendToBody` in [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings). This prevents clipping and improves visibility in constrained layouts, such as when the editor's dimensions are very small.
+
+The following example demonstrates how to render the quick toolbar directly in the document body using `enableAppendToBody` in [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.richtexteditor.richtexteditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_QuickToolbarSettings).
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/quick-toolbar-body/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/quick-toolbar-body/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/quick-toolbar-body/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/quick-toolbar-body/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
