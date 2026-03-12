@@ -158,6 +158,84 @@ Users can modify the table width, cell padding, cell spacing, background color, 
 
 ![Rich Text Editor table settings](./images/table_properties.png)
 
+## Setting individual cell dimensions and borders
+
+The Rich Text Editor provides advanced options to customize individual table cell dimensions and borders. This feature enables fine-grained control over cell sizes, spacing, alignment, and border styling for both single and multiple cell selections.
+
+### Configuring the table cell properties in quick toolbar
+
+To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#table) property. For example: `quickToolbarSettings: { table: ['TableCellProperties'] }`.
+
+### Individual cell properties dialog
+
+Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehensive dialog with the following customization options:
+
+**Dimension settings:**
+
+* **Width**: Set custom cell width with flexible unit selection (px, %, auto). The width is calculated based on the col group element's percentage of the selected cell. This setting applies to both single and multiple cell selections.
+
+* **Height**: Set custom cell height with flexible unit options (px, %, auto). The height value is applied only when the selected cell has an explicitly defined height. This provides precise control over vertical cell sizing and layout consistency.
+
+* **Cell padding**: Adjust the internal spacing inside cells to improve readability and visual appearance.
+
+**Alignment options:**
+
+* **Horizontal alignment**: Four alignment options are available:
+  - Align left
+  - Align center
+  - Align right
+  - Align justify
+  
+* **Vertical alignment**: Position cell content vertically with the following options:
+  - Align top
+  - Align middle
+  - Align bottom
+
+**Border customization:**
+
+* **Border Style**: Select the desired border line style (default is double).
+* **Border Width**: Specify the border thickness in pixels (default is 1px).
+* **Border Color**: Apply custom colors for cell borders to match design requirements.
+
+**Cell appearance:**
+
+* **Background color**: Apply individual cell background colors to highlight important data or improve visual organization.
+
+### Applying properties to cells
+
+The `TableCellProperties` enables modification of properties for both single and multiple selected cells. When multiple cells are selected, property changes apply uniformly to all selected cells, maintaining consistency across the table layout.
+
+### Live preview
+
+All changes made in the Table Cell Properties dialog are instantly reflected in the editor as a live preview, providing real-time visual feedback before finalizing the modifications.
+
+![Rich Text Editor table settings](../images/table_cell_properties.png)
+
+In the following sample, the table cell properties feature has been provided from table module.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/table-cell-properties/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/table-cell-properties/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/rich-text-editor/table-cell-properties/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Controller.cs" %}
+{% include code-snippet/rich-text-editor/table-cell-properties/controller.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Table cell selection and formatting
 
 The table cell selection feature in our editor allows for intuitive and efficient table manipulation using both mouse and keyboard interactions.
