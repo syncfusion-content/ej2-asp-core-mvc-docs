@@ -37,7 +37,7 @@ In the `ChartGradientColorStop`:
 
 - `Offset` - Specifies the position of the color stop along the gradient (0 to 100).
 - `Color` - Sets the color at the stop.
-- `pOacity` - Defines the transparency of the stop (0 to 1).
+- `Opacity` - Defines the transparency of the stop (0 to 1).
 - `Lighten` - Adjusts lightness at the stop. Positive values lighten the color. Range: 0 to 1.
 - `Brighten` - Adjusts brightness at the stop. Positive values increase brightness; negative values decrease it. Ranges: -1 to 1.
 
@@ -66,6 +66,7 @@ Apply a linear gradient to a series by adding `LinearGradient` inside the target
 {% include code-snippet/chart/gradient/series-linear/series-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Trendlines
 
@@ -92,6 +93,7 @@ Apply a linear gradient to a trendline by adding `LinearGradient` inside the tar
 {% include code-snippet/chart/gradient/trendlines-linear/trendlines-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Technical Indicators
 
@@ -118,6 +120,7 @@ Apply a linear gradient to a technical indicator by adding `LinearGradient` insi
 {% include code-snippet/chart/gradient/indicators-linear/indicators-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ## Radial gradient
 
@@ -164,3 +167,4 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% include code-snippet/chart/gradient/series-radial/series-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}

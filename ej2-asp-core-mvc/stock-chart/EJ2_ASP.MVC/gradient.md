@@ -65,6 +65,7 @@ Apply a linear gradient to a series by adding `LinearGradient` inside the target
 {% include code-snippet/stock-chart/gradient/series-linear/series-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Trendlines
 
@@ -88,9 +89,10 @@ Apply a linear gradient to a trendline by adding `LinearGradient` inside the tar
 {% include code-snippet/stock-chart/gradient/trendlines-linear/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LinearGradient.cs" %}
-{% include code-snippet/stock-chart/gradient/sertrendlinesies-linear/trendlines-linear.cs %}
+{% include code-snippet/stock-chart/gradient/trendlines-linear/trendlines-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Technical Indicators
 
@@ -117,6 +119,7 @@ Apply a linear gradient to a technical indicator by adding `LinearGradient` insi
 {% include code-snippet/stock-chart/gradient/indicators-linear/indicators-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ## Radial gradient
 
@@ -163,3 +166,5 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% include code-snippet/stock-chart/gradient/series-radial/series-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
+

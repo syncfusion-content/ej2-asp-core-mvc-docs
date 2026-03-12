@@ -63,6 +63,7 @@ A linear gradient may be applied directly at the series level. The same gradient
 {% include code-snippet/chart/accumulation-charts/gradient/series-linear/series-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Apply a gradient per point using the point render event
 
@@ -89,6 +90,7 @@ A diagonal linear gradient can be applied per data point using the pointRender e
 {% include code-snippet/chart/accumulation-charts/gradient/point-linear/point-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ## Radial gradient
 
@@ -136,6 +138,7 @@ A radial gradient can be applied directly at the series level. The same gradient
 {% include code-snippet/chart/accumulation-charts/gradient/series-radial/series-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
 
 ### Apply a radial gradient per point using the point render event
 
@@ -162,3 +165,4 @@ The following example uses a distinct color palette and an off-center radial gra
 {% include code-snippet/chart/accumulation-charts/gradient/point-radial/point-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
+{% endif %}
