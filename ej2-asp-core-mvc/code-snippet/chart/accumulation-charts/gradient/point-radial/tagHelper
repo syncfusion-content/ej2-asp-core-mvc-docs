@@ -1,0 +1,36 @@
+<ejs-accumulationchart id="container" title="Orders by Category" enableSmartLabels="true"
+    pointRender="pointRender">
+    <e-accumulation-series-collection>
+        <e-accumulation-series type="Pie" dataSource="@ViewBag.dataSource"
+            xName="Category" yName="Share" name="Share by Category">
+            <e-accumulationseries-datalabel visible="true" name="DataLabel"
+                position="@Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside">
+                <e-connectorstyle length="10px"></e-connectorstyle>
+                <e-datalabelfont size="12px"></e-datalabelfont>
+            </e-accumulationseries-datalabel>
+            <e-accumulationseries-border color="#FFFFFF" width="2">
+            </e-accumulationseries-border>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+    <e-accumulationchart-legendsettings visible="true" position="Right">
+    </e-accumulationchart-legendsettings>
+    <e-accumulationchart-tooltip enable="true"></e-accumulationchart-tooltip>
+</ejs-accumulationchart>
+
+<script>
+    var baseColors = ["#0072B2", "#E69F00", "#009E73", "#D55E00", "#CC79A7", "#56B4E9", "#F0E442", "#999999", "#7F3C8D"];
+    function pointRender(args) {
+        var idx = args.point.index;
+        var base = baseColors[idx % baseColors.length];
+        args.radialGradient = {
+            cx: 0.35, cy: 0.35, fx: 0.35, fy: 0.35, r: 0.85,
+            gradientColorStop: [
+                { offset: 0,   color: base, opacity: 1    },
+                { offset: 20,  color: base, opacity: 0.98 },
+                { offset: 50,  color: base, opacity: 0.96 },
+                { offset: 80,  color: base, opacity: 0.94 },
+                { offset: 100, color: base, opacity: 0.92 }
+            ]
+        };
+    }
+</script>

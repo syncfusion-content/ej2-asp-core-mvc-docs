@@ -1,0 +1,26 @@
+@{
+    var radialGradient = new Syncfusion.EJ2.Charts.ChartRadialGradient
+    {
+        Cx = 0.5,
+        Cy = 0.5,
+        R  = 0.5,
+        Fx = 0.5,
+        Fy = 0.5,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FFFF00", Offset = 0,   Opacity = 1, Lighten = 0, Brighten = 0 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#7C3AED", Offset = 100, Opacity = 1, Lighten = 0, Brighten = 0 }
+        }
+    };
+}
+
+<ejs-stockchart id="container" title="AAPL Stock Price">
+    <e-stockchart-primaryxaxis majorGridLines="new { width = 0 }"></e-stockchart-primaryxaxis>
+    <e-stockchart-primaryyaxis majorGridLines="new { width = 0 }" interval="10"></e-stockchart-primaryyaxis>
+    <e-stockchart-series-collection>
+        <e-stockchart-series dataSource="@ViewBag.dataSource" type="Candle"
+            xName="Date" high="High" low="Low" open="Open" close="Close"
+            volume="Volume" name="AAPL" radialGradient="@radialGradient">
+        </e-stockchart-series>
+    </e-stockchart-series-collection>
+</ejs-stockchart>
