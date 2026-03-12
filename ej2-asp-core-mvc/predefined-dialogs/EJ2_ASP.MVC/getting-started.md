@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Predefined Dialogs
 
-This section briefly explains about how to include ASP.NET MVC Predefined Dialogs in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include ASP.NET MVC Predefined Dialogs in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -87,13 +87,13 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Predefined Dialogs in `~/Views/Home/Index.cshtml` page.
 
-Once you completed the setup, you can open predefined dialogs from any where in application using `Alert`,`Confirm` or `Prompt` methods in `DialogUtility`.
+Once you have completed the setup, you can open predefined dialogs from anywhere in the application using `Alert`, `Confirm` or `Prompt` methods in `DialogUtility`.
 
 ### Show alert dialog
 
-An alert dialog box used to display an errors, warnings, and information alerts that needs user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When user clicks on `OK` button, alert dialog will get closed.
+An alert dialog box is used to display errors, warnings, and information alerts that need user awareness. This can be achieved by using the `DialogUtility.alert` method. The alert dialog is displayed along with the `OK` button. When the user clicks the `OK` button, the alert dialog will close.
 
-In the below code example, alert dialog displayed on button click action.
+In the below code example, the alert dialog is displayed on button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -107,9 +107,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ### Show confirm dialog
 
-A confirm dialog box used to displays a specified message along with the `OK` and `Cancel` buttons.This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After get approval from the user the dialog will disappear automatically.
+A confirm dialog box is used to display a specified message along with the `OK` and `Cancel` buttons. This can be achieved by using the `DialogUtility.confirm` method. It is used to get approval from the user, and it appears before any critical action. After getting approval from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the confirm dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,9 +121,9 @@ In the below code example, the confirm dialog displayed on `OK` and `Cancel` but
 
 ### Show Prompt dialog
 
-A prompt dialog is used to get the input from the user. When the user clicks the `OK` button the input value from the dialog is returned. If the user clicks the `Cancel` button the null value is returned. After getting the input from the user the dialog will disappear automatically.
+A prompt dialog is used to get input from the user. When the user clicks the `OK` button, the input value from the dialog is returned. If the user clicks the `Cancel` button, the null value is returned. After getting the input from the user, the dialog will disappear automatically.
 
-In the below code example, the confirm dialog displayed on `OK` and `Cancel` button click action.
+In the below code example, the prompt dialog is displayed on `OK` and `Cancel` button click action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

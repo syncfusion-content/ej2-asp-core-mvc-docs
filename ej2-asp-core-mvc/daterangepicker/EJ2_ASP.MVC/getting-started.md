@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC DateRangePicker Control
 
-This section briefly explains about how to include [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/daterangepicker) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/daterangepicker) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Setting the start and end date
 
-The start and end date in a range can be defined with the help of [StartDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_StartDate) and [EndDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EndDate) property. The following example demonstrates to set the start and end date on initializing the DateRangePicker.
+The start and end date in a range can be defined with the help of the [StartDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_StartDate) and [EndDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_EndDate) properties. The following example demonstrates how to set the start and end date when initializing the DateRangePicker.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

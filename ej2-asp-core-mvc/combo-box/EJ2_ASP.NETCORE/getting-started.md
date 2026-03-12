@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core ComboBox Control
 
-This section briefly explains about how to include [ASP.NET Core ComboBox](https://www.syncfusion.com/aspnet-core-ui-controls/combobox) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core ComboBox](https://www.syncfusion.com/aspnet-core-ui-controls/combobox) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -112,7 +112,7 @@ After initializing, populate the ComboBox with data using the [dataSource](https
 
 ## Custom values
 
-The ComboBox allows the user to give input as custom value which is not required to present in predefined set of values. By default, this support is enabled by [allowCustom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_AllowCustom) property. In this case, both text field and value field are considered as same. The custom value will be sent to post back handler when a form is about to be submitted.
+The ComboBox allows users to enter custom values that are not present in the predefined set of values. By default, this support is enabled by the [allowCustom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_AllowCustom) property. In this case, both the text field and value field are considered the same. The custom value will be sent to the post back handler when a form is submitted.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,7 +122,7 @@ The ComboBox allows the user to give input as custom value which is not required
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list has '300px'.
+By default, the width of the popup list automatically adjusts according to the ComboBox input element's width, and the height of the popup list is '300px'.
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_PopupWidth) properties respectively.
 
@@ -138,4 +138,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [How to binding the data in ASP.NET Core ComboBox](./data-binding)
+* [How to bind the data in ASP.NET Core ComboBox](./data-binding)

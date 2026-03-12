@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Skeleton Control
 
-This section briefly explains about how to include `ASP.NET MVC Skeleton` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Skeleton](https://www.syncfusion.com/aspnet-mvc-ui-controls/skeleton) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 

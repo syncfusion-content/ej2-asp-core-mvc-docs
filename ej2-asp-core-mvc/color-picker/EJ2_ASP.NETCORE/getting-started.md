@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core ColorPicker Control
 
-This section briefly explains about how to include [ASP.NET Core ColorPicker](https://www.syncfusion.com/aspnet-core-ui-controls/color-picker) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core ColorPicker](https://www.syncfusion.com/aspnet-core-ui-controls/color-picker) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Inline type
 
-By default, the ColorPicker will be rendered using SplitButton and open the pop-up to access the ColorPicker. To render the ColorPicker container alone and to access it directly, render it as inline. It can be achieved by setting the [`inline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
+By default, the ColorPicker will be rendered using SplitButton and opens a pop-up to access the ColorPicker. To render the ColorPicker container alone and access it directly, render it as inline. This can be achieved by setting the [`inline`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_Inline) property to `true`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

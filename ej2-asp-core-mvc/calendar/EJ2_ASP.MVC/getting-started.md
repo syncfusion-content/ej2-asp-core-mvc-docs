@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Calendar Control
 
-This section briefly explains about how to include [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -101,7 +101,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 After rendering a simple Calendar control by following the above steps, configure the Calendar to set a value within a specific range using its value, min, and max properties.
 
-Here the Calendar allows you to select a date within the range from 5th to 27th of this month.
+Here, the Calendar allows selecting a date within the range from the 5th to the 27th of this month.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

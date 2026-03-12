@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core DateRangePicker Control
 
-This section briefly explains about how to include [ASP.NET Core DateRangePicker](https://www.syncfusion.com/aspnet-core-ui-controls/daterangepicker) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core DateRangePicker](https://www.syncfusion.com/aspnet-core-ui-controls/daterangepicker) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Setting the start and end date
 
-The start and end date in a range can be defined with the help of `startDate` and `endDate` property. The following example demonstrates to set the start and end date on initializing the DateRangePicker.
+The start and end date in a range can be defined with the help of the `startDate` and `endDate` properties. The following example demonstrates how to set the start and end date when initializing the DateRangePicker.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

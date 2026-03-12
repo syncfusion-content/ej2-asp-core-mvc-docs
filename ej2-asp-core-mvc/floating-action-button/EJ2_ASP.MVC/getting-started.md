@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Floating Action Button Control
 
-This section briefly explains about how to include [ASP.NET MVC Floating Action Button] control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Floating Action Button] control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -97,9 +97,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Floating Action Button Control](images/default.png)
 
-## Event Click In Floating Action Button
+## Click event in Floating Action Button
 
-The floating action button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
+The Floating Action Button control triggers the `onclick` event when you click on the floating action button. You can use this event to perform the required action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
