@@ -23,7 +23,7 @@ Gradients can be applied to:
 
 The gradient can be defined in the `@{ }` Razor code block or dynamically configured in the `load` event of the chart.
 
-A linear gradient blends color along side a straight path from a defined start point to an end point. Configure it by adding `LinearGradient` inside the target element (Series, Trendlines or Indicators) and define one or more color stops that control how colors transition across the gradient. Set the start and end positions of the gradient using `X1`, `Y1`, `X2` and `Y2` properties. The gradient color stop values such as `Offset`, `Color`, `Opacity`, `Lighten` and `Brighten` are set using the `chartGradientColorStop` property.
+A linear gradient blends color along a straight path from a defined start point to an end point. Configure it by adding `LinearGradient` inside the target element (Series, Trendlines or Indicators) and define one or more color stops that control how colors transition across the gradient. Set the start and end positions of the gradient using `X1`, `Y1`, `X2` and `Y2` properties. The gradient color stop values such as `Offset`, `Color`, `Opacity`, `Lighten` and `Brighten` are set using the `ChartGradientColorStop` property.
 
 The linear gradient properties are:
 
@@ -63,33 +63,6 @@ Apply a linear gradient to a series by adding `LinearGradient` inside the target
 {% endhighlight %}
 {% highlight c# tabtitle="LinearGradient.cs" %}
 {% include code-snippet/stock-chart/gradient/series-linear/series-linear.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-### Trendlines
-
-Apply a linear gradient to a trendline by adding `LinearGradient` inside the target Trendline.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="LinearGradient.cs" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/trendlines-linear.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="LinearGradient.cs" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/trendlines-linear.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -167,3 +140,31 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+### Technical Indicators
+
+Apply a radial gradient to a technical indicator by adding `RadialGradient` inside the target Indicator.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/indicators-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/indicators-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+

@@ -134,7 +134,7 @@ In the `RadialGradient`:
 - `Fy` - Sets the normalized vertical focal point (0 to 1).
 - `R` - Sets the normalized radius of the gradient circle (0 to 1).
 
-In the `gradientColorStop`:
+In the `ChartGradientColorStop`:
 
 - `Offset` - Specifies the position of the color stop along the gradient (0 to 100).
 - `Color` - Sets the color at the stop.
@@ -165,6 +165,60 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% endhighlight %}
 {% highlight c# tabtitle="RadialGradient.cs" %}
 {% include code-snippet/chart/gradient/series-radial/series-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Trendlines
+
+Apply a radial gradient to a trendline by adding `RadialGradient` inside the target Trendline.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/trendlines-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/trendlines-radial/trendlines-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/trendlines-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/trendlines-radial/trendlines-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Technical Indicators
+
+Apply a radial gradient to a technical indicator by adding `RadialGradient` inside the target Indicator.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/indicators-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/indicators-radial/indicators-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/indicators-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/indicators-radial/indicators-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

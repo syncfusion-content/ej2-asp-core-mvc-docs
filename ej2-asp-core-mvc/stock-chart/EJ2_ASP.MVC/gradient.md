@@ -67,33 +67,6 @@ Apply a linear gradient to a series by adding `LinearGradient` inside the target
 {% endtabs %}
 {% endif %}
 
-### Trendlines
-
-Apply a linear gradient to a trendline by adding `LinearGradient` inside the target Trendline.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="LinearGradient.cs" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/trendlines-linear.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="LinearGradient.cs" %}
-{% include code-snippet/stock-chart/gradient/trendlines-linear/trendlines-linear.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Technical Indicators
 
 Apply a linear gradient to a technical indicator by adding `LinearGradient` inside the target Indicator.
@@ -164,6 +137,33 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% endhighlight %}
 {% highlight c# tabtitle="RadialGradient.cs" %}
 {% include code-snippet/stock-chart/gradient/series-radial/series-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Technical Indicators
+
+Apply a radial gradient to a technical indicator by adding `RadialGradient` inside the target Indicator.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/indicators-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/stock-chart/gradient/indicators-radial/indicators-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

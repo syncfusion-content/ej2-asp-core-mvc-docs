@@ -25,7 +25,7 @@ The gradient can be defined in the `@{ }` Razor code block or dynamically config
 
 ## Linear Gradient
 
-A linear gradient blends color along side a straight path from a defined start point to an end point. Configure it by adding `LinearGradient` inside the target element (Series, Trendlines or Indicators) and define one or more color stops that control how colors transition across the gradient. Set the start and end positions of the gradient using `X1`, `Y1`, `X2` and `Y2` properties. The gradient color stop values such as `Offset`, `Color`, `Opacity`, `Lighten` and `Brighten` are set using the `ChartGradientColorStop` property.
+A linear gradient blends color along a straight path from a defined start point to an end point. Configure it by adding `LinearGradient` inside the target element (Series, Trendlines or Indicators) and define one or more color stops that control how colors transition across the gradient. Set the start and end positions of the gradient using `X1`, `Y1`, `X2` and `Y2` properties. The gradient color stop values such as `Offset`, `Color`, `Opacity`, `Lighten` and `Brighten` are set using the `ChartGradientColorStop` property.
 
 In the `LinearGradient`:
 - `X1` - Sets the horizontal start position of the gradient (0 to 1).
@@ -38,8 +38,8 @@ In the `ChartGradientColorStop`:
 - `Offset` - Specifies the position of the color stop along the gradient (0 to 100).
 - `Color` - Sets the color at the stop.
 - `Opacity` - Defines the transparency of the stop (0 to 1).
-- `Lighten` - Adjusts lightness at the stop. Positive values lighten the color. Range: 0 to 1.
-- `Brighten` - Adjusts brightness at the stop. Positive values increase brightness; negative values decrease it. Ranges: -1 to 1.
+- `Lighten` - Adjusts the lightness at the stop. A value of 1 applies maximum lightening. Range: 0 to 1.
+- `Brighten` - Adjusts brightness at the stop. Positive values increase brightness; negative values decrease it. Range: -1 to 1.
 
 ### Series
 
@@ -130,7 +130,7 @@ In the `RadialGradient`:
 
 - `Cx` - Sets the normalized horizontal center of the gradient (0 to 1).
 - `Cy` - Sets the normalized vertical center of the gradient (0 to 1).
-- `Fx` - Sets the normalized horizontal focal point from which the gradient appears to originate (0 to 1).
+- `Fx` - Sets the normalized horizontal focal point of the gradient's origin (0 to 1).
 - `Fy` - Sets the normalized vertical focal point (0 to 1).
 - `R` - Sets the normalized radius of the gradient circle (0 to 1).
 
@@ -165,6 +165,60 @@ Apply a radial gradient to a series by adding `RadialGradient` inside the target
 {% endhighlight %}
 {% highlight c# tabtitle="RadialGradient.cs" %}
 {% include code-snippet/chart/gradient/series-radial/series-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Trendlines
+
+Apply a radial gradient to a trendline by adding `RadialGradient` inside the target Trendline.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/trendlines-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/trendlines-radial/trendlines-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/trendlines-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/trendlines-radial/trendlines-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+### Technical Indicators
+
+Apply a radial gradient to a technical indicator by adding `RadialGradient` inside the target Indicator.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/indicators-radial/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/indicators-radial/indicators-radial.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/gradient/indicators-radial/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="RadialGradient.cs" %}
+{% include code-snippet/chart/gradient/indicators-radial/indicators-radial.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
