@@ -199,17 +199,17 @@ Enable this feature by setting the [`split`](https://ej2.syncfusion.com/react/do
 
 ```jsx
 tooltip: { 
-	enable: true, 
-	split: true 
+    enable: true, 
+    split: true 
 }
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/code-path/user-interaction/split-tooltip/app/index.jsx %}
+{% include code-snippet/chart/user-interaction/split-tooltip/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/code-path/user-interaction/split-tooltip/app/index.tsx %}
+{% include code-snippet/chart/user-interaction/split-tooltip/app/index.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -223,47 +223,46 @@ Enable this feature by setting the [`followPointer`](https://ej2.syncfusion.com/
 
 ```jsx
 tooltip: { 
-	enable: true, 
-	followPointer: true 
+    enable: true, 
+    followPointer: true 
 }
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/code-path/user-interaction/follow-pointer/app/index.jsx %}
+{% include code-snippet/chart/user-interaction/follow-pointer/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/code-path/user-interaction/follow-pointer/app/index.tsx %}
+{% include code-snippet/chart/user-interaction/follow-pointer/app/index.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/follow-pointer" %}
 
 ## Tooltip distance
-
 The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
 
 Set the [`distance`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#distance) property to specify the gap in pixels:
 
 ```jsx
 tooltip: { 
-	enable: true, 
-	distance: 25 
+    enable: true, 
+    distance: 25 
 }
 ```
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/code-path/user-interaction/tooltip-distance/app/index.jsx %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/code-path/user-interaction/tooltip-distance/app/index.tsx %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/chart/code-path/user-interaction/tooltip-distance/app/datasource.jsx %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/chart/code-path/user-interaction/tooltip-distance/app/datasource.tsx %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
