@@ -1,0 +1,36 @@
+@{
+    var radialGradient = new Syncfusion.EJ2.Charts.ChartRadialGradient
+    {
+        Cx = 0.5,
+        Cy = 0.5,
+        Fx = 0.5,
+        Fy = 0.5,
+        R  = 0.5,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FFFF00", Offset = 0,   Opacity = 1,    Lighten = 0, Brighten = 0   },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#7C3AED", Offset = 100, Opacity = 0.95, Lighten = 0, Brighten = 0.9 }
+        }
+    };
+}
+
+@(Html.EJS().Chart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
+              .XName("Month")
+              .YName("Amount")
+              .Name("Sales")
+              .RadialGradient(radialGradient)
+              .Marker(mr => mr.Visible(true).IsFilled(true)
+                  .DataLabel(dl => dl.Visible(true))
+              )
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+    .PrimaryYAxis(py => py.LabelFormat("${value}k"))
+    .Tooltip(tp => tp.Enable(true))
+    .LegendSettings(leg => leg.Visible(true))
+    .Title("Monthly Sales Performance")
+    .Render()
+)

@@ -24,7 +24,6 @@ The accessibility compliance for the Kanban control is outlined below.
 | Mobile Device Support | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
 | [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
 | Accessibility Checker Validation | ![Intermediate](https://cdn.syncfusion.com/content/images/documentation/partial.png) |
-| Axe-core Accessibility Validation | ![Yes](https://cdn.syncfusion.com/content/images/documentation/full.png) |
 
 <style>
     .post .post-content img {

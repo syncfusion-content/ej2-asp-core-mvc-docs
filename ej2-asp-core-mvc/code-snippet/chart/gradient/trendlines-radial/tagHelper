@@ -1,0 +1,37 @@
+@{
+    var trendlineGradient = new Syncfusion.EJ2.Charts.ChartRadialGradient
+    {
+        Cx = 0.5,
+        Cy = 0.5,
+        Fx = 0.5,
+        Fy = 0.5,
+        R = 0.5,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#F97316", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 100, Opacity = 1 }
+        }
+    };
+}
+
+<ejs-chart id="container" title="Retail Orders Processed">
+    <e-chart-primaryxaxis valueType="Category">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis>
+        <e-linestyle width="0"></e-linestyle>
+        <e-majorticklines width="0"></e-majorticklines>
+    </e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="@ViewBag.dataSource" xName="Month" yName="Orders"
+                  type="Spline">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-trendlines>
+                <e-series-trendline type="Linear" width="3" name="Trend"
+                    radialGradient="@trendlineGradient">
+                </e-series-trendline>
+            </e-series-trendlines>
+        </e-series>
+    </e-series-collection>
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+</ejs-chart>

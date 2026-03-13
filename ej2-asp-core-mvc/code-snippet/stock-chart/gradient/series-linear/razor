@@ -1,0 +1,34 @@
+@{
+    var linearGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 1,
+        Y2 = 1,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FF7E5F", Offset = 0,   Opacity = 1, Lighten = 0, Brighten = 0   },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FEB47B", Offset = 100, Opacity = 1, Lighten = 0, Brighten = 0.5 }
+        }
+    };
+}
+
+@(Html.EJS().StockChart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+              .XName("Date")
+              .High("High")
+              .Low("Low")
+              .Open("Open")
+              .Close("Close")
+              .Volume("Volume")
+              .Name("AAPL")
+              .LinearGradient(linearGradient)
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+    .PrimaryYAxis(py => py.Interval(10))
+    .Title("AAPL Stock Price")
+    .Render()
+)
