@@ -174,7 +174,7 @@ Clicking on the `TableCellProperties` item in the quick toolbar opens a comprehe
 
 * **Width**: Set custom cell width with flexible unit selection (px, %, auto). The width is calculated based on the col group element's percentage of the selected cell. This setting applies to both single and multiple cell selections.
 
-* **Height**: Set custom cell height with flexible unit options (px, %, auto). The height value is applied only when the selected cell has an explicitly defined height. This provides precise control over vertical cell sizing and layout consistency.
+* **Height**: Define custom cell height with unit options (px, %, auto). When the cell height value is applied, it appears in the UI only when the table has an explicitly defined height. Provides granular control over vertical cell dimensions.
 
 * **Cell padding**: Adjust the internal spacing inside cells to improve readability and visual appearance.
 
