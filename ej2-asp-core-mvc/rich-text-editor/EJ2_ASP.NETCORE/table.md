@@ -114,6 +114,54 @@ The Rich Text Editor offers a simple and intuitive way to add rows and columns t
 
 ![Rich Text Editor table row quick insert](./images/table_row_quick_insert.gif)
 
+## Table, row, and column selection
+
+The Rich Text Editor provides a simple and intuitive way to select table rows, columns, and entire table. Users can now select table rows and columns without dragging the mouse between cells.
+
+### Selecting an Entire Row
+
+Entire rows can be selected using the icons that appears on hover.
+
+**To select a row:**
+- **Where to hover**: Move the mouse pointer over the first column of the table..
+- **What you'll see**: A selection handle appears on the left side of the corresponding row.
+- **How to select**: Click the handle to select the entire row.
+
+![Rich Text Editor table row selection](../images/table_row_selection.gif)
+
+### Selecting an Entire Column
+
+Entire columns can be selected using the icons that appears on hover.
+
+**To select a column:**
+
+- **Where to hover**: Move the mouse pointer over the first row of the table.
+- **What you'll see**: A selection handle appears at the top of the corresponding column.
+- **How to select**: Click the handle to select the entire column.
+
+![Rich Text Editor table column selection](../images/table_column_selection.gif)
+
+### Selecting the Entire Table
+
+The entire table can be selected using the table selection icon that appears on hover.
+
+**To select the entire table:**
+
+- **Where to hover**: Move the mouse pointer anywhere over the table.
+- **What you'll see**: A selection handle appears at the top-left corner of the table.
+- **How to select**: Click the handle to select the entire table.
+
+![Rich Text Editor entire table selection](../images/table_entire_selection.gif)
+
+### Keyboard Shortcuts
+
+The `Ctrl + A` shortcut provides progressive selection behavior when used inside a table.
+
+* **First press:** Selects the current cell
+* **Second press:** Selects the row containing the current cell
+* **Third press:** Selects the entire table
+* **Fourth press:** Selects all content in the Rich Text Editor
+
 ## Setting cell background color
 
 Set the background color for each table cell using the `BackgroundColor` command in the quick toolbar.
