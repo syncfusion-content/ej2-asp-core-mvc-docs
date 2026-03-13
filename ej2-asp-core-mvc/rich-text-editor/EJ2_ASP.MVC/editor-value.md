@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor value in ##Platform_Name## Rich Text Editor Control
+title: Editor value in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Editor value in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor value
@@ -47,7 +47,7 @@ To retrieve the editor contents, use the value property of Rich Text Editor.
 {% endtabs %}
 {% endif %}
 
-## Autosave
+## Auto save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [SaveInterval](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
@@ -215,84 +215,6 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
   margin-top: 00.6em;
 }
 
-.e-rte-content .e-rte-image.e-imgbreak {
-  border: 0;
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image {
-  border: 0;
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image.e-imginline {
-  display: inline-block;
-  float: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  max-width: calc(100% - (2 * 5px));
-  vertical-align: bottom;
-}
-
-.e-rte-content .e-rte-image.e-imgcenter {
-  cursor: pointer;
-  display: block;
-  float: none;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-image.e-imgleft {
-  float: left;
-  margin: 0 5px 0 0;
-  text-align: left;
-}
-
-.e-rte-content .e-rte-image.e-imgright {
-  float: right;
-  margin: 0 0 0 5px;
-  text-align: right;
-}
-
-.e-rte-content .e-rte-img-caption {
-  display: inline-block;
-  margin: 5px auto;
-  max-width: 100%;
-  position: relative;
-}
-
-.e-rte-content .e-rte-img-caption.e-caption-inline {
-  display: inline-block;
-  margin: 5px auto;
-  margin-left: 5px;
-  margin-right: 5px;
-  max-width: calc(100% - (2 * 5px));
-  position: relative;
-  text-align: center;
-  vertical-align: bottom;
-}
-
-.e-rte-content .e-rte-img-caption.e-imgcenter {
-  display: block;
-}
-
-.e-rte-content .e-rte-img-caption .e-rte-image.e-imgright,
-.e-rte-content .e-rte-img-caption .e-rte-image.e-imgleft {
-  float: none;
-  margin: 0;
-}
-
 .e-rte-content .e-rte-table {
   border-collapse: collapse;
   empty-cells: show;
@@ -312,11 +234,81 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
   border-style: dashed;
 }
 
-.e-rte-content .e-rte-img-caption .e-img-inner {
+.e-rte-image.e-img-inline,
+.e-img-caption-container.e-img-inline {
+  margin-left: 5px;
+  margin-right: 5px;
+  display: inline-block;
+  float: none;
+  max-width: 100%;
+  padding: 1px;
+  vertical-align: bottom;
+}
+
+.e-rte-image.e-img-center,
+.e-rte-image.e-img-break,
+.e-img-caption-container.e-img-center,
+.e-img-caption-container.e-img-break {
+  cursor: pointer;
+  display: block;
+  float: none;
+  margin: 5px auto;
+  max-width: 100%;
+  position: relative;
+}
+
+.e-rte-content .e-rte-image.e-img-left-wrap,
+.e-rte-content .e-img-caption-container.e-img-left-wrap {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+.e-rte-content .e-rte-image.e-img-right-wrap,
+.e-rte-content .e-img-caption-container.e-img-right-wrap {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+
+.e-rte-content .e-rte-image.e-img-left,
+.e-rte-content .e-rte-image.e-img-right,
+.e-rte-content .e-img-caption-container.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-right {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.e-rte-content .e-rte-image.e-img-right,
+.e-rte-content .e-img-caption-container.e-img-right {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.e-rte-content .e-rte-image.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-left {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.e-rte-content .e-img-caption-container.e-img-left-wrap,
+.e-rte-content .e-img-caption-container.e-img-left-wrap {
+  display: inline-block;
+}
+
+.e-rte-content .e-img-caption-container.e-img-left,
+.e-rte-content .e-img-caption-container.e-img-left {
+  display: block;
+}
+
+.e-rte-content .e-img-caption-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.e-rte-content .e-img-caption-container .e-img-caption-text {
   box-sizing: border-box;
   display: block;
   font-size: 16px;
-  font-weight: initial;
+  font-weight: 400;
   margin: auto;
   opacity: .9;
   position: relative;
@@ -324,11 +316,19 @@ N> Make sure to add a CSS class ‘e-rte-content’ to the content container.
   width: 100%;
 }
 
-.e-rte-content .e-rte-img-caption .e-img-wrap {
-  display: inline-block;
-  margin: auto;
-  padding: 0;
-  width: 100%;
+.e-rte-content .e-img-caption-container.e-img-left-wrap .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-right-wrap .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-left .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-right .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-center .e-img-wrap img,
+.e-rte-content .e-img-caption-container.e-img-break .e-img-wrap img {
+  margin-bottom: 0;
+}
+
+.e-rte-content .e-img-caption-container.e-img-center,
+.e-rte-content .e-img-caption-container.e-img-break {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .e-rte-content blockquote {
