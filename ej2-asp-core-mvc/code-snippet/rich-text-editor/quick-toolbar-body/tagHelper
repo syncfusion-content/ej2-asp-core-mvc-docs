@@ -1,0 +1,3 @@
+<ejs-richtexteditor id="text" value="@ViewBag.value">
+    <e-richtexteditor-quicktoolbarsettings enableAppendToBody= "@ViewBag.enableAppendToBody" text="@ViewBag.text"></e-richtexteditor-quicktoolbarsettings>
+</ejs-richtexteditor>
