@@ -1,0 +1,37 @@
+@{
+    var radialGradient = new Syncfusion.EJ2.Charts.AccumulationChartRadialGradient
+    {
+        Cx = 0.22,
+        Cy = 0.22,
+        Fx = 0.12,
+        Fy = 0.12,
+        R = 0.96,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#10B981", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#10B981", Offset = 30,  Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#10B981", Offset = 60,  Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#10B981", Offset = 85,  Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#10B981", Offset = 100, Opacity = 1 }
+        }
+    };
+}
+
+<ejs-accumulationchart id="container" title="Orders by Category" enableSmartLabels="true">
+    <e-accumulation-series-collection>
+        <e-accumulation-series type="Pie" dataSource="ViewBag.dataSource"
+            xName="Category" yName="Share" name="Share by Category"
+            innerRadius="50%" radialGradient="@radialGradient">
+            <e-accumulationseries-datalabel visible="true" name="DataLabel"
+                position="Outside">
+                <e-connectorstyle length="10px"></e-connectorstyle>
+                <e-datalabelfont size="12px"></e-datalabelfont>
+            </e-accumulationseries-datalabel>
+            <e-accumulationseries-border color="#FFFFFF" width="2">
+            </e-accumulationseries-border>
+        </e-accumulation-series>
+    </e-accumulation-series-collection>
+    <e-accumulationchart-legendsettings visible="true" position="Right">
+    </e-accumulationchart-legendsettings>
+    <e-accumulationchart-tooltip enable="true"></e-accumulationchart-tooltip>
+</ejs-accumulationchart>
