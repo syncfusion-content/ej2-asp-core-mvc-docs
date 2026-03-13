@@ -113,7 +113,7 @@ To get the content from the Rich Text Editor, use the following approaches:
 {% endtabs %}
 {% endif %}
 
-## Autosave
+## Auto save
 
 The auto-save option in the Rich Text Editor allows the content to be automatically saved during idle periods after you have typed. Once this option is enabled, the editor will save the content based on the [saveInterval](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_SaveInterval) property's value, which is specified in milliseconds.
 
