@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Button Control
 
-This section briefly explains about how to include [ASP.NET Core Button](https://www.syncfusion.com/aspnet-core-ui-controls/button) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Button](https://www.syncfusion.com/aspnet-core-ui-controls/button) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -102,7 +102,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
+To change the default Button to a flat Button, set the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

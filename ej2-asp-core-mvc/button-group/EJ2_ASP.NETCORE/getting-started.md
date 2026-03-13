@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Button Group Control
 
-This section briefly explains about how to include [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -102,11 +102,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Orientation
 
-Button Group can be arranged in a vertical and horizontal orientation. By default, it is horizontally aligned.
+Button Group can be arranged in vertical or horizontal orientation. By default, it is horizontally aligned.
 
 ### Vertical Orientation
 
-Button Group can be aligned vertically by using the built-in CSS class `e-vertical` to the target element.
+Button Group can be aligned vertically by applying the built-in CSS class `e-vertical` to the target element.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -118,7 +118,7 @@ Button Group can be aligned vertically by using the built-in CSS class `e-vertic
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ButtonGroup/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
-N> ButtonGroup does not support SplitButton control nesting in a vertical orientation.
+N> Button Group does not support SplitButton control nesting in a vertical orientation.
 
 ## See also
 

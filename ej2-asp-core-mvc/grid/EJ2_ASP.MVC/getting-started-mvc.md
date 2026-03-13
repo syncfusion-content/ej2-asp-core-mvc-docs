@@ -59,7 +59,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 <head>
     ...
     <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent2.css" />
     <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
@@ -199,7 +199,7 @@ The paging feature enables users to view the grid record in a paged view. It can
 {% endhighlight %}
 {% endtabs %}
 
-![Paging in ASP.NET MVC Grid Control](images/paging.png)
+![Paging in ASP.NET MVC Grid Control](images/getting-started/grid-page.png)
 
 ## Enable Sorting
 
@@ -211,7 +211,7 @@ The sorting feature enables you to order the records. It can be enabled by setti
 {% endhighlight %}
 {% endtabs %}
 
-![Sorting in ASP.NET MVC Grid Control](images/sorting.png)
+![Sorting in ASP.NET MVC Grid Control](images/getting-started/grid-sort.png)
 
 ## Enable Filtering
 
@@ -223,7 +223,7 @@ The filtering feature enables you to view reduced amount of records based on fil
 {% endhighlight %}
 {% endtabs %}
 
-![Filtering in ASP.NET MVC Grid Control](images/filtering.png)
+![Filtering in ASP.NET MVC Grid Control](images/getting-started/grid-filter.png)
 
 ## Enable Grouping
 
@@ -235,7 +235,7 @@ The grouping feature enables users to view the grid record in a grouped view. It
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping in ASP.NET MVC Grid Control](images/grouping.png)
+![Grouping in ASP.NET MVC Grid Control](images/getting-started/grid-group.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Grid/ASP.NET%20MVC%20Razor%20Examples).
 

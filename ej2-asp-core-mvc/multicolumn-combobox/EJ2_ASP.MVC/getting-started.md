@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC MultiColumn ComboBox control
 
-This section briefly explains about how to include `ASP.NET MVC MultiColumn ComboBox` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the `ASP.NET MVC MultiColumn ComboBox` control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -106,7 +106,7 @@ By default, the width of the popup list automatically adjusts according to the M
 
 The height and width of the popup list can also be customized using the `PopupHeight` and `PopupWidth` properties respectively.
 
-In the following sample, popup list's width and height are configured.
+In the following sample, the popup list's width and height are configured.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

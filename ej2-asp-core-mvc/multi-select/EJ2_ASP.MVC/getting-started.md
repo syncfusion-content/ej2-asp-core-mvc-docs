@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC MultiSelect Control
 
-This section briefly explains about how to include [ASP.NET MVC MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -106,7 +106,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Configure the popup list
 
-By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height auto adjust's according to the height of the popup list items.
+By default, the width of the popup list automatically adjusts according to the MultiSelect input element's width, and the height automatically adjusts according to the height of the popup list items.
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_PopupWidth) properties respectively.
 

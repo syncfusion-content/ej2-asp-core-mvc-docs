@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC DateTimePicker Control
 
-This section briefly explains about how to include [ASP.NET MVC DateTimePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/datetime-picker) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DateTimePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/datetime-picker) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Setting the min and max
 
-The minimum and maximum date time can be defined with the help of [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Min) and [Max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Max) property. The following example demonstrates to set the `min` and `max` on initializing the DateTimePicker.
+The minimum and maximum date time can be defined with the help of the [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Min) and [Max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Max) properties. The following example demonstrates how to set the `min` and `max` when initializing the DateTimePicker.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

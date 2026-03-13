@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Dialog Control
 
-This section briefly explains about how to include [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -112,7 +112,7 @@ N> In the dialog control, max-height is calculated based on the dialog target el
 
 ## Modal Dialog
 
-A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact the Dialog compulsory before interacting with the remaining content in an application.
+A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact with the Dialog compulsorily before interacting with the remaining content in an application.
 
 While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event.
 
@@ -126,7 +126,7 @@ N> When the modal dialog is opened, the Dialog's target scrolling will be disabl
 
 ![ASP.NET Core Modal Dialog](./images/modal-dialog-getting.png)
 
-N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets the height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, the CSS style for the html and body can be set to get the dialog height.
+N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, the CSS style for the html and body can be set to get the dialog height.
 
 ```css
 
@@ -150,9 +150,9 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 The Dialog provides built-in support to render the `buttons` on the footer (for ex: `OK` or `Cancel` buttons). Each Dialog button allows the user to perform any action while clicking on it.
 
-The primary button will be focused automatically on opening the Dialog, and add the [`click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
+The primary button will be focused automatically when opening the Dialog, and add the [`click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
 
-N> When the Dialog initialize with more than one primary buttons, the first primary button gets focus on opening the Dialog.
+N> When the Dialog initializes with more than one primary button, the first primary button gets focus when opening the Dialog.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -170,9 +170,9 @@ public class ButtonModel
 
 ## Draggable
 
-The Dialog supports to [drag](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_AllowDragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Dialog supports [dragging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_AllowDragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
 
-N> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enable draggable support for modal dialog also.
+N> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -191,10 +191,10 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## Positioning
 
-The Dialog can be positioned using the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property by providing the X and Y co-ordinates. It can be positioned inside the target of the container or **<body>** of the element based on the given X and Y values.
+The Dialog can be positioned using the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Position) property by providing the X and Y coordinates. It can be positioned inside the target container or **<body>** of the element based on the given X and Y values.
 
-for X is: left, center, right (or) any offset value.
-for Y is: top, center, bottom (or) any offset value.
+For X: left, center, right (or) any offset value.
+For Y: top, center, bottom (or) any offset value.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

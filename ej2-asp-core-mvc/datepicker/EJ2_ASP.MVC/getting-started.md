@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC DatePicker Control
 
-This section briefly explains about how to include [ASP.NET MVC DatePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/datepicker) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC DatePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/datepicker) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -103,7 +103,7 @@ N> Running the above code will display the basic DatePicker on the browser.
 
 To restrict the selection of date within a specified range, use the [Min](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Min) and [Max](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Max) properties.
 
-The below example demonstrates the DatePicker to select a date within a range from 5 to 27 in a current month.
+The following example demonstrates the DatePicker to select a date within a range from the 5th to the 27th in the current month.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC NumericTextBox Control
 
-This section briefly explains about how to include [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -111,9 +111,9 @@ The validation behavior depends on the [StrictMode](https://help.syncfusion.com/
 
 ## Formatting the value
 
-User can set the format of the NumericTextBox control using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format, when the control is in focused out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/formats).
+Users can set the format of the NumericTextBox control using the [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in the focused-out state. For more information about formatting the value, refer to this [link](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/formats).
 
-The below example demonstrates format the value by using currency format value `c2`.
+The below example demonstrates how to format the value by using currency format value `c2`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

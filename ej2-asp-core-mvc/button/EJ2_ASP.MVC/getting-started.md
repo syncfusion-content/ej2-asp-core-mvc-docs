@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Button Control
 
-This section briefly explains about how to include [ASP.NET MVC Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/button) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/button) control in an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -99,7 +99,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Change Button type
 
-To change the default Button to flat Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
+To change the default Button to a flat Button, set the [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Button.html#Syncfusion_EJ2_Buttons_Button_CssClass) property to `e-flat`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
