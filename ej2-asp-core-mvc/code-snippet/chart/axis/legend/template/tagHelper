@@ -1,0 +1,92 @@
+
+<!-- Chart -->
+<ejs-chart id="coalChart" legendRender="legendRender" load="load"
+    title="Top 3 Countries by Coal Production (2022–2024)" width="70%">
+
+    <e-chart-primaryxaxis interval="1" edgeLabelPlacement="Shift">
+        <e-majorgridlines width="0"></e-majorgridlines>
+    </e-chart-primaryxaxis>
+    <e-chart-primaryyaxis title="Coal Production (Million Tonnes)" labelFormat="{value}t">
+    </e-chart-primaryyaxis>
+
+    <!-- Chart Area -->
+    <e-chart-chartarea>
+        <e-chartarea-border width="0"></e-chartarea-border>
+    </e-chart-chartarea>
+
+    <!-- SERIES COLLECTION -->
+    <e-series-collection>
+
+        <!-- China -->
+        <e-series name="China"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+            dataSource="ViewBag.ChinaData"
+            xName="x" yName="y">
+            <e-series-animation enable="false"></e-series-animation>
+            <e-series-marker>
+                <e-series-datalabel visible="true"></e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <!-- India -->
+        <e-series name="India"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+            dataSource="ViewBag.IndiaData"
+            xName="x" yName="y">
+            <e-series-animation enable="false"></e-series-animation>
+            <e-series-marker>
+                <e-series-datalabel visible="true"></e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+        <!-- Indonesia -->
+        <e-series name="Indonesia"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.Column"
+            dataSource="ViewBag.IndonesiaData"
+            xName="x" yName="y">
+            <e-series-animation enable="false"></e-series-animation>
+            <e-series-marker>
+                <e-series-datalabel visible="true"></e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+
+    </e-series-collection>
+
+    <!-- LEGEND -->
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+
+    <!-- TOOLTIP -->
+    <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+
+</ejs-chart>
+
+<script>
+  var legendIcons = { "China":
+    "https://img.icons8.com/color/100/china.png", "India":
+    "https://img.icons8.com/color/100/india.png", "Indonesia":
+    "https://img.icons8.com/color/100/indonesia.png" }; 
+    
+    function onLoad(args) { 
+    update more options. var chart = document.getElementById('coalChart').ej2_instances[0];
+    chart.legendSettings.template = '<div class="coal-legend-item" ' +
+      '
+        style="display:flex;align-items:center;gap:8px;padding:4px 8px;opacity:1;transition:opacity .3s;cursor:pointer;">'
+    + ' <img class="e-icon" src="" width="24" height="24"
+            style="border-radius:4px;object-fit:cover;" />' + ' <span class="e-label"
+            style="font-size:13px;font-weight:bold;color:;"></span>' + '</div>'; 
+} 
+            
+    function onLegendRender(args) { var chart =
+    document.getElementById('coalChart').ej2_instances[0];
+    var matchedSeries = (chart.series || []).filter(function (s) { return s.name
+    === args.text; })[0]; 
+    var opacity =
+    (matchedSeries && matchedSeries.visible === false) ? '0.5' : '1'; 
+    var tpl = args.template; 
+    tpl = tpl .replace('opacity:1;', 'opacity:' + opacity + ';')
+    .replace('src=""', 'src="' + (legendIcons[args.text] || '') + '"') .replace('color:;', 'color:'
+    + args.fill + ';') .replace('></span>', '>' + args.text + '</span>');
+    args.template = tpl; 
+} 
+
+</script>

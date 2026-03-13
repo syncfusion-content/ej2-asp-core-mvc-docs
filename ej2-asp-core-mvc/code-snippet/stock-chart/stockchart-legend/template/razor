@@ -1,0 +1,53 @@
+<script src="~/datasource.js"></script>
+
+
+@(Html.EJS().StockChart("container")
+    .Title("AAPL Stock Price")
+    .Load("onStockLoad")
+    .PrimaryXAxis(x => x.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+          .XName("x").YName("low")
+          .Name("Google")
+          .Add();
+
+        sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+          .XName("x").YName("high")
+          .Name("MicrosoftEdge")
+          .Add();
+    })
+    .Tooltip(tt => tt.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .Render())
+
+
+<script>
+ 
+  var data = window.chartData || [];
+  var iconMap = {
+    Google: 'https://img.icons8.com/?size=100&id=110580&format=png&color=000000',
+    MicrosoftEdge: 'https://img.icons8.com/?size=100&id=4rcnsWVaR2ja&format=png&color=000000'
+  };
+
+  function onStockLoad(args) {
+    args.stockChart.series[0].dataSource = data;
+    args.stockChart.series[1].dataSource = data;
+    args.stockChart.indicatorType = [];
+    args.stockChart.trendlineType = [];
+    args.stockChart.legendSettings.template = function (ctx) {
+      var name = (ctx.series && ctx.series.name) ? ctx.series.name : (ctx.text || '');
+      var icon = iconMap[name] || '';
+      var iconHtml = icon
+        ? '<img src="' + icon + '" width="20" height="20" ' +
+          'style="object-fit:contain;border-radius:2px;" alt="' + name + '"/>'
+        : '';
+      return '' +
+        '<div style="display:flex;align-items:center;gap:8px;padding:4px;">' +
+          iconHtml +
+          '<span style="font-size:13px;font-weight:500;">' + name + '</span>' +
+        '</div>';
+    };
+  }
+
+</script>
