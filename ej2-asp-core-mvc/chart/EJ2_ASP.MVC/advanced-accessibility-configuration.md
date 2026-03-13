@@ -11,9 +11,9 @@ documentation: ug
 
 # Accessibility customization in ##Platform_Name## Chart component
 
-The Syncfusion® ##Platform_Name## Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
+The Syncfusion® ##Platform_Name## Chart component visualizes data graphically and provides accessibility customization options to improve usability for people with disabilities. The primary accessibility attributes are described in this section.
 
-The chart component has a number of characteristics that enable accessibility features to be customized, including:
+The chart component exposes attributes that enable accessibility customization, including:
 
 * [`AccessibilityDescription`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityDescription) - Provides a text description for the chart, improving support for screen readers.
 * [`AccessibilityRole`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAccessibility.html#Syncfusion_EJ2_Charts_ChartAccessibility_AccessibilityRole) - Specifies the role of the chart, helping screen readers to identify the element appropriately.
