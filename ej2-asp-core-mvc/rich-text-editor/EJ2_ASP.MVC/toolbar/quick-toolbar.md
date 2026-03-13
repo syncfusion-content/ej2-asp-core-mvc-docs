@@ -78,7 +78,7 @@ The table quick toolbar opens when you click anywhere within a table. Customize 
 
 The Rich Text Editor provides essential tools in the table quick toolbar, such as 'Tableheader', 'TableRemove', 'TableRows', 'TableColumns', 'TableCell', 'Styles', 'BackgroundColor', 'Alignments', 'TableCellVerticalAlign', 'TableEditProperties', 'TableCellProperties'.
 
-The following sample demonstrates the customiztion of table quick toolbar.
+The following sample demonstrates the custocustomizationmiztion of table quick toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

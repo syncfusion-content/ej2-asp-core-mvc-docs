@@ -78,7 +78,7 @@ The table quick toolbar opens when you click anywhere within a table. Customize 
 
 The quick toolbar appears when clicking on a table, providing easy access to table-related commands. You can customize the quick toolbar by adding or removing tools using the [quickToolbarSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorQuickToolbarSettings.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorQuickToolbarSettings_Table) property.
 
-The following sample demonstrates the customiztion of table quick toolbar.
+The following sample demonstrates the customization of table quick toolbar.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
