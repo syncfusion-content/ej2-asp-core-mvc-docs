@@ -1,0 +1,63 @@
+@using Syncfusion.EJ2.Charts
+
+@Html.EJS().StockChart("container")
+.SeriesType(new string[] { })
+.IndicatorType(new string[] { })
+.PrimaryXAxis(px => px
+    .ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+    .MajorGridLines(new { width = 0 })
+    .CrosshairTooltip(new { enable = true })
+)
+.PrimaryYAxis(py => py
+    .LineStyle(new { color = "transparent" })
+    .MajorTickLines(new { color = "transparent", height = 0 })
+    .CrosshairTooltip(new { enable = true })
+)
+.ChartArea(area => area.Border(new { width = 0 }))
+.Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Both))
+.CrosshairLabelRender("crosshairLabelRender")
+.Series(series =>
+{
+    series.DataSource(ViewBag.dataSource)
+    .XName("x")
+    .YName("high")
+    .Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea)
+    .Opacity(0.5)
+    .Add();
+})
+.Render()
+
+<script>
+
+function crosshairLabelRender(args) {
+
+    if (args.axisName === 'primaryXAxis') {
+
+        var date = new Date(args.value);
+
+        args.text = date.toLocaleDateString('en-IN', {
+            day: '2-digit',
+            month: 'short',
+            year: 'numeric'
+        });
+
+    }
+
+    if (args.axisName === 'primaryYAxis') {
+
+        var price = Number(args.value);
+
+        args.text = '₹' + price.toLocaleString('en-IN', {
+            maximumFractionDigits: 0
+        });
+
+        if (price > 310) {
+            args.textStyle.color = '#d32f2f';
+            args.fill = '#ffebee';
+        }
+
+    }
+
+}
+
+</script>

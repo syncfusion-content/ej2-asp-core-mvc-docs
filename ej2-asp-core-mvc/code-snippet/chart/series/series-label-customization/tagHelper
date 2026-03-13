@@ -1,0 +1,65 @@
+<ejs-chart id="container">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+
+    <e-series-collection>
+
+        <e-series dataSource="ViewBag.vietnamData" xName="x" yName="y" name="Vietnam" type="Line">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-labelsettings visible="true" text="Vietnam"
+                background="#E8F5E9"
+                opacity="0.9"
+                showOverlapText="true">
+                <e-series-labelsettings-border width="2" color="#2E7D32"></e-series-labelsettings-border>
+                <e-series-labelsettings-font size="12px" fontWeight="600" color="#2E7D32"></e-series-labelsettings-font>
+            </e-series-labelsettings>
+        </e-series>
+
+        <e-series dataSource="ViewBag.indonesiaData" xName="x" yName="y" name="Indonesia" type="Line">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-labelsettings visible="true" text="Indonesia"
+                background="#FFF3E0"
+                opacity="0.9"
+                showOverlapText="true">
+                <e-series-labelsettings-border width="2" color="#FB8C00"></e-series-labelsettings-border>
+                <e-series-labelsettings-font size="12px" fontWeight="600" color="#FB8C00"></e-series-labelsettings-font>
+            </e-series-labelsettings>
+        </e-series>
+
+        <e-series dataSource="ViewBag.franceData" xName="x" yName="y" name="France" type="Line">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-labelsettings visible="true" text="France"
+                background="#E3F2FD"
+                opacity="0.9"
+                showOverlapText="true">
+                <e-series-labelsettings-border width="2" color="#1976D2"></e-series-labelsettings-border>
+                <e-series-labelsettings-font size="12px" fontWeight="600" color="#1976D2"></e-series-labelsettings-font>
+            </e-series-labelsettings>
+        </e-series>
+
+        <e-series dataSource="ViewBag.polandData" xName="x" yName="y" name="Poland" type="Line">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-labelsettings visible="true" text="Poland"
+                background="#F3E5F5"
+                opacity="0.9"
+                showOverlapText="true">
+                <e-series-labelsettings-border width="2" color="#8E24AA"></e-series-labelsettings-border>
+                <e-series-labelsettings-font size="12px" fontWeight="600" color="#8E24AA"></e-series-labelsettings-font>
+            </e-series-labelsettings>
+        </e-series>
+
+        <e-series dataSource="ViewBag.mexicoData" xName="x" yName="y" name="Mexico" type="Line">
+            <e-series-marker visible="true"></e-series-marker>
+            <e-series-labelsettings visible="true" text="Mexico"
+                background="#FBE9E7"
+                opacity="0.9"
+                showOverlapText="true">
+                <e-series-labelsettings-border width="2" color="#D84315"></e-series-labelsettings-border>
+                <e-series-labelsettings-font size="12px" fontWeight="600" color="#D84315"></e-series-labelsettings-font>
+            </e-series-labelsettings>
+        </e-series>
+
+    </e-series-collection>
+
+</ejs-chart>
