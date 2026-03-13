@@ -241,4 +241,33 @@ The title for legend can be set using [`title`](https://help.syncfusion.com/cr/a
 {% endtabs %}
 {% endif %}
 
+## Legend Template
+
+Legend templates allow you to replace default legend icons and text with custom HTML.This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.The rendered content becomes the legend item and can be styled with CSS.
+
+You can customize the legend items by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#Syncfusion_EJ2_Charts_StockChartStockChartLegendSettings) property of [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#Syncfusion_EJ2_Charts_StockChartStockChartLegendSettings). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#Syncfusion_EJ2_Charts_StockChartStockChartLegendSettings_ToggleVisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 
