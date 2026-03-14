@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Inline assist configurations in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: Inline assist in ##Platform_Name## InlineAIAssist Control | Syncfusion
 description: Checkout and learn about Inline assist in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline assist

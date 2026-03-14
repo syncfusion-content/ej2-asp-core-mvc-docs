@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Commands configuration in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: Commands in ##Platform_Name## InlineAIAssist Control | Syncfusion
 description: Checkout and learn about Command items in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Command settings

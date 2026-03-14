@@ -10,7 +10,7 @@ documentation: ug
 
 # Response actions in ##Platform_Name## Inline AI Assist control
 
-You can render response action popup by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistResponseSettings_Items) property in the `e-inlineaiassist-commandsettings` tag helper.
+You can render response action popup by using [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistResponseSettings_Items) property in the `e-inlineaiassist-responsesettings` tag helper.
 
 ## Built-in response items
 

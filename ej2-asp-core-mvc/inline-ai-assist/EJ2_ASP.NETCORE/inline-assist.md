@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Inline assist configurations in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Inline assist in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Inline assist in ##Platform_Name## InlineAIAssist Control | Syncfusion
+description: Checkout and learn about Inline assist in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline assist
 publishingplatform: ##Platform_Name##
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Setting prompt text
 
-You can use the [Prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Prompt)property to define the prompt text for the Inline AI Assist control.
+You can use the [prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Prompt) property to define the prompt text for the Inline AI Assist control.
 
 ## Setting prompt placeholder
 
@@ -26,7 +26,7 @@ You can use the [prompts](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 ## Setting z-index
 
-You can use the [zIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_ZIndex)property to set z-index for the Inline AI Assist popup. The default value is `1000`.
+You can use the [zIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_ZIndex) property to set z-index for the Inline AI Assist popup. The default value is `1000`.
 
 ## Setting popup width
 
