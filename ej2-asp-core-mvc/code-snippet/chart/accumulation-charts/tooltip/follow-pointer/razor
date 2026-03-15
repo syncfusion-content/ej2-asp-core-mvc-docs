@@ -3,11 +3,11 @@
 .Series(series =>
 {
     series.DataSource(ViewBag.dataSource)
-    .XName("x")
-    .YName("y")
-    .Name("Browser")
-    .BorderRadius(3)
-    .Add();
+        .XName("x")
+        .YName("y")
+        .Name("Browser")
+        .BorderRadius(3)
+        .Add();
 })
 .Tooltip(tt => tt
     .Enable(true)

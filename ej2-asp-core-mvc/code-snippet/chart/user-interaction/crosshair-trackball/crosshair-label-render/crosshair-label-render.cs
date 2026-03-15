@@ -1,24 +1,22 @@
-using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-
-namespace EJ2CoreSampleBrowser.Controllers.Chart
+public IActionResult CrosshairLabelRender()
 {
-    public partial class ChartController : Controller
+    List<ChartData> chartData = new List<ChartData>
     {
-        public IActionResult CrosshairLabelRender()
-        {
+        new ChartData { x = "January", y = 1200 },
+        new ChartData { x = "February", y = 900 },
+        new ChartData { x = "March", y = 1500 },
+        new ChartData { x = "April", y = 700 },
+        new ChartData { x = "May", y = 2000 },
+        new ChartData { x = "June", y = 300 }
+    };
 
-            ViewBag.dataSource = new List<object>()
-            {
-                new { x = "January", y = 1200 },
-                new { x = "February", y = 900 },
-                new { x = "March", y = 1500 },
-                new { x = "April", y = 700 },
-                new { x = "May", y = 2000 },
-                new { x = "June", y = 300 }
-            };
+    ViewBag.dataSource = chartData;
 
-            return View();
-        }
-    }
+    return View();
+}
+
+public class ChartData
+{
+    public string x;
+    public double y;
 }

@@ -25,7 +25,7 @@
             dataSource="ViewBag.dataSource"
             xName="x"
             yName="high"
-            type="SplineArea"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea"
             opacity="0.5">
         </e-stockchart-series>
 
@@ -58,8 +58,11 @@ function crosshairLabelRender(args) {
         });
 
         if (price > 310) {
+
+            args.textStyle = args.textStyle || {};
             args.textStyle.color = '#d32f2f';
             args.fill = '#ffebee';
+
         }
 
     }

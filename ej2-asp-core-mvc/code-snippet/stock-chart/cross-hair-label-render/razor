@@ -1,29 +1,27 @@
 @using Syncfusion.EJ2.Charts
 
 @Html.EJS().StockChart("container")
-.SeriesType(new string[] { })
-.IndicatorType(new string[] { })
 .PrimaryXAxis(px => px
     .ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
-    .MajorGridLines(new { width = 0 })
-    .CrosshairTooltip(new { enable = true })
+    .MajorGridLines(mg => mg.Width(0))
+    .CrosshairTooltip(ct => ct.Enable(true))
 )
 .PrimaryYAxis(py => py
-    .LineStyle(new { color = "transparent" })
-    .MajorTickLines(new { color = "transparent", height = 0 })
-    .CrosshairTooltip(new { enable = true })
+    .LineStyle(ls => ls.Color("transparent"))
+    .MajorTickLines(mt => mt.Color("transparent").Height(0))
+    .CrosshairTooltip(ct => ct.Enable(true))
 )
-.ChartArea(area => area.Border(new { width = 0 }))
+.ChartArea(area => area.Border(b => b.Width(0)))
 .Crosshair(cr => cr.Enable(true).LineType(Syncfusion.EJ2.Charts.LineType.Both))
 .CrosshairLabelRender("crosshairLabelRender")
 .Series(series =>
 {
-    series.DataSource(ViewBag.dataSource)
-    .XName("x")
-    .YName("high")
-    .Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea)
-    .Opacity(0.5)
-    .Add();
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea)
+        .XName("x")
+        .YName("high")
+        .DataSource(ViewBag.dataSource)
+        .Opacity(0.5)
+        .Add();
 })
 .Render()
 
@@ -52,10 +50,12 @@ function crosshairLabelRender(args) {
         });
 
         if (price > 310) {
+
+            args.textStyle = args.textStyle || {};
             args.textStyle.color = '#d32f2f';
             args.fill = '#ffebee';
-        }
 
+        }
     }
 
 }

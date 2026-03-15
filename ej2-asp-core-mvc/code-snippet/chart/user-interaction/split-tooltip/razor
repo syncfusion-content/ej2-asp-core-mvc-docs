@@ -5,43 +5,43 @@
 .Tooltip(tt => tt.Enable(true).Split(true))
 .Series(series =>
 {
-    series.DataSource(ViewBag.vietnamData)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
+        .DataSource(ViewBag.vietnamData)
         .Name("Vietnam")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .Marker(m => m.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.indonesiaData)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
+        .DataSource(ViewBag.indonesiaData)
         .Name("Indonesia")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .Marker(m => m.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.franceData)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
+        .DataSource(ViewBag.franceData)
         .Name("France")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .Marker(m => m.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.polandData)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
+        .DataSource(ViewBag.polandData)
         .Name("Poland")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .Marker(m => m.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.mexicoData)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
+        .DataSource(ViewBag.mexicoData)
         .Name("Mexico")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .Marker(m => m.Visible(true))
         .Add();
 })

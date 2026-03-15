@@ -1,39 +1,51 @@
 @Html.EJS().Chart("container")
-.PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category))
+.PrimaryXAxis(px =>
+    px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+)
 .LegendSettings(l => l.Visible(true))
 .Series(series =>
 {
-    series.DataSource(ViewBag.vietnamData)
-        .XName("x").YName("y").Name("Vietnam")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .DataSource(ViewBag.vietnamData)
+        .Name("Vietnam")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.indonesiaData)
-        .XName("x").YName("y").Name("Indonesia")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .DataSource(ViewBag.indonesiaData)
+        .Name("Indonesia")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.franceData)
-        .XName("x").YName("y").Name("France")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .DataSource(ViewBag.franceData)
+        .Name("France")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.polandData)
-        .XName("x").YName("y").Name("Poland")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .DataSource(ViewBag.polandData)
+        .Name("Poland")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true))
         .Add();
 
-    series.DataSource(ViewBag.mexicoData)
-        .XName("x").YName("y").Name("Mexico")
-        .Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+    series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
+        .XName("x")
+        .YName("y")
+        .DataSource(ViewBag.mexicoData)
+        .Name("Mexico")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true))
         .Add();

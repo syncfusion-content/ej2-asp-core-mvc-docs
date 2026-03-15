@@ -14,7 +14,7 @@
                   xName="x"
                   yName="y"
                   name="Vietnam"
-                  type="Line">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             <e-series-marker visible="true"></e-series-marker>
         </e-series>
 
@@ -22,7 +22,7 @@
                   xName="x"
                   yName="y"
                   name="Indonesia"
-                  type="Line">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             <e-series-marker visible="true"></e-series-marker>
         </e-series>
 
@@ -30,7 +30,7 @@
                   xName="x"
                   yName="y"
                   name="France"
-                  type="Line">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             <e-series-marker visible="true"></e-series-marker>
         </e-series>
 
@@ -38,7 +38,7 @@
                   xName="x"
                   yName="y"
                   name="Poland"
-                  type="Line">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             <e-series-marker visible="true"></e-series-marker>
         </e-series>
 
@@ -46,7 +46,7 @@
                   xName="x"
                   yName="y"
                   name="Mexico"
-                  type="Line">
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
             <e-series-marker visible="true"></e-series-marker>
         </e-series>
 
