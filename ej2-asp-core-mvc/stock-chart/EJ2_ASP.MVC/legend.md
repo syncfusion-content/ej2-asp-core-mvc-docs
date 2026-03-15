@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Stock Chart Component
+title: Syncfusion ##Platform_Name## Stock Chart Legend Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend
+# Stock Chart Legend in Syncfusion ##Platform_Name##
 
 Legend provides information about the series rendered in the Stock Chart. Legend can be added to a Stock Chart by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#Syncfusion_EJ2_Charts_StockChartStockChartLegendSettings_Visible) option in the [`LegendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#Syncfusion_EJ2_Charts_StockChartStockChartLegendSettings).
 
@@ -237,6 +237,35 @@ The title for legend can be set using [`Title`](https://help.syncfusion.com/cr/a
 {% endhighlight %}
 {% highlight c# tabtitle="Title.cs" %}
 {% include code-snippet/stock-chart/stockchart-legend/title/title.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+## Legend Template
+
+Legend templates allow you to replace default legend icons and text with custom HTML.This enables branded styles, richer content (icons, multi-line text, badges), improved readability, and localization.The rendered content becomes the legend item and can be styled with CSS.
+
+You can customize the legend items by using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html) property of [`legendSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html). Legend interactions (click to toggle series) remain unless [`ToggleVisibility`] (https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartLegendSettings.html#togglevisibility) is set to false. Templates work with all legend positions, alignments, and paging.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template.cs" %}
+{% include code-snippet/stock-chart/stockchart-legend/template/template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

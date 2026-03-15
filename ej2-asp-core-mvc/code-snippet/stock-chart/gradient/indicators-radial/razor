@@ -1,0 +1,61 @@
+@{
+    var indicatorGradient = new Syncfusion.EJ2.Charts.ChartRadialGradient
+    {
+        Cx = 0.5,
+        Cy = 0.5,
+        Fx = 0.5,
+        Fy = 0.5,
+        R = 0.5,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "red",  Offset = 0,   Opacity = 1, Lighten = 0, Brighten = 0 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "blue", Offset = 100, Opacity = 1, Lighten = 0, Brighten = 0 }
+        }
+    };
+}
+
+@(Html.EJS().StockChart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+              .XName("date")
+              .High("high")
+              .Low("low")
+              .Open("open")
+              .Close("close")
+              .Volume("volume")
+              .Name("Apple Inc")
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .Indicators(ind =>
+    {
+        ind.Type(Syncfusion.EJ2.Charts.TechnicalIndicators.Ema)
+           .Field(Syncfusion.EJ2.Charts.FinancialDataFields.Close)
+           .SeriesName("Apple Inc")
+           .XName("date")
+           .High("high")
+           .Low("low")
+           .Open("open")
+           .Close("close")
+           .Period(10)
+           .RadialGradient(indicatorGradient).Add();
+    })
+    .PrimaryXAxis(px => px
+        .MajorGridLines(mg => mg.Color("transparent"))
+        .CrosshairTooltip(ct => ct.Enable(true))
+    )
+    .PrimaryYAxis(py => py
+        .LineStyle(ls => ls.Color("transparent"))
+        .MajorTickLines(mt => mt.Color("transparent").Width(0))
+    )
+    .ChartArea(ca => ca.Border(br => br.Width(0)))
+    .Border(br => br.Width(0))
+    .Crosshair(ch => ch.Enable(true))
+    .Tooltip(tp => tp.Enable(true))
+    .SeriesType(new List<Syncfusion.EJ2.Charts.StockChartSeriesType>())
+    .IndicatorType(new List<Syncfusion.EJ2.Charts.TechnicalIndicators>())
+    .ExportType(new List<Syncfusion.EJ2.Charts.ExportType>())
+    .Title("Historical Indian Rupee Rate (INR USD)")
+    .Height("350")
+    .Render()
+)

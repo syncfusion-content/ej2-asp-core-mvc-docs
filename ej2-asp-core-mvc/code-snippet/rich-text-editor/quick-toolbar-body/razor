@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("text").QuickToolbarSettings(e => { e.Text((object)ViewBag.text); e.EnableAppendToBody((bool)ViewBag.enableAppendToBody); }).Value(ViewBag.value).Render()
