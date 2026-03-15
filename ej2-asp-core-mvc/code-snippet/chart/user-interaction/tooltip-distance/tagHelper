@@ -1,0 +1,31 @@
+<ejs-chart id="container">
+
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+
+    <e-chart-primaryyaxis title="Value"></e-chart-primaryyaxis>
+
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+
+    <e-chart-tooltipsettings enable="true" distance="20"></e-chart-tooltipsettings>
+
+    <e-series-collection>
+
+        <e-series dataSource="ViewBag.vietnamData"
+                  xName="x"
+                  yName="y"
+                  name="Vietnam"
+                  type="Column">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.polandData"
+                  xName="x"
+                  yName="y"
+                  name="Poland"
+                  type="Column">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+    </e-series-collection>
+
+</ejs-chart>
