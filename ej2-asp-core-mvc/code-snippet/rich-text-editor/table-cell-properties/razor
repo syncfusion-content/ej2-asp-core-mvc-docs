@@ -1,0 +1,1 @@
+@Html.EJS().RichTextEditor("table").QuickToolbarSettings(e => { e.Table((object)ViewBag.Table); }).ToolbarSettings(e => { e.Items((object)ViewBag.items); }).Value(ViewBag.value).Render()

@@ -1,0 +1,49 @@
+@{
+    var trendlineGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 0,
+        Y2 = 1,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#6A0DAD", Offset = 0,   Opacity = 1, Lighten = 0, Brighten = 0 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#FFFF00", Offset = 100, Opacity = 1, Lighten = 0, Brighten = 0 }
+        }
+    };
+}
+
+@(Html.EJS().StockChart("container")
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+              .XName("date")
+              .High("high")
+              .Low("low")
+              .Open("open")
+              .Close("close")
+              .Volume("volume")
+              .Name("Apple Inc")
+              .Fill("#0066FF")
+              .Trendlines(tl =>
+              {
+                  tl.Type(Syncfusion.EJ2.Charts.TrendlineTypes.MovingAverage)
+                    .EnableTooltip(false)
+                    .Width(2)
+                    .LinearGradient(trendlineGradient).Add();
+              })
+              .DataSource(ViewBag.dataSource).Add();
+    })
+    .PrimaryXAxis(px => px.Title("Months"))
+    .PrimaryYAxis(py => py
+        .Title("Rupees against Dollars")
+        .Interval(5)
+    )
+    .ChartArea(ca => ca.Border(br => br.Width(0)))
+    .Tooltip(tp => tp.Enable(true))
+    .SeriesType(new List<Syncfusion.EJ2.Charts.StockChartSeriesType>())
+    .IndicatorType(new List<Syncfusion.EJ2.Charts.TechnicalIndicators>())
+    .ExportType(new List<Syncfusion.EJ2.Charts.ExportType>())
+    .Title("Historical Indian Rupee Rate (INR USD)")
+    .Render()
+)
