@@ -35,7 +35,7 @@ You can configure the CollapsibleHeading using the property `level` inside the `
 
 You can control whether a block is expanded or collapsed using the `isExpanded` in the `properties` property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 	// Configuring CollapsibleHeading block
@@ -125,7 +125,7 @@ The Block Editor allows you to use custom templates for specialized content usin
 
 You can render Quote blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Quote](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Quote). Quote blocks are specially styled for quotations or excerpts.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding Quote block
@@ -178,7 +178,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 You can render Callout blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Callout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Callout). They're useful for notes, warnings, or tips that require special attention.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding callout block
@@ -215,4 +215,3 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 {% endtabs %}
 
 ![Callout Block](./../../images/block-callout.png)
-

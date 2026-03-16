@@ -99,7 +99,7 @@ The [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEd
 | height | Specifies the display height of the image. | `''` |
 | altText | Specifies the alternative text to display when the image cannot be loaded. | `''` |
 
-### BlockType & Properties
+### Block type & properties
 
 The following example demonstrates how to pre-configure an [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block in the editor.
 
