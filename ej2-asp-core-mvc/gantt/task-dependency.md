@@ -13,7 +13,14 @@ documentation: ug
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
-In Gantt, you can enable or disable the parent predecessor using [`AllowParentDependency`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowParentDependency.html) property.
+{% if page.publishingplatform == "aspnet-core" %}
+
+In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
+
+{% endif %}
 
 By default, the `AllowParentDependency` property will be `true`.
 
@@ -141,7 +148,7 @@ The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation
 {% include code-snippet/gantt/predecessor/predecessor-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="predecessor.cs" %}
-{% include code-snippet/gantt/predecessor/predecessor-cs1/predecessor-cs1.cs %}
+{% include code-snippet/gantt/predecessor/predecessor-cs1/predecessor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

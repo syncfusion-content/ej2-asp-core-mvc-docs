@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timeline 
+# Timeline in ##Platform_Name## Gantt Component
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
 
