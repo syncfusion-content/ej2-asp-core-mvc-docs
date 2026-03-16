@@ -1,0 +1,23 @@
+@Html.EJS().Gantt("GanttDefault").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("420px").TaskFields(tf => tf.Id("TaskID").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").BaselineStartDate("BaselineStartDate").BaselineEndDate("BaselineEndDate").ParentID("ParentID")
+    ).Columns(col =>
+    {
+        col.Field("TaskID").HeaderText("Task ID").Width("100");
+        col.Field("Predecessor").HeaderText("Dependency").Width("150");
+        col.Field("TaskName").HeaderText("Task Name").Width("150");
+        col.Field("StartDate").HeaderText("Start Date").Width("150");
+        col.Field("Duration").HeaderText("Duration").Width("150");
+        col.Field("Progress").HeaderText("Progress").Width("150");
+    }).EditSettings(es => es
+    .AllowAdding(true)
+    .AllowEditing(true)
+    .AllowDeleting(true)
+    .AllowTaskbarEditing(true)
+    .ShowDeleteConfirmDialog(true)
+    ).Holidays(hol =>
+    {
+        hol.From("04/04/2019").To("04/05/2019").Label("Public holidays").CssClass("e-custom-holiday");
+        hol.From("04/12/2019").To("04/12/2019").Label("Public holiday").CssClass("e-custom-holiday");
+    }).EventMarkers(ev =>
+    {
+        ev.Day("04/10/2019").CssClass("e-custom-event-marker").Label("Project approval and kick-off");
+    }).AutoUpdatePredecessorOffset(true).Render()
