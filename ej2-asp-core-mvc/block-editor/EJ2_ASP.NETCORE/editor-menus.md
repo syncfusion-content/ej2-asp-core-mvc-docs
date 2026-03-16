@@ -29,6 +29,52 @@ The Slash Command menu comes with a set of pre-defined commands for all block ty
 -   **Callout**: for highlighting important information.
 -   **Utility(Divider, Quote, Code)**: for other utility blocks.
 
+### Optional items
+
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `Items` property in `inlineToolbarSettings`.
+
+#### Transform block options
+
+The inline toolbar now includes `Transform` options to quickly convert blocks between different types. You can use the [transformSettings] property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+
+#### Built-in default transform block options
+
+Below are the built-in tranform block options available:
+
+| Built-in transform Block Types          |
+|-----------------------------------------|
+| Paragraph                               |
+| Heading1 to Heading4                    |
+| Checklist                               |
+| BulletList                              |
+| NumberedList                            |
+
+> For blocks such as `Code`, `Callout`, `Quote`, `Divider`, `Image`, `Table` and `Collapsible` transform options not available. Instead they will be added as a new block.
+
+#### Events
+
+The following events are available for the transform toolbar item menu:
+
+|Name|Args|Description|
+|---|---|---|
+|`itemSelect`|TransformItemSelectEventArgs|Triggers when a command item is clicked.|
+
+#### Inline code support
+
+Added inline code formatting in the toolbar, with light syntax highlighting and seamless integration with other text formatting options.
+
+#### Inline link support
+
+Added inline link formatting in the toolbar, by link item click, link dialog opens and with proper value updation, link can be inserted on text.
+
+The following example demonstrates how to customize the transform, inline code, link items.
+
+#### Font and background color support
+
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the `fontColorSettings`, `backgroundColorSettings` properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+
+The following example demonstrates how to customize the font and background color toolbar items.
+
 ### Customize Slash command menu
 
 You can utilize the [e-blockeditor-commandmenusettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.CommandMenuSettings.html) tag helper on the Block Editor control to customize the Slash Command menu to include your own custom commands and other modifications.

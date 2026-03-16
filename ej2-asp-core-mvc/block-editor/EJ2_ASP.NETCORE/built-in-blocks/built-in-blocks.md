@@ -38,6 +38,8 @@ The Block Editor supports multiple block types. Each block type offers different
 | Image                                   | Block for displaying images.                      |
 | Template                                | Predefined custom templates.                      |
 
+> For blocks such as `Code`, `Callout`, `Table`, `Image`, and `Collapsible`, the first Backspace/Delete action applies an overlay selection to the block, and the second action removes the block content. This ensures consistent and predictable handling of block deletion across these types.
+
 ## Configure indent
 
 You can specify the indentation level of a block using the `indent` property. This property accepts a numeric value that determines how deeply a block is nested from the left margin.
