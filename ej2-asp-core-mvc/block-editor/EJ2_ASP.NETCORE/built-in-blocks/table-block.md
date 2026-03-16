@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Table Blocks in ASP.NET Core Block Editor control
 
-The Block Editor control allows you to render structured data in rows and columns by setting the block's [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property.
+The Block Editor control allows you to render structured data in rows and columns by setting the block's [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure Table Block
+### Configure table block
 
 For Table blocks, you can configure layout and structure using the `properties` property. This property supports the following options:
 
