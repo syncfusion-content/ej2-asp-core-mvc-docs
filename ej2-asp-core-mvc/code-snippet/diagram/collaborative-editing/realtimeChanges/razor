@@ -1,0 +1,78 @@
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        @Html.EJS().Diagram("diagram").Width("100%").Height("700px").EnableCollaborativeEditing(true).SnapSettings(se => se.Constraints(Syncfusion.EJ2.Diagrams.SnapConstraints.None)).ScrollSettings(s => s.ScrollLimit(Syncfusion.EJ2.Diagrams.ScrollLimit.Infinity)).HistoryChange("onHistoryChange").Render()
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@latest/signalr.js"></script>
+
+<script>
+    let diagramInstance;
+    let connection = null;
+    let roomName = 'Syncfusion';
+
+    // Create diagram when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        diagramInstance = document.getElementById("diagram").ej2_instances[0];
+        initializeSignalRConnection();
+    });
+
+    async function initializeSignalRConnection() {
+        if (connection === null) {
+            connection = new signalR.HubConnectionBuilder()
+                .withUrl('/diagramHub', {
+                    skipNegotiation: true,
+                    transport: signalR.HttpTransportType.WebSockets
+                })
+                .withAutomaticReconnect()
+                .build();
+
+            // Listen for remote changes from other users
+            connection.on('ReceiveData', (diagramChanges) => {
+                if (diagramChanges && diagramChanges.length > 0) {
+                    if (diagramInstance && diagramInstance.setDiagramUpdates) {
+                        diagramInstance.setDiagramUpdates(diagramChanges);
+                    }
+                }
+            });
+
+            try {
+                await connection.start();
+                console.log('Connected to SignalR Hub');
+                // Join the room after connection is established
+                connection.invoke('JoinDiagram', roomName)
+                    .catch((error) => {
+                        console.error('JoinDiagram failed:', error);
+                    });
+            } catch (error) {
+                console.error('Connection failed:', error);
+                setTimeout(initializeSignalRConnection, 5000);
+            }
+        }
+    }
+
+    function onHistoryChange(args) {
+        if (args && diagramInstance && diagramInstance.getDiagramUpdates) {
+            // Get diagram updates (incremental changes) and send to hub
+            const diagramChanges = diagramInstance.getDiagramUpdates(args);
+            
+            // When enableCollaborativeEditing is enabled, retrieve diagramChanges only after the group action completes.
+            if (diagramChanges && diagramChanges.length > 0) {
+                // Send changes to the SignalR Hub for broadcasting
+                if (connection && connection.state === signalR.HubConnectionState.Connected) {
+                    connection.invoke('BroadcastToOtherUsers', diagramChanges, roomName)
+                        .catch((err) => {
+                            console.error('Send failed:', err);
+                        });
+                }
+            }
+        }
+    }
+
+    // Stop connection when page unloads
+    window.addEventListener('beforeunload', () => {
+        if (connection && connection.state === signalR.HubConnectionState.Connected) {
+            connection.stop();
+        }
+    });
+</script>

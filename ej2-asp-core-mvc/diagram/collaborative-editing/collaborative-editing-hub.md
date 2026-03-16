@@ -1,11 +1,11 @@
 ---
 layout: post
-title: SignalR Hub for Real-Time Collaboration in ASP.NET Core MVC Diagram | Syncfusion
-description: Checkout and learn to implement SignalR hub services with Redis for real-time collaborative editing in Syncfusion ASP.NET Core MVC Diagram.
+title: SignalR Hub for Real-Time Collaboration in ##Platform_Name## Diagram | Syncfusion®
+description: Checkout and learn to implement SignalR hub services with Redis for real-time collaborative editing in Syncfusion® ##Platform_Name## Diagram.
 control: Diagram
 documentation: ug
 platform: ej2-asp-core-mvc
-domainurl: ##DomainURL##
+publishingplatform: ##Platform_Name##
 ---
 
 # SignalR Hub Configuration for Collaborative Editing
