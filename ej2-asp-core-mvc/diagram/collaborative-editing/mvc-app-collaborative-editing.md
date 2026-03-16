@@ -19,7 +19,7 @@ This guide explains how to configure SignalR Hub in an ##Platform_Name## applica
 
 ## How to Create ##Platform_Name## Application
 
-To create an ##Platform_Name## application, follow the steps outlined in the ##Platform_Name## [Getting Started]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/diagram-getting-started{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/diagram-getting-started{% endif %}) documentation.
+To create an ##Platform_Name## application, follow the steps outlined in the ##Platform_Name## [Getting Started]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/getting-started{% endif %}) documentation.
 
 ## How to Add Packages in the ##Platform_Name## Application
 
@@ -40,7 +40,7 @@ To enable real-time collaboration, configure SignalR HubConnection in your ##Pla
 * Connect to the `/diagramHub` endpoint with WebSocket transport `skipNegotiation: true` and enable automatic reconnect to handle transient network issues.
 * Subscribe to the `OnConnectedAsync` callback to receive the unique connection ID, confirming a successful handshake with the server.
 * Join a SignalR group by calling `JoinDiagram(roomName)` after connecting. This ensures updates are shared only with users in the same diagram session.
-* Refer to Create ##Platform_Name## [Simple Diagram]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/getting-started{% endif %})
+* Refer to Create ##Platform_Name## [Simple Diagram({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/getting-started{% endif %})
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -68,7 +68,7 @@ To enable real-time collaboration, configure SignalR HubConnection in your ##Pla
 
 ## Sending and Applying Real-Time Diagram Changes
 
-* The ##Platform_Name## Diagram component triggers the [historyChange]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/api-diagram/#historychange{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/api-diagram/#historychange{% endif %}) event whenever the diagram is modified (e.g., add, delete, move, resize, or edit nodes/connectors).
+* The ##Platform_Name## Diagram component triggers the [historyChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_HistoryChange) event whenever the diagram is modified (e.g., add, delete, move, resize, or edit nodes/connectors).
 * Use [getDiagramUpdates]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/api-diagram/#getdiagramupdates{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/api-diagram/#getdiagramupdates{% endif %}) to produce a compact set of incremental updates (JSON-formatted changes) representing just the changes, not the entire diagram.
 * Send these changes to the hub method `BroadcastToOtherUsers`, which relays them to all users joined to the same SignalR group (room).
 * Each remote user listens for ReceiveData and applies the incoming changes with [setDiagramUpdates]({% if page.publishingplatform == "aspnet-core" %}https://ej2.syncfusion.com/aspnetcore/documentation/diagram/api-diagram/#setdiagramupdates{% elsif page.publishingplatform == "aspnet-mvc" %}https://ej2.syncfusion.com/aspnetmvc/documentation/diagram/api-diagram/#setdiagramupdates{% endif %}), keeping their view synchronized without reloading the full diagram.
