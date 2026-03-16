@@ -167,7 +167,7 @@ The inline toolbar now includes `Transform` options to quickly convert blocks be
 
 #### Built-in default transform block options
 
-Below are the built-in tranform block options available:
+Below are the built-in transform block options available:
 
 | Built-in transform Block Types          |
 |-----------------------------------------|
