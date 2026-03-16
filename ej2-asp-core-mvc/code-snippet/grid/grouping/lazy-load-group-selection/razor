@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).AllowGrouping(true).EnableVirtualization(true).Height("350px").Columns(col =>
+{
+    col.Type("checkbox").Width("40").Add();
+    col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("120").Add();
+    col.Field("ProductID").HeaderText("Product ID").Width("80").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerName").HeaderText("Customer Name").Width("120").Add();
+}).GroupSettings(group => group.EnableLazyLoading(true).Columns(new string[] { "ProductName", "CustomerName" })).SelectionSettings(select => PersistSelection(true)).Render()
