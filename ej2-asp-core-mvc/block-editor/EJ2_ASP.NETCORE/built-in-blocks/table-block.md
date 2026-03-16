@@ -30,7 +30,7 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/table-block/table.cs %}
@@ -38,3 +38,24 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 {% endtabs %}
 
 ![Table Block](./../../images/block-table.png)
+
+### Table resizing
+
+The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
+
+### Table multiple row column selection and deletion
+
+The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
+
+This sample demonstrates the `Table` block multiple row and column selection and deletion support in the Block Editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-feature/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Table.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-feature/table.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Table Block](./../../images/table-resize.png)

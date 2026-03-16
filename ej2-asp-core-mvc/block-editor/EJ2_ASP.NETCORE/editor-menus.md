@@ -197,6 +197,8 @@ Added inline link formatting in the toolbar, by link item click, link dialog ope
 
 The following example demonstrates how to customize the transform, inline code, link items.
 
+
+
 #### Font and background color support
 
 Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the `fontColorSettings`, `backgroundColorSettings` properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
