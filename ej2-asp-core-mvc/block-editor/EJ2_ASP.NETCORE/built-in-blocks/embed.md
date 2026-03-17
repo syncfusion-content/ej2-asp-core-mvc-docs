@@ -140,9 +140,31 @@ Upload the selected image to a specified destination using the controller action
 
 Set the `imageBlockSettings.saveFormat` property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveFile.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/saveFile.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Image Block Save](./../../images/block-image-save.png)
+
 ### Secure image upload with authentication
 
 You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `fileUploading` event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SaveFile.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/saveFile.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Image Block Save](./../../images/block-image-save.png)
 
 ## Inserting images from web URLs
 
