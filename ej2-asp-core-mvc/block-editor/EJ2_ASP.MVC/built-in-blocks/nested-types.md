@@ -70,10 +70,10 @@ The below sample demonstrates the configuration of [CollapsibleParagraph](https:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/children-types/toggle-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toggle.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
+{% include code-snippet/block-editor/blocks/children-types/toggle-block/toggle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,26 +139,14 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/children-types/quote-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Quote.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
+{% include code-snippet/block-editor/blocks/children-types/quote-block/quote.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ![Quote Block](./../../images/block-quote.png)
-
-### Configure placeholder
-
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    blockType =  'Quote',
-    properties = new { placeholder = "Quote" }
-}
-```
 
 ## Configure callout block
 
@@ -193,10 +181,10 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/razor %}
+{% include code-snippet/block-editor/blocks/children-types/callout-block/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Callout.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
+{% include code-snippet/block-editor/blocks/children-types/callout-block/callout.cs %}
 {% endhighlight %}
 {% endtabs %}
 

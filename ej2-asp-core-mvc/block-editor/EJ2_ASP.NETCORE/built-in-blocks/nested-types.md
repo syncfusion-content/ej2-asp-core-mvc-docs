@@ -70,10 +70,10 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/children-types/toggle-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toggle.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
+{% include code-snippet/block-editor/blocks/children-types/toggle-block/toggle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -107,20 +107,6 @@ You can configure placeholder text for block using the `placeholder` in the `pro
         }
 ```
 
-
-The Block Editor allows you to use custom templates for specialized content using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Template) property. Templates can be defined as strings, functions, or HTML elements.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Template.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/template-block/template.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Template Block](./../../images/block-template.png)
-
 ## Configure quote block
 
 You can render Quote blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Quote](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Quote). Quote blocks are specially styled for quotations or excerpts.
@@ -153,26 +139,14 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/children-types/quote-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Quote.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
+{% include code-snippet/block-editor/blocks/children-types/quote-block/quote.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ![Quote Block](./../../images/block-quote.png)
-
-### Configure placeholder
-
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    blockType =  'Quote',
-    properties = new { placeholder = "Quote" }
-}
-```
 
 ## Configure callout block
 
@@ -207,10 +181,10 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/children-types/callout-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Callout.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
+{% include code-snippet/block-editor/blocks/children-types/callout-block/callout.cs %}
 {% endhighlight %}
 {% endtabs %}
 
