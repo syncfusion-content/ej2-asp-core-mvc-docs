@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time Line in ##Platform_Name## Gantt Component
+title: Time Line in ##Platform_Name## Gantt Component | Syncfusion
 description: Learn here all about Time Line in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Line
