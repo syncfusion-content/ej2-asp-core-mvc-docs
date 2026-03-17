@@ -3,7 +3,9 @@ using Syncfusion.EJ2.BlockEditor;
 public List<BlockModel> BlockData { get; set; }
 public string[] InlineToolbarItems { get; set; }
 public InlineToolbarSettings InlineToolbarSettings { get; set; }
+public TransformSettings Transform { get; set; }
 
+public string[] TransformItems { get; set; }
 public class BlockModel
 {
         public string id { get; set; }
@@ -12,12 +14,17 @@ public class BlockModel
         public List<object> content { get; set; }
         public List<BlockModel> children { get; set; }
 }
-
-public ActionResult InlineToolbar()
+public class TransformSettings
 {
-    InlineToolbarItems = new string[] { "Color", "Backgroundcolor" };
+        public string[] Items { get; set; }
+}
 
-    BlockData = new List<BlockModel>
+public ActionResult Transform()
+{
+        InlineToolbarItems = new string[] { "Transform", "Bold", "InlineCode", "Link" };
+        TransformItems = new string[] { "Paragraph", "Heading1" };
+
+        BlockData = new List<BlockModel>
         {
                 new BlockModel
                 {
@@ -38,6 +45,7 @@ public ActionResult InlineToolbar()
                         {
                                 new BlockModel()
                                 {
+                                        id = "callout-content-1",
                                         blockType = "Paragraph",
                                         content = new List<object>
                                         {
@@ -52,15 +60,19 @@ public ActionResult InlineToolbar()
                         }
                 }
         };
-    InlineToolbarSettings = new InlineToolbarSettings()
-    {
+        InlineToolbarSettings = new InlineToolbarSettings()
+        {
         Enable = true,
-        PopupWidth = "100px",
+        PopupWidth = "180px",
         Items = InlineToolbarItems
-    };
-
-    ViewData["InlineToolbarItems"] = InlineToolbarItems;
-    ViewData["InlineToolbarSettings"] = InlineToolbarSettings;
-    ViewData["BlockData"] = BlockData;
-    return View();
+        };
+        Transform = new TransformSettings()
+        {
+        Items = TransformItems
+        };
+        ViewData["InlineToolbarItems"] = InlineToolbarItems;
+        ViewData["InlineToolbarSettings"] = InlineToolbarSettings;
+        ViewData["TransformSettings"] = Transform;
+        ViewData["BlockData"] = BlockData;
+        return View();
 }

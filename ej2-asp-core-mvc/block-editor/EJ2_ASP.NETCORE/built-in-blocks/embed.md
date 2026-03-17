@@ -144,7 +144,7 @@ Set the `imageBlockSettings.saveFormat` property to determine whether the image 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Image.cs" %}
+{% highlight c# tabtitle="SaveFile.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/saveFile.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -159,7 +159,7 @@ You can add additional data with the image uploaded from the Block Editor on the
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Image.cs" %}
+{% highlight c# tabtitle="SaveFile.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/saveFile.cs %}
 {% endhighlight %}
 {% endtabs %}

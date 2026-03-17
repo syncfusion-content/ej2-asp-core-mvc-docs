@@ -3,9 +3,9 @@ using Syncfusion.EJ2.BlockEditor;
 public List<BlockModel> BlockData { get; set; }
 public string[] InlineToolbarItems { get; set; }
 public InlineToolbarSettings InlineToolbarSettings { get; set; }
-public object TransformSettings { get; set; }
+public FontColorSettings FontColorSettings { get; set; }
+public BackgroundColorSettings BackgroundColorSettings { get; set; }
 
-public string[] TransformItems { get; set; }
 public class BlockModel
 {
         public string id { get; set; }
@@ -15,12 +15,11 @@ public class BlockModel
         public List<BlockModel> children { get; set; }
 }
 
-public ActionResult InlineToolbar()
+public ActionResult Index()
 {
-    InlineToolbarItems = new string[] { "Transform", "Bold", "InlineCode", "Link" };
-    TransformItems = new string[] { "Paragraph", "Heading1" };
+        InlineToolbarItems = new string[] { "Color", "Backgroundcolor" };
 
-    BlockData = new List<BlockModel>
+        BlockData = new List<BlockModel>
         {
                 new BlockModel
                 {
@@ -41,6 +40,7 @@ public ActionResult InlineToolbar()
                         {
                                 new BlockModel()
                                 {
+                                        id = "callout-content-1",
                                         blockType = "Paragraph",
                                         content = new List<object>
                                         {
@@ -55,19 +55,25 @@ public ActionResult InlineToolbar()
                         }
                 }
         };
-    InlineToolbarSettings = new InlineToolbarSettings()
-    {
+        InlineToolbarSettings = new InlineToolbarSettings()
+        {
         Enable = true,
-        PopupWidth = "80px",
+        PopupWidth = "140px",
         Items = InlineToolbarItems
-    };
-    TransformSettings = new
-    {
-        Items = TransformItems
-    };
-    ViewData["InlineToolbarItems"] = InlineToolbarItems;
-    ViewData["InlineToolbarSettings"] = InlineToolbarSettings;
-    ViewData["TransformSettings"] = TransformSettings;
-    ViewData["BlockData"] = BlockData;
+        };
+        FontColorSettings = new FontColorSettings()
+        {
+        Mode = ColorModeType.Picker,
+        ModeSwitcher = true
+        };
+        BackgroundColorSettings = new BackgroundColorSettings()
+        {
+        // Handle props here
+        };
+        ViewData["InlineToolbarItems"] = InlineToolbarItems;
+        ViewData["InlineToolbarSettings"] = InlineToolbarSettings;
+        ViewData["FontColorSettings"] = FontColorSettings;
+        ViewData["BackgroundColorSettings"] = BackgroundColorSettings;
+        ViewData["BlockData"] = BlockData;
     return View();
 }

@@ -148,18 +148,6 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 ![Quote Block](./../../images/block-quote.png)
 
-### Configure placeholder
-
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    blockType =  'Quote',
-    properties = new { placeholder = "Quote" }
-}
-```
-
 ## Configure callout block
 
 You can render Callout blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Callout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Callout). They're useful for notes, warnings, or tips that require special attention.
