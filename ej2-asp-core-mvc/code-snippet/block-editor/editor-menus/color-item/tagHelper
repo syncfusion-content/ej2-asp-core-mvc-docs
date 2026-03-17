@@ -1,0 +1,11 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").Height("300px").Blocks(ViewData["BlockData"]).InlineToolbarSettings((InlineToolbarSettings)ViewData["InlineToolbarSettings"]).FontColorSettings((FontColorSettings)ViewData["FontColorSettings"]).BackgroundColorSettings((BackgroundColorSettings)ViewData["BackgroundColorSettings"]).Render()
+</div>
+
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+    }
+</style>

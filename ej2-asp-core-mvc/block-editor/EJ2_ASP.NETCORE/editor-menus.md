@@ -197,11 +197,33 @@ Added inline link formatting in the toolbar, by link item click, link dialog ope
 
 The following example demonstrates how to customize the transform, inline code, link items.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/transform-item/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Transform.cs" %}
+{% include code-snippet/block-editor/editor-menus/transform-item/transform.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Transform](./../images/transform-items.png)
+
 #### Font and background color support
 
 Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the `fontColorSettings`, `backgroundColorSettings` properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
 
 The following example demonstrates how to customize the font and background color toolbar items.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/color-item/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Index.cs" %}
+{% include code-snippet/block-editor/editor-menus/color-item/index.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Color](./../images/color-items.png)
 
 ### Customize Inline Toolbar
 

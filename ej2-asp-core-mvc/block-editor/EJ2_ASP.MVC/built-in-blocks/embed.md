@@ -57,6 +57,7 @@ You can restrict the image uploaded from the local machine when the uploaded ima
 {% highlight C# tabtitle="Index.cs" hl_lines="3 11" %}
 
 public ImageBlockSettings ImageBlockSettings { get; set; }
+
 public ActionResult Index()
 {
     ImageBlockSettings = new ImageBlockSettings()
@@ -86,6 +87,8 @@ You can allow the specific images alone to be uploaded using the the allowedType
 {% highlight C# tabtitle="Index.cs" hl_lines="3 11" %}
 
 public ImageBlockSettings ImageBlockSettings { get; set; }
+public string[] AllowedTypes { get; set; }
+
 public ActionResult Index()
 {
     ImageBlockSettings = new ImageBlockSettings()
@@ -152,9 +155,31 @@ Upload the selected image to a specified destination using the controller action
 
 Set the `ImageBlockSettings.saveFormat` property to determine whether the image should be saved as Blob or Base64, aligning with your application's requirements.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-server/image.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Image Block Save](./../../images/block-image-save.png)
+
 ### Secure image upload with authentication
 
 You can add additional data with the image uploaded from the Block Editor on the client side, which can even be received on the server side. By using the `FileUploading` event and it's arguments you can access the current request and set the request header within these event. On the server side, you can fetch the custom headers by accessing the form collection from the current request, which retrieves the values sent using the POST method.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Image.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/image-upload-authentication/image.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Image Block Save](./../../images/block-image-save.png)
 
 ## Inserting images from web URLs
 
