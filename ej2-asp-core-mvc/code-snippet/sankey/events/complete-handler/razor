@@ -1,0 +1,17 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(tooltip => tooltip.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .Loaded("onSankeyLoaded")
+    .Render()
+
+<script>
+    function onSankeyLoaded(args) {
+        console.log('Sankey chart rendering complete', args);
+        var element = document.getElementById('sankey');
+        if (element) element.setAttribute('title', 'Sankey Chart Ready');
+    }
+</script>

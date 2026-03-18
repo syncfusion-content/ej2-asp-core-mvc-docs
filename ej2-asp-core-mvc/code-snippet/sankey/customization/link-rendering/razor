@@ -1,0 +1,28 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .LinkRendering("onLinkRendering")
+    .Render()
+
+<script>
+    // Mirrors React's onLinkRendering: set fill based on link.value
+    function onLinkRendering(args) {
+        // Some builds expose args.data or args.link. Using args.link if available; fallback to args.data.
+        var linkObj = args.link || args.data || {};
+        var value = linkObj.value;
+
+        if (typeof value === 'number' ? value > 50 : false) {
+            args.fill = '#FF6B6B';
+        } else {
+            args.fill = '#70AD47';
+        }
+    }
+</script>

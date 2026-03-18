@@ -1,0 +1,13 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Orientation(Syncfusion.EJ2.Charts.Orientation.Horizontal)
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()

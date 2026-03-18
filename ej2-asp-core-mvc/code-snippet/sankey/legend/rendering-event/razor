@@ -1,0 +1,20 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom))
+    .LegendItemRendering("onLegendItemRendering")
+    .Render()
+
+<script>
+    // Mirror React's legendItemRendering: customize legend item fill
+    function onLegendItemRendering(args) {
+        args.fill = '#333';
+    }
+</script>

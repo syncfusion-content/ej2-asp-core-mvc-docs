@@ -1,0 +1,21 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true)
+        .Fill((string)ViewBag.TooltipFill)
+        .TextStyle(ts => ts
+            .FontFamily((string)ViewBag.TooltipFontFamily)
+            .FontStyle((string)ViewBag.TooltipFontStyle)
+            .FontWeight((string)ViewBag.TooltipFontWeight)
+            .Size((string)ViewBag.TooltipFontSize)
+            .Color((string)ViewBag.TooltipColor)
+        )
+    )
+    .LegendSettings(l => l.Visible(true))
+    .Render()

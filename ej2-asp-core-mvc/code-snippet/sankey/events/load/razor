@@ -1,0 +1,15 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(tooltip => tooltip.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .Load("onSankeyLoad")
+    .Render()
+
+<script>
+    function onSankeyLoad(args) {
+        console.log('Sankey chart is loading...', args);
+    }
+</script>
