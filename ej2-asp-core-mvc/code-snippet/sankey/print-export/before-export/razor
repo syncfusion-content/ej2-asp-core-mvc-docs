@@ -1,0 +1,33 @@
+
+@{
+    var sankeyId = "sankey-container";
+}
+
+<!-- Export button -->
+<button type="button" id="btnExport" style="margin-bottom:10px;" onclick="exportSankey()">Export PNG</button>
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .BeforeExport("onBeforeExport")
+    .Render()
+
+<script>
+    // Match React's beforeExport handler
+    function onBeforeExport(args) {
+        // you can cancel export here if needed
+        args.cancel = false;
+    }
+
+    // Trigger export like React's sankeyRef.current.export('PNG','Sankey')
+    function exportSankey() {
+        var inst = document.getElementById('@sankeyId').ej2_instances && document.getElementById('@sankeyId').ej2_instances[0];
+        if (inst && typeof inst.export === 'function') {
+            inst.export('PNG', 'Sankey');
+        }
+    }
+</script>

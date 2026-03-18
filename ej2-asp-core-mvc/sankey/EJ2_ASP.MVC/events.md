@@ -41,7 +41,7 @@ This guide covers lifecycle events, rendering events, interaction events, and ex
 
 ### Load Event
 
-The `load` event triggers before the Sankey Chart begins rendering. Use this event to customize configuration, apply themes, or prepare data before the chart loads:
+The `Load` event triggers before the Sankey Chart begins rendering. Use this event to customize configuration, apply themes, or prepare data before the chart loads:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,7 +69,7 @@ The `load` event triggers before the Sankey Chart begins rendering. Use this eve
 
 ### Loaded Event
 
-The `loaded` event triggers after the Sankey Chart is completely rendered and ready for interaction. Use this event to initialize calculations, perform analytics, or trigger dependent components:
+The `Loaded` event triggers after the Sankey Chart is completely rendered and ready for interaction. Use this event to initialize calculations, perform analytics, or trigger dependent components:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -159,7 +159,7 @@ Use rendering events to customize elements dynamically based on data values, con
 
 ### Node Rendering Event
 
-The `nodeRendering` event triggers before each node is rendered, allowing dynamic node customization:
+The `NodeRendering` event triggers before each node is rendered, allowing dynamic node customization:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +187,7 @@ The `nodeRendering` event triggers before each node is rendered, allowing dynami
 
 ### Link Rendering Event
 
-The `linkRendering` event triggers before each link is rendered, allowing dynamic link customization:
+The `LinkRendering` event triggers before each link is rendered, allowing dynamic link customization:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -215,7 +215,7 @@ The `linkRendering` event triggers before each link is rendered, allowing dynami
 
 ### Label Rendering Event
 
-The `labelRendering` event triggers before each label is rendered, allowing dynamic label customization:
+The `LabelRendering` event triggers before each label is rendered, allowing dynamic label customization:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -243,7 +243,7 @@ The `labelRendering` event triggers before each label is rendered, allowing dyna
 
 ### Legend Item Rendering Event
 
-The `legendItemRendering` event triggers before a legend item is rendered, allowing custom legend item styling:
+The `LegendItemRendering` event triggers before a legend item is rendered, allowing custom legend item styling:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

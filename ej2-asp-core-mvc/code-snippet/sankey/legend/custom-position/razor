@@ -1,0 +1,19 @@
+@{
+    // Mirroring React's id="sankey-container"
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l
+        .Visible(true)
+        .Position(Syncfusion.EJ2.Charts.LegendPosition.Custom)
+        .Location(loc => loc.X(120).Y(150))
+        .Height("150px")
+        .Width("150px")
+    )
+    .Render()

@@ -27,7 +27,7 @@ The Sankey Chart supports multiple levels of styling customization:
 
 ### Global Node Styling
 
-Apply consistent styling to all nodes using the `nodeStyle` property:
+Apply consistent styling to all nodes using the `NodeStyle` property:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -55,7 +55,7 @@ Apply consistent styling to all nodes using the `nodeStyle` property:
 
 ### Global Link Styling
 
-Configure link appearance using the `linkStyle` property:
+Configure link appearance using the `LinkStyle` property:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -313,7 +313,7 @@ const onNodeLeave = (args) => {
 
 For charts with many nodes and links, optimize rendering performance:
 
-1. **Use Global Styles**: Apply global `nodeStyle` and `linkStyle` instead of individual customization
+1. **Use Global Styles**: Apply global `NodeStyle` and `LinkStyle` instead of individual customization
 2. **Minimize Calculations**: Reduce complex calculations in rendering events
 3. **Conditional Rendering**: Only customize visible elements in viewport
 4. **Cache Results**: Cache computed styles and colors

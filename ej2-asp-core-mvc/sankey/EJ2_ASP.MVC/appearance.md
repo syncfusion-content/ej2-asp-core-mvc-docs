@@ -16,7 +16,7 @@ This guide covers dimension configuration, responsive sizing, backgrounds, borde
 
 ## Dimensions
 
-Control the size of the Sankey Chart using the `width` and `height` properties. You can specify dimensions in pixels (px) or percentages (%) to create fixed or responsive layouts.
+Control the size of the Sankey Chart using the `Width` and `Height` properties. You can specify dimensions in pixels (px) or percentages (%) to create fixed or responsive layouts.
 
 ### Width and Height Properties
 
@@ -188,7 +188,7 @@ Control the spacing around the chart content using margins.
 
 ## Theme
 
-The Sankey Chart provides multiple built-in themes to customize the visual appearance. Apply a theme using the `theme` property.
+The Sankey Chart provides multiple built-in themes to customize the visual appearance. Apply a theme using the `Theme` property.
 
 ### Theme Configuration
 

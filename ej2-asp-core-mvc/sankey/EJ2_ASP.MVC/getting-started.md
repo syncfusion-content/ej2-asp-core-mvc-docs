@@ -10,99 +10,92 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting started with React Sankey Chart component
+# Getting started with ASP.NET MVC Sankey Chart Control
 
-This section describes how to integrate the Syncfusion React Sankey Chart component into a new React application. You'll learn about dependencies, installation steps, and how to create your first Sankey Chart visualization.
+This section briefly explains about how to include ASP.NET MVC Sankey Chart control in your ASP.NET MVC application using Visual Studio.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
-- Node.js version 14 or later
-- Basic knowledge of React and TypeScript (recommended)
-- A code editor like Visual Studio Code
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Dependencies
+## Create ASP.NET MVC application with HTML helper
 
-Below is the list of minimum dependencies required to use the Sankey Chart component.
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+
+## Install ASP.NET MVC package in the application
+
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+
+## Add namespace
+
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ```
-
-|-- @syncfusion/ej2-react-charts
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-charts
-    |-- @syncfusion/ej2-react-base
-    |-- @syncfusion/ej2-pdf-export
-    |-- @syncfusion/ej2-file-utils
-    |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-svg-base
-
+<namespaces>
+    <add namespace="Syncfusion.EJ2"/>
+</namespaces>
 ```
 
-## Installation and Configuration
+## Add script resources
 
-### Setting Up the React Development Environment
+Here, the script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
-To easily set up a React application, use the Vite CLI (`npm create vite`), which provides:
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
-- Faster development environment with instant hot module replacement (HMR)
-- Smaller bundle sizes
-- Optimized production builds
-- Better performance compared to traditional tools like `create-react-app`
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
 
-For detailed steps, refer to the Vite [installation instructions](https://vitejs.dev/guide). Vite sets up your environment using JavaScript and optimizes your application for production.
+{% endhighlight %}
+{% endtabs %}
 
-> **Note:** To create a React application using `create-react-app` instead, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/create-app) for more details.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-To create a new React application, run the following command.
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-```bash
-npm create vite@latest my-app
-```
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
-This command will prompt you for a few settings for the new project, such as selecting a framework and a variant.
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
-![Initial_setup](../images/Initial-setup.jpg)
+<body>
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
 
-To set up a React application in TypeScript environment, run the following command.
+{% endhighlight %}
+{% endtabs %}
 
-```bash
-npm create vite@latest my-app -- --template react-ts
-cd my-app
-npm run dev
-```
+## Add ASP.NET MVC Sankey Chart control
 
-To set up a React application in JavaScript environment, run the following command.
-
-```bash
-npm create vite@latest my-app -- --template react
-cd my-app
-npm run dev
-```
-
-### Install Syncfusion<sup style="font-size:70%">&reg;</sup> Sankey Chart Package
-
-All the available Essential<sup style="font-size:70%">&reg;</sup> JS 2 packages are published in the [`npmjs.com`](https://www.npmjs.com/~syncfusionorg) public registry.
-Project
-
-Add the Sankey Chart component to your React application's main component file (`src/App.tsx` or `src/App.jsx`) using the following code. This creates a basic Sankey Chart with sample data:
-```bash
-npm install @syncfusion/ej2-react-charts --save
-```
-
-> The –save will instruct NPM to include the Sankey Chart package inside of the dependencies section of the package.json.
-
-## Add Sankey Chart to the project
-
-Add the Sankey Chart component to `src/App.tsx` using the following code.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sankey Chart control in `~/Home/Index.cshtml` page.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/initial/tagHelper %}
+{% include code-snippet/sankey/getting-started/initialize/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/sankey/getting-started/initial/initial.cs %}
+{% highlight c# tabtitle="Initialize.cs" %}
+{% include code-snippet/sankey/getting-started/initialize/initialize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -110,22 +103,14 @@ Add the Sankey Chart component to `src/App.tsx` using the following code.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/initial/razor %}
+{% include code-snippet/sankey/getting-started/initialize/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/sankey/getting-started/initial/initial.cs %}
+{% highlight c# tabtitle="Initialize.cs" %}
+{% include code-snippet/sankey/getting-started/initialize/initialize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
-
-### Run the Development Server
-
-Now run the `npm run dev` command in the console to start the development server. This command compiles your code and serves the application locally in your browser:
-
-```
-npm run dev
-```
 
 ## Add data to Sankey Chart
 
@@ -135,43 +120,10 @@ Now you can add data to the Sankey Chart component by defining nodes and links. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/initial/tagHelper %}
+{% include code-snippet/sankey/getting-started/data/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/sankey/getting-started/initial/initial.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/initial/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Initial.cs" %}
-{% include code-snippet/sankey/getting-started/initial/initial.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
-
-## Module injection
-
-Sankey Chart component provides support for tooltip and legend interactions. To enable these features, you need to inject the required modules into the component.
-
-* `SankeyTooltip` - Inject this module to enable tooltip feature.
-* `SankeyLegend` - Inject this module to enable legend feature.
-
-Import the above-mentioned modules from the chart package and inject them into the component as follows.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/module-injection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Module-injection.cs" %}
-{% include code-snippet/sankey/getting-started/module-injection/module-injection.cs %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/sankey/getting-started/data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,11 +131,13 @@ Import the above-mentioned modules from the chart package and inject them into t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/sankey/getting-started/module-injection/razor %}
+{% include code-snippet/sankey/getting-started/data/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Module-injection.cs" %}
-{% include code-snippet/sankey/getting-started/module-injection/module-injection.cs %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/sankey/getting-started/data/data.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 {% endif %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart control will be rendered in the default web browser.

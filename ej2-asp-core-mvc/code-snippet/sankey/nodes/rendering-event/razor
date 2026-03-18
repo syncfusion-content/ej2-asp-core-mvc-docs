@@ -1,0 +1,38 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .NodeRendering("onSankeyNodeRendering")
+    .Render()
+
+<script>
+    // Mirrors React's nodeRendering logic to color nodes by id
+    function onSankeyNodeRendering(args) {
+        if (!args || !args.node) return;
+
+        switch (args.node.id) {
+            case 'Bio-conversion':
+                args.node.color = '#FF6B6B';
+                break;
+            case 'Liquid Biofuel':
+                args.node.color = '#4ECDC4';
+                break;
+            case 'Electricity':
+                args.node.color = '#45B7D1';
+                break;
+            case 'Heat':
+                args.node.color = '#FFA07A';
+                break;
+            default:
+                args.node.color = '#98D8C8';
+                break;
+        }
+    }
+</script>

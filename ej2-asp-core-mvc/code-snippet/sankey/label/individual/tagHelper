@@ -1,0 +1,17 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px">
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link source-id="@link.SourceId" target-id="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+    <e-sankey-labelsettings visible="true"></e-sankey-labelsettings>
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
+</ejs-sankey>
