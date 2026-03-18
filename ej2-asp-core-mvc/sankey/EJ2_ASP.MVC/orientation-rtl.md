@@ -16,7 +16,7 @@ This guide covers orientation options and RTL configuration for different langua
 
 ## Orientation
 
-Control the layout direction of the Sankey Chart using the `orientation` property. The orientation determines how nodes are arranged and how links flow through the diagram.
+Control the layout direction of the Sankey Chart using the `Orientation` property. The orientation determines how nodes are arranged and how links flow through the diagram.
 
 ### Orientation Options
 
@@ -83,7 +83,7 @@ Display nodes vertically with flows moving from top to bottom. This layout is us
 
 ## Right-to-Left (RTL) Support
 
-Enable RTL rendering for languages that read from right to left (such as Arabic, Hebrew, and Persian) using the `enableRtl` property. RTL mode reverses the horizontal flow direction and mirrors the layout:
+Enable RTL rendering for languages that read from right to left (such as Arabic, Hebrew, and Persian) using the `EnableRtl` property. RTL mode reverses the horizontal flow direction and mirrors the layout:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

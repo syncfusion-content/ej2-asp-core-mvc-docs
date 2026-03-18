@@ -16,7 +16,7 @@ This guide covers link customization including appearance properties, color blen
 
 ## Link Style Properties
 
-The `linkStyle` property allows you to customize the visual appearance of all links in the Sankey Chart. These properties control opacity, highlighting behavior, curvature, and color blending.
+The `LinkStyle` property allows you to customize the visual appearance of all links in the Sankey Chart. These properties control opacity, highlighting behavior, curvature, and color blending.
 
 ### Link Style Configuration Properties
 
@@ -30,7 +30,7 @@ The `linkStyle` property allows you to customize the visual appearance of all li
 
 ## Basic Link Customization
 
-Customize the appearance of all links using the `linkStyle` property to set global opacity levels, curvature, and color blending behavior:
+Customize the appearance of all links using the `LinkStyle` property to set global opacity levels, curvature, and color blending behavior:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -58,7 +58,7 @@ Customize the appearance of all links using the `linkStyle` property to set glob
 
 ## Link Curvature
 
-The `curvature` property controls the bend of the links, affecting the visual flow representation:
+The `Curvature` property controls the bend of the links, affecting the visual flow representation:
 
 - **Value 0**: Creates straight lines between nodes
 - **Value 0.5-0.7**: Creates moderate curves (often preferred for readability)
@@ -92,7 +92,7 @@ Choose curvature values based on your data density and aesthetic preferences:
 
 ## Link Color Type
 
-The `colorType` property determines how links are colored, providing flexibility in visual representation:
+The `ColorType` property determines how links are colored, providing flexibility in visual representation:
 
 - **'Source'**: Links inherit the color of their source node (useful for tracking origin)
 - **'Target'**: Links inherit the color of their target node (useful for tracking destination)
@@ -126,7 +126,7 @@ The color type you choose affects how users perceive flow relationships in the d
 
 ## Link Value and Thickness
 
-The link thickness is determined by the `value` property in the link data. This quantitative value is automatically mapped to the visual thickness of the link:
+The link thickness is determined by the `Value` property in the link data. This quantitative value is automatically mapped to the visual thickness of the link:
 
 - **Larger values**: Create thicker links (proportional to the value)
 - **Smaller values**: Create thinner links
@@ -162,7 +162,7 @@ The thickness visualization makes it easy to understand relative flow quantities
 
 ### Dynamic Link Customization
 
-Use the `linkRendering` event to customize link appearance dynamically during the render process. This event is triggered for each link before rendering, allowing you to apply conditional styling based on flow values, source-target combinations, or other data attributes:
+Use the `LinkRendering` event to customize link appearance dynamically during the render process. This event is triggered for each link before rendering, allowing you to apply conditional styling based on flow values, source-target combinations, or other data attributes:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

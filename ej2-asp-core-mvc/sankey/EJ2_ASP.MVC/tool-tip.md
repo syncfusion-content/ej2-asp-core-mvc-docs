@@ -10,7 +10,7 @@ documentation: ug
 
 # ToolTip in React Sankey Chart component
 
-The Sankey Chart provides tooltips that surface contextual details for hovered elements without cluttering the diagram. Tooltips display additional information when users hover over nodes or links in the Sankey Chart. You can enable and customize tooltips using the `tooltip` property and by injecting the `SankeyTooltip` module.
+The Sankey Chart provides tooltips that surface contextual details for hovered elements without cluttering the diagram. Tooltips display additional information when users hover over nodes or links in the Sankey Chart. You can enable and customize tooltips using the `Tooltip` property.
 
 This guide outlines how to enable and customize tooltips in the React Sankey Chart.
 
@@ -148,7 +148,7 @@ Format string placeholders for link tooltips:
 
 ### Tooltip Rendering Event
 
-Use the `tooltipRendering` event to customize tooltip content dynamically and enable custom logic based on specific conditions:
+Use the `TooltipRendering` event to customize tooltip content dynamically and enable custom logic based on specific conditions:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -176,7 +176,7 @@ Use the `tooltipRendering` event to customize tooltip content dynamically and en
 
 ## Disabling Tooltips
 
-To disable tooltips, set the `enable` property to `false`:
+To disable tooltips, set the `Enable` property to `false`:
 
 ```typescript
 const tooltip = { enable: false };
@@ -186,7 +186,7 @@ const tooltip = { enable: false };
 
 - **Keep Text Concise**: Keep tooltip text concise and readable.
 - **Ensure Contrast**: Ensure sufficient contrast for tooltip text and background.
-- **Use Format Strings**: Prefer `nodeFormat` and `linkFormat` for simple content customization without requiring custom rendering logic.
+- **Use Format Strings**: Prefer `NodeFormat` and `LinkFormat` for simple content customization without requiring custom rendering logic.
 - **Animation Tuning**: Tune animation durations to balance responsiveness and polish.
 - **Performance**: Use format strings instead of complex rendering logic for better performance.
 - **Relevant Information**: Show only relevant and helpful information.

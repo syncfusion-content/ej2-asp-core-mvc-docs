@@ -16,7 +16,7 @@ This guide covers node customization including styling, individual appearance ch
 
 ## Node Appearance
 
-The `nodeStyle` property allows you to customize the visual appearance of all nodes in the Sankey Chart. This provides a unified style for all nodes, which can be overridden at the individual node level or through rendering events.
+The `NodeStyle` property allows you to customize the visual appearance of all nodes in the Sankey Chart. This provides a unified style for all nodes, which can be overridden at the individual node level or through rendering events.
 
 ### Node Style Properties
 
@@ -31,7 +31,7 @@ The `nodeStyle` property allows you to customize the visual appearance of all no
 | highlightOpacity | number | 1 | Opacity of node when highlighted. |
 | inactiveOpacity | number | 0.3 | Opacity of inactive nodes (when interacting with others). |
 
-Customize the global node appearance by configuring the `nodeStyle` property with properties such as fill color, stroke, width, padding, and opacity levels
+Customize the global node appearance by configuring the `NodeStyle` property with properties such as fill color, stroke, width, padding, and opacity levels
 
 Here is an example of customizing node appearance:
 
@@ -61,7 +61,7 @@ Here is an example of customizing node appearance:
 
 ## Individual Node Customization
 
-Beyond global styling, you can customize the appearance of specific nodes by setting individual properties. Each node can have its own `color`, styling, and appearance settings that override the global `nodeStyle` configuration. This approach is useful when you want certain nodes to stand out or follow a specific color scheme:
+Beyond global styling, you can customize the appearance of specific nodes by setting individual properties. Each node can have its own `Color`, styling, and appearance settings that override the global `NodeStyle` configuration. This approach is useful when you want certain nodes to stand out or follow a specific color scheme:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -91,9 +91,9 @@ Beyond global styling, you can customize the appearance of specific nodes by set
 
 Control how nodes appear during user interactions. The Sankey Chart provides three opacity properties:
 
-- **`opacity`**: The default opacity of nodes in their normal state (0 to 1)
-- **`highlightOpacity`**: The opacity when a node is highlighted or hovered
-- **`inactiveOpacity`**: The opacity of nodes that are not actively being interacted with
+- **`Opacity`**: The default opacity of nodes in their normal state (0 to 1)
+- **`HighlightOpacity`**: The opacity when a node is highlighted or hovered
+- **`InactiveOpacity`**: The opacity of nodes that are not actively being interacted with
 
 Configure these properties to provide visual feedback and improve the interactivity experience:
 
@@ -123,7 +123,7 @@ Configure these properties to provide visual feedback and improve the interactiv
 
 ## Node Offset
 
-Use the `offset` property to adjust node positions vertically (in Horizontal orientation) or horizontally (in Vertical orientation). The offset direction depends on the chart orientation:
+Use the `Offset` property to adjust node positions vertically (in Horizontal orientation) or horizontally (in Vertical orientation). The offset direction depends on the chart orientation:
 
 - **In Horizontal orientation**: Offset adjusts node positions vertically
 - **In Vertical orientation**: Offset adjusts node positions horizontally
@@ -158,11 +158,11 @@ This property is useful for manually arranging nodes to avoid overlaps or create
 
 ### Dynamic Node Customization
 
-Use the `nodeRendering` event to customize node appearance dynamically during the render process. This event is triggered for each node before it is rendered, allowing you to apply conditional styling, calculate colors based on data values, or modify properties based on context. This is the most powerful way to create data-driven node visualizations:
+Use the `NodeRendering` event to customize node appearance dynamically during the render process. This event is triggered for each node before it is rendered, allowing you to apply conditional styling, calculate colors based on data values, or modify properties based on context. This is the most powerful way to create data-driven node visualizations:
 
 ## Node Rendering Event
 
-Use the `nodeRendering` event to customize node appearance dynamically before rendering:
+Use the `NodeRendering` event to customize node appearance dynamically before rendering:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

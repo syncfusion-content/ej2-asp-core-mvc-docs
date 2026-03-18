@@ -10,13 +10,13 @@ documentation: ug
 
 # Legend in React Sankey Chart component
 
-A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize legend using the `legend` property and by injecting the `SankeyLegend` module.
+A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize legend using the `Legend` property.
 
 This guide covers legend configuration, positioning strategies, customization options, and dynamic legend rendering events.
 
 ## Legend Settings Properties
 
-The `legendSettings` property provides comprehensive options to configure legend appearance, behavior, and positioning. The following properties are commonly used:
+The `LegendSettings` property provides comprehensive options to configure legend appearance, behavior, and positioning. The following properties are commonly used:
 
 ### Legend Configuration Properties
 
@@ -68,14 +68,14 @@ Here is an example of enabling and customizing the legend:
 
 ## Legend Position
 
-Control the legend position using the `position` property with the following options:
+Control the legend position using the `Position` property with the following options:
 
 - **'Top'**: Legend appears above the Sankey Chart
 - **'Bottom'**: Legend appears below the Sankey Chart
 - **'Left'**: Legend appears to the left of the chart
 - **'Right'**: Legend appears to the right of the chart (default for most cases)
 - **'Auto'**: Automatically positions the legend based on available space
-- **'Custom'**: Allows you to specify custom coordinates using the `location` property
+- **'Custom'**: Allows you to specify custom coordinates using the `Location` property
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,7 +163,7 @@ Position the legend at a specific location using the `Custom` position setting. 
 
 ### Dynamic Legend Customization
 
-Use the `legendItemRendering` event to customize individual legend items before they are rendered. This event is triggered for each legend item and allows you to apply conditional styling, modify colors, or change text based on data values:
+Use the `LegendItemRendering` event to customize individual legend items before they are rendered. This event is triggered for each legend item and allows you to apply conditional styling, modify colors, or change text based on data values:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

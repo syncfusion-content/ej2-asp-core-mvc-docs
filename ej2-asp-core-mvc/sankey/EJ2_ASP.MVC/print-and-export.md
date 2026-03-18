@@ -115,9 +115,9 @@ Export the chart with a custom filename and format selection to control output f
 
 ### Before Export Event
 
-Use the `beforeExport` event to customize the export process before the file is generated. This allows you to modify chart properties, add watermarks, or perform pre-export calculation
+Use the `BeforeExport` event to customize the export process before the file is generated. This allows you to modify chart properties, add watermarks, or perform pre-export calculation
 
-Use the `beforeExport` event to customize the export process:
+Use the `BeforeExport` event to customize the export process:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -145,7 +145,7 @@ Use the `beforeExport` event to customize the export process:
 
 ## Export Completed Event
 
-Handle the completion of export using the `exportCompleted` event:
+Handle the completion of export using the `ExportCompleted` event:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -16,7 +16,7 @@ This guide covers label appearance configuration, visibility control, font styli
 
 ## Label Settings Properties
 
-The `labelSettings` property provides options to control label appearance, text styling, and visibility. These properties apply globally to all node labels.
+The `LabelSettings` property provides options to control label appearance, text styling, and visibility. These properties apply globally to all node labels.
 
 ### Label Configuration Properties
 
@@ -60,7 +60,7 @@ Here is an example of customizing label appearance:
 
 ## Hiding Labels
 
-Control label visibility using the `visible` property in `labelSettings`. Set it to `false` to hide all node labels, which can be useful for creating cleaner visualizations when labels take up too much space:
+Control label visibility using the `Visible` property in `LabelSettings`. Set it to `false` to hide all node labels, which can be useful for creating cleaner visualizations when labels take up too much space:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -90,11 +90,11 @@ Control label visibility using the `visible` property in `labelSettings`. Set it
 
 Apply custom font styling to all labels using properties such as:
 
-- **`fontSize`**: Adjust text size (e.g., '12px', '14px')
-- **`fontFamily`**: Specify font family (e.g., 'Arial', 'Times New Roman')
-- **`fontWeight`**: Control text thickness ('400' = normal, '700' = bold)
-- **`fontStyle`**: Apply text styling ('normal' or 'italic')
-- **`color`**: Set text color (hex or color names)
+- **`FontSize`**: Adjust text size (e.g., '12px', '14px')
+- **`FontFamily`**: Specify font family (e.g., 'Arial', 'Times New Roman')
+- **`FontWeight`**: Control text thickness ('400' = normal, '700' = bold)
+- **`FontStyle`**: Apply text styling ('normal' or 'italic')
+- **`Color`**: Set text color (hex or color names)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -122,7 +122,7 @@ Apply custom font styling to all labels using properties such as:
 
 ## Individual Node Labels
 
-Customize the appearance of specific node labels by configuring the `label` property on each node object. This allows you to override global label settings for specific nodes, enabling data-driven label customization:
+Customize the appearance of specific node labels by configuring the `Label` property on each node object. This allows you to override global label settings for specific nodes, enabling data-driven label customization:
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -152,7 +152,7 @@ Customize the appearance of specific node labels by configuring the `label` prop
 
 ### Dynamic Label Customization
 
-Use the `labelRendering` event to customize label text, styling, and appearance dynamically during the render process. This event is triggered for each label before rendering, allowing you to apply conditional formatting, modify text, or adjust styling based on data values:
+Use the `LabelRendering` event to customize label text, styling, and appearance dynamically during the render process. This event is triggered for each label before rendering, allowing you to apply conditional formatting, modify text, or adjust styling based on data values:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

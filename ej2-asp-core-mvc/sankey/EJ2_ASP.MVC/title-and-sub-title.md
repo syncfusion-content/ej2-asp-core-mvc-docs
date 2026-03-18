@@ -25,7 +25,7 @@ This guide covers title and subtitle configuration, styling options, and best pr
 
 ## Title/Subtitle Style Properties
 
-Both `titleStyle` and `subTitleStyle` support the following properties:
+Both `TitleStyle` and `SubTitleStyle` support the following properties:
 
 | Property | Type | Default | Description |
 |----------|------|---------|-------------|
