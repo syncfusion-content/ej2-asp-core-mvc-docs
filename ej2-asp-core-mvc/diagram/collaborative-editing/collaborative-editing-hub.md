@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SignalR Hub for Real-Time Collaboration in ##Platform_Name## Diagram | Syncfusion®
+title: SignalR Hub for ##Platform_Name## Diagram | Syncfusion®
 description: Checkout and learn to implement SignalR hub services with Redis for real-time collaborative editing in Syncfusion® ##Platform_Name## Diagram.
 control: Diagram
 documentation: ug

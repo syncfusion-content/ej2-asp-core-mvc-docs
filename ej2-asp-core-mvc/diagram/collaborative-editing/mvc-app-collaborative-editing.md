@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing Configuration in ##Platform_Name## Diagram | Syncfusion®
+title: Collaborative Editing in ##Platform_Name## Diagram | Syncfusion
 description: Checkout and learn to configure SignalR and Redis for real-time collaborative editing in Syncfusion® ##Platform_Name## Diagram.
 control: Diagram
 documentation: ug
