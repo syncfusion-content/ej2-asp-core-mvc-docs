@@ -1,0 +1,15 @@
+@{
+    // Using a consistent component id
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true)
+        .NodeTemplate("<b>${source.name} to ${target.name}</b><br/>Value: <b>${value}</b>")
+    )
+    .LegendSettings(l => l.Visible(true))
+    .Render()

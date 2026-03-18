@@ -1,0 +1,24 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom))
+    .LegendItemRendering("onLegendItemRendering")
+    .Render()
+
+<script>
+    // Mirrors React's legendItemRendering customization
+    function onLegendItemRendering(args) {
+        // Customize legend item appearance and text
+        if (args && args.text) {
+            args.text = args.text.toUpperCase();
+        }
+        args.fill = '#333';
+    }
+</script>

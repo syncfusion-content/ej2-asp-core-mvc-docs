@@ -1,0 +1,30 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")   <!-- fallback; see JS below for responsive -->
+    .Title("California Energy Consumption in 2023")
+    .SubTitle("Source: Lawrence Livermore National Laboratory")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .LinkStyle(ls => ls.Opacity(0.6).Curvature(0.55).ColorType(Syncfusion.EJ2.Charts.ColorType.Source))
+    .LabelSettings(l => l.Visible(true))
+    .Tooltip(tp => tp.Enable(true))
+    .LegendSettings(leg => leg.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom).ItemPadding(8))
+    .Loaded("onSankeyLoaded")
+    .Render()
+
+<script>
+    function onSankeyLoaded(args) {
+        // Clear title attribute if needed (as in React example)
+        var element = document.getElementById('sankey');
+        if (element) element.setAttribute('title', '');
+
+        // Responsive height (mimic Browser.isDevice logic)
+        var isDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        if (isDevice) {
+            args.sankey.height = '600px';
+        } else {
+            args.sankey.height = '450px';
+        }
+        args.sankey.refresh();
+    }
+</script>

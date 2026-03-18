@@ -1,0 +1,38 @@
+<ejs-chart id="container">
+
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+
+    <e-series-collection>
+
+        <e-series dataSource="ViewBag.vietnamData"
+                  xName="x"
+                  yName="y"
+                  name="Vietnam"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+
+            <e-series-marker visible="true"></e-series-marker>
+
+            <e-series-labelsettings visible="true"
+                                    text="Vietnam"
+                                    background="#E8F5E9"
+                                    opacity="0.9"
+                                    showOverlapText="true">
+
+                <e-series-labelsettings-border width="2"
+                                               color="#2E7D32">
+                </e-series-labelsettings-border>
+
+                <e-series-labelsettings-font size="12px"
+                                             fontWeight="600"
+                                             color="#2E7D32">
+                </e-series-labelsettings-font>
+
+            </e-series-labelsettings>
+
+        </e-series>
+
+    </e-series-collection>
+
+</ejs-chart>

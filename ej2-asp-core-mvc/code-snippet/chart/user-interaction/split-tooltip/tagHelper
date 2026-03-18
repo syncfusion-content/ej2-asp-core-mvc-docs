@@ -1,0 +1,55 @@
+<ejs-chart id="container">
+
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+
+    <e-chart-primaryyaxis title="Value"></e-chart-primaryyaxis>
+
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+
+    <e-chart-tooltipsettings enable="true" split="true"></e-chart-tooltipsettings>
+
+    <e-series-collection>
+
+        <e-series dataSource="ViewBag.vietnamData"
+                  xName="x"
+                  yName="y"
+                  name="Vietnam"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.indonesiaData"
+                  xName="x"
+                  yName="y"
+                  name="Indonesia"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.franceData"
+                  xName="x"
+                  yName="y"
+                  name="France"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.polandData"
+                  xName="x"
+                  yName="y"
+                  name="Poland"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+        <e-series dataSource="ViewBag.mexicoData"
+                  xName="x"
+                  yName="y"
+                  name="Mexico"
+                  type="@Syncfusion.EJ2.Charts.ChartSeriesType.Line">
+            <e-series-marker visible="true"></e-series-marker>
+        </e-series>
+
+    </e-series-collection>
+
+</ejs-chart>
