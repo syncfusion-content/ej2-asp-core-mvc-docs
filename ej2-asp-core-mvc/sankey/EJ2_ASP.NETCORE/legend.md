@@ -10,9 +10,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Legend in React Sankey Chart component
+# Legend in ##Platform_Name## Sankey Chart component
 
-A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize legend using the `legend` property and by injecting the `SankeyLegend` module.
+A legend provides a visual key that helps users understand the categories and meanings represented by nodes in the Sankey Chart. The Sankey Chart provides comprehensive legend configuration options including positioning, styling, customization, and interactive behaviors. You can enable and customize legend using the `legend` property.
 
 This guide covers legend configuration, positioning strategies, customization options, and dynamic legend rendering events.
 

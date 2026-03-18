@@ -10,7 +10,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in React Sankey Chart component
+# Appearance in ##Platform_Name## Sankey Chart component
 
 The Sankey Chart provides comprehensive customization options to control visual appearance, dimensions, responsiveness, colors, borders, and themes. These appearance settings enable you to create diagrams that match your application's design system and user experience requirements.
 

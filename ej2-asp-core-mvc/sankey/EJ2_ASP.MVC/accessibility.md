@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in React Sankey Chart component
+# Accessibility in ##Platform_Name## Sankey Chart component
 
 The Sankey Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
 
@@ -75,4 +75,4 @@ The accessibility compliance of the Sankey Chart component is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)

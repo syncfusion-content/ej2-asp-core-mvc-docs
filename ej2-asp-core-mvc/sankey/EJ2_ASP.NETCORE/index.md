@@ -10,7 +10,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Index in React Sankey Chart component
+# Index in ##Platform_Name## Sankey Chart component
 
 A Sankey Chart is a visualization that displays the flow of values from one set of categories to another. It uses nodes to represent categories and links to show the connections and flow magnitudes between them. All elements are rendered using Scalable Vector Graphics (SVG).
 

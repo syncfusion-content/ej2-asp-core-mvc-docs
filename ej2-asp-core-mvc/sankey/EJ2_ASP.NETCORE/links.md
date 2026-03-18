@@ -10,7 +10,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Links in React Sankey Chart component
+# Links in ##Platform_Name## Sankey Chart component
 
 Links are the connecting paths that visualize flow between nodes in a Sankey Chart. Each link connects a source node to a target node and carries a quantitative value that determines its visual thickness. The Sankey Chart provides comprehensive customization options for link styling, colors, curvature, and interactions.
 

@@ -195,7 +195,7 @@ By default, tooltip shows information of x and y value in points. You can show m
 
 The split tooltip displays a separate tooltip for each series at the same data point, making it easier to compare values across multiple series.
 
-Enable this feature by setting the [`split`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#split) property to **true**:
+Enable this feature by setting the `split` property to **true**:
 
 ```jsx
 tooltip: { 
@@ -231,7 +231,7 @@ tooltip: {
 
 The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the chart. This provides a more dynamic and intuitive experience by keeping the tooltip close to the user's point of interaction.
 
-Enable this feature by setting the [`followPointer`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#followpointer) property to **true**:
+Enable this feature by setting the `followPointer` property to **true**:
 
 ```jsx
 tooltip: { 
@@ -266,7 +266,7 @@ tooltip: {
 ## Tooltip distance
 The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
 
-Set the [`distance`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#distance) property to specify the gap in pixels:
+Set the `distance` property to specify the gap in pixels:
 
 ```jsx
 tooltip: { 

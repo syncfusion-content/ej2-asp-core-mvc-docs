@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientation and RTL in React Sankey Chart component
+# Orientation and RTL in ##Platform_Name## Sankey Chart component
 
 The Sankey Chart supports flexible layout options including horizontal and vertical orientations, as well as right-to-left (RTL) rendering for international applications. These features enable you to create localized and directionally appropriate visualizations.
 

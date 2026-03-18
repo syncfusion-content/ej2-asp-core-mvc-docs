@@ -10,7 +10,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Title and Subtitle in React Sankey Chart component
+# Title and Subtitle in ##Platform_Name## Sankey Chart component
 
 The Sankey Chart supports adding descriptive titles and subtitles to provide context and information about your data visualization. These text elements help users quickly understand the purpose and content of the diagram. You can fully customize the text, styling, alignment, and appearance using dedicated properties.
 
