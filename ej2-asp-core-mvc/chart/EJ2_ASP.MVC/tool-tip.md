@@ -276,6 +276,8 @@ tooltip: {
 }
 ```
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/user-interaction/tooltip-distance/tagHelper %}

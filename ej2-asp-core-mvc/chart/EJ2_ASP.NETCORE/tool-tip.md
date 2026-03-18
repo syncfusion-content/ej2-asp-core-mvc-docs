@@ -274,6 +274,7 @@ tooltip: {
     distance: 25 
 }
 ```
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
