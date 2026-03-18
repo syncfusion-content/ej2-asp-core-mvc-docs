@@ -191,6 +191,83 @@ By default, tooltip shows information of x and y value in points. You can show m
 {% endtabs %}
 {% endif %}
 
+## Split tooltip
+
+The split tooltip displays a separate tooltip for each series at the same data point, making it easier to compare values across multiple series.
+
+Enable this feature by setting the [`split`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#split) property to **true**:
+
+```jsx
+tooltip: { 
+    enable: true, 
+    split: true 
+}
+```
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/split-tooltip" %}
+
+## Follow pointer
+
+The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the chart. This provides a more dynamic and intuitive experience by keeping the tooltip close to the user's point of interaction.
+
+Enable this feature by setting the [`followPointer`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#followpointer) property to **true**:
+
+```jsx
+tooltip: { 
+    enable: true, 
+    followPointer: true 
+}
+```
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/follow-pointer" %}
+
+## Tooltip distance
+The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
+
+Set the [`distance`](https://ej2.syncfusion.com/react/documentation/api/chart/tooltipSettingsModel#distance) property to specify the gap in pixels:
+
+```jsx
+tooltip: { 
+    enable: true, 
+    distance: 25 
+}
+```
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/tooltip-distance" %}
+
 ## Enable highlight
 
 By setting the [`EnableHighlight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_EnableHighlight) property to **true**, you can highlight all points in the hovered series while dimming points in other series, enhancing focus and clarity.
