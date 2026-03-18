@@ -1,0 +1,71 @@
+@using Syncfusion.EJ2.InteractiveChat;
+@using Newtonsoft.Json;
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
+
+@{
+    var promptsData = new[]
+    {
+        new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem - solving, and decision - making.</ div >", suggestionData = new List<string> { } }
+    };
+    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
+}
+
+<div class="container" style="height: 350px; width: 650px;">
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    
+    <ejs-inlineaiassist id="defaultInlineAssist" prompts="@promptsData" relateTo="#summarizeBtn" created="onCreated" promptRequest="onPromptRequest">
+        <e-inlineaiassist-responsesettings itemSelect="onItemSelect"></e-inlineaiassist-responsesettings>
+    </ejs-inlineaiassist>
+</div>
+
+<script>
+    var inlineAssist;
+    var prompts = @Html.Raw(promptsJson);
+    function onCreated() {
+        inlineAssist = this;
+    }
+    
+    function onPromptRequest(args) {
+        setTimeout(function () {
+            var foundPrompt = prompts.find(function (promptObj) {
+                return promptObj.prompt === args.prompt;
+            });
+            var defaultResponse = 'For real-time prompt processing, connect the Inline AI Assist component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            inlineAssist.addResponse(foundPrompt ? foundPrompt.response : defaultResponse);
+        }, 1000);
+    }
+    
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + inlineAssist.prompts[inlineAssist.prompts.length - 1].response + '</p>';
+            }
+            inlineAssist.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            inlineAssist.hidePopup();
+        }
+    }
+    
+    function onSummarizeClick() {
+        if (inlineAssist) {
+            inlineAssist.showPopup();
+        }
+    }
+</script>

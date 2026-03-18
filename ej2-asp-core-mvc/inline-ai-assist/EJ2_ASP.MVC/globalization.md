@@ -23,6 +23,28 @@ The Inline AI Assist can be localized to any culture by defining the text of the
 
 The below example shows adding the German culture locale(`de-DE`)
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="localization.cs" %}
+{% include code-snippet/inline-ai-assist/globalization/localization/localization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Localization](./../images/localization.png)
+
 ## RTL
 
 RTL provides an option to switch the text direction and layout of the Inline AI Assist control from right to left by setting the [EnableRtl][EnableRtl](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_EnableRtl) property to `true`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="enableRtl.cs" %}
+{% include code-snippet/inline-ai-assist/globalization/enable-rtl/enableRtl.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![EnableRtl](./../images/enable-rtl.png)
