@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.BlockEditor
+
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("blockEditor").Blocks(ViewData["BlockData"]).ImageBlockSettings((ImageBlockSettings)ViewData["ImageBlockSettings"]).FileUploading("fileUploading").Render()
+</div>
+<script>
+    function fileUploading(args) {
+        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
+    }
+</script>
+<style>
+    #blockeditor-container {
+        margin: 20px auto;
+    }
+</style>
