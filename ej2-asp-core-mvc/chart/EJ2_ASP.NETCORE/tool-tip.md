@@ -204,16 +204,28 @@ tooltip: {
 }
 ```
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/user-interaction/split-tooltip/app/index.jsx %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/tagHelper %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/user-interaction/split-tooltip/app/index.tsx %}
+{% highlight c# tabtitle="Split-tooltip.cs" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/split-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/split-tooltip" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Split-tooltip.cs" %}
+{% include code-snippet/chart/user-interaction/split-tooltip/split-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Follow pointer
 
@@ -228,16 +240,28 @@ tooltip: {
 }
 ```
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/user-interaction/follow-pointer/app/index.jsx %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/tagHelper %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/user-interaction/follow-pointer/app/index.tsx %}
+{% highlight c# tabtitle="Follow-pointer.cs" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/follow-pointer.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/follow-pointer" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Follow-pointer.cs" %}
+{% include code-snippet/chart/user-interaction/follow-pointer/follow-pointer.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Tooltip distance
 The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
@@ -252,21 +276,25 @@ tooltip: {
 ```
 
 {% tabs %}
-{% highlight js tabtitle="index.jsx" %}
-{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.jsx %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/tagHelper %}
 {% endhighlight %}
-{% highlight ts tabtitle="index.tsx" %}
-{% include code-snippet/chart/user-interaction/tooltip-distance/app/index.tsx %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/chart/user-interaction/tooltip-distance/app/datasource.tsx %}
+{% highlight c# tabtitle="Tooltip-distance.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/tooltip-distance.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/chart/preview-sample/user-interaction/tooltip-distance" %}
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-distance.cs" %}
+{% include code-snippet/chart/user-interaction/tooltip-distance/tooltip-distance.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Enable highlight
 
