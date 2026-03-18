@@ -51,7 +51,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 
 You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for the paragraph block is `Write something or ‘/’ for commands.`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding placeholder
@@ -83,7 +83,7 @@ You can render Heading blocks by setting the [blockType](https://help.syncfusion
 You can configure the heading blocks using the property `level` in the `properties` property.
 The heading level representing a title `level: 1`, heading `level: 2`, subheading `level: 3` and a subsection by `level: 4`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding heading block
@@ -115,7 +115,7 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 
 You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for heading block is `Heading{level}`.
 
-### BlockType & Properties
+### Block type & properties
 
 ```typescript
 // Adding placeholder
@@ -123,102 +123,6 @@ You can configure placeholder text for block using the `placeholder` in the `pro
     blockType = 'Paragraph',
     properties = new {level = 4 , placeholder = "Heading block" }
 }
-```
-
-## Configure collapsible blocks
-
-You can render Collapsible blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [CollapsibleParagraph](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleParagraph) or [CollapsibleHeading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleHeading). Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
-
-### Configure levels
-
-You can configure the CollapsibleHeading using the property `level` inside the `properties` property . The levels can be varied from `level: 1` to `level: 4`.
-
-### Configure children
-
-The Block Editor supports hierarchical content structures through the `children` property. This property can be achieved through `properties` property that allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
-
-Child blocks can be configured with all the same properties as top-level blocks.
-
-### Configure parent id
-
-To establish a clear parent-child relationship, the `parentId` in the `properties` of each child block must match the `id` of its parent block.
-
-This structure is essential for maintaining nested relationships within the editor.
-
-### Configure expanded state
-
-You can control whether a block is expanded or collapsed using the `isExpanded` in the `properties` property. By default, this property is set to `false`, meaning the block will be collapsed initially. This setting is only applicable to Collapsible blocks.
-
-### BlockType & Properties
-
-```typescript
-	// Configuring CollapsibleHeading block
-    new BlockModel
-    {
-        blockType = "CollapsibleHeading",
-        properties = new
-        {
-                level=1,
-                isExpanded = true,
-                children = new List<BlockModel>(){ 
-                    // your actions
-                }
-        }
-    },
-    // Configuring CollapsibleParagraph block
-    new BlockModel
-    {
-        blockType = "CollapsibleParagraph",
-        properties = new
-        {
-                isExpanded = false,
-                children = new List<BlockModel>()
-                {
-                    // your actions
-                }
-        }
-        }
-```
-
-The below sample demonstrates the configuration of collapsibleHeading and collapsibleParagraph blocks in the Block Editor.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toggle.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/toggle-block/toggle.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Toggle Block](./../../images/block-toggle.png)
-
-### Configure placeholder
-
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is [CollapsibleParagraph](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleParagraph) and [CollapsibleHeading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleHeading) respectively.
-
-```typescript
-	// Configuring CollapsibleHeading block
-    new BlockModel
-    {
-        blockType = "CollapsibleHeading",
-        properties = new
-        {
-                level=1,
-                isExpanded = true,
-                placeholder = "collapsible heading"
-        }
-    },
-    // Configuring CollapsibleParagraph block
-    new BlockModel
-    {
-        blockType = "CollapsibleParagraph",
-        properties = new
-        {
-                isExpanded = false,
-                placeholder = "collapsible paragraph"
-        }
-        }
 ```
 
 ## Configure divider block
@@ -246,112 +150,3 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 {% endtabs %}
 
 ![Divider Block](./../../images/block-divider.png)
-
-## Configure quote block
-
-You can render Quote blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Quote](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Quote). Quote blocks are specially styled for quotations or excerpts.
-
-### BlockType & Properties
-
-```typescript
-// Adding divider block
-{
-    blockType = "Quote",
-    content = new List<object>
-    {
-        new { contentType = "Text", content = "“Quotes are perfect for highlighting key messages or testimonials.”" }
-    }
-}
-```
-
-The below sample demonstrates the configuration of quote block in the Block Editor.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Quote.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/quote-block/quote.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Quote Block](./../../images/block-quote.png)
-
-### Configure placeholder
-
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for quote block is `Write a quote`.
-
-```typescript
-// Adding placeholder value to blocktype
-{
-    blockType =  'Quote',
-    properties = new { placeholder = "Quote" }
-}
-```
-
-## Configure callout block
-
-You can render Callout blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Callout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Callout). They're useful for notes, warnings, or tips that require special attention.
-
-### BlockType & Properties
-
-```typescript
-// Adding callout block
-  {
-    blockType = "Callout",
-    properties = new {
-    children = new List<BlockModel>()
-    {
-            new BlockModel()
-            {
-                    blockType = "Paragraph",
-                    content = new List<object>(){
-                            new{
-                                    contentType = "Text",
-                                    content = "Important information: This is a callout block used to highlight important content"
-                            }
-                    }
-            }
-    }
-    }
-  }
-
-```
-
-The below sample demonstrates the configuration of callout block in the Block Editor.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Callout.cs" %}
-{% include code-snippet/block-editor/blocks/blockTypes/callout-block/callout.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Callout Block](./../../images/block-callout.png)
-
-### Configure children
-
-The Block Editor supports hierarchical content structures through the `children` in the `properties` property. This property allows you to create nested blocks, which is applicable only for Callout and Collapsible blocks.
-
-Child blocks can be configured with all the same properties as top-level blocks.
-
-### Configure parent id
-
-To establish a clear parent-child relationship, the `parentId` in the `properties` of each child block must match the `id` of its parent block.
-
-This structure is essential for maintaining nested relationships within the editor.
-
-The below sample demonstrates the configuration of children in the Block Editor using parentId.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/children/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Children.cs" %}
-{% include code-snippet/block-editor/blocks/children/children.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Block children](./../../images/block-children.png)

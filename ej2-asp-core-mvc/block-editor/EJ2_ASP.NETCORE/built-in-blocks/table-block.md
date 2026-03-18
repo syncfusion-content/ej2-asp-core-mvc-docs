@@ -11,9 +11,9 @@ domainurl: ##DomainURL##
 
 # Table Blocks in ASP.NET Core Block Editor control
 
-The Block Editor control allows you to render structured data in rows and columns by setting the block's [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property.
+The Block Editor control allows you to render structured data in rows and columns by setting the block's [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
-### Configure Table Block
+### Configure table block
 
 For Table blocks, you can configure layout and structure using the `properties` property. This property supports the following options:
 
@@ -30,7 +30,7 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/block-editor/blocks/blockTypes/paragraph-block/tagHelper %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-block/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Table.cs" %}
 {% include code-snippet/block-editor/blocks/blockTypes/table-block/table.cs %}
@@ -38,3 +38,24 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 {% endtabs %}
 
 ![Table Block](./../../images/block-table.png)
+
+### Table resizing
+
+The Block Editor supports table column resizing. You can drag column borders to adjust column width dynamically, or auto‑fit based on content. Only columns can be resized, and if resizing exceeds the layout width, a scrollbar will appear to maintain structure and layout integrity.
+
+### Table multiple row column selection and deletion
+
+The Block Editor supports selecting full rows, single or multiple using the mouse or with `Shift + arrow key` actions, which activate grippers for easy control. Shift based multiple selection is also supported: select a row, hold Shift, and click a non adjacent row (e.g., the third), and all rows in between are included. Selected rows or columns can then be deleted through the Delete popup, and full table deletion is also supported for complete removal.
+
+This sample demonstrates the `Table` block multiple row and column selection and deletion support in the Block Editor.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-feature/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Table.cs" %}
+{% include code-snippet/block-editor/blocks/blockTypes/table-feature/table.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Table Block](./../../images/table-resize.png)
