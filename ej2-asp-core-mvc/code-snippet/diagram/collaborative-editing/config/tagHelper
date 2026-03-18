@@ -15,7 +15,7 @@
         if (connection === null) {
             // Create connection
             connection = new signalR.HubConnectionBuilder()
-                .withUrl('/diagramHub', {
+                .withUrl('<<Your ServiceURL>>', {
                     skipNegotiation: true,
                     transport: signalR.HttpTransportType.WebSockets
                 })

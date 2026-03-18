@@ -8,7 +8,7 @@ platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 ---
 
-# SignalR Hub Configuration for Collaborative Editing
+# SignalR hub configuration for collaborative editing
 
 ## Overview
 
@@ -18,11 +18,11 @@ This guide explains how to configure ASP.NET Core SignalR with Redis for real-ti
 
 * [System requirements for ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## How to Create ASP.NET Core App
+## How to create ASP.NET Core app
 
 Create an ASP.NET Core Web App using the Razor Pages template in Visual Studio via [Microsoft Templates Guide](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app).
 
-## How to Install Required Packages
+## How to install required packages
 
 Open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), then search and install the following packages in the application.
 
@@ -131,11 +131,11 @@ public class DiagramHub : Hub
 }
 ```
 
-## Conflict Resolution (optimistic concurrency)
+## Conflict resolution (optimistic concurrency)
 
 Collaborative edits use a version-based optimistic concurrency model. In `BroadcastToOtherUsers` method  includes the user’s current `userVersion`, payloads, and the IDs of elements affected by the edit (editedElementIds). Instead of locking, the server validates the version for every update. If discrepancies occur, the server rejects or re-applies changes as needed. This approach ensures data consistency while maintaining real-time responsiveness for all participants.
 
-Refer to the `RedisService` file in the `Services` folder of the [GitHub sample](https://github.com/syncfusion/aspnetcore-showcase-diagram-collaborative-editing), and add the `RedisService` to the `Program.cs` file.
+Refer to the `RedisService` file in the `Services` folder of the [GitHub sample](), and add the `RedisService` to the `Program.cs` file.
 
 Add the following code in the `DiagramHub` class:
 
@@ -236,9 +236,9 @@ public class DiagramHub : Hub
 }
 ```
 
-* On acceptance, the hub broadcasts the diagram changes along with the authoritative serverVersion to all other users in the same room (ReceiveData). 
+* On acceptance, the hub broadcasts the diagram changes along with the authoritative `serverVersion` to all other users in the same room (ReceiveData). 
 
-## Redis Cleanup Strategy
+## Redis cleanup strategy
 
 To prevent unbounded memory growth and maintain stable performance, implement one or both of the following:
 * Keep only the last K versions

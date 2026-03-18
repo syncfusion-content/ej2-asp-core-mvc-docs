@@ -22,7 +22,7 @@
     async function initializeSignalRConnection() {
         if (connection === null) {
             connection = new signalR.HubConnectionBuilder()
-                .withUrl('/diagramHub', {
+                .withUrl('<<Your ServiceURL>>', {
                     skipNegotiation: true,
                     transport: signalR.HttpTransportType.WebSockets
                 })

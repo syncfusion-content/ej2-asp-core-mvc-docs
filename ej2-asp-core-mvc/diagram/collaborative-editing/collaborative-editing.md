@@ -8,7 +8,7 @@ platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 ---
 
-# Collaborative editing in ##Platform_Name## diagram
+# Collaborative editing in ##Platform_Name## diagram control
 
 Collaborative editing enables multiple users to edit diagrams simultaneously in real-time, providing a seamless collaborative experience in ##Platform_Name## applications.
 
@@ -31,10 +31,10 @@ Collaborative editing in diagram control allows multiple users to edit and revie
 * View-only interactions
     * Zoom and pan are local to each user and are not synchronized, so collaborators may view different areas of the diagram.
 * Unsupported synchronized settings
-    * Changes to `pageSettings`, `contextMenuSettings`, `snapSettings`, `rulerSettings`, `layout`, and `scrollSettings` are not propagated to other users and apply only locally.
+    * Changes to [pageSettings](../page-settings.md), [contextMenuSettings](../context-menu.md), [snapSettings](../grid-lines#snapping), [rulerSettings](../ruler.md), [layout](../automatic-layout.md), and [scrollSettings](../scroll-settings.md) are not propagated to other users and apply only locally.
 
 >**Note:** 
-Collaboration applies to actions that raise the [historyChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_HistoryChange) event.
+Collaboration will work when [DiagramCollaboration](../../diagram/getting-started#module-injection) and [UndoRedo](../../diagram/getting-started#module-injection) modules are enabled. Collaboration applies to actions that raise the [historyChange](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_HistoryChange) event.
 
 ## Sample code
 
