@@ -1,0 +1,40 @@
+@{
+    var linearGradient = new Syncfusion.EJ2.Charts.AccumulationChartLinearGradient
+    {
+        X1 = 0.1,
+        Y1 = 0,
+        X2 = 0.9,
+        Y2 = 1,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 0,   Opacity = 1 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 60,  Opacity = 0.98 },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 100, Opacity = 0.95 }
+        }
+    };
+}
+
+@(Html.EJS().AccumulationChart("container")
+    .Series(sr =>
+    {
+        sr.Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+          .XName("Category")
+          .YName("Share")
+          .Name("Share by Category")
+          .DataLabel(dl => dl
+              .Visible(true)
+              .Name("DataLabel")
+              .Position(Syncfusion.EJ2.Charts.AccumulationLabelPosition.Outside)
+              .ConnectorStyle(cs => cs.Length("10px"))
+              .Font(f => f.Size("12px"))
+          )
+          .Border(br => br.Color("#FFFFFF").Width(2))
+          .LinearGradient(linearGradient)
+          .DataSource(ViewBag.dataSource).Add();
+    })
+    .LegendSettings(leg => leg.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Right))
+    .Tooltip(tp => tp.Enable(true))
+    .EnableSmartLabels(true)
+    .Title("Orders by Category")
+    .Render()
+)

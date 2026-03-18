@@ -1,0 +1,29 @@
+@{
+    var linearGradient = new Syncfusion.EJ2.Charts.ChartLinearGradient
+    {
+        X1 = 0,
+        Y1 = 0,
+        X2 = 0,
+        Y2 = 1,
+        GradientColorStop = new List<Syncfusion.EJ2.Charts.ChartGradientColorStop>
+        {
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#4F46E5", Offset = 0,   Opacity = 1,    Lighten = 0, Brighten = 0   },
+            new Syncfusion.EJ2.Charts.ChartGradientColorStop { Color = "#22D3EE", Offset = 100, Opacity = 0.95, Lighten = 0, Brighten = 0.9 }
+        }
+    };
+}
+
+<ejs-chart id="container" title="Monthly Sales Performance">
+    <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
+    <e-chart-primaryyaxis labelFormat="${value}k"></e-chart-primaryyaxis>
+    <e-series-collection>
+        <e-series dataSource="@ViewBag.dataSource" xName="Month" yName="Amount"
+                  name="Sales" type="Column" linearGradient="@linearGradient">
+            <e-series-marker visible="true" isFilled="true">
+                <e-series-datalabel visible="true"></e-series-datalabel>
+            </e-series-marker>
+        </e-series>
+    </e-series-collection>
+    <e-chart-tooltipsettings enable="true"></e-chart-tooltipsettings>
+    <e-chart-legendsettings visible="true"></e-chart-legendsettings>
+</ejs-chart>

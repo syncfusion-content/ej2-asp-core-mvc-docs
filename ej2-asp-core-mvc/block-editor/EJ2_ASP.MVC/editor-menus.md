@@ -157,6 +157,74 @@ The Inline Toolbar includes below built-in formatting options:
 -   **Text Color**: Change text color.
 -   **Background Color**: Change background color.
 
+### Optional items
+
+The inline toolbar can handle custom items like `Transform`, `InlineCode`, `Link` by passing array of string values in `Items` property in `InlineToolbarSettings`.
+
+#### Transform block options
+
+The inline toolbar now includes `Transform` options to quickly convert blocks between different types. You can use the [TransformSettings] property to handle customization of the transform menu in the inline toolbar. This allows you to configure available block transformations, define custom menu items with text and icons, and control their behavior.
+
+#### Built-in default transform block options
+
+Below are the built-in transform block options available:
+
+| Built-in transform Block Types          |
+|-----------------------------------------|
+| Paragraph                               |
+| Heading1 to Heading4                    |
+| Checklist                               |
+| BulletList                              |
+| NumberedList                            |
+
+> For blocks such as `Code`, `Callout`, `Quote`, `Divider`, `Image`, `Table` and `Collapsible` transform options not available. Instead they will be added as a new block.
+
+#### Events
+
+The following events are available for the transform toolbar item menu:
+
+|Name|Args|Description|
+|---|---|---|
+|`ItemSelect`|TransformItemSelectEventArgs|Triggers when a command item is clicked.|
+
+#### Inline code support
+
+Added inline code formatting in the toolbar, with light syntax highlighting and seamless integration with other text formatting options.
+
+#### Inline link support
+
+Added inline link formatting in the toolbar, by link item click, link dialog opens and with proper value updation, link can be inserted on text.
+
+The following example demonstrates how to customize the transform, inline code, link items.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/transform-item/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Transform.cs" %}
+{% include code-snippet/block-editor/editor-menus/transform-item/transform.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Transform](./../images/transform-items.png)
+
+#### Font and background color support
+
+Enhanced font and background color options in the inline toolbar with integrated ColorPicker. You can use the `FontColorSettings`, `BackgroundColorSettings` properties to handle for text customization, highlighting, predefined palettes, custom inputs, and quick previews.
+
+The following example demonstrates how to customize the font and background color toolbar items.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/block-editor/editor-menus/color-item/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Index.cs" %}
+{% include code-snippet/block-editor/editor-menus/color-item/index.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Color](./../images/color-items.png)
+
 ### Customize Inline Toolbar
 
 You can utilize the [InlineToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockEditor.html#Syncfusion_EJ2_BlockEditor_BlockEditor_InlineToolbarSettings) property on the Block Editor to customize the Inline Toolbar to add or remove formatting options based on your application's needs.

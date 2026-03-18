@@ -25,7 +25,6 @@ The accessibility compliance for the diagram component is outlined below.
 | Mobile Device Support             | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 | Keyboard Navigation Support | <img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="intermediate"> |
 | Accessibility Checker Validation  | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| Axe-core Accessibility Validation | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
 
 <div style="display: flex; align-items: center;"><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes" style="margin-right: 5px;"> - All features of the component meet the requirement.</div>
 

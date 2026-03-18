@@ -1,0 +1,40 @@
+<ejs-stockchart id="stockchart" load="chartLoad" title="AAPL Stock Price">
+    <e-stockchart-primaryxaxis valueType="DateTime">
+    </e-stockchart-primaryxaxis>
+    <e-stockchart-series-collection>
+        <e-stockchart-series type='Line' xName= 'x' yName= 'low' name="Google">
+        </e-stockchart-series>
+         <e-stockchart-series type='Line' xName= 'x' yName= 'high' name="MicrosoftEdge">
+        </e-stockchart-series>
+    </e-stockchart-series-collection>
+
+    <e-stockchart-legendsettings visible="true">
+    </e-stockchart-legendsettings>
+</ejs-stockchart>
+            
+<script src="~/datasource.js"></script>
+<script>
+    var data = chartData;
+    const iconMap = {
+    Google: 'https://img.icons8.com/?size=100&id=110580&format=png&color=000000',
+    MicrosoftEdge: 'https://img.icons8.com/?size=100&id=4rcnsWVaR2ja&format=png&color=000000'
+    };
+   function stockload(args) {
+    args.stockChart.series[0].dataSource = data;
+    args.stockChart.series[1].dataSource = data;
+    args.stockChart.legendSettings.template = function (ctx) {
+      var name = (ctx.series.name) ? ctx.series.name : (ctx.text ? ctx.text : '');
+      var icon = iconMap[name] || '';
+      return '' +
+        '<div style="display:flex;align-items:center;gap:8px;padding:4px;">' +
+          (icon
+            ? '<img src="' + icon + '" width="20" height="20" ' +
+                'style="object-fit:contain;border-radius:2px;" alt="' + name + '"/>' 
+            : ''
+          ) +
+          '<span style="font-size:13px;font-weight:500;">' + name + '</span>' +
+        '</div>';
+    };
+  }
+
+</script>   

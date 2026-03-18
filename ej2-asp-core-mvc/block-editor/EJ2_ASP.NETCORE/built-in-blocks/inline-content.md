@@ -13,7 +13,7 @@ domainurl: ##DomainURL##
 
 Content in the Block Editor is managed through the `content` property of blocks.
 
-Each content can have properties like `id`, `contentType`, `content`, `properties`, and more to customize the appearance and behavior of your text.
+Each content can have properties like `contentType`, `content`, `properties`, and more to customize the appearance and behavior of your text.
 
 ## Setting content type
 
