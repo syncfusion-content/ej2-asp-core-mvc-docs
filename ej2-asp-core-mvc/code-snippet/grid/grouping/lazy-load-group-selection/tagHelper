@@ -3,7 +3,7 @@
     <e-grid-selectionsettings persistSelection="true"></e-grid-selectionsettings>
     <e-grid-columns>
         <e-grid-column type="checkbox" width="50"></e-grid-column>
-        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" width="90"></e-grid-column>
         <e-grid-column field="ProductName" headerText="Product Name" width="100"></e-grid-column>
         <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="80"></e-grid-column>
         <e-grid-column field="CustomerName" headerText="Customer Name" width="120"></e-grid-column>
