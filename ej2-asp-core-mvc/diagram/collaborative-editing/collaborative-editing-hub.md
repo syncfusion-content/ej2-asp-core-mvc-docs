@@ -33,7 +33,7 @@ Open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager
 
 ## Configure SignalR with Redis
 
-To enable real-time collaboration, add your Redis connection string in `appsettings.json`, then register a singleton `IConnectionMultiplexer` in `Program.cs` to efficiently reuse the Redis connection. Finally, configure `SignalR` by registering its services in `Program.cs` to enable hub-based communication between React app and the ASP.NET Core hub server.
+To enable real-time collaboration, add your Redis connection string in `appsettings.json`, then register a singleton `IConnectionMultiplexer` in `Program.cs` to efficiently reuse the Redis connection. Finally, configure `SignalR` by registering its services in `Program.cs` to enable hub-based communication between ##Platform_Name## app and the ASP.NET Core hub server.
 
 Add the following configuration to the `appsettings.json` file:
 ```json
