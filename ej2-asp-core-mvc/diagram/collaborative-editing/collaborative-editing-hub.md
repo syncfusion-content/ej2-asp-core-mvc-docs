@@ -135,7 +135,7 @@ public class DiagramHub : Hub
 
 Collaborative edits use a version-based optimistic concurrency model. In `BroadcastToOtherUsers` method  includes the user’s current `userVersion`, payloads, and the IDs of elements affected by the edit (editedElementIds). Instead of locking, the server validates the version for every update. If discrepancies occur, the server rejects or re-applies changes as needed. This approach ensures data consistency while maintaining real-time responsiveness for all participants.
 
-Refer to the `RedisService` file in the `Services` folder of the [GitHub sample](), and add the `RedisService` to the `Program.cs` file.
+Refer to the `RedisService` file in the `Services` folder of the [GitHub sample](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/CollaborativeEditing), and add the `RedisService` to the `Program.cs` file.
 
 Add the following code in the `DiagramHub` class:
 
