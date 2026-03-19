@@ -38,5 +38,5 @@ Collaboration will work when [DiagramCollaboration](../../diagram/getting-starte
 
 ## Sample code
 
-A complete working example is available in the [Syncfusion ##Platform_Name## Collaborative Editing GitHub repository]()
+A complete working example is available in the [Syncfusion ##Platform_Name## Collaborative Editing GitHub repository](https://github.com/SyncfusionExamples/ej2-web-diagram-examples/tree/master/CollaborativeEditing)
 
