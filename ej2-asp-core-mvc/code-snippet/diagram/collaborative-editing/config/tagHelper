@@ -1,0 +1,59 @@
+<div class="col-lg-12 control-section">
+    <div class="content-wrapper">
+        <ejs-diagram id="diagram" width="100%" height="700px" enableCollaborativeEditing="true" historyChange="onHistoryChange">
+        </ejs-diagram>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@microsoft/signalr@latest/signalr.js"></script>
+
+<script>
+    let connection = null;
+    let roomName = 'Syncfusion';
+
+    async function initializeSignalRConnection() {
+        if (connection === null) {
+            // Create connection
+            connection = new signalR.HubConnectionBuilder()
+                .withUrl('<<Your ServiceURL>>', {
+                    skipNegotiation: true,
+                    transport: signalR.HttpTransportType.WebSockets
+                })
+                .withAutomaticReconnect()
+                .build();
+
+            // Triggered when the connection to the SignalR Hub is successfully established
+            connection.on('OnConnectedAsync', (id) => {
+                onConnectedAsync(id);
+            });
+
+            try {
+                await connection.start();
+                console.log('Connected to SignalR Hub');
+            } catch (error) {
+                console.error('Connection failed:', error);
+            }
+        }
+    }
+
+    function onConnectedAsync(id) {
+        if (id && id.length > 0) {
+            console.log('Connection ID:', id);
+            // Join the room after connection is established
+            connection.invoke('JoinDiagram', roomName)
+                .catch((error) => {
+                    console.error('JoinDiagram failed:', error);
+                });
+        }
+    }
+
+    // Initialize connection when page loads
+    document.addEventListener('DOMContentLoaded', initializeSignalRConnection);
+
+    // Stop connection when page unloads
+    window.addEventListener('beforeunload', () => {
+        if (connection && connection.state === signalR.HubConnectionState.Connected) {
+            connection.stop();
+        }
+    });
+</script>
