@@ -497,27 +497,6 @@ To enable virtual scrolling, set the [`EnableVirtualization`](https://help.syncf
 - With OLAP data, subtotals and grand totals are shown only when measures are placed at the end of the [`Rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows) or [`Columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns) axes within [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). If measures appear elsewhere, data will display without summary totals.
 - If the width and height of the Pivot Table are set to large values, the amount of data loaded in the current, previous, and next pages increases. This may impact loading performance during scrolling.
 
-### Run the Application
-
-Running the Pivot Table application allows you to see your changes and data in real time directly in the browser, making it easy to check your results.
-
-To start the application, open a command prompt in your project folder and run the following command. This will compile the project and automatically open it in your browser.
-
-```sh
-npm start
-```
-
-{% tabs %}
-{% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs196/app/App.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs196/app/App.tsx %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs196" %}
-
 ## Data Binding
 
 To connect an OLAP data source to the Pivot Table, use the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) property. Several options within `dataSourceSettings` must be specified to bind data correctly:
