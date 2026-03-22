@@ -34,14 +34,6 @@
     }
 </style>
 
-@{
-    var promptsData = new[]
-    {
-        new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem - solving, and decision - making.</ div >", suggestionData = new List<string> { } }
-    };
-    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
-}
-
 <div class="container" style="height: 350px; width: 650px;">
     <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
     <div id="editableText" contenteditable="true">
@@ -67,16 +59,12 @@
 
     function onCreated() {
         inlineAssist = this;
-        inlineAssist.prompts = promptsData;
     }
     
     function onPromptRequest(args) {
         setTimeout(function () {
-            var foundPrompt = promptsData.find(function (promptObj) {
-                return promptObj.prompt === args.prompt;
-            });
             var defaultResponse = 'For real-time prompt processing, connect the Inline AI Assist component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
-            inlineAssist.addResponse(foundPrompt ? foundPrompt.response : defaultResponse);
+            inlineAssist.addResponse(defaultResponse);
         }, 1000);
     }
     

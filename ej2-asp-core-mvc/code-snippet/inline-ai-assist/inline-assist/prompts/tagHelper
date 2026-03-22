@@ -19,7 +19,7 @@
     {
         new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem - solving, and decision - making.</ div >", suggestionData = new List<string> { } }
     };
-    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
+    var promptsJson = JsonSerializer.Serialize(promptsData);
 }
 
 <div class="container" style="height: 350px; width: 650px;">
