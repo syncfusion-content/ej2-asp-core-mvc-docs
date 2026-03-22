@@ -35,7 +35,7 @@ You can enable speech-to-text support using the [speechToTextSettings](https://h
 {% endhighlight %}
 {% endtabs %}
  
-![Integrating Speech-to-Text with AI AssistView](images/aiassist-stt.png)
+![Speech-to-Text with AI AssistView](./../../images/speech-to-text.png)
 
 ## Configure speech recognition language
 
@@ -51,13 +51,44 @@ The [allowInterimResults](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 This example demonstrates how to set up the AI AssistView with all these speech recognition features enabled:
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/speech-configuration/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Speechtotext.cs" %}
+{% include code-snippet/ai-assistview/speech/speech-configuration/speechtotextcore.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+![AllowInterimResults](./../../images/speech-config.png)
+
 ## Configure tooltip settings
 
 You can customize the tooltips to the microphone button using the [tooltipSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_SpeechToTextSettings) property.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/tooltip-settings/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Speechtotext.cs" %}
+{% include code-snippet/ai-assistview/speech/tooltip-settings/speechtotextcore.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+![Speech To Text Tooltip](./../../images/tooltip-settings.png)
+
 ## Speech to text events
 
 The speech-to-text functionality provides events like `onStart` (when recognition starts), `onStop` (when it stops), `transcriptChanged` (when transcript updates), and `onError` (when errors occur).
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/speech-events/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Speechtotext.cs" %}
+{% include code-snippet/ai-assistview/speech/speech-events/speechtotextcore.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Browser Compatibility
 
