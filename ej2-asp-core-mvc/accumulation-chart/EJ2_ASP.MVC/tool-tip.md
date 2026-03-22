@@ -257,3 +257,33 @@ public class GroupingChartData
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Follow pointer
+
+The follow pointer feature enables the tooltip to follow the mouse cursor or touch pointer as users interact with the accumulation chart. This provides a more dynamic experience by keeping the tooltip close to the user's interaction point.
+
+Enable this feature by setting the [`FollowPointer`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_FollowPointer) property to **true** in the tooltip.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/follow-pointer/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Follow-pointer.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/follow-pointer/follow-pointer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/follow-pointer/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Follow-pointer.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/follow-pointer/follow-pointer.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}

@@ -1,0 +1,28 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .TooltipRendering("onSankeyTooltipRendering")
+    .Render()
+
+<script>
+    // Mirrors React's onTooltipRendering behavior
+    function onSankeyTooltipRendering(args) {
+        // args.data shape: Syncfusion provides details about the hovered element (node/link)
+        // We check a reliable flag/name to identify link vs node.
+        // Often args.data.name === 'link' or args.type === 'Link' in charts. We'll use name check as in the snippet.
+        if (args && args.data && args.data.name === 'link') {
+            var src = args.data.source.name, tgt = args.data.target.name, val = args.data.value;
+            args.content = 'Flow: ' + src + ' \u2192 ' + tgt + ' (' + val + ')';
+        } else if (args && args.data && args.data.name) {
+            args.content = 'Node: ' + args.data.name;
+        }
+    }
+</script>

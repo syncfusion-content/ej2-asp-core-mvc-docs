@@ -1,0 +1,16 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Title("Energy Flow Diagram")
+    .SubTitle("Agricultural Energy Conversion")
+    .TitleStyle(ts => ts.TextAlignment(Syncfusion.EJ2.Charts.TextAlignment.Near))
+    .SubTitleStyle(ss => ss.TextAlignment(Syncfusion.EJ2.Charts.TextAlignment.Center))
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()

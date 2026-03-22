@@ -1,0 +1,47 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+<!-- Export buttons (match React UX) -->
+<div style="margin-bottom:10px;">
+    <button type="button" style="margin-right:5px;" onclick="exportSankeyPNG()">Export PNG</button>
+    <button type="button" style="margin-right:5px;" onclick="exportSankeyPDF()">Export PDF</button>
+    <button type="button" onclick="exportSankeySVG()">Export SVG</button>
+</div>
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()
+
+<script>
+    function getSankeyInstance() {
+        var el = document.getElementById('@sankeyId');
+        return el && el.ej2_instances ? el.ej2_instances[0] : null;
+    }
+
+    function exportSankeyPNG() {
+        var inst = getSankeyInstance();
+        if (inst && typeof inst.export === 'function') {
+            inst.export('PNG', 'Sankey');
+        }
+    }
+
+    function exportSankeyPDF() {
+        var inst = getSankeyInstance();
+        if (inst && typeof inst.export === 'function') {
+            inst.export('PDF', 'Sankey');
+        }
+    }
+
+    function exportSankeySVG() {
+        var inst = getSankeyInstance();
+        if (inst && typeof inst.export === 'function') {
+            inst.export('SVG', 'Sankey');
+        }
+    }
+</script>

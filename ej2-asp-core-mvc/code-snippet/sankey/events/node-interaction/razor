@@ -1,0 +1,20 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(tooltip => tooltip.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .NodeClick("onNodeClick")
+    .NodeEnter("onNodeEnter")
+    .Render()
+
+<script>
+    function onNodeClick(args) {
+        console.log('Node clicked:', args.node);
+    }
+
+    function onNodeEnter(args) {
+        console.log('Node hovered:', args.node);
+    }
+</script>
