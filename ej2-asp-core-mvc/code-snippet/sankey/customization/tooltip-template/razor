@@ -1,0 +1,14 @@
+@{
+    var sankeyId = "sankey-container";
+    var linkTemplate = "<div style=\\\"padding:10px\\\"><b>${source.name} → ${target.name}</b><br/>Value: ${value}</div>";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true)
+        .LinkTemplate("<div style=\"padding:10px\"><b>${source.name} → ${target.name}</b><br/>Value: ${value}</div>")
+    )
+    .Render()

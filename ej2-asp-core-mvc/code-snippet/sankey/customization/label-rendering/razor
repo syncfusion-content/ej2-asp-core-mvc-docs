@@ -1,0 +1,27 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .LabelRendering("onSankeyLabelRendering")
+    .Render()
+
+<script>
+    // Mirrors React's labelRendering customization
+    function onSankeyLabelRendering(args) {
+        // Assign label style during render
+        args.labelStyle = {
+            fontFamily: 'Arial',
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '12px',
+            color: '#000'
+        };
+    }
+</script>

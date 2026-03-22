@@ -1,0 +1,25 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px" title="Energy Flow Diagram" subTitle="Agricultural Energy Conversion">
+    <!-- Title/SubTitle styles -->
+    <e-sankey-titlestyle textAlignment="Near"></e-sankey-titlestyle>
+    <e-sankey-subtitlestyle textAlignment="Center"></e-sankey-subtitlestyle>
+
+    <!-- Nodes -->
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+
+    <!-- Links -->
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+
+    <!-- Tooltip & Legend (from React Inject) -->
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
+</ejs-sankey>
