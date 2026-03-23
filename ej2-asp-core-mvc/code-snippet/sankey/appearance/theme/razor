@@ -1,0 +1,20 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Load("onSankeyLoad")
+    .Render()
+
+<script>
+    function onSankeyLoad(args) {
+        // Match React: theme="Tailwind"
+        args.sankey.theme = 'Tailwind';
+    }
+</script>

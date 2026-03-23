@@ -1,0 +1,26 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+<!-- Export button (custom filename like React) -->
+<button type="button" style="margin-bottom:10px;" onclick="exportCustomSankey()">Export with Custom Options</button>
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()
+
+<script>
+    function exportCustomSankey() {
+        var el = document.getElementById('@sankeyId');
+        var inst = el && el.ej2_instances ? el.ej2_instances[0] : null;
+        if (inst && typeof inst.export === 'function') {
+            // Matches React: sankeyRef.current.export('PNG', 'CustomSankey');
+            inst.export('PNG', 'CustomSankey');
+        }
+    }
+</script>

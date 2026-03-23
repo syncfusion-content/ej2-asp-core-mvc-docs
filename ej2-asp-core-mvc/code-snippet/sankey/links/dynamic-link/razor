@@ -1,0 +1,27 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .LinkRendering("onSankeyLinkRendering")
+    .Render()
+
+<script>
+    // Mirrors React's linkRendering behavior
+    function onSankeyLinkRendering(args) {
+        var link = args.link || args.data || {};
+        var src = link.sourceId, tgt = link.targetId;
+
+        if (src === 'Bio-conversion' && tgt === 'Heat') {
+            args.fill = '#FF6B6B';
+        } else {
+            args.fill = '#599dbd';
+        }
+    }
+</script>
