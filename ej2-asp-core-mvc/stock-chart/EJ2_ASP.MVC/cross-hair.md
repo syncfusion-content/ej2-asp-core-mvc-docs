@@ -118,7 +118,7 @@ The event arguments include:
 {% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/tagHelper %}
 {% endhighlight %}
 
-{% highlight c# tabtitle="CrosshairLabelRender.cs" %}
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
 {% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
 {% endhighlight %}
 
@@ -132,7 +132,7 @@ The event arguments include:
 {% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/razor %}
 {% endhighlight %}
 
-{% highlight c# tabtitle="CrosshairLabelRender.cs" %}
+{% highlight c# tabtitle="Crosshair-label-render.cs" %}
 {% include code-snippet/stock-chart/user-interaction/crosshair-trackball/crosshair-label-render/crosshair-label-render.cs %}
 {% endhighlight %}
 

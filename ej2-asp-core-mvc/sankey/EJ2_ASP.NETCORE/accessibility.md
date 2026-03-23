@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/accessibility.md -->
-
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Sankey Chart Component
@@ -77,4 +75,4 @@ The accessibility compliance of the Sankey Chart component is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)
