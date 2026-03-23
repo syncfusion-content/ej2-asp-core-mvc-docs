@@ -14,15 +14,31 @@ documentation: ug
 
 You can use the [prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Prompt) property to define the prompt text for the Inline AI Assist control.
 
-## Setting prompt placeholder
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-assist/prompt/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
 
-You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Placeholder) property to set the placeholder text for the prompt textarea. The default value is `Ask or generate AI content..`.
+![Prompt](./../images/prompt.png)
 
 ## Prompt-response collection
 
 You can use the [prompts](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Prompts) property to retrieve the responses for the associated prompts.
 
 > The `prompts` collection stores all the prompts and responses generated.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-assist/prompts/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Prompts](./../images/prompts.png)
+
+## Setting prompt placeholder
+
+You can use the [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Placeholder) property to set the placeholder text for the prompt textarea. The default value is `Ask or generate AI content..`.
 
 ## Setting z-index
 
@@ -39,3 +55,13 @@ You can use the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 ## cssClass
 
 You can customize the appearance of the Inline AI Assist control by using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_CssClass) property.
+
+The below example shows the usecase of the properties such as `Placeholder`, `Zindex`, `PopupWidth`, `PopupHeight` and `CssClass`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-assist/inline-assist/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Inline-Assist](./../images/inline-assist.png)

@@ -14,9 +14,25 @@ documentation: ug
 
 You can use the `addResponse` public method to add the response to the Inline AI Assist.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/methods/add-response/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![AddResponse](./../images/add-response.png)
+
 ## Executing prompt
 
 You can use the `executePrompt` method to execute the prompts dynamically in the Inline AI Assist. It accepts prompts as string values, which triggers the `promptRequest` event and performs the callback actions.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/methods/execute-prompt/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ExecutePrompt](./../images/execute-prompt.png)
 
 ## Showing popup
 
@@ -26,6 +42,14 @@ You can use `showPopup` method to open the Inline AI Assist popup and optionally
 
 You can use `hidePopup` method to close the Inline AI Assist popup.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-componentpopup/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show-hide-componentpopup](./../images/show-hide-componentpopup.png)
+
 ## Showing command popup
 
 Use `showCommandPopup` to open the command action popup; it only opens when the Inline AI Assist popup is already opened.
@@ -33,3 +57,11 @@ Use `showCommandPopup` to open the command action popup; it only opens when the 
 ## Hiding command popup
 
 You can use `hideCommandPopup` to close the command action popup in the Inline AI Assist control.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/methods/show-hide-commandpopup/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Show-hide-commandpopup](./../images/show-hide-commandpopup.png)
