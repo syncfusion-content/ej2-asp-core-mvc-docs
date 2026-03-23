@@ -62,7 +62,15 @@ You can use the `cssClass` property to customize the toolbar item.
 
 You can change the alignment of toolbar item by using the `align` property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
 
-In the following example, toolbar item type is set with `Right`.
+The following example demonstrates the `inlineToolbarSettings` configuration with items
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-settings/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![InlineToolbarSettings](./../images/toolbar-settings.png)
 
 ### Enabling tab key navigation in toolbar
 
@@ -130,6 +138,14 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 You can use the `template` property to add custom toolbar item in the Inline AI Assist.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Tempalte](./../images/toolbar-template.png)
+
 ## Toolbar positioning
 
 You can use the `toolbarPosition` property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
@@ -139,3 +155,13 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 ## Item click
 
 The [itemClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistInlineToolbarSettings_ItemClick) event is triggered when the inline toolbar item is clicked.
+
+The below example demonstrates the `ToolbarPosition` and `ItemClick` properties
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ToolbarPosition](./../images/toolbar-position.png)
