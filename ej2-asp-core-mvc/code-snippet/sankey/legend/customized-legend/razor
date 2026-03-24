@@ -1,0 +1,25 @@
+@{
+    // Mirror React's id="sankey-container"
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l
+        .Visible(true)
+        .Position(Syncfusion.EJ2.Charts.LegendPosition.Right)
+        .Background("#f5f5f5")
+        .ItemPadding(12)
+        .Border(b => b.Width(2).Color("#333"))
+        .TextStyle(ts => ts
+            .FontFamily("Segoe UI")
+            .FontStyle("Normal")
+            .FontWeight("500")
+            .Size("13px")
+        )
+    )
+    .Render()

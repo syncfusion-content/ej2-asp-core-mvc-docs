@@ -1,0 +1,25 @@
+@{
+    var sankeyId = "sankey-container";
+}
+
+<!-- Print button (mirrors React's handlePrint) -->
+<button type="button" style="margin-bottom:10px;" onclick="printSankey()">Print</button>
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()
+
+<script>
+    function printSankey() {
+        var el = document.getElementById('@sankeyId');
+        var inst = el && el.ej2_instances ? el.ej2_instances[0] : null;
+        if (inst && typeof inst.print === 'function') {
+            inst.print();
+        }
+    }
+</script>

@@ -1,0 +1,34 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px" linkRendering="onSankeyLinkRendering">
+    <!-- Nodes -->
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+
+    <!-- Links -->
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+
+    <!-- Services from React inject -->
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
+</ejs-sankey>
+
+<script>
+    function onSankeyLinkRendering(args) {
+        var link = args.link || args.data || {};
+        var src = link.sourceId, tgt = link.targetId;
+
+        if (src === 'Bio-conversion' && tgt === 'Heat') {
+            args.fill = '#FF6B6B';
+        } else {
+            args.fill = '#599dbd';
+        }
+    }
+</script>

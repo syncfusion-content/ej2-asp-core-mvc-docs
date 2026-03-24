@@ -1,0 +1,13 @@
+@{
+    // Use the container id from React sample
+    var sankeyId = "sankey-container";
+}
+
+@Html.EJS().Sankey(sankeyId)
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Right))
+    .Render()

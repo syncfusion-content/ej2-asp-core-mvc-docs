@@ -1,0 +1,51 @@
+public ActionResult Index()
+{
+    var nodes = new List<SankeyNode>
+    {
+        new SankeyNode { Id = "Agricultural Waste" },
+        new SankeyNode { Id = "Biomass Residues" },
+        new SankeyNode { Id = "Bio-conversion" },
+        new SankeyNode { Id = "Liquid Biofuel" },
+        new SankeyNode { Id = "Electricity" },
+        new SankeyNode { Id = "Heat" }
+    };
+
+    var links = new List<SankeyLink>
+    {
+        new SankeyLink { SourceId = "Agricultural Waste", TargetId = "Bio-conversion", Value = 84.152 },
+        new SankeyLink { SourceId = "Biomass Residues",   TargetId = "Bio-conversion", Value = 24.152 },
+        new SankeyLink { SourceId = "Bio-conversion",     TargetId = "Liquid Biofuel", Value = 10.597 },
+        new SankeyLink { SourceId = "Bio-conversion",     TargetId = "Electricity",    Value = 36.862 },
+        new SankeyLink { SourceId = "Bio-conversion",     TargetId = "Heat",           Value = 60.845 }
+    };
+
+    ViewBag.SankeyNodes = nodes;
+    ViewBag.SankeyLinks = links;
+
+    // Title & Subtitle styles mapped from React
+    ViewBag.TitleFontFamily = "Arial";
+    ViewBag.TitleFontStyle = "italic";
+    ViewBag.TitleFontWeight = "bold";
+    ViewBag.TitleSize = "18px";
+    ViewBag.TitleColor = "#1F77B4";
+
+    ViewBag.SubTitleFontFamily = "Arial";
+    ViewBag.SubTitleFontStyle = "normal";
+    ViewBag.SubTitleFontWeight = "normal";
+    ViewBag.SubTitleSize = "14px";
+    ViewBag.SubTitleColor = "#FF7F0E";
+
+    return View();
+}
+
+public class SankeyNode
+{
+    public string Id { get; set; }
+}
+
+public class SankeyLink
+{
+    public string SourceId { get; set; }
+    public string TargetId { get; set; }
+    public double Value { get; set; }
+}
