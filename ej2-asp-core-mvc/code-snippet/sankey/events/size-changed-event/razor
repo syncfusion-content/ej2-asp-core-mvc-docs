@@ -1,0 +1,18 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(tooltip => tooltip.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .SizeChanged("onSizeChanged")
+    .Render()
+
+<script>
+    function onSizeChanged(args) {
+        console.log('Chart size changed:', {
+            width: args.currentSize.width,
+            height: args.currentSize.height
+        });
+    }
+</script>
