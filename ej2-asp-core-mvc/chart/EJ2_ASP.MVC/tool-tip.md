@@ -197,13 +197,6 @@ The split tooltip displays a separate tooltip for each series at the same data p
 
 Enable this feature by setting the `split` property to **true**:
 
-```jsx
-tooltip: { 
-    enable: true, 
-    split: true 
-}
-```
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -233,13 +226,6 @@ The follow pointer feature enables the tooltip to follow the mouse cursor or tou
 
 Enable this feature by setting the `followPointer` property to **true**:
 
-```jsx
-tooltip: { 
-    enable: true, 
-    followPointer: true 
-}
-```
-
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
@@ -268,13 +254,6 @@ tooltip: {
 The tooltip distance property controls the spacing between the tooltip and the mouse pointer or target data point. This prevents the tooltip from overlapping with the cursor or nearby chart elements, improving readability.
 
 Set the `distance` property to specify the gap in pixels:
-
-```jsx
-tooltip: { 
-    enable: true, 
-    distance: 25 
-}
-```
 
 {% if page.publishingplatform == "aspnet-core" %}
 

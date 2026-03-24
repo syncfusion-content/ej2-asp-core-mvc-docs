@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/customization.md -->
-
 ---
 layout: post
 title: Customization in ##Platform_Name## Sankey Chart Component
@@ -29,7 +27,9 @@ The Sankey Chart supports multiple levels of styling customization:
 
 ### Global Node Styling
 
-Apply consistent styling to all nodes using the `nodeStyle` property:
+Apply consistent styling to all nodes using the `NodeStyle` property:
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -40,9 +40,24 @@ Apply consistent styling to all nodes using the `nodeStyle` property:
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/global-node/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Global-node.cs" %}
+{% include code-snippet/sankey/customization/global-node/global-node.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ### Global Link Styling
 
-Configure link appearance using the `linkStyle` property:
+Configure link appearance using the `LinkStyle` property:
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -53,11 +68,26 @@ Configure link appearance using the `linkStyle` property:
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/global-link/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Global-link.cs" %}
+{% include code-snippet/sankey/customization/global-link/global-link.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Individual Element Customization
 
 ### Custom Node Appearance
 
 Customize individual nodes by setting properties on each node object:
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -68,9 +98,24 @@ Customize individual nodes by setting properties on each node object:
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/custom-node-appearance/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-node-appearance.cs" %}
+{% include code-snippet/sankey/customization/custom-node-appearance/custom-node-appearance.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ### Custom Node Labels
 
 Customize individual node labels with specific text, styling, and positioning:
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -80,6 +125,19 @@ Customize individual node labels with specific text, styling, and positioning:
 {% include code-snippet/sankey/customization/custom-node-labels/custom-node-labels.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/custom-node-labels/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-node-labels.cs" %}
+{% include code-snippet/sankey/customization/custom-node-labels/custom-node-labels.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Color Customization
 
@@ -99,6 +157,8 @@ const nodes = [
 
 Map colors to specific categories or value ranges:
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/customization/color-mapping/tagHelper %}
@@ -107,6 +167,19 @@ Map colors to specific categories or value ranges:
 {% include code-snippet/sankey/customization/color-mapping/color-mapping.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/color-mapping/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Color-mapping.cs" %}
+{% include code-snippet/sankey/customization/color-mapping/color-mapping.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Theme Customization
 
@@ -124,6 +197,187 @@ return (
 );
 ```
 
+### Custom Theme Colors
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/custom-theme/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-theme.cs" %}
+{% include code-snippet/sankey/customization/custom-theme/custom-theme.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/custom-theme/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-theme.cs" %}
+{% include code-snippet/sankey/customization/custom-theme/custom-theme.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## Tooltip Customization
+
+### Template-Based Tooltips
+
+Create custom tooltip templates for rich content:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/template-tooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-tooltip.cs" %}
+{% include code-snippet/sankey/customization/template-tooltip/template-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/template-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Template-tooltip.cs" %}
+{% include code-snippet/sankey/customization/template-tooltip/template-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Advanced Customization Patterns
 
-... (content preserved)
+### Conditional Styling Based on Data
+
+Apply different styles based on data conditions or value ranges:
+
+```typescript
+const onNodeRendering = (args) => {
+  const value = args.node.value || 0;
+  
+  if (value > 200) {
+    args.node.color = '#00A651'; // High flow - green
+  } else if (value > 100) {
+    args.node.color = '#FFB81C'; // Medium flow - orange
+  } else {
+    args.node.color = '#E81B23'; // Low flow - red
+  }
+};
+```
+
+### Category-Based Styling
+
+Assign colors and styles based on node categories:
+
+```typescript
+const categoryColors = {
+  'Energy': '#FF6B6B',
+  'Transport': '#4ECDC4',
+  'Industry': '#95E1D3',
+  'Residential': '#FFD93D'
+};
+
+const onNodeRendering = (args) => {
+  const category = extractCategory(args.node.id);
+  args.node.color = categoryColors[category] || '#999';
+};
+```
+
+### Interactive Styling
+
+Apply different styles for hover and focus states:
+
+```typescript
+const onNodeEnter = (args) => {
+  // Highlight node on hover
+  args.node.highlightOpacity = 1;
+};
+
+const onNodeLeave = (args) => {
+  // Reset to normal state
+  args.node.highlightOpacity = 0.3;
+};
+```
+
+## Performance Optimization
+
+### Large Dataset Customization
+
+For charts with many nodes and links, optimize rendering performance:
+
+1. **Use Global Styles**: Apply global `NodeStyle` and `LinkStyle` instead of individual customization
+2. **Minimize Calculations**: Reduce complex calculations in rendering events
+3. **Conditional Rendering**: Only customize visible elements in viewport
+4. **Cache Results**: Cache computed styles and colors
+
+## Customization Best Practices
+
+### Key Considerations
+
+1. **Consistency**
+   - Maintain consistent color schemes across nodes and links
+   - Use meaningful colors that represent data categories
+   - Apply visual hierarchy through size and opacity
+
+2. **Performance**
+   - Avoid complex calculations in rendering events
+   - Use global styles when possible
+   - Optimize for large datasets
+
+3. **Accessibility**
+   - Don't rely solely on color for information
+   - Ensure sufficient contrast ratios
+   - Provide alternative representations
+
+4. **User Experience**
+   - Use intuitive color mapping
+   - Provide clear visual feedback for interactions
+   - Maintain visual consistency with your application
+
+5. **Maintainability**
+   - Document custom styling logic
+   - Use reusable style functions
+   - Separate styling from business logic
+
+## Example: Comprehensive Customization
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/comprehensive-customization/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comprehensive-customization.cs" %}
+{% include code-snippet/sankey/customization/comprehensive-customization/comprehensive-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/customization/comprehensive-customization/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Comprehensive-customization.cs" %}
+{% include code-snippet/sankey/customization/comprehensive-customization/comprehensive-customization.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## Related Topics
+
+- [Appearance](appearance.md)
+- [Nodes](nodes.md)
+- [Links](links.md)
+- [Labels](labels.md)
+- [Legend](legend.md)
+- [Events](events.md)

@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/tool-tip.md -->
-
 ---
 layout: post
 title: ToolTip in ##Platform_Name## Sankey Chart Component
@@ -12,7 +10,7 @@ documentation: ug
 
 # ToolTip in ##Platform_Name## Sankey Chart component
 
-The Sankey Chart provides tooltips that surface contextual details for hovered elements without cluttering the diagram. Tooltips display additional information when users hover over nodes or links in the Sankey Chart. You can enable and customize tooltips using the `tooltip` property.
+The Sankey Chart provides tooltips that surface contextual details for hovered elements without cluttering the diagram. Tooltips display additional information when users hover over nodes or links in the Sankey Chart. You can enable and customize tooltips using the `Tooltip` property.
 
 This guide outlines how to enable and customize tooltips in the ASP.NET Core Sankey Chart.
 
@@ -37,6 +35,8 @@ The following table lists the main tooltip configuration properties:
 
 Enable tooltips with default formatting:
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/tooltip/basic-tooltip/tagHelper %}
@@ -45,6 +45,19 @@ Enable tooltips with default formatting:
 {% include code-snippet/sankey/tooltip/basic-tooltip/basic-tooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/basic-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Basic-tooltip.cs" %}
+{% include code-snippet/sankey/tooltip/basic-tooltip/basic-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Customizing Tooltip Appearance
 
@@ -58,6 +71,10 @@ Adjust tooltip appearance and behavior using tooltip configuration properties:
 - **Duration**: Animation duration in milliseconds. The default value is 300.
 - **FadeOutDuration**: Fade-out duration in milliseconds. The default value is 1000.
 
+Example customization:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/tooltip/customized-tooltip/tagHelper %}
@@ -67,6 +84,110 @@ Adjust tooltip appearance and behavior using tooltip configuration properties:
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/customized-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Customized-tooltip.cs" %}
+{% include code-snippet/sankey/tooltip/customized-tooltip/customized-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Format Strings
 
-... (content preserved)
+Format strings provide a simple way to customize tooltip content without requiring custom templates.
+
+### Node Tooltip Format
+
+Format string placeholders for node tooltips:
+
+- `$name` - Node name/label
+- `$value` - Node value (sum of incoming links)
+
+### Link Tooltip Format
+
+Format string placeholders for link tooltips:
+
+- `$start.name` - Source node name
+- `$start.value` - Source node value
+- `$target.name` - Target node name
+- `$target.value` - Target node value
+- `$value` - Link value
+
+**Example with custom format strings:**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/link-tooltip/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Link-tooltip.cs" %}
+{% include code-snippet/sankey/tooltip/link-tooltip/link-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/link-tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Link-tooltip.cs" %}
+{% include code-snippet/sankey/tooltip/link-tooltip/link-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## Advanced Tooltip Configuration
+
+### Tooltip Rendering Event
+
+Use the `TooltipRendering` event to customize tooltip content dynamically and enable custom logic based on specific conditions:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/tooltip-rendering-event/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-rendering-event.cs" %}
+{% include code-snippet/sankey/tooltip/tooltip-rendering-event/tooltip-rendering-event.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/tooltip-rendering-event/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-rendering-event.cs" %}
+{% include code-snippet/sankey/tooltip/tooltip-rendering-event/tooltip-rendering-event.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## Disabling Tooltips
+
+To disable tooltips, set the `Enable` property to `false`:
+
+```typescript
+const tooltip = { enable: false };
+```
+
+## Key Considerations
+
+- **Keep Text Concise**: Keep tooltip text concise and readable.
+- **Ensure Contrast**: Ensure sufficient contrast for tooltip text and background.
+- **Use Format Strings**: Prefer `NodeFormat` and `LinkFormat` for simple content customization without requiring custom rendering logic.
+- **Animation Tuning**: Tune animation durations to balance responsiveness and polish.
+- **Performance**: Use format strings instead of complex rendering logic for better performance.
+- **Relevant Information**: Show only relevant and helpful information.
+- **Consistent Styling**: Maintain consistent tooltip styling across your application.
