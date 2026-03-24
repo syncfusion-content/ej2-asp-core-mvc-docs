@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Home Page";
+    var dataSource = ViewBag.DataSource;
+}
+
+<ejs-gantt id="GanttDefault" height="430px" dataSource="ViewBag.DataSource" projectStartDate="03/31/2019" projectEndDate="04/31/2019">
+    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentID">
+    </e-gantt-taskfields>
+    <e-gantt-timelinesettings viewStartDate="04/03/2019" viewEndDate="04/07/2019">
+    </e-gantt-timelinesettings>
+    <e-gantt-columns>
+        <e-gantt-column field="TaskID"></e-gantt-column>
+        <e-gantt-column field="TaskName"></e-gantt-column>
+        <e-gantt-column field="StartDate"></e-gantt-column>
+        <e-gantt-column field="Duration"></e-gantt-column>
+        <e-gantt-column field="Progress"></e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script></script>
