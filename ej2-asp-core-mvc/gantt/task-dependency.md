@@ -13,7 +13,14 @@ documentation: ug
 
 Task dependency or task relationship can be established between two tasks in Gantt. This dependency affects the project schedule. If you change the predecessor of a task, it will affect the successor task, which will affect the next task, and so on. Relationship can be established between parent-parent tasks, child-child tasks, parent-child and child-parent task.
 
-In Gantt, you can enable or disable the parent predecessor using [`AllowParentDependency`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Gantt.Gantt~AllowParentDependency.html) property.
+{% if page.publishingplatform == "aspnet-core" %}
+
+In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+In Gantt, you can enable or disable the parent predecessor using [AllowParentDependency](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.gantt.gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowParentDependency) property.
+
+{% endif %}
 
 By default, the `AllowParentDependency` property will be `true`.
 
@@ -111,11 +118,40 @@ You can define an offset with various offset duration units for predecessors by 
 {% endtabs %}
 {% endif %}
 
-
-
 The following screen shot depicts the duration unit support in the predecessor offset.
 
 ![Alt text](images/predecessorWithOffset.png)
+
+## Predecessor offset synchronization on initial load
+
+The [autoUpdatePredecessorOffset](https://ej2.syncfusion.com/react/documentation/api/gantt/index-default#autoupdatepredecessoroffset) property specifies whether the Gantt Chart automatically adjusts and synchronizes the predecessor offset values (e.g., "+2", "-1d") in the predecessor column display and the underlying data during initial data load/binding, so they match the actually rendered taskbar positions and dependency lines.
+
+- When **enabled**: During the initial data binding/load, the Gantt recalculates the offset portions of predecessor strings based on the final rendered dates after applying calendar rules, weekends, holidays, and working times. The predecessor column in the grid and the corresponding data field values are updated to reflect these accurate offsets - preventing visual or data mismatch between what is displayed and what was actually used for rendering dependency lines - without affecting task dates, durations, or triggering any scheduling/validation logic.
+
+- When **disabled**: The predecessor column displays exactly the offset values provided in the original data source, even if they no longer match the rendered dependency lines due to calendar adjustments. This can result in visual inconsistencies where the grid shows one offset (e.g., "5FS+0") while the drawn arrow connects tasks with a different effective offset (e.g., equivalent to +2 due to non-working days). No automatic correction occurs during load.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/predecessor-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="predecessor.cs" %}
+{% include code-snippet/gantt/predecessor/predecessor-cs1/predecessor.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/predecessor/predecessor-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="predecessor.cs" %}
+{% include code-snippet/gantt/predecessor/predecessor-cs1/predecessor.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## Disabling automatic dependency offset updates
 
@@ -154,11 +190,11 @@ In Gantt, task relationship link can be broken by editing the start date, end da
 
 When the task relationship link is broken on any edit action, then the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionBegin) event will be triggered with `requestType` argument as `validateLinkedTask`. You can validate the editing action within the actionBegin event using the `validateMode` event argument. The `validateMode` event argument has the following properties:
 
-|Argument |Default value |Description|
-|-----|-----|-----|
-|args.validateMode.respectLink | false | In this validation mode, the predecessor links get high priority. With this mode enabled, when the successor task is moved before the predecessor task’s end date, the editing will be reverted, and dates will be validated based on the dependency links.|
-|args.validateMode.removeLink | false | In this validation mode, the taskbar editing gets high priority. For inappropriate task dates, the dependency links will be removed and tasks will be moved to the edited date.|
-|args.validateMode.preserveLinkWithEditing | true | In this validation mode, the taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating the offset value of predecessors.|
+| Argument                                  | Default value | Description                                                                                                                                                                                                                                                 |
+| ----------------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| args.validateMode.respectLink             | false         | In this validation mode, the predecessor links get high priority. With this mode enabled, when the successor task is moved before the predecessor task’s end date, the editing will be reverted, and dates will be validated based on the dependency links. |
+| args.validateMode.removeLink              | false         | In this validation mode, the taskbar editing gets high priority. For inappropriate task dates, the dependency links will be removed and tasks will be moved to the edited date.                                                                             |
+| args.validateMode.preserveLinkWithEditing | true          | In this validation mode, the taskbar editing will be considered along with the dependency links. This relationship will be maintained by updating the offset value of predecessors.                                                                         |
 
 By default, the `preserveLinkWithEditing` validation mode will be enabled, so the predecessors are updated with offset values.
 
