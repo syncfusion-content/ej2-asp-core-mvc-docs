@@ -60,7 +60,7 @@ You can use markdown syntax like **bold**, *italic*, headings, lists, code block
 {% endhighlight %}
 {% endtabs %}
 
-![Markdown Response](./../images/markdown-prompt.png)
+![Markdown Response](images/markdown-prompt.png)
 
 ## Adding prompt suggestions
 
@@ -132,4 +132,4 @@ You can use the [enableScrollToBottom](https://help.syncfusion.com/cr/aspnetcore
 {% endhighlight %}
 {% endtabs %}
 
-![EnableScrollToBottom](./../images/scroll-to-bottom.png)
+![EnableScrollToBottom](images/scroll-to-bottom.png)

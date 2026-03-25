@@ -20,7 +20,7 @@ You can use the [prompt](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Prompt](./../images/prompt.png)
+![Prompt](images/prompt.png)
 
 ## Prompt-response collection
 
@@ -34,7 +34,7 @@ You can use the [prompts](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![Prompts](./../images/prompts.png)
+![Prompts](images/prompts.png)
 
 ## Setting prompt placeholder
 
@@ -64,4 +64,4 @@ The below example shows the usecase of the properties such as `Placeholder`, `Zi
 {% endhighlight %}
 {% endtabs %}
 
-![Inline-Assist](./../images/inline-assist.png)
+![Inline-Assist](images/inline-assist.png)

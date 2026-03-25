@@ -115,7 +115,7 @@ By default, the `isChecked` property is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-![Block isChecked](./../../images/block-ischecked.png)
+![Block isChecked](../images/block-ischecked.png)
 
 ### Configure placeholder
 
@@ -142,4 +142,4 @@ Below example illustrates how to render the different types of list blocks in th
 {% endhighlight %}
 {% endtabs %}
 
-![List Block](./../../images/block-list.png)
+![List Block](../images/block-list.png)

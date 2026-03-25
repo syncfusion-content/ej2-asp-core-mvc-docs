@@ -49,4 +49,4 @@ Below example illustrates how to render the different code block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Code Block](./../../images/block-code.png)
+![Code Block](../images/block-code.png)

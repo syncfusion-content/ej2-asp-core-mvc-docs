@@ -77,7 +77,7 @@ The below sample demonstrates the configuration of [CollapsibleParagraph](https:
 {% endhighlight %}
 {% endtabs %}
 
-![Toggle Block](./../../images/block-toggle.png)
+![Toggle Block](../images/block-toggle.png)
 
 ### Configure placeholder
 
@@ -146,7 +146,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Quote Block](./../../images/block-quote.png)
+![Quote Block](../images/block-quote.png)
 
 ## Configure callout block
 
@@ -188,4 +188,4 @@ The below sample demonstrates the configuration of callout block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Callout Block](./../../images/block-callout.png)
+![Callout Block](../images/block-callout.png)

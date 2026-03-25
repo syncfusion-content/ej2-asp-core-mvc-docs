@@ -101,7 +101,7 @@ You can use the [relateTo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 {% endhighlight %}
 {% endtabs %}
 
-![RelateTo](./../images/relateTo.png)
+![RelateTo](images/relateTo.png)
 
 ## Configure target property
 
@@ -113,7 +113,7 @@ The [target](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Intera
 {% endhighlight %}
 {% endtabs %}
 
-![Target](./../images/target.png)
+![Target](images/target.png)
 
 ## Response display modes
 
@@ -125,4 +125,4 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseMode](./../images/response-mode.png)
+![ResponseMode](images/response-mode.png)

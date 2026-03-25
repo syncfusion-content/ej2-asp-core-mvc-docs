@@ -61,4 +61,4 @@ The below example demonstrates the `ResponseSettings` property
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseSettings](./../images/response-settings.png)
+![ResponseSettings](images/response-settings.png)
