@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes in ##Platform_Name## Sankey Chart Component
+title: Nodes in Syncfusion ##Platform_Name## Sankey Chart Component
 description: Learn here all about Nodes in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nodes
