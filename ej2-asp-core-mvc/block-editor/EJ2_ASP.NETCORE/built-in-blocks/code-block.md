@@ -49,4 +49,4 @@ Below example illustrates how to render the code block in the Block Editor.
 {% endhighlight %}
 {% endtabs %}
 
-![Code Block](./../../images/block-code.png)
+![Code Block](../images/block-code.png)

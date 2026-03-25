@@ -45,7 +45,7 @@ The below sample demonstrates the configuration of paragraph block in the Block 
 {% endhighlight %}
 {% endtabs %}
 
-![Paragraph Block](./../../images/block-paragraph.png)
+![Paragraph Block](../images/block-paragraph.png)
 
 ### Configure placeholder
 
@@ -72,7 +72,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Block placeholder](./../../images/block-placeholder.png)
+![Block placeholder](../images/block-placeholder.png)
 
 ## Configure heading block
 
@@ -109,7 +109,7 @@ The below sample demonstrates the configuration of heading block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Heading Block](./../../images/block-heading.png)
+![Heading Block](../images/block-heading.png)
 
 ### Configure placeholder
 
@@ -149,4 +149,4 @@ The below sample demonstrates the configuration of divider block in the Block Ed
 {% endhighlight %}
 {% endtabs %}
 
-![Divider Block](./../../images/block-divider.png)
+![Divider Block](../images/block-divider.png)

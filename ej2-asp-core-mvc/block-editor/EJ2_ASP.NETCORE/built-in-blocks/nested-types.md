@@ -77,7 +77,7 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 {% endhighlight %}
 {% endtabs %}
 
-![Toggle Block](./../../images/block-toggle.png)
+![Toggle Block](../images/block-toggle.png)
 
 ### Configure placeholder
 

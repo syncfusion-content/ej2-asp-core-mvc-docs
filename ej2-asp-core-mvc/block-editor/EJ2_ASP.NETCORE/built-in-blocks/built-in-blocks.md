@@ -55,7 +55,7 @@ By default, the `indent` property is set to `0`.
 {% endhighlight %}
 {% endtabs %}
 
-![Block Indent](./../../images/block-indent.png)
+![Block Indent](../images/block-indent.png)
 
 ## Configure CSS Class
 
@@ -72,7 +72,7 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 {% endhighlight %}
 {% endtabs %}
 
-![Block cssClass](./../../images/block-cssClass.png)
+![Block cssClass](../images/block-cssClass.png)
 
 ## Configure templates
 
@@ -87,4 +87,4 @@ The Block Editor allows you to use custom templates for specialized content usin
 {% endhighlight %}
 {% endtabs %}
 
-![Template Block](./../../images/block-template.png)
+![Template Block](../images/block-template.png)

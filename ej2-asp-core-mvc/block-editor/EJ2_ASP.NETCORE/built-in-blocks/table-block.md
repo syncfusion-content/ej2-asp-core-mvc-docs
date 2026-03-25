@@ -37,7 +37,7 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Table Block](./../../images/block-table.png)
+![Table Block](../images/block-table.png)
 
 ### Table resizing
 
@@ -58,4 +58,4 @@ This sample demonstrates the `Table` block multiple row and column selection and
 {% endhighlight %}
 {% endtabs %}
 
-![Table Block](./../../images/table-resize.png)
+![Table Block](../images/table-resize.png)

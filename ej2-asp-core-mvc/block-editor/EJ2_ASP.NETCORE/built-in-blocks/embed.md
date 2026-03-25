@@ -128,7 +128,7 @@ The below sample demonstrates the configuration of image block in the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![Image Block](./../../images/block-image.png)
+![Image Block](../images/block-image.png)
 
 ## Uploading images from local machine
 
@@ -149,7 +149,7 @@ Set the `imageBlockSettings.saveFormat` property to determine whether the image 
 {% endhighlight %}
 {% endtabs %}
 
-![Image Block Save](./../../images/block-image-save.png)
+![Image Block Save](../images/block-image-save.png)
 
 ### Secure image upload with authentication
 
@@ -164,7 +164,7 @@ You can add additional data with the image uploaded from the Block Editor on the
 {% endhighlight %}
 {% endtabs %}
 
-![Image Block Save](./../../images/block-image-save.png)
+![Image Block Save](../images/block-image-save.png)
 
 ## Inserting images from web URLs
 
@@ -174,4 +174,4 @@ To insert an image from an online source, render the `Image` block. Switch to th
 
 Block Editor has a built-in image inserting support. The resize points will be appearing on each corner of image when focus. So, users can resize the image using mouse points or thumb through the resize points easily. Also, the resize calculation will be done based on aspect ratio.
 
-![Image resize](./../../images/image-resize.png)
+![Image resize](../images/image-resize.png)
