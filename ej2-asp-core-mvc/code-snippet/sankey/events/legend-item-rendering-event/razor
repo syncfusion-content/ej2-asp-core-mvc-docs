@@ -1,8 +1,4 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -13,9 +9,7 @@
     .Render()
 
 <script>
-    // Mirrors React's legendItemRendering customization
     function onLegendItemRendering(args) {
-        // Customize legend item appearance and text
         if (args && args.text) {
             args.text = args.text.toUpperCase();
         }

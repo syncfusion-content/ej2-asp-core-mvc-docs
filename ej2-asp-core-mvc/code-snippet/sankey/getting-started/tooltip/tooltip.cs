@@ -1,6 +1,6 @@
 public ActionResult Index()
 {
-    var nodes = new List<SankeyNode>
+    List<SankeyNode> nodes = new List<SankeyNode>
     {
         new SankeyNode { Id = "Electricity Generation", Offset = -120 },
         new SankeyNode { Id = "Residential", Offset = 38 },
@@ -19,7 +19,7 @@ public ActionResult Index()
         new SankeyNode { Id = "Petroleum", Offset = -10 }
     };
 
-    var links = new List<SankeyLink>
+    List<SankeyLink> links = new List<SankeyLink>
     {
         // Generation inputs
         new SankeyLink { SourceId = "Solar", TargetId = "Electricity Generation", Value = 454.0 },
@@ -68,17 +68,4 @@ public ActionResult Index()
     ViewBag.SankeyLinks = links;
 
     return View();
-}
-
-public class SankeyNode
-{
-    public string Id { get; set; }
-    public double? Offset { get; set; }
-}
-
-public class SankeyLink
-{
-    public string SourceId { get; set; }
-    public string TargetId { get; set; }
-    public double Value { get; set; }
 }

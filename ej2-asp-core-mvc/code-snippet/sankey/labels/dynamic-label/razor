@@ -11,7 +11,6 @@
 
 <script>
     function onLabelRendering(args) {
-        // args.text is the label text (usually node id)
         if (args.text === 'Agricultural Waste') {
             args.labelStyle = {
                 fontWeight: 'bold',
@@ -21,6 +20,5 @@
                 fontStyle: 'normal'
             };
         }
-        // You can add more conditions for other nodes here
     }
 </script>

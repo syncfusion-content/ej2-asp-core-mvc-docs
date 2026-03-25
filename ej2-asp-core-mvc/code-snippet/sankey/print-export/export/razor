@@ -1,15 +1,10 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-<!-- Export buttons (match React UX) -->
 <div style="margin-bottom:10px;">
     <button type="button" style="margin-right:5px;" onclick="exportSankeyPNG()">Export PNG</button>
     <button type="button" style="margin-right:5px;" onclick="exportSankeyPDF()">Export PDF</button>
     <button type="button" onclick="exportSankeySVG()">Export SVG</button>
 </div>
 
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -20,7 +15,7 @@
 
 <script>
     function getSankeyInstance() {
-        var el = document.getElementById('@sankeyId');
+        var el = document.getElementById('sankey-container');
         return el && el.ej2_instances ? el.ej2_instances[0] : null;
     }
 

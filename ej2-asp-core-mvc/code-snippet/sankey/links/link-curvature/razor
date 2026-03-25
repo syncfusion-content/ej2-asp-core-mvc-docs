@@ -1,8 +1,4 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .LinkStyle(ls => ls.Curvature(0.5))
