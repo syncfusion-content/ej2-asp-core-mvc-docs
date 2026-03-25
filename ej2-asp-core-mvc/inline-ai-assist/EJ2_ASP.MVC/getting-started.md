@@ -92,10 +92,43 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can use the [RelateTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_RelateTo) property to position the Inline AI Assist relative to a specific DOM element. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/relateTo/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="relateTo.cs" %}
+{% include code-snippet/inline-ai-assist/relateTo/relateTo.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![RelateTo](./../images/relateTo.png)
+
 ## Configure target property
 
 The [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_Target) property specifies the element or CSS selector where the Inline AI Assist will be appended. It accepts either a CSS selector string (e.g., '.container' or '#id') or an HTMLElement.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/target/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="target.cs" %}
+{% include code-snippet/inline-ai-assist/target/target.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Target](./../images/target.png)
+
 ## Response display modes
 
 Responses can be shown in two modes: `Inline` (updates content in-place) and `Popup` (shows responses in a floating popup). Use the [ResponseMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_ResponseMode) property to choose the desired behavior.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/response-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="response-mode.cs" %}
+{% include code-snippet/inline-ai-assist/response-mode/response-mode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ResponseMode](./../images/response-mode.png)

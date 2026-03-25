@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/accessibility.md -->
-
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Sankey Chart Component

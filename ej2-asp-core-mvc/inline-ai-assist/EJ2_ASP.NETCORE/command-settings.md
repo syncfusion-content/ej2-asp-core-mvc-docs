@@ -55,3 +55,13 @@ Control the popup height with [PopupHeight](https://help.syncfusion.com/cr/aspne
 ## Configure item select
 
 The [itemSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistCommandSettings_ItemSelect) event is triggered when a command item is selected from the command popup in the Inline AI Assist control.
+
+The below sample demonstrates the `CommandSettings` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/command-settings/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![CommandSettings](./../images/command-settings.png)

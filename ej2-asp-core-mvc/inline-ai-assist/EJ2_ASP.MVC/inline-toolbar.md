@@ -16,8 +16,6 @@ You can render the inline toolbar items by using the [Items](https://help.syncfu
 
 By default, the inline toolbar renders the `send` item which allows users to send the prompt text.
 
-In the following example, Inline AI Assist component rendered with footer toolbar items such as `send` icon.
-
 ## Adding custom items
 
 You can use the `InlineToolbarSettings` property to add custom items for the inline toolbar in the Inline AI Assist. The custom items will be added with the existing built-in items in the inline toolbar.
@@ -62,7 +60,18 @@ You can use the `CssClass` property to customize the toolbar item.
 
 You can change the alignment of toolbar item by using the `Align` property. It supports three types of alignments such as `Left`, `Center` and `Right`. By default, the value is `Left`.
 
-In the following example, toolbar item type is set with `Right`.
+The following example demonstrates the `inlineToolbarSettings` configuration with items
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-settings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="toolbar-settings.cs" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-settings/toolbar-settings.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![InlineToolbarSettings](./../images/toolbar-settings.png)
 
 ### Enabling tab key navigation in toolbar
 
@@ -126,6 +135,17 @@ In this case, the user can switch between the two Toolbar items using the Tab an
 
 You can use the `Template` property to add custom toolbar item in the Inline AI Assist.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="template.cs" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/template/template.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Template](./../images/toolbar-template.png)
+
 ## Toolbar positioning
 
 You can use the `ToolbarPosition` property to customize footer toolbar position. It has two modes such as `Inline`, and `Bottom`. By default, the toolbarPosition is `Inline`.
@@ -135,3 +155,16 @@ By settings toolbarPosition as `Bottom`, footer items will be rendered at the bo
 ## Item click
 
 The [ItemClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistInlineToolbarSettings_ItemClick) event is triggered when the inline toolbar item is clicked.
+
+The below example demonstrates the `ToolbarPosition` and `ItemClick` properties
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="toolbar-position.cs" %}
+{% include code-snippet/inline-ai-assist/inline-toolbar/toolbar-position/toolbar-position.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ToolbarPosition](./../images/toolbar-position.png)

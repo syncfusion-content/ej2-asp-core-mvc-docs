@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/appearance.md -->
-
 ---
 layout: post
 title: Appearance in ##Platform_Name## Sankey Chart Component
@@ -18,7 +16,7 @@ This guide covers dimension configuration, responsive sizing, backgrounds, borde
 
 ## Dimensions
 
-Control the size of the Sankey Chart using the `width` and `height` properties. You can specify dimensions in pixels (px) or percentages (%) to create fixed or responsive layouts.
+Control the size of the Sankey Chart using the `Width` and `Height` properties. You can specify dimensions in pixels (px) or percentages (%) to create fixed or responsive layouts.
 
 ### Width and Height Properties
 
@@ -26,6 +24,8 @@ Control the size of the Sankey Chart using the `width` and `height` properties. 
 |----------|------|---------|-------------|
 | width | string | null | Width of the chart as a CSS value (e.g., '700px' or '100%'). |
 | height | string | null | Height of the chart as a CSS value (e.g., '420px' or '100%'). |
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -36,9 +36,24 @@ Control the size of the Sankey Chart using the `width` and `height` properties. 
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/width-height/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Width-height.cs" %}
+{% include code-snippet/sankey/appearance/width-height/width-height.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Responsive Sizing
 
 Use percentage-based dimensions for responsive layouts that adapt to container sizes. This is recommended for applications that need to work across different device sizes and screen orientations:
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -48,6 +63,19 @@ Use percentage-based dimensions for responsive layouts that adapt to container s
 {% include code-snippet/sankey/appearance/responsive-size/responsive-size.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/responsive-size/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Responsive-size.cs" %}
+{% include code-snippet/sankey/appearance/responsive-size/responsive-size.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Background Customization
 
@@ -60,6 +88,8 @@ Customize the background of the Sankey Chart with solid colors or background ima
 | background | string | null | Background color of the chart (CSS color value). |
 | backgroundImage | string | null | Background image URL. |
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/appearance/background/tagHelper %}
@@ -68,6 +98,19 @@ Customize the background of the Sankey Chart with solid colors or background ima
 {% include code-snippet/sankey/appearance/background/background.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/background/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Background.cs" %}
+{% include code-snippet/sankey/appearance/background/background.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Border Customization
 
@@ -82,6 +125,8 @@ Customize the border of the Sankey Chart container.
 | border.dashArray | string | '' | Sets the length of dashes in the stroke of border. |
 
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/appearance/border/tagHelper %}
@@ -90,6 +135,19 @@ Customize the border of the Sankey Chart container.
 {% include code-snippet/sankey/appearance/border/border.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/border/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Border.cs" %}
+{% include code-snippet/sankey/appearance/border/border.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
 
 ## Margin Customization
 
@@ -104,6 +162,8 @@ Control the spacing around the chart content using margins.
 | margin.top | number | 10 | Top margin in pixels. |
 | margin.bottom | number | 10 | Bottom margin in pixels. |
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/appearance/margin/tagHelper %}
@@ -113,11 +173,26 @@ Control the spacing around the chart content using margins.
 {% endhighlight %}
 {% endtabs %}
 
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/margin/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Margin.cs" %}
+{% include code-snippet/sankey/appearance/margin/margin.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
 ## Theme
 
-The Sankey Chart provides multiple built-in themes to customize the visual appearance. Apply a theme using the `theme` property.
+The Sankey Chart provides multiple built-in themes to customize the visual appearance. Apply a theme using the `Theme` property.
 
 ### Theme Configuration
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -127,3 +202,16 @@ The Sankey Chart provides multiple built-in themes to customize the visual appea
 {% include code-snippet/sankey/appearance/theme/theme.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/appearance/theme/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Theme.cs" %}
+{% include code-snippet/sankey/appearance/theme/theme.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}

@@ -1,5 +1,3 @@
-<!-- Converted from: sankey/EJ2_ASP.MVC/index.md -->
-
 ---
 layout: post
 title: Index in ##Platform_Name## Sankey Chart Component

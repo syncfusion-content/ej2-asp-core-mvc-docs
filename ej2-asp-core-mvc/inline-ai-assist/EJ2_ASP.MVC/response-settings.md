@@ -49,3 +49,16 @@ You can use the `Tooltip` property to specify the tooltip text to be displayed o
 ## Configure item select
 
 The [ItemSelect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistResponseSettings_ItemSelect) event is triggered when an item is selected from the response popup in the Inline AI Assist control.
+
+The below example demonstrates the `ResponseSettings` property
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/inline-ai-assist/response-settings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="response-settings.cs" %}
+{% include code-snippet/inline-ai-assist/response-settings/response-settings.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![ResponseSettings](./../images/response-settings.png)
