@@ -71,7 +71,7 @@ The following example demonstrates the `inlineToolbarSettings` configuration wit
 {% endhighlight %}
 {% endtabs %}
 
-![InlineToolbarSettings](./../images/toolbar-settings.png)
+![InlineToolbarSettings](images/toolbar-settings.png)
 
 ### Enabling tab key navigation in toolbar
 
@@ -144,7 +144,7 @@ You can use the `Template` property to add custom toolbar item in the Inline AI 
 {% endhighlight %}
 {% endtabs %}
 
-![Template](./../images/toolbar-template.png)
+![Template](images/toolbar-template.png)
 
 ## Toolbar positioning
 
@@ -167,4 +167,4 @@ The below example demonstrates the `ToolbarPosition` and `ItemClick` properties
 {% endhighlight %}
 {% endtabs %}
 
-![ToolbarPosition](./../images/toolbar-position.png)
+![ToolbarPosition](images/toolbar-position.png)
