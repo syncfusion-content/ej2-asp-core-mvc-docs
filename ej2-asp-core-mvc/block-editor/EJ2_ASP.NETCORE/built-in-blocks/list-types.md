@@ -11,11 +11,11 @@ domainurl: ##DomainURL##
 
 # Lists in ASP.NET Core Block Editor control
 
-List blocks in the Block Editor component are used to organize content into structured lists. You can render List blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [BulletList](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_BulletList), [NumberedList](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_NumberedList),, or [Checklist](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Checklist). Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
+List blocks in the Block Editor component are used to organize content into structured lists. You can render List blocks by setting the `blockType` property as `BulletList`, `NumberedList`, or `Checklist`. Bullet lists and numbered lists are ideal for unordered and ordered items, respectively, while checklist blocks enable interactive to-do lists with checkable items.
 
 ## Configure bullet list 
 
-You can render Bullet List block by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [BulletList](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_BulletList). This block type is used for unordered lists.
+You can render Bullet List block by setting the `blockType` property as `BulletList`. This block type is used for unordered lists.
 
 ### BlockType
 
@@ -48,7 +48,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ## Configure numbered list
 
-You can render Numbered List block by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as  [NumberedList](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_NumberedList),. This block type is used for ordered lists.
+You can render Numbered List block by setting the `blockType` property as  `NumberedList`. This block type is used for ordered lists.
 
 ### BlockType
 
@@ -81,7 +81,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ## Configure checklist
 
-You can render Check List block by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property property as [Checklist](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Checklist). This block type is used for creating interactive to-do lists.
+You can render Check List block by setting the `blockType` property property as `Checklist`. This block type is used for creating interactive to-do lists.
 
 ### BlockType
 
@@ -115,7 +115,7 @@ By default, the `isChecked` property is set to `false`.
 {% endhighlight %}
 {% endtabs %}
 
-![Block isChecked](./../../images/block-ischecked.png)
+![Block isChecked](../images/block-ischecked.png)
 
 ### Configure placeholder
 
@@ -142,4 +142,4 @@ Below example illustrates how to render the different types of list blocks in th
 {% endhighlight %}
 {% endtabs %}
 
-![List Block](./../../images/block-list.png)
+![List Block](../images/block-list.png)

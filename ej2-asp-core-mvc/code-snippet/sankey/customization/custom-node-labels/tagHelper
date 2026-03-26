@@ -1,16 +1,17 @@
-@Html.EJS().Sankey("sankey-container")
-    .Width("90%")
-    .Height("450px")
-    .LabelSettings(ls => ls.Visible(true)
-        .Font(f => 
-            f.FontFamily("Segoe UI")
-             .FontWeight("Bold")
-             .Size("14px")
-             .Color("#1a1a1a")
-        )
-    )
-    .Nodes(ViewBag.SankeyNodes)
-    .Links(ViewBag.SankeyLinks)
-    .Tooltip(t => t.Enable(true))
-    .LegendSettings(l => l.Visible(true))
-    .Render()
+<ejs-sankey id="sankey-container" width="90%" height="450px">
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
+    <e-sankey-labelsettings visible="true" fontFamily="Segoe UI" fontWeight="Bold" size="14px" color="#1a1a1a"></e-sankey-labelsettings>
+</ejs-sankey>

@@ -1,8 +1,4 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Title("Energy Flow Diagram")

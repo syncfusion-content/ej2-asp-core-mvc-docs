@@ -20,7 +20,7 @@ You can use the `addResponse` public method to add the response to the Inline AI
 {% endhighlight %}
 {% endtabs %}
 
-![AddResponse](./../images/add-response.png)
+![AddResponse](images/add-response.png)
 
 ## Executing prompt
 
@@ -32,7 +32,7 @@ You can use the `executePrompt` method to execute the prompts dynamically in the
 {% endhighlight %}
 {% endtabs %}
 
-![ExecutePrompt](./../images/execute-prompt.png)
+![ExecutePrompt](images/execute-prompt.png)
 
 ## Showing popup
 
@@ -48,7 +48,7 @@ You can use `hidePopup` method to close the Inline AI Assist popup.
 {% endhighlight %}
 {% endtabs %}
 
-![Show-hide-componentpopup](./../images/show-hide-componentpopup.png)
+![Show-hide-componentpopup](images/show-hide-componentpopup.png)
 
 ## Showing command popup
 
@@ -64,4 +64,4 @@ You can use `hideCommandPopup` to close the command action popup in the Inline A
 {% endhighlight %}
 {% endtabs %}
 
-![Show-hide-commandpopup](./../images/show-hide-commandpopup.png)
+![Show-hide-commandpopup](images/show-hide-commandpopup.png)

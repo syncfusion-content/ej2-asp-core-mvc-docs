@@ -25,7 +25,7 @@ You can use the [EditorTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 {% endhighlight %}
 {% endtabs %}
 
-![EditorTemplate](./../images/editor-template.png)
+![EditorTemplate](images/editor-template.png)
 
 ## Response template
 
@@ -40,4 +40,4 @@ You can use the [ResponseTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/
 {% endhighlight %}
 {% endtabs %}
 
-![EditorTemplate](./../images/response-template.png)
+![EditorTemplate](images/response-template.png)

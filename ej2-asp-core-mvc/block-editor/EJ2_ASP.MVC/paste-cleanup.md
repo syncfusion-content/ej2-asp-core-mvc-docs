@@ -59,7 +59,7 @@ Below example demonstrates the usage of paste settings that allows only specific
 {% endhighlight %}
 {% endtabs %}
 
-![Allowed Style](./../images/allowedStyles.png)
+![Allowed Style](images/allowedStyles.png)
 
 ## Disable Keep format
 
@@ -96,7 +96,7 @@ Below example demonstrates the usage of paste settings that disables the keep fo
 {% endhighlight %}
 {% endtabs %}
 
-![Plain Text](./../images/plainText.png)
+![Plain Text](images/plainText.png)
 
 ### Events
 

@@ -1,27 +1,21 @@
 <ejs-sankey id="sankey-container" width="90%" height="450px">
-    <!-- Nodes -->
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
             <e-sankey-node id="@node.Id"></e-sankey-node>
         }
     </e-sankey-nodes>
-
-    <!-- Links -->
     <e-sankey-links>
         @foreach (var link in ViewBag.SankeyLinks)
         {
             <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
         }
     </e-sankey-links>
-
-    <!-- Tooltip & Legend -->
     <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
     <e-sankey-legendsettings visible="true" position="Custom" height="150px" width="150px"></e-sankey-legendsettings>
 </ejs-sankey>
 
 <script>
-    // Set custom legend location at runtime to avoid guessing nested tag naming
     function onSankeyLoad(args) {
         if (args && args.chart && args.chart.legendSettings) {
             args.chart.legendSettings.position = 'Custom';

@@ -1,31 +1,20 @@
 <ejs-sankey id="sankey-container" width="90%" height="450px" title="Comprehensive Sankey Customization">
     <e-sankey-margin left="40" right="40" top="40" bottom="40"></e-sankey-margin>
-
-    <!-- Styles -->
     <e-sankey-nodesettings opacity="0.85"></e-sankey-nodesettings>
     <e-sankey-linksettings opacity="0.6" curvature="0.5"></e-sankey-linksettings>
-
-    <!-- Labels -->
     <e-sankey-labelsettings visible="true" fontWeight="Bold"></e-sankey-labelsettings>
-
-    <!-- Tooltip & Legend -->
     <e-sankey-tooltipsettings
         enable="true"
         nodeFormat="${name}: ${value}"
         linkFormat="${start.name}: ${start.out} → ${target.name}: ${target.in}">
     </e-sankey-tooltipsettings>
-
     <e-sankey-legendsettings visible="true" position="Bottom"></e-sankey-legendsettings>
-
-    <!-- Nodes -->
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
             <e-sankey-node id="@node.Id" color="@node.Color"></e-sankey-node>
         }
     </e-sankey-nodes>
-
-    <!-- Links -->
     <e-sankey-links>
         @foreach (var link in ViewBag.SankeyLinks)
         {

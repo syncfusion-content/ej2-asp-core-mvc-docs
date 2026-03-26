@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Sankey Chart Component
+title: Legend in Syncfusion ##Platform_Name## Sankey Chart Component
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -36,7 +36,8 @@ The `LegendSettings` property provides comprehensive options to configure legend
 | title | string | null | Title text for the legend. |
 | enableHighlight | boolean | true | Enables highlighting of related nodes/links when legend item is clicked. |
 | isInversed | boolean | false | Inverts the legend layout. |
-Enable the legend and configure its basic properties such as visibility, position, and sizing. By default, the legend is automatically positioned based on available space. |
+
+Enable the legend and configure its basic properties such as visibility, position, and sizing. By default, the legend is automatically positioned based on available space.
 
 ## Basic Legend Configuration
 

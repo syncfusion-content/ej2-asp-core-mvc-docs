@@ -1,8 +1,4 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -13,7 +9,6 @@
     .Render()
 
 <script>
-    // Mirrors React's nodeRendering logic to color nodes by id
     function onSankeyNodeRendering(args) {
         if (!args || !args.node) return;
 

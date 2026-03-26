@@ -1,25 +1,18 @@
 <ejs-sankey id="sankey-container" width="90%" height="450px">
-    <!-- Nodes -->
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
             <e-sankey-node id="@node.Id"></e-sankey-node>
         }
     </e-sankey-nodes>
-
-    <!-- Links -->
     <e-sankey-links>
         @foreach (var link in ViewBag.SankeyLinks)
         {
             <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
         }
     </e-sankey-links>
-
-    <!-- Tooltip (nodeFormat preserved with HTML content) -->
     <e-sankey-tooltipsettings enable="true"
                               nodeFormat="&lt;b&gt;${source.name} to ${target..name}&lt;/b&gt;&lt;br/&gt;Value: &lt;b&gt;${value}&lt;/b&gt;">
     </e-sankey-tooltipsettings>
-
-    <!-- Legend -->
     <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
 </ejs-sankey>
