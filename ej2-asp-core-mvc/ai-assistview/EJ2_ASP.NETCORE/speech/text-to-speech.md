@@ -19,7 +19,7 @@ Before integrating `Text-to-Speech`, ensure the following:
 1. The Syncfusion AI AssistView control is properly set up in your ASP.NET Core application.
     - [ASP.NET Core Getting Started Guide](../getting-started)
 
-2. The AI AssistView control is integrated with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai).
+2. The AI AssistView control is integrated with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
     - [Integration of Azure OpenAI With ASP.NET Core AI AssistView control](../ai-integrations/openai-integration)
 
 ## Configure Text-to-Speech

@@ -15,11 +15,11 @@ Block Editor supports addition of embeds to help you organize, showcase contents
 
 ## Adding an image block
 
-You can use the [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block to showcase an image content within your editor.
+You can use the `Image` block to showcase an image content within your editor.
 
 ### Configure image block
 
-You can render an [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
+You can render an `Image` block by setting the `blockType` property to `Image` in the block model. The `properties` property allows you to configure the image source, allowed file types, display dimensions, and more.
 
 #### Global image settings
 
@@ -90,7 +90,7 @@ public ActionResult Index()
 
 #### Configure image block properties
 
-The [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block `properties` property in the block model supports the following options:
+The `Image` block `properties` property in the block model supports the following options:
 
 | Property | Description | Default Value |
 |----------|-------------|---------------|
@@ -101,7 +101,7 @@ The [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEd
 
 ### Block type & properties
 
-The following example demonstrates how to pre-configure an [Image](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Image) block in the editor.
+The following example demonstrates how to pre-configure an `Image` block in the editor.
 
 ```typescript
 // Adding image block
