@@ -25,7 +25,7 @@ This structure is essential for maintaining nested relationships within the edit
 
 ## Configure collapsible blocks
 
-You can render Collapsible blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [CollapsibleParagraph](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleParagraph) or [CollapsibleHeading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleHeading). Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
+You can render Collapsible blocks by setting the `blockType` property as `CollapsibleParagraph` or `CollapsibleHeading` Collapsible blocks allow users to expand or collapse sections, providing a way to hide or show content as needed.
 
 ### Configure levels
 
@@ -81,7 +81,7 @@ The below sample demonstrates the configuration of collapsibleHeading and collap
 
 ### Configure placeholder
 
-You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is [CollapsibleParagraph](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleParagraph) and [CollapsibleHeading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_CollapsibleHeading) respectively.
+You can configure placeholder text for block using the `placeholder` in the `properties` property. This text appears when the block is empty. The default placeholder for collapsible heading and collapsible paragraph is `CollapsibleParagraph` and `CollapsibleHeading` respectively.
 
 ```typescript
 	// Configuring CollapsibleHeading block
@@ -109,7 +109,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ## Configure quote block
 
-You can render Quote blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Quote](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Quote). Quote blocks are specially styled for quotations or excerpts.
+You can render Quote blocks by setting the `blockType` property as `Quote`. Quote blocks are specially styled for quotations or excerpts.
 
 ### Block type & properties
 
@@ -150,7 +150,7 @@ The below sample demonstrates the configuration of quote block in the Block Edit
 
 ## Configure callout block
 
-You can render Callout blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Callout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Callout). They're useful for notes, warnings, or tips that require special attention.
+You can render Callout blocks by setting the `blockType` property as `Callout`. They're useful for notes, warnings, or tips that require special attention.
 
 ### Block type & properties
 

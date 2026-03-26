@@ -15,7 +15,7 @@ Typography blocks are essential for organizing and presenting text-based content
 
 ## Configure paragraph block
 
-You can render Paragraph blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Paragraph](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Paragraph). Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
+You can render Paragraph blocks by setting the `blockType` property as `Paragraph`. Paragraph blocks are the most common type, used for regular text content. They provide standard text formatting options and serve as the default block type.
 
 ### BlockType  
 
@@ -76,7 +76,7 @@ The below sample demonstrates the configuration of placeholder in the Block Edit
 
 ## Configure heading block
 
-You can render Heading blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Heading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Heading). Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
+You can render Heading blocks by setting the `blockType` property as `Heading`. Heading blocks are used to create document titles and section headers of varying importance. These blocks help structure your content hierarchically, making it easier to read and navigate.
 
 ### Configure levels
 
@@ -127,7 +127,7 @@ You can configure placeholder text for block using the `placeholder` in the `pro
 
 ## Configure divider block
 
-Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Divider](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Divider).
+Divider blocks insert horizontal lines that separate different sections of content. You can render Divider blocks by setting the `blockType` property as `Divider`.
 
 ### BlockType 
 
