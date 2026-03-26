@@ -1,8 +1,4 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -13,9 +9,7 @@
     .Render()
 
 <script>
-    // Mirrors React's onLinkRendering: set fill based on link.value
     function onLinkRendering(args) {
-        // Some builds expose args.data or args.link. Using args.link if available; fallback to args.data.
         var linkObj = args.link || args.data || {};
         var value = linkObj.value;
 

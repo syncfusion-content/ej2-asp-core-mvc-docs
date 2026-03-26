@@ -1,11 +1,6 @@
-@{
-    var sankeyId = "sankey-container";
-}
-
-<!-- Export button (custom filename like React) -->
 <button type="button" style="margin-bottom:10px;" onclick="exportCustomSankey()">Export with Custom Options</button>
 
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -16,10 +11,9 @@
 
 <script>
     function exportCustomSankey() {
-        var el = document.getElementById('@sankeyId');
+        var el = document.getElementById('sankey-container');
         var inst = el && el.ej2_instances ? el.ej2_instances[0] : null;
         if (inst && typeof inst.export === 'function') {
-            // Matches React: sankeyRef.current.export('PNG', 'CustomSankey');
             inst.export('PNG', 'CustomSankey');
         }
     }

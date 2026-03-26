@@ -1,9 +1,4 @@
-@{
-    // id must match what we use in the script to fetch the instance
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container)
     .Width("90%")
     .Nodes(ViewBag.SankeyNodes)
     .Links(ViewBag.SankeyLinks)
@@ -13,11 +8,8 @@
     .Render()
 
 <script>
-    // Mirror React's: height={Browser.isDevice ? '600px' : '450px'}
-    // and margin={{ left: isDevice ? 10 : 40, right: isDevice ? 10 : 40, top: 20, bottom: 20 }}
     function onSankeyLoad(args) {
         var isDevice = ej.base.Browser.isDevice;
-
         // Update properties dynamically
         args.sankey.height = isDevice ? '600px' : '450px';
         args.sankey.margin = {

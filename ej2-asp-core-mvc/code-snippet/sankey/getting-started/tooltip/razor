@@ -1,6 +1,6 @@
 @Html.EJS().Sankey("sankey-container")
     .Width("90%")
-    .Height("450px")   <!-- fallback; see JS below for responsive -->
+    .Height("450px")
     .Title("California Energy Consumption in 2023")
     .SubTitle("Source: Lawrence Livermore National Laboratory")
     .Nodes(ViewBag.SankeyNodes)
@@ -14,11 +14,8 @@
 
 <script>
     function onSankeyLoaded(args) {
-        // Clear title attribute if needed (as in React example)
         var element = document.getElementById('sankey');
         if (element) element.setAttribute('title', '');
-
-        // Responsive height (mimic Browser.isDevice logic)
         var isDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
         if (isDevice) {
             args.sankey.height = '600px';
