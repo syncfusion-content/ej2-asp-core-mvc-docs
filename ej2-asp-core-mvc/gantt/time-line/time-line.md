@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Time Line in ##Platform_Name## Gantt Component
+title: Time Line in ##Platform_Name## Gantt Component | Syncfusion
 description: Learn here all about Time Line in Syncfusion ##Platform_Name## Gantt component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Time Line
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timeline 
+# Timeline in ##Platform_Name## Gantt Component
 
 In the Gantt control, timeline is used to represent the project duration as individual cells with defined unit and formats.
 
@@ -178,6 +178,47 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 
 ![Alt text](images/hourMode.png)
+
+## Timeline view dates
+
+The Gantt Chart control supports rendering a fixed timeline range using the `viewStartDate` and `viewEndDate` properties. These properties allow the visible portion of the timeline to be explicitly defined and locked within the Gantt chart UI, independent of the project's overall scheduling boundaries defined by `projectStartDate` and `projectEndDate`. The `projectStartDate` and `projectEndDate` values represent the full scheduling window for the project and are used for baseline processing, critical-path calculations, and project-level reporting. By default, both `viewStartDate` and `viewEndDate` are set to **auto**. The following example demonstrates how to configure a custom timeline view range.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/viewDate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="viewDate.cs" %}
+{% include code-snippet/gantt/timeline/viewDate/viewDate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/viewDate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="viewDate.cs" %}
+{% include code-snippet/gantt/timeline/viewDate/viewDate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Key behaviors**
+
+When `viewStartDate` and `viewEndDate` are set to concrete Date values, the timeline rendering is restricted to the inclusive range [viewStartDate, viewEndDate].
+
+* When `viewStartDate` is set to **auto**:
+  * If `projectStartDate` is defined, the timeline begins at `projectStartDate`.
+  * If `projectStartDate` is not defined, the earliest task start date is used as the beginning of the visible range.
+
+* When `viewEndDate` is set to **auto**: 
+  * If `projectEndDate` is defined, the timeline ends at `projectEndDate`.
+  * If `projectEndDate` is not defined, the maximum task end date is used. If this end date leaves visible white‑space in the timeline area, the end date is automatically extended to fill the chart width.
+
+> Note: The `ZoomToFit` feature uses `projectStartDate` and `projectEndDate` to fit the entire project within the available timeline viewport.
 
 ## Timeline cells tooltip
 
