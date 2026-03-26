@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes in ##Platform_Name## Sankey Chart Component
+title: Nodes in Syncfusion ##Platform_Name## Sankey Chart Component
 description: Learn here all about Nodes in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nodes
@@ -31,9 +31,9 @@ The `NodeStyle` property allows you to customize the visual appearance of all no
 | highlightOpacity | number | 1 | Opacity of node when highlighted. |
 | inactiveOpacity | number | 0.3 | Opacity of inactive nodes (when interacting with others). |
 
-Customize the global node appearance by configuring the `NodeStyle` property with properties such as fill color, stroke, width, padding, and opacity levels
+## Global Node Customization
 
-Here is an example of customizing node appearance:
+Customize the global node appearance by configuring the `NodeStyle` property with properties such as fill color, stroke, width, padding, and opacity levels. Here is an example:
 
 {% if page.publishingplatform == "aspnet-core" %}
 

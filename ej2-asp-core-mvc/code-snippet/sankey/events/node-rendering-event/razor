@@ -1,9 +1,4 @@
-@{
-    // Mirroring React's id="sankey-container"
-    var sankeyId = "sankey-container";
-}
-
-@Html.EJS().Sankey(sankeyId)
+@Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
     .Nodes(ViewBag.SankeyNodes)
@@ -14,9 +9,7 @@
     .Render()
 
 <script>
-    // Mirrors React's nodeRendering: set node color based on node id
     function onNodeRendering(args) {
-        // args.node contains the node info
         if (args && args.node && args.node.id === 'Agricultural Waste') {
             args.node.color = '#FF6B6B';
         } else if (args && args.node && args.node.id === 'Bio-conversion') {

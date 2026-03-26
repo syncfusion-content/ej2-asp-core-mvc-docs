@@ -76,7 +76,7 @@ Custom CSS classes allow you to define specialized styling for specific blocks i
 
 ## Configure templates
 
-The Block Editor allows you to use custom templates for specialized content using the [template](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Template) property. Templates can be defined as strings, functions, or HTML elements.
+The Block Editor allows you to use custom templates for specialized content using the `template` property. Templates can be defined as strings, functions, or HTML elements.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
