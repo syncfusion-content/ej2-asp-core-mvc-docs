@@ -67,4 +67,4 @@ The below sample demonstrates the `CommandSettings` property.
 {% endhighlight %}
 {% endtabs %}
 
-![CommandSettings](./../images/command-settings.png)
+![CommandSettings](images/command-settings.png)

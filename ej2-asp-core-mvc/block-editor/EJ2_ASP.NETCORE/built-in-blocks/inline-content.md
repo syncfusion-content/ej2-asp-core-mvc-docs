@@ -139,7 +139,7 @@ The below sample demonstrates the customization of labels in the Block Editor.
 {% endhighlight %}
 {% endtabs %}
 
-![Block label-settings](./../../images/block-label.png)
+![Block label-settings](../images/block-label.png)
 
 ## Configure mention
 

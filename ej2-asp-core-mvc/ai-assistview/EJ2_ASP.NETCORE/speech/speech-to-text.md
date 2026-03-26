@@ -35,7 +35,7 @@ You can enable speech-to-text support using the [speechToTextSettings](https://h
 {% endhighlight %}
 {% endtabs %}
  
-![Speech-to-Text with AI AssistView](./../../images/speech-to-text.png)
+![Speech-to-Text with AI AssistView](../images/speech-to-text.png)
 
 ## Configure speech recognition language
 
@@ -60,7 +60,7 @@ This example demonstrates how to set up the AI AssistView with all these speech 
 {% endhighlight %}
 {% endtabs %}
  
-![AllowInterimResults](./../../images/speech-config.png)
+![AllowInterimResults](../images/speech-config.png)
 
 ## Configure tooltip settings
 
@@ -75,7 +75,7 @@ You can customize the tooltips to the microphone button using the [tooltipSettin
 {% endhighlight %}
 {% endtabs %}
  
-![Speech To Text Tooltip](./../../images/tooltip-settings.png)
+![Speech To Text Tooltip](../images/tooltip-settings.png)
 
 ## Speech to text events
 

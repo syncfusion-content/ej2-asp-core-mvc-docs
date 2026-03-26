@@ -29,7 +29,7 @@ The below example shows adding the German culture locale(`de-DE`)
 {% endhighlight %}
 {% endtabs %}
 
-![Localization](./../images/localization.png)
+![Localization](images/localization.png)
 
 ## RTL
 
@@ -41,4 +41,4 @@ RTL provides an option to switch the text direction and layout of the Inline AI 
 {% endhighlight %}
 {% endtabs %}
 
-![EnableRtl](./../images/enable-rtl.png)
+![EnableRtl](images/enable-rtl.png)
