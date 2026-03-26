@@ -1,0 +1,24 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(tooltip => tooltip.Enable(true))
+    .LegendSettings(legend => legend.Visible(true))
+    .LabelSettings(label => label.Visible(true))
+    .LabelRendering("onLabelRendering")
+    .Render()
+
+<script>
+    function onLabelRendering(args) {
+        if (args.text === 'Agricultural Waste') {
+            args.labelStyle = {
+                fontWeight: 'bold',
+                color: '#FF6B6B',
+                fontSize: '14px',
+                fontFamily: 'Arial',
+                fontStyle: 'normal'
+            };
+        }
+    }
+</script>

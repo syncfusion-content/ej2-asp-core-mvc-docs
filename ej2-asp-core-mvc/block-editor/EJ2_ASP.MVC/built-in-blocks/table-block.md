@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Table Blocks in ASP.NET MVC Block Editor control
 
-The Block Editor control allows you to render structured data in rows and columns by setting the block's [blockType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property to [Table](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table). You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
+The Block Editor control allows you to render structured data in rows and columns by setting the block's `blockType` property to `Table`. You can customize the table layout, header, row numbers, and define columns and rows using the `properties` property. In addition, you can format cells with keyboard shortcuts, use slash commands inside cells to add blocks, and manage rows and columns quickly with dot and plus buttons.
 
 ### Configure table block
 
@@ -26,7 +26,7 @@ For Table blocks, you can configure layout and structure using the `properties` 
 | columns | Defines the columns of the table, including their types and headers. | `[]` |
 | rows | Defines the rows of the table, each containing cells tied to columns. | `[]` |
 
-This sample demonstrates the configuration of the [Table](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Table) block in the Block Editor.
+This sample demonstrates the configuration of the `Table` block in the Block Editor.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,7 +37,7 @@ This sample demonstrates the configuration of the [Table](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![Table Block](./../../images/block-table.png)
+![Table Block](../images/block-table.png)
 
 ### Table resizing
 
@@ -58,4 +58,4 @@ This sample demonstrates the `Table` block multiple row and column selection and
 {% endhighlight %}
 {% endtabs %}
 
-![Table Block](./../../images/table-resize.png)
+![Table Block](../images/table-resize.png)

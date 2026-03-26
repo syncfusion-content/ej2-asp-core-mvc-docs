@@ -1,0 +1,20 @@
+<button type="button" style="margin-bottom:10px;" onclick="printSankey()">Print</button>
+
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()
+
+<script>
+    function printSankey() {
+        var el = document.getElementById('sankey-container');
+        var inst = el && el.ej2_instances ? el.ej2_instances[0] : null;
+        if (inst && typeof inst.print === 'function') {
+            inst.print();
+        }
+    }
+</script>

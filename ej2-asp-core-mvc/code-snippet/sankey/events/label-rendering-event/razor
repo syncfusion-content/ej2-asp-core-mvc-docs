@@ -1,0 +1,21 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .LabelRendering("onSankeyLabelRendering")
+    .Render()
+
+<script>
+    function onSankeyLabelRendering(args) {
+        args.labelStyle = {
+            fontFamily: 'Arial',
+            fontStyle: 'normal',
+            fontWeight: 'bold',
+            fontSize: '12px',
+            color: '#000'
+        };
+    }
+</script>

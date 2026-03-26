@@ -1,0 +1,19 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .NodeRendering("onNodeRendering")
+    .Render()
+
+<script>
+    function onNodeRendering(args) {
+        if (args && args.node && args.node.id === 'Agricultural Waste') {
+            args.node.color = '#FF6B6B';
+        } else if (args && args.node && args.node.id === 'Bio-conversion') {
+            args.node.color = '#4ECDC4';
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<button type="button" id="btnExport" style="margin-bottom:10px;" onclick="exportSankey()">Export PNG</button>
+
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .BeforeExport("onBeforeExport")
+    .Render()
+
+<script>
+    function onBeforeExport(args) {
+        args.cancel = false;
+    }
+
+    function exportSankey() {
+        var inst = document.getElementById('sankey-container').ej2_instances && document.getElementById('sankey-container').ej2_instances[0];
+        if (inst && typeof inst.export === 'function') {
+            inst.export('PNG', 'Sankey');
+        }
+    }
+</script>

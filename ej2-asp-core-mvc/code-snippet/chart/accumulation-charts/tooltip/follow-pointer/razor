@@ -1,0 +1,17 @@
+@Html.EJS().AccumulationChart("container")
+.EnableAnimation(true)
+.Series(series =>
+{
+    series.DataSource(ViewBag.dataSource)
+        .XName("x")
+        .YName("y")
+        .Name("Browser")
+        .BorderRadius(3)
+        .Add();
+})
+.Tooltip(tt => tt
+    .Enable(true)
+    .FollowPointer(true)
+    .Format("<b>${point.x}</b><br>Percentage: <b>${point.y}%</b>")
+)
+.Render()

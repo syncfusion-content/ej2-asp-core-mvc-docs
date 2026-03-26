@@ -1,0 +1,17 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .NodeStyle(ns => ns
+        .Fill((string)ViewBag.NodeFill)
+        .Opacity(Convert.ToDouble(ViewBag.NodeOpacity))
+        .Width(Convert.ToInt32(ViewBag.NodeWidth))
+        .Border(b => b
+            .Color((string)ViewBag.NodeBorderColor)
+            .Width(Convert.ToDouble(ViewBag.NodeBorderWidth))
+        )
+    )
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .Render()

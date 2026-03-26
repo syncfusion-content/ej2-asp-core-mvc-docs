@@ -1,0 +1,40 @@
+<ejs-sankey id="sankey-container" width="90%" height="450px" nodeRendering="onSankeyNodeRendering">
+    <e-sankey-nodes>
+        @foreach (var node in ViewBag.SankeyNodes)
+        {
+            <e-sankey-node id="@node.Id"></e-sankey-node>
+        }
+    </e-sankey-nodes>
+    <e-sankey-links>
+        @foreach (var link in ViewBag.SankeyLinks)
+        {
+            <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
+        }
+    </e-sankey-links>
+    <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
+</ejs-sankey>
+
+<script>
+    function onSankeyNodeRendering(args) {
+        if (!args || !args.node) return;
+
+        switch (args.node.id) {
+            case 'Bio-conversion':
+                args.node.color = '#FF6B6B';
+                break;
+            case 'Liquid Biofuel':
+                args.node.color = '#4ECDC4';
+                break;
+            case 'Electricity':
+                args.node.color = '#45B7D1';
+                break;
+            case 'Heat':
+                args.node.color = '#FFA07A';
+                break;
+            default:
+                args.node.color = '#98D8C8';
+                break;
+        }
+    }
+</script>

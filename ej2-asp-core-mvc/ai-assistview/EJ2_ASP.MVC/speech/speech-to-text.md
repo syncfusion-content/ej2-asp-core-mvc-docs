@@ -35,7 +35,7 @@ You can enable speech-to-text support using the [SpeechToTextSettings](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![Integrating Speech-to-Text with AI AssistView](images/aiassist-stt.png)
+![Speech-to-Text with AI AssistView](../images/speech-to-text.png)
 
 ## Configure speech recognition language
 
@@ -51,13 +51,44 @@ The [AllowInterimResults](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 This example demonstrates how to set up the AI AssistView with all these speech recognition features enabled:
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/speech-configuration/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/ai-assistview/speech/speech-configuration/speechtotextmvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![AllowInterimResults](../images/speech-config.png)
+
 ## Configure tooltip settings
 
 You can customize the tooltips to the microphone button using the [TooltipSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_Speechtotextsettings) property.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/tooltip-settings/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/ai-assistview/speech/tooltip-settings/speechtotextmvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![TooltipSettings](../images/tooltip-settings.png)
+
 ## Speech to text events
 
 The speech-to-text functionality provides events like `onStart` (when recognition starts), `onStop` (when it stops), `transcriptChanged` (when transcript updates), and `onError` (when errors occur).
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/speech/speech-events/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SpeechToText.cs" %}
+{% include code-snippet/ai-assistview/speech/speech-events/speechtotextmvc.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Browser Compatibility
 

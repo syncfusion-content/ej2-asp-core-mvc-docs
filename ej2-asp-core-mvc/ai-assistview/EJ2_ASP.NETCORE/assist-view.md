@@ -54,6 +54,14 @@ The AI AssistView supports rendering responses as **Markdown** content, which is
 
 You can use markdown syntax like **bold**, *italic*, headings, lists, code blocks, and links to format your responses.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/assistview/markdown-prompt/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![Markdown Response](images/markdown-prompt.png)
+
 ## Adding prompt suggestions
 
 You can use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property, to add the suggestions in both initial and on-demand which help users to refine their prompts. Additionally, custom header can be set for suggestions further enhancing the user experience.
@@ -117,3 +125,11 @@ You can use the [showClearButton](https://help.syncfusion.com/cr/aspnetcore-js2/
 ## Enable scroll to bottom icon
 
 You can use the [enableScrollToBottom](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_EnableScrollToBottom) property to show or hide the scroll-to-bottom indicator. By default, this property is `true`. When enabled, a floating icon/button appears when the user scrolls away from the bottom of the conversation. Clicking this icon smoothly scrolls the view to the bottom to display the latest response.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/ai-assistview/assistview/scroll-to-bottom/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![EnableScrollToBottom](images/scroll-to-bottom.png)

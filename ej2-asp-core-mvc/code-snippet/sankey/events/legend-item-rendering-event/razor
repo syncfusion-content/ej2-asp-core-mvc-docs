@@ -1,0 +1,18 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true).Position(Syncfusion.EJ2.Charts.LegendPosition.Bottom))
+    .LegendItemRendering("onLegendItemRendering")
+    .Render()
+
+<script>
+    function onLegendItemRendering(args) {
+        if (args && args.text) {
+            args.text = args.text.toUpperCase();
+        }
+        args.fill = '#333';
+    }
+</script>
