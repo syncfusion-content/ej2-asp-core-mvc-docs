@@ -1,0 +1,37 @@
+<div id="container">
+    <div>
+        <ejs-button id="gotoPageBtn" content="Go to page 3" cssClass="e-outline"></ejs-button>
+        <span id="status"></span>
+    </div>
+    <div class="control-section" style="padding-top:20px">
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowPaging="true">
+            <e-grid-pagesettings pageSize="5"></e-grid-pagesettings>
+            <e-grid-columns>
+                <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+                <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+                <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+                <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+</div>
+
+<script>
+    document.getElementById('gotoPageBtn').onclick = handleButtonClick;
+    function handleButtonClick() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.goToPage(3);
+        document.getElementById('status').innerText = 'Navigated to page 3 successfully!';
+    }
+</script>
+
+<style>
+    .control-section{
+        padding-top:20px;
+    }
+    #status{
+        margin-left:10px;
+        color:green;
+    }
+</style>
