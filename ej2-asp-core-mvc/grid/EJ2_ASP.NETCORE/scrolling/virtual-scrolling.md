@@ -107,6 +107,21 @@ The following example enable column virtualization using `enableColumnVirtualiza
     8. Autofill
     9. Page
 
+## Seamless scrolling in virtual scrolling
+
+The seamless scrolling feature in the Grid provides an uninterrupted scrolling experience during rapid or continuous scrolling in virtual scroll mode. By default, rapid scrolling may cause white spaces to appear momentarily in the Grid content area, since the DOM updates need time to render newly visible rows. Seamless scrolling eliminates this visual gap and ensures the content area remains fully populated at all times, delivering a smooth and uninterrupted scrolling experience.
+
+Seamless scrolling is enabled by setting `args.enableSeamlessScrolling` to `true` inside the [load](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Load) event of the Grid. This instructs the virtual scroll module to synchronize DOM updates accurately with scroll movements, preventing any white space from appearing during rapid scroll operations.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/scrolling/seamless-scroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="seamless-scroll.cs" %}
+{% include code-snippet/grid/scrolling/seamless-scroll/seamless-scroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Browser height limitation in virtual scrolling and solution
 
 You can load millions of records in the Grid by using virtual scrolling, where the Grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the Grid is calculated using the Total Records Count * [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property.
