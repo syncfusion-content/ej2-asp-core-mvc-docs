@@ -40,7 +40,7 @@ To integrate **LiteLLM** with the **Syncfusion Inline AI Assist** control, updat
 
 In the following example:
 
-* The [promptRequest](https://ej2.syncfusion.com/aspnetcore/documentation/api/inline-ai-assist/inlineaiassistmodel#promptrequest) event sends the user prompt to the LiteLLM proxy at `http://localhost:4000/v1/chat/completions`. 
+* The [promptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.interactivechat.inlineaiassist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_PromptRequest) event sends the user prompt to the LiteLLM proxy at `http://localhost:4000/v1/chat/completions`. 
 * The proxy uses the **model alias** defined in `config.yaml` (e.g., `openai/gpt-4o-mini`) and routes the request to the actual LLM provider. 
 * The response is parsed and displayed in the Inline AI Assist control.
 

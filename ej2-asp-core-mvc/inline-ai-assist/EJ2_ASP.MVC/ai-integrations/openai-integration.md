@@ -10,13 +10,13 @@ documentation: ug
  
 # Integrate Azure OpenAI with ASP.NET MVC Inline AI Assist control
  
-The Inline AI Assist control integrates with [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
+The Inline AI Assist control integrates with [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) to enable advanced conversational AI features in your applications. The control acts as a user interface, where user prompts are sent to the Azure OpenAI service via API calls, providing natural language understanding and context-aware responses.
  
 ## Prerequisites
 
 Before starting, ensure you have the following:
 
-* **An Azure account**: with access to [Azure OpenAI](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy/resources/openai) services and a generated API key.
+* **An Azure account**: with access to [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai) services and a generated API key.
 
 * **Syncfusion Inline AI Assist**: Package [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) installed.
 
