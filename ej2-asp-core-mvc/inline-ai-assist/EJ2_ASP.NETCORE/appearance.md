@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and styling in ##Platform_Name## InlineAIAssist Control | Syncfusion
+title: Appearance in ##Platform_Name## InlineAIAssist Control | Syncfusion
 description: Checkout and learn about Appearance and styling in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline assist
@@ -28,7 +28,7 @@ You can use the [zIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 
 You can customize the appearance of the Inline AI Assist control by using the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssist.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssist_CssClass) property.
 
-The below example shows the usecase of the properties such as `Zindex`, `PopupWidth`, `PopupHeight` and `CssClass`.
+The below example shows the use case of the properties such as `Zindex`, `PopupWidth`, `PopupHeight` and `CssClass`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
