@@ -20,7 +20,7 @@
         <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
     </div>
     
-    <ejs-inlineaiassist id="defaultInlineAssist" relateTo="#summarizeBtn" created="onCreated" promptRequest="onPromptRequest">
+    <ejs-inlineaiassist id="defaultInlineAssist" relateTo="#summarizeBtn" target="#container" created="onCreated" promptRequest="onPromptRequest">
         <e-inlineaiassist-responsesettings itemSelect="onItemSelect"></e-inlineaiassist-responsesettings>
     </ejs-inlineaiassist>
 </div>
