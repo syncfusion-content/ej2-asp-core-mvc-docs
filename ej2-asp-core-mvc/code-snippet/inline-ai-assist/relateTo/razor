@@ -20,7 +20,7 @@
         <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
     </div>
     
-    @Html.EJS().InlineAIAssist("defaultInlineAssist").RelateTo("#summarizeBtn").Created("onCreated").PromptRequest("onPromptRequest").ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
+    @Html.EJS().InlineAIAssist("defaultInlineAssist").RelateTo("#summarizeBtn").Target("#container").Created("onCreated").PromptRequest("onPromptRequest").ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).Render()
 </div>
 
 <script>
