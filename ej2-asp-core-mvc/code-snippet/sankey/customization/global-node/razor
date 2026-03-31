@@ -4,10 +4,10 @@
     .NodeStyle(ns => ns
         .Fill((string)ViewBag.NodeFill)
         .Opacity((double)ViewBag.NodeOpacity)
-        .Border(b => b.Width(Convert.ToDouble(ViewBag.NodeBorderWidth)).Color((string)ViewBag.NodeBorderColor))
+        .Width(Convert.ToDouble(ViewBag.NodeBorderWidth))
     )
-    .Nodes(ViewBag.SankeyNodes)
-    .Links(ViewBag.SankeyLinks)
     .Tooltip(t => t.Enable(true))
     .LegendSettings(l => l.Visible(true))
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
     .Render()

@@ -11,7 +11,11 @@
             <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
         }
     </e-sankey-links>
-    <e-sankey-tooltipsettings enable="true"
-                              linkFormat="&lt;div style=&quot;padding:10px&quot;&gt;&lt;b&gt;${source.name} → ${target.name}&lt;/b&gt;&lt;br/&gt;Value: ${value}&lt;/div&gt;">
+    <e-sankey-tooltipsettings enable="true" nodeTemplate='@("#sankeyTooltipTemplate")'>
     </e-sankey-tooltipsettings>
 </ejs-sankey>
+
+<script id="sankeyTooltipTemplate" type="text/x-template">
+    <div style="padding:10px; border-radius:6px"><b>${sourceNodeName} → ${targetNodeName}</b><br />Value: ${value}
+    </div>
+</script>

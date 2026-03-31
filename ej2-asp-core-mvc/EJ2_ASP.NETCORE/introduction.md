@@ -394,7 +394,7 @@ padding-top: 20px;
     content: "\e910";
 }
 .sf-icon-sankey:before{
-  content: "\e911";
+  content: "\e90f";
 }
 .sf-icon-chatui:before{
     content: "\e912";
@@ -478,6 +478,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started"><span class="sf-home-icon sf-icon-treemap"></span>TreeMap</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started"><span class="sf-home-icon sf-icon-bulletchart"></span>Bullet Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started"><span class="sf-home-icon sf-icon-kanban"></span>Kanban</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/sankey/getting-started"><span class="sf-home-icon sf-icon-sankey"></span>Sankey</a></div>
         <div><p class="control-category">BUTTONS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started"><span class="sf-home-icon sf-icon-button"></span>Button</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started"><span class="sf-home-icon sf-icon-buttongroup"></span>ButtonGroup</a></div>

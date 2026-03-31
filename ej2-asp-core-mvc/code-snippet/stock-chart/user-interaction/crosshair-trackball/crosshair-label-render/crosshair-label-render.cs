@@ -23,7 +23,6 @@ namespace EJ2CoreSampleBrowser.Controllers.StockChart
             };
 
             ViewBag.dataSource = chartData;
-
             return View();
         }
 

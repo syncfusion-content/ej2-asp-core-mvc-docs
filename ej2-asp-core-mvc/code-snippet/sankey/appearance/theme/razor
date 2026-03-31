@@ -1,16 +1,15 @@
 @Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
-    .Nodes(ViewBag.SankeyNodes)
-    .Links(ViewBag.SankeyLinks)
     .Tooltip(t => t.Enable(true))
     .LegendSettings(l => l.Visible(true))
     .Load("onSankeyLoad")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
     .Render()
 
 <script>
     function onSankeyLoad(args) {
-        // Match React: theme="Tailwind"
-        args.sankey.theme = 'Tailwind';
+        args.chart.theme = 'Tailwind';
     }
 </script>

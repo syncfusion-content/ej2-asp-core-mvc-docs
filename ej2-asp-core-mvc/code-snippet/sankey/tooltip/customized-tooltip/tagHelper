@@ -16,13 +16,13 @@
         }
     </e-sankey-links>
     <e-sankey-tooltipsettings enable="true" fill="@ViewBag.TooltipFill">
-        <e-sankey-tooltipsettings-textstyle
+        <e-sankeytooltipsettings-textstyle
             fontFamily="@ViewBag.TooltipFontFamily"
             fontStyle="@ViewBag.TooltipFontStyle"
             fontWeight="@ViewBag.TooltipFontWeight"
             fontSize="@ViewBag.TooltipFontSize"
             color="@ViewBag.TooltipColor">
-        </e-sankey-tooltipsettings-textstyle>
+        </e-sankeytooltipsettings-textstyle>
     </e-sankey-tooltipsettings>
     <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
 </ejs-sankey>

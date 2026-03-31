@@ -42,7 +42,6 @@ public IActionResult FollowPointer()
     ViewBag.vietnamData = vietnamData;
     ViewBag.franceData = franceData;
     ViewBag.mexicoData = mexicoData;
-
     return View();
 }
 

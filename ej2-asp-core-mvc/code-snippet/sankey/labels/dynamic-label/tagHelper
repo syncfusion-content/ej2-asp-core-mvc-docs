@@ -1,4 +1,4 @@
-<ejs-sankey id="sankey-container" width="90%" height="450px" label-rendering="onLabelRendering">
+<ejs-sankey id="sankey-container" width="90%" height="450px" labelRendering="onLabelRendering">
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
@@ -18,7 +18,7 @@
 
 <script>
     function onLabelRendering(args) {
-        if (args.text === 'Agricultural Waste') {
+        if (args.text === 'Agricultural Waste 84.152') {
             args.labelStyle = {
                 fontWeight: 'bold',
                 color: '#FF6B6B',

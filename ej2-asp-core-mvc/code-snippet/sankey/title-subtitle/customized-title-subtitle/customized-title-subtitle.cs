@@ -21,14 +21,11 @@ public ActionResult Index()
 
     ViewBag.SankeyNodes = nodes;
     ViewBag.SankeyLinks = links;
-
-    // Title & Subtitle styles mapped from React
     ViewBag.TitleFontFamily = "Arial";
     ViewBag.TitleFontStyle = "italic";
     ViewBag.TitleFontWeight = "bold";
     ViewBag.TitleSize = "18px";
     ViewBag.TitleColor = "#1F77B4";
-
     ViewBag.SubTitleFontFamily = "Arial";
     ViewBag.SubTitleFontStyle = "normal";
     ViewBag.SubTitleFontWeight = "normal";
