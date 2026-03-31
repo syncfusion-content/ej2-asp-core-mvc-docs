@@ -1,0 +1,121 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+@{
+    ViewData["Title"] = "Inline AI Assist with LiteLLM";
+}
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
+
+<div class="container" style="height: 350px; width: 650px;">
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    
+    <ejs-inlineaiassist id="inlineAIAssist" relateTo="#summarizeBtn" created="onCreated" promptRequest="onPromptRequest">
+        <e-inlineaiassist-inlinetoolbarsettings itemClick="onToolbarItemClick"></e-inlineaiassist-inlinetoolbarsettings>
+        <e-inlineaiassist-responsesettings itemSelect="onItemSelect"></e-inlineaiassist-responsesettings>
+    </ejs-inlineaiassist>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+<script>
+    var assistObj = null;
+    var stopStreaming = false;
+
+    // LiteLLM settings
+    var LITELLM_HOST = 'http://localhost:4000';
+    var LITELLM_API_KEY = ''; // If your LiteLLM proxy uses a master_key, set this to the same value; otherwise, leave as empty string
+
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + assistObj.prompts[assistObj.prompts.length - 1].response + '</p>';
+            }
+            assistObj.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            assistObj.hidePopup();
+        }
+    }   
+
+    function onSummarizeClick() {
+        if (assistObj) {
+            assistObj.showPopup();
+        }
+    }
+
+    function onToolbarItemClick(args) {
+        if (args.item.iconCss === 'e-icons e-inline-stop') {
+            stopStreaming = true;
+        }
+    }
+
+    async function streamResponse(response) {
+        let lastResponse = '';
+        const responseUpdateRate = 10;
+        let i = 0;
+        const responseLength = response.length;
+        while (i < responseLength && !stopStreaming) {
+            lastResponse += response[i];
+            i++;
+            if (i % responseUpdateRate === 0 || i === responseLength) {
+                const htmlResponse = marked.parse(lastResponse);
+                assistObj.addResponse(htmlResponse, i === responseLength);
+            }
+            await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+        }
+    }
+
+    function onPromptRequest(args) {
+        const url = `/Home/GetAIResponse`;  // Calls your controller's endpoint
+
+        const headers = {
+            'Content-Type': 'application/json',
+            ...(LITELLM_API_KEY ? { 'Authorization': `Bearer ${LITELLM_API_KEY}` } : {}),
+        };
+
+        const requestBody = {
+            prompt: args.prompt
+        };
+
+        fetch(url, {
+            method: 'POST',
+            headers: headers,
+            body: JSON.stringify(requestBody)
+        })
+        .then(function(res) {
+            if (!res.ok) {
+                throw new Error(`HTTP ${res.status}`);
+            }
+            return res.json();
+        })
+        .then(function(responseText) {
+            stopStreaming = false;
+            streamResponse(responseText);
+        })
+        .catch(function(error) {
+            console.error(error);
+            assistObj.addResponse(
+                '⚠️ Something went wrong while connecting to the AI service. Please check your LiteLLM proxy, model name, or try again later.'
+            );
+            stopStreaming = true;
+        });
+    }
+</script>
