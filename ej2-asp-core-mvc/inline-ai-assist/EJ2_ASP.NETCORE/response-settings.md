@@ -14,39 +14,26 @@ You can render response action popup by using [items](https://help.syncfusion.co
 
 ## Built-in response items
 
-By default, the response popup displays the built-in `accept` and `reject` items, allowing users to accept or reject the response. The response action popup is shown after a response is generated.
+By default, the response popup displays the built-in `accept` and `discard` items, allowing users to accept or discard the response. The response action popup is shown after a response is generated. This feature enables users to accept, discard, or perform custom actions on AI-generated responses.
 
-In the following example, the Inline AI Assist component is rendered with built-in response settings items such as `accept` and `reject`.
+Built-in items appear by default and cannot be removed, but custom items can be added alongside them.
 
-## Adding custom items
+## Custom response item configuration
 
-You can use the `responseSettings` property to add custom items for the response popup in Inline AI Assist. The custom items will be added with the existing built-in items in the response popup.
+You can use the `responseSettings` property to add custom items for the response popup in Inline AI Assist. The custom items will be added with the existing built-in items in the response popup. The custom items will be displayed together with the existing built-in items in the response popup.
 
-### Setting id
+Each response item object can include the following properties:
 
-You can use the `id` property to assign a unique identifier to response items and perform actions based on the selected item.
+| Property    | Type    | Default | Description                                                      |
+|-------------|---------|---------|------------------------------------------------------------------|
+| label       | string  | ''      | Specifies the display label of the response item.                |
+| iconCss     | string  | ''      | Specifies the CSS class for the item's icon.                     |
+| disabled    | boolean | false   | Specifies whether the response item is disabled and unselectable.|
+| groupBy     | string  | ''      | Specifies the group category for organizing related items.       |
+| id          | string  | ''      | Specifies a unique identifier for the response item.             |
+| tooltip     | string  | ''      | Specifies the tooltip text displayed on hover.                   |
 
-### Adding iconCss
-
-Include icons by using `iconCss` property on a response item to show an icon alongside the label.
-
-### Setting disabled
-
-You can use the `disabled` property to disable an item, preventing it from being selected in the response popup. By default, its value is `false`.
-
-### Setting label
-
-You can use the `label` property to specify the visible text for an item in the response popup; this text describes the action that will be performed when selected.
-
-### Configure groupby
-
-To visually group response items, use `groupBy` property. The popup will group items by the `groupBy` value and render group headers in response action popup.
-
-### Setting tooltip text
-
-You can use the `tooltip` property to specify the tooltip text to be displayed on hovering the response item in the popup.
-
-## Configure item select
+## Response interactions
 
 The [itemSelect](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistResponseSettings_ItemSelect) event is triggered when an item is selected from the response popup in the Inline AI Assist control.
 
@@ -58,4 +45,10 @@ The below example demonstrates the `ResponseSettings` property
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseSettings](./../images/response-settings.png)
+![ResponseSettings](images/response-settings.png)
+
+## See Also
+
+- [Command Settings](./command-settings.md)
+- [Inline Toolbar](./inline-toolbar.md)
+- [Events Documentation](./events.md)

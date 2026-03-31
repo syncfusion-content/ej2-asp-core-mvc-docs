@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Code Blocks in ASP.NET Core Block Editor control
 
-You can render Code blocks by setting the [blockType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html) property as [Code](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.BlockEditor.BlockType.html#Syncfusion_EJ2_BlockEditor_BlockType_Code). By setting the `properties` property, you can configure the default language. The default language is `plainText`.
+You can render Code blocks by setting the `blockType` property as `Code`. By setting the `properties` property, you can configure the default language. The default language is `plainText`.
 
 ## Global Code Settings
 
@@ -49,4 +49,4 @@ Below example illustrates how to render the code block in the Block Editor.
 {% endhighlight %}
 {% endtabs %}
 
-![Code Block](./../../images/block-code.png)
+![Code Block](../images/block-code.png)

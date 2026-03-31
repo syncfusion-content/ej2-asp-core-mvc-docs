@@ -1,0 +1,8 @@
+@Html.EJS().Gantt("GanttDefault").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("430px").ProjectStartDate("03/31/2019").ProjectEndDate("04/31/2019").TaskFields(tf => tf.Id("TaskID").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").ParentID("ParentID")).TimelineSettings(ts => ts.ViewStartDate("04/03/2019").ViewEndDate("04/07/2019")).Columns(col =>
+{
+    col.Field("TaskID");
+    col.Field("TaskName");
+    col.Field("StartDate");
+    col.Field("Duration");
+    col.Field("Progress");
+}).Render()

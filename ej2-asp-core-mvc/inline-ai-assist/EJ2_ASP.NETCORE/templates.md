@@ -22,7 +22,7 @@ You can use the [editorTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% endhighlight %}
 {% endtabs %}
 
-![EditorTemplate](./../images/editor-template.png)
+![EditorTemplate](images/editor-template.png)
 
 ## Response template
 
@@ -34,4 +34,4 @@ You can use the [responseTemplate](https://help.syncfusion.com/cr/aspnetcore-js2
 {% endhighlight %}
 {% endtabs %}
 
-![ResponeTemplate](./../images/response-template.png)
+![ResponeTemplate](images/response-template.png)

@@ -72,4 +72,4 @@ RTL provides an option to switch the text direction and layout of the Block Edit
 {% endhighlight %}
 {% endtabs %}
 
-![RTL](./../images/rtl.png)
+![RTL](images/rtl.png)
