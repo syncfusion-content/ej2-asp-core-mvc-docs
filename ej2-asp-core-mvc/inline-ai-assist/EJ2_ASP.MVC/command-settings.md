@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Commands configuration in ##Platform_Name## Inline AI Assist control
+# Commands configuration in ##Platform_Name## InlineAIAssist control
 
 You can render and use the command action popup by using the `Commands` property in the [CommandSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html) property. This property helps to supply commands, control popup dimensions, and customize behavior.
 
