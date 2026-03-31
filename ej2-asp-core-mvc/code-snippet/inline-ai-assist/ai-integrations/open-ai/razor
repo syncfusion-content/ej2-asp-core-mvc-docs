@@ -1,0 +1,103 @@
+@using Syncfusion.EJ2.InteractiveChat
+
+<style>
+    #editableText {
+        width: 100%;
+        min-height: 120px;
+        max-height: 300px;
+        overflow-y: auto;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid;
+    }
+</style>
+
+@{
+    ViewData["Title"] = "Inline AI Assist with OpenAI";
+}
+
+
+<div class="container" style="height: 350px; width: 650px;">
+    <button id="summarizeBtn" class="e-btn e-primary" style="margin-bottom: 10px;" onclick="onSummarizeClick()">Content Summarize</button>
+    <div id="editableText" contenteditable="true">
+        <p>Inline AI Assist component provides intelligent text processing capabilities that enhance user productivity. It leverages advanced natural language processing to understand context and deliver precise suggestions. Users can seamlessly integrate AI-powered features into their applications.</p>
+        <p>With real-time response streaming and customizable prompts, developers can create interactive experiences. The component supports multiple response modes including inline editing and popup-based interactions.</p>
+    </div>
+    
+    @Html.EJS().AIAssistView("inlineAIAssist").PromptRequest("onPromptRequest").Created("onCreated").ResponseSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings { ItemSelect = "onItemSelect" }).InlineToolbarSettings(new Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings { ItemClick="toolbarItemClicked" }).Render()
+</div>
+
+<script>
+    var assistObj = null;
+    var stopStreaming = false;
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function onItemSelect(args) {
+        if (args.command.label === 'Accept') {
+            var editable = document.getElementById('editableText');
+            if (editable) {
+                editable.innerHTML = '<p>' + assistObj.prompts[assistObj.prompts.length - 1].response + '</p>';
+            }
+            assistObj.hidePopup();
+        } else if (args.command.label === 'Discard') {
+            assistObj.hidePopup();
+        }
+    }
+
+    function onSummarizeClick() {
+        if (assistObj) {
+            assistObj.showPopup();
+        }
+    }
+
+    function toolbarItemClicked(args) {
+        if (args.item.iconCss === 'e-icons e-inline-stop') {
+            stopStreaming = true;
+        }
+    }
+
+     async function streamResponse(response) {
+            let lastResponse = '';
+            const responseUpdateRate = 10;
+            let i = 0;
+            const responseLength = response.length;
+            while (i < responseLength && !stopStreaming) {
+                lastResponse += response[i];
+                i++;
+                if (i % responseUpdateRate === 0 || i === responseLength) {
+                    const htmlResponse = marked.parse(lastResponse);
+                    assistObj.addResponse(htmlResponse, i === responseLength);
+                }
+                await new Promise(resolve => setTimeout(resolve, 15)); // Delay for streaming effect
+            }
+        }
+
+        function onPromptRequest(args) {
+
+            fetch('/?handler=GetAIResponse', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ prompt: args.prompt })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                return response.json();
+            })
+            .then(responseText => {
+                const text = responseText.trim() || 'No response received.';
+                stopStreaming = false;
+                streamResponse(text);
+            })
+            .catch(error => {
+                assistObj.addResponse('⚠️ Something went wrong while connecting to the AI service. Please try again later.');
+                stopStreaming = true;
+            });
+        }
+</script>
