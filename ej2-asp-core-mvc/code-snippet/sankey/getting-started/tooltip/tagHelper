@@ -1,6 +1,6 @@
 <ejs-sankey id="sankey-container" width="90%" height="450px"
     title="California Energy Consumption in 2023"
-    sub-title="Source: Lawrence Livermore National Laboratory"
+    subTitle="Source: Lawrence Livermore National Laboratory"
     loaded="onSankeyLoaded">
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
@@ -14,22 +14,15 @@
             <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
         }
     </e-sankey-links>
-    <e-sankey-linksettings opacity="0.6" curvature="0.55" color-type="Source"></e-sankey-linksettings>
+    <e-sankey-linksettings opacity="0.6" curvature="0.55" colorType="Source"></e-sankey-linksettings>
     <e-sankey-labelsettings visible="true"></e-sankey-labelsettings>
     <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
-    <e-sankey-legendsettings visible="true" position="Bottom" item-padding="8"></e-sankey-legendsettings>
+    <e-sankey-legendsettings visible="true" position="Bottom" itemPadding="8"></e-sankey-legendsettings>
 </ejs-sankey>
 
 <script>
     function onSankeyLoaded(args) {
-        var element = document.getElementById('sankey');
+        var element = document.getElementById('sankey-container');
         if (element) element.setAttribute('title', '');
-        var isDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        if (isDevice) {
-            args.sankey.height = '600px';
-        } else {
-            args.sankey.height = '450px';
-        }
-        args.sankey.refresh();
     }
 </script>

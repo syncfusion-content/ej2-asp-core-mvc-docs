@@ -1,4 +1,4 @@
-<ejs-sankey id="sankey-container" width="90%" height="450px" node-click="onNodeClick" node-enter="onNodeEnter">
+<ejs-sankey id="sankey-container" width="90%" height="450px" nodeClick="onNodeClick" nodeEnter="onNodeEnter">
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {

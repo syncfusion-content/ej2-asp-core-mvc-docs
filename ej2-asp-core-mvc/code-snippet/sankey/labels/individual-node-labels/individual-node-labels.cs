@@ -2,12 +2,12 @@ public ActionResult Index()
 {
     List<SankeyNode> nodes = new List<SankeyNode>
     {
-        new SankeyNode { Id = "Agricultural Waste" },
-        new SankeyNode { Id = "Biomass Residues" },
-        new SankeyNode { Id = "Bio-conversion" },
-        new SankeyNode { Id = "Liquid Biofuel" },
-        new SankeyNode { Id = "Electricity" },
-        new SankeyNode { Id = "Heat" }
+        new SankeyNode { Id = "Agricultural Waste", Label = new SankeyChartDataLabel { Text = "Agri Waste", Padding = 0 } },
+        new SankeyNode { Id = "Biomass Residues", Label = new SankeyChartDataLabel { Text = "Biomass", Padding = 0 } },
+        new SankeyNode { Id = "Bio-conversion", Label = new SankeyChartDataLabel { Text = "Bio", Padding = 0 } },
+        new SankeyNode { Id = "Liquid Biofuel",Label = new SankeyChartDataLabel { Text = "Liquid", Padding = 0 } },
+        new SankeyNode { Id = "Electricity", Label = new SankeyChartDataLabel { Text = "Electricity", Padding = 0 } },
+        new SankeyNode { Id = "Heat", Label = new SankeyChartDataLabel { Text = "Heat", Padding = 0 } }
     };
 
     List<SankeyLink> links = new List<SankeyLink>

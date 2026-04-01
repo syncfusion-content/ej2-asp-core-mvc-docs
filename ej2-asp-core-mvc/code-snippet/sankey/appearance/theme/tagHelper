@@ -19,7 +19,6 @@
 
 <script>
     function onSankeyLoad(args) {
-        // Match React: theme="Tailwind"
-        args.sankey.theme = 'Tailwind';
+        args.chart.theme = 'Tailwind';
     }
 </script>

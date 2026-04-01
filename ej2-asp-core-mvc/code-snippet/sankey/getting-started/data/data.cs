@@ -2,10 +2,10 @@ public ActionResult Index()
 {
     List<SankeyNode> nodes = new List<SankeyNode>
     {
-        new SankeyNode { Id = "Energy Input", Label = "Energy Input" },
-        new SankeyNode { Id = "Generation", Label = "Generation" },
-        new SankeyNode { Id = "Distribution", Label = "Distribution" },
-        new SankeyNode { Id = "Consumption", Label = "Consumption" }
+        new SankeyNode { Id = "Energy Input", Label = new SankeyChartDataLabel { Text = "Energy Input" } },
+        new SankeyNode { Id = "Generation", Label = new SankeyChartDataLabel { Text = "Generation" } },
+        new SankeyNode { Id = "Distribution", Label = new SankeyChartDataLabel { Text = "Distribution" } },
+        new SankeyNode { Id = "Consumption", Label = new SankeyChartDataLabel { Text = "Consumption" } }
     };
 
     List<SankeyLink> links = new List<SankeyLink>

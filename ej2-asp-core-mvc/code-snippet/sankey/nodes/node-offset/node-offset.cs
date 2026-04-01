@@ -2,11 +2,12 @@ public ActionResult Index()
 {
     List<SankeyNode> nodes = new List<SankeyNode>
     {
-        new SankeyNode { Id = "Agricultural Waste", Offset = -50 },
-        new SankeyNode { Id = "Bio-conversion" },
-        new SankeyNode { Id = "Liquid Biofuel", Offset = 50 },
-        new SankeyNode { Id = "Electricity", Offset = -30 },
-        new SankeyNode { Id = "Heat", Offset = 30 }
+        new SankeyNode { Id = "Agricultural Waste", Offset = -11 },
+        new SankeyNode { Id = "Biomass Residues", Offset = -20 },
+        new SankeyNode { Id = "Bio-conversion", Offset = -20 },
+        new SankeyNode { Id = "Liquid Biofuel", Offset = 17 },
+        new SankeyNode { Id = "Electricity", Offset = 8 },
+        new SankeyNode { Id = "Heat" }
     };
 
     List<SankeyLink> links = new List<SankeyLink>

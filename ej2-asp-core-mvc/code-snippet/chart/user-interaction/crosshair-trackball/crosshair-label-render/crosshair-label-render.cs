@@ -11,7 +11,6 @@ public IActionResult CrosshairLabelRender()
     };
 
     ViewBag.dataSource = chartData;
-
     return View();
 }
 
