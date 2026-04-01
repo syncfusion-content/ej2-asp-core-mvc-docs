@@ -20,8 +20,6 @@ public ActionResult Index()
 
     ViewBag.SankeyNodes = nodes;
     ViewBag.SankeyLinks = links;
-
-    // React nodeStyle mapping
     ViewBag.NodeOpacity = 0.9;
     ViewBag.NodeHighlightOpacity = 1.0;
     ViewBag.NodeInactiveOpacity = 0.3;

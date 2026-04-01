@@ -19,12 +19,9 @@ public ActionResult Index()
 
     ViewBag.SankeyNodes = nodes;
     ViewBag.SankeyLinks = links;
-
-    // Node style from React nodeStyle
     ViewBag.NodeFill = "#4472C4";
     ViewBag.NodeOpacity = 0.8;
     ViewBag.NodeBorderWidth = 2;
-    ViewBag.NodeBorderColor = "#2E5090";
 
     return View();
 }

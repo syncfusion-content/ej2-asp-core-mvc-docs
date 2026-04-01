@@ -2,7 +2,7 @@
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
-            <e-sankey-node id="@node.Id"></e-sankey-node>
+            <e-sankey-node id="@node.Id" color="@node.Color"></e-sankey-node>
         }
     </e-sankey-nodes>
     <e-sankey-links>

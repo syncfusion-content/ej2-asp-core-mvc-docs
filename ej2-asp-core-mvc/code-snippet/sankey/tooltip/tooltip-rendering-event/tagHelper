@@ -17,11 +17,10 @@
 
 <script>
     function onSankeyTooltipRendering(args) {
-        if (args && args.data && args.data.name === 'link') {
-            var src = args.data.source.name, tgt = args.data.target.name, val = args.data.value;
-            args.content = 'Flow: ' + src + ' \u2192 ' + tgt + ' (' + val + ')';
-        } else if (args && args.data && args.data.name) {
-            args.content = 'Node: ' + args.data.name;
+        if (args.text === 'link') {
+            args.text = `Flow: ${args.link.sourceId} → ${args.link.targetId} (${args.link.value})`;
+        } else if (args.text) {
+            args.text = `Node: ${args.text}`;
         }
     }
 </script>

@@ -2,11 +2,9 @@
     <e-sankey-nodesettings
         fill="@ViewBag.NodeFill"
         opacity="@ViewBag.NodeOpacity"
-        width="@ViewBag.NodeWidth">
-        <e-sankey-nodesettings-border
-            color="@ViewBag.NodeBorderColor"
-            width="@ViewBag.NodeBorderWidth">
-        </e-sankey-nodesettings-border>
+        width="@ViewBag.NodeWidth"
+        stroke="@ViewBag.NodeBorderColor"
+        strokeWidth="@ViewBag.NodeBorderWidth">
     </e-sankey-nodesettings>
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
