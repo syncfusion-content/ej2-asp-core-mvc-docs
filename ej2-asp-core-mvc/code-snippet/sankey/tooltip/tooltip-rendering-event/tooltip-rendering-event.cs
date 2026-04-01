@@ -17,7 +17,6 @@ public ActionResult Index()
         new SankeyLink { SourceId = "Bio-conversion",     TargetId = "Heat",           Value = 280.845 }
     };
 
-    // Display subset used in the component instance (as in the snippet)
     ViewBag.SankeyNodes = new List<SankeyNode>
     {
         new SankeyNode { Id = "Agricultural Waste" },

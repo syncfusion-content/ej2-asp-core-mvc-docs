@@ -1,4 +1,4 @@
-<ejs-sankey id="sankey-container" width="90%" height="450px">
+<ejs-sankey id="sankey-container" width="90%" height="450px" load="onSankeyLoad">
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {
@@ -12,7 +12,7 @@
         }
     </e-sankey-links>
     <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>
-    <e-sankey-legendsettings visible="true" position="Custom" height="150px" width="150px"></e-sankey-legendsettings>
+    <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
 </ejs-sankey>
 
 <script>

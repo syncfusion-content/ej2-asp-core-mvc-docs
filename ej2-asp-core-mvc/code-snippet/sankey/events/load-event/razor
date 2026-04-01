@@ -1,11 +1,11 @@
 @Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
-    .Nodes(ViewBag.SankeyNodes)
-    .Links(ViewBag.SankeyLinks)
     .Tooltip(tooltip => tooltip.Enable(true))
     .LegendSettings(legend => legend.Visible(true))
     .Load("onSankeyLoad")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
     .Render()
 
 <script>

@@ -8,41 +8,41 @@
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.vietnamData)
         .Name("Vietnam")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.vietnamData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.indonesiaData)
         .Name("Indonesia")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.indonesiaData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.franceData)
         .Name("France")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.franceData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.polandData)
         .Name("Poland")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.polandData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.mexicoData)
         .Name("Mexico")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.mexicoData)
         .Add();
 })
 .Render()

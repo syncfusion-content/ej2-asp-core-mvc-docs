@@ -19,8 +19,8 @@
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea)
         .XName("x")
         .YName("high")
-        .DataSource(ViewBag.dataSource)
         .Opacity(0.5)
+        .DataSource(ViewBag.dataSource)
         .Add();
 })
 .Render()

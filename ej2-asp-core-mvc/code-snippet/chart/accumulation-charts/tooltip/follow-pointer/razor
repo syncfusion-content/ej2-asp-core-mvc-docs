@@ -2,11 +2,11 @@
 .EnableAnimation(true)
 .Series(series =>
 {
-    series.DataSource(ViewBag.dataSource)
-        .XName("x")
+    series.XName("x")
         .YName("y")
         .Name("Browser")
         .BorderRadius(3)
+        .DataSource(ViewBag.dataSource)
         .Add();
 })
 .Tooltip(tt => tt

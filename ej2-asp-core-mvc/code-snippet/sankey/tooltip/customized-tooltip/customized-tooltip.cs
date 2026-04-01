@@ -20,8 +20,6 @@ public ActionResult Index()
 
     ViewBag.SankeyNodes = nodes;
     ViewBag.SankeyLinks = links;
-
-    // Tooltip style from React tooltip.textStyle and fill
     ViewBag.TooltipFontFamily = "Arial";
     ViewBag.TooltipFontStyle = "normal";
     ViewBag.TooltipFontWeight = "500";

@@ -1,26 +1,18 @@
-@{
-    var crosshairTooltip = new { enable = true };
-}
-
 <ejs-stockchart id="container" crosshairLabelRender="crosshairLabelRender">
-
-    <e-stockchart-chartarea border="new { width = 0 }"></e-stockchart-chartarea>
-
+    <e-stockchart-chartarea>
+        <e-stockchartarea-border width="0"></e-stockchartarea-border>
+    </e-stockchart-chartarea>
     <e-stockchart-crosshairsettings enable="true" lineType="Both"></e-stockchart-crosshairsettings>
-
-    <e-stockchart-primaryxaxis valueType="DateTime"
-                               majorGridLines="new { width = 0 }"
-                               crosshairTooltip="crosshairTooltip">
+    <e-stockchart-primaryxaxis valueType="DateTime">
+          <e-majorgridlines width="0"></e-majorgridlines>
+            <e-crosshairtooltip enable="true"></e-crosshairtooltip>
     </e-stockchart-primaryxaxis>
-
-    <e-stockchart-primaryyaxis
-        lineStyle="new { color = \"transparent\" }"
-        majorTickLines="new { color = \"transparent\", height = 0 }"
-        crosshairTooltip="crosshairTooltip">
+    <e-stockchart-primaryyaxis>
+            <e-majorticklines color="transparent" height="0"></e-majorticklines>
+            <e-linestyle color="transparent"></e-linestyle>
+            <e-crosshairtooltip enable="true"></e-crosshairtooltip>
     </e-stockchart-primaryyaxis>
-
     <e-stockchart-series-collection>
-
         <e-stockchart-series
             dataSource="ViewBag.dataSource"
             xName="x"
@@ -28,9 +20,7 @@
             type="@Syncfusion.EJ2.Charts.ChartSeriesType.SplineArea"
             opacity="0.5">
         </e-stockchart-series>
-
     </e-stockchart-series-collection>
-
 </ejs-stockchart>
 
 <script>

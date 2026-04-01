@@ -1,6 +1,6 @@
 <button type="button" id="btnExport" style="margin-bottom:10px;" onclick="exportSankey()">Export PNG</button>
 
-<ejs-sankey id="sankey-container" width="90%" height="450px" exportComplete="onExportComplete">
+<ejs-sankey id="sankey-container" width="90%" height="450px" exportCompleted="onExportComplete">
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)
         {

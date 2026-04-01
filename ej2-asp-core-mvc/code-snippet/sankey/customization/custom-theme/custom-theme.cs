@@ -21,8 +21,6 @@ public ActionResult Index()
 
     ViewBag.SankeyNodes = nodes;
     ViewBag.SankeyLinks = links;
-
-    // Pass custom node fill color from your theme
     ViewBag.NodeFill = "#5A5A5A";
 
     return View();

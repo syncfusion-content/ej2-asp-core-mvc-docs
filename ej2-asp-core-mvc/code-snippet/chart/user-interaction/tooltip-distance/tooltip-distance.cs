@@ -35,7 +35,6 @@ namespace EJ2CoreSampleBrowser.Controllers.Chart
 
             ViewBag.vietnamData = vietnamData;
             ViewBag.polandData = polandData;
-
             return View();
         }
 
