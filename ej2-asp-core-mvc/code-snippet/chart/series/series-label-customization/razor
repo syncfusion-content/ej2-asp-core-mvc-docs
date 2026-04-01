@@ -6,7 +6,6 @@
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.vietnamData)
         .Name("Vietnam")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true)
@@ -16,12 +15,12 @@
             .ShowOverlapText(true)
             .Border(b => b.Width(2).Color("#2E7D32"))
             .Font(f => f.Size("12px").FontWeight("600").Color("#2E7D32")))
+        .DataSource(ViewBag.vietnamData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.indonesiaData)
         .Name("Indonesia")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true)
@@ -31,12 +30,12 @@
             .ShowOverlapText(true)
             .Border(b => b.Width(2).Color("#FB8C00"))
             .Font(f => f.Size("12px").FontWeight("600").Color("#FB8C00")))
+        .DataSource(ViewBag.indonesiaData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.franceData)
         .Name("France")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true)
@@ -46,12 +45,12 @@
             .ShowOverlapText(true)
             .Border(b => b.Width(2).Color("#1976D2"))
             .Font(f => f.Size("12px").FontWeight("600").Color("#1976D2")))
+        .DataSource(ViewBag.franceData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.polandData)
         .Name("Poland")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true)
@@ -61,12 +60,12 @@
             .ShowOverlapText(true)
             .Border(b => b.Width(2).Color("#8E24AA"))
             .Font(f => f.Size("12px").FontWeight("600").Color("#8E24AA")))
+        .DataSource(ViewBag.polandData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Line)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.mexicoData)
         .Name("Mexico")
         .Marker(m => m.Visible(true))
         .LabelSettings(ls => ls.Visible(true)
@@ -76,6 +75,7 @@
             .ShowOverlapText(true)
             .Border(b => b.Width(2).Color("#D84315"))
             .Font(f => f.Size("12px").FontWeight("600").Color("#D84315")))
+        .DataSource(ViewBag.mexicoData)
         .Add();
 })
 .Render()

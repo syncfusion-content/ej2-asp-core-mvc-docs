@@ -11,8 +11,16 @@
             <e-sankey-link sourceId="@link.SourceId" targetId="@link.TargetId" value="@link.Value"></e-sankey-link>
         }
     </e-sankey-links>
-    <e-sankey-tooltipsettings enable="true"
-                              nodeFormat="&lt;b&gt;${source.name} to ${target..name}&lt;/b&gt;&lt;br/&gt;Value: &lt;b&gt;${value}&lt;/b&gt;">
+    <e-sankey-tooltipsettings enable="true">
     </e-sankey-tooltipsettings>
     <e-sankey-legendsettings visible="true"></e-sankey-legendsettings>
 </ejs-sankey>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var sankey = document.getElementById("sankey-container").ej2_instances[0];
+        sankey.tooltip.nodeTemplate = "${name}: ${value} TBtu"
+        sankey.tooltip.linkTemplate = "${start.name}: ${start.out} TBtu → ${target.name}: ${target.in} TBtu"
+    });
+</script>

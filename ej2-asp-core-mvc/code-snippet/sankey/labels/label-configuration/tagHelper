@@ -13,10 +13,10 @@
     </e-sankey-links>
     <e-sankey-labelsettings 
         visible="true" 
-        font-family="Segoe UI" 
-        font-style="Normal" 
-        font-weight="bold" 
-        font-size="14px" 
+        fontFamily="Segoe UI" 
+        fontStyle="Normal" 
+        fontWeight="bold" 
+        fontSize="14px" 
         color="#333">
     </e-sankey-labelsettings>
     <e-sankey-tooltipsettings enable="true"></e-sankey-tooltipsettings>

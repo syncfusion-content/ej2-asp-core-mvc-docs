@@ -1,8 +1,8 @@
 <ejs-sankey id="sankey-container" width="90%" height="450px">
     <e-sankey-nodesettings
         fill="@ViewBag.NodeFill"
-        opacity="@ViewBag.NodeOpacity">
-        <e-sankey-nodesettings-border width="@ViewBag.NodeBorderWidth" color="@ViewBag.NodeBorderColor"></e-sankey-nodesettings-border>
+        opacity="@ViewBag.NodeOpacity"
+        width="@ViewBag.NodeBorderWidth">
     </e-sankey-nodesettings>
     <e-sankey-nodes>
         @foreach (var node in ViewBag.SankeyNodes)

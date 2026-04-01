@@ -77,7 +77,6 @@ namespace EJ2CoreSampleBrowser.Controllers.Chart
             ViewBag.franceData = franceData;
             ViewBag.polandData = polandData;
             ViewBag.mexicoData = mexicoData;
-
             return View();
         }
 

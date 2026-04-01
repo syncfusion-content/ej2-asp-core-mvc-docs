@@ -8,17 +8,17 @@
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.vietnamData)
         .Name("Vietnam")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.vietnamData)
         .Add();
 
     series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column)
         .XName("x")
         .YName("y")
-        .DataSource(ViewBag.polandData)
         .Name("Poland")
         .Marker(m => m.Visible(true))
+        .DataSource(ViewBag.polandData)
         .Add();
 })
 .Render()
