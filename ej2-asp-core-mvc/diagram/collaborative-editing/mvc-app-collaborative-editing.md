@@ -73,7 +73,7 @@ To enable real-time collaboration, configure SignalR HubConnection in your ##Pla
 * Use [getDiagramUpdates]() to produce a compact set of incremental updates (JSON-formatted changes) representing just the changes, not the entire diagram.
 * Send these changes to the hub method `BroadcastToOtherUsers`, which relays them to all users joined to the same SignalR group (room).
 * Each remote user listens for ReceiveData and applies the incoming changes with [setDiagramUpdates](), keeping their view synchronized without reloading the full diagram.
-* Enable the `enableCollaborativeEditing` property on the diagram to treat multi-step edits (like drag/resize sequences or batch changes) as a single operation.
+* Enable the [enableCollaborativeEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_EnableCollaborativeEditing) property on the diagram to treat multi-step edits (like drag/resize sequences or batch changes) as a single operation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
