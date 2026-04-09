@@ -48,4 +48,4 @@ To customize the minimum width according to specific layout requirements, config
 {% endtabs %}
 {% endif %}
 
-![Configuring the minimum width in the Pivot Table control](../images/min-width.png)
+![Configuring the minimum width in the Pivot Table control](../images/min-width.webp)

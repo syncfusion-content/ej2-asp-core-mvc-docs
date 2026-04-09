@@ -56,4 +56,4 @@ The following example demonstrates how to set the **Country** column to use a `D
 
 
 
-![Drill Through Grid Cell Edit Type](../images/edit-type.png)
+![Drill Through Grid Cell Edit Type](../images/edit-type.webp)

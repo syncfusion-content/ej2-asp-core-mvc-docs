@@ -246,7 +246,7 @@ In this example, "Date" and "Product" are positioned in the column axis, "Countr
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Pivot Table with Fields](images/pivottable-fields.png)
+![ASP.NET MVC Pivot Table with Fields](images/pivottable-fields.webp)
 
 ## Applying Formatting to a Value Field
 
@@ -264,7 +264,7 @@ Within each format object in the [FormatSetting](https://help.syncfusion.com/cr/
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting in ASP.NET MVC Pivot Table](images/pivottable-value-format.png)
+![Formatting in ASP.NET MVC Pivot Table](images/pivottable-value-format.webp)
 
 This approach allows you to apply different formatting patterns to multiple value fields by adding additional objects to the [FormatSetting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array. Each object in the array can target a different field, providing complete control over how numerical data is displayed in the Pivot Table.
 
@@ -280,7 +280,7 @@ To enable the field list, set the [ShowFieldList](https://help.syncfusion.com/cr
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Pivot Table with Field List](images/pivottable-with-pivotfield.png)
+![ASP.NET MVC Pivot Table with Field List](images/pivottable-with-pivotfield.webp)
 
 ## Enable Grouping Bar
 
@@ -294,7 +294,7 @@ Users can also use the grouping bar to sort, filter, or remove fields quickly wi
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping in ASP.NET MVC Pivot Table](images/pivottable-group.png)
+![Grouping in ASP.NET MVC Pivot Table](images/pivottable-group.webp)
 
 ## Exploring Filter Axis
 
@@ -327,6 +327,6 @@ Below is a sample code that shows how to set up calculated fields both through c
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.png)
+![ASP.NET MVC Pivot Table with Calculate Field](images/pivottable-calculatefield.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20MVC%20Razor%20Examples).

@@ -52,9 +52,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 
 <!-- markdownlint-disable MD012 -->
-![Pivot Table field list icon in toolbar](images/gs_fieldlist_icon.png)
+![Pivot Table field list icon in toolbar](images/gs_fieldlist_icon.webp)
 <br/>
-![Pivot Table built-in field list popup dialog](images/gs_fieldlist_dialog.png)
+![Pivot Table built-in field list popup dialog](images/gs_fieldlist_dialog.webp)
 
 
 ## Stand-alone Field List (Fixed)
@@ -88,7 +88,7 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 
 
-![Stand-alone static field list](images/staticfieldlist.png)
+![Stand-alone static field list](images/staticfieldlist.webp)
 
 ## Invoking dynamic Field List (Customized)
 
@@ -125,7 +125,7 @@ The sample code below shows how to open the Field List dialog using an external 
 
 
 
-![Customized field list popup opened via external button](images/fieldlist-custom.png)
+![Customized field list popup opened via external button](images/fieldlist-custom.webp)
 
 
 ## Search desired field
@@ -165,7 +165,7 @@ To enable the search box in the stand-alone Field List UI, set the [`EnableField
 
 
 
-![Searching Static FieldList](images/Search desired field in static field list.png)
+![Searching Static FieldList](images/Search desired field in static field list.webp)
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -196,7 +196,7 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 
 
-![Searching Popup FieldList](images/Search desired field in popup field list.png)
+![Searching Popup FieldList](images/Search desired field in popup field list.webp)
 
 ## Option to sort fields
 
@@ -235,7 +235,7 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 
 
-![Fields in the Field list UI arranged in descending order](images/fieldlist-sort.png)
+![Fields in the Field list UI arranged in descending order](images/fieldlist-sort.webp)
 
 ## Group fields under desired folder name
 
@@ -268,13 +268,13 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 
 
-![Fields displayed in folder structure](images/groupNameTreeview.png)
+![Fields displayed in folder structure](images/groupNameTreeview.webp)
 
 ## Add or remove fields
 
 The Field List allows users to quickly modify their data analysis by selecting or unselecting fields as needed. Using the checkbox beside each field, users can easily add fields to include them in the report or remove fields to exclude them from the current analysis at runtime.
 
-![Field List with checkboxes for adding or removing fields](images/fieldlist_treeview.png)
+![Field List with checkboxes for adding or removing fields](images/fieldlist_treeview.webp)
 
 ## Remove specific field(s) from displaying
 
@@ -305,57 +305,57 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 
 
-![Pivot Table field list with hidden fields excluded](images/fieldlist_hide.png)
+![Pivot Table field list with hidden fields excluded](images/fieldlist_hide.webp)
 
 ## Re-arranging fields
 
 To rearrange fields, users can drag a field from the Field List and drop it into the desired axis (column, row, value, or filter) using the drag-and-drop holder. This allows users to modify the report dynamically during runtime, adjusting the layout to suit their needs.
 
-![Field list showing drag-and-drop axes](images/fieldlist_axes.png)
+![Field list showing drag-and-drop axes](images/fieldlist_axes.webp)
 
 ## Filtering members
 
 Users can filter members in the row, column, and filter axes by selecting the filter icon next to each field. This opens a dialog where users can choose to include or exclude specific members from the Pivot Table. To learn more about filtering members, [refer to the filtering documentation](./filtering).
 
-![Filter icon next to each field](images/fieldlist_filtericon.png)
+![Filter icon next to each field](images/fieldlist_filtericon.webp)
 
-![Filter dialog to include or exclude members](images/fieldlist_editor.png)
+![Filter dialog to include or exclude members](images/fieldlist_editor.webp)
 
-![Pivot Table after filtering members](images/fieldlist_filteringgrid.png)
+![Pivot Table after filtering members](images/fieldlist_filteringgrid.webp)
 
 ## Sorting members
 
 The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details on sorting members, [refer here](./sorting).
 
-![Sorting the field list](images/fieldlist_sorticon.png)
+![Sorting the field list](images/fieldlist_sorticon.webp)
 
-![Sorted pivot table](images/fieldlist_sortgrid.png)
+![Sorted pivot table](images/fieldlist_sortgrid.webp)
 
 ## Calculated fields
 
 The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
 
-![Enabling calculated field in Field List UI](images/gs_calc_button.png)
+![Enabling calculated field in Field List UI](images/gs_calc_button.webp)
 
-![Creating new calculated field](images/gs_calc_dialog.png)
+![Creating new calculated field](images/gs_calc_dialog.webp)
 
-![New calculated field named Total Amount has been added in the Pivot Table](images/gs_calc_grid.png)
+![New calculated field named Total Amount has been added in the Pivot Table](images/gs_calc_grid.webp)
 
 ## Changing aggregation type of value fields at runtime
 
 Users can perform calculations on a group of values by selecting an aggregation type. Each value field in the Field List appears with a dropdown icon. Clicking this icon allows users to choose an aggregation type, such as sum, average, or count, at runtime. Once selected, the Pivot Table updates automatically to reflect the chosen aggregation type for the values. For more details on aggregation, refer to [aggregation](./aggregation).
 
-![Icon to change aggregation type](images/aggregation_fl_icon.png)
+![Icon to change aggregation type](images/aggregation_fl_icon.webp)
 
-![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.png)
+![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.webp)
 
-![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](images/fieldlist_aggregation_grid.png)
+![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](images/fieldlist_aggregation_grid.webp)
 
 ## Defer layout update
 
 The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`AllowDeferLayoutUpdate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
 
-![Defer layout update checkbox](images/fieldlist_deferupdate.png)
+![Defer layout update checkbox](images/fieldlist_deferupdate.webp)
 
 ## Show built-in Field List (Popup) over specific target
 
@@ -388,7 +388,7 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 
 
-![Field list popup over target](images/popup-fieldlist-specifictarget.png)
+![Field list popup over target](images/popup-fieldlist-specifictarget.webp)
 
 ## Show field list using toolbar
 
@@ -419,7 +419,7 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 
 
-![Field list in toolbar](images/fieldlist_toolbar.png)
+![Field list in toolbar](images/fieldlist_toolbar.webp)
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -452,7 +452,7 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 
 
-![Field list with captions applied](images/fieldlist_caption1.png)
+![Field list with captions applied](images/fieldlist_caption1.webp)
 
 ## Show values button
 
@@ -487,7 +487,7 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 
 
-![Values button in field list for repositioning measures](images/fieldlistmeasureatdifferentposition.png)
+![Values button in field list for repositioning measures](images/fieldlistmeasureatdifferentposition.webp)
 
 ## Events
 
@@ -591,7 +591,7 @@ In the following code example, we changed the caption of the dropped field using
 
 
 
-![Field dropped event in field list](images/fielddropped_fieldlist.png)
+![Field dropped event in field list](images/fielddropped_fieldlist.webp)
 
 ### ActionBegin
 
