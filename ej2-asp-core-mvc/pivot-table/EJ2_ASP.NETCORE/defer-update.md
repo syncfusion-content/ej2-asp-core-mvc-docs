@@ -47,7 +47,7 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 
 
-![Defer update in popup field list](images/fieldlist_deferupdate.png)
+![Defer update in popup field list](images/fieldlist_deferupdate.webp)
 
 ## Stand-alone Field List (Fixed)
 
@@ -82,4 +82,4 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 
 
-![Defer update in fixed field list](images/defer-update-static.png)
+![Defer update in fixed field list](images/defer-update-static.webp)

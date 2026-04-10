@@ -71,7 +71,7 @@ Use these standard format codes to specify the formatting type:
 
 
 
-![Number formatting example](images/formatting.png)
+![Number formatting example](images/formatting.webp)
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -118,7 +118,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 
 
-![Custom number formatting](images/formatting-custom.png)
+![Custom number formatting](images/formatting-custom.webp)
 
 ## Toolbar
 
@@ -149,7 +149,7 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 
 
-![Number formatting toolbar](images/formatting-toolbar.png)
+![Number formatting toolbar](images/formatting-toolbar.webp)
 
 ## Invoking formatting dialog through external button
 
@@ -180,7 +180,7 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 
 
-![Number formatting dialog](images/formatting-dialog.png)
+![Number formatting dialog](images/formatting-dialog.webp)
 
 ## Events
 

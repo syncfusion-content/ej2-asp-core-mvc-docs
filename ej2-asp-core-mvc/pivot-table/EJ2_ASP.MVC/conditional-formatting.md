@@ -44,16 +44,16 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 
 <!-- markdownlint-disable MD012 -->
-![Conditional formatting icon in toolbar](images/toolbar_cformatting.png)
+![Conditional formatting icon in toolbar](images/toolbar_cformatting.webp)
 <br/>
 <br/>
-![Adding new conditional format](images/toolbar_cformatting_dialog.png)
+![Adding new conditional format](images/toolbar_cformatting_dialog.webp)
 <br/>
 <br/>
-![Setting conditional format criteria](images/toolbar_cformatting_dialog_apply.png)
+![Setting conditional format criteria](images/toolbar_cformatting_dialog_apply.webp)
 <br/>
 <br/>
-![Resultant pivot table on applied conditional format](images/toolbar_cformatting_grid.png)
+![Resultant pivot table on applied conditional format](images/toolbar_cformatting_grid.webp)
 
 ## Configure conditional formatting through code-behind
 
@@ -102,9 +102,9 @@ Users can also access the conditional formatting dialog through external UI elem
 
 
 
-![Conditional formatting dialog opened from external button](images/cond-format-btn.png)
+![Conditional formatting dialog opened from external button](images/cond-format-btn.webp)
 
-![Conditional formatting dialog](images/cond-format-btn2.png)
+![Conditional formatting dialog](images/cond-format-btn2.webp)
 
 ## Conditional formatting for all fields
 
@@ -137,7 +137,7 @@ To format all value fields together, use the [`PivotViewConditionalFormatSetting
 
 
 
-![Conditional formatting applied to all value fields](images/cformatting_all.png)
+![Conditional formatting applied to all value fields](images/cformatting_all.webp)
 
 ## Conditional formatting for specific value field
 
@@ -168,7 +168,7 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 
 
-![Conditional formatting for specific value field](images/cformatting_single.png)
+![Conditional formatting for specific value field](images/cformatting_single.webp)
 
 ### Conditional formatting for specific row or column
 
@@ -209,7 +209,7 @@ You can apply conditional formatting for specific row or column using [`Label`](
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.
 
-![Editing and removing conditional formatting rules](images/cformatting_remove.png)
+![Editing and removing conditional formatting rules](images/cformatting_remove.webp)
 
 ## Event
 

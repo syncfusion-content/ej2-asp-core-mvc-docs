@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar in ##Platform_Name## Pivot Table Component
+title: Grouping Bar in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Grouping Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping Bar
@@ -48,7 +48,7 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 
 
-![Pivot table with grouping bar enabled](images/gs_groupingbar.png)
+![Pivot table with grouping bar enabled](images/gs_groupingbar.webp)
 
 The grouping bar offers additional options to modify its appearance and behavior using the `e-groupingBarSettings` property.
 
@@ -83,7 +83,7 @@ To display the fields panel, set the [`ShowFieldsPanel`](https://help.syncfusion
 
 
 
-![Grouping bar with fields panel shown](images/showfieldspanel.png)
+![Grouping bar with fields panel shown](images/showfieldspanel.webp)
 
 ## Show or hide all filter icon
 
@@ -119,7 +119,7 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 
 
-![Pivot Table filter icon example](images/groupingbar-filter.png)
+![Pivot Table filter icon example](images/groupingbar-filter.webp)
 
 ## Show or hide specific filter icon
 
@@ -152,7 +152,7 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 
 
-![Filter icon hidden for specific fields](images/groupingbar-filter-specific.png)
+![Filter icon hidden for specific fields](images/groupingbar-filter-specific.webp)
 
 ## Show or hide all sort icon
 
@@ -187,7 +187,7 @@ To disable the sort option, set the [`ShowSortIcon`](https://help.syncfusion.com
 
 
 
-![Pivot Table sort icon example](images/groupingbar-sort.png)
+![Pivot Table sort icon example](images/groupingbar-sort.webp)
 
 ## Show or hide specific sort icon
 
@@ -220,7 +220,7 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 
 
-![Sort icon hidden for specific fields](images/groupingbar-sort-specific.png)
+![Sort icon hidden for specific fields](images/groupingbar-sort-specific.webp)
 
 ## Show or hide all remove icon
 
@@ -255,7 +255,7 @@ If you want to hide the remove icon, set the[`ShowRemoveIcon`](https://help.sync
 
 
 
-![Pivot Table remove icon example](images/groupingbar-remove.png)
+![Pivot Table remove icon example](images/groupingbar-remove.webp)
 
 ## Show or hide a specific remove icon
 
@@ -288,7 +288,7 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 
 
-![Remove icon hidden for specific fields](images/groupingbar-remove-specific.png)
+![Remove icon hidden for specific fields](images/groupingbar-remove-specific.webp)
 
 ## Disable all fields from dragging
 
@@ -319,7 +319,7 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 
 
-![Dragging disabled for all fields](images/gbar_drag.png)
+![Dragging disabled for all fields](images/gbar_drag.webp)
 
 ## Disable specific field from dragging
 
@@ -383,7 +383,7 @@ To exclude specific fields, add the field names to the [`ExcludeFields`](https:/
 
 
 
-![Exclude field from grouping bar](images/excludefieldgroupingbar.png)
+![Exclude field from grouping bar](images/excludefieldgroupingbar.webp)
 
 ## Changing aggregation type of value fields at runtime
 
@@ -417,11 +417,11 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 
 <!-- markdownlint-disable MD012 -->
-![Aggregation icon in grouping bar](images/aggregation_gb_icon.png)
+![Aggregation icon in grouping bar](images/aggregation_gb_icon.webp)
 <br/>
 <br/>
 <br/>
-![Aggregation dropdown menu](images/aggregation_gb_menu.png)
+![Aggregation dropdown menu](images/aggregation_gb_menu.webp)
 
 ## Show or hide specific dropdown icon
 
@@ -454,7 +454,7 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 
 
-![Specific dropdown icon hidden](images/groupingbar-dropdown-specific.png)
+![Specific dropdown icon hidden](images/groupingbar-dropdown-specific.webp)
 
 > The following properties—[`ShowFilterIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowFilterIcon), [`ShowSortIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowSortIcon), [`ShowValueTypeIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowValueTypeIcon) and [`AllowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_AllowDragAndDrop) in fields of [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) apply to both the grouping bar and field list.
 
@@ -491,7 +491,7 @@ The **Values** button appears in the grouping bar when the [`ShowValuesButton`](
 
 
 
-![Values button in grouping bar](images/groupingbarvaluebutton.png)
+![Values button in grouping bar](images/groupingbarvaluebutton.webp)
 
 ## Event
 
@@ -676,7 +676,7 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 
 
-![AggregateMenuOpen event](images/aggregatemenuopen.png)
+![AggregateMenuOpen event](images/aggregatemenuopen.webp)
 
 > The [`AggregateMenuOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateMenuOpen), [`FieldRemove`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldRemove), [`FieldDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldDrop), [`FieldDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldDragStart) and [`OnFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnFieldDropped) events are available for both the grouping bar and field list.
 
