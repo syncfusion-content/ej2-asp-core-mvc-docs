@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Syncfusion Pivot Table Component
+title: Grouping in ##Platform_Name## Pivot Table Component | Syncfusion
 description: Learn here all about Grouping in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping

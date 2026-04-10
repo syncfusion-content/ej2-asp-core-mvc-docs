@@ -19,7 +19,7 @@ Internationalization library provides support for formatting and parsing the num
 
 By default, all the Essential<sup style="font-size:70%">&reg;</sup> JS 2 component are specific to English culture ('en-US'). If you want to go with the different culture other than English, follow the below steps.
 
-* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](http://cldr.unicode.org/index/cldr-spec/json).
+* Install the `CLDR-Data` package by using the below command (it installs the CLDR JSON data). For more information about CLDR-Data, refer to this [link](https://cldr.unicode.org/index/cldr-spec/cldr-json-bindings).
 
 ```
 npm install cldr-data --save
@@ -107,7 +107,7 @@ N> * By default, `locale` value is `en-US`. If you want to change the `en-US` cu
 
 ### Decimal separators 
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/#changing-current-locale) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization#changing-current-locale) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
 

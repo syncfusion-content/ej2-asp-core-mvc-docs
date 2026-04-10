@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping Bar in ##Platform_Name## Pivot Table Component
+title: Grouping Bar in ##Platform_Name## Syncfusion Pivot Table Component
 description: Learn here all about Grouping Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grouping Bar

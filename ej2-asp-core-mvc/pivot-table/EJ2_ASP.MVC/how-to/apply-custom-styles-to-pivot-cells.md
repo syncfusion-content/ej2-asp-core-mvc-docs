@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+title: Apply custom styles for cells in Syncfusion ##Platform_Name## Pivot Table
 description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
@@ -8,7 +8,7 @@ documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
 
-# Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+# Apply custom style to pivot cells in ##Platform_Name## Pivot Table
 
 The ASP.NET MVC Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
