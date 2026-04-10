@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+title: Apply custom styles for cells in Syncfusion ##Platform_Name## Pivot Table
 description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
