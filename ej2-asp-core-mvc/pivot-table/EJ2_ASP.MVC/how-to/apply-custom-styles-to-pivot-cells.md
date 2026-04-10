@@ -8,7 +8,7 @@ documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
 
-# Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+# Apply custom style to pivot cells in ##Platform_Name## Pivot Table
 
 The ASP.NET MVC Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
