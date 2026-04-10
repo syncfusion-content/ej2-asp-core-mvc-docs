@@ -52,7 +52,7 @@ These dimension properties support multiple formats to accommodate various layou
 
 
 
-![Pivot table height and width example](images/height-width.png)
+![Pivot table height and width example](images/height-width.webp)
 
 ## Row Height
 
@@ -87,7 +87,7 @@ For example, in the sample code below, the [`RowHeight`](https://help.syncfusion
 
 
 
-![Pivot table row height](images/row-height.png)
+![Pivot table row height](images/row-height.webp)
 
 ## Column Width
 
@@ -122,7 +122,7 @@ In the following example, the [`ColumnWidth`](https://help.syncfusion.com/cr/asp
 
 
 
-![Pivot table column width](images/column-width.png)
+![Pivot table column width](images/column-width.webp)
 
 ### Adjust width based on columns
 
@@ -153,7 +153,7 @@ By default, when the component width exceeds the total width of all columns, the
 
 
 
-![Auto resizing columns](images/allowautoresizing.png)
+![Auto resizing columns](images/allowautoresizing.webp)
 
 ## Reorder
 
@@ -186,7 +186,7 @@ To enable this option, set the [`AllowReordering`](https://help.syncfusion.com/c
 
 
 
-![Column reorder example](images/reorder.png)
+![Column reorder example](images/reorder.webp)
 
 ## Column Resizing
 
@@ -221,7 +221,7 @@ This option is enabled by default. To control column resizing, set the [`AllowRe
 
 
 
-![Column resizing example](images/resize.png)
+![Column resizing example](images/resize.webp)
 
 ## Text Wrap
 
@@ -252,7 +252,7 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 
 
-![Text wrap in pivot table](images/textwrap.png)
+![Text wrap in pivot table](images/textwrap.webp)
 
 ## Text Align
 
@@ -288,7 +288,7 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 
 
-![TextAlign](images/textalign.png)
+![TextAlign](images/textalign.webp)
 
 ## AutoFit
 
@@ -319,7 +319,7 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 
 
-![Autofit columns example](images/autofit-method.png)
+![Autofit columns example](images/autofit-method.webp)
 
 > When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
@@ -348,7 +348,7 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 
 
-![Autofit with grouping bar](images/autofit-grouping.png)
+![Autofit with grouping bar](images/autofit-grouping.webp)
 
 ### Autofit Specific Columns
 
@@ -381,7 +381,7 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 
 
-![Autofit specific columns](images/autofit-event.png)
+![Autofit specific columns](images/autofit-event.webp)
 
 ## Grid Lines
 
@@ -424,7 +424,7 @@ The following grid line modes are available:
 
 
 
-![Grid lines example](images/gridlines.png)
+![Grid lines example](images/gridlines.webp)
 
 ## Selection
 
@@ -462,7 +462,7 @@ The Pivot Table provides two selection modes, controlled by the [`Type`](https:/
 
 
 
-![Pivot table selection](images/selection.png)
+![Pivot table selection](images/selection.webp)
 
 ### Selection mode
 
@@ -500,7 +500,7 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 
 
-![Selection mode example](images/selection2.png)
+![Selection mode example](images/selection2.webp)
 
 ### Cell Selection Mode
 
@@ -535,7 +535,7 @@ To set the cell selection mode, use the [`CellSelectionMode`](https://help.syncf
 
 > To use cell selection modes, ensure that the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Mode) property in [`PivotViewSelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html) is set to **Cell** or **Both** and the [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSelectionSettings.html#Syncfusion_EJ2_PivotView_PivotViewPivotSelectionSettings_Type) property is set to **Multiple**. This allows users to select more than one cell at a time for better comparison and review.
 
-![Cell selection modes](images/cell-selection.png)
+![Cell selection modes](images/cell-selection.webp)
 
 ### Changing background color of the selected cell
 
@@ -568,7 +568,7 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 
 
-![Selected cell color example](images/cell-selection-color.png)
+![Selected cell color example](images/cell-selection-color.webp)
 
 ### Event
 
@@ -601,7 +601,7 @@ When a user finishes selecting cells, the `CellSelected` event is triggered. Thi
 
 
 
-![Cell selected event](images/cellselected_event.png)
+![Cell selected event](images/cellselected_event.webp)
 
 #### CellSelecting
 
@@ -675,7 +675,7 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 
 
-![Clip mode example](images/clipmode.png)
+![Clip mode example](images/clipmode.webp)
 
 ## Cell Template
 
@@ -710,7 +710,7 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 
 
-![Pivot table cell template](images/cell_template.png)
+![Pivot table cell template](images/cell_template.webp)
 
 ## Events
 

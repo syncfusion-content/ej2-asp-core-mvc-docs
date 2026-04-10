@@ -75,7 +75,7 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 
 
-![Pivot Table normal edit mode](images/edit-normal.png)
+![Pivot Table normal edit mode](images/edit-normal.webp)
 
 ## Dialog
 
@@ -106,7 +106,7 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 
 
-![Pivot Table dialog edit mode](images/edit-dialog.png)
+![Pivot Table dialog edit mode](images/edit-dialog.webp)
 
 ## Batch
 
@@ -137,7 +137,7 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 
 
-![Pivot Table batch edit mode](images/edit-batch.png)
+![Pivot Table batch edit mode](images/edit-batch.webp)
 
 ## Command column
 
@@ -181,7 +181,7 @@ N>
 
 
 
-![Pivot Table command column editing](images/edit-command.png)
+![Pivot Table command column editing](images/edit-command.webp)
 
 ## Inline Editing
 
@@ -212,7 +212,7 @@ The inline editing option provides streamlined data modification by allowing dir
 
 
 
-![Pivot Table inline editing](images/inline-editting.png)
+![Pivot Table inline editing](images/inline-editting.webp)
 
 ## Editing using the pivot chart
 
@@ -245,10 +245,10 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 
 
-![Pivot chart drill-through before editing](images/drillthrough-chart-before.png)
+![Pivot chart drill-through before editing](images/drillthrough-chart-before.webp)
 <br/>
 <br/>
-![Pivot chart editing dialog](images/editing-dialog.png)
+![Pivot chart editing dialog](images/editing-dialog.webp)
 
 ## Events
 

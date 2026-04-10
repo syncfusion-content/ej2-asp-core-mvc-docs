@@ -58,7 +58,7 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 
 
-![CalculatedField applied](images/calculatedfield.png)
+![CalculatedField applied](images/calculatedfield.webp)
 
 ## Opening the calculated field dialog programmatically
 
@@ -89,9 +89,9 @@ You can display the calculated field dialog by calling the `CreateCalculatedFiel
 
 
 
-![Pivot Table - calculated field](images/calc-field-btn.png)
+![Pivot Table - calculated field](images/calc-field-btn.webp)
 
-![Calculated field popup](images/calculatdfield-btn-dropdown.png)
+![Calculated field popup](images/calculatdfield-btn-dropdown.webp)
 
 ## Editing through the field list and grouping bar
 
@@ -105,10 +105,10 @@ To edit an existing calculated field:
 4. Make changes to the field name, formula, or format as needed.
 5. Click **OK** to apply the changes.
 
-![Editing the calculated field](images/calculatdfield-grouping-edit1.png)
+![Editing the calculated field](images/calculatdfield-grouping-edit1.webp)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png)
+![Editing the calculated field formula](images/calculatdfield-grouping-edit2.webp)
 
 ## Renaming an existing calculated field
 
@@ -122,10 +122,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.png)
+![Editing the calculated field](images/calculatdfield-renaming1.webp)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.png)
+![Renaming the calculated field](images/calculatdfield-renaming2.webp)
 
 ## Editing an existing calculated field formula
 
@@ -142,10 +142,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.png)
+![Editing the calculated field](images/calculatdfield-field-edit1.webp)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+![Editing the calculated field formula](images/calculatdfield-field-edit2.webp)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -161,13 +161,13 @@ To reuse an existing formula:
 6. Modify the formula further if needed, or use it as is.
 7. Click **OK** to create the new calculated field.
 
-![Dragging the existing calculated field](images/calculatdfield-reusing1.png)
+![Dragging the existing calculated field](images/calculatdfield-reusing1.webp)
 <br/>
 
-![Dragging field to formula](images/calculatdfield-reusing2.png)
+![Dragging field to formula](images/calculatdfield-reusing2.webp)
 <br/>
 
-![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png)
+![Reusing the existing calculated field formula](images/calculatdfield-reusing3.webp)
 
 ## Applying formatting to calculated field values
 
@@ -187,13 +187,13 @@ To apply formatting to calculated field values via the user interface, use the b
 
 > **Note:** By default, **None** is selected in the dropdown.
 
-![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png)
+![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.webp)
 
 ### Applying custom formatting
 
 For specific formatting requirements, select the **Custom** option from the "Format" dropdown. This allows you to enter custom format patterns that meet your exact display needs.
 
-![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png)
+![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.webp)
 
 ## Supported operators and functions for the calculated field formula
 
@@ -340,7 +340,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 
 
-![Calculated field with conditional formula](images/calculatedfield-conditional.png)
+![Calculated field with conditional formula](images/calculatedfield-conditional.webp)
 
 ## Event
 
