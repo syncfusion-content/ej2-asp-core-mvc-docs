@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+title: Apply custom styles for cells in Syncfusion ##Platform_Name## Pivot Table
 description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
@@ -8,7 +8,7 @@ documentation: ug
 publishingplatform: ##Platform_Name## 
 ---
 
-# Apply custom style to pivot cells in ##Platform_Name## Pivot Table Component
+# Apply custom style to pivot cells in ##Platform_Name## Pivot Table
 
 The ASP.NET MVC Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
@@ -50,6 +50,6 @@ The following example shows how to apply styles to:
 {% endtabs %}
 {% endif %}
 
-![Apply custom style to pivot cells](../images/apply-custom-styles.png)
+![Apply custom style to pivot cells](../images/apply-custom-styles.webp)
 
 N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [`PivotViewValueSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html) property to any other delimiter instead of the default separator.

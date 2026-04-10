@@ -76,7 +76,7 @@ For each value field, the aggregation type can be set using the property [`type`
 
 
 
-![DifferenceFrom aggregation type](images/aggregation_differencefrom.png)
+![DifferenceFrom aggregation type](images/aggregation_differencefrom.webp)
 
 > By default, the aggregation will be considered as [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html).
 
@@ -85,10 +85,10 @@ For each value field, the aggregation type can be set using the property [`type`
 You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., [**Sum**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), **Average**, [**Count**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html)). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
 
 <!-- markdownlint-disable MD012 -->
-![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.png)
+![List of pre-defined aggregation types to be changed via Field List](images/aggregation_fl_menu.webp)
 <br/>
 
-![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.png)
+![List of pre-defined aggregation types to be changed via Grouping Bar](images/aggregation_gb_menu.webp)
 
 ## Show desired aggregation types in its dropdown menu
 
@@ -121,7 +121,7 @@ The following code demonstrates how to configure the pivot table component to di
 
 
 
-![Selective aggregation types in dropdown menu](images/aggregateTypes.png)
+![Selective aggregation types in dropdown menu](images/aggregateTypes.webp)
 
 ## Hiding aggregation type from button text
 
@@ -154,10 +154,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 
 
-![Aggregation name hidden in button UI - Field List](images/aggregation_fl_value.png)
+![Aggregation name hidden in button UI - Field List](images/aggregation_fl_value.webp)
 <br/>
 
-![Aggregation name hidden in button UI - Grouping Bar](images/aggregation_gb_value.png)
+![Aggregation name hidden in button UI - Grouping Bar](images/aggregation_gb_value.webp)
 
 ## Hiding aggregation type icon from UI
 
@@ -190,7 +190,7 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 
 
-![Aggregation type icon hidden in Grouping Bar](images/value-type-icon-gb.png)
+![Aggregation type icon hidden in Grouping Bar](images/value-type-icon-gb.webp)
 
 ## Event
 

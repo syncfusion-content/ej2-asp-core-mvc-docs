@@ -54,7 +54,7 @@ You can also change the position, visibility, compact view, and template of the 
 {% endtabs %}
 {% endif %}
 
-![Normal mode of Pager UI](images/Paging_UI.png)
+![Normal mode of Pager UI](images/Paging_UI.webp)
 
 ### Show pager UI at top or bottom
 
@@ -85,7 +85,7 @@ The following code demonstrates how to configure the pager UI to appear at the t
 {% endtabs %}
 {% endif %}
 
-![Pager UI at Top position](images/PagerPosition.png)
+![Pager UI at Top position](images/PagerPosition.webp)
 
 ### Inverse pager
 
@@ -114,7 +114,7 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 {% endtabs %}
 {% endif %}
 
-![Inverse pager UI](images/PagerInverse.png)
+![Inverse pager UI](images/PagerInverse.webp)
 
 ### Compact view
 
@@ -143,7 +143,7 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 {% endtabs %}
 {% endif %}
 
-![Compact view of pager UI](images/PagerCompactView.png)
+![Compact view of pager UI](images/PagerCompactView.webp)
 
 ### Show or hide paging option
 
@@ -175,7 +175,7 @@ The following code demonstrates how to hide the row pager by setting the [`ShowR
 {% endtabs %}
 {% endif %}
 
-![Hided Row paging option](images/PagerHide.png)
+![Hided Row paging option](images/PagerHide.webp)
 
 ### Show or hide page size
 
@@ -204,7 +204,7 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 {% endtabs %}
 {% endif %}
 
-![Hided Row and Column Page sizes](images/PagerSizeHide.png)
+![Hided Row and Column Page sizes](images/PagerSizeHide.webp)
 
 ### Customize page size
 
@@ -235,7 +235,7 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 {% endtabs %}
 {% endif %}
 
-![Customizing page size](images/PagerSize.png)
+![Customizing page size](images/PagerSize.webp)
 
 ### Template
 
@@ -266,4 +266,4 @@ This following example shows how to create a custom template for both row and co
 {% endtabs %}
 {% endif %}
 
-![Pager UI customized by Template property](images/PagerTemplate.png)
+![Pager UI customized by Template property](images/PagerTemplate.webp)

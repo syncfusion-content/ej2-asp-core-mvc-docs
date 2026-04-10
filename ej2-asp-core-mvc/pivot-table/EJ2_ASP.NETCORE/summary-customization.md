@@ -39,7 +39,7 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 {% endtabs %}
 {% endif %}
 
-![Grand totals example](images/grandtotal.png)
+![Grand totals example](images/grandtotal.webp)
 
 ## Show grand totals at top or bottom
 
@@ -98,7 +98,7 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals example](images/sub-total.png)
+![Sub‑totals example](images/sub-total.webp)
 
 ## Show/hide sub-totals for specific fields
 
@@ -129,7 +129,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals for specific fields](images/subtotal2.png)
+![Sub‑totals for specific fields](images/subtotal2.webp)
 
 ## Show sub-totals at top or bottom
 
@@ -160,7 +160,7 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 {% endtabs %}
 {% endif %}
 
-![Subtotals top position](images/subTotalsPosition-Top.png)
+![Subtotals top position](images/subTotalsPosition-Top.webp)
 
 To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property in [`showGrandTotals`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowGrandTotals) to **Bottom**.
 
@@ -187,7 +187,7 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 {% endtabs %}
 {% endif %}
 
-![Subtotals bottom position](images/subTotalsPosition-Bottom.png)
+![Subtotals bottom position](images/subTotalsPosition-Bottom.webp)
 
 ## Show or hide totals using toolbar
 
@@ -218,6 +218,6 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 {% endtabs %}
 {% endif %}
 
-![Grand Totals](images/toolbar-grandtotals.png)
+![Grand Totals](images/toolbar-grandtotals.webp)
 
-![Sub Totals](images/toolbar-subtotals.png)
+![Sub Totals](images/toolbar-subtotals.webp)

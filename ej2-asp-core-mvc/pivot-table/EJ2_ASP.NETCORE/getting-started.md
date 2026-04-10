@@ -118,7 +118,7 @@ public class PivotData
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot Table control will be rendered in the default web browser.
 
-![ASP.NET Core Pivot Table Control](images/pivottable-control.png)
+![ASP.NET Core Pivot Table Control](images/pivottable-control.webp)
 
 ## Adding fields to row, column, value, and filter axes
 
@@ -160,7 +160,7 @@ public class PivotData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core PivotTable with Fields](images/pivottable-with-fields.png)
+![ASP.NET Core PivotTable with Fields](images/pivottable-with-fields.webp)
 
 ## Applying Formatting to a Value Field
 
@@ -189,7 +189,7 @@ public class PivotData
 {% endhighlight %}
 {% endtabs %}
 
-![Formatting in ASP.NET Core PivotTable](images/pivottable-value-format.png)
+![Formatting in ASP.NET Core PivotTable](images/pivottable-value-format.webp)
 
 This approach allows you to apply different formatting patterns to multiple value fields by adding additional objects to the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array. Each object in the array can target a different field, providing complete control over how numerical data is displayed in the Pivot Table.
 
@@ -217,7 +217,7 @@ public class PivotData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core PivotTable Field List](images/pivottable-with-pivotfield.png)
+![ASP.NET Core PivotTable Field List](images/pivottable-with-pivotfield.webp)
 
 ## Enable Grouping Bar
 
@@ -242,7 +242,7 @@ public class PivotData
 {% endhighlight %}
 {% endtabs %}
 
-![Grouping in ASP.NET Core Pivot Table](images/pivottable-group.png)
+![Grouping in ASP.NET Core Pivot Table](images/pivottable-group.webp)
 
 ## Exploring Filter Axis
 
@@ -296,7 +296,7 @@ public class PivotData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core PivotTable with Calculate Field](./images/pivotgrid-sample.png)
+![ASP.NET Core PivotTable with Calculate Field](./images/pivotgrid-sample.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
