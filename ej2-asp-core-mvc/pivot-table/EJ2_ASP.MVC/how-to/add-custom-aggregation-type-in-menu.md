@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add custom aggregation type to the menu in ##Platform_Name## Pivot Table Component
+title: Custom aggregation menu ##Platform_Name## Pivot Table Syncfusion
 description: Learn here all about how to add custom aggregation type to the menu in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Add custom aggregation type to the menu
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type to the menu in ASP.NET MVC Pivotview component
+# Add custom aggregation type menu in ASP.NET MVC PivotView component
 
 The ASP.NET MVC Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 

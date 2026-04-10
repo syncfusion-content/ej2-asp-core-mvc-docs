@@ -107,7 +107,7 @@ N> * By default, `locale` value is `en-US`. If you want to change the `en-US` cu
 
 ### Decimal separators 
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/#changing-current-locale) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization#changing-current-locale) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
 
