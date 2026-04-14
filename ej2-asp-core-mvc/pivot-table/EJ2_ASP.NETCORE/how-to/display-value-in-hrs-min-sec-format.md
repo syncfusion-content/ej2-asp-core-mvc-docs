@@ -39,4 +39,4 @@ The following example demonstrates how to convert numeric values in the **Sold**
 {% endtabs %}
 {% endif %}
 
-![Display string value to pivot table values](../images/display-string-value.png)
+![Display string value to pivot table values](../images/display-string-value.webp)

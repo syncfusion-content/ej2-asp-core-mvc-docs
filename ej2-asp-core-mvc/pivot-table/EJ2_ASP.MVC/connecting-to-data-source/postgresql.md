@@ -18,14 +18,14 @@ Follow these steps to create a Web API service that retrieves data from a Postgr
 1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
-![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
+![Creating an ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.webp)
 
 ### Step 2: Install the Npgsql NuGet Package
 To enable PostgreSQL database connectivity:
 1. Open the **NuGet Package Manager** in your project solution and search for **Npgsql.EntityFrameworkCore.PostgreSQL**.
 2. Install the **Npgsql.EntityFrameworkCore.PostgreSQL** package to add PostgreSQL support.
 
-![Installing the Npgsql.EntityFrameworkCore.PostgreSQL NuGet package](../images/postgresql-data-nuget-package-install.png)
+![Installing the Npgsql.EntityFrameworkCore.PostgreSQL NuGet package](../images/postgresql-data-nuget-package-install.webp)
 
 ### Step 3: Create a Web API Controller
 1. Under the **Controllers** folder, create a new Web API controller named **PivotController.cs**.
@@ -116,7 +116,7 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetPost
 1. Access the Web API endpoint at `https://localhost:44378/Pivot` to view the JSON data retrieved from the PostgreSQL database.
 2. The browser will display the JSON data, as shown below.
 
-![JSON data from the Web API endpoint](../images/postgresql_data.png)
+![JSON data from the Web API endpoint](../images/postgresql_data.webp)
 
 ## Connecting the Pivot Table to a PostgreSQL Database Using the Web API Service
 
@@ -168,7 +168,7 @@ Here’s the updated sample code for ~/Views/Home/Index.cshtml with the report c
 2. The Pivot Table will display the data fetched from the PostgreSQL database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
-![Pivot Table bound with PostgreSQL database](../images/postgresql-data-binding.png)
+![Pivot Table bound with PostgreSQL database](../images/postgresql-data-binding.webp)
 
 ### Additional Resources
 Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a PostgreSQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-PostgreSQL-database-to-pivot-table) repository.

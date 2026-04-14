@@ -24,13 +24,13 @@ To enable member sorting, set the [`enableSorting`](https://help.syncfusion.com/
 #### Visual Reference
 
 - **Field List Sort Icon**:  
-  ![Member sorting icon in field list](images/sorting_fl.png)
+  ![Member sorting icon in field list](images/sorting_fl.webp)
 
 - **Grouping Bar Sort Icon**:  
-  ![Member sorting icon in grouping bar](images/sorting_gb.png)
+  ![Member sorting icon in grouping bar](images/sorting_gb.webp)
 
 - **Sorted Pivot Table**:  
-  ![Resultant pivot table after member sorting](images/sorting_grid.png)
+  ![Resultant pivot table after member sorting](images/sorting_grid.webp)
 
 ### Configuring Member Sorting Code Behind
 
@@ -97,7 +97,7 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 
 
-![Alphanumeric sorting example](images/alpha-numeric-header.png)
+![Alphanumeric sorting example](images/alpha-numeric-header.webp)
 
 ### Custom Sorting
 
@@ -134,7 +134,7 @@ To set up custom sorting, use the following properties:
 
 
 
-![Custom sorting example](images/Custom sorting.png)
+![Custom sorting example](images/Custom sorting.webp)
 
 ## Value Sorting
 
@@ -173,7 +173,7 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 
 
 
-![Value sorting example](images/valuesorting.png)
+![Value sorting example](images/valuesorting.webp)
 
 ### Multiple Axis Sorting
 
@@ -210,7 +210,7 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 {% endtabs %}
 {% endif %}
 
-![Multiple Axis Sorting](images/multiple-axis-sorting.png)
+![Multiple Axis Sorting](images/multiple-axis-sorting.webp)
 
 ## Event
 
@@ -255,7 +255,7 @@ The example below demonstrates how to use the [`OnHeadersSort`](https://help.syn
 
 
 
-![OnHeadersSort event example](images/Custom sorting_event.png)
+![OnHeadersSort event example](images/Custom sorting_event.webp)
 
 ### ActionBegin
 

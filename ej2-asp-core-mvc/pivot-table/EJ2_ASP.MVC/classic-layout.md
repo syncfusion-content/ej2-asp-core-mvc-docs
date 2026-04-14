@@ -42,7 +42,7 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 
 
 
-![Classic Layout](images/classic-layout.png)
+![Classic Layout](images/classic-layout.webp)
 
 **Limitations**
 
