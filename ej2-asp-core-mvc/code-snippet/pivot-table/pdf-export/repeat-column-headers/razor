@@ -1,0 +1,31 @@
+@Html.EJS().Button("pdf").Content("Export To PDF").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add(); rows.Name("Quarter").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowPdfExport(true).GridSettings(gridSettings => {
+    gridSettings.PdfQueryCellInfo("pdfQueryCellInfo");
+}).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.cell && args.cell.row && args.cell.row.pdfGrid) {
+            args.cell.row.pdfGrid.repeatHeader = false;
+        }
+    }
+</script>
