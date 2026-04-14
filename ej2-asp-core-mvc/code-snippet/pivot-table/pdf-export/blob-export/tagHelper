@@ -1,4 +1,4 @@
-<ejs-button id="excel" content="Export To Excel" isPrimary="true"></ejs-button>
+<ejs-button id="pdf" content="Export To PDF" isPrimary="true"></ejs-button>
 
 <ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true" exportComplete="exportComplete">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true">
@@ -22,7 +22,7 @@
 
 <script>
     var pivotObj;
-    document.getElementById('excel').onclick = function () {
+    document.getElementById('pdf').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pdfExport({}, false, null, true);
     }

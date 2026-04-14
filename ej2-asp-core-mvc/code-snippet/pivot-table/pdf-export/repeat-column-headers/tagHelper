@@ -1,23 +1,20 @@
 <ejs-button id="pdf" content="Export To PDF" isPrimary="true"></ejs-button>
-
-<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true" exportAllPages="false">
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true">
-        <e-formatsettings>
-            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1" useGrouping="true"></e-field>
-        </e-formatsettings>
-        <e-values>
+        <e-rows>
             <e-field name="Country"></e-field>
             <e-field name="Products"></e-field>
-        </e-values>
+            <e-field name="Quarter"></e-field>
+        </e-rows>
         <e-columns>
             <e-field name="Year" caption="Year"></e-field>
-            <e-field name="Quarter"></e-field>
         </e-columns>
-        <e-rows>
+        <e-values>
             <e-field name="Sold" caption="Units Sold"></e-field>
             <e-field name="Amount" caption="Sold Amount"></e-field>
-        </e-rows>
+        </e-values>
     </e-datasourcesettings>
+    <e-gridSettings pdfQueryCellInfo="pdfQueryCellInfo"></e-gridSettings>
 </ejs-pivotview>
 
 <script>
@@ -25,5 +22,10 @@
     document.getElementById('pdf').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         pivotObj.pdfExport();
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.cell && args.cell.row && args.cell.row.pdfGrid) {
+            args.cell.row.pdfGrid.repeatHeader = false;
+        }
     }
 </script>
