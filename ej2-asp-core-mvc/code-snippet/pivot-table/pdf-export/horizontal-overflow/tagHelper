@@ -1,13 +1,8 @@
-<ejs-button id="pdf" content="Pdf Export" isPrimary="true"></ejs-button>
-
-<ejs-pivotview id="PivotView" height="300" allowPdfExport="true" enableVirtualization="true">
+<ejs-button id="pdf" content="Export To PDF" isPrimary="true"></ejs-button>
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
-        <e-drilledmembers>
-            <e-field name="Country" items="@(new string[] { " France" })"></e-field>
-        </e-drilledmembers>
         <e-formatsettings>
-            <e-field name="Amount" format="C0" maximumSignificantDigits="10" minimumSignificantDigits="1"
-                useGrouping="true"></e-field>
+            <e-field name="Amount" format="C0"></e-field>
         </e-formatsettings>
         <e-rows>
             <e-field name="Country"></e-field>
@@ -22,18 +17,16 @@
             <e-field name="Amount" caption="Sold Amount"></e-field>
         </e-values>
     </e-datasourcesettings>
-    <e-gridSettings columnWidth=120 pdfQueryCellInfo="pdfQueryCellInfo"></e-gridSettings>
 </ejs-pivotview>
 
 <script>
     var pivotObj;
     document.getElementById('pdf').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
-        pivotObj.pdfExport();
-    }
-    function pdfQueryCellInfo(args) {
-        if (args.data && args.data.rowHeaders === 'France.Mountain Bikes' && args.cell && args.cell.gridRow) {
-            args.cell.gridRow.height = 100;
-        }
+
+        var pdfExportProperties = {
+            allowHorizontalOverflow: true
+        };
+        pivotObj.pdfExport(pdfExportProperties);
     }
 </script>

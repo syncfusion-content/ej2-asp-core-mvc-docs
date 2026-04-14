@@ -1,0 +1,43 @@
+@Html.EJS().Button("pdf").Content("Export To PDF").IsPrimary(true).Render()
+
+@Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(false)
+.FormatSettings(formatsettings =>
+{
+formatsettings.Name("Amount").Format("C0").Add();
+}).Rows(rows =>
+{
+rows.Name("Country").Add(); rows.Name("Products").Add();
+}).Columns(columns =>
+{
+columns.Name("Year").Caption("Year").Add(); columns.Name("Quarter").Add();
+}).Values(values =>
+{
+values.Name("Sold").Caption("Units Sold").Add(); values.Name("Amount").Caption("Sold Amount").Add();
+})).AllowPdfExport(true).GridSettings(gridSettings => {
+    gridSettings.PdfQueryCellInfo("pdfQueryCellInfo");
+}).Render()
+
+<script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.data && args.data.actualText === 'Sold') {
+            if ((args).value < 700) {
+                args.style = {
+                    backgroundColor: '#df3800',
+                    fontFamily: 'Courier',
+                    textPenColor: '#FFFFFF'
+                };
+            } else {
+                args.style = {
+                    backgroundColor: '#00A45A',
+                    fontFamily: 'TimesRoman',
+                    textPenColor: '#FFFFFF'
+                };
+            }
+        }
+    }
+</script>
