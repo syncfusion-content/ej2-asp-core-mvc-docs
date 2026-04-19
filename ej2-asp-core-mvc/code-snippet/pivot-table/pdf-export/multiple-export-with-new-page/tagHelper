@@ -49,7 +49,7 @@
     document.getElementById('pdf').onclick = function () {
         var pivotObj = document.getElementById('PivotTable1').ej2_instances[0];
         var pdfExportProperties = {
-            multipleExport: { type: 'AppendToPage', blankSpace: 100 },
+            multipleExport: { type: 'NewPage' },
             pivotTableIds: ['PivotTable1', 'PivotTable2']
         };
         pivotObj.pdfExport(pdfExportProperties, true);

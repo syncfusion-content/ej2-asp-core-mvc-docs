@@ -1,0 +1,47 @@
+<ejs-button id="pdf" content="Export To PDF" isPrimary="true"></ejs-button>
+
+<ejs-pivotview id="PivotView" height="300" allowPdfExport="true">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true" emptyCellsTextContent="**">
+        <e-formatsettings>
+            <e-field name="Amount" format="C0"></e-field>
+        </e-formatsettings>
+        <e-rows>
+            <e-field name="Country" showNoDataItems="true"></e-field>
+            <e-field name="State" showNoDataItems="true"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Date"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="Quantity"></e-field>
+            <e-field name="Amount"></e-field>
+        </e-values>
+    </e-datasourcesettings>
+    <e-gridSettings columnWidth=120 queryCellInfo="queryCellInfo" pdfQueryCellInfo="pdfQueryCellInfo"></e-gridSettings>
+</ejs-pivotview>
+
+<script>
+    var pivotObj;
+    document.getElementById('pdf').onclick = function () {
+        pivotObj = document.getElementById('PivotView').ej2_instances[0];
+        pivotObj.pdfExport();
+    }
+    function queryCellInfo(args) {
+        const colIndex = Number(args.cell.getAttribute('aria-colindex'));
+        const currentCell = args.data[colIndex - 1];
+        if (currentCell.formattedText === '**' &&
+            currentCell.actualText === 'Quantity' &&
+            ['Canada.New Mexico', 'United States.British Columbia'].includes(currentCell.rowHeaders)) {
+            args.rowSpan = 2;
+            args.colSpan = 2;
+        }
+    }
+    function pdfQueryCellInfo(args) {
+        if (args.value === '**' &&
+            args.data.actualText === 'Quantity' &&
+            ['Canada.New Mexico', 'United States.British Columbia'].includes(args.data.rowHeaders)) {
+            args.cell.rowSpan = 2;
+            args.cell.colSpan = 2;
+        }
+    }
+</script>
