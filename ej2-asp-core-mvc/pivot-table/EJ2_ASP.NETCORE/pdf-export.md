@@ -505,6 +505,8 @@ The Pivot Table report can be modified before exporting by applying filters, add
 
 In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). The updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues) are assigned to `args.dataCollections` for the export. Finally, [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) is set to **false** again to restore the original state of the Pivot Table.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/pdf-export/customizing-pivot-report/tagHelper %}
@@ -537,6 +539,8 @@ In the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 In the following code example, the row and column spans are adjusted for empty cells in the Pivot Table and during PDF export.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/pdf-export/export-row-column-spanning/tagHelper %}
@@ -563,6 +567,8 @@ In the following code example, the row and column spans are adjusted for empty c
 The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfHeaderQueryCellInfo) event handles header cells. Both events provide access to the `hyperlink` property to set URLs in cells and the `image` property to add images to cells.
 
 > PDF export supports base64 strings for exporting images.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -599,6 +605,8 @@ To export with custom aggregates, follow these steps:
 For more information about adding custom aggregation types, see the [custom aggregation documentation](./how-to/add-custom-aggregation-type-in-menu).
 
 The following example shows how to add two custom aggregate types to the aggregate menu: **CustomAggregateType 1**, which calculates a weighted average, and **CustomAggregateType 2**, which calculates the percentage of the total.
+
+{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -883,10 +891,10 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -894,10 +902,10 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/razor %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
