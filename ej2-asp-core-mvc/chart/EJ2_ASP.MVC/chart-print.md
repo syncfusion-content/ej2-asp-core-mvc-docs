@@ -12,7 +12,7 @@ documentation: ug
 
 ## Print
 
-The rendered chart can be printed directly from the browser by calling the public method print. You can pass array of ID of elements or element to this method. By default it take element of the chart.
+The rendered chart can be printed directly from the browser by calling the public `print` method. This method accepts an array of element IDs or element references to print; by default it prints the chart element itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,17 +41,18 @@ The rendered chart can be printed directly from the browser by calling the publi
 
 ## Export
 
-The rendered chart can be exported to `JPEG`, `PNG`, `SVG`, `PDF`, `XLSX`, or `CSV` format using the export method in chart. The input parameters for this method are `Type` for format and `FileName` for result.
+Export the rendered chart to `JPEG`, `PNG`, `SVG`, or `PDF` using the chart `export` method. To export chart data into `XLSX` or `CSV`, use the Excel/CSV export options. The primary parameters for `export` are `Type` (format) and `FileName` (output file name).
 
-The optional parameters for this method are,
-* `Orientation` - either portrait or landscape mode during PDF export,
-* `Controls` - pass collections of controls for multiple export,
-* `Width` - width of chart export,
-* `Height` - height of chart export,
-* `IsVertical` -  decides the chart export in vertical or horizontal direction,
-* `Header` - header for the exported chart,
-* `Footer` - footer for the exported chart, and
-* `ExportToMultiplePages` - decides to export multiple charts on separate pages for PDF export.
+Optional parameters include:
+
+- `Orientation` — `portrait` or `landscape` for PDF export,
+- `Controls` — a collection of controls for multi-control export,
+- `Width` — exported width,
+- `Height` — exported height,
+- `IsVertical` —  decides the chart export in vertical or horizontal direction,
+- `Header` — header for the exported chart,
+- `Footer` — footer for the exported chart, and
+- `ExportToMultiplePages` — decides to export multiple charts on separate pages for PDF export.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -15,11 +15,11 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-EJ2 chart supports horizontal and vertical strip lines and customization of stripline in both orientation.
+The ##Platform_Name## Chart component supports horizontal and vertical strip lines, providing visual guides to highlight specific ranges in the chart area. Strip lines can be added to both axes and fully customized based on visual and functional requirements.
 
 ## Horizontal Strip lines
 
-You can create Horizontal stripline by adding the `Stripline` in the vertical axis and set `Visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+Horizontal strip lines are created by adding the `Stripline` configuration to the vertical axis and setting the `Visible` property to `true`. They highlight horizontal ranges in the chart, and multiple strip lines can be added to the same axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ You can create Horizontal stripline by adding the `Stripline` in the vertical ax
 
 ## Vertical Striplines
 
-You can create vertical stripline by adding the `Stripline` in the horizontal axis and set `Visible` option to true. Striplines are rendered in the specified start to end range and you can add more than one stripline for an axis.
+Vertical strip lines are created by adding the `Stripline` configuration to the horizontal axis and enabling the `Visible` property. They highlight vertical regions in the chart and support multiple entries for an axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -77,7 +77,14 @@ You can create vertical stripline by adding the `Stripline` in the horizontal ax
 
 ## Customize the strip line
 
-Starting value in specific strip line can be customized by `Start` property in strip line. Similarly, ending value is customized by `End`. It can be also set for starting from the corresponding origin of the axis by `StartFromOrigin`. Size of the strip line is customized by `Size`. Border for the stripline is customized by `Border`. Order of the strip line such that whether it should be rendered in behind or over the series elements is customized by `ZIndex`.
+Strip lines can be customized to highlight specific regions more effectively:
+
+- Use `Start` to set the beginning value of the strip line.
+- Use `End` to define the ending value.
+- Use `StartFromOrigin` to begin the strip line from the axis origin.
+- Use `Size` to specify the strip line height or width (based on orientation).
+- Use `Border` to customize border appearance.
+- Use `ZIndex` to control whether the strip line appears behind or above chart series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -106,7 +113,11 @@ Starting value in specific strip line can be customized by `Start` property in s
 
 ## Customize the stripline text
 
-You can customize the text rendered in stripline by `TextStyle` property. Rotation of the strip line text can be changed by `Rotation` property. Horizontal and Vertical alignment of stripline text can be changed by `HorizontalAlignment` and `VerticalAlignment` property.
+Strip line text labels can be customized for readability and visual presentation:
+
+- Use `TextStyle` to set text appearance.
+- Use `Rotation` to rotate the strip line text.
+- Use `HorizontalAlignment` and `VerticalAlignment` to adjust label placement.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -164,7 +175,7 @@ You can create dash array stripline by using `DashArray` property. The Stripline
 
 ## Recurrence Stripline
 
- The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
+The strip lines to be drawn repeatedly at the regular intervals – this will be useful when you want to mark an event that occurs recursively along the timeline of the chart. Following properties are used to configure this feature.
 
 * `IsRepeat`       - It is used for enable / disable the recurrence strip line.
 * `RepeatEvery`    - It is used for mention the stripline interval.
