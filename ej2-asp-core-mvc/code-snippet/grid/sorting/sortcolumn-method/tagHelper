@@ -1,0 +1,48 @@
+<div id="container">
+    <div>
+        <ejs-button id="sortBtn" content="Sort Order Date" cssClass="e-outline"></ejs-button>
+        <ejs-button id="clearSortBtn" content="Clear All Sorting" cssClass="e-outline"></ejs-button>
+        <span id="status"></span>
+    </div>
+    <div class="control-section">
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSorting="true" allowMultiSorting="true" height="280">
+            <e-grid-columns>
+                <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+                <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+                <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+                <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+</div>
+
+<script>
+    document.getElementById('sortBtn').onclick = sortClick;
+    document.getElementById('clearSortBtn').onclick = clearSortClick;
+
+    function sortClick() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.sortColumn("OrderDate", "Descending");
+        document.getElementById('status').innerText = 'Sorted by Order Date (Descending)';
+    }
+
+    function clearSortClick() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.clearSorting();
+        document.getElementById('status').innerText = 'All sorting cleared!';
+    }
+</script>
+
+<style>
+    .control-section{
+        padding-top:20px;
+    }
+    #status{
+        margin-left:10px;
+        color:green;
+    }
+    #clearSortBtn{
+        margin-left:8px;
+    }
+</style>
