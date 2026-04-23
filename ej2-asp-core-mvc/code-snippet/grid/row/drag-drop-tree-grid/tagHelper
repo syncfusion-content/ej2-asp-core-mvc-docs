@@ -4,7 +4,7 @@
     <e-grid-rowdropsettings targetID="TreeGrid"></e-grid-rowdropsettings>
     <e-grid-editSettings allowDeleting="true"></e-grid-editSettings>                
     <e-grid-columns>
-        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90" isPrimaryKey="true"></e-grid-column>
         <e-grid-column field="TaskName" headerText="Task Name" textAlign="Left" width="180"></e-grid-column>
         <e-grid-column field="Description" headerText="Description" textAlign="Left" width="180"></e-grid-column>
         <e-grid-column field="Category" headerText="Category " textAlign="Left" width="180"></e-grid-column>
@@ -18,7 +18,7 @@
     <e-treegrid-editSettings allowAdding="true" allowEditing="true"></e-treegrid-editSettings>
     <e-treegrid-rowdropsettings targetID="TreeGrid"></e-treegrid-rowdropsettings>
     <e-treegrid-columns>
-        <e-treegrid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90"></e-treegrid-column>
+        <e-treegrid-column field="TaskID" headerText="Task ID" textAlign="Right" width="90" isPrimaryKey="true"></e-treegrid-column>
         <e-treegrid-column field="TaskName" headerText="Task Name" textAlign="Left" width="180"></e-treegrid-column>
         <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" width="90"></e-treegrid-column>
         <e-treegrid-column field="Duration" headerText="Duration" width="80"></e-treegrid-column>
