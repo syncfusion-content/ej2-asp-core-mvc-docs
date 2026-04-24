@@ -15,7 +15,7 @@ documentation: ug
 
 The drill-down and drill-up features in the Pivot Table component allow users to expand or collapse hierarchical data for detailed or summarized views. When a field member(s) contains child items, expand and collapse icons automatically appear in the corresponding row or column header. Clicking these icons expands the selected item to display its child members or collapses it to show a summarized view. If a field member(s) does not have any further levels to display, the icons will not appear.
 
-![Drill down and drill up](images/drill.webp)
+![Drill down and drill up](images/drill.png)
 
 ## Drill position
 
@@ -23,7 +23,7 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 > This feature is built-in and works automatically every time you expand or collapse data, making the pivot table faster and more efficient.
 
-![Drill at specific position](images/drill_position.webp)
+![Drill at specific position](images/drill_position.png)
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +79,7 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 
 
-![All headers expanded](images/expandall.webp)
+![All headers expanded](images/expandall.png)
 
 ## Expand all headers for specific fields
 
@@ -114,7 +114,7 @@ The following code demonstrates how to configure a Pivot Table with the [`Expand
 
 
 
-![All headers expanded](images/expandall.webp)
+![All headers expanded](images/expandall.png)
 
 ## Expand all except specific member(s)
 
@@ -152,7 +152,7 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 
 
-![All expanded except one member](images/expandall_except.webp)
+![All expanded except one member](images/expandall_except.png)
 
 ## Expand or Collapse Specific Members
 
@@ -189,7 +189,7 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 
 
-![Specific members expanded](images/drill_position_code.webp)
+![Specific members expanded](images/drill_position_code.png)
 
 ## Event
 

@@ -83,4 +83,4 @@ The following code sample demonstrates how to replicate the older theme style:
 
 
 
-![Adjusting Row Height](../images/row-height.webp)
+![Adjusting Row Height](../images/row-height.png)

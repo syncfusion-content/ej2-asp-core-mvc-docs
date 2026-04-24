@@ -36,4 +36,4 @@ By default, the Pivot Table displays with the report configuration defined in th
 {% endtabs %}
 {% endif %}
 
-![Load desired report from the report list as default](../images/load-pre-defined-report.webp)
+![Load desired report from the report list as default](../images/load-pre-defined-report.png)
