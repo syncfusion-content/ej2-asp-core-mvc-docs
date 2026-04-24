@@ -39,7 +39,7 @@ Allows to show or hide grand totals in rows and columns using the [`ShowGrandTot
 {% endtabs %}
 {% endif %}
 
-![Grand totals example](images/grandtotal.webp)
+![Grand totals example](images/grandtotal.png)
 
 ## Show grand totals at top or bottom
 
@@ -68,7 +68,7 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 {% endtabs %}
 {% endif %}
 
-![Grand totals at top](images/grand-totals-at-top.webp)
+![Grand totals at top](images/grand-totals-at-top.png)
 
 ## Show or hide sub-totals
 
@@ -99,7 +99,7 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals example](images/sub-total.webp)
+![Sub‑totals example](images/sub-total.png)
 
 ## Show/hide sub-totals for specific fields
 
@@ -130,7 +130,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals for specific fields](images/subtotal2.webp)
+![Sub‑totals for specific fields](images/subtotal2.png)
 
 ## Show sub-totals at top or bottom
 
@@ -161,7 +161,7 @@ To show sub-totals at top of the header group in rows and columns, set the [`Sub
 {% endtabs %}
 {% endif %}
 
-![Subtotals top position](images/subTotalsPosition-Top.webp)
+![Subtotals top position](images/subTotalsPosition-Top.png)
 
 To show sub-totals at bottom of the header group in rows and columns, set the  [`SubTotalsPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) to **Bottom**.
 
@@ -188,7 +188,7 @@ To show sub-totals at bottom of the header group in rows and columns, set the  [
 {% endtabs %}
 {% endif %}
 
-![Subtotals bottom position](images/subTotalsPosition-Bottom.webp)
+![Subtotals bottom position](images/subTotalsPosition-Bottom.png)
 
 ## Show or hide totals using toolbar
 
@@ -219,6 +219,6 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 {% endtabs %}
 {% endif %}
 
-![Grand Totals](images/toolbar-grandtotals.webp)
+![Grand Totals](images/toolbar-grandtotals.png)
 
-![Sub Totals](images/toolbar-subtotals.webp)
+![Sub Totals](images/toolbar-subtotals.png)

@@ -41,4 +41,4 @@ For row header tooltips, the formatted text and field name of the current row he
 {% endtabs %}
 {% endif %}
 
-![Show tooltip for row and column headers](../images/custom-tooltip.webp)
+![Show tooltip for row and column headers](../images/custom-tooltip.png)

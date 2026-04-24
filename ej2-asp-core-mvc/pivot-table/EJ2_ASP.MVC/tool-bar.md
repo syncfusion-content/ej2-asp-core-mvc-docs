@@ -62,7 +62,7 @@ The following table lists the built-in toolbar options and their actions:
 
 
 
-![Pivot table toolbar](images/toolbar.webp)
+![Pivot table toolbar](images/toolbar.png)
 
 ## Show desired chart types in the dropdown menu
 
@@ -97,23 +97,23 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 
 
-![Chart type dropdown options](images/charttype-property.webp)
+![Chart type dropdown options](images/charttype-property.png)
 
 ## Switch the chart to multiple axes
 
 In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#multiple-axis).
 
-![Switching to multiple axes](images/chart-option.webp)
+![Switching to multiple axes](images/chart-option.png)
 
 The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
-![Multiple axis mode options](images/multiple-axis-mode.webp)
+![Multiple axis mode options](images/multiple-axis-mode.png)
 
 ## Show or hide legend
 
 In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
-![Legend toggle option](images/accumulation-legend.webp)
+![Legend toggle option](images/accumulation-legend.png)
 
 ## Adding custom option to the toolbar
 
@@ -146,7 +146,7 @@ Here’s an example of how to add a custom toolbar item:
 
 
 
-![Custom toolbar item example](images/add-custom-toolbar.webp)
+![Custom toolbar item example](images/add-custom-toolbar.png)
 
 ### Toolbar Template
 
@@ -179,7 +179,7 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 
 
-![Toolbar template example](images/tool-temp.webp)
+![Toolbar template example](images/tool-temp.png)
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in the pivot table.
 
@@ -208,7 +208,7 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 
 
 
-![Toolbar template with custom controls](images/tool-temp-rtl.webp)
+![Toolbar template with custom controls](images/tool-temp-rtl.png)
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarClick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
@@ -251,11 +251,11 @@ SQL Server is a relational database management system (RDBMS) that can be used t
 
 **1.** Open Visual Studio and create an ASP.NET Core Web App project type, naming it **MyWebService**. To create an ASP.NET Core Web application, follow the document [link](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022).
 
-![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.webp)
+![Create ASP.NET Core Web App project](images/azure-asp-core-web-service-create.png)
 
 **2.** To connect a SQL Server database using the Microsoft SqlClient in our application, we need to install the [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) NuGet package. To do so, open the NuGet package manager of the project solution, search for the package **Microsoft.Data.SqlClient** and install it.
 
-![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.webp)
+![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.png)
 
 **3.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
 
@@ -552,11 +552,11 @@ namespace MyWebApp.Controllers
 
 ```
 
-![The current report has been saved in the SQL database](images/output_save_report.webp)
+![The current report has been saved in the SQL database](images/output_save_report.png)
 
 In the meantime, you can save a duplicate of the current report to the SQL Server database with a different name by selecting **"Save as current report"** from the toolbar. The [SaveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event will then be triggered with the new report name **"Sample Report 1"** and the current report. You can save them to the SQL Server database after passing them to the Web API service, as mentioned above.
 
-![Copy of the current report has been saved in the SQL database](images/output_save_as_report.webp)
+![Copy of the current report has been saved in the SQL database](images/output_save_as_report.png)
 
 #### Loading a report
 
@@ -667,7 +667,7 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Loading a report from SQL database](images/output_load_report.webp)
+![Loading a report from SQL database](images/output_load_report.png)
 
 #### Renaming a report
 
@@ -790,7 +790,7 @@ namespace MyWebApp.Controllers
     }
 }
 
-![Renaming a report in the SQL database](images/output_rename_report.webp)
+![Renaming a report in the SQL database](images/output_rename_report.png)
 
 #### Deleting a report
 
@@ -898,13 +898,13 @@ namespace MyWebApp.Controllers
 
 ```
 
-![Deleting a report from the SQL database](images/output_remove_report.webp)
+![Deleting a report from the SQL database](images/output_remove_report.png)
 
 #### Adding a report
 
 When you select the **"Create a new report"** option from the toolbar, the [NewReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NewReport) event is triggered, followed by the [SaveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event. To save this new report to the SQL database, use the [SaveReport](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event triggered later, and then follow the save report briefing in the preceding [topic](#saving-a-report).
 
-![Adding a report in the SQL database](images/output_new_report.webp)
+![Adding a report in the SQL database](images/output_new_report.png)
 
 ### Limitations with respect to report manipulation
 
@@ -967,7 +967,7 @@ The [`SaveReport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.P
 
 
 
-![New report created](images/toolbar.webp)
+![New report created](images/toolbar.png)
 
 ### ToolbarRender
 
@@ -998,7 +998,7 @@ The [`ToolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 
 
-![Customize built-in toolbar items](images/toolbar-customize-inbuilt.webp)
+![Customize built-in toolbar items](images/toolbar-customize-inbuilt.png)
 
 ### BeforeExport
 
@@ -1031,7 +1031,7 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 
 
-![Customize toolbar export settings](images/toolbar-customize.webp)
+![Customize toolbar export settings](images/toolbar-customize.png)
 
 ### ActionBegin
 

@@ -36,4 +36,4 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
 
 
-![Show field list when pivot table is empty](../images/empty-report-all-axes.webp)
+![Show field list when pivot table is empty](../images/empty-report-all-axes.png)
