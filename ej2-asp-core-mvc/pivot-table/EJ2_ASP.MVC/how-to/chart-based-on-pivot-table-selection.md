@@ -45,4 +45,4 @@ The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 
 
-![Chart Based On Pivot Table Selection](../images/chart-selection.webp)
+![Chart Based On Pivot Table Selection](../images/chart-selection.png)

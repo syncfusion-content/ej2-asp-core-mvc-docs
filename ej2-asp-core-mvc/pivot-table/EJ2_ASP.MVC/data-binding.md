@@ -68,7 +68,7 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 
 
 
-![Local JSON data binding](images/local-json-datamanager.webp)
+![Local JSON data binding](images/local-json-datamanager.png)
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example demonstrates this approach.
 
@@ -131,7 +131,7 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://he
 
 
 
-![Pivot Table bound to remote JSON data](images/remote-json-data.webp)
+![Pivot Table bound to remote JSON data](images/remote-json-data.png)
 
 ## CSV
 
@@ -168,7 +168,7 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 
 
-![Pivot Table with local CSV data binding](images/local-csv-data.webp)
+![Pivot Table with local CSV data binding](images/local-csv-data.png)
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). The following code example shows how to implement this:
 
@@ -236,7 +236,7 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 
 
-![Pivot Table bound to remote CSV data](images/remote-csv-data.webp)
+![Pivot Table bound to remote CSV data](images/remote-csv-data.png)
 
 ## Remote Data Binding
 
@@ -450,7 +450,7 @@ The following code sample demonstrates how to configure the visibility of field 
 
 
 
-![Field button icons customized](images/field-mapping.webp)
+![Field button icons customized](images/field-mapping.png)
 
 ## Values in row axis
 
@@ -481,7 +481,7 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 
 
-![Values in row axis](images/valueaxis.webp)
+![Values in row axis](images/valueaxis.png)
 
 ## Values at different positions
 
@@ -513,7 +513,7 @@ Positioning value fields at specific locations helps create more meaningful data
 {% endif %}
 
 
-![Values at custom position](images/measureatdifferentposition.webp)
+![Values at custom position](images/measureatdifferentposition.png)
 
 ## Show 'no data' items
 
@@ -546,7 +546,7 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 
 
-![No-data items shown](images/nodata.webp)
+![No-data items shown](images/nodata.png)
 
 ## Show value headers always
 
@@ -577,7 +577,7 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 
 
-![Value headers always visible](images/valuesheader.webp)
+![Value headers always visible](images/valuesheader.png)
 
 ## Customize empty value cells
 
@@ -608,7 +608,7 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 
 
-![Custom text in empty cells](images/emptyvalues.webp)
+![Custom text in empty cells](images/emptyvalues.png)
 
 ## Event
 
