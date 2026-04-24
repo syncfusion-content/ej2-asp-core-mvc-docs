@@ -28,17 +28,17 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 1:** Choose **File > New > Project...** in the Visual Studio menu bar.
 
-![new project in aspnetmvc5](images/new-mvc-project.webp)
+![new project in aspnetmvc5](images/new-mvc-project.png)
 
 **Step 2:** Select **Installed > Visual C# > Web** and choose the required **.NET Framework** in the drop-down.
 
 **Step 3:** Select **ASP.NET Web Application (.NET Framework)** and change the application name, and then click **OK**.
 
-![aspnetmvc5 project template](images/aspnetmvc5-template.webp)
+![aspnetmvc5 project template](images/aspnetmvc5-template.png)
 
 **Step 4:** Choose **MVC** and then click **OK**. Now, the MVC web application project is created with default ASP.NET MVC template.
 
-![aspnetmvc5 web application template](images/aspnetmvc5-config-template.webp)
+![aspnetmvc5 web application template](images/aspnetmvc5-config-template.png)
 
 ### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
@@ -46,11 +46,11 @@ Follow below steps to create ASP.NET MVC Application.
 
 N> Refer to [this article](../../EJ2_ASP.MVC/nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
-![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.webp)
+![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
 **Step 2:** Search the `Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 MVC5` keyword in the **Browse** tab and install **Syncfusion.EJ2.MVC5** NuGet package in the application.
 
-![aspnetmvc5 install nuget package](images/aspnetmvc5-nuget.webp)
+![aspnetmvc5 install nuget package](images/aspnetmvc5-nuget.png)
 
 The Essential<sup style="font-size:70%">&reg;</sup> JS 2 MVC5 NuGet package will be included in the project, after the installation process is completed.
 
@@ -349,30 +349,30 @@ Users can add a calculated field at runtime using the built-in dialog by followi
 
 **Step 1:** Click the **CALCULATED FIELD** button in the field list dialog, located at the top right corner. The calculated field dialog appears. Enter the name for the new calculated field in the dialog.
 
-![Calculated field button](images/olap_calc_button.webp)
+![Calculated field button](images/olap_calc_button.png)
 
-![Enter calculated field name](images/calculatedfield-name.webp)
+![Enter calculated field name](images/calculatedfield-name.png)
 
 **Step 2:** Create the expression for your calculated field. To do this, drag and drop fields from the tree view on the left side of the dialog and use simple arithmetic operators.
 
 **For example**: `IIF([Measures].[Internet Sales Amount]^0.5 > 100, [Measures].[Internet Sales Amount]*100, [Measures].[Internet Sales Amount]/100)`  
 For more information about supported [`operators`](https://docs.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://docs.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15), see the Microsoft documentation.
 
-![Create calculated field expression](images/calculatedfield-drag.webp)
+![Create calculated field expression](images/calculatedfield-drag.png)
 
 **Step 3:** Select the type for the new field, either calculated measure or calculated dimension.
 
-![Select calculated field type](images/calculatedfield-type.webp)
+![Select calculated field type](images/calculatedfield-type.png)
 
 **Step 4:** If you are creating a calculated dimension, select its parent hierarchy from the drop-down list. This step is only required when adding a calculated dimension.
 
-![Choose parent hierarchy](images/calculatedfield-hierarchy.webp)
+![Choose parent hierarchy](images/calculatedfield-hierarchy.png)
 
 **Step 5:** Select a format string from the drop-down list and then click **OK** to finalize the calculated field.
 
-![Choose format string](images/calculatedfield-format-string.webp)
+![Choose format string](images/calculatedfield-format-string.png)
 
-![Calculated field added in Pivot Table](images/olap_calc_grid.webp)
+![Calculated field added in Pivot Table](images/olap_calc_grid.png)
 
 #### Format String
 
@@ -387,7 +387,7 @@ By default, the **Standard** option is selected in the drop-down list.
 
 This option helps users present calculated field results in the most suitable format for their needs.
 
-![Format string in calculated field](images/calculatedfield-fomat.webp)
+![Format string in calculated field](images/calculatedfield-fomat.png)
 
 #### Renaming the Existing Calculated Field
 
@@ -400,9 +400,9 @@ To rename a calculated field:
 3. Enter the new name in the text box.
 4. Click **OK** to save the new name.
 
-![Renaming the calculated field before editing](images/before-edit-olap.webp)
+![Renaming the calculated field before editing](images/before-edit-olap.png)
 
-![Renaming the calculated field after editing](images/after-edit-olap.webp)
+![Renaming the calculated field after editing](images/after-edit-olap.png)
 
 #### Editing an Existing Calculated Field Formula
 
@@ -416,9 +416,9 @@ You can edit an existing calculated field formula directly through the user inte
 
 The Pivot Table will automatically update to show the changes in the calculated values.
 
-![Editing the calculated field](images/before-edit-olap.webp)
+![Editing the calculated field](images/before-edit-olap.png)
 
-![Editing the calculated field after change](images/after-change-olap.webp)
+![Editing the calculated field after change](images/after-change-olap.png)
 
 #### Reusing an Existing Formula in a New Calculated Field
 
@@ -433,11 +433,11 @@ To reuse an existing formula when working with the OLAP data source:
 5. If needed, you can adjust the formula further or use it without changes.
 6. Click **OK** to add your new calculated field.
 
-![Reusing the calculated field in Pivot Table](images/before-edit-olap.webp)
+![Reusing the calculated field in Pivot Table](images/before-edit-olap.png)
 
-![Dragging the existing calculated field](images/while-drag-olap.webp)
+![Dragging the existing calculated field](images/while-drag-olap.png)
 
-![Calculated field formula reused](images/after-drag-olap.webp)
+![Calculated field formula reused](images/after-drag-olap.png)
 
 #### Modifying the Existing Format String
 
@@ -449,15 +449,15 @@ You can modify the format string of an existing calculated field at runtime thro
 4. Select or enter a new format string based on your requirements.
 5. Click **OK** to apply and save your changes.
 
-![Modifying the calculated fields format string](images/before-edit-olap.webp)
+![Modifying the calculated fields format string](images/before-edit-olap.png)
 
-![Modified calculated field output](images/after-modify-olap.webp)
+![Modified calculated field output](images/after-modify-olap.png)
 
 #### Clearing the Changes While Editing the Calculated Field
 
 If you make edits while creating or modifying a calculated field, you can easily remove all the current changes by clicking the **Clear** button. This option is available in the bottom left corner of the calculated field dialog. Using the Clear button helps you start over without manually undoing each change, ensuring a smooth editing experience.
 
-![Clearing the changes while editing the calculated field](images/clear-edit-olap.webp)
+![Clearing the changes while editing the calculated field](images/clear-edit-olap.png)
 
 ### Virtual Scrolling
 
@@ -488,7 +488,7 @@ To enable virtual scrolling, set the [`EnableVirtualization`](https://help.syncf
 {% endtabs %}
 {% endif %}
 
-![Virtual Scrolling applied](images/olap-virtual.webp)
+![Virtual Scrolling applied](images/olap-virtual.png)
 
 #### Limitations for Virtual Scrolling
 
@@ -753,13 +753,13 @@ In the field list, each node uses a specific icon to help users quickly identify
 
 | Icon | Name | Node Type | Is Draggable? |
 |------|------|-----------|--------------|
-| ![Folder icon in JavaScript pivot table control](images/Folder.webp) | Display folder | Display Folder | No |
-| ![Measure icon in JavaScript pivot table control](images/Measure.webp) | Measure | Measure | No |
-| ![Dimension icon in JavaScript pivot table control](images/Dimension.webp) | Dimension | Dimension | No |
-| ![User-defined hierarchy icon in JavaScript pivot table control](images/UserDefinedHierarchy.webp) | User-defined hierarchy | Hierarchy | Yes |
-| ![Attribute hierarchy icon in JavaScript pivot table control](images/AttributeHierarchy.webp) | Attribute hierarchy | Hierarchy | Yes |
-| ![First level icon in JavaScript pivot table control](images/FirstLevel.webp)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.webp)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.webp) | Levels (in order) | Level Element | Yes |
-| ![NamedSet icon in JavaScript pivot client control](images/NamedSet.webp) | Named set | Named Set | Yes |
+| ![Folder icon in JavaScript pivot table control](images/Folder.png) | Display folder | Display Folder | No |
+| ![Measure icon in JavaScript pivot table control](images/Measure.png) | Measure | Measure | No |
+| ![Dimension icon in JavaScript pivot table control](images/Dimension.png) | Dimension | Dimension | No |
+| ![User-defined hierarchy icon in JavaScript pivot table control](images/UserDefinedHierarchy.png) | User-defined hierarchy | Hierarchy | Yes |
+| ![Attribute hierarchy icon in JavaScript pivot table control](images/AttributeHierarchy.png) | Attribute hierarchy | Hierarchy | Yes |
+| ![First level icon in JavaScript pivot table control](images/FirstLevel.png)<br>![Second level icon in JavaScript pivot table control](images/SecondLevel.png)<br>![Third level icon in JavaScript pivot table control](images/ThirdLevel.png) | Levels (in order) | Level Element | Yes |
+| ![NamedSet icon in JavaScript pivot client control](images/NamedSet.png) | Named set | Named Set | Yes |
 
 ## Events
 

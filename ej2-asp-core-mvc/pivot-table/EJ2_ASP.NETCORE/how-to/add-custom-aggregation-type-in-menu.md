@@ -54,4 +54,4 @@ The calculation logic for these custom aggregation types is implemented using th
 {% endtabs %}
 {% endif %}
 
-![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.webp)
+![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.png)

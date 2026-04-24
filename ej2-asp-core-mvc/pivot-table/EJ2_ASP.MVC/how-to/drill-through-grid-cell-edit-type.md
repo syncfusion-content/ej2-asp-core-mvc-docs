@@ -43,4 +43,4 @@ The following edit types are available for different data types:
 
 
 
-![Drill Through Grid Cell Edit Type](../images/edit-type.webp)
+![Drill Through Grid Cell Edit Type](../images/edit-type.png)

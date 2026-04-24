@@ -43,7 +43,7 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 {% endtabs %}
 {% endif %}
 
-![Excel Exporting](images/excel-exporting.webp)
+![Excel Exporting](images/excel-exporting.png)
 
 ## Export data to a CSV file
 
@@ -74,7 +74,7 @@ Pivot Table data can be exported to a plain text CSV file. The CSV format is lig
 {% endtabs %}
 {% endif %}
 
-![CSV Exporting](images/CSV-exporting.webp)
+![CSV Exporting](images/CSV-exporting.png)
 
 ## Exporting multiple pivot tables
 
@@ -111,7 +111,7 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 {% endtabs %}
 {% endif %}
 
-![Exporting to same worksheet](images/exporting-to-same-worksheet.webp)
+![Exporting to same worksheet](images/exporting-to-same-worksheet.png)
 
 ### Exporting to a new worksheet
 
@@ -171,7 +171,7 @@ In the following example, the [`BeforeExport`](https://help.syncfusion.com/cr/as
 {% endtabs %}
 {% endif %}
 
-![Customize the pivot report](images/customizing-pivot-report.webp)
+![Customize the pivot report](images/customizing-pivot-report.png)
 
 ## Export with custom aggregates
 
@@ -211,7 +211,7 @@ The following example demonstrates how to add two custom aggregate types to the 
 {% endtabs %}
 {% endif %}
 
-![Export with custom aggregates](images/custom-aggregate-export.webp)
+![Export with custom aggregates](images/custom-aggregate-export.png)
 
 ## Export with custom date format
 
@@ -248,7 +248,7 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 {% endtabs %}
 {% endif %}
 
-![Export with custom date format](images/custom-date-export.webp)
+![Export with custom date format](images/custom-date-export.png)
 
 ## Remove row header during export
 
@@ -277,7 +277,7 @@ Row headers can be excluded from the exported Excel file when only values and co
 {% endtabs %}
 {% endif %}
 
-![Export Without RowHeaders](images/export-without-row-header.webp)
+![Export Without RowHeaders](images/export-without-row-header.png)
 
 ## Exclude hidden columns during export
 
@@ -344,7 +344,7 @@ Within these events, set the `rotation` property in the `style` argument to rota
 {% endtabs %}
 {% endif %}
 
-![Rotate Cell Text](images/rotate-cell-text.webp)
+![Rotate Cell Text](images/rotate-cell-text.png)
 
 ## Apply custom styles based on specific conditions
 
@@ -375,7 +375,7 @@ The following example demonstrates how to apply conditional formatting to the **
 {% endtabs %}
 {% endif %}
 
-![Apply Custom Styles](images/apply-custom-styles-while-export.webp)
+![Apply Custom Styles](images/apply-custom-styles-while-export.png)
 
 ## Changing the Pivot Table style while exporting
 
@@ -406,7 +406,7 @@ The Excel export provides an option to change colors for headers, caption, and r
 {% endtabs %}
 {% endif %}
 
-![Theme Export](images/theme-export.webp)
+![Theme Export](images/theme-export.png)
 
 ## Add header and footer while exporting
 
@@ -435,7 +435,7 @@ The Excel export provides an option to include header and footer content for the
 {% endtabs %}
 {% endif %}
 
-![Add header and footer](images/add-header-and-footer-while-exporting.webp)
+![Add header and footer](images/add-header-and-footer-while-exporting.png)
 
 ## Changing the file name while exporting
 
@@ -464,7 +464,7 @@ This option provides flexibility to specify a custom file name for your exported
 {% endtabs %}
 {% endif %}
 
-![Changing the file name](images/changing-file-name.webp)
+![Changing the file name](images/changing-file-name.png)
 
 ## Show spinner during export
 
@@ -493,7 +493,7 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 {% endtabs %}
 {% endif %}
 
-![Show spinner during export](images/show-spinner.webp)
+![Show spinner during export](images/show-spinner.png)
 
 ## Export only the current page
 
