@@ -37,4 +37,4 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 {% endtabs %}
 {% endif %}
 
-![Hide specific columns in Pivot Table](../images/hide-specific-column.webp)
+![Hide specific columns in Pivot Table](../images/hide-specific-column.png)

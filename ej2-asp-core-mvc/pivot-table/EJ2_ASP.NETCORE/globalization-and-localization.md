@@ -136,7 +136,7 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 
 
-![Pivot table values with German locale decimal separators](images/localede.webp)
+![Pivot table values with German locale decimal separators](images/localede.png)
 
 ## Localization
 

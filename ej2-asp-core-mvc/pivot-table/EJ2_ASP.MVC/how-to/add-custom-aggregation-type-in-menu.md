@@ -43,4 +43,4 @@ In the following example, we have added two custom aggregation types **CustomAgg
 {% endtabs %}
 {% endif %}
 
-![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.webp)
+![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.png)
