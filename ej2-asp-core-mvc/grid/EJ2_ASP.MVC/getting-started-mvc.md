@@ -166,6 +166,8 @@ public class OrdersDetails
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control will be rendered in the default web browser.
 
+The output looks like below
+
 ![ASP.NET MVC Grid Control](images/grid-control.png)
 
 ## Defining Columns
@@ -174,18 +176,13 @@ The columns are automatically generated when columns declaration is empty or und
 
 The Grid has an option to define columns using [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html) property.
 
-Let’s check the properties used here:
-
-* The [Field](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is to map with a property name an array of JavaScript objects.
-* The [HeaderText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) property is to change the title of columns.
-* The [TextAlign](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) property is to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, you need to define **textAlign** as **Right**.
-* Using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property you can format number and date values to standard or custom formats. Here, you have defined it for the conversion of numeric values to currency.
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% endtabs %}
+
+The output looks like below
 
 ![ASP.NET MVC Grid with Column Values](images/column.png)
 
