@@ -215,6 +215,8 @@ public class OrdersDetails
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid control will be rendered in the default web browser.
 
+The output looks like below
+
 ![ASP.NET Core Grid with Row Data](images/grid-row.png)
 
 ## Defining Columns
@@ -222,16 +224,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 The columns are automatically generated when `columns` declaration is empty or undefined while initializing the grid.
 
 The Grid has an option to define columns using [`e-grid-columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper. In `e-grid-column` tag helper we have properties to customize columns.
-
-Let’s check the properties used here:
-
-* We have added [`field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) to map with a property name an array of JavaScript objects.
-* We have added [`headerText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) to change the title of columns.
-* We have used [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) to change the alignment of columns.
-By default, columns will be left aligned. To change columns to right align, we need to define `textAlign` as `Right`.
-* Also, we have used another useful property, [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format).
-Using this, we can format number and date values to standard or custom formats.
-Here, we have defined it for the conversion of date object value to `yMd` format.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -272,6 +264,8 @@ public class OrdersDetails
 }
 {% endhighlight %}
 {% endtabs %}
+
+The output looks like below
 
 ![ASP.NET Core Grid with Columns Data](images/grid-column.png)
 
