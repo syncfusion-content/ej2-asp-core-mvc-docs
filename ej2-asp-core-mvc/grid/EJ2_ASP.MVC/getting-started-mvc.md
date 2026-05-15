@@ -189,56 +189,6 @@ Let’s check the properties used here:
 
 ![ASP.NET MVC Grid with Column Values](images/column.png)
 
-## Enable Paging
-
-The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [AllowPaging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) property to true. Pager can be customized using the [PageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/page/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Paging in ASP.NET MVC Grid Control](images/getting-started/grid-page.png)
-
-## Enable Sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the  [AllowSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) property as true. Sorting feature can be customized using the [SortSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SortSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/sorting/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Sorting in ASP.NET MVC Grid Control](images/getting-started/grid-sort.png)
-
-## Enable Filtering
-
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property as true. Filtering feature can be customized using the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/filtering/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Filtering in ASP.NET MVC Grid Control](images/getting-started/grid-filter.png)
-
-## Enable Grouping
-
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true. Grouping feature can be customized using the [GroupSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/grouping/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Grouping in ASP.NET MVC Grid Control](images/getting-started/grid-group.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Grid/ASP.NET%20MVC%20Razor%20Examples).
-
 ## See also
 
 * [Create an MVC Grid app](https://www.syncfusion.com/blogs/post/create-an-mvc-grid-app-in-10-minutes-with-the-syncfusion-grid.aspx)
