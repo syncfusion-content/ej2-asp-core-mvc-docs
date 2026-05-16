@@ -115,7 +115,7 @@ public class PieChartData
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Accumulation Chart control will be rendered in the default web browser.
 
-![ASP.NET Core Accumulation Chart Control](images/accumulation-chart-component.png)
+![ASP.NET Core Accumulation Chart Control](images/accumulation-chart.png)
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/AccumulationChart/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
 

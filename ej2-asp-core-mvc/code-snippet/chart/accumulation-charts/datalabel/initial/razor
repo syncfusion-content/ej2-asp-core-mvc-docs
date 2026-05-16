@@ -1,4 +1,5 @@
 @(Html.EJS().AccumulationChart("container")
+    .LegendSettings(legend => legend.Visible(false))
     .Series(series =>
     {
         series.XName("xValue")

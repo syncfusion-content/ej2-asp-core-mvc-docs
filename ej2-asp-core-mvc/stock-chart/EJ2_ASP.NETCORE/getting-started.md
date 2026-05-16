@@ -131,5 +131,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
  
 ## See Also
 
-* [ASP.NET MVC Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) feature tour page for its feature representations
-* [ASP.NET MVC Stock Chart example](https://ej2.syncfusion.com/aspnetcore/StockChart/Default#/material) to learn how to present and manipulate data.
+* [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) feature tour page for its feature representations
+* [ASP.NET Core Stock Chart example](https://ej2.syncfusion.com/aspnetcore/StockChart/Default#/material) to learn how to present and manipulate data.

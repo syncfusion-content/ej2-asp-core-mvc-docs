@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion)title: Getting Started with Syncfusion ##Platform_Name## Maps Component
+title: Getting Started with Syncfusion ##Platform_Name## Maps Component
 description: Checkout and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -88,7 +88,7 @@ Register the script manager `<ejs-scripts>` at the end of the `<body>` element i
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET Core Maps Component
+## Add the ASP.NET Core Maps Control
 
 Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag helper to the `~/Pages/Index.cshtml` page.
 
@@ -105,7 +105,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag h
 
 ## Render Shapes from GeoJSON Data
 
-Elements in the Maps component are rendered in layers. Add a layer to the Maps component using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
+Elements in the Maps control are rendered in layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

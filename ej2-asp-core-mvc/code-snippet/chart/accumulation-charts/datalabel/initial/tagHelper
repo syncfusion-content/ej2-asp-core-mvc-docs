@@ -12,10 +12,11 @@
 }
 
 <ejs-accumulationchart id="container">
+    <e-accumulationchart-legendsettings visible="false">
+    </e-accumulationchart-legendsettings>
     <e-accumulation-series-collection>
         <e-accumulation-series dataSource="@chartData"
                                xName="xValue"
-                               yName="yValue">
-        </e-accumulation-series>
+                               yName="yValue"></e-accumulation-series>
     </e-accumulation-series-collection>
 </ejs-accumulationchart>

@@ -101,7 +101,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps compon
 {% endhighlight %}
 {% endtabs %}
 
-Place the **WorldMap.json** file in the **App_Data** folder of the project. Read the content of the **WorldMap.json** file in the controller and assign the deserialized object to the `ShapeData` property of the Maps component as shown below.
+Place the **WorldMap.json** file in the **App_Data** folder of the project. Read the content of the **WorldMap.json** file in the controller and assign the deserialized object to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property of the Maps component as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="HomeController.cs" %}
@@ -213,5 +213,5 @@ N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-
 
 ## See Also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC using HTML Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)

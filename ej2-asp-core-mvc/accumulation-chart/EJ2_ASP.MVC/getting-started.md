@@ -49,7 +49,7 @@ Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file availabl
 </namespaces>
 ```
 
-## Add Stylesheet and Script Resources
+## Add Script Resources
 
 Add the script reference inside the `<head>` element of the `~/Views/Shared/_Layout.cshtml` file as follows.
 
@@ -100,7 +100,7 @@ By default, a pie series is rendered when JSON data is assigned to the series us
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AccumulationChart control will be rendered in the default web browser.
 
-![ASP.NET MVC AccumulationChart Control](images/accumulationchart.png)
+![ASP.NET MVC AccumulationChart Control](images/accumulation-chart.png)
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/AccumulationChart/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
 
