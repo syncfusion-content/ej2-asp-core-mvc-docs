@@ -176,17 +176,19 @@ public class OrdersDetails
     {
 
     }
-    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry)
+    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry, double Freight)
     {
         this.OrderID = OrderID;
         this.CustomerID = CustomerId;
         this.OrderDate = OrderDate;
         this.ShipCountry = ShipCountry;
+        this.Freight = Freight;
     }
     public int? OrderID { get; set; }
     public string CustomerID { get; set; }
     public DateTime OrderDate { get; set; }
     public string ShipCountry { get; set; }
+    public double Freight { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -195,7 +197,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 The output looks like below
 
-![ASP.NET Core Grid with Columns Data](images/grid-column.png)
+![ASP.NET Core Grid with Columns Data](images/column.png)
 
 ## See also
 
