@@ -3,19 +3,12 @@
     List<OrdersDetails> order = new List<OrdersDetails>();
     if (order.Count() == 0)
     {
-        int code = 10000;
-        order.Add(new OrdersDetails(code + 1, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
-        order.Add(new OrdersDetails(code + 2, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
-        order.Add(new OrdersDetails(code + 3, "ANTON", new DateTime(1957, 11, 30), "Germany"));
-        order.Add(new OrdersDetails(code + 4, "BLONP", new DateTime(1930, 10, 22), "Austria"));
-        order.Add(new OrdersDetails(code + 5, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));
-        order.Add(new OrdersDetails(code + 6, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
-        order.Add(new OrdersDetails(code + 7, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
-        order.Add(new OrdersDetails(code + 8, "ANTON", new DateTime(1957, 11, 30), "Germany"));
-        order.Add(new OrdersDetails(code + 9, "BLONP", new DateTime(1930, 10, 22), "Austria"));
-        order.Add(new OrdersDetails(code + 10, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));
-        order.Add(new OrdersDetails(code + 11, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
-        order.Add(new OrdersDetails(code + 12, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
+        order.Add(new OrdersDetails(10248, "Ana Trujillo", new DateTime(2025, 1, 12), "France", 32.38));
+        order.Add(new OrdersDetails(10249, "Martin Sommer", new DateTime(2025, 1, 15), "Germany", 11.61));
+        order.Add(new OrdersDetails(10250, "Thomas Hardy", new DateTime(2025, 2, 5), "Brazil", 65.83));
+        order.Add(new OrdersDetails(10251, "Elizabeth Lincoln", new DateTime(2025, 2, 18), "France", 41.34));
+        order.Add(new OrdersDetails(10252, "Victoria Ashworth", new DateTime(2025, 3, 10), "Belgium", 51.30));
+        order.Add(new OrdersDetails(10253, "Martine Rance", new DateTime(2025, 3, 22), "Brazil", 58.17));
     }
 }
 
@@ -23,7 +16,8 @@
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column> 
-        <e-grid-column field="OrderDate" headerText="Order Date" width="130" textAlign="Right" format="yMd"></e-grid-column>      
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="130" textAlign="Right" format="yMd"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="100" textAlign="Right" format="C2"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="120"></e-grid-column> 
     </e-grid-columns>
 </ejs-grid>
