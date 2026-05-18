@@ -12,7 +12,7 @@ documentation: ug
 
 This section briefly explains how to add the [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) control to your ASP.NET Core application using Visual Studio.
 
-## System Requirements
+## Prerequisites
 
 Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) before creating the application.
 
