@@ -13,7 +13,9 @@
         order.Add(new OrdersDetails(code + 7, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
         order.Add(new OrdersDetails(code + 8, "ANTON", new DateTime(1957, 11, 30), "Germany"));
         order.Add(new OrdersDetails(code + 9, "BLONP", new DateTime(1930, 10, 22), "Austria"));
-        order.Add(new OrdersDetails(code + 10, "BOLID", new DateTime(1953, 02, 18), "Switzerland")); 
+        order.Add(new OrdersDetails(code + 10, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));
+        order.Add(new OrdersDetails(code + 11, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
+        order.Add(new OrdersDetails(code + 12, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
     }
 }
 
