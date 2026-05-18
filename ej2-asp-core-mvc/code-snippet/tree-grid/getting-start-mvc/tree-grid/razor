@@ -5,6 +5,5 @@
         col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(TextAlign.Right).Width(120).Add();
         col.Field("EndDate").HeaderText("End Date").Format("yMd").TextAlign(TextAlign.Right).Width(120).Add();
         col.Field("Duration").HeaderText("Duration").Width(90).TextAlign(TextAlign.Right).Add();
-        col.Field("Progress").HeaderText("Progress").Width(90).TextAlign(TextAlign.Right).Add();
 
     }).Height(400).ChildMapping("Children").TreeColumnIndex(1).Render()
