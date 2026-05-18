@@ -163,67 +163,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/grid/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Row Data
-
 To bind data for the Grid component, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/databinding/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid control will be rendered in the default web browser.
-
-The output looks like below
-
-![ASP.NET Core Grid with Row Data](images/grid-row.png)
-
-## Defining Columns
-
-The columns are automatically generated when `columns` declaration is empty or undefined while initializing the grid.
-
-The Grid has an option to define columns using [`e-grid-columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper. In `e-grid-column` tag helper we have properties to customize columns.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -236,34 +176,22 @@ public class OrdersDetails
     {
 
     }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry)
     {
         this.OrderID = OrderID;
         this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
         this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
         this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
     }
     public int? OrderID { get; set; }
     public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
     public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
     public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid control will be rendered in the default web browser.
 
 The output looks like below
 
