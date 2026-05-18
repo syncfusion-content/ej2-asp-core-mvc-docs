@@ -182,14 +182,10 @@ The following JSON data is used as the data source in the **electionData.json** 
     var electionData = JsonConvert.DeserializeObject(allText1);
 }
 
-@using Syncfusion.EJ2.Maps
-
-<ejs-maps id="container">
+<ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="ViewBag.shapeData"
-                      dataSource="ViewBag.electionData"
-                      shapeDataPath="Country"
-                      shapePropertyPath="ViewBag.shapePropertyPath">
+        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country"
+                shapePropertyPath="propertyPath">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
