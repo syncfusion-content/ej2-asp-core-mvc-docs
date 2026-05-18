@@ -183,8 +183,8 @@ The following JSON data is used as the data source in the **electionData.json** 
 }
 
 <ejs-maps id="maps">
-    <e-maps - layers>
-        <e-maps - layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country"
+    <e-maps-layers>
+        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country"
                 shapePropertyPath="propertyPath">
         </e-maps-layer>
     </e-maps-layers>
