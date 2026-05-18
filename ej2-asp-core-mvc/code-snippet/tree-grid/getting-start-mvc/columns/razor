@@ -7,6 +7,4 @@
    col.Field("StartDate").HeaderText("Start Date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
    col.Field("EndDate").HeaderText("End Date").Width(90).Format("yMd").Add();
    col.Field("Duration").HeaderText("Duration").Width(80).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-   col.Field("Progress").HeaderText("Progress").Width(80).Add();
-   col.Field("Priority").HeaderText("Priority").Width(80).Add();
 }).ChildMapping("Children").TreeColumnIndex(1).Render()
