@@ -2,7 +2,9 @@ public class HomeController : Controller
 {
     public ActionResult Index()
     {
-        return View(TreeGridItems.GetTreeData());
+        var treeData = TreeGridItems.GetTreeData();
+        ViewBag.DataSource = treeData;
+        return view();
     }
 }
 public class TreeGridItems
