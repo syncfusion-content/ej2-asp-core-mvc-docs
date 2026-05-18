@@ -10,7 +10,5 @@
         <e-treegrid-column field="StartDate" headerText=" Start Date" textAlign="Right" format="yMd" type="date" width="115"></e-treegrid-column>
         <e-treegrid-column field="EndDate" headerText=" End Date" textAlign="Right" format="yMd" type="date" width="115"></e-treegrid-column>
         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="100"></e-treegrid-column>
-        <e-treegrid-column field="Progress" headerText="Progress" textAlign="Right" width="105"></e-treegrid-column>
-        <e-treegrid-column field="Priority" headerText="Priority" width="100"></e-treegrid-column>
     </e-treegrid-columns>
 </ejs-treegrid>
