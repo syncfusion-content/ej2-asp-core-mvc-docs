@@ -91,7 +91,7 @@ The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Sync
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid tag helper in `~/Pages/Index.cshtml` page.
 
-To bind data for the TreeGrid control, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. The list data source can also be provided as an instance of the **DataManager**.
+To bind data for the TreeGrid control, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
