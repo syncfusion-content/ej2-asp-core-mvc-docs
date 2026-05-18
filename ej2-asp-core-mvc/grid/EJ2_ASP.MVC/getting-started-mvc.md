@@ -110,27 +110,24 @@ public class OrdersDetails
     {
 
     }
-    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry)
+    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry, double Freight)
     {
         this.OrderID = OrderID;
         this.CustomerID = CustomerId;
         this.OrderDate = OrderDate;
         this.ShipCountry = ShipCountry;
+        this.Freight = Freight;
     }
     public static List<OrdersDetails> GetAllRecords()
     {
         if (order.Count() == 0)
         {
-            order.Add(new OrdersDetails(code + 1, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
-            order.Add(new OrdersDetails(code + 2, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
-            order.Add(new OrdersDetails(code + 3, "ANTON", new DateTime(1957, 11, 30), "Germany"));
-            order.Add(new OrdersDetails(code + 4, "BLONP", new DateTime(1930, 10, 22), "Austria"));
-            order.Add(new OrdersDetails(code + 5, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));
-            order.Add(new OrdersDetails(code + 6, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
-            order.Add(new OrdersDetails(code + 7, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
-            order.Add(new OrdersDetails(code + 8, "ANTON", new DateTime(1957, 11, 30), "Germany"));
-            order.Add(new OrdersDetails(code + 9, "BLONP", new DateTime(1930, 10, 22), "Austria"));
-            order.Add(new OrdersDetails(code + 10, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));                
+            order.Add(new OrdersDetails(10248, "Ana Trujillo", new DateTime(2025, 1, 12), "France", 32.38));
+            order.Add(new OrdersDetails(10249, "Martin Sommer", new DateTime(2025, 1, 15), "Germany", 11.61));
+            order.Add(new OrdersDetails(10250, "Thomas Hardy", new DateTime(2025, 2, 5), "Brazil", 65.83));
+            order.Add(new OrdersDetails(10251, "Elizabeth Lincoln", new DateTime(2025, 2, 18), "France", 41.34));
+            order.Add(new OrdersDetails(10252, "Victoria Ashworth", new DateTime(2025, 3, 10), "Belgium", 51.30));
+            order.Add(new OrdersDetails(10253, "Martine Rance", new DateTime(2025, 3, 22), "Brazil", 58.17));    
         }
         return order;
     }
@@ -138,6 +135,7 @@ public class OrdersDetails
     public string CustomerID { get; set; }
     public DateTime OrderDate { get; set; }
     public string ShipCountry { get; set; }
+    public double Freight { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
