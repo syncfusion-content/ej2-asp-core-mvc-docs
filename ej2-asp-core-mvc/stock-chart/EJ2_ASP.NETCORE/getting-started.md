@@ -10,21 +10,23 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Stock Chart Control
 
-This section briefly explains about how to include [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to add the [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) control to your ASP.NET Core application using Visual Studio.
 
-## System Requirements
+## Prerequisites
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) before creating the application.
 
-## Create ASP.NET Core web application with Razor pages
+## Create an ASP.NET Core Web Application with Razor Pages
+
+You can create an ASP.NET Core application using either of the following options:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET Core package in the application
+## Install the ASP.NET Core NuGet Package
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls to the application, open the NuGet Package Manager in Visual Studio by selecting **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/), and then install it. Alternatively, you can use the following Package Manager command.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -34,10 +36,11 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+
+Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` Tag Helper.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -47,9 +50,9 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 {% endhighlight %}
 {% endtabs %}
 
-## Add stylesheet and script resources
+## Add Stylesheet and Script Resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Add the stylesheet and script references inside the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -65,13 +68,13 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Refer to the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) topic to learn different ways, such as [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), to refer to styles in an ASP.NET Core application and achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Register the script manager `<ejs-scripts>` at the end of the `<body>` element in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -85,40 +88,48 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Stock Chart control
+## Add the ASP.NET Core Stock Chart Control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart tag helper in `~/Pages/Index.cshtml` page.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart tag helper to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <ejs-stockchart id="container">
     <e-stockchart-series-collection>
-        <e-stockchart-series> </e-stockchart-series>
+        <e-stockchart-series></e-stockchart-series>
     </e-stockchart-series-collection>
 </ejs-stockchart>
 
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> on (macOS) to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart control will be rendered in the default web browser.
 
 ![ASP.NET Core Stock Chart Control](images/stockchart-control.png)
 
-## Populate Stock Chart With Data
+## Populate the Stock Chart with Data
 
-This section explains how to plot below JSON data to the  Stock Chart.
+This section explains how to plot JSON data in the Stock Chart.
 
-Add a series object to the chart by using [`series`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_Type) property and then set the JSON data to [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_DataSource) property.
+Add a series object to the chart by using the [`series`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_Type) property, and then set the JSON data to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartSeries.html#Syncfusion_EJ2_Charts_StockChartStockChartSeries_DataSource) property.
 
-Since the JSON contains DateTime data, set the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) for horizontal axis to DateTime. By default, the axis valueType is Numeric.
+Since the JSON data contains DateTime values, set the [`valueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) property of the horizontal axis to `DateTime`. By default, the axis `valueType` is `Numeric`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/stock-chart/getting-started/populateData/tagHelper %}
+{% endhighlight %}
+{% highlight cshtml tabtitle="financial-data.js" %}
+{% include code-snippet/stock-chart/financial-data.js %}
 {% endhighlight %}
 {% endtabs %}
 
 ![ASP.NET Core Stock Chart with Data](images/stockchart.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/StockChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
+ 
+## See Also
+
+* [ASP.NET Core Stock Chart](https://www.syncfusion.com/aspnet-core-ui-controls/stock-chart) feature tour page for its feature representations
+* [ASP.NET Core Stock Chart example](https://ej2.syncfusion.com/aspnetcore/StockChart/Default#/material) to learn how to present and manipulate data.
