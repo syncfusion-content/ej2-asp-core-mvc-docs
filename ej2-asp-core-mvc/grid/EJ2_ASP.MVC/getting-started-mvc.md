@@ -89,19 +89,11 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control in `~/Views/Home/Index.cshtml` page.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/initialize/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Row Data
-
 To bind data for the Grid component, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/databinding/razor %}
+{% include code-snippet/grid/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 public class HomeController : Controller
@@ -118,69 +110,39 @@ public class OrdersDetails
     {
 
     }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+    public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry)
     {
         this.OrderID = OrderID;
         this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
         this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
         this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
     }
     public static List<OrdersDetails> GetAllRecords()
     {
         if (order.Count() == 0)
         {
-            int code = 10000;
-            for (int i = 1; i < 5; i++)
-            {
-                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-                code += 5;
-            }
+            order.Add(new OrdersDetails(code + 1, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
+            order.Add(new OrdersDetails(code + 2, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
+            order.Add(new OrdersDetails(code + 3, "ANTON", new DateTime(1957, 11, 30), "Germany"));
+            order.Add(new OrdersDetails(code + 4, "BLONP", new DateTime(1930, 10, 22), "Austria"));
+            order.Add(new OrdersDetails(code + 5, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));
+            order.Add(new OrdersDetails(code + 6, "ALFKI", new DateTime(1991, 05, 15), "Denmark"));
+            order.Add(new OrdersDetails(code + 7, "ANATR", new DateTime(1990, 04, 04), "Brazil"));
+            order.Add(new OrdersDetails(code + 8, "ANTON", new DateTime(1957, 11, 30), "Germany"));
+            order.Add(new OrdersDetails(code + 9, "BLONP", new DateTime(1930, 10, 22), "Austria"));
+            order.Add(new OrdersDetails(code + 10, "BOLID", new DateTime(1953, 02, 18), "Switzerland"));                
         }
         return order;
     }
     public int? OrderID { get; set; }
     public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
     public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
     public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control will be rendered in the default web browser.
-
-The output looks like below
-
-![ASP.NET MVC Grid Control](images/grid-control.png)
-
-## Defining Columns
-
-The columns are automatically generated when columns declaration is empty or undefined while initializing the grid.
-
-The Grid has an option to define columns using [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/columns/razor %}
-{% endhighlight %}
-{% endtabs %}
 
 The output looks like below
 
