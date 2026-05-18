@@ -103,7 +103,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock Chart
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock Chart control will be rendered in the default web browser.
 
-![ASP.NET Core Stock Chart Control](images/stockchart-control.png)
+![ASP.NET MVC Stock Chart Control](images/stockchart-control.png)
 
 
 ## Populate the Stock Chart with Data
@@ -112,7 +112,7 @@ This section explains how to plot JSON data in the Stock Chart.
 
 Add a series object to the chart by using the [Series](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Series) property, and then set the JSON data to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_DataSource) property.
 
-Since the JSON data contains category values, set the [valueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) property of the horizontal axis to `Category`. By default, the axis `valueType` is `Numeric`.
+Since the JSON data contains DateTime values, set the [valueType](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChartStockChartAxis.html#Syncfusion_EJ2_Charts_StockChartStockChartAxis_ValueType) property of the horizontal axis to `DateTime`. By default, the axis `valueType` is `Numeric`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

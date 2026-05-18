@@ -18,11 +18,12 @@ You can explore some useful features in the Maps component using the following v
 
 ## Prerequisites
 
-You can create an ASP.NET MVC application using either of the following options:
 
 Refer to the [System requirements for ASP.NET MVC components](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
 
 ## Create an ASP.NET MVC Application with HTML Helper
+
+You can create an ASP.NET MVC application using either of the following options:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
