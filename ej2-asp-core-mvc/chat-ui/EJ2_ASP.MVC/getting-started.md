@@ -86,32 +86,17 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Chat UI control
 
-Now, add the Syncfusion ASP.NET MVC Chat UI control in `~/Views/Home/Index.cshtml` page.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chat UI control in the `~/Views/Home/Index.cshtml` page. Use the [User](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_User) property to configure the current user for the chat.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/getting-started/razor %}
+{% include code-snippet/chat-ui/default-user/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chat-ui/getting-started/gettingstarted.cs %}
+{% include code-snippet/chat-ui/default-user/defaultUser.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET MVC Chat UI control will be rendered in the default web browser.
+To launch the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio or use the Run command in your preferred IDE to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chat UI control in the default web browser.
 
 ![ASP.NET MVC Chat UI Control](images/chat-ui-component.png)
-
-## Configure messages and user
-
-You can use the [Messages](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_Messages) property to add messages and the [User](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.ChatUI.html#Syncfusion_EJ2_InteractiveChat_ChatUI_User) property to configure the current user for the chat.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/default-messages/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chat-ui/default-messages/defaultMessages.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET MVC Chat UI default messages](images/default-messages.png)

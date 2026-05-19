@@ -100,6 +100,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Block
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core BlockEditor control will be rendered in the default web browser.
+To launch the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio or use the Run command in your preferred IDE to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core AI AssistView control in the default web browser.
 
 ![ASP.NET Core BlockEditor Control](images/block-editor-control.png)

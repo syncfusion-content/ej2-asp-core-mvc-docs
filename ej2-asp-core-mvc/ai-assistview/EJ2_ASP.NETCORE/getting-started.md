@@ -87,23 +87,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core AI AssistView control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core AI AssistView tag helper in `~/Pages/Index.cshtml` page.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/ai-assistview/getting-started/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core AI AssistView control will be rendered in the default web browser.
-
-![ASP.NET Core AI AssistView Control](images/ai-assistview-component.png)
-
-> **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the component automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
-
-## Configure suggestions and responses
-
-You can use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property to add prompt suggestions and the [promptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core AI AssistView tag helper in the `~/Pages/Index.cshtml` page. Use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property to add prompt suggestions and the [promptRequest](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event to generate responses based on the entered prompts.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -111,4 +95,8 @@ You can use the [promptSuggestions](https://help.syncfusion.com/cr/aspnetcore-js
 {% endhighlight %}
 {% endtabs %}
 
+To launch the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio or use the Run command in your preferred IDE to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core AI AssistView control in the default web browser.
+
 ![ASP.NET Core AI AssistView default prompt](images/default-prompt.png)
+
+> **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the component automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
