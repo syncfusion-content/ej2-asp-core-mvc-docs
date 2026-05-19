@@ -21,13 +21,23 @@ This section briefly explains about how to include [ASP.NET MVC Rich Text Editor
 
 ## Create ASP.NET MVC application with HTML helper
 
+You can create the the ASP.NET MVC web application by two types they are mentioned below along with the steps. follow one of these types and follow it to create a Asp core project 
+
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET MVC package in the application
+## Install Syncfusion ASP.NET MVC package in the application
 
-To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+You can add the Syncfusion Rich Text Editor to your ASP.NET MVC application by installing the Syncfusion AASP.NET MVC package. This can be done in two ways, they are mentioned below
+
+### 1. Using NuGet Package Manager  
+
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it directly.
+
+### 2. Using Package Manager Console  
+
+Run the following command in the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -36,6 +46,9 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
+
+Ensure you’re running the command inside Visual Studio’s Package Manager Console (Tools → NuGet Package Manager → Package Manager Console), not in a terminal like CMD or PowerShell.
+
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -91,12 +104,12 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rich T
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/rich-text-editor/basic/default/controller.cs %}
+@Html.EJS().RichTextEditor("editor").Render()
 {% endhighlight %}
 {% endtabs %}
+
+Note: Need to remove the content in index.cshtml and use the new content 
+
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rich Text Editor control will be rendered in the default web browser.
 
