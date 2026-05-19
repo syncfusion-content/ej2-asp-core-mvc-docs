@@ -223,7 +223,7 @@ Output be like the below.
 
 ## Toolbar customization
 
-The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using `thetoolbarSettings` property.
+The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using `the toolbarSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

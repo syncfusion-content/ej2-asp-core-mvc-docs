@@ -320,7 +320,7 @@ namespace WebApplication4.Controllers
 {% endhighlight %}
 {% endtabs %}
 
-If a new controller is created for the File Manager service, it must be mapped in the Program.cs file as shown below:
+After creating a controller for the File Manager service, register it in the `Program.cs` file using:
 
    ```csharp
    app.MapControllers();
@@ -336,3 +336,9 @@ N> The File Manager can be rendered with `local service` for sending ajax reques
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](../file-operations#Ajax-Settings-Configuration)
+* [Overview](../user-interface#File-Manager-Overview)
+* [File Manager Views](../views.md)
+* [File Manager File Operations](../file-operations)
+* [File Manager Upload](../upload)
+* [File Manager Customization](../customization)
