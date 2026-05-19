@@ -107,59 +107,13 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Schedule Control](images/scheduler.png)
 
-## Specific view
-
-Scheduler displays `week` view by default. To change the current view, define the applicable view name to the [`currentView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The default applicable view names are,
-
-* Day
-* Week
-* WorkWeek
-* Month
-* Agenda
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-<ejs-schedule id="schedule" currentView="Day">
-</ejs-schedule>
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Schedule with Specific View](images/schedule-with-specific-view.png)
-
-## Setting date
-
-Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the [`selectedDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-<ejs-schedule id="schedule" currentView="Day" selectedDate="DateTime.Now">
-</ejs-schedule>
-{% endhighlight %}
-{% endtabs %}
-
 ## Populating appointments
 
 To populate an empty Scheduler with appointments, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property under `e-schedule-eventsettings` tag Helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-@{
-    List<AppointmentData> appData = new List<AppointmentData>();
-    appData.Add(new AppointmentData { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = DateTime.Today.AddHours(9).AddMinutes(30), EndTime = DateTime.Today.AddHours(11)
-    });
-    appData.Add(new AppointmentData { Id = 2, Subject = "Thule Air Crash Report", StartTime = DateTime.Today.AddHours(12), EndTime = DateTime.Today.AddHours(14)
-    });
-    appData.Add(new AppointmentData { Id = 3, Subject = "Blue Moon Eclipse", StartTime = DateTime.Today.AddHours(9).AddMinutes(30), EndTime = DateTime.Today.AddHours(11)
-    });
-    appData.Add(new AppointmentData { Id = 4, Subject = "Meteor Showers in 2022", StartTime = DateTime.Today.AddHours(13), EndTime = DateTime.Today.AddHours(14).AddMinutes(30)
-    });
-    appData.Add(new AppointmentData { Id = 5, Subject = "Milky Way as Melting pot", StartTime = DateTime.Today.AddHours(12), EndTime = DateTime.Today.AddHours(14)
-    });
-}
-
-<ejs-schedule id="schedule" currentView="Day" selectedDate="DateTime.Now">
-    <e-schedule-eventsettings dataSource="appData"></e-schedule-eventsettings>
-</ejs-schedule>
+{% include code-snippet/schedule/getting-started/data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
 public class AppointmentData
@@ -174,9 +128,67 @@ public class AppointmentData
 
 ![ASP.NET Core Schedule with Appointments](images/appointments.png)
 
+## Setting date
+
+Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the [`selectedDate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/getting-started/data/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Specific view
+
+Scheduler displays `week` view by default. To change the current view, define the applicable view name to the [`currentView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
+
+* Day
+* Week
+* WorkWeek
+* Month
+* Year
+* Agenda
+* MonthAgenda
+* TimelineDay
+* TimelineWeek
+* TimelineWorkWeek
+* TimelineMonth
+* TimelineYear
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/views/specific-views/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Schedule with Specific View](images/schedule-with-specific-view.png)
+
+## Individual view customization
+
+Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone. This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/views/individual-views/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Schedule with Custom Views](images/schedule-with-custom-views.png)
+
+N> You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
 ## See also
 
-* [Explore available views and their customization options](./views.md)
-* [Explore appointments and event data handling](./appointments.md)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
