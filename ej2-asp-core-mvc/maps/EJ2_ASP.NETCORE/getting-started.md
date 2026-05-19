@@ -160,7 +160,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag h
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-@page
+
 @using Syncfusion.EJ2.Maps
 
 <ejs-maps id="maps">
@@ -176,7 +176,6 @@ Elements in the Maps control are rendered in layers. Add a layer to the Maps con
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@page
 @using Newtonsoft.Json
 @using Syncfusion.EJ2.Maps
 
@@ -238,7 +237,6 @@ The following JSON data is used as the data source in the **electionData.json** 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@page
 @using Newtonsoft.Json
 @using Syncfusion.EJ2.Maps
 
