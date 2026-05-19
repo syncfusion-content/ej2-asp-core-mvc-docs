@@ -1,22 +1,29 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Gantt Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Kanban Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting started with ASP.NET Core Gantt control
 
-This section briefly explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your ASP.NET Core application using Visual Studio.
+# Getting Started with ASP.NET Core Kanban Control
+
+This section briefly explains about how to include [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) control in your ASP.NET Core application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
-To get started quickly with the ASP.NET Core Gantt Chart, watch the following video. It provides a step-by-step guide to project configuration and demonstrates the basic features and functionalities of the Gantt Chart:
+## Overview
 
-{% youtube "https://www.youtube.com/watch?v=tILyz8PyE6A" %}
+The Kanban component is composed of:
+- **Cards**: tasks displayed on the board; mapped from a `dataSource` via `e-kanban-cardsettings`.
+- **Columns**: workflow stages; defined using `keyField`.
+- **Swimlanes**: optional grouping of cards; configured with `e-kanban-swimlanesettings`.
+
+> The `keyField` property maps each column to a specific field in the data source. Each column displays cards whose field value matches its `keyField`.
+> The `e-kanban-cardsettings` property defines how each card is displayed, including which fields are used for the header and content.
 
 ## Prerequisites
 
@@ -24,31 +31,29 @@ To get started quickly with the ASP.NET Core Gantt Chart, watch the following vi
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-9.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET Core package in the application
 
-To add ASP.NET Core controls to your application, open the NuGet Package Manager in Visual Studio by navigating to `Tools → NuGet Package Manager → Manage NuGet Packages for Solution`. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install the package.
-
-Alternatively, you can use the following Package Manager command:
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
-{% highlight cs tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.AspNet.Core` NuGet package has dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight cs tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -73,9 +78,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
-
-> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -93,50 +96,36 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Gantt control
+## Add ASP.NET Core Kanban control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript object or the `DataManager` instance.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban tag helper in `~/Pages/Index.cshtml` page.
+To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/gantt/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/gantt/gantt.cs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-## Mapping task fields
-
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/mappingFields/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/mappingFields/mappingFields.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-## Run the application
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban control will be rendered in the default web browser.
 
 ## Output
 
-You will see a Gantt Chart with:
+The Kanban board displays cards based on the kanbanData array. In this example, the board renders:
 
-- Task hierarchy with parent-child relationships
-- Timeline view showing task bars
-- Progress indicators on each task
-- Automatically calculated dates based on duration
+- A set of workflow columns for `To Do`, `InProgress`, `Testing`, and `Done`.
+- Cards mapped to each column by the `Status` field.
+- Card headers and content using `Id` and `Summary` via `cardSettings`.
 
-![ASP.NET Core Gantt Control](images/gantt-control.png)
+![kanban](./images/populating-cards.PNG)
+
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-- **[Key Elements](../key-elements)** - Learn about UI components and interactions
-- **[Overview](../overview)** - Explore all available features
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Kanban columns](./columns.md)
+* [Kanban data binding](./data-binding.md)
+* [Kanban dialog](./dialog.md)

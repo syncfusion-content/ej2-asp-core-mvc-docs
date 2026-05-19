@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Gantt Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Gantt control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Kanban Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Kanban control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,11 +9,21 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Gantt Control
+# Getting Started with ASP.NET MVC Kanban Control
 
-This section briefly explains about how to include [ASP.NET MVC Gantt](https://www.syncfusion.com/aspnet-mvc-ui-controls/gantt-chart) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains about how to include [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+
+## Overview
+
+The Kanban component is composed of:
+- **Cards**: tasks displayed on the board; mapped from a `DataSource` via `CardSettings`.
+- **Columns**: workflow stages; defined using `KeyField`.
+- **Swimlanes**: optional grouping of cards; configured with `SwimlaneSettings`.
+
+> The `KeyField` property maps each column to a specific field in the data source. Each column displays cards whose field value matches its `KeyField`.
+> The `CardSettings` property defines how each card is displayed, including which fields are used for the header and content.
 
 ## Prerequisites
 
@@ -67,8 +77,6 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
-
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
 Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
@@ -85,129 +93,95 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Gantt Control
+## Add ASP.NET MVC Kanban control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control in `~/Views/Home/Index.cshtml` page.
 
-Bind the data with Gantt control by using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript object or the DataManager instance. The data source fields that are required to render the tasks are mapped to the Gantt control using the [TaskFields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property.
+To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/gantt/getting-started/gantt/razor %}
+{% include code-snippet/kanban/getting-started/populating-cards/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 public class HomeController : Controller
 {
     public ActionResult Index()
     {
-        return View(ganttData());
-    }
-    public static List<GanttDataSource> ganttData()
-    {
-        List<GanttDataSource> GanttDataSourceCollection = new List<GanttDataSource>();
-
-        GanttDataSource Record1 = new GanttDataSource()
-        {
-            TaskId = 1,
-            TaskName = "Project initiation",
-            StartDate = new DateTime(2019, 04, 02),
-            EndDate = new DateTime(2019, 04, 21),
-            SubTasks = new List<GanttDataSource>(),
-        };
-        GanttDataSource Child1 = new GanttDataSource()
-        {
-            TaskId = 2,
-            TaskName = "Identify site location",
-            StartDate = new DateTime(2019, 04, 02),
-            Duration = 4,
-            Progress = 70,
-
-        };
-        GanttDataSource Child2 = new GanttDataSource()
-        {
-            TaskId = 3,
-            TaskName = "Perform soil test",
-            StartDate = new DateTime(2019, 04, 02),
-            Duration = 4,
-            Progress = 50
-
-        };
-        GanttDataSource Child3 = new GanttDataSource()
-        {
-            TaskId = 4,
-            TaskName = "Soil test approval",
-            StartDate = new DateTime(2019, 04, 02),
-            Duration = 4,
-            Progress = 50
-        };
-        Record1.SubTasks.Add(Child1);
-        Record1.SubTasks.Add(Child2);
-        Record1.SubTasks.Add(Child3);
-
-        GanttDataSource Record2 = new GanttDataSource()
-        {
-            TaskId = 5,
-            TaskName = "Project estimation",
-            StartDate = new DateTime(2019, 04, 02),
-            EndDate = new DateTime(2019, 04, 21),
-            SubTasks = new List<GanttDataSource>()
-        };
-        GanttDataSource Child4 = new GanttDataSource()
-        {
-            TaskId = 6,
-            TaskName = "Develop floor plan for estimation",
-            StartDate = new DateTime(2019, 04, 04),
-            Duration = 3,
-            Progress = 70
-        };
-        GanttDataSource Child5 = new GanttDataSource()
-        {
-            TaskId = 7,
-            TaskName = "List materials",
-            StartDate = new DateTime(2019, 04, 04),
-            Duration = 3,
-            Progress = 50
-        };
-        Record2.SubTasks.Add(Child4);
-        Record2.SubTasks.Add(Child5);
-
-        GanttDataSourceCollection.Add(Record1);
-        GanttDataSourceCollection.Add(Record2);
-
-        return GanttDataSourceCollection;
+        return View(KanbanDataModels.KanbanTasks());
     }
 }
-public class GanttDataSource
+public class KanbanDataModels
 {
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public int? Duration { get; set; }
-    public int Progress { get; set; }
-    public List<GanttDataSource> SubTasks { get; set; }
+    public string Id { get; set; }
+    public string Title { get; set; }
+    public string Status { get; set; }
+    public string Summary { get; set; }
+    public string Type { get; set; }
+    public string Priority { get; set; }
+    public string Tags { get; set; }
+    public Double Estimate { get; set; }
+    public string Assignee { get; set; }
+    public int RankId { get; set; }
+    public string Color { get; set; }
+
+    public static List<KanbanDataModels> KanbanTasks()
+    {
+        List<KanbanDataModels> TaskDetails = new List<KanbanDataModels>();
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 1", Title = "Task  - 29001", Status = "Open", Summary = "Analyze the new requirements gathered from the customer.", Type = "Story", Priority = "Low", Tags = "Analyze,Customer", Estimate = 3.5, Assignee = "Nancy Davloio", RankId = 1, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 2", Title = "Task  - 29002", Status = "InProgress", Summary = "Improve application performance", Type = "Improvement", Priority = "Normal", Tags = "Improvement", Estimate = 6, Assignee = "Andrew Fuller", RankId = 1, Color = "#7d7297" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 3", Title = "Task  - 29003", Status = "Open", Summary = "Arrange a web meeting with the customer to get new requirements.", Type = "Others", Priority = "Critical", Tags = "Meeting", Estimate = 5.5, Assignee = "Janet Leverling", RankId = 2, Color = "#27AE60" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 4", Title = "Task  - 29004", Status = "InProgress", Summary = "Fix the issues reported in the IE browser.", Type = "Bug", Priority = "Release Breaker", Tags = "IE", Estimate = 2.5, Assignee = "Janet Leverling", RankId = 2, Color = "#cc0000" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 5", Title = "Task  - 29005", Status = "Review", Summary = "Fix the issues reported by the customer.", Type = "Bug", Priority = "Low", Tags = "Customer", Estimate = 3.5, Assignee = "Steven walker", RankId = 1, Color = "#cc0000" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 6", Title = "Task  - 29007", Status = "Validate", Summary = "Validate new requirements", Type = "Improvement", Priority = "Low", Tags = "Validation", Estimate = 1.5, Assignee = "Robert King", RankId = 1, Color = "#7d7297" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 7", Title = "Task  - 29009", Status = "Review", Summary = "Fix the issues reported in Safari browser.", Type = "Bug", Priority = "Release Breaker", Tags = "Fix,Safari", Estimate = 1.5, Assignee = "Nancy Davloio", RankId = 2, Color = "#cc0000" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 8", Title = "Task  - 29010", Status = "Close", Summary = "Test the application in the IE browser.", Type = "Story", Priority = "Low", Tags = "Review,IE", Estimate = 5.5, Assignee = "Margaret hamilt", RankId = 3, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 9", Title = "Task  - 29011", Status = "Validate", Summary = "Validate the issues reported by the customer.", Type = "Story", Priority = "High", Tags = "Validation,Fix", Estimate = 1, Assignee = "Steven walker", RankId = 1, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 10", Title = "Task  - 29015", Status = "Open", Summary = "Show the retrieved data from the server in grid control.", Type = "Story", Priority = "High", Tags = "Database,SQL", Estimate = 5.5, Assignee = "Margaret hamilt", RankId = 4, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 11", Title = "Task  - 29016", Status = "InProgress", Summary = "Fix cannot open user’s default database SQL error.", Priority = "Critical", Type = "Bug", Tags = "Database,Sql2008", Estimate = 2.5, Assignee = "Janet Leverling", RankId = 4, Color = "#cc0000" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 12", Title = "Task  - 29017", Status = "Review", Summary = "Fix the issues reported in data binding.", Type = "Story", Priority = "Normal", Tags = "Databinding", Estimate = 3.5, Assignee = "Janet Leverling", RankId = 4, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 13", Title = "Task  - 29018", Status = "Close", Summary = "Analyze SQL server 2008 connection.", Type = "Story", Priority = "Release Breaker", Tags = "Grid,Sql", Estimate = 2, Assignee = "Andrew Fuller", RankId = 4, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 14", Title = "Task  - 29019", Status = "Validate", Summary = "Validate databinding issues.", Type = "Story", Priority = "Low", Tags = "Validation", Estimate = 1.5, Assignee = "Margaret hamilt", RankId = 1, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 15", Title = "Task  - 29020", Status = "Close", Summary = "Analyze grid control.", Type = "Story", Priority = "High", Tags = "Analyze", Estimate = 2.5, Assignee = "Margaret hamilt", RankId = 5, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 16", Title = "Task  - 29021", Status = "Close", Summary = "Stored procedure for initial data binding of the grid.", Type = "Others", Priority = "Release Breaker", Tags = "Databinding", Estimate = 1.5, Assignee = "Steven walker", RankId = 6, Color = "#27AE60" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 17", Title = "Task  - 29022", Status = "Close", Summary = "Analyze stored procedures.", Type = "Story", Priority = "Release Breaker", Tags = "Procedures", Estimate = 5.5, Assignee = "Janet Leverling", RankId = 7, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 18", Title = "Task  - 29023", Status = "Validate", Summary = "Validate editing issues.", Type = "Story", Priority = "Critical", Tags = "Editing", Estimate = 1, Assignee = "Nancy Davloio", RankId = 1, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 19", Title = "Task  - 29024", Status = "Review", Summary = "Test editing functionality.", Type = "Story", Priority = "Normal", Tags = "Editing,Test", Estimate = 0.5, Assignee = "Nancy Davloio", RankId = 5, Color = "#8b447a" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 20", Title = "Task  - 29025", Status = "Open", Summary = "Enhance editing functionality.", Type = "Improvement", Priority = "Low", Tags = "Editing", Estimate = 3.5, Assignee = "Andrew Fuller", RankId = 5, Color = "#7d7297" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 21", Title = "Task  - 29026", Status = "InProgress", Summary = "Improve the performance of the editing functionality.", Type = "Epic", Priority = "High", Tags = "Performance", Estimate = 6, Assignee = "Nancy Davloio", RankId = 5, Color = "#6d7492" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 22", Title = "Task  - 29027", Status = "Open", Summary = "Arrange web meeting with the customer to show editing demo.", Type = "Others", Priority = "High", Tags = "Meeting,Editing", Estimate = 5.5, Assignee = "Steven walker", RankId = 6, Color = "#27AE60" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 23", Title = "Task  - 29029", Status = "Review", Summary = "Fix the editing issues reported by the customer.", Type = "Bug", Priority = "Low", Tags = "Editing,Fix", Estimate = 3.5, Assignee = "Janet Leverling", RankId = 6, Color = "#cc0000" });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 24", Title = "Task  - 29030", Status = "Testing", Summary = "Fix the issues reported by the customer.", Type = "Bug", Priority = "Critical", Tags = "Customer", Estimate = 3.5, Assignee = "Steven walker", RankId = 1 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 25", Title = "Task  - 29031", Status = "Testing", Summary = "Fix the issues reported in Safari browser.", Type = "Bug", Priority = "Release Breaker", Tags = "Fix,Safari", Estimate = 1.5, Assignee = "Nancy Davloio", RankId = 2 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 26", Title = "Task  - 29032", Status = "Testing", Summary = "Check Login page validation.", Type = "Story", Priority = "Release Breaker", Tags = "Testing", Estimate = 0.5, Assignee = "Michael Suyama", RankId = 3 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 27", Title = "Task  - 29033", Status = "Testing", Summary = "Fix the issues reported in data binding.", Type = "Story", Priority = "Normal", Tags = "Databinding", Estimate = 3.5, Assignee = "Janet Leverling", RankId = 4 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 28", Title = "Task  - 29034", Status = "Testing", Summary = "Test editing functionality.", Type = "Story", Priority = "Normal", Tags = "Editing,Test", Estimate = 0.5, Assignee = "Nancy Davloio", RankId = 5 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 29", Title = "Task  - 29035", Status = "Testing", Summary = "Fix editing issues reported in Firefox.", Type = "Bug", Priority = "Critical", Tags = "Editing,Fix", Estimate = 1.5, Assignee = "Robert King", RankId = 7 });
+        TaskDetails.Add(new KanbanDataModels { Id = "Task 30", Title = "Task  - 29036", Status = "Testing", Summary = "Test editing feature in the IE browser.", Type = "Story", Priority = "Normal", Tags = "Testing", Estimate = 5.5, Assignee = "Janet Leverling", RankId = 10 });
+        return TaskDetails;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Gantt control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control will be rendered in the default web browser.
 
 ## Output
 
-You will see a Gantt Chart with:
+The Kanban board displays cards based on the kanbanData array. In this example, the board renders:
 
-- Task hierarchy with parent-child relationships
-- Timeline view showing task bars
-- Progress indicators on each task
-- Automatically calculated dates based on duration
+- A set of workflow columns for `To Do`, `InProgress`, `Testing`, and `Done`.
+- Cards mapped to each column by the `Status` field.
+- Card headers and content using `Id` and `Summary` via `cardSettings`.
 
-![ASP.NET MVC Gantt Control](images/gantt-control.png)
+![ASP.NET MVC Kanban with Cards](images/populating-cards.png)
+
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
-- **[Key Elements](../key-elements)** - Learn about UI components and interactions
-- **[Overview](../overview)** - Explore all available features
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20MVC%20Razor%20Examples).
+* [Kanban columns](./columns.md)
+* [Kanban data binding](./data-binding.md)
+* [Kanban dialog](./dialog.md)
+* [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
