@@ -79,7 +79,7 @@ This makes the `<ejs-*>` tag helpers, including `<ejs-diagram>`, available in al
 
 ## Step 4: Add the required style and script references
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script references inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script references inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file along with the existing content.
 
 ```cshtml
 <head>
@@ -112,6 +112,8 @@ Add the `<ejs-scripts>` tag at the end of the `<body>` in the `~/Pages/Shared/_L
 Add the `<ejs-diagram>` tag helper to the `~/Pages/Index.cshtml` file.
 
 ```cshtml
+@page
+@model IndexModel
 <ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>
 ```
 
