@@ -17,9 +17,6 @@ This section briefly explains about how to include [ASP.NET Core Pivot Table](ht
 
 To get start quickly with ASP.NET Core Pivot Table component, you can check on this video.
 
-{% youtube
-"" %}
-
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
@@ -144,7 +141,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -164,47 +161,28 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot
 
 To bind data for the Pivot Table component, you can assign a collection of data objects to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property. The data source can be provided as an IEnumerable collection or as an instance of the `DataManager`.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-core/pivot-table/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class HomeController : Controller
-{
-    public IActionResult Index()
-    {
-        var data = PivotDataSource.GetPivotData();
-        ViewBag.DataSource = data;
-        return View();
-    }
-
-    public class PivotData
-    {
-        public int Sold { get; set; }
-        public double Amount { get; set; }
-        public string Country { get; set; }
-        public string Products { get; set; }
-        public string Year { get; set; }
-        public string Quarter { get; set; }
-    }
-
-    public static class PivotDataSource
-    {
-        public static List<PivotData> GetPivotData()
-        {
-            return new List<PivotData>
-            {
-                new PivotData { Country = "France", Products = "Bike", Year = "FY 2025", Quarter = "Q1", Sold = 10, Amount = 1000 },
-                new PivotData { Country = "France", Products = "Van", Year = "FY 2025", Quarter = "Q2", Sold = 15, Amount = 2000 },
-                new PivotData { Country = "Germany", Products = "Bike", Year = "FY 2025", Quarter = "Q1", Sold = 8, Amount = 900 },
-                new PivotData { Country = "Germany", Products = "Car", Year = "FY 2026", Quarter = "Q3", Sold = 20, Amount = 3000 },
-                new PivotData { Country = "Brazil", Products = "Van", Year = "FY 2026", Quarter = "Q4", Sold = 12, Amount = 1500 }
-            };
-        }
-    }
-}
+{% highlight c# tabtitle="pivottable.cs" %}
+{% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-core/pivot-table/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pivottable.cs" %}
+{% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot Table control will be rendered in the default web browser.
 
