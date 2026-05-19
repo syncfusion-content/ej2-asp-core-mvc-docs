@@ -1,3 +1,4 @@
+@page
 <ejs-stockchart id="stockchart" load="stockload">
 	<e-stockchart-series-collection>
 		<e-stockchart-series type='Candle' xName='x' name='Apple'> </e-stockchart-series>
