@@ -1,3 +1,4 @@
+@page
 @{
     List<PieChartData> chartData = new List<PieChartData>
     {
