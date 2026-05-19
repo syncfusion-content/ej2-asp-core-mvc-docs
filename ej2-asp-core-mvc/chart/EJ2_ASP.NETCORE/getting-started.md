@@ -163,7 +163,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chart tag 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@page
+
 <ejs-chart id="container"></ejs-chart>
 
 {% endhighlight %}
@@ -180,7 +180,6 @@ To render a column chart, define a data source and bind it to the chart series u
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@page
 @{
     var chartData = new List<object>
     {

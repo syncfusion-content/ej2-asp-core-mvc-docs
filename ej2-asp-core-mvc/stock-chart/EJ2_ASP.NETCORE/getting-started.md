@@ -161,7 +161,6 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Char
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@page
 <ejs-stockchart id="container">
     <e-stockchart-series-collection>
         <e-stockchart-series></e-stockchart-series>
