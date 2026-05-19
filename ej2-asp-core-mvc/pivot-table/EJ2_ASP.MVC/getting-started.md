@@ -221,6 +221,8 @@ The output looks like below
 
 ![ASP.NET MVC Pivot Table with Fields](images/pivottable-fields.png)
 
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/PivotTable/ASP.NET%20MVC%20Razor%20Examples).
+
 ## See also
 
 * [Data Binding](./data-binding)
