@@ -12,43 +12,6 @@ documentation: ug
 
 The **File Manager** is a graphical user interface control for managing the file system that allows the users to perform most common file operation like accessing, editing, and sorting the files and folders. Also, this control has easy navigation functionality for browsing the folders to select a file or folder from the file system.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
-
-In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/overview/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager overview](./images/overview.PNG)
-
-N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-By default, the File Manager control  having  extra module like [NavigationPane](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
-
-In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/overview/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![FileManager overview](images/overview.png)
-
-N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_CssClass) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
-
-{% endif %}
-
 ## Key features
 
 ### File operations
