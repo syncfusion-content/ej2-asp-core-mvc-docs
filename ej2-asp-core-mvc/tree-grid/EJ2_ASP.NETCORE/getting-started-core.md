@@ -91,22 +91,29 @@ The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Sync
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid tag helper in `~/Pages/Index.cshtml` page.
 
-To bind data for the TreeGrid control, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        var treeData = TreeGridItems.GetTreeData();
+        ViewBag.DataSource = treeData;
+        return view();
+    }
+}
 public class TreeGridItems
 {
     public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
+    public int? TaskId { get; set; }
+    public string? TaskName { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set;}
+    public int? Duration { get; set; }
+    public List<TreeGridItems> Children? { get; set; }
 
     public static List<TreeGridItems> GetTreeData()
     {
@@ -188,9 +195,8 @@ public class TreeGridItems
         BusinessObjectCollection.Add(Record2);
 
         return BusinessObjectCollection;
-    }
+    } 
 }
-
 {% endhighlight %}
 {% endtabs %}
 
