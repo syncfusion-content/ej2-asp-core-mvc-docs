@@ -223,7 +223,7 @@ Output be like the below.
 
 ## Toolbar customization
 
-The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using `thetoolbarSettings` property.
+The toolbar settings, such as items to be displayed in the toolbar and visibility, can be customized using the `toolbarSettings` property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -328,3 +328,86 @@ The tooltip value can be customized by adding extra content to the title of the 
 Output be like the below.
 
 ![File Manager tooltip customization ](./images/tooltip.png)
+
+## Maintaining component state on page reload
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnablePersistence.html) property which maintains the following,
+* Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html)
+* Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html)
+* Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~SelectedItems.html)
+
+For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Success.html) event will be triggered and [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Failure.html) event will be triggered if the request gets failed.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/persistence/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![File Manager enable persistence](images/enable_persistence.PNG)
+
+N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
+
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The File Manager supports maintaining the component state on page reload. This can be achieved by enabling [EnablePersistence](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnablePersistence) property which maintains the following,
+* Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_View)
+* Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_Path)
+* Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_SelectedItems)
+
+For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [Success](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_Success) event will be triggered and [Failure](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_Failure) event will be triggered if the request gets failed.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/persistence/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/file-manager/persistence/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![FileManager enable persistence](images/enable_persistence.png)
+
+N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
+
+{% endif %}
+
+## Specifying the current path of the File Manager
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+The current path of the File Manager can be specified initially or dynamically using the [path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html) property.
+
+The following code snippet demonstrates specifying the current path in File Manager on rendering.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/path/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core File Manager with Specific Path](images/path.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager).
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+The current path of the File Manager can be specified initially or dynamically using the [Path](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_Path) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/path/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/file-manager/path/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![FileManager enablertl](images/path.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/FileManager/ASP.NET%20MVC%20Razor%20Examples).
+
+{% endif %}
