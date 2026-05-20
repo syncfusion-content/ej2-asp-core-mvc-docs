@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Maps Component
+# Getting Started with the ASP.NET Core Maps Control
 
-This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using Visual Studio.
+This section explains how to add the Syncfusion [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using Visual Studio.
 
-To get started quickly with the ASP.NET Core Maps component, watch this video:
+To get started quickly with the ASP.NET Core Maps control, watch the following video:
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
@@ -40,22 +40,26 @@ You can create an ASP.NET Core application using either of the following options
 
 3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
 
-4. Click `Next`.
+4. Click **Next**.
 
 5. In the **Additional information** dialog:
-* Select **.NET 10.0**.
-* Verify: **Do not use top-level statements** is **unchecked**.
+* Select **.NET 10.0** or the latest supported .NET version.
+* Ensure that **Do not use top-level statements** is unchecked.
 
-6. Click `Create`.
+
+6. Click **Create**.
 
 For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
 
 ## Install ASP.NET Core Package in the Application
 
-To add **ASP.NET Core** controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
+To add **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to:
+Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight bash tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
@@ -71,11 +75,11 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 1. Install the latest **.NET SDK** that supports **.NET 10.0** or later.
 2. Open **Visual Studio Code**.
-3. Press **Ctrl + `** to open the integrated terminal.
+3. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal.
 4. Run the following command to create the project:
 
 {% tabs %}
-{% highlight C# tabtitle=".NET CLI" %}
+{% highlight bash tabtitle=".NET CLI" %}
 
 dotnet new webapp -o SyncfusionApp
 
@@ -85,7 +89,7 @@ dotnet new webapp -o SyncfusionApp
 Then, open the project in a new Visual Studio Code window using the following command:
 
 {% tabs %}
-{% highlight C# tabtitle=".NET CLI" %}
+{% highlight bash tabtitle=".NET CLI" %}
 
 code -r SyncfusionApp
 
@@ -94,13 +98,13 @@ code -r SyncfusionApp
 
 ## Install ASP.NET Core Package in the Application
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps control, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Navigate to the directory containing the **.csproj** file.
 2. Run the following commands to install the package:
 
 {% tabs %}
-{% highlight C# tabtitle=".NET CLI" %}
+{% highlight bash tabtitle=".NET CLI" %}
 
 dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
 
@@ -111,7 +115,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 
 {% endtabcontents %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
@@ -176,7 +180,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag h
 
 ## Render Shapes from GeoJSON Data
 
-Elements in the Maps control are rendered in layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
+Elements in the Maps control are rendered as layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -199,74 +203,20 @@ Elements in the Maps control are rendered in layers. Add a layer to the Maps con
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps component will be rendered in the default web browser.
-
-![ASP.NET Core Maps Component](images/maps-control.png)
-
-N> Map layers render only when [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided. Refer to the [world map data values](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
-
-## Bind a Data Source to the Map
-
-The following layer properties are used to bind a data source to the map:
-
-* [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource)
-* [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath)
-* [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath)
-
-The [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property accepts a set of key/value pairs as input. For example, a list of objects can be provided as input. This data can be used in tooltips, data labels, legends, and color mapping.
-
-The [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property is used to reference the key in the data source. The [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) property is used to reference the field name in [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) to identify the shape. When the value of the `ShapeDataPath` property in the `DataSource` property matches the value of the `ShapePropertyPath` property in the `ShapeData` property, the associated object from the data source is bound to the corresponding shape.
-
-The following JSON data is used as the data source in the **electionData.json** file.
-
-```json
-[
-    { "Country": "China", "Membership": "Permanent" },
-    { "Country": "France", "Membership": "Permanent" },
-    { "Country": "Russia", "Membership": "Permanent" },
-    { "Country": "United Kingdom", "Membership": "Permanent" },
-    { "Country": "United States", "Membership": "Permanent" },
-    { "Country": "Bolivia", "Membership": "Non-Permanent" },
-    { "Country": "Eq. Guinea", "Membership": "Non-Permanent" },
-    { "Country": "Ethiopia", "Membership": "Non-Permanent" },
-    { "Country": "Côte d'Ivoire", "Membership": "Permanent" },
-    { "Country": "Kazakhstan", "Membership": "Non-Permanent" },
-    { "Country": "Kuwait", "Membership": "Non-Permanent" },
-    { "Country": "Netherlands", "Membership": "Non-Permanent" },
-    { "Country": "Peru", "Membership": "Non-Permanent" },
-    { "Country": "Poland", "Membership": "Non-Permanent" },
-    { "Country": "Sweden", "Membership": "Non-Permanent" }
-]
-```
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application in
+Visual Studio. If you are using Visual Studio Code, run the following command in the terminal:
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Newtonsoft.Json
-@using Syncfusion.EJ2.Maps
-
-@{
-    var propertyPath = new[] { "name" };
-    string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData = JsonConvert.DeserializeObject(allText);
-    string allText1 = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/electiondata.json");
-    var electionData = JsonConvert.DeserializeObject(allText1);
-}
-
-<ejs-maps id="maps">
-    <e-maps-layers>
-        <e-maps-layer dataSource="electionData" shapeData="mapUSData" shapeDataPath="Country"
-                shapePropertyPath="propertyPath">
-        </e-maps-layer>
-    </e-maps-layers>
-</ejs-maps>
-
+{% highlight bash tabtitle=".NET CLI" %}
+dotnet run
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core - Essential JS2 Maps](../maps/images/mapsdata.png)
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps control will be rendered in the default web browser.
 
-N> Refer to the data source values for **electionData.json** in the [Bind a Data Source to the Map](#bind-a-data-source-to-the-map) section.
+![ASP.NET Core Maps Control](images/maps-control.png)
+
+N> Map layers render only when [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided. Refer to the [world map data values](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Maps/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
 
