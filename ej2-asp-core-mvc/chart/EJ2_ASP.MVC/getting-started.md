@@ -9,10 +9,10 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Chart Control
+# Getting Started with the ASP.NET MVC Chart Control
 
-This section briefly explains how to add the [ASP.NET MVC Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to your ASP.NET MVC application using Visual Studio.
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+This section briefly explains how to add the Syncfusion [ASP.NET MVC Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to your ASP.NET MVC application using Visual Studio.
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup>, CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 
 ## Prerequisites
@@ -29,27 +29,35 @@ You can create an ASP.NET MVC application using either of the following options:
 
 ## Install the ASP.NET MVC NuGet Package
 
-To add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls to the application, open the NuGet Package Manager in Visual Studio by selecting **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), and then install it.
+To add **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to:
+Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight bash tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.MVC5 NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.MVC5 NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add the Namespace
 
 Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
 
-```xml
+{% tabs %}
+{% highlight xml tabtitle="~/Views/Web.config" %}
+
 <namespaces>
     <add namespace="Syncfusion.EJ2" />
+
 </namespaces>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Script Resources
 
@@ -87,7 +95,7 @@ Register the script manager `EJS().ScriptManager()` at the end of the `<body>` e
 
 ## Add the ASP.NET MVC Chart Control
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart control to the `~/Home/Index.cshtml` page.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart control to the `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -97,7 +105,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart contr
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chart control will be rendered in the default web browser.
 
 ![ASP.NET MVC Chart Control](how-to/images/chart.png)
 
