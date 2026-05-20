@@ -98,13 +98,22 @@ To bind data for the TreeGrid control, you can assign a IEnumerable object to th
 {% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        var treeData = TreeGridItems.GetTreeData();
+        ViewBag.DataSource = treeData;
+        return view();
+    }
+}
 public class TreeGridItems
 {
     public TreeGridItems() { }
     public int TaskId { get; set; }
     public string TaskName { get; set; }
     public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set; }
+    public DateTime EndDate { get; set;}
     public int Duration { get; set; }
     public List<TreeGridItems> Children { get; set; }
 
@@ -188,9 +197,8 @@ public class TreeGridItems
         BusinessObjectCollection.Add(Record2);
 
         return BusinessObjectCollection;
-    }
+    } 
 }
-
 {% endhighlight %}
 {% endtabs %}
 
