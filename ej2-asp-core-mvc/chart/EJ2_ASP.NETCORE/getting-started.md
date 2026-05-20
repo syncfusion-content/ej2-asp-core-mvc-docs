@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET Core Chart Control
 
-This section explains how to add the yncfusion [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control to your application using Visual Studio.
+This section explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control to your application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio, and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -54,7 +54,7 @@ For alternative approaches to create the project, see [Create a new project in V
 
 ## Install ASP.NET Core Package in the Application
 
-To add **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
 
 Alternatively, you can use the Package Manager Console by navigating to:
 Tools → NuGet Package Manager → Package Manager Console, and then run the following command:

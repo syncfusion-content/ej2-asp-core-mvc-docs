@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET MVC Accumulation Chart Control
 
-This section briefly explains how to add the [ASP.NET MVC Accumulation Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to an ASP.NET MVC application using Visual Studio.
+This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Accumulation Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to an ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ You can create an ASP.NET MVC application using either of the following options:
 
 ## Install the ASP.NET MVC NuGet Package
 
-To add **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
 
 Alternatively, you can use the Package Manager Console by navigating to:
 Tools → NuGet Package Manager → Package Manager Console, and then run the following command:

@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET MVC Chart Control
 
-This section briefly explains how to add the Syncfusion [ASP.NET MVC Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to your ASP.NET MVC application using Visual Studio.
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup>, CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 
@@ -29,7 +29,7 @@ You can create an ASP.NET MVC application using either of the following options:
 
 ## Install the ASP.NET MVC NuGet Package
 
-To add **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
 
 Alternatively, you can use the Package Manager Console by navigating to:
 Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
