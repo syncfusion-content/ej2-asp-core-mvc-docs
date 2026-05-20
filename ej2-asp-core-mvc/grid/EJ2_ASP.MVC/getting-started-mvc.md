@@ -89,8 +89,6 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control in `~/Views/Home/Index.cshtml` page.
 
-To bind data for the Grid component, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-mvc/columns/razor %}
