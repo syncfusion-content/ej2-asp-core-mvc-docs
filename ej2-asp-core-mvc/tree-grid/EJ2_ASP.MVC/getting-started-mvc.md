@@ -84,9 +84,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Tree Grid control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tree Grid control to the `~/Views/Home/Index.cshtml` page. The following code snippet initializes a basic Tree Grid component with default settings.
-
-To bind data to the TreeGrid component, assign an `IEnumerable` object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tree Grid control to the `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
