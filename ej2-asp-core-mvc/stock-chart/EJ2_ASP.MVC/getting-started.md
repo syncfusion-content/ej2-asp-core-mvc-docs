@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Stock Chart Control
+# Getting Started with the ASP.NET MVC Stock Chart Control
 
-This section briefly explains how to add the [ASP.NET MVC Stock Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/stock-chart) control to your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Stock Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/stock-chart) control to your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -26,27 +26,34 @@ You can create an ASP.NET MVC application using either of the following options:
 
 ## Install the ASP.NET MVC NuGet Package
 
-To add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls to the application, open the NuGet Package Manager in Visual Studio by selecting **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), and then install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to:
+Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight bash tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.MVC5 NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.MVC5 NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add the Namespace
 
 Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
 
-```xml
+{% tabs %}
+{% highlight xml tabtitle="~/Views/Web.config" %}
+
 <namespaces>
     <add namespace="Syncfusion.EJ2" />
 </namespaces>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Stylesheet and Script Resources
 
@@ -66,7 +73,7 @@ Add the stylesheet and script references inside the `<head>` element of the `~/V
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) topic to learn different ways, such as CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), to refer to styles in an ASP.NET MVC application and achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
+N> Refer to the [Themes](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) topic to learn different ways, such as CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator), to refer to styles in an ASP.NET MVC application and achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
 N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
@@ -101,14 +108,14 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock Chart
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock Chart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Stock Chart control will be rendered in the default web browser.
 
 ![ASP.NET MVC Stock Chart Control](images/stockchart-control.png)
 
 
 ## Populate the Stock Chart with Data
 
-This section explains how to plot JSON data in the Stock Chart.
+This section explains how to plot JSON data in the ASP.NET MVC Stock Chart.
 
 Add a series object to the chart by using the [Series](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_Series) property, and then set the JSON data to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.StockChart.html#Syncfusion_EJ2_Charts_StockChart_DataSource) property.
 
