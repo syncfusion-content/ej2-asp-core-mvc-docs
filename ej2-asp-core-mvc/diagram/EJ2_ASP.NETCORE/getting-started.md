@@ -37,13 +37,13 @@ Create a new ASP.NET Core Razor Pages application using Visual Studio or the .NE
 
 Using the .NET CLI:
 
-```bash
+```
 dotnet new webapp -n MyDiagramApp
 ```
 
 Navigate to the project folder:
 
-```bash
+```
 cd MyDiagramApp
 ```
 
@@ -55,13 +55,13 @@ All Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core packages are a
 
 Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package using the Package Manager Console:
 
-```powershell
+```
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 ```
 
 Or using the .NET CLI:
 
-```bash
+```
 dotnet add package Syncfusion.EJ2.AspNet.Core
 ```
 
@@ -71,7 +71,7 @@ N> The `Syncfusion.EJ2.AspNet.Core` package automatically installs its required 
 
 Open the `~/Pages/_ViewImports.cshtml` file and add the Syncfusion<sup style="font-size:70%">&reg;</sup> tag helper reference.
 
-```cshtml
+```razor
 @addTagHelper *, Syncfusion.EJ2
 ```
 
@@ -81,7 +81,7 @@ This makes the `<ejs-*>` tag helpers, including `<ejs-diagram>`, available in al
 
 Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script references inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file along with the existing content.
 
-```cshtml
+```razor
 <head>
     ...
     <!-- Syncfusion® ASP.NET Core controls styles -->
@@ -99,7 +99,7 @@ N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 Add the `<ejs-scripts>` tag at the end of the `<body>` in the `~/Pages/Shared/_Layout.cshtml` file. The script manager renders the scripts required for Syncfusion<sup style="font-size:70%">&reg;</sup> controls to function correctly.
 
-```cshtml
+```razor
 <body>
     ...
     <!-- Syncfusion® ASP.NET Core Script Manager -->
@@ -111,7 +111,7 @@ Add the `<ejs-scripts>` tag at the end of the `<body>` in the `~/Pages/Shared/_L
 
 Add the `<ejs-diagram>` tag helper to the `~/Pages/Index.cshtml` file.
 
-```cshtml
+```razor
 @page
 @model IndexModel
 <ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>
@@ -199,7 +199,7 @@ public class IndexModel : PageModel
 
 Update `~/Pages/Index.cshtml` to bind `@Model.nodes` and `@Model.connectors` to the `<ejs-diagram>` tag helper. The JavaScript function names are passed as string variables using the Razor `@{ }` block.
 
-```cshtml
+```razor
 @page
 @model IndexModel
 @{
@@ -251,7 +251,7 @@ In this example:
 
 Run the application using the following command:
 
-```bash
+```
 dotnet run
 ```
 
