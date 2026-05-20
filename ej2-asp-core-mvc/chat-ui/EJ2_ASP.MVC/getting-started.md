@@ -90,10 +90,10 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chat UI con
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/default-user/razor %}
+{% include code-snippet/chat-ui/getting-started/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chat-ui/default-user/defaultUser.cs %}
+{% include code-snippet/chat-ui/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -91,10 +91,10 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chat UI ta
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/default-user/tagHelper %}
+{% include code-snippet/chat-ui/getting-started/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chat-ui/default-user/defaultUser.cs %}
+{% include code-snippet/chat-ui/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
 
