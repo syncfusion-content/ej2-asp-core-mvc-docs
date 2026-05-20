@@ -47,7 +47,7 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 {% endhighlight %}
 {% endtabs %}
 
-Ensure you’re running the command inside Visual Studio’s Package Manager Console (Tools → NuGet Package Manager → Package Manager Console), not in a terminal like CMD or PowerShell.
+I> Ensure you’re running the command inside Visual Studio’s Package Manager Console (Tools → NuGet Package Manager → Package Manager Console), not in a terminal like CMD or PowerShell.
 
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
@@ -108,41 +108,18 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rich T
 {% endhighlight %}
 {% endtabs %}
 
-Note: Need to remove the content in index.cshtml and use the new content 
+I> Need to remove the content in index.cshtml and paste the above content
+
+I> When the Rich Text Editor component is rendered, the id attribute must be present. If the id is not provided, the component will fail to render.
+
+
+## Run the application
 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rich Text Editor control will be rendered in the default web browser.
 
 ![ASP.NET MVC Rich Text Editor Control](images/richtexteditor-control.png)
 
-## Configure the Toolbar
-
-Configure the toolbar with the tools using items field of the [ToolbarSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property as your application requires.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/rich-text-editor/basic/toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-public ActionResult Index()
-{
-    List<string> tools = new List<string>() {
-        "Bold", "Italic", "Underline", "StrikeThrough",
-        "FontName", "FontSize", "FontColor", "BackgroundColor",
-        "LowerCase", "UpperCase", "|",
-        "Formats", "Alignments", "OrderedList", "UnorderedList",
-        "Outdent", "Indent", "|",
-        "CreateLink", "Image", "CreateTable", "|", "ClearFormat", "Print",
-        "SourceCode", "FullScreen", "|", "Undo", "Redo"
-    };
-    return View(tools);
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Rich Text Editor with Toolbar](images/richtexteditor-with-toolbar.png)
-
-N> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
