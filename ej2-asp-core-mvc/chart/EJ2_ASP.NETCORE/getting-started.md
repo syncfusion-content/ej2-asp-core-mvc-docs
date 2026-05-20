@@ -57,7 +57,7 @@ For alternative approaches to create the project, see [Create a new project in V
 To add **ASP.NET Core** controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle=".NET CLI" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
