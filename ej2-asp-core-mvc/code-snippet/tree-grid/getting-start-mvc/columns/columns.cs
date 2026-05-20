@@ -10,12 +10,12 @@ public class HomeController : Controller
 public class TreeGridItems
 {
     public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public DateTime EndDate { get; set;}
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
+    public int? TaskId { get; set; }
+    public string? TaskName { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set;}
+    public int? Duration { get; set; }
+    public List<TreeGridItems> Children? { get; set; }
 
     public static List<TreeGridItems> GetTreeData()
     {
