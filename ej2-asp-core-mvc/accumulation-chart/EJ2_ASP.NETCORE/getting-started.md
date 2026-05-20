@@ -13,7 +13,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET Core Accumulation Chart Control
 
-This section explains how to add the Syncfusion [ASP.NET Core Accumulation Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control to a Razor Pages application using Visual Studio or Visual Studio Code.
+This section explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core Accumulation Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control to a Razor Pages application using Visual Studio or Visual Studio Code.
 
 To quickly get started with the ASP.NET Core Accumulation Chart control, watch the following video:
 {% youtube "https://www.youtube.com/watch?v=RplZL-3B1G4&t=3s" %}
@@ -54,7 +54,7 @@ For alternative approaches to create the project, see [Create a new project in V
 
 ## Install ASP.NET Core Package in the Application
 
-To add **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
 
 Alternatively, you can use the Package Manager Console by navigating to:
 Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
