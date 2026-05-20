@@ -91,153 +91,61 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/initialize/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Row Data
-
-To bind data for the Grid component, you can assign a IEnumerable object to the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the **DataManager**.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/databinding/razor %}
+{% include code-snippet/grid/getting-start-mvc/columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
 public class HomeController : Controller
 {
-    public ActionResult Index()
+    public IActionResult Index()
     {
-        return View(OrdersDetails.GetAllRecords());
+        var Order = OrdersDetails.GetAllRecords();
+        ViewBag.DataSource = Order;
+        return View();
     }
-}
-public class OrdersDetails
-{
-    public static List<OrdersDetails> order = new List<OrdersDetails>();
-    public OrdersDetails()
+ 
+    public class OrdersDetails
     {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public static List<OrdersDetails> GetAllRecords()
-    {
-        if (order.Count() == 0)
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
         {
-            int code = 10000;
-            for (int i = 1; i < 5; i++)
-            {
-                order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, 2.3 * i, false, new DateTime(1991, 05, 15), "Berlin", "Simons bistro", "Denmark", new DateTime(1996, 7, 16), "Kirchgasse 6"));
-                order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, 3.3 * i, true, new DateTime(1990, 04, 04), "Madrid", "Queen Cozinha", "Brazil", new DateTime(1996, 9, 11), "Avda. Azteca 123"));
-                order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, 4.3 * i, true, new DateTime(1957, 11, 30), "Cholchester", "Frankenversand", "Germany", new DateTime(1996, 10, 7), "Carrera 52 con Ave. Bolívar #65-98 Llano Largo"));
-                order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, 5.3 * i, false, new DateTime(1930, 10, 22), "Marseille", "Ernst Handel", "Austria", new DateTime(1996, 12, 30), "Magazinweg 7"));
-                order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, 6.3 * i, true, new DateTime(1953, 02, 18), "Tsawassen", "Hanari Carnes", "Switzerland", new DateTime(1997, 12, 3), "1029 - 12th Ave. S."));
-                code += 5;
-            }
+ 
         }
-        return order;
+        public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry, double Freight)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.OrderDate = OrderDate;
+            this.ShipCountry = ShipCountry;
+            this.Freight = Freight;
+        }
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                order.Add(new OrdersDetails(10248, "Ana Trujillo", new DateTime(2025, 1, 12), "France", 32.38));
+                order.Add(new OrdersDetails(10249, "Martin Sommer", new DateTime(2025, 1, 15), "Germany", 11.61));
+                order.Add(new OrdersDetails(10250, "Thomas Hardy", new DateTime(2025, 2, 5), "Brazil", 65.83));
+                order.Add(new OrdersDetails(10251, "Elizabeth Lincoln", new DateTime(2025, 2, 18), "France", 41.34));
+                order.Add(new OrdersDetails(10252, "Victoria Ashworth", new DateTime(2025, 3, 10), "Belgium", 51.30));
+                order.Add(new OrdersDetails(10253, "Martine Rance", new DateTime(2025, 3, 22), "Brazil", 58.17));
+            }
+            return order;
+        }
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public string? ShipCountry { get; set; }
+        public double? Freight { get; set; }
     }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control will be rendered in the default web browser.
 
-![ASP.NET MVC Grid Control](images/grid-control.png)
-
-## Defining Columns
-
-The columns are automatically generated when columns declaration is empty or undefined while initializing the grid.
-
-The Grid has an option to define columns using [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html) property.
-
-Let’s check the properties used here:
-
-* The [Field](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is to map with a property name an array of JavaScript objects.
-* The [HeaderText](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) property is to change the title of columns.
-* The [TextAlign](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) property is to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, you need to define **textAlign** as **Right**.
-* Using [Format](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format) property you can format number and date values to standard or custom formats. Here, you have defined it for the conversion of numeric values to currency.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/columns/razor %}
-{% endhighlight %}
-{% endtabs %}
+The output looks like below
 
 ![ASP.NET MVC Grid with Column Values](images/column.png)
-
-## Enable Paging
-
-The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [AllowPaging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) property to true. Pager can be customized using the [PageSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/page/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Paging in ASP.NET MVC Grid Control](images/getting-started/grid-page.png)
-
-## Enable Sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the  [AllowSorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) property as true. Sorting feature can be customized using the [SortSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SortSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/sorting/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Sorting in ASP.NET MVC Grid Control](images/getting-started/grid-sort.png)
-
-## Enable Filtering
-
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [AllowFiltering](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property as true. Filtering feature can be customized using the [FilterSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/filtering/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Filtering in ASP.NET MVC Grid Control](images/getting-started/grid-filter.png)
-
-## Enable Grouping
-
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true. Grouping feature can be customized using the [GroupSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) property.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-mvc/grouping/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![Grouping in ASP.NET MVC Grid Control](images/getting-started/grid-group.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Grid/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 

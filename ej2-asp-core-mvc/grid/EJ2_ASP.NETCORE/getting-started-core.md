@@ -165,301 +165,61 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/grid/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Row Data
-
-To bind data for the Grid component, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/databinding/tagHelper %}
+{% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
+public class HomeController : Controller
 {
-    public OrdersDetails()
+    public IActionResult Index()
     {
-
+        var Order = OrdersDetails.GetAllRecords();
+        ViewBag.DataSource = Order;
+        return View();
     }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
+ 
+    public class OrdersDetails
     {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
+        public static List<OrdersDetails> order = new List<OrdersDetails>();
+        public OrdersDetails()
+        {
+ 
+        }
+        public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry, double Freight)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.OrderDate = OrderDate;
+            this.ShipCountry = ShipCountry;
+            this.Freight = Freight;
+        }
+        public static List<OrdersDetails> GetAllRecords()
+        {
+            if (order.Count() == 0)
+            {
+                order.Add(new OrdersDetails(10248, "Ana Trujillo", new DateTime(2025, 1, 12), "France", 32.38));
+                order.Add(new OrdersDetails(10249, "Martin Sommer", new DateTime(2025, 1, 15), "Germany", 11.61));
+                order.Add(new OrdersDetails(10250, "Thomas Hardy", new DateTime(2025, 2, 5), "Brazil", 65.83));
+                order.Add(new OrdersDetails(10251, "Elizabeth Lincoln", new DateTime(2025, 2, 18), "France", 41.34));
+                order.Add(new OrdersDetails(10252, "Victoria Ashworth", new DateTime(2025, 3, 10), "Belgium", 51.30));
+                order.Add(new OrdersDetails(10253, "Martine Rance", new DateTime(2025, 3, 22), "Brazil", 58.17));
+            }
+            return order;
+        }
+        public int? OrderID { get; set; }
+        public string? CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public string? ShipCountry { get; set; }
+        public double? Freight { get; set; }
     }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid control will be rendered in the default web browser.
 
-![ASP.NET Core Grid with Row Data](images/grid-row.png)
+The output looks like below
 
-## Defining Columns
-
-The columns are automatically generated when `columns` declaration is empty or undefined while initializing the grid.
-
-The Grid has an option to define columns using [`e-grid-columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Columns) tag helper. In `e-grid-column` tag helper we have properties to customize columns.
-
-Let’s check the properties used here:
-
-* We have added [`field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) to map with a property name an array of JavaScript objects.
-* We have added [`headerText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_HeaderText) to change the title of columns.
-* We have used [`textAlign`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_TextAlign) to change the alignment of columns.
-By default, columns will be left aligned. To change columns to right align, we need to define `textAlign` as `Right`.
-* Also, we have used another useful property, [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Format).
-Using this, we can format number and date values to standard or custom formats.
-Here, we have defined it for the conversion of date object value to `yMd` format.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Grid with Columns Data](images/grid-column.png)
-
-## Enable Paging
-
-The paging feature enables users to view the grid record in a paged view. It can be enabled by setting the  [`allowPaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowPaging) property to true. Pager can be customized using [`e-grid-pagesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PageSettings) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/page/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Grid with Paging](images/getting-started/grid-page.png)
-
-## Enable Sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the  [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) property as true. Sorting feature can be customized using [`e-grid-sortsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SortSettings) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/sorting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Sorting in ASP.NET Core Grid](images/getting-started/grid-sort.png)
-
-## Enable Filtering
-
-The filtering feature enables you to view reduced amount of records based on filter criteria. It can be enabled by setting the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering) property as true. Filtering feature can be customized using [`e-grid-filtersettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/filtering/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Filtering in ASP.NET Core Grid](images/getting-started/grid-filter.png)
-
-## Enable Grouping
-
-The grouping feature enables users to view the grid record in a grouped view. It can be enabled by setting the [`allowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to true. Grouping feature can be customized using the [`e-grid-groupsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/getting-start-core/grouping/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class OrdersDetails
-{
-    public OrdersDetails()
-    {
-
-    }
-    public OrdersDetails(int OrderID, string CustomerId, int EmployeeId, double Freight, bool Verified, DateTime OrderDate, string ShipCity, string ShipName, string ShipCountry, DateTime ShippedDate, string ShipAddress)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.EmployeeID = EmployeeId;
-        this.Freight = Freight;
-        this.ShipCity = ShipCity;
-        this.Verified = Verified;
-        this.OrderDate = OrderDate;
-        this.ShipName = ShipName;
-        this.ShipCountry = ShipCountry;
-        this.ShippedDate = ShippedDate;
-        this.ShipAddress = ShipAddress;
-    }
-    public int? OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public int? EmployeeID { get; set; }
-    public double? Freight { get; set; }
-    public string ShipCity { get; set; }
-    public bool Verified { get; set; }
-    public DateTime OrderDate { get; set; }
-    public string ShipName { get; set; }
-    public string ShipCountry { get; set; }
-    public DateTime ShippedDate { get; set; }
-    public string ShipAddress { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Grouping in ASP.NET Core Grid](images/getting-started/grid-group.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Grid/ASP.NET%20Core%20Tag%20Helper%20Examples).
+![ASP.NET Core Grid with Columns Data](images/column.png)
 
 ## See also
 
