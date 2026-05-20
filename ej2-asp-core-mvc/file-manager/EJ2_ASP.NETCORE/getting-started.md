@@ -23,9 +23,31 @@ This section briefly explains about how to include [ASP.NET Core FileManager](ht
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio:
+
+1. Start **Visual Studio** and select **Create a new project**.
+
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+
+3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
+
+4. Click `Next`.
+
+5. In the Additional information dialog:
+* Select **.NET 10.0**.
+* Verify: **Do not use top-level statements** is **unchecked**.
+
+6. Click `Create`.
+
+For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
+
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -34,6 +56,50 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio Code:
+
+* Install the latest **.NET SDK** that supports **.NET 10.0** or later.
+* Open **Visual Studio Code**.
+* Press **Ctrl + `** to open the integrated terminal.
+* Run the following commands:
+
+{% tabs %}
+{% highlight C# tabtitle=".NET CLI" %}
+
+dotnet new webapp -o RazorPagesMovie
+
+code -r RazorPagesMovie
+
+{% endhighlight %}
+{% endtabs %}
+
+## Install ASP.NET Core package in the application
+
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+
+1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
+2. Navigate to the directory containing the **.csproj** file.
+3. Run the following commands to install the packages:
+
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -112,6 +178,7 @@ using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 
 namespace WebApplication4.Controllers
 {
+    [Route("[controller]")]
     public class HomeController : Controller
     {
         public PhysicalFileProvider operation;
@@ -124,7 +191,7 @@ namespace WebApplication4.Controllers
             this.operation = new PhysicalFileProvider();
             this.operation.RootFolder(this.basePath + "\\" + this.root);
         }
-
+        [Route("FileOperations")]
         public object FileOperations([FromBody] FileManagerDirectoryContent args)
         {
             var fullPath = (this.basePath + "\\" + this.root + args.Path).Replace("/", "\\");
@@ -168,7 +235,9 @@ namespace WebApplication4.Controllers
         }
 
         // uploads the file(s) into a specified path
-        public IActionResult Upload(string path, IList<IFormFile> uploadFiles, string action)
+        [Route("Upload")]
+        [DisableRequestSizeLimit]
+        public IActionResult Upload(string path, long size, IList<IFormFile> uploadFiles, string action)
         {
             try
             {
@@ -219,6 +288,7 @@ namespace WebApplication4.Controllers
         }
 
         // downloads the selected file(s) and folder(s)
+        [Route("Download")]
         public IActionResult Download(string downloadInput)
         {
             var options = new JsonSerializerOptions
@@ -230,6 +300,7 @@ namespace WebApplication4.Controllers
         }
 
         // gets the image(s) from the given path
+        [Route("GetImage")]
         public IActionResult GetImage(FileManagerDirectoryContent args)
         {
             return this.operation.GetImage(args.Path, args.Id, false, null, null);
@@ -244,16 +315,16 @@ namespace WebApplication4.Controllers
         {
             return View();
         }
-
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+After creating a controller for the File Manager service, register it in the `Program.cs` file using:
+
+   ```csharp
+   app.MapControllers();
+   ```
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager control will be rendered in the default web browser.
 
@@ -261,114 +332,13 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
-## File Download support
-
-To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/file-download-url/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## File Upload support
-
-To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager Control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/file-upload-url/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Image Preview support
-
-To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/image-preview/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager Sample](images/getimage.png)
-
-## File Manager Overview
-
-By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
-
-In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/overview/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager overview](./images/overview.PNG)
-
-N> The appearance of the File Manager can be customized by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~CssClass.html) property. This adds a css class to the root of the File Manager which can be used to add new styles or override existing styles to the File Manager.
-
-## Switching initial view of the File Manager
-
-The initial view of the File Manager can be changed to details or largeicons view with the help of [view](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html) property. By default, the File Manager will be rendered in large icons view. When the File Manager is initially rendered, [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Created.html) will be triggered. This event can be utilized for performing operations once the File Manager has been successfully created.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/view/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager switching view ](./images/overview.PNG)
-
-## Maintaining control state on page reload
-
-The File Manager supports maintaining the control state on page reload. This can be achieved by enabling [enablePersistence](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnablePersistence.html) property which maintains the following,
-* Previous view of the File Manager - [View](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~View.html)
-* Previous path of the File Manager - [Path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html)
-* Previous selected items of the File Manager - [SelectedItems](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~SelectedItems.html)
-
-For every operation in File Manager, ajax request will be sent to the server which then processes the request and sends back the response. When the ajax request is success, [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Success.html) event will be triggered and [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Failure.html) event will be triggered if the request gets failed.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/persistence/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![File Manager enable persistence](images/enable_persistence.PNG)
-
-N> The files of the current folder opened in the File Manager can be refreshed programatically by calling `refreshFiles` method
-
-## Rendering control in right-to-left direction
-
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnableRtl.html) API to true.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/rtl/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![Right to Left Support in ASP.NET Core FileManager](./images/enable_rtl.PNG)
-
-## Specifying the current path of the File Manager
-
-The current path of the File Manager can be specified initially or dynamically using the [path](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~Path.html) property.
-
-The following code snippet demonstrates specifying the current path in File Manager on rendering.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/file-manager/path/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core File Manager with Specific Path](images/path.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/FileManager).
-
 ## See also
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](../file-operations#Ajax-Settings-Configuration)
+* [Overview](../user-interface#File-Manager-Overview)
+* [File Manager Views](../views.md)
+* [File Manager File Operations](../file-operations)
+* [File Manager Upload](../upload)
+* [File Manager Customization](../customization)
