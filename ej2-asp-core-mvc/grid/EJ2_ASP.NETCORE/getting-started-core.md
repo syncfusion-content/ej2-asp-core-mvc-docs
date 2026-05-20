@@ -163,8 +163,6 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid tag helper in `~/Pages/Index.cshtml` page.
 
-To bind data for the Grid component, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) property. The list data source can also be provided as an instance of the `DataManager`.
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
