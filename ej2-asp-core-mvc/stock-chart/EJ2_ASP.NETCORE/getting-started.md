@@ -198,7 +198,7 @@ Since the JSON data contains DateTime values, set the [`valueType`](https://help
 
 ![ASP.NET Core Stock Chart with Data](images/stockchart.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/StockChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/StockChart/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
  
 ## See Also
 
