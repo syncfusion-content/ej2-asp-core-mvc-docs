@@ -57,6 +57,28 @@ The following ARIA attributes are used in Gantt:
 | `aria-expanded` | This attribute is assigned to the Gantt chart parent task row. The value is changed to `true` when the user clicks a parent taskbar to expand. After the user clicked a parent taskbar to collapse, the attribute value is changed to `false` |
 | `aria-grabbed` | This attribute is assigned to the taskbars of Gantt when the user tries to achieve taskbar editing |
 
+The Syncfusion ##Platform_Name## Gantt Chart control is structured using a combined TreeGrid and chart architecture for rendering its grid (table) and timeline sections. To enhance accessibility for screen readers, roles and ARIA attributes are incorporated for the treegrid parent and all its child elements. Although this architectural approach may have some limitations with accessibility checker tools, it is important to note that these limitations do not affect the readability or usability of the Gantt content in screen readers.
+
+The accessibility checker tools highlight the following known issues:
+
+* The `<table>` element with `role="presentation"` or `role="none"` contains structural elements such as `<th>`.
+* Verify that the table is not being used solely to format text content in columns unless the table can be properly linearized.  
+* Content is not placed within a landmark element.  
+* Verify that the `<div>` element with `role="grid"` provides proper keyboard access.  
+* The element with `role="grid"` contains child elements with roles such as `"generic"` and `"textbox"`, which are not allowed. Only `"row"` or `"rowgroup"` roles are permitted as direct children.  
+* Interactive component with ARIA role `treegrid` does not have a programmatically associated accessible name.  
+* None of the descendant elements with `role="row"` are tabbable.  
+* The explicitly assigned ARIA role `"rowgroup"` is redundant with the implicit role of the `<tbody>` element.  
+* The explicitly assigned ARIA role `"row"` is redundant with the implicit role of the `<tr>` element.  
+* The explicitly assigned ARIA role `"gridcell"` is redundant with the implicit role of the `<td>` element.  
+* The tabbable element with role `"columnheader"` is not a widget role.  
+* The explicitly assigned ARIA role `"columnheader"` is redundant with the implicit role of the `<th>` element.  
+* The element with `role="rowgroup"` does not contain required child elements with role `"row"`.  
+* The ARIA attribute `aria-valuenow` is not valid for a `<div>` element with `role="separator"`.  
+* The `cellspacing` attribute is deprecated for the `<table>` element in HTML5.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with `role="term"`.  
+* The ARIA attribute `aria-label` is not valid for a `<div>` element with the implicit `"generic"` role.
+
 ## Keyboard navigation
 
 The Gantt component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns) guideline, ensuring accessibility for users of assistive technologies (AT) and those who rely solely on keyboard navigation. The following keyboard shortcuts are supported by the Gantt component:
