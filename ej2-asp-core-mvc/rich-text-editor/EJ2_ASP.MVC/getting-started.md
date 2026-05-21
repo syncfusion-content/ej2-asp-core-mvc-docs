@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Rich Text Editor Control
 
-This section briefly explains about how to include [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
+The Syncfusion ASP .NET MVC Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -19,13 +19,16 @@ This section briefly explains about how to include [ASP.NET MVC Rich Text Editor
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Create ASP.NET MVC application with HTML helper
+## Create ASP.NET MVC application
 
-You can create the the ASP.NET MVC web application by two types they are mentioned below along with the steps. follow one of these types and follow it to create a Asp core project 
+You can create the the ASP.NET MVC web application by two types they are mentioned below along with the steps. follow one of these types and follow it to create a ASP .NET MVC project 
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+
+W> **Important:** Syncfusion® ASP.NET MVC components require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
+
 
 ## Install Syncfusion ASP.NET MVC package in the application
 
@@ -108,7 +111,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Rich T
 {% endhighlight %}
 {% endtabs %}
 
-I> Need to remove the content in index.cshtml and paste the above content
+I> Replace the existing content in the Index.cshtml file by pasting the above code snippet.
 
 I> When the Rich Text Editor component is rendered, the id attribute must be present. If the id is not provided, the component will fail to render.
 
