@@ -8,18 +8,18 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Maps Component
+# Getting Started with the ASP.NET MVC Maps Control
 
-This section briefly explains how to add the [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) component to your ASP.NET MVC application using Visual Studio.
+This section explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) control to your ASP.NET MVC application using Visual Studio.
 
-You can explore some useful features in the Maps component using the following video.
+You can explore some useful features in the Maps control using the following video.
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
 ## Prerequisites
 
 
-Refer to the [System requirements for ASP.NET MVC components](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
+Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
 
 ## Create an ASP.NET MVC Application with HTML Helper
 
@@ -31,10 +31,13 @@ You can create an ASP.NET MVC application using either of the following options:
 
 ## Install the ASP.NET MVC NuGet Package
 
-To add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls to the application, open the NuGet Package Manager in Visual Studio by selecting **Tools** > **NuGet Package Manager** > **Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5), and then install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to:
+Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight bash tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
@@ -47,11 +50,15 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are ava
 
 Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
 
-```xml
+{% tabs %}
+{% highlight xml tabtitle="~/Views/Web.config" %}
+
 <namespaces>
     <add namespace="Syncfusion.EJ2" />
 </namespaces>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add Script Resources
 
@@ -87,9 +94,9 @@ Register the script manager `EJS().ScriptManager()` at the end of the `<body>` e
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET MVC Maps Component
+## Add the ASP.NET MVC Maps Control
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps component to the `~/Views/Home/Index.cshtml` page.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps control to the `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -102,7 +109,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps compon
 {% endhighlight %}
 {% endtabs %}
 
-Place the **WorldMap.json** file in the **App_Data** folder of the project. Read the content of the **WorldMap.json** file in the controller and assign the deserialized object to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property of the Maps component as shown below.
+Place the **WorldMap.json** file in the **App_Data** folder of the project. Read the content of the **WorldMap.json** file in the controller and assign the deserialized object to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property of the Maps control as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="HomeController.cs" %}
@@ -123,92 +130,9 @@ public object GetWorldMap()
 
 N> Map layers render only when `ShapeData` is provided [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> on (macOS) to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps component will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on (Windows) or <kbd>⌘</kbd> + <kbd>F5</kbd> on (macOS) to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps control will be rendered in the default web browser.
 
 ![ASP.NET MVC - Essential JS2 Maps](../maps/images/aspnetmvc-maps.png)
-
-## Bind a Data Source to the Map
-
-The following layer properties are used to bind a data source to the map:
-
-* [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource)
-* [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath)
-* [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath)
-
-The [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_DataSource) property accepts a set of key/value pairs as input. For example, a list of objects can be provided as input. This data can be used in tooltips, data labels, legends, and color mapping.
-
-The [`ShapeDataPath`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeDataPath) property is used to reference the key in the data source. The [`ShapePropertyPath`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapePropertyPath) property is used to reference the field name in [`ShapeData`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) to identify the shape. When the value of the `ShapeDataPath` property in the `DataSource` property matches the value of the `ShapePropertyPath` property in the `ShapeData` property, the associated object from the data source is bound to the corresponding shape.
-
-The following JSON data is used as the data source in the **electionData.json** file.
-
-```json
-[
-    { "Country": "China", "Membership": "Permanent" },
-    { "Country": "France", "Membership": "Permanent" },
-    { "Country": "Russia", "Membership": "Permanent" },
-    { "Country": "United Kingdom", "Membership": "Permanent" },
-    { "Country": "United States", "Membership": "Permanent" },
-    { "Country": "Bolivia", "Membership": "Non-Permanent" },
-    { "Country": "Eq. Guinea", "Membership": "Non-Permanent" },
-    { "Country": "Ethiopia", "Membership": "Non-Permanent" },
-    { "Country": "Côte d'Ivoire", "Membership": "Permanent" },
-    { "Country": "Kazakhstan", "Membership": "Non-Permanent" },
-    { "Country": "Kuwait", "Membership": "Non-Permanent" },
-    { "Country": "Netherlands", "Membership": "Non-Permanent" },
-    { "Country": "Peru", "Membership": "Non-Permanent" },
-    { "Country": "Poland", "Membership": "Non-Permanent" },
-    { "Country": "Sweden", "Membership": "Non-Permanent" }
-]
-```
-
-{% tabs %}
-{% highlight c# tabtitle="HomeController.cs" %}
-
-using Newtonsoft.Json;
-using System.Web.Mvc;
-
-public ActionResult Index()
-{
-    ViewBag.shapeData = GetWorldMap();
-    ViewBag.electionData = GetElectionData();
-    ViewBag.shapePropertyPath = new[] { "name" };
-
-    return View();
-}
-
-public object GetWorldMap()
-{
-    string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/WorldMap.json"));
-    return JsonConvert.DeserializeObject(allText, typeof(object));
-}
-
-public object GetElectionData()
-{
-    string allText = System.IO.File.ReadAllText(Server.MapPath("~/App_Data/electionData.json"));
-    return JsonConvert.DeserializeObject(allText, typeof(object));
-}
-
-{% endhighlight %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-@using Syncfusion.EJ2.Maps
-@using Syncfusion.EJ2
-
-@Html.EJS().Maps("container").Layers(layer =>
-{
-    layer.ShapeData(ViewBag.shapeData)
-    .DataSource(ViewBag.electionData)
-    .ShapeDataPath("Country")
-    .ShapePropertyPath(ViewBag.shapePropertyPath)
-    .Add();
-}).Render()
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET MVC - Essential JS2 Maps](../maps/images/mapsdata.png)
-
-N> Refer to the data source values for **electionData.json** in the [Bind a Data Source to the Map](#bind-a-data-source-to-the-map) section.
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Map/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
 
