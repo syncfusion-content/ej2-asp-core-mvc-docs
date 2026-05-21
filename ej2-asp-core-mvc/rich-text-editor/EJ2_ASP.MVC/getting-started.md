@@ -29,7 +29,6 @@ You can create the the ASP.NET MVC web application by two types they are mention
 
 W> **Important:** Syncfusion® ASP.NET MVC components require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
 
-
 ## Install Syncfusion ASP.NET MVC package in the application
 
 You can add the Syncfusion Rich Text Editor to your ASP.NET MVC application by installing the Syncfusion AASP.NET MVC package. This can be done in two ways, they are mentioned below
