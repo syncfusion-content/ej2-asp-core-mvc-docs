@@ -91,62 +91,28 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 * The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/add-fields/razor %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
-
-public class HomeController : Controller
-{
-    public ActionResult Index()
-    {
-        return View(PivotData.GetPivotData());
-
-    }
-}
-public class PivotData
-{
-    public int Sold { get; set; }
-    public double Amount { get; set; }
-    public string Country { get; set; }
-    public string Products { get; set; }
-    public string Year { get; set; }
-    public string Quarter { get; set; }
-
-    private static List<PivotData> pivotDataList = new List<PivotData>();
-
-    public PivotData() { }
-
-    public PivotData(int sold, double amount, string country, string products, string year, string quarter)
-    {
-        Sold = sold;
-        Amount = amount;
-        Country = country;
-        Products = products;
-        Year = year;
-        Quarter = quarter;
-    }
-
-    public static List<PivotData> GetPivotData()
-    {
-        if (pivotDataList.Count == 0)
-        {
-            pivotDataList.Add(new PivotData(31, 52824, "France", "Mountain Bikes", "FY 2015", "Q1"));
-            pivotDataList.Add(new PivotData(27, 46008, "France", "Mountain Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(27, 46008, "France", "Mountain Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(27, 46008, "France", "Mountain Bikes", "FY 2016", "Q1"));
-            pivotDataList.Add(new PivotData(51, 92824, "Germany", "Mountain Bikes", "FY 2015", "Q1"));
-            pivotDataList.Add(new PivotData(97, 86008, "Germany", "Mountain Bikes", "FY 2016", "Q2"));
-            pivotDataList.Add(new PivotData(91, 67824, "Germany", "Mountain Bikes", "FY 2015", "Q2"));
-            pivotDataList.Add(new PivotData(57, 90008, "Germany", "Mountain Bikes", "FY 2016", "Q1"));
-        }
-
-        return pivotDataList;
-    }
-}
+{% highlight c# tabtitle="pivottable.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="pivottable.cs" %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table control will be rendered in the default web browser.
 
