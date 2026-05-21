@@ -101,8 +101,8 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt
 {% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/gantt/getting-started/gantt/tagHelper %}
 {% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/gantt/gantt.cs %}
+{% highlight cs tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt/getting-started/gantt/gantt-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,10 +112,10 @@ The data source fields that are required to render the tasks are mapped to the G
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/mappingFields/tagHelper %}
+{% include code-snippet/gantt/getting-started/gantt/tagHelper %}
 {% endhighlight %}
 {% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/mappingFields/mappingFields.cs %}
+{% include code-snippet/gantt/getting-started/gantt/gantt-core.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,7 +136,7 @@ You will see a Gantt Chart with:
 
 ## See also
 
-- **[Key Elements](../key-elements)** - Learn about UI components and interactions
-- **[Overview](../overview)** - Explore all available features
+- **[Key Elements](../../gantt/key-elements)** - Learn about UI components and interactions
+- **[Overview](../../gantt/overview)** - Explore all available features
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
