@@ -104,9 +104,9 @@ N> The File Manager can be rendered with `local service` for sending ajax reques
 
 ## See also
 
-* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](../file-operations#Ajax-Settings-Configuration)
-* [Overview](../user-interface#File-Manager-Overview)
-* [File Manager Views](../views.md)
-* [File Manager File Operations](../file-operations)
-* [File Manager Upload](../upload)
-* [File Manager Customization](../customization)
+* [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations#ajax-settings-configuration)
+* [Overview](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/user-interface#file-manager-overview)
+* [File Manager Views](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/views)
+* [File Manager File Operations](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/file-operations)
+* [File Manager Upload](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/upload)
+* [File Manager Customization](https://ej2.syncfusion.com/aspnetmvc/documentation/file-manager/customization)
