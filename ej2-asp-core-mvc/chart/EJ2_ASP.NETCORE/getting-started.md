@@ -207,7 +207,7 @@ To render a column chart, define a data source and bind it to the chart series u
     };
 }
 
-<ejs-chart id="container" title="Monthly Sales">
+<ejs-chart id="container">
     <e-chart-primaryxaxis valueType="Category"></e-chart-primaryxaxis>
     <e-series-collection>
         <e-series dataSource="chartData"
