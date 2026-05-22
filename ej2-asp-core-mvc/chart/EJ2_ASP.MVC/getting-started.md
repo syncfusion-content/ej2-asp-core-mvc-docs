@@ -127,7 +127,7 @@ To render a column chart with data, define a data source and bind it to the char
     };
 }
 
-@Html.EJS().Chart("container").Title("Monthly Sales").PrimaryXAxis(px => px
+@Html.EJS().Chart("container").PrimaryXAxis(px => px
     .ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
 ).Series(series =>
 {
