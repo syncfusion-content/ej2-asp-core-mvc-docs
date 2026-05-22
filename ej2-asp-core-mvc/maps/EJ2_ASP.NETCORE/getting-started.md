@@ -190,12 +190,12 @@ Elements in the Maps control are rendered as layers. Add a layer to the Maps con
 
 @{
     string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData = JsonConvert.DeserializeObject(allText);
+    var WorldMapData = JsonConvert.DeserializeObject(allText);
 }
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="WorldMapData">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
