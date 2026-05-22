@@ -1,5 +1,4 @@
 @(Html.EJS().StockChart("container").Load("stockload")
-	.PrimaryXAxis(px => px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime))
 	.Series(sr =>
 	{
 		sr.Name("Apple").Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle).XName("x").High("high").Low("low").Open("open").Close("close").Add();
