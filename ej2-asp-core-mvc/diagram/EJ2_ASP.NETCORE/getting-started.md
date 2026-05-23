@@ -237,16 +237,6 @@ Update `~/Pages/Index.cshtml` to bind `@Model.nodes` and `@Model.connectors` to 
 </script>
 ```
 
-In this example:
-
-* `nodes` and `connectors` are public properties on `IndexModel`, populated in `OnGet()` and accessed in the view via `@Model`.
-* [`OffsetX`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/nodemodel#offsetx) and [`OffsetY`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/nodemodel#offsety) define the position of each node.
-* [`Shape`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/flowshapemodel) sets the flowchart shape type, such as `Terminator`, `Process`, or `Decision`.
-* [`Annotations`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/annotationmodel) adds a text label inside each node using the [`Content`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/annotationmodel#content) property.
-* [`SourceID`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/connectormodel#sourceid) and [`TargetID`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/connectormodel#targetid) connect one node to another.
-* [`getNodeDefaults`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
-* [`getConnectorDefaults`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings such as orthogonal routing and target arrows.
-
 ## Step 7: Run the application
 
 Run the application using the following command:
@@ -261,6 +251,6 @@ Open the generated local URL in the browser. The application displays the flowch
 
 The output will appear as follows:
 
-![ASP.NET Core Diagram Control](../images/Getting-started.png)
+![ASP.NET Core Diagram Control](images/Getting-started.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).
