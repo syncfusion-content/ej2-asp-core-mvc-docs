@@ -219,16 +219,6 @@ Update `~/Views/Home/Index.cshtml` to bind `ViewBag.Nodes` and `ViewBag.Connecto
 </script>
 ```
 
-In this example:
-
-* Nodes and connectors are defined in `HomeController.cs` and passed to the view via `ViewBag`.
-* [`OffsetX`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/nodemodel#offsetx) and [`OffsetY`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/nodemodel#offsety) define the position of each node.
-* [`Shape`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/flowshapemodel) sets the flowchart shape type, such as `Terminator`, `Process`, or `Decision`.
-* [`Annotations`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/annotationmodel) adds a text label inside each node using the [`Content`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/annotationmodel#content) property.
-* [`SourceID`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/connectormodel#sourceid) and [`TargetID`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/connectormodel#targetid) connect one node to another.
-* [`getNodeDefaults`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
-* [`getConnectorDefaults`](https://ej2.syncfusion.com/aspnetmvc/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings such as orthogonal routing and target arrows.
-
 ## Step 7: Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio to build and run the application.
@@ -237,7 +227,7 @@ Open the generated local URL in the browser. The application displays the flowch
 
 The output will appear as follows:
 
-![ASP.NET MVC Diagram Control](../images/Getting-started.png)
+![ASP.NET MVC Diagram Control](images/Getting-started.png)
 
 
 N> You can refer to our [ASP.NET MVC Diagram](https://www.syncfusion.com/aspnet-mvc-ui-controls/diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Diagram example](https://ej2.syncfusion.com/aspnetmvc/Diagram/DefaultFunctionalities#/material) that shows how to render the Diagram in ASP.NET MVC.
