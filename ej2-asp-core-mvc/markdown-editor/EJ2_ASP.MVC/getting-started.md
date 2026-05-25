@@ -24,11 +24,11 @@ You can create the the ASP.NET MVC web application by two types they are mention
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-W> **Important:** Syncfusion® ASP.NET MVC components require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
+W> **Important:** Syncfusion® ASP.NET MVC controls require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
 
 ## Install Syncfusion ASP.NET MVC package in the application
 
-You can add the Syncfusion Markdown Editor to your ASP.NET MVC application by installing the Syncfusion AASP.NET MVC package. This can be done in two ways, they are mentioned below
+You can add the Syncfusion Markdown Editor to your ASP.NET MVC application by installing the Syncfusion ASP.NET MVC package. This can be done in two ways, they are mentioned below
 
 ### 1. Using NuGet Package Manager
 
@@ -110,13 +110,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Markdo
 
 I> Replace the existing content in the Index.cshtml file by pasting the above code snippet.
 
-I> When the Markdown Editor component is rendered, the id attribute must be present. If the id is not provided, the component will fail to render.
+I> When the Markdown Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
 
 ## Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Markdown Editor control will be rendered in the default web browser.
 
-![ASP.NET MVC Markdown Editor Control](../images/markdown-editor-default.png)
+![ASP.NET MVC Markdown Editor Control](images/markdown-editor-default.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
