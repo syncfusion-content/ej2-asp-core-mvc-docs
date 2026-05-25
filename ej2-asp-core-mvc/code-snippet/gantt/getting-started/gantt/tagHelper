@@ -1,8 +1,10 @@
+@page
+@model GanttSample.Pages.IndexModel
 @{
-    var dataSource = ViewBag.DataSource;
+    ViewData["Title"] = "Home page";
 }
 
-<ejs-gantt id='GanttTasks' dataSource="ViewBag.dataSource" height="450px">
-    <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" duration="Duration" progress="Progress" parentID="ParentId">
+<ejs-gantt id='Gantt' dataSource="Model.GanttDataSourceCollection" height="450px">
+    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID = "ParentID">
     </e-gantt-taskfields>
 </ejs-gantt>

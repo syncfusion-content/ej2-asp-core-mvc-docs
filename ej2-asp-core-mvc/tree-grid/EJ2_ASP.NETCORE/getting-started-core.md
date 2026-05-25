@@ -93,561 +93,116 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeG
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/tree-grid/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-## Defining Row Data
-
-To bind data for the TreeGrid control, you can assign a IEnumerable object to the [`dataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. The list data source can also be provided as an instance of the **DataManager**.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/databinding/tagHelper %}
+{% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        var treeData = TreeGridItems.GetTreeData();
+        ViewBag.DataSource = treeData;
+        return view();
+    }
+}
 public class TreeGridItems
 {
     public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
+    public int? TaskId { get; set; }
+    public string? TaskName { get; set; }
+    public DateTime? StartDate { get; set; }
+    public DateTime? EndDate { get; set;}
+    public int? Duration { get; set; }
+    public List<TreeGridItems> Children? { get; set; }
 
     public static List<TreeGridItems> GetTreeData()
     {
         List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
 
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
+        TreeGridItems Record1 = new TreeGridItems()
         {
             TaskId = 1,
             TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
+            StartDate = new DateTime(2025, 2, 4),
+            EndDate = new DateTime(2025, 2, 7),
+            Duration = 4,
+            Children = new List<TreeGridItems>()
         };
+
         TreeGridItems Child1 = new TreeGridItems()
         {
             TaskId = 2,
             TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
+            StartDate = new DateTime(2025, 2, 4),
+            EndDate = new DateTime(2025, 2, 7),
+            Duration = 4
         };
 
         TreeGridItems Child2 = new TreeGridItems()
         {
             TaskId = 3,
             TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
+            StartDate = new DateTime(2025, 2, 4),
+            EndDate = new DateTime(2025, 2, 7),
+            Duration = 4
         };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
+
         Record1.Children.Add(Child1);
         Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
+
         TreeGridItems Record2 = new TreeGridItems()
         {
-            TaskId = 6,
+            TaskId = 4,
             TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
+            StartDate = new DateTime(2025, 2, 10),
+            EndDate = new DateTime(2025, 2, 14),
+            Duration = 5,
             Children = new List<TreeGridItems>()
         };
+
+        TreeGridItems Child3 = new TreeGridItems()
+        {
+            TaskId = 5,
+            TaskName = "Software Specification",
+            StartDate = new DateTime(2025, 2, 10),
+            EndDate = new DateTime(2025, 2, 12),
+            Duration = 3
+        };
+
+        TreeGridItems Child4 = new TreeGridItems()
+        {
+            TaskId = 6,
+            TaskName = "Design Documentation",
+            StartDate = new DateTime(2025, 2, 13),
+            EndDate = new DateTime(2025, 2, 14),
+            Duration = 2
+        };
+
         TreeGridItems Child5 = new TreeGridItems()
         {
             TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
+            TaskName = "Design complete",
+            StartDate = new DateTime(2025, 2, 14),
+            EndDate = new DateTime(2025, 2, 14),
+            Duration = 1
         };
 
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
+        Record2.Children.Add(Child3);
+        Record2.Children.Add(Child4);
         Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
+
         BusinessObjectCollection.Add(Record1);
         BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
-    }
-}
 
+        return BusinessObjectCollection;
+    } 
+}
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid control will be rendered in the default web browser.
 
-![ASP.NET Core TreeGrid Control](images/treegrid-control.png)
-
-## Defining Columns
-
-The columns are automatically generated when columns declaration is empty or undefined while initializing the treegrid.
-
-The TreeGrid has an option to define columns using [`e-treegrid-columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumns.html) tag helper. In [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper you have properties to customize columns.
-
-Let’s check the properties used here:
-
-* The [`field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) property is to map with a property name an array of JavaScript objects.
-* The [`headerText`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HeaderText.html) property is to change the title of columns.
-* The [`textAlign`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~TextAlign.html) property is to change the alignment of columns. By default, columns will be left aligned. To change columns to right align, you need to define **textAlign** as **Right**.
-* Using [`format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property, you can format number and date values to standard or custom formats. Here, you have defined it for the conversion of numeric values to currency.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class TreeGridItems
-{
-    public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
-
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
-        };
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
-        TreeGridItems Record2 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
-            Children = new List<TreeGridItems>()
-        };
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
-        Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
 ![ASP.NET Core TreeGrid Columns](images/treegrid-columns.png)
-
-## Enable Paging
-
-Paging breaks large datasets into smaller pages, improving performance and readability. Users see page navigation controls at the bottom of the TreeGrid to move between pages.
-
-Enable paging by setting [`allowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) property to true. Pager can be customized using [`e-treegrid-pagesettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings.html) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/page/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class TreeGridItems
-{
-    public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
-
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
-        };
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
-        TreeGridItems Record2 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
-            Children = new List<TreeGridItems>()
-        };
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
-        Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core TreeGrid with Paging](images/treegrid-with-paging.png)
-
-## Enable Sorting
-
-Sorting allows users to reorder rows by clicking column headers. This helps users find data quickly by organizing it according to their needs.
-
-Enable sorting by setting [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property as true. Sorting feature can be customized using [`e-treegrid-sortsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/sorting/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class TreeGridItems
-{
-    public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
-
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
-        };
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
-        TreeGridItems Record2 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
-            Children = new List<TreeGridItems>()
-        };
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
-        Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Sorting in ASP.NET Core TreeGrid](images/treegrid-sorting.png)
-
-## Enable Filtering
-
-Filtering enables users to view a subset of rows matching specific criteria. This reduces data volume and helps users focus on relevant information.
-
-Enable filtering by setting [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) property as true. Filtering feature can be customized using [`e-treegrid-filtersettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/filtering/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class TreeGridItems
-{
-    public TreeGridItems() { }
-    public int TaskId { get; set; }
-    public string TaskName { get; set; }
-    public DateTime StartDate { get; set; }
-    public int Duration { get; set; }
-    public List<TreeGridItems> Children { get; set; }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
-
-        TreeGridItems Record1 = null;
-
-        Record1 = new TreeGridItems()
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5,
-            Children = new List<TreeGridItems>(),
-        };
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 4,
-            TaskName = "Allocate resources",
-            StartDate = new DateTime(2016, 06, 07),
-            Duration = 5
-        };
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-        Record1.Children.Add(Child3);
-        TreeGridItems Record2 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3,
-            Children = new List<TreeGridItems>()
-        };
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-
-        TreeGridItems Child6 = new TreeGridItems()
-        {
-            TaskId = 8,
-            TaskName = "Develop prototype",
-            StartDate = new DateTime(2021, 08, 25),
-            Duration = 3
-        };
-        TreeGridItems Child7 = new TreeGridItems()
-        {
-            TaskId = 9,
-            TaskName = "Get approval from customer",
-            StartDate = new DateTime(2024, 06, 27),
-            Duration = 2
-        };
-        Record2.Children.Add(Child5);
-        Record2.Children.Add(Child6);
-        Record2.Children.Add(Child7);
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-        return BusinessObjectCollection;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Filtering in ASP.NET Core TreeGrid Conrtol](images/treegrid-sample.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/TreeGrid/ASP.NET%20Core%20Tag%20Helper%20Examples).
-
-## Handling errors
-
-Error handling in Tree Grid identifies exceptions and notifies them through the [actionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event. When configuring the Tree Grid or enabling specific features through its API, mistakes can occur. The `actionFailure` event can be used to manage these errors. This event triggers when such mistakes happen. The `actionFailure` event handles various scenarios, including:
-
-* For CRUD operations, row drag and drop, and persisting the selection, ensure the `isPrimaryKey` property is mapped to a unique data column. Failure to do so will cause an error.
-* [Paging](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/paging) is not supported with [virtualization](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/virtual-scroll). Enabling `paging` with `virtualization` will result in an error.
-* To render the Tree Grid, map either the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) or [columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Columns) property. Failure to do so will result in an error.
-* Freeze columns by mapping either `isFrozen` or [frozenColumns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns). Enabling both properties simultaneously will result in an error.
-* The [detailTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DetailTemplate) is not supported with `virtualization` and `stacked header`. Enabling them with these features will result in an error.
-* The [frozenRows](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) and `frozenColumns` are not supported with [rowTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate), `detailTemplate`, and [cell editing](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/editing/cell-editing). Enabling them with these features will result in an error.
-* In `stacked header`, the `freeze` direction is incompatible with [column reordering](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/columns/column-reorder).
-* [Selection](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/selection/selection) functionality is not supported when using `rowTemplate`. Enabling both properties simultaneously will result in an error.
-* Set the [treeColumnIndex](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_TreeColumnIndex) value to display the tree structure.  Make sure the value does not exceed the total column count, or it will result in an error.
-* For `virtualization`, do not specify height and width in percentages. Using percentages will result in an error.
-* When using the default filter ([filterbar](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/filtering/filter-bar)) type, do not apply the other [filterType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.FilterType.html) to columns within the same tree grid, as this will result in an error.
-* In Tree Grid avoid enabling [idMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_IdMapping) and [childMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ChildMapping) simultaneously. Enabling both properties at the same time will result in an error.
-* The `showCheckbox` column should only be defined in the tree column. Defining it elsewhere will result in an error.
-* The `textAlign` right is not applicable for tree columns in the Tree Grid. Enabling right alignment for tree columns will result in an error.
-
-The following code example shows how to use the [actionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionFailure) event in the Tree Grid control to display an exception when `isPrimaryKey` are not configured properly in the Tree Grid.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/getting-start-core/error-handling/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ErrorHandling.cs" %}
-{% include code-snippet/tree-grid/getting-start-mvc/error-handling/errorHandling.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET CORE Tree Grid with Handling errors](images/error-handling.png)
 
 ## See also
 

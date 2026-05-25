@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting started with ASP.NET Core Gantt control
 
-This section briefly explains how to include the [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your ASP.NET Core application using Visual Studio.
+This guide walks you through setting up and integrating the [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your application using Visual Studio or Visual Studio Code. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -18,29 +18,95 @@ To get started quickly with the ASP.NET Core Gantt Chart, watch the following vi
 
 {% youtube "https://www.youtube.com/watch?v=tILyz8PyE6A" %}
 
+## Create ASP.NET Core web application with Razor pages
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## Create ASP.NET Core web application with Razor pages
+## Create an ASP.NET Core Razor Pages project using Visual Studio:
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-9.0&tabs=visual-studio#create-a-razor-pages-web-app)
+1. Start **Visual Studio** and select **Create a new project**.
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+
+3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
+
+4. Click `Next`.
+
+5. In the Additional information dialog:
+* Select **.NET 10.0**.
+* Verify: **Do not use top-level statements** is **unchecked**.
+
+6. Click `Create`.
+
+For alternative approaches to create the project, see [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET Core package in the application
 
-To add ASP.NET Core controls to your application, open the NuGet Package Manager in Visual Studio by navigating to `Tools → NuGet Package Manager → Manage NuGet Packages for Solution`. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install the package.
-
-Alternatively, you can use the following Package Manager command:
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
-{% highlight cs tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+## Prerequisites
+
+* [Visual Studio Code](https://code.visualstudio.com/download)
+* [C# Dev Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+* [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio Code:
+
+* Install the latest **.NET SDK** that supports **.NET 10.0** or later.
+* Open **Visual Studio Code**.
+* Press **Ctrl + `** to open the integrated terminal.
+* Run the following commands:
+
+{% tabs %}
+{% highlight C# tabtitle=".NET CLI" %}
+
+dotnet new webapp -o RazorPagesMovie
+
+code -r RazorPagesMovie
+
+{% endhighlight %}
+{% endtabs %}
+
+## Install ASP.NET Core package in the application
+
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+
+1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
+2. Navigate to the directory containing the **.csproj** file.
+3. Run the following commands to install the packages:
+
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 > Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.AspNet.Core` NuGet package has dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -79,7 +145,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -93,233 +159,96 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
+## Create sample data
+
+Define a simple task list with hierarchical relationships. Each task must have a `StartDate` and either a `Duration` or `EndDate` to render properly.
+
+```csharp
+List<GanttDataSource> Tasks = new List<GanttDataSource>()
+{
+    new GanttDataSource() { TaskId = 1, TaskName = "Project initiation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
+    new GanttDataSource() { TaskId = 2, TaskName = "Identify site location", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+    new GanttDataSource() { TaskId = 3, TaskName = "Perform soil test", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+    new GanttDataSource() { TaskId = 4, TaskName = "Soil test approval", StartDate = new DateTime(2019, 04, 02), Duration = 4, Progress = 50, ParentID = 1 },
+    new GanttDataSource() { TaskId = 5, TaskName = "Project estimation", StartDate = new DateTime(2019, 04, 02), EndDate = new DateTime(2019, 04, 21) },
+    new GanttDataSource() { TaskId = 6, TaskName = "Develop floor plan for estimation", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 },
+    new GanttDataSource() { TaskId = 7, TaskName = "List materials", StartDate = new DateTime(2019, 04, 04), Duration = 3, Progress = 50, ParentID = 5 }
+};
+
+public class GanttDataSource
+{
+    public int TaskId { get; set; }
+    public string TaskName { get; set; }
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
+    public int? Duration { get; set; }
+    public int Progress { get; set; }
+    public int? ParentID { get; set; }
+}
+```
+
+## Configure task fields
+
+Map your data fields to Gantt Chart properties using `taskFields`:
+
+```csharp
+<e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" parentID="ParentID">
+</e-gantt-taskfields>
+```
+
+### Field mapping reference
+
+| Property | Description | Required |
+|----------|-------------|----------|
+| `id` | Unique task identifier | Yes |
+| `name` | Task display name | Yes |
+| `startDate` | Task start date | Yes |
+| `endDate` | Task end date | No |
+| `duration` | Task duration in days | Yes |
+| `progress` | Task completion percentage (0-100) | No |
+| `parentID` | Parent task ID for hierarchy | No |
+
 ## Add ASP.NET Core Gantt control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript object or the `DataManager` instance.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page and Razor Pages code-behind (PageModel) in the `~/Pages/Index.cshtml.cs`. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript objects or the `DataManager` instance.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/gantt/getting-started/gantt/tagHelper %}
 {% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/gantt/gantt.cs %}
+{% highlight cs tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/gantt/getting-started/gantt/gantt-core.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+## Run the application
+
+### Visual Studio
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt control will be rendered in the default web browser.
 
+### Visual Studio Code
+
+Use the terminal to run the app.
+
+1. Navigate to the folder that contains the project (.csproj) file.
+2. Run `dotnet run`.
+3. Open the URL shown in the terminal (for example, https://localhost:xxxx). Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt control will be rendered in the browser.
+
+## Output
+
+You will see a Gantt Chart with:
+
+- Task hierarchy with parent-child relationships
+- Timeline view showing task bars
+- Progress indicators on each task
+- Automatically calculated dates based on duration
+
 ![ASP.NET Core Gantt Control](images/gantt-control.png)
-
-## Mapping task fields
-
-The data source fields that are required to render the tasks are mapped to the Gantt control using the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskFields) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/mappingFields/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/mappingFields/mappingFields.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Gantt Control](images/gantt-control.png)
-
-## Defining columns
-
-Gantt has an option to define columns as an array. You can customize the Gantt columns using the following properties:
-
-* `field`: Maps the data source fields to the columns.
-* `headerText`: Changes the title of columns.
-* `textAlign`: Changes the alignment of columns. By default, columns will be left aligned. To change the columns to right align, set `textAlign` to right.
-* `format`: Formats the number and date values to standard or custom formats. Here, it is defined for the conversion of numeric values to currency.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/definingColumns/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/definingColumns/definingColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Gantt Columns](images/gantt-column.png)
-
-## Enable editing
-
-The editing feature enables you to edit the tasks in the Gantt control. It can be enabled by using the [EditSettings.allowEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowEditing) and [EditSettings.allowTaskbarEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) properties.
-
-The following editing options are available to update the tasks in Gantt:
-
-* Cell
-* Dialog
-* Taskbar
-* Connector line
-
-### Cell editing
-
-Modify the task details through cell editing by setting the edit mode to `Auto`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/cellEditing/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/cellEditing/cellEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Cell Editing in ASP.NET Core Gantt](images/gantt-cell-editing.png)
-
-> When the edit mode is set to `Auto`, you can change the cells to editable mode by double-clicking anywhere at the TreeGrid and edit the task details in the edit dialog by double-clicking anywhere at the chart.
-
-### Dialog editing
-
-Modify the task details through dialog by setting the edit mode to `Dialog`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/dialogEditing/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/dialogEditing/dialogEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-> In dialog editing mode, the edit dialog will appear while performing double-click action in both TreeGrid and chart sides.
-
-![Dialog Editing in ASP.NET Core Gantt](images/gantt-cell-editing.png)
-
-### Taskbar editing
-
-Modify the task details through user interaction such as resizing and dragging the taskbar by enabling the [allowTaskbarEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/taskbarEditing/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/taskbarEditing/taskbarEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Taskbar Editing in ASP.NET Core Gantt](images/gantt-taskbar-editing.png)
-
-### Dependency Editing
-
-Modify the task dependencies using mouse interactions by enabling the [allowTaskbarEditing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttEditSettings.html#Syncfusion_EJ2_Gantt_GanttEditSettings_AllowTaskbarEditing) property along with mapping the task dependency data source field to the [dependency](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/dependencyEditing/tagHelper %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/dependencyEditing/dependencyEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Dependency Editing in ASP.NET Core Gantt](images/gantt-dependency-editing.png)
-
-## Enabling predecessors or task relationships
-
-Predecessor or task dependency in the Gantt control is used to depict the relationship between the tasks.
-
-* Start to Start (SS): You cannot start a task until the dependent task starts.
-* Start to Finish (SF): You cannot finish a task until the dependent task finishes.
-* Finish to Start (FS): You cannot start a task until the dependent task completes.
-* Finish to Finish (FF): You cannot finish a task until the dependent task completes.
-
-You can show the relationship in tasks by using the [dependency](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) property as shown in the following code example.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/enableDependency/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/enableDependency/enableDependency.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Enabling predecessors in ASP.NET Core Gantt](images/gantt-dependency-editing.png)
-
-## Assigning resources
-
-You can display and assign the resource for each task in the Gantt control. Create a collection of JSON object, which contains id, name, unit and group of the resources and assign it to the [resources](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Resources) property. Map these fields to the Gantt control using the [resourceFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ResourceFields) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/resources/assignResource/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/resources/assignResource/assignResource.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Gantt with Resources](images/gantt-resources.png)
-
-## Enable filtering
-
-The filtering feature enables you to view the reduced amount of records based on filter criteria. Gantt provides the menu filtering support for each column. It can be enabled by setting the [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowFiltering) property to `true`. Filtering feature can also be customized using the [FilterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_FilterSettings) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/filtering/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/filtering/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Filtering in ASP.NET Core Gantt](images/gantt-filter.png)
-
-## Enable sorting
-
-The sorting feature enables you to order the records. It can be enabled by setting the [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_AllowSorting) property to `true`.The sorting feature can be customized using the [SortSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_SortSettings) property.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/sorting/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/sorting/sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Sorting in ASP.NET Core Gantt](images/gantt-sort.png)
-
-## Error handling
-
-Error handling is used to identify errors, display them and develop recovery strategies to handle errors from gantt. In Gantt, error handling is done by using the [actionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionFailure) event. Some of the scenarios that this event handles are:
-* Invalid duration : The [duration](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Duration) field accepts only numerical values with an optional decimal point. Entering non-numerical values triggers the `actionFailure` event and displays issue information in the event argument.
-* Invalid dependency: The [dependency](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Dependency) field accepts only a number followed by a predecessor type (FS, FF, SS, SF).  Entering invalid values, such as special characters or incorrect predecessor types, triggers the `actionFailure` event and displays issue information in the event argument.
-* Invalid offset : The `offset` accepts only numerical values or their word equivalents followed by a unit. Entering invalid values, such as special characters triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map task fields : The data source fields necessary for rendering tasks should be mapped to the Gantt control using the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html) property. Failure to map `taskFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map resource fields : To assign resources to a task, resource fields should be mapped to the Gantt control using the [resourceFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttResourceFields.html). Failure to map `resourceFields` in the sample triggers `actionFailure` event and displays issue information in the event argument.
-* Failure to map `isPrimaryKey` : `isPrimaryKey` field is crucial for CRUD operations. Failure to map [id](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_Id) column in gantt column collection or `isPrimaryKey` field in one of the columns will trigger `actionFailure` event and display issue information in the event argument.
-* Invalid date format : [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Format) property under `topTier` and `bottomTier` determines how the timelines are displayed in the top tier and bottom tier of the Gantt chart timeline. If the `format` does not contain a valid standard [date format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTimelineTierSettings.html#Syncfusion_EJ2_Gantt_GanttTimelineTierSettings_Format), it triggers the `actionFailure` event, displaying issue information in the event argument.
-* Failure to map `hasChildMapping` : [hasChildMapping](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html#Syncfusion_EJ2_Gantt_GanttTaskFields_HasChildMapping) property should configured for [load-on-demand](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_LoadChildOnDemand). Ensure it properly configured in the [taskFields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttTaskFields.html). Failure to map `hasChildMapping` in the `load-on-demand` sample triggers `actionFailure` event and displays issue information in the event argument.
-* Invalid day in event markers : `day` should configured in [eventMarkers](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_EventMarkers) to render striplines in a particular day. Failure to configure the `day` in `eventMarkers` triggers `actionFailure` event and displays issue information in the event argument.
-
-> Additionally, TreeGrid side error handling information is also displayed from the Gantt `actionFailure` event. For more details on TreeGrid side error handling, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core#handling-errors).
-
-The following code example shows how to use the [actionFailure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_ActionFailure) event in the Gantt control to display an exception when `isPrimaryKey` is not configured properly in the Gantt Chart column.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/gantt/getting-started/exception-handling/tagHelper %}
-{% endhighlight %}
-{% highlight cs tabtitle="HomeController.cs" %}
-{% include code-snippet/gantt/getting-started/exception-handling/definingColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-The following screenshot represents the Gantt Exception handling in `actionFailure` event.
-
-![Error Handling](images/error-handling.png)
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+- **[Key Elements](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/key-elements)** - Learn about UI components and interactions
+- **[Overview](https://ej2.syncfusion.com/aspnetcore/documentation/gantt/overview)** - Explore all available features
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Gantt/ASP.NET%20Core%20Tag%20Helper%20Examples).

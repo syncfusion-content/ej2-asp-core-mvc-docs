@@ -29,6 +29,41 @@ The basic File Manager is a light weight control with all the basic functions. T
 
 ![Basic File Manager](./images/default-ui.png)
 
+## File Manager Overview
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+By default, the File Manager control  having  extra module like [`NavigationPane`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~NavigationPaneSettings.html), [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ToolbarSettings.html), [`ContextMenu`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~ContextMenuSettings.html) module.
+
+In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![File Manager overview](./images/overview.PNG)
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+By default, the File Manager control  having  extra module like [NavigationPane](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_NavigationPaneSettings), [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ToolbarSettings), [ContextMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_ContextMenuSettings) module.
+
+In this sample demonstrates the full features of the File Manager that includes toolbar, navigation pane and details view.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/file-manager/overview/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+{% include code-snippet/file-manager/overview/HomeController_mvc.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![FileManager overview](images/overview.png)
+
+{% endif %}
+
 ## Toolbar
 
 The `Toolbar` provides easy access to the file operations using different buttons and it is presented at the top of the File Manager.
