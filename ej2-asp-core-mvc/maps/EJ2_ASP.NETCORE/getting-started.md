@@ -178,9 +178,9 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Maps tag h
 {% endhighlight %}
 {% endtabs %}
 
-## Render Shapes from GeoJSON Data
+## Render Shapes from **WorldMap.json** Data
 
-Elements in the Maps control are rendered as layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the GeoJSON data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
+Elements in the Maps control are rendered as layers. Add a layer to the Maps control using the [`Layers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_Layers) property. Then, bind the **WorldMap.json** data to the [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -190,12 +190,12 @@ Elements in the Maps control are rendered as layers. Add a layer to the Maps con
 
 @{
     string allText = System.IO.File.ReadAllText("wwwroot/scripts/MapsData/WorldMap.json");
-    var mapUSData = JsonConvert.DeserializeObject(allText);
+    var WorldMapData = JsonConvert.DeserializeObject(allText);
 }
 
 <ejs-maps id="maps">
     <e-maps-layers>
-        <e-maps-layer shapeData="mapUSData">
+        <e-maps-layer shapeData="WorldMapData">
         </e-maps-layer>
     </e-maps-layers>
 </ejs-maps>
