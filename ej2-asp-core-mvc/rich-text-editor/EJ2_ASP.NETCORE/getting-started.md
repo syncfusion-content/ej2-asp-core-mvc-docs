@@ -115,7 +115,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Rich 
 {% endhighlight %}
 {% endtabs %}
 
-I> When the Rich Text Editor component is rendered, the id attribute must be present. If the id is not provided, the component will fail to render.
+I> When the Rich Text Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
 
 ## Run the application
 
