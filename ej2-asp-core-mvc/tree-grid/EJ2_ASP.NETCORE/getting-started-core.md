@@ -20,11 +20,33 @@ This section explains how to add the [ASP.NET Core TreeGrid](https://www.syncfus
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio:
+
+1. Start **Visual Studio** and select **Create a new project**.
+
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+
+3. In the **Configure your new project** dialog, specify the **project name** as RazorPagesTreeGrid (and optionally change location/folder).
+
+4. Click `Next`.
+
+5. In the Additional information dialog:
+* Select **.NET 10.0**.
+* Verify: **Do not use top-level statements** is **unchecked**.
+
+6. Click `Create`.
+
+For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
+
 ## Install ASP.NET Core package in the application
 
-To add Syncfusion ASP.NET Core controls, open the NuGet Package Manager in Visual Studio (navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/), and install it. 
-
-Alternatively, use the Package Manager Console with this command:
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -33,6 +55,50 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+## Create an ASP.NET Core Razor Pages project using Visual Studio Code:
+
+* Install the latest **.NET SDK** that supports **.NET 10.0** or later.
+* Open **Visual Studio Code**.
+* Press **Ctrl + `** to open the integrated terminal.
+* Run the following commands:
+
+{% tabs %}
+{% highlight C# tabtitle=".NET CLI" %}
+
+dotnet new webapp -o RazorPagesTreeGrid
+
+code -r RazorPagesTreeGrid
+
+{% endhighlight %}
+{% endtabs %}
+
+## Install ASP.NET Core package in the application
+
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+
+1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
+2. Navigate to the directory containing the **.csproj** file.
+3. Run the following commands to install the packages:
+
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -71,7 +137,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-script>` at the end of `<body>` of `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -96,30 +162,41 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeG
 {% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSHTML.cs" %}
-public class HomeController : Controller
+public class IndexModel : PageModel
 {
-    public ActionResult Index()
+    public List<TreeGridItems> TreeData { get; set; }
+
+    public void OnGet()
     {
-        var treeData = TreeGridItems.GetTreeData();
-        ViewBag.DataSource = treeData;
-        return view();
+        TreeData = TreeGridItems.GetTreeData();
     }
 }
+
 public class TreeGridItems
 {
-    public TreeGridItems() { }
     public int? TaskId { get; set; }
     public string? TaskName { get; set; }
     public DateTime? StartDate { get; set; }
-    public DateTime? EndDate { get; set;}
+    public DateTime? EndDate { get; set; }
     public int? Duration { get; set; }
-    public List<TreeGridItems> Children? { get; set; }
+    public List<TreeGridItems>? Children { get; set; }
+
+    public TreeGridItems() { }
+
+    public TreeGridItems(int taskId, string taskName, DateTime start, DateTime end, int duration)
+    {
+        TaskId = taskId;
+        TaskName = taskName;
+        StartDate = start;
+        EndDate = end;
+        Duration = duration;
+    }
 
     public static List<TreeGridItems> GetTreeData()
     {
-        List<TreeGridItems> BusinessObjectCollection = new List<TreeGridItems>();
+        List<TreeGridItems> data = new List<TreeGridItems>();
 
-        TreeGridItems Record1 = new TreeGridItems()
+        var parent1 = new TreeGridItems
         {
             TaskId = 1,
             TaskName = "Planning",
@@ -129,28 +206,10 @@ public class TreeGridItems
             Children = new List<TreeGridItems>()
         };
 
-        TreeGridItems Child1 = new TreeGridItems()
-        {
-            TaskId = 2,
-            TaskName = "Plan timeline",
-            StartDate = new DateTime(2025, 2, 4),
-            EndDate = new DateTime(2025, 2, 7),
-            Duration = 4
-        };
+        parent1.Children.Add(new TreeGridItems(2, "Plan timeline", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
+        parent1.Children.Add(new TreeGridItems(3, "Plan budget", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
 
-        TreeGridItems Child2 = new TreeGridItems()
-        {
-            TaskId = 3,
-            TaskName = "Plan budget",
-            StartDate = new DateTime(2025, 2, 4),
-            EndDate = new DateTime(2025, 2, 7),
-            Duration = 4
-        };
-
-        Record1.Children.Add(Child1);
-        Record1.Children.Add(Child2);
-
-        TreeGridItems Record2 = new TreeGridItems()
+        var parent2 = new TreeGridItems
         {
             TaskId = 4,
             TaskName = "Design",
@@ -160,42 +219,15 @@ public class TreeGridItems
             Children = new List<TreeGridItems>()
         };
 
-        TreeGridItems Child3 = new TreeGridItems()
-        {
-            TaskId = 5,
-            TaskName = "Software Specification",
-            StartDate = new DateTime(2025, 2, 10),
-            EndDate = new DateTime(2025, 2, 12),
-            Duration = 3
-        };
+        parent2.Children.Add(new TreeGridItems(5, "Software Specification", new DateTime(2025, 2, 10), new DateTime(2025, 2, 12), 3));
+        parent2.Children.Add(new TreeGridItems(6, "Design Documentation", new DateTime(2025, 2, 13), new DateTime(2025, 2, 14), 2));
+        parent2.Children.Add(new TreeGridItems(7, "Design complete", new DateTime(2025, 2, 14), new DateTime(2025, 2, 14), 1));
 
-        TreeGridItems Child4 = new TreeGridItems()
-        {
-            TaskId = 6,
-            TaskName = "Design Documentation",
-            StartDate = new DateTime(2025, 2, 13),
-            EndDate = new DateTime(2025, 2, 14),
-            Duration = 2
-        };
+        data.Add(parent1);
+        data.Add(parent2);
 
-        TreeGridItems Child5 = new TreeGridItems()
-        {
-            TaskId = 7,
-            TaskName = "Design complete",
-            StartDate = new DateTime(2025, 2, 14),
-            EndDate = new DateTime(2025, 2, 14),
-            Duration = 1
-        };
-
-        Record2.Children.Add(Child3);
-        Record2.Children.Add(Child4);
-        Record2.Children.Add(Child5);
-
-        BusinessObjectCollection.Add(Record1);
-        BusinessObjectCollection.Add(Record2);
-
-        return BusinessObjectCollection;
-    } 
+        return data;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
