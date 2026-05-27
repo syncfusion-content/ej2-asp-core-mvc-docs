@@ -51,7 +51,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -71,7 +71,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -96,19 +96,19 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid c
 {% highlight c# tabtitle="HomeController.cs" %}
 public class HomeController : Controller
 {
-    public IActionResult Index()
+    public ActionResult Index()
     {
         var Order = OrdersDetails.GetAllRecords();
         ViewBag.DataSource = Order;
         return View();
     }
- 
+
     public class OrdersDetails
     {
         public static List<OrdersDetails> order = new List<OrdersDetails>();
         public OrdersDetails()
         {
- 
+
         }
         public OrdersDetails(int OrderID, string CustomerId, DateTime OrderDate, string ShipCountry, double Freight)
         {
@@ -132,9 +132,9 @@ public class HomeController : Controller
             return order;
         }
         public int? OrderID { get; set; }
-        public string? CustomerID { get; set; }
+        public string CustomerID { get; set; }
         public DateTime? OrderDate { get; set; }
-        public string? ShipCountry { get; set; }
+        public string ShipCountry { get; set; }
         public double? Freight { get; set; }
     }
 }
