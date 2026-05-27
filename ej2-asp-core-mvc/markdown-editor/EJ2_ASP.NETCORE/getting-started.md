@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Markdown Editor Control
 
-This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+The Syncfusion ASP .NET Core Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -18,13 +18,23 @@ This section briefly explains about how to include [ASP.NET Core Rich Text Edito
 
 ## Create ASP.NET Core web application with Razor pages
 
+You can create the the ASP.NET Core web application with Razor pages by two types they are mentioned below along with the steps. Follow one of these types to create a ASP .NET Core project.
+
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET Core package in the application
+## Install Syncfusion ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+You can add the Syncfusion Markdown Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core package. This can be done in two ways, they are mentioned below
+
+### 1. Using NuGet Package Manager  
+
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it directly.
+
+### 2. Using Package Manager Console
+
+Run the following command in the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -33,6 +43,8 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+I> Ensure you’re running the command inside Visual Studio’s Package Manager Console (Tools → NuGet Package Manager → Package Manager Console), not in a terminal like CMD or PowerShell.
 
 > Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -71,7 +83,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -91,28 +103,19 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Markd
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/markdown-editor/getting-started-cs1/tagHelper %}
+
+<ejs-richtexteditor id="editor" editorMode="Markdown"></ejs-richtexteditor>
+
 {% endhighlight %}
 {% endtabs %}
+
+I> When the Markdown Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
+
+## Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Markdown Editor control will be rendered in the default web browser.
 
-## Configure the Toolbar
-
-Configure the toolbar with the tools using `items` field of the [`toolbarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ToolbarSettings) property as your application requires.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/markdown-editor/getting-started-cs2/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Controller.cs" %}
-{% include code-snippet/markdown-editor/getting-started-cs2/controller.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Markdown Editor with Toolbar](images/markdowneditor-with-toolbar.png)
-
-> `|` and `-` can insert a vertical and horizontal separator lines in the toolbar.
+![ASP.NET Core Markdown Editor with Toolbar](images/markdown-editor-default.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
