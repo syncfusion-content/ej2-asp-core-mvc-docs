@@ -157,6 +157,8 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core File Manager tag helper in **~/Pages/Index.cshtml** page.
 
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files for the File Manager access.
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/file-manager/getting-started/tagHelper %}
@@ -168,7 +170,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text.Json;
-using WebApplication4.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
@@ -176,7 +177,8 @@ using Microsoft.AspNetCore.Cors;
 using Syncfusion.EJ2.FileManager.Base;
 using Syncfusion.EJ2.FileManager.PhysicalFileProvider;
 
-namespace WebApplication4.Controllers
+// Replace `FileManagerProject` with your project name.
+namespace FileManagerProject.Controllers
 {
     [Route("[controller]")]
     public class HomeController : Controller
@@ -304,16 +306,6 @@ namespace WebApplication4.Controllers
         public IActionResult GetImage(FileManagerDirectoryContent args)
         {
             return this.operation.GetImage(args.Path, args.Id, false, null, null);
-        }
-
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
-        {
-            return View();
         }
     }
 }
