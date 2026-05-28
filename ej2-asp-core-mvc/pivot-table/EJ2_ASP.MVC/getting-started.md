@@ -99,7 +99,6 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table control will be rendered in the default web browser.
 
