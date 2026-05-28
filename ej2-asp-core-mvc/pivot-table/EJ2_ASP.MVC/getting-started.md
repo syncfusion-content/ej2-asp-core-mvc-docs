@@ -91,24 +91,11 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 * The Pivot Table control further needs to be populated with an appropriate data source. For illustration purpose, a collection of objects mentioning the sales details of certain products over a period and region has been prepared. This sample data is assigned to the pivot table control through [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property under [PivotViewDataSourceSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="pivottable.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-mvc/pivot-table/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="pivottable.cs" %}
+{% highlight c# tabtitle="HomeController.cs" %}
 {% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
