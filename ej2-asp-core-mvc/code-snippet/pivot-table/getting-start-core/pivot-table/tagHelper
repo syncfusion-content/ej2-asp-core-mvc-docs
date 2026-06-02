@@ -1,7 +1,8 @@
 @page
+@model PivotTable.Pages.IndexModel
 
 <ejs-pivotview id="PivotView" height="350">
-    <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="true">
+    <e-datasourcesettings dataSource="@Model.GetDefaultData()" expandAll="true">
         <e-formatsettings>
             <e-field name="Amount" format="C0"></e-field>
         </e-formatsettings>
