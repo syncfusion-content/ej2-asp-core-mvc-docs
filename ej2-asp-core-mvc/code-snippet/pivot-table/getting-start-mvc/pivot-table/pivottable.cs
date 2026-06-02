@@ -1,6 +1,6 @@
 public class HomeController : Controller
 {
-    public IActionResult Index()
+    public ActionResult Index()
     {
         var data = PivotDataSource.GetPivotData();
         ViewBag.DataSource = data;

@@ -1,4 +1,4 @@
-@Html.EJS().PivotView("PivotGrid").Height("350").DataSourceSettingsSettings(dataSource => dataSource.DataSourceSettings((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
+@Html.EJS().PivotView("PivotGrid").Height("350").DataSourceSettings(dataSourceSettings => dataSourceSettings.DataSource((IEnumerable<object>)ViewBag.DataSource).ExpandAll(true)
     .FormatSettings(formatsettings =>
     {
         formatsettings.Name("Amount").Format("C0").Add();
