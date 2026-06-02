@@ -159,28 +159,14 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot
 
 To bind data for the Pivot Table component, you can assign a collection of data objects to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property. The data source can be provided as an IEnumerable collection or as an instance of the `DataManager`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/pivot-table/getting-start-core/pivot-table/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="pivottable.cs" %}
+{% highlight c# tabtitle="CSHTML.cs" %}
 {% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-core/pivot-table/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="pivottable.cs" %}
-{% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Pivot Table control will be rendered in the default web browser.
 
