@@ -25,7 +25,7 @@ Diagram provides support to add different kind of nodes. They are as follows:
 
 ## Text
 
-Texts can be added to the diagram as [`text`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) nodes. The shape property of the node allows to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text.
+Texts can be added to the diagram as [`text`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Text) nodes. The shape property of the node allows to set the type of node and for text nodes, it should be set as **text**. In addition, define the content object that is used to define the text to be added and style is used to customize the appearance of that text.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -51,7 +51,7 @@ Texts can be added to the diagram as [`text`](https://help.syncfusion.com/cr/asp
 
 ## Image
 
-Diagram allows to add images as [`image`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) nodes. The shape property of node allows you to set the type of node and for image nodes, it should be set as **image**. In addition, the source property of shape enables you to set the image source.
+Diagram allows to add images as [`image`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_Image) nodes. The shape property of node allows you to set the type of node and for image nodes, it should be set as **image**. In addition, the source property of shape enables you to set the image source.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,9 +101,7 @@ Diagram allows to add images as [`image`](https://help.syncfusion.com/cr/aspnetc
 
 N> Deploy your HTML file in the web application and export the diagram (image node) or else the image node will not be exported in the Chrome and Firefox due to security issues.
 
-**Link 1**: [Draw images on canvas locally using chrome](http://asked.online/draw-images-on-canvas-locally-using-chrome/2546077/)
-
-**Link 2**: [Local image in canvas in chrome](http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome)
+**Link 1**: [Local image in canvas in chrome](http://stackoverflow.com/questions/4761711/local-image-in-canvas-in-chrome)
 
 ## Image alignment
 
@@ -141,7 +139,7 @@ The scale property of the node allows to stretch the image as you desired (eithe
 
 ## HTML
 
-Html elements can be embedded in the diagram through [`Html`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html) type node. The shape property of node allows to set the type of node and to create a HTML node it should be set as `HTML`.
+Html elements can be embedded in the diagram through [`Html`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Shapes.html#Syncfusion_EJ2_Diagrams_Shapes_HTML) type node. The shape property of node allows to set the type of node and to create a HTML node it should be set as `HTML`.
 
 N> HTML node cannot be exported to image format, like JPEG, PNG, and BMP. It is by design, while exporting the diagram is drawn in a canvas. Further, this canvas is exported into image formats. Currently, drawing in a canvas equivalent from all possible HTML is not feasible. Hence, this limitation.
 
