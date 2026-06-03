@@ -11,7 +11,7 @@ documentation: ug
 
 # Shapes in Diagram Control
 
-BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as “bpmn” and its shape should be set as any one of the built-in shapes.
+BPMN shapes are used to represent the internal business procedure in a graphical notation and enable you to communicate the procedures in a standard manner. To create a BPMN shape, in the node property shape, type should be set as **bpmn** and its shape should be set as any one of the built-in shapes.
 
 N> If you want to use BPMN shapes in diagram, you need to inject BpmnDiagrams in the diagram.
 
@@ -37,7 +37,7 @@ N> If you want to use BPMN shapes in diagram, you need to inject BpmnDiagrams in
 
 
 
-N> The default value for the property `shape` is “event”.
+N> The default value for the property `shape` is **event**.
 
 The list of BPMN shapes are as follows:
 
@@ -107,7 +107,7 @@ Event triggers are notated as icons inside the circle and they represent the spe
 
 ## Gateway
 
-Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as “gateway” and the [`gateway`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnGateway.html) property can be set with any of the appropriate gateways.
+Gateway is used to control the flow of a process and it is represented as a diamond shape. To create a gateway, the shape property of the node should be set as **gateway** and the [`gateway`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramBpmnGateway.html) property can be set with any of the appropriate gateways.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
