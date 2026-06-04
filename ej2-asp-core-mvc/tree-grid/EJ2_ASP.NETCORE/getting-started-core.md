@@ -164,69 +164,26 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeG
 {% highlight c# tabtitle="CSHTML.cs" %}
 public class IndexModel : PageModel
 {
-    public List<TreeGridItems> TreeData { get; set; }
-
-    public void OnGet()
-    {
-        TreeData = TreeGridItems.GetTreeData();
-    }
+    public void OnGet() { }
 }
-
-public class TreeGridItems
+ 
+public class Task
 {
-    public int? TaskId { get; set; }
+    public Task() { }
+    public int? TaskID { get; set; }
     public string? TaskName { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public int? Duration { get; set; }
-    public List<TreeGridItems>? Children { get; set; }
-
-    public TreeGridItems() { }
-
-    public TreeGridItems(int taskId, string taskName, DateTime start, DateTime end, int duration)
+    public List<Task>? Children { get; set; }
+ 
+    public Task(int taskID, string taskName, DateTime start, DateTime end, int duration)
     {
-        TaskId = taskId;
-        TaskName = taskName;
-        StartDate = start;
-        EndDate = end;
-        Duration = duration;
-    }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> data = new List<TreeGridItems>();
-
-        var parent1 = new TreeGridItems
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2025, 2, 4),
-            EndDate = new DateTime(2025, 2, 7),
-            Duration = 4,
-            Children = new List<TreeGridItems>()
-        };
-
-        parent1.Children.Add(new TreeGridItems(2, "Plan timeline", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
-        parent1.Children.Add(new TreeGridItems(3, "Plan budget", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
-
-        var parent2 = new TreeGridItems
-        {
-            TaskId = 4,
-            TaskName = "Design",
-            StartDate = new DateTime(2025, 2, 10),
-            EndDate = new DateTime(2025, 2, 14),
-            Duration = 5,
-            Children = new List<TreeGridItems>()
-        };
-
-        parent2.Children.Add(new TreeGridItems(5, "Software Specification", new DateTime(2025, 2, 10), new DateTime(2025, 2, 12), 3));
-        parent2.Children.Add(new TreeGridItems(6, "Design Documentation", new DateTime(2025, 2, 13), new DateTime(2025, 2, 14), 2));
-        parent2.Children.Add(new TreeGridItems(7, "Design complete", new DateTime(2025, 2, 14), new DateTime(2025, 2, 14), 1));
-
-        data.Add(parent1);
-        data.Add(parent2);
-
-        return data;
+        this.TaskID = taskID;
+        this.TaskName = taskName;
+        this.StartDate = start;
+        this.EndDate = end;
+        this.Duration = duration;
     }
 }
 {% endhighlight %}

@@ -170,37 +170,26 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid 
 {% highlight c# tabtitle="CSHTML.cs" %}
 public class IndexModel : PageModel
 {
-    public List<Order> Orders { get; set; }
-
-    public void OnGet()
-    {
-        Orders = new List<Order>
-        {
-            new Order(10248, "Ana Trujillo", new DateTime(2025,1,12), "France", 32.38),
-            new Order(10249, "Martin Sommer", new DateTime(2025,1,15), "Germany", 11.61),
-            new Order(10250, "Thomas Hardy", new DateTime(2025,2,5), "Brazil", 65.83),
-            new Order(10251, "Elizabeth Lincoln", new DateTime(2025,2,18), "France", 41.34),
-            new Order(10252, "Victoria Ashworth", new DateTime(2025,3,10), "Belgium", 51.30),
-            new Order(10253, "Martine Rance", new DateTime(2025,3,22), "Brazil", 58.17)
-        };
-    }
+    public void OnGet() { }
 }
+ 
 public class Order
 {
+    public Order() { }
     public Order(int id, string customer, DateTime date, string country, double freight)
     {
-        OrderID = id;
-        CustomerID = customer;
-        OrderDate = date;
-        ShipCountry = country;
-        Freight = freight;
+        this.OrderID = id;
+        this.CustomerID = customer;
+        this.OrderDate = date;
+        this.ShipCountry = country;
+        this.Freight = freight;
     }
-
-    public int OrderID? { get; set; }
-    public string CustomerID? { get; set; }
-    public DateTime OrderDate? { get; set; }
-    public string ShipCountry? { get; set; }
-    public double Freight? { get; set; }
+ 
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public DateTime? OrderDate { get; set; }
+    public string ShipCountry { get; set; }
+    public double? Freight { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
