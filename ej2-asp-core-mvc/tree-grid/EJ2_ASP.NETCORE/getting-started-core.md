@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeGrid Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## TreeGrid control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Tree Grid Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core TreeGrid Control
+# Getting Started with ASP.NET Core Tree Grid Control
 
-This section explains how to add the [ASP.NET Core TreeGrid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
+This section explains how to add the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -153,9 +153,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` of `~/Pa
 
 The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Syncfusion controls are fully rendered before the script manager initializes them.
 
-## Add ASP.NET Core TreeGrid control
+## Add ASP.NET Core Tree Grid control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -164,77 +164,34 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeG
 {% highlight c# tabtitle="CSHTML.cs" %}
 public class IndexModel : PageModel
 {
-    public List<TreeGridItems> TreeData { get; set; }
-
-    public void OnGet()
-    {
-        TreeData = TreeGridItems.GetTreeData();
-    }
+    public void OnGet() { }
 }
 
-public class TreeGridItems
+public class Task
 {
-    public int? TaskId { get; set; }
+    public Task() { }
+    public int? TaskID { get; set; }
     public string? TaskName { get; set; }
     public DateTime? StartDate { get; set; }
     public DateTime? EndDate { get; set; }
     public int? Duration { get; set; }
-    public List<TreeGridItems>? Children { get; set; }
+    public List<Task>? Children { get; set; }
 
-    public TreeGridItems() { }
-
-    public TreeGridItems(int taskId, string taskName, DateTime start, DateTime end, int duration)
+    public Task(int taskID, string taskName, DateTime start, DateTime end, int duration)
     {
-        TaskId = taskId;
-        TaskName = taskName;
-        StartDate = start;
-        EndDate = end;
-        Duration = duration;
-    }
-
-    public static List<TreeGridItems> GetTreeData()
-    {
-        List<TreeGridItems> data = new List<TreeGridItems>();
-
-        var parent1 = new TreeGridItems
-        {
-            TaskId = 1,
-            TaskName = "Planning",
-            StartDate = new DateTime(2025, 2, 4),
-            EndDate = new DateTime(2025, 2, 7),
-            Duration = 4,
-            Children = new List<TreeGridItems>()
-        };
-
-        parent1.Children.Add(new TreeGridItems(2, "Plan timeline", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
-        parent1.Children.Add(new TreeGridItems(3, "Plan budget", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
-
-        var parent2 = new TreeGridItems
-        {
-            TaskId = 4,
-            TaskName = "Design",
-            StartDate = new DateTime(2025, 2, 10),
-            EndDate = new DateTime(2025, 2, 14),
-            Duration = 5,
-            Children = new List<TreeGridItems>()
-        };
-
-        parent2.Children.Add(new TreeGridItems(5, "Software Specification", new DateTime(2025, 2, 10), new DateTime(2025, 2, 12), 3));
-        parent2.Children.Add(new TreeGridItems(6, "Design Documentation", new DateTime(2025, 2, 13), new DateTime(2025, 2, 14), 2));
-        parent2.Children.Add(new TreeGridItems(7, "Design complete", new DateTime(2025, 2, 14), new DateTime(2025, 2, 14), 1));
-
-        data.Add(parent1);
-        data.Add(parent2);
-
-        return data;
+        this.TaskID = taskID;
+        this.TaskName = taskName;
+        this.StartDate = start;
+        this.EndDate = end;
+        this.Duration = duration;
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid control will be rendered in the default web browser.
 
-![ASP.NET Core TreeGrid Columns](images/treegrid-columns.png)
+![ASP.NET Core Tree Grid Columns](images/treegrid-columns.png)
 
 ## See also
 
