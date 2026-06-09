@@ -1,14 +1,29 @@
 @page
-@model RazorPagesTreeGrid.Pages.IndexModel
-
-<ejs-treegrid id="TreeGrid" dataSource="@Model.TreeData" childMapping="Children" treeColumnIndex="1">
-
+@model IndexModel
+ 
+@{
+    List<Task> task = new List<Task>();
+ 
+    var parent1 = new Task { TaskID = 1, TaskName = "Planning", StartDate = new DateTime(2025, 2, 4), EndDate = new DateTime(2025, 2, 7), Duration = 4, Children = new List<Task>() };
+    parent1.Children.Add(new Task(2, "Plan timeline", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
+    parent1.Children.Add(new Task(3, "Plan budget", new DateTime(2025, 2, 4), new DateTime(2025, 2, 7), 4));
+ 
+    var parent2 = new Task { TaskID = 4, TaskName = "Design", StartDate = new DateTime(2025, 2, 10), EndDate = new DateTime(2025, 2, 14), Duration = 5, Children = new List<Task>() };
+ 
+    parent2.Children.Add(new Task(5, "Software Specification", new DateTime(2025, 2, 10), new DateTime(2025, 2, 12), 3));
+    parent2.Children.Add(new Task(6, "Design Documentation", new DateTime(2025, 2, 13), new DateTime(2025, 2, 14), 2));
+    parent2.Children.Add(new Task(7, "Design complete", new DateTime(2025, 2, 14), new DateTime(2025, 2, 14), 1));
+ 
+    task.Add(parent1);
+    task.Add(parent2);
+}
+ 
+<ejs-treegrid id="TreeGrid" dataSource="@task" childMapping="Children" treeColumnIndex="1">
     <e-treegrid-columns>
-        <e-treegrid-column field="TaskId" headerText="Task ID" textAlign="Right" width="95"></e-treegrid-column>
+        <e-treegrid-column field="TaskID" headerText="Task ID" textAlign="Right" width="95"></e-treegrid-column>
         <e-treegrid-column field="TaskName" headerText="Task Name" width="220"></e-treegrid-column>
         <e-treegrid-column field="StartDate" headerText="Start Date" format="yMd" type="date" textAlign="Right" width="115"></e-treegrid-column>
         <e-treegrid-column field="EndDate" headerText="End Date" format="yMd" type="date" textAlign="Right" width="115"></e-treegrid-column>
         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="100"></e-treegrid-column>
     </e-treegrid-columns>
-
 </ejs-treegrid>

@@ -36,6 +36,20 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
+## Update packages.config
+
+To update the packages.config file with the latest ASP.NET MVC and Razor versions, run the following command in the NuGet Package Manager Console:
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Update-Package Microsoft.AspNet.Mvc -Source nuget.org
+
+{% endhighlight %}
+{% endtabs %}
+
+N> If you encounter any issues after updating, you may need to update the corresponding `Web.config` files in your project to reference the new assembly versions. Also, ensure that your project's target framework is compatible with the updated package versions.
+
 ## Add namespace
 
 Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder. This namespace provides access to Syncfusion HTML helper methods for rendering components.
