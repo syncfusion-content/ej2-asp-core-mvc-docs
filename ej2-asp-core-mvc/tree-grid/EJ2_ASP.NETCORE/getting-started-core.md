@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeGrid Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## TreeGrid control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Tree Grid Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core TreeGrid Control
+# Getting Started with ASP.NET Core Tree Grid Control
 
-This section explains how to add the [ASP.NET Core TreeGrid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
+This section explains how to add the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -153,9 +153,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` of `~/Pa
 
 The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Syncfusion controls are fully rendered before the script manager initializes them.
 
-## Add ASP.NET Core TreeGrid control
+## Add ASP.NET Core Tree Grid control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -166,7 +166,7 @@ public class IndexModel : PageModel
 {
     public void OnGet() { }
 }
- 
+
 public class Task
 {
     public Task() { }
@@ -176,7 +176,7 @@ public class Task
     public DateTime? EndDate { get; set; }
     public int? Duration { get; set; }
     public List<Task>? Children { get; set; }
- 
+
     public Task(int taskID, string taskName, DateTime start, DateTime end, int duration)
     {
         this.TaskID = taskID;
@@ -189,9 +189,9 @@ public class Task
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid control will be rendered in the default web browser.
 
-![ASP.NET Core TreeGrid Columns](images/treegrid-columns.png)
+![ASP.NET Core Tree Grid Columns](images/treegrid-columns.png)
 
 ## See also
 
