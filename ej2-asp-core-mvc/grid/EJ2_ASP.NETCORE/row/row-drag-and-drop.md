@@ -10,7 +10,7 @@ documentation: ug
 
 # Drag and drop in ASP.NET Core Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
+The ASP.NET Core DataGrid  component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
 
 To use the row drag and drop feature in Grid component, you need to set the [allowRowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowRowDragAndDrop) and [targetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridRowDropSettings.html#Syncfusion_EJ2_Grids_GridRowDropSettings_TargetID) properties to enable and configure this feature in the Grid.
 
