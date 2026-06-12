@@ -35,7 +35,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 
 > * Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [Detail Template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/detail-template) is enabled.
-> * In Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
+> * In [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Bind hierarchy grid with different field
 

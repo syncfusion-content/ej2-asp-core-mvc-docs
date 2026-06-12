@@ -10,7 +10,7 @@ documentation: ug
 
 # Aggregates in ASP.Net Core Grid component
 
-The Aggregates feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component allows you to display aggregate values in the footer, group footer, and group caption of the Grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-grid-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as `field` and `type`.
+The Aggregates feature in the [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allows you to display aggregate values in the footer, group footer, and group caption of the Grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-grid-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as `field` and `type`.
 
 **Displaying aggregate values**
 
@@ -39,7 +39,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid component provides several built-in aggregate types that can be specified in the `type` property to configure an aggregate column.
+The ASP.Net Core DataGrid component provides several built-in aggregate types that can be specified in the `type` property to configure an aggregate column.
 
 The available built-in aggregate types are:
 
@@ -70,9 +70,9 @@ Multiple aggregates for a column allows you to calculate and display different s
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid by specifying the aggregate `type` as an array.
+You can use multiple aggregates for a single column in the ASP.Net Core DataGrid by specifying the aggregate `type` as an array.
 
-Here's an example of how to use multiple aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net Core Grid:
+Here's an example of how to use multiple aggregates in the ASP.Net Core DataGrid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

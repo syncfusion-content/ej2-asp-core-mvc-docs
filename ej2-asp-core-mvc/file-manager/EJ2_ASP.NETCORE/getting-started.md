@@ -81,7 +81,7 @@ code -r RazorPagesMovie
 
 ## Install ASP.NET Core package in the application
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
 2. Navigate to the directory containing the **.csproj** file.

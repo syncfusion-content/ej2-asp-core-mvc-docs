@@ -128,7 +128,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 
 ## Lazy load grouping with virtual scrolling
 
-The lazy load grouping with virtual scrolling feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
+The lazy load grouping with virtual scrolling feature in the [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) allows you to efficiently present and analyze large grouped datasets. This feature optimizes performance, reduces initial load time, and provides smooth scrolling through the dataset. 
 
 **How lazy load grouping with virtual scrolling works**
 
