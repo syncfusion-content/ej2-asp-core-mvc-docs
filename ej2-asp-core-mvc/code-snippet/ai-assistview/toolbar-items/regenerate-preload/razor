@@ -1,0 +1,56 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using Newtonsoft.Json
+
+@{
+	var promptsData = new[]
+	{
+		new {
+			prompt = "What is AI?",
+			response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem-solving, and decision-making.</div>",
+			regeneratedResponses = new[] {
+				"AI, or Artificial Intelligence, refers to the simulation of human intelligence in machines programmed to think and learn like humans.",
+				"Artificial Intelligence is the development of computer systems capable of performing tasks that typically require human intelligence.",
+				"AI is a branch of computer science focused on building machines that can perform tasks requiring human-like intelligence."
+			}
+		}
+	};
+
+	var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
+	var toolbarItems = new[] {
+		new { type = "Button", iconCss = "e-icons e-assist-copy", tooltip = "Copy" },
+		new { type = "Button", iconCss = "e-icons e-assist-like", tooltip = "Like" },
+		new { type = "Button", iconCss = "e-icons e-assist-dislike", tooltip = "Need Improvement" },
+		new { type = "Button", iconCss = "e-icons e-assist-regenerate", tooltip = "Regenerate" }
+	};
+	var toolbarJson = @Html.Raw(JsonConvert.SerializeObject(toolbarItems));
+}
+
+<div id="regenerate-preload" class="aiassist-container" style="height: 350px; width: 650px;">
+	@Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").Render()
+</div>
+
+<script>
+	var assistObj;
+	var prompts = @Html.Raw(promptsJson);
+	var toolbarItems = @Html.Raw(toolbarJson);
+
+	function onCreated() {
+		assistObj = this;
+		// apply the response toolbar items after initialization
+		assistObj.responseToolbarSettings = { items: toolbarItems };
+	}
+
+	function onPromptRequest(args) {
+		setTimeout(function () {
+			var foundPrompt = prompts.find(prompt => prompt.prompt == args.prompt);
+			var defaultResponse = 'For real-time prompt processing, connect the AIAssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+			assistObj.addPromptResponse(foundPrompt ? foundPrompt.response : defaultResponse);
+		}, 1000);
+	}
+
+	function responseItemClicked(args) {
+		// handle response toolbar item clicks (copy/like/dislike/regenerate)
+		// add your custom handling here
+	}
+</script>
+
