@@ -1,61 +1,36 @@
 @using Syncfusion.EJ2.InteractiveChat
-@using Newtonsoft.Json
-
-@{
-    var promptsData = new[]
-    {
-        new { prompt = "What is AI?", response = "<div> AI stands for Artificial Intelligence, enabling machines to mimic human intelligence for tasks such as learning, problem-solving, and decision-making.</div>", suggestionData = new List<string>() }
-    };
-    var promptsJson = @Html.Raw(JsonConvert.SerializeObject(promptsData));
-
-    var regenerateResponses = new[] {
-        "AI, or Artificial Intelligence, refers to the simulation of human intelligence in machines programmed to think and learn like humans.",
-        "Artificial Intelligence is the development of computer systems capable of performing tasks that typically require human intelligence.",
-        "AI is a branch of computer science focused on building machines that can perform tasks requiring human-like intelligence."
-    };
-    var regenerateJson = @Html.Raw(JsonConvert.SerializeObject(regenerateResponses));
-
-    var toolbarItems = new[] {
-        new { type = "Button", iconCss = "e-icons e-assist-copy", tooltip = "Copy" },
-        new { type = "Button", iconCss = "e-icons e-assist-like", tooltip = "Like" },
-        new { type = "Button", iconCss = "e-icons e-assist-dislike", tooltip = "Need Improvement" },
-        new { type = "Button", iconCss = "e-icons e-assist-regenerate", tooltip = "Regenerate" }
-    };
-    var toolbarJson = @Html.Raw(JsonConvert.SerializeObject(toolbarItems));
-}
+@using System.Text.Json
 
 <div class="aiassist-container" style="height: 350px; width: 650px;">
-    @Html.EJS().AIAssistView("aiAssistView").Prompts(promptsData).PromptRequest("onPromptRequest").Created("onCreated").ResponseToolbarSettings(new AIAssistViewResponseToolbarSettings(){ ItemClicked = "responseItemClicked" }).Render()
+    @Html.EJS().AIAssistView("aiAssistView")
+        .Prompts(ViewBag.Prompts)
+        .ResponseToolbarSettings(new { items = ViewBag.ToolbarItems })
+        .PromptRequest("onPromptRequest")
+        .Created("onCreated")
+        .Render()
 </div>
 
 <script>
-    var assistObj;
-    var prompts = @Html.Raw(promptsJson);
-    var toolbarItems = @Html.Raw(toolbarJson);
-    var regenerateResponses = @Html.Raw(regenerateJson);
+    var assistObj = null;
+
+    var regenerateResponses = @Html.Raw(JsonSerializer.Serialize(ViewBag.RegenerateResponses));
 
     function onCreated() {
-        assistObj = this;
-        // set response toolbar items after initialization
-        assistObj.responseToolbarSettings = { items: toolbarItems };
+        assistObj = ej.base.getComponent(document.getElementById('aiAssistView'), 'aiassistview');
     }
 
     function onPromptRequest(args) {
         setTimeout(function () {
-            var foundPrompt = prompts.find(prompt => prompt.prompt == args.prompt);
-            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView control to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            var foundPrompt = assistObj.prompts.find(prompt => prompt.prompt == args.prompt);
+            var defaultResponse = 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.';
+            var response;
             if (foundPrompt) {
-                // if regenerateResponses are provided, pick a random one; otherwise use the prompt's response
-                var source = (foundPrompt.regeneratedResponses && foundPrompt.regeneratedResponses.length) ? foundPrompt.regeneratedResponses : regenerateResponses;
-                var resp = source && source.length ? source[Math.floor(Math.random() * source.length)] : foundPrompt.response;
-                assistObj.addPromptResponse(resp);
-            } else {
-                assistObj.addPromptResponse(defaultResponse);
-            }
-        }, 1000);
-    }
-
-    function responseItemClicked(args) {
-        // handle toolbar actions: Copy, Like, Need Improvement, Regenerate
+                var randomIndex = Math.floor(Math.random() * regenerateResponses.length);
+                response = regenerateResponses[randomIndex];
+                } else {
+                    response = "For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services.";
+                }
+                assistObj.addPromptResponse(response);
+            }, 1000);
     }
 </script>

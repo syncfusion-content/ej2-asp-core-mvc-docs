@@ -383,11 +383,9 @@ In the following example, AI AssistView control rendered with the built-in `rege
 {% include code-snippet/ai-assistview/toolbar-items/regenerate-response/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RegenerateResponse.cs" %}
-{% include code-snippet/ai-assistview/toolbar-items/regenerate-response/regenerate-response.cs %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-response/regenerate-responsemvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![RegenerateResponse](images/regenerate-response.png)
 
 #### Pre-loading regenerated responses
 
@@ -400,11 +398,9 @@ In the following example, the `RegeneratedResponses` property is used to pre-loa
 {% include code-snippet/ai-assistview/toolbar-items/regenerate-preload/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RegeneratePreload.cs" %}
-{% include code-snippet/ai-assistview/toolbar-items/regenerate-preload/regenerate-preload.cs %}
+{% include code-snippet/ai-assistview/toolbar-items/regenerate-preload/regenerate-preloadmvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-![RegeneratePreload](images/regenerate-preload.png)
 
 ## Adding custom toolbar items
 
