@@ -163,3 +163,43 @@ The following example demonstrates complete baseline configuration with proper f
 The following screenshot shows the baseline in Gantt control.
 
 ![Baseline in Gantt Component](images/baseline.png)
+
+## Customize baseline templates
+
+The `baselineTemplate` property allows customization of baseline rendering by replacing the default baseline UI with a custom HTML structure. This enables advanced scenarios such as rendering additional baseline elements, visual indicators, or multiple baselines using task-specific data.
+
+Set the `baselineTemplate` property with a template string or function. The template receives the task data object, which can be used to dynamically generate baseline elements.
+
+### Multiple baseline rendering using template
+
+By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
+
+This enables rich visualization scenarios such as:
+* Comparing original vs revised schedules.
+* Visualizing multiple planning phases.
+* Highlighting deviations across timeline checkpoints.
+
+The following example demonstrates how to render multiple baselines using `baselineTemplate`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
