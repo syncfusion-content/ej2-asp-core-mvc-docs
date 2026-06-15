@@ -321,3 +321,37 @@ The following code example how to customize the top tier to display the week's w
 {% endtabs %}
 {% endif %}
 
+## Infinite timeline scrolling
+
+The `enableInfiniteTimelineScroll` property enables infinite horizontal scrolling in the Gantt Chart timeline by dynamically extending the visible timeline range as the user navigates. Set `enableInfiniteTimelineScroll` to **true** to enable this behavior.
+
+**Key behaviors**
+
+- When `enableInfiniteTimelineScroll` is enabled, the timeline automatically extends in the forward direction as the user scrolls using the horizontal scrollbar or clicks the forward scroll arrow.
+- In the backward direction, the timeline extends only when the user clicks the backward scroll arrow. Scrolling or dragging the scrollbar backward does not trigger timeline extension.
+- Infinite scrolling extends only the visible timeline range and does not modify the project dates.
+
+This feature enables exploration of long project schedules without manually updating the timeline range.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="timelineTemplate.cs" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="timelineTemplate.cs" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
