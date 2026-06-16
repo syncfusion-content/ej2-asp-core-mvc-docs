@@ -10,7 +10,7 @@ documentation: ug
 
 # How to upgrade ASP.NET Core Controls to the latest version
 
-To upgrade Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls to the latest version, you need to ensure the following:
+To upgrade ASP.NET Core Controls to the latest version, you need to ensure the following:
 
 ## Compatible .NET version
 
@@ -44,13 +44,13 @@ Check is there any breaking changes between the syncfusion<sup style="font-size:
 
 ## Cache problem
 
-Before restoring the NuGet packages, clean the older versions of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages.
+Before restoring the NuGet packages, clean the older versions of ASP.NET Core NuGet packages.
 
 The following steps explain how to clean the cache:
 
-1. Delete the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
+1. Delete the ASP.NET Core NuGet packages from the installed location `{System-driver}/Users/{user-name}/.nuget/packages/`. In Windows, the installed location of ASP.NET Core NuGet packages can be found using `%userprofile%/.nuget/packages/`.
 
-2. Update the latest version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages.
+2. Update the latest version of ASP.NET Core NuGet packages.
 
 ## See also
 

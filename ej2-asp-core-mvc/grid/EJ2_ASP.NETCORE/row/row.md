@@ -14,7 +14,7 @@ Each row typically represents a single record or item from a data source. Rows i
 
 ## Customize row styles 
 
-Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, you can use CSS, properties, methods, or event support provided by the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component.
+Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to modify the appearance of rows to meet your design requirements. This feature is useful when you want to highlight certain rows or change the font style, background color, and other properties of the row to enhance the visual appeal of the grid. To customize the row styles in the grid, you can use CSS, properties, methods, or event support provided by the ASP.NET Core Grid component.
 
 ### Using event
 
@@ -202,7 +202,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 ## Row pinning (Frozen)
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
+The ASP.NET Core Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
 
 In the following example, the [frozenRows](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) property is set to **2**. This configuration freezes the top three rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
 

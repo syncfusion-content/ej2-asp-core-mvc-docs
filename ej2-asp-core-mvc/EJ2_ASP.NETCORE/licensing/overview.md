@@ -36,5 +36,5 @@ N> Refer to [this](https://www.syncfusion.com/kb/8950/difference-between-the-unl
 
 ## See Also
 
-* [How to Generate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-generate)
+* [How to Generate ASP.NET Core License Key?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-generate)
 * [How to Register Syncfusion<sup style="font-size:70%">&reg;</sup> License Key in ASP.NET Core Application?](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application)

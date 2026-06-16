@@ -8,9 +8,9 @@ documentation: ug
 
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac Installer
+# Installing ASP.NET Core EJ2 Mac Installer
 
-The Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac installer allows you to create the ASP.NET Core EJ2 application in Visual Studio for Mac with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 components.
+The Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac installer allows you to create the ASP.NET Core EJ2 application in Visual Studio for Mac with the ASP.NET Core EJ2 components.
 
 ## Steps to resolve the warning message in Catalina OS or later
 

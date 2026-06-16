@@ -12,7 +12,7 @@ documentation: ug
 
 Localization (L10N) is the process of adapting application controls and content to the desired language with its corresponding region. This page shows, how to use the Localization feature in the ASP.NET Core application.
 
-## Localization of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls
+## Localization of ASP.NET Core Controls
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> controls can be localized using the culture based JSON files. You can find the default and culture based localization files in the following GitHub repository.
 
@@ -30,7 +30,7 @@ npm i @syncfusion/ej2-locale
 {% endhighlight %}
 {% endtabs %}
 
-Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules/@syncfusion/ej2-locale/src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls locale text.
+Once the `ej2-locale` package has installed, create a folder `locale` inside the `wwwroot` folder. Then copy the specific culture files from `node_modules/@syncfusion/ej2-locale/src` location and paste it inside the `wwwroot/locale` folder like below. The culture file contains all ASP.NET Core controls locale text.
 
 ![Moved locale data to ASP.NET Core app](images/moved-locale-data.png)
 
@@ -58,7 +58,7 @@ If you don't want to change culture dynamically, you can specify the static cult
 {% endhighlight %}
 {% endtabs %}
 
-Now, you can add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control in `~/Pages/Index.cshtml` page.
+Now, you can add the ASP.NET Core control in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -150,7 +150,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-lo
 
 ## Changing current locale
 
-Current locale can be changed for all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in the application by invoking `setCulture` function with the desired culture name and set locale property. You can change the different culture in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls by setting [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property with culture codes.
+Current locale can be changed for all the ASP.NET Core controls in the application by invoking `setCulture` function with the desired culture name and set locale property. You can change the different culture in ASP.NET Core controls by setting [locale](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Locale) property with culture codes.
 
 The following example demonstrates the Grid in Deutsch culture.
 

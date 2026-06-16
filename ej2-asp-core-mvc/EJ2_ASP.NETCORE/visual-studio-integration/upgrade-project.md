@@ -10,17 +10,17 @@ documentation: ug
 
 # Upgrading Syncfusion® ASP.NET Core application to latest version
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+The ASP.NET Core migration add-in for Visual Studio allows you to migrate an existing ASP.NET Core application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 ## IMPORTANT
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
+The ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-> Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
+> Before use, the ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
 
-The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application via Visual Studio:
+The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the ASP.NET Core application via Visual Studio:
 
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application that uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
+1. Open the ASP.NET Core application that uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
 
 2. To open the Migration Wizard, either one of the following options should be followed:
 
@@ -32,15 +32,15 @@ The steps below will assist you to upgrade the Syncfusion<sup style="font-size:7
 
     **Option 2**
 
-    Right-click the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Application** from Solution Explorer and select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**. Choose **Migrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project to Another Version…**
+    Right-click the **ASP.NET Core Application** from Solution Explorer and select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**. Choose **Migrate the ASP.NET Core Project to Another Version…**
 
     ![migrate syncfuion project](images/migrate-syncfusion-EJ2.png)
 
-3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core to migrate.
+3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of ASP.NET Core to migrate.
 
     ![project migration](images/project-migration.png)
 
-    > The versions are loaded from the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
+    > The versions are loaded from the ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
 
     **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET Core Project, from either NPM, CDN or Installed Location.
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Inherited Features from TextArea
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Smart TextArea control fully inherits all the properties, features, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TextArea control. This means that you can leverage the existing features of the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TextArea while benefiting from the enhanced functionality of the Smart TextArea.
+The ASP.NET Core Smart TextArea control fully inherits all the properties, features, and styling options of the ASP.NET Core TextArea control. This means that you can leverage the existing features of the ASP.NET Core TextArea while benefiting from the enhanced functionality of the Smart TextArea.
 
 * [Form Support](https://ej2.syncfusion.com/aspnetcore/documentation/textarea/form-support)
 * [Floating Labels](https://ej2.syncfusion.com/aspnetcore/documentation/textarea/floating-label)

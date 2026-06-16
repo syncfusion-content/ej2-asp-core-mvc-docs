@@ -69,4 +69,4 @@ The accessibility compliance of the Context menu component is shown in the follo
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls](../common/accessibility)
+* [Accessibility in ASP.NET Core controls](../common/accessibility)

@@ -137,3 +137,4 @@ To remove a data point from the existing data source, simply click on the desire
 {% endif %}
 
 
+N> Looking for the full[ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts) component overview, features, pricing, and documentation? Visit the [ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts) page.

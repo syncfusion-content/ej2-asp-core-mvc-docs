@@ -37,7 +37,7 @@ If you are using CDN for style sheet references then you have to add style sheet
 
 ### Script Fallback
 
-You can check the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core object for script fallback by using [script tag helper](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/script-tag-helper?view=aspnetcore-8.0) and refer scripts externally from [CRG](./custom-resource-generator) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file in ASP.NET Core app as in the below code.
+You can check the ASP.NET Core object for script fallback by using [script tag helper](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/built-in/script-tag-helper?view=aspnetcore-8.0) and refer scripts externally from [CRG](./custom-resource-generator) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file in ASP.NET Core app as in the below code.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

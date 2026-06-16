@@ -15,7 +15,7 @@ documentation: ug
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To get start quickly with DateTime axis in ASP.NET Core Charts, you can check on this video:
+Date time axis uses date time scale and displays the date time values as axis labels in the specified format. To get start quickly with DateTime axis in[ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts), you can check on this video:
 
 {% youtube "https://www.youtube.com/watch?v=DnMIgbn6bco" %}
 

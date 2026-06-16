@@ -8,14 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Offline Installer
+# Installing ASP.NET Core EJ2 Offline Installer
 
 
 ## Installing with UI
 
 The steps below shows how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
 
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1. Open the ASP.NET Core - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
     ![Web Offline Installer Setup wizard](images/offline-1.png)
 
@@ -35,7 +35,7 @@ The steps below shows how to install the Essential Studio<sup style="font-size:7
 
     ***Use Unlock Key***
 
-    Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. You should use either Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial Unlock key to unlock Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
+    Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. You should use either Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial Unlock key to unlock ASP.NET Core - EJ2 installer.
 
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key.
 
@@ -92,7 +92,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style=
 
 To install through the Command Line in Silent mode, follow the steps below.
 
-1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1. Run the ASP.NET Core - EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
 2. The file syncfusionessentialaspnetcore-js2_(version).exe file will be extracted into the Temp directory.
 
@@ -118,7 +118,7 @@ To install through the Command Line in Silent mode, follow the steps below.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 can be uninstalled silently using the Command Line.
 
-1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer by double-clicking it. The installer Wizard automatically opens and extracts the package.
+1. Run the ASP.NET Core - EJ2 installer by double-clicking it. The installer Wizard automatically opens and extracts the package.
 
 2. The syncfusionessentialaspnetcore-js2_(version).exe file will be extracted into the Temp directory.
 

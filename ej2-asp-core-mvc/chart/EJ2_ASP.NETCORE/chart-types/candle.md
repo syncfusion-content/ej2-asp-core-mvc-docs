@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Candle Chart in ASP.NET Core Charts
+# Candle Chart in[ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts)
 
 To get started with the ASP.NET Core Candle charts, you can check on this video:
 

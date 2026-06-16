@@ -10,7 +10,7 @@ documentation: ug
 
 # Reactive aggregate in ASP.NET Core Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
+The ASP.NET Core Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 
 ## Auto update aggregate value in batch editing
 

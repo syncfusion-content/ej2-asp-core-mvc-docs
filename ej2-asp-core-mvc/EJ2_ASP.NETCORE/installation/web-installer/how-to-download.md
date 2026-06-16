@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 web installer
+# Downloading ASP.NET Core EJ2 web installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP. NET Core - EJ2 Installer can be downloaded from the [Syncfusion<sup style="font-size:70%">&reg;</sup>](https://www.syncfusion.com/aspnet-core-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
 
@@ -81,7 +81,7 @@ You should initiate an evaluation if you have already obtained our components th
    
     ![License and downloads of Syncfusion Essential Studio](images/start-trial-download-web-installer.png)
    
-8. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 web installer can be unlocked using Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credential.
+8. After downloading, the ASP.NET Core EJ2 web installer can be unlocked using Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credential.
 
    N> For Syncfusion<sup style="font-size:70%">&reg;</sup> trial and licensed products, there is no separate web installer. Based on your account license, Syncfusion<sup style="font-size:70%">&reg;</sup> trial or licensed products will be installed via web installer.
     

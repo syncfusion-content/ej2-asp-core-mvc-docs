@@ -110,7 +110,7 @@ app.UseEndpoints(endpoints =>
 
 N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the areas, add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager in that referred layout page.
 
-11.Now, you can add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
+11.Now, you can add the ASP.NET Core controls in `Index.cshtml` View file in the `~/Areas/Products/Views/` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -122,7 +122,7 @@ N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the
 {% endhighlight %}
 {% endtabs %}
 
-12.Run the application. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+12.Run the application. ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
 
 ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)
 
@@ -189,7 +189,7 @@ N>If `_ViewImports.cshtml` file is added in the appropriate Pages folder under t
 
 N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the areas, add the Syncfusion<sup style="font-size:70%">&reg;</sup> script manager in that referred layout page.
 
-8.Now, you can add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
+8.Now, you can add the ASP.NET Core controls in `Index.cshtml` Razor Page file in the `~/Areas/Products/Pages/` folder.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -201,6 +201,6 @@ N>If `_ViewStart.cshtml` file is added in the appropriate Pages folder under the
 {% endhighlight %}
 {% endtabs %}
 
-9.Run the application. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
+9.Run the application. ASP.NET Core calendar control will render in the web browser on the **Products**(`localhost:[port]/products/home/index`) page.
 
 ![ASP.NET Core calendar Control output](images/aspnetcore-calendar.png)

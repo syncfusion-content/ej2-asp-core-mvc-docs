@@ -71,4 +71,4 @@ The accessibility compliance of the Stepper control is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls](../common/accessibility)
+* [Accessibility in ASP.NET Core controls](../common/accessibility)

@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Themes
+# ASP.NET Core Themes
 
-The following list of themes are included in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls library.
+The following list of themes are included in the ASP.NET Core controls library.
 
 |Theme |Style Sheet Name|
 |--------|--------|
@@ -29,11 +29,11 @@ The following list of themes are included in the Syncfusion<sup style="font-size
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Bootstrap Theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
+The ASP.NET Core Bootstrap Theme is designed based on Bootstrap v3, whereas the Bootstrap4 theme is designed based on Bootstrap v4. ASP.NET Core themes provide support for the Fusion Theme that can only be downloaded from [ThemeStudio](https://ej2.syncfusion.com/themestudio/?theme=fusion).
 
 ## Reference themes in ASP.NET Core application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core themes can be used in your ASP.NET Core application by referencing the style sheet. Refer the ASP.NET Core Styles Sheet inside the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
+ASP.NET Core themes can be used in your ASP.NET Core application by referencing the style sheet. Refer the ASP.NET Core Styles Sheet inside the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
 Using the below approaches the themes can be referenced in the ASP.NET Core application,
 
@@ -47,7 +47,7 @@ Using the below approaches the themes can be referenced in the ASP.NET Core appl
 
 Instead of using a local resource on your server, you can use a cloud CDN to refer the theme style sheets. CDN Stands for "Content Delivery Network". A CDN is a group of servers distributed in different locations. While CDN are often used to host websites, they are commonly used to provide other types of downloadable data as well. Examples include software programs, images, videos, and streaming media.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 ASP.NET Core Package you are using.
+ASP.NET Core Themes are available in the CDN. Make sure that the version in the URLs matches the version of the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 ASP.NET Core Package you are using.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -84,7 +84,7 @@ The primary goal of individual control CDN is to optimize the loading time and m
 | --- | --- |
 | Styles reference for individual control | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/styles/{THEME-NAME}.css |
 
-The following table demonstrates the list of individual Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control CDN reference and its dependency packages.
+The following table demonstrates the list of individual ASP.NET Core control CDN reference and its dependency packages.
 
 <table>
 <tr>

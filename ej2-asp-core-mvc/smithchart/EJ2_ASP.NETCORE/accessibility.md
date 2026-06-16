@@ -67,5 +67,5 @@ The accessibility compliance of the Smith chart component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in ASP.NET Core components](../common/accessibility)
 

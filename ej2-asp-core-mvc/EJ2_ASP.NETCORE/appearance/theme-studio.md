@@ -14,7 +14,7 @@ Theme Studio for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be use
 
 ## Customizing theme color from theme studio
 
-The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. All the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
+The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed under the SCSS environment. Each theme has a unique common variable list. When you change the common variable color code value, it will reflect in all the ASP.NET Core controls. All the ASP.NET Core control styles are derived from these [theme-based common variables](#common-variables). This common variable list is handled inside the theme studio application for customizing theme-based colors.
 
 **Step 1:** Open the [Syncfusion<sup style="font-size:70%">&reg;</sup> Theme Studio](https://ej2.syncfusion.com/themestudio/) application.
 
@@ -26,13 +26,13 @@ The Essential<sup style="font-size:70%">&reg;</sup> JS 2 themes are developed un
 
 ![color-picker](images/colorpicker.png)
 
-**Step 4:** After selecting colors with the color pickers, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls will have the newly selected colors applied to them in the controls preview section.
+**Step 4:** After selecting colors with the color pickers, the ASP.NET Core controls will have the newly selected colors applied to them in the controls preview section.
 
 ![customized](images/customized.png)
 
 ### Filtering a specific list of controls
 
-Using the theme studio, you can apply custom themes to a list of specific controls. This option is useful when you have integrated a selective list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in your application. The theme studio will filter the selected controls and customize the final output for those controls’ styles alone, reducing the final output file size.
+Using the theme studio, you can apply custom themes to a list of specific controls. This option is useful when you have integrated a selective list of ASP.NET Core controls in your application. The theme studio will filter the selected controls and customize the final output for those controls’ styles alone, reducing the final output file size.
 
 **Step 1:** Click the Filter icon in the top right corner and select the controls whose theme is to be customized.
 
@@ -58,7 +58,7 @@ You can download the custom styles after customizing the theme colors.
 
 ![download-dialog](images/download-dialog.png)
 
-**Step 3:** The download styles will come as a zip file that contains SCSS and CSS files for the selected Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. The current settings are stored in the `settings.json` file.
+**Step 3:** The download styles will come as a zip file that contains SCSS and CSS files for the selected ASP.NET Core controls. The current settings are stored in the `settings.json` file.
 
 ![output-files](images/output-files.png)
 
@@ -84,7 +84,7 @@ N> If you are using Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Ess
 
 ## Import previously changed settings into the theme studio
 
-When you want to change your application theme and UI design in the future, you won’t need to customize the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls from scratch in the theme studio. Just import the old `settings.json` file to review and update your stored settings in the theme studio application.
+When you want to change your application theme and UI design in the future, you won’t need to customize the ASP.NET Core controls from scratch in the theme studio. Just import the old `settings.json` file to review and update your stored settings in the theme studio application.
 
 **Step 1:** Click the Import icon in the top right corner.
 
@@ -106,7 +106,7 @@ When you want to change your application theme and UI design in the future, you 
 
 ## Common Variables
 
-The following list of common variables is used in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core library themes for all UI controls. You can change these variables to customize the corresponding theme.
+The following list of common variables is used in the ASP.NET Core library themes for all UI controls. You can change these variables to customize the corresponding theme.
 
 ### Bootstrap 5 Theme
 

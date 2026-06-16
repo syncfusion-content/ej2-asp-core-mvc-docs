@@ -10,7 +10,7 @@ documentation: ug
 
 # Types and Appearance
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Smart Paste Button control inherits all properties, types, and styling options of the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Button control. This allows users to utilize the existing features and flexibility of the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Button while taking advantage of the enhanced Smart Paste Button functionality.
+The ASP.NET Core Smart Paste Button control inherits all properties, types, and styling options of the ASP.NET Core Button control. This allows users to utilize the existing features and flexibility of the ASP.NET Core Button while taking advantage of the enhanced Smart Paste Button functionality.
 
 - [Types and Styles](https://ej2.syncfusion.com/aspnetcore/documentation/button/types-and-styles)
 - [Style and Appearance](https://ej2.syncfusion.com/aspnetcore/documentation/button/style-and-appearance)

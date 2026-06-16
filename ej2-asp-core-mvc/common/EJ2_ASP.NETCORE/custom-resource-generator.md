@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom Resource Generator for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core
+# Custom Resource Generator for ASP.NET Core
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) web tool for ASP.NET Core controls from v18.1.0.42.
 
@@ -18,7 +18,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate 
 
 Search and select the required Syncfusion<sup style="font-size:70%">&reg;</sup> controls from the CRG to generate specific set of control resources.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls can be categorized based on the below characteristics.
+The ASP.NET Core UI controls can be categorized based on the below characteristics.
 
 * Injectable module supported controls
 * Injectable module non-supported controls
@@ -70,7 +70,7 @@ N> You can use theme files in the **customized** folder if you don't want google
 
 ## Import previously generated settings into the CRG
 
-To add more controls or upgrade the latest Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
+To add more controls or upgrade the latest ASP.NET Core library resources, it is not necessary to generate it from the scratch in the CRG. Just import the old **import.json** file and make the changes, then download it again from the CRG application.
 
 Refer to the following steps to import previous **import.json** file in the CRG.
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in ASP .NET Core EJ2 application
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core packages refer from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion<sup style="font-size:70%">&reg;</sup> installer. The generated license key is a string that needs to be registered before any Syncfusion<sup style="font-size:70%">&reg;</sup> control is initiated. The following code is used to register the license.
+Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered, if your project using ASP.NET Core packages refer from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion<sup style="font-size:70%">&reg;</sup> installer. The generated license key is a string that needs to be registered before any Syncfusion<sup style="font-size:70%">&reg;</sup> control is initiated. The following code is used to register the license.
 
 {% tabs %}
 {% highlight c# tabtitle="C#" %}

@@ -10,11 +10,11 @@ documentation: ug
 
 # Syncfusion<sup style="font-size:70%">&reg;</sup> Project Conversion
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web application by adding the required assemblies and resource files.
+ASP.NET Core conversion is a Visual Studio add-in that converts an existing ASP.NET Core application into a ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web application by adding the required assemblies and resource files.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Conversion, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Conversion will not be shown.
+> The ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project conversion utility is available from v16.3.0.17. Before use, the ASP.NET Core Project Conversion, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Conversion will not be shown.
 
-The steps below help you to convert the ASP.NET Core application to the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application via the Visual Studio:
+The steps below help you to convert the ASP.NET Core application to the ASP.NET Core application via the Visual Studio:
 
 1. Open an existing Microsoft ASP.NET Core Web Application or create a new Microsoft ASP.NET Core Web Application.
 
@@ -22,17 +22,17 @@ The steps below help you to convert the ASP.NET Core application to the Syncfusi
 
     **Option 1:**
 
-    Click **Extensions > Syncfusion<sup style="font-size:70%">&reg;</sup>** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core > Convert to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Application…** in **Visual Studio Menu**.
+    Click **Extensions > Syncfusion<sup style="font-size:70%">&reg;</sup>** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core > Convert to ASP.NET Core Application…** in **Visual Studio Menu**.
 
     ![convert project](images/convert-new-app.png)
 
     **Option 2:**
 
-    Right-click the **Project** from Solution Explorer, select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**, and choose the **Convert to Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Application…**
+    Right-click the **Project** from Solution Explorer, select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**, and choose the **Convert to ASP.NET Core Application…**
 
     ![convert to syncfusion](images/convert-to-syncfusion-ASpnet-core.png)
 
-3. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Conversion window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core, Assets from, and Themes to convert the application.
+3. The ASP.NET Core Project Conversion window will appear. You can choose the required version of ASP.NET Core, Assets from, and Themes to convert the application.
 
     ![project conversion wizard](images/project-conversion-wizard.png)
 

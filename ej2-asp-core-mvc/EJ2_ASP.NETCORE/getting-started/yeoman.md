@@ -93,7 +93,7 @@ N> Refer to [here](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-ad
 {% endhighlight %}
 {% endtabs %}
 
-3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+3.Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for ASP.NET Core controls. Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -135,7 +135,7 @@ N> Refer to [here](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-ad
 {% endhighlight %}
 {% endtabs %}
 
-5.Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control in any web page (`cshtml`) in the `Pages` folder.
+5.Add the ASP.NET Core control in any web page (`cshtml`) in the `Pages` folder.
 
 For example, the calendar component is added to the `~/Pages/Index.cshtml` page.
 

@@ -10,13 +10,13 @@ domainurl: ##DomainURL##
 
 # Syncfusion® ASP.NET Core Agent Skills for AI Assistants
 
-This guide introduces **Syncfusion ASP.NET Core Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core code using official APIs, patterns, and theming guidelines.
+This guide introduces **Syncfusion ASP.NET Core Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate ASP.NET Core code using official APIs, patterns, and theming guidelines.
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Skills eliminate common issues with generic AI suggestions by grounding the assistant in accurate Syncfusion<sup style="font-size:70%">&reg;</sup> component usage patterns, API structures, supported features, and project‑specific configuration.
 
 ## Prerequisites
 
-Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Agent Skills, ensure the following:
+Before installing ASP.NET Core Agent Skills, ensure the following:
 
 - Required [Node.js](https://nodejs.org/en/) version >= 16
 - ASP.NET Core application (existing or new); see [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
@@ -24,7 +24,7 @@ Before installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core 
 
 ## Installation
 
-Install [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components skills](https://github.com/syncfusion/aspnetcore-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://skills.sh/syncfusion/).
+Install [ASP.NET Core components skills](https://github.com/syncfusion/aspnetcore-ui-components-skills.git) using the Skills CLI. Users can also explore available skills from the [marketplace](https://skills.sh/syncfusion/).
 
 ### Install all skills
 
@@ -115,7 +115,7 @@ To learn more about the Skills CLI, refer [here](https://skills.sh/docs).
 
 ## How Syncfusion<sup style="font-size:70%">&reg;</sup> Agent Skills Work
 
-1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from the installed Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
+1. **Reads relevant Skill files based on queries**, retrieving component usage patterns, APIs, and best‑practice guidance from the installed ASP.NET Core Skills. The assistant initially loads only skill names and descriptions, then dynamically loads the required skill and reference files as needed to provide accurate Syncfusion guidance.
 2. **Enforces Syncfusion<sup style="font-size:70%">&reg;</sup> best practices**, including:
    - Registering applicable component dependencies in `Program.cs`.
    - Adding the correct theme and script imports.

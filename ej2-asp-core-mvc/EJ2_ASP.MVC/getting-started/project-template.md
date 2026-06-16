@@ -41,7 +41,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![aspnetmvc5 syncfusion project template](images/aspnetmvc5-project-template.png)
 
-4. Choose the options to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) application by using the following Project Configuration dialog.
+4. Choose the options to configure the ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) application by using the following Project Configuration dialog.
 
     **Target MVC Version:** Select the version of ASP.NET MVC project as MVC5.
 
@@ -101,7 +101,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
     ![aspnetmvc4 syncfusion project template](images/aspnetmvc4-project-template.png)
 
-3. Choose the options to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) application by using the following Project Configuration dialog.
+3. Choose the options to configure the ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) application by using the following Project Configuration dialog.
 
     **Target MVC Version:** Select the version of ASP.NET MVC Project as MVC4.
 

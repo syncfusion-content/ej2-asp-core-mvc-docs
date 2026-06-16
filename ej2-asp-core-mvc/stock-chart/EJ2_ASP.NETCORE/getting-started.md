@@ -22,7 +22,7 @@ You can create an ASP.NET Core application using either of the following options
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+* [Create a Project using ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 {% tabcontents %}
 
@@ -93,7 +93,7 @@ code -r SyncfusionApp
 
 ## Install ASP.NET Core Package in the Application
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart control, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+To integrate the ASP.NET Core Stock Chart control, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Navigate to the directory containing the **.csproj** file.
 2. Run the following commands to install the package:
@@ -110,9 +110,9 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 
 {% endtabcontents %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+## Add the ASP.NET Core Tag Helper
 
 Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` Tag Helper.
 
@@ -142,7 +142,7 @@ Add the stylesheet and script references inside the `<head>` element of the `~/P
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to the [Themes](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) topic to learn different ways, such as [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), to refer to styles in an ASP.NET Core application and achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Refer to the [Themes](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) topic to learn different ways, such as [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator), to refer to styles in an ASP.NET Core application and achieve the expected appearance for ASP.NET Core controls.
 
 N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
@@ -164,7 +164,7 @@ Register the script manager `<ejs-scripts>` at the end of the `<body>` element i
 
 ## Add the ASP.NET Core Stock Chart Control
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart tag helper to the `~/Pages/Index.cshtml` page.
+Add the ASP.NET Core Stock Chart tag helper to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -187,7 +187,7 @@ dotnet run
 {% endhighlight %}
 {% endtabs %}
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Stock Chart control will be rendered in the default web browser.
+The ASP.NET Core Stock Chart control will be rendered in the default web browser.
 
 ![ASP.NET Core Stock Chart Control](images/stockchart-control.png)
 

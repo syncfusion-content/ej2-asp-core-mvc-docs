@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2  Web Installer
+# Installing ASP.NET Core EJ2  Web Installer
 
 
 ## Overview
@@ -25,7 +25,7 @@ The steps below shows how to install Essential Studio<sup style="font-size:70%">
 
     N> The installer wizard extracts the syncfusionessentialaspnetcore-js2webinstaller_{version}.exe dialog, which displays the package's unzip operation.
 
-2. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+2. The ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Web Installer welcome wizard](images/Webinstaller-Installation-2.png)
 
@@ -101,15 +101,15 @@ The steps below shows how to install Essential Studio<sup style="font-size:70%">
 
 ## Uninstallation
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer can be uninstalled in two ways.
+ASP.NET Core - EJ2 installer can be uninstalled in two ways.
 
-* Uninstall the ASP.NET Core - EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 web installer.
+* Uninstall the ASP.NET Core - EJ2 using the ASP.NET Core - EJ2 web installer.
 
 * Uninstall the ASP.NET Core - EJ2 from Windows Control Panel.
 
 Follow either one of the option below to uninstall Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
 
-### Option 1: Uninstall the ASP.NET Core - EJ2 using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 web installer
+### Option 1: Uninstall the ASP.NET Core - EJ2 using the ASP.NET Core - EJ2 web installer
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and Web Installer will uninstall them one by one.
 
@@ -124,7 +124,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
 N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for** ASP.NET Core **{version}** entry is selected from the Windows control panel, the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 alone will be removed and the below default MSI uninstallation window will be displayed.
 
-1. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
+1. The ASP.NET Core - EJ2 Web Installer's welcome wizard will be displayed. Click the Next button.
 
     ![Web Installer welcome wizard](images/Webinstaller-uninstallation-2.png)
 

@@ -10,21 +10,21 @@ documentation: ug
 
 # Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 components to latest version
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 migration add-in for Visual Studio allows to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core web application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
+The ASP.NET Core JS2 migration add-in for Visual Studio allows to migrate an existing ASP.NET Core web application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
-The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web application via Visual Studio 2019:
+The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the ASP.NET Core Web application via Visual Studio 2019:
 
-N> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web application Migration, check whether the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 Extension is installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
+N> Before using the ASP.NET Core Web application Migration, check whether the ASP.NET Core JS2 Extension is installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension is not installed, install the extension by following the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
 
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web application that uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
+1. Open the ASP.NET Core Web application that uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
 
-2. Open the Migration Wizard, by right-clicking the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Application** from Solution Explorer and select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**. Choose **Migrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project to Another Version…**
+2. Open the Migration Wizard, by right-clicking the **ASP.NET Core Application** from Solution Explorer and select **Syncfusion<sup style="font-size:70%">&reg;</sup> Web**. Choose **Migrate the ASP.NET Core Project to Another Version…**
 
     ![MigrationAddin](images/MigrationAddin.png)
 
-3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core to migrate.
+3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of ASP.NET Core to migrate.
 
-    N> The versions are loaded from the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion) and it requires internet connectivity.
+    N> The versions are loaded from the ASP.NET Core NuGet packages published in [`NuGet.org`](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Core%20EJ2%22+syncfusion) and it requires internet connectivity.
 
     ![MigrationWizard](images/Migration.png)
 

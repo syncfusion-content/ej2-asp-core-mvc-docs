@@ -10,9 +10,9 @@ documentation: ug
 
 # Version Compatibility of ASP.NET Core Controls
 
-The following table represents the supported .NET and .NET Core versions by different Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls releases.
+The following table represents the supported .NET and .NET Core versions by different ASP.NET Core controls releases.
 
-| Version | Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls Version |
+| Version | ASP.NET Core Controls Version |
 | ------------- | ------------- |
 | [.NET 10.0](https://dotnet.microsoft.com/en-us/download/dotnet/10.0) | 31.2.10 and above |
 | [.NET 9.0](https://dotnet.microsoft.com/en-us/download/dotnet/9.0) | 27.2.2 and above |
@@ -33,7 +33,7 @@ The following table represents the supported .NET and .NET Core versions by diff
 
 ## Syncfusion<sup style="font-size:70%">&reg;</sup> Version Information
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
+Syncfusion<sup style="font-size:70%">&reg;</sup> follows a quarterly release schedule, introducing new volumes every three months. To track these releases and their associated changes, ASP.NET Core components utilize a sequence-based identifier system, employing the format **Major.Minor.Revision**. This system enables developers to easily monitor modifications made in each release.
 
 For example, if the release package version is `23.1.36`, the version number can be interpreted as follows:
 

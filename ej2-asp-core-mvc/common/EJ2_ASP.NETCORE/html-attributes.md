@@ -10,11 +10,11 @@ documentation: ug
 
 # Default HTML Attributes and DOM Events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
+The ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
 
 ## Using HTML Attributes and DOM Events in the Input Element
 
-The following is a list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and DOM events directly to the input element used on these Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
+The following is a list of ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and DOM events directly to the input element used on these ASP.NET Core Controls.
 
 * [AutoComplete](../autocomplete/getting-started/)
 * [CheckBox](../check-box/getting-started/)
@@ -260,7 +260,7 @@ The textbox will be rendered with the following output.
 
 ## Input DOM Events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI control supports binding the native DOM events on the input element.
+The ASP.NET Core UI control supports binding the native DOM events on the input element.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

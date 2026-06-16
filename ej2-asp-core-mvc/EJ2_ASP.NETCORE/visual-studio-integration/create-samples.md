@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Creating Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application
+# Creating ASP.NET Core application
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Sample Creator is a tool that lets you make Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) projects with sample code for required Syncfusion<sup style="font-size:70%">&reg;</sup> component features and Syncfusion<sup style="font-size:70%">&reg;</sup> control configuration.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Sample Creator is a tool that lets you make ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) projects with sample code for required Syncfusion<sup style="font-size:70%">&reg;</sup> component features and Syncfusion<sup style="font-size:70%">&reg;</sup> control configuration.
 
-> The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Sample Creator utility is available from v16.3.0.17.
+> The ASP.NET Core Sample Creator utility is available from v16.3.0.17.
 
-The following steps is used to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application by using the Sample Creator utility:
+The following steps is used to create the ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application by using the Sample Creator utility:
 
 1. Follow one of the options below to launch the ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Sample Creator application:
 
@@ -26,7 +26,7 @@ The following steps is used to create the Syncfusion<sup style="font-size:70%">&
 
     **Option 2:**
 
-    Launch the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Control Panel and click the Sample Creator button to launch the ASP.NET Core Sample Creator utility. For further information, see the screenshot below.
+    Launch the ASP.NET Core Control Panel and click the Sample Creator button to launch the ASP.NET Core Sample Creator utility. For further information, see the screenshot below.
 
     ![control-panel](images/sample-creator-control-panel.png)
 
@@ -56,7 +56,7 @@ The following steps is used to create the Syncfusion<sup style="font-size:70%">&
 
     > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
 
-    **Name**: Name your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application.
+    **Name**: Name your ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application.
 
     **Location**: Choose the target location of your project.
 
@@ -68,13 +68,13 @@ The following steps is used to create the Syncfusion<sup style="font-size:70%">&
 
     ![create](images/create-button.png)
 
-3. The new Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project is created with the resources.
+3. The new ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project is created with the resources.
 
     * Added the required Controllers and View files in the project.
 
     ![controllers](images/required-controllers.png)
 
-    * Included the required Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) scripts and theme files.
+    * Included the required ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) scripts and theme files.
 
     ![scripts and css](images/scripts-css.png)
 

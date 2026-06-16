@@ -16,7 +16,7 @@ The [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/as
 
 ### Key Benefits
 
-* Intelligent code generation for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+* Intelligent code generation for ASP.NET Core controls.
 * Detailed documentation and usage examples.
 * Troubleshooting assistance for common integration challenges.
 

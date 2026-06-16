@@ -77,4 +77,4 @@ The accessibility compliance of the Speed Dial control is shown in the following
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls](../common/accessibility)
+* [Accessibility in ASP.NET Core controls](../common/accessibility)
