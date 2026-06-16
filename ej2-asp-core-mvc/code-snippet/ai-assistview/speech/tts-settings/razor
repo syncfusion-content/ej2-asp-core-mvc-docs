@@ -1,15 +1,24 @@
-@model IndexModel
 @using Syncfusion.EJ2.InteractiveChat
 
 <div class="integration-texttospeech-section">
-    <ejs-aiassistview id="aiAssistView" bannerTemplate="#bannerContent"
-                      promptRequest="onPromptRequest"
-                      stopRespondingClick="stopRespondingClick"
-                      created="onCreated">
-        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
-        <e-aiassistview-responsetoolbarsettings items="@Model.ViewModel.ResponseItems" ></e-aiassistview-responsetoolbarsettings>
-    </ejs-aiassistview>
+    @Html.EJS().AIAssistView("aiAssistView").BannerTemplate("#bannerContent").StopRespondingClick("stopRespondingClick").PromptRequest("onPromptRequest").Created("onCreated").ToolbarSettings(new AIAssistViewToolbarSettings()
+    {
+        Items = ViewBag.Items,
+        ItemClicked = "toolbarItemClicked"
+    }).ResponseToolbarSettings(new AIAssistViewResponseToolbarSettings()
+    {
+        Items = ViewBag.ResponseItems
+    }).TextToSpeechSettings(new AIAssistViewTextToSpeechSettings()
+    {
+        Language = "en-US",
+        SpeechPitch = 1,
+        SpeechRate = 1,
+        Volume = 1
+    }).Render()
 </div>
+
+<!-- Add antiforgery token for POST requests -->
+@Html.AntiForgeryToken()
 
 <script id="bannerContent" type="text/x-jsrender">
     <div class="banner-content">
@@ -19,6 +28,7 @@
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/marked@latest/marked.min.js"></script>
+
 <script>
     var assistObj = null;
     var stopStreaming = false;
@@ -65,7 +75,7 @@
             return;
         }
 
-        fetch('/?handler=GetAIResponse', {
+        fetch('/Home/GetAIResponse', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

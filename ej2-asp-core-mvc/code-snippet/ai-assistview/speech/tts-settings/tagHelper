@@ -8,6 +8,11 @@
                       created="onCreated">
         <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
         <e-aiassistview-responsetoolbarsettings items="@Model.ViewModel.ResponseItems" ></e-aiassistview-responsetoolbarsettings>
+        <e-aiassistview-texttospeechsettings language="en-US"
+                                             speechPitch="1"
+                                             speechRate="1"
+                                             volume="1">
+        </e-aiassistview-texttospeechsettings>
     </ejs-aiassistview>
 </div>
 
