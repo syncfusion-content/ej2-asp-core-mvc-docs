@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility in ASP.NET Core Chart component
 
-The Chart component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The [ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts) component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Chart component is outlined below.
 
@@ -85,4 +85,4 @@ The accessibility compliance of the Chart component is shown in the following sa
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in ASP.NET Core components](../common/accessibility)
