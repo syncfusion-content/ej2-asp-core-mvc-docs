@@ -11,7 +11,7 @@ documentation: ug
 
 # Scheduler dimensions
 
-The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
+The [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 
 * auto
 * pixel

@@ -11,7 +11,7 @@ documentation: ug
 
 # Header customization
 
-The header part of Scheduler can be customized easily with the built-in options available.
+The header part of [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) can be customized easily with the built-in options available.
 
 ## Show or Hide header bar
 

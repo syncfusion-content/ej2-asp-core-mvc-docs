@@ -11,7 +11,7 @@ documentation: ug
 
 # Styling and appearance
 
-To modify the Scheduler appearance, you need to override the default CSS of Scheduler. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Scheduler.
+To modify the [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) appearance, you need to override the default CSS of Scheduler. Also, you have an option to create your own custom theme using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material). Find the list of CSS classes in Scheduler.
 
 | Css class | Purpose |
 |-------|---------|

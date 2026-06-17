@@ -11,7 +11,7 @@ documentation: ug
 
 # Calendar mode
 
-The Scheduler supports the following two types of calendar mode.
+The [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) supports the following two types of calendar mode.
 
 * Gregorian Calendar
 * Islamic Calendar

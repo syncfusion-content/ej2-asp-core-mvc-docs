@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Schedule Component
 
-The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
+The [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
 
 The Scheduler makes use of the most required ARIA attributes such as `aria-label` and `role` to support the accessibility in it. To be more accurate, it must be used with an ARIA compliant browser along with the screen reader running from backend.
 
@@ -93,6 +93,6 @@ The accessibility compliance of the Scheduler component is shown in the followin
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+- [Accessibility in ASP.NET Core components](../common/accessibility)
 
 
