@@ -11,7 +11,7 @@ documentation: ug
 
 # Shapes in Diagram Control
 
-Diagram provides support to add different kind of nodes. They are as follows:
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) provides support to add different kind of nodes. They are as follows:
 
 * Text node
 * Image node

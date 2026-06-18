@@ -18,7 +18,7 @@ Microsoft Visio is a diagramming application used to create visual representatio
 
 ## Why use Visio with the Diagram?
 
-Many organizations maintain existing diagrams created using Microsoft Visio. Recreating these diagrams in a web application can require significant effort. The Diagram component provides Visio integration to support the following scenarios:
+Many organizations maintain existing diagrams created using Microsoft Visio. Recreating these diagrams in a web application can require significant effort. The [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) component provides Visio integration to support the following scenarios:
 
 - Reuse existing Visio diagrams in web applications.  
 - Visualize and edit Visio diagrams using the Diagram component.  

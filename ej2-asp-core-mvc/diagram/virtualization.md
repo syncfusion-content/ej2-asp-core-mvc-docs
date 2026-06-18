@@ -13,7 +13,7 @@ documentation: ug
 
 ## Virtualization in Diagram
 
-Virtualization is the process of loading the diagramming objects available in the visible area of the Diagram control, that is, only the diagramming objects that lie within the ViewPort of the Scroll Viewer are loaded (remaining objects are loaded only when they come into view).
+Virtualization is the process of loading the diagramming objects available in the visible area of the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control, that is, only the diagramming objects that lie within the ViewPort of the Scroll Viewer are loaded (remaining objects are loaded only when they come into view).
 
 This feature gives an optimized performance while loading and dragging items to the Diagram that consists of many Nodes and Connectors.
 

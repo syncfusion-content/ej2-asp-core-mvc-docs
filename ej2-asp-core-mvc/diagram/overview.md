@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview Control in ##Platform_Name## Diagram Component
 
-Overview control allows to see a preview or an overall view of the entire content of a diagram. This helps you to look at the overall picture of a large diagram and also to navigate, pan, or zoom, on a particular position of the page.
+Overview control allows to see a preview or an overall view of the entire content of a [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram). This helps you to look at the overall picture of a large diagram and also to navigate, pan, or zoom, on a particular position of the page.
 
 When you work on a very large diagram, you may not know the part you are actually working on, or navigation from one part to another might be difficult. One solution for navigation is to zoom out the entire diagram and find where you are. Then, you can zoom in a particular area you want to. This solution is not suitable when you need some frequent navigation.
 

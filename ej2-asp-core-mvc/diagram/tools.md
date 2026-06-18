@@ -13,7 +13,7 @@ documentation: ug
 
 ## Drawing tools
 
-Drawing tool allows to draw any kind of node or connector during runtime by clicking and dragging on the diagram page.
+Drawing tool allows to draw any kind of node or connector during runtime by clicking and dragging on the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) page.
 
 ## Shapes
 

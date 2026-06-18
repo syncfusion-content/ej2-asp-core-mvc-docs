@@ -11,7 +11,7 @@ documentation: ug
 
 # Page Settings in ##Platform_Name## Diagram Component
 
-Page settings can customize the appearance, width, and height of the diagram page.
+Page settings can customize the appearance, width, and height of the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) page.
 
 ## Page size and appearance
 
