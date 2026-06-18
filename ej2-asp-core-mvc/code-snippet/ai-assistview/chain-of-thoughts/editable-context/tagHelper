@@ -14,16 +14,18 @@
 </div>
 
 <script>
-    var assistObj;
+
+    var thinkingAIAssistView;
 
     function onCreated() {
-        assistObj = this;
+        var assistEle = document.getElementById('aiAssistView');
+        thinkingAIAssistView = ej.base.getInstance(assistEle, ejs.interactivechat.AIAssistView);
     }
 
     function onPromptRequest(args) {
         // Step 1
         setTimeout(() => {
-            assistObj.addPromptResponse({
+            thinkingAIAssistView.addPromptResponse({
                 blocks: [
                     {
                         blockType: 'thinking',
@@ -40,7 +42,7 @@
 
             // Step 2
             setTimeout(() => {
-                assistObj.addPromptResponse({
+                thinkingAIAssistView.addPromptResponse({
                     blocks: [
                         {
                             blockType: 'thinking',
@@ -77,7 +79,7 @@
 
                 // Step 3
                 setTimeout(() => {
-                    assistObj.addPromptResponse({
+                    thinkingAIAssistView.addPromptResponse({
                         blocks: [
                             {
                                 blockType: 'thinking',
@@ -132,7 +134,7 @@
 
                     // Step 4 (FINAL RESPONSE)
                     setTimeout(() => {
-                        assistObj.addPromptResponse({
+                        thinkingAIAssistView.addPromptResponse({
                             blocks: [
                                 {
                                     blockType: 'thinking',

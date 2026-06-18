@@ -32,11 +32,13 @@
 </div>
 
 <script>
-    var assistObj;
     var promptsData = @Html.Raw(promptsJson);
 
+    var thinkingAIAssistView;
+
     function onCreated() {
-        assistObj = this;
+        var assistEle = document.getElementById('aiAssistView');
+        thinkingAIAssistView = ej.base.getInstance(assistEle, ejs.interactivechat.AIAssistView);
     }
 
     function blockTemplate(data) {
@@ -55,7 +57,7 @@
 
     function onPromptRequest(args) {
         setTimeout(() => {
-            assistObj.addPromptResponse({
+            thinkingAIAssistView.addPromptResponse({
                 blocks: [],
                 response: 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.'
             }, true);
