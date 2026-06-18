@@ -1,0 +1,61 @@
+@using Syncfusion.EJ2.InteractiveChat
+@using System.Text.Json
+
+@{
+    var prompts = new[]
+    {
+        new {
+            prompt = "Explain photosynthesis.",
+            response = "Photosynthesis converts sunlight into chemical energy stored in glucose.",
+            blocks = new[]
+            {
+                new {
+                    blockType = "thinking",
+                    title = "Reasoning steps",
+                    isActive = false,
+                    collapsed = true,
+                    collapsible = true,
+                    stages = new[]
+                    {
+                        new { id = "step1", status = "completed", content = "Recalled definition of photosynthesis." },
+                        new { id = "step2", status = "completed", content = "Identified inputs: sunlight, CO₂, water." },
+                        new { id = "step3", status = "completed", content = "Identified outputs: glucose, oxygen." }
+                    }
+                }
+            }
+        }
+    };
+
+    var promptsJson = JsonSerializer.Serialize(prompts);
+}
+
+<div class="aiassist-container" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView" prompts="@prompts" itemTemplate="stageItemTemplate" promptRequest="onPromptRequest" created="onCreated"></ejs-aiassistview>
+</div>
+
+<script>
+    var assistObj;
+    var promptsData = @Html.Raw(promptsJson);
+
+    function onCreated() {
+        assistObj = this;
+    }
+
+    function stageItemTemplate(data) {
+        var item = data.item;
+        var statusClass = item.isStageInProgress ? 'e-stage-inprogress' : 'e-stage-done';
+        return '<div class="custom-stage-item ' + statusClass + '">' +
+                   '<span class="e-icons ' + item.dotCss + '"></span>' +
+                   '<div class="custom-stage-content">' + item.content + '</div>' +
+               '</div>';
+    }
+
+    function onPromptRequest(args) {
+        setTimeout(() => {
+            assistObj.addPromptResponse({
+                blocks: [],
+                response: 'For real-time prompt processing, connect the AIAssistView component to your preferred AI service, such as OpenAI or Azure Cognitive Services. Ensure you obtain the necessary API credentials to authenticate and enable seamless integration.'
+            }, true);
+        }, 1000);
+    }
+</script>
