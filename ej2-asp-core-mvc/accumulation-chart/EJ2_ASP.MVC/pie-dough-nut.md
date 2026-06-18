@@ -156,6 +156,33 @@ To achieve a doughnut in pie series, customize the [`InnerRadius`](https://help.
 
 
 
+## Multiple Pie Series
+
+You can create multiple donuts within a single chart by adding multiple series with different [`InnerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius) and [`Radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`MappingKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationLegendSettings_MappingKey) property in `LegendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `MappingKey` values are grouped into a single legend item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleSeriesPie.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/multiple-series.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleSeriesPie.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/multiple-series.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
 ## Start and End angles
 
 You can customize the start and end angle of the pie series using the [`StartAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_EndAngle) properties. The default value of `StartAngle` is 0 degree, and `EndAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
