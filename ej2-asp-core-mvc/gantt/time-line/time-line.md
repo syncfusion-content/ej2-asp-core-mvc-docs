@@ -53,7 +53,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 
 
-![Alt text](images/weekMode.png)
+![Alt text](../images/weekMode.png)
 
 ### Month timeline mode
 
@@ -84,7 +84,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 
 
-![Alt text](images/monthMode.png)
+![Alt text](../images/monthMode.png)
 
 ### Year timeline mode
 
@@ -115,7 +115,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 
 
-![Alt text](images/yearMode.png)
+![Alt text](../images/yearMode.png)
 
 ### Day timeline mode
 
@@ -146,7 +146,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 
 
-![Alt text](images/dayMode.png)
+![Alt text](../images/dayMode.png)
 
 ### Hour timeline mode
 
@@ -177,7 +177,7 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 
 
-![Alt text](images/hourMode.png)
+![Alt text](../images/hourMode.png)
 
 ## Timeline view dates
 
@@ -249,7 +249,7 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 
 
-![Alt text](images/timelinecellTooltip.png)
+![Alt text](../images/timelinecellTooltip.png)
 
 ## Show/hide weekends
 
