@@ -633,7 +633,7 @@ You can add the theme for the ASP.NET Core applications through **npm packages**
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
 
-npm install @syncfusion/ej2
+npm install @syncfusion/ej2-fluent2-theme
 
 {% endhighlight %}
 {% endtabs %}
@@ -643,8 +643,8 @@ npm install @syncfusion/ej2
 {% tabs %}
 {% highlight c# tabtitle="~/custom.scss" %}
 
-  $primary: blue !default;
-@import 'ej2/fabric.scss';
+@use 'ej2-fluent2-theme/styles/calendar/fluent2-definition' with ($calendar-focused-today-bg-style: red);
+@use 'ej2-fluent2-theme/styles/calendar/calendar.scss';
 
 {% endhighlight %}
 {% endtabs %}
@@ -664,7 +664,7 @@ npm install @syncfusion/ej2
     "inputFile": "wwwroot/css/custom.scss",
     "useNodeSass": true,
     "options": {
-      "includePath": "node_modules/@syncfusion"
+        "loadPaths": "node_modules/@syncfusion"
     }
   }
 ]
@@ -689,6 +689,38 @@ npm install @syncfusion/ej2
 * Run the application and see the fabric themes from installed npm packages were applied.
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-css-customization-using-webcompiler-)
+
+### General Theme Import Guidelines
+
+* To use the overall Fluent2 CSS theme, import the fluent2.scss file in the custom SCSS file as shown below.
+
+{% tabs %}
+{% highlight c# tabtitle="~/custom.scss" %}
+
+@use 'ej2-fluent2-theme/styles/fluent2.scss' as *;
+
+{% endhighlight %}
+{% endtabs %}
+
+* Themes can be changed using SCSS file import with the following general guideline:
+
+{% tabs %}
+{% highlight c# tabtitle="General Format" %}
+
+@use 'ej2-{themename}-theme/styles/{themename}.scss' as *;
+
+{% endhighlight %}
+{% endtabs %}
+
+* For specific component styling, use the following format:
+
+{% tabs %}
+{% highlight c# tabtitle="Component Specific Import" %}
+
+@use 'ej2-{themename}-theme/styles/{componentname}/{componentname}.scss' as *;
+
+{% endhighlight %}
+{% endtabs %}
 
 ## LibMan
 
