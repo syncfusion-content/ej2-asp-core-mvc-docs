@@ -1,0 +1,18 @@
+@model List<WebApplication2.Controllers.GanttDataSource>
+@{
+	ViewBag.Title = "Home Page";
+}
+
+
+@using Syncfusion.EJ2.Gantt
+
+@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)Model).Height("430px").EnableInfiniteTimelineScroll(true).TreeColumnIndex(1).GridLines(Syncfusion.EJ2.Gantt.GridLine.Both).TaskFields(ts =>
+	ts.Id("TaskID").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").ParentID("ParentID")).SplitterSettings(ss
+	=> ss.ColumnIndex(3)).TimelineSettings(tl =>
+	tl.ViewStartDate("2025-12-29").ViewEndDate("2026-04-27")).LabelSettings(ls =>
+	ls.LeftLabel("TaskID").RightLabel("TaskName")).Columns(col =>
+	{
+		col.Field("TaskID").Width(80).Add();
+		col.Field("TaskName").HeaderText("Job Name").Width(250).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add(); col.Field("StartDate").Add();
+		col.Field("Duration").Add(); col.Field("Progress").Add(); col.Field("Predecessor").Add();
+	}).Render()
