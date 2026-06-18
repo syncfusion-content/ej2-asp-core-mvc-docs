@@ -183,6 +183,7 @@ You can create multiple donuts within a single chart by adding multiple series w
 {% endtabs %}
 {% endif %}
 
+
 ## Start and End angles
 
 You can customize the start and end angle of the pie series using the [`StartAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_StartAngle) and [`EndAngle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_EndAngle) properties. The default value of `StartAngle` is 0 degree, and `EndAngle` is 360 degrees. By customizing this, you can achieve a semi pie series.
