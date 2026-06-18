@@ -11,7 +11,7 @@ documentation: ug
 
 # Holidays
 
-Non-working days in a project can be displayed in the Gantt control using the [`Holidays`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Holidays) property. Each holiday can be defined with the following properties:
+Non-working days in a project can be displayed in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control using the [`Holidays`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_Holidays) property. Each holiday can be defined with the following properties:
 
 * [`From`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_From): Defines start date of the holiday(s).
 * [`To`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.GanttHoliday.html#Syncfusion_EJ2_Gantt_GanttHoliday_To): Defines end date of the holiday(s).

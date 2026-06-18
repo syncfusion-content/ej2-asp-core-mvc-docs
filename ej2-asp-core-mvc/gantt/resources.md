@@ -11,7 +11,7 @@ documentation: ug
 
 # Resources in Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Component
 
-In Gantt, the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
+In [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart), the resources are represented by staff, equipment and materials etc. In Gantt control you can show or allocate the resources (human resources) for each task.
 
 ## Resource collection
 

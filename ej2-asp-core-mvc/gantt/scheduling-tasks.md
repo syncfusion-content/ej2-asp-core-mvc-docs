@@ -13,7 +13,7 @@ documentation: ug
 
 ## Duration units
 
-In Gantt, the tasks’ duration value can be measured by the following duration units,
+In [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart), the tasks’ duration value can be measured by the following duration units,
 
 * Day
 * Hour

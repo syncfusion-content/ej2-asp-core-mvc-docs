@@ -10,7 +10,7 @@ documentation: ug
 
 # Performance tips for ##Platform_Name## Gantt control
 
-This article is a comprehensive guide on improving the loading performance of the Gantt component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
+This article is a comprehensive guide on improving the loading performance of the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) component, especially when dealing with large datasets and a significant number of columns. It provides valuable insights into the steps required to bind a large data source without experiencing performance degradation. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Gantt component during data binding, ensuring a smooth and efficient user experience.
 
 ## How to improve loading performance by binding large dataset
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Timezone
 
-The Gantt makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
+The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the `timezone` property needs to be used.
 
 ## Understanding date manipulation in JavaScript
 
