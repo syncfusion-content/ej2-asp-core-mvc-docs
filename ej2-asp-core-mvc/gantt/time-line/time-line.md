@@ -355,3 +355,5 @@ This feature enables exploration of long project schedules without manually upda
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+![Infinite timeline scrolling](../images/infinite-timeline-scrolling.gif)
