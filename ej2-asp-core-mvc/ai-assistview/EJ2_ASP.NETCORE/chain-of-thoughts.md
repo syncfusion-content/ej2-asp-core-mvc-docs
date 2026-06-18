@@ -127,7 +127,7 @@ You can use the `blockTemplate` property, to customize the thinking block render
 {% endhighlight %}
 {% endtabs %}
  
-> When `blockTemplate` is set, the default collapsible header, spinner, and Timeline rendering are completely replaced by your template. Collapse/expand behaviour and spinner lifecycle management must be handled within the template itself.
+> When `blockTemplate` is set, the default collapsible header, spinner, and Timeline rendering are completely replaced by your template. Collapse/expand behavior and spinner lifecycle management must be handled within the template itself.
  
 ## Configure item template
 
