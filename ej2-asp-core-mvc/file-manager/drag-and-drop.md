@@ -11,7 +11,7 @@ documentation: ug
 
 # Drag And Drop
 
-The File Manager allows moving files or folders between directories using the `allowDragAndDrop` property. It also supports uploading a file by dragging it from Windows Explorer to the File Manager control. You can enable or disable this support by using the `allowDragAndDrop` property of File Manager.
+The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) allows moving files or folders between directories using the `allowDragAndDrop` property. It also supports uploading a file by dragging it from Windows Explorer to the File Manager control. You can enable or disable this support by using the `allowDragAndDrop` property of File Manager.
 
 The events triggered in drag and drop support are:
 

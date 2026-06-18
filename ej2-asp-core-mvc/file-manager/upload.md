@@ -10,7 +10,7 @@ documentation: ug
 
 # Upload in File Manager control
 
-The File Manager control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
+The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 
 ## Directory Upload
 

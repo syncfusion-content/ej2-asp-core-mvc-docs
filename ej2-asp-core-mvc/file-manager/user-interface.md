@@ -11,7 +11,7 @@ documentation: ug
 
 # User Interface Structure
 
-The File Manager UI comprises several sections such as view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
+The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) UI comprises several sections such as view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
 
 * [Toolbar](#toolbar) (For direct access to file operations)
 * [Navigation Pane](#navigation-pane) (For easy navigation between folders)

@@ -15,7 +15,7 @@ File Manager's UI virtualization allows for the dynamic loading of a large numbe
 
 ## Enable Virtualization
 
-The virtualization of the File Manager control is based on the height and width of the viewport. The items will be loaded in both `largeIconsView` and `detailsView` based on the viewport size.
+The virtualization of the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control is based on the height and width of the viewport. The items will be loaded in both `largeIconsView` and `detailsView` based on the viewport size.
 
 In order to enable `virtualization`, you must set the `EnableVirtualization` property to true.
 
