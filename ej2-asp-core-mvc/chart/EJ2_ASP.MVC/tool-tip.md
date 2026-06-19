@@ -106,7 +106,7 @@ By default, tooltip shows information of x and y value in points. In addition to
 
 ## Inline tooltip formatting
 
-The tooltip content can be formatted directly within the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Format) property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
+The tooltip content can be formatted directly within the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTooltipSettings.html#Syncfusion_EJ2_Charts_ChartTooltipSettings_Format) property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
 
 A format specifier can be applied to a tooltip token by adding a colon (`:`) followed by the required format.
 

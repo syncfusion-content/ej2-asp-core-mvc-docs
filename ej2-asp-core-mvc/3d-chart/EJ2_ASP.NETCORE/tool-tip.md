@@ -108,11 +108,11 @@ A format specifier can be applied to a tooltip token by adding a colon (`:`) fol
 For example:
 
 ```cshtml
-<e-chart3d-tooltipsettings enable="true" header="Unemployment" format="<b>${series.name}</b><br>${point.x:MMM yyyy} : ${point.y:n2}">
+<e-chart3d-tooltipsettings enable="true" format="<b>${series.name}</b><br>${point.x:MMM yyyy} : ${point.y:n2}">
 </e-chart3d-tooltipsettings>
 ```
 
-In the above example, `point.x` is displayed in month-year format, `point.y` is displayed with two decimal places, and `series.opacity` displays the opacity value applied to the series.
+In the above example, `point.x` is displayed in month-year format, `point.y` is displayed with two decimal places, and `series.name` displays the name assigned to the series.
 
 Inline formatting can be applied to the following tooltip tokens:
 
@@ -142,7 +142,7 @@ If the specified format does not match the resolved value type, the original val
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format-tooltip.cs" %}
+{% highlight c# tabtitle="Tooltip-format.cs" %}
 {% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tooltip-format.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -153,7 +153,7 @@ If the specified format does not match the resolved value type, the original val
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/3d-chart/series/user-interaction/tooltip-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format-tooltip.cs" %}
+{% highlight c# tabtitle="Tooltip-format.cs" %}
 {% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tooltip-format.cs %}
 {% endhighlight %}
 {% endtabs %}

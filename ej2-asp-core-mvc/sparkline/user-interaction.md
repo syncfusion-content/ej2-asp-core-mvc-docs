@@ -111,7 +111,7 @@ If the specified format does not match the resolved value type, the original val
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sparkline/user-interaction/inline-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip-custom.cs" %}
+{% highlight c# tabtitle="Inline-format.cs" %}
 {% include code-snippet/sparkline/user-interaction/inline-format/inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -122,7 +122,7 @@ If the specified format does not match the resolved value type, the original val
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/sparkline/user-interaction/inline-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip-custom.cs" %}
+{% highlight c# tabtitle="Inline-format.cs" %}
 {% include code-snippet/sparkline/user-interaction/inline-format/inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}

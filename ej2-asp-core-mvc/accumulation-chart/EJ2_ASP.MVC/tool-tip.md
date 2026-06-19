@@ -163,7 +163,7 @@ public class PieChartData
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip-format.cs" %}
+{% highlight c# tabtitle="Tooltip-inline-format.cs" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tooltip-inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}

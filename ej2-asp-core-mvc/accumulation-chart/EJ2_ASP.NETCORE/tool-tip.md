@@ -124,7 +124,7 @@ For example:
 </e-accumulationchart-tooltipsettings>
 ```
 
-In the above example, `point.y` is displayed with two decimal places, `point.percentage` is displayed in percentage format, and `series.opacity` displays the opacity value applied to the series.
+In the above example, `point.x` is displayed in month-year format, and `point.y` is displayed with two decimal places.
 
 Inline formatting can be applied to the following tooltip tokens:
 
@@ -176,7 +176,7 @@ public class PieChartData
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip-format.cs" %}
+{% highlight c# tabtitle="Tooltip-inline-format.cs" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tooltip-inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -199,8 +199,8 @@ Any HTML element can be displayed in the tooltip by using the [`Template`](https
 ...
 public class PieChartData
 {
-    public DateTime x;
-    public double y;
+    public string xValue;
+    public double yValue;
 }
 {% endhighlight %}
 {% endtabs %}
