@@ -1,0 +1,25 @@
+
+    @Html.EJS().Chart("container").Series(series =>
+   {
+   series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Column).
+   Marker(ViewBag.Marker).
+   XName("x").
+   YName("yValue").
+   DataSource(ViewBag.dataSource).
+   Name("Gold").
+   Width(2).Add();
+   }).
+   PrimaryXAxis(px => px.Interval(1).ValueType(Syncfusion.EJ2.Charts.ValueType.Category)).
+   Title("Olympic Medal Counts - RIO").
+   Tooltip(tt => tt.Enable(true).
+   header("medal count").
+   template=("#Medal")).Render()
+
+    <script id="Medal" type="text/x-template">
+      <div id='templateWrap'>
+     <table style="width:100%;  border: 1px solid black;">
+     <tr><th colspan="2" bgcolor="#00FFFF">Medal</th></tr>
+     <tr><td bgcolor="#00FFFF">${x}:</td><td bgcolor="#00FFFF">${y}</td></tr>
+    </table>
+    </div>
+  </script>

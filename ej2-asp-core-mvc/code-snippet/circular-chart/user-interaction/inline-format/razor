@@ -1,0 +1,6 @@
+@Html.EJS().CircularChart3D("container").Tilt(-45).Series(series =>
+{
+    series.XName("X").YName("Y").DataSource(ViewBag.dataSource).Add();
+}
+).Tooltip(tt => tt.Enable(true).Format("${point.x} : <b>${point.y}%</b>")
+).LegendSettings(leg => leg.Visible(false)).Render()

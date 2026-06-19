@@ -1,0 +1,19 @@
+@Html.EJS().Sankey("sankey-container")
+    .Width("90%")
+    .Height("450px")
+    .Tooltip(t => t.Enable(true))
+    .LegendSettings(l => l.Visible(true))
+    .TooltipRendering("onSankeyTooltipRendering")
+    .Nodes(ViewBag.SankeyNodes)
+    .Links(ViewBag.SankeyLinks)
+    .Render()
+
+<script>
+    function onSankeyTooltipRendering(args) {
+        if (args.text === 'link') {
+            args.text = `Flow: ${args.link.sourceId} → ${args.link.targetId} (${args.link.value})`;
+        } else if (args.text) {
+            args.text = `Node: ${args.text}`;
+        }
+    }
+</script>
