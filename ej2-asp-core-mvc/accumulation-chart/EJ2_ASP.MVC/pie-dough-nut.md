@@ -156,9 +156,9 @@ To achieve a doughnut in pie series, customize the [`InnerRadius`](https://help.
 
 
 
-## Multiple Pie Series
+## Multiple Doughnut Series
 
-You can create multiple donuts within a single chart by adding multiple series with different [`InnerRadius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius) and [`Radius`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`MappingKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationLegendSettings_MappingKey) property in `LegendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `MappingKey` values are grouped into a single legend item.
+You can create multiple doughnut within a single chart by adding multiple series with different [`InnerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius) and [`Radius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`MappingKey`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationChartLegendSettings_MappingKey) property in `LegendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `MappingKey` values are grouped into a single legend item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
