@@ -1,0 +1,15 @@
+@using Syncfusion.EJ2.Chart
+
+@(Html.EJS().CircularChart3D("container")
+    .Tilt(-45)
+    .LegendSettings(legend => legend.Visible(false))
+    .Tooltip(tooltip => tooltip.Enable(true).Format("${point.x:MMM yyyy} : <b>${point.y:n2}%</b>"))
+    .Series(series =>
+    {
+        series.DataSource(ViewBag.dataSource)
+            .XName("x")
+            .YName("y")
+            .Add();
+    })
+    .Render()
+)

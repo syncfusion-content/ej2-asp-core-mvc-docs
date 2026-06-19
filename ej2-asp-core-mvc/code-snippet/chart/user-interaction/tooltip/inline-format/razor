@@ -1,0 +1,51 @@
+@Html.EJS().Chart("container")
+    .PrimaryXAxis(px => px
+        .Title("Years")
+        .LineStyle(ViewBag.LineStyle)
+        .LabelFormat("y")
+        .IntervalType(Syncfusion.EJ2.Charts.IntervalType.Years)
+        .ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+        .EdgeLabelPlacement(Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift)
+    )
+    .PrimaryYAxis(py => py
+        .Title("Percentage (%)")
+        .Minimum(0)
+        .Maximum(20)
+        .Interval(4)
+        .LabelFormat("{value}%")
+    )
+    .Series(series =>
+    {
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .DataSource(ViewBag.dataSource)
+            .XName("x")
+            .YName("y")
+            .Width(2)
+            .Name("China")
+            .Marker(ViewBag.Marker)
+            .Add();
+
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .DataSource(ViewBag.dataSource)
+            .XName("x")
+            .YName("y1")
+            .Width(2)
+            .Name("Australia")
+            .Marker(ViewBag.Marker)
+            .Add();
+
+        series.Type(Syncfusion.EJ2.Charts.ChartSeriesType.StepLine)
+            .DataSource(ViewBag.dataSource)
+            .XName("x")
+            .YName("y2")
+            .Width(2)
+            .Name("Japan")
+            .Marker(ViewBag.Marker)
+            .Add();
+    })
+    .Title("Unemployment Rates 1975-2010")
+    .LegendSettings(legend => legend.Visible(true))
+    .Tooltip(tt => tt
+        .Enable(true)
+        .Format("${point.x:MMM yyyy}<br/>${point.y:p0}")
+    ).Render()

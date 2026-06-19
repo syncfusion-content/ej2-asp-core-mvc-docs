@@ -1,0 +1,14 @@
+@Html.EJS().AccumulationChart("container").Series(series =>
+{
+    series.DataSource(ViewBag.dataSource)
+        .XName("x")
+        .YName("y")
+        .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+        .Radius("70%")
+        .Add();
+})
+.Tooltip(tooltip => tooltip
+    .Enable(true)
+    .Format("${point.x:MMM yyyy} : <b>${point.y:n2}%</b>")
+)
+.Render()
