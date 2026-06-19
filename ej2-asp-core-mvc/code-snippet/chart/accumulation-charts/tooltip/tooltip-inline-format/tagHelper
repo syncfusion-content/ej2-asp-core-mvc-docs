@@ -1,25 +1,9 @@
-@{
-    List<PieChartData> chartData = new List<PieChartData>
-    {
-        new PieChartData { x = new DateTime(2024, 1, 1), y = 3 },
-        new PieChartData { x = new DateTime(2024, 2, 1), y = 3.5 },
-        new PieChartData { x = new DateTime(2024, 3, 1), y = 7 },
-        new PieChartData { x = new DateTime(2024, 4, 1), y = 13.5 },
-        new PieChartData { x = new DateTime(2024, 5, 1), y = 19 },
-        new PieChartData { x = new DateTime(2024, 6, 1), y = 23.5 },
-        new PieChartData { x = new DateTime(2024, 7, 1), y = 26 },
-        new PieChartData { x = new DateTime(2024, 8, 1), y = 25 },
-        new PieChartData { x = new DateTime(2024, 9, 1), y = 21 },
-        new PieChartData { x = new DateTime(2024, 10, 1), y = 15 }
-    };
-}
-
 <ejs-accumulationchart id="container">
     <e-accumulationchart-legendsettings visible="false">
     </e-accumulationchart-legendsettings>
     <e-accumulationchart-tooltipsettings enable="true" format = "${point.x:MMM yyyy} : <b>${point.y:n2}%</b>"></e-accumulationchart-tooltipsettings>
     <e-accumulation-series-collection>
-        <e-accumulation-series dataSource="@chartData" xName="x" yName="y" radius="100%">
+        <e-accumulation-series dataSource="@ViewBag.dataSource" xName="x" yName="y" radius="100%">
         </e-accumulation-series>
     </e-accumulation-series-collection>
 </ejs-accumulationchart>

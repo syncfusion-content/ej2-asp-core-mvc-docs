@@ -8,8 +8,8 @@
       Add();
    })
    .PrimaryXAxis(px => 
-      px.ValueType(Syncfusion.EJ2.Charts.ValueType.Category)
+      px.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
       .LabelPlacement(Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks).LabelRotation(-45)
    )
-   .Tooltip(tp => tp.Enable(true).Template("#Unemployment"))
+   .Tooltip(tp => tp.Enable(true).Format("${point.x:MMM yy} ${point.y:c2}"))
    .Render())

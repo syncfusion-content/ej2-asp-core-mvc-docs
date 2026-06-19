@@ -81,9 +81,22 @@ A format specifier can be applied to a tooltip token by adding a colon (`:`) fol
 
 For example:
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 ```cshtml
 <e-sparkline-tooltipsettings enable="true" format="${x:MMM yyyy} : ${y:n2}"></e-sparkline-tooltipsettings>
 ```
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+```cshtml
+.TooltipSettings(tool => tool
+    .Visible(true)
+    .Format("${x:MMM yyyy} : ${y:n2}")
+)
+```
+
+{% endif %}
 
 In the above example, `x` is displayed in month-year format and `y` is displayed with two decimal places.
 

@@ -1,16 +1,20 @@
-
-@Html.EJS().AccumulationChart("container").Series(series =>
-            {
-                series.DataSource(ViewBag.dataSource)
-                      .XName("xValue")
-                      .YName("yValue")
-                      .Name("Browser")
-                      .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
-                      .ExplodeIndex(0).Add();
-            })
-            .EnableSmartLabels(true)
-            .Title("Mobile Browser Statistics")
-            .Tooltip(tp => tp.Enable(true).Template("<div id='templateWrap' style='background-color:#bd18f9;border-radius: 3px; float: right;padding: 2px;line-height: 20px;text-align: center;'>"+
-                 "<img src='sun_annotation.png' />" +
-                 "<div style='color:white; font-family:Roboto; font-style: medium; fontp-size:14px;float: right;padding: 2px;line-height: 20px;text-align: center;padding-right:6px'><span>${y}</span></div></div>" ))
-            .LegendSettings(ls => ls.Visible(false)).Render()
+@using Syncfusion.EJ2.Charts
+@(Html.EJS().AccumulationChart("container").Series(series =>
+{
+     series.DataSource(ViewBag.dataSource)
+          .XName("x")
+          .YName("y")
+          .Type(Syncfusion.EJ2.Charts.AccumulationType.Pie)
+          .DataLabel(new AccumulationDataLabelSettings        {
+               Visible = true,
+               Name = "text"      
+          })
+          .Radius("70%")
+          .Add();
+     })
+     .Tooltip(tooltip => tooltip    
+          .Enable(true)
+          .Format("${point.x:MMM yyyy} : <b>${point.y:n2}%</b>"
+     )
+).LegendSettings(legend=>legend.Visible(false))
+.Render())

@@ -1,19 +1,11 @@
-@Html.EJS().Sankey("sankey-container")
+@(Html.EJS().Sankey("sankey-container")
     .Width("90%")
     .Height("450px")
-    .Tooltip(t => t.Enable(true))
+    .Tooltip(t => t.Enable(true)        
+        .NodeFormat("${name} : ${value:n2} TBtu")
+        .LinkFormat("${start.name} : ${start.out:n2} TBtu → ${target.name} : ${target.in:n2} TBtu<br>Flow: ${value:n2} TBtu"))
     .LegendSettings(l => l.Visible(true))
-    .TooltipRendering("onSankeyTooltipRendering")
     .Nodes(ViewBag.SankeyNodes)
     .Links(ViewBag.SankeyLinks)
     .Render()
-
-<script>
-    function onSankeyTooltipRendering(args) {
-        if (args.text === 'link') {
-            args.text = `Flow: ${args.link.sourceId} → ${args.link.targetId} (${args.link.value})`;
-        } else if (args.text) {
-            args.text = `Node: ${args.text}`;
-        }
-    }
-</script>
+)

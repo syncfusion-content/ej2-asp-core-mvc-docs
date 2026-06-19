@@ -1,9 +1,24 @@
-@using Syncfusion.EJ2;
+@using Syncfusion.EJ2.Charts
+
 <div class="spark" align="center">
-@Html.EJS().Sparkline("sparkline").Loaded("loaded").Height("200px").Width("500px").AxisSettings(axis => axis.MinX(-1).MaxX(7).MinY(-1).MaxY(8)).Fill("#033e96").ValueType(SparklineValueType.Category).XName("xval").YName("yval").TooltipSettings(new SparklineSparklineTooltipSettings { Visible = true, Template = "#tooltip" }).DataSource(ViewBag.data).Render()
-</div>
-<div id="tooltip">
-    ${xval} : ${yval}
+@(Html.EJS().Sparkline("sparkline")
+    .Loaded("loaded")
+    .Height("200px")
+    .Width("500px")
+    .ValueType(SparklineValueType.DateTime)
+    .DataSource(ViewBag.data)
+    .XName("xval")
+    .YName("yval")
+    .TooltipSettings(new SparklineSparklineTooltipSettings        {
+        Visible = true,
+        Format = "${xval:MMM yyyy} : ${yval:n2}"     
+    })
+    .AxisSettings(new SparklineAxisSettings        {
+        MinY = -1,
+        MaxY = 8
+    })
+    .Render()
+)
 </div>
 <style>
     .spark {
@@ -12,18 +27,9 @@
         width: 100%;
         height: 100%;
     }
-    #tooltip {
-        border-radius: 5px;
-        background: #008cff;
-        color: #FFFFFF !important;
-        font-size: 16px;
-        font-style: italic;
-        padding: 8px;
-    }
 </style>
 <script>
-    function loaded(args)
-    { 
+    function loaded(args) {
         window.sparkline = args.sparkline;
         args.sparkline.loaded = null;
         args.sparkline.refresh();

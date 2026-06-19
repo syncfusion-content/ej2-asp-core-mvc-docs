@@ -1,7 +1,7 @@
 @using Syncfusion.EJ2;
 <div class="spark" align="center">
     <ejs-sparkline id="sparkline" loaded="loaded"  height="200px" width="500px" valueType="@Syncfusion.EJ2.Charts.SparklineValueType.DateTime"  dataSource="ViewBag.data" xName="xval" yName="yval" >
-	<e-sparkline-tooltipsettings visible="true" format= "${x:MMM yyyy} : ${y:n2}"></e-sparkline-tooltipsettings>
+	<e-sparkline-tooltipsettings visible="true" format= "${xval:MMM yyyy} : ${yval:n2}"></e-sparkline-tooltipsettings>
 	<e-sparkline-axissettings minY="-1" maxY="8"></e-sparkline-axissettings>
 	</ejs-sparkline>
 </div>
