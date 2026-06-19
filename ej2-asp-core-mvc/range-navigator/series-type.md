@@ -139,9 +139,9 @@ To render a Spline series, use series `type` as **Spline**
 
 
 
-![Spline Chart](images/series-type/spline.png)
+![Spline chart](images/series-type/spline.png)
 
-## SplineArea
+## Spline Area
 
 To render a Spline area series, use series `type` as **SplineArea**
 
@@ -170,7 +170,7 @@ To render a Spline area series, use series `type` as **SplineArea**
 
 
 
-![Spline Area Chart](images/series-type/splinearea.png)
+![Spline area chart](images/series-type/splinearea.png)
 
 ## Column
 
@@ -201,4 +201,4 @@ To render a Column series, use series `type` as **Column**
 
 
 
-![Column Chart](images/series-type/column.png)
+![Column chart](images/series-type/column.png)
