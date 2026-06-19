@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie and Doughnut in ##Platform_Name## Accumulation Chart
+title: Syncfusion Pie and Doughnut in ##Platform_Name## Accumulation Chart
 description: Learn here all about Pie Dough Nut in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pie Dough Nut
