@@ -1,0 +1,56 @@
+<ejs-chart id="container" title="Unemployment Rates 1975-2010">
+    <e-chart-tooltipsettings enable="true" format="${point.x:MMM yyyy}<br/>${point.y:p0}">
+    </e-chart-tooltipsettings>
+
+    <e-chart-legendsettings visible="true">
+    </e-chart-legendsettings>
+
+    <e-chart-primaryxaxis 
+        title="Years"
+        valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime"
+        labelFormat="y"
+        intervalType="@Syncfusion.EJ2.Charts.IntervalType.Years"
+        edgeLabelPlacement="@Syncfusion.EJ2.Charts.EdgeLabelPlacement.Shift">
+        <e-linestyle width="0"></e-linestyle>
+    </e-chart-primaryxaxis>
+
+    <e-chart-primaryyaxis 
+        title="Percentage (%)"
+        minimum="0"
+        maximum="20"
+        interval="4"
+        labelFormat="{value}%">
+    </e-chart-primaryyaxis>
+
+    <e-series-collection>
+        <e-series 
+            dataSource="ViewBag.dataSource"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine"
+            xName="x"
+            yName="y"
+            width="2"
+            name="China">
+            <e-series-marker visible="true" width="10" height="10"></e-series-marker>
+        </e-series>
+
+        <e-series 
+            dataSource="ViewBag.dataSource"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine"
+            xName="x"
+            yName="y1"
+            width="2"
+            name="Australia">
+            <e-series-marker visible="true" width="10" height="10"></e-series-marker>
+        </e-series>
+
+        <e-series 
+            dataSource="ViewBag.dataSource"
+            type="@Syncfusion.EJ2.Charts.ChartSeriesType.StepLine"
+            xName="x"
+            yName="y2"
+            width="2"
+            name="Japan">
+            <e-series-marker visible="true" width="10" height="10"></e-series-marker>
+        </e-series>
+    </e-series-collection>
+</ejs-chart>

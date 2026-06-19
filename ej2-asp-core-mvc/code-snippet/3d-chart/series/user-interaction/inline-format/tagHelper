@@ -1,0 +1,20 @@
+<ejs-chart3d id="container" wallColor="transparent" enableRotation="true" rotation="7" tilt="10" depth="100">
+    <e-chart3d-tooltipsettings enable="true" header="Unemployment" format="<b>${series.name}</b><br>${point.x:MMM yyyy} : ${point.y:n2}">
+    </e-chart3d-tooltipsettings>
+
+    <e-chart3d-primaryxaxis 
+        valueType="@Syncfusion.EJ2.Charts.ValueType.DateTime"
+        labelRotation="-45"
+        labelPlacement="@Syncfusion.EJ2.Charts.LabelPlacement.BetweenTicks">
+    </e-chart3d-primaryxaxis>
+
+    <e-chart3d-series-collection>
+        <e-chart3d-series 
+            dataSource="ViewBag.dataSource"
+            xName="month"
+            yName="sales"
+            type="@Syncfusion.EJ2.Charts.Chart3DSeriesType.Column"
+            name="Month">
+        </e-chart3d-series>
+    </e-chart3d-series-collection>
+</ejs-chart3d>
