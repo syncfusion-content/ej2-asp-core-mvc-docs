@@ -11,7 +11,7 @@ documentation: ug
 
 # Series Types
 
-To render the data, the Range Selector supports three types of series.
+To render the data, the Range Selector supports six types of series.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -109,3 +109,96 @@ To render a Step line series, use series `type` as **Step Line**
 
 
 ![Step Line Chart](images/series-type/stepline.png)
+
+## Spline
+
+To render a Spline series, use series `type` as **Spline**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/spline/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Spline.cs" %}
+{% include code-snippet/range-navigator/series-type/spline/spline.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/spline/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Spline.cs" %}
+{% include code-snippet/range-navigator/series-type/spline/spline.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Spline Chart](images/series-type/spline.png)
+
+## SplineArea
+
+To render a Spline area series, use series `type` as **SplineArea**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/splinearea/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="SplineArea.cs" %}
+{% include code-snippet/range-navigator/series-type/splinearea/splinearea.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/splinearea/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="SplineArea.cs" %}
+{% include code-snippet/range-navigator/series-type/splinearea/splinearea.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Spline Area Chart](images/series-type/splinearea.png)
+
+## Column
+
+To render a Column series, use series `type` as **Column**
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/column/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column.cs" %}
+{% include code-snippet/range-navigator/series-type/column/column.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/range-navigator/series-type/column/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Column.cs" %}
+{% include code-snippet/range-navigator/series-type/column/column.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+![Column Chart](images/series-type/column.png)
