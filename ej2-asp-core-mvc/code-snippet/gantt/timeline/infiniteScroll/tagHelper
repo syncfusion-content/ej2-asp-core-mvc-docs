@@ -1,0 +1,23 @@
+@page
+@model WebApplication1.Pages.IndexModel
+@{
+ViewData["Title"] = "Home page";
+}
+
+
+<ejs-gantt id="Gantt" height="430px" dataSource="Model.GanttDataSourceCollection" enableInfiniteTimelineScroll="true" treeColumnIndex="1" gridLines="Both">
+       <e-gantt-taskfields id="TaskID" name="TaskName" startDate="StartDate" endDate="EndDate" duration="Duration" progress="Progress" dependency="Predecessor" parentID="ParentID">
+       </e-gantt-taskfields>
+       <e-gantt-splittersettings columnIndex="3"></e-gantt-splittersettings>
+       <e-gantt-timelinesettings viewStartDate="@(new DateTime(2025, 12, 29))"
+              viewEndDate="@(new DateTime(2026, 04, 27))"></e-gantt-timelinesettings>
+       <e-gantt-labelsettings leftLabel="TaskID" rightLabel="TaskName"></e-gantt-labelsettings>
+       <e-gantt-columns>
+              <e-gantt-column field="TaskID" width="80"></e-gantt-column>
+              <e-gantt-column field="TaskName" headerText="Job Name" width="250"></e-gantt-column>
+              <e-gantt-column field="StartDate"></e-gantt-column>
+              <e-gantt-column field="Duration"></e-gantt-column>
+              <e-gantt-column field="Progress"></e-gantt-column>
+              <e-gantt-column field="Predecessor"></e-gantt-column>
+       </e-gantt-columns>
+</ejs-gantt>
