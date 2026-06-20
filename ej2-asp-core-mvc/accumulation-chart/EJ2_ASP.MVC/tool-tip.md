@@ -147,13 +147,8 @@ If the specified format does not match the resolved value type, the original val
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-...
-public class PieChartData
-{
-    public DateTime x;
-    public double y;
-}
+{% highlight c# tabtitle="Tooltip-inline-format.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tooltip-inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 

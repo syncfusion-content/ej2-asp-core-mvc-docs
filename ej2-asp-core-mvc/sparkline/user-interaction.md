@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interaction in ##Platform_Name## Sparkline Component
+title: User Interaction in ##Platform_Name## Syncfusion Sparkline Component
 description: Learn here all about User Interaction in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Interaction
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# User interactions
+# User interactions in Sparkline
 
 Sparkline has two user interaction features: tooltip and tracker line.
 
@@ -145,7 +145,7 @@ If the specified format does not match the resolved value type, the original val
 
 ### Tooltip template
 
-Sparkline tooltip has template support. By using tooltip template, you can customize tooltips. The following code example shows more customization options provided to  `sparktooltip` class that is used in tooltip template div. Using this template, images also can be added to tooltip.
+Sparkline tooltip has template support. By using tooltip template, you can customize tooltips. The following code example shows more customization options provided to  `sparkline-tooltip` class that is used in tooltip template div. Using this template, images also can be added to tooltip.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

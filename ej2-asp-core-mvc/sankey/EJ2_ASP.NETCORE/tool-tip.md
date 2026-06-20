@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip in ##Platform_Name## Sankey Chart Component
+title: ToolTip in ##Platform_Name## Syncfusion Sankey Chart Component
 description: Learn here all about ToolTip in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: ToolTip

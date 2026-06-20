@@ -22,5 +22,4 @@ public class AccumulationChartData
 {
     public DateTime x;
     public double y;
-    public string text;
 }
