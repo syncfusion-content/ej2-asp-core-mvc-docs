@@ -96,6 +96,72 @@ By default, the tooltip shows information about the x and y values in points. Ad
 
 
 
+## Inline tooltip formatting
+
+The tooltip content can be formatted directly within the `Format` property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
+
+A format specifier is applied by adding a colon (`:`) followed by the required format.
+
+For example:
+
+```cshtml
+    .Tooltip(tooltip => tooltip.Enable(true).Format("${point.x:MMM yyyy} : <b>${point.y:n2}%</b>"))
+```
+
+In the above example, `point.x` is displayed in month-year format and `point.y` is displayed with two decimal places.
+
+Inline formatting can be applied to the following tooltip tokens:
+
+- `point.x` – Specifies the x-value or category value of the 3D circular chart point.
+- `point.y` – Specifies the numeric y-value of the 3D circular chart point.
+- `point.percentage` – Specifies the percentage contribution of the point value in the 3D circular chart.
+- `point.text` – Specifies the text value mapped to the point, when text mapping is configured.
+- `point.tooltip` – Specifies the tooltip value mapped from the data source, when tooltip mapping is configured.
+- `point.index` – Specifies the index position of the point in the 3D circular chart.
+- `point.color` – Specifies the fill color applied to the point.
+- `point.visible` – Specifies the visibility state of the point.
+- `series.name` – Specifies the name assigned to the 3D circular chart series.
+- `series.opacity` – Specifies the opacity value applied to the 3D circular chart series.
+
+**Important:** The availability of point-specific tokens depends on the values configured in the data source and the 3D circular chart series. For example, `point.percentage` is useful for pie and doughnut charts, while `point.text` and `point.tooltip` depend on the corresponding field mappings. String tokens such as `series.name`, `point.text`, `point.tooltip`, `point.color`, and `point.visible` return string values, so DateTime or number formatting is not applied to these tokens.
+
+The following format types are supported:
+
+- DateTime formats such as `MMM yyyy`, `MM:yy`, and `dd MMM`
+- Number formats such as:
+  - `n2` – number with two decimal places
+  - `n0` – number without decimals
+  - `c2` – currency format
+  - `p1` – percentage format
+  - `e1` – exponential notation
+
+If the specified format does not match the resolved value type, the original value is displayed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/circular-chart/user-interaction/inline-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Inline-format.cs" %}
+{% include code-snippet/circular-chart/user-interaction/inline-format/inline-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/circular-chart/user-interaction/inline-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Inline-format.cs" %}
+{% include code-snippet/circular-chart/user-interaction/inline-format/inline-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
 ## Tooltip template
 
 Any HTML elements can be displayed in the tooltip by using the `Template` property in the tooltip.
