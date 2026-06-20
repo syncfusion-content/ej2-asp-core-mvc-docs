@@ -88,4 +88,35 @@ To render a Bollinger Band, use indicator [`Type`](https://help.syncfusion.com/c
 {% endtabs %}
 {% endif %}
 
+## Indicator Events
 
+The StockChart component supports **indicator lifecycle events**, allowing you to monitor and control indicator add and remove operations triggered through the built-in toolbar indicator dropdown. These events are useful for validating user actions, restricting specific indicators, tracking indicator changes, and integrating indicator interactions with application logic.
+
+The following indicator events are supported by the StockChart component:
+
+- **`beforeIndicatorChange`** – Fired before an indicator is added or removed. This event allows you to review the requested action in advance and cancel it by setting `cancel` to `true`.
+
+- **`indicatorChanged`** – Fired after an indicator has been added or removed successfully. This event occurs only if the action was not canceled and can be used to handle the updated state in your application.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-feature/indicator-events/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indicator-events.cs" %}
+{% include code-snippet/stock-chart/stockchart-feature/indicator-events/indicator-events.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/stock-chart/stockchart-feature/indicator-events/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Indicator-events.cs" %}
+{% include code-snippet/stock-chart/stockchart-feature/indicator-events/indicator-events.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
