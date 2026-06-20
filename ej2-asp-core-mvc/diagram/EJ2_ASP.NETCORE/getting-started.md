@@ -6,6 +6,7 @@ platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
+canonical_url: "https://www.syncfusion.com/aspnet-core-ui-controls/diagram"
 ---
 
 # Getting Started with ASP.NET Core Diagram Control
