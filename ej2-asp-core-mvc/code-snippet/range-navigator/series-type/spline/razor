@@ -1,0 +1,11 @@
+ @(Html.EJS().RangeNavigator("container")
+                    .ValueType(Syncfusion.EJ2.Charts.RangeValueType.DateTime)
+                    .Value(new DateTime[] { new DateTime(2006, 1, 1), new DateTime(2007, 12, 31)})
+                    .LabelFormat("yyyy")
+                    .Tooltip(tl=>tl.Enable(true).Format("yyyy/MM/dd"))
+                
+                .Series(sr =>
+                {
+                    sr.XName("x").YName("y").DataSource(ViewBag.dataSource).Type(Syncfusion.EJ2.Charts.RangeNavigatorType.Spline).Add();
+                }).Render()
+                )
