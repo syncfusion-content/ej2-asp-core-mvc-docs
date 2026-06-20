@@ -698,4 +698,4 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 N> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) example to knows how to present and manipulate data.

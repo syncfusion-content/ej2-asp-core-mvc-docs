@@ -35,3 +35,4 @@ By default, the work hours of the Scheduler is highlighted based on the start an
 {% endtabs %}
 {% endif %}
 
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) example to knows how to present and manipulate data.
