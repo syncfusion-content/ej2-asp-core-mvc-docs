@@ -1,0 +1,51 @@
+<script src="~/financial-data.js"></script>
+
+<div class="control-section">
+    <div id="control-container">
+        @(
+            Html.EJS().StockChart("stockchart")
+                .Load("stockLoad")
+                .Title("AAPL Stock Price")
+                .BeforeIndicatorChange("beforeIndicatorChange")
+                .IndicatorChanged("indicatorChanged")
+                .PrimaryXAxis(xaxis =>
+                    xaxis.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)
+                )
+                .ExportType(new List<Object>() { })
+                .TrendlineType(new List<Object>() { })
+                .Series(sr =>
+                {
+                    sr.Type(Syncfusion.EJ2.Charts.ChartSeriesType.Candle)
+                      .Name("Apple Inc")
+                      .DataSource("data")
+                      .XName("x")
+                      .Open("open")
+                      .High("high")
+                      .Low("low")
+                      .Close("close")
+                      .Volume("volume")
+                      .Add();
+                })
+                .Crosshair(cr => cr.Enable(true))
+                .Tooltip(tt => tt.Enable(true))
+                .Render()
+        )
+    </div>
+</div>
+
+<script>
+    var data = window.chartData;
+    function stockLoad(args) {
+        args.stockChart.series[0].dataSource = data;
+    }
+    function beforeIndicatorChange(args) {
+        console.log('Before Indicator Change:', args.type);
+        // Prevent EMA indicator
+        if (args.type === 'Ema') {
+            args.cancel = true;
+        }
+    }
+    function indicatorChanged(args) {
+        console.log(args.type + ' indicator ' + (args.isAdd ? 'added' : 'removed'));
+    }
+</script>
