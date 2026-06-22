@@ -10,7 +10,7 @@ documentation: ug
 
 # Column rendering in ASP.NET Core Grid component
 
-In [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
+In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
 
 The column definitions are used as the DataSource schema in the grid. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The `field` property of grid column is necessary to map the datasource values in the grid columns.
 
@@ -22,7 +22,7 @@ The column definitions are used as the DataSource schema in the grid. The grid o
 
 To define columns manually in grid, you can use the `e-grid-columns` element to define the columns and represent each column with its respective properties such as `field`, `headerText`, `type`, and [width](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Width) set accordingly. This allows you to customize the column's behavior and appearance based on the requirements.
 
-Here's an example code snippet that demonstrates how to define columns manually in the ASP.Net Core DataGrid:
+Here's an example code snippet that demonstrates how to define columns manually in the ASP.NET Core DataGrid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

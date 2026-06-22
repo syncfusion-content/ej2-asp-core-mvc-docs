@@ -88,7 +88,7 @@ code -r RazorPagesGrid
 
 ## Install ASP.NET Core package in the application
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
 2. Navigate to the directory containing the **.csproj** file.
@@ -161,7 +161,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the  
 
 ## Add ASP.NET Core DataGrid control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.Net Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

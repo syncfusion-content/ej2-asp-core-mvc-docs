@@ -8,15 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Remote data in ASP.Net MVC Grid Component
+# Remote data in ASP.NET MVC Grid Component
 
-In ASP.Net MVC Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `DataSource` property of the ASP.Net MVC Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
+In ASP.NET MVC Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `DataSource` property of the ASP.NET MVC Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 
-Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in ASP.Net MVC applications.
+Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in ASP.NET MVC applications.
 
 ## Custom binding
 
-The custom binding feature in the ASP.Net MVC Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the `DataManager`. The DataManager integrates seamlessly with the ASP.Net MVC Grid to manage custom data processing and binding. 
+The custom binding feature in the ASP.NET MVC Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the `DataManager`. The DataManager integrates seamlessly with the ASP.NET MVC Grid to manage custom data processing and binding. 
 
 The Syncfusion Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [DataStateChange](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataStateChange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [DataSourceChanged](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSourceChanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
@@ -34,7 +34,7 @@ To implement the `DataStateChange` event, follow these steps:
 
 ## Creating an API service
 
-To configure a server with Syncfusion ASP.Net MVC Grid, you need to follow the below steps:
+To configure a server with Syncfusion ASP.NET MVC Grid, you need to follow the below steps:
 
 **Step 1:** To create a new ASP.NET Web Application (.NET Framework) project named FetchRequest, follow these steps:
 
@@ -430,7 +430,7 @@ export function getOrders(state, action) {
 
 **Lazy load grouping**
 
-In ASP.Net MVC, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand. 
+In ASP.NET MVC, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand. 
 
 To enable this feature, you need to set the [GroupSettings.EnableLazyLoading](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_EnableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
 
@@ -613,7 +613,7 @@ The following screenshot represents the grid action with custom binding
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.Net MVC Grid component allows you to export all records, including those from multiple pages, by configuring the `PdfExportProperties` and `ExcelExportProperties`.
+By default, the Syncfusion Grid component exports only the records on the current page. However, the Syncfusion ASP.NET MVC Grid component allows you to export all records, including those from multiple pages, by configuring the `PdfExportProperties` and `ExcelExportProperties`.
 
 To export all records, including those from multiple pages, configure the `PdfExportProperties.DataSource` for PDF exporting and `ExcelExportProperties.DataSource` for Excel exporting within the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event handler. Inside this event, set the `DataSource` property of `PdfExportProperties` and `ExcelExportProperties` for PDF and Excel exporting to include all records.
 

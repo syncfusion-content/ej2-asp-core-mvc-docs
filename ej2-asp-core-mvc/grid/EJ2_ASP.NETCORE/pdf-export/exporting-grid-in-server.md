@@ -42,7 +42,7 @@ The following code snippet shows server configuration using ASP.NET Core Control
 {% endhighlight %}
 {% endtabs %}
 
->Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
+>Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.NET-Core).
 
 
 ## Export grid as memory stream
