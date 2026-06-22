@@ -1,0 +1,32 @@
+@{
+    ViewBag.Title = "Multiple Pie Series";
+}
+
+<div class="control-section">
+    <div class="content-wrapper">
+        <ejs-accumulationchart id="pie-container" title="Product Sales vs Profit Analysis" subtitle="Comparing total sales revenue with profit margins by product category" enableBorderOnMouseMove="false" border="ViewBag.border">
+            <e-accumulationchart-series-collection>
+                <e-accumulationchart-series dataSource="ViewBag.totalSalesData" xName="x" yName="y" name="Total Sales" type="AccumulationType.Pie" radius="90%" innerRadius="60%">
+                    <e-accumulationchart-series-datalabel visible="true" name="text" position="ChartDataLabelPosition.Outside">
+                        <e-accumulationchart-series-datalabel-connectorstyle type="ConnectorType.Curve" color="black" width="2" dashArray="2,1" length="5"></e-accumulationchart-series-datalabel-connectorstyle>
+                    </e-accumulationchart-series-datalabel>
+                    <e-accumulationchart-series-tooltip mappingName="x"></e-accumulationchart-series-tooltip>
+                </e-accumulationchart-series>
+                <e-accumulationchart-series dataSource="ViewBag.totalProfitData" xName="x" yName="y" name="Total Profit" type="AccumulationType.Pie" radius="50%" innerRadius="50%">
+                    <e-accumulationchart-series-datalabel visible="true" name="text" position="ChartDataLabelPosition.Inside">
+                        <e-accumulationchart-series-datalabel-connectorstyle type="ConnectorType.Curve" color="black" width="2" dashArray="2,1" length="5"></e-accumulationchart-series-datalabel-connectorstyle>
+                    </e-accumulationchart-series-datalabel>
+                    <e-accumulationchart-series-tooltip mappingName="x"></e-accumulationchart-series-tooltip>
+                </e-accumulationchart-series>
+            </e-accumulationchart-series-collection>
+            <e-accumulationchart-tooltip enable="true" format="<b>${point.x}</b><br/>Value: <b>$${point.y}</b><br/>Percentage: <b>${point.percentage}%</b>"></e-accumulationchart-tooltip>
+            <e-accumulationchart-legendsettings mappingKey="x"></e-accumulationchart-legendsettings>
+        </ejs-accumulationchart>
+    </div>
+</div>
+
+<style>
+    #pie-container {
+        display: block;
+    }
+</style>

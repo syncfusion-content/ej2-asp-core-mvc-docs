@@ -1,0 +1,119 @@
+@page
+@model WebApplication.Pages.IndexModel
+
+<ejs-gantt id="Gantt"
+           height="450px"
+           dataSource="Model.GanttDataSourceCollection"
+           treeColumnIndex="1"
+           gridLines="Both"
+           allowSelection="true"
+           renderBaseline="true"
+           rowHeight="60"
+           taskbarHeight="20"
+           highlightWeekends="true"
+           baselineColor="red"
+           baselineTemplate="#BaselineTemplate">
+
+    <e-gantt-taskfields id="TaskID"
+                        name="TaskName"
+                        startDate="StartDate"
+                        endDate="EndDate"
+                        duration="Duration"
+                        progress="Progress"
+                        parentID="ParentID"
+                        baselineStartDate="BaselineStartDate"
+                        baselineEndDate="BaselineEndDate">
+    </e-gantt-taskfields>
+
+    <e-gantt-splittersettings columnIndex="3"></e-gantt-splittersettings>
+
+    <e-gantt-labelsettings taskLabel="TaskName"></e-gantt-labelsettings>
+
+    <e-gantt-columns>
+        <e-gantt-column field="TaskID" headerText="ID"></e-gantt-column>
+        <e-gantt-column field="TaskName" width="270" headerText="Name"></e-gantt-column>
+        <e-gantt-column field="BaselineStartDate" headerText="Baseline Start Date" width="180"></e-gantt-column>
+        <e-gantt-column field="BaselineDuration" headerText="Baseline Duration" width="180"></e-gantt-column>
+        <e-gantt-column field="BaselineStartDate1" headerText="Baseline1 Start Date" width="180"></e-gantt-column>
+        <e-gantt-column field="BaselineDuration1" headerText="Baseline1 Duration" width="180"></e-gantt-column>
+        <e-gantt-column field="BaselineStartDate2" headerText="Baseline2 Start Date" width="180"></e-gantt-column>
+        <e-gantt-column field="BaselineDuration2" headerText="Baseline2 Duration" width="180"></e-gantt-column>
+    </e-gantt-columns>
+
+</ejs-gantt>
+
+<script id="BaselineTemplate" type="text/x-template">
+    ${renderBaseline(data)}
+</script>
+
+<script>
+    function renderBaseline(props) {
+    if (props.hasChildRecords) {
+        return '';
+    }
+
+    var ganttElem = document.getElementById("Gantt");
+    if (!ganttElem || !ganttElem.ej2_instances || !ganttElem.ej2_instances[0]) return '';
+
+    var gantt = ganttElem.ej2_instances[0];
+    var taskRecord = props.taskData;
+    var ganttProperties = taskRecord.ganttProperties;
+    var chartRowsModule = gantt.chartRowsModule;
+
+    var baselineTop = chartRowsModule.baselineTop;
+    var baselineHeight = chartRowsModule.baselineHeight;
+    var taskBarHeight = chartRowsModule.taskBarHeight;
+    var milestoneHeight = chartRowsModule.milestoneHeight;
+    var milestoneMarginTop = chartRowsModule.milestoneMarginTop;
+
+    var rowHeight = gantt.rowHeight;
+    var renderBaselineFlag = gantt.renderBaseline;
+    var enableRtl = gantt.enableRtl;
+
+    var taskSpacing = 9;
+    var baselineSpacing = 4;
+
+    function getLeft(date) {
+        return gantt.dataOperation.getTaskLeft(new Date(date), false, ganttProperties.calendarContext);
+    }
+
+    function getWidth(start, duration) {
+        if (!start || duration == null || duration === 0) return 0;
+        var end = new Date(start);
+        end.setDate(end.getDate() + duration);
+        return getLeft(end) - getLeft(start);
+    }
+
+    function render(start, duration, index) {
+        if (!start) return '';
+
+        var left = getLeft(start);
+        var width = getWidth(start, duration);
+
+        if (duration === 0) {
+            var milestoneSize = renderBaselineFlag ? taskBarHeight : (taskBarHeight - 10);
+            var baselineMilestoneHeight = renderBaselineFlag ? 5 : 2;
+            var leftPos = enableRtl
+                ? (left - (milestoneHeight / 2) + 3)
+                : (left - (milestoneHeight / 2) + 1);
+            var marginTop = (-Math.floor(rowHeight - milestoneMarginTop) + baselineMilestoneHeight) + 2 + (index * baselineSpacing);
+
+            return '<div style="position:absolute;width:' + milestoneSize + 'px;height:' + milestoneSize + 'px;' +
+                'transform:rotate(45deg);' +
+                (enableRtl ? 'right' : 'left') + ':' + leftPos + 'px;' +
+                'margin-top:' + marginTop + 'px;"></div>';
+        }
+
+        return '<div style="position:absolute;' +
+            (enableRtl ? 'right' : 'left') + ':' + left + 'px;' +
+            'margin-top:' + (baselineTop + (index * taskSpacing)) + 'px;' +
+            'width:' + width + 'px;height:' + baselineHeight + 'px;"></div>';
+    }
+
+    return '<div>' +
+        render(taskRecord.taskData.BaselineStartDate, taskRecord.taskData.BaselineDuration, 0) +
+        render(taskRecord.taskData.BaselineStartDate1, taskRecord.taskData.BaselineDuration1, 1) +
+        render(taskRecord.taskData.BaselineStartDate2, taskRecord.taskData.BaselineDuration2, 2) +
+        '</div>';
+    }
+</script>
