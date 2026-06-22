@@ -184,7 +184,7 @@ Each individual scheduler views can be customized with its own options such as s
 
 ![ASP.NET Core Schedule with Custom Views](images/schedule-with-custom-views.png)
 
-N> You can also explore our [ASP.NET Core Scheduler](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) example that shows how to use the toolbar buttons to play with Scheduler functionalities.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) example that shows how to use the toolbar buttons to play with Scheduler functionalities.
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
