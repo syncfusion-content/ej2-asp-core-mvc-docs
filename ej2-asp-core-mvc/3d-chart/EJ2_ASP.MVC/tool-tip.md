@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## 3D Chart Component
+title: Tooltip in ##Platform_Name## Syncfusion 3D Chart Component
 description: Learn here all about tooltip in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -93,6 +93,70 @@ By default, tooltip shows information of x and y value in points. In addition to
 {% endhighlight %}
 {% highlight c# tabtitle="Format-tooltip.cs" %}
 {% include code-snippet/3d-chart/series/user-interaction/format-tooltip/format-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+## Inline tooltip formatting
+
+The tooltip content can be formatted directly within the [`format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart3DTooltipSettings.html#Syncfusion_EJ2_Charts_Chart3DTooltipSettings_Format) property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
+
+A format specifier can be applied to a tooltip token by adding a colon (`:`) followed by the required format.
+
+For example:
+
+```cshtml
+    .Tooltip(tooltip => tooltip
+        .Enable(true)
+        .Format("<b>${series.name}</b><br>${point.x:MMM yyyy} : ${point.y:n2}")
+    )
+```
+
+In the above example, `point.x` is displayed in month-year format, `point.y` is displayed with two decimal places, and `series.name` displays the name assigned to the series.
+
+Inline formatting can be applied to the following tooltip tokens:
+
+- `point.x` – Specifies the x-value of the data point, such as DateTime or category values.
+- `point.y` – Specifies the numeric y-value of the data point.
+- `series.name` – Specifies the name assigned to the series.
+- `series.type` – Specifies the rendering type of the series, such as `Column`, `Bar`, `Line`, or `StackingColumn`.
+- `series.opacity` – Specifies the opacity value applied to the series. This value controls the visual transparency of the series and can be customized in the series configuration.
+
+**Important:** The availability of point-specific tokens depends on the values configured in the data source and the 3D chart series type. The `series.name` and `series.type` tokens return string values, so DateTime or number formatting is not applied to these tokens.
+
+The following format types are supported:
+
+- DateTime formats such as `MMM yyyy`, `MM:yy`, and `dd MMM`
+- Number formats such as:
+  - `n2` – number with two decimal places
+  - `n0` – number without decimal places
+  - `c2` – currency format
+  - `p1` – percentage format
+  - `e1` – exponential notation
+
+If the specified format does not match the resolved value type, the original value is displayed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-format.cs" %}
+{% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tooltip-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/3d-chart/series/user-interaction/tooltip-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-format.cs" %}
+{% include code-snippet/3d-chart/series/user-interaction/tooltip-format/tooltip-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

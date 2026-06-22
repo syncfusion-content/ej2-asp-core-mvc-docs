@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie Dough Nut in ##Platform_Name## Syncfusion Accumulation Chart Component
+title: Syncfusion Pie Dough Nut in ##Platform_Name## Accumulation Chart Component
 description: Learn here all about Pie Dough Nut in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pie Dough Nut
@@ -154,6 +154,34 @@ To achieve a doughnut in pie series, customize the [`InnerRadius`](https://help.
 {% endtabs %}
 {% endif %}
 
+
+
+## Multiple Doughnut Series
+
+You can create multiple doughnut within a single chart by adding multiple series with different [`InnerRadius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_InnerRadius) and [`Radius`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Radius) values. This allows you to compare multiple data sets with the same categories. Each series can have different data, colors, and customizations. You can also use the [`MappingKey`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.AccumulationChartLegendSettings.html#Syncfusion_EJ2_Charts_AccumulationChartLegendSettings_MappingKey) property in `LegendSettings` to map the legend items based on the specified field from the data source. When set, points with matching `MappingKey` values are grouped into a single legend item.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleSeriesPie.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/multiple-series.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="MultipleSeriesPie.cs" %}
+{% include code-snippet/chart/accumulation-charts/pie-doughnut/multiple-series/multiple-series.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 
 ## Start and End angles
@@ -376,5 +404,5 @@ You can also achieve drill-up (back to the initial state) by using [ChartMouseCl
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

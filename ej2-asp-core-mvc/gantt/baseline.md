@@ -58,7 +58,7 @@ List<GanttDataSource> data = new List<GanttDataSource>
 ```
 
 ```cs
-// Here you can customize base line color. 
+// Here you can customize base line color.
 <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" renderBaseline="true" baselineColor="red" projectStartDate="03/31/2019" projectEndDate="05/31/2019">
 ...
 </ejs-gantt>
@@ -66,10 +66,10 @@ List<GanttDataSource> data = new List<GanttDataSource>
 
 ```css
 .e-gantt .e-gantt-chart .e-baseline-bar {
-    height: 4px;
-    border-radius: 2px;
-    opacity: 0.9;
-    background-color: #4CAF50; 
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0.9;
+  background-color: #4caf50;
 }
 ```
 
@@ -135,16 +135,16 @@ List<GanttDataSource> data = new List<GanttDataSource>
 @Html.EJS().Gantt("Gantt")
     .DataSource((IEnumerable<object>)ViewBag.DataSource)
     .RenderBaseline(true)
-    .BaselineColor("red") // Here you can customize base line color.    
+    .BaselineColor("red") // Here you can customize base line color.
     .Render()
 ```
 
 ```css
 .e-gantt .e-gantt-chart .e-baseline-bar {
-    height: 4px;
-    border-radius: 2px;
-    opacity: 0.9;
-    background-color: #4CAF50; 
+  height: 4px;
+  border-radius: 2px;
+  opacity: 0.9;
+  background-color: #4caf50;
 }
 ```
 
@@ -163,3 +163,46 @@ The following example demonstrates complete baseline configuration with proper f
 The following screenshot shows the baseline in Gantt control.
 
 ![Baseline in Gantt Component](images/baseline.png)
+
+## Customize baseline templates
+
+The `baselineTemplate` property allows customization of baseline rendering by replacing the default baseline UI with a custom HTML structure. This enables advanced scenarios such as rendering additional baseline elements, visual indicators, or multiple baselines using task-specific data.
+
+Set the `baselineTemplate` property with a template string or function. The template receives the task data object, which can be used to dynamically generate baseline elements.
+
+### Multiple baseline rendering using template
+
+By default, the Gantt component supports a single baseline per task. However, using the `baselineTemplate`, you can extend this behavior to render multiple baselines by maintaining additional baseline data within a custom field in your data source.
+
+This enables rich visualization scenarios such as:
+
+- Comparing original vs revised schedules.
+- Visualizing multiple planning phases.
+- Highlighting deviations across timeline checkpoints.
+
+The following example demonstrates how to render multiple baselines using `baselineTemplate`.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Contextmenu.cs" %}
+{% include code-snippet/gantt/baseline/baselineTemplate/baselineTemplate.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Baseline Template](images/multiple-baseline-template.png)
