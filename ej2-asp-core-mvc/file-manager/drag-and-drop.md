@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drag And Drop in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drag And Drop in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
 publishingplatform: ##Platform_Name##

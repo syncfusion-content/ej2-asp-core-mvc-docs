@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Upload in Syncfusion ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Upload in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Upload in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Upload
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ The File Manager control provides a `uploadSettings` property with various optio
 
 ## Directory Upload
 
-The `directoryUpload` property controls whether users can browse and upload entire directories (folders) in the Syncfusion File Manager control. 
+The `directoryUpload` property controls whether users can browse and upload entire directories (folders) in the File Manager control. 
 
 To enable directory upload, set the `directoryUpload` property to `true` in the `uploadSettings` configuration.
 
@@ -26,7 +26,7 @@ To learn more about the folder upload actions, refer to this [link](https://ej2.
 
 ## Sequential Upload
 
-The `sequentialUpload` property controls whether users can upload files one by one in a sequential manner in the Syncfusion File Manager control. 
+The `sequentialUpload` property controls whether users can upload files one by one in a sequential manner in the File Manager control. 
 
 To enable sequential upload, set the `sequentialUpload` property to `true` in the `uploadSettings` configuration.
 

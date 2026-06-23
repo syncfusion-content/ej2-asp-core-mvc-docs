@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about Overview in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
