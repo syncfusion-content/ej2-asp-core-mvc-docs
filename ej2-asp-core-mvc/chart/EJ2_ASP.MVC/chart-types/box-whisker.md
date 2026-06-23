@@ -127,7 +127,7 @@ The `Fill` property can be used to apply a gradient color to the box and whisker
 
 **Opacity**
 
-The `Opacity` property specifies the transparency level of the fill. Adjusting this property allows you to control how opaque or transparent the fill color of the series appears.
+The `Opacity` property controls the transparency of the fill and affects how the series blends with background or overlapping series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -154,7 +154,7 @@ The `Opacity` property specifies the transparency level of the fill. Adjusting t
 
 **Border**
 
-Use the `Border` property to customize the width, color and dasharray of the series border.
+Use the `Border` property to configure the border width, color, and dasharray of the box and whisker series.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -237,7 +237,7 @@ In the box and whisker series, the `ShowMean` property is used to display the av
 
 ### Series render
 
-The `SeriesRender` event allows you to customize series properties, such as data, fill, and name, before they are rendered on the chart.
+The `SeriesRender` event enables modification of series properties (for example, data, fill, or name) immediately before rendering. Use this event to adjust series appearance or to dynamically swap data sources.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -264,7 +264,7 @@ The `SeriesRender` event allows you to customize series properties, such as data
 
 ### Point render
 
-The `PointRender` event allows you to customize each data point before it is rendered on the chart.
+The `PointRender` event provides a hook to customize each data point (for example, marker shape, border, or fill) before it is drawn. Use this to apply per-point styling rules or conditional formatting.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
