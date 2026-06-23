@@ -85,7 +85,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC File Manager Control
 
-Now, add the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) in `~/Views/Home/Index.cshtml` page.
+Now, add the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in `~/Views/Home/Index.cshtml` page.
 
 Update a `HomeController.cs` file with the following code. Create a `Content/Files` folder to store the files for the File Manager access. Make sure `Microsoft.AspNet.Mvc` is updated to the latest version.
 
@@ -98,7 +98,7 @@ Update a `HomeController.cs` file with the following code. Create a `Content/Fil
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control will be rendered in the default web browser.
 
 ![ASP.NET MVC File Manager Control](images/getting-started.png)
 
