@@ -88,26 +88,6 @@ In the example below, it prevents selection of rows with canceled orders.
 {% endhighlight %}
 {% endtabs %}
 
-## Select single row in checkbox selection mode
-
-The ASP.NET MVC Grid allows you to select only one row at a time within the Grid. This feature is particularly useful when you want to ensure that only a single row is selected, and any previous selections are cleared when a new row is selected.
-
-To achieve single-row selection in checkbox selection mode within the Grid, you can handle the [RowSelecting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowSelecting) event and use the `clearSelection` method to clear any previous selections before selecting a new row. This ensures that only one row is selected at a time, and any prior selections are deselected when a new row is chosen.
-
-> When you set the [CheckboxMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxMode) property to **ResetOnRowClick**, it will reset the previously selected row when you click on a new row. Please note that this behavior applies to rows and not checkboxes, and it is the default behavior of the grid.
-
-Here's an example of how to select a single row in checkbox selection mode using the `clearSelection` method along with the `RowSelecting` event:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/selection/checkbox-select/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="checkbox.cs" %}
-{% include code-snippet/grid/selection/checkbox-select/checkbox.cs%}
-{% endhighlight %}
-{% endtabs %}
-
-![Select single row in checkbox selection mode](../images/selection/checkbox-single-click.gif)
 
 ## Allow selection only through checkbox click
 
