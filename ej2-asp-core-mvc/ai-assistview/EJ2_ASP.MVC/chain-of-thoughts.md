@@ -10,7 +10,7 @@ documentation: ug
  
 # Chain of Thoughts in ##Platform_Name## AI AssistView control
  
-The AI AssistView provides support for rendering **Chain of Thoughts** (also called *Thinking* blocks), which allows you to visualize the AI model's reasoning process step by step before the final response is generated. It is especially useful for extended-thinking models (such as Claude 3.5, GPT-o1, and similar) that expose intermediate reasoning stages.
+The AI AssistView supports rendering **Chain of Thoughts** (also called `Thinking`) blocks, allowing you to visualize the model's reasoning process step by step before the final response is generated. The injectable module is ideal for extended reasoning models (such as Claude 3.5, GPT‑o1, and similar), which expose intermediate reasoning stages.
  
 ## Types of response blocks
 
@@ -24,11 +24,9 @@ A single response may contain `Thinking`, `Text`, and `tool` blocks in the `bloc
 
 ## Configure the thinking block
  
-You can use the block type as `Thinking` to the `blocks` array of the `addPromptResponse` method to push blocks (including thinking blocks) into the component at runtime. Pass an object with a `blocks` array, and set the second argument (`isFinalUpdate`) to `false` while streaming and `true` for the last update. It can be configured by using the below available properties.
+You can use the `Thinking` block type in the blocks array of the `addPromptResponse` method to dynamically push blocks including thinking blocks into the component at runtime. Pass an object containing a blocks array, and set the second argument `isFinalUpdate` to false during streaming and true for the final update.
 
-You can use the `Thinking` block type in the blocks array of the addPromptResponse method to dynamically push blocks (including thinking blocks) into the component at runtime. Pass an object containing a blocks array, and set the second argument (isFinalUpdate) to false during streaming and true for the final update.
-
-> When only `blocks` are provided (no `response` text), the component will render the blocks directly and skip the default text-response rendering path. When both `blocks` and `response` are supplied, the blocks are rendered first followed by the response text.
+> When only `blocks` are provided (no `response` text), the component will render the blocks directly and skip the default text-response rendering path. When both `blocks` and `response` are provided, the blocks are rendered first followed by the response text.
  
 | Property | Type | Default | Description |
 |---|---|---|---|
@@ -83,7 +81,7 @@ Use this to reflect real-time reasoning progress when streaming multi-step respo
  
 #### Adding context items
  
-The thinking stages support **inline context items** named, optionally clickable badges that appear inline within the stage content. They are defined in the `editableContext` array of a `ThinkingStage` and are injected into the `content` string using `{index}` placeholders, where `index` is the zero-based position in the `editableContext` array.
+You can use the inline context items which are optionally clickable badges, that appear inline within the stage content. They are defined in the `editableContext` array of a `ThinkingStage` and are injected into the `content` string using `{index}` placeholders, which is the zero-based position in the `editableContext` array.
  
 Each context item is described by the below available `ThinkingContextItem` properties:
  
