@@ -12,7 +12,7 @@ documentation: ug
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls are available as individual NuGet packages, segregated based on component usage and namespace. These individual packages help reduce the application size by referencing only the packages required for the components used. The complete package [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) is also available and continues to be supported.
 
-W> Do not use both `Syncfusion.EJ2.AspNet.Core` and individual NuGet packages in the same application. It will throw ambiguous errors while compiling the project.
+> Do not use both `Syncfusion.EJ2.AspNet.Core` and individual NuGet packages in the same application. It will throw ambiguous errors while compiling the project.
 
 ## Syncfusion.AspNetCore.Base
 
@@ -27,7 +27,7 @@ This package contains the base component, common classes, common functionalities
 </tr>
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Base/">Syncfusion.AspNetCore.Base</a></td>
-<td>Common, Base</td>
+<td>Base</td>
 <td>
 <ul>
 <li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
@@ -662,7 +662,7 @@ The ASP.NET Core Inputs package comes with a collection of form components used 
 <li>ejs-signature</li>
 <li>ejs-textarea</li>
 <li>ejs-otpinput</li>
-<li>ejs-speech-to-text</li>
+<li>ejs-speechtotext</li>
 </ul>
 </td>
 <td>
@@ -692,12 +692,14 @@ The ASP.NET Core InteractiveChat package provides an AI AssistView interface thr
 <td>
 <ul>
 <li>AI AssistView</li>
+<li>Inline AI Assist</li>
 <li>Chat UI</li>
 </ul>
 </td>
 <td>
 <ul>
 <li>ejs-aiassistview</li>
+<li>ejs-inlineaiassist</li>
 <li>ejs-chatui</li>
 </ul>
 </td>
@@ -891,6 +893,7 @@ The ASP.NET Core Navigations package contains a collection of navigation compone
 <li>Accordion</li>
 <li>AppBar</li>
 <li>Breadcrumb</li>
+<li>Carousel</li>
 <li>ContextMenu</li>
 <li>DropDown Tree</li>
 <li>Menu Bar</li>
@@ -899,7 +902,6 @@ The ASP.NET Core Navigations package contains a collection of navigation compone
 <li>Tabs</li>
 <li>Toolbar</li>
 <li>TreeView</li>
-<li>Pager</li>
 </ul>
 </td>
 <td>
@@ -907,6 +909,7 @@ The ASP.NET Core Navigations package contains a collection of navigation compone
 <li>ejs-accordion</li>
 <li>ejs-appbar</li>
 <li>ejs-breadcrumb</li>
+<li>ejs-carousel</li>
 <li>ejs-contextmenu</li>
 <li>ejs-dropdowntree</li>
 <li>ejs-menu</li>
@@ -915,7 +918,6 @@ The ASP.NET Core Navigations package contains a collection of navigation compone
 <li>ejs-tab</li>
 <li>ejs-toolbar</li>
 <li>ejs-treeview</li>
-<li>ejs-pager</li>
 </ul>
 </td>
 <td>
@@ -1070,6 +1072,7 @@ The ASP.NET Core Popups package contains Dialog and Tooltip components used to d
 <td>
 <ul>
 <li>ejs-dialog</li>
+<li>ejs-tooltip</li>
 <li>ejs-tooltip</li>
 </ul>
 </td>
@@ -1309,8 +1312,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Smart Componen
 </td>
 <td>
 <ul>
-<li>ejs-smart-paste-button</li>
-<li>ejs-smart-textarea</li>
+<li>ejs-smartpastebutton</li>
+<li>ejs-smarttextarea</li>
 </ul>
 </td>
 <td>
@@ -1386,7 +1389,6 @@ The ASP.NET Core SplitButtons package contains UI components such as DropDownBut
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.SplitButtons/">Syncfusion.AspNetCore.SplitButtons</a></td>
 <td>
 <ul>
-<li>ButtonGroup</li>
 <li>DropDownButton</li>
 <li>ProgressButton</li>
 <li>SplitButton</li>
@@ -1394,7 +1396,6 @@ The ASP.NET Core SplitButtons package contains UI components such as DropDownBut
 </td>
 <td>
 <ul>
-<li>ejs-buttongroup</li>
 <li>ejs-dropdownbutton</li>
 <li>ejs-progressbutton</li>
 <li>ejs-splitbutton</li>
@@ -1467,6 +1468,60 @@ The ASP.NET Core Stock Chart is an easy-to-use financial charting package to tra
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
 <li><a href="#syncfusionaspnetcorecharts">Syncfusion.AspNetCore.Charts</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.AspNetCore.Themes
+
+This package contains the Syncfusion® ASP.NET Core UI components theme files. 
+
+<table>
+<tr>
+<td><b>NuGet package</b></td>
+<td><b>Components friendly name</b></td>
+<td><b>Components name</b></td>
+<td><b>Dependencies</b></td>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/">Syncfusion.AspNetCore.Themes</a></td>
+<td>
+<ul>
+    <li>Bootstrap</li>
+    <li>Bootstrap</li>
+    <li>Bootstrap Dark</li>
+    <li>Bootstrap v4</li>
+    <li>Bootstrap v5</li>
+    <li>Bootstrap v5 Dark</li>
+    <li>Bootstrap v5.3</li>
+    <li>Bootstrap v5.3 Dark</li>
+    <li>Fluent</li>
+    <li>Fluent</li>
+    <li>Fluent Dark</li>
+    <li>Fluent v2</li>
+    <li>Fluent v2 Dark</li>
+    <li>Fluent v2 High Contrast</li>
+    <li>Material</li>
+    <li>Material</li>
+    <li>Material Dark</li>
+    <li>Material v3</li>
+    <li>Material v3 Dark</li>
+    <li>Tailwind</li>
+    <li>Tailwind</li>
+    <li>Tailwind Dark</li>
+    <li>Tailwind v3</li>
+    <li>Tailwind v3 Dark</li>
+    <li>Others</li>
+    <li>Fabric</li>
+    <li>Fabric Dark</li>
+    <li>High Contrast</li>
+</ul>
+</td>
+<td>-</td>
+<td>
+<ul>
+none
 </ul>
 </td>
 </tr>
