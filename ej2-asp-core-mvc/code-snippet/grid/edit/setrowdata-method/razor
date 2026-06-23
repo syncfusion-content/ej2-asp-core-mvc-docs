@@ -1,0 +1,39 @@
+<div>
+    @Html.EJS().Button("setCellBtn").Content("Update Row Data of Order 10248").CssClass("e-outline").Render()
+    <span id="status"></span>
+</div>
+<div class="control-section" style="padding-top:20px">
+    @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("240").Toolbar(new List<string>() { "Edit", "Update", "Cancel" }).Columns(col =>
+    {
+        col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+        col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+        col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+        col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+    }).EditSettings(edit => { edit.AllowEditing(true); }).Render()
+</div>
+
+<script>
+    document.getElementById('setCellBtn').onclick = handleButtonClick;
+    function handleButtonClick(){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.setRowData(10248, {
+            OrderID: 10248,
+            CustomerID: 'VINET',
+            ShipName: 'Speedy Express',
+            ShipCity: 'Seattle',
+            Freight: 99.99
+        });
+        document.getElementById('status').innerText = 'Row data updated successfully!';
+    }
+</script>
+
+<style>
+    .control-section{
+        padding-top:20px;
+    }
+    #status{
+        margin-left:10px;
+        color:green;
+    }
+</style>
