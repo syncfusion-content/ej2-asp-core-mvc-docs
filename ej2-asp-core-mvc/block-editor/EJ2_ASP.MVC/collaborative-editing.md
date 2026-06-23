@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing in ASP.NET MVC Block Editor Control | Syncfusion
+title: Collaborative Editing in ASP.NET MVC Block Editor | Syncfusion
 description: Checkout and learn about Collaborative Editing with Syncfusion Essential ASP.NET MVC BlockEditor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
