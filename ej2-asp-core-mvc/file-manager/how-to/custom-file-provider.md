@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Implement own service provider in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about implementation own service provider in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about implementation own service provider in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Implement own service provider
 publishingplatform: ##Platform_Name##

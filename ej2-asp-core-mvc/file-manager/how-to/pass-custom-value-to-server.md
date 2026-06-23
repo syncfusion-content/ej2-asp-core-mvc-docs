@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom value to server in ##Platform_Name##  File Manager control | Syncfusion
-description: Learn here all about How to pass custom value to server in Syncfusion ##Platform_Name##  File Manager control of Syncfusion Essential JS 2 and more.
+description: Learn here all about How to pass custom value to server in ##Platform_Name##  File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: File Manager 
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 # Pass custom value to server in ##Platform_Name##  File Manager control
 
-The Syncfusion File Manager control allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the **beforeSend**, **beforeDownload** and **beforeImageLoad** events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
+The File Manager control allows seamless backend server interaction by passing custom values. This enhances the functionality and security of file operations, particularly helpful for tasks like authentication, logging, or user role-based processing. In multi-user systems, it ensures file access permissions and actions are user-specific and secure. You can manage user-specific operations such as **Read**, **Delete**, **Rename**, **Create**, **Move**, **Copy**, **Details**, **Search**, **Upload**, **Download**, and **GetImage** using custom headers or query parameters. This guide demonstrates implementing these features using the **beforeSend**, **beforeDownload** and **beforeImageLoad** events. Let's explore how to achieve this in [`Physical file system provider`](https://github.com/SyncfusionExamples/ej2-aspcore-file-provider).
 
 ## 1. Setting up the File Manager and provider
 
