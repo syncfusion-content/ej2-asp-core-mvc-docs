@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Nested File Manager
+# Nested File Manager in ##Platform_Name##
 
 File Manager can be rendered inside other controls like Tab, Dialog, and more.
 

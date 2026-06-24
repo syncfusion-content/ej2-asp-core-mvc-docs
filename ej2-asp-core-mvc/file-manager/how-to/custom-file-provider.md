@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Implement own service provider in ##Platform_Name## File Manager control | Syncfusion
+title:  Custom Service Provider in ##Platform_Name## File Manager | Syncfusion
 description: Learn here all about implementation own service provider in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-javascript
 control: Implement own service provider
@@ -162,7 +162,7 @@ The following table represents the response parameters of **read** operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Details of files and folders present in given path or directory.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 <a id="file-manager-directory-content"></a>
 The following table represents the contents of **FileManagerDirectoryContent** in the File Manager request and response.
@@ -388,7 +388,7 @@ The following table represents the response parameters of *create* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details of the created folder|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -453,7 +453,7 @@ The following table represents the response parameters of *rename* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details of the renamed item.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -519,7 +519,7 @@ The following table represents the response parameters of *delete* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |files|FileManagerDirectoryContent[]|-|Details about the deleted item(s).|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -585,7 +585,7 @@ The following table represents the response parameters of *details* operations.
 |Parameter|Type|Default|Explanation|
 |----|----|----|----|
 |details|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Details of the requested item(s).|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 
 *Example:*
@@ -650,7 +650,7 @@ The following table represents the response parameters of *search* operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Files and folders in the searched directory that matches the search input.|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 
@@ -743,7 +743,7 @@ The following table represents the response parameters of *copy* operations.
 |----|----|----|----|
 |cwd|[FileManagerDirectoryContent](#file-manager-directory-content)|-|Path (Current Working Directory) details.|
 |files|FileManagerDirectoryContent[]|-|Details of copied files or folders|
-|error|[ErrorDetails](../file-operations.md/#delete)|-|Error Details|
+|error|[ErrorDetails](../file-operations.md#delete)|-|Error Details|
 
 *Example for response:*
 

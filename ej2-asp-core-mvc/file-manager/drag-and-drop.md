@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag And Drop
+# Drag And Drop in File Manager Control
 
 The File Manager allows moving files or folders between directories using the `allowDragAndDrop` property. It also supports uploading a file by dragging it from Windows Explorer to the File Manager control. You can enable or disable this support by using the `allowDragAndDrop` property of File Manager.
 
