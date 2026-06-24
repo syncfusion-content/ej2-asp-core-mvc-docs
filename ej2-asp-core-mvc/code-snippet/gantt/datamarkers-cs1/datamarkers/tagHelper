@@ -1,0 +1,15 @@
+                <ejs-gantt id='Gantt' dataSource="ViewBag.dataSource" height="450px" dataBound="ganttdataBound">
+                    <e-gantt-taskfields id="TaskId" name="TaskName" startDate="StartDate"
+                          duration="Duration" progress="Progress" child="SubTasks" indicators="Indicators">
+                    </e-gantt-taskfields>
+                </ejs-gantt>
+                <script>
+                 function ganttdataBound() {
+                    let element: any = document.querySelectorAll('.e-indicator-span');
+                    for (let i = 0; i < element.length; i++) {
+                        element[i].addEventListener('click', function () {
+                        alert('Indicator Click');
+                    });
+                    }        
+                }
+                </script>
