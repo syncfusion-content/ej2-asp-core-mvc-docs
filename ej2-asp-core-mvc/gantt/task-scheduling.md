@@ -25,6 +25,12 @@ N> The default value of [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-j
 
 When the [`taskMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_TaskMode) property is set as `Auto`, the start date and end date of all the tasks in the project will be automatically validated. That is, dates are validated based on various factors such as working time, holidays, weekends and predecessors.
 
+In auto scheduling mode, the parent taskbar will be rendered according to the minimum start date and maximum end date of its child records, irrespective of the dates provided to it in the data source.
+
+If a child task is updated, the parent task’s start and end dates are automatically updated to reflect the changes. The parent task’s progress is also updated based on the progress of its child tasks. Therefore, you cannot edit the parent taskbar's fields such as progress, endDate, as the parent taskbar is generated based on its subtasks.
+
+The rendering of the parent taskbar in auto-scheduling mode also takes into account the dependencies between tasks. If a child task is dependent on another task, the parent task’s start date and end date will be adjusted accordingly to ensure that the child task is not scheduled to start before its predecessor is completed.
+
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
