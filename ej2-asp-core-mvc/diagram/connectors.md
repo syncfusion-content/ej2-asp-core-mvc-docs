@@ -446,7 +446,38 @@ Orthogonal segments are automatically re-routed, in order to avoid overlapping w
 {% endtabs %}
 {% endif %}
 
+## How to customize Orthogonal Segment Thumb Shape 
 
+The orthogonal connector has a number of segments in between the source and the target point. The segments are rendered with the default shape rhombus. Now, the option has been provided to change the segment thumb shape using the [`segmentThumbShape`](../api/diagram#segmentThumbShape-SegmentThumbShapes) property. The predefined shapes provided are as follows:
+* Rhombus 
+* Square
+* Rectangle 
+* Ellipse 
+* Arrow 
+* Diamond 
+* OpenArrow 
+* Circle 
+* Fletch 
+* OpenFetch 
+* IndentedArrow
+* OutdentedArrow  
+* DoubleArrow
+
+You can customize the style of the thumb shape by overriding the class e-orthogonal-thumb.
+
+![Segment Thumb Shape](./images/SegmentThumb.gif)
+
+Use the following CSS to customize the segment thumb shape.
+
+```scss
+
+ .e-orthogonal-thumb {
+     stroke: #24039e;
+     fill: rgb(126, 190, 219);
+     stroke-width: 3px;
+    }
+
+```
 
 ## Bezier
 
