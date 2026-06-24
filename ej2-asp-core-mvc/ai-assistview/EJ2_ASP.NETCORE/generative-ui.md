@@ -35,8 +35,6 @@ Use the [addPromptResponse](../api/ai-assistview#addpromptresponse) method to dy
 {% endhighlight %}
 {% endtabs %}
 
-
-
 ## Configure AI for generative UI responses
 
 You can configure the AI service to return structured JSON blocks through `system prompt`. This ensures that AI-generated content is properly formatted and rendered as interactive tools or text blocks.
@@ -136,3 +134,7 @@ The following example demonstrates how to connect your AI service to generate an
     }
 </script>
 ```
+
+## See Also
+
+* [About response blocks](./chain-of-thoughts.md)

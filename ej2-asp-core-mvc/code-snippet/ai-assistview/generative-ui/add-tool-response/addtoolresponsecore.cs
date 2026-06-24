@@ -12,7 +12,8 @@ namespace WebApplication.Pages
             };
             ViewModel.PromptSuggestions = new string[]
             {
-                "Suggest a healthy breakfast recipe under 5 ingredients"
+                "Suggest a healthy breakfast recipe under 5 ingredients",
+                "What is the weather in New York?"
             };
         }
     }
