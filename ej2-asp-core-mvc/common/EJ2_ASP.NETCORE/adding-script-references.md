@@ -10,740 +10,618 @@ documentation: ug
 
 # Reference Scripts in ASP.NET Core Application
 
-This section provides information about reference scripts from CDN and Custom resource generator (CRG) for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+This section explains the available approaches for referencing client-side scripts and stylesheets for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. You can reference scripts via **CDN**, **Static Web Assets** (served directly from NuGet packages), **NPM Packages**, or the **Custom Resource Generator (CRG)**. 
 
-## CDN Reference
+## Static Web Assets
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every ASP.NET Core control as a separate node package in CDN, from which scripts and style sheets of the individual package can be loaded. Syncfusion<sup style="font-size:70%">&reg;</sup> also hosts a single node package with all ASP.NET Core controls on it, from which scripts and style sheets of all controls can be loaded as single script and style file.
+Static web assets allow you to reference Syncfusion<sup style="font-size:70%">&reg;</sup> scripts and stylesheets directly from the installed NuGet packages no CDN, no manual file copying. The ASP.NET Core framework serves these files automatically at the path `_content/{PackageName}/`, making them the most reliable and version-consistent way to reference scripts in production.
 
-Here, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core CDN URL for the both Individual ASP.NET Core control package and Complete ASP.NET Core controls package has been explained.
+### Enable Static Web Assets
 
-### CDN Reference for all controls
+To serve static web assets, call [UseStaticFiles](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-8.0) in the app's `~/Program.cs` file.
 
-The primary goal of all the ASP.NET Core controls package is to help the novice to get started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control by referring the single line for script and styles without bothering about the dependency graph of the ASP.NET Core controls.
+{% tabs %}
+{% highlight c# tabtitle="Program.cs" %}
 
-| controls | CDN Reference |
-| --- | --- |
-| Scripts reference for all controls| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js |
-| Styles reference for all controls | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{THEME-NAME}.css |
+var app = builder.Build();
+app.UseStaticFiles();
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> will never recommend all controls CDN for real-time projects. Because, the size of this CDN impacts website/app loading time since this package includes all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+{% endhighlight %}
+{% endtabs %}
 
-Add the EJ2 CDN client-side resources to the `<head>` element of the `~/Views/Shared/_Layout.cshtml` layout page.
+### Reference scripts from Static Web Assets
+
+The combined script for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls is available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) package. Add the reference in the `<head>` element of `~/Pages/Shared/_Layout.cshtml`.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
-    ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material.css" />
 
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Base/scripts/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-### Individual control CDN Reference
+> **Note:** Syncfusion<sup style="font-size:70%">&reg;</sup> does not recommend referencing the combined `ej2.min.js` in production applications because it includes all controls, which increases page load time. For production, use individual control script references as described below.
 
-The primary goal of individual control CDN is to optimize the loading time and memory of the website/app in the production stage. The order of individual control package loading should be in line with its dependency graph. The CDN of the Dependency Packages should be included manually before the intended individual control package CDN.
+### Individual control script references
 
-| controls | CDN Reference |
-| --- | --- |
-| Scripts reference for individual control| https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/dist/global/{PACKAGE-NAME}.min.js |
-| Styles reference for individual control | https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/{PACKAGE-NAME}/styles/{THEME-NAME}.css |
+For production use, reference only the scripts for the controls your application actually uses. This reduces the JavaScript payload significantly. Install the relevant NuGet package for each control group, then reference its static web asset files.
 
-Add the CDN client-side resources in the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` layout page.
+The script path follows this pattern:
 
-For example, the scripts and styles for the ASP.NET Core Calendar control are listed below.
+```
+_content/{NuGetPackageName}/scripts/{script-file-name}
+```
 
-{% tabs %}
-{% highlight c# tabtitle="~/_Layout.cshtml" %}
-
-<head>
-    ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/material.css" />
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" />
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/material.css" />
-
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-</head>
-
-{% endhighlight %}
-{% endtabs %}
-
-The following table demonstrates the list of individual Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control CDN reference and its dependency packages.
+The following table lists each NuGet package, the controls it covers, and the individual script files it provides.
 
 <table>
 <tr>
+<th>NuGet Package</th>
 <th>Controls</th>
-<th>Scripts</th>
+<th>Script Files</th>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/getting-started">Accordion</a></td>
+<td>Syncfusion.AspNetCore.AccumulationChart</td>
+<td>AccumulationChart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.AccumulationChart/scripts/sf-accumulation-chart.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
+<td>Syncfusion.AspNetCore.BarcodeGenerator</td>
+<td>Barcode Generator, DataMatrix, QR Code</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.BarcodeGenerator/scripts/sf-barcode.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.BarcodeGenerator/scripts/sf-datamatrix.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.BarcodeGenerator/scripts/sf-qrcode.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
+<td>Syncfusion.AspNetCore.BlockEditor</td>
+<td>Block Editor</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.BlockEditor/scripts/sf-blockeditor.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/badge/getting-started-asp-core">Badge</a></td>
+<td>Syncfusion.AspNetCore.BulletChart</td>
+<td>Bullet Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.BulletChart/scripts/sf-bullet-chart.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started">Barcode</a></td>
+<td>Syncfusion.AspNetCore.Buttons</td>
+<td>Button, CheckBox, Chips, FloatingActionButton, RadioButton, SpeedDial, Switch</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/dist/global/ej2-barcode-generator.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-button.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-check-box.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-chips.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-floating-action-button.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-radio-button.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-speed-dial.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-switch.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart,</a> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
+<td>Syncfusion.AspNetCore.Calendars</td>
+<td>Calendar, DatePicker, DateRangePicker, DateTimePicker, TimePicker</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Calendars/scripts/sf-calendar.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Calendars/scripts/sf-datepicker.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Calendars/scripts/sf-daterangepicker.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Calendars/scripts/sf-datetimepicker.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Calendars/scripts/sf-timepicker.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a> <br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
+<td>Syncfusion.AspNetCore.Charts</td>
+<td>Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Charts/scripts/sf-chart.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
+<td>Syncfusion.AspNetCore.Chart3D</td>
+<td>3D Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Chart3D/scripts/sf-chart3d.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></td>
+<td>Syncfusion.AspNetCore.CircularChart3D</td>
+<td>3D Circular Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.CircularChart3D/scripts/sf-circular3d.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/getting-started">Carousel</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/getting-started">Sidebar</a></td>
+<td>Syncfusion.AspNetCore.CircularGauge</td>
+<td>Circular Gauge</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src=="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.CircularGauge/scripts/sf-circular-gauge.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
+<td>Syncfusion.AspNetCore.Diagram</td>
+<td>Diagram</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-circulargauge/dist/global/ej2-circulargauge.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-diagram.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started">Color Picker</a></td>
+<td>Syncfusion.AspNetCore.DocumentEditor</td>
+<td>Document Editor, Document Editor Container</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DocumentEditor/scripts/sf-document-editor.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DocumentEditor/scripts/sf-document-editor-container.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
+<td>Syncfusion.AspNetCore.DropDowns</td>
+<td>AutoComplete, ComboBox, DropDownList, DropDownTree, ListBox, Mention, MultiSelect</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-auto-complete.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-combo-box.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-drop-down-list.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-drop-down-tree.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-list-box.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-mention.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.DropDowns/scripts/sf-multi-select.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
+<td>Syncfusion.AspNetCore.FileManager</td>
+<td>File Manager</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.FileManager/scripts/sf-file-manager.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
+<td>Syncfusion.AspNetCore.Gantt</td>
+<td>Gantt</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Gantt/scripts/sf-gantt.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker/getting-started">DateTimePicker</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></td>
+<td>Syncfusion.AspNetCore.Grid</td>
+<td>Grid</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Grid/scripts/sf-grid.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></td>
+<td>Syncfusion.AspNetCore.HeatMap</td>
+<td>HeatMap</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-diagrams/dist/global/ej2-diagrams.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.HeatMap/scripts/sf-heatmap.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></td>
+<td>Syncfusion.AspNetCore.ImageEditor</td>
+<td>Image Editor</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.ImageEditor/scripts/sf-image-editor.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">Auto Complete, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">DropDownList, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/getting-started">MultiSelect, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></td>
+<td>Syncfusion.AspNetCore.InPlaceEditor</td>
+<td>In-place Editor</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.InPlaceEditor/scripts/sf-inplace-editor.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-tree/getting-started">DropDownTree</a></td>
+<td>Syncfusion.AspNetCore.Inputs</td>
+<td>ColorPicker, MaskedTextBox, NumericTextBox, OTP Input, Rating, Signature, Slider, SpeechToText, TextArea, TextBox, Uploader</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-color-picker.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-maskedtextbox.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-numerictextbox.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-otp-input.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-rating.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-signature.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-slider.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-speech-to-text.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-textarea.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-textbox.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-uploader.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
+<td>Syncfusion.AspNetCore.InteractiveChat</td>
+<td>AI AssistView, Chat UI, Inline AI Assist</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.InteractiveChat/scripts/sf-ai-assistview.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.InteractiveChat/scripts/sf-chat-ui.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.InteractiveChat/scripts/sf-inline-ai-assist.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">Grid</a></td>
+<td>Syncfusion.AspNetCore.Kanban</td>
+<td>Kanban</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Kanban/scripts/sf-kanban.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
+<td>Syncfusion.AspNetCore.Layouts</td>
+<td>Dashboard Layout, Splitter, Timeline</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-heatmap/dist/global/ej2-heatmap.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Layouts/scripts/sf-dashboard-layout.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Layouts/scripts/sf-splitter.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Layouts/scripts/sf-timeline.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></td>
+<td>Syncfusion.AspNetCore.LinearGauge</td>
+<td>Linear Gauge</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.LinearGauge/scripts/sf-linear-gauge.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">NumericTextBox</a></td>
+<td>Syncfusion.AspNetCore.Lists</td>
+<td>ListView</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Lists/scripts/sf-list-view.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started">DropDownButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started">SplitButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/getting-started">ProgressButton</a></td>
+<td>Syncfusion.AspNetCore.Maps</td>
+<td>Maps</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Maps/scripts/sf-maps.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started">Tabs</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
+<td>Syncfusion.AspNetCore.MultiColumnComboBox</td>
+<td>MultiColumn ComboBox</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.MultiColumnComboBox/scripts/sf-multicolumn-combobox.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/toast/getting-started">Toast</a></td>
+<td>Syncfusion.AspNetCore.Navigations</td>
+<td>Accordion, AppBar, Breadcrumb, Carousel, ContextMenu, Menu, Sidebar, Stepper, Tabs, Toolbar, TreeView</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-accordion.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-appbar.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-breadcrumb.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-carousel.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-context-menu.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-menu.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-sidebar.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-stepper.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-tab.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-toolbar.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-treeview.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
+<td>Syncfusion.AspNetCore.Notifications</td>
+<td>Message, Skeleton, Toast</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Notifications/scripts/sf-message.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Notifications/scripts/sf-skeleton.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Notifications/scripts/sf-toast.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
+<td>Syncfusion.AspNetCore.PdfViewer</td>
+<td>PDF Viewer</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.PdfViewer/scripts/sf-pdfviewer.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
+<td>Syncfusion.AspNetCore.PivotView</td>
+<td>Pivot Table, Pivot Field List</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.PivotView/scripts/sf-pivotview.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.PivotView/scripts/sf-pivotfieldlist.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
+<td>Syncfusion.AspNetCore.Popups</td>
+<td>Dialog, Spinner, Tooltip</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treemap/dist/global/ej2-treemap.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Popups/scripts/sf-dialog.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Popups/scripts/sf-spinner.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Popups/scripts/sf-tooltip.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
+<td>Syncfusion.AspNetCore.ProgressBar</td>
+<td>Progress Bar</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.ProgressBar/scripts/sf-progressbar.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
+<td>Syncfusion.AspNetCore.QueryBuilder</td>
+<td>Query Builder</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-kanban/dist/global/ej2-kanban.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.QueryBuilder/scripts/sf-query-builder.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
+<td>Syncfusion.AspNetCore.RangeNavigator</td>
+<td>Range Navigator</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lineargauge/dist/global/ej2-lineargauge.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.RangeNavigator/scripts/sf-range-navigator.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
+<td>Syncfusion.AspNetCore.Ribbon</td>
+<td>Ribbon</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Ribbon/scripts/sf-ribbon.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
+<td>Syncfusion.AspNetCore.RichTextEditor</td>
+<td>Rich Text Editor</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-rich-text-editor.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
+<td>Syncfusion.AspNetCore.Sankey</td>
+<td>Sankey</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-maps/dist/global/ej2-maps.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Sankey/scripts/sf-sankey.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
+<td>Syncfusion.AspNetCore.Schedule</td>
+<td>Schedule</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pivotview/dist/global/ej2-pivotview.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Schedule/scripts/sf-schedule.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">QueryBuilder</a></td>
+<td>Syncfusion.AspNetCore.Smithchart</td>
+<td>Smith Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-querybuilder/dist/global/ej2-querybuilder.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Smithchart/scripts/sf-smithchart.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
+<td>Syncfusion.AspNetCore.Sparkline</td>
+<td>Sparkline</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-ej2-svg-base/dist/global/ej2-ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Sparkline/scripts/sf-sparkline.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
+<td>Syncfusion.AspNetCore.SplitButtons</td>
+<td>DropDownButton, ProgressButton, SplitButton</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.SplitButtons/scripts/sf-drop-down-button.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.SplitButtons/scripts/sf-progress-button.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.SplitButtons/scripts/sf-split-button.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></td>
+<td>Syncfusion.AspNetCore.Spreadsheet</td>
+<td>Spreadsheet</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Spreadsheet/scripts/sf-spreadsheet.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Schedule</a></td>
+<td>Syncfusion.AspNetCore.StockChart</td>
+<td>Stock Chart</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-schedule/dist/global/ej2-schedule.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.StockChart/scripts/sf-stock-chart.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></td>
+<td>Syncfusion.AspNetCore.TreeGrid</td>
+<td>Tree Grid</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.TreeGrid/scripts/sf-treegrid.min.js"></script>
 {% endhighlight %}
+
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
+<td>Syncfusion.AspNetCore.TreeMap</td>
+<td>TreeMap</td>
 <td>
+
 {% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-file-utils/dist/global/ej2-file-utils.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-compression/dist/global/ej2-compression.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-svg-base/dist/global/ej2-svg-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-charts/dist/global/ej2-charts.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-office-chart/dist/global/ej2-office-chart.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-documenteditor/dist/global/ej2-documenteditor.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.TreeMap/scripts/sf-treemap.min.js"></script>
 {% endhighlight %}
-</td>
-</tr>
-<tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt</a></td>
-<td>
-{% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-layouts/dist/global/ej2-layouts.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/dist/global/ej2-calendars.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-excel-export/dist/global/ej2-excel-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdf-export/dist/global/ej2-pdf-export.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/dist/global/ej2-grids.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-treegrid/dist/global/ej2-treegrid.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/dist/global/ej2-richtexteditor.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-gantt/dist/global/ej2-gantt.min.js"></script>
-{% endhighlight %}
-</td>
-</tr>
-<tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
-<td>
-{% highlight cshtml %}
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/dist/global/ej2-base.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-data/dist/global/ej2-data.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/dist/global/ej2-buttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/dist/global/ej2-inputs.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/dist/global/ej2-popups.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/dist/global/ej2-lists.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-filemanager/dist/global/ej2-filemanager.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/dist/global/ej2-navigations.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/dist/global/ej2-dropdowns.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/dist/global/ej2-splitbuttons.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/dist/global/ej2-notifications.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-drawings/dist/global/ej2-drawings.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inplace-editor/dist/global/ej2-inplace-editor.min.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-pdfviewer/dist/global/ej2-pdfviewer.min.js"></script>
-{% endhighlight %}
+
 </td>
 </tr>
 </table>
-
-In addition to above, Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls provides latest scripts and styles in CDN without versioning. You can use this in development environment if you want to always use the latest version of scripts and styles. It is not recommended to use this in production environment.
-
-| controls | CDN Reference |
-| --- | --- |
-| Scripts reference for all controls| https://cdn.syncfusion.com/ej2/dist/ej2.min.js |
-| Styles reference for all controls | https://cdn.syncfusion.com/ej2/{THEME-NAME}.css |
-
-W> The un-versioned CDN links which always maintains latest version scripts are deprecated from 2022 Vol1 - 20.1 version. These links are available with 19.4 version scripts to avoid breaking in sites and apps that uses un-versioned links.
 
 ## Node Package Manager (NPM)
 
@@ -895,11 +773,16 @@ gulp.task("copy-client-resource", function (done) {
 {% endhighlight %}
 {% endtabs %}
 
+## CDN Reference
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> hosts every ASP.NET Core control package on CDN, from which scripts and stylesheets can be loaded. For detailed CDN URLs, individual control CDN references, and CDN fallback configuration, refer to the [CDN Reference](./script-reference-cdn) page.
+
 ## Custom Resource Generator
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool for the ASP.NET Core Controls. To generate the control-wise scripts externally using CRG, refer [here](./custom-resource-generator).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core provides an option to generate a control's scripts using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) tool. Refer [here](./custom-resource-generator) for details.
 
 ## See also
 
+* [CDN Reference](./script-reference-cdn)
 * [CDN Fallback](./cdn-fallback)
-* [Adding Nonce to Script tag in ASP.NET Core](./security-aspects#adding-nonce-to-script-tag-in-aspnet-core)
+* [Adding Nonce to Script tag in ASP.NET Core](./security-aspects#adding-nonce-to-script-tag-in-aspnetcore)
