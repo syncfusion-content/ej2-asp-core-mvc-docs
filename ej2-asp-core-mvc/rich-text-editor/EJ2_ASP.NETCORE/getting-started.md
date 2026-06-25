@@ -2,6 +2,7 @@
 layout: post
 title: Getting Started with ##Platform_Name## Rich Text Editor | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more details.
+canonical_url: "https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor"
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
