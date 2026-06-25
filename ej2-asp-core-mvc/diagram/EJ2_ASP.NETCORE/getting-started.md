@@ -29,7 +29,7 @@ The main files used in this guide are:
 - `~/Pages/Index.cshtml` — Hosts the Diagram control.
 - `~/Pages/Index.cshtml.cs` — Defines the nodes and connectors data passed to the view.
 
-N> If your application uses the MVC pattern instead of Razor Pages, the equivalent files are typically `~/Views/_ViewImports.cshtml`, `~/Views/Shared/_Layout.cshtml`, `~/Views/Home/Index.cshtml`, and `~/Controllers/HomeController.cs`.
+N> If your application uses the MVC pattern instead of Razor Pages, the equivalent files are typically **~/Views/_ViewImports.cshtml**, **~/Views/Shared/_Layout.cshtml**, **~/Views/Home/Index.cshtml**, and **~/Controllers/HomeController.cs**.
 
 ## Step 1: Create an ASP.NET Core web application
 
@@ -69,9 +69,9 @@ N> The `Syncfusion.EJ2.AspNet.Core` package automatically installs its required 
 
 ## Step 3: Register the Syncfusion® Tag Helper
 
-Open the `~/Pages/_ViewImports.cshtml` file and add the Syncfusion<sup style="font-size:70%">&reg;</sup> tag helper reference.
+Open the **~/Pages/_ViewImports.cshtml** file and add the Syncfusion<sup style="font-size:70%">&reg;</sup> tag helper reference.
 
-```razor
+```
 @addTagHelper *, Syncfusion.EJ2
 ```
 
@@ -79,9 +79,9 @@ This makes the `<ejs-*>` tag helpers, including `<ejs-diagram>`, available in al
 
 ## Step 4: Add the required style and script references
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script references inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file along with the existing content.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script references inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** file along with the existing content.
 
-```razor
+```
 <head>
     ...
     <!-- Syncfusion® ASP.NET Core controls styles -->
@@ -91,15 +91,15 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> theme and script refere
 </head>
 ```
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> provides multiple built-in themes. To use a different theme, replace `tailwind3.css` with the corresponding theme file, such as `material3.css` or `fluent.css`. See the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) for more details.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> provides multiple built-in themes. To use a different theme, replace **tailwind3.css** with the corresponding theme file, such as **material3.css** or **fluent.css**. See the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) for more details.
 
 N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn other approaches such as NPM and CRG for adding script references.
 
 ## Step 5: Register the Syncfusion® Script Manager
 
-Add the `<ejs-scripts>` tag at the end of the `<body>` in the `~/Pages/Shared/_Layout.cshtml` file. The script manager renders the scripts required for Syncfusion<sup style="font-size:70%">&reg;</sup> controls to function correctly.
+Add the `<ejs-scripts>` tag at the end of the `<body>` in the **~/Pages/Shared/_Layout.cshtml** file. The script manager renders the scripts required for Syncfusion<sup style="font-size:70%">&reg;</sup> controls to function correctly.
 
-```razor
+```
 <body>
     ...
     <!-- Syncfusion® ASP.NET Core Script Manager -->
@@ -109,9 +109,9 @@ Add the `<ejs-scripts>` tag at the end of the `<body>` in the `~/Pages/Shared/_L
 
 ## Step 6: Add the Diagram control
 
-Add the `<ejs-diagram>` tag helper to the `~/Pages/Index.cshtml` file.
+Add the `<ejs-diagram>` tag helper to the **~/Pages/Index.cshtml** file.
 
-```razor
+```
 @page
 @model IndexModel
 <ejs-diagram id="diagram" width="100%" height="580px"></ejs-diagram>
@@ -127,11 +127,11 @@ This section explains how to create a simple flowchart by adding nodes, customiz
 
 The following example creates a flowchart with four nodes: **Start**, **Process**, **Decision**, and **End**. Nodes and connectors are defined in `Index.cshtml.cs` and passed to the view through `ViewBag`. The view then binds them to the `<ejs-diagram>` tag helper.
 
-### Define nodes and connectors in Index.cshtml.cs
+### Define nodes and connectors
 
-Open `~/Pages/Index.cshtml.cs` and declare `nodes` and `connectors` as public properties on the page model. Populate them inside the `OnGet` method so they are available to the view when the page loads.
+Open **~/Pages/Index.cshtml.cs** and declare `nodes` and `connectors` as public properties on the page model. Populate them inside the `OnGet` method so they are available to the view when the page loads.
 
-```csharp
+```
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Syncfusion.EJ2.Diagrams;
 using System.Collections.Generic;
@@ -195,11 +195,11 @@ public class IndexModel : PageModel
 }
 ```
 
-### Bind the data in Index.cshtml
+### Bind the data
 
-Update `~/Pages/Index.cshtml` to bind `@Model.nodes` and `@Model.connectors` to the `<ejs-diagram>` tag helper. The JavaScript function names are passed as string variables using the Razor `@{ }` block.
+Update **~/Pages/Index.cshtml** to bind `@Model.nodes` and `@Model.connectors` to the `<ejs-diagram>` tag helper. The JavaScript function names are passed as string variables using the Razor `@{ }` block.
 
-```razor
+```
 @page
 @model IndexModel
 @{
@@ -240,12 +240,12 @@ Update `~/Pages/Index.cshtml` to bind `@Model.nodes` and `@Model.connectors` to 
 In this example:
 
 * `nodes` and `connectors` are public properties on `IndexModel`, populated in `OnGet()` and accessed in the view via `@Model`.
-* [`OffsetX`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/nodemodel#offsetx) and [`OffsetY`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/nodemodel#offsety) define the position of each node.
-* [`Shape`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/flowshapemodel) sets the flowchart shape type, such as `Terminator`, `Process`, or `Decision`.
-* [`Annotations`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/annotationmodel) adds a text label inside each node using the [`Content`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/annotationmodel#content) property.
-* [`SourceID`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/connectormodel#sourceid) and [`TargetID`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/connectormodel#targetid) connect one node to another.
-* [`getNodeDefaults`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/index-default#getnodedefaults) applies common width, height, fill color, and stroke color to all nodes.
-* [`getConnectorDefaults`](https://ej2.syncfusion.com/aspnetcore/documentation/api/diagram/index-default#getconnectordefaults) applies common connector settings such as orthogonal routing and target arrows.
+* [`OffsetX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_OffsetY) define the position of each node.
+* [`Shape`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Shape) sets the flowchart shape type, such as `Terminator`, `Process`, or `Decision`.
+* [`Annotations`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNode.html#Syncfusion_EJ2_Diagrams_DiagramNode_Annotations) adds a text label inside each node using the [`Content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramNodeAnnotation.html#Syncfusion_EJ2_Diagrams_DiagramNodeAnnotation_Content) property.
+* [`SourceID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_SourceID) and [`TargetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramConnector.html#Syncfusion_EJ2_Diagrams_DiagramConnector_TargetID) connect one node to another.
+* [`getNodeDefaults`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_GetNodeDefaults) applies common width, height, fill color, and stroke color to all nodes.
+* [`getConnectorDefaults`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html#Syncfusion_EJ2_Diagrams_Diagram_GetConnectorDefaults) applies common connector settings such as orthogonal routing and target arrows.
 
 ## Step 7: Run the application
 
