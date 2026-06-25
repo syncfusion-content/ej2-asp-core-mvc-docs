@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Diagram Control
 
-This section explains the steps required to create a simple diagram and demonstrates the basic usage of the ASP.NET Core Diagram control.
+This section explains the steps required to create a simple diagram and demonstrates the basic usage of the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -264,3 +264,5 @@ The output will appear as follows:
 ![ASP.NET Core Diagram Control](./images/Getting-started.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+N> Looking for the full ASP.NET Core Diagram component overview, features, pricing, and documentation? Visit the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) page.

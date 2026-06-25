@@ -11,7 +11,7 @@ documentation: ug
 
 # Swimlane
 
-Swimlane is a type of diagram nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
+Swimlane is a type of [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) nodes, which is typically used to visualize the relationship between a business process and the department responsible for it by focusing on the logical relationships between activities.
 
 ## Create a swimlane
 

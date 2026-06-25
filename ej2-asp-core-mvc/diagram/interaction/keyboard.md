@@ -9,7 +9,7 @@ documentation: ug
 ---
 # Keyboard interactions
 
-Diagram provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) provides support to interact with the elements with key gestures. By default, some in-built commands are bound with a relevant set of key combinations.
 
 The following table illustrates those commands with the associated key values.
 

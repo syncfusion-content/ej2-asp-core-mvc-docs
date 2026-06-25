@@ -11,7 +11,7 @@ documentation: ug
 
 # History List in Diagram
 
-Diagram tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) tracks the history of actions that are performed after initializing the diagram and provides support to reverse and restore those changes.
 
 ## Undo and redo
 

@@ -10,7 +10,7 @@ documentation: ug
 
 # Ruler
 
-The Ruler provides a horizontal and vertical guide for measuring in the Diagram control. The Ruler can be used to measure the diagram objects, indicate positions, and align diagram elements. This is especially useful in creating scale models.
+The Ruler provides a horizontal and vertical guide for measuring in the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) control. The Ruler can be used to measure the diagram objects, indicate positions, and align diagram elements. This is especially useful in creating scale models.
 
 ## Adding Rulers to the Diagram
 
