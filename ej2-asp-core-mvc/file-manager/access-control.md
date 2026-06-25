@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Access Control in Syncfusion ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Access Control in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Access Control in Syncfusion ##Platform_Name## File Manager | Syncfusion
+description: Learn here all about Access Control in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Access Control
 publishingplatform: ##Platform_Name##
