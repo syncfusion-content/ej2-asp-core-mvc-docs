@@ -1,11 +1,15 @@
+@model IndexModel
 @using Syncfusion.EJ2.InteractiveChat
 
-<div id="register-tool">
-    @Html.EJS().AIAssistView("aiAssistView").PromptSuggestionsHeader("Suggested Prompts").PromptSuggestions((string[])ViewBag.PromptSuggestions).EnableStreaming(true).ShowClearButton(true).ToolbarSettings(new AIAssistViewToolbarSettings()
-    {
-        Items = ViewBag.Items,
-        ItemClicked = "toolbarItemClicked"
-    }).PromptRequest("onPromptRequest").Render()
+<div id="register-tool" style="height: 350px; width: 650px;">
+    <ejs-aiassistview id="aiAssistView"
+                        promptSuggestionsHeader="Suggested Prompts"
+                        promptSuggestions="@Model.ViewModel.PromptSuggestions"
+                        enableStreaming="true"
+                        showClearButton="true"
+                        promptRequest="onPromptRequest">
+        <e-aiassistview-toolbarsettings items="@Model.ViewModel.Items" itemClicked="toolbarItemClicked"></e-aiassistview-toolbarsettings>
+    </ejs-aiassistview>
 </div>
 
 <script>
@@ -19,7 +23,7 @@
 
     window.onload = function () {
         aiAssistViewInst = ej.base.getComponent(document.getElementById('aiAssistView'), 'aiassistview');
-        
+
         aiAssistViewInst.prompts = [
             {
                 prompt: "What is the weather in New York?",
@@ -249,22 +253,22 @@
     function toolbarItemClicked(args) {
         if (args.item.iconCss === 'e-icons e-refresh') {
             aiAssistViewInst.prompts = [];
-            aiAssistViewInst.promptSuggestions = @Html.Raw(Json.Serialize(ViewBag.PromptSuggestions));
+            aiAssistViewInst.promptSuggestions = @Html.Raw(Json.Serialize(Model.ViewModel.PromptSuggestions));
         }
     }
 </script>
 
 <style>
-    #register-tool {
-        height: 600px;
-        width: 60vw;
-        margin: 0 auto;
+    #register-tool .banner-content .e-assistview-icon:before {
+        font-size: 35px;
     }
 
-    @@media only screen and (max-width: 750px) {
-        #register-tool {
-            width: 100%;
-        }
+    #register-tool .banner-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 330px;
+        text-align: center;
     }
 
     #register-tool .e-assist-tool .e-card:hover,
@@ -392,5 +396,15 @@
 
     #register-tool #weather_card.e-card .e-card-header.weather_report .e-card-header-image {
         background-image: url('https://ej2.syncfusion.com/javascript/demos/src/card/images/rainy.svg');
+    }
+
+    #register-tool .col-xs-6.col-sm-6.col-lg-6.col-md-6 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #register-tool .card-layout {
+        margin: auto;
+        max-width: 400px;
     }
 </style>

@@ -28,10 +28,10 @@ Use the [addPromptResponse](../api/ai-assistview#addpromptresponse) method to dy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/ai-assistview/generative-ui/add-tool-response/razor %}
+{% include code-snippet/ai-assistview/register-tool/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GenerativeUI.cs" %}
-{% include code-snippet/ai-assistview/generative-ui/add-tool-response/addtoolresponsemvc.cs %}
+{% include code-snippet/ai-assistview/register-tool/addtoolresponsemvc.cs %}
 {% endhighlight %}
 {% endtabs %}
 
