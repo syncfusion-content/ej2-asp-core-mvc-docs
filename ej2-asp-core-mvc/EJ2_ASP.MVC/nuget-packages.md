@@ -33,6 +33,7 @@ This package contains the base component, common classes, common functionalities
 <td>
 <ul>
 <li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.Javascript/" target="_blank">Syncfusion.EJ2.Javascript</a></li>
 <li><a href="https://www.nuget.org/packages/Syncfusion.Licensing/" target="_blank">Syncfusion.Licensing</a></li>
 </ul>
 </td>
