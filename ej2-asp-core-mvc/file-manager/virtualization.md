@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Enable Virtualization in ##Platform_Name## File Manager | Syncfusion
+description: Learn here all about Virtualization in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
