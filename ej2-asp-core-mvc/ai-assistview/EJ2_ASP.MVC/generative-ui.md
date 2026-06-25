@@ -14,7 +14,7 @@ The `Generative UI` in AI AssistView allows you to render dynamic tools and UI e
 
 ## Register tools
 
-You can register custom tools using the [registerToolUI](../api/ai-assistview#registertoolui) method. It accepts tool name as string values, template and optional handler function. Tools are invoked by their name within block responses added through `addPromptResponse` method.
+You can register custom tools using the `registerToolUI` method. It accepts tool name as string values, template and optional handler function. Tools are invoked by their name within block responses added through `addPromptResponse` method.
 
 > **Note:** Use the blockType as `tool` and provide the tool name with the required properties through `props`. Tool should be registered before adding in responses and tool name should be unique.
 
@@ -24,7 +24,7 @@ When registering a tool, you can configure how it appears by specifying a templa
 
 ## Add tools in prompt responses
 
-Use the [addPromptResponse](../api/ai-assistview#addpromptresponse) method to dynamically add tools to AI responses by passing the tool blocks in the response.
+Use the `addPromptResponse` method to dynamically add tools to AI responses by passing the tool blocks in the response.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
