@@ -226,7 +226,7 @@ In the above example, the [`levelCount`](https://help.syncfusion.com/cr/aspnetco
 
 ### Append Current Selection to Existing Filters
 
-By default, when a filter is applied and a new field member is selected, the Pivot Table replaces the previous selection.Enabling the **Add current selection to filter** option ensures that each new selection is added to the existing filter instead of replacing it. This allows you to select multiple items incrementally without losing earlier selections.
+By default, when a filter is applied and a new field member is selected, the Pivot Table replaces the previous selection. Enabling the **Add current selection to filter** option ensures that each new selection is added to the existing filter instead of replacing it. This allows you to select multiple items incrementally without losing earlier selections.
 
 To append current selections to existing filters:
 
