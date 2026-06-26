@@ -31,7 +31,7 @@ app.UseStaticFiles();
 
 ### Reference scripts from Static Web Assets
 
-The combined script for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls is available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) package. Add the reference in the `<head>` element of `~/Pages/Shared/_Layout.cshtml`.
+The combined script for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls is available in the [Syncfusion.AspNetCore.Base](https://www.nuget.org/packages/Syncfusion.AspNetCore.Base/) package. Add the reference in the `<head>` element of `~/Pages/Shared/_Layout.cshtml`.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
@@ -66,12 +66,12 @@ The following table lists each NuGet package, the controls it covers, and the in
 <th>Script Files</th>
 </tr>
 <tr>
-<td>Syncfusion.AspNetCore.AccumulationChart</td>
+<td>Syncfusion.AspNetCore.Charts</td>
 <td>AccumulationChart</td>
 <td>
 
 {% highlight cshtml %}
-<script src="_content/Syncfusion.AspNetCore.AccumulationChart/scripts/sf-accumulation-chart.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Charts/scripts/sf-accumulation-chart.min.js"></script>
 {% endhighlight %}
 
 </td>
