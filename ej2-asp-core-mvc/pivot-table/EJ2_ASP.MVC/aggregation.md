@@ -33,6 +33,7 @@ End users can perform calculations on groups of values (specifically for value f
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
+| PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
 | PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
