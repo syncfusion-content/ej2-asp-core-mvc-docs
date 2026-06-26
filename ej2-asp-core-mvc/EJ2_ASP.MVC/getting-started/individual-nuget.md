@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DataGrid Control (Individual NuGet) | Syncfusion
+title: ##Platform_Name## DataGrid Control Using Individual NuGet | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## DataGrid control using the individual Syncfusion.AspNetMvc.Grid NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
@@ -25,7 +25,7 @@ This section briefly explains how to include the [ASP.NET MVC DataGrid](https://
 
 Instead of installing the combined `Syncfusion.EJ2.MVC5` package, you can install only the **Grid**-specific package to reduce dependencies when your application needs just the DataGrid control.
 
-Open the NuGet Package Manager in Visual Studio (Tools &rarr; NuGet Package Manager &rarr; Manage NuGet Packages for Solution), search for [Syncfusion.AspNetMvc.Grid](https://www.nuget.org/packages/Syncfusion.AspNetMvc.Grid) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
+Open the NuGet Package Manager in Visual Studio (Tools &rarr; NuGet Package Manager &rarr; Manage NuGet Packages for Solution), search for `Syncfusion.AspNetMvc.Grid` and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}

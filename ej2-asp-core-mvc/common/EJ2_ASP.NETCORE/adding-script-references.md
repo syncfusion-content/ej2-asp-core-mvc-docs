@@ -31,7 +31,7 @@ app.UseStaticFiles();
 
 ### Reference scripts from Static Web Assets
 
-The combined script for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls is available in the [Syncfusion.AspNetCore.Base](https://www.nuget.org/packages/Syncfusion.AspNetCore.Base/) package. Add the reference in the `<head>` element of `~/Pages/Shared/_Layout.cshtml`.
+The combined script for all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls is available in the `Syncfusion.AspNetCore.Base` package. Add the reference in the `<head>` element of `~/Pages/Shared/_Layout.cshtml`.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
