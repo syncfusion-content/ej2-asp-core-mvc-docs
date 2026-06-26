@@ -401,7 +401,6 @@ Verify the following:
 
 Verify the following:
 
-* `cursorLabelVisibility` is set to `'always'` if labels should be permanently visible.
 * The `user` field is populated for all entries in the `users` array.
 
 ### Version History Is Not Available
