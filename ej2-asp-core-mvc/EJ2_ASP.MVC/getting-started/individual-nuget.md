@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC DataGrid Control (Individual NuGet Package)
+# Getting Started with ASP.NET MVC DataGrid Individual NuGet Package
 
 This section briefly explains how to include the [ASP.NET MVC DataGrid](https://www.syncfusion.com/aspnet-mvc-ui-controls/grid) control in your application using the individual `Syncfusion.AspNetMvc.Grid` NuGet package in Visual Studio.
 
