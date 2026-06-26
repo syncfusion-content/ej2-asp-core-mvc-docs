@@ -10,43 +10,53 @@ documentation: ug
 
 # Collaborative Editing in ASP.NET MVC Block Editor control
 
-The Block Editor supports real-time collaborative editing, allowing multiple users to work on the same document simultaneously.
-
-Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across connected users while automatically resolving conflicts.
+The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
 With collaboration enabled, users can:
 
 * Edit the same document in real time.
 * View remote user cursors and selections.
 * Track active collaborators.
-* Perform collaborative undo and redo operations.
+* Perform collaboration-aware undo and redo operations.
 * Create, restore, compare, export, and import document versions.
 
 ## Prerequisites
 
-To use collaboration, install the `yjs` library and any one of the provider such as:
+Before enabling collaboration, install the `yjs` library and a Yjs provider. See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choose the right provider for your use case.
 
-* `y-websocket`
-* `y-webrtc`
-* Any custom provider compatible with Yjs
+## Yjs Providers
 
-You must inject the Collaboration module into the Block Editor.
+A Yjs provider handles the transport of document updates between connected users. Choose a provider based on your deployment requirements.
 
-```cshtml
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Render()
-</div>
+| Provider | Type | Use Case |
+| -------- | ---- | -------- |
+| `y-websocket` | Self-hosted | Production deployments with your own WebSocket server. |
+| `y-webrtc` | Peer-to-peer | Quick local testing and development; no server required. |
+| `y-indexeddb` | Local storage | Offline persistence within a single browser. |
+| [Hocuspocus](https://tiptap.dev/docs/hocuspocus/getting-started/overview) | Open-source server | Scalable Node.js server with pluggable storage and Redis support. |
+| [Liveblocks](https://liveblocks.io/) | Fully managed | Hosted WebSocket infrastructure with REST API and DevTools. |
+| [PartyKit](https://www.partykit.io/) | Serverless | Serverless provider on Cloudflare; ideal for prototyping. |
 
-<script>
-    ej.blockeditor.BlockEditor.Inject(ej.blockeditor.Collaboration);
-</script>
-```
+> **Note:** For development and testing, `y-webrtc` or PartyKit allow you to get started without a server. For production, use `y-websocket` or a managed provider such as Liveblocks or Hocuspocus for reliable, persistent synchronization.
+
+## Configure collaboration settings
+
+Use the `collaborationSettings` property of type `CollaborationSettingsModel` to configure collaboration settings for your Block Editor. It provides the following properties that allow you to customize the collaboration behavior:
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `provider` | `any` | Real-time transport used to synchronize document changes. |
+| `enableAwareness` | `boolean` | Enables user presence, remote cursors, and text selection overlays. |
+| `adapter` | `CollaborationAdapter` | Provides the Yjs runtime and shared XML fragment. |
+| `versionHistory` | `VersionHistorySettingsModel` | Configures document version history support. |
 
 ## Getting Started
 
-### Create a Yjs Document
+The following steps will help you set up real-time collaboration in the Block Editor using `Yjs`.
 
-Create a shared Yjs document and fragment.
+### Step 1: Create a Yjs document
+
+Create a shared Yjs document and XML fragment.
 
 ```cshtml
 <script>
@@ -56,22 +66,24 @@ Create a shared Yjs document and fragment.
 </script>
 ```
 
-### Create a Yjs Adapter
+### Step 2: Create a Yjs adapter
 
-Create an adapter that provides the Yjs runtime and shared fragment.
+Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 
 ```cshtml
 <script>
     var adapter = new ej.blockeditor.YjsAdapter({
-        YRuntime: Y,
+        yRuntime: Y,
         yXmlFragment: yFragment
     });
 </script>
 ```
 
-### Configure a Provider
+### Step 3: Configure a provider
 
-Create a provider that connects users to the same shared document.
+Create a provider that connects users to the same shared document. The following example uses `y-websocket` for production use. For local development, replace it with `y-webrtc` or a PartyKit provider — no server setup is required.
+
+**Production (y-websocket):**
 
 ```cshtml
 <script>
@@ -83,56 +95,49 @@ Create a provider that connects users to the same shared document.
 </script>
 ```
 
-### Enable Collaboration
-
-Configure the Block Editor with collaboration settings.
+**Development (y-webrtc):**
 
 ```cshtml
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("onCreated").Render()
-</div>
-
 <script>
-    var blockEditorObj;
-
-    function onCreated() {
-        blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.collaborationSettings = {
-            adapter: adapter,
-            provider: provider
-        };
-    }
+    var provider = new WebrtcProvider('document-room-id', yDoc);
 </script>
 ```
 
-## User Presence and Remote Cursors
+### Step 4: Enable Collaboration
 
-The Block Editor can display remote cursors, text selection overlays and modified user details on hover.
-
-To enable user presence features, set `enableAwareness` to `true`.
+Pass the adapter and provider to the Block Editor through the `collaborationSettings` property.
 
 ```cshtml
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("onCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider");
+    }).Render()
 </div>
-
-<script>
-    var blockEditorObj;
-
-    function onCreated() {
-        blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.collaborationSettings = {
-            adapter: adapter,
-            provider: provider,
-            enableAwareness: true
-        };
-    }
-</script>
 ```
 
-### Configure the Current User
+## User presence and remote cursors
 
-Set information about the current user.
+The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these user presence features, set `enableAwareness` to `true` in `collaborationSettings` property.
+
+```cshtml
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider").EnableAwareness(true);
+    }).Render()
+</div>
+```
+
+## Configure the current user
+
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `color` value is used for that user's remote cursor and text selection overlay.
+
+The following properties are available when configuring users via the `users` property.
+
+| Property | Type | Description |
+| -------- | ---- | ----------- |
+| `id` | `string` | Unique identifier for the user. |
+| `user` | `string` | Display name shown on remote cursors and presence indicators. |
+| `color` | `string` | Hex color used for this user's remote cursor and selection highlight. |
 
 ```cshtml
 <div id='blockeditor-container'>
@@ -144,18 +149,17 @@ Set information about the current user.
 
     function onCreated() {
         blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        // Users and current user id can also be set through the instance
-        blockEditorObj.users = [{ id: 'user-1', user: 'John Doe' }];
+        blockEditorObj.users = [{ id: 'user-1', user: 'John Doe', color: '#e74c3c' }];
         blockEditorObj.currentUserId = 'user-1';
     }
 </script>
 ```
 
-N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id` and `user` properties), or set directly on the client-side instance as shown above.
+N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id`, `user`, and `color` properties), or set directly on the client-side instance as shown above.
 
-### Get Active Users
+### Get active users
 
-Retrieve all currently connected users.
+Retrieve all currently connected users using the `users` property in the block editor.
 
 ```cshtml
 <script>
@@ -163,19 +167,54 @@ Retrieve all currently connected users.
 </script>
 ```
 
-## Collaborative Undo and Redo
+## Version history
 
-Undo and redo operations are collaboration-aware.
+`Version History` allows you to capture document snapshots and restore earlier versions. This is a built-in capability of the Block Editor and does not require a third-party service.
 
-Only changes made by the current user are included in that user's undo history. Undoing an action does not revert edits made by other collaborators.
+### Enable version history
 
-## Version History
+Configure the `versionHistory` property under `collaborationSettings` property.
 
-Version History allows you to capture document snapshots and restore previous versions.
+```cshtml
+<div id='blockeditor-container'>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider").VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotInterval(3000);
+        });
+    }).Render()
+</div>
 
-### Configure Snapshot Storage
+<script>
+    var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
+</script>
+```
 
-You need to provide your own custom storage implementation for persisting snapshots by implementing the `IVersionStorage` interface.
+### Access the version history instance
+
+After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
+
+```cshtml
+<script>
+    var versionHistory = blockEditorObj.getVersionHistory();
+    versionHistory.whenReady().then(function () {
+        // Snapshots are now loaded and ready to use
+    });
+</script>
+```
+
+### Configure snapshot storage
+
+Version snapshots need to be persisted to enable version history across browser sessions. Implement the `IVersionStorage` interface to provide a custom storage backend for managing snapshots. You can use IndexedDB, a backend database, or any other storage solution suitable for your deployment.
+
+The `IVersionStorage` interface defines the following methods:
+
+| Method | Signature | Description |
+| ------ | --------- | ----------- |
+| `saveSnapshot` | `(snapshot: VersionSnapshot): Promise<void>` | Persist a snapshot. |
+| `loadAllSnapshots` | `(): Promise<VersionSnapshot[]>` | Load all persisted snapshots, ordered by timestamp ascending. |
+| `loadSnapshot` | `(id: string): Promise<VersionSnapshot \| null>` | Load a single snapshot by id. |
+| `deleteSnapshot` | `(id: string): Promise<void>` | Permanently remove a snapshot by id. |
+| `clearAll` | `(): Promise<void>` | Remove all snapshots from storage. |
 
 ```cshtml
 <script>
@@ -189,62 +228,11 @@ You need to provide your own custom storage implementation for persisting snapsh
 </script>
 ```
 
-### Enable Version History
+### Methods
 
-```cshtml
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("onCreated").Render()
-</div>
+#### Create a snapshot
 
-<script>
-    var blockEditorObj;
-    var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
-
-    function onCreated() {
-        blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.collaborationSettings = {
-            adapter: adapter,
-            provider: provider,
-            versionHistory: {
-                storage: myStorage,
-                snapshotInterval: 3000 // 3 seconds debounce
-            }
-        };
-    }
-</script>
-```
-
-You must inject the VersionHistory module into the Block Editor.
-
-```cshtml
-<script>
-    ej.blockeditor.BlockEditor.Inject(ej.blockeditor.VersionHistory);
-</script>
-```
-
-### Wait for Initialization
-
-Once BlockEditor has been initialized, you can get the version history instance from the editor.
-
-```cshtml
-<script>
-    var versionHistory = blockEditorObj.getVersionHistory();
-</script>
-```
-
-Snapshots are loaded asynchronously from the configured storage.
-
-```cshtml
-<script>
-    versionHistory.whenReady().then(function () {
-        // Snapshots are now loaded and ready to use
-    });
-</script>
-```
-
-### Version history methods
-
-#### Creating a Snapshot
+Creates a new snapshot of the current document state with an optional label and metadata.
 
 ```cshtml
 <script>
@@ -257,23 +245,23 @@ Snapshots are loaded asynchronously from the configured storage.
 </script>
 ```
 
-#### Listing Snapshots
+#### List snapshots
+
+Retrieves all saved snapshots or a paginated subset. Snapshots are returned in chronological order.
 
 ```cshtml
 <script>
+    // Retrieve all snapshots
     var snapshots = versionHistory.getSnapshots();
-</script>
-```
 
-For large histories:
-
-```cshtml
-<script>
+    // Retrieve a paginated subset — getSnapshots(skip, take)
     var snapshots = versionHistory.getSnapshots(20, 40);
 </script>
 ```
 
-#### Renaming a Snapshot
+#### Rename a snapshot
+
+Updates the label or metadata of an existing snapshot without modifying its content.
 
 ```cshtml
 <script>
@@ -283,7 +271,9 @@ For large histories:
 </script>
 ```
 
-#### Restoring a Snapshot
+#### Restore a snapshot
+
+Reverts the document to a previously saved snapshot state. The current document state is automatically backed up before restoration.
 
 ```cshtml
 <script>
@@ -293,9 +283,11 @@ For large histories:
 </script>
 ```
 
-When a snapshot is restored, the current document state is automatically backed up before the restore operation is applied.
+> **Note:** When a snapshot is restored, the current document state is automatically backed up before the restore operation is applied.
 
-#### Comparing Versions
+#### Compare versions
+
+Compares two snapshots to identify differences such as added, removed, or modified content.
 
 ```cshtml
 <script>
@@ -303,9 +295,11 @@ When a snapshot is restored, the current document state is automatically backed 
 </script>
 ```
 
-The returned `VersionDiff` object provides a summary of the differences between the selected versions.
+The returned `VersionDiff` object provides a summary of the differences between the two selected versions.
 
-#### Exporting a Snapshot
+#### Export a snapshot
+
+Serializes a snapshot into a portable format that can be stored externally or transferred between systems.
 
 ```cshtml
 <script>
@@ -317,7 +311,9 @@ The returned `VersionDiff` object provides a summary of the differences between 
 
 Exported snapshots can be stored externally or transferred between systems.
 
-#### Importing a Snapshot
+#### Import a snapshot
+
+Imports a previously exported snapshot back into the version history storage.
 
 ```cshtml
 <script>
@@ -327,120 +323,90 @@ Exported snapshots can be stored externally or transferred between systems.
 </script>
 ```
 
-### Snapshot Events
+### Events
 
-You can respond to version history events through the version history settings.
+Use the following event callbacks in `versionHistory` settings to respond to snapshot lifecycle events.
 
-#### Snapshot Created
+#### snapshotCreated
+
+Triggered when a new snapshot is created.
 
 ```cshtml
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("onCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotCreated("onSnapshotCreated");
+        });
+    }).Render()
 </div>
 
 <script>
-    var blockEditorObj;
-    var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
-
-    function onCreated() {
-        blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.collaborationSettings = {
-            versionHistory: {
-                storage: myStorage,
-                snapshotCreated: function (args) {
-                    var snapshot = args.snapshot;
-                    console.log(snapshot.id);
-                }
-            }
-        };
+    function onSnapshotCreated(args) {
+        var snapshot = args.snapshot;
+        console.log(snapshot.id);
     }
 </script>
 ```
 
-#### Snapshot Restored
+#### snapshotRestored
+
+Triggered when a snapshot is restored.
 
 ```cshtml
 <div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Created("onCreated").Render()
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotRestored("onSnapshotRestored");
+        });
+    }).Render()
 </div>
 
 <script>
-    var blockEditorObj;
-    var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
-
-    function onCreated() {
-        blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.collaborationSettings = {
-            versionHistory: {
-                storage: myStorage,
-                snapshotRestored: function (args) {
-                    var snapshot = args.snapshot;
-                    var backupSnapshot = args.backupSnapshot;
-                    console.log(snapshot.label);
-                }
-            }
-        };
+    function onSnapshotRestored(args) {
+        var snapshot = args.snapshot;
+        var backupSnapshot = args.backupSnapshot;
+        console.log(snapshot.label);
     }
 </script>
 ```
-
-## Collaboration Settings
-
-The following properties are available in `CollaborationSettingsModel`.
-
-| Property          | Type                          | Description                                               |
-| ----------------- | ----------------------------- | --------------------------------------------------------- |
-| `adapter`         | `CollaborationAdapter`        | Provides the Yjs runtime and shared fragment.             |
-| `provider`        | `any`                         | Real-time transport used to synchronize document changes. |
-| `enableAwareness` | `boolean`                     | Enables user presence, remote cursors, and selections.    |
-| `versionHistory`  | `VersionHistorySettingsModel` | Enables document version history support.                 |
 
 ## Best Practices
 
-### Use Stable Room Identifiers
-
-Use a unique document identifier as the collaboration room name.
-
-```cshtml
-<script>
-    var roomName = documentId;
-</script>
-```
-
-### Persist Snapshots
-
-Store snapshots in a database or cloud storage to preserve version history across sessions.
-
-### Enable Awareness Only When Needed
-
-Disable awareness features when user presence information is not required.
-
-### Use WebSocket-Based Providers in Production
-
-WebSocket providers offer reliable synchronization and are recommended for production deployments.
+* **Use WebRTC or PartyKit for development** — These providers require no server setup and are ideal for local testing and prototyping before moving to a production provider.
+* **Use WebSocket-based providers in production** — `y-websocket`, Hocuspocus, or a managed service like Liveblocks provides reliable, low-latency, persistent synchronization at scale.
+* **Use stable room identifiers** — Use a unique document ID as the collaboration room name to prevent unintended document sharing between different documents.
+* **Persist snapshots externally** — Store snapshots in a database or cloud storage to preserve version history across sessions.
+* **Enable awareness selectively** — Disable `enableAwareness` when user presence information is not required to reduce network and processing overhead.
 
 ## Troubleshooting
 
 ### Changes Are Not Synchronizing
 
-Verify that:
+Verify the following:
 
-* All users are connected to the same room.
+* All users are connected to the same collaboration room.
 * The provider connection is active.
 * The shared Yjs document is correctly configured.
 
 ### Remote Cursors Are Not Visible
 
-Verify that:
+Verify the following:
 
-* `enableAwareness` is enabled.
-* The provider supports awareness.
-* User information has been configured in the editor.
+* `enableAwareness` is set to `true`.
+* The configured provider supports the Yjs awareness protocol.
+* User information is set via the `users` and `currentUserId` properties.
+* Each user has a unique `id` value.
+
+### Remote User Names Are Not Appearing on Cursors
+
+Verify the following:
+
+* `cursorLabelVisibility` is set to `'always'` if labels should be permanently visible.
+* The `user` field is populated for all entries in the `users` array.
 
 ### Version History Is Not Available
 
-Verify that:
+Verify the following:
 
-* VersionHistory Module is injected into the editor.
-* A valid storage implementation is configured.
-* Snapshot initialization has completed by calling `whenReady()`.
+* A valid `IVersionStorage` implementation is provided through the `versionHistory` settings.
+* `whenReady()` has been awaited before accessing snapshots.
