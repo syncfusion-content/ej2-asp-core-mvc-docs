@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Multiple Selection in ##Platform_Name## Syncfusion File Manager Control | Syncfusion
-description: Learn here all about Multiple Selection in Syncfusion ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Multiple Selection in ##Platform_Name## File Manager | Syncfusion
+description: Learn here all about Multiple Selection in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Selection
 publishingplatform: ##Platform_Name##

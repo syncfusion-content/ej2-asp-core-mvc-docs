@@ -1,0 +1,29 @@
+<ejs-stockchart id="stockchart" load="stockLoad" title="AAPL Stock Price" beforeIndicatorChange="beforeIndicatorChange" indicatorChanged="indicatorChanged"
+    seriesType="@(new List<Object>() { })" exportType="@(new List<Object>() { })" trendlineType="@(new List<Object>() { })">
+    <e-stockchart-primaryxaxis valueType="DateTime"></e-stockchart-primaryxaxis>
+    <e-stockchart-series-collection>
+        <e-stockchart-series type="Candle" xName="x" open="open" high="high" low="low" close="close" volume="volume" name="Apple Inc">
+        </e-stockchart-series>
+    </e-stockchart-series-collection>
+    <e-stockchart-crosshairsettings enable="true"></e-stockchart-crosshairsettings>
+    <e-stockchart-tooltipsettings enable="true"></e-stockchart-tooltipsettings>
+</ejs-stockchart>
+
+<script src="~/financial-data.js"></script>
+
+<script>
+    var data = chartData;
+    function stockLoad(args) {
+        args.stockChart.series[0].dataSource = data;
+    }
+    function beforeIndicatorChange(args) {
+        console.log('Before Indicator Change:', args.type);
+        // Prevent EMA indicator
+        if (args.type === 'Ema') {
+            args.cancel = true;
+        }
+    }
+    function indicatorChanged(args) {
+        console.log(args.type + ' indicator ' + (args.isAdd ? 'added' : 'removed'));
+    }
+</script>

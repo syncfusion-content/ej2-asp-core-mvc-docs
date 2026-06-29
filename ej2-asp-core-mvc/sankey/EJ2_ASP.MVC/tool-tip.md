@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ToolTip in ##Platform_Name## Sankey Chart Component
+title: ToolTip in ##Platform_Name## Syncfusion Sankey Chart Component
 description: Learn here all about ToolTip in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: ToolTip
@@ -139,6 +139,79 @@ Format string placeholders for link tooltips:
 {% endhighlight %}
 {% highlight c# tabtitle="Link-tooltip.cs" %}
 {% include code-snippet/sankey/tooltip/link-tooltip/link-tooltip.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% endif %}
+
+## Inline tooltip formatting
+
+The tooltip content can be formatted directly within the `NodeFormat` and `LinkFormat` properties by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how node and link values are displayed without using additional events.
+
+A format specifier is applied by adding a colon (`:`) followed by the required format. Sankey tooltip supports both `$` placeholders and `${}` placeholders for displaying tooltip values. When a value needs to be formatted, use the `${}` placeholder syntax with a colon (`:`) followed by the required format specifier.
+
+For example:
+
+```cshtml
+    .Tooltip(t => t
+        .Enable(true)
+        .NodeFormat("${name} : ${value:n2} TBtu")
+        .LinkFormat("${start.name} : ${start.out:n2} TBtu → ${target.name} : ${target.in:n2} TBtu<br>Flow: ${value:n2} TBtu")
+    )
+```
+
+In the above example, `${name}`, `${start.name}`, and `${target.name}` display text values directly, while `${value:n2}`, `${start.out:n2}`, and `${target.in:n2}` display numeric values with two decimal places.
+
+Sankey tooltip values can be displayed in either of the following ways:
+
+- `$start.name` or `${start.name}` – Displays the source node name.
+- `$target.name` or `${target.name}` – Displays the target node name.
+- `$value` or `${value}` – Displays the node or link value.
+
+To apply formatting, use the `${}` syntax with the required format specifier. For example, `${value:n2}` displays the value with two decimal places.
+
+Inline formatting can be applied to the following tooltip placeholders:
+
+- `$name` or `${name}` – Specifies the name or label of the hovered node.
+- `$value`, `${value}`, or `${value:n2}` – Specifies the value of the hovered node or link.
+- `$start.name` or `${start.name}` – Specifies the name of the source node in a link tooltip.
+- `$start.value`, `${start.value}`, or `${start.value:n2}` – Specifies the value of the source node in a link tooltip.
+- `$start.out`, `${start.out}`, or `${start.out:n2}` – Specifies the outgoing value from the source node in a link tooltip.
+- `$target.name` or `${target.name}` – Specifies the name of the target node in a link tooltip.
+- `$target.value`, `${target.value}`, or `${target.value:n2}` – Specifies the value of the target node in a link tooltip.
+- `$target.in`, `${target.in}`, or `${target.in:n2}` – Specifies the incoming value to the target node in a link tooltip.
+
+**Important:** Sankey tooltip placeholders can be used in both `$placeholder` and `${placeholder}` formats, such as `$start.name` or `${start.name}`. However, when applying number formatting, the `${placeholder:format}` syntax must be used, such as `${value:n2}`, `${start.out:n2}`, and `${target.in:n2}`. Formatting is applied only when the resolved value supports the specified format. String tokens, such as `${name}`, `${start.name}`, and `${target.name}`, are displayed as plain text and do not support number formatting.
+
+The following number formats are supported:
+
+- `n2` – number with two decimal places
+- `n0` – number without decimals
+- `c2` – currency format
+- `p1` – percentage format
+- `e1` – exponential notation
+
+If the specified format does not match the resolved value type, the original value is displayed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/inline-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Inline-format.cs" %}
+{% include code-snippet/sankey/tooltip/inline-format/inline-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/sankey/tooltip/inline-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Inline-format.cs" %}
+{% include code-snippet/sankey/tooltip/inline-format/inline-format.cs %}
 {% endhighlight %}
 {% endtabs %}
 
