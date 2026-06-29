@@ -160,7 +160,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/schedule/customization/cell-header-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -169,7 +170,8 @@ The month header of each date cell in the month view can be customized using the
 {% include code-snippet/schedule/customization/cell-header-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-header-customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -246,7 +248,8 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/schedule/customization/weekend-cell-color/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -255,7 +258,8 @@ And, the background color for weekend cells in the Month view through the [`cssC
 {% include code-snippet/schedule/customization/weekend-cell-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Weekend-cell-color.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## How to disable multiple cell and row selection in Schedule
