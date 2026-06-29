@@ -100,7 +100,7 @@ By default, the header bar holds the view navigation options, through which the 
 
 
 
-N> Refer [here](./resources/#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
+N> Refer [here](./resources#adaptive-ui-in-desktop) to know more about adaptive UI in resources scheduler.
 
 ## Date header customization
 

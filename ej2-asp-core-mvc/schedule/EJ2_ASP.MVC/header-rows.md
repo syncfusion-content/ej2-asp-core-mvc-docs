@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timeline header rows
+# Timeline header rows in ASP.NET MVC Schedule Component
 
 The Timeline views can have additional header rows other than its default date and time header rows. It is possible to show individual header rows for displaying year, month and week separately using the [`HeaderRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_HeaderRows) property. This property is applicable only on the timeline views. The possible rows which can be added using `HeaderRows` property are as follows.
 

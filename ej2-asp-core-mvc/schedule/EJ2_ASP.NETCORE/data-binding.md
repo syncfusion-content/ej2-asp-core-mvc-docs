@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data-binding in ##Platform_Name## Schedule Component
+# Data-binding in ASP.NET CORE Schedule Component
 
 The Scheduler uses `dataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Schedule.ScheduleEventSettings~DataSource.html) property can be assigned either with the instance of `dataManager` or JavaScript object array collection. It supports two kinds of data binding method:
 
