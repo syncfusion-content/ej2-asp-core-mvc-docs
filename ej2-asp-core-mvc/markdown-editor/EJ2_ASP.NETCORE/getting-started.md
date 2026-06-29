@@ -115,6 +115,7 @@ I> When the Markdown Editor control is rendered, the id attribute must be presen
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Markdown Editor control will be rendered in the default web browser.
 
+
 ![ASP.NET Core Markdown Editor with Toolbar](images/markdown-editor-default.png)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20Core%20Tag%20Helper%20Examples).
