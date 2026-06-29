@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar Mode in ##Platform_Name## Schedule Component
+title: Calendar Mode in ASP.NET MVC Syncfusion Schedule Component
 description: Learn here all about Calendar Mode in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calendar Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar mode in ASP.NET MVC Scheduler component
 
 The Scheduler supports the following two types of calendar mode.
 
@@ -36,7 +36,7 @@ It requires the following CLDR data to be loaded using loadCldr function.
 * timeZoneNames.json
 * ca-islamic.json
 
-N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization/#installing-cldr-data) topic.
+N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#installing-cldr-data) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

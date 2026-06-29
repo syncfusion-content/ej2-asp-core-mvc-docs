@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell Customization in ##Platform_Name## Schedule Component
+# Cell Customization in ASP.NET MVC Schedule Component
 
 The cells of the Scheduler can be easily customized either using the cell template or [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event.
 

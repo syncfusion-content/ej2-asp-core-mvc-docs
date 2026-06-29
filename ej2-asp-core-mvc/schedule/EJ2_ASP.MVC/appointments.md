@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appointments in ##Platform_Name## Schedule Component
+# Appointments in ASP.NET MVC Schedule Component
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 
@@ -73,7 +73,7 @@ You can make use of the CSS customization to prevent the display of all-day row 
     }
 ```
 
-N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
+N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section) here to know more.
 
 ## Customize the rendering of the spanned events
 
