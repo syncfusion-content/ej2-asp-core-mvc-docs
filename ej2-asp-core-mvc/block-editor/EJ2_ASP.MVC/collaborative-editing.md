@@ -153,7 +153,7 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 
 ## Configure the current user
 
-Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `color` value is used for that user's remote cursor and text selection overlay.
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay.
 
 The following properties are available when configuring users via the `users` property.
 
@@ -161,7 +161,7 @@ The following properties are available when configuring users via the `users` pr
 | -------- | ---- | ----------- |
 | `id` | `string` | Unique identifier for the user. |
 | `user` | `string` | Display name shown on remote cursors and presence indicators. |
-| `color` | `string` | Hex color used for this user's remote cursor and selection highlight. |
+| `avatarBgColor` | `string` | Hex color used for this user's remote cursor and selection highlight. |
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -175,7 +175,7 @@ The following properties are available when configuring users via the `users` pr
 
     function onCreated() {
         blockEditorObj = ej.base.getComponent(document.getElementById('block-editor'), 'blockeditor');
-        blockEditorObj.users = [{ id: 'user-1', user: 'John Doe', color: '#e74c3c' }];
+        blockEditorObj.users = [{ id: 'user-1', user: 'John Doe', avatarBgColor: '#e74c3c' }];
         blockEditorObj.currentUserId = 'user-1';
     }
 </script>
