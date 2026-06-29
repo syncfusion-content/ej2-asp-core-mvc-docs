@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Gantt Control
 
-This guide walks you through setting up and integrating the [ASP.NET MVC Gantt](https://www.syncfusion.com/aspnet-mvc-ui-controls/gantt-chart) control in your application using Visual Studio. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
+This guide walks you through setting up and integrating the [ASP.NET MVC Gantt](https://www.syncfusion.com/gantt-sdk/asp-net-mvc-gantt) control in your application using Visual Studio. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
