@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## Schedule Component
+title: Dimensions in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scheduler dimensions
+# Scheduler dimensions in ASP.NET CORE Schedule Component
 
 The Scheduler dimensions refers to both height and width of the entire layout and it accepts 3 types of values.
 
@@ -104,7 +104,7 @@ When height and width of the Scheduler are given as percentage, it will make the
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/asp-net-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
 
 ## See Also
 
