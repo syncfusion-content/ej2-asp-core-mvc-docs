@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility customization in ##Platform_Name## Chart component
 
-The Syncfusion® ##Platform_Name## component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
+The Syncfusion® ##Platform_Name## Chart component is structured to visualize data in a graphical manner. It provides robust customization options for accessibility, allowing you to enhance the user experience for those with disabilities. The main attributes of the ##Platform_Name## Chart component's accessibility customization are briefly explained in this section.
 
 The chart component has a number of characteristics that enable accessibility features to be customized, including:
 
