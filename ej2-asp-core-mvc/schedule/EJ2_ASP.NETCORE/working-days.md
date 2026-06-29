@@ -11,7 +11,7 @@ documentation: ug
 
 # Setting working days and hours
 
-The [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
+The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
 * To set custom time range display on Scheduler
 * To set different working hours

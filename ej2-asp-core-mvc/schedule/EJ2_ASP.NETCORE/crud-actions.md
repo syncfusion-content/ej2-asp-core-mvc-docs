@@ -11,7 +11,7 @@ documentation: ug
 
 # CRUD Actions in ##Platform_Name## Schedule Component
 
-Events, a.k.a. Appointments, play an important role in [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
+Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 
 ## Add
 

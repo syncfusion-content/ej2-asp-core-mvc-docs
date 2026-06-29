@@ -11,7 +11,7 @@ documentation: ug
 
 # Appointments in ##Platform_Name## Schedule Component
 
-Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) events can be categorized as,
+Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 
 * Normal events
 * Spanned events
