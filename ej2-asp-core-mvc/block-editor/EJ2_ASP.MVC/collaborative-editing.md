@@ -58,26 +58,34 @@ The following steps will help you set up real-time collaboration in the Block Ed
 
 Create a shared Yjs document and XML fragment.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     // Create a shared Yjs document and fragment
     var yDoc = new Y.Doc();
     var yFragment = yDoc.getXmlFragment('blockeditor');
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Step 2: Create a Yjs adapter
 
 Create an adapter that provides the Yjs runtime and the shared fragment to the Block Editor.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var adapter = new ej.blockeditor.YjsAdapter({
         yRuntime: Y,
         yXmlFragment: yFragment
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Step 3: Configure a provider
 
@@ -85,7 +93,9 @@ Create a provider that connects users to the same shared document. The following
 
 **Production (y-websocket):**
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var provider = new WebsocketProvider(
         'wss://your-server-url',
@@ -93,39 +103,53 @@ Create a provider that connects users to the same shared document. The following
         yDoc
     );
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 **Development (y-webrtc):**
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var provider = new WebrtcProvider('document-room-id', yDoc);
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Step 4: Enable Collaboration
 
 Pass the adapter and provider to the Block Editor through the `collaborationSettings` property.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
         col.Adapter("adapter").Provider("provider");
     }).Render()
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## User presence and remote cursors
 
 The Block Editor can display remote cursors, text selection overlays, and user details on hover. To enable these user presence features, set `enableAwareness` to `true` in `collaborationSettings` property.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
         col.Adapter("adapter").Provider("provider").EnableAwareness(true);
     }).Render()
 </div>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Configure the current user
 
@@ -139,7 +163,9 @@ The following properties are available when configuring users via the `users` pr
 | `user` | `string` | Display name shown on remote cursors and presence indicators. |
 | `color` | `string` | Hex color used for this user's remote cursor and selection highlight. |
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").Users(ViewBag.Users).CurrentUserId("user-1").Created("onCreated").Render()
 </div>
@@ -153,7 +179,9 @@ The following properties are available when configuring users via the `users` pr
         blockEditorObj.currentUserId = 'user-1';
     }
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id`, `user`, and `color` properties), or set directly on the client-side instance as shown above.
 
@@ -161,11 +189,15 @@ N> The `users` collection can be supplied from the server through `ViewBag.Users
 
 Retrieve all currently connected users using the `users` property in the block editor.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var users = blockEditorObj.users;
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Version history
 
@@ -175,7 +207,9 @@ Retrieve all currently connected users using the `users` property in the block e
 
 Configure the `versionHistory` property under `collaborationSettings` property.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
         col.Adapter("adapter").Provider("provider").VersionHistory(ver => {
@@ -187,20 +221,26 @@ Configure the `versionHistory` property under `collaborationSettings` property.
 <script>
     var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Access the version history instance
 
 After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var versionHistory = blockEditorObj.getVersionHistory();
     versionHistory.whenReady().then(function () {
         // Snapshots are now loaded and ready to use
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Configure snapshot storage
 
@@ -216,7 +256,9 @@ The `IVersionStorage` interface defines the following methods:
 | `deleteSnapshot` | `(id: string): Promise<void>` | Permanently remove a snapshot by id. |
 | `clearAll` | `(): Promise<void>` | Remove all snapshots from storage. |
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     /**
      * Simple IndexedDB-based storage for version snapshots.
@@ -226,7 +268,9 @@ The `IVersionStorage` interface defines the following methods:
         // Implement the IVersionStorage interface methods
     }
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Methods
 
@@ -234,7 +278,9 @@ The `IVersionStorage` interface defines the following methods:
 
 Creates a new snapshot of the current document state with an optional label and metadata.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     versionHistory.createSnapshot({
         label: 'Before major update',
@@ -243,13 +289,17 @@ Creates a new snapshot of the current document state with an optional label and 
         console.log(snapshot.id);
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 #### List snapshots
 
 Retrieves all saved snapshots or a paginated subset. Snapshots are returned in chronological order.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     // Retrieve all snapshots
     var snapshots = versionHistory.getSnapshots();
@@ -257,31 +307,41 @@ Retrieves all saved snapshots or a paginated subset. Snapshots are returned in c
     // Retrieve a paginated subset — getSnapshots(skip, take)
     var snapshots = versionHistory.getSnapshots(20, 40);
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 #### Rename a snapshot
 
 Updates the label or metadata of an existing snapshot without modifying its content.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     versionHistory.renameSnapshot(snapshotId, 'Release Candidate').then(function () {
         // Snapshot renamed
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 #### Restore a snapshot
 
 Reverts the document to a previously saved snapshot state. The current document state is automatically backed up before restoration.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     versionHistory.restoreSnapshot(snapshotId).then(function () {
         // Snapshot restored
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 > **Note:** When a snapshot is restored, the current document state is automatically backed up before the restore operation is applied.
 
@@ -289,11 +349,15 @@ Reverts the document to a previously saved snapshot state. The current document 
 
 Compares two snapshots to identify differences such as added, removed, or modified content.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     var diff = versionHistory.compareVersions(snapshotIdA, snapshotIdB);
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 The returned `VersionDiff` object provides a summary of the differences between the two selected versions.
 
@@ -301,13 +365,17 @@ The returned `VersionDiff` object provides a summary of the differences between 
 
 Serializes a snapshot into a portable format that can be stored externally or transferred between systems.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     versionHistory.exportSnapshot(snapshotId).then(function (exported) {
         // Store externally or transfer between systems
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 Exported snapshots can be stored externally or transferred between systems.
 
@@ -315,13 +383,17 @@ Exported snapshots can be stored externally or transferred between systems.
 
 Imports a previously exported snapshot back into the version history storage.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <script>
     versionHistory.importSnapshot(exported).then(function (imported) {
         // Snapshot imported
     });
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Events
 
@@ -331,7 +403,9 @@ Use the following event callbacks in `versionHistory` settings to respond to sna
 
 Triggered when a new snapshot is created.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
         col.VersionHistory(ver => {
@@ -346,13 +420,17 @@ Triggered when a new snapshot is created.
         console.log(snapshot.id);
     }
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 #### snapshotRestored
 
 Triggered when a snapshot is restored.
 
-```cshtml
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
 <div id='blockeditor-container'>
     @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
         col.VersionHistory(ver => {
@@ -368,7 +446,9 @@ Triggered when a snapshot is restored.
         console.log(snapshot.label);
     }
 </script>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Best Practices
 
