@@ -1,0 +1,224 @@
+<div class="control-section">
+    <div class="button-section">
+        <div class="frame">
+            <h3>Repeat Button</h3>
+            <p style="font-size: 13px; color: #555; margin-top: 0;">
+                Hold the button to fire continuous <code>clicked</code> events.
+                The counters below track initial clicks vs. repeat fires.
+            </p>
+
+            @Html.EJS().Button("repeat-btn")
+                .Content("Hold Me")
+                .CssClass("e-primary")
+                .Render()
+
+            <div class="controls">
+                <label>
+                    Repeat Delay (ms)
+                    <input type="number" id="delay-input" value="400" min="0" step="50" />
+                </label>
+                <label>
+                    Repeat Interval (ms)
+                    <input type="number" id="interval-input" value="100" min="0" step="50" />
+                </label>
+                <label class="inline">
+                    <input type="checkbox" id="disabled-toggle" />
+                    Disabled
+                </label>
+            </div>
+
+            <div class="counter-display">
+                <div class="counter-box">
+                    <div class="label">Initial Clicks</div>
+                    <div class="value" id="initial-count">0</div>
+                </div>
+                <div class="counter-box repeat">
+                    <div class="label">Repeat Clicks</div>
+                    <div class="value" id="repeat-count">0</div>
+                </div>
+            </div>
+
+            <span class="reset-link" id="reset-btn">Reset counters</span>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        font-family: Roboto, sans-serif;
+        padding: 20px;
+    }
+
+    button {
+        margin: 10px 5px;
+    }
+
+    .frame {
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        padding: 20px 30px;
+        margin: 20px 0;
+        max-width: 520px;
+    }
+
+    .frame h3 {
+        margin-top: 0;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .controls {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .controls label {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        color: #555;
+        gap: 4px;
+    }
+
+    .controls label.inline {
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .controls input[type="number"] {
+        width: 80px;
+        padding: 4px 6px;
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        font-size: 13px;
+    }
+
+    .counter-display {
+        margin-top: 20px;
+        display: flex;
+        gap: 30px;
+    }
+
+    .counter-display .counter-box {
+        border: 1px solid #dddddd;
+        border-radius: 3px;
+        padding: 10px 18px;
+        text-align: center;
+        min-width: 110px;
+    }
+
+    .counter-display .counter-box .label {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 4px;
+    }
+
+    .counter-display .counter-box .value {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+    }
+
+    .counter-display .counter-box.repeat .value {
+        color: #1565c0;
+    }
+
+    .reset-link {
+        margin-top: 10px;
+        font-size: 12px;
+        color: #888;
+        cursor: pointer;
+        text-decoration: underline;
+        display: inline-block;
+    }
+</style>
+
+@section Scripts {
+    <script>
+        let initialCount = 0;
+        let repeatCount = 0;
+        let btnObj = null;
+
+        function initializeButton() {
+            var buttonElement = document.getElementById('repeat-btn');
+            
+            if (!buttonElement) {
+                console.error('Button element not found');
+                return;
+            }
+
+            if (buttonElement.ej2_instances && buttonElement.ej2_instances.length > 0) {
+                btnObj = buttonElement.ej2_instances[0];
+                
+                btnObj.enableRepeat = true;
+                btnObj.repeatDelay = 400;
+                btnObj.repeatInterval = 100;
+
+                btnObj.clicked = function (args) {
+                    if (args.isRepeat) {
+                        repeatCount++;
+                        document.getElementById('repeat-count').textContent = String(repeatCount);
+                    } else {
+                        initialCount++;
+                        document.getElementById('initial-count').textContent = String(initialCount);
+                    }
+                };
+                
+                console.log('Button initialized successfully');
+            } else {
+                console.log('EJ2 instances not available yet, retrying...');
+                setTimeout(initializeButton, 100);
+            }
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeButton);
+        } else {
+            initializeButton();
+        }
+
+        var delayInput = document.getElementById('delay-input');
+        if (delayInput) {
+            delayInput.addEventListener('change', function (e) {
+                var val = parseInt(e.target.value, 10);
+                if (!isNaN(val) && val >= 0 && btnObj) {
+                    btnObj.repeatDelay = val;
+                }
+            });
+        }
+
+        var intervalInput = document.getElementById('interval-input');
+        if (intervalInput) {
+            intervalInput.addEventListener('change', function (e) {
+                var val = parseInt(e.target.value, 10);
+                if (!isNaN(val) && val >= 0 && btnObj) {
+                    btnObj.repeatInterval = val;
+                }
+            });
+        }
+
+        var disabledToggle = document.getElementById('disabled-toggle');
+        if (disabledToggle) {
+            disabledToggle.addEventListener('change', function (e) {
+                if (btnObj) {
+                    btnObj.disabled = e.target.checked;
+                }
+            });
+        }
+
+        var resetButton = document.getElementById('reset-btn');
+        if (resetButton) {
+            resetButton.addEventListener('click', function () {
+                initialCount = 0;
+                repeatCount = 0;
+                document.getElementById('initial-count').textContent = '0';
+                document.getElementById('repeat-count').textContent = '0';
+            });
+        }
+    </script>
+}
