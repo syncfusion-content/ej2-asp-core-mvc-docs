@@ -194,10 +194,10 @@ Here's an example that demonstrates how to enable Undo / Redo in batch editing:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid/edit/undo-redo/tagHelper %}
+{% include code-snippet/grid/edit/undo-redo-edit/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="save-update.cs" %}
-{% include code-snippet/grid/edit/undo-redo/save-update.cs %}
+{% include code-snippet/grid/edit/undo-redo-edit/undo-redo.cs %}
 {% endhighlight %}
 {% endtabs %}
 
