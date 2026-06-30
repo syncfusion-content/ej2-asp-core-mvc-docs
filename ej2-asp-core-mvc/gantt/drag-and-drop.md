@@ -10,7 +10,7 @@ documentation: ug
 
 # Row Drag and Drop in ##Platform_Name## Gantt Component
 
-You can dynamically rearrange the rows in the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
+You can dynamically rearrange the rows in the Gantt control by using the `AllowRowDragAndDrop` property. Using this property, row drag and drop can be enabled or disabled in Gantt. Using this feature, rows can be dropped at above and below as a sibling or child to the existing rows.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

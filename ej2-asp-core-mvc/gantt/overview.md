@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview in ##Platform_Name## Gantt component
 
-The [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface lets you visually manage tasks, task relationships, and resources in a project.
+The Gantt is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface lets you visually manage tasks, task relationships, and resources in a project.
 
 ## Key Features
 
