@@ -78,10 +78,10 @@ Create an adapter that provides the Yjs runtime and the shared fragment to the B
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <script>
-    var adapter = new ej.blockeditor.YjsAdapter({
+    var adapter = {
         yRuntime: Y,
         yXmlFragment: yFragment
-    });
+    }
 </script>
 
 {% endhighlight %}
@@ -97,6 +97,7 @@ Create a provider that connects users to the same shared document. The following
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <script>
+    var WebsocketProvider = window.WebsocketProvider;
     var provider = new WebsocketProvider(
         'wss://your-server-url',
         'document-room-id',
@@ -113,6 +114,8 @@ Create a provider that connects users to the same shared document. The following
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <script>
+	var WebrtcProvider = window.WebrtcProvider;
+    
     var provider = new WebrtcProvider('document-room-id', yDoc);
 </script>
 
