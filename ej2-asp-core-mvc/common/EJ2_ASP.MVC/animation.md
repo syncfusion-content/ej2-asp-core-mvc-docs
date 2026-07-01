@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC
+# Animation in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
 
