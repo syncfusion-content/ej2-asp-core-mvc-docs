@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview in ##Platform_Name## Gantt component
 
-The Gantt is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface lets you visually manage tasks, task relationships, and resources in a project.
+The Gantt Chart is a project management tool which provides a Microsoft Project-like interface for scheduling and managing projects. Its intuitive user interface lets you visually manage tasks, task relationships, and resources in a project.
 
 ## Key Features
 
