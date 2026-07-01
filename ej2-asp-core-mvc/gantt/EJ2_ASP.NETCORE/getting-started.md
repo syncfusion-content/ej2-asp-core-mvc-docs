@@ -210,7 +210,7 @@ Map your data fields to Gantt Chart properties using `taskFields`:
 
 ## Add ASP.NET Core Gantt control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page and Razor Pages code-behind (PageModel) in the `~/Pages/Index.cshtml.cs`. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript objects or the `DataManager` instance.
+Now, add the ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page and Razor Pages code-behind (PageModel) in the `~/Pages/Index.cshtml.cs`. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript objects or the `DataManager` instance.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -225,7 +225,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt
 
 ### Visual Studio
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the ASP.NET Core Gantt control will be rendered in the default web browser.
 
 ### Visual Studio Code
 
@@ -245,6 +245,8 @@ You will see a Gantt Chart with:
 - Automatically calculated dates based on duration
 
 ![ASP.NET Core Gantt Control](images/gantt-control.png)
+
+N> Looking for the full ASP.NET Core Gantt Chart component overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) page.
 
 ## See also
 
