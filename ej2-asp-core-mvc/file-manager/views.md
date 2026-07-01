@@ -20,7 +20,7 @@ The File Manager has two types of `views` to display the files and folders.
 
 ## LargeIcons View
 
-By default, [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) is rendered with the largeicons view. The following example demonstrates this.
+By default, File Manager is rendered with the largeicons view. The following example demonstrates this.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

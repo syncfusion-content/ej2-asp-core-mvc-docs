@@ -11,7 +11,7 @@ documentation: ug
 
 # Multiple Selection in File Manager
 
-The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) allows multiple file selection through the `allowMultiSelection`) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The `fileSelect` event will be triggered when the items of File Manager control is selected or unselected.
+The File Manager allows multiple file selection through the `allowMultiSelection`) property (enabled by default). The multiple selection can be done by pressing the `Ctrl` key or `Shift` key and selecting the files. The check box can also be used to do multiple selection. `Ctrl + A` can be used to select all files in the current directory. The `fileSelect` event will be triggered when the items of File Manager control is selected or unselected.
 
 The example below demonstrates how the File Manager allows multiple file selection using the `allowMultiSelection` property.
 

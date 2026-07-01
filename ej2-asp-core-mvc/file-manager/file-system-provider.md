@@ -11,7 +11,7 @@ documentation: ug
 
 # File system provider
 
-The file system provider allows the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
+The file system provider allows the File Manager control to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
 The following file providers are added in Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 File Manager control.
 

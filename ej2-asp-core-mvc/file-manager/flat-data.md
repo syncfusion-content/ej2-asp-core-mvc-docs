@@ -12,7 +12,7 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) url. To load a folder data as an array of objects, use the File Manager control's [FileSystemData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) object. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the File Manager's action events.
+The File Manager uses a flat data JSON as an array of objects for rendering, eliminating the need to define [ajaxSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) url. To load a folder data as an array of objects, use the File Manager control's [FileSystemData](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_FileSystemData) object. This means you no longer need to use a separate service provider, as you can integrate services like Google, Amazon, Azure, and others directly into your code using the File Manager's action events.
 
 **Event Information**
 

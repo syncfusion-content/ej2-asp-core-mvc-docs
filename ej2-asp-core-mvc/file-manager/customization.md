@@ -11,7 +11,7 @@ documentation: ug
 
 # Customizing File Manager functionalities
 
-The [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
+The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 
 * [Context menu customization](#context-menu-customization)
 * [Details view customization](#details-view-customization)
