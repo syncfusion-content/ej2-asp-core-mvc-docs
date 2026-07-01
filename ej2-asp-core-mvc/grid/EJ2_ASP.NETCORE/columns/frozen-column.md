@@ -33,7 +33,7 @@ In the following example, the [frozenColumns](https://help.syncfusion.com/cr/asp
 
 ## Freeze particular columns
 
-The ASP.NET Core DataGrid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
+The ASP.NET Core Grid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
 To freeze a particular column in the grid, you can utilize the `isFrozen` property of the grid component as **true**.
 
@@ -52,7 +52,7 @@ The following example demonstrates how to freeze particular column in grid using
 
 ## Freeze direction
 
-In the ASP.NET Core DataGrid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
+In the ASP.NET Core Grid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
 
 To achieve this, you can utilize the `column.freeze` property. This property is used to specify the freeze direction for individual columns. The grid will adjust the column positions based on the `column.freeze` value.
 
@@ -158,7 +158,7 @@ Previous | Current | Explanation
 
 ## Limitations
 
-While freezing columns in the ASP.NET Core DataGrid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
+While freezing columns in the ASP.NET Core Grid provides enhanced visibility and scrolling capabilities, there are certain limitations to consider. The following features are not supported when using frozen columns:
 
 * Detail Template
 * Hierarchy Grid

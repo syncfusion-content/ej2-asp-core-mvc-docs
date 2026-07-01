@@ -15,7 +15,7 @@ The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/g
 
 ## Header text
 
-The `headerText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the ASP.NET Core DataGrid component.
+The `headerText` feature proves particularly beneficial when there is a need for more meaningful and descriptive column headers in the ASP.NET Core Grid component.
 
 By default, the header text of a column in Grid is displayed from the column's `field` value. However, you can easily override the default header title and provide a custom header text for the column using the `headerText` property. 
 
@@ -38,7 +38,7 @@ To enable the `headerText` property, you simply need to define it in the **e-gri
 
 ## Header template
 
-The header template feature in the ASP.NET Core DataGrid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
+The header template feature in the ASP.NET Core Grid component allows you to create custom header layouts and content, providing enhanced functionality such as sorting or filtering.
 
 To implement a header template, set the `headerTemplate` property within a specific column definition. This allows you to render custom HTML elements or ASP.NET Core components to the header.
 
@@ -416,7 +416,7 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 
 ## How to refresh header 
 
-The refresh header feature in the ASP.NET Core DataGrid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
+The refresh header feature in the ASP.NET Core Grid allows you to update the header section of the grid whenever changes are made to the grid's columns. This feature is useful when you want to reflect changes in the header immediately, such as modifying the column header text, width, or alignment.
 
 To use the refresh header feature, you can call the `refreshHeader` method of the Grid component. This method updates the grid header with the latest changes made to the columns.
 

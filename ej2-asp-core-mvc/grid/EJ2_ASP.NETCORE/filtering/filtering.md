@@ -68,7 +68,7 @@ The following example demonstrates, how to perform an initial filter with multip
 
 ### Initial filter with multiple values for different columns 
 
-By applying an initial filter with multiple values for different columns in the ASP.NET Core DataGrid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
+By applying an initial filter with multiple values for different columns in the ASP.NET Core Grid, you have the flexibility to set predefined filter settings for each column. This results in a filtered records of the grid right after the grid is initially loaded.
 
 To apply the filter with multiple values for different column at initial rendering, set the filter `predicate`object in [filterSettings.columns](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Columns).
 
@@ -153,11 +153,11 @@ ab% |Returns all the value that are ends with "ab" character.
 
 ![LIKE filter in ASP.NET Core Grid.](../images/filtering/filtering-like-fliter.gif)
 
->By default, the ASP.NET Core DataGrid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
+>By default, the ASP.NET Core Grid uses different filter operators for different column types. The default filter operator for string type columns is **startsWith**, for numerical type columns is **equal**, and for boolean type columns is also **equal**.
 
 ## Diacritics filter
 
-The diacritics filter feature in the ASP.NET Core DataGrid is useful when working with text data that includes accented characters (diacritic characters). By default, the grid ignores these characters during filtering. However, if you need to consider diacritic characters in your filtering process, you can enable this feature by setting the [filterSettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_IgnoreAccent) property to true using the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
+The diacritics filter feature in the ASP.NET Core Grid is useful when working with text data that includes accented characters (diacritic characters). By default, the grid ignores these characters during filtering. However, if you need to consider diacritic characters in your filtering process, you can enable this feature by setting the [filterSettings.ignoreAccent](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_IgnoreAccent) property to true using the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings).
 
 Consider the following sample where the `ignoreAccent` property is set to true in order to include diacritic characters in the filtering process:
 
@@ -205,7 +205,7 @@ Below is an example demonstrating how to filter enum-type data in a Syncfusion A
 
 ## Filtering with case sensitivity
 
-The ASP.NET Core DataGrid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_EnableCaseSensitivity) property within the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) of the grid.
+The ASP.NET Core Grid provides the flexibility to enable or disable case sensitivity during filtering. This feature is useful when you want to control whether filtering operations should consider the case of characters. It can be achieved by using the  [enableCaseSensitivity](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_EnableCaseSensitivity) property within the [filterSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FilterSettings) of the grid.
 
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
@@ -222,7 +222,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 
 ## Enable different filter for a column 
 
-The ASP.NET Core DataGrid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
+The ASP.NET Core Grid offers the flexibility to customize filtering behavior for different columns by enabling various types of filters such as **Menu**, **Excel**, **Checkbox**. This feature allows you to tailor the filtering experience to suit the specific needs of each column in your grid. For example, you might prefer a menu-based filter for a category column, an Excel-like filter for a date column, and a checkbox filter for a status column. 
 
 It can be achieved by adjusting the `column.filter.type` property based on your requirements.
 
@@ -258,7 +258,7 @@ Here's an example that demonstrates how to change the default filter operator co
 
 ## Filter grid programmatically with single and multiple values using method 
 
-Programmatic filtering in the ASP.NET Core DataGrid with single and multiple values allows you to apply filters to specific columns in the grid without relying on interactions through the interface.
+Programmatic filtering in the ASP.NET Core Grid with single and multiple values allows you to apply filters to specific columns in the grid without relying on interactions through the interface.
 
 This can be achieved by utilizing the `filterByColumn` method of the Grid.
 
@@ -277,7 +277,7 @@ The following example demostrates, how to programmatically filter the Grid using
 
 ## How to get filtered records
 
-Retrieving filtered records in the ASP.NET Core DataGrid is essential when you want to work with data that matches the currently applied filters. You can achieve this using available methods and properties in the grid component.
+Retrieving filtered records in the ASP.NET Core Grid is essential when you want to work with data that matches the currently applied filters. You can achieve this using available methods and properties in the grid component.
 
 **1.Using the getFilteredRecords() method**
 
@@ -339,7 +339,7 @@ Here's an example of how to clear the filtering in a Syncfusion<sup style="font-
 
 Filtering events allow you to customize the behavior of the grid when filtering is applied. You can prevent filtering for specific columns, show messages to users, or perform other actions to suit your application's needs.
 
-To implement filtering events in the ASP.NET Core DataGrid, you can utilize the available events such as [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) and [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete). These events allow you to intervene in the filtering process and customize it as needed.
+To implement filtering events in the ASP.NET Core Grid, you can utilize the available events such as [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) and [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete). These events allow you to intervene in the filtering process and customize it as needed.
 
 In the given example, the filtering is prevented for **ShipCity** column during `actionBegin` event.
 

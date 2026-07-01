@@ -195,7 +195,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 
 ### Format template column value 
 
-In the ASP.NET Core DataGrid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
+In the ASP.NET Core Grid, you have the ability to customize the display of data in a column through the use of template columns. Formatting template column values is essential for enhancing the visual representation of data in a web application. It allows the customization of the appearance of specific column data, such as dates and numbers, to improve readability and user understanding.
 
 To illustrate how to format a template column value, consider the following example where the **OrderDate** column is formatted to display dates in the **‘dd/MMM/yyyy’** format.
 
@@ -453,7 +453,7 @@ Here's an example of how to show or hide a column based on the field in the ASP.
 
 ## Controlling Grid actions
 
-You can component various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the ASP.NET Core DataGrid using the following properties:
+You can component various actions such as filtering, grouping, sorting, resizing, reordering, editing, and searching for specific columns in the ASP.NET Core Grid using the following properties:
 
 * `allowEditing`: Enables or disables editing for a column.
 * [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowFiltering): Enables or disables filtering for a column.

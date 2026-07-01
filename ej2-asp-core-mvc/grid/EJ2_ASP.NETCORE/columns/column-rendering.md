@@ -22,7 +22,7 @@ The column definitions are used as the DataSource schema in the grid. The grid o
 
 To define columns manually in grid, you can use the `e-grid-columns` element to define the columns and represent each column with its respective properties such as `field`, `headerText`, `type`, and [width](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Width) set accordingly. This allows you to customize the column's behavior and appearance based on the requirements.
 
-Here's an example code snippet that demonstrates how to define columns manually in the ASP.NET Core DataGrid:
+Here's an example code snippet that demonstrates how to define columns manually in the ASP.NET Core Grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

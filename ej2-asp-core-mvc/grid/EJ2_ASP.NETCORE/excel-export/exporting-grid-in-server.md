@@ -47,7 +47,7 @@ The following example shows server configuration using ASP.NET Core Controller A
 
 ![Server configuration](../images/excel-exporting/excel-export-server.png)
 
-N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.NET-Core).
+N> Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/Grid-Server-side-export-ASP.Net-Core).
 
 ## CSV Export in server side
 

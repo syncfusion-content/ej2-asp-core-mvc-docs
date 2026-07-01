@@ -32,7 +32,7 @@ Here's an example for column reordering in your Grid component:
 
 ## Prevent reordering for particular column
 
-By default, all columns in the ASP.NET Core DataGrid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the `allowReordering` property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
+By default, all columns in the ASP.NET Core Grid can be reordered by dragging and dropping their headers to another location within the grid. However, there may be certain columns that you do not want to be reordered. In such cases, you can set the `allowReordering` property of that particular column to **false**. Here is an example that demonstrates how to prevent reordering for a specific column:
 
 In this example, the **ShipName** column is prevented from being reordered by setting the `allowReordering` property to **false**.
 
@@ -141,7 +141,7 @@ In this example, **Order Details** is moved before **Customer Name**, and **Ship
 
 ## Reorder events
 
-When reordering columns in the ASP.NET Core DataGrid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
+When reordering columns in the ASP.NET Core Grid component, you may want to take some specific action in response to the drag and drop events. To handle these events, you can define event handlers for the following events:
 
 1.The [columnDragStart](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ColumnDragStart) event triggers when column header element drag (move) starts.
 
