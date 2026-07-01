@@ -11,7 +11,7 @@ documentation: ug
 
 # Multiple Gantt exporting
 
-In [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart), the Excel export provides support to export multiple Gantt data in new sheet or same sheet.
+In Gantt, the Excel export provides support to export multiple Gantt data in new sheet or same sheet.
 
 ## Same sheet
 
