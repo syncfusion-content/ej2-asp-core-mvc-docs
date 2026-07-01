@@ -10,7 +10,7 @@ documentation: ug
 
 # Undo Redo in Gantt component
 
-The Undo feature enables users to revert the most recent action performed in the Gantt. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
+The Undo feature enables users to revert the most recent action performed in the Gantt Chart. It helps undo changes made to tasks, dependencies, or other actions within the Gantt Chart.
 
 The Redo feature can reapply an action that was previously undone using the Undo feature. This allows users to revert their decision to undo an action.
 
