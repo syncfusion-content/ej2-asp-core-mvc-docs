@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Repeat button in the ##Platform_Name## Button control | Syncfusion
-description: Learn here all about Repeat button in Syncfusion ##Platform_Name## Button control
+description: Learn here all about Repeat button in Syncfusion ##Platform_Name## Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Repeat Button
 publishingplatform: ##Platform_Name##
