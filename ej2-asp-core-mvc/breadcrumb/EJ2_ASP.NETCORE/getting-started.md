@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Bread
 
 ## Add Items to the Breadcrumb Control
 
-Use `items` property to bind items for Breadcrumb control.
+Use the `items` property to bind the items to the Breadcrumb control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,3 +128,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Breadcrumb example](https://ej2.syncfusion.com/aspnetcore/breadcrumb/defaultfunctionalities#/fluent2) that shows you how to render and configure the Breadcrumb.

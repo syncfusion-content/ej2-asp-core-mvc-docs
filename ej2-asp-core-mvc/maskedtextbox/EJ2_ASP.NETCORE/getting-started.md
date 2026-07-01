@@ -124,3 +124,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control)
 * [How to set cursor position while focus on the input textbox](./how-to/set-cursor-position-while-focus-on-the-input-textbox)
 * [How to display numeric keypad when focus on mobile devices](./how-to/display-numeric-keypad-when-focus-on-mobile-devices)
+
+N> You can also explore our [ASP.NET Core MaskedTextBox example](https://ej2.syncfusion.com/aspnetcore/maskedtextbox/defaultfunctionalities#/fluent2) that shows you how to render and configure the MaskedTextBox.

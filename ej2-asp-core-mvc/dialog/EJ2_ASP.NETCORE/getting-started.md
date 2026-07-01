@@ -100,7 +100,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Dialog Control](images/dialog-getting.png)
 
-Displaying the content using `ContentTemplate`.
+The content is displayed using the `ContentTemplate` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -211,3 +211,5 @@ For Y: top, center, bottom (or) any offset value.
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)
 * [Close dialog while click on outside of dialog](./how-to/close-dialog-while-click-on-outside-of-dialog)
 * [How to make a reusable alert and confirm dialog](./how-to/render-a-dialog-using-utility-functions)
+
+N> You can also explore our [ASP.NET Core Dialog example](https://ej2.syncfusion.com/aspnetcore/dialog/defaultfunctionalities#/fluent2) that shows you how to render and configure the Dialog.

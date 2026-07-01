@@ -132,9 +132,11 @@ public class Child
 
 ![ASP.NET Core DropDownTree Control](./images/getting-started.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownList/ASP.NET%20Core%20Tag%20Helper%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownTree/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core DropDownTree example](https://ej2.syncfusion.com/aspnetcore/dropdowntree/defaultfunctionalities#/fluent2) that shows you how to render and configure the DropDownTree.

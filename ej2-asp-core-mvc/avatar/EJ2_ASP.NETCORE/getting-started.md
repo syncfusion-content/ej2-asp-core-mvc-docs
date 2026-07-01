@@ -51,7 +51,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Avata
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Avatar Control](images/avatar.png)
+![ASP.NET Core Avatar Control](../images/avatar.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Avatar).
 
@@ -60,3 +60,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Types of Avatar](./types)
+
+N> You can also explore our [ASP.NET Core Avatar example](https://ej2.syncfusion.com/aspnetcore/avatar/default#/fluent2) that shows you how to render and configure the Avatar.

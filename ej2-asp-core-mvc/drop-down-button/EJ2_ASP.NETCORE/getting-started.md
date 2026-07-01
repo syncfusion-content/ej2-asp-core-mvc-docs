@@ -88,7 +88,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core DropDownButton control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page. Populate the action items in the `DropDownButton` by using the `items` property.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DropDownButton tag helper in `~/Pages/Index.cshtml` page. Populate the action items in the `DropDownButton` by using the [`items`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.splitbuttons.dropdownbutton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Items) property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -106,3 +106,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core DropDownButton example](https://ej2.syncfusion.com/aspnetcore/button/dropdownbutton#/fluent2) that shows you how to render and configure the DropDownButton.

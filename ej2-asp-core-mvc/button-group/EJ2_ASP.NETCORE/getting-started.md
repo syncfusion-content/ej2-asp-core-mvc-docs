@@ -124,3 +124,5 @@ N> Button Group does not support SplitButton control nesting in a vertical orien
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Button Group example](https://ej2.syncfusion.com/aspnetcore/button/buttongroup#/fluent2) that shows you how to render and configure the Button Group.

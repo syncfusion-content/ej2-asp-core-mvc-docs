@@ -131,3 +131,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Data Binding Types](./data-binding)
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
+
+N> You can also explore our [ASP.NET Core ListView example](https://ej2.syncfusion.com/aspnetcore/listview/defaultfunctionalities#/fluent2) that shows you how to render and configure the ListView.
