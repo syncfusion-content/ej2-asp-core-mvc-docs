@@ -129,11 +129,9 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
-        col.Adapter("adapter").Provider("provider");
-    }).Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+    col.Adapter("adapter").Provider("provider");
+}).Render()
 
 {% endhighlight %}
 {% endtabs %}
@@ -145,11 +143,9 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
-        col.Adapter("adapter").Provider("provider").EnableAwareness(true);
-    }).Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+    col.Adapter("adapter").Provider("provider").EnableAwareness(true);
+}).Render()
 
 {% endhighlight %}
 {% endtabs %}
@@ -169,9 +165,7 @@ The following properties are available when configuring users via the `users` pr
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").Users(ViewBag.Users).CurrentUserId("user-1").Created("onCreated").Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").Users(ViewBag.Users).CurrentUserId("user-1").Created("onCreated").Render()
 
 <script>
     var blockEditorObj;
@@ -213,13 +207,11 @@ Configure the `versionHistory` property under `collaborationSettings` property.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
-        col.Adapter("adapter").Provider("provider").VersionHistory(ver => {
-            ver.Storage("myStorage").SnapshotInterval(3000);
-        });
-    }).Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+    col.Adapter("adapter").Provider("provider").VersionHistory(ver => {
+        ver.Storage("myStorage").SnapshotInterval(3000);
+    });
+}).Render()
 
 <script>
     var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
@@ -409,13 +401,11 @@ Triggered when a new snapshot is created.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
-        col.VersionHistory(ver => {
-            ver.Storage("myStorage").SnapshotCreated("onSnapshotCreated");
-        });
-    }).Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+    col.VersionHistory(ver => {
+        ver.Storage("myStorage").SnapshotCreated("onSnapshotCreated");
+    });
+}).Render()
 
 <script>
     function onSnapshotCreated(args) {
@@ -434,13 +424,11 @@ Triggered when a snapshot is restored.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
-        col.VersionHistory(ver => {
-            ver.Storage("myStorage").SnapshotRestored("onSnapshotRestored");
-        });
-    }).Render()
-</div>
+@Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+    col.VersionHistory(ver => {
+        ver.Storage("myStorage").SnapshotRestored("onSnapshotRestored");
+    });
+}).Render()
 
 <script>
     function onSnapshotRestored(args) {
