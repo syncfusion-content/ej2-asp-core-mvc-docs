@@ -99,3 +99,10 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Messa
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Message control will be rendered in the default web browser.
 
 ![ASP.NET Core Message Control](images/message-default.png)
+
+## See also
+
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Message example](https://ej2.syncfusion.com/aspnetcore/message/defaultfunctionalities#/fluent2) that shows you how to render and configure the Message.

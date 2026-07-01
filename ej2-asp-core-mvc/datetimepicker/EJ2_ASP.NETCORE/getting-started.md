@@ -120,3 +120,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [Render DateTimePicker with specific culture](./globalization)
 * [How to get and set value in DateTimePickerFor](./how-to/datetimepicker-for-core)
+
+N> You can also explore our [ASP.NET Core DateTimePicker example](https://ej2.syncfusion.com/aspnetcore/datetimepicker/defaultfunctionalities#/fluent2) that shows you how to render and configure the DateTimePicker.

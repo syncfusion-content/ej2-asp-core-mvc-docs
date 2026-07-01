@@ -121,3 +121,10 @@ In the following sample, the popup list's width and height are configured.
 {% endtabs %}
 
 ![Popup](images/popup.png)
+
+## See also
+
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core  MultiColumn ComboBox example](https://ej2.syncfusion.com/aspnetcore/multicolumncombobox/defaultfunctionalities#/fluent2) that shows you how to render and configure the  MultiColumn ComboBox.

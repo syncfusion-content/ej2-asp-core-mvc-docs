@@ -125,3 +125,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to change the initial view of the DatePicker](./view)
 * [How to achieve validation with DatePicker](./how-to/client-side-validation)
 * [How to get and set value in DatePickerFor](./how-to/datepicker-for-core)
+
+N> You can also explore our [DatePicker example](https://ej2.syncfusion.com/aspnetcore/datepicker/defaultfunctionalities#/fluent2) that shows you how to render and configure the DatePicker.

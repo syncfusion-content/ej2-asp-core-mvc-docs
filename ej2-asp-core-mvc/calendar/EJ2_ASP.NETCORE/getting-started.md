@@ -125,3 +125,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to change the initial view of the Calendar](./calendar-views)
 * [Render Calendar with week numbers](./how-to/render-the-calendar-with-week-numbers)
 * [Show other month dates](./how-to/show-dates-of-other-months)
+
+N> You can also explore our [ASP.NET Core Calendar example](https://ej2.syncfusion.com/aspnetcore/calendar/defaultfunctionalities#/fluent2) that shows you how to render and configure the Calendar.
