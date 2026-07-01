@@ -11,7 +11,7 @@ domainurl: ##DomainURL##
 
 # Maximum Length in ##Platform_Name## TextBox Control
 
-You can enforce a maximum length limit for the text input in the TextBox using the [MaxLength](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_MaxLength) property. This property allows to define the maximum number of characters that users can input into the TextBox.
+You can enforce a maximum length limit for the text input in the TextBox using the `MaxLength` property. This property allows to define the maximum number of characters that users can input into the TextBox.
 
 
 * By setting the `MaxLength` property, you can control the length of text input, preventing users from exceeding a specified character limit.
