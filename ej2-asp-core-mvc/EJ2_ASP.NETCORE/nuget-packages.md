@@ -1821,7 +1821,7 @@ ejs-filemanager
 
 ## Syncfusion.EJ2.GridExport.Core - Grid Export
 
-The ASP.NET Core Grid Export is an ideal library for visualizing the Grid data in a Excel, Pdf and CSV formats which also handles the data actions like filtering, sorting, Grouping etc.
+The ASP.NET Core Grid Export is an ideal library for visualizing the Grid data in a Excel, PDF and CSV formats which also handles the data actions like filtering, sorting, Grouping etc.
 
 <table>
 <tr>
