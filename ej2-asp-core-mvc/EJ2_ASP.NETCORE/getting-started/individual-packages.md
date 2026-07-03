@@ -87,8 +87,8 @@ When using individual NuGet packages, styles and scripts are served from the pac
     ...
     <!-- Syncfusion ASP.NET Core Themes (individual package) -->
     <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <!-- Syncfusion ASP.NET Core Grid script (individual package) -->
-    <script src="_content/Syncfusion.AspNetCore.Grid/scripts/sf-grid.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
