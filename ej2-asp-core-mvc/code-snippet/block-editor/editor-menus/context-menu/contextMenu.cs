@@ -78,19 +78,145 @@ public ActionResult ContextMenu()
                         properties = new { level = 1},
                         content = new List<object>
                         {
-                                new { contentType = "Text", content = "Context Menu Demo" }
+                                new { contentType = "Text", content = "Context Menu" }
                         }
                 },
                 new BlockModel
                 {
-                        id = "intro-block",
-                        blockType = "Quote",
+                        id = "paragraph-block",
+                        blockType = "Paragraph",
                         content = new List<object>
                         {
-                                new
+                                new { contentType = "Text", content = "This is a sample text with a " },
+                                new {
+                                        contentType = "Link",
+                                        content = "link",
+                                        url = "https://ej2.syncfusion.com/documentation/block-editor/getting-started",
+                                        title = "Block Editor Documentation"
+                                },
+                                new { contentType = "Text", content = ". Right-click the link to see link context menu options." }
+                        }
+                },
+                new BlockModel
+                {
+                        id = "link-quote-block",
+                        blockType = "Quote",
+                        properties = new {
+                                children = new List<object>
                                 {
-                                        contentType = "Text",
-                                        content = "Right-click anywhere in this editor to open the custom context menu. Try different areas and blocks."
+                                        new {
+                                                id = "link-quote-paragraph",
+                                                blockType = "Paragraph",
+                                                content = new List<object>
+                                                {
+                                                        new {
+                                                                contentType = "Text",
+                                                                content = "When the cursor is focused on a link, right-click to open the context menu with options like Open Link, Edit Link, Copy Link, and Remove Link."
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                },
+                new BlockModel
+                {
+                        id = "table-block",
+                        blockType = "Table",
+                        properties = new {
+                                columns = new List<object>
+                                {
+                                        new { id = "col1", headerText = "Column 1" },
+                                        new { id = "col2", headerText = "Column 2" }
+                                },
+                                rows = new List<object>
+                                {
+                                        new {
+                                                cells = new List<object>
+                                                {
+                                                        new {
+                                                                columnId = "col1",
+                                                                blocks = new List<object>
+                                                                {
+                                                                        new {
+                                                                                id = "cell1-paragraph",
+                                                                                blockType = "Paragraph",
+                                                                                content = new List<object>
+                                                                                {
+                                                                                        new { contentType = "Text", content = "Cell 1" }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        },
+                                                        new {
+                                                                columnId = "col2",
+                                                                blocks = new List<object>
+                                                                {
+                                                                        new {
+                                                                                id = "cell2-paragraph",
+                                                                                blockType = "Paragraph",
+                                                                                content = new List<object>
+                                                                                {
+                                                                                        new { contentType = "Text", content = "Cell 2" }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        },
+                                        new {
+                                                cells = new List<object>
+                                                {
+                                                        new {
+                                                                columnId = "col1",
+                                                                blocks = new List<object>
+                                                                {
+                                                                        new {
+                                                                                id = "cell3-paragraph",
+                                                                                blockType = "Paragraph",
+                                                                                content = new List<object>
+                                                                                {
+                                                                                        new { contentType = "Text", content = "Cell 3" }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        },
+                                                        new {
+                                                                columnId = "col2",
+                                                                blocks = new List<object>
+                                                                {
+                                                                        new {
+                                                                                id = "cell4-paragraph",
+                                                                                blockType = "Paragraph",
+                                                                                content = new List<object>
+                                                                                {
+                                                                                        new { contentType = "Text", content = "Cell 4" }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                },
+                new BlockModel
+                {
+                        id = "table-quote-block",
+                        blockType = "Quote",
+                        properties = new {
+                                children = new List<object>
+                                {
+                                        new {
+                                                id = "table-quote-paragraph",
+                                                blockType = "Paragraph",
+                                                content = new List<object>
+                                                {
+                                                        new {
+                                                                contentType = "Text",
+                                                                content = "Right-click inside a table cell to open the context menu, where you can access options such as inserting or deleting rows/columns and formatting the table."
+                                                        }
+                                                }
+                                        }
                                 }
                         }
                 }

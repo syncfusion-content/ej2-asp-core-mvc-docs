@@ -111,6 +111,75 @@ public class PieChartData
 
 
 
+## Inline tooltip formatting
+
+The tooltip content can be formatted directly within the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Format) property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
+
+A format specifier can be applied to a tooltip token by adding a colon (`:`) followed by the required format.
+
+For example:
+
+```cshtml
+<e-accumulationchart-tooltipsettings enable="true" format="${point.x:MMM yyyy} : <b>${point.y:n2}%</b>">
+</e-accumulationchart-tooltipsettings>
+```
+
+In the above example, `point.x` is displayed in month-year format, and `point.y` is displayed with two decimal places.
+
+Inline formatting can be applied to the following tooltip tokens:
+
+- `point.x` – Specifies the x-value or category value of the accumulation chart point.
+- `point.y` – Specifies the numeric y-value of the accumulation chart point.
+- `point.percentage` – Specifies the percentage contribution of the point value in the accumulation chart.
+- `point.text` – Specifies the text value mapped to the point, when text mapping is configured.
+- `point.tooltip` – Specifies the tooltip value mapped from the data source, when tooltip mapping is configured.
+- `point.index` – Specifies the index position of the point in the accumulation chart.
+- `point.color` – Specifies the fill color applied to the point.
+- `point.visible` – Specifies the visibility state of the point.
+- `series.name` – Specifies the name assigned to the accumulation chart series.
+- `series.type` – Specifies the rendering type of the accumulation chart series, such as `Pie`, `Doughnut`, `Pyramid`, or `Funnel`.
+- `series.opacity` – Specifies the opacity value applied to the accumulation chart series. This value controls the visual transparency of the series and can be customized in the series configuration.
+
+**Important:** The availability of point-specific tokens depends on the values configured in the data source and the accumulation chart series type. For example, `point.percentage` is useful for pie and doughnut charts, while `point.text` and `point.tooltip` depend on the corresponding field mappings. The `series.name` and `series.type` tokens return string values, so DateTime or number formatting is not applied to these tokens.
+
+The following format types are supported:
+
+- DateTime formats such as `MMM yyyy`, `MM:yy`, and `dd MMM`
+- Number formats such as:
+  - `n2` – number with two decimal places
+  - `n0` – number without decimals
+  - `c2` – currency format
+  - `p1` – percentage format
+  - `e1` – exponential notation 
+
+If the specified format does not match the resolved value type, the original value is displayed.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-inline-format.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tooltip-inline-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tooltip-inline-format.cs" %}
+{% include code-snippet/chart/accumulation-charts/tooltip/tooltip-inline-format/tooltip-inline-format.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+
+
+
 ## Tooltip format
 
 Any HTML element can be displayed in the tooltip by using the [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChartTooltipSettings.html#Syncfusion_EJ2_Charts_AccumulationChartTooltipSettings_Template) property.

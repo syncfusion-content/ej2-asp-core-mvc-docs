@@ -53,7 +53,7 @@ In the `Week` timeline mode, the upper part of the schedule header displays the 
 
 
 
-![Alt text](images/weekMode.png)
+![Alt text](../images/weekMode.png)
 
 ### Month timeline mode
 
@@ -84,7 +84,7 @@ In the `Month` timeline mode, the upper part of the schedule header displays the
 
 
 
-![Alt text](images/monthMode.png)
+![Alt text](../images/monthMode.png)
 
 ### Year timeline mode
 
@@ -115,7 +115,7 @@ In the `Year` timeline mode, the upper schedule header displays the years wherea
 
 
 
-![Alt text](images/yearMode.png)
+![Alt text](../images/yearMode.png)
 
 ### Day timeline mode
 
@@ -146,7 +146,7 @@ In the `Day` timeline mode, the upper part of the header displays the days where
 
 
 
-![Alt text](images/dayMode.png)
+![Alt text](../images/dayMode.png)
 
 ### Hour timeline mode
 
@@ -177,7 +177,7 @@ An `Hour` timeline mode tracks the tasks in minutes scale. In this mode, the upp
 
 
 
-![Alt text](images/hourMode.png)
+![Alt text](../images/hourMode.png)
 
 ## Timeline view dates
 
@@ -249,7 +249,7 @@ In the Gantt control, you can enable or disable the mouse hover tooltip of timel
 
 
 
-![Alt text](images/timelinecellTooltip.png)
+![Alt text](../images/timelinecellTooltip.png)
 
 ## Show/hide weekends
 
@@ -321,3 +321,39 @@ The following code example how to customize the top tier to display the week's w
 {% endtabs %}
 {% endif %}
 
+## Infinite timeline scrolling
+
+The `enableInfiniteTimelineScroll` property enables infinite horizontal scrolling in the Gantt Chart timeline by dynamically extending the visible timeline range as the user navigates. Set `enableInfiniteTimelineScroll` to **true** to enable this behavior.
+
+**Key behaviors**
+
+- When `enableInfiniteTimelineScroll` is enabled, the timeline automatically extends in the forward direction as the user scrolls using the horizontal scrollbar or clicks the forward scroll arrow.
+- In the backward direction, the timeline extends only when the user clicks the backward scroll arrow. Scrolling or dragging the scrollbar backward does not trigger timeline extension.
+- Infinite scrolling extends only the visible timeline range and does not modify the project dates.
+
+This feature enables exploration of long project schedules without manually updating the timeline range.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="timelineTemplate.cs" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="timelineTemplate.cs" %}
+{% include code-snippet/gantt/timeline/infiniteScroll/infiniteScroll.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Infinite timeline scrolling](../images/infinite-timeline-scrolling.gif)

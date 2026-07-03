@@ -236,7 +236,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component triggers two
 
 [actionComplete](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionComplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
 
-The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid:
+The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid):
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

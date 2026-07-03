@@ -73,7 +73,7 @@ You can make use of the CSS customization to prevent the display of all-day row 
     }
 ```
 
-N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section/) here to know more.
+N> You can also enable scroller for all-day row, [refer](./how-to/enable-scroll-option-on-all-day-section) here to know more.
 
 ## Customize the rendering of the spanned events
 
@@ -1313,7 +1313,82 @@ We can show more indicator if more than one appointment is available in a same c
 {% endtabs %}
 {% endif %}
 
+## Limiting maximum number of events displayed
 
+In the Scheduler, you can limit the number of concurrent events displayed in each time slot to improve the quality of the presentation and prevent visual overcrowding. This can be accomplished using the following properties based on the view type:
+
+### Limiting events in month and timeline views
+
+In the Scheduler, the default behavior is to display concurrent events based on cell height, with each new event represented as 
+`+n more` characters. However, you may want to improve the quality of the presentation by limiting the number of concurrent events. This can be accomplished by using the [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property, which is defaulted to the [views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) property.
+
+The [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) property is specific to the month, timeline month, and timeline year views, allowing you to view events visually in these rows. Below is a code example that demonstrates how to use this constraint and the events displayed in a cell have been created:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/appointments/max-events-row/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/appointments/max-events-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/appointments/max-events-row/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/appointments/max-events-row/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+![Scheduler with MaxEventsPerRow](../images/scheduler-max-event-row.png)
+
+> The property [MaxEventsPerRow](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) will be applicable only when [RowAutoHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is disabled in the Scheduler.
+
+### Limiting events in vertical views
+
+The `MaxEventStack` property on the [Views](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleView.html) allows you to limit the number of overlapping events displayed in each time slot. This feature prevents visual overcrowding when multiple events overlap in the same time slot. When the number of overlapping events exceeds the specified limit, a `+N` indicator appears, indicating how many additional events exist. Users can click this indicator to view all remaining events in a popup window. By default, the Scheduler shows all overlapping events without any restrictions. The default value of `MaxEventStack` is `0`.
+
+Below is a code example that demonstrates how to use this constraint:
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/schedule/appointments/max-event-stack/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/appointments/max-event-stack/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/appointments/max-event-stack/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Data.cs" %}
+{% include code-snippet/schedule/appointments/max-event-stack/data.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**How it works:** In this example, `MaxEventStack` is set to `2` for all three views. When you have three or more overlapping events in the same time slot:
+
+* The Scheduler displays only the first two events
+* A "+N" indicator appears to show how many additional events exist (for example, "+1" if there are 3 total events)
+* Users can click the indicator to open a popup displaying all remaining events for that time slot
+
+![Scheduler with MaxEventStack](../images/scheduler-max-event-stack.png)
+
+> The `MaxEventStack` property is applicable only with **Day**, **Week**, and **WorkWeek** views when the [`TimeScale`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html) option is enabled.
 
 ## Display tooltip for appointments
 
