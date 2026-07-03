@@ -76,8 +76,6 @@ Open the `~/Pages/_ViewImports.cshtml` file and import the tag helpers from both
 {% endhighlight %}
 {% endtabs %}
 
-N> When using individual packages, you must import tag helpers for each package separately, unlike the unified `Syncfusion.EJ2` tag helper which covers all controls.
-
 ## Add stylesheet and script resources
 
 When using individual NuGet packages, styles and scripts are served from the package's static web assets under the `_content/` path. Add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml`:
