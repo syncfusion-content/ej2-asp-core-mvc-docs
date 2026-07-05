@@ -1,0 +1,73 @@
+@{
+    ViewBag.Title = "Multiple Pie Series";
+}
+
+<div class="control-section">
+    <div class="content-wrapper">
+        @{
+            Html.EJ2().AccumulationChart("pie-container")
+                .Title("Product Sales vs Profit Analysis")
+                .Subtitle(sub => sub.Text("Comparing total sales revenue with profit margins by product category"))
+                .Series(series =>
+                {
+                    series.Add()
+                        .DataSource(ViewBag.totalSalesData)
+                        .XName("x")
+                        .YName("y")
+                        .Name("Total Sales")
+                        .Type(AccumulationType.Pie)
+                        .Radius("90%")
+                        .InnerRadius("60%")
+                        .DataLabel(dl => dl
+                            .Visible(true)
+                            .Name("text")
+                            .Position(ChartDataLabelPosition.Outside)
+                            .ConnectorStyle(cs => cs
+                                .Type(ConnectorType.Curve)
+                                .Color("black")
+                                .Width(2)
+                                .DashArray("2,1")
+                                .Length("5")
+                            )
+                        )
+                        .Tooltip(tt => tt.MappingName("x"));
+                    
+                    series.Add()
+                        .DataSource(ViewBag.totalProfitData)
+                        .XName("x")
+                        .YName("y")
+                        .Name("Total Profit")
+                        .Type(AccumulationType.Pie)
+                        .Radius("50%")
+                        .InnerRadius("50%")
+                        .DataLabel(dl => dl
+                            .Visible(true)
+                            .Name("text")
+                            .Position(ChartDataLabelPosition.Inside)
+                            .ConnectorStyle(cs => cs
+                                .Type(ConnectorType.Curve)
+                                .Color("black")
+                                .Width(2)
+                                .DashArray("2,1")
+                                .Length("5")
+                            )
+                        )
+                        .Tooltip(tt => tt.MappingName("x"));
+                })
+                .Tooltip(tt => tt
+                    .Enable(true)
+                    .Format("<b>${point.x}</b><br/>Value: <b>$${point.y}</b><br/>Percentage: <b>${point.percentage}%</b>")
+                )
+                .LegendSettings(ls => ls.MappingKey("x"))
+                .EnableBorderOnMouseMove(false)
+                .Border(b => b.Color("#333").Width(2))
+                .Render();
+        }
+    </div>
+</div>
+
+<style>
+    #pie-container {
+        display: block;
+    }
+</style>
