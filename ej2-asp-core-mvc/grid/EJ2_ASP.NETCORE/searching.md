@@ -10,7 +10,7 @@ documentation: ug
 
 # Searching in ASP.NET Core Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
+The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
 To set the `allowSearching` property to true to enable the searching feature in the grid.
 
