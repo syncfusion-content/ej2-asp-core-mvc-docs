@@ -11,7 +11,7 @@ documentation: ug
 
 # Symbol Palette in Diagram
 
-The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the diagram.
+The **SymbolPalette** displays a collection of palettes. The palette shows a set of nodes and connectors. It allows to drag and drop the nodes and connectors into the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram).
 
 ## Create symbol palette
 

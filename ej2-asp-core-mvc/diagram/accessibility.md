@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility in ##Platform_Name## Diagram Component
 
-Diagram provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) provides built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications. WAI-ARIA Accessibility supports are achieved through the attributes like `aria-label`. It helps to provide information about elements in a document for assistive technology.
 
 The accessibility compliance for the diagram component is outlined below.
 
@@ -97,7 +97,7 @@ Attribute provides the text label with some default description for below elemen
 
 ### Mobile device support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
+ASP.NET Core Diagram component are more user-friendly and accessible to individuals using mobile devices, including those with disabilities. These are designed to be responsive, adaptable to various screen sizes and orientations, and touch-friendly.
 
 ### Screen Reader Support
 
@@ -105,7 +105,7 @@ The Diagram component supports and its information was dictated properly by the 
 
 ### Keyboard navigation support
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
+ASP.NET Core Diagram component support keyboard navigation, allowing users who rely on alternate methods to effortlessly navigate and interact with the component.
 
 ## Keyboard interaction
 

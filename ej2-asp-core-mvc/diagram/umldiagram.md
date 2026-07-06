@@ -13,7 +13,7 @@ documentation: ug
 
 ## UML Class Diagram
 
-A class diagram visually depicts the static structure of an application and is extensively employed in modeling object-oriented systems. It holds a unique position in UML diagrams, as it directly aligns with object-oriented languages. The diagram also facilitates automatic generation of class diagram shapes based on business logic, streamlining the translation from conceptual models to practical implementation.
+A class diagram visually depicts the static structure of an application and is extensively employed in modeling object-oriented systems. It holds a unique position in UML diagrams, as it directly aligns with object-oriented languages. The [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) also facilitates automatic generation of class diagram shapes based on business logic, streamlining the translation from conceptual models to practical implementation.
 
 ## Uml Class Diagram Shapes
 
@@ -493,3 +493,5 @@ To create an UmlActivity connector, define the type as "UmlActivity" and flow as
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+N> Looking for the full ASP.NET Core Diagram component overview, features, pricing, and documentation? Visit the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) page.

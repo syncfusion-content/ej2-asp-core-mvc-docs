@@ -11,7 +11,7 @@ documentation: ug
 
 # Exporting in Diagram
 
-Diagram provides support to export its content as image or svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/documentation/api/diagram/#exportDiagram) helps to export the diagram.
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) provides support to export its content as image or svg files. The client-side method [`exportDiagram`](https://ej2.syncfusion.com/documentation/api/diagram/#exportDiagram) helps to export the diagram.
 
 N> To use Print and Export, you need to inject `PrintAndExport` in the diagram.
 

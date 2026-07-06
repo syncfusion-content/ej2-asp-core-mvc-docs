@@ -17,7 +17,7 @@ In Graphical User Interface (GUI), the tooltip is a message that is displayed wh
 
 ## Default tooltip
 
-By default, diagram displays a tooltip to provide the size, position, and angle related information while dragging, resizing, and rotating.
+By default, [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) displays a tooltip to provide the size, position, and angle related information while dragging, resizing, and rotating.
 
 | Drag | Resize | Rotate |
 |---|---|---|

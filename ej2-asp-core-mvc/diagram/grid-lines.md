@@ -11,7 +11,7 @@ documentation: ug
 
 # Gridlines in ##Platform_Name## Diagram Component
 
-Gridlines are the pattern of lines drawn behind the diagram elements. It provides a visual guidance while dragging or arranging the objects on the diagram surface.
+Gridlines are the pattern of lines drawn behind the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram)elements. It provides a visual guidance while dragging or arranging the objects on the diagram surface.
 
 The model’s [`snapSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.DiagramSnapSettings.html) property is used to customize the gridlines and control the snapping behavior in the diagram.
 

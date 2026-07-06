@@ -11,7 +11,7 @@ documentation: ug
 
 # Constraints in ##Platform_Name## Diagram Component
 
-Constraints are used to enable or disable certain behaviors of the diagram, nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using Bitwise operators (`&, |, ~, <<, etc.`).
+Constraints are used to enable or disable certain behaviors of the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram), nodes and connectors. Constraints are provided as flagged enumerations, so that multiple behaviors can be enabled or disabled using Bitwise operators (`&, |, ~, <<, etc.`).
 
 To know more about Bitwise operators, refer to [`Bitwise Operations`](#bitwise-operations).
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Ports in Diagram Control
 
-Diagram provides support to define custom ports for making connections.
+[ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) provides support to define custom ports for making connections.
 
 ![Port](images/Port1.png)
 

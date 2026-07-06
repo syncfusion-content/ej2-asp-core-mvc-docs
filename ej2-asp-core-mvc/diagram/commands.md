@@ -13,7 +13,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD010 -->
 
-There are several commands available in the diagram as follows.
+There are several commands available in the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram) as follows.
 
 * Alignment commands
 * Spacing commands

@@ -11,7 +11,7 @@ documentation: ug
 
 # Serialization in Diagram Control
 
-**Serialization** is the process of saving and loading for state persistence of the diagram.
+**Serialization** is the process of saving and loading for state persistence of the [ASP.NET Core Diagram](https://www.syncfusion.com/aspnet-core-ui-controls/diagram).
 
 ## Save
 
