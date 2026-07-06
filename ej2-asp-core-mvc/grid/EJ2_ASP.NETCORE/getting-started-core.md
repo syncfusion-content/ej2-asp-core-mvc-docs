@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ASP.NET Core DataGrid Control
-description: Checkout and learn about getting started with ##Platform_Name## DataGrid control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ASP.NET Core Data Grid Control
+description: Checkout and learn about getting started with ##Platform_Name## Data Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core DataGrid Control
+# Getting Started with ASP.NET Core Data Grid Control
 
 This section briefly explains about how to include [ASP.NET Core Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
-To get start quickly with ASP.NET Core DataGrid component, you can check on this video.
+To get start quickly with ASP.NET Core Data Grid component, you can check on this video.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=E5w2fO-N9gE" %}
@@ -88,7 +88,7 @@ code -r RazorPagesGrid
 
 ## Install ASP.NET Core package in the application
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core Data Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
 2. Navigate to the directory containing the **.csproj** file.
@@ -159,9 +159,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the  
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core DataGrid control
+## Add ASP.NET Core Data Grid control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET Core Data Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) tag helper in `~/Pages/Index.cshtml` page. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -194,13 +194,13 @@ public class Order
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Data Grid control will be rendered in the default web browser.
 
 The output looks like below
 
-![ASP.NET Core DataGrid with Columns Data](images/column.png)
+![ASP.NET Core Data Grid with Columns Data](images/column.png)
 
-N> Looking for the full JavaScript DataGrid control overview, features, pricing, and documentation? Visit the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) page.
+N> Looking for the full JavaScript Data Grid control overview, features, pricing, and documentation? Visit the [ASP.NET Core Data Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) page.
 
 ## See also
 
