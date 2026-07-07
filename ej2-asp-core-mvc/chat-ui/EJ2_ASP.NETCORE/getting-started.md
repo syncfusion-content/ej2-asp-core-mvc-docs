@@ -87,7 +87,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core Chat UI control
 
-Now, add the Syncfusion ASP.NET Core Chat UI tag helper in `~/Pages/Index.cshtml` page.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chat UI tag helper in the `~/Pages/Index.cshtml` page. Use the `<e-chatui-user>` tag directive to configure the current user for the chat.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -98,21 +98,6 @@ Now, add the Syncfusion ASP.NET Core Chat UI tag helper in `~/Pages/Index.cshtml
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion ASP.NET Core Chat UI control will be rendered in the default web browser.
+To launch the application, press <kbd>Ctrl</kbd>+<kbd>F5</kbd> in Visual Studio or use the Run command in your preferred IDE to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chat UI control in the default web browser.
 
 ![ASP.NET Core Chat UI Control](images/chat-ui-component.png)
-
-## Configure messages and user
-
-You can use the `<e-chatui-messages>` tag directive to group all the messages and `<e-chatui-message>` directive to define each message and the `<e-chatui-user>` tag directive to configure the current user for the chat.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/chat-ui/default-messages/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/chat-ui/default-messages/defaultMessages.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Chat UI default messages](images/default-messages.png)
