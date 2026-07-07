@@ -20,6 +20,8 @@ With collaboration enabled, users can:
 * Perform collaboration-aware undo and redo operations.
 * Create, restore, compare, export, and import document versions.
 
+*Try the live demo [here](https://ej2.syncfusion.com/)*
+
 ## Prerequisites
 
 Before enabling collaboration, install the `yjs` library and a Yjs provider. See [Yjs Providers](https://docs.yjs.dev/ecosystem/connection-provider) to choose the right provider for your use case.
@@ -41,14 +43,7 @@ A Yjs provider handles the transport of document updates between connected users
 
 ## Configure collaboration settings
 
-Use the `collaborationSettings` property of type `CollaborationSettingsModel` to configure collaboration settings for your Block Editor. It provides the following properties that allow you to customize the collaboration behavior:
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `provider` | `any` | Real-time transport used to synchronize document changes. |
-| `enableAwareness` | `boolean` | Enables user presence, remote cursors, and text selection overlays. |
-| `adapter` | `CollaborationAdapter` | Provides the Yjs runtime and shared XML fragment. |
-| `versionHistory` | `VersionHistorySettingsModel` | Configures document version history support. |
+Use the `collaborationSettings` property of type `CollaborationSettingsModel` to configure collaboration settings for your Block Editor. It provides properties such as `provider`, `enableAwareness`, `adapter` and `versionHistory` which allows to customize the collaboration behavior.
 
 ## Getting Started
 
@@ -156,15 +151,7 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 
 ## Configure the current user
 
-Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay.
-
-The following properties are available when configuring users via the `users` property.
-
-| Property | Type | Description |
-| -------- | ---- | ----------- |
-| `id` | `string` | Unique identifier for the user. |
-| `user` | `string` | Display name shown on remote cursors and presence indicators. |
-| `avatarBgColor` | `string` | Hex color used for this user's remote cursor and selection highlight. |
+Set the current user's display name and cursor highlight color using the `users` and `currentUserId` properties. The `avatarBgColor` value is used for that user's remote cursor and text selection overlay. The users property includes `id`, `user` and `avatarBgColor`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -228,23 +215,6 @@ Configure the `versionHistory` property under `collaborationSettings` property.
 {% endhighlight %}
 {% endtabs %}
 
-### Access the version history instance
-
-After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-<script>
-    var versionHistory = blockEditorObj.getVersionHistory();
-    versionHistory.whenReady().then(function () {
-        // Snapshots are now loaded and ready to use
-    });
-</script>
-
-{% endhighlight %}
-{% endtabs %}
-
 ### Configure snapshot storage
 
 Version snapshots need to be persisted to enable version history across browser sessions. Implement the `IVersionStorage` interface to provide a custom storage backend for managing snapshots. You can use IndexedDB, a backend database, or any other storage solution suitable for your deployment.
@@ -275,7 +245,26 @@ The `IVersionStorage` interface defines the following methods:
 {% endhighlight %}
 {% endtabs %}
 
+### Access the version history instance
+
+After the Block Editor initializes, retrieve the version history instance and wait for snapshot data to load before calling any version history methods.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+
+<script>
+    var versionHistory = blockEditorObj.getVersionHistory();
+    versionHistory.whenReady().then(function () {
+        // Snapshots are now loaded and ready to use
+    });
+</script>
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Methods
+
+The following are the methods available in the `IVersionHistory`:
 
 #### Create a snapshot
 
@@ -455,11 +444,11 @@ Triggered when a snapshot is restored.
 
 ## Best Practices
 
-* **Use WebRTC or PartyKit for development** — These providers require no server setup and are ideal for local testing and prototyping before moving to a production provider.
-* **Use WebSocket-based providers in production** — `y-websocket`, Hocuspocus, or a managed service like Liveblocks provides reliable, low-latency, persistent synchronization at scale.
-* **Use stable room identifiers** — Use a unique document ID as the collaboration room name to prevent unintended document sharing between different documents.
-* **Persist snapshots externally** — Store snapshots in a database or cloud storage to preserve version history across sessions.
-* **Enable awareness selectively** — Disable `enableAwareness` when user presence information is not required to reduce network and processing overhead.
+* **Use WebRTC or PartyKit for development** - These providers require no server setup and are ideal for local testing and prototyping before moving to a production provider.
+* **Use WebSocket-based providers in production** - `y-websocket`, Hocuspocus, or a managed service like Liveblocks provides reliable, low-latency, persistent synchronization at scale.
+* **Use stable room identifiers** - Use a unique document ID as the collaboration room name to prevent unintended document sharing between different documents.
+* **Persist snapshots externally** - Store snapshots in a database or cloud storage to preserve version history across sessions.
+* **Enable awareness selectively** - Disable `enableAwareness` when user presence information is not required to reduce network and processing overhead.
 
 ## Troubleshooting
 
