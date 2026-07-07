@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.Schedule
+
+@{
+    List<ScheduleView> viewOptions = new List<ScheduleView>()
+    {
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Day, MaxEventStack = 2 },
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Week, MaxEventStack = 2 },
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.WorkWeek, MaxEventStack = 2 },
+    };
+}
+
+@(Html.EJS().Schedule("schedule")
+    .Height("550px")
+    .SelectedDate(new DateTime(2026, 6, 15))
+    .Views(viewOptions)
+    .EventSettings(new ScheduleEventSettings { DataSource = ViewBag.appointments })
+    .Render()
+)
