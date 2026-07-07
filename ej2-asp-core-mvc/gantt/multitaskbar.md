@@ -77,3 +77,8 @@ It's important to note that when `AllowTaskbarOverlap` is disabled, task depende
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+## Limitations
+
+- The task overlap feature identifies overallocation based only on overlapping task date ranges assigned to the same resource. Task overallocation is not calculated using `resourceUnit` values. Capacity-based resource allocation analysis, such as validating whether the total assigned resource units exceed 100%, is not supported in the current implementation.
+- Dependency relationships are not displayed when parent tasks or project records are in a collapsed state with `EnableMultiTaskbar` is enabled. This is the expected behavior of the Gantt Chart and applies to collapsed parent tasks in both Project View and Resource View.

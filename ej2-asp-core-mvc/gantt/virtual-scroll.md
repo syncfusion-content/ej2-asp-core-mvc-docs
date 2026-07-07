@@ -83,3 +83,4 @@ This mode can be enable by setting the [EnableTimelineVirtualization](https://he
 * Cell-based selection is not supported when virtualization is enabled.
 * The number of records rendered will be determined by the `Height` property.
 * It is necessary to mention the height of the Gantt in pixels when enabling Virtual Scrolling.
+* When virtual scrolling is enabled, dependency lines are rendered only for tasks that are currently available in the viewport. If either the predecessor or successor task is outside the visible area due to virtual scrolling, the corresponding dependency line will not be displayed until both tasks are brought into view.
