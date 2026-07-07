@@ -124,12 +124,10 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor">
+    <e-blockeditor-collaborationsettings adapter="adapter" provider="provider">
+    </e-blockeditor-collaborationsettings>
+</ejs-blockeditor>
 
 {% endhighlight %}
 {% endtabs %}
@@ -141,12 +139,10 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" enableAwareness="true">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor">
+    <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" enableAwareness="true">
+    </e-blockeditor-collaborationsettings>
+</ejs-blockeditor>
 
 {% endhighlight %}
 {% endtabs %}
@@ -158,9 +154,7 @@ Set the current user's display name and cursor highlight color using the `users`
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" created="onCreated"></ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor" created="onCreated"></ejs-blockeditor>
 
 <script>
     var blockEditorObj;
@@ -202,12 +196,10 @@ Configure the `versionHistory` property under `collaborationSettings` property b
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor">
+    <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" versionHistory="versionHistorySettings">
+    </e-blockeditor-collaborationsettings>
+</ejs-blockeditor>
 
 <script>
     var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
@@ -404,12 +396,10 @@ Triggered when a new snapshot is created.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor">
+    <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
+    </e-blockeditor-collaborationsettings>
+</ejs-blockeditor>
 
 <script>
 
@@ -434,12 +424,10 @@ Triggered when a snapshot is restored.
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
-</div>
+<ejs-blockeditor id="block-editor">
+    <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
+    </e-blockeditor-collaborationsettings>
+</ejs-blockeditor>
 
 <script>
 
