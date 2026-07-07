@@ -18,13 +18,12 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                     {
                         Id = "User", // Unique identifier for the participant
                         Content = "User", // Label or name of the participant
-                        IsActor = true // Indicates that the participant is an actor
+                        Stereotype = UmlSequenceParticipantStereotype.Actor // Indicates that the participant is an actor
                     },
                     new DiagramUmlSequenceParticipant
                     {
                         Id = "System", // Unique identifier for the participant
                         Content = "System", // Label or name of the participant
-                        IsActor = false,
                         ShowDestructionMarker = true // Flag to show destruction marker at the end of the lifeline
                     }
                 }

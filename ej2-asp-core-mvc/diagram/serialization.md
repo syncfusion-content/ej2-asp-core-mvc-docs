@@ -89,7 +89,8 @@ var diagram: Diagram = new Diagram({
  serializationSettings: { preventDefaults: true },
 });
 ```
-## Detect unsaved changes
+
+## Detect Unsaved Changes
 
 The [isModified](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Diagrams.Diagram.html/isModified) property indicates whether the diagram has unsaved changes. It becomes **true** when the diagram is changed, such as when nodes, connectors, or diagram properties are updated, or when undo and redo actions are performed.
 

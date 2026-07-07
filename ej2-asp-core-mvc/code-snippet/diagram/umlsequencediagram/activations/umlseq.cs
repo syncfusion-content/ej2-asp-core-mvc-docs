@@ -21,14 +21,13 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                     {
                         Id = "User",
                         Content = "User",
-                        IsActor = true
+                        Stereotype = UmlSequenceParticipantStereotype.Actor
                     },
                     // Define the "System" as a non-actor participant with a destruction marker
                     new DiagramUmlSequenceParticipant
                     {
                         Id = "System",
                         Content = "System",
-                        IsActor = false,
                         ShowDestructionMarker = true,
                         // Define activation boxes for the system
                         ActivationBoxes = new List<DiagramUmlSequenceActivationBox>

@@ -19,27 +19,24 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                     {
                         Id = "User",
                         Content = "User",
-                        IsActor = true // Indicates this participant is an actor
+                        Stereotype = UmlSequenceParticipantStereotype.Actor // Indicates this participant is an actor
                     },
                     new DiagramUmlSequenceParticipant
                     {
                         Id = "System",
                         Content = "System",
-                        IsActor = false,
                         ShowDestructionMarker = true // Shows a destruction marker in the diagram
                     },
                     new DiagramUmlSequenceParticipant
                     {
                         Id = "Logger",
                         Content = "Logger",
-                        IsActor = false,
                         ShowDestructionMarker = true
                     },
                     new DiagramUmlSequenceParticipant
                     {
                         Id = "SessionManager",
                         Content = "SessionManager",
-                        IsActor = false
                     }
                 },
                 // Define the messages exchanged between these participants

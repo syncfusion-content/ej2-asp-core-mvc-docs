@@ -1,0 +1,6 @@
+@Syncfusion.EJ2.Diagrams;
+
+@(Html.EJS().Diagram("container").Width("100%").Height("400px")
+    .Nodes(ViewBag.nodes)
+    .Render()
+)

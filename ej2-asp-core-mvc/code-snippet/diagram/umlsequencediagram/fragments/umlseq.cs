@@ -18,9 +18,9 @@ namespace EJ2MVCSampleBrowser.Controllers.Diagram
                 // Define the participants involved in the diagram
                 Participants = new List<DiagramUmlSequenceParticipant>
                 {
-                    new DiagramUmlSequenceParticipant { Id = "Customer", Content = "Customer", IsActor = true },
-                    new DiagramUmlSequenceParticipant { Id = "OrderSystem", Content = "Order System", IsActor = false },
-                    new DiagramUmlSequenceParticipant { Id = "PaymentGateway", Content = "Payment Gateway", IsActor = false }
+                    new DiagramUmlSequenceParticipant { Id = "Customer", Content = "Customer", Stereotype = UmlSequenceParticipantStereotype.Actor },
+                    new DiagramUmlSequenceParticipant { Id = "OrderSystem", Content = "Order System"},
+                    new DiagramUmlSequenceParticipant { Id = "PaymentGateway", Content = "Payment Gateway"}
                 },
 
                 // Define the messages exchanged between participants

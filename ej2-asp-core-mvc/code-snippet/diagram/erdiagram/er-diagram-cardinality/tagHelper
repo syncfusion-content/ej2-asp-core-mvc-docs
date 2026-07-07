@@ -1,0 +1,2 @@
+<ejs-diagram id="diagram" width="100%" height="400px" nodes="@ViewBag.nodes" connectors="@ViewBag.Connectors">
+</ejs-diagram>
