@@ -12,8 +12,6 @@ documentation: ug
 
 The `CustomAdaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart is a powerful extension mechanism that customizes any existing adaptor ([RemoteSaveAdaptor](./remote-save-adaptor), [WebMethodAdaptor](./web-method-adaptor), [ODataV4Adaptor](./odatav4-adaptor), [GraphQLAdaptor](./graphql-adaptor)) to meet specific application requirements. Use this adaptor when the built-in adaptors do not fully match backend requirements and need to customize request or response pipeline. Instead of creating an adaptor from scratch, `CustomAdaptor` intercepts and customizes the HTTP request/response pipeline used by the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart.
 
-For detailed guidance, refer to the [DataManager CustomAdaptor documentation](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/custom-adaptor), which explains the usage of custom adaptors in depth. For detailed server-side setup and further implementation details, see the [DataManager ODataV4Adaptor documentation](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/odatav4-adaptor), covering endpoint configuration, query handling, and recommended practices for integrating OData V4 services.
-
 Once the project creation and backend setup are complete, the next step is to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt Chart component on the client side.
 
 **Project structure:**

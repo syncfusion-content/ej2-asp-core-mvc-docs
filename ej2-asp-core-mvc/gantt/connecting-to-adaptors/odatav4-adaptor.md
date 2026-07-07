@@ -10,15 +10,13 @@ documentation: ug
 
 # OData Remote Data Binding in Syncfusion ##Platform_Name## Gantt Chart
 
-The [ODataV4Adaptor](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/odatav4-adaptor) in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## DataManager enables seamless integration between the ##Platform_Name## Gantt chart and OData v4 services by translating the Gantt's task data requests and update actions into OData-formatted requests and by interpreting OData responses. Use this adaptor when backend exposes OData v4 endpoints and require standardized query capabilities with server-side processing. ODataV4Adaptor is intended specifically for OData-compliant services and is not required for standard REST or custom web-method endpoints.
-
-For detailed server-side configuration and further implementation details, refer to the [DataManager ODataV4Adaptor documentation](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/odatav4-adaptor), which covers endpoint setup, query processing, and best practices for integrating OData V4 services.
+The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## DataManager enables seamless integration between the ##Platform_Name## Gantt chart and OData v4 services by translating the Gantt's task data requests and update actions into OData-formatted requests and by interpreting OData responses. Use this adaptor when backend exposes OData v4 endpoints and require standardized query capabilities with server-side processing. `ODataV4Adaptor` is intended specifically for OData-compliant services and is not required for standard REST or custom web-method endpoints.
 
 Once the project creation and backend setup are complete, the next step is to render the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt chart component on the client side.
 
 **Project structure:**
 
-- Frontend: A ##Platform_Name## application that hosts the Gantt component and configures the DataManager with an ODataV4Adaptor.
+- Frontend: A ##Platform_Name## application that hosts the Gantt component and configures the DataManager with an `ODataV4Adaptor`.
 - Backend: An OData v4 service that exposes task entities and supports the query options the client will use.
 
 ```
@@ -48,7 +46,7 @@ This section explains how the Gantt interacts with an OData v4 service. Implemen
 
 ### Step 2: Configure DataManager with ODataV4Adaptor
 
-- Configure a DataManager instance that points to the OData v4 task endpoint and specifies the ODataV4Adaptor. The Gantt then uses that DataManager as its source for task records and related datasets.
+- Configure a DataManager instance that points to the OData v4 task endpoint and specifies the `ODataV4Adaptor`. The Gantt then uses that DataManager as its source for task records and related datasets.
 
 Conceptually, the adaptor formats timeline and task-related requests (for example, requests scoped to a taskbar edit, requests to fetch related resources, or requests that convey task modifications) as OData v4 queries the server can process.
 

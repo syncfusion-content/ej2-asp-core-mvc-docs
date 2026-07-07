@@ -10,9 +10,7 @@ documentation: ug
 
 # Binding with RemoteSaveAdaptor in Syncfusion ##Platform_Name## Gantt Chart
 
-The [RemoteSaveAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/remote-save-adaptor) in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt chart provides a hybrid data workflow. Use this adaptor when want to fetch the complete task set once, perform client-side operations for responsiveness, and persist edits back to the server via batch CRUD requests. Choose RemoteSaveAdaptor when fast client-side interaction is required while maintaining server-side data persistence. Unlike fully remote adaptors, it combines local data operations with remote synchronization.
-
-For detailed server-side configuration and further implementation details, refer to the [DataManager RemoteSaveAdaptor documentation](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/remote-save-adaptor), which explains endpoint setup, request handling, and best practices for synchronizing CRUD operations with remote services.
+The `RemoteSaveAdaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt chart provides a hybrid data workflow. Use this adaptor when want to fetch the complete task set once, perform client-side operations for responsiveness, and persist edits back to the server via batch CRUD requests. Choose RemoteSaveAdaptor when fast client-side interaction is required while maintaining server-side data persistence. Unlike fully remote adaptors, it combines local data operations with remote synchronization.
 
 This guide describes the conceptual project layout and patterns for wiring the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt chart to a backend that implements a batch CRUD endpoint.
 
@@ -48,7 +46,7 @@ This section describes at a conceptual level, how the Gantt consumes task data f
 
 ### Step 2: Configure DataManager with RemoteSaveAdaptor
 
-- Configure a DataManager instance that loads the full task dataset from the server and specifies the RemoteSaveAdaptor. The Gantt then uses that DataManager as its source for task records and related datasets, and persists CRUD changes via a batch endpoint.
+- Configure a DataManager instance that loads the full task dataset from the server and specifies the `RemoteSaveAdaptor`. The Gantt then uses that DataManager as its source for task records and related datasets, and persists CRUD changes via a batch endpoint.
 
 Conceptually, the adaptor fetches all data once, enables fast client-side operations, and synchronizes changes back to the server in batches.
 

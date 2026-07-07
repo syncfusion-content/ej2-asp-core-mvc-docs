@@ -10,7 +10,7 @@ documentation: ug
 
 # GraphQL Remote Data Binding in Syncfusion ##Platform_Name## Gantt Chart
 
-The [GraphQLAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/graphql-adaptor) in the Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager enables the ##Platform_Name## Gantt to interact with GraphQL services by translating the Gantt's data requests and task update actions into GraphQL queries and mutations. Use this adaptor when backend exposes a GraphQL API and want flexible, efficient data fetching and mutation for Gantt tasks. GraphQLAdaptor is best for scenarios requiring precise data selection and real-time updates, offering capabilities not present in REST or OData adaptors.
+The `GraphQLAdaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> DataManager enables the ##Platform_Name## Gantt to interact with GraphQL services by translating the Gantt's data requests and task update actions into GraphQL queries and mutations. Use this adaptor when backend exposes a GraphQL API and want flexible, efficient data fetching and mutation for Gantt tasks. `GraphQLAdaptor` is best for scenarios requiring precise data selection and real-time updates, offering capabilities not present in REST or OData adaptors.
 
 For server configuration and schema expectations (queries, mutations, and response shapes), consult the GraphQL backend documentation appropriate for stack. After the GraphQL service is available, configure the Gantt's DataManager to use the GraphQL adaptor as its task data source.
 

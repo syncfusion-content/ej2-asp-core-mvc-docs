@@ -10,11 +10,9 @@ documentation: ug
 
 # WebMethodAdaptor in Syncfusion ##Platform_Name## Gantt Chart
 
-The [WebMethodAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/web-method-adaptor) enables the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt to communicate with server web methods and legacy endpoints by packaging task data requests and task modification payloads into a structured request envelope the server can deserialize. Use this adaptor when backend exposes web methods that handle task requests and updates via HTTP POST operations, especially if need to integrate with legacy systems or custom endpoints. Unlike other adaptors, `WebMethodAdaptor` is designed for scenarios where standard REST or OData endpoints are not available.
+The `WebMethodAdaptor` enables the Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Gantt to communicate with server web methods and legacy endpoints by packaging task data requests and task modification payloads into a structured request envelope the server can deserialize. Use this adaptor when backend exposes web methods that handle task requests and updates via HTTP POST operations, especially if need to integrate with legacy systems or custom endpoints. Unlike other adaptors, `WebMethodAdaptor` is designed for scenarios where standard REST or OData endpoints are not available.
 
 For backend configuration and expected request/response shapes, consult the WebMethod adaptor backend setup documentation for platform. After the backend is prepared, configure the DataManager in the ##Platform_Name## application to use the WebMethod adaptor as the Gantt data source.
-
-For detailed server-side configuration and further implementation details, refer to the [DataManager WebMethod Adaptor documentation](https://ej2.syncfusion.com/aspnetcore/documentation/data/adaptors/web-method-adaptor), which covers endpoint setup, query processing, and best practices for integrating WebMethod-based services.
 
 **Project structure (conceptual):**
 
