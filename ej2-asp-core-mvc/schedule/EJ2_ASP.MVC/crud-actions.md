@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CRUD Actions in ##Platform_Name## Schedule Component
+# CRUD Actions in ASP.NET MVC Schedule Component
 
 Events, a.k.a. Appointments, play an important role in Scheduler with which the users mostly interact. You can easily manipulate (add/edit/delete) the desired appointments as and when required either using the editor window or through the drag and resize action.
 
@@ -700,4 +700,4 @@ When you resize a normal event on the Scheduler, the event editing action takes 
 
 N> By default, when you resize a recurring instance, only the occurrence of the event gets edited and not a whole series.
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Timezone in ##Platform_Name## Schedule Component
+title: Timezone in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Timezone in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Timezone
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Timezone
+# Timezone in ASP.NET Core Schedule Componnet
 
 The Scheduler makes use of the current system time zone by default. If it needs to follow some other user-specific time zone, then the [`timezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_Timezone) property needs to be used. Apart from the default action of applying specific timezone to the Scheduler, it is also possible to set different time zone values for each appointments through the properties [`startTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_StartTimezone) and [`endTimezone`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_EndTimezone) which can be defined as separate fields within the event fields collection.
 
@@ -298,4 +298,4 @@ Returns `Date`
     console.log(convertedDate); //2018-12-05T15:25:11.000Z
 ```
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Editor Template in ##Platform_Name## Syncfusion Schedule Component
+title: Editor Template in ##Platform_Name## Syncfusion Schedule Component| Syncfusion
 description: Learn here all about Editor Template in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Editor Template
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editor window and quick popups
+# Editor window and quick popups in ASP.NET Core Schedule Component
 
 Scheduler makes use of popups and dialog to display the required notifications, as well as includes an editor window with event fields for making the appointment creation and editing process easier. You can also easily customize the editor window and the fields present in it, and can also apply validations on those fields.
 
@@ -736,4 +736,4 @@ You can close the quick info popup in scheduler by using the `closeQuickInfoPopu
 
 
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header customization
+# Header customization in ASP.NET MVC in Schedule
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
@@ -191,4 +191,4 @@ The [`DateRangeTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% endtabs %}
 {% endif %}
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Setting working days and hours
+# Setting working days and hours in ASP.NET MVC Schedule Component
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
@@ -309,7 +309,7 @@ There are scenarios where you may need to load the Scheduler displaying the syst
 
 
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
 
 ## See Also
 

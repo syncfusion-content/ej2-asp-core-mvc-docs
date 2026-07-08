@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Prevent the Date Navigation
+# Prevent the Date Navigation in ASP.NET MVC Schedule control
 
 We can prevent navigation while clicking on the date header by simply removing `e-navigate` class from header cells which can be achieved in the [`RenderCell`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RenderCell) event as shown in the following code example.
 

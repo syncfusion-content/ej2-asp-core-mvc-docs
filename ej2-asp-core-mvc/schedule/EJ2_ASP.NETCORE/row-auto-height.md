@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row Auto Height in ##Platform_Name## Schedule Component
+title: Row Auto Height in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Row Auto Height in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Row Auto Height
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row Auto Height
+# Row Auto Height in ASP.NET Core Schedule Component
 
 By default, the height of the Scheduler rows in Timeline views are static and therefore, when the same time range holds multiple overlapping appointments, a `+n more` text indicator will be displayed. With this feature enabled, you can now view all the overlapping appointments present in those specific time range by auto-adjusting the row height based on the presence of the appointments count, instead of displaying the `+n more` text indicators.
 
@@ -141,4 +141,4 @@ By default, with the feature [`rowAutoHeight`](https://help.syncfusion.com/cr/as
 
 **Note**: The property [`ignoreWhitespace`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_IgnoreWhitespace) will be applicable only when [`rowAutoHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is enabled in the Scheduler.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

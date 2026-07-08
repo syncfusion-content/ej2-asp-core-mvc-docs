@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Edit And Remove Events in ##Platform_Name## Schedule Component
+title: Add Edit And Remove Events in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Add Edit And Remove Events in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Edit And Remove Events
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Perform CRUD Actions Dynamically
+# Perform CRUD Actions Dynamically in ASP.NET Core Schedule Component
 
 CRUD actions can be manually performed on appointments using `addEvent`, `saveEvent` and `deleteEvent` methods as shown below.
 

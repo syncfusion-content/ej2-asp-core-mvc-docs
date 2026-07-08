@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context menu in ##Platform_Name## Schedule Component
+# Context menu in ASP.NET Core Schedule Component
 
 You can display context menu on work cells and appointments of Scheduler by making use of the [`ContextMenu`](https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started) control manually from the application end. In the following code example, context menu control is being added from sample end and set its target as `Scheduler`.
 
@@ -45,4 +45,4 @@ N> You can also display custom menu options on Scheduler cells and appointments.
 
 ![Display Context Menu in ASP.NET Core Scheduler](images/scheduler-context-menu.png)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

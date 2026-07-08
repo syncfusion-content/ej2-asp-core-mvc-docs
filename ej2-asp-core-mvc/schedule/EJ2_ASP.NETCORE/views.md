@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Views in ##Platform_Name## Schedule Component
+title: Views in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Views in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Views
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Views
+# Views in ASP.NET Core Schedule Component
 
 The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, Timeline Year, out of which the `Week` view is set as active.
 
@@ -601,4 +601,4 @@ N> The view intervals can be extended on all the Scheduler view modes except Age
 
 * [How to restrict view navigation while clicking on dates](./how-to/prevent-date-navigation)
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

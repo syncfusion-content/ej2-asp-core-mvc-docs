@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar Mode in ##Platform_Name## Schedule Component
+title: Calendar Mode in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Calendar Mode in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calendar Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar mode in ASP.NET Core Schedule Component
 
 The Scheduler supports the following two types of calendar mode.
 
@@ -36,7 +36,7 @@ It requires the following CLDR data to be loaded using loadCldr function.
 * timeZoneNames.json
 * ca-islamic.json
 
-N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization/#installing-cldr-data) topic.
+N> To know more information on, how to install the CLDR data, refer the [`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#installing-cldr-data) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -65,4 +65,4 @@ N> To know more information on, how to install the CLDR data, refer the [`Intern
 
 N> However, this feature does not yet support recurrence options, which we are planning to add them in the next release.
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

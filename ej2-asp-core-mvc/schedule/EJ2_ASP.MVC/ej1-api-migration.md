@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Schedule Component
+title: Ej1 Api Migration in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -194,4 +194,4 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 | Fires on rendering of every scheduler elements | **Event:** *QueryCellInfo* <br/><br/> `@(Html.EJ().Schedule("schedule").ScheduleClientSideEvents(e=>e.QueryCellInfo("onQueryCellInfo")))` <br> <br> **Script:** <br>`<script>` <br> `function onQueryCellInfo(args) {` <br> `}` <br> `</script>` | **Event:** *RenderCell* <br/><br/> `@Html.EJS().Schedule("schedule").RenderCell("onRenderCell").Render()` <br> <br> **Script:** <br>`<script>` <br> `function onRenderCell(args) {` <br> `}` <br> `</script>` <br> |
 | Fires before the event rendering on UI | Not applicable | **Event:** *EventRendered* <br/><br/> `@Html.EJS().Schedule("schedule").EventRendered("onEventRendered").Render()` <br> <br> **Script:** <br>`<script>` <br> `function onEventRendered(args) {` <br> `}` <br> `</script>` |
 
-> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.

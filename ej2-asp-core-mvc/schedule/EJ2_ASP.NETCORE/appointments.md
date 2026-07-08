@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointments in ##Platform_Name## Syncfusion Schedule Component
+title: Appointments in ##Platform_Name## Syncfusion Schedule Component| Syncfusion
 description: Learn here all about Appointments in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appointments
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appointments in ##Platform_Name## Schedule Component
+# Appointments in ASP.NET Core Schedule Component
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 
@@ -1612,4 +1612,4 @@ If your requirement is to simply refresh the appointments instead of refreshing 
 scheduleObj.refreshEvents();
 ```
 
-N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.

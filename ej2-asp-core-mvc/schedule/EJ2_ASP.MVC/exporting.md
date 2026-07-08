@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting in ##Platform_Name## Syncfusion Schedule Component
+title: Exporting in ##Platform_Name## Syncfusion Schedule Component| Syncfusion
 description: Learn here all about Exporting in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Exporting
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Exporting in ##Platform_Name## Schedule Component
+# Exporting in ASP.NET MVC Schedule Component
 
 The Scheduler supports exporting all its appointments both to an Excel or ICS extension file at client-side. It offers different client-side methods to export its appointments in an Excel or ICal format file. Let's look onto the ways on how to implement the exporting functionality in Scheduler.
 
@@ -449,4 +449,4 @@ Here’s an example of how you can add a custom header and footer to the print l
 {% endtabs %}
 {% endif %}
 
-N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/aspnet-mvc-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
+N> You can refer to our [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Scheduler](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) example to knows how to present and manipulate data.
