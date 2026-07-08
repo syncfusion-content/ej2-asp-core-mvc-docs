@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Recurrence editor in ##Platform_Name## Schedule Component
+# Recurrence editor in ASP.NET MVC Schedule Component
 
 The Recurrence editor is integrated into Scheduler editor window by default, to process the recurrence rule generation for events. Apart from this, it can also be used as an individual component referring from the Scheduler repository to work with the recurrence related processes.
 

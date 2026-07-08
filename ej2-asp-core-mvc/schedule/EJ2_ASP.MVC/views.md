@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Views in ##Platform_Name## Schedule Component
+# Views in ASP.NET MVC Schedule Component
 
 The Scheduler includes wide variety of view modes with unique configuration options for each view. The available view modes are Day, Week, Work Week, Month, Year, Agenda, Month Agenda, Timeline Day, Timeline Week, Timeline Work Week and Timeline Month, Timeline Year, out of which the `Week` view is set as active.
 

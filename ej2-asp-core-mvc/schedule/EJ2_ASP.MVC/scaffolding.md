@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding in ##Platform_Name## Schedule Component
+title: Scaffolding in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open Editor Window in different ways
+# Open Editor Window in different ways in ASP.NET MVC Schedule control
 
 ## Open Editor Window Manually
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Quick Info Template in ##Platform_Name## Schedule Component
+title: Quick Info Template in ##Platform_Name## Schedule Component| Syncfusion
 description: Learn here all about Quick Info Template in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Quick Info Template
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show quick info Template
+# Show quick info Template in ASP.NET MVC Schedule control
 
 This demo showcases the quick popups for cells and appointments with the customized templates.
 

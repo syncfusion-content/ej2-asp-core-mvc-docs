@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appointments in ##Platform_Name## Syncfusion Schedule Component
+title: Appointments in ##Platform_Name## Syncfusion Schedule Component| Syncfusion
 description: Learn here all about Appointments in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appointments
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appointments in ##Platform_Name## Schedule Component
+# Appointments in ASP.NET MVC Schedule Component
 
 Appointments can be anything that are scheduled for a specific time period. It can be created on varied time range and each appointments are categorized based on this range. The Scheduler events can be categorized as,
 

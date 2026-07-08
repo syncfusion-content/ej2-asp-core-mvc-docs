@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Setting working days and hours
+# Setting working days and hours in ASP.NET Core Schedule Component
 
 The Scheduler can be customized on various aspects as well as it inherits almost all the calendar-specific features such as options,
 
