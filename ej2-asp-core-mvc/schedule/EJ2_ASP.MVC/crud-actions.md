@@ -194,7 +194,7 @@ The appointments can be edited and updated manually using the `saveEvent` method
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/appointments/#adding-exceptions) topic.
+In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/appointments#adding-exceptions) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
