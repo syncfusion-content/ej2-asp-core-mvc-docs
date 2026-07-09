@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding in ##Platform_Name## Schedule Component
+title: Scaffolding in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# ASP.NET MVC Scaffolding
+# Scaffolding in ASP.NET MVC Schdeule Component
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> includes an extension for **Visual Studio** with UI Scaffolding options for the ASP.NET MVC Scheduler to quickly add its code and interact with data models. This allows you to easily create the appropriate **Views** and **Controller** action methods with respective ASP.NET MVC Scheduler code.
 
@@ -21,7 +21,7 @@ Let's start with the steps on how to scaffold the ASP.NET MVC Scheduler into you
 
 * Create an ASP.NET MVC application and add an Entity Framework data model referring from the [documentation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) with Scheduler related fields such as Id, Subject, Location, Start Date, End Date and All-day. Once the model file is added, ensure the required DBContext and all its related properties are added.
 
-* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET MVC in your web application.
+* Refer the [Getting Started documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017#configure-essential-js-2-in-the-application) to know about how to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS2 for ASP.NET MVC in your web application.
 
 * Right-click on the **Controllers** folder in the Solution Explorer and select **Add → New Scaffolded Item** from the menu options.
 
