@@ -742,19 +742,19 @@ LibMan offers the following advantages,
 
 ![Select unpkg provider](images/client-library-unpkg.png)
 
-3.You can refer the combined control styles by using `@syncfusion/ej2@{{ site.ej2version }}` in the library textbox.
+3.You can refer the combined control styles by using `@syncfusion/ej2-fluent2-theme@{{ site.ej2version }}` in the library textbox.
 
 ![Specify Syncfusion library](images/library-unpkg.png)
 
-4.You can able to choose specific files or include all library files like below.
+4.You can able to choose specific component or include all necessary library files like below.
 
-For example, Choose specific files and the bootstrap5 theme is selected in the dialog.
+For example, Choose the accordion theme is selected in the dialog from the fluent2 theme.
 
 ![Choose themes](images/library-unpkg-theme.png)
 
 5.By using the target location textbox, you can specify the location of where files will be stored in the application.
 
-For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `wwwroot/themes/syncfusion/ej2/`.
+For example, Modified the default location `wwwroot/lib/syncfusion/ej2-fluent2-theme/` to  `wwwroot/themes/syncfusion/ej2-fluent2-theme/`.
 
 ![Modified the target location](images/client-side-target-unpkg.png)
 
@@ -768,10 +768,10 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
   "defaultProvider": "unpkg",
   "libraries": [
     {
-      "library": "@syncfusion/ej2@{{ site.ej2version }}",
-      "destination": "wwwroot/themes/syncfusion/ej2/",
+      "library": "@syncfusion/ej2-fluent2-theme@{{ site.ej2version }}",
+      "destination": "wwwroot/themes/syncfusion/ej2-fluent2-theme/",
       "files": [
-        "bootstrap5.css"
+        "styles/accordion/accordion.css"
       ]
     }
   ]
@@ -782,26 +782,34 @@ For example, Modified the default location `wwwroot/lib/syncfusion/ej2/` to  `ww
 
 N> If you use individual control styles, you should install their dependent controls styles.
 
-7.you can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
+7.You can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
   ...
-  <link href="~/themes/syncfusion/ej2/bootstrap5.css" rel="stylesheet" />
+  <link href="~/themes/syncfusion/ej2-fluent2-theme/fluent2.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
+8.Run the application and see the fluent2 accordion component themes downloaded from LibMan were applied.
+
+### Client-Side Library dialog with Web Compiler
 
 You can also choose `SCSS` file and customize theme variables using the [Web Compiler 2022+](https://marketplace.visualstudio.com/items?itemName=Failwyn.WebCompiler64) by following steps.
 
+1.Select the required Component, Base, and Icon SCSS files as shown below.
+
 ![Choose SCSS file](images/library-unpkg-theme-scss.png)
 
-1.Now, use a specific target location and click the install button to get the `libman.json` with the following content.
+![Choose SCSS Base file](images/library-unpkg-base-scss.png)
+
+![Choose SCSS Icon file](images/library-unpkg-icon-scss.png)
+
+2.Now, use a specific target location and click the install button to get the `libman.json` with the following content.
 
 {% tabs %}
 {% highlight cshtml tabtitle="libman.json" %}
@@ -811,10 +819,29 @@ You can also choose `SCSS` file and customize theme variables using the [Web Com
   "defaultProvider": "unpkg",
   "libraries": [
     {
-      "library": "@syncfusion/ej2@{{ site.ej2version }}",
-      "destination": "wwwroot/lib/syncfusion/ej2/",
+      "library": "@syncfusion/ej2-fluent2-theme@{{ site.ej2version }}",
+      "destination": "wwwroot/lib/syncfusion/ej2-fluent2-theme/",
       "files": [
-        "base/bootstrap5.scss"
+        "styles/base/animation/_all.scss",
+        "styles/accordion/accordion-lite.scss",
+        "styles/base/_fluent2-definition.scss",
+        "styles/accordion/accordion.scss",
+        "styles/base/base.scss",
+        "styles/accordion/index-lite.scss",
+        "styles/icons/fluent2.scss",
+        "styles/accordion/index.scss",
+        "styles/accordion/_all.scss",
+        "styles/accordion/_bigger.scss",
+        "styles/accordion/_fluent2-definition.scss",
+        "styles/accordion/_layout.scss",
+        "styles/accordion/_theme.scss",
+        "styles/accordion/_variables.scss",
+        "styles/accordion/icons/_fluent2.scss",
+        "styles/base/common/_all.scss",
+        "styles/base/common/_base-variables.scss",
+        "styles/base/common/_core.scss",
+        "styles/base/common/_mixin.scss",
+        "styles/base/definition/_fluent2.scss"
       ]
     }
   ]
@@ -823,60 +850,73 @@ You can also choose `SCSS` file and customize theme variables using the [Web Com
 {% endhighlight %}
 {% endtabs %}
 
-2.Open Command Prompt from the application root directory and run the following command to install the Syncfusion<sup style="font-size:70%">&reg;</sup> `node_modules` in this application.
+3.Open Command Prompt from the application root directory and run the following command to install the Syncfusion<sup style="font-size:70%">&reg;</sup> `node_modules` in this application.
 
 {% tabs %}
 {% highlight c# tabtitle="CMD" %}
 
-npm install @syncfusion/ej2
+npm install @syncfusion/ej2-fluent2-theme
 
 {% endhighlight %}
 {% endtabs %}
 
-3.Open Visual Studio 2022 and click the Extensions in the toolbar.
+4.Open Visual Studio 2022 and click the Extensions in the toolbar.
 
 ![VS Extension](images/vs_extension.png)
 
-4.Search the `Web Compiler 2022+` in search box and download the extension.
+5.Search the `Web Compiler 2022+` in search box and download the extension.
 
 ![Web Compiler 2022+](images/web_compiler.png)
 
-5.Right-click the `SCSS` file and click the Web Compiler to compile the file.
+6.Right-click the component `SCSS` file and click the Web Compiler to compile the file.
 
 ![Themes-libman-compile](images/themes-libman-compile.png)
 
-6.The `compilerconfig.json` file is created by default. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
+7.Right-click the icon `SCSS` file and click the Web Compiler to compile the file.
+
+![Themes-libman-icon-compile](images/themes-libman-icon-compile.png)
+
+8.The `compilerconfig.json` file is created by default. Then, provide the location of the compiled CSS file and include a path as shown in the following code snippet.
 
 {% tabs %}
 {% highlight c# tabtitle="compilerconfig.json" %}
 
 [
   {
-    "inputFile": "wwwroot/lib/syncfusion/ej2/base/bootstrap5.scss",
-    "outputFile": "wwwroot/lib/syncfusion/ej2/base/bootstrap5.css",
+    "outputFile": "wwwroot/lib/syncfusion/ej2-fluent2-theme/styles/accordion/accordion.css",
+    "inputFile": "wwwroot/lib/syncfusion/ej2-fluent2-theme/styles/accordion/accordion.scss",
+    "options": {
+      "includePath": "node_modules/@syncfusion"
+    }
+  },
+  {
+    "outputFile": "wwwroot/lib/syncfusion/ej2-fluent2-theme/styles/icons/fluent2.css",
+    "inputFile": "wwwroot/lib/syncfusion/ej2-fluent2-theme/styles/icons/fluent2.scss",
     "options": {
       "includePath": "node_modules/@syncfusion"
     }
   }
+  
 ]
 
 {% endhighlight %}
 {% endtabs %}
 
-7.You can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
+9.You can refer to the theme sheet which was downloaded from the client-side library in the `<head>` element of the **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
   ...
-  <link href="~/lib/syncfusion/ej2/base/bootstrap5.css" rel="stylesheet" />
+  <link href="~/lib/syncfusion/ej2-fluent2-theme/styles/accordion/accordion.css" rel="stylesheet" />
+ <link href="~/lib/syncfusion/ej2-fluent2-theme/styles/icons/fluent2.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-8.Run the application and see the bootstrap5 themes downloaded from LibMan were applied.
+10.Run the application and see the Fluent 2 accordion component themes downloaded from LibMan were applied.
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-libman)
 
