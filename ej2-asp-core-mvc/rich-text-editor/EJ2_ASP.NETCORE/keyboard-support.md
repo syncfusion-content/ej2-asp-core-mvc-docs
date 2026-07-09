@@ -160,6 +160,60 @@ These miscellaneous shortcuts help with actions like toggling fullscreen, cleari
 
 You can able to customize the key config for the keyboard interaction of Rich Text Editor, using [keyConfig](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_KeyConfig) property.
 
+The following table lists all available `keyConfig` options in the Rich Text Editor along with their default keyboard shortcut values. You can customize these shortcut keys based on your requirements by using the `keyConfig` property.
+ 
+| Action | Default key config |
+|----------------|---------|
+| toolbar-focus | <kbd>Alt</kbd> + <kbd>F10</kbd> |
+| escape | <kbd>Esc</kbd> |
+| backspace | <kbd>Backspace</kbd> |
+| insert-link | <kbd>Ctrl</kbd> + <kbd>K</kbd> |
+| insert-image | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> |
+| insert-audio | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> |
+| insert-video | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>V</kbd> |
+| insert-table | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> |
+| undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> |
+| redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> |
+| copy | <kbd>Ctrl</kbd> + <kbd>C</kbd> |
+| cut | <kbd>Ctrl</kbd> + <kbd>X</kbd> |
+| paste | <kbd>Ctrl</kbd> + <kbd>V</kbd> |
+| bold | <kbd>Ctrl</kbd> + <kbd>B</kbd> |
+| italic | <kbd>Ctrl</kbd> + <kbd>I</kbd> |
+| underline | <kbd>Ctrl</kbd> + <kbd>U</kbd> |
+| strikethrough | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> |
+| uppercase | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd> |
+| lowercase | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> |
+| superscript | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>=</kbd> |
+| subscript | <kbd>Ctrl</kbd> + <kbd>=</kbd> |
+| indents | <kbd>Ctrl</kbd> + <kbd>]</kbd> |
+| outdents | <kbd>Ctrl</kbd> + <kbd>[</kbd> |
+| html-source | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> |
+| full-screen | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> |
+| decrease-fontsize | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;</kbd> |
+| increase-fontsize | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&gt;</kbd> |
+| justify-center | <kbd>Ctrl</kbd> + <kbd>E</kbd> |
+| justify-full | <kbd>Ctrl</kbd> + <kbd>J</kbd> |
+| justify-left | <kbd>Ctrl</kbd> + <kbd>L</kbd> |
+| justify-right | <kbd>Ctrl</kbd> + <kbd>R</kbd> |
+| clear-format | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> |
+| ordered-list | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> |
+| unordered-list | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> |
+| space | <kbd>Space</kbd> |
+| enter | <kbd>Enter</kbd> |
+| shift-enter | <kbd>Shift</kbd> + <kbd>Enter</kbd> |
+| tab | <kbd>Tab</kbd> |
+| shift-tab | <kbd>Shift</kbd> + <kbd>Tab</kbd> |
+| delete | <kbd>Delete</kbd> |
+| format-copy | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> |
+| format-paste | <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> |
+| inlinecode | <kbd>Ctrl</kbd> + <kbd>&#96;</kbd> |
+| code-block | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd> |
+| ai-query | <kbd>Alt</kbd> + <kbd>Enter</kbd> |
+| checklist | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>9</kbd> |
+| print | <kbd>Ctrl</kbd> + <kbd>P</kbd> |
+| checklist-toggle | <kbd>Ctrl</kbd> + <kbd>Enter</kbd> |
+| select-all | <kbd>Ctrl</kbd> + <kbd>A</kbd> |
+
 In the following sample, customize the bold, italic, underline toolbar action with <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`b`</kbd>, <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`i`</kbd> and <kbd>`ctrl`</kbd> + <kbd>`alt`</kbd> + <kbd>`u`</kbd> respectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
