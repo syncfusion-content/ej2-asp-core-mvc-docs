@@ -12,19 +12,29 @@ documentation: ug
 
 The following list of themes are included in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls library.
 
+
 |Theme |Style Sheet Name|
 |--------|--------|
+|Bootstrap | bootstrap.css |
+|Bootstrap Dark | bootstrap-dark.css |
+|Bootstrap 4 | bootstrap4.css |
 |Bootstrap 5 | bootstrap5.css |
 |Bootstrap 5 Dark | bootstrap5-dark.css |
-|Bootstrap 4 | bootstrap4.css |
-|Bootstrap 3 | bootstrap.css |
-|Bootstrap 3 Dark | bootstrap-dark.css |
-|Google’s Material | material.css |
-|Google’s Material-Dark | material-dark.css |
-|Tailwind CSS | tailwind.css |
-|Tailwind CSS Dark | tailwind-dark.css |
+|Bootstrap 5.3 | bootstrap5.3.css |
+|Bootstrap 5.3 Dark | bootstrap5.3-dark.css |
 |Fluent | fluent.css |
 |Fluent Dark | fluent-dark.css |
+|Fluent 2 | fluent2.css |
+|Fluent 2 Dark | fluent2-dark.css |
+|Fluent 2 High Contrast | fluent2-highcontrast.css |
+|Google's Material | material.css |
+|Google's Material Dark | material-dark.css |
+|Material 3 | material3.css |
+|Material 3 Dark | material3-dark.css |
+|Tailwind CSS | tailwind.css |
+|Tailwind CSS Dark | tailwind-dark.css |
+|Tailwind CSS 3 | tailwind3.css |
+|Tailwind CSS 3 Dark | tailwind3-dark.css |
 |Microsoft Office Fabric | fabric.css |
 |Microsoft Office Fabric Dark | fabric-dark.css |
 |High Contrast | highcontrast.css |
@@ -37,11 +47,46 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core themes can be used
 
 Using the below approaches the themes can be referenced in the ASP.NET Core application,
 
-1. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
-2. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
-3. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
-4. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
-5. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
+1.  [Static Web Assets](#static-web-assets) - Used to reference theme stylesheets shipped inside the NuGet package via static web assets.
+2. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
+3. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
+4. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
+5. [NPM Packages](#npm-packages) - Used to customize the existing themes and bundle stylesheet's in an application.
+6. [LibMan](#libman) - Used to downloads popular libraries and frameworks from a file system or a content delivery network (CDN) in an application.
+
+## Static Web Assets
+
+### Enable static web assets usage
+
+To use the Syncfusion® theme files from static web assets, ensure the application serves static files by calling [UseStaticFiles](https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.builder.staticfileextensions.usestaticfiles) in `~/Program.cs`.
+
+{% tabs %}
+{% highlight c# tabtitle="~/Program.cs" %}
+
+var app = builder.Build();
+
+app.UseStaticFiles();
+
+{% endhighlight %}
+{% endtabs %}
+
+### Reference the theme stylesheet from static web assets
+
+Syncfusion® ASP.NET Core themes are provided as static web assets in the [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet package.
+
+Install the `Syncfusion.AspNetCore.Themes` NuGet package and reference the required theme stylesheet inside the `<head>` element of `~/Pages/Shared/_Layout.cshtml` as shown below:
+
+{% tabs %}
+{% highlight c# tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    <link href="_content/Syncfusion.AspNetCore.Themes/fluent2.css" rel="stylesheet" />
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Ensure the referenced stylesheet name matches one of the themes listed in the table above, and that the package version aligns with the Syncfusion® Essential® JS 2 ASP.NET Core version used in the application.
 
 ## CDN Reference
 
