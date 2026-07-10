@@ -34,7 +34,7 @@
 </div>
 
 <script>
-    var promptsData = @promptsJson;
+    var promptsData = @Html.Raw(promptsJson);
 
     var thinkingAIAssistView;
 

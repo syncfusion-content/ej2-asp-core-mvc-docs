@@ -45,6 +45,8 @@ You can use the `Thinking` block type in the blocks array of the a`ddPromptRespo
 {% endhighlight %}
 {% endtabs %}
  
+![Thinking Block](images/thinking-basic.png)
+ 
 ### Adding stages
  
 Each entry in the `stages` array represents a single reasoning step. Below are the list of available stages property.
@@ -72,6 +74,8 @@ Use this to reflect real-time reasoning progress when streaming multi-step respo
 {% include code-snippet/ai-assistview/chain-of-thoughts/stages-status/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Thinking Stages](images/thinking-stages.png)
  
 #### Adding context items
  
@@ -92,6 +96,8 @@ Each context item is described by the below available `ThinkingContextItem` prop
 {% include code-snippet/ai-assistview/chain-of-thoughts/editable-context/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Thinking Editable Context](images/thinking-context.png)
  
 ### Configure editableContextClicked
  
@@ -124,6 +130,8 @@ You can use the `blockTemplate` property, to customize the thinking block render
 {% include code-snippet/ai-assistview/chain-of-thoughts/block-template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Thinking Block Template](images/thinking-block-template.png)
  
 > When `blockTemplate` is set, the default collapsible header, spinner, and Timeline rendering are completely replaced by your template. Collapse/expand behavior and spinner lifecycle management must be handled within the template itself.
  
@@ -143,3 +151,5 @@ The template context for each stage item exposes:
 {% include code-snippet/ai-assistview/chain-of-thoughts/item-template/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+![Thinking Item Template](images/thinking-item-template.png)
