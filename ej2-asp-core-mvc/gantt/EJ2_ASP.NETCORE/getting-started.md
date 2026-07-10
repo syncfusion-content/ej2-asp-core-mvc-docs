@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting started with ASP.NET Core Gantt control
 
-This guide walks you through setting up and integrating the [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your application using Visual Studio or Visual Studio Code. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
+This guide walks you through setting up and integrating the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your application using Visual Studio or Visual Studio Code. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -246,7 +246,7 @@ You will see a Gantt Chart with:
 
 ![ASP.NET Core Gantt Control](images/gantt-control.png)
 
-N> Looking for the full ASP.NET Core Gantt Chart component overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) page.
+N> Looking for the full ASP.NET Core Gantt Chart component overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) page.
 
 ## See also
 
