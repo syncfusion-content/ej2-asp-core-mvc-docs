@@ -26,7 +26,7 @@ The default editor window opens when you double click on the Scheduler cells. It
 
 In case, if you want to simply provide the Subject alone for appointments, just single click on the required cells which will open the quick popup expecting you to enter subject alone and save it. You can also select multiple cells and press `Enter` key to open the quick popup for selected time range and save the appointment for that time range.
 
-In case, if you need to add some other additional fields to the editor window, then you can opt for [custom editor window](./editor-template/#customizing-event-editor-using-template) which allows you to include fields as per your application needs. If you need to add just one or two [additional fields to the existing default editor window](./editor-template/#add-additional-fields-to-the-default-editor), you can do so by defining it manually and then appending it to the editor window.
+In case, if you need to add some other additional fields to the editor window, then you can opt for [custom editor window](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/editor-template#customizing-event-editor-using-template) which allows you to include fields as per your application needs. If you need to add just one or two [additional fields to the existing default editor window](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/editor-template#add-additional-fields-to-the-default-editor), you can do so by defining it manually and then appending it to the editor window.
 
 ### Creation using addEvent method
 
@@ -194,7 +194,7 @@ The appointments can be edited and updated manually using the `saveEvent` method
 
 When the second argument is passed as `EditOccurrence`, which means that the passed event data is a single modified occurrence - whereas if the second argument is passed as `EditSeries`, it means that the modified data needs to be edited as a whole series and therefore no new event object will be maintained in the Scheduler dataSource.
 
-In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](./appointments/#adding-exceptions) topic.
+In case of modifying the single occurrence, it is also necessary to update the [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) field of parent event altogether with the occurrence editing. To know more about how to set [`RecurrenceException`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleField.html#Syncfusion_EJ2_Schedule_ScheduleField_RecurrenceException) values, refer the [recurring events](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/appointments#adding-exceptions) topic.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -362,7 +362,7 @@ if (param.action == "remove" || (param.action == "batch" && param.deleted != nul
 }
 ```
 
-N> To know more about handling recurrence exceptions, refer the [Adding exceptions](./appointments/#adding-exceptions) topic.
+N> To know more about handling recurrence exceptions, refer the [Adding exceptions](https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/appointments#adding-exceptions) topic.
 
 ### How to edit from the current and following events of a series
 
