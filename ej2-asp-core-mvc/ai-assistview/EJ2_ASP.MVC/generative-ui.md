@@ -35,6 +35,8 @@ Use the `addPromptResponse` method to dynamically add tools to AI responses by p
 {% endhighlight %}
 {% endtabs %}
 
+![Generative UI](images/generative-ui.png)
+
 ## Configure AI for generative UI responses
 
 You can configure the AI service to return structured JSON blocks through `system prompt`. This ensures that AI-generated content is properly formatted and rendered as interactive tools or text blocks.
