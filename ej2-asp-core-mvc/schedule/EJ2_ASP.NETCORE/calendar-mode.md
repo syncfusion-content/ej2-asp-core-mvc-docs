@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Calendar Mode in ##Platform_Name## Schedule Component
+title: Calendar Mode in ASP.NET Core Syncfusion Schedule Component
 description: Learn here all about Calendar Mode in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Calendar Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Calendar mode
+# Calendar mode in ASP.NET Core Scheduler Component
 
 The Scheduler supports the following two types of calendar mode.
 

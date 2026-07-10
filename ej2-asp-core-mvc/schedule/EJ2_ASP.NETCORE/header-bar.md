@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header customization
+# Header customization in ASP.NET Core Schedule Component
 
 The header part of Scheduler can be customized easily with the built-in options available.
 
