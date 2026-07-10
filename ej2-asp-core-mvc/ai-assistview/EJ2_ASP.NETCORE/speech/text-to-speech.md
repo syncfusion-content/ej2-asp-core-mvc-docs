@@ -50,7 +50,7 @@ You can use the `e-aiassistview-textToSpeechSettings` tag to customize the speec
 {% endhighlight %}
 {% endtabs %}
 
-![Text To Speech](images/text-to-speech.png)
+![Text To Speech](../images/text-to-speech.png)
 
 ## See Also
 
