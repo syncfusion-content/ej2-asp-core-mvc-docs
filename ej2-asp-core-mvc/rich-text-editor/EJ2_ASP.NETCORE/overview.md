@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# ASP.NET Core RichTextEditor Overview
 
 The Rich Text Editor control is WYSIWYG ("what you see is what you get") editor; it is used to create and edit the content and return valid HTML markup or markdown (MD) of the content. The editor provides a standard toolbar to format content using its commands. Modular library features to load the necessary functionality on demand. The toolbar contains commands to align the text, insert link, insert image, insert list, undo/redo operation, HTML view, and more.
 
@@ -25,3 +25,5 @@ The Rich Text Editor control is WYSIWYG ("what you see is what you get") editor;
 * Handles images, hyperlinks, video, hyperlinks, uploads, and more.
 * Contains undo/redo manager.
 * Creates bulleted and numbered lists.
+
+N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, pricing, and documentation? Visit the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) page.
