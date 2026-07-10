@@ -240,4 +240,4 @@ The output will appear as follows:
 ![ASP.NET MVC Diagram Control](./images/Getting-started.png)
 
 
-N> You can refer to our [ASP.NET MVC Diagram](https://www.syncfusion.com/aspnet-mvc-ui-controls/diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Diagram example](https://ej2.syncfusion.com/aspnetmvc/Diagram/DefaultFunctionalities#/material) that shows how to render the Diagram in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC Diagram](https://www.syncfusion.com/diagram-sdk/aspnet-mvc-diagram) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Diagram example](https://ej2.syncfusion.com/aspnetmvc/Diagram/DefaultFunctionalities#/material) that shows how to render the Diagram in ASP.NET MVC.
