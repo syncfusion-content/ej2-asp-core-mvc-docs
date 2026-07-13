@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Schedule Component
+title: Ej1 Api Migration in ##Platform_Name## Syncfusion Schedule Component
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Schedule component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migration from Essential® JS 1 in ASP.NET Core Schedule Component
 
 This topic shows the API equivalent of JS2 Scheduler component to be used, while migrating your project that uses JS1 Scheduler.
 
@@ -194,4 +194,4 @@ This topic shows the API equivalent of JS2 Scheduler component to be used, while
 | Fires on rendering of every scheduler elements | **Event:** *query-cell-info* <br/><br/> `<ej-schedule id="schedule" query-cell-info="onQueryCellInfo">` <br> `</ej-schedule>` <br> <br> **Script:** <br> `<script>` <br> `function onQueryCellInfo(args) {` <br> `}` <br> `</script>` | **Event:** *renderCell* <br/><br/> `<ejs-schedule  id="schedule" renderCell="onRenderCell">` <br> `</ejs-schedule >` <br> <br> **Script:** <br> `<script>` <br> `function onRenderCell(args) {` <br> `}` <br> `</script>` <br><br> |
 | Fires before the event rendering on UI | Not applicable | **Event:** *eventRendered* <br/><br/> `<ejs-schedule  id="schedule" eventRendered="onEventRendered">` <br> `</ejs-schedule >` <br> <br> **Script:** <br> `<script>` <br> `function onEventRendered(args) {` <br> `}` <br> `</script>` |
 
-> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
