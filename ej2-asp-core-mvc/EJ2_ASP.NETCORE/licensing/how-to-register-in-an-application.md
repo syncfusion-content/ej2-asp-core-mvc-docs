@@ -12,11 +12,29 @@ documentation: ug
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered if your project uses Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core packages from [NuGet.org](https://www.nuget.org/packages?q=syncfusion) or the Syncfusion<sup style="font-size:70%">&reg;</sup> installer. The generated license key is a string that needs to be registered before any Syncfusion<sup style="font-size:70%">&reg;</sup> control is initialized. The following code is used to register the license.
 
+**Registering a single license key**
+ 
 {% tabs %}
-{% highlight c# tabtitle="C#" %}
-
+{% highlight c# %}
 Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY");
-
+{% endhighlight %}
+{% endtabs %}
+ 
+**Registering multiple license keys**
+ 
+You can register multiple license keys using either a comma (,) or a semicolon (;) as the separator between keys.
+ 
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1,YOUR LICENSE KEY_2,...");
+{% endhighlight %}
+{% endtabs %}
+ 
+or
+ 
+{% tabs %}
+{% highlight c# %}
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY_1;YOUR LICENSE KEY_2;...");
 {% endhighlight %}
 {% endtabs %}
 
