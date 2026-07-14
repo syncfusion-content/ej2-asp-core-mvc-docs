@@ -365,7 +365,13 @@ Run the application in ##Platform_Name## development environment, accessible on 
 
 ## Complete sample repository
 
-For the complete working implementation of this example, refer to the repository.
+{% if page.publishingplatform == "aspnet-core" %}
+
+For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspcore-gantt-chart-samples/tree/master/ODataV4Adaptor) repository.
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-gantt-chart-samples/tree/master/ODataV4Adaptor) repository.
 
 ## See also
 - [Hybrid data binding](./remote-save-adaptor)
