@@ -1,0 +1,18 @@
+@{
+    var dataManager = new Syncfusion.EJ2.DataManager
+    {
+        Url = "https://services.syncfusion.com/aspnet/production/api/Orders",
+        Adaptor = "WebApiAdaptor",
+        CrossDomain = true
+    };
+}
+
+@Html.EJS().Grid("Grid").DataSource(dataManager).EnableVirtualization(true).EnableDomVirtualization(true).Height("500").PageSettings(p => p.PageSize(50)).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();
+    col.Field("OrderDate").HeaderText("Order Date").Format("yMd").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("150").Add();
+}).Render()
