@@ -1,0 +1,9 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowFiltering="true" height="400px">
+    <e-grid-filterSettings type="CheckBox" mode="Immediate"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

@@ -45,6 +45,21 @@ Here is an example that showcasing how to render the check box filter within the
 
 ![Filter bar](../images/filtering/excel-filter-checbox.gif)
 
+## Filter modes
+ 
+The Grid `Excel` and `CheckBox` filtering features support two modes, `Default` and `Immediate`. In `Default` mode, filter changes are applied only after clicking the "Filter" or "OK" button in the filter dialog, which is the default behavior. In `Immediate` mode, filters are applied automatically when filter items are checked or unchecked in the filter dialog.
+ 
+The following example enables immediate mode by setting the `filterSettings.mode` property to `Immediate`:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/filtering/excelfilter-checkbox1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="excelfilter.cs" %}
+{% include code-snippet/grid/filtering/excelfilter-checkbox1/excelfilter.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize the filter choice count
 
 By default, the filter choice count is set to 1000, which means that the filter dialog will display a maximum of 1000 distinct values for each column as a checkbox list data. This default value ensures that the filter operation remains efficient, even with large datasets. Additionally, the filter dialog retrieves and displays distinct data from the first 1000 records bind to the Grid to optimize performance, while the remaining records are returned as a result of the search option within the filter dialog.
