@@ -7,7 +7,7 @@
     };
 }
 
-@Html.EJS().Grid("Grid").DataSource(dataManager).EnableVirtualization(true).Height("500").PageSettings(p => p.PageSize(50)).Columns(col =>
+@Html.EJS().Grid("Grid").DataSource(dataManager).EnableVirtualization(true).EnableDomVirtualization(true).Height("500").PageSettings(p => p.PageSize(50)).Columns(col =>
 {
     col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("CustomerID").HeaderText("Customer ID").Width("150").Add();

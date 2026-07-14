@@ -1,4 +1,4 @@
-<ejs-grid id="Grid" enableVirtualization="true" height="500">
+<ejs-grid id="Grid" enableVirtualization="true" enableDomVirtualization="true" height="500">
     <e-data-manager url="https://services.syncfusion.com/aspnet/production/api/Orders" adaptor="WebApiAdaptor" crossDomain="true"></e-data-manager>
     <e-grid-pagesettings pageSize="50"></e-grid-pagesettings>
     <e-grid-columns>
