@@ -371,7 +371,7 @@ For the complete working implementation of this example, refer to the [GitHub](h
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-gantt-chart-samples/tree/master/ODataV4Adaptor) repository.
+For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-gantt-chart-samples/tree/master/OdataV4Adaptor) repository.
 
 {% endif %}
 
