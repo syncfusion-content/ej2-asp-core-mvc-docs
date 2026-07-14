@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## Schedule Component
+# Accessibility in ASP.NET Core Schedule Component
 
 The Scheduler has been designed based on the WAI-ARIA specifications, thus applying the appropriate ARIA roles, states and properties for the Scheduler elements. It is also available with a built-in keyboard navigation support, making it easier for the people who use assistive technologies or who completely rely on the Keyboard support. As per the accessibility standard, the navigated dates, views and other interactive actions performed on the Scheduler will be read out to the target users who use assistive technologies such as screen readers.
 
@@ -81,7 +81,7 @@ All the Scheduler actions can be controlled via keyboard keys by using the `allo
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>Y</kbd> | To navigate to today date. |
 | <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>N</kbd> | To open editor window. |
 
-> N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/aspnet-core-ui-controls/scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
+> N> You can refer to our [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfusion.com/aspnetcore/Schedule/Overview#/material) to knows how to present and manipulate data.
 
 ## Ensuring accessibility
 
@@ -93,6 +93,6 @@ The accessibility compliance of the Scheduler component is shown in the followin
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+- [Accessibility in ASP.NET Core components](../common/accessibility)
 
 

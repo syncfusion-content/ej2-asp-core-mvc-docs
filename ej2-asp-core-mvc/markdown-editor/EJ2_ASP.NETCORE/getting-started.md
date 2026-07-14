@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Markdown Editor Control
 
-The Syncfusion ASP .NET Core Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+The Syncfusion ASP .NET Core Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -114,6 +114,7 @@ I> When the Markdown Editor control is rendered, the id attribute must be presen
 ## Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Markdown Editor control will be rendered in the default web browser.
+
 
 ![ASP.NET Core Markdown Editor with Toolbar](images/markdown-editor-default.png)
 

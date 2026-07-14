@@ -50,6 +50,8 @@ You can use the [TextToSpeechSettings](https://help.syncfusion.com/cr/aspnetmvc-
 {% endhighlight %}
 {% endtabs %}
 
+![Text To Speech](../images/text-to-speech.png)
+
 ## See Also
 
 * [Speech-to-Text](./speech-to-text)

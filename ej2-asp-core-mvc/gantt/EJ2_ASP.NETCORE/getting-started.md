@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting started with ASP.NET Core Gantt control
 
-This guide walks you through setting up and integrating the [ASP.NET Core Gantt](https://www.syncfusion.com/aspnet-core-ui-controls/gantt-chart) control in your application using Visual Studio or Visual Studio Code. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
+This guide walks you through setting up and integrating the [ASP.NET Core Gantt](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) control in your application using Visual Studio or Visual Studio Code. You’ll learn how to configure the component, bind task data, map fields, and quickly visualize project timelines in just a few steps.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -65,7 +65,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 ## Prerequisites
 
-* [Visual Studio Code](https://code.visualstudio.com/download)
+* [Visual Studio Code](https://code.visualstudio.com/download?_exp_download=fb315fc982)
 * [C# Dev Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 * [.NET 10.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/10.0)
 
@@ -210,7 +210,7 @@ Map your data fields to Gantt Chart properties using `taskFields`:
 
 ## Add ASP.NET Core Gantt control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page and Razor Pages code-behind (PageModel) in the `~/Pages/Index.cshtml.cs`. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript objects or the `DataManager` instance.
+Now, add the ASP.NET Core Gantt tag helper in the `~/Pages/Index.cshtml` page and Razor Pages code-behind (PageModel) in the `~/Pages/Index.cshtml.cs`. Bind the data to the Gantt control by using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Gantt.Gantt.html#Syncfusion_EJ2_Gantt_Gantt_DataSource) property. It accepts an array of JavaScript objects or the `DataManager` instance.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -225,7 +225,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt
 
 ### Visual Studio
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Gantt control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the ASP.NET Core Gantt control will be rendered in the default web browser.
 
 ### Visual Studio Code
 
@@ -245,6 +245,8 @@ You will see a Gantt Chart with:
 - Automatically calculated dates based on duration
 
 ![ASP.NET Core Gantt Control](images/gantt-control.png)
+
+N> Looking for the full ASP.NET Core Gantt Chart component overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) page.
 
 ## See also
 

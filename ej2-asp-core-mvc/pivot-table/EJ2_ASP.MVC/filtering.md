@@ -222,6 +222,20 @@ The [`LevelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 In the above example, the [`LevelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_LevelCount) is set to **2** for the "Customer Geography" dimension in [`PivotViewFilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html). This loads both the "Country" and "State-Province" levels during the initial loading process. Any search or filter operations will be applied only to the members within these two levels. To access members from deeper levels like "City", you can either expand the respective "State-Province" node or select the "City" level from the dropdown list.
 
+### Append Current Selection to Existing Filters
+
+By default, when a filter is applied and a new field member is selected, the Pivot Table replaces the previous selection. Enabling the **Add current selection to filter** option ensures that each new selection is added to the existing filter instead of replacing it. This allows you to select multiple items incrementally without losing earlier selections.
+
+To append current selections to existing filters:
+
+1. Open the Filter dialog.
+![Open the Filter dialog](images/open-filter-dialog.png)
+2. Search for the required field member and select it.
+![Search the required field member](images/search-required-item.png)
+3. Then, select the **Add current selection to filter** option in the Filter dialog.
+![Add current selection to filter](images/enable-add-current-selection-to-filter.png)
+4. Click the **OK** button.
+
 ## Label filtering
 
 Label filtering allows you to display only the data with specific header text across row and column fields, making it easier to focus on relevant information in your Pivot Table. This filtering works with three types of data:
@@ -481,6 +495,8 @@ The following table shows the available operators for value filtering:
 | LessThanOrEqualTo| Shows records where the value is less than or equal to the specified value.|
 | Between| Shows records with values between the specified start and end values.|
 | NotBetween| Shows records with values outside the specified start and end values.|
+| Top | Top N members by highest values (client-side only).|
+| Bottom | Bottom N members by lowest values (client-side only).|
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Rich Text Editor Control
 
-The Syncfusion ASP .NET MVC Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
+The Syncfusion ASP .NET MVC Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -122,7 +122,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Rich Text Editor Control](images/richtexteditor-control.png)
 
-
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RichTextEditor/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
@@ -136,4 +135,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [Keyboard support in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/keyboard-support)
 * [Globalization in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/globalization)
 
-N> You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/wysiwyg-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
+N> You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.

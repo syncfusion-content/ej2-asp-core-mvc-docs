@@ -10,7 +10,7 @@ documentation: ug
 
 # Column chooser in ASP.NET Core Grid component
 
-The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
+The column chooser feature in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -24,6 +24,22 @@ The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</su
 ![Column chooser](../images/column-chooser/Colum-chooser.png)
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
+## Column chooser modes
+ 
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
 
 ## Hide column in column chooser dialog
 
@@ -46,7 +62,7 @@ In this example, the `columns.showInColumnChooser` property is set to **false** 
 
 ## Open column chooser by externally
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the `openColumnChooser` method.
+The ASP.NET Core Grid provides the flexibility to open the column chooser dialog on a web page using an external button. By default, the column chooser button is displayed in the right corner of the grid component, and clicking the button opens the column chooser dialog below it. However, you can programmatically open the column chooser dialog at specific **X** and **Y** axis positions by using the `openColumnChooser` method.
 
 Here's an example of how to open the column chooser in the Grid using an external button:
 
@@ -63,7 +79,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
 
 ## Customize column chooser dialog size
 	
-The column chooser dialog in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
+The column chooser dialog in ASP.NET Core Grid comes with default size, but you can modify its height and width as per your specific needs using CSS styles.
 To customize the column chooser dialog size, you can use the following CSS styles:
 
 ```css
@@ -140,7 +156,7 @@ Here is an example of how to show only specific columns in the column chooser:
 
 ## Change default search operator of the column chooser 
 
-The column chooser dialog in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
+The column chooser dialog in the ASP.NET Core Grid provides a search box that allows you to search for column names. By default, the search functionality uses the "startsWith" operator to match columns and display the results in the column chooser dialog. However, there might be cases where you need to change the default search operator to achieve more precise data matching.
 
 To change the default search operator of the column chooser in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you need to use the [operator](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumnChooserSettings.html#Syncfusion_EJ2_Grids_GridColumnChooserSettings_Operator) property of the columnChooserSettings.
 
@@ -172,7 +188,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
 {% endhighlight %}
 {% endtabs %}
 
-## Column Chooser Template in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid
+## Column Chooser Template in ASP.NET Core Grid
 
 The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) to **true** and add **ColumnChooser** to the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property.
 
