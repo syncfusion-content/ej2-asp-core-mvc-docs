@@ -460,6 +460,8 @@ For the complete working implementation of this example, refer to the [GitHub](h
 
 For the complete working implementation of this example, refer to the [GitHub](https://github.com/SyncfusionExamples/ej2-aspmvc-gantt-chart-samples/tree/master/RemoteSaveAdaptor) repository.
 
+{% endif %}
+
 ## See also
 - [Connect to OdataV4 services](./odatav4-adaptor)
 - [RESTful CRUD Operations in ASP.NET Web Forms](./web-method-adaptor)
