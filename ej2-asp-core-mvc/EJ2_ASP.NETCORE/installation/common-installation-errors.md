@@ -12,15 +12,15 @@ documentation: ug
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
-* [Unlocking the license installer using the trial key](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors/#unlocking-the-license-installer-using-the-trial-key)
+* [Unlocking the license installer using the trial key](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors#unlocking-the-license-installer-using-the-trial-key)
 
-* [License has expired](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors/#license-has-expired)
+* [License has expired](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors#license-has-expired)
 
-* [Unable to find a valid license or trial](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors/#unable-to-find-a-valid-license-or-trial)
+* [Unable to find a valid license or trial](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors#unable-to-find-a-valid-license-or-trial)
 
-* [Unable to install because of another installation](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors/#unable-to-install-because-of-another-installation)
+* [Unable to install because of another installation](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors#unable-to-install-because-of-another-installation)
 
-* [Unable to install due to controlled folder access](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors/#unable-to-install-due-to-controlled-folder-access)
+* [Unable to install due to controlled folder access](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 **Prerequisites**
 

@@ -16,7 +16,7 @@ This guide explains how to extract and use the Syncfusion<sup style="font-size:7
 * The downloaded Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Linux installer in `.zip` format. See [Downloading Syncfusion Linux installer](https://ej2.syncfusion.com/aspnetcore/documentation/installation/linux-installer/how-to-download).
 * A tool to extract `.zip` files, such as `unzip`.
 * For running the bundled ASP.NET Core samples: a supported .NET SDK (3.1, 5.0, 6.0, or later).
-* For running the bundled JavaScript / Vue / React / Angular samples: a current LTS version of [Node.js](https://nodejs.org/) and npm.
+* For running the bundled JavaScript / Vue / React / Angular samples: a current LTS version of Node.js and npm.
 
 ## Step-by-Step Installation
 
@@ -48,7 +48,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
    This restores the NuGet packages from the local `nuget` folder included in the installer.
 
-5. To use the pre-packaged npm archives in an offline JavaScript / Vue / Angular / React project, point npm at the bundled `npm` folder. For example, to install from a local tarball:
+5. To use the pre-packaged npm archives in an offline JavaScript / Vue / Angular / React project, point npm at the bundled `npm` folder. For example, to install from a local package file:
 
    ```bash
    npm install ./npm/@syncfusion/ej2-vue-grids-<version>.tgz --save

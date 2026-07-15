@@ -15,7 +15,7 @@ This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg
 **Prerequisites**
 
 * Visual Studio 2019 or later with the **ASP.NET and web development** workload installed.
-* The [.NET SDK](https://dotnet.microsoft.com/download) (3.1, 5.0, 6.0, or later) installed.
+* The [.NET SDK](8.0, or later) installed.
 * An existing ASP.NET Core web application (or a new one created through **File** → **New** → **Project** → **ASP.NET Core Web App**).
 
 ## Overview

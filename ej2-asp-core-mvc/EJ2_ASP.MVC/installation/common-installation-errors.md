@@ -12,11 +12,11 @@ documentation: ug
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors. The errors below apply to the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio ASP.NET MVC (EJ2) web and offline installers on Windows.
 
-* [Unlocking the license installer using the trial key](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors/#unlocking-the-license-installer-using-the-trial-key)
-* [License has expired](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors/#license-has-expired)
-* [Unable to find a valid license or trial](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors/#unable-to-find-a-valid-license-or-trial)
-* [Unable to install because of another installation](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors/#unable-to-install-because-of-another-installation)
-* [Unable to install due to controlled folder access](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors/#unable-to-install-due-to-controlled-folder-access)
+* [Unlocking the license installer using the trial key](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#unlocking-the-license-installer-using-the-trial-key)
+* [License has expired](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#license-has-expired)
+* [Unable to find a valid license or trial](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#unable-to-find-a-valid-license-or-trial)
+* [Unable to install because of another installation](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#unable-to-install-because-of-another-installation)
+* [Unable to install due to controlled folder access](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#unable-to-install-due-to-controlled-folder-access)
 
 **Prerequisites**
 

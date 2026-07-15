@@ -8,14 +8,14 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 NuGet Packages
+# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet Packages
 
-This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages using the **Package Manager UI** or the **Package Manager Console** in Visual Studio.
+This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages the **Package Manager Console** in Visual Studio.
 
 **Prerequisites**
 
 * Visual Studio 2017 or later with the **ASP.NET and web development** workload installed.
-* The [.NET Framework](https://dotnet.microsoft.com/download/dotnet-framework) 4.5.2 or later installed.
+* The [.NET Framework] 4.5.2 or later installed.
 * An existing ASP.NET MVC web application (or a new one created through **File** → **New** → **Project** → **ASP.NET Web Application (.NET Framework)** with the **MVC** template).
 * A Syncfusion<sup style="font-size:70%">&reg;</sup> account, or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key for the target version.
 
