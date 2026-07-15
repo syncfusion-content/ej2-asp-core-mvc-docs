@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Rich Text Editor | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Rich Text Editor control.
+description: Check out and learn about getting started with ASP.NET Core Rich Text Editor control of Essential JS 2 and more details.
 canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor"
 platform: ej2-asp-core-mvc
 control: Rich Text Editor
-publishingplatform: ASP.NET Core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Getting Started with ASP.NET Core Rich Text Editor Control
 
-The ASP.NET Core Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+The ASP.NET Core Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, CodeStudio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -19,7 +19,7 @@ To get started quickly with ASP.NET Core Rich Text Editor, you can check on this
 
 {% youtube "youtube:https://www.youtube.com/watch?v=lEyINv1RGu8" %}
 
-## Create an ASP.NET Core Web App
+## Create an ASP.NET Core Web App with Razor pages
 
 {% tabcontents %}
 
@@ -50,7 +50,7 @@ Alternatively, create an **ASP.NET Core web application** using Visual Studio vi
 
 ## Install the required ASP.NET Core package
 
-Install [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package. All ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating license key.
+Install [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package. All ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
@@ -89,7 +89,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
 
 ## Add ASP.NET Core Tag Helper
 
-After installing the package, open the **~/Pages/_ViewImports.cshtml** file and import the Syncfusion.EJ2 TagHelper.
+After installed the package, open the **~/Pages/_ViewImports.cshtml** file and import the Syncfusion.EJ2 TagHelper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="ViewImports.cshtml" %}
@@ -101,7 +101,7 @@ After installing the package, open the **~/Pages/_ViewImports.cshtml** file and 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be accessed from NuGet through [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the <head> of **~/Pages/Shared/_Layout.cshtml** file.
+The theme stylesheet and script can be accessed from NuGet through [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the <head> of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Layout.cshtml" %}
@@ -135,7 +135,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET Core Rich Text Editor control
 
-Open a Razor file located in the **~/Pages/Index.cshtml** and add the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) component inside the razor file.
+Add the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
