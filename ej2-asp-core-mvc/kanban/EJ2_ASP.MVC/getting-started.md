@@ -11,19 +11,28 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Kanban Control
 
-This section briefly explains about how to include [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the [ASP.NET MVC Kanban](https://www.syncfusion.com/aspnet-mvc-ui-controls/kanban-board) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
-[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+The following prerequisites are required to create an ASP.NET MVC application with the Kanban control:
+
+* Visual Studio 2019 or later (Visual Studio 2022 is recommended)
+* .NET Framework 4.6.2 or later
+* An active internet connection to download the NuGet package and CDN assets
+
+Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) for the complete list of supported environments.
 
 ## Create ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+You can create an ASP.NET MVC project in one of two ways. Choose the option that matches your development setup:
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+* **Use the standard Microsoft template** if you are new to ASP.NET MVC and want a plain project: [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+* **Use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC extension** if you want a project that is pre-configured with Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, themes, and helper references: [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+
+After the project is created, ensure that a controller named `HomeController` (with an `Index` action) and a corresponding `~/Views/Home/Index.cshtml` view exist. The Kanban control will be added to this view in the later steps.
 
 ## Install ASP.NET MVC package in the application
 
@@ -51,7 +60,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+The theme and scripts are referenced using the CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows. This example uses the Fluent theme; see the note below for the full list of available themes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -67,11 +76,11 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn the different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer to styles in an ASP.NET MVC application, and to achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `@Html.EJS().ScriptManager()` at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -95,9 +104,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control will then be rendered in the default web browser with empty columns.
 
-![ASP.NET MVC Kanban Control](images/default.png)
+![ASP.NET MVC Kanban control rendered with empty columns (Open, In Progress, Review, Validate, Testing, Close).](images/default.png)
 
 ## Populating cards
 
@@ -124,7 +133,7 @@ public class KanbanDataModels
     public string Type { get; set; }
     public string Priority { get; set; }
     public string Tags { get; set; }
-    public Double Estimate { get; set; }
+    public double Estimate { get; set; }
     public string Assignee { get; set; }
     public int RankId { get; set; }
     public string Color { get; set; }
@@ -168,11 +177,11 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Kanban with Cards](images/populating-cards.png)
+![ASP.NET MVC Kanban populated with sample task cards across all columns.](images/populating-cards.png)
 
 ## Enable swimlane
 
-`Swimlane` can be enabled by mapping the tags [SwimlaneSettings.KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_KeyField) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
+The `Swimlane` can be enabled by mapping the [SwimlaneSettings.KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_KeyField) to the appropriate column name in the dataSource. This enables the grouping of cards based on the values in the mapped swimlane column. In this example, the `Assignee` column is used to group cards by the assignee. The `Index` action and `KanbanDataModels` class from the previous section are reused unchanged.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -180,10 +189,23 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Kanban with Swimlane](images/enable-swimlane.png)
+![ASP.NET MVC Kanban with cards grouped into swimlane rows by assignee.](images/enable-swimlane.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20MVC%20Razor%20Examples).
+> [View the complete sample on GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20MVC%20Razor%20Examples).
+
+## Troubleshooting
+
+If the Kanban control does not render or behaves unexpectedly, verify the following:
+
+* The `Syncfusion.EJ2.MVC5` NuGet package is restored and referenced by the project.
+* The `Syncfusion.EJ2` namespace is added to `~/Views/Web.config`.
+* The CDN links use the same `{{ site.ej2version }}` value as the `EJS().ScriptManager()` call.
+* The `Index` view exists at the path `~/Views/Home/Index.cshtml`.
+* The license key is registered in `Global.asax`; otherwise, a license-warning banner appears in development mode.
 
 ## See also
 
-* [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+* [Real-time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+* [Kanban columns configuration](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/columns)
+* [Kanban data binding](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/data-binding)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing)

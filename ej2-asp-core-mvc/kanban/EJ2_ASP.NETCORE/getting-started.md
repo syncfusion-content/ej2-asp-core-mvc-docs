@@ -11,19 +11,29 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Kanban Control
 
-This section briefly explains about how to include [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) control in your ASP.NET Core application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+The following prerequisites are required to create an ASP.NET Core Razor Pages application with the Kanban control:
+
+* Visual Studio 2019 or later (Visual Studio 2022 is recommended)
+* .NET Core 3.1, .NET 5, .NET 6, .NET 7, .NET 8, or later
+* ASP.NET Core workload installed in Visual Studio
+* An active internet connection to download the NuGet package and CDN assets
+
+Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) for the complete list of supported environments.
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+You can create an ASP.NET Core Razor Pages project in one of two ways. Choose the option that matches your development setup:
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+* **Use the standard Microsoft template** if you are new to ASP.NET Core and want a plain project: [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* **Use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension** if you want a project that is pre-configured with Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, themes, and tag-helper references: [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+
+After the project is created, ensure that an `Index` page exists at `~/Pages/Index.cshtml` and that the matching page model is at `~/Pages/Index.cshtml.cs`. The Kanban control will be added to the `Index` page in the later steps.
 
 ## Install ASP.NET Core package in the application
 
@@ -52,7 +62,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+The theme and scripts are referenced using the CDN inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file as follows. This example uses the Fluent theme; see the note below for the full list of available themes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -68,13 +78,13 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn the different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer to styles in an ASP.NET Core application, and to achieve the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of the `<body>` element in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -98,9 +108,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanba
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban control will then be rendered in the default web browser with empty columns.
 
-![ASP.NET Core Kanban Control](images/default.PNG)
+![ASP.NET Core Kanban control rendered with empty columns (Open, In Progress, Review, Validate, Testing, Close).](images/default.PNG)
 
 ## Populating cards
 
@@ -110,7 +120,7 @@ To populate the empty Kanban with cards, define the list or remote data using th
 
 ## Enable swimlane
 
-`Swimlane` can be enabled by mapping the tags `swimlaneSettings.keyField` to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
+The `Swimlane` can be enabled by mapping the `swimlaneSettings.keyField` to the appropriate column name in the dataSource. This enables the grouping of cards based on the values in the mapped swimlane column. In this example, the `Assignee` column is used to group cards by the assignee. The `Index` page and the `KanbanDataModels` class from the previous sections are reused unchanged.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -126,7 +136,7 @@ public class KanbanDataModels
     public string Type { get; set; }
     public string Priority { get; set; }
     public string Tags { get; set; }
-    public Double Estimate { get; set; }
+    public double Estimate { get; set; }
     public string Assignee { get; set; }
     public int RankId { get; set; }
     public string Color { get; set; }
@@ -134,11 +144,25 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.PNG)
+![ASP.NET Core Kanban with cards grouped into swimlane rows by assignee.](./images/enable-swimlane.PNG)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
+> [View the complete sample on GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## Troubleshooting
+
+If the Kanban control does not render or behaves unexpectedly, verify the following:
+
+* The `Syncfusion.EJ2.AspNet.Core` NuGet package is restored and referenced by the project.
+* The `@addTagHelper *, Syncfusion.EJ2` directive is present in `~/Pages/_ViewImports.cshtml`.
+* The CDN links use the same `{{ site.ej2version }}` value as the `<ejs-scripts>` tag.
+* The `Index` page exists at `~/Pages/Index.cshtml` and the `Index.cshtml.cs` page model is wired up correctly.
+* The license key is registered in `Program.cs` (or `Startup.cs`); otherwise, a license-warning banner appears in development mode.
 
 ## See also
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Kanban columns configuration](https://ej2.syncfusion.com/aspnetcore/documentation/kanban/columns)
+* [Kanban data binding](https://ej2.syncfusion.com/aspnetcore/documentation/kanban/data-binding)
+* [Kanban swimlane](https://ej2.syncfusion.com/aspnetcore/documentation/kanban/swimlane)
+* [Syncfusion<sup style="font-size:70%">&reg;</sup> licensing documentation](https://ej2.syncfusion.com/aspnetcore/documentation/licensing)
