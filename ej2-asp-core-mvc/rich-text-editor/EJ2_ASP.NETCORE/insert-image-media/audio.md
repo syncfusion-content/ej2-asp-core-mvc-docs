@@ -242,6 +242,10 @@ Sets the default display property for audio when it is inserted in the Rich Text
 {% endtabs %}
 {% endif %}
 
+## Paste audio files into the editor
+
+The Rich Text Editor supports pasting audio files directly into the editor content. You can paste single or multiple audio files from your file system directly into the editor.
+
 ## Drag and Drop Audio Insertion
 
 By default, the Rich Text Editor allows you to insert audios by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the audios to the server before inserting into the editor by configuring the saveUrl property.
