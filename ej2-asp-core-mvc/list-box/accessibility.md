@@ -54,15 +54,15 @@ The ListBox component followed the [keyboard interaction](https://www.w3.org/WAI
 
 | **Press** | **To do this** |
 | --- | --- |
-| <kbd>Up arrow</kbd> | Selects the previous item. |
-| <kbd>Down arrow</kbd> | Selects the next item. |
+| <kbd>Up arrow</kbd> | Moves the focus to and selects the previous item. |
+| <kbd>Down arrow</kbd> | Moves the focus to and selects the next item. |
 | <kbd>Home</kbd> | Moves focus to first option. |
 | <kbd>End</kbd> | Moves focus to last option. |
 | <kbd>Space</kbd> | Changes the selection state of the focused option. |
 | <kbd>Ctrl + A</kbd> | Selects all options in the list. |
 | <kbd>Ctrl + Shift + Home</kbd> | Selects the focused option and all options up to the first option. |
 | <kbd>Ctrl + Shift + End</kbd> | Selects the focused option and all options down to the last option. |
-| <kbd>Ctrl + (Up or Down)</kbd> | Moves the focus to the previous item (Up Arrow) or the next item (Down Arrow). |
+| <kbd>Ctrl + (Up or Down)</kbd> | Moves the focus to the previous item (Up Arrow) or the next item (Down Arrow) without changing selection. |
 
 ## Ensuring accessibility
 
