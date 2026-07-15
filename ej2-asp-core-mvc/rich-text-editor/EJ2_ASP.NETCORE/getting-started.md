@@ -89,7 +89,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
 
 ## Add ASP.NET Core Tag Helper
 
-After installed the package, open the **~/Pages/_ViewImports.cshtml** file and import the Syncfusion.EJ2 TagHelper.
+After installed the package, open the **~/Pages/_ViewImports.cshtml** file and import the Syncfusion.EJ2 Tag Helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="ViewImports.cshtml" %}
@@ -153,7 +153,7 @@ I> When the Rich Text Editor control is rendered, the id attribute must be prese
 
 {% tabcontent Visual Studio %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The ASP.NET Core Rich Text Editor component will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The ASP.NET Core Rich Text Editor control will render in your default web browser.
 
 {% endtabcontent %}
 
