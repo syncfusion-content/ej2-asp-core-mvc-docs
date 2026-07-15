@@ -257,6 +257,10 @@ Sets the default display property for the video when it is inserted in the Rich 
 {% endtabs %}
 {% endif %}
 
+## Paste video files into the editor
+
+The Rich Text Editor supports pasting video files directly into the editor content. You can paste single or multiple video files from your file system directly into the editor.
+
 ## Drag and Drop Video Insertion
 
 By default, the Rich Text Editor allows you to insert videos by drag-and-drop from the local file system such as Windows Explorer into the content editor area. And, you can upload the videos to the server before inserting into the editor by configuring the saveUrl property.
