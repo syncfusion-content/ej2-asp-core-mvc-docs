@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Collaborative Editing in ASP.NET Core Block Editor | Syncfusion
-description: Checkout and learn about Collaborative Editing with Syncfusion Essential ASP.NET Core BlockEditor control of Syncfusion Essential JS 2 and more.
+title: Real-time Collaboration in ASP.NET MVC Block Editor | Syncfusion
+description: Checkout and learn about Collaborative Editing with Syncfusion Essential ASP.NET MVC BlockEditor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Collaborative Editing in ASP.NET Core Block Editor control
+# Real-time Collaboration in ASP.NET MVC Block Editor control
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
@@ -19,8 +19,6 @@ With collaboration enabled, users can:
 * Track active collaborators.
 * Perform collaboration-aware undo and redo operations.
 * Create, restore, compare, export, and import document versions.
-
-*Try the live demo [here](https://ej2.syncfusion.com/)*
 
 ## Prerequisites
 
@@ -109,8 +107,8 @@ Create a provider that connects users to the same shared document. The following
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <script>
-	var WebrtcProvider = window.WebrtcProvider;
-    
+    var WebrtcProvider = window.WebrtcProvider;
+
     var provider = new WebrtcProvider('document-room-id', yDoc);
 </script>
 
@@ -125,10 +123,9 @@ Pass the adapter and provider to the Block Editor through the `collaborationSett
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider");
+    }).Render()
 </div>
 
 {% endhighlight %}
@@ -142,10 +139,9 @@ The Block Editor can display remote cursors, text selection overlays, and user d
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" enableAwareness="true">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider").EnableAwareness(true);
+    }).Render()
 </div>
 
 {% endhighlight %}
@@ -159,7 +155,7 @@ Set the current user's display name and cursor highlight color using the `users`
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor" created="onCreated"></ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").Users(ViewBag.Users).CurrentUserId("user-1").Created("onCreated").Render()
 </div>
 
 <script>
@@ -175,7 +171,7 @@ Set the current user's display name and cursor highlight color using the `users`
 {% endhighlight %}
 {% endtabs %}
 
-N> When using the ASP.NET Core Tag Helper, the `users` collection and `currentUserId` can also be passed from the PageModel via `users="@Model.ViewModel.Users"` and `currentUserId="@Model.ViewModel.CurrentUserId"`, or set directly on the client-side instance as shown above.
+N> The `users` collection can be supplied from the server through `ViewBag.Users` (a list of anonymous objects with `id`, `user`, and `color` properties), or set directly on the client-side instance as shown above.
 
 ### Get active users
 
@@ -197,25 +193,21 @@ Retrieve all currently connected users using the `users` property in the block e
 
 ### Enable version history
 
-Configure the `versionHistory` property under `collaborationSettings` property by passing the storage instance and snapshot interval as attributes, similar to the `adapter` and `provider` properties.
+Configure the `versionHistory` property under `collaborationSettings` property.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings adapter="adapter" provider="provider" versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.Adapter("adapter").Provider("provider").VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotInterval(3000);
+        });
+    }).Render()
 </div>
 
 <script>
     var myStorage = new CustomVersionStorage('blockeditor-' + uniqueId);
-
-    var versionHistorySettings = {
-        storage: myStorage,
-        snapshotInterval: 3000
-    };
 </script>
 
 {% endhighlight %}
@@ -270,7 +262,7 @@ After the Block Editor initializes, retrieve the version history instance and wa
 
 ### Methods
 
-The following are the methods available in the `IVersionHistory`:   
+The following are the methods available in the `IVersionHistory`:
 
 #### Create a snapshot
 
@@ -405,19 +397,14 @@ Triggered when a new snapshot is created.
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotCreated("onSnapshotCreated");
+        });
+    }).Render()
 </div>
 
 <script>
-
-    var versionHistorySettings = {
-        storage: myStorage,
-        snapshotCreated: onSnapshotCreated
-    };
-
     function onSnapshotCreated(args) {
         var snapshot = args.snapshot;
         console.log(snapshot.id);
@@ -435,19 +422,14 @@ Triggered when a snapshot is restored.
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <div id='blockeditor-container'>
-    <ejs-blockeditor id="block-editor">
-        <e-blockeditor-collaborationsettings versionHistory="versionHistorySettings">
-        </e-blockeditor-collaborationsettings>
-    </ejs-blockeditor>
+    @Html.EJS().BlockEditor("block-editor").CollaborationSettings(col => {
+        col.VersionHistory(ver => {
+            ver.Storage("myStorage").SnapshotRestored("onSnapshotRestored");
+        });
+    }).Render()
 </div>
 
 <script>
-
-    var versionHistorySettings = {
-        storage: myStorage,
-        snapshotRestored: onSnapshotRestored
-    };
-
     function onSnapshotRestored(args) {
         var snapshot = args.snapshot;
         var backupSnapshot = args.backupSnapshot;
