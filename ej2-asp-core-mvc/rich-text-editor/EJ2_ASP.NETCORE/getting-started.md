@@ -49,7 +49,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Tag Helper.
 
 {% tabs %}
-{% highlight cshtml tabtitle="ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -61,7 +61,7 @@ After the package is installed, open the **~/Pages/_ViewImports.cshtml** file an
 The theme stylesheet and script can be accessed from NuGet through [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
