@@ -96,7 +96,7 @@ After the package is installed, open **~/Pages/_ViewImports.cshtml** file and im
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be accessed from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the <head> of **~/Pages/Shared/_Layout.cshtml** file.
+The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -114,7 +114,7 @@ The theme stylesheet and script can be accessed from NuGet through [Static Web A
 
 ## Register the Script Manager
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager <ejs-scripts> at the end of the <body> element as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -132,13 +132,13 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 Add the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) control in the **~/Pages/Index.cshtml** file.
 
-To bind data for the Pivot Table component, you can assign a collection of data objects to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property. The data source can be provided as an IEnumerable collection or as an instance of the `DataManager`.
+To bind data for the Pivot Table control, you can assign a collection of data objects to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property. The data source can be provided as an IEnumerable collection or as an instance of the `DataManager`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/pivot-table/getting-start-core/pivot-table/tagHelper %}
 {% endhighlight %}
-{% highlight cshtml.cs tabtitle="Index.cshtml.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 {% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -167,7 +167,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Pivot Table Control](images/pivottable-fields.png)
+![ASP.NET Core Pivot Table Control](images/pivottable-fields.webp)
 
 ## See also
 
