@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="emojiPickerRTE" value="@ViewBag.value">
-    <e-richtexteditor-toolbarsettings items="ViewBag.items"/>
-    <e-richtexteditor-emojipickersettings iconsSet= "ViewBag.iconsSet"/>
-</ejs-richtexteditor>

@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="image" value="@ViewBag.value">
-    <e-richtexteditor-insertimagesettings display="inline"></e-richtexteditor-insertimagesettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

@@ -1,3 +1,0 @@
-@Html.EJS().RichTextEditor("google-font").FontFamily(e => e.Items((object)ViewBag.fontItems)).ToolbarSettings(e => e.Items((object)ViewBag.tools)).Value(ViewBag.value).Render()
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">

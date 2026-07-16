@@ -1,2 +1,0 @@
-
-@Html.EJS().RichTextEditor("toolbar").ToolbarSettings(e => e.Items((object)ViewBag.items)).Value(ViewBag.value).Render()

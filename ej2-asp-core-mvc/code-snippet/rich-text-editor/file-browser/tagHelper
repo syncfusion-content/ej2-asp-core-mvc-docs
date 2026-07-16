@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="fileBrowser" value="@ViewBag.value">
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-    <e-richtexteditor-filemanagersettings enable="true" path="/Pictures/Food" ajaxSettings="@ViewBag.ajaxSettings"></e-richtexteditor-filemanagersettings>
-</ejs-richtexteditor>
