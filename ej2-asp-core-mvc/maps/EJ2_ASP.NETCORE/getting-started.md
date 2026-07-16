@@ -194,7 +194,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Maps Control](images/maps-control.webp)
+![ASP.NET Core Maps Control](../images/maps-control.webp)
 
 N> Map layers render only when [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided. Refer to the [world map data values](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 
