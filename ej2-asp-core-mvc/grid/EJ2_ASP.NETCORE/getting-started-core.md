@@ -11,16 +11,16 @@ documentation: ug
 
 # Getting Started with ASP.NET Core DataGrid Control
 
-This section briefly explains how to include [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
+This section briefly explains how to include the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
 To get started quickly with ASP.NET Core DataGrid control, you can check out this video.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=E5w2fO-N9gE" %}
 
-## Create an ASP.NET Core web App with Razor pages
+## Create an ASP.NET Core Web App with Razor pages
 
 {% tabcontents %}
 
@@ -38,7 +38,6 @@ Run the following command to create a new ASP.NET Core Web App.
 {% highlight C# tabtitle=".NET CLI" %}
 
 dotnet new webapp -o RazorPagesGrid
-
 code -r RazorPagesGrid
 
 {% endhighlight %}
@@ -91,10 +90,10 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 
 ## Add ASP.NET Core Tag Helper
 
-After the package is installed, open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Tag Helper.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.EJ2
 
@@ -103,10 +102,10 @@ After the package is installed, open the `~/Pages/_ViewImports.cshtml` file and 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file.
+The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
@@ -119,12 +118,12 @@ The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-## Register script manager
+## Register the script manager
 
-Register the script manager `<ejs-scripts>` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
@@ -140,10 +139,12 @@ Register the script manager `<ejs-scripts>` at the end of `<body>` in the `~/Pag
 Add the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in `~/Pages/Index.cshtml` file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/grid/getting-start-core/gridcolumns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+....
+....
 public class IndexModel : PageModel
 {
     public void OnGet() { }
@@ -200,5 +201,5 @@ dotnet run
 
 ## See also
 
-* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
