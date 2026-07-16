@@ -26,7 +26,7 @@ These tools speed up development and reinforce best practices for Syncfusion com
 
 Before beginning, ensure the following prerequisites are met:
 
-- **Node.js** version 18 or higher
+- **.NET 10 SDK** or higher
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
 - An **ASP.NET MVC application** (existing or new); see [Quick Start](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
@@ -140,14 +140,6 @@ Create a configuration file in your project folder to install the server for you
 
 **Verifying Installation** Check your editor's MCP Server list for `sf-aspmvc-mcp` with a **Connected** status to confirm a successful installation.
 
-## Available Tools
-
-The Syncfusion<sup style="font-size:70%">&reg;</sup> MCP servers exposes a set of specialized tools for retrieving different types of product knowledge and resources. Tools can be called directly for specific information, or an assistant can choose the most relevant tool automatically.
-
-| # | Tool | Description |
-|---|------|-------------|
-| 1 | `search_docs` | Search Syncfusion ASP.NET MVC documentation for features, examples, and configuration help. |
-
 ## Common use cases
 
 The examples below showcase how the different MCP tools handle real-world ASP.NET MVC development scenarios. Tools can be invoked directly, as shown in the examples below, for specific needs. Alternatively, an AI assistant can automatically select the most appropriate tool based on the request.
@@ -220,7 +212,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 
 | Issue | Solution |
 |-------|----------|
-| **Server failed to start** | Update to Node.js 18+, verify JSON syntax in the config file, and restart your IDE. |
+| **Server failed to start** | Update to .NET 10 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
 | **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |
