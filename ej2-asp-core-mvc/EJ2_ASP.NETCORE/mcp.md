@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Syncfusion ASP.NET Core MCP Server | AI Coding Assistant
+title: SyncfusionAspNetCore MCP Server | Syncfusion
 description: Accelerate ASP.NET Core development with Syncfusion MCP Server—access docs, APIs, code snippets, and release history in your AI IDE.
-platform: ASP.NET Core
-control: Syncfusion ASP.NET Core MCP Server
+control: Getting started with SyncfusionAspNetCore MCP Server
+platform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

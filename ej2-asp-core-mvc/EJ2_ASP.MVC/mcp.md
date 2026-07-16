@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Syncfusion ASP.NET MVC MCP Server | AI Coding Assistant
+title: SyncfusionAspNetMvc MCP Server | Syncfusion
 description: Accelerate ASP.NET MVC development with Syncfusion MCP Server—access docs, APIs, code snippets, and release history in your AI IDE.
-platform: ASP.NET MVC
-control: Syncfusion ASP.NET MVC MCP Server
+control: Getting started with SyncfusionAspNetMvc MCP Server
+platform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
