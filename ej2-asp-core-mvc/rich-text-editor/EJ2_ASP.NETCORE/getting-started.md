@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Rich Text Editor Control
 
-he Syncfusion ASP .NET CORE Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
+The Syncfusion ASP .NET CORE Rich Text Editor is a WYSIWYG (What You See Is What You Get) editor that enables users to create, edit, and format rich text content with features like multimedia insertion, lists, and links. This section briefly explains about how to include [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) control in your ASP.NET Core application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -26,7 +26,7 @@ To get start quickly with ASP.NET Core Rich Text Editor, you can check on this v
 
 ## Create ASP.NET Core web application with Razor pages
 
-You can create the the ASP.NET Core web application with Razor pages by two types they are mentioned below along with the steps. Follow one of these types to create a ASP .NET Core project.
+You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core package. This can be done in the two ways described below:
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
@@ -38,7 +38,7 @@ You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by 
 
 ### 1. Using NuGet Package Manager  
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it directly.
 
 ### 2. Using Package Manager Console  
 
@@ -69,7 +69,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -116,7 +116,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Rich 
 {% endhighlight %}
 {% endtabs %}
 
-I> When the Rich Text Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
+I> When the Rich Text Editor control is rendered, the `id` attribute must be provided; otherwise, the control will fail to render.
 
 ## Run the application
 
@@ -135,6 +135,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to change the editor type](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/editor-types/editor-mode)
 * [How to render the iframe](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/editor-types/iframe)
 * [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/editor-types/inline-editing)
-* [Accessibility in Rich text editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/accessibility)
-* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/keyboard-support)
-* [Globalization in Rich text editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/globalization)
+* [Accessibility in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/accessibility)
+* [Keyboard support in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/keyboard-support)
+* [Globalization in Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/globalization)
