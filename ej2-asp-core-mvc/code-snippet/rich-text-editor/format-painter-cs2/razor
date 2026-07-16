@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("formatPainterRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).FormatPainterSettings(e => {e.AllowedFormats((string)ViewBag.allowedFormats);e.DeniedFormats((string)ViewBag.deniedFormats);}).Value(ViewBag.value).Render()

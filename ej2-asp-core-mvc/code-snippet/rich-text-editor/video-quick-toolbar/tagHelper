@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="video-quick-toolbar" value="@ViewBag.value">
-    <e-richtexteditor-quicktoolbarsettings video="@ViewBag.video"></e-richtexteditor-quicktoolbarsettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

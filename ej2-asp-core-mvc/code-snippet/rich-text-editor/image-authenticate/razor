@@ -1,7 +1,0 @@
-@Html.EJS().RichTextEditor("editor").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.SaveUrl("/Home/SaveFiles").ImageUploading("onImageUploading").Path("../Files/")).Render()
-
-<script>
-    function onImageUploading(args) {
-        args.currentRequest.setRequestHeader('Authorization', 'Syncfusion');
-    }
-</script>

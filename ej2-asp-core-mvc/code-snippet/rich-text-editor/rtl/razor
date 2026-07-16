@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("rtl").EnableRtl(true).Value(ViewBag.value).Render()
