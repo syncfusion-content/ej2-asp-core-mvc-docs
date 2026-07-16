@@ -10,128 +10,169 @@ documentation: ug
 
 # Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Offline Installer
 
+This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio ASP.NET Core - EJ2 **offline installer** on Windows, either through the installer UI or in **silent mode** from the command line.
 
-## Installing with UI
+**Prerequisites**
 
-The steps below shows how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
+* A Windows machine with administrator privileges.
+* The downloaded offline installer (`.exe` or `.zip`). See [Downloading Syncfusion offline installer](https://ej2.syncfusion.com/aspnetcore/documentation/installation/offline-installer/how-to-download).
+* A valid Syncfusion<sup style="font-size:70%">&reg;</sup> account (for **Login to Install**) or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key (for **Use Unlock Key**).
+* For the **Install Demos** option, the target install location must be writable. If **Controlled folder access** is enabled on Windows, see [Common Installation Errors](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors).
 
-1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+## Installing with the UI
 
-    ![Web Offline Installer Setup wizard](images/offline-1.png)
+The steps below show how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
 
-    N> The Installer wizard extracts the syncfusionessentialaspnetcore-js2_(version).exe dialog, which displays the package's unzip operation.
+1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 offline installer file from the downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, you have two options:
+    ![Offline Installer Setup wizard](images/offline-1.png)
 
-    * *Login To Install*
+    > **Note:** The installer wizard extracts the `syncfusionessentialaspnetcore-js2_<version>.exe` dialog, which displays the package's unzip operation.
 
-    * *Use Unlock Key*
+2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, choose one of the following options:
 
-    ***Login To Install***
+    * **Login to Install**
+    * **Use Unlock Key**
 
-    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don't already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **"Create an account"**. If you have forgotten your password, click on **"Forgot Password"** to create a new one. Once you've entered your Syncfusion<sup style="font-size:70%">&reg;</sup> email and password, click Next.
+    **Login to Install**
 
-    ![Web Offline Installer LoginToInstall Wizard](images/offline-2.png)
+    You must enter your Syncfusion<sup style="font-size:70%">&reg;</sup> email address and password. If you don't already have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can sign up for one by clicking **Create an account**. If you have forgotten your password, click **Forgot Password** to create a new one. Once you've entered your Syncfusion<sup style="font-size:70%">&reg;</sup> email and password, click **Next**.
 
-    ***Use Unlock Key***
+    ![Offline Installer Login To Install Wizard](images/offline-2.png)
 
-    Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. You should use either Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial Unlock key to unlock Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer.
+    **Use Unlock Key**
 
-    The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key.
+    Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. Use either a Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial unlock key to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer. The trial unlock key is only valid for 30 days; the installer will not accept an expired trial key.
 
-    To learn how to generate an unlock key for both trial and licensed products, see [this](https://www.syncfusion.com/kb/2326) Knowledge Base article.
+    To learn how to generate an unlock key for both trial and licensed products, see this [Knowledge Base article](https://www.syncfusion.com/kb/2326).
 
-    ![Web Offline Installer UseUnlockKey Wizard](images/offline-3.png)
+    ![Offline Installer Use Unlock Key Wizard](images/offline-3.png)
 
-3. After reading the License Terms and Privacy Policy, check the **"I agree to the License Terms and Privacy Policy"** check box. Click the Next button.
+3. After reading the License Terms and Privacy Policy, check the **I agree to the License Terms and Privacy Policy** check box. Click **Next**.
 
-4. Change the install and sample locations here. You can also change the Additional settings. Click Next/Install to install with the default settings.
+4. Change the install and samples locations here. You can also change the **Additional Settings** (described below). Click **Next** / **Install** to install with the default settings.
 
-   ![Web Offline Installer Settings Wizard](images/offline-4.png)
+   ![Offline Installer Settings Wizard](images/offline-4.png)
 
-   ***Additional Settings***
+   **Additional Settings**
 
-   * Select the **Install Demos** check box to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples, or leave the check box unchecked, if you don't want to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples.
-
-   * Select the **Configure Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions controls in Visual Studio** checkbox to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions in Visual Studio.
-
+   * Select the **Install Demos** check box to install Syncfusion<sup style="font-size:70%">&reg;</sup> samples, or leave the check box unchecked if you do not want to install samples.
+   * Select the **Configure Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions controls in Visual Studio** check box to configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Extensions in Visual Studio. Clear this check box if you do not want to configure the extensions.
    * Check the **Create Desktop Shortcut** check box to add a desktop shortcut for Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
+   * Check the **Create Start Menu Shortcut** check box to add a shortcut to the start menu for Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
-   * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
-5. If any previous versions of the current product is installed, the Uninstall Previous Version(s) wizard will be opened. Select **Uninstall** checkbox to uninstall the previous versions and then click the Proceed button.
+5. If any previous versions of the current product are installed, the **Uninstall Previous Version(s)** wizard is opened. Select the **Uninstall** check box to uninstall the previous versions, and then click **Proceed**.
 
-    ![Web Offline Installer Uninstall Previous Wizard](images/offline-5.png)
+    ![Offline Installer Uninstall Previous Wizard](images/offline-5.png)
 
-    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 while installing the new version. If any version is selected to uninstall, a confirmation screen will appear; if continue is selected, the Progress screen will display the uninstall and install progress, respectively. If none of the versions are chosen to be uninstalled, only the installation progress will be displayed.
+    > **Note:** From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 onward while installing the new version. If any version is selected to uninstall, a confirmation screen will appear. If you click **Continue**, the Progress screen will display the uninstall and install progress respectively. If no versions are chosen to be uninstalled, only the installation progress is displayed.
 
     **Confirmation Alert**
 
-    ![Web Offline Installer Confirmation Alert](images/offline-6.png)
+    ![Offline Installer Confirmation Alert](images/offline-6.png)
 
     **Uninstall Progress**
 
-    ![Web Offline Installer Uninstall Progress Wizard](images/offline-7.png)
+    ![Offline Installer Uninstall Progress Wizard](images/offline-7.png)
 
     **Install Progress**
 
-    ![Web Offline Installer Install Progress](images/offline-8.png)
+    ![Offline Installer Install Progress](images/offline-8.png)
 
-    N> The Completed screen is displayed once the ASP. NET Core - EJ2 product is installed. If any version is selected to uninstall, The completed screen will display both install and uninstall status.
+    > **Note:** The **Completed** screen is displayed once the ASP.NET Core - EJ2 product is installed. If any version is selected to uninstall, the completed screen displays both install and uninstall status.
 
-    ![Web Offline Installer Summary Wizard](images/offline-9.png)
+    ![Offline Installer Summary Wizard](images/offline-9.png)
 
-6. After installing, click the **Launch Control Panel** link to open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
+6. After installation, click the **Launch Control Panel** link to open the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel.
 
-7. Click the Finish button. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP. NET Core - EJ2 product.
+7. Click **Finish**. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 product.
 
-***Installing in silent mode***
+## Installing in Silent Mode
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installer supports installation and uninstallation via the command line.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installer supports installation and uninstallation via the command line in silent mode.
 
-***Command Line Installation***
+### Command Line Installation
 
-To install through the Command Line in Silent mode, follow the steps below.
+To install through the command line in silent mode, follow the steps below.
 
 1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-2. The file syncfusionessentialaspnetcore-js2_(version).exe file will be extracted into the Temp directory.
+2. The `syncfusionessentialaspnetcore-js2_<version>.exe` file is extracted into the Windows Temp directory.
 
-3. Run %temp%. The Temp folder will be opened. The syncfusionessentialaspnetcore-js2_(version).exe file will be located in one of the folders.
+3. Open the Temp folder by running `%temp%` in the Run dialog (Win + R). The `syncfusionessentialaspnetcore-js2_<version>.exe` file is located in one of the subfolders.
 
-4. Copy the extracted syncfusionessentialaspnetcore-js2_(version).exe file in local drive.
+4. Copy the extracted `syncfusionessentialaspnetcore-js2_<version>.exe` file to a local drive.
 
-5. Exit the Wizard.
+5. Exit the Installer Wizard.
 
-6. Run Command Prompt in administrator mode and enter the following arguments.
+6. Run Command Prompt **as an administrator**, then run the installer with the following arguments.
 
-    **Arguments:** "installer file path\SyncfusionEssentialStudio(product)_(version).exe"/Install silent/UNLOCKKEY:"(product unlock key)"[/log"{Log file path}"][/InstallPath:{Location to install}][/InstallSamples:{true/false}][/InstallAssemblies:{true/false}][/UninstallExistAssemblies:{true/false}][/InstallToolbox:{true/false}]
+    **Syntax**
 
-    N> [..] - Arguments inside the square brackets are optional.
+    ```bat
+    "installer file path\SyncfusionEssentialStudio<product>_<version>.exe" /Install silent /UNLOCKKEY:"<product unlock key>" [/log "<log file path>"] [/InstallPath:<install location>] [/InstallSamples:true|false] [/InstallAssemblies:true|false] [/UninstallExistAssemblies:true|false] [/InstallToolbox:true|false]
+    ```
 
-    **Example:** "D:\Temp\syncfusionessentialaspnetcore-js2x.x.x.x.exe"/Install silent/UNLOCKKEY:"*product unlock key*"/log "C:\Temp\EssentialStudioPlatform.log"/InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    Arguments inside square brackets are optional.
 
-7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS2) is installed.
+    **Example**
 
-    N> x.x.x.x should be replaced with the Essential Studio<sup style="font-size:70%">&reg;</sup> version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    ```bat
+    "D:\Temp\syncfusionessentialaspnetcore-js2_20.2.0.36.exe" /Install silent /UNLOCKKEY:"your-unlock-key" /log "C:\Temp\EssentialStudioPlatform.log" /InstallPath:"C:\Syncfusion\20.2.0.36" /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    ```
 
-## Command Line Uninstallation
+    Replace `20.2.0.36` with the Essential<sup style="font-size:70%">&reg;</sup> Studio version, and replace `your-unlock-key` with the unlock key for that version.
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 can be uninstalled silently using the Command Line.
+7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is installed.
 
-1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer by double-clicking it. The installer Wizard automatically opens and extracts the package.
+    To confirm the install, check the Syncfusion<sup style="font-size:70%">&reg;</sup> Control Panel entry, or run the following PowerShell command to verify the installed version:
 
-2. The syncfusionessentialaspnetcore-js2_(version).exe file will be extracted into the Temp directory.
+    ```powershell
+    Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\* |
+      Where-Object { $_.DisplayName -like 'Syncfusion*ASP.NET Core*' } |
+      Select-Object DisplayName, DisplayVersion
+    ```
 
-3. Run %temp%. The Temp folder will be opened. The syncfusionessentialaspnetcore-js2_(version).exe file will be located in one of the folders.
+    A successful silent install returns exit code `0`. Other exit codes indicate an error; see the log file specified by `/log` for details.
 
-4. Copy the extracted syncfusionessentialaspnetcore-js2_(version).exe file in local drive.
+### Command Line Uninstallation
 
-5. Exit the Wizard.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 can also be uninstalled silently using the command line.
 
-6. Run Command Prompt in administrator mode and enter the following arguments.
+1. Run the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 
-    **Arguments:** "Copied installer file path\syncfusionessentialaspnetcore-js2_(version).exe" /uninstall silent
+2. The `syncfusionessentialaspnetcore-js2_<version>.exe` file is extracted into the Temp directory.
 
-    **Example:** "D:\Temp\syncfusionessentialaspnetcore-js2_x.x.x.x.exe" /uninstall silent
+3. Open the Temp folder by running `%temp%`. The `syncfusionessentialaspnetcore-js2_<version>.exe` file is located in one of the subfolders.
 
-7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essentials JS2) is uninstalled.
+4. Copy the extracted `syncfusionessentialaspnetcore-js2_<version>.exe` file to a local drive.
+
+5. Exit the Installer Wizard.
+
+6. Run Command Prompt **as an administrator**, then run the installer with the following arguments.
+
+    **Syntax**
+
+    ```bat
+    "copied installer file path\syncfusionessentialaspnetcore-js2_<version>.exe" /uninstall silent
+    ```
+
+    **Example**
+
+    ```bat
+    "D:\Temp\syncfusionessentialaspnetcore-js2_20.2.0.36.exe" /uninstall silent
+    ```
+
+7. Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) is uninstalled.
+
+## Troubleshooting
+
+| Issue | Possible Cause | Suggested Fix |
+| --- | --- | --- |
+| Installer fails with "Another installation is in progress." | Another MSI installation is currently running. | End the running `msiexec.exe` process in Task Manager, or wait for the other install to finish. See [Common Installation Errors](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors). |
+| "Controlled folder access seems to be enabled" alert. | Windows Controlled folder access is blocking the install/samples location. | Allow access for the installer in **Windows Security** → **Virus & threat protection** → **Manage ransomware protection**, or install to a non-protected folder. |
+| Login to Install fails with an invalid credentials error. | Wrong account, or the account does not own a license. | Verify the account owns a Syncfusion<sup style="font-size:70%">&reg;</sup> license, or use the **Use Unlock Key** option instead. |
+| Silent install reports a non-zero exit code. | Invalid arguments, missing unlock key, or path issues. | Re-run with `/log "<log file path>"` and inspect the log for the exact error. |
+| The "I agree to the License Terms and Privacy Policy" check box is disabled. | The license text has not been scrolled to the end. | Scroll the license text to the bottom before checking the box. |
+
+For additional help, see [Common Installation Errors](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors).
