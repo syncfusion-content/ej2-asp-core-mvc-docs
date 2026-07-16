@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET Core Maps Control
 
-This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using Visual Studio.
+This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 To get started quickly with the ASP.NET Core Maps control, watch the following video:
 
@@ -202,5 +202,5 @@ N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-
 
 ## See Also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
