@@ -110,7 +110,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanba
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban control will then be rendered in the default web browser with empty columns.
 
-![ASP.NET Core Kanban control rendered with empty columns (Open, In Progress, Review, Validate, Testing, Close).](images/default.PNG)
+![ASP.NET Core Kanban Control](images/default.PNG)
 
 ## Populating cards
 
