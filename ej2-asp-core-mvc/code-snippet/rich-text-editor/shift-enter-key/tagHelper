@@ -1,2 +1,0 @@
-<ejs-richtexteditor id="default" shiftEnterKey="BR" value="@ViewBag.value">
-</ejs-richtexteditor>

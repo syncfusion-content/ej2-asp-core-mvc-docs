@@ -1,4 +1,0 @@
-
-<div class="control-section">
-       @Html.EJS().RichTextEditor("form-support").EnableXhtml(true).Value(ViewBag.value).Render()
-</div>

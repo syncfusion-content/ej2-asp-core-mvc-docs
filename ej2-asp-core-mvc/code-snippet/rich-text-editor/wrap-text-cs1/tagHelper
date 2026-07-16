@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="image-quick-toolbar" value="@ViewBag.value">
-    <e-richtexteditor-quicktoolbarsettings image="@ViewBag.image"></e-richtexteditor-quicktoolbarsettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>
