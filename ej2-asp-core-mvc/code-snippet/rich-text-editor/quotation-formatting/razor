@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("formatting").Value(ViewBag.value).Render()

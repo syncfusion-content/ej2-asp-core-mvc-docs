@@ -1,7 +1,0 @@
-<ejs-richtexteditor id="edit-color" value="@ViewBag.value">
-    <e-richtexteditor-backgroundcolor modeSwitcher="true">
-    </e-richtexteditor-backgroundcolor>
-    <e-richtexteditor-fontcolor modeSwitcher="true">
-    </e-richtexteditor-fontcolor>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>
