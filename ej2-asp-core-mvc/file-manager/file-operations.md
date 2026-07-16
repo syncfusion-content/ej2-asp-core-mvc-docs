@@ -1108,4 +1108,4 @@ To perform the image preview support in the File Manager control, need to initia
 
 {% endif %}
 
-N> Looking for the full ASP.NET Core File Manager component overview, features, pricing, and documentation? Visit the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) page.
+N> Looking for the full ASP.NET Core File Manager component overview, features, and pricing? Visit the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) page.

@@ -324,7 +324,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
-N> Looking for the full ASP.NET Core File Manager component overview, features, pricing, and documentation? Visit the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) page.
+N> Looking for the full ASP.NET Core File Manager component overview, features, and pricing? Visit the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) page.
 
 ## See also
 

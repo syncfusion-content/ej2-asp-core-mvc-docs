@@ -246,7 +246,7 @@ You will see a Gantt Chart with:
 
 ![ASP.NET Core Gantt Control](images/gantt-control.png)
 
-N> Looking for the full ASP.NET Core Gantt Chart component overview, features, pricing, and documentation? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) page.
+N> Looking for the full ASP.NET Core Gantt Chart component overview, features, and pricing? Visit the [ASP.NET Core Gantt Chart](https://www.syncfusion.com/gantt-sdk/aspnet-core-gantt-chart) page.
 
 ## See also
 
