@@ -26,4 +26,4 @@ The Rich Text Editor control is WYSIWYG ("what you see is what you get") editor;
 * Contains undo/redo manager.
 * Creates bulleted and numbered lists.
 
-N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, pricing, and documentation? Visit the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/aspnet-core-ui-controls/wysiwyg-rich-text-editor) page.
+N> Looking for the full ASP.NET Core Rich Text Editor component overview, features, and pricing? Visit the [ASP.NET Core Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-rich-text-editor) page.
