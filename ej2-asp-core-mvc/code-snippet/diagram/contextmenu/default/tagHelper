@@ -1,3 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" connectors="@ViewBag.connectors" nodes="@ViewBag.nodes">
-<e-diagram-contextmenusettings show="true"></e-diagram-contextmenusettings>
-</ejs-diagram>
