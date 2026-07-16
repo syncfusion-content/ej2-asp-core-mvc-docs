@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with the ASP.NET Core Maps Control
 
-This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 To get started quickly with the ASP.NET Core Maps control, watch the following video:
 
