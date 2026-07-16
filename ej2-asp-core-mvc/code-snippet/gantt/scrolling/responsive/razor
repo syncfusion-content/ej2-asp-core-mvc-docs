@@ -1,5 +1,0 @@
-
- @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("100%").Width("100%").TaskFields(ts => ts.Id("TaskId").Name("TaskName"
- ).StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Child("SubTasks")
- ).EditSettings(es => es.AllowAdding(true).AllowEditing(true).AllowDeleting(true)
- ).Render()
