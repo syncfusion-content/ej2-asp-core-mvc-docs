@@ -1,8 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" constraints="Default,Bridging>
-    <e-diagram-connectors>
-        <e-diagram-connector constraints="DragSourceEnd,InheritBridging" id="connector">
-            <e-connector-sourcepoint x="100" y="100"></e-connector-sourcepoint>
-            <e-connector-targetpoint x="300" y="300"></e-connector-targetpoint>
-        </e-diagram-connector>
-    </e-diagram-connectors>
-</ejs-diagram>
