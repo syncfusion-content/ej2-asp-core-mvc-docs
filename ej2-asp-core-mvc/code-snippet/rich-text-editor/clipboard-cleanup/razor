@@ -1,2 +1,2 @@
 
-@Html.EJS().RichTextEditor("clipboardCleanup").Render()
+@Html.EJS().RichTextEditor("ClipBoardCleanup").Render()

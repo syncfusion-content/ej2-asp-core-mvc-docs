@@ -1,4 +1,4 @@
-<ejs-richtexteditor id="clipboardCleanup"  beforeClipboardWrite="beforeClipboardWrite"></ejs-richtexteditor>
+<ejs-richtexteditor id="ClipBoardCleanup"  beforeClipboardWrite="beforeClipboardWrite"></ejs-richtexteditor>
 
 <script>
     function beforeClipboardWrite(args){

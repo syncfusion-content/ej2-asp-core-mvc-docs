@@ -1,4 +1,4 @@
-@Html.EJS().RichTextEditor("clipboardCleanup").BeforeClipboardWrite("beforeClipboardWrite").Render()
+@Html.EJS().RichTextEditor("ClipBoardCleanup").BeforeClipboardWrite("beforeClipboardWrite").Render()
 
 <script>
     function beforeClipboardWrite(args){
