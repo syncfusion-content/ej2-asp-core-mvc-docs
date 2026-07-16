@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace PivotTable.Pages
+namespace RazorPagesMovie.Pages
 {
     public class IndexModel : PageModel
     {
