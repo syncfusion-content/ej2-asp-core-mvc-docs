@@ -104,7 +104,7 @@ The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfus
 <head>
     ...
     @* Syncfusion ASP.NET Core controls styles *@
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/tailwind3.css" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
     @* Syncfusion ASP.NET Core controls scripts *@
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
