@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## File Manager Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Getting started with ASP.NET Core File Manager Control
+# Getting Started with ASP.NET Core File Manager Control
 
-This section briefly explains about how to include [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -47,7 +47,7 @@ For alternative approaches to create the project, see [Create a new project in V
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can run the following package manager command.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -79,7 +79,7 @@ code -r RazorPagesMovie
 {% endhighlight %}
 {% endtabs %}
 
-## Install ASP.NET Core package in the application
+## Install ASP.NET Core package in the application (via .NET CLI)
 
 To integrate the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
@@ -105,7 +105,7 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are av
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
-Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
+Open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -117,7 +117,7 @@ Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHel
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -133,9 +133,9 @@ Here, the theme and script is referred using CDN inside the `<head>` of **~/Page
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in your ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -155,9 +155,9 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 
 ## Add ASP.NET Core File Manager control
 
-Now, add the ASP.NET Core File Manager tag helper in **~/Pages/Index.cshtml** page.
+Now, add the ASP.NET Core File Manager tag helper in the **~/Pages/Index.cshtml** page.
 
-Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files for the File Manager access.
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the File Manager.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
