@@ -1,5 +1,4 @@
 @{
-    .....
     List<AppointmentData> appData = new List<AppointmentData>();
     appData.Add(new AppointmentData
     { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = new DateTime(2022, 2, 11, 9, 30, 0), EndTime = new DateTime(2022, 2, 11, 11, 0, 0) });

@@ -1,6 +1,5 @@
 @using Syncfusion.EJ2.Schedule
 @{
-    .....
      List<ScheduleView> viewOption = new List<ScheduleView>()
     {
         new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Week },
