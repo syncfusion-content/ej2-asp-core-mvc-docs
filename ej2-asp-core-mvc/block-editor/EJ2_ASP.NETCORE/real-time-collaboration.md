@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Collaborative Editing in ASP.NET Core Block Editor | Syncfusion
+title: Real-time Collaboration in ASP.NET Core Block Editor | Syncfusion
 description: Checkout and learn about Collaborative Editing with Syncfusion Essential ASP.NET Core BlockEditor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: BlockEditor
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Collaborative Editing in ASP.NET Core Block Editor control
+# Real-time Collaboration in ASP.NET Core Block Editor control
 
 The Block Editor supports real-time collaborative editing, enabling multiple users to work on the same document simultaneously. Collaboration is powered by **Yjs**, a Conflict-free Replicated Data Type (CRDT) framework that synchronizes document changes across all connected users and automatically resolves conflicts.
 
