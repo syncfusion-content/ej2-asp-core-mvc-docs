@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Chat UI Control
 
-This section briefly explains how to include the [ASP.NET Core Chat UI](https://www.syncfusion.com/aspnet-core-ui-controls/chat-ui) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Chat UI](https://www.syncfusion.com/aspnet-core-ui-controls/chat-ui) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create an ASP.NET Core Web App with Razor pages
 
