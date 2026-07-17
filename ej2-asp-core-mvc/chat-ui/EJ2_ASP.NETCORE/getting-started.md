@@ -100,7 +100,7 @@ Add the [ASP.NET Core Chat UI](https://www.syncfusion.com/aspnet-core-ui-control
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Chat UI](https://www.syncfusion.com/aspnet-core-ui-controls/chat-ui) will render in your default web browser.
 
-![ASP.NET Core Chat UI Control](../images/chat-ui-component.webp)
+![ASP.NET Core Chat UI Control](images/chat-ui-component.webp)
 
 ## Configure messages and user
 
@@ -115,7 +115,7 @@ You can use the `<e-chatui-messages>` tag directive to group all the messages an
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Chat UI default messages](../images/default-messages.webp)
+![ASP.NET Core Chat UI default messages](images/default-messages.webp)
 
 ## See also
 
