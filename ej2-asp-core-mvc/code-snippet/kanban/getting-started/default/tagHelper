@@ -1,3 +1,6 @@
+@page
+@model RazorPagesMovie.Pages.IndexModel
+
 <ejs-kanban id="Kanban">
     <e-kanban-columns>
         <e-kanban-column headerText="To Do" keyField="Open"></e-kanban-column>
