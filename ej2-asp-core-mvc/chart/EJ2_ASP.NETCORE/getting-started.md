@@ -225,7 +225,6 @@ To render a column chart, define a data source and bind it to the chart series u
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Chart/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
 
-N>Looking for the full ASP.NET Core Charts component overview, features, and pricing? Visit the [ASP.NET Core Charts](https://www.syncfusion.com/aspnet-core-ui-controls/charts)
 
 ## See Also
 
