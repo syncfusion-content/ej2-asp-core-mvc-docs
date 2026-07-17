@@ -542,8 +542,6 @@ Below is an example illustrating how to define the `allowedFormats` and `deniedF
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-painter-cs2" %}
-
 ### Shortcut keys for copy and paste format
 
 For more details on keyboard navigation, refer to the [Keyboard support](../keyboard-support) documentation.

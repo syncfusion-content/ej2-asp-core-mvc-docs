@@ -56,8 +56,6 @@ Below is an example illustrating how to define the `allowedFormats` and `deniedF
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-painter-cs2" %}
-
 ## Using Shortcut Keys for Copy and Paste Format
 
 You can use the following shortcut keys to copy and paste the format in the Rich Text Editor.
