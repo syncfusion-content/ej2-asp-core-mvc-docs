@@ -263,4 +263,4 @@ The output will appear as follows:
 
 ![ASP.NET Core Diagram Control](./images/Getting-started.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples). Looking for the full ASP.NET Core Diagram component overview, features, and pricing? Visit our [ASP.NET Core Diagram](https://www.syncfusion.com/diagram-sdk/aspnet-core-diagram) page.
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Diagram/ASP.NET%20Core%20Tag%20Helper%20Examples).
