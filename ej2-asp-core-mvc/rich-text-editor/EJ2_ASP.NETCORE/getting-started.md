@@ -38,17 +38,17 @@ You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by 
 
 ### 1. Using NuGet Package Manager  
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.Asp.NetCore.Rich Text Editor](https://www.nuget.org/packages/Syncfusion.AspNetCore.Rich Text Editor) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.ASP.NET Core.Rich Text Editor](https://www.nuget.org/packages/Syncfusion.AspNetCore.RichTextEditor) and install it directly.
 
 ### 2. Using Package Manager Console  
 
-Run the following command in the Package Manager Console:
+Run the following commands in the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-dotnet add package Syncfusion.AspNetCore.RichTextEditor --version {{ site.releaseversion }}
-dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.RichTextEditor --version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
