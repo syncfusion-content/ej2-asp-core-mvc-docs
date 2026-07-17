@@ -1,2 +1,0 @@
-
-@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.Display("inline")).Value(ViewBag.value).Render()

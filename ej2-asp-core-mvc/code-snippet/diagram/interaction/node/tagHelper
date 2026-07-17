@@ -1,3 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" getCustomTool="@ViewBag.getTool" nodes="@ViewBag.nodes">
-<e-diagram-selecteditems constraints="Rotate" userHandle="@ViewBag.userhandle"></e-diagram-selecteditems>
-</ejs-diagram>

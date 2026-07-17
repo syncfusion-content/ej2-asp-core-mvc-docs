@@ -1,4 +1,0 @@
-
-<div style="width:500px; margin:0 auto;">
-    @Html.EJS().RichTextEditor("toolbar-types").ToolbarSettings(e => { e.Type(ToolbarType.MultiRow); e.Items(ViewBag.items); }).Value(ViewBag.value).Render()
-</div>

@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="editor" fileUploading="onFileUploading">
-    <e-richtexteditor-insertvideosettings maxFileSize="30000000"></e-richtexteditor-insertvideosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

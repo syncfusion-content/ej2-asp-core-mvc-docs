@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="editor">
-    <e-richtexteditor-insertimagesettings saveUrl="/Home/SaveImage" path="./Uploads/"></e-richtexteditor-insertimagesettings>
-</ejs-richtexteditor>

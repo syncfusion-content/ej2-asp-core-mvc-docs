@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="formatPainterRTE" value="@ViewBag.value">
-    <e-richtexteditor-toolbarsettings items="ViewBag.items"/>
-</ejs-richtexteditor>
