@@ -26,6 +26,7 @@ Alternatively, you can install the same package using the Package Manager Consol
 {% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.AspNetCore.Calendars -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
