@@ -200,8 +200,6 @@ The output looks like below
 
 ![ASP.NET Core DataGrid with Columns Data](images/column.png)
 
-N> Looking for the full JavaScript DataGrid control overview, features, and pricing? Visit the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) page.
-
 ## See also
 
 * [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
