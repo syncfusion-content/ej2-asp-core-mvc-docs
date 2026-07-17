@@ -1,7 +1,0 @@
-<ejs-richtexteditor id="placeholder" placeholder="Type Something"></ejs-richtexteditor>
-<style>
-    .e-richtexteditor .e-rte-placeholder {
-        font-family: monospace;
-        color: deeppink;
-    }
-</style>

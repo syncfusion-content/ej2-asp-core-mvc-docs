@@ -1,9 +1,0 @@
-@(Html.EJS().Gantt("UnscehduledTask").DataSource((IEnumerable<object>)ViewBag.DataSource)
-            .Height("450px")
-            .HighlightWeekends(true)
-            .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress"))
-            .EditSettings(es => es.AllowEditing(true).AllowTaskbarEditing(true))
-            .AllowUnscheduledTasks(true)
-            .Render()
-    )
-</div>

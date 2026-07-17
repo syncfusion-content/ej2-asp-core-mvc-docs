@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="audio"  value="ViewBag.value">
-    <e-richtexteditor-insertaudiosettings layoutOption="break"></e-richtexteditor-insertaudiosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

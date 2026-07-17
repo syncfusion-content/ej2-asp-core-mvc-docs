@@ -1,4 +1,0 @@
-@Html.EJS().Gantt("Gantt").DataSource(dataManager =>
-{
-  dataManager.Url("/Home/UrlDatasource").Adaptor("UrlAdaptor")
-}).Render()

@@ -1,2 +1,0 @@
-
-@Html.EJS().RichTextEditor("pasteCleanup").ShowCharCount(true).MaxLength(1000).PasteCleanupSettings(p => p.Prompt(true)).Value(ViewBag.value).Render()

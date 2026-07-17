@@ -1,2 +1,0 @@
-@(Html.EJS().SymbolPalette("symbolPalette").Palettes(ViewBag.Palette).GetSymbolInfo("getSymbolInfo").Width("100%").Height("570px")
-.SymbolHeight(48).SymbolWidth(48).Render())
