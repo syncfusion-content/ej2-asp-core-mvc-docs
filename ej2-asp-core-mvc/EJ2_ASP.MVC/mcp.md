@@ -26,7 +26,7 @@ These tools speed up development and reinforce best practices for Syncfusion com
 
 Before beginning, ensure the following prerequisites are met:
 
-- Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/download/dotnet/8.0) or later
+- Microsoft [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download/dotnet/8.0) or later
 - A **compatible MCP client** (VS Code, Syncfusion<sup style="font-size:70%">&reg;</sup> Code Studio, Cursor, JetBrains, etc.)
 - An active [Syncfusion<sup style="font-size:70%">&reg;</sup> API key](https://syncfusion.com/account/api-key)
 - An **ASP.NET MVC application** (existing or new); see [Quick Start](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
