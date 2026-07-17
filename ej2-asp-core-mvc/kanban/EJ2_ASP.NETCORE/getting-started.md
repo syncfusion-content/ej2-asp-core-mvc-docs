@@ -100,13 +100,13 @@ Add the [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Kanban](https://www.syncfusion.com/aspnet-core-ui-controls/kanban-board) control will render in your default web browser.
 
-![ASP.NET Core Kanban Control](images/default.PNG)
+![ASP.NET Core Kanban Control](images/default.webp)
 
 ## Populating cards
 
 To populate the empty Kanban with cards, define the list or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
-![kanban](./images/populating-cards.webp)
+![kanban](./images/populating-cards.PNG)
 
 ## Enable swimlane
 
