@@ -58,7 +58,7 @@ Install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusi
 {% tabcontent Visual Studio %}
 
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet packages (`Syncfusion.AspNetCore.Grid` and `Syncfusion.AspNetCore.Themes`) and install it.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.Grid` and `Syncfusion.AspNetCore.Themes`) and install them.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
@@ -121,7 +121,7 @@ The theme stylesheet and script can be referenced from NuGet through [Static Web
 
 ## Register the script manager
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as shown below.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}

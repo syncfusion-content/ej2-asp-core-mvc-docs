@@ -116,7 +116,7 @@ The script can be referenced from NuGet through [Static Web Assets](https://ej2.
 
 ## Register the script manager
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as shown below.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
