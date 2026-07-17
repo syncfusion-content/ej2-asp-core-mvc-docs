@@ -16,7 +16,7 @@ N> Check that at least one Entity Framework model exists, and the application ha
 
 <!-- markdownlint-disable MD026 -->
 
-N> The Syncfusion ASP.NET Core UI Scaffolder is available from 18.4.0.39 to ASP.NET Core web application.
+N> The Syncfusion ASP.NET Core UI Scaffolder is available from v18.4.0.39 to ASP.NET Core web application.
 
 ## Add a scaffolded item
 
@@ -24,7 +24,7 @@ The following steps explain how to add a scaffolded item to your ASP.NET Core We
 
 N> Before using the Syncfusion® ASP.NET Core Scaffolding, check whether the **ASP.NET Core Extensions - Syncfusion** is installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension is not installed, install the extension by following the steps from the [download and installation](download-and-installation) help topic.
 
- 1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item…**
+1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item…**
 
     ![Syncfusion Scaffolded add-in](images/Scaffolding_Add_Item1.png)
 
@@ -50,7 +50,7 @@ N> Before using the Syncfusion® ASP.NET Core Scaffolding, check whether the **A
 
  7. Then, add navigation to the created view file based on your requirement to open in the webpage.
 
- 8. If you installed the trial setup or NuGet packages from nuget.org, you have to register the Syncfusion® license key to your project since Syncfusion® introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx?_ga=2.11237684.1233358434.1587355730-230058891.1567654773) post for understanding the licensing changes introduced in Essential Studio®.
+8. If you have installed the trial setup or NuGet packages from nuget.org, you have to register the Syncfusion® license key to your project since Syncfusion® introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio® release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion® license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio®.
 
 ## Syncfusion ASP.NET Core Command-line Scaffolding
 
