@@ -1,8 +1,0 @@
-
-            @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
-             ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks"
-             ).Dependency("Predecessor")).TooltipSettings(ts => ts.ConnectorLine("#dependencyLineTooltip")).Render()
-   
-    <script type="text/x-jsrender" id="dependencyLineTooltip">
-        <div>Offset : ${offsetString}</div>
-    </script>

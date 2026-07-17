@@ -1,4 +1,0 @@
-            @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id(
-                "TaskID").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("subtasks")
-                ).Indicators("indicators").Render()
-        

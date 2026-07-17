@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("inlineMode").InlineMode(e => e.Enable(true).OnSelection(true)).ToolbarSettings(e => e.Items((object)ViewBag.items)).Value(ViewBag.value).Render()

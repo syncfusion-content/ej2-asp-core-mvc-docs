@@ -1,2 +1,0 @@
-<ejs-richtexteditor id="markdown" value="@ViewBag.value" editorMode="Markdown">
-</ejs-richtexteditor>
