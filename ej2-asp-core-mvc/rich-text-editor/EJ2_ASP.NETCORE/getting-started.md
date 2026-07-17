@@ -32,13 +32,13 @@ You can create the the ASP.NET Core web application with Razor pages by two type
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install Syncfusion ASP.NET Core package in the application
+## Install Syncfusion ASP.NET Core Rich Text Editor package in the application
 
-You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core RichTextEditor package. This can be done in two ways, they are mentioned below
+You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core Rich Text Editor package. This can be done in two ways, they are mentioned below
 
 ### 1. Using NuGet Package Manager  
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.Asp.NetCore.RichTextEditor](https://www.nuget.org/packages/Syncfusion.AspNetCore.RichTextEditor) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.Asp.NetCore.Rich Text Editor](https://www.nuget.org/packages/Syncfusion.AspNetCore.Rich Text Editor) and install it directly.
 
 ### 2. Using Package Manager Console  
 
@@ -47,8 +47,8 @@ Run the following command in the Package Manager Console:
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-dotnet add package Syncfusion.AspNetCore.Grid --version {{ site.releaseversion }}
-dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}  
+dotnet add package Syncfusion.AspNetCore.RichTextEditor --version {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
