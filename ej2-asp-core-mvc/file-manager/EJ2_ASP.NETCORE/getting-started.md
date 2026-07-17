@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting started with ASP.NET Core File Manager Control
 
-This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Create an ASP.NET Core Web App with Razor pages
 
@@ -321,7 +321,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![File Manager getting started](../images/getting-started.webp)
+![File Manager getting started](images/getting-started.webp)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
