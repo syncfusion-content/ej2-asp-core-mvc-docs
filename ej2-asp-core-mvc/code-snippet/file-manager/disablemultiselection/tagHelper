@@ -2,10 +2,10 @@
     <div class="sample-container">
         <!--  File Manager control declaration -->
         <ejs-filemanager id="file" allowMultiSelection="false" showItemCheckBoxes="false" >
-            <e-filemanager-ajaxsettings url="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/FileOperations"
-                                        downloadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Download"
-                                        uploadUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/Upload"
-                                        getImageUrl="https://ej2-aspcore-service.azurewebsites.net/api/FileManager/GetImage">
+            <e-filemanager-ajaxsettings url="https://physical-service.syncfusion.com/api/FileManager/FileOperations"
+                                        downloadUrl="https://physical-service.syncfusion.com/api/FileManager/Download"
+                                        uploadUrl="https://physical-service.syncfusion.com/api/FileManager/Upload"
+                                        getImageUrl="https://physical-service.syncfusion.com/api/FileManager/GetImage">
             </e-filemanager-ajaxsettings>
         </ejs-filemanager>
         <!-- end of File Manager control -->
