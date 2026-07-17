@@ -14,16 +14,15 @@ Syncfusion® provides **Visual Studio Scaffolding** for the Syncfusion® ASP.NET
 
 N> The Syncfusion® ASP.NET MVC UI Scaffolder is available from v16.4.0.40.
 
-The following steps explain you how to add a scaffolded item to your ASP.NET MVC Web application.
+The following steps explain how to add a scaffolded item to your ASP.NET MVC Web application.
 
-N> Before use, the Syncfusion® ASP.NET MVC Scaffolding, check whether the **ASP.NET MVC Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the **Extensions -> Manage Extensions -> Installed** for Visual Studio 2019 or later and for Visual Studio 2017 or lower by clicking on the **Tools -> Extensions and Updates -> Installed**. If this extension not installed, install the extension by follow the steps from the [download and installation](download-and-installation) help topic.
+N> Before using the Syncfusion® ASP.NET MVC Scaffolding, check whether the **ASP.NET MVC Extensions - Syncfusion** is installed in the Visual Studio Extension Manager: for Visual Studio 2019 or later, by clicking **Extensions > Manage Extensions > Installed**. If this extension is not installed, install the extension by following the steps in the [download and installation](download-and-installation) help topic.
 
 1. Right-click the **Controllers** folder in the Solution Explorer, click **Add**, and then select **New Scaffolded Item**.
 
     ![scaffolding item](images/scaffold-item.png)
 
-2. In the **Add Scaffold** dialog, select **Syncfusion®
- ASP.NET MVC UI Scaffolder**, and then click **‘Add’**.
+2. In the **Add Scaffold** dialog, select **Syncfusion® ASP.NET MVC UI Scaffolder**, and then click **‘Add’**.
 
     ![syncfusion aspnetmvc ui scaffolder](images/mvc-ui-scaffolder.png)
 
@@ -47,8 +46,8 @@ N> Before use, the Syncfusion® ASP.NET MVC Scaffolding, check whether the **ASP
 
 N> Ensure that at least one Entity Framework model exists, and the application has been compiled once. If no Entity Framework model exist in your application, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. After the model file has been added, ensure that the required DBContext and properties have been added. Now, build the application, and try scaffolding. If any changes have been done in the model properties, rebuild the application once before performing scaffolding.
 
-Refer to the following UG links to render Syncfusion® control after performed scaffolding.
+Refer to the following UG links to render Syncfusion® control after performing scaffolding.
 
-MVC4: [Configure Essential JS 2 using Syncfusion.EJ2.MVC4 package](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application-1)
+* **MVC4**: [Configure Essential JS 2 using Syncfusion.EJ2.MVC4 package](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application-1)
 
-MVC5: [Configure Essential JS 2 using Syncfusion.EJ2.MVC5 package](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application)
+* **MVC5**: [Configure Essential JS 2 using Syncfusion.EJ2.MVC5 package](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application)
