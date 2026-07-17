@@ -47,21 +47,21 @@ Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [
 
 ## Install the required ASP.NET Core package
 
-Install [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package. All Syncfusion ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+Install [Syncfusion.AspNetCore.Maps](https://www.nuget.org/packages/Syncfusion.AspNetCore.Maps/) NuGet package. All Syncfusion ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
 
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet package (`Syncfusion.EJ2.AspNet.Core`) and install it.
+2. Search the required NuGet package (`Syncfusion.AspNetCore.Maps`) and install it.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
 {% highlight razor tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Maps -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -75,7 +75,7 @@ Open the terminal and run the following command.
 {% tabs %}
 {% highlight razor tabtitle="Terminal" %}
 
-dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Maps -v {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -91,7 +91,8 @@ After the package is installed, open the **~/Pages/_ViewImports.cshtml** file an
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Maps
 
 {% endhighlight %}
 {% endtabs %}
@@ -106,7 +107,7 @@ The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcor
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Maps/scripts/sf-maps.min.js"></script>
 </head>
 
 {% endhighlight %}
