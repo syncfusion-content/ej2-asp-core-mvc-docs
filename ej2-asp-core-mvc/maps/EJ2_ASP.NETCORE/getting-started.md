@@ -31,7 +31,7 @@ Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](htt
 Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet new webapp -o RazorPagesMovie
 code -r RazorPagesMovie
@@ -59,7 +59,7 @@ Install [Syncfusion.AspNetCore.Maps](https://www.nuget.org/packages/Syncfusion.A
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.AspNetCore.Maps -Version {{ site.releaseversion }}
 
@@ -73,7 +73,7 @@ Install-Package Syncfusion.AspNetCore.Maps -Version {{ site.releaseversion }}
 Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet add package Syncfusion.AspNetCore.Maps -v {{ site.releaseversion }}
 
