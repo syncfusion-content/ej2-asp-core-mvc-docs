@@ -10,55 +10,64 @@ documentation: ug
 
 # Download and Installation
 
-Syncfusion® publishes the Visual Studio Code extension in Visual Studio Code marketplace. You can either install it from the Visual Studio Code or download and install it from the Visual Studio Code marketplace.
+Syncfusion® publishes the Visual Studio Code extension in the Visual Studio Code marketplace. You can either install it from inside Visual Studio Code or download and install it from the Visual Studio Code marketplace.
 
 ## Prerequisites
 
-To install the Syncfusion® ASP.NET Core Visual Studio Code extension and the creation of Syncfusion® ASP.NET Core apps using any of the project types (Syncfusion Web Application (Model-View-Controller), Syncfusion Angular, and Syncfusion React), the following required software must be installed:
+To install the Syncfusion® ASP.NET Core Visual Studio Code extension and create Syncfusion® ASP.NET Core apps using any of the supported project types (Syncfusion Web Application (Model-View-Controller), Syncfusion Angular, and Syncfusion React), the following software must be installed:
 
 * [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download)
-* [Visual Studio 2019 16.3 Preview 2](https://visualstudio.microsoft.com/vs/) or later
-* [.NET Core 3.1](https://dotnet.microsoft.com/en-us/download/dotnet/3.1) or later
-* [C# Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* [.NET SDK 8.0 or later](https://dotnet.microsoft.com/en-us/download) (.NET 8 LTS is recommended)
+* [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 * [Node.js](https://nodejs.org/en/download/package-manager)
 
 
 ## Install through the Visual Studio Code extensions
 
-The following steps explain how to install the Syncfusion® ASP.NET Core Visual Studio Code extensions from Visual Studio Code:
+The following steps explain how to install the Syncfusion® ASP.NET Core Visual Studio Code extension from inside Visual Studio Code:
 
 1. Open Visual Studio Code.
 
-2. Go to **View > Extensions** or give command **Ctrl+Shift+X** or click Extension icon appear on the left side of the window, then Extension window will open.
+2. Go to **View > Extensions**, press **Ctrl+Shift+X**, or click the **Extensions** icon that appears on the left side of the window. The Extensions window will open.
 
-    ![Extension Window](images/extension-window.png)
+    ![extension-window](images/extension-window.png)
 
-3. Type “**ASP.NET Core VS Code Extensions – Syncfusion**” in the search box.
+3. Type **ASP.NET Core VS Code Extensions – Syncfusion** in the search box.
 
-4. Install the "**ASP.NET Core VS Code Extensions - Syncfusion**" extension by clicking the **Install** button.
+4. Install the **ASP.NET Core VS Code Extensions - Syncfusion** extension by clicking the **Install** button.
 
-5. Using the Reload Window command in the Visual Studio Code palette, reload Visual Studio Code after installation. By using **Ctrl+Shift+P**, you can bring up the command palette and select Reload Window from the list of Visual Studio Code commands.
+5. After installation, reload Visual Studio Code using the **Reload Window** command. Press **Ctrl+Shift+P** to open the command palette, then select **Developer: Reload Window**.
 
     ![reload-window](images/reload-window.png)
 
-6. Now, you can create a new Syncfusion® ASP.NET Core application by using the Syncfusion® ASP.NET Core extensions from the Visual Studio Code Palette. Find the Syncfusion ASP.NET Core Template Studio: Launch from Visual Studio Code commands to open the Syncfusion ASP.NET Core Template Studio wizard.
+6. You can now create a new Syncfusion® ASP.NET Core application using the Syncfusion® ASP.NET Core extension from the Visual Studio Code palette. Find the **Syncfusion ASP.NET Core Template Studio: Launch** command and select it to open the Syncfusion ASP.NET Core Template Studio wizard.
 
    ![command-palette](images/command-palette.png)
 
 ## Install from the Visual Studio Code Marketplace
 
-The following steps explain how to install Syncfusion® ASP.NET Core applications from the Visual Studio Code Marketplace:
+The following steps explain how to install the Syncfusion® ASP.NET Core extension from the Visual Studio Code Marketplace:
 
-1. Open the Syncfusion® ASP.NET Core Visual Studio Code Extension in Visual Studio Code Marketplace.
+1. Open the [Syncfusion® ASP.NET Core Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSCodeExtensions-Syncfusion) page in the Visual Studio Code Marketplace.
 
-2. Click Install from Visual Studio Code Marketplace to open the popup with the information, “**Open Visual Studio Code.**” Then, click Open Visual Studio Code, and Syncfusion® ASP.NET Core Extension will open in Visual Studio Code.
+2. Click **Install** on the marketplace page. A popup will appear with the message **Open Visual Studio Code**. Click **Open Visual Studio Code**, and the Syncfusion® ASP.NET Core extension will open in Visual Studio Code.
 
-3. Click the Install button in the “**ASP.NET Core VS Code Extensions - Syncfusion**” extension.
+3. Click **Install** in the **ASP.NET Core VS Code Extensions - Syncfusion** extension page within Visual Studio Code.
 
-4. Use the Reload Window command in the Visual Studio Code palette and reload Visual Studio Code after installation. By using **Ctrl+Shift+P**, you can bring up the command palette and select Reload Window from the list of Visual Studio Code commands.
+4. After installation, reload Visual Studio Code using the **Reload Window** command. Press **Ctrl+Shift+P** to open the command palette, then select **Developer: Reload Window**.
 
      ![reload-window](images/reload-window.png)
 
-5. Now, you can create a new Syncfusion® ASP.NET Core application by using the Syncfusion® ASP.NET Core extensions from the Visual Studio Code Palette. Find the **Syncfusion ASP.NET Core Template Studio: Launch** from Visual Studio Code commands to open the Syncfusion ASP.NET Core Template Studio wizard.
+5. You can now create a new Syncfusion® ASP.NET Core application using the Syncfusion® ASP.NET Core extension from the Visual Studio Code palette. Find the **Syncfusion ASP.NET Core Template Studio: Launch** command and select it to open the Syncfusion ASP.NET Core Template Studio wizard.
 
      ![command-palette](images/command-palette.png)
+
+## Next steps
+
+* Continue with [Creating a Syncfusion® ASP.NET Core Application](create-project.md) to scaffold your first project.
+
+## Troubleshooting
+
+* If the **Install** button is disabled, ensure the extension supports your operating system and that Visual Studio Code is up to date.
+* If the **Developer: Reload Window** prompt does not appear, close and reopen Visual Studio Code manually.
+* If the **Syncfusion ASP.NET Core Template Studio: Launch** command is missing after install, verify that all prerequisites above are installed and that the extension is enabled in the **Extensions** view.
