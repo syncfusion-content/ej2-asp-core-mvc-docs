@@ -125,4 +125,4 @@ N> Before adding the scaffolded item from command-line, check whether the **dotn
 
 Refer to the following UG links to render Syncfusion® control after performing scaffolding.
 
-[Configure using Syncfusion.EJ2.AspNet.Core package](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
+[Configure using Syncfusion.EJ2.AspNet.Core package](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017)

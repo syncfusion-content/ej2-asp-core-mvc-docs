@@ -16,10 +16,10 @@ Syncfusion® publishes the Visual Studio Code extension in the Visual Studio Cod
 
 To install the Syncfusion® ASP.NET Core Visual Studio Code extension and create Syncfusion® ASP.NET Core apps using any of the supported project types (Syncfusion Web Application (Model-View-Controller), Syncfusion Angular, and Syncfusion React), the following software must be installed:
 
-* [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download)
+* [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download?_exp_download=fb315fc982)
 * [.NET SDK 8.0 or later](https://dotnet.microsoft.com/en-us/download) (.NET 8 LTS is recommended)
 * [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
-* [Node.js](https://nodejs.org/en/download/package-manager)
+* [Node.js](https://nodejs.org/en/download)
 
 
 ## Install through the Visual Studio Code extensions
@@ -48,7 +48,7 @@ The following steps explain how to install the Syncfusion® ASP.NET Core Visual 
 
 The following steps explain how to install the Syncfusion® ASP.NET Core extension from the Visual Studio Code Marketplace:
 
-1. Open the [Syncfusion® ASP.NET Core Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreVSCodeExtensions-Syncfusion) page in the Visual Studio Code Marketplace.
+1. Open the [Syncfusion® ASP.NET Core Visual Studio Code Extension](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCore-VSCode-Extensions) page in the Visual Studio Code Marketplace.
 
 2. Click **Install** on the marketplace page. A popup will appear with the message **Open Visual Studio Code**. Click **Open Visual Studio Code**, and the Syncfusion® ASP.NET Core extension will open in Visual Studio Code.
 

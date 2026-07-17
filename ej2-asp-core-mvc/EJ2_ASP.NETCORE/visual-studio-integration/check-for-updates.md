@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Check for Updates
+# Check for Updates in ASP.NET Core Application
 
 Syncfusion® provides the Check for Updates extension to find if the latest version of the Essential Studio® release is available. If an update is available, the option to install the most recent version of the Essential Studio® release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
 
