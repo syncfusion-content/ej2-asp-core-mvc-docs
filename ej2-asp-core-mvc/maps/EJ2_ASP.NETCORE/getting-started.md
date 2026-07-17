@@ -86,7 +86,7 @@ dotnet add package Syncfusion.AspNetCore.Maps -v {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Tag Helper.
+After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Base` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
