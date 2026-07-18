@@ -76,8 +76,6 @@ Open the `~/Pages/_ViewImports.cshtml` file and import the tag helpers from both
 {% endhighlight %}
 {% endtabs %}
 
-N> When using individual packages, you must import tag helpers for each package separately, unlike the unified `Syncfusion.EJ2` tag helper which covers all controls.
-
 ## Add stylesheet and script resources
 
 When using individual NuGet packages, styles and scripts are served from the package's static web assets under the `_content/` path. Add the following references inside the `<head>` of `~/Pages/Shared/_Layout.cshtml`:
@@ -89,8 +87,8 @@ When using individual NuGet packages, styles and scripts are served from the pac
     ...
     <!-- Syncfusion ASP.NET Core Themes (individual package) -->
     <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <!-- Syncfusion ASP.NET Core Grid script (individual package) -->
-    <script src="_content/Syncfusion.AspNetCore.Grid/scripts/sf-grid.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}

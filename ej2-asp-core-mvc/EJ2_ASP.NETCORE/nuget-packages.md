@@ -59,9 +59,9 @@ The ASP.NET Core BarcodeGenerator supports the most common 1D and 2D barcode typ
 </td>
 <td>
 <ul>
-<li>`ejs-barcodegenerator`</li>
-<li>`ejs-datamatrixgenerator`</li>
-<li>`ejs-qrcodegenerator`</li>
+<li>ejs-barcodegenerator</li>
+<li>ejs-datamatrixgenerator</li>
+<li>ejs-qrcodegenerator</li>
 </ul>
 </td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
@@ -82,7 +82,7 @@ The ASP.NET Core BlockEditor is a modern, block-based content editor for composi
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.BlockEditor/">Syncfusion.AspNetCore.BlockEditor</a></td>
 <td>Block Editor</td>
-<td>`ejs-blockeditor`</td>
+<td>ejs-blockeditor</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -113,7 +113,7 @@ The ASP.NET Core Bullet Chart is used to visually compare measures, similar to t
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.BulletChart/">Syncfusion.AspNetCore.BulletChart</a></td>
 <td>Bullet Chart</td>
-<td>`ejs-bulletchart`</td>
+<td>ejs-bulletchart</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -149,13 +149,13 @@ The ASP.NET Core Buttons package contains UI components such as Button, Checkbox
 </td>
 <td>
 <ul>
-<li>`ejs-button`</li>
-<li>`ejs-checkbox`</li>
-<li>`ejs-chiplist`</li>
-<li>`ejs-fab`</li>
-<li>`ejs-radiobutton`</li>
-<li>`ejs-speeddial`</li>
-<li>`ejs-switch`</li>
+<li>ejs-button</li>
+<li>ejs-checkbox</li>
+<li>ejs-chiplist</li>
+<li>ejs-fab</li>
+<li>ejs-radiobutton</li>
+<li>ejs-speeddial</li>
+<li>ejs-switch</li>
 </ul>
 </td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
@@ -186,11 +186,11 @@ The ASP.NET Core Calendars package contains date and time components such as Cal
 </td>
 <td>
 <ul>
-<li>`ejs-calendar`</li>
-<li>`ejs-datepicker`</li>
-<li>`ejs-daterangepicker`</li>
-<li>`ejs-datetimepicker`</li>
-<li>`ejs-timepicker`</li>
+<li>ejs-calendar</li>
+<li>ejs-datepicker</li>
+<li>ejs-daterangepicker</li>
+<li>ejs-datetimepicker</li>
+<li>ejs-timepicker</li>
 </ul>
 </td>
 <td>
@@ -226,8 +226,8 @@ The ASP.NET Core Charts package is a well-crafted charting component to visualiz
 </td>
 <td>
 <ul>
-<li>`ejs-chart`</li>
-<li>`ejs-accumulationchart`</li>
+<li>ejs-chart</li>
+<li>ejs-accumulationchart</li>
 </ul>
 </td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
@@ -248,7 +248,7 @@ The ASP.NET Core 3D Chart is a graphical representation of data in three dimensi
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Chart3D/">Syncfusion.AspNetCore.Chart3D</a></td>
 <td>3D Chart</td>
-<td>`ejs-chart3d`</td>
+<td>ejs-chart3d</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -272,7 +272,7 @@ The ASP.NET Core Circular 3D Chart renders pie and donut series in a three-dimen
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.CircularChart3D/">Syncfusion.AspNetCore.CircularChart3D</a></td>
 <td>Circular 3D Chart</td>
-<td>`ejs-circularchart3d`</td>
+<td>ejs-circularchart3d</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -296,7 +296,7 @@ The ASP.NET Core Circular Gauge is used for visualizing numeric values on a circ
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.CircularGauge/">Syncfusion.AspNetCore.CircularGauge</a></td>
 <td>Circular Gauge</td>
-<td>`ejs-circulargauge`</td>
+<td>ejs-circulargauge</td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
 </tr>
 </table>
@@ -323,9 +323,9 @@ The ASP.NET Core Diagram component is a high-speed, robust library for crafting,
 </td>
 <td>
 <ul>
-<li>`ejs-diagram`</li>
-<li>`ejs-overview`</li>
-<li>`ejs-symbolpalette`</li>
+<li>ejs-diagram</li>
+<li>ejs-overview</li>
+<li>ejs-symbolpalette</li>
 </ul>
 </td>
 <td>
@@ -365,8 +365,8 @@ The ASP.NET Core Document Editor (Word Processor) provides all the common Word p
 </td>
 <td>
 <ul>
-<li>`ejs-documenteditor`</li>
-<li>`ejs-documenteditorcontainer`</li>
+<li>ejs-documenteditor</li>
+<li>ejs-documenteditorcontainer</li>
 </ul>
 </td>
 <td>
@@ -411,12 +411,12 @@ The ASP.NET Core DropDowns package contains a collection of dropdown components 
 </td>
 <td>
 <ul>
-<li>`ejs-autocomplete`</li>
-<li>`ejs-combobox`</li>
-<li>`ejs-dropdownlist`</li>
-<li>`ejs-listbox`</li>
-<li>`ejs-multiselect`</li>
-<li>`ejs-mention`</li>
+<li>ejs-autocomplete</li>
+<li>ejs-combobox</li>
+<li>ejs-dropdownlist</li>
+<li>ejs-listbox</li>
+<li>ejs-multiselect</li>
+<li>ejs-mention</li>
 </ul>
 </td>
 <td>
@@ -447,7 +447,7 @@ The ASP.NET Core FileManager is a graphical user interface component used to man
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.FileManager/">Syncfusion.AspNetCore.FileManager</a></td>
 <td>FileManager</td>
-<td>`ejs-filemanager`</td>
+<td>ejs-filemanager</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -481,7 +481,7 @@ The ASP.NET Core Gantt is designed to visualize and edit the project schedule an
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Gantt/">Syncfusion.AspNetCore.Gantt</a></td>
 <td>Gantt Chart</td>
-<td>`ejs-gantt`</td>
+<td>ejs-gantt</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -517,7 +517,7 @@ The ASP.NET Core DataGrid is used to display and manipulate tabular data with co
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid/">Syncfusion.AspNetCore.Grid</a></td>
 <td>DataGrid</td>
-<td>`ejs-grid`</td>
+<td>ejs-grid</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -548,7 +548,7 @@ The ASP.NET Core HeatMap Chart is used to visualize two-dimensional data in whic
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.HeatMap/">Syncfusion.AspNetCore.HeatMap</a></td>
 <td>HeatMap Chart</td>
-<td>`ejs-heatmap`</td>
+<td>ejs-heatmap</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -572,7 +572,7 @@ The ASP.NET Core Image Editor component loads and modifies images by performing 
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.ImageEditor/">Syncfusion.AspNetCore.ImageEditor</a></td>
 <td>Image Editor</td>
-<td>`ejs-imageeditor`</td>
+<td>ejs-imageeditor</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -603,7 +603,7 @@ The ASP.NET Core In-place Editor component is most useful for editing a value dy
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.InPlaceEditor/">Syncfusion.AspNetCore.InPlaceEditor</a></td>
 <td>In-place Editor</td>
-<td>`ejs-inplaceeditor`</td>
+<td>ejs-inplaceeditor</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -652,17 +652,17 @@ The ASP.NET Core Inputs package comes with a collection of form components used 
 </td>
 <td>
 <ul>
-<li>`ejs-colorpicker`</li>
-<li>`ejs-maskedtextbox`</li>
-<li>`ejs-numerictextbox`</li>
-<li>`ejs-rating`</li>
-<li>`ejs-slider`</li>
-<li>`ejs-textbox`</li>
-<li>`ejs-uploader`</li>
-<li>`ejs-signature`</li>
-<li>`ejs-textarea`</li>
-<li>`ejs-otpinput`</li>
-<li>`ejs-speechtotext`</li>
+<li>ejs-colorpicker</li>
+<li>ejs-maskedtextbox</li>
+<li>ejs-numerictextbox</li>
+<li>ejs-rating</li>
+<li>ejs-slider</li>
+<li>ejs-textbox</li>
+<li>ejs-uploader</li>
+<li>ejs-signature</li>
+<li>ejs-textarea</li>
+<li>ejs-otpinput</li>
+<li>ejs-speechtotext</li>
 </ul>
 </td>
 <td>
@@ -698,9 +698,9 @@ The ASP.NET Core InteractiveChat package provides an AI AssistView interface thr
 </td>
 <td>
 <ul>
-<li>`ejs-aiassistview`</li>
-<li>`ejs-inlineaiassist`</li>
-<li>`ejs-chatui`</li>
+<li>ejs-aiassistview</li>
+<li>ejs-inlineaiassist</li>
+<li>ejs-chatui</li>
 </ul>
 </td>
 <td>
@@ -733,7 +733,7 @@ The ASP.NET Core Kanban board visually depicts work at various stages of a proce
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Kanban/">Syncfusion.AspNetCore.Kanban</a></td>
 <td>Kanban</td>
-<td>`ejs-kanban`</td>
+<td>ejs-kanban</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -772,9 +772,9 @@ The ASP.NET Core Layouts package contains Splitter, Dashboard Layout, and Timeli
 </td>
 <td>
 <ul>
-<li>`ejs-dashboardlayout`</li>
-<li>`ejs-splitter`</li>
-<li>`ejs-timeline`</li>
+<li>ejs-dashboardlayout</li>
+<li>ejs-splitter</li>
+<li>ejs-timeline</li>
 </ul>
 </td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
@@ -795,7 +795,7 @@ The ASP.NET Core Linear Gauge is used for visualizing numeric values in a linear
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.LinearGauge/">Syncfusion.AspNetCore.LinearGauge</a></td>
 <td>Linear Gauge</td>
-<td>`ejs-lineargauge`</td>
+<td>ejs-lineargauge</td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
 </tr>
 </table>
@@ -814,7 +814,7 @@ The ASP.NET Core ListView component allows selecting an item or multiple items f
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Lists/">Syncfusion.AspNetCore.Lists</a></td>
 <td>ListView</td>
-<td>`ejs-listview`</td>
+<td>ejs-listview</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -838,7 +838,7 @@ The ASP.NET Core Maps component is used for rendering maps from GeoJSON data or 
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Maps/">Syncfusion.AspNetCore.Maps</a></td>
 <td>Maps</td>
-<td>`ejs-maps`</td>
+<td>ejs-maps</td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
 </tr>
 </table>
@@ -857,7 +857,7 @@ The ASP.NET Core MultiColumn ComboBox displays a dropdown list with multiple col
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.MultiColumnComboBox/">Syncfusion.AspNetCore.MultiColumnComboBox</a></td>
 <td>MultiColumn ComboBox</td>
-<td>`ejs-multicolumncombobox`</td>
+<td>ejs-multicolumncombobox</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -906,18 +906,18 @@ The ASP.NET Core Navigations package contains a collection of navigation compone
 </td>
 <td>
 <ul>
-<li>`ejs-accordion`</li>
-<li>`ejs-appbar`</li>
-<li>`ejs-breadcrumb`</li>
-<li>`ejs-carousel`</li>
-<li>`ejs-contextmenu`</li>
-<li>`ejs-dropdowntree`</li>
-<li>`ejs-menu`</li>
-<li>`ejs-sidebar`</li>
-<li>`ejs-stepper`</li>
-<li>`ejs-tab`</li>
-<li>`ejs-toolbar`</li>
-<li>`ejs-treeview`</li>
+<li>ejs-accordion</li>
+<li>ejs-appbar</li>
+<li>ejs-breadcrumb</li>
+<li>ejs-carousel</li>
+<li>ejs-contextmenu</li>
+<li>ejs-dropdowntree</li>
+<li>ejs-menu</li>
+<li>ejs-sidebar</li>
+<li>ejs-stepper</li>
+<li>ejs-tab</li>
+<li>ejs-toolbar</li>
+<li>ejs-treeview</li>
 </ul>
 </td>
 <td>
@@ -957,9 +957,9 @@ The ASP.NET Core Notifications package contains components such as Toast, Skelet
 </td>
 <td>
 <ul>
-<li>`ejs-toast`</li>
-<li>`ejs-skeleton`</li>
-<li>`ejs-message`</li>
+<li>ejs-toast</li>
+<li>ejs-skeleton</li>
+<li>ejs-message</li>
 </ul>
 </td>
 <td>
@@ -985,7 +985,7 @@ The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web appl
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.PdfViewer/">Syncfusion.AspNetCore.PdfViewer</a></td>
 <td>PDF Viewer</td>
-<td>`ejs-pdfviewer`</td>
+<td>ejs-pdfviewer</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1026,8 +1026,8 @@ The ASP.NET Core Pivot Table is a powerful control used to organize and summariz
 </td>
 <td>
 <ul>
-<li>`ejs-pivotview`</li>
-<li>`ejs-pivotfieldlist`</li>
+<li>ejs-pivotview</li>
+<li>ejs-pivotfieldlist</li>
 </ul>
 </td>
 <td>
@@ -1071,9 +1071,8 @@ The ASP.NET Core Popups package contains Dialog and Tooltip components used to d
 </td>
 <td>
 <ul>
-<li>`ejs-dialog`</li>
-<li>`ejs-tooltip`</li>
-<li>`ejs-tooltip`</li>
+<li>ejs-dialog</li>
+<li>ejs-tooltip</li>
 </ul>
 </td>
 <td>
@@ -1099,7 +1098,7 @@ The ASP.NET Core Progress Bar control can be used to visualize the changing stat
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.ProgressBar/">Syncfusion.AspNetCore.ProgressBar</a></td>
 <td>ProgressBar</td>
-<td>`ejs-progressbar`</td>
+<td>ejs-progressbar</td>
 <td><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></td>
 </tr>
 </table>
@@ -1118,7 +1117,7 @@ The ASP.NET Core QueryBuilder package contains the QueryBuilder component that a
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.QueryBuilder/">Syncfusion.AspNetCore.QueryBuilder</a></td>
 <td>QueryBuilder</td>
-<td>`ejs-querybuilder`</td>
+<td>ejs-querybuilder</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1148,7 +1147,7 @@ The ASP.NET Core Range Navigator is an interface for selecting a small range fro
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.RangeNavigator/">Syncfusion.AspNetCore.RangeNavigator</a></td>
 <td>Range Navigator</td>
-<td>`ejs-rangenavigator`</td>
+<td>ejs-rangenavigator</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1172,7 +1171,7 @@ The ASP.NET Core Ribbon component provides a Microsoft Office-style toolbar that
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Ribbon/">Syncfusion.AspNetCore.Ribbon</a></td>
 <td>Ribbon</td>
-<td>`ejs-ribbon`</td>
+<td>ejs-ribbon</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1208,7 +1207,7 @@ The ASP.NET Core Rich Text Editor component is the HTML and Markdown editor that
 <li>Markdown Editor</li>
 </ul>
 </td>
-<td>`ejs-richtexteditor`</td>
+<td>ejs-richtexteditor</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1239,7 +1238,7 @@ The ASP.NET Core Sankey chart visualizes flow quantities between nodes using pro
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Sankey/">Syncfusion.AspNetCore.Sankey</a></td>
 <td>Sankey</td>
-<td>`ejs-sankey`</td>
+<td>ejs-sankey</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1270,8 +1269,8 @@ The ASP.NET Core Scheduler component is an event calendar that facilitates users
 </td>
 <td>
 <ul>
-<li>`ejs-schedule`</li>
-<li>`ejs-recurrenceeditor`</li>
+<li>ejs-schedule</li>
+<li>ejs-recurrenceeditor</li>
 </ul>
 </td>
 <td>
@@ -1312,8 +1311,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Smart Componen
 </td>
 <td>
 <ul>
-<li>`ejs-smartpastebutton`</li>
-<li>`ejs-smarttextarea`</li>
+<li>ejs-smartpastebutton</li>
+<li>ejs-smarttextarea</li>
 </ul>
 </td>
 <td>
@@ -1340,7 +1339,7 @@ The ASP.NET Core Smith Chart is a control for showing the parameters of transmis
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Smithchart/">Syncfusion.AspNetCore.Smithchart</a></td>
 <td>Smith Chart</td>
-<td>`ejs-smithchart`</td>
+<td>ejs-smithchart</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1364,7 +1363,7 @@ The ASP.NET Core Sparkline Charts are a replacement for normal charts to display
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Sparkline/">Syncfusion.AspNetCore.Sparkline</a></td>
 <td>Sparkline</td>
-<td>`ejs-sparkline`</td>
+<td>ejs-sparkline</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1396,9 +1395,9 @@ The ASP.NET Core SplitButtons package contains UI components such as DropDownBut
 </td>
 <td>
 <ul>
-<li>`ejs-dropdownbutton`</li>
-<li>`ejs-progressbutton`</li>
-<li>`ejs-splitbutton`</li>
+<li>ejs-dropdownbutton</li>
+<li>ejs-progressbutton</li>
+<li>ejs-splitbutton</li>
 </ul>
 </td>
 <td>
@@ -1425,7 +1424,7 @@ The ASP.NET Core Spreadsheet provides all the common Excel features, including d
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.Spreadsheet/">Syncfusion.AspNetCore.Spreadsheet</a></td>
 <td>Spreadsheet</td>
-<td>`ejs-spreadsheet`</td>
+<td>ejs-spreadsheet</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1463,7 +1462,7 @@ The ASP.NET Core Stock Chart is an easy-to-use financial charting package to tra
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.StockChart/">Syncfusion.AspNetCore.StockChart</a></td>
 <td>Stock Chart</td>
-<td>`ejs-stockchart`</td>
+<td>ejs-stockchart</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1489,7 +1488,6 @@ This package contains the Syncfusion® ASP.NET Core UI components theme files.
 <td>
 <ul>
     <li>Bootstrap</li>
-    <li>Bootstrap</li>
     <li>Bootstrap Dark</li>
     <li>Bootstrap v4</li>
     <li>Bootstrap v5</li>
@@ -1497,17 +1495,14 @@ This package contains the Syncfusion® ASP.NET Core UI components theme files.
     <li>Bootstrap v5.3</li>
     <li>Bootstrap v5.3 Dark</li>
     <li>Fluent</li>
-    <li>Fluent</li>
     <li>Fluent Dark</li>
     <li>Fluent v2</li>
     <li>Fluent v2 Dark</li>
     <li>Fluent v2 High Contrast</li>
     <li>Material</li>
-    <li>Material</li>
     <li>Material Dark</li>
     <li>Material v3</li>
     <li>Material v3 Dark</li>
-    <li>Tailwind</li>
     <li>Tailwind</li>
     <li>Tailwind Dark</li>
     <li>Tailwind v3</li>
@@ -1520,9 +1515,7 @@ This package contains the Syncfusion® ASP.NET Core UI components theme files.
 </td>
 <td>-</td>
 <td>
-<ul>
 none
-</ul>
 </td>
 </tr>
 </table>
@@ -1541,7 +1534,7 @@ The ASP.NET Core Tree Grid is a feature-rich control used to visualize self-refe
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.TreeGrid/">Syncfusion.AspNetCore.TreeGrid</a></td>
 <td>TreeGrid</td>
-<td>`ejs-treegrid`</td>
+<td>ejs-treegrid</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1573,7 +1566,7 @@ The ASP.NET Core TreeMap is a feature-rich component used to visualize both hier
 <tr>
 <td><a href="https://www.nuget.org/packages/Syncfusion.AspNetCore.TreeMap/">Syncfusion.AspNetCore.TreeMap</a></td>
 <td>TreeMap</td>
-<td>`ejs-treemap`</td>
+<td>ejs-treemap</td>
 <td>
 <ul>
 <li><a href="#syncfusionaspnetcorebase">Syncfusion.AspNetCore.Base</a></li>
@@ -1592,3 +1585,262 @@ The ASP.NET Core TreeMap is a feature-rich component used to visualize both hier
 * Installing `Syncfusion.EJ2.AspNet.Core` loads the complete Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core library, which increases the application size. Individual package installation resolves this and loads only the required component assemblies.
 
 * These individual NuGet packages can be used in ASP.NET Core applications to reduce the application deployment size in production.
+
+## Syncfusion.EJ2.AspNet.Core - All Controls
+
+The complete Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls package powered by Essential<sup style="font-size:70%">&reg;</sup> JS 2, it contains 85+ high performance, lightweight, responsive, and touch-friendly UI controls including grid, chart, scheduler, spreadsheet, gantt chart, listbox, file manager, powerpoint or presentation, excel and much more.
+
+<!-- markdownlint-disable MD033 -->
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/">Syncfusion.EJ2.AspNet.Core</a>
+</td>
+<td>
+85+ Controls
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Licensing/" target="_blank">Syncfusion.Licensing</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.Spreadsheet.AspNet.Core - Spreadsheet
+
+The ASP.NET Core Spreadsheet provides all the common Excel features, including data binding, selection, editing, formatting, resizing, sorting, importing, and exporting Excel documents.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.Spreadsheet.AspNet.Core/">Syncfusion.EJ2.Spreadsheet.AspNet.Core</a>
+</td>
+<td>
+ejs-spreadsheet
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/" target="_blank">Microsoft.AspNetCore.Mvc</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base" target="_blank">Syncfusion.Compression.Base</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/" target="_blank">Syncfusion.EJ2.AspNet.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.XlsIO.AspNet/" target="_blank">Syncfusion.XlsIO.AspNet</a></li>
+<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc" target="_blank">Microsoft.AspNetCore.Mvc</a></li>
+<li><a href="https://www.nuget.org/packages/System.Net.Http/" target="_blank">System.Net.Http</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.WordEditor.AspNet.Core - Word Processor
+
+The ASP.NET Core Word Processor provides all the common Word processing features including editing text, formatting contents, resizing images and tables, finding and replacing text, bookmarks, tables of contents, printing, and importing and exporting Word documents.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.WordEditor.AspNet.Core/">Syncfusion.EJ2.WordEditor.AspNet.Core</a>
+</td>
+<td>
+ejs-documenteditor
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
+<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.DocIO.Net.Core/" target="_blank">Syncfusion.DocIO.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.OfficeChart.Net.Core/" target="_blank">Syncfusion.OfficeChart.Net.Core</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.SpellChecker.AspNet.Core - Spell Checker
+
+The ASP.NET Core Spell Checker package provides spell-checking capabilities that can be integrated with the Document Editor component to identify and correct spelling mistakes in real time.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/syncfusion.EJ2.SpellChecker.AspNet.Core">Syncfusion.EJ2.SpellChecker.AspNet.Core</a>
+</td>
+<td>
+ejs-documenteditor
+</td>
+<td>
+<ul>
+<li>This package has no dependencies.</li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.PdfViewer.AspNet.Core - PDF Viewer
+
+The ASP.NET Core PDF Viewer supports viewing and reviewing PDF files in web applications and also printing them. The thumbnail, bookmark, hyperlink, and the table of contents support provides easy navigation within and outside PDF files. The form-filling support provides a platform to fill and print with AcroForms. The PDF files can be reviewed with the available annotation tools.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.PdfViewer.AspNet.Core/">Syncfusion.EJ2.PdfViewer.AspNet.Core</a>
+</td>
+<td>
+ejs-pdfviewer
+</td>
+<td>
+<ul><li><a href="https://www.nuget.org/packages/Microsoft.Extensions.Caching.Memory/" target="_blank">Microsoft.Extensions.Caching.Memory</a></li>
+<li><a href="https://www.nuget.org/packages/System.Text.Json/" target="_blank">System.Text.Json</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/" target="_blank">Syncfusion.Pdf.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/syncfusion.compression.net.core" target="_blank">Syncfusion.Compression.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.PdfToImageConverter.Net/" target="_blank">Syncfusion.PdfToImageConverter.Net</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.FileManager.AzureFileProvider.AspNet.Core - FileManager Azure Provider
+
+The FileManager package contains the Azure blob storage file system provider in ASP.NET Core File Manager control. This provider allows the users to access and manage the blobs in the Azure blob storage.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.FileManager.AzureFileProvider.AspNet.Core/">Syncfusion.EJ2.FileManager.AzureFileProvider.AspNet.Core</a>
+</td>
+<td>
+ejs-filemanager
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Azure.Storage.Blobs/" target="_blank">Azure.Storage.Blobs</a></li>
+<li><a href="https://www.nuget.org/packages/Newtonsoft.Json/" target="_blank">Newtonsoft.Json</a></li>
+</ul>
+</td>
+</tr>
+</table>
+
+## Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core - FileManager Amazon Provider
+
+The FileManager package contains the Amazon S3 bucket file system provider in ASP.NET Core File Manager control. This provider allows the users to access and manage a server hosted file system as a collection of objects stored in the Amazon S3 Bucket.
+
+<table>
+<tr>
+<td>
+<b>NuGet package name</b>
+</td>
+<td>
+<b>Controls</b>
+</td>
+<td>
+<b>Dependencies</b>
+</td>
+</tr>
+<tr>
+<td>
+<a href="https://www.nuget.org/packages/Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core">Syncfusion.EJ2.FileManager.AmazonFileProvider.AspNet.Core</a>
+</td>
+<td>
+ejs-filemanager
+</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/AWSSDK.S3/" target="_blank">AWSSDK.S3</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/" target="_blank">Syncfusion.EJ2.AspNet.Core</a></li>
+</ul>
+</td>
+</tr>
+</table>
+<!-- markdownlint-enable MD033 -->
+
+## Syncfusion.EJ2.GridExport.Core - Grid Export
+
+The ASP.NET Core Grid Export is an ideal library for visualizing the Grid data in a Excel, PDF and CSV formats which also handles the data actions like filtering, sorting, Grouping etc.
+
+<table>
+<tr>
+<th>NuGet Package Name</th>
+<th>Controls</th>
+<th>Dependencies</th>
+</tr>
+<tr>
+<td><a href="https://www.nuget.org/packages/Syncfusion.EJ2.GridExport.Core">Syncfusion.EJ2.GridExport.Core</a></td>
+<td>ejs-grid</td>
+<td>
+<ul>
+<li><a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc/">Microsoft.AspNetCore.Mvc</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Compression.Base/">Syncfusion.Compression.Base</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/">Syncfusion.EJ2.AspNet.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.Pdf.Net.Core/">Syncfusion.Pdf.Net.Core</a></li>
+<li><a href="https://www.nuget.org/packages/Syncfusion.XlsIO.AspNet/">Syncfusion.XlsIO.AspNet</a></li>
+<li><a href="https://www.nuget.org/packages/System.Net.Http/">System.Net.Http</a></li>
+</ul>
+</td>
+</tr>
+</table>
