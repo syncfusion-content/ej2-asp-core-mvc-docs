@@ -121,3 +121,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Render DateRangePicker with range restriction](./range-restriction)
 * [Render DateRangePicker with specific culture](./globalization)
 * [How to get and set value in DateRangePickerFor](./how-to/daterangepicker-for-core)
+
+N> You can also explore our [ASP.NET Core DateRangePicker example](https://ej2.syncfusion.com/aspnetcore/daterangepicker/defaultfunctionalities#/fluent2) that shows you how to render and configure the DateRangePicker.

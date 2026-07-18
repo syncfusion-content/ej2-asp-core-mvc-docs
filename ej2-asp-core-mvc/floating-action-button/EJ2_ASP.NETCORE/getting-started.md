@@ -109,3 +109,10 @@ The Floating Action Button control triggers the `onclick` event when you click o
 {% include code-snippet/floating-action-button/events/onclick-event/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+
+N> You can also explore our [ASP.NET Core Floating Action Button example](https://ej2.syncfusion.com/aspnetcore/fab/defaultfunctionalities#/fluent2) that shows you how to render and configure the Floating Action Button.

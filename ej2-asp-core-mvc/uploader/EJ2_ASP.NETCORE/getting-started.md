@@ -146,3 +146,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [How to add additional data on upload](./how-to/add-additional-data-on-upload)
 * [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
 * [Achieve invisible upload](./how-to/achieve-invisible-upload)
+
+N> You can also explore our [ASP.NET Core Uploader example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) that shows you how to render and configure the Uploader.
