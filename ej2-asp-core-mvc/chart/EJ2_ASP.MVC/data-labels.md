@@ -11,7 +11,7 @@ documentation: ug
 
 # Data Labels in ##Platform_Name## Chart
 
-Data label can be added to a chart series by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option in the dataLabel. By default, the labels will arrange smartly without overlapping.
+Data labels display the values of data points directly on the chart, reducing the need to reference axes for exact values. Enable data labels by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option to `true` in the `DataLabel` configuration. Labels automatically adjust to avoid overlapping and maintain readability.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -40,7 +40,7 @@ Data label can be added to a chart series by enabling the [`Visible`](https://h
 
 ## Position
 
-Using [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) property, you can place the label either on `Top`, `Middle`,`Bottom` or `Outer` (outer is applicable for column and bar type series).
+Use the [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) property to place data labels at `Top`, `Middle`, `Bottom`, or `Outer` (applicable to column and bar series). Appropriate label positioning enhances clarity and preserves chart readability.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ N> The position `Outer` is applicable for column and bar type series.
 
 ## Data Label Template
 
-Label content can be formatted by using the template option. Inside the template, you can add the placeholder text `${point.x}` and `${point.y}` to display corresponding data points x & y value. Using [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Template) property, you can set data label template in chart.
+Customize label content using templates. Use placeholders such as `${point.x}` and `${point.y}` to display data point values. The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Template) property enables fully customizable and visually rich labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -100,7 +100,7 @@ Label content can be formatted by using the template option. Inside the template
 
 ## Text Mapping
 
-Text from the data source can be mapped using `Name` property.
+Display custom text using the `Name` property, which maps label text from a specific field in the data source. This feature is useful for descriptive or category‑based labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,11 @@ Text from the data source can be mapped using `Name` property.
 
 ## Format
 
-Data label for the chart can be formatted using [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Format) property. You can use the global formatting options, such as 'n', 'p', and 'c'.
+Apply number or date formatting using the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartDataLabelSettings.html#Syncfusion_EJ2_Charts_ChartDataLabelSettings_Format) property. Global formatting symbols include:
+
+- `n` – number format  
+- `p` – percentage format  
+- `c` – currency format 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,55 +167,55 @@ Data label for the chart can be formatted using [`Format`](https://help.syncfusi
     <td>1000</td>
     <td>n1</td>
     <td>1000.0</td>
-    <td>The number is rounded to 1 decimal place.</td>
+    <td>Rounded to 1 decimal place.</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>n2</td>
     <td>1000.00</td>
-    <td>The number is rounded to 2 decimal places.</td>
+    <td>Rounded to 2 decimal places.</td>
   </tr>
    <tr>
     <td>1000</td>
     <td>n3</td>
     <td>1000.000</td>
-    <td>The number is rounded to 3 decimal place.</td>
+    <td>Rounded to 3 decimal places.</td>
   </tr>
   <tr>
     <td>0.01</td>
     <td>p1</td>
     <td>1.0%</td>
-    <td>The number is converted to percentage with 1 decimal place.</td>
+    <td>Converted to percentage with 1 decimal place.</td>
   </tr>
   <tr>
     <td>0.01</td>
     <td>p2</td>
     <td>1.00%</td>
-    <td>The number is converted to percentage with 2 decimal place.</td>
+    <td>Converted to percentage with 2 decimal places.</td>
   </tr>
    <tr>
     <td>0.01</td>
     <td>p3</td>
     <td>1.000%</td>
-    <td>The number is converted to percentage with 3 decimal place.</td>
+    <td>Converted to percentage with 3 decimal places.</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>c1</td>
     <td>$1000.0</td>
-    <td>The currency symbol is appended to number and number is rounded to 1 decimal place.</td>
+    <td>Currency with 1 decimal place.</td>
   </tr>
    <tr>
     <td>1000</td>
     <td>c2</td>
     <td>$1000.00</td>
-    <td>The currency symbol is appended to number and number is rounded to 2 decimal place.</td>
+    <td>Currency with 2 decimal places.</td>
   </tr>
 </table>
 
 ## Margin
 
-`Margin` for data label can be applied to using `Left`, `Right`, `Bottom` and `Top` properties.
+Adjust spacing around labels using the `Margin` property, which includes `Left`, `Right`, `Bottom`, and `Top` values. Margins help prevent labels from overlapping chart elements.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -240,7 +244,7 @@ Data label for the chart can be formatted using [`Format`](https://help.syncfusi
 
 ## Customization
 
-`stroke` and `border` of data label can be customized using `Fill` and `Border` properties. Rounded corners can be customized using `Rx` and `Ry` properties.
+Enhance label appearance using properties such as `Fill` (background), `Border`, and corner radius (`Rx`, `Ry`). Refine text appearance using the `Font` settings, which support `Color`, `FontFamily`, `FontWeight`, and `Size`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -267,11 +271,14 @@ Data label for the chart can be formatted using [`Format`](https://help.syncfusi
 
 
 
-N> `Rx` and `Ry` properties requires `Border` values not to be null.
+N> The `Rx` and `Ry` properties require non‑null `Border` values.
 
 ## Customizing Specific Point
 
-You can also customize the specific marker and label using [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event. `PointRender` event allows you to change the shape, color and border for a point, whereas the `TextRender` event allows you to change the text for the point.
+Customize individual markers or labels using the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) events. 
+
+- `PointRender` modifies shape, color, or border of a point.  
+- `TextRender` customizes the label text for specific points.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -298,7 +305,10 @@ You can also customize the specific marker and label using [`PointRender`](http
 
 ## Show percentage based on each series points
 
-You can calculate the percentage value based on the sum for each series using the `SeriesRender` and `TextRender` events in the chart. In `SeriesRender` calculate the sum of each series y values and In `TextRender` calculate percentage value based on the sum value and modify the text.
+Calculate and display percentage values based on each series’ total using the `SeriesRender` and `TextRender` events.  
+
+- In `SeriesRender`, compute the total of `y` values.  
+- In `TextRender`, calculate the percentage for each point and update the label text.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

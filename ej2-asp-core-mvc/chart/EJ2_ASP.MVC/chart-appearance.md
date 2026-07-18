@@ -42,7 +42,7 @@ You can customize the default theme of the chart `Theme` property. There are 9 t
 
 ## Custom color palette
 
-You can customize the default color of series or points by providing a custom color palette of your choice by using the [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Palettes) property.
+Customize the default color of series or points by providing a custom color palette using the [`Palettes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Palettes) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,7 @@ You can differentiate data points based on their y values using [`RangeColorSett
 
 ## Point level customization
 
-Marker, datalabel and fill color of each data point can be customized with [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) event.
+Marker, data label, and fill color of individual data points can be customized using the [`PointRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) and [`TextRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TextRender) events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -163,7 +163,8 @@ Marker, datalabel and fill color of each data point can be customized with [`Poi
 **Customize the chart background**
 
 <!-- markdownlint-disable MD013 -->
-Using [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Border) properties, you can change the background color and border of the chart.
+
+Use the [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Border) properties on the chart to change its background color and border.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -192,7 +193,7 @@ Using [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 **Chart margin**
 
-You can set margin for chart from its container through [`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Margin) property.
+Set the chart margin relative to its container using the [`Margin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Margin) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -221,7 +222,7 @@ You can set margin for chart from its container through [`Margin`](https://help.
 
 **Chart area customization**
 
-Using [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Border) properties, you can change the background color and border of the chart area. Width for the chart area can be customized using [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Width) property.
+To customize the plotting region (chart area), use the `ChartArea` properties: [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Background) and [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Border) change the chart area's appearance, and [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartArea.html#Syncfusion_EJ2_Charts_ChartArea_Width) adjusts its size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -275,7 +276,7 @@ You can customize the space between the chart area from its chart container thro
 
 ## Animation
 
-You can customize animation for a particular series using [`Animation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAnimation.html) property. You can enable or disable animation of the series using `Enable` property, `Duration` specifies the duration of an animation and `Delay` allows us to start the animation at desire time.
+Customize animation for a series using the [`Animation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAnimation.html) property. Use `Enable` to turn animation on or off; `Duration` controls the animation length and `Delay` sets when the animation starts.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -333,7 +334,7 @@ Fluid animation used to animate series with updated dataSource continues animati
 
 ## Chart title
 
-Chart can be given a title using [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Title) property, to show the information about the data plotted.
+Add a chart title using the [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Title) property. The title appears at the top of the chart by default and is used to describe the purpose or subject of the visualization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -362,7 +363,7 @@ Chart can be given a title using [`Title`](https://help.syncfusion.com/cr/aspnet
 
 ### Title position
 
-By using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_Position) property in [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TitleStyle), you can position the [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Title) at left, right, top or bottom of the chart. The title is positioned at the top of the chart, by default.
+Use the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_Position) property within [`TitleStyle`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TitleStyle) to place the [`Title`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_Title) at the left, right, top, or bottom of the chart. The default position is at the top.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -389,7 +390,7 @@ By using the [`Position`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 
 
-The custom option helps you to position the title anywhere in the chart using [`X`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_X) and [`Y`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_Y) coordinates.
+To manually position the title anywhere within the chart, use the [`X`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_X) and [`Y`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_Y) properties.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -418,7 +419,7 @@ The custom option helps you to position the title anywhere in the chart using [`
 
 ### Title alignment
 
-You can align the title to the near, far, or center of the chart using the [`TextAlignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_TextAlignment) property.
+Align the chart title to the near, center, or far side of the chart using the [`TextAlignment`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTitleSettings.html#Syncfusion_EJ2_Charts_ChartTitleSettings_TextAlignment) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -10,11 +10,11 @@ documentation: ug
 
 # Last value label in ##Platform_Name## Chart Control
 
-The `lastValueLabel` in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
+The `LastValueLabel` feature highlights the final data point in a series, making the latest trend or value easy to identify.
 
 ## Enable Last value label
 
-To show the last value label, make sure the `Enable` property inside the `LastValueLabel` settings is set to `true` within the series configuration. 
+Enable the label by setting the `Enable` property inside the `LastValueLabel` configuration. 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -41,7 +41,7 @@ To show the last value label, make sure the `Enable` property inside the `LastVa
 
 ## Customization
 
-The appearance of the last value label can be customized using style properties such as `Font`, `Background`, `Border`, `DashArray`, `LineWidth`, `LineColor`, `Rx`, and `Ry` in the lastValueLabel property of the chart series. These settings allow you to tailor the label’s look to align with your desired visual presentation.
+Customize the appearance using properties such as `Font`, `Background`, `Border`, `DashArray`, `LineWidth`, `LineColor`, `Rx`, and `Ry`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

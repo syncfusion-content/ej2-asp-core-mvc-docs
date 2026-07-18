@@ -15,7 +15,7 @@ documentation: ug
 
 ## DateTime Axis
 
-Date time axis uses date time scale and displays the date time values as axis labels in the specified format.
+The DateTime axis uses a date-time scale and displays date-time values as axis labels based on the specified format. This axis type is ideal for visualizing time-based data such as trends, timelines, and time-series data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,7 +44,7 @@ Date time axis uses date time scale and displays the date time values as axis la
 
 ## DateTimeCategory Axis
 
-Date-time category axis is used to display the date-time values with non-linear intervals. For example, the business days alone have been depicted in a week here.
+The DateTimeCategory axis is used to render date-time values with non-linear intervals. This axis type is especially useful when certain time ranges, such as weekends or holidays, need to be excluded. In the following example, only business days are displayed within a week.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -73,7 +73,7 @@ Date-time category axis is used to display the date-time values with non-linear 
 
 ### Range
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of the axis.
+Range of an axis will be calculated automatically based on the provided data, you can also customize the range of the axis using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -102,15 +102,17 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 ### Interval Customization
 
-Date time intervals can be customized by using the [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_IntervalType) properties of the axis. For example, when you set interval as 2 and intervalType as years, it considers 2 years as interval. DateTime axis supports following interval types,
+Date-time intervals can be customized using the [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) and [`IntervalType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_IntervalType) properties of the axis. For example, when the interval is set to `2` and the interval type is set to `Years`, the axis displays labels at two-year intervals.
 
-* Auto
-* Years
-* Months
-* Days
-* Hours
-* Minutes
-* Seconds
+The DateTime axis supports the following interval types:
+
+- Auto
+- Years
+- Months
+- Days
+- Hours
+- Minutes
+- Seconds
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -139,15 +141,15 @@ Date time intervals can be customized by using the [`Interval`](https://help.syn
 
 **Applying Padding to the Range**
 
-Padding can be applied to the minimum and maximum extremes of the range by using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. Date time axis supports the following types of padding,
+Padding can be applied to the minimum and maximum values of the axis range using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. The DateTime axis supports the following range padding types:
 
-* None
-* Round
-* Additional
+- None
+- Round
+- Additional
 
 **DateTime - None**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `None`, minimum and maximum of the axis is based on the data.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `None`, the minimum and maximum values of the axis are calculated directly from the data values.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -176,7 +178,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **DateTime - Round**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 15th Jan, interval is 1 and the interval type is ‘month’, then the axis minimum will be Jan 1st.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest interval boundary. For example, if the minimum value is January 15 and the interval type is set to `Months` with an interval of `1`, the axis minimum is adjusted to January 1.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -205,7 +207,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **DateTime - Additional**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Additional`, an additional interval is added before the minimum and after the maximum values of the axis range to provide extra spacing.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -234,7 +236,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 ## Label Format
 
-You can format and parse the date to all globalize format using [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelFormat) property in an axis.
+Date values displayed on the DateTime axis can be formatted using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelFormat) property. This property supports globalized date and time formats for clear and localized label rendering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -261,54 +263,54 @@ You can format and parse the date to all globalize format using [`LabelFormat`]
 
 
 
-The following table describes the result of applying some common date time formats to the labelFormat property
+The following table illustrates the output produced by applying commonly used date-time format strings to the `LabelFormat` property.
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
-<tr>
-<td><b>Label Value</b></td>
-<td><b>Label Format Property Value</b></td>
-<td><b>Result </b></td>
-<td><b>Description </b></td>
-</tr>
-<tr>
-<td>new Date(2000, 03, 10)</td>
-<td>EEEE</td>
-<td>Monday</td>
-<td>The Date is displayed in day format</td>
-</tr>
-<tr>
-<td>new Date(2000, 03, 10)</td>
-<td>yMd</td>
-<td>04/10/2000</td>
-<td>The Date is displayed in month/date/year format</td>
-</tr>
-<tr>
-<td>new Date(2000, 03, 10)</td>
-<td> MMM </td>
-<td>Apr</td>
-<td>The Shorthand month for the date is displayed</td>
-</tr>
-<tr>
-<td>new Date(2000, 03, 10)</td>
-<td>hm</td>
-<td>12:00 AM</td>
-<td>Time of the date value is displayed as label</td>
-</tr>
-<tr>
-<td>new Date(2000, 03, 10)</td>
-<td>hms</td>
-<td>12:00:00 AM</td>
-<td>The Label is displayed in hours:minutes:seconds format</td>
-</tr>
+    <tr>
+        <td><b>Label Value</b></td>
+        <td><b>Label Format Property Value</b></td>
+        <td><b>Result</b></td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td>new Date(2000, 03, 10)</td>
+        <td>EEEE</td>
+        <td>Monday</td>
+        <td>Displays the full name of the day</td>
+    </tr>
+    <tr>
+        <td>new Date(2000, 03, 10)</td>
+        <td>yMd</td>
+        <td>04/10/2000</td>
+        <td>Displays the date in month/day/year format</td>
+    </tr>
+    <tr>
+        <td>new Date(2000, 03, 10)</td>
+        <td>MMM</td>
+        <td>Apr</td>
+        <td>Displays the abbreviated month name</td>
+    </tr>
+    <tr>
+        <td>new Date(2000, 03, 10)</td>
+        <td>hm</td>
+        <tdtd>
+        <td>Displays the time in hours and minutes</td>
+    </tr>
+    <tr>
+        <td>new Date(2000, 03, 10)</td>
+        <td>hms</td>
+        <td>12:00:00 AM</td>
+        <td>Displays the time in hours, minutes, and seconds</td>
+    </tr>
 </table>
 
 <!-- markdownlint-disable MD033 -->
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+Axis also supports custom label format using placeholder like `{value}°C`, in which the value represent the axis label e.g 20°C.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

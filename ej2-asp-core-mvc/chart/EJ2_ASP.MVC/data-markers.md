@@ -11,7 +11,7 @@ documentation: ug
 
 # Data Markers in ##Platform_Name## Chart Component
 
-Data markers are used to provide information about the data points in the series. You can add a shape to adorn each data point.
+Data markers are visual indicators placed at each data point on a series, helping to clearly identify and highlight individual values in your chart. Markers improve readability and accessibility, especially in line and area charts where data points may otherwise be unclear. Customize marker shape, color, size, and appearance to match your design requirements.
 
 <!-- markdownlint-disable MD036 -->
 
@@ -19,7 +19,7 @@ Data markers are used to provide information about the data points in the series
 
 <!-- markdownlint-disable MD036 -->
 
-Markers can be added to points by enabling the [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option of the marker property. By default, distinct markers will be enabled for each series in the chart.
+Enable markers for data points by setting the [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) option to `true` in the marker property. Each series receives distinct markers by default, improving visual differentiation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ Markers can be added to points by enabling the [`Visible`](https://help.syncfus
 
 ## Shape
 
-Markers can be assigned with different shapes such as Rectangle, Circle, Diamond etc using the [`Shape`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) property.
+Assign different shapes to markers such as Rectangle, Circle, Diamond, Triangle, and others using the [`Shape`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Marker) property. Shape selection helps distinguish between multiple series and improves visual clarity.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -79,7 +79,7 @@ N> To know more about the marker shape type refer the [`Shape`](https://help.syn
 
 ## Images
 
-Apart from the shapes, you can also add custom images to mark the data point using the [`ImageUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_ImageUrl) property.
+Use custom images as markers instead of predefined shapes by setting the [`ImageUrl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_ImageUrl) property. This allows branded or thematic markers that enhance visual appeal and user engagement.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -108,7 +108,7 @@ Apart from the shapes, you can also add custom images to mark the data point usi
 
 ## Customization
 
-Marker's color and border can be customized using `Fill` and `Border` properties.
+Customize marker appearance by modifying the `Fill` (background color) and `Border` properties. Combined with shape and image options, these customizations enable comprehensive marker styling to match your application design.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -137,7 +137,7 @@ Marker's color and border can be customized using `Fill` and `Border` properties
 
 ## Customizing specific point
 
-You can also customize the specific marker and label using [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event. The `PointRender` event allows you to change the shape, color and border for a point.
+Use the [`PointRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_PointRender) event to customize markers for individual data points. This event allows you to conditionally change shape, color, and border properties based on data values or other criteria.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -164,7 +164,7 @@ You can also customize the specific marker and label using [`PointRender`](https
 
 ## Fill marker with series color
 
-Marker can be filled with the series color by setting the [`IsFilled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_IsFilled) property to <b>true</b>.
+Fill markers with the series color by enabling the [`IsFilled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartMarkerSettings.html#Syncfusion_EJ2_Charts_ChartMarkerSettings_IsFilled) property. This creates a cohesive visual design where markers inherit the series color automatically.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

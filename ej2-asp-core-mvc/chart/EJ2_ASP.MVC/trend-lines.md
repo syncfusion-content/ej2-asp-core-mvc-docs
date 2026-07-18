@@ -13,15 +13,13 @@ documentation: ug
 
 # Trend Lines in ##Platform_Name## Chart Component
 
-Trendlines are used to show the direction and speed of price.
+Trendlines help identify patterns, direction, and overall trends in numerical data. They project the general movement of data values and are widely used in analytics, forecasting, and financial charts. Trendlines can be added to Cartesian series types such as Line, Column, Scatter, Area, Candle, and Hilo (excluding bar series). Multiple trendlines can be added to a single series based on the analysis needs.
 
-Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
-
-Chart supports 6 types of trendlines.
+Charts support six types of trendlines: **Linear**, **Exponential**, **Logarithmic**, **Polynomial**, **Power**, and **Moving Average**.
 
 ## Linear
 
-A linear trendline is a best fit straight line that is used with simpler data sets. To render a linear trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `Linear`.
+A linear trendline is a straight, best‑fit line used to describe data with a constant rate of increase or decrease. Set the trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `Linear`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -50,9 +48,9 @@ A linear trendline is a best fit straight line that is used with simpler data se
 
 ## Exponential
 
-An exponential trendline is a curved line that is most useful when data values rise or fall at increasingly higher rates. You cannot create an exponential trendline, if your data contains zero or negative values.
+An exponential trendline displays a curved pattern useful when data rises or falls at increasing rates. Exponential trendlines cannot be generated if the dataset includes zero or negative values.
 
-To render a exponential trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `Exponential`.
+Set the trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `Exponential`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,11 +79,9 @@ To render a exponential trendline, use trendline [`Type`](https://help.syncfusio
 
 ## Logarithmic
 
-A logarithmic trendline is a best-fit curved line that is most useful when the rate of change in the data increases or decreases quickly and then levels out.
+A logarithmic trendline is a best‑fit curved line suitable when the data increases or decreases quickly and then stabilizes. It supports both positive and negative values.
 
-A logarithmic trendline can use negative and/or positive values.
-
-To render a logarithmic trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `Logarithmic`.
+Set [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `Logarithmic`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -114,11 +110,9 @@ To render a logarithmic trendline, use trendline [`Type`](https://help.syncfusio
 
 ## Polynomial
 
-A polynomial trendline is a curved line that is used when data fluctuates.
+A polynomial trendline is useful when data fluctuates. It uses a curved line that can model more complex datasets.
 
-To render a polynomial trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `Polynomial`.
-
-`PolynomialOrder` used to define the polynomial value.
+Set [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `Polynomial`. Use [`PolynomialOrder`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_PolynomialOrder) to define the degree of the polynomial.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -147,9 +141,9 @@ To render a polynomial trendline, use trendline [`Type`](https://help.syncfusion
 
 ## Power
 
-A power trendline is a curved line that is best used with data sets that compare measurements that increase at a specific rate.
+A power trendline is ideal for datasets where measurements increase at a constant rate. It displays a curved line that best fits exponential growth or decay patterns.
 
-To render a power trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `Power`.
+Set [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `Power`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -178,11 +172,9 @@ To render a power trendline, use trendline [`Type`](https://help.syncfusion.com/
 
 ## Moving Average
 
-A moving average trendline smoothen out fluctuations in data to show a pattern or trend more clearly.
+A moving average trendline smooths fluctuations to reveal overall trends more clearly. The [`Period`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Period) property specifies the number of data points used to calculate each average.
 
-To render a moving average trendline, use trendline [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) as `MovingAverage`.
-
-`Period` property defines the period to find the moving average.
+Set [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html) to `MovingAverage`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -211,7 +203,7 @@ To render a moving average trendline, use trendline [`Type`](https://help.syncfu
 
 **Customization of Trendlines**
 
-The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Fill) and [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Width) properties are used to customize the appearance of the trendline.
+Customize trendline appearance using the [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Fill) property for color and the [`Width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Width) property for line thickness.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -240,16 +232,11 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts
 
 ## Forecasting
 
-Trendlines forecasting is the prediction of future/past situations.
-
-Forecasting can be classified into two types as follows
-
-* Forward Forecasting
-* Backward Forecasting
+Trendline forecasting extends the existing trendline to estimate future and past values.
 
 **Forward Forecasting**
 
-The value set for forwardForecast is used to determine the distance moving towards the future trend.
+Use the [`ForwardForecast`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_ForwardForecast) property to extend the trendline into the future.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -278,7 +265,7 @@ The value set for forwardForecast is used to determine the distance moving towar
 
 **Backward Forecasting**
 
-The value set for the backwardForecast is used to determine the past trends.
+Use the [`BackwardForecast`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_BackwardForecast) property to extend the trendline into past data points.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -306,7 +293,7 @@ The value set for the backwardForecast is used to determine the past trends.
 
 ## Show or hide a trendline
 
-You can show or hide the trendline by setting trendline `visible` property.
+Control visibility using the [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartTrendline.html#Syncfusion_EJ2_Charts_ChartTrendline_Visible) property of the trendline.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

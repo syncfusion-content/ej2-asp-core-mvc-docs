@@ -13,7 +13,7 @@ documentation: ug
 
 # Numeric Axis
 
-You can use numeric [`Axis`](https://ej2.syncfusion.com/aspnetcore/Chart/NumericAxis#/material) to represent numeric values of data in chart. By default, the `ValueType` of an axis is [`Double`](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-axis).
+The [numeric axis](https://ej2.syncfusion.com/aspnetcore/Chart/NumericAxis#/material) is used to represent numeric values in a chart. By default, the `ValueType` of an axis is set to [`Double`](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-axis), which is suitable for displaying continuous numerical data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ You can use numeric [`Axis`](https://ej2.syncfusion.com/aspnetcore/Chart/Numeric
 
 ## Range
 
-Range for an axis, will be calculated automatically based on the provided data, you can also customize the range of the axis using [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum) and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) property of the axis.
+The range of the axis is calculated automatically based on the provided data. You can also customize the visible range by using the [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Minimum), [`Maximum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Maximum), and [`Interval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Interval) properties of the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ Range for an axis, will be calculated automatically based on the provided data, 
 
 ## Range Padding
 
-Padding can be applied to the minimum and maximum extremes of the axis range by using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. Numeric axis supports following types of padding.
+Padding can be applied to the minimum and maximum values of the axis range by using the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property. The numeric axis supports the following padding options:
 
 * None
 * Round
@@ -81,7 +81,7 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 
 **Numeric - None**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `None`, minimum and maximum of an axis is based on the data.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `None`, the minimum and maximum values of the axis are derived directly from the data.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +110,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric - Round**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Round`, minimum and maximum will be rounded to the nearest possible value divisible by interval. For example, when the minimum is 3.5 and the interval is 1, then the minimum will be rounded to 3.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Round`, the minimum and maximum values are rounded to the nearest values divisible by the interval. For example, if the minimum value is 3.5 and the interval is 1, the minimum value is rounded to 3.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -139,7 +139,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric - Additional**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Additional`, interval of an axis will be padded to the minimum and maximum of the axis.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Additional`, one interval is added to both the minimum and maximum values of the axis range.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -168,7 +168,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric - Normal**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Normal`, padding is applied to the axis based on default range calculation.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Normal`, padding is applied to the axis based on the default range calculation.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -197,7 +197,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric - Auto**
 
-When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) is set to `Auto`,horizontal numeric axis takes None as padding calculation, while the vertical numeric axis takes Normal as padding calculation.
+When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_RangePadding) property is set to `Auto`, the horizontal numeric axis uses `None` as padding, while the vertical numeric axis uses `Normal` padding.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -228,7 +228,7 @@ When the [`RangePadding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 **Numeric Label Format**
 
-Numeric labels can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelFormat) property. Numeric labels supports all globalize format.
+Numeric axis labels can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelFormat) property. This property supports all Globalize numeric formats.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -255,70 +255,70 @@ Numeric labels can be formatted by using the [`LabelFormat`](https://help.syncf
 
 
 
-The following table describes the result of applying some commonly used label formats on numeric values.
+The following table shows examples of commonly used numeric label formats and their corresponding outputs.
 
 <!-- markdownlint-disable MD033 -->
 
 <table>
-<tr>
-<td><b>Label Value</b></td>
-<td><b>Label Format property value</b></td>
-<td><b>Result </b></td>
-<td><b>Description </b></td>
-</tr>
-<tr>
-<td>1000</td>
-<td>n1</td>
-<td>1000.0</td>
-<td>The Number is rounded to 1 decimal place</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>n2</td>
-<td>1000.00</td>
-<td>The Number is rounded to 2 decimal place</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>n3</td>
-<td>1000.000</td>
-<td>The Number is rounded to 3 decimal place</td>
-</tr>
-<tr>
-<td>0.01</td>
-<td>p1</td>
-<td>1.0%</td>
-<td>The Number is converted to percentage with 1 decimal place</td>
-</tr>
-<tr>
-<td>0.01</td>
-<td>p2</td>
-<td>1.00%</td>
-<td>The Number is converted to percentage with 2 decimal place</td>
-</tr>
-<tr>
-<td>0.01</td>
-<td>p3</td>
-<td>1.000%</td>
-<td>The Number is converted to percentage with 3 decimal place</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>c1</td>
-<td>$1000.0</td>
-<td>The Currency symbol is appended to number and number is rounded to 1 decimal place</td>
-</tr>
-<tr>
-<td>1000</td>
-<td>c2</td>
-<td>$1000.00</td>
-<td>The Currency symbol is appended to number and number is rounded to 2 decimal place</td>
-</tr>
+    <tr>
+        <td><b>Label Value</b></td>
+        <td><b>Label Format</b></td>
+        <td><b>Result</b></td>
+        <td><b>Description</b></td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>n1</td>
+        <td>1000.0</td>
+        <td>Rounded to 1 decimal place</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>n2</td>
+        <td>1000.00</td>
+        <td>Rounded to 2 decimal places</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>n3</td>
+        <td>1000.000</td>
+        <td>Rounded to 3 decimal places</td>
+    </tr>
+    <tr>
+        <td>0.01</td>
+        <td>p1</td>
+        <td>1.0%</td>
+        <td>Converted to percentage with 1 decimal place</td>
+    </tr>
+    <tr>
+        <td>0.01</td>
+        <td>p2</td>
+        <td>1.00%</td>
+        <td>Converted to percentage with 2 decimal places</td>
+    </tr>
+    <tr>
+        <td>0.01</td>
+        <td>p3</td>
+        <td>1.000%</td>
+        <td>Converted to percentage with 3 decimal places</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>c1</td>
+        <td>$1000.0</td>
+        <td>Currency format with 1 decimal place</td>
+    </tr>
+    <tr>
+        <td>1000</td>
+        <td>c2</td>
+        <td>$1000.00</td>
+        <td>Currency format with 2 decimal places</td>
+    </tr>
 </table>
 
 ## GroupingSeparator
 
-To separate groups of thousands, use [`UseGroupingSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html) property in chart.
+To separate groups of thousands in numeric labels, enable the [`UseGroupingSeparator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html) property in the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -347,7 +347,7 @@ To separate groups of thousands, use [`UseGroupingSeparator`](https://help.syncf
 
 ## Custom Label Format
 
-Axis also supports custom label format using placeholder like {value}°C, in which the value represent the axis label e.g 20°C.
+The numeric axis also supports custom label formats by using placeholders such as `{value}°C`, where `{value}` represents the numeric axis label. For example, the value `20` is displayed as `20°C`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

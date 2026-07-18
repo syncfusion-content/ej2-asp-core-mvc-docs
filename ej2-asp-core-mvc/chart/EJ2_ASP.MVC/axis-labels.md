@@ -13,9 +13,9 @@ documentation: ug
 
 ## Smart Axis Labels
 
-When the axis labels overlap with each other, you can use [`LabelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction) property in the axis, to place them smartly.
+When axis labels overlap due to limited space or dense data points, the [`LabelIntersectAction`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelIntersectAction) property can be used to control how the labels are rendered. This helps improve readability by automatically adjusting label visibility or orientation.
 
-When setting `LabelIntersectAction` as `Hide`
+When setting `LabelIntersectAction` as `Hide`, overlapping labels are hidden to avoid visual clutter.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ When setting `LabelIntersectAction` as `Hide`
 
 
 
-When setting `LabelIntersectAction` as `Rotate45`
+When setting `labelIntersectAction` as `Rotate45`, the labels are rotated by 45 degrees to reduce overlap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -69,7 +69,7 @@ When setting `LabelIntersectAction` as `Rotate45`
 
 
 
-When setting `LabelIntersectAction` as `Rotate90`
+When setting `labelIntersectAction` as `Rotate90`, the labels are rotated vertically to maximize space utilization.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -98,7 +98,7 @@ When setting `LabelIntersectAction` as `Rotate90`
 
 ## Axis Labels Positioning
 
-By default, the axis labels can be placed at `Outside` the axis line and this also can be placed at `Inside` the axis line using the `LabelPosition` property.
+By default, axis labels are positioned `Outside` the axis line. Labels can also be placed `Inside` the axis line using the `LabelPosition` property, which is useful when optimizing space within the chart area.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,17 +127,17 @@ By default, the axis labels can be placed at `Outside` the axis line and this al
 
 ## Multilevel Labels
 
-Any number of levels of labels can be added to an axis using the `MultiLevelLabels` property. This property can be configured using the following properties:
+Multiple levels of labels can be displayed on an axis using the `MultiLevelLabels` property. This feature is useful for grouping related categories and improving data interpretation. The following configuration options are available:
 
-• Categories
-• Overflow
-• Alignment
-• Text style
+• Categories  
+• Overflow  
+• Alignment  
+• Text style  
 • Border
 
 ### Categories
 
-Using the categories property, you can configure the `Start`, `End`, `Text`, and `MaximumTextWidth` of multilevel labels.
+Using the categories property, the `Start`, `End`, `Text`, and `MaximumTextWidth` values of multilevel labels can be configured to define the label range and content.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -166,7 +166,7 @@ Using the categories property, you can configure the `Start`, `End`, `Text`, and
 
 ### Overflow
 
-Using the `Overflow` property, you can `Trim` or `Wrap` the multilevel labels.
+Using the `Overflow` property, multilevel labels can be configured to either `Trim` or `Wrap` when the text exceeds the available space.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -195,7 +195,7 @@ Using the `Overflow` property, you can `Trim` or `Wrap` the multilevel labels.
 
 ### Alignment
 
-The `Alignment` property provides option to position the multilevel labels at `Far`, `Center`, or `Near`.
+The `Alignment` property provides options to position multilevel labels at `Far`, `Center`, or `Near` relative to the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -224,7 +224,7 @@ The `Alignment` property provides option to position the multilevel labels at `F
 
 ### Text customization
 
-The `TextStyle` property of multilevel labels provides options to customize the `Size`, `Color`, `FontFamily`, `FontWeight`, `FontStyle`, `Opacity`, `TextAlignment` and `TextOverflow`.
+The `TextStyle` property of multilevel labels provides options to customize the `Size`, `Color`, `FontFamily`, `FontWeight`, `FontStyle`, `Opacity`, `TextAlignment`, and `TextOverflow`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -253,7 +253,7 @@ The `TextStyle` property of multilevel labels provides options to customize the 
 
 ### Border customization
 
-Using the `Border` property, you can customize the `Width`, `Color`, and `Type`. The `Type` of border are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder` and `CurlyBrace`.
+Using the `Border` property, the `Width`, `Color`, and `Type` of the multilevel label border can be customized. The supported border types are `Rectangle`, `Brace`, `WithoutBorder`, `WithoutTopBorder`, `WithoutTopandBottomBorder`, and `CurlyBrace`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -282,7 +282,7 @@ Using the `Border` property, you can customize the `Width`, `Color`, and `Type`.
 
 ## Edge Label Placement
 
-Labels with long text at the edges of an axis may appear partially in the chart. To avoid this, use [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in axis, which moves the label inside the chart area for better appearance or hides it. By default, the [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property is set to **Shift** to ensure that labels are shifted inside the chart area, avoiding any overlap or coincidence.
+Labels with long text at the edges of an axis may appear partially outside the chart area. To avoid this, use the [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property in the axis. This property moves the label inside the chart area or hides it for better appearance. By default, the [`EdgeLabelPlacement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_EdgeLabelPlacement) property is set to **Shift**, ensuring that labels are repositioned inside the chart area to prevent overlap.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -311,7 +311,7 @@ Labels with long text at the edges of an axis may appear partially in the chart.
 
 ## Labels Customization
 
-The [`LabelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelStyle) property of an axis provides options to customize the `Color`, `Font-family`, `Font-size` and `Font-weight` of the axis labels.
+The [`LabelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_LabelStyle) property of an axis provides options to customize the `Color`, `Font-family`, `Font-size`, and `Font-weight` of axis labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -340,7 +340,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 ## Customizing Specific Point
 
-You can customize the specific text in the axis labels using `AxisLabelRender` event.
+Specific axis label text can be customized using the `AxisLabelRender` event, which allows conditional formatting or dynamic text updates during label rendering.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -398,7 +398,7 @@ You can trim the label using [`EnableTrim`](https://help.syncfusion.com/cr/aspne
 
 ## Line break support
 
-Line break feature used to customize the long axis label text into multiple lines by using `<br>` tag. Refer the below example in that dataSource x value contains long text, it breaks into two lines by using `<br>` tag.
+The line break feature is used to display long axis label text across multiple lines. In the following example, the `x` value in the data source contains long text, which is split into two lines using the `<br>` tag.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -452,7 +452,7 @@ Line break feature used to customize the long axis label text into multiple line
 
 ## Axis label template
 
-The axis label template allows you to customize axis labels by formatting them with HTML content, applying conditional styling, and including dynamic elements such as icons, images or additional data. This customization is enabled by setting the template content in the `LabelTemplate` property of the [ChartAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html).
+The axis label template allows axis labels to be customized using HTML content. This enables conditional styling and the inclusion of dynamic elements such as icons, images, or additional contextual data. This customization is enabled by setting the template content in the `LabelTemplate` property of the [ChartAxis](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
