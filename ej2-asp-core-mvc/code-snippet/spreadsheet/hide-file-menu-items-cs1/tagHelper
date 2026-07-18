@@ -1,0 +1,78 @@
+<div>
+    <ejs-spreadsheet id="spreadsheet" openUrl="Open" saveUrl="Save" locale="fr" created="created" fileMenuBeforeOpen="fileMenuBeforeOpen">
+        <e-spreadsheet-sheets>
+            <e-spreadsheet-sheet>
+                <e-spreadsheet-ranges>
+                    <e-spreadsheet-range dataSource="ViewBag.DefaultData"></e-spreadsheet-range>
+                </e-spreadsheet-ranges>
+                <e-spreadsheet-columns>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="180"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="100"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                    <e-spreadsheet-column width="120"></e-spreadsheet-column>
+                </e-spreadsheet-columns>
+            </e-spreadsheet-sheet>
+        </e-spreadsheet-sheets>
+    </ejs-spreadsheet>
+</div>
+
+<script>
+    function loadCultureFiles(name) {
+        var ajax = new ej.base.Ajax(location.origin + '/../locale/'+ name+ '.json', 'GET', false);   //load the de json culture file
+        ajax.send().then((e) => {
+            var loader = JSON.parse(e);
+            ej.base.L10n.load(
+                loader
+            );
+            //Set the culture for the ASP.NET Core controls
+            ej.base.setCulture(name);
+        });
+        ej.base.setCurrencyCode('EUR');
+        var files = ['ca-gregorian.json', 'currencies.json', 'numbers.json', 'timeZoneNames.json', 'numberingSystems.json'];
+        var loader = ej.base.loadCldr;
+        var loadCulture = function (prop) {
+            var val, ajax;
+            if (files[prop] === 'numberingSystems.json') {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/supplemental/' + files[prop], 'GET', false);
+            } else {
+                ajax = new ej.base.Ajax(location.origin + '/../cldr-data/main/' + name + '/' + files[prop], 'GET', false);
+            }
+            ajax.onSuccess = function (value) {
+                val = value;
+            };
+            ajax.send();
+            loader(JSON.parse(val));
+        };
+        for (var prop = 0; prop < files.length; prop++) {
+            loadCulture(prop);
+        }
+    }
+    loadCultureFiles('fr');
+
+    function created() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        spreadsheet.addFileMenuItems(
+            [{ text: 'Delete File', iconCss: 'e-circle-close e-icons' }],
+            `${spreadsheet.element.id}_Open`,
+            true,
+            true
+        );
+    }
+
+    function fileMenuBeforeOpen() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        // Hide the file menu items by passing the id as items argument.
+        spreadsheet.hideFileMenuItems([`${spreadsheet.element.id}_Open`], true, true);
+        spreadsheet.hideFileMenuItems(
+            [`${spreadsheet.element.id}_Save_As`],
+            true,
+            true
+        );
+        spreadsheet.hideFileMenuItems([`${spreadsheet.element.id}_New`], true, true);
+        spreadsheet.hideFileMenuItems([`${spreadsheet.element.id}_Print`], true, true);
+        //Also, you can hide the file menu items by passing the localized content as items argument like below.
+        //spreadsheet.hideFileMenuItems(['Enregistrer sous', 'Ouvrir', 'Nouveau']);
+    }
+
+</script>
