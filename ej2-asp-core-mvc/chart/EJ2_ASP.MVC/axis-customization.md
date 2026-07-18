@@ -13,7 +13,7 @@ documentation: ug
 
 ## Axis Crossing
 
-An axis can be positioned in the chart area using `CrossesAt` and `CrossesInAxis` properties. The `CrossesAt` property specifies the values (datetime, numeric, or logarithmic) at which the axis line has to be intersected with the vertical axis or vice-versa, and the `CrossesInAxis` property specifies the axis name with which the axis line has to be crossed.
+An axis can be positioned dynamically within the chart area using the `CrossesAt` and `CrossesInAxis` properties. The `CrossesAt` property specifies the value (date-time, numeric, or logarithmic) at which the axis line intersects another axis, while the `CrossesInAxis` property defines the name of the axis with which the current axis should intersect. This customization is useful for emphasizing specific reference points or thresholds in the chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -42,7 +42,7 @@ An axis can be positioned in the chart area using `CrossesAt` and `CrossesInAxis
 
 ## Title
 
-You can add a title to the axis using [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Title) property to provide quick information to the user about the data plotted in the axis.
+A title can be added to an axis using the [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_Title) property. Axis titles provide context and help users quickly understand the data represented along the axis.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -70,7 +70,7 @@ You can add a title to the axis using [`Title`](https://help.syncfusion.com/cr/a
 
 ## Title Rotation
 
-By using the [`titleRotation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_TitleRotation) property, you can rotate the axis title from 0 to 360 degree.
+The orientation of the axis title can be adjusted using the [`TitleRotation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_TitleRotation) property. This property supports rotation values from 0 to 360 degrees, allowing better alignment based on the chart layout and available space.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -98,7 +98,7 @@ By using the [`titleRotation`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sync
 
 ## Tick Lines Customization
 
-You can customize the  `Width`, `Color` and `Size` of the minor and major tick lines, using [`MajorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorTickLines) and [`MinorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorTickLines) properties in the axis.
+The appearance of both major and minor tick lines can be customized using the [`MajorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorTickLines) and [`MinorTickLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorTickLines) properties. These properties allow customization of the `Width`, `Color`, and `Size` of tick lines to enhance chart readability.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,7 @@ You can customize the  `Width`, `Color` and `Size` of the minor and major 
 
 ## Grid Lines Customization
 
-You can customize the `Width`, `Color` and `DashArray` of the minor and major grid lines, using [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorGridLines) and [`MinorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorGridLines) properties in the axis.
+Grid lines can be styled using the [`MajorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MajorGridLines) and [`MinorGridLines`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_MinorGridLines) properties. These options support customization of `Width`, `Color`, and `DashArray`, helping users distinguish data points and scales more effectively.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -156,7 +156,7 @@ You can customize the `Width`, `Color` and `DashArray` of the minor and maj
 
 ## Multiple Axis
 
-In addition to primary X and Y axis, we can add n number of axis to the chart. Series can be associated with this axis, by mapping with axis's unique name.
+In addition to the primary X and Y axes, multiple additional axes can be added to a chart. Each series can be associated with a specific axis by mapping it to the axis using a unique axis name. This is useful for visualizing datasets with different units or scales within the same chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -187,7 +187,7 @@ In addition to primary X and Y axis, we can add n number of axis to the chart. S
 
 <!-- markdownlint-disable MD033 -->
 
-When an axis is inversed, highest value of the axis comes closer to origin and vice versa. To place an axis in inversed manner set this property [`IsInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_IsInversed) to true.
+When an axis is inversed, the highest value is displayed closer to the origin, and the lowest value appears farther away. This behavior can be enabled by setting the [`IsInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_IsInversed) property to `true`. Inversed axes are commonly used in scenarios such as ranking or inverted value representations.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -217,7 +217,7 @@ When an axis is inversed, highest value of the axis comes closer to origin and v
 ## Opposed Position
 
 <!-- markdownlint-disable MD012 -->
-To place an axis opposite from its original position, set [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_OpposedPosition) property of the axis to true.
+An axis can be placed on the opposite side of its default position by setting the [`OpposedPosition`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_OpposedPosition) property to `true`. This option is useful when displaying multiple axes or when optimizing space usage in complex chart layouts.
 <!-- markdownlint-disable MD012 -->
 
 {% if page.publishingplatform == "aspnet-core" %}

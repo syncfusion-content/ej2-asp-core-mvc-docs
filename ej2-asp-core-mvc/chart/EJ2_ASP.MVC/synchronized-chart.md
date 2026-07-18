@@ -11,14 +11,16 @@ documentation: ug
 
 # Synchronized charts in ##Platform_Name## Chart Component
 
+Synchronized charts allow multiple chart instances to share common interactions so that actions performed on one chart are reflected across the others. This approach is useful for comparing related datasets and analyzing trends consistently across multiple visualizations.
+
 ## Tooltip synchronization
 
-The tooltip can be synchronized across multiple charts using the `ShowTooltip` and `HideTooltip` methods. When we hover over a data point in one chart, we call the `ShowTooltip` method for the other charts to display related information in other connected charts simultaneously.
+The tooltip can be synchronized across multiple charts by using the `ShowTooltip` and `HideTooltip` methods. When the user hovers over a data point in one chart, the `ShowTooltip` method can be invoked for the other charts to display the corresponding tooltip information simultaneously.
 
-In the `ShowTooltip` method, specify the following parameters programmatically to enable tooltip for a particular chart:
+In the `ShowTooltip` method, specify the following parameters programmatically to enable the tooltip for a specific chart:
 
-* `X` - Data point x-value or x-coordinate value.
-* `Y` - Data point y-value or y-coordinate value.
+* `X` – The x-value of the data point or the x-coordinate.
+* `Y` – The y-value of the data point or the y-coordinate.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -47,12 +49,12 @@ In the `ShowTooltip` method, specify the following parameters programmatically t
 
 ## Crosshair synchronization
 
-The crosshair can be synchronized across multiple charts using the `ShowCrosshair` and `HideCrosshair` methods. When we hover over one chart, we call the `ShowCrosshair` method for the other charts to align with data points in other connected charts, simplifying data comparison and analysis.
+The crosshair can be synchronized across multiple charts by using the `ShowCrosshair` and `HideCrosshair` methods. When the user moves the pointer over one chart, calling the `ShowCrosshair` method on the other charts aligns the crosshair position across all synchronized charts, making data comparison easier.
 
-In the `ShowCrosshair` method, specify the following parameters programmatically to enable crosshair for a particular chart:
+In the `ShowCrosshair` method, specify the following parameters to render the crosshair for a particular chart:
 
-* `X` - Specifies the x-value of the point or x-coordinate.
-* `Y` - Specifies the y-value of the point or y-coordinate.
+* `X` – Specifies the x-value of the data point or the x-coordinate.
+* `Y` – Specifies the y-value of the data point or the y-coordinate.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -81,7 +83,7 @@ In the `ShowCrosshair` method, specify the following parameters programmatically
 
 ## Zooming synchronization
 
-You can maintain constant zoom levels across multiple charts using the [`ZoomComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_ZoomComplete) event. In the `ZoomComplete` event, obtain the [`ZoomFactor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ZoomFactor) and [`ZoomPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ZoomPosition) values of the particular chart, and then apply those values to the other charts.
+Zoom levels can be synchronized across multiple charts by using the [`ZoomComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_ZoomComplete) event. In the `ZoomComplete` event, retrieve the [`ZoomFactor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ZoomFactor) and [`ZoomPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ZoomPosition) values from the zoomed chart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -110,7 +112,7 @@ You can maintain constant zoom levels across multiple charts using the [`ZoomCom
 
 ## Selection synchronization
 
-You can select the data across multiple charts using the [`SelectionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SelectionComplete) event. In the `SelectionComplete` event, obtain the selected values of the particular chart, and then apply those values to the other charts.
+Selection can be synchronized across multiple charts by using the [`SelectionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_SelectionComplete) event. In the `SelectionComplete` event, retrieve the selected data values or region from the active chart and apply the same selection state to the other charts.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
