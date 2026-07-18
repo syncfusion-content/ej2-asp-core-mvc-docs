@@ -1,0 +1,14 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).EnableVirtualization().Height("300").Columns(col =>
+{
+    col.Field("TaskID").HeaderText("Task ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("Engineer").HeaderText("Engineer").Width("100").Add();
+    col.Field("Designation").HeaderText("Designation").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Estimation").HeaderText("Estimation").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Status").HeaderText("Status").Width("100").Add();
+}).PageSettings(page => { page.PageSize(50); }).Load("load").Render();
+
+<script>
+    function load(args) {
+        args.enableSeamlessScrolling = true;
+    }
+</script>

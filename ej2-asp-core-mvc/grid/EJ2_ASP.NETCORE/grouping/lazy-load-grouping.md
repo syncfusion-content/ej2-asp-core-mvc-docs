@@ -155,6 +155,102 @@ The following example demonstrates how to enable the lazy load grouping with vir
 
 > When using the `enableVirtualization` feature, it is necessary to define the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property.
 
+## Checkbox selection with lazy load grouping
+
+Checkbox selection with lazy load grouping in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Grid enables row selection using checkboxes while grouped data is loaded on demand, enabling efficient bulk operations over large grouped datasets.
+
+The [selectionSettings.persistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection) property must be set to `true` to enable this feature. Additionally, one of the columns must be defined as a primary key using the [columns.isPrimaryKey](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsPrimaryKey) property so that selection is persisted correctly across lazy-loaded groups.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/grouping/lazy-load-group-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="lazy-load-group-selection.cs" %}
+{% include code-snippet/grid/grouping/lazy-load-group-selection/lazy-load-group-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+### Checkbox selection with lazy load grouping using URL adaptor
+
+The `UrlAdaptor` integrated with lazy load grouping and checkbox selection requires the server-side to return the `lazyLoadRecordsCount` property in the response. This value represents the total records count of the lazy-loaded group, which the Grid uses internally to correctly manage and persist checkbox selections across all records in each group, including records that have not yet been loaded.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+<ejs-grid id="Grid" allowPaging="true" allowSorting="true" allowFiltering="true" allowGrouping="true" toolbar="@(new List<string>() {"Search"})" height="315">
+    <e-data-manager url="https://localhost:xxxx/api/Grid" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-groupsettings enableLazyLoading="true" columns="@(new string[] { "CustomerID" })"></e-grid-groupsettings>
+    <e-grid-selectionsettings persistSelection="true"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column type="checkbox" width="50"></e-grid-column>
+        <e-grid-column field="OrderID" headerText="Order ID" width="120" textAlign="Right" isPrimaryKey="true" type="number"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="140" type="string"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="ShipCity" width="140"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+{% endhighlight %}
+
+{% highlight cs tabtitle="GridController.cs" %}
+
+public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
+{
+    IEnumerable groupedData = null;
+    IEnumerable<Transaction> DataSource = transactions;
+    DataOperations operation = new DataOperations();
+
+    if (dm.Search != null && dm.Search.Count > 0)
+    {
+        DataSource = operation.PerformSearching(DataSource, dm.Search);
+    }
+    if (dm.Where != null && dm.Where.Count > 0)
+    {
+        DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+    }
+    if (dm.IsLazyLoad == false && dm.Sorted != null && dm.Sorted.Count > 0)
+    {
+        DataSource = operation.PerformSorting(DataSource, dm.Sorted);
+    }
+
+    int totalCount = DataSource.Cast<Transaction>().Count();
+
+    if (dm.IsLazyLoad == false && dm.Skip != 0)
+    {
+        DataSource = operation.PerformSkip(DataSource, dm.Skip);
+    }
+    if (dm.IsLazyLoad == false && dm.Take != 0)
+    {
+        DataSource = operation.PerformTake(DataSource, dm.Take);
+    }
+
+    if (dm.IsLazyLoad)
+    {
+        int count = 0;
+        groupedData = operation.PerformGrouping<Transaction>(DataSource, dm);
+        groupedData = operation.PerformSorting(groupedData, dm);
+
+        if (dm.OnDemandGroupInfo != null && dm.Group.Count() == dm.OnDemandGroupInfo.Level)
+        { 
+            count = groupedData.Cast<Transaction>().Count();
+        }
+        else
+        {
+            count = groupedData.Cast<Group>().Count();
+        }
+
+        groupedData = operation.PerformSkip(groupedData, dm.OnDemandGroupInfo?.Skip ?? dm.Skip);
+        groupedData = operation.PerformTake(groupedData, dm.OnDemandGroupInfo?.Take ?? dm.Take);
+
+        return dm.RequiresCounts ? Json(new { result = groupedData ?? DataSource, count = count, lazyLoadRecordsCount = totalCount }) : Json(DataSource);
+    }
+
+    return dm.RequiresCounts ? Json(new { result = groupedData ?? DataSource, count = totalCount }) : Json(DataSource);
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
