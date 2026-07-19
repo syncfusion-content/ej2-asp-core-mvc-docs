@@ -29,7 +29,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight C# tabtitle="Terminal" %}
+{% highlight razor tabtitle="Terminal" %}
 
 dotnet new webapp -o RazorPagesMovie
 code -r RazorPagesMovie
@@ -57,7 +57,7 @@ Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusi
 Alternatively, you can install the same package using the Package Manager Console with the following commands.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight razor tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
@@ -71,7 +71,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 Open the terminal and run the following commands.
 
 {% tabs %}
-{% highlight C# tabtitle="Terminal" %}
+{% highlight razor tabtitle="Terminal" %}
 
 dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
 
