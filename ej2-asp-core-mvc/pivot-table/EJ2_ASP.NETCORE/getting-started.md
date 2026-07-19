@@ -73,7 +73,7 @@ Open the terminal and run the following commands.
 {% tabs %}
 {% highlight razor tabtitle="Terminal" %}
 
-dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
