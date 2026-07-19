@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="customKey" keyConfig="@ViewBag.keyConfig" value="@ViewBag.value">
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

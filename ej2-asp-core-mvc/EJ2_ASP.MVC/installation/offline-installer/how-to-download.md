@@ -8,79 +8,93 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion® ASP.NET MVC EJ2 offline installer
+# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 Offline Installer
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/aspnet-mvc-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 Installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/aspnet-mvc-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. This guide covers the following options:
 
 * Trial Installer
 * Licensed Installer
 
+**Prerequisites**
+
+* A registered Syncfusion<sup style="font-size:70%">&reg;</sup> account. To create one, see the [Syncfusion downloads page](https://www.syncfusion.com/downloads).
+* A Windows machine with administrator privileges (required when running the installer).
+* A valid Syncfusion<sup style="font-size:70%">&reg;</sup> account, or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key for the target version.
+
 ## Download the Trial Version
 
-Our 30-day trial can be downloaded in two ways.
+The 30-day trial can be downloaded in two ways:
 
 * Download Free Trial Setup
 * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
 ### Download Free Trial Setup
 
-1. You can evaluate our 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and select the ASP . NET MVC platform.
+1. Evaluate the 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and selecting the ASP.NET MVC platform.
 
-2. After completing the required form or logging in with your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account, you can download the ASP . NET MVC EJ2 trial installer from the confirmation page. (See the screenshot below)
+2. After completing the required form or logging in with your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account, download the ASP.NET MVC EJ2 trial installer from the confirmation page (see the screenshot below).
 
-    ![Trial Confirmation](images/trial-confirmation.PNG)
+    ![Trial confirmation page](images/trial-confirmation.PNG)
 
 3. With a trial license, only the latest version's trial installer can be downloaded.
 
-4. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credential. More information on generating an unlock key can be found in [this](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) article.
+4. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credentials. For more information on generating an unlock key, see [this article](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products).
 
-5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. (See the screenshot below)
-
+5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (see the screenshot below).
 
     ![Start Trial download](images/start-trial-download-installer.png)
 
-6. Click the More Download Options (element 2 in above screenshot) button to get the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 Offline trial installer which is available in EXE and ZIP format.
+6. Click **More Download Options** (element 2 in the above screenshot) to get the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 offline trial installer, which is available in `.EXE` and `.ZIP` format.
 
     ![Trial Download Offline Installer](images/start-trial-download-offline-installer.PNG)
 
-### Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
+### Start Trials if Using Components Through NuGet.org
 
-You should initiate an evaluation if you have already obtained our components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
+If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion), initiate an evaluation as follows:
 
-1. You can start your 30-day free trial for ASP . NET MVC - EJ2 from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page from your account.
+1. Start your 30-day free trial for ASP.NET MVC - EJ2 from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page in your account.
 
-    ![Trial Download](images/start-trial-download.PNG)
+    ![Start trial page](images/start-trial-download.PNG)
 
-2. To access this page, you must sign up/ log in with your Syncfusion<sup style="font-size:70%">&reg;</sup> account.
+2. To access this page, you must sign up or log in with your Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 
-3. Begin your trial by selecting the ASP . NET MVC - EJ2 product.
+3. Begin your trial by selecting the ASP.NET MVC - EJ2 product.
 
-   N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   > **Note:** If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) here at any time before the trial period expires. (See the screenshot below)
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) at any time before the trial period expires (see the screenshot below).
 
-    ![Start Trial Download](images/start-trial-download-installer.png)
+    ![Start trial - download installer](images/start-trial-download-installer.png)
 
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
 
 ## Download the License Version
 
-1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products will be available in the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
+1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products are available on the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 
 2. You can view all the licenses (both active and expired) associated with your account.
 
-3. Click the Download (element 1 in the screenshot below) button to download the respective product's installer.
+3. Click **Download** (element 1 in the screenshot below) to download the respective product's installer.
 
-4. The most recent version of the installer will be downloaded from this page.
+4. The most recent version of the installer is downloaded from this page.
 
-5. To download older version installers, go to [Downloads Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
+5. To download older version installers, go to [Downloads - Older Versions](https://www.syncfusion.com/account/downloads/studio) (element 2 in the screenshot below).
 
-6. You can download other platform / add-on installers by going to More Downloads Options (element 3 in the screenshot below).
+6. Download other platform / add-on installers by selecting **More Download Options** (element 3 in the screenshot below).
 
     ![License Download Installer](images/license-download.png)
 
-7. For Windows OS, EXE and Zip formats are available for download. They are both Offline Installers.
+7. For Windows OS, both `.EXE` and `.ZIP` formats are available. These are both offline installers.
 
     ![Trial Download Offline Installer](images/start-trial-download-offline-installer.PNG)
 
-You can also refer to the [Offline Installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/offline-installer/how-to-install) links for step-by-step installation guidelines.
+For step-by-step installation guidelines, refer to the [Offline Installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/offline-installer/how-to-install) documentation.
+
+## Troubleshooting
+
+| Issue | Possible Cause | Suggested Fix |
+| --- | --- | --- |
+| The offline installer is not listed under **Downloads**. | The signed-in account does not own a license, or the product filter is set to a different platform. | Confirm the account owns an ASP.NET MVC license, then filter the list to the ASP.NET MVC / Offline platform. |
+| Installer fails with "Another installation is in progress." | Another MSI installation is currently running. | End the running `msiexec.exe` process in Task Manager, or wait for the other install to finish. See [Common Installation Errors](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors). |
+| "Controlled folder access seems to be enabled" alert. | Windows Controlled folder access is blocking the install/samples location. | See the [Unable to install due to controlled folder access](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors#unable-to-install-due-to-controlled-folder-access) section. |
+| License warning appears after install. | The unlock key was not applied, or the trial expired. | Re-run the installer and sign in with the licensed account. See [Common Installation Errors](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/common-installation-errors). |
