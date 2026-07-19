@@ -15,6 +15,16 @@ This section briefly explains about how to include [ASP.NET MVC Kanban](https://
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
+## Overview
+
+The Kanban component is composed of:
+- **Cards**: tasks displayed on the board; mapped from a `DataSource` via `CardSettings`.
+- **Columns**: workflow stages; defined using `KeyField`.
+- **Swimlanes**: optional grouping of cards; configured with `SwimlaneSettings`.
+
+> The `KeyField` property maps each column to a specific field in the data source. Each column displays cards whose field value matches its `KeyField`.
+> The `CardSettings` property defines how each card is displayed, including which fields are used for the header and content.
+
 ## Prerequisites
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
@@ -67,8 +77,6 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
-
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
 Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
@@ -89,19 +97,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control in `~/Views/Home/Index.cshtml` page.
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/default/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control will be rendered in the default web browser.
-
-![ASP.NET MVC Kanban Control](images/default.png)
-
-## Populating cards
-
-To populate the empty Kanban with cards, define the list or remote data using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_DataSource) property. To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+To define `DataSource`, the mandatory fields in the list should be relevant to [KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.Kanban.html#Syncfusion_EJ2_Kanban_Kanban_KeyField). In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -168,22 +164,24 @@ public class KanbanDataModels
 {% endhighlight %}
 {% endtabs %}
 
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Kanban control will be rendered in the default web browser.
+
+## Output
+
+The Kanban board displays cards based on the kanbanData array. In this example, the board renders:
+
+- A set of workflow columns for `To Do`, `InProgress`, `Testing`, and `Done`.
+- Cards mapped to each column by the `Status` field.
+- Card headers and content using `Id` and `Summary` via `cardSettings`.
+
 ![ASP.NET MVC Kanban with Cards](images/populating-cards.png)
 
-## Enable swimlane
-
-`Swimlane` can be enabled by mapping the tags [SwimlaneSettings.KeyField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Kanban.KanbanSwimlaneSettings.html#Syncfusion_EJ2_Kanban_KanbanSwimlaneSettings_KeyField) to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/razor %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET MVC Kanban with Swimlane](images/enable-swimlane.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
+* [Kanban columns](./columns.md)
+* [Kanban data binding](./data-binding.md)
+* [Kanban dialog](./dialog.md)
 * [Real time example using Kanban](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)

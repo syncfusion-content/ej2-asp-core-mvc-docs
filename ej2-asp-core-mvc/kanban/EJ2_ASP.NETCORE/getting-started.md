@@ -15,6 +15,16 @@ This section briefly explains about how to include [ASP.NET Core Kanban](https:/
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
+## Overview
+
+The Kanban component is composed of:
+- **Cards**: tasks displayed on the board; mapped from a `dataSource` via `e-kanban-cardsettings`.
+- **Columns**: workflow stages; defined using `keyField`.
+- **Swimlanes**: optional grouping of cards; configured with `e-kanban-swimlanesettings`.
+
+> The `keyField` property maps each column to a specific field in the data source. Each column displays cards whose field value matches its `keyField`.
+> The `e-kanban-cardsettings` property defines how each card is displayed, including which fields are used for the header and content.
+
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
@@ -68,8 +78,6 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
-
 N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
@@ -91,50 +99,26 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 ## Add ASP.NET Core Kanban control
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban tag helper in `~/Pages/Index.cshtml` page.
+To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/default/tagHelper %}
+{% include code-snippet/kanban/getting-started/populating-cards/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Kanban control will be rendered in the default web browser.
 
-![ASP.NET Core Kanban Control](images/default.PNG)
+## Output
 
-## Populating cards
+The Kanban board displays cards based on the kanbanData array. In this example, the board renders:
 
-To populate the empty Kanban with cards, define the list or remote data using the `dataSource` property. To define `dataSource`, the mandatory fields in the list should be relevant to `keyField`. In the following example, you can see the cards defined with default fields such as ID, Summary, and Status.
+- A set of workflow columns for `To Do`, `InProgress`, `Testing`, and `Done`.
+- Cards mapped to each column by the `Status` field.
+- Card headers and content using `Id` and `Summary` via `cardSettings`.
 
 ![kanban](./images/populating-cards.PNG)
 
-## Enable swimlane
-
-`Swimlane` can be enabled by mapping the tags `swimlaneSettings.keyField` to appropriate column name in dataSource. This enables the grouping of the cards based on the mapped column values.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/kanban/getting-started/enable-swimlane/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class KanbanDataModels
-{
-    public string Id { get; set; }
-    public string Title { get; set; }
-    public string Status { get; set; }
-    public string Summary { get; set; }
-    public string Type { get; set; }
-    public string Priority { get; set; }
-    public string Tags { get; set; }
-    public Double Estimate { get; set; }
-    public string Assignee { get; set; }
-    public int RankId { get; set; }
-    public string Color { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Kanban with Swimlane](./images/enable-swimlane.PNG)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Kanban/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
@@ -142,3 +126,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Kanban columns](./columns.md)
+* [Kanban data binding](./data-binding.md)
+* [Kanban dialog](./dialog.md)
