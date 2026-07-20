@@ -87,7 +87,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control in `~/Views/Home/Index.cshtml` page.
 
-Update the `HomeController.cs` file with the following code. Create a `Content/Files` folder to store the files accessed by the File Manager.
+Update a `HomeController.cs` file with the following code. Create a `Content/Files` folder to store the files for the File Manager access. Make sure `Microsoft.AspNet.Mvc` is updated to the latest version.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
