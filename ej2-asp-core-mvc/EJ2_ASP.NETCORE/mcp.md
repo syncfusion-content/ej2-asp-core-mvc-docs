@@ -150,7 +150,7 @@ You can install the Syncfusion ASP.NET Core MCP server as a local tool without a
     dotnet tool install Syncfusion.AspNetCore.MCP
     ````
 
-2. In your MCP client config (`.vscode/mcp.json`, `.codestudio/mcp.json`, `.cursor/mcp.json`, or the JetBrains MCP settings), replace the server entry with:
+2. In your MCP client config (for example, `.vscode/mcp.json`), replace the server entry with:
 
     ````json
     {
