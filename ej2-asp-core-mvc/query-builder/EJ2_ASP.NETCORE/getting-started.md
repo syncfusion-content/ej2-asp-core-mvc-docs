@@ -14,7 +14,7 @@ This section briefly explains how to include the [ASP.NET Core Query Builder](ht
 
 ## Create an ASP.NET Core Web App with Razor pages
 
-Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
 ## Install the required ASP.NET Core packages
 
@@ -80,7 +80,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET Core Query Builder control
 
-Add the [ASP.NET Query Builder](https://www.syncfusion.com/aspnet-core-ui-controls/ai-assistview) control in the **~/Pages/Index.cshtml** file.
+Add the [ASP.NET Core Query Builder](https://www.syncfusion.com/aspnet-core-ui-controls/ai-assistview) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
