@@ -31,7 +31,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![Web Installer Setup](images/Webinstaller-Installation-1.png)
 
-    > **Note:** The installer wizard extracts the `syncfusionessentialaspnetcore-js2webinstaller_<version>.exe` dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the `syncfusionessentialaspnetcore-js2webinstaller_<version>.exe` dialog, which displays the package's unzip operation.
 
 2. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Web Installer's welcome wizard is displayed. Click **Next**.
 
@@ -49,7 +49,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![Web Installer Installed Tab](images/Webinstaller-Installation-4.png)
 
-    > **Important:** If the required software for the selected product is not already installed, the **Additional Software Required** alert appears. You can continue the installation and install the necessary software later.
+    I>  If the required software for the selected product is not already installed, the **Additional Software Required** alert appears. You can continue the installation and install the necessary software later.
 
     **Required Software**
 
@@ -59,7 +59,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![Web Installer Uninstall Previous Wizard](images/Webinstaller-Installation-6.png)
 
-    > **Note:** From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall the previous versions from 18.1 onward while installing the new version.
+    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall the previous versions from 18.1 onward while installing the new version.
 
 5. A pop-up is displayed to confirm the uninstall of the selected previous versions. Click **Continue** to proceed.
 
@@ -69,7 +69,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![Web Installer Product Install/Uninstall Wizard](images/Webinstaller-uninstallation-8.png)
 
-    > **Note:** By clicking the **Download Size** and **Installation Size** links, you can determine the approximate size of the download and installation.
+    N> By clicking the **Download Size** and **Installation Size** links, you can determine the approximate size of the download and installation.
 
 7. The Configuration Wizard appears. You can change the **Download**, **Install**, and **Demos** locations from here. You can also change the Additional Settings on a product-by-product basis. Click **Next** to install with the default settings.
 
@@ -88,7 +88,7 @@ The steps below show how to install Essential Studio<sup style="font-size:70%">&
 
     ![Web Installer Login Wizard](images/Webinstaller-Installation-10.png)
 
-    > **Important:** The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> license (Trial or Licensed).
+    I>  The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> license (Trial or Licensed).
 
 10. The download and installation / uninstallation progress is displayed as shown below.
 
@@ -125,7 +125,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
 ![Control Panel Uninstallation entries](images/Webinstaller-uninstallation-3.png)
 
-> **Note:** If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core {version}** entry is selected from the Windows control panel, only the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 product is removed, and the default MSI uninstallation window is displayed.
+N> If the **Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core {version}** entry is selected from the Windows control panel, only the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 product is removed, and the default MSI uninstallation window is displayed.
 
 1. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Web Installer's welcome wizard is displayed. Click **Next**.
 
@@ -155,7 +155,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
     ![Web Installer Product Install/Uninstall Wizard](images/Webinstaller-uninstallation-8.png)
 
-    > **Note:** By clicking the **Download Size** and **Installation Size** links, you can determine the approximate size of the download and installation.
+    N> By clicking the **Download Size** and **Installation Size** links, you can determine the approximate size of the download and installation.
 
 6. The Configuration Wizard appears. You can change the **Download**, **Install**, and **Demos** locations from here. You can also change the Additional Settings on a product-by-product basis. Click **Next** to install with the default settings.
 
@@ -167,7 +167,7 @@ You can uninstall all the installed products by selecting the **Syncfusion<sup s
 
     ![Web Installer Login Wizard](images/Webinstaller-uninstallation-10.png)
 
-    > **Important:** The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> license (Trial or Licensed).
+    I>  The products you have chosen will be installed based on your Syncfusion<sup style="font-size:70%">&reg;</sup> license (Trial or Licensed).
 
 9. The download, installation, and uninstallation progress is shown.
 
