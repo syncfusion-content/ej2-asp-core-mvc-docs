@@ -1,10 +1,13 @@
+@page
+@model RazorPagesMovie.Pages.IndexModel
+
 <ejs-stockchart id="stockchart" load="stockload">
 	<e-stockchart-series-collection>
 		<e-stockchart-series type='Candle' xName='x' name='Apple'> </e-stockchart-series>
 	</e-stockchart-series-collection>
 </ejs-stockchart>
 
-<script src="~/chart/financial-data.js"></script>
+<script src="~/js/financial-data.js"></script>
 <script>
 	var data = chartData;
 	function stockload(args) {

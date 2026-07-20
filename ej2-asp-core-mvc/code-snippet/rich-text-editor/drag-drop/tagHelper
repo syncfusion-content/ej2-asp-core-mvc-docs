@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="drag-drop" value="@ViewBag.value">
-    <e-richtexteditor-insertimagesettings saveUrl="https://aspnetmvc.syncfusion.com/services/api/uploadbox/Save"></e-richtexteditor-insertimagesettings>
-</ejs-richtexteditor>

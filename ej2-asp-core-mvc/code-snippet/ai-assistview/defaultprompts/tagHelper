@@ -1,4 +1,3 @@
-@using Syncfusion.EJ2.InteractiveChat;
 @using System.Text.Json;
 
 @{

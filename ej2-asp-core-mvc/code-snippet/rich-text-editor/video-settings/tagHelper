@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="video" value="@ViewBag.value">
-    <e-richtexteditor-insertvideosettings layoutOption="break"></e-richtexteditor-insertvideosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

@@ -1,4 +1,0 @@
-@(Html.EJS().Gantt("SplitTasks").DataSource((IEnumerable<object>)ViewBag.DataSource).SegmentData((IEnumerable<object>)ViewBag.Segment)
-            .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress")
-            .Dependency("Predecessor").SegmentId("segmentId").Child("SubTasks"))
-            .Render())

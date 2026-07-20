@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="iframe" value="@ViewBag.value">
-    <e-richtexteditor-iframesettings enable="true"></e-richtexteditor-iframesettings>
-</ejs-richtexteditor>
