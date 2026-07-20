@@ -13,7 +13,7 @@ documentation: ug
 
 This section briefly explains how to include the [ASP.NET MVC DataGrid](https://www.syncfusion.com/aspnet-mvc-ui-controls/grid) control in your ASP.NET MVC application using Visual Studio.
 
-> **Ready to streamline your Syncfusion® ASP.NET MVC development?** Discover the full potential of Syncfusion® ASP.NET MVC controls with the Syncfusion® AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion® CodeStudio and more. [Explore Syncfusion® AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with the Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
@@ -21,10 +21,6 @@ This section briefly explains how to include the [ASP.NET MVC DataGrid](https://
 
 | .NET Version | Visual Studio Version |
 |--------------|------------------------------|
-| .NET 9.0 SDK | Visual Studio 2022 17.12 or later |
-| .NET 8.0 SDK | Visual Studio 2022 17.8 or later |
-| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
-| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
 | .NET Framework 4.6.2 | Visual Studio 2015 Update 3 or later |
 
 ### Browser support
@@ -42,7 +38,7 @@ This section briefly explains how to include the [ASP.NET MVC DataGrid](https://
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a Project using Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET MVC package in the application
 
@@ -56,11 +52,9 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion® ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.MVC5` NuGet package has the following dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion® license key. After installation, register your license in `Global.asax.cs` (Application_Start) with `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")`.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The `Syncfusion.EJ2.MVC5` NuGet package has the following dependencies: [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Refresh package versions in packages.config
-
-This step applies to projects that use the legacy `packages.config` format. If your project uses PackageReference, you can skip this step.
+## Update packages.config
 
 To update the `packages.config` file with the latest ASP.NET MVC and Razor versions, run the following command in the NuGet Package Manager Console:
 
@@ -102,7 +96,7 @@ The theme stylesheet and the EJ2 script are referenced from the CDN inside the `
 {% endhighlight %}
 {% endtabs %}
 
-N> See the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn the different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to reference styles in an ASP.NET MVC application and to apply the expected appearance for Syncfusion® ASP.NET MVC controls. See the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn the different approaches for adding script references in your ASP.NET MVC application.
+N> See the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn the different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to reference styles in an ASP.NET MVC application and to apply the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. See the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn the different approaches for adding script references in your ASP.NET MVC application.
 
 ## Register the Syncfusion ScriptManager
 
@@ -122,7 +116,7 @@ Register the ScriptManager at the end of the `<body>` element in the `~/Views/Sh
 
 ## Add the ASP.NET MVC DataGrid control
 
-Add the Syncfusion® ASP.NET MVC DataGrid control to the `~/Views/Home/Index.cshtml` page, and bind it to the data source that the controller exposes.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DataGrid control to the `~/Views/Home/Index.cshtml` page, and bind it to the data source that the controller exposes.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -169,24 +163,11 @@ public class HomeController : Controller
 
 ## Run the application
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) to run the app. If prompted, trust the IIS Express development certificate. The Syncfusion® ASP.NET MVC DataGrid control renders in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. If prompted, trust the IIS Express development certificate. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DataGrid control renders in the default web browser.
 
 The expected output is shown below:
 
 ![ASP.NET MVC DataGrid with column values for OrderID, CustomerID, OrderDate, ShipCountry, and Freight](images/column.png)
-
-## Troubleshooting
-
-| Problem | Likely cause | Resolution |
-| --- | --- | --- |
-| The page shows a "license warning" popup or the controls render in trial mode | The Syncfusion license key is not registered in the application | Register the license in `Global.asax.cs` (`Application_Start`) using `Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY")`, then rebuild and restart the app. |
-| The browser shows a `404` for `ej2.min.js` or `fluent2.css` | The CDN is blocked, or the `{{ site.ej2version }}` placeholder was not rendered | Verify network access to `cdn.syncfusion.com`, or reference the assets from the local NuGet package (e.g., `~/Content/ej2/{version}/fluent2.css` and `~/Scripts/ej2/{version}/dist/ej2.min.js`). |
-| `Runtime Error: The Scripts folder does not exist` or the ScriptManager is missing | `EJS().ScriptManager()` is not registered, or is placed inside `<head>` | Register `@Html.EJS().ScriptManager()` at the end of the `<body>` element in `~/Views/Shared/_Layout.cshtml`, after all other EJ2 scripts. |
-| NuGet restore fails for `Syncfusion.EJ2.MVC5` | Project targets an unsupported .NET Framework version, or the package source is misconfigured | Target .NET Framework 4.5 or later, and ensure `nuget.org` is enabled as a package source in Visual Studio. |
-| After `Update-Package Microsoft.AspNet.Mvc`, the project fails to compile | `Web.config` assembly bindings reference an older version | Open `Web.config` and update the `<assemblyBinding>` redirect entries to match the new `System.Web.Mvc` version, or add a binding redirect for the missing assembly. |
-| HTTPS warning ("Your connection is not private") on first run | The IIS Express development certificate is not trusted | In Visual Studio, run the project once and click **Yes** when prompted to trust the certificate, or run `dotnet dev-certs https --trust` from an elevated terminal. |
-
-N> If your issue is not listed here, search the [Syncfusion ASP.NET MVC forum](https://www.syncfusion.com/forums/) or contact [Syncfusion support](https://support.syncfusion.com/) with the full error message and stack trace.
 
 ## See also
 
