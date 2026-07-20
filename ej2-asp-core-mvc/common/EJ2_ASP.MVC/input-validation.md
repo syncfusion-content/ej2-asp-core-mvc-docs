@@ -132,5 +132,5 @@ The following section provides the details about the Syncfusion<sup style="font-
 
 ## See Also
 
-* [ASP.NET MVC Forms and Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
-* [Model validation in ASP.NET MVC and Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)
+* [ASP.NET MVC Forms and Validation](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
+* [Model validation in ASP.NET MVC and Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)

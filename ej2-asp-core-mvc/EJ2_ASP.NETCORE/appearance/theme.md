@@ -606,7 +606,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
+<td><a href="https://help.syncfusion.com/document-processing/word/word-processor/asp-net-core/getting-started-core">Document Editor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -640,7 +640,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
+<td><a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/asp-net-core/getting-started">PDF Viewer</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />

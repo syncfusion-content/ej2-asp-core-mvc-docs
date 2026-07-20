@@ -10,7 +10,7 @@ documentation: ug
 
 # Bind data from SQL server to ASP.NET Core controls
 
-In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://docs.microsoft.com/en-us/ef/core/) to bind it to the Grid control and perform CRUD operations. 
+In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) to bind it to the Grid control and perform CRUD operations. 
 Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft. Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion<sup style="font-size:70%">&reg;</sup> control to perform CRUD operations in a ASP.NET Core Application.
 
 ## Prerequisite software
@@ -51,7 +51,7 @@ Now, the Book table design will look like below.
 
 Open Visual Studio and follow the steps in the below documentation to create the Application.
 
-[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
+[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 
 ## Creating DbContext and model class
 

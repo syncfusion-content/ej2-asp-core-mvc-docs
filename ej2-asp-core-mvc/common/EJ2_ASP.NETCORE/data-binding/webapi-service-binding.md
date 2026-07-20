@@ -14,7 +14,7 @@ In this topic, you can learn how to retrieve data from WebApi Controller, bind t
 
 You can use the WebApiAdaptor of DataManager to interact with Web APIs created with OData endpoint. The WebApiAdaptor is extended from the ODataAdaptor. Hence, to use WebApiAdaptor, the endpoint should understand the OData formatted queries sent along with the request.
 
-To enable the OData query option for Web API, refer to this [documentation](https://docs.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options).
+To enable the OData query option for Web API, refer to this [documentation](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/supporting-odata-query-options).
 
 ## Prerequisite software
 
@@ -60,7 +60,7 @@ Now, click on **Update Database**.
 
 Open Visual Studio and follow the steps in the below documentation to create the Application.
 
-[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
+[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 
 ### Generate DbContext and model class from the database
 
@@ -116,7 +116,7 @@ Now, replace the Web API controller with the following code which contains code 
 using Microsoft.AspNetCore.Mvc;
 using WEBAPICRUD.Models;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-3.1&tabs=visual-studio
 
 namespace WEBAPICRUD.Controllers
 {

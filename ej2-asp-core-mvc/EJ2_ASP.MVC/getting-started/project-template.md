@@ -14,7 +14,7 @@ documentation: ug
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC web application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls.
 
-N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use the controls.
+N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use the controls.
 
 ## Getting started with ASP.NET MVC 5
 
@@ -25,7 +25,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 * .Net Framework 4.5 and above.
 * ASP.NET MVC 5
 * Visual Studio 2017
-* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/confirm)
 
 ### Create ASP.NET MVC 5 web application
 
@@ -87,7 +87,7 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 * .Net Framework 4.5 and above.
 * ASP.NET MVC 4
 * Visual Studio 2017
-* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/)
+* Essential Studio<sup style="font-size:70%">&reg;</sup> for [ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2)](https://www.syncfusion.com/downloads/aspnetmvc-js2/confirm)
 
 ### Create ASP.NET MVC 4 web application
 

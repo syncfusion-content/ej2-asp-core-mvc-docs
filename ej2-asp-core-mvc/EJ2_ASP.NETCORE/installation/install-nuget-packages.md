@@ -58,7 +58,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 ## Installation Using the dotnet (.NET) CLI
 
-The [dotnet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli) allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
+The [dotnet Command Line Interface (CLI)](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli) allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [dotnet add package](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-package-add?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
 
 Follow the below instructions to use the `dotnet` CLI to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages.
 
@@ -81,7 +81,7 @@ Follow the below instructions to use the `dotnet` CLI to install the Syncfusion<
 
     ![ASP.NET Core Package Entry](images/packageentry.png)
 
-4. Then run the [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restore all the packages listed in the application file.
+4. Then run the [dotnet restore](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) command to restore all the packages listed in the application file.
 
     N> Restoring is done automatically with `dotnet build` and `dotnet run` in .NET Core 2.0 and later.
 

@@ -197,10 +197,10 @@ You can change the font-size for all the controls by overriding the CSS for `e-c
 
 Refer below topics to learn about responsiveness controls based on the available size in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
 
-* [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/auto-close/)
-* [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/grid/Columns/responsive-columns/)
-* [TreeGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/scrolling/#responsive-with-parent-container)
-* [Dashboard Layout Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/adaptive-layout/)
-* [Kanban Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/kanban/responsive-mode/)
-* [Toolbar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/responsive-mode/)
-* [Tab Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/tab/responsive-modes/)
+* [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/auto-close)
+* [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/columns#responsive-columns)
+* [TreeGrid Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/scrolling#responsive-with-parent-container)
+* [Dashboard Layout Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/adaptive-layout)
+* [Kanban Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/kanban/responsive-mode)
+* [Toolbar Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/responsive-mode)
+* [Tab Responsiveness](https://ej2.syncfusion.com/aspnetcore/documentation/tab/responsive-modes)

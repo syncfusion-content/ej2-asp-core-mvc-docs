@@ -12,7 +12,7 @@ documentation: ug
 
 This section provides information about deploying ASP.NET Core applications with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) topic for more information.
+Refer to [Host and deploy ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0) topic for more information.
 
 ## Publish ASP.NET Core Application with Visual Studio
 
@@ -34,7 +34,7 @@ Refer to [Host and deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/
 
 * Then, click `Save` and `Publish`.
 
-    N> Refer [here](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app?view=vs-2022&tabs=azure) for publishing the application to Azure App Service using Visual Studio.  
+    N> Refer [here](https://learn.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app?view=vs-2022&tabs=azure) for publishing the application to Azure App Service using Visual Studio.  
 
 ## Publish ASP.NET Core Application with CLI
 
@@ -60,7 +60,7 @@ dotnet publish -c Release --self-contained true -r win-x86
 {% endhighlight %}
 {% endtabs %}
 
-Refer to the dotnet publish's [optional arguments](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21#arguments).
+Refer to the dotnet publish's [optional arguments](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21#arguments).
 
 Use the following command to specify the path for the output directory.
 
@@ -76,13 +76,13 @@ N> If the output directory is not specified, it defaults to **./bin/[configurati
 
 If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
-Also, refer to the MSDN reference [here](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-6.0&tabs=netcore-cli#deploy-the-app-self-contained).
+Also, refer to the MSDN reference [here](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-6.0&tabs=visual-studio#deploy-the-app-self-contained).
 
 Now, you can host the published folder by using the IIS or Azure app service.
 
 ## See also
 
-* [Host and Deploy ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
+* [Host and Deploy ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/?view=aspnetcore-6.0)
 * [Publish a Web app to Azure App Service using Visual Studio](https://docs.microsoft.com/en-us/visualstudio/deployment/quickstart-deploy-aspnet-web-app)
-* [Publish a Web app to Azure App Service using Visual Studio for Mac](https://docs.microsoft.com/en-us/visualstudio/mac/publish-app-svc?toc=%2Faspnet%2Fcore%2Ftoc.json&bc=%2Faspnet%2Fcore%2Fbreadcrumb%2Ftoc.json&view=vsmac-2019)
-* [Deploy ASP.NET Core apps to Azure App Service](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/)
+* [Publish a Web app to Azure App Service using Visual Studio for Mac](https://learn.microsoft.com/en-us/previous-versions/visualstudio/mac/publish-app-svc?toc=%2Faspnet%2Fcore%2Ftoc.json&bc=%2Faspnet%2Fcore%2Fbreadcrumb%2Ftoc.json&view=vsmac-2019)
+* [Deploy ASP.NET Core apps to Azure App Service](https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/azure-apps/?view=aspnetcore-10.0&tabs=visual-studio)

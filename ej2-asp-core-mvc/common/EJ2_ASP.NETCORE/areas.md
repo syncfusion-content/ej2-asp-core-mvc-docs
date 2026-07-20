@@ -18,7 +18,7 @@ ASP.NET Areas is a feature that allows to create a separate module in the applic
 
 ### MVC Areas
 
-1.Create ASP.NET Core web application with MVC(views and controllers). Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/) documentation to get started with ASP.NET Core application.
+1.Create ASP.NET Core web application with MVC(views and controllers). Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation to get started with ASP.NET Core application.
 
 2.To add the MVC Area, right-click the application in the solution explorer and choose **ADD** -> **New Scaffolded Item**.
 
@@ -77,7 +77,7 @@ app.UseEndpoints(endpoints =>
 {% endhighlight %}
 {% endtabs %}
 
-9.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+9.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
 {% highlight c# tabtitle="_Layout.cshtml" %}
@@ -128,7 +128,7 @@ N>If `_ViewStart.cshtml` file is added in the appropriate Views folder under the
 
 ### Areas with Razor Pages
 
-1.Create an ASP.NET Core web application with Razor pages. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/) documentation to get started with ASP.NET Core application.
+1.Create an ASP.NET Core web application with Razor pages. Refer to [this](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation to get started with ASP.NET Core application.
 
 2.Create the folders `Areas/<area name>/Pages` to the application root like the below structure.
 
@@ -156,7 +156,7 @@ N>You can also add the `_ViewImports.cshtml` and `_ViewStart.cshtml` files to th
 
 N>If `_ViewImports.cshtml` file is added in the appropriate Pages folder under the areas, import the `Syncfusion.EJ2` package into each `_ViewImports.cshtml` file.
 
-6.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
+6.Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) or [local npm package](https://www.npmjs.com/package/@syncfusion/ej2) in the `<head>` element of `~/Pages/Shared/_Layout.cshtml` layout page.
 
 {% tabs %}
 {% highlight c# tabtitle="~/_Layout.cshtml" %}

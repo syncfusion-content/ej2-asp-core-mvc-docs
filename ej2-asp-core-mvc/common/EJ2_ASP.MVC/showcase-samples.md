@@ -14,6 +14,6 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> has a collection of sample appl
 
 | Sample Application | Description | GitHub |
 | ------------- | ------------- | ------------- |
-| [Expense Tracker](https://ej2.syncfusion.com/showcase/aspnetmvc/expense-tracker/) | Track and visualize your daily expenses with a great UI. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-expensetracker) |
-| [Loan Calculator](https://ej2.syncfusion.com/showcase/aspnetmvc/loancalculator/) | Calculate loan payments, interest rates, and amortization schedules. When you are planning for a personal loan or analyzing business financing options, this provides accurate results and helps you make informed financial decisions. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-loan-calculator) |
-| [Web Mail](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/) | Outlook like user interface to manage your mailbox. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-outlook) |
+| [Expense Tracker](https://showcase.syncfusion.com/aspnetmvc/expense-tracker/) | Track and visualize your daily expenses with a great UI. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-expensetracker) |
+| [Loan Calculator](https://showcase.syncfusion.com/aspnetmvc/loan-calculator) | Calculate loan payments, interest rates, and amortization schedules. When you are planning for a personal loan or analyzing business financing options, this provides accurate results and helps you make informed financial decisions. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-loan-calculator) |
+| [Web Mail](https://showcase.syncfusion.com/aspnetmvc/webmail/) | Outlook like user interface to manage your mailbox. | [GitHub code](https://github.com/syncfusion/ej2-showcase-aspnetmvc-outlook) |

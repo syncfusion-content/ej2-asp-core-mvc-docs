@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-The [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET Core controls. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building ASP.NET Core applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
+The [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET Core controls. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/docs/getting-started/intro) to enhance your development workflow when building ASP.NET Core applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 ### Key Benefits
 
@@ -24,10 +24,10 @@ The [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/as
 
 Before using [SyncfusionAspNetCoreAssistant](https://www.npmjs.com/package/@syncfusion/aspnetcore-assistant), ensure you have:
 
-* Required [node](https://nodejs.org/en/) version >= 18
-* A [compatible MCP client](https://modelcontextprotocol.io/clients) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
+* Required [node](https://www.nodejs.org/en/) version >= 18
+* A [compatible MCP client](https://modelcontextprotocol.io/docs/getting-started/intro) (Visual Studio Code with GitHub Copilot, [Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio](https://www.syncfusion.com/code-studio/), etc.)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Commercial License](https://www.syncfusion.com/sales/pricing?category=ui-components)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 * An active [API KEY](https://syncfusion.com/account/api-key)
@@ -119,7 +119,7 @@ Below are setup instructions for popular MCP clients:
 
 * Confirm the server is active by checking for a message like: `SyncfusionAspNetCoreAssistant is running...` in the output.
 
-* For additional guidance, refer to the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/customization/mcp-servers#_add-an-mcp-server).
+* For additional guidance, refer to the [Visual Studio Code documentation](https://code.visualstudio.com/docs/agent-customization/mcp-servers#_add-an-mcp-server).
 
 ### Visual Studio (GitHub Copilot MCP)
 
@@ -173,7 +173,7 @@ To configure an MCP server for a specific workspace, you can create a `.cursor/m
 }
 ```
 
-For more details, refer to the [Cursor documentation](https://cursor.com/docs/context/mcp#using-mcp-json).
+For more details, refer to the [Cursor documentation](https://cursor.com/docs/mcp).
 
 ### JetBrains IDEs
 
@@ -204,7 +204,7 @@ For more details, refer to the [Cursor documentation](https://cursor.com/docs/co
  
 For further assistance, see the [JetBrains documentation](https://www.jetbrains.com/help/ai-assistant/mcp.html#connect-to-an-mcp-server).
 
-> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.windsurf.com/windsurf/cascade/mcp#mcp-config-json)
+> For more detailed information about configuring MCP servers in various clients, refer to the official documentations, e.g., [Windsurf](https://docs.devin.ai/desktop/cascade/mcp)
 
 ## Usage
 

@@ -38,7 +38,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/state-persistence">Grid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/state-management">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>

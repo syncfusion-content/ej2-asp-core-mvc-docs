@@ -42,7 +42,7 @@ This article describes the most common installation errors, as well as the cause
 **Suggested solution** <br />
 
 1. Only a licensed unlock key can unlock a licensed installer. Use the licensed unlock key when prompted by the installer.
-2. To generate the licensed unlock key, refer to [this Knowledge Base article](https://www.syncfusion.com/kb/2326).
+2. To generate the licensed unlock key, refer to [this Knowledge Base article](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account).
 3. After obtaining the key, re-run the installer and enter it on the **Unlock Key** screen.
 
 ## License Has Expired
@@ -60,7 +60,7 @@ This article describes the most common installation errors, as well as the cause
 **Suggested Solution** <br /> You can choose from the options below.
 
 1. Renew your subscription from the [renewals page](https://www.syncfusion.com/account/my-renewals).
-2. Get a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/products).
+2. Get a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/pricing?category=ui-components).
 3. Reach out to the sales team by emailing [sales@syncfusion.com](mailto:sales@syncfusion.com).
 4. Extend the 30-day trial period after your trial license has expired.
 5. After renewing or purchasing, re-run the installer and enter the new unlock key to apply the license.
@@ -88,7 +88,7 @@ This article describes the most common installation errors, as well as the cause
 
 **Suggested solution** <br />
 
-1. Get a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/products).
+1. Get a new license from the [Syncfusion sales page](https://www.syncfusion.com/sales/pricing?category=ui-components).
 2. Contact your account administrator to verify that a license is assigned to your account.
 3. Send an email to [clientrelations@syncfusion.com](mailto:clientrelations@syncfusion.com) to request a license.
 4. Reach out to the sales team by emailing [sales@syncfusion.com](mailto:sales@syncfusion.com).
@@ -138,7 +138,7 @@ This article describes the most common installation errors, as well as the cause
 **Option 1: Allow access or disable Controlled folder access**
 
 1. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> demos are installed in the Public Documents folder.
-2. With Controlled folder access enabled, the installer cannot write to the Documents folder. If you need to install the demos there, follow the steps in this [Microsoft support article](https://support.microsoft.com/en-us/windows/allow-an-app-to-access-controlled-folders-b5b6627a-b008-2ca2-7931-7e51e912b034) to either allow the installer access or disable Controlled folder access.
+2. With Controlled folder access enabled, the installer cannot write to the Documents folder. If you need to install the demos there, follow the steps in this [Microsoft support article](https://support.microsoft.com/en-US/Windows/Security/Threat-Malware-Protection/virus-and-threat-protection-in-the-windows-security-app) to either allow the installer access or disable Controlled folder access.
 3. You can re-enable Controlled folder access after installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup.
 
 **Option 2: Install to a different directory**

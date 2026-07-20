@@ -24,7 +24,7 @@ N> Visual Studio Code displays a dialog box that asks `Do you trust the authors 
 <br/> * The checkbox trust the authors of all files in the parent folder.
 <br/> * Yes, I trust the authors.
 
-2.Open the [Integrated Terminal](https://code.visualstudio.com/docs/editor/integrated-terminal) by selecting a menu using **View > Terminal** in VS Code.
+2.Open the [Integrated Terminal](https://code.visualstudio.com/docs/terminal/basics) by selecting a menu using **View > Terminal** in VS Code.
 3.Run the following command in the terminal to create a new ASP.NET Core web application.
 
 {% tabs %}
@@ -33,7 +33,7 @@ dotnet new webapp -o AspNetCoreWebApp
 {% endhighlight %}
 {% endtabs %}
 
-The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Refer to this [topic](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
+The `dotnet new` command creates new Razor Pages project in the AspNetCoreWebApp folder. Refer to this [topic](https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-new?tabs=net60) for more information about .NET CLI commands.
 
 4.Run the following command in the terminal to open the project in current instance of the VS Code.
 {% tabs %}
@@ -121,5 +121,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the app. Set `Select Environment` to 
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

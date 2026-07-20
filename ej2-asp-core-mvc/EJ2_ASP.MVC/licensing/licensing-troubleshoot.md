@@ -32,11 +32,11 @@ License keys can be generated from the [License & Downloads](https://syncfusion.
 
 ![Get Community License](images/get-community-license-key.png)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**, refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know about which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**, refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer this [KB](https://support.syncfusion.com/kb/article/7865/which-version-license-key-should-i-use-in-my-application) to know about which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
 ## Registering Syncfusion<sup style="font-size:70%">&reg;</sup> account for direct NuGet.org user
 
-If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from [NuGet.org](http://nuget.org/) and do not have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, follow the steps to obtain a free 30-day trial license key:
+If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from [NuGet.org](http://www.nuget.org/) and do not have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, follow the steps to obtain a free 30-day trial license key:
 
 * Register for a free Syncfusion<sup style="font-size:70%">&reg;</sup> account [here](https://www.syncfusion.com/downloads).
 

@@ -56,7 +56,7 @@ Now, click on **Update Database**.
 
 Open Visual Studio and create an empty ASP.NET Core Web Application with MVC(views and controllers) and name it as ODataServiceProject.
 
-[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-2017/)
+[Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 
 After creating the application, install **Microsoft.AspNetCore.OData** package by running the following command in the Package Manager Console.
 * **Install-Package Microsoft.AspNetCore.OData -Version 8.0.7**: This package contains everything you need to create OData v4.0 endpoints using ASP.NET Core MVC and to support OData query syntax for your web APIs.
@@ -119,7 +119,7 @@ using Microsoft.AspNetCore.OData.Deltas;
 using Microsoft.AspNetCore.OData.Formatter;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+// For more information on enabling Web API for empty projects, visit https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-view?view=aspnetcore-3.1&tabs=visual-studio
 
 namespace ODataServiceProject.Controllers
 {
@@ -202,7 +202,7 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://learn.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-10.0&viewFallbackFrom=aspnetcore-2.1&tabs=visual-studio%2Clinux-ubuntu#http-strict-transport-security-protocol-hsts.
     app.UseHsts();
 }
 

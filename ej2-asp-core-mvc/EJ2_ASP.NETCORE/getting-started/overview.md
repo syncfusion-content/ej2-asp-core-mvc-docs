@@ -12,7 +12,7 @@ documentation: ug
 
 This document illustrates how to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 web application in an ASP.NET Core.
 
-N> Starting with v16.2.0.x, if you refer to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application to use the components.
+N> Starting with v16.2.0.x, if you refer to Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or NuGet feed, you should include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to learn about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET Core application to use the components.
 
 * [Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core in Visual Studio 2017](visual-studio-2017)
 * [Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 for ASP.NET Core and Razor Pages](razor-pages)

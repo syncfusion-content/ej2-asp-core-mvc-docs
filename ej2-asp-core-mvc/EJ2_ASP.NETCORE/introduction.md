@@ -567,7 +567,7 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of
 
 * Product Development
 
-    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 

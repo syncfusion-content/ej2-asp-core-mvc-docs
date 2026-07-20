@@ -14,7 +14,7 @@ License keys can be generated from the [License & Downloads](https://www.syncfus
 
 ![Get Community License Key](images/get-community-license-key.png)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**, refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-essential-studio-products) to generate the license key for the required version and platform. Also, refer this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know about which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
+Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**, refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform. Also, refer this [KB](https://support.syncfusion.com/kb/article/7865/which-version-license-key-should-i-use-in-my-application) to know about which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
 ## Claim License key
 
