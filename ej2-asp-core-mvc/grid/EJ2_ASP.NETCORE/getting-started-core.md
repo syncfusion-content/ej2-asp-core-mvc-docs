@@ -15,11 +15,6 @@ The Syncfusion [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui
 
 ## Prerequisites
 
-| Requirement | Version |
-|-------------|---------|
-| .NET Framework | 4.5 or higher |
-| Visual Studio | 2019 or higher |
-
 ### .NET and Visual Studio compatibility
 
 | .NET version | Minimum Visual Studio version |
