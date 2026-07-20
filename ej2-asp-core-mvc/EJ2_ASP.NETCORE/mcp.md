@@ -243,7 +243,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 
 | Issue | Solution |
 |-------|----------|
-| **Server failed to start** | Update to .NET 10 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
+| **Server failed to start** | Update to .NET 8 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
 | **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |

@@ -60,10 +60,10 @@ Create a configuration file in your project folder to install the server for you
 
 {
   "servers": {
-    "sf-aspmvc-mcp": {
+    "sf-aspnetmvc-mcp": {
       "type": "stdio",
       "command": "dnx",
-      "args": ["Syncfusion.AspNetMVC.MCP", "--yes"],
+      "args": ["Syncfusion.AspNetMvc.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -80,10 +80,10 @@ Create a configuration file in your project folder to install the server for you
 
 {
   "servers": {
-    "sf-aspmvc-mcp": {
+    "sf-aspnetmvc-mcp": {
       "type": "stdio",
       "command": "dnx",
-      "args": ["Syncfusion.AspNetMVC.MCP", "--yes"],
+      "args": ["Syncfusion.AspNetMvc.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -102,9 +102,9 @@ Create a configuration file in your project folder to install the server for you
 
 {
   "mcpServers": {
-    "sf-aspmvc-mcp": {
+    "sf-aspnetmvc-mcp": {
       "command": "dnx",
-      "args": ["Syncfusion.AspNetMVC.MCP", "--yes"],
+      "args": ["Syncfusion.AspNetMvc.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -123,9 +123,9 @@ Create a configuration file in your project folder to install the server for you
 
 {
   "mcpServers": {
-    "sf-aspmvc-mcp": {
+    "sf-aspnetmvc-mcp": {
       "command": "dnx",
-      "args": ["Syncfusion.AspNetMVC.MCP", "--yes"],
+      "args": ["Syncfusion.AspNetMvc.MCP", "--yes"],
       "env": {
         "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
         // or
@@ -155,10 +155,10 @@ You can install the Syncfusion ASP.NET MVC MCP server as a local tool without a 
     ````json
     {
       "servers": {
-        "sf-aspmvc-mcp": {
+        "sf-aspnetmvc-mcp": {
           "type": "stdio",
           "command": "dotnet",
-          "args": ["tool", "run", "syncfusion-aspmvc-mcp"],
+          "args": ["tool", "run", "syncfusion-aspnetmvc-mcp"],
           "env": {
             "Syncfusion_API_Key_Path": "YOUR_API_KEY_FILE_PATH"
             // or
@@ -243,7 +243,7 @@ The table below lists frequently encountered issues and suggested resolutions to
 
 | Issue | Solution |
 |-------|----------|
-| **Server failed to start** | Update to .NET 10 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
+| **Server failed to start** | Update to .NET 8 SDK or higher, verify JSON syntax in the config file, and restart your IDE. |
 | **Invalid API key** | Verify your key is active at the [Syncfusion Account Page](https://syncfusion.com/account/api-key). |
 | **Incorrect API key config** | For the file path: verify file location and content. For inline key: check the key is correctly updated. |
 | **Wrong config file location** | VS Code: `.vscode/mcp.json` • Code Studio: `.codestudio/mcp.json` • Cursor: `.cursor/mcp.json` in the workspace root. |
