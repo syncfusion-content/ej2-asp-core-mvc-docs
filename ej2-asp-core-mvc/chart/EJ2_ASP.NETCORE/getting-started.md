@@ -20,11 +20,7 @@ To get started quickly with the ASP.NET Core Chart control, watch this video:
 
 ## Prerequisites
 
-Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) before creating the application. The following are required:
-
-* **.NET SDK 10.0** or later (refer to the system requirements for the full list of supported .NET versions).
-* **Visual Studio 2022** (latest update) **or** **Visual Studio Code** with the .NET build tooling installed.
-* For Visual Studio Code: install the **C#** extension (or **C# Dev Kit**) to build and run ASP.NET Core applications.
+Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) before creating the application.
 
 ## Create an ASP.NET Core Web Application with Razor Pages
 
