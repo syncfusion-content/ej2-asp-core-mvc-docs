@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core DataGrid Control
 
-The Syncfusion [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) is a powerful control for displaying and manipulating tabular data. In this tutorial, you'll learn how to add the DataGrid to a new ASP.NET Core Razor Pages application using [Visual Studio](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/).
+The Syncfusion [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) is a powerful control for displaying and manipulating tabular data. In this section briefly explains how to include the DataGrid control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Prerequisites
 
@@ -74,7 +74,7 @@ Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Micr
 
 ## Install the required ASP.NET Core package
 
-Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package (latest stable version on NuGet is recommended; this guide uses `26.1.35`). All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details and private/enterprise feed configuration.
+Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package (latest stable version on NuGet is recommended). All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 {% tabcontents %}
 
@@ -83,7 +83,7 @@ Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusi
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
 2. Search the required NuGet package (`Syncfusion.EJ2.AspNet.Core`) and install it.
 
-Alternatively, you can install the same package using the Package Manager Console with the following command. Visual Studio restores packages automatically after install.
+Alternatively, you can install the same package using the Package Manager Console with the following command.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager Console" %}
@@ -97,7 +97,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% tabcontent Visual Studio Code %}
 
-Open the terminal and run the following command (then run `dotnet restore` if packages are not restored automatically):
+Open the terminal and run the following commands.
 
 {% tabs %}
 {% highlight C# tabtitle="Terminal" %}
@@ -110,22 +110,6 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 {% endtabcontent %}
 
 {% endtabcontents %}
-
-## Register the Syncfusion license key
-
-Open **~/Program.cs** and register your Syncfusion license key before building the application. This is required for non-evaluation use.
-
-{% tabs %}
-{% highlight C# tabtitle="Program.cs" %}
-
-using Syncfusion.Licensing;
-
-SyncfusionLicenseProvider.RegisterLicense("YOUR_LICENSE_KEY");
-
-{% endhighlight %}
-{% endtabs %}
-
-> Replace `YOUR_LICENSE_KEY` with a valid key from your [Syncfusion account](https://www.syncfusion.com/account/downloads). Trial keys are also accepted for evaluation.
 
 ## Add ASP.NET Core Tag Helper
 
@@ -243,22 +227,7 @@ dotnet run
 
 ![ASP.NET Core DataGrid with Columns Data](../images/column.png)
 
-## Troubleshooting
-
-- **Grid renders blank or with no styling** — verify the theme stylesheet `<link>` and the Syncfusion `<script>` reference are inside `<head>` of `_Layout.cshtml`, and that `<ejs-scripts>` is the last element in `<body>`.
-- **`ejs-grid` tag is not recognized** — make sure `@addTagHelper *, Syncfusion.EJ2` is present in `~/Pages/_ViewImports.cshtml` and rebuild the project.
-- **`ejs-scripts` cannot be found** — confirm the `Syncfusion.EJ2.AspNet.Core` package is installed and restored (`dotnet restore`).
-- **Tag helpers do not appear after a package upgrade** — restart Visual Studio / VS Code and rebuild the project to clear cached tag helper discovery.
-- **License warning overlay** — register a valid license key in `Program.cs` as shown in the "Register the Syncfusion license key" step above.
-- **HTTPS certificate error on first run** — run `dotnet dev-certs https --trust` once on the development machine.
-
 ## See also
 
-- [Data Binding in ASP.NET Core DataGrid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding)
-- [Columns in ASP.NET Core DataGrid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns)
-- [Sorting in ASP.NET Core DataGrid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/sorting)
-- [Paging in ASP.NET Core DataGrid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging)
-- [Editing in ASP.NET Core DataGrid](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing)
-- [ASP.NET Core DataGrid API Reference](https://ej2.syncfusion.com/aspnetcore/documentation/api/grid)
 - [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 - [Getting Started with ASP.NET Core MVC (Tag Helper)](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
