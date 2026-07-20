@@ -188,8 +188,6 @@ N> You can also explore our [ASP.NET Core Scheduler example](https://ej2.syncfus
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
-N> Looking for the full ASP.NET Core Scheduler component overview, features, pricing, and documentation? Visit the [ASP.NET Core Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-core-scheduler) page.
-
 ## See also
 
 * [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
