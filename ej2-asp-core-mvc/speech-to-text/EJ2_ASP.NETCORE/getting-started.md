@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core SpeechToText control
 
-This section briefly explains about how to include `ASP.NET Core SpeechToText` control in your ASP.NET Core application using Visual Studio.
+This section explains how to include the ASP.NET Core SpeechToText control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -73,7 +73,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

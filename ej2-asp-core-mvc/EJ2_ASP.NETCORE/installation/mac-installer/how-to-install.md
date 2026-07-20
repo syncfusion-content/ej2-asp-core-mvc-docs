@@ -56,7 +56,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
    ![Paste the installer into Applications](images/Mac_Installer4.png)
 
-   > **Note:** The Unlock key is not required to install the Mac installer. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac installer can be used for development purposes without registering the Unlock key. A license key is only required later to run the bundled samples and demo source without a license-warning message.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac installer can be used for development purposes without registering the Unlock key. A license key is only required later to run the bundled samples and demo source without a license-warning message.
 
 5. Open the **Applications** folder, then open the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Mac installer to explore the included packages and samples.
 
