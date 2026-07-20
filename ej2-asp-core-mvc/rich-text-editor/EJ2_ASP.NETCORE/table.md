@@ -212,7 +212,7 @@ The Rich Text Editor provides advanced options to customize individual table cel
 
 ### Configuring the table cell properties in quick toolbar
 
-To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#table) property:
+To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property:
 
 ```typescript
 

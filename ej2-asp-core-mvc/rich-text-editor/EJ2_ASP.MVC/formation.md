@@ -19,7 +19,7 @@ The Rich Text Editor control used to create and edit the content and return vali
 ## HTML Editor
 
 Rich Text Editor is a WYSIWYG editing control for formatting the word content as HTML.
-The HTML editing mode is the default mode in Rich Text Editor to format the content through the available toolbar items to return the valid HTML markup. Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) property as `HTML`.
+The HTML editing mode is the default mode in Rich Text Editor to format the content through the available toolbar items to return the valid HTML markup. Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property as `HTML`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -48,7 +48,7 @@ The HTML editing mode is the default mode in Rich Text Editor to format the cont
 
 ## Markdown Editor
 
-Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) property as Markdown, to create or edit the content and apply formatting to view markdown formatted content.
+Set the [`EditorMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) property as Markdown, to create or edit the content and apply formatting to view markdown formatted content.
 
 * The Supported Tags are  `h6`,`h5`,`h4`,`h3`,`h2`,`h1`,`blockquote`,`pre`,`p`,`ol`,`ul`.
 * The Supported Selection Tags are `Bold`, `Italic`, `StrikeThrough`, `InlineCode`, `SubScript`, `SuperScript`, `UpperCase`, `LowerCase`.
@@ -84,4 +84,4 @@ N> The third-party library such as [`Marked`](https://marked.js.org/#/README.md#
 ## See Also
 
 * [How to integrate the third party library](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/third-party-integration)
-* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/iframe)
+* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)

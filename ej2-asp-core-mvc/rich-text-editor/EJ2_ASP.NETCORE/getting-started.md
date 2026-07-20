@@ -141,5 +141,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 **Live samples**
 
-* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/InsertEmoticons#/bootstrap5)
-* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/Forums#/bootstrap5)
+* [How to insert Emoticons](https://ej2.syncfusion.com/aspnetcore/richtexteditor/insertemoticons#/fluent2)
+* [Blog posting using Rich Text Editor](https://ej2.syncfusion.com/aspnetcore/richtexteditor/forums#/fluent2)
