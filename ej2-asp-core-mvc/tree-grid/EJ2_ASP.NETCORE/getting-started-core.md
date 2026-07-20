@@ -12,6 +12,33 @@ documentation: ug
 
 This section explains how to include the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
 
+## Prerequisites
+
+### .NET and Visual Studio compatibility
+
+| .NET version | Minimum Visual Studio version |
+|--------------|------------------------------|
+| .NET 10.0 | Visual Studio 2026 18.0.0 or later |
+| .NET 9.0 | Visual Studio 2022 17.12.0 or later |
+| .NET 8.0 | Visual Studio 2022 17.8.0 or later |
+| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
+| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
+
+### Browser Support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
+
+### Security
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid includes built-in support for common security practices such as Cross-Site Scripting (XSS) protection, Content Security Policy (CSP) compliance, Cross-Site Request Forgery (CSRF) prevention, and protection against injection attacks. These features help build secure and enterprise-ready applications.
+
 ## Create an new ASP.NET Core Web App with Razor pages
 
 {% tabcontents %}

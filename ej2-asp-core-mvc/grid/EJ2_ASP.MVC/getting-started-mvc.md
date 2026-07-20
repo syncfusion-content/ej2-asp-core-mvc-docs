@@ -17,7 +17,26 @@ This section briefly explains about how to include [ASP.NET MVC DataGrid](https:
 
 ## Prerequisites
 
-[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+### .NET and Visual Studio compatibility
+
+| .NET Version | Visual Studio Version |
+|--------------|------------------------------|
+| .NET Framework 4.6.2 | Visual Studio 2015 Update 3 or later |
+
+### Browser support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
+
+### Security
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DataGrid includes built-in support for common security practices such as Cross-Site Scripting (XSS) protection, Content Security Policy (CSP) compliance, Cross-Site Request Forgery (CSRF) prevention, and protection against injection attacks. These features help build secure and enterprise-ready applications.
 
 ## Create ASP.NET MVC application with HTML helper
 
