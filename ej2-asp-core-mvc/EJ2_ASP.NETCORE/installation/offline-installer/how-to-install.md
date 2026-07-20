@@ -27,7 +27,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
     ![Offline Installer Setup wizard](images/offline-1.png)
 
-    > **Note:** The installer wizard extracts the `syncfusionessentialaspnetcore-js2_<version>.exe` dialog, which displays the package's unzip operation.
+    N> The installer wizard extracts the `syncfusionessentialaspnetcore-js2_<version>.exe` dialog, which displays the package's unzip operation.
 
 2. To unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, choose one of the following options:
 
@@ -65,7 +65,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
     ![Offline Installer Uninstall Previous Wizard](images/offline-5.png)
 
-    > **Note:** From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 onward while installing the new version. If any version is selected to uninstall, a confirmation screen will appear. If you click **Continue**, the Progress screen will display the uninstall and install progress respectively. If no versions are chosen to be uninstalled, only the installation progress is displayed.
+    N> From the 2021 Volume 1 release, Syncfusion<sup style="font-size:70%">&reg;</sup> has added the option to uninstall previous versions from 18.1 onward while installing the new version. If any version is selected to uninstall, a confirmation screen will appear. If you click **Continue**, the Progress screen will display the uninstall and install progress respectively. If no versions are chosen to be uninstalled, only the installation progress is displayed.
 
     **Confirmation Alert**
 
@@ -79,7 +79,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
     ![Offline Installer Install Progress](images/offline-8.png)
 
-    > **Note:** The **Completed** screen is displayed once the ASP.NET Core - EJ2 product is installed. If any version is selected to uninstall, the completed screen displays both install and uninstall status.
+    N> The **Completed** screen is displayed once the ASP.NET Core - EJ2 product is installed. If any version is selected to uninstall, the completed screen displays both install and uninstall status.
 
     ![Offline Installer Summary Wizard](images/offline-9.png)
 

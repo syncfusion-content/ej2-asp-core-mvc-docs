@@ -16,7 +16,6 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Linux installer can be down
 **Prerequisites**
 
 * A registered Syncfusion<sup style="font-size:70%">&reg;</sup> account. To create one, see the [Syncfusion downloads page](https://www.syncfusion.com/downloads).
-* A Linux machine running a supported distribution (Ubuntu, Debian, Fedora, RHEL, or openSUSE — see the [Syncfusion system requirements](https://help.syncfusion.com/common/essential-studio/system-requirements) for the full list).
 * A tool to extract `.zip` files, such as `unzip` on most distributions.
 * For ASP.NET Core / .NET Core samples: the .NET SDK installed.
 
@@ -51,14 +50,14 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
 1. Start your 30-day free trial from the [Start Trial](https://www.syncfusion.com/account/manage-trials/start-trials) page in your account.
 
-   > **Note:** You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to the [licensing overview](https://help.syncfusion.com/common/essential-studio/licensing/overview).
+   N> You can generate the license key for your active trial products from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page. This license key is mandatory to use our trial products in your application. To learn more about license keys, refer to the [licensing overview](https://help.syncfusion.com/common/essential-studio/licensing/overview).
 
     ![Start trial](images/start-trial-download.png)
 
 2. To access this page, you must sign up or log in with your Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 3. Begin your trial by selecting the Syncfusion<sup style="font-size:70%">&reg;</sup> product.
 
-   > **Note:** If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://help.syncfusion.com/common/essential-studio/licensing/how-to-generate) at any time before the trial period expires (as shown in the screenshot below).
 
@@ -87,6 +86,5 @@ For step-by-step installation guidelines, refer to the [Essential Studio<sup sty
 | Issue | Possible Cause | Suggested Fix |
 | --- | --- | --- |
 | The Linux installer is not listed under **More Download Options**. | The signed-in account does not own a license, or the product filter is set to a different platform. | Confirm the account owns a license, then filter the **More Download Options** list to the Linux platform. |
-| `unzip` reports "command not found" while extracting the installer. | The `unzip` package is not installed on the Linux machine. | Install it with your distribution's package manager, for example `sudo apt install unzip` (Debian/Ubuntu) or `sudo dnf install unzip` (Fedora/RHEL). |
 | The downloaded `.zip` fails to extract or is corrupted. | The download was incomplete, or the file was modified by a download manager. | Re-download the installer from the [License & Downloads](https://www.syncfusion.com/account/downloads) page and verify the file size against the value shown on the page. |
 | License warning appears after install. | License key was not registered for the trial or licensed product. | Generate the license key from the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) or [License & Downloads](https://www.syncfusion.com/account/downloads) page and register it in the project. See [Common Installation Errors](https://ej2.syncfusion.com/aspnetcore/documentation/installation/common-installation-errors). |
