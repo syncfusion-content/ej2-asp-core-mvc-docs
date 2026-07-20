@@ -98,7 +98,7 @@ The theme stylesheet and the EJ2 script are referenced from the CDN inside the `
 
 N> See the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn the different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to reference styles in an ASP.NET MVC application and to apply the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. See the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn the different approaches for adding script references in your ASP.NET MVC application.
 
-## Register the Syncfusion ScriptManager
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
 Register the ScriptManager at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file, as follows:
 
