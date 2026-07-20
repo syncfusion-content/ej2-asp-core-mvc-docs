@@ -31,7 +31,7 @@ Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](htt
 Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet new webapp -o RazorPagesMovie
 code -r RazorPagesMovie
@@ -47,21 +47,21 @@ Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [
 
 ## Install the required ASP.NET Core package
 
-Install [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package. All Syncfusion ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+Install [Syncfusion.AspNetCore.Maps](https://www.nuget.org/packages/Syncfusion.AspNetCore.Maps/) NuGet package. All Syncfusion ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
 
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet package (`Syncfusion.EJ2.AspNet.Core`) and install it.
+2. Search the required NuGet package (`Syncfusion.AspNetCore.Maps`) and install it.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Maps -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -73,9 +73,9 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
-dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Maps -v {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -86,19 +86,20 @@ dotnet add package Syncfusion.EJ2.AspNet.Core -v {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Tag Helper.
+After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Base` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Maps
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add Script Resources
 
-The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
+The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
@@ -106,7 +107,7 @@ The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcor
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Maps/scripts/sf-maps.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -194,7 +195,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Maps Control](../images/maps-control.webp)
+![ASP.NET Core Maps Control](images/maps-control.webp)
 
 N> Map layers render only when [`ShapeData`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_ShapeData) is provided. Refer to the [world map data values](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 

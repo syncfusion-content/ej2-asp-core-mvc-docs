@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Chat UI control
 
-This section briefly explains about how to include `ASP.NET MVC Chat UI` control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include the `ASP.NET MVC Chat UI` control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
