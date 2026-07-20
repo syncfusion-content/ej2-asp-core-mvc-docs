@@ -17,7 +17,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio ext
 
 The following software prerequisites must be installed to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC applications.
 
-* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads).
+* [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads/).
 
 ## Install through the Visual Studio Manage Extensions
 

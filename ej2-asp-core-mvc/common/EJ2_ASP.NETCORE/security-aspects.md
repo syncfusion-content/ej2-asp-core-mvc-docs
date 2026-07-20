@@ -37,13 +37,13 @@ The following list demonstrates the Syncfusion<sup style="font-size:70%">&reg;</
 * [Splitter](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Splitter.html#Syncfusion_EJ2_Layouts_Splitter_EnableHtmlSanitizer)
 * [Tab](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_EnableHtmlSanitizer)
 * [Toast](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_EnableHtmlSanitizer)
-* [ToolBar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ToolbarBuilder.html#Syncfusion_EJ2_Navigations_ToolbarBuilder_EnableHtmlSanitizer_System_Boolean_)
+* [ToolBar](https://help.syncfusion.com/cr/aspnetcore-js2#Syncfusion_EJ2_Navigations_ToolbarBuilder_EnableHtmlSanitizer_System_Boolean_/Syncfusion.Data.html)
 * [Tooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Tooltip.html#Syncfusion_EJ2_Popups_Tooltip_EnableHtmlSanitizer)
 * [TreeView](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_EnableHtmlSanitizer)
 
 ## See also
 
-* [Develop an ASP.NET Core web application securely](https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app.aspx)
+* [Develop an ASP.NET Core web application securely](https://www.syncfusion.com/blogs/post/10-practices-secure-asp-net-core-mvc-app)
 * [Perform CRUD operation in Grid control using anti-forgery token](../grid/how-to/perform-crud-operation-using-anti-forgery-token)
 * [Prevent cross-site scripting in RichTextEditor control](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/prevent-cross-site-scripting)
-* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/asp-dotnet-mvc-content-security-policy.aspx)
+* [Shield Your ASP.NET MVC Web Applications with Content Security Policy (CSP)](https://www.syncfusion.com/blogs/post/asp-dotnet-mvc-content-security-policy)

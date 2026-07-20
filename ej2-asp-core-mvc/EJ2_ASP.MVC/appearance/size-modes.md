@@ -180,7 +180,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-mvc-siz
 Refer below topics to learn about responsiveness controls based on the available size in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Controls.
 
 * [Sidebar Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/sidebar/auto-close)
-* [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/columns/responsive-columns)
+* [DataGrid Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/columns/columns#responsive-columns)
 * [TreeGrid Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/scrolling#responsive-with-parent-container)
 * [Dashboard Layout Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/dashboard-layout/adaptive-layout)
 * [Kanban Responsiveness](https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/responsive-mode)

@@ -38,7 +38,7 @@ The 30-day trial can be downloaded in two ways:
 
 3. With a trial license, only the latest version's trial installer can be downloaded.
 
-4. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credentials. For more information on generating an unlock key, see [this article](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products).
+4. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 trial installer can be unlocked using either the trial unlock key or the Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credentials. For more information on generating an unlock key, see [this article](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products).
 
 5. Before the trial expires, you can download the trial installer at any time from your registered account's [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page (see the screenshot below).
 
@@ -60,7 +60,7 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
    > **Note:** If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
-4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) at any time before the trial period expires (see the screenshot below).
+4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://support.syncfusion.com/kb/article/7053/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) at any time before the trial period expires (see the screenshot below).
 
     ![Start trial - download installer](images/start-trial-download-installer.png)
 

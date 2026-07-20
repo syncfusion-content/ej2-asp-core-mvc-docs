@@ -15,7 +15,7 @@ The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** are
 AI Coding Assistant:
 
 * **The SyncfusionAspNetCoreAssistant MCP Server**
-  Processes advanced prompts and returns tailored code suggestions via [MCP-compatible clients](https://modelcontextprotocol.io/clients).
+  Processes advanced prompts and returns tailored code suggestions via [MCP-compatible clients](https://modelcontextprotocol.io/docs/getting-started/intro).
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ To use the AI Coding Assistant, you need:
 
 * A [Syncfusion<sup style="font-size:70%">&reg;</sup> user account](https://www.syncfusion.com/account)
 * An active Syncfusion<sup style="font-size:70%">&reg;</sup> license (any of the following):
-  - [Commercial License](https://www.syncfusion.com/sales/unlimitedlicense)
+  - [Commercial License](https://www.syncfusion.com/sales/pricing?category=ui-components)
   - [Free Community License](https://www.syncfusion.com/products/communitylicense)
   - [Free Trial](https://www.syncfusion.com/account/manage-trials/start-trials)
 * An active [API KEY](https://syncfusion.com/account/api-key)

@@ -23,4 +23,4 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are su
 
 ## See also
 
-* [ASP.NET MVC supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
+* [ASP.NET MVC supported platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms?view=aspnetcore-10.0)

@@ -10,11 +10,11 @@ documentation: ug
 
 # Default HTML Attributes and DOM Events
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls provide the most useful [public API](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.html) for control implementation and customization. Apart from this public API, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls can support the use of default [HTML attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes) in the root element of its control and input [DOM events](#input-dom-events) can be applied in the client side.
 
 ## Using HTML Attributes and DOM Events in the Input Element
 
-The following is a list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) and DOM events directly to the input element used on these Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
+The following is a list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input) and DOM events directly to the input element used on these Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
 
 * [AutoComplete](../autocomplete/getting-started/)
 * [CheckBox](../check-box/getting-started/)
@@ -50,7 +50,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 <td><b>Controls</b></td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-id">id</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#attr-id">id</a></td>
 <td>ID</td>
 <td>
 <ul>
@@ -59,7 +59,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefautocomplete">autocomplete</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefautocomplete">autocomplete</a></td>
 <td>Autocomplete</td>
 <td>
 <ul>
@@ -68,7 +68,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefchecked">checked</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefchecked">checked</a></td>
 <td>Checked</td>
 <td>
 <ul>
@@ -79,7 +79,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td rowspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefdisabled">disabled</a></td>
+<td rowspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefdisabled">disabled</a></td>
 <td>Disabled</td>
 <td>
 <ul>
@@ -115,7 +115,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefmax">max</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefmax">max</a></td>
 <td>Max</td>
 <td>
 <ul>
@@ -129,7 +129,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefminlength">min</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefminlength">min</a></td>
 <td>Min</td>
 <td>
 <ul>
@@ -143,7 +143,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefmultiple">multiple</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefmultiple">multiple</a></td>
 <td>Multiple</td>
 <td>
 <ul>
@@ -152,7 +152,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefplaceholder">placeholder</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefplaceholder">placeholder</a></td>
 <td>Placeholder</td>
 <td>
 <ul>
@@ -164,7 +164,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/readonly">readonly</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/readonly">readonly</a></td>
 <td>ReadOnly</td>
 <td>
 <ul>
@@ -182,7 +182,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefstep">step</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefstep">step</a></td>
 <td>Step</td>
 <td>
 <ul>
@@ -194,7 +194,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefvalue">value</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefvalue">value</a></td>
 <td>Value</td>
 <td>
 <ul>
@@ -204,7 +204,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefwidth">width</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#htmlattrdefvalue">width</a></td>
 <td>Width</td>
 <td>
 <ul>

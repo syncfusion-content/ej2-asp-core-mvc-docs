@@ -44,4 +44,4 @@ N> This [polyfill](https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.m
 
 ## See also
 
-* [ASP.NET Core supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
+* [ASP.NET Core supported platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms?view=aspnetcore-10.0)
