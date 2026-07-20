@@ -97,7 +97,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AI Ass
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AI AssistView control will be rendered in the default web browser.
 
-![ASP.NET MVC AI AssistView Control](images/ai-assistview-component.png)
+![ASP.NET MVC AI AssistView Control](images/ai-assistview-component.webp)
 
 > **Note:** Starting from version 33.1x, when a user submits a prompt to the AI AssistView, the component automatically scrolls and focuses on the latest prompt and response. This behavior eliminates the need for users to manually scroll down to see the new response, ensuring they always view the most recent AI response without interruption. Prior to version 33.1x, the previous responses remained visible when new responses were added.
 
@@ -114,4 +114,4 @@ You can use the [PromptSuggestions](https://help.syncfusion.com/cr/aspnetmvc-js2
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC AI AssistView default prompt](images/default-prompt.png)
+![ASP.NET MVC AI AssistView default prompt](images/default-prompt.webp)
