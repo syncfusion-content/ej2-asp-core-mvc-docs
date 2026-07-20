@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Font Family, Size and Color in ##Platform_Name## Rich Text Editor control | Syncfusion
+title: Font Family, Size and Color in Syncfusion Rich Text Editor control
 description: Learn here all about Font Family, Size and Color in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Font Family, Size and Color
