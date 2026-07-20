@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET MVC controls. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building ASP.NET MVC applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
+The [SyncfusionAspNetMvcAssistant](https://www.npmjs.com/package/@syncfusion/aspnetmvc-assistant) is a specialized [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) server that provides intelligent assistance for developers using Syncfusion's ASP.NET MVC control. This tool seamlessly integrates with compatible [MCP clients](https://modelcontextprotocol.io/clients) to enhance your development workflow when building ASP.NET MVC applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 
 ### Key Benefits
 
