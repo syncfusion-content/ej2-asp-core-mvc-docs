@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Tree Grid Control
 
-This section briefly explains how to include the [ASP.NET MVC Tree Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC Tree Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -31,7 +31,11 @@ This section briefly explains how to include the [ASP.NET MVC Tree Grid](https:/
 |    Opera    |    Latest Version  |
 |    Microsoft Internet Explorer    |    11  |
 
-## Create the ASP.NET MVC application
+### Security
+
+Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tree Grid includes built-in support for common security practices such as Cross-Site Scripting (XSS) protection, Content Security Policy (CSP) compliance, Cross-Site Request Forgery (CSRF) prevention, and protection against injection attacks. These features help build secure and enterprise-ready applications.
+
+## Create ASP.NET MVC application with HTML helper
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
@@ -67,7 +71,7 @@ N> If you encounter any issues after updating, you may need to update the corres
 
 ## Add namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under the `Views` folder. This namespace provides access to Syncfusion HTML helper methods for rendering components.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder. This namespace provides access to Syncfusion HTML helper methods for rendering components.
 
 ```
 <namespaces>
@@ -77,7 +81,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under the `Views` fol
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are referred using a CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using a CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -126,7 +130,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tree G
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tree Grid control will be rendered in the default web browser.
 
-![ASP.NET MVC Tree Grid Columns](images/treegrid-columns.png)
+![ASP.NET MVC Tree Grid Columns](images/treegrid-columns.webp)
 
 ## See also
 
