@@ -150,7 +150,7 @@ You can install the Syncfusion ASP.NET MVC MCP server as a local tool without a 
     dotnet tool install Syncfusion.AspNetMVC.MCP
     ````
 
-2. In your MCP client config (`.vscode/mcp.json`, `.codestudio/mcp.json`, `.cursor/mcp.json`, or the JetBrains MCP settings), replace the server entry with:
+2. In your MCP client config (for example, `.vscode/mcp.json`), replace the server entry with:
 
     ````json
     {
@@ -169,7 +169,7 @@ You can install the Syncfusion ASP.NET MVC MCP server as a local tool without a 
     }
     ````
 
-**Verifying Installation** Check your editor's MCP Server list for `sf-aspmvc-mcp` with a **Connected** status to confirm a successful installation.
+**Verifying Installation** Check your editor's MCP Server list for `sf-aspnetmvc-mcp` with a **Connected** status to confirm a successful installation.
 
 ## Common use cases
 
