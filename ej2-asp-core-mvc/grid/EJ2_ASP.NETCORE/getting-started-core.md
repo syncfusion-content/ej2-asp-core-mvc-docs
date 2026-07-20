@@ -205,13 +205,13 @@ public class Order
 
 {% tabcontent Visual Studio %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The DataGrid will render in your default web browser. If prompted, run `dotnet dev-certs https --trust` to trust the local development certificate.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The DataGrid will render in your default web browser.
 
 {% endtabcontent %}
 
 {% tabcontent Visual Studio Code %}
 
-Open the terminal and run the following command. If prompted, run `dotnet dev-certs https --trust` to trust the local development certificate.
+Open the terminal and run the following command.
 
 {% tabs %}
 {% highlight C# tabtitle="Terminal" %}
