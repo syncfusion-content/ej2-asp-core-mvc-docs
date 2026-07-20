@@ -10,13 +10,13 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Ribbon Control
 
-This section briefly explains about how to include `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
 [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## Create ASP.NET Core web application with Razor pages
+## Create an ASP.NET Core web application with Razor Pages
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
@@ -24,7 +24,7 @@ This section briefly explains about how to include `ASP.NET Core Ribbon` control
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, Open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -71,7 +71,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -87,7 +87,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core Ribbon control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -194,5 +194,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
