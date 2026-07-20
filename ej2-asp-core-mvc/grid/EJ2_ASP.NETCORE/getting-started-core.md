@@ -13,17 +13,33 @@ documentation: ug
 
 The Syncfusion [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) is a powerful control for displaying and manipulating tabular data. In this tutorial, you'll learn how to add the DataGrid to a new ASP.NET Core Razor Pages application using [Visual Studio](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/).
 
-## What you'll build
-
-By the end of this tutorial, you'll have an ASP.NET Core Razor Pages app that renders a Syncfusion DataGrid bound to a sample list of orders — the DataGrid will appear in your browser at `https://localhost:<port>/`.
-
 ## Prerequisites
 
-Before you begin, make sure you have the following installed:
+| Requirement | Version |
+|-------------|---------|
+| .NET Framework | 4.5 or higher |
+| Visual Studio | 2019 or higher |
 
-- [.NET SDK 6.0 or later](https://dotnet.microsoft.com/download) (this guide uses Razor Pages, which is supported on .NET 6, 7, 8, 9, and 10)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) (with the **ASP.NET and web development** workload) **or** [Visual Studio Code](https://code.visualstudio.com/) with the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension
-- A Syncfusion license key (required for non-evaluation use). See the [License Key Registration](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/licensing-overview) topic for details.
+### .NET and Visual Studio compatibility
+
+| .NET version | Minimum Visual Studio version |
+|--------------|------------------------------|
+| .NET 10.0 | Visual Studio 2026 18.0.0 or later |
+| .NET 9.0 | Visual Studio 2022 17.12.0 or later |
+| .NET 8.0 | Visual Studio 2022 17.8.0 or later |
+| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
+| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
+
+### Browser Support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
 
 > **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
