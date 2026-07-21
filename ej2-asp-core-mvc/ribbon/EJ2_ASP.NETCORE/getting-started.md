@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Ribbon Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Ribbon
 publishingplatform: ##Platform_Name##
@@ -10,11 +10,30 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Ribbon Control
 
-This section briefly explains about how to include `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains about how to include the `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+### .NET and Visual Studio compatibility
+
+| .NET version | Minimum Visual Studio version |
+|--------------|------------------------------|
+| .NET 10.0 | Visual Studio 2026 18.0.0 or later |
+| .NET 9.0 | Visual Studio 2022 17.12.0 or later |
+| .NET 8.0 | Visual Studio 2022 17.8.0 or later |
+| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
+| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
+
+### Browser support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
 
 ## Create ASP.NET Core web application with Razor pages
 
@@ -22,7 +41,7 @@ This section briefly explains about how to include `ASP.NET Core Ribbon` control
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET Core package in the application
+## Install ASP.NET Core package in the application (via .NET CLI)
 
 To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
@@ -37,7 +56,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -49,7 +68,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -65,9 +84,9 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in your ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -87,7 +106,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core Ribbon control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper in `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper in the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -97,7 +116,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbo
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Tab
+## Adding Ribbon tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
 
@@ -113,7 +132,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Group
+## Adding Ribbon group
 
 To define a ribbon group under each tab, you can use the `e-ribbon-group` tag helper like below. The `Orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
@@ -133,7 +152,7 @@ To define a ribbon group under each tab, you can use the `e-ribbon-group` tag he
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Items
+## Adding Ribbon items
 
 You can use the `e-ribbon-collection` tag helper to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `e-ribbon-item` tag helper and the `Type` property to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
