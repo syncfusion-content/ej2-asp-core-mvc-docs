@@ -32,7 +32,7 @@ To get started quickly with ASP.NET Core DataGrid control, you can check out thi
 | .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
 | .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
 
-### Browser Support
+### Browser support
 
 |    Browser    |    Versions    |
 |--------------|---------------|
