@@ -96,7 +96,7 @@ Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-contr
 {% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/3d-chart/getting-started/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% highlight c# tabtitle="Getting-started.cs" %}
 {% include code-snippet/3d-chart/getting-started/getting-started.cs %}
 {% endhighlight %}
 {% endtabs %}
