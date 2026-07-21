@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ##Platform_Name## Dialog Control | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Dialog control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Dialog
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -19,13 +19,15 @@ This section briefly explains how to include the [ASP.NET Core Dialog](https://w
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+You can create an ASP.NET Core web application with Razor Pages by using one of the following approaches:
+
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to install the same package.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -66,13 +68,13 @@ Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pa
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -98,9 +100,11 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Dialo
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Dialog control will be rendered in the default web browser.
 
-![ASP.NET Core Dialog Control](images/dialog-getting.png)
+![ASP.NET Core Dialog Control](../images/dialog-getting.png)
 
-Displaying the content using `ContentTemplate`.
+## Display content using `ContentTemplate`
+
+You can also pass the Dialog body content as a template by using the `ContentTemplate` property. This is useful when the dialog content includes multiple HTML elements or Razor markup.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -112,11 +116,11 @@ N> In the dialog control, max-height is calculated based on the dialog target el
 
 ## Modal Dialog
 
-A [`modal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) shows an overlay behind the Dialog. So, the user should interact with the Dialog compulsorily before interacting with the remaining content in an application.
+Setting [`IsModal`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_IsModal) to true shows an overlay behind the Dialog. So, the user must interact with the Dialog before interacting with other content.
 
-While the user clicks the overlay, the action can be handled through the [`overlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event.
+When the user clicks the overlay, the action can be handled through the [`overlayClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_OverlayClick) event.
 
-N> When the modal dialog is opened, the Dialog's target scrolling will be disabled. The scrolling will be enabled again once close the Dialog.
+N> When the modal dialog is opened, scrolling within the Dialog's target element is disabled. The scrolling will be enabled again once the Dialog is closed.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -124,7 +128,7 @@ N> When the modal dialog is opened, the Dialog's target scrolling will be disabl
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Modal Dialog](./images/modal-dialog-getting.png)
+![ASP.NET Core Modal Dialog](../images/modal-dialog-getting.png)
 
 N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, the CSS style for the html and body can be set to get the dialog height.
 
@@ -148,9 +152,9 @@ The Dialog header can be enabled by adding the header content as text or HTML co
 
 ## Enable footer
 
-The Dialog provides built-in support to render the `buttons` on the footer (for ex: `OK` or `Cancel` buttons). Each Dialog button allows the user to perform any action while clicking on it.
+The Dialog provides built-in support to render the `buttons` on the footer (for ex: `OK` or `Cancel` buttons). Each Dialog button can perform an action when clicked.
 
-The primary button will be focused automatically when opening the Dialog, and add the [`click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the actions.
+The primary button is focused automatically when the Dialog is opened. Use the [`click`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogDialogButton.html#Syncfusion_EJ2_Popups_DialogDialogButton_Click) event to handle the button actions.
 
 N> When the Dialog initializes with more than one primary button, the first primary button gets focus when opening the Dialog.
 
@@ -170,9 +174,9 @@ public class ButtonModel
 
 ## Draggable
 
-The Dialog supports [dragging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_AllowDragging) within its target container by grabbing the Dialog header, which allows the user to reposition the Dialog dynamically.
+The Dialog supports [dragging](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_AllowDragging) within its target container by holding the Dialog header, which allows the user to reposition the Dialog dynamically.
 
-N> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, enabled draggable support for modal dialog also.
+N> The Dialog can be draggable only when the Dialog header is enabled. From `16.2.x` version, Draggable support for modal dialogs was also enabled.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
