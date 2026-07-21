@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core 3D Charts Control
 
-This section briefly explains how to include the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-circular-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create an ASP.NET Core Web App with Razor Pages
 
@@ -77,7 +77,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET Core 3D Charts control
 
-Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-circular-chart) control in the **~/Pages/Index.cshtml** file.
+Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control in the **~/Pages/Index.cshtml** file.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -104,7 +104,7 @@ Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-contr
 
 ## Run the application
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-circular-chart) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control will render in your default web browser.
 
 ![ASP.NET Core 3D Charts Control](images/three-d-chart.png)
 
