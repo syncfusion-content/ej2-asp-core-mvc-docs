@@ -106,7 +106,7 @@ Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-contr
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control will render in your default web browser.
 
-![ASP.NET Core 3D Charts Control](images/three-d-chart.png)
+![ASP.NET Core 3D Charts Control](images/three-d-chart.webp)
 
 N> `View Sample in GitHub`.
 
