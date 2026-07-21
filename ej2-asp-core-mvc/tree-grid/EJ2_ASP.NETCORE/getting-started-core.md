@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Tree Grid Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Tree Grid control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Tree Grid Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Tree Grid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Tree Grid
+control: Getting Started Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Getting Started with ASP.NET Core Tree Grid Control
 
-This section explains how to include the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
+This section explains how to add the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control to an ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -35,68 +35,82 @@ This section explains how to include the [ASP.NET Core Tree Grid](https://www.sy
 |    Opera    |    Latest Version  |
 |    Microsoft Internet Explorer    |    11  |
 
-## Create an new ASP.NET Core Web App with Razor pages
+## Create ASP.NET Core web application with Razor pages
+
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
+
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
 
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+## Create an ASP.NET Core Razor Pages project using Visual Studio:
+
+1. Start **Visual Studio** and select **Create a new project**.
+
+2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
+
+3. In the **Configure your new project** dialog, specify the **project name** as RazorPagesTreeGrid (and optionally change location/folder).
+
+4. Click `Next`.
+
+5. In the Additional information dialog:
+* Select **.NET 10.0**.
+* Verify: **Do not use top-level statements** is **unchecked**.
+
+6. Click `Create`.
+
+For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
+
+## Install ASP.NET Core package in the application
+
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to achieve the same.
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
 
 {% endtabcontent %}
 
 {% tabcontent Visual Studio Code %}
 
-Run the following command to create a new ASP.NET Core Web App.
+## Create an ASP.NET Core Razor Pages project using Visual Studio Code:
+
+* Install the latest **.NET SDK** that supports **.NET 10.0** or later.
+* Open **Visual Studio Code**.
+* Press **Ctrl + `** to open the integrated terminal.
+* Run the following commands:
 
 {% tabs %}
-{% highlight C# tabtitle="Terminal" %}
+{% highlight C# tabtitle=".NET CLI" %}
 
-dotnet new webapp -o RazorPagesMovie
-code -r RazorPagesMovie
+dotnet new webapp -o RazorPagesTreeGrid
+
+code -r RazorPagesTreeGrid
 
 {% endhighlight %}
 {% endtabs %}
 
-Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+## Install ASP.NET Core package in the application
 
-{% endtabcontent %}
+To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DataGrid component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
-{% endtabcontents %}
+1. Press **Ctrl + `** to open the integrated terminal in **Visual Studio Code**.
+2. Navigate to the directory containing the **.csproj** file.
+3. Run the following commands to install the packages:
 
-## Install the required ASP.NET Core packages
-
-Install the [Syncfusion.AspNetCore.TreeGrid](https://www.nuget.org/packages/Syncfusion.AspNetCore.TreeGrid/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
-
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
-1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet packages (`Syncfusion.AspNetCore.TreeGrid` and `Syncfusion.AspNetCore.Themes`) and install them.
-
-Alternatively, you can install the same packages using the Package Manager Console with the following commands.
+* [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/)
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.AspNetCore.TreeGrid -Version {{ site.releaseversion }}
-Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% tabcontent Visual Studio Code %}
-
-Open the terminal and run the following commands.
-
-{% tabs %}
-{% highlight C# tabtitle="Terminal" %}
-
-dotnet add package Syncfusion.AspNetCore.TreeGrid -v {{ site.releaseversion }}
-dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
+dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -105,68 +119,68 @@ dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
 
 {% endtabcontents %}
 
-## Add ASP.NET Core Tag Helpers
- 
-After the package is installed, open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.TreeGrid` Tag Helpers.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.AspNetCore.Base
-@addTagHelper *, Syncfusion.AspNetCore.TreeGrid
+@addTagHelper *, Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    @* ASP.NET Core controls styles *@
-    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    @* ASP.NET Core controls scripts *@
-    <script src="_content/Syncfusion.AspNetCore.TreeGrid/scripts/sf-treegrid.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the Script Manager
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+
+Also, register the script manager `<ejs-script>` at the end of `<body>` of `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
     ...
-    @* ASP.NET Core Script Manager *@
+    <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
 
 {% endhighlight %}
 {% endtabs %}
 
+The `<ejs-scripts>` tag must be placed AFTER all page content to ensure all Syncfusion controls are fully rendered before the script manager initializes them.
+
 ## Add ASP.NET Core Tree Grid control
 
-Add the [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control in the **~/Pages/Index.cshtml** file.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/tree-grid/getting-start-core/columns/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-
-namespace RazorPagesMovie.Pages;
-
+{% highlight c# tabtitle="CSHTML.cs" %}
 public class IndexModel : PageModel
 {
     public void OnGet() { }
@@ -191,42 +205,21 @@ public class Task
         this.Duration = duration;
     }
 }
-
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tree Grid control will be rendered in the default web browser.
 
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Tree Grid](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) control will render in your default web browser.
-
-{% endtabcontent %}
-
-{% tabcontent Visual Studio Code %}
-
-Open the terminal and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% endtabcontents %}
-
-![ASP.NET Core Tree Grid Columns](images/treegrid-columns.webp)
+![ASP.NET Core Tree Grid Columns](images/treegrid-columns.png)
 
 ## See also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [Getting Started with ASP.NET Core Tree Grid Data Binding-Local Data](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/data-binding/local-data)
-4. [Getting Started with ASP.NET Core Tree Grid Data Binding-Remote Data](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/data-binding/remote-data)
-
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript documentation](https://ej2.syncfusion.com/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (ES5) documentation](https://ej2.syncfusion.com/javascript/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Angular documentation](https://ej2.syncfusion.com/angular/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> React documentation](https://ej2.syncfusion.com/react/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core documentation](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Vue documentation](https://ej2.syncfusion.com/vue/documentation/treegrid/getting-started)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor documentation](https://blazor.syncfusion.com/documentation/treegrid/getting-started-webapp)
