@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Smith Charts Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Smith Charts control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Smith Chart Control | Syncfusion
+description: Check out and learn about getting started with ASP.NET Core Smith Chart control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Smith Chart
 publishingplatform: ##Platform_Name##
