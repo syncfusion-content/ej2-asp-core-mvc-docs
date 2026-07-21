@@ -32,22 +32,23 @@ You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by 
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install Syncfusion ASP.NET Core package in the application
+## Install Syncfusion ASP.NET Core Rich Text Editor package in the application
 
-You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core package. This can be done in two ways, as mentioned below:
+You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core Rich Text Editor package. This can be done in two ways, they are mentioned below
 
 ### 1. Using NuGet Package Manager  
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.ASP.NET Core.Rich Text Editor](https://www.nuget.org/packages/Syncfusion.AspNetCore.RichTextEditor) and install it directly.
 
 ### 2. Using Package Manager Console  
 
-Run the following command in the Package Manager Console:
+Run the following commands in the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.RichTextEditor --version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -57,12 +58,12 @@ I> Ensure you’re running the command inside Visual Studio’s Package Manager 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` Tag Helper.
-
+Open the `~/Pages/_ViewImports.cshtml` file and add the following tag helper imports.
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.RichTextEditor
 
 {% endhighlight %}
 {% endtabs %}
@@ -77,9 +78,9 @@ Here, the theme and script are referred using CDN inside the `<head>` of `~/Page
 <head>
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-rich-text-editor.min.js"></script>
 </head>
 
 {% endhighlight %}
