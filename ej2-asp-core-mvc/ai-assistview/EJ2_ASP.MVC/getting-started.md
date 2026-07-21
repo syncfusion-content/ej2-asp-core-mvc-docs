@@ -1,79 +1,97 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC AI AssistView Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET MVC AI AssistView control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AI AssistView Control | Syncfusion
+description: Check out and learn about getting started with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: AI AssistView
+control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Getting Started with ASP.NET MVC AI AssistView control
 
-This section briefly explains how to include the [ASP.NET MVC AI AssistView](https://www.syncfusion.com/aspnet-mvc-ui-controls/ai-assistview) control in your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the `ASP.NET MVC AI AssistView` control in your ASP.NET MVC application using Visual Studio.
 
-## Create an ASP.NET MVC Web App with HTML Helper
+## Prerequisites
 
-Create an **ASP.NET MVC Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) or the [Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET MVC Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper) documentation.
+### .NET and Visual Studio compatibility
 
-## Install the required ASP.NET MVC package
+| .NET Version | Visual Studio Version |
+|--------------|------------------------------|
+| .NET Framework 4.6.2 | Visual Studio 2015 Update 3 or later |
 
-To add **ASP.NET MVC AI AssistView** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetMvc.InteractiveChat](https://www.nuget.org/packages/Syncfusion.AspNetMvc.InteractiveChat/) package. All Syncfusion ASP.NET MVC packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic for details.
+### Browser support
 
-Alternatively, you can install the same package using the Package Manager Console with the following command.
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
+
+## Create ASP.NET MVC application with HTML helper
+
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+
+## Install ASP.NET MVC package in the application
+
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.AspNetMvc.InteractiveChat -Version {{ site.releaseversion }}
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add the Namespace
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-After the package is installed, open the **~/Views/Web.config** file and import the `Syncfusion.EJ2` namespace.
+## Add namespace
 
-{% tabs %}
-{% highlight xml tabtitle="Web.config" %}
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
+```
 <namespaces>
-    <add namespace="Syncfusion.EJ2" />
+    <add namespace="Syncfusion.EJ2"/>
 </namespaces>
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) inside the `<head>` of **~/Views/Shared/_Layout.cshtml**.
+Here, the theme and script are referred using CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent2.css" />
-    <!-- ASP.NET MVC controls scripts -->
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the script manager
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager `EJS().ScriptManager()` at the end of the `<body>` element as follows.
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
+
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
 ...
-    <!-- ASP.NET MVC Script Manager -->
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
-    
 </body>
 
 {% endhighlight %}
@@ -81,20 +99,18 @@ Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET MVC AI AssistView control
 
-Add the [ASP.NET MVC AI AssistView](https://www.syncfusion.com/aspnet-mvc-ui-controls/ai-assistview) control in the **~/Views/Home/Index.cshtml** file.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AI AssistView control in `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/getting-started/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
 {% include code-snippet/ai-assistview/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET MVC AI AssistView](https://www.syncfusion.com/aspnet-mvc-ui-controls/ai-assistview) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC AI AssistView control will be rendered in the default web browser.
 
 ![ASP.NET MVC AI AssistView Control](images/ai-assistview-component.webp)
 
@@ -105,10 +121,10 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 You can use the [PromptSuggestions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptSuggestions) property to add prompt suggestions and the [PromptRequest](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.AIAssistView.html#Syncfusion_EJ2_InteractiveChat_AIAssistView_PromptRequest) event to add responses when the prompt matches the specified prompts data otherwise, the default response will be displayed.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/ai-assistview/defaultprompts/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="HomeController.cs" %}
+{% highlight c# tabtitle="Default.cs" %}
 {% include code-snippet/ai-assistview/defaultprompts/defaultprompt.cs %}
 {% endhighlight %}
 {% endtabs %}
