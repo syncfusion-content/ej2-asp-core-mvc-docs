@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Accordion control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Core
 publishingplatform: ##Platform_Name##
@@ -128,12 +128,12 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET Core Accordion Control
+## Add the ASP.NET Core Accordion control
 
 Add the [ASP.NET Core Accordion](https://www.syncfusion.com/aspnet-core-ui-controls/accordion) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
 <div class="control_wrapper accordion-control-section">
     <ejs-accordion id="defaultAccordion">

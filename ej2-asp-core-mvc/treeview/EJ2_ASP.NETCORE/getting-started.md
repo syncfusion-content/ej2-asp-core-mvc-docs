@@ -134,7 +134,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 Add the [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/treeview/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -146,7 +146,7 @@ The TreeView can load data either from local data sources or remote data service
 In the following example, the TreeView is bound to a local JSON data collection that represents countries and their corresponding states.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/treeview/binding-data/self-referential/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
@@ -183,5 +183,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
