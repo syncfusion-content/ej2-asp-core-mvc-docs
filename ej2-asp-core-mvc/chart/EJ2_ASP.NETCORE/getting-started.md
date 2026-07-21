@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Chart Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -10,104 +10,74 @@ documentation: ug
 
 # Getting Started with the ASP.NET Core Chart Control
 
-This section explains how to add the [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control to your application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio, and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
-To get started quickly with the ASP.NET Core Chart control, watch this video:
+To get started quickly with ASP.NET Core Chart control, you can check out this video.
 
 {% youtube "https://www.youtube.com/watch?v=Vll9DXQ7z4Q" %}
 
-## Prerequisites
-
-Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements) before creating the application.
-
-## Create an ASP.NET Core Web Application with Razor Pages
-
-You can create an ASP.NET Core application using either of the following options:
-
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
-
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+## Create an ASP.NET Core Web App with Razor Pages
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
 
-## Create an ASP.NET Core Razor Pages Project Using Visual Studio
-
-1. Start **Visual Studio** and select **Create a new project**.
-
-2. In the **Create a new project** window, choose **ASP.NET Core Web App (Razor Pages)** → **Next**.
-
-3. In the **Configure your new project** dialog, specify the **project name** (and optionally change location/folder).
-
-4. Click **Next**.
-
-5. In the **Additional information** dialog:
-* Select **.NET 10.0** or the latest supported .NET version.
-* Verify: **Do not use top-level statements** is unchecked.
-
-6. Click **Create**.
-
-For alternative approaches to create the project, see [Create a new project in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/create-new-project?view=visualstudio).
-
-## Install ASP.NET Core Package in the Application
-
-To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET Core** controls in the application, open the NuGet Package Manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it.
-
-Alternatively, you can use the Package Manager Console by navigating to:
-Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
-
-{% tabs %}
-{% highlight bash tabtitle="Package Manager Console" %}
-
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
-
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
 
 {% endtabcontent %}
 
 {% tabcontent Visual Studio Code %}
 
-## Create an ASP.NET Core Razor Pages Project Using Visual Studio Code
-
-1. Install the latest **.NET SDK** that supports **.NET 10.0** or later.
-2. Open **Visual Studio Code**.
-3. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> to open the integrated terminal.
-4. Run the following command to create the project:
+Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight bash tabtitle=".NET CLI" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet new webapp -o SyncfusionApp
-
-{% endhighlight %}
-{% endtabs %}
-
-Then, open the project in a new Visual Studio Code window using the following command:
-
-{% tabs %}
-{% highlight bash tabtitle=".NET CLI" %}
-
 code -r SyncfusionApp
 
 {% endhighlight %}
 {% endtabs %}
 
-## Install ASP.NET Core Package in the Application
+Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio-code#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
-To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chart component, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
+{% endtabcontent %}
 
-1. Navigate to the directory containing the **.csproj** file.
-2. Run the following commands to install the package:
+{% endtabcontents %}
+
+## Install the required ASP.NET Core package
+
+Install the [Syncfusion.AspNetCore.Charts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Charts) NuGet package. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+2. Search the required NuGet package (`Syncfusion.AspNetCore.Charts`) and install it.
+
+Alternatively, you can install the same package using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight bash tabtitle=".NET CLI" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Charts -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.Charts --version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -116,44 +86,40 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 
 {% endtabcontents %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.AspNet.Core NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+## Add ASP.NET Core tag helpers
 
-## Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-
-Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` Tag Helper.
+After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Charts` and `Syncfusion.AspNetCore.Base` tag helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Charts
+@addTagHelper *, Syncfusion.AspNetCore.Base
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add Script Resources
+## Add script resources
 
-Add the script reference inside the `<head>` element of the `~/Pages/Shared/_Layout.cshtml` file as follows.
+The script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Charts/scripts/sf-chart.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+## Register the script manager
 
-## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Register the script manager `<ejs-scripts>` at the end of the `<body>` element in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
@@ -164,37 +130,52 @@ Register the script manager `<ejs-scripts>` at the end of the `<body>` element i
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET Core Chart Control
+## Add the ASP.NET Core Chart control
 
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chart tag helper to the `~/Pages/Index.cshtml` page.
+Add the ASP.NET Core Chart control in the **~/Pages/Index.cshtml** page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 <ejs-chart id="container"></ejs-chart>
 
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application in
-Visual Studio. If you are using Visual Studio Code, run the following command in the terminal:
+## Run the application
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight bash tabtitle=".NET CLI" %}
+{% highlight C# tabtitle="Terminal" %}
+
 dotnet run
+
 {% endhighlight %}
 {% endtabs %}
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chart control will be rendered in the default web browser.
+{% endtabcontent %}
 
-![ASP.NET Core Chart Control](how-to/images/chart.png)
+{% endtabcontents %}
 
-## Render a Chart with Data
+![ASP.NET Core Chart control](how-to/images/chart-control.webp)
 
-To render a column chart, define a data source and bind it to the chart series using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource), [`xName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName), and [`yName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties.
+## Render a Chart with data
+
+To render a column chart, bind a data source to the chart series using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_DataSource), [`xName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_XName), and [`yName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_YName) properties, and set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_Type) property to **Column**. The `dataSource` property specifies the data for the series, while `xName` and `yName` map the x-axis and y-axis fields from the data source. The default series type is **Line**.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 @{
     var chartData = new List<object>
@@ -221,11 +202,11 @@ To render a column chart, define a data source and bind it to the chart series u
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Chart Control](how-to/images/chart-data.png)
+![ASP.NET Core Chart control](how-to/images/chart-data.webp)
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Chart/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
 
-## See Also
+## See also
 
-* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
