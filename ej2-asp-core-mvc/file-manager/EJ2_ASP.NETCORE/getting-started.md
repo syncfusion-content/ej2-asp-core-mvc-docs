@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting started with ASP.NET Core File Manager Control
+# Getting Started with ASP.NET Core File Manager Control
 
 This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -133,7 +133,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 Add the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in the **~/Pages/Index.cshtml** file.
 
-Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files for the File Manager access.
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the File Manager.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
