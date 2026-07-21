@@ -51,7 +51,7 @@ Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Micr
 
 ## Install the required ASP.NET Core packages
 
-Install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+Install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for more details.
 
 {% tabcontents %}
 

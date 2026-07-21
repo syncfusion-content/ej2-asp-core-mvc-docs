@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## TreeView Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -11,71 +11,114 @@ documentation: ug
 
 # Getting Started with ASP.NET Core TreeView Control
 
-This section briefly explains about how to include [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-## Prerequisites
+## Create ASP.NET Core Web App with Razor Pages
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+{% tabcontents %}
 
-## Create ASP.NET Core web application with Razor pages
+{% tabcontent Visual Studio %}
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+{% endtabcontent %}
 
-## Install ASP.NET Core package in the application
+{% tabcontent Visual Studio Code %}
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Terminal" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+dotnet new webapp -o RazorPagesTreeView
+code -r RazorPagesTreeView
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio-code#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Install the required ASP.NET Core packages
+
+Install the [Syncfusion.AspNetCore.Navigations](https://www.nuget.org/packages/Syncfusion.AspNetCore.Navigations) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for more details.
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.Navigations` and `Syncfusion.AspNetCore.Themes`) and install them.
+
+Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-@addTagHelper *, Syncfusion.EJ2
+Install-Package Syncfusion.AspNetCore.Navigations -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following commands.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.Navigations --version {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Add ASP.NET Core tag helpers
+
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Navigations` and `Syncfusion.AspNetCore.Base` tag helpers.
+
+{% tabs %}
+{% highlight C# tabtitle="_ViewImports.cshtml" %}
+
+@addTagHelper *, Syncfusion.AspNetCore.Navigations
+@addTagHelper *, Syncfusion.AspNetCore.Base
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    ...
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-treeview.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+## Register the script manager
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
-
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
@@ -86,9 +129,9 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core TreeView control
+## Add the ASP.NET Core TreeView control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeView tag helper in **~/Pages/Index.cshtml** page.
+Add the [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -98,7 +141,9 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeV
 
 ## Binding data source
 
-TreeView can load data either from local data sources or remote data services. This can be done using the dataSource property that is a member of the fields property. The dataSource property supports array of JavaScript objects and DataManager. Here, an array of JSON values is passed to the TreeView control.
+The TreeView can load data either from local data sources or remote data services. This is achieved through the `dataSource` property available within the fields configuration. The dataSource property accepts both an array of JavaScript objects and a **DataManager** instance.
+
+In the following example, the TreeView is bound to a local JSON data collection that represents countries and their corresponding states.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -106,9 +151,33 @@ TreeView can load data either from local data sources or remote data services. T
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeView control will be rendered in the default web browser.
+## Run the application
 
-![ASP.NET Core TreeView Control](images/binding-self.PNG)
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet run
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+![ASP.NET Core TreeView Control](images/treeview-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Treeview/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
