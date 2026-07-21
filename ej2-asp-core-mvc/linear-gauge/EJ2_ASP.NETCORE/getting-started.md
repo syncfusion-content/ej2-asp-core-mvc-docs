@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Linear Gauge Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Linear Gauge control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ASP.NET Core Linear Gauge control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Linear Gauge
 publishingplatform: ##Platform_Name##
