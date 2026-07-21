@@ -29,7 +29,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet new webapp -o RazorPagesMovie
 code -r RazorPagesMovie
@@ -43,23 +43,24 @@ Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [
 
 {% endtabcontents %}
 
-## Install the required ASP.NET Core package
+## Install the required ASP.NET Core packages
 
-Install the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet package. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+Install the [Syncfusion.AspNetCore.PivotView](https://www.nuget.org/packages/Syncfusion.AspNetCore.PivotView/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
 {% tabcontent Visual Studio %}
 
 1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
-2. Search the required NuGet package (`Syncfusion.EJ2.AspNet.Core`) and install it.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.PivotView` and  `Syncfusion.AspNetCore.Themes`) and install them.
 
-Alternatively, you can install the same package using the Package Manager Console with the following commands.
+Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
 {% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.PivotView -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -71,9 +72,10 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 Open the terminal and run the following commands.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
-dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.PivotView -v {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -82,14 +84,15 @@ dotnet add package Syncfusion.EJ2.AspNet.Core --version {{ site.releaseversion }
 
 {% endtabcontents %}
 
-## Add ASP.NET Core Tag Helper
+## Add ASP.NET Core Tag Helpers
 
-After the package is installed, open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` Tag Helper.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.PivotView` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.PivotView
 
 {% endhighlight %}
 {% endtabs %}
@@ -104,9 +107,9 @@ The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfus
 <head>
     ...
     @* ASP.NET Core controls styles *@
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
     @* ASP.NET Core controls scripts *@
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.PivotView/scripts/sf-pivotview.min.js"></script>
 </head>
 
 {% endhighlight %}
