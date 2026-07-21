@@ -1,26 +1,58 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core using Razor pages | Syncfusion
-description: Check out and learn about building an ASP.NET Core application with DataGrid control using razor pages and tag helpers in Visual Studio.
+description: Check out and learn about building an ASP.NET Core application with DataGrid control using razor pages and tag helpers.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core using Razor pages in Visual Studio
+# Getting Started with ASP.NET Core using Razor pages
 
-This article provides step-by-step instructions for building ASP.NET Core application with [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control using razor pages in [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This article provides step-by-step instructions for building ASP.NET Core application with [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control using razor pages in [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Create an ASP.NET Core Web App with Razor Pages
 
-Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+{% tabcontents %}
 
-## Install the required ASP.NET Core packages
+{% tabcontent Visual Studio %}
 
-To add **ASP.NET Core DataGrid** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
-Alternatively, you can install the same package using the Package Manager Console with the following command.
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Run the following command to create a new ASP.NET Core Web App.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet new webapp -o RazorPagesMovie
+code -r RazorPagesMovie
+
+{% endhighlight %}
+{% endtabs %}
+
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+
+{% endtabcontent %}
+
+{% endtabcontents %}
+
+## Install the required ASP.NET Core package
+
+Install [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+1. Go to *Tools → NuGet Package Manager → Manage NuGet Packages for Solution*.
+2. Search the required NuGet packages (`Syncfusion.AspNetCore.Grid` and `Syncfusion.AspNetCore.Themes`) and install them.
+
+Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager Console" %}
@@ -29,7 +61,26 @@ Install-Package Syncfusion.AspNetCore.Grid -Version {{ site.releaseversion }}
 Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
-{% endtabs %} 
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following commands.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet add package Syncfusion.AspNetCore.Grid -v {{ site.releaseversion }}
+dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Add the ASP.NET Core Tag Helpers
 
@@ -115,7 +166,29 @@ public class Order
 
 ## Run the application
 
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
+
+{% tabs %}
+{% highlight razor tabtitle="Terminal" %}
+
+dotnet run
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ![ASP.NET Core DataGrid with Columns Data](images/column.webp)
 
