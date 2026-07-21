@@ -150,9 +150,7 @@ N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-
 
 If the Chart control does not render as expected, review the following common issues and their resolutions.
 
-* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register).
-
-* **Chart area is blank with no errors** — The script reference is missing or the `{{ site.ej2version }}` placeholder did not resolve. Verify that `<script src="...ej2.min.js"></script>` loads in the browser (DevTools → Network), and confirm the version constant in `_config.yml` is set.
+* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application).
 
 * **"Script Manager is not defined" or scripts run twice** — `@Html.EJS().ScriptManager()` was not added, or was added more than once. Ensure `ScriptManager` is registered exactly once at the end of `<body>` in `_Layout.cshtml`.
 
@@ -164,8 +162,8 @@ If the Chart control does not render as expected, review the following common is
 
 ## See also
 
-* [Chart Types in ASP.NET MVC (HTML Helper)](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types)
-* [Data Binding in ASP.NET MVC Chart (HTML Helper)](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/data-binding)
+* [Chart Types in ASP.NET MVC ](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types)
+* [Data Binding in ASP.NET MVC Chart ](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/working-with-data)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)

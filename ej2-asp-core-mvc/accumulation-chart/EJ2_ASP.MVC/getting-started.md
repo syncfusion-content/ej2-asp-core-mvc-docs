@@ -133,29 +133,16 @@ N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-
 
 If the Accumulation Chart control does not render as expected, review the following common issues and their resolutions.
 
-* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register).
-
-* **Chart area is blank with no errors** — The script reference is missing or the `{{ site.ej2version }}` placeholder did not resolve. Verify that `<script src="...ej2.min.js"></script>` loads in the browser (DevTools → Network), and confirm the version constant in `_config.yml` is set.
+* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application).
 
 * **"Script Manager is not defined" or scripts run twice** — `@Html.EJS().ScriptManager()` was not added, or was added more than once. Ensure `ScriptManager` is registered exactly once at the end of `<body>` in `_Layout.cshtml`.
 
-* **"Could not load file or assembly 'Syncfusion.EJ2'"** — The NuGet package was not restored. Run `Update-Package -reinstall` in the Package Manager Console, or restore via Visual Studio (right-click solution → Restore NuGet Packages).
-
-* **Chart renders but no data points appear** — `xName` / `yName` do not match the property names in the data source. Property names are case-sensitive; verify they match the JSON field names exactly (e.g., `x`, `y`).
-
-* **Pie chart slices overlap or labels are cut off** — The default `AccumulationDataLabelSettings` need to be configured. Enable data labels with `.DataLabel(dl => dl.Visible(true).Name("text"))` on the `AccumulationSeries`, or set the chart `Width` / `Height` to a larger size.
-
-* **`accumulation-charts/datalabel/initial/razor` include renders empty** — The `code-snippet/` shared content path is missing or not published locally. Verify the `_includes`/`code-snippet` folder exists in the docs source and is built, or inline the chart markup directly.
-
-* **CSS is missing (unstyled chart, oversized fonts)** — Only `ej2.min.js` is referenced; no theme stylesheet is included. Add `<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/styles/fabric.css" />` (or `material.css` / `bootstrap4.css`) inside `<head>`.
+* **Chart renders but no data points appear** — `XName` / `YName` do not match the property names in the data source. Property names are case-sensitive; verify they match the JSON field names exactly (e.g., `x`, `y`).
 
 * **`Newtonsoft.Json` reference error after upgrade** — `Syncfusion.EJ2.MVC5` requires a specific `Newtonsoft.Json` version. Install a compatible `Newtonsoft.Json` version (≥ 12.0.2) via NuGet.
 
-> For more complex issues, see the [Syncfusion ASP.NET MVC troubleshooting guide](https://ej2.syncfusion.com/aspnetmvc/documentation/common/troubleshooting) or open a support ticket via the [Syncfusion support portal](https://www.syncfusion.com/support).
-
 ## See also
 
-* [Pie series in ASP.NET MVC Accumulation Chart (HTML Helper)](https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/pie-series)
-* [Doughnut chart in ASP.NET MVC (HTML Helper)](https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/doughnut)
-* [Data labels in ASP.NET MVC Accumulation Chart (HTML Helper)](https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/data-label)
+* [Pie series and doughnut chart in ASP.NET MVC ](https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/pie-dough-nut)
+* [Data labels in ASP.NET MVC Accumulation Chart](https://ej2.syncfusion.com/aspnetmvc/documentation/accumulation-chart/data-label)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)

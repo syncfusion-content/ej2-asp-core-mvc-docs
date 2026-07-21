@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ##Platform_Name## Maps Component | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -147,7 +147,7 @@ N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-
 
 If the Maps control does not render as expected, review the following common issues and their resolutions.
 
-* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register).
+* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application).
 
 * **"Could not find file '~/App_Data/WorldMap.json'"** — The map data file has not been placed in the project. Download `WorldMap.json` from the [Syncfusion samples download page](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487), save it to `~/App_Data/WorldMap.json`, then rebuild and re-run.
 
