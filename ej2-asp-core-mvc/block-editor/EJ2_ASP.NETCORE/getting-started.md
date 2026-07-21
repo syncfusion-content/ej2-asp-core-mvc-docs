@@ -2,6 +2,7 @@
 layout: post
 title: Getting Started with ASP.NET Core BlockEditor Control | Syncfusion
 description: Checkout and learn about getting started with Syncfusion Essential ASP.NET Core BlockEditor control, its elements, and more details.
+canonical_url: "https://www.syncfusion.com/rich-text-editor-sdk/aspnet-core-block-editor"
 platform: ej2-asp-core-mvc
 control: BlockEditor
 publishingplatform: ##Platform_Name##
@@ -11,7 +12,9 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Block Editor control
 
-This section briefly explains about how to include `ASP.NET Core BlockEditor` control in your ASP.NET Core application using Visual Studio.
+The Syncfusion ASP .NET Core BlockEditor is a block-based content editing control that enables users to create, edit, and organize rich content using a flexible, block-driven authoring experience. This section briefly explains about how to include `ASP.NET Core BlockEditor` control in your ASP.NET Core application using Visual Studio.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
 ## Prerequisites
 
@@ -19,13 +22,23 @@ This section briefly explains about how to include `ASP.NET Core BlockEditor` co
 
 ## Create ASP.NET Core web application with Razor pages
 
+You can create the ASP.NET Core web application with Razor pages by two types they are mentioned below along with the steps. Follow one of these types to create an ASP .NET Core project.
+
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET Core package in the application
+## Install Syncfusion ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+You can add the Syncfusion BlockEditor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core package. This can be done in two ways, they are mentioned below
+
+### 1. Using NuGet Package Manager
+
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and install it directly.
+
+### 2. Using Package Manager Console
+
+Run the following command in the Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -34,6 +47,8 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
+
+I> Ensure you're running the command inside Visual Studio's Package Manager Console (Tools → NuGet Package Manager → Package Manager Console), not in a terminal like CMD or PowerShell.
 
 N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
@@ -99,6 +114,10 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Block
 {% include code-snippet/block-editor/getting-started/gettingstarted.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+I> When the BlockEditor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
+
+## Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core BlockEditor control will be rendered in the default web browser.
 
