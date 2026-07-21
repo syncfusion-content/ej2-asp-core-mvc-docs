@@ -1,18 +1,18 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core using Razor pages | Syncfusion
-description: Check out and learn about building an ASP.NET Core application with DataGrid control using razor pages and tag helpers in Visual Studio.
+description: Check out and learn about building an ASP.NET Core application with DataGrid control using razor pages and tag helpers.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core using Razor pages in Visual Studio
+# Getting Started with ASP.NET Core using Razor pages
 
-This article provides step-by-step instructions for building ASP.NET Core application with [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control using razor pages in [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This article provides step-by-step instructions for building ASP.NET Core application with [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control using razor pages in [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-## Create an ASP.NET Core Web App with Razor pages
+## Create an ASP.NET Core Web App with Razor Pages
 
 {% tabcontents %}
 
