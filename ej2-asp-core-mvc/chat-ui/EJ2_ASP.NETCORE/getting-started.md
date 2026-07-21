@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Chat UI control
 
-This section briefly explains about how to include `ASP.NET Core Chat UI` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include `ASP.NET Core Chat UI` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -71,7 +71,7 @@ N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/
 
 ## Register Syncfusion Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

@@ -23,7 +23,7 @@ This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg
 
 **NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishes all ASP.NET MVC (EJ2) NuGet packages on [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages can be used without installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup. You can simply reference the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages in an ASP.NET MVC application to develop with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components.
 
-> **Note:** The `Syncfusion.EJ2.MVC5` NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components in a single package, is available beginning with v16.1.0.24 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 1).
+N> The `Syncfusion.EJ2.MVC5` NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components in a single package, is available beginning with v16.1.0.24 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 1).
 
 ## Installation Using the Package Manager UI
 
@@ -45,7 +45,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 2. The Manage NuGet Packages window will open. Navigate to the **Browse** tab, then search for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages using a term like **`Syncfusion.EJ2.MVC5`**, and select the appropriate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet package for your development.
 
-    > **Note:** The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the **Package source** drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft docs](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
+    N> The [nuget.org](https://api.nuget.org/v3/index.json) package source is selected by default in the **Package source** drop-down. If your Visual Studio does not have nuget.org configured, follow the instructions in the [Microsoft docs](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to set up the nuget.org feed URL.
 
     ![ASP.NET MVC NuGet Packages Search](images/NuGetSearch.png)
 
@@ -81,7 +81,7 @@ The **Package Manager Console** saves NuGet package installation time since you 
     Install-Package Syncfusion.EJ2.MVC5
     ```
 
-    > **Note:** You can find the list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages published on nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Mvc%20EJ2%22+syncfusion).
+    N> You can find the list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages published on nuget.org from [here](https://www.nuget.org/packages?q=Tags%3A%22AspNet.Mvc%20EJ2%22+syncfusion).
 
     **Install the specified Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet package in a specified ASP.NET MVC application**
 
