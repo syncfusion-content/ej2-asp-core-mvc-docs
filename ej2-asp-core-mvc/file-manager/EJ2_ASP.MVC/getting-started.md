@@ -100,7 +100,7 @@ Update a `HomeController.cs` file with the following code. Create a `Content/Fil
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC File Manager control will be rendered in the default web browser.
 
-![ASP.NET MVC File Manager Control](images/getting-started.png)
+![ASP.NET MVC File Manager Control](../images/getting-started.webp)
 
 N> The File Manager can be rendered with `local service` for sending ajax request. Ajax request will be sent to the server which then processes the request and sends back the response. Refer Controller file for File Manager service.
 
