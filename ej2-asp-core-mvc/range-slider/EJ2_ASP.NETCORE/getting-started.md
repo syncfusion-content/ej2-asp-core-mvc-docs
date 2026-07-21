@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Range Slider Control
+title: Getting Started with ASP.NET Core Range Slider Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Range Slider control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Range Slider
@@ -98,7 +98,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 3. [Range Slider Types](./types)
 4. [Range Slider Formatting](./format)
