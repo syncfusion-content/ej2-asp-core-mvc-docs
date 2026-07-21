@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Ribbon Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Ribbon
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,22 @@ This section briefly explains how to include the `ASP.NET MVC Ribbon` control in
 
 ## Prerequisites
 
-[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+### .NET and Visual Studio compatibility
+
+| .NET Version | Visual Studio Version |
+|--------------|------------------------------|
+| .NET Framework 4.6.2 | Visual Studio 2015 Update 3 or later |
+
+### Browser support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
 
 ## Create ASP.NET MVC application with HTML helper
 
@@ -48,7 +63,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of the `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -64,11 +79,11 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -94,7 +109,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Ribbon
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Tab
+## Adding Ribbon tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `Tabs` property of ribbon to define the ribbon tab like below.
 
@@ -109,7 +124,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `Ta
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Group
+## Adding Ribbon group
 
 To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below. The `Orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
@@ -127,7 +142,7 @@ To define a ribbon group under each tab, you can use the `Groups` property of ri
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Items
+## Adding Ribbon items
 
 You can use the `Collections` property of ribbon group to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `Items` property of ribbon collection and the `Type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
