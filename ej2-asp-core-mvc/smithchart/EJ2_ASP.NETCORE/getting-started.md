@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Smith Chart Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Smith Chart control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Smith Charts Control | Syncfusion
+description: Check out and learn about getting started with ASP.NET Core Smith Charts control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Smith Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Smith Chart Control
+# Getting Started with ASP.NET Core Smith Charts Control
 
 This section briefly explains how to include the [ASP.NET Core Smith Chart](https://www.syncfusion.com/aspnet-core-ui-controls/smith-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
