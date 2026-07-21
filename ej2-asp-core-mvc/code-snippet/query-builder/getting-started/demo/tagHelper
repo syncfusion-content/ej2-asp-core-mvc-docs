@@ -1,5 +1,6 @@
 @page
 @model IndexModel
+@using Syncfusion.EJ2.QueryBuilder
 
 @{
 	List<string> values = new List<string> { "Mr.", "Mrs." };
