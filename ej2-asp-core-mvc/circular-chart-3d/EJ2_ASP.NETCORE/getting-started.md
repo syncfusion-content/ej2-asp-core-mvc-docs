@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core 3D Circular Charts Control
 
-This section briefly explains how to include the [ASP.NET Core 3D Circular Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-circular-chart) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core 3D Circular Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-circular-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create an ASP.NET Core Web App with Razor Pages
 
