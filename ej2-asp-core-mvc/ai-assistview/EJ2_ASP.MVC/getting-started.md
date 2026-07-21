@@ -12,7 +12,24 @@ documentation: ug
 
 This section briefly explains how to include the [ASP.NET MVC AI AssistView](https://www.syncfusion.com/aspnet-mvc-ui-controls/ai-assistview) control in your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
+## Prerequisites
 
+### .NET and Visual Studio compatibility
+
+| .NET Version | Visual Studio Version |
+|--------------|------------------------------|
+| .NET Framework 4.6.2 | Visual Studio 2015 Update 3 or later |
+
+### Browser support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
 
 ## Create an ASP.NET MVC Web App with HTML Helper
 
