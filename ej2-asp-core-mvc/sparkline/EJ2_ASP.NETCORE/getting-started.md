@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Sparkline Charts Control | Syncfusion
+title: Get Started with ASP.NET Core Sparkline Charts Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Sparkline Charts control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Sparkline Charts
