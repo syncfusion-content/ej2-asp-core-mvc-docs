@@ -3,8 +3,8 @@ layout: post
 title: Getting Started with ASP.NET Core DropDownTree Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core DropDownTree control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
-publishingplatform: ASP.NET Core
+control: DropDownTree
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -130,6 +130,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to bind the data in the ASP.NET Core DropDownTree](./data-binding)

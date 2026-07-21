@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET Core  Auto Complete | Syncfusion
 description: Checkout and learn about getting started with ASP.NET Core  Auto Complete control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: AutoComplete
-publishingplatform: ASP.NET Core 
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -92,7 +92,7 @@ Add the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) control will render in your default web browser.
 
-![ASP.NET Core AutoComplete Control](images/autocomplete-component.png)
+![ASP.NET Core AutoComplete Control](images/autocomplete-component.webp)
 
 ## Custom values
 
@@ -106,7 +106,7 @@ The [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-contro
 
 ## Configure the suggestion list
 
-By default, the suggestion list width automatically adjusts according to the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) input element's width, and the height of the suggestion list is '300px'.
+By default, the suggestion list width automatically adjusts according to the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) input element's width, and the height of the suggestion list is **300px**.
 
 The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupHeight_System_String_) and [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_PopupWidth_System_String_) properties respectively.
 

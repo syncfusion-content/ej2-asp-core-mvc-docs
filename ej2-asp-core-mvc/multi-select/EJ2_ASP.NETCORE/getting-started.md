@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET Core MultiSelect Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET Core MultiSelect control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: MultiSelect
-publishingplatform: ASP.NET Core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
