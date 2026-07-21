@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Inline AI Assist control
 
-This section briefly explains about how to include the `ASP.NET Core Inline AI Assist` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the `ASP.NET Core Inline AI Assist` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -68,7 +68,7 @@ Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagH
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are referred using CDN inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are   referred using CDN inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -90,7 +90,7 @@ N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore
 
 ## Register Syncfusion<sup>&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}

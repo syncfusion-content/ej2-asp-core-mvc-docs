@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Ribbon Control
 
-This section briefly explains about how to include the `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ This section briefly explains about how to include the `ASP.NET Core Ribbon` con
 |    Opera    |    Latest Version  |
 |    Microsoft Internet Explorer    |    11  |
 
-## Create ASP.NET Core web application with Razor pages
+## Create an ASP.NET Core web application with Razor Pages
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
@@ -43,7 +43,7 @@ This section briefly explains about how to include the `ASP.NET Core Ribbon` con
 
 ## Install ASP.NET Core package in the application (via .NET CLI)
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, Open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -90,7 +90,7 @@ N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -106,7 +106,7 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 
 ## Add ASP.NET Core Ribbon control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper in the `~/Pages/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -116,7 +116,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbo
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon tab
+## Adding Ribbon Tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
 
@@ -132,7 +132,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon group
+## Adding Ribbon Group
 
 To define a ribbon group under each tab, you can use the `e-ribbon-group` tag helper like below. The `Orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
@@ -152,7 +152,7 @@ To define a ribbon group under each tab, you can use the `e-ribbon-group` tag he
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon items
+## Adding Ribbon Items
 
 You can use the `e-ribbon-collection` tag helper to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `e-ribbon-item` tag helper and the `Type` property to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
