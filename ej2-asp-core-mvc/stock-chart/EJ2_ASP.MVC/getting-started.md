@@ -149,7 +149,7 @@ If the Stock Chart control does not render as expected, review the following com
 
 * **Period selector / range selector missing** — Stock Chart requires `PrimaryXAxis` to be a `ValueType.DateTime` axis and the data source to be sorted by date. Add `.ValueType(Syncfusion.EJ2.Charts.ValueType.DateTime)` to `PrimaryXAxis` and verify the data is sorted ascending by date.
 
-* **Theme is not applied (unstyled chart)** — The `fluent.css` reference is missing or the path is wrong. Add `<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />` (or replace with `material.css` / `fabric.css` / `bootstrap4.css`) inside `<head>`.
+* **Theme is not applied** — The `fluent.css` reference is missing or the path is wrong. Add `<link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />` (or replace with `material.css` / `fabric.css` / `bootstrap4.css`) inside `<head>`.
 
 * **`Newtonsoft.Json` reference error after upgrade** — `Syncfusion.EJ2.MVC5` requires a specific `Newtonsoft.Json` version. Install a compatible `Newtonsoft.Json` version (≥ 12.0.2) via NuGet.
 
