@@ -16,9 +16,9 @@ You can explore some useful features in the Maps control using the following vid
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
-## Create an ASP.NET MVC Application with HTML Helper
+## Create an ASP.NET MVC Web App with HTML Helper
 
-Create an ASP.NET MVC using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) or the [Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET MVC Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper) documentation.
+Create an **ASP.NET MVC Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) or the [Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET MVC Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper) documentation.
 
 ## Install the required ASP.NET MVC package
 
@@ -57,7 +57,7 @@ The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetmvc
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <!-- ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -73,7 +73,7 @@ Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager 
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    <!-- ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
 

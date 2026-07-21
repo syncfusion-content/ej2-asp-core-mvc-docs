@@ -12,9 +12,9 @@ documentation: ug
 
 This section briefly explains how to include the [ASP.NET MVC Chat UI](https://www.syncfusion.com/aspnet-mvc-ui-controls/chat-ui) control in your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
-## Create an ASP.NET MVC Application with HTML Helper
+## Create an ASP.NET MVC Web App with HTML Helper
 
-Create an ASP.NET MVC using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) or the [Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET MVC Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper) documentation.
+Create an **ASP.NET MVC Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app) or the [Syncfusion® ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET MVC Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper) documentation.
 
 ## Install the required ASP.NET MVC package
 
@@ -53,9 +53,9 @@ The theme stylesheet and script can be referenced from the [CDN](https://ej2.syn
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET MVC controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <!-- ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent2.css" />
+    <!-- ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
@@ -71,7 +71,7 @@ Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager 
 
 <body>
 ...
-    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    <!-- ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
     
 </body>
