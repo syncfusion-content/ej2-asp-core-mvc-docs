@@ -94,8 +94,6 @@ The Rich Text Editor control's accessibility levels are ensured through an [acce
 
 The accessibility compliance of the Rich Text Editor control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/rich-text-editor.html) in a new window to evaluate the accessibility of the Rich Text Editor control with accessibility tools.
 
-{% previewsample "https://ej2.syncfusion.com/accessibility/rich-text-editor.html" %}
-
 ## See Also
 
 * [General Accessibility Guidelines](../common/accessibility)

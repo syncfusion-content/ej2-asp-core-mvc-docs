@@ -45,7 +45,7 @@ The following example illustrates how to set up the `ImportWord` in the Rich Tex
 
 The Rich Text Editor provides functionality to import Word documents with authentication for secure importing.
 
-The [wordImporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorWordImporting.html) event provides [UploadingEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.uploader.html) for secure Word file import. Use `currentRequest` to add authentication headers and `customFormData` to include extra parameters in the POST body along with the uploaded file. On the server, read headers and form data from the request to validate and process the import securely.
+The [wordImporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_ImportWord) event provides [UploadingEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.inputs.uploader.html) for secure Word file import. Use `currentRequest` to add authentication headers and `customFormData` to include extra parameters in the POST body along with the uploaded file. On the server, read headers and form data from the request to validate and process the import securely.
 
 The following example demonstrates how to configure `wordImporting` for secure importing:
 
@@ -107,7 +107,7 @@ The following example demonstrates how to configure the `ExportWord` and `Export
 
 The Rich Text Editor provides functionality to export Word or PDF documents with authentication for secure exporting.
 
-The [documentExporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorDocumentExporting.html) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
+The [documentExporting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_DocumentExporting) event provides `ExportingEventArgs` for secure export of Word or PDF files. Use `exportType` to identify the format, `currentRequest` to add authentication headers, and `customFormData` to send extra parameters in the POST body. On the server, read headers and custom data to validate and process the export securely.
 
 The following example demonstrates how to configure `documentExporting` for secure exporting:
 
