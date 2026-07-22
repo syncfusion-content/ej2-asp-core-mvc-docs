@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Barcode Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Barcode control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Barcode Generator Control | Syncfusion
+description: Check out and learn about getting started with ASP.NET Core Barcode Generator control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Barcode
+control: Barcode Generator
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Barcode Control
+# Getting Started with ASP.NET Core Barcode Generator Control
 
-This section briefly explains how to include the [ASP.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Barcode Generator](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create an ASP.NET Core Web App with Razor Pages
 
@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core package
 
-To add **ASP.NET Core Barcode** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.BarcodeGenerator](https://www.nuget.org/packages/Syncfusion.AspNetCore.BarcodeGenerator/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add **ASP.NET Core Barcode Generator** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.BarcodeGenerator](https://www.nuget.org/packages/Syncfusion.AspNetCore.BarcodeGenerator/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -78,9 +78,9 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Barcode Control
+## Add ASP.NET Core Barcode Generator Control
 
-Add the [ASP.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control in the **~/Pages/Index.cshtml** file.
+Add the [ASP.NET Core Barcode Generator](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -90,15 +90,15 @@ Add the [ASP.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-control
 
 ## Run the application
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Barcode](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Barcode Generator](https://www.syncfusion.com/aspnet-core-ui-controls/barcode) control will render in your default web browser.
 
-![ASP.NET Core Barcode Control](images/barcode-component.webp)
+![ASP.NET Core Barcode Generator Control](images/barcode-component.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Barcode/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## Adding QR Generator control
 
-You can add the QR code in the barcode generator control.
+You can add the QR code in the Barcode Generator control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -110,7 +110,7 @@ You can add the QR code in the barcode generator control.
 
 ## Adding Datamatrix Generator control
 
-You can add the datamatrix code in the barcode generator control.
+You can add the datamatrix code in the Barcode Generator control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
