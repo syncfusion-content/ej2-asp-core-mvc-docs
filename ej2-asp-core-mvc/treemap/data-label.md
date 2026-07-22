@@ -12,6 +12,18 @@ documentation: ug
 
 Data Labels are used to identify the name of items or groups in the TreeMap component. Data Labels will be shown by specifying the data source properties in the `labelPath` of the `leafItemSettings`.
 
+## Add labels
+
+Add labels to show additional information about the items in the TreeMap. By default, the visibility of the label is `true`. Customize label visibility using the `showLabels` property in `leafItemSettings`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/labels/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with Label](images/treemap-with-labels.png)
+
 ## Format
 
 Customize the labels for each item using the `labelFormat` property in the `leafItemSettings`.

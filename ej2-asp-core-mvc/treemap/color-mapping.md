@@ -12,6 +12,18 @@ documentation: ug
 
 Color mapping is used to customize the color for each group or item based on the specified types. The following options are available to customize the group and leaf items in the TreeMap.
 
+## Apply color mapping
+
+Use color mapping to customize item colors based on the underlying value from the bound data source. Specify the field to compare in the `equalColorValuePath` or `rangeColorValuePath` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/color-mapping/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with ColorMapping](images/treemap-with-color-mapping.png)
+
 ## Range color mapping
 
 Range color mapping is used to apply color to the items by giving specific ranges in the DataSource, and it should be specifying the data source properties to the `rangeColorValuePath`. The color mapping ranges to be specified in the `from` and `to` properties of the `colorMapping`.

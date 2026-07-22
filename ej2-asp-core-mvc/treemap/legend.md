@@ -12,6 +12,18 @@ documentation: ug
 
 Legend is used to provide valuable information for interpreting what the TreeMap displays. The legends can be represented in various colors, shapes or other identifiers based on the data.
 
+## Enable legend
+
+Show the legend by setting the `visible` property to `true` in the `legendSettings` object.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/legend/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with Legend](images/treemap-with-legend.png)
+
 ## Position and alignment
 
 Legend position is used to place legend in various positions. Based on the legend position, the legend item will be aligned. For example, if the position is top or bottom, the legend items are placed by rows. If the position is left or right, the legend items are placed by columns.
