@@ -142,7 +142,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 3. [How to perform custom validation using FormValidator](./how-to/perform-custom-validation-using-form-validator)
 4. [How to customize the UI appearance of the control](./how-to/customize-the-ui-appearance-of-the-control)
