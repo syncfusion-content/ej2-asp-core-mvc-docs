@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET Core Mention Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Mention control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Mention
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -120,7 +120,7 @@ The following example, displays the text content along with the mention characte
 
 ## See also
 
-* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to bind the data in ASP.NET Core Mention](./data-binding)
 
