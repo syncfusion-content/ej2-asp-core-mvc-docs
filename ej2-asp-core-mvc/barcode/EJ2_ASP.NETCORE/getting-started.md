@@ -20,7 +20,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 To add **ASP.NET Core Barcode Generator** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.BarcodeGenerator](https://www.nuget.org/packages/Syncfusion.AspNetCore.BarcodeGenerator/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
-Alternatively, you can install the same package using the Package Manager Console with the following command.
+Alternatively, you can install the same package using the Package Manager Console with the following commands.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager Console" %}
@@ -44,7 +44,7 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 {% endhighlight %}
 {% endtabs %}
 
-## Add script resources
+## Add stylesheet and script resources
 
 The theme stylesheet and script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
 
