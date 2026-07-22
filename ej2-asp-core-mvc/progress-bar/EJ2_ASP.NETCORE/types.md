@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Progress Bar types
+# Progress Bar types in ##Platform_Name## ProgressBar Control
 
 Change the type of the Progress Bar by setting the `type` attribute on the `<ejs-progressbar>` tag helper. The default is `Linear`; the supported values are `Linear` and `Circular`.
 

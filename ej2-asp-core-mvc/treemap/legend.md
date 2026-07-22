@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Treemap Control | Sycnfusion
+title: Legend in ##Platform_Name## Treemap Control | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
