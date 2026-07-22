@@ -45,7 +45,7 @@ After the package is installed, open the **~/Pages/_ViewImports.cshtml** file an
 
 ## Add script resources
 
-The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
+The script can be referenced using the [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references). Include the script reference inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
