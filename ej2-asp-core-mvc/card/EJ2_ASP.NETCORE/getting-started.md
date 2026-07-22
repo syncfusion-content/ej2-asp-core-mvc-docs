@@ -80,7 +80,7 @@ Now, add the ASP.NET Core Card tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabcontent Visual Studio %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) control will render in your default web browser.
 
 {% endtabcontent %}
 
