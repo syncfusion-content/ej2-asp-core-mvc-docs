@@ -32,7 +32,7 @@ You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by 
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
-## Install Syncfusion ASP.NET Core Rich Text Editor package in the application
+## Install Syncfusion ASP.NET Core Rich Text Editor and Theme Packages in the Application
 
 You can add the Syncfusion Rich Text Editor to your ASP.NET Core application by installing the Syncfusion ASP.NET Core Rich Text Editor package. This can be done in two ways, as mentioned below:
 
