@@ -104,7 +104,7 @@ dotnet run
 
 You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
 
-* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, andadd content with an element that uses the `e-card-content` class. For detailed information, refer to the [Header and Content](https://ej2.syncfusion.com/aspnetcore/documentation/card/header-content).
+* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and add content with an element that uses the `e-card-content` class. For detailed information, refer to the [Header and Content](https://ej2.syncfusion.com/aspnetcore/documentation/card/header-content).
 
 ```html
     <div class = "e-card">                    --> Root Element
