@@ -19,12 +19,12 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core packages
 
-To add **ASP.NET Core MultiSelect** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.DropDowns](https://www.nuget.org/packages/Syncfusion.AspNetCore.DropDowns) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.DropDowns](https://www.nuget.org/packages/Syncfusion.AspNetCore.DropDowns) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.AspNetCore.DropDowns -Version {{ site.releaseversion }}
 Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
@@ -37,7 +37,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.DropDowns` Tag Helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.AspNetCore.Base
 @addTagHelper *, Syncfusion.AspNetCore.DropDowns
@@ -68,7 +68,7 @@ The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfus
 Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
