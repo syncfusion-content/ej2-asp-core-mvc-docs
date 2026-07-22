@@ -80,7 +80,7 @@ Install the `Syncfusion.AspNetCore.Themes` NuGet package and reference the requi
 {% highlight c# tabtitle="~/_Layout.cshtml" %}
 
 <head>
-    <link href="_content/Syncfusion.AspNetCore.Themes/fluent2.css" rel="stylesheet" />
+    <link href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" rel="stylesheet" />
 </head>
 
 {% endhighlight %}
