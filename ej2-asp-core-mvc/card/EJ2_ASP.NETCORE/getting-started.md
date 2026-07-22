@@ -13,17 +13,34 @@ documentation: ug
 
 This section briefly explains how to include [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) control in your ASP.NET Core application using Visual Studio.
 
-## Prerequisites
-
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
-
 ## Create ASP.NET Core web application with Razor pages
 
-You can create an ASP.NET Core web application with Razor Pages by using one of the following approaches:
+{% tabcontents %}
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
+{% tabcontent Visual Studio %}
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Run the following command to create a new ASP.NET Core Web App.
+
+{% tabs %}
+{% highlight C# tabtitle="Terminal" %}
+
+dotnet new webapp -o RazorPages
+code -r RazorPages
+
+{% endhighlight %}
+{% endtabs %}
+
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Add stylesheet
 
@@ -41,11 +58,11 @@ Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_La
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for ASP.NET Core controls.
 
 ## Add ASP.NET Core Card control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Card tag helper in `~/Pages/Index.cshtml` page.
+Now, add the ASP.NET Core Card tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -57,7 +74,31 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Card 
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Card control will be rendered in the default web browser.
+## Run the application
+
+{% tabcontents %}
+
+{% tabcontent Visual Studio %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control will render in your default web browser.
+
+{% endtabcontent %}
+
+{% tabcontent Visual Studio Code %}
+
+Open the terminal and run the following command.
+
+{% tabs %}
+{% highlight razor tabtitle="Terminal" %}
+
+dotnet run
+
+{% endhighlight %}
+{% endtabs %}
+
+{% endtabcontent %}
+
+{% endtabcontents %}
 
 ## Adding a header and content
 
@@ -88,6 +129,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with Syncfusion ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to add a header and content](./header-content)
