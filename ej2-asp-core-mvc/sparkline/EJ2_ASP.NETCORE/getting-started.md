@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Sparkline Control
+title: Getting Started with ##Platform_Name## Sparkline Control | Syncfusion
 description: Check out and learn about getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -107,21 +107,21 @@ The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ch
 {% highlight c# tabtitle="SparklineData.cs" %}
 public class SparklineData
 {
-    public string xval { get; set; }
-    public double yval { get; set; }
+    public string XValue { get; set; }
+    public double YValue { get; set; }
     public static List<SparklineData> GetData()
     {
         List<SparklineData> data = new List<SparklineData>();
-        data.Add(new SparklineData() { xval = "2005", yval = 20090440 });
-        data.Add(new SparklineData() { xval = "2006", yval = 20264080 });
-        data.Add(new SparklineData() { xval = "2007", yval = 20434180 });
-        data.Add(new SparklineData() { xval = "2008", yval = 21007310 });
-        data.Add(new SparklineData() { xval = "2009", yval = 21262640 });
-        data.Add(new SparklineData() { xval = "2010", yval = 21515750 });
-        data.Add(new SparklineData() { xval = "2011", yval = 21766710 });
-        data.Add(new SparklineData() { xval = "2012", yval = 22015580 });
-        data.Add(new SparklineData() { xval = "2013", yval = 22262500 });
-        data.Add(new SparklineData() { xval = "2014", yval = 22507620 });
+        data.Add(new SparklineData() { XValue = "2005", YValue = 20090440 });
+        data.Add(new SparklineData() { XValue = "2006", YValue = 20264080 });
+        data.Add(new SparklineData() { XValue = "2007", YValue = 20434180 });
+        data.Add(new SparklineData() { XValue = "2008", YValue = 21007310 });
+        data.Add(new SparklineData() { XValue = "2009", YValue = 21262640 });
+        data.Add(new SparklineData() { XValue = "2010", YValue = 21515750 });
+        data.Add(new SparklineData() { XValue = "2011", YValue = 21766710 });
+        data.Add(new SparklineData() { XValue = "2012", YValue = 22015580 });
+        data.Add(new SparklineData() { XValue = "2013", YValue = 22262500 });
+        data.Add(new SparklineData() { XValue = "2014", YValue = 22507620 });
         return data;
     }
 }
@@ -140,11 +140,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 If the Sparkline does not render or you run into build/runtime issues, try the following:
 
 * **Sparkline is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
-* **Sparkline renders with no data points** — Confirm that the data model exposes `xval` and `yval` properties and that the `xName`/`yName` values on the tag helper match the field names exactly.
+* **Sparkline renders with no data points** — Confirm that the data model exposes `XValue` and `YValue` properties and that the `xName`/`yName` values on the tag helper match the field names exactly.
 * **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
 * **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

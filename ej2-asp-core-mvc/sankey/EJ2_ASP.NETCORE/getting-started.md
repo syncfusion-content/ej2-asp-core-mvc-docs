@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sankey Chart Component
-description: Check out and learn about Getting started with ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
+title: Getting started with ##Platform_Name## Sankey Chart Control | Syncfusion
+description: Check out and learn about Getting started with ##Platform_Name## Sankey Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Getting started
 publishingplatform: ##Platform_Name##
@@ -157,4 +157,3 @@ If the Sankey Chart does not render or you run into build/runtime issues, try th
 
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [Sankey Chart Features](https://ej2.syncfusion.com/aspnetcore/documentation/sankey/feature)

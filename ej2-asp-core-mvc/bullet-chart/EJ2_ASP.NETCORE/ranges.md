@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ranges in ##Platform_Name## Bullet Chart Component
-description: Learn all about Ranges in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
+title: Ranges in ##Platform_Name## Bullet Chart Control | Syncfusion
+description: Learn all about Ranges in Syncfusion ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ranges
 publishingplatform: ##Platform_Name##

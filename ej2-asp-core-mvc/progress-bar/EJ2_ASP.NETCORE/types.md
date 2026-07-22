@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Progress Bar Component
-description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Progress Bar Control | Syncfusion
+description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-## Progress Bar type
+# Progress Bar types
 
 Change the type of the Progress Bar by setting the `type` attribute on the `<ejs-progressbar>` tag helper. The default is `Linear`; the supported values are `Linear` and `Circular`.
 
@@ -34,8 +34,7 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/linear/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Linear.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -43,8 +42,7 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/linear/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Linear.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -59,8 +57,7 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/circular/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Circular.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,7 +65,6 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/circular/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Circular.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
