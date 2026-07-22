@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Card Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Card
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Card Control
 
-This section briefly explains about how to include [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -19,7 +19,9 @@ This section briefly explains about how to include [ASP.NET Core Card](https://w
 
 ## Create ASP.NET Core web application with Razor pages
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+You can create an ASP.NET Core web application with Razor Pages by using one of the following approaches:
+
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
@@ -41,7 +43,7 @@ Here, the theme is referred using CDN inside the `<head>` of `~/Pages/Shared/_La
 
 N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-## Add ASP.NET Core Card Control
+## Add ASP.NET Core Card control
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Card tag helper in `~/Pages/Index.cshtml` page.
 
@@ -61,7 +63,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 You can create Card with a header in a specific structure. For adding header you need to create a `div` element with `e-card-header` class added.
 
-* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, and also content will be added by adding element with `e-card-content`. For detailed information, refer to the [Header and Content](https://ej2.syncfusion.com/aspnetcore/documentation/card/header-content).
+* You can include heading inside the Card header by adding a `div` element with `e-card-header-caption` class, andadd content with an element that uses the `e-card-content` class. For detailed information, refer to the [Header and Content](https://ej2.syncfusion.com/aspnetcore/documentation/card/header-content).
 
 ```html
     <div class = "e-card">                    --> Root Element
@@ -80,7 +82,7 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Card Control](images/card-control.png)
+![ASP.NET Core Card Control](../images/card-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
