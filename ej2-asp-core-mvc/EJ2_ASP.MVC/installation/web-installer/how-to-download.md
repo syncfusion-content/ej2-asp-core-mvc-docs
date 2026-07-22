@@ -58,7 +58,7 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
 3. Begin your trial by selecting the ASP.NET MVC - EJ2 product.
 
-   > **Note:** If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
+   N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 
 4. After you've started the trial, go to the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page to get the latest version trial installer. You can generate the [unlock key](https://www.syncfusion.com/kb/8069/how-to-generate-unlock-key-for-essentials-studio-products) and [license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-generate) at any time before the trial period expires (see the screenshot below).
 
@@ -88,7 +88,7 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
 8. After downloading, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 web installer can be unlocked using your Syncfusion<sup style="font-size:70%">&reg;</sup> registered login credentials.
 
-   > **Note:** For Syncfusion<sup style="font-size:70%">&reg;</sup> trial and licensed products, there is no separate web installer. Based on your account license, the Syncfusion<sup style="font-size:70%">&reg;</sup> trial or licensed product will be installed via the web installer.
+   N> For Syncfusion<sup style="font-size:70%">&reg;</sup> trial and licensed products, there is no separate web installer. Based on your account license, the Syncfusion<sup style="font-size:70%">&reg;</sup> trial or licensed product will be installed via the web installer.
 
 For step-by-step installation guidelines, refer to the [Web installer](https://ej2.syncfusion.com/aspnetmvc/documentation/installation/web-installer/how-to-install) documentation.
 

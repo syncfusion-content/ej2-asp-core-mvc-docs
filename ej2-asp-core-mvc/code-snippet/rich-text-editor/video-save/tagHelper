@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="editor">
-    <e-richtexteditor-insertvideosettings saveUrl="/Home/SaveFiles" path="./Files/"></e-richtexteditor-insertvideosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

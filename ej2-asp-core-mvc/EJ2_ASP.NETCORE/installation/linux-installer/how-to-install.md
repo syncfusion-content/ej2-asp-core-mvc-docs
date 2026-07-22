@@ -16,7 +16,6 @@ This guide explains how to extract and use the Syncfusion<sup style="font-size:7
 * The downloaded Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Linux installer in `.zip` format. See [Downloading Syncfusion Linux installer](https://ej2.syncfusion.com/aspnetcore/documentation/installation/linux-installer/how-to-download).
 * A tool to extract `.zip` files, such as `unzip`.
 * For running the bundled ASP.NET Core samples: a supported .NET SDK (3.1, 5.0, 6.0, or later).
-* For running the bundled JavaScript / Vue / React / Angular samples: a current LTS version of Node.js and npm.
 
 ## Step-by-Step Installation
 
@@ -36,7 +35,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
    ![Linux installer - folder structure](images/Linux_Installer2.png)
 
-   > **Note:** The Unlock key is not required to install or use the Linux installer.
+   N> The Unlock key is not required to install or use the Linux installer.
 
 3. You can launch the demo source and use the NuGet packages included in the Linux installer.
 

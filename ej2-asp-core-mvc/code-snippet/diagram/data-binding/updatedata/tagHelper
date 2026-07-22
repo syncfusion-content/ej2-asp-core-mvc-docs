@@ -1,4 +1,0 @@
-<ejs-diagram id="diagram" width="100%" height="550px" getNodeDefaults="@ViewBag.getNodeDefaults" getConnectorDefaults="@ViewBag.getConnectorDefaults" created="diagramCreated">
-            <e-diagram-snapsettings constraints="None"></e-diagram-snapsettings>
-            <e-diagram-datasourcesettings id="Name" crudAction="ViewBag.NodeCrud" connectionDataSource="ViewBag.DataSource"></e-diagram-datasourcesettings>
-</ejs-diagram>

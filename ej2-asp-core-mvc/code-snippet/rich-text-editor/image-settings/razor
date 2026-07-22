@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("image").ToolbarSettings(e => e.Items((object)ViewBag.items)).InsertImageSettings(obj => obj.Display("break")).Value(ViewBag.value).Render()
