@@ -76,7 +76,7 @@ Add the ASP.NET Core Avatar tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabcontent Visual Studio %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control will render in your default web browser.
 
 {% endtabcontent %}
 
