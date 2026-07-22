@@ -224,7 +224,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core DataGrid with Columns Data](images/core-grid-control.webp)
+![ASP.NET Core DataGrid with Columns Data](images/column.png)
 
 ## See also
 
