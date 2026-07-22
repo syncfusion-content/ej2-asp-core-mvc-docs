@@ -35,16 +35,6 @@ This section explains how to include the [ASP.NET Core Tree Grid](https://www.sy
 |    Opera    |    Latest Version  |
 |    Microsoft Internet Explorer    |    11  |
 
-## Create ASP.NET Core web application with Razor pages
-
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
-
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
-
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
 ## Create an new ASP.NET Core Web App with Razor pages
 
 {% tabcontents %}
