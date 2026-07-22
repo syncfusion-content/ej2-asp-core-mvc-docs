@@ -123,3 +123,4 @@ The following example, displays the text content along with the mention characte
 * [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
 * [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 * [How to bind the data in ASP.NET Core Mention](./data-binding)
+
