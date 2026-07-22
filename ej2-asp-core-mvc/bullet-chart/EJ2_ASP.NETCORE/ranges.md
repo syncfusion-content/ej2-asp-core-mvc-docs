@@ -1,17 +1,18 @@
 ---
 layout: post
-title: Ranges in ##Platform_Name## Bullet Chart Component | Syncfusion
-description: Learn here all about Ranges in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
+title: Ranges in ##Platform_Name## Bullet Chart Component
+description: Learn all about Ranges in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ranges
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Ranges in Bullet Chart Control
 
-Ranges represent the quality of a specific range such as **Good**, **Bad** and **Satisfactory** in the Bullet Chart scale. The ending point of a qualitative range is specified in the [`End`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Range.html#Syncfusion_EJ2_Charts_Range_End) property in [`Ranges`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Ranges). The [`Minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Minimum) value of a quantitative scale is considered the starting point of the first range or the previous range end point.
+Add a range by including an `<e-bullet-range>` element inside the `<e-bullet-range-collection>` child of the Bullet Chart.
+
+Ranges represent qualitative categories such as **Good**, **Bad**, and **Satisfactory** along the Bullet Chart scale. The end of a range is specified by the [`end`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Range.html#Syncfusion_EJ2_Charts_Range_End) property within [`ranges`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Ranges). The starting point of the first range is the [`minimum`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Minimum) value of the quantitative scale, or the end of the previous range.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

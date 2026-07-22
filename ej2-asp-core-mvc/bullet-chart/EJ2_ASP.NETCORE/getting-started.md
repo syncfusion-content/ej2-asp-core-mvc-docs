@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Bullet Chart Control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Bullet Chart Control
+description: Check out and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Bullet Chart Control
 
-This section briefly explains about how to include [ASP.NET Core Bullet Chart](https://www.syncfusion.com/aspnet-core-ui-controls/bullet-chart) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Bullet Chart](https://www.syncfusion.com/aspnet-core-ui-controls/bullet-chart) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -25,7 +25,7 @@ This section briefly explains about how to include [ASP.NET Core Bullet Chart](h
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -35,7 +35,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
@@ -65,7 +65,7 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
@@ -99,79 +99,35 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Bullet Chart Control](images/bullet-chart-control.png)
 
-## Bullet Chart With Data
+## Bullet Chart with data
 
-Now, assign the data to `dataSource` property. **value** and **target** values should be mapped with `valueField` and `targetField` respectively.
+Assign the data to the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_DataSource) property and map the **value** and **target** columns to the [valueField](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) and [targetField](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.charts.bulletchart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) properties respectively.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/bullet-chart/getting-started/default/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
+{% highlight c# tabtitle="DefaultBulletData.cs" %}
 public class DefaultBulletData
 {
-    public double value;
-    public double target;
+    public double value { get; set; }
+    public double target { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
 
-## Add Bullet Chart Title
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
-You can add a title using `title` property to the bullet chart to provide quick information to the user about the data plotted in the bullet chart.
+## Troubleshooting
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/title/tagHelper %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="CSHTML.cs" %}
-public class DefaultBulletData
-{
-    public double value;
-    public double target;
-}
-{% endhighlight %}
-{% endtabs %}
+If the Bullet Chart does not render or you run into build/runtime issues, try the following:
 
-![ASP.NET Core Bullet Chart with Title](images/bullet-chart-with-title.png)
-
-## Ranges
-
-You can add a range using `e-bullet-range` of the `e-bullet-range-collection`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/ranges/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-public class DefaultBulletData
-{
-    public double value;
-    public double target;
-}
-{% endhighlight %}
-{% endtabs %}
-
-## Tooltip
-
-You can use tooltip for the bullet chart by setting the `enable` property to true in `e-bulletchart-tooltipsettings`.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/bullet-chart/getting-started/tooltip/tagHelper %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="CSHTML.cs" %}
-public class DefaultBulletData
-{
-    public double value;
-    public double target;
-}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20Core%20Tag%20Helper%20Examples).
+* **Bullet Chart is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Chart renders but bars/value/target are missing** — Confirm the data model exposes `value` and `target` properties and that the `valueField`/`targetField` attributes match the field names exactly.
+* **Ranges do not appear** — Verify the `<e-bullet-range>` elements are placed inside an `<e-bullet-range-collection>` child of the Bullet Chart.
+* **Tooltip does not show on hover** — Confirm the `<e-bulletchart-tooltipsettings>` child element is present with its `visible` attribute set to `true`.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
+* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
 ## See also
 

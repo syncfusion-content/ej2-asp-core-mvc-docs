@@ -8,10 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+## Progress Bar type
 
-# Types
+Change the type of the Progress Bar by setting the `type` attribute on the `<ejs-progressbar>` tag helper. The default is `Linear`; the supported values are `Linear` and `Circular`.
 
-Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/progress-bar/getting-started/default/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Progress Bar Control](images/default.png)
+
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## Linear
 
