@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core packages
 
-To add the **ASP.NET Core Button Group** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.Buttons](https://www.nuget.org/packages/Syncfusion.AspNetCore.Buttons/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add the **[ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group)** control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Buttons](https://www.nuget.org/packages/Syncfusion.AspNetCore.Buttons) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -55,7 +55,7 @@ The theme stylesheet and script can be referenced from [Static Web Assets](https
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core Button Group Control script -->
     <script src="_content/Syncfusion.AspNetCore.Buttons/scripts/sf-button.min.js"></script>
 </head>
 
@@ -78,7 +78,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Button Group Control
+## Add ASP.NET Core Button Group control
 
 Add the [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) control in the **~/Pages/Index.cshtml** file.
 
@@ -96,11 +96,11 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Orientation
 
-Button Group can be arranged in vertical or horizontal orientation. By default, it is horizontally aligned.
+[ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) can be arranged in vertical or horizontal orientation. By default, it is horizontally aligned.
 
 ### Vertical Orientation
 
-Button Group can be aligned vertically by applying the built-in CSS class `e-vertical` to the target element.
+[ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) can be aligned vertically by applying the built-in CSS class `e-vertical` to the target element.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
