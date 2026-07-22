@@ -35,7 +35,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the packages are installed installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Layouts` Tag Helpers.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Layouts` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
@@ -84,14 +84,14 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 Add the [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in the **~/Pages/Index.cshtml** page.
 
-* Defining the panels property as the attribute in the content template.
+* Define the panels property using the content template.
 * Using the [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property through tag helper.
 
 ### Setting the panels property using content template
 
 DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the following simple code to your **index.cshtml** page which is available within the **Views/Home** folder, to initialize the DashboardLayout.
 
-In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
+In the following sample, the DashboardLayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -113,7 +113,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![Dashboard content template](../images/content_template.webp)
 
-### Setting the panels property using tag helper
+## Setting the panels property using tag helper
 
 You can render the DashboardLayout control by using the **panels** property through [`e-dashboardlayout-panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanels.html) tag helper.
 
