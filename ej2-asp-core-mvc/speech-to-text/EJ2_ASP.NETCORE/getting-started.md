@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Speech To Text Control | Syncfusion
-description: Check out and learn about getting started with Syncfusion Essential ASP.NET Core Speech To Text control, its elements, and more details.
+description: Check out and learn about getting started with Essential ASP.NET Core Speech To Text control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: Speech To Text
 publishingplatform: ##Platform_Name##
