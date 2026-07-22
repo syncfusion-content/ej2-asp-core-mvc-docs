@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core DropDownButton Control
+title: Getting Started with ASP.NET Core DropDownButton Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core DropDownButton Control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: DropDownButton
@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core packages
 
-To add the **ASP.NET Core DropDownButton** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.SplitButtons](https://www.nuget.org/packages/Syncfusion.AspNetCore.SplitButtons/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add the **[ASP.NET Core DropDownButton](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-menu)** control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.SplitButtons](https://www.nuget.org/packages/Syncfusion.AspNetCore.SplitButtons) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
@@ -55,7 +55,7 @@ The theme stylesheet and script can be referenced from [Static Web Assets](https
     ...
     <!-- Syncfusion ASP.NET Core controls styles -->
     <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <!-- Syncfusion ASP.NET Core DropDownButton Control script -->
     <script src="_content/Syncfusion.AspNetCore.SplitButtons/scripts/sf-drop-down-button.min.js" type="text/javascript"></script>
 </head>
 
@@ -78,7 +78,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core DropDownButton Control
+## Add ASP.NET Core DropDownButton control
 
 Add the [ASP.NET Core DropDownButton](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-menu) control in the **~/Pages/Index.cshtml** file.
 
@@ -98,5 +98,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 ## See also
 
-* [Getting Started with ASP.NET Core using Razor pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with ASP.NET Core using Razor pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
