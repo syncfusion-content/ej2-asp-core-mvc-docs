@@ -27,15 +27,13 @@ You can create an ASP.NET MVC web application using either of the following two 
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-W> **Important:** Syncfusion® ASP.NET MVC controls require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
+## Install Syncfusion ASP.NET MVC Rich Text Editor package in the application
 
-## Install Syncfusion ASP.NET MVC package in the application
-
-You can add the Syncfusion Rich Text Editor to your ASP.NET MVC application by installing the Syncfusion ASP.NET MVC package. This can be done in two ways, as mentioned below:
+You can add the Syncfusion Rich Text Editor to your ASP.NET MVC application by installing the Syncfusion ASP.NET MVC Rich Text Editor package. This can be done in two ways, as mentioned below:
 
 ### 1. Using NuGet Package Manager  
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.AspNetMvc.RichTextEditor](https://www.nuget.org/packages/Syncfusion.AspNetMvc.RichTextEditor) and install it directly.
 
 ### 2. Using Package Manager Console  
 
@@ -44,7 +42,7 @@ Run the following command in the Package Manager Console:
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
+Install-Package Syncfusion.AspNetMvc.RichTextEditor -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
