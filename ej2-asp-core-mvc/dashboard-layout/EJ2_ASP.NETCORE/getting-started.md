@@ -11,49 +11,44 @@ documentation: ug
 
 # Getting Started with ASP.NET Core DashboardLayout Control
 
-This section briefly explains how to include [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in your ASP.NET Core application using Visual Studio.
-
-## Prerequisites
-
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+This section briefly explains how to include [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create ASP.NET Core web application with Razor pages
 
-You can create an ASP.NET Core web application with Razor Pages by using one of the following approaches:
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
-
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can utilize the following package manager command to install the same package.
+To add [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+
+Alternatively, you can install the same package using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Layouts -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+## Add the ASP.NET Core Tag Helper
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-
-Open **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.EJ2` TagHelper.
+After the packages are installed installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Layouts` Tag Helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Layouts
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -69,13 +64,9 @@ Here, the theme and script are referred using CDN inside the `<head>` of **~/Pag
 {% endhighlight %}
 {% endtabs %}
 
-N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+## Register the Script Manager
 
-N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
-
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -91,7 +82,7 @@ Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the 
 
 ## Add ASP.NET Core DashboardLayout control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DashboardLayout tag helper in **~/Pages/Index.cshtml** page.
+Add the [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in the **~/Pages/Index.cshtml** page.
 
 * Defining the panels property as the attribute in the content template.
 * Using the [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property through tag helper.
@@ -103,10 +94,10 @@ DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](htt
 In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/dashboard-layout/getting-started/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 ...
 public class spacingModel
 {
@@ -116,9 +107,11 @@ public class spacingModel
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core DashboardLayout control will be rendered in the default web browser.
+## Run the application
 
-![Dashboard content template](../images/content_template.png)
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control will render in your default web browser.
+
+![Dashboard content template](../images/content_template.webp)
 
 ### Setting the panels property using tag helper
 
@@ -127,10 +120,10 @@ You can render the DashboardLayout control by using the **panels** property thro
 In the following sample, the dashboardlayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using tag helper.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/dashboard-layout/getting-started-panel/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
 ...
 public class spacingModel
 {
@@ -140,11 +133,11 @@ public class spacingModel
 {% endhighlight %}
 {% endtabs %}
 
-![Dashboard tag helper](../images/tag_helper.png)
+![Dashboard tag helper](../images/tag_helper.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
