@@ -1,5 +1,5 @@
 @{
-    ...
+
     List<CircularChartData> circularData = new List<CircularChartData>
     {
         new CircularChartData { X = "Chrome",            Y = 62.92 },
