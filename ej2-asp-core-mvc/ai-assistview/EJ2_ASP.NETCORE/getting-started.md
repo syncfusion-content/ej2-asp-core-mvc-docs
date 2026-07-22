@@ -12,6 +12,29 @@ documentation: ug
 
 This section briefly explains about how to include the [ASP.NET Core AI AssistView](https://www.syncfusion.com/aspnet-core-ui-controls/ai-assistview) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
+## Prerequisites
+
+### .NET and Visual Studio compatibility
+
+| .NET version | Minimum Visual Studio version |
+|--------------|------------------------------|
+| .NET 10.0 | Visual Studio 2026 18.0.0 or later |
+| .NET 9.0 | Visual Studio 2022 17.12.0 or later |
+| .NET 8.0 | Visual Studio 2022 17.8.0 or later |
+| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
+| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
+
+### Browser support
+
+|    Browser    |    Versions    |
+|--------------|---------------|
+|    Google Chrome, including Android & iOS    |    Latest Version  |
+|    Mozilla Firefox    |    Latest Version  |
+|    Microsoft Edge    |    Latest Version  |
+|    Apple Safari, including iOS    |    Latest Version  |
+|    Opera    |    Latest Version  |
+|    Microsoft Internet Explorer    |    11  |
+
 ## Create an ASP.NET Core Web App with Razor pages
 
 Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
@@ -46,7 +69,7 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** 
+The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** 
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}
