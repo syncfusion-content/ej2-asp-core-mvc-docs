@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Scheduler Control
 
-This section briefly explains about how to include [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) control in your ASP.NET MVC application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
 
@@ -41,13 +41,15 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are ava
 
 ## Add namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add **Syncfusion.EJ2** namespace reference in `Views/Web.config` (located at `~/Views/Web.config`, not the root `Web.config`).
 
 ```
 <namespaces>
     <add namespace="Syncfusion.EJ2"/>
 </namespaces>
 ```
+
+N> After modifying `Views/Web.config`, rebuild the project to apply the namespace changes.
 
 ## Add stylesheet and script resources
 
@@ -67,7 +69,7 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Views
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
@@ -95,13 +97,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Schedu
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Scheduler control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Scheduler control will be rendered in the default web browser. The Scheduler renders in `Week` view by default, showing the current week with an empty calendar grid and a header toolbar for date navigation.
 
 ![ASP.NET MVC Scheduler Control](images/scheduler.png)
 
 ## Populating appointments
 
-To populate an empty Scheduler with appointments, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleResource.html#Syncfusion_EJ2_Schedule_ScheduleResource_DataSource) property under [EventSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
+To populate an empty Scheduler with events, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property under [EventSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -144,7 +146,7 @@ public class AppointmentData
 
 ## Setting date
 
-Scheduler usually displays the system date as its current date. To change the current date of scheduler with specific date, define the [SelectedDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
+Scheduler usually displays the system date as its current date. To change the current date of the Scheduler to a specific date, define the [SelectedDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -185,7 +187,7 @@ public class AppointmentData
 
 ## Setting view
 
-Scheduler displays `week` view by default. To change the current view, define the applicable view name to the [CurrentView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
+Scheduler displays `Week` view by default. To change the current view, define the applicable view name to the [CurrentView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
 
 * Day
 * Week
