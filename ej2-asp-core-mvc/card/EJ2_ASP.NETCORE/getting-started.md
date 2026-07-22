@@ -69,7 +69,7 @@ You can create Card with a header in a specific structure. For adding header you
 ```
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/card/demo/tagHelper %}
 {% endhighlight %}
 {% endtabs %}

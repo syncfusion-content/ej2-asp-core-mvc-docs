@@ -38,7 +38,7 @@ The theme stylesheet is referenced from [CDN](https://ej2.syncfusion.com/aspnetc
 Add the [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/avatar/getting-started/core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
