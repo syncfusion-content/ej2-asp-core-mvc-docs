@@ -15,36 +15,11 @@ This section explains how to include [ASP.NET Core Avatar](https://www.syncfusio
 
 ## Create ASP.NET Core web application with Razor pages
 
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
 Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
-
-{% endtabcontent %}
-
-{% tabcontent Visual Studio Code %}
-
-Run the following command to create a new ASP.NET Core Web App.
-
-{% tabs %}
-{% highlight C# tabtitle="Terminal" %}
-
-dotnet new webapp -o RazorPages
-code -r RazorPages
-
-{% endhighlight %}
-{% endtabs %}
-
-Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
-
-{% endtabcontent %}
-
-{% endtabcontents %}
 
 ## Add stylesheet
 
-Here, the desired theme is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
+The theme stylesheet is referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -58,11 +33,9 @@ Here, the desired theme is referred using CDN inside the `<head>` of **~/Pages/S
 {% endhighlight %}
 {% endtabs %}
 
-N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for ASP.NET Core controls.
-
 ## Add ASP.NET Core Avatar control
 
-Add the ASP.NET Core Avatar tag helper in **~/Pages/Index.cshtml** page.
+Add the [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -72,31 +45,9 @@ Add the ASP.NET Core Avatar tag helper in **~/Pages/Index.cshtml** page.
 
 ## Run the application
 
-{% tabcontents %}
-
-{% tabcontent Visual Studio %}
-
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control will render in your default web browser.
 
-{% endtabcontent %}
-
-{% tabcontent Visual Studio Code %}
-
-Open the terminal and run the following command.
-
-{% tabs %}
-{% highlight razor tabtitle="Terminal" %}
-
-dotnet run
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% endtabcontents %}
-
-![ASP.NET Core Avatar Control](../images/avatar.png)
+![ASP.NET Core Avatar Control](../images/avatar.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Avatar).
 
