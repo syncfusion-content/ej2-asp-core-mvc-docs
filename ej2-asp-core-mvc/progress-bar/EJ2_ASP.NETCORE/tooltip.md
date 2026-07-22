@@ -20,8 +20,7 @@ The tooltip for the progress bar is used to represent the progress value. During
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip1/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,11 +28,8 @@ The tooltip for the progress bar is used to represent the progress value. During
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip1/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Tooltip.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
-
-
 
 ## Format
 
@@ -45,8 +41,7 @@ By default, the tooltip shows information about progress. In addition to that, s
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip2/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -54,8 +49,7 @@ By default, the tooltip shows information about progress. In addition to that, s
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip2/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Format.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -70,8 +64,7 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Progre
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip3/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -79,7 +72,6 @@ The [`Fill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Progre
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/tooltip3/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

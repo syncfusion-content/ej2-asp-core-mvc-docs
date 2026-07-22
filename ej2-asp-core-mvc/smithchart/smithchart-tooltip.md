@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Tooltip in ##Platform_Name## Smithchart Control | Sycnfusion
+title: Smithchart Tooltip in ##Platform_Name## Smithchart Control | Syncfusion
 description: Learn here all about Smithchart Tooltip in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Tooltip
