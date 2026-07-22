@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with ASP.NET Core ListBox Control
 description: Checkout and learn about getting started with ASP.NET Core ListBox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started Core
+control: ListBox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -23,7 +23,7 @@ To add **ASP.NET Core ListBox** control in the app, open the NuGet package manag
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.AspNetCore.DropDowns -Version {{ site.releaseversion }}
 Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
@@ -36,7 +36,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.DropDowns` Tag Helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
 @addTagHelper *, Syncfusion.AspNetCore.Base
 @addTagHelper *, Syncfusion.AspNetCore.DropDowns
@@ -67,7 +67,7 @@ The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfus
 Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
@@ -96,7 +96,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) propert with an array of string values.
+After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property with an array of string values.
 
 The following example illustrates the output in your browser.
 
