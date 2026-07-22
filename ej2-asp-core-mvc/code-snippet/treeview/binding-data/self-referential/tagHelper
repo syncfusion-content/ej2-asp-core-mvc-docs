@@ -1,5 +1,4 @@
 @{
-    .....
     List<object> listdata = new List<object>
     {
         new { id = 1, name = "Australia", hasChild = true, expanded = true },
