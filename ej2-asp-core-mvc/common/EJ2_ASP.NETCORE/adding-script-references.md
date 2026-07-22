@@ -194,6 +194,8 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-diagram.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-overview.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-symbolpalette.min.js"></script>
 {% endhighlight %}
 
 </td>
@@ -516,6 +518,7 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-rich-text-editor.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-markdown-converter.min.js"></script>
 {% endhighlight %}
 
 </td>
@@ -538,6 +541,7 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.Schedule/scripts/sf-schedule.min.js"></script>
+<script src="_content/Syncfusion.AspNetCore.Schedule/scripts/sf-recurrence-editor.min.js"></script>
 {% endhighlight %}
 
 </td>
