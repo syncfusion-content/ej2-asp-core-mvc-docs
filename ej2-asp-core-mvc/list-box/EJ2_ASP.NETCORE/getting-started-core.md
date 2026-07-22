@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core ListBox Control
-description: Checkout and learn about getting started with ASP.NET Core ListBox control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ASP.NET Core ListBox control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: ListBox
 publishingplatform: ##Platform_Name##
