@@ -92,7 +92,7 @@ Add the [ASP.NET Core Progress Button](https://www.syncfusion.com/aspnet-core-ui
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Progress Button](https://www.syncfusion.com/aspnet-core-ui-controls/progress-button) will render in your default web browser.
 
-![ASP.NET Core Progress Button Control](../images/progress-button.webp)
+![ASP.NET Core Progress Button Control](images/progress-button.webp)
 
 N> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetcore/documentation/button). In addition, it also supports `top` and `bottom` positions of the icon.
 

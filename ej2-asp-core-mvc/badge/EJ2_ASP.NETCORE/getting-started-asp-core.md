@@ -48,7 +48,7 @@ Add the [ASP.NET Core Badge](https://www.syncfusion.com/aspnet-core-ui-controls/
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Badge](https://www.syncfusion.com/aspnet-core-ui-controls/badge) will render in your default web browser.
 
-![ASP.NET Core Badge Control](../images/badge.webp)
+![ASP.NET Core Badge Control](images/badge.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Badge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

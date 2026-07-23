@@ -92,7 +92,7 @@ Add the [ASP.NET Core Floating Action Button](https://www.syncfusion.com/aspnet-
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Floating Action Button](https://www.syncfusion.com/aspnet-core-ui-controls/fab) will render in your default web browser.
 
-![ASP.NET Core Floating Action Button Control](../images/default.webp)
+![ASP.NET Core Floating Action Button Control](images/default.webp)
 
 ## Click event in Floating Action Button
 
