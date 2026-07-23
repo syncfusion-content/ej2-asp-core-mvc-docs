@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sparkl
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <h2> Essential JS 2 for ASP.NET MVC Sparkline </h2>
-@Html.EJS().Sparkline("spark").DataSource(Model).XName("xval").YName("yval").Height("100").Width("70").Render()
+@Html.EJS().Sparkline("spark").DataSource(Model).XName("xValue").YName("yValue").Height("100").Width("70").Render()
 
 {% endhighlight %}
 {% highlight cs tabtitle="HomeController.cs" %}
@@ -112,21 +112,21 @@ public class HomeController : Controller
 public class DataSource
 {
     public int x;
-    public string xval;
-    public double yval;
+    public string xValue;
+    public double yValue;
     public static List<DataSource> GetData()
     {
         List<DataSource> data1 = new List<DataSource>();
-        data1.Add(new DataSource() { x = 0, xval = "2005", yval = 20090440 });
-        data1.Add(new DataSource() { x = 1, xval = "2006", yval = 20264080 });
-        data1.Add(new DataSource() { x = 2, xval = "2007", yval = 20434180 });
-        data1.Add(new DataSource() { x = 3, xval = "2008", yval = 21007310 });
-        data1.Add(new DataSource() { x = 4, xval = "2009", yval = 21262640 });
-        data1.Add(new DataSource() { x = 5, xval = "2010", yval = 21515750 });
-        data1.Add(new DataSource() { x = 6, xval = "2011", yval = 21766710 });
-        data1.Add(new DataSource() { x = 7, xval = "2012", yval = 22015580 });
-        data1.Add(new DataSource() { x = 8, xval = "2013", yval = 22262500 });
-        data1.Add(new DataSource() { x = 9, xval = "2014", yval = 22507620 });
+        data1.Add(new DataSource() { x = 0, xValue = "2005", yValue = 20090440 });
+        data1.Add(new DataSource() { x = 1, xValue = "2006", yValue = 20264080 });
+        data1.Add(new DataSource() { x = 2, xValue = "2007", yValue = 20434180 });
+        data1.Add(new DataSource() { x = 3, xValue = "2008", yValue = 21007310 });
+        data1.Add(new DataSource() { x = 4, xValue = "2009", yValue = 21262640 });
+        data1.Add(new DataSource() { x = 5, xValue = "2010", yValue = 21515750 });
+        data1.Add(new DataSource() { x = 6, xValue = "2011", yValue = 21766710 });
+        data1.Add(new DataSource() { x = 7, xValue = "2012", yValue = 22015580 });
+        data1.Add(new DataSource() { x = 8, xValue = "2013", yValue = 22262500 });
+        data1.Add(new DataSource() { x = 9, xValue = "2014", yValue = 22507620 });
         return data1;
     }
 }
@@ -149,7 +149,7 @@ If the Sparkline control does not render as expected, review the following commo
 
 * **"Could not load file or assembly 'Syncfusion.EJ2'"** — The NuGet package was not restored. Run `Update-Package -reinstall` in the Package Manager Console, or restore via Visual Studio (right-click solution → Restore NuGet Packages).
 
-* **Chart renders but no data points appear** — The `XName` / `YName` values (`xval` / `yval`) must match the property names in the data model exactly. Property names are case-sensitive.
+* **Chart renders but no data points appear** — The `XName` / `YName` values (`xValueue` / `yValue`) must match the property names in the data model exactly. Property names are case-sensitive.
 
 * **"The model item passed is null"** — The view is decorated with `@model List<SparklineData>` and the controller is returning `null` (or the model is empty). Verify the `Index` action returns a populated list and the namespace in the view matches the model's namespace.
 

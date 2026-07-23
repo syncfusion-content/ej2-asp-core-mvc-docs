@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sankey Chart Component
+title: Getting started with ##Platform_Name## Sankey Chart | Syncfusion
 description: Check out and learn about getting started with ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -127,6 +127,8 @@ Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows to run the application. The Syn
 
 Sankey charts are built from two collections: a `Nodes` list (the categories at each end of a flow) and a `Links` list (the connections between them with an associated value). Use the following model classes for the data.
 
+{% if page.publishingplatform == "aspnet-core" %}
+
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/sankey/getting-started/data/tagHelper %}
@@ -149,8 +151,6 @@ Sankey charts are built from two collections: a `Nodes` list (the categories at 
 {% endif %}
 
 Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sankey Chart control will be rendered in the default web browser.
-
-N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Sankey/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
 
 ## Troubleshooting
 
