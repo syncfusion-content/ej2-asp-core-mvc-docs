@@ -96,7 +96,7 @@ Add the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-contr
 {% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/3d-chart/getting-started/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Getting-started.cs" %}
+{% highlight c# tabtitle="GettingStarted.cs" %}
 {% include code-snippet/3d-chart/getting-started/getting-started.cs %}
 {% endhighlight %}
 {% endtabs %}
@@ -108,7 +108,15 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core 3D Charts Control](images/three-d-chart.webp)
 
-N> `View Sample in GitHub`.
+## Troubleshooting
+
+If the 3D Chart does not render or you run into build/runtime issues, try the following:
+
+* **3D Chart is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Chart renders as a flat 2D Chart instead of 3D** — Verify the `enableRotation` or `enable3D`-related property is set to `true` on the `<ejs-chart3d>` tag helper and that WebGL is enabled in the browser.
+* **Series renders with no points** — Confirm the data model exposes the expected fields and that the `xName`/`yName` values on the series match the field names exactly.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
+* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
 ## See also
 

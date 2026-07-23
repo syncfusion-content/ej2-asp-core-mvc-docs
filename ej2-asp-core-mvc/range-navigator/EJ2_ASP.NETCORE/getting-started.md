@@ -82,7 +82,7 @@ Add the [ASP.NET Core Range Selector](https://www.syncfusion.com/aspnet-core-ui-
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-rangenavigator></ejs-rangenavigator>
+<ejs-rangenavigator id="rangeNavigator"></ejs-rangenavigator>
 
 {% endhighlight %}
 {% endtabs %}
@@ -99,9 +99,9 @@ Now, we are going to provide data to the Range Selector. Add a series object to 
 
 public class data
 {
-    public DateTime x;
-    public double y;
-    public double y1;
+    public DateTime x { get; set; }
+    public double y { get; set; }
+    public double y1 { get; set; }
 }
 
 {% endhighlight %}
@@ -113,7 +113,17 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Range Selector Control](images/rn.webp)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RangeNavigator/ASP.NET%20Core%20Tag%20Helper%20Examples).
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/RangeNavigator/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## Troubleshooting
+
+If the RangeNavigator does not render or you run into build/runtime issues, try the following:
+
+* **RangeNavigator is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Series renders with no points** — Confirm that the data model exposes `x`, `y`, and any additional fields you reference, and that the `xName`/`yName` values on the `series` match the field names exactly.
+* **Date axis shows raw numbers instead of dates** — Verify that `valueType` is set to `DateTime` on the navigator and that the data source's `x` field is a valid `DateTime` value.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
+* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
 ## See also
 

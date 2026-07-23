@@ -82,8 +82,7 @@ Add the [ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-circulargauge id="gauge">
-</ejs-circulargauge>
+<ejs-circulargauge id="gauge"></ejs-circulargauge>
 
 {% endhighlight %}
 {% endtabs %}
@@ -94,9 +93,9 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Circular Gauge Control](images/circulargauge-control.webp)
 
-## Add Gauge Title
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
-You can add a title using `title` attribute to the circular gauge to provide quick information to the user.
+## Troubleshooting
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -126,7 +125,6 @@ You can set the range to the axis using `minimum` and `maximum` attributes for a
 
 ![ASP.NET Core Circular Gauge with Axis](images/circulargauge-with-axis.webp)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
