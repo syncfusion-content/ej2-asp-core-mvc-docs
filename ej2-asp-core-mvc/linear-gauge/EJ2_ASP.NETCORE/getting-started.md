@@ -125,6 +125,9 @@ Refer below code snippet to add the axis range to Linear Gauge.
     </e-lineargauge-axes>
 </ejs-lineargauge>
 
+{% endhighlight %}
+{% endtabs %}
+
 ## Troubleshooting
 
 ![ASP.NET Core Linear Gauge with Axis](images/lineargauge-with-axis.webp)
