@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Inline AI Assist Control | Syncfusion
+title: Get Started with ASP.NET Core Inline AI Assist Control | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Inline AI Assist control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Inline AI Assist
@@ -119,7 +119,7 @@ Add the [ASP.NET Core Inline AI Assist](https://www.syncfusion.com/aspnet-core-u
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Inline AI Assist](https://www.syncfusion.com/aspnet-core-ui-controls/inline-ai-assist) control will render in your default web browser.
 
-![InlineAIAssist](InlineAIAssist.webp)
+![InlineAIAssist](images/InlineAIAssist.webp)
 
 ## RelateTo and Target configuration
 
