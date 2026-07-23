@@ -8,19 +8,19 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Creating Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application
+# Creating Syncfusion® ASP.NET Core application
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Sample Creator is a tool that lets you make Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) projects with sample code for required Syncfusion<sup style="font-size:70%">&reg;</sup> component features and Syncfusion<sup style="font-size:70%">&reg;</sup> control configuration.
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Sample Creator utility is available from v16.3.0.17.
 
-The following steps is used to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application by using the Sample Creator utility:
+The following steps are used to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application by using the Sample Creator utility:
 
 1. Follow one of the options below to launch the ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Sample Creator application:
 
     **Option 1:**
 
-    Click **Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core > Launch Sample Creator…** in **Visual Studio.**
+    Click **Extensions -> Syncfusion<sup style="font-size:70%">&reg;</sup> Menu** and choose **Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core > Launch Sample Creator…** in **Visual Studio.**
 
     ![sample creator](images/sample-creator.png)
 
@@ -44,7 +44,7 @@ The following steps is used to create the Syncfusion<sup style="font-size:70%">&
 
 ## Project Configuration
 
-1. You can configure the project with following details.
+1. You can configure the project with the following details.
 
     **VS Version**: Choose the Visual Studio version.
 
