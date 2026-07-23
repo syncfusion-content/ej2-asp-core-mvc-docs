@@ -92,7 +92,7 @@ Add the [ASP.NET Core Button](https://www.syncfusion.com/aspnet-core-ui-controls
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Button](https://www.syncfusion.com/aspnet-core-ui-controls/button) will render in your default web browser.
 
-![ASP.NET Core Button Control](../images/button.webp)
+![ASP.NET Core Button Control](images/button.webp)
 
 ## Change Button type
 

@@ -92,7 +92,7 @@ Add the [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) will render in your default web browser.
 
-![ASP.NET Core Button Group Control](../images/button-group.webp)
+![ASP.NET Core Button Group Control](images/button-group.webp)
 
 ## Orientation
 
@@ -108,7 +108,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Button Group Control in Vertical Position](../images/button-group-vertical.webp)
+![ASP.NET Core Button Group Control in Vertical Position](images/button-group-vertical.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ButtonGroup/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

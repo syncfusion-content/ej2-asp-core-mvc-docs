@@ -100,7 +100,7 @@ Add the [ASP.NET Core Skeleton](https://www.syncfusion.com/aspnet-core-ui-contro
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Skeleton](https://www.syncfusion.com/aspnet-core-ui-controls/skeleton) will render in your default web browser.
 
-![ASP.NET Core Skeleton Control](../images/skeleton-control.webp)
+![ASP.NET Core Skeleton Control](images/skeleton-control.webp)
 
 ## Skeleton Types
 
@@ -153,7 +153,7 @@ The [ASP.NET Core Skeleton](https://www.syncfusion.com/aspnet-core-ui-controls/s
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Skeleton Shapes](../images/skeleton-skimmer-effects.webp)
+![ASP.NET Core Skeleton Shapes](images/skeleton-skimmer-effects.webp)
 
 ## See also
 
