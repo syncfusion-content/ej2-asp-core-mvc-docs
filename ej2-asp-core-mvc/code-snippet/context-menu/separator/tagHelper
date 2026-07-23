@@ -1,3 +1,31 @@
+@{
+    List<object> menuItems = new List<object>();
+    menuItems.Add(new
+    {
+        text = "Cut"
+    });
+    menuItems.Add(new
+    {
+        text = "Copy"
+    });
+    menuItems.Add(new
+    {
+        text = "Paste"
+    });
+    menuItems.Add(new
+    {
+        separator = true
+    });
+    menuItems.Add(new
+    {
+        text = "Font"
+    });
+    menuItems.Add(new
+    {
+        text = "Paragraph"
+    });
+}
+
 <div id="contextmenutarget">Right click/Touch hold to open the ContextMenu </div>
 <ejs-contextmenu id="contextmenu" target="#contextmenutarget" items="menuItems"></ejs-contextmenu>
 
