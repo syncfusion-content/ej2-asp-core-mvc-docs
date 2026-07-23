@@ -22,7 +22,7 @@ Create an **ASP.NET MVC Web App** using Visual Studio via [Microsoft Templates](
 
 ## Install the required ASP.NET MVC package
 
-To add **ASP.NET MVC Maps** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetMvc.Maps](https://www.nuget.org/packages/Syncfusion.AspNetMvc.Maps/) package. All Syncfusion ASP.NET MVC packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic for details.
+To add [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetMvc.Maps](https://www.nuget.org/packages/Syncfusion.AspNetMvc.Maps/) package. All Syncfusion ASP.NET MVC packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -50,7 +50,7 @@ After the package is installed, open the **~/Views/Web.config** file and import 
 
 ## Add Script Resources
 
-The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme#cdn-reference). Include the [script references](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) inside the `<head>` of **~/Views/Shared/_Layout.cshtml**.
+Include the [script reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) inside the `<head>` of **~/Views/Shared/_Layout.cshtml**.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_Layout.cshtml" %}

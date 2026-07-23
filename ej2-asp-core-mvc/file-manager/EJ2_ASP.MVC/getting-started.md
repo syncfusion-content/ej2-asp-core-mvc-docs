@@ -18,7 +18,7 @@ Create an **ASP.NET MVC Web App** using Visual Studio via [Microsoft Templates](
 
 ## Install the required ASP.NET MVC package
 
-To add **ASP.NET MVC File Manager** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetMvc.FileManager](https://www.nuget.org/packages/Syncfusion.AspNetMvc.FileManager/) package. All Syncfusion ASP.NET MVC packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic for details.
+To add [ASP.NET MVC File Manager](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-manager) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetMvc.FileManager](https://www.nuget.org/packages/Syncfusion.AspNetMvc.FileManager/) package. All Syncfusion ASP.NET MVC packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
