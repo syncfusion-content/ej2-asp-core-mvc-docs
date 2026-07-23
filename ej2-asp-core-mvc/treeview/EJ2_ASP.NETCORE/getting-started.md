@@ -90,7 +90,7 @@ Add the [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-contro
 
 ## Binding data source
 
-The TreeView can load data either from local data sources or remote data services. This is achieved through the `dataSource` property available within the fields configuration. The dataSource property accepts both an array of JavaScript objects and a **DataManager** instance.
+The TreeView control can load data from either local data sources or remote data services. This is achieved through the `dataSource` property available within the fields configuration. The dataSource property accepts both an array of JavaScript objects and a **DataManager** instance.
 
 In the following example, the TreeView is bound to a local JSON data collection that represents countries and their corresponding states.
 

@@ -101,7 +101,7 @@ You can add steps to the Stepper by defining one or more `e-stepper-step` tag he
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Stepper](https://www.syncfusion.com/aspnet-core-ui-controls/stepper) control will render in your default web browser.
 
-![ASP.NET Core Stepper Control](images/stepper-gettingstarted.jpg)
+![ASP.NET Core Stepper Control](images/stepper-gettingstarted.webp)
 
 ## Configure icon and label
 

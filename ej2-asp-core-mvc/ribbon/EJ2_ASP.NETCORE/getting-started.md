@@ -55,8 +55,8 @@ The theme stylesheet and script can be referenced from NuGet through [Static Web
     ...
     ...
     <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <script src="_content/Syncfusion.AspNetCore.Ribbon/scripts/sf-ribbon.min.js"></script>
     <script src="_content/Syncfusion.AspNetCore.Base/scripts/sf-data.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Ribbon/scripts/sf-ribbon.min.js"></script>
 </head>
 
 {% endhighlight %}
