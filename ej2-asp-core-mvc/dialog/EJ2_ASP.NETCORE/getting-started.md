@@ -93,7 +93,7 @@ Add the [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) will render in your default web browser.
 
-![ASP.NET Core Dialog Control](../images/dialog-getting.webp)
+![ASP.NET Core Dialog Control](images/dialog-getting.webp)
 
 ## Display content using `ContentTemplate`
 
@@ -121,7 +121,7 @@ N> When the modal dialog is opened, scrolling within the Dialog's target element
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Modal Dialog](../images/modal-dialog-getting.webp)
+![ASP.NET Core Modal Dialog](images/modal-dialog-getting.webp)
 
 N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, the CSS style for the html and body can be set to get the dialog height.
 

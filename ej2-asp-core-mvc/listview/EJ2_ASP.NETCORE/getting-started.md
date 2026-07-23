@@ -115,7 +115,7 @@ public class ListViewData
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core ListView](https://www.syncfusion.com/aspnet-core-ui-controls/listview) will render in your default web browser.
 
-![ASP.NET Core ListView Control](../images/listview.webp)
+![ASP.NET Core ListView Control](images/listview.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ListView/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

@@ -19,7 +19,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core Timeline](https://www.syncfusion.com/aspnet-core-ui-controls/timeline) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -93,4 +93,4 @@ Add the [ASP.NET Core Timeline](https://www.syncfusion.com/aspnet-core-ui-contro
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core Timeline](https://www.syncfusion.com/aspnet-core-ui-controls/timeline) control will render in your default web browser.
 
-![ASP.NET Core Timeline Control](../images/default.webp)
+![ASP.NET Core Timeline Control](images/default.webp)

@@ -95,7 +95,7 @@ N> In the above sample code, `#target` is the `id` of the element in a page to w
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core Tooltip](https://www.syncfusion.com/aspnet-core-ui-controls/tooltip) will render in your default web browser.
 
-![ASP.NET Core Tooltip Control](../images/tooltip.webp)
+![ASP.NET Core Tooltip Control](images/tooltip.webp)
 
 ## Initialize Tooltip within a container
 
@@ -109,7 +109,7 @@ Refer to the following code example to create a Tooltip on multiple targets with
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Tooltip with Accessibility](../images/tooltip-container.webp)
+![ASP.NET Core Tooltip with Accessibility](images/tooltip-container.webp)
 
 N> In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 
