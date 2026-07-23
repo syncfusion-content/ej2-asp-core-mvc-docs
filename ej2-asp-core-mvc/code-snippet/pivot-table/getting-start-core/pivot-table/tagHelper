@@ -1,5 +1,5 @@
 @page
-@model PivotTable.Pages.IndexModel
+@model RazorPagesMovie.Pages.IndexModel
 
 <ejs-pivotview id="PivotView" height="350">
     <e-datasourcesettings dataSource="@Model.GetDefaultData()" expandAll="true">
