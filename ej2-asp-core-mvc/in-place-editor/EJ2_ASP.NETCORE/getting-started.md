@@ -143,8 +143,6 @@ In the following sample, type and model values are configured to render the Text
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the ASP.NET Core In-place Editor control will be rendered in the default web browser.
-
 ![ASP.NET Core In-Place Editor Form](./images/getting-started-form.PNG)
 
 ## Submitting data to the server (save)
