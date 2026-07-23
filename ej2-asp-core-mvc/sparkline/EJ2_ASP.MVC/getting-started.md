@@ -149,7 +149,7 @@ If the Sparkline control does not render as expected, review the following commo
 
 * **"Could not load file or assembly 'Syncfusion.EJ2'"** — The NuGet package was not restored. Run `Update-Package -reinstall` in the Package Manager Console, or restore via Visual Studio (right-click solution → Restore NuGet Packages).
 
-* **Chart renders but no data points appear** — The `XName` / `YName` values (`xValueue` / `yValue`) must match the property names in the data model exactly. Property names are case-sensitive.
+* **Chart renders but no data points appear** — The `XName` / `YName` values (`xValue` / `yValue`) must match the property names in the data model exactly. Property names are case-sensitive.
 
 * **"The model item passed is null"** — The view is decorated with `@model List<SparklineData>` and the controller is returning `null` (or the model is empty). Verify the `Index` action returns a populated list and the namespace in the view matches the model's namespace.
 
