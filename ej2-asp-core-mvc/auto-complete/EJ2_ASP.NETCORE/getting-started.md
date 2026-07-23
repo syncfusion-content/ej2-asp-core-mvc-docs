@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core  Auto Complete | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core  Auto Complete control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Auto Complete | Syncfusion
+description: Checkout and learn about getting started with ASP.NET Core Auto Complete control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: AutoComplete
 publishingplatform: ##Platform_Name##
