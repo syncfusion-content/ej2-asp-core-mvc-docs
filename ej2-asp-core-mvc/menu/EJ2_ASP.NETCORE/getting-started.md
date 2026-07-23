@@ -90,7 +90,7 @@ Add the [ASP.NET Core Menu](https://www.syncfusion.com/aspnet-core-ui-controls/m
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Menu](https://www.syncfusion.com/aspnet-core-ui-controls/menu-bar) control will render in your default web browser.
 
-![ASP.NET Core Menu Control](images/menu.png)
+![ASP.NET Core Menu Control](images/menu-control.webp)
 
 N> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [`Data Source Binding`](./data-source-binding-and-custom-menu-items#data-binding) section.
 
@@ -106,7 +106,7 @@ In the following example, the `Open` and `Save` submenu options are grouped sepa
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Menu with Separator](images/menu-with-separator.png)
+![ASP.NET Core Menu with Separator](images/menu-with-separator.webp)
 
 N> The `separator` property should not be given along with the other fields in the `MenuItem`. You can also enable the separator to group **horizontal** menu items.
 
