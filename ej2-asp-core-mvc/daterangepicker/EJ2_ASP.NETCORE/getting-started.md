@@ -19,7 +19,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core DatePicker](https://www.syncfusion.com/aspnet-core-ui-controls/datepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core DateRangePicker](https://www.syncfusion.com/aspnet-core-ui-controls/daterangepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -34,7 +34,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the packages are installed installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
 
 {% tabs %}
 {% highlight C# tabtitle="~/_ViewImports.cshtml" %}
@@ -89,11 +89,11 @@ Add the [ASP.NET Core DateRangePicker](https://www.syncfusion.com/aspnet-core-ui
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core DateRangePicker Control](../images/daterangepicker-control.webp)
-
 ## Run the application
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core DateRangePicker](https://www.syncfusion.com/aspnet-core-ui-controls/daterangepicker) will render in your default web browser.
+
+![ASP.NET Core DateRangePicker Control](images/daterangepicker-control.webp)
 
 ## Setting the start and end date
 
@@ -105,7 +105,7 @@ The start and end date in a range can be defined with the help of the `startDate
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core DateRangePicker with Specific Date Range](../images/daterangepicker-with-specific-date.webp)
+![ASP.NET Core DateRangePicker with Specific Date Range](images/daterangepicker-with-specific-date.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DateRangePicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

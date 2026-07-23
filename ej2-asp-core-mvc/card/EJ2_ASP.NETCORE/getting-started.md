@@ -38,7 +38,7 @@ The theme stylesheet is referenced from [CDN](https://ej2.syncfusion.com/aspnetc
 Add the [ASP.NET Core Card](https://www.syncfusion.com/aspnet-core-ui-controls/card) tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight c# tabtitle="CSHTML" %}
+{% highlight c# tabtitle="Index.cshtml" %}
 
 <div class = "e-card">
     Sample Card
@@ -74,7 +74,7 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Card control](../images/card-control.webp)
+![ASP.NET Core Card control](images/card-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Card/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

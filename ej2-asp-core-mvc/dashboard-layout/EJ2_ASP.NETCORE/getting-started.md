@@ -89,7 +89,7 @@ Add the [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui
 
 ### Setting the panels property using content template
 
-DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the following simple code to your **index.cshtml** page which is available within the **Views/Home** folder, to initialize the DashboardLayout.
+[DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the following simple code to your **index.cshtml** page which is available within the **Views/Home** folder, to initialize the DashboardLayout.
 
 In the following sample, the DashboardLayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
@@ -111,7 +111,7 @@ public class spacingModel
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control will render in your default web browser.
 
-![Dashboard content template](../images/content_template.webp)
+![Dashboard content template](images/content_template.webp)
 
 ## Setting the panels property using tag helper
 
@@ -133,7 +133,7 @@ public class spacingModel
 {% endhighlight %}
 {% endtabs %}
 
-![Dashboard tag helper](../images/tag_helper.webp)
+![Dashboard tag helper](images/tag_helper.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

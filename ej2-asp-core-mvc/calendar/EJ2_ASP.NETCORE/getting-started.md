@@ -34,7 +34,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the packages are installed installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
@@ -93,7 +93,7 @@ Add the [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-contro
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) will render in your default web browser.
 
-![ASP.NET Core Calendar Control](../images/calendar-control.webp)
+![ASP.NET Core Calendar Control](images/calendar-control.webp)
 
 ## Setting the value within min and max dates
 
@@ -107,7 +107,7 @@ Here, the Calendar allows selecting a date within the range from the 5th to the 
 {% endhighlight %}
 {% endtabs %}
 
-![Setting Minimum and Maximum Date in ASP.NET Core Calendar](../images/calendar-with-min-and-max-dates.webp)
+![Setting Minimum and Maximum Date in ASP.NET Core Calendar](images/calendar-with-min-and-max-dates.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Calendar).
 

@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Avatar Control
 
-This section explains how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) in your ASP.NET Core application using Visual Studio.
+This section explains how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 ## Create ASP.NET Core web application with Razor pages
 
@@ -47,7 +47,7 @@ Add the [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control will render in your default web browser.
 
-![ASP.NET Core Avatar Control](../images/avatar.webp)
+![ASP.NET Core Avatar Control](images/avatar.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Avatar).
 

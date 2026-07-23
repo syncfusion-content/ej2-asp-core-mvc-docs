@@ -34,7 +34,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the packages are installed installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Calendars` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
@@ -93,7 +93,7 @@ Add the [ASP.NET Core DatePicker](https://www.syncfusion.com/aspnet-core-ui-cont
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core DatePicker](https://www.syncfusion.com/aspnet-core-ui-controls/datepicker) will render in your default web browser.
 
-![ASP.NET Core DatePicker Control](../images/datepicker-control.webp)
+![ASP.NET Core DatePicker Control](images/datepicker-control.webp)
 
 ## Setting the value within min and max dates
 
@@ -107,7 +107,7 @@ The following example demonstrates the DatePicker to select a date within a rang
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core DatePicker with Minumum and Maximum Values](../images/datepicker-with-min-and-max-values.webp)
+![ASP.NET Core DatePicker with Minumum and Maximum Values](images/datepicker-with-min-and-max-values.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DatePicker/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

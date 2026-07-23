@@ -93,7 +93,7 @@ Add the [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-contro
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control will render in your default web browser.
 
-![ASP.NET Core Splitter Control](../images/default.webp)
+![ASP.NET Core Splitter Control](images/default.webp)
 
 ## Load content to the pane
 
@@ -107,7 +107,7 @@ For detailed information, refer to the `Pane Content` section.
 {% endhighlight %}
 {% endtabs %}
 
-![Loading content to the panes](../images/content.webp)
+![Loading content to the panes](images/content.webp)
 
 ## Configure pane size
 
@@ -134,7 +134,7 @@ Splitter allows you to change the pane dimensions by resizing the panes. By defa
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Splitter with Resizable Panes](../images/resizable.webp)
+![ASP.NET Core Splitter with Resizable Panes](images/resizable.webp)
 
 ## Set minimum and maximum pane sizes
 
@@ -156,7 +156,7 @@ Splitter supports both `Horizontal` and `Vertical` orientation for the panes. By
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Splitter in Vertical Orientation](../images/orientation.webp)
+![ASP.NET Core Splitter in Vertical Orientation](images/orientation.webp)
 
 ## Nested Splitter
 
@@ -170,7 +170,7 @@ Also, you can render the nested splitter using direct child of the splitter pane
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Nested Splitter Control](../images/nested-splitter.webp)
+![ASP.NET Core Nested Splitter Control](images/nested-splitter.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Splitter/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
