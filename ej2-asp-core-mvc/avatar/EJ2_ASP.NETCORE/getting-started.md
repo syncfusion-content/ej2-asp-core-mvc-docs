@@ -31,10 +31,9 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-
 ## Add stylesheet
 
-The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+The theme stylesheet can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
