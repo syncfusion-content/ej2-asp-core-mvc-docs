@@ -133,3 +133,5 @@ To set the initial value of the TextArea control, you can utilize the [`value`](
 {% include code-snippet/textarea/getting-started/get-value2/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

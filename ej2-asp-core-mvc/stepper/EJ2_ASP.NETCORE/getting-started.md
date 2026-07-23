@@ -123,3 +123,5 @@ You can define the step icon and label by setting the `iconCss` and `label` prop
 {% endtabs %}
 
 ![ASP.NET Core Stepper Icon and Label](images/stepper-iconLabel.jpg)
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

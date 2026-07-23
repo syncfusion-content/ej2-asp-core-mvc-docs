@@ -110,3 +110,5 @@ You can set the rating value by using the [Value](https://help.syncfusion.com/cr
 {% endtabs %}
 
 ![Displaying Rating Value in ASP.NET CORE Rating Control](images/rating-value.png)
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

@@ -137,3 +137,5 @@ The speed dial control triggers the [clicked](https://help.syncfusion.com/cr/asp
 {% endtabs %}
 
 ![ASP.NET Core SpeedDial Control](images/speeddial-event-sample.png)
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

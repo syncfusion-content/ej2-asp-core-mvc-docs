@@ -175,3 +175,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 * [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetcore/Sidebar/SidebarWithMenu#/material)
 * [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetcore/Sidebar/PanelWithResponsive#/material)
 * [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetcore/webmail/ )
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

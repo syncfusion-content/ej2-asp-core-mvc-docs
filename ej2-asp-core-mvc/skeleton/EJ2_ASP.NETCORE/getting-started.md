@@ -159,3 +159,5 @@ The Skeleton control has the following different type of shapes.
 {% endtabs %}
 
 ![ASP.NET MVC Skelton Shapes](images/skeleton-skimmer-effects.png)
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.

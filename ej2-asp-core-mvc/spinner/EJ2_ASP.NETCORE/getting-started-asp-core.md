@@ -91,3 +91,5 @@ Now, add the `Spinner` using Syncfusion<sup style="font-size:70%">&reg;</sup> Es
 </script>
 
 ```
+
+N> You can also explore our [ASP.NET Core Accordion example]() that shows you how to render and configure the Accordion.
