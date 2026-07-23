@@ -113,4 +113,4 @@ You can customize the icon and label for each step in the Stepper by setting the
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Stepper Icon and Label](images/stepper-iconLabel.jpg)
+![ASP.NET Core Stepper Icon and Label](images/stepper-icon-label.webp)
