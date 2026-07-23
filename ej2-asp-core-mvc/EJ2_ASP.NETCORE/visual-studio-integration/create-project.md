@@ -14,9 +14,9 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Pr
 
 > The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project templates are available from v16.2.0.41.
 
-The following steps is used to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application** through the **Visual Studio Project Template**.
+The following steps are used to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application** through the **Visual Studio Project Template**.
 
-> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic.
+> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Template, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is installed in the Visual Studio Extension Manager. For Visual Studio 2022 or later, click **Extensions -> Manage Extensions -> Installed**. If this extension is not installed, please install it by following the steps in the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic.
 
 1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project, follow either one of the options below:
 
@@ -40,12 +40,12 @@ The following steps is used to create the **Syncfusion<sup style="font-size:70%"
 
     **Project configurations**
 
-    | <b>Project Type</b> | <b>.NET Core Version</b> | <b>Themes</b> | <b>Assets From</b> |
+    | **Project Type** | **.NET Core Version** | **Themes** | **Assets From** |
     |---------------------|--------------------------|---------------|--------------------|
-    | ASP.NET Core Web App | .NET 8.0, .NET 9.0 and NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | ASP.NET Core Web App (Model-View-Controller) | .NET 8.0, .NET 9.0 and NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
-    | Angular | .NET 8.0, .NET 9.0 and NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
-    | React | .NET 8.0, .NET 9.0 and NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | ASP.NET Core Web App | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | ASP.NET Core Web App (Model-View-Controller) | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM, Installed Location |
+    | Angular | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
+    | React | .NET 8.0, .NET 9.0, and .NET 10.0 | Material, Fabric, Fluent, Bootstrap, Bootstrap 4, Bootstrap 5, High Contrast, Tailwind CSS | CDN, NPM |
 
     > The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Project Template provides ASP.NET Core, Angular, and React project templates support from v17.1.0.47.
 
@@ -69,7 +69,7 @@ The following steps is used to create the **Syncfusion<sup style="font-size:70%"
 
 4. Click Create, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Application has been created.
 
-    ![css refernce](images/readme-file.PNG)
+    ![css reference](images/readme-file.PNG)
 
 5. The required Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet/NPM packages, Scripts, and CSS have been added to the Project.
 
@@ -89,11 +89,11 @@ The following steps is used to create the **Syncfusion<sup style="font-size:70%"
 
     **NPM**: All the Syncfusion<sup style="font-size:70%">&reg;</sup> React NPM packages entries will be added in package.json, it will automatically restore while build the application or save the package.json file before compile the project.
 
-    **Styles**: CSS entries will be added in or index.html based on the selected project .Net Core version.
+    **Styles**: CSS entries will be added in index.html based on the selected .NET Core version.
 
     ![nuget package](images/nuget-packges.png)
 
-    ![css refernce](images/project-structure.png)
+    ![css reference](images/project-structure.png)
 
 6. Then, Syncfusion<sup style="font-size:70%">&reg;</sup> licensing registration required message box will be shown, if you installed the trial setup or NuGet packages since Syncfusion<sup style="font-size:70%">&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup style="font-size:70%">&reg;</sup> release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key), which is shown in the licensing message box to generate and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/whats-new-in-2018-volume-2-licensing-changes-in-the-1620x-version-of-essential-studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup style="font-size:70%">&reg;</sup>.
 
@@ -135,6 +135,8 @@ We need to register the created application in Azure Active Directory for **Micr
 ![AppSettings](images/appsettings.png)
 
 ## Register and Login Application
+
+The following steps describe how to register and log in to a Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application once it has been created.
 
 ### Individual Authentication
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ASP.NET Core DataGrid Control
-description: Checkout and learn about getting started with ##Platform_Name## DataGrid control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core DataGrid Control
+# Getting Started with the ASP.NET Core DataGrid Control
 
 This section briefly explains how to include the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
-> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
+> **Ready to streamline your ASP.NET Core development?** Discover the full potential of ASP.NET Core controls with AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Code Studio and more. [Explore AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
-To get start quickly with ASP.NET Core DataGrid component, you can check on this video.
+To get started quickly with ASP.NET Core DataGrid control, you can check out this video.
 
 {% youtube
 "youtube:https://www.youtube.com/watch?v=E5w2fO-N9gE" %}
@@ -74,7 +74,7 @@ Alternatively, create an ASP.NET Core Web App using Visual Studio Code via [Micr
 
 ## Install the required ASP.NET Core packages
 
-Install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+Install the [Syncfusion.AspNetCore.Grid](https://www.nuget.org/packages/Syncfusion.AspNetCore.Grid) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) NuGet packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=Syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for more details.
 
 {% tabcontents %}
 
@@ -113,9 +113,7 @@ dotnet add package Syncfusion.AspNetCore.Themes --version {{ site.releaseversion
 
 {% endtabcontents %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
-
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+## Add ASP.NET Core tag helpers
 
 After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Grid` and `Syncfusion.AspNetCore.Base` tag helpers.
 
@@ -145,7 +143,7 @@ The theme stylesheet and script can be referenced from NuGet through [Static Web
 {% endhighlight %}
 {% endtabs %}
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+## Register the script manager
 
 Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
@@ -161,7 +159,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core DataGrid control
+## Add the ASP.NET Core DataGrid control
 
 Add the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in the **~/Pages/Index.cshtml** file.
 
@@ -224,9 +222,9 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core DataGrid with Columns Data](images/column.png)
+![ASP.NET Core DataGrid with Columns Data](images/core-grid-control.webp)
 
 ## See also
 
-* [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
