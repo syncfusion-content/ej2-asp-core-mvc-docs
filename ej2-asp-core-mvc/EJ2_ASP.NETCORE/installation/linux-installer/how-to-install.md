@@ -17,7 +17,7 @@ This guide explains how to extract and use the Syncfusion<sup style="font-size:7
 * A tool to extract `.zip` files, such as `unzip`.
 * For running the bundled ASP.NET Core samples: a supported .NET SDK (3.1, 5.0, 6.0, or later).
 
-## Step-by-Step Installation
+## Step-by-step installation
 
 The steps below show how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> Linux installer.
 
@@ -53,7 +53,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
    npm install ./npm/@syncfusion/ej2-vue-grids-<version>.tgz --save
    ```
 
-## License Key Registration in Samples
+## License key registration in samples
 
 After installation, a license key is required to register the demo source that is included in the Linux installer. To learn about the steps for license registration for the ASP.NET Core - EJ2 Linux installer, refer to the following:
 

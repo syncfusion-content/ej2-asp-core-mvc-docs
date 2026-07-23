@@ -8,9 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet Packages
+# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet packages
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages the **Package Manager Console** in Visual Studio.
+
+## Overview
+
+**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishes all ASP.NET MVC (EJ2) NuGet packages on [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages can be used without installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup. You can simply reference the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages in an ASP.NET MVC application to develop with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components.
+
+N> The `Syncfusion.EJ2.MVC5` NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components in a single package, is available beginning with v16.1.0.24 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 1).
 
 **Prerequisites**
 
@@ -19,13 +25,7 @@ This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg
 * An existing ASP.NET MVC web application (or a new one created through **File** → **New** → **Project** → **ASP.NET Web Application (.NET Framework)** with the **MVC** template).
 * A Syncfusion<sup style="font-size:70%">&reg;</sup> account, or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key for the target version.
 
-## Overview
-
-**NuGet** is a Package management system for Visual Studio. It makes it easy to add, update and remove external libraries in our application. Syncfusion<sup style="font-size:70%">&reg;</sup> publishes all ASP.NET MVC (EJ2) NuGet packages on [nuget.org](https://www.nuget.org/packages?q=Tags%3A%22AspNet.MVC%20EJ2%22+syncfusion). The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages can be used without installing the Syncfusion<sup style="font-size:70%">&reg;</sup> setup. You can simply reference the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages in an ASP.NET MVC application to develop with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components.
-
-N> The `Syncfusion.EJ2.MVC5` NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components in a single package, is available beginning with v16.1.0.24 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 1).
-
-## Installation Using the Package Manager UI
+## Installation using the package manager UI
 
 The NuGet **Package Manager UI** allows you to search, install, uninstall, and update Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages in your applications and solutions. You can find and install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages in your Visual Studio ASP.NET MVC web application, and this process is easy with the steps below:
 
@@ -57,7 +57,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive apps with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) components](https://www.syncfusion.com/aspnet-mvc-ui-controls). Also, you can refer to the [ASP.NET MVC (EJ2) help documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/introduction) for development.
 
-## Installation Using the Package Manager Console
+## Installation using the package manager console
 
 The **Package Manager Console** saves NuGet package installation time since you don't have to search for the `Syncfusion.EJ2.MVC5` NuGet package you want to install — you can just type the installation command. Follow the instructions below to use the Package Manager Console to reference the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) component as a NuGet package in your ASP.NET MVC web application.
 
