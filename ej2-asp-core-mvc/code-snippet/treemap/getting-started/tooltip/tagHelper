@@ -1,5 +1,4 @@
 @{ 
-    .....
     var mapsData = new List<Syncfusion.EJ2.TreeMap.TreeMapColorMapping>();
     mapsData.Add(new Syncfusion.EJ2.TreeMap.TreeMapColorMapping() { Value="25", Color="#634D6F" });
     mapsData.Add(new Syncfusion.EJ2.TreeMap.TreeMapColorMapping() { Value="12", Color="#B34D6D" });
