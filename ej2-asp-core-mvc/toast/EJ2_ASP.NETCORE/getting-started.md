@@ -92,7 +92,7 @@ Add the [ASP.NET Core Toast](https://www.syncfusion.com/aspnet-core-ui-controls/
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Toast](https://www.syncfusion.com/aspnet-core-ui-controls/toast) will render in your default web browser.
 
-![ASP.NET Core Toast Control](../images/toast.webp)
+![ASP.NET Core Toast Control](images/toast.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Toast).
 

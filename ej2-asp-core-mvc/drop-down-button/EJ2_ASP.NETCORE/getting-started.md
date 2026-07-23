@@ -92,7 +92,7 @@ Add the [ASP.NET Core DropDownButton](https://www.syncfusion.com/aspnet-core-ui-
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core DropDownButton](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-menu) will render in your default web browser.
 
-![ASP.NET Core DropDownButton Control](../images/drop-down-button.webp)
+![ASP.NET Core DropDownButton Control](images/drop-down-button.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownButton/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
