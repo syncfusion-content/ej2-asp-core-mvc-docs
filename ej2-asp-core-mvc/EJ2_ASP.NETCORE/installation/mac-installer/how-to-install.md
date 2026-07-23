@@ -18,7 +18,7 @@ The Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac 
 * The downloaded Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac installer (`.dmg`). See [Downloading Syncfusion Mac installer](https://ej2.syncfusion.com/aspnetcore/documentation/installation/mac-installer/how-to-download).
 * Administrator access on your Mac so that you can copy the installer into the **Applications** folder.
 
-## Steps to Resolve the Warning Message in macOS Catalina or Later
+## Steps to resolve the warning message in macOS Catalina or later
 
 While running Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac Installer on macOS Catalina or later, the alert below may be displayed.
 
@@ -36,7 +36,7 @@ If you receive this alert, follow the below steps for the easiest solution.
 
 > If you continue to see a "cannot be opened because the developer cannot be verified" message, open **System Settings** → **Privacy & Security**, scroll to the bottom, and click **Open Anyway** next to the blocked installer entry. Then re-run the steps above.
 
-## Step-by-Step Installation
+## Step-by-step installation
 
 The steps below show how to install the Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac installer.
 
@@ -66,7 +66,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
    ![Eject the mounted disk image](images/Mac_Installer6.png)
 
-## License Key Registration in Samples
+## License key registration in samples
 
 After installation, a license key is required to run the demo source included in the Mac installer without the Syncfusion<sup style="font-size:70%">&reg;</sup> license-warning overlay. To learn about the steps for license registration for the ASP.NET Core - EJ2 Mac installer, refer to the following:
 

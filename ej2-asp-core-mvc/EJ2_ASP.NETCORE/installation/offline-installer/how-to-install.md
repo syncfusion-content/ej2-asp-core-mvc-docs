@@ -87,11 +87,11 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
 7. Click **Finish**. Your system has been installed with the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 product.
 
-## Installing in Silent Mode
+## Installing in silent mode
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installer supports installation and uninstallation via the command line in silent mode.
 
-### Command Line Installation
+### Command line installation
 
 To install through the command line in silent mode, follow the steps below.
 
@@ -135,7 +135,7 @@ To install through the command line in silent mode, follow the steps below.
 
     A successful silent install returns exit code `0`. Other exit codes indicate an error; see the log file specified by `/log` for details.
 
-### Command Line Uninstallation
+### Command line uninstallation
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 can also be uninstalled silently using the command line.
 
