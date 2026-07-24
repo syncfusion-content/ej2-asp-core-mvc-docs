@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Sidebar Control
+title: Getting Started with ##Platform_Name## Sidebar Control | Syncfusion
 description: Check out and learn about getting started with ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
