@@ -40,7 +40,7 @@ In the following sample, we removed the `script` tag and `onmouseover` attribute
 {% endif %}
 
 
-> The XSS prevention feature is only applicable when the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditorBuilder.html#Syncfusion_EJ2_RichTextEditor_RichTextEditorBuilder_EditorMode_Syncfusion_EJ2_RichTextEditor_EditorMode_) is set to HTML.
+> The XSS prevention feature is only applicable when the [EditorMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.RichTextEditor.RichTextEditor.html#Syncfusion_EJ2_RichTextEditor_RichTextEditor_EditorMode) is set to HTML.
 
 
 ## Custom Cross-Site Scripting Prevention

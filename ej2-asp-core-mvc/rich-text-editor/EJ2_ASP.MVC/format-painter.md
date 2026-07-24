@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Format Painter in ##Platform_Name## Rich Text Editor Control
+title: Format Painter in ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Format Painter in Syncfusion ##Platform_Name## Rich Text Editor Control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Format Painter
@@ -56,8 +56,6 @@ Below is an example illustrating how to define the `AllowedFormats` and `DeniedF
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/rich-text-editor/format-painter-cs2" %}
-
 ## Using Shortcut Keys for Copy and Paste Format
 
 You can use the following shortcut keys to copy and paste the format in the Rich Text Editor.
@@ -70,4 +68,4 @@ You can use the following shortcut keys to copy and paste the format in the Rich
 
 > The format painter retains the formatting after application making it possible to apply the same formatting multiple times by using the <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>v</kbd> keyboard shortcut.
 
-Additionally, You can perform the format painter actions programmatically using the [executeCommand](../exec-command/) public method.
+Additionally, You can perform the format painter actions programmatically using the [executeCommand](exec-command) public method.

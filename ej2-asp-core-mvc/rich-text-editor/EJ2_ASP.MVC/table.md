@@ -127,7 +127,7 @@ Entire rows can be selected using the icons that appears on hover.
 - **What you'll see**: A selection handle appears on the left side of the corresponding row.
 - **How to select**: Click the handle to select the entire row.
 
-![Rich Text Editor table row selection](../images/table_row_selection.gif)
+![Rich Text Editor table row selection](./images/table_row_selection.gif)
 
 ### Selecting an Entire Column
 
@@ -139,7 +139,7 @@ Entire columns can be selected using the icons that appears on hover.
 - **What you'll see**: A selection handle appears at the top of the corresponding column.
 - **How to select**: Click the handle to select the entire column.
 
-![Rich Text Editor table column selection](../images/table_column_selection.gif)
+![Rich Text Editor table column selection](./images/table_column_selection.gif)
 
 ### Selecting the Entire Table
 
@@ -151,7 +151,7 @@ The entire table can be selected using the table selection icon that appears on 
 - **What you'll see**: A selection handle appears at the top-left corner of the table.
 - **How to select**: Click the handle to select the entire table.
 
-![Rich Text Editor entire table selection](../images/table_entire_selection.gif)
+![Rich Text Editor entire table selection](./images/table_entire_selection.gif)
 
 ### Keyboard Shortcuts
 
@@ -212,7 +212,7 @@ The Rich Text Editor provides advanced options to customize individual table cel
 
 ### Configuring the table cell properties in quick toolbar
 
-To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quickToolbarSettings#table) property:
+To enable individual cell dimension and border customization, configure the `TableCellProperties` item in the Table [quickToolbarSettings](https://ej2.syncfusion.com/angular/documentation/api/rich-text-editor/quicktoolbarsettings#table) property:
 
 ```typescript
 
@@ -263,7 +263,7 @@ The `TableCellProperties` enables modification of properties for both single and
 
 All changes made in the Table Cell Properties dialog are instantly reflected in the editor as a live preview, providing real-time visual feedback before finalizing the modifications.
 
-![Rich Text Editor table settings](../images/table_cell_properties.png)
+![Rich Text Editor table settings](./images/table_cell_properties.png)
 
 In the following sample, the table cell properties feature has been provided from table module.
 

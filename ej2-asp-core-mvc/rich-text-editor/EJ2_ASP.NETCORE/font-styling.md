@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Font Family, Size and Color in ##Platform_Name## Rich Text Editor control
+title: Font Family, Size and Color in Syncfusion Rich Text Editor control
 description: Learn here all about Font Family, Size and Color in Syncfusion ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Font Family, Size and Color
@@ -238,5 +238,5 @@ Both the `FontColor` and `BackgroundColor` properties offer two modes: `Picker` 
 
 ## See Also
 
-* [Applying Basic Text Formatting in Rich Text Editor](./basic-text-styling)
+* [Applying Basic Text Formatting in Rich Text Editor](basic-text-styling)
 * [Implementing Headings and Text Hierarchy in Rich Text Editor](./headings)

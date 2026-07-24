@@ -103,7 +103,7 @@ In the following sample, we configured the following properties:
 
 ![ASP.NET Core mention integration ](../images/mention-integration.png)
 
-> [View Sample](https://ej2.syncfusion.com/aspnetcore/RichTextEditor/MentionIntegration#/bootstrap5)
+> [View Sample](https://ej2.syncfusion.com/aspnetcore/richtexteditor/mentionintegration#/fluent2)
 
 ## See also
 

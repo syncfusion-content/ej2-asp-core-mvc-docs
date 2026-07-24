@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Disabling the ##Platform_Name## Rich Text Editor Control
+title: Disabling the ##Platform_Name## Rich Text Editor Control | Syncfusion
 description: Learn here all about Disabling the ##Platform_Name## Rich Text Editor control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Disabling the Rich Text Editor
@@ -46,4 +46,4 @@ Below are examples and code snippets demonstrating how to disable the Rich Text 
 
 ### See Also
 
-[Implementing Read-Only Mode in Rich Text Editor](./read-only-mode)
+[Implementing Read-Only Mode in Rich Text Editor](validation-security/read-only-mode)
