@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Circular Gauge Control
 
-This section briefly explains about how to include [ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include [ASP.NET Core Circular Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/circular-gauge) control in your ASP.NET Core application using Visual Studio.
 
 ## Prerequisites
 
@@ -34,7 +34,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
@@ -49,7 +49,7 @@ Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelpe
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script are referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -65,13 +65,13 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Also, register the script manager `<ejs-scripts>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -92,8 +92,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Circu
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-<ejs-circulargauge id="gauge">
-</ejs-circulargauge>
+<ejs-circulargauge id="gauge"></ejs-circulargauge>
 
 {% endhighlight %}
 {% endtabs %}
@@ -102,39 +101,16 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Circular Gauge Control](images/circulargauge-control.png)
 
-## Add Gauge Title
+> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
-You can add a title using `title` attribute to the circular gauge to provide quick information to the user.
+## Troubleshooting
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+If the Circular Gauge does not render or you run into build/runtime issues, try the following:
 
-<ejs-circulargauge id="circular" title="Speed">
-</ejs-circulargauge>
+* **Circular Gauge is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Gauge renders with no axis range** — Verify the `<e-circulargauge-axes>` child element contains at least one `<e-circulargauge-axis>` element with both `minimum` and `maximum` attributes set to numeric values, and that `startAngle`/`endAngle` define a visible arc.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
 
-{% endhighlight %}
-{% endtabs %}
-
-## Axis
-
-You can set the range to the axis using `minimum` and `maximum` attributes for axis tag. Refer the following code snippet to add the axis range to circular gauge.
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-
-<ejs-circulargauge id="circular" title="speed">
-    <e-circulargauge-axes>
-        <e-circulargauge-axis startAngle="240" endAngle="120" minimum="0" maximum="120" radius="90%">
-        </e-circulargauge-axis>
-    </e-circulargauge-axes>
-</ejs-circulargauge>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Circular Gauge with Axis](images/circulargauge-with-axis.png)
-
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
