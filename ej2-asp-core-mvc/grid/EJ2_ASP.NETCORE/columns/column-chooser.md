@@ -24,6 +24,22 @@ The column chooser feature in the [ASP.NET Core DataGrid](https://www.syncfusion
 ![Column chooser](../images/column-chooser/Colum-chooser.png)
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
+## Column chooser modes
+ 
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
 
 ## Column chooser modes
  

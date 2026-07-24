@@ -1,3 +1,0 @@
-@using Syncfusion.EJ2.RichTextEditor
-
-@Html.EJS().RichTextEditor("markdown").Value((string)ViewBag.value).EditorMode(EditorMode.Markdown).Render()

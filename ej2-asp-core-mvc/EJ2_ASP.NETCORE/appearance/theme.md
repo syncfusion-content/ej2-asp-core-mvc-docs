@@ -47,7 +47,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core themes can be used
 
 Using the below approaches the themes can be referenced in the ASP.NET Core application,
 
-1.  [Static Web Assets](#static-web-assets) - Used to reference theme stylesheets shipped inside the NuGet package via static web assets.
+1. [Static Web Assets](#static-web-assets) - Used to reference theme stylesheets shipped inside the NuGet package via static web assets.
 2. [CDN](#cdn-reference) - Used to reference complete css via static web assets.
 3. [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator) - Used to generate resources only for the selected (used) components.
 4. [Theme Studio](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme-studio) - Used to customize and generate themes only for the selected (used) components.
