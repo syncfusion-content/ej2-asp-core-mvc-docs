@@ -14,13 +14,13 @@ documentation: ug
 
 The Syncfusion® ASP.NET MVC (Essential JS 2) Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion® references in Visual Studio.
 
-N> The Syncfusion® Extension is published in the Visual Studio Marketplace. We provided separate ASP.NET Core (Essential JS 2) extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to the below Visual Marketplace link.
+N> The Syncfusion® Extension is published in the Visual Studio Marketplace. We provide separate ASP.NET MVC (Essential JS 2) extension support for Visual Studio 2022 and Visual Studio 2019 or lower. Refer to the following Visual Studio Marketplace links.
 
 [Visual Studio 2022](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCVSExtensions)
 
 [Visual Studio 2019 or lower](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETMVCExtensions)
 
-## IMPORTANT
+## Supported Features
 
 The Syncfusion ASP.NET MVC (Essential JS 2) menu option is available from v17.1.0.32.
 Syncfusion® provides the following supports in Visual Studio:
@@ -31,7 +31,7 @@ Syncfusion® provides the following supports in Visual Studio:
 
 [Upgrade Project](./visual-studio-extensions/upgrade-project): Upgrades the existing Syncfusion ASP.NET MVC (Essential JS 2) application from one Essential Studio® version to another version.
 
-[Creator Sample](./visual-studio-extensions/create-sample): Creates the Syncfusion ASP.NET MVC (Essential JS2) application with the sample code of required controls and features.
+[Creator Sample](./visual-studio-extensions/create-sample): Creates the Syncfusion ASP.NET MVC (Essential JS 2) application with the sample code of required controls and features.
 
 ### No project selected in Visual Studio
 

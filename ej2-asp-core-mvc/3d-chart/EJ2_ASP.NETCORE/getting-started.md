@@ -3,22 +3,22 @@ layout: post
 title: Getting Started with ##Platform_Name## 3D Chart Control | Syncfusion
 description: Check out and learn about getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: 3D Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core 3D Chart Control
+# Getting Started with ASP.NET Core 3D Charts Control
 
 This section briefly explains how to include the [ASP.NET Core 3D Chart](https://www.syncfusion.com/aspnet-core-ui-controls/charts) control in your ASP.NET Core application using Visual Studio.
 
-## Prerequisites
+## Create an ASP.NET Core Web App with Razor Pages
 
-[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
-## Create ASP.NET Core web application with Razor pages
+## Install the required ASP.NET Core package
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+To add [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.Chart3D](https://www.nuget.org/packages/Syncfusion.AspNetCore.Chart3D/) package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
@@ -27,9 +27,9 @@ This section briefly explains how to include the [ASP.NET Core 3D Chart](https:/
 To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can run the following command in the **Package Manager Console**.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Chart3D -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -38,27 +38,28 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
-Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Charts` Tag Helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.AspNetCore.Charts
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add script resources
 
-Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Include the [script reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml**.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <!-- ASP.NET Core controls scripts -->
+    <script src="_content/Syncfusion.AspNetCore.Chart3D/scripts/sf-chart3d.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -71,11 +72,11 @@ Here, script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layou
 Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET Core Script Manager -->
+    <!-- ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
 
@@ -89,7 +90,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core 3D Chart t
 {% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/3d-chart/getting-started/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GettingStarted.cs" %}
@@ -100,7 +101,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core 3D Chart t
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 {% include code-snippet/3d-chart/getting-started/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GettingStarted.cs" %}
@@ -111,7 +112,7 @@ Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core 3D Chart t
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core 3D Chart control will be rendered in the default web browser.
 
-![ASP.NET Core 3D Chart Control](images/three-d-chart.png)
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control will render in your default web browser.
 
 ## Troubleshooting
 
@@ -125,5 +126,5 @@ If the 3D Chart does not render or you run into build/runtime issues, try the fo
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

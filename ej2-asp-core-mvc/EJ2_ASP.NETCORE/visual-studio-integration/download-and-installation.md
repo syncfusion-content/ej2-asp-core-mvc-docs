@@ -15,21 +15,21 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio ext
 
 ## Prerequisites
 
-The following software prerequisites must be installed to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension, as well as to creating, adding snippet, converting, and upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core applications.
+The following software prerequisites must be installed to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension, as well as to create, add snippets, convert, and upgrade Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core applications.
 
 * [Visual Studio 2022 or later](https://visualstudio.microsoft.com/downloads).
 
 * [.NET Core 8.0 or later](https://dotnet.microsoft.com/en-us/download/dotnet).
 
-## Install through the Visual Studio Manage Extensions
+## Install via Visual Studio Manage Extensions
 
-The steps below assist you to how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extensions from **Visual Studio Manage Extensions**.
+The steps below assist you in installing the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extensions from the **Visual Studio Manage Extensions** window.
 
-1. Open the Visual Studio.
+1. Open Visual Studio.
 
-2. Navigate to **Extension ->Manage Extensions** and open the Manage Extensions.
+2. Navigate to **Extensions -> Manage Extensions** to open the Manage Extensions window.
 
-3. On the left, click the **Online** tab and type **"ASP.NET Core VS Code Extensions – Syncfusion<sup style="font-size:70%">&reg;</sup>"** in the **search box**.
+3. On the left, click the **Online** tab and type **"ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>"** in the **search box**.
 
     ![Online-Manage-Extension-window](images/OnlineExtension.png)
 
@@ -47,9 +47,11 @@ The steps below assist you to how to install the Syncfusion<sup style="font-size
 
     ![SyncfusionMenu](images/SyncfusionMenu.png)
 
+9. To verify the installation, open **Extensions -> Manage Extensions -> Installed** and confirm that **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is listed.
+
 ## Install from the Visual Studio Marketplace
 
-The steps below illustrate how to download and install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension from the Visual Studio Marketplace.
+The steps below illustrate how to download and install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core extension from the Visual Studio Marketplace. Use this method if you do not have access to the in-studio extension manager or want to install on multiple machines.
 
 1. Download the [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extensions](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions) from the Visual Studio Marketplace.
 
@@ -64,3 +66,5 @@ The steps below illustrate how to download and install the Syncfusion<sup style=
 5. After the installation is complete, open Visual Studio. You can now use Syncfusion<sup style="font-size:70%">&reg;</sup> extensions from the Visual Studio under the **Extensions** menu.
 
      ![SyncfusionMenu](images/SyncfusionMenu.png)
+
+6. To verify the installation, open **Extensions -> Manage Extensions -> Installed** and confirm that **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is listed.
