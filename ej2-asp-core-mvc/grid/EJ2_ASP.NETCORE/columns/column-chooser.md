@@ -41,6 +41,23 @@ The following example enables immediate mode by setting the `columnChooserSettin
  
 > The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
 
+## Column chooser modes
+ 
+The Grid column chooser supports two modes, `Default` and `Immediate`. In `Default` mode, column visibility changes are applied only after clicking the "OK" button in the column chooser dialog. In `Immediate` mode, column visibility changes are applied automatically when columns are checked or unchecked through the checkboxes in the column chooser.
+ 
+The following example enables immediate mode by setting the `columnChooserSettings.mode` property to `Immediate`:
+ 
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Columnchooser.cs" %}
+{% include code-snippet/grid/columns/Columnchooser-immediate/columnchooser.cs %}
+{% endhighlight %}
+{% endtabs %}
+ 
+> The `columnChooserSettings.immediateModeDelay` property can be used to control how quickly visibility changes are applied in immediate mode. This property specifies the delay interval, in milliseconds, before the update is executed. The default value is `0`, which applies changes immediately.
+
 ## Hide column in column chooser dialog
 
 You can hide the column names in column chooser by defining the `columns.showInColumnChooser` as **false**. This feature is useful when working with a large number of columns or when you want to limit the number of columns that are available for selection in the column chooser dialog.
