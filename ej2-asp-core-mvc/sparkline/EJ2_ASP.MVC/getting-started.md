@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Sparkline Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Sparkline control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,47 +9,56 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Sparkline Control
+# Getting Started with the ASP.NET MVC Sparkline Control
 
-This section briefly explains about how to include [ASP.NET MVC Sparkline](https://www.syncfusion.com/aspnet-mvc-ui-controls/sparkline) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Sparkline](https://www.syncfusion.com/aspnet-mvc-ui-controls/sparkline) control to your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
 
-## Create ASP.NET MVC application with HTML helper
+## Create an ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+You can create an ASP.NET MVC application using either of the following options:
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+* [Create a project using Microsoft templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-## Install ASP.NET MVC package in the application
+* [Create a project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+## Install the ASP.NET MVC NuGet package
+
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting (Tools → NuGet Package Manager → Manage NuGet Packages for Solution). Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to:
+Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight bash tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The Syncfusion.EJ2.MVC5 NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Add namespace
+## Add the namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
 
-```
+{% tabs %}
+{% highlight xml tabtitle="~/Views/Web.config" %}
+
 <namespaces>
-    <add namespace="Syncfusion.EJ2"/>
+    <add namespace="Syncfusion.EJ2" />
 </namespaces>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add script resources
 
-Here, the script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
+Add the script reference inside the `<head>` element of the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -63,17 +72,17 @@ Here, the script is referred using CDN inside the `<head>` of `~/Pages/Shared/_L
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
+## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
+Register the script manager `EJS().ScriptManager()` at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
-...
+    ...
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
@@ -81,7 +90,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET MVC Sparkline control
+## Add the ASP.NET MVC Sparkline control
 
 Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sparkline control in `~/Views/Home/Index.cshtml` page.
 
@@ -89,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sparkl
 {% highlight cshtml tabtitle="CSHTML" %}
 
 <h2> Essential JS 2 for ASP.NET MVC Sparkline </h2>
-@Html.EJS().Sparkline("spark").DataSource(Model).XName("xval").YName("yval").Height("100").Width("70").Render()
+@Html.EJS().Sparkline("spark").DataSource(Model).XName("xValue").YName("yValue").Height("100").Width("70").Render()
 
 {% endhighlight %}
 {% highlight cs tabtitle="HomeController.cs" %}
@@ -103,29 +112,51 @@ public class HomeController : Controller
 public class DataSource
 {
     public int x;
-    public string xval;
-    public double yval;
+    public string xValue;
+    public double yValue;
     public static List<DataSource> GetData()
     {
         List<DataSource> data1 = new List<DataSource>();
-        data1.Add(new DataSource() { x = 0, xval = "2005", yval = 20090440 });
-        data1.Add(new DataSource() { x = 1, xval = "2006", yval = 20264080 });
-        data1.Add(new DataSource() { x = 2, xval = "2007", yval = 20434180 });
-        data1.Add(new DataSource() { x = 3, xval = "2008", yval = 21007310 });
-        data1.Add(new DataSource() { x = 4, xval = "2009", yval = 21262640 });
-        data1.Add(new DataSource() { x = 5, xval = "2010", yval = 21515750 });
-        data1.Add(new DataSource() { x = 6, xval = "2011", yval = 21766710 });
-        data1.Add(new DataSource() { x = 7, xval = "2012", yval = 22015580 });
-        data1.Add(new DataSource() { x = 8, xval = "2013", yval = 22262500 });
-        data1.Add(new DataSource() { x = 9, xval = "2014", yval = 22507620 });
+        data1.Add(new DataSource() { x = 0, xValue = "2005", yValue = 20090440 });
+        data1.Add(new DataSource() { x = 1, xValue = "2006", yValue = 20264080 });
+        data1.Add(new DataSource() { x = 2, xValue = "2007", yValue = 20434180 });
+        data1.Add(new DataSource() { x = 3, xValue = "2008", yValue = 21007310 });
+        data1.Add(new DataSource() { x = 4, xValue = "2009", yValue = 21262640 });
+        data1.Add(new DataSource() { x = 5, xValue = "2010", yValue = 21515750 });
+        data1.Add(new DataSource() { x = 6, xValue = "2011", yValue = 21766710 });
+        data1.Add(new DataSource() { x = 7, xValue = "2012", yValue = 22015580 });
+        data1.Add(new DataSource() { x = 8, xValue = "2013", yValue = 22262500 });
+        data1.Add(new DataSource() { x = 9, xValue = "2014", yValue = 22507620 });
         return data1;
     }
 }
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sparkline control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Sparkline control will be rendered in the default web browser.
 
 ![ASP.NET MVC Sparkline Control](images/sparkline.png)
 
-N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Sparkline/ASP.NET%20MVC%20Razor%20Examples).
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Sparkline/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
+
+## Troubleshooting
+
+If the Sparkline control does not render as expected, review the following common issues and their resolutions.
+
+* **"Unlicensed" watermark appears on the page** — The `Syncfusion.Licensing` package is installed but the license key has not been registered. Register the license key in `~/App_Start/FilterConfig.cs` (or `Program.cs`) and rebuild. See [Registering the Syncfusion license key](https://ej2.syncfusion.com/aspnetmvc/documentation/licensing/how-to-register-in-an-application).
+
+* **"Script Manager is not defined" or scripts run twice** — `@Html.EJS().ScriptManager()` was not added, or was added more than once. Ensure `ScriptManager` is registered exactly once at the end of `<body>` in `_Layout.cshtml`.
+
+* **"Could not load file or assembly 'Syncfusion.EJ2'"** — The NuGet package was not restored. Run `Update-Package -reinstall` in the Package Manager Console, or restore via Visual Studio (right-click solution → Restore NuGet Packages).
+
+* **Chart renders but no data points appear** — The `XName` / `YName` values (`xValue` / `yValue`) must match the property names in the data model exactly. Property names are case-sensitive.
+
+* **"The model item passed is null"** — The view is decorated with `@model List<SparklineData>` and the controller is returning `null` (or the model is empty). Verify the `Index` action returns a populated list and the namespace in the view matches the model's namespace.
+
+* **`Newtonsoft.Json` reference error after upgrade** — `Syncfusion.EJ2.MVC5` requires a specific `Newtonsoft.Json` version. Install a compatible `Newtonsoft.Json` version (≥ 12.0.2) via NuGet.
+
+## See also
+
+* [Sparkline Types in ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/sparkline-types)
+* [Data Label in ASP.NET MVC Sparkline](https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/data-labels)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)

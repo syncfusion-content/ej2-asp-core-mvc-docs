@@ -109,7 +109,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Ribbon
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Tab
+## Adding Ribbon tab
 
 In Ribbon, the options are arranged in tabs for easy access. You can use the `Tabs` property of ribbon to define the ribbon tab like below.
 
@@ -124,7 +124,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `Ta
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Group
+## Adding Ribbon group
 
 To define a ribbon group under each tab, you can use the `Groups` property of ribbon tab like below. The `Orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
 
@@ -142,7 +142,7 @@ To define a ribbon group under each tab, you can use the `Groups` property of ri
 {% endhighlight %}
 {% endtabs %}
 
-## Adding Ribbon Items
+## Adding Ribbon items
 
 You can use the `Collections` property of ribbon group to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `Items` property of ribbon collection and the `Type` property of ribbon item to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
 
