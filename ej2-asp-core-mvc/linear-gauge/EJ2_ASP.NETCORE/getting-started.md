@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Linear Gauge Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Linear Gauge control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Linear Gauge Control | Syncfusion
+description: Check out and learn about getting started with ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Linear Gauge
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,9 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Linear Gauge Control
 
-This section briefly explains how to include the [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET Core application using Visual Studio.
+
+## Prerequisites
 
 ## Create an ASP.NET Core Web App with Razor Pages
 
@@ -20,7 +22,9 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 To add [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.LinearGauge](https://www.nuget.org/packages/Syncfusion.AspNetCore.LinearGauge/) package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
-Alternatively, you can install the same package using the Package Manager Console with the following command.
+## Install ASP.NET Core package in the application
+
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager Console" %}
@@ -30,7 +34,9 @@ Install-Package Syncfusion.AspNetCore.LinearGauge -Version {{ site.releaseversio
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET Core Tag Helpers
+> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 
 After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.LinearGauge` Tag Helpers.
 
@@ -59,7 +65,7 @@ Include the [script reference](https://ej2.syncfusion.com/aspnetcore/documentati
 {% endhighlight %}
 {% endtabs %}
 
-## Register the script manager
+> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
 
 Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
 
@@ -75,64 +81,36 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Linear Gauge control
+## Add ASP.NET Core Linear Gauge Control
 
-Add the [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in the **~/Pages/Index.cshtml** file.
+Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Linear Gauge tag helper to the `~/Pages/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-lineargauge id="linear">
+<ejs-lineargauge id="linearGauge">
 </ejs-lineargauge>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Linear Gauge control will be rendered in the default web browser.
 
 ![ASP.NET Core Linear Gauge Control](images/lineargauge-control.webp)
 
-## Add Gauge Title
-
-The title for the Linear Gauge can be rendered using the `title` property in the `ejs-lineargauge` tag.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-
-<ejs-lineargauge id="linear" title="Temperature Measure">
-</ejs-lineargauge>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Linear Gauge with Title](images/lineargauge-with-title.webp)
-
-## Axis
-
-The start value and end value of the Linear Gauge axis can be added using the `minimum` and `maximum` property in the `e-axis` tag.
-
-Refer below code snippet to add the axis range to Linear Gauge.
-
-{% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-
-<ejs-lineargauge id="linear" orientation="Horizontal">
-    <e-lineargauge-axes>
-        <e-lineargauge-axis minimum="0" maximum="200">
-        </e-lineargauge-axis>
-    </e-lineargauge-axes>
-</ejs-lineargauge>
-
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Linear Gauge with Axis](images/lineargauge-with-axis.webp)
-
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
+
+## Troubleshooting
+
+If the Linear Gauge does not render or you run into build/runtime issues, try the following:
+
+* **Linear Gauge is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Gauge renders with no axis range** — Verify the `<e-lineargauge-axes>` child element contains at least one `<e-lineargauge-axis>` element with both `minimum` and `maximum` attributes set to numeric values.
+* **Pointer does not appear** — Verify the `<e-lineargauge-pointer>` child element is placed inside `<e-lineargauge-axis>` and that the `value` attribute is a number within the axis `minimum`/`maximum` range.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
+* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
 ## See also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

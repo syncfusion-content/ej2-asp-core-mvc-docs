@@ -13,7 +13,7 @@ documentation: ug
 
 ## Title
 
-The title of the Bullet Chart displays the information about the data plotted by specifying it in the [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property.
+The title of the Bullet Chart displays the information about the data plotted by specifying it in the [`title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
