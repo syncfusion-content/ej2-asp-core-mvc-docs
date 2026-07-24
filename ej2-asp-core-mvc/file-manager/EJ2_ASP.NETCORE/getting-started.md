@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting started with ASP.NET Core File Manager Control
+# Getting Started with ASP.NET Core File Manager Control
 
 This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -18,7 +18,7 @@ This section briefly explains how to include the [ASP.NET Core File Manager](htt
 
 {% tabcontent Visual Studio %}
 
-Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
 {% endtabcontent %}
 
@@ -27,7 +27,7 @@ Create an ASP.NET Core Web App using Visual Studio via [Microsoft Templates](htt
 Run the following command to create a new ASP.NET Core Web App.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet new webapp -o RazorPagesMovie
 code -r RazorPagesMovie
@@ -35,15 +35,15 @@ code -r RazorPagesMovie
 {% endhighlight %}
 {% endtabs %}
 
-Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app), the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project) or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app), the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project) or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
 {% endtabcontent %}
 
 {% endtabcontents %}
 
-## Install the required ASP.NET Core package
+## Install the required ASP.NET Core packages
 
-Install [Syncfusion.AspNetCore.FileManager](https://www.nuget.org/packages/Syncfusion.AspNetCore.FileManager/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core controls are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
+Install [Syncfusion.AspNetCore.FileManager](https://www.nuget.org/packages/Syncfusion.AspNetCore.FileManager/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) NuGet packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for the details.
 
 {% tabcontents %}
 
@@ -55,7 +55,7 @@ Install [Syncfusion.AspNetCore.FileManager](https://www.nuget.org/packages/Syncf
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.AspNetCore.FileManager -Version {{ site.releaseversion }}
 Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
@@ -70,7 +70,7 @@ Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 Open the terminal and run the following commands.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet add package Syncfusion.AspNetCore.FileManager -v {{ site.releaseversion }}
 dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
@@ -84,7 +84,7 @@ dotnet add package Syncfusion.AspNetCore.Themes -v {{ site.releaseversion }}
 
 ## Add the ASP.NET Core Tag Helper
 
-After the package is installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.FileManager` Tag Helpers.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.FileManager` Tag Helpers.
 
 {% tabs %}
 {% highlight cshtml tabtitle="_ViewImports.cshtml" %}
@@ -129,11 +129,11 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core File Manager control
+## Add the ASP.NET Core File Manager control
 
 Add the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in the **~/Pages/Index.cshtml** file.
 
-Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files for the File Manager access.
+Create a `Controllers` folder in the project and add a `HomeController.cs` file with the following code. Also, create a `wwwroot/Files` folder to store the files accessed by the File Manager.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -313,7 +313,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 Open the terminal and run the following command.
 
 {% tabs %}
-{% highlight razor tabtitle="Terminal" %}
+{% highlight C# tabtitle="Terminal" %}
 
 dotnet run
 
@@ -333,8 +333,8 @@ N> The File Manager can be rendered with `local service` for sending ajax reques
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
 3. [Ajax Settings Configuration (uploadUrl, downloadUrl, getImageUrl)](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations#ajax-settings-configuration)
-4. [Overview](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
-5. [File Manager Views](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/views)
-6. [File Manager File Operations](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
-7. [File Manager Upload](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/upload)
-8. [File Manager Customization](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)
+4. [Getting Started with File Manager Overview ](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/user-interface#file-manager-overview)
+5. [Working with File Manager Views in ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/views)
+6. [Perform File Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/file-operations)
+7. [Uploading Files in ASP.NET Core File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/upload)
+8. [File Upload Operations in File Manager](https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/customization)

@@ -3,20 +3,20 @@ layout: post
 title: Getting Started with ##Platform_Name## Maps Component | Syncfusion
 description: Check out and learn about getting started with ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Getting Started
+control: Maps
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 # Getting Started with the ASP.NET MVC Maps Control
 
-This section explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) control to your ASP.NET MVC application using Visual Studio.
+This section explains how to add the [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) control to your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
 You can explore some useful features in the Maps control in the following video.
 
 {% youtube "https://www.youtube.com/watch?v=kwE6ikF7QYQ" %}
 
-## Prerequisites
+## Create an ASP.NET MVC Web App with HTML Helper
 
 Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
 
@@ -36,9 +36,9 @@ Alternatively, you can use the Package Manager Console by navigating to:
 Tools → NuGet Package Manager → Package Manager Console, and then run the following command:
 
 {% tabs %}
-{% highlight bash tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
+Install-Package Syncfusion.AspNetMvc.Maps -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -47,10 +47,10 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are ava
 
 ## Add the namespace
 
-Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
+After the package is installed, open the **~/Views/Web.config** file and import the `Syncfusion.EJ2` namespace.
 
 {% tabs %}
-{% highlight xml tabtitle="~/Views/Web.config" %}
+{% highlight xml tabtitle="Web.config" %}
 
 <namespaces>
     <add namespace="Syncfusion.EJ2" />
@@ -61,32 +61,30 @@ Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file availabl
 
 ## Add script resources
 
-Add the script reference inside the `<head>` element of the `~/Views/Shared/_Layout.cshtml` file as follows.
+The script can be referenced from the [CDN](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme#cdn-reference). Include the [script references](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) inside the `<head>` of **~/Views/Shared/_Layout.cshtml**.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <!-- ASP.NET MVC controls scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+## Register the Script Manager
 
-## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Register the script manager `EJS().ScriptManager()` at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file as follows.
+Open the **~/Views/Shared/_Layout.cshtml** file and register the script manager `EJS().ScriptManager()` at the end of the `<body>` element as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
-    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    <!-- ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
 
@@ -100,7 +98,7 @@ Place the **WorldMap.json** file in the **App_Data** folder of the project. You 
 Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps control to the `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
 
 @Html.EJS().Maps("container").Layers(layer =>
 {
@@ -139,7 +137,9 @@ N> Map layers render only when `ShapeData` is provided. See the [Syncfusion samp
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> on Windows or <kbd>⌘</kbd>+<kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Maps control will be rendered in the default web browser.
 
-![ASP.NET MVC - Essential JS2 Maps](../maps/images/aspnetmvc-maps.png)
+![ASP.NET MVC - Essential JS2 Maps](../maps/images/aspnetmvc-maps.webp)
+
+N> Map layers render only when `ShapeData` is provided [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/WorldMap-637657487).
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Map/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
 

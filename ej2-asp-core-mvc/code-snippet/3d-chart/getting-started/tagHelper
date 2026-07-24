@@ -1,5 +1,4 @@
 @{
-    ...
     List<Data> data = new List<Data>
     {
         new Data { X= "Tesla", Y= 137429 },

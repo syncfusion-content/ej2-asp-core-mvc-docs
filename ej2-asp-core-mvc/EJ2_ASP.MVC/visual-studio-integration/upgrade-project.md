@@ -10,13 +10,13 @@ documentation: ug
 
 # Upgrading Syncfusion® ASP.NET MVC application to latest version
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC migration add-in for Visual Studio (also referred to as Project Migration) allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> to another version. This reduces the amount of manual work required when migrating the Syncfusion version.
 
 ## IMPORTANT
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-> Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Migration, check whether the **ASP.NET MVC Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
+> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Migration, check whether the **ASP.NET MVC Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is installed in the Visual Studio Extension Manager: for Visual Studio 2019 or later, by clicking **Extensions > Manage Extensions > Installed**. If this extension is not installed, install the extension by following the steps in the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build is installed. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not the same for both the extension and build, then the Project Migration will not be shown.
 
 The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC application via Visual Studio 2022 or later:
 
@@ -48,7 +48,7 @@ The steps below will assist you to upgrade the Syncfusion<sup style="font-size:7
 
 5. The Syncfusion<sup style="font-size:70%">&reg;</sup> Reference Assemblies, Scripts, and CSS are updated to the selected version in the project.
 
-    if you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process completed
+    If you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below, once the migration process has completed.
 
     ![BackupLocation](images/BackupLocation.png)
 
