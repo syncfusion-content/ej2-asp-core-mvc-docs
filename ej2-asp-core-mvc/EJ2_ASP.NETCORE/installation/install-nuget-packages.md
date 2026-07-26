@@ -8,15 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet Packages
+# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet packages
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages using the **Package Manager UI**, the **dotnet (.NET) CLI**, or the **Package Manager Console**.
-
-**Prerequisites**
-
-* Visual Studio 2019 or later with the **ASP.NET and web development** workload installed.
-* The [.NET SDK](8.0, or later) installed.
-* An existing ASP.NET Core web application (or a new one created through **File** → **New** → **Project** → **ASP.NET Core Web App**).
 
 ## Overview
 
@@ -24,7 +18,13 @@ This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg
 
 N> The `Syncfusion.EJ2.AspNet.Core` NuGet package, which contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) components in a single package, is available beginning with v16.3.0.21 (Essential Studio<sup style="font-size:70%">&reg;</sup> 2018 Volume 3).
 
-## Installation Using the Package Manager UI
+**Prerequisites**
+
+* Visual Studio 2019 or later with the **ASP.NET and web development** workload installed.
+* The [.NET SDK](8.0, or later) installed.
+* An existing ASP.NET Core web application (or a new one created through **File** → **New** → **Project** → **ASP.NET Core Web App**).
+
+## Installation using the Package Manager UI
 
 The NuGet **Package Manager UI** allows you to search, install, uninstall, and update Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages in your applications and solutions. You can find and install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages in your Visual Studio ASP.NET Core web application, and this process is easy with the steps below:
 
@@ -56,7 +56,7 @@ The NuGet **Package Manager UI** allows you to search, install, uninstall, and u
 
 5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive apps with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core (EJ2) help documentation](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
 
-## Installation Using the dotnet (.NET) CLI
+## Installation using the dotnet (.NET) CLI
 
 The [dotnet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-dotnet-cli) allows you to add, restore, pack, publish, and manage packages without making any changes to your application files. [dotnet add package](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-add-package?tabs=netcore2x) adds a package reference to the application file, then runs [dotnet restore](https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-restore?tabs=netcore2x) to install the package.
 
@@ -87,7 +87,7 @@ Follow the below instructions to use the `dotnet` CLI to install the Syncfusion<
 
 5. At this point, your application has all the required Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, and you will be ready to start building high-performance, responsive apps with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) components](https://www.syncfusion.com/aspnet-core-ui-controls). Also, you can refer to the [ASP.NET Core (EJ2) help documentation](https://ej2.syncfusion.com/aspnetcore/documentation/introduction) for development.
 
-## Installation Using the Package Manager Console
+## Installation using the Package Manager Console
 
 The **Package Manager Console** saves NuGet package installation time since you don't have to search for the `Syncfusion.EJ2.AspNet.Core` NuGet package you want to install — you can just type the installation command. Follow the instructions below to use the Package Manager Console to reference the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) component as a NuGet package in your ASP.NET Core web application.
 

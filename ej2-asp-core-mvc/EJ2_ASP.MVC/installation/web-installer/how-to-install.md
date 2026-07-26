@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 Web Installer
+# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC EJ2 web installer
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio ASP.NET MVC - EJ2 **web installer** on Windows, and how to uninstall it.
 
@@ -113,7 +113,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 installer
 
 Follow either one of the options below to uninstall the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 installer.
 
-### Option 1: Uninstall the ASP.NET MVC - EJ2 Using the Web Installer
+### Option 1: Uninstall the ASP.NET MVC - EJ2 using the web installer
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the option to uninstall products of the same version directly from the Web Installer application. Select the products to be uninstalled from the list, and the Web Installer will uninstall them one by one.
 
