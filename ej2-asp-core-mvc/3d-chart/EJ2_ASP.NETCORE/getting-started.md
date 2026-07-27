@@ -108,8 +108,6 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core 3D Charts Control](images/three-d-chart.webp)
 
-<<<<<<< HEAD
-=======
 ## Troubleshooting
 
 If the 3D Chart does not render or you run into build/runtime issues, try the following:
@@ -120,7 +118,6 @@ If the 3D Chart does not render or you run into build/runtime issues, try the fo
 * **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
 * **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
 
->>>>>>> f98bef6c339cdd5864547c8dc63d4765c04eeda2
 ## See also
 
 1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
