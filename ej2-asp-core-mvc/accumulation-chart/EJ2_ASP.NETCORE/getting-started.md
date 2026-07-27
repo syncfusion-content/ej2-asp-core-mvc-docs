@@ -1,13 +1,12 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Accumulation Chart | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Accumulation Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 <!-- markdownlint-disable MD036 -->
 
@@ -26,9 +25,11 @@ Refer to the [System requirements for ASP.NET Core controls](https://ej2.syncfus
 
 You can create an ASP.NET Core application using either of the following options:
 
-* [Create a Project using Microsoft templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+
+The following tabs walk through creating the project in **Visual Studio** or **Visual Studio Code**.
 
 {% tabcontents %}
 
@@ -46,7 +47,7 @@ You can create an ASP.NET Core application using either of the following options
 
 5. In the **Additional information** dialog:
 * Select **.NET 10.0** or the latest supported .NET version.
-* Verify: **Do not use top-level statements** is unchecked.
+* Ensure **Do not use top-level statements** is unchecked (the project should use top-level statements).
 
 6. Click **Create**.
 
@@ -102,7 +103,7 @@ code -r SyncfusionApp
 To integrate the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Accumulation Chart control, install the required [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) NuGet packages using the integrated terminal:
 
 1. Navigate to the directory containing the **.csproj** file.
-2. Run the following commands to install the package:
+2. Run the following command to install the package:
 
 {% tabs %}
 {% highlight bash tabtitle=".NET CLI" %}
@@ -185,8 +186,7 @@ public class PieChartData
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application in
-Visual Studio. If you are using Visual Studio Code, run the following command in the terminal:
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application in Visual Studio. If you are using Visual Studio Code, run the following command in the terminal:
 
 {% tabs %}
 {% highlight bash tabtitle=".NET CLI" %}
@@ -199,6 +199,15 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Accumulation C
 ![ASP.NET Core Accumulation Chart Control](images/accumulation-chart.png)
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/AccumulationChart/ASP.NET%20Core%20Tag%20Helper%20Examples) to understand how this getting started example works.
+
+## Troubleshooting
+
+If the Accumulation Chart control does not render as expected, check the following common issues:
+
+* **Tag helpers are not recognized in `.cshtml`** — Ensure `@addTagHelper *, Syncfusion.EJ2` is present in `~/Pages/_ViewImports.cshtml` and that the `Syncfusion.EJ2.AspNet.Core` NuGet package is installed. Build the project so the tag helper assembly is discovered.
+* **Chart renders but shows no data** — Verify that `dataSource`, `xName`, and `yName` on the `<e-accumulation-series>` match the property names of the bound data exactly (case-sensitive).
+* **Script-related runtime errors** — Ensure `<ejs-scripts></ejs-scripts>` is registered once at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`, and that the CDN script version matches the installed NuGet package version.
+* **License warning in the console** — Register the Syncfusion license key in `Program.cs` as described in [Register Syncfusion license key](https://ej2.syncfusion.com/aspnetcore/documentation/licensing/how-to-register-in-an-application).
 
 ## See Also
 

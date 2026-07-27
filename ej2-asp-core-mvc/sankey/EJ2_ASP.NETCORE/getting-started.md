@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sankey Chart Component
-description: Checkout and learn about Getting started with ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
+title: Getting started with ##Platform_Name## Sankey Chart Control | Syncfusion
+description: Check out and learn about Getting started with ##Platform_Name## Sankey Chart control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Getting started
 publishingplatform: ##Platform_Name##
@@ -12,7 +12,7 @@ documentation: ug
 
 # Getting started with ASP.NET Core Sankey Chart Control
 
-This section briefly explains about how to include ASP.NET Core Sankey Chart control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the ASP.NET Core Sankey Chart control in your ASP.NET Core application using Visual Studio.
 
 > **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/overview)
 
@@ -28,7 +28,7 @@ This section briefly explains about how to include ASP.NET Core Sankey Chart con
 
 ## Install ASP.NET Core package in the application
 
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it. Alternatively, you can run the following command in the **Package Manager Console**.
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -116,7 +116,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Sanke
 
 ## Add data to Sankey Chart
 
-Now you can add data to the Sankey Chart component by defining nodes and links. Nodes represent the categories, and links represent the flow between them.
+Define the nodes and links to bind data to the Sankey Chart. Each node must have a unique `Id`, and each link must reference a `SourceId`, `TargetId`, and a numeric `Value`. Nodes represent the categories, and links represent the flow between them.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -142,7 +142,16 @@ Now you can add data to the Sankey Chart component by defining nodes and links. 
 
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Chart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Sankey Chart control will be rendered in the default web browser.
+
+## Troubleshooting
+
+If the Sankey Chart does not render or you run into build/runtime issues, try the following:
+
+* **Sankey Chart is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
+* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
+* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
+* **Chart renders with the default theme but data does not appear** — Check that every `Link.SourceId` and `Link.TargetId` matches an existing `Node.Id`, and that the `Value` is a positive number.
 
 ## See also
 

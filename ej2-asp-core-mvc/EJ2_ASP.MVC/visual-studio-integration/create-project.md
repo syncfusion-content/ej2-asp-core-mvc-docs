@@ -16,7 +16,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Pr
 
 Use the following steps to create the **Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application** through the **Visual Studio Project Template.**
 
-> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/download-and-installation) help topic.
+> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Project Template, check whether the **ASP.NET MVC Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is installed in the Visual Studio Extension Manager: for Visual Studio 2019 or later, by clicking **Extensions > Manage Extensions > Installed**. If this extension is not installed, install the extension by following the steps in the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/download-and-installation) help topic.
 
 1. To create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 2) project, follow either one of the options below:
 
@@ -34,7 +34,7 @@ Use the following steps to create the **Syncfusion<sup style="font-size:70%">&re
 
 2. Name the **Project**, choose the destination location, and set the .NET Framework of the project, and then click **OK**. The Project Configuration Wizard appears.
 
-    ![project confuration](images/project-configuration.png)
+    ![project configuration](images/project-configuration.png)
 
     **Project configurations**
 
@@ -44,7 +44,7 @@ Use the following steps to create the **Syncfusion<sup style="font-size:70%">&re
 
     ![theme selection](images/theme-selection.png)
 
-    **Assets From**: : Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET MVC Project, either NuGet, CDN, or Installed Location.
+    **Assets From**: Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET MVC Project, either NuGet, CDN, or Installed Location.
 
     > Installed location option will be available only when the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JavaScript 2 setup has been installed.
 
