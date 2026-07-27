@@ -1,7 +1,0 @@
-<ejs-richtexteditor id="google-font" value="@ViewBag.value">
-    <e-richtexteditor-fontfamily items="@ViewBag.fontItems">
-    </e-richtexteditor-fontfamily>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.tools"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Great+Vibes">

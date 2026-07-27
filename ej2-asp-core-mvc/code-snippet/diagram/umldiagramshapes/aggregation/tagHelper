@@ -1,2 +1,0 @@
-<ejs-diagram id="container" width="100%" height="700px" nodes="@ViewBag.connectors">
-</ejs-diagram>

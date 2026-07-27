@@ -1,5 +1,0 @@
-<ejs-richtexteditor id="inlineMode" value="@ViewBag.value">
-    <e-richtexteditor-inlinemode enable="true" onSelection="true">
-    </e-richtexteditor-inlinemode>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

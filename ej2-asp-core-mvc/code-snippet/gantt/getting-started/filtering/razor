@@ -1,4 +1,0 @@
-@model List<GanttSample.Controllers.GanttDataSource>
-
-@Html.EJS().Gantt("Editing").DataSource((IEnumerable<object>)Model).AllowFiltering(true).TaskFields(ts => ts.Id("TaskId").Name(
-      "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").Dependency("Predecessor").Child("SubTasks")).Render()

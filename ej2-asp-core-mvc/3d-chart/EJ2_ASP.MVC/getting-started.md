@@ -1,54 +1,61 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## 3D Chart Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## 3D Chart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting started with ASP.NET MVC 3D Chart control
+# Getting Started with the ASP.NET MVC 3D Chart Control
 
-This section briefly explains about how to include [ASP.NET MVC 3D Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC 3D Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to an ASP.NET MVC 5 (.NET Framework) application using Visual Studio.
 
 ## Prerequisites
 
-[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
 
-## Create ASP.NET MVC application with HTML helper
+## Create an ASP.NET MVC application with HTML helper
 
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+You can create an ASP.NET MVC application using either of the following options:
 
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+* [Create a project using Microsoft templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+* [Create a project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-## Install ASP.NET MVC package in the application
+## Install the ASP.NET MVC NuGet package
 
-To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting **Tools → NuGet Package Manager → Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
+
+Alternatively, you can use the Package Manager Console by navigating to **Tools → NuGet Package Manager → Package Manager Console**, and then run the following command:
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The `Syncfusion.EJ2.MVC5` NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) (≥ 12.0.2) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Add namespace
+## Add the namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add the **Syncfusion.EJ2** namespace reference in the `Web.config` file available in the `Views` folder.
 
-```
+{% tabs %}
+{% highlight xml tabtitle="~/Views/Web.config" %}
+
 <namespaces>
-    <add namespace="Syncfusion.EJ2"/>
+    <add namespace="Syncfusion.EJ2" />
 </namespaces>
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Add script resources
 
-Here, the script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Add the script reference inside the `<head>` element of the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -62,17 +69,17 @@ Here, the script is referred using CDN inside the `<head>` of `~/Views/Shared/_L
 {% endhighlight %}
 {% endtabs %}
 
-N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in an ASP.NET MVC application, including local/native references.
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
+## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
+Register the script manager `EJS().ScriptManager()` at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
-...
+    ...
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
@@ -107,8 +114,21 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC 3D Cha
 {% endtabs %}
 {% endif %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC 3D Chart control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application. The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC 3D Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC 3D Chart Control](images/three-d-chart.png)
+![ASP.NET MVC 3D Chart Control with Data](images/three-d-chart.png)
 
-N> `View Sample in GitHub`.
+## Troubleshooting
+
+If the 3D Chart control does not render as expected, review the following common issues and their resolutions.
+
+* **"Script Manager is not defined" or scripts run twice** — `@Html.EJS().ScriptManager()` was not added, or was added more than once. Ensure `ScriptManager` is registered exactly once at the end of `<body>` in `_Layout.cshtml`.
+
+* **Chart renders but no data points appear** — `XName` / `YName` do not match the property names in the data source. Property names are case-sensitive; verify they match the JSON field names exactly (e.g., `x`, `y`).
+
+* **`Newtonsoft.Json` reference error after upgrade** — `Syncfusion.EJ2.MVC5` requires `Newtonsoft.Json` ≥ 12.0.2. Install a compatible version via NuGet.
+
+## See also
+
+* [Data labels in ASP.NET MVC 3D Chart](https://ej2.syncfusion.com/aspnetmvc/documentation/3d-chart/data-labels)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)

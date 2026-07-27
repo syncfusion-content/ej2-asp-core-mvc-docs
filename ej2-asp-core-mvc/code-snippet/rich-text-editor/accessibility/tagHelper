@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="accessibility" value="@ViewBag.value">
-    
-</ejs-richtexteditor>

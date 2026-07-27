@@ -1,16 +1,28 @@
 ---
 layout: post
-title: Color Mapping in ##Platform_Name## Treemap Component
-description: Learn here all about Color Mapping in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Color Mapping in ##Platform_Name## Treemap Control | Syncfusion
+description: Learn here all about Color Mapping in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Color Mapping
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Color Mapping
+# Color Mapping in ##Platform_Name## TreeMap Control
 
 Color mapping is used to customize the color for each group or item based on the specified types. The following options are available to customize the group and leaf items in the TreeMap.
+
+## Apply color mapping
+
+Use color mapping to customize item colors based on the underlying value from the bound data source. Specify the field to compare in the `equalColorValuePath` or `rangeColorValuePath` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/color-mapping/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with ColorMapping](images/treemap-with-color-mapping.png)
 
 ## Range color mapping
 
