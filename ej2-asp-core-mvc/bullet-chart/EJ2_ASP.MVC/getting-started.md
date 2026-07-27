@@ -1,61 +1,55 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Bullet Chart Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Bullet Chart control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## BulletChart Control |Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## BulletChart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with the ASP.NET MVC Bullet Chart Control
 
-This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Bullet Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) control to an ASP.NET MVC 5 (.NET Framework) application using Visual Studio.
+# Getting Started with ASP.NET MVC Bullet Chart Control
+
+This section briefly explains about how to include [ASP.NET MVC Bullet Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/bullet-chart) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
-Refer to the [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements) before creating the application.
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Create an ASP.NET MVC application with HTML helper
+## Create ASP.NET MVC application with HTML helper
 
-You can create an ASP.NET MVC application using either of the following options:
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
-* [Create a project using Microsoft templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
-* [Create a project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-## Install the ASP.NET MVC NuGet package
+## Install ASP.NET MVC package in the application
 
-To add Syncfusion<sup style="font-size:70%">&reg;</sup> **ASP.NET MVC** controls in the application, open the NuGet Package Manager in Visual Studio by selecting **Tools → NuGet Package Manager → Manage NuGet Packages for Solution**. Search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it.
-
-Alternatively, you can use the Package Manager Console by navigating to **Tools → NuGet Package Manager → Package Manager Console**, and then run the following command:
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
 Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) topic to learn more about installing NuGet packages in various operating system environments. The `Syncfusion.EJ2.MVC5` NuGet package depends on [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) (≥ 12.0.2) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating the Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-## Add the namespace
+## Add namespace
 
-Add the **Syncfusion.EJ2** namespace reference inside the `<system.web.webPages.razor>` → `<pages>` → `<namespaces>` element of the `~/Views/Web.config` file.
+Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
-{% tabs %}
-{% highlight xml tabtitle="~/Views/Web.config" %}
-
+```
 <namespaces>
-    <add namespace="Syncfusion.EJ2" />
+    <add namespace="Syncfusion.EJ2"/>
 </namespaces>
-
-{% endhighlight %}
-{% endtabs %}
+```
 
 ## Add script resources
 
-Add the script reference inside the `<head>` element of the `~/Views/Shared/_Layout.cshtml` file as follows. The reference loads the base `ej2.min.js` bundle, which contains the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC helper scripts.
+Here, the script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -69,17 +63,17 @@ Add the script reference inside the `<head>` element of the `~/Views/Shared/_Lay
 {% endhighlight %}
 {% endtabs %}
 
-N> Refer to the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in an ASP.NET MVC application.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-## Register the Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Register the script manager `EJS().ScriptManager()` at the end of the `<body>` element in the `~/Views/Shared/_Layout.cshtml` file as follows. The Script Manager resolves and loads control-specific scripts automatically.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Pages/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
-    ...
+...
     <!-- Syncfusion ASP.NET MVC Script Manager -->
     @Html.EJS().ScriptManager()
 </body>
@@ -87,29 +81,28 @@ Register the script manager `EJS().ScriptManager()` at the end of the `<body>` e
 {% endhighlight %}
 {% endtabs %}
 
- ## Build the Bullet Chart
 
-This section walks through adding the Bullet Chart control to `~/Views/Home/Index.cshtml` and progressively binding data to it from `~/Controllers/HomeController.cs`.
+## Add ASP.NET MVC Bullet Chart control
 
-### Step 1: Add the Bullet Chart control
-
-Add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Bullet Chart control to the `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC BulletChart control in `~/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 
-@Html.EJS().BulletChart("container").Render()
+@(Html.EJS().BulletChart("container").Render())
 
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd> + <kbd>F5</kbd> on Windows or <kbd>⌘</kbd> + <kbd>F5</kbd> on macOS to run the application. The Bullet Chart control will be rendered as an empty placeholder in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Bullet Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC Bullet Chart Control](images/bullet-chart-control.png)
+![ASP.NET MVC Bullet Chart Control](images/bullet-chart-control.webp)
 
-### Step 2: Bind data to the chart
+## Bullet Chart With Data
 
-Define a `BulletChartData` model in `~/Controllers/HomeController.cs` that exposes the `value` and `target` numeric properties. Map those property names to the [ValueField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) and [TargetField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) properties of the Bullet Chart, and pass the list as the view model.
+This section explains how to plot local data to the Bullet Chart.
+
+The **value** and **target** values should be mapped with [ValueField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_ValueField) and [TargetField](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_TargetField) respectively.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -133,22 +126,86 @@ public class BulletChartData
 {% endhighlight %}
 {% endtabs %}
 
-N> Explore the [ASP.NET MVC Bullet Chart sample on GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
+## Add Bullet Chart Title
 
-## Troubleshooting
+You can add a title using [Title](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property to the Bullet Chart to provide quick information to the user about the data plotted in the Bullet Chart.
 
-If the Bullet Chart control does not render as expected, review the following common issues and their resolutions.
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/getting-started/title/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<BulletChartData> data = new List<BulletChartData>
+    {
+        new BulletChartData { value = 270, target = 250}
+    };
+    return View(data);
+}
 
-* **"Script Manager is not defined" or scripts run twice** — `@Html.EJS().ScriptManager()` was not added, or was added more than once. Ensure `ScriptManager` is registered exactly once at the end of `<body>` in `_Layout.cshtml`.
+public class BulletChartData
+{
+    public double target;
+    public double value;
+}
+{% endhighlight %}
+{% endtabs %}
 
-* **Chart renders but no data points appear** — `ValueField` / `TargetField` do not match the property names in the data source. Property names are case-sensitive; verify they match the model property names exactly (e.g., `value`, `target`).
+![ASP.NET MVC Bullet Chart with Title](images/bullet-chart-with-title.webp)
 
-* **`CS0206: A non-property cannot have an accessor` or `CS0103: The name 'value' does not exist`** — `BulletChartData` was declared with public *fields* (`public double value;`) and then initialized using object-initializer syntax that requires *properties*. Change the fields to auto-properties (`public double value { get; set; }`).
+## Ranges
 
-* **`Newtonsoft.Json` reference error after upgrade** — `Syncfusion.EJ2.MVC5` requires `Newtonsoft.Json` ≥ 12.0.2. Install a compatible version via NuGet.
+You can add a range using [Ranges](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Ranges) property to the Bullet Chart.
 
-## See also
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/getting-started/ranges/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<BulletChartData> data = new List<BulletChartData>
+    {
+        new BulletChartData { value = 270, target = 250}
+    };
+    return View(data);
+}
 
-* [Ranges in ASP.NET MVC Bullet Chart](https://ej2.syncfusion.com/aspnetmvc/documentation/bullet-chart/ranges)
-* [Tooltip in ASP.NET MVC Bullet Chart](https://ej2.syncfusion.com/aspnetmvc/documentation/bullet-chart/tool-tip)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-core-mvc-taghelper)
+public class BulletChartData
+{
+    public double target;
+    public double value;
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Tooltip
+
+You can use tooltip for the Bullet Chart by setting the [Enable](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Charts.BulletChartBulletDataLabel.html#Syncfusion_EJ2_Charts_BulletChartBulletDataLabel_Enable) property to true in `Tooltip`.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/bullet-chart/getting-started/tooltip/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<BulletChartData> data = new List<BulletChartData>
+    {
+        new BulletChartData { value = 270, target = 250}
+    };
+    return View(data);
+}
+
+public class BulletChartData
+{
+    public double target;
+    public double value;
+}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.webp)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples).
