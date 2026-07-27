@@ -1,9 +1,0 @@
-<ejs-kanban id="Kanban" keyField="Status" dataSource="@ViewBag.data">
-    <e-kanban-columns>
-        <e-kanban-column headerText="To Do" keyField="Open" template="#headerTemplate"></e-kanban-column>
-        <e-kanban-column headerText="In Progress" keyField="InProgress" template="#headerTemplate"></e-kanban-column>
-        <e-kanban-column headerText="In Review" keyField="Review" template="#headerTemplate"></e-kanban-column>
-        <e-kanban-column headerText="Done" keyField="Close" template="#headerTemplate"></e-kanban-column>
-    </e-kanban-columns>
-    <e-kanban-cardsettings contentField="Summary" headerField="Title"></e-kanban-cardsettings>
-</ejs-kanban>
