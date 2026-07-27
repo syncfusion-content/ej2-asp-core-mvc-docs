@@ -92,7 +92,7 @@ Add the [ASP.NET Core Mention](https://www.syncfusion.com/aspnet-core-ui-control
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Mention](https://www.syncfusion.com/aspnet-core-ui-controls/mention) control will render in your default web browser.
 
-![ASP.NET Core Mention control](./images/mention-control.webp)
+![ASP.NET Core Mention control](./images/mention-control.png)
 
 ## Binding data source
 

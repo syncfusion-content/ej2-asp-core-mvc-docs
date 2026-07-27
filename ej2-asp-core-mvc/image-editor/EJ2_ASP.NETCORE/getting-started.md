@@ -92,7 +92,7 @@ Add the [ASP.NET Core Image Editor](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Image Editor](https://www.syncfusion.com/aspnet-core-ui-controls/image-editor) control will render in your default web browser.
 
-![ASP.NET Core ImageEditor Control](images/image-editor-load.webp)
+![ASP.NET Core ImageEditor Control](images/image-editor-load.png)
 
 ## See also
 

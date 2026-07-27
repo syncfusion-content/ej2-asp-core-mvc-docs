@@ -93,7 +93,7 @@ Add the [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-con
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) control will render in your default web browser.
 
-![ASP.NET Core MultiSelect Control](images/multiselect-control.webp)
+![ASP.NET Core MultiSelect Control](images/multiselect-control.png)
 
 ## Binding data source
 

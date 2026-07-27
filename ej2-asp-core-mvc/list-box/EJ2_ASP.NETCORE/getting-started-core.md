@@ -92,7 +92,7 @@ Add the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-control
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) control will render in your default web browser.
 
-![ASP.NET Core ListBox Control](images/listbox-control.webp)
+![ASP.NET Core ListBox Control](images/listbox-control.png)
 
 ## Binding data source
 
