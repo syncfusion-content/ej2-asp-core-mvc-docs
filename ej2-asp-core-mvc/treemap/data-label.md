@@ -76,7 +76,7 @@ The template supports customizing labels of each leaf node using the `labelTempl
 
 ## InterSectAction
 
-When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customise the labels.
+When the label size in each item exceeds the actual size, use the `interSectAction` property in the `leafItemSettings` to customize the labels.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

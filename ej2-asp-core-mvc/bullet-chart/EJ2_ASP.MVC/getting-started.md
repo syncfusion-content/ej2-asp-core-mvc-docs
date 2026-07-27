@@ -96,7 +96,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Bullet
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Bullet Chart control will be rendered in the default web browser.
 
-![ASP.NET MVC Bullet Chart Control](images/bullet-chart-control.png)
+![ASP.NET MVC Bullet Chart Control](images/bullet-chart-control.webp)
 
 ## Bullet Chart With Data
 
@@ -152,7 +152,7 @@ public class BulletChartData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Bullet Chart with Title](images/bullet-chart-with-title.png)
+![ASP.NET MVC Bullet Chart with Title](images/bullet-chart-with-title.webp)
 
 ## Ranges
 
@@ -206,6 +206,6 @@ public class BulletChartData
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.png)
+![ASP.NET MVC Bullet Chart with Tooltip](images/bullet-chart-with-tooltip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/BulletChart/ASP.NET%20MVC%20Razor%20Examples).
