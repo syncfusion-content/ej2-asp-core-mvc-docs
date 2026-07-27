@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="text" value="@ViewBag.value">
-    <e-richtexteditor-quicktoolbarsettings text="@ViewBag.text"></e-richtexteditor-quicktoolbarsettings>
-</ejs-richtexteditor>

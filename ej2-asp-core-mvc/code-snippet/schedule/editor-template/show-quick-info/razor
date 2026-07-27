@@ -1,8 +1,0 @@
-@using Syncfusion.EJ2.Schedule
-
-@(Html.EJS().Schedule("schedule")
-    .Width("100%")
-    .Height("550px")
-    .QuickInfoOnSelectionEnd(true)
-    .Render()
-)

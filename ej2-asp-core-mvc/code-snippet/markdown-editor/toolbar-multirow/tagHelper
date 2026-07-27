@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="markdown-editor" editorMode="Markdown" value="@ViewBag.value" type="MultiRow">
-    <e-richtexteditor-toolbarsettings items="@ViewBag.tools"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

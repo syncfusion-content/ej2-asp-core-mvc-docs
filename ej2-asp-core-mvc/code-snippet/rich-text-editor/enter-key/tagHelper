@@ -1,1 +1,0 @@
-<ejs-richtexteditor id="default" enterKey="DIV" value="@ViewBag.value"> </ejs-richtexteditor>

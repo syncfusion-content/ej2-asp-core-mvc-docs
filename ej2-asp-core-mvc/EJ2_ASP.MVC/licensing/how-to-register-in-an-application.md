@@ -10,10 +10,10 @@ documentation: ug
 
 # Register Syncfusion® License key in ASP .NET MVC EJ2 application
 
-License key should be registered, if your project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP . NET MVC - EJ2 packages reference from [nuget.org](https://www.nuget.org/packages?q=syncfusion) or from syncfusion<sup style="font-size:70%">&reg;</sup> installer.
+License key should be registered if your project uses Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET MVC - EJ2 packages referenced from [NuGet.org](https://www.nuget.org/packages?q=syncfusion) or the Syncfusion<sup style="font-size:70%">&reg;</sup> installer.
 
 ## ASP . NET MVC
 
-Register the license key in Application_Start method of **Global.asax.cs/Global.asax.vb**
+Register the license key in the Application_Start method of **Global.asax.cs** or **Global.asax.vb**.
 
 ![License Key Register](images/key-register.png)

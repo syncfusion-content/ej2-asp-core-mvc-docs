@@ -1,6 +1,0 @@
- @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts =>
-  ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").EndDate(
-     "EndDate").Child("SubTasks")).TimelineSettings(tl => tl.TopTier(tt => tt.Format("MMM dd, yyyy").Unit(
-        Syncfusion.EJ2.Gantt.TimelineViewMode.Day)).BottomTier(bt => bt.Unit(Syncfusion.EJ2.Gantt.TimelineViewMode.Hour).Format("h.mm a")
-        ).TimelineUnitSize(60)).DayWorkingTime(dw =>{dw.From(9).To(18).Add();}).Render()
-
