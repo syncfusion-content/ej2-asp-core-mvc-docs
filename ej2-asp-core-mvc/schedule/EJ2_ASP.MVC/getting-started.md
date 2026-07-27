@@ -1,0 +1,249 @@
+---
+layout: post
+title: Getting Started with ##Platform_Name## Scheduler Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Scheduler control of Syncfusion Essential JS 2 and more details.
+platform: ej2-asp-core-mvc
+control: Getting Started
+publishingplatform: ##Platform_Name##
+documentation: ug
+---
+
+
+# Getting Started with ASP.NET MVC Scheduler Control
+
+This section briefly explains how to include [ASP.NET MVC Scheduler](https://www.syncfusion.com/scheduler-sdk/aspnet-mvc-scheduler) control in your ASP.NET MVC application using Visual Studio.
+
+> **Ready to streamline your Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC development?** Discover the full potential of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls with Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant. Effortlessly integrate, configure, and enhance your projects with intelligent, context-aware code suggestions, streamlined setups, and real-time insights—all seamlessly integrated into your preferred AI-powered IDEs like Visual Studio, Visual Studio Code, Cursor, Syncfusion<sup style="font-size:70%">&reg;</sup> CodeStudio and more. [Explore Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/overview)
+
+## Prerequisites
+
+[System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
+
+## Create ASP.NET MVC application with HTML helper
+
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
+
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
+
+## Install ASP.NET MVC package in the application
+
+To add `ASP.NET MVC` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and then install it.
+
+{% tabs %}
+{% highlight C# tabtitle="Package Manager" %}
+
+Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+
+## Add namespace
+
+Add **Syncfusion.EJ2** namespace reference in `Views/Web.config` (located at `~/Views/Web.config`, not the root `Web.config`).
+
+```
+<namespaces>
+    <add namespace="Syncfusion.EJ2"/>
+</namespaces>
+```
+
+N> After modifying `Views/Web.config`, rebuild the project to apply the namespace changes.
+
+## Add stylesheet and script resources
+
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
+<head>
+    ...
+    <!-- Syncfusion ASP.NET MVC controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET MVC controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+</head>
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
+
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
+
+{% tabs %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+
+<body>
+...
+    <!-- Syncfusion ASP.NET MVC Script Manager -->
+    @Html.EJS().ScriptManager()
+</body>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Add ASP.NET MVC Scheduler control
+
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Scheduler control in `~/Views/Home/Index.cshtml` page.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/default/data/razor %}
+{% endhighlight %}
+{% endtabs %}
+
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Scheduler control will be rendered in the default web browser. The Scheduler renders in `Week` view by default, showing the current week with an empty calendar grid and a header toolbar for date navigation.
+
+![ASP.NET MVC Scheduler Control](images/scheduler.png)
+
+## Populating appointments
+
+To populate an empty Scheduler with events, bind the event data to it by assigning the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.ScheduleEventSettings.html#Syncfusion_EJ2_Schedule_ScheduleEventSettings_DataSource) property under [EventSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_EventSettings) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/getting-started/data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        return View(GetScheduleData());
+    }
+    public List<AppointmentData> GetScheduleData()
+    {
+        List<AppointmentData> appData = new List<AppointmentData>();
+        appData.Add(new AppointmentData
+        { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = new DateTime(2022, 2, 11, 9, 30, 0), EndTime = new DateTime(2022, 2, 11, 11, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 2, Subject = "Thule Air Crash Report", StartTime = new DateTime(2022, 2, 12, 12, 0, 0), EndTime = new DateTime(2022, 2, 12, 14, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 3, Subject = "Blue Moon Eclipse", StartTime = new DateTime(2022, 2, 13, 9, 30, 0), EndTime = new DateTime(2022, 2, 13, 11, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 4, Subject = "Meteor Showers in 2018", StartTime = new DateTime(2022, 2, 14, 13, 0, 0), EndTime = new DateTime(2022, 2, 14, 14, 30, 0) });
+        appData.Add(new AppointmentData
+        { Id = 5, Subject = "Milky Way as Melting pot", StartTime = new DateTime(2022, 2, 15, 12, 0, 0), EndTime = new DateTime(2022, 2, 15, 14, 0, 0) });
+        return appData;
+    }
+}
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Scheduler with Appointments](images/appointments.png)
+
+## Setting date
+
+Scheduler usually displays the system date as its current date. To change the current date of the Scheduler to a specific date, define the [SelectedDate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_SelectedDate) property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/getting-started/data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public class HomeController : Controller
+{
+    public ActionResult Index()
+    {
+        return View(GetScheduleData());
+    }
+    public List<AppointmentData> GetScheduleData()
+    {
+        List<AppointmentData> appData = new List<AppointmentData>();
+        appData.Add(new AppointmentData
+        { Id = 1, Subject = "Explosion of Betelgeuse Star", StartTime = new DateTime(2022, 2, 11, 9, 30, 0), EndTime = new DateTime(2022, 2, 11, 11, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 2, Subject = "Thule Air Crash Report", StartTime = new DateTime(2022, 2, 12, 12, 0, 0), EndTime = new DateTime(2022, 2, 12, 14, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 3, Subject = "Blue Moon Eclipse", StartTime = new DateTime(2022, 2, 13, 9, 30, 0), EndTime = new DateTime(2022, 2, 13, 11, 0, 0) });
+        appData.Add(new AppointmentData
+        { Id = 4, Subject = "Meteor Showers in 2018", StartTime = new DateTime(2022, 2, 14, 13, 0, 0), EndTime = new DateTime(2022, 2, 14, 14, 30, 0) });
+        appData.Add(new AppointmentData
+        { Id = 5, Subject = "Milky Way as Melting pot", StartTime = new DateTime(2022, 2, 15, 12, 0, 0), EndTime = new DateTime(2022, 2, 15, 14, 0, 0) });
+        return appData;
+    }
+}
+public class AppointmentData
+{
+    public int Id { get; set; }
+    public string Subject { get; set; }
+    public DateTime StartTime { get; set; }
+    public DateTime EndTime { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Setting view
+
+Scheduler displays `Week` view by default. To change the current view, define the applicable view name to the [CurrentView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_CurrentView) property. The applicable view names are,
+
+* Day
+* Week
+* WorkWeek
+* Month
+* Year
+* Agenda
+* MonthAgenda
+* TimelineDay
+* TimelineWeek
+* TimelineWorkWeek
+* TimelineMonth
+* TimelineYear
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/views/specific-views/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<ScheduleView> viewOption = new List<ScheduleView>()
+    {
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Week },
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.TimelineDay }
+    };
+    return View(viewOption);
+}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Scheduler with Specific Views](images/schedule-with-specific-view.png)
+
+## Individual view customization
+
+Each individual scheduler views can be customized with its own options such as setting different start and end hour on Week and Work Week views, whereas hiding the weekend days on Month view alone. This can be achieved by defining views property to accept the array of object type, where each object depicts the individual view customization.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/schedule/views/individual-views/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="HomeController.cs" %}
+public ActionResult Index()
+{
+    List<ScheduleView> viewOption = new List<ScheduleView>()
+    {
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Week, DateFormat = "dd-MMM-yyyy" },
+        new ScheduleView { Option = Syncfusion.EJ2.Schedule.View.Month, ShowWeekend = false, Readonly = true }
+    };
+    return View(viewOption);
+}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET MVC Scheduler with Custom Views](images/schedule-with-custom-views.png)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Schedule/ASP.NET%20MVC%20Razor%20Examples).
+
+N> You can also explore our [ASP.NET MVC Scheduler example](https://ej2.syncfusion.com/aspnetmvc/Schedule/Overview#/material) that shows how to use the toolbar buttons to play with Scheduler functionalities.
