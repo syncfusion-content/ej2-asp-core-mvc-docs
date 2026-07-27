@@ -95,7 +95,7 @@ Add the [ASP.NET Core MultiColumn ComboBox](https://www.syncfusion.com/aspnet-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core MultiColumn ComboBox](https://www.syncfusion.com/aspnet-core-ui-controls/multicolumn-combobox) control will render in your default web browser.
 
-![ASP.NET Core MultiColumn ComboBox Control](images/default.webp)
+![ASP.NET Core MultiColumn ComboBox Control](images/default.png)
 
 ## Configure the popup list
 
@@ -114,7 +114,7 @@ In the following sample, the popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![Popup](images/popup.webp)
+![Popup](images/popup.png)
 
 ## See also
 

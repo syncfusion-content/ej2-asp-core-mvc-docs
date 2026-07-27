@@ -92,7 +92,7 @@ Add the [ASP.NET Core DropDownTree](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core DropDownTree](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-tree) control will render in your default web browser.
 
-![ASP.NET Core DropDownTree Control](images/dropdowntree-control.webp)
+![ASP.NET Core DropDownTree Control](images/dropdowntree-control.png)
 
 ## Binding data source
 
@@ -124,7 +124,7 @@ public class Child
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core DropDownTree Control](./images/getting-started.webp)
+![ASP.NET Core DropDownTree Control](./images/getting-started.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DropDownTree/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

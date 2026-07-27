@@ -92,7 +92,7 @@ Add the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) control will render in your default web browser.
 
-![ASP.NET Core AutoComplete Control](images/autocomplete-component.webp)
+![ASP.NET Core AutoComplete Control](images/autocomplete-component.png)
 
 ## Custom values
 
