@@ -1366,7 +1366,7 @@ The [maxEventsPerRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endtabs %}
 {% endif %}
 
-![Scheduler with MaxEventsPerRow](../images/scheduler-max-event-row.png)
+![Scheduler with MaxEventsPerRow](images/scheduler-max-event-row.png)
 
 > The property [maxEventsPerRow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleView.html#Syncfusion_EJ2_Schedule_ScheduleView_MaxEventsPerRow) will be applicable only when [rowAutoHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.Schedule.html#Syncfusion_EJ2_Schedule_Schedule_RowAutoHeight) feature is disabled in the Scheduler.
 
@@ -1405,7 +1405,7 @@ Below is a code example that demonstrates how to use this constraint:
 * A "+N" indicator appears to show how many additional events exist (for example, "+1" if there are 3 total events)
 * Users can click the indicator to open a popup displaying all remaining events for that time slot
 
-![Scheduler with MaxEventStack](../images/scheduler-max-event-stack.png)
+![Scheduler with MaxEventStack](images/scheduler-max-event-stack.png)
 
 > The `maxEventStack` property is applicable only with **Day**, **Week**, and **WorkWeek** views when the [`timeScale`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Schedule.ScheduleTimeScale.html) option is enabled.
 

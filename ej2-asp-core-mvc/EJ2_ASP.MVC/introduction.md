@@ -485,7 +485,7 @@ padding-top: 50px;
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/getting-started-mvc"><span class="sf-home-icon sf-icon-treegrid"></span>TreeGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/multicolumn-combobox/getting-started"><span class="sf-home-icon sf-icon-multicolumncombobox"></span>MultiColumn ComboBox</a></div>
         <div><p class="controlcategory">FILE VIEWERS & EDITORS</p></div>
-        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>RichTextEditor</a></div>
+        <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>Rich Text Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/markdown-editor/getting-started"><span class="sf-home-icon sf-icon-markdowneditor"></span>Markdown Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/image-editor/getting-started"><span class="sf-home-icon sf-icon-image_editor"></span>Image Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/block-editor/getting-started"><span class="sf-home-icon sf-icon-blockeditor"></span>Block Editor</a></div>

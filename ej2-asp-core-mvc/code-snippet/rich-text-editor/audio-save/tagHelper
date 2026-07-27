@@ -1,4 +1,0 @@
-<ejs-richtexteditor id="editor">
-    <e-richtexteditor-insertaudiosettings saveUrl="/Home/SaveFiles" path="./Files/"></e-richtexteditor-insertaudiosettings>
-    <e-richtexteditor-toolbarsettings items="@ViewBag.items"></e-richtexteditor-toolbarsettings>
-</ejs-richtexteditor>

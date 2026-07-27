@@ -1,4 +1,0 @@
-    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").AllowSelection(
-        true).SelectedRowIndex(3).TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").EndDate("EndDate").Duration(
-            "Duration").Progress("Progress").Child("SubTasks")).Render()
-        

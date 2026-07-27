@@ -1,7 +1,0 @@
-@Html.EJS().RichTextEditor("placeholder").Placeholder("Type Something").Render()
-<style>
-    .e-richtexteditor .e-rte-placeholder {
-        font-family: monospace;
-        color: deeppink;
-    }
-</style>

@@ -16,9 +16,9 @@ N> The Syncfusion® Notification feature is available from Essential Studio® v2
 
 ## Notification Configuration
 
-The Syncfusion® Options page allows you to configure notification settings. Customise trial and newer version notifications with a simple true or false toggle.
+The Syncfusion® Options page allows you to configure notification settings. Customize trial and newer version notifications using a simple true or false toggle.
 
-It can be accessed by clicking **Tools -> Options -> Syncfusion -> ASP.NET Core**
+This page is accessed by clicking **Tools -> Options -> Syncfusion -> ASP.NET Core**.
 
 ![Option Page](images/core-optionPage.png)
 
@@ -26,25 +26,25 @@ It can be accessed by clicking **Tools -> Options -> Syncfusion -> ASP.NET Core*
 
 **1. Syncfusion Trial Application Notification**
 
-When you utilize Syncfusion® trial assemblies in your ASP.NET Core application, you will receive a notification stating, **This application uses a trial Syncfusion license.** This notification encourages you to obtain a valid license key, enabling you to fully explore and experience the extensive features and capabilities offered by Syncfusion®.
+When you use Syncfusion® trial assemblies in your ASP.NET Core application, you will receive a notification stating, **This application uses a trial Syncfusion license.** This notification is shown each time the project is built and encourages you to obtain a valid license key, enabling you to fully explore and experience the extensive features and capabilities offered by Syncfusion®.
 
 ![Trial Notification](images/core-trial.png)
 
 **2. Newer Syncfusion NuGet Package Notification**
 
-If you have installed lower versions of Syncfusion® NuGet packages in your application, you will be notified about the availability of higher versions of Syncfusion® NuGet packages on nuget.org. This empowers you to easily identify opportunities to upgrade and gain access to new features, performance enhancements, and bug fixes.
+If you have installed lower versions of Syncfusion® NuGet packages in your application, you will be notified about the availability of higher versions of Syncfusion® NuGet packages on nuget.org. This notification is triggered when a project is opened or built, and it empowers you to easily identify opportunities to upgrade and gain access to new features, performance enhancements, and bug fixes.
 
 ![NuGet Notification](images/core-nuget.png)
 
 **3. Newer Essential Studio® Build Notification**
 
-If you use older versions of Syncfusion® assemblies or NuGet packages from **Essential Studio® ASP.NET Core - EJ2,** Syncfusion® will notify you about new releases for the latest Essential Studio® build. Updating to the newest version ensures access to recent features, enhancements, and important updates, maximizing the capabilities of Syncfusion® in your ASP.NET Core development projects.
+If you use older versions of Syncfusion® assemblies or NuGet packages from **Essential Studio® ASP.NET Core - EJ2**, Syncfusion® will notify you about new releases for the latest Essential Studio® build. This notification is shown on opening a project that references an older Essential Studio® version. Updating to the newest version ensures access to recent features, enhancements, and important updates, maximizing the capabilities of Syncfusion® in your ASP.NET Core development projects.
 
 ![Build Notification](images/core-build.png)
 
 **4. Invalid License Key Notification**
 
-If you have mistakenly used an incorrect license key or used a license from another version or platform in your ASP.NET Core application, Syncfusion® will display a notification message stating, **The provided Syncfusion license key is invalid.** This message serves as a reminder to obtain a valid license key and ensure proper licensing for Syncfusion® components.
+If you have mistakenly used an incorrect license key or used a license from another version or platform in your ASP.NET Core application, Syncfusion® will display a notification message stating, **The provided Syncfusion license key is invalid.** This message is shown when the application is run and serves as a reminder to obtain a valid license key and ensure proper licensing for Syncfusion® components.
 
 ![Invalid Notification](images/core-invalid.png)
 

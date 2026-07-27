@@ -1,2 +1,0 @@
-<ejs-richtexteditor id="editor" value="@ViewBag.value" enableHtmlEncode="true">
-</ejs-richtexteditor>

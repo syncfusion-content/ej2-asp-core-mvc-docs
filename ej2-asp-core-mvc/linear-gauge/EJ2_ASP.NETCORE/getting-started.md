@@ -75,14 +75,14 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Linear Gauge Control
+## Add ASP.NET Core Linear Gauge control
 
 Add the [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
 
-<ejs-lineargauge id="linearGauge">
+<ejs-lineargauge id="linear">
 </ejs-lineargauge>
 
 {% endhighlight %}
@@ -128,15 +128,39 @@ Refer below code snippet to add the axis range to Linear Gauge.
 {% endhighlight %}
 {% endtabs %}
 
-## Troubleshooting
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+<ejs-lineargauge id="linear" title="Temperature Measure">
+</ejs-lineargauge>
+
+{% endhighlight %}
+{% endtabs %}
 
 ![ASP.NET Core Linear Gauge with Axis](images/lineargauge-with-axis.webp)
 
-* **Linear Gauge is not visible on the page** — Ensure the `ejs-scripts` tag helper is registered at the end of `<body>` in `~/Pages/Shared/_Layout.cshtml`. Missing this registration prevents Syncfusion client-side scripts from initializing the control.
-* **Gauge renders with no axis range** — Verify the `<e-lineargauge-axes>` child element contains at least one `<e-lineargauge-axis>` element with both `minimum` and `maximum` attributes set to numeric values.
-* **Pointer does not appear** — Verify the `<e-lineargauge-pointer>` child element is placed inside `<e-lineargauge-axis>` and that the `value` attribute is a number within the axis `minimum`/`maximum` range.
-* **Build error: `TagHelper is not registered`** — Verify that `~/Pages/_ViewImports.cshtml` contains `@addTagHelper *, Syncfusion.EJ2` and rebuild the solution.
-* **NuGet restore failures** — Confirm the project targets a supported .NET version and that the NuGet feed is reachable. Refer to the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic.
+## Axis
+
+The start value and end value of the Linear Gauge axis can be added using the `minimum` and `maximum` property in the `e-axis` tag.
+
+Refer below code snippet to add the axis range to Linear Gauge.
+
+{% tabs %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+
+<ejs-lineargauge id="linear" orientation="Horizontal">
+    <e-lineargauge-axes>
+        <e-lineargauge-axis minimum="0" maximum="200">
+        </e-lineargauge-axis>
+    </e-lineargauge-axes>
+</ejs-lineargauge>
+
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core Linear Gauge with Axis](images/lineargauge-with-axis.webp)
+
+N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/LinearGauge/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
