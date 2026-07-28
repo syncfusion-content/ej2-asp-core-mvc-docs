@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("fileBrowser").ToolbarSettings(e => e.Items((object)ViewBag.items)).FileManagerSettings(e => { e.Enable(true); e.Path("/Pictures/Food"); e.AjaxSettings((object)ViewBag.ajaxSettings); }).Value(ViewBag.value).Render()

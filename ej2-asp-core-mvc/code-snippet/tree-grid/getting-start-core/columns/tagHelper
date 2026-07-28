@@ -1,5 +1,5 @@
 @page
-@model IndexModel
+@model RazorPagesMovie.Pages.IndexModel
  
 @{
     List<Task> task = new List<Task>();

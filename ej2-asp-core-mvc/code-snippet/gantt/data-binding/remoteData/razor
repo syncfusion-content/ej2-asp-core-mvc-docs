@@ -1,6 +1,0 @@
-            @Html.EJS().Gantt("Gantt").DataSource(dataManger =>
-                {
-                    dataManger.Url("https://services.syncfusion.com/aspnet/production/api/GanttData").CrossDomain(true).Adaptor("WebApiAdaptor");
-                }).Height("450px").TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Progress("Progress").Duration("Duration"
-                ).Dependency("Predecessor").Child("SubTasks")).Render()
-        

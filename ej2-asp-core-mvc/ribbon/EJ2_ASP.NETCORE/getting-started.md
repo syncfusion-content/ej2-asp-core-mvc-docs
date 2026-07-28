@@ -10,90 +10,64 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Ribbon Control
 
-This section briefly explains about how to include the `ASP.NET Core Ribbon` control in your ASP.NET Core application using Visual Studio.
+This section briefly explains how to include the [ASP.NET Core Ribbon](https://www.syncfusion.com/aspnet-core-ui-controls/ribbon) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
-## Prerequisites
+## Create an ASP.NET Core Web App with Razor Pages
 
-### .NET and Visual Studio compatibility
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
 
-| .NET version | Minimum Visual Studio version |
-|--------------|------------------------------|
-| .NET 10.0 | Visual Studio 2026 18.0.0 or later |
-| .NET 9.0 | Visual Studio 2022 17.12.0 or later |
-| .NET 8.0 | Visual Studio 2022 17.8.0 or later |
-| .NET Core SDK 3.1 | Visual Studio 2019 16.4 or later |
-| .NET Core SDK 2.0 | Visual Studio 2017 15.7 or later |
+## Install the required ASP.NET Core packages
 
-### Browser support
+To add [ASP.NET Core Ribbon](https://www.syncfusion.com/aspnet-core-ui-controls/ribbon) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search and install [Syncfusion.AspNetCore.Ribbon](https://www.nuget.org/packages/Syncfusion.AspNetCore.Ribbon) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes). All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for more details.
 
-|    Browser    |    Versions    |
-|--------------|---------------|
-|    Google Chrome, including Android & iOS    |    Latest Version  |
-|    Mozilla Firefox    |    Latest Version  |
-|    Microsoft Edge    |    Latest Version  |
-|    Apple Safari, including iOS    |    Latest Version  |
-|    Opera    |    Latest Version  |
-|    Microsoft Internet Explorer    |    11  |
-
-## Create ASP.NET Core web application with Razor pages
-
-* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
-
-* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
-
-## Install ASP.NET Core package in the application (via .NET CLI)
-
-To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
+Alternatively, you can install the same packages using the Package Manager Console with the following commands.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager" %}
+{% highlight C# tabtitle="Package Manager Console" %}
 
-Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Ribbon -Version {{ site.releaseversion }}
+Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+## Add ASP.NET Core tag helpers
 
-## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
-Open the `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
+After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Ribbon` and `Syncfusion.AspNetCore.Base` tag helpers.
 
 {% tabs %}
-{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
+{% highlight C# tabtitle="_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.EJ2
+@addTagHelper *, Syncfusion.AspNetCore.Ribbon
+@addTagHelper *, Syncfusion.AspNetCore.Base
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-Here, the theme and script are referred using CDN inside the `<head>` of the `~/Pages/Shared/_Layout.cshtml` file as follows,
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    ...
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <script src="_content/Syncfusion.AspNetCore.Base/scripts/sf-data.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Ribbon/scripts/sf-ribbon.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-N> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in your ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+## Register the script manager
 
-N> Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
-
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
-
-Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
+Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
 
 {% tabs %}
-{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
+{% highlight cshtml tabtitle="_Layout.cshtml" %}
 
 <body>
     ...
@@ -104,9 +78,9 @@ Also, register the script manager `<ejs-script>` at the end of `<body>` in the A
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Ribbon control
+## Add the ASP.NET Core Ribbon control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon tag helper in the `~/Pages/Index.cshtml` page.
+Add the [ASP.NET Core Ribbon](https://www.syncfusion.com/aspnet-core-ui-controls/ribbon) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -118,7 +92,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbo
 
 ## Adding Ribbon tab
 
-In Ribbon, the options are arranged in tabs for easy access. You can use the `e-ribbon-tab` tag helper to define the ribbon tab like below.
+In Ribbon, the options are arranged in tabs for easy access. You can define a Ribbon tab using `e-ribbon-tab` tag helper, as shown below.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -134,7 +108,7 @@ In Ribbon, the options are arranged in tabs for easy access. You can use the `e-
 
 ## Adding Ribbon group
 
-To define a ribbon group under each tab, you can use the `e-ribbon-group` tag helper like below. The `Orientation` property of ribbon group defines whether the collection of items will be rendered column-wise or row-wise.
+You can define a Ribbon group within a tab by using the `e-ribbon-group` tag helper. The `Orientation` property specifies the layout of items within a group, allowing them to be arranged either row-wise (horizontally) or column-wise (vertically). The default value is "Column".
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -154,7 +128,7 @@ To define a ribbon group under each tab, you can use the `e-ribbon-group` tag he
 
 ## Adding Ribbon items
 
-You can use the `e-ribbon-collection` tag helper to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `e-ribbon-item` tag helper and the `Type` property to specify the type of control to be rendered, like a button, a drop-down button, a combo box, and more.
+You can use the `e-ribbon-collection` tag helper to define each ribbon collection that contains one or more items. To define each ribbon item, you can use the `e-ribbon-item` tag helper and the `Type` property to specify the type of control to be rendered, such as a button, drop-down button, combo box, and more.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -199,7 +173,7 @@ You can use the `e-ribbon-collection` tag helper to define each ribbon collectio
 {% endhighlight %}
 {% endtabs %}
 
-The following example illustrates how tabs, groups, collections, and items are used in a ribbon control to form the ribbon layout.
+The following example illustrates how tabs, groups, collections, and items are used in the ribbon control to form the ribbon layout.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -207,11 +181,11 @@ The following example illustrates how tabs, groups, collections, and items are u
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Ribbon control will be rendered in the default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Ribbon](https://www.syncfusion.com/aspnet-core-ui-controls/ribbon) control will render in your default web browser.
 
-![ASP.NET CORE Ribbon Control](images/ribbon.png)
+![ASP.NET Core Ribbon Control](images/ribbon-control.webp)
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
+2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

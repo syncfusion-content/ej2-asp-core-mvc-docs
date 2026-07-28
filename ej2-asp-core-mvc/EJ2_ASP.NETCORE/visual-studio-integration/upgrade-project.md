@@ -16,7 +16,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core migration add-
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (Essential<sup style="font-size:70%">&reg;</sup> JS 2) Web Application Project Migration utility is available from v16.3.0.17.
 
-> Before use, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2022 or later by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, please install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build installed or not. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not same for both the Extension and build, then the Project Migration will not be shown.
+> Before using the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Project Migration, check whether the **ASP.NET Core Extensions - Syncfusion<sup style="font-size:70%">&reg;</sup>** is installed in the Visual Studio Extension Manager. For Visual Studio 2022 or later, click **Extensions -> Manage Extensions -> Installed**. If this extension is not installed, please install it by following the steps in the [download and installation](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/download-and-installation) help topic. Also, check whether the corresponding Essential Studio<sup style="font-size:70%">&reg;</sup> version build is installed. If the Essential Studio<sup style="font-size:70%">&reg;</sup> version is not the same for both the Extension and the build, the Project Migration option will not be shown.
 
 The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core application via Visual Studio:
 
@@ -36,11 +36,11 @@ The steps below will assist you to upgrade the Syncfusion<sup style="font-size:7
 
     ![migrate syncfuion project](images/migrate-syncfusion-EJ2.png)
 
-3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core to migrate.
+3. The Syncfusion<sup style="font-size:70%">&reg;</sup> Project Migration window will appear. You can choose the required version of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core to migrate. The list contains all Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core versions published on NuGet.org.
 
     ![project migration](images/project-migration.png)
 
-    > The versions are loaded from the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages which published in [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion) and it requires internet connectivity.
+    > The versions are loaded from the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core NuGet packages which are published on [NuGet.org](https://www.nuget.org/packages?q=Tags%3A%22aspnetcore%22syncfusion), and an active internet connection is required.
 
     **Assets From:** Load the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 assets to ASP.NET Core Project, from either NPM, CDN or Installed Location.
 
@@ -48,10 +48,14 @@ The steps below will assist you to upgrade the Syncfusion<sup style="font-size:7
 
 4. Check the **“Enable a backup before migrating”** checkbox if you want to take the project backup and choose location.
 
-5. The Syncfusion<sup style="font-size:70%">&reg;</sup> Reference Assemblies, Scripts, and CSS are updated to the corresponding version in the project.
+5. The Syncfusion<sup style="font-size:70%">&reg;</sup> Reference Assemblies, NuGet packages, Scripts, and CSS are updated to the corresponding version in the project. The specific changes include:
 
-    If you enabled project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process completed
+    * The `Syncfusion.EJ2.AspNet.Core` NuGet package is upgraded to the selected version.
+    * The `ej2.min.css` and `ej2.min.js` script and style references in `_Layout.cshtml` are updated.
+    * Any Syncfusion<sup style="font-size:70%">&reg;</sup> configuration files (such as `SyncfusionLicensing`) are updated to the new version.
+
+    If you enabled the project backup before migrating, the old project was saved in the specified backup path location, as shown below once the migration process is completed.
 
     ![BackupLocation](images/BackupLocation.png)
 
-6. If you installed the trial setup or NuGet packages from nuget.org you must register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project since Syncfusion<sup style="font-size:70%">&reg;</sup> introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio<sup style="font-size:70%">&reg;</sup> release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project. Refer to this [blog](https://www.syncfusion.com/blogs/post/whats-new-in-2018-volume-2.aspx) post for understanding the licensing changes introduced in Essential Studio<sup style="font-size:70%">&reg;</sup>.
+6. If you have installed the trial setup or NuGet packages from nuget.org, you must register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project since Syncfusion<sup style="font-size:70%">&reg;</sup> introduced the licensing system from the 2018 Volume 2 (v16.2.0.41) Essential Studio<sup style="font-size:70%">&reg;</sup> release. Navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/overview#how-to-generate-syncfusion-license-key) to generate and register the Syncfusion<sup style="font-size:70%">&reg;</sup> license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/whats-new-in-2018-volume-2-licensing-changes-in-the-1620x-version-of-essential-studio.aspx) post for understanding the licensing changes introduced in Essential Studio<sup style="font-size:70%">&reg;</sup>.
