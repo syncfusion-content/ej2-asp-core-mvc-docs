@@ -15,7 +15,7 @@ When the mouse is hovered over a bar in the Bullet Chart, the tooltip displays i
 
 ## Default tooltip
 
-By setting [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBulletTooltipSettings.html#Syncfusion_EJ2_Charts_BulletChartBulletTooltipSettings_Enable)property to true. By default tooltip is visible in bullet-chart. The tooltip is not visible by default. To make it visible, set the [`Enable`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBulletTooltipSettings.html#Syncfusion_EJ2_Charts_BulletChartBulletTooltipSettings_Enable) property in the [`Tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Tooltip) to **true**.
+You can use tooltip for the bullet chart by setting the [enable]((https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChartBulletTooltipSettings.html#Syncfusion_EJ2_Charts_BulletChartBulletTooltipSettings_Enable)) property to `true` in `e-bulletchart-tooltipsettings`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,8 +45,6 @@ public class TooltipData
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-
 
 ![Bullet Chart displays ToolTip](images/blazor-bulletchart-tooltip.png)
 
