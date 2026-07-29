@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Markdown Editor | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Markdown Editor control of Syncfusion Essential JS 2 and more details.
+description: Check out and learn about getting started with ##Platform_Name## Markdown Editor control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -10,29 +10,27 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Markdown Editor Control
 
-The Syncfusion ASP .NET MVC Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains about how to include [ASP.NET MVC Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
+The Syncfusion ASP.NET MVC Markdown Editor is a web-based editor that enables users to create, edit, and format Markdown content with features such as table support and structured content formatting. This section briefly explains how to include [ASP.NET MVC Markdown Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
 [System requirements for ASP.NET MVC controls](https://ej2.syncfusion.com/aspnetmvc/documentation/system-requirements)
 
-## Create ASP.NET MVC application
+## Create an ASP.NET MVC Application
 
-You can create the the ASP.NET MVC web application by two types they are mentioned below along with the steps. follow one of these types and follow it to create a ASP .NET MVC project 
++You can create an ASP.NET MVC web application using either of the following two methods. Follow the steps in one of these methods to create an ASP.NET MVC project
 
 * [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started#create-your-first-app)
 
 * [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Extension](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/create-project)
 
-W> **Important:** Syncfusion® ASP.NET MVC controls require `System.Web.Mvc` version **5.3.0**. Using earlier versions may result in runtime or build errors. For more information, refer to the [release notes](https://ej2.syncfusion.com/aspnetmvc/documentation/release-notes/30.1.37?type=all).
+## Install Syncfusion ASP.NET MVC Rich Text Editor package in the application
 
-## Install Syncfusion ASP.NET MVC package in the application
-
-You can add the Syncfusion Markdown Editor to your ASP.NET MVC application by installing the Syncfusion ASP.NET MVC package. This can be done in two ways, they are mentioned below
+You can add the Syncfusion Markdown Editor to your ASP.NET MVC application by installing the Syncfusion ASP.NET MVC Rich Text Editor package. This can be done in two ways, as mentioned below:
 
 ### 1. Using NuGet Package Manager
 
-Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for search for [Syncfusion.EJ2.MVC5](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5) and install it directly.
+Open Visual Studio and navigate to Tools → NuGet Package Manager → Manage NuGet Packages for Solution. Search for [Syncfusion.AspNetMvc.RichTextEditor](https://www.nuget.org/packages/Syncfusion.AspNetMvc.RichTextEditor) and install it directly.
 
 ### 2. Using Package Manager Console
 
@@ -41,7 +39,7 @@ Run the following command in the Package Manager Console:
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
+Install-Package Syncfusion.AspNetMvc.RichTextEditor -Version {{ site.ej2version }}
 
 {% endhighlight %}
 {% endtabs %}
@@ -52,7 +50,7 @@ I> Ensure you’re running the command inside Visual Studio’s Package Manager 
 
 ## Add namespace
 
-Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
+Add the **Syncfusion.EJ2** namespace reference to the `Web.config` under the `Views` folder.
 
 ```
 <namespaces>
@@ -62,7 +60,7 @@ Add **Syncfusion.EJ2** namespace reference in `Web.config` under `Views` folder.
 
 ## Add stylesheet and script resources
 
-Here, the theme and script is referred using CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
+Here, the theme and script resources are referenced through a CDN inside the `<head>` of `~/Views/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -78,11 +76,11 @@ Here, the theme and script is referred using CDN inside the `<head>` of `~/Views
 {% endhighlight %}
 {% endtabs %}
 
-> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
+> Check out the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme) to learn different ways (CDN, NPM package, and [CRG](https://ej2.syncfusion.com/aspnetmvc/documentation/common/custom-resource-generator)) to refer styles in an ASP.NET MVC application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls. Check out the [Adding Script Reference](https://ej2.syncfusion.com/aspnetmvc/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET MVC application.
 
-## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
 
-Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
+Also, register the Script Manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -98,7 +96,7 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 ## Add ASP.NET MVC Markdown Editor control
 
-Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Markdown Editor control in `~/Views/Home/Index.cshtml` page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Markdown Editor control to the `~/Views/Home/Index.cshtml` page.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -108,9 +106,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Markdo
 {% endhighlight %}
 {% endtabs %}
 
-I> Replace the existing content in the Index.cshtml file by pasting the above code snippet.
-
-I> When the Markdown Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
+I> Replace the existing content in the Index.cshtml file by pasting the above code snippet. When the Markdown Editor control is rendered, the id attribute must be present. If the id is not provided, the control will fail to render.
 
 ## Run the application
 
@@ -122,13 +118,19 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## See also
 
+**Documentation**
+
+* [How to change the editor type](rich-text-editor/editor-types/editor-mode)
+* [How to render the iframe](rich-text-editor/editor-types/iframe)
+* [How to render the toolbar in inline mode](rich-text-editor/editor-types/inline-editing)
+* [Accessibility in Rich text editor](rich-text-editor/accessibility)
+* [Keyboard support in Rich text editor](rich-text-editor/keyboard-support)
+* [Globalization in Rich text editor](rich-text-editor/globalization)
+
+**Live samples**
+
 * [Real time example using Rich Text Editor](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/Forums#/bootstrap5)
 * [How to insert Emoticons](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/InsertEmoticons#/material)
-* [How to change the editor type](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/editor-mode)
-* [How to render the iframe](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/iframe)
-* [How to render the toolbar in inline mode](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/editor-types/inline-editing)
-* [Accessibility in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/accessibility)
-* [Keyboard support in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/keyboard-support)
-* [Globalization in Rich text editor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/globalization)
+
 
 > You can refer to our [ASP.NET MVC Rich Text Editor](https://www.syncfusion.com/rich-text-editor-sdk/aspnet-mvc-rich-text-editor) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC Rich Text Editor example](https://ej2.syncfusion.com/aspnetmvc/RichTextEditor/DefaultFunctionalities#/material) that shows how to render the rich text editor tools.
