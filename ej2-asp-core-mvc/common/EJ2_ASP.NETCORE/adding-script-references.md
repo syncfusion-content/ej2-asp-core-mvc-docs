@@ -194,8 +194,6 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-diagram.min.js"></script>
-<script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-overview.min.js"></script>
-<script src="_content/Syncfusion.AspNetCore.Diagram/scripts/sf-symbolpalette.min.js"></script>
 {% endhighlight %}
 
 </td>
