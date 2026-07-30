@@ -92,7 +92,7 @@ Add the [ASP.NET Core Split Button](https://www.syncfusion.com/aspnet-core-ui-co
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Split Button](https://www.syncfusion.com/aspnet-core-ui-controls/split-button) will render in your default web browser.
 
-![ASP.NET Core Split Button Control](../images/split-button.webp)
+![ASP.NET Core Split Button Control](images/split-button.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/SplitButton/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

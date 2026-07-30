@@ -20,7 +20,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -48,17 +48,15 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml**.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <script src="_content/Syncfusion.AspNetCore.Layouts/scripts/sf-dashboard-layout.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -89,7 +87,7 @@ Add the [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui
 
 ### Setting the panels property using content template
 
-DashboardLayout control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the following simple code to your **index.cshtml** page which is available within the **Views/Home** folder, to initialize the DashboardLayout.
+[DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control can be rendered by using the [`ejs-dashboardlayout`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html) tag helper in ASP.NET Core application. Add the following simple code to your **index.cshtml** page which is available within the **Views/Home** folder, to initialize the DashboardLayout.
 
 In the following sample, the DashboardLayout is rendered with [`panels`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Panels) property using content template.
 
@@ -111,7 +109,7 @@ public class spacingModel
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core DashboardLayout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) control will render in your default web browser.
 
-![Dashboard content template](../images/content_template.webp)
+![Dashboard content template](images/content_template.webp)
 
 ## Setting the panels property using tag helper
 
@@ -133,7 +131,7 @@ public class spacingModel
 {% endhighlight %}
 {% endtabs %}
 
-![Dashboard tag helper](../images/tag_helper.webp)
+![Dashboard tag helper](images/tag_helper.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/DashboardLayout/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

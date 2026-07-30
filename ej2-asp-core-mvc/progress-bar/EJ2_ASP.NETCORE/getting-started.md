@@ -104,7 +104,7 @@ You can change the type of the [ASP.NET Core ProgressBar](https://www.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core ProgressBar Control](../images/default.webp)
+![ASP.NET Core ProgressBar Control](images/default.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

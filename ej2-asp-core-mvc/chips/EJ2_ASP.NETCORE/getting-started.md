@@ -92,7 +92,7 @@ Add the [ASP.NET Core Chips](https://www.syncfusion.com/aspnet-core-ui-controls/
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Chips](https://www.syncfusion.com/aspnet-core-ui-controls/chips) will render in your default web browser.
 
-![ASP.NET Core Chips Control](../images/chip.webp)
+![ASP.NET Core Chips Control](images/chip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Chips/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

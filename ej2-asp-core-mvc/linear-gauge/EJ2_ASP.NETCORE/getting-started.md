@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core package
 
-To add **ASP.NET Core Linear Gauge** control in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for and install the [Syncfusion.AspNetCore.LinearGauge](https://www.nuget.org/packages/Syncfusion.AspNetCore.LinearGauge/) package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.LinearGauge](https://www.nuget.org/packages/Syncfusion.AspNetCore.LinearGauge/) package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 

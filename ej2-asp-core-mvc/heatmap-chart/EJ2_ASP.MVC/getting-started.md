@@ -132,7 +132,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC HeatMapChart control will be rendered in the default web browser.
 
-![ASP.NET MVC HeatMap Chart with Data](images/heatmap-with-data.png)
+![ASP.NET MVC HeatMap Chart with Data](images/heatmap-with-data.webp)
 
 ## Enable axis labels
 
@@ -169,7 +169,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Axis](images/heatmap-with-axis-labels.png)
+![ASP.NET MVC HeatMapChart with Axis](images/heatmap-with-axis-labels.webp)
 
 ## Add heat map title
 
@@ -213,7 +213,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Title](images/heatmap-with-title.png)
+![ASP.NET MVC HeatMapChart with Title](images/heatmap-with-title.webp)
 
 ## Enable legend
 
@@ -225,7 +225,7 @@ Use a legend for the heat map in the [LegendSettings](https://help.syncfusion.co
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Legend](images/heatmap-with-legend.png)
+![ASP.NET MVC HeatMapChart with Legend](images/heatmap-with-legend.webp)
 
 ## Add data label
 
@@ -237,7 +237,7 @@ Add data labels to improve the readability of the heat map. This can be achieved
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with DataLabel](images/heatmap-with-datalabel.png)
+![ASP.NET MVC HeatMapChart with DataLabel](images/heatmap-with-datalabel.webp)
 
 ## Add custom cell palette
 
@@ -249,7 +249,7 @@ The default palette settings of the heat map cells can be customized by using th
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Custom Cell Palette](images/heatmap-with-palette.png)
+![ASP.NET MVC HeatMapChart with Custom Cell Palette](images/heatmap-with-palette.webp)
 
 ## Enable tooltip
 
@@ -261,7 +261,7 @@ The tooltip is used when you cannot display information by using the data labels
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC HeatMapChart with Tooltip](images/heatmap-with-tooltip.png)
+![ASP.NET MVC HeatMapChart with Tooltip](images/heatmap-with-tooltip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20MVC%20Razor%20Examples).
 

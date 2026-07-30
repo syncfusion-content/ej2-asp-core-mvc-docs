@@ -90,7 +90,7 @@ Add the [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/ta
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/tabs) control will render in your default web browser.
 
-![ASP.NET Core Tab Control](images/gettingstarted.PNG)
+![ASP.NET Core Tab Control](images/tab-control.webp)
 
 ## Initialize the Tab using JSON items collection
 

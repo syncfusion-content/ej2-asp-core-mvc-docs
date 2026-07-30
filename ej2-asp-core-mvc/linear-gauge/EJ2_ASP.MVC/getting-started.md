@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Linear
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Linear Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC Linear Gauge Control](images/lineargauge-control.png)
+![ASP.NET MVC Linear Gauge Control](images/lineargauge-control.webp)
 
 ## Add Gauge Title
 
@@ -109,7 +109,7 @@ The title for the Linear Gauge can be set using [Title](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Linear Gauge with Title](images/lineargauge-with-title.png)
+![ASP.NET MVC Linear Gauge with Title](images/lineargauge-with-title.webp)
 
 ## Axis
 

@@ -92,7 +92,7 @@ Add the [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-cont
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls/speed-dial) will render in your default web browser.
 
-![ASP.NET Core Speed Dial Control](../images/speeddial-component.webp)
+![ASP.NET Core Speed Dial Control](images/speeddial-component.webp)
 
 ## Positioning
 
@@ -104,7 +104,7 @@ The [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Speed Dial Control](../images/speeddial-position-sample.webp)
+![ASP.NET Core Speed Dial Control](images/speeddial-position-sample.webp)
 
 ## Linear and radial display modes
 
@@ -116,9 +116,9 @@ You can use the [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Speed Dial Control](../images/speeddial-mode-linear-sample.webp)
+![ASP.NET Core Speed Dial Control](images/speeddial-mode-linear-sample.webp)
 
-![ASP.NET Core Speed Dial Control](../images/speeddial-mode-radial-sample.webp)
+![ASP.NET Core Speed Dial Control](images/speeddial-mode-radial-sample.webp)
 
 ## Clicked event
 
@@ -130,7 +130,7 @@ The [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Speed Dial Control](../images/speeddial-event-sample.webp)
+![ASP.NET Core Speed Dial Control](images/speeddial-event-sample.webp)
 
 ## See also
 

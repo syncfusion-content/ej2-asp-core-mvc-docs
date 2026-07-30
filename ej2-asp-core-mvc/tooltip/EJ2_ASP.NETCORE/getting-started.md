@@ -47,17 +47,16 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml**.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
     <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <script src="_content/Syncfusion.AspNetCore.Popups/scripts/sf-tooltip.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -95,7 +94,7 @@ N> In the above sample code, `#target` is the `id` of the element in a page to w
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core Tooltip](https://www.syncfusion.com/aspnet-core-ui-controls/tooltip) will render in your default web browser.
 
-![ASP.NET Core Tooltip Control](../images/tooltip.webp)
+![ASP.NET Core Tooltip Control](images/tooltip.webp)
 
 ## Initialize Tooltip within a container
 
@@ -109,7 +108,7 @@ Refer to the following code example to create a Tooltip on multiple targets with
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Tooltip with Accessibility](../images/tooltip-container.webp)
+![ASP.NET Core Tooltip with Accessibility](images/tooltip-container.webp)
 
 N> In the above sample, `#details` refers to the container's id, and the target `.e-info` refers to the target elements available within that container.
 

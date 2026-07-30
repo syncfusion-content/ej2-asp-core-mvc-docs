@@ -19,7 +19,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Popups](https://www.nuget.org/packages/Syncfusion.AspNetCore.Popups/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Popups](https://www.nuget.org/packages/Syncfusion.AspNetCore.Popups/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -47,17 +47,15 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml**.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+   <script src="_content/Syncfusion.AspNetCore.Popups/scripts/sf-dialog.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -93,7 +91,7 @@ Add the [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Dialog](https://www.syncfusion.com/aspnet-core-ui-controls/modal-dialog) will render in your default web browser.
 
-![ASP.NET Core Dialog Control](../images/dialog-getting.webp)
+![ASP.NET Core Dialog Control](images/dialog-getting.webp)
 
 ## Display content using `ContentTemplate`
 
@@ -121,7 +119,7 @@ N> When the modal dialog is opened, scrolling within the Dialog's target element
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Modal Dialog](../images/modal-dialog-getting.webp)
+![ASP.NET Core Modal Dialog](images/modal-dialog-getting.webp)
 
 N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, the CSS style for the html and body can be set to get the dialog height.
 

@@ -116,7 +116,7 @@ You can populate the `ContextMenu` with menu items by assigning a collection of 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core ContextMenu](https://www.syncfusion.com/aspnet-core-ui-controls/context-menu) control will render in your default web browser.
 
-![ASP.NET Core ContextMenu Control](./images/context-menu.png)
+![ASP.NET Core ContextMenu Control](./images/context-menu.webp)
 
 ## Rendering items with Separator
 
@@ -132,7 +132,7 @@ In the following example, the Cut, Copy, and Paste options are grouped separatel
 
 N> The [`separator`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Separator) property should not be given along with the other fields in the [`MenuItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html).
 
-![ASP.NET Core ContextMenu with Separator](images/context-menu-with-seperator.png)
+![ASP.NET Core ContextMenu with Separator](images/context-menu-with-seperator.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ContextMenu)
 

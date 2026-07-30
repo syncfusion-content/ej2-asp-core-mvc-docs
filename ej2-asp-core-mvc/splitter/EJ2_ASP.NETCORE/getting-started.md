@@ -19,7 +19,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search for and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Layouts](https://www.nuget.org/packages/Syncfusion.AspNetCore.Layouts) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
@@ -47,17 +47,15 @@ After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file 
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script are referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of the **~/Pages/Shared/_Layout.cshtml**.
+The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <!-- Syncfusion ASP.NET Core controls styles -->
-    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
-    <!-- Syncfusion ASP.NET Core controls scripts -->
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
+    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <script src="_content/Syncfusion.AspNetCore.Layouts/scripts/sf-splitter.min.js"></script>
 </head>
 
 {% endhighlight %}
@@ -93,7 +91,7 @@ Add the [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-contro
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. The [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control will render in your default web browser.
 
-![ASP.NET Core Splitter Control](../images/default.webp)
+![ASP.NET Core Splitter Control](images/default.webp)
 
 ## Load content to the pane
 
@@ -107,7 +105,7 @@ For detailed information, refer to the `Pane Content` section.
 {% endhighlight %}
 {% endtabs %}
 
-![Loading content to the panes](../images/content.webp)
+![Loading content to the panes](images/content.webp)
 
 ## Configure pane size
 
@@ -134,7 +132,7 @@ Splitter allows you to change the pane dimensions by resizing the panes. By defa
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Splitter with Resizable Panes](../images/resizable.webp)
+![ASP.NET Core Splitter with Resizable Panes](images/resizable.webp)
 
 ## Set minimum and maximum pane sizes
 
@@ -156,7 +154,7 @@ Splitter supports both `Horizontal` and `Vertical` orientation for the panes. By
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Splitter in Vertical Orientation](../images/orientation.webp)
+![ASP.NET Core Splitter in Vertical Orientation](images/orientation.webp)
 
 ## Nested Splitter
 
@@ -170,7 +168,7 @@ Also, you can render the nested splitter using direct child of the splitter pane
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Nested Splitter Control](../images/nested-splitter.webp)
+![ASP.NET Core Nested Splitter Control](images/nested-splitter.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Splitter/ASP.NET%20Core%20Tag%20Helper%20Examples).
 

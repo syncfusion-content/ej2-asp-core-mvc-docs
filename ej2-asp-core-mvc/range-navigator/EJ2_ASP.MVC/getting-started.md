@@ -132,6 +132,6 @@ public class data
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Range Navigator Control](images/rn.png)
+![ASP.NET MVC Range Navigator Control](images/rn.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RangeNavigator/ASP.NET%20MVC%20Razor%20Examples).

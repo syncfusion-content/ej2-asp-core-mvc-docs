@@ -92,7 +92,7 @@ Add the [ASP.NET Core Message](https://www.syncfusion.com/aspnet-core-ui-control
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Message](https://www.syncfusion.com/aspnet-core-ui-controls/message) will render in your default web browser.
 
-![ASP.NET Core Message Control](../images/message-default.webp)
+![ASP.NET Core Message Control](images/message-default.webp)
 
 ## See also
 
