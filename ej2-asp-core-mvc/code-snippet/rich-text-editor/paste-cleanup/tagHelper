@@ -1,3 +1,0 @@
-<ejs-richtexteditor id="pasteCleanup"  showCharCount="true" maxLength="1000" value="@ViewBag.value">
-    <e-richtexteditor-pastecleanupsettings Prompt="true"></e-richtexteditor-pastecleanupsettings>
-</ejs-richtexteditor>

@@ -1,5 +1,0 @@
-@(Html.EJS().Gantt("WorkWeek").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").HighlightWeekends(true)
-                .TaskFields(ts => ts.Id("TaskId").Name("TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks"))
-                .WorkWeek(new string[] { "Sunday", "Monday", "Tuesday", "Wednesday","Thursday","Friday" })
-                .Render()
-            )

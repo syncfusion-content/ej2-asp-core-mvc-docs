@@ -1,16 +1,28 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Treemap Component
-description: Learn here all about Legend in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Legend in ##Platform_Name## Treemap Control | Syncfusion
+description: Learn here all about Legend in Syncfusion ##Platform_Name## Treemap control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Legend
+# Legend in ##Platform_Name## TreeMap Control
 
 Legend is used to provide valuable information for interpreting what the TreeMap displays. The legends can be represented in various colors, shapes or other identifiers based on the data.
+
+## Enable legend
+
+Show the legend by setting the `visible` property to `true` in the `legendSettings` object.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/treemap/getting-started/legend/tagHelper %}
+{% endhighlight %}
+{% endtabs %}
+
+![ASP.NET Core TreeMap with Legend](images/treemap-with-legend.png)
 
 ## Position and alignment
 

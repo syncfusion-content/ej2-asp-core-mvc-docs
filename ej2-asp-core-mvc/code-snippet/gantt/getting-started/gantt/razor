@@ -1,5 +1,0 @@
-@model List<GanttDataSource>
-
-@Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)Model).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
-    "TaskName").StartDate("StartDate").EndDate("EndDate").Duration("Duration").Progress("Progress").ParentID("ParentID")).Render()    
-   

@@ -1,1 +1,0 @@
-@Html.EJS().RichTextEditor("emojiPickerRTE").ToolbarSettings(e => e.Items((object)ViewBag.items)).EmojiPickerSettings(e => e.IconsSet((object)ViewBag.iconsSet)).Value(ViewBag.value).Render()

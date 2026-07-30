@@ -1,9 +1,0 @@
-    @Html.EJS().Gantt("Gantt").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("450px").TaskFields(ts => ts.Id("TaskId").Name(
-        "TaskName").StartDate("StartDate").Duration("Duration").Progress("Progress").Child("SubTasks")).Columns(col =>
-    {
-        col.Field("TaskId").Add();
-        col.Field("TaskName").Width(100).ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
-        col.Field("StartDate").Add();
-        col.Field("Duration").ClipMode(Syncfusion.EJ2.Grids.ClipMode.Clip).Add();
-        col.Field("Progress").Add();
-    }).Render()

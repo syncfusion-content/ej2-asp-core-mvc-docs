@@ -22,10 +22,14 @@ The Syncfusion ASP.NET Core (Essential JS 2) menu option is available from v17.1
 
 The Syncfusion® provides the following supports in Visual Studio:
 
-1. [Project-Template](create-project):  Creates the Syncfusion® ASP.NET Core (Essential JS 2) application by adding the required Essential JS 2 components.
+1. [Project Templates](create-project): Creates the Syncfusion® ASP.NET Core (Essential JS 2) application by adding the required Essential JS 2 components.
 2. [Convert project](convert-project): Converts an existing ASP.NET Core application into a Syncfusion® ASP.NET Core (Essential JS 2) application by adding the required Syncfusion® assemblies and resource files.
 3. [Upgrade project](upgrade-project): Upgrades the existing Syncfusion® ASP.NET Core (Essential JS 2) application from one Essential Studio® version to another version.
-4. [Creator sample](create-samples): Creates the Syncfusion® ASP.NET Core (Essential JS2) application with the sample code of required controls and features.
+4. [Sample Creator](create-samples): Creates the Syncfusion® ASP.NET Core (Essential JS 2) application with the sample code of required controls and features.
+5. [Scaffolding](scaffolding): Quickly generates Controller and View files with code that interacts with data models for Syncfusion® ASP.NET Core controls.
+6. [Check for Updates](check-for-updates): Checks for and installs the latest Syncfusion® Essential Studio® release.
+
+> In Visual Studio 2017, the Syncfusion® menu is displayed directly in the Visual Studio menu bar. In Visual Studio 2019 or later, it is available under the **Extensions** menu.
 
 ### No project selected in Visual Studio
 
@@ -35,8 +39,6 @@ The Syncfusion® provides the following supports in Visual Studio:
 
 ![selected microsoft](images/convert-new-app-2019.png)
 
-### Selected Syncfusion ASP.NET Core (Essential JS2) application in Visual Studio
+### Selected Syncfusion ASP.NET Core (Essential JS 2) application in Visual Studio
 
 ![selected syncfusion](images/selected-syncfusion-project.png)
-
-N> In Visual Studio 2017, you can see the Syncfusion menu directly in the Visual Studio menu.
