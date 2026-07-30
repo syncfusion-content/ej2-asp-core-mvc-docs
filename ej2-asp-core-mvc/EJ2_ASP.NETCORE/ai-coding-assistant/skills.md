@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion ASP.NET Core Agent Skills for AI Assistants | Syncfusion
-description: Learn how to install and use Syncfusion Agent Skills to enhance AI assistants with accurate Syncfusion ASP.NET Core component guidance.
+title: Syncfusion ASP.NET Core Agent Skills for AI Assistant | Syncfusion
+description: Learn to install and use Syncfusion Agent Skills to enhance AI assistants with Syncfusion ASP.NET Core component guidance.
 platform: ej2-asp-core-mvc
 control: Skills
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Syncfusion® ASP.NET Core Agent Skills for AI Assistants
+# Syncfusion® ASP.NET Core Agent Skills for AI Assistant
 
 This guide introduces **Syncfusion ASP.NET Core Skills**, a knowledge package that enables AI assistants (VS Code, Cursor, CodeStudio, etc.) to understand and generate accurate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core code using official APIs, patterns, and theming guidelines.
 
