@@ -26,7 +26,7 @@ The default ASP.NET Core project templates already include the required middlewa
 
 {% tabcontents %}
 
-{% tabcontent .NET 8/9/10 %}
+{% tabcontent .NET 9 and later %}
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
@@ -45,7 +45,7 @@ app.Run();
 
 {% endtabcontent %}
 
-{% tabcontent .NET 6/7 %}
+{% tabcontent .NET 8 and earlier %}
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
