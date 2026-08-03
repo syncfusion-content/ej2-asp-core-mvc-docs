@@ -100,6 +100,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core AppBar Control](images/getting_started.png)
 
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://helpstaging.syncfusion.com/ej2-asp-core/common/adding-script-references#individual-control-script-references).
+
 ## See also
 
 1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
