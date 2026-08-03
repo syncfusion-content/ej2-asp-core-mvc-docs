@@ -92,6 +92,8 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Tab Control](images/tab-control.webp)
 
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://helpstaging.syncfusion.com/ej2-asp-core/common/adding-script-references#individual-control-script-references).
+
 ## Initialize the Tab using JSON items collection
 
 The Tab control can be rendered using a JSON array. Each tab item is defined with a [TabHeader](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabHeader.html), which specifies the tab text and a [`content`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Content) property, which defines the content displayed for the tab.
