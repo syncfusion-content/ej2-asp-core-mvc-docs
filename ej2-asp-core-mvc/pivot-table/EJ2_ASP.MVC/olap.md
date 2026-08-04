@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Olap in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: OLAP in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to configure the ASP.NET MVC Pivot Table with OLAP cube data sources, including prerequisites, license registration, and project setup in Visual Studio.
 platform: ej2-asp-core-mvc
 control: Olap
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ASP.NET MVC Pivot Table component
+# OLAP in ASP.NET MVC Pivot Table
 
 ## Getting Started with ASP.NET MVC
 

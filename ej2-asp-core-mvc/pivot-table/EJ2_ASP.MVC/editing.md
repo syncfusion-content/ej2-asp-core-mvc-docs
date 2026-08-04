@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Editing in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Editing in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table allows CRUD editing of raw data in value cells through Normal, Dialog, Batch, and Command Column modes of PivotViewCellEditSettings.
 platform: ej2-asp-core-mvc
 control: Editing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing in ##Platform_Name## Pivot Table component
+# Editing in ASP.NET MVC Pivot Table
 
 > This feature is applicable only for the relational data source.
 

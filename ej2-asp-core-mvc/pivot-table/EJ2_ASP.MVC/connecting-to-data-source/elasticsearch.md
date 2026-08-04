@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Data Binding in ASP.NET MVC Syncfusion Pivot Table component"
+title: Elasticsearch Data Binding in ASP.NET MVC Pivot Table | Syncfusion
 component: "Pivot Table"
 platform: ej2-asp-core-mvc
-description: "Learn how to bind data from a Elasticsearch database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how to bind Elasticsearch data to the ASP.NET MVC Pivot Table using the NEST client library in a Web API controller, exposed as JSON via a PivotController endpoint.
 ---
 
-# Elasticsearch in EJ2 ASP.NET MVC Pivotview Component
+# Elasticsearch Data Binding in ASP.NET MVC Pivot Table
 
 This section describes how to retrieve data from Elasticsearch database to the Pivot Table component using the [Nest](https://www.nuget.org/packages/Nest) library and a Web API controller to fetch and bind data to the Pivot Table.
 

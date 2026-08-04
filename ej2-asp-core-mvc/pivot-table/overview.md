@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Pivot Table Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Pivot Table Component | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table visualizes relational data with built-in aggregation, filtering, sorting, and Field List UI, plus Excel, CSV, and PDF export.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

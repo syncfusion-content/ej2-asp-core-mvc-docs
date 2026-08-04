@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Pivot Table Control | Syncfusion
-description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Toolbar in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table Toolbar exposes built-in actions like New, Save, Export, Conditional Formatting, and chart switching via showToolbar and the toolbar property.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tool bar in ASP.NET Core Pivot Table component
+# Toolbar in ASP.NET Core Pivot Table
 
 The toolbar in the ASP.NET Core Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. Additionally, the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 

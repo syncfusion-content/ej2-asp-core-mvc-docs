@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FieldList in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Field List in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Field List in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table Field List provides Excel-like UI to add, remove, and rearrange fields between columns, rows, values, and filters axes at runtime.
 platform: ej2-asp-core-mvc
 control: Field List
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PivotFieldList in ##Platform_Name## Pivot Table Component
+# Field List in ASP.NET MVC Pivot Table
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 

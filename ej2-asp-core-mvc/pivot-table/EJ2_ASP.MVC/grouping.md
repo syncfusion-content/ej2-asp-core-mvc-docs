@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Pivot Table Component | Syncfusion
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Grouping in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table groups date, number, and string fields into year, quarter, or numeric ranges via AllowGrouping, right-click menu, or programmatically.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping in ##Platform_Name## Pivot Table Component
+# Grouping in ASP.NET MVC Pivot Table
 
 > This feature is applicable only for the relational data source.
 

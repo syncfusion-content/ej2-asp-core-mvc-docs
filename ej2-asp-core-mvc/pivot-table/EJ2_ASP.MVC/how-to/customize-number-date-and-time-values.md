@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Number Date And Time Values in ##Platform_Name## Pivot Table Component
-description: Learn here all about Customize Number Date And Time Values in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: How to Customize Number, Date, and Time Values in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to apply number, date, and time formats to ASP.NET MVC Pivot Table fields via FormatSettings, including currency, percentage, and Intl numberFormatOptions.
 platform: ej2-asp-core-mvc
 control: Customize Number Date And Time Values
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize number, date, and time values
+# How to Customize Number, Date, and Time Values in ASP.NET MVC Pivot Table
 
 You can format the number, date, and time values for each field using the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 

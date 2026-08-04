@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Empty Value Cells in ASP.NET Core | Syncfusion
-description: Learn here all about Customize Empty Value Cells in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: How to Customize Empty Value Cells in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to set custom text in empty ASP.NET Core Pivot Table value cells via the emptyCellsTextContent property under e-datasourcesettings.
 platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize empty value cells in ASP.NET Core Pivotview component
+# How to Customize Empty Value Cells in ASP.NET Core Pivot Table
 
 When working with pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET Core Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
 

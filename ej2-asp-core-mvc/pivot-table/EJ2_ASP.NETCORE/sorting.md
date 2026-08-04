@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Sorting in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table sorts field members and aggregated values ascending or descending via enableSorting, the e-sortsettings property, or sort icons in the UI.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting in ##Platform_Name## Pivot Table Component
+# Sorting in ASP.NET Core Pivot Table
 
 ## Member Sorting
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ConditionalFormatting in ASP.NET MVC Syncfusion PivotTable
-description: Learn here all about Conditional Formatting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Conditional Formatting in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table applies conditional formatting to value cells via the toolbar dialog or ConditionalFormatSettings, with custom background and font colors.
 platform: ej2-asp-core-mvc
 control: Conditional Formatting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Conditional formatting in ##Platform_Name## Pivot Table component
+# Conditional Formatting in ASP.NET MVC Pivot Table
 
 The conditional formatting feature enables users to customize the appearance of Pivot Table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the Pivot Table.
 

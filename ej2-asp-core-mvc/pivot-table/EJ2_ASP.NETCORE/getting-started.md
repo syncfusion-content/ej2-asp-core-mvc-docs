@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Pivot Table Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Pivot Table control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to create a new ASP.NET Core Web App in Visual Studio and install Syncfusion.AspNetCore.PivotView plus Themes NuGet packages to render the Pivot Table.
 platform: ej2-asp-core-mvc
 control: Pivot Table
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Pivot Table Control
+# Getting Started with ASP.NET Core Pivot Table
 
 This section briefly explains how to include the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
 

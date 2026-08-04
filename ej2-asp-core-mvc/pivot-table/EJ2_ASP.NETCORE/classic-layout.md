@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Classic layout in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Classic layout in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Classic Layout in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table's classic (tabular) layout displays row-axis fields side by side in separate columns for easier reading on relational data sources.
 platform: ej2-asp-core-mvc
 control: Classic Layout
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Classic Layout in ##Platform_Name## Pivot Table Component
+# Classic Layout in ASP.NET Core Pivot Table
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 

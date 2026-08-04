@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart Based On Pivot Table Selection in ASP.NET Core | syncfusion
-description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: How to Render Chart Based on Cell Selection in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to plot an ASP.NET Core Chart control from cells selected in the ASP.NET Core Pivot Table, using the cellSelected event and e-selectionSettings.
 platform: ej2-asp-core-mvc
 control: Chart Based On Pivot Table Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart based on selection in ASP.NET Core Pivotview component
+# How to Render Chart Based on Cell Selection in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 

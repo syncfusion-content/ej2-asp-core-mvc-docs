@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row And Column in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Row And Column in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Row and Column in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to set the ASP.NET MVC Pivot Table's width, height, row height, column width, and grid lines via the Height, Width, and GridSettings properties.
 platform: ej2-asp-core-mvc
 control: Row And Column
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in ##Platform_Name## Pivot Table component
+# Row and Column in ASP.NET MVC Pivot Table
 
 ## Width and Height
 

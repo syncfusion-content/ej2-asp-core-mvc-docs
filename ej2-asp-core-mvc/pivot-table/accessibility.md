@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Pivot Table Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table provides WAI-ARIA roles, full keyboard interaction, and screen reader support that comply with WCAG 2.2, Section 508, and ADA guidelines.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Pivotview component
+# Accessibility in Pivot Table component
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

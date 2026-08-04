@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Data Binding in ASP.NET Core Pivotview component | Syncfusion
-description: "Learn how to bind data from a Snowflake database in the Syncfusion ASP.NET Core Pivot Table of Syncfusion Essential JS 2 and more."
+title: Snowflake Data Binding in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to bind Snowflake data to the ASP.NET Core Pivot Table using the Snowflake.Data provider in a Web API controller, exposed as JSON via a PivotController endpoint.
 platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# Snowflake in EJ2 ASP.NET Core Pivotview Component
+# Snowflake Data Binding in ASP.NET Core Pivot Table
 
 This section describes how to retrieve data from a Snowflake database using [Snowflake Data](https://www.nuget.org/packages/Snowflake.Data/#readme-body-tab) and bind it to the Pivot Table via a Web API controller.
 
