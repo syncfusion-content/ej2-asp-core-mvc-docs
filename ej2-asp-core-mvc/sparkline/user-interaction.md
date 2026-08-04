@@ -15,7 +15,7 @@ Sparkline has two user interaction features: tooltip and tracker line.
 
 ## Tooltip
 
-The Sparkline displays additional information via a tooltip when the mouse hovers over it. Enable the tooltip by adding the `<e-sparkline-tooltipsettings>` child element to the `<ejs-sparkline>` tag helper and setting its `visible` attribute to `true`.
+The sparkline provides options to display details about values of data points through tooltips when hovering the mouse over data point. To use tooltip in sparkline, inject the [`SparklineTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html) module to sparkline using the inject method.
 
 The following code example shows enabling tooltip for sparkline with format.
 
@@ -41,6 +41,8 @@ The following code example shows enabling tooltip for sparkline with format.
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
+
 
 ### Tooltip customization
 
