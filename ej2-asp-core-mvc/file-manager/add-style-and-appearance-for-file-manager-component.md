@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style Customize in ##Platform_Name## File Manager control | Syncfusion
-description: Learn here all about How to add style and appearance in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
-platform:  ej2-asp-core-mvc
+title: Style and Appearance in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize the appearance of the ##Platform_Name## File Manager by overriding CSS selectors for the navigation pane, layout, and toolbar.
 control: File Manager
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to customize style and appearance in File Manager
+# Style and Appearance in ##Platform_Name## File Manager
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

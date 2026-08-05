@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Render ##Platform_Name## File Manager in Internet Explorer | Syncfusion
-description: Learn here all about Render File Manager In Internet Explorer in ##Platform_Name## File Manager control of syncfusion and more.
+description: Learn how to render the ##Platform_Name## File Manager in Internet Explorer by adding the required polyfill script before the component scripts.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Render File Manager In Internet Explorer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

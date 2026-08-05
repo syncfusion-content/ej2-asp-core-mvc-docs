@@ -1,15 +1,15 @@
 ---
 layout: post
-title: User Interface in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about User Interface in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: User Interface in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to use the ##Platform_Name## File Manager UI with view, toolbar, breadcrumb, context menu, and navigation pane modules for file browsing.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: User Interface
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# User Interface Structure
+# User Interface in ##Platform_Name## File Manager
 
 The File Manager UI comprises several sections such as view, toolbar, breadcrumb, context menu, and more. The UI of the File Manager is enhanced with injectable modules like `Details View` for browsing files and folders in a grid, `Navigation Pane` for folder navigation, and `Toolbar` for file operations. The File Manager with all feature modules have the following sections in its UI.
 
