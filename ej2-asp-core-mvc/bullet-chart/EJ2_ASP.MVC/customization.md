@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Bullet Chart Component
+title: Customization in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET MVC Bullet Chart Control
 
 ## Orientation
 
