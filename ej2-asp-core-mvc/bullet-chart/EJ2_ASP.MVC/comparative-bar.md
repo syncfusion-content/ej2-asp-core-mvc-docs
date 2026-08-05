@@ -38,7 +38,7 @@ The line marker that runs perpendicular to the orientation of the graph is known
 
 
 
-![Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar.png)
+![Target Bar in Bullet Chart](images/bullet-chart-target-bar.png)
 
 ## Types of target bar
 
@@ -67,7 +67,7 @@ The shape of the target bar can be customized using the [`TargetTypes`](https://
 {% endtabs %}
 {% endif %}
 
-![Rectangle Target Bar with Bullet Chart](images/blazor-bullet-chart-rectangle-target-bar.png)
+![Rectangle Target Bar with Bullet Chart](images/bullet-chart-rectangle-target-bar.png)
 
 ## Target bar customization
 
@@ -101,4 +101,4 @@ The following properties can be used to customize the target bar. Also, you can 
 
 
 
-![Customizing Target Bar in Bullet Chart](images/blazor-bullet-chart-target-bar-customization.png)
+![Customizing Target Bar in Bullet Chart](images/bullet-chart-target-bar-customization.png)

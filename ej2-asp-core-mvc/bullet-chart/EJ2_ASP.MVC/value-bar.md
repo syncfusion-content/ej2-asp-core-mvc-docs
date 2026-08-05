@@ -38,7 +38,7 @@ To display the primary data or the current value of the data being measured know
 
 
 
-![Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar.png)
+![Actual Bar in Bullet Chart](images/bullet-chart-actual-bar.png)
 
 ## Types of actual bar
 
@@ -69,7 +69,7 @@ The shape of the actual bar can be customized using the [`Type`](https://help.sy
 
 
 
-![Bullet Chart with Dot Actual Bar](images/blazor-bullet-chart-dot-actual-bar.png)
+![Bullet Chart with Dot Actual Bar](images/bullet-chart-dot-actual-bar.png)
 
 ## Actual bar customization
 
@@ -131,4 +131,4 @@ Customize the fill color and height of the actual bar using the [`ValueFill`](ht
 
 
 
-![Customizing Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar-customization.png)
+![Customizing Actual Bar in Bullet Chart](images/bullet-chart-actual-bar-customization.png)

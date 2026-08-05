@@ -38,7 +38,7 @@ Ranges represent the quality of a specific range such as **Good**, **Bad** and *
 
 
 
-![Ranges in Bullet Chart](images/blazor-bullet-chart-range.png)
+![Ranges in Bullet Chart](images/bullet-chart-range.png)
 
 ## Color customization
 
@@ -69,4 +69,4 @@ Enhance the readability of ranges with color and opacity. It can be applied usin
 
 
 
-![Customizing Ranges with Color in Bullet Chart](images/blazor-bullet-chart-range-customization.png)
+![Customizing Ranges with Color in Bullet Chart](images/bullet-chart-range-customization.png)

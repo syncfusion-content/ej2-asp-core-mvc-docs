@@ -46,7 +46,7 @@ The following properties can be used to customize `MajorTicklines` and `MinorTic
 {% endif %}
 
 
-![Customizing Major and Minor TickLines in Bullet Chart](images/blazor-bullet-chart-tick-line-customization.png)
+![Customizing Major and Minor TickLines in Bullet Chart](images/bullet-chart-tick-line-customization.png)
 
 ## Tick placement
 
@@ -104,7 +104,7 @@ Axis numeric labels can be formatted by using the [`LabelFormat`](https://help.s
 
 
 
-![Changing Label Format in Bullet Chart](images/blazor-bullet-chart-label-format.png)
+![Changing Label Format in Bullet Chart](images/bullet-chart-label-format.png)
 
 The following table describes the result of applying some commonly used formats to numeric axis labels.
 
@@ -223,7 +223,7 @@ Using the [`LabelFormat`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 
 
-![Bullet Chart with Custom Label Format](images/blazor-bullet-chart-custom-label-format.png)
+![Bullet Chart with Custom Label Format](images/bullet-chart-custom-label-format.png)
 
 ## Label placement
 
@@ -311,7 +311,7 @@ The Bullet Chart supports X-axis label by specifying the property from the data 
 
 
 
-![Bullet Chart with Category Label](images/blazor-bullet-chart-category-label.png)
+![Bullet Chart with Category Label](images/bullet-chart-category-label.png)
 
 ## Category label customization
 
@@ -342,4 +342,4 @@ The label color, opacity, font size, font family, font weight, and font style ca
 
 
 
-![Customizing Axis and Category Label in Bullet Chart](images/blazor-bullet-chart-label-customization.png)
+![Customizing Axis and Category Label in Bullet Chart](images/bullet-chart-label-customization.png)
