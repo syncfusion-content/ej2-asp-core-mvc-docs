@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in ##Platform_Name## File Manager | Syncfusion
-description: Learn how to enable virtualization in the ##Platform_Name## File Manager for dynamically loading large folders in Details and Large Icons views without performance loss.
+description: Learn how to enable virtualization in the ##Platform_Name## File Manager to efficiently load large folders without performance loss.
 control: File Manager
 platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding custom item to context menu in ##Platform_Name## File Manager | Syncfusion
+title: Add context menu items in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to add a custom item to the context menu in the ##Platform_Name## File Manager with custom icons and click handlers.
 control: File Manager
 platform: ej2-asp-core-mvc

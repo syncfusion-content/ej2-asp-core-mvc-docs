@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pass a custom value to the server in ##Platform_Name## File Manager | Syncfusion
+title: Pass values to server in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to pass a custom value to the server in the ##Platform_Name## File Manager for authentication, logging, or role-based access on each request.
 control: File Manager
 platform: ej2-asp-core-mvc

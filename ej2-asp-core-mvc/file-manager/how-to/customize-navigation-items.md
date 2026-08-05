@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the navigation pane in ##Platform_Name## File Manager | Syncfusion
+title: Customize navigation items in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to customize the navigation pane in the ##Platform_Name## File Manager by templating each folder node to show extra metadata or custom icons.
 control: File Manager
 platform: ej2-asp-core-mvc

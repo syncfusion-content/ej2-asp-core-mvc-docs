@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add a custom item to the toolbar in ##Platform_Name## File Manager | Syncfusion
+title: Add toolbar items in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to add a custom item to the toolbar in the ##Platform_Name## File Manager to extend built-in actions with custom controls.
 control: File Manager
 platform: ej2-asp-core-mvc

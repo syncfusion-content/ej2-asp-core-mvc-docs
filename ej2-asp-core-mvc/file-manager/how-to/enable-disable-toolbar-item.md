@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable or disable a toolbar item in ##Platform_Name## File Manager | Syncfusion
+title: Manage toolbar items in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to enable or disable a toolbar item in the ##Platform_Name## File Manager at runtime based on user actions or selection state.
 control: File Manager
 platform: ej2-asp-core-mvc
