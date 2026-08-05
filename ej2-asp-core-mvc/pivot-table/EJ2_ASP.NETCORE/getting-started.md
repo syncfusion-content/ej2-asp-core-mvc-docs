@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to create a new ASP.NET Core Web App in Visual Studio and install Syncfusion.AspNetCore.PivotView plus Themes NuGet packages to render the Pivot Table.
+description: Learn how to create a new ASP.NET Core Web App in Visual Studio and install the Syncfusion.AspNetCore.PivotView NuGet package to render the Pivot Table.
 platform: ej2-asp-core-mvc
 control: Pivot Table
 publishingplatform: ##Platform_Name##

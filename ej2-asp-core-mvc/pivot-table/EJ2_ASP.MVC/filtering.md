@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Filtering in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List UI or FilterSettings code-behind.
+description: Learn how the ASP.NET MVC Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List or FilterSettings.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Formatting in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table formats numeric, currency, and percentage values via FormatSettings with format codes N, C, and P, plus currency and grouping options.
+description: Learn how the ASP.NET MVC Pivot Table formats numeric, currency, and percentage values via FormatSettings using format codes N, C, and P.
 platform: ej2-asp-core-mvc
 control: Number Formatting
 publishingplatform: ##Platform_Name##
@@ -223,6 +223,6 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 ## See Also
 
-* [Customize number, date, and time values](./how-to/customize-number-date-and-time-values/)
+* [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
 * [NumberFormatOptions](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers)
 * [Toolbar](./tool-bar)

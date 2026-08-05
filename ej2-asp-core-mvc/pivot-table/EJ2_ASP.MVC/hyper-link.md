@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hyperlink in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table shows hyperlinks in row headers, column headers, value cells, and summary cells via HyperlinkSettings and conditionalSettings.
+description: Learn how the ASP.NET MVC Pivot Table shows hyperlinks in row, column, and value cells via HyperlinkSettings and conditionalSettings.
 platform: ej2-asp-core-mvc
 control: Hyper Link
 publishingplatform: ##Platform_Name##

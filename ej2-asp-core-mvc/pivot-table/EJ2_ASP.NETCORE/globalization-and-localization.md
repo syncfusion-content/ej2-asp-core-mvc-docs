@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization and Localization in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table adapts to different cultures by loading CLDR JSON data for internationalization and using the L10n class for localization.
+title: Globalization/Localization in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table adapts to different cultures by loading CLDR JSON data and using the L10n class for localization.
 platform: ej2-asp-core-mvc
 control: Globalization And Localization
 publishingplatform: ##Platform_Name##

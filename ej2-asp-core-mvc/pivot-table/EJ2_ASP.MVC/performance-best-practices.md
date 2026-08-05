@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance Best Practices in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to improve the ASP.NET MVC Pivot Table's loading performance with virtual scrolling, paging, server-side engine, data compression, and defer layout update.
+description: Learn how to improve the ASP.NET MVC Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
 platform: ej2-asp-core-mvc
 control: Performance best practices
 publishingplatform: ##Platform_Name##

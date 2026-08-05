@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PDF Export in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table exports the rendered pivot report to a PDF document via AllowPdfExport and the PdfExport method, optionally triggered from an external button.
+description: Learn how the ASP.NET MVC Pivot Table exports the rendered pivot report to a PDF document via AllowPdfExport and the PdfExport method.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##

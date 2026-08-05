@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Customize the Loading Indicator in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to customize the ASP.NET Core Pivot Table's loading spinner via the spinnerTemplate property, accepting an HTML string for custom styling and animations.
+title: Customize Loading Spinner in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to customize the ASP.NET Core Pivot Table's loading spinner via the spinnerTemplate property, accepting an HTML string for custom styling.
 platform: ej2-asp-core-mvc
 control: Customizing Loading Indicator
 publishingplatform: ##Platform_Name##

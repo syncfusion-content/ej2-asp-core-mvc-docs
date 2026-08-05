@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Excel Export in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the excelExport and csvExport methods, preserving formatting and structure.
+description: Learn how the ASP.NET Core Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the excelExport and csvExport methods.
 platform: ej2-asp-core-mvc
 control: Excel Export
 publishingplatform: ##Platform_Name##

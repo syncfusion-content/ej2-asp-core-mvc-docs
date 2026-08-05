@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Customize Empty Value Cells in ASP.NET Core Pivot Table | Syncfusion
+title: How to Customize Empty Cells in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to set custom text in empty ASP.NET Core Pivot Table value cells via the emptyCellsTextContent property under e-datasourcesettings.
 platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Load a Desired Report from the Report List as Default in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to load a specific report from the ASP.NET Core Pivot Table's saved report list as the default view via the dataBound event and a report name configuration.
+title: How to Load Report as Default in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to load a specific report from the ASP.NET Core Pivot Table's saved report list as default via the dataBound event.
 platform: ej2-asp-core-mvc
 control: Load desired report from the report list as default 
 documentation: ug
@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# How to Load a Desired Report from the Report List as Default in ASP.NET Core Pivot Table
+# How to Load Report as Default in ASP.NET Core Pivot Table
 
 By default, the Pivot Table displays with the report configuration defined in the component initialization. To load a specific report from a previously saved report collection during the initial rendering process, configure the desired report name within the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event. This approach allows the Pivot Table to automatically apply the selected report's configuration, including field arrangements, filters, and formatting settings, as soon as the component completes its data binding process.
 

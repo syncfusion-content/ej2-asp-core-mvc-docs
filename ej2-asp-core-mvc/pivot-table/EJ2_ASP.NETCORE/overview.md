@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion ASP.NET Core Pivot Table Component | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table visualizes relational data with built-in aggregation, filtering, sorting, and Field List UI, plus Excel, CSV, and PDF export.
+description: Learn how the ASP.NET Core Pivot Table visualizes relational data with built-in aggregation, filtering, sorting, and Field List, plus Excel and PDF export.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

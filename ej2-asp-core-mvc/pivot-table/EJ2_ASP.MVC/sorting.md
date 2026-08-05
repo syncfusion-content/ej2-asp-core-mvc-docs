@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table sorts field members and aggregated values ascending or descending via EnableSorting, the SortSettings property, or sort icons in the UI.
+description: Learn how the ASP.NET MVC Pivot Table sorts field members and aggregated values via EnableSorting, the SortSettings property, or sort icons in the UI.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##

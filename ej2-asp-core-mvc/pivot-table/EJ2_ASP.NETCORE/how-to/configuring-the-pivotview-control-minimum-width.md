@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Configure the Minimum Width in ASP.NET Core Pivot Table | Syncfusion
+title: How to Set Minimum Width in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to set a custom minimum width on the ASP.NET Core Pivot Table via the minWidth property, with 400px default when Grouping Bar is enabled.
 platform: ej2-asp-core-mvc
 control: Configuring the minimum width in the Pivot Table control.

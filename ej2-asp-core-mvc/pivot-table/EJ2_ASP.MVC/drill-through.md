@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Through in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table opens a raw-data grid in a new window when users double-click an aggregated cell, via the AllowDrillThrough property and DrillThrough module.
+description: Learn how the ASP.NET MVC Pivot Table opens a raw-data grid in a new window on double-click via the AllowDrillThrough property and DrillThrough module.
 platform: ej2-asp-core-mvc
 control: Drill Through
 publishingplatform: ##Platform_Name##

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to bind Microsoft SQL Server data to the ASP.NET MVC Pivot Table using SqlClient in a Web API controller, with a sample PivotController and Database1.mdf.
+title: SQL Server Data Binding in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to bind Microsoft SQL Server data to the ASP.NET MVC Pivot Table using SqlClient in a Web API controller, with a PivotController and Database1.mdf.
 platform: ej2-asp-core-mvc
 control: Microsoft SQL Server Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Microsoft SQL Server Data Binding in ASP.NET MVC Pivot Table
+# SQL Server Data Binding in ASP.NET MVC Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

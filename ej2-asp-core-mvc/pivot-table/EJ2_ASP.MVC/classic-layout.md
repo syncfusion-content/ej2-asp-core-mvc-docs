@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Classic Layout in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table's classic (tabular) layout displays row-axis fields side by side in separate columns for easier reading on relational data sources.
+description: Learn how the ASP.NET MVC Pivot Table's classic (tabular) layout shows row-axis fields side by side in separate columns for easier reading.
 platform: ej2-asp-core-mvc
 control: Classic Layout
 publishingplatform: ##Platform_Name##

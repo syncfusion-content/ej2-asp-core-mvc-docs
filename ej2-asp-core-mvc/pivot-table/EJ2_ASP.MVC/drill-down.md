@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Down in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table expands or collapses hierarchical row and column members on demand, with drill-position and expandAll controls for relational data.
+description: Learn how the ASP.NET MVC Pivot Table expands or collapses hierarchical row and column members on demand for relational data sources.
 platform: ej2-asp-core-mvc
 control: Drill Down
 publishingplatform: ##Platform_Name##

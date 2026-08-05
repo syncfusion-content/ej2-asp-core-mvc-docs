@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table retains the full report state (layout, fields, filters, sorting, expanded nodes) in browser storage via the enablePersistence property.
+description: Learn how the ASP.NET Core Pivot Table retains the full report state in browser storage via the enablePersistence property.
 platform: ej2-asp-core-mvc
 control: State Persistence
 publishingplatform: ##Platform_Name##
@@ -38,7 +38,7 @@ State persistence enables users to automatically retain the entire configuration
 
 
 
-# Save and Load Pivot Layout
+## Save and Load Pivot Layout
 
 In addition to automatic state persistence, the Pivot Table component allows you to save and restore the current layout programmatically. By using the `getPersistData` method, you can retrieve the complete state of the Pivot Table component as a serialized string. This string can be stored and later re-applied to the component by passing it to the `loadPersistData` method. This approach offers flexibility for saving user-specific layouts, restoring previous configurations, or implementing custom workflows for managing and reloading the component’s state as needed.
 

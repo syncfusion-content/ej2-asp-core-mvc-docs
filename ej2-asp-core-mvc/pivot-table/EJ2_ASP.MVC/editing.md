@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table allows CRUD editing of raw data in value cells through Normal, Dialog, Batch, and Command Column modes of PivotViewCellEditSettings.
+description: Learn how the ASP.NET MVC Pivot Table enables CRUD editing of raw data in value cells through Normal, Dialog, Batch, and Command Column edit modes.
 platform: ej2-asp-core-mvc
 control: Editing
 publishingplatform: ##Platform_Name##

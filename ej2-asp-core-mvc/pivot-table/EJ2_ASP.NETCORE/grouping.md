@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table groups date, number, and string fields into year, quarter, or numeric ranges via allowGrouping, right-click menu, or programmatically.
+description: Learn how the ASP.NET Core Pivot Table groups date, number, and string fields into year, quarter, or numeric ranges via allowGrouping.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##

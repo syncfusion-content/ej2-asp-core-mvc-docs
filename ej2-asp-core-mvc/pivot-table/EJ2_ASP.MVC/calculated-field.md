@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculated Field in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table lets you create custom value fields with mathematical formulas via the Field List dialog or the CalculatedFieldSettings collection.
+description: Learn how the ASP.NET MVC Pivot Table creates custom value fields using math formulas via the Field List dialog or CalculatedFieldSettings collection.
 platform: ej2-asp-core-mvc
 control: Calculated Field
 publishingplatform: ##Platform_Name##

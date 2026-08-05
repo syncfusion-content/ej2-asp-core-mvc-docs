@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toolbar in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table Toolbar exposes built-in actions like New, Save, Export, Conditional Formatting, and chart switching via showToolbar and the toolbar property.
+description: Learn how the ASP.NET Core Pivot Table Toolbar exposes built-in actions like New, Save, Export, and chart switching via showToolbar.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##
@@ -70,7 +70,7 @@ By default, the dropdown menu in the toolbar displays all available chart types.
 
 For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`chartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
-To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart/#chart-types).
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#chart-types).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,7 +101,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 ## Switch the chart to multiple axes
 
-In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart/#multiple-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#multiple-axis).
 
 ![Switching to multiple axes](images/chart-option.png)
 
@@ -1012,7 +1012,7 @@ The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ### ToolbarRender
 
-The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/tool-bar/#adding-custom-option-to-the-toolbar).
+The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/tool-bar#adding-custom-option-to-the-toolbar).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

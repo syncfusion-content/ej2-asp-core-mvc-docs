@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summary Customization in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table shows or hides grand totals and subtotals in rows and columns via showGrandTotals, showRowGrandTotals, and showColumnGrandTotals.
+description: Learn how the ASP.NET Core Pivot Table shows or hides grand totals and subtotals via showGrandTotals, showRowGrandTotals, and showColumnGrandTotals.
 platform: ej2-asp-core-mvc
 control: Summary Customization
 publishingplatform: ##Platform_Name##

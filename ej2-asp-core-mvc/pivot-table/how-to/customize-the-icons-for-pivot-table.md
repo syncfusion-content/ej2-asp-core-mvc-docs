@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Customize the Icons for Pivot Table in ##Platform_Name## Pivot Table | Syncfusion
+title: How to Swap Pivot Icons in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how to swap the ##Platform_Name## Pivot Table's pivot button icons by overriding the .pivot-button .e-icons CSS pseudo-element with a custom content value.
 platform: ej2-asp-core-mvc
 control: Customize The Icons For Pivot Table
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Customize the Icons for Pivot Table in ##Platform_Name## Pivot Table
+# How to Swap Pivot Icons in ##Platform_Name## Pivot Table
 
 You can customize the pivot button icons in the pivot table by overriding the class **.pivot-button** with a custom property content as mentioned below.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to Show Custom Tooltip for Row and Column Headers in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to show custom tooltips on ASP.NET Core Pivot Table row and column headers via an external Tooltip component initialized in the dataBound event handler.
+title: Add Custom Tooltip to Headers in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to show custom tooltips on ASP.NET Core Pivot Table row and column headers via an external Tooltip component in the dataBound event.
 platform: ej2-asp-core-mvc
 control: Show tooltip for row and column headers 
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
-# How to Show Custom Tooltip for Row and Column Headers in ASP.NET Core Pivot Table
+# How to Add Custom Tooltip to Headers in ASP.NET Core Pivot Table
 
 You can display custom tooltips for row and column headers to provide additional context and information. This approach enhances the user experience by showing detailed field information when hovering over header cells in the pivot table.
 

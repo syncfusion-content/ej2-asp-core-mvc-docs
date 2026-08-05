@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to Add a Custom Aggregation Type to the Menu in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how to add a custom aggregation type to the ASP.NET Core Pivot Table's aggregate menu via the dataBound and aggregateCellInfo events, with custom calculation logic.
+title: How to Add Custom Aggregation in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to add a custom aggregation type to the ASP.NET Core Pivot Table's aggregate menu via the aggregateCellInfo event.
 platform: ej2-asp-core-mvc
 control: Add custom aggregation type to the menu
 publishingplatform: ##Platform_Name## 
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD009 -->
 
-# How to Add a Custom Aggregation Type to the Menu in ASP.NET Core Pivot Table
+# How to Add Custom Aggregation in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Switch to Older Themes Style in ASP.NET Core Pivot Table | Syncfusion
+title: How to Switch to Older Theme in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to switch the ASP.NET Core Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
 platform: ej2-asp-core-mvc
 control: Switching Older Themes Style

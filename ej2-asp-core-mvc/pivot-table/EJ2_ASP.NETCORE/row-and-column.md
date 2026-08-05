@@ -292,7 +292,7 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 ## AutoFit
 
-The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
+The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -321,7 +321,7 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 ![Autofit columns example](images/autofit-method.png)
 
-> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
+> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

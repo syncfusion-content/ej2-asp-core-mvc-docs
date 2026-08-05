@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aggregation in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table performs value-axis aggregations including Sum, Avg, Min, Max, Count, DifferenceFrom, and PercentageOfColumnTotal on relational data.
+description: Learn how the ASP.NET MVC Pivot Table performs value-axis aggregations like Sum, Avg, Min, Max, Count, and DifferenceFrom on relational data.
 platform: ej2-asp-core-mvc
 control: Aggregation
 publishingplatform: ##Platform_Name##

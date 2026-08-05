@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oracle Data Binding in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to bind Oracle data to the ASP.NET MVC Pivot Table using Oracle.ManagedDataAccess.Core in a Web API controller, exposed as JSON via a PivotController endpoint.
+description: Learn how to bind Oracle data to the ASP.NET MVC Pivot Table using Oracle.ManagedDataAccess.Core in a Web API controller exposed as JSON.
 platform: ej2-asp-core-mvc
 documentation: ug
 ---

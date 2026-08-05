@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Hide Specific Columns in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to hide a specific column in the ASP.NET MVC Pivot Table via the ColumnRender event in PivotViewGridSettings, setting the column's visible property to false.
+description: Learn how to hide a specific column in the ASP.NET MVC Pivot Table via the ColumnRender event in PivotViewGridSettings, by setting visible to false.
 platform: ej2-asp-core-mvc
 control: Hide specific columns in pivot table 
 documentation: ug

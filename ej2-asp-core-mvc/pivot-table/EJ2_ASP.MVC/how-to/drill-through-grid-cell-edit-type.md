@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to Set the Drill-Through Grid Cell Edit Type in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how to set the cell edit type (NumericTextBox, DropDownList, DatePicker, etc.) on the ASP.NET MVC Pivot Table's drill-through grid via the DrillThrough event.
+title: Set Drill-Through Edit Type in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to set the cell edit type on the ASP.NET MVC Pivot Table's drill-through grid via the DrillThrough event.
 platform: ej2-asp-core-mvc
 control: Drill Through Grid Cell Edit Type
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Set the Drill-Through Grid Cell Edit Type in ASP.NET MVC Pivot Table
+# How to Set Drill-Through Edit Type in ASP.NET MVC Pivot Table
 
 The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
