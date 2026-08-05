@@ -1,14 +1,14 @@
 ---
 layout: post
-title: FlatData in Syncfusion ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Flat Data in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Flat Data in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to load flat JSON data in the ##Platform_Name## File Manager without a service provider, using local data structures to render folders and files.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: FlatData
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Rendering Flat Data in the File Manager Control
+# Flat Data in ##Platform_Name## File Manager
 
 {% if page.publishingplatform == "aspnet-core" %}
 

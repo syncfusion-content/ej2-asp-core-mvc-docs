@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Overview in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: About ##Platform_Name## File Manager Component | Syncfusion
+description: Learn about the ##Platform_Name## File Manager, its key capabilities, and the common scenarios it supports for managing files on the server.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Localization in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to localize the ##Platform_Name## File Manager to any culture by defining locale-specific texts and messages beyond the default English locale.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# File Manager Localization
+# Localization in ##Platform_Name## File Manager
 
 The File Manager can be localized to any culture by defining its texts and messages in the corresponding culture. The default locale of the File Manager is `en`(English). The following table represents the default texts and messages of the File Manager in `en` culture.
 
