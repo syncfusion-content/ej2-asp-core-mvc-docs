@@ -16,9 +16,9 @@ N> The Syncfusion® Notification feature is available from Essential Studio® v2
 
 ## Notification Configuration
 
-The Syncfusion® Options page allows you to configure notification settings. Customize trial and newer version notifications with a simple true or false toggle.
+The Syncfusion® Options page allows you to configure notification settings. Customise trial and newer version notifications with a simple true or false toggle.
 
-It can be accessed by clicking **Tools > Options > Syncfusion > ASP.NET MVC**
+It can be accessed by clicking **Tools -> Options -> Syncfusion -> ASP.NET MVC**
 
 ![Option Page](images/mvc-optionPage.png)
 
@@ -47,4 +47,7 @@ If you use older versions of Syncfusion® assemblies or NuGet packages from **Es
 If you have mistakenly used an incorrect license key or used a license from another version or platform in your ASP.NET MVC application, Syncfusion® will display a notification message stating, **The provided Syncfusion license key is invalid.** This message serves as a reminder to obtain a valid license key and ensure proper licensing for Syncfusion® components.
 
 ![Invalid Notification](images/mvc-invalid.png)
+
+  
+
 

@@ -96,7 +96,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Circul
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Circular Gauge control will be rendered in the default web browser.
 
-![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.webp)
+![ASP.NET MVC Circular Gauge Control](images/circulargauge-control.png)
 
 ## Add Gauge Title
 
@@ -123,6 +123,6 @@ axes.EndAngle(120).StartAngle(240).Radius("90%").Minimum(0).Maximum(120).Add()).
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.webp)
+![ASP.NET MVC CircularGauge with Axis](images/circulargauge-with-axis.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/CircularGauge/ASP.NET%20MVC%20Razor%20Examples).

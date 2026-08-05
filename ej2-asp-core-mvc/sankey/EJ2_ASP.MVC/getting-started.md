@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sankey Chart Component | Syncfusion
+title: Getting started with ##Platform_Name## Sankey Chart Component
 description: Checkout and learn about Getting started with ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Getting started

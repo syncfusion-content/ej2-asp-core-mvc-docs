@@ -1,7 +1,5 @@
-@page
-@model IndexModel
-
 @{
+    ...
     List<string> values = new List<string> { "Mr.", "Mrs." };
 }
 

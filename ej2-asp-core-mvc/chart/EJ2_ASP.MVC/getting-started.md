@@ -141,7 +141,7 @@ To render a column chart with data, define a data source and bind it to the char
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Chart Control with Data](how-to/images/chart-data.webp)
+![ASP.NET MVC Chart Control with Data](how-to/images/chart-data.png)
 
 N> Explore the sample on [GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chart/ASP.NET%20MVC%20Razor%20Examples) to understand how this getting started example works.
 

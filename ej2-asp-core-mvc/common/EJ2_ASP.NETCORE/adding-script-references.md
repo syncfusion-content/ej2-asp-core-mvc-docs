@@ -18,52 +18,16 @@ Static web assets allow you to reference Syncfusion<sup style="font-size:70%">&r
 
 ### Enable Static Web Assets
 
-The default ASP.NET Core project templates already include the required middleware for serving static web assets. In most cases no extra setup is needed. Verify the following is present in Program.cs based on your target framework:
-
- - `.NET 9 and later` - uses MapStaticAssets(), along with .WithStaticAssets() chained onto MapRazorPages() (or MapControllerRoute()).
- - `.NET 8 and earlier`- uses UseStaticFiles().
-
-
-{% tabcontents %}
-
-{% tabcontent .NET 9 and later %}
+To serve static web assets, call [UseStaticFiles](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/static-files?view=aspnetcore-8.0) in the app's `~/Program.cs` file.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" %}
 
 var app = builder.Build();
-
-app.MapStaticAssets();
-
-app.MapRazorPages()
-.WithStaticAssets();
-
-app.Run();
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endtabcontent %}
-
-{% tabcontent .NET 8 and earlier %}
-
-{% tabs %}
-{% highlight c# tabtitle="Program.cs" %}
-
-var app = builder.Build();
-
 app.UseStaticFiles();
 
-app.MapRazorPages();
-
-app.Run();
-
 {% endhighlight %}
 {% endtabs %}
-
-{% endtabcontent %}
-
-{% endtabcontents %}
 
 ### Reference scripts from Static Web Assets
 
@@ -552,7 +516,6 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-rich-text-editor.min.js"></script>
-<script src="_content/Syncfusion.AspNetCore.RichTextEditor/scripts/sf-markdown-converter.min.js"></script>
 {% endhighlight %}
 
 </td>
@@ -575,7 +538,6 @@ The following table lists each NuGet package, the controls it covers, and the in
 
 {% highlight cshtml %}
 <script src="_content/Syncfusion.AspNetCore.Schedule/scripts/sf-schedule.min.js"></script>
-<script src="_content/Syncfusion.AspNetCore.Schedule/scripts/sf-recurrence-editor.min.js"></script>
 {% endhighlight %}
 
 </td>

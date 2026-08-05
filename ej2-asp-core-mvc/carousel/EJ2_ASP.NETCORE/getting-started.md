@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ##Platform_Name## Carousel Control
-description: Check out and learn about getting started with ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -10,63 +10,71 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Carousel Control
 
-This section briefly explains how to include the [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains about how to include [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in your ASP.NET Core application using Visual Studio.
 
-## Create ASP.NET Core Web App with Razor Pages
+## Prerequisites
 
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project).
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## Install the required ASP.NET Core packages
+## Create ASP.NET Core web application with Razor pages
 
-To add [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), then search and install [Syncfusion.AspNetCore.Navigations](https://www.nuget.org/packages/Syncfusion.AspNetCore.Navigations) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes). All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for more details.
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-Alternatively, you can install the same packages using the Package Manager Console with the following commands.
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+
+## Install ASP.NET Core package in the application
+
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.AspNetCore.Navigations -Version {{ site.releaseversion }}
-Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
+Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core tag helpers
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Navigations` and `Syncfusion.AspNetCore.Base` tag helpers.
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight C# tabtitle="_ViewImports.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.AspNetCore.Navigations
-@addTagHelper *, Syncfusion.AspNetCore.Base
+@addTagHelper *, Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+Here, the theme and script is referred using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows,
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    ...
-    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    <script src="_content/Syncfusion.AspNetCore.Navigations/scripts/sf-carousel.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the script manager
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager (`<ejs-scripts>`) at the end of the `<body>` element as shown below.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
     ...
@@ -77,12 +85,12 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 {% endhighlight %}
 {% endtabs %}
 
-## Add the ASP.NET Core Carousel control
+## Add ASP.NET Core Carousel Control
 
-Add the [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control in the **~/Pages/Index.cshtml** file.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Carousel tag helper in `~/Pages/Index.cshtml` page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 <div class="col-lg-12 control-section default-carousel-section">
     <div class="e-sample-resize-container carousel-sample">
         <ejs-carousel id="defaultCarousel" cssClass="default-carousel">
@@ -157,13 +165,13 @@ Add the [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-contro
 {% endhighlight %}
 {% endtabs %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Carousel](https://www.syncfusion.com/aspnet-core-ui-controls/carousel) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Carousel control will be rendered in the default web browser.
 
-![ASP.NET Core Carousel Control](images/core-carousel-control.webp)
+![ASP.NET Core Carousel Control](images/carousel-control.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Carousel).
 
 ## See also
 
-1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
-2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

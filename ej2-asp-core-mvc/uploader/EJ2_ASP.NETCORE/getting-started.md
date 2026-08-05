@@ -1,77 +1,85 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Uploader Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Uploader control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Uploader Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Uploader control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Uploader
+control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+
 # Getting Started with ASP.NET Core Uploader Control
 
-This section briefly explains how to include the [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in an ASP.NET Core application using Visual Studio.
 
-## Create an ASP.NET Core Web App with Razor pages
+## Prerequisites
 
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
-## Install the required ASP.NET Core packages
+## Create ASP.NET Core web application with Razor pages
 
-To add [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.Inputs](https://www.nuget.org/packages/Syncfusion.AspNetCore.Inputs/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-Alternatively, you can install the same packages using the Package Manager Console with the following command.
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
+
+## Install ASP.NET Core package in the application
+
+To add `ASP.NET Core` controls in the application, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search for [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core/) and then install it.  Alternatively, you can utilize the following package manager command to achieve the same.
 
 {% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
+{% highlight C# tabtitle="Package Manager" %}
 
-Install-Package Syncfusion.AspNetCore.Inputs -Version {{ site.releaseversion }}
-Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
+Install-Package Syncfusion.EJ2.AspNet.Core -Version {{ site.releaseversion }}
 
 {% endhighlight %}
 {% endtabs %}
 
-## Add ASP.NET Core Tag Helpers
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
-After the packages are installed, open the **~/Pages/_ViewImports.cshtml** file and import the `Syncfusion.AspNetCore.Base` and `Syncfusion.AspNetCore.Inputs` Tag Helpers.
+## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
+Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_ViewImports.cshtml" %}
+{% highlight C# tabtitle="~/_ViewImports.cshtml" %}
 
-@addTagHelper *, Syncfusion.AspNetCore.Base
-@addTagHelper *, Syncfusion.AspNetCore.Inputs
+@addTagHelper *, Syncfusion.EJ2
 
 {% endhighlight %}
 {% endtabs %}
 
 ## Add stylesheet and script resources
 
-The theme stylesheet and script can be referenced from [CDN](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#cdn-reference). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) and [script references](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+Here, the theme and script are referenced using CDN inside the `<head>` of `~/Pages/Shared/_Layout.cshtml` file as follows:
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    @* ASP.NET Core controls styles *@
-    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
-    @* ASP.NET Core controls scripts *@
-    <script src="_content/Syncfusion.AspNetCore.Inputs/scripts/sf-uploader.min.js"></script>
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
+    <!-- Syncfusion ASP.NET Core controls scripts -->
+    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
-## Register the Script Manager
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager `<ejs-scripts>` at the end of the `<body>` element as follows.
+N> Checkout the [Adding Script Reference](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references) topic to learn different approaches for adding script references in your ASP.NET Core application.
+
+## Register Syncfusion<sup style="font-size:70%">&reg;</sup> Script Manager
+
+Also, register the script manager `<ejs-script>` at the end of `<body>` in the ASP.NET Core application as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="_Layout.cshtml" %}
+{% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <body>
     ...
-    @* ASP.NET Core Script Manager *@
+    <!-- Syncfusion ASP.NET Core Script Manager -->
     <ejs-scripts></ejs-scripts>
 </body>
 
@@ -80,63 +88,61 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add ASP.NET Core Uploader control
 
-Add the [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in the **~/Pages/Index.cshtml** file.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Uploader tag helper in `~/Pages/Index.cshtml` page.
 
-N> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for Uploader server requests.
-Hence, use the third party `promise` library like blue-bird to use the Uploader in Internet Explorer.
+N> From v16.2.41 version, the `Essential JS2 AJAX` library has been integrated for uploader server requests.
+Hence, use the third party `promise` library like blue-bird to use the uploader in Internet Explorer.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/getting-started/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Uploader control will be rendered in the default web browser.
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control will render in your default web browser.
+![ASP.NET Core Uploader Control](images/uploader-getting.png)
 
-![ASP.NET Core Uploader Control](images/uploader-getting.webp)
+## Adding drop area
 
-## Adding Drop Area
-
-By default, the Uploader control allows to upload files by dragging files from File Explorer and dropping them into the Drop Area. You can configure any other external element as drop target using [Drop Area](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property.
+By default, the uploader control allows to upload files by drag the files from file explorer, and drop into the drop area. You can configure any other external element as drop target using [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property.
 
 In the following sample, drop target is configured.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/drop-area/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-## Configure Asynchronous settings
+## Configure asynchronous settings
 
-The Uploader control processes the files to upload in Asynchronous mode by default. Define the properties [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) and [removeUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RemoveUrl) to handle the save and remove actions as follows.
+The uploader control process the files to upload in Asynchronous mode by default. Define the properties [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) and [removeUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_RemoveUrl) to handle the save and remove action as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/async-settings/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-## Handle Success and Failure Events
+## Handle success and failed upload
 
-You can handle the Success and Failure events using the [Success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) and [Failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) events. To handle these events, define the function and assign it to the corresponding event as follows.
+You can handle the success and failure actions using the [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) and [failure](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Failure) events. To handle these events, define the function and assign it to the corresponding event as follows.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/uploader/success-failed/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Uploader](images/uploader-auto-01.webp)
+![ASP.NET Core Uploader](images/uploader-auto-01.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Uploader/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
 ## See also
 
-1. [Getting Started with ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [How to add additional data on upload](./how-to/add-additional-data-on-upload)
-4. [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
-5. [Achieve invisible upload](./how-to/achieve-invisible-upload)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
+* [How to add additional data on upload](./how-to/add-additional-data-on-upload)
+* [Achieve file upload programmatically](./how-to/achieve-file-upload-programmatically)
+* [Achieve invisible upload](./how-to/achieve-invisible-upload)

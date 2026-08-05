@@ -8,22 +8,20 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Check for Updates in ASP.NET Core Application
+# Check for update extensions to find if the latest version
 
-Syncfusion® provides the Check for Updates extension to find if the latest version of the Essential Studio® release is available. If an update is available, the option to install the most recent version of the Essential Studio® release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
+Syncfusion® provides the check for update extensions to find if the latest version of the essential release is available, and if it is, the option to update the most recent version of the Essential Studio® release is provided. By installing the latest version, you will always get the most up-to-date features, fixes, and improvements.
 
-> The Syncfusion® Check for Updates feature is available from v17.1.0.32.
+N> The Syncfusion® Check for updates is available from v17.1.0.32.
 
-> An active internet connection is required to check for available updates.
+You can check updates availability in Visual Studio, and then install the update version if required.
 
-You can check for update availability in Visual Studio, and then install the update if required.
+1. Choose **Extensions->Syncfusion->Check for Updates…** in the Visual Studio menu.
 
-1. Choose **Extensions -> Syncfusion -> Check for Updates…** in the Visual Studio menu.
+    ![Check for updates_2019later](images/check-for-updates_latest.png)
 
-    ![Check for updates](images/check-for-updates_latest.png)
+2. When there is an update, **Update** dialog box opens
 
-2. When an update is available, the **Update** dialog box opens. If no updates are available, a message indicating that you are on the latest version is shown.
+    ![update](images/update.png)
 
-    ![Update dialog box](images/update.png)
-
-3. You can download the Syncfusion® Essential Studio® from the Syncfusion® website by selecting **Download**. The Syncfusion® website download page opens in your default browser.
+3. You can download the Syncfusion® Essential Studio® from the Syncfusion® website by selecting **Download**.

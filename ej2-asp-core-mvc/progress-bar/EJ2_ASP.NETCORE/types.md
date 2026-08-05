@@ -1,26 +1,17 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Progress Bar Control | Syncfusion
-description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
+title: Types in ##Platform_Name## Progress Bar Component
+description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Progress Bar types in ##Platform_Name## ProgressBar Control
 
-Change the type of the Progress Bar by setting the `type` attribute on the `<ejs-progressbar>` tag helper. The default is `Linear`; the supported values are `Linear` and `Circular`.
+# Types
 
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/progress-bar/getting-started/default/tagHelper %}
-{% endhighlight %}
-{% endtabs %}
-
-![ASP.NET Core Progress Bar Control](images/default.png)
-
-> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
+Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
 
 ## Linear
 
@@ -34,7 +25,8 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/linear/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Linear.cs" %}
+{% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -42,7 +34,8 @@ Set **type** to Linear to get the linear progress bar. It also support secondary
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/linear/razor %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Linear.cs" %}
+{% endhighlight %}{% endtabs %}
 {% endif %}
 
 
@@ -57,7 +50,8 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/circular/tagHelper %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Circular.cs" %}
+{% endhighlight %}{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -65,6 +59,7 @@ Set **type** to Circular to get the circular progress bar. It also support secon
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/types/circular/razor %}
 {% endhighlight %}
-{% endtabs %}
+{% highlight c# tabtitle="Circular.cs" %}
+{% endhighlight %}{% endtabs %}
 {% endif %}
 

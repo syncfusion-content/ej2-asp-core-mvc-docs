@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Avatar Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
+description: Checkout and learn about getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Avatar
+control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,56 +11,47 @@ documentation: ug
 
 # Getting Started with ASP.NET Core Avatar Control
 
-This section explains how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section explains about how to include [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control in your ASP.NET Core application using Visual Studio.
+
+## Prerequisites
+
+[System requirements for ASP.NET Core controls](https://ej2.syncfusion.com/aspnetcore/documentation/system-requirements)
 
 ## Create ASP.NET Core web application with Razor pages
 
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-10.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+* [Create a Project using Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app)
 
-## Install ASP.NET Core package in the application
-
-To add Themes in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) package. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
-
-Alternatively, you can install the same package using the Package Manager Console with the following command.
-
-{% tabs %}
-{% highlight C# tabtitle="Package Manager Console" %}
-
-Install-Package Syncfusion.AspNetCore.Themes -Version {{ site.releaseversion }}
-
-{% endhighlight %}
-{% endtabs %}
+* [Create a Project using Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project)
 
 ## Add stylesheet
 
-The theme stylesheet can be referenced from NuGet through [Static Web Assets](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme#static-web-assets). Include the [stylesheet](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file.
+Here, the desired theme is referred using CDN inside the `<head>` of **~/Pages/Shared/_Layout.cshtml** file as follows,
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
 
 <head>
     ...
-    <link rel="stylesheet" href="_content/Syncfusion.AspNetCore.Themes/styles/fluent2.css" />
+    <!-- Syncfusion ASP.NET Core controls styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/fluent.css" />
 </head>
 
 {% endhighlight %}
 {% endtabs %}
 
+N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/theme) to learn different ways ([CDN](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#cdn-reference), [NPM package](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#node-package-manager-npm), and [CRG](https://ej2.syncfusion.com/aspnetcore/documentation/common/custom-resource-generator)) to refer styles in ASP.NET Core application, and to have the expected appearance for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
+
 ## Add ASP.NET Core Avatar control
 
-Add the [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) tag helper in **~/Pages/Index.cshtml** page.
+Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Avatar tag helper in **~/Pages/Index.cshtml** page.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/avatar/getting-started/core/tagHelper %}
 {% endhighlight %}
 {% endtabs %}
 
-## Run the application
-
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Avatar](https://www.syncfusion.com/aspnet-core-ui-controls/avatar) control will render in your default web browser.
-
-![ASP.NET Core Avatar Control](images/avatar.webp)
+![ASP.NET Core Avatar Control](images/avatar.png)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/Avatar).
 

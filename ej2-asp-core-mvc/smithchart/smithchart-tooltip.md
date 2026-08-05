@@ -1,16 +1,17 @@
 ---
 layout: post
-title: Smithchart Tooltip in ##Platform_Name## Smithchart Control | Syncfusion
-description: Learn here all about Smithchart Tooltip in Syncfusion ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more.
+title: Smithchart Tooltip in ##Platform_Name## Smithchart Component
+description: Learn here all about Smithchart Tooltip in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Tooltip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in Smith Chart
 
-The Smith Chart displays the details of each point via a tooltip when the mouse hovers over it. By default, the tooltip is disabled. To enable the tooltip, add the `<e-smithchartseries-tooltip>` child element to each series and set its `visible` attribute to `true`. You can customize the tooltip's visibility and appearance for each series individually.
+# Tooltip
+
+Smithchart will display details about the points through tooltip, when the mouse is moved over the point. By default, tooltip is disabled. To enable the tooltip for smithchart, you need to import and inject TooltipRender module from chart. And also set the property visible as true, in tooltip settings. You can customize the tooltip's visibility and appearance differently each series in the smithchart.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -34,3 +35,4 @@ The Smith Chart displays the details of each point via a tooltip when the mouse 
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
+
