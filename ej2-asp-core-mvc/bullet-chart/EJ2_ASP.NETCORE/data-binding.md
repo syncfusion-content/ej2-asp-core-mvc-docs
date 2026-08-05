@@ -48,4 +48,4 @@ public class LocalBulletData
 
 
 
-![Data Binding in Bullet Chart](images/blazor-bullet-chart-data-binding.png)
+![Data Binding in Bullet Chart](images/bullet-chart-data-binding.png)
