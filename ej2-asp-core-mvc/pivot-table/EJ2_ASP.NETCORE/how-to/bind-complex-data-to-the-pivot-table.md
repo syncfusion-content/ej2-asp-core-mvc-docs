@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Complex JSON to flat JSON in ASP.NET Core Syncfusion
-description: Learn to convert complex JSON to flat JSON and bind to Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
+title: How to Flatten Complex JSON in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to flatten complex nested JSON and bind it to the ASP.NET Core Pivot Table, mapping parent and child object fields into individual columns.
 platform: ej2-asp-core-mvc
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
@@ -9,7 +9,7 @@ publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# Convert complex JSON to flat JSON and assign it to pivot table
+# How to Flatten Complex JSON in ASP.NET Core Pivot Table
 
 ## Overview
 
