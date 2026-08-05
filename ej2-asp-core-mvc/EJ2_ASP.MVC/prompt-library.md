@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Syncfusion AI Tools Prompts | Syncfusion
-description: Explore the AI Tools Prompts to enhance ASP.NET Core development productivity with code generation, configuration examples, and contextual guidance.
-control: Syncfusion AI Tools Prompts
+title: Syncfusion AI Tools Prompt Library | Syncfusion
+description: Explore the AI Tools Prompt Library to enhance ASP.NET MVC development productivity with code generation, configuration examples, and contextual guidance.
+control: Syncfusion AI Tools Prompt Library
 platform: ej2-asp-core-mvc
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prompts for Syncfusion AI Tools
+# Prompt Library for Syncfusion AI Tools
 
-Speed up ASP.NET Core development using these ready-made prompts for popular Syncfusion EJ2 components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
+Speed up ASP.NET MVC development using these ready-made prompts for popular Syncfusion EJ2 components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 
 ## How to use
 
@@ -25,17 +25,17 @@ These prompts can be used with the MCP server or agent skills to streamline your
 
 ### Grid
 
-The Syncfusion EJ2 ASP.NET Core Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
+The Syncfusion EJ2 ASP.NET MVC Data Grid delivers fast, flexible tables for large datasets with built-in interactivity.
 
 {% promptcards %}
 {% promptcard Paging and Sorting %}
-How do I enable paging and sorting in the Syncfusion EJ2 ASP.NET Core Grid?
+How do I enable paging and sorting in the Syncfusion EJ2 ASP.NET MVC Grid?
 {% endpromptcard %}
 {% promptcard Grouping and Filtering %}
 Show me an example of grouping and filtering data in the Grid component.
 {% endpromptcard %}
 {% promptcard CRUD Operations %}
-What's the code to implement full CRUD operations in Syncfusion EJ2 ASP.NET Core Grid?
+What's the code to implement full CRUD operations in Syncfusion EJ2 ASP.NET MVC Grid?
 {% endpromptcard %}
 {% promptcard Grid Export to PDF and Excel %}
 How can I add PDF and Excel export options to the Grid toolbar?
@@ -68,17 +68,17 @@ How can I dynamically configure multicolumn layout with filtering and sorting?
 
 ### Chart
 
-The Syncfusion EJ2 ASP.NET Core Chart suite offers versatile visualization tools across various series types for insightful data representation.
+The Syncfusion EJ2 ASP.NET MVC Chart suite offers versatile visualization tools across various series types for insightful data representation.
 
 {% promptcards %}
 {% promptcard Local and Remote Data %}
 How do I bind both local and remote data sources to a Syncfusion Chart?
 {% endpromptcard %}
 {% promptcard Range Selection %}
-Show me how to enable range selection in a Syncfusion EJ2 ASP.NET Core Chart.
+Show me how to enable range selection in a Syncfusion EJ2 ASP.NET MVC Chart.
 {% endpromptcard %}
 {% promptcard Chart Types Overview %}
-What chart types are available in Syncfusion EJ2 ASP.NET Core Chart, and how do I configure them?
+What chart types are available in Syncfusion EJ2 ASP.NET MVC Chart, and how do I configure them?
 {% endpromptcard %}
 {% promptcard Markers and Data Labels %}
 How can I display markers and data labels on a line chart?
@@ -90,7 +90,7 @@ Add custom annotations to highlight specific data points in a chart.
 How do I export a Syncfusion Chart to PDF or image format?
 {% endpromptcard %}
 {% promptcard Print Support %}
-Enable print functionality for a Syncfusion EJ2 ASP.NET Core Chart component.
+Enable print functionality for a Syncfusion EJ2 ASP.NET MVC Chart component.
 {% endpromptcard %}
 {% promptcard Dynamic Chart with Remote Data %}
 Create a chart that updates dynamically with remote API data.
@@ -111,11 +111,11 @@ Show me an example of customizing chart markers and data label styles.
 
 ### Schedule
 
-The Syncfusion EJ2 ASP.NET Core Schedule component helps manage events, resources, and timelines with powerful views and customization.
+The Syncfusion EJ2 ASP.NET MVC Schedule component helps manage events, resources, and timelines with powerful views and customization.
 
 {% promptcards %}
 {% promptcard Module Injection %}
-How do I inject required modules into the Syncfusion EJ2 ASP.NET Core Schedule component?
+How do I inject required modules into the Syncfusion EJ2 ASP.NET MVC Schedule component?
 {% endpromptcard %}
 {% promptcard Remote Data Binding %}
 Bind the Schedule component to a remote API for dynamic event loading.
@@ -127,7 +127,7 @@ Show me how to implement full CRUD operations in the Schedule component.
 Enable virtual scrolling for large event datasets in the Schedule view.
 {% endpromptcard %}
 {% promptcard Timezone Support %}
-How can I configure timezone support in the Syncfusion EJ2 ASP.NET Core Schedule?
+How can I configure timezone support in the Syncfusion EJ2 ASP.NET MVC Schedule?
 {% endpromptcard %}
 {% promptcard Export Schedule to PDF or Excel %}
 Add export functionality to download the Schedule view as PDF or Excel.
@@ -154,11 +154,11 @@ Create a Schedule with module injection, CRUD, virtual scrolling, and exporting.
 
 ### Kanban
 
-The Syncfusion EJ2 ASP.NET Core Kanban organizes tasks in columns with drag-and-drop, swimlanes, and templating for agile workflows.
+The Syncfusion EJ2 ASP.NET MVC Kanban organizes tasks in columns with drag-and-drop, swimlanes, and templating for agile workflows.
 
 {% promptcards %}
 {% promptcard Data Binding %}
-How do I bind local or remote data to the Syncfusion EJ2 ASP.NET Core Kanban board?
+How do I bind local or remote data to the Syncfusion EJ2 ASP.NET MVC Kanban board?
 {% endpromptcard %}
 {% promptcard Sorting %}
 Enable sorting of cards within columns in the Kanban component.
@@ -197,7 +197,7 @@ Create a Kanban board with data binding, swimlane, card editing, and drag-and-dr
 
 ### RichTextEditor
 
-The Syncfusion EJ2 ASP.NET Core RichTextEditor offers a modern WYSIWYG editor with extensive formatting, media, and integration features.
+The Syncfusion EJ2 ASP.NET MVC RichTextEditor offers a modern WYSIWYG editor with extensive formatting, media, and integration features.
 
 {% promptcards %}
 {% promptcard Toolbar Configuration %}
@@ -216,7 +216,7 @@ Inject feature modules like toolbar, link, and image into the RichTextEditor.
 Enable undo and redo functionality in the RichTextEditor toolbar.
 {% endpromptcard %}
 {% promptcard Forms Integration %}
-How do I integrate an ASP.NET Core form and validate input?
+How do I integrate an ASP.NET MVC form and validate input?
 {% endpromptcard %}
 {% promptcard Content Import and Export %}
 Export RichTextEditor content to HTML or import existing HTML content.
@@ -237,11 +237,11 @@ Inject toolbar and link modules to enable rich link editing in the editor.
 
 ### Calendar
 
-The Syncfusion EJ2 ASP.NET Core Calendar supports flexible date selection, localization, and custom rendering.
+The Syncfusion EJ2 ASP.NET MVC Calendar supports flexible date selection, localization, and custom rendering.
 
 {% promptcards %}
 {% promptcard Date Range Selection %}
-How do I enable date range selection in the Syncfusion EJ2 ASP.NET Core Calendar?
+How do I enable date range selection in the Syncfusion EJ2 ASP.NET MVC Calendar?
 {% endpromptcard %}
 {% promptcard Globalization Support %}
 Configure the Calendar to support multiple cultures and languages.
@@ -280,5 +280,4 @@ Create a Calendar with date range, multi-selection, globalization, and weekend h
 
 ## See also
 
-* [MCP Server](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/mcp-server)
-* [Skills](https://ej2.syncfusion.com/aspnetcore/documentation/ai-coding-assistant/skills)
+* [MCP Server](https://ej2.syncfusion.com/aspnetmvc/documentation/ai-coding-assistant/mcp-server)
