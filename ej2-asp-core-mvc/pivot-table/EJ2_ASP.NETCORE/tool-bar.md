@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool Bar in ##Platform_Name## Pivot Table Control | Syncfusion
-description: Learn here all about Tool Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Toolbar in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table Toolbar exposes built-in actions like New, Save, Export, and chart switching via showToolbar.
 platform: ej2-asp-core-mvc
 control: Tool Bar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tool bar in ASP.NET Core Pivot Table component
+# Toolbar in ASP.NET Core Pivot Table
 
 The toolbar in the ASP.NET Core Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**. Additionally, the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 
@@ -70,7 +70,7 @@ By default, the dropdown menu in the toolbar displays all available chart types.
 
 For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`chartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
-To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart/#chart-types).
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#chart-types).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,7 +101,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 ## Switch the chart to multiple axes
 
-In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart/#multiple-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#multiple-axis).
 
 ![Switching to multiple axes](images/chart-option.png)
 
@@ -113,7 +113,7 @@ The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and
 
 In the pivot chart, you can show or hide the legend dynamically using an option in the chart type drop-down menu on the toolbar. This allows you to control whether the legend appears alongside the chart. For accumulation chart types, such as pie, doughnut, pyramid, and funnel, the legend is hidden by default. You can enable or disable the legend using a built-in checkbox available in the drop-down menu.
 
-![Chart legend](images/chart-legend.png)
+![Legend toggle option](images/accumulation-legend.png)
 
 ## Adding custom option to the toolbar
 
@@ -1012,7 +1012,7 @@ The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 ### ToolbarRender
 
-The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/tool-bar/#adding-custom-option-to-the-toolbar).
+The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/tool-bar#adding-custom-option-to-the-toolbar).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
