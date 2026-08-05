@@ -79,4 +79,4 @@ public class CustomData
 
 
 
-![Bullet Chart with Data Labels](images/blazor-bullet-chart-data-label.png)
+![Bullet Chart with Data Labels](images/bullet-chart-data-label.png)

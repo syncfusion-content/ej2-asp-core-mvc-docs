@@ -13,7 +13,7 @@ documentation: ug
 
 ## Title
 
-The title of the Bullet Chart displays the information about the data plotted by specifying it in the [`title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property.
+The title of the Bullet Chart displays the information about the data plotted by specifying it in the [`Title`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.BulletChart.html#Syncfusion_EJ2_Charts_BulletChart_Title) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -45,7 +45,7 @@ public class DefaultBulletData
 
 
 
-![Bullet Chart with Title](images/blazor-bullet-chart-with-title.png)
+![Bullet Chart with Title](images/bullet-chart-with-title.png)
 
 ## Subtitle
 
@@ -81,7 +81,7 @@ public class SubTitleData
 
 
 
-![Bullet Chart with Subtitle](images/blazor-bullet-chart-subtitle.png)
+![Bullet Chart with Subtitle](images/bullet-chart-subtitle.png)
 
 ## Title and subTitle position
 
@@ -223,7 +223,7 @@ public class BottomPositionData
 
 
 
-![Title and Subtitle Position in Bullet Chart](images/blazor-bullet-chart-title-positions.png)
+![Title and Subtitle Position in Bullet Chart](images/bullet-chart-title-positions.png)
 
 ## Title customization
 
@@ -293,4 +293,4 @@ public class Custom
 
 
 
-![Customizing Title and Subtitle in Bullet Chart](images/blazor-bullet-chart-title-customization.png)
+![Customizing Title and Subtitle in Bullet Chart](images/bullet-chart-title-customization.png)

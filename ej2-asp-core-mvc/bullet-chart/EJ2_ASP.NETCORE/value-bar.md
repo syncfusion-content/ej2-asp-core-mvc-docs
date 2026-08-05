@@ -43,7 +43,7 @@ public class DefaultBulletData
 
 
 
-![Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar.png)
+![Actual Bar in Bullet Chart](images/bullet-chart-actual-bar.png)
 
 ## Types of actual bar
 
@@ -79,7 +79,7 @@ public class ActualBarTypeData
 
 
 
-![Bullet Chart with Dot Actual Bar](images/blazor-bullet-chart-dot-actual-bar.png)
+![Bullet Chart with Dot Actual Bar](images/bullet-chart-dot-actual-bar.png)
 
 ## Actual bar customization
 
@@ -151,4 +151,4 @@ public class FillColorCustomization
 
 
 
-![Customizing Actual Bar in Bullet Chart](images/blazor-bullet-chart-actual-bar-customization.png)
+![Customizing Actual Bar in Bullet Chart](images/bullet-chart-actual-bar-customization.png)
