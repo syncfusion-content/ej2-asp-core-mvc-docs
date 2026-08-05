@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row And Column in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Row And Column in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Row and Column in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to set the ASP.NET MVC Pivot Table's width, height, row height, column width, and grid lines via the Height, Width, and GridSettings properties.
 platform: ej2-asp-core-mvc
 control: Row And Column
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in ##Platform_Name## Pivot Table component
+# Row and Column in ASP.NET MVC Pivot Table
 
 ## Width and Height
 
@@ -292,7 +292,7 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 ## AutoFit
 
-The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
+The AutoFit option allows users to easily adjust Pivot Table columns so that each column matches the width of its content, making the data easier to read without cell content being cut off or wrapped unnecessarily. To accomplish this, you can use the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid#autofitcolumns) method from the grid instance, which automatically resizes all Pivot Table columns based on the content of their cells.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -321,7 +321,7 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 ![Autofit columns example](images/autofit-method.png)
 
-> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
+> When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`AutoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

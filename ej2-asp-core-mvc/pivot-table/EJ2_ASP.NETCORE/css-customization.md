@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Css Customization in ASP.NET Core Syncfusion Pivot Table
-description: Learn here all about Css Customization in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: CSS Customization in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table uses CSS to hide axes, align text in headers and value cells, and style the Field List and Grouping Bar UI elements.
 platform: ej2-asp-core-mvc
 control: Css Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS customization in ASP.NET Core Pivot Table component
+# CSS Customization in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 

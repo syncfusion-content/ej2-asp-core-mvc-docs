@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Defer Update in ASP.NET Core Syncfusion Pivot Table Component
-description: Learn here all about Defer Update in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Defer Update in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table defers report rendering until the user clicks Apply, improving performance during drag-drop and filter operations.
 platform: ej2-asp-core-mvc
 control: Defer Update
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Defer update in ASP.NET Core Pivot Table component
+# Defer Update in ASP.NET Core Pivot Table
 
 Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value, and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 

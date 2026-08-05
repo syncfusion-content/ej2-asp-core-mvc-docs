@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Compression in ##Platform_Name## Pivot Table component | Syncfusion
-description: Learn here all about data compression in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Data Compression in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table uses allowDataCompression with virtual scrolling to dedupe raw input data and speed up rendering on large datasets.
 platform: ej2-asp-core-mvc
 control: Data Compression
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Data Compression in ##Platform_Name## Pivot Table component
+# Data Compression in ASP.NET Core Pivot Table
 
 > This property is applicable only for the relational data source.
 
