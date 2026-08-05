@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Pivot Chart in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Pivot Chart in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table pairs with a Pivot Chart that supports 15+ chart types, drill down/up, and grid-or-chart display via DisplayOption.
 platform: ej2-asp-core-mvc
 control: Pivot Chart
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pivot Chart in ##Platform_Name## Pivot Table Component
+# Pivot Chart in ASP.NET MVC Pivot Table
 
 The Pivot Chart in the Syncfusion ASP.NET MVC Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
