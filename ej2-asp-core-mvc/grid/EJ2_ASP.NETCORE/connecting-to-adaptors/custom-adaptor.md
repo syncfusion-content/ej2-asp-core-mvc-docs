@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Bind Data with Custom Remote Data Binding | Syncfusion
+title: ##Platform_Name## Grid Custom Remote Data Binding | Syncfusion
 description: Learn how to bind remote data with custom rules in ##Platform_Name## Data Grid, customize data operations, and manage CRUD actions.
 control: Custom Adaptor
 platform: ej2-asp-core-mvc

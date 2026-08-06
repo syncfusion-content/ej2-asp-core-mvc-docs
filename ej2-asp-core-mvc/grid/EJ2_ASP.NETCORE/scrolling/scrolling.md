@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Scrolling | Syncfusion
-description: Learn how to configure scrolling in ##Platform_Name## Data Grid, including scroll behavior, responsive layouts, sticky headers, auto-scrolling, and scrollbar settings.
+description: Learn how to use Scrolling in ##Platform_Name## Data Grid to configure scroll behavior, enable sticky headers, and customize scrolling options.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##

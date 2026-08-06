@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid DOM Virtualization | Syncfusion
-description: Learn how DOM virtualization in ##Platform_Name## Data Grid improves large dataset performance through viewport rendering, row virtualization, and efficient scrolling.
+description: Learn how to use DOM Virtualization in ##Platform_Name## Data Grid to render visible rows only, improve performance, and efficiently handle large datasets.
 platform: ej2-asp-core-mvc
 control: DOM virtualization
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Excel Export Templates | Syncfusion
-description: Learn how to export ##Platform_Name## Data Grid into Excel using templates, including column, detail, and caption templates with custom formatting, images, and links.
+description: Learn how to use Excel Exporting Templates in ##Platform_Name## Data Grid to customize exported content with templates, images, links, and formatting.
 platform: ej2-asp-core-mvc
 control: Exporting grid with templates
 publishingplatform: ##Platform_Name##

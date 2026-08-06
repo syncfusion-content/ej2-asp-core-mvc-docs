@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Detail Template | Syncfusion
-description: Learn how to use detail templates in ##Platform_Name## Data Grid with Syncfusion. Display expandable row details, embed custom components, and create rich data layouts.
+description: Learn how to use Detail Templates in ##Platform_Name## Data Grid to display expandable row details, embed custom components, and customize data layouts.
 platform: ej2-asp-core-mvc
 control: Detail Template
 publishingplatform: ##Platform_Name##
