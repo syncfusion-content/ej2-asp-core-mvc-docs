@@ -19,7 +19,7 @@ For numeric fields, the formatting settings include the following properties:
 * `name`: Specifies the field name to which the formatting should be applied.
 * `format`: Defines the number format pattern for the respective field (e.g., 'N2' for two decimal places, 'C' for currency).
 
-> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+> Also, you can customize the applied number format by setting the [`NumberFormatOptions`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#number-formatting) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -54,7 +54,7 @@ For date and time fields, the formatting settings include these properties:
 * `format`: Defines the date/time format pattern for the respective field (e.g., 'dd/MM/yyyy', 'MMM yyyy').
 * `type`: Specifies the format type to be used for the respective field (Date, Time, or DateTime).
 
-> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
+> Also, you can customize the applied date format by setting [`DateFormatOptions`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-datetime) options in [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) itself.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -83,4 +83,4 @@ For date and time fields, the formatting settings include these properties:
 
 ## Limitations of date formatting
 
-As per Firefox and Edge browsers standards, most of the date and time formats used in data source aren’t supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 etc... are not supported. Meanwhile [`ISO formats`](http://www.ecma-international.org/ecma-262/5.1/#sec-15.9.1.15) will be supported across all browsers.
+As per Firefox and Edge browsers standards, most of the date and time formats used in data source aren’t supported. For example: Apr-2000, Apr-01-2000, 01-03-2000, 2000-Apr-01 etc... are not supported. Meanwhile [`ISO formats`](https://262.ecma-international.org/5.1/#sec-15.9.1.15) will be supported across all browsers.

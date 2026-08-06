@@ -11,7 +11,7 @@ documentation: ug
 
 # Globalization in ASP.NET Core Pivot Table Control
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
+Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)).
 
 ## Internationalization
 
@@ -27,7 +27,7 @@ npm install cldr-data --save
 
 Once the package installed, you can find the culture specific JSON data under the location `/scripts/cldr-data`.
 
-* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
+* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#loading-culture-data) method to load the culture specific CLDR JSON data.
 
 In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` location. In ASP.NET Core refer the culture files directly from `/wwwroot/scripts/cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
@@ -140,7 +140,7 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 ## Localization
 
-The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html) library allows you to localize default text content of the Pivot Table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+TheThe [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the Pivot Table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 
 The following list of properties and its values are used in the pivot table.
 
