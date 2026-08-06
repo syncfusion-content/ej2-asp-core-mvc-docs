@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Infinite Scrolling | Syncfusion
-description: Learn how to implement infinite scrolling in ##Platform_Name## Data Grid with incremental data loading, optimized retrieval, and smooth performance for large datasets.
+description: Learn how to use Infinite Scrolling in ##Platform_Name## Data Grid to load data incrementally, retrieve records on demand, and efficiently handle large datasets.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
 publishingplatform: ##Platform_Name##

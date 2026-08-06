@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Grouping | Syncfusion
-description: Learn how to use grouping in ##Platform_Name## Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
+description: Learn how to use Grouping in ##Platform_Name## Data Grid to organize data, display aggregates, customize grouping settings, and expand or collapse records.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
