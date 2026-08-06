@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## AI AssistView Control | Syncfusion
+title: Accessibility in ##Platform_Name## AI AssistView Control | Syncfusion®
 description: Checkout and learn about Accessibility in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility

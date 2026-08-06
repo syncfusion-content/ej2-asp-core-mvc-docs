@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC AI AssistView Control | Syncfusion
+title: Getting Started with ASP.NET MVC AI AssistView Control | Syncfusion®
 description: Check out and learn about getting started with ASP.NET MVC AI AssistView control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: AI AssistView

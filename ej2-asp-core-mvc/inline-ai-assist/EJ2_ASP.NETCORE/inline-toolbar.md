@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline toolbar in ##Platform_Name## InlineAIAssist Control | Syncfusion
-description: Checkout and learn about inline toolbar in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Inline Toolbar in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Checkout and learn about Inline Toolbar in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Inline toolbar
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Toolbar configuration in ##Platform_Name## Inline AI Assist control
+# Toolbar Configuration in ##Platform_Name## Inline AI Assist
 
 You can render the inline toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistInlineToolbarSettings_Items) property in the `e-inlineaiassist-inlinetoolbarsettings` tag helper.
 

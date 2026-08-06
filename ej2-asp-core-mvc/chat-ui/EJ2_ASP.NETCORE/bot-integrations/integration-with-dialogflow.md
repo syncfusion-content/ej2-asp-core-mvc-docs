@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Integration of Dialogflow in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Integration of Dialogflow in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Integration with Dialogflow in ##Platform_Name## Chat UI | Syncfusion
+description: Checkout and learn about Integration with Dialogflow in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Integration of Dialogflow
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integrate Google Dialogflow with ASP.NET Core Chat UI control
+# Integrate Google Dialogflow with ##Platform_Name## Chat UI
 
 The Chat UI control integrates with [Google Dialogflow](https://cloud.google.com/dialogflow/docs) to enable advanced conversational AI features in your ASP.NET Core applications. The control acts as a user interface for a support bot, where user prompts are sent to the Dialogflow service via API calls, providing natural language understanding and context-aware responses.
 

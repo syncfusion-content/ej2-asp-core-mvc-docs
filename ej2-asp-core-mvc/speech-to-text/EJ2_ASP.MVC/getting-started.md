@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## SpeechToText Control | Syncfusion
+title: Getting Started with ##Platform_Name## Speech To Text | Syncfusion®
 description: Check out and learn about getting started with Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
-control: SpeechToText
+control: Speech To Text
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC SpeechToText control
+# Getting Started with ##Platform_Name## Speech To Text
 
 This section briefly explains how to include the `ASP.NET MVC SpeechToText` control in your ASP.NET MVC application using Visual Studio.
 

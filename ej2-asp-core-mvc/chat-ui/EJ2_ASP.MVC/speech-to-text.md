@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Speech-to-Text With ##Platform_Name## Chat UI Control | Syncfusion
+title: Speech To Text in ##Platform_Name## Chat UI | Syncfusion
 description: Checkout and learn about configuration of Speech-to-Text with Azure OpenAI in ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Azure Open AI
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Speech-to-Text in ASP.NET MVC Chat UI
+# Speech-to-Text in ##Platform_Name## Chat UI
 
 The Syncfusion ASP.NET MVC Chat UI control integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the Chat UI through voice input.
 

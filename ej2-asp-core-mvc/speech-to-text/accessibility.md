@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## SpeechToText Control | Syncfusion
+title: Accessibility in ##Platform_Name## SpeechToText Control | Syncfusion®
 description: Checkout and learn about Accessibility in Syncfusion ##Platform_Name## SpeechToText control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility

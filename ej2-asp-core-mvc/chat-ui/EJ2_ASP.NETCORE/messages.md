@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Messages in ##Platform_Name## Chat UI Control | Syncfusion
+title: Messages in ##Platform_Name## Chat UI | Syncfusion
 description: Checkout and learn about Messages in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Messages
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Messages in ##Platform_Name## Chat UI control
+# Messages in ##Platform_Name## Chat UI
 
 The Chat UI allows to add messages using the `<e-chatui-message>` tag directive within the `<e-chatui-messages>` directive. The message collection stores all the messages being sent and received.
 

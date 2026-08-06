@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Globalization in ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Chat UI | Syncfusion
+description: Checkout and learn about Globalization in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ##Platform_Name## Chat UI control
+# Globalization in ##Platform_Name## Chat UI
 
 ## Localization
 

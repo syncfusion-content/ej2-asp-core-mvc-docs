@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LiteLLM in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Integration of LiteLLM in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Lite LLM in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Integration of Lite LLM in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: LiteLLM
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate AI AssistView with LiteLLM
+# Integrate AI AssistView with LiteLLM in ##Platform_Name##
 
 The **AI AssistView** control can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
 
