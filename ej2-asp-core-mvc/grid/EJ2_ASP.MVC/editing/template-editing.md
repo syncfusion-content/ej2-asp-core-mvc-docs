@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template editing in ASP.NET MVC Grid component
+# Custom Template Editing in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. This feature allows you to use ASP.NET MVC templates to define the structure and content of the cells within the grid.
 
