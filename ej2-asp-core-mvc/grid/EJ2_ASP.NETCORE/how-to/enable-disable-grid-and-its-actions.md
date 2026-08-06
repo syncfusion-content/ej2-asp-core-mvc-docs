@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable Disable Grid And Its Actions in ##Platform_Name## Grid Component
-description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable ##Platform_Name## Data Grid and its actions using CSS and event handling to control user interaction dynamically.
 platform: ej2-asp-core-mvc
 control: Enable Disable Grid And Its Actions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Enable disable grid and its actions in ASP.NET Core Grid component
+# Enable or Disable Grid Actions in ASP.NET Core Data Grid
 
 You can enable or disable the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 

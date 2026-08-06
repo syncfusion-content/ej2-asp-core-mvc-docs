@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Group and Caption Aggregate in ##Platform_Name## Grid Component
-description: Learn here all about Group and Caption Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Group and Caption Aggregates | Syncfusion
+description: Learn how to compute and display group and caption aggregates in ##Platform_Name## Data Grid, including group summaries, captions, and aggregate formatting.
 platform: ej2-asp-core-mvc
 control: Group and Caption Aggregate
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Group and caption aggregate in ASP.Net MVC Grid component
+# Group and Caption Aggregates in ASP.NET MVC Data Grid
 
 Group footer and caption aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `GroupFooterTemplate` and `GroupCaptionTemplate` properties of the `AggregateColumn`.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style And Appearance in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Style and Appearance | Syncfusion
+description: Learn how to customize the style and appearance of ##Platform_Name## Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in ##Platform_Name## Grid component
+# Style and Appearance in ##Platform_Name## Data Grid
 
 The Grid component offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 
@@ -76,5 +76,3 @@ In the following sample, the font family of grid content is changed to **cursive
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
-
-![grid style and appearance](../images/style-and-appearance/style-and-appearance.png)

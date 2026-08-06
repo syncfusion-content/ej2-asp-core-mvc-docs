@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column pinning (Frozen) in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column pinning (Frozen) in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Pinning | Syncfusion
+description: Learn how to freeze and pin columns in ##Platform_Name## Data Grid to keep important fields visible while scrolling and synchronize frozen content.
 platform: ej2-asp-core-mvc
 control: Column pinning (Frozen)
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Pinning (Frozen) in ASP.NET Core Grid component
+# Column Pinning in ASP.NET Core Data Grid
 
 In the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
 
