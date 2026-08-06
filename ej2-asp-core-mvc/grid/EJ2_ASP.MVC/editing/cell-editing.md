@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell Editing in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Cell Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cell Editing | Syncfusion
+description: Learn how to edit grid cells in ##Platform_Name## Data Grid, customize editing workflows, validate input, manage updates, and control editing behavior.
 platform: ej2-asp-core-mvc
 control: Cell Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Cell editing in ASP.NET MVC Grid component
+# Cell Editing in ASP.NET MVC Data Grid
 
 Cell editing provides a streamlined way to update individual cell values directly within the grid. Cell editing is designed for quick, inline modifications, making data entry and corrections more efficient. This approach ensures that changes are applied seamlessly to large datasets while maintaining consistency with the Grid’s overall editing experience.
  
