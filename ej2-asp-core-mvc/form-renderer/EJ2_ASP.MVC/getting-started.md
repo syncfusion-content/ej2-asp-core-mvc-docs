@@ -11,7 +11,9 @@ documentation: ug
 
 # Getting Started with ASP.NET MVC Form Renderer Control
 
-This section briefly explains about how to include [ASP.NET MVC Form Renderer](https://www.syncfusion.com/aspnet-mvc-ui-controls/form-renderer) control in your ASP.NET MVC application using Visual Studio.
+The Form Renderer is a powerful, schema-driven component that enables you to build and render complex forms with ease using a structured JSON schema definition. It streamlines form creation, customization, and data capture by letting you define form layouts, fields, and validation declaratively and then render them through a simple component property binding.
+
+This section briefly explains about how to include ASP.NET MVC Form Renderer control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
@@ -35,11 +37,11 @@ Install-Package Syncfusion.EJ2.MVC5 -Version {{ site.ej2version }}
 {% endhighlight %}
 {% endtabs %}
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The Syncfusion.EJ2.MVC5 NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls are available in [nuget.org.](https://www.nuget.org/packages?q=syncfusion.EJ2) Refer to [NuGet packages topic](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more about installing NuGet packages in various OS environments. The **Syncfusion.EJ2.MVC5** NuGet package has dependencies, [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/) for JSON serialization and [Syncfusion.Licensing](https://www.nuget.org/packages/Syncfusion.Licensing/) for validating Syncfusion<sup style="font-size:70%">&reg;</sup> license key.
 
 ## Update packages.config
 
-To update the packages.config file with the latest ASP.NET MVC and Razor versions, run the following command in the NuGet Package Manager Console:
+To update the **packages.config** file with the latest ASP.NET MVC and Razor versions, run the following command in the NuGet Package Manager Console:
 
 {% tabs %}
 {% highlight C# tabtitle="Package Manager" %}
@@ -83,7 +85,7 @@ N> Checkout the [Themes topic](https://ej2.syncfusion.com/aspnetmvc/documentatio
 
 ## Register Syncfusion<sup style="font-size:70%">&reg;</sup> script manager
 
-Also, register the script manager at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows. The `Syncfusion.EJ2.EJ2` class exposes a `ScriptManager(Boolean)` instance method that emits the script registration block.
+Also, register the script manager `EJS().ScriptManager()` at the end of `<body>` in the `~/Views/Shared/_Layout.cshtml` file as follows.
 
 {% tabs %}
 {% highlight cshtml tabtitle="~/_Layout.cshtml" %}
@@ -91,8 +93,7 @@ Also, register the script manager at the end of `<body>` in the `~/Views/Shared/
 <body>
 ...
     <!-- Syncfusion ASP.NET MVC Script Manager -->
-    @{ var ej2ScriptManager = new Syncfusion.EJ2.EJ2(); }
-    @ej2ScriptManager.ScriptManager(false)
+    @Html.EJS().ScriptManager()
 </body>
 
 {% endhighlight %}
@@ -106,7 +107,7 @@ The Form Renderer control allows you to build a form from a JSON schema and rend
 
 ### Create the model
 
-The schema is described by a set of plain C# classes that use `[JsonProperty]` attributes to map to the JSON properties consumed by the Form Renderer. `Schema` is the root, `SchemaProperties` holds the individual form fields, and `SchemaSettings` configures form-level options such as name and width.
+The schema is described by a set of plain C# classes that use `[JsonProperty]` attributes to map to the JSON properties consumed by the Form Renderer. `Schema` is the root, `Properties` holds the individual form fields, and `Settings` configures form-level options such as name and width.
 
 ```csharp
 // Schema.cs
@@ -167,30 +168,16 @@ public class SchemaSettings { [JsonProperty("name")] public string Name { get; s
 public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
 ```
 
-### Configure the FormModel in the controller and render the Form Renderer
+### Assign the model to Form Renderer
 
 In the `HomeController.cs`, populate the schema through `FormRendererData` and pass it to the view using `ViewData`. The view then renders the Form Renderer with the `@Html.EJS().FormRenderer` helper.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 
-@using WebApplication3.Models
-@using Syncfusion.EJ2.FormLayout
+@using Syncfusion.EJ2.FormRenderer
 
-@{
-    var formSchema = ViewData["formSchema"] as Schema;
-    if (formSchema == null)
-    {
-        formSchema = new Schema();
-    }
-    var formRendererModel = new FormRenderer
-    {
-        Id = "userForm",
-        Schema = formSchema
-    };
-    var ej2 = new Syncfusion.EJ2.EJ2(Response.Output, Context);
-    ej2.FormRenderer("userForm", formRendererModel).Render();
-}
+@Html.EJS().FormRenderer("form-renderer-control").Schema((ViewData["formSchema"])).Render()
 
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
@@ -209,6 +196,6 @@ public class HomeController : Controller
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Form Renderer control will be rendered in the default web browser.
 
-The output looks like below
+The output looks like below.
 
 ![ASP.NET MVC Form Renderer](../images/form-renderer.png)
