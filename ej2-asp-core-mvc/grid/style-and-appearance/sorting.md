@@ -10,7 +10,7 @@ documentation: ug
 
 # Sorting Style in ##Platform_Name## Data Grid
 
-You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ##Platform_Name## Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ##Platform_Name## Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons#material) based on your theme. Here's how to do it:
 
 ## Customizing the grid sorting icon
 

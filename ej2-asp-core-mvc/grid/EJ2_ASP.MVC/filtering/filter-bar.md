@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Filter Bar | Syncfusion
-description: Learn how to use Filter Bar in ##Platform_Name## Data Grid with expression operators, configurable modes, column settings, custom templates, and filter status display.
+description: Learn how to use Filter Bar in ##Platform_Name## Data Grid to apply column filters, configure filter operators and templates, and manage data efficiently.
 platform: ej2-asp-core-mvc
 control: Filter Bar
 publishingplatform: ##Platform_Name##

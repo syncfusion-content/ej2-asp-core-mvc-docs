@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Overview | Syncfusion
-description: Learn how to use ##Platform_Name## Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, searching, grouping, editing, and templates.
+description: Learn how to use ##Platform_Name## Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, editing, and templates.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

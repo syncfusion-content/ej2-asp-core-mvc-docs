@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Adaptive UI Customization | Syncfusion
-description: Learn how to customize adaptive UI in ##Platform_Name## Data Grid with responsive dialogs, vertical row rendering, mobile-friendly layouts, and small-screen optimization.
+description: Learn how to customize adaptive UI in ##Platform_Name## Data Grid using responsive dialogs, vertical row rendering, and optimized mobile layouts.
 platform: ej2-asp-core-mvc
 control: Adaptive
 publishingplatform: ##Platform_Name##

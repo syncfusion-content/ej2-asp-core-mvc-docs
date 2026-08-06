@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Caption Template | Syncfusion
-description: Learn how to customize group captions in ##Platform_Name## Data Grid using Caption Template, apply custom content, formatting, and display group information effectively.
+description: Learn how to customize group captions in ##Platform_Name## Data Grid using Caption Template, apply custom content and formatting, and display group information effectively.
 platform: ej2-asp-core-mvc
 control: Caption Template
 publishingplatform: ##Platform_Name##

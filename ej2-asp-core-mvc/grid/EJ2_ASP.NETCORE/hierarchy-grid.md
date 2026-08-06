@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Hierarchy Grid | Syncfusion
-description: earn how to create hierarchy grids in ##Platform_Name## Data Grid with parent-child relationships, nested child grids, hierarchical data binding, and expandable rows.
+description: how to create Hierarchy Grids in ##Platform_Name## Data Grid with parent-child relationships, nested grids, hierarchical data binding, and expandable rows.
 platform: ej2-asp-core-mvc
 control: Hierarchy grid
 publishingplatform: ##Platform_Name##

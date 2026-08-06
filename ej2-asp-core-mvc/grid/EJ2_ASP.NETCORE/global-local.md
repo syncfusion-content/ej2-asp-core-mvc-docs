@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Globalization and Localization | Syncfusion
-description: Learn how to use globalization in ##Platform_Name## Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
+description: Learn how to use Globalization in ##Platform_Name## Data Grid to support localization, culture switching, RTL layouts, and locale-specific formatting.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##

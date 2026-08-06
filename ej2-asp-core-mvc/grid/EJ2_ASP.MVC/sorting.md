@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Sorting | Syncfusion
-description: Learn how to configure sorting in ##Platform_Name## Data Grid with single and multi-column sorting, custom comparers, sorting indicators, and sorting behavior options.
+description: Learn how to use Sorting in ##Platform_Name## Data Grid to sort data by one or more columns, customize sorting behavior, and control sort indicators.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##

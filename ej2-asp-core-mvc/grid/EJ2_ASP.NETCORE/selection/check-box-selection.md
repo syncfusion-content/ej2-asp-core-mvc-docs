@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Checkbox Selection | Syncfusion
-description: Learn how to enable checkbox selection in ##Platform_Name## Data Grid with checkbox columns, select-all functionality, selection APIs, and multiple selection support.
+description: Learn how to use Check Box Selection in ##Platform_Name## Data Grid to select multiple rows, enable select-all functionality, and manage selections using APIs.
 platform: ej2-asp-core-mvc
 control: Checkbox Selection
 publishingplatform: ##Platform_Name##

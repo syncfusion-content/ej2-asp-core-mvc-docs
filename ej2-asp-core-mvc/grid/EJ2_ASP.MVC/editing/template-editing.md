@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template Editing in ##Platform_Name## Grid Component
-description: Learn here all about Template Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in ##Platform_Name## Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: ej2-asp-core-mvc
 control: Template Editing
 publishingplatform: ##Platform_Name##

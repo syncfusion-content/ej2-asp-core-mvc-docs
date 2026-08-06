@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Excel Like Filter | Syncfusion
-description: Learn how to use Excel Like Filter in ##Platform_Name## Data Grid with multi-condition filtering, checkbox lists, search, remote data binding, and template customization.
+description: Learn how to use Excel Like Filter in ##Platform_Name## Data Grid with checkbox filters, search, remote data binding, and customizable filter templates.
 platform: ej2-asp-core-mvc
 control: Excel Like Filter
 publishingplatform: ##Platform_Name##
