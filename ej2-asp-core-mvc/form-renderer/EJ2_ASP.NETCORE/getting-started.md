@@ -363,10 +363,3 @@ public class LayoutNode
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The ASP.NET Core Form renderer will render in your default web browser.
 
 ![ASP.NET Core Form Renderer](../images/form-renderer.png)
-
-## See also
-
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-* [Form Validation in ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/form-validator/getting-started)
-* [Form Model definition for ASP.NET Core](https://ej2.syncfusion.com/aspnetcore/documentation/form-layout/getting-started)
