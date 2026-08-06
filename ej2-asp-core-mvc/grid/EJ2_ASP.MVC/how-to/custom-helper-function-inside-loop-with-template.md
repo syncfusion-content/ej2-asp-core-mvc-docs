@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Use custom helper inside the loop with templates Syncfusion ##Platform_Name## Grid Component 
-description: Use custom helper inside the loop with templates in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Column Templates | Syncfusion
+description: Learn how to create custom column templates in ##Platform_Name## Data Grid using helper functions, template loops, and dynamic rendering for customized cell content.
 platform: ej2-asp-core-mvc
 control: Use custom helper inside the loop with templates 
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Use custom helper inside the loop with templates in ASP.NET MVC Grid
+# Custom Column Templates in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid allows you to use custom helpers inside the loop with `Template` property of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 
