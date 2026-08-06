@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column Chooser in ASP.NET Core Data Grid
+# Column Chooser in ASP.NET MVC Data Grid
 
 The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows you to dynamically show or hide columns. This feature can be enabled by defining the [ShowColumnChooser](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnChooser) property as **true**.
 

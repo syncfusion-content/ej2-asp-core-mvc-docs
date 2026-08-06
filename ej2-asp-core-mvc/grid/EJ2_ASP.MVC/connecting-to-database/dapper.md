@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# SQL Server Dapper Integration in ASP.NET Core Data Grid
+# SQL Server Dapper Integration in ASP.NET MVC Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion ASP.NET MVC Grid.
 

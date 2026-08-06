@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# SQLite Data Binding in ASP.NET Core Data Grid
+# SQLite Data Binding in ASP.NET MVC Data Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion ASP.NET MVC  Grid.
 
