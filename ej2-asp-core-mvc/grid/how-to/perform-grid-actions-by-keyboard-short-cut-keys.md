@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform Grid Actions By Keyboard Short Cut Keys in ##Platform_Name## Grid Component
-description: Learn here all about Perform Grid Actions By Keyboard Short Cut Keys in Syncfusion ##Platform_Name## Grid component of syncfusion and more.
+title: ##Platform_Name## Grid Keyboard Shortcuts | Syncfusion
+description: Learn how to perform ##Platform_Name## Data Grid actions using keyboard shortcuts and custom keydown events to streamline navigation and editing.
 platform: ej2-asp-core-mvc
 control: Perform Grid Actions By Keyboard Short Cut Keys
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Perform Grid actions by keyboard shortcut keys
+# Keyboard Shortcuts for Grid Actions in ##Platform_Name## Data Grid
 
 Using keyboard shortcuts, Grid performs navigation and actions.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in Syncfusion ##Platform_Name## DataGrid Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## DataGrid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Overview | Syncfusion
+description: Learn how to use ##Platform_Name## Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, searching, grouping, editing, and templates.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## DataGrid Component
+# Overview of ##Platform_Name## Data Grid
 
 The DataGrid component is used to display and manipulate tabular data with configuration options to control the way the data is presented. It can pull data from data sources such as array of JavaScript objects, `OData web services`, or `DataManager` and binding data fields to columns. It also displays the column header to identify the field with support for grouped records.
 

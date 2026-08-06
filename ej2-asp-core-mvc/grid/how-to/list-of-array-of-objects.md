@@ -1,7 +1,7 @@
 ---
 layout: post
-title: List Of Array Of Objects in ##Platform_Name## Grid Component
-description: Learn here all about List Of Array Of Objects in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Array of Objects Binding | Syncfusion
+description: Learn how to bind arrays of objects and complex fields in ##Platform_Name## Data Grid to display and manage nested data structures effectively.
 platform: ej2-asp-core-mvc
 control: List Of Array Of Objects
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Complex Data Binding with list of Array Of Objects
+# Bind Array of Objects in ##Platform_Name## Data Grid
 
 The following example shows how to set Complex field for datasource having Array Of Objects.
 

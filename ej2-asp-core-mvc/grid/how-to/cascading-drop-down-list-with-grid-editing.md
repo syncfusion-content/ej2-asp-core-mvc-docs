@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading Drop Down List With Grid Editing in ##Platform_Name## Grid Component
-description: Learn here all about Cascading Drop Down List With Grid Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cascading DropDownList Editing | Syncfusion
+description: Learn how to implement cascading DropDownList controls in ##Platform_Name## Data Grid editing using cell edit templates for dependent field selection.
 platform: ej2-asp-core-mvc
 control: Cascading Drop Down List With Grid Editing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cascading DropDownList with Grid editing
+# Cascading DropDownList with Grid Editing in ##Platform_Name## Data Grid
 
 You can achieve the Cascading DropDownList with grid Editing by using the Cell Edit Template feature.
 
