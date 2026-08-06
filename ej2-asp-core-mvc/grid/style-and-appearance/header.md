@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header in ##Platform_Name## Grid Component
-description: Learn here all about Header in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Header Customization | Syncfusion
+description: Learn how to customize header styles in ##Platform_Name## Data Grid with header templates, icons, and interactive header elements.
 platform: ej2-asp-core-mvc
 control: Header
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Header in ##Platform_Name## Grid component
+# Header Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the header elements in the Syncfusion ##Platform_Name## Grid component using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 
