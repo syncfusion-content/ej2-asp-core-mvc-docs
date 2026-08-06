@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Drag And Drop in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Row Drag And Drop in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Drag and Drop | Syncfusion
+description: Learn how to implement row drag and drop in ##Platform_Name## Data Grid using Syncfusion. Reorder rows, configure drop targets, and handle drag events efficiently.
 platform: ej2-asp-core-mvc
 control: Row Drag And Drop
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and drop in ASP.NET Core Grid component
+# Row Drag and Drop in ASP.NET Core Data Grid
 
 The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
 

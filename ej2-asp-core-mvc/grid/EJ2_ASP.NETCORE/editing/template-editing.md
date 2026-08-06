@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template Editing in ##Platform_Name## Grid Component
-description: Learn here all about Template Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in ##Platform_Name## Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: ej2-asp-core-mvc
 control: Template Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template editing in ASP.NET Core Grid component
+# Custom Template Editing in ASP.NET Core Data Grid
 
 The Syncfusion ASP.NET Core Grid component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. This feature allows you to use ASP.NET Core templates to define the structure and content of the cells within the grid.
 
