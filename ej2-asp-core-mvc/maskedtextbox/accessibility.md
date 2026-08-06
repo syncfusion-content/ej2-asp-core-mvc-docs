@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Maskedtextbox Component
+title: Accessibility in ##Platform_Name## Maskedtextbox | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility

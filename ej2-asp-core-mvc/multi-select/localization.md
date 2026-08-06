@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in MultiSelct Control
+# Localization in MultiSelect Control
 
 The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) and [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) properties according to the culture currently assigned to the MultiSelect.
 
@@ -51,5 +51,5 @@ In the following sample, French culture is set to the MultiSelect and no data is
 
 ## See Also
 
-* [Accessibility](./accessibility/)
-* [How to bind the data to the combobox](./data-binding/)
+* [Accessibility](./accessibility)
+* [How to bind the data to the combobox](./data-binding)

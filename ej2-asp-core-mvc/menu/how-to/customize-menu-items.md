@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Menu Items in ##Platform_Name## Menu Component
+title: Customize Menu Items in ##Platform_Name## Menu | Syncfusion
 description: Learn here all about Customize Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Menu Items
