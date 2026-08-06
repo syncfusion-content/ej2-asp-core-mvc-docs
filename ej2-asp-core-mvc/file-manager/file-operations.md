@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File Operations in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about File Operations in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: File Operations in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to perform file operations in the ##Platform_Name## File Manager, including read, create, delete, rename, copy, move, upload, and download.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: File Operations
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# File Operations in File Manager Control
+# File Operations in ##Platform_Name## File Manager
 
 The File Manager control is used to browse, manage, and organize the files and folders in a file system through a web application. All basic file operations like creating a new folder, uploading and downloading of files in the file system, and deleting and renaming of existing files and folders are available in the File Manager control. Additionally, previewing of image files is provided in the File Manager control.
 

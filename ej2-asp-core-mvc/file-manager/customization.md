@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Customization in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to customize the ##Platform_Name## File Manager context menu, toolbar, navigation pane, upload, and tooltip using built-in APIs.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Customizing File Manager functionalities
+# Customization in ##Platform_Name## File Manager
 
 The File Manager control allows customizing its functionalities such as context menu, searching, uploading, and toolbar using APIs. Given below are some of the functionalities that can be customized in the File Manager,
 

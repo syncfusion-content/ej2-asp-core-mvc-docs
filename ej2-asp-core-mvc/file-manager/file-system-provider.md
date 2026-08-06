@@ -1,15 +1,15 @@
 ---
 layout: post
-title: File System Provider in ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about File System Provider in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: File System Provider in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to connect the ##Platform_Name## File Manager to physical, Azure, Amazon S3, Google Drive, Firebase, and other file system providers.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: File System Provider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# File system provider
+# File System Provider in ##Platform_Name## File Manager
 
 The file system provider allows the File Manager control to manage the files and folders in a physical or cloud-based file system. It provides the methods for performing various file actions like creating a new folder, copying and moving of files or folders, deleting, uploading, and downloading the files or folders in the file system.
 
