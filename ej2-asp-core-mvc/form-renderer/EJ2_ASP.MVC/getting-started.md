@@ -410,10 +410,3 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 The output looks like below
 
 ![ASP.NET MVC Form Renderer](../images/form-renderer.png)
-
-
-## See also
-
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC using HTML Helper](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)
-* [Form Layout Getting Started for ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/form-layout/getting-started)
-* [Form Validation in ASP.NET MVC](https://ej2.syncfusion.com/aspnetmvc/documentation/form-validator/getting-started)
