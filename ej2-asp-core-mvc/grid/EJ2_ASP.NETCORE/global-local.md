@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Global Local in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Globalization and Localization | Syncfusion
+description: Learn how to use globalization in ##Platform_Name## Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Global local in ASP.NET Core Grid component
+# Globalization in ASP.NET Core Data Grid
 
 The Syncfusion ASP.NET Core Grid component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 

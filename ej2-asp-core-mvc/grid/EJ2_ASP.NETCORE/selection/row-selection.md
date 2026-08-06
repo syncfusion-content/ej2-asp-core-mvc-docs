@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Selection in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Row Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Row Selection | Syncfusion
+description: Learn how to select single or multiple rows in ##Platform_Name## Data Grid with selection modes, keyboard interactions, selection APIs, and row selection events.
 platform: ej2-asp-core-mvc
 control: Row Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row selection in ASP.NET Core Grid component
+# Row Selection in ASP.NET Core Data Grid
 
 Row selection in the Grid component allows you to interactively select specific rows or ranges of rows within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific row within the Grid.
 

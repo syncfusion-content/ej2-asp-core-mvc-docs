@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Grid Component
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Sorting Customization | Syncfusion
+description: Learn how to customize sorting icons and multi-sort indicators in ##Platform_Name## Data Grid using CSS and built-in Syncfusion icons for different themes.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Sorting in ##Platform_Name## Grid component
+# Sorting Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ##Platform_Name## Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
 

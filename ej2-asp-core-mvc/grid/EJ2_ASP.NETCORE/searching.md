@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Searching in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Searching in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Searching | Syncfusion
+description: Learn how to search data in ##Platform_Name## Data Grid with built-in search functionality, search configuration options, case sensitivity, and result highlighting.
 platform: ej2-asp-core-mvc
 control: Searching
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Searching in ASP.NET Core Grid component
+# Searching in ASP.NET Core Data Grid
 
 The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) includes a powerful built-in searching feature that allows users to search for specific data within the grid. This feature enables efficient filtering of grid records based on user-defined search criteria, making it easier to locate and display relevant information. Whether you have a large dataset or simply need to find specific records quickly, the search feature provides a convenient solution.
 
