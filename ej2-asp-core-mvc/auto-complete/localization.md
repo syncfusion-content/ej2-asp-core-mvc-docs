@@ -48,5 +48,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [Accessibility](./accessibility/)
-* [How to bind the data to the autocomplete](./data-binding/)
+* [Accessibility](./accessibility)
+* [How to bind the data to the autocomplete](./data-binding)

@@ -84,5 +84,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
 * [How to add a header and content](https://ej2.syncfusion.com/aspnetmvc/documentation/card/header-content)

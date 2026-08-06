@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Breadcrumb Control
+title: Data Binding in ##Platform_Name## Breadcrumb Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -30,7 +30,8 @@ The Breadcrumb contains `e-breadcrumb-items` and `e-breadcrumb-item` tags to ren
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -55,7 +56,8 @@ The Breadcrumb items can be generated from the current URL of the page, if the `
 {% include code-snippet/breadcrumb/url/current-url/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Current-url.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
