@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Pivot Table Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET MVC Pivot Table Component | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table visualizes relational data with built-in aggregation, filtering, sorting, and Field List, plus Excel and PDF export.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# About Syncfusion ASP.NET MVC Pivot Table Component.
 
 The pivot table is a multi-dimensional data visualization component built on top of the relational data sources. The pivot report can be managed dynamically at runtime along with other capabilities like aggregation, filtering and sorting (field and value based).
 

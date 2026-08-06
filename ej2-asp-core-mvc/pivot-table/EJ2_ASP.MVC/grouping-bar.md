@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping Bar in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Grouping Bar in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Grouping Bar in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table Grouping Bar lets users drag fields between axes, apply sort and filter, and rearrange the pivot report at runtime.
 platform: ej2-asp-core-mvc
 control: Grouping Bar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping bar in ##Platform_Name## Pivot Table component
+# Grouping Bar in ASP.NET MVC Pivot Table
 
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) property in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) tag to **true**.
 

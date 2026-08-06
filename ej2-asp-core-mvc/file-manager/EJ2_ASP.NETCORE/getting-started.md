@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core File Manager Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core File Manager control of Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
+title: Getting Started with ASP.NET Core File Manager | Syncfusion
+description: Learn how to get started with the ASP.NET Core File Manager and explore setup, configuration, and core feature examples.
 control: File Manager
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core File Manager Control
+# Getting Started with ASP.NET Core File Manager
 
 This section briefly explains how to include the [ASP.NET Core File Manager](https://www.syncfusion.com/aspnet-core-ui-controls/file-manager) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 

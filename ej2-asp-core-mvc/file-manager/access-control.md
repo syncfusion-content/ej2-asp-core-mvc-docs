@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Access Control in Syncfusion ##Platform_Name## File Manager | Syncfusion
-description: Learn here all about Access Control in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Access Control in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to configure access control in the ##Platform_Name## File Manager with role-based permissions and restricted file operations.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Access Control
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Access Control in File Manager control
+# Access Control in ##Platform_Name## File Manager
 
 The File Manager allows you to define access permissions for folders and files using a set of access rules for user(s).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upload in Syncfusion ##Platform_Name## File Manager Control | Syncfusion
-description: Learn here all about Upload in ##Platform_Name## File Manager control of Syncfusion Essential JS 2 and more.
+title: Upload in ##Platform_Name## File Manager | Syncfusion
+description: Learn how to upload files in the ##Platform_Name## File Manager with chunk uploads, directory uploads, and drag-and-drop support.
+control: File Manager
 platform: ej2-asp-core-mvc
-control: Upload
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upload in File Manager control
+# Upload in ##Platform_Name## File Manager
 
 The File Manager control provides a `uploadSettings` property with various options to customize how files are uploaded, including controlling file size, restricting file types, checking for excessively large and empty files, and enabling chunk uploads.
 

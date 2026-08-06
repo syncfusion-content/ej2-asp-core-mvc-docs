@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Refresh The Field List in ##Platform_Name## Pivot Table Component
-description: Learn here all about Refresh The Field List in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Refresh Field List in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how to refresh the ##Platform_Name## Pivot Table and its field list with a new data source dynamically at runtime by reassigning the data source and rebinding.
 platform: ej2-asp-core-mvc
 control: Refresh The Field List
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Refresh the field list while change the data source
+# How to Refresh Field List on Data Change in ##Platform_Name## Pivot Table
 
 You can refresh pivot table and field list with new data source dynamically.
 
