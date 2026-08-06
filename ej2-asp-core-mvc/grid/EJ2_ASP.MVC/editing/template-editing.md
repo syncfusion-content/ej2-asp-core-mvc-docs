@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ##Platform_Name## Grid Custom Template Editing | Syncfusion
-description: Learn how to use inline and dialog template editing in ##Platform_Name## Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
+description: Learn how to use Inline and Dialog Template Editing in ##Platform_Name## Data Grid to create custom edit forms and manage CRUD operations efficiently.
 platform: ej2-asp-core-mvc
 control: Template Editing
 publishingplatform: ##Platform_Name##
