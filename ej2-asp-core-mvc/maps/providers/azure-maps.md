@@ -16,7 +16,7 @@ Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
 
 N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
@@ -31,7 +31,7 @@ N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/lega
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
 
 N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 

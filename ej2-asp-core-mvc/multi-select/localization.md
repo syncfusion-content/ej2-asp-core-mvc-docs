@@ -11,7 +11,7 @@ documentation: ug
 
 # Localization in MultiSelct Control
 
-The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ActionFailureTemplate.html) properties according to the culture currently assigned to the MultiSelect.
+The Localization library allows you to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) and [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) properties according to the culture currently assigned to the MultiSelect.
 
 | Locale key | en-US (default)
 |------|------
@@ -22,7 +22,7 @@ The Localization library allows you to localize static text content of the [noRe
 
 To load translation object to your application, use load function of the **L10n** class.
 
-In the following sample, French culture is set to the MultiSelect and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~NoRecordsTemplate.html) property displays its text in French culture initially, and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~ActionFailureTemplate.html) property displays its text appropriately.
+In the following sample, French culture is set to the MultiSelect and no data is loaded. Hence, the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_NoRecordsTemplate) property displays its text in French culture initially, and if the sample is run offline, the [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_ActionFailureTemplate) property displays its text appropriately.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

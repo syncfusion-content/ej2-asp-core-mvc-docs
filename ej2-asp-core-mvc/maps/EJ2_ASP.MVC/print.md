@@ -132,7 +132,7 @@ To use the PDF export functionality, we should set the [`AllowPdfExport`](https:
 
 ### Export the tile maps
 
-The rendered map with providers such as OSM, Bing and Google static maps can be exported using the [`export`](https://ej2.syncfusion.com/documentation/api/maps#export) method. It supports the following export formats.
+The rendered map with providers such as OSM, Bing and Google static maps can be exported using the [`export`](https://ej2.syncfusion.com/documentation/api/maps/#export) method. It supports the following export formats.
 
 * JPEG
 * PNG

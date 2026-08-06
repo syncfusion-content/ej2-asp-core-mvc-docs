@@ -21,7 +21,7 @@ The MultiSelect control contains a list of predefined values from which a multip
 
 * **[Templates](./templates/)** - Allows customizing the list items, selected value, header, footer, category group header, and no records content.
 
-* **[Sorting](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~SortOrder.html)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+* **[Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_SortOrder)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * **[Filtering](./filtering/)** - Allows filtering of list items based on a character typed into the search box.
 
