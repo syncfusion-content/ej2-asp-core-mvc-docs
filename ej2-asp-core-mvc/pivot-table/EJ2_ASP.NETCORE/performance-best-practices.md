@@ -25,7 +25,7 @@ Virtual scrolling improves the performance of the Pivot Table when working with 
 
 Paging helps you display large datasets efficiently by breaking them into smaller, manageable pages instead of loading all data at once. When your browser's maximum pixel height prevents you from using the Pivot Table with virtual scrolling, the paging option provides an excellent alternative. This approach significantly improves loading performance and ensures smooth navigation through your data.
 
-To enable paging in your Pivot Table, set the [`enablePaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** and configure the [`pageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) to control the number of records displayed per page. For implementation details, refer to the [paging documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pagin).
+To enable paging in your Pivot Table, set the [`enablePaging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnablePaging) property to **true** and configure the [`pageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) to control the number of records displayed per page. For implementation details, refer to the [paging documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/paging).
 
 ### Server-side engine
 

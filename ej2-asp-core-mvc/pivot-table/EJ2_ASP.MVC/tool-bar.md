@@ -70,7 +70,7 @@ By default, the dropdown menu in the toolbar displays all available chart types.
 
 For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`ChartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
-To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#chart-types).
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart#chart-types).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -101,7 +101,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 ## Switch the chart to multiple axes
 
-In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart/#multiple-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/pivot-chart#multiple-axis).
 
 ![Switching to multiple axes](images/chart-option.png)
 
@@ -914,7 +914,7 @@ Below points need to be considered when saving the report to SQL Server database
 * **Hyperlinks**: Option to link external facts via pivot table cells won't be saved and loaded from the database.
 * The pivot table should always load reports from the SQL database based on the data source that is currently bound to it.
 
-> In [this](https://github.com/SyncfusionExamples/Save-and-load-report-from-SQL-database-to-pivot-table) GitHub repository, you can find our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to save and load reports from SQL Server database.
+> In [this](https://github.com/SyncfusionExamples/web-Save-and-load-report-from-SQL-database-to-pivot-table) GitHub repository, you can find our ASP.NET MVC Pivot Table sample and ASP.NET Core Web Application to save and load reports from SQL Server database.
 
 ## Events
 

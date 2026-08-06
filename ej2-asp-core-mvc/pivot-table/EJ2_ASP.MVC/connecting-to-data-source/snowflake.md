@@ -181,4 +181,4 @@ Here’s the updated sample code the report configuration and field list support
 ![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-Snowflake-database-to-pivot-table) repository.

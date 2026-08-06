@@ -224,5 +224,5 @@ The following sample demonstrates how to prevent number formatting changes for t
 ## See Also
 
 * [Customize number, date, and time values](./how-to/customize-number-date-and-time-values/)
-* [NumberFormatOptions](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers)
+* [NumberFormatOptions](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-numbers)
 * [Toolbar](./tool-bar)
