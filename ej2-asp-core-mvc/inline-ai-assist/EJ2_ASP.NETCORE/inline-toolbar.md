@@ -10,7 +10,7 @@ documentation: ug
 
 # Toolbar Configuration in ##Platform_Name## Inline AI Assist
 
-You can render the inline toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistInlineToolbarSettings_Items) property in the `e-inlineaiassist-inlinetoolbarsettings` tag helper.
+You can render the inline toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistInlineToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistInlineToolbarSettings_Items) property in the `<e-inlineaiassist-inlinetoolbarsettings>` tag helper.
 
 ## Configure the toolbar and positioning
 

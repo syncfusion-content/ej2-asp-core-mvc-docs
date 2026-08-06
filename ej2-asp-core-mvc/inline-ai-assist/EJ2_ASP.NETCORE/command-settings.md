@@ -10,7 +10,7 @@ documentation: ug
 
 # Commands Configuration in ##Platform_Name## Inline AI Assist
 
-You can render and use the command action popup by using the [commands](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistCommandSettings_Commands) property in the `e-inlineaiassist-commandsettings` tag helper. This property helps to supply commands, control popup dimensions, and customize behavior.
+You can render and use the command action popup by using the [commands](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistCommandSettings_Commands) property in the `<e-inlineaiassist-commandsettings>` tag helper. This property helps to supply commands, control popup dimensions, and customize behavior.
 
 ## Configure command items
 

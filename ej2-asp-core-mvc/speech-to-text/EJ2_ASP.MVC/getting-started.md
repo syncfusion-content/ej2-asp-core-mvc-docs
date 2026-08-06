@@ -110,7 +110,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Speech
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeechToText control will be rendered in the default web browser.
 
-![ASP.NET MVC SpeechToText Control](images/speech-to-text-control.png)
+![ASP.NET MVC SpeechToText Control](./../images/speech-to-text-control.webp)
 
 ## Adding button content
 
@@ -122,5 +122,5 @@ You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeechToText Start Content](images/speechtotext-buttonsetting.png)
-![ASP.NET MVC SpeechToText Stop Content](images/speechtotext-stop.png)
+![ASP.NET MVC SpeechToText Start Content](./../images/speechtotext-buttonsetting.webp)
+![ASP.NET MVC SpeechToText Stop Content](./../images/speechtotext-stop.webp)

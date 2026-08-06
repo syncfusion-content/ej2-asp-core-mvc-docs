@@ -116,7 +116,7 @@ You can use the [RelateTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![RelateTo](images/relateTo.png)
+![RelateTo](../images/relateTo.webp)
 
 ## Response display modes
 
@@ -131,4 +131,4 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseMode](images/response-mode.png)
+![ResponseMode](../images/response-mode.webp)
