@@ -101,7 +101,7 @@ The `DefaultModel` page model builds the schema in `OnGet` and exposes it throug
 {% endhighlight %}
 {% highlight C# tabtitle="Default.cshtml.cs" %}
 
-public class DefaultModel : PageModel
+    public class DefaultModel : PageModel
     {
         public Schema FormSchema { get; set; }
 
@@ -110,250 +110,57 @@ public class DefaultModel : PageModel
             FormSchema = new Schema
             {
                 Version = "0.1.0",
-                Properties = new SchemaProperties
+                Properties = new Dictionary<string, BaseProperty>
                 {
-                    EmailAddress = new TextboxProperty
-                    {
-                        Id = "textbox_1786013518996_836",
-                        Name = "emailAddress",
-                        Type = "string",
-                        Label = "Email Address",
-                        TextboxType = "email",
-                        Required = true,
-                        Widget = "textbox"
-                    },
-                    Password = new PasswordProperty
-                    {
-                        Id = "textbox_1786013518996_700",
-                        Name = "password",
-                        Type = "string",
-                        Label = "Password",
-                        TextboxType = "password",
-                        Required = true,
-                        MinLength = 6,
-                        Widget = "textbox"
-                    },
-                    RememberMe = new CheckboxProperty
-                    {
-                        Id = "checkbox_1786013518996_85",
-                        Name = "rememberMe",
-                        Type = "boolean",
-                        Label = "Remember Me",
-                        Widget = "checkbox"
-                    },
-                    Submit = new SubmitButtonProperty
-                    {
-                        Id = "submit_button_initial",
-                        Name = "defaultFormsubmit",
-                        Type = "button",
-                        Label = "Submit",
-                        ButtonType = "submit",
-                        Widget = "button",
-                        Style = "primary",
-                        Disabled = false
-                    }
+                    ["emailAddress"] = new TextboxProperty { Id = "t1", Name = "emailAddress", Type = "string", Label = "Email Address", TextboxType = "email", Required = true, Widget = "textbox" },
+                    ["password"] = new TextboxProperty { Id = "t2", Name = "password", Type = "string", Label = "Password", TextboxType = "password", Required = true, MinLength = 6, Widget = "textbox" },
+                    ["rememberMe"] = new CheckboxProperty { Id = "c1", Name = "rememberMe", Type = "boolean", Label = "Remember Me", Widget = "checkbox" },
+                    ["submit"] = new SubmitButtonProperty { Id = "s1", Name = "submit", Type = "button", Label = "Submit", ButtonType = "submit", Widget = "button", Style = "primary", Disabled = false }
                 },
                 Layout = new List<LayoutNode>
                 {
-                    new LayoutNode { Type = "field", PropertyId = "emailAddress" },
-                    new LayoutNode { Type = "field", PropertyId = "password" },
-                    new LayoutNode { Type = "field", PropertyId = "rememberMe" },
-                    new LayoutNode { Type = "field", PropertyId = "submit" }
+                    new LayoutNode { Type="field", PropertyId="emailAddress" },
+                    new LayoutNode { Type="field", PropertyId="password" },
+                    new LayoutNode { Type="field", PropertyId="rememberMe" },
+                    new LayoutNode { Type="field", PropertyId="submit" }
                 },
-                Settings = new SchemaSettings
-                {
-                    Name = "Untitled Form"
-                }
+                Settings = new SchemaSettings { Name = "Login Form" }
             };
         }
     }
+    public abstract class BaseProperty
+    {
+        [JsonProperty("id")] public string Id { get; set; }
+        [JsonProperty("name")] public string Name { get; set; }
+        [JsonProperty("type")] public string Type { get; set; }
+        [JsonProperty("label")] public string Label { get; set; }
+        [JsonProperty("widget")] public string Widget { get; set; }
+        [JsonProperty("size")] public string Size { get; set; }
+    }
+    public class TextboxProperty : BaseProperty
+    {
+        [JsonProperty("textboxType")] public string TextboxType { get; set; }
+        [JsonProperty("required")] public bool Required { get; set; }
+        [JsonProperty("minLength")] public int? MinLength { get; set; }
+    }
+    public class CheckboxProperty : BaseProperty { }
+    public class SubmitButtonProperty : BaseProperty
+    {
+        [JsonProperty("buttonType")] public string ButtonType { get; set; }
+        [JsonProperty("style")] public string Style { get; set; }
+        [JsonProperty("disabled")] public bool Disabled { get; set; }
+    }
+    public class Schema
+    {
+        [JsonProperty("version")] public string Version { get; set; }
+        [JsonProperty("properties")] public Dictionary<string, BaseProperty> Properties { get; set; }
+        [JsonProperty("layout")] public List<LayoutNode> Layout { get; set; }
+        [JsonProperty("settings")] public SchemaSettings Settings { get; set; }
+    }
+    public class SchemaSettings { [JsonProperty("name")] public string Name { get; set; } }
+    public class LayoutNode { [JsonProperty("type")] public string Type { get; set; } [JsonProperty("propertyId")] public string PropertyId { get; set; } }
 
-
-public class Schema
-{
-    [JsonProperty("version")]
-    public string Version { get; set; }
-
-    [JsonProperty("properties")]
-    public SchemaProperties Properties { get; set; }
-
-    [JsonProperty("layout")]
-    public List<LayoutNode> Layout { get; set; }
-
-    [JsonProperty("settings")]
-    public SchemaSettings Settings { get; set; }
-}
-
-public class SchemaProperties
-{
-    [JsonProperty("emailAddress")]
-    public TextboxProperty EmailAddress { get; set; }
-
-    [JsonProperty("password")]
-    public PasswordProperty Password { get; set; }
-
-    [JsonProperty("rememberMe")]
-    public CheckboxProperty RememberMe { get; set; }
-
-    [JsonProperty("submit")]
-    public SubmitButtonProperty Submit { get; set; }
-}
-
-public class SchemaSettings
-{
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("width")]
-    public string Width { get; set; }
-}
-
-public class TextboxProperty
-{
-    [JsonProperty("id")]
-    public string Id { get; set; }
-
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("type")]
-    public string Type { get; set; }
-
-    [JsonProperty("label")]
-    public string Label { get; set; }
-
-    [JsonProperty("textboxType")]
-    public string TextboxType { get; set; }
-
-    [JsonProperty("required")]
-    public bool Required { get; set; }
-
-    [JsonProperty("widget")]
-    public string Widget { get; set; }
-
-    [JsonProperty("labelPosition")]
-    public string LabelPosition { get; set; }
-
-    [JsonProperty("autocomplete")]
-    public bool Autocomplete { get; set; }
-
-    [JsonProperty("size")]
-    public string Size { get; set; }
-}
-
-public class PasswordProperty
-{
-    [JsonProperty("id")]
-    public string Id { get; set; }
-
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("type")]
-    public string Type { get; set; }
-
-    [JsonProperty("label")]
-    public string Label { get; set; }
-
-    [JsonProperty("textboxType")]
-    public string TextboxType { get; set; }
-
-    [JsonProperty("required")]
-    public bool Required { get; set; }
-
-    [JsonProperty("minLength")]
-    public int MinLength { get; set; }
-
-    [JsonProperty("widget")]
-    public string Widget { get; set; }
-
-    [JsonProperty("labelPosition")]
-    public string LabelPosition { get; set; }
-
-    [JsonProperty("size")]
-    public string Size { get; set; }
-}
-
-public class CheckboxProperty
-{
-    [JsonProperty("id")]
-    public string Id { get; set; }
-
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("type")]
-    public string Type { get; set; }
-
-    [JsonProperty("label")]
-    public string Label { get; set; }
-
-    [JsonProperty("widget")]
-    public string Widget { get; set; }
-
-    [JsonProperty("size")]
-    public string Size { get; set; }
-}
-
-public class SubmitButtonProperty
-{
-    [JsonProperty("id")]
-    public string Id { get; set; }
-
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("type")]
-    public string Type { get; set; }
-
-    [JsonProperty("label")]
-    public string Label { get; set; }
-
-    [JsonProperty("buttonType")]
-    public string ButtonType { get; set; }
-
-    [JsonProperty("widget")]
-    public string Widget { get; set; }
-
-    [JsonProperty("size")]
-    public string Size { get; set; }
-
-    [JsonProperty("style")]
-    public string Style { get; set; }
-
-    [JsonProperty("disabled")]
-    public bool Disabled { get; set; }
-}
-
-public class LayoutNode
-{
-    [JsonProperty("type")]
-    public string Type { get; set; }
-
-    [JsonProperty("propertyId")]
-    public string PropertyId { get; set; }
-
-    [JsonProperty("id")]
-    public string Id { get; set; }
-
-    [JsonProperty("name")]
-    public string Name { get; set; }
-
-    [JsonProperty("label")]
-    public string Label { get; set; }
-
-    [JsonProperty("hideBorders")]
-    public bool HideBorders { get; set; }
-
-    [JsonProperty("rows")]
-    public int Rows { get; set; }
-
-    [JsonProperty("cols")]
-    public int Cols { get; set; }
-
-    [JsonProperty("children")]
-    public List<LayoutNode> Children { get; set; }
-}
+ 
 
 {% endhighlight %}
 {% endtabs %}
