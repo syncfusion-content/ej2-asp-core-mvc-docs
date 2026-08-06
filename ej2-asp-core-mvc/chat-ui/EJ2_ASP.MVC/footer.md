@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Footer in ##Platform_Name## Chat UI | Syncfusion
+title: Footer in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Footer in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chat UI

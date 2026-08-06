@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Chat UI | Syncfusion
+title: Templates in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Templates in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chat UI
