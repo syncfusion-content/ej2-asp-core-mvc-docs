@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind SQLite Server Data in Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from SQLite Server, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid SQLite Data Binding | Syncfusion
+description: Learn how to connect ##Platform_Name## Data Grid to SQLite using EF Core, perform CRUD operations, and enable filtering, sorting, and advanced data management.
 control: grid
 platform: ej2-asp-core-mvc
 keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQLite Server data to Syncfusion ASP.NET MVC Grid
+# SQLite Data Binding in ASP.NET Core Data Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion ASP.NET MVC  Grid.
 

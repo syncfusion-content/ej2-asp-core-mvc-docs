@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Local Data in ##Platform_Name## Grid Component
-description: Learn here all about Local Data in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Local Data Binding | Syncfusion
+description: Learn how to bind local data sources and in-memory datasets in ##Platform_Name## Data Grid, enable dynamic updates, and efficiently manage displayed data.
 platform: ej2-asp-core-mvc
 control: Local Data
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Local data in Syncfusion ASP.NET MVC Grid
+# Local Data Binding in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid offers a straightforward way to bind local data, such as arrays or JSON objects, to the Grid. This feature allows you to display and manipulate data within the Grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 
