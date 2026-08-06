@@ -56,7 +56,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete. If you want to use mu
 | **Animation** | **Property:** *animate-type* <br/> `<ej-autocomplete id="autocomplete" animate-type=AnimateType.none></ej-autocomplete>` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *auto-focus*<br/> `<ej-autocomplete id="autocomplete" auto-focus="true"></ej-autocomplete>` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delay-suggestion-timeout*<br/> `<ej-autocomplete id="autocomplete" delay-suggestion-timeout=500></ej-autocomplete>` | **Not applicable** |
-| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`  |<https://ej2.syncfusion.com/aspnetcore/AutoComplete/Template#/material> |
+| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `<ej-autocomplete id="autocomplete" empty-result-text="no records"></ej-autocomplete>`  |<https://ej2.syncfusion.com/aspnetcore/autocomplete/template#/fluent2> |
 | **Enable/disable the duplicate option** | **Property:** *enable-distinct*<br/> `<ej-autocomplete id="autocomplete" enable-distinct="true"></ej-autocomplete>` |**Not applicable**  |
 | **Popup height** | **Property:** *popup-height*<br/> `<ej-autocomplete id="autocomplete" popup-height="300px"></ej-autocomplete>` |**Property:** *popupHeight* <br/> `<ejs-autocomplete id="autocomplete" popupHeight="300px"></ejs-autocomplete>` |
 | **Popup Width** | **Property:** *popup-width*<br/> `<ej-autocomplete id="autocomplete" popup-width="300px"></ej-autocomplete>` |**Property:** *popupWidth* <br/> `<ej-autocomplete id="autocomplete" popupWidth="300px"></ej-autocomplete>`|

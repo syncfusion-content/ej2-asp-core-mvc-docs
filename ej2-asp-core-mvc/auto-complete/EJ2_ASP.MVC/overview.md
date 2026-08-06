@@ -19,7 +19,7 @@ The AutoComplete control provides the matched suggestion list when type into the
 
 * **[Grouping](./grouping/)** - Supports grouping of logically related items under a single or specific category.
 
-* **[Sorting](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.AutoComplete~SortOrder.html)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+* **[Sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_SortOrder)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * **[Highlight search](./how-to/custom-search/)** - Supports highlighting the typed text in the suggestion list.
 

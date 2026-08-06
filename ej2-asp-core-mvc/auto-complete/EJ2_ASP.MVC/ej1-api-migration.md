@@ -56,7 +56,7 @@ N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use m
 | **Animation** | **Property:** *animate-type* <br/> `@Html.EJ().Autocomplete("selectCar").AnimateType("None")` | **Not Applicable** |
 | **Focusing the list item** | **Property:** *AutoFocus*<br/> `@Html.EJ().Autocomplete("selectCar").AutoFocus("true")` |**Not applicable** |
 | **Delaying the popup open time** | **Property:** *delay-suggestion-timeout*<br/> `@Html.EJ().Autocomplete("selectCar").DelaySuggestionTimeout(500)` | **Not applicable** |
-| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`  |<https://ej2.syncfusion.com/aspnetmvc/AutoComplete/Template#/material> |
+| **Popup text when there is no popup items** | **Property:** *empty-result-text*<br/> `@Html.EJ().Autocomplete("selectCar").EmptyResultText("no records")`  |<https://ej2.syncfusion.com/aspnetmvc/autocomplete/template#/fluent2> |
 | **Enable/disable the duplicate option** | **Property:** *enable-distinct*<br/> `@Html.EJ().Autocomplete("selectCar").EnableDistinct(true)`|**Not applicable**  |
 | **Popup height** | **Property:** *PopupHeight*<br/> `@Html.EJ().Autocomplete("selectCar").PopupHeight("300px")` |**Property:** *PopupHeight* <br/> `@Html.EJ().Autocomplete("selectCar").PopupHeight("300px").Render()` |
 | **Popup Width** | **Property:** *PopupWidth*<br/> `@Html.EJ().Autocomplete("selectCar").PopupWidth("300px")` |**Property:** *PopupWidth* <br/> `@Html.EJ().Autocomplete("selectCar").PopupWidth("300px").Render()`|

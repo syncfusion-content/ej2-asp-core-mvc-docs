@@ -61,7 +61,7 @@ The Breadcrumb items can be generated from the current URL of the page, if the `
 
 ![ASP.NET Core Breadcrumb Item based on Current URL](images/breadcrumb-current-url.PNG)
 
-N> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetcore/Breadcrumb/BindToLocation#/bootstrap5) sample.
+N> This output screenshot shows the [Bind to Location](https://ej2.syncfusion.com/aspnetcore/breadcrumb/bindtolocation#/fluent2) sample.
 <br/> This sample is hosted in different location, so the breadcrumb is rendered with different location instead of the actual location.
 
 ### Static URL

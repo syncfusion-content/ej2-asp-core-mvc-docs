@@ -107,4 +107,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC AppBar Control](images/getting_started.png)
 
-N> You can refer to our [ASP.NET MVC AppBar](https://www.syncfusion.com/aspnet-mvc-ui-controls/appbar) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AppBar Example](https://ej2.syncfusion.com/aspnetmvc/AppBar/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the AppBar in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC AppBar](https://www.syncfusion.com/aspnet-mvc-ui-controls/appbar) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC AppBar Example](https://ej2.syncfusion.com/aspnetmvc/appbar/defaultfunctionalities#/fluent2) that shows you how to render and configure the AppBar in ASP.NET MVC.
