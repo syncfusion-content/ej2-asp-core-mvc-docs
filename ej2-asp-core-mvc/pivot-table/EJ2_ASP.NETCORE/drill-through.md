@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drill Through in ASP.NET Core Syncfusion Pivot Table Component
-description: Learn here all about Drill Through in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Drill Through in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table opens a raw-data grid in a new window on double-click via the allowDrillThrough property and DrillThrough module.
 platform: ej2-asp-core-mvc
 control: Drill Through
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD012 -->
 
-# Drill through in ASP.NET Core Pivot Table component
+# Drill Through in ASP.NET Core Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDrillThrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 

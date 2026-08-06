@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Bullet Chart Component
+title: Customization in ##Platform_Name## Bullet Chart Component | Syncfusion
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ASP.NET MVC Bullet Chart Control
 
 ## Orientation
 
@@ -39,7 +39,7 @@ The Bullet Chart can be rendered in different orientations such as **Horizontal*
 {% endif %}
 
 
-![Bullet Chart with Orientation](images/blazor-bullet-chart-orientation.png)
+![Bullet Chart with Orientation](images/bullet-chart-orientation.png)
 
 ## Right-to-left (RTL)
 
@@ -70,7 +70,7 @@ The Bullet Chart supports the right-to-left rendering that can be enabled by set
 
 
 
-![Right to Left Flow Direction in Bullet Chart](images/blazor-bullet-chart-right-to-left-direction.png)
+![Right to Left Flow Direction in Bullet Chart](images/bullet-chart-right-to-left-direction.png)
 
 ## Animation
 
@@ -129,4 +129,4 @@ The Bullet Chart supports different type of themes via the [`Theme`](https://hel
 {% endif %}
 
 
-![Applying Theme to Bullet Chart](images/blazor-bullet-chart-theme.png)
+![Applying Theme to Bullet Chart](images/bullet-chart-theme.png)
