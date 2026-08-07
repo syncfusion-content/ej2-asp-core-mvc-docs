@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radar Chart in ##Platform_Name## Charts
+title: Radar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Radar Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Radar Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Radar Chart in ##Platform_Name## Charts
+# Radar Chart in ##Platform_Name## Chart
 
 To get started with the ASP.NET Core Radar charts, you can check on this video:
 

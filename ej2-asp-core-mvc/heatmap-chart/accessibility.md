@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## HeatMap chart component
+title: Accessibility in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## HeatMap chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## HeatMap chart component
+# Accessibility in ##Platform_Name## HeatMap Chart
 
 The HeatMap component follows commonly used accessibility guidelines and standards, such as [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles).
 

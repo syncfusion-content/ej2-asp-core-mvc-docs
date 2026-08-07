@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core HeatMap Chart Control | Syncfusion
+title: Getting Started with ASP.NET Core HeatMap Chart | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core HeatMap Chart control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: HeatMap Chart
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core HeatMap Chart Control
+# Getting Started with ASP.NET Core HeatMap Chart
 
 This section briefly explains how to include the [ASP.NET Core HeatMap Chart](https://www.syncfusion.com/aspnet-core-ui-controls/heatmap-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

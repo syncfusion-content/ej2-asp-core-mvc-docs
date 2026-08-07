@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Step Line Chart in ##Platform_Name## Charts
+title: Step Line Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Step Line Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Step Line Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Step Line Chart in ##Platform_Name## Charts
+# Step Line Chart in ##Platform_Name## Chart
 
 ## Step Line
 

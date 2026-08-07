@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Behind in ##Platform_Name## Circular Gauge Component
+title: Code-behind gauge in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How To
+# How to render data from code behind in ##Platform_Name## Circular Gauge
 
 ## Get data from database for circular gauge and render gauge from code behind
 
@@ -83,4 +83,4 @@ To get the data from data base and render the gauge from code behind, follow the
 
 **Screenshot**
 
-![Screenshot for your reference](../images/database.png)
+![Circular gauge showing available stock, free stock, and maximum stock](../images/database.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range in ##Platform_Name## Range Navigator Component
+title: Selecting Range in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Range in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selecting Range
+# Selecting Range in ##Platform_Name## Range Navigator
 
 The Range Selector's left and right thumbs are used to indicate the selected range in the large collection of data. A range can be selected in the following ways:
 

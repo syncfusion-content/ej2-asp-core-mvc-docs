@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Progress Bar Component
+title: Annotation in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation and Label
+# Annotation in ASP.NET MVC Progress Bar
 
 ## Annotation
 
@@ -48,8 +48,7 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,7 +56,6 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

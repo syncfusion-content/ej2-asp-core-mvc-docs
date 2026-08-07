@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Range Selector Control | Syncfusion
+title: Getting Started with ##Platform_Name## Range Navigator | Syncfusion
 description: Check out and learn about getting started with ASP.NET Core Range Selector control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
-control: Range Selector
+control: Range Navigator
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Range Selector Control
+# Getting Started with ASP.NET Core Range Navigator
 
 This section briefly explains how to include the [ASP.NET Core Range Selector](https://www.syncfusion.com/aspnet-core-ui-controls/range-selector) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

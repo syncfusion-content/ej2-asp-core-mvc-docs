@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core 3D Charts Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core 3D Charts control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## 3D Chart | Syncfusion
+description: Check out and learn about getting started with A##Platform_Name## 3D Chart control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: 3D Charts
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core 3D Charts Control
+# Getting Started with ASP.NET Core 3D Chart
 
 This section briefly explains how to include the [ASP.NET Core 3D Charts](https://www.syncfusion.com/aspnet-core-ui-controls/3d-chart) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in Syncfusion ##Platform_Name## Maps Component
+title: How to add annotation in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotations in ##Platform_Name## Maps Component
+# How to add annotation in ##Platform_Name## Maps
 
 Annotations are used to mark the specific area of interest in the Maps with texts, shapes, or images. Any number of annotations can be added to the Maps component.
 

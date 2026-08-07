@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
+title: Azure Maps in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Azure Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
 platform: ej2-asp-core-mvc
 control: Azure Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Azure Maps in ##Platform_Name## Maps Component
+# Azure Maps in ##Platform_Name## Maps
 
 Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area.
 

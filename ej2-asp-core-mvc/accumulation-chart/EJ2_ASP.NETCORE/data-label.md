@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label in Syncfusion ##Platform_Name## Accumulation Chart
+title: Data Label in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Data Label in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Label in ##Platform_Name## Accumulation Chart Component
+# Data Label in ASP.NET Core Accumulation Chart
 
 Data label can be added to a chart series by enabling the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationDataLabelSettings.html#Syncfusion_EJ2_Charts_AccumulationDataLabelSettings_Visible) option in the dataLabel property.
 

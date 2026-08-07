@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Area Chart in ##Platform_Name## Charts
+title: Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Area Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Area Chart in ##Platform_Name## Charts
+# Area Chart in ##Platform_Name## Chart
 
 ## Area
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Control Chart in ##Platform_Name## Chart Component
+title: How to create a control chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Control Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Control Chart
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Create a control chart
+# How to create a control chart in ##Platform_Name## Chart
 
 You can create a control chart (with UCL, CL, and LCL limits) using the stripline and annotation features.
 
@@ -43,7 +43,7 @@ To create a control charts, follow the given steps.
 
 
 
-![Alt text](../images/step1.png)
+![Alt text](./images/step1.png)
 
 **Step 2**: Now, add three striplines for three control limits: LCL, UCL, and CL.
 

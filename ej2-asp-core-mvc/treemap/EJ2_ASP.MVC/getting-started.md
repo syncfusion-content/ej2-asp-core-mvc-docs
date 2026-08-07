@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeMap Control | Syncfusion
+title: Getting Started with ##Platform_Name## TreeMap | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## TreeMap control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC TreeMap Control
+# Getting Started with ASP.NET MVC TreeMap
 
 This section briefly explains about how to include [ASP.NET MVC TreeMap](https://www.syncfusion.com/aspnet-mvc-ui-controls/treemap) control in your ASP.NET MVC application using Visual Studio.
 

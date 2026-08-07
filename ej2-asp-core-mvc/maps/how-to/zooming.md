@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Zooming in Syncfusion ##Platform_Name## Maps Component
+title: How to enable zooming in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Zooming in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Zooming
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Center position zooming
+# How to enable zooming in ##Platform_Name## Maps
 
 The center position zooming can be achieved by using the `MapsCenterPosition` class and `ZoomFactor` property as mentioned in the following example. The center position is used to configure the zoom level of Maps, and the zoom factor is used to specify the center position where the Maps should be displayed.
 

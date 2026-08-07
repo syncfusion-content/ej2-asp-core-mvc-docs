@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Populate Data in Syncfusion ##Platform_Name## Maps Component
+title: Populate Data in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Populate Data in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Populate Data
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Populate data
+# Populate Data in ##Platform_Name## Maps
 
 ## Geometry types
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Maps Control | Syncfusion
+title: Getting Started with ASP.NET Core Maps | Syncfusion
 description: Check out and learn about getting started with ASP.NET Maps control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with the ASP.NET Core Maps Control
+# Getting Started with ASP.NET Core Maps
 
 This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio Code](https://code.visualstudio.com/).
 

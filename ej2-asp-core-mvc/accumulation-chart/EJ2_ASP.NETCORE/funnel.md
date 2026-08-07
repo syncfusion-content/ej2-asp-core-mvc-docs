@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Funnel chart in ##Platform_Name## Accumulation Chart Component
+# Funnel in ASP.NET Core Accumulation Chart
 
 To render a funnel series, use the series [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Funnel`.
 
@@ -312,5 +312,5 @@ The `Trapezoidal` mode is a modified funnel shape where the width narrows, but f
 
 ## See also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

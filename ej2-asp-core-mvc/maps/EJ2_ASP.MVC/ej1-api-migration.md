@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in Syncfusion ##Platform_Name## Maps Component
+title: EJ1 API Migration in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD038 -->
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ASP.NET MVC Maps
 
 This article describes the API migration process of Maps component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

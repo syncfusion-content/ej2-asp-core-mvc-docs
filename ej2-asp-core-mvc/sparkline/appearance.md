@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Sparkline Component
+title: Appearance in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Appearance in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance
+# Appearance in ##Platform_Name## Sparkline
 
 The appearance of the sparkline can be customized using margin, container Area border, and container Area background.
 
