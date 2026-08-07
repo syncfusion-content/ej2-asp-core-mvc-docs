@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Chat UI Control | Syncfusion
+title: Appearance in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Appearance in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Appearance
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in ##Platform_Name## Chat UI control
+# Appearance in ##Platform_Name## Chat UI
 
 ## Setting placeholder
 

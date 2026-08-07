@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Chain of Thoughts in ##Platform_Name## AI AssistView control | Syncfusion
+title: Chain of Thoughts in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Chain of Thoughts in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Assist view
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
- 
-# Chain of Thoughts in ##Platform_Name## AI AssistView control
- 
+
+# Chain of Thoughts in ##Platform_Name## AI AssistView
+
 The AI AssistView supports rendering **Chain of Thoughts** (also called `Thinking`) blocks, allowing you to visualize the model's reasoning process step by step before the final response is generated. The injectable module is ideal for extended reasoning models (such as Claude 3.5, GPT‑o1, and similar), which expose intermediate reasoning stages.
  
 ## Types of response blocks

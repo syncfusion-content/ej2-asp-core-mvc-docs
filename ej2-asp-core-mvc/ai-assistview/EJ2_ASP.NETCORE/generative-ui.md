@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Generative UI in ##Platform_Name## AI AssistView control | Syncfusion
-description: Checkout and learn about generative UI with ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Generative UI in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Generative UI in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: AI AssistView 
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Generative UI in ##Platform_Name## AI AssistView control
+# Generative UI in ##Platform_Name## AI AssistView
 
 The `Generative UI` in AI AssistView allows you to render dynamic tools and UI elements within the AI AssistView. This enables seamless integration of interactive components based on AI-generated responses.
 

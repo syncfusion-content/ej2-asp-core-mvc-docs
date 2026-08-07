@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Footer in ##Platform_Name## Chat UI Control | Syncfusion
+title: Footer in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Footer in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Footer
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Footer in ##Platform_Name## Chat UI control
+# Footer in ##Platform_Name## Chat UI
 
 ## Show or hide footer
 

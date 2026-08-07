@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Typing indicator in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Typing indicator in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Typing Indicator in ##Platform_Name## Chat UI | Syncfusion®
+description: Checkout and learn about Typing Indicator in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Typing indicator
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Typing indicator in ##Platform_Name## Chat UI control
+# Typing Indicator in ##Platform_Name## Chat UI
 
 ## Show or hide typing indicator
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## SpeechToText Control | Syncfusion
-description: Checkout and learn about events in Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
+title: Events in ##Platform_Name## Speech To Text | Syncfusion®
+description: Checkout and learn about events in Syncfusion Essential ##Platform_Name## Speech To Text control, its elements, and more.
 platform: ej2-asp-core-mvc
-control: Events
+control: Speech To Text
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## SpeechToText control
+# Events in ##Platform_Name## Speech To Text
 
 This section describes the SpeechToText events that will be triggered when appropriate actions are performed. The following events are available in the SpeechToText control.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom views in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Custom views in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Custom View in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Custom View in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Custom views
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom views in ##Platform_Name## AI AssistView control
+# Custom View in ##Platform_Name## AI AssistView
 
 ## Adding custom views
 
