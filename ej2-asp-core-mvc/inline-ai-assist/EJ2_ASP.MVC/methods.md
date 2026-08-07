@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: Methods in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Methods in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Methods
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Methods in ##Platform_Name## Inline AI Assist control
+# Methods in ##Platform_Name## Inline AI Assist
 
 ## Adding response
 
