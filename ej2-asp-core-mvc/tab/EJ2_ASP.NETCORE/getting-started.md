@@ -102,7 +102,7 @@ The Tab control can be rendered using a JSON array. Each tab item is defined wit
 {% endhighlight %}
 {% endtabs %}
 
-N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://helpstaging.syncfusion.com/ej2-asp-core/common/adding-script-references#individual-control-script-references).
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#individual-control-script-references).
 
 ## Initialize the Tab using HTML elements
 
