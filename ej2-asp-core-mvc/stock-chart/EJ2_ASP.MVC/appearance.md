@@ -104,4 +104,4 @@ Changing theme will affect background color,gridlines,tooltip colors and appeara
 
 ## See Also
 
-* [Axis Customization](./axis-customization/)
+* [Axis Customization](./axis-customization)

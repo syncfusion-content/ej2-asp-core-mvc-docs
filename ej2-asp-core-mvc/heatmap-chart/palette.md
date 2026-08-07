@@ -106,4 +106,4 @@ You can define the colors ranges or color stops for data values in both gradient
 
 ## See Also
 
-* [How to enable smart legend](./legend/#smart-legend)
+* [How to enable smart legend](./legend#smart-legend)

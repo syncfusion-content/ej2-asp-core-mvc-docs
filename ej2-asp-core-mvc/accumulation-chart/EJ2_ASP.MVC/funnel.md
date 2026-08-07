@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Funnel in ##Platform_Name## Accumulation Chart Component | Syncfusion
+title: Funnel in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Funnel in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Funnel
@@ -276,5 +276,5 @@ The `Trapezoidal` mode is a modified funnel shape where the width narrows, but f
 
 ## See also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

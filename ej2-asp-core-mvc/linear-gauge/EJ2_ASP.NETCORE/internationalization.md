@@ -16,7 +16,7 @@ Globalization is the process of designing and developing a component that works 
 * Axis label
 * Tooltip
 
-The static text on above features can be changed to any culture such as Arabic, Deutsch and French. To know more about the globalization in ASP.NET Core components, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/).
+The static text on above features can be changed to any culture such as Arabic, Deutsch and French. To know more about the globalization in ASP.NET Core components, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
 ## Numeric Format
 

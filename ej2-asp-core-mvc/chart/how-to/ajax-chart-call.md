@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to render the chart using Ajax in ##Platform_Name## Chart | Syncfusion
+title: Render chart via Ajax in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Ajax Chart Call in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ajax Chart Call
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# How to render the chart using Ajax in ##Platform_Name## Chart
+# How to render chart via Ajax in ##Platform_Name## Chart
 
 The following section explains how to customize various aspects of the chart.
 

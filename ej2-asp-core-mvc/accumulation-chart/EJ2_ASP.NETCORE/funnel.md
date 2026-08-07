@@ -312,5 +312,5 @@ The `Trapezoidal` mode is a modified funnel shape where the width narrows, but f
 
 ## See also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

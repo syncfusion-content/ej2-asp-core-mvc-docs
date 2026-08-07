@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize tooltip as a template in ##Platform_Name## HeatMap Chart | Syncfusion
+title: Tooltip Template in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Tooltip Template in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip Template
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to customize tooltip as a template in ##Platform_Name## HeatMap Chart
+# How to Customize Tooltip as a template in ##Platform_Name## HeatMap Chart
 
 You can show a tooltip as a table using the `template` property in `TooltipSettings`.
 

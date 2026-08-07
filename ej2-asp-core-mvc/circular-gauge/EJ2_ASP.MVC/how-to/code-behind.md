@@ -83,4 +83,4 @@ To get the data from data base and render the gauge from code behind, follow the
 
 **Screenshot**
 
-![Screenshot for your reference](../images/database.png)
+![Circular gauge showing available stock, free stock, and maximum stock](../images/database.png)

@@ -137,8 +137,8 @@ The following properties can be used to customize the [`Column`](https://help.sy
 
 The following properties can be used to customize the `column` series.
 
-* [fill](../../api/chart3d/series3DModel/#fill) – Specifies the color of the series.
-* [opacity](../../api/chart3d/series3DModel/#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel/#fill) color.
+* [fill](../../api/chart3d/series3DModel#fill) – Specifies the color of the series.
+* [opacity](../../api/chart3d/series3DModel#opacity) – Specifies the opacity of the [fill](../../api/chart3d/series3DModel#fill) color.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

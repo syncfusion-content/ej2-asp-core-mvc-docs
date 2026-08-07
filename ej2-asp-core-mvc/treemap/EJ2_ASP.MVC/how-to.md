@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Customize the Drilldown Header in ##Platform_Name## TreeMap | Syncfusion
+title: Customize the Drilldown Header in ##Platform_Name## TreeMap | Syncfusion
 description: Learn here all about how to customize the header for treemap drilldown in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: How To
@@ -84,7 +84,7 @@ Customize the population for drilled countries or states in the header element w
 
 **Screenshot**
 
-![Screenshot for your reference](./images/header-template.png)
+![Customized header shown during TreeMap drilldown](./images/header-template.png)
 
 ## Add label template with drill down
 
@@ -139,4 +139,4 @@ Add the label template in the `leafItemSettings` options, and then set the `show
 
 **Screenshot**
 
-![Screenshot for your reference](./images/label-template.png)
+![TreeMap displaying label templates with drilldown](./images/label-template.png)

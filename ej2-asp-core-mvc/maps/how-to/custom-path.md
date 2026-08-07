@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add custom path map in Syncfusion ##Platform_Name## Maps | Syncfusion
+title: Add custom path map in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Custom Path in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Path

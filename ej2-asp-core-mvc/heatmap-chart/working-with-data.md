@@ -200,4 +200,4 @@ In complex data binding, you can bind the nested JSON data to the data points in
 
 ## See Also
 
-* [To bind data for bubble heat map with size and color attributes](./bubble-heatmap/#binding-data-for-bubble-heat-map-with-size-and-color-attributes)
+* [To bind data for bubble heat map with size and color attributes](./bubble-heatmap#binding-data-for-bubble-heat-map-with-size-and-color-attributes)

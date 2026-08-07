@@ -42,4 +42,4 @@ By default, when the `dataSource` for `series` is empty, a lightweight Range Sel
 
 ## See Also
 
-* [Period Selector](./period-selector/)
+* [Period Selector](./period-selector)

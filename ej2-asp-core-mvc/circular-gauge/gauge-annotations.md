@@ -76,9 +76,6 @@ As the annotation allows to place any custom element, it can initialize a gauge 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-annotations/subgauge/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Subgauge.cs" %}
-{% include code-snippet/circulargauge/gauge-annotations/subgauge/subgauge.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

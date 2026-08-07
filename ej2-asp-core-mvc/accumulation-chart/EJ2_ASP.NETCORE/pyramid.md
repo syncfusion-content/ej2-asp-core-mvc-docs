@@ -212,5 +212,5 @@ public class PyramidChartData
 
 ## See Also
 
-* [Data label](./data-label/)
-* [Grouping](./grouping/)
+* [Data label](./data-label)
+* [Grouping](./grouping)

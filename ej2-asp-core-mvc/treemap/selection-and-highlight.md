@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection and Highlight in ##Platform_Name## TreeMap
+title: Selection and Highlight in ##Platform_Name## TreeMap | Syncfusion
 description: Learn here all about Selection and Highlight in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection And Highlight
