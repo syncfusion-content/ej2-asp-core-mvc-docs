@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel Export Options in Syncfusion ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Excel Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Excel Export Options | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options.
 platform: ej2-asp-core-mvc
 control: Excel Export Options
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Excel export options in ASP.NET Core Grid component
+# Excel Export Options in ASP.NET Core Data Grid
 
 The Syncfusion ASP.NET Core Grid component allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

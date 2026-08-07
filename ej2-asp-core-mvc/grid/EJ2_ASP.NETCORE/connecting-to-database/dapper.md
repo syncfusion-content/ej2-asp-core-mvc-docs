@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion ##Platform_Name## Grid using Dapper
-description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client,bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid Bind Data using SQL Dapper Server | Syncfusion
+description: Learn how to connect SQL Server data to ##Platform_Name## Data Grid using Dapper, perform CRUD operations, and implement UrlAdaptor and CustomAdaptor patterns.
 control: Dapper
 platform: ej2-asp-core-mvc
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting SQL data to Syncfusion ASP.NET Core Grid using Dapper
+# SQL Server Dapper Integration in ASP.NET Core Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion ASP.NET Core Grid.
 

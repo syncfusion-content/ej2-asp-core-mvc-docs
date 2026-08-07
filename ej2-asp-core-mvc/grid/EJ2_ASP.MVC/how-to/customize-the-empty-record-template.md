@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the Empty Record Template in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Customize the Empty Record Template in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Empty Record Template | Syncfusion
+description: Learn how to customize the empty record template in ##Platform_Name## Data Grid to display custom messages, images, or actions when no data is available.
 platform: ej2-asp-core-mvc
 control: Customize the Empty Record Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize the Empty Record Template in ASP.NET MVC Grid
+# Empty Record Template in ASP.NET MVC Data Grid
 
 The empty record template feature in the Syncfusion ASP.NET MVC Grid allows you to use custom content such as images, text, or other components, when the Grid doesn't contain any records to display. This feature replaces the default message of 'No records to display' typically shown in the Grid.
 
