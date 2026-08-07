@@ -12,7 +12,7 @@ documentation: ug
 
 ## Localization
 
-The [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization/) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Locale.html) value and translation object.
+The [Localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Locale.html) value and translation object.
 
 The following list of properties and its values are used in the treegrid.
 
@@ -139,7 +139,7 @@ The following example demonstrates the TreeGrid in **Deutsch** culture.
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
+The [`Internationalization`](../../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

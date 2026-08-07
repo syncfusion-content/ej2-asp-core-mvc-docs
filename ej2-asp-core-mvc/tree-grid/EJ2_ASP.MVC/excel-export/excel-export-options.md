@@ -15,7 +15,7 @@ The excel export provides an option to customize mapping of the tree grid to exc
 
 ## Export hidden columns
 
-The excel export provides an option to export hidden columns of treegrid by defining [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#includehiddencolumn) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#excelexportproperties) as **true**.
+The excel export provides an option to export hidden columns of treegrid by defining [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#includehiddencolumn) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#excelexportproperties) as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -78,7 +78,7 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 
 ## File name for exported document
 
-You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#filename) property in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#excelexportproperties).
+You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#filename) property in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#excelexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

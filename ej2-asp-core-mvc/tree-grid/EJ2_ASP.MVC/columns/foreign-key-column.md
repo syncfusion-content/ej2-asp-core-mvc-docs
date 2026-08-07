@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Foreign Key Column | Syncfusion
-description: Learn how to use foreign key columns in ##Platform_Name## Data Grid to map related data, display associated values, and bind local or remote data sources.
+title: ##Platform_Name## TreeGrid Foreign Key Column | Syncfusion
+description: Learn how to use foreign key columns in ##Platform_Name## TreeGrid to map related data, display associated values, and bind local or remote data sources.
 platform: ej2-asp-core-mvc
 control: Foreign Key Column
 publishingplatform: ##Platform_Name##

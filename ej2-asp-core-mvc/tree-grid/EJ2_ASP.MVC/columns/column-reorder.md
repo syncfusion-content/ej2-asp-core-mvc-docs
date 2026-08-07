@@ -38,7 +38,7 @@ N> You can disable reordering a particular column by setting the [`AllowReorderi
 
 ## Reorder multiple columns
 
-Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/documentation/api/grid/#reordercolumns) method.
+Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/documentation/api/grid#reordercolumns) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

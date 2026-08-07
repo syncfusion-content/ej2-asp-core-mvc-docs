@@ -11,7 +11,7 @@ documentation: ug
 
 # Print in ##Platform_Name## TreeGrid
 
-To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid/#print) method from treegrid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) by adding the **print** toolbar item.
+To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid#print) method from treegrid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) by adding the **print** toolbar item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -49,7 +49,7 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 ## Print using an external button
 
-To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/documentation/api/grid/#print) method.
+To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/documentation/api/grid#print) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

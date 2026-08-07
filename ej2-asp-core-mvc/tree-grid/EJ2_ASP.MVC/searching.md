@@ -11,7 +11,7 @@ documentation: ug
 
 # Searching in ##Platform_Name## TreeGrid
 
-You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid/#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding **search** item to the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
+You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding **search** item to the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ N> By default, treegrid searches all the bound column values. To customize this 
 
 ## Search operators
 
-The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Operators.html) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
+The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -83,11 +83,11 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notEqual |Checks for values not equal to the specified value.
 
-N> By default, the [`Operators`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Operators.html) value is **contains**.
+N> By default, the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) value is **contains**.
 
 ## Search by external button
 
-To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid/#search) method.
+To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

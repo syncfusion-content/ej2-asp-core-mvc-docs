@@ -101,7 +101,7 @@ Supported page number types:
 
 ## Insert an image in header or footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
 
 ```typescript
 

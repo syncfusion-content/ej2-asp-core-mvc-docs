@@ -85,9 +85,9 @@ The following events are triggered while drag and drop the treegrid rows.
 
 ## Prevent reordering a row as child to another row
 
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after canceling using `reorderRows` method.
 
-In the below example drop action is cancelled and dropped above to target row.
+In the below example drop action is canceled and dropped above to target row.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

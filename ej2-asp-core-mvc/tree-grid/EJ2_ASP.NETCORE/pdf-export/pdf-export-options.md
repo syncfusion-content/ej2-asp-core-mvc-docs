@@ -52,7 +52,6 @@ By default, treegrid uses **Helvetica** font in the exported document. You can c
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing default font,
 

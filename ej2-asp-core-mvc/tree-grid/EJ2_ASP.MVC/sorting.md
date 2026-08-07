@@ -44,7 +44,7 @@ To enable sorting in the TreeGrid, set the [`AllowSorting`](https://help.syncfus
 
 
 N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
-<br/> You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid/#sortbycolumn) and [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid/#clearsorting) methods.
+<br/> You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#sortbycolumn) and [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#clearsorting) methods.
 <br/> To disable sorting for a particular column, set the [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to **false**.
 
 ## Initial sort
@@ -109,7 +109,7 @@ N> The **args.requestType** is the current action name. For example, in sorting 
 
 <!--  Custom sort comparer
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 
@@ -158,6 +158,6 @@ When you tap the treegrid header on touchscreen devices, the selected column hea
 
 The following screenshot shows treegrid touch sorting.
 
-![Touch interaction](images/touch-sorting.jpg)
+![Touch interaction](images/touch-sorting.png)
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

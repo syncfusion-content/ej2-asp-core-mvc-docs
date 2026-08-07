@@ -92,7 +92,7 @@ In the below sample, we have shown context menu item for parent rows to expand o
 
 ## Enable and disable context menu items dynamically
 
-You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu/#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#contextmenuopen) event.
+You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuopen) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

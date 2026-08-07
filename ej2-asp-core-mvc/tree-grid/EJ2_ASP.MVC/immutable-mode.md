@@ -11,7 +11,7 @@ documentation: ug
 
 # Immutable mode in ##Platform_Name## Treegrid control
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
 To enable this feature, you have to set the `EnableImmutableMode` property as **true**.
 

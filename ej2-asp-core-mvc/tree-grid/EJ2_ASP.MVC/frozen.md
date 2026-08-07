@@ -15,7 +15,7 @@ documentation: ug
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the tree grid while scrolling.
 
-In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FrozenColumns.html) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FrozenRows.html) is set as **3**. Hence, the left two columns and top three rows are frozen.
+In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) is set as **3**. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,9 +44,9 @@ In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/cref_files/as
 
 ### Freeze particular columns
 
-To freeze particular column in the tree grid, the [`IsFrozen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsFrozen.html) property can be used.
+To freeze particular column in the tree grid, the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property can be used.
 
-In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the [`IsFrozen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsFrozen.html) property.
+In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

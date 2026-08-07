@@ -12,7 +12,7 @@ documentation: ug
 
 ## Localization
 
-The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization/) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Locale.html) value and translation object.
+The [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the [Locale](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Locale.html) value and translation object.
 
 The following list of properties and its values are used in the treegrid.
 
@@ -175,7 +175,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 
 
-    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n/#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class and update the `locale` property of treegrid with the culture name used in the `load` function:
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class and update the `locale` property of treegrid with the culture name used in the `load` function:
 
     ```json
     ej.base.L10n.load({
@@ -208,7 +208,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
+The [`Internationalization`](../../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Format.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in ##Platform_Name## TreeGrid component | Syncfusion
-description: Learn here all about Row drag and drop in ##Platform_Name## TreeGrid of Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Drag and Drop | Syncfusion
+description: Learn how to use Row Drag and Drop in ##Platform_Name## TreeGrid to reorder rows, configure drag-and-drop behavior, and update hierarchical data.
 platform: ej2-asp-core-mvc
 control: Row Drag And Drop
 publishingplatform: ##Platform_Name##
@@ -85,9 +85,9 @@ The following events are triggered while drag and drop the treegrid rows.
 
 ## Prevent reordering a row as child to another row
 
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after cancelling using `reorderRows` method.
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event argument. You can also change the drop position after canceling using `reorderRows` method.
 
-In the below example drop action is cancelled and dropped above to target row.
+In the below example drop action is canceled and dropped above to target row.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

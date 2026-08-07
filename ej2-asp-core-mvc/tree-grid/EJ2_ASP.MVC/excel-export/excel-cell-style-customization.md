@@ -46,7 +46,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 The excel export provides an option to include theme for exported excel document.
 
-To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#excelexportproperties).
+To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#excelexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

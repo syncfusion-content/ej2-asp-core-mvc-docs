@@ -24,7 +24,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridEx
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
-To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#serverpdfexport) method for passing the tree grid properties to server exporting action.
+To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid#serverpdfexport) method for passing the tree grid properties to server exporting action.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
