@@ -92,7 +92,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Tab Control](images/tab-control.webp)
 
-N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://helpstaging.syncfusion.com/ej2-asp-core/common/adding-script-references#individual-control-script-references).
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#individual-control-script-references).
 
 ## Initialize the Tab using JSON items collection
 
