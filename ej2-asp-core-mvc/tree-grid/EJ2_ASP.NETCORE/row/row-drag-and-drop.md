@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in ##Platform_Name## TreeGrid component | Syncfusion
-description: Learn here all about Row drag and drop in ##Platform_Name## TreeGrid of Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Drag and Drop | Syncfusion
+description: Learn how to use Row Drag and Drop in ##Platform_Name## TreeGrid to reorder rows, configure drag-and-drop behavior, and update hierarchical data.
 platform: ej2-asp-core-mvc
 control: Row Drag And Drop
 publishingplatform: ##Platform_Name##
