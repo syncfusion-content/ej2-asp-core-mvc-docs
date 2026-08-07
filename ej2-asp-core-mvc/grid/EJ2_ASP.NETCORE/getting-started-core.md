@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ASP.NET Core Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+title: ASP.NET Core Data Grid Getting Started | Syncfusion
 description: Learn how to install and configure the ASP.NET Core Data Grid. Set up a new ASP.NET Core app and enable paging, sorting, filtering, and grouping.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
