@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## InlineAIAssist Control | Syncfusion
-description: Checkout and learn about Appearance and styling in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Appearance in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Checkout and learn about Appearance in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Inline assist
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance and styling in ##Platform_Name## Inline AI Assist control
+# Appearance And Styling in ##Platform_Name## Inline AI Assist
 
 ## Component Dimensions
 

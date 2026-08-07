@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Assist view in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Assist view in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Assist View in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Assist View in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Assist view
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Assist view in ##Platform_Name## AI AssistView control
+# Assist View in ##Platform_Name## AI AssistView
 
 ## Setting prompt text
 
