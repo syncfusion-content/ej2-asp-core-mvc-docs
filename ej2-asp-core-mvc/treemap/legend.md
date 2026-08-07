@@ -22,7 +22,7 @@ Show the legend by setting the `visible` property to `true` in the `legendSettin
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core TreeMap with Legend](images/treemap-with-legend.png)
+![ASP.NET Core TreeMap with Legend](images/treemap-with-legend.webp)
 
 ## Position and alignment
 

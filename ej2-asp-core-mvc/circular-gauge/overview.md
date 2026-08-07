@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Circular Gauge | Syncfusion
+title: Overview in ##Platform_Name## Circular Gauge Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Circular Gauge
+# Overview
 
 The Circular Gauge control is ideal to visualize numeric values over a circular scale. All circular gauge elements are rendered using Scalable Vector Graphics (SVG).
 

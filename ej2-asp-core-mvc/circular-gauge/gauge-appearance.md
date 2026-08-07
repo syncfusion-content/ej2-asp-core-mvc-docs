@@ -106,9 +106,6 @@ Using [background](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/area-customization/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Area-customization.cs" %}
-{% include code-snippet/circulargauge/gauge-appearance/area-customization/area-customization.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

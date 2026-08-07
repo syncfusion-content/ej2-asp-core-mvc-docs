@@ -43,7 +43,7 @@ To create a control charts, follow the given steps.
 
 
 
-![Alt text](../images/step1.png)
+![Alt text](./images/step1.png)
 
 **Step 2**: Now, add three striplines for three control limits: LCL, UCL, and CL.
 

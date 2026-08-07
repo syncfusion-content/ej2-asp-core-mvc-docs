@@ -22,7 +22,7 @@ Use color mapping to customize item colors based on the underlying value from th
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core TreeMap with ColorMapping](images/treemap-with-color-mapping.png)
+![ASP.NET Core TreeMap with ColorMapping](images/treemap-with-color-mapping.webp)
 
 ## Range color mapping
 

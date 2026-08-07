@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion ##Platform_Name## Chart Component | Syncfusion
+title: Overview in ##Platform_Name## Chart Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# About Syncfusion ##Platform_Name## Chart Component
+# Overview
 
 The Chart control is used to visualize the data with user interactivity and provides customizing options to configure the data visually. It can bind data from  datasource such as array of JSON objects, OData web services or [`DataManager`](http://ej2.syncfusion.com/documentation/data/api-dataManager.html). All chart elements are rendered using Scalable Vector Graphics (SVG).
 

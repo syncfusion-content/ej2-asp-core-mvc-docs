@@ -1,6 +1,6 @@
 ---
 layout: post
-title: About Syncfusion ##Platform_Name## Linear Gauge Component | Syncfusion
+title: Overview in ##Platform_Name## Linear Gauge Component
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# About Syncfusion ##Platform_Name## Linear Gauge Component
+# Overview
 
 The Linear Gauge control is used to visualize the numerical values of an axis in linear manner. All linear gauge elements are rendered using Scalable Vector Graphics (SVG).
 

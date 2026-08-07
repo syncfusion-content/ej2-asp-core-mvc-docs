@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Advanced Accessibility Configuration in ##Platform_Name## Accumulation Chart | Syncfusion
+title: Advanced Accessibility in ##Platform_Name## Accumulation Chart | Syncfusion 
 description: Learn here all about Accessibility customization in Syncfusion ASP MVC Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility customization

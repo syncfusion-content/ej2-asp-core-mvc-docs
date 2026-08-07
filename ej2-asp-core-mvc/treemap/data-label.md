@@ -22,7 +22,7 @@ Add labels to show additional information about the items in the TreeMap. By def
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core TreeMap with Label](images/treemap-with-labels.png)
+![ASP.NET Core TreeMap with Label](images/treemap-with-labels.webp)
 
 ## Format
 

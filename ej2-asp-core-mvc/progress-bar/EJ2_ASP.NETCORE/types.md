@@ -18,7 +18,7 @@ Change the type of the Progress Bar by setting the `type` attribute on the `<ejs
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Progress Bar Control](images/default.png)
+![ASP.NET Core Progress Bar Control](images/default.webp)
 
 > [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Getting-Started-Examples/tree/main/ProgressBar/ASP.NET%20Core%20Tag%20Helper%20Examples).
 
