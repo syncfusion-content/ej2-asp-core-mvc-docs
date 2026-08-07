@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## AI AssistView Control | Syncfusion
+title: Appearance in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Appearance in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Appearance
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in ##Platform_Name## AI AssistView control
+# Appearance in ##Platform_Name## AI AssistView
 
 ## Setting width
 

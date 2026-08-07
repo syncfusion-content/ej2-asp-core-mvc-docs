@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Get Started with ASP.NET Core Inline AI Assist Control | Syncfusion
+title: Get Started with ASP.NET Core Inline AI Assist | Syncfusion®
 description: Check out and learn about getting started with ASP.NET Core Inline AI Assist control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Inline AI Assist
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Inline AI Assist control
+# Getting Started with ASP.NET Core Inline AI Assist
 
 This section briefly explains how to include the [ASP.NET Core Inline AI Assist](https://www.syncfusion.com/aspnet-core-ui-controls/inline-ai-assist) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

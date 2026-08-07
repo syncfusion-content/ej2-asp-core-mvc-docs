@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Response actions in ##Platform_Name## Inline AI Assist Control | Syncfusion
-description: Checkout and learn about response items in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Response Actions in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Checkout and learn about Response items in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Response settings
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Response actions in ##Platform_Name## Inline AI Assist control
+# Response Actions in ##Platform_Name## Inline AI Assist
 
 You can render response action popup by using `Items` property in the [responseSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistResponseSettings.html) property. This feature enables users to accept, discard, or perform custom actions on AI-generated responses.
 
