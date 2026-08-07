@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Switching Older Themes Style in ##Platform_Name## Pivot Table Component
-description: Learn here all about Switching Older Themes Style in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: How to Switch to Older Theme in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to switch the ASP.NET MVC Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
 platform: ej2-asp-core-mvc
 control: Switching Older Themes Style
 publishingplatform: ##Platform_Name##

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resize the Syncfusion Grid in Various Dimensions in ##Platform_Name## Grid Component
-description: Learn here all about Resize the Grid in various dimension in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Dynamic Resizing | Syncfusion
+description: Learn how to resize ##Platform_Name## Data Grid dynamically by adjusting parent container dimensions and managing grid width and height responsively.
 platform: ej2-asp-core-mvc
 control: Resize the Grid in various dimension
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Resize the Grid in various dimension in ASP.NET MVC Grid
+# Grid Resizing in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid offers a friendly way to resize the Grid, allowing you to adjust its width and height for improved data visualization.
 

@@ -44,7 +44,7 @@ public class Range
 
 
 
-![Ranges in Bullet Chart](images/blazor-bullet-chart-range.png)
+![Ranges in Bullet Chart](images/bullet-chart-range.png)
 
 ## Color customization
 
@@ -81,4 +81,4 @@ public class Custom
 
 
 
-![Customizing Ranges with Color in Bullet Chart](images/blazor-bullet-chart-range-customization.png)
+![Customizing Ranges with Color in Bullet Chart](images/bullet-chart-range-customization.png)

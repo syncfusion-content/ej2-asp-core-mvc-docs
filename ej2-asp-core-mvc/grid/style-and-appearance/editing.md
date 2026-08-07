@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Editing Customization | Syncfusion
+description: Learn how to customize editing styles in ##Platform_Name## Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
 platform: ej2-asp-core-mvc
 control: Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Editing in ##Platform_Name## Grid component
+# Editing Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of editing-related elements in the Syncfusion ##Platform_Name## Grid component using CSS. Below are examples of how to customize various editing-related elements.
 

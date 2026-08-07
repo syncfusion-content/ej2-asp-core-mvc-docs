@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hierarchy grid in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Hierarchy grid in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Hierarchy Grid | Syncfusion
+description: how to create Hierarchy Grids in ##Platform_Name## Data Grid with parent-child relationships, nested grids, hierarchical data binding, and expandable rows.
 platform: ej2-asp-core-mvc
 control: Hierarchy grid
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Hierarchy grid in ASP.NET Core Grid component
+# Hierarchy Grid in ASP.NET Core Data Grid
 
 The Hierarchy Grid in an ASP.NET Core Grid component is typically used when you need to display hierarchical data in a tabular format with expandable and collapsible rows. It allows you to represent parent and child relationships within the grid, making it easier for you to navigate and understand the data.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Chat UI Control | Syncfusion
+title: Methods in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Methods in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Methods
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Methods in ##Platform_Name## Chat UI control
+# Methods in ##Platform_Name## Chat UI
 
 ## Adding message
 

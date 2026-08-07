@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Annotation in ##Platform_Name## Grid Component
-description: Learn here all about Data Annotation in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Data Annotation | Syncfusion
+description: Learn how to use data annotations in ##Platform_Name## Data Grid to enable model validation, display attributes, and custom validation messages.
 platform: ej2-asp-core-mvc
 control: Data Annotation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Annotation in Grid Component
+# Data Annotation in ##Platform_Name## Data Grid
 
 Data Annotation helps you define rules for the model class to perform data validation and display suitable messages to end users as validation message in the edit form.
 

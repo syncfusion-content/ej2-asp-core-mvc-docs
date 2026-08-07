@@ -48,7 +48,7 @@ public class TooltipData
 
 
 
-![Bullet Chart displays ToolTip](images/blazor-bulletchart-tooltip.png)
+![Bullet Chart displays ToolTip](images/bulletchart-tooltip.png)
 
 ## Tooltip template
 

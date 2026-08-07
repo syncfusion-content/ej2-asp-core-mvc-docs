@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Batch Editing in Syncfusion ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Batch Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Batch Editing | Syncfusion
+description: Learn how to perform batch editing in ##Platform_Name## Data Grid, update multiple records efficiently, customize edit workflows, and save changes in bulk.
 platform: ej2-asp-core-mvc
 control: Batch Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Batch editing in ASP.NET Core Grid component
+# Batch Editing in ASP.NET Core Data Grid
 
 Batch editing is a powerful feature in the Grid component that allows you to edit multiple cells simultaneously. It provides a convenient way to make changes to multiple cells and save them in a single request to the data source. This feature is particularly useful when dealing with large datasets or when you need to update multiple cells at once.
 
