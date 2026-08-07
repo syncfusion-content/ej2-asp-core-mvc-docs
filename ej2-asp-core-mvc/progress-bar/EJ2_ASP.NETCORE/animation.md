@@ -21,8 +21,7 @@ Progress Bar support to animate the progress by using `animation` property. Enab
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/animation/animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Animation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +29,6 @@ Progress Bar support to animate the progress by using `animation` property. Enab
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/animation/animation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Animation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

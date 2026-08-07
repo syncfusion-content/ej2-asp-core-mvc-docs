@@ -21,8 +21,7 @@ Range represents the entire span of the progress bar and can be defined using th
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/range/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Range.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +29,6 @@ Range represents the entire span of the progress bar and can be defined using th
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/range/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Range.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

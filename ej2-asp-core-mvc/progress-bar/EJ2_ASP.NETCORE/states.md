@@ -25,8 +25,7 @@ This is the default state. You can use it when the progress estimation is known.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/determinate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Determinate.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -34,8 +33,7 @@ This is the default state. You can use it when the progress estimation is known.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/determinate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Determinate.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -50,8 +48,7 @@ By enabling the **isIndeterminate** property, the state of the progress bar can 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/indeterminate/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Indeterminate.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -59,8 +56,7 @@ By enabling the **isIndeterminate** property, the state of the progress bar can 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/indeterminate/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Indeterminate.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -76,8 +72,7 @@ You can use a secondary progress indicator when the primary progress depends on 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/buffer/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Buffer.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -85,7 +80,6 @@ You can use a secondary progress indicator when the primary progress depends on 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/modes/buffer/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Buffer.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

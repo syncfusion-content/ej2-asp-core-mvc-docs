@@ -23,8 +23,7 @@ This event is triggered when the progress value is changed. This event contains 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ This event is triggered when the progress value is changed. This event contains 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -48,8 +46,7 @@ This event is triggered when the progress attains the Maximum value. This event 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,7 +54,6 @@ This event is triggered when the progress attains the Maximum value. This event 
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

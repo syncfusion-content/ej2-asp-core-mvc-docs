@@ -23,8 +23,7 @@ This event is triggered when the progress value is changed.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ This event is triggered when the progress value is changed.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/value-changed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Value-changed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 

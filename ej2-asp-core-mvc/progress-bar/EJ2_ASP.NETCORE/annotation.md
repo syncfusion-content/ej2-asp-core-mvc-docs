@@ -23,8 +23,7 @@ For example, you can include add, start, or pause button to control the progress
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/annotation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ For example, you can include add, start, or pause button to control the progress
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/annotation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -48,8 +46,7 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,7 +54,6 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

@@ -23,8 +23,7 @@ We can divide a progress bar into multiple segments using a `SegmentCount` to vi
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/segments/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Segments.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ We can divide a progress bar into multiple segments using a `SegmentCount` to vi
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/segments/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Segments.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -48,8 +46,7 @@ Customize the thickness of the track using [`TrackThickness`](https://help.syncf
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/thickness/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Thickness.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,8 +54,7 @@ Customize the thickness of the track using [`TrackThickness`](https://help.syncf
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/thickness/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Thickness.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -75,8 +71,7 @@ The radius of the progress bar can be customized using `Radius` property and  co
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/radius/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Radius.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -84,8 +79,7 @@ The radius of the progress bar can be customized using `Radius` property and  co
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/radius/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Radius.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -102,8 +96,7 @@ The inner radius of the progress bar can be customized using `InnerRadius` prope
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/inner-radius/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Inner-radius.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -111,8 +104,7 @@ The inner radius of the progress bar can be customized using `InnerRadius` prope
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/inner-radius/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Inner-radius.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
@@ -129,8 +121,7 @@ Customize the color of progress, secondary progress, and track by using the [`Pr
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/track-thickness/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Track-thickness.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -138,8 +129,7 @@ Customize the color of progress, secondary progress, and track by using the [`Pr
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/customization/track-thickness/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Track-thickness.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 

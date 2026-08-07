@@ -48,8 +48,7 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -57,7 +56,6 @@ You can show the progress value in both linear and cicular progress bar using **
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/label/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Label.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
