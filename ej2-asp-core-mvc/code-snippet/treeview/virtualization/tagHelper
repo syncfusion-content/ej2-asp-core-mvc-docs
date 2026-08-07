@@ -1,0 +1,16 @@
+<ejs-treeview id="tree" enableVirtualization="true" height="400px">
+    <e-treeview-fields dataSource="ViewBag.data"
+                       id="Id"
+                       parentId="PId"
+                       text="Name"
+                       hasChildren="HasChild"
+                       expanded="Expanded">
+    </e-treeview-fields>
+</ejs-treeview>
+
+<style>
+    .treecontainer {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+</style>
