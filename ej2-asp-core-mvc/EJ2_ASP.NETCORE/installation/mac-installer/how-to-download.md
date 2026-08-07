@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion ##Platform_Name## Mac installer - Syncfusion
-description: Learn here about the how to download Syncfusion ##Platform_Name## mac installer packages from syncfusion website.
+title: Download Syncfusion ASP.NET Core Mac Installer | Syncfusion
+description: Learn how to download the Syncfusion ASP.NET Core Mac installer packages from the Syncfusion website.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac Installer
+# Download Syncfusion® ASP.NET Core Mac Installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Mac Installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/aspnet-core-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. This guide covers the following options:
 

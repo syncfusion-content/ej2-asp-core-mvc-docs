@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upgrading Syncfusion Aspnetcore Extensions in ##Platform_Name## Component
-description: Learn here all about upgrading Syncfusion Aspnetcore extensions in Syncfusion ##Platform_Name## component of syncfusion and more.
+title: Upgrade Syncfusion ASP.NET Core Extensions | Syncfusion
+description: Learn how to upgrade Syncfusion ASP.NET Core extensions to access the latest features, enhancements, and fixes.
 platform: ej2-asp-core-mvc
 control: Upgrading Syncfusion Aspnetcore Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Extensions
+# Upgrade Syncfusion® ASP.NET Core Extensions
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> publishes the Visual Studio extension in the [Visual Studio marketplace](https://marketplace.visualstudio.com/items?itemName=SyncfusionInc.ASPNETCoreExtensions) for every Syncfusion<sup style="font-size:70%">&reg;</sup> Volume releases, with exciting new features and Service Pack release with major bug fixes in the volume releases.
 

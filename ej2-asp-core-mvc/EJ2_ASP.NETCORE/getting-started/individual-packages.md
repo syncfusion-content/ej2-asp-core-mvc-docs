@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Syncfusion ##Platform_Name## DataGrid Control using Individual NuGet
-description: Checkout and learn about getting started with ##Platform_Name## DataGrid control using individual NuGet packages in an ASP.NET Core Razor Pages application.
+title: Get Started with ASP.NET Core DataGrid Using Individual NuGet Packages | Syncfusion
+description: Learn how to create an ASP.NET Core application and use the Syncfusion DataGrid with individual NuGet packages.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Grid Control using Individual NuGet
+# Getting Started with ASP.NET Core DataGrid Using Individual NuGet Packages
 
 This section briefly explains how to include the [ASP.NET Core Grid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core Razor Pages application using individual Syncfusion<sup style="font-size:70%">&reg;</sup> NuGet packages.
 

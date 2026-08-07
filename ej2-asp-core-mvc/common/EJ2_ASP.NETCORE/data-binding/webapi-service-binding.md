@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data to the ##Platform_Name## Control using WebApiAdaptor | Syncfusion
-description: Learn how to retrieve data from WebApi controller, bind it to the Syncfusion DataGrid control using WebApiAdaptor of DataManager, and perform CRUD operations.
+title: Bind Data Using WebApiAdaptor in ##Platform_Name## | Syncfusion
+description: Learn how to retrieve data from Web API controllers, bind it to the Syncfusion ASP.NET Core DataGrid using WebApiAdaptor, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bind data to the Syncfusion<sup style="font-size:70%">&reg;</sup> Controls using WebApiAdaptor
+# Bind Data Using WebApiAdaptor in ASP.NET Core
 
 In this topic, you can learn how to retrieve data from WebApi Controller, bind to Grid control using **WebApiAdaptor** of `DataManger`, and perform CRUD operations.
 

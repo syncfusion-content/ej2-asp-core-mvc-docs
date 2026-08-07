@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Project Templates | ASP.NET Core | Syncfusion
-description: Syncfusion provides Visual Studio Project Templates for ASP.NET Core platform to create the Syncfusion ASP.NET Core Application using Essential JS 2 components
+title: Project Templates for ASP.NET Core | Syncfusion
+description: Learn how to create Syncfusion ASP.NET Core applications using Visual Studio project templates and Essential JS 2 components.
 platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion® Project Templates - ASP.NET Core
+# Syncfusion® Project Templates for ASP.NET Core
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Project Templates** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core platform to create the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Web Application using Essential<sup style="font-size:70%">&reg;</sup> JS 2 components.
 

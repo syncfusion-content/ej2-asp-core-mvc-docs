@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Introduction of Syncfusion ##Platform_Name## controls
-description: Learn here all about introduction of 70+ Syncfusion ##Platform_Name## UI controls powered by Essential JS 2.
+title: Introduction to Syncfusion ##Platform_Name## Controls | Syncfusion
+description: Get started with Syncfusion ##Platform_Name## UI controls, including data grids, charts, editors, navigation components, and productivity tools.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

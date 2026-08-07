@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion ##Platform_Name## web installer - Syncfusion
-description: Learn here about the how to download Syncfusion ##Platform_Name## web installer from our syncfusion website with license.
+title: Download Syncfusion ASP.NET Core Web Installer | Syncfusion
+description: Learn how to download the Syncfusion ASP.NET Core web installer from the Syncfusion website and access installer files for product setup.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Web Installer
+# Download Syncfusion® ASP.NET Core Web Installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installer can be downloaded from the [Syncfusion<sup style="font-size:70%">&reg;</sup>](https://www.syncfusion.com/aspnet-core-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. This guide covers the following options:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Themes in Syncfusion ##Platform_Name## Controls
-description: Learn here all about built-in themes and how to change it dynamically in Syncfusion ##Platform_Name## controls.
+title: Themes in ASP.NET Core Controls | Syncfusion
+description: Learn about built-in themes, theme customization, and dynamic theme switching in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Themes
+# Themes in Syncfusion® ASP.NET Core Controls
 
 The following list of themes are included in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls library.
 

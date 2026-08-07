@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installation Errors in ##Platform_Name## - Syncfusion
-description: Learn here about the common installation errors and solution to those errors in Syncfusion ##Platform_Name## Components installation.
+title: Common Installation Errors in ASP.NET Core | Syncfusion
+description: Learn about common installation errors in Syncfusion ASP.NET Core applications and the recommended solutions to resolve them.
 platform: ej2-asp-core-mvc
 control: Common Installation Errors
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Common Installation Errors
+# Common Installation Errors in ASP.NET Core
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 

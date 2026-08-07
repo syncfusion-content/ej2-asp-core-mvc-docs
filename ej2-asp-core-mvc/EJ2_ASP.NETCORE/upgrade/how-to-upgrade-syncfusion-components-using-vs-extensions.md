@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upgrading Syncfusion ##Platform_Name## components to a latest version
-description: Learn here about the how upgrade Syncfusion ##Platform_Name## components to a latest version from NuGet manager and migrate.
+title: Upgrade Syncfusion ASP.NET Core Components to the Latest Version | Syncfusion
+description: Learn how to upgrade Syncfusion ASP.NET Core components to the latest version and migrate applications using supported upgrade workflows.
 platform: ej2-asp-core-mvc
 control: How To Upgrade Syncfusion Components Using Vs Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 components to latest version
+# Upgrade Syncfusion® ASP.NET Core Components to the Latest Version
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 migration add-in for Visual Studio allows to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core web application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 

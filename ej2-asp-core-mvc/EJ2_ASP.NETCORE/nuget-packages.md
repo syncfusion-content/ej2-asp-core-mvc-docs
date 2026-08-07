@@ -1,7 +1,7 @@
 ---
 layout: post
-title: NuGet Packages List | Syncfusion ASP.NET Core Controls
-description: Learn here about installing, managing and upgrading of individual NuGet packages of Syncfusion ASP.NET Core Controls.
+title: NuGet Packages for ASP.NET Core Controls | Syncfusion
+description: Learn how to install, manage, and upgrade Syncfusion ##Platform_Name## NuGet packages, including package dependencies and component mappings.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

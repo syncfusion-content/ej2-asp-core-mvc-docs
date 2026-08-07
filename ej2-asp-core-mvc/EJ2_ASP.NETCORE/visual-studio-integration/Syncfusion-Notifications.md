@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Notifications ASP.NET Core - EJ2 Extension | Syncfusion
-description: For displaying the notifications about trial and newer version update information for Syncfusion applications.
+title: Notifications in ASP.NET Core Extension | Syncfusion
+description: Learn about Syncfusion extension notifications for trial status, product updates, licensing alerts, and new releases.
 platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##

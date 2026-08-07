@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Syncfusion AI Coding Assistant Prompt Library | Syncfusion
-description: Explore the AI Coding Assistant Prompt Library to enhance ASP.NET Core development productivity with code generation, configuration example, contextual guidance
+description: Explore the AI Coding Assistant Prompt Library to improve ASP.NET Core productivity with code generation, configuration examples, and contextual guidance.
 control: Syncfusion AI Coding Assistant Prompt Library
 platform: ej2-asp-core-mvc
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Prompt Library - AI Coding Assistant
+# Syncfusion AI Coding Assistant Prompt Library
 
 Speed up your A projects using these ready-made prompts for popular Syncfusion components. Each prompt is short, easy to understand, and focused on real tasks—like quick setups, tweaks, and fixes.
 

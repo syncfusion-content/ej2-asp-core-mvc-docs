@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Component
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+title: Getting Started with Syncfusion ASP.NET Core | Syncfusion
+description: Learn how to create your first Syncfusion ASP.NET Core application and add Essential JS 2 controls.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 in ASP.NET Core
+# Getting Started with Syncfusion® ASP.NET Core
 
 This document illustrates how to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 web application in an ASP.NET Core.
 

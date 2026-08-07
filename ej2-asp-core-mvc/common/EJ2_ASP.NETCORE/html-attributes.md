@@ -1,7 +1,7 @@
 ---
 layout: post
-title: HTML Attributes in ##Platform_Name## Control
-description: Learn here all about HTML Attributes in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: HTML Attributes and DOM Events in ##Platform_Name## | Syncfusion
+description: Learn how to use HTML attributes, HtmlAttributes API, and native DOM events with Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AI Coding Assistant Overview in ##Platform_Name## controls | Syncfusion
-description: Learn how Syncfusion AI Coding Assistant boost ASP.NET Core productivity by generating accurate code snippets, examples, and contextual guidance.
+title: Syncfusion AI Coding Assistant Overview | Syncfusion
+description: Learn how Syncfusion AI Coding Assistant boosts ASP.NET Core productivity with code generation, examples, and contextual guidance.
 control: Syncfusion AI Coding Assistant Overview
 platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##

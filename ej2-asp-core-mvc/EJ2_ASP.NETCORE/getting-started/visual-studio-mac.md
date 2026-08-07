@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## in VS for Mac | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Calendar control using Tag Helpers in Visual Studio for Mac.
+title: Getting Started with ASP.NET Core in Visual Studio for Mac | Syncfusion
+description: Learn how to create a Syncfusion ASP.NET Core application in Visual Studio for Mac and add Essential JS 2 controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core application in Visual Studio Mac
+# Getting Started with ASP.NET Core in Visual Studio for Mac
 
 This article provides step-by-step instructions for building ASP.NET Core application with [Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control using [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/).
 

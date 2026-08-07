@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview for ASP.NET Core platform | Syncfusion
-description: The Syncfusion ASP.NET Core Extensions provide quick access to create or configure the Syncfusion ASP.NET projects along with Essential JS 2 components.
+title: ASP.NET Core Visual Studio Integration | Syncfusion
+description: Learn about Syncfusion Visual Studio integration tools for creating, configuring, and managing ASP.NET Core applications.
 platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Visual Studio Integration
+# Visual Studio Integration for ASP.NET Core
 
 ## Overview
 

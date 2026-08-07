@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to integrate Syncfusion ReportViewer in ASP.NET Core application
-description: Checkout and learn about integrating Syncfusion ReportViewer in ##Platform_Name## MVC application.
+title: How to Use Syncfusion ReportViewer in ASP.NET Core | Syncfusion
+description: LLearn how to integrate ReportViewer in ##Platform_Name## applications to display SSRS and RDL reports.
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug

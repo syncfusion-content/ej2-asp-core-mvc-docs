@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data from SQL server to Syncfusion ##Platform_Name## Control
-description: Retrieve data from SQL server, bind it to Syncfusion ASP.NET Core Grid control using Entity Framework, and perform CRUD operations.
+title: Bind SQL Server Data Using Entity Framework in ##Platform_Name## | Syncfusion
+description: Learn how to retrieve SQL Server data using Entity Framework, bind it to the Syncfusion ASP.NET Core DataGrid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bind data from SQL server to ASP.NET Core controls
+# Bind SQL Server Data Using Entity Framework in ASP.NET Core
 
 In this topic, we are going to learn how to retrieve data from SQL database using [Entity Framework](https://docs.microsoft.com/en-us/ef/core/) to bind it to the Grid control and perform CRUD operations. 
 Entity Framework is an open-source object-relational mapper (O/RM) from Microsoft. Entity Framework works with many databases. But here, we are going to discuss the step-by-step procedure to create an Entity Framework using the [MS SQL Server](https://en.wikipedia.org/wiki/Microsoft_SQL_Server) database and connect it to the Syncfusion<sup style="font-size:70%">&reg;</sup> control to perform CRUD operations in a ASP.NET Core Application.

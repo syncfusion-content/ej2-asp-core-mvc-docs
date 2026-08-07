@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding script references in ##Platform_Name## control | Syncfusion
-description: Learn here all about adding script references in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: "Adding Script References in ##Platform_Name## | Syncfusion"
+description: Learn how to reference Syncfusion ##Platform_Name## scripts using Static Web Assets, CDN, NPM packages, and the Custom Resource Generator.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Reference Scripts in ASP.NET Core Application
+# Adding Script References in ##Platform_Name##
 
 This section explains the available approaches for referencing client-side scripts and stylesheets for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls. You can reference scripts via **CDN**, **Static Web Assets** (served directly from NuGet packages), **NPM Packages**, or the **Custom Resource Generator (CRG)**. 
 
