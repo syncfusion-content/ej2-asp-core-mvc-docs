@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Chat UI Control | Syncfusion
+title: Events in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Events in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Events
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## Chat UI control
+# Events in ##Platform_Name## Chat UI
 
 This section describes the Chat UI events that will be triggered when appropriate actions are performed. The following events are available in the Chat UI control.
 

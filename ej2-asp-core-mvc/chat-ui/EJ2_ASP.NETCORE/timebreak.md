@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Time break in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Time break in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: Timebreak in ##Platform_Name## Chat UI | Syncfusion®
+description: Checkout and learn about Timebreak in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Time break
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Time break in ##Platform_Name## Chat UI control
+# Time break in ##Platform_Name## Chat UI
 
 ## Show or hide time break
 

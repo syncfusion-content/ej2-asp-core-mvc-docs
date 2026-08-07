@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timestamp in ##Platform_Name## Chat UI Control | Syncfusion
+title: Timestamp in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Timestamp in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Timestamp
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Timestamp in ##Platform_Name## Chat UI control
+# Timestamp in ##Platform_Name## Chat UI
 
 ## Show or hide timestamp
 

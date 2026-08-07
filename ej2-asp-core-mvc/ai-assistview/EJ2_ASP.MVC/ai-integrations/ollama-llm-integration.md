@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LLM Model in ##Platform_Name## AI AssistView Control | Syncfusion
+title: LLM Model in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Integration of LLM Model in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: LLM Model
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate LLM via Ollama with ASP.NET MVC AI AssistView control
+# Integrate LLM via Ollama with ##Platform_Name## AI AssistView
 
 The AI AssistView control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your ASP.NET MVC application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
  

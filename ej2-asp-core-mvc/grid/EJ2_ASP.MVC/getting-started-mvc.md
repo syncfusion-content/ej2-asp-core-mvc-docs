@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ##Platform_Name## Data Grid Getting Started | Syncfusion
+title: ##Platform_Name## Data Grid Getting Started (Quick Setup Guide) | Syncfusion
 description: Learn how to install and configure the ##Platform_Name## Data Grid. Set up a new ##Platform_Name## app and enable paging, sorting, filtering, and grouping.
 platform: ej2-asp-core-mvc
 control: Getting Started Mvc
