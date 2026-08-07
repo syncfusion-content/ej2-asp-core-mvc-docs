@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LLM Model in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: LLM Model in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Integration of LLM Model in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: LLM Model
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate LLM via Ollama with ASP.NET Core Inline AI Assist control
+# Integrate LLM via Ollama with ##Platform_Name## Inline AI Assist
 
 The Inline AI Assist control integrates with [LLM via Ollama](https://ollama.com) to enable advanced conversational AI features in your ASP.NET Core application. The control acts as a user interface where user prompts are sent to the selected LLM model via API calls, providing natural language understanding and context-aware responses.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: LiteLLM in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: LiteLLM in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Integration of LiteLLM in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: LiteLLM
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate Inline AI Assist with LiteLLM model
+# Integrate Inline AI Assist with LiteLLM in ##Platform_Name## model
 
 The **Inline AI Assist** control can also be integrated with [LiteLLM](https://docs.litellm.ai/docs), an open-source proxy that provides a unified, OpenAI-compatible API for multiple LLM providers such as [OpenAI](https://openai.com) and [Azure OpenAI](https://azure.microsoft.com/en-us/products/ai-foundry/models/openai).
 

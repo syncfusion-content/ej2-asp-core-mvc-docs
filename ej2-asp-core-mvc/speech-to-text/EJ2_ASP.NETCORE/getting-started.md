@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Speech To Text Control | Syncfusion
-description: Check out and learn about getting started with Essential ASP.NET Core Speech To Text control, its elements, and more details.
+title: Getting Started with ##Platform_Name## Speech To Text | Syncfusion®
+description: Check out and learn about getting started with Essential ##Platform_Name## Speech To Text control, its elements, and more details.
 platform: ej2-asp-core-mvc
 control: Speech To Text
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Speech To Text control
+# Getting Started with ##Platform_Name## Speech To Text
 
 This section explains how to include the [ASP.NET Core Speech To Text](https://www.syncfusion.com/aspnet-core-ui-controls/speech-to-text) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

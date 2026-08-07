@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header in ##Platform_Name## Chat UI Control | Syncfusion
+title: Header in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Header in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Header
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Header in ##Platform_Name## Chat UI control
+# Header in ##Platform_Name## Chat UI
 
 ## Show or hide header
 

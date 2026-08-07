@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core AI AssistView Control | Syncfusion
+title: Getting Started with ASP.NET Core AI AssistView | Syncfusion®
 description: Check out and learn about getting started with ASP.NET Core AI AssistView control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: AI AssistView 
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core AI AssistView Control
+# Getting Started with ASP.NET Core AI AssistView
 
 This section briefly explains about how to include the [ASP.NET Core AI AssistView](https://www.syncfusion.com/aspnet-core-ui-controls/ai-assistview) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
