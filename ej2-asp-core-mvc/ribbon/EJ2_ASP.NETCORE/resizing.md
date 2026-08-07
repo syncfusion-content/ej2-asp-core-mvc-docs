@@ -12,9 +12,9 @@ documentation: ug
 
 The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes. Also, we have an option to resize the ribbon elements in the custom order.
 
-In classic mode on resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and viceversa.
+In classic mode on resizing, the items size will be changed based on the available width of the tab content from the order of Large-> Medium-> Small and vice versa.
 
-In simplified mode on resizing, the items size will be changed based on the available width of the tab content from the order of Medium-> Small and viceversa.
+In simplified mode on resizing, the items size will be changed based on the available width of the tab content from the order of Medium-> Small and vice versa.
 
 ## Defining items allowed size
 
@@ -51,4 +51,4 @@ You can use the [allowedSizes](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 ## Defining items active size
 
-You can use the [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) property to define the item size intially, before it is being resized. When resized the `activeSize` property is updated based on the ribbon's overflow state, which is determined by the `allowedSizes` property being configured. By default, the value is `Medium`.
+You can use the [activeSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_ActiveSize) property to define the item size initially, before it is being resized. When resized the `activeSize` property is updated based on the ribbon's overflow state, which is determined by the `allowedSizes` property being configured. By default, the value is `Medium`.
