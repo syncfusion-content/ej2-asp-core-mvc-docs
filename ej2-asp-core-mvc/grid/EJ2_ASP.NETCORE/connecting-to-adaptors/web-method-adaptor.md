@@ -1,7 +1,7 @@
 ---
 layout: post
-title: WebMethodAdaptor in Syncfusion ##Platform_Name## Grid.
-description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion ##Platform_Name## Grid.
+title: ##Platform_Name## Grid Bind Data with WebMethodAdaptor | Syncfusion
+description: Learn how to use WebMethodAdaptor in ##Platform_Name## Data Grid to bind remote data, execute CRUD operations, and integrate web methods efficiently.
 platform: ej2-asp-core-mvc
 control: Grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMethodAdaptor in Syncfusion ASP.NET Core Grid 
+# Remote Data Binding with REST API using WebMethod in Data Grid 
 
 The `WebMethodAdaptor` in Syncfusion ASP.NET Core Grid enables seamless data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. Similar to the **URLAdaptor**, the **WebMethodAdaptor** sends query parameters encapsulated within an object named **value**. This **value** object includes various **DataManager** properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 

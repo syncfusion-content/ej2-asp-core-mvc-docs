@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Validation | Syncfusion
+description: Learn how to configure validation in ##Platform_Name## Data Grid using built-in and custom rules, display error messages, and prevent invalid data entry.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Validation in ASP.NET MVC Syncfusion Grid component
+# Validation in ASP.NET MVC Data Grid
 
 Validation is a crucial aspect of data integrity in any application. The ASP.NET MVC Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 
