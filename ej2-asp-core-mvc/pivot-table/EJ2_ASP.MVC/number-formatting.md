@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Number Formatting in ##Platform_Name## Pivot Table Component
-description: Learn here all about Number Formatting in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Number Formatting in ASP.NET MVC Pivot Table | Syncfusion 
+description: Learn here all about Number Formatting in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Number Formatting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Number formatting in ##Platform_Name## Pivot Table component
+# Number formatting in ASP.NET MVC Pivot Table component
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 
@@ -223,6 +223,6 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 ## See Also
 
-* [Customize number, date, and time values](./how-to/customize-number-date-and-time-values/)
+* [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
 * [NumberFormatOptions](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-numbers)
 * [Toolbar](./tool-bar)

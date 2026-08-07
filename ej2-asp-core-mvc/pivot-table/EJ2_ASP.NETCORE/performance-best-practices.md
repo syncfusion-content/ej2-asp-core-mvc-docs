@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Best Practices to Improve Pivot Table Performance
 
 Performance optimization is crucial when working with large datasets in the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
