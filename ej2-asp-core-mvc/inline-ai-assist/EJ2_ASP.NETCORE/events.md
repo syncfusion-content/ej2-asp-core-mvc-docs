@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: Events in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Events in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Events
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## Inline AI Assist control
+# Events in ##Platform_Name## Inline AI Assist
 
 This section describes the Inline AI Assist events that will be triggered when appropriate actions are performed. The following events are available in the Inline AI Assist control.
 

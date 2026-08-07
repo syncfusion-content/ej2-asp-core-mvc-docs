@@ -1,16 +1,16 @@
 ---
 layout: post
-title: MCP in ##Platform_Name## AI AssistView Control | Syncfusion
+title: MCP in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Integration of MCP in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: MCP
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Integrate MCP with ASP.NET Core AI AssistView control
+# Integrate MCP with ASP.NET Core AI AssistView
 
-The AI AssistView control can be integrated with an [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions`. This integration allows the control to reference files in prompts using `@filename`, inject their contents into the model context, and enables analysis of those files alongside the user’s prompt.
+The AI AssistView control can be integrated with an [MCP](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro) backend to enable conversational AI features powered by OpenAI, along with [local tool](https://modelcontextprotocol.io/docs/2026-07-28/develop/connect-local-servers) capabilities such as file-aware analysis via `@mentions`. This integration allows the control to reference files in prompts using `@filename`, inject their contents into the model context, and enables analysis of those files alongside the user’s prompt.
 
 ## Prerequisites
 

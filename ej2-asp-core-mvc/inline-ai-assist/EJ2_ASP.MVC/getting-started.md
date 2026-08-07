@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Inline AI Assist Control | Syncfusion
+title: Getting Started with ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Check out and learn about getting started with ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Inline AI Assist control
+# Getting Started with ASP.NET MVC Inline AI Assist
 
 This section briefly explains how to include the `ASP.NET MVC Inline AI Assist` control in your ASP.NET MVC application using Visual Studio.
 
@@ -116,7 +116,7 @@ You can use the [RelateTo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![RelateTo](images/relateTo.png)
+![RelateTo](../images/relateTo.webp)
 
 ## Response display modes
 
@@ -131,4 +131,4 @@ Responses can be shown in two modes: `Inline` (updates content in-place) and `Po
 {% endhighlight %}
 {% endtabs %}
 
-![ResponseMode](images/response-mode.png)
+![ResponseMode](../images/response-mode.webp)

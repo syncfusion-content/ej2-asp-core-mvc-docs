@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## SpeechToText Control | Syncfusion
+title: Getting Started with ##Platform_Name## Speech To Text | Syncfusion®
 description: Check out and learn about getting started with Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
-control: SpeechToText
+control: Speech To Text
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC SpeechToText control
+# Getting Started with ##Platform_Name## Speech To Text
 
 This section briefly explains how to include the `ASP.NET MVC SpeechToText` control in your ASP.NET MVC application using Visual Studio.
 
@@ -110,7 +110,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Speech
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC SpeechToText control will be rendered in the default web browser.
 
-![ASP.NET MVC SpeechToText Control](images/speech-to-text-control.png)
+![ASP.NET MVC SpeechToText Control](./../images/speech-to-text-control.webp)
 
 ## Adding button content
 
@@ -122,5 +122,5 @@ You can use the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC SpeechToText Start Content](images/speechtotext-buttonsetting.png)
-![ASP.NET MVC SpeechToText Stop Content](images/speechtotext-stop.png)
+![ASP.NET MVC SpeechToText Start Content](./../images/speechtotext-buttonsetting.webp)
+![ASP.NET MVC SpeechToText Stop Content](./../images/speechtotext-stop.webp)
