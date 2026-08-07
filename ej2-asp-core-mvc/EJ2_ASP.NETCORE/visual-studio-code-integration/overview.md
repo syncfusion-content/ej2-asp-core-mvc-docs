@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core (Essential JS 2) Extension | Extension | Syncfusion
-description: The Syncfusion ASP.NET Core Extensions provide quick access to create or configure the Syncfusion ASP.NET projects along with Essential JS 2 components.
+title: Syncfusion ASP.NET Core Extension for Visual Studio Code | Syncfusion
+description: Learn about the Syncfusion ASP.NET Core extension for Visual Studio Code and its features for creating and configuring applications with Essential JS 2 components.
 platform: ej2-asp-core-mvc
 control: Syncfusion Extensions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview of ASP.NET Core Extension for Visual Studio Code
+# Overview of the Syncfusion® ASP.NET Core Extension for Visual Studio Code
 
 The Syncfusion® ASP.NET Core Extension for Visual Studio Code simplifies using Syncfusion® ASP.NET Core components in an ASP.NET Core application by configuring the required Syncfusion® NPM or NuGet packages, namespaces, and themes for you.
 

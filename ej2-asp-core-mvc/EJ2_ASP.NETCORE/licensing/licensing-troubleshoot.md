@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Licensing Troubleshoot in Syncfusion ##Platform_Name## Component
-description: Learn here all about licensing troubleshoot in Syncfusion ##Platform_Name## component of Syncfusion Essential JS 2 and more.
+title: Syncfusion Licensing Troubleshooting for ASP.NET Core | Syncfusion
+description: Find solutions to common Syncfusion licensing issues, validation errors, and licensing questions in ASP.NET Core applications.
 platform: ej2-asp-core-mvc
 control: Licensing Troubleshoot
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing FAQ
+# Syncfusion® Licensing FAQ
 
 ## Is an internet connection required for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> license validation?
 

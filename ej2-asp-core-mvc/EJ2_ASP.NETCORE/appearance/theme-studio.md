@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Theme Studio in ##Platform_Name## Control | Syncfusion
-description: Learn here all about theme studio in Syncfusion ##Platform_Name##. Customize and generate a theme for specific controls.
+title: Theme Studio for ##Platform_Name## Controls | Syncfusion
+description: Learn how to customize themes and generate tailored styles for Syncfusion ##Platform_Name## controls using Theme Studio.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ASP.NET Core Controls
+# Theme Studio Overview of ASP.NET Core Controls
 
 Theme Studio for Essential<sup style="font-size:70%">&reg;</sup> JS 2 can be used to customize a new theme from an existing theme. It doesn't support with Data visualization controls like Chart, Diagram, Gauge, Range Navigator, Maps.
 

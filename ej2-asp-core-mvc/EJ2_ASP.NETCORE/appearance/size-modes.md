@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Size Modes in Syncfusion ##Platform_Name## controls
-description: Learn here all about size modes in Syncfusion ##Platform_Name## and how to apply it to application or specific control.
+title: Size Modes in ASP.NET Core Controls | Syncfusion
+description: Learn how to apply size modes globally or to specific Syncfusion ASP.NET Core controls for a consistent application appearance.
 platform: ej2-asp-core-mvc
 control: common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Size Mode for ASP.NET Core Controls
+# Size Modes in ASP.NET Core Controls
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls support touch (bigger theme) and normal size modes. The following topics explains how to enable the same in your application.
 

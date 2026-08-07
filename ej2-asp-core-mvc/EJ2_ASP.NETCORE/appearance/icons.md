@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## control
-description: Learn here all about icons with its customization in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
+title: Icons in ##Platform_Name## Controls | Syncfusion
+description: Learn about built-in icons, icon customization, and theme-specific icon collections available in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons Library
+# Icons Library in ASP.NET Core Controls
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> JS 2 provides the set of `base64` formatted font icons, that can be utilized in the ASP.NET Core application.
 

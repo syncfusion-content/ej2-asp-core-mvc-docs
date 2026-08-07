@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Introduction to the Figma UI Kit in ##Platform_Name## control | Syncfusion
-description: Check out and learn about the introduction to the Figma UI Kit in Syncfusion ##Platform_Name##. Also, listed the icons by theme-wise.
+title: Figma UI Kits for Syncfusion ##Platform_Name## Controls | Syncfusion
+description: Learn about Syncfusion Figma UI Kits for ##Platform_Name## controls, including design resources, components, templates, and theme-based icon collections.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Figma UI Kits for Syncfusion<sup style="font-size:70%">&reg;</sup> Controls
+# Figma UI Kits for Syncfusion® ASP.NET Core Controls
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> offers [Figma UI kits](https://www.figma.com/@syncfusion) to facilitate effective collaboration between designers and developers. The Figma UI kits are available in four themes: [Material 3](https://www.figma.com/community/file/1454123774600129202/syncfusion-ui-kit-material-3-theme), [Fluent](https://www.figma.com/community/file/1385969120047188707/syncfusion-ui-kit-fluent-theme), [Tailwind](https://www.figma.com/community/file/1385969065626384098/syncfusion-ui-kit-tailwind-theme), and [Bootstrap 5](https://www.figma.com/community/file/1385968977953858272/syncfusion-ui-kit-bootstrap-5-theme). These kits match the themes used in Syncfusion<sup style="font-size:70%">&reg;</sup> controls.
 

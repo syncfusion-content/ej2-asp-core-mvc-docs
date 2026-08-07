@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installing Syncfusion ##Platform_Name## Mac installer - Syncfusion
-description: Learn here about how to install Syncfusion ##Platform_Name## mac installer after downloading from our Syncfusion website.
+title: Install Syncfusion ASP.NET Core Mac Installer | Syncfusion
+description: Learn how to install the Syncfusion ASP.NET Core Mac installer and configure the required development tools.
 platform: ej2-asp-core-mvc
 control: Installation and Deployment
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac Installer
+# Install Syncfusion® ASP.NET Core Mac Installer
 
 The Essential Studio<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Mac installer allows you to create the ASP.NET Core EJ2 application in Visual Studio for Mac with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 components.
 

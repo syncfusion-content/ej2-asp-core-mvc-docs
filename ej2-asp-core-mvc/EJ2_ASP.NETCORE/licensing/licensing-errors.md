@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview of Syncfusion licensing errors - Syncfusion
-description: Learn here about Syncfusion common licensing errors which appears on license validation in Syncfusion ##Platform_Name## applications.
+title: Syncfusion Licensing Errors in ASP.NET Core | Syncfusion
+description: Learn about common Syncfusion licensing errors in ASP.NET Core applications and how to resolve license validation issues.
 platform: ej2-asp-core-mvc
 control: Licensing Errors
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Errors
+# Syncfusion® Licensing Errors
 
 Licensing error popup is displayed with various messages under different circumstances. Here are some ways to resolve different issues.
 
