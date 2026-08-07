@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Range Slider Control
+title: Accessibility in ##Platform_Name## Range Slider | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## Range Slider Control
 
 The Slider is characterized with complete ARIA Accessibility support that helps to access by on-screen readers and other assistive technology devices. This control is designed with the reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/WAI/ARIA/apg/#slider).
 

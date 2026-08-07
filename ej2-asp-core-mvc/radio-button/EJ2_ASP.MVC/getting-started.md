@@ -4,7 +4,7 @@ title: Getting Started with ASP.NET MVC Radio Button Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET MVC Radio Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: ej2-asp-core-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Radio 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Radio Button control will be rendered in the default web browser.
 
-![ASP.NET MVC Radio Button Control](images/radio-button.png)
+![ASP.NET MVC Radio Button Control](images/radio-button.webp)
 
 ## Change the Radio Button state
 

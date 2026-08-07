@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Query Builder Component
+title: Data Binding in ##Platform_Name## Query Builder | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding
+# Data binding in ##Platform_Name## Query builder control
 
 The Query Builder uses `DataManager` to bind the data source, which supports both RESTful JSON data services binding and local JavaScript object array binding. The `DataSource` property can be assigned either with the instance of `DataManager` or JavaScript object array collection. It supports two kinds of data binding method.
 
@@ -49,7 +49,7 @@ N> By default, DataManager uses JsonAdaptor for local data-binding.
 
 ## Remote data
 
-To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder/#datasource) property. To interact with remote data source, provide the endpoint `url`.
+To bind remote  data to the query builder, assign service data as an instance of  `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/documentation/api/query-builder#datasource) property. To interact with remote data source, provide the endpoint `url`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

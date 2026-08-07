@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Variations in ##Platform_Name## Sidebar Component
+title: Variations in ##Platform_Name## Sidebar |  Syncfusion
 description: Learn here all about Variations in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Variations
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Types
+# Types in ##Platform_Name## Sidebar Control
 
-The Sidebar component's expand behaviour can be modified based on the purpose of use.
+The Sidebar component's expand behavior can be modified based on the purpose of use.
 
 ## Expanding types of Sidebar
 
@@ -26,7 +26,7 @@ The Sidebar can be set to initialize based on four different types that are cons
 
 N> [`Auto`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.SidebarType.html#Syncfusion_EJ2_Navigations_SidebarType_Auto) is the default expand mode.
 
-In the following sample, Sidebar component's expand behaviour are demonstrated.
+In the following sample, Sidebar component's expand behavior are demonstrated.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Auto Close in ##Platform_Name## Sidebar Component
+title: Auto Close in ##Platform_Name## Sidebar |  Syncfusion
 description: Learn here all about Auto Close in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Auto Close
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Auto-close
+# Auto-close in ##Platform_Name## Sidebar Control
 
 Sidebar often behaves differently on a mobile versus a desktop display. It has an effective feature that offers to set it in opened or closed state corresponding to the specified resolution. This is achieved through [`mediaQuery`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_MediaQuery) property that allows you to set the Sidebar in an expanded state or collapsed state only in user-defined resolution.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Docking Sidebar in ##Platform_Name## Sidebar Component
+title: Docking Sidebar in ##Platform_Name## Sidebar |  Syncfusion
 description: Learn here all about Docking Sidebar in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Docking Sidebar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dock
+# Dock in ##Platform_Name## Sidebar Control
 
 Dock state of the Sidebar reserves some space on the page that always remains in a visible state when the Sidebar is collapsed. It is used to show the short term of a content like icons alone instead of lengthy text. To achieve this , set [`EnableDock`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_EnableDock) as true along with required [`DockSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_DockSize).
 

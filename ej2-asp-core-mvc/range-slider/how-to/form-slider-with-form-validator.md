@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Form Slider With Form Validator in ##Platform_Name## Range Slider Control | Syncfusion
+title: Form Slider With Form Validator in ##Platform_Name## Range Slider | Syncfusion
 description: Learn here all about Form Slider With Form Validator in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Slider With Form Validator
