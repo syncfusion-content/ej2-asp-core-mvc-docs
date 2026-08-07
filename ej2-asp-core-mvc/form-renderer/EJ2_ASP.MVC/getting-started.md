@@ -198,4 +198,4 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 The output looks like below.
 
-![ASP.NET MVC Form Renderer](../images/form-renderer.png)
+![ASP.NET MVC Form Renderer](images/form-renderer.png)
