@@ -51,7 +51,7 @@ public class TicklinesData
 {% endif %}
 
 
-![Customizing Major and Minor TickLines in Bullet Chart](images/blazor-bullet-chart-tick-line-customization.png)
+![Customizing Major and Minor TickLines in Bullet Chart](images/bullet-chart-tick-line-customization.png)
 
 ## Tick placement
 
@@ -119,7 +119,7 @@ public class FormatData
 
 
 
-![Changing Label Format in Bullet Chart](images/blazor-bullet-chart-label-format.png)
+![Changing Label Format in Bullet Chart](images/bullet-chart-label-format.png)
 
 The following table describes the result of applying some commonly used formats to numeric axis labels.
 
@@ -248,7 +248,7 @@ public class CustomFormatData
 
 
 
-![Bullet Chart with Custom Label Format](images/blazor-bullet-chart-custom-label-format.png)
+![Bullet Chart with Custom Label Format](images/bullet-chart-custom-label-format.png)
 
 ## Label placement
 
@@ -352,7 +352,7 @@ public class Category
 
 
 
-![Bullet Chart with Category Label](images/blazor-bullet-chart-category-label.png)
+![Bullet Chart with Category Label](images/bullet-chart-category-label.png)
 
 ## Category label customization
 
@@ -389,4 +389,4 @@ public class CustomCategory
 
 
 
-![Customizing Axis and Category Label in Bullet Chart](images/blazor-bullet-chart-label-customization.png)
+![Customizing Axis and Category Label in Bullet Chart](images/bullet-chart-label-customization.png)

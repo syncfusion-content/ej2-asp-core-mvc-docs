@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary Customization in ##Platform_Name## PivotTable Control | Syncfusion
-description: Learn here all about Load Balancing Environment in Syncfusion ##Platform_Name## PivotTable component of Syncfusion Essential JS 2 and more.
+title: Summary Customization in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table shows or hides grand totals and subtotals via ShowGrandTotals, ShowRowGrandTotals, and ShowColumnGrandTotals.
 platform: ej2-asp-core-mvc
 control: Summary Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Summary customization in ##Platform_Name## Pivotview component
+# Summary Customization in ASP.NET MVC Pivot Table
 
 ## Show or hide grand totals
 
@@ -99,7 +99,7 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals example](images/sub-total.png)
+![Sub-totals example](images/sub-total.png)
 
 ## Show/hide sub-totals for specific fields
 
@@ -130,7 +130,7 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% endtabs %}
 {% endif %}
 
-![Sub‑totals for specific fields](images/subtotal2.png)
+![Sub-totals for specific fields](images/subtotal2.png)
 
 ## Show sub-totals at top or bottom
 

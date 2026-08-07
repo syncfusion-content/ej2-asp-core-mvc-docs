@@ -1,10 +1,10 @@
 ---
-title: "Data Binding in ASP.NET Core Syncfusion Pivotview component"
+title: PostgreSQL Data Binding in ASP.NET Core Pivot Table | Syncfusion
 component: "Pivot Table"
-description: "Learn how to bind data from a PostgreSQL database in the Syncfusion ASP.NET Core Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how to bind PostgreSQL data to the ASP.NET Core Pivot Table using the Npgsql.EntityFrameworkCore.PostgreSQL provider in a Web API controller.
 ---
 
-# PostgreSQL in EJ2 ASP.NET Core Pivotview Component
+# PostgreSQL Data Binding in ASP.NET Core Pivot Table
 
 This section describes how to consume data from PostgreSQL database using [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) and bind it to the Pivot Table via a Web API controller.
 
