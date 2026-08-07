@@ -132,9 +132,6 @@ You can set margin for gauge from its container through [margin](https://help.sy
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/margin/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Margin.cs" %}
-{% include code-snippet/circulargauge/gauge-appearance/margin/margin.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
