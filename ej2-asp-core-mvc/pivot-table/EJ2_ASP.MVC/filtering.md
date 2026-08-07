@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## SyncfusionPivot Table Component
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Filtering in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List or FilterSettings.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering in ##Platform_Name## Pivot Table component
+# Filtering in ASP.NET MVC Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 
