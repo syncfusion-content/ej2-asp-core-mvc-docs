@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Treemap Component
-description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Internationalization in ##Platform_Name## TreeMap
+description: Learn here all about Internationalization in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Internationalization
+# Internationalization in ##Platform_Name## TreeMap
 
 The TreeMap control supports internationalization for the following elements:
 

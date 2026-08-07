@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bubble Heatmap in Syncfusion ##Platform_Name## Heatmap Chart Component
+title: Bubble HeatMap in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Bubble Heatmap in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bubble Heatmap
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Bubble HeatMap in ##Platform_Name## HeatMap Chart Component
+# Bubble HeatMap in ##Platform_Name## HeatMap Chart
 
 {% if page.publishingplatform == "aspnet-core" %}
 

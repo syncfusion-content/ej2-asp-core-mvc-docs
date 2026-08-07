@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked column chart in ##Platform_Name## Syncfusion 3D Chart Component
+title: Stacked Column in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about stacked column chart in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stacked column chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked column chart in ##Platform_Name## 3D Chart Component
+# Stacked Column in ASP.NET MVC 3D Chart
 
 ## Stacked column chart
 

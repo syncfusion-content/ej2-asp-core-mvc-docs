@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Column chart in ##Platform_Name## Syncfusion 3D Chart Component
+title: Column in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about column chart in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Column chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column chart in ##Platform_Name## 3D Chart Component
+# Column in ASP.NET MVC 3D Chart
 
 ## Column chart
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Treemap Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Overview in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# About Syncfusion ##Platform_Name## TreeMap Component
 
 The tree map control is used to visualize hierarchical data in the form of nested rectangles. Area of each item is calculated based on its corresponding numeric value. All the tree map elements are rendered using Scalable Vector Graphics(SVG).
 

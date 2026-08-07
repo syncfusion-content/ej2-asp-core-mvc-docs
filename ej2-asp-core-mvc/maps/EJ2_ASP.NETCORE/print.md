@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Maps Component
+title: Print and Export in ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Print in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export in ASP.NET Core Maps component
+# Print and Export in ASP.NET Core Maps
 
 ## Print
 

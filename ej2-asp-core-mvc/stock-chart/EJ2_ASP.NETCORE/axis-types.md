@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Axis Types in ##Platform_Name## Stock Chart Component
+title: Axis Types in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Axis Types in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Axis types
+control: Axis Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Axis types
+# Axis Types in ##Platform_Name## Stock Chart
 
 ## DateTime axis
 

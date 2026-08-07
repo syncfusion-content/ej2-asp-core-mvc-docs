@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Labels in Syncfusion ##Platform_Name## Chart Component
+title: Axis Labels in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Axis Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Labels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis Labels in ##Platform_Name## Chart Component
+# Axis Labels in ##Platform_Name## Chart
 
 ## Smart Axis Labels
 

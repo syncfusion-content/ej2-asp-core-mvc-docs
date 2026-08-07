@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Leaf Item in ##Platform_Name## Treemap Component
-description: Learn here all about Leaf Item in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Leaf Item in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Leaf Item in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Leaf Item
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Leaf Item
+# Leaf Item in ##Platform_Name## TreeMap
 
 A leaf item defines a visualized data element and does not contain child nodes but contains parent node if the levels are specified in the TreeMap.
 

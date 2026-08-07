@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom in ##Platform_Name## Range Navigator Component
+title: Customization in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Custom in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ##Platform_Name## Range Navigator
 
 ## Navigator appearance
 

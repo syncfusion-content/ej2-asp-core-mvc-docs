@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Behind Chart in ##Platform_Name## Chart Component
+title: How to render a chart from code behind in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Code Behind Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind Chart
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Render chart from code behind and update the chart using partial view
+# How to render a chart from code behind in ##Platform_Name## Chart
 
 You can render the charts from code behind and update the charts in partial view by calling the partial view action method in ajax.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Progress Bar Control | Syncfusion
+title: Types in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Progress Bar types in ##Platform_Name## ProgressBar Control
+# Types in ASP.NET Core Progress Bar
 
 Change the type of the Progress Bar by setting the `type` attribute on the `<ejs-progressbar>` tag helper. The default is `Linear`; the supported values are `Linear` and `Circular`.
 

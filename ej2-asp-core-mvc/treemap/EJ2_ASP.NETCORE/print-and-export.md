@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print And Export in ##Platform_Name## Treemap Component
-description: Learn here all about Print And Export in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Print and Export in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print And Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export
+# Print and Export in ##Platform_Name## TreeMap
 
 ## Print
 

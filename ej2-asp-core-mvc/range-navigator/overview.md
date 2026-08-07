@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Range Navigator Component
+title: Overview of ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview of ##Platform_Name## Range Navigator
 
 RangeNavigator is a data visualization control. It allows you to scroll and navigate through the data. This control easily combines with other controls such as Chart, Data Grid, etc., to create rich and powerful dashboards.
 

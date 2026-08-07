@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print And Export in ##Platform_Name## Linear Gauge Component
+title: Print and Export in ##Platform_Name## Linear Gauge | Syncfusion
 description: Learn here all about Print And Export in Syncfusion ##Platform_Name## Linear Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print And Export

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in Syncfusion ##Platform_Name## HeatMap Chart Component
+title: Selection in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## HeatMap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection in ##Platform_Name## HeatMap Chart Component
+# Selection in ##Platform_Name## HeatMap Chart
 
 {% if page.publishingplatform == "aspnet-core" %}
 

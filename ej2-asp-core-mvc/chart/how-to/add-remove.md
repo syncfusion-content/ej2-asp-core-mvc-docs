@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Add Remove in ##Platform_Name## Chart Component
-description: Learn here all about Add Remove in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: How to add or remove a series dynamically in ##Platform_Name## Chart | Syncfusion
+description: Learn here all about Add or Remove series in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Add Remove
+control: Add or Remove
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Add or remove a series from the chart dynamically
+# How to add or remove a series dynamically in ##Platform_Name## Chart
 
 You can add or remove the chart series dynamically by using the `addSeries` or `removeSeries` method.
 

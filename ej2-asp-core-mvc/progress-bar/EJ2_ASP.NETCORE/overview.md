@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Progress Bar Component
+title: Overview of ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion ASP.NET Core Progress Bar
 
 The Essential EJ2 ProgressBar is a control that indicates the progress of a task with customizable visuals. It includes features to visualize progress in rectangular and circular shapes, determinate and indeterminate states, segments, and customized ranges in different colors. It also supports animation.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in Syncfusion Chart Component
-description: Learn here all about Accessibility in Syncfusion ASP Core Chart component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Chart | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ASP.NET Core Chart component
+# Accessibility in ##Platform_Name## Chart
 
 The Chart component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

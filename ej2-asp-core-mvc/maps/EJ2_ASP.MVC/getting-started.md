@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Maps Control | Syncfusion
+title: Getting Started with ASP.NET MVC Maps | Syncfusion
 description: Check out and learn about getting started with ASP.NET MVC Maps Control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with the ASP.NET MVC Maps Control
+# Getting Started with ASP.NET MVC Maps
 
 This section explains how to add the [ASP.NET MVC Maps](https://www.syncfusion.com/aspnet-mvc-ui-controls/maps-library) control to your ASP.NET MVC application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

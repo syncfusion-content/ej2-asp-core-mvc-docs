@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States in ##Platform_Name## Progress Bar Component
+title: States in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about States in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: States
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# States
+# States in ASP.NET Core Progress Bar
 
 Visualize progress in different states.
 

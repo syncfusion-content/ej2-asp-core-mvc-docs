@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Progress Bar Component
+title: Types in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Types in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types
+# Types in ASP.NET MVC Progress Bar
 
 Visualize progress in different shapes (rectangle, circle, and semi-circle) to give a unique appearance to your app design.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## Progress Bar Component
+title: Annotation and Label in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Annotation in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Annotation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation and Label
+# Annotation and Label in ASP.NET Core Progress Bar
 
 ## Annotation
 

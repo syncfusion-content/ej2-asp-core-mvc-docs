@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in Syncfusion Range Navigator Component
+title: Accessibility in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP MVC Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ASP.NET MVC Range navigator component
+# Accessibility in ASP.NET MVC Range Navigator
 
 The Range navigator component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

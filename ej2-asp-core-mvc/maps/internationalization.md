@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in Syncfusion ##Platform_Name## Maps Component
+title: Internationalization in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Internationalization
+# Internationalization in ##Platform_Name## Maps
 
 Maps provide support for internationalization for the below elements.
 

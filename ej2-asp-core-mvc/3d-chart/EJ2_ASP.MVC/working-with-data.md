@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with data source in ##Platform_Name## 3D Chart Component
+title: Working with Data in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about working with data source in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working With Data
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Working with data in ##Platform_Name## 3D Chart Component
+# Working with Data in ASP.NET MVC 3D Chart
 
 ## Local data
 

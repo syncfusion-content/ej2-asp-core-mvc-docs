@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Column Chart in ##Platform_Name## Charts
+title: Range Column Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Range Column Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range Column Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Column Chart in ##Platform_Name## Charts
+# Range Column Chart in ##Platform_Name## Chart
 
 ## Range Column
 

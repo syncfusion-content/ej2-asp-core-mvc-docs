@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title in ##Platform_Name## Bullet Chart Component | Syncfusion
+title: Title and Subtitle in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Title in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Title
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Title and Subtitle in ASP.NET MVC Bullet Chart Control
+# Title and Subtitle in ASP.NET MVC Bullet Chart
 
 ## Title
 

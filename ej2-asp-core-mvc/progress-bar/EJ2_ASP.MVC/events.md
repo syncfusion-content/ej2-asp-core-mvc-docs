@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Progress Bar Component
+title: Events in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Events in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Events
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Events
+# Events in ASP.NET MVC Progress Bar
 
 ## ValueChanged
 

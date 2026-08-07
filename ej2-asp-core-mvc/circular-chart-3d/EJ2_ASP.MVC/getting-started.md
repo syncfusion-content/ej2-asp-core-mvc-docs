@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting started with ASP.NET MVC 3D Circular Chart control
+# Getting started with ASP.NET MVC 3D Circular Chart
 
 This section briefly explains about how to include [ASP.NET MVC 3D Circular Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control in your ASP.NET MVC application using Visual Studio.
 

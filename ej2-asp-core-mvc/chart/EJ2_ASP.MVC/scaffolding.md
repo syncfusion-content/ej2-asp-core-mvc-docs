@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding in ##Platform_Name## Chart Component | Syncfusion
+title: Scaffolding in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Scaffolding in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Scaffolding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# ASP.NET MVC Scaffolding
+# Scaffolding in ##Platform_Name## Chart
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> includes an extension for **Visual Studio Scaffolding** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC  Chart controls.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pyramid in ##Platform_Name## Accumulation Chart Component
+title: Pyramid in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Pyramid in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pyramid
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pyramid Chart
+# Pyramid in ASP.NET MVC Accumulation Chart
 
 To render a pyramid series, use the series [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationSeries.html#Syncfusion_EJ2_Charts_AccumulationSeries_Type) as `Pyramid`.
 

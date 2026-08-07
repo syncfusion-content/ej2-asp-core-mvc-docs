@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in Syncfusion ##Platform_Name## Maps Component
+title: About Syncfusion ##Platform_Name## Maps Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Maps Component
 
 The Maps component is used to visualize the geographical data. It is used to represent the statistical data of a particular geographical area on Earth, with user interactivity and provides various customizing options. All the Maps elements are rendered using Scalable Vector Graphics (SVG).
 
