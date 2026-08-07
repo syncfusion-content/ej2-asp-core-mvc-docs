@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips for ASP.NET MVC Grid | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of ASP.NET MVC Grid even binding large data set.
+title: ##Platform_Name## Grid Performance | Syncfusion
+description: Learn how to optimize ##Platform_Name## Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
 platform: ej2-asp-core-mvc
 control: Grid
 documentation: ug
 ---
 
-# Performance tips for ASP.NET MVC Grid
+# Performance Tips for ASP.NET MVC Data Grid
 
 This article is a comprehensive guide on improving the loading performance of the ASP.NET MVC Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the ASP.NET MVC Grid during data binding, ensuring a smooth and efficient user experience.
 

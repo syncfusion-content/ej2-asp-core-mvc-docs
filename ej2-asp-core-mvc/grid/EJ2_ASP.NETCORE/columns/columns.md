@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Columns in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Columns | Syncfusion
+description: Learn how to define and configure columns in ##Platform_Name## Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: ej2-asp-core-mvc
 control: Columns
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Columns in ASP.NET Core Grid Component
+# Columns in ASP.NET Core Data Grid
 
 In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 
@@ -583,7 +583,7 @@ grid.refreshColumns();
 ```
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

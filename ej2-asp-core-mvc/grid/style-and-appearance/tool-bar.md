@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar in ##Platform_Name## Grid Component
-description: Learn here all about Toolbar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Toolbar Style | Syncfusion
+description: Learn how to customize toolbar styles in ##Platform_Name## Data Grid with toolbar items, templates, layout options, and CSS-based styling.
 platform: ej2-asp-core-mvc
 control: Toolbar
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Toolbar in ##Platform_Name## Grid component
+# Toolbar Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the toolbar in the Syncfusion ##Platform_Name## Grid component using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 

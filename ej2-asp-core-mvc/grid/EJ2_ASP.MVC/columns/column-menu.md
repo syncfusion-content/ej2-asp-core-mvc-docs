@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Menu in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Menu | Syncfusion
+description: Learn how to configure and customize the column menu in ##Platform_Name## Data Grid, including sorting, filtering, menu items, and column-specific actions.
 platform: ej2-asp-core-mvc
 control: Column Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column menu in ASP.NET MVC Grid component
+# Column Menu in ASP.NET MVC Data Grid
 
 The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header's menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [ShowColumnMenu](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ShowColumnMenu) property to **true** in the Grid configuration.
 

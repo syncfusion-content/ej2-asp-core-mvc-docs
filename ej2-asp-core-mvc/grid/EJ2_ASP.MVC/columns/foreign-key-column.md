@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Foreign Key Column in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Foreign Key Column in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Foreign Key Column | Syncfusion
+description: Learn how to use foreign key columns in ##Platform_Name## Data Grid to map related data, display associated values, and bind local or remote data sources.
 platform: ej2-asp-core-mvc
 control: Foreign Key Column
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Foreign key column in ASP.NET MVC Grid component
+# Foreign Key Column in ASP.NET Core Data Grid
 
 The Foreign key column in the Syncfusion Grid component allows you to display related data from a foreign key data source in a column within the grid. This feature is particularly useful when you have a column in the grid that represents a foreign key relationship with another data source.
 

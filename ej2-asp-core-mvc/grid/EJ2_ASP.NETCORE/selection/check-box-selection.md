@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Checkbox Selection in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Checkbox Selection in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Checkbox Selection | Syncfusion
+description: Learn how to use Check Box Selection in ##Platform_Name## Data Grid to select multiple rows, enable select-all functionality, and manage selections using APIs.
 platform: ej2-asp-core-mvc
 control: Checkbox Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Check box Selection in ASP.NET CORE Grid component
+# Checkbox Selection in ASP.NET Core Data Grid
 
 Checkbox selection in the Grid component allows you to provide an option to select multiple records by using a checkbox in each row. This feature is particularly useful when you need to perform bulk actions or operations on selected records within the Grid.
 
