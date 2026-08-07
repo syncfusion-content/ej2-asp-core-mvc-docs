@@ -226,4 +226,4 @@ Add the following code to define the model that provides the schema for the Form
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The ASP.NET Core Form Renderer will render in your default web browser.
 
-![ASP.NET Core Form Renderer](../images/form-renderer.png)
+![ASP.NET Core Form Renderer](images/form-renderer.png)
