@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Export Options in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Excel Export Options in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel Export Options | Syncfusion
+description: Learn about Excel export options in ##Platform_Name## TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
 platform: ej2-asp-core-mvc
 control: Excel Export Options
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Export Options
+# Excel Export Options in ##Platform_Name## TreeGrid
 
 The excel export provides an option to customize mapping of the tree grid to excel document.
 

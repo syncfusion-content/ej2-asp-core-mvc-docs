@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Reorder in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Column Reorder in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Column Reorder | Syncfusion
+description: Learn how to reorder columns in ##Platform_Name## TreeGrid using drag-and-drop functionality and customize column arrangement.
 platform: ej2-asp-core-mvc
 control: Column Reorder
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Reorder in ##Platform_Name## Tree Grid Component
+# Column Reorder in ##Platform_Name## TreeGrid
 
 Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`AllowReordering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowReordering.html) to true.
 

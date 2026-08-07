@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf Export in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Pdf Export in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid PDF Export | Syncfusion
+description: Learn how to enable and use PDF export in the ##Platform_Name## TreeGrid, including showing a spinner and providing a custom data source.
 platform: ej2-asp-core-mvc
 control: Pdf Export
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PDF Export in ##Platform_Name## Tree Grid Component
+# PDF Export in ##Platform_Name## TreeGrid
 
 PDF export allows exporting TreeGrid data to PDF document. You need to use the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/grid/#pdfexport) method for exporting. To enable PDF export in the treegrid, set the [`AllowPdfExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPdfExport.html) as true.
 

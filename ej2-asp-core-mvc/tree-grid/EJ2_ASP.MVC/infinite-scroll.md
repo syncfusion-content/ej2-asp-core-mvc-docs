@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Infinite Scroll in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Infinite Scroll in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Infinite Scroll | Syncfusion
+description: Learn how to enable and configure infinite scroll in the ##Platform_Name## TreeGrid for efficient large data handling, cache management, and best practices.
 platform: ej2-asp-core-mvc
 control: Infinite Scroll
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tree Grid Infinite scrolling
+# Infinite Scroll in ##Platform_Name## TreeGrid
 
 Infinite scrolling is used to load a huge amount of data without degrading the Tree Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 

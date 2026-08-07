@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Global Local in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in ##Platform_Name## TreeGrid, including internationalization, localization, and RTL language support.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ASP.NET MVC Tree Grid control
+# Global Localization in ##Platform_Name## TreeGrid
 
 ## Localization
 
