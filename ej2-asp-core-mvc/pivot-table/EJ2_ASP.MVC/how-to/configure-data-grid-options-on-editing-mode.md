@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Configure Data Grid Options On Editing Mode in ##Platform_Name## Pivot Table Component
-description: Learn here all about Configure Data Grid Options On Editing Mode in Syncfusion ##Platform_Name## Pivot Table component of syncfusion and more.
+title: How to Configure Grid in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to configure sort, group, and filter on the ASP.NET MVC Pivot Table's drill-through data grid via the BeginDrillThrough event.
 platform: ej2-asp-core-mvc
 control: Configure Data Grid Options On Editing Mode
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Configure data grid options on editing mode
+# How to Configure Grid in ASP.NET MVC Pivot Table
 
 The ASP.NET MVC Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
 

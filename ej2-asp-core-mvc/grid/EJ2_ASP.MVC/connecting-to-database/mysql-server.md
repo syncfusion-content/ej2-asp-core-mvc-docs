@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MySQL Server Data Binding in Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid MySQL Server Integration | Syncfusion
+description: Learn how to connect ##Platform_Name## Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
 platform: ej2-asp-core-mvc
 control: grid
 keywords: adaptors, customadaptor, urladaptor, remotedata, mysql
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting MySQL Server data to Syncfusion ASP.NET MVC Grid
+# MySQL Server Integration in ASP.NET MVC Data Grid
 
 This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the Syncfusion ASP.NET MVC Grid.
 

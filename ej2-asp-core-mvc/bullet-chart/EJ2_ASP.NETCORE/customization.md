@@ -44,7 +44,7 @@ public class OrientationData
 {% endif %}
 
 
-![Bullet Chart with Orientation](images/blazor-bullet-chart-orientation.png)
+![Bullet Chart with Orientation](images/bullet-chart-orientation.png)
 
 ## Right-to-left (RTL)
 
@@ -80,7 +80,7 @@ public class RightToLeftData
 
 
 
-![Right to Left Flow Direction in Bullet Chart](images/blazor-bullet-chart-right-to-left-direction.png)
+![Right to Left Flow Direction in Bullet Chart](images/bullet-chart-right-to-left-direction.png)
 
 ## Animation
 
@@ -149,4 +149,4 @@ public class Themes
 {% endif %}
 
 
-![Applying Theme to Bullet Chart](images/blazor-bullet-chart-theme.png)
+![Applying Theme to Bullet Chart](images/bullet-chart-theme.png)

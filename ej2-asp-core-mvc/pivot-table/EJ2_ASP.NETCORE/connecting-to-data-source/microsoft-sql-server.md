@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Core Pivotview | Syncfusion
-description: Learn how to bind Microsoft SQL Server Database data in the Syncfusion ASP.NET Core Pivotview component of Syncfusion Essential JS 2 and more.
+title: SQL Server Data Binding in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to bind Microsoft SQL Server data to the ASP.NET Core Pivot Table using SqlClient in a Web API controller, with a PivotController and Database1.mdf.
 platform: ej2-asp-core-mvc
 control: Microsoft SQL Server Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Microsoft SQL Server in EJ2 ASP.NET Core Pivotview Component
+# SQL Server Data Binding in ASP.NET Core Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

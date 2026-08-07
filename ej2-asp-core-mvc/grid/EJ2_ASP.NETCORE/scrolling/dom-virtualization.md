@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtualization in Syncfusion ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about DOM virtualization in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid DOM Virtualization | Syncfusion
+description: Learn how to use DOM Virtualization in ##Platform_Name## Data Grid to render visible rows only, improve performance, and efficiently handle large datasets.
 platform: ej2-asp-core-mvc
 control: DOM virtualization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# DOM virtualization in ASP.NET Core Grid component
+# DOM Virtualization in ASP.NET Core Data Grid
 
 DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth grid interactions.
 

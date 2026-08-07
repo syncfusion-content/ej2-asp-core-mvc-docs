@@ -1,14 +1,14 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Syncfusion Grid Component
-description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid PDF Export Options | Syncfusion
+description: Learn how to customize PDF export in ##Platform_Name## Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Pdf Export Options in ASP.NET Core Grid component
+# PDF Export Options in ASP.NET Core Data Grid
 
 The Syncfusion ASP.NET Core Grid component allows you to customize the PDF export options functionality. This flexibility enables you to have greater component over the exported content and layout to meet your specific requirements.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Toolbar in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Custom Toolbar in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Toolbar | Syncfusion
+description: Learn how to create a custom toolbar in ##Platform_Name## Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
 platform: ej2-asp-core-mvc
 control: Custom Toolbar
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom toolbar in ASP.NET Core Grid component
+# Custom Toolbar in ASP.NET Core Data Grid
 
 Custom toolbar in Syncfusion ASP.NET Core Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid component.
 

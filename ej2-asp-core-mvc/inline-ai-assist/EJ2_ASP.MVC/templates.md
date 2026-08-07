@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## InlineAIAssist Control | Syncfusion
+title: Templates in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Templates in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Templates
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---

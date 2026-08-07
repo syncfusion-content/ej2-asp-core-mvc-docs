@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Headers in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Headers in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Headers | Syncfusion
+description: Learn how to customize column headers in ##Platform_Name## Data Grid with header text, templates, tooltips, and multi-line layouts.
 platform: ej2-asp-core-mvc
 control: Headers
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Headers in ASP.NET MVC Grid component
+# Column Headers in ASP.NET MVC Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 

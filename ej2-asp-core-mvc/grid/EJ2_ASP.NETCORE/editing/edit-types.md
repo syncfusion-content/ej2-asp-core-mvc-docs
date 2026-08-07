@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit Types in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Edit Types | Syncfusion
+description: Learn how to configure edit types in ##Platform_Name## Data Grid, choose appropriate cell editors, customize editing behavior, and manage column editing efficiently.
 platform: ej2-asp-core-mvc
 control: Edit Types
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Edit Types in ASP.NET Core Grid Component
+# Edit Types in ASP.NET Core Data Grid
 
 The ASP.NET Core Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 

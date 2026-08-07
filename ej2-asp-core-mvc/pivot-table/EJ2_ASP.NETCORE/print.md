@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Print in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Print in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table prints the current pivot report (table or chart) by invoking the print method on the underlying Grid or Chart component.
 platform: ej2-asp-core-mvc
 control: Print 
 documentation: ug
 publishingplatform: ##Platform_Name##
 ---
 
-# Print in ##Platform_Name## Pivot Table Component
+# Print in ASP.NET Core Pivot Table
 
 The React Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
