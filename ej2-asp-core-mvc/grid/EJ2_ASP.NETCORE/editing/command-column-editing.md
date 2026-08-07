@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Command Column Editing in ##Platform_Name## Grid Component
-description: Learn here all about Command Column Editing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Command Column Editing | Syncfusion
+description: Learn how to enable command column editing in ##Platform_Name## Data Grid with built-in edit, save, and delete actions, customizable buttons, and event handling.
 platform: ej2-asp-core-mvc
 control: Command Column Editing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Command column editing in ASP.NET Core Grid component
+# Command Column Editing in ASP.NET Core Data Grid
 
 The command column editing feature allows you to add CRUD (Create, Read, Update, Delete) action buttons in a column for performing operations on individual rows.This feature is commonly used when you need to enable inline editing, deletion, or saving of row changes directly within the grid. 
 

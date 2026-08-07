@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar items in ##Platform_Name## AI AssistView Control | Syncfusion
-description: Checkout and learn about Toolbar items in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
+title: Toolbar Items in ##Platform_Name## AI AssistView | Syncfusion®
+description: Checkout and learn about Toolbar Items in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Toolbar items
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Toolbar items in ##Platform_Name## AI AssistView control
+# Toolbar Items in ##Platform_Name## AI AssistView
 
 You can render the AI AssistView toolbar items by using the [items](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.AIAssistViewToolbarSettings.html#Syncfusion_EJ2_InteractiveChat_AIAssistViewToolbarSettings_Items) property in the `e-aiassistview-toolbarsettings`, `e-aiassistview-responsetoolbarsettings`, `e-aiassistview-prompttoolbarsettings`  & `e-aiassistview-footertoolbarsettings` tag helpers.
 

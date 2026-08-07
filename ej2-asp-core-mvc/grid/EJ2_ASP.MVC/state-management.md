@@ -1,7 +1,8 @@
 ---
 layout: post
-title: State management in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about State management in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+layout: post
+title: ##Platform_Name## Grid State Management | Syncfusion
+description: Learn how to manage and persist ##Platform_Name## Data Grid state using local storage, state restoration, version-based persistence, and custom state handling.
 platform: ej2-asp-core-mvc
 control: State management
 publishingplatform: ##Platform_Name##
@@ -9,7 +10,7 @@ documentation: ug
 ---
 
 
-# State Management in ASP.NET MVC Grid component
+# State Management in ASP.NET MVC Data Grid
 
 State management in the ASP.NET MVC Grid component allows you to maintain the grid's state even after a browser refresh or when navigating to a different page within the same browser session. This feature is particularly useful for retaining the grid's configuration and data even after a page reload.
 

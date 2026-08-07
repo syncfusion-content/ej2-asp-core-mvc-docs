@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Chat UI Control | Syncfusion
+title: Templates in ##Platform_Name## Chat UI | Syncfusion®
 description: Checkout and learn about Templates in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Templates
+control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in ##Platform_Name## Chat UI control
+# Templates in ##Platform_Name## Chat UI
 
 The Chat UI control provides several templates for customizing the appearance of the empty conversation area, messages, typing indicator, and more. These templates provide flexibility for users to create a unique, personalized chat experience. 
 

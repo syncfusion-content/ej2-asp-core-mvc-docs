@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Footer Aggregate in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Footer Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Footer Aggregate | Syncfusion
+description: Learn how to display and format footer aggregate values in ##Platform_Name## Data Grid, apply summary calculations, and combine multiple aggregates.
 platform: ej2-asp-core-mvc
 control: Footer Aggregate
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Footer aggregate in ASP.NET Core Grid component
+# Footer Aggregate in ASP.NET Core Data Grid
 
 The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the `footerTemplate` property to render the aggregate value in the footer cells.
 
