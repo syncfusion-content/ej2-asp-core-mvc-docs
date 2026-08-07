@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Resizing in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Resizing in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how the ##Platform_Name## Ribbon resizes elements automatically when space changes, with support for custom resize order in Classic and Simplified modes.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Resizing
+# Resizing in ##Platform_Name## Ribbon
 
 The Ribbon effectively resizes the ribbon elements while being resized. It extends when the ribbon size is increased and collapses when the ribbon size is decreased. The resizing can be performed in both the classic and simplified modes. Also, we have an option to resize the ribbon elements in the custom order.
 

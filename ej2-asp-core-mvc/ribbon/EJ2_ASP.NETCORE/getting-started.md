@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Ribbon Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more details.
-platform: ej2-asp-core-mvc
+title: Getting Started with ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to get started with the ##Platform_Name## Ribbon and explore setup, configuration, and core feature examples for building ribbon interfaces.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Ribbon Control
+# Getting Started with ##Platform_Name## Ribbon
 
 This section briefly explains how to include the [ASP.NET Core Ribbon](https://www.syncfusion.com/aspnet-core-ui-controls/ribbon) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

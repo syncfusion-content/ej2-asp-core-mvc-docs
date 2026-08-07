@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Gallery Items in ##Platform_Name## Ribbon Control | Syncfusion
-description: Checkout and learn about Gallery Items with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Gallery Items in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add a gallery in the ##Platform_Name## Ribbon to display a collection of related items such as icons, content, or images for quick user actions.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Gallery Items in ASP.NET Core Ribbon control
+# Gallery Items in ##Platform_Name## Ribbon
 
 The Ribbon supports Gallery view which allows users to perform specific actions by displaying a collection of related items, including icons, content, or images. You can render the gallery item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Gallery` and customize it by using the [RibbonGallerySettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html), which provides options such as `groups`, `itemCount`, `popupHeight`, `popupWidth` and more.
 
