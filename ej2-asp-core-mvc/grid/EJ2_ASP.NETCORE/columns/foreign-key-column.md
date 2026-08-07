@@ -185,7 +185,7 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 ## Edit template in foreign key column using remote data
 
-The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started-core) component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
+The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a DropDownList component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
 
 This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an AutoComplete component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
