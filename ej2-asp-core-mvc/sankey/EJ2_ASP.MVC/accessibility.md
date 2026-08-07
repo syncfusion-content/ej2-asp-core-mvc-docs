@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Sankey Chart Component
-description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Sankey Chart component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Sankey Chart Component
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Sankey Chart component
+# Accessibility in ##Platform_Name## Sankey Chart component
 
-The Sankey Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria/#roles) roles.
+The Sankey Chart component follows the accessibility guidelines and standards, including [ADA](https://www.ada.gov), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22), and relevant [WAI-ARIA](https://www.w3.org/TR/wai-aria#roles) roles.
 
 The Sankey Chart component's accessibility compliance is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2](https://www.w3.org/TR/WCAG22/) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
+| [WCAG 2.2](https://www.w3.org/TR/WCAG22) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | [Section 508](https://www.section508.gov) Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Screen Reader Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
 | Right-To-Left Support | <img src="https://cdn.syncfusion.com/content/images/documentation/full.png" alt="Yes"> |
@@ -40,7 +40,7 @@ The Sankey Chart component's accessibility compliance is outlined below.
 
 ## WAI-ARIA attributes
 
-The Sankey Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) patterns to meet the accessibility. The following ARIA attributes are used in the Sankey Chart component:
+The Sankey Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert) patterns to meet the accessibility. The following ARIA attributes are used in the Sankey Chart component:
 
 * img (role)
 * button (role)
@@ -51,7 +51,7 @@ The Sankey Chart component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/a
 
 ## Keyboard interaction
 
-The Sankey Chart component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guidelines, making it easier for assistive technology users and keyboard-only users to navigate the chart. The following keyboard shortcuts are supported by the Sankey Chart component.
+The Sankey Chart component follows the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guidelines, making it easier for assistive technology users and keyboard-only users to navigate the chart. The following keyboard shortcuts are supported by the Sankey Chart component.
 
 | **Press** | **To do this** |
 | --- | --- |
