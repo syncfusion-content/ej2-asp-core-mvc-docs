@@ -3,7 +3,7 @@ layout: post
 title: Backstage in ##Platform_Name## Ribbon | Syncfusion
 description: Learn how to add a Backstage view in the ##Platform_Name## Ribbon to display application-level information and settings like user details and options pages.
 control: Ribbon
-platform: ej2-asp-core-Core
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -24,7 +24,7 @@ The menu items can be added to the backstage view by using the [items](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Ribbon Control with backstage menu items](images/ribbon-backstage.png)
+![ASP.NET Core Ribbon Control with backstage menu items](images/ribbon-backstage.gif)
 
 ## Adding footer items
 

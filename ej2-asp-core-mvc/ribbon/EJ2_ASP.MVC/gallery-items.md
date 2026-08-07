@@ -66,7 +66,7 @@ The following sample showcases how to add title attribute to the gallery item us
 
 ![ASP.NET MVC Ribbon Control with Html attributes](./images/ribbon-gallery-attribute.png)
 
-#### Css class
+#### CSS class
 
 You can use the [CssClass](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGalleryItem.html#Syncfusion_EJ2_Ribbon_RibbonGalleryItem_CssClass) property to customize the gallery item.
 
@@ -166,7 +166,7 @@ You can specify the height of the gallery popup by using the [PopupHeight](https
 
 ## Setting popup width
 
-you can specify the width of the gallery popup by using the [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupWidth) propery.
+you can specify the width of the gallery popup by using the [PopupWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupWidth) property.
 
 The example demonstrates the customization of popup with `PopupHeight` and `PopupWidth` properties.
 
