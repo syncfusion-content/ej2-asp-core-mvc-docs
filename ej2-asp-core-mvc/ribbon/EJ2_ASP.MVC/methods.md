@@ -1,9 +1,8 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about methods in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
+title: Methods in ##Platform_Name## Ribbon | Syncfusion
+description: Learn here all about methods in the ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Ribbon
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
