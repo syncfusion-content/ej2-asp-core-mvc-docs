@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Deployment in ##Platform_Name## control
-description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Deployment in ##Platform_Name## control Applications | Syncfusion
+description: Learn how to deploy ##Platform_Name## applications using Visual Studio and the .NET CLI, including IIS, Azure, and self-contained deployment.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Deployment in ASP.NET Core
+# Deployment in ASP.NET Core Applications
 
 This section provides information about deploying ASP.NET Core applications with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 

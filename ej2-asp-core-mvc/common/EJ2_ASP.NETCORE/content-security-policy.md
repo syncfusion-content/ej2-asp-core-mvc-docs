@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content Security Policy in ##Platform_Name## Common Control | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Content Security Policy in ##Platform_Name##  Control | Syncfusion
+description: Learn how to configure Content Security Policy (CSP), generate nonce values, and securely use Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

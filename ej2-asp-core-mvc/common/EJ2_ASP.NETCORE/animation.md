@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in Syncfusion ##Platform_Name## controls
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Animation in ##Platform_Name## controls | Syncfusion
+description: Learn how to use animation effects in Syncfusion ##Platform_Name## controls, animate HTML elements, and control application-wide animations.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

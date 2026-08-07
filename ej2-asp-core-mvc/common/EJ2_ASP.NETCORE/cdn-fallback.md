@@ -1,7 +1,7 @@
 ---
 layout: post
-title: CDN Script References in ##Platform_Name## | Syncfusion
-description: Learn here about referencing Syncfusion ##Platform_Name## control scripts and styles via CDN, including individual control CDN references.
+title: CDN References in ##Platform_Name## Applications | Syncfusion
+description: Learn how to load Syncfusion ##Platform_Name##  scripts and styles from CDN, use individual package references, and configure CDN fallback support.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET Core Controls Compatibility with .NET Versions | Syncfusion
-description: Checkout and learn about Syncfusion ##Platform_Name## Controls Compatibility with .NET Versions and much more.
+title: ##Platform_Name## Components Version Compatibility with .NET | Syncfusion
+description: View supported .NET and .NET Core versions for Syncfusion ASP.NET Core controls and find version compatibility requirements.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## control
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Right-to-Left (RTL) Support in ##Platform_Name## | Syncfusion
+description: Learn how to enable right-to-left (RTL) rendering in Syncfusion ##Platform_Name## controls globally or for individual controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

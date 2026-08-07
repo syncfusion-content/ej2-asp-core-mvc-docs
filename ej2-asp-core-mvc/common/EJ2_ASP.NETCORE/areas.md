@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Control
-description: Checkout and learn about getting started with ##Platform_Name## control of Syncfusion Essential JS 2 and more details.
+title: Areas in ##Platform_Name##  Applications | Syncfusion
+description: CLearn how to create MVC and Razor Pages Areas in ##Platform_Name## applications and configure Syncfusion controls, routing, layouts, and resources.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

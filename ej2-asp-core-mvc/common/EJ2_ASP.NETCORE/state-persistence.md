@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State Persistence in Syncfusion ##Platform_Name## control
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: State Persistence in ##Platform_Name## | Syncfusion
+description: Learn how to persist and restore Syncfusion ##Platform_Name## control state using enablePersistence and browser localStorage.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
