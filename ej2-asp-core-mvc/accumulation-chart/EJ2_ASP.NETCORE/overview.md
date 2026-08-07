@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Accumulation Chart Component
+title: Overview in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Accumulation
 
 A pie chart is a circular graphics, which can be divided into multiple segments to illustrate the numerical proportions. All elements are rendered using the Scalable Vector Graphics (SVG).
 

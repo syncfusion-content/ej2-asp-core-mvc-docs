@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview of ##Platform_Name## Accumulation Chart Component
 
 A pie chart is a circular graphics, which can be divided into multiple segments to illustrate the numerical proportions. All elements are rendered using the Scalable Vector Graphics (SVG).
 
