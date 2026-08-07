@@ -79,7 +79,7 @@ To get the data from data base and render the gauge from code behind, follow the
 
 
 
-**Sample reference** : [`circulargauge sample`](https://github.com/SyncfusionExamples/How-to-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
+**Sample reference** : [`circulargauge sample`](https://github.com/SyncfusionExamples/mvc-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
 
 **Screenshot**
 
