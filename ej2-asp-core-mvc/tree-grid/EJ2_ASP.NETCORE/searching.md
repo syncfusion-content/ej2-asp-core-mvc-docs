@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Searching in ##Platform_Name## Tree Grid Component
-description: Learn here all about Searching in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Searching | Syncfusion
+description: Learn how to enable and customize searching in ##Platform_Name## TreeGrid, including search settings, operators, column-specific search, and advanced options.
 platform: ej2-asp-core-mvc
 control: Searching
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Search
+# Searching in ##Platform_Name## TreeGrid
 
 You can search records in a TreeGrid, by using the **search** method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding search item to the [`toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
 

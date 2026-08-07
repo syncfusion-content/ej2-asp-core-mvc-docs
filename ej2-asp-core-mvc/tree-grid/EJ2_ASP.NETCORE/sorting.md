@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ##Platform_Name## Tree Grid Control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in ##Platform_Name## TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting in Tree Grid Control
+# Sorting in ##Platform_Name## TreeGrid
 
 Sorting enables you to sort data in **Ascending** or **Descending** order. To sort a column, click the column header.
 

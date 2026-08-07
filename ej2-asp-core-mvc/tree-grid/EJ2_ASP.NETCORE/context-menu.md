@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context Menu in ##Platform_Name## Tree Grid Control | Syncfusion
-description: Learn here all about Context Menu in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Context Menu | Syncfusion
+description: Learn how to customize the context menu in ##Platform_Name## TreeGrid, including custom items, dynamic enable/disable options, and API integration.
 platform: ej2-asp-core-mvc
 control: Context Menu
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Context menu in ##Platform_Name## Tree Grid Component
+# Context Menu in ##Platform_Name## TreeGrid
 
 The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html) property.
 

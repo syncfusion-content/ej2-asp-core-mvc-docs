@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Treegrid Styling in ##Platform_Name## Tree Grid Component
-description: Learn here all about Treegrid Styling in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Styling | Syncfusion
+description: Learn how to customize the appearance of ##Platform_Name## TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: ej2-asp-core-mvc
 control: Treegrid Styling
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styling
+# Styling in ##Platform_Name## TreeGrid
 
 To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the ASP.NET CORE controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
