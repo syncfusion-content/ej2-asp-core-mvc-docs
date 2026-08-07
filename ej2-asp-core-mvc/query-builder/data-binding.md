@@ -109,7 +109,7 @@ N> By default, `DataManager` uses `ODataAdaptor` for remote data-binding.
 
 ### Binding with ODatav4 services
 
-The ODatav4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume ODatav4 services. For more details on ODatav4 services, refer to the [`odata documentation`](http://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind ODatav4 service, use the `ODataV4Adaptor`.
+The ODatav4 is an improved version of OData protocols, and the `DataManager` can also retrieve and consume ODatav4 services. For more details on ODatav4 services, refer to the [`odata documentation`](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html). To bind ODatav4 service, use the `ODataV4Adaptor`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

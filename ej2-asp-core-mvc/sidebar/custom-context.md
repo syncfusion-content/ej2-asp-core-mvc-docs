@@ -11,7 +11,7 @@ documentation: ug
 
 # Context
 
-By default, Sidebar initializes context to the body element. Using the [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Sidebar~Target.html) property, set context element to initialize Sidebar inside any HTML element apart from the body element.
+By default, Sidebar initializes context to the body element. Using the [`target`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Sidebar.html#Syncfusion_EJ2_Navigations_Sidebar_Target) property, set context element to initialize Sidebar inside any HTML element apart from the body element.
 
 N> If required , `zIndex` can be set when sidebar act as overlay type.
 

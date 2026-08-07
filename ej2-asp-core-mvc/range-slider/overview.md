@@ -33,6 +33,6 @@ There are three types of Slider:
 
 * **[Limits and Drag Interval](./limits)**: Slider thumb movement restriction and interval dragging.
 
-* **[Accessibility](./accessibility)**: Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+* **[Accessibility](./accessibility)**: Built-in compliance with the [WAI-ARIA](https://www.w3https://www.w3.org/WAI/ARIA/apg/.org/WAI/ARIA/apg/#slider) specifications.
 
 * **[Keyboard Interaction](./accessibility#keyboard-interaction)**: The Slider can be intractable through the keyboard.

@@ -163,6 +163,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/Sidebar/SidebarWithMenu#/material)
-* [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/Sidebar/PanelWithResponsive#/material)
+* [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetmvc/sidebar/sidebarwithmenu#/fluent2)
+* [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetmvc/sidebar/panelwithresponsive#/fluent2)
 * [Usecase Sample](https://ej2.syncfusion.com/showcase/aspnetmvc/webmail/ )

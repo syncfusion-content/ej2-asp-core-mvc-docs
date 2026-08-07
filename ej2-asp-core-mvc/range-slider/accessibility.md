@@ -11,7 +11,7 @@ documentation: ug
 
 # Accessibility
 
-The Slider is characterized with complete ARIA Accessibility support that helps to access by on-screen readers and other assistive technology devices. This control is designed with the reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/TR/wai-aria-practices/#slider).
+The Slider is characterized with complete ARIA Accessibility support that helps to access by on-screen readers and other assistive technology devices. This control is designed with the reference of guidelines document given in the [WAI ARAI Accessibility Practices](https://www.w3.org/WAI/ARIA/apg/#slider).
 
 The Slider control uses the Slider role and the following ARIA properties for its element based on the state.
 
@@ -27,7 +27,7 @@ The Slider control uses the Slider role and the following ARIA properties for it
 
 ## Keyboard interaction
 
-The Keyboard interaction of the Slider control is designed based on the [WAI-ARIA Practices](https://www.w3.org/TR/wai-aria-practices/#slider) described for Slider. Users can use the following shortcut keys to interact with the Slider.
+The Keyboard interaction of the Slider control is designed based on the [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/#slider) described for Slider. Users can use the following shortcut keys to interact with the Slider.
 
 | **Keyboard shortcuts** | **Actions** |
 | --- | --- |

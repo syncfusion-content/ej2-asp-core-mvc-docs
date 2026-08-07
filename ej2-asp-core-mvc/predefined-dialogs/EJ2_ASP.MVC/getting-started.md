@@ -138,7 +138,7 @@ In the below code example, the prompt dialog is displayed on `OK` and `Cancel` b
 
 ## See also
 
-* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetcore/grid/dialogediting#/fluent2)
 * [Load dialog content using AJAX](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](https://ej2.syncfusion.com/aspnetmvc/documentation/dialog/how-to/prevent-closing-of-modal-dialog)

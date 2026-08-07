@@ -113,4 +113,4 @@ The Radio Button [Checked](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/RadioButton/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can also explore our [ASP.NET MVC Radio Button Example](https://ej2.syncfusion.com/aspnetmvc/Button/RadioButton#/bootstrap5) that shows you how to render the Radio Button in ASP.NET MVC.
+N> You can also explore our [ASP.NET MVC Radio Button Example](https://ej2.syncfusion.com/aspnetmvc/button/radiobutton#/fluent2) that shows you how to render the Radio Button in ASP.NET MVC.
