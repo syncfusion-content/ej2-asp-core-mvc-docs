@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Attachments in ##Platform_Name## Chat UI Control | Syncfusion
-description: Checkout and learn about Attachments in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
+title: File Attachments in ##Platform_Name## Chat UI | Syncfusion®
+description: Checkout and learn about File Attachments in Syncfusion ##Platform_Name## Chat UI control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chat UI
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# File Attachments in ##Platform_Name## Chat UI control
+# File Attachments in ##Platform_Name## Chat UI
 
 The Chat UI control supports message attachments, enabling users to upload and send files (images, documents, and more) alongside messages for richer, more contextual conversations. Enable this functionality using the `EnableAttachments` property and customize the behavior through the `AttachmentSettings` configuration.
 

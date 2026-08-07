@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual Scrolling in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Virtual Scrolling in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling and row virtualization in ##Platform_Name## Data Grid to efficiently render large datasets and improve scrolling performance.
 platform: ej2-asp-core-mvc
 control: Virtual Scroll
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Virtual scrolling in ASP.NET Core Grid component
+# Virtual Scrolling in ASP.NET Core Data Grid
 
 The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 

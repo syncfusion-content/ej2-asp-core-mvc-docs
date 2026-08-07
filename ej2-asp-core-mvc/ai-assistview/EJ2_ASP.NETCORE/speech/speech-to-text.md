@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Speech-to-Text With ##Platform_Name## AI AssistView Control | Syncfusion
+title: Speech To Text in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about configuration of Speech-to-Text with Azure OpenAI in ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: AI AssistView
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Speech-to-Text in ASP.NET Core AI AssistView
+# Speech-to-Text in ##Platform_Name## AI AssistView
 
 The Syncfusion ASP.NET Core AI AssistView control integrates `Speech-to-Text` functionality through the browser's [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API). This enables the conversion of spoken words into text using the device's microphone, allowing users to interact with the AI AssistView through voice input.
 

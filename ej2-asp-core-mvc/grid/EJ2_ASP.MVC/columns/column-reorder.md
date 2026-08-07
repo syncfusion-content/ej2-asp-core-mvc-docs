@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Reorder in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column Reorder in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Reorder | Syncfusion
+description: Learn how to reorder columns in ##Platform_Name## Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: ej2-asp-core-mvc
 control: Column Reorder
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column reorder in ASP.NET MVC Grid component
+# Column Reorder in ASP.NET MVC Data Grid
  
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid.
 

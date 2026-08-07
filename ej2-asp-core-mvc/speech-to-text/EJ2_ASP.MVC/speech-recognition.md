@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Speech recognition in ##Platform_Name## SpeechToText Control | Syncfusion
+title: Speech recognition in ##Platform_Name## Speech To Text | Syncfusion®
 description: Checkout and learn about speech recognition in Syncfusion Essential ##Platform_Name## SpeechToText control, its elements, and more.
 platform: ej2-asp-core-mvc
-control: SpeechToText
+control: Speech To Text
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Speech recognition in ##Platform_Name## SpeechToText control
+# Speech Recognition in ##Platform_Name## Speech To Text
 
 ## Retrieving transcripts
 

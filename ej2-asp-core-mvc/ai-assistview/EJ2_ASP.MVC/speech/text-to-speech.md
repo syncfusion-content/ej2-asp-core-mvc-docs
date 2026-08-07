@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Text-to-Speech With ##Platform_Name## AI AssistView Control | Syncfusion
+title: Text To Speech in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about configuration of Text-to-Speech with Azure OpenAI in ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Azure Open AI
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
  
-# Text-to-Speech in ASP.NET MVC AI AssistView
+# Text-to-Speech in ##Platform_Name## AI AssistView
 
 The Syncfusion ASP.NET MVC AI AssistView control provides built-in `Text-to-Speech` (TTS) support using the browser's Web Speech API, specifically the [SpeechSynthesisUtterance](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesisUtterance) interface. This allows AI-generated responses into spoken audio, enhancing accessibility and user interaction.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## AI AssistView Control | Syncfusion
+title: Templates in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Templates in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Templates
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in ##Platform_Name## AI AssistView control
+# Templates in ##Platform_Name## AI AssistView
 
 The AI AssistView provides several template options to customize the banner, prompt, response, suggestions and footer items.
 

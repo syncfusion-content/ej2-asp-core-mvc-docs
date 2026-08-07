@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ASP.NET Core DataGrid Control
-description: Check out and learn about getting started with ##Platform_Name## DataGrid control of Syncfusion Essential JS 2 and more details.
+title: ASP.NET Core Data Grid Getting Started | Syncfusion
+description: Learn how to install and configure the ASP.NET Core Data Grid. Set up a new ASP.NET Core app and enable paging, sorting, filtering, and grouping.
 platform: ej2-asp-core-mvc
 control: Getting Started Core
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with the ASP.NET Core DataGrid Control
+# Getting Started with ASP.NET Core Data Grid Control
 
 This section briefly explains how to include the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/).
 

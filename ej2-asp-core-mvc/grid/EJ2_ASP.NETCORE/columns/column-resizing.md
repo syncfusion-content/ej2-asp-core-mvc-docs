@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Resizing in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column Resizing in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Resizing | Syncfusion
+description: Learn how to resize columns in ##Platform_Name## Data Grid with manual and automatic width adjustments, resize modes, and programmatic resizing options.
 platform: ej2-asp-core-mvc
 control: Column Resizing
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column resizing in ASP.NET Core Grid component
+# Column Resizing in ASP.NET Core Data Grid
 
 Grid component provides an intuitive user interface for resizing columns to fit their content. This feature allows users to easily adjust the width of the columns to improve readability and aesthetics of the data presented. To enable column resizing, set the [allowResizing](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowResizing) property of the grid to **true**.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter Menu in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Filter Menu in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Filter Menu | Syncfusion
+description: Learn how to use Filter Menu in ##Platform_Name## Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
 platform: ej2-asp-core-mvc
 control: Filter Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-# Filter menu in  ASP.NET MVC Grid component
+# Filter Menu in ASP.NET MVC Data Grid
 
 The filter menu in the  ASP.NET MVC Grid component allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 
@@ -209,4 +209,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)
