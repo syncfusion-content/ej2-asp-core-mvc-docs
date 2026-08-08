@@ -78,11 +78,11 @@ You can create Card with a header in a specific structure. For adding header you
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Card](images/card-control.png)
+![ASP.NET MVC Card](images/card-control.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Card/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
-* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/Kanban/Workflow#/material)
+* [Real time example using Card](https://ej2.syncfusion.com/aspnetmvc/kanban/workflow#/fluent2)
 * [How to add a header and content](https://ej2.syncfusion.com/aspnetmvc/documentation/card/header-content)
