@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar Items in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Toolbar Items in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the ##Platform_Name## TreeGrid, including actions, alignment, and best practices.
 platform: ej2-asp-core-mvc
 control: Toolbar Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Toolbar Items in ##Platform_Name## Tree Grid Component
+# Toolbar Items in ##Platform_Name## TreeGrid
 
 ## Built-in toolbar items
 
