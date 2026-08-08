@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Checkbox Selection in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Checkbox Selection in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Checkbox Selection | Syncfusion
+description: Learn how to enable and configure checkbox selection in ##Platform_Name## TreeGrid, including selection modes, persist selection, and checkbox behavior.
 platform: ej2-asp-core-mvc
 control: Checkbox Selection
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Checkbox Selection in ##Platform_Name## Tree Grid Component
+# Checkbox Selection in ##Platform_Name## TreeGrid
 
 Checkbox selection provides an option to select multiple treegrid records with help of checkbox in each row.
 
