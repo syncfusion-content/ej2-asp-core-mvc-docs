@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Infinite Scroll in ##Platform_Name## TreeGrid
+# Immutable Mode in ##Platform_Name## TreeGrid
 
 The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
