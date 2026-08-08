@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter Bar in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Filter Bar in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Filter Bar | Syncfusion
+description: Learn how to use the filter bar in ##Platform_Name## TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: ej2-asp-core-mvc
 control: Filter Bar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Bar in ##Platform_Name## Tree Grid Component
+# Filter Bar in ##Platform_Name## TreeGrid
 
 By setting the [`allowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 
@@ -90,7 +90,7 @@ In the following sample, the dropdown is used as a custom component in the Durat
 
 ## Change default filter bar operator
 
-You can change the default filter operator by extending [`filterModule.filterOperators`](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/filtering/#filter-operators) property in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataBound) event.
+You can change the default filter operator by extending [`filterModule.filterOperators`](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/filtering#filter-operators) property in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataBound) event.
 
 In the following sample, we have changed the default operator for string typed columns as `contains` from `startsWith`.
 {% if page.publishingplatform == "aspnet-core" %}

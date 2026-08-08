@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in ##Platform_Name## Tree Grid Component
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in ##Platform_Name## TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: ej2-asp-core-mvc
 control: Clipboard
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clipboard
+# Clipboard in ##Platform_Name## TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 

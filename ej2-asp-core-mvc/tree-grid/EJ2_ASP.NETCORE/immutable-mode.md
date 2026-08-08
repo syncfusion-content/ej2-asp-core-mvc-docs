@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Immutable Mode in ##Platform_Name## Tree Grid Component
-description: Learn here all about Immutable Mode in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Immutable mode in ##Platform_Name## Treegrid control | Syncfusion
+description: Learn here all about Immutable mode in Syncfusion ##Platform_Name## Treegrid control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Immutable Mode
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Immutable Mode
+# Infinite Scroll in ##Platform_Name## TreeGrid
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
 To enable this feature, you have to set the `enableImmutableMode` property as **true**.
 
