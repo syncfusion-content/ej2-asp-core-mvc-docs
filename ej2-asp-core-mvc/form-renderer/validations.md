@@ -10,7 +10,7 @@ documentation: ug
 
 # Validations in ##Platform_Name## Form Renderer component
 
-Validations make sure a form only accepts values that satisfy the rules declared in the schema. The Form Renderer runs validations declaratively — every rule lives next to the field it constrains, so the form's behavior is fully described by the JSON schema and no hand-written validators are needed.
+Validations make sure a form only accepts values that satisfy the rules declared in the schema. The Form Renderer runs validations declaratively — every rule lives next to the field it constrains, so the form's behavior is fully described by the JSON schema and no hand-written validator is needed.
 
 Validation runs in two situations:
 

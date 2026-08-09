@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dependent Dropdowns in ##Platform_Name## Form Renderer component | Syncfusion
+title: Dependent Dropdowns in ##Platform_Name## Form Renderer | Syncfusion
 description: Learn here all about Dependent Dropdowns in Syncfusion ##Platform_Name## Form Renderer control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dependent Dropdowns
