@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Actions in ##Platform_Name## Form Renderer Component | Syncfusion
-description: Learn here all about Form Actions in Syncfusion ##Platform_Name## Form Renderer control of Syncfusion Essential JS 2 and more.
+title: Form Actions in ASP.NET Core Form Renderer Component | Syncfusion
+description: Learn here all about Form Actions in Syncfusion ASP.NET Core Form Renderer control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Form Actions
 publishingplatform: ##Platform_Name##
