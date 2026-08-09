@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Tree Grid Component
-description: Learn here all about Print in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Print | Syncfusion
+description: Learn how to print ##Platform_Name## TreeGrid, including toolbar integration, page setup, column visibility settings, and print customization options.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print
+# Print in ##Platform_Name## TreeGrid
 
 To print the TreeGrid, use the **print** method from treegrid instance. The print option can be displayed on the [`toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) by adding the **Print** toolbar item.
 

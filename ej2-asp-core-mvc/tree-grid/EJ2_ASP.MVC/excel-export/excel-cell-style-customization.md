@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Excel Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel Cell Style Customization | Syncfusion
+description:  Learn how to customize Excel cell styles in the ##Platform_Name## TreeGrid of Essential JS 2, including conditional formatting and theming options.
 platform: ej2-asp-core-mvc
 control: Excel Cell Style Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Cell Style Customization
+# Excel Cell Style Customization in ##Platform_Name## TreeGrid
 
 ## Conditional cell formatting
 
@@ -46,7 +46,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 The excel export provides an option to include theme for exported excel document.
 
-To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#excelexportproperties).
+To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#excelexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

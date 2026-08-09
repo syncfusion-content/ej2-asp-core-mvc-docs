@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Cell in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Cells | Syncfusion
+description: Learn how to customize and format cells in ##Platform_Name## TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: ej2-asp-core-mvc
 control: Cell
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell in ##Platform_Name## Tree Grid Component
+# Cells in ##Platform_Name## TreeGrid
 
 ## Customize cell styles
 

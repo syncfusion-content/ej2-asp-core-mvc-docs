@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Tree Grid Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Tree Grid control of Essential JS 2 and more details.
+title: ##Platform_Name## TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with ##Platform_Name## TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: ej2-asp-core-mvc
 control: Tree Grid
 publishingplatform: ##Platform_Name##
