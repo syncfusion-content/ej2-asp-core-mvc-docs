@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Min/Max Range Based on Other Fields in ##Platform_Name## Form Renderer component
+# Min/Max Range from Other Fields in ##Platform_Name## Form Renderer
 
 Many forms need a field's allowed range to follow another field on the same form. Typical examples include capping **Purchased Quantity** at the **Total Quantity**, restricting a **Departure Date** to be no earlier than the **Arrival Date**, or letting a discount percentage go no higher than a configured cap.
 
