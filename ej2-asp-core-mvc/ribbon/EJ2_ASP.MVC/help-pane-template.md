@@ -1,14 +1,14 @@
 ---
 layout: post
-title: HelpPaneTemplate in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about HelpPaneTemplate in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Help Pane Template in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to customize the help pane in the ##Platform_Name## Ribbon to display custom content such as document permissions, sharing options, or user information.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Help pane
+# Help Pane Template in ##Platform_Name## Ribbon
 
 The help pane is dedicated area where the users can define help contents like controlling document permissions, sharing features, and more which appears on the right side of the Ribbon. You can use the [HelpPaneTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_HelpPaneTemplate) property to set the help pane contents.
 

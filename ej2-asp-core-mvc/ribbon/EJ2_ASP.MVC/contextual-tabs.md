@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Contextual Tabs in ##Platform_Name## Ribbon Control | Syncfusion
-description: Checkout and learn about Ribbon Contextual Tabs in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Contextual Tabs in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add contextual tabs in the ##Platform_Name## Ribbon that appear contextually for the selected item, with built-in and custom Ribbon item support.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon contextual tabs
+# Contextual Tabs in ##Platform_Name## Ribbon
 
 The Ribbon Contextual tabs are similar to the Ribbon tabs that are displayed on demand based on their needs, such as an image or a table tabs. It supports adding all built-in and custom ribbon items to perform specific actions.
 
