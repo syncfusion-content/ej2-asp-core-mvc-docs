@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Maps Component
+title: Print in ASP.NET Core Maps Control | Syncfusion
 description: Learn here all about Print in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
@@ -12,7 +12,7 @@ documentation: ug
 
 ## Print
 
-The rendered Maps can be printed directly from the browser by calling the [`print`](https://ej2.syncfusion.com/documentation/api/maps/#print) method. To use the print functionality, set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_AllowPrint) property to "**true**".
+The rendered Maps can be printed directly from the browser by calling the [`print`](https://ej2.syncfusion.com/documentation/api/maps/index-default#print) method. To use the print functionality, set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_AllowPrint) property to "**true**".
 
 {% if page.publishingplatform == "aspnet-core" %}
 
