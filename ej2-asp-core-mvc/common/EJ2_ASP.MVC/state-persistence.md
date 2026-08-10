@@ -38,7 +38,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/state-persistence">Grid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/state-management">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>
@@ -68,7 +68,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/state-persistence">Schedule</a></td>
+<td><a href="https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/state-persistence">Schedule</a></td>
 <td>
 <ul>
 <li>currentView</li>
@@ -79,7 +79,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/persistence">Kanban</a></td>
+<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/persistence">Kanban</a></td>
 <td>
 <ul>
 <li>columns</li>
