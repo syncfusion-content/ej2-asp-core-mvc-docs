@@ -15,7 +15,7 @@ The Syncfusion ASP.NET Core Smart TextArea control provides AI-powered autocompl
 ## Setting Up Groq
 
 1. **Create a Groq Account**  
-   Visit [Groq Cloud Console](https://console.groq.com), sign up or sign in, and complete the verification process.
+   Visit [Groq Cloud Console](https://console.groq.com/home), sign up or sign in, and complete the verification process.
 2. **Obtain an API Key**  
    Navigate to [API Keys](https://console.groq.com/keys) in the Groq Console and click "Create API Key."
 3. **Review Model Specifications**  
@@ -203,5 +203,5 @@ Smart TextArea control will be rendered in the default web browser.
 
 If the Groq AI integration does not work, try the following:
 - **No Suggestions Displayed**: Verify that the Groq API key and model name are correct in the configuration. Check the `GroqService` implementation for errors.
-- **HTTP Request Failures**: Ensure a stable internet connection and that the Groq API endpoint (`https://api.groq.com/openai/v1/chat/completions`) is accessible. Test with HTTP/2 instead of HTTP/3 if compatibility issues arise.
+- **HTTP Request Failures**: Ensure a stable internet connection and that the Groq API endpoint **(https://api.groq.com/openai/v1/chat/completions)** is accessible. Test with HTTP/2 instead of HTTP/3 if compatibility issues arise.
 - **Service Registration Errors**: Confirm that `GroqService` and `GroqInferenceService` are registered in **Program.cs**.

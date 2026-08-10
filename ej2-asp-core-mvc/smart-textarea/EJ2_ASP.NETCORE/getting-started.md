@@ -227,7 +227,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 ## Troubleshooting
 
 If you encounter issues, try the following:
-- **NuGet Installation Errors**: Ensure a stable internet connection and set the NuGet package source to `https://www.nuget.org`. Run `dotnet restore` again.
+- **NuGet Installation Errors**: Ensure a stable internet connection and set the NuGet package source to **https://www.nuget.org**. Run `dotnet restore` again.
 - **AI Service Configuration Errors**: Verify the API key, endpoint, and model name in **Program.cs**. Check for typos or incorrect values.
 
 ## See also

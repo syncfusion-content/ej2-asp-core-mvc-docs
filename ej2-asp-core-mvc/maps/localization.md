@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization
+# Localization in ##Platform_Name## Maps Control
 
 The localization library allows localizing the default text content of the Maps component. The Maps component has the static text of some features such as tooltip of zoom toolbar, and that can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 
@@ -41,7 +41,7 @@ The localization library allows localizing the default text content of the Maps 
 </tr>
 </table>
 
-To load translation object in the application, use `load` function of **L10n** class. For more information about localization, refer [here](http://ej2.syncfusion.com/documentation/base/localization.html).
+To load translation object in the application, use `load` function of **L10n** class. For more information about localization, refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

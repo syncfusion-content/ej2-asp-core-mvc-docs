@@ -140,4 +140,4 @@ Here’s the updated sample code with the report configuration and field list su
 ![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/web-how-to-bind-Elasticsearch-database-to-pivot-table) repository.

@@ -11,7 +11,7 @@ documentation: ug
 
 # Data binding in ##Platform_Name## AutoComplete Control
 
-The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#Syncfusion_EJ2_DropDowns_AutoCompleteBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
+The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 
 The AutoComplete also supports different kind of data services such as OData, OData V4, Web API and data formats such as XML, JSON, JSONP with the help of DataManager Adaptors.
 
@@ -55,7 +55,7 @@ The AutoComplete has support to load array of primitive data such as strings and
 
 ### Array of object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#fields) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
 
 In the following example, `Name` column from complex data have been mapped to the `value` field.
 
@@ -90,7 +90,7 @@ public class Countries
 
 ### Array of complex object
 
-The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteBuilder.html#fields) property.
+The AutoComplete can generate its list items through an array of complex data. For this, the appropriate columns should be mapped to the [fields](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Fields) property.
 
 In the following example, `Country.CountryId` column from complex data have been mapped to the `value` field.
 

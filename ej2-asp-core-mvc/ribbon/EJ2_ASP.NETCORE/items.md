@@ -703,7 +703,7 @@ To diplay the items only in the classic layout group, set the mode as `DisplayMo
 
 ### Display items in Simplified only
 
-To diplay the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://help.syncfusion.com/cr/aspnetmvc-core/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
+To diplay the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -736,7 +736,7 @@ To diplay the items only in the simplified layout group, set the mode as `Displa
 
 ### Display items in Overflow popup only
 
-To diplay the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://help.syncfusion.com/cr/aspnetmvc-core/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
+To diplay the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

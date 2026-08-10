@@ -171,4 +171,4 @@ Here’s the updated sample code for ~/Views/Home/Index.cshtml with the report c
 ![Pivot Table bound with PostgreSQL database](../images/postgresql-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a PostgreSQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-PostgreSQL-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a PostgreSQL database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-PostgreSQL-database-to-pivot-table) repository.
