@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Print and Export in ##Platform_Name## Sankey Chart Component
+title: Print and Export in ##Platform_Name## Sankey Chart | Syncfusion
 description: Learn here all about Print and Export in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print and Export
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export in ##Platform_Name## Sankey Chart component
+# Print and Export in ##Platform_Name## Sankey Chart
 
 The Sankey Chart provides comprehensive print and export functionality, enabling users to generate static files in multiple formats (PNG, JPEG, SVG, PDF) or print the diagram directly. This is useful for reports, documentation, sharing, and offline access.
 

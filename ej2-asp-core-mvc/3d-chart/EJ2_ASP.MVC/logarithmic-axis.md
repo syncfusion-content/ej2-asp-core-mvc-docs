@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Logarithmic axis in ##Platform_Name## 3D Chart Component
+title: Logarithmic Axis in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about logarithmic axis in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Logarithmic Axis
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Logarithmic axis in ##Platform_Name## 3D Chart Component
+# Logarithmic Axis in ASP.NET MVC 3D Chart
 
 Logarithmic axis uses logarithmic scale and it is very useful in visualizing data, when it has numerical values in both lower order of magnitude (eg: 10<sup>-6</sup>) and higher order of magnitude (eg: 10<sup>6</sup>).
 

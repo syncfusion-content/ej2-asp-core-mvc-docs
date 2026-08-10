@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bar chart in ##Platform_Name## Syncfusion 3D Chart Component
+title: Bar in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about bar chart in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bar chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Bar chart in ##Platform_Name## 3D Chart Component
+# Bar in ASP.NET MVC 3D Chart
 
 ## Bar chart
 

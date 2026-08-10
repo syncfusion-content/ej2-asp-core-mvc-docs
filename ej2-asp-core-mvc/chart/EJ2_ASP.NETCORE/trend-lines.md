@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trend Lines in ##Platform_Name## Chart Component
+title: Trend Lines in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Trend Lines in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Trend Lines
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Trend Lines in ##Platform_Name## Chart Component
+# Trend Lines in ##Platform_Name## Chart
 
 Trendlines are used to show the direction and speed of price. Trendlines can be generated for Cartesian type series (Line, Column, Scatter, Area, Candle, Hilo etc.) except bar type series. You can add more than one trendline to a series.
 

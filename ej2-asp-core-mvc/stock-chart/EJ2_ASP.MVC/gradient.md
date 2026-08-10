@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradient in ##Platform_Name## Stock Chart Component
+title: Gradient in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Gradient in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gradient
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Gradient in ##Platform_Name## Stock chart control
+# Gradient in ##Platform_Name## Stock Chart
 
 Gradients add depth and modern styling to charts by smoothly blending multiple colors. The Charts component supports two gradient types:
 

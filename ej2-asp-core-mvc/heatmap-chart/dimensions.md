@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in Syncfusion ##Platform_Name## Heatmap Chart Component
+title: Dimensions in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dimensions in ##Platform_Name## HeatMap Chart Component
+# Dimensions in ##Platform_Name## HeatMap Chart
 
 ## Size for container
 

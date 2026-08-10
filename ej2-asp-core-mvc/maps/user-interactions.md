@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interactions in Syncfusion ##Platform_Name## Maps Component
+title: User Interactions in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about User Interactions in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: User Interactions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interactions in ##Platform_Name## Maps Component
+# User Interactions in ##Platform_Name## Maps
 
 ## Zooming
 

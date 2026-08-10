@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Step Area Chart in ##Platform_Name## Charts
+title: Stacked Step Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Stacked Step Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stacked Step Area Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked Step Area Chart in ##Platform_Name## Charts
+# Stacked Step Area Chart in ##Platform_Name## Chart
 
 ## Stacked Step Area
 

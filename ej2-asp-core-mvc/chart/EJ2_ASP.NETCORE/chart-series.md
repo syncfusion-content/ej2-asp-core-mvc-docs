@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart Series in ##Platform_Name## Chart Component
-description: Learn here all about Chart Series in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: Series in ##Platform_Name## Chart | Syncfusion
+description: Learn here all about Series in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Series
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart Series in Chart Component
+# Series in ##Platform_Name## Chart
 
 ## Multiple Series
 

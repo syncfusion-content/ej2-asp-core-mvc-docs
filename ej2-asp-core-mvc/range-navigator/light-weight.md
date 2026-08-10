@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Light Weight in ##Platform_Name## Range Navigator Component
+title: Light Weight in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Light Weight in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Light Weight
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Lightweight range navigator
+# Light Weight in ##Platform_Name## Range Navigator
 
 By default, when the `dataSource` for `series` is empty, a lightweight Range Selector will be shown without Chart.
 
@@ -42,4 +42,4 @@ By default, when the `dataSource` for `series` is empty, a lightweight Range Sel
 
 ## See Also
 
-* [Period Selector](./period-selector/)
+* [Period Selector](./period-selector)

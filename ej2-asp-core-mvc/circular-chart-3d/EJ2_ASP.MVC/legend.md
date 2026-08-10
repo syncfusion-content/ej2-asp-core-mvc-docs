@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Syncfusion 3D Circular Chart Component
+title: Legend in ##Platform_Name## 3D Circular Chart | Syncfusion
 description: Learn here all about legend in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend in ##Platform_Name## 3D Circular Chart Component
+# Legend in ASP.NET MVC 3D Circular Chart
 
 The legend provides information about the data points rendered in the 3D Circular Chart. It can be added by enabling the `Visible` option in the `LegendSettings` property.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stacked Line Chart in ##Platform_Name## Charts
+title: Stacked Line Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Stacked Line Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Stacked Line Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Stacked Line Chart in ##Platform_Name## Charts
+# Stacked Line Chart in ##Platform_Name## Chart
 
 ## Stacked Line
 

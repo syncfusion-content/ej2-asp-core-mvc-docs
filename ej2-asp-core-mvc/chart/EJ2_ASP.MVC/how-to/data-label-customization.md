@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Label Customization in ##Platform_Name## Chart Component
+title: Data Label Customization in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data Label Customization in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Label Customization
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Customize the background color of data label template from webservice
+# How to customize the data label background in ##Platform_Name## Chart
 
 Bind the text and interior information for a point from dataSource. To change the background color in the datalabel template, use `${point.text}`. You have to bind the property from dataSource to name in the data label options to use point.text.
 

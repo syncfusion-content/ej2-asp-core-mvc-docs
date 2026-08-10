@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tool Tip in ##Platform_Name## Range Navigator Component
+title: Tooltip in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Tool Tip in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tool Tip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ##Platform_Name## Range Navigator
 
 <!-- markdownlint-disable MD036 -->
 

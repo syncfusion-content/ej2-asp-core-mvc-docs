@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 100% Stacked Bar Chart in ##Platform_Name## Charts
+title: 100% Stacked Bar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about 100% Stacked Bar Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: 100% Stacked Bar Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# 100% Stacked Bar Chart in ##Platform_Name## Charts
+# 100% Stacked Bar Chart in ##Platform_Name## Chart
 
 ## 100% Stacked Bar
 
