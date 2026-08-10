@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit Types in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Edit Types in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in ##Platform_Name## TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: ej2-asp-core-mvc
 control: Edit Types
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Edit Types in ##Platform_Name## Tree Grid Component
+# Edit Types in ##Platform_Name## TreeGrid
 
 ## Cell edit type and its params
 

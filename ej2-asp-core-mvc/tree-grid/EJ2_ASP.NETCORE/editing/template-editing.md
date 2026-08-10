@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template Editing in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Template Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Template Editing | Syncfusion
+description: Learn how to use template editing in ##Platform_Name## TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: ej2-asp-core-mvc
 control: Template Editing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Template Editing in ##Platform_Name## Tree Grid Component
+# Template Editing in ##Platform_Name## TreeGrid
 
 ## Cell edit template
 
