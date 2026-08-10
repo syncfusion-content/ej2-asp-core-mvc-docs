@@ -1,14 +1,14 @@
 ---
 layout: post
-title: File Menu in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about File Menu in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: File Menu in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add a built-in file menu in the ##Platform_Name## Ribbon with configurable menu items for actions like creating, opening, and saving documents.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# File Menu
+# File Menu in ##Platform_Name## Ribbon
 
 The Ribbon control provides a built-in file menu that allows you to add menu items for performing specific actions. The file menu can be enabled by setting the [FileMenu](https://help.syncfusion.com/cr/aspnetMVC-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_FileMenu) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tabs and Groups in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Tabs and Groups in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Tabs and Groups in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to organize the ##Platform_Name## Ribbon into a hierarchy of tabs, groups, and items to provide structured access to commands and related actions.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tabs and Groups
+# Tabs and Groups in ##Platform_Name## Ribbon
 
 The Ribbon control consists of a series of tabs that are organized into groups to enable quick access to specific commands or tools. Each tab contains a set of groups, and each group contains collections of items that are logically related to each other.
 

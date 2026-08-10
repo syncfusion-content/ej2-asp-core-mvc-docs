@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Accessibility in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how the ##Platform_Name## Ribbon supports accessibility with WCAG 2.2, ADA, and Section 508 standards, including ARIA roles and keyboard navigation.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Ribbon control
+# Accessibility in ##Platform_Name## Ribbon
 
 The Ribbon control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

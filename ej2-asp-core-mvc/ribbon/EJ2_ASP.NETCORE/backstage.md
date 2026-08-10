@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Backstage in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Ribbon Backstage in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-Core
+title: Backstage in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add a Backstage view in the ##Platform_Name## Ribbon to display application-level information and settings like user details and options pages.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ribbon Backstage
+# Backstage in ##Platform_Name## Ribbon
 
 The Ribbon supports backstage view which is an addition to the traditional file menu. It displays information like application settings, user details, etc. The backstage view can be enabled by setting the [backStageMenu](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_BackStageMenu) property.
 
@@ -24,7 +24,7 @@ The menu items can be added to the backstage view by using the [items](https://h
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET Core Ribbon Control with backstage menu items](images/ribbon-backstage.png)
+![ASP.NET Core Ribbon Control with backstage menu items](images/ribbon-backstage.gif)
 
 ## Adding footer items
 
