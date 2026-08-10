@@ -10,7 +10,7 @@ documentation: ug
 
 # Change orientation in Menu Control
 
-Orientation in menu items can be changed horizontally or vertically using the [`orientation`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~Orientation.html) property. By default, it is horizontally aligned.
+Orientation in menu items can be changed horizontally or vertically using the [`orientation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_Orientation) property. By default, it is horizontally aligned.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

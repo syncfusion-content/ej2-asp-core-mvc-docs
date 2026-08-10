@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Multi Select Component
+title: Overview in ##Platform_Name## Multi Select | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Multi Select Control
 
 The MultiSelect control contains a list of predefined values from which a multiple value can be chosen. The functionality of MultiSelect resembles the SELECT form element of HTML.
 

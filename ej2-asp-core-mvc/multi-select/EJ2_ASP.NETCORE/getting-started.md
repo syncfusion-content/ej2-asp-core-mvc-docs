@@ -97,7 +97,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-After initialization, populate the [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) with data using the [dataSource](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~DataSource.html) property with an array of string values.
+After initialization, populate the [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataSource) property with an array of string values.
 
 The following example illustrates the output in your browser.
 
@@ -111,7 +111,7 @@ The following example illustrates the output in your browser.
 
 By default, the width of the popup list automatically adjusts according to the [ASP.NET Core MultiSelect](https://www.syncfusion.com/aspnet-core-ui-controls/multiselect-dropdown) input element's width, and the height automatically adjusts according to the height of the popup list items.
 
-The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupHeight.html) and [popupWidth](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.MultiSelect~PopupWidth.html) properties respectively.
+The height and width of the popup list can also be customized using the [popupHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_PopupHeight) and [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_PopupWidth) properties respectively.
 
 In the following sample, the popup list’s width and height are configured.
 
