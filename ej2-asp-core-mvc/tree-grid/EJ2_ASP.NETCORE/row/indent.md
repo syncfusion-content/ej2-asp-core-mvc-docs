@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Indent and Outdent Feature in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Indent and Outdent Feature in Syncfusion ##Platform_Name## Tree Grid component and much more.
+title: ##Platform_Name## TreeGrid Indent and Outdent | Syncfusion
+description: Learn how to indent and outdent rows in ##Platform_Name## TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: ej2-asp-core-mvc
 control: Indent and Outdent
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Indent and Outdent in ##Platform_Name## Tree Grid Component
+# Indent and Outdent in ##Platform_Name## TreeGrid
 
 The Indent and Outdent feature will help to change the hierarchy level of rows in tree grid. The indent action moves the selected row as the last child of its previous row, whereas the outdent action moves the selected row as a sibling to its parent row.
 
