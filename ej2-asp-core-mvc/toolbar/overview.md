@@ -24,4 +24,4 @@ The ToolBar displays a group of command buttons arranged horizontally.
 
 5. **[RTL Support]**: The Toolbar supports right to left alignment.
 
-6. **[Accessibility](./accessibility/)** : The Toolbar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications and it is achieved through attributes.
+6. **[Accessibility](./accessibility/)** : The Toolbar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications and it is achieved through attributes.

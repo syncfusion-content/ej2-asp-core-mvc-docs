@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Wizard Using Tab in ##Platform_Name## Tab Component
+title: Create Wizard Using Tab in ##Platform_Name## Tab | Syncfusion
 description: Learn here all about Create Wizard Using Tab in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Wizard Using Tab
@@ -27,7 +27,7 @@ Create the following contents for each tab in the wizard.
 1. **Search tab:**
    Created with [`DropDownList`] to select the source, destination and type of ticket. A [`DatePicker`] for choosing the date of journey.
 2. **Train tab:**
-   Based on the selected start and end point, populated Grid with random list of available seats and train list. Initially define the columnsand row selected event for validating, after the source and destination chosen update the [`dataSource`] for the Grid.
+   Based on the selected start and end point, populated Grid with random list of available seats and train list. Initially define the columns and row selected event for validating, after the source and destination chosen update the [`dataSource`] for the Grid.
 3. **Passenger tab:**
    A table with Textbox, Numeric, DropDownList for adding passenger name, age, gender and preferred berth/seat. Add validation on entering passenger details to proceed.
 4. **Payment tab:**

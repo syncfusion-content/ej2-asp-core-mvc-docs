@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Splitt
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Splitter control will be rendered in the default web browser.
 
-![ASP.NET MVC Splitter Control](images/default.png)
+![ASP.NET MVC Splitter Control](images/default.webp)
 
 ## Load content to the pane
 
@@ -107,7 +107,7 @@ You can load the pane contents in either HTML element or string types using [Con
 {% endhighlight %}
 {% endtabs %}
 
-![Loading Content to Panes in ASP.NET MVC Splitter](images/content.png)
+![Loading Content to Panes in ASP.NET MVC Splitter](images/content.webp)
 
 ## Configure pane size
 
@@ -134,7 +134,7 @@ Splitter allows you to change the pane dimensions by resizing the panes. By defa
 {% endhighlight %}
 {% endtabs %}
 
-![Resizable Panes in ASP.NET MVC Splitter](images/resizable.png)
+![Resizable Panes in ASP.NET MVC Splitter](images/resizable.webp)
 
 ## Set minimum and maximum pane sizes
 
@@ -156,7 +156,7 @@ Splitter supports both `Horizontal` and `Vertical` orientation for the panes. By
 {% endhighlight %}
 {% endtabs %}
 
-![Orientation in ASP.NET MVC Splitter Control](images/orientation.png)
+![Orientation in ASP.NET MVC Splitter Control](images/orientation.webp)
 
 ## Nested Splitter
 
@@ -170,7 +170,7 @@ Also you can render the nested splitter using direct child of the splitter pane.
 {% endhighlight %}
 {% endtabs %}
 
-![Nested ASP.NET MVC Splitter Control](images/nested-splitter.png)
+![Nested ASP.NET MVC Splitter Control](images/nested-splitter.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Splitter/ASP.NET%20MVC%20Razor%20Examples).
 

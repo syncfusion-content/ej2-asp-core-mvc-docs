@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Different Layouts in ##Platform_Name## Splitter Component
+title: Different Layouts in ASP.NET MVC Splitter | Syncfusion
 description: Learn here all about Different Layouts in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Different Layouts
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Different layouts
+# Different layouts in ASP.NET MVC Splitter Control
 
 By using splitter control, you can create the different layouts with multiple and nested panes.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Timepicker Component
+title: Accessibility in ##Platform_Name## Timepicker | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -92,7 +92,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/timepicker/accessibility/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -101,7 +102,8 @@ In the below sample use the `alt+t` keys to focus the TimePicker control.
 {% include code-snippet/timepicker/accessibility/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accessibility.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## Ensuring accessibility

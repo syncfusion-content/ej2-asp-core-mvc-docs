@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Special Points Customization in ##Platform_Name## Sparkline Component
+title: Special Points Customization in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Special Points Customization in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Special Points Customization
