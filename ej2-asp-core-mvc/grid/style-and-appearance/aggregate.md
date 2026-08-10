@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregate in ##Platform_Name## Grid Component
-description: Learn here all about Aggregate in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Aggregate Customization | Syncfusion
+description: Learn how to customize aggregate styles in ##Platform_Name## Data Grid with aggregate rows, cells, templates, and visual formatting options.
 platform: ej2-asp-core-mvc
 control: Aggregate
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Aggregate in ##Platform_Name## Grid component
+# Aggregate Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of aggregate elements in the Syncfusion ##Platform_Name## Grid component using CSS. Below are examples of how to customize the aggregate root element and the aggregate cell elements.
 

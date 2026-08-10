@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Syncfusion Pivot Table
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table binds JSON, REST, CSV, and remote data sources via the DataSource property, DataManager, or a Web API controller.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding in ##Platform_Name## PivotView Component
+# Data Binding in ASP.NET MVC Pivot Table
 
 ## JSON
 

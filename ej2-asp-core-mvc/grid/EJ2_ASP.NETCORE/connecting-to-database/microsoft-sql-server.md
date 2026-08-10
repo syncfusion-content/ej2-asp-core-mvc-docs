@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Syncfusion ##Platform_Name## Grid
-description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion ##Platform_Name## Grid, and perform CRUD operations.
+title: ##Platform_Name## Grid Microsoft SQL Server Integration | Syncfusion
+description: Learn how to connect ##Platform_Name## Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
 control: Microsoft SQL
 platform: ej2-asp-core-mvc
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Connecting Microsoft SQL Server data to Syncfusion ASP.NET Core Grid
+# Microsoft SQL Server Integration in ASP.NET Core Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion ASP.NET Core Grid.
 

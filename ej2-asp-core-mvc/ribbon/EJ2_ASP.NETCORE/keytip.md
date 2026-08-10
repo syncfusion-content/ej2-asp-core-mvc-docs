@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Keytip in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Keytip in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Keytip in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to enable keyboard navigation in the ##Platform_Name## Ribbon using KeyTips that activate when the Alt key is pressed for fast access to items.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Keytips in ASP.NET Core Ribbon control
+# Keytip in ##Platform_Name## Ribbon
 
 The Ribbon supports keyboard navigations to interact the ribbon items using the keytips which can be enabled by setting the [enableKeyTips](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.ribbon.ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_EnableKeyTips) property.
 

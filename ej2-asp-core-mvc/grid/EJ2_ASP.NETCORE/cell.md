@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Cell in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Cells | Syncfusion
+description: Learn how to customize ##Platform_Name## Data Grid cells with HTML content, text wrapping, cell styling, clip modes, tooltips, and grid line configuration.
 platform: ej2-asp-core-mvc
 control: Cell
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Cell in ASP.NET Core Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component
+# Cells in ASP.NET Core Data Grid
 
 In the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 

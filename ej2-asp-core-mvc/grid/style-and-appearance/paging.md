@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Grid Component
-description: Learn here all about Paging in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Paging Customization | Syncfusion
+description: Learn how to customize paging styles in ##Platform_Name## Data Grid with pager templates, page size controls, layout options, and pager UI customization.
 platform: ej2-asp-core-mvc
 control: Paging
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Paging in ##Platform_Name## Grid component
+# Paging Style in ##Platform_Name## Data Grid
 
 You can customize the appearance of the paging elements in the Syncfusion ##Platform_Name## Grid component using CSS. Here are examples of how to customize the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and pager current page numeric element.
 

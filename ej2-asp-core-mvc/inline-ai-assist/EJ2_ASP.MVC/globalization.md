@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Inline AI Assist Control | Syncfusion
-description: Checkout and learn about Globalization in ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Inline AI Assist | Syncfusion®
+description: Checkout and learn about Globalization in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ##Platform_Name## Inline AI Assist control
+# Globalization in ##Platform_Name## Inline AI Assist
 
 ## Localization
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Chat UI Control | Syncfusion
+title: Getting Started with ASP.NET Core Chat UI | Syncfusion®
 description: Check out and learn about getting started with ASP.NET Core Chat UI control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Chat UI
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Chat UI Control
+# Getting Started with ASP.NET Core Chat UI
 
 This section briefly explains how to include the [ASP.NET Core Chat UI](https://www.syncfusion.com/aspnet-core-ui-controls/chat-ui) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

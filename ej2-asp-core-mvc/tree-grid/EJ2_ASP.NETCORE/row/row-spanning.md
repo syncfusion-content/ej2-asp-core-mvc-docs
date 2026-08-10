@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Spanning in ##Platform_Name## TreeGrid Component | Syncfusion
-description: Learn here all about Row Spanning in Syncfusion ##Platform_Name## TreeGrid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Spanning | Syncfusion
+description: Learn how to use row spanning in ##Platform_Name## TreeGrid to merge cells across rows and create customized data layouts and presentations.
 platform: ej2-asp-core-mvc
 control: Row Spanning
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Row Spanning in ##Platform_Name## TreeGrid Component
+# Row Spanning in ##Platform_Name## TreeGrid
 
 Row spanning in the TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

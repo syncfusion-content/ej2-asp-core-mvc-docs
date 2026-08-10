@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Rendering in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Column Rendering in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Column Rendering | Syncfusion
+description: Learn how to customize column rendering in ##Platform_Name## Data Grid using cell templates, header templates, and flexible layouts for rich data presentation.
 platform: ej2-asp-core-mvc
 control: Column Rendering
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Column rendering in ASP.NET Core Grid component
+# Column Rendering in ASP.NET Core Data Grid
 
 In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
 

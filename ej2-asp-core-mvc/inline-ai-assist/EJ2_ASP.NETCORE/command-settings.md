@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Commands in ##Platform_Name## InlineAIAssist Control | Syncfusion
+title: Commands in ##Platform_Name## Inline AI Assist | Syncfusion®
 description: Checkout and learn about Command items in Syncfusion ##Platform_Name## Inline AI Assist control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Command settings
+control: Inline AI Assist
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Commands configuration in ##Platform_Name## Inline AI Assist control
+# Commands Configuration in ##Platform_Name## Inline AI Assist
 
-You can render and use the command action popup by using the [commands](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistCommandSettings_Commands) property in the `e-inlineaiassist-commandsettings` tag helper. This property helps to supply commands, control popup dimensions, and customize behavior.
+You can render and use the command action popup by using the [commands](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InteractiveChat.InlineAIAssistCommandSettings.html#Syncfusion_EJ2_InteractiveChat_InlineAIAssistCommandSettings_Commands) property in the `<e-inlineaiassist-commandsettings>` tag helper. This property helps to supply commands, control popup dimensions, and customize behavior.
 
 ## Configure command items
 

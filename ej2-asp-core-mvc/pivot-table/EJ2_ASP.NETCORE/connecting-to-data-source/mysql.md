@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Data Binding in ASP.NET Core Syncfusion Pivotview component"
-description: "Learn how to bind data from a MySQL database in the Syncfusion ASP.NET Core Pivot Table of Syncfusion Essential JS 2 and more."
+title: MySQL Data Binding in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to bind MySQL data to the ASP.NET Core Pivot Table using MySql.Data in a Web API controller, exposed as JSON via a PivotController endpoint.
 platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# MySQL in EJ2 ASP.NET Core Pivotview Component
+# MySQL Data Binding in ASP.NET Core Pivot Table
 
 This section describes how to retrieve data from a MySQL database using [MySqlClient](https://mysqlclient.readthedocs.io) and bind it to the Pivot Table via a Web API controller.
 

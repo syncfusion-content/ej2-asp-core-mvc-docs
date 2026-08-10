@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Grid in Server in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Exporting Grid in Server in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Server-Side PDF Export | Syncfusion
+description: Learn how to export ##Platform_Name## Data Grid data using server-side PDF generation, API endpoints, and efficient export processing for large datasets.
 platform: ej2-asp-core-mvc
 control: Exporting Grid in Server
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Exporting Grid in Server in ASP.NET Core Grid Component
+# Server dependencies in ASP.NET Core Data Grid
 
 The Grid component provides an option to export grid data to a PDF document on the server side using the Grid server export library. This allows you to perform PDF export operations on the server, providing additional security and flexibility. To enable server-side PDF exporting, you need to configure the server dependencies and implement the necessary server configuration.
 

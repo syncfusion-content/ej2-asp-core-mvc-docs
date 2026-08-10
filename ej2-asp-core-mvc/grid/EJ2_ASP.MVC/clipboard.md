@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard in Syncfusion ##Platform_Name## Grid Component
-description: Learn here all about Clipboard in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Clipboard | Syncfusion
+description: Learn how to use clipboard features in ##Platform_Name## Data Grid, including copy, paste, autofill, keyboard shortcuts, and clipboard data operations.
 platform: ej2-asp-core-mvc
 control: Clipboard
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Clipboard in ASP.NET MVC Grid Component
+# Clipboard in ASP.NET MVC Data Grid
 
 The clipboard feature in the Syncfusion ASP.NET MVC Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
 

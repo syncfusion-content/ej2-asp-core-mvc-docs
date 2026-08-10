@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Number Formatting in ASP.NET MVC Pivot Table | Syncfusion 
-description: Learn here all about Number Formatting in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Number Formatting in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table formats numeric, currency, and percentage values via FormatSettings using format codes N, C, and P.
 platform: ej2-asp-core-mvc
 control: Number Formatting
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Number formatting in ASP.NET MVC Pivot Table component
+# Number Formatting in ASP.NET MVC Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 

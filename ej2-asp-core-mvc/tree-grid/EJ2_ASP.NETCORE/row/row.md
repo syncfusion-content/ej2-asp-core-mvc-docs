@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows Customization in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about rows customization in Syncfusion ##Platform_Name## Tree Grid component and much more.
+title: ##Platform_Name## TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in ##Platform_Name## TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: ej2-asp-core-mvc
 control: Row
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows in ##Platform_Name## Tree Grid Component
+# Rows in ##Platform_Name## TreeGrid
 
 The row represents record details fetched from data source.
 

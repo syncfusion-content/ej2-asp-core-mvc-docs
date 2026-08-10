@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Export in ##Platform_Name## Syncfusion Pivot Table Component
-description: Learn here all about Excel Export in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Excel Export in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the ExcelExport and CSVExport methods.
 platform: ej2-asp-core-mvc
 control: Excel Export
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Export in the ASP.NET MVC Pivot Table Component
+# Excel Export in ASP.NET MVC Pivot Table
 
 The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the  [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property of the [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
 

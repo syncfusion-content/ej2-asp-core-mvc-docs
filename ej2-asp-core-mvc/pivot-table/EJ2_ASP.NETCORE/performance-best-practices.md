@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance tips for ##Platform_Name## Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion ##Platform_Name## Pivot Table component and much more.
+title: Performance Best Practices in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to improve the ASP.NET Core Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
 platform: ej2-asp-core-mvc
 control: Performance best practices
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Best Practices to Improve Pivot Table Performance
+# Performance Best Practices in ASP.NET Core Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 

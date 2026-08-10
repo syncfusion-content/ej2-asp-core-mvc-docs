@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Grid Control | Syncfusion
-description: Learn here all about Paging in Syncfusion ##Platform_Name## Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Paging | Syncfusion
+description: Learn how to configure paging in ##Platform_Name## Data Grid with client and server paging, page size options, pager templates, and navigation controls.
 platform: ej2-asp-core-mvc
 control: Paging
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Paging in ASP.NET Core Grid component
+# Paging in ASP.NET Core Data Grid
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 

@@ -164,6 +164,6 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-Ge
 
 1. [Getting Started with ASP.NET Core in Visual Studio Mac](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/visual-studio-mac)
 2. [Getting Started with ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)
-3. [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetcore/Sidebar/SidebarWithMenu#/material)
-4. [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetcore/Sidebar/PanelWithResponsive#/material)
+3. [Sidebar with Menu Component](https://ej2.syncfusion.com/aspnetcore/sidebar/sidebarwithmenu#/fluent2)
+4. [Sidebar Responsive Panel](https://ej2.syncfusion.com/aspnetcore/sidebar/panelwithresponsive#/fluent2)
 5. [Use Case Sample](https://showcase.syncfusion.com/aspnetcore/webmail/)

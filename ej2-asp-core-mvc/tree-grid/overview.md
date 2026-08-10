@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Tree Grid Component  | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Key Features | Syncfusion
+description: Explore the key features of ##Platform_Name## TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Tree Grid Component
+# Key Features of ##Platform_Name## TreeGrid
 
 The Tree Grid component is a feature-rich control used to visualize self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
 

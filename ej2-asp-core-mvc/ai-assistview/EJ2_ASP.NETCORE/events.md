@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## AI AssistView Control | Syncfusion
+title: Events in ##Platform_Name## AI AssistView | Syncfusion®
 description: Checkout and learn about Events in Syncfusion ##Platform_Name## AI AssistView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Events
+control: AI AssistView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## AI AssistView control
+# Events in ##Platform_Name## AI AssistView
 
 This section describes the AI AssistView events that will be triggered when appropriate actions are performed. The following events are available in the AI AssistView control.
 

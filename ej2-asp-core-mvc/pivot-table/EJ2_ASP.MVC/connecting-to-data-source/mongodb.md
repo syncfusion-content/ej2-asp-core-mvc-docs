@@ -1,12 +1,12 @@
 ---
 layout: post
-title: MongoDB Data Binding in ASP.NET MVC Syncfusion Pivot Table
-description: "Learn how to bind data from a MongoDB Database in the Syncfusion ASP.NET MVC Pivot Table of Syncfusion Essential JS 2 and more."
+title: MongoDB Data Binding in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to bind MongoDB data to the ASP.NET MVC Pivot Table using MongoDB.Driver and MongoDB.Bson in a Web API controller exposed as JSON.
 platform: ej2-asp-core-mvc
 documentation: ug
 ---
 
-# MongoDB in EJ2 ASP.NET MVC Pivot Table Component
+# MongoDB Data Binding in ASP.NET MVC Pivot Table
 
 This guide explains how to retrieve data from a MongoDB database using the [MongoDB Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table through a Web API controller.
 
