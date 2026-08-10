@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Maskedtextbox Component
+title: Overview in ##Platform_Name## Maskedtextbox | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,15 +8,15 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview in ##Platform_Name## Maskedtextbox Control
 
 The **MaskedTextBox** allows the user to enter the valid input based on the provided mask only.
 
 ## Key features
 
-* **[Custom Characters](./mask-configuration#custom-characters/)**: Allows to use your own characters as the mask elements.
+* **[Custom Characters](./mask-configuration#custom-characters)**: Allows to use your own characters as the mask elements.
 
-* **[Regular Expression](./mask-configuration#regular-expression/)**: Uses as a mask element for each character of the MaskedTextBox.
+* **[Regular Expression](./mask-configuration#regular-expression)**: Uses as a mask element for each character of the MaskedTextBox.
 
-* **[Accessibility](./accessibility/)**: Provides built-in accessibility support that helps to access all the MaskedTextBox control features through the keyboard,
+* **[Accessibility](./accessibility)**: Provides built-in accessibility support that helps to access all the MaskedTextBox control features through the keyboard,
   on-screen readers, or other assistive technology devices.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Menu Items in ##Platform_Name## Menu Component
+title: Customize Menu Items in ##Platform_Name## Menu | Syncfusion
 description: Learn here all about Customize Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Menu Items
@@ -74,7 +74,7 @@ In the following example, the **Directory** header item, **Conferences**, and **
 
 
 
-N> To disable sub menu items, use the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event.
+N> To disable sub menu items, use the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeOpen) event.
 
 ## Hide or show menu items
 
@@ -107,4 +107,4 @@ In the following example, the **Movies** header item, **Workshops**, and **Music
 
 
 
-N> Using the [`beforeOpen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Menu~BeforeOpen.html) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.
+N> Using the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeOpen) event, you can hide the sub menu items as in the above example since the menu supports to hide items only for headers initially.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Virtual in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in ##Platform_Name## TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: ej2-asp-core-mvc
 control: Virtual
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tree Grid Virtualization
+# Virtual Scrolling in ##Platform_Name## TreeGrid
 
 TreeGrid allows you to load large amount of data without performance degradation.
 

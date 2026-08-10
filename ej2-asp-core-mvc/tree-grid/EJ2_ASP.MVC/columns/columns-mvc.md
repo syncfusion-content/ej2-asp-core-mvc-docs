@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns Mvc in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Columns Mvc in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Columns | Syncfusion
+description: Learn how to configure and customize columns in ##Platform_Name## TreeGrid, including column types, visibility, templates, and formatting options.
 platform: ej2-asp-core-mvc
 control: Columns Mvc
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Columns in ##Platform_Name## Tree Grid Component
+# Columns in ##Platform_Name## TreeGrid
 
 The column definitions are used as the [`DataSource`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
 The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumns.html)
