@@ -11,11 +11,11 @@ documentation: ug
 
 # Toast Component Accessibility 
 
-The Toast control has been designed with [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications in mind by applying the prompt WAI-ARIA roles, states, and properties with the keyboard support. It helps users who use assistive WAI-ARIA accessibility support, which is achieved using attributes.
+The Toast control has been designed with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications in mind by applying the prompt WAI-ARIA roles, states, and properties with the keyboard support. It helps users who use assistive WAI-ARIA accessibility support, which is achieved using attributes.
 
 It provides information about the elements in a document for assistive technology.
 
-The Toast control implements the keyboard navigation support by using the following [WAI-ARIA practices](https://www.w3.org/TR/wai-aria-practices/) and is tested in major screen readers.
+The Toast control implements the keyboard navigation support by using the following [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg/practices/) and is tested in major screen readers.
 
 The Toast component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

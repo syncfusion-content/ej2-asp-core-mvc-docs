@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Special points customization
+# Special points customization in ##Platform_Name## Sparkline Control
 
-You can customize the points by initializing the point colors. The customization options allows to differentiate the [`start`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~StartPointColor.html), [`end`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~EndPointColor.html), [`positive`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~HighPointColor.html), [`negative`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~NegativePointColor.html), and [`low`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~LowPointColor.html) points. This customization is only applicable for line, column, and area type sparklines.
+You can customize the points by initializing the point colors. The customization options allows to differentiate the [`start`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_StartPointColor), [`end`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_EndPointColor), [`positive`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_HighPointColor), [`negative`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_NegativePointColor), and [`low`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_LowPointColor) points. This customization is only applicable for line, column, and area type sparklines.
 
 <!-- markdownlint-disable MD036 -->
 

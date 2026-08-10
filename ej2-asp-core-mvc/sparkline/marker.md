@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Marker in ##Platform_Name## Sparkline Component
+title: Marker in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Marker in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Marker
@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Markers
+# Markers in ##Platform_Name## Sparkline Control
 
 This section explains how to add markers to the sparklines.
 
 ## Adding marker to the sparkline
 
-To add marker to the sparkline, specify the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings~Visible.html) of [`markerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings.html) as following values. The [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings~Visible.html) will accept multiple values too.
+To add marker to the sparkline, specify the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings.html#Syncfusion_EJ2_Charts_SparklineSparklineMarkerSettings_Visible) of [`markerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings.html) as following values. The [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineMarkerSettings.html#Syncfusion_EJ2_Charts_SparklineSparklineMarkerSettings_Visible) will accept multiple values too.
 
 * All - Enables markers for all points.
 * Start - Enables marker for the start point.

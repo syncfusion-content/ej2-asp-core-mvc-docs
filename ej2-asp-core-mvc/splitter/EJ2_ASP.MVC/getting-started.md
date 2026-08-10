@@ -176,5 +176,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Splitter](https://ej2.syncfusion.com/aspnetmvc/Splitter/OutlookStyleLayout#/bootstrap5).
+* [Real time example using Splitter](https://ej2.syncfusion.com/aspnetmvc/splitter/outlookstylelayout#/fluent2).
 * [Construct different layouts using Splitter](./different-layouts).

@@ -15,7 +15,7 @@ Sparkline has two user interaction features: tooltip and tracker line.
 
 ## Tooltip
 
-The sparkline provides options to display details about values of data points through tooltips when hovering the mouse over data point. To use tooltip in sparkline, inject the [`SparklineTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html) module to sparkline using the inject method.
+The sparkline provides options to display details about values of data points through tooltips when hovering the mouse over data point. To use tooltip in sparkline, inject the [`SparklineTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html) module to sparkline using the inject method.
 
 The following code example shows enabling tooltip for sparkline with format.
 
@@ -75,7 +75,7 @@ The fill color, text styles, format, and border of the tooltip can be customized
 
 ### Inline tooltip formatting
 
-The tooltip content can be formatted directly within the [`format`] property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
+The tooltip content can be formatted directly within the [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html#Syncfusion_EJ2_Charts_SparklineSparklineTooltipSettings_Format) property by adding DateTime or number format specifiers to supported tooltip tokens. This allows you to control how point and series values are displayed without using additional events.
 
 A format specifier can be applied to a tooltip token by adding a colon (`:`) followed by the required format.
 
@@ -176,9 +176,9 @@ Sparkline tooltip has template support. By using tooltip template, you can custo
 
 The track line tracks data points that are closer to the mouse position or touch contact.
 
-To enable track lines for sparkline, specify the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineTrackLineSettings~Visible.html) option of  [`trackLineSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineTrackLineSettings.html) to true. Based on theme, tracker color will be changed. The default value of tracker color is black.
+To enable track lines for sparkline, specify the [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html#Syncfusion_EJ2_Charts_SparklineSparklineTooltipSettings_Visible) option of  [`trackLineSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html#Syncfusion_EJ2_Charts_SparklineSparklineTooltipSettings_TrackLineSettings) to true. Based on theme, tracker color will be changed. The default value of tracker color is black.
 
-To use track line in sparkline, inject the [`SparklineTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html) module to sparkline using the inject method.
+To use track line in sparkline, inject the [`SparklineTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SparklineSparklineTooltipSettings.html) module to sparkline using the inject method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

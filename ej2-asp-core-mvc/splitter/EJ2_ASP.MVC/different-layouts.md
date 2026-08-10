@@ -103,7 +103,7 @@ Render the first pane of vertical splitter as a horizontal splitter.
 
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/aspnetmvc/Splitter/CodeEditorLayout#/material)
+Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/aspnetmvc/splitter/codeeditorlayout#/fluent2)
 
 ## Outlook style layout
 
@@ -259,7 +259,7 @@ Render the listed controls one by one.
 </style>
 ```
 
-Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/aspnetmvc/Splitter/OutlookStyleLayout#/material).
+Once the above configurations has been completed, you will get the output like [this](https://ej2.syncfusion.com/aspnetmvc/splitter/outlookstylelayout#/fluent2).
 
 ## See Also
 

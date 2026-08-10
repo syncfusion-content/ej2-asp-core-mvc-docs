@@ -101,7 +101,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)
+* [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/toast/template#/fluent2)
 
 * [How to close the toast with click/tap](https://ej2.syncfusion.com/aspnetmvc/documentation/toast/how-to/close-the-toast-with-click-tap)
 

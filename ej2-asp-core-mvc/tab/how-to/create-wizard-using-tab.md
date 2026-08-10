@@ -13,11 +13,11 @@ documentation: ug
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabTabItem.html) class.
+Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html#Syncfusion_EJ2_Navigations_TabTabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabTabItem.html) class.
+Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
 
 {% endif %}
 
