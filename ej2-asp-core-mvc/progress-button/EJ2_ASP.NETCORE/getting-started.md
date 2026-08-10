@@ -94,7 +94,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET Core Progress Button Control](images/progress-button.webp)
 
-N> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetcore/documentation/button). In addition, it also supports `top` and `bottom` positions of the icon.
+N> Progress Button supports different styles, types and sizes like [`Button`](https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started). In addition, it also supports `top` and `bottom` positions of the icon.
 
 ## Enabling progress in button
 

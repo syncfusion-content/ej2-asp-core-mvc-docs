@@ -84,7 +84,7 @@ Custom shapes (also known as custom maps) can be rendered in Maps to represent b
 
 Refer this [`link`](https://cdn.syncfusion.com/maps/map-data/seat.json) for an example GeoJSON file containing information about bus seat selection.
 
-Refer this [`link`](https://ej2.syncfusion.com/aspnetcore/Maps/SeatSelection#/material) for more information and a live demonstration.
+Refer this [`link`](https://ej2.syncfusion.com/aspnetcore/maps/seatselection#/fluent2) for more information and a live demonstration.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -92,6 +92,6 @@ Custom shapes (also known as custom maps) can be rendered in Maps to represent b
 
 Refer this [`link`](https://cdn.syncfusion.com/maps/map-data/seat.json) for an example GeoJSON file containing information about bus seat selection.
 
-Refer this [`link`](https://ej2.syncfusion.com/aspnetmvc/Maps/Seatbooking#/material) for more information and a live demonstration.
+Refer this [`link`](https://ej2.syncfusion.com/aspnetmvc/maps/seatbooking#/fluent2) for more information and a live demonstration.
 
 {% endif %}

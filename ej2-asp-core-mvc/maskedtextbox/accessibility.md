@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Maskedtextbox Component
+title: Accessibility in ##Platform_Name## Maskedtextbox | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -40,7 +40,7 @@ The accessibility compliance for the Maskedtextbox component is outlined below.
 
 ## WAI-ARIA attributes
 
-The MaskedTextBox is characterized with complete ARIA Accessibility support that helps to access through the on-screen readers and other assistive technology devices. This control is designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](http://www.w3.org/WAI/PF/aria-practices/).
+The MaskedTextBox is characterized with complete ARIA Accessibility support that helps to access through the on-screen readers and other assistive technology devices. This control is designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/WAI/ARIA/apg/).
 
 The MaskedTextBox uses the `textbox` role and following ARIA properties for its element based on its state.
 
