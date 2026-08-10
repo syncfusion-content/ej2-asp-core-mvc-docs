@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Get data from database for circular gauge and render gauge from code behind
+# Bind Data from a Database and Render a Circular Gauge in Code-Behind
 
 Circular gauge can be rendered from the code behind by initializing the required properties in controller and passing them through ViewData to client-side. You can get the data from the database by creating a data table and accessing the data table values to gauge pointers value.
 
