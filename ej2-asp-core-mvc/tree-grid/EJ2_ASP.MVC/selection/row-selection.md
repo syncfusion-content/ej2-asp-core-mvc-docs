@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Selection in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Row Selection in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Row Selection | Syncfusion
+description: Learn how to use row selection in ##Platform_Name## TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 platform: ej2-asp-core-mvc
 control: Row Selection
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Row Selection in ##Platform_Name## Tree Grid Component
+# Row Selection in ##Platform_Name## TreeGrid
 
 ## Toggle selection
 

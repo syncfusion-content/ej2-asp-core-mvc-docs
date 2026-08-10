@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Local Data in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Local Data in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to ##Platform_Name## TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: ej2-asp-core-mvc
 control: Local Data
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Local Data in ##Platform_Name## Tree Grid Component
+# Local Data in ##Platform_Name## TreeGrid
 
 In Local Data binding, data source for rendering the TreeGrid control is retrieved from the same application locally.
 
