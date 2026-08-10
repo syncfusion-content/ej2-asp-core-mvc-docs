@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PDF Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about PDF Cell Style Customization in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid PDF Cell Style Customization | Syncfusion
+description: Learn how to customize PDF cell styles in the ##Platform_Name## TreeGrid, including conditional formatting and theme options for PDF export.
 platform: ej2-asp-core-mvc
 control: PDF Cell Style Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PDF Cell Style Customization
+# PDF Cell Style Customization in ##Platform_Name## TreeGrid
 
 ## Conditional cell formatting
 
@@ -46,7 +46,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 PDF export provides an option to include theme for exported PDF document.
 
-To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#pdfexportproperties).
+To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

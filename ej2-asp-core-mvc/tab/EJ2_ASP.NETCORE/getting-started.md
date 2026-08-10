@@ -102,6 +102,8 @@ The Tab control can be rendered using a JSON array. Each tab item is defined wit
 {% endhighlight %}
 {% endtabs %}
 
+N> To use controls from other Syncfusion packages, install the corresponding NuGet packages and reference their [static web asset files](https://ej2.syncfusion.com/aspnetcore/documentation/common/adding-script-references#individual-control-script-references).
+
 ## Initialize the Tab using HTML elements
 
 The Tab control can be rendered based on the given HTML element using `id` as `target`. Header section must be enclosed with in a wrapper element using `e-tab-header` class and corresponding content must be mapped with `e-content` class. You need to follow the below structure of HTML elements to render the Tab,
