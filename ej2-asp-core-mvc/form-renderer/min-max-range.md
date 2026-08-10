@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Min/Max Range from Other Fields in ##Platform_Name## Form Renderer | Syncfusion
+title: Min/Max Range in ##Platform_Name## Form Renderer | Syncfusion
 description: Learn here all about Min/Max Range from Other Fields in Syncfusion ##Platform_Name## Form Renderer control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Min/Max Range
