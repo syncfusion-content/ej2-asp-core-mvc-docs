@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind SQL Server Data Using Entity Framework in ##Platform_Name## | Syncfusion
+title: Entity Framework Data Binding in ASP.NET Core | Syncfusion
 description: Learn how to retrieve SQL Server data using Entity Framework, bind it to the Syncfusion ASP.NET Core DataGrid, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common

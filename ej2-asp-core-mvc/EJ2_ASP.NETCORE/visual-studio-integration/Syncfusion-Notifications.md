@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion® Notifications
+# Syncfusion® Notifications in ASP.NET Core
 
 Syncfusion® enhances the user experience in ASP.NET Core applications through notification messages. These notifications cover various aspects, including alerts for trial applications when utilizing Syncfusion® trial assemblies, updates regarding the availability of the latest Syncfusion® NuGet package, and notifications regarding newer releases of Essential Studio®. By keeping users informed, Syncfusion® ensures that developers stay updated with Syncfusion®'s latest features and enhancements.
 

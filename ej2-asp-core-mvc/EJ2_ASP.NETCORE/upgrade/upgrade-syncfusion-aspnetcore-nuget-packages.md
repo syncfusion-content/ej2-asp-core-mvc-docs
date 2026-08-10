@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade Syncfusion ASP.NET Core NuGet Packages to the Latest Version | Syncfusion
+title: Upgrade Syncfusion ASP.NET Core NuGet Packages | Syncfusion
 description: Learn how to upgrade Syncfusion ASP.NET Core NuGet packages to the latest version using NuGet Package Manager and package management tools.
 platform: ej2-asp-core-mvc
 control: Upgrade Syncfusion Aspnetcore Nuget Packages

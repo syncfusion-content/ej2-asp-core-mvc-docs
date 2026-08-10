@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core in Visual Studio for Mac | Syncfusion
+title: ASP.NET Core Support in Visual Studio for Mac | Syncfusion
 description: Learn how to create a Syncfusion ASP.NET Core application in Visual Studio for Mac and add Essential JS 2 controls.
 platform: ej2-asp-core-mvc
 control: Common

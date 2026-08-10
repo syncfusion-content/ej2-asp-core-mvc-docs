@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion ASP.NET Core | Syncfusion
-description: Learn how to create your first Syncfusion ASP.NET Core application and add Essential JS 2 controls.
+description: Learn how to create your Syncfusion ASP.NET Core application, configure Essential JS 2 controls, and build modern web applications.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

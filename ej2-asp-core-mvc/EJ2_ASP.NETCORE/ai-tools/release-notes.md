@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion ASP.NET Core AI Coding Assistants Release Notes | Syncfusion
+title: ASP.NET Core AI Coding Assistants Release Notes | Syncfusion
 description: Explore the release notes for Syncfusion AspNetCore AI Coding Assistants, covering MCP Server and Skills updates across all versions.
 control: Syncfusion AspNetCore AI Coding Assistants Release Notes
 platform: ej2-asp-core-mvc

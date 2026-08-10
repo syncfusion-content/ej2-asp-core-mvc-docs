@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Telemetry Usage Details in ##Platform_Name## | Syncfusion
-description: Learn how Syncfusion® Telemetry collects anonymous usage data in ##Platform_Name## to improve product quality, analyze feature adoption, and guide product development.
+description: Learn how Syncfusion Telemetry collects anonymous usage information in ASP.NET Core applications to improve product quality and usability.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

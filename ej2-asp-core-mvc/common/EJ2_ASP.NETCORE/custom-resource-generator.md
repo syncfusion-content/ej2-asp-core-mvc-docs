@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Resource Generator for ##Platform_Name## control
+title: Syncfusion Custom Resource Generator for ASP.NET Core | Syncfusion
 description: Learn how to generate optimized Syncfusion ##Platform_Name## scripts and styles using the Custom Resource Generator (CRG) tool.
 platform: ej2-asp-core-mvc
 control: Common

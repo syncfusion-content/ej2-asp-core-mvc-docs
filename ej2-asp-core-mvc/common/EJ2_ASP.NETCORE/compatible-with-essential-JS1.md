@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential JS 1 and EJ2 Compatibility in ##Platform_Name## control | Syncfusion
+title: Essential JS 1 and EJ2 Compatibility for ASP.NET Core | Syncfusion
 description: Learn how to use Syncfusion Essential JS 1 and Essential JS 2 controls together in ##Platform_Name##  applications with script and style compatibility.
 platform: ej2-asp-core-mvc
 control: Compatible With Essential Js1
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Essential<sup style="font-size:70%">&reg;</sup> JS 1 and EJ2 Compatibility in ASP.NET Core
+# Essential JS 1 and EJ2 Compatibility for ASP.NET Core
 
 This documentation explains how to render Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Syncfusion<sup style="font-size:70%">&reg;</sup> controls in a single page.
 

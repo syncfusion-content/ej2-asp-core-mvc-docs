@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Upgrade Syncfusion ASP.NET Core Installer to the Latest Version | Syncfusion
+title: Upgrade Syncfusion ASP.NET Core Installer | Syncfusion
 description: Learn how to upgrade the Syncfusion ASP.NET Core installer to the latest version using the Syncfusion website and Control Panel.
 platform: ej2-asp-core-mvc
 control: Upgrading
