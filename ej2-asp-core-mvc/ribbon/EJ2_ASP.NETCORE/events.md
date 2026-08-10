@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Events in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Events in ##Platform_Name## Ribbon | Syncfusion
+description: Learn about the events triggered by the ##Platform_Name## Ribbon in response to user interactions such as tab selection, item clicks, and ribbon expansion.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ##Platform_Name## Ribbon control
+# Events in ##Platform_Name## Ribbon
 
 This section describes the ribbon events that will be triggered when appropriate actions are performed. The following events are available in the ribbon control.
 
@@ -343,7 +343,7 @@ The [clicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbo
 
 ### Created
 
-The [created](../api/ribbon/ribbonButtonSettings/#created) event is triggered when the button is created.
+The [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonButtonSettings.html#Syncfusion_EJ2_Ribbon_RibbonButtonSettings_Created) event is triggered when the button is created.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
