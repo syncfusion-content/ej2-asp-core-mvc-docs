@@ -47,7 +47,7 @@ The following sample shows the pivot chart component based on the pivot report b
 
 ## Data Binding
 
-The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
+The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
 
 ## Chart Types
 
