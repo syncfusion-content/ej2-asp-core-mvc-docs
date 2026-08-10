@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PDF Export Options in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about PDF Export Options in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ##Platform_Name## TreeGrid PDF Export Options | Syncfusion
+description: Learn about PDF export options in ##Platform_Name## TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: ej2-asp-core-mvc
 control: PDF Export Options
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# PDF Export Options
+# PDF Export Options in ##Platform_Name## TreeGrid
 
 ## To customize PDF export
 
@@ -17,7 +17,7 @@ PDF export provides an option to customize mapping of treegrid to exported PDF d
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#filename) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#filename) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,14 +46,13 @@ You can assign the file name for the exported document by defining [`fileName`](
 
 ### Default fonts for PDF exporting
 
-By default, treegrid uses **Helvetica** font in the exported document. You can change the default font by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+By default, treegrid uses **Helvetica** font in the exported document. You can change the default font by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
 The available default fonts are,
 
 * Helvetica
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing default font,
 
@@ -71,7 +70,7 @@ The code example for changing default font,
 
 ### Add custom font for PDF exporting
 
-You can change the default font of TreeGrid header, content and caption cells in the exported document by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+You can change the default font of TreeGrid header, content and caption cells in the exported document by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
 
 In the following example, we have used Advent Pro font to export the treegrid with Hungarian fonts.
 
@@ -106,7 +105,7 @@ N> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
 
 ### How to change page orientation
 
-Page orientation can be changed Landscape(Default Portrait) for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#pdfexportproperties).
+Page orientation can be changed Landscape(Default Portrait) for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -135,7 +134,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 
 ### How to change page size
 
-Page size can be customized for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#pdfexportproperties).
+Page size can be customized for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
 Supported page sizes are:
 
 * Letter
@@ -193,7 +192,7 @@ Supported page sizes are:
 
 ### Export hidden columns
 
-PDF export provides an option to export hidden columns of TreeGrid by defining the [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#includehiddencolumn) as **true**.
+PDF export provides an option to export hidden columns of TreeGrid by defining the [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#includehiddencolumn) as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

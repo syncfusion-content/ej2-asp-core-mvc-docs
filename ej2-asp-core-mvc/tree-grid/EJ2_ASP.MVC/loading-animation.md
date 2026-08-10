@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loading Animation in Syncfusion ##Platform_Name## Tree Grid Component
-description: Learn here all about Loading Animation in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Loading Animation | Syncfusion
+description: Learn how to use loading animations in ##Platform_Name## TreeGrid, including spinner and shimmer indicators for improved loading experiences.
 platform: ej2-asp-core-mvc
 control: Loading Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Loading Animation in ASP.NET MVC Tree Grid Component
+# Loading Animation in ##Platform_Name## TreeGrid
 
 The Tree Grid displays a loading indicator while the data is being fetched and bound to the tree grid during initial rendering, refreshing, and after performing any tree grid actions like sorting, filtering, and more.
 

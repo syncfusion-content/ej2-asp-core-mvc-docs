@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Headers in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Headers in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in ##Platform_Name## TreeGrid, including header text and template options.
 platform: ej2-asp-core-mvc
 control: Headers
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Headers in ##Platform_Name## Tree Grid Component
+# Headers in ##Platform_Name## TreeGrid
 
 ## Header text
 
