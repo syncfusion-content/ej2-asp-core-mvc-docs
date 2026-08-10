@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Spline Range Area Chart in ##Platform_Name## Charts
+title: Spline Range Area Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Spline Range Area Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Spline Range Area Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Spline Range Area Chart in ##Platform_Name## Charts
+# Spline Range Area Chart in ##Platform_Name## Chart
 
 ## Spline Range Area
 

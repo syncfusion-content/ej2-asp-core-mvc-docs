@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cross Hair in ##Platform_Name## Syncfusion Stock Chart Component
+title: Cross Hair in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Cross Hair in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Cross Hair
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add Crosshair
+# Cross Hair in ##Platform_Name## Stock Chart
 
 Crosshair has a vertical and horizontal line to view the value of the axis at mouse or touch position.
 

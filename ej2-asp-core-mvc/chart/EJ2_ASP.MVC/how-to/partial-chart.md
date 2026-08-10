@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Partial Chart in ##Platform_Name## Chart Component
+title: Partial Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Partial Chart in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Partial Chart
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Render chart in partial view in ajax call
+# How to render a chart in a partial view in ##Platform_Name## Chart
 
 You can render the charts in partial view in ajax call by calling the partial view action method in ajax.
 

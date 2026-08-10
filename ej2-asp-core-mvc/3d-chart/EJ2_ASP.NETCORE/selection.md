@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## Syncfusion 3D Chart Component
+title: Selection in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about selection in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Selection in ##Platform_Name## 3D Chart Component
+# Selection in ASP.NET Core 3D Chart
 
 The 3D chart provides selection support for the series and its data points on mouse click.
 

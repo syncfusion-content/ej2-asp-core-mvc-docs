@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Syncfusion 3D Chart Component
+title: Appearance in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about appearance in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance in ##Platform_Name## 3D Chart Component
+# Appearance in ASP.NET MVC 3D Chart
 
 ## Custom color palette
 

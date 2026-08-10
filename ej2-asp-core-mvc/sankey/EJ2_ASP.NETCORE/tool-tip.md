@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ToolTip in ##Platform_Name## Syncfusion Sankey Chart Component
+title: Tooltip in ##Platform_Name## Sankey Chart | Syncfusion
 description: Learn here all about ToolTip in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: ToolTip
+control: Tooltip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# ToolTip in ##Platform_Name## Sankey Chart component
+# Tooltip in ##Platform_Name## Sankey Chart
 
 The Sankey Chart provides tooltips that surface contextual details for hovered elements without cluttering the diagram. Tooltips display additional information when users hover over nodes or links in the Sankey Chart. You can enable and customize tooltips using the `Tooltip` property.
 

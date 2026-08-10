@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Series Type in ##Platform_Name## Range Navigator Component
+title: Series Types in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Series Type in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Series Type
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Navigator Series Types
+# Series Types in ##Platform_Name## Range Navigator
 
 To render the data, the Range Selector supports six types of series.
 

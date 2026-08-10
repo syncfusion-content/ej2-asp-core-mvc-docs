@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Progress Bar Control | Syncfusion
+title: Getting Started with ##Platform_Name## Progress Bar | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Progress Bar control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Progress Bar Control
+# Getting Started with ASP.NET MVC Progress Bar
 
 This section briefly explains about how to include [ASP.NET MVC Progress Bar](https://www.syncfusion.com/aspnet-mvc-ui-controls/progressbar) control in your ASP.NET MVC application using Visual Studio.
 

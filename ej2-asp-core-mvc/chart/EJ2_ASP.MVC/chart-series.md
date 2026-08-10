@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Series in ##Platform_Name## Chart Component
+title: Chart Series in Syncfusion ASP.NET MVC Chart | Syncfusion
 description: Learn here all about Chart Series in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Series
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart Series in Chart Component
+# Chart Series in ASP.NET MVC Chart
 
 ## Multiple Series
 

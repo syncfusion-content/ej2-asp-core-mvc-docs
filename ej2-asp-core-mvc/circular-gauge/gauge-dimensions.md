@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge Dimensions in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: Dimensions in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Gauge Dimensions in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Dimensions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Circular Gauge Dimensions
+# Dimensions in ##Platform_Name## Circular Gauge
 
 ## Size for Circular Gauge
 

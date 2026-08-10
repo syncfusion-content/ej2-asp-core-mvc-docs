@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Smithchart Control | Syncfusion
+title: Getting Started with ##Platform_Name## Smith Chart | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Smithchart control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC SmithChart Control
+# Getting Started with ##Platform_Name## Smith Chart
 
 This section briefly explains about how to include [ASP.NET MVC SmithChart](https://www.syncfusion.com/aspnet-mvc-ui-controls/smith-chart) control in your ASP.NET MVC application using Visual Studio.
 

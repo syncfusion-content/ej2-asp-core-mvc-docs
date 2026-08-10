@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Behind in ##Platform_Name## Circular Gauge | Syncfusion
+title: Code-behind gauge in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Bind Data from a Database and Render a Circular Gauge in Code-Behind
+# How to render data from code behind in ##Platform_Name## Circular Gauge
 
 Circular gauge can be rendered from the code behind by initializing the required properties in controller and passing them through ViewData to client-side. You can get the data from the database by creating a data table and accessing the data table values to gauge pointers value.
 

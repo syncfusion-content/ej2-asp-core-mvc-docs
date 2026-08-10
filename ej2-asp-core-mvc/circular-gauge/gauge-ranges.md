@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge Ranges in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: Ranges in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Gauge Ranges in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Ranges
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Ranges in Circular Gauge Control
+# Ranges in ##Platform_Name## Circular Gauge
 
 You can categories certain interval on gauge axis using [ranges](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.CircularGauge.CircularGaugeRange.html) property.
 

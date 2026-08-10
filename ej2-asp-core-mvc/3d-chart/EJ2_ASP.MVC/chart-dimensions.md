@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dimensions in ##Platform_Name## 3D Chart Component
+title: Dimensions in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about dimensions in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dimensions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Dimensions in ##Platform_Name## 3D Chart Component
+# Dimensions in ASP.NET MVC 3D Chart
 
 ## Size for container
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Treemap Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding
+# Data Binding in ##Platform_Name## TreeMap
 
 The TreeMap control supports data binding using the dataSource property.
 

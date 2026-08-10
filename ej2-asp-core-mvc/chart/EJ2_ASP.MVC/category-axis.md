@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Category Axis in ##Platform_Name## Chart Component
+title: Category Axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Category Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Category Axis
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Category Axis
+# Category Axis in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

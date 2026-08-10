@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Sankey Chart Component
+title: Customization in ##Platform_Name## Sankey Chart | Syncfusion
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in ##Platform_Name## Sankey Chart component
+# Customization in ##Platform_Name## Sankey Chart
 
 The Sankey Chart provides extensive customization options to create visualizations that match your specific design requirements and data presentation needs. From styling and theming to advanced visual techniques, the component enables complete control over appearance and behavior.
 
