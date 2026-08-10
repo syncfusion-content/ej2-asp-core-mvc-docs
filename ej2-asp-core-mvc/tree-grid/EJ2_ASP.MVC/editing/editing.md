@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in ##Platform_Name## Tree Grid Component | Syncfusion
-description: Learn here all about Editing in Syncfusion ##Platform_Name## Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Edit | Syncfusion
+description: Learn how to edit data in ##Platform_Name## TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 platform: ej2-asp-core-mvc
 control: Editing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Editing in ##Platform_Name## Tree Grid Component
+# Edit in ##Platform_Name## TreeGrid
 
 The TreeGrid component has options to dynamically insert, delete and update records.
 Editing feature is enabled by using [`EditSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~EditSettings.html) property and it requires a primary key column for CRUD operations.
