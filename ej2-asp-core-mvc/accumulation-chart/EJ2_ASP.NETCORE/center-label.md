@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Center Label in Syncfusion ##Platform_Name## Accumulation Chart
+title: Center Label in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about Center Label in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Center Label
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Center label in ##Platform_Name## Accumulation Chart Component
+# Center Label in ASP.NET Core Accumulation Chart
 
 ## Center label
 

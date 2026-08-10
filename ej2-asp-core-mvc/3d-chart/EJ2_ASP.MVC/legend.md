@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in ##Platform_Name## Syncfusion 3D Chart Component
+title: Legend in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about legend in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend in ##Platform_Name## 3D Chart Component
+# Legend in ASP.NET MVC 3D Chart
 
 Legend provides information about the series rendered in the 3D chart.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dotted Line in ##Platform_Name## Chart Component
+title: How to add a dotted line in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Dotted Line in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dotted Line
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# To add dotted line using annotation
+# How to add a dotted line using Annotation in ##Platform_Name## Chart
 
 By using `annotation`, you can add dotted lines in the chart.
 

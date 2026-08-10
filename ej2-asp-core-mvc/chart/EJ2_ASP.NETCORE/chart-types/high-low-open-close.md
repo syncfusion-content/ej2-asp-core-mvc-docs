@@ -1,6 +1,6 @@
 ---
 layout: post
-title: High Low Open Close Chart in ##Platform_Name## Charts
+title: High Low Open Close Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about High Low Open Close Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: High Low Open Close Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# High Low Open Close Chart in ##Platform_Name## Charts
+# High Low Open Close Chart in ##Platform_Name## Chart
 
 ## High Low Open Close
 

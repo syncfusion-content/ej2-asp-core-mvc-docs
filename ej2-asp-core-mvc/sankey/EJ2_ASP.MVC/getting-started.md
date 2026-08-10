@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting started with ##Platform_Name## Sankey Chart Component | Syncfusion
+title: Getting Started with ##Platform_Name## Sankey Chart | Syncfusion
 description: Checkout and learn about Getting started with ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Getting started
+control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting started with ASP.NET MVC Sankey Chart Control
+# Getting started with ASP.NET MVC Sankey Chart
 
 This section briefly explains about how to include ASP.NET MVC Sankey Chart control in your ASP.NET MVC application using Visual Studio.
 

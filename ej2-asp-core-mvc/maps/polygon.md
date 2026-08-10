@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Polygon in Syncfusion ##Platform_Name## Maps component
+title: Polygon in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Polygon in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Polygon
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Polygon shape in ##Platform_Name## Maps component
+# Polygon shape in ##Platform_Name## Maps
 
 {% if page.publishingplatform == "aspnet-core" %}
 

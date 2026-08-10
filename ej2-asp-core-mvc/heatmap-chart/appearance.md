@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in Syncfusion ##Platform_Name## Heatmap Chart Component
+title: Appearance in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance in ##Platform_Name## HeatMap Chart Component
+# Appearance in ##Platform_Name## HeatMap Chart
 
 ## Cell customization
 

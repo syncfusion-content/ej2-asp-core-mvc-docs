@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sparkline Dimensions in ##Platform_Name## Sparkline Component
-description: Learn here all about Sparkline Dimensions in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
+title: Dimensions in ##Platform_Name## Sparkline | Syncfusion
+description: Learn here all about Dimensions in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sparkline Dimensions
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sparkline Dimensions
+# Dimensions in ##Platform_Name## Sparkline
 
 ## Size for container
 

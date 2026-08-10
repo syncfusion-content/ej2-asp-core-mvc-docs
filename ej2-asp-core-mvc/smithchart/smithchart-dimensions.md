@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Dimensions in ##Platform_Name## Smithchart Component
+title: Dimensions in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smithchart Dimensions in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Smithchart Dimensions
+# Dimensions in ##Platform_Name## Smith Chart
 
 You can render the smithchart either corresponding to its container size or you can set the size of the smithchart as per your requirement. To render the smithchart corresponding to its container size, you need to set the size for the smithchart container. Else to set the size for the smithchart as per your requirement, you can use the width and height properties in the smithchart.
 

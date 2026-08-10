@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pie and Donut in ##Platform_Name## 3D Circular Chart Component | Syncfusion
+title: Pie and Donut in ##Platform_Name## 3D Circular Chart | Syncfusion
 description: Learn here all about Pie and Donut in Syncfusion ##Platform_Name## 3D Circular Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Pie and Donut
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pie and Donut in ##Platform_Name## 3D Circular Chart Component
+# Pie and Donut in ASP.NET Core 3D Circular Chart
 
 ## Pie chart
 

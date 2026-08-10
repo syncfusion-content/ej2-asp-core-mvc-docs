@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Internationalization in Chart control
+# Internationalization in ##Platform_Name## Chart
 
 Chart provide supports for internationalization for below chart elements.
 

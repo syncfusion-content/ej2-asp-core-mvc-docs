@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend and Customization in ##Platform_Name## Syncfusion Chart Component
+title: Legend in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Legend in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Legend
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Legend and in ##Platform_Name## Chart Component
+# Legend in ##Platform_Name## Chart
 
 Legend provides information about the series rendered in the chart.
 

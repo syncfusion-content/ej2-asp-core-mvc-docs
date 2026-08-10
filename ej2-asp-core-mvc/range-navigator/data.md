@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data in ##Platform_Name## Range Navigator Component
+title: Data in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Data in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Types of data
+# Data in ##Platform_Name## Range Navigator
 
 ## Numeric
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip in Syncfusion ##Platform_Name## Heatmap Chart Component
+title: Tooltip in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Heatmap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip in ##Platform_Name## HeatMap Chart Component
+# Tooltip in ##Platform_Name## HeatMap Chart
 
 Tooltip is used to provide the details of the heatmap cell, and this can be displayed, while hovering the cursor over the cell or performing tap action in touch devices.
 

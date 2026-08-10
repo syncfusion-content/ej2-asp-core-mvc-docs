@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Customization in ##Platform_Name## Sparkline Component
+title: Axis Customization in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis Customization
+# Axis Customization in ##Platform_Name## Sparkline
 
 You can customize axis value types and min and max values of the sparkline.
 

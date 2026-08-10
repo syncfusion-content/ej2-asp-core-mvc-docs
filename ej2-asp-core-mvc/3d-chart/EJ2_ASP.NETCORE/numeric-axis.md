@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numeric axis in ##Platform_Name## 3D Chart Component
+title: Numeric Axis in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about numeric axis in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Numeric Axis
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Numeric axis in ##Platform_Name## 3D Chart Component
+# Numeric Axis in ASP.NET Core 3D Chart
 
 The `Numeric Axis` can be used to represent the numeric values of data in 3D chart. By default, the [`ValueType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart3DAxis.html#Syncfusion_EJ2_Charts_Chart3DAxis_ValueType) of an axis is **Double**.
 

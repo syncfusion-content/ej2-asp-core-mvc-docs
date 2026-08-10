@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Circular Gauge component | Syncfusion
+title: Animation in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about animation in the Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Circular Gauge
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in Circular Gauge component
+# Animation in ##Platform_Name## Circular Gauge
 
 {% if page.publishingplatform == "aspnet-core" %}
 
