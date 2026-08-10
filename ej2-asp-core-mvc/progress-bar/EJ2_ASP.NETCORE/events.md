@@ -46,8 +46,7 @@ This event is triggered when the progress attains the Maximum value.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -55,7 +54,6 @@ This event is triggered when the progress attains the Maximum value.
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/events/progress-completed/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Progress-completed.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

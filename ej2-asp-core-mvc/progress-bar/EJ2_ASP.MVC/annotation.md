@@ -23,8 +23,7 @@ For example, you can include add, start, or pause button to control the progress
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/annotation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -32,8 +31,7 @@ For example, you can include add, start, or pause button to control the progress
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/annotation/annotation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 
 
