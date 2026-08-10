@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Code Behind in ##Platform_Name## Circular Gauge Component
+title: Code Behind in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Code Behind in Syncfusion ##Platform_Name## Circular Gauge component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Code Behind
@@ -8,15 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How To
-
-## Get data from database for circular gauge and render gauge from code behind
+# Bind Data from a Database and Render a Circular Gauge in Code-Behind
 
 Circular gauge can be rendered from the code behind by initializing the required properties in controller and passing them through ViewData to client-side. You can get the data from the database by creating a data table and accessing the data table values to gauge pointers value.
 
-To get the data from data base and render the gauge from code behind, follow the given steps:
+To get the data from database and render the gauge from code behind, follow the given steps:
 
-**Step 1**: Initialize the required properties in controller and get data from database, create a new data collection that contains minimum, maximum, and value attributes from the data base data, and then assign the data to the minimum, maximum, and pointer values of gauge.
+**Step 1**: Initialize the required properties in controller and get data from database, create a new data collection that contains minimum, maximum, and value attributes from the database data, and then assign the data to the minimum, maximum, and pointer values of gauge.
 
 ```cs
  public ActionResult Index()
@@ -79,8 +77,8 @@ To get the data from data base and render the gauge from code behind, follow the
 
 
 
-**Sample reference** : [`circulargauge sample`](https://github.com/SyncfusionExamples/How-to-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
+**Sample reference** : [`circulargauge sample`](https://github.com/SyncfusionExamples/mvc-get-data-for-circular-gauge-from-database-and-render-gauge-from-code-behind).
 
 **Screenshot**
 
-![Screenshot for your reference](../images/database.png)
+![Circular gauge Database data for your reference](../images/database.png)
