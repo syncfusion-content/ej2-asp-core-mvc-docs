@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Date Time Axis in Syncfusion ASP.NET Core Chart Component
+title: Date Time Axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Date Time Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Date Time Axis
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# DateTime and DateTimeCategory Axis
+# DateTime and DateTimeCategory Axis in ##Platform_Name## Chart
 
 ## DateTime Axis
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Links in ##Platform_Name## Sankey Chart Component
+title: Links in ##Platform_Name## Sankey Chart | Syncfusion
 description: Learn here all about Links in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Links
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Links in ##Platform_Name## Sankey Chart component
+# Links in ##Platform_Name## Sankey Chart
 
 Links are the connecting paths that visualize flow between nodes in a Sankey Chart. Each link connects a source node to a target node and carries a quantitative value that determines its visual thickness. The Sankey Chart provides comprehensive customization options for link styling, colors, curvature, and interactions.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Synchronized Charts in ##Platform_Name## Chart Component
+title: Synchronized Charts in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Synchronized Charts in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Synchronized charts
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Synchronized charts in ##Platform_Name## Chart Component
+# Synchronized Charts in ##Platform_Name## Chart
 
 ## Tooltip synchronization
 

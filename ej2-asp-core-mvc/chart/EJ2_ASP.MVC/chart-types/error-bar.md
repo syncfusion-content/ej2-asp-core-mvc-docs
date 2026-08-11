@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Error Bar Chart in ##Platform_Name## Charts
+title: Error Bar Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Error Bar Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Error Bar Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Error Bar Chart in ##Platform_Name## Charts
+# Error Bar Chart in ##Platform_Name## Chart
 
 ## Error Bar
 

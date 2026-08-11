@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization in Syncfusion ##Platform_Name## Maps Component
+title: Customization in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Customization in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in ##Platform_Name## Maps Component
+# Customization in ##Platform_Name## Maps
 
 ## Setting the size for Maps
 

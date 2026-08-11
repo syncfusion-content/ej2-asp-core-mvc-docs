@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in Chart control
+# Localization in ##Platform_Name## Chart
 
 Localization library allows to localize the default text content of Chart. In Chart component, it has the static text on some features(like zooming toolbars) and this can be changed to any other culture(Arabic, Deutsch, French, etc) by defining the locale value and translation object.
 

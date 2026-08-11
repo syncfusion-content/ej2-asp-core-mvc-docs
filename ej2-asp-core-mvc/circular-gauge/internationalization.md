@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Internationalization in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: Internationalization in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Internationalization in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Internationalization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Internationalization in Circular Gauge Control
+# Internationalization in ##Platform_Name## Circular Gauge
 
 Circular Gauge provides internationalization support for below elements.
 

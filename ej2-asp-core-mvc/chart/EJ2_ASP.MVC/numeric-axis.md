@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numeric Axis in ##Platform_Name## Chart Component
+title: Numeric Axis in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Numeric Axis in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Numeric Axis
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Numeric Axis
+# Numeric Axis in ##Platform_Name## Chart
 
 You can use numeric [`Axis`](https://ej2.syncfusion.com/aspnetcore/Chart/NumericAxis#/material) to represent numeric values of data in chart. By default, the `ValueType` of an axis is [`Double`](https://www.syncfusion.com/aspnet-core-ui-controls/charts/chart-axis).
 

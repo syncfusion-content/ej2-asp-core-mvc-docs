@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Print in ASP.NET MVC Maps Component | Syncfusion
-description: Learn here all about Print in Syncfusion ASP.NET MVC Maps component of Syncfusion Essential JS 2 and more.
+title: Print and Export in ##Platform_Name## Maps | Syncfusion
+description: Learn here all about Print in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Print
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Print and Export in ASP.NET MVC Maps component
+# Print and Export in ASP.NET MVC Maps
 
 ## Print
 
-The rendered maps can be printed directly from the browser by calling the [`print`](https://ej2.syncfusion.com/documentation/api/maps/index-default#print) method. To use the print functionality, set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_AllowPrint) property to **true**.
+The rendered maps can be printed directly from the browser by calling the [`print`](https://ej2.syncfusion.com/documentation/api/maps#print) method. To use the print functionality, set the [`AllowPrint`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.Maps.html#Syncfusion_EJ2_Maps_Maps_AllowPrint) property to **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

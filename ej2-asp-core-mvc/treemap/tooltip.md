@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Treemap Component
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Tooltip in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in ##Platform_Name## TreeMap
 
 Tooltip is used to display details about the items in the TreeMap. When space constraints prevent us from displaying the information using Data Labels, the tooltip comes in handy.
 

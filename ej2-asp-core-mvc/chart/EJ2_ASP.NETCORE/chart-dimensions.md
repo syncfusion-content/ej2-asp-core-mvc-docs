@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Dimensions in ##Platform_Name## Chart Component
+title: Chart Dimensions in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart Dimensions in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chart Dimensions
+# Chart Dimensions in ##Platform_Name## Chart
 
 ## Size for Container
 

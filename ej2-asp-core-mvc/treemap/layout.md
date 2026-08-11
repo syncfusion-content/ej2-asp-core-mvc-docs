@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layout in ##Platform_Name## Treemap Component
-description: Learn here all about Layout in Syncfusion ##Platform_Name## Treemap component of Syncfusion Essential JS 2 and more.
+title: Layout in ##Platform_Name## TreeMap | Syncfusion
+description: Learn here all about Layout in Syncfusion ##Platform_Name## TreeMap component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Layout
+# Layout in ##Platform_Name## TreeMap
 
 Determine the visual representation of nodes belonging to all the TreeMap levels using the `layoutType` property.
 

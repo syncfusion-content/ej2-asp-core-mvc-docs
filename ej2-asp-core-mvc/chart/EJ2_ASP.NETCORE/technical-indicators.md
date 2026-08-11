@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Technical Indicators in ##Platform_Name## Chart Component
+title: Technical Indicators in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Technical Indicators in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Technical Indicators
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Technical Indicators
+# Technical Indicators in ##Platform_Name## Chart
 
 A [`technical indicator`](https://www.syncfusion.com/aspnet-core-ui-controls/charts/technical-indicators) is a mathematical calculation based on historic price, volume or open interest information that aims to forecast financial market direction.
 
