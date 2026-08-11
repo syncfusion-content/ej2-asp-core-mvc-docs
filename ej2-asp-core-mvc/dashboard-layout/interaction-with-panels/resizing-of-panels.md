@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resizing of panels
+# Resizing of panels in Dashboard Layout
 
 The DashboardLayout control is also provided with the panel resizing functionality which can be enabled or disabled using the [`allowResizing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_AllowResizing) property. This functionality allows you to resize the panels dynamically through UI interactions using the resizing handlers, which controls the panel resizing in various directions.
 

@@ -17,14 +17,16 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core library suppor
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/tagHelper %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/razor %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## State Persistence Supported controls and Properties

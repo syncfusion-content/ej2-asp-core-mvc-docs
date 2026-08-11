@@ -25,7 +25,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC library support
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/razor %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## State Persistence Supported controls and Properties
