@@ -44,7 +44,7 @@ To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfus
 
 N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
 <br/> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
-<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowSorting) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
+<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowSorting) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
 
 ## Initial sort
 

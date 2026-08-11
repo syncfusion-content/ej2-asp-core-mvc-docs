@@ -34,7 +34,7 @@ The column chooser has options to show or hide columns dynamically. It can be en
 
 
 
-N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
+N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
 
 ## Open column chooser by external button
 
