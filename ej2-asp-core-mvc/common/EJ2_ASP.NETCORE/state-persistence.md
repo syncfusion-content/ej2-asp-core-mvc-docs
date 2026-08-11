@@ -40,7 +40,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/state-management">Grid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/state-management" aria-label="Grid state persistence">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>
@@ -62,7 +62,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/how-to/set-state-persistence-of-the-tab-component">Tabs</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/how-to/set-state-persistence-of-the-tab-component" aria-label="Tabs state persistence">Tabs</a></td>
 <td>
 <ul>
 <li>selectedItem</li>
@@ -70,7 +70,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/state-persistence">Schedule</a></td>
+<td><a href="https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/state-persistence" aria-label="Schedule state persistence">Schedule</a></td>
 <td>
 <ul>
 <li>currentView</li>
@@ -81,7 +81,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/persistence">Kanban</a></td>
+<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/persistence" aria-label="Kanban state persistence">Kanban</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -100,7 +100,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/state-persistence">Maps</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/state-persistence" aria-label="Maps state persistence">Maps</a></td>
 <td>
 <ul>
 <li>zoomSettings</li>
@@ -108,7 +108,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/state-persistence">Pivot Table</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/state-persistence" aria-label="Pivot Table state persistence">Pivot Table</a></td>
 <td>
 <ul>
 <li>dataSourceSettings</li>
@@ -120,7 +120,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/state-persistence">TreeGrid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/state-persistence" aria-label="TreeGrid state persistence">TreeGrid</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -174,7 +174,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/how-to/state-persistence">QueryBuilder</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/how-to/state-persistence" aria-label="QueryBuilder state persistence">QueryBuilder</a></td>
 <td>
 <ul>
 <li>rule</li>

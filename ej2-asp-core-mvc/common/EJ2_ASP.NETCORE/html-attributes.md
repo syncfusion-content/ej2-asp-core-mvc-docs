@@ -50,7 +50,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 <td><b>Controls</b></td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id">id</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/id" aria-label="HTML id attribute">id</a></td>
 <td>ID</td>
 <td>
 <ul>
@@ -59,7 +59,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefautocomplete">autocomplete</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefautocomplete" aria-label="HTML autocomplete attribute">autocomplete</a></td>
 <td>Autocomplete</td>
 <td>
 <ul>
@@ -68,7 +68,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#checked">checked</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#checked" aria-label="HTML checked attribute">checked</a></td>
 <td>Checked</td>
 <td>
 <ul>
@@ -79,7 +79,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td rowspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#disabled">disabled</a></td>
+<td rowspan="2"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#disabled" aria-label="HTML disabled attribute">disabled</a></td>
 <td>Disabled</td>
 <td>
 <ul>
@@ -115,7 +115,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#max">max</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#max" aria-label="HTML max attribute">max</a></td>
 <td>Max</td>
 <td>
 <ul>
@@ -129,7 +129,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#minlength">min</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#minlength" aria-label="HTML min attribute">min</a></td>
 <td>Min</td>
 <td>
 <ul>
@@ -143,7 +143,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#minlength">multiple</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#minlength" aria-label="HTML multiple attribute">multiple</a></td>
 <td>Multiple</td>
 <td>
 <ul>
@@ -152,7 +152,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#placeholder">placeholder</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#placeholder" aria-label="HTML placeholder attribute">placeholder</a></td>
 <td>Placeholder</td>
 <td>
 <ul>
@@ -164,7 +164,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#readonly">readonly</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#readonly" aria-label="HTML readonly attribute">readonly</a></td>
 <td>ReadOnly</td>
 <td>
 <ul>
@@ -182,7 +182,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#step">step</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#step" aria-label="HTML step attribute">step</a></td>
 <td>Step</td>
 <td>
 <ul>
@@ -194,7 +194,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#value">value</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#value" aria-label="HTML value attribute">value</a></td>
 <td>Value</td>
 <td>
 <ul>
@@ -204,7 +204,7 @@ The following table illustrates the HTML attributes and their equivalent Syncfus
 </td>
 </tr>
 <tr>
-<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#width">width</a></td>
+<td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#width" aria-label="HTML width attribute">width</a></td>
 <td>Width</td>
 <td>
 <ul>
