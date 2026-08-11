@@ -19,7 +19,7 @@ The DropDownList control contains a list of predefined values from which a singl
 
 * **[Grouping](./grouping/)** -  Supports grouping of logically related items under a single or specific category.
 
-* **[Sorting](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~SortOrder.html)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
+* **[Sorting](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_SortOrder)** - Supports sorting of list items in an alphabetical order (either ascending or descending).
 
 * **[Filtering](./filtering/)** - Allows filtering of list items based on a character typed into the search box.
 

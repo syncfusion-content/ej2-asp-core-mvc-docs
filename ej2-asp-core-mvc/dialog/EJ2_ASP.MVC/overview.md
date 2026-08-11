@@ -33,6 +33,6 @@ There are two types of Dialog:
 
 * **[Localization](./localization/)**: - Supports to localize the default close icon title text to different cultures.
 
-* **[Accessibility](./accessibility/)**: - Built-in compliance with the [WAI-ARIA](http://www.w3.org/WAI/PF/aria-practices/) specifications.
+* **[Accessibility](./accessibility/)**: - Built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications.
 
 * **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: - The Dialog can be intractable through keyboard.

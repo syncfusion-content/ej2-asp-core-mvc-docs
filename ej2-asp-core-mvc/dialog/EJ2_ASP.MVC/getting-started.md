@@ -190,7 +190,7 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/Grid/DialogEditing#/bootstrap5)
+* [Real time example using Dialog](https://ej2.syncfusion.com/aspnetmvc/grid/dialogediting#/fluent2)
 * [Load dialog content using AJAX](./how-to/load-dialog-content-using-ajax)
 * [How to position the dialog on center of the page on scrolling](./how-to/position-the-dialog-on-center-of-the-page-on-scrolling)
 * [Prevent closing of modal dialog](./how-to/prevent-closing-of-modal-dialog)

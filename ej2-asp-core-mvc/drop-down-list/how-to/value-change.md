@@ -11,7 +11,7 @@ documentation: ug
 
 # Detect whether the value change happened by manual or programmatic
 
-You can check whether the value change happened by manual or programmatic by using [change](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.DropDownList~Change.html) event argument, that argument name is `isInteracted`.
+You can check whether the value change happened by manual or programmatic by using [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_Change) event argument, that argument name is `isInteracted`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
