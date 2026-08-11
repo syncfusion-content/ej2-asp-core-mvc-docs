@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Azure Maps in Syncfusion ##Platform_Name## Syncfusion Maps Component
+title: Azure Maps in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about Azure Maps in the Syncfusion ##Platform_Name## Maps component and much more details.
 platform: ej2-asp-core-mvc
 control: Azure Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Azure Maps in ##Platform_Name## Maps Component
+# Azure Maps in ##Platform_Name## Maps
 
 Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM and Bing Maps, it provides Maps tile images based on our requests and combines those images into a single one to display Maps area.
 
@@ -16,7 +16,7 @@ Azure Maps is yet another online Maps provider, owned by Microsoft. As like OSM 
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
 
 N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 
@@ -31,7 +31,7 @@ N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/lega
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://docs.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
+The Azure Maps can be rendered using the [UrlTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Maps.MapsLayer.html#Syncfusion_EJ2_Maps_MapsLayer_UrlTemplate) property with the tile server URL provided by online map providers. In the meantime, a subscription key is required for Azure Maps. Follow the steps in this [link](https://learn.microsoft.com/en-us/azure/search/search-security-api-keys) to generate an API key, and then added the key to the URL.
 
 N>Refer to [Azure Maps Licensing](https://azure.microsoft.com/en-in/support/legal/).
 

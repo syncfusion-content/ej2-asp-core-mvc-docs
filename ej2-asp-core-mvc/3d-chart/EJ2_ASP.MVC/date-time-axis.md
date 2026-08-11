@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DateTime axis in ##Platform_Name## 3D Chart Component
+title: DateTime Axis in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about datetime axis in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: DateTime Axis
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# DateTime axis in ##Platform_Name## 3D Chart Component
+# DateTime Axis in ASP.NET MVC 3D Chart
 
 ## DateTime axis
 

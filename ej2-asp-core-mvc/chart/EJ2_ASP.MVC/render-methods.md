@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render Methods in ##Platform_Name## Chart Component
+title: Render Methods in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Render Methods in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Render Methods
@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Rendering Types
+# Render Methods in ##Platform_Name## Chart
 
 Chart uses following two rendering methods.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Customization in ##Platform_Name## Bullet Chart Component | Syncfusion
+title: Axis Customization in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Axis Customization in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Customization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis customization in ASP.NET MVC Bullet Chart Control
+# Axis Customization in ASP.NET MVC Bullet Chart
 
 ## MajorTickLines and MinorTickLines customization
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge Annotations in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: Annotations in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Gauge Annotations in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Annotations
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotations in Circular Gauge Control
+# Annotations in ##Platform_Name## Circular Gauge
 
 Annotations are used to mark a specific area of interest in the gauge with texts, shapes or images.
 
@@ -76,9 +76,6 @@ As the annotation allows to place any custom element, it can initialize a gauge 
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-annotations/subgauge/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Subgauge.cs" %}
-{% include code-snippet/circulargauge/gauge-annotations/subgauge/subgauge.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

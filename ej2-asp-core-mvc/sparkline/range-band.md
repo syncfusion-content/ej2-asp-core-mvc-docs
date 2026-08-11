@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Band in ##Platform_Name## Sparkline Component
+title: Range Band in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Range Band in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Range Band
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Band
+# Range Band in ##Platform_Name## Sparkline
 
 This section explains how to customize the sparkline with multiple range bands.
 

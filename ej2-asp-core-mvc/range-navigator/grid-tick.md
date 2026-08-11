@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grid Tick in ##Platform_Name## Range Navigator Component
+title: Grid and Tick Lines in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Grid Tick in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Grid Tick
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grid and Tick Lines
+# Grid and Tick Lines in ##Platform_Name## Range Navigator
 
 ## Grid line customization
 

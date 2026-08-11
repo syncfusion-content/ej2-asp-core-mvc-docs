@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Export in ##Platform_Name## Range Navigator Component
+title: Export and Print in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Export in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Export
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Export and print
+# Export and Print in ##Platform_Name## Range Navigator
 
 ## Export
 

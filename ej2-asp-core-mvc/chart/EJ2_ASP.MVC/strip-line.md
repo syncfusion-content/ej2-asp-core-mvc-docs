@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strip Line in ##Platform_Name## Chart Component
+title: Strip Line in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Strip Line in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Strip Line
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Strip lines
+# Strip Line in ##Platform_Name## Chart
 
 <!-- markdownlint-disable MD036 -->
 

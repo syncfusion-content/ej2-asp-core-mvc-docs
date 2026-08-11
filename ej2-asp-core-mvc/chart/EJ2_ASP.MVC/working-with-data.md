@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with data in ##Platform_Name## Syncfusion Chart Component
+title: Working with Data in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Working with data in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Working with data
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Working with data in ##Platform_Name## Chart Component
+# Working with Data in ##Platform_Name## Chart
 
 Chart can visualize data bound from local or remote data.
 

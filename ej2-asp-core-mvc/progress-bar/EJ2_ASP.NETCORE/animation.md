@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Progress Bar Component
+title: Animation in ##Platform_Name## Progress Bar | Syncfusion
 description: Learn here all about Animation in Syncfusion ##Platform_Name## Progress Bar component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Animation
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Animation
+# Animation in ASP.NET Core Progress Bar
 
 <!-- markdownlint-disable MD033 -->
 
@@ -21,8 +21,7 @@ Progress Bar support to animate the progress by using `animation` property. Enab
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/animation/animation/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="Animation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +29,6 @@ Progress Bar support to animate the progress by using `animation` property. Enab
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/progress-bar/animation/animation/razor %}
 {% endhighlight %}
-{% highlight c# tabtitle="Animation.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endtabs %}
 {% endif %}
 

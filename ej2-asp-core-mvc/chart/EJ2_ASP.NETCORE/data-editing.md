@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Editing in ##Platform_Name## Chart Component
+title: Data Editing in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data Editing in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Editing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Editing
+# Data Editing in ##Platform_Name## Chart
 
 ## Enable Data Editing
 

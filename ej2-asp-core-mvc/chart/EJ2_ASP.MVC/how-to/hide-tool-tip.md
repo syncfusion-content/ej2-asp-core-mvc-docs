@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Hide Tool Tip in ##Platform_Name## Chart Component
+title: Hide Tooltip in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Hide Tool Tip in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Hide Tool Tip
+control: Hide Tooltip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Hide the tooltip for unselected series
+# How to hide the tooltip for unselected series in ##Platform_Name## Chart
 
 By using the [`tooltipRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#Syncfusion_EJ2_Charts_Chart_TooltipRender) event, you can cancel the tooltip for unselected series in the chart.
 

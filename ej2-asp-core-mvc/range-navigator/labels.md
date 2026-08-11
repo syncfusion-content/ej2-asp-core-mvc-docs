@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Range Navigator Component
+title: Labels in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Labels in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Labels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Labels
+# Labels in ##Platform_Name## Range Navigator
 
 ## Multilevel labels
 

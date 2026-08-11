@@ -169,4 +169,4 @@ This section explains how to connect the Pivot Table to a MySQL database by fetc
 ![Pivot Table bound with MySQL database](../images/pivottable-with-mysql-data.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET Core Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET Core Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-MySQL-database-to-pivot-table) repository.

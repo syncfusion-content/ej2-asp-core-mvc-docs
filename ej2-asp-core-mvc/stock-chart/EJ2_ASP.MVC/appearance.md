@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance in ##Platform_Name## Stock Chart Component
+title: Appearance in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Appearance in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Appearance
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance
+# Appearance in ##Platform_Name## Stock Chart
 
 ## Stock Chart Title
 
@@ -104,4 +104,4 @@ Changing theme will affect background color,gridlines,tooltip colors and appeara
 
 ## See Also
 
-* [Axis Customization](./axis-customization/)
+* [Axis Customization](./axis-customization)
