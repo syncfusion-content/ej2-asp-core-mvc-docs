@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Drop Down List Component
+title: Localization in ##Platform_Name## Drop Down List | Syncfusion
 description: Learn here all about localization in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -50,5 +50,5 @@ In the following sample, French culture is set to the DropDownList and no data i
 
 ## See Also
 
-* [Accessibility](./accessibility/)
-* [How to bind the data to the combobox](./data-binding/)
+* [Accessibility](./accessibility)
+* [How to bind the data to the combobox](./data-binding)

@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Dialog control will be rendered in the default web browser.
 
-![ASP.NET MVC Dialog Control](images/dialog-getting.png)
+![ASP.NET MVC Dialog Control](images/dialog-getting.webp)
 
 N> In the dialog control, max-height is calculated based on the dialog target element height. If the target property is not configured, the document.body is considered as a target. Therefore, to show a dialog in proper height, you need to add min-height to the target element.
 
@@ -113,7 +113,7 @@ N> When the modal dialog is opened, the Dialog's target scrolling will be disabl
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.png)
+![ASP.NET MVC Modal Dialog](images/modal-dialog-getting.webp)
 
 N>In the dialog control, if the dialog is rendered based on the body, then the dialog gets its height based on its body element height. If the height of the dialog is larger than the body height, then the dialog's height will not be set. For this scenario, we can set the CSS style for the html and body to get the dialog height.
 

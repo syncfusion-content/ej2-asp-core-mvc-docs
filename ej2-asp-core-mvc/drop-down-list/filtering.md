@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in ##Platform_Name## Drop Down List control
 
 The DropDownList has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the search box.
 

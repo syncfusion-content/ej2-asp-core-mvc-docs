@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load Dialog Content Using Ajax in ##Platform_Name## Dialog Component
+title: Load Dialog Content Using Ajax in ##Platform_Name## Dialog | Syncfusion
 description: Learn here all about Load Dialog content using Ajax in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Dialog Content Using Ajax

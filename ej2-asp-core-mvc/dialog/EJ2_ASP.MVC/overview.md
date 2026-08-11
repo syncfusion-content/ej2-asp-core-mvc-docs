@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Dialog Component
+title: Overview in ##Platform_Name## Dialog control | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# Overview in ##Platform_Name## Dialog
 
 The Dialog is a window that displays information to the user, and used to get the user input.
 
@@ -23,16 +23,16 @@ There are two types of Dialog:
 
 * **[Buttons](./getting-started/#enable-footer-with-buttons)**: - Provided the built-in support to render the buttons at Dialog footer.
 
-* **[Templates](./template/)**: - Customizable Dialog header and footer through the template.
+* **[Templates](./template)**: - Customizable Dialog header and footer through the template.
 
 * **[Draggable](./getting-started/#draggable)**: - Supports to drag the Dialog within the page or container.
 
 * **[Positioning](./getting-started/#positioning)**: - Provided support to position on built-in 9 places or any custom location.
 
-* **[Animation](./animation/)**: - Provided built-in animation support on open & close the Dialog with customization.
+* **[Animation](./animation)**: - Provided built-in animation support on open & close the Dialog with customization.
 
-* **[Localization](./localization/)**: - Supports to localize the default close icon title text to different cultures.
+* **[Localization](./localization)**: - Supports to localize the default close icon title text to different cultures.
 
-* **[Accessibility](./accessibility/)**: - Built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications.
+* **[Accessibility](./accessibility)**: - Built-in compliance with the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/) specifications.
 
 * **[Keyboard Interaction](./accessibility/#keyboard-interaction)**: - The Dialog can be intractable through keyboard.

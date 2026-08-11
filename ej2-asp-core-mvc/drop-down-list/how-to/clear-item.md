@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Clear Item in ##Platform_Name## Drop Down List Component
+title: Clear Item in ##Platform_Name## Drop Down List | Syncfusion
 description: Learn here all about clear item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Clear Item
