@@ -1,6 +1,6 @@
 ---
 layout: post
-title: HTML Attributes in ##Platform_Name## Control
+title: HTML Attributes in ##Platform_Name## Control | Syncfusion
 description: Learn here all about HTML Attributes in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -16,20 +16,20 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls pr
 
 The following is a list of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls that use the standard HTML `input` element. You can apply the [HTML input attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input) and DOM events directly to the input element used on these Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls.
 
-* [AutoComplete](../autocomplete/getting-started/)
-* [CheckBox](../check-box/getting-started/)
-* [ComboBox](../combo-box/getting-started/)
-* [DatePicker](../datepicker/getting-started/)
-* [DateRangePicker](../daterangepicker/getting-started/)
-* [DateTimePicker](../datetimepicker/getting-started/)
+* [AutoComplete](../autocomplete/getting-started)
+* [CheckBox](../check-box/getting-started)
+* [ComboBox](../combo-box/getting-started)
+* [DatePicker](../datepicker/getting-started)
+* [DateRangePicker](../daterangepicker/getting-started)
+* [DateTimePicker](../datetimepicker/getting-started)
 * [DropDownList](../drop-down-list/getting-started)
 * [DropDownTree](../drop-down-tree/getting-started)
 * [MaskedTextBox](../maskedtextbox/getting-started)
 * [MultiSelect](../multi-select/getting-started)
-* [NumericTextBox](../numerictextbox/getting-started/)
+* [NumericTextBox](../numerictextbox/getting-started)
 * [RadioButton](../radio-button/getting-started)
-* [TextBox](../textbox/getting-started/)
-* [TimePicker](../timepicker/getting-started/)
+* [TextBox](../textbox/getting-started)
+* [TimePicker](../timepicker/getting-started)
 * [Upload](../uploader/getting-started)
 * [DropDownButton](../drop-down-button/getting-started)
 * [ProgressButton](../progress-button/getting-started)

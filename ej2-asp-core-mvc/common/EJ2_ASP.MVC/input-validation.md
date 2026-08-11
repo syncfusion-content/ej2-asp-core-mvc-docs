@@ -10,7 +10,7 @@ documentation: ug
 
 # Input Form Validation
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/) in client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator) in client side.
 
 ## How to Validate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI Controls
 
@@ -83,7 +83,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and ed
 
 N> TextBox control supports three types of validation styles. Refer [here](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/validation).
 
-4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#rules) property to display the custom validation error message for each input control.
+4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/index-default#rules) property to display the custom validation error message for each input control.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -103,7 +103,7 @@ N> TextBox control supports three types of validation styles. Refer [here](https
 
 ![Validation message for individual input control](images/validation-message.png)
 
-5.You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#submit) event from FromValidator to validate the form manually.
+5.You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/index-default#submit) event from FromValidator to validate the form manually.
 
 ## ASP.NET MVC Form Validation Supported Controls
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: How to integrate Syncfusion ReportViewer in ASP.NET Core application
-description: Checkout and learn about integrating Syncfusion ReportViewer in ##Platform_Name## MVC application.
+description: Check out the documentation to learn how to integrate the Syncfusion ReportViewer into ##Platform_Name## MVC applications with detailed setup guidance.
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to Use Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core ReportViewer
+# How to Use Syncfusion ASP.NET Core ReportViewer
 
 This section contains the references of how to use Syncfusion<sup style="font-size:70%">&reg;</sup> ReportViewer in ASP.NET Core application.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dragging Of Panels in ##Platform_Name## Dashboard Layout control | Syncfusion
+title: Dragging Of Panels in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Dragging Of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dragging Of Panels

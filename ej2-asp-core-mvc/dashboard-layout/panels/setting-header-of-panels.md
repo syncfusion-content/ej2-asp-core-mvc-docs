@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Header Of Panels in ##Platform_Name## Dashboard Layout control
+title: Setting Header Of Panels in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Setting Header of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Setting Header Of Panels

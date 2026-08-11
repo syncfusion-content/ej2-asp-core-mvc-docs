@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to render ##Platform_Name## control in IE11 Web Browser | Syncfusion
-description: Checkout and learn about building ##Platform_Name## MVC application in IE11 Web Browser.
+description: Explore detailed guidance for building ##Platform_Name## MVC applications and ensuring compatibility and performance in IE11 browsers.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

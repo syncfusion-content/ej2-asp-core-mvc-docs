@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving Panels in ##Platform_Name## Dashboard Layout control
+title: Moving Panels in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Moving Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Moving Panels

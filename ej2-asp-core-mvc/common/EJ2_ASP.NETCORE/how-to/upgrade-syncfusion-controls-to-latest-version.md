@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrade Syncfusion Controls to Latest Version in ##Platform_Name## | Syncfusion
-description: Checkout and learn here about the Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
+title: Upgrade Syncfusion Controls in ##Platform_Name## | Syncfusion
+description: Check out the documentation to learn how to upgrade Syncfusion controls to the latest version in ##Platform_Name## with step-by-step guidance.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

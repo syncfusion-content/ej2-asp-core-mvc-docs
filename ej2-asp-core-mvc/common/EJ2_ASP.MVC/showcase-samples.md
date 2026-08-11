@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Components showcase samples
+# Syncfusion ASP.NET MVC Components showcase samples
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> has a collection of sample applications that demonstrate the use of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI components.
 

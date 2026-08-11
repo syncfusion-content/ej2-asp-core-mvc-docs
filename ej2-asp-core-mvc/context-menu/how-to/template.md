@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template
+# Template in ##Platform_Name## Context Menu
 
 ## Table in Sub ContextMenu
 

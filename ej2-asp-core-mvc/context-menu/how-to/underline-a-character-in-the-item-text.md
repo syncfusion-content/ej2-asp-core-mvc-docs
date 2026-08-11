@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Underline A Character In The Item Text in ##Platform_Name## Context Menu Component
+title: Underline Item Text in ##Platform_Name## Context Menu | Syncfusion
 description: Learn here all about how to Underline a character in the Item Text in Syncfusion ##Platform_Name## Context Menu component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Underline A Character In The Item Text

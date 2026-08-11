@@ -17,7 +17,8 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC library support
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/tagHelper %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
