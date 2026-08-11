@@ -71,7 +71,7 @@ N> By default, treegrid searches all the bound column values. To customize this 
 
 ## Search operators
 
-The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
+The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -116,7 +116,7 @@ To search treegrid records from an external button, invoke the [`search`](https:
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html).
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
