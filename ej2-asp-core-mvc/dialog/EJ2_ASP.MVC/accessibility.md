@@ -65,7 +65,7 @@ Keyboard interaction of Dialog control has designed based on [WAI-ARIA Practices
 <td>
 <kbd>Esc</kbd></td><td>
 Closes the Dialog. This functionality can be controlled by using
-<a href="https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_CloseOnEscape" target="_blank"> `closeOnEscape`</a> </td></tr>
+<a href="https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_CloseOnEscape" target="_blank" aria-label="closeOnEscape"> `closeOnEscape`</a></td></tr>
 <tr>
 <td>
 <kbd>Enter</kbd></td><td>
