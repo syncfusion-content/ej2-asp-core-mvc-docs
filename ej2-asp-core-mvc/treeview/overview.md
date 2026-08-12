@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## TreeView Control
+# Overview
 
 The **TreeView** control is used to represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more. TreeView can be populated from a data source such as an array of JavaScript objects or from DataManager.
 
@@ -24,7 +24,7 @@ The **TreeView** control is used to represent hierarchical data in a tree like s
 
 * **[Node Editing](node-editing/)**: Allows you to change the text of a node in TreeView.
 
-* **[Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_SortOrder)**: Allows display of the TreeView nodes in an `ascending` or a `descending` order.
+* **[Sorting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.TreeView~SortOrder.html)**: Allows display of the TreeView nodes in an `ascending` or a `descending` order.
 
 * **[Template](template/)**: Allows you to customize the nodes in TreeView.
 

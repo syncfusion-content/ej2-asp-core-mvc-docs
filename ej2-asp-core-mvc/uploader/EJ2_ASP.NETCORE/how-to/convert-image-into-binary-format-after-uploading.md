@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Convert Image Into Binary Format in ASP.NET Core Uploader | Syncfusion
+title: Convert Image Into Binary Format in ##Platform_Name## Uploader Control | Syncfusion
 description: Learn here all about Convert Image Into Binary Format After Uploading in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Convert Image Into Binary Format After Uploading
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Convert image into binary format after uploading in ASP.NET Core
+# Convert image into binary format after uploading
 
 By default, the file upload control saves the uploaded image files in physical directories. Also, you can convert the images into binary format at server-side before saving the uploaded images.
 
@@ -39,4 +39,4 @@ public IActionResult Save(IList<IFormFile> UploadFiles)
 
 ```
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
