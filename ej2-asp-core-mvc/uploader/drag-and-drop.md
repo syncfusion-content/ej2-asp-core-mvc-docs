@@ -16,7 +16,7 @@ By default, the uploader component act as drop area element. The drop area gets 
 
 ## Custom drop area
 
-The uploader component allows you to set external target element as drop area using the [dropArea](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Inputs.Uploader~DropArea.html) property. The element can be represented as HTML element or element’s id.
+The uploader component allows you to set external target element as drop area using the [dropArea](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_DropArea) property. The element can be represented as HTML element or element’s id.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
