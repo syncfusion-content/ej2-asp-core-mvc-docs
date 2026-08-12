@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Items in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Items in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Items in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add and configure built-in and custom items in the ##Platform_Name## Ribbon using item types like button, split button, drop-down, and more.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ##Platform_Name## Ribbon control
+# Items in ##Platform_Name## Ribbon
 
 Ribbon renders various built-in items based on the item [Type](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 

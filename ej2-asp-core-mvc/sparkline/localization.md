@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Sparkline Component
+title: Localization in ##Platform_Name## Sparkline | Syncfusion
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Sparkline component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization
+# Localization in ##Platform_Name## Sparkline
 
 The sparkline control supports localization. The default culture for localization is `en-US`. You can change the culture using the `setCulture` method.
 

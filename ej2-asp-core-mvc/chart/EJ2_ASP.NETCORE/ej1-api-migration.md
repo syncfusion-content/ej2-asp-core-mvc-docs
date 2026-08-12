@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Chart Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## Chart | Syncfusion
+description: Learn here all about EJ1 API Migration in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ##Platform_Name## Chart
 
 This article describes the API migration process of Chart component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

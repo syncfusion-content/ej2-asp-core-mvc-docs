@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Linear Gauge Control | Syncfusion
+title: Getting Started with ##Platform_Name## Linear Gauge | Syncfusion
 description: Checkout and learn about getting started with ##Platform_Name## Linear Gauge control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Linear Gauge Control
+# Getting Started with ASP.NET MVC Linear Gauge
 
 This section briefly explains about how to include [ASP.NET MVC Linear Gauge](https://www.syncfusion.com/aspnet-core-ui-controls/linear-gauge) control in your ASP.NET MVC application using Visual Studio.
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Appearance in ##Platform_Name## Sparkline Control
+# Appearance in ##Platform_Name## Sparkline
 
 The appearance of the sparkline can be customized using margin, container Area border, and container Area background.
 

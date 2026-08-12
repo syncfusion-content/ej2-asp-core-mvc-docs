@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Methods in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about methods in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Methods in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to dynamically add or remove tabs, groups, and items in the ##Platform_Name## Ribbon at runtime using built-in methods and APIs.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Methods
+# Methods in ##Platform_Name## Ribbon
 
 The following methods are available in the Ribbon control.
 

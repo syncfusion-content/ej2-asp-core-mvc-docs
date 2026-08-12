@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Axis Labels in ##Platform_Name## 3D Chart Component
+title: Axis Labels in ##Platform_Name## 3D Chart | Syncfusion
 description: Learn here all about Axis Labels in Syncfusion ##Platform_Name## 3D Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Axis Labels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis labels in ##Platform_Name## 3D Chart Component
+# Axis Labels in ASP.NET Core 3D Chart
 
 Axis labels are the labels that are positioned adjacent to the y-axis and beneath the x-axis. It provides descriptive information about the axis.
 

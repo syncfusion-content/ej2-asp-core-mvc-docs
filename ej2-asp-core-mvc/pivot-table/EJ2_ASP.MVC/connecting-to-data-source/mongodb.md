@@ -185,4 +185,4 @@ Here’s the updated sample code with the report configuration and field list su
 ![PivotTable bound with MongoDB database](../images/mongodb-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MongoDB database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) repository.
+Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MongoDB database in this [GitHub](https://github.com/SyncfusionExamples/web-how-to-bind-MongoDB-to-pivot-table) repository.

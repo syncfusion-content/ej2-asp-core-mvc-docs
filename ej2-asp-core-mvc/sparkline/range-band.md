@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Band in ##Platform_Name## Sparkline Control
+# Range Band in ##Platform_Name## Sparkline
 
 This section explains how to customize the sparkline with multiple range bands.
 

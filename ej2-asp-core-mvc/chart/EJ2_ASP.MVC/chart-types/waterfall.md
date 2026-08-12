@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Waterfall Chart in ##Platform_Name## Charts
+title: Waterfall Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Waterfall Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Waterfall Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Waterfall Chart in ##Platform_Name## Charts
+# Waterfall Chart in ##Platform_Name## Chart
 
 ## Waterfall
 

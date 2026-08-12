@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Markers in ##Platform_Name## Sparkline Control
+# Marker in ##Platform_Name## Sparkline
 
 This section explains how to add markers to the sparklines.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Last Value Label in ##Platform_Name## Syncfusion Chart Component
+title: Last Value Label in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data Labels in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Last value label
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Last value label in ##Platform_Name## Chart Control
+# Last Value Label in ##Platform_Name## Chart
 
 The `lastValueLabel` in a chart allows you to easily display the value of the last data point in a series. This feature provides an intuitive way to highlight the most recent or last data value in a series on your chart.
 

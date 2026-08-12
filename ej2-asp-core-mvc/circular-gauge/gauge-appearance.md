@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge Appearance in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: Appearance in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Gauge Appearance in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge Appearance
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Appearance in Circular Gauge Control
+# Appearance in ##Platform_Name## Circular Gauge
 
 ## Gauge Title
 
@@ -106,9 +106,6 @@ Using [background](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/area-customization/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Area-customization.cs" %}
-{% include code-snippet/circulargauge/gauge-appearance/area-customization/area-customization.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
@@ -135,9 +132,6 @@ You can set margin for gauge from its container through [margin](https://help.sy
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/circulargauge/gauge-appearance/margin/tagHelper %}
 {% endhighlight %}
-<!-- {% highlight c# tabtitle="Margin.cs" %}
-{% include code-snippet/circulargauge/gauge-appearance/margin/margin.cs %}
-{% endhighlight %} -->
 {% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}

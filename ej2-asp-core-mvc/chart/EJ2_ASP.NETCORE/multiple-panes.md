@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Panes in ##Platform_Name## Chart Component
+title: Multiple Panes in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Multiple Panes in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Multiple Panes
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Multiple Panes
+# Multiple Panes in ##Platform_Name## Chart
 
 Chart area can be divided into multiple panes using [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartRow.html) and [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartColumn.html).
 

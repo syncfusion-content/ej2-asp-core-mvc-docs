@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Items in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Items in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Items in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add and configure built-in and custom items in the ##Platform_Name## Ribbon using item types like button, split button, drop-down, and more.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Items in ##Platform_Name## Ribbon control
+# Items in ##Platform_Name## Ribbon
 
 Ribbon renders various built-in items based on the item [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property. By default, the type property is set as `Button` which renders the Button.
 
@@ -703,7 +703,7 @@ To diplay the items only in the classic layout group, set the mode as `DisplayMo
 
 ### Display items in Simplified only
 
-To diplay the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://help.syncfusion.com/cr/aspnetmvc-core/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
+To diplay the items only in the simplified layout group, set the mode as `DisplayMode.Simplified` in the [displayOptions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}
@@ -736,7 +736,7 @@ To diplay the items only in the simplified layout group, set the mode as `Displa
 
 ### Display items in Overflow popup only
 
-To diplay the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://help.syncfusion.com/cr/aspnetmvc-core/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
+To diplay the items only in the overflow, set the mode as `DisplayMode.Overflow` in the [displayOptions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_DisplayOptions) property.
 
 {% tabs %}
 {% highlight c# tabtitle="Index.cshtml" %}

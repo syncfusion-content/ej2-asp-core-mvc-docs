@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gauge User Interaction in ##Platform_Name## Circular Gauge Control | Syncfusion
+title: User Interaction in ##Platform_Name## Circular Gauge | Syncfusion
 description: Learn here all about Gauge User Interaction in Syncfusion ##Platform_Name## Circular Gauge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Gauge User Interaction
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interaction in Circular Gauge Control
+# User Interaction in ##Platform_Name## Circular Gauge
 
 ## Tooltip for pointers
 

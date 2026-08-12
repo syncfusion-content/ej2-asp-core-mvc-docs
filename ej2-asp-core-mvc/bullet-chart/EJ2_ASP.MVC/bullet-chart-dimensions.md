@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bullet Chart Dimensions in ##Platform_Name## Bullet Chart Component
+title: Dimensions in ##Platform_Name## Bullet Chart | Syncfusion
 description: Learn here all about Bullet Chart Dimensions in Syncfusion ##Platform_Name## Bullet Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Bullet Chart Dimensions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Bullet chart dimensions
+# Dimensions in ASP.NET MVC Bullet Chart
 
 ## Size for container
 

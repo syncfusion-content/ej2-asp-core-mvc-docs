@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Smithchart Print in ##Platform_Name## Smithchart Component
+title: Print and Export in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smithchart Print in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Smithchart Print
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Print and Export
+# Print and Export in ##Platform_Name## Smith Chart
 
 ## Print
 

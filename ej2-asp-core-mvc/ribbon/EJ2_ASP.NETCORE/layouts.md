@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Layouts in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Layouts in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Layouts in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to customize the ##Platform_Name## Ribbon layout using the activeLayout property, with support for Classic, Simplified, and other layout modes.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Layouts in ASP.NET Core Ribbon control
+# Layouts in ##Platform_Name## Ribbon
 
 The Ribbon allows to customize the layout by using the [activeLayout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.Ribbon.html#Syncfusion_EJ2_Ribbon_Ribbon_ActiveLayout) property. The Ribbon control supports the following layouts:
 

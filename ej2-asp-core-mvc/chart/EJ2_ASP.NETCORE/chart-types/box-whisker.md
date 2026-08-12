@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Box and Whisker Chart in ##Platform_Name## Charts
+title: Box and Whisker Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Box and Whisker Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Box and Whisker Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Box and Whisker Chart in ##Platform_Name## Charts
+# Box and Whisker Chart in ##Platform_Name## Chart
 
 ## Box and Whisker
 

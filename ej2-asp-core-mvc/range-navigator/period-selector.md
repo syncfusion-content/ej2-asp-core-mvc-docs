@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Period Selector in ##Platform_Name## Range Navigator Component
+title: Period Selector in ##Platform_Name## Range Navigator | Syncfusion
 description: Learn here all about Period Selector in Syncfusion ##Platform_Name## Range Navigator component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Period Selector
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Period selector
+# Period Selector in ##Platform_Name## Range Navigator
 
 The period selector allows to select a range with specified periods.
 

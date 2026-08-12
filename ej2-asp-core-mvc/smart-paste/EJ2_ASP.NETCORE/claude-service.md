@@ -15,11 +15,11 @@ The Syncfusion ASP.NET Core SmartPaste Button control enables AI-powered, contex
 ## Setting Up Claude
 
 1. **Create an Anthropic Account**  
-   Visit [Anthropic Console](https://console.anthropic.com), sign up, and complete the verification process.
+   Visit [Anthropic Console](https://platform.claude.com/), sign up, and complete the verification process.
 2. **Obtain an API Key**  
-   Navigate to [API Keys](https://console.anthropic.com/settings/keys) and click "Create Key."
+   Navigate to [API Keys](https://platform.claude.com//settings/keys) and click "Create Key."
 3. **Review Model Specifications**  
-   Refer to [Claude Models Documentation](https://docs.anthropic.com/claude/docs/models-overview) for details on available models.
+   Refer to [Claude Models Documentation](https://platform.claude.com/docs/en/about-claude/models/overview) for details on available models.
 
 ## Create a Claude AI Service
 
@@ -96,7 +96,7 @@ public class ClaudeAIService
 }
 ```
 
-N> Store the Claude API key in `appsettings.json` (e.g., `{ "Claude": { "ApiKey": "your-api-key" } }`) or as an environment variable to ensure security. Verify the `anthropic-version` header in [Claude API Documentation](https://docs.anthropic.com/claude/docs) for the latest version.
+N> Store the Claude API key in `appsettings.json` (e.g., `{ "Claude": { "ApiKey": "your-api-key" } }`) or as an environment variable to ensure security. Verify the `anthropic-version` header in [Claude API Documentation](https://platform.claude.com/docs/en/intro) for the latest version.
 
 ## Define Request and Response Models
 

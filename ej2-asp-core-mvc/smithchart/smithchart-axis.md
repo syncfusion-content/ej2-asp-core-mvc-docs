@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Smithchart Axis in ##Platform_Name## Smithchart Control | Syncfusion
+title: Axis in ##Platform_Name## Smith Chart | Syncfusion
 description: Learn here all about Smithchart Axis in Syncfusion ##Platform_Name## Smithchart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Smithchart Axis
+control: Axis
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Axis in Smithchart Control
+# Axis in ##Platform_Name## Smith Chart
 
 Like chart, Smithchart is having support for two types of axis.
 * Horizontal axis - axis drawn as straight line in the horizontal direction of the chart.
