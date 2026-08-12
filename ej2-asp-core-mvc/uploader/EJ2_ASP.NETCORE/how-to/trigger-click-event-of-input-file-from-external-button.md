@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trigger Click Event Of Input File in ##Platform_Name## Uploader | Syncfusion
+title: Trigger Input File Click Event in ASP.NET Core | Syncfusion
 description: Learn here all about Trigger Click Event Of Input File From External Button in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Trigger Click Event Of Input File From External Button

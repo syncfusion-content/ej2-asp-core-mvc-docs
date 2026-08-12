@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Trigger Click Event Of Input File From External Button in ##Platform_Name## Uploader Component
+title: Trigger Input File Click Event in ASP.NET MVC Uploader | Syncfusion
 description: Learn here all about Trigger Click Event Of Input File From External Button in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Trigger Click Event Of Input File From External Button
@@ -37,4 +37,4 @@ You can trigger the click event of input file from external button using `click`
 {% endif %}
 
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
