@@ -63,4 +63,4 @@ Use the following CSS to customize the uploaded file container in File Upload
 
 ## See Also
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template/)
+* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template)
