@@ -11,7 +11,7 @@ documentation: ug
 
 # Context Menu in ##Platform_Name## TreeGrid
 
-The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`ContextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html).
+The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`ContextMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ContextMenuItems).
 
 The default items are in the following table.
 
@@ -61,8 +61,8 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`ContextMenuItems`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuItems.html) as a collection of **ContextMenuItemModel**.
-Actions for this customized items can be defined in the [`ContextMenuClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ContextMenuClick.html) event.
+The custom context menu items can be added by defining the [`ContextMenuItems`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ContextMenuItems) as a collection of **ContextMenuItemModel**.
+Actions for this customized items can be defined in the [`ContextMenuClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ContextMenuClick) event.
 
 In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.
 
@@ -93,7 +93,7 @@ In the below sample, we have shown context menu item for parent rows to expand o
 
 ## Enable and disable context menu items dynamically
 
-You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuopen) event.
+You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu/index-default#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#contextmenuopen) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -120,5 +120,5 @@ You can enable and disable the context menu items using the [`enableItems`](http
 
 
 
-N> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`Target`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~Target.html) property.
-<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`Target`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Target) property.
+<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

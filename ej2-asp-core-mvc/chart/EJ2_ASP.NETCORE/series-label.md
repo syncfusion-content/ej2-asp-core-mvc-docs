@@ -13,7 +13,7 @@ The series label displays the name of each series inline, positioned near the en
 
 ## Overview
 
-Enable series labels using the [`LabelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LabelSettings) property within the series configuration. Set the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Visible) property to **true** to display the label.
+Enable series labels using the [`LabelSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeries.html#Syncfusion_EJ2_Charts_ChartSeries_LabelSettings) property within the series configuration. Set the [`Visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Visible) property to **true** to display the label.
 
 {% tabs %}
 
@@ -31,12 +31,12 @@ Enable series labels using the [`LabelSettings`](https://help.syncfusion.com/cr/
 
 Customize the appearance of series labels using the following properties:
 
-* [`Text`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Text)
-* [`Font`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Font)
-* [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Background)
-* [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Border)
-* [`Opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_Opacity)
-* [`ShowOverlapText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.SeriesLabelSettings.html#Syncfusion_EJ2_Charts_SeriesLabelSettings_ShowOverlapText)
+* [`Text`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Text)
+* [`Font`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Font)
+* [`Background`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Background)
+* [`Border`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Border)
+* [`Opacity`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_Opacity)
+* [`ShowOverlapText`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartSeriesLabelSettings.html#Syncfusion_EJ2_Charts_ChartSeriesLabelSettings_ShowOverlapText)
 
 {% tabs %}
 

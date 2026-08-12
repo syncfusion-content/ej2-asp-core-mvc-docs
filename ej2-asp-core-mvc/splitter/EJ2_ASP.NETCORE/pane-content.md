@@ -50,7 +50,7 @@ Output be like the below.
 
 You can render any Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls along with their native and control events within splitter as pane content.
 
-You can refer [Accordion within splitter](https://ej2.syncfusion.com/aspnetcore/Splitter/AccordionMenu#/material/material) and [Listview within splitter](https://ej2.syncfusion.com/aspnetcore/Splitter/DetailsView#/material) samples.
+You can refer [Accordion within splitter](https://ej2.syncfusion.com/aspnetcore/splitter/accordionmenu#/fluent2) and [Listview within splitter](https://ej2.syncfusion.com/aspnetcore/splitter/detailsview#/fluent2) samples.
 
 ## Plain content
 

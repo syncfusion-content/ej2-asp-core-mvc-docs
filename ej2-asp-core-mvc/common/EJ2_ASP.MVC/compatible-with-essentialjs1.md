@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Compatible With Essentialjs1 in ##Platform_Name## Common Component
+title: Compatible with Essential JS 1 in ##Platform_Name## Components | Syncfusion
 description: Learn here all about Compatible With Essentialjs1 in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Compatible With Essentialjs1
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Compatibility with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential<sup style="font-size:70%">&reg;</sup> JS 1)
+# Compatibility with Syncfusion ASP.NET MVC (Essential JS 1)
 
 This documentation explains how to render  Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 Syncfusion<sup style="font-size:70%">&reg;</sup> components in a single page.
 
@@ -16,7 +16,7 @@ This documentation explains how to render  Essential<sup style="font-size:70%">&
 
 You can create Essential<sup style="font-size:70%">&reg;</sup> JS 1 and Essential<sup style="font-size:70%">&reg;</sup> JS 2 controls using the following links:
 
-Getting started for [`EJ2 ASPMVC control`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc/)
+Getting started for [`EJ2 ASPMVC control`](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc)
 
 Getting started for [`EJ1 ASPMVC control`](https://help.syncfusion.com/aspnetmvc/grid/getting-started)
 

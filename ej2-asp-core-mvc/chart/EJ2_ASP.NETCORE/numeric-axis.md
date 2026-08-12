@@ -13,7 +13,7 @@ documentation: ug
 
 # Numeric Axis in ##Platform_Name## Chart
 
-You can use numeric [`axis`](https://ej2.syncfusion.com/aspnetcore/Chart/NumericAxis#/material) to represent numeric values of data in chart. By default, the `valueType` of an axis is [`Double`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ValueType).
+You can use numeric [`axis`](https://ej2.syncfusion.com/aspnetcore/chart/numericaxis#/fluent2) to represent numeric values of data in chart. By default, the `valueType` of an axis is [`Double`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.ChartAxis.html#Syncfusion_EJ2_Charts_ChartAxis_ValueType).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

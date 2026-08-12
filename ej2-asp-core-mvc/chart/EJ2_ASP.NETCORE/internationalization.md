@@ -17,7 +17,7 @@ Chart provides supports for internationalization for the following chart element
 * Axis label.
 * Tooltip.
 
-For more information about number and date formatter, you can refer [`internationalization`](http://ej2.syncfusion.com/documentation/base/intl.html).
+For more information about number and date formatter, you can refer [`internationalization`](https://ej2.syncfusion.com/documentation/common/internationalization).
 
 <!-- markdownlint-disable MD036 -->
 **Globalization**
