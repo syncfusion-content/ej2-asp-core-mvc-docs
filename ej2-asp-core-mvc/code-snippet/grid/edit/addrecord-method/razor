@@ -1,0 +1,42 @@
+<div id="container">
+    <div>
+        @Html.EJS().Button("addBtn").Content("Add New Record").CssClass("e-outline").Render()
+        <span id="status"></span>
+    </div>
+    <div class="control-section">
+        @Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("180").Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Columns(col =>
+        {
+            col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+            col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+            col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+            col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+            col.Field("Freight").HeaderText("Freight").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").Add();
+        }).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true); }).Render()
+    </div>
+</div>
+
+<script>
+    document.getElementById('addBtn').onclick = handleAddClick;
+    function handleAddClick() {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.addRecord({
+            OrderID: Math.floor(Math.random() * 100000),
+            CustomerID: 'ALFKI',
+            ShipCity: 'Berlin',
+            ShipCountry: 'Germany',
+            Freight: 29.50
+        });
+        document.getElementById('status').innerText = 'Record added successfully!';
+    }
+</script>
+
+<style>
+    .control-section {
+        padding-top: 20px;
+    }
+
+    #status {
+        margin-left: 10px;
+        color: green;
+    }
+</style>

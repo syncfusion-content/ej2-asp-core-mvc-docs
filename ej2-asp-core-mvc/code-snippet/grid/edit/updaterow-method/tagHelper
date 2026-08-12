@@ -1,0 +1,44 @@
+<div id="container">
+    <div>
+        <ejs-button id="updateRowBtn" content="Update Row at Index 2" cssClass="e-outline"></ejs-button>
+        <span id="status"></span>
+    </div>
+    <div class="control-section">
+        <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="180"
+            toolbar="@(new List<string>(){ "Edit","Update","Cancel"})">
+            <e-grid-editSettings allowEditing="true"></e-grid-editSettings>
+            <e-grid-columns>
+                <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="100"></e-grid-column>
+                <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+                <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+                <e-grid-column field="ShipCountry" headerText="Ship Country" width="130"></e-grid-column>
+                <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="100"></e-grid-column>
+            </e-grid-columns>
+        </ejs-grid>
+    </div>
+</div>
+
+<script>
+    document.getElementById('updateRowBtn').onclick = handleUpdateRowClick;
+    function handleUpdateRowClick(){
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.updateRow(2, {
+            OrderID: 10250,
+            CustomerID: 'HANAR',
+            ShipCity: 'Madrid',
+            ShipCountry: 'Spain',
+            Freight: 75.00
+        });
+        document.getElementById('status').innerText = 'Row at index 2 updated successfully!';
+    }
+</script>
+
+<style>
+    .control-section{
+        padding-top:20px;
+    }
+    #status{
+        margin-left:10px;
+        color:green;
+    }
+</style>
