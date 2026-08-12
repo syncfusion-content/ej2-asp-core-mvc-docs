@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Determine Whether The Uploader Has Input File in ##Platform_Name## Uploader Component
+title: Determine Whether Uploader Has File Input | Syncfusion
 description: Learn here all about Determine Whether The Uploader Has Input File in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Determine Whether The Uploader Has Input File
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Determine whether uploader has file input (required validation)
+# Determine whether uploader has file input in ASP.NET Core
 
 By setting **required** attribute to uploader input element, you can validate the file input has any value in it. 
 In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
@@ -39,4 +39,4 @@ In the below sample, set required attribute to the uploader input element and sh
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

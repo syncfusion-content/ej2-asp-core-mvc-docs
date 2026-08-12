@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Uploader Component
+title: Style and appearance in ##Platform_Name## Uploader | Syncfusion
 description: Learn here all about style and appearance in ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style
@@ -63,4 +63,4 @@ Use the following CSS to customize the uploaded file container in File Upload
 
 ## See Also
 
-* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template/)
+* [Customize the appearance of uploader using a template](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/template)
