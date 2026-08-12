@@ -34,7 +34,7 @@ Column width can be resized by clicking and dragging the right edge of the colum
 
 
 
-N> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/cref_files/aspnetmvc-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowResizing.html) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
+N> You can disable resizing for a particular column by setting the [`AllowResizing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowResizing) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
 <br/> In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ## Min and max width
