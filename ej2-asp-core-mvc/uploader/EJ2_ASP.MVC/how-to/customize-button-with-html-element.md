@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Button With Html Element in ASP.NET MVC Uploader | Syncfusion
+title: Customize Uploader Button with HTML Element in MVC | Syncfusion
 description: Learn here all about Customize Button With Html Element in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Button With Html Element

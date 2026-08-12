@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check The Mime Type Of File Before Upload in ASP.NET MVC Uploader | Syncfusion
+title: Check File MIME Type Before Upload in ASP.NET MVC | Syncfusion
 description: Learn here all about Check The Mime Type Of File Before Upload It in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
 platform: ej2-asp-core-mvc
 control: Check The Mime Type Of File Before Upload It

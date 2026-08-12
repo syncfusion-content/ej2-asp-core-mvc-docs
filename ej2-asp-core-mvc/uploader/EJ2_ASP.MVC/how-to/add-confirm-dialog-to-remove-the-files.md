@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Confirm Dialog To Remove The Files in ASP.NET MVC Uploader | Syncfusion
+title: Add Confirmation Dialog in ASP.NET MVC Uploader | Syncfusion
 description: Learn here all about Add Confirm Dialog To Remove The Files in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Confirm Dialog To Remove The Files
