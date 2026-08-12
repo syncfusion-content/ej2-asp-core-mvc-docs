@@ -194,7 +194,7 @@ You can enable or disable treegrid action for a particular column by setting the
 
 ## Show/hide columns by external button
 
-You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid#hidecolumns) method.
+You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid/index-default#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid/index-default#hidecolumns) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -324,7 +324,7 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
 
 
 
