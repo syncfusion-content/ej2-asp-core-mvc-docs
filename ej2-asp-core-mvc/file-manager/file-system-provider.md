@@ -128,7 +128,7 @@ The Amazon ***S3*** (*Simple Storage Service*) cloud file system provider allows
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider.git  amazon-s3-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/amazon-s3-aspcore-file-provider  amazon-s3-aspcore-file-provider.git
 
 ```
 
@@ -252,7 +252,7 @@ In ASP.NET Core, File Transfer Protocol file system provider allows the users to
 
 ```typescript
 
-git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider.git  ftp-aspcore-file-provider.git
+git clone https://github.com/SyncfusionExamples/ftp-aspcore-file-provider  ftp-aspcore-file-provider.git
 
 ```
 
@@ -379,7 +379,7 @@ npm install @syncfusion/ej2-filemanager-node-filesystem
 
 ```typescript
 
-git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem.git node-filesystem-provider
+git clone  https://github.com/SyncfusionExamples/ej2-filemanager-node-filesystem node-filesystem-provider
 
 ```
 
@@ -444,7 +444,7 @@ cd google-drive-aspcore-file-provider
 
 ```
 
-Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/drive/api/v3/reference/) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
+Google Drive file system provider use the [Google Drive APIs](https://developers.google.com/workspace/drive/api/reference/rest/v3) to read the file in the file system and uses the [OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) protocol for authentication and authorization. To authenticate from the client end, obtain OAuth 2.0 client credentials from the `Google API Console`. To learn more about generating the client credentials from the Google API Console, refer to this [link](https://developers.google.com/identity/protocols/oauth2/javascript-implicit-flow).
 
 After generating the client secret data, copy the JSON data to the following specified JSON files in the cloned location.
 
@@ -651,7 +651,7 @@ npm install @syncfusion/ej2-filemanager-ibm-cos-node-file-provider
 
 ```typescript
 
-git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider.git
+git clone  https://github.com/SyncfusionExamples/filemanager-ibm-cos-node-file-provider
 
 ```
 

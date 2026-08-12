@@ -143,7 +143,7 @@ The output will look like the image below.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~EnableRtl.html) API to true.
+It is possible to render the File Manager in right-to-left direction by setting the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_EnableRtl) API to true.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
