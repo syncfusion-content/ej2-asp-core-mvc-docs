@@ -102,7 +102,32 @@ You can define the colors ranges or color stops for data values in both gradient
 {% endtabs %}
 {% endif %}
 
+## Color range
 
+The color range support is used to provide a specific color for specific range in heat map. The [startValue](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html#Syncfusion_EJ2_HeatMap_HeatMapPalette_StartValue) and [endValue](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html#Syncfusion_EJ2_HeatMap_HeatMapPalette_EndValue) properties are used to define the range start and end value. The [minColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html#Syncfusion_EJ2_HeatMap_HeatMapPalette_MinColor) and [maxColor](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.HeatMap.HeatMapPalette.html#Syncfusion_EJ2_HeatMap_HeatMapPalette_MaxColor) properties represent the colors of given range. It's possible to set the cell color for the value not in the given range using the `fillColor` property.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/palette/color2/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Color.cs" %}
+{% include code-snippet/heatmap/palette/color2/color.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/heatmap/palette/color2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Color.cs" %}
+{% include code-snippet/heatmap/palette/color2/color.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
 
 ## See Also
 
