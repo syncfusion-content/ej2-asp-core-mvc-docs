@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input Form Validation in ##Platform_Name## control
+title: Input Form Validation in ##Platform_Name## control | Syncfusion
 description: Learn here all about Input Form Validation in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -10,7 +10,7 @@ documentation: ug
 
 # Input Form Validation
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/) in client side.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator) in client side.
 
 ## How to Validate Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI Controls
 
@@ -72,7 +72,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI input and e
 
 N> TextBox control supports three types of validation styles. Refer [here](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/validation).
 
-4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#rules) property to display the custom validation error message for each input control.
+4.You can use the FormValidator [rules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/index-default#rules) property to display the custom validation error message for each input control.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -92,7 +92,7 @@ N> TextBox control supports three types of validation styles. Refer [here](https
 
 ![Validation message for individual input control](images/validation-message.png)
 
-5.You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/#submit) event from FromValidator to validate the form manually.
+5.You can also use the [submit](https://ej2.syncfusion.com/javascript/documentation/api/form-validator/index-default#submit) event from FromValidator to validate the form manually.
 
 ## ASP.NET Core Form Validation Supported Controls
 
@@ -109,7 +109,7 @@ The following section provides the details about the Syncfusion<sup style="font-
 * [ListBox](https://ej2.syncfusion.com/aspnetcore/documentation/list-box/how-to/form-submit)
 * [In-place Editor](https://ej2.syncfusion.com/aspnetcore/documentation/in-place-editor/validation)
 * [TextBox](https://ej2.syncfusion.com/aspnetcore/documentation/textbox/validation)
-* [RichTextEditor](https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/validation)
+* [RichTextEditor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/validation)
 * DateTimePicker
 * Calendar
 * ColorPicker
@@ -121,5 +121,5 @@ The following section provides the details about the Syncfusion<sup style="font-
 
 ## See Also
 
-* [ASP.NET Core Forms and Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
-* [Model validation in ASP.NET Core and Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)
+* [ASP.NET Core Forms and Validation](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
+* [Model validation in ASP.NET Core and Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)

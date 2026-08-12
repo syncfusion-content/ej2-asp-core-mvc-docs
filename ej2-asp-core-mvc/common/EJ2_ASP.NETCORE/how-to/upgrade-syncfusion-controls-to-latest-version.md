@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Upgrade Syncfusion Controls to Latest Version in ##Platform_Name## | Syncfusion
-description: Checkout and learn here about the Upgrade Syncfusion Controls to Latest Version in ##Platform_Name##.
+title: Upgrade Syncfusion Controls in ##Platform_Name## | Syncfusion
+description: Check out the documentation to learn how to upgrade Syncfusion controls to the latest version in ##Platform_Name## with step-by-step guidance.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -36,11 +36,11 @@ Ensure to update version in Script and CSS file references in your application.
 
 * Make sure that the version in the URLs matches the version of the `Syncfusion.EJ2.AspNet.Core` NuGet package in your application.
     
-N> For production purpose and minimal requirement, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](http://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
+N> For production purpose and minimal requirement, Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate custom styles of selective controls by using the ThemeStudio web application. Refer to this [link](https://ej2.syncfusion.com/themestudio/) for more details on ThemeStudio.
 
 ## Breaking changes
 
-Check is there any breaking changes between the syncfusion<sup style="font-size:70%">&reg;</sup> version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index/?type=breaking-changes).
+Check is there any breaking changes between the syncfusion<sup style="font-size:70%">&reg;</sup> version you are using and the version you want to upgrade using [upgrade guide](https://help.syncfusion.com/upgrade-guide/aspnet-core-ui-controls) or each version [release notes](https://ej2.syncfusion.com/aspnetcore/documentation/release-notes/index).
 
 ## Cache problem
 

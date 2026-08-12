@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Moving Panels in ##Platform_Name## Dashboard Layout control
+title: Moving Panels in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Moving Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Moving Panels
@@ -23,9 +23,9 @@ Where,
 * row - New row position for moving the panel.
 * col - New column position for moving the panel.
 
-Each time a panel's position is changed (Programatically or through UI interaction), the Dashboard Layout's [`change`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Change.html) event will be triggered.
+Each time a panel's position is changed (Programatically or through UI interaction), the Dashboard Layout's [`change`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Change) event will be triggered.
 
-The following sample demonstrates moving a panel programatically to a new position in the Dashboard Layout's [created](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayout~Created.html) event.
+The following sample demonstrates moving a panel programatically to a new position in the Dashboard Layout's [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayout.html#Syncfusion_EJ2_Layouts_DashboardLayout_Created) event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -52,4 +52,4 @@ The following sample demonstrates moving a panel programatically to a new positi
 
 ![Moving of panels](./../images/moving.PNG)
 
-N> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/dashboardlayout/defaultfunctionalities#/fluent2) to know how to present and manipulate data.
