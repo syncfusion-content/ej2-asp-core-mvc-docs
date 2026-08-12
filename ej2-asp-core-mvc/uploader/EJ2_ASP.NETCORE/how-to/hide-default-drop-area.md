@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hide Default Drop Area in ##Platform_Name## Uploader Component
+title: Hide Default Drop Area in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Hide Default Drop Area in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Hide Default Drop Area
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Hide default drop area
+# Hide default drop area in ASP.NET Core
 
 You can achieve this behavior by overriding the corresponding uploader styles. Override the following styles to hide the default drop area behavior.
 

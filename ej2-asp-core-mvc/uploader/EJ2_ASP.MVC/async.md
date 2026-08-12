@@ -368,7 +368,7 @@ By default, the uploader processes the files to upload once the files are select
 
 Auto upload output be like the below.
 
-![uploader](./images/uploader-auto-01.png)
+![uploader](./images/uploader-auto-01.webp)
 
 Auto upload false output be like the below.
 

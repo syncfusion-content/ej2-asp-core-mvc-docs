@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save And Remove Action Razor in ##Platform_Name## Uploader Component
+title: Save And Remove Action Razor in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Save And Remove Action Razor
@@ -21,7 +21,8 @@ The save handler receives the submitted files and manages the save process in se
 {% include code-snippet/uploader/razor-save/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Razor-save.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +31,8 @@ The save handler receives the submitted files and manages the save process in se
 {% include code-snippet/uploader/razor-save/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Razor-save.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

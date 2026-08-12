@@ -127,7 +127,7 @@ You can handle the success and failure actions using the [Success](https://help.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Uploader Actions](images/uploader-auto-01.png)
+![ASP.NET MVC Uploader Actions](images/uploader-auto-01.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Uploader/ASP.NET%20MVC%20Razor%20Examples).
 

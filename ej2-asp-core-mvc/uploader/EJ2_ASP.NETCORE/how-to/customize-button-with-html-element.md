@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Button With Html Element in ##Platform_Name## Uploader Component
+title: Customize Button With Html Element in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Customize Button With Html Element in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Button With Html Element
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize button with HTML element
+# Customize button with HTML element in ASP.NET Core
 
 The uploader control allows you to customize the action buttons by using [buttons](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Buttons) &nbsp;property. Refer to the following example.
 

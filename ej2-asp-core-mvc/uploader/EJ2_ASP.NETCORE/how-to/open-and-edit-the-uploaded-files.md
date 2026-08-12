@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open And Edit The Uploaded Files in ##Platform_Name## Uploader Component
+title: Open And Edit The Uploaded Files in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Open And Edit The Uploaded Files in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Open And Edit The Uploaded Files
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open and edit the uploaded files
+# Open and edit the uploaded files in ASP.NET Core
 
 The uploader control allows you to modify the file after uploading to the server, which can be achieved using [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event of the uploader.
 

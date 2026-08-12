@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Validate Image On Drop in ##Platform_Name## Uploader Component
+title: Validate Image On Drop in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Validate Image On Drop in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Validate Image On Drop
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validate image/* on drop
+# Validate image/* on drop in ASP.NET Core
 
 The uploader control allows you to select all types of images using the *image/ ** to [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions) property. You can directly set it to accept the attribute of uploader element.
 

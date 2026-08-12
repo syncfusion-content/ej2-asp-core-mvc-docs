@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## Uploader Component
+title: Style and appearance in ##Platform_Name## Uploader | Syncfusion
 description: Learn here all about style and appearance in ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Style

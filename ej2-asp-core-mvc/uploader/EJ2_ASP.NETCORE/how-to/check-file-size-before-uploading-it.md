@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check File Size Before Uploading It in ##Platform_Name## Uploader Component
+title: Check File Size Before Uploading It in ASP.NET Core Uploader| Syncfusion 
 description: Learn here all about Check File Size Before Uploading It in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check File Size Before Uploading It
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Check file size before uploading it
+# Check file size before uploading it in ASP.NET Core
 
 By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file size before upload it to server. 
 File object contains the file size in bytes only. 

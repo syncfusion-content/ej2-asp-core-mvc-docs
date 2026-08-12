@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Achieve File Upload Programmatically in ##Platform_Name## Uploader Component
+title: File Upload Programmatically in ASP.NET MVC Uploader | Syncfusion
 description: Learn here all about Achieve File Upload Programmatically in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Achieve File Upload Programmatically
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Achieve file upload programmatically
+# Achieve file upload programmatically in ASP.NET MVC
 
 You can upload a file programmatically using `upload` method. 
 The selected files data, get from `getFilesData` public method in uploader.
