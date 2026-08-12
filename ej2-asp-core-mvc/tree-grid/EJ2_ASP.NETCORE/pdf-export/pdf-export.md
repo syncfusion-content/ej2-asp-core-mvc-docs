@@ -11,7 +11,7 @@ documentation: ug
 
 # PDF Export in ##Platform_Name## TreeGrid
 
-PDF export allows exporting TreeGrid data to PDF document. You need to use the **pdfExport** method for exporting. To enable PDF export in the treegrid, set the [`allowPdfExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPdfExport.html) as true.
+PDF export allows exporting TreeGrid data to PDF document. You need to use the **pdfExport** method for exporting. To enable PDF export in the treegrid, set the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowPdfExport) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -53,4 +53,4 @@ In the provided example, the `customAggregateFn` function computes the item coun
 
 ![Exporting Custom Aggregates](../images/pdf-custom-aggregate.jpg)
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

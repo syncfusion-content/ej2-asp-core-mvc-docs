@@ -13,7 +13,7 @@ documentation: ug
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -58,15 +58,15 @@ The following table shows built-in toolbar items and its actions.
 
 
 
-N> The [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) has options to define both built-in and custom toolbar items.
+N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) as a collection of
-[`ItemModels`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html).
-Actions for this customized toolbar items are defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event.
+Custom toolbar items can be added by defining the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar) as a collection of
+[`ItemModels`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.Toolbar.html#Syncfusion_EJ2_Navigations_Toolbar_Items).
+Actions for this customized toolbar items are defined in the [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) event.
 
-By default, Custom toolbar items are in position **Left**. You can change the position by using the [`Align`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem~Align.html) property. In the below sample, we have applied position **Right** for the **Quick Filter** toolbar item.
+By default, Custom toolbar items are in position **Left**. You can change the position by using the [`Align`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ToolbarItem.html#Syncfusion_EJ2_Navigations_ToolbarItem_Align) property. In the below sample, we have applied position **Right** for the **Quick Filter** toolbar item.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -93,7 +93,7 @@ By default, Custom toolbar items are in position **Left**. You can change the po
 
 
 
-N> The [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) has options to define both built-in and custom toolbar items.
+N> The [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar) has options to define both built-in and custom toolbar items.
 <br/> If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
@@ -127,4 +127,4 @@ In the below example, **ExpandAll**, **CollapseAll** are built-in toolbar items 
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

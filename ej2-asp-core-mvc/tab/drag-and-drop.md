@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Tab Component
+title: Drag And Drop in ##Platform_Name## Tab | Syncfusion
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
@@ -9,21 +9,21 @@ documentation: ug
 ---
 
 
-# Drag and drop items
+# Drag and drop items in ##Platform_Name## Tab Control
 
-The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~AllowDragAndDrop.html)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
+The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_AllowDragAndDrop)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
 
-* If you need to prevent dragging action for a particular item, the [`onDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~OnDragStart.html) event can be used which will trigger when the item drag is started. If you need to prevent dropping action for a particular item, the [`dragged`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Dragged.html) event can be used which will trigger when the drag action is stopped.
+* If you need to prevent dragging action for a particular item, the [`onDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_OnDragStart) event can be used which will trigger when the item drag is started. If you need to prevent dropping action for a particular item, the [`dragged`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Dragged) event can be used which will trigger when the drag action is stopped.
 
-* The [`dragArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~DragArea.html) defines the area in which the draggable element movement will be occurring. Outside that area will be restricted for the draggable element movement.
+* The [`dragArea`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_DragArea) defines the area in which the draggable element movement will be occurring. Outside that area will be restricted for the draggable element movement.
 
-* The [`onDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~OnDragStart.html) event will be triggered before dragging the item from Tab.
+* The [`onDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_OnDragStart) event will be triggered before dragging the item from Tab.
 
 * The [`dragging`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Dragging.html) event will be triggered when the Tab item is being dragged.
 
-* The [`dragged`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~Dragged.html) event will be triggered when the Tab item is dropped on the target element successfully.
+* The [`dragged`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_Dragged) event will be triggered when the Tab item is dropped on the target element successfully.
 
-In the following sample, the [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.Tab~AllowDragAndDrop.html) property is enabled.
+In the following sample, the [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_AllowDragAndDrop) property is enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

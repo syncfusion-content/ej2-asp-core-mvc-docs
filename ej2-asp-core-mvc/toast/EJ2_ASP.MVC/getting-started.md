@@ -95,13 +95,13 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Toast 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Toast control will be rendered in the default web browser.
 
-![ASP.NET MVC Toast Control](images/toast.png)
+![ASP.NET MVC Toast Control](images/toast.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Toast/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
-* [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/Toast/Template#/material)
+* [Real time example using Toast](https://ej2.syncfusion.com/aspnetmvc/toast/template#/fluent2)
 
 * [How to close the toast with click/tap](https://ej2.syncfusion.com/aspnetmvc/documentation/toast/how-to/close-the-toast-with-click-tap)
 
