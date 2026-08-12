@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Drop Down List Component
+title: Ej1 Api Migration in ##Platform_Name## Drop Down List | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migration from Essential JS 1 to Drop Down List control
 
 This article describes the API migration process of  DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
@@ -31,12 +31,12 @@ This article describes the API migration process of  DropDownList component from
 |----------|-----------------------|-----------------------|
 | **Default** |	**Property**: *EnableFilterSearch* <br/>`@Html.EJ().DropDownList("selectCompany").EnableFilterSearch(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
 | **Server filtering** | **Property**: *EnableServerFiltering* <br/>`@Html.EJ().DropDownList("selectCompany").EnableServerFiltering(true)` | **Property**: *AllowFiltering* <br/>`@Html.EJS().DropDownList("customers").AllowFiltering(true).Render()` |
-| **Filter type** | **Property**: *FilterType* <br/>`@Html.EJ().DropDownList("selectCompany").FilterType(SearchFilterType.StartsWith)` | <https://ej2.syncfusion.com/aspnetmvc/DropDownList/Filtering#/material> |
+| **Filter type** | **Property**: *FilterType* <br/>`@Html.EJ().DropDownList("selectCompany").FilterType(SearchFilterType.StartsWith)` | <https://ej2.syncfusion.com/aspnetmvc/dropdownlist/filtering#/fluent2> |
 | **No Records Template** |	**Not Applicable** | **Property**: *NoRecordsTemplate* <br/> `@Html.EJS().DropDownList("games").NoRecordsTemplate("<span class='norecord'> NO DATA AVAILABLE</span>").Render()` |
 | **Filter Bar watermarktext** | **Not Applicable** | **Property**: *FilterBarPlaceholder* <br/>`@Html.EJS().DropDownList("customers").FilterBarPlaceholder(true).Render()` |
 | **Ignore casing and diacritics** | **Not Applicable** | **Property**: *IgnoreAccent*<br/>`@Html.EJS().DropDownList("customers").IgnoreAccent(true).Render()` |
 | **Incremental search** | **Property**: *EnableIncrementalSearch*<br/>`@Html.EJ().DropDownList("selectCompany").EnableIncrementalSearch(true)` | **By default it is true** |
-| **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().DropDownList("selectCompany").CaseSensitiveSearch(true)` | <https://ej2.syncfusion.com/aspnetmvc/DropDownList/Filtering#/material> |
+| **Case sensitivity** | **Property**: *CaseSensitiveSearch*<br/>`@Html.EJ().DropDownList("selectCompany").CaseSensitiveSearch(true)` | <https://ej2.syncfusion.com/aspnetmvc/dropdownlist/filtering#/fluent2> |
 | **Search event** | **Event**: *Search* <br/>`@Html.EJ().DropDownList("selectCompany").Search("onSearch")` | **Event**: *Filtering* <br/>`@Html.EJS().DropDownList("customers").Filtering("filtering").Render()` |
 
 ## Template
