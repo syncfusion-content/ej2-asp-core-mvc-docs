@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Save And Remove Action Razor in ##Platform_Name## Uploader Component
+title: Save And Remove Action Razor in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Save And Remove Action Razor
@@ -21,7 +21,8 @@ The save handler receives the submitted files and manages the save process in se
 {% include code-snippet/uploader/razor-save/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Razor-save.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -30,7 +31,8 @@ The save handler receives the submitted files and manages the save process in se
 {% include code-snippet/uploader/razor-save/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Razor-save.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -145,4 +147,4 @@ public IActionResult OnPostRemove(IList<IFormFile> UploadFiles)
 
 ```
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

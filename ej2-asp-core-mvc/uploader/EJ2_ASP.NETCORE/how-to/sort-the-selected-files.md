@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sort The Selected Files in ##Platform_Name## Uploader Component
+title: Sort The Selected Files in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Sort The Selected Files in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sort The Selected Files
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sort the selected files
+# Sort the selected files in ASP.NET Core
 
 You can sort the selected files in uploader control by using the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event. Refer to the following example.
 
@@ -38,4 +38,4 @@ You can sort the selected files in uploader control by using the [selected](http
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.
