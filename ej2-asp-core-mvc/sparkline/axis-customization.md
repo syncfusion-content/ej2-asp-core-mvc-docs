@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Axis Customization in ##Platform_Name## Sparkline Control
+# Axis Customization in ##Platform_Name## Sparkline
 
 You can customize axis value types and min and max values of the sparkline.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ribbon Gallery Items in ##Platform_Name## Ribbon Control | Syncfusion
-description: Checkout and learn about Gallery Items with ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Gallery Items in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to add a gallery in the ##Platform_Name## Ribbon to display a collection of related items such as icons, content, or images for quick user actions.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Gallery Items in ASP.NET Core Ribbon control
+# Gallery Items in ##Platform_Name## Ribbon
 
 The Ribbon supports Gallery view which allows users to perform specific actions by displaying a collection of related items, including icons, content, or images. You can render the gallery item by setting the [type](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonItem.html#Syncfusion_EJ2_Ribbon_RibbonItem_Type) property to `Gallery` and customize it by using the [RibbonGallerySettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html), which provides options such as `groups`, `itemCount`, `popupHeight`, `popupWidth` and more.
 
@@ -66,7 +66,7 @@ The following sample showcases how to add title attribute to the gallery item us
 
 ![ASP.NET Core Ribbon Control with Html attributes](./images/ribbon-gallery-attribute.png)
 
-#### Css class
+#### CSS class
 
 You can use the [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGalleryItem.html#Syncfusion_EJ2_Ribbon_RibbonGalleryItem_CssClass) property to customize the gallery item.
 
@@ -166,7 +166,7 @@ You can specify the height of the gallery popup by using the [popupHeight](https
 
 ## Setting popup width
 
-you can specify the width of the gallery popup by using the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupWidth) propery.
+you can specify the width of the gallery popup by using the [popupWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Ribbon.RibbonGallerySettings.html#Syncfusion_EJ2_Ribbon_RibbonGallerySettings_PopupWidth) property.
 
 The example demonstrates the customization of popup with `popupHeight` and `popupWidth` properties.
 

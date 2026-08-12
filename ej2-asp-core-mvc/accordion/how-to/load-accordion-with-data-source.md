@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load Accordion With Data Source in ##Platform_Name## Accordion Control | Syncfusion
+title: Load Accordion With Data Source in ##Platform_Name## | Syncfusion
 description: Learn here all about Load Accordion With Data Source in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Accordion With Data Source
@@ -11,9 +11,9 @@ documentation: ug
 
 # Load accordion with DataSource
 
-You can bind any data object to Accordion items, by mapping it to [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Content)&nbsp; property.
+You can bind any data object to Accordion items, by mapping it to [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Content)&nbsp; property.
 
-In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with [header](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.AccordionAccordionItem.html#Syncfusion_EJ2_Navigations_AccordionAccordionItem_Content) fields, which is set to items property of Accordion.
+In the below demo, Data is fetched from an `OData` service using `DataManager`. The result data is formatted as a JSON object with [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Content) fields, which is set to items property of Accordion.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

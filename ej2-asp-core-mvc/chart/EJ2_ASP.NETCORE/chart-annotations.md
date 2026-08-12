@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Chart Annotations in ##Platform_Name## Chart Component
+title: Chart Annotations in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Chart Annotations in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Chart Annotations
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Annotation
+# Chart Annotations in ##Platform_Name## Chart
 
 Annotations are used to mark the specific area of interest in the chart area with texts, shapes or images.
 

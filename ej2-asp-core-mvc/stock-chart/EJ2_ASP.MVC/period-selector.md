@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Period Selector in ##Platform_Name## Stock Chart Component
+title: Period Selector in ##Platform_Name## Stock Chart | Syncfusion
 description: Learn here all about Period Selector in Syncfusion ##Platform_Name## Stock Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Period Selector
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Period selector
+# Period Selector in ##Platform_Name## Stock Chart
 
 The period selector allows to select a range with specified periods. By default the period selector is enabled in stock chart.
 

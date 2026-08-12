@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Line Chart in ##Platform_Name## Charts
+title: Line Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Line Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Line Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Line Chart in ##Platform_Name## Charts
+# Line Chart in ##Platform_Name## Chart
 
 ## Line
 

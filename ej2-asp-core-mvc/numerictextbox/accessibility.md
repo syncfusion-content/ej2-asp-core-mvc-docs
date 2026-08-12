@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Numerictextbox Component
+title: Accessibility in ##Platform_Name## Numerictextbox | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in NumericTextBox Control
 
 The Numerictextbox component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -40,9 +40,9 @@ The accessibility compliance for the Numerictextbox component is outlined below.
 
 ## WAI-ARIA attributes
 
-The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton).
+The NumericTextBox characterized with complete ARIA Accessibility support which helps to accessible by on-screen readers and other assistive technology devices. This component designed with the reference of the guidelines document given in [WAI ARAI Accessibility practices](https://www.w3.org/WAI/ARIA/apg/#spinbutton).
 
-The NumericTextBox uses the `spinbutton` role and following ARIA properties to its element based on its state.
+The NumericTextBox uses the `spin button` role and following ARIA properties to its element based on its state.
 
 | **Property** | **Functionality** |
 | --- | --- |
@@ -57,7 +57,7 @@ The NumericTextBox uses the `spinbutton` role and following ARIA properties to i
 
 ## Keyboard interaction
 
-Keyboard interaction of the NumericTextBox control has been designed based on [WAI-ARIA Practices](http://www.w3.org/TR/wai-aria-practices-1.1/#spinbutton) described for the NumericTextBox and it is an alternative to mouse actions to interact with the NumericTextBox.
+Keyboard interaction of the NumericTextBox control has been designed based on [WAI-ARIA Practices](https://www.w3.org/WAI/ARIA/apg/#spinbutton) described for the NumericTextBox and it is an alternative to mouse actions to interact with the NumericTextBox.
 
 The below table shows shortcut keys and its corresponding usage.
 
@@ -93,7 +93,7 @@ The below table shows shortcut keys and its corresponding usage.
 
 Output be like the below.
 
-![NumericTextBox Sample](./images/gettingStarted.png)
+![NumericTextBox Sample](./images/gettingStarted.webp)
 
 ## Ensuring accessibility
 

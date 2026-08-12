@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Syncfusion ##Platform_Name## HeatMap Chart Component
+title: Events in ##Platform_Name## HeatMap Chart | Syncfusion
 description: Learn here all about Events in Syncfusion ##Platform_Name## HeatMap Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Events
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Events in ##Platform_Name## HeatMap Chart Component
+# Events in ##Platform_Name## HeatMap Chart
 
 This section describes the HeatMap chart event, which occurs when the required actions are performed.
 

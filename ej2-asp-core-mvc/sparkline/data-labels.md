@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Labels in ##Platform_Name## Sparkline Control
+# Data Labels in ##Platform_Name## Sparkline
 
 Data labels are used to display values of data points to improve the readability.
 

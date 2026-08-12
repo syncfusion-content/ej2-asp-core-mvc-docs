@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Other Maps in Syncfusion ##Platform_Name## Maps Component
+title: Other Maps providers in Syncfusion ##Platform_Name## Maps | Syncfusion
 description: Learn here all about other Maps in Syncfusion ##Platform_Name## Maps component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Other Maps
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Other Maps providers
+# Other Maps providers in ##Platform_Name## Maps
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -24,7 +24,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
-Following is an example of how to add a TomTom map. You can generate an API key by following the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) and then adding the key to the URL.
+Following is an example of how to add a TomTom map. You can generate an API key by following the steps in this [link](https://docs.tomtom.com/map-display-api/documentation/tomtom-maps/v2/product-information/introduction) and then adding the key to the URL.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -49,7 +49,7 @@ Sample Template: https://< domain_name >/maps/basic/{z}/{x}/{y}.PNG
 
 In this case, the key generated for those online map service providers can also be appended to the URL. This allows to create personalized Maps with your own content and imagery.
 
-Below is the example of adding TomTom map. You can follow the steps in this [link](https://developer.tomtom.com/map-display-api/documentation/product-information/introduction) to generate an API key, and then added the key to the URL.
+Below is the example of adding TomTom map. You can follow the steps in this [link](https://docs.tomtom.com/map-display-api/documentation/tomtom-maps/v2/product-information/introduction) to generate an API key, and then added the key to the URL.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

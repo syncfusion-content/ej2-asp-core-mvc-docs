@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Ribbon Control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Ribbon control of Syncfusion Essential JS 2 and more.
-platform: ej2-asp-core-mvc
+title: Tooltip in ##Platform_Name## Ribbon | Syncfusion
+description: Learn how to show additional information in the ##Platform_Name## Ribbon by adding tooltips that appear when the user hovers over a Ribbon item.
 control: Ribbon
+platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in ##Platform_Name## Ribbon
 
 The Ribbon component supports tooltip to show additional information in the Ribbon items. The tooltip appears when the user hovers over a Ribbon item.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Histogram Chart in ##Platform_Name## Charts
+title: Histogram Chart in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Histogram Chart in Syncfusion ##Platform_Name## Charts component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Histogram Chart
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Histogram Chart in ##Platform_Name## Charts
+# Histogram Chart in ##Platform_Name## Chart
 
 ## Histogram
 

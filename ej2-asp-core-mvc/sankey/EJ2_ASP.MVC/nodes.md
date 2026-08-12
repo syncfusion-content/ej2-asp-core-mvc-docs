@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nodes in Syncfusion ##Platform_Name## Sankey Chart Component
+title: Nodes in ##Platform_Name## Sankey Chart | Syncfusion
 description: Learn here all about Nodes in Syncfusion ##Platform_Name## Sankey Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Nodes
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Nodes in ##Platform_Name## Sankey Chart component
+# Nodes in ##Platform_Name## Sankey Chart
 
 Nodes are the fundamental building blocks of a Sankey Chart, representing sources, targets, and intermediate entities in flow diagrams. The Sankey Chart provides extensive customization options for node appearance, enabling you to create visually meaningful and interactive flow diagrams.
 

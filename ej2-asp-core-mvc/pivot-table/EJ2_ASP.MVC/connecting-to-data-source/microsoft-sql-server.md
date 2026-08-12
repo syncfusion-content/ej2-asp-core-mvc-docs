@@ -15,7 +15,7 @@ This section describes how to retrieve data from SQL Server database using [Micr
 ## Steps to Connect the SQL Server Database via Web API Application
 
 ### Step 1: Download the Sample Application
-Download the ASP.NET Core Web Application from this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+Download the ASP.NET Core Web Application from this [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.
 
 ### Step 2: Understand the Application Structure
 The application named **PivotController** (server-side) that is downloaded from the above GitHub repository includes the following files:
@@ -115,7 +115,7 @@ namespace PivotController.Controllers
 This section explains how to connect the Pivot Table component to a Microsoft SQL Server database by retrieving data from the Web API service created in the previous section.
 
 ### Step 1: Set Up the ASP.NET MVC Pivot Table
-1. Download the ASP.NET MVC Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+1. Download the ASP.NET MVC Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.
 2. Ensure your ASP.NET MVC project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
@@ -163,4 +163,4 @@ Here’s the updated sample code with the report configuration and field list su
 ![Pivot Table bound with SQL database](../images/sql-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET MVC Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/aspnetcore-bind-SQL-database-to-pivot-table) repository.

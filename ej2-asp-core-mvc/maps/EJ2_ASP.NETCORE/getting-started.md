@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Maps Control | Syncfusion
+title: Getting Started with ASP.NET Core Maps | Syncfusion
 description: Check out and learn about getting started with ASP.NET Maps control of Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Maps
@@ -8,9 +8,9 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with the ASP.NET Core Maps Control
+# Getting Started with ASP.NET Core Maps
 
-This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio Code](https://code.visualstudio.com/).
+This section explains how to add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control to your application using [Visual Studio](https://visualstudio.microsoft.com/vs/) and [Visual Studio Code](https://code.visualstudio.com/) and [Visual Studio Code](https://code.visualstudio.com/).
 
 To get started quickly with the ASP.NET Core Maps control, watch the following video:
 
@@ -131,7 +131,7 @@ Open the **~/Pages/Shared/_Layout.cshtml** file and register the script manager 
 
 ## Add the ASP.NET Core Maps Control
 
-Add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control in the **~/Pages/Index.cshtml** file.
+Add the [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control in the **~/Pages/Index.cshtml** file.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -175,7 +175,7 @@ Elements in the Maps control are rendered as layers. Add a layer to the Maps con
 
 {% tabcontent Visual Studio %}
 
-Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps) control will render in your default web browser.
+Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to launch the application. The [ASP.NET Core Maps](https://www.syncfusion.com/aspnet-core-ui-controls/maps-library) control will render in your default web browser.
 
 {% endtabcontent %}
 

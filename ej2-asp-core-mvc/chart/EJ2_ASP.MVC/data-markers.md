@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Markers in ##Platform_Name## Syncfusion Chart Component
+title: Data Markers in ##Platform_Name## Chart | Syncfusion
 description: Learn here all about Data Markers in Syncfusion ##Platform_Name## Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Markers
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Markers in ##Platform_Name## Chart Component
+# Data Markers in ##Platform_Name## Chart
 
 Data markers are used to provide information about the data points in the series. You can add a shape to adorn each data point.
 

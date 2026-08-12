@@ -10,7 +10,7 @@ documentation: ug
 
 <!-- markdownlint-disable MD036 -->
 
-# Getting Started with the ASP.NET MVC Accumulation Chart Control
+# Getting Started with the ASP.NET MVC Accumulation Chart
 
 This section briefly explains how to add the Syncfusion<sup style="font-size:70%">&reg;</sup> [ASP.NET MVC Accumulation Chart](https://www.syncfusion.com/aspnet-mvc-ui-controls/charts) control to an ASP.NET MVC application using Visual Studio.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic data update in ##Platform_Name## Syncfusion Accumulation Chart Component
+title: Dynamic Data Update in ##Platform_Name## Accumulation Chart | Syncfusion
 description: Learn here all about dynamic data update in Syncfusion ##Platform_Name## Accumulation Chart component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Dynamic Data Update
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Dynamic data update in ##Platform_Name## Accumulation Chart Component
+# Dynamic Data Update in ASP.NET Core Accumulation Chart
 
 ## Adding a new data point
 
