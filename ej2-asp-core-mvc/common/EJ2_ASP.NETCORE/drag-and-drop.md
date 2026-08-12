@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Common control
+title: Drag And Drop in ##Platform_Name## Common control | Syncfusion
 description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Common
@@ -8,11 +8,11 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop support in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls
+# Drag and Drop support in Syncfusion ASP.NET Core controls
 
 * Drag and Drop support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls by setting `allowDragAndDrop` property to `true`. It allows to drag and drop the specific elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls.
 
-* Drag and Drop is supported through two libraries of Essential<sup style="font-size:70%">&reg;</sup> JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable/) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable/). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
+* Drag and Drop is supported through two libraries of Essential<sup style="font-size:70%">&reg;</sup> JS 2. Those are [`Draggable`](https://ej2.syncfusion.com/documentation/api/base/draggable) and [`Droppable`](https://ej2.syncfusion.com/documentation/api/base/droppable). Draggable makes DOM to be dragged using mouse or touch gestures and Droppable mark required DOM as droppable zone.
 
 ## Drag and Drop Supported controls
 
@@ -109,7 +109,7 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 ## Defining Drop Action
 
-To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
+To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}
@@ -163,7 +163,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-dr
 
 ## See also
 
-* [Define handle element for Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable/#handle)<br/>
-* [Restricting Draggable within container](https://ej2.syncfusion.com/documentation/api/base/draggable/#dragarea)<br>
-* [Visual feedback of draggable element](https://ej2.syncfusion.com/documentation/api/base/draggable/#clone)<br>
-* [Accepting specific drag element in droppable](https://ej2.syncfusion.com/documentation/api/base/droppable/#accept)
+* [Define handle element for Draggable](https://ej2.syncfusion.com/documentation/api/base/draggable#handle)<br/>
+* [Restricting Draggable within container](https://ej2.syncfusion.com/documentation/api/base/draggable#dragarea)<br>
+* [Visual feedback of draggable element](https://ej2.syncfusion.com/documentation/api/base/draggable#clone)<br>
+* [Accepting specific drag element in droppable](https://ej2.syncfusion.com/documentation/api/base/droppable#accept)

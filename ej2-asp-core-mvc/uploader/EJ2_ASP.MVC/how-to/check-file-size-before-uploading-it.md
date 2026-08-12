@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Check File Size Before Uploading It in ##Platform_Name## Uploader Component
+title: Check File Size Before Upload in ASP.NET MVC Uploader | Syncfusion
 description: Learn here all about Check File Size Before Uploading It in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Check File Size Before Uploading It
@@ -40,4 +40,4 @@ You can convert the size to standard formats (`KB` or `MB`) using **bytesToSize*
 
 
 
-N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET MVC File Upload](https://www.syncfusion.com/aspnet-mvc-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET MVC File Upload example](https://ej2.syncfusion.com/aspnetmvc/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

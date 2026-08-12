@@ -1036,7 +1036,7 @@ The File Manager control supports the configuration of specific AJAX endpoints t
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
+To perform the download operation, initialize the `DownloadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1060,7 +1060,7 @@ To perform the download operation, initialize the `DownloadUrl` property in a [A
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager Control.
+To perform the upload operation, initialize the `UploadUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager Control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1084,7 +1084,7 @@ To perform the upload operation, initialize the [UploadUrl](https://help.syncfus
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.FileManager.FileManager~AjaxSettings.html) of File Manager control.
+To perform the image preview support in the File Manager control, need to initialize the `GetImageUrl` property in a [`AjaxSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.FileManager.FileManager.html#Syncfusion_EJ2_FileManager_FileManager_AjaxSettings) of File Manager control.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

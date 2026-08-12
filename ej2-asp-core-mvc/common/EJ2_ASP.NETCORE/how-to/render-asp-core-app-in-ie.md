@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to render ##Platform_Name## control in IE11 Web Browser | Syncfusion
-description: Checkout and learn about building ##Platform_Name## MVC application in IE11 Web Browser.
+description: Explore detailed guidance for building ##Platform_Name## MVC applications and ensuring compatibility and performance in IE11 browsers.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -44,4 +44,4 @@ N> This [polyfill](https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.m
 
 ## See also
 
-* [ASP.NET Core supported platforms](https://docs.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)
+* [ASP.NET Core supported platforms](https://learn.microsoft.com/en-us/aspnet/core/blazor/supported-platforms)

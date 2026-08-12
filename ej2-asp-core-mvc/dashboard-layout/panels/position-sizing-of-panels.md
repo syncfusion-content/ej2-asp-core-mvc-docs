@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Position Sizing Of Panels in ##Platform_Name## Dashboard Layout control
+title: Position Sizing in ##Platform_Name## Dashboard Layout | Syncfusion
 description: Learn here all about Position Sizing of Panels in Syncfusion ##Platform_Name## Dashboard Layout control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Position Sizing Of Panels
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Panels
+# Panels in ##Platform_Name## Dashboard Layout
 
 Panels are the basic building blocks of the Dashboard Layout control. They act as a container for the data to be visualized or presented. These panels can be positioned or resized for effective presentation of the data.
 
@@ -32,7 +32,7 @@ The below table represents all the available panel properties and the correspond
 
 ## Positioning of panels
 
-The panels within the layout can be easily positioned or ordered using the [`row`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~Row.html) and [`col`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~Col.html) properties of the panels. Positioning of panels will be beneficial to represent the data in any desired order.
+The panels within the layout can be easily positioned or ordered using the [`row`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_Row) and [`col`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_Col) properties of the panels. Positioning of panels will be beneficial to represent the data in any desired order.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -61,7 +61,7 @@ The panels within the layout can be easily positioned or ordered using the [`row
 
 ## Sizing of panels
 
-A panel's size can be varied easily by defining the [`sizeX`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~SizeX.html) and [`sizeY`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~SizeY.html) properties. The [`sizeX`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~SizeX.html) property defines the width and the [`sizeY`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Layouts.DashboardLayoutPanel~SizeY.html) property defines height of a panel in cells count. These properties are helpful in designing a dashboard, where the content of each panel may vary in size.
+A panel's size can be varied easily by defining the [`sizeX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeX) and [`sizeY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeY) properties. The [`sizeX`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeX) property defines the width and the [`sizeY`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.DashboardLayoutPanel.html#Syncfusion_EJ2_Layouts_DashboardLayoutPanel_SizeY) property defines height of a panel in cells count. These properties are helpful in designing a dashboard, where the content of each panel may vary in size.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -89,4 +89,4 @@ A panel's size can be varied easily by defining the [`sizeX`](https://help.syncf
 
 ![Sizing of panels](./../images/panel_size.PNG)
 
-N> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/DashboardLayout/DefaultFunctionalities#/material) to know how to present and manipulate data.
+N> You can refer to our [ASP.NET Core Dashboard Layout](https://www.syncfusion.com/aspnet-core-ui-controls/dashboard-layout) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET Core Dashboard Layout example](https://ej2.syncfusion.com/aspnetcore/dashboardlayout/defaultfunctionalities#/fluent2) to know how to present and manipulate data.

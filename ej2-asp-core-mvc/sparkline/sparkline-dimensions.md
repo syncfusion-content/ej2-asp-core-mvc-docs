@@ -46,7 +46,7 @@ Sparkline can be rendered to its container size. You can set the size through in
 
 <!-- markdownlint-disable MD036 -->
 
-You can also set the size for sparkline directly using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Width.html) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Charts.Sparkline~Height.html) properties.
+You can also set the size for sparkline directly using the [`width`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_Width) and [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Sparkline.html#Syncfusion_EJ2_Charts_Sparkline_Height) properties.
 
 **In pixel**
 
