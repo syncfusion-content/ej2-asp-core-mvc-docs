@@ -45,7 +45,7 @@ In the ListView control, sorting is enabled using the [sortOrder](https://ej2.sy
 
 ### Filtering method
 
-* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) has been used to fetch data from the data source and display in ListView.
+* The filtering method is used to filter list items when typing a character in the text box. In this method, the [`dataManager`](https://ej2.syncfusion.com/documentation/data/getting-started) has been used to fetch data from the data source and display in ListView.
 
 ### Sorting
 

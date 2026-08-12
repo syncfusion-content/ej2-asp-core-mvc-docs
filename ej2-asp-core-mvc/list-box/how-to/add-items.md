@@ -11,7 +11,7 @@ documentation: ug
 
 # Add items to the list box
 
-To add an item or multiple items, [`addItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~AddItems.html) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items will be added while clicking `Add Items` button.
+To add an item or multiple items, [`addItems`](https://ej2.syncfusion.com/documentation/api/list-box/index-default#additems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items will be added while clicking `Add Items` button.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

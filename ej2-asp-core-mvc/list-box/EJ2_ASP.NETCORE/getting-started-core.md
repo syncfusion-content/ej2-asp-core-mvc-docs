@@ -96,7 +96,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property with an array of string values.
+After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_DataSource) property with an array of string values.
 
 The following example illustrates the output in your browser.
 

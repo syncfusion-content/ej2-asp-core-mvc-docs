@@ -65,7 +65,7 @@ The ASP.NET MVC Grid provides support for various adaptors (OData, ODataV4, WebA
 
 ## How to avoid MaxJsonLength error while passing large amount of records
 
-The ASP.NET MVC Grid is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://social.msdn.microsoft.com/Forums/en-US/ab1a5864-46e2-4c57-9511-dc3f60cc314a/how-to-increase-maxjsonlength-for-json-post-in-mvc3?forum=aspmv) property on your web.config file or in the place of deserialization.
+The ASP.NET MVC Grid is client-server based. So, we send the data as JSON object between client and server. The reported issue occurs due to the serialization of the large-sized JSON object. We need to increase the maximum length for serializing the large-sized JSON object. You have to alter the [MaxJsonLength](https://learn.microsoft.com/en-us/archive/msdn-technet-forums/ab1a5864-46e2-4c57-9511-dc3f60cc314a) property on your web.config file or in the place of deserialization.
 
 **Solution: 1**
 
@@ -88,4 +88,4 @@ var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 
 ## Microsoft excel limitation while exporting millions of records to excel file format
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.

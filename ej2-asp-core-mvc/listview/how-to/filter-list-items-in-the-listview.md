@@ -10,13 +10,13 @@ documentation: ug
 
 # Filter list items in the ListView
 
-The filtered data can be displayed in the ListView control depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/). Refer to the following steps to render the ListView with filtered data.
+The filtered data can be displayed in the ListView control depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started). Refer to the following steps to render the ListView with filtered data.
 
 * Render a textbox to get input for filtering data.
 
 * Render ListView with [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view/#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property.
 
-* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/query/#executelocal) method, and then update filtered data as ListView dataSource.
+* Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/query#executelocal) method, and then update filtered data as ListView dataSource.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -43,4 +43,4 @@ The filtered data can be displayed in the ListView control depending upon on use
 
 
 
-N> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) clause instead of `startswith`.
+N> In this demo, data has been filtered with starting character of the list items. You can also filter list items with ending character by passing the `endswith` in [where](https://ej2.syncfusion.com/documentation/api/data/query#where) clause instead of `startswith`.

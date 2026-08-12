@@ -139,7 +139,7 @@ N> While using Adaptors in our application, we need to return the JSON data from
 
 To perform search operation in the fetched controller data, we have used a textbox and bound `keyup` event to the textbox.
 
-In the `keyup` event, we have filtered the data using [`dataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager/) with user input and filtered data is appended to ListView using [refresh](https://ej2.syncfusion.com/documentation/api/list-view/#refresh) method.
+In the `keyup` event, we have filtered the data using [`dataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) with user input and filtered data is appended to ListView using [refresh](https://ej2.syncfusion.com/documentation/api/list-view/#refresh) method.
 
 Refer to the below code snippet.
 
