@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Node.js service for ##Platform_Name## File Manager | Syncfusion
+title: Node.js Amazon S3 File Provider in ##Platform_Name## File Manager | Syncfusion
 description: Learn how to implement a custom file provider in the ##Platform_Name## File Manager using Node.js with Amazon S3 as the data source.
 control: File Manager
 platform: ej2-asp-core-mvc
@@ -23,6 +23,8 @@ Node.js acts as the bridge between the File Manager component and Amazon S3 Stor
 ## Introduction to Amazon S3 Storage
 
 Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. It is designed to store and protect any amount of data for a range of use cases, such as websites, mobile applications, backup and restore, archive, enterprise applications, and big data analytics.
+
+To learn more about Amazon S3 buckets, refer to the AWS documentation on [Creating, configuring, and working with Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html)
 
 ### Key concepts of Amazon S3 Storage
 
