@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to implement Amazon S3 custom provider in ##Platform_Name## File Manager
+# Implement Amazon S3 custom provider in ##Platform_Name## File Manager
 
 This guide explains how to use Amazon S3 Storage to supply the necessary data for the File Manager. Node.js fetches the required data from Amazon S3 Storage and serves it to the File Manager.
 
