@@ -280,7 +280,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></td>
+<td><a href="https://help.syncfusion.com/diagram-sdk/asp-net-core/getting-started">Diagram</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -362,7 +362,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></td>
+<td><a href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/getting-started">RichTextEditor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -471,7 +471,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
+<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started">Kanban</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -577,7 +577,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Schedule</a></td>
+<td><a href="https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/getting-started">Schedule</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -606,7 +606,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
+<td><a href="https://help.syncfusion.com/document-processing/word/word-processor/asp-net-core/getting-started-core">Document Editor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -621,7 +621,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt</a></td>
+<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started">Gantt</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -640,7 +640,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
+<td><a href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/asp-net-core/getting-started">PDF Viewer</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />

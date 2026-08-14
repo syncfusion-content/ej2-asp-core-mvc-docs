@@ -44,7 +44,7 @@ The steps below show how to install the Essential Studio<sup style="font-size:70
 
     Unlock keys are used to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> offline installer, and they are platform and version specific. Use either a Syncfusion<sup style="font-size:70%">&reg;</sup> licensed or trial unlock key to unlock the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC - EJ2 installer. The trial unlock key is only valid for 30 days; the installer will not accept an expired trial key.
 
-    To learn how to generate an unlock key for both trial and licensed products, see this [Knowledge Base article](https://www.syncfusion.com/kb/2326).
+    To learn how to generate an unlock key for both trial and licensed products, see this [Knowledge Base article](https://support.syncfusion.com/kb/article/2757/how-to-generate-syncfusion-setup-unlock-key-from-syncfusion-support-account).
 
     ![Offline Installer Use Unlock Key Wizard](images/webofflineinstaller-3.png)
 

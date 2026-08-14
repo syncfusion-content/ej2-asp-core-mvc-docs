@@ -93,7 +93,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
     </configuration>
     ```
 
-4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment/#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
+4. Add the client-side resources through [CDN](https://ej2.syncfusion.com/documentation/deployment#cdn) in the `<head>` element of `~/Views/Shared/_Layout.cshtml` layout page.
 
     ```html
     <head>
