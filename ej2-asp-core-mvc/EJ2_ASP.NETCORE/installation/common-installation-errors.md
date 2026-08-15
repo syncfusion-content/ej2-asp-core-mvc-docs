@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Common Installation Errors
+# Common installation errors
 
 This article describes the most common installation errors, as well as the causes and solutions to those errors.
 
@@ -29,7 +29,7 @@ This article describes the most common installation errors, as well as the cause
 * A valid Syncfusion<sup style="font-size:70%">&reg;</sup> account (for **Login to Install**) or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key (for **Use Unlock Key**).
 * If **Controlled folder access** is enabled on Windows, see the [Unable to install due to controlled folder access](#unable-to-install-due-to-controlled-folder-access) section below before running the installer.
 
-## Unlocking the License Installer Using the Trial Key
+## Unlocking the license installer using the trial key
 
 **Error Message:** Sorry, the provided unlock key is a trial unlock key and cannot be used to unlock the licensed version of our Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core installer.
 
@@ -45,7 +45,7 @@ This article describes the most common installation errors, as well as the cause
 2. To generate the licensed unlock key, refer to [this Knowledge Base article](https://www.syncfusion.com/kb/2326).
 3. After obtaining the key, re-run the installer and enter it on the **Unlock Key** screen.
 
-## License Has Expired
+## License has expired
 
 **Error Message:** Your license for Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core - EJ2 has been expired since {date}. Renew your subscription and try again.
 
@@ -65,7 +65,7 @@ This article describes the most common installation errors, as well as the cause
 4. Extend the 30-day trial period after your trial license has expired.
 5. After renewing or purchasing, re-run the installer and enter the new unlock key to apply the license.
 
-## Unable to Find a Valid License or Trial
+## Unable to find a valid license or trial
 
 **Error Message:** Sorry, we are unable to find a valid license or trial for Essential Studio<sup style="font-size:70%">&reg;</sup> for ASP.NET Core - EJ2 under your account.
 
@@ -93,7 +93,7 @@ This article describes the most common installation errors, as well as the cause
 3. Send an email to [clientrelations@syncfusion.com](mailto:clientrelations@syncfusion.com) to request a license.
 4. Reach out to the sales team by emailing [sales@syncfusion.com](mailto:sales@syncfusion.com).
 
-## Unable to Install Because Another Installation Is in Progress
+## Unable to install because another installation is in progress
 
 **Error Message:** Another installation is in progress. You cannot start this installation without completing all other currently active installations. Click cancel to end this installer or retry to attempt after currently active installation completed to install again.
 
@@ -115,7 +115,7 @@ This article describes the most common installation errors, as well as the cause
 
 4. If the issue persists, restart the computer and run the Syncfusion<sup style="font-size:70%">&reg;</sup> installer again.
 
-## Unable to Install Due to Controlled Folder Access
+## Unable to install due to controlled folder access
 
 **Offline Installer**
 

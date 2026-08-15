@@ -21,14 +21,14 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installe
 * A Windows machine with administrator privileges (required when running the installer).
 * A valid Syncfusion<sup style="font-size:70%">&reg;</sup> account, or a Syncfusion<sup style="font-size:70%">&reg;</sup> unlock key for the target version.
 
-## Download the Trial Version
+## Download the trial version
 
 The 30-day trial can be downloaded in two ways:
 
 * Download Free Trial Setup
 * Start Trials if using components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion)
 
-### Download Free Trial Setup
+### Download free trial setup
 
 1. Evaluate the 30-day free trial by visiting the [Download Free Trial](https://www.syncfusion.com/downloads) page and selecting the ASP.NET Core platform.
 
@@ -48,7 +48,7 @@ The 30-day trial can be downloaded in two ways:
 
     ![Trial Download Offline Installer](images/start-trial-download-offline-installer.PNG)
 
-### Start Trials if Using Components Through NuGet.org
+### Start trials if using components through NuGet.org
 
 If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> components through [NuGet.org](https://www.nuget.org/packages?q=syncfusion), initiate an evaluation as follows:
 
@@ -68,7 +68,7 @@ If you have already obtained Syncfusion<sup style="font-size:70%">&reg;</sup> co
 
 5. You can find your current active trial products on the [Trials & Downloads](https://www.syncfusion.com/account/manage-trials/downloads) page.
 
-## Download the License Version
+## Download the license version
 
 1. Syncfusion<sup style="font-size:70%">&reg;</sup> licensed products are available on the [License & Downloads](https://www.syncfusion.com/account/downloads) page under your registered Syncfusion<sup style="font-size:70%">&reg;</sup> account.
 
