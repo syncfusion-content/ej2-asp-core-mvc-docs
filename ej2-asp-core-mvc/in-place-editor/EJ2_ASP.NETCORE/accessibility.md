@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## InplaceEditor | Syncfusion
-description: Syncfusion ##Platform_Name## InplaceEditor follows WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles and keyboard navigation support across inline and popup modes.
+description: Syncfusion ##Platform_Name## InplaceEditor supports WCAG 2.2, Section 508, and ADA compliance with WAI-ARIA roles and keyboard navigation.
 control: Accessibility 
 platform: ej2-asp-core-mvc
 documentation: ug

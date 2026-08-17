@@ -95,7 +95,7 @@ In the below sample, you can remove fruit by hovering the fruit item which will 
 
 ### Sort Items
 
-ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) as `Ascending` or `Descending`.
+ListView can be sorted either in Ascending or Descending order. To enable sorting in your ListView, set [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) as `Ascending` or `Descending`.
 
 ```typescript
 

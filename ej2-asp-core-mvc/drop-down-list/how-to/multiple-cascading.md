@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to preselect items in multiple cascading ##Platform_Name## DropDownList | Syncfusion
+title: Preselect Items in Cascading ##Platform_Name## DropDownList | Syncfusion
 description: Preselect Syncfusion ##Platform_Name## DropDownList items in cascading scenarios from a model using value mapping and dependent change events.
 platform: ej2-asp-core-mvc
 control: Multiple Cascading
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to preselect items in multiple cascading ##Platform_Name## DropDownList
+# Preselect Items in Cascading ##Platform_Name## DropDownList
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to create rounded corner DropDownButton in ##Platform_Name## DropDownButton | Syncfusion
+title: Rounded Corner DropDownButton in ##Platform_Name## | Syncfusion
 description: Create a rounded corner Syncfusion ##Platform_Name## DropDownButton by adding a CSS class with border-radius and applying it via the cssClass property.
 platform: ej2-asp-core-mvc
 control: Create Dropdownbutton With Rounded Corner
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to create rounded corner DropDownButton in ##Platform_Name## DropDownButton
+# Create a Rounded Corner DropDownButton in ##Platform_Name##
 
 DropDownButton with rounded corner can be achieved by adding `border-radius` CSS property to button element.
 

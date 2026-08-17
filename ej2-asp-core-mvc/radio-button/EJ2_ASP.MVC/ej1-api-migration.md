@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Radio Button Component
+title: Ej1 API Migration for ##Platform_Name## Radio Button | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration

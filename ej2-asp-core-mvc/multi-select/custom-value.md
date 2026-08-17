@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Custom Value in ##Platform_Name## MultiSelect | Syncfusion
-description: Allow Syncfusion ##Platform_Name## MultiSelect users to add non-present options to selected values by enabling allowCustomValue and listening to customValueSelection.
+description: Allow Syncfusion ##Platform_Name## MultiSelect users to add custom values by enabling allowCustomValue and handling the customValueSelection event.
 platform: ej2-asp-core-mvc
 control: Custom Value
 publishingplatform: ##Platform_Name##

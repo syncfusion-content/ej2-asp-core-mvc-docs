@@ -32,7 +32,7 @@ By default, action buttons positioned in horizontal alignment, and also it can b
     <div class = "e-card">
         <div class="e-card-actions e-card-vertical">
             <button class="e-card-btn">More</button>
-            <a href="#" aria-label="Share">Share</a>
+            <a href="#" aria-label="Share">Share content with others</a>
         </div>
     </div>
 ```

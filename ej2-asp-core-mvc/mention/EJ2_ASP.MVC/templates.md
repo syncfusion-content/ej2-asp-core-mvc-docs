@@ -4,7 +4,7 @@ title: Templates in ASP.NET MVC Mention | Syncfusion
 description: Customize Syncfusion ASP.NET MVC Mention suggestion items, display value, and loading state using the itemTemplate, displayTemplate, and noRecordsTemplate APIs.
 platform: ej2-asp-core-mvc
 control: Templates
-publishingplatform: aspnet-mvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

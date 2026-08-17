@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to open a Dialog on popup item click in ##Platform_Name## DropDownButton | Syncfusion
+title: Open a Dialog on Item Click in ##Platform_Name## DropDownButton | Syncfusion
 description: Open a Syncfusion Dialog on Syncfusion ##Platform_Name## DropDownButton popup item click by handling dialog open in the select event of the DropDownButton.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Popup Item Click
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to open a Dialog on popup item click in ##Platform_Name## DropDownButton
+# Open a Dialog on Item Click in ##Platform_Name## DropDownButton
 
 This section explains about how to open a dialog on DropdownButton popup item click. This can be achieved by handling dialog open in [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Select) event of the DropdownButton.
 
