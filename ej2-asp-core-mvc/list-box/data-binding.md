@@ -58,7 +58,7 @@ The ListBox has support to load array of primitive data such as strings or numbe
 
 ### Array of object
 
-The ListBox can generate its list items through an array of object data. For this, the appropriate columns should be mapped to the [`fields`](../api/list-box/#fields) property.
+The ListBox can generate its list items through an array of object data. For this, the appropriate columns should be mapped to the [`fields`](../api/list-box#fields) property.
 
 In the following example, `id` and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
 

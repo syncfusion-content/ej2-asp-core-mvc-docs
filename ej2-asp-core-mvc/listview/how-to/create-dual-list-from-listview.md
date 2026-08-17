@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Create Dual List From ListView in ##Platform_Name## ListView Control | Syncfusion
+title: Create Dual List From ListView in ##Platform_Name## ListView | Syncfusion
 description: Learn here all about Create Dual List From ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Create Dual List From ListView
@@ -27,7 +27,7 @@ The dual list supports:
 * Moving selected data from one list to another.
 * Filtering the list by using a client-side typed character.
 
-In the ListView control, sorting is enabled using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property, and the [select](https://ej2.syncfusion.com/documentation/api/list-view/#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
+In the ListView control, sorting is enabled using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/index-default#sortorder) property, and the [select](https://ej2.syncfusion.com/documentation/api/list-view/index-default#select) event is triggered while selecting an item. Here, the select event is triggered to enable and disable button states.
 
 ## Manipulating data
 
@@ -41,7 +41,7 @@ In the ListView control, sorting is enabled using the [sortOrder](https://ej2.sy
 
 ### Moving selected item from one list to another list (>) and (<)
 
-* The [Select](https://ej2.syncfusion.com/documentation/api/list-view/#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
+* The [Select](https://ej2.syncfusion.com/documentation/api/list-view/index-default#select) event is triggered when selecting a list item in the ListView. The selected items can be transferred between two lists. These buttons will be enabled when selecting an item in lists.
 
 ### Filtering method
 
@@ -49,7 +49,7 @@ In the ListView control, sorting is enabled using the [sortOrder](https://ej2.sy
 
 ### Sorting
 
-* By using the dual list, list items can be sorted in the ListView control using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property.
+* By using the dual list, list items can be sorted in the ListView control using the [sortOrder](https://ej2.syncfusion.com/documentation/api/list-view/index-default#sortorder) property.
 
 You can enable sorting in one ListView; in the same order, data can be transferred to another ListView.
 

@@ -37,7 +37,7 @@ Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](ht
 {% endtabs %}
 {% endif %}
 
-The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragging) events.
+The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behavior by using the [`nodeDragStop`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragging) events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

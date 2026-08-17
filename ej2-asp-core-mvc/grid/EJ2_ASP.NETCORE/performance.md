@@ -86,6 +86,6 @@ The ASP.NET Core Grid is client-server based. So, we send the data as JSON objec
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-us/excel/excel-specifications-and-limits) link for more details on Microsoft Excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.

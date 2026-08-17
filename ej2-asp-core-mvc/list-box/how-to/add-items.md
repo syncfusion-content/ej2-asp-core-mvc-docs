@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add Items in ##Platform_Name## List Box Component
+title: Add Items in ##Platform_Name## List Box Component | Syncfusion
 description: Learn here all about Add Items in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Add Items

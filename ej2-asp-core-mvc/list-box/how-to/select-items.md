@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select Items in ##Platform_Name## List Box Component
+title: Select Items in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Select Items in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Select Items

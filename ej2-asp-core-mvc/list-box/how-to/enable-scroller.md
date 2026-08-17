@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Scroller in ##Platform_Name## List Box Component
+title: Enable Scroller in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Enable Scroller in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Scroller
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable Scroller
+# Enable Scroller in ##Platform_Name## List Box
 
 The ListBox supports scrolling and it can be achieved by restricting the height of the list box using [`height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Height) property.
 

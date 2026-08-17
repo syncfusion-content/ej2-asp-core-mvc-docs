@@ -110,7 +110,7 @@ After initialization, populate the ListView with data using the [DataSource](htt
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ListView control will be rendered in the default web browser.
 
-![ASP.NET MVC ListView Control](images/listview.png)
+![ASP.NET MVC ListView Control](images/listview.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ListView/ASP.NET%20MVC%20Razor%20Examples).
 
