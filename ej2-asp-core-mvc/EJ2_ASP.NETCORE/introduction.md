@@ -444,7 +444,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core"><span class="sf-home-icon sf-icon-treegrid"></span>TreeGrid</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/multicolumn-combobox/getting-started"><span class="sf-home-icon sf-icon-multicolumncombobox"></span>MultiColumn ComboBox</a></div>
         <div><p class="control-category">FILE VIEWERS & EDITORS</p></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>Rich Text Editor</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/getting-started"><span class="sf-home-icon sf-icon-richtexteditor"></span>Rich Text Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/markdown-editor/getting-started"><span class="sf-home-icon sf-icon-markdowneditor"></span>Markdown Editor</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/image-editor/getting-started"><span class="sf-home-icon sf-icon-image_editor"></span>Image Editor</a></div>
         <div class="controlanchorlink"><a target="_self" href="https://ej2.syncfusion.com/aspnetmvc/documentation/block-editor/getting-started"><span class="sf-home-icon sf-icon-blockeditor"></span>Block Editor</a></div>
@@ -467,7 +467,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started"><span class="sf-home-icon sf-icon-stockchart"></span>Stock Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started"><span class="sf-home-icon sf-icon-circulargauge"></span>Circular Gauge</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started"><span class="sf-home-icon sf-icon-lineargauge"></span>Linear Gauge</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started"><span class="sf-home-icon sf-icon-diagram"></span>Diagram</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/diagram-sdk/asp-net-core/getting-started"><span class="sf-home-icon sf-icon-diagram"></span>Diagram</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started"><span class="sf-home-icon sf-icon-heatmapchart"></span>HeatMap Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started"><span class="sf-home-icon sf-icon-maps"></span>Map</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started"><span class="sf-home-icon sf-icon-rangeselector"></span>Range Navigator</a></div>
@@ -477,7 +477,7 @@ padding-top: 20px;
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started"><span class="sf-home-icon sf-icon-barcodegenerator"></span>Barcode</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started"><span class="sf-home-icon sf-icon-treemap"></span>TreeMap</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started"><span class="sf-home-icon sf-icon-bulletchart"></span>Bullet Chart</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started"><span class="sf-home-icon sf-icon-kanban"></span>Kanban</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started"><span class="sf-home-icon sf-icon-kanban"></span>Kanban</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/sankey/getting-started"><span class="sf-home-icon sf-icon-sankey"></span>Sankey</a></div>
         <div><p class="control-category">BUTTONS</p></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started"><span class="sf-home-icon sf-icon-button"></span>Button</a></div>
@@ -491,8 +491,8 @@ padding-top: 20px;
     </td>
     <td>
         <div><p class="control-category-topics">CALENDARS</p></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started"><span class="sf-home-icon sf-icon-scheduler"></span>Scheduler</a></div>
-        <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started"><span class="sf-home-icon sf-icon-ganttchart"></span>Gantt Chart</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/getting-started"><span class="sf-home-icon sf-icon-scheduler"></span>Scheduler</a></div>
+        <div class="control-anchor-link"><a target="_self" href="https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started"><span class="sf-home-icon sf-icon-ganttchart"></span>Gantt Chart</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started"><span class="sf-home-icon sf-icon-calendar"></span>Calendar</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started"><span class="sf-home-icon sf-icon-datepicker"></span>DatePicker</a></div>
         <div class="control-anchor-link"><a target="_self" href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started"><span class="sf-home-icon sf-icon-daterangepicker"></span>DateRangePicker</a></div>
@@ -557,7 +557,7 @@ padding-top: 20px;
 
 ## Getting Help
 
-* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then contact us by creating a support ticket in [our support portal](https://www.syncfusion.com/support/directtrac/incidents/newincident) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
+* If you are still not able to find the information that you are looking for in the self-help resources mentioned above then contact us by creating a support ticket in [our support portal](https://support.syncfusion.com/agent/tickets/create) or ask your query in Stack Overflow with the tag `syncfusion-ej2`.
 
 * Don't see what you need? request it in our [feedback portal](https://www.syncfusion.com/feedback/aspnet-core).
 
@@ -567,7 +567,7 @@ N> Syncfusion<sup style="font-size:70%">&reg;</sup> does not collect any kind of
 
 * Product Development
 
-    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/)
+    * [Product Development Life Cycle](https://www.syncfusion.com/support/product-lifecycle/estudio)
 
 * Syncfusion<sup style="font-size:70%">&reg;</sup> Project Template
 

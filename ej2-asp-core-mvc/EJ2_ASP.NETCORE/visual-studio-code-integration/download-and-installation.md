@@ -18,7 +18,7 @@ To install the Syncfusion® ASP.NET Core Visual Studio Code extension and create
 
 * [Visual Studio Code 1.29.0 or later](https://code.visualstudio.com/download?_exp_download=fb315fc982)
 * [.NET SDK 8.0 or later](https://dotnet.microsoft.com/en-us/download) (.NET 8 LTS is recommended)
-* [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* [C# Extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 * [Node.js](https://nodejs.org/en/download)
 
 
