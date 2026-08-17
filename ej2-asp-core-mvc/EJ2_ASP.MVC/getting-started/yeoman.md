@@ -8,4 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ##Platform_Name## Component using Yeoman
+
 This page is not available now

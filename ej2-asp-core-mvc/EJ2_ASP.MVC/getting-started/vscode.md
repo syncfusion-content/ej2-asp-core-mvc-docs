@@ -8,4 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ##Platform_Name## Component using VS code
+
 This page is not available now
