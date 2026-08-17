@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the Dialog appearance in ##Platform_Name## Dialog | Syncfusion
+title: Customize dialog appearance | Syncfusion
 description: Customize the Syncfusion ##Platform_Name## Dialog appearance by providing a custom content template through the e-content-template tag.
 platform: ej2-asp-core-mvc
 control: Customize The Dialog Appearance

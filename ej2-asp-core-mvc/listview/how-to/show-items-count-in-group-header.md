@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to show items count in group header of ##Platform_Name## ListView | Syncfusion
+title: Show items count in group header | Syncfusion
 description: Show the Syncfusion ##Platform_Name## ListView grouped item count in each group header via groupTemplate counting visible items per category.
 platform: ej2-asp-core-mvc
 control: Show Items Count In Group Header

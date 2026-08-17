@@ -17,7 +17,7 @@ By default the DateTimePicker's format is based on the culture. You can also set
 
 N> Once the date format property has been defined it will be common to all the cultures.
 
-To know more about the date and time format standards, refer to the [`Internationalization Date Time Format`](/common/internationalization/) section.
+To know more about the date and time format standards, refer to the [`Internationalization Date Time Format`](/common/internationalization) section.
 
 The following example demonstrates the DateTimePicker with the custom format (`yyyy-MM-dd hh:mm`).
 

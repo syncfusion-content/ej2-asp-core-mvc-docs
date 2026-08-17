@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons in ASP.NET MVC Message | Syncfusion
-description: Configure Syncfusion ASP.NET MVC Message icons by hiding the default or close buttons and adding custom severity icons via the showIcon and showCloseIcon properties.
+description: Configure Syncfusion ASP.NET MVC Message icons by managing visibility and adding custom severity icons with showIcon and showCloseIcon.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##

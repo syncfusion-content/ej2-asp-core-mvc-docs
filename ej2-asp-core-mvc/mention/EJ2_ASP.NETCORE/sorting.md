@@ -4,7 +4,7 @@ title: Sorting in ##Platform_Name## Mention | Syncfusion
 description: Sort Syncfusion ##Platform_Name## Mention suggestion list items alphabetically by setting the sortOrder property to Ascending, Descending, or None.
 platform: ej2-asp-core-mvc
 control: Sorting
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

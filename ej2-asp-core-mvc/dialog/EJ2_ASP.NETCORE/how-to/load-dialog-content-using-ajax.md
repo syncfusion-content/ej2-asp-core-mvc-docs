@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to load Dialog content using AJAX in ##Platform_Name## Dialog | Syncfusion
+title: Load dialog content using AJAX | Syncfusion
 description: Load Syncfusion ##Platform_Name## Dialog content dynamically from an external source via AJAX using the success event of the request.
 platform: ej2-asp-core-mvc
 control: Load Dialog Content Using Ajax

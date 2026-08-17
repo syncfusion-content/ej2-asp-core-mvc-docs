@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to enable RTL in DropDownButton in ##Platform_Name## DropDownButton | Syncfusion
+title: Enable RTL in DropDownButton | Syncfusion
 description: Enable right-to-left support in the Syncfusion ##Platform_Name## DropDownButton by setting the enableRtl property to true.
 platform: ej2-asp-core-mvc
 control: Create Right To Left Dropdownbutton

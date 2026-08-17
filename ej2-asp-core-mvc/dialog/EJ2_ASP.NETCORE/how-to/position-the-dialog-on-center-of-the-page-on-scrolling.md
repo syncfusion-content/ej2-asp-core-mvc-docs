@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to position Dialog on page scroll in ##Platform_Name## Dialog | Syncfusion
+title: Position dialog on page scroll | Syncfusion
 description: Keep the Syncfusion ##Platform_Name## Dialog centered on the page while scrolling by adding the e-fixed class to the Dialog element to prevent page scroll.
 platform: ej2-asp-core-mvc
 control: Position The Dialog On Center Of The Page On Scrolling

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to preselect ##Platform_Name## MultiSelect items via fields | Syncfusion
+title: Preselect MultiSelect items via fields | Syncfusion
 description: Preselect Syncfusion ##Platform_Name## MultiSelect items by setting a boolean isSelected field on the dataSource and binding via fields and dataBound events.
 platform: ej2-asp-core-mvc
 control: Selected Field

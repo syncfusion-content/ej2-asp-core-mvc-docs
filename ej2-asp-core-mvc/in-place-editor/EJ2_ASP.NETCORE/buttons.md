@@ -57,4 +57,4 @@ The output will be as follows.
 
 ## See Also
 
-* [In-place editor buttons](./how-to/dynamic-edit-mode/)
+* [In-place editor buttons](./how-to/dynamic-edit-mode)

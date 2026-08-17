@@ -4,7 +4,7 @@ title: Sorting in ASP.NET MVC Mention | Syncfusion
 description: Sort Syncfusion ASP.NET MVC Mention suggestion list items alphabetically by setting the sortOrder property to Ascending, Descending, or None.
 platform: ej2-asp-core-mvc
 control: Sorting
-publishingplatform: ejmvc
+publishingplatform: aspnet-mvc
 documentation: ug
 ---
 

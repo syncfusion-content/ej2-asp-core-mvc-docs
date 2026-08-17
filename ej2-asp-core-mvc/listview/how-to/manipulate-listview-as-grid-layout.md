@@ -71,7 +71,7 @@ In this section, we will discuss about ListView data manipulations.
 
 ### Add Item
 
-We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view/#additem) API. This will accept array of data as argument.
+We can add list item using [`addItem`](https://ej2.syncfusion.com/documentation/api/list-view#additem) API. This will accept array of data as argument.
 
 ```typescript
 
@@ -83,7 +83,7 @@ In the below sample, you can add new fruit item by clicking add button which wil
 
 ### Remove item
 
-We can remove list item using [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view/#removeitem) API. This will accept fields with `id` or list item element as argument.
+We can remove list item using [`removeItem`](https://ej2.syncfusion.com/documentation/api/list-view#removeitem) API. This will accept fields with `id` or list item element as argument.
 
 ```typescript
 

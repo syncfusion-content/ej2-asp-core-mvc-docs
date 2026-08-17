@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to validate ##Platform_Name## MaskedTextBox with custom rules | Syncfusion
+title: Validate MaskedTextBox with custom rules | Syncfusion
 description: Validate Syncfusion ##Platform_Name## MaskedTextBox input by attaching to FormValidator with custom rules and associate the validator with the input name.
 platform: ej2-asp-core-mvc
 control: Perform Custom Validation Using Form Validator

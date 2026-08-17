@@ -40,7 +40,7 @@ Use the following CSS to customize the DatePicker icon element.
 
 Check the below section, to customize the style and appearance of the Calendar component.
 
-[Customizing Calendar's style and appearance](../calendar/style-appearance/)
+[Customizing Calendar's style and appearance](../calendar/style-appearance)
 
 ## Full screen mode support in mobiles and tablets
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the card image title position in ##Platform_Name## Card | Syncfusion
+title: Customize card image title position | Syncfusion
 description: Move the Syncfusion ##Platform_Name## Card image caption from its default bottom-left position anywhere over the image with custom CSS.
 platform: ej2-asp-core-mvc
 control: Customize The Card Image Title Position

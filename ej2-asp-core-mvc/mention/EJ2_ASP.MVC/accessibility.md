@@ -4,7 +4,7 @@ title: Accessibility in ASP.NET MVC Mention | Syncfusion
 description: Syncfusion ASP.NET MVC Mention meets WCAG 2.2 by using aria-selected and aria-activedescendant attributes on the suggestion popup for screen reader access.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: ejmvc
+publishingplatform: aspnet-mvc
 documentation: ug
 ---
 

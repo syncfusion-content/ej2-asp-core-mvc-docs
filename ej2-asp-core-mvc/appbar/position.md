@@ -16,6 +16,8 @@ The position of the AppBar can be set using the position and sticky property. Th
 * Bottom AppBar
 * Sticky AppBar
 
+## Position Options
+
 ### Top AppBar
 
 The top AppBar is the default one in which it positions the AppBar at the top of the content.

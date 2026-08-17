@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to count remote data bound to ##Platform_Name## DropDownList | Syncfusion
+title: Count remote data bound to DropDownList | Syncfusion
 description: Get Syncfusion ##Platform_Name## DropDownList total item count from the actionComplete event result before rendering, and via getItems after rendering.
 platform: ej2-asp-core-mvc
 control: Remote Data Bind

@@ -4,7 +4,7 @@ title: Mention Filtering in ##Platform_Name## Mention | Syncfusion
 description: Filter Syncfusion ##Platform_Name## Mention suggestion list items by query or startsWith mode as the user types the trigger character into the input element.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

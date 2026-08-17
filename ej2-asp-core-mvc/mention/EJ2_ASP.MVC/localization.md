@@ -4,7 +4,7 @@ title: Localization in ASP.NET MVC Mention | Syncfusion
 description: Localize Syncfusion ASP.NET MVC Mention default no-records and loading text by setting the locale property and registering a translation object.
 platform: ej2-asp-core-mvc
 control: Localization
-publishingplatform: ejmvc
+publishingplatform: aspnet-mvc
 documentation: ug
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion ASP.NET MVC DropdownTree Component | Syncfusion
-description: Syncfusion ASP.NET MVC DropdownTree is a hierarchical control that lets users select single or multiple values from tree-structured data with checkboxes, templates, and sorting.
+description: Syncfusion ASP.NET MVC DropdownTree enables users to select values from tree-structured data with checkboxes, templates, and sorting.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

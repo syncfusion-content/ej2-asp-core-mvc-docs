@@ -19,7 +19,7 @@ You can include Action buttons within the Card and customize them. Action button
     <div class = "e-card">
         <div class="e-card-actions">
             <button class="e-card-btn"></button>
-            <a href="#"></a>
+            <a href="#" aria-label="Action link"></a>
         </div>
     </div>
 ```
@@ -32,7 +32,7 @@ By default, action buttons positioned in horizontal alignment, and also it can b
     <div class = "e-card">
         <div class="e-card-actions e-card-vertical">
             <button class="e-card-btn">More</button>
-            <a href="#">Share</a>
+            <a href="#" aria-label="Share">Share</a>
         </div>
     </div>
 ```

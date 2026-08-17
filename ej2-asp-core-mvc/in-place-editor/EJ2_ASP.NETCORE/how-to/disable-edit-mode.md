@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable the edit mode in ##Platform_Name## InplaceEditor | Syncfusion
+title: Disable edit mode in InplaceEditor | Syncfusion
 description: Toggle Syncfusion ##Platform_Name## InplaceEditor input on or off with a checkbox bound to the disabled property and reactive enabled state.
 platform: ej2-asp-core-mvc
 control: Disable Edit Mode

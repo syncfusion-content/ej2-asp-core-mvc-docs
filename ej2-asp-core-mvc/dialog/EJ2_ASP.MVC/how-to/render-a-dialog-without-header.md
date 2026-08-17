@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to render a Dialog without header in ASP.NET MVC Dialog | Syncfusion
+title: Render dialog without header | Syncfusion
 description: Render the Syncfusion ASP.NET MVC Dialog without a header by setting the Header property to an empty string or null.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Without Header

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the Dialog appearance in ASP.NET MVC Dialog | Syncfusion
+title: Customize dialog appearance | Syncfusion
 description: Customize the Syncfusion ASP.NET MVC Dialog appearance by providing a custom content template through the ContentTemplate property.
 platform: ej2-asp-core-mvc
 control: Customize The Dialog Appearance

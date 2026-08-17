@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Value Binding in ##Platform_Name## DropDownList | Syncfusion
-description: Bind Syncfusion ##Platform_Name## DropDownList selection to primitive types or complex objects using value, text, and fields configuration with two-way binding support.
+description: Bind Syncfusion ##Platform_Name## DropDownList to primitive or complex objects using value, text, and fields with two-way binding.
 platform: ej2-asp-core-mvc
 control: Value Binding
 publishingplatform: ##Platform_Name##

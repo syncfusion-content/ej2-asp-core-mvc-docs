@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize UI appearance of ##Platform_Name## MaskedTextBox | Syncfusion
+title: Customize MaskedTextBox UI appearance | Syncfusion
 description: Customize Syncfusion ##Platform_Name## MaskedTextBox appearance using the cssClass property for wrapper, focus ring, success, warning, and error CSS class variants.
 platform: ej2-asp-core-mvc
 control: Customize The Ui Appearance Of The Control

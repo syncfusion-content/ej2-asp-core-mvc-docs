@@ -58,7 +58,7 @@ The ListBox has support to load array of primitive data such as strings or numbe
 
 ### Array of object
 
-The ListBox can generate its list items through an array of object data. For this, the appropriate columns should be mapped to the [`fields`](../api/list-box/#fields) property.
+The ListBox can generate its list items through an array of object data. For this, the appropriate columns should be mapped to the [`fields`](../api/list-box#fields) property.
 
 In the following example, `id` and `sports` column from complex data have been mapped to the `value` field and `text` field, respectively.
 
@@ -120,7 +120,7 @@ In the following example, `Sports.Name` column from complex data have been mappe
 
 ## Remote Data
 
-The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started/) component. The [`query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Query.html) property is used to fetch data from the database and bind it to the ListBox.
+The ListBox supports retrieval of data from remote data services with the help of [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started) component. The [`query`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Query.html) property is used to fetch data from the database and bind it to the ListBox.
 
 The following sample displays the employee names from Employee table.
 

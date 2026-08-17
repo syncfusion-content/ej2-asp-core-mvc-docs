@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtualization in ##Platform_Name## DropDownList | Syncfusion
-description: Enable Syncfusion ##Platform_Name## DropDownList UI virtualization to render only visible items for large datasets using a fixed virtual scroll item count and height.
+description: Enable UI virtualization in Syncfusion ##Platform_Name## DropDownList to render visible items efficiently for large datasets.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##

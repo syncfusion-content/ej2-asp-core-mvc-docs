@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable fixed group headers in ##Platform_Name## DropDownList | Syncfusion
+title: Disable fixed group headers in DropDownList | Syncfusion
 description: Disable Syncfusion ##Platform_Name## DropDownList fixed group headers by setting CSS visibility hidden on the e-fixed-group class element.
 platform: ej2-asp-core-mvc
 control: Group Header

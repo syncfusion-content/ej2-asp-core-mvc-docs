@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to render DateTimePickerFor in ##Platform_Name## DateTimePicker | Syncfusion
+title: Render DateTimePickerFor in DateTimePicker | Syncfusion
 description: Render Syncfusion ##Platform_Name## DateTimePickerFor by passing a value from the model and retrieve the selected date during form submission on the server.
 platform: ej2-asp-core-mvc
 control: Datetimepicker For Mvc

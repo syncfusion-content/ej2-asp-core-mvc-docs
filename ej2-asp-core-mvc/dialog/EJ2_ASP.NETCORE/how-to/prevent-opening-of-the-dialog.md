@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent opening of the Dialog in ##Platform_Name## Dialog | Syncfusion
+title: Prevent dialog opening | Syncfusion
 description: Prevent the Syncfusion ##Platform_Name## Dialog from opening by setting the BeforeOpen event argument cancel value to true, e.g. for form validation.
 platform: ej2-asp-core-mvc
 control: Prevent Opening Of The Dialog

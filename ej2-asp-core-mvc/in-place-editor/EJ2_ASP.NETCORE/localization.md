@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in ##Platform_Name## InplaceEditor | Syncfusion
-description: Localize Syncfusion ##Platform_Name## InplaceEditor default text and toolbar strings using locale values and translation objects for Arabic, German, and French cultures.
+description: Localize Syncfusion ##Platform_Name## InplaceEditor using locale values and translation objects for Arabic, German, and French cultures.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##

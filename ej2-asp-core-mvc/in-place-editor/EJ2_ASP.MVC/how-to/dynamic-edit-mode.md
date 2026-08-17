@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to dynamically enable edit mode in ##Platform_Name## InplaceEditor | Syncfusion
+title: Dynamically enable edit mode | Syncfusion
 description: Auto-open Syncfusion ##Platform_Name## InplaceEditor edit mode on page load by setting the enableEditMode property to true without needing user interaction.
 platform: ej2-asp-core-mvc
 control: Dynamic Edit Mode

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize each list item's text in ##Platform_Name## ListView | Syncfusion
+title: Customize each list item's text in ListView | Syncfusion
 description: Customize per-item text and HTML in Syncfusion ##Platform_Name## ListView using the template property with conditional rendering by item fields.
 platform: ej2-asp-core-mvc
 control: Customize Each List Item's Text in ListView

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display a Dialog at custom position in ASP.NET MVC Dialog | Syncfusion
+title: Display dialog at custom position | Syncfusion
 description: Position the Syncfusion ASP.NET MVC Dialog inside the target container by providing custom X and Y coordinates to the Position property.
 platform: ej2-asp-core-mvc
 control: Display A Dialog With Custom Position

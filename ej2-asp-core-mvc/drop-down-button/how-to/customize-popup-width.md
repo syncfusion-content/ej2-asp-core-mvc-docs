@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize Popup Width in ##Platform_Name## DropDownButton | Syncfusion
+title: Customize popup width in DropDownButton | Syncfusion
 description: Set a specific width for the Syncfusion ##Platform_Name## DropDownButton popup using the PopupWidth property with CSS units or pixel values.
 platform: ej2-asp-core-mvc
 control: Customize popup width

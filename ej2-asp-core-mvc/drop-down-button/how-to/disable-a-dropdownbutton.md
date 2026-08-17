@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to disable a DropDownButton in ##Platform_Name## DropDownButton | Syncfusion
+title: Disable DropDownButton component | Syncfusion
 description: Disable the Syncfusion ##Platform_Name## DropDownButton by setting the disabled property to true so the button cannot be clicked or focused.
 platform: ej2-asp-core-mvc
 control: Disable A Dropdownbutton

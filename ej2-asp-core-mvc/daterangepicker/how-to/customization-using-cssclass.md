@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize with cssClass in ##Platform_Name## DateRangePicker | Syncfusion
+title: Customize with cssClass | Syncfusion
 description: Apply a custom cssClass to Syncfusion ##Platform_Name## DateRangePicker to override the wrapper, popup, and calendar styles for a custom UI.
 platform: ej2-asp-core-mvc
 control: Customization Using Cssclass

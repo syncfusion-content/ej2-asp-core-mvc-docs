@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add custom indication in ##Platform_Name## InplaceEditor | Syncfusion
+title: Add custom indication in InplaceEditor | Syncfusion
 description: Show a visual cue on Syncfusion ##Platform_Name## InplaceEditor unsaved values by highlighting elements through the actionSuccess event when the submit fails.
 platform: ej2-asp-core-mvc
 control: Custom Indication

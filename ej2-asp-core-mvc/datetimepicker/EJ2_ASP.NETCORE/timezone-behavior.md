@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Timezone Behavior in ##Platform_Name## DateTimePicker | Syncfusion
-description: Display the Syncfusion ##Platform_Name## DateTimePicker value in the client system local time zone and bind server values correctly via the serverTimezoneOffset property.
+description: Display Syncfusion ##Platform_Name## DateTimePicker values in local time zone via the serverTimezoneOffset property for accurate server-side binding.
 platform: ej2-asp-core-mvc
 control: Timezone Behavior
 publishingplatform: ##Platform_Name##

@@ -4,7 +4,7 @@ title: Accessibility in ##Platform_Name## Mention | Syncfusion
 description: Syncfusion ##Platform_Name## Mention meets WCAG 2.2 by using aria-selected and aria-activedescendant attributes on the suggestion popup for screen reader access.
 platform: ej2-asp-core-mvc
 control: Accessibility
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

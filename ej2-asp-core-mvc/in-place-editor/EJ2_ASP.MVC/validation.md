@@ -9,13 +9,13 @@ documentation: ug
 ---
 
 
-# Validation
+# InplaceEditor Validation Rules
 
 In-place Editor control supports validation and it can be achieved by adding rules to the [`ValidationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ValidationRules) property, its child property `key` must be same as `name` property, otherwise validation not performed. Submitting data to the server or calling the `validate` method validation executed.
 
 N> In-place editor is not a form component and it does not support `ejs-for` because the component has embedded into many other components like calendar,textboxes,etc.
 
-## Validation Rules
+## Validation Rule Details
 
 In-place Editor has following validation rules, which are used to perform validation.
 

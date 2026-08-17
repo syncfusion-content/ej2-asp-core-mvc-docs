@@ -101,6 +101,6 @@ The following example code depicts the functionality of `partialVisible` and wit
 
 ## See also
 
-* [Customizing partial slides size](./styles-and-appearance/#customizing-partial-slides-size)
+* [Customizing partial slides size](./styles-and-appearance#customizing-partial-slides-size)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG-Examples/tree/main/Carousel/CarouselUGSample).

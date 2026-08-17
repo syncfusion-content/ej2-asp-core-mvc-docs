@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filter using text and value field in ##Platform_Name## AutoComplete | Syncfusion
+title: Filter using text and value field in AutoComplete | Syncfusion
 description: Learn here all about Text Value Field in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Value Field

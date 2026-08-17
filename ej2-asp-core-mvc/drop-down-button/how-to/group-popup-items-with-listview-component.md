@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to group popup items with ListView in ##Platform_Name## DropDownButton | Syncfusion
+title: Group popup items with ListView | Syncfusion
 description: Group Syncfusion ##Platform_Name## DropDownButton popup items by templating the popup with ListView and using the groupBy field for category headers.
 platform: ej2-asp-core-mvc
 control: Group Popup Items With Listview Component

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set name and value in form submit in ##Platform_Name## Checkbox | Syncfusion
+title: Set name and value in form submit | Syncfusion
 description: Group ##Platform_Name## Checkboxes with the name attribute and submit only the values of checked items on form post to the server.
 platform: ej2-asp-core-mvc
 control: Name And Value In Form Submit

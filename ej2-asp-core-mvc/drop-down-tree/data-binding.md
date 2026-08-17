@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## DropdownTree | Syncfusion
-description: Bind Syncfusion ##Platform_Name## DropdownTree to local or remote data via the dataSource property and DataManager with OData, OData V4, Web API, URL, and JSON adaptors.
+description: Bind Syncfusion ##Platform_Name## DropdownTree to local or remote data via DataManager with OData, Web API, URL, and JSON adaptors.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##

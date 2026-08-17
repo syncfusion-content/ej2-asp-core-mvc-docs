@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent closing of modal Dialog in ##Platform_Name## Dialog | Syncfusion
+title: Prevent closing of modal dialog | Syncfusion
 description: Prevent closing of the modal Syncfusion ##Platform_Name## Dialog by setting the BeforeClose event argument cancel value to true, e.g. for validation.
 platform: ej2-asp-core-mvc
 control: Prevent Closing Of Modal Dialog

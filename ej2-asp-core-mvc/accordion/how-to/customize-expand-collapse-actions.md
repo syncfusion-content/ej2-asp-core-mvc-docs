@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize expand or collapse animation in ##Platform_Name## Accordion | Syncfusion
+title: Customize accordion animation in ##Platform_Name## | Syncfusion
 description: Learn here all about how to customize expand collapse actions in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Expand Collapse Actions

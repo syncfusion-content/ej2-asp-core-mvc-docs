@@ -10,7 +10,7 @@ documentation: ug
 
 # How to drag and drop items in ##Platform_Name## ListView
 
-In ListView control, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started/) control with ListView appearance.
+In ListView control, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started) control with ListView appearance.
 
 Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/treeview#allowdraganddrop) to `true`.
 

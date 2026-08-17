@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate other component inside the card in ##Platform_Name## Card | Syncfusion
+title: Integrate component inside card | Syncfusion
 description: Place any Syncfusion component such as ListView inside the ##Platform_Name## Card to build composite UI like a to-do list.
 platform: ej2-asp-core-mvc
 control: Integrate Other Component Inside The Card

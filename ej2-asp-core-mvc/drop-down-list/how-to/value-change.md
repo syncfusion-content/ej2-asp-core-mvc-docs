@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to detect programmatic value change in ##Platform_Name## DropDownList | Syncfusion
+title: Detect programmatic value change | Syncfusion
 description: Detect whether Syncfusion ##Platform_Name## DropDownList value change came from user interaction by checking the isInteracted flag in the change event arg.
 platform: ej2-asp-core-mvc
 control: Value Change

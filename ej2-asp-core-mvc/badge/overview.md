@@ -14,8 +14,8 @@ Badges can be used to alert users about new or unread messages, notifications, a
 
 ## Key features
 
-* **[Types](/badge/types/)** - Provided 8 different types of Badges.
+* **[Types](/badge/types)** - Provided 8 different types of Badges.
 
-* **[Predefined Colors](/badge/types/#badge-styles)** - Provided 8 predefined situational colors of Badges.
+* **[Predefined Colors](/badge/types#badge-styles)** - Provided 8 predefined situational colors of Badges.
 
-* **[Position](/badge/types/#position)** - Supports 3 different positions, such as `default`, `top` and `bottom`.
+* **[Position](/badge/types#position)** - Supports 3 different positions, such as `default`, `top` and `bottom`.

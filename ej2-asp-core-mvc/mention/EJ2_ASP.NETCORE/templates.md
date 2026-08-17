@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Templates in ##Platform_Name## Mention | Syncfusion
-description: Customize Syncfusion ##Platform_Name## Mention suggestion items, display value, and loading state using the itemTemplate, displayTemplate, and noRecordsTemplate APIs.
+description: Customize Syncfusion ##Platform_Name## Mention items using itemTemplate, displayTemplate, and noRecordsTemplate for enhanced user experience.
 platform: ej2-asp-core-mvc
 control: Templates
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

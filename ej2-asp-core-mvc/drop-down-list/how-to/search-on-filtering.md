@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to limit search results in ##Platform_Name## DropDownList filtering | Syncfusion
+title: Limit search results in DropDownList | Syncfusion
 description: Limit Syncfusion ##Platform_Name## DropDownList filter result count by overriding the search action handler and limiting the processed items array.
 platform: ej2-asp-core-mvc
 control: Search On Filtering

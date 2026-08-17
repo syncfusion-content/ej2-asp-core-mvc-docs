@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to preselect cascading ##Platform_Name## DropDownList values | Syncfusion
+title: Preselect cascading DropDownList values | Syncfusion
 description: Preselect values into cascading Syncfusion ##Platform_Name## DropDownLists from a model using the dataManager create event and filter operations.
 platform: ej2-asp-core-mvc
 control: Cascading Preselect

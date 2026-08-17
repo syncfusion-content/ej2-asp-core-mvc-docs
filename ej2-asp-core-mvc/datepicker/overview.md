@@ -14,9 +14,9 @@ The **DatePicker** is a graphical user interface control that allows the user to
 
 ## Key Features
 
-* **[Date Range](/datepicker/date-range/)**
-* **[Globalization](/datepicker/globalization/)**
-* **[Strict Mode](/datepicker/strict-mode/)**
-* **[Customization](/datepicker/customization/)**
-* **[Start and Depth View](/datepicker/view/)**
-* **[Accessibility](/datepicker/accessibility/)**
+* **[Date Range](/datepicker/date-range)**
+* **[Globalization](/datepicker/globalization)**
+* **[Strict Mode](/datepicker/strict-mode)**
+* **[Customization](/datepicker/customization)**
+* **[Start and Depth View](/datepicker/view)**
+* **[Accessibility](/datepicker/accessibility)**

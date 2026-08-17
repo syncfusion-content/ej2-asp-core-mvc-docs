@@ -80,4 +80,4 @@ The output will be as follows.
 
 ## See Also
 
-* [Indicate the server actions in the editor](./how-to/custom-indication/)
+* [Indicate the server actions in the editor](./how-to/custom-indication)

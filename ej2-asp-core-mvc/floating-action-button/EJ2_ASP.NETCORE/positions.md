@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Positions in ##Platform_Name## FloatingActionButton | Syncfusion
-description: Position Syncfusion ##Platform_Name## FloatingActionButton in top-left, top-center, top-right, middle-left, middle-center, middle-right, bottom-left, bottom-center, or bottom-right.
+description: Position Syncfusion ##Platform_Name## FloatingActionButton in various corners, edges, and center locations using the position property.
 platform: ej2-asp-core-mvc
 control: Positions
 publishingplatform: ##Platform_Name##

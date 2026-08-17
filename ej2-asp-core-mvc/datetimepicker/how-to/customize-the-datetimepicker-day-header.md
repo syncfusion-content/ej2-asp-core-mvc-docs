@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize day header in ##Platform_Name## DateTimePicker | Syncfusion
+title: Customize day header in DateTimePicker | Syncfusion
 description: Change the day header format in Syncfusion ##Platform_Name## DateTimePicker using the dayHeaderFormat property with Short, Narrow, Abbreviated, or Wide options.
 platform: ej2-asp-core-mvc
 control: Customize The Datetimepicker Day Header

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set cursor position in ##Platform_Name## MaskedTextBox on focus | Syncfusion
+title: Set cursor position in MaskedTextBox on focus | Syncfusion
 description: Customize Syncfusion ##Platform_Name## MaskedTextBox cursor placement on focus by handling the focus event and selecting text within the input element.
 platform: ej2-asp-core-mvc
 control: Set Cursor Position While Focus On The Input Textbox

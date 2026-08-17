@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to render DateRangePickerFor in ##Platform_Name## DateRangePicker | Syncfusion
+title: Render DateRangePickerFor in DateRangePicker | Syncfusion
 description: Render Syncfusion ##Platform_Name## DateRangePickerFor from a model and retrieve the selected range during form submission using the HTTP post method.
 platform: ej2-asp-core-mvc
 control: Daterangepicker For Core

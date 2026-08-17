@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to read Dialog values on button click in ASP.NET MVC Dialog | Syncfusion
+title: Read dialog values on button click | Syncfusion
 description: Read all input values from the Syncfusion ASP.NET MVC Dialog by binding an action handler to the footer buttons via the Buttons property.
 platform: ej2-asp-core-mvc
 control: Read All The Values From Dialog On Button Click

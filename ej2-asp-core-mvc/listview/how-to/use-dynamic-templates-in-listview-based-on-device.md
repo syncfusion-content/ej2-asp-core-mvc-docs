@@ -14,7 +14,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-s
 
 ## Integration
 
-In the ListView control, template support is being used. In some cases, the control wrapper is always responsive across all devices, but the template contents are dynamically changed with unspecified (sample side) dimensions. CSS customization is also needed in sample-side to align template content responsively in both mobile and desktop modes. Here, two templates have been loaded for mobile and desktop modes. To check the device mode, a `browser module` has been imported from the [ej2-base](https://ej2.syncfusion.com/documentation/api/base/overview/) package.
+In the ListView control, template support is being used. In some cases, the control wrapper is always responsive across all devices, but the template contents are dynamically changed with unspecified (sample side) dimensions. CSS customization is also needed in sample-side to align template content responsively in both mobile and desktop modes. Here, two templates have been loaded for mobile and desktop modes. To check the device mode, a `browser module` has been imported from the [ej2-base](https://ej2.syncfusion.com/documentation/api/base/overview) package.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
