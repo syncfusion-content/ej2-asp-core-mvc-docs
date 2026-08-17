@@ -8,13 +8,13 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 components to latest version
+# Upgrading Syncfusion ASP.NET MVC components to latest version
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2 migration add-in for Visual Studio allows you to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC web application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 
 The steps below will assist you to upgrade the Syncfusion<sup style="font-size:70%">&reg;</sup> version in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC application via Visual Studio 2019:
 
-N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Web application Migration, check whether the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2  Extension installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation/) help topic.
+N> Before use the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Web application Migration, check whether the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC JS2  Extension installed or not in Visual Studio Extension Manager by clicking on the Extensions -> Manage Extensions -> Installed. If this extension not installed, install the extension by follow the steps from the [download and installation](https://ej2.syncfusion.com/aspnetmvc/documentation/visual-studio-integration/VS2019-Extensions/download-and-installation) help topic.
 
 1. Open the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Web application that uses the Syncfusion<sup style="font-size:70%">&reg;</sup> component.
 

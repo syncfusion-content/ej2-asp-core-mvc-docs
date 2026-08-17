@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 components to latest version
+# Upgrading Syncfusion ASP.NET Core components to latest version
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 migration add-in for Visual Studio allows to migrate an existing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core web application from one version of Essential Studio<sup style="font-size:70%">&reg;</sup> version to another version. This reduces the amount of manual work required when migrating the Syncfusion<sup style="font-size:70%">&reg;</sup> version.
 

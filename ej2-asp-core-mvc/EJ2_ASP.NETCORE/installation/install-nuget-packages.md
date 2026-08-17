@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet Packages
+# Install Syncfusion ASP.NET Core NuGet Packages
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages using the **Package Manager UI**, the **dotnet (.NET) CLI**, or the **Package Manager Console**.
 

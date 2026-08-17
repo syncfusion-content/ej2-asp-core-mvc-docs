@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Component
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+description: Learn about scaffolding Syncfusion ASP.NET MVC applications using Yeoman generator and Syncfusion Essential JS 2.
 platform: ej2-asp-core-mvc
 control: Yeoman
 publishingplatform: ##Platform_Name##

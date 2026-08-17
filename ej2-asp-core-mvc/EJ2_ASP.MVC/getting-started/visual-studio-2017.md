@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Component | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+description: Step-by-step guide to build and publish a Syncfusion ASP.NET MVC web application using Visual Studio and Essential JS 2 controls.
 platform: ej2-asp-core-mvc
 control: Visual Studio 2017
 publishingplatform: ##Platform_Name##
@@ -24,7 +24,7 @@ N> Starting with v16.2.0.x, if you reference to Syncfusion<sup style="font-size:
 
 To get started with ASP.NET MVC 5 application, ensure the following software to be installed on the machine.
 
-* .Net Framework 4.5 and above.
+* .NET Framework 4.5 and above.
 * ASP.NET MVC 5 
 * Visual Studio 2019
 
@@ -34,7 +34,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
     ![new project in aspnetmvc 2019](images/new-mvc-project-vs2019.png)
 
-2. Select **ASP.NET Web Application (.NET Framework)** in visual studio 2019.
+2. Select **ASP.NET Web Application (.NET Framework)** in Visual Studio 2019.
 
     ![aspnetmvc5 project template 2019](images/aspnetmvc-templatevs2019.png)
   
@@ -50,9 +50,9 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 #### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
-1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
+1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the NuGet Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages 2019](images/aspnetmvc5-manage-nuget-2019.png)
 
@@ -139,7 +139,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 To get started with ASP.NET MVC 5 application, ensure the following software to be installed on the machine.
 
-* .Net Framework 4.5 and above.
+* .NET Framework 4.5 and above.
 * ASP.NET MVC 5
 * Visual Studio 2017
 
@@ -163,9 +163,9 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 #### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
-1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
+1. Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the NuGet Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 
@@ -250,7 +250,7 @@ To get started with ASP.NET MVC 5 application, ensure the following software to 
 
 To get started with ASP.NET MVC 4 application, ensure the following software to be installed on the machine.
 
-* .Net Framework 4.5 and above.
+* .NET Framework 4.5 and above.
 * ASP.NET MVC 4
 * Visual Studio 2013
 
@@ -274,9 +274,9 @@ To get started with ASP.NET MVC 4 application, ensure the following software to 
 
 #### Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 in the application
 
-1. Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package into the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
+1. Add the [`Syncfusion.EJ2.MVC4`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC4/) NuGet package into the new application by using the NuGet Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-    N> Refer to [this article](./../nuget-packages/) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+    N> Refer to [this article](./../nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
     ![aspnetmvc4 manage nuget packages](images/aspnetmvc4-manage-nuget.png)
 

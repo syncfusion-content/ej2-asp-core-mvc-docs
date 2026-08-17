@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Component | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## component of Syncfusion Essential JS 2 and more details.
+description: Learn about the getting started options available for Syncfusion ASP.NET MVC controls, including Visual Studio, Project Template, VS Code, and Yeoman.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

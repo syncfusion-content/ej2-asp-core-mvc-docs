@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NuGet Packages
+# Install Syncfusion ASP.NET MVC NuGet Packages
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (EJ2) NuGet packages the **Package Manager Console** in Visual Studio.
 

@@ -54,7 +54,7 @@ dotnet add package Syncfusion.EJ2.AspNet.Core
 {% endhighlight %}
 {% endtabs %}
 
-Refer to [NuGet packages topic](../nuget-packages/) for more details about NuGet packages.
+Refer to [NuGet packages topic](../nuget-packages) for more details about NuGet packages.
 
 ## Add Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Tag Helper
 Open `~/Pages/_ViewImports.cshtml` file and import the `Syncfusion.EJ2` TagHelper.

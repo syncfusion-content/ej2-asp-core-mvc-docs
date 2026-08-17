@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 NuGet packages to a latest version
+# Upgrading Syncfusion ASP.NET Core NuGet packages to latest version
 
 Every three months, Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet packages are released on a weekly basis to address critical issue fixes.
 
