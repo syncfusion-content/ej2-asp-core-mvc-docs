@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Daterangepicker | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Daterangepicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## DateRangePicker | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## DateRangePicker control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DateRangePicker Control
+# Getting Started with ##Platform_Name## DateRangePicker
 
 This section briefly explains how to include the [ASP.NET MVC DateRangePicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/daterangepicker) control in an ASP.NET MVC application using Visual Studio.
 

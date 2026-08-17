@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## ListView Control
-description: Learn here all about Overview in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## ListView Component | Syncfusion
+description: Syncfusion ##Platform_Name## ListView renders a configurable vertical list with templates, checkboxes, group headers, virtualization, and accessible WAI-ARIA semantics.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## ListView Component.
 
 The ListView control represents the data in interactive hierarchical structure interface across different layouts or views, that also has features such as data-binding, template, grouping and Virtualization.
 

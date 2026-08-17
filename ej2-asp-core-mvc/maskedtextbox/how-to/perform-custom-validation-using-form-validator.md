@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Perform Custom Validation Using Form Validator in ##Platform_Name## Maskedtextbox Component
-description: Learn here all about Perform Custom Validation Using Form Validator in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
+title: How to validate ##Platform_Name## MaskedTextBox with custom rules | Syncfusion
+description: Validate Syncfusion ##Platform_Name## MaskedTextBox input by attaching to FormValidator with custom rules and associate the validator with the input name.
 platform: ej2-asp-core-mvc
 control: Perform Custom Validation Using Form Validator
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Perform custom validation using FormValidator
+# How to validate ##Platform_Name## MaskedTextBox with custom rules
 
 To perform custom validation on the MaskedTextBox use the FormValidator along with custom validation rules.
 

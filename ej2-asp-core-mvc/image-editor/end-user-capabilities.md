@@ -1,14 +1,14 @@
 ---
 layout: post
-title: End user in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about End user Capabilities in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: End-User Capabilities in ##Platform_Name## ImageEditor | Syncfusion
+description: Explains the core interactive editing features Syncfusion ##Platform_Name## ImageEditor exposes for end users: crop, rotate, flip, zoom, and annotations.
 platform: ej2-asp-core-mvc
 control: End user Capabilities 
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# End User Capabilities in the ##Platform_Name## Image Editor control
+# End-user capabilities in ##Platform_Name## ImageEditor
 
 The following operations are available for end-users and the same is explained briefly in these sections.
 

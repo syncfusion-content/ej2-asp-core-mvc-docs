@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Range Restriction in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Range Restriction in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Range Restriction in ##Platform_Name## DateRangePicker | Syncfusion
+description: Restrict Syncfusion ##Platform_Name## DateRangePicker selection with min, max, and strictMode for start and end date range validation.
 platform: ej2-asp-core-mvc
 control: Range Restriction
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Range Restriction
+# Range Restriction in ##Platform_Name## DateRangePicker
 
 Range selection in a DateRangePicker can be made-to-order with desire restrictions based on the application needs.
 

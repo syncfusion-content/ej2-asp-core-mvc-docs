@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Calendar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Calendar | Syncfusion
+description: Add the Syncfusion ASP.NET MVC Calendar to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Calendar Control
+# Getting Started with ##Platform_Name## Calendar
 
 This section briefly explains how to include the [ASP.NET MVC Calendar](https://www.syncfusion.com/aspnet-mvc-ui-controls/calendar) control in an ASP.NET MVC application using Visual Studio.
 

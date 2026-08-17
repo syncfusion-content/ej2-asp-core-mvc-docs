@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ASP.NET MVC Multi Select | Syncfusion
-description: Learn here all about Overview in Syncfusion ASP.NET MVC Multi Select component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET MVC MultiSelect Component | Syncfusion
+description: Syncfusion ASP.NET MVC MultiSelect renders multi-selectable lists from local or remote data with chip tags, filtering, grouping, and accessibility support.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ASP.NET MVC Multi Select Control
+# About Syncfusion ASP.NET MVC MultiSelect Component.
 
 The MultiSelect control contains a list of predefined values from which a multiple value can be chosen. The functionality of MultiSelect resembles the SELECT form element of HTML.
 

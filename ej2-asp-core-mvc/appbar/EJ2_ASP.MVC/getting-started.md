@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## AppBar Control
-description: Checkout and learn about getting started with ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AppBar | Syncfusion
+description: Get started with the Syncfusion ASP.NET MVC AppBar by adding the EJ2 MVC5 NuGet package and rendering a top app bar in your app.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC AppBar Control
+# Getting Started with ##Platform_Name## AppBar
 
 This section briefly explains about how to include ASP.NET MVC AppBar control in your ASP.NET MVC application using Visual Studio.
 

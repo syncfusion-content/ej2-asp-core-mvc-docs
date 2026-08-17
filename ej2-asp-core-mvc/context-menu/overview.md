@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Context Menu Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Context Menu Component | Syncfusion
+description: Syncfusion ##Platform_Name## Context Menu opens on right-click or touch-hold and supports nested levels, separators, icons, templates, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Context Menu Component.
 
 The ContextMenu is a graphical user interface that appears on the user right click/touch hold action. It has the support to provide nested level menu items.
 

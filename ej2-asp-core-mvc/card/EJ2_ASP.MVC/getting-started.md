@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Card Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Card control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Card | Syncfusion
+description: Create your first ASP.NET MVC Card, add the Syncfusion.EJ2 theme, and render a header with title and content in an MVC Razor view.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Binding in ##Platform_Name## Drop Down List Component
-description: Learn here all about Value binding in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Value Binding in ##Platform_Name## DropDownList | Syncfusion
+description: Bind Syncfusion ##Platform_Name## DropDownList selection to primitive types or complex objects using value, text, and fields configuration with two-way binding support.
 platform: ej2-asp-core-mvc
 control: Value Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Value binding in DropDownList
+# Value Binding in ##Platform_Name## DropDownList
 
 Value binding in the DropDown List control allows you to associate data values with each list item. This facilitates managing and retrieving selected values efficiently. The DropDown List component provides flexibility in binding both primitive data types and complex objects.
 

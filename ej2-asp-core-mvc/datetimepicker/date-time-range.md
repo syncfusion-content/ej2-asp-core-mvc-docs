@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Time Range in Syncfusion ##Platform_Name## Datetimepicker Component
-description: Learn here all about Date Time Range in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: DateTime Range in ##Platform_Name## DateTimePicker | Syncfusion
+description: Restrict Syncfusion ##Platform_Name## DateTimePicker selection to a range with the min and max properties, with the value reflecting strictMode behavior.
 platform: ej2-asp-core-mvc
 control: Date Time Range
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# DateTime Range Restriction
+# DateTime Range in ##Platform_Name## DateTimePicker
 
 ## DateTime Restriction
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Manipulate ListView As Grid Layout in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Manipulate ListView As Grid Layout in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to use ListView as a grid layout in ##Platform_Name## | Syncfusion
+description: Render a Syncfusion ##Platform_Name## ListView multi-column grid by combining cssClass with template that arranges items in two or three columns.
 platform: ej2-asp-core-mvc
 control: Manipulate ListView As Grid Layout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Manipulate ListView as Grid Layout
+# How to use ListView as a grid layout in ##Platform_Name##
 
 In ListView, list items can be rendered in grid layout with following data manipulations.
 

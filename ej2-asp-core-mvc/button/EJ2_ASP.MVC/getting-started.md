@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Button Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Button | Syncfusion
+description: Add the Syncfusion ASP.NET MVC Button to a project by installing the Syncfusion.EJ2.MVC5 NuGet package and wiring up scripts.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Button Control
+# Getting Started with ##Platform_Name## Button
 
 This section briefly explains how to include the [ASP.NET MVC Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/button) control in an ASP.NET MVC application using Visual Studio.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Expand Collapse Actions in ##Platform_Name## Accordion Component
+title: Customize expand or collapse animation in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about how to customize expand collapse actions in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Expand Collapse Actions
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize Accordion expand or collapse animation behavior
+# Customize expand or collapse animation in ##Platform_Name## Accordion
 
 Accordion component supports customizing the expand or collapse animation action behavior. You can manually adjust the expand animation action that occurs after the collapse animation operation is performed on the already expanded pane, When the expand icons are clicked.
 

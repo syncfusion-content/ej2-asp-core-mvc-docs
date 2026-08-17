@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Auto Complete Control | Syncfusion
+title: Data Binding in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Data Binding
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding in ##Platform_Name## AutoComplete Control
+# Data Binding in ##Platform_Name## AutoComplete
 
 The AutoComplete loads the data either from local data sources or remote data services using the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property. It supports the data type of array or [DataManager](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.Data.html).
 

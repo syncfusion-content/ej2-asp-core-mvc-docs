@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## Breadcrumb | Syncfusion
+description: Customize Breadcrumb item appearance in ASP.NET Core using itemTemplate to render icons, separators, or any custom markup per item.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates in Breadcrumb
+# Templates in ##Platform_Name## Breadcrumb
 
 The Breadcrumb component provides a way to customize the items using `itemTemplate` and the separators using `separatorTemplate` properties.
 

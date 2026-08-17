@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Dialog control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Dialog Component | Syncfusion
+description: Syncfusion ASP.NET MVC Dialog is a window that displays information and gathers user input as a modal or modeless overlay with rich templates.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Dialog
+# About Syncfusion ##Platform_Name## Dialog Component.
 
 The Dialog is a window that displays information to the user, and used to get the user input.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selected Field in ##Platform_Name## Multi Select | Syncfusion
-description: Learn here all about Selected Field in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: How to preselect ##Platform_Name## MultiSelect items via fields | Syncfusion
+description: Preselect Syncfusion ##Platform_Name## MultiSelect items by setting a boolean isSelected field on the dataSource and binding via fields and dataBound events.
 platform: ej2-asp-core-mvc
 control: Selected Field
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set preselected items through fields
+# How to preselect ##Platform_Name## MultiSelect items via fields
 
 You can use a boolean field(for ex:"isSelected") of MultiSelect dataSource to set preselected items through fields during initial rendering. You can use `itemCreated` event of fields to push items with **isSelected** field set to true and these values will be selected through [dataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_DataBound) event of MultiSelect. Pass empty string of array initially to load the control with preselected values.
 

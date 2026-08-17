@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Syncfusion Drop Down Tree Component
-description: Learn here all about data binding in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## DropdownTree | Syncfusion
+description: Bind Syncfusion ##Platform_Name## DropdownTree to local or remote data via the dataSource property and DataManager with OData, OData V4, Web API, URL, and JSON adaptors.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Dropdown Tree Component
+# Data Binding in ##Platform_Name## DropdownTree
 
 The Dropdown Tree control provides an option to load the data either from local data sources or from remote data services. This can be done through `dataSource` property that is a member of the `fields` property. The `dataSource` property supports list of data and `DataManager`. It also supports different kinds of data services such as OData, OData V4, Web API, URL, and JSON with the help of `DataManager` adaptors.
 

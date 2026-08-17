@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## DateRangePicker Component | Syncfusion
+description: Syncfusion ##Platform_Name## DateRangePicker is a graphical control for selecting a date range, with range restriction, globalization, and customization.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## DateRangePicker Component.
 
 The **DateRangePicker** is a graphical user interface control that allows to select a date range.
 

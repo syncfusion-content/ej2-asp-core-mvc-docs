@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about customization with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Customization in ASP.NET MVC Message | Syncfusion
+description: Customize Syncfusion ASP.NET MVC Message content alignment, corner radius, and border style by setting the cssClass and content template at the message level.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in Message control
+# Customization in ASP.NET MVC Message
 
 The Message control allows user to customize the content display positions and appearance. This section explains the details about changing the content alignments and border styles for messages.
 

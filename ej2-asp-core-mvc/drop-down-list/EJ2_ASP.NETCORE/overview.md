@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down List | Syncfusion
-description: Learn about the overview of the Syncfusion ASP.NET Core DropDown List component, including its features, functionality, usage, and customization options.
+title: About Syncfusion ##Platform_Name## DropDownList Component | Syncfusion
+description: Learn about the overview of the Syncfusion ASP.NET Core DropDownList component, including its features, functionality, usage, and customization options.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview of ##Platform_Name## Drop Down List
+# About Syncfusion ##Platform_Name## DropDownList Component.
 
 The DropDownList control contains a list of predefined values from which a single value can be chosen. The functionality of DropDownList resembles the SELECT form element of HTML. When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values from which you can select one.
 

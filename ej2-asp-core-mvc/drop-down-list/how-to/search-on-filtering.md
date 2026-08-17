@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Search On Filtering in ##Platform_Name## Drop Down List Component
-description: Learn here all about search on filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to limit search results in ##Platform_Name## DropDownList filtering | Syncfusion
+description: Limit Syncfusion ##Platform_Name## DropDownList filter result count by overriding the search action handler and limiting the processed items array.
 platform: ej2-asp-core-mvc
 control: Search On Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Limit the search result on filtering
+# How to limit search results in ##Platform_Name## DropDownList filtering
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Buttons in ##Platform_Name## In Place Editor Component
-description: Learn here all about Buttons in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Buttons in ##Platform_Name## InplaceEditor | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## InplaceEditor save and cancel buttons by passing ButtonModel objects to the saveButton and cancelButton properties.
 platform: ej2-asp-core-mvc
 control: Buttons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Buttons
+# Buttons in ##Platform_Name## InplaceEditor
 
 The In-place Editor had an action for save and cancel using buttons. The [`saveButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_SaveButton) and [`cancelButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_CancelButton) properties accept the `ButtonModel` objects for customizing the save and cancel button properties.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down List Component
-description: Learn here all about overview in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## DropDownList Component | Syncfusion
+description: Syncfusion ##Platform_Name## DropDownList renders a selectable single-value list from local or remote data with filtering, grouping, templates, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# About Syncfusion ##Platform_Name## DropDownList Component.
 
 The DropDownList control contains a list of predefined values from which a single value can be chosen. The functionality of DropDownList resembles the SELECT form element of HTML. When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values from which you can select one.
 

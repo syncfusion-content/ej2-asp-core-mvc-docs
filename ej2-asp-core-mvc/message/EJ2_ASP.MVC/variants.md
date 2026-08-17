@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Variants with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about variants with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Variants in ASP.NET MVC Message | Syncfusion
+description: Choose Syncfusion ASP.NET MVC Message variants (Text, Outlined, Filled) using the variant property to control the message visual style.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Variants in Message control
+# Variants in ASP.NET MVC Message
 
 The Message has predefined appearance variants for different visual representations. The variants of the message can be changed based on the [Variant](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_Variant) property.
 

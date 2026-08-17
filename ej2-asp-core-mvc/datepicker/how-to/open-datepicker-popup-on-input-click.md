@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Open Datepicker Popup On Input Click in ##Platform_Name## Datepicker Component
-description: Learn here all about open Datepicker popup on input click in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to open DatePicker on focus in ##Platform_Name## DatePicker | Syncfusion
+description: Open the Syncfusion ##Platform_Name## DatePicker popup on input focus by calling the show method inside the input focus event handler.
 platform: ej2-asp-core-mvc
 control: Open Datepicker Popup On Input Click
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open the DatePicker popup upon focusing input of DatePicker
+# How to open DatePicker on focus in ##Platform_Name## DatePicker
 
 You can open the DatePicker popup on input focus by calling the `show` method in the input `focus` event.
 

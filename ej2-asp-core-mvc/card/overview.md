@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Card Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Card component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Card Component | Syncfusion
+description: Explore the Syncfusion ##Platform_Name## Card container, its pure-CSS structure, and key features like headers, images, and action buttons.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Card Component.
 
 The Card is a small container in which user can show defined content in specific structure. It is a pure CSS component built with markup and styles.
 

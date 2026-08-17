@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## In Place Editor Component
-description: Learn here all about Validation in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## InplaceEditor | Syncfusion
+description: Validate Syncfusion ##Platform_Name## InplaceEditor input before save using ValidationRules with keys matching the name property and the validate method.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##

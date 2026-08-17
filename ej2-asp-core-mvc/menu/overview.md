@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Menu Component | Syncfusion
+description: Syncfusion ##Platform_Name## Menu is a graphical user interface for navigation headers, supporting multi-level nested items with icons, templates, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Menu Control
+# About Syncfusion ##Platform_Name## Menu Component.
 
 The Menu is a graphical user interface that serves as navigation header for your application or site.
 It has the support to provide multi-level nested menu items.

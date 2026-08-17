@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Value Support in ##Platform_Name## Drop Down List Component
-description: Learn here all about value support in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to ensure unique values in ##Platform_Name## DropDownList | Syncfusion
+description: Ensure unique values per Syncfusion ##Platform_Name## DropDownList item by mapping the value field to a uniquely-keyed data source property such as ID.
 platform: ej2-asp-core-mvc
 control: Value Support
 publishingplatform: ##Platform_Name##
@@ -9,6 +9,6 @@ documentation: ug
 ---
 
 
-# Whether each list items hold unique value
+# How to ensure unique values in ##Platform_Name## DropDownList
 
 Yes, the value for each list items should be unique.

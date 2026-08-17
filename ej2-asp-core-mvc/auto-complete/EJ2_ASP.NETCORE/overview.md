@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Auto Complete Component | Syncfusion
-description: Explore the Overview in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## AutoComplete Component | Syncfusion
+description: Learn about the Syncfusion ASP.NET Core AutoComplete, which suggests matching items as the user types, with grouping, sorting, templates, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview of Auto Complete component
+# About Syncfusion ##Platform_Name## AutoComplete Component.
 
 When the user types into the input, the AutoComplete control displays a list of matched suggestions from which the user can choose.
 

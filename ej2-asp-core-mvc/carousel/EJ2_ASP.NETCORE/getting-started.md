@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## Carousel Control
-description: Check out and learn about getting started with ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Carousel | Syncfusion
+description: Add the Syncfusion Navigations NuGet, register the ejs-scripts manager, and render an ASP.NET Core Carousel with templated image slides.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

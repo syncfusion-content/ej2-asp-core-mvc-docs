@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Checkbox | Syncfusion
+description: Meet WCAG 2.2 and Section 508 standards in the ##Platform_Name## Checkbox with ARIA attributes, keyboard Space support, and screen reader testing.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in CheckBox Control
+# Accessibility in ##Platform_Name## Checkbox
 
 The Check box component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

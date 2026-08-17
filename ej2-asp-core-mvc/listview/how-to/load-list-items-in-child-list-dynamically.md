@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Load child list dynamically in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Load List Items In Child List Dynamically in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
+title: How to load child items dynamically in ##Platform_Name## ListView | Syncfusion
+description: Load nested Syncfusion ##Platform_Name## ListView child items on demand when expanding parents via the actionFailure event and remote data binding.
 platform: ej2-asp-core-mvc
 control: Load List Items In Child List Dynamically
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Load List Items in child list dynamically
+# How to load child items dynamically in ##Platform_Name## ListView
 
 To load list items in child list dynamically, push the new list item data into the existing [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view/#datasource) using the [`select`](https://ej2.syncfusion.com/documentation/api/list-view/#select) event.
 

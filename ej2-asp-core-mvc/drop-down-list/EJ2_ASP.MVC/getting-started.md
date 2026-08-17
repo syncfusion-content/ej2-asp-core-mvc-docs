@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownList | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## DropDownList control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC DropDownList | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET MVC DropDownList control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DropDownList Control
+# Getting Started with ASP.NET MVC DropDownList
 
 This section briefly explains how to include the [ASP.NET MVC DropDownList](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-list) control in an ASP.NET MVC application using Visual Studio.
 

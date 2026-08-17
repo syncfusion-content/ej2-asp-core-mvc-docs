@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down List | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET MVC DropDownList Component | Syncfusion
+description: Syncfusion ASP.NET MVC DropDownList renders a selectable single-value list from local or remote data with filtering, grouping, templates, and accessibility support.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Drop Down List
+# About Syncfusion ASP.NET MVC DropDownList Component.
 
 The DropDownList control contains a list of predefined values from which a single value can be chosen. The functionality of DropDownList resembles the SELECT form element of HTML. When an arrow icon accompanied with this control is pressed, the dropdown displays a list of values from which you can select one.
 

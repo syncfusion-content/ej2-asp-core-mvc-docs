@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Positioning in ##Platform_Name## AppBar Control | Syncfusion
+title: Position in ##Platform_Name## AppBar | Syncfusion
 description: Check out and learn about Positioning in the ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Position
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positioning in ##Platform_Name## AppBar Control
+# Position in ##Platform_Name## AppBar
 
 The position of the AppBar can be set using the position and sticky property. The AppBar provides the following options for setting its position:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## CheckBox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## CheckBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Checkbox | Syncfusion
+description: Add the Syncfusion.EJ2.MVC5 package, register the script manager, and render an ASP.NET MVC Checkbox with checked and indeterminate states.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

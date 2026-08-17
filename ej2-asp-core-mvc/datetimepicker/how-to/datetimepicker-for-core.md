@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Datetimepicker For Core in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Datetimepicker for core in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: How to render DateTimePickerFor in ##Platform_Name## DateTimePicker | Syncfusion
+description: Render Syncfusion ##Platform_Name## DateTimePickerFor by passing a value from the model and retrieve the selected date during form submission on the server.
 platform: ej2-asp-core-mvc
 control: Datetimepicker For Core
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Render DateTimePickerFor
+# How to render DateTimePickerFor in ##Platform_Name## DateTimePicker
 
 The DateTimePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

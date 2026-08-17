@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Avatar Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Avatar | Syncfusion
+description: Get started with the Syncfusion ASP.NET MVC Avatar by adding the EJ2 MVC5 NuGet package and rendering avatars for users, initials, or icons.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Avatar Control
+# Getting Started with ##Platform_Name## Avatar
 
 This section explains about how to include [ASP.NET MVC Avatar](https://www.syncfusion.com/aspnet-mvc-ui-controls/avatar) control in your ASP.NET MVC application using Visual Studio.
 

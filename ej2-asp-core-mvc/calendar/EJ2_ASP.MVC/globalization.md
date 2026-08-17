@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Calendar Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Calendar | Syncfusion
+description: Localize the ASP.NET MVC Calendar to any culture using CLDR data, the locale property, and L10n text translations.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ##Platform_Name## Calendar Control
+# Globalization in ##Platform_Name## Calendar
 
 Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization) and also by adding cultural specific customizations and translating the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 

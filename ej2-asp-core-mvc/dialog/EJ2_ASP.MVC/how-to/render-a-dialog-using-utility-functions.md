@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render A Dialog Using Utility Functions in Syncfusion Dialog Component
-description: Learn here all about Render A Dialog Using Utility Functions in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: How to render a Dialog with utility functions in ASP.NET MVC Dialog | Syncfusion
+description: Render Syncfusion ASP.NET MVC Dialog alert and confirm dialogs with minimal code using built-in utility functions and configurable options.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Using Utility Functions
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Render a Dialog using utility functions
+# How to render a Dialog with utility functions in ASP.NET MVC Dialog
 
 The Dialog control provides built-in utility functions to render the alert and confirm dialogs with the minimal code. The following options are used as an argument on calling the utility functions:
 

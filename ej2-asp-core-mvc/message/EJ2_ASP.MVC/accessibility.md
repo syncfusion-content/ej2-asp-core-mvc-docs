@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about accessibility with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ASP.NET MVC Message | Syncfusion
+description: Syncfusion ASP.NET MVC Message follows WAI-ARIA roles for severity messages including Note, Info, Success, Warning, Error, and Close button support.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Message control
+# Accessibility in ASP.NET MVC Message
 
 The Message control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

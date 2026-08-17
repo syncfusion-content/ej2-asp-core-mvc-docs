@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Datetimepicker Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## DateTimePicker Component | Syncfusion
+description: Syncfusion ##Platform_Name## DateTimePicker is a graphical control that lets users select or enter a date and time with strict mode, range, format, mask, and globalization.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## DateTimePicker Component.
 
 The **DateTimePicker** is a graphical user interface control that allows to select a date and time value.
 

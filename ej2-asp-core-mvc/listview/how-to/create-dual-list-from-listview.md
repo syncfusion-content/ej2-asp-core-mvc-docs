@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create Dual List From ListView in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Create Dual List From ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to create a dual ListView in ##Platform_Name## | Syncfusion
+description: Build a dual Syncfusion ##Platform_Name## ListView picker that lets users move items between two lists with drag-drop and toolbar transfer buttons.
 platform: ej2-asp-core-mvc
 control: Create Dual List From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Dual List from ListView
+# How to create a dual ListView in ##Platform_Name##
 
 The dual list contains two ListView. This allows you to move list items from one list to another using the client-side events. This section explains how to integrate the ListView control to achieve dual list.
 

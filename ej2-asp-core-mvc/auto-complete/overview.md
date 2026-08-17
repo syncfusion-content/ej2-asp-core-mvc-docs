@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Auto Complete Component
+title: About Syncfusion ##Platform_Name## AutoComplete Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# About Syncfusion ##Platform_Name## AutoComplete Component.
 
 When the user types the input, the AutoComplete control provides the matched suggestion list from which the user can select one.
 

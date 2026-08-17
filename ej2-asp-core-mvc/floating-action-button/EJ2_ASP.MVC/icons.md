@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## FloatingActionButton Control | Syncfusion
+title: Icons in ASP.NET MVC FloatingActionButton | Syncfusion
 description: Learn here all about Icons in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons in Asp.Net MVC Floating Action Button Control
+# Icons in ASP.NET MVC FloatingActionButton
 
 You can customize the icon and text of Asp.Net MVC Floating Action Button(FAB) using [IconCss](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_IconCss) and [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Content) properties.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remote Data Bind in ##Platform_Name## Drop Down List Component | Syncfusion
-description: Learn here all about remote data bind in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to count remote data bound to ##Platform_Name## DropDownList | Syncfusion
+description: Get Syncfusion ##Platform_Name## DropDownList total item count from the actionComplete event result before rendering, and via getItems after rendering.
 platform: ej2-asp-core-mvc
 control: Remote Data Bind
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Get the total count of data when remote data bind with DropDownList
+# How to count remote data bound to ##Platform_Name## DropDownList
 
 Before control rendering, you can get the total items count by using [actionComplete](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionComplete) event with its result arguments. After rendering this control, you can get the total items count by using `getItems` method.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Check Box Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Check Box component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Checkbox Component | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## Checkbox with checked, unchecked, and indeterminate states, label support, and small size option.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Checkbox Component.
 
 The CheckBox is a graphical user interface element that allows you to select one or more options from the choices. It contains checked, unchecked, and indeterminate states.
 

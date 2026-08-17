@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Items Count In Group Header in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Show Items Count In Group Header in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to show items count in group header of ##Platform_Name## ListView | Syncfusion
+description: Show the Syncfusion ##Platform_Name## ListView grouped item count in each group header via groupTemplate counting visible items per category.
 platform: ej2-asp-core-mvc
 control: Show Items Count In Group Header
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show Items Count in Group Header
+# How to show items count in group header of ##Platform_Name## ListView
 
 The ListView control supports wrapping list items into a group based on the category. The category of each list item can be mapped with groupBy field of the data source. You can display grouped list items count in the list-header using the group header template. Refer to the following code sample to display grouped list item count.
 

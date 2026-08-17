@@ -1,16 +1,14 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Mention control | Syncfusion
-description: Learn here all about sorting the datasource in Syncfusion ASP.NET Core Mention control of Syncfusion Essential JS 2 and more.
+title: Sorting in ##Platform_Name## Mention | Syncfusion
+description: Sort Syncfusion ##Platform_Name## Mention suggestion list items alphabetically by setting the sortOrder property to Ascending, Descending, or None.
 platform: ej2-asp-core-mvc
 control: Sorting
 publishingplatform: aspnet-core
 documentation: ug
 ---
 
-# Sorting datasource in Mention 
-
-## Sort order type
+# Sorting in ##Platform_Name## Mention
 
 You can display the suggestion list items in a specific order. It has possible types as `Ascending`, `Descending`, and `None` in the [sortOrder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_SortOrder) property.
 

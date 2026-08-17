@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Floating Action Button Control
+# Getting Started with ASP.NET MVC FloatingActionButton
 
 This section briefly explains how to include the [ASP.NET MVC Floating Action Button] control in an ASP.NET MVC application using Visual Studio.
 

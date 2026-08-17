@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Multi Select | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## MultiSelect Component | Syncfusion
+description: Syncfusion ##Platform_Name## MultiSelect renders a multi-selectable list from local or remote data with chip tags, filtering, grouping, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ##Platform_Name## Multi Select Control
+# About Syncfusion ##Platform_Name## MultiSelect Component.
 
 The MultiSelect control contains a list of predefined values from which a multiple value can be chosen. The functionality of MultiSelect resembles the SELECT form element of HTML.
 

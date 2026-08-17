@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Time Format in ##Platform_Name## Datetimepicker Component | Syncfusion
-description: Learn here all about Date Time Format in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: DateTime Format in ##Platform_Name## DateTimePicker | Syncfusion
+description: Set a custom DateTime format on Syncfusion ##Platform_Name## DateTimePicker using the format property, with patterns common across all cultures once defined.
 platform: ej2-asp-core-mvc
 control: Date Time Format
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# DateTime Format
+# DateTime Format in ##Platform_Name## DateTimePicker
 
 DateTime format is a way of representing the date and time value in different string format in textbox.
 

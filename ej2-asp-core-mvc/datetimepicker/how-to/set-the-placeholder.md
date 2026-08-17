@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set The Placeholder in ##Platform_Name## Datetimepicker Component
-description: Learn here all about how to set the Placeholder in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: How to set placeholder in ##Platform_Name## DateTimePicker | Syncfusion
+description: Set a short hint in the Syncfusion ##Platform_Name## DateTimePicker input using the placeholder property to guide users before they type a value.
 platform: ej2-asp-core-mvc
 control: Set The Placeholder
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the placeholder
+# How to set placeholder in ##Platform_Name## DateTimePicker
 
 The following example demonstrates how to set `placeholder` in the DateTimePicker control. Using [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Placeholder) you can display a short hint in the input element.
 

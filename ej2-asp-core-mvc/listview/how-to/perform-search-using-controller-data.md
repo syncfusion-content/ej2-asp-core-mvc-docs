@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Perform Search Using Controller Data in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to search ##Platform_Name## ListView with controller data | Syncfusion
+description: Search Syncfusion ##Platform_Name## ListView items through an ASP.NET MVC controller by sending a TextBox keyup query and filtering with Linq or DataManager.
 platform: ej2-asp-core-mvc
 control: Perform Search Using Controller Data
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Perform Search Operation in ListView with Controller data
+# How to search ##Platform_Name## ListView with controller data
 
 In ASP .Net Core environment, we can fetch the data from controller using adaptors and the fetched data can be appended to any Controls.
 

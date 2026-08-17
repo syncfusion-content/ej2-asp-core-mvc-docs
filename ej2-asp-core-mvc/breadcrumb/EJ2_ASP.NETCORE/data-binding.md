@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## Breadcrumb | Syncfusion
+description: Bind Breadcrumb items from local JSON or remote data sources in ASP.NET Core using url and text fields for navigation links.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in Breadcrumb Control
+# Data Binding in ##Platform_Name## Breadcrumb
 
 ## Items as tag directive
 

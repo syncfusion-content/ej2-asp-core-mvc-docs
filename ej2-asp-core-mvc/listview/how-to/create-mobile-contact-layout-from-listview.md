@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Contact Layout From ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Create Mobile Contact Layout From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
+title: How to create mobile contact layout in ##Platform_Name## ListView | Syncfusion
+description: Build a Syncfusion ##Platform_Name## ListView mobile contact layout with avatar, name, and detail rows using template and groupBy fields.
 platform: ej2-asp-core-mvc
 control: Create Mobile Contact Layout From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Mobile contact layout from ListView
+# How to create mobile contact layout in ##Platform_Name## ListView
 
 You can customize the ListView using the [template](https://ej2.syncfusion.com/documentation/api/list-view/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
 

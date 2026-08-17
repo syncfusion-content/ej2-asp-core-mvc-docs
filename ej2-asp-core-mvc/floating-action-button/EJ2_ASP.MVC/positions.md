@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Positions in ##Platform_Name## FloatingActionButton Control | Syncfusion
+title: Positions in ASP.NET MVC FloatingActionButton | Syncfusion
 description: Learn here all about Positions in Syncfusion ##Platform_Name## FloatingActionButton control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Positions
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positions in Asp.Net MVC Floating Action Button Control
+# Positions in ASP.NET MVC FloatingActionButton
 
 The floating action button can be positioned anywhere on the [Target](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Target) using the [Position](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.Fab.html#Syncfusion_EJ2_Buttons_Fab_Position) property. If the `Target` is not defined, then FAB is positioned based on the browser viewport.
 

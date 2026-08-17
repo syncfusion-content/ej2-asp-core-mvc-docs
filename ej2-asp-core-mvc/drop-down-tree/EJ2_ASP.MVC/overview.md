@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down Tree Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET MVC DropdownTree Component | Syncfusion
+description: Syncfusion ASP.NET MVC DropdownTree is a hierarchical control that lets users select single or multiple values from tree-structured data with checkboxes, templates, and sorting.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview
+# About Syncfusion ASP.NET MVC DropdownTree Component.
 
 The Dropdown Tree control allows you to select single or multiple values from the hierarchical data in a tree-like structure. It has several out-of-the-box features, such as data binding, check boxes, templates, UI customization, accessibility, and pre-selected values. The available key features are
 

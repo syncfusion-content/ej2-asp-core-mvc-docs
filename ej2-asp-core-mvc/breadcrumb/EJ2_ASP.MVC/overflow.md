@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overflow in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Overflow in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Overflow in ##Platform_Name## Breadcrumb | Syncfusion
+description: Handle Breadcrumb overflow in ASP.NET MVC by collapsing middle items into a popup when the trail does not fit the available width.
 platform: ej2-asp-core-mvc
 control: Overflow
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overflow Mode in breadcrumb
+# Overflow in ##Platform_Name## Breadcrumb
 
 ## Overflow Mode
 

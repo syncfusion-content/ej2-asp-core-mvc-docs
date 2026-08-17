@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Client Side Validation in Syncfusion ##Platform_Name## Datepicker
-description: Learn here all about Client Side Validation in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: How to validate client-side in ##Platform_Name## DatePicker | Syncfusion
+description: Add client-side validation to Syncfusion ##Platform_Name## DatePicker with the Essential JS 2 FormValidator by mapping the name attribute to a rule.
 platform: ej2-asp-core-mvc
 control: Client Side Validation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Client side validation
+# How to validate client-side in ##Platform_Name## DatePicker
 
 To achieve the client side validation in a DatePicker control by using [Essential JavaScript 2 FormValidator](https://helpej2.syncfusion.com/documentation/form-validator/). It provides an option to customize the feedback error messages to the corresponding fields to take action to resolve the issue.
 

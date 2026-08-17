@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Datetimepicker Component
-description: Learn here all about customization in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DateTimePicker | Syncfusion
+description: Customize Syncfusion ##Platform_Name## DateTimePicker appearance with the cssClass property, the renderDayCell event, and other available properties and events.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ##Platform_Name## DateTimePicker
 
 The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
 

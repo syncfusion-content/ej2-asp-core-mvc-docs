@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## In Place Editor Component
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## InplaceEditor | Syncfusion
+description: Bind Syncfusion ##Platform_Name## InplaceEditor to local arrays or remote data services using the dataSource property with DataManager, OData, and Web API adaptors.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding
+# Data Binding in ##Platform_Name## InplaceEditor
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls load the data either from local data sources or remote data services using the `dataSource` property and it supports the data type of an array or `DataManager`. Also supports different kind of data services such as OData, OData V4, Web API, and data formats such as XML, JSON, JSONP with the help of `DataManager` adaptors.
 

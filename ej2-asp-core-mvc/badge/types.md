@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types in ##Platform_Name## Badge Control | Syncfusion
+title: Types in ##Platform_Name## Badge | Syncfusion
 description: Learn here all about types in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Types
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Types in ##Platform_Name## Badge Control
+# Types in ##Platform_Name## Badge
 
 This section explains different styles and types of the Badges.
 

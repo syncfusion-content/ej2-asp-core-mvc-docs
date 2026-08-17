@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Drop Down Button Component
-description: Learn here all about overview in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## DropDownButton Component | Syncfusion
+description: Syncfusion ##Platform_Name## DropDownButton toggles contextual overlays with text and images, plus popup items, icons, templates, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## DropDownButton Component.
 
 DropDownButton component is used to toggle contextual overlays for displaying list of action items. It can contain both text and images.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Datepicker Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## DatePicker | Syncfusion
+description: Globalize Syncfusion ##Platform_Name## DatePicker with the locale property and loadCldr to format and parse dates for any culture.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ASP.NET CORE Datepicker Control
+# Globalization in ##Platform_Name## DatePicker
 
 Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](../common/internationalization) and also by adding cultural specific customizations and translating the text [`localization`](../common/localization).
 

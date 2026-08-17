@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prevent The Focus On The First Element in ##Platform_Name## Dialog Component
-description: Learn here all about Prevent The Focus On The First Element in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: How to prevent focus on the first element in ASP.NET MVC Dialog | Syncfusion
+description: Prevent the Syncfusion ASP.NET MVC Dialog from auto-focusing the first content element by enabling the preventFocus argument in the open event.
 platform: ej2-asp-core-mvc
 control: Prevent The Focus On The First Element
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Prevent the focus on the first element
+# How to prevent focus on the first element in ASP.NET MVC Dialog
 
 By default, the dialog focuses on the first elements of the content area which can be active and focusable. You can prevent this default focusing behavior using the [`Open`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_Open) event and by enabling the `preventFocus` argument.
 

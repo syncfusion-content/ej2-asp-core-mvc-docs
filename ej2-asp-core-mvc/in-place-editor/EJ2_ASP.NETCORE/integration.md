@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Integrate HTML5 controls (Template)
+# Integration in ##Platform_Name## InplaceEditor
 
 The In-place Editor supports adding HTML5 input controls using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Template) property. The `template` property can be given as either a `string` or a `query selector`.
 

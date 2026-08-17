@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Accordion Component
+title: About Syncfusion ##Platform_Name## Accordion Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Accordion Component.
 
 The Accordion is a vertically collapsible content panel that displays one or more panels at a time within the available space.
 

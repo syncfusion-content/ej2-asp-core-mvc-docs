@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Multi Select Component
-description: Learn here all about Grouping in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## MultiSelect | Syncfusion
+description: Group Syncfusion ##Platform_Name## MultiSelect items by category using the groupBy field, with inline or fixed group headers rendered via groupTemplate.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about icons with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Icons in ASP.NET MVC Message | Syncfusion
+description: Configure Syncfusion ASP.NET MVC Message icons by hiding the default or close buttons and adding custom severity icons via the showIcon and showCloseIcon properties.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons in Message control
+# Icons in ASP.NET MVC Message
 
 This section explains the message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
 

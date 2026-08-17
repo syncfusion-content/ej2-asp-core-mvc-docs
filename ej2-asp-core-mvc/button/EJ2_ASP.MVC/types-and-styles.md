@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Types And Styles in ##Platform_Name## Button Component | Syncfusion
-description: Learn here all about Types And Styles in Syncfusion ##Platform_Name## Button component of Syncfusion Essential JS 2 and more.
+title: Types and Styles in ##Platform_Name## Button | Syncfusion
+description: Apply predefined visual styles and types to the ASP.NET MVC Button using the cssClass property, including basic and flat variants.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Types and Styles in Button Control
+# Types and Styles in ##Platform_Name## Button
 
 This section explains the different styles and types of Buttons.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Style and Appearance in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Checkbox | Syncfusion
+description: Override the ASP.NET Core Checkbox CSS classes to restyle the frame, label, hover, and checked states for a custom theme.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearances
+# Style in ##Platform_Name## Checkbox
 
 To modify the CheckBox appearance, you need to override the default CSS of CheckBox control. Find the list of CSS classes and its corresponding section in CheckBox. Also, you have an option to create your own custom theme for the controls using our [Theme Studio](https://ej2.syncfusion.com/themestudio/?theme=material).
 

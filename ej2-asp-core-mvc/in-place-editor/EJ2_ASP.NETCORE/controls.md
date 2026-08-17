@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Controls in ##Platform_Name## In Place Editor Component
-description: Learn here all about Controls in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: List of Controls in ##Platform_Name## InplaceEditor | Syncfusion
+description: Discover Syncfusion ##Platform_Name## InplaceEditor built-in and injectable controls (TextBox, DatePicker, DropDownList, AutoComplete) using the type property for inline editing.
 platform: ej2-asp-core-mvc
 control: Controls
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# List of controls
+# List of Controls in ##Platform_Name## InplaceEditor
 
 In-place Editor renders various controls based on the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Type) property and it have built-in and injectable controls. To use injectable controls, inject the required modules into `InPlaceEditor`. By default, the `type` property set to `Text` and render the `TextBox`.
 

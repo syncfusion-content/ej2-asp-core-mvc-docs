@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Maskedtextbox | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## MaskedTextBox Component | Syncfusion
+description: Syncfusion ##Platform_Name## MaskedTextBox validates user input against a configurable mask template using standard elements, custom prompts, and float-label UI.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Maskedtextbox Control
+# About Syncfusion ##Platform_Name## MaskedTextBox Component.
 
 The **MaskedTextBox** allows the user to enter the valid input based on the provided mask only.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Icon And Width in ##Platform_Name## Drop Down Button Component
-description: Learn here all about how to customize icon and width in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: How to customize icon and width in ##Platform_Name## DropDownButton | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## DropDownButton icon and width by setting the iconPosition, width, and a custom CSS class via cssClass.
 platform: ej2-asp-core-mvc
 control: Customize Icon And Width
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize icon and width
+# How to customize icon and width in ##Platform_Name## DropDownButton
 
 Width of the DropDownButton can be customized by setting required width to the dropdown element.
 

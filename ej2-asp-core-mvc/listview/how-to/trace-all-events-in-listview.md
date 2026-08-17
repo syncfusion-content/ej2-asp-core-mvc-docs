@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Trace All Events In ListView in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Trace All Events In ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to trace all events in ##Platform_Name## ListView | Syncfusion
+description: Trace Syncfusion ##Platform_Name## ListView events by binding actionBegin, actionComplete, actionFailure, and selectedItem callbacks to console.log.
 platform: ej2-asp-core-mvc
 control: Trace All Events In ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Trace all events in ListView
+# How to trace all events in ##Platform_Name## ListView
 
 The ListView control triggers events based on its actions. The events can be used as extension points to perform custom operations. Refer to the following steps to trace the ListView events:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: How to open ImageEditor in Dialog in ##Platform_Name## | Syncfusion
+description: Open Syncfusion ##Platform_Name## ImageEditor inside a Dialog by combining ej2-dialog and ej2-image-editor to edit previewed uploaded images.
 platform: ej2-asp-core-mvc
 control: Dialog 
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Label And Size in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Label And Size in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Label and Size in ##Platform_Name## Checkbox | Syncfusion
+description: Set the ##Platform_Name## Checkbox caption with the Label property, choose before or after LabelPosition, and switch to small size with e-small.
 platform: ej2-asp-core-mvc
 control: Label And Size
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Label and Size in Check Box Control
+# Label and Size in ##Platform_Name## Checkbox
 
 This section explains the different sizes and labels.
 

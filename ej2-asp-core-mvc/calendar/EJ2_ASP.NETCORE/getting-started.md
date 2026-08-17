@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Calendar Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Calendar control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Calendar | Syncfusion
+description: Add the Syncfusion ASP.NET Core Calendar to a Razor Pages app by installing Calendars and Themes NuGet packages.
 platform: ej2-asp-core-mvc
 control: Calendar
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Calendar Control
+# Getting Started with ##Platform_Name## Calendar
 
 This section briefly explains how to include the [ASP.NET Core Calendar](https://www.syncfusion.com/aspnet-core-ui-controls/calendar) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

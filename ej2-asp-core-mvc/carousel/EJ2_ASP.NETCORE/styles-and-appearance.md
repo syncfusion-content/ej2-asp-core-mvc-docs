@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Carousel Component | Syncfusion
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Carousel component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Carousel | Syncfusion
+description: Override the ASP.NET Core Carousel CSS classes to restyle slides, indicators, navigators, and the partial-slide container for custom themes.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

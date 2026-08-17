@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mention Filtering in ASP.NET MVC Mention control | Syncfusion
-description: Learn here all about mention filtering in Syncfusion ASP.NET MVC Mention control of Syncfusion Essential JS 2 and more.
+title: Mention Filtering in ASP.NET MVC Mention | Syncfusion
+description: Filter Syncfusion ASP.NET MVC Mention suggestion list items by query or startsWith mode as the user types the trigger character into the input element.
 platform: ej2-asp-core-mvc
 control: Mention Filtering
 publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Filtering data in Mention
+# Filtering Data in ASP.NET MVC Mention
 
 The Mention control has built-in support to filter data items. The filter operation starts as soon as you start typing characters in the mention element.
 

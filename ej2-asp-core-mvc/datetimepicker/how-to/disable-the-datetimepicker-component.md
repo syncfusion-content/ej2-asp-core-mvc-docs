@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable The Datetimepicker Component in ##Platform_Name## Datetimepicker Component
-description: Learn here all about disable the Datetimepicker component in Syncfusion ##Platform_Name## Datetimepicker component of syncfusion and more.
+title: How to disable DateTimePicker in ##Platform_Name## DateTimePicker | Syncfusion
+description: Disable Syncfusion ##Platform_Name## DateTimePicker by setting the enabled property to false so users cannot interact with the input.
 platform: ej2-asp-core-mvc
 control: Disable The Datetimepicker Component
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Disable the component
+# How to disable DateTimePicker in ##Platform_Name## DateTimePicker
 
 To disable the DateTimePicker, use its [enable](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#Syncfusion_EJ2_Calendars_DateTimePicker_Enabled) property to `false`.
 

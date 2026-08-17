@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Chips Control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Chips control of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Chips | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Chips with styles, leading icons, avatars, and trailing icons to match your app's design.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chips Customization in Chips Control
+# Customization in ##Platform_Name## Chips
 
 This section explains the customization of styles, leading icons, avatars, and trailing icons in the Chips control.
 

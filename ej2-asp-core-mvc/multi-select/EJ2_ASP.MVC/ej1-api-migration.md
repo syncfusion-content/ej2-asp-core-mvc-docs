@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Multi Select Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ASP.NET MVC MultiSelect | Syncfusion
+description: Migrate Syncfusion EJ1 ASP.NET MVC MultiSelect to EJ2 by mapping tag prefix, namespaces, and APIs from ejMultiselect to ej2-multiselect.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ASP.NET MVC MultiSelect
 
 This article describes the API migration process of multiselect component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

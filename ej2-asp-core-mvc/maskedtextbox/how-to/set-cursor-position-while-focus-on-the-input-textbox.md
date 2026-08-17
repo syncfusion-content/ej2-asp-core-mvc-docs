@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set Cursor Position While Focus On The Input Textbox in ##Platform_Name## Maskedtextbox Component
-description: Learn here all about Set Cursor Position While Focus On The Input Textbox in Syncfusion ##Platform_Name## Maskedtextbox component of syncfusion and more.
+title: How to set cursor position in ##Platform_Name## MaskedTextBox on focus | Syncfusion
+description: Customize Syncfusion ##Platform_Name## MaskedTextBox cursor placement on focus by handling the focus event and selecting text within the input element.
 platform: ej2-asp-core-mvc
 control: Set Cursor Position While Focus On The Input Textbox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Set cursor position while focus on the input textbox
+# How to set cursor position in ##Platform_Name## MaskedTextBox on focus
 
 By default, on focusing the MaskedTextBox the entire mask gets selected. You can customize by using any one of the following methods:
 

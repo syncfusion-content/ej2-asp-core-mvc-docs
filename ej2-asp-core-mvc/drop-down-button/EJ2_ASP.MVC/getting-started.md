@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownButton | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## DropDownButton control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC DropDownButton | Syncfusion
+description: Get started with the Syncfusion ASP.NET MVC DropDownButton control in an MVC application using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DropDownButton Control
+# Getting Started with ASP.NET MVC DropDownButton
 
 This section briefly explains how to include the [ASP.NET MVC DropDownButton](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-menu) control in an ASP.NET MVC application using Visual Studio.
 

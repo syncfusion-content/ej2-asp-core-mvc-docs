@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Button Group | Syncfusion
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Button Group component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Button Group | Syncfusion
+description: Customize ASP.NET MVC Button Group visuals by overriding .e-btn CSS classes for hover, focus, and active states.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearances
+# Style and Appearance in ##Platform_Name## Button Group
 
 To modify the ButtonGroup appearance, you need to override the default CSS of ButtonGroup component. Find the list of CSS classes and its corresponding section in ButtonGroup. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

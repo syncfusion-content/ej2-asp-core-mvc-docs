@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Breadcrumb Component
-description: Learn here all about Icons in Syncfusion ##Platform_Name## Breadcrumb component of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## Breadcrumb | Syncfusion
+description: Add icons to Breadcrumb items in ASP.NET MVC using the iconCss property to show home, folder, or custom icons next to each item.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons
+# Icons in ##Platform_Name## Breadcrumb
 
 The Breadcrumb contains an icon/image to provide a visual representation of an item.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Color Picker Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Color Picker component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Color Picker Component | Syncfusion
+description: Syncfusion ##Platform_Name## Color Picker lets users pick colors by selecting values or adjusting hue and opacity, with RGB, HSV, and Hex support.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Color Picker Component.
 
 The ColorPicker is a user interface that lets user to pick a color either by selecting the color values or by adjusting the hue and opacity. It supports various color specifications like RGB (Red, Green, and Blue), HSV (Hue, Saturation, and Value), and Hex codes.
 

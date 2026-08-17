@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Cascading in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: How to configure cascading in ##Platform_Name## ComboBox | Syncfusion
+description: Build cascading Syncfusion ##Platform_Name## ComboBoxes where the child dropdown filters its data based on the parent selection using the change event.
 platform: ej2-asp-core-mvc
 control: Cascading
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Configure the Cascading ComboBox
+# How to configure cascading in ##Platform_Name## ComboBox
 
 The cascading ComboBox is a series of ComboBox, where the value of one ComboBox depends upon another's value. This can be configured by using the [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_Change) event of the parent ComboBox. Within that change event handler, data has to be loaded to the child ComboBox based on the selected value of the parent ComboBox.
 

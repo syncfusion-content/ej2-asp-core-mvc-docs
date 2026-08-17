@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Dialog Component
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Animation in ASP.NET MVC Dialog | Syncfusion
+description: Animate the Syncfusion ASP.NET MVC Dialog during open and close actions with configurable delay, duration, and effect via the AnimationSettings property.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Animation
+# Animation in ASP.NET MVC Dialog
 
 The Dialog can be animated during the open and close actions. Also, user can customize animation's [`delay`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Delay), [`duration`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Duration) and [`effect`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.DialogAnimationSettings.html#Syncfusion_EJ2_Popups_DialogAnimationSettings_Effect).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize The Daterangepicker Day Header in ##Platform_Name## Daterangepicker Component
-description: Learn here all about how to customize the Daterangepicker day header in Syncfusion ##Platform_Name## Daterangepicker component of syncfusion and more.
+title: How to customize day header in ##Platform_Name## DateRangePicker | Syncfusion
+description: Change the day header format in Syncfusion ##Platform_Name## DateRangePicker using the dayHeaderFormat property, with options like Short, Narrow, and Abbreviated.
 platform: ej2-asp-core-mvc
 control: Customize The Daterangepicker Day Header
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize the daterangepicker day header
+# How to customize day header in ##Platform_Name## DateRangePicker
 
 You can change the format of the day that has to be displayed in header using [dayHeaderFormat](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_DayHeaderFormat) property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Spinner until items loaded in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Display Spinner Until list items Are Loaded in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
+title: How to show spinner until items load in ##Platform_Name## ListView | Syncfusion
+description: Display a Syncfusion ##Platform_Name## ListView loading spinner while remote data loads by binding showSpinner and actionBegin to a Spinner component.
 platform: ej2-asp-core-mvc
 control: Display Spinner Until list items Are Loaded
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Display spinner until list items are loaded
+# How to show spinner until items load in ##Platform_Name## ListView
 
 The features of the ListView control such as remote data-binding take more time to fetch data from corresponding dataSource/remote URL. In this case, you can use EJ2
 [Spinner](https://ej2.syncfusion.com/aspnetcore/documentation/spinner/) to enhance the appearance of the UI. This section explains how to load a spinner control to groom the appearance.

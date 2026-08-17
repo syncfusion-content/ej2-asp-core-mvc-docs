@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Badge control | Syncfusion
+title: About Syncfusion ##Platform_Name## Badge Component | Syncfusion
 description: Learn here all about Overview in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Index
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Badge Component.
 
 Badges can be used to alert users about new or unread messages, notifications, and additional information to the content. This can be used in conjunction with lists to represent each list’s timeline such as ‘new’, ‘old’, and ‘preview’.
 
