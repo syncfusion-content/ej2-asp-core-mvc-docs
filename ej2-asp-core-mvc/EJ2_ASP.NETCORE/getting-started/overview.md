@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with Essential<sup style="font-size:70%">&reg;</sup> JS 2 in ASP.NET Core
+# Getting Started with Essential JS 2 in ASP.NET Core
 
 This document illustrates how to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 web application in an ASP.NET Core.
 

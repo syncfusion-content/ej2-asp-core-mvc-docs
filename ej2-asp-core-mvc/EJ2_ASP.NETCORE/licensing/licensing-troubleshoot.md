@@ -47,7 +47,7 @@ If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> a
 
 If you are using [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts as follows,
 
-N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Components.
+N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Components.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" hl_lines="3" %}
