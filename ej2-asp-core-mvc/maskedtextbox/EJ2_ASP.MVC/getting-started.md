@@ -109,7 +109,7 @@ The following example demonstrates the usage of mask element `0` that allows any
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC MaskedTextBox with Mask Inputs](images/mask.png)
+![ASP.NET MVC MaskedTextBox with Mask Inputs](images/mask.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/MaskedTextBox/ASP.NET%20MVC%20Razor%20Examples).
 

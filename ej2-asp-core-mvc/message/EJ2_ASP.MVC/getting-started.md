@@ -94,4 +94,4 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Messag
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Message control will be rendered in the default web browser.
 
-![ASP.NET MVC Message Control](images/message-default.png)
+![ASP.NET MVC Message Control](images/message-default.webp)

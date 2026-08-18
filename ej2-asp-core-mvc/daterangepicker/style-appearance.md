@@ -170,4 +170,4 @@ The DateRangePicker full-screen mode feature enables users to view the popup ele
 ```
 {% endif %}
 ![DateRangePickerDefaultFullScreen](./images/DateRangePickerDefaultFullScreen.gif)
-![DateRangePickerPresetsFullScreen](./images/DateRangePickerrPresetsFullScreen.gif)
+![DateRangePickerPresetsFullScreen](./images/DateRangePickerPresetsFullScreen.gif)

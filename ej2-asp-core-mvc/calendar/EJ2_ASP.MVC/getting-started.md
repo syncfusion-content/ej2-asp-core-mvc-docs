@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calend
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Calendar control will be rendered in the default web browser.
 
-![ASP.NET MVC Calendar Control](images/calendar-control.png)
+![ASP.NET MVC Calendar Control](images/calendar-control.webp)
 
 ## Setting the value within min and max dates
 
@@ -109,7 +109,7 @@ Here, the Calendar allows selecting a date within the range from the 5th to the 
 {% endhighlight %}
 {% endtabs %}
 
-![Specific Min and Max Date Selection in ASP.NET MVC Calendar](images/calendar-with-min-and-max-dates.png)
+![Specific Min and Max Date Selection in ASP.NET MVC Calendar](images/calendar-with-min-and-max-dates.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Calendar/ASP.NET%20MVC%20Razor%20Examples).
 

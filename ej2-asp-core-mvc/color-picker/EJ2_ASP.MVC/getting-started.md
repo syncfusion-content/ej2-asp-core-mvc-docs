@@ -94,7 +94,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ColorP
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ColorPicker control will be rendered in the default web browser.
 
-![ASP.NET MVC ColorPicker Control](images/color-picker.png)
+![ASP.NET MVC ColorPicker Control](images/color-picker.webp)
 
 ## Inline type
 
@@ -108,7 +108,7 @@ The following sample shows the inline type rendering of ColorPicker.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.png)
+![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.webp)
 
 N> The [ShowButtons](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ShowButtons) property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [showButtons](./how-to/hide-control-buttons) document.
 

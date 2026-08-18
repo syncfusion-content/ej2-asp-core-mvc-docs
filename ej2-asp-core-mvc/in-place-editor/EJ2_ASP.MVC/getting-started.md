@@ -110,7 +110,7 @@ By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tex
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.png)
+![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.webp)
 
 ## Configuring DropDownList
 
@@ -127,7 +127,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.png)
+![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.webp)
 
 ## Integrate DatePicker
 
@@ -144,7 +144,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.png)
+![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.webp)
 
 In the following sample, type and model values are configured to render the TextBox, DropDownList and DatePicker control.
 
@@ -184,7 +184,7 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.png)
+![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/InPlaceEditor/ASP.NET%20MVC%20Razor%20Examples).
 

@@ -94,7 +94,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Mentio
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Mention control will be rendered in the default web browser.
 
-![ASP.NET MVC Mention control](./images/mention-control.png)
+![ASP.NET MVC Mention control](./images/mention-control.webp)
 
 ## Binding data source
 

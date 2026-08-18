@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Floati
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Floating Action Button control will be rendered in the default web browser.
 
-![ASP.NET MVC Floating Action Button Control](images/default.png)
+![ASP.NET MVC Floating Action Button Control](images/default.webp)
 
 ## Click event in Floating Action Button
 

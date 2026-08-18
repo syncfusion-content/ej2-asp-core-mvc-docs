@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DropDo
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DropDownTree control will be rendered in the default web browser.
 
-![ASP.NET MVC DropDownTree Control](images/dropdowntree-control.png)
+![ASP.NET MVC DropDownTree Control](images/dropdowntree-control.webp)
 
 ## Binding data source
 

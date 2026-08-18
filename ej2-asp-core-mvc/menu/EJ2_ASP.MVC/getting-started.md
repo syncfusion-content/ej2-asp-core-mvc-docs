@@ -150,7 +150,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Menu control will be rendered in the default web browser.
 
-![ASP.NET MVC Menu Control](images/menu.png)
+![ASP.NET MVC Menu Control](images/menu.webp)
 
 N> This example demonstrates the basic rendering of Menu with items support. For more information about data source support, refer to the [Data Source Binding](./data-source-binding-and-custom-menu-items#data-binding) section.
 
@@ -220,7 +220,7 @@ public ActionResult Index()
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Menu with Separator](images/menu-with-separator.png)
+![ASP.NET MVC Menu with Separator](images/menu-with-separator.webp)
 
 N> The `separator` property should not be given along with the other fields in the `MenuItem`. You can also enable the separator to group **horizontal** menu items.
 

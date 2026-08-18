@@ -92,4 +92,4 @@ The following example shows the message which renders without any script referen
 {% endhighlight %}
 {% endtabs %}
 
-![Message Control](images/message-default.png)
+![Message Control](images/message-default.webp)

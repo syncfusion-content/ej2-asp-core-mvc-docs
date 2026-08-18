@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open a Dialog on DropDownButton Item Click in ##Platform_Name## | Syncfusion
+title: Dialog on DropDownButton Click in ##Platform_Name## | Syncfusion
 description: Open a Syncfusion Dialog on Syncfusion ##Platform_Name## DropDownButton popup item click by handling dialog open in the select event of the DropDownButton.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Popup Item Click

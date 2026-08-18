@@ -26,7 +26,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/daterangepicker/customization/daycell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,7 +36,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/daterangepicker/customization/daycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

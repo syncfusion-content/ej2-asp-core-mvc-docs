@@ -98,7 +98,7 @@ To create simple ButtonGroup add the div tag with class name as `e-btn-group` an
 
 Output be like the below.
 
-![ButtonGroup Sample](./images/button-group.png)
+![ButtonGroup Sample](./images/button-group.webp)
 
 ## Run the application
 

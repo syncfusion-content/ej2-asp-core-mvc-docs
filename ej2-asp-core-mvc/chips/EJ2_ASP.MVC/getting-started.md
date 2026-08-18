@@ -96,6 +96,6 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips 
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Chips control will be rendered in the default web browser.
 
-![ASP.NET MVC Chips Control](images/chip.png)
+![ASP.NET MVC Chips Control](images/chip.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/Chip/ASP.NET%20MVC%20Razor%20Examples).

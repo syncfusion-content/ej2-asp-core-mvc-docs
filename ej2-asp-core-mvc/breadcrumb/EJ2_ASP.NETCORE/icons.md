@@ -36,7 +36,8 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -168,7 +169,8 @@ To show icon only for the first item in the Breadcrumb component, add icons to t
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ![Displaying Icon for First Time in ASP.NET Core Breadcrumb](images/items.PNG)
