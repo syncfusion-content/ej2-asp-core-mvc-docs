@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Extend and Customize ASP.NET Core Controls | Syncfusion
-description: CLearn how to extend and customize Syncfusion ##Platform_Name## controls using Tag Helpers, view components, and reusable component patterns.
+description: Learn how to extend and customize Syncfusion ##Platform_Name## controls using Tag Helpers, view components, and reusable component patterns.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
@@ -14,11 +14,11 @@ The ASP.NET Core provides the support to extend a component or customize it with
 
 ## Extend Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls can extend and customize the logic by creating a new [tag helper component](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/th-components?view=aspnetcore-6.0).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls can extend and customize the logic by creating a new [tag helper component](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/th-components?view=aspnetcore-6.0).
 
 1.Right-click on the `~/Pages` folder in the Visual Studio and select `Add -> New Item -> Class` to create a new tag helper component (SyncButton.cs).
 
-2.Inherit any Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control and use [HtmlTargetElement](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/th-components?view=aspnetcore-6.0#create-a-component) to create tag helper component. Render your component based on your logic with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core API.
+2.Inherit any Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control and use [HtmlTargetElement](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/th-components?view=aspnetcore-6.0#create-a-component) to create tag helper component. Render your component based on your logic with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core API.
 
 {% tabs %}
 {% highlight c# tabtitle="~/SyncButton.cs" %}
@@ -108,7 +108,7 @@ N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-ex
 
 ## Use Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Control within Another view component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control can be implemented within another [view component](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-6.0#view-components).
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control can be implemented within another [view component](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/view-components?view=aspnetcore-6.0#view-components).
 
 1.Create a folder with component name `TodoList` in `~/Pages/Shared/Components` and add the `Default.cshtml` razor view in `~/Components/TodoList` like below.
 
@@ -207,7 +207,7 @@ namespace ASPCORE.Pages
 {% endhighlight %}
 {% endtabs %}
 
-![Render Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core control inside another view component](images/todolist.gif)
+![Render Syncfusion ASP.NET Core control inside another view component](images/todolist.gif)
 
 N> [View sample in GitHub](https://github.com/SyncfusionExamples/asp-net-core-view-component)
 

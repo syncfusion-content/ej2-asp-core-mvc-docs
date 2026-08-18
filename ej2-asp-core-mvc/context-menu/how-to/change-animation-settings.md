@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Animation Settings in ##Platform_Name## Context Menu Component | Syncfusion
+title: Change Animation Settings in ##Platform_Name## Context Menu | Syncfusion
 description: Learn here all about how to change Animation Settings in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Change Animation Settings
@@ -10,7 +10,7 @@ documentation: ug
 
 # Change animation settings
 
-To change the animation of the ContextMenu, [`animationSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ContextMenu~AnimationSettings.html) property is used. The supported effects for ContextMenu are,
+To change the animation of the ContextMenu, [`animationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_AnimationSettings) property is used. The supported effects for ContextMenu are,
 
 | Effect | Functionality |
 | ------------ | ----------------------- |

@@ -17,14 +17,16 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC library support
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/tagHelper %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/common/persistence/razor %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ## State Persistence Supported controls and Properties
@@ -38,7 +40,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 <td><b>Properties</b></td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/state-persistence">Grid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/grid/state-management" aria-label="Grid state persistence">Grid</a></td>
 <td>
 <ul>
 <li>Columns</li>
@@ -60,7 +62,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/tab/how-to/set-state-persistence-of-the-tab-component">Tabs</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/tab/how-to/set-state-persistence-of-the-tab-component" aria-label="Tabs state persistence">Tabs</a></td>
 <td>
 <ul>
 <li>selectedItem</li>
@@ -68,7 +70,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/schedule/state-persistence">Schedule</a></td>
+<td><a href="https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/schedule/state-persistence" aria-label="Schedule state persistence">Schedule</a></td>
 <td>
 <ul>
 <li>currentView</li>
@@ -79,7 +81,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/kanban/persistence">Kanban</a></td>
+<td><a href="https://help.syncfusion.com/gantt-sdk/asp-net-mvc/kanban/persistence" aria-label="Kanban state persistence">Kanban</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -98,7 +100,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/maps/state-persistence">Maps</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/maps/state-persistence" aria-label="Maps state persistence">Maps</a></td>
 <td>
 <ul>
 <li>zoomSettings</li>
@@ -106,7 +108,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/state-persistence">Pivot Table</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/state-persistence" aria-label="Pivot Table state persistence">Pivot Table</a></td>
 <td>
 <ul>
 <li>dataSourceSettings</li>
@@ -118,7 +120,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/state-persistence">TreeGrid</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/tree-grid/state-persistence" aria-label="TreeGrid state persistence">TreeGrid</a></td>
 <td>
 <ul>
 <li>columns</li>
@@ -172,7 +174,7 @@ The following table demonstrates the list of Syncfusion<sup style="font-size:70%
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/how-to/state-persistence">QueryBuilder</a></td>
+<td><a href="https://ej2.syncfusion.com/aspnetmvc/documentation/query-builder/how-to/state-persistence" aria-label="QueryBuilder state persistence">QueryBuilder</a></td>
 <td>
 <ul>
 <li>rule</li>

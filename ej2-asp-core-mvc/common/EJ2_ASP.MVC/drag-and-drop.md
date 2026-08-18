@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop Support in SyncfusionÂ® ASP.NET MVC Controls
+# Drag and Drop Support in Syncfusion® ASP.NET MVC Controls
 
 * Drag and Drop support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls by setting `allowDragAndDrop` property to `true`. It allows to drag and drop the specific elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 
@@ -109,7 +109,7 @@ You can convert any DOM element as a droppable zone, which accepts the draggable
 
 ## Defining Drop Action
 
-To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable/#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
+To define drop action set [`drop`](https://ej2.syncfusion.com/documentation/api/base/droppable#drop) callback function during droppable object creation. You can get details of dropped element through dropped element property in event argument.
 
 {% tabs %}
 {% highlight c# tabtitle="CSHTML" %}

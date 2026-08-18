@@ -13,7 +13,7 @@ documentation: ug
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported PDF can be customized or formatted using [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfQueryCellInfo.html) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported PDF can be customized or formatted using [`PdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
 
 In the below sample, we have set the background color for **Duration** column in the exported document by **args.cell** and **backgroundColor** property.
 
@@ -46,7 +46,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 PDF export provides an option to include theme for exported PDF document.
 
-To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
+To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#pdfexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -72,4 +72,4 @@ To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/
 {% endif %}
 
 N> By default, material theme is applied to exported PDF document.
-<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

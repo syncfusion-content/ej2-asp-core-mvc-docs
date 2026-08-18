@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Progressbar in ##Platform_Name## Uploader Component
+title: Customize Progressbar in ASP.NET Core Uploader | Syncfusion
 description: Learn here all about Customize Progressbar in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Customize Progressbar
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize progressbar
+# Customize progressbar in ASP.NET Core
 
 You can customize the progress bar’s size, color, and background by overriding  the styles in uploader control. Refer to the following example.
 
@@ -38,4 +38,4 @@ You can customize the progress bar’s size, color, and background by overriding
 
 
 
-N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/Uploader/DefaultFunctionalities#/material) to understand how to browse the files which you want to upload to the server.
+N> You can also explore [ASP.NET Core File Upload](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) feature tour page for its groundbreaking features. You can also explore our [ASP.NET Core File Upload example](https://ej2.syncfusion.com/aspnetcore/uploader/defaultfunctionalities#/fluent2) to understand how to browse the files which you want to upload to the server.

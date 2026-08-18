@@ -120,7 +120,7 @@ The following section provides the details about the Syncfusion<sup style="font-
 * [ListBox](https://ej2.syncfusion.com/aspnetmvc/documentation/list-box/how-to/form-submit)
 * [In-place Editor](https://ej2.syncfusion.com/aspnetmvc/documentation/in-place-editor/validation)
 * [TextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/textbox/validation)
-* [RichTextEditor](https://ej2.syncfusion.com/aspnetmvc/documentation/rich-text-editor/validation)
+* [RichTextEditor](https://help.syncfusion.com/rich-text-editor-sdk/asp-net-mvc/rich-text-editor/validation)
 * DateTimePicker
 * Calendar
 * ColorPicker
@@ -132,5 +132,5 @@ The following section provides the details about the Syncfusion<sup style="font-
 
 ## See Also
 
-* [ASP.NET MVC Forms and Validation](https://docs.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
-* [Model validation in ASP.NET MVC and Razor Pages](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)
+* [ASP.NET MVC Forms and Validation](https://learn.microsoft.com/en-us/aspnet/core/mvc/views/working-with-forms?view=aspnetcore-6.0)
+* [Model validation in ASP.NET MVC and Razor Pages](https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-6.0)

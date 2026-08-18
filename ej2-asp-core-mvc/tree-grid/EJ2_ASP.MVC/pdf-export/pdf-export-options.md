@@ -17,7 +17,7 @@ PDF export provides an option to customize mapping of treegrid to exported PDF d
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#filename) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
+You can assign the file name for the exported document by defining [`fileName`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#filename) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#properties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -46,7 +46,7 @@ You can assign the file name for the exported document by defining [`fileName`](
 
 ### Default fonts for PDF exporting
 
-By default, treegrid uses **Helvetica** font in the exported document. You can change the default font by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
+By default, treegrid uses **Helvetica** font in the exported document. You can change the default font by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#properties).
 The available default fonts are,
 
 * Helvetica
@@ -70,7 +70,7 @@ The code example for changing default font,
 
 ### Add custom font for PDF exporting
 
-You can change the default font of TreeGrid header, content and caption cells in the exported document by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
+You can change the default font of TreeGrid header, content and caption cells in the exported document by using [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#theme) property in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#properties).
 
 In the following example, we have used Advent Pro font to export the treegrid with Hungarian fonts.
 
@@ -105,7 +105,7 @@ N> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
 
 ### How to change page orientation
 
-Page orientation can be changed Landscape(Default Portrait) for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
+Page orientation can be changed Landscape(Default Portrait) for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#pdfexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -134,7 +134,7 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 
 ### How to change page size
 
-Page size can be customized for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
+Page size can be customized for the exported document using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#pdfexportproperties).
 Supported page sizes are:
 
 * Letter
@@ -192,7 +192,7 @@ Supported page sizes are:
 
 ### Export hidden columns
 
-PDF export provides an option to export hidden columns of TreeGrid by defining the [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#includehiddencolumn) as **true**.
+PDF export provides an option to export hidden columns of TreeGrid by defining the [`includeHiddenColumn`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#includehiddencolumn) as **true**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -221,11 +221,11 @@ PDF export provides an option to export hidden columns of TreeGrid by defining t
 
 ### Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`PdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) events.
+You can show a hidden column or hide a visible column while exporting the treegrid using [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) and [`PdfExportComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) events.
 
-In [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`Visible`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Visible.html) property to **true** or **false** respectively.
+In [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Visible) property to **true** or **false** respectively.
 
-In [`PdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) event, We have reversed the state back to the previous state.
+In [`PdfExportComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) event, We have reversed the state back to the previous state.
 
 In the below example, we have **Duration** as a hidden column in the treegrid. While exporting, we have changed **Duration** to visible column and **StartDate** as hidden column.
 
@@ -254,4 +254,4 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
