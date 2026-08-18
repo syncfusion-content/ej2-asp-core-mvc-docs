@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Model Binding in ##Platform_Name## | Syncfusion
-description: Checkout and learn about model binding in Razor Pages ##Platform_Name##.
+title: Model Binding in ASP.NET Core Razor Pages | Syncfusion
+description: Learn how to use model binding with Syncfusion ASP.NET Core controls in Razor Pages applications for efficient data processing.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Model Binding in Razor Pages
+# Model Binding in ASP.NET Core Razor Pages
 
 This article deals with the model binding of the Razor Pages of the ASP.NET Core platform.
 

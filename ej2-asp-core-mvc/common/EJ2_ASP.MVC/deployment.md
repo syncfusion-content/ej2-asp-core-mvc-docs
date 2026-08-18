@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Deployment in Syncfusion ##Platform_Name## control
-description: Learn here all about Deployment in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Deployment in ##Platform_Name## Applications | Syncfusion
+description: Learn how to deploy Syncfusion ##Platform_Name## applications using supported deployment options and hosting environments.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Deployment in ASP.NET MVC
+# Deployment in ASP.NET MVC Applications
 
 This section provides information about deploying ASP.NET MVC applications with the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 

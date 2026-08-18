@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in ##Platform_Name## Common control | Syncfusion
-description: Checkout the documentation and learn about localization in Syncfusion ##Platform_Name## Common control and more.
+description: Learn how to localize Syncfusion ##Platform_Name## controls using culture-based JSON files, locale settings, and dynamic language switching.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

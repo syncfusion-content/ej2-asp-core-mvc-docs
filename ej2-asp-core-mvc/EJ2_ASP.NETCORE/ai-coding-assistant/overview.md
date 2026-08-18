@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI Coding Assistant Overview in ##Platform_Name## controls | Syncfusion
-description: Learn how Syncfusion AI Coding Assistant boost ASP.NET Core productivity by generating accurate code snippets, examples, and contextual guidance.
+title: Syncfusion AI Coding Assistant Overview in ##Platform_Name## | Syncfusion
+description: Learn how Syncfusion AI Coding Assistant boosts ASP.NET Core productivity with code generation, examples, and contextual guidance.
 control: Syncfusion AI Coding Assistant Overview
 platform: ej2-asp-core-mvc
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion® AI Coding Assistant Overview
+# Syncfusion® AI Coding Assistant Overview in ASP.NET MVC
 
 The **Syncfusion<sup style="font-size:70%">&reg;</sup> AI Coding Assistant** are designed to streamline your development workflow when building ASP.NET Core applications with Syncfusion<sup style="font-size:70%">&reg;</sup> controls. It uses contextual knowledge of the Syncfusion<sup style="font-size:70%">&reg;</sup> UI library to generate accurate code snippets, configuration examples, and guided explanations—minimizing documentation searches and maximizing productivity.
 

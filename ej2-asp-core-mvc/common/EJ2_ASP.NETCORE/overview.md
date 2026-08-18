@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Common Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Overview of Syncfusion ##Platform_Name## Components | Syncfusion
+description: Explore Syncfusion  ##Platform_Name## common features including localization, globalization, animation, drag-and-drop, and resource generation
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion ASP.NET Core Components.
 
 The purpose of this document is to build and run a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 application in ASP.NET Core and, ASP.NET MVC.
 

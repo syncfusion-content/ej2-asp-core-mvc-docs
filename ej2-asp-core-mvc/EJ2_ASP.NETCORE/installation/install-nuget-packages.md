@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Install Syncfusion ##Platform_Name## NuGet packages - Syncfusion
-description: Learn here about the how to install Syncfusion ##Platform_Name## NuGet packages from Package manager and NuGet manager.
+title: Install Syncfusion ASP.NET Core NuGet Packages | Syncfusion
+description: Learn how to install Syncfusion ASP.NET Core NuGet packages using NuGet Package Manager, Package Manager Console, and CLI tools.
 platform: ej2-asp-core-mvc
 control: Install Nuget Packages
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Install Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet Packages
+# Install Syncfusion® ASP.NET Core NuGet Packages
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core (EJ2) NuGet packages using the **Package Manager UI**, the **dotnet (.NET) CLI**, or the **Package Manager Console**.
 

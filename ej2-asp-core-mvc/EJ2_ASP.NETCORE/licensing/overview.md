@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview of Syncfusion license and unlock keys - Syncfusion
-description: Learn here about the Syncfusion license and unlock keys and difference between license and unlock keys.
+title: Syncfusion Licensing Overview for ASP.NET Core | Syncfusion
+description: Learn about Syncfusion license keys and unlock keys, including their differences and licensing requirements.
 platform: ej2-asp-core-mvc
 control: Overview
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Syncfusion<sup style="font-size:70%">&reg;</sup> Licensing Overview
+# Syncfusion® Licensing Overview
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> license key registration is applicable for all evaluators and only to paid customers who use NuGet packages from [NuGet.org](https://www.nuget.org/packages?q=syncfusion). So, if you use the evaluation installer or the NuGet feed to reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies, you must also include the corresponding platform and version license key in your projects
 

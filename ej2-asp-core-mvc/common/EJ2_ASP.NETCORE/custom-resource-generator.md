@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Resource Generator in ##Platform_Name## control
-description: Learn here all about Custom Resource Generator in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Syncfusion Custom Resource Generator for ASP.NET Core | Syncfusion
+description: Learn how to generate optimized Syncfusion ##Platform_Name## scripts and styles using the Custom Resource Generator (CRG) tool.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom Resource Generator for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core
+# Custom Resource Generator for ASP.NET Core
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides an option to generate a selective controls script (JavaScript ES5) and styles by using the [Custom Resource Generator](https://crg.syncfusion.com/) (CRG) web tool for ASP.NET Core controls from v18.1.0.42.
 

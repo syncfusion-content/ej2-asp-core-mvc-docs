@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Animation in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Animation Support in ##Platform_Name## Controls | Syncfusion
+description: Learn how to use animation effects, transitions, and interactive UI behaviors in Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC
+# Animation Support in Syncfusion® ASP.NET MVC Controls
 
 The **Animation** library is used to perform animation effects on HTML elements by running sequence of frames.
 

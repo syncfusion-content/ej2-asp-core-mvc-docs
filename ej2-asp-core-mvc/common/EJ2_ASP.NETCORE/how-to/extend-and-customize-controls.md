@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Extend and Customize ASP.NET Core Controls | Syncfusion
-description: Explore the documentation to learn how to extend, customize, and enhance Syncfusion ##Platform_Name## controls for your application needs.
+description: Learn how to extend and customize Syncfusion ##Platform_Name## controls using Tag Helpers, view components, and reusable component patterns.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Extend and Customize Syncfusion Controls
+# Extend and Customize Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core Controls
 
 The ASP.NET Core provides the support to extend a component or customize it within another component for a strong composite model.
 

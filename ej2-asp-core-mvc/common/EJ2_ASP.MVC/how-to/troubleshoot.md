@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Troubleshoot in Syncfusion ##Platform_Name## Common Component
-description: Learn here all about Troubleshoot in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Troubleshooting ##Platform_Name## Applications | Syncfusion
+description: Learn how to troubleshoot common compile-time and run-time errors in Syncfusion ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Troubleshoot
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to troubleshoot compile-time and run-time errors
+# How to Troubleshoot Compile-Time and Run-Time Errors
 
 ## Compile-time error
 

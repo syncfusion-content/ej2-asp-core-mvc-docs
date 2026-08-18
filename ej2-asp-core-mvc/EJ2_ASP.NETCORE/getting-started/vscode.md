@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## in Visual Studio Code | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Calendar control using Tag helpers in Visual Studio Code.
+title: Getting Started with ASP.NET Core in Visual Studio Code | Syncfusion
+description: Learn how to create an ASP.NET Core application in Visual Studio Code using Razor Pages and Syncfusion controls.
 platform: ej2-asp-core-mvc
 control: Vscode
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core in VS Code using Razor pages
+# Getting Started with ASP.NET Core in Visual Studio Code
 
 This article provides a step-by-step instruction for building ASP.NET Core web application using the [Visual Studio Code](https://code.visualstudio.com/) and ASP.NET Core tag helper.
 
@@ -121,5 +121,5 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the app. Set `Select Environment` to 
 
 ## See also
 
-* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages/)
+* [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core using Razor Pages](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages)
 * [Getting Started with Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core MVC using Tag Helper](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/aspnet-core-mvc-taghelper)

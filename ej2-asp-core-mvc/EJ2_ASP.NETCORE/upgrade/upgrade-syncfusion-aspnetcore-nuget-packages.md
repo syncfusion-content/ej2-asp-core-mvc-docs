@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Upgrade Syncfusion ##Platform_Name## NuGet packages to a latest version
-description: Learn here about the how to upgrading Syncfusion ##Platform_Name## NuGet packages to a latest version using NuGet manager and package manager UI.
+title: Upgrade Syncfusion ASP.NET Core NuGet Packages | Syncfusion
+description: Learn how to upgrade Syncfusion ASP.NET Core NuGet packages to the latest version using NuGet Package Manager and package management tools.
 platform: ej2-asp-core-mvc
 control: Upgrade Syncfusion Aspnetcore Nuget Packages
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Upgrading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP .NET Core EJ2 NuGet packages to a latest version
+# Upgrade Syncfusion® ASP.NET Core NuGet Packages to the Latest Version
 
 Every three months, Syncfusion<sup style="font-size:70%">&reg;</sup> releases new volumes with interesting new features. For this volume, there will be weekly NuGet releases and a service pack. Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core JS2 NuGet packages are released on a weekly basis to address critical issue fixes.
 

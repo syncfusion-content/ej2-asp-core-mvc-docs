@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template Engine in ##Platform_Name## Common Component
-description: Learn here all about Template Engine in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Template Engine in ##Platform_Name## Control | Syncfusion
+description: Learn how to use templates and customize the rendering of Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Template Engine
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template Engine
+# Template Engine in ASP.NET MVC Control
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC (Essential JS 2) has built-in template engine which provides options to compile template string into a executable function. Then the generated executable function can be used for rendering DOM element using desired data.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Input Form Validation in Syncfusion ##Platform_Name## control
-description: Learn here all about Input Form Validation in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Form Validation in ##Platform_Name## Applications | Syncfusion
+description: Learn how to validate Syncfusion ASP.NET MVC controls using FormValidator, validation rules, and custom validation messages.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Input Form Validation
+# Input Form Validation in ASP.NET MVC Applications
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC UI input and editor controls can be validated by using [FormValidator](https://ej2.syncfusion.com/javascript/documentation/api/form-validator) in client side.
 

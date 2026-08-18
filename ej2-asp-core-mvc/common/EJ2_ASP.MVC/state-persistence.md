@@ -1,14 +1,14 @@
 ---
 layout: post
-title: State Persistence in Syncfusion ##Platform_Name## control
-description: Learn here all about State Persistence in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: State Persistence in ##Platform_Name## Control| Syncfusion
+description: Learn how to persist control state using browser storage and state persistence features in Syncfusion ##Platform_Name## controls
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# State Persistence in ASP.NET MVC
+# State Persistence in ASP.NET MVC Control
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC library supports persisting a control's state across page refreshes or navigation. To enable this feature, set `enablePersistence` property as true to the required control. This will store the control’s state in browser’s `localStorage` object on page `unload` event.
 

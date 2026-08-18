@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Common control | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop Support in ##Platform_Name## | Syncfusion
+description: Learn how to enable drag-and-drop functionality in Syncfusion ##Platform_Name## controls and applications.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop support in Syncfusion ASP.NET MVC controls
+# Drag and Drop Support in Syncfusion® ASP.NET MVC Controls
 
 * Drag and Drop support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls by setting `allowDragAndDrop` property to `true`. It allows to drag and drop the specific elements in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls.
 

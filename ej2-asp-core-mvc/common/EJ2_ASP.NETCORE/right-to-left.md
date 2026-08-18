@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Right To Left in ##Platform_Name## control
-description: Learn here all about Right To Left in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Right-to-Left (RTL) Support in ##Platform_Name## | Syncfusion
+description: Learn how to enable right-to-left (RTL) rendering in Syncfusion ##Platform_Name## controls globally or for individual controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Right-To-Left support in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls
+# Right-to-Left Support in ASP.NET Core Controls
 
 The right-to-left (RTL) support can be enabled for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls by setting `enableRtl` property to `true`. This will render all the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core controls in the right-to-left direction.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installing Syncfusion ##Platform_Name## web installer - Syncfusion
-description: Learn here about how to install Syncfusion ##Platform_Name## web installer after downloading from our Syncfusion website.
+title: Install Syncfusion ASP.NET Core Web Installer | Syncfusion
+description: Learn how to install the Syncfusion ASP.NET Core web installer and configure the required components for development.
 platform: ej2-asp-core-mvc
 control: Installation Using Web Installer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Web Installer
+# Install Syncfusion® ASP.NET Core Web Installer
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio ASP.NET Core - EJ2 **web installer** on Windows, and how to uninstall it.
 

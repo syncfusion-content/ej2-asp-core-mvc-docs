@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installing Syncfusion Essential Studio Linux installer - Syncfusion
-description: Learn here about how to install Syncfusion Essential Studio Linux installer after downloading from our Syncfusion website.
+title: Install Syncfusion Essential Studio Linux Installer | Syncfusion
+description: 
 platform: common
 control: Essential Studio
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Linux Installer
+# Install Syncfusion® Essential Studio® Linux Installer
 
 This guide explains how to extract and use the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio Linux installer on a Linux machine.
 

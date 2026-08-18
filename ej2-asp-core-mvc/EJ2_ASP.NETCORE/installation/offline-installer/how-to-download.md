@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Downloading Syncfusion ##Platform_Name## installer - Syncfusion
-description: Learn here about the how to download Syncfusion ##Platform_Name## offline installer from our syncfusion website.
+title: Download Syncfusion ASP.NET Core Offline Installer | Syncfusion
+description: Learn how to download the Syncfusion ASP.NET Core offline installer from the Syncfusion website for local installation and deployment.
 platform: ej2-asp-core-mvc
 control: Download
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Offline Installer
+# Download Syncfusion® ASP.NET Core Offline Installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core - EJ2 Installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/aspnet-core-ui-controls) website. You can either download the licensed installer or try our trial installer depending on your license. This guide covers the following options:
 

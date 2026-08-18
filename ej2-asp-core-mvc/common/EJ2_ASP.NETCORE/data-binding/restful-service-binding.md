@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data from RESTful services to ##Platform_Name## control | Syncfusion
-description: Learn here all about retrieve data from RESTful service, bind data to Syncfusion ##Platform_Name## Common control and more.
+title: Bind Data Using ODataV4Adaptor in ##Platform_Name## | Syncfusion
+description: Learn how to retrieve data from OData and RESTful services, bind it to the Syncfusion ##Platform_Name## DataGrid using ODataV4Adaptor, and perform CRUD operations.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

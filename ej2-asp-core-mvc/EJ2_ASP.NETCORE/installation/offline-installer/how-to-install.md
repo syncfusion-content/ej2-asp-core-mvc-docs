@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Installing Syncfusion ##Platform_Name## installer - Syncfusion
-description: Learn here about the how to install Syncfusion ##Platform_Name## offline installer after downloading from our syncfusion website.
+title: Install Syncfusion ASP.NET Core Offline Installer | Syncfusion
+description: Learn how to install the Syncfusion ASP.NET Core offline installer and set up the required components for development.
 platform: ej2-asp-core-mvc
 control: Installation Using Off Line Installer
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Installing Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core EJ2 Offline Installer
+# Install Syncfusion® ASP.NET Core Offline Installer
 
 This guide explains how to install the Syncfusion<sup style="font-size:70%">&reg;</sup> Essential<sup style="font-size:70%">&reg;</sup> Studio ASP.NET Core - EJ2 **offline installer** on Windows, either through the installer UI or in **silent mode** from the command line.
 

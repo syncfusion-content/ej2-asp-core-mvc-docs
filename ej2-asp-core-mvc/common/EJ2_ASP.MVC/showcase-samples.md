@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Showcase samples in Syncfusion ##Platform_Name## control
-description: Learn here all about list of showcase samples in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Showcase Samples | Syncfusion
+description: Explore Syncfusion ##Platform_Name## showcase applications, examples, and sample projects.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##

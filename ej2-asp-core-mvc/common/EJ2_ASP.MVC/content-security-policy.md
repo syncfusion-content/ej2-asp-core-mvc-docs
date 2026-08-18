@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Content Security Policy in ##Platform_Name## Common Control | Syncfusion
-description: Learn here all about Content Security Policy in Syncfusion ##Platform_Name## Common control of Syncfusion Essential JS 2 and more.
+title: Content Security Policy in ##Platform_Name## application | Syncfusion
+description: Learn how to configure Content Security Policy (CSP) and securely use Syncfusion ##Platform_Name## controls.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Content Security Policy
+# Content Security Policy in ASP.NET MVC Application
 
 Content Security Policy (CSP) is a security feature implemented by web browsers that helps to protect against attacks such as cross-site scripting (XSS) and data injection. It limits the sources from which content can be loaded on a web page.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Downloading Syncfusion Essential Studio Linux installer - Syncfusion
-description: Learn here about the how to download Syncfusion Essential Studio Linux installer from our syncfusion website with license.
+title: Download Syncfusion Essential Studio Linux Installer | Syncfusion
+description: Learn how to download the Syncfusion Essential Studio Linux installer from the Syncfusion website and access installation packages with your licensed account.
 platform: common
 documentation: ug
 --- 
 
-# Downloading Syncfusion<sup style="font-size:70%">&reg;</sup> Essential Studio<sup style="font-size:70%">&reg;</sup> Linux Installer
+# Download Syncfusion® Essential Studio® Linux Installer
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Linux installer can be downloaded from the [Syncfusion](https://www.syncfusion.com/) website. You can either download the licensed installer or try our trial installer depending on your license. The Linux installer is provided in `.zip` format and does not require an unlock key to install. This guide covers the following options:
 

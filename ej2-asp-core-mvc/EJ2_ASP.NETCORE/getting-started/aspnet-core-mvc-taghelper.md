@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## using Tag Helpers | Syncfusion
-description: Checkout and learn about building ##Platform_Name## MVC application with Calendar control using tag helper in Visual Studio.
+title: Getting Started with ##Platform_Name## Using Tag Helpers | Syncfusion
+description: Learn how to create a Syncfusion ASP.NET Core application using Tag Helpers and add Essential JS 2 controls in Visual Studio.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core MVC using Tag Helper
+# Getting Started with ASP.NET Core Using Tag Helpers
 
 This article provides step-by-step instructions for building ASP.NET Core MVC application with Calendar control using tag helper in Visual Studio.
 

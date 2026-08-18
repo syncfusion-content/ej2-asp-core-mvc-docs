@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Including Client-Side Resources in Syncfusion ##Platform_Name## Controls
-description: Checkout and learn about including client-side resources for ##Platform_Name## Controls of Syncfusion, and more details.
+title: Include Client-Side Resources in ASP.NET Core | Syncfusion
+description: Learn how to include scripts, styles, and other client-side resources required for Syncfusion ASP.NET Core controls.
 platform: ej2-asp-core-mvc
 control: common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Including Client-Side Resources
+# Include Client-Side Resources in ASP.NET Core
 
 This article provides the details extensively about all the possible ways of including the client-side resources of Syncfusion<sup style="font-size:70%">&reg;</sup> EJ2 Components in an ASP.NET Core web application.
 
