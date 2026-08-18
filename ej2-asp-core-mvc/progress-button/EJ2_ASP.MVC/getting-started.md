@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Progress Button Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Progress Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Progress Button. Explore setup, features, examples, and customization options
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Progress Button Control
+# Getting Started with ##Platform_Name## Progress Button
 
 This section briefly explains how to include the [ASP.NET MVC Progress Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/progress-button) control in an ASP.NET MVC application using Visual Studio.
 

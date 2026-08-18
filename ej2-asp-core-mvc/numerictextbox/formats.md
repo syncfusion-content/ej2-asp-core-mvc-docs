@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Formats in ##Platform_Name## Numerictextbox Control | Syncfusion
-description: Learn here all about Formats in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Number Formats in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to format values in ##Platform_Name## Numeric TextBox using standard and custom numeric format strings for currency, percentage, and number display.
 platform: ej2-asp-core-mvc
 control: Formats
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Number Formats in NumericTextBox Control
+# Number Formats in ##Platform_Name## NumericTextBox
 
 You can format the value of NumericTextBox using [format](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Format) property. The value will be displayed in the specified format when the control is in focused out state. The format string supports both the [standard numeric format string](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#supported-format-string) and [custom numeric format string](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#custom-number-formatting-and-parsing).
 

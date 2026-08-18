@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## OTP Input | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## OTP Input control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC OTP Input control
+# Getting Started with ##Platform_Name## OTP Input
 
 This section briefly explains how to include the `ASP.NET MVC OTP Input` control in an ASP.NET MVC application using Visual Studio.
 
