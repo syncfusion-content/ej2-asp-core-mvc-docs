@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Numerictextbox | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Overview in ASP.NET Core Numeric TextBox | Syncfusion
+description: Learn about the ASP.NET Core Numeric TextBox control, including range validation, number formatting, precision handling, globalization, localization, and accessibility features.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ASP.NET Core Numerictextbox Control
+# Overview in ASP.NET Core NumericTextBox
 
 The **NumericTextBox** is used to get the number inputs from the user. The input values can be incremented or decremented by a predefined step value.
 

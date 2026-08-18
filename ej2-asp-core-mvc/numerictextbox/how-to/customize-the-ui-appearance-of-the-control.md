@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize The Ui Appearance Of The Control in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Customize The Ui Appearance Of The Control in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
+title: Customize the UI Appearance of ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to customize the UI appearance of ##Platform_Name## Numeric TextBox using custom CSS classes and styling options.
 platform: ej2-asp-core-mvc
 control: Customize The Ui Appearance Of The Control
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize the UI appearance of the control
+# Customize the UI Appearance of ##Platform_Name## NumericTextBox
 
 You can change the appearance of the NumericTextBox by adding custom `cssClass` to the control and enabling styles. Refer to the following example to change the appearance of the NumericTextBox.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Numerictextbox | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET MVC Numeric Textbox Component | Syncfusion
+description: Explore the Syncfusion ASP.NET MVC Numeric Textbox component with range validation, formatting, precision control, keyboard support, and globalization.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ASP.NET MVC Numerictextbox Control
+# About Syncfusion ASP.NET MVC NumericTextbox Component.
 
 The **NumericTextBox** is used to get the number inputs from the user. The input values can be incremented or decremented by a predefined step value.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: customization in ASP.NET Core Predefined Dialogs | Syncfusion
-description: Checkout and learn about customization in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Customization in ASP.NET Core Predefined Dialogs | Syncfusion
+description: Learn how to customize ASP.NET Core Predefined Dialogs, including action buttons, close behavior, and custom dialog content.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: aspnet-core
