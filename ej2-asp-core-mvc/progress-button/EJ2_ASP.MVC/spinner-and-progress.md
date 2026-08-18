@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Spinner And Progress in ##Platform_Name## Progress Button Component | Syncfusion
-description: Learn here all about Spinner And Progress in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
+title: Spinner and Progress in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to customize spinner and progress behavior in ##Platform_Name## Progress Button, including spinner position, size, templates, animations, progress states, and control methods.
 platform: ej2-asp-core-mvc
 control: Spinner And Progress
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Spinner and Progress in ##Platform_Name## Progress Button
 
 <!-- markdownlint-disable MD002 MD022 -->
 ## Spinner

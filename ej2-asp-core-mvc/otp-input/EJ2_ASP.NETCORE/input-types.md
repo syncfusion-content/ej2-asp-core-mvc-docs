@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Input Types in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Input Types in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Input Types in ##Platform_Name## OTP Input | Syncfusion
+description: Learn about ##Platform_Name## OTP Input types, including Number, Text, and Password modes, and configure preset values for OTP entry scenarios.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Input Types in ASP.NET Core OTP Input control
+# Input Types in ##Platform_Name## OTP Input
 
 ## Types
 
