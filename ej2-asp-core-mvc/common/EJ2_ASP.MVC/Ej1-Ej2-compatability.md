@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Ej2 Compatability in ##Platform_Name## Common Component
-description: Learn here all about Ej1 Ej2 Compatability in Syncfusion ##Platform_Name## Common component of Syncfusion Essential JS 2 and more.
+title: Essential JS 1 and EJ2 Compatibility in ##Platform_Name## | Syncfusion
+description: Learn about compatibility between Syncfusion Essential JS 1 and Essential JS 2 controls in ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Ej1 Ej2 Compatability
 publishingplatform: ##Platform_Name##

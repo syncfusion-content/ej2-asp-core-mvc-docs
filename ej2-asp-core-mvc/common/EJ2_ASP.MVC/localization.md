@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Common control | Syncfusion
-description: Learn here all about the Localizations in Syncfusion ##Platform_Name## Common control and much more.
+title: Localization Support in ##Platform_Name## Control | Syncfusion
+description: Learn how to localize Syncfusion ##Platform_Name## controls using culture-specific resources and language settings..
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization (Multi-Language) support in ASP.NET MVC
+# Localization Support in ASP.NET MVC Control
 
 Localization (L10N) is the process of adapting application controls and content to the desired language with its corresponding region. This page shows, how to use the Localization feature in the ASP.NET MVC application.
 

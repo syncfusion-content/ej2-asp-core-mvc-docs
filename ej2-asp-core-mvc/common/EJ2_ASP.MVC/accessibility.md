@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## control
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## control of Syncfusion Essential JS 2 and more.
+title: Accessibility Support in ##Platform_Name## Controls | Syncfusion
+description: Learn about accessibility support in Syncfusion ##Platform_Name## controls, including ADA, WCAG, keyboard navigation, and screen reader support.
 platform: ej2-asp-core-mvc
 control: Common
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility support with ADA compliance in ASP.NET MVC controls
+# Accessibility Support with ADA Compliance in ASP.NET MVC Controls
 
 All the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC controls follow the WAI-ARIA accessibility standard by default. This enables to build accessible web applications, which are fully navigable by users with disabilities.
 
