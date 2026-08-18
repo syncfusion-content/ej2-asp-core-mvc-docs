@@ -1,7 +1,7 @@
 ---
 layout: post
 title: List of Controls in ##Platform_Name## InplaceEditor | Syncfusion
-description: Discover Syncfusion ##Platform_Name## InplaceEditor built-in and injectable controls, including TextBox, DatePicker, DropDownList, and AutoComplete for inline editing.
+description: Discover the Syncfusion ##Platform_Name## InplaceEditor built-in and injectable controls (TextBox, DatePicker, DropDownList, AutoComplete) using the type property.
 platform: ej2-asp-core-mvc
 control: Controls
 publishingplatform: ##Platform_Name##

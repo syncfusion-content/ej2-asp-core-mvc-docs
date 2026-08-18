@@ -22,7 +22,8 @@ Using `placeholder` you can display a short hint in the input element.
 {% include code-snippet/daterangepicker/how-to/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -31,6 +32,7 @@ Using `placeholder` you can display a short hint in the input element.
 {% include code-snippet/daterangepicker/how-to/placeholder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

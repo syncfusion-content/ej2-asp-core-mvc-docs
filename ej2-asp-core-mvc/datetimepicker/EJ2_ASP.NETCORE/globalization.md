@@ -79,7 +79,8 @@ The following example demonstrates the DateTimePicker in `German` culture.
 {% include code-snippet/datetimepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -88,7 +89,8 @@ The following example demonstrates the DateTimePicker in `German` culture.
 {% include code-snippet/datetimepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -108,7 +110,8 @@ The following example demonstrates DateTimePicker in `Arabic` culture with right
 {% include code-snippet/datetimepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -117,6 +120,7 @@ The following example demonstrates DateTimePicker in `Arabic` culture with right
 {% include code-snippet/datetimepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

@@ -51,7 +51,8 @@ Start day in a week will differ based on the culture, but you can also customize
 {% include code-snippet/daterangepicker/customization/firstday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -60,7 +61,8 @@ Start day in a week will differ based on the culture, but you can also customize
 {% include code-snippet/daterangepicker/customization/firstday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

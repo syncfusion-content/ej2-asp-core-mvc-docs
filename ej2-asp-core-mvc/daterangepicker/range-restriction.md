@@ -60,7 +60,8 @@ Span between ranges can be limited to avoid excess or less days selection toward
 {% include code-snippet/daterangepicker/range-restriction/rangespan/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rangespan.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -69,7 +70,8 @@ Span between ranges can be limited to avoid excess or less days selection toward
 {% include code-snippet/daterangepicker/range-restriction/rangespan/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rangespan.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

@@ -29,7 +29,8 @@ N> By default, the format is `Short`.
 {% include code-snippet/datetimepicker/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -38,7 +39,8 @@ N> By default, the format is `Short`.
 {% include code-snippet/datetimepicker/headerformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 ![datetimepicker](../images/narrow.png) ![datetimepicker](../images/abbreviated.png)

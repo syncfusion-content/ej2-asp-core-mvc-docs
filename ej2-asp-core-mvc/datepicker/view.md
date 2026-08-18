@@ -32,7 +32,8 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% include code-snippet/datepicker/view/start/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -41,7 +42,8 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% include code-snippet/datepicker/view/start/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -59,7 +61,8 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 {% include code-snippet/datepicker/view/depth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,7 +71,8 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 {% include code-snippet/datepicker/view/depth/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

@@ -31,7 +31,8 @@ You can find the possible formats on below.
 {% include code-snippet/datepicker/how-to/headerformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -40,7 +41,8 @@ You can find the possible formats on below.
 {% include code-snippet/datepicker/how-to/headerformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headerformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

@@ -28,7 +28,8 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -37,9 +38,9 @@ To place the font icon on the breadcrumb item, set the `iconCss` property to `e-
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
-
 
 
 Output be like the below.
@@ -189,7 +190,8 @@ To show icon only for the first item in the Breadcrumb, add icons to the first i
 {% include code-snippet/breadcrumb/getting-started/items/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -198,7 +200,8 @@ To show icon only for the first item in the Breadcrumb, add icons to the first i
 {% include code-snippet/breadcrumb/getting-started/items/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Items.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

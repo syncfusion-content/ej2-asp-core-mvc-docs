@@ -20,7 +20,8 @@ The following example demonstrates how to set `placeholder` in the DateTimePicke
 {% include code-snippet/datetimepicker/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,6 +30,7 @@ The following example demonstrates how to set `placeholder` in the DateTimePicke
 {% include code-snippet/datetimepicker/placeholder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

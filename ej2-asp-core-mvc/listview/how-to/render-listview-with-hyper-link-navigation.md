@@ -14,7 +14,7 @@ We can use `anchor` tag along with `href` attribute in our ListView [`template`]
 
 ```typescript
 
-var anchor_template = "<a target='_blank' href='${url}'>${name}</a>";
+var anchor_template = "<a target='_blank' href='${url}' aria-label='Open ${name}'>${name}</a>";
 
 ```
 

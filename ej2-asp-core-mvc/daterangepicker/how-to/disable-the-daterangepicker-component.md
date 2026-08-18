@@ -20,7 +20,8 @@ DateRangePicker can be inactivated on a page, by setting [enabled](https://help.
 {% include code-snippet/daterangepicker/how-to/disable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,6 +30,7 @@ DateRangePicker can be inactivated on a page, by setting [enabled](https://help.
 {% include code-snippet/daterangepicker/how-to/disable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

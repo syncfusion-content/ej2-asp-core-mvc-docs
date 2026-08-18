@@ -22,7 +22,8 @@ Using [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% include code-snippet/datepicker/how-to/placeholder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -31,6 +32,7 @@ Using [placeholder](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 {% include code-snippet/datepicker/how-to/placeholder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Placeholder.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

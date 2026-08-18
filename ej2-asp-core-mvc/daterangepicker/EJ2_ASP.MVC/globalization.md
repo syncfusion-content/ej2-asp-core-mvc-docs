@@ -91,7 +91,8 @@ The following example demonstrates the DateRangePicker in `German` culture.
 {% include code-snippet/daterangepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -100,7 +101,8 @@ The following example demonstrates the DateRangePicker in `German` culture.
 {% include code-snippet/daterangepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -120,7 +122,8 @@ The following example demonstrates DateRangePicker in `Arabic` culture with righ
 {% include code-snippet/daterangepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -129,5 +132,6 @@ The following example demonstrates DateRangePicker in `Arabic` culture with righ
 {% include code-snippet/daterangepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}

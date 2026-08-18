@@ -78,7 +78,8 @@ The following example demonstrates the Calendar in `German` culture.
 {% include code-snippet/calendar/international/international/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -87,7 +88,8 @@ The following example demonstrates the Calendar in `German` culture.
 {% include code-snippet/calendar/international/international/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -105,7 +107,8 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% include code-snippet/calendar/international/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -114,5 +117,6 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% include code-snippet/calendar/international/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}

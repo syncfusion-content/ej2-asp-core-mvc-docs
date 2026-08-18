@@ -43,7 +43,8 @@ The following example disables the weekends of every month using `renderDayCell`
 {% include code-snippet/datepicker/customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -52,7 +53,8 @@ The following example disables the weekends of every month using `renderDayCell`
 {% include code-snippet/datepicker/customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Customization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

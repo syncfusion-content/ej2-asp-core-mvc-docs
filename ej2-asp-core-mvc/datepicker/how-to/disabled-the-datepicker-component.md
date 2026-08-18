@@ -20,7 +20,8 @@ To disable the DatePicker, use its [enable](https://help.syncfusion.com/cr/aspne
 {% include code-snippet/datepicker/how-to/disable/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -29,6 +30,7 @@ To disable the DatePicker, use its [enable](https://help.syncfusion.com/cr/aspne
 {% include code-snippet/datepicker/how-to/disable/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Disable.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

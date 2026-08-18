@@ -47,7 +47,8 @@ Following is the list of classes that provides flexible way to customize the Dat
 {% include code-snippet/daterangepicker/how-to/css/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -56,6 +57,7 @@ Following is the list of classes that provides flexible way to customize the Dat
 {% include code-snippet/daterangepicker/how-to/css/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

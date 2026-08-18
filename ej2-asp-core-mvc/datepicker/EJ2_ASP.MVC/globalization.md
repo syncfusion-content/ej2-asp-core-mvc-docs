@@ -79,7 +79,8 @@ The following example demonstrates the DatePicker in `German` culture.
 {% include code-snippet/datepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -88,7 +89,8 @@ The following example demonstrates the DatePicker in `German` culture.
 {% include code-snippet/datepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -106,7 +108,8 @@ The following code example initialize the DatePicker control in `Arabic` culture
 {% include code-snippet/datepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -115,6 +118,7 @@ The following code example initialize the DatePicker control in `Arabic` culture
 {% include code-snippet/datepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
