@@ -309,7 +309,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../images/columns/autofit.png)
 
-> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 

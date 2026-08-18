@@ -33,7 +33,7 @@ In the ListView control, sorting is enabled using the [sortOrder](https://ej2.sy
 
 ### Moving whole data from the first list to the second list(>>)
 
-* Here, the whole data can be moved from the first ListView to the second by clicking the first button. When clicking the button, the whole list items are sliced, and `concat` with the second ListView. This button is enabled only when the data source of the first ListView is not empty.
+* Here, the whole data can be moved from the first ListView to the second by clicking the first button. When clicking the button, the whole list items are sliced, and combined with the second ListView. This button is enabled only when the data source of the first ListView is not empty.
 
 ### Moving whole data from the second list to the first list(<<)
 
