@@ -98,7 +98,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC MultiC
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC MultiColumn ComboBox control will be rendered in the default web browser.
 
-![ASP.NET MVC MultiColumn ComboBox Control](images/default.png)
+![ASP.NET MVC MultiColumn ComboBox Control](images/default.webp)
 
 ## Configure the popup list
 
@@ -117,4 +117,4 @@ In the following sample, the popup list's width and height are configured.
 {% endhighlight %}
 {% endtabs %}
 
-![Popup](images/popup.png)
+![Popup](images/popup.webp)

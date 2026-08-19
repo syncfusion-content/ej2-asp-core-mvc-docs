@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Slider Tick Labels in ##Platform_Name## Range Slider | Syncfusion
-description: Learn how to customize Range Slider tick labels and tick appearance using CSS and custom styling.
+description: Learn how to customize Range Slider tick labels and tick appearance using CSS, custom styles, and theme-based formatting.
 platform: ej2-asp-core-mvc
 control: Customize Slider Ticks Label
 publishingplatform: ##Platform_Name##

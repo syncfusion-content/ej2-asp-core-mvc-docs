@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Numeri
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NumericTextBox control will be rendered in the default web browser.
 
-![ASP.NET MVC NumericTextBox Control](images/gettingStarted.png)
+![ASP.NET MVC NumericTextBox Control](images/gettingStarted.webp)
 
 ## Range validation
 
@@ -121,7 +121,7 @@ The below example demonstrates how to format the value by using currency format 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC NumericTextBox with Format Value](images/format.png)
+![ASP.NET MVC NumericTextBox with Format Value](images/format.webp)
 
 ## Precision of numbers
 
@@ -135,7 +135,7 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.png)
+![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/NumericTextBox/ASP.NET%20MVC%20Razor%20Examples).
 

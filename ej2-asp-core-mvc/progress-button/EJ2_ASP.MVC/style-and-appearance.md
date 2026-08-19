@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style and Appearance in ##Platform_Name## Progress Button | Syncfusion
-description: Learn how to customize the style and appearance of ##Platform_Name## Progress
+description: Learn how to customize the style and appearance of ##Platform_Name## Progress Button, including colors, icons, CSS classes, themes, and visual states.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

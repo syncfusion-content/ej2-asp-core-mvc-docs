@@ -105,7 +105,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Skelet
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Skeleton control will be rendered in the default web browser.
 
-![ASP.NET MVC Skeleton Control](images/skeleton-control.png)
+![ASP.NET MVC Skeleton Control](images/skeleton-control.webp)
 
 ## Skeleton Types
 
@@ -160,4 +160,4 @@ The Skeleton control has the following different type of shapes.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Skelton Skimmer Effects](images/skeleton-skimmer-effects.png)
+![ASP.NET MVC Skelton Skimmer Effects](images/skeleton-skimmer-effects.webp)
