@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Content in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Content in ##Platform_Name## Tooltip | Syncfusion
+description: Set static text, HTML templates, or dynamically loaded content for the Syncfusion ##Platform_Name## Tooltip using the content property.
 platform: ej2-asp-core-mvc
 control: Content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Content in Tooltip Control
+# Content in ##Platform_Name## Tooltip
 
 A text or a piece of information assigned to the Tooltip's `content` property will be displayed as the main text stream of the Tooltip. It can be a string or a template content. If the `content` property is not provided with any specific value, then it takes the value assigned to the `title` attribute of the target element on which the Tooltip was initialized. The content can also dynamically be assigned to the Tooltip via Fetch.
 

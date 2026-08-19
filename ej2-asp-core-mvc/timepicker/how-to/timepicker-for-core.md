@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Timepicker For Core in ##Platform_Name## Timepicker Component
-description: Learn here all about Timepicker For Core in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: How to render TimePickerFor in ASP.NET Core | Syncfusion
+description: Render the Syncfusion ASP.NET Core TimePickerFor component by passing a model value and retrieving the selected time during form submission.
 platform: ej2-asp-core-mvc
 control: Timepicker For Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Render TimePickerFor
+# How to render TimePickerFor in ASP.NET Core
 
 The TimePickerFor component can be rendered by passing a value from the model. The selected date value can be retrieved during form submission using the post method at the server end.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Toast Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ASP.NET MVC Toast | Syncfusion
+description: Learn how the Syncfusion ASP.NET MVC Toast meets WAI-ARIA, ADA, Section 508, WCAG 2.2, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Toast Component Accessibility 
+# Accessibility in ASP.NET MVC Toast
 
 The Toast control has been designed with [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications in mind by applying the prompt WAI-ARIA roles, states, and properties with the keyboard support. It helps users who use assistive WAI-ARIA accessibility support, which is achieved using attributes.
 

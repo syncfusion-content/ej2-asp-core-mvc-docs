@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Time Masking in ##Platform_Name## Timepicker Component
-description: Learn here all about Time Masking in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: Time Masking in ##Platform_Name## TimePicker | Syncfusion
+description: Enable the built-in time masking support in the Syncfusion ##Platform_Name## TimePicker using the `enableMask` property for input formatting.
 platform: ej2-asp-core-mvc
 control: Time Masking
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable the Masked Input
+# Time Masking in ##Platform_Name## TimePicker
 
 TimePicker has `enableMask` property that provides the option to enable the built-in date masking support.
 

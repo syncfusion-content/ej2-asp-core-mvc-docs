@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Timepicker Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## TimePicker | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## TimePicker: an intuitive interface control for selecting a time value from a popup list or setting a desired time.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## TimePicker Component.
 
 **TimePicker** is an intuitive interface control which provides an options to select a time value from popup list or to set a desired time value. test
 
@@ -16,7 +16,7 @@ documentation: ug
 
 The TimePicker provides the following features.
 
-* **[Time Range](/timepicker/time-range/)**
-* **[Globalization](/timepicker/globalization/)**
-* **[Strict Mode](/timepicker/strict-mode/)**
-* **[Accessibility](/timepicker/accessibility/)**
+* **[Time Range](./time-range)**
+* **[Globalization](./globalization)**
+* **[Strict Mode](./strict-mode)**
+* **[Accessibility](./accessibility)**

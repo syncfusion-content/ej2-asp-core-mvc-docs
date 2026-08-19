@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load Tab With Data Source in ##Platform_Name## Tab Component
-description: Learn here all about Load Tab With Data Source in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to load tab with data source in ##Platform_Name## Tabs | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Tabs items from a remote data source by mapping the `header` and `content` fields using `DataManager` and OData service.
 platform: ej2-asp-core-mvc
 control: Load Tab With Data Source
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load tab with DataSource
+# How to load tab with data source in ##Platform_Name## Tabs
 
 {% if page.publishingplatform == "aspnet-core" %}
 

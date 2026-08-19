@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Set The Read Only Textbox in Syncfusion ##Platform_Name## Textbox Component
-description: Learn here all about Set The Read Only Textbox in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: How to set read-only TextBox in ##Platform_Name## TextBox | Syncfusion
+description: Make the Syncfusion ##Platform_Name## TextBox read-only by setting the `readonly` property to `true`, while still allowing users to copy the value.
 platform: ej2-asp-core-mvc
 control: Set The Read Only Textbox
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the read-only TextBox
+# How to set read-only TextBox in ##Platform_Name## TextBox
 
 To make the TextBox `read-only`, set the `readonly` property to `true`.
 

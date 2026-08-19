@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Toolbar Component | Syncfusion 
-description: Checkout learn here all about Overview in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Toolbar | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## Toolbar: a horizontal group of command buttons with support for positioning, scrolling, and customization.
 platform: ej2-asp-core-mvc
 control: Index
-publishingplatform:  ##Platform_Name##
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Toolbar Component 
+# About Syncfusion ##Platform_Name## Toolbar Component.
 
 The ToolBar displays a group of command buttons arranged horizontally.
 
@@ -24,4 +24,4 @@ The ToolBar displays a group of command buttons arranged horizontally.
 
 5. **[RTL Support]**: The Toolbar supports right to left alignment.
 
-6. **[Accessibility](./accessibility/)** : The Toolbar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices/) specifications and it is achieved through attributes.
+6. **[Accessibility](./accessibility)** : The Toolbar provides built-in compliance with the [WAI-ARIA](https://www.w3.org/TR/wai-aria-practices) specifications and it is achieved through attributes.

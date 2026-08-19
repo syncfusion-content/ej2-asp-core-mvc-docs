@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Toast Component
-description: Learn here all about Position in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Position in ASP.NET MVC Toast | Syncfusion
+description: Position the Syncfusion ASP.NET MVC Toast anywhere on the screen using predefined or custom X and Y `Position` property combinations.
 platform: ej2-asp-core-mvc
 control: Position
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Positions
+# Position in ASP.NET MVC Toast
 
 The toast position can be updated based on predefined positions or customizable positions. The predefined position combinations are updated in the `X` and `Y` [`Position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Position) properties.
 
@@ -60,4 +59,4 @@ Custom `X` and `Y` positions can be given as pixels/numbers/percentage. The numb
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)

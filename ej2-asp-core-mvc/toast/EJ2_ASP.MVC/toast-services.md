@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Toast Services in ##Platform_Name## Toast Component
-description: Learn here all about Toast Services in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Toast Services in ASP.NET MVC Toast | Syncfusion
+description: Render the Syncfusion ASP.NET MVC Toast on the go using the built-in `ToastUtility.show` function without appending a container element to the DOM.
 platform: ej2-asp-core-mvc
 control: Toast Services
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Toast Utility Services
+# Toast Services in ASP.NET MVC Toast
 
 The Toast component provides a built-in utility function to render the toast with minimal code. The utility function will render the toast without the need of rendering the container element in the DOM where the toast is appended. So that, the toast can now be rendered on the go. The following are the option to render the toast using the utility function.
 

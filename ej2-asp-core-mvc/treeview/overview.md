@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## TreeView | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## TreeView: a hierarchical control with data binding, checkboxes, drag-and-drop, multi-selection, and editing.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## TreeView Control
+# About Syncfusion ##Platform_Name## TreeView Component.
 
 The **TreeView** control is used to represent hierarchical data in a tree like structure with advanced functions to edit, drag and drop, select with CheckBox and more. TreeView can be populated from a data source such as an array of JavaScript objects or from DataManager.
 

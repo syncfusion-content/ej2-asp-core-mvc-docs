@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TreeView Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core TreeView | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core TreeView control. Explore setup, data binding, node rendering, and configuration examples.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core TreeView Control
+# Getting Started with ASP.NET Core TreeView
 
 This section briefly explains how to include the [ASP.NET Core TreeView](https://www.syncfusion.com/aspnet-core-ui-controls/treeview) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

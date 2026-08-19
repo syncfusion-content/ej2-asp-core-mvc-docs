@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Toolbar Component | Syncfusion
-description: Checkout and learn here all about style and appearance in Syncfusion ##Platform_Name## Toolbar component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Toolbar | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Toolbar appearance using CSS to modify the root element, items, separator, and command button properties.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# CSS Structure in ##Platform_Name## Toolbar Component
+# Style in ##Platform_Name## Toolbar
 
 The following content provides the exact CSS structure that can be used to modify the control’s appearance based on user preference.
 
