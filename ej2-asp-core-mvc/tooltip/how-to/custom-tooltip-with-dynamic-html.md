@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to show custom Tooltip with dynamic HTML in ##Platform_Name## Tooltip | Syncfusion
+title: Show Custom Tooltip with Dynamic HTML in ##Platform_Name## | Syncfusion
 description: Load dynamic HTML such as iframes, videos, and maps inside the Syncfusion ##Platform_Name## Tooltip by using string-based HTML in the content property.
 platform: ej2-asp-core-mvc
 control: Custom Tooltip With Dynamic Html

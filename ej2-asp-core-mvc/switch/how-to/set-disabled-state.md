@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to set disabled state in ##Platform_Name## Toggle Switch Button | Syncfusion
+title: Set Disabled State in ##Platform_Name## Switch | Syncfusion
 description: Disable the Syncfusion ##Platform_Name## Toggle Switch Button by setting the `disabled` property to true, preventing user interaction.
 platform: ej2-asp-core-mvc
 control: Set Disabled State

@@ -43,4 +43,4 @@ Output be like the below.
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)

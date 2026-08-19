@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to check file size before upload in ASP.NET MVC File Upload | Syncfusion
+title: How to check file size before upload in ##Platform_Name## | Syncfusion
 description: Check the file size in the Syncfusion ASP.NET MVC File Upload before upload by reading the file size in the uploading event and converting via bytesToSize.
 platform: ej2-asp-core-mvc
 control: Check File Size Before Uploading It

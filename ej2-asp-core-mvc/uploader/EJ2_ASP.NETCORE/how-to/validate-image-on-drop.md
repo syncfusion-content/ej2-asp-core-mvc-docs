@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to validate dropped images in ASP.NET Core File Upload | Syncfusion
+title: How to validate dropped images in ##Platform_Name## | Syncfusion
 description: Validate image files on drop in the Syncfusion ASP.NET Core File Upload by setting image/* in allowedExtensions or accept attribute and filtering in events.
 platform: ej2-asp-core-mvc
 control: Validate Image On Drop

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to check the MIME type of a file before upload in ASP.NET MVC File Upload | Syncfusion
+title: How to check the MIME type of a file in ##Platform_Name## | Syncfusion
 description: Check the MIME type of a file in the Syncfusion ASP.NET MVC File Upload before upload by reading the file object inside the uploading event handler.
 platform: ej2-asp-core-mvc
 control: Check The Mime Type Of File Before Upload It
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to check the MIME type of a file before upload in ASP.NET MVC File Upload
+# How to check the MIME type of a file before upload in ASP.NET MVC
 
 By using [uploading](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Uploading) event, you can get the file MIME type before uploading it to server. 
 In the below sample, file MIME type is shown in the alert box before file start to upload.

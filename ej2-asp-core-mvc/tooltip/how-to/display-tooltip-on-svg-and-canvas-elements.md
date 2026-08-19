@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display Tooltip on SVG and canvas elements in ##Platform_Name## Tooltip | Syncfusion
+title: Display Tooltip on SVG and Canvas in ##Platform_Name## | Syncfusion
 description: Display the Syncfusion ##Platform_Name## Tooltip on SVG and canvas elements by directly attaching the visualization targets for data hover tooltips.
 platform: ej2-asp-core-mvc
 control: Display Tooltip On Svg And Canvas Elements
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to display Tooltip on SVG and canvas elements in ##Platform_Name## Tooltip
+# Display Tooltip on SVG and Canvas in ##Platform_Name##
 
 Tooltip can be displayed on both SVG and Canvas elements. You can directly attach the `<svg>` or `<canvas>` elements to show tooltips on data visualization elements.
 

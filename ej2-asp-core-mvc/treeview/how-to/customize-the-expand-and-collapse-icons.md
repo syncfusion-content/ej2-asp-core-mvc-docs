@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the expand and collapse icons in ##Platform_Name## TreeView | Syncfusion
+title: Customize Expand and Collapse Icons in ##Platform_Name## | Syncfusion
 description: Customize the expand and collapse icons in the Syncfusion ##Platform_Name## TreeView using the cssClass property and theme or font-icon styling.
 platform: ej2-asp-core-mvc
 control: TreeView
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to customize the expand and collapse icons in ##Platform_Name## TreeView
+# Customize Expand and Collapse Icons in ##Platform_Name##
 
 You can customize the TreeView's expand and collapse icons by using the `cssClass` property of TreeView. Refer to the following sample to see how to customize expand/collapse icons.
 

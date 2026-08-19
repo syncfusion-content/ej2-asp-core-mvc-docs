@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to change floating label color in ##Platform_Name## TextBox | Syncfusion
+title: Change Floating Label Color in ##Platform_Name## TextBox | Syncfusion
 description: Change the floating label color of the Syncfusion ##Platform_Name## TextBox for `success` and `warning` validation states using custom CSS styles.
 platform: ej2-asp-core-mvc
 control: Change The Floating Label Color Of The Textbox

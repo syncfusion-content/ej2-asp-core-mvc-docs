@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the browse button with an HTML element in ASP.NET MVC File Upload | Syncfusion
+title: How to customize the browse button in ##Platform_Name## Uploader | Syncfusion
 description: Customize the Syncfusion ASP.NET MVC File Upload browse button with an HTML element using the buttons property to render user-defined browse markup.
 platform: ej2-asp-core-mvc
 control: Customize Button With Html Element
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to customize the browse button with an HTML element in ASP.NET MVC File Upload
+# How to customize the browse button with an HTML element in ASP.NET MVC
 
 The uploader control allows you to customize the action buttons by using [buttons](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Buttons) property. Refer to the following example.
 

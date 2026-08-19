@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation in ##Platform_Name## TextBox | Syncfusion
-description: Show `error`, `warning`, or `success` validation states on the Syncfusion ##Platform_Name## TextBox by adding `e-error`, `e-warning`, or `e-success` to the `cssClass` property.
+description: Show `error`, `warning`, or `success` validation states on the ##Platform_Name## TextBox by adding `e-error`, `e-warning`, or `e-success`.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##

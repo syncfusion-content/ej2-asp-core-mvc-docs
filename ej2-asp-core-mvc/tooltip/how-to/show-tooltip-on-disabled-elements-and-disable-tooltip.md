@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to show Tooltip on disabled elements in ##Platform_Name## Tooltip | Syncfusion
+title: Show Tooltip on Disabled Elements in ##Platform_Name## | Syncfusion
 description: Show the Syncfusion ##Platform_Name## Tooltip on disabled elements by wrapping the element in a div and disabling pointer events on the child.
 platform: ej2-asp-core-mvc
 control: Show Tooltip On Disabled Elements And Disable Tooltip

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to preview images before uploading in ASP.NET Core File Upload | Syncfusion
+title: How to preview images before upload in ##Platform_Name## | Syncfusion
 description: Preview images before uploading in the Syncfusion ASP.NET Core File Upload by reading file data inside the selected or success event handlers.
 platform: ej2-asp-core-mvc
 control: Preview Images Before Uploading

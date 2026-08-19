@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent content swipe selection in ##Platform_Name## Tabs | Syncfusion
+title: Prevent Content Swipe Selection in ##Platform_Name## Tabs | Syncfusion
 description: Prevent accidental tab changes in Syncfusion ##Platform_Name## Tabs by configuring the `swipeMode` property to disable touch or mouse swipe navigation.
 platform: ej2-asp-core-mvc
 control: Prevent Content Swipe Selection

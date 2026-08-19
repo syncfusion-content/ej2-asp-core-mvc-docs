@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get the total size of selected files in ASP.NET Core File Upload | Syncfusion
+title: How to get total size of selected files in ##Platform_Name## | Syncfusion
 description: Get the total size of selected files in the Syncfusion ASP.NET Core File Upload by summing file sizes inside the selected event before upload.
 platform: ej2-asp-core-mvc
 control: Get The Total Size Of Selected Files
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to get the total size of selected files in ASP.NET Core File Upload
+# How to get the total size of selected files in ASP.NET Core
 
 You can get the total size of selected files before uploading it to the designated server. This can be achieved by using the [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event. Refer to the following example to calculate the total file size.
 

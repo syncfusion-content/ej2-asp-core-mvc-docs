@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sizing in ##Platform_Name## TextBox | Syncfusion
-description: Render the Syncfusion ##Platform_Name## TextBox in three sizes—small, normal, and bigger—by applying the `e-small` or `e-bigger` CSS class to the `cssClass` property.
+description: Render the Syncfusion ##Platform_Name## TextBox in three sizes—small, normal, and bigger—by applying the `e-small` or `e-bigger` CSS class.
 platform: ej2-asp-core-mvc
 control: Sizing
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to open and edit uploaded files in ASP.NET Core File Upload | Syncfusion
+title: How to open and edit uploaded files in ##Platform_Name## | Syncfusion
 description: Open and edit uploaded files in the Syncfusion ASP.NET Core File Upload by storing the path in the success event and serving it from the server.
 platform: ej2-asp-core-mvc
 control: Open And Edit The Uploaded Files

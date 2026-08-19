@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to sort the selected files in ASP.NET MVC File Upload | Syncfusion
+title: How to sort the selected files in ##Platform_Name## | Syncfusion
 description: Sort the selected files in the Syncfusion ASP.NET MVC File Upload using the selected event to reorder files in the list before upload.
 platform: ej2-asp-core-mvc
 control: Sort The Selected Files

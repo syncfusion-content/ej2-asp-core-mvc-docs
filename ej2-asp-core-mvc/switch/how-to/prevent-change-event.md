@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to prevent change event in ##Platform_Name## Toggle Switch Button | Syncfusion
+title: Prevent Change Event in ##Platform_Name## Switch | Syncfusion
 description: Intercept and cancel a Syncfusion ##Platform_Name## Toggle Switch Button state change using the `BeforeChange` event to add conditional logic or validation.
 platform: ej2-asp-core-mvc
 control: Prevent State Change

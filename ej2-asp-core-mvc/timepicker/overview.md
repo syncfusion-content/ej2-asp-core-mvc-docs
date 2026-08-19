@@ -16,7 +16,7 @@ documentation: ug
 
 The TimePicker provides the following features.
 
-* **[Time Range](/timepicker/time-range)**
-* **[Globalization](/timepicker/globalization)**
-* **[Strict Mode](/timepicker/strict-mode)**
-* **[Accessibility](/timepicker/accessibility)**
+* **[Time Range](./time-range)**
+* **[Globalization](./globalization)**
+* **[Strict Mode](./strict-mode)**
+* **[Accessibility](./accessibility)**

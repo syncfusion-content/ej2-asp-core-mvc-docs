@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to render tab items using template in ##Platform_Name## Tabs | Syncfusion
+title: Render Tab Items Using Template in ##Platform_Name## Tabs | Syncfusion
 description: Render Syncfusion ##Platform_Name## Tabs items from any data using the content template property with the `e-tab-header` and `e-content` classes.
 platform: ej2-asp-core-mvc
 control: Render The Tab Items Using Content Template

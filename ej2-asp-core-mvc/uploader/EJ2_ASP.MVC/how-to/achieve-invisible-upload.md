@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to achieve invisible upload in ASP.NET MVC File Upload | Syncfusion
+title: How to achieve invisible upload in ##Platform_Name## | Syncfusion
 description: Achieve an invisible upload in the Syncfusion ASP.NET MVC File Upload by handling the selected event to process files without showing the UI.
 platform: ej2-asp-core-mvc
 control: Achieve Invisible Upload

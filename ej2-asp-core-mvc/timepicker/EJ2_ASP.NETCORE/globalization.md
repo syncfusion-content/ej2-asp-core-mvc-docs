@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization in ASP.NET Core TimePicker | Syncfusion
-description: Adapt the Syncfusion ASP.NET Core TimePicker to various languages by parsing and formatting the time with internationalization and culture-specific localization.
+description: Adapt the Syncfusion ASP.NET Core TimePicker to various languages by parsing and formatting time with internationalization and localization.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

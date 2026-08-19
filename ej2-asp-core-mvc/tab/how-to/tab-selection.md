@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to detect tab selection in ##Platform_Name## Tabs | Syncfusion
-description: Detect whether a Syncfusion ##Platform_Name## Tabs selection was made by user interaction or programmatically using the `isInteracted` field in the `selecting` event.
+description: Detect whether a ##Platform_Name## Tabs selection was made by user interaction or programmatically via the `isInteracted` field in the `selecting` event.
 platform: ej2-asp-core-mvc
 control: Tab Selection
 publishingplatform: ##Platform_Name##

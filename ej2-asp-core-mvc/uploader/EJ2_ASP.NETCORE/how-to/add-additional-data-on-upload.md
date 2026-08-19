@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add additional data on upload in ASP.NET Core File Upload | Syncfusion
+title: How to add additional data on upload in ##Platform_Name## | Syncfusion
 description: Add additional form data to the Syncfusion ASP.NET Core File Upload by using the uploading event's customFormData argument sent to the server.
 platform: ej2-asp-core-mvc
 control: Add Additional Data On Upload

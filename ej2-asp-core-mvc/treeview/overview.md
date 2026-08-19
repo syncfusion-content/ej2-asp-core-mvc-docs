@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion ##Platform_Name## TreeView | Syncfusion
-description: Discover the Syncfusion ##Platform_Name## TreeView: a hierarchical tree control with support for data binding, checkboxes, drag-and-drop, multi-selection, and editing.
+description: Discover the Syncfusion ##Platform_Name## TreeView: a hierarchical control with data binding, checkboxes, drag-and-drop, multi-selection, and editing.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##

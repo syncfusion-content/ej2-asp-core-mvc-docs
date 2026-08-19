@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to check/uncheck CheckBox when clicking TreeView node text in ##Platform_Name## TreeView | Syncfusion
+title: Check/Uncheck on TreeView Node Click - ##Platform_Name## | Syncfusion
 description: Check and uncheck the CheckBox in the Syncfusion ##Platform_Name## TreeView when the user clicks a node by handling the nodeClicked event.
 platform: ej2-asp-core-mvc
 control: TreeView
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# How to check/uncheck CheckBox when clicking TreeView node text in ##Platform_Name## TreeView
+# Check/Uncheck on TreeView Node Click in ##Platform_Name##
 
 You can check and uncheck the checkboxes of TreeView by clicking the tree node using the `nodeClicked` event of TreeView.
 

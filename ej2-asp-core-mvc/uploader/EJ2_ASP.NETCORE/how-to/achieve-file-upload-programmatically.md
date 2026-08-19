@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to upload files programmatically in ASP.NET Core File Upload | Syncfusion
+title: How to upload files programmatically in ##Platform_Name## | Syncfusion
 description: Upload files programmatically in the Syncfusion ASP.NET Core File Upload using the upload method and the getFilesData API to list selected files.
 platform: ej2-asp-core-mvc
 control: Achieve File Upload Programmatically

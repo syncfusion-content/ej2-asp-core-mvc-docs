@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to populate tabs through view bag in ##Platform_Name## Tabs | Syncfusion
+title: Populate Tabs Through ViewBag in ##Platform_Name## | Syncfusion
 description: Populate Syncfusion ##Platform_Name## Tabs items and content in the controller, return them as ViewBag, and map them to chart, grid, and calendar content.
 platform: ej2-asp-core-mvc
 control: Populate Tab Items And Their Content Through View Bag

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to add TextBox programmatically in ##Platform_Name## TextBox | Syncfusion
+title: Add TextBox Programmatically in ##Platform_Name## TextBox | Syncfusion
 description: Add a Syncfusion ##Platform_Name## TextBox programmatically by importing the `Input` module from `ej2-inputs` and passing the HTML input element to `createInput`.
 platform: ej2-asp-core-mvc
 control: Add Textbox Programmatically

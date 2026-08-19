@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize the progress bar in ASP.NET Core File Upload | Syncfusion
+title: How to customize the progress bar in ##Platform_Name## | Syncfusion
 description: Customize the Syncfusion ASP.NET Core File Upload progress bar with CSS overrides for size, color, and background appearance in the upload list.
 platform: ej2-asp-core-mvc
 control: Customize Progressbar

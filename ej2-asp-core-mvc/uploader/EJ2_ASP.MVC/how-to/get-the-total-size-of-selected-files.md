@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get the total size of selected files in ASP.NET MVC File Upload | Syncfusion
+title: How to get total size of selected files in ##Platform_Name## | Syncfusion
 description: Get the total size of selected files in the Syncfusion ASP.NET MVC File Upload by summing file sizes inside the selected event before upload.
 platform: ej2-asp-core-mvc
 control: Get The Total Size Of Selected Files
