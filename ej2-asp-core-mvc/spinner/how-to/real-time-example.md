@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Real time example using ##Platform_Name## Spinner Component
-description: Learn here all about creating real time example using ##Platform_Name## Spinner component of Syncfusion Essential JS 2 and more.
+title: Real Time Example Using Spinner in ##Platform_Name## Spinner | Syncfusion
+description: Learn how to use the Syncfusion ##Platform_Name## Spinner in a real-time scenario to indicate data loading while expanding collapsed swimlane rows in a Kanban control.
 platform: ej2-asp-core-mvc
 control: Spinner
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Real Time Example Using Spinner
+# Real Time Example Using Spinner in ##Platform_Name## Spinner
 
 In the following sample, you can see the Spinner when expanding the collapsed swimlane rows in Kanban control. The Spinner indicates the loading data while fetching the data.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Speed Dial Control | Syncfusion
-description: Checkout and learn here all about Accessibility in ##Platform_Name## Speed Dial control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about the accessibility features in the Syncfusion ##Platform_Name## Speed Dial, including WCAG 2.2 compliance, WAI-ARIA support, keyboard navigation, and accessibility validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET MVC Speed Dial control
+# Accessibility in ##Platform_Name## Speed Dial
 
 The Speed Dial control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

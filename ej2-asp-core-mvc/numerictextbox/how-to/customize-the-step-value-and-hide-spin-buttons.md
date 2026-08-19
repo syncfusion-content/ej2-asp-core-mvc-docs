@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize The Step Value And Hide Spin Buttons in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Customize The Step Value And Hide Spin Buttons in Syncfusion ##Platform_Name## Numerictextbox component of syncfusion and more.
+title: Customize the Step Value and Hide Spin Buttons in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn how to customize step values and show or hide spin buttons in ##Platform_Name## Numeric TextBox using the step and showSpinButton properties.
 platform: ej2-asp-core-mvc
 control: Customize The Step Value And Hide Spin Buttons
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize the step value and hide spin buttons
+# Customize the Step Value and Hide Spin Buttons
 
 The spin buttons allow you to increase or decrease the value with the predefined [step](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_Step) value. The visibility of spin buttons can be set using the [showSpinButton](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#Syncfusion_EJ2_Inputs_NumericTextBox_ShowSpinButton) property.
 

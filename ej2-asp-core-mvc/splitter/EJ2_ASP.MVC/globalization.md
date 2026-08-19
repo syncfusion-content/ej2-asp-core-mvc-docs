@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Splitter Component
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Splitter | Syncfusion
+description: Learn about globalization support in the Syncfusion ##Platform_Name## Splitter, including right-to-left (RTL) layout support for languages such as Arabic and Hebrew.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

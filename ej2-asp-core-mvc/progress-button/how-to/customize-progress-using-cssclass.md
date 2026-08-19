@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize Progress Using Cssclass in ##Platform_Name## Progress Button Component
-description: Learn here all about Customize Progress Using Cssclass in Syncfusion ##Platform_Name## Progress Button component of syncfusion and more.
+title: Customize Progress Using cssClass in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to customize Progress Button progress indicators using the cssClass property to create vertical, top-positioned, and reverse progress styles.
 platform: ej2-asp-core-mvc
 control: Customize Progress Using Cssclass
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize progress using cssClass
+# Customize Progress Using CssClass
 
 You can customize the background filler UI using the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.ProgressButton.html#Syncfusion_EJ2_SplitButtons_ProgressButton_CssClass) property.
 

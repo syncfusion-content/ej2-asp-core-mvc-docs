@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Slider Ticks Label in ##Platform_Name## Range Slider | Syncfusion
-description: Learn here all about Customize Slider Ticks Label in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Customize Slider Tick Labels in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to customize Range Slider tick labels and tick appearance using CSS and custom styling.
 platform: ej2-asp-core-mvc
 control: Customize Slider Ticks Label
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize Slider Ticks label
+# Customize Range Slider Tick Labels
 
 Slider view can be customized via CSS. By overriding the slider CSS classes, you can customize the ticks. The ticks in slider allows you to easily identify the current value/values of the slider. It contains [`smallStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_SmallStep) and [`largeStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_LargeStep). By default, slider has class `e-tick` for slider ticks. You can override the class as per your requirement. Refer to the following code snippet to render ticks.
 

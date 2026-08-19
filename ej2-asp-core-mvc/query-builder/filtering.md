@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Query Builder control | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to create and delete conditions and groups in ##Platform_Name## Query Builder using UI actions and built-in methods.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
+# Filtering in ##Platform_Name## Query Builder
 
 Query Builder allows you to create or delete conditions and groups. You can use [`ShowButtons`]
 (https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_ShowButtons) to enable/disable these buttons.

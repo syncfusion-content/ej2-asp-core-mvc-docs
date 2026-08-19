@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Sidebar Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Styling and Appearance in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to customize the appearance of the Syncfusion ##Platform_Name## Sidebar using CSS, including positioning, dock mode, sidebar types, RTL support, overlays, and animation behavior.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearance
+# Styling and Appearance in ##Platform_Name## Sidebar
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user's preference.
 

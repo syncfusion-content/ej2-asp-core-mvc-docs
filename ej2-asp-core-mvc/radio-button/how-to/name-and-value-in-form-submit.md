@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Name And Value In Form Submit in ##Platform_Name## Radio Button Control | Syncfusion
-description: Learn here all about Name And Value In Form Submit in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: Name and Value in Form Submission for ##Platform_Name## Radio Button | Syncfusion
+description: Learn how the name and value properties of ##Platform_Name## Radio Button work during form submission and how selected values are posted to the server.
 platform: ej2-asp-core-mvc
 control: Name And Value In Form Submit
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Name and Value in form submit
+# Name and Value in Form Submission for Radio Button
 
 The name attribute of the RadioButton is used to group RadioButton. When the RadioButton are grouped in form, the checked items value attribute will be post to server on form submit that can be retrieved through the name. The disabled RadioButton value will not be sent to the server on form submit.
 

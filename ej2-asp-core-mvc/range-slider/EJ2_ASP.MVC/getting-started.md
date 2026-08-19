@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Range Slider | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more details.
+description: Learn how to get started with ##Platform_Name## Range Slider, including package installation, project configuration, and rendering a basic slider.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Range Slider Control
+# Getting Started with ##Platform_Name## Range Slider
 
 This section briefly explains how to include the [ASP.NET MVC Range Slider](https://www.syncfusion.com/aspnet-mvc-ui-controls/range-slider) control in an ASP.NET MVC application using Visual Studio.
 

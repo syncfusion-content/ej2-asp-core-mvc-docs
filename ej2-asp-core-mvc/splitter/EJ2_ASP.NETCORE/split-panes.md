@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Split Panes in ##Platform_Name## Splitter Component
-description: Learn here all about Split Panes in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Split Panes in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to create and manage split panes in the Syncfusion ##Platform_Name## Splitter, including horizontal and vertical layouts, multiple panes, nested splitters, separators, and dynamic pane operations.
 platform: ej2-asp-core-mvc
 control: Split Panes
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Split panes
+# Split Panes in ##Platform_Name## Splitter
 
 This section explain about split panes behaviours.
 

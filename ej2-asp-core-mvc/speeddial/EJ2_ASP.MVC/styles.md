@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styles in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn here all about styles and icons in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Styles in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about styling and customization options in the Syncfusion ##Platform_Name## Speed Dial, including icons, buttons, CSS classes, tooltips, visibility, and hover behavior.
 platform: ej2-asp-core-mvc
 control: Styles
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles in ASP.NET MVC SpeedDial Control
+# Styles in ##Platform_Name## Speed Dial
 
 This section briefs different ways to style SpeedDial Control.
 

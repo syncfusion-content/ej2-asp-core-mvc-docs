@@ -1,14 +1,14 @@
 ---
 layout: post
-title: animation in ASP.NET MVC Predefined Dialogs | Syncfusion
-description: Checkout and learn about animation in ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Animation in ASP.NET MVC Predefined Dialogs | Syncfusion
+description: Learn how to configure animation effects in ASP.NET MVC Predefined Dialogs using animationSettings, including delay, duration, and animation effects.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Animation in Predefined Dialogs 
+# Animation in ASP.NET MVC Predefined Dialogs
 
 The predefined dialogs can be animated during the open and close actions. You can customize the `Delay`, `Duration`, and `Effect` of animation by using the `animationSettings` property.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Sidebar Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Sidebar component of Syncfusion Essential JS 2 and more.
+title: Overview of ##Platform_Name## Sidebar | Syncfusion
+description: Learn about the Syncfusion ##Platform_Name## Sidebar component, its features, capabilities, and common navigation
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# Overview of ##Platform_Name## Sidebar
 
 The **Sidebar** is an expandable and collapsible component that typically acts as a side container to place primary or secondary content alongside the main content.
 

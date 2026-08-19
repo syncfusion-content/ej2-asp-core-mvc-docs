@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ticks in ##Platform_Name## Range Slider Control
-description: Learn here all about Ticks in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Ticks in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to configure ticks, step values, and min-max ranges in Syncfusion ##Platform_Name## Range Slider for precise value selection.
 platform: ej2-asp-core-mvc
 control: Ticks
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Ticks
+# Ticks in ##Platform_Name## Range Slider
 
 The Ticks in Slider supports you to easily identify the current value/values of the Slider. It contains [`smallStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_SmallStep) and [`largeStep`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_LargeStep). The value of the major ticks alone will be displayed in the slider. In order to enable/disable the small ticks, use the [`showSmallTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTicksData.html#Syncfusion_EJ2_Inputs_SliderTicksData_ShowSmallTicks) property.
 

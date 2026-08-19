@@ -1,14 +1,14 @@
 ---
 layout: post
-title: customization in ASP.NET MVC Predefined Dialogs | Syncfusion
-description: Checkout and learn about customization in ASP.NET MVC Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Customization in ASP.NET MVC Predefined Dialogs | Syncfusion
+description: Learn how to customize ASP.NET MVC Predefined Dialogs, including action buttons, close options, and dialog content customization.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ejmvc
 documentation: ug
 ---
 
-# Customization of Predefined Dialogs 
+# Customization in ASP.NET MVC Predefined Dialogs
 
 ## Customize action buttons
 

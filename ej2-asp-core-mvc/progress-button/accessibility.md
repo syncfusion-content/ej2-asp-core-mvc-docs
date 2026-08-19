@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Progress Button Component
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Progress Button | Syncfusion
+description: Learn about accessibility support in Syncfusion ##Platform_Name## Progress Button, including WCAG compliance, WAI-ARIA attributes, keyboard interaction, and accessibility validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

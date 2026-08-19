@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Getting Started with ##Platform_Name## Stepper | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Stepper control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Stepper Control
+# Getting Started with ##Platform_Name## Stepper
 
 This section briefly explains about how to include `ASP.NET MVC Stepper` control in your ASP.NET MVC application using Visual Studio.
 

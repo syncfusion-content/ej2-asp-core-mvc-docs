@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Partial View with Syncfusion ##Platform_Name## Sidebar control
-description: Learn here all about Sidebar With Partial View in Syncfusion ##Platform_Name## Sidebar control of Syncfusion Essential JS 2 and more.
+title: Sidebar with Partial View in ##Platform_Name## Sidebar | Syncfusion
+description: Learn how to render the Syncfusion ##Platform_Name## Sidebar using a partial view and display additional components such as Accordion inside the Sidebar.
 platform: ej2-asp-core-mvc
 control: Sidebar With Partial View
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sidebar with partial view
+# Sidebar with Partial View in ##Platform_Name## Sidebar
 
 The example below demonstrates how to render the Sidebar using a partial view. The Sidebar element is included inside the **RenderPartialView.cshtml** file and is referenced in the layout page. The Accordion control is rendered inside the Sidebar.
 

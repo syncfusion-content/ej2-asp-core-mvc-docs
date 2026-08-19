@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Range Slider | Syncfusion
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Range Slider Component | Syncfusion
+description: Explore the Syncfusion ##Platform_Name## Range Slider component and its key features, including range selection, orientation, ticks, tooltips, formatting, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview in ##Platform_Name## Range Slider Control
+# About Syncfusion ##Platform_Name## Range Slider Component.
 
 The Slider control allows the user to select a value or range of values in-between the min and max range, by dragging the handle over the slider bar.
 

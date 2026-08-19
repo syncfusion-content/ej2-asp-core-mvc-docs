@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Signature Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Signature control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Signature | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Signature control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Signature Control
+# Getting Started with ##Platform_Name## Signature
 
 This section briefly explains how to include the [ASP.NET MVC Signature](https://www.syncfusion.com/aspnet-mvc-ui-controls/signature) control in an ASP.NET MVC application using Visual Studio.
 
