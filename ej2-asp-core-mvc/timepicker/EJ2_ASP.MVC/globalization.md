@@ -69,7 +69,8 @@ The following example demonstrates the TimePicker in `German` culture.
 {% include code-snippet/timepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -78,7 +79,8 @@ The following example demonstrates the TimePicker in `German` culture.
 {% include code-snippet/timepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -98,7 +100,8 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% include code-snippet/timepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -107,6 +110,7 @@ The following example demonstrates TimePicker in `Arabic` culture with right-to-
 {% include code-snippet/timepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

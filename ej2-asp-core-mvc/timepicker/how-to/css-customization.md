@@ -37,7 +37,8 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 {% include code-snippet/timepicker/how-to/css/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -46,6 +47,7 @@ The below sample demonstrates customization of text appearance in a textbox, pop
 {% include code-snippet/timepicker/how-to/css/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
