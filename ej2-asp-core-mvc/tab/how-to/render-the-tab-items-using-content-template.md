@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render The Tab Items Using Content Template in ##Platform_Name## Tab Component
-description: Learn here all about Render The Tab Items Using Content Template in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to render tab items using template in ##Platform_Name## Tabs | Syncfusion
+description: Render Syncfusion ##Platform_Name## Tabs items from any data using the content template property with the `e-tab-header` and `e-content` classes.
 platform: ej2-asp-core-mvc
 control: Render The Tab Items Using Content Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Render the Tab items using content template
+# How to render tab items using template in ##Platform_Name## Tabs
 
 You can bind any data in Tab items, by simply using the content template property in ASP.NET Tab.
 

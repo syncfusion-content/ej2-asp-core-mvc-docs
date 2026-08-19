@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create And Show Tooltip On Multiple Targets in ##Platform_Name## Tooltip Component
-description: Learn here all about Create And Show Tooltip On Multiple Targets in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
+title: How to create and show Tooltip on multiple targets in ##Platform_Name## Tooltip | Syncfusion
+description: Create and show the Syncfusion ##Platform_Name## Tooltip on multiple targets inside a container by assigning matching selectors to the target property.
 platform: ej2-asp-core-mvc
 control: Create And Show Tooltip On Multiple Targets
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create and show Tooltip on multiple targets
+# How to create and show Tooltip on multiple targets in ##Platform_Name## Tooltip
 
 Tooltip can be created and shown on multiple targets within a container by defining the specific target elements to the target property. So, the Tooltip is initialized only on matched targets within a container.
 

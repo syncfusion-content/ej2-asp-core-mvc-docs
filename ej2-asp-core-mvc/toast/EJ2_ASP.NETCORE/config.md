@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Config in ##Platform_Name## Toast Component
-description: Learn here all about Config in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Config in ASP.NET Core Toast | Syncfusion
+description: Customize the Syncfusion ASP.NET Core Toast notification message using the `title` and `content` properties to display HTML or string values adaptively.
 platform: ej2-asp-core-mvc
 control: Config
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Configuring Options
+# Config in ASP.NET Core Toast
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 

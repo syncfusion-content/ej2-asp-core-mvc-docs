@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## TreeView Component | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## TreeView component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ASP.NET MVC TreeView | Syncfusion
+description: Migrate your ASP.NET MVC TreeView from Essential JS 1 to Essential JS 2 with this API mapping guide listing renamed properties, events, and methods.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ASP.NET MVC TreeView
 
 This article describes the API migration process of TreeView component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Switch Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Switch control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Toggle Switch Button | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core Toggle Switch Button control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Switch
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Switch Control
+# Getting Started with ASP.NET Core Toggle Switch Button
 
 This section briefly explains how to include the [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

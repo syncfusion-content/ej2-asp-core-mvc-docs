@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Tab Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## Tabs | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## Tabs: a content panel to show multiple contents in a specific space, one at a time, with rich features.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## Tabs Component.
 
 The Tab is a content panel to show multiple contents in a specific space, one at a time.
 

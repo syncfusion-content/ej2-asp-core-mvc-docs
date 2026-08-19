@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable Ripple For Switch Label in ##Platform_Name## Switch Component
-description: Learn here all about Enable Ripple For Switch Label in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
+title: How to enable ripple for label in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Enable the ripple effect on labels in the Syncfusion ##Platform_Name## Toggle Switch Button using the `rippleMouseHandler` method.
 platform: ej2-asp-core-mvc
 control: Enable Ripple For Switch Label
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable ripple for Switch label
+# How to enable ripple for label in ##Platform_Name## Toggle Switch Button
 
 By default, label with ripple effect is not available in Switch. You can achieve this using `rippleMouseHandler` method. The following example illustrates how to enable ripple effect for labels in Switch component.
 

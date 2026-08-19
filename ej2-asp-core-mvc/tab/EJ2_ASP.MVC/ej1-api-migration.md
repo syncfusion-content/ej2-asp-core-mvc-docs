@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Tab Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ASP.NET MVC Tabs | Syncfusion
+description: Migrate the Syncfusion ASP.NET MVC Tabs from Essential JS 1 to Essential JS 2 by mapping old API properties and events to their new equivalents.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# EJ1 API Migration in ASP.NET MVC Tabs
 
 This article describes the API migration process of Tab component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

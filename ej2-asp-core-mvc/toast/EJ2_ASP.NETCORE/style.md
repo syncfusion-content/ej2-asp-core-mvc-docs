@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Toast Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Style in ASP.NET Core Toast | Syncfusion
+description: Customize the Syncfusion ASP.NET Core Toast title, content, and appearance using CSS to modify font-family, font-size, and color properties.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# CSS structures
+# Style in ASP.NET Core Toast
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

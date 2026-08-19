@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migration From Css Textbox To Aspnetmvc Textbox in ##Platform_Name## Textbox Component
-description: Learn here all about Migration From Css Textbox To Aspnetmvc Textbox in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
+title: Migration from CSS TextBox to ASP.NET MVC TextBox | Syncfusion
+description: Migrate from CSS-based ASP.NET MVC TextBox to the TagHelper control for floating labels, clear buttons, and validation states in a unified API.
 platform: ej2-asp-core-mvc
 control: Migration From Css Textbox To Aspnetmvc Textbox
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# ASP.NET MVC textbox control
+# Migration from CSS TextBox to ASP.NET MVC TextBox
 
 N> From v16.3.21 version, the textbox is provided as ASP.NET MVC control to achieve the floating label textbox with minimal code. You can find the available textbox properties, methods, and events in the [API reference](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.TextBox.html).
 

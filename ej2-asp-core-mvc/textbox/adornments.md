@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adornments in ##Platform_Name## Textbox control | Syncfusion
-description: Learn here all about Adornments in Syncfusion ##Platform_Name## Textbox control of Syncfusion Essential JS 2 and more.
+title: Adornments in ##Platform_Name## TextBox | Syncfusion
+description: Add icons, text labels, or action buttons before or after the Syncfusion ##Platform_Name## TextBox using `prependTemplate` and `appendTemplate` for visual context.
 platform: ej2-asp-core-mvc
 control: Adornments
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Adornments in ##Platform_Name## TextBox control
+# Adornments in ##Platform_Name## TextBox
 
 Adornments allow you to add custom elements before or after the TextBox using `prependTemplate` and `appendTemplate`. These elements can include icons, text labels, or action buttons to improve usability and provide visual context.
 

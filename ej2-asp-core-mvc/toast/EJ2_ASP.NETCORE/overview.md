@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Toast Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ASP.NET Core Toast | Syncfusion
+description: Discover the Syncfusion ASP.NET Core Toast: a small container for showing a single or multiple informative notification lines with actions.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ASP.NET Core Toast Component.
 
 The toast is a small container, in which user can show a single or multiple informative lines with actions.
 

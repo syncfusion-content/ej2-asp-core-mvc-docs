@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Setting Dimension in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Setting Dimension in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Setting Dimension in ##Platform_Name## Tooltip | Syncfusion
+description: Set the Syncfusion ##Platform_Name## Tooltip width and height using the width and height properties to control outer dimensions or use auto sizing.
 platform: ej2-asp-core-mvc
 control: Setting Dimension
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Setting Dimension in Tooltip Control
+# Setting Dimension in ##Platform_Name## Tooltip
 
 ## Height and width
 

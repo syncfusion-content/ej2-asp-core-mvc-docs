@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom Tooltip With Dynamic Html in ##Platform_Name## Tooltip Component | Syncfusion
-description: Learn here all about Custom Tooltip With Dynamic Html in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: How to show custom Tooltip with dynamic HTML in ##Platform_Name## Tooltip | Syncfusion
+description: Load dynamic HTML such as iframes, videos, and maps inside the Syncfusion ##Platform_Name## Tooltip by using string-based HTML in the content property.
 platform: ej2-asp-core-mvc
 control: Custom Tooltip With Dynamic Html
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Custom Tooltip with dynamic HTML
+# How to show custom Tooltip with dynamic HTML in ##Platform_Name## Tooltip
 
 Tooltip loads HTML pages via HTML tags such as iframe, video, and map using the `content` property, which supports both string and HTML tags.
 

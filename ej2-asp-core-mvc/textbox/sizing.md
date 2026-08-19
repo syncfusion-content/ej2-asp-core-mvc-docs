@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sizing in Syncfusion ##Platform_Name## Textbox Component
-description: Learn here all about Sizing in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: Sizing in ##Platform_Name## TextBox | Syncfusion
+description: Render the Syncfusion ##Platform_Name## TextBox in three sizes—small, normal, and bigger—by applying the `e-small` or `e-bigger` CSS class to the `cssClass` property.
 platform: ej2-asp-core-mvc
 control: Sizing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sizing in ##Platform_Name## TextBox component
+# Sizing in ##Platform_Name## TextBox
 
 You can render the TextBox in three different sizes.
 

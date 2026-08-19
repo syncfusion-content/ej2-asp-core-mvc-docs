@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Save And Remove Action Razor in ASP.NET Core Uploader | Syncfusion
-description: Learn here all about Save And Remove Action Razor in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to wire save and remove actions in ASP.NET Core File Upload Razor Page | Syncfusion
+description: Wire save and remove action handlers in an ASP.NET Core Razor Page for the Syncfusion File Upload via the saveUrl and removeUrl in async settings.
 platform: ej2-asp-core-mvc
 control: Save And Remove Action Razor
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Save and Remove action in ASP.NET Core Razor
+# How to wire save and remove actions in ASP.NET Core File Upload Razor Page
 
 The save action handler upload the files that needs to be specified in the [saveUrl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.UploaderAsyncSettings.html#Syncfusion_EJ2_Inputs_UploaderAsyncSettings_SaveUrl) property. 
 The save handler receives the submitted files and manages the save process in server.

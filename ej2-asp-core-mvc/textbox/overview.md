@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Textbox Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: About Syncfusion ##Platform_Name## TextBox | Syncfusion
+description: Discover the Syncfusion ##Platform_Name## TextBox: an editable input element with support for groups, floating labels, sizing, and validation states.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# About Syncfusion ##Platform_Name## TextBox Component.
 
 The TextBox is an input element that allows to get input from the user. It allows the user to edit or display the text value.
 

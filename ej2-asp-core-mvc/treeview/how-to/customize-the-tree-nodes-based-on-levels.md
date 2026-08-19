@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize nodes based on levels in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Customize the Tree Nodes Based On Levels in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
+title: How to customize the TreeView nodes based on levels in ##Platform_Name## TreeView | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## TreeView node appearance at each level with a custom cssClass plus per-level styles for clear visual hierarchy.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize the tree nodes based on levels
+# How to customize the TreeView nodes based on levels in ##Platform_Name## TreeView
 
 You can customize the tree nodes based on their levels by adding a custom `cssClass` to the control and enabling specific styles.
 

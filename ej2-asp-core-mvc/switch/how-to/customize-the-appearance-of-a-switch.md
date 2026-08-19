@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize The Appearance Of A Switch in ##Platform_Name## Switch Component
-description: Learn here all about Customize The Appearance Of A Switch in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
+title: How to customize the appearance in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Toggle Switch Button bar and handle styles, including colors and border radius, using the `cssClass` property.
 platform: ej2-asp-core-mvc
 control: Customize The Appearance Of A Switch
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize the appearance of a Switch
+# How to customize the appearance in ##Platform_Name## Toggle Switch Button
 
 You can customize the appearance of the Switch component using the CSS rules. Define your own CSS rules according to your requirement and assign the class name to the [`cssClass`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_CssClass) property.
 

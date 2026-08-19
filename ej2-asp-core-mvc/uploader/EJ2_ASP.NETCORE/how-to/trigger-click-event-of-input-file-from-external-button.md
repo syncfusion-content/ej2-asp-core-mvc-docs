@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Trigger Input File Click Event in ASP.NET Core | Syncfusion
-description: Learn here all about Trigger Click Event Of Input File From External Button in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
+title: How to trigger the input-file click event from an external button in ASP.NET Core File Upload | Syncfusion
+description: Trigger the input file click event from an external button in the Syncfusion ASP.NET Core File Upload by binding a click handler to invoke the hidden input.
 platform: ej2-asp-core-mvc
 control: Trigger Click Event Of Input File From External Button
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Trigger click event of input file from external button in ASP.NET Core
+# How to trigger the input-file click event from an external button in ASP.NET Core File Upload
 
 You can trigger the click event of input file from external button using `click` event of button. In the below sample, triggered click event of input file from `Essential JavaScript 2 Button`.
 

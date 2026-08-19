@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize Images Before Uploading in ASP.NET MVC Uploader | Syncfusion
-description: Learn here all about Resize Images Before Uploading It To The Server in Syncfusion ##Platform_Name## Uploader component of syncfusion and more.
+title: How to resize images before uploading to the server in ASP.NET MVC File Upload | Syncfusion
+description: Resize images in the Syncfusion ASP.NET MVC File Upload before upload by drawing the selected image on a canvas with custom dimensions in the selected event.
 platform: ej2-asp-core-mvc
 control: Resize Images Before Uploading It To The Server
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resize images before uploading it to the server
+# How to resize images before uploading to the server in ASP.NET MVC File Upload
 
 You can customize the dimension of the images before uploading it to the server. 
 By using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event, you can get the selected file information as type of an object. From the obtained image file information, create a new canvas and render an image with the custom dimensions. Refer the corresponding code snippet as follows.

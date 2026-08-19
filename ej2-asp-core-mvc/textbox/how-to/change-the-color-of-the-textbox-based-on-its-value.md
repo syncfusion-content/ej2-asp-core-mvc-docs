@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change Textbox Color Based on Value in Syncfusion Textbox
-description: Learn here all about Change The Color Of The Textbox Based On Its Value in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
+title: How to change color based on value in ##Platform_Name## TextBox | Syncfusion
+description: Change the Syncfusion ##Platform_Name## TextBox color based on its value by validating the input with a regular expression for numeric values.
 platform: ej2-asp-core-mvc
 control: Change The Color Of The Textbox Based On Its Value
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Change the color of the TextBox based on its value
+# How to change color based on value in ##Platform_Name## TextBox
 
 You can change the color of the TextBox by validating its value using regular expression for predicting the numeric values as demonstrated in the following code sample.
 

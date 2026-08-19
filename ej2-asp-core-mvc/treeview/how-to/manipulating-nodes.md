@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nodes manipulation in Syncfusion ##Platform_Name## TreeView control | Syncfusion
-description: Learn here all about Nodes manipulation in Syncfusion ##Platform_Name## TreeView control of syncfusion and more.
+title: How to manipulate TreeView nodes in ##Platform_Name## TreeView | Syncfusion
+description: Manipulate Syncfusion ##Platform_Name## TreeView nodes dynamically using addNodes, removeNodes, updateNode, refreshNode, and moveNodes APIs.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Nodes manipulation in TreeView control
+# How to manipulate TreeView nodes in ##Platform_Name## TreeView
 
 The TreeView control provides essential methods for dynamically managing nodes, offering the ability to create a highly interactive and customizable tree structure.
 

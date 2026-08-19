@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Css Customization in ##Platform_Name## Timepicker Component
-description: Learn here all about Css Customization in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: How to customize CSS in ##Platform_Name## TimePicker | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## TimePicker textbox and popup list appearance with CSS by adding custom classes to the `cssClass` property.
 platform: ej2-asp-core-mvc
 control: Css Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS customization
+# How to customize CSS in ##Platform_Name## TimePicker
 
 TimePicker allows you to customize the textbox and popup list appearance to suit your application by using [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.TimePicker.html#Syncfusion_EJ2_Calendars_TimePicker_CssClass) property.
 

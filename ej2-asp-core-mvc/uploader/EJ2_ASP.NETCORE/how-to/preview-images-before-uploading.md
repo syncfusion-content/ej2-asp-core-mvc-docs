@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Preview Images Before Uploading in ASP.NET Core Uploader | Syncfusion
-description: Learn here all about Preview Images Before Uploading in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to preview images before uploading in ASP.NET Core File Upload | Syncfusion
+description: Preview images before uploading in the Syncfusion ASP.NET Core File Upload by reading file data inside the selected or success event handlers.
 platform: ej2-asp-core-mvc
 control: Preview Images Before Uploading
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Preview images before uploading in ASP.NET Core
+# How to preview images before uploading in ASP.NET Core File Upload
 
 The uploader control allows to create preview images before uploading. The preview images can be created by reading the file using [selected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Selected) event. Also, the user can create preview images after uploading to server using [success](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Success) event. Refer to the following link to learn about how to create image preview.
 

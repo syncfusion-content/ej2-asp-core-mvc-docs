@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load Tab Items Dynamically in ##Platform_Name## Tab Component
-description: Learn here all about Load Tab Items Dynamically in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to load tab items dynamically in ##Platform_Name## Tabs | Syncfusion
+description: Add Syncfusion ##Platform_Name## Tabs items dynamically at runtime by passing an array of items and an index value to the `addTab` method.
 platform: ej2-asp-core-mvc
 control: Load Tab Items Dynamically
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load Tab items dynamically
+# How to load tab items dynamically in ##Platform_Name## Tabs
 
 Tabs can be added dynamically by passing array of items and index value to the addTab method.
 

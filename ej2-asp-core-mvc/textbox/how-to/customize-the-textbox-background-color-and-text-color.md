@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize The Textbox Background Color And Text Color in ##Platform_Name## Textbox Component
-description: Learn here all about Customize The Textbox Background Color And Text Color in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
+title: How to customize background and text colors in ##Platform_Name## TextBox | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## TextBox background color, text color, and border color by overriding the default CSS styles.
 platform: ej2-asp-core-mvc
 control: Customize The Textbox Background Color And Text Color
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customize the textbox background-color and text-color
+# How to customize background and text colors in ##Platform_Name## TextBox
 
 You can customize the textbox styles such as background-color, text-color and border-color by overriding its default styles.
 

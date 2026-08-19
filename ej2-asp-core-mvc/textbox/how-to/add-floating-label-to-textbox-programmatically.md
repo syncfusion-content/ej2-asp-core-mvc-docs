@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Floating Label To Textbox Programmatically in ##Platform_Name## Textbox Component
-description: Learn here all about Add Floating Label To Textbox Programmatically in Syncfusion ##Platform_Name## Textbox component of syncfusion and more.
+title: How to add floating label programmatically in ##Platform_Name## TextBox | Syncfusion
+description: Add a floating label to a Syncfusion ##Platform_Name## TextBox programmatically by importing `Input` from `ej2-inputs` and using the `createInput` method.
 platform: ej2-asp-core-mvc
 control: Add Floating Label To Textbox Programmatically
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add floating label to TextBox programmatically
+# How to add floating label programmatically in ##Platform_Name## TextBox
 
 The `Floating Label TextBox` floats label above the TextBox after focusing, or entering a value in the TextBox.
 
