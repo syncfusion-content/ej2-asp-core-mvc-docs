@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Signature | Syncfusion
-description: Learn about the accessibility features in Syncfusion ##Platform_Name## Signature, including WCAG 2.2 compliance, keyboard navigation, and assistive technology support.
+description: Learn about accessibility in Syncfusion ##Platform_Name## Signature, including WCAG 2.2 compliance, keyboard navigation, and assistive support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
