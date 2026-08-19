@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize TextBox Background and Text Colors - ##Platform_Name## | Syncfusion
+title: Customize TextBox Background and Text Colors | Syncfusion
 description: Customize the Syncfusion ##Platform_Name## TextBox background color, text color, and border color by overriding the default CSS styles.
 platform: ej2-asp-core-mvc
 control: Customize The Textbox Background Color And Text Color

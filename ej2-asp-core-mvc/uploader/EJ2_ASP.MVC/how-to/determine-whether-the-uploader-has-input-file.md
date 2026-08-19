@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to determine whether the File Upload has an input file in ASP.NET MVC
+# How to determine whether the File Upload has an input file
 
 By setting **required** attribute to uploader input element, you can validate the file input has any value in it. 
 In the below sample, set required attribute to the uploader input element and showcase the validation failure message using `data-required-message` attribute.
