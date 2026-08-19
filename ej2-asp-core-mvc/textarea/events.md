@@ -43,7 +43,7 @@ The TextArea control triggers the [Created](https://help.syncfusion.com/cr/aspne
 ## Input event
 
 The TextArea control triggers the [Input](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Input) each time when the value of TextArea has changed. This event provides users with an opportunity to perform actions in response to real-time changes in the TextArea's content.
-The [InputEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_InputEventArgs/) passed as an event argument provides the details about the input event in the TextArea.
+The [InputEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_InputEventArgs) passed as an event argument provides the details about the input event in the TextArea.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -71,7 +71,7 @@ The [InputEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 ## Change event
 
 The TextArea control triggers the [Change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Change) event when the content of TextArea has changed and gets focus-out. This event provides users with an opportunity to execute specific actions in response to changes made by the user.
-The [ChangedEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_ChangedEventArgs/) passed as an event argument provides the details about the changes in the TextArea's value.
+The [ChangedEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_ChangedEventArgs) passed as an event argument provides the details about the changes in the TextArea's value.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -99,7 +99,7 @@ The [ChangedEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 ## Focus event
 
 The TextArea control triggers the [Focus](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Focus ) when the TextArea gains focus. This event allows developers to execute specific actions when the user interacts with the TextArea by focusing on it.
-The [FocusInEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FocusInEventArgs/) passed as an argument provides details about the focus event in the TextArea.
+The [FocusInEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FocusInEventArgs) passed as an argument provides details about the focus event in the TextArea.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -127,7 +127,7 @@ The [FocusInEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 ## Blur event
 
 The TextArea control triggers the [Blur](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_Blur) when the TextArea loses focus. This event allows users to execute specific actions when the user interacts with the TextArea by moving focus away from it.
-The [FocusOutEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FocusOutEventArgs/) passed as an argument provides details about the blur event in the TextArea.
+The [FocusOutEventArgs](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextBox.html#Syncfusion_EJ2_Inputs_TextBox_FocusOutEventArgs) passed as an argument provides details about the blur event in the TextArea.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

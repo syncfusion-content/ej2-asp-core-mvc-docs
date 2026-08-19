@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started with ASP.NET Core TimePicker
 
-This section briefly explains how to include the [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs).
 
 ## Create ASP.NET Core web application with Razor pages
 
@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 

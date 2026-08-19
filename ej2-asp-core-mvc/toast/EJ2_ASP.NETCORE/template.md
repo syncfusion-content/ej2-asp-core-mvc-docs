@@ -57,6 +57,6 @@ Output be like the below.
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)
 
-* [How to play an audio before open the toast](./how-to/play-an-audio-before-open-the-toast/)
+* [How to play an audio before open the toast](./how-to/play-an-audio-before-open-the-toast)

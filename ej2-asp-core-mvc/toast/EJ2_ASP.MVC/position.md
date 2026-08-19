@@ -59,4 +59,4 @@ Custom `X` and `Y` positions can be given as pixels/numbers/percentage. The numb
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)

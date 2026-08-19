@@ -59,4 +59,4 @@ Custom `X` and `Y` positions can be given as pixels/numbers/percentage. The numb
 
 ## See Also
 
-* [Render toast with different positions](./how-to/show-multiple-toasts-in-various-positions/)
+* [Render toast with different positions](./how-to/show-multiple-toasts-in-various-positions)
