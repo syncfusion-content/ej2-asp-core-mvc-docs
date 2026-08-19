@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Splitter Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Styles in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to customize the appearance of Syncfusion ##Platform_Name## Splitter, including split bars, resize handles, navigation arrows, and CSS styling.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# Styles in ##Platform_Name## Splitter
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

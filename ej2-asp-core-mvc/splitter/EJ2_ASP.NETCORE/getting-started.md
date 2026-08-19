@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Splitter Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Splitter control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Splitter | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Splitter control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Splitter
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Splitter Control
+# Getting Started with ##Platform_Name##
 
 This section briefly explains how to include the [ASP.NET Core Splitter](https://www.syncfusion.com/aspnet-core-ui-controls/splitter) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Range Slider Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Range Slider control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Range Slider | Syncfusion
+description: Learn how to get started with ASP.NET Core Range Slider, including package installation, project configuration, and rendering a basic range slider.
 platform: ej2-asp-core-mvc
 control: Range Slider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Range Slider Control
+# Getting Started with ASP.NET Core Range Slider
 
 This section briefly explains how to include the [ASP.NET Core Range Slider](https://www.syncfusion.com/aspnet-core-ui-controls/range-slider) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

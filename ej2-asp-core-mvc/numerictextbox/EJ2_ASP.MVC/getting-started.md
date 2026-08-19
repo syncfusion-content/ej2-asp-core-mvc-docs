@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Numerictextbox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Numerictextbox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC Numeric Textbox | Syncfusion
+description: Learn to set up and configure the Syncfusion ASP.NET MVC Numeric Textbox control with step-by-step instructions, code examples, and best practices.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC NumericTextBox Control
+# Getting Started with ASP.NET MVC NumericTextbox
 
 This section briefly explains how to include the [ASP.NET MVC NumericTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/numeric-textbox) control in an ASP.NET MVC application using Visual Studio.
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Numeri
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC NumericTextBox control will be rendered in the default web browser.
 
-![ASP.NET MVC NumericTextBox Control](images/gettingStarted.png)
+![ASP.NET MVC NumericTextBox Control](images/gettingStarted.webp)
 
 ## Range validation
 
@@ -121,7 +121,7 @@ The below example demonstrates how to format the value by using currency format 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC NumericTextBox with Format Value](images/format.png)
+![ASP.NET MVC NumericTextBox with Format Value](images/format.webp)
 
 ## Precision of numbers
 
@@ -135,7 +135,7 @@ You can restrict the number of decimals to be entered in the NumericTextBox by u
 {% endhighlight %}
 {% endtabs %}
 
-![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.png)
+![Restricting Decimal Values in ASP.NET MVC NumericTextBox](images/precision.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/NumericTextBox/ASP.NET%20MVC%20Razor%20Examples).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Import Export in ##Platform_Name## Query Builder Component | Syncfusion
-description: Learn here all about Import Export in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Import and Export in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to import and export Query Builder rules in JSON, SQL, and MongoDB formats using built-in Query Builder methods.
 platform: ej2-asp-core-mvc
 control: Import Export
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Importing and Exporting in ##Platform_Name## Query builder control
+# Importing and Exporting in ##Platform_Name## Query builder
 
 Importing facilitates the viewing or editing of predefined conditions available in JSON, SQL, and MongoDB query formats, while exporting enables obtaining the created rules in the query builder as JSON, SQL, and MongoDB queries.
 
