@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Perform Search Using Controller Data in ##Platform_Name## ListView | Syncfusion
+title: Search Controller Data in ##Platform_Name## ListView | Syncfusion
 description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Perform Search Using Controller Data
