@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Toast Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Toast component of Syncfusion Essential JS 2 and more.
+title: Template in ASP.NET Core Toast | Syncfusion
+description: Render custom HTML content in the Syncfusion ASP.NET Core Toast by passing a string or query selector to the `template` property.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
-# Template
+# Template in ASP.NET Core Toast
 
 The [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Template) property can be given as the `HTML element`; this can be either a `string` or `query selector`.
 
@@ -58,6 +57,6 @@ Output be like the below.
 
 ## See Also
 
-* [How to add dynamic template](./how-to/add-dynamic-template/)
+* [How to add dynamic template](./how-to/add-dynamic-template)
 
-* [How to play an audio before open the toast](./how-to/play-an-audio-before-open-the-toast/)
+* [How to play an audio before open the toast](./how-to/play-an-audio-before-open-the-toast)

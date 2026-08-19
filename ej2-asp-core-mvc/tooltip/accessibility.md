@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Tooltip | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+description: Discover the Syncfusion ##Platform_Name## Tooltip accessibility features: built-in WAI-ARIA support, keyboard navigation, and screen reader compatibility.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in Tooltip Control
+# Accessibility in ##Platform_Name## Tooltip
 
 The Tooltip component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/practices/) specifications, and applies the WAI-ARIA roles, states, and properties along with keyboard support. This makes it easy for people who use assistive technologies (AT) or who completely rely on keyboard navigation. As per the accessibility standard, the Tooltip opens on target elements to which it is attached as and when those target elements receive either keyboard focus or when the mouse hovers over it. When `esc` key is pressed, the Tooltip closes.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Uploader Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Uploader control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core File Upload | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core File Upload control. Explore setup, async upload, configuration, and rendering examples.
 platform: ej2-asp-core-mvc
 control: Uploader
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Uploader Control
+# Getting Started with ASP.NET Core File Upload
 
 This section briefly explains how to include the [ASP.NET Core Uploader](https://www.syncfusion.com/aspnet-core-ui-controls/file-upload) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

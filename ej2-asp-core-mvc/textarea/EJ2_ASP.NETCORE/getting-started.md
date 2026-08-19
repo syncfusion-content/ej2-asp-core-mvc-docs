@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core TextArea Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core TextArea control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core TextArea | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core TextArea control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: TextArea
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core TextArea Control
+# Getting Started with ASP.NET Core TextArea
 
 This section briefly explains how to include the [ASP.NET Core TextArea](https://www.syncfusion.com/aspnet-core-ui-controls/textarea) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Customization in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## Tooltip | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Tooltip with the cssClass property to apply custom styles for the wrapper, tip pointer, and content.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization in Tooltip Control
+# Customization in ##Platform_Name## Tooltip
 
 The Tooltip can be customized by using the `cssClass` property, which accepts custom CSS class names that define specific user-defined styles and themes to be applied on the Tooltip element.
 

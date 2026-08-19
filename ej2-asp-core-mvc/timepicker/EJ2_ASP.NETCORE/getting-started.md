@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## TimePicker Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## TimePicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core TimePicker | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET Core TimePicker control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Getting Started with ASP.NET Core TimePicker
 
-# Getting Started with ASP.NET Core TimePicker Control
-
-This section briefly explains how to include the [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs).
 
 ## Create ASP.NET Core web application with Razor pages
 
@@ -19,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install ASP.NET Core package in the application
 
-To add [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core TimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/timepicker) control in the app, open the NuGet package manager in Visual Studio (*Tools → NuGet Package Manager → Manage NuGet Packages for Solution*), search and install the [Syncfusion.AspNetCore.Calendars](https://www.nuget.org/packages/Syncfusion.AspNetCore.Calendars) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available in [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same package using the Package Manager Console with the following command.
 
