@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Speed Dial | Syncfusion
-description: Learn about the accessibility features in the Syncfusion ##Platform_Name## Speed Dial, including WCAG 2.2 compliance, WAI-ARIA support, keyboard navigation, and accessibility validation.
+description: Learn about accessibility features in Syncfusion ##Platform_Name## Speed Dial, including WCAG 2.2 compliance, WAI-ARIA support, keyboard navigation, and validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

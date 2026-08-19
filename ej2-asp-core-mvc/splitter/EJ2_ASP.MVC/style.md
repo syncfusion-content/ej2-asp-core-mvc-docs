@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles in ##Platform_Name## Splitter | Syncfusion
-description: Learn how to customize the appearance of the Syncfusion ##Platform_Name## Splitter, including split bars, resize handles, navigation arrows, and other visual elements using CSS.
+description: Learn how to customize the appearance of Syncfusion ##Platform_Name## Splitter, including split bars, resize handles, navigation arrows, and CSS styling.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##

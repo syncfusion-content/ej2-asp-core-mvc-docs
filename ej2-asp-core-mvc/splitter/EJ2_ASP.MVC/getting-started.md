@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Splitter | Syncfusion
-description: Learn how to get started with the Syncfusion ##Platform_Name## Splitter control. Explore setup, pane configuration, resizing, orientation, nested layouts, and content customization.
+description: Learn how to get started with Syncfusion ##Platform_Name## Splitter. Explore setup, pane configuration, resizing, orientation, and content customization.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

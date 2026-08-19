@@ -49,7 +49,7 @@ Output be like the below.
 
 ## Custom formats
 
-From the [custom numeric format string](../common/internationalization#custom-number-formatting-and-parsing/), you can provide any custom format by combining one or more custom specifiers.
+From the [custom numeric format string](../common/internationalization#custom-number-formatting-and-parsing), you can provide any custom format by combining one or more custom specifiers.
 
 The below examples demonstrate format the value by using currency format string `#` and `0`.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Name and Value in Form Submission for ##Platform_Name## Radio Button | Syncfusion
+title: Form Submission in ##Platform_Name## Radio Button | Syncfusion
 description: Learn how the name and value properties of ##Platform_Name## Radio Button work during form submission and how selected values are posted to the server.
 platform: ej2-asp-core-mvc
 control: Name And Value In Form Submit

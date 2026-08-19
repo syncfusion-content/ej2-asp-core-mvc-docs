@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Numeric TextBox | Syncfusion
-description: Learn about accessibility support in ##Platform_Name## Numeric TextBox, including WCAG compliance, WAI-ARIA attributes, keyboard interaction, and accessibility validation.
+description: Learn about accessibility support in ##Platform_Name## Numeric TextBox, including WCAG compliance, WAI-ARIA attributes, keyboard support, and validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

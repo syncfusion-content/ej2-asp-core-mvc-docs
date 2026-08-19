@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Split Panes in ##Platform_Name## Splitter | Syncfusion
-description: Learn how to create and manage split panes in the Syncfusion ##Platform_Name## Splitter, including horizontal and vertical layouts, multiple panes, nested splitters, separator customization, and dynamic pane operations.
+description: Learn how to create and manage split panes in Syncfusion ##Platform_Name## Splitter, including layouts, nested splitters, and dynamic pane operations.
 platform: ej2-asp-core-mvc
 control: Split Panes
 publishingplatform: ##Platform_Name##

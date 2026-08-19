@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand and Collapse in ##Platform_Name## Splitter | Syncfusion
-description: Learn how to expand and collapse panes in the Syncfusion ##Platform_Name## Splitter, configure collapsible panes, programmatically control pane states, and set initial collapsed pane states.
+description: Learn how to expand and collapse panes in Syncfusion ##Platform_Name## Splitter, configure collapsible panes, control pane states, and set initial collapsed states.
 platform: ej2-asp-core-mvc
 control: Expand And Collapse
 publishingplatform: ##Platform_Name##

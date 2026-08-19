@@ -4,7 +4,7 @@ title: Positioning in ASP.NET Core Predefined Dialogs | Syncfusion
 description: Learn how to customize the position of ASP.NET Core Predefined Dialogs using the position property with custom X and Y coordinates.
 platform: ej2-asp-core-mvc
 control: Positioning
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Expand and Collapse
+# title: Globalization in ##Platform_Name## Splitter | Syncfusion
 
 ## Collapsible panes
 
@@ -48,4 +48,4 @@ Execution of above code's output will be as given below,
 
 ## See Also
 
-[Multiple panes in Splitter](./split-panes/)
+[Multiple panes in Splitter](./split-panes)

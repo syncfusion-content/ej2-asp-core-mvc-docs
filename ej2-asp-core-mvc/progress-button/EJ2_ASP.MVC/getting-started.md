@@ -97,7 +97,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ![ASP.NET MVC Progress Button Control](images/progressbutton-control.png)
 
-N> Progress Button supports different styles, types and sizes like [Button](https://ej2.syncfusion.com/aspnetmvc/documentation/button/). In addition, it also supports `top` and `bottom` positions of the icon.
+N> Progress Button supports different styles, types and sizes like [Button](https://ej2.syncfusion.com/aspnetmvc/documentation/button). In addition, it also supports `top` and `bottom` positions of the icon.
 
 ## Enabling progress in button
 

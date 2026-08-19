@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Splitter | Syncfusion
-description: Learn about accessibility support in the Syncfusion ##Platform_Name## Splitter, including WCAG 2.2, Section 508, keyboard navigation, and screen reader compatibility.
+description: Learn about accessibility support in Syncfusion ##Platform_Name## Splitter, including WCAG 2.2, Section 508, keyboard navigation, and screen readers.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -38,7 +38,7 @@ The accessibility compliance for the Splitter component is outlined below.
 <div><img src="https://cdn.syncfusion.com/content/images/documentation/not-supported.png" alt="No"> - The component does not meet the requirement.</div>
 
 
-# Keyboard interaction
+## Keyboard interaction
 
 You can use the following key shortcuts to access the splitter without interruptions:
 

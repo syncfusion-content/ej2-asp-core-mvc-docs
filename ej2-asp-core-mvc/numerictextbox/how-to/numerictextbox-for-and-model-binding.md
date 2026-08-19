@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NumericTextBoxFor and Model Binding in ##Platform_Name## Numeric TextBox | Syncfusion
+title: Model Binding in ##Platform_Name## Numeric TextBox | Syncfusion
 description: Learn how to use NumericTextBoxFor with model binding in ##Platform_Name## Numeric TextBox to bind values, validate input, and work with strongly typed views.
 platform: ej2-asp-core-mvc
 control: Numerictextbox For And Model Binding

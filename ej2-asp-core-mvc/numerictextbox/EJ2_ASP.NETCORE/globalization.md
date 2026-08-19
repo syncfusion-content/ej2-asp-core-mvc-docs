@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization in ASP.NET MVC Numeric TextBox | Syncfusion
-description: Learn how to configure globalization in ASP.NET MVC Numeric TextBox, including internationalization, localization, culture-specific formatting, and right-to-left support.
+description: Learn to configure globalization in ASP.NET MVC Numeric TextBox with localization, culture-specific formatting, and RTL support.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

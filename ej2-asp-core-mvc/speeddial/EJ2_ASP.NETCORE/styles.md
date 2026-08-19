@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles in ##Platform_Name## Speed Dial | Syncfusion
-description: Learn about styling and customization options in the Syncfusion ##Platform_Name## Speed Dial, including icons, buttons, CSS classes, tooltips, visibility, and hover behavior.
+description: Learn about styling and customization options in Syncfusion ##Platform_Name## Speed Dial, including icons, CSS classes, tooltips, visibility, and hover behavior.
 platform: ej2-asp-core-mvc
 control: Styles
 publishingplatform: ##Platform_Name##

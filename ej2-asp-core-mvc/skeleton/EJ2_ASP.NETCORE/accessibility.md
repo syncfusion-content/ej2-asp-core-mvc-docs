@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Skeleton | Syncfusion
-description: Learn about the accessibility features in the Syncfusion ##Platform_Name## Skeleton control, including WCAG 2.2 compliance, WAI-ARIA support, and accessibility validation.
+description: Learn about accessibility features in Syncfusion ##Platform_Name## Skeleton, including WCAG 2.2 compliance, WAI-ARIA support, and accessibility validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

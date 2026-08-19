@@ -4,7 +4,7 @@ title: Animation in ASP.NET MVC Predefined Dialogs | Syncfusion
 description: Learn how to configure animation effects in ASP.NET MVC Predefined Dialogs using animationSettings, including delay, duration, and animation effects.
 platform: ej2-asp-core-mvc
 control: Animation
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

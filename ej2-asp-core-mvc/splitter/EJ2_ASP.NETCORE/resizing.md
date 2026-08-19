@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resizing in ##Platform_Name## Splitter | Syncfusion
-description: Learn how to resize panes in the Syncfusion ##Platform_Name## Splitter, configure minimum and maximum pane sizes, prevent resizing, refresh content during resize operations, and customize resize grips.
+description: Learn how to resize panes in Syncfusion ##Platform_Name## Splitter, configure pane sizes, prevent resizing, refresh content, and customize resize grips.
 platform: ej2-asp-core-mvc
 control: Resizing
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open a Dialog on Popup Item Click in ##Platform_Name## Split Button | Syncfusion
+title: Dialog on Item Click in ##Platform_Name## Split Button | Syncfusion
 description: Learn how to open a dialog when a popup item is selected in the Syncfusion ##Platform_Name## Split Button by handling the select event.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Popup Item Click
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Open a Dialog on Popup Item Click in ##Platform_Name## Split Button
+# Dialog on Item Click in ##Platform_Name## Split Button | Syncfusion
 
 This section explains about how to open a dialog on SplitButton popup item click. This can be achieved by handling dialog open in [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_Select) event of the SplitButton.
 

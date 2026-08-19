@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Spin Buttons Up and Down Arrow in ##Platform_Name## Numeric TextBox | Syncfusion
+title: Customize Spin Buttons in ##Platform_Name## Numeric TextBox | Syncfusion
 description: Learn how to customize the spin button up and down arrow icons in ##Platform_Name## Numeric TextBox using CSS classes and custom styles.
 platform: ej2-asp-core-mvc
 control: Customize The Spin Buttons Up And Down Arrow

@@ -4,7 +4,7 @@ title: Dimension in ASP.NET Core Predefined Dialogs | Syncfusion
 description: Learn how to customize dimensions in ASP.NET Core Predefined Dialogs using width, height, min-width, min-height, max-width, and max-height settings.
 platform: ej2-asp-core-mvc
 control: Dimension
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

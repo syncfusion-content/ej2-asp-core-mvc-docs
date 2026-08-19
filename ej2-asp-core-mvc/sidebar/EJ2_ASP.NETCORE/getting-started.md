@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Sidebar | Syncfusion
-description: Learn how to get started with the Syncfusion ##Platform_Name## Sidebar control. Explore setup, configuration, positioning, backdrop support, animations, gestures, and customization options.
+description: Learn how to get started with Syncfusion ##Platform_Name## Sidebar. Explore setup, positioning, backdrop support, animations, gestures, and customization.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

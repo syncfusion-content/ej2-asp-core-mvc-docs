@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Migration from Essential JS 1 in ##Platform_Name## Split Button | Syncfusion
+title: Migration from Essential JS1 in ##Platform_Name## SplitButton | Syncfusion
 description: Learn how to migrate Split Button APIs from Essential JS 1 to Syncfusion ##Platform_Name## Split Button, including properties, methods, and events.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration

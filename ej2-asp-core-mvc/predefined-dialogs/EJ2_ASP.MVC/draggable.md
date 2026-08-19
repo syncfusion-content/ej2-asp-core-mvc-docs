@@ -4,7 +4,7 @@ title: Draggable Dialogs in ASP.NET MVC Predefined Dialogs | Syncfusion
 description: Learn how to enable dragging in ASP.NET MVC Predefined Dialogs using the isDraggable property to reposition dialogs within the target container.
 platform: ej2-asp-core-mvc
 control: Draggable
-publishingplatform: ejmvc
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

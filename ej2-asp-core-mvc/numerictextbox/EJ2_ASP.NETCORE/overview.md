@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview in ASP.NET Core Numeric TextBox | Syncfusion
-description: Learn about the ASP.NET Core Numeric TextBox control, including range validation, number formatting, precision handling, globalization, localization, and accessibility features.
+description: Learn ASP.NET Core Numeric TextBox features, including range validation, number formatting, precision handling, globalization, localization, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

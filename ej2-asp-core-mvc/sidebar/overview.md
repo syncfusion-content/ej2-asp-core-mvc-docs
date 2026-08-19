@@ -16,10 +16,10 @@ There is a flexible option to show and hide Sidebar as per user interactions. An
 
 ## Key features
 
-1. **[Context](/sidebar/custom-context/)**: The Sidebar can be initialized in any HTML element other than the body element.
+1. **[Context](/sidebar/custom-context)**: The Sidebar can be initialized in any HTML element other than the body element.
 
-2. **[Types and positions](/sidebar/variations/)**: Supports `Push`, `Over`, `Slide`, and `Auto` to expand or collapse the sidebar, and also allows to position it in the `Left` or `Right` direction.
+2. **[Types and positions](/sidebar/variations)**: Supports `Push`, `Over`, `Slide`, and `Auto` to expand or collapse the sidebar, and also allows to position it in the `Left` or `Right` direction.
 
-3. **[Auto close](/sidebar/auto-close/)**: Allows to set the Sidebar in an expanded or collapsed state only in certain resolutions.
+3. **[Auto close](/sidebar/auto-close)**: Allows to set the Sidebar in an expanded or collapsed state only in certain resolutions.
 
-4. **[Dock](/sidebar/docking-sidebar/)**: By default, supports display of short notifications about the content on docked mode.
+4. **[Dock](/sidebar/docking-sidebar)**: By default, supports display of short notifications about the content on docked mode.

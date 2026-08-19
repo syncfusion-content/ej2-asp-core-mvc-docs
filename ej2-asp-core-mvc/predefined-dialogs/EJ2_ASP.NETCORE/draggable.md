@@ -4,7 +4,7 @@ title: Draggable in ASP.NET Core Predefined Dialogs | Syncfusion
 description: Learn how to enable dragging in ASP.NET Core Predefined Dialogs using the isDraggable property to reposition dialogs within the target container.
 platform: ej2-asp-core-mvc
 control: Draggable
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

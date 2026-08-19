@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Underline a Character in a Text in ##Platform_Name## Split Button | Syncfusion
+title: Underline Text in ##Platform_Name## Split Button | Syncfusion
 description: Learn how to underline a character in Split Button item text by using the beforeItemRender event in the Syncfusion ##Platform_Name## Split Button.
 platform: ej2-asp-core-mvc
 control: Underline A Character In A Text
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Underline a Character in a Text in ##Platform_Name## Split Button
+# Underline Text in ##Platform_Name## Split Button | Syncfusion
 
 To underline a particular character in a text, it can be handled in [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.SplitButton.html#Syncfusion_EJ2_SplitButtons_SplitButton_BeforeItemRender) event by adding `<u>` tag in between the text and given as innerHTML in `li` rendering.
 

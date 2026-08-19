@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Change Text Content and Styles During Progress in ##Platform_Name## Progress Button | Syncfusion
+title: Customize Text in ##Platform_Name## Progress Button | Syncfusion
 description: Learn how to change text content and apply custom styles to Progress Button during progress execution using begin and end events.
 platform: ej2-asp-core-mvc
 control: Change The Text Content And Styles Of The Progressbutton During Progress

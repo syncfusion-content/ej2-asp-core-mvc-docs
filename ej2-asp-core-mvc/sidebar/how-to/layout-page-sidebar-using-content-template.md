@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layout Sidebar Using Content Template in ##Platform_Name## Sidebar | Syncfusion
+title: Sidebar Layout in ##Platform_Name## Sidebar | Syncfusion
 description: Learn how to create a layout Sidebar using a content template in Syncfusion ##Platform_Name## Sidebar and render a Menu component within the Sidebar.
 platform: ej2-asp-core-mvc
 control: Layout Page Sidebar Using Content Template

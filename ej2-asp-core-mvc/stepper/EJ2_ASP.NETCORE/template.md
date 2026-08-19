@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Template in ##Platform_Name## Stepper | Syncfusion
-description: Learn how to customize step content and appearance in the Syncfusion
+description: Learn how to customize step content and appearance in the Syncfusion ##Platform_Name## Stepper, including labels, icons, templates, and styling options.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##

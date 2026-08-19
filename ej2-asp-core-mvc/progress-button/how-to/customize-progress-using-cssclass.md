@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Progress Using cssClass in ##Platform_Name## Progress Button | Syncfusion
+title: Customize cssClass in ##Platform_Name## Progress Button | Syncfusion
 description: Learn how to customize Progress Button progress indicators using the cssClass property to create vertical, top-positioned, and reverse progress styles.
 platform: ej2-asp-core-mvc
 control: Customize Progress Using Cssclass

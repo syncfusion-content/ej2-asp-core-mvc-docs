@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Rating | Syncfusion
-description: Learn about accessibility support in Syncfusion ##Platform_Name## Rating, including WCAG compliance, ARIA attributes, keyboard navigation, and accessibility validation.
+description: Learn about accessibility support in Syncfusion ##Platform_Name## Rating, including WCAG compliance, ARIA attributes, keyboard navigation, and validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

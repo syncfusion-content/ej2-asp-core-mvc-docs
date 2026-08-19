@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Label and Size in ##Platform_Name## Radio Button | Syncfusion
-description: Learn how to configure labels, label positions, and size options in ##Platform_Name## Radio Button.
+description: Learn how to configure labels, label positions, and size options in ##Platform_Name## Radio Button for improved usability.
 platform: ej2-asp-core-mvc
 control: Label And Size
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion ##Platform_Name## Range Slider Component | Syncfusion
-description: Explore the Syncfusion ##Platform_Name## Range Slider component and its key features, including range selection, orientation, ticks, tooltips, formatting, and accessibility.
+description: Explore Syncfusion ##Platform_Name## Range Slider features, including range selection, orientation, ticks, tooltips, formatting, and accessibility.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##

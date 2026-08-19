@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in ##Platform_Name## Split Button | Syncfusion
-description: Learn about accessibility support in the Syncfusion ##Platform_Name## Split Button, including WCAG compliance, WAI-ARIA attributes, keyboard navigation, and RTL support.
+description: Learn about accessibility support in Syncfusion ##Platform_Name## Split Button, including WCAG compliance, WAI-ARIA attributes, keyboard navigation, and RTL support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##

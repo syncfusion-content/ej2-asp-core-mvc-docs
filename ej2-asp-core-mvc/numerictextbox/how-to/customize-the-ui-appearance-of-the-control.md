@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the UI Appearance of ##Platform_Name## Numeric TextBox | Syncfusion
+title: Customize UI in ##Platform_Name## Numeric TextBox | Syncfusion
 description: Learn how to customize the UI appearance of ##Platform_Name## Numeric TextBox using custom CSS classes and styling options.
 platform: ej2-asp-core-mvc
 control: Customize The Ui Appearance Of The Control

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styling and Appearance in ##Platform_Name## Sidebar | Syncfusion
-description: Learn how to customize the appearance of the Syncfusion ##Platform_Name## Sidebar using CSS, including positioning, dock mode, sidebar types, RTL support, overlays, and animation behavior.
+description: Learn how to customize Syncfusion ##Platform_Name## Sidebar using CSS, including positioning, dock mode, RTL support, overlays, and animations.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set the Disabled State in ##Platform_Name## Radio Button | Syncfusion
-description: Learn how to enable or disable ##Platform_Name## Radio Button using the disabled property.
+description: Learn how to enable or disable ##Platform_Name## Radio Button using the disabled property and manage user interaction states.
 platform: ej2-asp-core-mvc
 control: Set The Disabled State
 publishingplatform: ##Platform_Name##
