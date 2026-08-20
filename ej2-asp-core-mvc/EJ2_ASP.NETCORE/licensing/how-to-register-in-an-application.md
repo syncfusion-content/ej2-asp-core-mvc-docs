@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion license registration - Syncfusion
+title: Overview of Syncfusion license registration | Syncfusion
 description: Learn here about how to register Syncfusion ##Platform_Name## license key for ##Platform_Name## application for license validation.
 platform: ej2-asp-core-mvc
 control: License Key Registration
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Register Syncfusion<sup style="font-size:70%">&reg;</sup> License key in ASP .NET Core EJ2 application
+# Register Syncfusion License key in ASP.NET Core application
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be registered if your project uses Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core packages from [NuGet.org](https://www.nuget.org/packages?q=syncfusion) or the Syncfusion<sup style="font-size:70%">&reg;</sup> installer. The generated license key is a string that needs to be registered before any Syncfusion<sup style="font-size:70%">&reg;</sup> control is initialized. The following code is used to register the license.
 
@@ -57,7 +57,7 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://learn.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.1&tabs=visual-studio#http-strict-transport-security-protocol-hsts.
     app.UseHsts();
 }
 

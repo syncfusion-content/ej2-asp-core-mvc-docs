@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icons And Templates in ##Platform_Name## List Box Component
+title: Icons And Templates in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Icons And Templates in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icons And Templates
@@ -13,7 +13,7 @@ documentation: ug
 
 ## Icons
 
-To place the icon on a list box, set the [`iconCss`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxFieldSettings~IconCss.html) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the list.
+To place the icon on a list box, set the [`iconCss`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxFieldSettings.html#Syncfusion_EJ2_DropDowns_ListBoxFieldSettings_IconCss) property to `e-icons` with the required icon CSS. By default, the icon is positioned to the left side of the list.
 
 In the following sample, icon classes are mapped with `iconCss` field.
 
@@ -44,7 +44,7 @@ In the following sample, icon classes are mapped with `iconCss` field.
 
 ## Templates
 
-ListBox items can be customized according to the requirement using [`itemTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~ItemTemplate.html) property.
+ListBox items can be customized according to the requirement using [`itemTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_ItemTemplate) property.
 
 In the following sample, the items in the cart are displayed using list box template,
 

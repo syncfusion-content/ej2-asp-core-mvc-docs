@@ -110,7 +110,7 @@ After initialization, populate the ListView with data using the [DataSource](htt
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ListView control will be rendered in the default web browser.
 
-![ASP.NET MVC ListView Control](images/listview.png)
+![ASP.NET MVC ListView Control](images/listview.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ListView/ASP.NET%20MVC%20Razor%20Examples).
 
@@ -120,4 +120,4 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 * [ListView customization](./customizing-templates)
 * [Virtualization](./virtualization)
 
-N> You can refer to our [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/ListView/DefaultFunctionalities#/bootstrap5) that shows you how to render and configure the ListView in ASP.NET MVC.
+N> You can refer to our [ASP.NET MVC ListView](https://www.syncfusion.com/aspnet-mvc-ui-controls/listview) feature tour page for its groundbreaking feature representations. You can also explore our [ASP.NET MVC ListView Example](https://ej2.syncfusion.com/aspnetmvc/listview/defaultfunctionalities#/fluent2) that shows you how to render and configure the ListView in ASP.NET MVC.
