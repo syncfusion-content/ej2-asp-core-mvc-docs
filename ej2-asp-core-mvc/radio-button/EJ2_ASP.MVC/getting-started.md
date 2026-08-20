@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Radio Button Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Radio Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Radio Button | Syncfusion
+description: Learn how to get started with ##Platform_Name## Radio Button, including package installation, project configuration, and state management.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Radio Button Control
+# Getting Started with ##Platform_Name## Radio Button
 
 This section briefly explains how to include the [ASP.NET MVC Radio Button](https://www.syncfusion.com/aspnet-mvc-ui-controls/radio-button) control in an ASP.NET MVC application using Visual Studio.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Accessibility in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ##Platform_Name## OTP Input | Syncfusion
+description: Learn about accessibility support in ##Platform_Name## OTP Input, including WCAG compliance, ARIA attributes, keyboard navigation, and screen reader support.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ASP.NET Core OTP Input control
+# Accessibility in ##Platform_Name## OTP Input
 
 The OTP Input control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

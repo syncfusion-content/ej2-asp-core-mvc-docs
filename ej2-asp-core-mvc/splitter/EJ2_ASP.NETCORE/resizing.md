@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## Splitter Component
-description: Learn here all about Resizing in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Resizing in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to resize panes in Syncfusion ##Platform_Name## Splitter, configure pane sizes, prevent resizing, refresh content, and customize resize grips.
 platform: ej2-asp-core-mvc
 control: Resizing
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resize
+# Resizing in ##Platform_Name## Splitter
 
 By default, resizing will be enable for split panes. Resizing gripper element will be add to the separator to makes the resize easy.
 

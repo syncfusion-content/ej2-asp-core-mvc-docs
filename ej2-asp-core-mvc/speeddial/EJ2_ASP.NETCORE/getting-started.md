@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Speed Dial Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Speed Dial Control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Speed Dial | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Speed Dial. Explore setup, positioning, display modes, events, and customization options.
 platform: ej2-asp-core-mvc
 control: Speed Dial
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Speed Dial Control
+# Getting Started with ##Platform_Name## Speed Dial
 
 This section briefly explains how to include the [ASP.NET Core Speed Dial](https://www.syncfusion.com/aspnet-core-ui-controls/speed-dial) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

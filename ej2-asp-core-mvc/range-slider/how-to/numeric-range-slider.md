@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Numeric Range Slider in ##Platform_Name## Range Slider Control
-description: Learn here all about Numeric Range Slider in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Numeric Formatting in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to format numeric values in ##Platform_Name## Range Slider using decimal precision, fixed values, and custom units.
 platform: ej2-asp-core-mvc
 control: Numeric Range Slider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Numeric Range Slider
+# Numeric Formatting in Range Slider
 
 The numeric values can be formatted into different decimal digits or fixed number of whole numbers or to represent the units. The Numeric processing is demonstrated below.
 

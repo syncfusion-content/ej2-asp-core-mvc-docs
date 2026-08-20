@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Labels in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Labels in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Labels in ##Platform_Name## Rating | Syncfusion
+description: Learn how to display and customize labels in Syncfusion ##Platform_Name## Rating, including label position and label template options.
 platform: ej2-asp-core-mvc
 control: Labels
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Labels in ASP.NET Core Rating Control
+# Labels in ##Platform_Name## Rating
 
 You can use the [showLabel](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowLabel) property to display a label that shows the current value of the rating. When the `showLabel` property is set to `true`, a label will be displayed.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling Modes in ##Platform_Name## OTP Input Control | Syncfusion
-description: Checkout and learn here all about Styling Modes in ##Platform_Name## OTP Input control of Syncfusion Essential JS 2 and more details.
+title: Styling Modes in ##Platform_Name## OTP Input | Syncfusion
+description: Learn how to customize ##Platform_Name## OTP Input appearance using Outlined, Filled, and Underlined styling modes for different UI designs.
 platform: ej2-asp-core-mvc
 control: OTP Input
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styling Modes in ASP.NET MVC OTP Input control
+# Styling Modes in ##Platform_Name## OTP Input
 
 Styling modes specify the style variants for the input fields in the OTP Input component. These modes allows you to customize the appearance of the OTP input fields.
 
