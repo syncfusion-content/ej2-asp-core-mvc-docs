@@ -85,7 +85,7 @@ The following code demonstrates how to get the memory stream of exported Grid.
 
 ## Merge Grid's memory stream
 
-The [Essential XlsIO](https://help.syncfusion.com/file-formats/xlsio/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/file-formats/xlsio/working-with-excel-worksheet#move-or-copy-a-worksheet).
+The [Essential XlsIO](https://help.syncfusion.com/document-processing/excel/excel-library/net/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [documentation](https://help.syncfusion.com/document-processing/excel/excel-library/net/working-with-excel-worksheet).
 
 You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 

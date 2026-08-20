@@ -169,6 +169,6 @@ The output looks like below
 
 ## See also
 
-* [Create an MVC DataGrid app](https://www.syncfusion.com/blogs/post/create-an-mvc-grid-app-in-10-minutes-with-the-syncfusion-grid.aspx)
+* [Create an MVC DataGrid app](https://www.syncfusion.com/blogs/post/create-an-mvc-grid-app-in-10-minutes-with-the-syncfusion-grid)
 * [How to render EJ2-DataGrid as HTML in ASP.NET MVC DataGrid](https://www.syncfusion.com/forums/137153/how-to-render-ej2-grid-as-html-in-asp-net-mvc-grid)
 * [How to render DataGrid in partial view in ASP.NET MVC DataGrid](https://www.syncfusion.com/forums/139841/how-to-render-grid-in-partial-view-in-asp-net-mvc-grid)
