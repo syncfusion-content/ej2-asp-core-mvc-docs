@@ -65,7 +65,7 @@ The following keyboard shortcuts are supported by the Stepper control.
 
 The Stepper control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Stepper control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnetcore/stepper/orientation#/fluent2) in a new window to evaluate the accessibility of the Stepper control with accessibility tools.
+The accessibility compliance of the Stepper control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnetmvc/stepper/orientation#/fluent2) in a new window to evaluate the accessibility of the Stepper control with accessibility tools.
 
 ## See also
 
