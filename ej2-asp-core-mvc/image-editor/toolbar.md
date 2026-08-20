@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toolbar in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about customize Toolbar in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Toolbar in ##Platform_Name## ImageEditor | Syncfusion
+description: Configure Syncfusion ##Platform_Name## ImageEditor toolbar items, create custom tools with createToolbarItem, and show or hide groups via toolbar property.
 platform: ej2-asp-core-mvc
 control: Toolbar
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Auto Complete Control | Syncfusion
+title: Templates in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Templates in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Templates
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates in ##Platform_Name## AutoComplete Control
+# Templates in ##Platform_Name## AutoComplete
 
 The AutoComplete has been provided with several options to customize each list items, group title, header and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
 

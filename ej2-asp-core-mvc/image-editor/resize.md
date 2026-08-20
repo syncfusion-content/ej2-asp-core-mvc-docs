@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Resize in ##Platform_Name## ImageEditor | Syncfusion
+description: Resize Syncfusion ##Platform_Name## ImageEditor images with a ratio-based dimension transformation, or set explicit width and height to scale the canvas.
 platform:  ej2-asp-core-mvc
 control: Filter 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Resize in the ##Platform_Name## Image Editor control
+# Resize in ##Platform_Name## ImageEditor
 
 The resize feature in an Image Editor is a valuable tool that empowers users to modify the size or dimensions of an image to meet their specific requirements. Whether it's for printing, web display, or any other purpose, this feature allows users to tailor images to their desired specifications.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Drop Down List | Syncfusion
-description: Learn here all about localization in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## DropDownList | Syncfusion
+description: Localize Syncfusion ##Platform_Name## DropDownList no-records and action-failure template text using locale values and translation objects for supported cultures.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in ASP.NET MVC DropDownList control
+# Localization in ##Platform_Name## DropDownList
 
 The Localization library allows to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_NoRecordsTemplate) and [actionFailureTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_ActionFailureTemplate) properties according to the culture currently assigned to the DropDownList.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select Items in ##Platform_Name## List Box | Syncfusion
-description: Learn here all about Select Items in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
+title: How to select items in ##Platform_Name## ListBox | Syncfusion
+description: Programmatically select Syncfusion ##Platform_Name## ListBox items by index or text using the selectItems and selectItem methods and toggle multi-selection.
 platform: ej2-asp-core-mvc
 control: Select Items
 publishingplatform: ##Platform_Name##
@@ -9,9 +9,9 @@ documentation: ug
 ---
 
 
-# Select items to the list box
+# How to select items in ##Platform_Name## ListBox
 
-In the following example, `Bugatti Chiron` is selected using [`selectItems`](https://ej2.syncfusion.com/documentation/api/list-box/index-default#selectitems) method.
+In the following example, `Bugatti Chiron` is selected using [`selectItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~SelectItems.html) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

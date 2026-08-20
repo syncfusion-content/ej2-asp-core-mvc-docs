@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Nested List in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Nested List in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Nested List in ##Platform_Name## ListView | Syncfusion
+description: Build a Syncfusion ##Platform_Name## ListView hierarchical tree by nesting child ListViews inside parent items and lazily loading or expanding children.
 platform: ej2-asp-core-mvc
 control: Nested List
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Nested List
+# Nested List in ##Platform_Name## ListView
 
 The ListView control supports Nested list. For that, the [`child`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Lists.ListViewFieldSettings.html#Syncfusion_EJ2_Lists_ListViewFieldSettings_Child) property should be defined for the nested list in the array of JSON.
 

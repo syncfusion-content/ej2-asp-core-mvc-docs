@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## CheckBox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## CheckBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Checkbox | Syncfusion
+description: Add the Syncfusion.EJ2.MVC5 package, register the script manager, and render an ##Platform_Name## Checkbox with checked and indeterminate states.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC CheckB
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC CheckBox control will be rendered in the default web browser.
 
-![ASP.NET MVC CheckBox Control](images/check-box.png)
+![ASP.NET MVC CheckBox Control](images/check-box.webp)
 
 ## Change the CheckBox state
 

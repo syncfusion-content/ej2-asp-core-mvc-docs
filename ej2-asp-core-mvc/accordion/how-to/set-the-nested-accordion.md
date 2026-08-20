@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set The Nested Accordion in ##Platform_Name## Accordion Control | Syncfusion
+title: Set the nested Accordion in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about how to set the Nested Accordion in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Set The Nested Accordion
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Set the nested Accordion
+# Set the nested Accordion in ##Platform_Name## Accordion
 
 Accordion supports to render `nested` level of Accordion by using content property. You can give nested Accordion content inside the parent Accordion content property by using `id` of nested element.
 

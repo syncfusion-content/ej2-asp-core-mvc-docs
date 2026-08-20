@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## ComboBox | Syncfusion
+description: Localize the noRecordsTemplate and actionFailureTemplate text in Syncfusion ##Platform_Name## ComboBox using the Localization library for any culture.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in Combo Box Control
+# Localization in ##Platform_Name## ComboBox
 
 The Localization library allows to localize static text content of the [noRecordsTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~NoRecordsTemplate.html) and [actionFailureTemplate](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ComboBox~ActionFailureTemplate.html) properties according to the culture currently assigned to the ComboBox.
 
@@ -48,5 +48,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-Core-UG
 
 ## See also
 
-* [Accessibility](./accessibility/)
-* [How to bind the data to the combobox](./data-binding/)
+* [Accessibility](./accessibility)
+* [How to bind the data to the combobox](./data-binding)

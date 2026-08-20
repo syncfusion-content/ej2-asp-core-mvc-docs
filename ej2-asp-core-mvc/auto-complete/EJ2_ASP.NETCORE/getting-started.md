@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core  Auto Complete | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core  Auto Complete control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## AutoComplete | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## AutoComplete by adding the DropDowns NuGet package and rendering the suggestion list in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: AutoComplete
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core AutoComplete Control
+# Getting Started with ##Platform_Name## AutoComplete
 
 This section briefly explains how to include the [ASP.NET Core AutoComplete](https://www.syncfusion.com/aspnet-core-ui-controls/autocomplete) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

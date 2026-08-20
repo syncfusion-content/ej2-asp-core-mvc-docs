@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Contact Layout From ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Create Mobile Contact Layout From ListView in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
+title: Create mobile contact layout in ListView | Syncfusion
+description: Build a Syncfusion ##Platform_Name## ListView mobile contact layout with avatar, name, and detail rows using template and groupBy fields.
 platform: ej2-asp-core-mvc
 control: Create Mobile Contact Layout From ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create Mobile contact layout from ListView
+# How to create mobile contact layout in ##Platform_Name## ListView
 
-You can customize the ListView using the [template](https://ej2.syncfusion.com/documentation/api/list-view/#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
+You can customize the ListView using the [template](https://ej2.syncfusion.com/documentation/api/list-view#template) property. Refer to the following steps to customize ListView as mobile contact view with our `ej2-avatar`.
 
-* Render the ListView with [dataSource](https://ej2.syncfusion.com/documentation/api/list-view/#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
+* Render the ListView with [dataSource](https://ej2.syncfusion.com/documentation/api/list-view#datasource) that has avatar data. You can set avatar data as either text or class names. Refer to the following codes.
 
 ```typescript
 
@@ -55,9 +55,9 @@ You can customize the ListView using the [template](https://ej2.syncfusion.com/d
 
 N> Avatars can be set in different sizes in avatar classes. To know more about avatar classes, refer to [Avatar](https://ej2.syncfusion.com/demos/#/material/avatar/default).
 
-* Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/documentation/api/list-view/#sortorder) property of ListView.
+* Sort the contact names using the [`sortOder`](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) property of ListView.
 
-* Enable the [`showHeader`](https://ej2.syncfusion.com/documentation/api/list-view/#showheader) property, and set the [`headerTitle`](https://ej2.syncfusion.com/documentation/api/list-view/#headertitle) as `Contacts`.
+* Enable the [`showHeader`](https://ej2.syncfusion.com/documentation/api/list-view#showheader) property, and set the [`headerTitle`](https://ej2.syncfusion.com/documentation/api/list-view#headertitle) as `Contacts`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

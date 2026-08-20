@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## ImageEditor | Syncfusion
+description: Localize the Syncfusion ##Platform_Name## ImageEditor default text and toolbar strings into Arabic, German, French, and other cultures using locale values.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in the ##Platform_Name## Image Editor control
+# Localization in ##Platform_Name## ImageEditor
 
 The `Localization` library allows you to localize the default text content of the Image Editor. The Image Editor has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 

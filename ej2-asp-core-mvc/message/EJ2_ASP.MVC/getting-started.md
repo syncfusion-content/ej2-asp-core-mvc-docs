@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Message Control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Message | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET MVC Message control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Message Control
+# Getting Started with ##Platform_Name## Message
 
 This section briefly explains how to include ASP.NET MVC Message control in your ASP.NET MVC application using Visual Studio.
 
@@ -94,4 +94,4 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Messag
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Message control will be rendered in the default web browser.
 
-![ASP.NET MVC Message Control](images/message-default.png)
+![ASP.NET MVC Message Control](images/message-default.webp)

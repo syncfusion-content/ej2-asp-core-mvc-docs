@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrate Avatar Into ListView in ##Platform_Name## Avatar control | Syncfusion
+title: Integrate Avatar into ListView in ##Platform_Name## Avatar | Syncfusion
 description: Learn here all about how to integrate Avatar into ListView in Syncfusion ##Platform_Name## Avatar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Integrate Avatar Into ListView
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Integrate Avatar into ListView
+# Integrate Avatar into ListView in ##Platform_Name## Avatar
 
 Avatar is integrated into the ListView to create contacts applications. The `xsmall` size Avatar is used to match the size of the list items. Both letters and images are also used as Avatar content.
 

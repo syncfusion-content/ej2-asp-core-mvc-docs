@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Data Binding in ##Platform_Name## ListView | Syncfusion
+description: Bind Syncfusion ##Platform_Name## ListView to local arrays or remote data sources via the dataSource property and DataManager with OData and Web API adaptors.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data binding
+# Data Binding in ##Platform_Name## ListView
 
 ListView provides an option to load the data either from local dataSource or remote data services. This can be done through the dataSource property that supports the data type of array or `DataManager`.
 

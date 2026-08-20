@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Accordion control | Syncfusion
-description: Check out and learn about getting started with ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Accordion | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## Accordion by adding the Navigations NuGet package and rendering items in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Core
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Accordion Control
+# Getting Started with ##Platform_Name## Accordion
 
 This section briefly explains how to include the [ASP.NET Core Accordion](https://www.syncfusion.com/aspnet-core-ui-controls/accordion) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

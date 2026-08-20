@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Drag And Drop list items in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Drag And Drop list items in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to drag and drop items in ##Platform_Name## ListView | Syncfusion
+description: Configure Syncfusion ##Platform_Name## ListView as a drag-and-drop container by enabling sortable and binding to the Sortable component reordering events.
 platform: ej2-asp-core-mvc
 control: Drag And Drop list items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drag and Drop list items
+# How to drag and drop items in ##Platform_Name## ListView
 
 In ListView control, we don't have drag and drop support. But we can achieve this requirement using [`TreeView`](https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started) control with ListView appearance.
 
-Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#allowdraganddrop) to `true`.
+Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/treeview#allowdraganddrop) to `true`.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -37,7 +37,7 @@ Drag and Drop in TreeView control was enabled by setting [`allowDragAndDrop`](ht
 {% endtabs %}
 {% endif %}
 
-The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behavior by using the [`nodeDragStop`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/documentation/api/treeview/index-default#nodedragging) events.
+The TreeView control is used to represent hierarchical data in a tree like structure. So, list items in TreeView can be dropped to child of target element. we can prevent this behaviour by cancelling the [`nodeDragStop`](https://ej2.syncfusion.com/documentation/api/treeview#nodedragstop) and [`nodeDragging`](https://ej2.syncfusion.com/documentation/api/treeview#nodedragging) events.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

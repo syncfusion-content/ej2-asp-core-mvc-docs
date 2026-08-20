@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Create Mnemonic Ui In Menuitem in ##Platform_Name## Menu | Syncfusion
-description: Learn here all about Create Mnemonic Ui In Menuitem in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to create mnemonic navigation in ##Platform_Name## Menu | Syncfusion
+description: Add a mnemonic UI in Syncfusion ##Platform_Name## Menu by underlining a character with the beforeItemRender event and innerHTML reassignment.
 platform: ej2-asp-core-mvc
 control: Create Mnemonic Ui In Menuitem
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create mnemonic UI in menu item
+# How to create mnemonic navigation in ##Platform_Name## Menu
 
 A particular character in a text can be underlined in the [`beforeItemRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Menu.html#Syncfusion_EJ2_Navigations_Menu_BeforeItemRender) event by adding `<u>` tag in between the text and assign the innerHTML to the `li` element.
 

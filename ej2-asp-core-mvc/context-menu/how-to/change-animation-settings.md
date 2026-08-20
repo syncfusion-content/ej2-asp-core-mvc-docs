@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change Animation Settings in ##Platform_Name## Context Menu | Syncfusion
-description: Learn here all about how to change Animation Settings in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to change animations in ##Platform_Name## Context Menu | Syncfusion
+description: Configure Syncfusion ##Platform_Name## Context Menu submenu open/close animations via animationSettings, choosing None, SlideDown, ZoomIn, or FadeIn.
 platform: ej2-asp-core-mvc
 control: Change Animation Settings
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Change animation settings
+# How to change animations in ##Platform_Name## Context Menu
 
 To change the animation of the ContextMenu, [`animationSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_AnimationSettings) property is used. The supported effects for ContextMenu are,
 

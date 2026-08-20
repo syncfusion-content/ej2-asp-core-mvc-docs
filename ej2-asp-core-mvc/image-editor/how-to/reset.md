@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reset an image in Image Editor Component | Syncfusion
-description: Learn here all about How to Reset an image in Image Component of Syncfusion Essential JS 2 and more.
+title: How to reset an image in ##Platform_Name## ImageEditor | Syncfusion
+description: Reset Syncfusion ##Platform_Name## ImageEditor to its default state by reloading the canvas and discarding unsaved annotations using the reset method.
 control: Reset
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Reset in the ##Platform_Name## Image Editor control
+# How to reset in ##Platform_Name## ImageEditor
 
 The `reset` method in the Image Editor control provides the capability to undo all the changes made to an image and revert it back to its original state. This method is particularly useful when multiple adjustments, annotations, or transformations have been applied to an image and you want to start over with the original, unmodified version of the image. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: View in ##Platform_Name## Datepicker Component | Syncfusion
-description: Learn here all about View in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Start and Depth View in ##Platform_Name## DatePicker | Syncfusion
+description: Configure Syncfusion ##Platform_Name## DatePicker start and depth views as month, year, or decade to navigate quickly to a specific date.
 platform: ej2-asp-core-mvc
 control: View
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Start and Depth View
+# Start and Depth View in ##Platform_Name## DatePicker
 
 The DatePicker has the following predefined views that provides a flexible way to navigate back and forth to select the date.
 
@@ -32,7 +32,8 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% include code-snippet/datepicker/view/start/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -41,7 +42,8 @@ The following example demonstrates how to create a DatePicker with `decade` as i
 {% include code-snippet/datepicker/view/start/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Start.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -59,7 +61,8 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 {% include code-snippet/datepicker/view/depth/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -68,7 +71,8 @@ N> Always the depth view has to be smaller than the start view, otherwise the vi
 {% include code-snippet/datepicker/view/depth/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Depth.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

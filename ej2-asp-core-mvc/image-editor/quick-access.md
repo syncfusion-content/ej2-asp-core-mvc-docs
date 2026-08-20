@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Quick Access Toolbar in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Quick Access Toolbar in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Quick Access Toolbar in ##Platform_Name## ImageEditor | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## ImageEditor quick access toolbar with frequently used tools using toolbarItem configuration.
 platform: ej2-asp-core-mvc
 control: Quick Access
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Quick access toolbar in the ##Platform_Name## Image Editor control
+# Quick Access Toolbar in ##Platform_Name## ImageEditor
 
 The quick access toolbars in the Image Editor play a vital role in facilitating interactions with annotations like Rectangle, Ellipse, Line, Arrow, and Path. These toolbars offer a diverse array of tools and options that can be tailored to match the specific requirements and preferences associated with each annotation type. The toolbar is only displayed when an annotation is selected, ensuring a focused and contextual user experience.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Masking in ##Platform_Name## Datepicker Component
-description: Learn here all about Date Masking in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Mask Support in ##Platform_Name## DatePicker | Syncfusion
+description: Enable built-in date masking in Syncfusion ##Platform_Name## DatePicker by setting the enableMask property for guided date entry.
 platform: ej2-asp-core-mvc
 control: Date Masking
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable the Masked Input
+# Mask Support in ##Platform_Name## DatePicker
 
 DatePicker has `enableMask` property that provides the option to enable the built-in date masking support.
 
