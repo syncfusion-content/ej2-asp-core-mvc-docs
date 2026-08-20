@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timeout in ASP.NET Core Toast | Syncfusion
-description: Set the Syncfusion ASP.NET Core Toast expiration in milliseconds using the `timeOut` property, with progress bar visual and extended hover support.
+title: Timeout in ##Platform_Name## Toast | Syncfusion
+description: Set the Syncfusion ##Platform_Name## Toast expiration in milliseconds using the `timeOut` property, with progress bar visual and extended hover support.
 platform: ej2-asp-core-mvc
 control: Timeout
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Timeout in ASP.NET Core Toast
+# Timeout in ##Platform_Name## Toast
 
 The toast can be expired based on the [`timeOut`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_TimeOut) property. The toast can live till the time out reaches without user interaction, a time out value is considered as a millisecond.
 

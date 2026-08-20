@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ASP.NET MVC Toast | Syncfusion
-description: Render custom HTML content in the Syncfusion ASP.NET MVC Toast by passing a string or query selector to the `Template` property.
+title: Template in ##Platform_Name## Toast | Syncfusion
+description: Render custom HTML content in the Syncfusion ##Platform_Name## Toast by passing a string or query selector to the `Template` property.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ASP.NET MVC Toast
+# Template in ##Platform_Name## Toast
 
 The [`Template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Template) property can be given as the `HTML element`; this can be either a `string` or `query selector`.
 

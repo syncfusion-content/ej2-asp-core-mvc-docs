@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Toast | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET Core Toast control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## Toast | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toast control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Toast
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Toast
+# Getting Started with ##Platform_Name## Toast
 
 This section briefly explains how to include the [ASP.NET Core Toast](https://www.syncfusion.com/aspnet-core-ui-controls/toast) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

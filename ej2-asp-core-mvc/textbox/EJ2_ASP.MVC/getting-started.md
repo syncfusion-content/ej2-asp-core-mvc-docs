@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC TextBox | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET MVC TextBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## TextBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## TextBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC TextBox
+# Getting Started with ##Platform_Name## TextBox
 
 This section briefly explains how to include the [ASP.NET MVC TextBox](https://www.syncfusion.com/aspnet-mvc-ui-controls/textbox) control in an ASP.NET MVC application using Visual Studio.
 

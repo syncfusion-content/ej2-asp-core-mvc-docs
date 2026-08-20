@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reverse in ASP.NET Core Timeline | Syncfusion
-description: Display Syncfusion ASP.NET Core Timeline items in reverse order for different alignments using the `reverse` property for better user interaction.
+title: Reverse in ##Platform_Name## Timeline | Syncfusion
+description: Display Syncfusion ##Platform_Name## Timeline items in reverse order for different alignments using the `reverse` property for better user interaction.
 platform: ej2-asp-core-mvc
 control: Reverse
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Reverse in ASP.NET Core Timeline
+# Reverse in ##Platform_Name## Timeline
 
 You can display the Timeline items in reverse order, for different alignments by using the [reverse](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Reverse) property which provides adaptability and improves user interaction.
 

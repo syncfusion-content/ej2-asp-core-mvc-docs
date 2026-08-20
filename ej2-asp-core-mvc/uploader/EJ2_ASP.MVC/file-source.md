@@ -1,7 +1,7 @@
 ---
 layout: post
-title: File Source in ASP.NET MVC File Upload | Syncfusion
-description: Configure file sources for the Syncfusion ASP.NET MVC File Upload: select, drop, paste-from-clipboard, and directory uploads with rename support.
+title: File Source in ##Platform_Name## File Upload | Syncfusion
+description: Configure file sources for the Syncfusion ##Platform_Name## File Upload: select, drop, paste-from-clipboard, and directory uploads with rename support.
 platform: ej2-asp-core-mvc
 control: File Source
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# File Source in ASP.NET MVC File Upload
+# File Source in ##Platform_Name## File Upload
 
 ## Paste to upload
 

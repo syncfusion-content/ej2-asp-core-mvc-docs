@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in ASP.NET MVC TimePicker | Syncfusion
-description: Adapt the Syncfusion ASP.NET MVC TimePicker to various languages by parsing and formatting the time with internationalization and culture-specific localization.
+title: Globalization in ##Platform_Name## TimePicker | Syncfusion
+description: Adapt the Syncfusion ##Platform_Name## TimePicker to various languages by parsing and formatting the time with internationalization and culture-specific localization.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Globalization in ASP.NET MVC TimePicker
+# Globalization in ##Platform_Name## TimePicker
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number [internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also add culture specific customization and translation to the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 

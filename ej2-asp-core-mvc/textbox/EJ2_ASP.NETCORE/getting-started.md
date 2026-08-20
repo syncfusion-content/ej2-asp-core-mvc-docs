@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core TextBox | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET Core TextBox control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## TextBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## TextBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: TextBox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core TextBox
+# Getting Started with ##Platform_Name## TextBox
 
 This section briefly explains how to include the [ASP.NET Core TextBox](https://www.syncfusion.com/aspnet-core-ui-controls/textbox) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Config in ASP.NET MVC Toast | Syncfusion
-description: Customize the Syncfusion ASP.NET MVC Toast notification message using the `Title` and `Content` properties to display HTML or string values adaptively.
+title: Config in ##Platform_Name## Toast | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Toast notification message using the `Title` and `Content` properties to display HTML or string values adaptively.
 platform: ej2-asp-core-mvc
 control: Config
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Config in ASP.NET MVC Toast
+# Config in ##Platform_Name## Toast
 
 This section explains the steps required to customize the appearance of the toast using built-in APIs.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Action Buttons in ASP.NET Core Toast | Syncfusion
-description: Add action buttons to the Syncfusion ASP.NET Core Toast by binding a collection of button models to the `buttons` property with click callbacks.
+title: Action Buttons in ##Platform_Name## Toast | Syncfusion
+description: Add action buttons to the Syncfusion ##Platform_Name## Toast by binding a collection of button models to the `buttons` property with click callbacks.
 platform: ej2-asp-core-mvc
 control: Action Buttons
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Action Buttons in ASP.NET Core Toast
+# Action Buttons in ##Platform_Name## Toast
 
 You can include action buttons to the toast control by adding the [`buttons`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Buttons) property. The collection of Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core button models can be bound to the `model` property inside the `buttons` property. You can also include the click event callback function for each button.
 

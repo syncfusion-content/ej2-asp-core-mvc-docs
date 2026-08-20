@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Events in ASP.NET Core Timeline | Syncfusion
-description: Handle the Syncfusion ASP.NET Core Timeline `created` event to detect when the control rendering is completed.
+title: Events in ##Platform_Name## Timeline | Syncfusion
+description: Handle the Syncfusion ##Platform_Name## Timeline `created` event to detect when the control rendering is completed.
 platform: ej2-asp-core-mvc
 control: Events
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Events in ASP.NET Core Timeline
+# Events in ##Platform_Name## Timeline
 
 This section describes the Timeline events that will be triggered when an appropriate actions are performed. The following events are available in the Timeline control.
 

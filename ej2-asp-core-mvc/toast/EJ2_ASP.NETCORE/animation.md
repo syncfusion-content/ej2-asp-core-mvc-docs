@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Animation in ASP.NET Core Toast | Syncfusion
-description: Apply custom show and hide animations to the Syncfusion ASP.NET Core Toast using the `animation` library with `FadeIn`, `FadeOut`, and other effects.
+title: Animation in ##Platform_Name## Toast | Syncfusion
+description: Apply custom show and hide animations to the Syncfusion ##Platform_Name## Toast using the `animation` library with `FadeIn`, `FadeOut`, and other effects.
 platform: ej2-asp-core-mvc
 control: Animation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Animation in ASP.NET Core Toast
+# Animation in ##Platform_Name## Toast
 
 The toast control supports custom animations for both shows and hide actions from the provided [`animation`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Notifications.Toast.html#Syncfusion_EJ2_Notifications_Toast_Animation) option of the `Animation` library.
 

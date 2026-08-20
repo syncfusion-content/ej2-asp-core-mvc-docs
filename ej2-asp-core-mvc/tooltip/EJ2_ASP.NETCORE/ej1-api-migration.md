@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET Core Tooltip | Syncfusion
-description: Migrate your ASP.NET Core Tooltip from Essential JS 1 to Essential JS 2 with this API mapping guide listing property, method, and event equivalents.
+title: EJ1 API Migration in ##Platform_Name## Tooltip | Syncfusion
+description: Migrate your ##Platform_Name## Tooltip from Essential JS 1 to Essential JS 2 with this API mapping guide listing property, method, and event equivalents.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ASP.NET Core Tooltip
+# EJ1 API Migration in ##Platform_Name## Tooltip
 
 This article describes the API migration process of Tooltip component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2
 

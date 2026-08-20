@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chunk Upload in ASP.NET MVC File Upload | Syncfusion
-description: Enable chunk upload in the Syncfusion ASP.NET MVC File Upload using chunkSize to split large files for AJAX-based pause, resume, and retry.
+title: Chunk Upload in ##Platform_Name## File Upload | Syncfusion
+description: Enable chunk upload in the Syncfusion ##Platform_Name## File Upload using chunkSize to split large files for AJAX-based pause, resume, and retry.
 platform: ej2-asp-core-mvc
 control: Chunk Upload
 publishingplatform: ##Platform_Name##
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 ---
 
 
-# Chunk Upload in ASP.NET MVC File Upload
+# Chunk Upload in ##Platform_Name## File Upload
 
 The Uploader sends the large file split into small chunks and transmits to the server using AJAX. You can also pause, resume, and retry the failed chunk file.
 

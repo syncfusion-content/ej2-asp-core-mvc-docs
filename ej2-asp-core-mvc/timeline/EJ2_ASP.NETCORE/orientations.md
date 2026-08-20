@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orientations in ASP.NET Core Timeline | Syncfusion
-description: Display Syncfusion ASP.NET Core Timeline items in horizontal or vertical direction by setting the `orientation` property.
+title: Orientations in ##Platform_Name## Timeline | Syncfusion
+description: Display Syncfusion ##Platform_Name## Timeline items in horizontal or vertical direction by setting the `orientation` property.
 platform: ej2-asp-core-mvc
 control: Orientations
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientations in ASP.NET Core Timeline
+# Orientations in ##Platform_Name## Timeline
 
 The Timeline control supports the display of items in both horizontal and vertical direction by using the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Layouts.Timeline.html#Syncfusion_EJ2_Layouts_Timeline_Orientation) property.
 

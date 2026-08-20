@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Timeline | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET Core Timeline control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## Timeline | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Timeline control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Timeline
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Timeline
+# Getting Started with ##Platform_Name## Timeline
 
 This section briefly explains how to include [ASP.NET Core Timeline](https://www.syncfusion.com/aspnet-core-ui-controls/timeline) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

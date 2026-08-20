@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Asynchronous Upload in ASP.NET MVC File Upload | Syncfusion
-description: Configure async file uploads in the Syncfusion ASP.NET MVC File Upload with save and remove action URLs plus auto-upload and multi-file selection.
+title: Asynchronous Upload in ##Platform_Name## File Upload | Syncfusion
+description: Configure async file uploads in the Syncfusion ##Platform_Name## File Upload with save and remove action URLs plus auto-upload and multi-file selection.
 platform: ej2-asp-core-mvc
 control: Async
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Asynchronous Upload in ASP.NET MVC File Upload
+# Asynchronous Upload in ##Platform_Name## File Upload
 
 The uploader control allows you to upload the files asynchronously. 
 The upload process requires save and remove action URL to manage the upload process in the server.

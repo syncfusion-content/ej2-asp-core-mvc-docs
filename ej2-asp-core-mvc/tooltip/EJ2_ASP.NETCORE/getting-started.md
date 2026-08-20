@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Tooltip | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET Core Tooltip control. Explore setup, configuration, content rendering, and integration.
+title: Getting Started with ##Platform_Name## Tooltip | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Tooltip control. Explore setup, configuration, content rendering, and integration.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Tooltip
+# Getting Started with ##Platform_Name## Tooltip
 
 This section briefly explains how to include the [ASP.NET Core Tooltip](https://www.syncfusion.com/aspnet-core-ui-controls/tooltip) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
