@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Set Title in ##Platform_Name## Menu Component
-description: Learn here all about Set Title in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: How to set title for ##Platform_Name## Menu items | Syncfusion
+description: Set the Syncfusion ##Platform_Name## Menu item title attribute (tooltip text) using the beforeItemRender event and assigning a string to li.title.
 platform: ej2-asp-core-mvc
 control: Set Title
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Set title for Menu Items
+# How to set title for ##Platform_Name## Menu items
 
 In this sample , the title for settings icon  can be achievable by using `beforeItemRender`  client-side event in Menu component.
 

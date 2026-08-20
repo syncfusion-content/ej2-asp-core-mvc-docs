@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Search in ##Platform_Name## AutoComplete Component | Syncfusion
+title: Custom highlight search in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Custom Search in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Custom Search
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Custom highlight search
+# Custom highlight search in ##Platform_Name## AutoComplete
 
 The AutoComplete has built-in support to highlight the searched characters on suggested list items when the [highlight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_Highlight) property is enabled.
 

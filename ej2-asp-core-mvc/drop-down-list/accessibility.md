@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Drop Down List Control | Syncfusion
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## DropDownList | Syncfusion
+description: Syncfusion ##Platform_Name## DropDownList follows WAI-ARIA roles, states, and keyboard navigation patterns for accessibility, including ARIA combobox semantics.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in DropDownList Control
+# Accessibility in ##Platform_Name## DropDownList
 
 The DropDownList control has been designed, keeping in mind the `WAI-ARIA` specifications, and applies the WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) or those who completely rely on keyboard navigation.
 

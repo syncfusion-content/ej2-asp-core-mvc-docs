@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone Behavior in ##Platform_Name## Datepicker | Syncfusion
-description: Learn here all about Timezone Behavior in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Timezone Behavior in ##Platform_Name## DatePicker | Syncfusion
+description: Configure Syncfusion ##Platform_Name## DatePicker serverTimezoneOffset to interpret server-bound date values in the client's time zone.
 platform: ej2-asp-core-mvc
 control: Timezone Behavior
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Timezone Behavior in DatePicker Control
+# Timezone Behavior in ##Platform_Name## DatePicker
 
 The DatePicker component displays and maintains the selected date value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
 

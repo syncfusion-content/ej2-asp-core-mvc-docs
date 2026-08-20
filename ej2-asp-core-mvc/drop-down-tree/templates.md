@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Syncfusion Drop Down Tree Component
-description: Learn here all about templates in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## DropdownTree | Syncfusion
+description: Customize each Syncfusion ##Platform_Name## DropdownTree list item, header, and footer with the Essential JS 2 Template engine via the template property.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Templates in Drop Down Tree Component
+# Templates in ##Platform_Name## DropdownTree
 
 The Dropdown Tree provides support to customize each list item, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [Template engine](../../common/template-engine) to compile and render the elements properly.
 

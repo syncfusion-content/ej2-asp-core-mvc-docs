@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cascading Preselect in ##Platform_Name## Drop Down List Component
-description: Learn here all about cascading preselect in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Preselect cascading DropDownList values | Syncfusion
+description: Preselect values into cascading Syncfusion ##Platform_Name## DropDownLists from a model using the dataManager create event and filter operations.
 platform: ej2-asp-core-mvc
 control: Cascading Preselect
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Preselect value from model in Cascading DropDownList
+# How to preselect cascading ##Platform_Name## DropDownList values
 
 The cascading DropDownList is a series of DropDownList, where the value of one DropDownList depends upon another's value. Values can be preselected in these DropDownList from model. Use the dataManager to perform the filtering operation on the JSON data for cascading through create event.
 

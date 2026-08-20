@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Search Controller Data in ##Platform_Name## ListView | Syncfusion
-description: Learn here all about Perform Search Using Controller Data in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to search ##Platform_Name## ListView with controller data | Syncfusion
+description: Search Syncfusion ##Platform_Name## ListView items through an ASP.NET MVC controller by sending a TextBox keyup query and filtering with Linq or DataManager.
 platform: ej2-asp-core-mvc
 control: Perform Search Using Controller Data
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Perform Search Operation in ListView with Controller data
+# How to search ##Platform_Name## ListView with controller data
 
-In ASP .NET Core environment, we can fetch the data from controller using adaptors and the fetched data can be appended to any Controls.
+In ASP .Net Core environment, we can fetch the data from controller using adaptors and the fetched data can be appended to any Controls.
 
 Here we are going to use URL Adaptor to fetch the data from Controller and bind the data to ListView.
 
@@ -139,7 +139,7 @@ N> While using Adaptors in our application, we need to return the JSON data from
 
 To perform search operation in the fetched controller data, we have used a textbox and bound `keyup` event to the textbox.
 
-In the `keyup` event, we have filtered the data using [`dataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) with user input and filtered data is appended to ListView using [refresh](https://ej2.syncfusion.com/documentation/api/list-view/index-default#refresh) method.
+In the `keyup` event, we have filtered the data using [`dataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) with user input and filtered data is appended to ListView using [refresh](https://ej2.syncfusion.com/documentation/api/list-view#refresh) method.
 
 Refer to the below code snippet.
 

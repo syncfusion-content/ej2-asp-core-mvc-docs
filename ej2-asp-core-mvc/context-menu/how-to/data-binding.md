@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Context Menu Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to data bind in ##Platform_Name## Context Menu | Syncfusion
+description: Populate Syncfusion ##Platform_Name## Context Menu items from a local data source by mapping the data fields to the items property.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding in Context Menu Control
+# How to data bind in ##Platform_Name## Context Menu
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Load child list dynamically in ##Platform_Name## ListView | Syncfusion
-description: Learn here all about Load List Items In Child List Dynamically in Syncfusion ##Platform_Name## ListView control of syncfusion and more.
+title: Load child items dynamically in ListView | Syncfusion
+description: Load nested Syncfusion ##Platform_Name## ListView child items on demand when expanding parents via the actionFailure event and remote data binding.
 platform: ej2-asp-core-mvc
 control: Load List Items In Child List Dynamically
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Load List Items in child list dynamically
+# How to load child items dynamically in ##Platform_Name## ListView
 
-To load list items in child list dynamically, push the new list item data into the existing [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view/index-default#datasource) using the [`select`](https://ej2.syncfusion.com/documentation/api/list-view/index-default#select) event.
+To load list items in child list dynamically, push the new list item data into the existing [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view#datasource) using the [`select`](https://ej2.syncfusion.com/documentation/api/list-view#select) event.
 
 Refer to the following steps to load list item into the child list:
 
 1. Initially, render the ListView with the required data source.
 
-2. Bind the [`select`](https://ej2.syncfusion.com/documentation/api/list-view/index-default#select) event that triggers selecting list item in the ListView control. By using the select event, you can push the new list item to the child list of the data source on specifying its item index. Item index can be obtained from the [`SelectEventArgs`](https://ej2.syncfusion.com/documentation/api/list-view/selecteventargs) of the select event.
+2. Bind the [`select`](https://ej2.syncfusion.com/documentation/api/list-view#select) event that triggers selecting list item in the ListView control. By using the select event, you can push the new list item to the child list of the data source on specifying its item index. Item index can be obtained from the [`SelectEventArgs`](https://ej2.syncfusion.com/documentation/api/list-view/selectEventArgs) of the select event.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

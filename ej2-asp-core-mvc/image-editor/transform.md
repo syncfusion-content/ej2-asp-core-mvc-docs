@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Transform in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Transform in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Transform in ##Platform_Name## ImageEditor | Syncfusion
+description: Rotate and flip Syncfusion ##Platform_Name## ImageEditor images clockwise, counter-clockwise, vertically, or horizontally using the rotate and flip APIs.
 platform: ej2-asp-core-mvc
 control: Transform
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clear Item in ##Platform_Name## Drop Down List | Syncfusion
-description: Learn here all about clear item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to clear selected items in ##Platform_Name## DropDownList | Syncfusion
+description: Clear Syncfusion ##Platform_Name## DropDownList selection by setting value to null and triggering change, or by calling clearText on the popup input element.
 platform: ej2-asp-core-mvc
 control: Clear Item
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clear the selected item in DropDownList
+# How to clear selected items in ##Platform_Name## DropDownList
 
 You can clear the selected item in the below two different ways.
 

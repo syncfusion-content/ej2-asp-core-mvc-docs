@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Filter list items In The ListView in ##Platform_Name## | Syncfusion
-description: Learn here all about Filter list items In The ListView in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: How to filter items in ##Platform_Name## ListView | Syncfusion
+description: Filter Syncfusion ##Platform_Name## ListView items by binding a TextBox keyup or using the dataManager query filter API for the data source.
 platform: ej2-asp-core-mvc
 control: Filter list items In The ListView
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Filter list items in the ListView
+# How to filter items in ##Platform_Name## ListView
 
 The filtered data can be displayed in the ListView control depending upon on user inputs using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/getting-started). Refer to the following steps to render the ListView with filtered data.
 
 * Render a textbox to get input for filtering data.
 
-* Render ListView with [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view/index-default#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view/index-default#sortorder) property.
+* Render ListView with [`dataSource`](https://ej2.syncfusion.com/documentation/api/list-view#datasource), and set the [`sortOrder`](https://ej2.syncfusion.com/documentation/api/list-view#sortorder) property.
 
 * Bind the `keyup` event for textbox to perform filtering operation. To filter list data, pass the list data source to the `DataManager`, manipulate the data using the [`executeLocal`](https://ej2.syncfusion.com/documentation/api/data/query#executelocal) method, and then update filtered data as ListView dataSource.
 

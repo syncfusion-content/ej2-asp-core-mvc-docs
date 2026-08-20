@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Card Image in ##Platform_Name## Card Control | Syncfusion
-description: Learn here all about Card Image in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Images and Divider in ##Platform_Name## Card | Syncfusion
+description: Render images, captions, and dividers inside the Syncfusion ##Platform_Name## Card with the e-card-image, e-card-title, and e-card-separator classes.
 platform: ej2-asp-core-mvc
 control: Card Image
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Images and Divider in Card Control
+# Images and Divider in ##Platform_Name## Card
 
 ## Images
 

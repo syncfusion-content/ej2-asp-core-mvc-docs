@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Autofill in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Autofill in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: How to enable autofill in ##Platform_Name## ComboBox | Syncfusion
+description: Enable Syncfusion ##Platform_Name## ComboBox autofill so the input auto-completes from the list as the user types each character.
 platform: ej2-asp-core-mvc
 control: Autofill
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Autofill supported with ComboBox
+# How to enable autofill in ##Platform_Name## ComboBox
 
 The ComboBox supports the `autofill` behaviour with the help of [autofill](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ComboBox.html#Syncfusion_EJ2_DropDowns_ComboBox_Autofill) property. Whenever you change the input value, the ComboBox will autocomplete your data by matching the typed character. Suppose, if there are no matches found then, comboBox doesn't suggest any item.
 

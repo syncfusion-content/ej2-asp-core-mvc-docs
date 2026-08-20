@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core In-place Editor Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core In-place Editor control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## InplaceEditor | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## InplaceEditor control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: In-place Editor
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core In-place Editor Control
+# Getting Started with ##Platform_Name## InplaceEditor
 
 This section briefly explains how to include the [ASP.NET Core In-place Editor](https://www.syncfusion.com/aspnet-core-ui-controls/in-place-editor) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

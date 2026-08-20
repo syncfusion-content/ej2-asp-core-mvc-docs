@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ##Platform_Name## DateTimePicker
-description: Check out and learn about getting started with ##Platform_Name## DateTimePicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## DateTimePicker | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## DateTimePicker control in an ASP.NET Core web app using Razor pages, TagHelper, and Syncfusion NuGet packages.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core DateTimePicker Control
+# Getting Started with ##Platform_Name## DateTimePicker
 
 This section briefly explains how to include the [ASP.NET Core DateTimePicker](https://www.syncfusion.com/aspnet-core-ui-controls/datetime-picker) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

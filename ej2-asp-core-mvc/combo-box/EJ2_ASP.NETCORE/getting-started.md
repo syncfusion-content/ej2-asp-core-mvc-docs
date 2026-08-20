@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core ComboBox Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core ComboBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ComboBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## ComboBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: ComboBox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core ComboBox Control
+# Getting Started with ##Platform_Name## ComboBox
 
 This section briefly explains how to include the [ASP.NET Core ComboBox](https://www.syncfusion.com/aspnet-core-ui-controls/combobox) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

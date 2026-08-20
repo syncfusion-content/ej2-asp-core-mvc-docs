@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Design User Interface with ##Platform_Name## AppBar Control | Syncfusion
+title: Design in ##Platform_Name## AppBar | Syncfusion
 description: Check out and learn about Design User Interface with the ##Platform_Name## AppBar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Design
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Design User Interface with ##Platform_Name## AppBar Control
+# Design in ##Platform_Name## AppBar
 
 ## Spacer
 

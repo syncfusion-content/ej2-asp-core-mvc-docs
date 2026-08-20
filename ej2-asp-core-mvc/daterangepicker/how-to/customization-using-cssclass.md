@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization Using Cssclass in ##Platform_Name## Daterangepicker Component
-description: Learn here all about Customization using Cssclass in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Customize with cssClass | Syncfusion
+description: Apply a custom cssClass to Syncfusion ##Platform_Name## DateRangePicker to override the wrapper, popup, and calendar styles for a custom UI.
 platform: ej2-asp-core-mvc
 control: Customization Using Cssclass
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization using cssClass
+# How to customize with cssClass in ##Platform_Name## DateRangePicker
 
 To customize UI, you can make use of [cssClass](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DateRangePicker.html#Syncfusion_EJ2_Calendars_DateRangePicker_CssClass) that will be added to the DateRangePicker control as the root CSS class. With this CSS class, you can override existing styles of DateRangePicker.
 
@@ -47,7 +47,8 @@ Following is the list of classes that provides flexible way to customize the Dat
 {% include code-snippet/daterangepicker/how-to/css/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -56,6 +57,7 @@ Following is the list of classes that provides flexible way to customize the Dat
 {% include code-snippet/daterangepicker/how-to/css/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Css.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
