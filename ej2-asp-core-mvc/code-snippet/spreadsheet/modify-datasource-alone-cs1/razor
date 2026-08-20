@@ -1,0 +1,65 @@
+@using Syncfusion.EJ2
+@{
+    var itemData = ViewBag.ItemData;
+}
+
+<div>
+    <button id="changeDataBtn" class='e-btn'>Change Datasource</button>
+</div>
+
+@Html.EJS().Spreadsheet("spreadsheet").Created("created").Sheets((sheet) =>
+{
+    sheet.Ranges((ranges) =>
+    {
+        ranges.DataSource(@ViewBag.DefaultData).Add();
+    }).Columns(column =>
+    {
+        column.Width(120).Add();
+        column.Width(180).Add();
+        column.Width(100).Add();
+        column.Width(120).Add();
+        column.Width(120).Add();
+    }).Add();
+}).Render()
+
+<script>
+
+    var itemData = @Html.Raw(Json.Encode(itemData));
+
+    document.getElementById('changeDataBtn').addEventListener('click', () => {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        // You can also change the datasource of the range by changing dataSource property of the range by using below line of code.
+        //To maintain the styles and format while changing the dataSource, you can utilize the below code.
+        if (spreadsheet.sheets && spreadsheet.sheets[0].ranges) {
+            spreadsheet.sheets[0].ranges[0].dataSource = [];
+            spreadsheet.sheets[0].ranges[0] = { dataSource: itemData, startCell: 'A1', showFieldAsHeader: true };
+            spreadsheet.dataBind();
+            spreadsheet.refresh();
+        }
+    });
+
+    function created() {
+        var spreadsheet = ej.base.getComponent(document.getElementById('spreadsheet'), 'spreadsheet');
+        spreadsheet.cellFormat(
+            {
+                fontFamily: 'Arial',
+                fontWeight: 'bold',
+                fontSize: '8pt',
+            },
+            'A1:N20'
+        );
+    }
+
+</script>
+
+<style>
+
+    #changeDataBtn {
+        margin-bottom: 10px;
+    }
+
+    hr {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
