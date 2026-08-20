@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Styles in ASP.NET MVC FloatingActionButton Control
+# Styles in ##Platform_Name## FloatingActionButton Control
 
 This section explains the different styles of Floating Action Button.
 

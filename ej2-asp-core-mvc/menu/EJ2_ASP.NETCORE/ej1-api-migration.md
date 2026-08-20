@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## Menu | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET Core Menu to EJ2 by mapping tag prefix, namespaces, and APIs from ejMenu to ej2-menu or ej2-menubar control.
+description: Migrate Syncfusion EJ1 ##Platform_Name## Menu to EJ2 by mapping tag prefix, namespaces, and APIs from ejMenu to ej2-menu or ej2-menubar control.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

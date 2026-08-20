@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core DropDownList | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET Core DropDownList control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## DropDownList | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## DropDownList control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: DropDownList
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core DropDownList
+# Getting Started with ##Platform_Name## DropDownList
 
 This section briefly explains how to include the [ASP.NET Core DropDownList](https://www.syncfusion.com/aspnet-core-ui-controls/dropdown-list) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

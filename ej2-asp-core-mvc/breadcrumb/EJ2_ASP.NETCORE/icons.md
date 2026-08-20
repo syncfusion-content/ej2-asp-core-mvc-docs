@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Icons in ##Platform_Name## Breadcrumb | Syncfusion
-description: Add icons to Breadcrumb items in ASP.NET Core using the iconCss property to show home, folder, or custom icons next to each item.
+description: Add icons to Breadcrumb items in ##Platform_Name## using the iconCss property to show home, folder, or custom icons next to each item.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Mention | Syncfusion
-description: Learn how to get started with the Syncfusion ASP.NET MVC Mention control. Explore setup, features, examples, and customization options.
+title: Getting Started with ##Platform_Name## Mention | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Mention control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Mention
+# Getting Started with ##Platform_Name## Mention
 
 This section briefly explains about how to include [ASP.NET MVC Mention](https://www.syncfusion.com/aspnet-mvc-ui-controls/mention) control in your ASP.NET MVC application using Visual Studio.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Calendar | Syncfusion
-description: Add the Syncfusion ASP.NET MVC Calendar to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
+description: Add the Syncfusion ##Platform_Name## Calendar to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

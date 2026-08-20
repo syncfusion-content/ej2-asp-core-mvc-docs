@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## MultiSelect | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET Core MultiSelect to EJ2 by mapping tag prefix, namespaces, and APIs from ejMultiselect to ej2-multiselect.
+description: Migrate Syncfusion EJ1 ##Platform_Name## MultiSelect to EJ2 by mapping tag prefix, namespaces, and APIs from ejMultiselect to ej2-multiselect.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

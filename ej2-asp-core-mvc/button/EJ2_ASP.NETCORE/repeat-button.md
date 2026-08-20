@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Repeat Button in ##Platform_Name## Button | Syncfusion
-description: Enable continuous click events on the ASP.NET Core Button with enableRepeat, repeatDelay, and repeatInterval properties.
+description: Enable continuous click events on the ##Platform_Name## Button with enableRepeat, repeatDelay, and repeatInterval properties.
 platform: ej2-asp-core-mvc
 control: Repeat Button
 publishingplatform: ##Platform_Name##

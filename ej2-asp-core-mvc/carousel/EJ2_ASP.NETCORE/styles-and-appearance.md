@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in ##Platform_Name## Carousel | Syncfusion
-description: Override the ASP.NET Core Carousel CSS classes to restyle slides, indicators, navigators, and the partial-slide container for custom themes.
+description: Override the ##Platform_Name## Carousel CSS classes to restyle slides, indicators, navigators, and the partial-slide container for custom themes.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

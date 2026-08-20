@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ej1 Api Migration in ##Platform_Name## Button | Syncfusion
-description: Map Essential JS 1 Button properties, methods, and events to their Essential JS 2 equivalents for ASP.NET MVC migration.
+description: Map Essential JS 1 Button properties, methods, and events to their Essential JS 2 equivalents for ##Platform_Name## migration.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

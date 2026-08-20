@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in ##Platform_Name## Breadcrumb | Syncfusion
-description: Bind Breadcrumb items from local JSON or remote data sources in ASP.NET MVC using url and text fields for navigation links.
+description: Bind Breadcrumb items from local JSON or remote data sources in ##Platform_Name## using url and text fields for navigation links.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##

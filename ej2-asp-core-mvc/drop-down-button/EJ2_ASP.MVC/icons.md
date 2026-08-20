@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ASP.NET MVC DropDownButton | Syncfusion
-description: Add icons to the Syncfusion ASP.NET MVC DropDownButton via the iconCss property and customize the icon position with iconPosition.
+title: Icons in ##Platform_Name## DropDownButton | Syncfusion
+description: Add icons to the Syncfusion ##Platform_Name## DropDownButton via the iconCss property and customize the icon position with iconPosition.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons in ASP.NET MVC DropDownButton
+# Icons in ##Platform_Name## DropDownButton
 
 ## DropDownButton icons
 

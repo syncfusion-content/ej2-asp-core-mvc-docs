@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and Appearance in ASP.NET MVC ListBox | Syncfusion
-description: Customize Syncfusion ASP.NET MVC ListBox CSS classes for list items, selected state, hover, focus, height, width, and Bootstrap CSS structure.
+title: Style and Appearance in ##Platform_Name## ListBox | Syncfusion
+description: Customize Syncfusion ##Platform_Name## ListBox CSS classes for list items, selected state, hover, focus, height, width, and Bootstrap CSS structure.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Style and Appearance in ASP.NET MVC ListBox
+# Style and Appearance in ##Platform_Name## ListBox
 
 To modify the ListBox appearance, you need to override the default CSS of ListBox component. Find the list of CSS classes and its corresponding section in ListBox component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

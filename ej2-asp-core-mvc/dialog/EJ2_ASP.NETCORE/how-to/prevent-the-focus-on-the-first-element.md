@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent focus on first element in dialog | Syncfusion
+title: Prevent focus on first element in ##Platform_Name## dialog | Syncfusion
 description: Prevent the Syncfusion ##Platform_Name## Dialog from auto-focusing the first content element by enabling the preventFocus argument in the open event.
 platform: ej2-asp-core-mvc
 control: Prevent The Focus On The First Element

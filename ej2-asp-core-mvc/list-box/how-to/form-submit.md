@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to submit a form with ##Platform_Name## ListBox | Syncfusion
-description: Submit Syncfusion ##Platform_Name## ListBox selected values via an ASP.NET MVC form by naming the list input and binding value to a controller action.
+description: Submit Syncfusion ##Platform_Name## ListBox selected values via an form by naming the list input and binding value to a controller action.
 platform: ej2-asp-core-mvc
 control: Form Submit
 publishingplatform: ##Platform_Name##

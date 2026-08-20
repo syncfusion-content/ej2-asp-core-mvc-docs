@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## Checkbox | Syncfusion
-description: Migrate ASP.NET Core Checkbox tag helpers from Essential JS 1 to Essential JS 2 with side-by-side maps for label, checked, indeterminate, and events.
+description: Migrate ##Platform_Name## Checkbox tag helpers from Essential JS 1 to Essential JS 2 with side-by-side maps for label, checked, indeterminate, and events.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

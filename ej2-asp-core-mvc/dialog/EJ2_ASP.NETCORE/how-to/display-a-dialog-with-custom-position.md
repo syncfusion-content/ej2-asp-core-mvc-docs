@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display dialog at custom position | Syncfusion
+title: Display dialog at custom position in ##Platform_Name## | Syncfusion
 description: Position the Syncfusion ##Platform_Name## Dialog inside the target container by providing custom X and Y coordinates to the Position property.
 platform: ej2-asp-core-mvc
 control: Display A Dialog With Custom Position

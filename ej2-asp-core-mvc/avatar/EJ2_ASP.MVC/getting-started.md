@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Avatar | Syncfusion
-description: Get started with the Syncfusion ASP.NET MVC Avatar by adding the EJ2 MVC5 NuGet package and rendering avatars for users, initials, or icons.
+description: Get started with the Syncfusion ##Platform_Name## Avatar by adding the EJ2 MVC5 NuGet package and rendering avatars for users, initials, or icons.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

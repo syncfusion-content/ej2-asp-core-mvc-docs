@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Items in ##Platform_Name## Carousel | Syncfusion
-description: Bind slides to the ASP.NET MVC Carousel via item templates or a data source, set the selected index, and show partial adjacent slides.
+description: Bind slides to the ##Platform_Name## Carousel via item templates or a data source, set the selected index, and show partial adjacent slides.
 platform: ej2-asp-core-mvc
 control: Populating Items
 publishingplatform: ##Platform_Name##

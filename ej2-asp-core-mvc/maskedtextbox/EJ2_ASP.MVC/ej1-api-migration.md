@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET MVC MaskedTextBox | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET MVC MaskEdit to EJ2 MaskedTextBox by mapping tag prefix, namespaces, and APIs from ejMaskEdit to ej2-maskedtextbox.
+title: EJ1 API Migration in ##Platform_Name## MaskedTextBox | Syncfusion
+description: Migrate Syncfusion EJ1 ##Platform_Name## MaskEdit to EJ2 MaskedTextBox by mapping tag prefix, namespaces, and APIs from ejMaskEdit to ej2-maskedtextbox.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ASP.NET MVC MaskedTextBox
+# EJ1 API Migration in ##Platform_Name## MaskedTextBox
 
 This article describes the API migration process of MaskEdit component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

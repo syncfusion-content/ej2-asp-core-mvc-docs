@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## AutoComplete | Syncfusion
-description: Get started with the Syncfusion ASP.NET Core AutoComplete by adding the DropDowns NuGet package and rendering the suggestion list in a Razor Pages app.
+description: Get started with the Syncfusion ##Platform_Name## AutoComplete by adding the DropDowns NuGet package and rendering the suggestion list in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: AutoComplete
 publishingplatform: ##Platform_Name##

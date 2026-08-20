@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Globalization in ##Platform_Name## Calendar | Syncfusion
-description: Localize the ASP.NET MVC Calendar to any culture using CLDR data, the locale property, and L10n text translations.
+description: Localize the ##Platform_Name## Calendar to any culture using CLDR data, the locale property, and L10n text translations.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize in ASP.NET MVC Dialog | Syncfusion
-description: Resize the Syncfusion ASP.NET MVC Dialog dynamically by setting EnableResize to true and configuring the ResizeHandles and target properties.
+title: Resize in ##Platform_Name## Dialog | Syncfusion
+description: Resize the Syncfusion ##Platform_Name## Dialog dynamically by setting EnableResize to true and configuring the ResizeHandles and target properties.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##

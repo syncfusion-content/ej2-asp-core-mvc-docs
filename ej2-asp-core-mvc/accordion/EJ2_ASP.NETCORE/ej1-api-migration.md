@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## Accordion | Syncfusion
-description: Migrate the ASP.NET Core Accordion from Essential JS 1 to Essential JS 2 with side-by-side API maps for accessibility, AjaxSettings, and events.
+description: Migrate the ##Platform_Name## Accordion from Essential JS 1 to Essential JS 2 with side-by-side API maps for accessibility, AjaxSettings, and events.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

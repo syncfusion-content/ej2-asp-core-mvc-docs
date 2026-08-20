@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET MVC DropDownList | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET MVC DropDownList to EJ2 by mapping tag prefix, namespaces, and APIs from ejDropDownList to ej2-dropdownlist.
+title: EJ1 API Migration in ##Platform_Name## DropDownList | Syncfusion
+description: Migrate Syncfusion ##Platform_Name## DropDownList to EJ2 by mapping tag prefix, namespaces, and APIs from ejDropDownList to ej2-dropdownlist.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ASP.NET MVC DropDownList
+# EJ1 API Migration in ##Platform_Name## DropDownList
 
 This article describes the API migration process of  DropDownList component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

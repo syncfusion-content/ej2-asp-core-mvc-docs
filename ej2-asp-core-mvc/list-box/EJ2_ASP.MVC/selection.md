@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in ASP.NET MVC ListBox | Syncfusion
-description: Configure Syncfusion ASP.NET MVC ListBox selection with selectionMode (Single, Multiple), showCheckbox, selectAll, and checkboxPosition APIs.
+title: Selection in ##Platform_Name## ListBox | Syncfusion
+description: Configure Syncfusion ##Platform_Name## ListBox selection with selectionMode (Single, Multiple), showCheckbox, selectAll, and checkboxPosition APIs.
 platform: ej2-asp-core-mvc
 control: Selection
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection in ASP.NET MVC ListBox
+# Selection in ##Platform_Name## ListBox
 
 The ListBox provides support to select an item or a group of item by mouse or keyboard action. There are two selection modes available in list box,
 

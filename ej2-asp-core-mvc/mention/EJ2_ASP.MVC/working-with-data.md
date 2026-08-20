@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Mention | Syncfusion
-description: Bind Syncfusion ASP.NET MVC Mention to local arrays or remote data using the dataSource property with DataManager, OData, and Web API adaptor support.
+title: Data Binding in ##Platform_Name## Mention | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Mention to local arrays or remote data using the dataSource property with DataManager, OData, and Web API adaptor support.
 platform: ej2-asp-core-mvc
 control: Data binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Working with Data in ASP.NET MVC Mention
+# Working with Data in ##Platform_Name## Mention
 
 The Mention loads the data either from local data source or remote data services using the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.Mention.html#Syncfusion_EJ2_DropDowns_Mention_DataSource) property. It supports the data type of  either `array` or `DataManager`.
 

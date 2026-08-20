@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Timezone Behavior in ASP.NET MVC DateTimePicker | Syncfusion
-description: Display Syncfusion ASP.NET MVC DateTimePicker values in local time zone via the serverTimezoneOffset property for accurate server-side binding.
+title: Timezone Behavior in ##Platform_Name## DateTimePicker | Syncfusion
+description: Display Syncfusion ##Platform_Name## DateTimePicker values in local time zone via the serverTimezoneOffset property for accurate server-side binding.
 platform: ej2-asp-core-mvc
 control: Timezone Behavior
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Timezone Behavior in ASP.NET MVC DateTimePicker
+# Timezone Behavior in ##Platform_Name## DateTimePicker
 
 The DateTimePicker component displays and maintains the selected date and time value based on the client system’s current time zone. When a user selects a value, it is stored and rendered using the local time zone of the system at the time of selection. This ensures that the value remains consistent and predictable during user interaction.
 

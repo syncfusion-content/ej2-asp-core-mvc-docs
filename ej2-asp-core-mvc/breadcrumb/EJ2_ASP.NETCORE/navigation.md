@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Navigation in ##Platform_Name## Breadcrumb | Syncfusion
-description: Enable navigation between Breadcrumb items in ASP.NET Core by binding href to each item and handling clicks for in-app routing.
+description: Enable navigation between Breadcrumb items in ##Platform_Name## by binding href to each item and handling clicks for in-app routing.
 platform: ej2-asp-core-mvc
 control: Navigation
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types and Styles in ##Platform_Name## Button | Syncfusion
-description: Apply predefined visual styles and types to the ASP.NET Core Button using the cssClass property, including basic and flat variants.
+description: Apply predefined visual styles and types to the ##Platform_Name## Button using the cssClass property, including basic and flat variants.
 platform: ej2-asp-core-mvc
 control: Types And Styles
 publishingplatform: ##Platform_Name##

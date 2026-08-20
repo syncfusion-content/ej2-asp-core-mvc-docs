@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Accordion | Syncfusion
-description: Get started with the Syncfusion ASP.NET Core Accordion by adding the Navigations NuGet package and rendering items in a Razor Pages app.
+description: Get started with the Syncfusion ##Platform_Name## Accordion by adding the Navigations NuGet package and rendering items in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: Getting Started Asp Core
 publishingplatform: ##Platform_Name##

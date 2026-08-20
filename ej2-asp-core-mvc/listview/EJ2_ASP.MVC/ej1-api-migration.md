@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET MVC ListView | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET MVC ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
+title: EJ1 API Migration in ##Platform_Name## ListView | Syncfusion
+description: Migrate Syncfusion EJ1 ##Platform_Name## ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# EJ1 API Migration in ASP.NET MVC ListView
+# EJ1 API Migration in ##Platform_Name## ListView
 
 This article describes the API migration process of ListView control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

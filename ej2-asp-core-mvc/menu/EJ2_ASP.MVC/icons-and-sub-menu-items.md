@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons and Sub Menu Items in ASP.NET MVC Menu | Syncfusion
-description: Add Syncfusion ASP.NET MVC Menu item icons via iconCss, configure nested sub menus, and bind events to handle selection using the items endpoint.
+title: Icons and Sub Menu Items in ##Platform_Name## Menu | Syncfusion
+description: Add Syncfusion ##Platform_Name## Menu item icons via iconCss, configure nested sub menus, and bind events to handle selection using the items endpoint.
 platform: ej2-asp-core-mvc
 control: Icons And Sub Menu Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons and Sub Menu Items in ASP.NET MVC Menu
+# Icons and Sub Menu Items in ##Platform_Name## Menu
 
 ## Icons
 

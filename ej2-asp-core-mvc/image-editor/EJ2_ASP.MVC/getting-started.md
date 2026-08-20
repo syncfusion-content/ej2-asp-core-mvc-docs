@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC ImageEditor | Syncfusion
-description: Get started with the Syncfusion ASP.NET MVC ImageEditor in an MVC web app using Visual Studio with Html helper and TagHelper support.
+title: Getting Started with ##Platform_Name## ImageEditor | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## ImageEditor in an MVC web app using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC ImageEditor
+# Getting Started with ##Platform_Name## ImageEditor
 
 This section briefly explains how to include the [ASP.NET MVC Image Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/image-editor) control in an ASP.NET MVC application using Visual Studio.
 

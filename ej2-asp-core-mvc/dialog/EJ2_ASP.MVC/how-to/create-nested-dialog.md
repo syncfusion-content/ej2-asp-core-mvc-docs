@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to create nested Dialog in ASP.NET MVC Dialog | Syncfusion
-description: Nest a Dialog inside another Syncfusion ASP.NET MVC Dialog by initializing the inner Dialog with the outer Dialog as its target.
+title: How to create nested Dialog in ##Platform_Name## Dialog | Syncfusion
+description: Nest a Dialog inside another Syncfusion ##Platform_Name## Dialog by initializing the inner Dialog with the outer Dialog as its target.
 platform: ej2-asp-core-mvc
 control: Create Nested Dialog
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to create nested Dialog in ASP.NET MVC Dialog
+# How to create nested Dialog in ##Platform_Name## Dialog
 
 A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
 

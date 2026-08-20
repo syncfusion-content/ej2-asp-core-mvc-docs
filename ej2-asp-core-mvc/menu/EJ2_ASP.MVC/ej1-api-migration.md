@@ -1,7 +1,7 @@
 ---
 layout: post
-title: EJ1 API Migration in ASP.NET MVC Menu | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET MVC Menu to EJ2 by mapping tag prefix, namespaces, and APIs from ejMenu to ej2-menu or ej2-menubar control.
+title: EJ1 API Migration in ##Platform_Name## Menu | Syncfusion
+description: Migrate Syncfusion ##Platform_Name## Menu to EJ2 by mapping tag prefix, namespaces, and APIs from ejMenu to ej2-menu or ej2-menubar control.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# EJ1 API Migration in ASP.NET MVC Menu
+# EJ1 API Migration in ##Platform_Name## Menu
 
 This article describes the API migration process of Menu component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

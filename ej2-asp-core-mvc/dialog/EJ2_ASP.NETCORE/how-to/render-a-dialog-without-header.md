@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render dialog without header | Syncfusion
+title: Render dialog without header in ##Platform_Name## | Syncfusion
 description: Render the Syncfusion ##Platform_Name## Dialog without a header by setting the Header property to an empty string or null.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Without Header

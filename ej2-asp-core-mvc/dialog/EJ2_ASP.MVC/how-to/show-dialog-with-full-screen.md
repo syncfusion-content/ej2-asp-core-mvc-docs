@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to show Dialog in fullscreen in ASP.NET MVC Dialog | Syncfusion
-description: Show the Syncfusion ASP.NET MVC Dialog in fullscreen by passing true as an argument to the show method on the Dialog instance.
+title: How to show Dialog in fullscreen in ##Platform_Name## Dialog | Syncfusion
+description: Show the Syncfusion ##Platform_Name## Dialog in fullscreen by passing true as an argument to the show method on the Dialog instance.
 platform: ej2-asp-core-mvc
 control: Show Dialog With Full Screen
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# How to show Dialog in fullscreen in ASP.NET MVC Dialog
+# How to show Dialog in fullscreen in ##Platform_Name## Dialog
 
 You can show the dialog in fullscreen by passing `true` as argument to the dialog `show` method.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Card | Syncfusion
-description: Set up an ASP.NET Core Card with the Syncfusion Themes NuGet, register tag helpers, and render a header plus content in a Razor page.
+description: Set up an ##Platform_Name## Card with the Syncfusion Themes NuGet, register tag helpers, and render a header plus content in a Razor page.
 platform: ej2-asp-core-mvc
 control: Card
 publishingplatform: ##Platform_Name##

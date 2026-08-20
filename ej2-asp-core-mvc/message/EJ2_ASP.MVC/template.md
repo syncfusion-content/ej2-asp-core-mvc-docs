@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ASP.NET MVC Message | Syncfusion
-description: Use Syncfusion ASP.NET MVC Message templates via the content property or ContentTemplate tag to render custom HTML structure inside the message body.
+title: Template in ##Platform_Name## Message | Syncfusion
+description: Use Syncfusion ##Platform_Name## Message templates via the content property or ContentTemplate tag to render custom HTML structure inside the message body.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ASP.NET MVC Message
+# Template in ##Platform_Name## Message
 
 The message supports templates that allow you to customize the content with a custom structure. The content can be a string, paragraph, or any other HTML element. The template can be rendered through the [Content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_Content) property or to the `ContentTemplate` property.
 

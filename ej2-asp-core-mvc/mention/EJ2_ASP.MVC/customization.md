@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in ASP.NET MVC Mention | Syncfusion
-description: Customize Syncfusion ASP.NET MVC Mention list items by replacing the default @ character and cssClass with showOrHide, mentionChar, and template options.
+title: Customization in ##Platform_Name## Mention | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Mention list items by replacing the default @ character and cssClass with showOrHide, mentionChar, and template options.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in ASP.NET MVC Mention
+# Customization in ##Platform_Name## Mention
 
 ## Show or hide mention character
 

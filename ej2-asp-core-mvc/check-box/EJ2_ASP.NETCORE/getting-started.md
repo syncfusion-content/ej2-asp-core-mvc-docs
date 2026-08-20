@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Checkbox | Syncfusion
+title: Getting Started with ##Platform_Name## Checkbox | Syncfusion
 description: Add the Syncfusion Buttons NuGet, register ejs-scripts, and render an ASP.NET Core Checkbox tag helper with checked and indeterminate states.
 platform: ej2-asp-core-mvc
 control: Checkbox

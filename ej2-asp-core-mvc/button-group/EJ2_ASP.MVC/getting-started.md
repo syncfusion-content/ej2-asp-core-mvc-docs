@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Button Group | Syncfusion
-description: Add the Syncfusion ASP.NET MVC Button Group to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
+description: Add the Syncfusion ##Platform_Name## Button Group to a project by installing the Syncfusion.EJ2.MVC5 NuGet package.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

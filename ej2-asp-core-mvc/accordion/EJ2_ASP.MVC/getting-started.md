@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Accordion | Syncfusion
-description: Get started with the Syncfusion ASP.NET MVC Accordion by adding the NuGet package and rendering items in an ASP.NET MVC application.
+description: Get started with the Syncfusion ##Platform_Name## Accordion by adding the NuGet package and rendering items in an ##Platform_Name## application.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

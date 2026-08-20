@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## DropDownList | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET Core DropDownList to EJ2 by mapping tag prefix, namespaces, and APIs from ejDropDownList to ej2-dropdownlist.
+description: Migrate Syncfusion EJ1 ##Platform_Name## DropDownList to EJ2 by mapping tag prefix, namespaces, and APIs from ejDropDownList to ej2-dropdownlist.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set max height of dialog | Syncfusion
+title: Set max height of dialog in ##Platform_Name##| Syncfusion
 description: Set the maxHeight of the Syncfusion ##Platform_Name## Dialog in the beforeOpen event so the popup respects a custom maximum height.
 platform: ej2-asp-core-mvc
 control: Dialog

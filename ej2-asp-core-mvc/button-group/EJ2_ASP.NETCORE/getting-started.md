@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Button Group | Syncfusion
-description: Add the Syncfusion ASP.NET Core Button Group to a Razor Pages app by installing Buttons and Themes NuGet packages.
+title: Getting Started with ##Platform_Name## Button Group | Syncfusion
+description: Add the Syncfusion ##Platform_Name## Button Group to a Razor Pages app by installing Buttons and Themes NuGet packages.
 platform: ej2-asp-core-mvc
 control: Button Group
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Button Group
+# Getting Started with ##Platform_Name## Button Group
 
 This section briefly explains how to include the [ASP.NET Core Button Group](https://www.syncfusion.com/aspnet-core-ui-controls/button-group) control in an ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

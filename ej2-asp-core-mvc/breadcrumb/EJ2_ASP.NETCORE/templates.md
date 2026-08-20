@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Templates in ##Platform_Name## Breadcrumb | Syncfusion
-description: Customize Breadcrumb item appearance in ASP.NET Core using itemTemplate to render icons, separators, or any custom markup per item.
+description: Customize Breadcrumb item appearance in ##Platform_Name## using itemTemplate to render icons, separators, or any custom markup per item.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##

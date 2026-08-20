@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Severities in ASP.NET MVC Message | Syncfusion
-description: Render Syncfusion ASP.NET MVC Message by severity levels (None, Success, Info, Warning, Error) using the severity property for color-coded contexts.
+title: Severities in ##Platform_Name## Message | Syncfusion
+description: Render Syncfusion ##Platform_Name## Message by severity levels (None, Success, Info, Warning, Error) using the severity property for color-coded contexts.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Severities in ASP.NET MVC Message
+# Severities in ##Platform_Name## Message
 
 The severity denotes the importance and context of the message to the user. The message contains different severity types. Use the [Severity](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Message.html#Syncfusion_EJ2_Notifications_Message_Severity) property to display the messages with different severity levels.
 

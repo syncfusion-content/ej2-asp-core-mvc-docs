@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and Appearance in ASP.NET MVC Menu | Syncfusion
-description: Customize Syncfusion ASP.NET MVC Menu CSS classes for the menu wrapper, items, separators, hover, and active states using custom theme or Theme Studio.
+title: Style and Appearance in ##Platform_Name## Menu | Syncfusion
+description: Customize Syncfusion ##Platform_Name##Menu CSS classes for the menu wrapper, items, separators, hover, and active states using custom theme or Theme Studio.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Style and Appearance in ASP.NET MVC Menu
+# Style and Appearance in ##Platform_Name## Menu
 
 To modify the Menu appearance, you need to override the default CSS of Menu component. Find the list of CSS classes and its corresponding section in Menu component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

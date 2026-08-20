@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Dialog | Syncfusion
-description: Get started with the Syncfusion ASP.NET MVC Dialog control in an MVC application using Visual Studio with Html helper and TagHelper support.
+title: Getting Started with ##Platform_Name## Dialog | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## Dialog control in an MVC application using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Dialog
+# Getting Started with ##Platform_Name## Dialog
 
 This section briefly explains how to include the [ASP.NET MVC Dialog](https://www.syncfusion.com/aspnet-mvc-ui-controls/modal-dialog) control in an ASP.NET MVC application using Visual Studio.
 

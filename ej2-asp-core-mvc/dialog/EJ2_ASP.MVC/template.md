@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ASP.NET MVC Dialog | Syncfusion
-description: Add custom HTML or text to the Syncfusion ASP.NET MVC Dialog header and footer using the Header, Buttons, and FooterTemplate properties.
+title: Template in ##Platform_Name## Dialog | Syncfusion
+description: Add custom HTML or text to the Syncfusion ##Platform_Name## Dialog header and footer using the Header, Buttons, and FooterTemplate properties.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Template in ASP.NET MVC Dialog
+# Template in ##Platform_Name## Dialog
 
 In Dialog the template support is provided to the header and footer sections. So any text or HTML content can be appending in these sections.
 

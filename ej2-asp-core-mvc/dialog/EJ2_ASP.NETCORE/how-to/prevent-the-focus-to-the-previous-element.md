@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prevent focus to previous element in dialog | Syncfusion
+title: Prevent focus to previous element in  ##Platform_Name## dialog | Syncfusion
 description: Prevent the Syncfusion ##Platform_Name## Dialog from returning focus to the previously focused element by setting preventFocus in the beforeClose event.
 platform: ej2-asp-core-mvc
 control: Prevent the focus to the previous element

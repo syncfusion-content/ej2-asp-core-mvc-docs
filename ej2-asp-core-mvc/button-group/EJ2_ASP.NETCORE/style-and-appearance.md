@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style and Appearance in ##Platform_Name## Button Group | Syncfusion
-description: Customize ASP.NET Core Button Group visuals by overriding .e-btn CSS classes for hover, focus, and active states.
+description: Customize ##Platform_Name## Button Group visuals by overriding .e-btn CSS classes for hover, focus, and active states.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

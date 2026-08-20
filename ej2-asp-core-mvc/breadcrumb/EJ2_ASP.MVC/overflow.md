@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overflow in ##Platform_Name## Breadcrumb | Syncfusion
-description: Handle Breadcrumb overflow in ASP.NET MVC by collapsing middle items into a popup when the trail does not fit the available width.
+description: Handle Breadcrumb overflow in ##Platform_Name## by collapsing middle items into a popup when the trail does not fit the available width.
 platform: ej2-asp-core-mvc
 control: Overflow
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Breadcrumb | Syncfusion
-description: Get started with the Syncfusion ASP.NET Core Breadcrumb by adding the Navigations NuGet package and rendering a trail in a Razor Pages app.
+description: Get started with the Syncfusion ##Platform_Name## Breadcrumb by adding the Navigations NuGet package and rendering a trail in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

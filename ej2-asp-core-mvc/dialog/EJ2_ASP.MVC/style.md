@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ASP.NET MVC Dialog | Syncfusion
-description: Override Syncfusion ASP.NET MVC Dialog CSS classes to customize the header, content, footer, and overlay appearance to match your application design.
+title: Style in ##Platform_Name## Dialog | Syncfusion
+description: Override Syncfusion ##Platform_Name## Dialog CSS classes to customize the header, content, footer, and overlay appearance to match your application design.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##

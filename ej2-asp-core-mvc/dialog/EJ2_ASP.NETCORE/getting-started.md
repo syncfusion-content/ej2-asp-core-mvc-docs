@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Dialog | Syncfusion
-description: Get started with the Syncfusion ##Platform_Name## Dialog control in an ASP.NET Core web app using Razor pages, TagHelper, and Syncfusion NuGet packages.
+description: Get started with the Syncfusion ##Platform_Name## Dialog control in an web app using Razor pages, TagHelper, and Syncfusion NuGet packages.
 platform: ej2-asp-core-mvc
 control: Dialog
 publishingplatform: ##Platform_Name##

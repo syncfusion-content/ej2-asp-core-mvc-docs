@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Render dialog with utility functions | Syncfusion
+title: Render dialog with utility functions in ##Platform_Name## | Syncfusion
 description: Render Syncfusion ##Platform_Name## Dialog alert and confirm dialogs with minimal code using built-in utility functions and configurable options.
 platform: ej2-asp-core-mvc
 control: Render A Dialog Using Utility Functions

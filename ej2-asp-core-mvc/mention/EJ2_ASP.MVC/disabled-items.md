@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Disabled Items in ASP.NET MVC Mention | Syncfusion
-description: Disable individual Syncfusion ASP.NET MVC Mention list items by mapping the disabled field on dataSource items through the fields.disabled property.
+title: Disabled Items in ##Platform_Name## Mention | Syncfusion
+description: Disable individual Syncfusion ##Platform_Name## Mention list items by mapping the disabled field on dataSource items through the fields.disabled property.
 platform: ej2-asp-core-mvc
 control: Disabled Items
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Disabled Items in ASP.NET MVC Mention
+# Disabled Items in ##Platform_Name## Mention
 
 The Mention provides options for individual items to be either in an enabled or disabled state for specific scenarios. The category of each list item can be mapped through the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MentionFieldSettings.html#Syncfusion_EJ2_DropDowns_MentionFieldSettings_Disabled) field in the data table. Once an item is disabled, it cannot be selected as a value for the component. To configure the disabled item columns, use the `fields.disabled` property.
 

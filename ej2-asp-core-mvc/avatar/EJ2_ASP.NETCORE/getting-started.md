@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Avatar | Syncfusion
-description: Get started with the Syncfusion ASP.NET Core Avatar by adding the NuGet package and rendering avatars for users, initials, or icons in a Razor Pages app.
+description: Get started with the Syncfusion ##Platform_Name## Avatar by adding the NuGet package and rendering avatars for users, initials, or icons in a Razor Pages app.
 platform: ej2-asp-core-mvc
 control: Avatar
 publishingplatform: ##Platform_Name##

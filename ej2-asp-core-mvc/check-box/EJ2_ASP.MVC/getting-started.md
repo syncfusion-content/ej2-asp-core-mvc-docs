@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Checkbox | Syncfusion
-description: Add the Syncfusion.EJ2.MVC5 package, register the script manager, and render an ASP.NET MVC Checkbox with checked and indeterminate states.
+description: Add the Syncfusion.EJ2.MVC5 package, register the script manager, and render an ##Platform_Name## Checkbox with checked and indeterminate states.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##

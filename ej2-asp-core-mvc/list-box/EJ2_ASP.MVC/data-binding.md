@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC ListBox | Syncfusion
-description: Bind Syncfusion ASP.NET MVC ListBox to local arrays or remote data sources using the dataSource property and DataManager with OData and Web API.
+title: Data Binding in ##Platform_Name## ListBox | Syncfusion
+description: Bind Syncfusion ##Platform_Name## ListBox to local arrays or remote data sources using the dataSource property and DataManager with OData and Web API.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data Binding in ASP.NET MVC ListBox
+# Data Binding in ##Platform_Name## ListBox
 
 The ListBox loads the data either from local data sources or remote data services using the [`DataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property. It supports the data type of `array` or `DataManager`.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## DateRangePicker | Syncfusion
-description: Migrate DateRangePicker code from Essential JS 1 to Essential JS 2 with property-by-property API mapping for ASP.NET Core DateRangePicker.
+description: Migrate DateRangePicker code from Essential JS 1 to Essential JS 2 with property-by-property API mapping for ##Platform_Name## DateRangePicker.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##

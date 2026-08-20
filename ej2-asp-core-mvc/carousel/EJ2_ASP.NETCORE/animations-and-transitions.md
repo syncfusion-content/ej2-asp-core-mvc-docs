@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Animations and Transitions in ##Platform_Name## Carousel | Syncfusion
-description: Configure slide animations, autoplay intervals, pause-on-hover, looping, and touch swiping in the ASP.NET Core Carousel tag helper.
+description: Configure slide animations, autoplay intervals, pause-on-hover, looping, and touch swiping in the ##Platform_Name## Carousel tag helper.
 platform: ej2-asp-core-mvc
 control: Animations and Transitions
 publishingplatform: ##Platform_Name##

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with ##Platform_Name## Calendar | Syncfusion
-description: Add the Syncfusion ASP.NET Core Calendar to a Razor Pages app by installing Calendars and Themes NuGet packages.
+description: Add the Syncfusion ##Platform_Name## Calendar to a Razor Pages app by installing Calendars and Themes NuGet packages.
 platform: ej2-asp-core-mvc
 control: Calendar
 publishingplatform: ##Platform_Name##

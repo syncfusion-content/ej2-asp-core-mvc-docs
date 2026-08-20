@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Style in ##Platform_Name## Checkbox | Syncfusion
-description: Override the ASP.NET MVC Checkbox CSS classes to restyle the frame, label, hover, and checked states for a custom theme.
+description: Override the ##Platform_Name## Checkbox CSS classes to restyle the frame, label, hover, and checked states for a custom theme.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##

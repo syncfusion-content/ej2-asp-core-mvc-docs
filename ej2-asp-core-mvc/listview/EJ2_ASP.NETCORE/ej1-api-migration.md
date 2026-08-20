@@ -1,7 +1,7 @@
 ---
 layout: post
 title: EJ1 API Migration in ##Platform_Name## ListView | Syncfusion
-description: Migrate Syncfusion EJ1 ASP.NET Core ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
+description: Migrate Syncfusion EJ1 ##Platform_Name## ListView to EJ2 by mapping tag prefixes, namespaces, and APIs from Syncfusion.JavaScript.ListView to ej2-ListView.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
