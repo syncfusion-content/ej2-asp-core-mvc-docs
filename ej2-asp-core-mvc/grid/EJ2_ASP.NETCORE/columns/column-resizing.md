@@ -48,7 +48,6 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
 
 ![Restrict the resizing based on minimum and maximum width](../images/column-resize/Colum-resize-max.gif)
 
->* The `columns.minWidth` and `columns.maxWidth` properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
 >* The specified `minWidth` and `maxWidth` values take precedence over any user-initiated resizing attempts that fall outside the defined range.
 
