@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Radio Button Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Radio Button control of Essential JS 2 and more details.
+title: Getting Started with ASP.NET Core Radio Button | Syncfusion
+description: Learn how to get started with ASP.NET Core Radio Button, including package installation, project configuration, and state management.
 platform: ej2-asp-core-mvc
 control: Radio Button
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Radio Button Control
+# Getting Started with ASP.NET Core Radio Button
 
 This section briefly explains how to include the [ASP.NET Core Radio Button](https://www.syncfusion.com/aspnet-core-ui-controls/radio-button) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

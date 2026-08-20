@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Accessibility in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Stepper | Syncfusion
+description: Learn about accessibility support in the Syncfusion ##Platform_Name## Stepper, including WCAG 2.2, Section 508, keyboard navigation, and screen reader compatibility.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Stepper control
+# Accessibility in ##Platform_Name## Stepper
 
 The Stepper control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -65,7 +65,7 @@ The following keyboard shortcuts are supported by the Stepper control.
 
 The Stepper control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Stepper control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/stepper.html) in a new window to evaluate the accessibility of the Stepper control with accessibility tools.
+The accessibility compliance of the Stepper control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/aspnetcore/stepper/orientation#/fluent2) in a new window to evaluate the accessibility of the Stepper control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/stepper.html" %}
 
