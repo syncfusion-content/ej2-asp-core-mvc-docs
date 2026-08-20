@@ -190,5 +190,5 @@ N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Get
 
 ## See also
 
-* [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/inplaceeditor/editpost#/fluent2)
+* [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/EditPost#/bootstrap5)
 * [Types of rendering the editor](./integration)
