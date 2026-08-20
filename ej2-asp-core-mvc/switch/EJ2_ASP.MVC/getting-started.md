@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ##Platform_Name## Toggle Switch Button
 
 This section briefly explains how to include the [ASP.NET MVC Switch](https://www.syncfusion.com/aspnet-mvc-ui-controls/toggle-switch-button) control in an ASP.NET MVC application using Visual Studio.
