@@ -20,7 +20,7 @@ On selection of each list box item, [`change`](https://help.syncfusion.com/cr/as
 
 ## Single selection
 
-To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_Mode) should be set as `Single` in [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html) property.
+To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~Mode.html) should be set as `Single` in [`SelectionSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~SelectionSettings.html) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,4 +80,4 @@ N> By default, the selection mode is set as `Multiple`.
 
 
 
-N> To select all the items in the list box, [`ShowSelectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_ShowSelectAll) method can also be used.
+N> To select all the items in the list box, [`ShowSelectAll`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~ShowSelectAll.html) method can also be used.
