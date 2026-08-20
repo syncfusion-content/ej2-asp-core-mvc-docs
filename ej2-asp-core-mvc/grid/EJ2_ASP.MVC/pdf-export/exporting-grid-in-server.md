@@ -63,7 +63,7 @@ public object PdfExport(string gridModel)
 
 ## Merge grid's memory stream
 
-The [Essential PDF](https://help.syncfusion.com/file-formats/pdf/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [Documentation](https://help.syncfusion.com/file-formats/pdf/merge-documents).
+The [Essential PDF](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/overview) library is used to merge multiple memory streams into a single stream. To learn more about the merge option, please refer to this [Documentation](https://help.syncfusion.com/document-processing/pdf/pdf-library/net/merge-documents).
 
 You can merge a memory stream, a file stream, and a local file with the Grid's memory stream in the following ways:
 
@@ -71,7 +71,7 @@ You can merge a memory stream, a file stream, and a local file with the Grid's m
 
 If you already have a memory stream, you can directly use it to merge with the Grid's memory stream.
 
-In the following code, the [Merge](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/file-formats/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's memory stream with an existing memory stream.
+In the following code, the [Merge](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.PdfDocumentBase.html#Syncfusion_Pdf_PdfDocumentBase_Merge_Syncfusion_Pdf_PdfDocumentBase_Syncfusion_Pdf_Parsing_PdfLoadedDocument_) method of the [PdfDocumentBase](https://help.syncfusion.com/cr/document-processing/Syncfusion.Pdf.PdfDocumentBase.html) class is used to merge the grid's memory stream with an existing memory stream.
 
 ```ts
 using Syncfusion.Pdf;

@@ -144,7 +144,7 @@ Use the [ContextMenuClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 * Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
 
-  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types), and selected records.
+  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetmvc/documentation/chart/chart-types/line), and selected records.
 
   * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's Chart Model for detailed configurations, options, and customization possibilities.
 

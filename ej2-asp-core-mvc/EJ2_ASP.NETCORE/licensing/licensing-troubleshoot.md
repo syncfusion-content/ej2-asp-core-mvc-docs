@@ -32,12 +32,12 @@ License keys can be generated from the [License & Downloads](https://syncfusion.
 
 ![Get Community License Key](images/get-community-license-key.png)
 
-N> Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**. Refer to the [KB](https://www.syncfusion.com/kb/8976/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
-<br/> Refer to this [KB](https://www.syncfusion.com/kb/8951/which-version-syncfusion-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
+N> Syncfusion<sup style="font-size:70%">&reg;</sup> license keys are **version and platform specific**. Refer to the [KB](https://support.syncfusion.com/kb/article/7898/how-to-generate-license-key-for-licensed-products) to generate the license key for the required version and platform.
+<br/> Refer to this [KB](https://support.syncfusion.com/kb/article/7865/which-version-license-key-should-i-use-in-my-application) to know which version of the Syncfusion<sup style="font-size:70%">&reg;</sup> license key should be used in the application.
 
 ## Registering Syncfusion<sup style="font-size:70%">&reg;</sup> account for direct NuGet.org user
 
-If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from [NuGet.org](http://nuget.org/) and do not have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, follow the steps to obtain a free 30-day trial license key:
+If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from [NuGet.org](https://www.nuget.org/) and do not have a Syncfusion<sup style="font-size:70%">&reg;</sup> account, follow the steps to obtain a free 30-day trial license key:
 
 * Register for a free Syncfusion<sup style="font-size:70%">&reg;</sup> account [here](https://www.syncfusion.com/account/register).
 * Go to the start trials [page](https://syncfusion.com/account/manage-trials/start-trials) and start a trial.
@@ -47,7 +47,7 @@ If you have directly obtained Syncfusion<sup style="font-size:70%">&reg;</sup> a
 
 If you are using [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Components](https://ej2.syncfusion.com/home/) in application, then you have to register license for ASP.NET Core in `Program.cs` and for JavaScript components register license in `_Layout.cshtml` after referring to the Syncfusion<sup style="font-size:70%">&reg;</sup> styles and scripts as follows,
 
-N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Components.
+N>  From 2022 Vol 1 (v20.1) only the license key registration required for Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Components.
 
 {% tabs %}
 {% highlight c# tabtitle="Program.cs" hl_lines="3" %}
@@ -60,7 +60,7 @@ Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("YOUR LICENSE KEY
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://learn.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-2.1&tabs=visual-studio#http-strict-transport-security-protocol-hsts.
     app.UseHsts();
 }
 
