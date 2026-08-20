@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## DropDownTree | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## DropDownTree control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## DropdownTree | Syncfusion
+description: Get started with the Syncfusion ##Platform_Name## DropdownTree control in an MVC application using Visual Studio with Html helper and TagHelper support.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DropDownTree Control
+# Getting Started with ##Platform_Name## DropdownTree
 
 This section briefly explains about how to include [ASP.NET MVC DropDownTree](https://www.syncfusion.com/aspnet-mvc-ui-controls/dropdown-tree) control in your ASP.NET MVC application using Visual Studio.
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DropDo
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DropDownTree control will be rendered in the default web browser.
 
-![ASP.NET MVC DropDownTree Control](images/dropdowntree-control.png)
+![ASP.NET MVC DropDownTree Control](images/dropdowntree-control.webp)
 
 ## Binding data source
 

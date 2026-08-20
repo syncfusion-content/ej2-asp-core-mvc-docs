@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons in ##Platform_Name## Drop Down Button Component
-description: Learn here all about icons in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: Icons in ##Platform_Name## DropDownButton | Syncfusion
+description: Add icons to the Syncfusion ##Platform_Name## DropDownButton via the iconCss property and customize the icon position with iconPosition.
 platform: ej2-asp-core-mvc
 control: Icons
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons and Styles
+# Icons in ##Platform_Name## DropDownButton
 
 ## DropDownButton icons
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide Control Buttons in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Hide Control Buttons in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: How to hide buttons in ##Platform_Name## Color Picker | Syncfusion
+description: Hide the Apply and Cancel control buttons in Syncfusion ##Platform_Name## Color Picker by setting showButtons to false so colors apply on selection.
 platform: ej2-asp-core-mvc
 control: Hide Control Buttons
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Hide control buttons in Color Picker Control
+# How to hide buttons in ##Platform_Name## Color Picker
 
 ColorPicker can be rendered without control buttons (Apply/Cancel). In this case, while selecting a color, the ColorPicker pop-up is closed and selected colors can be applied directly. To hide control buttons, set the [showButtons](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ShowButtons) property to `false`.
 

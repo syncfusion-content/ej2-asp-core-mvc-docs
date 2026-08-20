@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Drop Down List Component
-description: Learn here all about grouping in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Grouping in ##Platform_Name## DropDownList | Syncfusion
+description: Group Syncfusion ##Platform_Name## DropDownList items by category using the groupBy field and display headers as inline or fixed using groupTemplate.
 platform: ej2-asp-core-mvc
 control: Grouping
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Grouping
+# Grouping in ##Platform_Name## DropDownList
 
 The DropDownList supports wrapping nested elements into a group based on different categories. The category of each list item can be mapped through the [groupBy](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownListFieldSettings.html#Syncfusion_EJ2_DropDowns_DropDownListFieldSettings_GroupBy) field in the data table. The group header is displayed both as inline and fixed headers. The fixed group header content is updated dynamically on scrolling the popup list with its category value.
 

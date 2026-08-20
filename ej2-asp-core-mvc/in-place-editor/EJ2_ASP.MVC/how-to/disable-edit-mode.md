@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Disable Edit Mode in ##Platform_Name## In Place Editor Component
-description: Learn here all about Disable Edit Mode in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: How to disable the edit mode in ##Platform_Name## InplaceEditor | Syncfusion
+description: Toggle Syncfusion ##Platform_Name## InplaceEditor input on or off using a checkbox by binding the disabled property to true or false reactively.
 platform: ej2-asp-core-mvc
 control: Disable Edit Mode
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Disable the edit mode specifically
+# How to disable the edit mode in ##Platform_Name## InplaceEditor
 
 The edit mode of In-place Editor can be disabled by setting the [`Disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_Disabled) property value to `true`. In the following sample, when check or uncheck the checkbox, In-place Editor control will disable or enable the edit mode.
 

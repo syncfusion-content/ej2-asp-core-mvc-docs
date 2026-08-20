@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Templates in ##Platform_Name## Multi Select Control | Syncfusion
-description: Learn here all about Templates in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Templates in ##Platform_Name## MultiSelect | Syncfusion
+description: Customize Syncfusion ##Platform_Name## MultiSelect list, value, group, header, and footer rendering with template, groupTemplate, and headerTemplate APIs.
 platform: ej2-asp-core-mvc
 control: Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Templates in MultiSelect Control
+# Templates in ##Platform_Name## MultiSelect
 
 The MultiSelect has been provided with several options to customize each list item, group title, selected value, header, and footer elements. It uses the Essential<sup style="font-size:70%">&reg;</sup> JS 2 `Template engine` to compile and render the elements properly.
 

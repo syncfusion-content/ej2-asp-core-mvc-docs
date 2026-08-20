@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ContextMenu Control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ContextMenu control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Context Menu | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Context Menu control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC ContextMenu Control
+# Getting Started with ##Platform_Name## Context Menu
 
 This section briefly explains about how to include [ASP.NET MVC ContextMenu](https://www.syncfusion.com/aspnet-mvc-ui-controls/context-menu) control in your ASP.NET MVC application using Visual Studio.
 
@@ -159,7 +159,7 @@ public ActionResult Index()
 
 N> The [Separator](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html#Syncfusion_EJ2_Navigations_ContextMenuItem_Separator) property should not be given along with the other fields in the [MenuItem](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.ContextMenuItem.html).
 
-![ASP.NET MVC ContextMenu with Separator](images/context-menu-with-seperator.png)
+![ASP.NET MVC ContextMenu with Separator](images/context-menu-with-seperator.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/ContextMenu/ASP.NET%20MVC%20Razor%20Examples).
 

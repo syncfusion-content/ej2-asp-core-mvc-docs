@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Incremental Search in ##Platform_Name## Drop Down List Component
-description: Learn here all about incremental search in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to do incremental search in ##Platform_Name## DropDownList | Syncfusion
+description: Enable Syncfusion ##Platform_Name## DropDownList incremental search by typing characters to sequentially focus the closest matching item in the popup list.
 platform: ej2-asp-core-mvc
 control: Incremental Search
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Do incremental search in the DropDownList
+# How to do incremental search in ##Platform_Name## DropDownList
 
 DropDownList supports incremental search, by default. You can search the list item by focusing the DropDownList and typing the characters in it. The closely matched items are selected sequentially.
 

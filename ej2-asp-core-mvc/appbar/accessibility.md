@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Appbar Control | Syncfusion
+title: Accessibility in ##Platform_Name## AppBar | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Appbar control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Accessibility
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ##Platform_Name## AppBar Control
+# Accessibility in ##Platform_Name## AppBar
 
 The accessibility compliance for the AppBar control is outlined below.
 

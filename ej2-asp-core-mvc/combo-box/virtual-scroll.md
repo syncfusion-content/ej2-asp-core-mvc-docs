@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## Combo Box Control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## Combo Box control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## ComboBox | Syncfusion
+description: Enable enableVirtualization in Syncfusion ##Platform_Name## ComboBox to recycle DOM elements and efficiently render large data lists in the popup.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Virtualization in ComboBox Component 
+# Virtualization in ##Platform_Name## ComboBox
 
 ComboBox virtualization is a technique used to efficiently render extensive lists of items while minimizing the impact on performance. This method is particularly advantageous when dealing with large datasets because it ensures that only a fixed number of DOM (Document Object Model) elements are created. When scrolling through the list, existing DOM elements are reused to display relevant data instead of generating new elements for each item. This recycling process is managed internally.
  

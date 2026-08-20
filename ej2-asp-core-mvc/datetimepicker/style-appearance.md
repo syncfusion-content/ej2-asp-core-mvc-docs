@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## DateTimePicker Component
-description: Learn here all about style and appearance in Syncfusion ##Platform_Name## DateTimePicker component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## DateTimePicker | Syncfusion
+description: Override Syncfusion ##Platform_Name## DateTimePicker CSS classes to customize the wrapper, popup, calendar, and icon appearance to your design.
 platform: ej2-asp-core-mvc
 control: datetimepicker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in DateTimePicker Component
+# Style and Appearance in ##Platform_Name## DateTimePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
@@ -51,7 +51,7 @@ Use the following CSS to customize the time picker popup in the DateTimePicker.
 
 Check the below section, to customize the style and appearance of the Calendar component in the DateTimePicker.
 
-[Customizing Calendar's style and appearance](../calendar/style-appearance/)
+[Customizing Calendar's style and appearance](../calendar/style-appearance)
 
 ## Full screen mode support in mobiles and tablets
 

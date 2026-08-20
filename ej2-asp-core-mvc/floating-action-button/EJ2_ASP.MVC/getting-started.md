@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC FAB Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Floating Action Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## FAB Control | Syncfusion
+description: Checkout and learn about getting started with ##Platform_Name## Floating Action Button control of Syncfusion Essential JS 2 and more details.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC Floating Action Button Control
+# Getting Started with ##Platform_Name## FloatingActionButton
 
 This section briefly explains how to include the [ASP.NET MVC Floating Action Button] control in an ASP.NET MVC application using Visual Studio.
 
@@ -95,7 +95,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Floati
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Floating Action Button control will be rendered in the default web browser.
 
-![ASP.NET MVC Floating Action Button Control](images/default.png)
+![ASP.NET MVC Floating Action Button Control](images/default.webp)
 
 ## Click event in Floating Action Button
 

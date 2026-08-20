@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Icons with ##Platform_Name## Message Control | Syncfusion
-description: Checkout and learn about icons with ##Platform_Name## Message control of Syncfusion Essential JS 2 and more details.
+title: Icons in ##Platform_Name## Message | Syncfusion
+description: Configure Syncfusion ##Platform_Name## Message icons by managing visibility and adding custom severity icons with showIcon and showCloseIcon.
 platform: ej2-asp-core-mvc
 control: Message
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Icons in Message control
+# Icons in ##Platform_Name## Message
 
 This section explains the message with no icons, how to show or hide the close icon and add the custom severity icon to the message.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Multi Select Component
-description: Learn here all about Style in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## MultiSelect | Syncfusion
+description: Customize Syncfusion ##Platform_Name## MultiSelect CSS classes for wrapper, popup, list items, chips, delete icon, focus, and hover states via custom theme.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# Style in ##Platform_Name## MultiSelect
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
