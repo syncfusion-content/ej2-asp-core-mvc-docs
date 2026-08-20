@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Effects in ##Platform_Name## Skeleton Control | Syncfusion
-description: Checkout and learn here all about shimmer effects and how to use them in ##Platform_Name## Skeleton control of Syncfusion Essential JS 2 and more details.
+title: Shimmer Effect in ##Platform_Name## Skeleton | Syncfusion
+description: Learn how to apply shimmer effects in the Syncfusion ##Platform_Name## Skeleton control using Wave, Pulse, and Fade animations to improve loading experiences.
 platform: ej2-asp-core-mvc
 control: Effects
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Shimmer Effect in ASP.NET MVC Skeleton Control
+# Shimmer Effect in ##Platform_Name## Skeleton
 
 You can use the [ShimmerEffect](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Notifications.Skeleton.html#Syncfusion_EJ2_Notifications_Skeleton_ShimmerEffect) property to change animation effect in the skeleton control. Skeleton supports `Wave`, `Pulse` and `Fade` effects and by default, the `ShimmerEffect` is set to `Wave` effect.
 

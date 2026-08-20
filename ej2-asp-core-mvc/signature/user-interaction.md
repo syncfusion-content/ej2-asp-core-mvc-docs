@@ -1,14 +1,14 @@
 ---
 layout: post
-title: User Interactions in ##Platform_Name## Signature Component
-description: Learn here all about User Interactions in Syncfusion ##Platform_Name## Signature component of Syncfusion Essential JS 2 and more.
+title: User Interactions in ##Platform_Name## Signature | Syncfusion
+description: Learn about user interaction features in the Syncfusion ##Platform_Name## Signature component, including undo, redo, clear, disabled, and read-only states.
 platform: ej2-asp-core-mvc
 control: User Interactions
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# User Interactions
+# User Interactions in ##Platform_Name## Signature
 
 The below interactions were available in Signature, and we can walk through one by one.
 

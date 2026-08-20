@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Numerictextbox Component
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Migrate from EJ1 in ASP.NET MVC Numeric Textbox | Syncfusion
+description: Migrate your NumericTextBox from Essential JS 1 to Essential JS 2 with comprehensive API mapping, property changes, and code examples.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential<sup style="font-size:70%">&reg;</sup> JS 1
+# Migration from Essential JS 1 in ASP.NET MVC NumericTextbox
 
 This article describes the API migration process of NumericTextBox component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Slider Bar in ##Platform_Name## Range Slider Control
-description: Learn here all about Customize Slider Bar in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Customize Slider Bar in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to customize the Range Slider bar appearance using CSS styles and dynamic color changes based on slider values.
 platform: ej2-asp-core-mvc
 control: Customize Slider Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize Slider Bar
+# Customize Range Slider Bar
 
 Slider appearance can be customized through CSS. By overriding the slider CSS classes, you can customize the slider bar. The slider bar can be customized with different themes. By default, slider have class name `e-slider-track` for bar. The class can be overridden with our own color values like the following code snippet.
 

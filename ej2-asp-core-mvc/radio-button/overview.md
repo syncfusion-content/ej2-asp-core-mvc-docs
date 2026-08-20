@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Overview in ##Platform_Name## Radio Button Component
-description: Learn here all about Overview in Syncfusion ##Platform_Name## Radio Button component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Radio Button Overview | Syncfusion
+description: Learn about the features and capabilities of ##Platform_Name## Radio Button, including selection states, labels, and size customization.
 platform: ej2-asp-core-mvc
 control: Index
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Overview
+# ##Platform_Name## Radio Button Overview
 
 The RadioButton is a graphical user interface element that allows you to select only one option from the choices.
 It contains checked and unchecked states.

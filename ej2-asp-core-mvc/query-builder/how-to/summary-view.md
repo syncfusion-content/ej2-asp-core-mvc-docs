@@ -1,14 +1,14 @@
 ---
 layout: post
-title: SummaryView in ##Platform_Name## QueryBuilder Component | Syncfusion
-description: Learn here all about Summary View in Syncfusion ##Platform_Name## QueryBuilder component of Syncfusion Essential JS 2 and more.
+title: Summary View in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to enable and use Summary View in ##Platform_Name## Query Builder to display the generated query in a summarized format.
 platform: ej2-asp-core-mvc
 control: Summary View
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Summary View
+# Summary View in ##Platform_Name## Query Builder
 
 Summary view allows you to show or hide the filtered query. By default, the value is false. You can enable by setting the `summaryView` property to true.
 

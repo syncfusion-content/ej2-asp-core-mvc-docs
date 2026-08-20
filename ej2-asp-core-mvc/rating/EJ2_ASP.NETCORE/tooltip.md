@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Rating Control | Syncfusion
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Rating | Syncfusion
+description: Learn how to display, customize, and template tooltips in Syncfusion ##Platform_Name## Rating, including custom styling options.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Tooltip in ASP.NET Core Rating Control
+# Tooltip in ##Platform_Name## Rating
 
 The ASP.NET Core rating control supports tooltip to show additional information in rating items by setting the [showTooltip](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Rating.html#Syncfusion_EJ2_Inputs_Rating_ShowTooltip) property. If enabled, the tooltip appears when the user hovers over a rating item.
 
