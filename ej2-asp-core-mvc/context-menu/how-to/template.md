@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Context Menu Component | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## Context Menu component of Syncfusion Essential JS 2 and more.
+title: How to use a template in ##Platform_Name## Context Menu | Syncfusion
+description: Customize Syncfusion ##Platform_Name## Context Menu submenu items with a custom template, such as a table layout, via the beforeItemRender event.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template in ##Platform_Name## Context Menu
+# How to use a template in ##Platform_Name## Context Menu
 
 ## Table in Sub ContextMenu
 

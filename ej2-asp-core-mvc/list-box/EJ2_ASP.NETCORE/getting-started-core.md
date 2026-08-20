@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core ListBox Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core ListBox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## ListBox | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## ListBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: ListBox
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core ListBox Control
+# Getting Started with ##Platform_Name## ListBox
 
 This section briefly explains how to include the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 
@@ -96,7 +96,7 @@ Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (m
 
 ## Binding data source
 
-After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DataSource.html) property with an array of string values.
+After initialization, populate the [ASP.NET Core ListBox](https://www.syncfusion.com/aspnet-core-ui-controls/listbox) with data using the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_DataSource) property with an array of string values.
 
 The following example illustrates the output in your browser.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## InPlaceEditor Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## InPlaceEditor control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ASP.NET MVC InplaceEditor | Syncfusion
+description: Learn how to get started with the Syncfusion ASP.NET MVC InplaceEditor control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC In-place Editor Control
+# Getting Started with ASP.NET MVC InplaceEditor
 
 This section briefly explains how to include the [ASP.NET MVC In-place Editor](https://www.syncfusion.com/aspnet-mvc-ui-controls/in-place-editor) control in an ASP.NET MVC application using Visual Studio.
 
@@ -110,7 +110,7 @@ By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Tex
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.png)
+![ASP.NET MVC In-place Editor with TextBox](images/inplaceeditor-with-textbox.webp)
 
 ## Configuring DropDownList
 
@@ -127,7 +127,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.png)
+![ASP.NET MVC In-place Editor with DropDownList](images/inplaceeditor-with-dropdownlist.webp)
 
 ## Integrate DatePicker
 
@@ -144,7 +144,7 @@ In the following sample, `Type` and `Model` values are configured to render the 
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.png)
+![ASP.NET MVC In-place Editor with DatePicker](images/inplaceeditor-with-datepicker.webp)
 
 In the following sample, type and model values are configured to render the TextBox, DropDownList and DatePicker control.
 
@@ -184,11 +184,11 @@ The edited data is submitted to the server and you can see the new values gettin
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.png)
+![ASP.NET MVC In-place Editor with Editing Value](images/getting-started.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/InPlaceEditor/ASP.NET%20MVC%20Razor%20Examples).
 
 ## See also
 
-* [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/InPlaceEditor/EditPost#/bootstrap5)
+* [Real time example using In-place Editor](https://ej2.syncfusion.com/aspnetmvc/inplaceeditor/editpost#/fluent2)
 * [Types of rendering the editor](./integration)

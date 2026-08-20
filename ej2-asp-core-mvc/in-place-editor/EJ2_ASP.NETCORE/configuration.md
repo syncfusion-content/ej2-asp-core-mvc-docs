@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Configuration in ##Platform_Name## In Place Editor Component
-description: Learn here all about Configuration in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Configuration in ##Platform_Name## InplaceEditor | Syncfusion
+description: Configure Syncfusion ##Platform_Name## InplaceEditor rendering modes (Inline, Popup), value action (Submit, Cancel), and adaptor (Url Submit, Server) APIs.
 platform: ej2-asp-core-mvc
 control: Configuration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Configuration
+# Configuration in ##Platform_Name## InplaceEditor
 
 ## Rendering modes
 

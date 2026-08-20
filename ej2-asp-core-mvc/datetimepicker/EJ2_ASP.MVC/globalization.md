@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Datetimepicker Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## DateTimePicker | Syncfusion
+description: Localize Syncfusion ##Platform_Name## DateTimePicker for any culture using the locale property and CLDR JSON data, with built-in Internationalization support.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in DateTimePicker Control
+# Globalization in ##Platform_Name## DateTimePicker
 
 Globalization is the combination of  adapting the control to various languages by means of parsing and formatting the date or number [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) and also by adding cultural specific customizations and translating the text [localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization).
 
@@ -79,7 +79,8 @@ The following example demonstrates the DateTimePicker in `German` culture.
 {% include code-snippet/datetimepicker/globalization/globalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -88,7 +89,8 @@ The following example demonstrates the DateTimePicker in `German` culture.
 {% include code-snippet/datetimepicker/globalization/globalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Globalization.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -108,7 +110,8 @@ The following example demonstrates DateTimePicker in `Arabic` culture with right
 {% include code-snippet/datetimepicker/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -117,6 +120,7 @@ The following example demonstrates DateTimePicker in `Arabic` culture with right
 {% include code-snippet/datetimepicker/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

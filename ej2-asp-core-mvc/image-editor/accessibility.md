@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Image editor control
-description: Learn here all about accessibility in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## ImageEditor | Syncfusion
+description: Syncfusion ##Platform_Name## ImageEditor follows WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard navigation, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Image editor control
+# Accessibility in ##Platform_Name## ImageEditor
 
 The Image Editor component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

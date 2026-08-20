@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header Content in ##Platform_Name## Card Control | Syncfusion
-description: Learn here all about Header Content in Syncfusion ##Platform_Name## Card control of Syncfusion Essential JS 2 and more.
+title: Header and Content in ##Platform_Name## Card | Syncfusion
+description: Build Syncfusion ##Platform_Name## Card headers with title, subtitle, and image slots, and place rich content inside the e-card-content container.
 platform: ej2-asp-core-mvc
 control: Header Content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header and Content in Card Control
+# Header and Content in ##Platform_Name## Card
 
 ## Header
 

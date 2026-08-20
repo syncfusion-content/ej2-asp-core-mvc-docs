@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Color Picker | Syncfusion
+description: Localize Syncfusion ##Platform_Name## Color Picker text for control buttons, mode switcher, and RTL cultures using the locale property and translation object.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization and RTL
+# Localization in ##Platform_Name## Color Picker
 
 ## Localization
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## DateRangePicker Component
-description: Learn here all about style and appearance in Syncfusion ##Platform_Name## DateRangePicker component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## DateRangePicker | Syncfusion
+description: Override Syncfusion ##Platform_Name## DateRangePicker CSS classes to customize the wrapper, popup, and calendar appearance per your design.
 platform: ej2-asp-core-mvc
 control: daterangepicker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in DateRangePicker Component
+# Style in ##Platform_Name## DateRangePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 
@@ -170,4 +170,4 @@ The DateRangePicker full-screen mode feature enables users to view the popup ele
 ```
 {% endif %}
 ![DateRangePickerDefaultFullScreen](./images/DateRangePickerDefaultFullScreen.gif)
-![DateRangePickerPresetsFullScreen](./images/DateRangePickerrPresetsFullScreen.gif)
+![DateRangePickerPresetsFullScreen](./images/DateRangePickerPresetsFullScreen.gif)

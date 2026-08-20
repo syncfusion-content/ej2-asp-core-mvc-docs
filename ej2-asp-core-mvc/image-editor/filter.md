@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Filters in ##Platform_Name## ImageEditor | Syncfusion
+description: Apply cold, warm, chrome, sepia, invert, and grayscale filters to images in Syncfusion ##Platform_Name## ImageEditor using the toolbar or applyImageFilter method.
 platform:  ej2-asp-core-mvc
 control: Filter 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Filters in the ##Platform_Name## Image Editor control
+# Filters in ##Platform_Name## ImageEditor
 
 Filters are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image filters include cold, warm, chrome, sepia, and invert. This can be done by either using the toolbar or the `applyImageFilter` method which takes a single parameter: the filter applied to an image.
 

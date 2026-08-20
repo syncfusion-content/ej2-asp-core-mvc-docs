@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Drop Down List Component | Syncfusion
-description: Learn here all about filtering in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## DropDownList | Syncfusion
+description: Enable Syncfusion ##Platform_Name## DropDownList filtering by setting allowFiltering to true, with StartsWith, EndsWith, and Contains match modes.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering in ##Platform_Name## Drop Down List control
+# Filtering in ##Platform_Name## DropDownList
 
 The DropDownList has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#Syncfusion_EJ2_DropDowns_DropDownList_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the search box.
 

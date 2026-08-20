@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Scrolling in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Scrolling in ##Platform_Name## ListView | Syncfusion
+description: Configure Syncfusion ##Platform_Name## ListView scrolling behavior via height, scrollParent, fixedHeight, and a custom cssClass for scroll styling.
 platform: ej2-asp-core-mvc
 control: Scrolling
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Scrolling in ##Platform_Name## ListView Control
+# Scrolling in ##Platform_Name## ListView
 
 Scrolling is a technique that allows you to load more items as the user scrolls through a list, providing a seamless and dynamic user experience.
 

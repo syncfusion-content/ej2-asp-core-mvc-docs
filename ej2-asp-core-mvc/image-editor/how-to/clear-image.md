@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Filter in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: How to clear an image in ##Platform_Name## ImageEditor | Syncfusion
+description: Programmatically clear edits from a Syncfusion ##Platform_Name## ImageEditor canvas using the clearImage and reset methods after destructive operations.
 platform:  ej2-asp-core-mvc
 control: Clear Image
 publishingplatform: ##Platform_Name##

@@ -14,7 +14,7 @@ To get started with ASP.NET Core application, ensure the following software to b
 
 ## Integrated Development Environment
 
-ASP.NET Core Applications can be developed using one of the following IDEs. You can also develop using [.NET CLI](https://docs.microsoft.com/en-us/dotnet/core/tools/) without below IDEs.
+ASP.NET Core Applications can be developed using one of the following IDEs. You can also develop using [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) without below IDEs.
 
 * [Visual Studio 2026](https://visualstudio.microsoft.com/downloads/#visual-studio-professional-2026)
 * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2022-and-other-products)

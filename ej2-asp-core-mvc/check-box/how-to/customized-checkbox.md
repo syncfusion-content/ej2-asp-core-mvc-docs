@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customized Checkbox in ##Platform_Name## Check Box Control | Syncfusion
-description: Learn here all about Customized Checkbox in Syncfusion ##Platform_Name## Check Box control of Syncfusion Essential JS 2 and more.
+title: Customize the Checkbox in ##Platform_Name## Checkbox | Syncfusion
+description: Restyle the ##Platform_Name## Checkbox with custom CSS for primary, success, and warning variants, plus custom frame size, radius, and check icons.
 platform: ej2-asp-core-mvc
 control: Customized Checkbox
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customized CheckBox Control
+# Customize the Checkbox in ##Platform_Name## Checkbox
 
 ## Customize CheckBox Appearance
 

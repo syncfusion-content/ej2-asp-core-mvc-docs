@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show a Dialog on Context Menu Item Click in ##Platform_Name## | Syncfusion
-description: Learn here all about how to open a Dialog on ContextMenu item click in Syncfusion ##Platform_Name## Context Menu component of syncfusion and more.
+title: Open dialog on context menu item click | Syncfusion
+description: Open a Syncfusion Dialog from the select event of the ##Platform_Name## Context Menu when the user clicks an item such as Save As to confirm a save.
 platform: ej2-asp-core-mvc
 control: Open A Dialog On Contextmenu Item Click
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Open a dialog on ContextMenu item click
+# How to open dialog on item click in ##Platform_Name## Context Menu
 
 This section explains about how to open a dialog on ContextMenu item click. This can be achieved by handling dialog open in [`select`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.ContextMenu.html#Syncfusion_EJ2_Navigations_ContextMenu_Select) event of the ContextMenu.
 

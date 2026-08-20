@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## List Box Control | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## List Box control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## ListBox | Syncfusion
+description: Drag Syncfusion ##Platform_Name## ListBox items between lists using the allowDragAndDrop property, dragStart, dropped, and dragStop events.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop in ListBox Control
+# Drag and Drop in ##Platform_Name## ListBox
 
 The ListBox has support to drag an item or a group of selected items and drop it within the same list box or into another list box.
 
@@ -17,13 +17,13 @@ The elements can be customized on drag and drop by using the following events,
 
 | Events | Description |
 |------|------|
-| [`dragStart`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~DragStart.html) | Triggers when the selected element is being dragged. |
-| [`drag`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Drag.html) | Triggers when the selected element is being dragged. |
-| [`drop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~Drop.html) | Triggers when the selected element is being dropped. |
+| [`dragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_DragStart) | Triggers when the selected element is being dragged. |
+| [`drag`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Drag) | Triggers when the selected element is being dragged. |
+| [`drop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_Drop) | Triggers when the selected element is being dropped. |
 
 ## Single listbox
 
-To drag and drop an item or group of item within the list box can be achieved by setting [`allowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~AllowDragAndDrop.html) property as `true`.
+To drag and drop an item or group of item within the list box can be achieved by setting [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_AllowDragAndDrop) property as `true`.
 
 The following sample illustrates how to drag and drop an item within the same list box by enabling `allowDragAndDrop` property.
 

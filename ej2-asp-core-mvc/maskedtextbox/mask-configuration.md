@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mask Configuration in ##Platform_Name## Maskedtextbox Control | Syncfusion
-description: Learn here all about Mask Configuration in Syncfusion ##Platform_Name## Maskedtextbox component of Syncfusion Essential JS 2 and more.
+title: Mask Configuration in ##Platform_Name## MaskedTextBox | Syncfusion
+description: Configure Syncfusion ##Platform_Name## MaskedTextBox mask elements (0, 9, #, L, &) with custom characters, prompt, and value formats for input validation.
 platform: ej2-asp-core-mvc
 control: Mask Configuration
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Mask Configuration in MaskedTextBox Control
+# Mask Configuration in ##Platform_Name## MaskedTextBox
 
 The mask is a combination of standard and custom mask elements that validates the user input based on its behavior.
 

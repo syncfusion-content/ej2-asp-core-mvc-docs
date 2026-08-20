@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load Content Through Post in ##Platform_Name## Accordion Component
+title: Load content through Ajax in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about how to load content through post in Syncfusion ##Platform_Name## Accordion component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Content Through Post
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load content through Ajax
+# Load content through Ajax in ##Platform_Name## Accordion
 
 Accordion supports to load external contents through `AJAX` library. Refer the below steps.
 

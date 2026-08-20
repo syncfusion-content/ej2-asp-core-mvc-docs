@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Multi Select Component | Syncfusion
-description: Learn here all about Filtering in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Filtering in ##Platform_Name## MultiSelect | Syncfusion
+description: Enable Syncfusion ##Platform_Name## MultiSelect filtering by setting allowFiltering to true and configuring StartsWith, EndsWith, or Contains filter modes.
 platform: ej2-asp-core-mvc
 control: Filtering
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filtering
+# Filtering in ##Platform_Name## MultiSelect
 
 The MultiSelect has built-in support to filter data items when [allowFiltering](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_AllowFiltering) is enabled. The filter operation starts as soon as you start typing characters in the MultiSelect input.
 
