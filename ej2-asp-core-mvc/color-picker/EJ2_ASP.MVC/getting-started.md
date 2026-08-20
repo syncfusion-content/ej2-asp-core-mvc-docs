@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## ColorPicker Control |Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## ColorPicker control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Color Picker | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Color Picker control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC ColorPicker Control
+# Getting Started with ##Platform_Name## Color Picker
 
 This section briefly explains how to include the [ASP.NET MVC ColorPicker](https://www.syncfusion.com/aspnet-mvc-ui-controls/color-picker) control in an ASP.NET MVC application using Visual Studio.
 
@@ -94,7 +94,7 @@ Now, add the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ColorP
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC ColorPicker control will be rendered in the default web browser.
 
-![ASP.NET MVC ColorPicker Control](images/color-picker.png)
+![ASP.NET MVC ColorPicker Control](images/color-picker.webp)
 
 ## Inline type
 
@@ -108,7 +108,7 @@ The following sample shows the inline type rendering of ColorPicker.
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.png)
+![ASP.NET MVC ColorPicker with Inline](images/color-picker-with-inline.webp)
 
 N> The [ShowButtons](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.ColorPicker.html#Syncfusion_EJ2_Inputs_ColorPicker_ShowButtons) property is disabled in this sample because the control buttons are not needed for inline type. To know about the control buttons functionality, refer to the [showButtons](./how-to/hide-control-buttons) document.
 

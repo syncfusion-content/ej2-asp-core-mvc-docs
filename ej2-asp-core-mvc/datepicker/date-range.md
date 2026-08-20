@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Date Range in ##Platform_Name## Datepicker Component
-description: Learn here all about Date Range in Syncfusion ##Platform_Name## Datepicker component of Syncfusion Essential JS 2 and more.
+title: Date Range in ##Platform_Name## DatePicker | Syncfusion
+description: Restrict Syncfusion ##Platform_Name## DatePicker selection to a range with the min and max properties, with the value reflecting strictMode behavior.
 platform: ej2-asp-core-mvc
 control: Date Range
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Date Range
+# Date Range in ##Platform_Name## DatePicker
 
 DatePicker provides an option to select a date value within a specified range by using the [min](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Min) and [max](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Calendars.DatePicker.html#Syncfusion_EJ2_Calendars_DatePicker_Max) properties. Always the min value has to be lesser than the max value.
 

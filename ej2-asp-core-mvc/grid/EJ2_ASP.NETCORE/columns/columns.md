@@ -309,7 +309,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../images/columns/autofit.png)
 
-> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
@@ -603,5 +603,5 @@ In this example, we have a Grid that displays data with three columns: **Order I
 * [Group Column by Format](../grouping#group-by-format)
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
-* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-the-base64-grid-column-in-javascript-application)
+* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-base64-grid-column-in-javascript-grid)
 * [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically)

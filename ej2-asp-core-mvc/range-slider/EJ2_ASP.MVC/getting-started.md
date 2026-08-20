@@ -8,7 +8,6 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-
 # Getting Started with ##Platform_Name## Range Slider
 
 This section briefly explains how to include the [ASP.NET MVC Range Slider](https://www.syncfusion.com/aspnet-mvc-ui-controls/range-slider) control in an ASP.NET MVC application using Visual Studio.

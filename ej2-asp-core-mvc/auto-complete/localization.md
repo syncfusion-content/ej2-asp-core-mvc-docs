@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Auto Complete Control | Syncfusion
+title: Localization in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Localization in Syncfusion ##Platform_Name## Auto Complete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Localization
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in ##Platform_Name## AutoComplete Control
+# Localization in ##Platform_Name## AutoComplete
 
 The Localization library allows you to localize static text content of the `noRecordsTemplate` and `actionFailureTemplate` properties according to the culture currently assigned to the AutoComplete.
 

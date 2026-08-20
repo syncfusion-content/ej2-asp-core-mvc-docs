@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load Accordion With Data Source in ##Platform_Name## | Syncfusion
+title: Load accordion with data source in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about Load Accordion With Data Source in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Load Accordion With Data Source
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load accordion with DataSource
+# Load accordion with data source in ##Platform_Name## Accordion
 
 You can bind any data object to Accordion items, by mapping it to [header](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Header) and [content](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.AccordionItem.html#Syncfusion_EJ2_Navigations_AccordionItem_Content)&nbsp; property.
 

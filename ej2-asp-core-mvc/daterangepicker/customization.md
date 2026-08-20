@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Daterangepicker Component
-description: Learn here all about customization in Syncfusion ##Platform_Name## Daterangepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DateRangePicker | Syncfusion
+description: Customize Syncfusion ##Platform_Name## DateRangePicker appearance with the cssClass property and style day cells via the renderDayCell event.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ##Platform_Name## DateRangePicker
 
 The DateRangePicker is available for UI customization that can be achieved by using available properties and events in the control.
 
@@ -26,7 +26,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/daterangepicker/customization/daycell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,7 +36,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/daterangepicker/customization/daycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daycell.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -51,7 +53,8 @@ Start day in a week will differ based on the culture, but you can also customize
 {% include code-snippet/daterangepicker/customization/firstday/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -60,7 +63,8 @@ Start day in a week will differ based on the culture, but you can also customize
 {% include code-snippet/daterangepicker/customization/firstday/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Firstday.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 

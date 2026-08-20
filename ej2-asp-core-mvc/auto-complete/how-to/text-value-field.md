@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Text Value Field in ##Platform_Name## Auto Complete Component
+title: Filter using text and value field in AutoComplete | Syncfusion
 description: Learn here all about Text Value Field in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Text Value Field
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter using both text and value field
+# Filter using text and value field in ##Platform_Name## AutoComplete
 
 The AutoComplete data can be filtered based on both text and value fields using `predicate` of dataManager through filtering event. The filtered data can be again updated through `updateData` method.
 

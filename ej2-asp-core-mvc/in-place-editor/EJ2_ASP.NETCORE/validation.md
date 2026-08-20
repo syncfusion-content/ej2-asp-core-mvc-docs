@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## In Place Editor Component
-description: Learn here all about Validation in Syncfusion ##Platform_Name## In Place Editor component of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## InplaceEditor | Syncfusion
+description: Validate Syncfusion ##Platform_Name## InplaceEditor input before save using ValidationRules with keys matching the name property and the validate method.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation
+# Validation in ##Platform_Name## InplaceEditor
 
 In-place Editor control supports validation and it can be achieved by adding rules to the [`validationRules`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.InPlaceEditor.InPlaceEditor.html#Syncfusion_EJ2_InPlaceEditor_InPlaceEditor_ValidationRules) property, its child property `key` must be same as `name` property, otherwise validation not performed. Submitting data to the server or calling the `validate` method validation executed.
 

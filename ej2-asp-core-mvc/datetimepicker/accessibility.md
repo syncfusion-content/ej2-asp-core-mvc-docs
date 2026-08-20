@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Datetimepicker Component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## DateTimePicker | Syncfusion
+description: Syncfusion ##Platform_Name## DateTimePicker meets WCAG 2.2 AA, Section 508, and ADA standards with screen reader, keyboard, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in DateTimePicker Control
+# Accessibility in ##Platform_Name## DateTimePicker
 
 The Web accessibility defines a way to make web content and web applications more accessible to disabled people. It especially helps the dynamic content change and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.
 

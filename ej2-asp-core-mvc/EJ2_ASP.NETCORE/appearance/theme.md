@@ -137,7 +137,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 <th>Styles</th>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/getting-started">Accordion</a></td>
+<td><a aria-label="Accordion documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/accordion/getting-started">Accordion</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/fluent.css" rel="stylesheet" />
@@ -145,11 +145,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
+<td><a aria-label="Accumulation Chart documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started">Accumulation Chart, </a><br/><a aria-label="Smith Chart documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/smithchart/getting-started">Smith Chart, </a><a aria-label="Chart documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started">Chart</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
+<td><a aria-label="Avatar documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/avatar/getting-started">Avatar, </a><a aria-label="Card documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/card/getting-started">Card, </a><br/><a aria-label="Dashboard Layout documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/dashboard-layout/getting-started">Dashboard Layout, </a><br/><a aria-label="Splitter documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/splitter/getting-started">Splitter</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -158,7 +158,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/badge/getting-started-asp-core">Badge</a></td>
+<td><a aria-label="Badge documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/badge/getting-started-asp-core">Badge</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/fluent.css" rel="stylesheet" />
@@ -166,7 +166,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started">Barcode</a></td>
+<td><a aria-label="Barcode documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/barcode/getting-started">Barcode</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-barcode-generator/styles/fluent.css" rel="stylesheet" />
@@ -174,11 +174,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
+<td><a aria-label="Bullet Chart documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/bullet-chart/getting-started">Bullet Chart</a>,<br/> <a aria-label="Sparkline documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started">Sparkline</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
+<td><a aria-label="Button documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started">Button, </a><a aria-label="CheckBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/check-box/getting-started">CheckBox, </a><br/><a aria-label="Chips documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/chips/getting-started">Chips, </a><a aria-label="Radio Button documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/radio-button/getting-started">Radio Button, </a><br/><a aria-label="Switch documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started">Switch</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -187,7 +187,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
+<td><a aria-label="ButtonGroup documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/button-group/getting-started">ButtonGroup</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
@@ -196,7 +196,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></td>
+<td><a aria-label="Calendar documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/calendar/getting-started">Calendar</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/material.css" rel="stylesheet" />
@@ -206,7 +206,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/getting-started">Carousel,</a> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/getting-started">Sidebar</a></td>
+<td><a aria-label="Carousel documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/carousel/getting-started">Carousel,</a> <a aria-label="Sidebar documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/sidebar/getting-started">Sidebar</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -216,11 +216,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
+<td><a aria-label="Circular Gauge documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/circular-gauge/getting-started">Circular Gauge</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started">Color Picker</a></td>
+<td><a aria-label="Color Picker documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/color-picker/getting-started">Color Picker</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -232,7 +232,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
+<td><a aria-label="Breadcrumb documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/breadcrumb/getting-started">Breadcrumb, </a><br/><a aria-label="Context Menu documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/context-menu/getting-started">Context Menu, </a><br/><a aria-label="Menu documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/menu/getting-started">Menu</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -243,7 +243,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a hre="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
+<td><a aria-label="DatePicker documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started">DatePicker</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -254,20 +254,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
-<td>
-{% highlight cshtml %}
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
-<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
-{% endhighlight %}
-</td>
-</tr>
-<tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker/getting-started">DateTimePicker</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></td>
+<td><a aria-label="DateRangePicker documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/daterangepicker/getting-started">DateRangePicker</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -280,7 +267,20 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/diagram/getting-started">Diagram</a></td>
+<td><a aria-label="DateTimePicker documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker/getting-started">DateTimePicker</a>,<br/> <a aria-label="TimePicker documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/timepicker/getting-started">TimePicker</a></td>
+<td>
+{% highlight cshtml %}
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/fluent.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/fluent.css" rel="stylesheet" />
+{% endhighlight %}
+</td>
+</tr>
+<tr>
+<td><a aria-label="Diagram documentation" href="https://help.syncfusion.com/diagram-sdk/asp-net-core/getting-started">Diagram</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -293,7 +293,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></td>
+<td><a aria-label="Dialog documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/dialog/getting-started">Dialog</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -303,7 +303,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">Auto Complete, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">DropDownList, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/getting-started">MultiSelect, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></td>
+<td><a aria-label="Auto Complete documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">Auto Complete, </a><br/><a aria-label="DropDownList documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started">DropDownList, </a><br/><a aria-label="MultiSelect documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/multi-select/getting-started">MultiSelect, </a><br/><a aria-label="ComboBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/combo-box/getting-started">ComboBox</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -315,7 +315,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-tree/getting-started">DropDownTree</a></td>
+<td><a aria-label="DropDownTree documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-tree/getting-started">DropDownTree</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -327,7 +327,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
+<td><a aria-label="File Manager documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/file-manager/getting-started">File Manager</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -343,7 +343,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">Grid</a></td>
+<td><a aria-label="Grid documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core">Grid</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -358,11 +358,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap</a>,<br/> <a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
+<td><a aria-label="HeatMap documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/heatmap-chart/getting-started">HeatMap</a>,<br/> <a aria-label="ProgressBar documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-bar/getting-started">ProgressBar</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/rich-text-editor/getting-started">RichTextEditor</a></td>
+<td><a aria-label="RichTextEditor documentation" href="https://help.syncfusion.com/rich-text-editor-sdk/asp-net-core/rich-text-editor/getting-started">RichTextEditor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -377,7 +377,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature, </a><a href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">NumericTextBox</a></td>
+<td><a aria-label="Signature documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/signature/getting-started">Signature, </a><a aria-label="TextBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/textbox/getting-started">TextBox, </a><br/><a aria-label="Masked TextBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/maskedtextbox/getting-started">Masked TextBox, </a><br/><a aria-label="NumericTextBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox/getting-started">NumericTextBox</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -386,7 +386,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started">DropDownButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started">SplitButton, </a><br/><a href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/getting-started">ProgressButton</a></td>
+<td><a aria-label="DropDownButton documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-button/getting-started">DropDownButton, </a><br/><a aria-label="SplitButton documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/split-button/getting-started">SplitButton, </a><br/><a aria-label="ProgressButton documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/progress-button/getting-started">ProgressButton</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -397,7 +397,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started">Tabs</a>, <a href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
+<td><a aria-label="Tabs documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/tab/getting-started">Tabs</a>, <a aria-label="Toolbar documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/toolbar/getting-started">Toolbar</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -408,7 +408,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/toast/getting-started">Toast</a></td>
+<td><a aria-label="Toast documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/toast/getting-started">Toast</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -419,7 +419,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
+<td><a aria-label="TreeView documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started">TreeView</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -430,7 +430,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
+<td><a aria-label="ToolTip documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/tooltip/getting-started">ToolTip</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -439,7 +439,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
+<td><a aria-label="TreeGrid documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/getting-started-core">TreeGrid</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -457,11 +457,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
+<td><a aria-label="TreeMap documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/treemap/getting-started">TreeMap</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
+<td><a aria-label="Uploader documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started">Uploader</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -471,7 +471,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/kanban/getting-started">Kanban</a></td>
+<td><a aria-label="Kanban documentation" href="https://help.syncfusion.com/gantt-sdk/asp-net-core/kanban/getting-started">Kanban</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -485,11 +485,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
+<td><a aria-label="Linear Gauge documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/linear-gauge/getting-started">Linear Gauge</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
+<td><a aria-label="ListBox documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/list-box/getting-started-core">ListBox</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -501,7 +501,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
+<td><a aria-label="ListView documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/listview/getting-started">ListView</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -511,11 +511,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
+<td><a aria-label="Maps documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/maps/getting-started">Maps</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
+<td><a aria-label="Pivot Table documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started">Pivot Table</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -532,7 +532,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">QueryBuilder</a></td>
+<td><a aria-label="QueryBuilder documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/query-builder/getting-started">QueryBuilder</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -547,11 +547,11 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
+<td><a aria-label="Range Navigator documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-navigator/getting-started">Range Navigator</a></td>
 <td>No Style Sheet Packages</td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
+<td><a aria-label="Range Slider documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/range-slider/getting-started">Range Slider</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -562,7 +562,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://helpej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></td>
+<td><a aria-label="In-place Editor documentation" href="https://helpej2.syncfusion.com/aspnetcore/documentation/in-place-editor/getting-started">In-place Editor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -577,7 +577,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/schedule/getting-started">Schedule</a></td>
+<td><a aria-label="Schedule documentation" href="https://help.syncfusion.com/scheduler-sdk/asp-net-core/schedule/getting-started">Schedule</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -592,7 +592,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></td>
+<td><a aria-label="Stock Chart documentation" href="https://ej2.syncfusion.com/aspnetcore/documentation/stock-chart/getting-started">Stock Chart</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -606,7 +606,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/document-editor/getting-started-core">Document Editor</a></td>
+<td><a aria-label="Document Editor documentation" href="https://help.syncfusion.com/document-processing/word/word-processor/asp-net-core/getting-started-core">Document Editor</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -621,7 +621,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/gantt/getting-started">Gantt</a></td>
+<td><a aria-label="Gantt documentation" href="https://help.syncfusion.com/gantt-sdk/asp-net-core/gantt-chart/getting-started">Gantt</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />
@@ -640,7 +640,7 @@ The following table demonstrates the list of individual Syncfusion<sup style="fo
 </td>
 </tr>
 <tr>
-<td><a href="https://ej2.syncfusion.com/aspnetcore/documentation/pdfviewer/getting-started">PDF Viewer</a></td>
+<td><a aria-label="PDF Viewer documentation" href="https://help.syncfusion.com/document-processing/pdf/pdf-viewer/asp-net-core/getting-started">PDF Viewer</a></td>
 <td>
 {% highlight cshtml %}
 <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/fluent.css" rel="stylesheet" />

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Syncfusion ##Platform_Name## Carousel Control
-description: Checkout and learn about accessibility in ##Platform_Name## Carousel control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ##Platform_Name## Carousel | Syncfusion
+description: Configure WCAG 2.2 and Section 508 support in the ##Platform_Name## Carousel with ARIA roles, keyboard navigation, and screen reader testing.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in Carousel control
+# Accessibility in ##Platform_Name## Carousel
 
 The Carousel component has been designed, keeping in mind the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/carousel/) specifications, and applying the WAI-ARIA roles, states and properties along with keyboard support for people who use assistive devices. WAI-ARIA accessibility support is achieved through attributes like `aria-roledescription`, `aria-label`, `aria-current`, `aria-live`, `aria-role` and `aria-hidden`. It provides information about elements in a document for assistive technology. The component implements keyboard navigation support by following the [WAI-ARIA practices](https://www.w3.org/WAI/ARIA/apg) and has been tested in major screen readers.
 

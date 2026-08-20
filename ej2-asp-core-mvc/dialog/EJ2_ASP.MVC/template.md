@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Dialog Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## Dialog | Syncfusion
+description: Add custom HTML or text to the Syncfusion ##Platform_Name## Dialog header and footer using the Header, Buttons, and FooterTemplate properties.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Template
+# Template in ##Platform_Name## Dialog
 
 In Dialog the template support is provided to the header and footer sections. So any text or HTML content can be appending in these sections.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Prevent Opening Of The Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about how to prevent opening of the Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Prevent dialog opening in ##Platform_Name##| Syncfusion
+description: Prevent the Syncfusion ##Platform_Name## Dialog from opening by setting the BeforeOpen event argument cancel value to true, e.g. for form validation.
 platform: ej2-asp-core-mvc
 control: Prevent Opening Of The Dialog
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Prevent opening of the Dialog
+# How to prevent opening of the Dialog in ##Platform_Name## Dialog
 
 You can prevent opening of the dialog by setting the [`beforeOpen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Popups.Dialog.html#Syncfusion_EJ2_Popups_Dialog_BeforeOpen) event argument cancel value to true. In the following sample, the success dialog is opened when you enter the username value with minimum 4 characters. Otherwise, it will not be opened.
 

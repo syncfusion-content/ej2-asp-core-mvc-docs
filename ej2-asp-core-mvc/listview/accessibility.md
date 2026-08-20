@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## ListView | Syncfusion
+description: Syncfusion ##Platform_Name## ListView meets WCAG 2.2, Section 508, and ADA standards with WAI-ARIA roles, keyboard navigation, and right-to-left support.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in ListView Control
+# Accessibility in ##Platform_Name## ListView
 
 ## Keyboard interaction
 

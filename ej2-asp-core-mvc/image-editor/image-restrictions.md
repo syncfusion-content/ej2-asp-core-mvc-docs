@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Image Restrictions in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Image Restrictions in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Image Restrictions in ##Platform_Name## ImageEditor | Syncfusion
+description: Configure allowed image types and dimensions in Syncfusion ##Platform_Name## ImageEditor using allowedExtensions, minWidth, maxWidth, minHeight, and maxHeight.
 platform:  ej2-asp-core-mvc
 control: Image Restrictions 
 publishingplatform: ##Platform_Name##

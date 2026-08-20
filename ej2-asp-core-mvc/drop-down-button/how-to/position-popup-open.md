@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position Popup Open in ##Platform_Name## Drop Down Button Component
-description: Learn here all about position popup open in Syncfusion ##Platform_Name## Drop Down Button component of Syncfusion Essential JS 2 and more.
+title: How to position popup open in ##Platform_Name## DropDownButton | Syncfusion
+description: Change the Syncfusion ##Platform_Name## DropDownButton popup open position by setting top and left for the popup element in the open event.
 platform: ej2-asp-core-mvc
 control: Position Popup Open
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Position popup open
+# How to position popup open in ##Platform_Name## DropDownButton
 
 Popup open position can be changed according to the requirement. Popup open position can be changed in [`open`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.SplitButtons.DropDownButton.html#Syncfusion_EJ2_SplitButtons_DropDownButton_Open) event by setting `top` and `left` for the popup element.
 

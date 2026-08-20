@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Annotation in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Annotation in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Annotation in ##Platform_Name## ImageEditor | Syncfusion
+description: Add text, freehand drawings, rectangles, ellipses, arrows, paths, and lines to an ##Platform_Name## ImageEditor image using the toolbar or annotation APIs.
 platform: ej2-asp-core-mvc
 control: Annotation
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Annotation in the ##Platform_Name## Image Editor control
+# Annotation in ##Platform_Name## ImageEditor
 
 The Image Editor allows adding annotations to the image, including text, freehand drawings, and shapes like rectangles, ellipses, arrows, paths, and lines. This gives the flexibility to mark up the image with notes, sketches, and other visual elements as needed. These annotation tools can help to communicate and share ideas more effectively. Users are allowed to draw multiple annotations simultaneously, enhancing creative flexibility. Furthermore, every action, including customizations, will be tracked in the undo/redo collection, ensuring a seamless user experience and making it easier to experiment with different designs.
 

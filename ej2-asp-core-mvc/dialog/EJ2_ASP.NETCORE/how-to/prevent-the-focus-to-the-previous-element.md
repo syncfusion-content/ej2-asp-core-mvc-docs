@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Prevent Focus to previous element in ##Platform_Name## | Syncfusion
-description: Learn here all about Prevent the Focus to previous element in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Prevent focus to previous element in  ##Platform_Name## dialog | Syncfusion
+description: Prevent the Syncfusion ##Platform_Name## Dialog from returning focus to the previously focused element by setting preventFocus in the beforeClose event.
 platform: ej2-asp-core-mvc
 control: Prevent the focus to the previous element
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Prevent the focus to the Previous element
+# How to prevent focus to the previous element in ##Platform_Name## Dialog
 
 By default, when the dialog is closed, focus returns to the element that was previously focused before the dialog opened. You can prevent this behavior using the `beforeClose` event and setting the `preventFocus` argument to `true`.
 

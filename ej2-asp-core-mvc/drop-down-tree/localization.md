@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Localization Support in ##Platform_Name## Syncfusion Drop Down Tree Component
-description: Learn here all about localization in Syncfusion ##Platform_Name## Drop Down Tree component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## DropdownTree | Syncfusion
+description: Localize Syncfusion ##Platform_Name## DropdownTree texts like noRecords and actionFailure templates for any culture using the locale and L10n load function.
 platform: ej2-asp-core-mvc
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization in Dropdown Tree Component
+# Localization in ##Platform_Name## DropdownTree
 
 The Dropdown Tree component can be localized to any culture by defining the texts and messages of the Dropdown Tree in the corresponding culture. The default locale of the Dropdown Tree is `en` (English). The following table represents the default texts and messages of the Dropdown Tree in `en` culture.
 

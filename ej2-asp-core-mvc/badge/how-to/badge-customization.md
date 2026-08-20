@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Badge Customization in ##Platform_Name## Badge control | Syncfusion
+title: Badge Customization in ##Platform_Name## Badge | Syncfusion
 description: Learn here all about Badge Customization in Syncfusion ##Platform_Name## Badge control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Badge Customization
@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customization in ##Platform_Name## Badge Control
+# Badge Customization in ##Platform_Name## Badge
 
 ## Color customization
 

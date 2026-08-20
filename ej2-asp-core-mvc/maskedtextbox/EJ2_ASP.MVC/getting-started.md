@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Maskedtextbox Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Maskedtextbox control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## MaskedTextBox | Syncfusion
+description: Learn how to get started with the Syncfusion##Platform_Name## MaskedTextBox control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC MaskedTextBox control
+# Getting Started with ##Platform_Name## MaskedTextBox
 
 This section briefly explains about how to include [ASP.NET MVC MaskedTextBox](https://www.syncfusion.com/aspnet-core-ui-controls/input-mask) control in your ASP.NET MVC application using Visual Studio.
 
@@ -109,7 +109,7 @@ The following example demonstrates the usage of mask element `0` that allows any
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC MaskedTextBox with Mask Inputs](images/mask.png)
+![ASP.NET MVC MaskedTextBox with Mask Inputs](images/mask.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/MaskedTextBox/ASP.NET%20MVC%20Razor%20Examples).
 
