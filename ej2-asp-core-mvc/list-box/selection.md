@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ##Platform_Name## List Box Component
+title: Selection in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Selection in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Selection
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Selection
+# Selection in ##Platform_Name## List Box
 
 The ListBox provides support to select an item or a group of item by mouse or keyboard action. There are two selection modes available in list box,
 
@@ -20,7 +20,7 @@ On selection of each list box item, [`change`](https://help.syncfusion.com/cr/as
 
 ## Single selection
 
-To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~Mode.html) should be set as `Single` in [`selectionSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~SelectionSettings.html) property.
+To enable single selection in the list box, [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_Mode) should be set as `Single` in [`selectionSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_SelectionSettings) property.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -80,4 +80,4 @@ N> By default, the selection mode is set as `Multiple`.
 
 
 
-N> To select all the items in the list box, [`showSelectAll`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings~ShowSelectAll.html) method can also be used.
+N> To select all the items in the list box, [`showSelectAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxSelectionSettings.html#Syncfusion_EJ2_DropDowns_ListBoxSelectionSettings_ShowSelectAll) method can also be used.

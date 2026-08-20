@@ -265,4 +265,4 @@ The tooltip is used when you cannot display information by using the data labels
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/HeatMap/ASP.NET%20MVC%20Razor%20Examples).
 
-N> You can explore our [ASP.NET MVC HeatMap Chart example](https://ej2.syncfusion.com/aspnetmvc/HeatMapChart/Default#/bootstrap5) that shows you how to render the HeatMap Chart in ASP.NET MVC.
+N> You can explore our [ASP.NET MVC HeatMap Chart example](https://ej2.syncfusion.com/aspnetcore/heatmapchart/default#/fluent2) that shows you how to render the HeatMap Chart in ASP.NET MVC.

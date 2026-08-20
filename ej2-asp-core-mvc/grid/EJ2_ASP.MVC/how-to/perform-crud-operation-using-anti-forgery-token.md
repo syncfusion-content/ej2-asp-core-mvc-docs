@@ -11,7 +11,7 @@ documentation: ug
 
 # CRUD with Anti-Forgery Tokens in ##Platform_Name## Data Grid
 
-Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [link](https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.1#authentication-fundamentals).
+Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [link](https://learn.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.1).
 
 While performing grid save operation, you can send anti-forgery token along with the save request using the below custom adaptor.
 
@@ -80,4 +80,4 @@ Now assign the custom adaptor to the grid as follows.
 {% endhighlight %}
 {% endtabs %}
 
-N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionSamples/ej2-mvc-grid-antiforgerytoken).
+N> You can find the full sample at our [GitHub repository](https://github.com/SyncfusionExamples/ej2-mvc-grid-antiforgerytoken).

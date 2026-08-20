@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Or Disable Items in ##Platform_Name## List Box Component
+title: Enable/Disable Items in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Enable Or Disable Items in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Enable Or Disable Items
@@ -11,7 +11,7 @@ documentation: ug
 
 # Enable or disable items
 
-To enable or disable items in the list box, [`enableItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~EnableItems.html) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
+To enable or disable items in the list box, [`enableItems`](https://ej2.syncfusion.com/documentation/api/list-box/index-default#enableitems) method can be used. In the following example, the `Bugatti Veyron Super Sport` and `SSC Ultimate Aero` items are disabled by default and by clicking `Enable Items` buttons, the disabled items will be enabled.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

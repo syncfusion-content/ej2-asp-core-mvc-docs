@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting And Grouping in ##Platform_Name## List Box Component
+title: Sorting And Grouping in ##Platform_Name## List Box | Syncfusion
 description: Learn here all about Sorting And Grouping in Syncfusion ##Platform_Name## List Box component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Sorting And Grouping
@@ -9,11 +9,11 @@ documentation: ug
 ---
 
 
-# sorting and grouping
+# sorting and grouping in ##Platform_Name## List Box
 
 ## Sorting
 
-The ListBox supports sorting of available items in the alphabetical order that can be either ascending or descending. This can achieved using [`sortOrder`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBox~SortOrder.html) property. Sort order can be `None`, `Ascending` or `Descending`.
+The ListBox supports sorting of available items in the alphabetical order that can be either ascending or descending. This can achieved using [`sortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBox.html#Syncfusion_EJ2_DropDowns_ListBox_SortOrder) property. Sort order can be `None`, `Ascending` or `Descending`.
 
 In the following example, the `SortOrder` is set as `Descending`.
 
@@ -44,7 +44,7 @@ In the following example, the `SortOrder` is set as `Descending`.
 
 ## Grouping
 
-The ListBox supports to wrap the nested element into a group based on its category. The category of each list item can be mapped with [`groupBy`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.DropDowns.ListBoxFieldSettings~GroupBy.html) field in the data table.
+The ListBox supports to wrap the nested element into a group based on its category. The category of each list item can be mapped with [`groupBy`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.ListBoxFieldSettings.html#Syncfusion_EJ2_DropDowns_ListBoxFieldSettings_GroupBy) field in the data table.
 
 In the following example, vegetables are grouped based on its category.
 
