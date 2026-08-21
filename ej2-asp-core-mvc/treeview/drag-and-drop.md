@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## TreeView | Syncfusion
+description: Enable drag and drop in the Syncfusion ##Platform_Name## TreeView with allowDragAndDrop to reposition nodes via indicator lines and rich drag events.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and Drop
+# Drag and Drop in ##Platform_Name## TreeView
 
 The TreeView control allows you to drag and drop any node by setting the `allowDragAndDrop` to **true**. Nodes can be dragged and dropped at all levels of the same TreeView. 
 

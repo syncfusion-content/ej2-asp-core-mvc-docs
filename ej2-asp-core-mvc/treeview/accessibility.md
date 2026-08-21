@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## TreeView | Syncfusion
+description: Configure Syncfusion ##Platform_Name## TreeView accessibility with WAI-ARIA roles, states, properties, and keyboard shortcut navigation for screen readers.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility
+# Accessibility in ##Platform_Name## TreeView
 
 The TreeView control has been designed keeping in mind the `WAI-ARIA` specifications, and applies WAI-ARIA roles, states, and properties along with `keyboard support`. This control is characterized by complete keyboard interaction support and ARIA accessibility support that makes it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation.
 

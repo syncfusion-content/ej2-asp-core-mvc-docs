@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Tab Component| Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Tabs | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## Tabs component meets WCAG 2.2, Section 508, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility ##Platform_Name## Tab Component
+# Accessibility in ##Platform_Name## Tabs
 
 The accessibility compliance for the Tab component is outlined below.
 
