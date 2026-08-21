@@ -19,7 +19,7 @@
         queryString = e.text;
         var query = new ej.data.Query().from('Customers').select(['ContactName', 'CustomerID']).take(6);
         //frame the query based on search string with filter type.
-        query = (e.text !== '') ? query.where('ContactName', 'startswith', e.text, true) : query;
+        query = (e.text !== '') ? query.where('ContactName', 'StartsWith', e.text, true) : query;
         //pass the filter data source, filter query to updateData method.
         e.updateData(data.dataSource, query);
     }
