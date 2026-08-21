@@ -1,3 +1,5 @@
+@model WebApplication1.Models.Countries
+
 @using (Html.BeginForm())
 {
     @Html.EJS().DropDownListFor(model => model.Value).Placeholder("Select a Country").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Name" }).Render()

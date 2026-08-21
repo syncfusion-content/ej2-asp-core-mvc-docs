@@ -1,8 +1,8 @@
 
 @Html.EJS().Button("first").Content("add item (Hockey) in first").Render()
-@Html.EJS().Button("between").Content("add item (Golf) in Between").Render()
+@Html.EJS().Button("between").Content("add item (Golf) in between").Render()
 @Html.EJS().Button("last").Content("add item (Cricket) in last").Render()
-@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("200px").DataSource((IEnumerable<object>)ViewBag.data).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Game" }).Render()
+@Html.EJS().DropDownList("games").Placeholder("Select a game").PopupHeight("220px").DataSource((IEnumerable<object>)ViewBag.data).Index(2).Fields(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Value = "Game" }).Render()
 
 <script>
     document.getElementById('first').onclick = () => {

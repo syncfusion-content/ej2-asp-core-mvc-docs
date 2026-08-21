@@ -6,8 +6,6 @@
             </ejs-dropdownlist>
         </div>
     </div>
-    <div id='iconList' class='col-lg-6' style='padding-top:15px'>
-    </div>
 </div>
 <style>
     .e-ddl .e-dropdownbase .e-fixed-head {
