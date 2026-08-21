@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Split Button Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Split Button control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Split Button | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Split Button control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -114,7 +114,7 @@ public ActionResult Index()
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Split Button control will be rendered in the default web browser.
 
-![ASP.NET MVC Split Button Control](images/split-button.png)
+![ASP.NET MVC Split Button Control](images/split-button.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/SplitButton/ASP.NET%20MVC%20Razor%20Examples).
 

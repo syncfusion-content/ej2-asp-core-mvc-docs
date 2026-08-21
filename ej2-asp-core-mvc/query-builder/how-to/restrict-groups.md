@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Restrict Groups in ##Platform_Name## Query Builder Component
-description: Learn here all about Restrict Groups in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Restrict Groups in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to restrict nested group creation in ##Platform_Name## Query Builder using the MaxGroupCount property.
 platform: ej2-asp-core-mvc
 control: Restrict Groups
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Restrict the groups
+# Restrict Groups in ##Platform_Name## Query Builder
 
 You can restrict the groups by defining the `MaxGroupCount` property. By default, the value is 5. In the below demo, the `MaxGroupCount` is set to 2 .
 

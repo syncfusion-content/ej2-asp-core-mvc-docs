@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## Query Builder control | Syncfusion
-description: Learn here all about Columns in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Columns in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to configure columns in ##Platform_Name## Query Builder, including auto generation, labels, operators, formatting, validation, and templates.
 platform: ej2-asp-core-mvc
 control: Columns
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column Binding in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
+# Columns in ##Platform_Name## Query Builder
 
 The column definitions are used as the `DataSource` schema in the Query Builder. This plays a vital role in rendering column values. The query builder operations such as create or delete conditions and create or delete groups are performed based on the column definitions. The `Field` property of the [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.QueryBuilder.QueryBuilder.html#Syncfusion_EJ2_QueryBuilder_QueryBuilder_Columns) is necessary to map the data source values in the query builder columns.
 
