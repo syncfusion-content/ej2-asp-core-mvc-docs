@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Range Slider Control
-description: Learn here all about Style in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## Range Slider | Syncfusion
+description: Customize the appearance of Syncfusion ##Platform_Name## Range Slider with CSS for tracks, handles, limits, ticks, and buttons.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# Style in ##Platform_Name## Range Slider
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

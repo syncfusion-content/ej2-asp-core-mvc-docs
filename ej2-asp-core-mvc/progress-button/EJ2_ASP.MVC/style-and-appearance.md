@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Progress Button Component
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Progress Button component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Progress Button | Syncfusion
+description: Learn how to customize the style and appearance of ##Platform_Name## Progress Button, including colors, icons, CSS classes, themes, and visual states.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearances
+# Style and Appearance in ##Platform_Name## Progress Button
 
 To modify the ProgressButton appearance, you need to override the default CSS of ProgressButton component. Find the list of CSS classes and its corresponding section in ProgressButton. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
