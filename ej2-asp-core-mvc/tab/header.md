@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in ##Platform_Name## Tab Component
-description: Learn here all about Header in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Header in ##Platform_Name## Tabs | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## Tabs header style using predefined CSS classes like `e-fill` and `e-background` for selected and background fills.
 platform: ej2-asp-core-mvc
 control: Header
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Header
+# Header in ##Platform_Name## Tabs
 
 This section explains about modifying the style of Tab header, and configuring its icons and positions.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag And Drop in ##Platform_Name## Tab | Syncfusion
-description: Learn here all about Drag And Drop in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Drag and Drop in ##Platform_Name## Tabs | Syncfusion
+description: Enable drag and drop in the Syncfusion ##Platform_Name## Tabs component to reorder items by setting `allowDragAndDrop` to true.
 platform: ej2-asp-core-mvc
 control: Drag And Drop
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Drag and drop items in ##Platform_Name## Tab Control
+# Drag and Drop in ##Platform_Name## Tabs
 
 The Tab component allows you to drag and drop any item by setting [allowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Tab.html#Syncfusion_EJ2_Navigations_Tab_AllowDragAndDrop)&nbsp;to **true**. Items can be reordered to any place by dragging and dropping them onto the desired location.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dynamic Tooltip Content in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Dynamic Tooltip Content With Html Elements in Syncfusion ##Platform_Name## Tooltip component of syncfusion and more.
+title: Show Dynamic Tooltip Content with HTML in ##Platform_Name## | Syncfusion
+description: Show HTML elements such as div, span, bold, italic, underline, and anchors inside the Syncfusion ##Platform_Name## Tooltip via the content template.
 platform: ej2-asp-core-mvc
 control: Dynamic Tooltip Content With Html Elements
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Dynamic Tooltip content with HTML elements
+# Show Dynamic Tooltip Content with HTML in ##Platform_Name##
 
 The Tooltip component loads HTML tags using the [content](https://ej2.syncfusion.com/documentation/tooltip/content) template.
 

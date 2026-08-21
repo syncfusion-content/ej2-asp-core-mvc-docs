@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Template in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## TreeView | Syncfusion
+description: Customize Syncfusion ##Platform_Name## TreeView node content with the nodeTemplate property using template strings or element IDs in ${...} interpolation.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Template
+# Template in ##Platform_Name## TreeView
 
 The TreeView control allows you to customize the look of TreeView nodes by using the `nodeTemplate` property. This property accepts either a `template string` or an HTML element ID. 
 

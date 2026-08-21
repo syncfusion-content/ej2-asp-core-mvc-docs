@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load Content Through Post in ##Platform_Name## Tab Component
-description: Learn here all about Load Content Through Post in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to load content through post in ##Platform_Name## Tabs | Syncfusion
+description: Load external content into Syncfusion ##Platform_Name## Tabs through the AJAX library by importing the Ajax module and initializing with a URL path.
 platform: ej2-asp-core-mvc
 control: Load Content Through Post
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Load content through Ajax
+# How to load content through post in ##Platform_Name## Tabs
 
 The Tab supports to load external contents through AJAX library. Refer to the following steps.
 

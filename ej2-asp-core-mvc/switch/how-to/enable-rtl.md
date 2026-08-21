@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable Rtl in ##Platform_Name## Switch Component
-description: Learn here all about Enable Rtl in Syncfusion ##Platform_Name## Switch component of Syncfusion Essential JS 2 and more.
+title: How to enable RTL in ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Enable right-to-left (RTL) support in the Syncfusion ##Platform_Name## Toggle Switch Button by setting the `enableRtl` property to true.
 platform: ej2-asp-core-mvc
 control: Enable Rtl
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enable RTL
+# How to enable RTL in ##Platform_Name## Toggle Switch Button
 
 Switch component has RTL support. This can be achieved by setting [`enableRtl`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Buttons.Switch.html#Syncfusion_EJ2_Buttons_Switch_EnableRtl) as `true`.
 

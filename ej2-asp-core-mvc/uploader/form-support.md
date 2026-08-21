@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Form Support in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about Form Support in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Form Support in ##Platform_Name## File Upload | Syncfusion
+description: Use the Syncfusion ##Platform_Name## File Upload inside an HTML form with disabled autoUpload and a name attribute to post files on submit.
 platform: ej2-asp-core-mvc
 control: Form Support
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Forms Support (Synchronous Upload)
+# Form Support in ##Platform_Name## File Upload
 
 The Uploader control works with HTML form like default file input. The following configuration is must to make the Uploader work inside the form.
 

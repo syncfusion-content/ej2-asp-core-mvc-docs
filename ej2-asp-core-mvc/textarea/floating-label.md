@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Floating Label with ##Platform_Name## Textarea control | Syncfusion
-description: Checkout and learn about Floating Label with ##Platform_Name## Textarea control of Syncfusion Essential JS 2 and more details.
+title: Floating Label in ##Platform_Name## TextArea | Syncfusion
+description: Enable floating labels in the Syncfusion ##Platform_Name## TextArea using the `FloatLabelType` API with Auto, Always, or Never floating behaviors.
 platform: ej2-asp-core-mvc
 control: Floating Label
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Floating Label in ##Platform_Name## TextArea Control
+# Floating Label in ##Platform_Name## TextArea
 
 The floating label functionality in the TextArea control allows the placeholder text to float above the TextArea while the user interacts with it, providing a more intuitive user experience. This feature can be achieved using the [FloatLabelType](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.TextArea.html#Syncfusion_EJ2_Inputs_TextArea_FloatLabelType) API, which offers various options for defining the floating behavior:
 
