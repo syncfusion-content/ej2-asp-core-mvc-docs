@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize in ##Platform_Name## Dialog Component
-description: Learn here all about resize in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: Resize in ##Platform_Name## Dialog | Syncfusion
+description: Resize the Syncfusion ##Platform_Name## Dialog dynamically by setting EnableResize to true and configuring the ResizeHandles and target properties.
 platform: ej2-asp-core-mvc
 control: Resize
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resizing
+# Resize in ##Platform_Name## Dialog
 
 The Dialog supports resizing feature. To resize the dialog, select and resize it by using its handle (grip) or hovering on any of the edges or borders of the dialog within the sample container.
 

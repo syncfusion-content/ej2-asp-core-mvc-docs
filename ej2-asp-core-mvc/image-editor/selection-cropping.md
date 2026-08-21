@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection and Cropping in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Selection and Cropping in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Selection and Cropping in ##Platform_Name## ImageEditor | Syncfusion
+description: Select and crop a rectangular or arbitrary region in Syncfusion ##Platform_Name## ImageEditor using selection.crop, selection.cropAsImage, and selection.resize APIs.
 platform: ej2-asp-core-mvc
 control: Selection and Cropping
 publishingplatform: ##Platform_Name##

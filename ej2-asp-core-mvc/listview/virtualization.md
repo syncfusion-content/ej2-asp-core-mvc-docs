@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtualization in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Virtualization in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Virtualization in ##Platform_Name## ListView | Syncfusion
+description: Enable UI virtualization in Syncfusion ##Platform_Name## ListView using the enableVirtualization option to render only visible items for large datasets.
 platform: ej2-asp-core-mvc
 control: Virtualization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# UI Virtualization
+# Virtualization in ##Platform_Name## ListView
 
 UI virtualization loads only viewable list items in a view port, which will improve the ListView performance while loading a large number of data.
 

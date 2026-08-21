@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Expand Mode in ##Platform_Name## Accordion Control | Syncfusion
+title: Expand Mode in ##Platform_Name## Accordion | Syncfusion
 description: Learn here all about how to expand mode in Syncfusion ##Platform_Name## Accordion control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Expand Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Expand Mode in ##Platform_Name## Accordion Control
+# Expand Mode in ##Platform_Name## Accordion
 
  The Accordion supports the two listed types of expand modes while expanding or collapsing the item.
 

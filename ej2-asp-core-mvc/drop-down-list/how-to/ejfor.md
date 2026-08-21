@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ejfor in ##Platform_Name## Drop Down List Component
-description: Learn here all about Ejfor in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to render ##Platform_Name## DropDownListFor in MVC | Syncfusion
+description: Render Syncfusion ##Platform_Name## DropDownListFor HtmlHelper in ASP.NET MVC by binding model values and selecting items via the post method on submit.
 platform: ej2-asp-core-mvc
 control: Ejfor
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# DropDownListFor
+# How to render ##Platform_Name## DropDownListFor in MVC
 
 The DropDownListFor control can be rendered by passing values and data from the model. The selected values can be retrieved during form submit using the post method.
 

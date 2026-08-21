@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Z-order in ##Platform_Name## ImageEditor Control | Syncfusion
-description: Learn here all about Z-order in Syncfusion ##Platform_Name## ImageEditor component of Syncfusion Essential JS 2 and more.
+title: Z-Order in ##Platform_Name## ImageEditor | Syncfusion
+description: Change Syncfusion ##Platform_Name## ImageEditor annotation stacking order by bringing shapes or pen annotations to front, back, forward, or backward.
 platform: ej2-asp-core-mvc
 control: Z-order
 publishingplatform: ##Platform_Name##

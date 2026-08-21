@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Navigation in ##Platform_Name## Breadcrumb Control | Syncfusion
-description: Learn here all about Navigation in Syncfusion ##Platform_Name## Breadcrumb control of Syncfusion Essential JS 2 and more.
+title: Navigation in ##Platform_Name## Breadcrumb | Syncfusion
+description: Enable navigation between Breadcrumb items in ##Platform_Name## by binding href to each item and handling clicks for in-app routing.
 platform: ej2-asp-core-mvc
 control: Navigation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Navigation in Breadcrumb
+# Navigation in ##Platform_Name## Breadcrumb
 
 The Breadcrumb item navigates to the path while clicking the item. To enable navigation, `url`property was bound to the items.
 

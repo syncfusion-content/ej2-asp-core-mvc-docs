@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style in ##Platform_Name## Drop Down List Component
-description: Learn here all about style in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: Style in ##Platform_Name## DropDownList | Syncfusion
+description: Customize Syncfusion ##Platform_Name## DropDownList appearance using CSS classes for wrapper, popup, list items, hover, focus, and selected states via custom theme.
 platform: ej2-asp-core-mvc
 control: Style
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS structures
+# Style in ##Platform_Name## DropDownList
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

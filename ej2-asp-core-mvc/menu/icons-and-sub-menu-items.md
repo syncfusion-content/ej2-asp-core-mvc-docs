@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Icons And Sub Menu Items in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Icons And Sub Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Icons and Sub Menu Items in ##Platform_Name## Menu | Syncfusion
+description: Add Syncfusion ##Platform_Name## Menu item icons via iconCss, configure nested sub menus, and bind events to handle selection using the items endpoint.
 platform: ej2-asp-core-mvc
 control: Icons And Sub Menu Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Icons and Sub menu items
+# Icons and Sub Menu Items in ##Platform_Name## Menu
 
 ## Icons
 

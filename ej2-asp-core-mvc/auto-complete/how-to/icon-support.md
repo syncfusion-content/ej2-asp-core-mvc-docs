@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Icon Support in ##Platform_Name## AutoComplete Component-Syncfusion
+title: Show list items with icons in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Icon Support in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Icon Support
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Show the list items with icons
+# Show list items with icons in ##Platform_Name## AutoComplete
 
 You can render **icons** to the list items by mapping the [iconCss](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_EJ2_DropDowns_AutoCompleteFieldSettings_IconCss) field. This `iconCss` field creates a span in the list item with mapped class name to allow styling as per your need.
 

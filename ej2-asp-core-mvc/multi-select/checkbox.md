@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Checkbox in ##Platform_Name## Multi Select Control | Syncfusion
-description: Learn here all about Checkbox in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Checkbox in ##Platform_Name## MultiSelect | Syncfusion
+description: Enable Syncfusion ##Platform_Name## MultiSelect checkbox selection by setting mode to CheckBox and configuring showSelectAll, change, or selecting events.
 platform: ej2-asp-core-mvc
 control: Checkbox
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CheckBox in MultiSelect Control
+# Checkbox in ##Platform_Name## MultiSelect
 
 The MultiSelect has built-in support to select multiple values through checkbox, when [mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Mode) property set as `CheckBox`.
 

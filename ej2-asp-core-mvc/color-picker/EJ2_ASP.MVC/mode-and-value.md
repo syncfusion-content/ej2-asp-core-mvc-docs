@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Mode And Value in ##Platform_Name## Color Picker Control | Syncfusion
-description: Learn here all about Mode and Value in Syncfusion ##Platform_Name## Color Picker control of Syncfusion Essential JS 2 and more.
+title: Mode and Value in ##Platform_Name## Color Picker | Syncfusion
+description: Switch Syncfusion ##Platform_Name## Color Picker between Picker and Palette modes to render the color grid or selector on initial load.
 platform: ej2-asp-core-mvc
 control: Mode And Value
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Mode and Value in Color Picker Control
+# Mode and Value in ##Platform_Name## Color Picker
 
 ## Rendering palette at initial load
 

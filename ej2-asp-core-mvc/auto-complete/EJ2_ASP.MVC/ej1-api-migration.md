@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Ej1 Api Migration in ##Platform_Name## Auto Complete Component | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Auto Complete component of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration in ##Platform_Name## AutoComplete | Syncfusion
+description: Migrate the ##Platform_Name## AutoComplete from Essential JS 1 to Essential JS 2 with side-by-side API maps for data binding, filtering, and events.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Migration from Essential JS 1 to ##Platform_Name## Auto complete
+# EJ1 API Migration in ##Platform_Name## AutoComplete
 
 This article describes the API migration process of  AutoComplete component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 N> MultiSelect concept is not present in EJ2-AutoComplete.  If you want to use multiselection support in autocomplete, we suggest you to use MultiSelect component.

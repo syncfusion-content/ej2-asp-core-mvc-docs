@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Finetune in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Finetune in Syncfusion Image Editor control of Syncfusion Essential JS 2 and more.
+title: Finetune in ##Platform_Name## ImageEditor | Syncfusion
+description: Adjust brightness, contrast, hue, saturation, exposure, blur, opacity, and sharpen on Syncfusion ##Platform_Name## ImageEditor using a slider UI.
 platform: ej2-asp-core-mvc
 control: Finetune 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Finetune in the ##Platform_Name## Image Editor control
+# Finetune in ##Platform_Name## ImageEditor
 
 Fine-tuning involves making precise adjustments to the settings of an image filter in order to achieve a specific desired effect. It provides control over the intensity and specific aspects of the filter's impact on the image. For example, fine-tuning allows you to modify parameters like brightness, saturation, or other relevant properties to fine-tune the level or quality of the filter's effect. This level of control enables you to achieve the exact look or outcome you want for your image.
 

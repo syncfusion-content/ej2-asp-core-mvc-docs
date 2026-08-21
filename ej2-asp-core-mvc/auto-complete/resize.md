@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resizing in ##Platform_Name## AutoComplete Control | Syncfusion
+title: Resizing in ##Platform_Name## AutoComplete | Syncfusion
 description: Learn here all about Popup Resizing in Syncfusion ##Platform_Name## AutoComplete control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
 control: Resizing
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Resizing in ##Platform_Name## AutoComplete Control
+# Resizing in ##Platform_Name## AutoComplete
 
 You can dynamically adjust the size of the popup in the Autocomplete component by using the [AllowResize](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.dropdowns.autocomplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_AllowResize) property. When enabled, users can resize the popup, improving visibility and control, with the resized dimensions being retained across sessions for a consistent user experience.
 

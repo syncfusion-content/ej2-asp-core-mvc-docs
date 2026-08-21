@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remove Item in ##Platform_Name## Drop Down List Component
-description: Learn here all about how to remove item in Syncfusion ##Platform_Name## Drop Down List component of Syncfusion Essential JS 2 and more.
+title: How to remove items from ##Platform_Name## DropDownList | Syncfusion
+description: Remove a Syncfusion ##Platform_Name## DropDownList item at any index using the removeItem method with an optional success and failure callback handler.
 platform: ej2-asp-core-mvc
 control: Remove Item
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Remove an item from DropDownList
+# How to remove items from ##Platform_Name## DropDownList
 
 {% if page.publishingplatform == "aspnet-core" %}
 

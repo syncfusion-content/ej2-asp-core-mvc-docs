@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style And Appearance in ##Platform_Name## Menu Component
-description: Learn here all about Style And Appearance in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## Menu | Syncfusion
+description: Customize Syncfusion ##Platform_Name##Menu CSS classes for the menu wrapper, items, separators, hover, and active states using custom theme or Theme Studio.
 platform: ej2-asp-core-mvc
 control: Style And Appearance
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Styles and Appearances
+# Style and Appearance in ##Platform_Name## Menu
 
 To modify the Menu appearance, you need to override the default CSS of Menu component. Find the list of CSS classes and its corresponding section in Menu component. Also, you have an option to create your own custom theme for the controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

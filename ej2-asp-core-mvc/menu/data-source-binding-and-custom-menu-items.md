@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Source Binding in ##Platform_Name## Menu Control | Syncfusion
-description: Learn here all about Data Source Binding And Custom Menu Items in Syncfusion ##Platform_Name## Menu component of Syncfusion Essential JS 2 and more.
+title: Data Source Binding in ##Platform_Name## Menu | Syncfusion
+description: Bind Syncfusion ##Platform_Name## Menu to local arrays or remote data source via the items property, fields mapping, and ajax POST requests using fetch.
 platform: ej2-asp-core-mvc
 control: Data Source Binding And Custom Menu Items
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Data source binding and Custom menu items
+# Data Source Binding in ##Platform_Name## Menu
 
 ## Data binding
 

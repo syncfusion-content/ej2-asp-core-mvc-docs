@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customizing Templates in ##Platform_Name## ListView Control | Syncfusion
-description: Learn here all about Customizing Templates in Syncfusion ##Platform_Name## ListView control of Syncfusion Essential JS 2 and more.
+title: Customizing Templates in ##Platform_Name## ListView | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## ListView item rendering with template, groupTemplate, and headerTemplate for list, header, and group layouts.
 platform: ej2-asp-core-mvc
 control: Customizing Templates
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customizing templates
+# Customizing Templates in ##Platform_Name## ListView
 
 The ListView control is designed to customize each list items and group title. It uses Essential<sup style="font-size:70%">&reg;</sup> JS2 `Template engine` to render the elements.
 

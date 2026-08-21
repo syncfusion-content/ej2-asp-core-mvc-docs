@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template And Multilevel Nesting in ##Platform_Name## Context Menu Control | Syncfusion
-description: Learn here all about Template And Multilevel Nesting in Syncfusion ##Platform_Name## Context Menu control of Syncfusion Essential JS 2 and more.
+title: Template and Nesting in ##Platform_Name## Context Menu | Syncfusion
+description: Define custom templates for Syncfusion ##Platform_Name## Context Menu items with the itemTemplate property and render nested submenus for hierarchical actions.
 platform: ej2-asp-core-mvc
 control: Template And Multilevel Nesting
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Template and Multilevel nesting
+# Template and Nesting in ##Platform_Name## Context Menu
 
 ## Item template
 

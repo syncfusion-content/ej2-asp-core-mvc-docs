@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Chip Customization in ##Platform_Name## Multi Select Component
-description: Learn here all about Chip Customization in Syncfusion ##Platform_Name## Multi Select component of Syncfusion Essential JS 2 and more.
+title: Chip Customization in ##Platform_Name## MultiSelect | Syncfusion
+description: Customize Syncfusion ##Platform_Name## MultiSelect chip elements via the tagging event by calling setClass with custom CSS classes for selected items.
 platform: ej2-asp-core-mvc
 control: Chip Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Chip Customization
+# Chip Customization in ##Platform_Name## MultiSelect
 
 The MultiSelect allows the user to customize the selected chip element through the [tagging](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.MultiSelect.html#Syncfusion_EJ2_DropDowns_MultiSelect_Tagging) event. In that event, you can set the custom classes to chip element via that event argument of `setClass` method.
 

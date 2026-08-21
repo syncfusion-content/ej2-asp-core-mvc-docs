@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ##Platform_Name## Calendar Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ##Platform_Name## Calendar component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Calendar | Syncfusion
+description: Localize the ##Platform_Name## Calendar to any culture using CLDR data, the locale property, and L10n text translations.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in ##Platform_Name## Calendar Control
+# Globalization in ##Platform_Name## Calendar
 
 Globalization is the combination of adapting the component to various languages by means of parsing and formatting the date or number [Internationalization](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization) and also by adding cultural specific customizations and translating the text [localization](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization).
 
@@ -78,7 +78,8 @@ The following example demonstrates the Calendar in `German` culture.
 {% include code-snippet/calendar/international/international/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -87,7 +88,8 @@ The following example demonstrates the Calendar in `German` culture.
 {% include code-snippet/calendar/international/international/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="International.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
@@ -105,7 +107,8 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% include code-snippet/calendar/international/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -114,6 +117,7 @@ The following example demonstrates the Calendar in `Arabic` culture with Right-T
 {% include code-snippet/calendar/international/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Rtl.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 

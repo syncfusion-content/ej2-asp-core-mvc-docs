@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Redact in ##Platform_Name## Image editor control | Syncfusion
-description: Learn here all about Redact in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
+title: Redact in ##Platform_Name## ImageEditor | Syncfusion
+description: Permanently blur sensitive text or face regions in Syncfusion ##Platform_Name## ImageEditor with pixelate and blur redact options using the redact method.
 platform:  ej2-asp-core-mvc
 control: Redact 
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Redact in the ##Platform_Name## Image Editor control
+# Redact in ##Platform_Name## ImageEditor
 
 The redact feature in an Image Editor is a valuable tool that empowers users to conceal sensitive information by applying blur or pixel effects to specific areas of an image. This feature is particularly valuable for protecting privacy and complying with data protection regulations, making it easier to securely share images without compromising sensitive information.
 

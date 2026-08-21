@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Create Nested Dialog in ##Platform_Name## Dialog Component
-description: Learn here all about Create Nested Dialog in Syncfusion ##Platform_Name## Dialog component of Syncfusion Essential JS 2 and more.
+title: How to create nested Dialog in ##Platform_Name## Dialog | Syncfusion
+description: Nest a Dialog inside another Syncfusion ##Platform_Name## Dialog by initializing the inner Dialog with the outer Dialog as its target.
 platform: ej2-asp-core-mvc
 control: Create Nested Dialog
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Create nested Dialog
+# How to create nested Dialog in ##Platform_Name## Dialog
 
 A Dialog can be nested within another Dialog. The below sample contains parent and child Dialog (inner Dialog).
 

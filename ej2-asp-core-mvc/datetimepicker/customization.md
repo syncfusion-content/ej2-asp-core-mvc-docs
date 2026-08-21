@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in ##Platform_Name## Datetimepicker Component
-description: Learn here all about customization in Syncfusion ##Platform_Name## Datetimepicker component of Syncfusion Essential JS 2 and more.
+title: Customization in ##Platform_Name## DateTimePicker | Syncfusion
+description: Customize Syncfusion ##Platform_Name## DateTimePicker appearance with the cssClass property, the renderDayCell event, and other available properties and events.
 platform: ej2-asp-core-mvc
 control: Customization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Customization
+# Customization in ##Platform_Name## DateTimePicker
 
 The DateTimePicker is available for UI customization that can be achieved by using available properties and events in the component.
 
@@ -26,7 +26,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/datetimepicker/daytimecellformat/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
@@ -35,7 +36,8 @@ The following example disables the weekends of every month by using `renderDayCe
 {% include code-snippet/datetimepicker/daytimecellformat/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Daytimecellformat.cs" %}
-{% endhighlight %}{% endtabs %}
+{% endhighlight %}
+{% endtabs %}
 {% endif %}
 
 
