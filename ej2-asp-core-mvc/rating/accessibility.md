@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Rating Control | Syncfusion
-description: Checkout and learn here all about Accessibility in ##Platform_Name## Rating control of Syncfusion Essential JS 2 and more details.
+title: Accessibility in ##Platform_Name## Rating | Syncfusion
+description: Learn about accessibility support in Syncfusion ##Platform_Name## Rating, including WCAG compliance, ARIA attributes, keyboard navigation, and validation.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility in ##Platform_Name## Rating control
+# Accessibility in ##Platform_Name## Rating
 
 The Rating control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

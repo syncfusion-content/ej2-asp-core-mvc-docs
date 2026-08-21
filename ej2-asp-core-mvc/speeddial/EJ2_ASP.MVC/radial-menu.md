@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Radial Menu in ##Platform_Name## SpeedDial Control | Syncfusion
-description: Checkout and learn about radial menu and its customization in ##Platform_Name## SpeedDial control of Syncfusion Essential JS 2 and more details.
+title: Radial Menu in ##Platform_Name## Speed Dial | Syncfusion
+description: Learn about the radial menu display mode in the Syncfusion ##Platform_Name## Speed Dial, including direction, angle, and offset customization options.
 platform: ej2-asp-core-mvc
 control: Radial Menu
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Radial Menu in ASP.NET MVC Speed Dial Control
+# Radial Menu in ##Platform_Name## Speed Dial
 
 The action items in ASP.NET MVC Speed Dial can be displayed in a circular patter like a radial menu by setting [Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDial.html#Syncfusion_EJ2_Buttons_SpeedDial_Mode) property. You can customize the `Direction`, `StartAngle`, `EndAngle` and `Offset` by setting [SpeedDialRadialSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Buttons.SpeedDialRadialSettings.html).
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Positioning in ASP.NET Core Predefined Dialogs | Syncfusion
-description: Checkout and learn about Positioning in ASP.NET Core Predefined Dialogs of Syncfusion Essential JS 2 and more details.
+title: Positioning in ##Platform_Name## Predefined Dialogs | Syncfusion
+description: Learn how to customize the position of ##Platform_Name## Predefined Dialogs using the position property with custom X and Y coordinates.
 platform: ej2-asp-core-mvc
 control: Positioning
-publishingplatform: aspnet-core
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Positioning in Predefined Dialogs in Blazor
+# Positioning in ##Platform_Name## Predefined Dialogs
 
 Customize the dialog position by using the `position` property. The position can be represented with specific `X` and `Y` values.
 

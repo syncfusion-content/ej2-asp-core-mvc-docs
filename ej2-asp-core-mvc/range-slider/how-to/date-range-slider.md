@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date Range Slider in ##Platform_Name## Range Slider Control
-description: Learn here all about Date Range Slider in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Date Formatting in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to display and format date values in ##Platform_Name## Range Slider using tick and tooltip customization.
 platform: ej2-asp-core-mvc
 control: Date Range Slider
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Date Range Slider
+# Date Formatting in Range Slider
 
 The Date formatting can be achieved in [`ticks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Ticks) and [`tooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_Tooltip) using [`renderingTicks`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_RenderingTicks) and [`tooltipChange`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Slider.html#Syncfusion_EJ2_Inputs_Slider_TooltipChange) events respectively. The process of formatting is explained in the below sample.
 

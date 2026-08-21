@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pane Content in ##Platform_Name## Splitter Control | Syncfusion
-description: Learn here all about Pane Content in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Pane Content in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to add pane content in Syncfusion ##Platform_Name## Splitter using HTML, text, content templates, and embedded Syncfusion controls.
 platform: ej2-asp-core-mvc
 control: Pane Content
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Pane content in Splitter Control
+# Pane Content in ##Platform_Name## Splitter
 
 This section explains how to provide plain text content or HTML markup or integrate other Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core UI controls as content of splitter.
 

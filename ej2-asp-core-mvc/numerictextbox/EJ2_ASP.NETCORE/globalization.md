@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Globalization in ASP.NET MVC Numerictextbox Control | Syncfusion
-description: Learn here all about Globalization in Syncfusion ASP.NET MVC Numerictextbox component of Syncfusion Essential JS 2 and more.
+title: Globalization in ##Platform_Name## Numeric TextBox | Syncfusion
+description: Learn to configure globalization in ##Platform_Name## Numeric TextBox with localization, culture-specific formatting, and RTL support.
 platform: ej2-asp-core-mvc
 control: Globalization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Globalization in NumericTextBox Control
+# Globalization in ##Platform_Name## NumericTextBox
 
 ## Internationalization
 

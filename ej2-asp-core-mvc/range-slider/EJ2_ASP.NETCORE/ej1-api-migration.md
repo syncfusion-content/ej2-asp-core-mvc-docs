@@ -1,15 +1,18 @@
 ---
 layout: post
-title: Ej1 API Migration for ##Platform_Name## Range Slider | Syncfusion
-description: Learn here all about Ej1 Api Migration in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: EJ1 API Migration for ##Platform_Name## Slider | Syncfusion
+description: Learn how to migrate Slider APIs from Essential JS 1 (EJ1) to Essential JS 2 (EJ2) in ##Platform_Name## applications.
 platform: ej2-asp-core-mvc
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+<<<<<<< HEAD
 
-# RangeSlider API Migration from JS 1
+=======
+>>>>>>> fd42f10bca095a105bf210273511bd2814b92acc
+# Migrate Slider from Essential JS 1 to Essential JS 2
 
 This article describes the API migration process of Slider control from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 
