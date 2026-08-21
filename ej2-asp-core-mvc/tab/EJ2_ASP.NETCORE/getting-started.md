@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Tab Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Tabs | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Tabs control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET Core Tab Control
+# Getting Started with ##Platform_Name## Tabs
 
 This section briefly explains how to include the [ASP.NET Core Tab](https://www.syncfusion.com/aspnet-core-ui-controls/tabs) control in your ASP.NET Core Web App using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

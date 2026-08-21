@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Create Wizard Using Tab in ##Platform_Name## Tab | Syncfusion
-description: Learn here all about Create Wizard Using Tab in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: How to create wizard using tab in ##Platform_Name## Tabs | Syncfusion
+description: Build a multi-step reservation wizard using Syncfusion ##Platform_Name## Tabs with integrated DropDownList, DatePicker, Grid, and validation between each step.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Create wizard using Tab
+
+# How to create wizard using tab in ##Platform_Name## Tabs
 
 {% if page.publishingplatform == "aspnet-core" %}
 

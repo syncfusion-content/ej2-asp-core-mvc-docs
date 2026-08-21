@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Client Side Validation Using Form Validator in ##Platform_Name## Timepicker Component
-description: Learn here all about Client Side Validation Using Form Validator in Syncfusion ##Platform_Name## Timepicker component of syncfusion and more.
+title: How to validate client side in ##Platform_Name## TimePicker | Syncfusion
+description: Validate the Syncfusion ##Platform_Name## TimePicker on the client side using the Essential JS 2 FormValidator to display custom error feedback messages.
 platform: ej2-asp-core-mvc
 control: Client Side Validation Using Form Validator
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Client side validation using FormValidator
+# How to validate client side in ##Platform_Name## TimePicker
 
 To achieve client side validation in a TimePicker component, use [Essential JavaScript 2 FormValidator](https://ej2.syncfusion.com/documentation/form-validator). It provides an option to customize feedback error messages to the corresponding fields for taking action and resolving the issue.
 

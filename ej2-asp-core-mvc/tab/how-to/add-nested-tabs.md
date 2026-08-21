@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Nested Tabs in ##Platform_Name## Tab Control | Syncfusion 
-description: Learn here all about Add Nested Tabs in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to add nested tabs in ##Platform_Name## Tabs | Syncfusion
+description: Render nested Syncfusion ##Platform_Name## Tabs by adding a Tab element inside the parent Tab's `content` property and initializing it in a selected event handler.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##

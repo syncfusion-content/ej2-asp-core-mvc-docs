@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Groups in Syncfusion ##Platform_Name## Textbox Component
-description: Learn here all about Groups in Syncfusion ##Platform_Name## Textbox component of Syncfusion Essential JS 2 and more.
+title: Groups in ##Platform_Name## TextBox | Syncfusion
+description: Create a Syncfusion ##Platform_Name## TextBox with an icon and floating label using the `addIcon` method and `FloatLabelType` property in a single input.
 platform: ej2-asp-core-mvc
 control: Groups
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Groups in ##Platform_Name## TextBox Component
+# Groups in ##Platform_Name## TextBox
 
 The following section explains you the steps required to create TextBox with `icon` and `floating label`.
 

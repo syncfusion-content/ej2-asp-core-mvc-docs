@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tab key navigation in ##Platform_Name## Tab Component | Syncfusion
-description: Learn here all about Tab key navigation in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: How to enable tab key navigation in ##Platform_Name## Tabs | Syncfusion
+description: Enable Tab key navigation between Syncfusion ##Platform_Name## Tabs items by setting a positive value to the `TabIndex` property on each item.
 platform: ej2-asp-core-mvc
 control: Tab key navigation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Enabling tab key navigation in Tabs
+# How to enable tab key navigation in ##Platform_Name## Tabs
 
 The `TabIndex` property of a Tab item is used to enable tab key navigation for that particular item. When a positive value is assigned to the `TabIndex` property, it allows the user to switch focus to the next or previous tab item using the Tab or Shift+Tab keys. By default, the user can only switch between tab items using the arrow keys.
 

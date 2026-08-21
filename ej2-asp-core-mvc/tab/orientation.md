@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Orientation in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Orientation in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Orientation in ##Platform_Name## Tabs | Syncfusion
+description: Place the Syncfusion ##Platform_Name## Tabs header at top, bottom, left, or right positions using the `headerPlacement` property.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##

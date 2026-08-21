@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Tabs | Syncfusion
+description: Localize the close button tooltip text of the Syncfusion ##Platform_Name## Tabs component using the L10n `load` function for any culture.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Switch Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Switch control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Toggle Switch Button | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Toggle Switch Button control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Switch
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Switch Control
+# Getting Started with ##Platform_Name## Toggle Switch Button
 
-This section briefly explains how to include the [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
+This section briefly explains how to include the [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs).
 
 ## Create an ASP.NET Core Web App with Razor pages
 
@@ -18,7 +18,7 @@ Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates]
 
 ## Install the required ASP.NET Core packages
 
-To add [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.Buttons](https://www.nuget.org/packages/Syncfusion.AspNetCore.Buttons/) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes/) packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
+To add [ASP.NET Core Switch](https://www.syncfusion.com/aspnet-core-ui-controls/toggle-switch-button) control in the app, open the NuGet package manager in Visual Studio *(Tools → NuGet Package Manager → Manage NuGet Packages for Solution)*, search for and install the [Syncfusion.AspNetCore.Buttons](https://www.nuget.org/packages/Syncfusion.AspNetCore.Buttons) and [Syncfusion.AspNetCore.Themes](https://www.nuget.org/packages/Syncfusion.AspNetCore.Themes) packages. All Syncfusion ASP.NET Core packages are available on [nuget.org](https://www.nuget.org/packages?q=syncfusion.EJ2). See the [NuGet packages](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) topic for details.
 
 Alternatively, you can install the same packages using the Package Manager Console with the following command.
 

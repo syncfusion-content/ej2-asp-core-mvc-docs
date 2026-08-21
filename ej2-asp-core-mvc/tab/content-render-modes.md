@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Content Render Modes in Syncfusion ##Platform_Name## Tab control
-description: Learn here all about Content Render Modes in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
+title: Content Render Modes in ##Platform_Name## Tabs | Syncfusion
+description: Render Syncfusion ##Platform_Name## Tabs content using on-demand lazy loading, dynamic, or initial rendering modes for optimal performance.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Content Render Modes
+
+# Content Render Modes in ##Platform_Name## Tabs
 
 Tabs support rendering content based on different scenarios. The content of the Tabs can be rendered in three different ways, as outlined below.
 

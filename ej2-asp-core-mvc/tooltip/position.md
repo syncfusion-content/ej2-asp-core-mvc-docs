@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Position in ##Platform_Name## Tooltip Control | Syncfusion
-description: Learn here all about Position in Syncfusion ##Platform_Name## Tooltip component of Syncfusion Essential JS 2 and more.
+title: Position in ##Platform_Name## Tooltip | Syncfusion
+description: Position the Syncfusion ##Platform_Name## Tooltip in any of 12 static locations around the target element using the configurable position property.
 platform: ej2-asp-core-mvc
 control: Position
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip Positioning in Tooltip Control
+# Position in ##Platform_Name## Tooltip
 
 Tooltips can be attached to 12 static locations around the target. On initializing the Tooltip, you can set the position property with any one of the following values:
 

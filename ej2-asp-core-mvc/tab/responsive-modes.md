@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Responsive Modes in ##Platform_Name## Tab control | Syncfusion
-description: Learn here all about Responsive Modes in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Responsive Modes in ##Platform_Name## Tabs | Syncfusion
+description: Render the Syncfusion ##Platform_Name## Tabs in scrollable or popup overflow modes when items exceed the viewable area width.
 platform: ej2-asp-core-mvc
 control: Tab
 publishingplatform: ##Platform_Name##
