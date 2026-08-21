@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style and appearance in ##Platform_Name## TimePicker Component
-description: Learn here all about style and appearance in Syncfusion ##Platform_Name## TimePicker component of Syncfusion Essential JS 2 and more.
+title: Style and Appearance in ##Platform_Name## TimePicker | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## TimePicker appearance using CSS to modify the wrapper element, popup list, and other visual properties.
 platform: ej2-asp-core-mvc
 control: timepicker
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Style and appearance in TimePicker Component
+# Style and Appearance in ##Platform_Name## TimePicker
 
 The following content provides the exact CSS structure that can be used to modify the control's appearance based on the user preference.
 

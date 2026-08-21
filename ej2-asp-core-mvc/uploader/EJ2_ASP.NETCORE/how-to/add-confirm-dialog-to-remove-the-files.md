@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Add Confirm Dialog in ##Platform_Name## Uploader | Syncfusion 
-description: Learn here all about Add Confirm Dialog To Remove The Files in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: How to add a confirmation dialog in ##Platform_Name## Uploader | Syncfusion
+description: Add a confirmation dialog to the Syncfusion ASP.NET Core File Upload before removing files by integrating the EJ2 Dialog component on the click event.
 platform: ej2-asp-core-mvc
 control: Add Confirm Dialog To Remove The Files
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Add confirm dialog to remove the files in ASP.NET Core
+# How to add a confirmation dialog when removing files in ASP.NET Core
 
 You can customize the uploader control using confirm dialog before removing the files.
 Here, ej2 dialog is used as confirm dialog. Refer to the following example.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template in ##Platform_Name## Uploader Component
-description: Learn here all about Template in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Template in ##Platform_Name## File Upload | Syncfusion
+description: Customize the Syncfusion ##Platform_Name## File Upload file list appearance with the template property for custom HTML or strings per file entry.
 platform: ej2-asp-core-mvc
 control: Template
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Template
+# Template in ##Platform_Name## File Upload
 
 You can customize the default appearance of the uploader using a template along with buttons.
 

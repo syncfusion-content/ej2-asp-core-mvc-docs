@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about Localization in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## File Upload | Syncfusion
+description: Localize the Syncfusion ##Platform_Name## File Upload static text such as Browse, Clear, Upload, and status messages using the L10n load method.
 platform: ej2-asp-core-mvc
 control: Localization
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in Uploader Control
+# Localization in ##Platform_Name## File Upload
 
 The Localization library allows you to localize static text content of the uploader. The static text contains default text content of action buttons, file status, clear icon title, tooltips, and text content of drag area. Define the locale object for a culture and assign it to L10n load method.
 

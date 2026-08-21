@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ##Platform_Name## Uploader Control | Syncfusion
-description: Learn here all about Validation in Syncfusion ##Platform_Name## Uploader component of Syncfusion Essential JS 2 and more.
+title: Validation in ##Platform_Name## File Upload | Syncfusion
+description: Validate the Syncfusion ##Platform_Name## File Upload using allowedExtensions, minFileSize, and maxFileSize to filter files before they are uploaded.
 platform: ej2-asp-core-mvc
 control: Validation
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation in Uploader Control
+# Validation in ##Platform_Name## File Upload
 
 The uploader control validate the selected files size and extension using the [allowedExtensions](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_AllowedExtensions), [minFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MinFileSize) and [maxFileSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_MaxFileSize) properties. The files can be validated before uploading to the server and can be ignored on uploading. Also, you can validate the files by setting the HTML attributes to the original input element. The validation process occurs on drag-and-drop the files also.
 

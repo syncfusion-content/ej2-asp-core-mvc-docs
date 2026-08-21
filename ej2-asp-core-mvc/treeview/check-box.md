@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check Box in ##Platform_Name## TreeView Control | Syncfusion
-description: Learn here all about Check Box in Syncfusion ##Platform_Name## TreeView control of Syncfusion Essential JS 2 and more.
+title: Check Box in ##Platform_Name## TreeView | Syncfusion
+description: Enable CheckBox selection in the Syncfusion ##Platform_Name## TreeView with the showCheckBox property, autoCheck cascade, and nodeChecking/event handling.
 platform: ej2-asp-core-mvc
 control: TreeView
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CheckBox
+# Check Box in ##Platform_Name## TreeView
 
 The TreeView control allows you to check more than one node in the TreeView without affecting the UI's appearance by enabling the `showCheckBox` property. When this property is enabled, checkbox appears before each TreeView node text.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Timepicker | Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Timepicker component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## TimePicker | Syncfusion
+description: Learn how the Syncfusion ##Platform_Name## TimePicker meets WCAG 2.2, Section 508, ARIA roles, and keyboard navigation accessibility standards.
 platform: ej2-asp-core-mvc
 control: Accessibility
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Accessibility in TimePicker Control
+# Accessibility in ##Platform_Name## TimePicker
 
 The web accessibility makes web applications and its content more accessible to people with disabilities without any barriers. It especially it tracks the dynamic value changes and DOM changes.
 
