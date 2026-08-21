@@ -124,10 +124,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.png)
+![Renaming the calculated field - dialog open](images/calculatdfield-renaming1.png)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.png)
+![Renaming the calculated field - saved](images/calculatdfield-renaming2.png)
 
 ## Editing an existing calculated field formula
 
@@ -144,10 +144,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.png)
+![Editing a calculated field - dialog open](images/calculatdfield-field-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+![Editing a calculated field - formula updated](images/calculatdfield-field-edit2.png)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -181,7 +181,7 @@ To format calculated field values in your code, use the [`FormatSettings`](https
 
 To apply formatting to calculated field values via the user interface, use the built-in "Format" dropdown available in the calculated field dialog. This dropdown provides the following predefined format options:
 
-* **Standard** - Displays numbers in their basic numeric form.
+* **Standard** - Displays numbers using the default numeric format (equivalent to the `N` format).
 * **Currency** - Displays numbers as currency values.
 * **Percent** - Displays numbers as percentage values.
 * **Custom** - Allows you to specify a custom format pattern.
@@ -228,7 +228,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `^` – power operator.
 
     ```typescript
-     Syntax: X^2
+     Syntax: X^Y
     ```
 
 * `<` - less than operator.
@@ -282,19 +282,19 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `?` – conditional operator.
 
     ```typescript
-     Syntax: condition ? then : else
+     Syntax: condition ? valueIfTrue : valueIfFalse
    ```
 
-* `isNaN` – function that checks if the value is not a number.
+* `isNaN` – function that checks if the value is not a number (returns `true` for `NaN`).
 
     ```typescript
     Syntax: isNaN(value)
    ```
 
-* `!isNaN` – function that checks if the value is a number.
+* `!isNaN` – function that checks if the value is a number (returns `true` for any number).
 
     ```typescript
-      Syntax: isNaN(value)
+      Syntax: !isNaN(value)
     ```
 
 * `abs` – function that returns the absolute value of a number.
@@ -345,6 +345,8 @@ Below is a list of operators and functions that can be used in the formula to cr
 ![Calculated field with conditional formula](images/calculatedfield-conditional.png)
 
 ## Event
+
+The Pivot Table provides the following events to monitor calculated field operations. Each event lets you track, validate, or intercept a specific stage of the user interaction lifecycle.
 
 ### CalculatedFieldCreate
 
@@ -410,9 +412,9 @@ The event provides the following parameters to help you handle these interaction
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Calculated field button click](./calculated-field#Calculated-Field) | Open calculated field dialog |
-| [Edit icon click for calculated field](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar) | Edit calculated field |
-| [Context menu in calculated field dialog tree view](./calculated-field#Calculated-Field) | Calculated field context menu |
+| [Calculated field button click](./calculated-field#creating-calculated-fields) | Open calculated field dialog |
+| [Edit icon click for calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Edit calculated field |
+| [Context menu in calculated field dialog tree view](./calculated-field#creating-calculated-fields) | Calculated field context menu |
 
 - `fieldInfo`: Provides information about the selected field when the action involves a specific field.
 
@@ -461,8 +463,8 @@ The event provides the following parameters to help you handle completed operati
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Creating calculated field](./calculated-field#calculated-field) | Calculated field applied |
-| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-the-grouping-bar) | Calculated field edited |
+| [Creating calculated field](./calculated-field#creating-calculated-fields) | Calculated field applied |
+| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Calculated field edited |
 
 - `fieldInfo`: Provides information about the selected field when the action involves a specific field.
 
@@ -501,13 +503,13 @@ The example below demonstrates how to use the [`ActionComplete`](https://help.sy
 
 The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
+* `actionName`: It holds the name of the current action that failed. The following are the UI actions and their names:
 
    | Action | Action Name |
    |------|-------------|
-   | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
-   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
+   | [`Calculated field button`](./calculated-field#creating-calculated-fields)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field#editing-through-the-field-list-and-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#creating-calculated-fields)| Calculated field context menu|
 
 * `errorInfo`: It holds the error information of the current UI action.
 

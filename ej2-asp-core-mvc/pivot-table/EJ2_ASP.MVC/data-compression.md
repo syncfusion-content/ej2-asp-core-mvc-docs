@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Compression in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table uses AllowDataCompression with virtual scrolling to dedupe raw input data and speed up rendering on large datasets.
+description: Learn how the ASP.NET MVC Pivot Table compresses repeated members in rows and columns to reduce render time on large relational data sources.
 platform: ej2-asp-core-mvc
 control: Data Compression
 publishingplatform: ##Platform_Name##
@@ -14,7 +14,7 @@ documentation: ug
 
 > This property is applicable only for the relational data source.
 
-When binding large volumes of raw data, the pivot table processes all raw data to generate aggregated data during initial rendering and report manipulation. However, with data compression enabled, the input raw data is compressed based on the uniqueness of the raw data, and the final compressed raw data is utilized by the pivot table. The compressed raw data is then used for all subsequent operations, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table connects to one million raw data records that compress to 1,000 unique raw data records, it will render significantly faster—potentially within 3 seconds rather than 10 seconds, depending on the data complexity and system specifications. Enable this option by using the [AllowDataCompression](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDataCompression) property along with the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property.
+When binding large volumes of raw data, the pivot table processes all raw data to generate aggregated data during initial rendering and report manipulation. However, with data compression enabled, the input raw data is compressed based on its unique values, and the pivot table uses the final compressed raw data. The compressed raw data is then used for all subsequent operations, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table connects to one million raw data records that compress to 1,000 unique raw data records, it will render significantly faster—potentially within 3 seconds rather than 10 seconds, depending on the data complexity and system performance. Enable this option by setting the [AllowDataCompression](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDataCompression) property to **true** on the Pivot Table component.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
