@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sort Columns in ##Platform_Name## Query Builder Component
-description: Learn here all about Sort Columns in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Sort Columns in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to sort columns in ##Platform_Name## Query Builder using the SortDirection property to display fields in ascending or descending order.
 platform: ej2-asp-core-mvc
 control: Sort Columns
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sort the columns
+# Sort Columns in ##Platform_Name## Query Builder
 
 SortDirection allows you to sort the columns bounded to the Query Builder to view the columns by ascending or descending order. You should set the `SortDirection` property to sort the fields.
 

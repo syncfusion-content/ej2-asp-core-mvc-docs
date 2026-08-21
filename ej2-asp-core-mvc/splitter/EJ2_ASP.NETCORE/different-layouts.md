@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Different Layouts in ASP.NET Core Splitter | Syncfusion
-description: Learn here all about Different Layouts in Syncfusion ##Platform_Name## Splitter component of Syncfusion Essential JS 2 and more.
+title: Different Layouts in ##Platform_Name## Splitter | Syncfusion
+description: Learn how to create different layouts in the Syncfusion ##Platform_Name## Splitter using multiple and nested panes, including code editor and Outlook-style layouts.
 platform: ej2-asp-core-mvc
 control: Different Layouts
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Different layouts in ASP.NET Core Splitter Control
+# Different Layouts in ##Platform_Name## Splitter
 
 By using splitter control, you can create the different layouts with multiple and nested panes.
 

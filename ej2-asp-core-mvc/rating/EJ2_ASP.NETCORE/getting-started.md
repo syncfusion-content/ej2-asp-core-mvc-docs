@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Rating Control | Syncfusion
-description: Check out and learn about getting started with ASP.NET Core Rating control of Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Rating | Syncfusion
+description: Learn how to get started with the Syncfusion ##Platform_Name## Rating control. Explore setup, features, examples, and customization options.
 platform: ej2-asp-core-mvc
 control: Rating
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Rating Control
+# Getting Started with ##Platform_Name## Rating
 
 This section briefly explains how to include the [ASP.NET Core Rating](https://www.syncfusion.com/aspnet-core-ui-controls/rating) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/).
 

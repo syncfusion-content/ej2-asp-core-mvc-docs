@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tooltip in ##Platform_Name## Range Slider Control
-description: Learn here all about Tooltip in Syncfusion ##Platform_Name## Range Slider control of Syncfusion Essential JS 2 and more.
+title: Tooltip in ##Platform_Name## Range Slider | Syncfusion
+description: Learn how to display and customize tooltips, tooltip placement, and slider buttons in Syncfusion ##Platform_Name## Range Slider.
 platform: ej2-asp-core-mvc
 control: Tooltip
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Tooltip
+# Tooltip in ##Platform_Name## Range Slider
 
 The Slider displays the tooltip to indicate the current value by clicking the Slider bar or drag the Slider handle. The Tooltip position can be customized by using the [`placement`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.SliderTooltipData.html#Syncfusion_EJ2_Inputs_SliderTooltipData_Placement) property. Also decides the tooltip display mode on a page, i.e., on hovering, focusing, or clicking on the Slider handle and it always remains/displays on the page.
 

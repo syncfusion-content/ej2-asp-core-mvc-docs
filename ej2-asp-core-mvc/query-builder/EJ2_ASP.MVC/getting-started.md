@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Query Builder Control | Syncfusion
-description: Checkout and learn about getting started with ##Platform_Name## Query Builder control of Syncfusion Essential JS 2 and more details.
+title: Getting Started with ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to get started with ##Platform_Name## Query Builder, including installation, configuration, data binding, and rule creation.
 platform: ej2-asp-core-mvc
 control: Getting Started
 publishingplatform: ##Platform_Name##
@@ -155,7 +155,7 @@ public class EmployeeView
 
 Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> (Windows) or <kbd>⌘</kbd>+<kbd>F5</kbd> (macOS) to run the app. Then, the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Query Builder control will be rendered in the default web browser.
 
-![ASP.NET MVC Query Builder Control](images/querybuilder.png)
+![ASP.NET MVC Query Builder Control](images/querybuilder.webp)
 
 ## Render with rule
 
@@ -247,6 +247,6 @@ public class EmployeeView
 {% endhighlight %}
 {% endtabs %}
 
-![ASP.NET MVC Query Builder with Rule](images/querybuilder-rule.png)
+![ASP.NET MVC Query Builder with Rule](images/querybuilder-rule.webp)
 
 N> [View Sample in GitHub](https://github.com/SyncfusionExamples/ASP-NET-MVC-Getting-Started-Examples/tree/main/QueryBuilder/ASP.NET%20MVC%20Razor%20Examples).

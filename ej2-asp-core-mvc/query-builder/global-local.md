@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Global Local in Syncfusion ##Platform_Name## Query Builder Component
-description: Learn here all about Global Local in Syncfusion ##Platform_Name## Query Builder component of Syncfusion Essential JS 2 and more.
+title: Localization in ##Platform_Name## Query Builder | Syncfusion
+description: Learn how to localize ##Platform_Name## Query Builder by configuring the Locale property and defining localized text resources.
 platform: ej2-asp-core-mvc
 control: Global Local
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Localization in Syncfusion<sup style="font-size:70%">&reg;</sup> Query Builder Control
+# Localization in ##Platform_Name## Query Builder
 
 The `Localization` library allows you to localize the default text content of the Query Builder. The Query Builder has static text that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `Locale` value and translation object.
 

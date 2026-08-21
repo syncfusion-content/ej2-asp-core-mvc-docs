@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Orientations in ##Platform_Name## Stepper Control | Syncfusion
-description: Checkout and learn about Orientations in ##Platform_Name## Stepper control of Syncfusion Essential JS 2 and more.
+title: Orientation in ##Platform_Name## Stepper | Syncfusion
+description: Learn how to configure horizontal and vertical orientations in the Syncfusion ##Platform_Name## Stepper to customize step navigation layouts.
 platform: ej2-asp-core-mvc
 control: Stepper
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientations in ##Platform_Name## Stepper control
+# Orientation in ##Platform_Name## Stepper
 
 The Stepper control supports the display of steps in both horizontal and vertical orientations by using the [orientation](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.Stepper.html#Syncfusion_EJ2_Navigations_Stepper_Orientation) property.
 

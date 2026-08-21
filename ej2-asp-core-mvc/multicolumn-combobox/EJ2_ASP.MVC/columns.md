@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Columns in ##Platform_Name## MultiColumn Combobox Control | Syncfusion
-description: Checkout and learn about Columns in Syncfusion ##Platform_Name## MultiColumn Combobox control of Syncfusion Essential JS 2 and more.
+title: Columns in ##Platform_Name## MultiColumn ComboBox | Syncfusion
+description: Define and customize MultiColumn ComboBox columns with field mapping, headers, text alignment, templates, and width for flexible data presentation.
 platform: ej2-asp-core-mvc
 control: Columns
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Columns in ##Platform_Name## MultiColumn Combobox control
+
+# Columns in ##Platform_Name## MultiColumn ComboBox
 
 The [Columns](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.MultiColumnComboBox.MultiColumnComboBox.html#Syncfusion_EJ2_MultiColumnComboBox_MultiColumnComboBox_Columns) property allows to define the data fields to be displayed in the MultiColumn ComboBox.
 
