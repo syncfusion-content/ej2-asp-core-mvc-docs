@@ -1,27 +1,26 @@
 ---
 layout: post
 title: Create Wizard Using Tab in ##Platform_Name## Tab | Syncfusion
-description: Learn here all about Create Wizard Using Tab in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Create Wizard Using Tab in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Create Wizard Using Tab
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
-
 
 # Create wizard using Tab
 
 {% if page.publishingplatform == "aspnet-core" %}
 
-Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
+Tab items can be disabled during initial control rendering by passing a Boolean value to the [disabled](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [TabItem](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
 
 {% elsif page.publishingplatform == "aspnet-mvc" %}
 
-Tab items can be disabled initial control rendering by passing the boolean value to [`disabled`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [`TabItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
+Tab items can be disabled during initial control rendering by passing a Boolean value to the [disabled](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_Disabled) property of [TabItem](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Navigations.TabItem.html#Syncfusion_EJ2_Navigations_TabItem_TabIndex) class.
 
 {% endif %}
 
-In the below Wizard sample, each Tab is integrated with required components to complete the reservation. Each field is provided with validation for all mandatory option to proceed to next tabs. Using Tab item's template property the components are added into content.
+In the following wizard example, each Tab is integrated with required controls to complete the reservation. Each field is provided with validation for all mandatory options to proceed to next tabs. Using Tab item's template property the controls are added into content.
 
 Create the following contents for each tab in the wizard.
 1. **Search tab:**
@@ -33,7 +32,7 @@ Create the following contents for each tab in the wizard.
 4. **Payment tab:**
    Calculate the ticket cost based on location, passenger count and ticket type. Generate data for Grid with passenger details, train number and ticket cost summary.
 
-You can go back on each tab using buttons available in it and tabs are disabled to navigate through tab header click actions. Once you end the wizard all the data get cleared and wizard goes back to starting tab.
+You can go back on each tab using buttons available in it and tabs are disabled to navigate through tab header click actions. Once you end the wizard all the data is cleared and wizard goes back to the starting tab.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Tab Component| Syncfusion
-description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tab component of Syncfusion Essential JS 2 and more.
+title: Accessibility in ##Platform_Name## Tab control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Tab control of Syncfusion Essential JS 2 and more.
 platform: ej2-asp-core-mvc
-control: Accessibility
+control: Tab
 publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
+# Accessibility ##Platform_Name## Tab control
 
-# Accessibility ##Platform_Name## Tab Component
-
-The accessibility compliance for the Tab component is outlined below.
+The accessibility compliance for the Tab control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
@@ -31,32 +30,32 @@ The accessibility compliance for the Tab component is outlined below.
     }
 </style>
 
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the component meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> - All features of the control meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the component do not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/intermediate.png" alt="Intermediate"> - Some features of the control do not meet the requirement.</div>
 
-<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The component does not meet the requirement.</div>
+<div><img src="https://cdn.syncfusion.com/content/images/landing-page/no.png" alt="No"> - The control does not meet the requirement.</div>
 
 ## ARIA attributes
 
-Tab component is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices.
+Tab control is designed by considering [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) standard. Tab is supported with ARIA Accessibility which is accessible by on-screen readers, and other assistive technology devices.
 The following list of attributes are added in the Tab.
 
 | **Roles and Attributes** | **Functionalities** |
 | --- | --- |
 | `tablist` | Attribute is set to the Tab header element that describes actual role of the element.|
-| `tab` | Attribute is set to the Tab items element to  indicates an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
+| `tab` | Attribute is set to the Tab items element to  indicate an interactive element inside a `tablist` that, when activated, displays its associated `tabpanel`.|
 | `tabpanel` | Attribute is set to the Tab content that describes the role for viewing the active content.|
-| aria-orientation    | Attribute is set to the Tab header element indicates the Tab header orientation. Default value of this attribute is horizontal. |
+| aria-orientation    | Attribute is set to the Tab header element indicate the Tab header orientation. Default value of this attribute is horizontal. |
 | aria-selected       | Attribute set to the Tab items to indicates the selection state for Tab items. Active Tab is set to true for this attribute. |
-| aria-labelledby       | Attribute is set to the Tab content element to indicates the associated Tab header for the content. |
+| aria-labelledby       | Attribute is set to the Tab content element to indicate the associated Tab header for the content. |
 | aria-controls       | Attribute is set to the Tab items element to indicates the associated `tabpanel` for the header. |
-| aria-haspopup       | Attribute is set to the Popup element  to indicates the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
+| aria-haspopup       | Attribute is set to the Popup element  to indicate the popup mode in the Tab. The default value of this attribute is false. If popup mode is enabled, the attribute value is set to true. |
 | aria-disabled       | Attribute set to the Tab items to It indicates the disabled state of the Tab. |
 
 ## Keyboard interaction
 
-By default, keyboard navigation is enabled. This component implements keyboard navigation support by following the WAI-ARIA practices. Once focused on the active Tab element, you can use the following key combination for interacting with the Tab.
+By default, keyboard navigation is enabled. This control implements keyboard navigation support by following the WAI-ARIA practices. Once focused on the active Tab element, you can use the following key combination for interacting with the Tab.
 
 | Key           | Description                                                                         |
 |---------------|-------------------------------------------------------------------------------------|
@@ -74,13 +73,12 @@ By default, keyboard navigation is enabled. This component implements keyboard n
 
 ## Ensuring accessibility
 
-The Tab component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
+The Tab control's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
-The accessibility compliance of the Tab component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the accessibility of the Tab component with accessibility tools.
+The accessibility compliance of the Tab control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/tab.html) in a new window to evaluate the accessibility of the Tab control with accessibility tools.
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/tab.html" %}
 
 ## See also
 
-- [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> components](../common/accessibility)
-
+- [Accessibility in ASP.NET Core controls](../common/accessibility)
