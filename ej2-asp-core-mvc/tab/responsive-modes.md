@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Responsive Modes
+# Responsive Modes in ##Platform_Name## Tab control
 
 The following section explains how the Tab is rendered when its width exceeds the viewable area or particularly in a given width. The available modes are as follows:
 
@@ -88,5 +88,5 @@ The Popup is the another type of `overflowMode` in which the Tab container holds
 
 ## See also
 
-* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection/)
-* [Collapsible Tab](./how-to/create-collapsible-tabs/)
+* [How to prevent content swipe selection](./how-to/prevent-content-swipe-selection)
+* [Collapsible Tab](./how-to/create-collapsible-tabs)

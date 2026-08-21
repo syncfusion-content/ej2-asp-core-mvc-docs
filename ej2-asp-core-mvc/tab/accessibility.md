@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Accessibility ##Platform_Name## Tab control
+# Accessibility in ##Platform_Name## Tab control
 
 The accessibility compliance for the Tab control is outlined below.
 

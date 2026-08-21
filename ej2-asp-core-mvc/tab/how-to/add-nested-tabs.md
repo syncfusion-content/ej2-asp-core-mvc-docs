@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Add nested Tabs
+# Add nested Tabs in ##Platform_Name## Tab control
 
 Tab supports nested levels of Tabs through its `content` property. You can add the nested Tab element inside the parent Tab `content` property. Render the nested Tab by initializing the control with the nested `<ejs-tab>` element's id from the parent Tab's [selected](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.navigations.tab.html#Syncfusion_EJ2_Navigations_Tab_Selected) event.
 

@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Header
+# Header in ##Platform_Name## Tab control
 
 This section explains how to modify the Tab header style and configure icons and their positions.
 

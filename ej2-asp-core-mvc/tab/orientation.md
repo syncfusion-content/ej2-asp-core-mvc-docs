@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Orientation
+# Orientation in ##Platform_Name## Tab control
 
 This section explains how to modify the position and overflow mode of the Tab header.
 

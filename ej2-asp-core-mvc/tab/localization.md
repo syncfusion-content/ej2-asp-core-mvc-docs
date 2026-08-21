@@ -8,7 +8,7 @@ publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Localization
+# Localization in ##Platform_Name## Tab control
 
 The localization library allows you to localize the default text content of the Tab. In Tab, the close button's tooltip text alone will be localize based on culture.
 

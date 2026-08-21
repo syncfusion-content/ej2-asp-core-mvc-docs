@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# CSS Structure
+# CSS Structure in ##Platform_Name## Tab control
 
 The following CSS structures can be used to modify the Tab's appearance.
 
